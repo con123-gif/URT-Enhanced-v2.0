@@ -5,7 +5,7 @@
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/con123-gif/URT-Enhanced-v2.0/actions)
 [![ROS2 Compatible](https://img.shields.io/badge/ROS2-Compatible-green.svg)](https://docs.ros.org/)
 
-## 🚀 Overview
+## Overview
 
 **Universal Robust Tracking (URT) Enhanced v2.0** evolves the O(N) control framework for high-D nonlinear systems, now with auto-tuning, distributed swarms, and H∞ robustness. Viability: **85%**—ideal for robotics autonomy or plasma stabilization (e.g., CCFR fusion loops from my other repo).
 
@@ -17,19 +17,10 @@ v2.0 Upgrades:
 
 From v1.0's 0.002 rad errors to v2.0's 0.0008—let's track the impossible!
 
-## 🎯 Features & Benchmarks
+## Features & Benchmarks
 | Metric | URT v2.0 | v1.0 | PID | LQR |
 |--------|----------|------|-----|-----|
 | Error (rad) | 0.0008 | 0.002 | 0.032 | 0.015 |
 | Settling (s) | 0.85 | 1.15 | 2.67 | 1.8 |
 | Rejection (rad) | 0.12 | 0.25 | 129 | 45 |
-| Runtime (μs @100k) | 189 | 428 | N/A | 66k |
-
-See `notebooks/URT_v2_Enhancements.ipynb` for plots/proofs.
-
-## 🛠️ Setup & Quickstart
-```bash
-git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
-cd URT-Enhanced-v2.0
-pip install -r requirements.txt
-jupyter notebook notebooks/URT_v2_Enhancements.ipynb
+| Runtime (μs @100k) | 189 | 428 | N/A | 
