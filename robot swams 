@@ -1,0 +1,100 @@
+"""
+URT-Enhanced v2.0 Core: Universal Robust Tracking Controller
+Scalable O(N) framework with auto-tuning and distributed modes.
+"""
+
+import numpy as np
+from bayes_opt import BayesianOptimization  # pip install bayesian-optimization
+import torch  # For future NN extensions
+
+class EnhancedURT:
+    """
+    Enhanced URT Controller: Feedback-linearized, gain-scheduled tracking.
+    Supports auto-tuning via Bayesian opt and distributed swarms.
+    """
+    def __init__(self, n_states: int, auto_tune: bool = False, alpha: float = 0.2,
+                 distributed: bool = False, hinf_gamma: float = 1.0):
+        """
+        Init: n_states for dim, auto_tune for param opt, alpha for scheduling,
+        distributed for multi-agent, hinf_gamma for robustness bound.
+        """
+        self.n_states = n_states
+        self.alpha = alpha
+        self.distributed = distributed
+        self.hinf_gamma = hinf_gamma  # H∞ norm target
+        self.K_prev = np.eye(n_states) * 0.1  # Initial gain matrix
+        self.kp, self.kd = 15.0, 3.0  # Proportional/derivative defaults
+        self._tuned = False
+        
+        if auto_tune:
+            self._auto_tune()
+            self._tuned = True
+    
+    def _auto_tune(self):
+        """Bayesian optimization for kp/kd: Maximizes -RMSE on quick sim."""
+        def objective(kp, kd):
+            # Stub sim: Inverted pendulum under uncertainty
+            dt, T, steps = 0.01, 5.0, int(T / dt)
+            x = np.array([0.0, 0.0])  # [theta, dtheta]
+            ref = np.pi / 2
+            errors = []
+            for _ in range(steps):
+                u = -kp * (x[0] - ref) - kd * x[1]
+                # Dynamics: d2theta = u - sin(theta) + noise
+                noise = np.random.normal(0, 0.1)
+                d2theta = u - np.sin(x[0]) + noise
+                x[1] += d2theta * dt
+                x[0] += x[1] * dt
+                errors.append((x[0] - ref)**2)
+            rmse = np.sqrt(np.mean(errors))
+            return -rmse  # Minimize RMSE
+        
+        pbounds = {'kp': (10, 25), 'kd': (1, 5)}
+        optimizer = BayesianOptimization(f=objective, pbounds=pbounds, random_state=42)
+        optimizer.maximize(init_points=5, n_iter=20)
+        best = optimizer.max['params']
+        self.kp, self.kd = best['kp'], best['kd']
+        print(f"Tuned: kp={self.kp:.2f}, kd={self.kd:.2f} (RMSE: {-optimizer.max['target']:.4f})")
+    
+    def update(self, x: np.ndarray, ref: np.ndarray) -> np.ndarray:
+        """
+        Core update: Compute control u = -K * e with scheduling and linearization.
+        e = ref - x; Handles H∞ via gain scaling if gamma exceeded.
+        """
+        e = ref - x
+        # PD gains (extend to full K for multi-state)
+        K_urt = np.diag(np.full(self.n_states // 2, self.kp))  # Pos gains
+        K_urt = np.vstack([K_urt, np.diag(np.full(self.n_states // 2, self.kd))])  # Vel gains
+        # Schedule: Blend new/prev for stability
+        self.K_prev = self.alpha * K_urt + (1 - self.alpha) * self.K_prev
+        u = -self.K_prev @ e
+        # Feedback linearization stub: Cancel known nonlinearities (e.g., +g*sin(theta))
+        u += self._linearize(x)  # Placeholder: return np.array([9.81 * np.sin(x[0])])
+        # H∞ check: Scale if ||u|| > gamma * ||e||
+        if np.linalg.norm(u) > self.hinf_gamma * np.linalg.norm(e):
+            u *= self.hinf_gamma * np.linalg.norm(e) / (np.linalg.norm(u) + 1e-6)
+        if self.distributed:
+            u += self._consensus_update(x, ref)  # Swarm comms
+        return u
+    
+    def _linearize(self, x: np.ndarray) -> np.ndarray:
+        """Stub: Cancel system nonlinearities (extend for your dynamics)."""
+        return np.zeros_like(x)  # E.g., for pendulum: np.array([9.81 * np.sin(x[0])])
+    
+    def _consensus_update(self, x: np.ndarray, ref: np.ndarray) -> np.ndarray:
+        """Distributed: Average with neighbors (stub; use torch for graphs)."""
+        # Placeholder: Assume ring topology, avg with 2 neighbors
+        return np.zeros_like(x)  # TODO: Integrate neighbor states
+    
+    def reset_gains(self):
+        """Reset scheduling for new episodes."""
+        self.K_prev = np.eye(self.n_states) * 0.1
+
+
+# Quick Test (run in Colab/IPython)
+if __name__ == "__main__":
+    ctrl = EnhancedURT(n_states=2, auto_tune=True, distributed=False)
+    x_test = np.array([0.1, 0.05])
+    ref_test = np.array([np.pi/2, 0.0])
+    u = ctrl.update(x_test, ref_test)
+    print(f"Test u: {u}")
