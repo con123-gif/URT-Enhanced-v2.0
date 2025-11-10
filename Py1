@@ -1,0 +1,59 @@
+# ============ demos/run_rossler_law.py ============
+# One-command runner: integrates Rössler, prepares time series,
+# computes λ1, D_KY, τ, and δ, and prints them.
+
+import numpy as np
+from core.metrics import (
+    lyapunov_rosenstein,
+    D_KY_from_l1_proxy,
+    tau_avalanche,
+    delta_metric,
+    DKY_from_delta_monotone,
+)
+
+def rossler(dt=1e-3, T=4000.0, a=0.2, b=0.2, c=5.7):
+    N = int(T / dt)
+    x, y, z = 1.0, 1.0, 1.0
+    xs = np.empty(N, float)
+    for i in range(N):
+        dx = -y - z
+        dy = x + a * y
+        dz = b + z * (x - c)
+        x += dx * dt; y += dy * dt; z += dz * dt
+        xs[i] = x
+    return xs
+
+def prepare_series():
+    raw = rossler()
+    # drop transient
+    raw = raw[len(raw)//3:]
+    # downsample to ~5000 points (improves Rosenstein stability)
+    step = max(1, len(raw) // 5000)
+    return raw[::step]
+
+def main():
+    ts = prepare_series()
+
+    l1 = lyapunov_rosenstein(ts, m=3, delay=20, evolve=200, exclude=100)
+    DKY = D_KY_from_l1_proxy(l1)
+    tau = tau_avalanche(np.diff(ts), pct=90, xmin_quantile=0.6)
+    delt = delta_metric(DKY, tau)
+
+    print("==== Lytollis Law on Rössler ====")
+    print(f"λ1    : {l1}")
+    print(f"D_KY  : {DKY}")
+    print(f"τ     : {tau}")
+    print(f"δ     : {delt}")
+
+    # Optional: show a small δ→DKY sweep (sanity)
+    deltas = np.linspace(0.1, 0.9, 5)
+    d_kys = [DKY_from_delta_monotone(d) for d in deltas]
+    try:
+        from scipy.stats import linregress
+        lr = linregress(deltas, d_kys)
+        print(f"δ-sweep: slope={lr.slope:.4f}, R²={lr.rvalue**2:.4f}")
+    except Exception:
+        pass
+
+if __name__ == "__main__":
+    main()
