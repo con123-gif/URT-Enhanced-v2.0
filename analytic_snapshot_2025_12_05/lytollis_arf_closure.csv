@@ -1,0 +1,13 @@
+name,value
+pi,3.141592653589793
+phi,1.618033988749895
+gamma,0.012345679012345678
+delta_star,0.1475108101595796
+Delta_delta_analytic,-0.00035959042756760504
+R_alpha_analytic,0.03380535602328556
+C_mass_analytic,4.446800183122003
+R_mass_analytic,-2.4299997428893794
+Delta_delta_target,-0.00035959
+R_alpha_target,0.03380537
+C_mass_target,4.4468
+R_mass_target,-2.43
