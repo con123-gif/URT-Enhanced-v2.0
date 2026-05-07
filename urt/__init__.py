@@ -82,6 +82,42 @@ from .neural_cathedral import (
     GrokDetector,
     embed_to_shell,
 )
+from .navier_stokes import (
+    cascade_downward_fraction,
+    cascade_upward_fraction,
+    net_cascade_flux,
+    kolmogorov_constant,
+    bkm_bound,
+    regularity_check,
+    kolmogorov_spectrum,
+    intermittency_exponents,
+)
+from .nuclear_magic import (
+    closure_functional,
+    find_magic_numbers,
+    magic_number_prediction,
+    nuclear_stability_index,
+    binding_energy_cathedral,
+)
+from .axion_cathedral import (
+    axion_mass_GeV,
+    axion_mass_ueV,
+    peccei_quinn_scale,
+    photon_coupling,
+    secondary_spectral_line_GHz,
+    detection_status,
+)
+from .qft_cathedral import (
+    cathedral_propagator,
+    coupling_g_star,
+    coupling_alpha_star,
+    beta_function,
+    running_coupling,
+    anomalous_dimension,
+    effective_potential,
+    feynman_rules,
+    higgs_mass_from_potential,
+)
 
 __version__ = "2.0.0"
 __author__ = "Cornelius Lytollis"

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "urt-cathedral"
+version = "2.0.0"
+description = "Newton's Cathedral — zero-free-parameter framework from icosahedral geometry"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Cornelius Lytollis", email = "grimnir123@github"},
+]
+keywords = [
+    "chaos", "physics", "standard-model", "icosahedron",
+    "cosmological-constant", "turbulence", "nuclear",
+    "quantum-gravity", "quasicrystal",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.4"]
+torch = ["torch>=1.10"]
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[project.scripts]
+urt-demo = "run_all_demos:main"
+genesis = "genesis_v3:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["urt*"]
