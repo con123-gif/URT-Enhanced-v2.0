@@ -1,4 +1,4 @@
-# URT Enhanced v2.4 — Cathedral Framework
+# URT Enhanced v2.5 — Cathedral Framework
 
 ## Repository Overview
 
@@ -71,20 +71,32 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 |------|--------|
 | `urt/iron_proof.py` | Bulletproof uniqueness: D=3→A₅→N=13→γ=D^{−D−1}→δ★, 0 free params |
 
+### New Modules (v2.5 — Mad Professor)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_lagrangian.py` | Full QFT action L=L_grav+L_EW+L_QCD+L_H3+L_δ; 60 Ward identities; β(δ★)=0 |
+| `urt/dark_matter.py` | Three DM: axion (60.7 μeV, k=12), sterile ν (143 keV, k=11), WIMP (13.5 GeV, k=9,10) |
+| `urt/baryon_asymmetry.py` | η_B=(q−D)·γ^q=5.74×10⁻¹⁰ miracle; leptogenesis δ_CP=197°; all Sakharov conditions |
+| `urt/cathedral_gut.py` | α_GUT=δ★²=G_N; μ_GUT≈3.73×10^16 GeV; τ_proton≈10^42 yr; SO(10) multiplets |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.4)
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.5)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 808 tests
+python -m pytest tests/ -q              # all 931 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
+python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
+python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
+python -m pytest tests/ -q -k baryon   # baryon asymmetry (26 tests)
+python -m pytest tests/ -q -k gut      # GUT unification (29 tests)
 python -m pytest tests/ -q -k gw       # gravitational wave tests only
 python -m pytest tests/ -q -k ckm      # CKM/PMNS tests only
 ```
@@ -104,7 +116,13 @@ K_c         ≈ 1.278           (Kuramoto critical coupling)
 sin²θ_W     = (D/N)(1+γ/2π) ≈ 0.23122 (Weinberg angle, exact PDG)
 δ_CP (PMNS) = (D+1)F+(N-D-1)N = 197°  (exact PDG)
 n_s         = 1 − 2/(|H₃|−D) = 1−2/57 ≈ 0.9649 (exact Planck 2018)
-Ω_m         = (4/13)(1+2γ) ≈ 0.3153   (matter density)
+Ω_m         = (4/13)(1+2γ) ≈ 0.3153   (matter density, z=-0.001 vs Planck 2018)
+η_B         = (q−D)·γ^q = 2·(1/81)^5 ≈ 5.74×10⁻¹⁰  (baryon miracle, 6.3% error)
+α_GUT       = δ★² = G_N            (GUT coupling = Newton constant!)
+μ_GUT       ≈ 3.73×10^16 GeV        (GUT scale from δ★ + RG running)
+m_axion     ≈ 60.7 μeV              (Cathedral axion, ADMX/ABRA target)
+m_sterile   ≈ 143 keV               (sterile ν DM, X-ray at 71.5 keV)
+m_WIMP      = δ★·m_Z ≈ 13.45 GeV   (WIMP at LHC threshold)
 ```
 
 ## Module Quick-Start
@@ -126,6 +144,18 @@ from urt import N_S, R_TENSOR, COSMO_OMEGA_M, SIGMA_8
 
 # Uniqueness proof
 from urt import uniqueness_theorem_full, conjecture_121
+
+# Cathedral Lagrangian + QFT
+from urt import ward_identities, higgs_sector, rg_fixed_points, coupling_table
+
+# Dark Matter (three candidates from H3)
+from urt import axion_dm, sterile_neutrino_dm, wimp_dm, M_AXION_UEV, M_WIMP_GEV
+
+# Baryon asymmetry miracle
+from urt import eta_b_miracle, ETA_B_LEPTO, KAPPA_LEPTO
+
+# GUT unification
+from urt import gut_scale, proton_lifetime, MU_GUT_GEV, TAU_PROTON_YR
 
 # GW150914-like event
 event = gw_event_summary(36, 29, 410)

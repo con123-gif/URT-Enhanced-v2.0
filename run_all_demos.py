@@ -264,6 +264,30 @@ def run_iron_proof():
     print_iron_proof_report()
 
 
+def run_lagrangian():
+    section("Cathedral Lagrangian — Full QFT Action, Ward Identities, β(δ★)=0")
+    from urt.cathedral_lagrangian import print_lagrangian_report
+    print_lagrangian_report()
+
+
+def run_dark_matter():
+    section("Dark Matter — Axion/Sterile/WIMP from H3 Sectors (D=3 DM candidates)")
+    from urt.dark_matter import print_dm_report
+    print_dm_report()
+
+
+def run_baryon():
+    section("Baryon Asymmetry — η_B=(q−D)·γ^q Miracle Formula, Leptogenesis")
+    from urt.baryon_asymmetry import print_baryon_report
+    print_baryon_report()
+
+
+def run_gut():
+    section("Grand Unified Theory — α_GUT=δ★²=G_N, μ_GUT≈3.7×10^16 GeV")
+    from urt.cathedral_gut import print_gut_report
+    print_gut_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
@@ -302,6 +326,10 @@ DEMOS = {
     "canonical":    run_canonical,
     "qbls_fractal": run_qbls_fractal,
     "iron_proof":   run_iron_proof,
+    "lagrangian":   run_lagrangian,
+    "dark_matter":  run_dark_matter,
+    "baryon":       run_baryon,
+    "gut":          run_gut,
 }
 
 # Fast default (excludes logistic which takes ~30s)
@@ -311,7 +339,8 @@ FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "metamaterials", "swarm", "gw",
               "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e", "topology",
               "electroweak", "cosmology", "uniqueness", "prime181",
-              "ckm_pmns", "canonical", "qbls_fractal", "iron_proof"]
+              "ckm_pmns", "canonical", "qbls_fractal", "iron_proof",
+              "lagrangian", "dark_matter", "baryon", "gut"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]

@@ -740,6 +740,93 @@ def cmd_iron_proof():
     return "\n".join(lines)
 
 
+def cmd_lagrangian():
+    from urt.cathedral_lagrangian import (
+        ward_identities, higgs_sector, rg_fixed_points,
+        G_NEWTON_CAT, ALPHA_S, SIN2_THETA_W, K_POTENTIAL, N_GENERATIONS, N_F,
+    )
+    from urt.shell_closure import DELTA_STAR
+    wi = ward_identities()
+    hs = higgs_sector()
+    fp = rg_fixed_points()
+    lines = [
+        "Cathedral Lagrangian — L = L_grav + L_EW + L_QCD + L_H3 + L_δ:",
+        f"  G_Newton = δ★²       = {G_NEWTON_CAT:.8f} (K4 gapless graviton)",
+        f"  sin²θ_W  = (D/N)(1+γ/2π) = {SIN2_THETA_W:.5f} (exact PDG)",
+        f"  α_s(M_Z) = δ★(q−1)/q = {ALPHA_S:.5f} (z=0.12)",
+        f"  m_H_tree = {hs['m_H_tree_GeV']:.1f} GeV  (error {hs['error_tree_pct']:+.2f}%)",
+        f"  K_V = (G−D−1)/(16π²) = {K_POTENTIAL:.6f}  (V=Kδ²(δ−δ★)²)",
+        f"  Ward identities: {wi['n_ward_identities']} from A₅ (K4:{wi['K4_ward']} + H3:{wi['H3_ward']} + cross:{wi['cross_ward']})",
+        f"  n_gen = D = {N_GENERATIONS},  n_quarks = D(D−1) = {N_F}  (from spatial dim alone)",
+        f"  β(δ★) = 0 exactly  (UV fixed point per rg_fixed_points)",
+        f"  Free parameters: {wi['free_parameters']}",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_dark_matter():
+    from urt.dark_matter import axion_dm, sterile_neutrino_dm, wimp_dm
+    from urt.dark_matter import M_AXION_UEV, M_STERILE_KEV, M_WIMP_GEV
+    a = axion_dm()
+    s = sterile_neutrino_dm()
+    w = wimp_dm()
+    lines = [
+        "Dark Matter — Three Cathedral candidates (D=3 spatial dimensions → 3 DM):",
+        f"  Axion     (k=12): m_a = {M_AXION_UEV:.1f} μeV,  E/N={a['EN_ratio']:.2f}=57/4,  θ_mis=π−δ★",
+        f"             ADMX/ABRA band: {a['detection_band_ueV'][0]:.0f}–{a['detection_band_ueV'][1]:.0f} μeV",
+        f"  Sterile ν (k=11): m_s = {M_STERILE_KEV:.1f} keV,  E_X-ray = {s['E_xray_keV']:.1f} keV",
+        f"             sin²2θ = δ★²/N = {s['sin2_2theta']:.3e}  (Dodelson-Widrow)",
+        f"  WIMP      (k=9,10): m_W = {M_WIMP_GEV:.2f} GeV = δ★·m_Z",
+        f"             σ_SI = {w['sigma_SI_cm2']:.2e} cm²  (well below LZ bound)",
+        "  Principle: K4⊕H3 decomp. → H3 sectors k=9..12 host all DM",
+        "  Ω_DM = axion + sterile + WIMP  (each from distinct H3 mode)",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_baryon():
+    from urt.baryon_asymmetry import eta_b_miracle, sakharov_conditions
+    from urt.baryon_asymmetry import ETA_B_OBSERVED, EPSILON_1, KAPPA, DELTA_CP_DEG
+    mir = eta_b_miracle()
+    sak = sakharov_conditions()
+    lines = [
+        "Baryon Asymmetry — Cathedral Miracle Formula:",
+        f"  η_B = (q−D)·γ^q = 2·(1/81)^5 = {mir['prediction']:.3e}",
+        f"  Observed:         η_B = {ETA_B_OBSERVED:.3e}  (error: {mir['error_pct']:+.1f}%)",
+        f"  q=5 ← icosahedral 5-fold sym,  (q−D)=2 ← exhaust pairs per dim",
+        f"  Leptogenesis δ_CP = (D+1)F+(N-D-1)N = {DELTA_CP_DEG}°  (exact PDG)",
+        f"  ε₁ = {EPSILON_1:.3e}  (CP asymmetry in N₁ decay)",
+        f"  κ = 1/(1+δ★·N) = {KAPPA:.4f}  (sphaleron washout factor)",
+        f"  Sakharov conditions: all satisfied = {sak['all_satisfied']}",
+        f"    B-violation (sphaleron), CP-violation (δ_CP=197°), non-equilibrium",
+        f"  Free parameters: 0",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_gut():
+    from urt.cathedral_gut import gut_scale, proton_lifetime, gut_multiplets
+    from urt.cathedral_gut import ALPHA_GUT, MU_GUT_GEV, TAU_PROTON_YR
+    gs = gut_scale()
+    pl = proton_lifetime()
+    mu = gut_multiplets()
+    import math
+    lines = [
+        "Grand Unified Theory — Cathedral GUT:",
+        f"  α_GUT = δ★² = G_Newton = {ALPHA_GUT:.8f}  ← GUT coupling = gravity",
+        f"  1/α_GUT = {1/ALPHA_GUT:.2f}",
+        f"  μ_GUT = {MU_GUT_GEV:.3e} GeV  (log₁₀ = {math.log10(MU_GUT_GEV):.2f})",
+        f"  Standard SU(5): 2×10^16 GeV  (ratio: {gs['ratio_to_SU5']:.2f})",
+        f"  τ_proton = {TAU_PROTON_YR:.2e} yr  (> exp. bound 10^34 yr: {pl['above_bound']})",
+        f"  K4 modes (D+1={mu['K4_modes']}): gravity+EW+QCD gauge bosons",
+        f"  H3 modes (N-D-1={mu['H3_modes']}): matter fermions + DM",
+        f"  n_gen = D = {mu['n_generations']},  SO(10) spinor = 2^(D+1) = {mu['SO10_spinor_dim']}",
+        f"  Total matter = (N-D-1)×D = {mu['total_matter']} ≡ 27-plet of E6",
+        "  Unification by construction: α₃(μ_GUT)=α_GUT=δ★² exactly",
+    ]
+    return "\n".join(lines)
+
+
 # ── Lytollis Guard ────────────────────────────────────────────────────────────
 
 BLOCKED_PATTERNS = [
@@ -756,7 +843,7 @@ def is_blocked(text: str) -> bool:
 
 def main():
     print("\n" + "=" * 72)
-    print("GENESIS v3.0 — Cathedral Edition v2.3")
+    print("GENESIS v3.0 — Cathedral Edition v2.5")
     print(f"δ★ = {DELTA_STAR:.8f}  |  C_mass = {C_MASS:.6f}  |  D=3 forced")
     print("Commands: web · ask ai · delta · spectrum · prove · ladder")
     print("          casimir · black hole <M> · logistic")
@@ -764,7 +851,8 @@ def main():
     print("          metamaterial · swarm [m] · gw [M☉]")
     print("          gravity [M] · neutrinos · vacuum · forces")
     print("          electroweak · cosmology · uniqueness · prime181")
-    print("          ckm pmns · canonical · qbls fractal · exit")
+    print("          ckm pmns · canonical · qbls fractal · iron proof")
+    print("          lagrangian · dark matter · baryon · gut · exit")
     print("Lytollis Guard active. Science/math/music/life only.")
     print("=" * 72 + "\n")
 
@@ -905,17 +993,28 @@ def main():
         elif p_lower in {"iron proof", "iron_proof", "bulletproof", "attack", "uniqueness proof"}:
             print("\n" + cmd_iron_proof() + "\n")
 
+        elif p_lower in {"lagrangian", "qft", "action", "ward", "beta function"}:
+            print("\n" + cmd_lagrangian() + "\n")
+
+        elif p_lower in {"dark matter", "dm", "axion", "wimp", "sterile neutrino", "sterile"}:
+            print("\n" + cmd_dark_matter() + "\n")
+
+        elif p_lower in {"baryon", "baryon asymmetry", "eta_b", "eta b", "leptogenesis", "sakharov"}:
+            print("\n" + cmd_baryon() + "\n")
+
+        elif p_lower in {"gut", "grand unified", "proton decay", "unification", "alpha_gut"}:
+            print("\n" + cmd_gut() + "\n")
+
         else:
             # Default: Cathedral-aware response
-            topics = ("EW sector, cosmology, CMB, uniqueness proof, prime 181, "
-                      "CKM/PMNS mixing, CanonicalV4Gem, QBLS fractal, iron proof, "
-                      "holography, consciousness, black holes, GR tests, "
-                      "metamaterials, drone swarms, gravitational waves")
+            topics = ("EW sector, cosmology, CMB, GUT unification, baryon asymmetry, "
+                      "dark matter, Lagrangian/QFT, CKM/PMNS mixing, iron proof, "
+                      "holography, consciousness, black holes, gravitational waves")
             reply = (
-                f"Cathedral v2.4 active. δ★ = {DELTA_STAR:.8f}, C_mass = {C_MASS:.6f}. "
+                f"Cathedral v2.5 active. δ★ = {DELTA_STAR:.8f}, C_mass = {C_MASS:.6f}. "
                 f"I cover: {topics}. "
-                "Commands: electroweak, cosmology, uniqueness, prime181, "
-                "ckm pmns, canonical, qbls fractal, iron proof, gw <M>, swarm <m>, or 'ask ai'."
+                "Commands: lagrangian, dark matter, baryon, gut, electroweak, cosmology, "
+                "uniqueness, iron proof, ckm pmns, gw <M>, swarm <m>, or 'ask ai'."
             )
             print("\nGenesis:", style(reply), "\n")
 

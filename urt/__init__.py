@@ -435,8 +435,79 @@ from .iron_proof import (
     iron_proof_full,
     print_iron_proof_report,
 )
+from .cathedral_lagrangian import (
+    cathedral_action_summary,
+    gauge_couplings,
+    h3_spectrum,
+    yukawa_coupling,
+    h3_mode_mass,
+    h3_mode_mass_gev,
+    ward_identities,
+    rg_fixed_points,
+    cathedral_potential,
+    cathedral_dV,
+    cathedral_d2V,
+    effective_potential_1loop,
+    coleman_weinberg_correction,
+    higgs_sector,
+    coupling_table,
+    G_NEWTON_CAT,
+    ALPHA_S as ALPHA_S_CAT,
+    SIN2_THETA_W as SIN2_THETA_W_CAT,
+    LAMBDA_HIGGS as LAMBDA_HIGGS_CAT,
+    K_POTENTIAL,
+    N_GENERATIONS,
+    N_F,
+    B0_SU3 as B0_SU3_CAT,
+    KAPPA_GRAV,
+    LAMBDA_SHELL,
+    print_lagrangian_report,
+)
+from .dark_matter import (
+    axion_dm,
+    sterile_neutrino_dm,
+    wimp_dm,
+    dm_budget,
+    dark_matter_summary,
+    M_AXION_UEV,
+    M_STERILE_KEV,
+    M_WIMP_GEV,
+    SIN2_2THETA_DW,
+    SIGMA_SI_CM2,
+    OMEGA_WIMP_H2,
+    OMEGA_AXION_H2,
+    AXION_EN_RATIO,
+    print_dm_report,
+)
+from .baryon_asymmetry import (
+    eta_b_miracle,
+    leptogenesis_mechanism,
+    sakharov_conditions,
+    baryon_asymmetry_summary,
+    ETA_B_OBSERVED,
+    DELTA_CP_DEG as DELTA_CP_LEPTO_DEG,
+    DELTA_CP_RAD,
+    EPSILON_1,
+    KAPPA as KAPPA_LEPTO,
+    ETA_B_LEPTO,
+    M1_HEAVY_GEV,
+    print_baryon_report,
+)
+from .cathedral_gut import (
+    gut_scale,
+    unification_check,
+    proton_lifetime,
+    gut_multiplets,
+    cathedral_gut_summary,
+    ALPHA_GUT as ALPHA_GUT_CAT,
+    ALPHA_GUT_INV,
+    MU_GUT_GEV,
+    M_X_GEV,
+    TAU_PROTON_YR,
+    print_gut_report,
+)
 
-__version__ = "2.4.0"
+__version__ = "2.5.0"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
