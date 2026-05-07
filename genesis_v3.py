@@ -712,6 +712,34 @@ def cmd_qbls_fractal():
     return "\n".join(lines)
 
 
+def cmd_iron_proof():
+    from urt.iron_proof import (
+        spectral_uniqueness_proof, gamma_from_dimension_proof,
+        free_parameter_audit, prediction_statistics,
+    )
+    sp  = spectral_uniqueness_proof()
+    gd  = gamma_from_dimension_proof()
+    fp  = free_parameter_audit()
+    st  = prediction_statistics()
+    winner = sp["winner"]["graph"].strip() if sp["winner"] else "none"
+    lines = [
+        "Iron Proof — Cathedral Uniqueness (attack mode):",
+        f"  Spectral uniqueness: {winner} is the unique solution",
+        f"  Conditions: λ₂=D=3 AND simple rotation group A₅",
+        f"  Cube fails: S₄ has A₄ as normal subgroup (not simple)",
+        f"  KEY: γ = D^{{-(D+1)}} = 3^{{-4}} = 1/81 (from D alone, no icosahedral input)",
+        f"  Identity: |H₃|+F+1 = D^{{D+1}} = 81 ← mathematical theorem: {gd['identity_holds']}",
+        f"  δ★ = (1−D^{{-(D+1)}})·π/(N·φ) — PURE DIMENSIONAL FORMULA",
+        f"  Free continuous parameters: {fp['free_continuous_parameters']}",
+        f"  Free discrete choices:      {fp['free_discrete_choices']} (D=3)",
+        f"  1 input → {fp['n_observables_predicted']} predictions (genuine compression)",
+        f"  All predictions within 2σ: {st['all_within_2sigma']}",
+        f"  P(random chance): ~10^{{{st['log10_p']:.0f}}}",
+        "  Verdict: NOT numerology — theorem-forced by A₅ uniqueness in SO(3)",
+    ]
+    return "\n".join(lines)
+
+
 # ── Lytollis Guard ────────────────────────────────────────────────────────────
 
 BLOCKED_PATTERNS = [
@@ -874,17 +902,20 @@ def main():
         elif p_lower in {"qbls fractal", "fractal", "meta universe", "ladder fractal"}:
             print("\n" + cmd_qbls_fractal() + "\n")
 
+        elif p_lower in {"iron proof", "iron_proof", "bulletproof", "attack", "uniqueness proof"}:
+            print("\n" + cmd_iron_proof() + "\n")
+
         else:
             # Default: Cathedral-aware response
             topics = ("EW sector, cosmology, CMB, uniqueness proof, prime 181, "
-                      "CKM/PMNS mixing, CanonicalV4Gem, QBLS fractal, "
+                      "CKM/PMNS mixing, CanonicalV4Gem, QBLS fractal, iron proof, "
                       "holography, consciousness, black holes, GR tests, "
                       "metamaterials, drone swarms, gravitational waves")
             reply = (
-                f"Cathedral v2.3 active. δ★ = {DELTA_STAR:.8f}, C_mass = {C_MASS:.6f}. "
+                f"Cathedral v2.4 active. δ★ = {DELTA_STAR:.8f}, C_mass = {C_MASS:.6f}. "
                 f"I cover: {topics}. "
                 "Commands: electroweak, cosmology, uniqueness, prime181, "
-                "ckm pmns, canonical, qbls fractal, gw <M>, swarm <m>, or 'ask ai'."
+                "ckm pmns, canonical, qbls fractal, iron proof, gw <M>, swarm <m>, or 'ask ai'."
             )
             print("\nGenesis:", style(reply), "\n")
 

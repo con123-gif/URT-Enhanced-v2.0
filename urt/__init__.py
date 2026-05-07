@@ -423,8 +423,20 @@ from .qbls_fractal import (
     qbls_fractal_summary,
     print_qbls_fractal_report,
 )
+from .iron_proof import (
+    spectral_uniqueness_proof,
+    gamma_from_dimension_proof,
+    free_parameter_audit,
+    genuine_predictions,
+    inter_observable_correlations,
+    prediction_statistics,
+    honest_assessment,
+    a5_uniqueness_argument,
+    iron_proof_full,
+    print_iron_proof_report,
+)
 
-__version__ = "2.3.0"
+__version__ = "2.4.0"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics

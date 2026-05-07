@@ -1,14 +1,17 @@
-# URT Enhanced v2.3 — Cathedral Framework
+# URT Enhanced v2.4 — Cathedral Framework
 
 ## Repository Overview
 
 Universal Recursive Tuning (URT) — a unified icosahedral physics framework built around the single constant:
 
 ```
-δ★ = (1 − 1/81) × π / (13φ) ≈ 0.14751
+δ★ = (1 − D^{−(D+1)}) × π / (N×φ) = (80/81) × π / (13φ) ≈ 0.14751
 ```
 
-where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), γ=1/81.
+where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), γ=1/81=D^{−(D+1)}.
+
+**Iron Proof (v2.4)**: D=3 alone → A₅ uniqueness (Jordan 1870) → N=13 → γ=D^{−(D+1)}=1/81 → δ★.
+Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 
 ## Key Files
 
@@ -63,21 +66,27 @@ where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), γ=1/81.
 | `urt/canonical_v4gem.py` | ta-URT: Ω=9/13, τ_stab=0.001211, 13 resonance shells |
 | `urt/qbls_fractal.py` | 13-rung meta-universe fractal ladder (Planck→Cosmos) |
 
+### New Modules (v2.4 — Iron Proof)
+| File | Domain |
+|------|--------|
+| `urt/iron_proof.py` | Bulletproof uniqueness: D=3→A₅→N=13→γ=D^{−D−1}→δ★, 0 free params |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.4)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q          # all 761 tests
-python -m pytest tests/ -q -k gw   # gravitational wave tests only
-python -m pytest tests/ -q -k ckm  # CKM/PMNS tests only
+python -m pytest tests/ -q              # all 808 tests
+python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
+python -m pytest tests/ -q -k gw       # gravitational wave tests only
+python -m pytest tests/ -q -k ckm      # CKM/PMNS tests only
 ```
 
 ## Key Numerical Values

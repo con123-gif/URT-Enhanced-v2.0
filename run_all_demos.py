@@ -258,6 +258,12 @@ def run_qbls_fractal():
     print_qbls_fractal_report()
 
 
+def run_iron_proof():
+    section("Iron Proof — Bulletproof Uniqueness: D=3→A₅→N=13→δ★, 0 free params")
+    from urt.iron_proof import print_iron_proof_report
+    print_iron_proof_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
@@ -295,6 +301,7 @@ DEMOS = {
     "ckm_pmns":     run_ckm_pmns,
     "canonical":    run_canonical,
     "qbls_fractal": run_qbls_fractal,
+    "iron_proof":   run_iron_proof,
 }
 
 # Fast default (excludes logistic which takes ~30s)
@@ -304,7 +311,7 @@ FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "metamaterials", "swarm", "gw",
               "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e", "topology",
               "electroweak", "cosmology", "uniqueness", "prime181",
-              "ckm_pmns", "canonical", "qbls_fractal"]
+              "ckm_pmns", "canonical", "qbls_fractal", "iron_proof"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]
