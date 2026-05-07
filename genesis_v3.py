@@ -92,6 +92,10 @@ try:
         # π–φ–e flow
         uniqueness_theorem,
         flow_coefficient_table,
+        # Cathedral topology
+        holonomy_vortex,
+        gravitational_deficit_triangle,
+        rg_mode_table,
     )
     URT_OK = True
 except ImportError as err:
@@ -479,6 +483,35 @@ def cmd_vacuum():
     return "\n".join(lines)
 
 
+def cmd_topology():
+    h = holonomy_vortex()
+    t = gravitational_deficit_triangle()
+    modes = rg_mode_table()
+    lines = [
+        "THE CATHEDRAL: Discrete Topology → Continuous Spacetime",
+        "",
+        "Panel 1 — Holonomy Vortex (Arrow of Time):",
+       f"  360° + {h['physical_rail_deg']:.4f}° = {h['holonomy_deg']:.4f}°",
+       f"  Physical rail = 2δ★ = {h['physical_rail_deg']:.4f}°",
+        "  Topological non-closure forces macroscopic expansion.",
+        "",
+        "Panel 2 — RG Flow (Scale Damping):",
+        "  Mode  η_m = 1/ln(λ/μ₀)  IR suppression",
+    ]
+    for row in modes:
+        lines.append(f"  λ={row['lambda_n']:>2}   {row['eta_m']:.4f}           "
+                     f"{row['ir_suppression_pct']:.1f}%")
+    lines += [
+        "",
+        "Panel 3 — Gravitational Deficit (Metric Curvature):",
+       f"  Ideal flat vacuum = {t['ideal_flat_deg']:.3f}°",
+       f"  Physical rail     = {t['physical_rail_deg']:.4f}°  (2δ★)",
+       f"  K5 entropy deficit= {t['k5_entropy_deficit_deg']:.4f}°  (negative: curves space)",
+       f"  The {t['buckle']:.4f}° buckle is the geometric origin of GR and inertia.",
+    ]
+    return "\n".join(lines)
+
+
 def cmd_pi_phi_e():
     u = uniqueness_theorem()
     table = flow_coefficient_table()
@@ -679,6 +712,9 @@ def main():
 
         elif p_lower in {"pi phi e", "pi_phi_e", "flow", "uflow"}:
             print("\n" + cmd_pi_phi_e() + "\n")
+
+        elif p_lower in {"topology", "holonomy", "vortex", "rg flow"}:
+            print("\n" + cmd_topology() + "\n")
 
         else:
             # Default: Cathedral-aware response

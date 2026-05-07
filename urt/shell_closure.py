@@ -94,8 +94,10 @@ def compute_all_constants():
 
     Rm    = (3/35) * DELTA_STAR**2 - (4/51) * pi**3
     ma    = DELTA_STAR / abs(Rm) * 1e3
-    ns    = 1 - 2/60
-    r     = 12 / 60**2
+    # N_e = |H3| - D = 60 - 3 = 57 e-foldings (infographic v6: 1-2/57 = 0.9649 ✓)
+    N_e   = G - D                                  # 60 - 3 = 57
+    ns    = 1 - 2 / N_e                            # = 55/57 ≈ 0.9649
+    r     = 12 / N_e ** 2                          # = 12/57² ≈ 0.003695
     H0r   = 1 + (D / (F * pi)) * 2
     etaB  = gamma**3 * Delta * DELTA_STAR * 8 / 9
 
@@ -114,8 +116,9 @@ def compute_all_constants():
         "theta13":       theta13,
         "theta23":       theta23,
         "deltaCP":       deltaCP,
-        "Omega_m":       4/13,
-        "Omega_L":       9/13,
+        # Ω_m = (4/13)(1+2γ) from infographic v6 (γ=1/81 correction to matter fraction)
+        "Omega_m":       (4/13) * (1 + 2*gamma),  # ≈ 0.3153
+        "Omega_L":       1 - (4/13) * (1 + 2*gamma),
         "eta_B":         etaB,
         "n_s":           ns,
         "r":             r,

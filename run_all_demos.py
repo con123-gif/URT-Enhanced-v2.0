@@ -204,6 +204,12 @@ def run_forces():
     print_force_structure_report()
 
 
+def run_topology():
+    section("Cathedral Topology — Holonomy Vortex, RG Flow, Gravitational Deficit")
+    from urt.cathedral_topology import print_topology_report
+    print_topology_report()
+
+
 def run_pi_phi_e():
     section("π–φ–e Flow — Unique Geometric Derivation of URT Coefficients")
     from urt.pi_phi_e_flow import print_pi_phi_e_report
@@ -239,6 +245,7 @@ DEMOS = {
     "vacuum":       run_vacuum,
     "forces":       run_forces,
     "pi_phi_e":     run_pi_phi_e,
+    "topology":     run_topology,
 }
 
 # Fast default (excludes logistic which takes ~30s)
@@ -246,7 +253,7 @@ FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "axion", "nuclear", "ns", "qft", "quasicrystal", "neural",
               "periodic", "holography", "consciousness", "prime",
               "metamaterials", "swarm", "gw",
-              "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e"]
+              "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e", "topology"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]

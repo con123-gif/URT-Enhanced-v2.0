@@ -275,6 +275,19 @@ from .vacuum_instability import (
     mexican_hat_parameters,
     print_vacuum_report,
 )
+from .cathedral_topology import (
+    HOLONOMY_VORTEX_DEG,
+    PHYSICAL_RAIL_DEG,
+    K5_ENTROPY_DEFICIT_DEG,
+    GRAVITATIONAL_DEFICIT_DEG as TOPOLOGY_DEFICIT_DEG,
+    holonomy_vortex,
+    rg_damping_factor,
+    rg_mode_table,
+    gravitational_deficit_triangle,
+    uv_to_ir_transition,
+    topology_summary,
+    print_topology_report,
+)
 from .pi_phi_e_flow import (
     ETA,
     ETA_L,
