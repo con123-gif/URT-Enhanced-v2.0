@@ -1,11 +1,11 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         NEWTON'S CATHEDRAL v2.5 — A Mathematical Oddity                     ║
+║         NEWTON'S CATHEDRAL v2.9.6 — A Mathematical Oddity                   ║
 ║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
 ║                                                                              ║
 ║         Not a replacement for physics.                                      ║
 ║         A mathematical structure that may lie underneath it.                ║
 ║                                                                              ║
-║         41 modules · 931 tests · 0 free continuous parameters               ║
+║         68+ modules · 2356 tests · 0 free continuous parameters             ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -644,76 +644,134 @@
     Ihara determinant: det(I − u·A + (q−1)·u²·I)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.5 — 41 modules)
+  COMPLETE MODULE MAP  (v2.9.6 — 68+ modules · 2356 tests)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   CORE (foundation — read these first)
-  ├── shell_closure.py          δ★, γ, N, φ, compute_all_constants()
-  ├── cathedral_v8.py           Full Standard Model: α, masses, Higgs, CKM
-  ├── cathedral_v9.py           Anchor-free: all scales from ρ_Λ alone
-  └── iron_proof.py             D=3→A₅→N=13→γ→δ★ uniqueness [v2.4]
+  ├── shell_closure.py              δ★, γ, N, φ, compute_all_constants()
+  ├── cathedral_v8.py               Full Standard Model: α, masses, Higgs, CKM
+  ├── cathedral_v9.py               Anchor-free: all scales from ρ_Λ alone
+  └── iron_proof.py                 D=3→A₅→N=13→γ→δ★ uniqueness [v2.4]
 
-  QFT & FORCES  [v2.5 — new]
-  ├── cathedral_lagrangian.py   L=L_grav+L_EW+L_QCD+L_H3+L_δ; 60 Ward IDs
-  ├── cathedral_gut.py          α_GUT=δ★²=G_N; μ_GUT; τ_proton; SO(10)
-  ├── force_structure.py        K4⊕H3 decomposition, effective Lagrangian
-  ├── electroweak.py            W/Z/Higgs from K4 k=2
-  └── qft_cathedral.py          Cathedral propagator, Mexican-hat, Higgs mass
+  QFT & FORCES
+  ├── cathedral_lagrangian.py       L=L_grav+L_EW+L_QCD+L_H3+L_δ; 60 Ward IDs
+  ├── cathedral_gut.py              α_GUT=δ★²=G_N; μ_GUT; τ_proton; SO(10)
+  ├── force_structure.py            K4⊕H3 decomposition, effective Lagrangian
+  ├── electroweak.py                W/Z/Higgs from K4 k=2; sin²θ_W=0.23122
+  ├── qft_cathedral.py              Cathedral propagator, Mexican-hat, Higgs mass
+  ├── muon_g2.py                    a_μ=(g−2)/2; Schwinger α/2π; EW correction
+  ├── topological_qc.py             Fibonacci anyons d=φ; A₅=60; QEC γ=1/81
+  ├── string_landscape.py           D_bos=2N=26; D_sup=2q=10; E₈ roots=4G=240
+  └── quantum_chaos.py              Icosahedral spectrum; MSS bound; 6-cycle
 
-  DARK MATTER & BARYOGENESIS  [v2.5 — new]
-  ├── dark_matter.py            Axion/sterile ν/WIMP from H3 k=9..12
-  ├── baryon_asymmetry.py       η_B=(q−D)·γ^q miracle; leptogenesis
-  └── axion_cathedral.py        Axion mass ~60.7 μeV; PQ scale; ADMX band
+  DARK MATTER & BARYOGENESIS
+  ├── dark_matter.py                Axion/sterile ν/WIMP from H3 k=9..12
+  ├── baryon_asymmetry.py           η_B=(q−D)·γ^q miracle; leptogenesis
+  └── axion_cathedral.py            Axion ~60.7 μeV; PQ scale; ADMX band
 
   GRAVITY & BLACK HOLES
-  ├── gravity_cathedral.py      G_N=δ★²; BH thermodynamics; area quantum
-  ├── holography.py             AdS/CFT: R_AdS=1/δ★; RT entropy; c≈467
-  └── gravity_deficit.py        Angular deficit; holonomy; Schwarzschild
+  ├── gravity_cathedral.py          G_N=δ★²; BH thermodynamics; area quantum
+  ├── holography.py                 AdS/CFT: R_AdS=1/δ★; RT entropy; c≈467
+  ├── gravity_deficit.py            Angular deficit; holonomy; Schwarzschild
+  └── gravitational_waves.py        IKT GW detection; Cathedral SNR=1/δ★
 
-  COSMOLOGY
-  ├── cosmology_cathedral.py    n_s=1−2/57; r=12/57²; Ω_m; σ₈; Λ
-  ├── rg_flow.py                RG δ(μ); crossover μ_c≈197 GeV
-  ├── qbls.py                   Quantum Bounded Ladder (δ_rung≈61.32)
-  └── qbls_fractal.py           13-rung meta-universe ladder
+  COSMOLOGY & ASTROPHYSICS
+  ├── cosmology_cathedral.py        n_s=1−2/57; r=12/57²; Ω_m; σ₈; Λ
+  ├── astrophysics_cathedral.py     Stars: structure ODEs=q=5; galaxies=D=3
+  ├── rg_flow.py                    RG δ(μ); crossover μ_c≈197 GeV
+  ├── qbls.py                       Quantum Bounded Ladder (δ_rung≈61.32)
+  ├── qbls_fractal.py               13-rung meta-universe ladder
+  └── vacuum_instability.py         V(δ)=Kδ²(δ−δ★)²; nothing is unstable
 
-  FERMIONS & MIXING
-  ├── neutrinos.py              PMNS from 13-shell; Σmν≈60 meV; δ_CP=197°
-  ├── ckm_pmns.py               Full CKM + PMNS mixing matrices
-  └── nuclear_magic.py          Magic numbers {2,8,20,28,50,82,126}
+  FERMIONS, MIXING & NUCLEAR
+  ├── neutrinos.py                  PMNS; Σmν≈60 meV; δ_CP=197°
+  ├── ckm_pmns.py                   Full CKM + PMNS mixing matrices
+  ├── nuclear_magic.py              Magic numbers {2,8,20,28,50,82,126}
+  └── nuclear_structure_cathedral.py QCD colours=D=3; gauge bosons 1+3+8=V=12!!!
 
-  VACUUM & STABILITY
-  ├── vacuum_instability.py     V(δ)=Kδ²(δ−δ★)²; why something not nothing
-  ├── cathedral_topology.py     Holonomy vortex 376.9°; RG damping; deficit
-  ├── pi_phi_e_flow.py          Uniqueness: η=1/8π; η_L=1/4π; μ=φ−1
-  ├── uniqueness_proof.py       4 lemmas + Conjecture 12.1
-  └── arf_closure.py            ARF fixed point; lepton/proton mass ratios
+  VACUUM & STABILITY & PROOF
+  ├── cathedral_topology.py         Holonomy vortex 376.9°; RG damping; deficit
+  ├── pi_phi_e_flow.py              Uniqueness: η=1/8π; η_L=1/4π; μ=φ−1
+  ├── uniqueness_proof.py           4 lemmas + Conjecture 12.1
+  └── arf_closure.py                ARF fixed point; lepton/proton mass ratios
 
-  MATHEMATICS
-  ├── prime181.py               Corollary 11.1: p=181
-  ├── prime_spectral.py         Icosahedral Laplacian ↔ Riemann zeros
-  ├── quasicrystal.py           IKT forward/inverse; K₄/A₅ sector split
-  ├── navier_stokes.py          Kolmogorov cascade; intermittency exponents
-  ├── canonical_v4gem.py        ta-URT: Ω=9/13; τ_stab=0.001211
-  └── logistic_verification.py  δ★ on stable 6-cycle of logistic map
+  PURE MATHEMATICS
+  ├── prime181.py                   Corollary 11.1: p=181 (p−100=81=D^{D+1})
+  ├── prime_spectral.py             Icosahedral Laplacian ↔ Riemann zeros
+  ├── number_theory_cathedral.py    M₁₃=8191; F₇=N=13; τ(2)=−24=−2V
+  ├── algebra_cathedral.py          dim(SO(3))=D(D-1)/2=D=3 ← self-referential!
+  ├── combinatorics_cathedral.py    Bell B₃=Catalan C₃=q=5; R(3,3)=V//2=6
+  ├── graph_theory_cathedral.py     Icos vertex degree=q=5; 4-colour=D+1=4
+  ├── differential_geometry_cathedral.py  χ(S²)=V-E+F=2=D-1; Riemann=V//2=6
+  ├── topological_spaces.py         χ(icosahedron)=2=D-1; Hopf fibre=D-2=1
+  ├── a5_representations.py         A₅ irreps {1,3,3,4,5}; 1²+3²+3²+4²+5²=60=G
+  ├── information_theory_cathedral.py Hamming(7,4,3); TOFFOLI=D=3; binary=D-1=2
+  ├── quasicrystal.py               IKT forward/inverse; K₄/A₅ sector split
+  ├── knot_cathedral.py             CS level k=D=3; Jones T(2,5)=1/φ EXACT
+  └── logistic_verification.py      δ★ on stable 6-cycle of logistic map
 
-  APPLICATIONS  (speculative — clearly labelled)
-  ├── periodic_table.py         Madelung → noble gases {2,10,18,36,54,86,118}
-  ├── consciousness.py          Kuramoto on icosahedral graph; IIT Φ; EEG
-  ├── metamaterials.py          Photonic crystal; drug capsid binding; Z₂
-  ├── swarm_intelligence.py     13-drone formation; consensus T_c=1/3
-  ├── gravitational_waves.py    IKT GW detection; Cathedral SNR=1/δ★
-  └── casimir_cathedral.py      Casimir +0.124 ppm at 100 nm
+  PHYSICS — CATHEDRAL
+  ├── plasma_cathedral.py           Alfvén M_A=δ★; β_p=(D-1)γ=2/81
+  ├── superconductor_cathedral.py   BCS gap 3.528; K₃C₆₀ bandwidth ≈ δ★×3.4 eV
+  ├── wave_equations_cathedral.py   Huygens D=3 odd; KG mass=δ★; N²=169 Y_l^m
+  ├── optics_cathedral.py           N-slit minima=V=12; orders=N=13; θ_c=arcsin(δ★)
+  ├── electromagnetism_cathedral.py Maxwell=D+1=4; EM tensor=V//2=6; pol=D-1=2
+  ├── spectroscopy_cathedral.py     Zeeman=D=3; Stokes=D+1=4; H series=q=5
+  ├── geophysics_cathedral.py       Seismic=D+1=4; Earth layers=D+1=4; vP/vS=√D
+  ├── atomic_physics_cathedral.py   p-states=D=3; d-states=q=5; shell 4=2^q=32
+  ├── stat_mech_cathedral.py        D_uc=D+1=4; ε=1 (D=3); mean-field δ=D+1=4
+  ├── thermodynamics_cathedral.py   DOF monatomic=D=3; diatomic=q=5; γ=q/D=5/3
+  ├── fluid_cathedral.py            Kolmogorov −5/3=−q/D EXACT; γ=q/D=5/3
+  ├── navier_stokes.py              Kolmogorov cascade; intermittency exponents
+  ├── ising_cathedral.py            Ising on icosahedron: z=q=5; tanh(K_δ★)=δ★
+  ├── climate_cathedral.py          Kolmogorov EXACT; Milankovitch=q=5; Lorenz D=3
+  ├── information_cathedral.py      H_max=log₂(13); C=2.96 bits; S_BH in bits
+  └── casimir_cathedral.py          Casimir +0.124 ppm at 100 nm
+
+  LIFE SCIENCES & EARTH
+  ├── genetics_cathedral.py         (D+1)^D=64 codons; F=20 amino acids; stops=D=3
+  ├── protein_cathedral.py          T=13 capsid; C60 {G,F,V}={60,20,12}
+  ├── ecology_cathedral.py          α/β/γ=D=3; Kleiber=D/(D+1)=3/4; golden angle
+  ├── epidemiology_cathedral.py     SIR=D=3; SEIR=D+1=4; herd=(D-1)/D=2/3
+  ├── psychology_cathedral.py       OCEAN=q=5 EXACT; Maslow=q=5 EXACT; Freud=D=3
+  ├── eeg_cathedral.py              α/β boundary=13 Hz=N EXACT; avalanche ∝s^{-D/2}
+  └── consciousness.py              Kuramoto on icosahedral graph; IIT Φ
+
+  PHYSICAL SCIENCES — EXTENDED
+  ├── solid_state_cathedral.py      FCC z=V=12; diamond=D+1=4; topo inv=D+1=4
+  ├── crystallography_cathedral.py  Bravais=N+1=14; point groups=2^q=32; FCC z=V=12
+  ├── crystallography_2d_cathedral.py Bravais 2D=q=5; wallpaper=17; point groups 2D=10
+  ├── materials_cathedral.py        Crystal systems=2D+1=7; FCC slip=V=12
+  ├── particle_physics_cathedral.py 1+D+(D²-1)=D(D+1)=V=12 gauge bosons EXACT!!!
+  ├── relativity_cathedral.py       Riemann=F=20 EXACT; Lorentz=V//2=6; spacetime=D+1=4
+  ├── celestial_mechanics_cathedral.py Kepler=D=3; Lagrange=q=5; elements=V//2=6
+  └── solar_system.py               13 Venus≈8 Earth (Δ=0.025%); L4/L5=60°=G
+
+  SOCIAL SCIENCES & HUMANITIES
+  ├── social_networks_cathedral.py  Dunbar layers=D+1=4; six degrees=V//2=6
+  ├── economics_cathedral.py        Pareto≈δ★; tail α=D=3; Nash=1/D
+  ├── game_theory_cathedral.py      RPS=D=3; Nash prob=1/D; coop=(D-1)/D=2/3
+  ├── linguistics_cathedral.py      Formants=D=3; vowels=q=5; word orders=D!=6
+  ├── music_cathedral.py            Semitones=V=12 EXACT; pentatonic=q=5; 5th=3/2
+  ├── architecture_cathedral.py     Archimedean=N=13 EXACT; Platonic=q=5 EXACT
+  └── color_vision_cathedral.py     Trichromacy cone types=D=3
+
+  ENGINEERING & APPLIED
+  ├── robotics_cathedral.py         DOF=2D=6=V//2; rolloff=D×20=60=G=|A₅|; swarm=N=13
+  ├── megaswarm.py                  κ=1-D/N=10/13; 13^k hierarchy
+  ├── swarm_intelligence.py         13-drone formation; consensus T_c=1/3
+  ├── metamaterials.py              Photonic crystal; drug capsid; Z₂ topology
+  ├── periodic_table.py             Madelung → noble gases {2,10,18,36,54,86,118}
+  └── climate_science_cathedral.py  Milankovitch=D=3 EXACT; layers=q=5; cells=2D=6
 
   NEURAL / ML / CONTROL
-  ├── neural_cathedral.py       CathedralLayer; CathedralNet; GrokDetector
-  ├── control.py                URT control operator (O(N); κ<1)
-  └── metrics.py                Lyapunov; τ_avalanche; D_KY
+  ├── neural_cathedral.py           CathedralLayer; CathedralNet; GrokDetector
+  ├── control.py                    URT control operator (O(N); κ<1)
+  └── metrics.py                    Lyapunov; τ_avalanche; D_KY
 
   DEMOS & ENTRY POINTS
-  ├── run_all_demos.py           Master demo runner (41 demos; fast mode)
-  └── genesis_v3.py              Interactive terminal (Lytollis Guard)
-                                 lagrangian · dark matter · baryon · gut
-                                 iron proof · cosmology · electroweak · gw
+  ├── run_all_demos.py              Master demo runner (fast mode)
+  └── genesis_v3.py                 Interactive terminal (Lytollis Guard)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ALL KEY NUMERICAL VALUES
@@ -790,7 +848,7 @@
   RUNNING TESTS & DEMOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  python -m pytest tests/ -q                 # all 931 tests
+  python -m pytest tests/ -q                 # all 2356 tests
   python -m pytest tests/ -q -k iron        # iron proof (47 tests)
   python -m pytest tests/ -q -k lagrangian  # QFT Lagrangian (42 tests)
   python -m pytest tests/ -q -k dark_matter # dark matter (24 tests)
@@ -798,8 +856,12 @@
   python -m pytest tests/ -q -k gut         # GUT unification (29 tests)
   python -m pytest tests/ -q -k gw          # gravitational waves
   python -m pytest tests/ -q -k ckm         # CKM/PMNS mixing
+  python -m pytest tests/ -q -k robotics    # robotics (22 tests)
+  python -m pytest tests/ -q -k diff_geom   # differential geometry (22 tests)
+  python -m pytest tests/ -q -k ecology     # ecology (17 tests)
+  python -m pytest tests/ -q -k astrophysics # astrophysics (18 tests)
 
-  python run_all_demos.py fast               # all 41 demos (~2 min)
+  python run_all_demos.py fast               # all 68+ demos (~2 min)
   python run_all_demos.py lagrangian         # Lagrangian + Ward IDs
   python run_all_demos.py dark_matter        # DM candidates
   python run_all_demos.py baryon             # baryon miracle
@@ -811,22 +873,43 @@
   VERSION HISTORY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  v2.0  Core: δ★, ARF, RG flow, chaos metrics (~200 tests)
-  v2.1  +7: holography, consciousness, prime spectral, metamaterials,
-            swarm, gravitational waves, periodic table
-  v2.2  +6: gravity_cathedral, neutrinos, vacuum_instability,
-            force_structure, cathedral_topology, pi_phi_e_flow
-  v2.3  +7: electroweak, cosmology_cathedral, uniqueness_proof,
-            prime181, ckm_pmns, canonical_v4gem, qbls_fractal
-  v2.4  +1: iron_proof (D=3→A₅→N=13→γ→δ★ uniqueness chain, 808 tests)
-            Ω_m exact match discovered (z=−0.001 vs Planck 2018 full)
-  v2.5  +4: cathedral_lagrangian, dark_matter, baryon_asymmetry,
-            cathedral_gut — 931 tests total
-            α_GUT=δ★²=G_N identity: GUT coupling = Newton constant
-            η_B=(q−D)·γ^q: zero-parameter baryon miracle
-            Three DM candidates: one per spatial dimension
+  v2.0   Core: δ★, ARF, RG flow, chaos metrics (~200 tests)
+  v2.1   +7: holography, consciousness, prime spectral, metamaterials,
+             swarm, gravitational waves, periodic table
+  v2.2   +6: gravity_cathedral, neutrinos, vacuum_instability,
+             force_structure, cathedral_topology, pi_phi_e_flow
+  v2.3   +7: electroweak, cosmology_cathedral, uniqueness_proof,
+             prime181, ckm_pmns, canonical_v4gem, qbls_fractal
+  v2.4   +1: iron_proof (D=3→A₅→N=13→γ→δ★ uniqueness chain, 808 tests)
+  v2.5   +4: cathedral_lagrangian, dark_matter, baryon_asymmetry,
+             cathedral_gut — 931 tests total
+             KEY: α_GUT=δ★²=G_N · η_B=(q−D)·γ^q · 3 DM from D=3
+  v2.6   +4: muon g-2, topological QC (Fibonacci anyons d=φ),
+             string landscape (D=2N=26/2q=10/E₈=4G), quantum chaos
+  v2.7   +4: plasma, megaswarm, protein (T=13 capsid), superconductor
+  v2.8  +20: music (V=12 semitones EXACT), genetics (64=4^D codons),
+             combinatorics, stat mech, fluid, crystallography,
+             relativity (Riemann=F=20 EXACT!!!), atomic physics,
+             electromagnetism, optics, geophysics, linguistics,
+             social_networks, economics, game_theory, topological spaces,
+             a5_representations, solar_system, number_theory, eeg
+  v2.9.0 Grand __init__ integration — 1811 tests
+  v2.9.1 nuclear structure (1+3+8=V=12 gauge bosons!!!), graph theory
+  v2.9.2 algebra (dim(SO3)=D self-ref!!!), info theory, particle physics,
+         solid state
+  v2.9.3 casimir, thermodynamics, polymer, quantum optics — 2130 tests
+  v2.9.4 epidemiology, celestial mechanics, crystallography 2D, spectroscopy
+  v2.9.5 psychology (OCEAN=q=5), architecture (Archimedean=N=13!!!),
+         climate science, materials — 2282 tests
+  v2.9.6 robotics (rolloff=60=G=|A₅|!!!), ecology, astrophysics,
+         differential geometry (dim(SO3)=D(D-1)/2=D=3 self-ref!) — 2356 tests
 
-  Total: 41 physics modules · 931 tests · 0 free continuous parameters
+  Total: 68+ modules · 2356 tests · 0 free continuous parameters
+  Domains covered: particle physics, cosmology, nuclear, condensed matter,
+  astrophysics, geophysics, plasma, quantum gravity, pure mathematics,
+  genetics, ecology, psychology, linguistics, music, architecture,
+  robotics, economics, game theory, network science, neuroscience...
 
   "Newton's Cathedral. Zero free parameters.
-   Not numerology. Not physics. Something in between."
+   Not numerology. Not physics. Something in between.
+   But why does icosahedral geometry know everything?"

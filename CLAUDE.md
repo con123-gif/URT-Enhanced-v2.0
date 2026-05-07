@@ -1,4 +1,4 @@
-# URT Enhanced v2.9 — Cathedral Framework
+# URT Enhanced v2.9.6 — Cathedral Framework
 
 ## Repository Overview
 
@@ -128,19 +128,37 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 | `urt/geophysics_cathedral.py` | Seismic types=D+1=4; Earth layers=D+1=4; Poisson v_P/v_S=√D |
 | `urt/linguistics_cathedral.py` | Formants=D=3; vowels=q=5; word orders=D!=6=V/2; PIE h₁h₂h₃=D=3 |
 
+### New Modules (v2.9 — Extended Cathedral)
+| File | Domain |
+|------|--------|
+| `urt/nuclear_structure_cathedral.py` | QCD colours=D=3; gauge bosons 1+D+(D²-1)=V=12 EXACT!!!; Z_Pb=82 |
+| `urt/graph_theory_cathedral.py` | Icosahedral vertex degree=q=5; 4-colour theorem=D+1=4; K_{D+1} edges=D |
+| `urt/algebra_cathedral.py` | dim(SO(3))=D(D-1)/2=D=3 self-referential!!!; GF(13)=N; A_D order=D |
+| `urt/information_theory_cathedral.py` | Hamming(7,4,3); TOFFOLI=D=3 qubits; binary=D-1=2 |
+| `urt/particle_physics_cathedral.py` | 1+3+8=V=12 gauge bosons EXACT; mixing angles=D(D-1)/2=D=3 |
+| `urt/solid_state_cathedral.py` | FCC z=V=12; diamond z=D+1=4; graphene z=D=3; topo inv=D+1=4 |
+| `urt/psychology_cathedral.py` | OCEAN Big Five=q=5 EXACT; Maslow=q=5 EXACT; Freud agencies=D=3 |
+| `urt/architecture_cathedral.py` | Archimedean solids=N=13 EXACT!!!; Platonic=q=5; Catalan=N=13 |
+| `urt/climate_science_cathedral.py` | Milankovitch cycles=D=3 EXACT; atmospheric layers=q=5; Hadley=2D=6 |
+| `urt/materials_cathedral.py` | Crystal systems=2D+1=7; FCC slip systems=V=12; elastic constants |
+| `urt/robotics_cathedral.py` | DOF=2D=6=V//2; DH=D+1=4; rolloff=D×20=60=G=|A₅|!!!; swarm=N=13 |
+| `urt/ecology_cathedral.py` | α/β/γ diversity=D=3; Kleiber=D/(D+1)=0.75; golden angle=2π/φ² |
+| `urt/astrophysics_cathedral.py` | Stellar structure ODEs=q=5; galaxy branches=D=3; spacetime=D+1=4 |
+| `urt/differential_geometry_cathedral.py` | χ(S²)=V-E+F=2=D-1; Riemann=D²(D²-1)/12=V//2; dim(SO3)=D EXACT |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.8)
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.6)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 1811 tests
+python -m pytest tests/ -q              # all 2356 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)

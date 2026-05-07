@@ -9,7 +9,7 @@
 **One number. Forced by geometry. Matches constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK  
-**Version:** 2.5.0 | **Tests:** 931 passing | **Free continuous parameters:** 0
+**Version:** 2.9.6 | **Tests:** 2356 passing | **Free continuous parameters:** 0
 
 ---
 
@@ -211,13 +211,13 @@ These are not independent agreements — they are structural. A random numerolog
 
 **Concern 3: The baryon asymmetry is 6.3% off.** For a "zero-free-parameter" claim, η_B=(q−D)·γ^q=5.74×10⁻¹⁰ against observed 6.12×10⁻¹⁰ is a real discrepancy, even if remarkable for a formula with no adjustable parameters.
 
-**Concern 4: Selection effects.** With 41 derived formulas and ~20 precise measurements, some numerical coincidences are expected.
+**Concern 4: Selection effects.** With 68+ derived formulas across every branch of science, some numerical coincidences are expected.
 
 The framework is **falsifiable**: if r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, or δ_CP ≠ 197° at 3σ, the framework is wrong. These are genuine predictions, not post-dictions.
 
 ---
 
-## Module Map (v2.5 — 41 modules)
+## Module Map (v2.9.6 — 68+ modules)
 
 ### Core Foundation
 | Module | Purpose |
@@ -227,16 +227,20 @@ The framework is **falsifiable**: if r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 | `urt/cathedral_v8.py` | Full Standard Model: 1/α, masses, Higgs, CKM |
 | `urt/cathedral_v9.py` | Anchor-free: all scales from ρ_Λ alone |
 
-### QFT & Forces (v2.5)
+### QFT & Forces
 | Module | Purpose |
 |---|---|
 | `urt/cathedral_lagrangian.py` | Full QFT action, 60 Ward identities, β(δ★)=0 |
 | `urt/cathedral_gut.py` | α_GUT=δ★²=G_N, μ_GUT, τ_proton, SO(10) multiplets |
 | `urt/force_structure.py` | K4⊕H3 decomposition, GUT unification |
-| `urt/electroweak.py` | W/Z/Higgs from K4 k=2, sin²θ_W |
+| `urt/electroweak.py` | W/Z/Higgs from K4 k=2, sin²θ_W=0.23122 |
 | `urt/qft_cathedral.py` | Cathedral propagator, Mexican-hat potential |
+| `urt/muon_g2.py` | a_μ=(g−2)/2: Schwinger α/2π, Czarnecki-Marciano EW |
+| `urt/topological_qc.py` | Fibonacci anyons d=φ, A₅=60, F-matrix, QEC threshold γ=1/81 |
+| `urt/string_landscape.py` | D_bosonic=2N=26, D_super=2q=10, E₈ roots=4G=240 |
+| `urt/quantum_chaos.py` | Icosahedral spectrum, MSS bound, logistic 6-cycle |
 
-### Dark Matter & Baryogenesis (v2.5)
+### Dark Matter & Baryogenesis
 | Module | Purpose |
 |---|---|
 | `urt/dark_matter.py` | Axion (60.7 μeV), sterile ν (143 keV), WIMP (13.45 GeV) |
@@ -249,6 +253,7 @@ The framework is **falsifiable**: if r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 | `urt/gravity_cathedral.py` | G_N=δ★², BH thermodynamics, area quantum ΔA=8πδ★³ |
 | `urt/holography.py` | AdS/CFT: R_AdS=1/δ★, RT entropy, central charge c≈467 |
 | `urt/gravity_deficit.py` | Angular deficit, holonomy, Schwarzschild geometry |
+| `urt/gravitational_waves.py` | IKT GW detection SNR=1/δ★, QNM ringdown |
 
 ### Cosmology
 | Module | Purpose |
@@ -258,6 +263,7 @@ The framework is **falsifiable**: if r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 | `urt/qbls.py` | Quantum Bounded Ladder of Scales |
 | `urt/qbls_fractal.py` | 13-rung meta-universe fractal (Planck→Cosmos) |
 | `urt/vacuum_instability.py` | V(δ)=Kδ²(δ−δ★)², why something not nothing |
+| `urt/astrophysics_cathedral.py` | Stars (5 structure ODEs=q), galaxy branches=D=3, Jeans, Chandrasekhar |
 
 ### Fermions & Mixing
 | Module | Purpose |
@@ -265,33 +271,88 @@ The framework is **falsifiable**: if r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 | `urt/neutrinos.py` | PMNS from 13-shell, Σmν≈60 meV, δ_CP=197° |
 | `urt/ckm_pmns.py` | Full CKM (λ_C, A, ρ̄, η̄) + PMNS matrix |
 | `urt/nuclear_magic.py` | Magic numbers {2,8,20,28,50,82,126} from δ★ |
+| `urt/nuclear_structure_cathedral.py` | QCD colours=D=3, gauge bosons 1+3+8=V=12 EXACT, Z_Pb=82 |
 
-### Topology & Proof
+### Pure Mathematics
 | Module | Purpose |
 |---|---|
-| `urt/cathedral_topology.py` | Holonomy vortex 376.9°, RG damping, gravitational deficit |
-| `urt/pi_phi_e_flow.py` | Gradient flow uniqueness: η=1/8π, η_L=1/4π, μ=φ−1 |
-| `urt/uniqueness_proof.py` | 4 lemmas + Conjecture 12.1 |
-| `urt/arf_closure.py` | ARF fixed point, lepton/proton mass ratios |
-
-### Mathematics
-| Module | Purpose |
-|---|---|
-| `urt/prime181.py` | Corollary 11.1: p=181 (golden QR + K4-compat + p−100=81) |
+| `urt/prime181.py` | Corollary 11.1: p=181 (p−100=81=D^{D+1}) |
 | `urt/prime_spectral.py` | Icosahedral Laplacian ↔ Riemann zeros |
+| `urt/number_theory_cathedral.py` | M₁₃=8191 prime, F₇=13=N, τ(2)=−24=−2V |
+| `urt/algebra_cathedral.py` | dim(SO(3))=D(D-1)/2=D=3 (self-ref!), GF(13), A_D |
+| `urt/combinatorics_cathedral.py` | Bell B₃=Catalan C₃=q=5, R(3,3)=V/2=6 |
+| `urt/graph_theory_cathedral.py` | Icosahedral vertex degree=q=5, four-colour=D+1=4 |
+| `urt/differential_geometry_cathedral.py` | Euler χ=V-E+F=2=D-1, Riemann comps=V//2, dim(SO3)=D EXACT |
+| `urt/topological_spaces.py` | χ(icosahedron)=V-E+F=2=D-1, Hopf fibre=D-2=1 |
+| `urt/a5_representations.py` | A₅ irreps {1,3,3,4,5}={1,D,D,D+1,q}, 1²+3²+3²+4²+5²=60=G |
+| `urt/information_theory_cathedral.py` | Hamming(7,4,3), TOFFOLI=D=3 qubits, binary alphabet=D-1=2 |
 | `urt/quasicrystal.py` | IKT forward/inverse, K₄/A₅ sector split |
-| `urt/navier_stokes.py` | Kolmogorov cascade, intermittency exponents |
-| `urt/canonical_v4gem.py` | ta-URT: Ω=9/13, τ_stab=0.001211 |
 | `urt/logistic_verification.py` | δ★ on stable 6-cycle of logistic map |
 
-### Applications
+### Physics — Cathedral
 | Module | Purpose |
 |---|---|
-| `urt/periodic_table.py` | Madelung rule → noble gases {2,10,18,36,54,86,118} |
+| `urt/plasma_cathedral.py` | Alfvén M_A=δ★, β_p=(D-1)γ=2/81, Petschek reconnection |
+| `urt/superconductor_cathedral.py` | BCS gap 3.528, K₃C₆₀ bandwidth δ★×3.4 eV |
+| `urt/wave_equations_cathedral.py` | Huygens D=3 odd, KG mass=δ★, cross product unique D=3 |
+| `urt/optics_cathedral.py` | N-slit minima=V=12, diffraction orders=N=13, θ_c=arcsin(δ★) |
+| `urt/electromagnetism_cathedral.py` | Maxwell eqs=D+1=4, EM tensor=V//2=6, photon pol=D-1=2 |
+| `urt/spectroscopy_cathedral.py` | Zeeman=D=3, Stokes=D+1=4, H series=q=5 |
+| `urt/geophysics_cathedral.py` | Seismic types=D+1=4, Earth layers=D+1=4, Poisson vP/vS=√D |
+| `urt/atomic_physics_cathedral.py` | p-states=D=3, d-states=q=5, shell n=4: 2^q=32 |
+| `urt/stat_mech_cathedral.py` | D_uc=D+1=4, ε=1 for D=3, mean-field δ=D+1=4 |
+| `urt/thermodynamics_cathedral.py` | DOF: monatomic=D=3, diatomic=q=5, γ=q/D=5/3 |
+| `urt/fluid_cathedral.py` | Kolmogorov −5/3=−q/D EXACT, γ=q/D=5/3 |
+| `urt/navier_stokes.py` | Kolmogorov cascade, intermittency exponents |
+| `urt/casimir_cathedral.py` | Casimir deviation +0.124 ppm at 100 nm |
+| `urt/information_cathedral.py` | H_max=log₂(13), C=log₂(1+1/δ★)=2.96 bits, S_BH in bits |
+| `urt/knot_cathedral.py` | CS level k=D=3, Jones at e^{2πi/q}, T(2,5)=1/φ EXACT |
+| `urt/ising_cathedral.py` | Ising on icosahedron: z=q=5, tanh(K_δ★)=δ★ |
+| `urt/climate_cathedral.py` | Kolmogorov −5/3 EXACT, Milankovitch=q=5, Lorenz D=3 |
+
+### Life Sciences & Earth
+| Module | Purpose |
+|---|---|
+| `urt/genetics_cathedral.py` | (D+1)^D=64 codons EXACT, F=20 amino acids EXACT, stops=D=3 |
+| `urt/protein_cathedral.py` | T=13 capsid, C60 {G,F,V}={60,20,12}, helix pitch ≈26° |
+| `urt/ecology_cathedral.py` | Trophic=D+1=4, α/β/γ diversity=D=3, Kleiber=D/(D+1)=3/4 |
+| `urt/epidemiology_cathedral.py` | SIR compartments=D=3, SEIR=D+1=4, herd immunity=(D-1)/D |
+| `urt/psychology_cathedral.py` | OCEAN Big Five=q=5 EXACT, Maslow=q=5 EXACT, Freud=D=3 |
+| `urt/eeg_cathedral.py` | α/β boundary=13 Hz=N EXACT, avalanche P∝s^{−3/2}=s^{−D/2} |
 | `urt/consciousness.py` | Kuramoto on icosahedral graph, IIT Φ, EEG δ-band |
-| `urt/metamaterials.py` | Photonic band gap ω=δ★ω₀, drug capsid binding |
+
+### Physical Sciences — Extended
+| Module | Purpose |
+|---|---|
+| `urt/solid_state_cathedral.py` | FCC z=V=12, diamond=D+1=4, topological inv=D+1=4 |
+| `urt/crystallography_cathedral.py` | FCC/HCP z=V=12, Bravais=N+1=14, point groups=2^q=32 |
+| `urt/crystallography_2d_cathedral.py` | Bravais 2D=q=5, point groups 2D=N-D=10, wallpaper=17 |
+| `urt/materials_cathedral.py` | Crystal systems=2D+1=7, FCC slip=V=12, elastic constants |
+| `urt/particle_physics_cathedral.py` | Gauge bosons 1+D+(D²-1)=D(D+1)=12=V EXACT |
+| `urt/relativity_cathedral.py` | Riemann=F=20 EXACT, Lorentz gens=V//2=6, spacetime=D+1=4 |
+| `urt/celestial_mechanics_cathedral.py` | Kepler laws=D=3, Lagrange=q=5, orbital elements=V//2=6 |
+| `urt/solar_system.py` | 13 Venus≈8 Earth (Δ=0.025%), L4/L5=60°=G |
+
+### Social Sciences & Humanities
+| Module | Purpose |
+|---|---|
+| `urt/social_networks_cathedral.py` | Dunbar D+1=4 layers, six degrees=V//2=6, BA exponent=D=3 |
+| `urt/economics_cathedral.py` | Pareto≈δ★, H=(D+1)/2D=2/3, tail α=D=3 |
+| `urt/game_theory_cathedral.py` | RPS strategies=D=3, Nash prob=1/D, coop threshold=(D-1)/D |
+| `urt/linguistics_cathedral.py` | Formants=D=3, vowels=q=5, word orders=D!=6=V//2 |
+| `urt/music_cathedral.py` | V=12 semitones/octave EXACT, pentatonic=q=5, 5th=D/(D-1)=3/2 |
+| `urt/architecture_cathedral.py` | Archimedean=N=13 EXACT, Platonic=q=5 EXACT, Catalan=N=13 |
+| `urt/color_vision_cathedral.py` | Trichromacy: cone types=D=3 |
+
+### Engineering & Applied
+| Module | Purpose |
+|---|---|
+| `urt/robotics_cathedral.py` | DOF=2D=6=V//2, DH params=D+1=4, rolloff=D×20=G, swarm=N=13 |
+| `urt/megaswarm.py` | κ=1-D/N=10/13, 13^k hierarchy, consensus in k hops |
 | `urt/swarm_intelligence.py` | 13-drone icosahedral swarm, consensus T_c=1/3 |
-| `urt/gravitational_waves.py` | IKT GW detection SNR=1/δ★, QNM ringdown |
+| `urt/metamaterials.py` | Photonic band gap ω=δ★ω₀, drug capsid binding, Z₂ topology |
+| `urt/periodic_table.py` | Madelung rule → noble gases {2,10,18,36,54,86,118} |
+| `urt/climate_science_cathedral.py` | Milankovitch=D=3 EXACT, atmospheric layers=q=5, Hadley cells=2D=6 |
 
 ### Neural / ML / Control
 | Module | Purpose |
@@ -299,7 +360,6 @@ The framework is **falsifiable**: if r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 | `urt/neural_cathedral.py` | CathedralLayer, CathedralNet, GrokDetector |
 | `urt/control.py` | URT control operator (O(N), κ < 1) |
 | `urt/metrics.py` | Lyapunov exponent, τ_avalanche, D_KY |
-| `urt/casimir_cathedral.py` | Casimir deviation +0.124 ppm at 100 nm |
 
 ---
 
@@ -310,7 +370,7 @@ git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
 cd URT-Enhanced-v2.0
 pip install -e .
 
-# Run all 931 tests
+# Run all 2356 tests
 python -m pytest tests/ -q
 
 # Full demo suite (all 41 modules)
@@ -403,7 +463,17 @@ The following modules go beyond what the iron proof chain directly supports. The
 | v2.2 | Gravity, neutrinos, vacuum, force structure, topology, π–φ–e flow | ~519 |
 | v2.3 | Electroweak, cosmology, uniqueness proof, prime 181, CKM/PMNS, ta-URT, QBLS fractal | ~700 |
 | v2.4 | Iron proof: D=3→A₅→N=13→γ→δ★, Ω_m exact match discovered | 808 |
-| v2.5 | Cathedral Lagrangian, Dark Matter, Baryon asymmetry, GUT unification | **931** |
+| v2.5 | Cathedral Lagrangian, Dark Matter, Baryon asymmetry, GUT unification | 931 |
+| v2.6 | Muon g-2, topological QC (Fibonacci anyons), string landscape, quantum chaos | ~1054 |
+| v2.7 | Plasma, megaswarm, protein (T=13 capsid), superconductor | ~1200 |
+| v2.8 | 20-module expansion: music, genetics, combinatorics, stat mech, fluid, crystallography, relativity, atomic physics, EM, optics, geophysics, linguistics, + more | ~1811 |
+| v2.9.0 | Grand integration: solar system, number theory, EEG, economics; __init__ overhaul | 1811 |
+| v2.9.1 | Nuclear structure (gauge bosons 1+3+8=V=12!), graph theory | 1853 |
+| v2.9.2 | Algebra (dim(SO3)=D self-ref), information theory, particle physics, solid state | 2090 |
+| v2.9.3 | Wave-8: social networks, thermodynamics, polymer, quantum optics, casimir | 2130 |
+| v2.9.4 | Wave-9: epidemiology, celestial mechanics, crystallography 2D, spectroscopy | 2175 |
+| v2.9.5 | Wave-10: psychology (OCEAN=q=5), architecture (Archimedean=N=13!), climate science, materials | 2282 |
+| v2.9.6 | Robotics (rolloff=60=G), ecology (Kleiber=D/(D+1)), astrophysics, differential geometry (dim(SO3)=D EXACT) | **2356** |
 
 ---
 
