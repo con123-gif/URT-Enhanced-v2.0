@@ -1160,8 +1160,56 @@ from .differential_geometry_cathedral import (
     riemann_geometry, icosahedral_geometry, lie_theory,
     diff_geom_summary, print_diff_geom_report,
 )
+from .quantum_information_cathedral import (
+    N_PAULI_MATRICES, N_BELL_STATES, N_QUBIT_DIM, N_TOFFOLI_QUBITS,
+    DIM_SU2, N_GHZ_QUBITS, N_TELEPORT_CBITS, N_NO_GO_THEOREMS,
+    SCHMIDT_RANK_QUBIT, QEC_DISTANCE, QEC_CORRECTS,
+    BLOCH_SPHERE_DIM, N_SU2_FACTORS_LORENTZ,
+    qubit_properties, entanglement_properties,
+    quantum_info_summary, print_quantum_info_report,
+)
+from .magnetism_cathedral import (
+    G_FACTOR_TREE, N_SPIN_HALF_STATES, N_SPIN_1_STATES,
+    N_MAGNETIC_MOMENT_COMPONENTS, BLOCH_EXPONENT, FCC_EXCHANGE_NEIGHBORS,
+    N_SPIN_HALL_COMPONENTS, N_DM_COMPONENTS, N_DW_PARAMS,
+    N_MAGNON_ACOUSTIC, N_HEISENBERG_SPIN_COMPONENTS, N_HEISENBERG_LOWER_CRITICAL,
+    spin_properties, magnetic_exchange,
+    magnetism_summary, print_magnetism_report,
+)
+from .random_matrix_theory_cathedral import (
+    N_DYSON_CLASSES, BETA_GOE, BETA_GUE, BETA_GSE,
+    BETA_PRODUCT, BETA_SUM, WIGNER_SEMICIRCLE_RADIUS,
+    N_CIRCULAR_ENSEMBLES, LARGEST_BETA,
+    wigner_surmise_goe, wigner_surmise_gue, wigner_surmise_gse,
+    wigner_semicircle_density, marchenko_pastur_edge,
+    dyson_classes, wigner_semicircle, rmt_summary, print_rmt_report,
+)
+from .acoustics_cathedral import (
+    ACOUSTIC_WAVE_DIM, HUYGENS_PRINCIPLE_ODD_D, SOUND_GAMMA_MONATOMIC,
+    N_ACOUSTIC_BRANCHES, N_QUADRUPOLE_COMPONENTS, SPHERICAL_WAVE_POWER,
+    N_PHONON_TOTAL_DIATOMIC, N_EQUAL_TEMP_SEMITONES,
+    wave_properties, acoustic_multipoles, phonon_modes,
+    acoustics_summary, print_acoustics_report,
+)
+from .chemical_kinetics_cathedral import (
+    ORDER_UNIMOLECULAR, ORDER_BIMOLECULAR, ORDER_TERMOLECULAR,
+    N_MOLECULARITY_TYPES, N_ARRHENIUS_PARAMS, N_MM_RATE_CONSTANTS,
+    N_CATALYTIC_STEPS, MAX_HILL_COEFF, N_LINDEMANN_STEPS,
+    N_TRANS_DOF, N_ROT_DOF, N_TS_MODES_REMOVED, CATHEDRAL_STERIC_FACTOR,
+    molecularity, enzyme_kinetics, transition_state,
+    chemical_kinetics_summary, print_chemical_kinetics_report,
+)
+from .nonlinear_dynamics_cathedral import (
+    N_LORENZ_EQUATIONS, N_LYAPUNOV_3D, N_LYAPUNOV_SIGN_TYPES,
+    N_POINCARE_DIM, MIN_CHAOS_DIM, TAKENS_EMBEDDING_DIM,
+    N_PRIMARY_BIFURCATIONS, STABLE_CYCLE_LOGISTIC,
+    N_PERIOD_DOUBLING_DIM, N_HOPF_NORMAL_FORM_DIM,
+    SHILNIKOV_MIN_DIM, FEIGENBAUM_DELTA, FEIGENBAUM_ALPHA,
+    lorenz_system, bifurcation_theory,
+    nonlinear_dynamics_summary, print_nonlinear_dynamics_report,
+)
 
-__version__ = "2.9.6"
+__version__ = "2.9.7"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
