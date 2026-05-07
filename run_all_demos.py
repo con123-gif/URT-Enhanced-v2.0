@@ -360,6 +360,42 @@ def run_climate():
     print_climate_report()
 
 
+def run_wave_equations():
+    section("Wave Equations Cathedral — Huygens D=3, Klein-Gordon mass=δ★, Maxwell duality")
+    from urt.wave_equations_cathedral import print_wave_report
+    print_wave_report()
+
+
+def run_a5_representations():
+    section("A₅ Representations — {1,D,D,D+1,q}={1,3,3,4,5}, 1²+3²+...=60=G=|A₅|")
+    from urt.a5_representations import print_a5_report
+    print_a5_report()
+
+
+def run_solar_system():
+    section("Solar System — 13 Venus=8 Earth (N=13), Venus/Earth≈1/φ, L4/L5=60°=G")
+    from urt.solar_system import print_solar_report
+    print_solar_report()
+
+
+def run_number_theory():
+    section("Number Theory — M₁₃=8191 prime, F₇=13=N, C₃=5=q, τ(2)=-24=-2V")
+    from urt.number_theory_cathedral import print_number_theory_report
+    print_number_theory_report()
+
+
+def run_eeg():
+    section("EEG Cathedral — α/β=13Hz=N, avalanche P∝s^{-D/2}, 40Hz=8q, Kuramoto K_c")
+    from urt.eeg_cathedral import print_eeg_report
+    print_eeg_report()
+
+
+def run_economics():
+    section("Economics Cathedral — Pareto≈δ★, H=2/3=(D+1)/2D, tail α=D=3, σ=δ★√2")
+    from urt.economics_cathedral import print_economics_report
+    print_economics_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
@@ -414,6 +450,12 @@ DEMOS = {
     "knot":         run_knot,
     "ising":        run_ising,
     "climate":      run_climate,
+    "wave_eqs":     run_wave_equations,
+    "a5_reps":      run_a5_representations,
+    "solar":        run_solar_system,
+    "numtheory":    run_number_theory,
+    "eeg":          run_eeg,
+    "economics":    run_economics,
 }
 
 # Fast default (excludes logistic which takes ~30s)
@@ -427,7 +469,8 @@ FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "lagrangian", "dark_matter", "baryon", "gut",
               "muon_g2", "tqc", "strings", "qchaos",
               "plasma", "megaswarm", "protein", "supercond",
-              "information", "knot", "ising", "climate"]
+              "information", "knot", "ising", "climate",
+              "wave_eqs", "a5_reps", "solar", "numtheory", "eeg", "economics"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]

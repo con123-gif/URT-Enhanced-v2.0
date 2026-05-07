@@ -87,19 +87,41 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 | `urt/string_landscape.py` | 2N=26 (bosonic), 2q=10 (super), 2V=24 (Leech), 4G=240 (E₈ roots), Moonshine 196884=196883+1 |
 | `urt/quantum_chaos.py` | Icosahedral spectrum [0,3³,5⁵,7²,9,13], MSS bound, logistic edge-of-chaos 6-cycle |
 
+### New Modules (v2.7 — Wave-3 Frontier)
+| File | Domain |
+|------|--------|
+| `urt/plasma_cathedral.py` | Alfvén M_A=δ★, β_p=(D-1)γ=2/81, q_safety=D+γ/2π≈3.002, Petschek reconnection |
+| `urt/megaswarm.py` | κ=1-D/N=10/13, 13^k hierarchy (13→62M drones), consensus in k hops |
+| `urt/protein_cathedral.py` | T=13 capsid, C60 {G,F,V}={60,20,12}, helix pitch 26.55°≈26° (2% error) |
+| `urt/superconductor_cathedral.py` | BCS gap 3.528, G_BCS=2/10, K₃C₆₀ bandwidth δ★×3.4eV≈0.5eV (<1%) |
+
+### New Modules (v2.8 — Cathedral Complete)
+| File | Domain |
+|------|--------|
+| `urt/information_cathedral.py` | H_max=log₂(13), C=log₂(1+1/δ★)=2.96 bits, R_QEC=90%, S_BH in bits |
+| `urt/knot_cathedral.py` | CS level k=D=3, Jones at e^{2πi/q}: T(2,5)=1/φ, figure-8=-2/φ, trefoil=-φ/2 EXACT |
+| `urt/ising_cathedral.py` | Ising on icosahedron: z=q=5, tanh(K_δ★)=δ★, K_Bethe=0.2554 |
+| `urt/climate_cathedral.py` | Kolmogorov -5/3=-q/D EXACT, 5 Milankovitch=q, Lorenz D=3 |
+| `urt/wave_equations_cathedral.py` | Huygens D=3 odd, KG mass=δ★, cross product unique D=3, N²=169 Y_l^m modes |
+| `urt/a5_representations.py` | A₅ irreps {1,D,D,D+1,q}={1,3,3,4,5}, 1²+3²+3²+4²+5²=60=G, φ in χ table |
+| `urt/solar_system.py` | 13 Venus≈8 Earth (N=13, Δ=0.025%), Venus/Earth≈1/φ, L4/L5=60°=G |
+| `urt/number_theory_cathedral.py` | M₁₃=8191 prime, F₇=13=N, C₃=5=q, τ(2)=-24=-2V, QR sum=3N |
+| `urt/eeg_cathedral.py` | α/β boundary=13Hz=N EXACT, avalanche P∝s^{-3/2}=s^{-D/2}, 40Hz=8q |
+| `urt/economics_cathedral.py` | Pareto≈δ★, H=(D+1)/2D=2/3, tail α=D=3, σ_C=δ★√2=n_eff |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.6)
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.8)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 1054 tests
+python -m pytest tests/ -q              # all 1494 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
