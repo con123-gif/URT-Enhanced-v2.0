@@ -312,6 +312,54 @@ def run_qchaos():
     print_chaos_report()
 
 
+def run_plasma():
+    section("Plasma Cathedral — M_A=δ★, β_p=2γ, q_safety=D+γ/2π, GS turbulence")
+    from urt.plasma_cathedral import print_plasma_report
+    print_plasma_report()
+
+
+def run_megaswarm():
+    section("Megaswarm — 13^k hierarchy: 13→28561→4.8M agents, κ=1-D/N contraction")
+    from urt.megaswarm import print_megaswarm_report
+    print_megaswarm_report()
+
+
+def run_protein():
+    section("Protein Cathedral — T=13 capsid, C60=G=60 atoms, helix pitch=180δ★°")
+    from urt.protein_cathedral import print_protein_report
+    print_protein_report()
+
+
+def run_superconductor():
+    section("Superconductor — BCS+K₃C₆₀: C60 is |I_h|=2G=120, phonon H_g=q=5")
+    from urt.superconductor_cathedral import print_superconductor_report
+    print_superconductor_report()
+
+
+def run_information():
+    section("Information Cathedral — H=log₂(13), C=log₂(1+1/δ★), S_BH=A/(4δ★²)")
+    from urt.information_cathedral import print_info_report
+    print_info_report()
+
+
+def run_knot():
+    section("Knot Cathedral — Jones at t=e^{2πi/q}: T(2,5)=1/φ, figure-8=-2/φ")
+    from urt.knot_cathedral import print_knot_report
+    print_knot_report()
+
+
+def run_ising():
+    section("Ising Cathedral — z=q=5 coordination, E=30 bonds, tanh(K)=δ★")
+    from urt.ising_cathedral import print_ising_report
+    print_ising_report()
+
+
+def run_climate():
+    section("Climate Cathedral — Kolmogorov -q/D=-5/3, 5 Milankovitch, Lorenz D=3")
+    from urt.climate_cathedral import print_climate_report
+    print_climate_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
@@ -358,6 +406,14 @@ DEMOS = {
     "tqc":          run_tqc,
     "strings":      run_strings,
     "qchaos":       run_qchaos,
+    "plasma":       run_plasma,
+    "megaswarm":    run_megaswarm,
+    "protein":      run_protein,
+    "supercond":    run_superconductor,
+    "information":  run_information,
+    "knot":         run_knot,
+    "ising":        run_ising,
+    "climate":      run_climate,
 }
 
 # Fast default (excludes logistic which takes ~30s)
@@ -369,7 +425,9 @@ FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "electroweak", "cosmology", "uniqueness", "prime181",
               "ckm_pmns", "canonical", "qbls_fractal", "iron_proof",
               "lagrangian", "dark_matter", "baryon", "gut",
-              "muon_g2", "tqc", "strings", "qchaos"]
+              "muon_g2", "tqc", "strings", "qchaos",
+              "plasma", "megaswarm", "protein", "supercond",
+              "information", "knot", "ising", "climate"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]

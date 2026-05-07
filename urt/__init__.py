@@ -576,7 +576,137 @@ from .quantum_chaos import (
     print_chaos_report,
 )
 
-__version__ = "2.6.0"
+from .plasma_cathedral import (
+    reconnection,
+    alfven_modes,
+    fusion_parameters,
+    plasma_turbulence,
+    plasma_summary,
+    M_A_RECONNECTION,
+    BETA_PLASMA,
+    Q_SAFETY_FACTOR,
+    DEBYE_LENGTH,
+    LUNDQUIST_S,
+    print_plasma_report,
+)
+
+from .megaswarm import (
+    swarm_level,
+    optimal_k_for_target,
+    plasma_coil_formation,
+    drone_fleet,
+    megaswarm_summary,
+    KAPPA as KAPPA_SWARM,
+    LAMBDA_2 as LAMBDA_2_SWARM,
+    SWARM_SIZES,
+    K_MAX_PRACTICAL,
+    print_megaswarm_report,
+)
+
+from .protein_cathedral import (
+    capsid_geometry,
+    helix_prediction,
+    c60_buckyball,
+    drug_binding,
+    protein_summary,
+    T_CAPSID,
+    C60_ATOMS,
+    C60_HEXAGONS,
+    C60_PENTAGONS,
+    C60_SYMMETRY_ORDER,
+    HELIX_PITCH_ANGLE_DEG,
+    N_BINDING_SITES_ICOS,
+    PHYLLOTAXIS_ANGLE_DEG,
+    print_protein_report,
+)
+
+from .superconductor_cathedral import (
+    bcs_parameters,
+    c60_symmetry,
+    icosahedral_phonon,
+    k3c60_superconductor,
+    superconductor_summary,
+    BCS_GAP_RATIO,
+    G_CATHEDRAL as G_BCS,
+    TC_K3C60_PRED_K,
+    TC_K3C60_OBS_K,
+    PHONON_H_DIM,
+    C60_GROUP_ORDER,
+    print_superconductor_report,
+)
+
+from .information_cathedral import (
+    shannon_entropy,
+    channel_capacity,
+    qec_rate,
+    bekenstein_hawking,
+    holographic_bound,
+    page_time,
+    von_neumann_entropy,
+    holevo_bound,
+    information_summary,
+    H_MAX_BITS,
+    H_MAX_NATS,
+    C_CHANNEL_BITS,
+    R_QEC,
+    I_K4_H3_BITS,
+    S_QUANTUM_BITS,
+    AREA_QUANTUM,
+    SNR_CATHEDRAL,
+    print_info_report,
+)
+
+from .knot_cathedral import (
+    jones_unknot,
+    jones_trefoil,
+    jones_hopf,
+    jones_figure8,
+    jones_torus_p2,
+    fibonacci_braiding,
+    braid_group_B13,
+    writhe_torus,
+    alexander_trefoil_at_q,
+    reidemeister_moves,
+    knot_summary,
+    CS_LEVEL,
+    T_JONES,
+    Q_JONES,
+    N_BRAID_GENERATORS,
+    print_knot_report,
+)
+
+from .ising_cathedral import (
+    magnetisation,
+    critical_exponents,
+    icosahedral_ising,
+    delta_star_on_spin_curve,
+    ising_summary,
+    N_ISING,
+    Z_COORD,
+    K_C_MF,
+    K_C_BETHE,
+    K_DELTA_STAR,
+    print_ising_report,
+)
+
+from .climate_cathedral import (
+    lorenz_attractor,
+    milankovitch,
+    turbulence_summary,
+    climate_sensitivity_summary,
+    climate_summary,
+    kolmogorov_scaling_exponents,
+    milankovitch_forcing,
+    KOLMOGOROV_EXPONENT,
+    LORENZ_DKY,
+    LORENZ_LAMBDA1,
+    N_MILANKOVITCH,
+    ECS_CELSIUS,
+    FEEDBACK_RATIO,
+    print_climate_report,
+)
+
+__version__ = "2.7.0"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
