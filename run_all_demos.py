@@ -216,6 +216,48 @@ def run_pi_phi_e():
     print_pi_phi_e_report()
 
 
+def run_electroweak():
+    section("Electroweak Sector — K4 k=2: W/Z/Higgs, sin²θ_W=0.23122")
+    from urt.electroweak import print_electroweak_report
+    print_electroweak_report()
+
+
+def run_cosmology():
+    section("Cosmology Cathedral — CMB: n_s=0.96491, Ω_m=0.3153, σ₈=0.811")
+    from urt.cosmology_cathedral import print_cosmology_report
+    print_cosmology_report()
+
+
+def run_uniqueness():
+    section("Uniqueness Proof — 4 Lemmas: δ★ is the UNIQUE fixed point")
+    from urt.uniqueness_proof import print_uniqueness_report
+    print_uniqueness_report()
+
+
+def run_prime181():
+    section("Prime 181 — Corollary 11.1: Multiplicative Completion of 13-Shell")
+    from urt.prime181 import print_prime181_report
+    print_prime181_report()
+
+
+def run_ckm_pmns():
+    section("CKM + PMNS — Full Mixing: δ_CP=197°, λ_C=0.22537, J_PMNS")
+    from urt.ckm_pmns import print_ckm_pmns_report
+    print_ckm_pmns_report()
+
+
+def run_canonical():
+    section("CanonicalV4Gem — ta-URT: Ω=9/13, τ_stab=0.001211")
+    from urt.canonical_v4gem import print_canonical_v4gem_report
+    print_canonical_v4gem_report()
+
+
+def run_qbls_fractal():
+    section("QBLS Fractal — 13-Rung Meta-Universe Ladder (Planck→Cosmos)")
+    from urt.qbls_fractal import print_qbls_fractal_report
+    print_qbls_fractal_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
@@ -246,6 +288,13 @@ DEMOS = {
     "forces":       run_forces,
     "pi_phi_e":     run_pi_phi_e,
     "topology":     run_topology,
+    "electroweak":  run_electroweak,
+    "cosmology":    run_cosmology,
+    "uniqueness":   run_uniqueness,
+    "prime181":     run_prime181,
+    "ckm_pmns":     run_ckm_pmns,
+    "canonical":    run_canonical,
+    "qbls_fractal": run_qbls_fractal,
 }
 
 # Fast default (excludes logistic which takes ~30s)
@@ -253,7 +302,9 @@ FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "axion", "nuclear", "ns", "qft", "quasicrystal", "neural",
               "periodic", "holography", "consciousness", "prime",
               "metamaterials", "swarm", "gw",
-              "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e", "topology"]
+              "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e", "topology",
+              "electroweak", "cosmology", "uniqueness", "prime181",
+              "ckm_pmns", "canonical", "qbls_fractal"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]

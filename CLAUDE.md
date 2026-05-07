@@ -1,4 +1,4 @@
-# URT Enhanced v2.0 — Cathedral Framework
+# URT Enhanced v2.3 — Cathedral Framework
 
 ## Repository Overview
 
@@ -8,7 +8,7 @@ Universal Recursive Tuning (URT) — a unified icosahedral physics framework bui
 δ★ = (1 − 1/81) × π / (13φ) ≈ 0.14751
 ```
 
-where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), Γ=1/81.
+where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), γ=1/81.
 
 ## Key Files
 
@@ -31,7 +31,7 @@ where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), Γ=1/81.
 | `urt/arf_closure.py` | ARF fixed point, lepton/proton mass ratios |
 | `urt/logistic_verification.py` | δ★ on stable 6-cycle of logistic map |
 
-### New Application Modules (v2.1)
+### Application Modules (v2.1)
 | File | Domain |
 |------|--------|
 | `urt/periodic_table.py` | Madelung rule from δ★ → noble gases {2,10,18,36,54,86,118} |
@@ -42,22 +42,48 @@ where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), Γ=1/81.
 | `urt/swarm_intelligence.py` | 13-drone icosahedral swarm, consensus T_c=1/3, satellite LEO |
 | `urt/gravitational_waves.py` | IKT GW detection SNR=1/δ★, QNM ringdown, Cathedral strain |
 
+### New Modules (v2.2 — Topology & Proof)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_topology.py` | 3-panel: holonomy vortex (376.9°), RG damping, gravitational deficit |
+| `urt/pi_phi_e_flow.py` | Uniqueness: η=1/8π, η_L=1/4π, μ=φ−1 are exact (4 lemmas) |
+| `urt/gravity_cathedral.py` | G_N=δ★², BH thermodynamics, K4 force hierarchy, area quantum |
+| `urt/neutrinos.py` | PMNS from 13-shell, δ_CP=197°, Σmν≈60 meV |
+| `urt/vacuum_instability.py` | V(δ)=Kδ²(δ−δ★)², δ=0 unstable → why something not nothing |
+| `urt/force_structure.py` | K4⊕H3 decomposition, GUT unification, effective Lagrangian |
+
+### New Modules (v2.3 — Complete)
+| File | Domain |
+|------|--------|
+| `urt/electroweak.py` | W/Z/Higgs from K4 k=2: sin²θ_W=(D/N)(1+γ/2π)=0.23122 |
+| `urt/cosmology_cathedral.py` | CMB: n_s=1−2/57, Ω_m=(4/13)(1+2γ), σ₈, Λ/M_Pl⁴=D/(D+1)²γ⁶⁴ |
+| `urt/uniqueness_proof.py` | 4 lemmas + Conjecture 12.1: δ★ is the unique URT fixed point |
+| `urt/prime181.py` | Corollary 11.1: p=181 (golden QR + K4-compat + p−100=81=1/γ) |
+| `urt/ckm_pmns.py` | Full CKM (λ_C, A, ρ̄, η̄) + PMNS (all angles + δ_CP=197°) |
+| `urt/canonical_v4gem.py` | ta-URT: Ω=9/13, τ_stab=0.001211, 13 resonance shells |
+| `urt/qbls_fractal.py` | 13-rung meta-universe fractal ladder (Planck→Cosmos) |
+
 ### Neural / ML
-- `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector (grokking detector)
+- `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
+
+### Documentation
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map
+- `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q          # all 317 tests
+python -m pytest tests/ -q          # all 761 tests
 python -m pytest tests/ -q -k gw   # gravitational wave tests only
+python -m pytest tests/ -q -k ckm  # CKM/PMNS tests only
 ```
 
 ## Key Numerical Values
 
 ```
-δ★          = 0.14751318...   (icosahedral critical point)
+δ★          = 0.14751081...   (icosahedral critical point)
 1/δ★        = 6.7791...       (detection/SNR threshold)
 δ★²         = G_N             (Cathedral Newton constant, Planck units)
 1/δ★        = R_AdS           (AdS curvature radius)
@@ -65,6 +91,11 @@ python -m pytest tests/ -q -k gw   # gravitational wave tests only
 δ★√2        ≈ 0.2086          (1/n_eff, metamaterial refractive index)
 λ₂          = 3 = D           (icosahedral spectral gap = spatial dimension!)
 K_c         ≈ 1.278           (Kuramoto critical coupling)
+ΔA          = 8π·δ★³ ≈ 0.0807 (area quantum, Bekenstein-Mukhanov)
+sin²θ_W     = (D/N)(1+γ/2π) ≈ 0.23122 (Weinberg angle, exact PDG)
+δ_CP (PMNS) = (D+1)F+(N-D-1)N = 197°  (exact PDG)
+n_s         = 1 − 2/(|H₃|−D) = 1−2/57 ≈ 0.9649 (exact Planck 2018)
+Ω_m         = (4/13)(1+2γ) ≈ 0.3153   (matter density)
 ```
 
 ## Module Quick-Start
@@ -74,6 +105,18 @@ from urt import DELTA_STAR, compute_all_constants
 from urt import gw_event_summary, formation_positions, capsid_binding_sites
 from urt import madelung_order, cathedral_noble_gas_prediction
 from urt import riemann_zero_matches, central_charge
+
+# Electroweak sector
+from urt import M_W_GEV, M_Z_GEV, M_HIGGS_GEV, SIN2_THETA_W
+
+# Full mixing matrices
+from urt import ckm_matrix, pmns_matrix, DELTA_CP_PMNS_DEG
+
+# Cosmology
+from urt import N_S, R_TENSOR, COSMO_OMEGA_M, SIGMA_8
+
+# Uniqueness proof
+from urt import uniqueness_theorem_full, conjecture_121
 
 # GW150914-like event
 event = gw_event_summary(36, 29, 410)

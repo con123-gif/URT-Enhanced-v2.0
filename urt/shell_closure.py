@@ -90,9 +90,11 @@ def compute_all_constants():
     theta12 = np.arctan((N + 1) / (N * phi)) * 180 / pi
     theta13 = np.arcsin(DELTA_STAR) * 180 / pi
     theta23 = np.arcsin(np.sqrt((F + V) / (G - 1))) * 180 / pi
-    deltaCP = (G*D + F + 2**D) % 360
+    deltaCP = (D + 1) * F + (N - D - 1) * N   # v8: 4×20 + 9×13 = 197°, exact PDG
 
-    Rm    = (3/35) * DELTA_STAR**2 - (4/51) * pi**3
+    _H3_evals = [5.0, 5.0, 5.0, 5.0, 5.0, 7.0, 7.0, 9.0, 13.0]
+    Rm    = ((3/35) * DELTA_STAR**2 - (4/51) * pi**3
+             + (1/13) * sum(DELTA_STAR**2 / (lam + DELTA_STAR**2) for lam in _H3_evals))
     ma    = DELTA_STAR / abs(Rm) * 1e3
     # N_e = |H3| - D = 60 - 3 = 57 e-foldings (infographic v6: 1-2/57 = 0.9649 ✓)
     N_e   = G - D                                  # 60 - 3 = 57
