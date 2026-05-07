@@ -930,11 +930,10 @@ from .nuclear_structure_cathedral import (
 
 from .epidemiology_cathedral import (
     N_SIR_COMPARTMENTS, N_SEIR_COMPARTMENTS,
-    R0_CRITICAL, R0_HERD_IMMUNITY, HERD_IMMUNITY_THRESHOLD,
-    BASIC_REPRODUCTION_NUMBER_ICOS, CONTACT_TRACING_DEPTH,
-    N_PANDEMIC_WAVES, MORTALITY_SCALING_DIM,
-    ENDEMIC_INFECTED_FRAC, R0_DELTA_STAR,
-    sir_model, seir_model, herd_immunity,
+    HERD_IMMUNITY_THRESHOLD_Q, N_EPIDEMIC_PARAMS,
+    N_PANDEMIC_WAVES, N_CONTACT_NETWORK_DEGREE,
+    CATHEDRAL_DECAY_RATE, R0_TYPICAL,
+    sir_model, pandemic_dynamics,
     epidemiology_summary, print_epidemiology_report,
 )
 
@@ -1051,13 +1050,6 @@ from .celestial_mechanics_cathedral import (
     N_KEPLER_LAWS, KEPLER_THIRD_POWER, LAGRANGE_POINTS, STABILITY_LAGRANGE,
     N_ORBITAL_ELEMENTS, N_BODY_PROBLEM_DOF, HOHMANN_BURNS, N_TROJAN_GROUPS,
     kepler_laws, orbital_mechanics, celestial_summary, print_celestial_report,
-)
-
-from .epidemiology_cathedral import (
-    N_SIR_COMPARTMENTS, N_SEIR_COMPARTMENTS, HERD_IMMUNITY_THRESHOLD,
-    BASIC_REPRODUCTION_NUMBER_ICOS, AGE_GROUPS_SIMPLE,
-    sir_model, seir_model, herd_immunity,
-    epidemiology_summary, print_epidemiology_report,
 )
 
 from .crystallography_2d_cathedral import (
@@ -1208,8 +1200,28 @@ from .nonlinear_dynamics_cathedral import (
     lorenz_system, bifurcation_theory,
     nonlinear_dynamics_summary, print_nonlinear_dynamics_report,
 )
+from .thermochemistry_cathedral import (
+    N_THERMO_POTENTIALS, N_MAXWELL_RELATIONS, PHASE_RULE_ADDEND,
+    N_STANDARD_VARS, CRITICAL_DELTA_MF, CRITICAL_BETA_MF,
+    N_HESS_MIN_SPECIES, REACTION_COORD_DIM, N_EYRING_PARAMS,
+    N_VANT_HOFF_VARS, N_BORN_SQUARE_CORNERS, N_TRIPLE_POINT_PHASES,
+    N_ENTROPY_CONTRIBUTIONS, N_CONJUGATE_PAIRS, N_GIBBS_DUHEM_TERMS,
+    CATHEDRAL_THERMO_RATE,
+    thermodynamic_potentials, phase_equilibria, reaction_kinetics_thermo,
+    thermochemistry_summary, print_thermochemistry_report,
+)
+from .network_science_cathedral import (
+    SCALE_FREE_EXPONENT, BA_NEW_LINKS, ICOS_NETWORK_NODES, ICOS_NETWORK_EDGES,
+    BETWEENNESS_PAIRS, ICOS_CLUSTERING, ICOS_MEAN_DEGREE,
+    ICOS_GRAPH_DIAMETER, CHROMATIC_PLANAR, N_TRIADIC_NODES,
+    WS_MEAN_DEGREE, WS_RING_NODES, N_MIN_COMMUNITIES,
+    N_MOTIF_MIN_NODES, N_3NODE_MOTIF_TYPES, ICOS_SPECTRAL_GAP as ICOS_NET_SPECTRAL_GAP,
+    ER_CONNECTIVITY_THRESHOLD, DUNBAR_CATHEDRAL_APPROX,
+    scale_free_networks, graph_properties, small_world,
+    network_science_summary, print_network_science_report,
+)
 
-__version__ = "2.9.7"
+__version__ = "2.9.8"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
