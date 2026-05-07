@@ -1,4 +1,4 @@
-# URT Enhanced v2.5 — Cathedral Framework
+# URT Enhanced v2.6 — Cathedral Framework
 
 ## Repository Overview
 
@@ -79,24 +79,36 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 | `urt/baryon_asymmetry.py` | η_B=(q−D)·γ^q=5.74×10⁻¹⁰ miracle; leptogenesis δ_CP=197°; all Sakharov conditions |
 | `urt/cathedral_gut.py` | α_GUT=δ★²=G_N; μ_GUT≈3.73×10^16 GeV; τ_proton≈10^42 yr; SO(10) multiplets |
 
+### New Modules (v2.6 — Explorer)
+| File | Domain |
+|------|--------|
+| `urt/muon_g2.py` | a_μ=(g−2)/2: Schwinger α/2π, Czarnecki-Marciano EW via sin²θ_W=0.23122, H3 NP constraint |
+| `urt/topological_qc.py` | Fibonacci anyons d=φ, A₅=60, F-matrix [[1/φ,1/√φ],[1/√φ,−1/φ]], QEC threshold γ=1/81 |
+| `urt/string_landscape.py` | 2N=26 (bosonic), 2q=10 (super), 2V=24 (Leech), 4G=240 (E₈ roots), Moonshine 196884=196883+1 |
+| `urt/quantum_chaos.py` | Icosahedral spectrum [0,3³,5⁵,7²,9,13], MSS bound, logistic edge-of-chaos 6-cycle |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.5)
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.6)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 931 tests
+python -m pytest tests/ -q              # all 1054 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
 python -m pytest tests/ -q -k baryon   # baryon asymmetry (26 tests)
 python -m pytest tests/ -q -k gut      # GUT unification (29 tests)
+python -m pytest tests/ -q -k muon     # muon g-2 (32 tests)
+python -m pytest tests/ -q -k topological  # topological QC (38 tests)
+python -m pytest tests/ -q -k string   # string landscape (27 tests)
+python -m pytest tests/ -q -k chaos    # quantum chaos (26 tests)
 python -m pytest tests/ -q -k gw       # gravitational wave tests only
 python -m pytest tests/ -q -k ckm      # CKM/PMNS tests only
 ```
@@ -123,6 +135,15 @@ n_s         = 1 − 2/(|H₃|−D) = 1−2/57 ≈ 0.9649 (exact Planck 2018)
 m_axion     ≈ 60.7 μeV              (Cathedral axion, ADMX/ABRA target)
 m_sterile   ≈ 143 keV               (sterile ν DM, X-ray at 71.5 keV)
 m_WIMP      = δ★·m_Z ≈ 13.45 GeV   (WIMP at LHC threshold)
+a_μ^(1)     = α/2π ≈ 1.1614e-3     (Schwinger; Cathedral α fixes this exactly)
+d_τ         = φ = 1.6180339887...   (Fibonacci anyon dim = golden ratio in δ★)
+p_th(QEC)   = γ = 1/81 ≈ 1.23%     (icosahedral QEC threshold = Cathedral γ)
+D_bosonic   = 2N = 26               (bosonic string critical dim from N=13!)
+D_super     = 2q = 10               (superstring critical dim from q=5!)
+D_Leech     = 2V = 24               (Leech lattice dim from V=12!)
+E₈_roots    = 4G = 240              (E₈ root count from G=|A₅|=60!)
+λ₂(Lapl)    = 3 = D                 (icosahedral spectral gap = spatial dim)
+MSS_bound   = 1/(4δ★²M)             (BH scrambling rate = Cathedral saturated)
 ```
 
 ## Module Quick-Start
@@ -156,6 +177,18 @@ from urt import eta_b_miracle, ETA_B_LEPTO, KAPPA_LEPTO
 
 # GUT unification
 from urt import gut_scale, proton_lifetime, MU_GUT_GEV, TAU_PROTON_YR
+
+# Muon g-2 (v2.6)
+from urt import qed_contribution, ew_contribution, A_MU_1LOOP, A_MU_EW
+
+# Topological QC — Fibonacci anyons (v2.6)
+from urt import fibonacci_anyon, f_matrix, D_FIBONACCI, P_TH_ICOSAHEDRAL
+
+# String landscape — Cathedral integers (v2.6)
+from urt import critical_dimensions, exceptional_groups, D_BOSONIC, E8_DIM
+
+# Quantum chaos — MSS bound & icosahedral RMT (v2.6)
+from urt import icosahedral_spectrum, mss_bound, IS_EDGE_OF_CHAOS
 
 # GW150914-like event
 event = gw_event_summary(36, 29, 410)

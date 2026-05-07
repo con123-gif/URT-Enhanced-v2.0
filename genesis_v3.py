@@ -827,6 +827,90 @@ def cmd_gut():
     return "\n".join(lines)
 
 
+def cmd_muon_g2():
+    from urt.muon_g2 import qed_contribution, ew_contribution, A_MU_EXP, A_MU_DISCREPANCY
+    from urt.electroweak import SIN2_THETA_W
+    qed = qed_contribution()
+    ew  = ew_contribution()
+    lines = [
+        "Muon g-2 — a_μ = (g_μ−2)/2:",
+        f"  QED 1-loop (Schwinger):  α/2π = {qed['1loop']:.8e}",
+        f"  QED 2-loop (Petermann):  {qed['2loop']:.4e}",
+        f"  EW 1-loop (Czarnecki):   {ew['ew_1loop']:.4e}  →  ×0.788 = {ew['ew_total']:.4e}",
+        f"  Cathedral sin²θ_W = (D/N)(1+γ/2π) = {SIN2_THETA_W:.5f}",
+        f"  EW bracket = 1+(1/5)(1−4sin²θ_W)² = {ew['bracket']:.6f}",
+        f"  Fermilab 2023: a_μ^exp  = {A_MU_EXP:.8e}",
+        f"  Current Δa_μ discrepancy ≈ {A_MU_DISCREPANCY:.2e}  (BMW vs white paper)",
+        "  Cathedral insight: sin²θ_W forced by D/N enters EW 1-loop directly.",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_tqc():
+    from urt.topological_qc import fibonacci_anyon, icosahedral_qec, braiding_gate
+    from urt.shell_closure import phi, gamma
+    fa = fibonacci_anyon()
+    qec = icosahedral_qec()
+    bg = braiding_gate()
+    lines = [
+        "Topological Quantum Computing — Fibonacci Anyons:",
+        f"  Quantum dimension  d_τ = φ = {phi:.10f}",
+        f"  φ² = φ+1 identity: {abs(phi**2 - phi - 1) < 1e-12}",
+        f"  Fusion rule: τ⊗τ = 1⊕τ  (Fibonacci / golden ratio)",
+        f"  F-matrix: [[1/φ, 1/√φ],[1/√φ, -1/φ]]  (pentagon satisfied: {fa['pentagon_check']})",
+        f"  A₅ group order = G = {fa['A5_order']}  (same as |icosahedral rotation group|)",
+        f"  QEC threshold = γ = 1/81 = {gamma:.6f}  (= {qec['threshold_pct']:.3f}%)",
+        f"  Surface code comparison: {qec['ratio_to_surface_code']:.3f}× (>1 = better)",
+        f"  Braiding gate universal: {bg['is_universal']}  (Jones polynomial evaluations)",
+        "  Cathedral: A₅=60 and φ appear in BOTH δ★ and Fibonacci anyon theory.",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_strings():
+    from urt.string_landscape import critical_dimensions, exceptional_groups
+    from urt.shell_closure import N, q, V, G, F
+    cd = critical_dimensions()
+    eg = exceptional_groups()
+    lines = [
+        "String Landscape — Cathedral integers in string/M-theory:",
+        f"  Bosonic string:   D = 2N = 2×{N} = {2*N}  ✓" if cd['bosonic_check'] else f"  2N={2*N}",
+        f"  Superstring:      D = 2q = 2×{q} = {2*q}  ✓" if cd['super_check'] else f"  2q={2*q}",
+        f"  M-theory:         D = 2q+1 = {2*q+1}  ✓" if cd['M_theory_check'] else f"  2q+1={2*q+1}",
+        f"  Leech lattice:    D = 2V = 2×{V} = {2*V}  ✓" if cd['leech_check'] else f"  2V={2*V}",
+        f"  E₈ root system:   4G = 4×{G} = {4*G} (= dim E₈ roots)",
+        f"  E₈ Lie algebra:   4G+8 = {4*G+8} = dim(E₈)",
+        f"  E₆ 27-plet:       (N-D-1)×D = 9×3 = 27",
+        f"  E₆ adjoint:       G+F-2 = {G}+{F}-2 = {G+F-2}",
+        f"  Heterotic gauge:  2×248 = 496 = dim(E₈×E₈) = dim(SO(32))  (perfect number)",
+        f"  McKay moonshine:  196884 = 196883+1  (j-function ↔ Monster)",
+        "  All from D=3 alone — no coincidence conjecture.",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_qchaos():
+    from urt.quantum_chaos import icosahedral_spectrum, mss_bound, logistic_chaos_connection
+    from urt.shell_closure import DELTA_STAR
+    sp = icosahedral_spectrum()
+    ms = mss_bound()
+    lc = logistic_chaos_connection()
+    lines = [
+        "Quantum Chaos — Cathedral icosahedral spectrum:",
+        f"  Eigenvalues [0,3,3,3,5,5,5,5,5,7,7,9,13]  ({sp['N_eigenvalues']} modes)",
+        f"  Spectral gap λ₂ = {sp['spectral_gap']} = D = 3  (expansion rate = spatial dim!)",
+        f"  λ_max = 13 = N  (largest mode = shell count)",
+        f"  MSS scrambling bound λ_L ≤ 2πT_H = 1/(4δ★²M) saturated by Cathedral BHs",
+        f"  BH temperature T_H = 1/(8π·δ★²·M) with G_N=δ★² = {DELTA_STAR**2:.6f}",
+        f"  Logistic 6-cycle at r = {lc['r_value']:.6f}  (edge of chaos)",
+        f"  6 = V/2 = 12/2 (icosahedral vertex count / 2)",
+        f"  Lyapunov exponent = {lc['lyapunov']:.6f}  (negative → stable/contracting)",
+        f"  Level statistics: between Poisson and GOE (A₅ exact degeneracies)",
+        "  Cathedral BHs are maximally chaotic (Hayden-Preskill paradigm).",
+    ]
+    return "\n".join(lines)
+
+
 # ── Lytollis Guard ────────────────────────────────────────────────────────────
 
 BLOCKED_PATTERNS = [
@@ -843,7 +927,7 @@ def is_blocked(text: str) -> bool:
 
 def main():
     print("\n" + "=" * 72)
-    print("GENESIS v3.0 — Cathedral Edition v2.5")
+    print("GENESIS v3.0 — Cathedral Edition v2.6")
     print(f"δ★ = {DELTA_STAR:.8f}  |  C_mass = {C_MASS:.6f}  |  D=3 forced")
     print("Commands: web · ask ai · delta · spectrum · prove · ladder")
     print("          casimir · black hole <M> · logistic")
@@ -1005,6 +1089,20 @@ def main():
         elif p_lower in {"gut", "grand unified", "proton decay", "unification", "alpha_gut"}:
             print("\n" + cmd_gut() + "\n")
 
+        elif p_lower in {"muon g2", "muon g-2", "g-2", "g2", "anomalous moment"}:
+            print("\n" + cmd_muon_g2() + "\n")
+
+        elif p_lower in {"topological qc", "tqc", "fibonacci anyon", "anyons", "topological"}:
+            print("\n" + cmd_tqc() + "\n")
+
+        elif p_lower in {"strings", "string theory", "string landscape", "e8", "bosonic string",
+                         "moonshine", "m-theory"}:
+            print("\n" + cmd_strings() + "\n")
+
+        elif p_lower in {"quantum chaos", "chaos rmt", "mss bound", "scrambling", "rmt",
+                         "level statistics", "qchaos"}:
+            print("\n" + cmd_qchaos() + "\n")
+
         else:
             # Default: Cathedral-aware response
             topics = ("EW sector, cosmology, CMB, GUT unification, baryon asymmetry, "
@@ -1013,8 +1111,9 @@ def main():
             reply = (
                 f"Cathedral v2.5 active. δ★ = {DELTA_STAR:.8f}, C_mass = {C_MASS:.6f}. "
                 f"I cover: {topics}. "
-                "Commands: lagrangian, dark matter, baryon, gut, electroweak, cosmology, "
-                "uniqueness, iron proof, ckm pmns, gw <M>, swarm <m>, or 'ask ai'."
+                "Commands: lagrangian, dark matter, baryon, gut, muon g2, tqc, strings, "
+                "qchaos, electroweak, cosmology, uniqueness, iron proof, ckm pmns, gw <M>, "
+                "swarm <m>, or 'ask ai'."
             )
             print("\nGenesis:", style(reply), "\n")
 

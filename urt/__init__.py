@@ -507,7 +507,76 @@ from .cathedral_gut import (
     print_gut_report,
 )
 
-__version__ = "2.5.0"
+from .muon_g2 import (
+    qed_contribution,
+    ew_contribution,
+    np_h3_constraint,
+    g2_summary,
+    A_MU_1LOOP,
+    A_MU_2LOOP,
+    A_MU_QED_SM,
+    A_MU_EW_1L,
+    A_MU_EW,
+    A_MU_EXP,
+    A_MU_EXP_ERR,
+    A_MU_DISCREPANCY,
+    M_MU_GEV,
+    C2_QED,
+    print_g2_report,
+)
+
+from .topological_qc import (
+    fibonacci_anyon,
+    f_matrix,
+    r_matrix,
+    icosahedral_qec,
+    braiding_gate,
+    topological_qc_summary,
+    D_FIBONACCI,
+    F_MATRIX_11,
+    F_MATRIX_12,
+    P_TH_ICOSAHEDRAL,
+    R_PHASE_1,
+    R_PHASE_TAU,
+    print_tqc_report,
+)
+
+from .string_landscape import (
+    critical_dimensions,
+    exceptional_groups,
+    heterotic_string,
+    moonshine_connection,
+    string_landscape_summary,
+    D_BOSONIC,
+    D_SUPER,
+    D_LEECH,
+    E8_ROOTS,
+    E8_DIM,
+    E6_27PLET,
+    E6_78_ADJ,
+    J_COEFF_1,
+    MONSTER_LOWEST_REP,
+    print_string_report,
+)
+
+from .quantum_chaos import (
+    icosahedral_spectrum,
+    level_spacing_distribution,
+    spectral_rigidity,
+    mss_bound,
+    logistic_chaos_connection,
+    quantum_chaos_summary,
+    ICOS_EIGENVALUES,
+    DISTINCT_EIGENVALUES,
+    MULTIPLICITIES,
+    MSS_BOUND_M1,
+    LOGISTIC_R_STAR,
+    LOGISTIC_CYCLE_LEN,
+    IS_EDGE_OF_CHAOS,
+    print_chaos_report,
+)
+
+__version__ = "2.6.0"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics

@@ -288,6 +288,30 @@ def run_gut():
     print_gut_report()
 
 
+def run_muon_g2():
+    section("Muon g-2 — Cathedral EW: a_μ^EW via sin²θ_W=0.23122, H3 NP constraint")
+    from urt.muon_g2 import print_g2_report
+    print_g2_report()
+
+
+def run_tqc():
+    section("Topological QC — Fibonacci anyons, A₅=60, d=φ, γ=1/81 QEC threshold")
+    from urt.topological_qc import print_tqc_report
+    print_tqc_report()
+
+
+def run_strings():
+    section("String Landscape — 2N=26, 2q=10, 2V=24, E₈ roots=4G=240, Moonshine")
+    from urt.string_landscape import print_string_report
+    print_string_report()
+
+
+def run_qchaos():
+    section("Quantum Chaos — MSS bound, icosahedral RMT, logistic edge-of-chaos")
+    from urt.quantum_chaos import print_chaos_report
+    print_chaos_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
@@ -330,6 +354,10 @@ DEMOS = {
     "dark_matter":  run_dark_matter,
     "baryon":       run_baryon,
     "gut":          run_gut,
+    "muon_g2":      run_muon_g2,
+    "tqc":          run_tqc,
+    "strings":      run_strings,
+    "qchaos":       run_qchaos,
 }
 
 # Fast default (excludes logistic which takes ~30s)
@@ -340,7 +368,8 @@ FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e", "topology",
               "electroweak", "cosmology", "uniqueness", "prime181",
               "ckm_pmns", "canonical", "qbls_fractal", "iron_proof",
-              "lagrangian", "dark_matter", "baryon", "gut"]
+              "lagrangian", "dark_matter", "baryon", "gut",
+              "muon_g2", "tqc", "strings", "qchaos"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]
