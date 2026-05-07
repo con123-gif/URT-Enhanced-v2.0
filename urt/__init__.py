@@ -795,7 +795,132 @@ from .economics_cathedral import (
     print_economics_report,
 )
 
-__version__ = "2.8.0"
+from .music_cathedral import (
+    SEMITONES_PER_OCTAVE, PERFECT_5TH_JUST, PENTATONIC_NOTES,
+    TRIAD_NOTES, TRITONE_SEMITONES, PYTHAGOREAN_COMMA, N_KEYS_CIRCLE,
+    chord_structure, equal_temperament, golden_ratio_music,
+    harmonic_series, cathedral_musical_numbers, music_summary,
+    print_music_report,
+)
+
+from .genetics_cathedral import (
+    N_DNA_BASES, CODON_LENGTH, N_CODONS, N_AMINO_ACIDS, N_STOP_CODONS,
+    A_DNA_BP_PER_TURN, Z_DNA_BP_PER_TURN, INFO_PER_CODON_BITS,
+    N_RIBOSOME_SITES, N_SECONDARY_STRUCTURES,
+    dna_geometry, codon_table, genetics_summary,
+    information_genetics, protein_structure, print_genetics_report,
+)
+
+from .combinatorics_cathedral import (
+    N_PLATONIC_SOLIDS_D3, N_POLYTOPES_D4, N_POLYTOPES_D5,
+    BELL_D, CATALAN_D, P_D, R_33, R_34, ROTATION_ORDERS,
+    bell_catalan, platonic_polytopes, ramsey_numbers, partition_numbers,
+    stirling_numbers, burnside_icosahedral_colorings,
+    combinatorics_summary, print_combinatorics_report,
+)
+
+from .stat_mech_cathedral import (
+    D_UPPER_CRITICAL, D_LOWER_CRITICAL, EPS_EXPANSION,
+    DELTA_MF, NU_ISING_D3, ETA_ISING_D3, ETA_CATHEDRAL_APPROX,
+    HYPERSCALING_CHECK,
+    critical_exponents_D3, critical_dimensions, rg_flow_wilson,
+    scaling_relations, stat_mech_summary, print_stat_mech_report,
+)
+
+from .fluid_cathedral import (
+    KOLMOGOROV_EXPONENT, GAMMA_MONATOMIC, GAMMA_DIATOMIC,
+    DOF_MONATOMIC, DOF_DIATOMIC, DOF_LINEAR_MOLECULE, DOF_POLYATOMIC,
+    STOKES_COEFF, POISEUILLE_DENOM, VORTEX_STRETCHING_D3,
+    degrees_of_freedom, turbulence_cascade, adiabatic_exponents,
+    stokes_poiseuille, fluid_summary, print_fluid_report,
+)
+
+from .crystallography_cathedral import (
+    N_BRAVAIS, N_POINT_GROUPS, N_SPACE_GROUPS,
+    Z_FCC, Z_HCP, Z_BCC, Z_SC, Z_ICOS,
+    ETA_FCC, ETA_BCC, ETA_SC, ETA_FCC_OVER_SC,
+    QCRYSTAL_FOLD, ALLOWED_FOLD_ORDERS, ICOS_CHIRAL_GROUP_ORDER,
+    bravais_lattices, point_groups, coordination_numbers,
+    quasicrystal_connection, packing_fractions, space_group_analysis,
+    crystallography_summary, print_crystallography_report,
+)
+
+from .color_vision_cathedral import (
+    N_CONE_TYPES, N_COLOR_PRIMARIES, N_OPPONENT_CHANNELS,
+    N_COLOR_DIMS, LAMBDA_LM_SEP,
+    trichromacy, opponent_channels, maxwell_triangle,
+    color_space_dimensions, color_summary, print_color_report,
+)
+
+from .game_theory_cathedral import (
+    N_RPS_STRATEGIES, RPS_NASH_PROB, COOP_THRESHOLD_D,
+    ESS_RPS_PROB, DELTA_MIN_COOP_GRIM, SHAPLEY_UNIFORM_N13,
+    rock_paper_scissors, prisoners_dilemma, evolutionary_dynamics,
+    shapley_n13, game_theory_summary, print_game_theory_report,
+)
+
+from .topological_spaces import (
+    EULER_CHI_ICOSAHEDRON, HOPF_BASE_DIM, HOPF_FIBER_DIM,
+    HOPF_TOTAL_DIM, BETTI_ICOS, DE_RHAM_S2_NONZERO_DIMS,
+    euler_icosahedron, hopf_fibration, sphere_topology,
+    defect_classification, topological_summary, print_topology_report,
+)
+
+from .relativity_cathedral import (
+    N_SPACETIME_DIMS, N_4VECTOR, N_ANTISYM_2TENSOR,
+    N_LORENTZ_GENERATORS, N_ROTATIONS, N_BOOSTS,
+    N_RIEMANN_COMPONENTS, N_RICCI_COMPONENTS, N_WEYL_COMPONENTS,
+    N_EINSTEIN_EQNS, N_PHYSICAL_EFE,
+    N_DIRAC_COMPONENTS, N_WEYL_SPINOR_COMPONENTS,
+    schwarzschild_radius, hawking_temperature, bh_entropy,
+    spacetime_structure, lorentz_group_structure,
+    riemann_tensor_structure, spinor_structure,
+    relativity_summary, print_relativity_report,
+)
+
+from .atomic_physics_cathedral import (
+    N_QUANTUM_NUMBERS, N_SPIN_PROJECTIONS,
+    L_P_STATES, L_D_STATES, L_9_STATES, L_FOR_N_STATES,
+    SHELL_1_MAX, SHELL_2_MAX, SHELL_3_MAX, SHELL_4_MAX,
+    TOTAL_ORBITALS_TO_N, RYDBERG_EV,
+    quantum_numbers, angular_momentum_states, shell_structure,
+    rydberg_analysis, atomic_summary, print_atomic_report,
+)
+
+from .electromagnetism_cathedral import (
+    N_MAXWELL_EQUATIONS, N_EM_FIELD_COMPONENTS, N_EM_TENSOR_COMPONENTS,
+    N_PHOTON_POLARIZATIONS, RADIATION_POWER_LAW,
+    EM_DUALITY_DIMENSION, EM_COMPONENTS_EQ_V2,
+    C_LIGHT_MS, Z0_IMPEDANCE, ALPHA_QED,
+    coulomb_law, radiation_field_scaling,
+    maxwell_equations, em_field_tensor, photon_properties,
+    em_summary, print_em_report,
+)
+
+from .optics_cathedral import (
+    N_MINIMA_N_SLIT, N_SECONDARY_MAXIMA, N_DIFFRACTION_ORDERS,
+    THETA_C_DELTA_STAR_DEG, BREWSTER_PHI_DEG, N_REFRACTIVE_DELTA_STAR,
+    n_slit_diffraction, critical_and_brewster_angles,
+    diffraction_orders, optics_summary, print_optics_report,
+)
+
+from .geophysics_cathedral import (
+    N_SEISMIC_BODY, N_SEISMIC_SURFACE, N_SEISMIC_TOTAL,
+    EARTH_LAYERS, N_TECTONIC_PLATES, VP_VS_POISSON, N_NORMAL_MODES_SUM,
+    seismic_waves, earth_structure, wave_velocities,
+    normal_modes, gutenberg_richter,
+    geophysics_summary, print_geophysics_report,
+)
+
+from .linguistics_cathedral import (
+    N_FORMANTS, N_VOWELS_TYPICAL, N_WORD_ORDERS, N_PIE_LARYNGEALS,
+    PHONEME_MODE, N_PRIMARY_CARDINAL_VOWELS, WORD_ORDERS_EQ_V2,
+    vowel_system, word_order, phoneme_inventory,
+    pie_reconstruction, syllable_structure,
+    linguistics_summary, print_linguistics_report,
+)
+
+__version__ = "2.9.0"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics

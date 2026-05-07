@@ -1,4 +1,4 @@
-# URT Enhanced v2.6 — Cathedral Framework
+# URT Enhanced v2.9 — Cathedral Framework
 
 ## Repository Overview
 
@@ -109,6 +109,25 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 | `urt/eeg_cathedral.py` | α/β boundary=13Hz=N EXACT, avalanche P∝s^{-3/2}=s^{-D/2}, 40Hz=8q |
 | `urt/economics_cathedral.py` | Pareto≈δ★, H=(D+1)/2D=2/3, tail α=D=3, σ_C=δ★√2=n_eff |
 
+### New Modules (v2.8 — Expanded Cathedral)
+| File | Domain |
+|------|--------|
+| `urt/music_cathedral.py` | V=12 semitones/octave EXACT; perfect 5th=D/(D-1)=3/2; pentatonic=q=5 |
+| `urt/genetics_cathedral.py` | (D+1)^D=64 codons EXACT; F=20 amino acids EXACT; stop codons=D=3 |
+| `urt/combinatorics_cathedral.py` | Bell B₃=Catalan C₃=q=5; p(D)=D=3 (self-ref!); R(3,3)=V/2=6 |
+| `urt/stat_mech_cathedral.py` | D_uc=D+1=4; ε=1 for D=3; mean-field δ=D+1=4; η≈δ★/4 |
+| `urt/fluid_cathedral.py` | Kolmogorov -5/3=-q/D EXACT; γ=(D+2)/D=q/D=5/3; DOF diatomic=q=5 |
+| `urt/crystallography_cathedral.py` | FCC/HCP z=V=12; Bravais=N+1=14; point groups=2^q=32 |
+| `urt/color_vision_cathedral.py` | Trichromacy: cone types=D=3; L-M separation=E=30 nm |
+| `urt/game_theory_cathedral.py` | RPS strategies=D=3; Nash prob=1/D; coop threshold=(D-1)/D=2/3 |
+| `urt/topological_spaces.py` | χ(icosahedron)=V-E+F=2=D-1 EXACT; Hopf fiber=D-2=1 |
+| `urt/relativity_cathedral.py` | Riemann=F=20 EXACT!!!; Lorentz gens=V/2=6; spacetime=D+1=4 |
+| `urt/atomic_physics_cathedral.py` | p-states=D=3; d-states=q=5; shell n=2: 2^D=8; shell n=4: 2^q=32 |
+| `urt/electromagnetism_cathedral.py` | Maxwell eqs=D+1=4; EM tensor=V/2=6; photon pol=D-1=2 |
+| `urt/optics_cathedral.py` | N-slit minima=V=12; diffraction orders=N=13; θ_c=arcsin(δ★) |
+| `urt/geophysics_cathedral.py` | Seismic types=D+1=4; Earth layers=D+1=4; Poisson v_P/v_S=√D |
+| `urt/linguistics_cathedral.py` | Formants=D=3; vowels=q=5; word orders=D!=6=V/2; PIE h₁h₂h₃=D=3 |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
@@ -121,7 +140,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 1494 tests
+python -m pytest tests/ -q              # all 1811 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
@@ -220,6 +239,42 @@ positions = formation_positions(scale=100.0)
 
 # Drug binding on 15 nm icosahedral capsid
 binding = capsid_binding_sites(R_capsid=15.0)
+
+# Music — V=12 semitones, pentatonic=q=5 (v2.8)
+from urt import SEMITONES_PER_OCTAVE, PENTATONIC_NOTES, PERFECT_5TH_JUST, music_summary
+
+# Genetics — (D+1)^D=64 codons, F=20 amino acids (v2.8)
+from urt import N_CODONS, N_AMINO_ACIDS, N_STOP_CODONS, genetics_summary
+
+# Combinatorics — Bell B₃=Catalan C₃=q=5 (v2.8)
+from urt import BELL_D, CATALAN_D, N_PLATONIC_SOLIDS_D3, R_33, combinatorics_summary
+
+# Statistical mechanics — D_uc=4, ε=1, mean-field δ=D+1 (v2.8)
+from urt import D_UPPER_CRITICAL, DELTA_MF, ETA_CATHEDRAL_APPROX, stat_mech_summary
+
+# Fluid mechanics — Kolmogorov -5/3=-q/D, γ=q/D=5/3 (v2.8)
+from urt import KOLMOGOROV_EXPONENT, GAMMA_MONATOMIC, DOF_DIATOMIC, fluid_summary
+
+# Crystallography — Bravais=N+1=14, point groups=2^q=32 (v2.8)
+from urt import N_BRAVAIS, N_POINT_GROUPS, Z_FCC, crystallography_summary
+
+# Relativity — Riemann=F=20 EXACT!!! (v2.8)
+from urt import N_RIEMANN_COMPONENTS, N_SPACETIME_DIMS, N_LORENTZ_GENERATORS, relativity_summary
+
+# Atomic physics — p-states=D=3, shell n=4 = 2^q=32 (v2.8)
+from urt import L_P_STATES, SHELL_4_MAX, TOTAL_ORBITALS_TO_N, atomic_summary
+
+# Electromagnetism — Maxwell eqs=D+1=4, EM tensor=V/2=6 (v2.8)
+from urt import N_MAXWELL_EQUATIONS, N_EM_TENSOR_COMPONENTS, N_PHOTON_POLARIZATIONS, em_summary
+
+# Optics — N-slit has V=12 minima, N=13 orders (v2.8)
+from urt import N_MINIMA_N_SLIT, N_DIFFRACTION_ORDERS, optics_summary
+
+# Geophysics — seismic types=D+1=4, Earth layers=D+1=4 (v2.8)
+from urt import N_SEISMIC_TOTAL, EARTH_LAYERS, N_NORMAL_MODES_SUM, geophysics_summary
+
+# Linguistics — vowels=q=5, word orders=D!=6=V/2 (v2.8)
+from urt import N_FORMANTS, N_VOWELS_TYPICAL, N_WORD_ORDERS, linguistics_summary
 ```
 
 ## Development Branch
