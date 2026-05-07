@@ -1127,7 +1127,41 @@ from .materials_cathedral import (
     materials_summary, print_materials_report,
 )
 
-__version__ = "2.9.5"
+from .robotics_cathedral import (
+    N_RIGID_BODY_DOF, N_DH_PARAMS, N_EULER_ANGLES, N_QUATERNION_COMPONENTS,
+    N_SWARM_ICOS, N_SWARM_SHELL, N_PID_TERMS, N_STEWART_LEGS,
+    NYQUIST_FACTOR, ROLLOFF_DB_DEC_3RD, ROLLOFF_EQ_G,
+    FORMATION_CONNECTIVITY, CATHEDRAL_DAMPING_RATIO,
+    rigid_body_dof, swarm_formation, control_structures,
+    robotics_summary, print_robotics_report,
+)
+from .ecology_cathedral import (
+    N_TROPHIC_LEVELS, N_DIVERSITY_LEVELS, N_BIOMES_MAJOR,
+    SPECIES_AREA_EXP, KLEIBER_EXPONENT, LV_MIN_SPECIES,
+    N_ICOS_WEB_NODES, N_ICOS_WEB_EDGES, GOLDEN_ANGLE_DEG, GOLDEN_ANGLE_RAD,
+    H_MAX_ICOS, STABILITY_CONNECTANCE_THRESHOLD,
+    trophic_structure, biodiversity, phyllotaxis,
+    ecology_summary, print_ecology_report,
+)
+from .astrophysics_cathedral import (
+    N_FUNDAMENTAL_FORCES, N_STELLAR_STRUCTURE_EQ, N_GALAXY_BRANCHES,
+    RS_FACTOR, MASS_LUM_POWER, JEANS_POWER, KEPLER3_POWER,
+    VIRIAL_FACTOR, N_H_SERIES as N_H_SPECTRAL_SERIES,
+    N_STELLAR_PHASES, SPACETIME_DIM, CHANDRA_POWER, N_COMPACT_GROUP_ICOS,
+    stellar_structure, galactic_structure,
+    astrophysics_summary, print_astrophysics_report,
+)
+from .differential_geometry_cathedral import (
+    EULER_CHAR_S2, N_RIEMANN_INDEP, N_RICCI_INDEP, N_METRIC_INDEP,
+    N_CHRISTOFFEL, SPHERE_DIM, LEVI_CIVITA_NONZERO,
+    KISSING_NUMBER_D3, HOLONOMY_PER_VERTEX_DEG, TOTAL_ANGULAR_DEFICIT_RAD,
+    HOLONOMY_GROUP_ORDER, DIM_SO3, N_CONNECTION_FORMS,
+    GAUSS_BONNET_S2, WEYL_ZERO_D3,
+    riemann_geometry, icosahedral_geometry, lie_theory,
+    diff_geom_summary, print_diff_geom_report,
+)
+
+__version__ = "2.9.6"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
