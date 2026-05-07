@@ -920,7 +920,44 @@ from .linguistics_cathedral import (
     linguistics_summary, print_linguistics_report,
 )
 
-__version__ = "2.9.0"
+from .nuclear_structure_cathedral import (
+    N_NUCLEON_SPIN_PROJECTIONS, N_ISOSPIN_STATES,
+    MAGIC_NUMBERS, MAGIC_1, MAGIC_2, MAGIC_3, Z_LEAD,
+    N_QCD_COLORS, N_QUARK_FLAVORS_TOTAL, ALPHA_Z, ALPHA_A,
+    magic_numbers_analysis, nucleon_quantum_numbers, qcd_structure,
+    nuclear_summary, print_nuclear_report,
+)
+
+from .graph_theory_cathedral import (
+    ICOS_VERTEX_DEGREE, FOUR_COLOR_THEOREM_BOUND,
+    K_D_EDGES, K_D1_EDGES,
+    N_PETERSEN_VERTICES, N_PETERSEN_EDGES, PETERSEN_GIRTH,
+    R_33, R_34, ICOS_SPECTRAL_GAP,
+    icosahedral_graph, graph_colorings, petersen_properties,
+    ramsey_theory, spectral_theory,
+    graph_theory_summary, print_graph_theory_report,
+)
+
+from .information_theory_cathedral import (
+    H_MAX_N, H_MAX_Q, BINARY_ALPHABET, CATHEDRAL_SNR, C_CATHEDRAL,
+    HAMMING_N, HAMMING_K, HAMMING_D, HAMMING_RATE,
+    N_QUBIT_DIMS, TOFFOLI_QUBITS, N_PHYS_PER_LOGICAL_ICOS,
+    entropy_analysis, hamming_code_analysis, quantum_information_analysis,
+    information_theory_summary, print_information_theory_report,
+)
+
+from .algebra_cathedral import (
+    ORDER_A5, ORDER_IH, ORDER_SD, ORDER_SD1, ORDER_AD,
+    GF2_ORDER, GF4_ORDER, GF5_ORDER, GF13_ORDER, GF2D_ORDER, GF2Q_ORDER,
+    DEGREE_Q_PHI, GALOIS_Z13_ORDER, GALOIS_Z5_ORDER,
+    EULER_TOTIENT_V, EULER_TOTIENT_N,
+    DIM_SU2, DIM_SUD, DIM_SOD, DIM_SOD1,
+    group_theory_analysis, field_theory_analysis,
+    galois_theory_analysis, lie_algebra_analysis,
+    algebra_summary, print_algebra_report,
+)
+
+__version__ = "2.9.2"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
