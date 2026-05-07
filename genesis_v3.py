@@ -75,6 +75,23 @@ try:
         gw_event_summary,
         detection_threshold,
         qnm_frequency,
+        # Cathedral gravity
+        bh_information_summary,
+        force_hierarchy,
+        area_quantum,
+        why_gravity_is_weak,
+        # Neutrinos
+        neutrino_mixing_summary,
+        sum_neutrino_masses_meV,
+        # Vacuum
+        why_something_not_nothing,
+        stability_analysis,
+        # Force structure
+        force_unification_summary,
+        all_modes,
+        # π–φ–e flow
+        uniqueness_theorem,
+        flow_coefficient_table,
     )
     URT_OK = True
 except ImportError as err:
@@ -402,6 +419,110 @@ def cmd_swarm(scale_str: str = "100"):
     return "\n".join(lines)
 
 
+def cmd_gravity_cathedral(M_str: str = "1000"):
+    try:
+        M = float(M_str.strip())
+    except ValueError:
+        M = 1000.0
+    bh = bh_information_summary(M)
+    w = why_gravity_is_weak()
+    aq = area_quantum()
+    lines = [
+        f"Cathedral Gravity (K4 gapless mode, M = {M:.0f} Planck masses):",
+        f"  G_N = δ★² = {DELTA_STAR**2:.8f}  (Newton constant in Planck units)",
+        f"  Area quantum ΔA = 8π·δ★³ = {aq:.6f}  l_Pl²  (Bekenstein-Mukhanov)",
+        f"  Schwarzschild radius r_S = {bh['r_S']:.4g}  l_Pl",
+        f"  BH entropy  S = 4π·G_N·M² = {bh['entropy_S']:.4g}  k_B",
+        f"  Hawking temp T = 1/(8π·G_N·M) = {bh['T_Hawking']:.4g}  T_Pl",
+        f"  Evaporation τ = {bh['lifetime']:.4g}  t_Pl",
+        f"  Scrambling t  = {bh['scrambling_t']:.4g}  t_Pl",
+        f"  Area quanta N = A/ΔA = {bh['area_quanta_n']:.1f}",
+        f"  Why gravity is weak: G_N=δ★²=0.022 vs α_EM=1/137=0.0073",
+        f"  (particles are light: G_N×m_p² << α_EM)",
+        f"  Force hierarchy: k=0(grav) k=1(EM) k=2(weak) k=3(order) k=4-12(strong)",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_neutrinos():
+    s = neutrino_mixing_summary()
+    lines = [
+        "Cathedral Neutrinos (13-shell PMNS, normal ordering):",
+        f"  sin²θ₁₂ = {s['sin2_theta12']:.4f}   θ₁₂ = {s['theta12_deg']:.2f}°",
+        f"  sin²θ₁₃ = {s['sin2_theta13']:.4f}   θ₁₃ = {s['theta13_deg']:.2f}°  (= δ★²)",
+        f"  sin²θ₂₃ = {s['sin2_theta23']:.4f}   θ₂₃ = {s['theta23_deg']:.2f}°  (upper octant, 32/59)",
+        f"  δ_CP     = {s['delta_CP_deg']:.1f}°  (third quadrant)",
+        f"  Masses:  m₁={s['m1_eV']*1e3:.2f} meV  m₂={s['m2_eV']*1e3:.2f} meV  m₃={s['m3_eV']*1e3:.1f} meV",
+        f"  Σm_ν    = {s['sum_meV']:.2f} meV  (Planck 2018: < 120 meV)",
+        f"  |m_ββ|  = {s['m_bb_eV']*1e3:.3f} meV  (neutrinoless ββ decay)",
+        f"  J_CP    = {s['J_CP']:.4e}  (Jarlskog CP invariant)",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_vacuum():
+    w = why_something_not_nothing()
+    sa = stability_analysis()
+    lines = [
+        "Cathedral Vacuum V(δ) = K·δ²·(δ−δ★)²  (why something not nothing):",
+        f"  V(0)   = {w['V_at_zero']:.4g}  [unstable: V''(0) = {w['curvature_at_zero']:.4f}]",
+        f"  V(δ★)  = {w['V_at_delta_star']:.4g}  [STABLE:  V''(δ★) = {w['curvature_at_delta_star']:.4f}]",
+        f"  Barrier = {w['barrier_height']:.6f}  (at δ=δ★/2)",
+        f"  WKB exponent B = {w['WKB_exponent_B']:.6f}",
+        f"  Decay rate Γ   = {w['decay_rate_Gamma']:.6f}",
+        "  Fixed points:",
+    ]
+    for fp in sa["fixed_points"]:
+        tag = "STABLE" if fp["stable"] else "unstable"
+        lines.append(f"    δ = {fp['delta']:.6f}  V={fp['V']:.4g}  [{tag}]")
+    lines.append(f"  → δ=0 is 'nothing' (unstable). Universe must fall to δ★.")
+    return "\n".join(lines)
+
+
+def cmd_pi_phi_e():
+    u = uniqueness_theorem()
+    table = flow_coefficient_table()
+    lines = [
+        "π–φ–e Flow — URT is the unique Euler discretisation of a gradient flow:",
+        "  ∂_t δ = −(1/4π)·L·δ − (φ−1)·e^{−t/10}·(δ−δ★)·(1+δ²)",
+        "",
+        "  Exact coefficients → URT approximations:",
+        f"    {'Coeff':<5}  {'Exact':>12}  {'URT':>8}  {'Error':>7}",
+    ]
+    for row in table:
+        lines.append(f"    {row['symbol']:<5}  {row['exact']:>12.8f}  {row['urt']:>8.4f}  "
+                     f"{row['error_pct']:>6.2f}%")
+    lines += [
+        "",
+        "  Uniqueness theorem conditions:",
+    ]
+    for cond, val in u["conditions"].items():
+        lines.append(f"    {'✓' if val else '✗'} {cond}")
+    lines.append(f"  {u['conclusion'][:120]}...")
+    return "\n".join(lines)
+
+
+def cmd_forces():
+    fu = force_unification_summary()
+    modes = all_modes()
+    k4 = [m for m in modes if m["sector"] == "K4"]
+    lines = [
+        "Cathedral Force Structure (K4⊕H3 = 13 modes):",
+        "  K4 coherent sector (k=0..3):",
+    ]
+    for m in k4:
+        lines.append(f"    k={m['k']}  {m['force']:<22}  α={m['coupling']:.5g}  mediator={m['mediator']}")
+    lines += [
+        f"  H3 exhaust sector (k=4..12):",
+        f"    9 gluon modes  α = γ·α_s = (1/81)·{fu['alpha_s_cathedral']:.4f}",
+        f"  GUT unification:",
+        f"    α_GUT = 4/81·(1+δ★/2π) = {fu['alpha_GUT']:.6f}",
+        f"    μ_GUT = {fu['mu_GUT_GeV']:.4g} GeV",
+        f"  All from δ★ = (80/81)·π/(13φ). Zero free parameters.",
+    ]
+    return "\n".join(lines)
+
+
 def cmd_gw(mass_str: str = "30"):
     try:
         M = float(mass_str.strip())
@@ -444,7 +565,8 @@ def main():
     print("Commands: web · ask ai · delta · spectrum · prove · ladder")
     print("          casimir · black hole <M> · logistic")
     print("          periodic · holography · consciousness · riemann")
-    print("          metamaterial · swarm [m] · gw [M☉] · exit")
+    print("          metamaterial · swarm [m] · gw [M☉]")
+    print("          gravity [M] · neutrinos · vacuum · forces · exit")
     print("Lytollis Guard active. Science/math/music/life only.")
     print("=" * 72 + "\n")
 
@@ -542,11 +664,28 @@ def main():
             mass_s = p_lower.replace("gw", "").strip() or "65"
             print("\n" + cmd_gw(mass_s) + "\n")
 
+        elif p_lower.startswith("gravity"):
+            M_s = p_lower.replace("gravity", "").strip() or "1000"
+            print("\n" + cmd_gravity_cathedral(M_s) + "\n")
+
+        elif p_lower in {"neutrinos", "neutrino"}:
+            print("\n" + cmd_neutrinos() + "\n")
+
+        elif p_lower in {"vacuum", "nothing", "why something"}:
+            print("\n" + cmd_vacuum() + "\n")
+
+        elif p_lower in {"forces", "force structure", "k4", "h3"}:
+            print("\n" + cmd_forces() + "\n")
+
+        elif p_lower in {"pi phi e", "pi_phi_e", "flow", "uflow"}:
+            print("\n" + cmd_pi_phi_e() + "\n")
+
         else:
             # Default: Cathedral-aware response
             topics = ("periodic table, holography, consciousness, Riemann zeros, "
-                      "metamaterials, drone swarms, gravitational waves, plasma, "
-                      "black holes, epilepsy, the cosmological constant")
+                      "metamaterials, drone swarms, gravitational waves, "
+                      "Cathedral gravity (K4/H3 forces), neutrino masses, "
+                      "vacuum instability, force unification, black holes")
             reply = (
                 f"Cathedral substrate active. δ★ = {DELTA_STAR:.8f}, C_mass = {C_MASS:.6f}. "
                 f"I cover: {topics}. "

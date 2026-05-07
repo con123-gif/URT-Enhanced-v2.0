@@ -56,7 +56,14 @@ _L = _build_laplacian()
 
 
 def urt_evolve(delta_init, steps=60):
-    """Evolve delta values on the 13-node icosahedral graph toward δ★."""
+    """
+    Evolve delta values on the 13-node icosahedral graph toward δ★.
+
+    Coefficients are Euler discretisations of the π–φ–e gradient flow:
+        ∂_t δ = −(1/4π)·L·δ − (φ−1)·e^{−t/10}·(δ−δ★)·(1+δ²)
+    0.04 = η = 1/(8π),  0.08 = ηL = 1/(4π),  0.6 ≈ µ = φ−1.
+    See urt.pi_phi_e_flow for the uniqueness theorem.
+    """
     scalar_input = np.ndim(delta_init) == 0
     delta = np.atleast_1d(np.array(delta_init, dtype=float))
     if delta.shape == (1,):

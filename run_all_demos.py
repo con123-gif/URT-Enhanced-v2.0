@@ -180,6 +180,36 @@ def run_gw():
     print_gw_report()
 
 
+def run_gravity_cathedral():
+    section("Cathedral Gravity — K4 Gapless Mode, G_N=δ★², Area Quantum")
+    from urt.gravity_cathedral import print_gravity_cathedral_report
+    print_gravity_cathedral_report(M_demo=1e4)
+
+
+def run_neutrinos():
+    section("Neutrinos — PMNS from 13-Shell, Σm_ν≈60 meV, δ_CP=208°")
+    from urt.neutrinos import print_neutrino_report
+    print_neutrino_report()
+
+
+def run_vacuum():
+    section("Vacuum — Why Something Rather Than Nothing (δ=0 unstable)")
+    from urt.vacuum_instability import print_vacuum_report
+    print_vacuum_report()
+
+
+def run_forces():
+    section("Force Structure — K4⊕H3 Decomposition, GUT Unification")
+    from urt.force_structure import print_force_structure_report
+    print_force_structure_report()
+
+
+def run_pi_phi_e():
+    section("π–φ–e Flow — Unique Geometric Derivation of URT Coefficients")
+    from urt.pi_phi_e_flow import print_pi_phi_e_report
+    print_pi_phi_e_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
@@ -204,13 +234,19 @@ DEMOS = {
     "metamaterials": run_metamaterials,
     "swarm":        run_swarm,
     "gw":           run_gw,
+    "gravity_cat":  run_gravity_cathedral,
+    "neutrinos":    run_neutrinos,
+    "vacuum":       run_vacuum,
+    "forces":       run_forces,
+    "pi_phi_e":     run_pi_phi_e,
 }
 
 # Fast default (excludes logistic which takes ~30s)
 FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
               "axion", "nuclear", "ns", "qft", "quasicrystal", "neural",
               "periodic", "holography", "consciousness", "prime",
-              "metamaterials", "swarm", "gw"]
+              "metamaterials", "swarm", "gw",
+              "gravity_cat", "neutrinos", "vacuum", "forces", "pi_phi_e"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]
