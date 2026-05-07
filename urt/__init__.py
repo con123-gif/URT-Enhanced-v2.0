@@ -987,7 +987,25 @@ from .algebra_cathedral import (
     algebra_summary, print_algebra_report,
 )
 
-__version__ = "2.9.2"
+from .particle_physics_cathedral import (
+    N_FERMION_GENERATIONS, N_QUARK_FLAVORS, N_LEPTON_FLAVORS,
+    N_WEAK_BOSONS, N_GLUONS, N_GAUGE_BOSONS_TOTAL,
+    N_HIGGS_DOUBLET_COMPLEX, N_GOLDSTONE_EATEN,
+    CKM_SIZE, N_MIXING_ANGLES, N_CP_PHASES,
+    fermion_structure, gauge_boson_structure, mixing_matrix_structure,
+    particle_physics_summary, print_particle_physics_report,
+)
+
+from .solid_state_cathedral import (
+    SPIN_DEGENERACY, N_BLOCH_QN, N_ACOUSTIC_BRANCHES, N_BRANCHES_2ATOM,
+    Z_SC_SOLID, Z_BCC_SOLID, Z_FCC_SOLID, Z_DIAMOND, Z_GRAPHENE,
+    N_TOPOLOGICAL_INVARIANTS_3D, DEBYE_POWER_LAW,
+    N_HEISENBERG_COMPONENTS, N_XY_COMPONENTS,
+    band_structure, phonon_structure, lattice_coordination,
+    magnetic_models, solid_state_summary, print_solid_state_report,
+)
+
+__version__ = "2.9.3"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
