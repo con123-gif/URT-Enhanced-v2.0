@@ -1235,8 +1235,57 @@ from .developmental_biology_cathedral import (
     body_plan, gene_regulation, cell_biology,
     developmental_biology_summary, print_developmental_biology_report,
 )
+from .meteorology_cathedral import (
+    N_WIND_COMPONENTS, N_ATMOSPHERE_LAYERS, N_BEAUFORT_SCALE,
+    N_LORENZ_EQNS, N_JET_STREAMS, N_THERMAL_WIND_COMPONENTS,
+    RICHARDSON_CRITICAL, KOLMOGOROV_VELOCITY_EXP, KOLMOGOROV_ENERGY_EXP,
+    N_PRIMITIVE_EQNS, N_SYNOPTIC_PRESSURE_LEVELS, N_CORIOLIS_COMPONENTS,
+    ROSSBY_DOMINANT_WAVENUMBER, H_MAX_ATM, CATHEDRAL_ATM_RATE,
+    atmospheric_dynamics, atmospheric_structure,
+    meteorology_summary, print_meteorology_report,
+)
+from .oceanography_cathedral import (
+    N_OCEAN_BASINS, N_THERMO_DRIVERS, N_TIDAL_MAJOR, N_OCEAN_LAYERS,
+    ENSO_PERIOD_YR, N_MOMENTUM_HORIZONTAL, N_SOUND_SPEED_VARIABLES,
+    N_UPWELLING_EASTERN, N_DEEPWATER_SITES, N_STOMMEL_DIM,
+    KOLMOGOROV_OCEAN_EXP, N_ROSSBY_DIMS, N_ICOS_FLOAT_NODES,
+    N_ICOS_FLOAT_EDGES, H_MAX_OCEAN, CATHEDRAL_OCEANIC_RATE,
+    ocean_circulation, ocean_structure,
+    oceanography_summary, print_oceanography_report,
+)
+from .computational_complexity_cathedral import (
+    N_COMPLEXITY_CLASSES_BASE, N_POLY_HIERARCHY_LEVELS, N_SAT_LITERALS_PER_CLAUSE,
+    N_COLORING_POLY, N_COLORING_HARD, N_RAND_CLASSES, N_BOOLEAN_GATES_UNIVERSAL,
+    N_SHANNON_MAX_ICOS, N_MULTI_PARTY_MIN,
+    complexity_classes, boolean_complexity,
+    computational_complexity_summary, print_computational_complexity_report,
+)
+from .sports_cathedral import (
+    N_OLYMPIC_MEDALS, N_TRIATHLON_DISCIPLINES, N_CRICKET_STUMPS,
+    N_DARTS_PER_TURN, N_TENNIS_GAME_LEVELS, N_BASKETBALL_QUARTERS,
+    N_RELAY_LEGS, N_PENALTIES_ROUND, N_TEAM_MIN, N_TOURNAMENT_TEAMS,
+    N_TOURNAMENT_MATCHES,
+    team_sports, individual_sports,
+    sports_summary, print_sports_report,
+)
+from .immunology_cathedral import (
+    N_LYMPHOCYTE_TYPES, N_ANTIBODY_ISOTYPES, N_MHC_CLASSES,
+    N_COMPLEMENT_PATHWAYS, N_TCR_CHAINS, N_VDJ_SEGMENTS,
+    N_ANTIBODY_CHAINS, N_TLR_HUMAN, N_AFFINITY_ROUNDS,
+    N_IMMUNE_BRANCHES, N_CYTOKINE_FAMILIES,
+    adaptive_immunity, innate_immunity,
+    immunology_summary, print_immunology_report,
+)
+from .cognitive_science_cathedral import (
+    N_COGNITIVE_LOAD_TYPES, N_PIAGET_STAGES, N_BADDELEY_COMPONENTS,
+    N_LTM_SYSTEMS, STM_CAPACITY_MEAN, WORKING_MEMORY_MAGIC,
+    N_LANGUAGE_LEVELS, N_SENSORY_STORES, N_ATTENTION_BOTTLENECKS,
+    N_GESTALT_PRINCIPLES, N_GW_BROADCAST_NODES,
+    memory_systems, cognition,
+    cognitive_science_summary, print_cognitive_science_report,
+)
 
-__version__ = "2.9.9"
+__version__ = "2.9.10"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics

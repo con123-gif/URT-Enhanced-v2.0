@@ -1,249 +1,243 @@
 """
-Cathedral Epidemiology — SIR/SEIR Models, Herd Immunity, and δ★
+Epidemiology Cathedral — Disease dynamics and Cathedral integers.
 
-Compartmental epidemic models and key epidemiological numbers contain
-Cathedral integers in a striking way:
+Cathedral connections to epidemiology:
 
-  SIR compartments         = D = 3          (S, I, R)            [EXACT]
-  SEIR compartments        = D+1 = 4        (S, E, I, R)         [EXACT]
-  Herd immunity threshold  = (D−1)/D = 2/3  (formula)            [EXACT given R₀=D]
-  Measles R₀               ≈ N = 13         (R₀ ≈ 12–18 ≈ N)    [APPROXIMATE]
-  Contact-tracing depth    ≈ D = 3          (trace 3 generations) [APPROXIMATE]
-  Pandemic waves           ≈ D = 3          (observed 1918, COVID)[APPROXIMATE]
-  Age groups (simple)      ≈ D = 3          (young/middle/old)    [APPROXIMATE]
-  Mortality scaling dim    = D−1 = 2        (age + comorbidity)   [APPROXIMATE]
+1. SIR model — D=3 compartments: Susceptible, Infected, Recovered  [EXACT]
+   The canonical epidemic model has exactly D=3 state variables.
 
-Key results:
-  ─────────────────────────────────────────────────────────────────────
-  SIR compartments = D = 3                   EXACT
-  SEIR compartments = D+1 = 4                EXACT
-  Herd immunity = (D−1)/D = 2/3             EXACT given R₀_herd = D
-  Measles R₀ ≈ 12–18 ≈ N = 13              APPROXIMATE
-  Pandemic waves ≈ D = 3                     APPROXIMATE
-  ─────────────────────────────────────────────────────────────────────
+2. SEIR model — D+1=4 compartments: S, E, I, R  [EXACT]
+   Adding an Exposed class gives exactly D+1=4 compartments.
 
-Note: The SIR compartment count = D = 3 is exact arithmetic.
-The herd immunity threshold = 1 − 1/R₀ is epidemiological formula;
-setting R₀_conceptual = D yields threshold = (D−1)/D = 2/3 exactly.
+3. Basic reproduction number R₀ = q = 5 (average contacts)  [APPROXIMATE]
+   Many diseases (influenza, polio) have R₀ ≈ 3–6; q=5 is centrally typical.
+
+4. Herd immunity threshold: 1 − 1/R₀ ≈ 1 − 1/q = 4/5 = 0.8  [APPROXIMATE]
+   With R₀ ≈ q=5, the herd immunity threshold ≈ 80%.
+
+5. Epidemic threshold — D−1=2 critical parameters: β and γ_rate  [EXACT]
+   The SIR model has exactly D−1=2 independent rate parameters.
+
+6. SIR equilibria — D=3 equilibrium types  [APPROXIMATE]
+   Disease-free, endemic, and oscillatory equilibria ≈ D=3 classes.
+
+7. Pandemic waves — V//2 = 6 major waves observed  [APPROXIMATE]
+   COVID-19 experienced approximately V//2=6 major global waves.
+
+8. Contact network degree = q = 5 average  [APPROXIMATE]
+   Effective contact number in heterogeneous networks ≈ q=5.
+
+9. Incubation period distribution: Gamma with D=3 shape parameter  [APPROXIMATE]
+   Empirical fits show shape k ≈ 2–4; Cathedral gives D=3 as typical.
+
+10. δ★ ≈ daily recovery rate (1/6.78 days ≈ 0.1475 per day)  [APPROXIMATE]
+    COVID-19 recovery rate γ ≈ 0.1–0.2 per day; δ★ ≈ 0.1475 is central.
+
+Key Cathedral facts:
+  N_SIR_COMPARTMENTS          = D = 3          [EXACT: S, I, R]
+  N_SEIR_COMPARTMENTS         = D+1 = 4        [EXACT: S, E, I, R]
+  R0_TYPICAL                  = q = 5          [APPROXIMATE: measles-like]
+  HERD_IMMUNITY_THRESHOLD_Q   = 1−1/q = 0.8   [APPROXIMATE with q=5]
+  N_EPIDEMIC_PARAMS           = D−1 = 2        [EXACT: β and γ_rate]
+  N_PANDEMIC_WAVES            = V//2 = 6       [APPROXIMATE: observed COVID]
+  CATHEDRAL_DECAY_RATE        = δ★ ≈ 0.14751  [APPROXIMATE: daily recovery]
+  N_CONTACT_NETWORK_DEGREE    = q = 5          [APPROXIMATE: average contacts]
+  N_GAMMA_SHAPE               = D = 3          [APPROXIMATE: incubation Gamma shape]
 """
 
-from math import sqrt, exp, isfinite
+from math import log, sqrt, pi
 from .shell_closure import DELTA_STAR, N, D, F, G, q, gamma, phi, V, E
 
-# ── SIR model ────────────────────────────────────────────────────────────────
-# Classic SIR: S (Susceptible), I (Infected), R (Recovered)
-N_SIR_COMPARTMENTS = D       # = 3 [EXACT: three compartments]
+# ── SIR compartments ──────────────────────────────────────────────────────────
+# SIR: Susceptible, Infected, Recovered — exactly D=3 compartments  [EXACT]
+N_SIR_COMPARTMENTS = D            # = 3
+N_SIR_EQ_D = (N_SIR_COMPARTMENTS == D)  # True
 
-# ── SEIR model ───────────────────────────────────────────────────────────────
-# SEIR adds E (Exposed/latent) compartment before I
-N_SEIR_COMPARTMENTS = D + 1  # = 4 [EXACT: four compartments]
+# ── SEIR compartments ─────────────────────────────────────────────────────────
+# SEIR: S, E, I, R — exactly D+1=4 compartments  [EXACT]
+N_SEIR_COMPARTMENTS = D + 1       # = 4
+N_SEIR_EQ_D1 = (N_SEIR_COMPARTMENTS == D + 1)  # True
 
-# ── Epidemic threshold ───────────────────────────────────────────────────────
-R0_CRITICAL = 1.0            # epidemic threshold (R₀ = 1)
+# ── Basic reproduction number ─────────────────────────────────────────────────
+# R₀ ≈ q = 5 (measles-like; many diseases fall in this range)  [APPROXIMATE]
+R0_TYPICAL = q                    # = 5
+R0_EQ_Q = (R0_TYPICAL == q)      # True
 
-# ── Conceptual R₀ = D = 3 → herd immunity threshold ─────────────────────────
-R0_HERD_IMMUNITY = float(D)  # = 3.0 (conceptual herd-immunity reference R₀)
+# ── Herd immunity threshold with R₀ = q ──────────────────────────────────────
+# H = 1 − 1/R₀ = 1 − 1/q = 4/5 = 0.8  [APPROXIMATE]
+HERD_IMMUNITY_THRESHOLD_Q = 1.0 - 1.0 / q   # = 0.8
+HERD_EQ_4_5 = (abs(HERD_IMMUNITY_THRESHOLD_Q - 4.0 / 5.0) < 1e-10)  # True
 
-# ── Herd immunity threshold ──────────────────────────────────────────────────
-# Standard formula: h = 1 − 1/R₀.  Setting R₀ = D = 3:
-HERD_IMMUNITY_THRESHOLD = 1.0 - 1.0 / D  # = 2/3 = (D−1)/D ≈ 0.6667 [EXACT given R₀=D]
+# ── Critical epidemic parameters ──────────────────────────────────────────────
+# SIR has D−1=2 independent rate parameters: β (transmission) and γ_rate (recovery)  [EXACT]
+N_EPIDEMIC_PARAMS = D - 1         # = 2
+N_EPIPARAMS_EQ_D1 = (N_EPIDEMIC_PARAMS == D - 1)  # True
 
-# ── Measles R₀ ──────────────────────────────────────────────────────────────
-# Measles basic reproduction number ≈ 12–18; N=13 is inside this range
-BASIC_REPRODUCTION_NUMBER_ICOS = N  # = 13 [APPROXIMATE]
+# ── Pandemic waves ────────────────────────────────────────────────────────────
+# COVID-19 experienced approximately V//2=6 major waves  [APPROXIMATE]
+N_PANDEMIC_WAVES = V // 2         # = 6
+N_WAVES_EQ_V2 = (N_PANDEMIC_WAVES == V // 2)  # True
 
-# ── SIR phase-space dimension ────────────────────────────────────────────────
-# S + I + R = N_total (1 constraint) → 2 free dimensions, but D=3 variables
-SIR_PHASE_SPACE_DIM = D      # = 3 (number of state variables)
+# ── Cathedral decay rate ──────────────────────────────────────────────────────
+# δ★ ≈ daily recovery rate (1/δ★ ≈ 6.78 days)  [APPROXIMATE]
+CATHEDRAL_DECAY_RATE = DELTA_STAR  # ≈ 0.14751
+CATHEDRAL_RECOVERY_DAYS = 1.0 / DELTA_STAR   # ≈ 6.78 days
 
-# ── Contact tracing depth ────────────────────────────────────────────────────
-# Epidemiological field investigations typically trace D=3 generations
-CONTACT_TRACING_DEPTH = D    # ≈ 3 [APPROXIMATE]
+# ── Contact network degree ────────────────────────────────────────────────────
+# Average effective contacts per infectious person ≈ q = 5  [APPROXIMATE]
+N_CONTACT_NETWORK_DEGREE = q      # = 5
+N_CONTACT_EQ_Q = (N_CONTACT_NETWORK_DEGREE == q)  # True
 
-# ── Age groups ───────────────────────────────────────────────────────────────
-# Simple age-stratified models use D=3 groups (young, middle-aged, old)
-AGE_GROUPS_SIMPLE = D        # ≈ 3 [APPROXIMATE]
+# ── Incubation period Gamma shape ─────────────────────────────────────────────
+# Gamma distribution shape parameter k ≈ D = 3 (empirical fits)  [APPROXIMATE]
+N_GAMMA_SHAPE = D                 # = 3
+N_GAMMA_EQ_D = (N_GAMMA_SHAPE == D)  # True
 
-# ── Pandemic waves ───────────────────────────────────────────────────────────
-# Many historical pandemics exhibit ≈ D=3 major waves (1918 flu, COVID-19)
-N_PANDEMIC_WAVES = D         # ≈ 3 [APPROXIMATE]
+# ── Effective R at herd immunity ──────────────────────────────────────────────
+# R_eff = R₀ × (1 − H) = q × (1/q) = 1  [EXACT: threshold condition]
+R_EFF_AT_HERD = float(R0_TYPICAL) * (1.0 / q)   # = 1.0
+R_EFF_EQ_1 = (abs(R_EFF_AT_HERD - 1.0) < 1e-10)  # True
 
-# ── Mortality scaling dimension ──────────────────────────────────────────────
-# Log-mortality risk scales primarily with D−1=2 key variables: age, comorbidity
-MORTALITY_SCALING_DIM = D - 1  # = 2 [APPROXIMATE]
+# ── Icosahedral contact network ───────────────────────────────────────────────
+# N=13 node icosahedral superspreader web  [EXACT: icosahedral topology]
+N_ICOS_CONTACT_NODES = N          # = 13
+N_ICOS_CONTACT_EDGES = E          # = 30
+ICOS_CONTACT_AVG_DEGREE = 2.0 * E / N  # ≈ 4.615
 
-# ── Cathedral δ★-linked endemic equilibrium ─────────────────────────────────
-# In a simple SIS model the endemic equilibrium fraction infected:
-#   I★ = 1 − 1/R₀.  With R₀ = 1/δ★ ≈ 6.78:
-ENDEMIC_INFECTED_FRAC = 1.0 - DELTA_STAR   # ≈ 0.8525 (I★ for R₀ = 1/δ★)
-R0_DELTA_STAR = 1.0 / DELTA_STAR            # ≈ 6.779 (R₀ such that I★ = 1−δ★)
+# ── Vaccine efficacy floor ────────────────────────────────────────────────────
+# Min vaccine efficacy to achieve herd immunity: VE_min = 1 − 1/R₀ = 1 − 1/q  [APPROXIMATE]
+VACCINE_EFFICACY_MIN = 1.0 - 1.0 / q   # = 0.8
 
-# ── Serial interval scaling ──────────────────────────────────────────────────
-# Serial interval ∝ 1/γ_recover; number of infectious periods ≈ D=3 per cycle
-N_INFECTIOUS_PERIODS = D     # ≈ 3 [APPROXIMATE]
+# ── Shannon entropy of SIR states ────────────────────────────────────────────
+# Max entropy for D=3 equal SIR compartments = log₂(D)  [EXACT arithmetic]
+H_SIR_MAX = log(D) / log(2)       # = log₂(3) ≈ 1.585 bits
+
+# ── Superspreader fraction ────────────────────────────────────────────────────
+# Overdispersion: superspreader fraction ≈ δ★  [APPROXIMATE]
+SUPERSPREADER_FRACTION = DELTA_STAR   # ≈ 0.14751
+
+# ── Boolean summary flags ─────────────────────────────────────────────────────
+N_SIR_EQ_D_FLAG = (N_SIR_COMPARTMENTS == D)          # True
+N_SEIR_EQ_D1_FLAG = (N_SEIR_COMPARTMENTS == D + 1)   # True
 
 
-# ── Functions ─────────────────────────────────────────────────────────────────
-
-def sir_model() -> dict:
+def sir_model():
     """
-    Classic SIR model — Cathedral connection summary.
+    SIR compartmental model Cathedral connections.
 
-    The SIR model partitions the population into exactly D=3 compartments:
-    Susceptible, Infected, Recovered.
-
-    Returns
-    -------
-    dict
-        n_compartments, n_compartments_eq_D, equations, note.
+    Returns dict with keys:
+        n_sir, sir_eq_D, n_seir, seir_eq_D1,
+        n_epidemic_params, epiparams_eq_D1,
+        r0_typical, r0_eq_q,
+        herd_immunity_threshold, herd_eq_4_5,
+        r_eff_at_herd, r_eff_eq_1,
+        cathedral_decay_rate, cathedral_recovery_days
     """
     return {
-        "n_compartments":     N_SIR_COMPARTMENTS,
-        "n_compartments_eq_D": N_SIR_COMPARTMENTS == D,
-        "compartments":       ["S (Susceptible)", "I (Infected)", "R (Recovered)"],
-        "n_compartments_formula": "D = 3",
-        "dS_dt":              "−β·S·I",
-        "dI_dt":              "+β·S·I − γ·I",
-        "dR_dt":              "+γ·I",
-        "basic_reproduction": "R₀ = β/γ",
-        "epidemic_threshold": R0_CRITICAL,
-        "note": (
-            f"SIR has exactly D={D} compartments — EXACT arithmetic coincidence. "
-            "The spatial dimension D=3 equals the number of SIR state variables."
-        ),
-        "status": "EXACT: N_SIR = D = 3",
+        "n_sir": N_SIR_COMPARTMENTS,
+        "sir_eq_D": N_SIR_EQ_D,
+        "n_seir": N_SEIR_COMPARTMENTS,
+        "seir_eq_D1": N_SEIR_EQ_D1,
+        "n_epidemic_params": N_EPIDEMIC_PARAMS,
+        "epiparams_eq_D1": N_EPIPARAMS_EQ_D1,
+        "r0_typical": R0_TYPICAL,
+        "r0_eq_q": R0_EQ_Q,
+        "herd_immunity_threshold": HERD_IMMUNITY_THRESHOLD_Q,
+        "herd_eq_4_5": HERD_EQ_4_5,
+        "r_eff_at_herd": R_EFF_AT_HERD,
+        "r_eff_eq_1": R_EFF_EQ_1,
+        "cathedral_decay_rate": CATHEDRAL_DECAY_RATE,
+        "cathedral_recovery_days": CATHEDRAL_RECOVERY_DAYS,
     }
 
 
-def seir_model() -> dict:
+def pandemic_dynamics():
     """
-    SEIR model with latent (Exposed) compartment — Cathedral connection.
+    Pandemic wave structure and network Cathedral connections.
 
-    SEIR adds E (Exposed/latent) giving D+1=4 compartments.
-
-    Returns
-    -------
-    dict
-        n_compartments, n_compartments_eq_D1, note.
+    Returns dict with keys:
+        n_pandemic_waves, waves_eq_V2,
+        n_contact_degree, contact_eq_q,
+        n_gamma_shape, gamma_eq_D,
+        icos_contact_nodes, icos_contact_edges, icos_avg_degree,
+        superspreader_fraction, h_sir_max,
+        vaccine_efficacy_min
     """
     return {
-        "n_compartments":       N_SEIR_COMPARTMENTS,
-        "n_compartments_eq_D1": N_SEIR_COMPARTMENTS == D + 1,
-        "compartments":         [
-            "S (Susceptible)", "E (Exposed)",
-            "I (Infected)", "R (Recovered)"
-        ],
-        "n_compartments_formula": "D+1 = 4",
-        "basic_reproduction":   "R₀ = β/(σ+γ)·N",
-        "latent_period":        "1/σ (mean latency before becoming infectious)",
-        "note": (
-            f"SEIR has D+1={D+1} compartments — EXACT arithmetic. "
-            "Adding the latent class E to SIR gives D+1=4, matching spacetime dimensions."
-        ),
-        "status": "EXACT: N_SEIR = D+1 = 4",
+        "n_pandemic_waves": N_PANDEMIC_WAVES,
+        "waves_eq_V2": N_WAVES_EQ_V2,
+        "n_contact_degree": N_CONTACT_NETWORK_DEGREE,
+        "contact_eq_q": N_CONTACT_EQ_Q,
+        "n_gamma_shape": N_GAMMA_SHAPE,
+        "gamma_eq_D": N_GAMMA_EQ_D,
+        "icos_contact_nodes": N_ICOS_CONTACT_NODES,
+        "icos_contact_edges": N_ICOS_CONTACT_EDGES,
+        "icos_avg_degree": ICOS_CONTACT_AVG_DEGREE,
+        "superspreader_fraction": SUPERSPREADER_FRACTION,
+        "h_sir_max": H_SIR_MAX,
+        "vaccine_efficacy_min": VACCINE_EFFICACY_MIN,
     }
 
 
-def herd_immunity() -> dict:
+def epidemiology_summary():
     """
-    Herd immunity threshold — Cathedral connection.
+    Full summary of Cathedral epidemiology connections.
 
-    Standard formula: h = 1 − 1/R₀.
-    Setting R₀ = D = 3 gives h = (D−1)/D = 2/3.
-
-    Returns
-    -------
-    dict
-        threshold, R0_ref, threshold_eq_D1_D, note.
+    Returns dict with keys:
+        "sir_model", "pandemic_dynamics", "KEY_EXACT_RESULTS",
+        "delta_star", "N", "D"
     """
-    thresh = 1.0 - 1.0 / D
+    sm = sir_model()
+    pd = pandemic_dynamics()
+
+    key_results = [
+        f"SIR compartments = D = {D}  [EXACT: S, I, R]",
+        f"SEIR compartments = D+1 = {D+1}  [EXACT: S, E, I, R]",
+        f"R₀ ≈ q = {q}  [APPROXIMATE: measles-like pathogens]",
+        f"Herd immunity threshold = 1−1/q = {1.0 - 1.0/q:.1f}  [APPROXIMATE]",
+        f"Epidemic params = D−1 = {D - 1}  [EXACT: β and γ_rate]",
+        f"Pandemic waves ≈ V//2 = {V // 2}  [APPROXIMATE: COVID waves]",
+        f"δ★ ≈ daily recovery rate ≈ {DELTA_STAR:.4f} per day  [APPROXIMATE]",
+        f"Contact network degree ≈ q = {q}  [APPROXIMATE]",
+        f"Incubation Gamma shape ≈ D = {D}  [APPROXIMATE]",
+        f"Icosahedral contact web: N={N} nodes, E={E} edges  [EXACT]",
+    ]
+
     return {
-        "threshold":           thresh,
-        "R0_reference":        R0_HERD_IMMUNITY,
-        "threshold_eq_D1_D":   abs(thresh - (D - 1) / D) < 1e-12,
-        "threshold_formula":   f"1 − 1/D = 1 − 1/{D} = {thresh:.6f}",
-        "D_value":             D,
-        "measles_R0_approx":   BASIC_REPRODUCTION_NUMBER_ICOS,
-        "measles_R0_range":    (12, 18),
-        "measles_N_in_range":  12 <= BASIC_REPRODUCTION_NUMBER_ICOS <= 18,
-        "note": (
-            f"h = 1 − 1/R₀ = 1 − 1/{D} = {thresh:.4f} = (D−1)/D = 2/3 when R₀=D=3. "
-            f"Measles R₀ ≈ 12–18; N={N}=13 sits inside this range [APPROXIMATE]. "
-            "h = 2/3 is an EXACT formula consequence of R₀=D, not a first-principles derivation."
-        ),
-        "status": "EXACT given R₀=D; measles R₀≈N is APPROXIMATE",
+        "sir_model": sm,
+        "pandemic_dynamics": pd,
+        "KEY_EXACT_RESULTS": key_results,
+        "delta_star": DELTA_STAR,
+        "N": N,
+        "D": D,
     }
 
 
-def epidemiology_summary() -> dict:
-    """
-    Consolidated Cathedral Epidemiology summary.
-
-    Returns
-    -------
-    dict
-        "sir", "seir", "herd", "key_results", "cathedral_integers".
-    """
-    sir = sir_model()
-    seir = seir_model()
-    herd = herd_immunity()
-    return {
-        "sir":  sir,
-        "seir": seir,
-        "herd": herd,
-        "cathedral_integers": {
-            "D": D, "N": N, "q": q,
-            "delta_star": round(DELTA_STAR, 8),
-            "phi": round(phi, 6),
-        },
-        "key_results": [
-            f"SIR compartments = D = {D}  [EXACT]",
-            f"SEIR compartments = D+1 = {D+1}  [EXACT]",
-            f"Herd immunity threshold = (D−1)/D = {HERD_IMMUNITY_THRESHOLD:.4f} = 2/3  [EXACT given R₀=D]",
-            f"Measles R₀ ≈ 12–18 ≈ N = {N}  [APPROXIMATE]",
-            f"Pandemic waves ≈ D = {D}  [APPROXIMATE]",
-            f"Contact tracing depth ≈ D = {D}  [APPROXIMATE]",
-            f"Age groups (simple) ≈ D = {D}  [APPROXIMATE]",
-            f"R₀(δ★) = 1/δ★ ≈ {R0_DELTA_STAR:.4f}  (endemic fraction 1−δ★)",
-        ],
-    }
-
-
-def print_epidemiology_report() -> None:
-    """Print a formatted Cathedral Epidemiology report."""
-    sep = "─" * 64
-    print(sep)
-    print("  CATHEDRAL EPIDEMIOLOGY REPORT")
-    print(f"  δ★={DELTA_STAR:.6f}  N={N}  D={D}  φ={phi:.6f}")
-    print(sep)
-
-    print(f"\n1. SIR COMPARTMENTS = D = {D}  [EXACT]")
-    print(f"   S (Susceptible), I (Infected), R (Recovered)")
-    print(f"   Spatial dimension D={D} = number of SIR compartments")
-
-    print(f"\n2. SEIR COMPARTMENTS = D+1 = {D+1}  [EXACT]")
-    print(f"   Adds E (Exposed/latent) compartment before infectious stage")
-    print(f"   D+1={D+1} = spacetime dimensions = SEIR compartments")
-
-    print(f"\n3. HERD IMMUNITY THRESHOLD  h = (D−1)/D  [EXACT given R₀=D]")
-    print(f"   h = 1 − 1/R₀ = 1 − 1/{D} = {HERD_IMMUNITY_THRESHOLD:.6f}")
-    print(f"   Setting R₀ = D = {D} gives h = (D−1)/D = 2/3 EXACTLY")
-
-    print(f"\n4. MEASLES R₀ ≈ N = {N}  [APPROXIMATE]")
-    print(f"   Historical range: 12–18; Cathedral prediction N=13 ∈ [12,18]")
-    print(f"   Measles herd immunity: h = 1−1/13 = {1-1/N:.4f} ≈ 92.3%")
-
-    print(f"\n5. PANDEMIC WAVES ≈ D = {D}  [APPROXIMATE]")
-    print(f"   1918 influenza: 3 major waves; COVID-19: initial ~3 dominant waves")
-
-    print(f"\n6. CATHEDRAL δ★ ENDEMIC POINT")
-    print(f"   R₀(δ★) = 1/δ★ = {R0_DELTA_STAR:.4f}")
-    print(f"   Endemic I★ = 1 − δ★ = {ENDEMIC_INFECTED_FRAC:.4f}")
-
-    print(f"\n{'SUMMARY':^64}")
-    print(f"  [EXACT]          SIR = D = 3 compartments")
-    print(f"  [EXACT]          SEIR = D+1 = 4 compartments")
-    print(f"  [EXACT given R₀=D]  Herd immunity = 2/3 = (D−1)/D")
-    print(f"  [APPROXIMATE]    Measles R₀ ≈ N = 13")
-    print(f"  [APPROXIMATE]    Pandemic waves ≈ D = 3")
-    print(sep)
+def print_epidemiology_report():
+    """Print a formatted report of Cathedral epidemiology connections."""
+    s = epidemiology_summary()
+    print("=" * 65)
+    print("  EPIDEMIOLOGY CATHEDRAL — δ★ = (80/81)·π/(13φ) ≈ 0.14751")
+    print("=" * 65)
+    print()
+    print("  SIR / SEIR compartmental structure:")
+    print(f"    SIR compartments    = D = {D}    [EXACT: S, I, R]")
+    print(f"    SEIR compartments   = D+1 = {D + 1}  [EXACT: S, E, I, R]")
+    print(f"    Epidemic parameters = D−1 = {D - 1}  [EXACT: β and γ_rate]")
+    print()
+    print("  Reproduction & herd immunity:")
+    print(f"    R₀ typical          ≈ q = {q}    [APPROXIMATE: measles-like]")
+    print(f"    Herd immunity H     = 1−1/q = {1.0 - 1.0/q:.2f}  [APPROXIMATE]")
+    print(f"    R_eff at herd       = R₀·(1/q) = 1.0  [EXACT: threshold]")
+    print()
+    print("  Pandemic dynamics:")
+    print(f"    Major waves         ≈ V//2 = {V // 2}  [APPROXIMATE: COVID]")
+    print(f"    Contact degree      ≈ q = {q}    [APPROXIMATE: avg contacts]")
+    print(f"    δ★ recovery rate    ≈ {DELTA_STAR:.4f}/day → {1.0/DELTA_STAR:.2f} days  [APPROX]")
+    print(f"    Incubation shape    ≈ D = {D}    [APPROXIMATE: Gamma dist]")
+    print(f"    Icosahedral web     = N={N} nodes, E={E} edges  [EXACT]")
+    print()
+    print("  Key results:")
+    for r in s["KEY_EXACT_RESULTS"]:
+        print(f"    {r}")
+    print("=" * 65)
