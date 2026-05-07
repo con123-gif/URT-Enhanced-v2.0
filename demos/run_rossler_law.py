@@ -1,9 +1,10 @@
 import numpy as np
-from core.metrics import (
+from urt import (
     lyapunov_rosenstein,
     D_KY_from_l1_proxy,
     tau_avalanche,
     delta_metric,
+    DELTA_STAR,
 )
 
 def rossler(dt=1e-3, T=4000.0, a=0.2, b=0.2, c=5.7):
