@@ -1284,8 +1284,23 @@ from .cognitive_science_cathedral import (
     memory_systems, cognition,
     cognitive_science_summary, print_cognitive_science_report,
 )
+from .inflation_cathedral import (
+    N_EFOLDS, N_EFOLDS_EQ_GD, N_EFOLDS_IS_57,
+    SLOW_ROLL_EPS, SLOW_ROLL_ETA,
+    N_S_CATHEDRAL, N_S_DEVIATION_SIGMA, N_S_WITHIN_1SIGMA,
+    N_S_NUMERATOR, N_S_DENOMINATOR,
+    R_TENSOR_CATHEDRAL, R_TENSOR_BOUND_CURRENT, R_TENSOR_WITHIN_BOUNDS,
+    R_TENSOR_LITBIRD_SENSITIVITY, R_TENSOR_CMBS4_SENSITIVITY,
+    R_DETECTABLE_LITBIRD, R_DETECTABLE_CMBS4,
+    R_FROM_NS, CONSISTENCY_CHECK,
+    CC_EXPONENT, CC_EXPONENT_EQ_64, CC_PREFACTOR,
+    CC_CATHEDRAL, CC_OBSERVED, CC_LOG10_CATHEDRAL, CC_RATIO_TO_OBSERVED, CC_ERROR_PCT,
+    DNS_DLNK, L_FIRST_PEAK_APPROX, INFLATION_ENERGY_GEV,
+    inflation_derivation, cosmological_constant,
+    inflation_summary, print_inflation_report,
+)
 
-__version__ = "2.9.10"
+__version__ = "2.9.11"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
