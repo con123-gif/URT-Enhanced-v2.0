@@ -938,6 +938,36 @@ from .graph_theory_cathedral import (
     graph_theory_summary, print_graph_theory_report,
 )
 
+from .quantum_optics_cathedral import (
+    N_QUBIT_BLOCH_DIMS, N_SU2_GENERATORS, N_MODES_SQUEEZED,
+    BEAM_SPLITTER_MODES, JAYNES_CUMMINGS_COUPLING,
+    N_PHOTON_NUMBER_STATES_ICOS, LAMB_DICKE_PARAM,
+    bloch_sphere, jaynes_cummings, quantum_optics_summary,
+    print_quantum_optics_report,
+)
+
+from .polymer_cathedral import (
+    FLORY_NU_D3, FLORY_NU_APPROX, POLYMER_UPPER_CRITICAL_D,
+    POLYMER_LOWER_CRITICAL_D, KUHN_SEGMENTS_ICOS,
+    ENTANGLEMENT_TUBE_DIM, N_TOPOLOGICAL_INVARIANTS_POLYMER,
+    flory_exponents, rouse_zimm_modes, polymer_summary, print_polymer_report,
+)
+
+from .social_networks_cathedral import (
+    N_DUNBAR_LAYERS, DUNBAR_INNER, DUNBAR_SYMPATHY, DUNBAR_BAND, DUNBAR_NUMBER,
+    SMALL_WORLD_K, SCALE_FREE_GAMMA, N_SIX_DEGREES, ICOS_NETWORK_NODES,
+    dunbar_layers, small_world_network, scale_free_network,
+    social_networks_summary, print_social_networks_report,
+)
+
+from .thermodynamics_cathedral import (
+    N_LAWS_THERMO, N_THERMO_POTENTIALS, N_MAXWELL_RELATIONS,
+    N_CRITICAL_EXPONENTS_THERMO, N_TRIPLE_POINT_PHASES,
+    ADIABATIC_INDEX_MONATOMIC, CLAUSIUS_CLAPEYRON_COEXISTENCE,
+    thermo_laws, thermodynamic_potentials, critical_exponents_thermo,
+    thermodynamics_summary, print_thermodynamics_report,
+)
+
 from .information_theory_cathedral import (
     H_MAX_N, H_MAX_Q, BINARY_ALPHABET, CATHEDRAL_SNR, C_CATHEDRAL,
     HAMMING_N, HAMMING_K, HAMMING_D, HAMMING_RATE,
