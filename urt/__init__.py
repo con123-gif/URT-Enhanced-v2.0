@@ -928,6 +928,48 @@ from .nuclear_structure_cathedral import (
     nuclear_summary, print_nuclear_report,
 )
 
+from .epidemiology_cathedral import (
+    N_SIR_COMPARTMENTS, N_SEIR_COMPARTMENTS,
+    R0_CRITICAL, R0_HERD_IMMUNITY, HERD_IMMUNITY_THRESHOLD,
+    BASIC_REPRODUCTION_NUMBER_ICOS, CONTACT_TRACING_DEPTH,
+    N_PANDEMIC_WAVES, MORTALITY_SCALING_DIM,
+    ENDEMIC_INFECTED_FRAC, R0_DELTA_STAR,
+    sir_model, seir_model, herd_immunity,
+    epidemiology_summary, print_epidemiology_report,
+)
+
+from .celestial_mechanics_cathedral import (
+    N_KEPLER_LAWS, KEPLER_THIRD_POWER,
+    N_BODY_PROBLEM_DOF, LAGRANGE_POINTS, STABILITY_LAGRANGE,
+    N_ORBITAL_ELEMENTS, N_CONSERVED_2BODY,
+    HOHMANN_BURNS, N_TROJAN_GROUPS,
+    TISSERAND_PARAMETER_N, ROCHE_LIMIT_POWER,
+    N_PLANETARY_RESONANCES_APPROX,
+    kepler_laws, orbital_mechanics,
+    celestial_summary, print_celestial_report,
+)
+
+from .crystallography_2d_cathedral import (
+    N_BRAVAIS_2D, N_POINT_GROUPS_2D, N_WALLPAPER_GROUPS,
+    HEXAGONAL_COORD, SQUARE_COORD, HONEYCOMB_COORD,
+    GRAPHENE_SUBLATTICES, GRAPHENE_DIRAC_POINTS,
+    PENROSE_FOLD, N_ALLOWED_ROT_2D, PHI_IN_PENROSE,
+    bravais_2d, point_groups_2d, lattice_structures_2d,
+    penrose_tiling, crystallography_2d_summary,
+    print_crystallography_2d_report,
+)
+
+from .spectroscopy_cathedral import (
+    N_HYDROGEN_SERIES, N_SODIUM_D_LINES,
+    ZEEMAN_NORMAL_LINES, ZEEMAN_COMPONENTS_FOR_L1,
+    SELECTION_RULE_DL, SELECTION_RULE_DM,
+    N_STOKES_PARAMETERS, N_JONES_VECTOR_COMPONENTS,
+    N_POLARIZATION_STATES, N_LARMOR_PRECESSION_DIM,
+    IR_MODES_LINEAR, HYPERFINE_STRUCTURE_I,
+    zeeman_effect, hydrogen_series, stokes_parameters,
+    spectroscopy_summary, print_spectroscopy_report,
+)
+
 from .graph_theory_cathedral import (
     ICOS_VERTEX_DEGREE, FOUR_COLOR_THEOREM_BOUND,
     K_D_EDGES, K_D1_EDGES,
@@ -1339,4 +1381,38 @@ __all__ = [
     "SIGMA_CATHEDRAL",
     "SPREAD_RELATIVE",
     "print_economics_report",
+    # epidemiology
+    "N_SIR_COMPARTMENTS", "N_SEIR_COMPARTMENTS",
+    "R0_CRITICAL", "R0_HERD_IMMUNITY", "HERD_IMMUNITY_THRESHOLD",
+    "BASIC_REPRODUCTION_NUMBER_ICOS", "CONTACT_TRACING_DEPTH",
+    "N_PANDEMIC_WAVES", "MORTALITY_SCALING_DIM",
+    "ENDEMIC_INFECTED_FRAC", "R0_DELTA_STAR",
+    "sir_model", "seir_model", "herd_immunity",
+    "epidemiology_summary", "print_epidemiology_report",
+    # celestial mechanics
+    "N_KEPLER_LAWS", "KEPLER_THIRD_POWER",
+    "N_BODY_PROBLEM_DOF", "LAGRANGE_POINTS", "STABILITY_LAGRANGE",
+    "N_ORBITAL_ELEMENTS", "N_CONSERVED_2BODY",
+    "HOHMANN_BURNS", "N_TROJAN_GROUPS",
+    "TISSERAND_PARAMETER_N", "ROCHE_LIMIT_POWER",
+    "N_PLANETARY_RESONANCES_APPROX",
+    "kepler_laws", "orbital_mechanics",
+    "celestial_summary", "print_celestial_report",
+    # 2D crystallography
+    "N_BRAVAIS_2D", "N_POINT_GROUPS_2D", "N_WALLPAPER_GROUPS",
+    "HEXAGONAL_COORD", "SQUARE_COORD", "HONEYCOMB_COORD",
+    "GRAPHENE_SUBLATTICES", "GRAPHENE_DIRAC_POINTS",
+    "PENROSE_FOLD", "N_ALLOWED_ROT_2D", "PHI_IN_PENROSE",
+    "bravais_2d", "point_groups_2d", "lattice_structures_2d",
+    "penrose_tiling", "crystallography_2d_summary",
+    "print_crystallography_2d_report",
+    # spectroscopy
+    "N_HYDROGEN_SERIES", "N_SODIUM_D_LINES",
+    "ZEEMAN_NORMAL_LINES", "ZEEMAN_COMPONENTS_FOR_L1",
+    "SELECTION_RULE_DL", "SELECTION_RULE_DM",
+    "N_STOKES_PARAMETERS", "N_JONES_VECTOR_COMPONENTS",
+    "N_POLARIZATION_STATES", "N_LARMOR_PRECESSION_DIM",
+    "IR_MODES_LINEAR", "HYPERFINE_STRUCTURE_I",
+    "zeeman_effect", "hydrogen_series", "stokes_parameters",
+    "spectroscopy_summary", "print_spectroscopy_report",
 ]
