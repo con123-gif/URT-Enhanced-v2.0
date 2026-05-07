@@ -51,7 +51,10 @@ _L = _build_laplacian()
 
 def urt_evolve(delta_init, steps=60):
     """Evolve delta values on the 13-node icosahedral graph toward δ★."""
-    delta = np.array(delta_init, dtype=float)
+    scalar_input = np.ndim(delta_init) == 0
+    delta = np.atleast_1d(np.array(delta_init, dtype=float))
+    if delta.shape == (1,):
+        delta = np.full(N, delta[0])
     for t in range(steps):
         lap  = -0.08 * _L @ delta
         pull = -0.6 * np.exp(-t / 10) * (delta - DELTA_STAR) * (1 + delta**2 / (1 + delta**2))
@@ -84,13 +87,17 @@ def compute_all_constants():
     etaB  = gamma**3 * Delta * DELTA_STAR * 8 / 9
 
     return {
-        "delta_star":  DELTA_STAR,
-        "alpha_inv":   alpha_inv,
-        "mu_e":        mu_e,
-        "tau_mu":      tau_mu,
-        "mp_e":        mp_e,
-        "sin2W":       sin2W,
-        "alpha_s":     alpha_s,
+        "delta_star":    DELTA_STAR,
+        "alpha_inv":     alpha_inv,
+        "mu_e":          mu_e,
+        "tau_mu":        tau_mu,
+        "mp_e":          mp_e,
+        "sin2W":         sin2W,
+        "sin2_theta_W":  sin2W,    # alias for compatibility
+        "Omega_m":       4/13,
+        "alpha_s":       alpha_s,
+        "alpha_s_MZ":    alpha_s,  # alias
+        "alpha_s":       alpha_s,
         "sinC":        sinC,
         "theta12":     theta12,
         "theta13":     theta13,

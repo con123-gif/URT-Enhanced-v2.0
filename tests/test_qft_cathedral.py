@@ -51,7 +51,10 @@ def test_propagator_positive():
 
 def test_propagator_decreasing():
     """Δ(k) must decrease with increasing |k|."""
-    k_vals = np.array([0.0, 1e10, 1e20, 1e30])
+    # Use k² values relative to the mass gap δ★²·Λ²  so differences are visible
+    Lam = lambda_shell()
+    k_sq_gap = DELTA_STAR ** 2 * Lam ** 2
+    k_vals = np.array([0.0, k_sq_gap * 1e-4, k_sq_gap, k_sq_gap * 1e4])
     D_vals = [cathedral_propagator(k) for k in k_vals]
     for i in range(len(D_vals) - 1):
         assert D_vals[i] > D_vals[i + 1]

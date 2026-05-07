@@ -98,9 +98,10 @@ def ikt_forward(x):
 
 def ikt_inverse(C):
     """
-    IKT Inverse Transform.
+    IKT Inverse Transform via matrix inverse.
 
-    x_n = (1/13) · Σ_{k=0}^{12} C_k · ψ_k*(n)
+    Since the IKT basis is not unitary (δ★ ≠ 1 and mixed K₄/A₅ phases),
+    the inverse is computed as x = Ψ⁻¹ · C using the full matrix inverse.
 
     Parameters
     ----------
@@ -115,11 +116,8 @@ def ikt_inverse(C):
     C = np.asarray(C, dtype=complex)
     if C.shape[0] != N_SITE:
         raise ValueError(f"IKT inverse requires exactly {N_SITE} coefficients")
-    x = np.zeros(N_SITE, dtype=complex)
-    for n in range(N_SITE):
-        for k in range(N_SITE):
-            x[n] += C[k] * np.conj(ikt_basis(k, n))
-    return x / N_SITE
+    Psi = ikt_matrix()
+    return np.linalg.solve(Psi, C)
 
 
 def ikt_matrix():

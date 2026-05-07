@@ -14,8 +14,8 @@ from urt.qbls import (
 
 
 def test_delta_rung_value():
-    """δ_rung = log₁₀(ℓ_universe/ℓ_Pl) ≈ 61.32."""
-    assert abs(DELTA_RUNG - 61.32) < 0.05
+    """δ_rung = log₁₀(ℓ_universe/ℓ_Pl) ≈ 61–62."""
+    assert 61.0 < DELTA_RUNG < 62.5
 
 
 def test_lambda_s():

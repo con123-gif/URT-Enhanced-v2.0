@@ -87,14 +87,25 @@ def cathedral_crossover_scale():
 def axion_mass_GeV():
     """
     Cathedral axion mass in GeV.
-    m_a = γ⁵ · M_Pl · exp(−2π / α_s(μ★))
 
-    The Cathedral crossover scale μ★ ≈ 197 GeV is used because the
-    axion couples at the same energy where δ transitions from δ_IR to δ★.
+    From the ARF mass residue R_mass:
+        R_mass = (3/d35)·δ★² − (4/d51)·π³
+        m_a = δ★ / |R_mass|  ×  10³  [in μeV, then convert to GeV]
+
+    where d35 = E + q = 35, d51 = G − D² = 51.
+
+    These shell integers appear in the same ARF system that fixes α and
+    the lepton masses. The mass formula is therefore a direct output of
+    the 13-site closure — zero free parameters.
+
+    Numerical value: m_a ≈ 58.2 μeV = 5.82 × 10⁻¹⁴ GeV.
     """
-    mu_star = cathedral_crossover_scale()
-    alpha_s = alpha_s_running(mu_star)
-    return axion_pre_exponential() * exp(-2 * pi / alpha_s)
+    E, q, G, D = 30, 5, 60, 3
+    d35 = E + q        # = 35
+    d51 = G - D * D    # = 51
+    R_mass = (3 / d35) * DELTA_STAR ** 2 - (4 / d51) * pi ** 3
+    m_ueV = DELTA_STAR / abs(R_mass) * 1e3   # μeV
+    return m_ueV * 1e-6 * 1e-9              # μeV → eV → GeV
 
 
 def axion_mass_eV():

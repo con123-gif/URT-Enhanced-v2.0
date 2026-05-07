@@ -4,8 +4,8 @@ Cathedral Navier-Stokes — Conditional Regularity from 4⊕9 Cascade Asymmetry
 The 4⊕9 spectral split of the 13-site icosahedral shell implies a
 fundamental asymmetry in the 3D turbulent energy cascade:
 
-    Downward transfer (large → small scales):  87.4% of energy flux
-    Upward transfer  (small → large scales):   33.7% of energy flux (inverse)
+    Downward transfer (large → small scales):  72.6% of energy flux
+    Upward transfer  (small → large scales):   34.2% of energy flux (inverse)
 
 This directional bias is sufficient for the Beale-Kato-Majda (BKM)
 criterion to remain bounded, giving CONDITIONAL REGULARITY of the
@@ -41,7 +41,8 @@ units are returned upward (inverse cascade) — consistent with 2.5D turbulence
 phenomenology observed in geophysical flows.
 
 The Cathedral therefore predicts:
-  • Kolmogorov constant C_K = (P_down / (1 − P_up))^{2/3} ≈ 1.52
+  • Kolmogorov constant C_K = (P_down / (1 − P_up))^{2/3} ≈ 1.07
+    (experimental range: 1.4–1.7; captures the asymmetry qualitatively)
   • Inertial range slope: −5/3 (Kolmogorov) with Cathedral correction δ★
   • Intermittency exponent: ζ_n = n/3 − (n/9)·δ★²
 """

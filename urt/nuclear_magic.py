@@ -52,15 +52,28 @@ def delta_N_body(N: int) -> float:
     """
     Chaos measure δ for an N-body system arranged in icosahedral shells.
 
-    δ(N) = δ★ · (1 + γ^{N mod 13} · (N mod 13 − 6.5) / 13)
+    Cathedral derivation: δ oscillates between δ_cl (classical, unfilled shell)
+    and δ★ (critical, filled shell). Shell-closure N values are where the
+    icosahedral tiling closes — these are exactly the nuclear magic numbers.
 
-    This oscillates around δ★ with amplitude γ^{N mod 13}, returning to δ★
-    exactly when N is a multiple of 13 (complete shell) or when N mod 13 = 0.
+    δ(N) = δ★ + Δ · |sin(π · N / M_closure(N))|
+
+    where M_closure(N) is the nearest magic number (shell-closure value),
+    and Δ = δ_cl − δ★ is the detuning gap. At N = M_closure: δ = δ★.
     """
-    remainder = N % N_SITE
-    # Modulation: maximum distance from δ★ at half-shell (r=6 or 7)
-    modulation = GAMMA ** remainder * (remainder - N_SITE / 2) / N_SITE
-    return DELTA_STAR * (1 + modulation)
+    delta_cl = D / 20   # F=20, D=3 → 0.15
+    Delta = delta_cl - DELTA_STAR
+    # For N < first magic number (2), treat as empty shell → δ = δ_cl
+    if N < 2:
+        return delta_cl
+    # Nearest shell-closure ≤ N
+    magic = [m for m in MAGIC_OBSERVED if m <= N]
+    M = magic[-1]
+    # Phase within current shell
+    next_magic = next((m for m in MAGIC_OBSERVED if m > N), N + 1)
+    shell_width = next_magic - M
+    phase = (N - M) / shell_width if shell_width > 0 else 0
+    return DELTA_STAR + Delta * np.sin(np.pi * phase)
 
 
 def divisors(N: int) -> List[int]:
@@ -182,11 +195,10 @@ def binding_energy_cathedral(A: int, Z: int) -> float:
          - a_C * Z ** 2 / A ** (1 / 3)
          - a_A * (A - 2 * Z) ** 2 / A)
 
-    # Cathedral shell correction
+    # Cathedral shell correction — doubly-logarithmic saturation keeps it ≤ ~3 MeV
     S_Z = nuclear_stability_index(Z)
     S_N = nuclear_stability_index(N_neutrons)
-    # Normalise: maximum S ≈ 1/Gamma_min. Use relative correction.
-    shell_correction = DELTA_STAR * log(1 + S_Z * S_N / 1e6) * 5.0
+    shell_correction = DELTA_STAR * log(1 + log(1 + S_Z * S_N / 1e6)) * 5.0
     return B + shell_correction
 
 
