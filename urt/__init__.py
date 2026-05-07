@@ -46,6 +46,42 @@ from .logistic_verification import (
     verify_delta_star_logistic,
     LogisticVerificationResult,
 )
+from .gravity_deficit import (
+    GRAVITATIONAL_DEFICIT_DEG,
+    GRAVITATIONAL_DEFICIT_RAD,
+    HOLONOMY_VORTEX_DEG,
+    schwarzschild_area,
+    cathedral_bh_entropy,
+    hawking_temperature,
+    newton_G_from_deficit,
+    deficit_summary,
+)
+from .arf_closure import (
+    ARFFixedPoint,
+    ARFPredictions,
+    prove_uniqueness,
+    scan_D,
+    gamma_power_ladder,
+)
+from .quasicrystal import (
+    ikt_forward,
+    ikt_inverse,
+    ikt_matrix,
+    ikt_sector_power,
+    phi_scaled_radii,
+)
+from .casimir_cathedral import (
+    casimir_force_per_area,
+    casimir_fractional_deviation,
+    critical_field_Vm,
+    topological_coupling,
+)
+from .neural_cathedral import (
+    CathedralLayer,
+    CathedralNet,
+    GrokDetector,
+    embed_to_shell,
+)
 
 __version__ = "2.0.0"
 __author__ = "Cornelius Lytollis"
@@ -83,4 +119,35 @@ __all__ = [
     # logistic verification
     "verify_delta_star_logistic",
     "LogisticVerificationResult",
+    # gravity deficit
+    "GRAVITATIONAL_DEFICIT_DEG",
+    "GRAVITATIONAL_DEFICIT_RAD",
+    "HOLONOMY_VORTEX_DEG",
+    "schwarzschild_area",
+    "cathedral_bh_entropy",
+    "hawking_temperature",
+    "newton_G_from_deficit",
+    "deficit_summary",
+    # ARF closure
+    "ARFFixedPoint",
+    "ARFPredictions",
+    "prove_uniqueness",
+    "scan_D",
+    "gamma_power_ladder",
+    # quasicrystal / IKT
+    "ikt_forward",
+    "ikt_inverse",
+    "ikt_matrix",
+    "ikt_sector_power",
+    "phi_scaled_radii",
+    # Casimir
+    "casimir_force_per_area",
+    "casimir_fractional_deviation",
+    "critical_field_Vm",
+    "topological_coupling",
+    # Cathedral neural
+    "CathedralLayer",
+    "CathedralNet",
+    "GrokDetector",
+    "embed_to_shell",
 ]
