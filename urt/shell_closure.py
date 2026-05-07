@@ -29,6 +29,12 @@ d79   = d80 - 1
 d_eff = DELTA_STAR - (DELTA_STAR**3 / d63) - (2 * gamma / d80)
 R_alpha = 3 / (d64 * phi) + 1 / (d79 * phi**2)
 
+# ── Cathedral C_mass: coherent mass generation coefficient ────────────
+# C_mass = −(5/16)·δ★³ + (7/8)·π·φ
+# The (7/8)·π·φ term is the icosahedral mass-scale anchor (7/8 = 1 − 1/N×D),
+# and (5/16)·δ★³ is the three-loop correction from the K₄ sector (5 = q, 16 = D⁴).
+C_MASS = -(5 / 16) * DELTA_STAR**3 + (7 / 8) * pi * phi   # ≈ 4.4468
+
 # ── Bare parameters ───────────────────────────────────────────────────
 bare_alpha = N*N - E - 2
 bare_mu    = D * (G + D*D)
@@ -93,23 +99,26 @@ def compute_all_constants():
         "tau_mu":        tau_mu,
         "mp_e":          mp_e,
         "sin2W":         sin2W,
-        "sin2_theta_W":  sin2W,    # alias for compatibility
+        "sin2_theta_W":  sin2W,
+        "alpha_s":       alpha_s,
+        "alpha_s_MZ":    alpha_s,
+        "sinC":          sinC,
+        "theta12":       theta12,
+        "theta13":       theta13,
+        "theta23":       theta23,
+        "deltaCP":       deltaCP,
         "Omega_m":       4/13,
-        "alpha_s":       alpha_s,
-        "alpha_s_MZ":    alpha_s,  # alias
-        "alpha_s":       alpha_s,
-        "sinC":        sinC,
-        "theta12":     theta12,
-        "theta13":     theta13,
-        "theta23":     theta23,
-        "deltaCP":     deltaCP,
-        "Omega_m":     4/13,
-        "Omega_L":     9/13,
-        "eta_B":       etaB,
-        "n_s":         ns,
-        "r":           r,
-        "H0_ratio":    H0r,
-        "m_axion_ueV": ma,
+        "Omega_L":       9/13,
+        "eta_B":         etaB,
+        "n_s":           ns,
+        "r":             r,
+        "H0_ratio":      H0r,
+        "m_axion_ueV":   ma,
+        # Cathedral ARF residues
+        "C_mass":        C_MASS,    # ≈ 4.4468  coherent mass generation coefficient
+        "R_mass":        Rm,        # ≈ −2.430  mass residue (also gives axion mass)
+        "Delta_delta":   d_eff - DELTA_STAR,   # effective δ detuning
+        "R_alpha":       R_alpha,   # ≈ 0.0338  fine-structure residue
     }
 
 

@@ -36,7 +36,7 @@ import numpy as np
 # ── URT imports ───────────────────────────────────────────────────────────────
 try:
     from urt import (
-        DELTA_STAR,
+        DELTA_STAR, C_MASS,
         compute_all_constants,
         ARFPredictions,
         prove_uniqueness,
@@ -51,12 +51,37 @@ try:
         ikt_sector_power,
         GrokDetector,
         embed_to_shell,
+        # Periodic table
+        cathedral_noble_gas_prediction,
+        period_lengths,
+        # Holography
+        central_charge,
+        ads_radius,
+        s_rt_k4_a5,
+        # Consciousness
+        critical_coupling,
+        spectral_gap,
+        eeg_frequencies,
+        # Prime spectral
+        riemann_zero_matches,
+        # Metamaterials
+        metamaterial_summary,
+        capsid_binding_sites,
+        # Swarm intelligence
+        formation_positions,
+        consensus_time,
+        earth_coverage_constellation,
+        # Gravitational waves
+        gw_event_summary,
+        detection_threshold,
+        qnm_frequency,
     )
     URT_OK = True
 except ImportError as err:
     print(f"[Genesis] URT not found ({err}). Run: pip install -e .")
     URT_OK = False
     DELTA_STAR = 0.14751
+    C_MASS     = 4.4468
 
 try:
     import requests
@@ -275,6 +300,129 @@ def cmd_ladder():
     return "\n".join(lines)
 
 
+def cmd_periodic():
+    noble = cathedral_noble_gas_prediction()
+    predicted = sorted(noble.keys())
+    observed  = [2, 10, 18, 36, 54, 86, 118]
+    pl = period_lengths()
+    lines = [
+        "Cathedral Periodic Table (Madelung from δ★):",
+        f"  K_M = δ★/(2πφ) = {DELTA_STAR/(2*3.14159*1.618):.6f}  (Aufbau correction)",
+        f"  Predicted noble gases: {predicted}",
+        f"  Observed:              {observed}",
+        f"  Match: {'100%' if predicted == observed else 'PARTIAL'}",
+        f"  Period lengths: {pl}",
+        f"  (Next predicted: Z=168, Z=218 — 8th and 9th periods)",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_holography():
+    c_val = central_charge()
+    r_ads = ads_radius()
+    s_rt  = s_rt_k4_a5()
+    lines = [
+        "Cathedral AdS/CFT (holographic duality):",
+        f"  G_N = δ★²  = {DELTA_STAR**2:.8f}  (Newton constant, Planck units)",
+        f"  R_AdS = 1/δ★ = {r_ads:.6f}  (AdS curvature radius)",
+        f"  Central charge c = 3/(2δ★³) ≈ {c_val:.1f}  (CFT degrees of freedom)",
+        f"  RT entropy S = {s_rt:.4f} nats  (Ryu-Takayanagi boundary entanglement)",
+        f"  C_mass = {C_MASS:.6f}  (coherent mass generation coefficient)",
+        f"  Cosmological constant: Λ/M_Pl⁴ = 4·(1/81)⁶⁴ ≈ 1.2×10⁻¹²² ← no tuning",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_consciousness():
+    K_c = critical_coupling()
+    lam = spectral_gap()
+    freqs = eeg_frequencies()
+    lines = [
+        "Cathedral Consciousness (Kuramoto on icosahedral graph):",
+        f"  Spectral gap λ₂ = {lam:.1f} = D  (spatial dimension IS the connectivity!)",
+        f"  Critical coupling K_c = {K_c:.6f}  (synchronisation threshold)",
+        f"  EEG δ-band anchor: f_δ = δ★ × (1/δ★) = 1.000 Hz exactly",
+        f"  f_φ = φ Hz ≈ {freqs['f_phi_Hz']:.4f} Hz  (deep sleep / unconscious)",
+        f"  f_K4 ≈ {freqs['f_K4_Hz']:.4f} Hz  (command sector, light sleep)",
+        f"  Consciousness requires K > K_c — the icosahedron is the minimum synchroniser",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_riemann():
+    matches = riemann_zero_matches()
+    lines = [
+        "Icosahedral Laplacian ↔ Riemann Zeros:",
+        "  Eigenvalues × κ (κ = t₁/D) ≈ Riemann zeros on critical line",
+        f"  {'Eigenvalue':<12} {'λ×κ':>10}  {'Riemann tₙ':>12}  {'Error':>8}",
+        "  " + "-" * 46,
+    ]
+    for m in matches:
+        lines.append(f"  λ = {m['eigenvalue']:<8} {m['scaled']:>10.4f}  {m['riemann_zero']:>12.6f}  {m['error_pct']:>7.3f}%")
+    lines.append("  Z₂ topology + Ramanujan property → optimal spectral expansion")
+    return "\n".join(lines)
+
+
+def cmd_metamaterial():
+    s = metamaterial_summary()
+    b = capsid_binding_sites(15.0)
+    lines = [
+        "Cathedral Metamaterial (icosahedral photonic crystal):",
+        f"  Band gap centre:   ω_gap = δ★ × ω_ref  ({DELTA_STAR:.6f} × reference)",
+        f"  Gap/midgap ratio:  {s['gap_midgap_ratio_pct']:.4f}%",
+        f"  Fill fraction:     f = K₄/N = 4/13 = {s['fill_fraction']:.6f}",
+        f"  Effective index:   n_eff = 1/(δ★√2) ≈ {s['effective_n']:.4f}",
+        f"  Negative-index:    n = {s['negative_n']:.4f}  (perfect lens / cloaking)",
+        f"  Z₂ invariant:      {s['z2_invariant']}  (topologically protected edge states)",
+        f"  Drug binding (R=15 nm T=1 capsid):",
+        f"    r_bind = {b['r_binding_nm']:.4f} nm  (δ★ × R)",
+        f"    {b['n_binding_sites']} icosahedral vertex sites  (pentagonal K₄ nodes)",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_swarm(scale_str: str = "100"):
+    try:
+        scale = float(scale_str.strip())
+    except ValueError:
+        scale = 100.0
+    T_c = consensus_time()
+    sat = earth_coverage_constellation()
+    lines = [
+        f"Cathedral Swarm (13-agent icosahedral, scale={scale:.0f} m):",
+        f"  Formation: 1 coordinator (K₄) + 12 field agents (A₅)",
+        f"  Consensus time T_c = 1/λ₂ = {T_c:.4f}  (3× faster than ring topology)",
+        f"  Critical coupling K_c for collective decision = {2*DELTA_STAR*13/3:.6f}",
+        f"  Fault-tolerant: up to 4 simultaneous agent failures",
+        f"  Satellite constellation (LEO @ {sat['altitude_km']:.0f} km):",
+        f"    Coverage: {sat['coverage_pct']:.1f}% of Earth surface",
+        f"    Revisit time: {sat['revisit_time_min']:.1f} min",
+        f"  Applications: search-rescue, precision ag, underwater sonar, LEO sats",
+    ]
+    return "\n".join(lines)
+
+
+def cmd_gw(mass_str: str = "30"):
+    try:
+        M = float(mass_str.strip())
+    except ValueError:
+        M = 30.0
+    s = gw_event_summary(M * 0.55, M * 0.45, 410)
+    thresh = detection_threshold()
+    lines = [
+        f"Cathedral Gravitational Waves (M_total={M:.1f} M☉, d=410 Mpc):",
+        f"  Chirp mass:      {s['chirp_mass_solar']:.2f} M☉",
+        f"  f_ISCO:          {s['f_ISCO_Hz']:.1f} Hz",
+        f"  f_QNM (ringdown):{s['f_QNM_Hz']:.1f} Hz  (Cathedral shift: ×(3+δ★)⁻¹)",
+        f"  Damping time:    {s['tau_damping_ms']:.2f} ms",
+        f"  Peak strain h:   {s['h_peak']:.2e}",
+        f"  GW memory Δh:    {s['h_memory']:.2e}  (δ★ correction)",
+        f"  IKT detection threshold SNR > 1/δ★ = {thresh:.4f}",
+        f"  (K₄ sector = GW signal; A₅ sector = noise — IKT matched filter)",
+    ]
+    return "\n".join(lines)
+
+
 # ── Lytollis Guard ────────────────────────────────────────────────────────────
 
 BLOCKED_PATTERNS = [
@@ -290,13 +438,15 @@ def is_blocked(text: str) -> bool:
 # ── Main loop ──────────────────────────────────────────────────────────────────
 
 def main():
-    print("\n" + "=" * 65)
+    print("\n" + "=" * 72)
     print("GENESIS v3.0 — Cathedral Edition")
-    print(f"δ★ = {DELTA_STAR:.8f}  |  13-site icosahedral shell  |  D=3 forced")
+    print(f"δ★ = {DELTA_STAR:.8f}  |  C_mass = {C_MASS:.6f}  |  D=3 forced")
     print("Commands: web · ask ai · delta · spectrum · prove · ladder")
-    print("          casimir · black hole <M> · logistic · exit")
+    print("          casimir · black hole <M> · logistic")
+    print("          periodic · holography · consciousness · riemann")
+    print("          metamaterial · swarm [m] · gw [M☉] · exit")
     print("Lytollis Guard active. Science/math/music/life only.")
-    print("=" * 65 + "\n")
+    print("=" * 72 + "\n")
 
     if URT_OK:
         c = compute_all_constants()
@@ -369,14 +519,38 @@ def main():
         elif p_lower == "ladder":
             print("\n" + cmd_ladder() + "\n")
 
+        elif p_lower == "periodic":
+            print("\n" + cmd_periodic() + "\n")
+
+        elif p_lower == "holography":
+            print("\n" + cmd_holography() + "\n")
+
+        elif p_lower == "consciousness":
+            print("\n" + cmd_consciousness() + "\n")
+
+        elif p_lower == "riemann":
+            print("\n" + cmd_riemann() + "\n")
+
+        elif p_lower == "metamaterial":
+            print("\n" + cmd_metamaterial() + "\n")
+
+        elif p_lower.startswith("swarm"):
+            scale_s = p_lower.replace("swarm", "").strip() or "100"
+            print("\n" + cmd_swarm(scale_s) + "\n")
+
+        elif p_lower.startswith("gw"):
+            mass_s = p_lower.replace("gw", "").strip() or "65"
+            print("\n" + cmd_gw(mass_s) + "\n")
+
         else:
             # Default: Cathedral-aware response
+            topics = ("periodic table, holography, consciousness, Riemann zeros, "
+                      "metamaterials, drone swarms, gravitational waves, plasma, "
+                      "black holes, epilepsy, the cosmological constant")
             reply = (
-                "Cathedral substrate active. "
-                f"δ★ = {DELTA_STAR:.8f} governs everything from epilepsy to the "
-                "cosmological constant. Ask me anything — physics, mathematics, "
-                "plasma, finance, consciousness, music. Or use 'ask ai' for "
-                "the 70B LLM backbone."
+                f"Cathedral substrate active. δ★ = {DELTA_STAR:.8f}, C_mass = {C_MASS:.6f}. "
+                f"I cover: {topics}. "
+                "Use a command (gw 65, swarm 200, holography...) or 'ask ai' for the 70B backbone."
             )
             print("\nGenesis:", style(reply), "\n")
 

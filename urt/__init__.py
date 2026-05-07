@@ -33,6 +33,7 @@ from .metrics import (
 )
 from .shell_closure import (
     DELTA_STAR,
+    C_MASS,
     compute_all_constants,
     urt_evolve,
 )
@@ -230,6 +231,7 @@ __all__ = [
     "delta_metric",
     # core constant + shell
     "DELTA_STAR",
+    "C_MASS",
     "compute_all_constants",
     "urt_evolve",
     # control

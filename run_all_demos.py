@@ -138,28 +138,79 @@ def run_neural():
     demo_cathedral_net()
 
 
+def run_periodic():
+    section("Periodic Table — Madelung Rule from δ★")
+    from urt.periodic_table import print_madelung_table
+    print_madelung_table()
+
+
+def run_holography():
+    section("Holography — AdS/CFT: G_N=δ★², c≈467, RT Entropy")
+    from urt.holography import print_holography_report
+    print_holography_report()
+
+
+def run_consciousness():
+    section("Consciousness — Kuramoto on Icosahedral Graph")
+    from urt.consciousness import print_consciousness_report
+    print_consciousness_report()
+
+
+def run_prime():
+    section("Prime Spectral — Laplacian ↔ Riemann Zeros")
+    from urt.prime_spectral import print_spectral_report
+    print_spectral_report()
+
+
+def run_metamaterials():
+    section("Metamaterials — Photonic Crystal & Drug Binding")
+    from urt.metamaterials import print_metamaterial_report
+    print_metamaterial_report()
+
+
+def run_swarm():
+    section("Swarm Intelligence — 13-Agent Icosahedral Formation")
+    from urt.swarm_intelligence import print_swarm_report
+    print_swarm_report()
+
+
+def run_gw():
+    section("Gravitational Waves — IKT Detection & Ringdown")
+    from urt.gravitational_waves import print_gw_report
+    print_gw_report()
+
+
 # ── Main dispatch ─────────────────────────────────────────────────────────────
 
 DEMOS = {
-    "shell":       run_shell,
-    "cathedral":   run_cathedral,
-    "rg":          run_rg,
-    "qbls":        run_qbls,
-    "gravity":     run_gravity,
-    "casimir":     run_casimir,
-    "axion":       run_axion,
-    "nuclear":     run_nuclear,
-    "ns":          run_ns,
-    "qft":         run_qft,
+    "shell":        run_shell,
+    "cathedral":    run_cathedral,
+    "rg":           run_rg,
+    "qbls":         run_qbls,
+    "gravity":      run_gravity,
+    "casimir":      run_casimir,
+    "axion":        run_axion,
+    "nuclear":      run_nuclear,
+    "ns":           run_ns,
+    "qft":          run_qft,
     "quasicrystal": run_quasicrystal,
-    "prove":       run_prove,
-    "logistic":    run_logistic,
-    "neural":      run_neural,
+    "prove":        run_prove,
+    "logistic":     run_logistic,
+    "neural":       run_neural,
+    "periodic":     run_periodic,
+    "holography":   run_holography,
+    "consciousness": run_consciousness,
+    "prime":        run_prime,
+    "metamaterials": run_metamaterials,
+    "swarm":        run_swarm,
+    "gw":           run_gw,
 }
 
 # Fast default (excludes logistic which takes ~30s)
 FAST_DEMOS = ["shell", "cathedral", "rg", "qbls", "gravity", "casimir",
-              "axion", "nuclear", "ns", "qft", "quasicrystal", "neural"]
+              "axion", "nuclear", "ns", "qft", "quasicrystal", "neural",
+              "periodic", "holography", "consciousness", "prime",
+              "metamaterials", "swarm", "gw"]
 
 if __name__ == "__main__":
     args = sys.argv[1:]
