@@ -1220,8 +1220,23 @@ from .network_science_cathedral import (
     scale_free_networks, graph_properties, small_world,
     network_science_summary, print_network_science_report,
 )
+from .voting_theory_cathedral import (
+    N_CONDORCET_MIN, N_BORDA_CANDIDATES, N_PARTY_COALITIONS,
+    N_LEGISLATURE_SEATS, MAJORITY_SEATS, N_MAJORITY_NEEDED,
+    N_SOCIAL_CHOICE_CRITERIA, N_GAME_STRATEGIES, N_PREFERENCE_ORDERS,
+    arrow_theorem, condorcet_voting,
+    voting_theory_summary, print_voting_theory_report,
+)
+from .developmental_biology_cathedral import (
+    N_BODY_AXES, N_GERM_LAYERS, N_HOX_CLUSTERS, N_CELL_CYCLE_PHASES,
+    N_DIGITS_NORMAL, N_TURING_COMPONENTS, N_HOMEODOMAIN_HELICES,
+    N_SOMITE_REGIONS, N_DEV_STAGES, N_POTENCY_LEVELS,
+    N_LIMB_SIGNALING_ZONES, N_APOPTOSIS_PATHWAYS,
+    body_plan, gene_regulation, cell_biology,
+    developmental_biology_summary, print_developmental_biology_report,
+)
 
-__version__ = "2.9.8"
+__version__ = "2.9.9"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
