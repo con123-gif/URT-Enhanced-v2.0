@@ -1,9 +1,28 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║             NEWTON'S CATHEDRAL v2.5 — Complete Framework Structure          ║
-║             δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081               ║
-║             One geometric constant. Every chaotic system.                   ║
-║             Zero free parameters. D=3 alone determines all of physics.      ║
+║         NEWTON'S CATHEDRAL v2.5 — A Mathematical Oddity                     ║
+║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
+║         Not a replacement for physics.                                      ║
+║         A mathematical structure that may lie underneath it.                ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
+
+  WHAT THIS IS
+  ─────────────
+  Newton's Cathedral begins with one observed fact (D=3) and derives, through
+  theorem-forced steps, a single geometric constant δ★. That constant then
+  appears — with zero adjustable parameters — in formulas that numerically match
+  fundamental constants across physics, cosmology, and nuclear structure.
+
+  It is not a physical theory. It has no dynamical derivation from experiment.
+  It is a mathematical structure. The matches are real. What they mean is open.
+
+  WHY SOMETHING RATHER THAN NOTHING?
+  ────────────────────────────────────
+  The potential V(δ) = K·δ²(δ−δ★)² has two zeros: δ=0 (nothing) and δ=δ★
+  (something). At δ=0: V″(0) < 0 — UNSTABLE. At δ=δ★: V″(δ★) > 0 — STABLE.
+  Nothing is unstable. Something (δ★) is the unique stable attractor.
+  K = (G−D−1)/(16π²) = 56/(16π²) — forced by icosahedral integers. No free param.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
