@@ -1005,7 +1005,35 @@ from .solid_state_cathedral import (
     magnetic_models, solid_state_summary, print_solid_state_report,
 )
 
-__version__ = "2.9.3"
+from .celestial_mechanics_cathedral import (
+    N_KEPLER_LAWS, KEPLER_THIRD_POWER, LAGRANGE_POINTS, STABILITY_LAGRANGE,
+    N_ORBITAL_ELEMENTS, N_BODY_PROBLEM_DOF, HOHMANN_BURNS, N_TROJAN_GROUPS,
+    kepler_laws, orbital_mechanics, celestial_summary, print_celestial_report,
+)
+
+from .epidemiology_cathedral import (
+    N_SIR_COMPARTMENTS, N_SEIR_COMPARTMENTS, HERD_IMMUNITY_THRESHOLD,
+    BASIC_REPRODUCTION_NUMBER_ICOS, AGE_GROUPS_SIMPLE,
+    sir_model, seir_model, herd_immunity,
+    epidemiology_summary, print_epidemiology_report,
+)
+
+from .crystallography_2d_cathedral import (
+    N_BRAVAIS_2D, N_POINT_GROUPS_2D, N_WALLPAPER_GROUPS,
+    HEXAGONAL_COORD, SQUARE_COORD, HONEYCOMB_COORD,
+    GRAPHENE_SUBLATTICES, PENROSE_FOLD, PHI_IN_PENROSE,
+    bravais_2d, point_groups_2d, lattice_structures_2d,
+    penrose_tiling, crystallography_2d_summary, print_crystallography_2d_report,
+)
+
+from .spectroscopy_cathedral import (
+    N_HYDROGEN_SERIES, N_SODIUM_D_LINES, ZEEMAN_NORMAL_LINES,
+    ZEEMAN_COMPONENTS_FOR_L1, SELECTION_RULE_DM, N_STOKES_PARAMETERS,
+    zeeman_effect, hydrogen_series, stokes_parameters,
+    spectroscopy_summary, print_spectroscopy_report,
+)
+
+__version__ = "2.9.4"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
