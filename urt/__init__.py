@@ -1299,8 +1299,18 @@ from .inflation_cathedral import (
     inflation_derivation, cosmological_constant,
     inflation_summary, print_inflation_report,
 )
+from .icosahedral_nn import (
+    N_OUTER_EDGES, N_TOTAL_EDGES, N_CENTER_EDGES,
+    OUTER_DEGREE, CENTER_DEGREE, KAPPA, KAPPA_LT_1,
+    N_EDGES_EQ_E, DEGREE_EQ_Q, K_KURAMOTO_CRIT,
+    ICOS_SPECTRAL_GAP, SPECTRAL_GAP_POSITIVE,
+    build_icosahedral_adjacency, icosahedral_laplacian,
+    IcosahedralMessagePassing, RecursiveURTCell,
+    URTSparseAttention, IcosahedralRNN, IcosahedralRecursiveNet,
+    irn_forward, irn_summary, print_irn_report,
+)
 
-__version__ = "2.9.11"
+__version__ = "2.9.12"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
