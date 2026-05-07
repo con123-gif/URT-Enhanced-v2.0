@@ -1075,7 +1075,59 @@ from .spectroscopy_cathedral import (
     spectroscopy_summary, print_spectroscopy_report,
 )
 
-__version__ = "2.9.4"
+from .psychology_cathedral import (
+    N_PERSONALITY_FACTORS_OCEAN, N_MASLOW_NEEDS,
+    N_FREUD_AGENCIES, N_ATTACHMENT_STYLES,
+    N_PIAGET_STAGES, N_ERIKSON_STAGES,
+    N_EMOTIONS_BASIC_EKMAN, N_KOHLBERG_STAGES,
+    N_STM_CHUNKS_MILLER, WEBER_FRACTION_TYPICAL,
+    REACTION_TIME_MS,
+    personality_traits, developmental_stages,
+    social_psychology, cognitive_psychology,
+    psychology_summary, print_psychology_report,
+)
+
+from .architecture_cathedral import (
+    N_PLATONIC_SOLIDS, N_ARCHIMEDEAN_SOLIDS, N_CATALAN_SOLIDS,
+    N_KEPLER_POINSOT, N_PRIMARY_DIRECTIONS, N_COMPASS_POINTS_8,
+    N_COMPASS_POINTS_16, N_METATRON_CIRCLES, N_SEED_OF_LIFE_CIRCLES,
+    N_DODECAHEDRON_FACES, N_ICOSAHEDRON_FACES,
+    N_ICOSAHEDRON_VERTICES, N_ICOSAHEDRON_EDGES,
+    GOLDEN_SECTION, GOLDEN_ANGLE_DEG,
+    SACRED_ANGLE_PHI_DEG, SACRED_ANGLE_DELTA_DEG,
+    PENROSE_ACUTE_ANGLE_DEG, PENTAGON_INTERIOR_ANGLE_DEG,
+    sacred_geometry, golden_proportions, compass_rose,
+    architecture_summary, print_architecture_report,
+)
+
+from .climate_science_cathedral import (
+    N_MILANKOVITCH_CYCLES, MILANKOVITCH_PERIODS_KY, MILANKOVITCH_NAMES,
+    N_ATMOSPHERE_LAYERS, ATMOSPHERE_LAYERS,
+    N_EARTH_SPHERES, EARTH_SPHERES,
+    N_WIND_BELTS_PER_HEMISPHERE, N_WIND_BELTS_TOTAL,
+    N_CIRCULATION_CELLS_PER_HEMISPHERE, N_CIRCULATION_CELLS_TOTAL,
+    CIRCULATION_CELL_NAMES, WIND_BELT_NAMES,
+    N_GREENHOUSE_GASES_MAJOR,
+    INSOLATION_POWER_LAW, ECS_IPCC_BEST_C,
+    CLIMATE_SENSITIVITY_CATHEDRAL,
+    milankovitch_cycles, atmosphere_structure, circulation_patterns,
+    climate_science_summary, print_climate_science_report,
+)
+
+from .materials_cathedral import (
+    N_CRYSTAL_SYSTEMS, N_BRAVAIS_LATTICES as N_BRAVAIS_MATERIALS,
+    COORDINATION_ICOS, COORDINATION_TETRAHEDRAL, COORDINATION_OCTAHEDRAL,
+    COORDINATION_BCC,
+    N_SLIP_SYSTEMS_FCC, N_SLIP_PLANES_FCC, N_SLIP_DIRECTIONS_PER_PLANE,
+    N_ELASTIC_CONSTANTS_ISOTROPIC, N_ELASTIC_CONSTANTS_CUBIC,
+    N_ELASTIC_CONSTANTS_HEXAGONAL, N_ELASTIC_CONSTANTS_GENERAL,
+    N_FRACTURE_MODES, N_DEFECT_TYPES, N_DIFFUSION_MECHANISMS,
+    CATHEDRAL_CRITICAL_STRAIN,
+    crystal_systems, coordination_geometry, mechanical_properties,
+    materials_summary, print_materials_report,
+)
+
+__version__ = "2.9.5"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
