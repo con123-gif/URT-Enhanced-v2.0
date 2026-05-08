@@ -109,6 +109,22 @@ IDENTITY_EULER_CHI: bool = (EULER_CHI == D - 1)
 CATHEDRAL_CHECKSUM = D + N + V + E + F + q + G   # = 143
 IDENTITY_CHECKSUM: bool = (CATHEDRAL_CHECKSUM == N*(N-2))
 
+# 22.  N = (D^D − 1)/(D−1)  — N is the D-digit repunit in base D
+#      Equivalently N = 1 + D + D² (geometric series, 3 terms = D terms)
+N_REPUNIT = (D**D - 1) // (D - 1)              # = (27-1)/2 = 13
+N_GEO_SUM = sum(D**i for i in range(D))         # = 1+3+9 = 13
+IDENTITY_N_REPUNIT: bool = (N == N_REPUNIT == N_GEO_SUM)
+
+# 23.  G = D! × 2q  (another formula for the group order)
+IDENTITY_G_FACTORIAL_Q: bool = (G == factorial(D) * 2 * q)
+
+# 24.  dim(SO(D+1)) = D! = V/2  (SO(4) has dimension 6 = 3! = 12/2)
+DIM_SO_D1 = (D+1)*D//2                          # = 6
+IDENTITY_SO_D1: bool = (DIM_SO_D1 == factorial(D) == V//2)
+
+# 25.  (q+D)/(q−D) = D+1  (simple ratio of face-valency sums = next dimension)
+IDENTITY_QD_RATIO: bool = ((q+D) // (q-D) == D+1 and (q+D) % (q-D) == 0)
+
 # ── Tier 2: Exceptional identities (unique to D=3) ────────────────────────────
 
 # 22.  D! = V/2  (3! = 6 = 12/2)
@@ -148,6 +164,28 @@ D_LEECH_LATTICE   = 2 * V    # = 24
 IDENTITY_STRINGS: bool = (D_BOSONIC_STRING == 26 and
                            D_SUPER_STRING   == 10 and
                            D_LEECH_LATTICE  == 24)
+
+# 35.  p_D = q  — the D-th prime equals the face valency  (p_3 = 5 = q)
+# 36.  p_{D!} = N — the (D!)-th prime equals the shell count  (p_6 = 13 = N)
+def _nth_prime(n: int) -> int:
+    """Return the nth prime (1-indexed: p_1=2, p_2=3, ...)."""
+    primes, k = [], 2
+    while len(primes) < n:
+        if all(k % p for p in primes):
+            primes.append(k)
+        k += 1
+    return primes[-1]
+
+PRIME_D      = _nth_prime(D)             # p_3 = 5 = q
+PRIME_D_FACT = _nth_prime(factorial(D))  # p_6 = 13 = N
+IDENTITY_PRIME_D:     bool = (PRIME_D == q)
+IDENTITY_PRIME_D_FACT: bool = (PRIME_D_FACT == N)
+
+# 37.  ord_N(10) = D!  — decimal period of 1/N equals D! (period of 1/13 is 6 = 3!)
+ORD_N_10 = 1
+while pow(10, ORD_N_10, N) != 1:
+    ORD_N_10 += 1
+IDENTITY_DECIMAL_PERIOD: bool = (ORD_N_10 == factorial(D))
 
 # ── Tier 3: Physical bridges (|error| < 1%) ───────────────────────────────────
 # These express observed physics in terms of Cathedral integers alone.
@@ -209,6 +247,10 @@ ALL_TIER1_IDENTITIES: list = [
     IDENTITY_NQ,
     IDENTITY_EULER_CHI,
     IDENTITY_CHECKSUM,
+    IDENTITY_N_REPUNIT,
+    IDENTITY_G_FACTORIAL_Q,
+    IDENTITY_SO_D1,
+    IDENTITY_QD_RATIO,
 ]
 
 ALL_TIER2_IDENTITIES: list = [
@@ -220,6 +262,9 @@ ALL_TIER2_IDENTITIES: list = [
     IDENTITY_E8_DIM,
     IDENTITY_GV_FACTORIAL,
     IDENTITY_STRINGS,
+    IDENTITY_PRIME_D,
+    IDENTITY_PRIME_D_FACT,
+    IDENTITY_DECIMAL_PERIOD,
 ]
 
 ALL_IDENTITIES_EXACT: bool = all(ALL_TIER1_IDENTITIES) and all(ALL_TIER2_IDENTITIES)
@@ -274,6 +319,10 @@ def algebraic_summary() -> dict:
         "gv_product":             GV_PRODUCT,
         "d_bosonic_string":       D_BOSONIC_STRING,
         "d_super_string":         D_SUPER_STRING,
+        "prime_d":                PRIME_D,
+        "prime_d_fact":           PRIME_D_FACT,
+        "ord_n_10":               ORD_N_10,
+        "n_repunit":              N_REPUNIT,
         # tier-3 errors
         "omega_m_err_pct":        OMEGA_M_INT_ERR_PCT,
         "sin2_tw_err_pct":        SIN2_TW_INT_ERR_PCT,
@@ -295,23 +344,26 @@ def print_algebraic_report() -> None:
     print("Cathedral integers:")
     print(f"  D={D}  N={N}  V={V}  E={E}  F={F}  q={q}  G={G}  γ=1/{GAMMA_INV}")
     print()
-    print("── TIER 1: Structural (21 exact integer identities) ──────────")
+    print("── TIER 1: Structural (25 exact integer identities) ──────────")
     print(f"  q = 2D−1              {q} = 2×{D}−1 = {2*D-1}  ✓")
-    print(f"  N = D²+D+1            {N} = {D**2}+{D}+1 = {D**2+D+1}  ✓")
+    print(f"  N = D²+D+1            {N} = {D**2}+{D}+1 = {D**2+D+1}  ✓  (projective plane |PG(2,F_D)|)")
     print(f"  N = D²+(D−1)²         {N} = {D**2}+{(D-1)**2}  ✓   (sum of consec. squares)")
+    print(f"  N = (D^D−1)/(D−1) = 1+D+D²  {N} = {N_REPUNIT}  ✓   (D-digit repunit in base D!)")
     print(f"  N²−V² = q²            {N**2}−{V**2} = {q**2}  ✓   (Pythagorean triple 5,12,13!)")
     print(f"  V = 4D = D(D+1) = (q²−1)/2 = {V}  ✓  (three formulas, unique D=3)")
     print(f"  E = 2(2^(D+1)−1)      {E} = 2×15  ✓")
-    print(f"  G = 2E = DF = qV = 20D = {G}  ✓  (four formulas)")
+    print(f"  G = 2E = DF = qV = 20D = D!×2q = {G}  ✓  (five formulas)")
     print(f"  F = 2^(D+1)+D+1       {F} = 16+3+1  ✓")
     print(f"  F+V = 2^q             {F}+{V} = {F+V} = 2^{q} = {2**q}  ✓")
     print(f"  G−F = 2^D·q           {G}−{F} = {G-F} = 8×5  ✓")
     print(f"  1/γ = Nq + 2^(D+1)   81 = {N*q} + 16  ✓")
     print(f"  Nq = D^(D+1)−2^(D+1) {N*q} = 81−16  ✓")
     print(f"  χ(icosahedron) = V−E+F = {V-E+F} = D−1  ✓")
+    print(f"  dim(SO(D+1)) = D! = V/2  {DIM_SO_D1} = {D_FACTORIAL} = {V//2}  ✓")
+    print(f"  (q+D)/(q−D) = D+1     {q+D}/{q-D} = {D+1}  ✓")
     print(f"  Cathedral checksum = D+N+…+G = {CATHEDRAL_CHECKSUM} = N(N−2) = {N*(N-2)}  ✓")
     print()
-    print("── TIER 2: Exceptional (unique to D=3) ──────────────────────")
+    print("── TIER 2: Exceptional (11 identities, unique to D=3) ────────")
     print(f"  D! = V/2              {D}! = {D_FACTORIAL} = {V}÷2  ✓")
     print(f"  D² = 2^D + 1          {D_SQUARED} = 8+1  ✓   (ONLY for D=3)")
     print(f"  dim(SO(D)) = D        {DIM_SO_D} = {D}  ✓   (Lie algebra self-reference!)")
@@ -319,6 +371,9 @@ def print_algebraic_report() -> None:
     print(f"  2^D · E = 240 (E₈ roots)  8×30 = {E8_ROOTS}  ✓")
     print(f"  2^D · (2^q−1) = 248 (dim E₈)  8×31 = {E8_DIM}  ✓")
     print(f"  String dims: 2N={D_BOSONIC_STRING}(bosonic) 2q={D_SUPER_STRING}(super) 2V={D_LEECH_LATTICE}(Leech)  ✓")
+    print(f"  p_D = q               p_{D} = {PRIME_D} = q = {q}  ✓   (D-th prime = face valency!)")
+    print(f"  p_{{D!}} = N            p_{factorial(D)} = {PRIME_D_FACT} = N = {N}  ✓   (D!-th prime = shell sites!)")
+    print(f"  ord_N(10) = D!        period of 1/{N} = {ORD_N_10} = {D}! = {factorial(D)}  ✓")
     print()
     print("── TIER 3: Physical bridges (< 2% error) ─────────────────────")
     print(f"  δ★/D = Ω_b/Ω_m       {OMEGA_B_FRAC_INT_APPROX:.5f} vs obs {OMEGA_B_FRAC_OBS}  ({OMEGA_B_INT_ERR_PCT:.2f}%)")

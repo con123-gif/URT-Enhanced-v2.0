@@ -1383,12 +1383,22 @@ from .algebraic_heart import (
     D_BOSONIC_STRING, D_SUPER_STRING, D_LEECH_LATTICE,
     ALL_TIER1_IDENTITIES, ALL_TIER2_IDENTITIES, ALL_IDENTITIES_EXACT,
     OMEGA_B_FRAC_INT_APPROX, OMEGA_M_INT, SIN2_TW_INT, ETA_B_INT,
-    LAMBDA_EXP_INT,
+    LAMBDA_EXP_INT, N_REPUNIT, PRIME_D, PRIME_D_FACT, ORD_N_10 as DECIMAL_PERIOD_N,
     D_UNIQUENESS,
     algebraic_summary, print_algebraic_report,
 )
+from .cathedral_repunit import (
+    repunit, REPUNIT_TOWER, REPUNIT_N, REPUNIT_N_PLUS_1,
+    POWER_TOWER, D_TO_D, D_TO_D1, D1_TO_D,
+    GAMMA_INV_DECIMAL, N_DECIMAL,
+    PG2_POINTS, PG2_LINES, PG2_PTS_PER_LINE, PG2_INCIDENCES,
+    PRIMES_OF_INTEGERS, PRIME_SEQUENCE_FROM_D, PRIME_GAPS_FROM_D,
+    REPUNIT_PRIMALITY, REPUNIT_N_IS_PRIME,
+    RAMANUJAN_SUM_EXACT,
+    repunit_summary, print_repunit_report,
+)
 
-__version__ = "2.9.18"
+__version__ = "2.9.19"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics

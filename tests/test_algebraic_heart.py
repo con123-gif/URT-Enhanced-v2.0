@@ -4,7 +4,7 @@ from math import factorial, pi
 
 from urt.algebraic_heart import (
     D, N, V, E, F, q, G, GAMMA, GAMMA_INV,
-    # booleans
+    # tier-1 booleans
     IDENTITY_Q_FROM_D, IDENTITY_N_PROJECTIVE, IDENTITY_N_CONSECUTIVE_SQ,
     IDENTITY_PYTHAGOREAN, PYTHAGOREAN_TRIPLE,
     IDENTITY_V_4D, IDENTITY_V_QSQ, IDENTITY_V_DD1, IDENTITY_V_THREE_FORMS,
@@ -15,6 +15,11 @@ from urt.algebraic_heart import (
     IDENTITY_GAMMA_INV, IDENTITY_NQ, NQ_DIFF,
     IDENTITY_EULER_CHI, EULER_CHI,
     IDENTITY_CHECKSUM, CATHEDRAL_CHECKSUM,
+    IDENTITY_N_REPUNIT, N_REPUNIT, N_GEO_SUM,
+    IDENTITY_G_FACTORIAL_Q,
+    IDENTITY_SO_D1, DIM_SO_D1,
+    IDENTITY_QD_RATIO,
+    # tier-2 booleans
     IDENTITY_D_FACTORIAL_HALF_V, D_FACTORIAL,
     IDENTITY_D_SQ, D_SQUARED, TWO_TO_D,
     IDENTITY_SO_D_SELF, DIM_SO_D,
@@ -24,6 +29,9 @@ from urt.algebraic_heart import (
     IDENTITY_GV_FACTORIAL, GV_PRODUCT,
     IDENTITY_STRINGS,
     D_BOSONIC_STRING, D_SUPER_STRING, D_LEECH_LATTICE,
+    IDENTITY_PRIME_D, PRIME_D,
+    IDENTITY_PRIME_D_FACT, PRIME_D_FACT,
+    IDENTITY_DECIMAL_PERIOD, ORD_N_10,
     ALL_TIER1_IDENTITIES, ALL_TIER2_IDENTITIES, ALL_IDENTITIES_EXACT,
     OMEGA_B_FRAC_INT_APPROX, OMEGA_B_FRAC_OBS, OMEGA_B_INT_ERR_PCT,
     OMEGA_M_INT, OMEGA_M_OBS, OMEGA_M_INT_ERR_PCT,
@@ -156,10 +164,34 @@ def test_cathedral_checksum():
     assert CATHEDRAL_CHECKSUM == 143
     assert CATHEDRAL_CHECKSUM == N * (N - 2)
 
+def test_n_repunit():
+    """N = (D^D-1)/(D-1) = D-digit repunit in base D."""
+    assert IDENTITY_N_REPUNIT
+    assert N_REPUNIT == 13
+    assert N_GEO_SUM == 13
+    assert N == 1 + D + D**2
+
+def test_g_factorial_q():
+    """G = D! × 2q."""
+    assert IDENTITY_G_FACTORIAL_Q
+    assert G == factorial(D) * 2 * q
+
+def test_so_d1():
+    """dim(SO(D+1)) = D! = V/2."""
+    assert IDENTITY_SO_D1
+    assert DIM_SO_D1 == 6
+    assert DIM_SO_D1 == factorial(D) == V // 2
+
+def test_qd_ratio():
+    """(q+D)/(q-D) = D+1 exactly."""
+    assert IDENTITY_QD_RATIO
+    assert (q+D) % (q-D) == 0
+    assert (q+D) // (q-D) == D+1
+
 def test_all_tier1():
-    """All 21 tier-1 identities pass."""
+    """All 25 tier-1 identities pass."""
     assert all(ALL_TIER1_IDENTITIES)
-    assert len(ALL_TIER1_IDENTITIES) == 21
+    assert len(ALL_TIER1_IDENTITIES) == 25
 
 
 # ── Tier-2: exceptional (unique to D=3) ──────────────────────────────────────
@@ -213,10 +245,28 @@ def test_string_critical_dims():
     assert D_SUPER_STRING   == 10
     assert D_LEECH_LATTICE  == 24
 
+def test_prime_d_is_q():
+    """The D-th prime equals q (p_3 = 5 = q)."""
+    assert IDENTITY_PRIME_D
+    assert PRIME_D == 5
+    assert PRIME_D == q
+
+def test_prime_d_fact_is_n():
+    """The (D!)-th prime equals N (p_6 = 13 = N)."""
+    assert IDENTITY_PRIME_D_FACT
+    assert PRIME_D_FACT == 13
+    assert PRIME_D_FACT == N
+
+def test_decimal_period():
+    """The decimal period of 1/N equals D! (period of 1/13 is 6 = 3!)."""
+    assert IDENTITY_DECIMAL_PERIOD
+    assert ORD_N_10 == 6
+    assert ORD_N_10 == factorial(D)
+
 def test_all_tier2():
-    """All 8 tier-2 identities pass."""
+    """All 11 tier-2 identities pass."""
     assert all(ALL_TIER2_IDENTITIES)
-    assert len(ALL_TIER2_IDENTITIES) == 8
+    assert len(ALL_TIER2_IDENTITIES) == 11
 
 
 # ── Master truth ──────────────────────────────────────────────────────────────
