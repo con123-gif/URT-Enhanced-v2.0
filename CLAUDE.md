@@ -19,20 +19,68 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 - `urt/shell_closure.py` — δ★ derivation, 13-site icosahedral shell, `compute_all_constants()`
 - `urt/cathedral_v8.py` — Full Standard Model: α, masses, Higgs, CKM
 - `urt/cathedral_v9.py` — Anchor-free: all scales from ρ_Λ alone
+- `urt/iron_proof.py` — Bulletproof uniqueness chain D=3→A₅→N=13→γ→δ★ (v2.4)
 
-### Physics Modules
+### Physics — Forces & Fields
 | File | What it computes |
 |------|-----------------|
+| `urt/cathedral_lagrangian.py` | L=L_grav+L_EW+L_QCD+L_H3+L_δ; 60 Ward IDs; β(δ★)=0 |
+| `urt/electroweak.py` | W/Z/Higgs from K4 k=2; sin²θ_W=(D/N)(1+γ/2π)=0.23122 |
+| `urt/cathedral_gut.py` | α_GUT=δ★²=G_N; μ_GUT≈3.73×10¹⁶ GeV; τ_proton≈10⁴² yr |
 | `urt/rg_flow.py` | RG running δ(μ), crossover μ_c ≈ 197 GeV |
-| `urt/qbls.py` | Quantum Bounded Ladder of Scales (δ_rung ≈ 61.32) |
+| `urt/force_structure.py` | K4⊕H3 decomposition, effective Lagrangian |
+| `urt/muon_g2.py` | a_μ=(g−2)/2: Schwinger α/2π, EW via sin²θ_W=0.23122 |
 | `urt/qft_cathedral.py` | Cathedral propagator, Mexican-hat potential, Higgs mass |
+
+### Physics — Cosmology & Gravity
+| File | What it computes |
+|------|-----------------|
+| `urt/cosmology_cathedral.py` | CMB: n_s=1−2/57, Ω_m=(4/13)(1+2γ), σ₈, Λ/M_Pl⁴ |
+| `urt/inflation_cathedral.py` | r=12/57²≈0.0037 FALSIFIABLE; N_e=G−D=57 e-folds |
+| `urt/gravity_cathedral.py` | G_N=δ★², BH thermodynamics, K4 force hierarchy, area quantum |
+| `urt/holography.py` | AdS/CFT: R_AdS=1/δ★; RT entropy; c≈467 |
+| `urt/vacuum_instability.py` | V(δ)=Kδ²(δ−δ★)², δ=0 unstable → why something not nothing |
+| `urt/quantum_cosmo_bridge.py` | D=3 solves CC (122 orders!!) and η_B in one framework |
+
+### Physics — Particles & Fields
+| File | What it computes |
+|------|-----------------|
+| `urt/dark_matter.py` | Axion (60.7 μeV), sterile ν (143 keV), WIMP (13.5 GeV) from H3 |
+| `urt/baryon_asymmetry.py` | η_B=(q−D)·γ^q=5.74×10⁻¹⁰; leptogenesis δ_CP=197° |
+| `urt/ckm_pmns.py` | Full CKM (λ_C, A, ρ̄, η̄) + PMNS (all angles + δ_CP=197°) |
+| `urt/neutrinos.py` | PMNS from 13-shell, δ_CP=197°, Σmν≈60 meV |
 | `urt/nuclear_magic.py` | Magic numbers {2,8,20,28,50,82,126} from δ★ |
-| `urt/axion_cathedral.py` | Axion mass, Peccei-Quinn scale, detection band |
-| `urt/quasicrystal.py` | IKT forward/inverse, K₄/A₅ sector split |
-| `urt/navier_stokes.py` | Kolmogorov cascade, intermittency exponents |
-| `urt/gravity_deficit.py` | Angular deficit, BH entropy, holonomy |
-| `urt/arf_closure.py` | ARF fixed point, lepton/proton mass ratios |
-| `urt/logistic_verification.py` | δ★ on stable 6-cycle of logistic map |
+| `urt/topological_qc.py` | Fibonacci anyons d=φ; A₅=60; QEC threshold γ=1/81 |
+| `urt/string_landscape.py` | D_bos=2N=26; D_sup=2q=10; E₈ roots=4G=240; Moonshine |
+
+### ARF Cathedral — Deepest Layer (v2.9.36)
+| File | What it computes |
+|------|-----------------|
+| `urt/arf_cathedral.py` | N²−E−(D−1)=137 EXACT; (D+1)×D^D×(N+D+1)=1836 EXACT; 33 IDs |
+| `urt/arf_closure.py` | ARF fixed point equations; lepton/proton mass ratios |
+| `urt/alpha_exact.py` | α exact from δ★; fine structure closes on itself |
+
+### Pure Mathematics — Core
+| File | What it computes |
+|------|-----------------|
+| `urt/algebraic_heart.py` | 29 pure identities; Pythagorean (q,V,N)=(5,12,13)!!! |
+| `urt/spectrum_cathedral.py` | G₁₃ Laplacian {0,3,5,7,9,13} ALL Cathedral integers!!! |
+| `urt/moonshine_cathedral.py` | c=24=2V; 196884=196883+1; N_sporadic=2N=26 |
+| `urt/exceptional_lie.py` | All 5 exceptional Lie dims from Cathedral; T_V=dim(E₆) |
+| `urt/leech_golay_cathedral.py` | Leech dim=2V=24; Golay [2N,V,D^D-3]; Niemeier=2V=24 |
+
+### Pure Mathematics — v2.9.35–v2.9.36 Wave
+| File | What it computes |
+|------|-----------------|
+| `urt/arf_cathedral.py` | 1/α=137, mp/me=1836, γ-ladder, Weinberg, n_s — all EXACT |
+| `urt/platonic_solids_cathedral.py` | ΣV=ΣF=2q²=50; ΣE=D×E=90; N_Platonic=q; all χ=D−1 |
+| `urt/euler_totient_cathedral.py` | φ(N)=V=12; σ(V)=28 PERFECT; d(G)=V=12; J₂(N)=168 |
+| `urt/fibonacci_lucas_cathedral.py` | F_q=q SELF-REF; F_V=V²=144 MIRACLE; π(q)=F; F₇=N |
+| `urt/golay_steiner_cathedral.py` | [2V,V,2^D] binary; [V,D!,D!]₃; S(q,D!,V) Steiner |
+| `urt/normed_division_algebras_cathedral.py` | D+1=4 NDA; D imaginary units in H (self-ref!) |
+| `urt/continued_fractions_cathedral.py` | CF(√N) period=q=5 MIRACLE; CF(√G) a₀=D!+1 |
+| `urt/exceptional_lie_cathedral.py` | McKay E₈↔icosahedral; sum ranks=D^D=27; #except=q=5 |
+| `urt/partition_function_cathedral.py` | p(D)=D SELF-REF; Ramanujan congs mod q and D!+1 |
 
 ### Application Modules (v2.1)
 | File | Domain |
@@ -266,10 +314,6 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 - `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.36)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
-## Development Branch
-
-Active development: `claude/13-shell-closure-framework-dXmJi`
-
 ## Running Tests
 
 ```bash
@@ -313,34 +357,60 @@ python -m pytest tests/ -q -k arf_cathedral    # ARF Cathedral (55 tests)
 ## Key Numerical Values
 
 ```
-δ★          = 0.14751081...   (icosahedral critical point)
-1/δ★        = 6.7791...       (detection/SNR threshold)
-δ★²         = G_N             (Cathedral Newton constant, Planck units)
-1/δ★        = R_AdS           (AdS curvature radius)
-3/(2δ★³)    ≈ 467             (central charge c)
-δ★√2        ≈ 0.2086          (1/n_eff, metamaterial refractive index)
-λ₂          = 3 = D           (icosahedral spectral gap = spatial dimension!)
-K_c         ≈ 1.278           (Kuramoto critical coupling)
-ΔA          = 8π·δ★³ ≈ 0.0807 (area quantum, Bekenstein-Mukhanov)
-sin²θ_W     = (D/N)(1+γ/2π) ≈ 0.23122 (Weinberg angle, exact PDG)
-δ_CP (PMNS) = (D+1)F+(N-D-1)N = 197°  (exact PDG)
-n_s         = 1 − 2/(|H₃|−D) = 1−2/57 ≈ 0.9649 (exact Planck 2018)
-Ω_m         = (4/13)(1+2γ) ≈ 0.3153   (matter density, z=-0.001 vs Planck 2018)
-η_B         = (q−D)·γ^q = 2·(1/81)^5 ≈ 5.74×10⁻¹⁰  (baryon miracle, 6.3% error)
-α_GUT       = δ★² = G_N            (GUT coupling = Newton constant!)
-μ_GUT       ≈ 3.73×10^16 GeV        (GUT scale from δ★ + RG running)
-m_axion     ≈ 60.7 μeV              (Cathedral axion, ADMX/ABRA target)
-m_sterile   ≈ 143 keV               (sterile ν DM, X-ray at 71.5 keV)
-m_WIMP      = δ★·m_Z ≈ 13.45 GeV   (WIMP at LHC threshold)
-a_μ^(1)     = α/2π ≈ 1.1614e-3     (Schwinger; Cathedral α fixes this exactly)
-d_τ         = φ = 1.6180339887...   (Fibonacci anyon dim = golden ratio in δ★)
-p_th(QEC)   = γ = 1/81 ≈ 1.23%     (icosahedral QEC threshold = Cathedral γ)
-D_bosonic   = 2N = 26               (bosonic string critical dim from N=13!)
-D_super     = 2q = 10               (superstring critical dim from q=5!)
-D_Leech     = 2V = 24               (Leech lattice dim from V=12!)
-E₈_roots    = 4G = 240              (E₈ root count from G=|A₅|=60!)
-λ₂(Lapl)    = 3 = D                 (icosahedral spectral gap = spatial dim)
-MSS_bound   = 1/(4δ★²M)             (BH scrambling rate = Cathedral saturated)
+── GEOMETRIC FOUNDATION ─────────────────────────────────────────────────────
+D=3, N=13, V=12, E=30, F=20, q=5, G=60   (Cathedral integers, all from D=3)
+γ           = D^{−(D+1)} = 1/81           (self-referential: 3^{−4} = 1/81)
+δ★          = 0.14751081...               (icosahedral critical point)
+1/δ★        = 6.7791...                   (detection/SNR threshold)
+φ           = (1+√5)/2 = 1.6180339887...  (golden ratio in δ★ formula)
+
+── ARF CATHEDRAL — EXACT INTEGERS (v2.9.36) ────────────────────────────────
+1/α_bare    = N²−E−(D−1) = 169−30−2 = 137  (EXACT fine structure constant!)
+mp/me       = (D+1)×D^D×(N+D+1) = 4×27×17 = 1836  (EXACT proton mass ratio!)
+sin²θ_W     = (D/N)×(1+γ/2π) = 0.23122    (Weinberg angle, PDG match)
+n_s         = 1 − 2/(G−D) = 1−2/57 ≈ 0.9649  (Planck 2018 EXACT)
+N_e_efolds  = G − D = 60 − 3 = 57         (inflation e-folds)
+γ-ladder    = k∈{D, q, D², (D+1)^D, −(D!+1)} = {3,5,9,64,−7}  (all Cathedral!)
+Λ/M_Pl⁴    = (D+1)·γ^{(D+1)^D} ≈ 2.88×10⁻¹²²  (cosmological constant)
+
+── SELF-REFERENTIAL MIRACLES ────────────────────────────────────────────────
+p(D)=D=3    (partition fn); |A_D|=D=3 (alternating group); F_q=q=5 (Fibonacci)
+CF(√N) period=q=5 (continued fraction); exp_D(|M|)=D=3 (Monster prime exponent)
+dim(SO(3))=D(D−1)/2=D=3 (Lie algebra); disc(Q(√5))=q=5 (number field)
+F_V=V²=144  (Fibonacci MIRACLE: F₁₂=144=12²); PSL₂(F_q)≅A₅ order=G=60
+
+── STANDARD MODEL ───────────────────────────────────────────────────────────
+α_GUT       = δ★² = G_N                   (GUT coupling = Newton constant!)
+μ_GUT       ≈ 3.73×10^16 GeV              (GUT scale from δ★ + RG running)
+δ_CP (PMNS) = (D+1)F+(N-D-1)N = 197°     (exact PDG)
+Ω_m         = (4/13)(1+2γ) ≈ 0.3153      (matter density, Planck 2018)
+η_B         = (q−D)·γ^q = 5.74×10⁻¹⁰    (baryon miracle, 6.3% error)
+
+── DARK MATTER ──────────────────────────────────────────────────────────────
+m_axion     ≈ 60.7 μeV                    (Cathedral axion, ADMX/ABRA target)
+m_sterile   ≈ 143 keV                     (sterile ν DM, X-ray at 71.5 keV)
+m_WIMP      = δ★·m_Z ≈ 13.45 GeV         (WIMP at LHC threshold)
+
+── QUANTUM GRAVITY & STRINGS ────────────────────────────────────────────────
+δ★²         = G_N                         (Cathedral Newton constant)
+3/(2δ★³)    ≈ 467                         (central charge c)
+ΔA          = 8π·δ★³ ≈ 0.0807            (area quantum, Bekenstein-Mukhanov)
+D_bosonic   = 2N = 26                     (bosonic string from N=13!)
+D_super     = 2q = 10                     (superstring from q=5!)
+D_Leech     = 2V = 24                     (Leech lattice from V=12!)
+E₈_roots    = 4G = 240                    (E₈ root count from G=|A₅|=60!)
+MSS_bound   = 1/(4δ★²M)                  (BH scrambling = Cathedral saturated)
+
+── MATHEMATICAL STRUCTURES ──────────────────────────────────────────────────
+λ₂(Lapl)    = D = 3                       (icosahedral spectral gap = spatial dim!)
+K_c         ≈ 1.278                       (Kuramoto critical coupling)
+p_th(QEC)   = γ = 1/81 ≈ 1.23%           (icosahedral QEC threshold)
+a_μ^(1)     = α/2π ≈ 1.1614e-3           (Schwinger; Cathedral α exact)
+d_τ         = φ                           (Fibonacci anyon dim = golden ratio)
+ΣV(Platonic)= ΣF = 2q² = 50             (Platonic solid vertices = faces)
+ΣE(Platonic)= D×E = 90                   (Platonic solid edges)
+φ(N)        = V = 12                      (Euler totient of 13)
+σ(V)        = 28 = PERFECT NUMBER         (sum of divisors of 12 is perfect!)
 ```
 
 ## Module Quick-Start
@@ -431,6 +501,60 @@ from urt import N_SEISMIC_TOTAL, EARTH_LAYERS, N_NORMAL_MODES_SUM, geophysics_su
 
 # Linguistics — vowels=q=5, word orders=D!=6=V/2 (v2.8)
 from urt import N_FORMANTS, N_VOWELS_TYPICAL, N_WORD_ORDERS, linguistics_summary
+
+# ARF Cathedral — 1/α=137, mp/me=1836 EXACT (v2.9.36)
+from urt import (
+    BARE_ALPHA_INV,        # = 137 EXACT: N²−E−(D−1)
+    MP_ME_INTEGER,         # = 1836 EXACT: (D+1)×D^D×(N+D+1)
+    ARF_N_S,               # = 0.9649 (Planck 2018 n_s)
+    ARF_ALPHA_S_FRAC,      # = Fraction(4,5) = (q−1)/q
+    ALL_ARF_EXACT,         # True — all 33 identities hold
+    arf_cathedral_summary, print_arf_cathedral_report,
+)
+
+# Platonic solids — ΣV=ΣF=2q²=50, ΣE=D×E=90 (v2.9.35)
+from urt import (
+    SUM_V_ALL, SUM_E_ALL, SUM_F_ALL,  # = 50, 90, 50
+    ALL_PLATONIC_EXACT, platonic_summary, print_platonic_report,
+)
+
+# Euler totient — φ(N)=V=12, σ(V)=28 PERFECT (v2.9.35)
+from urt import (
+    TOTIENT_N, SIGMA_V_TOTIENT,   # = 12, 28
+    ALL_TOTIENT_EXACT, totient_summary,
+)
+
+# Fibonacci/Lucas — F_q=q SELF-REF, F_V=V²=144 MIRACLE (v2.9.35)
+from urt import (
+    FIB_q, FIB_V,          # = 5 (SELF-REF!), 144 (=V²!)
+    LUCAS_D, FIB_7,        # = 4, 13=N (EXACT!)
+    ALL_FIBONACCI_EXACT, fibonacci_summary,
+)
+
+# Normed division algebras — D+1=4, D imag units in H (v2.9.36)
+from urt import (
+    N_NDA, IMAG_UNITS_H,   # = 4 (Hurwitz), 3=D (self-ref!)
+    ALL_NDA_EXACT, nda_summary,
+)
+
+# Continued fractions — CF(√N) period=q=5 MIRACLE (v2.9.36)
+from urt import (
+    PERIOD_SQRT_N, PERIOD_SQRT_G,  # = 5=q (MIRACLE!), D+1=4
+    ALL_CF_EXACT, cf_summary,
+)
+
+# Monster / modular forms (v2.9.33)
+from urt import (
+    MONSTER_ORDER, MONSTER_EXP_3,  # |M|, exp_3(|M|)=D=3 self-ref!
+    PSL2_q_ORDER,                  # = G=60 = |A₅| !!!
+    ALL_MONSTER_EXACT, monster_summary,
+)
+
+# Golay & Steiner — [2V,V,2^D] codes (v2.9.35)
+from urt import (
+    GOLAY_N, GOLAY_K, GOLAY_D,    # = 24=2V, 12=V, 8=2^D
+    ALL_GOLAY_EXACT, golay_summary,
+)
 ```
 
 ## Development Branch
