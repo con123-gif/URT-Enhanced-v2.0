@@ -1418,8 +1418,22 @@ from .cathedral_lie import (
     WEYL_A_D1_ORDER,
     cathedral_lie_summary, print_cathedral_lie_report,
 )
+from .quantum_cosmo_bridge import (
+    CC_EXPONENT as QCB_CC_EXPONENT,
+    CC_LOG10_DENOM, CC_OOM,
+    LAMBDA_PRED as LAMBDA_CATHEDRAL,
+    LAMBDA_ERR_PCT as LAMBDA_CATHEDRAL_ERR_PCT,
+    CC_SOLVED,
+    ETA_B_PRED as ETA_B_CATHEDRAL_QCB,
+    ETA_B_ERR_PCT as ETA_B_CATHEDRAL_ERR_PCT,
+    EXPONENT_CHAIN as CC_EXPONENT_CHAIN,
+    HOLOGRAPHIC_OOM, HOLOGRAPHIC_IDENTITY_APPROX,
+    BEKENSTEIN_MUKHANOV_AREA_QUANTUM as BM_AREA_QUANTUM,
+    UV_IR_OOM,
+    cc_solution_steps, quantum_cosmo_summary, print_quantum_cosmo_report,
+)
 
-__version__ = "2.9.21"
+__version__ = "2.9.22"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
