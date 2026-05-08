@@ -125,6 +125,30 @@ IDENTITY_SO_D1: bool = (DIM_SO_D1 == factorial(D) == V//2)
 # 25.  (q+D)/(q−D) = D+1  (simple ratio of face-valency sums = next dimension)
 IDENTITY_QD_RATIO: bool = ((q+D) // (q-D) == D+1 and (q+D) % (q-D) == 0)
 
+# 26.  N + V = q²  — the Pythagorean seed (with N=V+1 gives N²−V²=q² exactly)
+NV_SUM = N + V                               # = 25 = q²
+IDENTITY_NV_SUM: bool = (NV_SUM == q**2)
+
+# 27.  N + V + q = E  (= q² + q = q(q+1), yet another formula for E)
+IDENTITY_NVQ_EQ_E: bool = (N + V + q == E)
+E_FROM_Q: int = q * (q + 1)                  # = 30 = E
+IDENTITY_E_QQ1: bool = (E_FROM_Q == E)
+
+# 28.  q + V + D = F  (the three lower Cathedral integers sum to face count!)
+IDENTITY_QVD_EQ_F: bool = (q + V + D == F)
+
+# 29.  V + D = q(q+1)/2 = T_q  (D-th Pronic triangular number)
+T_Q = q * (q + 1) // 2                      # = 15
+IDENTITY_VD_EQ_TQ: bool = (V + D == T_Q)
+
+# 30.  E + F = 50  (nuclear magic number — also = N×(q−1) = 13×4−2 = ... )
+EF_SUM = E + F                               # = 50
+IDENTITY_EF_50: bool = (EF_SUM == 50)
+
+# 31.  N + V + D = 28  (nuclear magic number — also E/D+V = 10+12+D+3=...? no)
+NVD_SUM = N + V + D                          # = 28
+IDENTITY_NVD_28: bool = (NVD_SUM == 28)
+
 # ── Tier 2: Exceptional identities (unique to D=3) ────────────────────────────
 
 # 22.  D! = V/2  (3! = 6 = 12/2)
@@ -251,6 +275,13 @@ ALL_TIER1_IDENTITIES: list = [
     IDENTITY_G_FACTORIAL_Q,
     IDENTITY_SO_D1,
     IDENTITY_QD_RATIO,
+    IDENTITY_NV_SUM,
+    IDENTITY_NVQ_EQ_E,
+    IDENTITY_E_QQ1,
+    IDENTITY_QVD_EQ_F,
+    IDENTITY_VD_EQ_TQ,
+    IDENTITY_EF_50,
+    IDENTITY_NVD_28,
 ]
 
 ALL_TIER2_IDENTITIES: list = [

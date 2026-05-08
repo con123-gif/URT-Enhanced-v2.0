@@ -1397,8 +1397,17 @@ from .cathedral_repunit import (
     RAMANUJAN_SUM_EXACT,
     repunit_summary, print_repunit_report,
 )
+from .exceptional_lie import (
+    DIM_G2, DIM_F4, DIM_E6, DIM_E7, DIM_E8, ROOTS_E8,
+    ALL_EXCEPTIONAL_EXACT,
+    T_D, T_Q, T_V, T_N, TRIANGULAR_CHAIN,
+    MAGIC_28, MAGIC_50, MAGIC_126, MAGIC_CATHEDRAL,
+    NS_DENOM as NS_DENOM_CATHEDRAL, N_S as N_S_CATHEDRAL,
+    MCKAY_A5_IS_E8_HAT,
+    exceptional_lie_summary, print_exceptional_lie_report,
+)
 
-__version__ = "2.9.19"
+__version__ = "2.9.20"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics

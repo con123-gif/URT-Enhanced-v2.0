@@ -188,10 +188,48 @@ def test_qd_ratio():
     assert (q+D) % (q-D) == 0
     assert (q+D) // (q-D) == D+1
 
+def test_nv_sum_is_q_squared():
+    """N+V = q² (the Pythagorean seed: N=V+1 and N+V=q² → N²-V²=q²)."""
+    from urt.algebraic_heart import NV_SUM, IDENTITY_NV_SUM
+    assert IDENTITY_NV_SUM
+    assert NV_SUM == 25
+    assert NV_SUM == q**2
+
+def test_e_is_q_times_q_plus_1():
+    """E = q(q+1) — another formula for edges."""
+    from urt.algebraic_heart import E_FROM_Q, IDENTITY_E_QQ1
+    assert IDENTITY_E_QQ1
+    assert E_FROM_Q == E
+
+def test_q_v_d_equals_f():
+    """q+V+D = F — the three 'lower' integers sum to face count."""
+    from urt.algebraic_heart import IDENTITY_QVD_EQ_F
+    assert IDENTITY_QVD_EQ_F
+    assert q + V + D == F
+
+def test_v_d_is_triangular_q():
+    """V+D = T_q = q(q+1)/2 = 15."""
+    from urt.algebraic_heart import T_Q, IDENTITY_VD_EQ_TQ
+    assert IDENTITY_VD_EQ_TQ
+    assert T_Q == 15
+    assert V + D == T_Q
+
+def test_ef_sum_is_50():
+    """E+F = 50 (nuclear magic number)."""
+    from urt.algebraic_heart import EF_SUM, IDENTITY_EF_50
+    assert IDENTITY_EF_50
+    assert EF_SUM == 50
+
+def test_nvd_sum_is_28():
+    """N+V+D = 28 (nuclear magic number)."""
+    from urt.algebraic_heart import NVD_SUM, IDENTITY_NVD_28
+    assert IDENTITY_NVD_28
+    assert NVD_SUM == 28
+
 def test_all_tier1():
-    """All 25 tier-1 identities pass."""
+    """All 32 tier-1 identities pass."""
     assert all(ALL_TIER1_IDENTITIES)
-    assert len(ALL_TIER1_IDENTITIES) == 25
+    assert len(ALL_TIER1_IDENTITIES) == 32
 
 
 # ── Tier-2: exceptional (unique to D=3) ──────────────────────────────────────
