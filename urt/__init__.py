@@ -1309,6 +1309,16 @@ from .icosahedral_nn import (
     URTSparseAttention, IcosahedralRNN, IcosahedralRecursiveNet,
     irn_forward, irn_summary, print_irn_report,
 )
+from .ikt_cathedral import (
+    PSI as IKT_PSI, PHI_K as IKT_PHI_K,
+    K4_MODES, A5_MODES, N_K4_MODES, N_A5_MODES,
+    K4_FRACTION, A5_FRACTION, OMEGA_M_K4, OMEGA_L_A5,
+    DIM_DECOMP_SUM, DIM_DECOMP_EQ_N,
+    IKT_CONDITION_NUMBER, IKT_RANK, IKT_FULL_RANK,
+    ikt_forward, ikt_inverse, ikt_reconstruct,
+    k4_sector, a5_sector, k4_power, a5_power, k4_fraction,
+    sector_analysis, ikt_summary, print_ikt_report,
+)
 from .alpha_exact import (
     BARE_ALPHA_INV, BARE_EQ_137, ALPHA_INV_CATHEDRAL, ALPHA_ERROR_REL,
     ALPHA_CATHEDRAL, ALPHA_S_CATHEDRAL, SIN2W_CATHEDRAL,
@@ -1354,7 +1364,7 @@ from .cathedral_computer import (
     cathedral_computer_summary, print_cathedral_computer_report,
 )
 
-__version__ = "2.9.14"
+__version__ = "2.9.15"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
