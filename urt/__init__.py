@@ -1485,8 +1485,43 @@ from .spectral_forces import (
     weinberg_from_spectrum, force_coupling_hierarchy,
     spectral_forces_summary, print_spectral_forces_report,
 )
+from .sporadic_cathedral import (
+    N_SPORADIC, N_HAPPY_FAMILY, N_PARIAH, N_INFINITE_FAMILIES,
+    IDENTITY_HAPPY_IS_F, IDENTITY_PARIAH_IS_DFACT,
+    TITS_ORDER, BM_ORDER, MCL_ORDER, HS_ORDER,
+    CATHEDRAL_SPORADIC_PRIMES,
+    sporadic_summary, print_sporadic_report,
+)
+from .lie_reps_cathedral import (
+    G2_REPS, G2_DIM_7, G2_DIM_14, G2_DIM_27, G2_DIM_64, G2_DIM_1728,
+    IDENTITY_G2_7, IDENTITY_G2_14, IDENTITY_G2_27, IDENTITY_G2_64, IDENTITY_G2_1728,
+    F4_REPS_KEY, F4_DIM_26, F4_DIM_52, F4_DIM_1053, F4_DIM_4096,
+    IDENTITY_F4_26, IDENTITY_F4_26_EQ_BOSONIC_STRING, IDENTITY_F4_4096,
+    E6_REPS_KEY, E6_DIM_27, E6_DIM_78, E6_DIM_351,
+    IDENTITY_E6_27, IDENTITY_E6_78, IDENTITY_E6_78_TRIANGULAR_V,
+    E7_REPS_KEY, E7_DIM_56, E7_DIM_133, E7_DIM_912,
+    IDENTITY_E7_56, IDENTITY_E7_133, IDENTITY_E7_912,
+    IDENTITY_G2_64_EQ_CC_EXP, IDENTITY_G2_1728_EQ_J_INVARIANT,
+    IDENTITY_G2_F4_SHARED_273, IDENTITY_E7_912_NS_DENOMINATOR,
+    E8_DIM_248, IDENTITY_E8_248,
+    lie_reps_summary, print_lie_reps_report,
+)
+from .cft_cathedral import (
+    c_minimal, c_wzw_sun,
+    C_ISING, C_TRICRIT, C_POTTS, C_YANG_LEE, C_M35,
+    IDENTITY_ISING_C, IDENTITY_TRICRITICAL_C, IDENTITY_POTTS_C,
+    IDENTITY_YANG_LEE_C, IDENTITY_M35_C,
+    C_SU2_D, C_SU3_D, C_SUQ_D,
+    IDENTITY_SU2_D_C, IDENTITY_SU3_D_C, IDENTITY_SUQ_D_C,
+    IDENTITY_D_PLUS_Q_EQ_2D,
+    MONSTER_CFT_C, IDENTITY_MONSTER_C,
+    BOSONIC_STRING_C, SUPERSTRING_C,
+    IDENTITY_BOSONIC_C, IDENTITY_SUPER_C,
+    RR_INDEX, IDENTITY_RR_INDEX,
+    cft_summary, print_cft_report,
+)
 
-__version__ = "2.9.25"
+__version__ = "2.9.26"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
