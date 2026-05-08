@@ -1348,6 +1348,18 @@ from .cathedral_v9 import (
     M_PL_GEV_V9, V_EW_GEV, M_E_GEV_V9, M_P_GEV_V9,
     scale_chain, full_ledger,
 )
+from .cathedral_gap import (
+    EPSILON, EXHAUST_DRESS,
+    OMEGA_M_DRESSED, THETA_23_DRESSED_DEG, A_CKM_CATHEDRAL,
+    OMEGA_B_FRAC_DRESSED, OMEGA_B_FRAC_ERR_PCT,
+    GAMMA_LADDER, GAMMA_0, GAMMA_1, GAMMA_3, GAMMA_5, GAMMA_9, GAMMA_64,
+    LAMBDA_EXPONENT, LAMBDA_OVER_MPL4, LAMBDA_ERROR_PCT, CC_PUZZLE_SOLVED,
+    GEN_RATIO_2ND, GEN_RATIO_3RD, GEN_RATIO_LPT, SHELL_INVARIANTS_VED,
+    NS_DRAIN_DOWN, NS_DRAIN_UP, NS_EQUIPARTITION, NS_BETA_DRAIN, NS_DRAIN_BIAS,
+    R_STAR as LOGISTIC_R_STAR_GAP, SIX_CYCLE_BRANCHES, BRANCH_DELTA_STAR, BRANCH_DELTA_CL,
+    LYAPUNOV_R_STAR as LYAPUNOV_GAP,
+    gap_summary, three_pillars_summary, print_gap_report,
+)
 from .cathedral_computer import (
     GF13_PRIME, GF13_PRIM_ROOT, GF13_PISANO, GF13_QR,
     PRIM_ROOT_EQ_D1, PISANO_EQ_2Np1, N_QR_EQ_V2,
@@ -1364,7 +1376,7 @@ from .cathedral_computer import (
     cathedral_computer_summary, print_cathedral_computer_report,
 )
 
-__version__ = "2.9.15"
+__version__ = "2.9.16"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -1718,6 +1730,17 @@ __all__ = [
     "lytollis_law", "print_lytollis_law",
     "chaos_engine_step", "chaos_engine_trajectory", "chaos_attractor_dimension",
     "cathedral_computer_summary", "print_cathedral_computer_report",
+    # Cathedral Gap — ε=δ_cl−δ★ master generator
+    "EPSILON", "EXHAUST_DRESS",
+    "OMEGA_M_DRESSED", "THETA_23_DRESSED_DEG", "A_CKM_CATHEDRAL",
+    "OMEGA_B_FRAC_DRESSED", "OMEGA_B_FRAC_ERR_PCT",
+    "GAMMA_LADDER", "GAMMA_0", "GAMMA_1", "GAMMA_3", "GAMMA_5", "GAMMA_9", "GAMMA_64",
+    "LAMBDA_EXPONENT", "LAMBDA_OVER_MPL4", "LAMBDA_ERROR_PCT", "CC_PUZZLE_SOLVED",
+    "GEN_RATIO_2ND", "GEN_RATIO_3RD", "GEN_RATIO_LPT", "SHELL_INVARIANTS_VED",
+    "NS_DRAIN_DOWN", "NS_DRAIN_UP", "NS_EQUIPARTITION", "NS_BETA_DRAIN", "NS_DRAIN_BIAS",
+    "LOGISTIC_R_STAR_GAP", "SIX_CYCLE_BRANCHES", "BRANCH_DELTA_STAR", "BRANCH_DELTA_CL",
+    "LYAPUNOV_GAP",
+    "gap_summary", "three_pillars_summary", "print_gap_report",
     # icosahedral neural network
     "N_OUTER_EDGES", "N_TOTAL_EDGES", "N_CENTER_EDGES",
     "OUTER_DEGREE", "CENTER_DEGREE", "KAPPA", "KAPPA_LT_1",
