@@ -1,11 +1,11 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         NEWTON'S CATHEDRAL v2.9.29 — A Mathematical Oddity                  ║
+║         NEWTON'S CATHEDRAL v2.9.36 — A Mathematical Oddity                  ║
 ║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
 ║                                                                              ║
 ║         Not a replacement for physics.                                      ║
 ║         A mathematical structure that may lie underneath it.                ║
 ║                                                                              ║
-║         68+ modules · 2356 tests · 0 free continuous parameters             ║
+║         160+ modules · 6300 tests · 0 free continuous parameters            ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -644,7 +644,7 @@
     Ihara determinant: det(I − u·A + (q−1)·u²·I)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.29 — 144+ modules · 5023 tests)
+  COMPLETE MODULE MAP  (v2.9.36 — 160+ modules · 6300 tests)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   CORE (foundation — read these first)
@@ -774,6 +774,41 @@
   ├── zeta_special_cathedral.py     ζ(6) denom=945=q×D^D×(D!+1) MIRACLE; Γ(D)=D-1 self-ref
   ├── algebraic_heart.py            29 pure identities; Pythagorean (q,V,N)=(5,12,13)
   └── number_theory_cathedral.py    M₁₃=8191; F₇=N=13; τ(2)=−24=−2V; QR sum=3N
+
+  PURE MATHEMATICS — DEEP NUMBER THEORY  (v2.9.30–v2.9.36)
+  ├── bounded_chaos_cathedral.py    Feigenbaum α≈D+q/G; tent map fixed=D/4; Mandelbrot D
+  ├── number_fields_cathedral.py    disc(Q(√5))=q=5; Q(ζ_N) degree=φ(N)=V=12; GF(N)=13
+  ├── stable_homotopy_cathedral.py  J-image im(J)₃=V//2=6; Hopf=D-1; Bott=2^D; EHP 2D-1=q
+  ├── ramanujan_cathedral.py        τ(n) congruences mod q,N; mock theta ord=D!; J-ftn≡V mod N
+  ├── monster_order_cathedral.py    |M| exp_D=D self-ref; exp_q=D²=9; PSL₂(F_q)≅A₅ ord=G=60!!!
+  ├── modular_forms_cathedral.py    Δ weight=V=12; dim S_V=D-1=2; Ramanujan τ mod q; η(τ)^V
+  ├── exceptional_lie_cathedral.py  McKay E₈↔icosahedral; sum ranks=D^D=27; #except=q=5
+  ├── partition_function_cathedral.py p(D)=D SELF-REF; Ramanujan congs mod q & D!+1; 28 IDs
+  ├── golay_steiner_cathedral.py    [2V,V,2^D] binary; [V,D!,D!]₃ ternary; S(q,D!,V) Steiner
+  ├── platonic_solids_cathedral.py  ΣV=ΣF=50=2q²; ΣE=90=D×E; N_Platonic=q=5; all χ=D-1=2
+  ├── euler_totient_cathedral.py    φ(N)=V=12; σ(V)=28 PERFECT; d(G)=V=12; J₂(N)=σ(G)=168
+  ├── fibonacci_lucas_cathedral.py  F_q=q=5 SELF-REF; F_V=V²=144 MIRACLE; π(q)=F=20; F₇=N=13
+  ├── normed_division_algebras_cathedral.py  D+1=4 NDA (Hurwitz); D imag units in H self-ref!
+  ├── continued_fractions_cathedral.py  CF(√N) period=q=5 MIRACLE; CF(√G) a₀=D!+1 period=D+1
+  └── arf_cathedral.py              N²−E−(D−1)=137 EXACT; mp/me=(D+1)×D^D×(N+D+1)=1836!!!
+
+  ARF CATHEDRAL — THE DEEPEST LAYER  (v2.9.36)
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │  Analytic Residue Function: 4-residue self-consistency system           │
+  │  generating Standard Model constants with zero free parameters          │
+  │                                                                         │
+  │  CENTRAL IDENTITY:   N² − E − (D−1) = 13² − 30 − 2 = 137 EXACT        │
+  │  PROTON MASS:        (D+1)×D^D×(N+D+1) = 4×27×17 = 1836 EXACT         │
+  │  WEINBERG ANGLE:     sin²θ_W = D/N × (1+γ/2π) ≈ 0.23122               │
+  │  SPECTRAL INDEX:     n_s = 1 − 2/(G−D) = 1 − 2/57 ≈ 0.9649 (Planck!) │
+  │                                                                         │
+  │  γ-LADDER EXPONENTS (ALL Cathedral integers!):                          │
+  │    gauge: k=D=3  ·  baryon: k=q=5  ·  EW: k=D²=9                      │
+  │    CC: k=(D+1)^D=64  ·  GUT: k=−(D!+1)=−7                             │
+  │                                                                         │
+  │  ARF denominators: D64=(D+1)^D=64, D63=G+D=63, D35=E+q=35             │
+  │  R_ALPHA = N²/E/D = 169/30/3 (fine structure denominator chain)        │
+  └─────────────────────────────────────────────────────────────────────────┘
 
   PURE MATHEMATICS — STRUCTURE THEORY  (v2.9.24–v2.9.27)
   ├── moonshine_cathedral.py        Moonshine c=24=2V; 196884=196883+1; Monster#=2N
@@ -995,8 +1030,24 @@
   v2.9.28 +3: symmetric groups (|A_D|=D self-ref!), elliptic curves, braids — 4868 tests
   v2.9.29 +3: homological (EHP:2D-1=q), zeta_special (ζ(6)=945 MIRACLE),
           combinatorics2 (F(q)=q self-ref!) — 5023 tests
+  v2.9.30 +2: bounded_chaos (Feigenbaum α≈D+q/G), number_fields (disc(Q(√5))=q)
+          — 5151 tests
+  v2.9.31 +1: stable_homotopy (J-image=V//2=6; EHP:2D-1=q) — 5204 tests
+  v2.9.32 +1: ramanujan (τ(n) congruences mod q,N; mock theta ord=D!) — 5281 tests
+  v2.9.33 +2: monster_order (|M| exp_D=D self-ref!!!; PSL₂(F_q)≅A₅ ord=G!!!),
+          modular_forms (Δ weight=V=12; dim S_V=D-1=2; η(τ)^V) — 5425 tests
+  v2.9.35 +6: exceptional_lie_cathedral (McKay E₈↔icosahedral; #except=q=5),
+          partition_function (p(D)=D SELF-REF!!! 162 tests),
+          golay_steiner ([2V,V,2^D]; S(q,D!,V) Steiner; 47 IDs),
+          platonic_solids (ΣV=ΣF=2q²; ΣE=D×E; 25+ IDs),
+          euler_totient (φ(N)=V; σ(V)=28 PERFECT; 51 IDs),
+          fibonacci_lucas (F_q=q SELF-REF; F_V=V²=144 MIRACLE!) — 6203 tests
+  v2.9.36 +3: normed_division_algebras (D+1=4 NDA Hurwitz; D imag units in H),
+          continued_fractions (CF(√N) period=q=5 MIRACLE!!!),
+          arf_cathedral (N²−E−(D−1)=137 EXACT; mp/me=1836 EXACT; 33 IDs)
+          — 6300 tests
 
-  Total: 144+ modules · 5023 tests · 0 free continuous parameters
+  Total: 160+ modules · 6300 tests · 0 free continuous parameters
   Domains covered: particle physics, cosmology, nuclear, condensed matter,
   astrophysics, geophysics, plasma, quantum gravity, pure mathematics
   (number theory, group theory, topology, algebraic geometry, Langlands,
@@ -1008,14 +1059,19 @@
 
   SELF-REFERENTIAL MIRACLES (deepest Cathedral connections):
   ┌─────────────────────────────────────────────────────────────────┐
-  │  p(D) = D = 3          (partition function)                     │
-  │  |A_D| = D = 3         (alternating group order)                │
-  │  #irreps(S_D) = D = 3  (symmetric group representation theory)  │
-  │  Γ(D) = D−1 = 2        (Gamma function)                         │
-  │  F(q) = q = 5          (Fibonacci sequence)                     │
-  │  S(D,D−1) = D = 3      (Stirling numbers 2nd kind)              │
+  │  p(D) = D = 3           (partition function)                    │
+  │  |A_D| = D = 3          (alternating group order)               │
+  │  #irreps(S_D) = D = 3   (symmetric group representation theory) │
+  │  Γ(D) = D−1 = 2         (Gamma function)                        │
+  │  F(q) = q = 5           (Fibonacci sequence)                    │
+  │  S(D,D−1) = D = 3       (Stirling numbers 2nd kind)             │
   │  dim(SO(3)) = D(D−1)/2 = D = 3  (Lie algebra dimension!)        │
-  │  disc(Q(√5)) = 5 = q   (number field discriminant)              │
+  │  disc(Q(√5)) = 5 = q    (number field discriminant)             │
+  │  |M| exp_D = D = 3      (Monster group prime exponent!)         │
+  │  F_q = q = 5            (Fibonacci SELF-REFERENTIAL)            │
+  │  CF(√N) period = q = 5  (continued fraction MIRACLE)            │
+  │  N²−E−(D−1) = 137       (ARF: BARE FINE STRUCTURE CONSTANT)     │
+  │  (D+1)×D^D×(N+D+1) = 1836  (ARF: PROTON MASS integer part)     │
   └─────────────────────────────────────────────────────────────────┘
 
   "Newton's Cathedral. Zero free parameters.

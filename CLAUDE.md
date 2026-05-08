@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.29 — Cathedral Framework
+# URT Enhanced v2.9.36 — Cathedral Framework
 
 ## Repository Overview
 
@@ -214,13 +214,56 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 | `urt/zeta_special_cathedral.py` | ζ(6) denom=945=q×D^D×(D!+1) CATHEDRAL MIRACLE; Γ(D)=D-1 self-ref |
 | `urt/combinatorics2_cathedral.py` | F(q)=q=5 SELF-REF; Pell P(D)=q P(D+1)=V=12; Bell B(D)=q=5 |
 
+### New Modules (v2.9.30–v2.9.33 — Wave-15/16 Number Theory)
+| File | Domain |
+|------|--------|
+| `urt/bounded_chaos_cathedral.py` | Feigenbaum α≈D+q/G; tent map fixed pt=D/4; Mandelbrot boundary D=3 |
+| `urt/number_fields_cathedral.py` | disc(Q(√5))=q=5; Q(ζ_N) degree=φ(N)=V=12; GF(N) order=N=13 |
+| `urt/stable_homotopy_cathedral.py` | J-image im(J)₃=V//2=6; Hopf=D-1; Bott period=2^D; EHP: 2D-1=q |
+| `urt/ramanujan_cathedral.py` | τ(n) congruences mod q & N; mock theta order=D!; J-function≡V mod N |
+| `urt/monster_order_cathedral.py` | exp_D(|M|)=D SELF-REF!!!; exp_q=D²=9; PSL₂(F_q)≅A₅ order=G=60!!! |
+| `urt/modular_forms_cathedral.py` | Δ weight=V=12; dim S_V=D-1=2; Ramanujan τ mod q; η(τ)^V identity |
+
+### New Modules (v2.9.35 — Wave-17 Pure Mathematics)
+| File | Domain |
+|------|--------|
+| `urt/exceptional_lie_cathedral.py` | McKay E₈↔icosahedral; sum exceptional ranks=D^D=27; #except=q=5 |
+| `urt/partition_function_cathedral.py` | p(D)=D=3 SELF-REF; Ramanujan congs mod q & D!+1; 28 identities |
+| `urt/golay_steiner_cathedral.py` | [2V,V,2^D] binary Golay; [V,D!,D!]₃ ternary; S(q,D!,V) Steiner |
+| `urt/platonic_solids_cathedral.py` | ΣV=ΣF=50=2q²; ΣE=90=D×E; N_Platonic=q=5; all χ=D-1=2; 25+ IDs |
+| `urt/euler_totient_cathedral.py` | φ(N)=V=12; σ(V)=28 PERFECT; d(G)=V=12; J₂(N)=σ(G)=168; 51 IDs |
+| `urt/fibonacci_lucas_cathedral.py` | F_q=q=5 SELF-REF; F_V=V²=144 MIRACLE; π(q)=F=20; F₇=N=13 |
+
+### New Modules (v2.9.36 — ARF Cathedral Layer)
+| File | Domain |
+|------|--------|
+| `urt/normed_division_algebras_cathedral.py` | D+1=4 NDA (Hurwitz); D imag units in H (self-ref!); exterior dim=2^D |
+| `urt/continued_fractions_cathedral.py` | CF(√N) period=q=5 MIRACLE; CF(√G) a₀=D!+1, period=D+1; 29 IDs |
+| `urt/arf_cathedral.py` | N²−E−(D−1)=137 EXACT (bare α); (D+1)×D^D×(N+D+1)=1836 EXACT; 33 IDs |
+
+### ARF Cathedral — The Deepest Layer (v2.9.36)
+
+The **ARF (Analytic Residue Function)** is a four-residue self-consistency system that generates Standard Model constants with **zero free parameters** directly from Cathedral integers:
+
+| Identity | Formula | Value | Meaning |
+|----------|---------|-------|---------|
+| Bare 1/α | N²−E−(D−1) | **137** | Fine structure constant — EXACT |
+| Proton mass | (D+1)×D^D×(N+D+1) | **1836** | mp/me integer part — EXACT |
+| Weinberg angle | (D/N)×(1+γ/2π) | **0.23122** | sin²θ_W matches PDG |
+| Spectral index | 1−2/(G−D) = 1−2/57 | **0.9649** | Planck 2018 n_s — EXACT |
+| γ-ladder gauge | k=D | **3** | Gauge correction exponent |
+| γ-ladder baryon | k=q | **5** | Baryon/axion exponent |
+| γ-ladder EW | k=D² | **9** | Electroweak vev exponent |
+| γ-ladder CC | k=(D+1)^D | **64** | Cosmological constant exponent |
+| γ-ladder GUT | k=−(D!+1) | **−7** | GUT threshold exponent |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.29)
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.36)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Development Branch
@@ -230,7 +273,7 @@ Active development: `claude/13-shell-closure-framework-dXmJi`
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 5023 tests
+python -m pytest tests/ -q              # all 6300 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
@@ -253,6 +296,18 @@ python -m pytest tests/ -q -k zeta_special # zeta special values (39 tests)
 python -m pytest tests/ -q -k combinatorics2  # combinatorics2 (61 tests)
 python -m pytest tests/ -q -k spectrum    # G₁₃ Laplacian spectrum
 python -m pytest tests/ -q -k inflation   # inflation r=12/57²≈0.0037
+python -m pytest tests/ -q -k ramanujan  # Ramanujan Cathedral (67 tests)
+python -m pytest tests/ -q -k monster    # Monster group (38 tests)
+python -m pytest tests/ -q -k modular    # modular forms (59 tests)
+python -m pytest tests/ -q -k exceptional_lie  # exceptional Lie (175 tests)
+python -m pytest tests/ -q -k partition_function  # partition function (162 tests)
+python -m pytest tests/ -q -k golay      # Golay/Steiner (109 tests)
+python -m pytest tests/ -q -k platonic   # Platonic solids (79 tests)
+python -m pytest tests/ -q -k euler_totient  # Euler totient (82 tests)
+python -m pytest tests/ -q -k fibonacci_lucas  # Fibonacci/Lucas (82 tests)
+python -m pytest tests/ -q -k normed_division  # normed div algebras (71 tests)
+python -m pytest tests/ -q -k continued_frac   # continued fractions (97 tests)
+python -m pytest tests/ -q -k arf_cathedral    # ARF Cathedral (55 tests)
 ```
 
 ## Key Numerical Values
