@@ -1406,8 +1406,20 @@ from .exceptional_lie import (
     MCKAY_A5_IS_E8_HAT,
     exceptional_lie_summary, print_exceptional_lie_report,
 )
+from .cathedral_lie import (
+    dim_An, dim_Bn, dim_Dn,
+    DIM_A_D1, DIM_D_D1, DIM_B_Q, DIM_A_V1, N_GLUONS,
+    ALL_CLASSICAL_EXACT, ALL_LIE_EXACT,
+    RANK_E6, RANK_E7, RANK_E8,
+    LIE_DIMENSIONS, CATHEDRAL_LIE_COUNT,
+    fibonacci, FIB_4, FIB_5, FIB_6, FIB_7, FIB_V,
+    FIB_SEQUENCE, FIB_CATHEDRAL,
+    IDENTITY_FOUR_CONSECUTIVE_FIBS, IDENTITY_FIB_V,
+    WEYL_A_D1_ORDER,
+    cathedral_lie_summary, print_cathedral_lie_report,
+)
 
-__version__ = "2.9.20"
+__version__ = "2.9.21"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
