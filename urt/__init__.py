@@ -1714,8 +1714,27 @@ from .ramanujan_cathedral import (
     ALL_RAMANUJAN_IDENTITIES, ALL_RAMANUJAN_EXACT,
     ramanujan_cathedral_summary, print_ramanujan_report,
 )
+from .monster_order_cathedral import (
+    MONSTER_ORDER, MONSTER_PRIME_FACTORIZATION,
+    MONSTER_EXP_3, MONSTER_EXP_5, MONSTER_EXP_7, MONSTER_EXP_11, MONSTER_EXP_13,
+    N_MONSTER_PRIMES, N_SUPERSINGULAR, N_SUPERSINGULAR_LEQ_N,
+    PSL2_D_ORDER, PSL2_q_ORDER, PSL2_N_ORDER,
+    SL2_D_ORDER, SL2_q_ORDER,
+    ALL_MONSTER_IDENTITIES, ALL_MONSTER_EXACT,
+    monster_prime_exp, psl2_order, sl2_order, supersingular_primes_leq,
+    monster_summary, print_monster_report,
+)
+from .modular_forms_cathedral import (
+    EISENSTEIN_E4_WEIGHT, EISENSTEIN_E6_WEIGHT, DELTA_WEIGHT, ETA_POWER_DELTA,
+    DIM_S_V, UNIQUE_HECKE_EIGENFORM_WEIGHT, E8_DIM,
+    J_CONST_TERM, J_AT_I, J_AT_I_LITERAL,
+    LEECH_DIM, LEECH_KISSING, LEECH_KISSING_EXACT, N_NIEMEIER,
+    PERFECT_1, PERFECT_2, PERFECT_3, PERFECT_4,
+    ALL_MOD_FORMS_EXACT,
+    modular_forms_summary, print_modular_forms_report,
+)
 
-__version__ = "2.9.32"
+__version__ = "2.9.33"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2089,4 +2108,21 @@ __all__ = [
     "IcosahedralMessagePassing", "RecursiveURTCell",
     "URTSparseAttention", "IcosahedralRNN", "IcosahedralRecursiveNet",
     "irn_forward", "irn_summary", "print_irn_report",
+    # Monster group Cathedral
+    "MONSTER_ORDER", "MONSTER_PRIME_FACTORIZATION",
+    "MONSTER_EXP_3", "MONSTER_EXP_5", "MONSTER_EXP_7", "MONSTER_EXP_11", "MONSTER_EXP_13",
+    "N_MONSTER_PRIMES", "N_SUPERSINGULAR", "N_SUPERSINGULAR_LEQ_N",
+    "PSL2_D_ORDER", "PSL2_q_ORDER", "PSL2_N_ORDER",
+    "SL2_D_ORDER", "SL2_q_ORDER",
+    "ALL_MONSTER_IDENTITIES", "ALL_MONSTER_EXACT",
+    "monster_prime_exp", "psl2_order", "sl2_order", "supersingular_primes_leq",
+    "monster_summary", "print_monster_report",
+    # Modular forms Cathedral
+    "EISENSTEIN_E4_WEIGHT", "EISENSTEIN_E6_WEIGHT", "DELTA_WEIGHT", "ETA_POWER_DELTA",
+    "DIM_S_V", "UNIQUE_HECKE_EIGENFORM_WEIGHT", "E8_DIM",
+    "J_CONST_TERM", "J_AT_I", "J_AT_I_LITERAL",
+    "LEECH_DIM", "LEECH_KISSING", "LEECH_KISSING_EXACT", "N_NIEMEIER",
+    "PERFECT_1", "PERFECT_2", "PERFECT_3", "PERFECT_4",
+    "ALL_MOD_FORMS_EXACT",
+    "modular_forms_summary", "print_modular_forms_report",
 ]
