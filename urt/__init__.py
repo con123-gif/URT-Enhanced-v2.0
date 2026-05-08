@@ -1454,6 +1454,24 @@ from .moonshine_cathedral import (
     N_MOONSHINE_PRIMES, N_CATHEDRAL_MOONSHINE,
     moonshine_summary, print_moonshine_report,
 )
+from .exceptional_structures_cathedral import (
+    NORMED_DIV_DIMS, PRODUCT_DIV_DIMS, IDENTITY_PRODUCT_IS_CC_EXP,
+    FANO_POINTS, FANO_AUT_ORDER,
+    OCT_DIM, OCT_MULT_TABLES, G2_DIM,
+    ALBERT_DIM, IDENTITY_ALBERT,
+    ROOTS_D8_SECTOR, ROOTS_SPINOR_SECTOR,
+    MTHEORY_DIM, FTHEORY_DIM,
+    MAGIC_SQUARE_DIMS, ALL_MAGIC_CATHEDRAL,
+    exceptional_structures_summary, print_exceptional_report,
+)
+from .leech_golay_cathedral import (
+    LEECH_KISSING, LEECH_DIM, IDENTITY_LEECH_KISSING,
+    GOLAY24_LENGTH, GOLAY24_DIM, GOLAY24_DIST, ALL_GOLAY24_CATHEDRAL,
+    GOLAY23_LENGTH, GOLAY23_DIM, GOLAY23_DIST,
+    M24_ORDER, CO1_ORDER, IDENTITY_CO1_ORDER,
+    E8_KISSING, LEECH_TO_E8_KISSING_RATIO, IDENTITY_KISSING_RATIO,
+    leech_golay_summary, print_leech_golay_report,
+)
 from .zeta_g13 import (
     DET_L_PRIME, DET_L_PRIME_VALUE, SPANNING_TREES, SPANNING_TREE_SQRT,
     IDENTITY_PERFECT_SQUARE, IDENTITY_SQRT_CATHEDRAL,
@@ -1468,7 +1486,7 @@ from .spectral_forces import (
     spectral_forces_summary, print_spectral_forces_report,
 )
 
-__version__ = "2.9.24"
+__version__ = "2.9.25"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
