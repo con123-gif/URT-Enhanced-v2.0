@@ -1375,8 +1375,20 @@ from .cathedral_computer import (
     chaos_engine_step, chaos_engine_trajectory, chaos_attractor_dimension,
     cathedral_computer_summary, print_cathedral_computer_report,
 )
+from .algebraic_heart import (
+    PYTHAGOREAN_TRIPLE,
+    F_PLUS_V, G_MINUS_F, EULER_CHI, CATHEDRAL_CHECKSUM,
+    D_FACTORIAL, D_SQUARED, DIM_SO_D,
+    E8_ROOTS, E8_DIM, GV_PRODUCT,
+    D_BOSONIC_STRING, D_SUPER_STRING, D_LEECH_LATTICE,
+    ALL_TIER1_IDENTITIES, ALL_TIER2_IDENTITIES, ALL_IDENTITIES_EXACT,
+    OMEGA_B_FRAC_INT_APPROX, OMEGA_M_INT, SIN2_TW_INT, ETA_B_INT,
+    LAMBDA_EXP_INT,
+    D_UNIQUENESS,
+    algebraic_summary, print_algebraic_report,
+)
 
-__version__ = "2.9.16"
+__version__ = "2.9.18"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
