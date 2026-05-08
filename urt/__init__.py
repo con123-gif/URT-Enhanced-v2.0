@@ -1806,7 +1806,31 @@ from .euler_totient_cathedral import (
     totient_summary, print_totient_report,
 )
 
-__version__ = "2.9.35"
+from .arf_cathedral import (
+    BARE_ALPHA_INV, MP_ME_INTEGER, MP_ME_INT_FACTOR2, MP_ME_INT_FACTOR3,
+    D64 as ARF_D64, D63 as ARF_D63, D35 as ARF_D35,
+    SIN2_TW_BARE_FRAC, ALPHA_S_FRACTION as ARF_ALPHA_S_FRAC,
+    GAMMA_EXP_GAUGE, GAMMA_EXP_BARYON, GAMMA_EXP_EW, GAMMA_EXP_CC, GAMMA_EXP_GUT,
+    LAMBDA_EXPONENT as ARF_LAMBDA_EXPONENT,
+    N_E_EFOLDS, N_S as ARF_N_S,
+    ALL_ARF_IDENTITIES, ALL_ARF_EXACT, N_ARF_IDENTITIES,
+    arf_cathedral_summary, print_arf_cathedral_report,
+)
+from .normed_division_algebras_cathedral import (
+    N_NDA, DIM_R, DIM_C, DIM_H, DIM_O,
+    IMAG_UNITS_C, IMAG_UNITS_H, IMAG_UNITS_O,
+    N_ASSOCIATIVE_RDA,
+    ALL_NDA_IDENTITIES, ALL_NDA_EXACT,
+    nda_summary, print_nda_report,
+)
+from .continued_fractions_cathedral import (
+    cf_sqrt, cf_period_length, cf_convergents,
+    PERIOD_SQRT_N, PERIOD_SQRT_D, PERIOD_SQRT_V, PERIOD_SQRT_G,
+    ALL_CF_IDENTITIES, ALL_CF_EXACT,
+    cf_summary, print_cf_report,
+)
+
+__version__ = "2.9.36"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
