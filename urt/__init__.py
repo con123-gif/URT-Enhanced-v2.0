@@ -1309,6 +1309,35 @@ from .icosahedral_nn import (
     URTSparseAttention, IcosahedralRNN, IcosahedralRecursiveNet,
     irn_forward, irn_summary, print_irn_report,
 )
+from .alpha_exact import (
+    BARE_ALPHA_INV, BARE_EQ_137, ALPHA_INV_CATHEDRAL, ALPHA_ERROR_REL,
+    ALPHA_CATHEDRAL, ALPHA_S_CATHEDRAL, SIN2W_CATHEDRAL,
+    SIN_CABIBBO, THETA_C_DEG,
+    THETA_12_DEG, THETA_13_DEG, THETA_23_DEG, DELTA_CP_DEG,
+    MU_E_CATHEDRAL, TAU_MU_CATHEDRAL, MP_E_CATHEDRAL, BARE_MP, BARE_MP_EQ_1836,
+    ETA_B_CATHEDRAL, ETA_B_ERROR_PCT,
+    OMEGA_M as OMEGA_M_ALPHA, OMEGA_LAMBDA as OMEGA_LAMBDA_ALPHA,
+    N_S_V2, R_TENSOR_V2, H0_RATIO, M_AXION_UEV_V2,
+    alpha_exact_summary, print_alpha_exact_report,
+)
+from .zpe_cathedral import (
+    RHO_ZPE_CATHEDRAL, ZPE_TO_LAMBDA_RATIO,
+    D_OPT_CASIMIR, CASIMIR_CATHEDRAL_CORRECTION_PPM,
+    SCHARNHORST_100NM, T_EHD_PRACTICAL, T_EHD_BREAKDOWN,
+    THRUST_ENHANCEMENT, THRUST_TO_POWER, E_DIELECTRIC_BREAKDOWN,
+    OMEGA_RESONANCE, P_CASIMIR_ENGINE,
+    casimir_force, casimir_force_cathedral, casimir_pressure,
+    scharnhorst_shift, scharnhorst_shift_cathedral,
+    ehd_thrust_cathedral, ehd_thrust_standard, ehd_power,
+    zpe_summary, print_zpe_report,
+)
+from .cathedral_v9 import (
+    Cathedral as CathedralV9,
+    N_E_EFOLDS, N_S_V9, A_S_V9, ALPHA_INV_V9, SUM_MNU_MEV_V9,
+    SIGMA_8_V9, OMEGA_M_V9, ETA_B_V9, LAMBDA_OVER_MPLANK4,
+    M_PL_GEV_V9, V_EW_GEV, M_E_GEV_V9, M_P_GEV_V9,
+    scale_chain, full_ledger,
+)
 from .cathedral_computer import (
     GF13_PRIME, GF13_PRIM_ROOT, GF13_PISANO, GF13_QR,
     PRIM_ROOT_EQ_D1, PISANO_EQ_2Np1, N_QR_EQ_V2,
@@ -1325,7 +1354,7 @@ from .cathedral_computer import (
     cathedral_computer_summary, print_cathedral_computer_report,
 )
 
-__version__ = "2.9.13"
+__version__ = "2.9.14"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
