@@ -1672,8 +1672,27 @@ from .number_fields_cathedral import (
     ALL_NUM_FIELD_IDENTITIES, ALL_NUM_FIELD_EXACT,
     summary as num_field_summary, print_report as print_num_field_report,
 )
+from .stable_homotopy_cathedral import (
+    J_IMAGE_PI3, J_IMAGE_PI7, J_IMAGE_PI11, J_IMAGE_PI15, J_IMAGE_PI19,
+    PI3_S_ORDER, PI7_S_ORDER, PI10_S_ORDER, PI11_S_ORDER,
+    PI3_2_PRIMARY, PI3_3_PRIMARY,
+    PI11_POWER2_FACTOR, PI11_DPLUS1_FACTOR, PI11_D2_FACTOR,
+    HOPF_DIMS, N_HOPF_INV1, HOPF_MAX_DIM,
+    EHP_FIBER, EHP_TOTAL, EHP_BASE,
+    TODA_ALPHA_D_STEM, TODA_ALPHA_D_ORDER, TODA_ALPHA_q_STEM, TODA_ALPHA_q_ORDER,
+    ADAMS_OP_q, ADAMS_OP_q_D, BOTT_PERIOD,
+    FRAMED_COB_D, FRAMED_COB_7,
+    IDENTITY_J_PI3, IDENTITY_J_PI7, IDENTITY_J_PI11, IDENTITY_J_PI15,
+    IDENTITY_PI3_ORDER, IDENTITY_PI7_ORDER, IDENTITY_PI11_ORDER,
+    IDENTITY_PI3_PRODUCT, IDENTITY_PI11_PRODUCT,
+    IDENTITY_HOPF_DIMS_LEN, IDENTITY_N_HOPF_INV1,
+    IDENTITY_EHP_FIBER, IDENTITY_FRAMED_COB_D, IDENTITY_FRAMED_COB_7,
+    IDENTITY_BOTT_PERIOD,
+    ALL_STABLE_HOM_EXACT,
+    stable_homotopy_summary, print_stable_homotopy_report,
+)
 
-__version__ = "2.9.30"
+__version__ = "2.9.31"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
