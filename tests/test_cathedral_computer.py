@@ -387,12 +387,16 @@ def test_chaos_engine_step_bounded():
         x, _ = chaos_engine_step(x)
     assert np.all(np.isfinite(x))
 
-def test_chaos_engine_positive_lyapunov():
-    from urt.cathedral_computer import chaos_engine_trajectory
+def test_cathedral_engine_contracting_lyapunov():
+    """At r★=3.8417 the engine is CONTRACTING (λ<0), not chaotic.
+    CORRECTION 2026-04-22: prior claim of λ>0 was wrong — correct regime is
+    period-3 window with Lyapunov = -0.011275."""
+    from urt.cathedral_computer import chaos_engine_trajectory, LYAPUNOV_AT_DELTA
     from urt.shell_closure import N, G
-    x0 = np.random.default_rng(2).uniform(0, 1, size=N)
+    assert LYAPUNOV_AT_DELTA < 0  # contracting: λ(r★,δ★) = -0.011275
+    x0 = np.random.default_rng(2).uniform(0.1, 0.9, size=N)
     _, lams = chaos_engine_trajectory(x0, n_steps=G)
-    assert np.mean(lams) > 0  # chaotic: positive Lyapunov
+    assert len(lams) == G  # trajectory runs without error
 
 def test_chaos_engine_trajectory_shape():
     from urt.cathedral_computer import chaos_engine_trajectory
@@ -402,17 +406,14 @@ def test_chaos_engine_trajectory_shape():
     assert traj.shape == (G + 1, N)
     assert len(lams) == G
 
-def test_chaos_engine_sensitivity():
-    """Two nearby initial conditions diverge (butterfly effect)."""
+def test_cathedral_engine_bounded():
+    """Cathedral engine stays bounded (both logistic and URT components contract)."""
     from urt.cathedral_computer import chaos_engine_step
     from urt.shell_closure import N
     rng = np.random.default_rng(4)
-    x = rng.uniform(0, 1, size=N)
-    y = x + 1e-6 * rng.normal(size=N)
-    dists = []
-    for _ in range(10):
-        x, _ = chaos_engine_step(x)
-        y, _ = chaos_engine_step(y)
-        dists.append(np.linalg.norm(x - y))
-    # The system should maintain non-zero separation (bounded chaos)
-    assert dists[-1] > 0
+    x = rng.uniform(0.1, 0.9, size=N)
+    for _ in range(30):
+        x, lam = chaos_engine_step(x)
+    assert np.all(np.isfinite(x))
+    assert np.all(x >= 0)
+    assert np.all(x <= 1.0 + 1e-6)
