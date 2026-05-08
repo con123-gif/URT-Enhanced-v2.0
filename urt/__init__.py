@@ -1446,7 +1446,29 @@ from .quantum_cosmo_bridge import (
     cc_solution_steps, quantum_cosmo_summary, print_quantum_cosmo_report,
 )
 
-__version__ = "2.9.23"
+from .moonshine_cathedral import (
+    J_AT_I, V_CUBED, J_CONSTANT_744, TAXICAB_1729,
+    MONSTER_EXP_3, MONSTER_EXP_5, MONSTER_EXP_7, MONSTER_EXP_13, MONSTER_EXP_2,
+    TAU_2, TAU_3,
+    BERN_DENOM_B2, BERN_DENOM_B4, BERN_DENOM_B6, BERN_DENOM_B12,
+    N_MOONSHINE_PRIMES, N_CATHEDRAL_MOONSHINE,
+    moonshine_summary, print_moonshine_report,
+)
+from .zeta_g13 import (
+    DET_L_PRIME, DET_L_PRIME_VALUE, SPANNING_TREES, SPANNING_TREE_SQRT,
+    IDENTITY_PERFECT_SQUARE, IDENTITY_SQRT_CATHEDRAL,
+    spectral_zeta, cathedral_factorization, spanning_tree_analysis,
+    zeta_summary, print_zeta_report,
+)
+from .spectral_forces import (
+    SIN2_TW_CATHEDRAL as SIN2_TW_FROM_SPECTRUM,
+    IDENTITY_WEINBERG_FROM_SPECTRUM,
+    N_FUNDAMENTAL_FORCES, KAPPA_ARF,
+    weinberg_from_spectrum, force_coupling_hierarchy,
+    spectral_forces_summary, print_spectral_forces_report,
+)
+
+__version__ = "2.9.24"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
