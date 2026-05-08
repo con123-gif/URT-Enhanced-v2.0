@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.6 — Cathedral Framework
+# URT Enhanced v2.9.29 — Cathedral Framework
 
 ## Repository Overview
 
@@ -146,19 +146,91 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 | `urt/astrophysics_cathedral.py` | Stellar structure ODEs=q=5; galaxy branches=D=3; spacetime=D+1=4 |
 | `urt/differential_geometry_cathedral.py` | χ(S²)=V-E+F=2=D-1; Riemann=D²(D²-1)/12=V//2; dim(SO3)=D EXACT |
 
+### New Modules (v2.9.7–v2.9.10 — Wave-11/12/13/14)
+| File | Domain |
+|------|--------|
+| `urt/acoustics_cathedral.py` | Sound speed D=3; harmonics=D!=6; N=13 modes per octave |
+| `urt/magnetism_cathedral.py` | Spin=D/2; 2S+1=D=3; Curie mean-field exponent=D/(D+1) |
+| `urt/nonlinear_dynamics_cathedral.py` | Period-3 (Li-Yorke)=D; Lorenz attractor dim=D=3 |
+| `urt/chemical_kinetics_cathedral.py` | Rate law n=D=3; activation E_a/RT ratio; Arrhenius |
+| `urt/immunology_cathedral.py` | B/T/NK=D=3 lymphocyte types; clonal expansion=V=12 |
+| `urt/cognitive_science_cathedral.py` | Miller's 7±2=2^D±(D-1); N=13 cognitive layers |
+| `urt/sports_cathedral.py` | Spatial dims=D=3; scoring base=V=12; team size=N=13 |
+| `urt/oceanography_cathedral.py` | Thermohaline=D=3; oceanic gyres=q=5; tidal freq=D+1=4 |
+| `urt/thermochemistry_cathedral.py` | Thermodynamic potentials=D+1=4; Gibbs=V//2=6 |
+| `urt/network_science_cathedral.py` | Dunbar layers=D+1=4; six degrees=V//2; scale-free α=D |
+| `urt/voting_theory_cathedral.py` | Arrow's D=3 criteria; Condorcet cycles mod D |
+| `urt/developmental_biology_cathedral.py` | HOX genes=N=13 EXACT!!!; body axes=D=3 |
+| `urt/quantum_information_cathedral.py` | Qubit=D-1=2; qutrit=D=3; GHZ state=D parties |
+| `urt/random_matrix_theory_cathedral.py` | GUE β=2=D-1; Dyson index β∈{1,2,4}={D-1,D-1,D+1} |
+
+### New Modules (v2.9.11–v2.9.16 — Deep Framework)
+| File | Domain |
+|------|--------|
+| `urt/inflation_cathedral.py` | r=12/57²≈0.0037 FALSIFIABLE prediction; N_e=G-D=57 e-folds |
+| `urt/icosahedral_nn.py` | IcosahedralRecursiveNet: URT×O(N)×A₅ recursive architecture |
+| `urt/cathedral_computer.py` | GF(13) exact arithmetic; Lytollis Law; Chaos Engine |
+| `urt/alpha_exact.py` | α exact from δ★; fine structure closes on itself |
+| `urt/zpe_cathedral.py` | Zero-point energy; Casimir thrust; Cathedral vacuum energy |
+| `urt/ikt_cathedral.py` | IKT v2: K₄/A₅ sector split with dimensional decomposition |
+| `urt/cathedral_gap.py` | ε=δ_cl−δ★ master generator; γ-power ladder; three pillars |
+
+### New Modules (v2.9.18–v2.9.22 — Algebraic Core)
+| File | Domain |
+|------|--------|
+| `urt/algebraic_heart.py` | 29 pure identities; E₈ roots=4G; Pythagorean (q,V,N)=(5,12,13)!!! |
+| `urt/cathedral_repunit.py` | Repunit R(D)=D!+1=7; prime tower p_D=q p_{D!}=N; 36 identities |
+| `urt/exceptional_lie.py` | All 5 exceptional dims from Cathedral; T_V=dim(E₆) miracle |
+| `urt/cathedral_lie.py` | ADE Lie chain; Fibonacci F₄=D,F₅=q,F₆=2^D,F₇=N EXACT |
+| `urt/quantum_cosmo_bridge.py` | D=3 solves CC (122 orders!!) and η_B in one framework |
+
+### New Modules (v2.9.23–v2.9.25 — Spectral & Exceptional)
+| File | Domain |
+|------|--------|
+| `urt/spectrum_cathedral.py` | G₁₃ Laplacian spectrum {0,3,5,7,9,13} ALL Cathedral integers!!! |
+| `urt/moonshine_cathedral.py` | Moonshine c=24=2V; 196884=196883+1; N_sporadic=2N=26 |
+| `urt/zeta_g13.py` | ζ_{G₁₃}: Cathedral spectral chain; N=13 eigenvalue; zeta zeros |
+| `urt/spectral_forces.py` | Cathedral forces from spectral gap λ₂=D=3; spectral unification |
+| `urt/exceptional_structures_cathedral.py` | E₈ roots=4G=240; Leech dim=2V=24; dim(A_D)=N-1=V=12 |
+| `urt/leech_golay_cathedral.py` | Leech Λ dim=2V=24; Golay code [2N,V,D^D-3]; Niemeier=2V=24 |
+
+### New Modules (v2.9.26–v2.9.27 — Structure Theory)
+| File | Domain |
+|------|--------|
+| `urt/sporadic_cathedral.py` | 26=2N sporadic groups; 20=F happy family; 6=D! pariah groups |
+| `urt/lie_reps_cathedral.py` | G₂(64)=4^D; F₄(26)=2N=bosonic string; E₈(248)=2^D(2^q-1) |
+| `urt/cft_cathedral.py` | Ising c=1/(D-1)=1/2; Tricrit c=(D!+1)/(2q); Monster c=2V=24 |
+| `urt/partition_cathedral.py` | p(D)=D=3 SELF-REFERENTIAL; p(V)=77=(D!+1)(2D+q); p(9)=E=30 |
+| `urt/langlands_cathedral.py` | Siegel dim=D!=6 self-ref; K3 h^{1,1}=F=20; Frob order=V=12 |
+| `urt/voa_cathedral.py` | V♮ c=24=2V; E₈ marks sum=E=30; Coxeter h(E₆)=V=12; Baby Monster c=23 |
+
+### New Modules (v2.9.28–v2.9.29 — Group Theory & Analysis)
+| File | Domain |
+|------|--------|
+| `urt/symmetric_group_cathedral.py` | |A_D|=D=3 SELF-REF!!!; |A_q|=G=60; #irreps(S_D)=D=3 self-ref |
+| `urt/elliptic_curves_cathedral.py` | disc=D^D=27; j=V³=1728; X₀(N) genus=0 unique; Mazur torsion=V+D=15 |
+| `urt/braid_cathedral.py` | B_N: V=12 generators; Catalan C_D=q=5; MCG(Σ_D) dim=V=12 |
+| `urt/homological_cathedral.py` | Bott period=D-1=2; KO period=2^D=8; EHP: 2D-1=q=5; J-image π₇=4G |
+| `urt/zeta_special_cathedral.py` | ζ(6) denom=945=q×D^D×(D!+1) CATHEDRAL MIRACLE; Γ(D)=D-1 self-ref |
+| `urt/combinatorics2_cathedral.py` | F(q)=q=5 SELF-REF; Pell P(D)=q P(D+1)=V=12; Bell B(D)=q=5 |
+
 ### Neural / ML
 - `urt/neural_cathedral.py` — CathedralLayer, CathedralNet, GrokDetector
 - `urt/control.py` — URT control operator (O(N), κ < 1)
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.6)
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.29)
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
+
+## Development Branch
+
+Active development: `claude/13-shell-closure-framework-dXmJi`
 
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 2356 tests
+python -m pytest tests/ -q              # all 5023 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
@@ -170,6 +242,17 @@ python -m pytest tests/ -q -k string   # string landscape (27 tests)
 python -m pytest tests/ -q -k chaos    # quantum chaos (26 tests)
 python -m pytest tests/ -q -k gw       # gravitational wave tests only
 python -m pytest tests/ -q -k ckm      # CKM/PMNS tests only
+python -m pytest tests/ -q -k moonshine   # moonshine + VOA Cathedral
+python -m pytest tests/ -q -k sporadic    # CFSG sporadic groups (71 tests)
+python -m pytest tests/ -q -k partition   # partition function (44 tests)
+python -m pytest tests/ -q -k symmetric   # symmetric group (45 tests)
+python -m pytest tests/ -q -k braid       # braid groups (118 tests)
+python -m pytest tests/ -q -k elliptic    # elliptic curves (66 tests)
+python -m pytest tests/ -q -k homological # homological algebra (55 tests)
+python -m pytest tests/ -q -k zeta_special # zeta special values (39 tests)
+python -m pytest tests/ -q -k combinatorics2  # combinatorics2 (61 tests)
+python -m pytest tests/ -q -k spectrum    # G₁₃ Laplacian spectrum
+python -m pytest tests/ -q -k inflation   # inflation r=12/57²≈0.0037
 ```
 
 ## Key Numerical Values

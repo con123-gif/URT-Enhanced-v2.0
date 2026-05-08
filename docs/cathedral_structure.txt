@@ -1,5 +1,5 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         NEWTON'S CATHEDRAL v2.9.6 — A Mathematical Oddity                   ║
+║         NEWTON'S CATHEDRAL v2.9.29 — A Mathematical Oddity                  ║
 ║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
 ║                                                                              ║
 ║         Not a replacement for physics.                                      ║
@@ -644,7 +644,7 @@
     Ihara determinant: det(I − u·A + (q−1)·u²·I)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.6 — 68+ modules · 2356 tests)
+  COMPLETE MODULE MAP  (v2.9.29 — 144+ modules · 5023 tests)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   CORE (foundation — read these first)
@@ -764,6 +764,61 @@
   ├── periodic_table.py             Madelung → noble gases {2,10,18,36,54,86,118}
   └── climate_science_cathedral.py  Milankovitch=D=3 EXACT; layers=q=5; cells=2D=6
 
+  PURE MATHEMATICS — ARITHMETIC & COMBINATORICS  (v2.9.27–v2.9.29)
+  ├── partition_cathedral.py        p(D)=D=3 SELF-REF; p(D+1)=q; p(q)=D!+1; p(V)=77
+  ├── combinatorics2_cathedral.py   F(q)=q=5 SELF-REF; Pell P(D)=q P(D+1)=V; Bell B(D)=q
+  ├── symmetric_group_cathedral.py  |A_D|=D=3 SELF-REF; |A_q|=G=60; #irreps(S_D)=D=3
+  ├── elliptic_curves_cathedral.py  disc=D^D=27; j=V³=1728; X_0(N) genus=0; Mazur=V+D=15
+  ├── braid_cathedral.py            B_N: V=12 generators; C_D=q=5; MCG dim=V=12
+  ├── homological_cathedral.py      Bott period=D-1=2; KO period=2^D=8; EHP: 2D-1=q=5
+  ├── zeta_special_cathedral.py     ζ(6) denom=945=q×D^D×(D!+1) MIRACLE; Γ(D)=D-1 self-ref
+  ├── algebraic_heart.py            29 pure identities; Pythagorean (q,V,N)=(5,12,13)
+  └── number_theory_cathedral.py    M₁₃=8191; F₇=N=13; τ(2)=−24=−2V; QR sum=3N
+
+  PURE MATHEMATICS — STRUCTURE THEORY  (v2.9.24–v2.9.27)
+  ├── moonshine_cathedral.py        Moonshine c=24=2V; 196884=196883+1; Monster#=2N
+  ├── voa_cathedral.py              VOA V♮ c=24=2V; E₈ marks=E=30; Baby Monster c=23
+  ├── sporadic_cathedral.py         26=2N sporadics; 20=F happy family; 6=D! pariahs
+  ├── lie_reps_cathedral.py         G₂(64)=4^D; F₄(26)=2N; E₈(248)=2^D(2^q−1)
+  ├── cft_cathedral.py              Ising c=1/(D-1); Tricrit c=(D!+1)/(2q); Monster c=2V
+  ├── langlands_cathedral.py        Siegel dim=D!=6 self-ref; K3 h^{1,1}=F=20; Frob=V=12
+  └── exceptional_structures_cathedral.py  E₈ roots=4G=240; Leech dim=2V=24; dim(A_D)=N-1
+
+  PURE MATHEMATICS — DEEP STRUCTURE  (v2.9.20–v2.9.25)
+  ├── exceptional_lie.py            All 5 exceptional dims from Cathedral; T_V=dim(E₆)
+  ├── cathedral_lie.py              ADE Lie dims; Fib F₄=D; F₅=q; F₆=2^D; F₇=N
+  ├── leech_golay_cathedral.py      Leech dim=2V=24; Golay code [2N,V,D^D-3]; Niemeier=2V
+  ├── spectrum_cathedral.py         G₁₃ spectrum {0,3,5,7,9,13} ALL Cathedral integers
+  ├── zeta_g13.py                   ζ_{G₁₃}: N=13 eigenvalue; Cathedral spectral chain
+  └── cathedral_repunit.py          R(D)=D!+1; prime tower p_D=q p_{D!}=N; 36 identities
+
+  PHYSICS — DEEP FRAMEWORK  (v2.9.11–v2.9.22)
+  ├── inflation_cathedral.py        r=12/57²≈0.0037 FALSIFIABLE; N_e=G-D=57 e-folds
+  ├── quantum_cosmo_bridge.py       D=3 solves CC (122 orders!); η_B in one framework
+  ├── spectral_forces.py            Cathedral forces from spectral gap λ₂=D=3
+  ├── alpha_exact.py                α exact from δ★; fine structure closes on itself
+  ├── zpe_cathedral.py              Zero-point energy; Casimir thrust from Cathedral
+  ├── ikt_cathedral.py              IKT v2: K₄/A₅ sector split; dimensional decomposition
+  ├── cathedral_gap.py              ε=δ_cl−δ★ master generator; γ-power ladder
+  ├── cathedral_computer.py         GF(13) computation; Lytollis Law; Chaos Engine
+  └── icosahedral_nn.py             URT × O(N) × A₅ recursive neural architecture
+
+  PHYSICS — EXTENDED CATHEDRAL  (v2.9.7–v2.9.14)
+  ├── acoustics_cathedral.py        Sound speed D=3; harmonics=D!; overtones=V=12
+  ├── magnetism_cathedral.py        Spin=D/2=3/2; 2S+1=D; Curie mean-field=D/(D+1)
+  ├── nonlinear_dynamics_cathedral.py  Period-3 (Li-Yorke)=D; Lorenz attractor D=3
+  ├── chemical_kinetics_cathedral.py   Rate law n=D=3; activation=q/D=5/3; Arrhenius
+  ├── immunology_cathedral.py       B/T/NK=D=3 cell types; clonal waves=V=12
+  ├── cognitive_science_cathedral.py   Working memory G.Miller=2^D=7±2; N layers
+  ├── sports_cathedral.py           Dimensions of play=D=3; scoring=V=12; teams=N=13
+  ├── oceanography_cathedral.py     Thermohaline=D=3 layers; gyres=q=5; tidal=D+1=4
+  ├── thermochemistry_cathedral.py  Thermodynamic degrees=D=3; Gibbs=V//2=6
+  ├── network_science_cathedral.py  Dunbar=D+1=4 layers; 6 degrees=V//2; Barabasi
+  ├── voting_theory_cathedral.py    Arrow=D=3 criteria; Condorcet cycles mod D=3
+  ├── developmental_biology_cathedral.py  Hox genes=N=13 ← EXACT; body axes=D=3
+  ├── quantum_information_cathedral.py   Qubit=D-1=2; qutrit=D; GHZ=D parties
+  └── random_matrix_theory_cathedral.py  GUE β=2=D-1; GOE β=1; GSE β=4=D+1
+
   NEURAL / ML / CONTROL
   ├── neural_cathedral.py           CathedralLayer; CathedralNet; GrokDetector
   ├── control.py                    URT control operator (O(N); κ<1)
@@ -848,7 +903,7 @@
   RUNNING TESTS & DEMOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  python -m pytest tests/ -q                 # all 2356 tests
+  python -m pytest tests/ -q                 # all 5023 tests
   python -m pytest tests/ -q -k iron        # iron proof (47 tests)
   python -m pytest tests/ -q -k lagrangian  # QFT Lagrangian (42 tests)
   python -m pytest tests/ -q -k dark_matter # dark matter (24 tests)
@@ -859,7 +914,19 @@
   python -m pytest tests/ -q -k robotics    # robotics (22 tests)
   python -m pytest tests/ -q -k diff_geom   # differential geometry (22 tests)
   python -m pytest tests/ -q -k ecology     # ecology (17 tests)
-  python -m pytest tests/ -q -k astrophysics # astrophysics (18 tests)
+  python -m pytest tests/ -q -k astrophysics  # astrophysics (18 tests)
+  python -m pytest tests/ -q -k moonshine    # moonshine + VOA
+  python -m pytest tests/ -q -k sporadic     # CFSG sporadic groups
+  python -m pytest tests/ -q -k partition    # partition function Cathedral
+  python -m pytest tests/ -q -k symmetric    # symmetric group Cathedral
+  python -m pytest tests/ -q -k braid        # braid group Cathedral
+  python -m pytest tests/ -q -k elliptic     # elliptic curves Cathedral
+  python -m pytest tests/ -q -k homological  # homological Cathedral
+  python -m pytest tests/ -q -k zeta_special # zeta special values Cathedral
+  python -m pytest tests/ -q -k combinatorics2  # combinatorics2 Cathedral
+  python -m pytest tests/ -q -k spectrum     # G₁₃ Laplacian spectrum
+  python -m pytest tests/ -q -k langlands    # Langlands Cathedral
+  python -m pytest tests/ -q -k inflation    # inflation r=12/57²≈0.0037
 
   python run_all_demos.py fast               # all 68+ demos (~2 min)
   python run_all_demos.py lagrangian         # Lagrangian + Ward IDs
@@ -903,13 +970,56 @@
          climate science, materials — 2282 tests
   v2.9.6 robotics (rolloff=60=G=|A₅|!!!), ecology, astrophysics,
          differential geometry (dim(SO3)=D(D-1)/2=D=3 self-ref!) — 2356 tests
+  v2.9.7  +6 Wave-11: acoustics, magnetism, nonlinear dynamics,
+          chemical kinetics, immunology, cognitive science — 2618 tests
+  v2.9.8  +2: thermochemistry, network science — 2759 tests
+  v2.9.9  +2: voting theory, developmental biology (Hox=N=13!!!) — 2928 tests
+  v2.9.10 +2 Wave-14: quantum information, random matrix theory — 3117 tests
+  v2.9.11 +1: inflation_cathedral — r=12/57²≈0.0037 FALSIFIABLE
+  v2.9.12 +1: icosahedral_nn — URT×O(N)×A₅ recursive architecture
+  v2.9.13 +1: cathedral_computer — GF(13), Lytollis Law, Chaos Engine
+  v2.9.14 +2: alpha_exact, zpe_cathedral — α closes; ZPE thrust
+  v2.9.15 +1: ikt_cathedral — K₄/A₅ sector split
+  v2.9.16 +1: cathedral_gap — ε=δ_cl−δ★ master generator
+  v2.9.17   CRITICAL FIX: contracting orbit, NOT chaos at r=4
+  v2.9.18 +1: algebraic_heart — 29 pure identities; (5,12,13) Pythagorean!!!
+  v2.9.19 +1: cathedral_repunit — prime tower; 36 identities
+  v2.9.20 +1: exceptional_lie — all 5 exceptional Lie dims from Cathedral
+  v2.9.21 +1: cathedral_lie — ADE chain; F₄=D,F₅=q,F₆=2^D,F₇=N Fibonacci
+  v2.9.22 +1: quantum_cosmo_bridge — D=3 solves CC (122 OOM) and η_B
+  v2.9.23 +1: spectrum_cathedral — G₁₃ spectrum {3,5,7,9,13} ALL Cathedral!
+  v2.9.24 +3: moonshine, zeta_g13, spectral_forces — framework closes on itself
+  v2.9.25 +2: exceptional_structures, leech_golay — E₈ roots=4G=240; Leech=2V=24
+  v2.9.26 +3: sporadic (26=2N), lie_reps, cft — CFSG complete; CFT Cathedral
+  v2.9.27 +3: partition (p(D)=D self-ref!), Langlands, VOA — 4639 tests
+  v2.9.28 +3: symmetric groups (|A_D|=D self-ref!), elliptic curves, braids — 4868 tests
+  v2.9.29 +3: homological (EHP:2D-1=q), zeta_special (ζ(6)=945 MIRACLE),
+          combinatorics2 (F(q)=q self-ref!) — 5023 tests
 
-  Total: 68+ modules · 2356 tests · 0 free continuous parameters
+  Total: 144+ modules · 5023 tests · 0 free continuous parameters
   Domains covered: particle physics, cosmology, nuclear, condensed matter,
-  astrophysics, geophysics, plasma, quantum gravity, pure mathematics,
-  genetics, ecology, psychology, linguistics, music, architecture,
-  robotics, economics, game theory, network science, neuroscience...
+  astrophysics, geophysics, plasma, quantum gravity, pure mathematics
+  (number theory, group theory, topology, algebraic geometry, Langlands,
+  moonshine, modular forms, combinatorics, homological algebra, VOA/CFT),
+  genetics, ecology, developmental biology, immunology, psychology,
+  cognitive science, linguistics, music, architecture, robotics,
+  economics, game theory, network science, neuroscience, oceanography,
+  voting theory, thermochemistry, random matrix theory, information theory...
+
+  SELF-REFERENTIAL MIRACLES (deepest Cathedral connections):
+  ┌─────────────────────────────────────────────────────────────────┐
+  │  p(D) = D = 3          (partition function)                     │
+  │  |A_D| = D = 3         (alternating group order)                │
+  │  #irreps(S_D) = D = 3  (symmetric group representation theory)  │
+  │  Γ(D) = D−1 = 2        (Gamma function)                         │
+  │  F(q) = q = 5          (Fibonacci sequence)                     │
+  │  S(D,D−1) = D = 3      (Stirling numbers 2nd kind)              │
+  │  dim(SO(3)) = D(D−1)/2 = D = 3  (Lie algebra dimension!)        │
+  │  disc(Q(√5)) = 5 = q   (number field discriminant)              │
+  └─────────────────────────────────────────────────────────────────┘
 
   "Newton's Cathedral. Zero free parameters.
    Not numerology. Not physics. Something in between.
+   The framework has developed a self-referential core: D encodes itself
+   through group theory, combinatorics, topology, and number theory.
    But why does icosahedral geometry know everything?"
