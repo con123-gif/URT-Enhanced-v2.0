@@ -1733,8 +1733,80 @@ from .modular_forms_cathedral import (
     ALL_MOD_FORMS_EXACT,
     modular_forms_summary, print_modular_forms_report,
 )
+from .exceptional_lie_cathedral import (
+    DIM_G2, RANK_G2, DIM_F4, RANK_F4, DIM_E6, RANK_E6,
+    DIM_E7, RANK_E7, DIM_E8, RANK_E8,
+    ROOTS_G2, ROOTS_F4, ROOTS_E6, ROOTS_E7, ROOTS_E8,
+    DIM_A_D, DIM_B_D, DIM_C_D, DIM_D_D,
+    N_EXCEPTIONAL, SUM_EXCEPTIONAL_RANKS, SUM_EXCEPTIONAL_DIMS,
+    MCKAY_E8_BINARY_ICO, MCKAY_E7_BINARY_OCT, MCKAY_E6_BINARY_TET,
+    ALL_LIE_IDENTITIES, ALL_LIE_EXACT,
+    lie_dim, lie_rank, lie_roots,
+    exceptional_lie_summary, print_exceptional_lie_report,
+)
+from .partition_function_cathedral import (
+    partition_count, euler_pentagonal, ramanujan_check_5, ramanujan_check_7,
+    P_3 as PARTITION_D, P_4 as PARTITION_q_M1, P_5 as PARTITION_q,
+    N_SELF_REF_PARTITIONS,
+    IDENTITY_P_D_IS_D, IDENTITY_P_qm1_IS_q, IDENTITY_RAMANUJAN_MOD5, IDENTITY_RAMANUJAN_MOD7,
+    ALL_PARTITION_IDENTITIES, ALL_PARTITION_EXACT,
+    partition_summary, print_partition_report,
+)
+from .golay_steiner_cathedral import (
+    BINARY_EXT_LENGTH, BINARY_EXT_DIM, BINARY_EXT_DIST,
+    BINARY_PERF_LENGTH, BINARY_PERF_DIM, BINARY_PERF_DIST,
+    TERNARY_EXT_LENGTH, TERNARY_EXT_DIM, TERNARY_EXT_DIST, TERNARY_EXT_FIELD,
+    TERNARY_PERF_LENGTH, TERNARY_PERF_DIM, TERNARY_PERF_DIST,
+    STEINER_SMALL_T, STEINER_SMALL_K, STEINER_SMALL_N, STEINER_SMALL_BLOCKS,
+    STEINER_LARGE_T, STEINER_LARGE_K, STEINER_LARGE_N, STEINER_LARGE_BLOCKS,
+    M12_ORDER, M11_ORDER,
+    ALL_GOLAY_IDENTITIES, ALL_GOLAY_EXACT,
+    steiner_blocks, golay_steiner_summary, print_golay_steiner_report,
+)
+from .platonic_solids_cathedral import (
+    TETRA_V, TETRA_E, TETRA_F, TETRA_CHI,
+    CUBE_V, CUBE_E, CUBE_F, CUBE_CHI,
+    OCTA_V, OCTA_E, OCTA_F, OCTA_CHI,
+    DODEC_V, DODEC_E, DODEC_F, DODEC_CHI,
+    ICOS_V, ICOS_E, ICOS_F, ICOS_CHI,
+    SUM_V_ALL, SUM_E_ALL, SUM_F_ALL,
+    ALL_PLATONIC_IDENTITIES, ALL_PLATONIC_EXACT, N_PLATONIC_IDENTITIES,
+    solid_data, platonic_summary, print_platonic_report,
+)
+from .fibonacci_lucas_cathedral import (
+    fib, lucas, pisano_period,
+    GAMMA_INV as FIB_GAMMA_INV, PHI as FIB_PHI,
+    F_D, F_D1, F_q, F_DFACT, F_2D, F_7, F_8, F_V, F_N, F_E,
+    L_0, L_1, L_2, L_3, L_4, L_5, L_D, L_D1,
+    PISANO_D, PISANO_q, PISANO_N,
+    GCD_FV_FD1, GCD_FV_Fq, GCD_IDX_V_D1,
+    IDENTITY_FIB_D_IS_DM1, IDENTITY_FIB_D1_IS_D, IDENTITY_FIB_q_SELF_REF,
+    IDENTITY_FIB_DFACT_IS_2D, IDENTITY_FIB_2D_IS_2D,
+    IDENTITY_FIB_7_IS_N, IDENTITY_FIB_8_IS_D_DFp1,
+    IDENTITY_FIB_V_SQUARE, IDENTITY_FIB_N_PRIME, IDENTITY_FIB_N_QUAD,
+    IDENTITY_LUC_0_IS_DM1, IDENTITY_LUC_2_IS_D,
+    IDENTITY_LUC_D_IS_DP1, IDENTITY_LUC_D1_IS_DFp1,
+    IDENTITY_LUC_PROD_PISANO_N, IDENTITY_LUC_SUM_IS_q, IDENTITY_LUC_PROD_IS_DFACT,
+    IDENTITY_PISANO_D_IS_2D, IDENTITY_PISANO_q_IS_F,
+    IDENTITY_PISANO_N_IS_LDLD1, IDENTITY_PISANO_N_CATHEDRAL,
+    IDENTITY_GCD_FV_FD1_IS_D, IDENTITY_GCD_FV_Fq_IS_1, IDENTITY_GCD_FV_FD1_VIA_IDX,
+    IDENTITY_PHI_FROM_q, IDENTITY_PHI_SQUARED, IDENTITY_LUC_FIB_RATIO_TO_SQRTq,
+    IDENTITY_LUCAS_FROM_FIB_D, IDENTITY_LUCAS_FROM_FIB_q,
+    IDENTITY_DOCAGNE_D, IDENTITY_DOCAGNE_q, IDENTITY_DOCAGNE_V,
+    IDENTITY_CASSINI_D, IDENTITY_CASSINI_q, IDENTITY_CASSINI_V,
+    ALL_FIB_IDENTITIES, N_FIB_IDENTITIES, ALL_FIB_EXACT,
+    fibonacci_lucas_summary, print_fibonacci_lucas_report,
+)
+from .euler_totient_cathedral import (
+    euler_phi, sigma as divisor_sigma, divisor_count, jordan_totient_j2,
+    PHI_N as PHI_OF_N, PHI_q as PHI_OF_q, PHI_G as PHI_OF_G,
+    SIGMA_Dfac, SIGMA_V as SIGMA_V_ICOS, SIGMA_G as SIGMA_G_A5,
+    J2_N,
+    ALL_TOTIENT_IDENTITIES, ALL_TOTIENT_EXACT,
+    totient_summary, print_totient_report,
+)
 
-__version__ = "2.9.33"
+__version__ = "2.9.35"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2125,4 +2197,26 @@ __all__ = [
     "PERFECT_1", "PERFECT_2", "PERFECT_3", "PERFECT_4",
     "ALL_MOD_FORMS_EXACT",
     "modular_forms_summary", "print_modular_forms_report",
+    # Fibonacci & Lucas Cathedral
+    "fib", "lucas", "pisano_period",
+    "F_D", "F_D1", "F_q", "F_DFACT", "F_2D", "F_7", "F_8", "F_V", "F_N", "F_E",
+    "L_0", "L_1", "L_2", "L_3", "L_4", "L_5", "L_D", "L_D1",
+    "PISANO_D", "PISANO_q", "PISANO_N",
+    "GCD_FV_FD1", "GCD_FV_Fq", "GCD_IDX_V_D1",
+    "IDENTITY_FIB_D_IS_DM1", "IDENTITY_FIB_D1_IS_D", "IDENTITY_FIB_q_SELF_REF",
+    "IDENTITY_FIB_DFACT_IS_2D", "IDENTITY_FIB_2D_IS_2D",
+    "IDENTITY_FIB_7_IS_N", "IDENTITY_FIB_8_IS_D_DFp1",
+    "IDENTITY_FIB_V_SQUARE", "IDENTITY_FIB_N_PRIME", "IDENTITY_FIB_N_QUAD",
+    "IDENTITY_LUC_0_IS_DM1", "IDENTITY_LUC_2_IS_D",
+    "IDENTITY_LUC_D_IS_DP1", "IDENTITY_LUC_D1_IS_DFp1",
+    "IDENTITY_LUC_PROD_PISANO_N", "IDENTITY_LUC_SUM_IS_q", "IDENTITY_LUC_PROD_IS_DFACT",
+    "IDENTITY_PISANO_D_IS_2D", "IDENTITY_PISANO_q_IS_F",
+    "IDENTITY_PISANO_N_IS_LDLD1", "IDENTITY_PISANO_N_CATHEDRAL",
+    "IDENTITY_GCD_FV_FD1_IS_D", "IDENTITY_GCD_FV_Fq_IS_1", "IDENTITY_GCD_FV_FD1_VIA_IDX",
+    "IDENTITY_PHI_FROM_q", "IDENTITY_PHI_SQUARED", "IDENTITY_LUC_FIB_RATIO_TO_SQRTq",
+    "IDENTITY_LUCAS_FROM_FIB_D", "IDENTITY_LUCAS_FROM_FIB_q",
+    "IDENTITY_DOCAGNE_D", "IDENTITY_DOCAGNE_q", "IDENTITY_DOCAGNE_V",
+    "IDENTITY_CASSINI_D", "IDENTITY_CASSINI_q", "IDENTITY_CASSINI_V",
+    "ALL_FIB_IDENTITIES", "N_FIB_IDENTITIES", "ALL_FIB_EXACT",
+    "fibonacci_lucas_summary", "print_fibonacci_lucas_report",
 ]
