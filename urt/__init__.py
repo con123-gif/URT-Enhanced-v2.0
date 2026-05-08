@@ -1691,8 +1691,31 @@ from .stable_homotopy_cathedral import (
     ALL_STABLE_HOM_EXACT,
     stable_homotopy_summary, print_stable_homotopy_report,
 )
+from .ramanujan_cathedral import (
+    TAU_1, TAU_2, TAU_3, TAU_5, TAU_7, TAU_N,
+    TAXICAB_2,
+    RAMANUJAN_CONST_ARG,
+    N_MOCK_THETA_ORDER3_FUNCS, N_MOCK_THETA_ORDER5_FUNCS,
+    RR_MODULUS,
+    PISANO_q, PISANO_2,
+    PENT_D, PENT_D_MINUS_1,
+    tau, sigma, num_divisors, euler_phi, r3,
+    IDENTITY_TAU_2_IS_NEG_2V, IDENTITY_TAU_3_CATHEDRAL,
+    IDENTITY_TAU_5_CATHEDRAL, IDENTITY_TAU_7_CATHEDRAL,
+    IDENTITY_TAU_MULT_6, IDENTITY_TAU_MOD_691_N,
+    IDENTITY_TAXICAB_2_IS_V3_PLUS_1, IDENTITY_TAXICAB_2_CATHEDRAL_FACTORS,
+    IDENTITY_163_CATHEDRAL,
+    IDENTITY_MOCK_3_COUNT_IS_D, IDENTITY_MOCK_5_COUNT_IS_q,
+    IDENTITY_RR_MODULUS_IS_q,
+    IDENTITY_PISANO_q_IS_F, IDENTITY_PISANO_2_IS_D,
+    IDENTITY_PENT_D_IS_V, IDENTITY_PENT_D_MINUS_1_IS_q,
+    IDENTITY_R3_1_IS_DFACT, IDENTITY_R3_D_IS_2_TO_D,
+    IDENTITY_FIB_q_IS_q, IDENTITY_FIB_DFACT_PLUS_1_IS_N,
+    ALL_RAMANUJAN_IDENTITIES, ALL_RAMANUJAN_EXACT,
+    ramanujan_cathedral_summary, print_ramanujan_report,
+)
 
-__version__ = "2.9.31"
+__version__ = "2.9.32"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
