@@ -1309,8 +1309,23 @@ from .icosahedral_nn import (
     URTSparseAttention, IcosahedralRNN, IcosahedralRecursiveNet,
     irn_forward, irn_summary, print_irn_report,
 )
+from .cathedral_computer import (
+    GF13_PRIME, GF13_PRIM_ROOT, GF13_PISANO, GF13_QR,
+    PRIM_ROOT_EQ_D1, PISANO_EQ_2Np1, N_QR_EQ_V2,
+    LYTOLLIS_BITS, LYTOLLIS_K4_BITS, LYTOLLIS_STEPS, LYTOLLIS_RATIO,
+    LOGISTIC_R_CHAOS, LOGISTIC_R_EDGE, CHAOS_COUPLING,
+    gf_add, gf_sub, gf_mul, gf_div, gf_inv, gf_pow, gf_neg,
+    gf_dlog, gf_sqrt, poly_eval, poly_roots,
+    mat_inv_gf13, solve_linear_gf13,
+    ikt_forward, ikt_inverse, frequency_oracle,
+    fibonacci_gf13, fibonacci_pisano_period, crt_reconstruct,
+    a5_projective_orbit,
+    lytollis_law, print_lytollis_law,
+    chaos_engine_step, chaos_engine_trajectory, chaos_attractor_dimension,
+    cathedral_computer_summary, print_cathedral_computer_report,
+)
 
-__version__ = "2.9.12"
+__version__ = "2.9.13"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -1650,4 +1665,27 @@ __all__ = [
     "IR_MODES_LINEAR", "HYPERFINE_STRUCTURE_I",
     "zeeman_effect", "hydrogen_series", "stokes_parameters",
     "spectroscopy_summary", "print_spectroscopy_report",
+    # GF(13) cathedral computer
+    "GF13_PRIME", "GF13_PRIM_ROOT", "GF13_PISANO", "GF13_QR",
+    "PRIM_ROOT_EQ_D1", "PISANO_EQ_2Np1", "N_QR_EQ_V2",
+    "LYTOLLIS_BITS", "LYTOLLIS_K4_BITS", "LYTOLLIS_STEPS", "LYTOLLIS_RATIO",
+    "LOGISTIC_R_CHAOS", "LOGISTIC_R_EDGE", "CHAOS_COUPLING",
+    "gf_add", "gf_sub", "gf_mul", "gf_div", "gf_inv", "gf_pow", "gf_neg",
+    "gf_dlog", "gf_sqrt", "poly_eval", "poly_roots",
+    "mat_inv_gf13", "solve_linear_gf13",
+    "ikt_forward", "ikt_inverse", "frequency_oracle",
+    "fibonacci_gf13", "fibonacci_pisano_period", "crt_reconstruct",
+    "a5_projective_orbit",
+    "lytollis_law", "print_lytollis_law",
+    "chaos_engine_step", "chaos_engine_trajectory", "chaos_attractor_dimension",
+    "cathedral_computer_summary", "print_cathedral_computer_report",
+    # icosahedral neural network
+    "N_OUTER_EDGES", "N_TOTAL_EDGES", "N_CENTER_EDGES",
+    "OUTER_DEGREE", "CENTER_DEGREE", "KAPPA", "KAPPA_LT_1",
+    "N_EDGES_EQ_E", "DEGREE_EQ_Q", "K_KURAMOTO_CRIT",
+    "ICOS_SPECTRAL_GAP", "SPECTRAL_GAP_POSITIVE",
+    "build_icosahedral_adjacency", "icosahedral_laplacian",
+    "IcosahedralMessagePassing", "RecursiveURTCell",
+    "URTSparseAttention", "IcosahedralRNN", "IcosahedralRecursiveNet",
+    "irn_forward", "irn_summary", "print_irn_report",
 ]
