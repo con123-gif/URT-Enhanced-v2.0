@@ -1418,6 +1418,19 @@ from .cathedral_lie import (
     WEYL_A_D1_ORDER,
     cathedral_lie_summary, print_cathedral_lie_report,
 )
+from .spectrum_cathedral import (
+    LAPLACIAN_EIGENVALUES as G13_LAPLACIAN_EIGENVALUES,
+    LAMBDA_FIEDLER, LAMBDA_MAX as G13_LAMBDA_MAX,
+    N_DISTINCT_NONZERO as G13_N_DISTINCT,
+    DOMINANT_MULTIPLICITY as G13_DOMINANT_MULT,
+    SPECTRAL_SUM as G13_SPECTRAL_SUM,
+    SPECTRAL_RATIO as G13_SPECTRAL_RATIO,
+    DIM_REPRESENTATION_SPACE, NULLITY_REPRESENTATION,
+    RIESZ_EXPONENT, QUAD_FORM_ICOS,
+    ALL_SPECTRAL_EXACT,
+    riesz_energy_2, robustness_potential, robustness_potential_gradient,
+    spectrum_summary, print_spectrum_report,
+)
 from .quantum_cosmo_bridge import (
     CC_EXPONENT as QCB_CC_EXPONENT,
     CC_LOG10_DENOM, CC_OOM,
@@ -1433,7 +1446,7 @@ from .quantum_cosmo_bridge import (
     cc_solution_steps, quantum_cosmo_summary, print_quantum_cosmo_report,
 )
 
-__version__ = "2.9.22"
+__version__ = "2.9.23"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
