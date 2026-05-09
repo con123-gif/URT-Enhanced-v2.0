@@ -2008,13 +2008,29 @@ from .cathedral_advanced_tour import (
     print_advanced_tour_report,
 )
 
+# v2.9.49 — topological tour: K3, Riemann moduli, Hadamard, spherical
+# harmonics, AZ ten-fold way, binary polyhedral, instantons, d_uc
+from .cathedral_topological_tour import (
+    K3_invariants,
+    riemann_moduli_at_cathedral_genera,
+    hadamard_matrix_orders_cathedral,
+    spherical_harmonics_at_N,
+    altland_zirnbauer_classes,
+    binary_polyhedral_groups,
+    SU2_instanton_dimensions,
+    universal_upper_critical_dimension,
+    all_topological_tour_audit,
+    all_topological_tour_verify,
+    print_topological_tour_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.48"
+__version__ = "2.9.49"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2539,4 +2555,16 @@ __all__ = [
     "all_advanced_tour_audit",
     "all_advanced_tour_verify",
     "print_advanced_tour_report",
+    # v2.9.49 — topological tour
+    "K3_invariants",
+    "riemann_moduli_at_cathedral_genera",
+    "hadamard_matrix_orders_cathedral",
+    "spherical_harmonics_at_N",
+    "altland_zirnbauer_classes",
+    "binary_polyhedral_groups",
+    "SU2_instanton_dimensions",
+    "universal_upper_critical_dimension",
+    "all_topological_tour_audit",
+    "all_topological_tour_verify",
+    "print_topological_tour_report",
 ]

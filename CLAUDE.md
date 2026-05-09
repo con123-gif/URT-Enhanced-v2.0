@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.48 — Cathedral Framework
+# URT Enhanced v2.9.49 — Cathedral Framework
 
 ## Repository Overview
 
@@ -155,7 +155,7 @@ of the icosahedron — a one-line geometric expression.
 
 ### Where the Cathedral integers appear, by subject
 
-The framework now contains 57 verified clusters across 8 CI-tested
+The framework now contains 65 verified clusters across 9 CI-tested
 "tour" modules.  By subject:
 
 **Number theory**
@@ -210,12 +210,18 @@ The framework now contains 57 verified clusters across 8 CI-tested
 **Algebraic geometry**
   - Del Pezzo (-1)-curve counts: `d=1: V·F, d=3: D^D, d=4: 2^(D+1), d=5: 2q, d=6: D!`
   - Smallest CM elliptic curve discriminant: `1728 = V³`
+  - K3 surface invariants: dim = D+1, h^(1,1) = F, χ = 2V (three Cathedral hits in one surface)
+  - Riemann surface moduli: dim M_g = D, D!, V, E at genera 2, 3, 5, 11
+  - SU(2) instanton dimensions on S⁴: charge k=1 dim=q, k=2 dim=N
 
 **Lattice theory**
   - K3 surface Euler characteristic: `2V`
   - # of Niemeier lattices: `2V`
   - Leech lattice dimension: `2V`
   - E_8 root number: `V·F`
+  - Hadamard matrix orders include all of `{D+1, V, F, 2V, σ(V)}`
+  - Binary polyhedral group orders: 2T = 2V, 2O = (D+1)V, 2I = 2G = 120
+  - Spherical harmonics at degree N: `dim Y_N = 2N+1 = D^D = 27`
 
 **Number-field arithmetic**
   - Class numbers of small Cathedral Q(√-d) all in `{1, D-1, D+1}`
@@ -246,6 +252,8 @@ The framework now contains 57 verified clusters across 8 CI-tested
 **Statistical mechanics**
   - 2D Ising critical exponents: `β = 1/2^D, δ = D·q = 15, η = 1/(D+1)`
   - Random-matrix Dyson β-classes: `{1, D-1, D+1}`
+  - Universal upper critical dimension: `d_uc = D+1 = 4` (Ising, Potts, SAW, Lifshitz, O(N) σ-model)
+  - Altland-Zirnbauer ten-fold way (topological insulators): `10 = 2q` classes = (D-1) complex + 2^D real
 
 **String theory critical dimensions**
   - Bosonic: `2N`,  super: `2q`,  M-theory: `D!+q`
@@ -291,13 +299,14 @@ from urt import (
     all_geometric_tour_verify,    # 7 geometric clusters
     all_classical_tour_verify,    # 7 classical clusters
     all_advanced_tour_verify,     # 7 advanced clusters
+    all_topological_tour_verify,  # 8 topological-tour clusters
 )
-assert all([                      # 57 clusters, machine-precision
+assert all([                      # 65 clusters, machine-precision
     all_steps_verify(),           all_connections_verify(),
     all_grand_tour_verify(),      all_deep_tour_verify(),
     all_modular_tour_verify(),    all_quantum_lie_tour_verify(),
     all_geometric_tour_verify(),  all_classical_tour_verify(),
-    all_advanced_tour_verify(),
+    all_advanced_tour_verify(),   all_topological_tour_verify(),
 ])
 ```
 
@@ -314,6 +323,7 @@ assert all([                      # 57 clusters, machine-precision
 | `urt.cathedral_geometric_tour` | 7 | Del Pezzo, Schläfli, kissing, totient, Latin squares, knots, Hopf |
 | `urt.cathedral_classical_tour` | 7 | Polyhedron counts, Heegner = D², magic squares, Dyson β, units, Mersenne, Mathieu |
 | `urt.cathedral_advanced_tour` | 7 | K_n(Z), crystallography, Ising, SO(n), Stirling-1, TMF, PSL(2,7) |
+| `urt.cathedral_topological_tour` | 8 | K3 invariants, Riemann moduli, Hadamard orders, spherical harmonics, AZ ten-fold way, binary polyhedral groups, SU(2) instantons, d_uc |
 
 Plus the predictions registry:
 | `urt.predictions_registry` | 17 entries | 13 confirmed (median 0.07 % rel-err), 1 predicted, 3 open |
