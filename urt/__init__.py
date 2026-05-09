@@ -1993,13 +1993,28 @@ from .cathedral_classical_tour import (
     print_classical_tour_report,
 )
 
+# v2.9.48 — advanced tour: K-theory, crystallography, Ising, SO(n),
+# Stirling-1, TMF, PSL(2,7)
+from .cathedral_advanced_tour import (
+    quillen_K_theory_Z,
+    crystallographic_group_counts,
+    ising_2D_critical_exponents,
+    stiefel_SO_dimensions,
+    stirling_first_kind_hits_d35,
+    topological_modular_forms_period,
+    PSL_2_7_and_337_triangle,
+    all_advanced_tour_audit,
+    all_advanced_tour_verify,
+    print_advanced_tour_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.47"
+__version__ = "2.9.48"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2513,4 +2528,15 @@ __all__ = [
     "all_classical_tour_audit",
     "all_classical_tour_verify",
     "print_classical_tour_report",
+    # v2.9.48 — advanced tour
+    "quillen_K_theory_Z",
+    "crystallographic_group_counts",
+    "ising_2D_critical_exponents",
+    "stiefel_SO_dimensions",
+    "stirling_first_kind_hits_d35",
+    "topological_modular_forms_period",
+    "PSL_2_7_and_337_triangle",
+    "all_advanced_tour_audit",
+    "all_advanced_tour_verify",
+    "print_advanced_tour_report",
 ]

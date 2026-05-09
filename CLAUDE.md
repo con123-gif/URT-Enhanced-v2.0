@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.47 — Cathedral Framework
+# URT Enhanced v2.9.48 — Cathedral Framework
 
 ## Repository Overview
 
@@ -527,6 +527,27 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 |------|--------|
 | `urt/cathedral_classical_tour.py` | Seven clusters of sixth-wave connections: **# of Archimedean solids = N = # of Catalan solids** (!!), exactly D² = 9 Heegner numbers, 3×3 magic square constant = D·q = 15, Dyson β-classes {1, D-1, D+1}, algebraic-integer ring units (Z[i]: D+1, Z[ω]: D!, Z: D-1), Mersenne primes M_D, M_q, M_N, Mathieu groups act on V/2V points. |
 | `tests/test_cathedral_classical_tour.py` | 27 tests verifying every connection. |
+
+### New Modules (v2.9.48 — Cathedral Advanced Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_advanced_tour.py` | Seven clusters of seventh-wave connections: Quillen K-theory K_n(Z) (K_3 = Z/((D+1)·V), **K_7 = Z/(V·F)** = E_8 root quotient AGAIN), all 6 crystallographic group counts (230 = V·F − 2q, 17 wallpaper, 7 frieze, 32 point, 14 Bravais), 2D Ising critical exponents (β = 1/2^D, **δ = D·q = 15**, η = 1/(D+1)), all SO(n) dims for n=3..6 are Cathedral, Stirling-1 c(q,D) = 35 = ARF d_35, TMF period (2V)² with Hopf orders {D-1, 2V, V·F}, PSL(2,7) order = 2^D · D · (D!+1) = 168. |
+| `tests/test_cathedral_advanced_tour.py` | 24 tests verifying every connection. |
+
+### v2.9.48 Advanced Tour Headlines
+
+**K_7(Z) = Z/240**: the 7th algebraic K-theory group of the integers has the **same** order as |π_7^s| and as the E_8 root count. Three deep mathematical objects independently reach the Cathedral integer V·F = 240.
+
+**All 6 crystallographic group counts are Cathedral**:
+```
+3D space groups = V·F − 2q = 230   wallpaper = N+D+1 = 17
+Frieze = D!+1 = 7   crystal systems = D!+1 = 7
+Point groups = 2^q = 32   Bravais = N+1 = 14
+```
+
+**2D Ising δ = 15 = D·q**: the same Cathedral expression appears as the Lo Shu magic constant, |order-2 conjugacy class of A_5|, and CF(π) third partial quotient.
+
+**Stirling first-kind c(q, D) = 35 = ARF d_35**: the number of permutations of q elements with D cycles equals the ARF residue d_35.
 
 ### v2.9.47 Classical Tour Headlines
 
