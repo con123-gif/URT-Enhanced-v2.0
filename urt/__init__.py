@@ -1933,13 +1933,29 @@ from .cathedral_deep_tour import (
     print_deep_tour_report,
 )
 
+# v2.9.44 — modular tour: third-wave connections in modular forms,
+# invariant theory, J-homomorphism, class numbers
+from .cathedral_modular_tour import (
+    eisenstein_leading_coefficients,
+    modular_discriminant_weight,
+    E8_theta_coefficients,
+    a5_invariant_ring_degrees,
+    modular_curve_X013,
+    j_homomorphism_completeness,
+    cathedral_class_numbers,
+    golden_ratio_in_A5_character_table,
+    all_modular_tour_audit,
+    all_modular_tour_verify,
+    print_modular_tour_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.43"
+__version__ = "2.9.44"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2409,4 +2425,16 @@ __all__ = [
     "all_deep_tour_audit",
     "all_deep_tour_verify",
     "print_deep_tour_report",
+    # v2.9.44 — modular tour
+    "eisenstein_leading_coefficients",
+    "modular_discriminant_weight",
+    "E8_theta_coefficients",
+    "a5_invariant_ring_degrees",
+    "modular_curve_X013",
+    "j_homomorphism_completeness",
+    "cathedral_class_numbers",
+    "golden_ratio_in_A5_character_table",
+    "all_modular_tour_audit",
+    "all_modular_tour_verify",
+    "print_modular_tour_report",
 ]
