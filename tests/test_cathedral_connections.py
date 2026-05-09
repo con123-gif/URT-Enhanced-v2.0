@@ -13,6 +13,9 @@ from urt.cathedral_connections import (
     spectrum_sector_sums,
     perfect_number_doublet,
     triangular_triplet,
+    G_factorization,
+    orbit_stabilizer_triple,
+    vertex_face_incidence,
     all_connections_audit,
     all_connections_verify,
 )
@@ -176,10 +179,90 @@ class TestTriangularTriplet:
         assert triangular_triplet()["indices"] == [2, 3, 7]
 
 
+# ── Connection 7: G factorization + V·F = E_8 root count ────────────────
+
+class TestGFactorization:
+    def test_G_factorizes_as_K4_D_q(self):
+        """G = (D+1)·D·q = 4·3·5 = 60."""
+        from urt.shell_closure import D, q, G
+        assert (D + 1) * D * q == G
+
+    def test_VF_product_is_240(self):
+        """V·F = 240 — the E_8 root count."""
+        from urt.shell_closure import V, F
+        assert V * F == 240
+
+    def test_VF_equals_4G(self):
+        from urt.shell_closure import V, F, G
+        assert V * F == 4 * G
+
+    def test_VF_equals_K4_times_G(self):
+        from urt.shell_closure import D, V, F, G
+        assert V * F == (D + 1) * G
+
+    def test_audit_passes(self):
+        gf = G_factorization()
+        assert gf["G_factorization"]["equals_G"]
+        assert gf["VF_equals_4G"]
+        assert gf["VF_equals_E8_roots"]
+
+
+# ── Connection 8: orbit-stabilizer triple ────────────────────────────────
+
+class TestOrbitStabilizerTriple:
+    def test_V_is_G_over_q(self):
+        from urt.shell_closure import V, q, G
+        assert V == G // q
+
+    def test_F_is_G_over_D(self):
+        from urt.shell_closure import F, D, G
+        assert F == G // D
+
+    def test_E_is_G_over_two(self):
+        from urt.shell_closure import E, G
+        assert E == G // 2
+
+    def test_stabilizer_orders_are_first_three_primes(self):
+        from urt.shell_closure import D, q
+        assert sorted([D - 1, D, q]) == [2, 3, 5]
+
+    def test_audit_passes(self):
+        ost = orbit_stabilizer_triple()
+        assert ost["V_match"] and ost["E_match"] and ost["F_match"]
+        assert ost["stabilizer_orders_are_first_three_primes"]
+
+
+# ── Connection 9: vertex-face incidence ──────────────────────────────────
+
+class TestVertexFaceIncidence:
+    def test_D_times_F_equals_G(self):
+        from urt.shell_closure import D, F, G
+        assert D * F == G
+
+    def test_q_times_V_equals_G(self):
+        from urt.shell_closure import q, V, G
+        assert q * V == G
+
+    def test_F_factors_as_K4_q(self):
+        """F = (D+1)·q — the K_4 size bridges to face count."""
+        from urt.shell_closure import D, q, F
+        assert F == (D + 1) * q
+
+    def test_V_factors_as_K4_D(self):
+        from urt.shell_closure import D, V
+        assert V == (D + 1) * D
+
+    def test_audit_passes(self):
+        vfi = vertex_face_incidence()
+        assert vfi["both_equal_G"]
+        assert vfi["F_via_K4"]
+        assert vfi["V_via_K4"]
+
+
 # ── End-to-end audit ─────────────────────────────────────────────────────
 
 class TestAllConnectionsAudit:
-    def test_audit_returns_six_clusters(self):
+    def test_audit_returns_nine_clusters(self):
         a = all_connections_audit()
         assert set(a.keys()) == {
             "pentagonal_quartet",
@@ -188,6 +271,9 @@ class TestAllConnectionsAudit:
             "spectrum_sector_sums",
             "perfect_number_doublet",
             "triangular_triplet",
+            "G_factorization",
+            "orbit_stabilizer_triple",
+            "vertex_face_incidence",
         }
 
     def test_all_connections_verify(self):
