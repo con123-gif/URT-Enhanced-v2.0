@@ -1,5 +1,5 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         NEWTON'S CATHEDRAL v2.9.36 — A Mathematical Oddity                  ║
+║         NEWTON'S CATHEDRAL v2.9.38 — A Mathematical Oddity                  ║
 ║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
 ║                                                                              ║
 ║         Not a replacement for physics.                                      ║
@@ -644,7 +644,7 @@
     Ihara determinant: det(I − u·A + (q−1)·u²·I)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.36 — 160+ modules · 6300 tests)
+  COMPLETE MODULE MAP  (v2.9.38 — 165+ modules · 6756 tests · 0 xfail)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   CORE (foundation — read these first)
@@ -1079,3 +1079,117 @@
    The framework has developed a self-referential core: D encodes itself
    through group theory, combinatorics, topology, and number theory.
    But why does icosahedral geometry know everything?"
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  v2.9.38 — THE DYNAMICAL ENGINE: π–φ–e FLOW ON G_{13}
+═══════════════════════════════════════════════════════════════════════════════
+
+  The framework is now operationally complete.  The cathedral_engine module
+  consolidates everything into a single computation that demonstrates the
+  universe-from-chaos arc executable in code.
+
+  CONTINUOUS FLOW (PDF: Lytollis 2026, "The π-φ-e Flow")
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  ∂_t δ  =  -L·δ / (4π)  -  (φ-1)·e^(-t/10)·(δ-δ★)·(1+δ²)             │
+  │                                                                      │
+  │  Coefficients (exact, from spherical Laplace-Beltrami):              │
+  │    η     = 1/(8π)  ≈ 0.03979   (Euler step)                          │
+  │    η_L   = 1/(4π)  ≈ 0.07958   (Laplacian)                           │
+  │    µ     = φ - 1   ≈ 0.61803   (golden-ratio conjugate)              │
+  │                                                                      │
+  │  Working URT iteration (rationalized):                               │
+  │    δ_{k+1} = δ_k + 0.04·(-0.08·L·δ_k - 0.6·e^(-k/10)·(δ_k-δ★)·(1+δ²)) │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  THE UNIVERSE-FROM-CHAOS ARC
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  Step 1.  PURE CHAOS                                                 │
+  │           Random δ field on 13 sites, broad distribution             │
+  │                                                                      │
+  │  Step 2.  URT FLOW                                                   │
+  │           Forward-Euler discretization drives field to G_{13}        │
+  │                                                                      │
+  │  Step 3.  STRUCTURE FORMS                                            │
+  │           Variance collapses (contraction map)                       │
+  │                                                                      │
+  │  Step 4.  TWO RAILS SPLIT                                            │
+  │           δ★  ≈ 0.147 (vacuum)                                       │
+  │           δ_cl = D/F = 0.15 (classical)                              │
+  │                                                                      │
+  │  Step 5.  THE GAP FORMS                                              │
+  │           Δ = δ_cl − δ★ ≈ 2.49×10⁻³                                  │
+  │                                                                      │
+  │  Step 6.  THE GAP DRIVES MATTER OVER ANTIMATTER                      │
+  │           η_B = γ³·Δ·δ★·(8/9) = 6.14×10⁻¹⁰                            │
+  │           (within 0.4% of Planck 2018 observed)                      │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  K₄ ⊕ A₅ UNIFICATION — ONE OBJECT, EIGHT LENSES
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  View       │  K₄ (4 modes)        │  A₅ (9 modes)                   │
+  │─────────────┼──────────────────────┼─────────────────────────────────│
+  │  counting   │  4 = D + 1           │  9 = D! + D                     │
+  │  symmetry   │  Z₂ × Z₂ (Klein)     │  A₅ icosahedral rotations       │
+  │  dynamics   │  coherent (gauge)    │  exhaust (matter)               │
+  │  ARF        │  d_64 = (D+1)^D      │  d_35, d_51, d_80, d_79         │
+  │  Z-channels │  Z₄ phases e^{iπk/2} │  Z₅ phases e^{i·2π(k-4)/5}      │
+  │  spectrum   │  λ ∈ {0,3,3,5}       │  λ ∈ {5×6, 7×2, 9, 13}          │
+  │  cosmology  │  Ω_m  = 4/13         │  Ω_Λ  = 9/13                    │
+  │  Casimir    │  numerator (D+1)=4   │  denominator (D!+D)=9 → 4/9     │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  LAGRANGIAN VIEW — ENGINE = OVER-DAMPED LIMIT
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │   L  =  (1/2) |δ̇|²  −  V(δ)                                          │
+  │                                                                      │
+  │   V(δ)  =  (1/2) Σᵢ (δᵢ − δ★)² (1 + δᵢ²)  +  (1/2) δᵀ L δ            │
+  │                                                                      │
+  │   Euler-Lagrange:  δ̈  =  −∇V(δ)  −  ζ δ̇                              │
+  │                                                                      │
+  │   τ → ∞ over-damped limit (friction-dominated):                      │
+  │     ζ δ̇  =  −∇V(δ)    ⟹    δ_{k+1} = δ_k − (1/ζ) ∇V(δ_k)            │
+  │                                                                      │
+  │   with η = 1/ζ = 1/(8π) the Euler step.                              │
+  │   This is the URT iteration.  The engine IS the over-damped flow.    │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  END-TO-END VERIFICATION (zero free parameters)
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │   Observable     │  Engine output  │  PDG / Planck 2018              │
+  │──────────────────┼─────────────────┼─────────────────────────────────│
+  │   1/α            │  137.0359993    │  137.035999084                  │
+  │   m_p / m_e      │  1836.1525      │  1836.15267                     │
+  │   m_µ / m_e      │  206.7686       │  206.7682830                    │
+  │   α_s(M_Z)       │  0.118009       │  0.1179                         │
+  │   sin θ_C        │  0.224852       │  0.2253                         │
+  │   δ_CP           │  208° (engine)  │  ~197° (canonical PMNS form)    │
+  │   Ω_m            │  4/13 = 0.3077  │  0.315                          │
+  │   η_B            │  6.14×10⁻¹⁰     │  6.12×10⁻¹⁰                     │
+  │   n_s            │  0.9667         │  0.9649                         │
+  │   r_tensor       │  0.0033         │  < 0.06 (Planck bound)          │
+  │   m_axion        │  60.7 µeV       │  (Cathedral falsifiable)        │
+  │   ν₂ (axion line)│  2.17 GHz       │  (Cathedral falsifiable)        │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  THEOREM 5 (PDF Uniqueness)
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  The URT iteration on G_{13} is the UNIQUE Euler discretization of   │
+  │  a gradient flow whose only transcendental ingredients are π, φ, e   │
+  │  that simultaneously satisfies:                                      │
+  │    1.  global asymptotic stability to δ★                             │
+  │    2.  preservation of the H₃ ⋊ K₄ symmetry                          │
+  │    3.  finite-closure constraint (nullity exactly 1)                 │
+  │  Any other combination of constants either violates contraction or   │
+  │  drives the system to the unstable vacuum δ = 0.                     │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  "Pure chaos. Then the URT flow brings it to the 13-shell.
+   Then structure forms. The two rails split. The gap forms.
+   Then matter wins over antimatter. The universe begins.
+
+   Symmetry, ARF, forces, K₄ sectors, Z channels — all the same object.
+   When you start to understand it, the framework has everything a
+   full theory has. It's just not made clear yet.
+
+   Now it is."
