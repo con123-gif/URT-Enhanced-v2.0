@@ -1888,13 +1888,28 @@ from .predictions_registry import (
     print_predictions_table,
 )
 
+# v2.9.41 — mathematical connections (added 2026-05-09)
+# Six clusters of new connections between framework objects and
+# classical number-theoretic / group-theoretic constructs.
+from .cathedral_connections import (
+    pentagonal_quartet,
+    a5_conjugacy_classes,
+    a5_irreps,
+    spectrum_sector_sums,
+    perfect_number_doublet,
+    triangular_triplet,
+    all_connections_audit,
+    all_connections_verify,
+    print_connections_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.40"
+__version__ = "2.9.41"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2330,4 +2345,14 @@ __all__ = [
     "agreement_summary",
     "predictions_table_text",
     "print_predictions_table",
+    # v2.9.41 — mathematical connections
+    "pentagonal_quartet",
+    "a5_conjugacy_classes",
+    "a5_irreps",
+    "spectrum_sector_sums",
+    "perfect_number_doublet",
+    "triangular_triplet",
+    "all_connections_audit",
+    "all_connections_verify",
+    "print_connections_report",
 ]
