@@ -1856,13 +1856,22 @@ from .cathedral_identities import (
     audit_known_identities,
 )
 
+# v2.9.38 — dynamical engine: π-φ-e flow on G_{13} (added 2026-05-09)
+# Reference: Lytollis (2026), "The π-φ-e Flow", Theorem 5 uniqueness.
+from .cathedral_engine import (
+    cathedral_adjacency, cathedral_laplacian,
+    urt_evolve, consciousness_integration,
+    cathedral_engine_summary, print_cathedral_engine_report,
+    ETA, ETA_LAPLACIAN, MU_PULL, TAU_RELAX,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.37"
+__version__ = "2.9.38"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2280,4 +2289,9 @@ __all__ = [
     "extend_vocabulary", "audit_known_identities",
     # v2.9.37 — third η_B closed form
     "eta_b_v9", "ETA_B_V9",
+    # v2.9.38 — dynamical engine: π-φ-e flow on G_{13}
+    "cathedral_adjacency", "cathedral_laplacian",
+    "urt_evolve", "consciousness_integration",
+    "cathedral_engine_summary", "print_cathedral_engine_report",
+    "ETA", "ETA_LAPLACIAN", "MU_PULL", "TAU_RELAX",
 ]
