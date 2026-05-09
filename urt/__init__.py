@@ -2053,13 +2053,25 @@ from .urt_algorithm_analysis import (
     print_urt_algorithm_report,
 )
 
+# v2.9.52 — five open-question investigations
+from .urt_investigations import (
+    six_cycle_z3_z2_structure,
+    envelope_sensitivity,
+    pre_dated_predictions,
+    cathedral_as_generative,
+    anti_universe_empirics,
+    all_investigations_audit,
+    all_investigations_pass,
+    print_investigations_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.51"
+__version__ = "2.9.52"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2618,4 +2630,13 @@ __all__ = [
     "urt_algorithm_audit",
     "urt_algorithm_audit_passes",
     "print_urt_algorithm_report",
+    # v2.9.52 — five open-question investigations
+    "six_cycle_z3_z2_structure",
+    "envelope_sensitivity",
+    "pre_dated_predictions",
+    "cathedral_as_generative",
+    "anti_universe_empirics",
+    "all_investigations_audit",
+    "all_investigations_pass",
+    "print_investigations_report",
 ]
