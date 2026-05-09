@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.38 — Cathedral Framework
+# URT Enhanced v2.9.39 — Cathedral Framework
 
 ## Repository Overview
 
@@ -381,6 +381,43 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 
 **Test totals**: 6,707 → 6,756 (+49 tests, 0 xfailed).  Coverage ~95 %.
 
+### New Modules (v2.9.39 — First-Principles Derivation)
+| File | Domain |
+|------|--------|
+| `urt/first_principles.py` | Eight-step forcing chain that derives π, φ, e, η_L, η, μ, and δ★ from D=3 alone.  Each step exposed as a verifiable function; `first_principles_audit()` returns a status dict; `all_steps_verify()` is a single CI gate. |
+| `tests/test_first_principles.py` | 23 tests: positive equality + negative-space scans (no other simple constant satisfies the same uniqueness condition). |
+| `docs/PI_PHI_E_DERIVATION.md` | Formal write-up of the eight-step chain. |
+
+### v2.9.39 — The π-φ-e flow is forced, not chosen
+
+The framework now proves its own first-principles status in CI.  Each
+of the three transcendentals enters for one specific reason:
+
+| Constant | Forced by | Where |
+|----------|-----------|-------|
+| **π** | surface measure of S² (icosahedral embedding) | η_L = 1/(4π); δ★ contains π |
+| **φ** | A₅ self-similarity (character table, anyons, vertex recursion) | μ = 1/φ; δ★ contains φ |
+| **e** | smooth semigroup-closed dissipation (Cauchy multiplicative) | time profile e^(−t/τ) |
+
+**Theorem (PDF §5)**: the URT iteration on G_{13} is the unique Euler
+discretization of a gradient flow whose only transcendentals are π, φ,
+and e that simultaneously satisfies (i) global asymptotic stability to
+δ★, (ii) preservation of H₃ ⋊ K₄ symmetry, (iii) finite-closure
+constraint (nullity 1).  Any other combination either violates
+contraction or drives the system to the unstable vacuum δ = 0.
+
+The eight forcing steps are exposed as testable functions:
+
+```python
+from urt import first_principles_audit, all_steps_verify
+audit = first_principles_audit()                 # 6 rows, one per step
+assert all_steps_verify()                        # True at machine precision
+```
+
+See `docs/PI_PHI_E_DERIVATION.md` for the formal write-up.
+
+**Test totals**: 6,756 → 6,779 (+23 first-principles tests, 0 xfailed).
+
 ### ARF Cathedral — The Deepest Layer (v2.9.36)
 
 The **ARF (Analytic Residue Function)** is a four-residue self-consistency system that generates Standard Model constants with **zero free parameters** directly from Cathedral integers:
@@ -675,6 +712,18 @@ x_settled = urt_evolve(x0, steps=200)     # 2-3. URT FLOW → 13-shell, structur
 # rails: δ★ ≈ 0.147, δ_cl = 0.15          # 4. RAILS SPLIT
 # gap:   Δ ≈ 2.49e-3                      # 5. GAP FORMS
 eta_B = gamma**3 * Delta * delta_star * 8/9   # → 6.14e-10 (matter wins!)
+
+# First-principles derivation (v2.9.39) — π, φ, e are forced, not chosen
+from urt import (
+    laplacian_coefficient_from_sphere,    # 1/(4π) from |S²|
+    euler_step_optimum_for_fiedler,        # 1/(8π) = η_L/2
+    golden_self_similarity_rate,           # 1/φ from A₅
+    semigroup_closure_base,                # e from Cauchy multiplicative
+    derive_delta_star_from_gradient,       # δ★ from ∇V = 0
+    first_principles_audit,                # full status dict
+    all_steps_verify,                      # single CI gate
+)
+assert all_steps_verify()                  # every step holds at machine precision
 ```
 
 ## Development Branch
