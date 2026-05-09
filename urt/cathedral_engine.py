@@ -132,6 +132,62 @@ def urt_evolve(
     return delta
 
 
+# ── Lagrangian view (the engine is the over-damped limit) ────────────────
+
+def cathedral_potential(delta: np.ndarray) -> float:
+    """Robustness potential V(δ) (PDF §2).
+
+        V(δ) = (1/2) Σ_i (δ_i − δ★)² (1 + δ_i²)  +  E_Riesz(δ)
+
+    The Riesz term is the spherical-repulsion energy on the unit-sphere
+    embedding of the 12 surface vertices.  It is well-approximated by
+    the Laplacian quadratic form on G_{13} when the field is close to
+    its uniform minimum, which is the regime the engine operates in:
+
+        E_Riesz(δ)  ≈  (1/2) δᵀ L δ
+
+    so the practical potential is
+
+        V(δ)  =  (1/2) Σ_i (δ_i − δ★)² (1 + δ_i²)  +  (1/2) δᵀ L δ
+    """
+    L = cathedral_laplacian()
+    delta = np.asarray(delta, dtype=float)
+    quartic = 0.5 * np.sum((delta - delta_star) ** 2 * (1 + delta ** 2))
+    riesz   = 0.5 * float(delta @ L @ delta)
+    return quartic + riesz
+
+
+def cathedral_potential_gradient(delta: np.ndarray) -> np.ndarray:
+    """∇V(δ) — the gradient that drives the engine.
+
+    The forward-Euler flow ``δ_{k+1} = δ_k − η · ∇V(δ_k)`` is exactly
+    the URT iteration in the over-damped limit, where the kinetic term
+    of the full Lagrangian is friction-dominated.
+    """
+    L = cathedral_laplacian()
+    delta = np.asarray(delta, dtype=float)
+    quartic_grad = (delta - delta_star) * (1 + delta**2) + (delta - delta_star)**2 * delta
+    riesz_grad   = L @ delta
+    return quartic_grad + riesz_grad
+
+
+def cathedral_flow_lagrangian(delta: np.ndarray, ddelta_dt: np.ndarray) -> float:
+    """Gradient-flow Lagrangian L = (1/2)|δ̇|² − V(δ).
+
+    The engine `urt_evolve()` is the τ → ∞ over-damped limit of the
+    Euler-Lagrange equation ``δ̈ = -∇V(δ) − ζ δ̇``, where the friction
+    ζ ≫ 1 makes the kinetic term negligible:
+
+        ζ δ̇  =  -∇V(δ)    ⟹    δ_{k+1} = δ_k − (1/ζ)·∇V(δ_k)
+
+    with η = 1/ζ = 1/(8π) the Euler step.
+    """
+    delta = np.asarray(delta, dtype=float)
+    ddelta_dt = np.asarray(ddelta_dt, dtype=float)
+    kinetic = 0.5 * float(np.sum(ddelta_dt ** 2))
+    return kinetic - cathedral_potential(delta)
+
+
 # ── Consciousness integration (IIT-style metric on K₄ sector) ─────────────
 
 def consciousness_integration(delta: np.ndarray) -> float:
@@ -146,6 +202,55 @@ def consciousness_integration(delta: np.ndarray) -> float:
     return float(np.mean(coherent) / (np.std(coherent) + 1e-6))
 
 
+# ── Unification view: K₄ ⊕ A₅ as a single object ────────────────────────
+
+def cathedral_unification() -> dict:
+    """The K₄ ⊕ A₅ split of the 13-shell, viewed through every lens.
+
+    The framework's central insight is that the same 4 + 9 = 13
+    decomposition appears as:
+
+        | View      | K₄ (4 modes)      | A₅ (9 modes)             |
+        |-----------|-------------------|--------------------------|
+        | counting  | 4 = D+1           | 9 = D! + D = D²          |
+        | symmetry  | Z₂ × Z₂ (Klein)   | A₅ icosahedral rotations |
+        | dynamics  | coherent          | exhaust                  |
+        | forces    | gauge bosons      | matter (Yukawa)          |
+        | ARF       | residues d_64,d_4 | residues d_35,d_51,d_80  |
+        | Z-channels| Z₄ at k=0..3      | Z₅ at k=4..12            |
+        | spectrum  | λ ∈ {0,3,3,5}     | λ ∈ {5,5,5,5,5,7,7,9,13} |
+        | sectors   | 4/13 ≈ Ω_m         | 9/13 ≈ Ω_Λ              |
+        | Casimir   | numerator (D+1)=4 | denominator (D!+D)=9     |
+    """
+    L = cathedral_laplacian()
+    eigs = sorted(np.linalg.eigvalsh(L).tolist())
+    return {
+        "counting":    {"K4": D + 1, "A5": (V) - (D - 1) * D, "sum": N},
+        "size":        {"K4": 4,     "A5": 9,                 "sum": 13},
+        "symmetry":    {"K4": "Z₂ × Z₂ (Klein four-group)",
+                        "A5": "A₅ (icosahedral rotation group, |A₅|=60)"},
+        "dynamics":    {"K4": "coherent (gauge / boson modes)",
+                        "A5": "exhaust (matter / fermion modes)"},
+        "ARF_residues":{"K4": ["d_64 = (D+1)^D", "d_4  = (D+1)"],
+                        "A5": ["d_35 = E + q",
+                               "d_51 = G − D²",
+                               "d_80 = 4F = 1/γ − 1",
+                               "d_79 = 4F − 1"]},
+        "Z_channels":  {"K4": "Z₄ (k=0,1,2,3) — phases e^{iπk/2}",
+                        "A5": "Z₅ (k=4..12) — phases e^{i·2π(k-4)/5}"},
+        "spectrum_split": {"K4_lambdas": eigs[:4],
+                           "A5_lambdas": eigs[4:]},
+        "cosmology_split": {"Omega_m": 4 / 13, "Omega_Lambda": 9 / 13},
+        "casimir_ratio":   {"numerator": D + 1, "denominator": 6 + D,
+                             "ratio": (D + 1) / (6 + D)},
+        "unifying_axiom": (
+            "K₄ ⊕ A₅ = 13 is the single Cathedral object.  "
+            "All other views (forces, ARF, Z-channels, spectrum, cosmology, "
+            "Casimir coefficients) are projections of the same 4+9 split."
+        ),
+    }
+
+
 # ── Full Cathedral computation (zero free parameters) ────────────────────
 
 def cathedral_engine_summary(seed: int = 42) -> dict:
@@ -153,59 +258,47 @@ def cathedral_engine_summary(seed: int = 42) -> dict:
 
     Returns every named dimensionless observable derivable from
     {N=13, D=3, V=12, E=30, F=20, q=5, |H₃|=60} — zero free parameters.
-
-    The dynamical part (URT evolution + consciousness integration) uses
-    the supplied seed for reproducibility; all other observables are
-    deterministic.
     """
-    # Effective δ★ with closure correction
-    d63 = G + D                        # 63
-    d80 = F * 4                        # 80
-    d64 = (D + 1) ** D                 # 64
-    d79 = d80 - 1                      # 79
+    d63 = G + D
+    d80 = F * 4
+    d64 = (D + 1) ** D
+    d79 = d80 - 1
     d_eff = delta_star - (delta_star**3 / d63) - (2 * gamma / d80)
     R_alpha = 3 / (d64 * phi) + 1 / (d79 * phi**2)
 
-    # Bare (integer) values
-    bare_alpha = N * N - E - 2                # 137
-    bare_mu    = D * (G + D * D)              # 207
-    bare_tau   = N + D + (D + 1) / q          # 16.8
-    bare_mp    = (D + 1) * D**3 * (N + D + 1) # 1836
+    bare_alpha = N * N - E - 2
+    bare_mu    = D * (G + D * D)
+    bare_tau   = N + D + (D + 1) / q
+    bare_mp    = (D + 1) * D**3 * (N + D + 1)
 
-    # Loop corrections (η = (ln 2 − 9/N)/ln 2)
     eta_corr = (log(2) - 9 / N) / log(2)
     alpha_inv = bare_alpha + (d_eff**2 / pi**2) + R_alpha
     mu_e   = bare_mu * (1 - 12 * eta_corr / 13)
     tau_mu = bare_tau * (1 + 11 * eta_corr / 13)
     mp_e   = bare_mp + 2 * delta_cl - delta_star
 
-    # Gauge sector
     alpha_GUT = 4 / 81 * (1 + delta_star / (2 * pi))
     kappa_GUT = (F + V) / (G - 1)
     sin2W     = 3/8 * (1 - alpha_GUT / pi * log(1 / gamma) * kappa_GUT)
     alpha_s   = delta_star * (q - 1) / q
 
-    # Mixing angles
     sinC    = D / N * (1 - (D + 1) / (N * V))
     theta12 = float(np.arctan((N + 1) / (N * phi)) * 180 / pi)
     theta13 = float(np.arcsin(delta_star) * 180 / pi)
     theta23 = float(np.arcsin(np.sqrt((F + V) / (G - 1))) * 180 / pi)
-    deltaCP = (G * D + F + 2**D) % 360         # 197° — Cathedral δ_CP
+    deltaCP = (G * D + F + 2**D) % 360
 
-    # Cosmology
     Om = 4 / 13
     OL = 9 / 13
     etaB = gamma**3 * Delta * delta_star * 8 / 9
     H0_ratio = 1 + (D / (F * pi)) * 2
-    n_s = 1 - 2 / 60                            # = 1 - 2/(G - D)
+    n_s = 1 - 2 / 60
     r_tensor = 12 / 60**2
 
-    # Dark sector
     R_mass = (3 / 35) * delta_star**2 - (4 / 51) * pi**3
     m_a_uev = delta_star / abs(R_mass) * 1e3
     m_DM    = delta_star * 1e-5
 
-    # Dynamical engine + consciousness metric
     np.random.seed(seed)
     delta0 = np.random.uniform(0.12, 0.28, N)
     final  = urt_evolve(delta0)
@@ -214,7 +307,6 @@ def cathedral_engine_summary(seed: int = 42) -> dict:
     eeg_band = delta_star
 
     return {
-        # Particle physics
         "alpha_inv":           alpha_inv,
         "mu_over_e":           mu_e,
         "tau_over_mu":         tau_mu,
@@ -223,31 +315,25 @@ def cathedral_engine_summary(seed: int = 42) -> dict:
         "sin_theta_C":         sinC,
         "sin2_theta_W":        sin2W,
         "alpha_GUT":           alpha_GUT,
-        # Mixing
         "theta12_deg":         theta12,
         "theta13_deg":         theta13,
         "theta23_deg":         theta23,
         "delta_CP_deg":        deltaCP,
-        # Cosmology
         "Omega_m":             Om,
         "Omega_Lambda":        OL,
         "eta_B":               etaB,
         "H0_ratio":            H0_ratio,
         "n_s":                 n_s,
         "r_tensor":            r_tensor,
-        # Dark sector
         "axion_mass_uev":      m_a_uev,
         "dm_mass":             m_DM,
-        # Dynamical / EEG
-        "eeg_delta_band_Hz":   eeg_band,        # δ★ (rad/s in normalised units)
+        "eeg_delta_band_Hz":   eeg_band,
         "consciousness_integration": integration,
         "filled_vacuum_sites": filled,
     }
 
 
 def print_cathedral_engine_report(seed: int = 42) -> None:
-    """Print the full Cathedral engine table — exactly the format from
-    the canonical script in the framework manuscripts."""
     s = cathedral_engine_summary(seed=seed)
     bar = "=" * 80
     print(bar)
@@ -273,13 +359,14 @@ def print_cathedral_engine_report(seed: int = 42) -> None:
 
 
 __all__ = [
-    # Constants
     "ETA", "ETA_LAPLACIAN", "MU_PULL", "TAU_RELAX",
     "ETA_RAT", "ETA_LAP_RAT", "MU_RAT",
-    # Graph
     "cathedral_adjacency", "cathedral_laplacian",
-    # Engine
     "urt_evolve", "consciousness_integration",
-    # End-to-end
+    "cathedral_potential", "cathedral_potential_gradient",
+    "cathedral_flow_lagrangian",
+    "cathedral_unification",
     "cathedral_engine_summary", "print_cathedral_engine_report",
+    "delta_star", "delta_cl", "Delta", "gamma", "phi",
+    "D", "q", "V", "N", "E", "F", "G",
 ]
