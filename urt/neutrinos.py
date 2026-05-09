@@ -27,8 +27,25 @@ THETA12_DEG = degrees(asin(sqrt(SIN2_THETA12)))
 THETA13_DEG = degrees(asin(sqrt(SIN2_THETA13)))
 THETA23_DEG = degrees(asin(sqrt(SIN2_THETA23)))
 
-# δ_CP from K4 decomposition: (G×D + F + 2^D) mod 360
-DELTA_CP_DEG = (G * D + F + 2 ** D) % 360   # = 208°  (third quadrant)
+# ── δ_CP from PMNS K₄ decomposition ────────────────────────────────────────
+#
+# Two closed forms have appeared in the framework's history:
+#
+#   (a) Canonical (CLAUDE.md, ARF, ckm_pmns, baryon_asymmetry, manuscript v8/v9):
+#         δ_CP = (D+1)·F + (N−D−1)·N
+#              = 4·20 + 9·13
+#              = 80 + 117 = 197°
+#       This is the value used by every other module in the framework, and
+#       is the value reported as "EXACT PDG" in CLAUDE.md.
+#
+#   (b) Legacy form (early v6 / `(G·D + F + 2^D) mod 360`):
+#         δ_CP = (60·3 + 20 + 8) mod 360 = 208°
+#       Kept for historical traceability and exposed as DELTA_CP_DEG_LEGACY.
+#
+# We expose the canonical form as DELTA_CP_DEG so this module agrees with
+# the rest of the framework (third-quadrant, 197° ≈ PDG ≈ 195±25°).
+DELTA_CP_DEG        = (D + 1) * F + (N - D - 1) * N      # = 197° (canonical)
+DELTA_CP_DEG_LEGACY = (G * D + F + 2 ** D) % 360         # = 208° (historical)
 
 # ── Cathedral neutrino mass scale ─────────────────────────────────────────
 # m₁ is set by the K4 gapless mode vacuum energy: m₁ = γ·δ★/(N×phi) × 1 eV

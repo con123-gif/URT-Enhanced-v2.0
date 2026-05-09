@@ -62,6 +62,8 @@ def lyapunov_rosenstein(ts, m=3, delay=20, evolve=200, exclude=100):
 # ---- τ from CCDF of burst run-lengths above a high percentile ----
 def tau_avalanche(series, pct=90, xmin_quantile=0.6, min_bursts=30):
     x = np.asarray(series, float).ravel()
+    if x.size == 0:                             # degenerate input → NaN
+        return np.nan
     thr = np.percentile(x, pct)
     runs, c = [], 0
     for v in x:
