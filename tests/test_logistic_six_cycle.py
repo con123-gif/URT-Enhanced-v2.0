@@ -97,19 +97,14 @@ class TestDeltaStarVsLogisticCycle:
         gap_ppm = (DELTA_STAR - DELTA_STAR_LOGISTIC) / DELTA_STAR_LOGISTIC * 1e6
         assert 500 < gap_ppm < 700
 
-    @pytest.mark.xfail(
-        strict=True,
-        reason=(
-            "Manuscript claims δ★ is EXACTLY the lowest branch of the "
-            "stable 6-cycle, but the closed-form value 0.14751081 and "
-            "the logistic-cycle value 0.14742194 differ by 603 ppm.  "
-            "The two formulas need to be reconciled — either the "
-            "manuscript's 'exactly' should become 'approximately' or one "
-            "of the two definitions of δ★ should be marked canonical."
-        ),
-    )
-    def test_closed_form_equals_logistic_to_machine_precision(self):
-        assert DELTA_STAR == pytest.approx(DELTA_STAR_LOGISTIC, abs=1e-12)
+    def test_doc_softened_to_approximately_equal(self):
+        """Resolution: the framework's docstring now says
+        'approximately equal to 603 ppm' instead of 'exactly equal'.
+        Verified by reading the module docstring."""
+        import urt.logistic_verification as lv
+        doc = lv.__doc__
+        assert "machine epsilon" not in doc
+        assert "603 ppm" in doc
 
 
 # ── δ★ AND δ_cl are adjacent branches of one cycle (new identity) ────────
