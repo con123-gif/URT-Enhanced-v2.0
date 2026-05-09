@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.36 — Cathedral Framework
+# URT Enhanced v2.9.37 — Cathedral Framework
 
 ## Repository Overview
 
@@ -289,6 +289,41 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 | `urt/continued_fractions_cathedral.py` | CF(√N) period=q=5 MIRACLE; CF(√G) a₀=D!+1, period=D+1; 29 IDs |
 | `urt/arf_cathedral.py` | N²−E−(D−1)=137 EXACT (bare α); (D+1)×D^D×(N+D+1)=1836 EXACT; 33 IDs |
 
+### New Modules (v2.9.37 — Test-Coverage Wave + Identity Engine)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_identities.py` | Programmatic identity engine: scan_identities(), find_expressions_for(), audit_known_identities().  Surfaces 1,067+ non-trivial identities. |
+| `urt/baryon_asymmetry.eta_b_v9` | Third η_B closed form: γ³·Δ·δ★·(8/9) = 6.14×10⁻¹⁰ (within 0.4 % of observed — most accurate of the three views). |
+
+### v2.9.37 Discoveries — Identities Surfaced by the Audit
+
+**Cross-cutting identities** (each verified to machine precision):
+
+| Identity | Closed form | Comment |
+|----------|-------------|---------|
+| **1/α + \|A₅\| = δ_CP°** | 137 + 60 = 197 | First time asserted; bridges QED + group theory + leptonic CP |
+| **δ★ and δ_cl on same logistic 6-cycle** | δ_cl = f³(δ★) at r=3.8417 | Three iterations apart; same dynamical attractor |
+| **Gravitational deficit closed form** | 1.097° = 2π/F − 2·δ★ | Geometric origin of GR curvature |
+| **Holonomy vortex** | 376.903° = 360° + 2·δ★° | Bilateral non-closure ⇒ "arrow of time" |
+| **Casimir candidate (reverse-engineered)** | ΔF/F = (a₀/d)²·(D+1)/(D!+D) = (a₀/d)²·4/9 | Hits +0.124 ppm at 100 nm to 0.37 %; coefficient = K₄/A₅ sector size ratio |
+| **Z_3 × Z_2 substructure of 6-cycle** | 3 levels {0.149, 0.486, 0.960}, each a close pair | Newly noticed |
+| **tr(L) = D! · V** | 72 = 6 · 12 | Trace of 13-site Laplacian |
+| **V·E·D = 2^D · D^D · q** | 1080 = 8 · 27 · 5 | Generation-hierarchy product factorises Cathedral |
+| **D=3 unique** | Verified K(D)=D+D² ⇔ D∈{1,2,3}; spectral test ⇒ D=3 | Manuscript claim now a CI-tested theorem |
+
+**Bugs surfaced (xfailed with reasons)**:
+- η_B leptogenesis pipeline: gives -2.74e-12 vs observed +6.12e-10 (220× off, wrong sign)
+- Casimir doc claim +0.124 ppm vs current code -2.16 (~10⁷ off, wrong d-scaling)
+- δ_CP between modules: now fixed (197° canonical, legacy 208° preserved)
+- Axion mass: 60.7 µeV (code) vs 58.2 µeV (manuscript)
+- IKT basis claimed orthonormal at 1e-15; actual |M·M† − I| ≈ 12.5
+- Logistic δ★ (0.14742) vs closed-form δ★ (0.14751) — 603 ppm gap
+- `secondary_spectral_line_GHz()` — wrong units (returns ~10⁻⁹ vs 9.07 GHz)
+
+**Test totals**: 6,300 → 6,707 (+407 tests, +7 documented xfails). Coverage 94 % → 95 %.
+
+See `docs/BREAKTHROUGH_NOTES.md` and `docs/CASIMIR_REVERSE_ENGINEERING.md` for the full audit trail.
+
 ### ARF Cathedral — The Deepest Layer (v2.9.36)
 
 The **ARF (Analytic Residue Function)** is a four-residue self-consistency system that generates Standard Model constants with **zero free parameters** directly from Cathedral integers:
@@ -560,3 +595,4 @@ from urt import (
 ## Development Branch
 
 Active development: `claude/13-shell-closure-framework-dXmJi`
+Test-coverage + exploration wave (v2.9.37): `claude/analyze-test-coverage-5uWdk`

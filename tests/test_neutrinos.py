@@ -74,11 +74,21 @@ class TestPMNSAngles:
         assert 40 < THETA23_DEG < 55
 
     def test_delta_cp_third_quadrant(self):
-        # Cathedral: δ_CP = 208° (third quadrant: 180°..270°)
+        # Cathedral δ_CP = 197° still sits in the third quadrant (180°..270°)
         assert 180 < DELTA_CP_DEG < 270
 
     def test_delta_cp_value(self):
-        assert abs(DELTA_CP_DEG - 208) < 1
+        # Updated 2026-05: neutrinos.py now uses the canonical formula
+        # δ_CP = (D+1)·F + (N-D-1)·N = 197° (matches CLAUDE.md, ARF, ckm_pmns,
+        # baryon_asymmetry).  The legacy 208° value remains available as
+        # DELTA_CP_DEG_LEGACY for historical reference.
+        assert DELTA_CP_DEG == 197
+
+    def test_delta_cp_legacy_still_accessible(self):
+        """The pre-fix value (G·D + F + 2^D) mod 360 = 208° is preserved
+        as DELTA_CP_DEG_LEGACY for historical traceability."""
+        from urt.neutrinos import DELTA_CP_DEG_LEGACY
+        assert DELTA_CP_DEG_LEGACY == 208
 
 
 class TestNeutrinoMasses:

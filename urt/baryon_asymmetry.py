@@ -128,6 +128,47 @@ G_STAR_SM      = 106.75  # SM value at T > EW
 ETA_B_LEPTO    = -C_SPHA * EPSILON_1 * KAPPA * (G_STAR_SM / G_STAR)**0.5
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+#  VIEW 3: THE CATHEDRAL v9 CLOSED FORM
+# ══════════════════════════════════════════════════════════════════════════════
+#
+# The v9 anchor-free manuscript proposes a third closed form derived from
+# the gap structure rather than the icosahedral edge count:
+#
+#   η_B = γ³·Δ·δ★·(8/9)
+#
+# where Δ = δ_cl − δ★ ≈ 2.49×10⁻³ is the gap separating the classical rail
+# from the ultraviolet fixed point, and 8/9 = (D-1)·D!/(D+D²) is the K₄
+# coherent-mode normalisation.
+#
+# Numerically this gives 6.14×10⁻¹⁰ — within 0.4 % of the Planck 2018
+# observed value 6.12×10⁻¹⁰.  This is currently the *most accurate* of the
+# three views.  We expose it here so cross-module tests can compare all
+# three predictions head-to-head against observation.
+
+_DELTA_CL = D / F                     # = 0.15 — classical rail
+_GAP      = _DELTA_CL - DELTA_STAR    # ≈ 2.49×10⁻³
+
+ETA_B_V9 = gamma**3 * _GAP * DELTA_STAR * 8/9
+
+
+def eta_b_v9() -> dict:
+    """
+    Cathedral v9: η_B = γ³·Δ·δ★·(8/9)
+
+    All three views packaged together for direct comparison.
+    """
+    return {
+        "formula":     "η_B = γ³·Δ·δ★·(8/9)",
+        "prediction":  ETA_B_V9,
+        "observed":    ETA_B_OBSERVED,
+        "sigma":       ETA_B_SIGMA,
+        "error_pct":   (ETA_B_V9 - ETA_B_OBSERVED) / ETA_B_OBSERVED * 100,
+        "z_score":     (ETA_B_V9 - ETA_B_OBSERVED) / ETA_B_SIGMA,
+        "free_parameters": 0,
+    }
+
+
 def leptogenesis_mechanism() -> dict:
     """Cathedral leptogenesis from δ_CP = 197°."""
     return {

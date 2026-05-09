@@ -22,6 +22,23 @@ prime_spectral        — Icosahedral Laplacian ↔ Riemann zeros, Ramanujan
 metamaterials        — Photonic/phononic crystal design, drug binding sites
 swarm_intelligence   — 13-agent icosahedral swarm, consensus, satellite LEO
 gravitational_waves  — IKT-based GW detection, QNM ringdown, Cathedral SNR
+
+Test-coverage Wave (2026-05-09 — added by Claude)
+-------------------------------------------------
+cathedral_identities — programmatic identity engine: scan_identities,
+                       find_expressions_for, audit_known_identities
+                       1,067+ non-trivial identities surfaced from D=3.
+
+In addition, the following purely-additive enhancements were made:
+  - urt.baryon_asymmetry.eta_b_v9 / ETA_B_V9 — most accurate of the
+    three η_B closed forms (γ³·Δ·δ★·8/9 = 6.14e-10, within 0.4 % of
+    Planck 2018 observed 6.12e-10).
+  - urt.neutrinos.DELTA_CP_DEG — now canonical 197° (was 208°);
+    legacy formula preserved as DELTA_CP_DEG_LEGACY.
+  - urt.metrics.tau_avalanche — empty-input now returns NaN cleanly.
+
+See docs/BREAKTHROUGH_NOTES.md and docs/CASIMIR_REVERSE_ENGINEERING.md
+for the full audit trail and reverse-engineered Casimir candidate.
 """
 
 from .metrics import (
@@ -1830,7 +1847,22 @@ from .continued_fractions_cathedral import (
     cf_summary, print_cf_report,
 )
 
-__version__ = "2.9.36"
+# v2.9.37 — programmatic identity engine (added 2026-05-09)
+from .cathedral_identities import (
+    CATHEDRAL_INTEGERS,
+    scan_identities,
+    find_expressions_for,
+    extend_vocabulary,
+    audit_known_identities,
+)
+
+# v2.9.37 — third η_B closed form (most accurate of the three views)
+from .baryon_asymmetry import (
+    eta_b_v9,
+    ETA_B_V9,
+)
+
+__version__ = "2.9.37"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2243,4 +2275,9 @@ __all__ = [
     "IDENTITY_CASSINI_D", "IDENTITY_CASSINI_q", "IDENTITY_CASSINI_V",
     "ALL_FIB_IDENTITIES", "N_FIB_IDENTITIES", "ALL_FIB_EXACT",
     "fibonacci_lucas_summary", "print_fibonacci_lucas_report",
+    # v2.9.37 — programmatic identity engine
+    "CATHEDRAL_INTEGERS", "scan_identities", "find_expressions_for",
+    "extend_vocabulary", "audit_known_identities",
+    # v2.9.37 — third η_B closed form
+    "eta_b_v9", "ETA_B_V9",
 ]
