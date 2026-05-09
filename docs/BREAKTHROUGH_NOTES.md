@@ -318,3 +318,118 @@ factor is a Cathedral integer.
   magnitude off, wrong sign, wrong d-scaling).
 
 Final running totals: **6,639 tests pass + 7 xfail**.  Coverage 95 %.
+
+---
+
+## Wave 3 — Free-rein exploration (committed later same day)
+
+User invitation: *"explore the framework for new math extension physics
+any you think is worth exploring."*  Five new files:
+
+### `urt/cathedral_identities.py` + `tests/test_cathedral_identities.py`
+
+A **programmatic identity engine** that re-runs whenever the framework
+changes:
+
+  - `CATHEDRAL_INTEGERS` — canonical vocabulary of named expressions.
+  - `scan_identities()` — finds every X⊕Y=Z relation among named values.
+  - `find_expressions_for(target)` — given an empirical number, returns
+    every Cathedral expression that matches it.
+  - `audit_known_identities()` — regression for ~20 named identities.
+
+Running the scanner today surfaces **1,067 distinct non-trivial
+identities** among the Cathedral vocabulary.  Three new ones the
+scanner found are now first-class tests:
+
+  - `1/γ = D · D^D = 3 · 27 = 81`  (alternative to D⁴)
+  - `m_µ/m_e bare = D² · (F + D) = 9 · 23 = 207`  (alternative to D(G+D²))
+  - `1/α = N² − (F + V) = 169 − 32 = 137`  (alternative to N²−E−(D−1))
+  - `1/α = (G−D) + (G+F) = 57 + 80`  (bridges inflation + closure)
+
+### `tests/test_six_cycle_ladder.py` (10 tests)
+
+The Cathedral has identified **two** branches of the logistic 6-cycle
+(δ★ ≈ B₁, δ_cl ≈ B₄).  Are the other four (B₂≈0.483, B₃≈0.959,
+B₅≈0.490, B₆≈0.960) also physical?
+
+**Honest negative result**: none of the four matches any standard
+dimensionless observable (sin θ_C, sin²θ_W, golden-ratio fractions,
+1/√2, etc.) to better than 1.4 %.  The cycle is its own thing, not a
+hidden encoding of every PDG number.
+
+**But there *is* substructure**: the cycle has Z_3 × Z_2 form — three
+levels {≈0.149, ≈0.486, ≈0.960}, each level a close pair (separations
+0.0026, 0.0070, 0.0007).  And `arccos(B₃)+arccos(B₆))/2 ≈ 16.33°` is
+within 0.6° of 2·δ★° ≈ 16.90° — suggestive but not exact.
+
+### `tests/test_higher_d_cathedrals.py` (24 tests)
+
+K(D) = D + D² holds for D = 1, 2, 3 (verified) and **fails for D ≥ 4**
+(also verified).  The π-φ-e flow paper's claim of D=3 uniqueness is
+substantiated:
+
+  - D=1: γ=1 (trivial)
+  - D=2: hexagonal split is 3+3+1, not 4+9
+  - D=3: centred icosahedron splits exactly 4+9 ✓ → unique
+
+**Near-misses with Cathedral integers**:
+  - K(4) = 24 = 2V (Leech-related)
+  - K(8) = 240 = 4G = E_8 root count, predicted = D!·V = 72
+  - K(8) − D-D² = 168 = |PSL(2, F_7)| = J_2(N)/φ — a separate simple
+    group entirely.  D=8 has the *fingerprints* of a second Cathedral
+    of a different kind (octonions, Bott periodicity 2^D).
+
+### `tests/test_gravitational_deficit.py` (9 tests)
+
+User-supplied canon: the **1.0977° gravitational deficit** is the
+geometric origin of GR curvature, inertia, and the arrow of time.
+
+**Closed form proven exactly**:
+
+```
+deficit_rad  =  2π/F − 2·δ★         (machine-precision identity)
+ideal_plane  =  18°  =  360°/F      (one icosahedron face)
+physical_rail = 16.903°  =  2·δ★°
+holonomy_vortex = 376.903°  =  360° + 2·δ★°
+```
+
+Full-precision deficit: 1.0965° (doc quotes 1.0977° using 3-digit δ★).
+
+### `docs/CASIMIR_REVERSE_ENGINEERING.md` + `tests/test_casimir_candidate.py`
+
+The Cathedral's Casimir prediction is documented as **+0.124 ppm at
+d = 100 nm**, but the current code emits −2.16 (orders off, wrong
+d-scaling).
+
+**Reverse-engineered candidate formula**:
+
+```
+ΔF/F  =  (a₀/d)² · (D+1)/(D! + D)
+       =  (a₀/d)² · 4/9
+       =  1.245 × 10⁻⁷  at d=100 nm   (within 0.37 % of doc claim)
+```
+
+The 4/9 coefficient is exactly **the K₄/A₅ sector-size ratio**
+(4 coherent / 9 exhaust modes).  The dimensional factor (a₀/d)² is the
+ratio of Bohr radius (atomic-lattice scale) to plate separation.
+
+The candidate gives clean d-scaling (∝ 1/d²) and a sharp ladder of
+predictions for future tabletop Casimir experiments:
+
+| d (nm) | ΔF/F (ppm) candidate |
+|---|---|
+| 50  | +0.50 |
+| 100 | +0.124 |
+| 200 | +0.031 |
+| 500 | +0.005 |
+
+The ratio is dimensionless and uses only Cathedral integers + a₀.  This
+is presented as a **candidate**, not a fix — making the change canonical
+needs authorial sign-off.  The xfail in `test_casimir_cathedral_full.py`
+remains in force; once the candidate is adopted (or rejected), both this
+file and that xfail flip.
+
+---
+
+Final running totals: **6,707 tests pass + 7 xfail**.  Coverage ~95 %.
++407 tests added on this branch in three waves.
