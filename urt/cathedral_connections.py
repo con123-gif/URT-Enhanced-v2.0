@@ -210,6 +210,91 @@ def triangular_triplet() -> Dict[str, Any]:
     }
 
 
+# ── Connection 7: G = (D+1)·D·q + V·F = (D+1)·G ─────────────────────────
+
+def G_factorization() -> Dict[str, Any]:
+    """The order of A_5 factors cleanly through the small Cathedral primes.
+
+      G = (D+1) · D · q = 4 · 3 · 5 = 60        [icosahedral group order]
+      V · F = (D+1) · G  = 4 · 60 = 240          [= E_8 root count!]
+
+    The product V·F = (D+1)·G hits the E_8 root number 240 — a direct
+    bridge from the icosahedron's vertex/face counts to the largest
+    exceptional Lie group.
+    """
+    return {
+        "G_factorization":           {"D+1": D + 1, "D": D, "q": q,
+                                       "product": (D + 1) * D * q,
+                                       "equals_G": (D + 1) * D * q == G},
+        "VF_product":                V * F,
+        "VF_equals_4G":              V * F == 4 * G,
+        "VF_equals_E8_roots":        V * F == 240,
+        "explanation": (
+            "G = (D+1)·D·q factorizes the icosahedral group order through "
+            "the K_4 size, the spatial dimension, and the pentagon order. "
+            "V·F = 4G = E_8 root count."
+        ),
+    }
+
+
+# ── Connection 8: orbit-stabilizer triple {V, E, F} = {G/q, G/2, G/D} ────
+
+def orbit_stabilizer_triple() -> Dict[str, Any]:
+    """Orbit-stabilizer theorem applied to A_5 on the icosahedron.
+
+    A_5 acts transitively on the vertex/edge/face sets, with orbit
+    sizes (V, E, F) and stabilizer orders (q, 2, D):
+
+      V = 12 = G/q       (vertex stabilizer = 5-fold rotation, order q)
+      E = 30 = G/2       (edge stabilizer   = 180° flip, order 2 = D-1)
+      F = 20 = G/D       (face stabilizer   = 3-fold rotation, order D)
+
+    The three stabilizer orders {D-1, D, q} = {2, 3, 5} are the three
+    smallest primes — exactly the cyclic-prime subgroups embedded in A_5.
+    """
+    return {
+        "V_orbit_size":           V,
+        "V_via_stabilizer":       G // q,
+        "V_match":                V == G // q,
+
+        "E_orbit_size":           E,
+        "E_via_stabilizer":       G // 2,
+        "E_match":                E == G // 2,
+
+        "F_orbit_size":           F,
+        "F_via_stabilizer":       G // D,
+        "F_match":                F == G // D,
+
+        "stabilizer_orders":      [D - 1, D, q],
+        "stabilizer_orders_are_first_three_primes":
+                                  sorted([D - 1, D, q]) == [2, 3, 5],
+    }
+
+
+# ── Connection 9: vertex-face incidence ───────────────────────────────────
+
+def vertex_face_incidence() -> Dict[str, Any]:
+    """The icosahedron's vertex-face incidence equality:
+
+      D · F  =  q · V  =  G  =  60
+
+    Each face has D = 3 vertices (D · F = 60 incidences from face side),
+    each vertex has q = 5 faces (q · V = 60 incidences from vertex side).
+    Both count the same set, so D · F = q · V = G.
+
+    Combined with G = (D+1)·D·q, this gives F = (D+1)·q and V = (D+1)·D
+    — i.e. (D+1) is the K_4-size factor that bridges the two enumerations.
+    """
+    return {
+        "D_times_F":              D * F,
+        "q_times_V":              q * V,
+        "both_equal_G":           D * F == q * V == G,
+        "F_via_K4":               F == (D + 1) * q,
+        "V_via_K4":               V == (D + 1) * D,
+    }
+
+
+
 # ── End-to-end audit ─────────────────────────────────────────────────────
 
 def all_connections_audit() -> Dict[str, Any]:
@@ -221,6 +306,9 @@ def all_connections_audit() -> Dict[str, Any]:
         "spectrum_sector_sums":    spectrum_sector_sums(),
         "perfect_number_doublet":  perfect_number_doublet(),
         "triangular_triplet":      triangular_triplet(),
+        "G_factorization":         G_factorization(),
+        "orbit_stabilizer_triple": orbit_stabilizer_triple(),
+        "vertex_face_incidence":   vertex_face_incidence(),
     }
 
 
@@ -239,6 +327,16 @@ def all_connections_verify() -> bool:
         and a["triangular_triplet"]["T_2_is_D"]
         and a["triangular_triplet"]["T_3_is_D_factorial"]
         and a["triangular_triplet"]["T_7_is_sigma_V"]
+        and a["G_factorization"]["G_factorization"]["equals_G"]
+        and a["G_factorization"]["VF_equals_4G"]
+        and a["G_factorization"]["VF_equals_E8_roots"]
+        and a["orbit_stabilizer_triple"]["V_match"]
+        and a["orbit_stabilizer_triple"]["E_match"]
+        and a["orbit_stabilizer_triple"]["F_match"]
+        and a["orbit_stabilizer_triple"]["stabilizer_orders_are_first_three_primes"]
+        and a["vertex_face_incidence"]["both_equal_G"]
+        and a["vertex_face_incidence"]["F_via_K4"]
+        and a["vertex_face_incidence"]["V_via_K4"]
     )
 
 
@@ -284,6 +382,23 @@ def print_connections_report() -> None:
     print(f"    T_3 = {tt['T_3']} = D!")
     print(f"    T_7 = {tt['T_7']} = σ(V) = 2nd perfect")
 
+    gf = a["G_factorization"]
+    print(f"\n[7] G factorization")
+    print(f"    G = (D+1)·D·q = 4·3·5 = {gf['G_factorization']['product']}")
+    print(f"    V·F = {gf['VF_product']} = (D+1)·G = E_8 root count!")
+
+    os = a["orbit_stabilizer_triple"]
+    print(f"\n[8] Orbit-stabilizer triple")
+    print(f"    V = G/q  = {os['V_via_stabilizer']}  (vertex stab order = q)")
+    print(f"    E = G/2  = {os['E_via_stabilizer']}  (edge stab order   = D−1)")
+    print(f"    F = G/D  = {os['F_via_stabilizer']}  (face stab order   = D)")
+    print(f"    Stabilizer orders {{D−1, D, q}} = {{2, 3, 5}} — first three primes")
+
+    vf = a["vertex_face_incidence"]
+    print(f"\n[9] Vertex-face incidence equality")
+    print(f"    D·F = q·V = {vf['D_times_F']} = G")
+    print(f"    F = (D+1)·q,  V = (D+1)·D  — K_4 size bridges the two")
+
     print()
     print(bar)
     print(f" all_connections_verify() = {all_connections_verify()}")
@@ -298,6 +413,9 @@ __all__ = [
     "spectrum_sector_sums",
     "perfect_number_doublet",
     "triangular_triplet",
+    "G_factorization",
+    "orbit_stabilizer_triple",
+    "vertex_face_incidence",
     "all_connections_audit",
     "all_connections_verify",
     "print_connections_report",
