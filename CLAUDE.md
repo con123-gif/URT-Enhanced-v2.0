@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.41 — Cathedral Framework
+# URT Enhanced v2.9.42 — Cathedral Framework
 
 ## Repository Overview
 
@@ -489,8 +489,33 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 ### New Modules (v2.9.41 — Mathematical Connections)
 | File | Domain |
 |------|--------|
-| `urt/cathedral_connections.py` | Six clusters of new mathematical connections in the framework: pentagonal-number quartet, A₅ conjugacy classes & irreps in Cathedral form, K₄/A₅ spectrum sum split, perfect-number doublet, triangular triplet. |
-| `tests/test_cathedral_connections.py` | 34 tests verifying every connection. |
+| `urt/cathedral_connections.py` | Nine clusters: pentagonal quartet, A₅ conjugacy classes & irreps, K₄/A₅ spectrum sum split, perfect-number doublet, triangular triplet, G factorization (G = (D+1)·D·q with V·F = E₈ root count), orbit-stabilizer triple, vertex-face incidence equality. |
+| `tests/test_cathedral_connections.py` | 49 tests verifying every connection. |
+
+### New Modules (v2.9.42 — Cathedral Grand Tour across mathematics)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_grand_tour.py` | Five clusters of new connections between Cathedral integers and classical mathematical sequences: prime ladder p_(D-1)/p_D/p_(D!)/p_(D²·q) = D/q/N/197, Coxeter quartet h(A₄,D₄,E₆,E₈) = q/D!/V/E, Bernoulli/ζ denominators (ζ(6) = π⁶/(q·D^D·(D!+1))), arithmetic hits ((2^D)² = (D+1)^D, partition p hits D/q/E), Lie+Mathieu hits (G₂ has V roots, M₁₂/M₂₄ on V/2V points). |
+| `tests/test_cathedral_grand_tour.py` | 30 tests verifying every grand-tour connection. |
+
+### v2.9.42 Grand Tour Highlights
+
+**The Cathedral Prime Ladder**:
+```
+p_(D-1)   = p_2  =   3 = D
+p_D       = p_3  =   5 = q
+p_(D!)    = p_6  =  13 = N
+p_(D²·q)  = p_45 = 197 = δ_CP°
+```
+
+**The Coxeter Quartet** (Lie algebras whose Coxeter number is a Cathedral integer):
+```
+h(A_4) = q     h(D_4) = D!     h(E_6) = V     h(E_8) = E
+```
+
+**The ζ(6) miracle**: `ζ(6) = π⁶/945` where `945 = q · D^D · (D!+1)` — every factor a Cathedral integer.
+
+**E₈ as V·F**: the largest exceptional Lie group has `4G = V·F = (D+1)·G = 240` roots — the icosahedron's vertex/face product.
 
 ### v2.9.41 — The Pentagonal Quartet (genuinely new)
 
