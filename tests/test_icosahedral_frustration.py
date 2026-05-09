@@ -7,6 +7,9 @@ from urt.icosahedral_frustration import (
     gap_as_frustration_energy,
     dihedral_frustration_angle,
     four_facets_of_frustration,
+    dynamical_facet_of_frustration,
+    dimensional_facet_of_frustration,
+    six_facets_of_frustration,
     quasicrystal_realization,
     icosahedral_frustration_audit,
     icosahedral_frustration_audit_passes,
@@ -121,6 +124,74 @@ class TestQuasicrystal:
         assert qc["URT_pull_is_inverse_inflation"]
 
 
+class TestDynamicalFacet:
+    def test_rails_split(self):
+        """δ_cl ≠ δ★ — the rails split."""
+        d = dynamical_facet_of_frustration()
+        assert d["rails_split"]
+
+    def test_gap_is_about_2_5e3(self):
+        """Δ ≈ 2.49 × 10⁻³ — the residual frustration energy."""
+        d = dynamical_facet_of_frustration()
+        assert 2.0e-3 < d["gap_Delta"] < 3.0e-3
+
+    def test_delta_cl_is_D_over_F(self):
+        """δ_cl = D/F = 0.15 — the unfrustrated classical limit."""
+        from urt.shell_closure import D, F
+        d = dynamical_facet_of_frustration()
+        assert d["delta_cl"] == D / F == 0.15
+
+
+class TestDimensionalFacet:
+    def test_visible_is_4(self):
+        """Visible 4D = D + 1."""
+        from urt.shell_closure import D
+        d = dimensional_facet_of_frustration()
+        assert d["visible_dim"] == D + 1 == 4
+
+    def test_exhaust_is_9(self):
+        """Exhaust 9D = D! + D = D²."""
+        from urt.shell_closure import D
+        d = dimensional_facet_of_frustration()
+        assert d["exhaust_dim"] == factorial(D) + D == 9
+        assert d["exhaust_is_DD"]
+
+    def test_total_is_N(self):
+        """4 + 9 = 13 = N."""
+        from urt.shell_closure import N
+        d = dimensional_facet_of_frustration()
+        assert d["total"] == N
+
+
+class TestSixFacets:
+    def test_six_facets_dict_complete(self):
+        """six_facets_of_frustration() returns all six labelled facets."""
+        f = six_facets_of_frustration()
+        assert "geometric" in f
+        assert "algebraic" in f
+        assert "spectral" in f
+        assert "topological" in f
+        assert "dynamical" in f
+        assert "dimensional" in f
+
+    def test_includes_four_classical(self):
+        """The six-facet view contains the four classical ones unchanged."""
+        four = four_facets_of_frustration()
+        six = six_facets_of_frustration()
+        for key in ("geometric", "algebraic", "spectral", "topological"):
+            assert six[key] == four[key]
+
+    def test_dynamical_carries_gap(self):
+        """Dynamical facet carries the gap Δ > 0."""
+        f = six_facets_of_frustration()
+        assert f["dynamical"]["gap_Delta"] > 0
+
+    def test_dimensional_carries_9(self):
+        """Dimensional facet exposes the 9-dim exhaust."""
+        f = six_facets_of_frustration()
+        assert f["dimensional"]["exhaust_dim"] == 9
+
+
 class TestEndToEndAudit:
     def test_audit_passes(self):
         assert icosahedral_frustration_audit_passes()
@@ -130,3 +201,7 @@ class TestEndToEndAudit:
         assert "crystallographic_restriction" in a
         assert "gap_as_frustration_energy" in a
         assert "quasicrystal_realization" in a
+
+    def test_audit_includes_six_facets(self):
+        a = icosahedral_frustration_audit()
+        assert "six_facets" in a

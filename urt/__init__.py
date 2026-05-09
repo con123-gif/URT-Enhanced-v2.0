@@ -2098,15 +2098,45 @@ from .exhaust_dimensions import (
 )
 
 # v2.9.56 — icosahedral frustration: q = 5 is the forbidden crystallographic axis
+# v2.9.57 — extended to six facets (added dynamical, dimensional)
 from .icosahedral_frustration import (
     crystallographic_restriction_q,
     gap_as_frustration_energy,
     dihedral_frustration_angle,
     four_facets_of_frustration,
+    dynamical_facet_of_frustration,
+    dimensional_facet_of_frustration,
+    six_facets_of_frustration,
     quasicrystal_realization,
     icosahedral_frustration_audit,
     icosahedral_frustration_audit_passes,
     print_icosahedral_frustration_report,
+)
+
+# v2.9.57 — the 4/9 sector ratio: a D=3 fingerprint across 4 physics observables
+from .sector_ratio import (
+    sector_ratio_general,
+    sector_ratio_table,
+    sector_ratio_uniqueness,
+    k4_a5_sector_volumes,
+    casimir_4_over_9,
+    cosmology_4_over_9,
+    eta_b_prefactor_8_over_9,
+    sector_ratio_audit,
+    sector_ratio_audit_passes,
+    print_sector_ratio_report,
+)
+
+# v2.9.57 — self-reference cluster: when Cathedral integers compute themselves
+from .self_reference import (
+    number_theory_self_refs,
+    group_theory_self_refs,
+    cf_self_refs,
+    all_self_references,
+    self_reference_count,
+    self_reference_audit,
+    self_reference_audit_passes,
+    print_self_reference_report,
 )
 
 # v2.9.37 — third η_B closed form (most accurate of the three views)
@@ -2115,7 +2145,7 @@ from .baryon_asymmetry import (
     ETA_B_V9,
 )
 
-__version__ = "2.9.56"
+__version__ = "2.9.57"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2707,12 +2737,36 @@ __all__ = [
     "exhaust_dimensions_audit_passes",
     "print_exhaust_dimensions_report",
     # v2.9.56 — icosahedral frustration
+    # v2.9.57 — extended to six facets
     "crystallographic_restriction_q",
     "gap_as_frustration_energy",
     "dihedral_frustration_angle",
     "four_facets_of_frustration",
+    "dynamical_facet_of_frustration",
+    "dimensional_facet_of_frustration",
+    "six_facets_of_frustration",
     "quasicrystal_realization",
     "icosahedral_frustration_audit",
     "icosahedral_frustration_audit_passes",
     "print_icosahedral_frustration_report",
+    # v2.9.57 — the 4/9 sector ratio fingerprint
+    "sector_ratio_general",
+    "sector_ratio_table",
+    "sector_ratio_uniqueness",
+    "k4_a5_sector_volumes",
+    "casimir_4_over_9",
+    "cosmology_4_over_9",
+    "eta_b_prefactor_8_over_9",
+    "sector_ratio_audit",
+    "sector_ratio_audit_passes",
+    "print_sector_ratio_report",
+    # v2.9.57 — self-reference cluster
+    "number_theory_self_refs",
+    "group_theory_self_refs",
+    "cf_self_refs",
+    "all_self_references",
+    "self_reference_count",
+    "self_reference_audit",
+    "self_reference_audit_passes",
+    "print_self_reference_report",
 ]

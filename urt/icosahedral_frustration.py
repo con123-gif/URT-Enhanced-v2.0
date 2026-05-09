@@ -38,13 +38,17 @@ The icosahedral frustration is the same phenomenon as:
   - icosahedral water clusters in liquid phase
   - virus capsid (icosahedral T-number quasi-equivalent)
 
-The framework's frustration takes four interlocking facets:
-   1. GEOMETRIC : 12 spheres can kiss but cannot tile periodically
-   2. ALGEBRAIC : A_5 (= G = 60) is non-solvable (Galois obstruction)
-   3. SPECTRAL  : graph Laplacian has multiplicity-2 eigenvalues at λ=D
+The framework's frustration takes SIX interlocking facets:
+   1. GEOMETRIC   : 12 spheres can kiss but cannot tile periodically
+   2. ALGEBRAIC   : A_5 (= G = 60) is non-solvable (Galois obstruction)
+   3. SPECTRAL    : graph Laplacian has multiplicity-2 eigenvalues at λ=D
    4. TOPOLOGICAL : H_3 ⋊ K_4 preserves something H_3 alone cannot
+   5. DYNAMICAL   : the classical rail δ_cl misses the vacuum δ★
+                    by Δ ≈ 2.49 × 10⁻³  (the gap IS the frustration)
+   6. DIMENSIONAL : q-fold incompatibility forces 9 extra dimensions
+                    (the A_5 dark exhaust)
 
-All four are the same icosahedral frustration viewed differently.
+All six are the same icosahedral frustration viewed differently.
 """
 from __future__ import annotations
 
@@ -173,6 +177,82 @@ def four_facets_of_frustration() -> Dict[str, Any]:
     }
 
 
+# ── Two more facets — dynamical and dimensional ──────────────────────────
+
+def dynamical_facet_of_frustration() -> Dict[str, Any]:
+    """The classical rail δ_cl = D/F = 0.15 misses the vacuum δ★ ≈ 0.14751
+    by Δ = δ_cl − δ★ ≈ 2.49 × 10⁻³.
+
+    This gap IS the frustration energy.  Without frustration the two
+    rails would coincide and the universe would have:
+        - no matter–antimatter asymmetry η_B
+        - no separation between visible and dark sectors
+        - no thermodynamic arrow of time
+    """
+    delta_cl = D / F
+    Delta = delta_cl - DELTA_STAR
+    return {
+        "delta_cl":           delta_cl,
+        "delta_star":         DELTA_STAR,
+        "gap_Delta":          Delta,
+        "rails_split":        Delta > 0,
+        "explanation":        (
+            "The classical rail δ_cl is the unfrustrated UV fixed point.  "
+            "δ★ is the icosahedrally-frustrated vacuum.  The gap Δ between "
+            "them is the residual frustration energy."
+        ),
+    }
+
+
+def dimensional_facet_of_frustration() -> Dict[str, Any]:
+    """q-fold rotational symmetry cannot embed in a periodic 3D lattice
+    (crystallographic restriction theorem).  The framework resolves this
+    by extending the visible 4D spacetime by 9 extra dimensions —
+    the A_5 dark exhaust:
+
+        13  =  4   +   9
+            =  K_4 + A_5
+            = (D+1) + (D!+D)
+            = (D+1) + D²
+
+    The 9 extra dims are forced by the q-incompatibility of the
+    visible 4D world.
+    """
+    visible = D + 1
+    exhaust = factorial(D) + D
+    return {
+        "visible_dim":        visible,         # 4
+        "exhaust_dim":        exhaust,         # 9
+        "total":              visible + exhaust,  # 13
+        "exhaust_is_DD":      exhaust == D * D,
+        "forced_by":          "q-fold incompatibility with periodic 3D lattice",
+        "explanation":        (
+            "Crystallographic restriction forbids 5-fold periodicity, so "
+            "the framework extends 4D spacetime by D² = 9 extra dimensions "
+            "— the A_5 dark exhaust where antimatter / dark sector live."
+        ),
+    }
+
+
+def six_facets_of_frustration() -> Dict[str, Any]:
+    """The full six-faceted view: classical four + dynamical + dimensional.
+
+    All six are the same icosahedral frustration viewed differently:
+        1. GEOMETRIC   — 12 vertices on S², no periodic lattice
+        2. ALGEBRAIC   — A_5 non-solvable
+        3. SPECTRAL    — Laplacian multiplicity 2 at λ = D
+        4. TOPOLOGICAL — H_3 ⋊ K_4 vs H_3 alone
+        5. DYNAMICAL   — δ_cl ≠ δ★ creates the gap Δ
+        6. DIMENSIONAL — 9 extra dims forced by q-incompatibility
+    """
+    four = four_facets_of_frustration()
+    return {
+        **four,
+        "dynamical":     dynamical_facet_of_frustration(),
+        "dimensional":   dimensional_facet_of_frustration(),
+    }
+
+
 # ── Quasicrystal connection ──────────────────────────────────────────────
 
 def quasicrystal_realization() -> Dict[str, Any]:
@@ -211,6 +291,7 @@ def icosahedral_frustration_audit() -> Dict[str, Any]:
         "gap_as_frustration_energy":    gap_as_frustration_energy(),
         "dihedral_frustration_angle":   dihedral_frustration_angle(),
         "four_facets":                  four_facets_of_frustration(),
+        "six_facets":                   six_facets_of_frustration(),
         "quasicrystal_realization":     quasicrystal_realization(),
     }
 
@@ -281,6 +362,9 @@ __all__ = [
     "gap_as_frustration_energy",
     "dihedral_frustration_angle",
     "four_facets_of_frustration",
+    "dynamical_facet_of_frustration",
+    "dimensional_facet_of_frustration",
+    "six_facets_of_frustration",
     "quasicrystal_realization",
     "icosahedral_frustration_audit",
     "icosahedral_frustration_audit_passes",
