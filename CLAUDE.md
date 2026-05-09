@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.49 — Cathedral Framework
+# URT Enhanced v2.9.50 — Cathedral Framework
 
 ## Repository Overview
 
@@ -155,7 +155,7 @@ of the icosahedron — a one-line geometric expression.
 
 ### Where the Cathedral integers appear, by subject
 
-The framework now contains 65 verified clusters across 9 CI-tested
+The framework now contains 72 verified clusters across 10 CI-tested
 "tour" modules.  By subject:
 
 **Number theory**
@@ -255,6 +255,20 @@ The framework now contains 65 verified clusters across 9 CI-tested
   - Universal upper critical dimension: `d_uc = D+1 = 4` (Ising, Potts, SAW, Lifshitz, O(N) σ-model)
   - Altland-Zirnbauer ten-fold way (topological insulators): `10 = 2q` classes = (D-1) complex + 2^D real
 
+**Coding theory & quantum codes**
+  - Hamming code `[D!+1, D+1, D]` — all parameters Cathedral
+  - Extended Golay `[2V, V, 2^D]` — all parameters Cathedral!
+  - 5-qubit perfect QEC `[[q, 1, D]]`, Steane `[[D!+1, 1, D]]`, Shor `[[D², 1, D]]`
+  - Surface code FT threshold ≈ γ = 1/D⁴ ≈ 1.23 %
+
+**Operads, cluster algebras, quaternions, tropical geometry**
+  - Associative operad `Ass(q) = (q-1)! = 24 = 2V`
+  - Pre-Lie operad `PreLie(D) = D^(D-1) = D² = 9`
+  - Catalan `C_D = q` (type A_(D-1) cluster count)
+  - Quaternion algebra `dim_R H = D+1`; Hurwitz units `2V`; Lipschitz units `2^D`
+  - Lagrange 4-square theorem: every n is sum of `D+1` squares
+  - Tropical genus moduli match Riemann (`3g-3` lands on D, D!, V, E)
+
 **String theory critical dimensions**
   - Bosonic: `2N`,  super: `2q`,  M-theory: `D!+q`
 
@@ -300,13 +314,15 @@ from urt import (
     all_classical_tour_verify,    # 7 classical clusters
     all_advanced_tour_verify,     # 7 advanced clusters
     all_topological_tour_verify,  # 8 topological-tour clusters
+    all_codes_tour_verify,        # 7 codes-and-algebras clusters
 )
-assert all([                      # 65 clusters, machine-precision
+assert all([                      # 72 clusters, machine-precision
     all_steps_verify(),           all_connections_verify(),
     all_grand_tour_verify(),      all_deep_tour_verify(),
     all_modular_tour_verify(),    all_quantum_lie_tour_verify(),
     all_geometric_tour_verify(),  all_classical_tour_verify(),
     all_advanced_tour_verify(),   all_topological_tour_verify(),
+    all_codes_tour_verify(),
 ])
 ```
 
@@ -324,6 +340,7 @@ assert all([                      # 65 clusters, machine-precision
 | `urt.cathedral_classical_tour` | 7 | Polyhedron counts, Heegner = D², magic squares, Dyson β, units, Mersenne, Mathieu |
 | `urt.cathedral_advanced_tour` | 7 | K_n(Z), crystallography, Ising, SO(n), Stirling-1, TMF, PSL(2,7) |
 | `urt.cathedral_topological_tour` | 8 | K3 invariants, Riemann moduli, Hadamard orders, spherical harmonics, AZ ten-fold way, binary polyhedral groups, SU(2) instantons, d_uc |
+| `urt.cathedral_codes_tour` | 7 | Hamming/Golay codes, QEC (5-qubit/Steane/Shor), operad dims, cluster algebras (C_D = q), quaternions, tropical, γ = QEC threshold |
 
 Plus the predictions registry:
 | `urt.predictions_registry` | 17 entries | 13 confirmed (median 0.07 % rel-err), 1 predicted, 3 open |
