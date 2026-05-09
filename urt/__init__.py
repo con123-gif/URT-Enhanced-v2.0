@@ -1978,13 +1978,28 @@ from .cathedral_geometric_tour import (
     print_geometric_tour_report,
 )
 
+# v2.9.47 — classical tour: Archimedean+Catalan = N, Heegner = D²,
+# magic squares, Dyson β, units, Mersenne, Mathieu structure
+from .cathedral_classical_tour import (
+    polyhedron_counts,
+    heegner_number_count,
+    magic_square_constants,
+    dyson_beta_classes,
+    algebraic_integer_units,
+    mersenne_primes_at_cathedral_exponents,
+    mathieu_structure_constants,
+    all_classical_tour_audit,
+    all_classical_tour_verify,
+    print_classical_tour_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.46"
+__version__ = "2.9.47"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2487,4 +2502,15 @@ __all__ = [
     "all_geometric_tour_audit",
     "all_geometric_tour_verify",
     "print_geometric_tour_report",
+    # v2.9.47 — classical tour
+    "polyhedron_counts",
+    "heegner_number_count",
+    "magic_square_constants",
+    "dyson_beta_classes",
+    "algebraic_integer_units",
+    "mersenne_primes_at_cathedral_exponents",
+    "mathieu_structure_constants",
+    "all_classical_tour_audit",
+    "all_classical_tour_verify",
+    "print_classical_tour_report",
 ]

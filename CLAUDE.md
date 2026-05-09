@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.46 — Cathedral Framework
+# URT Enhanced v2.9.47 — Cathedral Framework
 
 ## Repository Overview
 
@@ -521,6 +521,27 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 |------|--------|
 | `urt/cathedral_geometric_tour.py` | Seven clusters of fifth-wave connections: del Pezzo (-1)-curve counts (d=1: V·F, d=3: D^D, d=4: 2^(D+1), d=5: 2q, d=6: D!), all 5 Platonic Schläfli symbols are Cathedral pairs, **all known kissing numbers K(2..8) are Cathedral expressions**, Euler totient φ(N) = V (self-reference), 3×3 Latin squares L(D) = V, smallest knot invariants (trefoil = D crossings, figure-8 det = q), Hopf fibration target dims {1, D-1, D+1, 2^D}. |
 | `tests/test_cathedral_geometric_tour.py` | 26 tests verifying every connection. |
+
+### New Modules (v2.9.47 — Cathedral Classical Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_classical_tour.py` | Seven clusters of sixth-wave connections: **# of Archimedean solids = N = # of Catalan solids** (!!), exactly D² = 9 Heegner numbers, 3×3 magic square constant = D·q = 15, Dyson β-classes {1, D-1, D+1}, algebraic-integer ring units (Z[i]: D+1, Z[ω]: D!, Z: D-1), Mersenne primes M_D, M_q, M_N, Mathieu groups act on V/2V points. |
+| `tests/test_cathedral_classical_tour.py` | 27 tests verifying every connection. |
+
+### v2.9.47 Classical Tour Headlines
+
+**Archimedean solids count = N = Catalan solids count**:
+```
+# Platonic = q,  # Archimedean = N,  # Catalan = N,  # Kepler-Poinsot = D+1,
+# uniform = q²·D, # Johnson = D!·V + F
+```
+Five of six classical polyhedron families have Cathedral counts.
+
+**Exactly D² = 9 Heegner numbers**: there are precisely 9 imaginary quadratic fields with class number 1 (Stark-Baker-Heegner theorem). The Cathedral predicts 9 = D².
+
+**3×3 magic square constant = D·q = 15** (the universal Lo Shu constant) — same Cathedral expression as |order-2 conjugacy class of A_5| and the third partial quotient of CF(π).
+
+**Mersenne primes at Cathedral exponents**: M_D = 7, M_q = 31, M_N = 8191 — all prime.
 
 ### v2.9.46 Geometric Tour Headlines
 
