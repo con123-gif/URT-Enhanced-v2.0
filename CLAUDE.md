@@ -770,6 +770,167 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 | `urt/cathedral_advanced_tour.py` | Seven clusters of seventh-wave connections: Quillen K-theory K_n(Z) (K_3 = Z/((D+1)·V), **K_7 = Z/(V·F)** = E_8 root quotient AGAIN), all 6 crystallographic group counts (230 = V·F − 2q, 17 wallpaper, 7 frieze, 32 point, 14 Bravais), 2D Ising critical exponents (β = 1/2^D, **δ = D·q = 15**, η = 1/(D+1)), all SO(n) dims for n=3..6 are Cathedral, Stirling-1 c(q,D) = 35 = ARF d_35, TMF period (2V)² with Hopf orders {D-1, 2V, V·F}, PSL(2,7) order = 2^D · D · (D!+1) = 168. |
 | `tests/test_cathedral_advanced_tour.py` | 24 tests verifying every connection. |
 
+### v2.9.48 Advanced Tour Headlines
+
+**K_7(Z) = Z/240**: the 7th algebraic K-theory group of the integers has the **same** order as |π_7^s| and as the E_8 root count. Three deep mathematical objects independently reach the Cathedral integer V·F = 240.
+
+**All 6 crystallographic group counts are Cathedral**:
+```
+3D space groups = V·F − 2q = 230   wallpaper = N+D+1 = 17
+Frieze = D!+1 = 7   crystal systems = D!+1 = 7
+Point groups = 2^q = 32   Bravais = N+1 = 14
+```
+
+**2D Ising δ = 15 = D·q**: the same Cathedral expression appears as the Lo Shu magic constant, |order-2 conjugacy class of A_5|, and CF(π) third partial quotient.
+
+**Stirling first-kind c(q, D) = 35 = ARF d_35**: the number of permutations of q elements with D cycles equals the ARF residue d_35.
+
+### v2.9.47 Classical Tour Headlines
+
+**Archimedean solids count = N = Catalan solids count**:
+```
+# Platonic = q,  # Archimedean = N,  # Catalan = N,  # Kepler-Poinsot = D+1,
+# uniform = q²·D, # Johnson = D!·V + F
+```
+Five of six classical polyhedron families have Cathedral counts.
+
+**Exactly D² = 9 Heegner numbers**: there are precisely 9 imaginary quadratic fields with class number 1 (Stark-Baker-Heegner theorem). The Cathedral predicts 9 = D².
+
+**3×3 magic square constant = D·q = 15** (the universal Lo Shu constant) — same Cathedral expression as |order-2 conjugacy class of A_5| and the third partial quotient of CF(π).
+
+**Mersenne primes at Cathedral exponents**: M_D = 7, M_q = 31, M_N = 8191 — all prime.
+
+### v2.9.46 Geometric Tour Headlines
+
+**All known kissing numbers K(d) for d=2..8 are Cathedral expressions**:
+```
+K(2)=D!  K(3)=V  K(4)=2V  K(5)=2F  K(6)=D!·V  K(7)=2G+D!  K(8)=V·F
+```
+
+**φ(N) = V**: the Euler totient of N equals V — Cathedral self-reference. The cyclotomic field Q(ζ_N) has degree V over Q.
+
+**Latin squares L(D) = V**: there are exactly V = 12 distinct 3×3 Latin squares.
+
+**Del Pezzo (-1)-curve counts**: 5 of 6 are Cathedral expressions; d=3 surface has D^D = 27 (-1)-curves, d=1 surface has E_8 root count = V·F.
+
+### v2.9.45 Quantum-Lie Tour Headlines
+
+**SU(2)_D quantum dimensions are golden**:
+```
+SU(2) at level D=3:  [1] = 1,  [2] = φ,  [3] = φ,  [4] = 1
+```
+The same φ that the URT pull μ = φ−1 requires appears as the quantum dimension of irreps of SU(2) Chern-Simons at level D=3. These are the Fibonacci-anyon dimensions.
+
+**All eleven Lie-algebra root counts are Cathedral**:
+```
+G_2 = V       A_4 = F       A_5 = E       B_4 = 2^q
+C_4 = 2^q     D_4 = 2V      D_5 = 2F      F_4 = (D+1)·V
+E_6 = D!·V    E_7 = 2G+D!   E_8 = V·F = (D+1)·G
+```
+
+**Free Lie algebra L_n(D) is self-referential**: `L_1(D) = D, L_2(D) = D, L_3(D) = 2^D`.
+
+**Galois G = 60 is uniquely the obstruction to radical solvability**: |A_5| = G is the smallest non-solvable group; degree q = 5 is the smallest insoluble polynomial degree.
+
+### v2.9.44 Modular Tour Headlines
+
+**E_4 Eisenstein leading coefficient = V·F**:
+```
+E_4(τ) = 1 + 240·∑σ_3(n)q^n,    240 = V·F = (D+1)·G = E_8 root count
+```
+The Eisenstein series E_4 — keystone of modular forms — has leading coefficient exactly equal to V·F, the icosahedron's vertex × face count.
+
+**Modular discriminant weight = V**:
+```
+Δ(τ) has weight 12 = V,    factor (1-q^n)^24 with 24 = 2V
+```
+
+**A_5 invariant ring degrees = {D-1, D!, 2q, D·q}**: classical invariant theory gives degrees that are pure Cathedral.
+
+**X_0(13) is genus 0**: N=13 is the largest prime in the special list of N where the modular curve X_0(N) has genus 0.
+
+**Golden ratio entry is at A_q**: the φ that the framework requires (μ = φ − 1 in URT iteration) first appears in alternating-group character theory exactly at n = q = 5.
+
+### v2.9.43 Deep Tour Headlines
+
+**Heegner j-invariant Cathedral cubes**:
+```
+j(i)         = 1728      = V³                    (Gaussian integer)
+j(τ_-7)      = -3375     = -(D·q)³               (D·q = order-2 conjugacy class size)
+j(τ_-8)      = 8000      = F³
+j(τ_-43)     = -884736000 = -(16·G)³
+```
+Four out of seven non-trivial Heegner j-values are Cathedral cubes.
+
+**Stable homotopy = E₈ roots**: `|π_7^s| = 240 = V·F = (D+1)·G` — same number as the E₈ root count, surfaced by the framework as V·F.
+
+**CF(π) opens with three Cathedral integers**: `[D; D!+1, D·q, ...]` — the third partial quotient of π is exactly `|order-2 conjugacy class of A_5|`.
+
+### v2.9.42 Grand Tour Highlights
+
+**The Cathedral Prime Ladder**:
+```
+p_(D-1)   = p_2  =   3 = D
+p_D       = p_3  =   5 = q
+p_(D!)    = p_6  =  13 = N
+p_(D²·q)  = p_45 = 197 = δ_CP°
+```
+
+**The Coxeter Quartet** (Lie algebras whose Coxeter number is a Cathedral integer):
+```
+h(A_4) = q     h(D_4) = D!     h(E_6) = V     h(E_8) = E
+```
+
+**The ζ(6) miracle**: `ζ(6) = π⁶/945` where `945 = q · D^D · (D!+1)` — every factor a Cathedral integer.
+
+**E₈ as V·F**: the largest exceptional Lie group has `4G = V·F = (D+1)·G = 240` roots — the icosahedron's vertex/face product.
+
+### v2.9.41 — The Pentagonal Quartet (genuinely new)
+
+**Four Cathedral integers are *all* pentagonal numbers, indexed by Cathedral integers themselves**:
+
+| Cathedral integer | Pentagonal P_n = n(3n−1)/2 | Index |
+|---|---|---|
+| q = 5  | P_2 = 5  | n = D − 1 |
+| V = 12 | P_3 = 12 | n = D |
+| ARF d_35 = 35 | P_5 = 35 | n = q |
+| ARF d_51 = 51 | P_6 = 51 | n = q + 1 |
+
+So pentagonal indexing carries the K₄ sector sizes (q, V) **and** the ARF residues (d_35, d_51) — the same sequence threading two different layers of the framework.
+
+### v2.9.41 — A₅ in Cathedral form (consolidated)
+
+```
+Conjugacy class sizes:  {1, D·q, F, V, V}     sum = G = |A_5|
+Irrep dimensions:       {1, D, D, D+1, q}     Σdim² = G   (Burnside)
+                                              # irreps  = q
+```
+
+### v2.9.41 — K₄ ⊕ A₅ spectrum sum split
+
+```
+tr(L|K_4) =  0+3+3+5  =  11
+tr(L|A_5) =  5+5+5+5+5+7+7+9+13  =  61
+total     =  72  =  D!·V                       (= trace of L)
+```
+
+### v2.9.41 — Perfect numbers in the Cathedral
+
+```
+1st perfect: 6  = D!         (σ(D!) = 12 = 2·D!)
+2nd perfect: 28 = σ(V)       (σ(σ(V)) = 56 = 2·28)
+```
+
+### v2.9.41 — Triangular triplet
+
+```
+T_2 = 3 = D
+T_3 = 6 = D!
+T_7 = 28 = σ(V) = 2nd perfect
+```
+
+CI gate: `from urt import all_connections_verify; assert all_connections_verify()`.
+
 ### New Modules (v2.9.40 — Predictions Registry)
 | File | Domain |
 |------|--------|
