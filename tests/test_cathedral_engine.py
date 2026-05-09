@@ -20,19 +20,14 @@ from urt.cathedral_engine import (
 )
 
 
-# ── Coefficient identities (PDF §3) ───────────────────────────────────────
-
 class TestPiPhiEFlowCoefficients:
-    """The three Euler coefficients are 1/(8π), 1/(4π), φ-1 — all derived
-    from spherical Laplace-Beltrami + golden-ratio self-similarity."""
-
     def test_eta_is_one_over_8pi(self):
         assert ETA == 1 / (8 * pi)
         assert ETA == pytest.approx(0.03979, abs=1e-4)
 
     def test_eta_L_is_one_over_4pi(self):
         assert ETA_LAPLACIAN == 1 / (4 * pi)
-        assert ETA_LAPLACIAN == 2 * ETA       # exactly 2× the learning rate
+        assert ETA_LAPLACIAN == 2 * ETA
 
     def test_mu_is_phi_minus_one(self):
         phi = (1 + sqrt(5)) / 2
@@ -40,17 +35,13 @@ class TestPiPhiEFlowCoefficients:
         assert MU_PULL == pytest.approx(0.618033, abs=1e-5)
 
     def test_rational_approximations_are_within_1pct(self):
-        """The URT rule's 0.04, 0.08, 0.6 are inside the contraction ball."""
         assert abs(ETA_RAT     - ETA)           / ETA           < 0.02
         assert abs(ETA_LAP_RAT - ETA_LAPLACIAN) / ETA_LAPLACIAN < 0.02
         assert abs(MU_RAT      - MU_PULL)       / MU_PULL       < 0.04
 
     def test_tau_is_graph_diameter(self):
-        """τ ≈ 10 = ⌈graph diameter⌉ for G_{13} (PDF §3)."""
         assert TAU_RELAX == 10
 
-
-# ── G_{13} structure ─────────────────────────────────────────────────────
 
 class TestGraphStructure:
     def test_adjacency_is_symmetric(self):
@@ -67,35 +58,24 @@ class TestGraphStructure:
         assert A[0, 1:].sum() == 12
 
     def test_laplacian_smallest_eigenvalue_is_zero(self):
-        """The connected-graph Laplacian has λ_min = 0 (constant mode)."""
         L = cathedral_laplacian()
         eigs = np.linalg.eigvalsh(L)
         assert eigs[0] == pytest.approx(0, abs=1e-10)
 
     def test_laplacian_fiedler_value_is_3(self):
-        """The algebraic connectivity λ_2 = 3 = D, the spatial dimension."""
         L = cathedral_laplacian()
         eigs = np.sort(np.linalg.eigvalsh(L))
         assert eigs[1] == pytest.approx(3.0, abs=1e-9)
 
 
-# ── Dynamical engine (URT iteration) ─────────────────────────────────────
-
 class TestUrtEvolve:
     def test_converges_to_a_rail(self):
-        """Random initial conditions converge to one of the two rails:
-        δ★ ≈ 0.147 (vacuum) or δ_cl = D/F = 0.15 (classical), or in
-        between.  The key qualitative claim is that the field stops
-        being chaotic and lands in the [0.10, 0.25] band — the
-        13-shell attractor."""
         from urt.cathedral_engine import delta_star, delta_cl
         np.random.seed(0)
         x0 = np.random.uniform(0.1, 0.3, 13)
         x_final = urt_evolve(x0, steps=200)
         m = np.mean(x_final)
-        # Final mean lands in the rails band [δ★, ~0.25]
         assert delta_star * 0.5 < m < 0.30
-        # And the field is no longer broadly distributed (chaos → structure)
         assert np.std(x_final) < 0.05
 
     def test_output_inside_clamp_bounds(self):
@@ -111,40 +91,28 @@ class TestUrtEvolve:
         assert np.allclose(a, b)
 
     def test_exact_coefficients_also_settle(self):
-        """Using the exact 1/(8π), 1/(4π), φ-1 coefficients also settles
-        into a low-variance attractor (the rails band)."""
         np.random.seed(1)
         x0 = np.random.uniform(0.1, 0.3, 13)
         x_final = urt_evolve(x0, steps=200,
                               eta=ETA, eta_L=ETA_LAPLACIAN, mu=MU_PULL)
-        assert np.std(x_final) < 0.05      # converged to a rail
+        assert np.std(x_final) < 0.05
 
-
-# ── The narrative arc: chaos → 13-shell → rails → gap ────────────────────
 
 class TestNarrativeArc:
-    """The user's qualitative description of the framework:
-       1. Pure chaos (broad random initial state)
-       2. URT flow brings it to the 13-shell attractor
-       3. Structure forms (low variance)
-       4. The two rails split (δ★ vacuum vs δ_cl = D/F = 0.15 classical)
-       5. The gap Δ = δ_cl − δ★ ≈ 2.49×10⁻³ forms — produces η_B etc.
-    """
+    """chaos → 13-shell → rails → gap → η_B (universe from chaos)."""
 
     def test_step1_chaotic_initial_condition_has_high_variance(self):
         np.random.seed(7)
-        x0 = np.random.uniform(0.0, 0.5, 13)     # broad random
-        assert np.std(x0) > 0.10                  # chaotic
+        x0 = np.random.uniform(0.0, 0.5, 13)
+        assert np.std(x0) > 0.10
 
     def test_step2_urt_evolution_collapses_variance(self):
-        """The flow is a contraction: σ(x) decreases monotonically (~)."""
         np.random.seed(7)
         x0 = np.random.uniform(0.0, 0.5, 13)
         x_final = urt_evolve(x0, steps=200)
-        assert np.std(x_final) < 0.5 * np.std(x0)   # contraction
+        assert np.std(x_final) < 0.5 * np.std(x0)
 
     def test_step3_evolved_field_lands_in_rails_band(self):
-        """After convergence the field sits between δ★ and ~3·δ★."""
         from urt.cathedral_engine import delta_star
         np.random.seed(7)
         x0 = np.random.uniform(0.0, 0.5, 13)
@@ -153,46 +121,100 @@ class TestNarrativeArc:
         assert delta_star * 0.5 < m < 3 * delta_star
 
     def test_step4_two_rails_are_well_separated(self):
-        """δ★ vacuum and δ_cl = D/F = 0.15 classical are distinct."""
         from urt.cathedral_engine import delta_star, delta_cl
         assert delta_cl > delta_star
-        # Visible gap, not numerical noise
         assert (delta_cl - delta_star) > 1e-3
 
     def test_step5_gap_drives_eta_b(self):
-        """The gap Δ = δ_cl − δ★ produces η_B via γ³·Δ·δ★·8/9."""
         from urt.cathedral_engine import delta_star, delta_cl, gamma, Delta
         eta_B = gamma**3 * Delta * delta_star * 8 / 9
-        # Within 1% of Planck 2018 observed
         assert abs(eta_B - 6.12e-10) / 6.12e-10 < 0.01
 
 
-# ── Consciousness integration metric ─────────────────────────────────────
+class TestLagrangianView:
+    """The engine is the over-damped limit of L = (1/2)|δ̇|² − V(δ)."""
+
+    def test_potential_at_uniform_delta_star_is_minimum(self):
+        from urt.cathedral_engine import cathedral_potential, delta_star
+        x_star  = np.full(13, delta_star)
+        x_other = np.full(13, 0.20)
+        assert cathedral_potential(x_star) < cathedral_potential(x_other)
+
+    def test_potential_at_uniform_delta_star_is_machine_zero(self):
+        from urt.cathedral_engine import cathedral_potential, delta_star
+        v = cathedral_potential(np.full(13, delta_star))
+        assert abs(v) < 1e-12
+
+    def test_gradient_is_zero_at_uniform_delta_star(self):
+        from urt.cathedral_engine import cathedral_potential_gradient, delta_star
+        x = np.full(13, delta_star)
+        g = cathedral_potential_gradient(x)
+        assert np.max(np.abs(g)) < 1e-12
+
+    def test_lagrangian_returns_finite_number(self):
+        from urt.cathedral_engine import cathedral_flow_lagrangian, delta_star
+        x = np.full(13, delta_star)
+        v = np.zeros(13)
+        L = cathedral_flow_lagrangian(x, v)
+        assert np.isfinite(L)
+
+
+class TestUnificationView:
+    """K₄ ⊕ A₅ = 13 is one object viewed many ways."""
+
+    def test_size_split_is_4_and_9(self):
+        from urt.cathedral_engine import cathedral_unification
+        u = cathedral_unification()
+        assert u["size"]["K4"] == 4
+        assert u["size"]["A5"] == 9
+        assert u["size"]["sum"] == 13
+
+    def test_spectrum_split_first_four_is_K4(self):
+        from urt.cathedral_engine import cathedral_unification
+        u = cathedral_unification()
+        K4_lams = u["spectrum_split"]["K4_lambdas"]
+        assert K4_lams[0] == pytest.approx(0,  abs=1e-9)
+        assert K4_lams[3] <= 5 + 1e-9
+
+    def test_cosmology_split_is_omega_m_omega_lambda(self):
+        from urt.cathedral_engine import cathedral_unification
+        u = cathedral_unification()
+        assert u["cosmology_split"]["Omega_m"] == 4 / 13
+        assert u["cosmology_split"]["Omega_Lambda"] == 9 / 13
+        assert (u["cosmology_split"]["Omega_m"] +
+                u["cosmology_split"]["Omega_Lambda"]) == 13/13
+
+    def test_casimir_ratio_is_4_over_9(self):
+        from urt.cathedral_engine import cathedral_unification
+        u = cathedral_unification()
+        assert u["casimir_ratio"]["ratio"] == 4 / 9
+
+    def test_unifying_axiom_present(self):
+        from urt.cathedral_engine import cathedral_unification
+        u = cathedral_unification()
+        assert "K₄ ⊕ A₅" in u["unifying_axiom"]
+        assert "single Cathedral object" in u["unifying_axiom"]
+
 
 class TestConsciousnessIntegration:
     def test_high_for_constant_field(self):
-        """Φ → ∞ when the K₄ block is perfectly synchronised."""
         x = np.full(13, 0.15)
         Phi = consciousness_integration(x)
-        assert Phi > 1000      # std → 0, ratio → ∞
+        assert Phi > 1000
 
     def test_low_for_random_field(self):
-        """Φ stays small when the K₄ block is fragmented."""
         np.random.seed(2)
         x = np.random.uniform(0, 1, 13)
         Phi = consciousness_integration(x)
         assert Phi < 50
 
     def test_only_uses_K4_block(self):
-        """Modifying sites 4..12 must not change Φ (K₄ uses sites 0..3)."""
         x = np.full(13, 0.15)
         a = consciousness_integration(x)
         x[5] = 100
         b = consciousness_integration(x)
         assert a == b
 
-
-# ── End-to-end summary ───────────────────────────────────────────────────
 
 class TestCathedralEngineSummary:
     def test_returns_dict_with_all_observables(self):
