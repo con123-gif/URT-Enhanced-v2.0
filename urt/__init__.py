@@ -2087,13 +2087,23 @@ from .matter_direction import (
     print_matter_direction_report,
 )
 
+# v2.9.55 — exhaust = 9-dimensional dark sector
+from .exhaust_dimensions import (
+    visible_and_exhaust_dimensions,
+    string_theory_dimension_comparison,
+    gauge_boson_decomposition,
+    exhaust_dimensions_audit,
+    exhaust_dimensions_audit_passes,
+    print_exhaust_dimensions_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.54"
+__version__ = "2.9.55"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2677,4 +2687,11 @@ __all__ = [
     "matter_direction_audit",
     "matter_direction_audit_passes",
     "print_matter_direction_report",
+    # v2.9.55 — exhaust = 9-dim dark sector
+    "visible_and_exhaust_dimensions",
+    "string_theory_dimension_comparison",
+    "gauge_boson_decomposition",
+    "exhaust_dimensions_audit",
+    "exhaust_dimensions_audit_passes",
+    "print_exhaust_dimensions_report",
 ]
