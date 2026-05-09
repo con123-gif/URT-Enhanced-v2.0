@@ -2139,13 +2139,30 @@ from .self_reference import (
     print_self_reference_report,
 )
 
+# v2.9.58 — chaos and the URT flow in Cathedral closed forms
+# (per-step factor = 1 − λ/(2^q·π²); mixing times = 2^q·π²/λ; ratio = N/D)
+from .chaos_and_flow import (
+    DYNAMICAL_NORMALISATION,
+    dynamical_normalisation_cathedral,
+    per_step_factor_cathedral,
+    mixing_time_cathedral,
+    cathedral_contraction_table,
+    slowest_mixing_time,
+    fastest_mixing_time,
+    slowest_to_fastest_ratio,
+    universe_from_chaos_arc,
+    chaos_and_flow_audit,
+    chaos_and_flow_audit_passes,
+    print_chaos_and_flow_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.57"
+__version__ = "2.9.58"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2769,4 +2786,17 @@ __all__ = [
     "self_reference_audit",
     "self_reference_audit_passes",
     "print_self_reference_report",
+    # v2.9.58 — chaos and URT flow Cathedral closed forms
+    "DYNAMICAL_NORMALISATION",
+    "dynamical_normalisation_cathedral",
+    "per_step_factor_cathedral",
+    "mixing_time_cathedral",
+    "cathedral_contraction_table",
+    "slowest_mixing_time",
+    "fastest_mixing_time",
+    "slowest_to_fastest_ratio",
+    "universe_from_chaos_arc",
+    "chaos_and_flow_audit",
+    "chaos_and_flow_audit_passes",
+    "print_chaos_and_flow_report",
 ]
