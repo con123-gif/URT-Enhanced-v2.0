@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.40 — Cathedral Framework
+# URT Enhanced v2.9.41 — Cathedral Framework
 
 ## Repository Overview
 
@@ -485,6 +485,58 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 | `urt/first_principles.py` | Eight-step forcing chain that derives π, φ, e, η_L, η, μ, and δ★ from D=3 alone.  Each step exposed as a verifiable function; `first_principles_audit()` returns a status dict; `all_steps_verify()` is a single CI gate. |
 | `tests/test_first_principles.py` | 23 tests: positive equality + negative-space scans (no other simple constant satisfies the same uniqueness condition). |
 | `docs/PI_PHI_E_DERIVATION.md` | Formal write-up of the eight-step chain. |
+
+### New Modules (v2.9.41 — Mathematical Connections)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_connections.py` | Six clusters of new mathematical connections in the framework: pentagonal-number quartet, A₅ conjugacy classes & irreps in Cathedral form, K₄/A₅ spectrum sum split, perfect-number doublet, triangular triplet. |
+| `tests/test_cathedral_connections.py` | 34 tests verifying every connection. |
+
+### v2.9.41 — The Pentagonal Quartet (genuinely new)
+
+**Four Cathedral integers are *all* pentagonal numbers, indexed by Cathedral integers themselves**:
+
+| Cathedral integer | Pentagonal P_n = n(3n−1)/2 | Index |
+|---|---|---|
+| q = 5  | P_2 = 5  | n = D − 1 |
+| V = 12 | P_3 = 12 | n = D |
+| ARF d_35 = 35 | P_5 = 35 | n = q |
+| ARF d_51 = 51 | P_6 = 51 | n = q + 1 |
+
+So pentagonal indexing carries the K₄ sector sizes (q, V) **and** the ARF residues (d_35, d_51) — the same sequence threading two different layers of the framework.
+
+### v2.9.41 — A₅ in Cathedral form (consolidated)
+
+```
+Conjugacy class sizes:  {1, D·q, F, V, V}     sum = G = |A_5|
+Irrep dimensions:       {1, D, D, D+1, q}     Σdim² = G   (Burnside)
+                                              # irreps  = q
+```
+
+### v2.9.41 — K₄ ⊕ A₅ spectrum sum split
+
+```
+tr(L|K_4) =  0+3+3+5  =  11
+tr(L|A_5) =  5+5+5+5+5+7+7+9+13  =  61
+total     =  72  =  D!·V                       (= trace of L)
+```
+
+### v2.9.41 — Perfect numbers in the Cathedral
+
+```
+1st perfect: 6  = D!         (σ(D!) = 12 = 2·D!)
+2nd perfect: 28 = σ(V)       (σ(σ(V)) = 56 = 2·28)
+```
+
+### v2.9.41 — Triangular triplet
+
+```
+T_2 = 3 = D
+T_3 = 6 = D!
+T_7 = 28 = σ(V) = 2nd perfect
+```
+
+CI gate: `from urt import all_connections_verify; assert all_connections_verify()`.
 
 ### New Modules (v2.9.40 — Predictions Registry)
 | File | Domain |
