@@ -1,0 +1,132 @@
+"""Tests for the icosahedral frustration module."""
+from math import factorial
+import pytest
+
+from urt.icosahedral_frustration import (
+    crystallographic_restriction_q,
+    gap_as_frustration_energy,
+    dihedral_frustration_angle,
+    four_facets_of_frustration,
+    quasicrystal_realization,
+    icosahedral_frustration_audit,
+    icosahedral_frustration_audit_passes,
+)
+
+
+class TestCrystallographicRestriction:
+    def test_first_forbidden_n_is_q(self):
+        """5 is the smallest n-fold rotation forbidden by crystal restriction —
+        and 5 = q is the framework's pentagonal symmetry order."""
+        from urt.shell_closure import q
+        cr = crystallographic_restriction_q()
+        assert cr["first_forbidden_n"] == q
+        assert cr["first_forbidden_is_q"]
+
+    def test_allowed_nfolds_are_Cathedral(self):
+        """{1, 2, 3, 4, 6} = {1, D-1, D, D+1, D!} — all Cathedral."""
+        from urt.shell_closure import D
+        cr = crystallographic_restriction_q()
+        assert 2 == D - 1
+        assert 3 == D
+        assert 4 == D + 1
+        assert 6 == factorial(D)
+        assert cr["allowed_nfolds"] == [1, 2, 3, 4, 6]
+
+    def test_icosahedron_axis_order_is_q(self):
+        """The icosahedron's vertex rotation axes are q-fold (5-fold)."""
+        from urt.shell_closure import q
+        cr = crystallographic_restriction_q()
+        assert cr["icosahedron_axis_order"] == q
+
+
+class TestGapAsFrustrationEnergy:
+    def test_gap_is_positive(self):
+        """Δ = δ_cl - δ★ > 0 — frustration cost is non-zero."""
+        g = gap_as_frustration_energy()
+        assert g["Delta_gap"] > 0
+
+    def test_gap_is_about_2_5e3(self):
+        """Δ ≈ 2.49 × 10⁻³ — the residual frustration energy."""
+        g = gap_as_frustration_energy()
+        assert 2.0e-3 < g["Delta_gap"] < 3.0e-3
+
+    def test_gap_over_alpha_is_about_1_over_D(self):
+        """Δ/α ≈ 1/D ≈ 0.34 — frustration as fraction of fine-structure scale."""
+        g = gap_as_frustration_energy()
+        assert g["Delta_over_alpha_close_to_1_over_D"]
+
+
+class TestDihedralFrustration:
+    def test_icosahedron_dihedral_is_138(self):
+        """Icosahedron dihedral = arccos(-√5/3) ≈ 138.19°."""
+        d = dihedral_frustration_angle()
+        assert 138.0 < d["icosahedron_dihedral_deg"] < 138.3
+
+    def test_tetrahedron_dihedral_is_109(self):
+        """Tetrahedron dihedral = arccos(-1/3) ≈ 109.47°."""
+        d = dihedral_frustration_angle()
+        assert 109.4 < d["tetrahedron_dihedral_deg"] < 109.5
+
+    def test_frustration_angle_is_about_29(self):
+        """Frustration angle ≈ 28.7° — icosahedron's deviation from FCC."""
+        d = dihedral_frustration_angle()
+        assert 28.0 < d["frustration_angle"] < 29.0
+
+
+class TestFourFacets:
+    def test_geometric_facet(self):
+        """K(3) = V = 12 vertices on S², no periodic lattice."""
+        from urt.shell_closure import V
+        f = four_facets_of_frustration()
+        assert f["geometric"]["n_vertices_on_S2"] == V
+
+    def test_algebraic_facet(self):
+        """A_5 (order G) is non-solvable."""
+        from urt.shell_closure import G
+        f = four_facets_of_frustration()
+        assert f["algebraic"]["A_5_order"] == G
+        assert f["algebraic"]["is_non_solvable"]
+
+    def test_spectral_facet_multiplicity_at_D(self):
+        """Laplacian λ=D=3 has multiplicity 2 — spectral signature of frustration."""
+        from urt.shell_closure import D
+        f = four_facets_of_frustration()
+        assert f["spectral"]["Fiedler_eigenvalue"] == D
+        assert f["spectral"]["multiplicity_at_D"] == 2
+
+
+class TestQuasicrystal:
+    def test_diffraction_n_fold_is_2q(self):
+        """Quasicrystal 10-fold diffraction = 2q (Cathedral)."""
+        from urt.shell_closure import q
+        qc = quasicrystal_realization()
+        assert qc["diffraction_n_fold"] == 2 * q
+
+    def test_penrose_n_fold_is_q(self):
+        """Penrose tiling has q-fold (5-fold) symmetry — same as the
+        forbidden crystallographic n-fold."""
+        from urt.shell_closure import q
+        qc = quasicrystal_realization()
+        assert qc["penrose_n_fold"] == q
+
+    def test_inflation_factor_is_phi(self):
+        """Penrose inflation = φ = same as URT pull-rate inverse."""
+        from urt.shell_closure import phi
+        qc = quasicrystal_realization()
+        assert qc["inflation_factor"] == phi
+
+    def test_URT_pull_is_inverse_inflation(self):
+        """URT pull rate μ = 1/φ — the inverse Penrose inflation rate."""
+        qc = quasicrystal_realization()
+        assert qc["URT_pull_is_inverse_inflation"]
+
+
+class TestEndToEndAudit:
+    def test_audit_passes(self):
+        assert icosahedral_frustration_audit_passes()
+
+    def test_audit_returns_complete_dict(self):
+        a = icosahedral_frustration_audit()
+        assert "crystallographic_restriction" in a
+        assert "gap_as_frustration_energy" in a
+        assert "quasicrystal_realization" in a
