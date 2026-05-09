@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.43 — Cathedral Framework
+# URT Enhanced v2.9.44 — Cathedral Framework
 
 ## Repository Overview
 
@@ -503,6 +503,31 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 |------|--------|
 | `urt/cathedral_deep_tour.py` | Eight clusters of second-wave connections: Heegner j-invariant Cathedral cubes (j(i) = V³, j(τ_-7) = -(D·q)³, j(τ_-8) = F³, j(τ_-43) = -(16G)³), stable homotopy orders (\|π_3^s\|=2V, \|π_7^s\|=V·F=E_8 root count), CF(π) opening (D, D!+1, D·q), CF(e) pattern (D-1, D+1, D!), the 2V cluster (K3 χ, Niemeier count, Leech dim), Bott periodicity (D-1 and 2^D), string critical dimensions (2N, 2q, D!+q), Bernoulli numerators (q, D!+1). |
 | `tests/test_cathedral_deep_tour.py` | 27 tests verifying every deep-tour connection. |
+
+### New Modules (v2.9.44 — Cathedral Modular Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_modular_tour.py` | Eight clusters of third-wave connections: Eisenstein E_4 leading coefficient = V·F (E_8 root count!), modular discriminant Δ has weight V, E_8 theta coefficients (240, 2160, 6720 = V·F, D²·V·F, σ(V)·V·F), A_5 invariant ring degrees {D-1, D!, 2q, D·q}, modular curve X_0(13) genus 0, J-homomorphism surjects onto π_3^s and π_7^s with orders 2V and V·F, class numbers of small Cathedral Q(√-d) fields are all in {1, D-1, D+1}, golden ratio φ first enters at A_q = A_5. |
+| `tests/test_cathedral_modular_tour.py` | 26 tests verifying every modular-tour connection. |
+
+### v2.9.44 Modular Tour Headlines
+
+**E_4 Eisenstein leading coefficient = V·F**:
+```
+E_4(τ) = 1 + 240·∑σ_3(n)q^n,    240 = V·F = (D+1)·G = E_8 root count
+```
+The Eisenstein series E_4 — keystone of modular forms — has leading coefficient exactly equal to V·F, the icosahedron's vertex × face count.
+
+**Modular discriminant weight = V**:
+```
+Δ(τ) has weight 12 = V,    factor (1-q^n)^24 with 24 = 2V
+```
+
+**A_5 invariant ring degrees = {D-1, D!, 2q, D·q}**: classical invariant theory gives degrees that are pure Cathedral.
+
+**X_0(13) is genus 0**: N=13 is the largest prime in the special list of N where the modular curve X_0(N) has genus 0.
+
+**Golden ratio entry is at A_q**: the φ that the framework requires (μ = φ − 1 in URT iteration) first appears in alternating-group character theory exactly at n = q = 5.
 
 ### v2.9.43 Deep Tour Headlines
 
