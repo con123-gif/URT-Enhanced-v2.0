@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.50 — Cathedral Framework
+# URT Enhanced v2.9.51 — Cathedral Framework
 
 ## Repository Overview
 
@@ -110,6 +110,34 @@ References:
   * `urt/first_principles.py`         — eight forcing steps as functions
   * `docs/PI_PHI_E_DERIVATION.md`     — formal derivation of π, φ, e
   * Lytollis (2026), *The π–φ–e Flow*, PDF §1–§6
+
+### Algorithmic properties of the URT iteration
+
+`urt.urt_algorithm_analysis` exposes empirical and analytical properties
+of the iteration (verified in CI):
+
+| Property | Value | Origin |
+|---|---|---|
+| Per-step factor at λ=0 (constant mode) | exactly 1 | mean is preserved |
+| Per-step factor at Fiedler λ=3 | 0.9904 | slowest non-trivial decay |
+| Per-step factor at λ_max=13 | 0.9584 | fastest decay |
+| Geometric variance decay rate | ρ ≈ 0.987 | matches λ ≈ 5 (typical) |
+| Steps to std < 1e-3 (random init) | ~500 | first-order in 1/η |
+| Steps to std < 1e-5 | ~1,000 | log-linear extrapolation |
+| Uniform initial → uniform final | machine precision | iteration commutes with constant null mode |
+
+Notable consequences:
+
+  - The iteration is a strict contraction on every Laplacian mode
+    except the constant mode (which is preserved exactly).
+  - For random initial conditions, the field always settles into a
+    band — what we call "the rails" (between δ★ and ~3δ★).  The pull
+    toward δ★ decays as e^(-t/τ) and balances the Laplacian damping
+    after ~50 steps.
+  - The iteration is *gauge-invariant* under H_3 ⋊ K_4 — pure
+    gradient descent on V is not.
+
+CI gate: `from urt import urt_algorithm_audit_passes; assert urt_algorithm_audit_passes()`.
 
 
 ## Cathedral Mathematics

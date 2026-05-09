@@ -2039,13 +2039,27 @@ from .cathedral_codes_tour import (
     print_codes_tour_report,
 )
 
+# v2.9.51 — URT algorithm analysis (linear stability + empirical convergence)
+from .urt_algorithm_analysis import (
+    per_mode_contraction_factors,
+    all_modes_contracting,
+    null_mode_factor_is_one,
+    variance_decays_geometrically,
+    uniform_init_stays_uniform,
+    convergence_steps_for_tolerance,
+    basin_for_uniform_init,
+    urt_algorithm_audit,
+    urt_algorithm_audit_passes,
+    print_urt_algorithm_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.50"
+__version__ = "2.9.51"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2593,4 +2607,15 @@ __all__ = [
     "all_codes_tour_audit",
     "all_codes_tour_verify",
     "print_codes_tour_report",
+    # v2.9.51 — URT algorithm analysis
+    "per_mode_contraction_factors",
+    "all_modes_contracting",
+    "null_mode_factor_is_one",
+    "variance_decays_geometrically",
+    "uniform_init_stays_uniform",
+    "convergence_steps_for_tolerance",
+    "basin_for_uniform_init",
+    "urt_algorithm_audit",
+    "urt_algorithm_audit_passes",
+    "print_urt_algorithm_report",
 ]
