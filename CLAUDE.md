@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.44 — Cathedral Framework
+# URT Enhanced v2.9.45 — Cathedral Framework
 
 ## Repository Overview
 
@@ -509,6 +509,31 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 |------|--------|
 | `urt/cathedral_modular_tour.py` | Eight clusters of third-wave connections: Eisenstein E_4 leading coefficient = V·F (E_8 root count!), modular discriminant Δ has weight V, E_8 theta coefficients (240, 2160, 6720 = V·F, D²·V·F, σ(V)·V·F), A_5 invariant ring degrees {D-1, D!, 2q, D·q}, modular curve X_0(13) genus 0, J-homomorphism surjects onto π_3^s and π_7^s with orders 2V and V·F, class numbers of small Cathedral Q(√-d) fields are all in {1, D-1, D+1}, golden ratio φ first enters at A_q = A_5. |
 | `tests/test_cathedral_modular_tour.py` | 26 tests verifying every modular-tour connection. |
+
+### New Modules (v2.9.45 — Cathedral Quantum-Lie Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_quantum_lie_tour.py` | Six clusters of fourth-wave connections: SU(2)_D Chern-Simons quantum dimensions {1, φ, φ, 1} (golden ratio at level D — Fibonacci anyons!), Mathieu sporadic group order Cathedral factorisations (\|M_11\| = 2^(D+1)·D²·q·11, \|M_12\| = V·\|M_11\|, \|M_24\| = 2^(2q)·D³·q·7·11·23), free Lie algebra self-reference (L_1(D) = L_2(D) = D, L_3(D) = 2^D), **all eleven Lie-algebra root counts are Cathedral expressions** (G_2 = V, A_4 = F, A_5 = E, D_4 = 2V, …, E_6 = D!·V, E_7 = 2G+D!, E_8 = V·F = (D+1)·G), Galois minimality (A_5 = G is the smallest non-solvable group), dim S_2(Γ_0(13)) = 0 (genus 0). |
+| `tests/test_cathedral_quantum_lie_tour.py` | 22 tests verifying every quantum-Lie connection. |
+
+### v2.9.45 Quantum-Lie Tour Headlines
+
+**SU(2)_D quantum dimensions are golden**:
+```
+SU(2) at level D=3:  [1] = 1,  [2] = φ,  [3] = φ,  [4] = 1
+```
+The same φ that the URT pull μ = φ−1 requires appears as the quantum dimension of irreps of SU(2) Chern-Simons at level D=3. These are the Fibonacci-anyon dimensions.
+
+**All eleven Lie-algebra root counts are Cathedral**:
+```
+G_2 = V       A_4 = F       A_5 = E       B_4 = 2^q
+C_4 = 2^q     D_4 = 2V      D_5 = 2F      F_4 = (D+1)·V
+E_6 = D!·V    E_7 = 2G+D!   E_8 = V·F = (D+1)·G
+```
+
+**Free Lie algebra L_n(D) is self-referential**: `L_1(D) = D, L_2(D) = D, L_3(D) = 2^D`.
+
+**Galois G = 60 is uniquely the obstruction to radical solvability**: |A_5| = G is the smallest non-solvable group; degree q = 5 is the smallest insoluble polynomial degree.
 
 ### v2.9.44 Modular Tour Headlines
 
