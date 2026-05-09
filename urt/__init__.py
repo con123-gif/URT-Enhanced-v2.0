@@ -1865,13 +1865,25 @@ from .cathedral_engine import (
     ETA, ETA_LAPLACIAN, MU_PULL, TAU_RELAX,
 )
 
+# v2.9.39 — first-principles derivation: π/φ/e are forced (added 2026-05-09)
+# See docs/PI_PHI_E_DERIVATION.md for the full chain.
+from .first_principles import (
+    laplacian_coefficient_from_sphere,
+    euler_step_optimum_for_fiedler,
+    golden_self_similarity_rate,
+    semigroup_closure_base,
+    derive_delta_star_from_gradient,
+    first_principles_audit,
+    all_steps_verify,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.38"
+__version__ = "2.9.39"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2294,4 +2306,11 @@ __all__ = [
     "urt_evolve", "consciousness_integration",
     "cathedral_engine_summary", "print_cathedral_engine_report",
     "ETA", "ETA_LAPLACIAN", "MU_PULL", "TAU_RELAX",
+    # v2.9.39 — first-principles derivation
+    "laplacian_coefficient_from_sphere",
+    "euler_step_optimum_for_fiedler",
+    "golden_self_similarity_rate",
+    "semigroup_closure_base",
+    "derive_delta_star_from_gradient",
+    "first_principles_audit", "all_steps_verify",
 ]
