@@ -1906,13 +1906,25 @@ from .cathedral_connections import (
     print_connections_report,
 )
 
+# v2.9.42 — grand tour: Cathedral integers across classical mathematics
+from .cathedral_grand_tour import (
+    cathedral_prime_ladder,
+    coxeter_quartet,
+    bernoulli_zeta_connections,
+    square_stirling_partition_hits,
+    lie_mathieu_hits,
+    all_grand_tour_audit,
+    all_grand_tour_verify,
+    print_grand_tour_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.41"
+__version__ = "2.9.42"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2361,4 +2373,13 @@ __all__ = [
     "all_connections_audit",
     "all_connections_verify",
     "print_connections_report",
+    # v2.9.42 — grand tour across classical mathematics
+    "cathedral_prime_ladder",
+    "coxeter_quartet",
+    "bernoulli_zeta_connections",
+    "square_stirling_partition_hits",
+    "lie_mathieu_hits",
+    "all_grand_tour_audit",
+    "all_grand_tour_verify",
+    "print_grand_tour_report",
 ]
