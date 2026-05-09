@@ -10,18 +10,18 @@ where:
     M_Pl ≈ 1.22 × 10¹⁹ GeV
     α_s(M_a) ≈ α_s(μ★) at the Cathedral crossover scale
 
-Numerical result:  m_a ≈ 58.2 μeV
+Numerical result:  m_a ≈ 60.7 μeV
 
 Distinguishing features:
   • QCD axion (KSVZ/DFSZ): m_a ≈ 1−100 μeV, coupling g_aγγ ∝ 1/f_a
-  • Cathedral axion: m_a = 58.2 μeV  (fixed point, zero parameter)
+  • Cathedral axion: m_a = 60.7 μeV  (fixed point, zero parameter)
   • Different coupling: g_aγγ = (α/2π) · δ★ / f_a  (δ★-suppressed)
 
 Detection:
   • HAYSTAC experiment: sensitivity at 26.5−29.3 μeV, 38−40 μeV
   • ADMX: covers 2.7−40 μeV range (being extended to 60 μeV)
-  • Cathedral mass sits at 58.2 μeV — within next-generation ADMX range
-  • A null result at exactly 58.2 μeV falsifies the framework
+  • Cathedral mass sits at 60.7 μeV — within next-generation ADMX range
+  • A null result at exactly 60.7 μeV falsifies the framework
 
 Second prediction: secondary spectral line at ν₂ ≈ 9.07 GHz
   • From ν₂ = m_a · c² / h in frequency units (in the lab frame)
@@ -98,7 +98,7 @@ def axion_mass_GeV():
     the lepton masses. The mass formula is therefore a direct output of
     the 13-site closure — zero free parameters.
 
-    Numerical value: m_a ≈ 58.2 μeV = 5.82 × 10⁻¹⁴ GeV.
+    Numerical value: m_a ≈ 60.7 μeV = 6.07 × 10⁻¹⁴ GeV.
     """
     E, q, G, D = 30, 5, 60, 3
     d35 = E + q        # = 35
@@ -155,17 +155,28 @@ def photon_coupling():
 
 def secondary_spectral_line_GHz():
     """
-    ν₂ ≈ 9.07 GHz — Cathedral secondary spectral line.
+    ν₂ — Cathedral secondary spectral line in GHz.
 
-    Physical origin: axion-photon oscillation in the CMB magnetic field.
-    Frequency = m_a · c² / h converted to GHz.
-    Cathedral prediction: ν₂ = 9.07 GHz (distinct from 21cm at 1.42 GHz).
+    Physical origin: axion-photon oscillation, ν = m_a·c² / h, then
+    multiplied by the δ★ topological dressing factor.
+
+    Unit conversion:  1 eV  =  2.418 × 10⁵ GHz  (from h = 6.626e-34 J·s,
+                                                 1 eV = 1.602e-19 J).
+
+    For the Cathedral axion m_a ≈ 60.7 µeV = 6.07 × 10⁻⁵ eV:
+        ν      =  6.07e-5 × 2.418e5 GHz  ≈  14.7 GHz
+        ν₂     =  ν · δ★  ≈  14.7 × 0.1475  ≈  2.17 GHz
+
+    NOTE: the manuscript also quotes a "9.07 GHz" line; that figure
+    appears to come from a different derivation that is not currently
+    in the urt code base.  This function returns the δ★-dressed value.
     """
-    # m_a in eV → frequency in GHz via E = hν: 1 eV = 241.8 THz
     m_a_eV = axion_mass_eV()
-    freq_THz = m_a_eV * 241.8e3 / 1e12 * 1e3  # eV → THz → GHz
-    # Cathedral spectral line uses the δ★-weighted frequency
-    return freq_THz * DELTA_STAR
+    # 1 eV ≡ 2.4179893e5 GHz  (CODATA)
+    EV_TO_GHZ = 2.41798934e5
+    freq_GHz = m_a_eV * EV_TO_GHZ
+    # δ★ topological dressing
+    return freq_GHz * DELTA_STAR
 
 
 def resonant_cavity_frequency():

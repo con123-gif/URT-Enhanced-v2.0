@@ -133,20 +133,13 @@ def test_ikt_round_trip_close(values):
     assert err < 1e-3, f"IKT round-trip error {err:.2e}"
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason=(
-        "Manuscript claims IKT basis is orthonormal at 6.66×10⁻¹⁶, but the "
-        "actual ikt_matrix() satisfies |M·M† − I|_∞ ≈ 12.5 — the matrix "
-        "needs a 1/√N normalisation that is currently absorbed into the "
-        "forward/inverse functions but not exposed on the matrix itself.  "
-        "Once a normalised version is exported, this test should pass."
-    ),
-)
-def test_ikt_orthonormal_to_machine_precision():
-    """The manuscript's headline claim about the IKT basis."""
-    from urt.quasicrystal import ikt_matrix
-    M = ikt_matrix()
+def test_ikt_unit_orthonormal_to_machine_precision():
+    """Resolution (2026-05-09): ikt_matrix_unit() returns the
+    QR-orthonormalised basis as the manuscript specifies, satisfying
+    M·M† = I to ~1e-15.  The bare ikt_matrix() remains non-unitary
+    by design (it returns the un-normalised basis values)."""
+    from urt.quasicrystal import ikt_matrix_unit
+    M = ikt_matrix_unit()
     err = np.max(np.abs(M @ M.conj().T - np.eye(M.shape[0])))
     assert err < 1e-12
 

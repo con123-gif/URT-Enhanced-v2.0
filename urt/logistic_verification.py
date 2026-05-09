@@ -1,19 +1,26 @@
 """
 Logistic Map Verification of δ★
 
-Critical result: δ★ = 0.14751081... is the lowest branch of the
-stable 6-cycle in the logistic map at the exact parameter
+Critical result: δ★ ≈ 0.14751 is approximately (within 603 ppm) the
+lowest branch of the stable 6-cycle in the logistic map at
 
     r★ = 3.8417002878419497
 
 where the Lyapunov exponent λ = −0.011275 (strictly contracting).
 
-This connects the abstract icosahedral geometry definition of δ★ to
-the universal period-doubling cascade — confirmed to machine epsilon
-(residual 1.27×10⁻¹⁴).
+Two distinct values of δ★ appear in the framework:
+
+    δ★ closed-form  =  (80/81)·π / (13·φ)  ≈ 0.14751081
+    δ★ logistic     =  lowest branch of cycle ≈ 0.14742194
+
+These differ by 603 ppm (≈ 0.06 %).  Earlier framework manuscripts
+described them as "exactly equal"; that claim has been softened to
+"approximately equal to 603 ppm" pending reconciliation between the
+icosahedral closed form and the period-doubling cascade.
 
 The 6-cycle arises because 6 = V/2 = 12/2 (V = icosahedral vertex count).
-Every branch of the 6-cycle is a simple rational transform of δ★.
+The four non-trivial cycle branches form a Z_3 × Z_2 substructure
+(three levels {≈0.149, ≈0.486, ≈0.960}, each a close pair).
 """
 
 import numpy as np
