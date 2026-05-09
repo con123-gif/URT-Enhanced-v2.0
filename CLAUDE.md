@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.45 — Cathedral Framework
+# URT Enhanced v2.9.46 — Cathedral Framework
 
 ## Repository Overview
 
@@ -515,6 +515,25 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 |------|--------|
 | `urt/cathedral_quantum_lie_tour.py` | Six clusters of fourth-wave connections: SU(2)_D Chern-Simons quantum dimensions {1, φ, φ, 1} (golden ratio at level D — Fibonacci anyons!), Mathieu sporadic group order Cathedral factorisations (\|M_11\| = 2^(D+1)·D²·q·11, \|M_12\| = V·\|M_11\|, \|M_24\| = 2^(2q)·D³·q·7·11·23), free Lie algebra self-reference (L_1(D) = L_2(D) = D, L_3(D) = 2^D), **all eleven Lie-algebra root counts are Cathedral expressions** (G_2 = V, A_4 = F, A_5 = E, D_4 = 2V, …, E_6 = D!·V, E_7 = 2G+D!, E_8 = V·F = (D+1)·G), Galois minimality (A_5 = G is the smallest non-solvable group), dim S_2(Γ_0(13)) = 0 (genus 0). |
 | `tests/test_cathedral_quantum_lie_tour.py` | 22 tests verifying every quantum-Lie connection. |
+
+### New Modules (v2.9.46 — Cathedral Geometric-Combinatorial Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_geometric_tour.py` | Seven clusters of fifth-wave connections: del Pezzo (-1)-curve counts (d=1: V·F, d=3: D^D, d=4: 2^(D+1), d=5: 2q, d=6: D!), all 5 Platonic Schläfli symbols are Cathedral pairs, **all known kissing numbers K(2..8) are Cathedral expressions**, Euler totient φ(N) = V (self-reference), 3×3 Latin squares L(D) = V, smallest knot invariants (trefoil = D crossings, figure-8 det = q), Hopf fibration target dims {1, D-1, D+1, 2^D}. |
+| `tests/test_cathedral_geometric_tour.py` | 26 tests verifying every connection. |
+
+### v2.9.46 Geometric Tour Headlines
+
+**All known kissing numbers K(d) for d=2..8 are Cathedral expressions**:
+```
+K(2)=D!  K(3)=V  K(4)=2V  K(5)=2F  K(6)=D!·V  K(7)=2G+D!  K(8)=V·F
+```
+
+**φ(N) = V**: the Euler totient of N equals V — Cathedral self-reference. The cyclotomic field Q(ζ_N) has degree V over Q.
+
+**Latin squares L(D) = V**: there are exactly V = 12 distinct 3×3 Latin squares.
+
+**Del Pezzo (-1)-curve counts**: 5 of 6 are Cathedral expressions; d=3 surface has D^D = 27 (-1)-curves, d=1 surface has E_8 root count = V·F.
 
 ### v2.9.45 Quantum-Lie Tour Headlines
 

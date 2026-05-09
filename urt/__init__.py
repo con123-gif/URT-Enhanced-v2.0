@@ -1963,13 +1963,28 @@ from .cathedral_quantum_lie_tour import (
     print_quantum_lie_tour_report,
 )
 
+# v2.9.46 — geometric-combinatorial tour: del Pezzo, Schläfli, kissing,
+# Latin squares, Euler totient, knots, Hopf fibrations
+from .cathedral_geometric_tour import (
+    del_pezzo_minus_one_curves,
+    platonic_schlafli_symbols,
+    kissing_numbers_all_cathedral,
+    euler_totient_at_N_is_V,
+    latin_squares_at_D,
+    small_knot_invariants,
+    hopf_fibration_dimensions,
+    all_geometric_tour_audit,
+    all_geometric_tour_verify,
+    print_geometric_tour_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.45"
+__version__ = "2.9.46"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2461,4 +2476,15 @@ __all__ = [
     "all_quantum_lie_tour_audit",
     "all_quantum_lie_tour_verify",
     "print_quantum_lie_tour_report",
+    # v2.9.46 — geometric-combinatorial tour
+    "del_pezzo_minus_one_curves",
+    "platonic_schlafli_symbols",
+    "kissing_numbers_all_cathedral",
+    "euler_totient_at_N_is_V",
+    "latin_squares_at_D",
+    "small_knot_invariants",
+    "hopf_fibration_dimensions",
+    "all_geometric_tour_audit",
+    "all_geometric_tour_verify",
+    "print_geometric_tour_report",
 ]
