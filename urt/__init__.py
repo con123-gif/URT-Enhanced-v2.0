@@ -1877,13 +1877,24 @@ from .first_principles import (
     all_steps_verify,
 )
 
+# v2.9.40 — predictions registry (added 2026-05-09)
+# Single source of truth for "what does the framework predict and how
+# does it compare to observation?"
+from .predictions_registry import (
+    Prediction,
+    cathedral_predictions,
+    agreement_summary,
+    predictions_table_text,
+    print_predictions_table,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.39"
+__version__ = "2.9.40"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2313,4 +2324,10 @@ __all__ = [
     "semigroup_closure_base",
     "derive_delta_star_from_gradient",
     "first_principles_audit", "all_steps_verify",
+    # v2.9.40 — predictions registry
+    "Prediction",
+    "cathedral_predictions",
+    "agreement_summary",
+    "predictions_table_text",
+    "print_predictions_table",
 ]
