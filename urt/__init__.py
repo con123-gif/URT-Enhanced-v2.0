@@ -2065,13 +2065,25 @@ from .urt_investigations import (
     print_investigations_report,
 )
 
+# v2.9.53 — K_4/A_5 sector assignment: dark sector + antimatter live in A_5
+from .cathedral_sectors import (
+    K4_A5_decompose,
+    sector_power,
+    A5_evaporation_trajectory,
+    cosmology_via_sector_split,
+    predictions_by_sector,
+    cathedral_sectors_audit,
+    cathedral_sectors_audit_passes,
+    print_cathedral_sectors_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.52"
+__version__ = "2.9.53"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2639,4 +2651,13 @@ __all__ = [
     "all_investigations_audit",
     "all_investigations_pass",
     "print_investigations_report",
+    # v2.9.53 — sectors
+    "K4_A5_decompose",
+    "sector_power",
+    "A5_evaporation_trajectory",
+    "cosmology_via_sector_split",
+    "predictions_by_sector",
+    "cathedral_sectors_audit",
+    "cathedral_sectors_audit_passes",
+    "print_cathedral_sectors_report",
 ]
