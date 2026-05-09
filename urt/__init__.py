@@ -2097,13 +2097,25 @@ from .exhaust_dimensions import (
     print_exhaust_dimensions_report,
 )
 
+# v2.9.56 — icosahedral frustration: q = 5 is the forbidden crystallographic axis
+from .icosahedral_frustration import (
+    crystallographic_restriction_q,
+    gap_as_frustration_energy,
+    dihedral_frustration_angle,
+    four_facets_of_frustration,
+    quasicrystal_realization,
+    icosahedral_frustration_audit,
+    icosahedral_frustration_audit_passes,
+    print_icosahedral_frustration_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.55"
+__version__ = "2.9.56"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2694,4 +2706,13 @@ __all__ = [
     "exhaust_dimensions_audit",
     "exhaust_dimensions_audit_passes",
     "print_exhaust_dimensions_report",
+    # v2.9.56 — icosahedral frustration
+    "crystallographic_restriction_q",
+    "gap_as_frustration_energy",
+    "dihedral_frustration_angle",
+    "four_facets_of_frustration",
+    "quasicrystal_realization",
+    "icosahedral_frustration_audit",
+    "icosahedral_frustration_audit_passes",
+    "print_icosahedral_frustration_report",
 ]
