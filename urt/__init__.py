@@ -1918,13 +1918,28 @@ from .cathedral_grand_tour import (
     print_grand_tour_report,
 )
 
+# v2.9.43 — deep tour: second-wave connections across all of mathematics
+from .cathedral_deep_tour import (
+    heegner_j_cathedral_cubes,
+    stable_homotopy_orders,
+    continued_fraction_pi_opening,
+    continued_fraction_e_pattern,
+    the_2V_cluster,
+    bott_periodicity,
+    string_critical_dimensions,
+    bernoulli_numerator_hits,
+    all_deep_tour_audit,
+    all_deep_tour_verify,
+    print_deep_tour_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.42"
+__version__ = "2.9.43"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2382,4 +2397,16 @@ __all__ = [
     "all_grand_tour_audit",
     "all_grand_tour_verify",
     "print_grand_tour_report",
+    # v2.9.43 — deep tour
+    "heegner_j_cathedral_cubes",
+    "stable_homotopy_orders",
+    "continued_fraction_pi_opening",
+    "continued_fraction_e_pattern",
+    "the_2V_cluster",
+    "bott_periodicity",
+    "string_critical_dimensions",
+    "bernoulli_numerator_hits",
+    "all_deep_tour_audit",
+    "all_deep_tour_verify",
+    "print_deep_tour_report",
 ]
