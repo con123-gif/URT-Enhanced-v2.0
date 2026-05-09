@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.42 — Cathedral Framework
+# URT Enhanced v2.9.43 — Cathedral Framework
 
 ## Repository Overview
 
@@ -497,6 +497,27 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 |------|--------|
 | `urt/cathedral_grand_tour.py` | Five clusters of new connections between Cathedral integers and classical mathematical sequences: prime ladder p_(D-1)/p_D/p_(D!)/p_(D²·q) = D/q/N/197, Coxeter quartet h(A₄,D₄,E₆,E₈) = q/D!/V/E, Bernoulli/ζ denominators (ζ(6) = π⁶/(q·D^D·(D!+1))), arithmetic hits ((2^D)² = (D+1)^D, partition p hits D/q/E), Lie+Mathieu hits (G₂ has V roots, M₁₂/M₂₄ on V/2V points). |
 | `tests/test_cathedral_grand_tour.py` | 30 tests verifying every grand-tour connection. |
+
+### New Modules (v2.9.43 — Cathedral Deep Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_deep_tour.py` | Eight clusters of second-wave connections: Heegner j-invariant Cathedral cubes (j(i) = V³, j(τ_-7) = -(D·q)³, j(τ_-8) = F³, j(τ_-43) = -(16G)³), stable homotopy orders (\|π_3^s\|=2V, \|π_7^s\|=V·F=E_8 root count), CF(π) opening (D, D!+1, D·q), CF(e) pattern (D-1, D+1, D!), the 2V cluster (K3 χ, Niemeier count, Leech dim), Bott periodicity (D-1 and 2^D), string critical dimensions (2N, 2q, D!+q), Bernoulli numerators (q, D!+1). |
+| `tests/test_cathedral_deep_tour.py` | 27 tests verifying every deep-tour connection. |
+
+### v2.9.43 Deep Tour Headlines
+
+**Heegner j-invariant Cathedral cubes**:
+```
+j(i)         = 1728      = V³                    (Gaussian integer)
+j(τ_-7)      = -3375     = -(D·q)³               (D·q = order-2 conjugacy class size)
+j(τ_-8)      = 8000      = F³
+j(τ_-43)     = -884736000 = -(16·G)³
+```
+Four out of seven non-trivial Heegner j-values are Cathedral cubes.
+
+**Stable homotopy = E₈ roots**: `|π_7^s| = 240 = V·F = (D+1)·G` — same number as the E₈ root count, surfaced by the framework as V·F.
+
+**CF(π) opens with three Cathedral integers**: `[D; D!+1, D·q, ...]` — the third partial quotient of π is exactly `|order-2 conjugacy class of A_5|`.
 
 ### v2.9.42 Grand Tour Highlights
 
