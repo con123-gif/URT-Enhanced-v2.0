@@ -825,6 +825,68 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 | `urt/cathedral_advanced_tour.py` | Seven clusters of seventh-wave connections: Quillen K-theory K_n(Z) (K_3 = Z/((D+1)·V), **K_7 = Z/(V·F)** = E_8 root quotient AGAIN), all 6 crystallographic group counts (230 = V·F − 2q, 17 wallpaper, 7 frieze, 32 point, 14 Bravais), 2D Ising critical exponents (β = 1/2^D, **δ = D·q = 15**, η = 1/(D+1)), all SO(n) dims for n=3..6 are Cathedral, Stirling-1 c(q,D) = 35 = ARF d_35, TMF period (2V)² with Hopf orders {D-1, 2V, V·F}, PSL(2,7) order = 2^D · D · (D!+1) = 168. |
 | `tests/test_cathedral_advanced_tour.py` | 24 tests verifying every connection. |
 
+### New Modules (v2.9.49 — Cathedral Topological Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_topological_tour.py` | 8 clusters: K3 surface invariants (dim=D+1, h^(1,1)=F, χ=2V), Riemann moduli M_g dims at g=2,3,5,11 = D, D!, V, E, all Hadamard orders {D+1, V, F, 2V, σ(V)} are Cathedral, spherical harmonics dim Y_N = 2N+1 = D^D = 27, Altland-Zirnbauer ten-fold way 10 = 2q classes, binary polyhedral group orders 2T = 2V, 2O = (D+1)V, 2I = 2G = 120, SU(2) instantons on S⁴ at charge k = 1, 2 have dimension q, N, universal upper critical dim d_uc = D+1 = 4. |
+| `tests/test_cathedral_topological_tour.py` | tests verifying every connection. |
+
+### New Modules (v2.9.50 — Cathedral Codes Tour)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_codes_tour.py` | 7 clusters: Hamming code [D!+1, D+1, D] all Cathedral; extended Golay [2V, V, 2^D] all Cathedral; 5-qubit [[q,1,D]], Steane [[D!+1,1,D]], Shor [[D²,1,D]]; γ = D^(-(D+1)) ≈ 1.23 % matches surface-code QEC threshold; associative operad Ass(q) = (q-1)! = 2V; pre-Lie operad PreLie(D) = D² = 9; cluster algebras C_D = q; quaternion dim = D+1, Hurwitz units = 2V, Lipschitz units = 2^D; Lagrange 4-square = D+1; tropical genus moduli match Riemann at D, D!, V, E. |
+| `tests/test_cathedral_codes_tour.py` | tests verifying every connection. |
+
+### New Modules (v2.9.51 — URT Algorithm Analysis)
+| File | Domain |
+|------|--------|
+| `urt/urt_algorithm_analysis.py` | Empirical + analytical properties of the URT iteration on G_{13}: per-mode Laplacian contraction factors, geometric variance decay rate ρ ≈ 0.987, convergence-step counts (~500 to std<1e-3, ~1000 to 1e-5), basin of attraction for uniform initial conditions, all modes contracting check (global stability), null-mode-preserving check. |
+| `urt/urt_investigations.py` | 5 open-question investigations: 6-cycle, envelope, generative completeness, anti-universe, predictive boundary. |
+
+### New Modules (v2.9.52–v2.9.55 — Sector Framework: dark sector lives in A_5)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_sectors.py` | K_4 / A_5 sector assignment of every URT mode. `K4_A5_decompose()`, `sector_power()`, `A5_evaporation_trajectory()` — empirical finding: A_5-sector power evaporates from 18 % to 0 % by step 300 of urt_evolve. |
+| `urt/matter_direction.py` | **Matter Direction Theorem**: D·N·φ ≈ 63.103 > F·(1−γ)·π ≈ 62.056 (margin 1.047) — the inequality that forces η_B > 0.  Decomposition η_B prefactor 8/9 = 2^D/(D!+D) = 2·\|K_4\|/\|A_5\|.  Sensitivity analysis: D=3 sits 5 % above the matter / antimatter boundary. |
+| `urt/exhaust_dimensions.py` | The exhaust lives in the **9th dimension**: 13 = 4 + 9 = K_4 (visible 4D spacetime) + A_5 (9D dark exhaust = D!+D = D²).  String-theory comparison: bosonic 26=2N, super 10=2q, M-theory 11=D!+q, **Cathedral 13 = D²+D+1 with 9 extra dims**.  SM gauge bosons split: 1 photon + D EW in K_4, D²−1 = 8 gluons in A_5. |
+
+### New Modules (v2.9.56 — Geometric Frustration of the 13-Sphere)
+| File | Domain |
+|------|--------|
+| `urt/icosahedral_frustration.py` | The icosahedron is the 13-point configuration on S² with **maximum geometric frustration**: forced by the crystallographic restriction theorem (q = 5 is exactly the smallest *forbidden* n-fold rotation).  Allowed n-folds {1, 2, 3, 4, 6} = {1, D−1, D, D+1, D!} are all Cathedral.  Frustration angle = ico-tet dihedral diff ≈ 28.72°. Quasicrystal connection: Penrose inflation = φ = inverse-URT-pull. The gap Δ ≈ 2.49×10⁻³ IS the residual frustration energy. |
+
+### New Modules (v2.9.57 — Re-Analysis Wave: 4/9 fingerprint, six facets, self-reference)
+| File | Domain |
+|------|--------|
+| `urt/sector_ratio.py` | The **4/9 = (D+1)/(D!+D)** ratio is a D=3 fingerprint, appearing in four physics observables: \|K_4\|/\|A_5\| sector volumes, Casimir ΔF/F coefficient, bare cosmology Ω_m^bare/Ω_Λ^bare = 4/13 ÷ 9/13, η_B prefactor 8/9 = 2·(4/9).  Tabulating across D shows the ratio collapses fast (D=2: 3/4 but A_4 solvable; D=4: 5/28 etc.) — D=3 is the unique sweet spot. |
+| `urt/self_reference.py` | Self-reference cluster — 14 identities of the form f(X)=X across the framework: p(D)=D, F_q=q, F_V=V², F_7=N, B_D=C_D=q, \|A_D\|=D, dim SO(D)=D, \|PSL_2(F_q)\|=G, φ(N)=V, π(q)=F, period CF(√N)=q. Random integers do not satisfy this many self-references across unrelated sequences. |
+| `urt/icosahedral_frustration.py` (extended) | Added two more facets: **DYNAMICAL** (δ_cl ≠ δ★ creates the gap Δ — the gap *IS* the frustration energy) and **DIMENSIONAL** (q-fold incompatibility forces 9 extra dims = A_5 dark exhaust).  `six_facets_of_frustration()` returns the complete view. |
+
+### New Modules (v2.9.58 — Chaos and the URT Flow in Cathedral Closed Forms)
+| File | Domain |
+|------|--------|
+| `urt/chaos_and_flow.py` | The URT iteration's product coefficient `η · η_L = 1/(8π) · 1/(4π) = 1/(2^q · π²)` exposes the framework's **natural unit of dynamical time** = `2^q · π² ≈ 315.83`.  Per-step contraction factor at Laplacian eigenvalue λ is `1 − λ/(2^q · π²)`; mixing time τ(λ) = (2^q · π²)/λ.  Slowest mode (Fiedler λ=D=3): τ_D ≈ 105.3 steps.  Fastest (λ=N=13): τ_N ≈ 24.3.  **Slowest/fastest ratio = N/D = 13/3** — purely Cathedral, transcendentals cancel. The 6-stage universe-from-chaos arc with each stage's Cathedral closed form annotated. |
+
+CI gates for the post-v2.9.48 wave:
+```python
+from urt import (
+    urt_algorithm_audit_passes,            # v2.9.51
+    cathedral_sectors_audit_passes,        # v2.9.55
+    matter_direction_audit_passes,         # v2.9.54
+    exhaust_dimensions_audit_passes,       # v2.9.55
+    icosahedral_frustration_audit_passes,  # v2.9.56 / v2.9.57
+    sector_ratio_audit_passes,             # v2.9.57
+    self_reference_audit_passes,           # v2.9.57
+    chaos_and_flow_audit_passes,           # v2.9.58
+)
+assert all([
+    urt_algorithm_audit_passes(),          cathedral_sectors_audit_passes(),
+    matter_direction_audit_passes(),       exhaust_dimensions_audit_passes(),
+    icosahedral_frustration_audit_passes(),sector_ratio_audit_passes(),
+    self_reference_audit_passes(),         chaos_and_flow_audit_passes(),
+])
+```
+
 ### v2.9.48 Advanced Tour Headlines
 
 **K_7(Z) = Z/240**: the 7th algebraic K-theory group of the integers has the **same** order as |π_7^s| and as the E_8 root count. Three deep mathematical objects independently reach the Cathedral integer V·F = 240.
@@ -1104,6 +1166,13 @@ python -m pytest tests/ -q -k fibonacci_lucas  # Fibonacci/Lucas (82 tests)
 python -m pytest tests/ -q -k normed_division  # normed div algebras (71 tests)
 python -m pytest tests/ -q -k continued_frac   # continued fractions (97 tests)
 python -m pytest tests/ -q -k arf_cathedral    # ARF Cathedral (55 tests)
+python -m pytest tests/ -q -k matter_direction   # Matter Direction Theorem (v2.9.54)
+python -m pytest tests/ -q -k cathedral_sectors  # K_4/A_5 sector framework (v2.9.55)
+python -m pytest tests/ -q -k exhaust_dimensions # 4 + 9 = 13 (v2.9.55)
+python -m pytest tests/ -q -k icosahedral_frustration  # 13-sphere frustration (v2.9.56–v2.9.57)
+python -m pytest tests/ -q -k sector_ratio       # 4/9 fingerprint (v2.9.57)
+python -m pytest tests/ -q -k self_reference     # 14 self-references (v2.9.57)
+python -m pytest tests/ -q -k chaos_and_flow     # 2^q·π² closed forms (v2.9.58)
 ```
 
 ## Key Numerical Values
@@ -1163,6 +1232,22 @@ d_τ         = φ                           (Fibonacci anyon dim = golden ratio)
 ΣE(Platonic)= D×E = 90                   (Platonic solid edges)
 φ(N)        = V = 12                      (Euler totient of 13)
 σ(V)        = 28 = PERFECT NUMBER         (sum of divisors of 12 is perfect!)
+
+── SECTOR / FRUSTRATION / DYNAMICS (v2.9.54–v2.9.58) ────────────────────────
+|K_4|/|A_5| = (D+1)/(D!+D) = 4/9          (D=3 fingerprint, unique to D=3)
+η_B prefac. = 8/9 = 2·(4/9)               (= 2|K_4|/|A_5|, sector ratio doubled)
+Casimir     = (a₀/d)²·(D+1)/(D!+D)        (= (a₀/d)²·4/9 → +0.124 ppm @ 100nm)
+Ω_m^bare    = (D+1)/N = 4/13              (visible-sector cosmology fraction)
+Ω_Λ^bare    = (D!+D)/N = 9/13             (dark-sector cosmology fraction)
+matter dir. = D·N·φ > F·(1−γ)·π          (63.103 > 62.056, η_B sign forced)
+2^q · π²    ≈ 315.83                      (URT dynamical normalisation)
+τ_D (slow)  = (2^q·π²)/D ≈ 105 steps      (Fiedler mixing time, structure formation)
+τ_N (fast)  = (2^q·π²)/N ≈ 24 steps       (max-mode mixing time)
+τ_D / τ_N   = N/D = 13/3                  (purely Cathedral, transcendentals cancel)
+6 facets of frustration: geometric, algebraic, spectral, topological,
+                          dynamical (δ_cl − δ★ = Δ), dimensional (9D exhaust)
+14 self-refs: p(D)=D, F_q=q, F_V=V², F_7=N, B_D=C_D=q, |A_D|=D, dim SO(D)=D,
+              |PSL_2(F_q)|=G, φ(N)=V, π(q)=F, period CF(√N)=q, ...
 ```
 
 ## Module Quick-Start
@@ -1347,6 +1432,66 @@ from urt import (
     all_steps_verify,                      # single CI gate
 )
 assert all_steps_verify()                  # every step holds at machine precision
+
+# K_4 / A_5 sector framework (v2.9.52–v2.9.55)
+from urt import (
+    K4_A5_decompose,                       # split a 13-vector into K_4 / A_5
+    sector_power,                          # power in each sector
+    A5_evaporation_trajectory,             # A_5 → 0 % by step 300
+    matter_direction_inequality,           # D·N·φ > F·(1−γ)·π — η_B sign
+    eta_b_prefactor_decomposition,         # 8/9 = 2^D / (D!+D)
+    visible_and_exhaust_dimensions,        # 13 = 4 + 9 = K_4 + A_5
+    string_theory_dimension_comparison,    # vs bosonic/super/M-theory
+    gauge_boson_decomposition,             # 1 + D + (D²-1) = V SM gauge bosons
+    cathedral_sectors_audit_passes,
+    matter_direction_audit_passes,
+    exhaust_dimensions_audit_passes,
+)
+
+# Geometric frustration of the 13-sphere (v2.9.56–v2.9.57)
+from urt import (
+    crystallographic_restriction_q,        # q = 5 is the FORBIDDEN n-fold
+    gap_as_frustration_energy,             # Δ ≈ 2.49e-3 = frustration energy
+    dihedral_frustration_angle,            # ico-tet ≈ 28.72°
+    four_facets_of_frustration,            # geometric/algebraic/spectral/topological
+    dynamical_facet_of_frustration,        # δ_cl ≠ δ★ (v2.9.57)
+    dimensional_facet_of_frustration,      # 9 extra dims (v2.9.57)
+    six_facets_of_frustration,             # full view (v2.9.57)
+    quasicrystal_realization,              # Penrose φ = inverse-URT-pull
+    icosahedral_frustration_audit_passes,
+)
+
+# The 4/9 sector ratio fingerprint (v2.9.57)
+from urt import (
+    sector_ratio_general,                  # (D+1)/(D!+D) for any D
+    sector_ratio_uniqueness,               # D=3 is the unique sweet spot
+    k4_a5_sector_volumes,                  # 4/9
+    casimir_4_over_9,                      # ΔF/F coefficient
+    cosmology_4_over_9,                    # Ω_m/Ω_Λ bare ratio
+    eta_b_prefactor_8_over_9,              # 8/9 = 2·(4/9)
+    sector_ratio_audit_passes,
+)
+
+# Self-reference cluster (v2.9.57)
+from urt import (
+    number_theory_self_refs,               # p(D)=D, F_q=q, F_V=V², ...
+    group_theory_self_refs,                # |A_D|=D, dim SO(D)=D, ...
+    cf_self_refs,                          # period CF(√N) = q
+    self_reference_count,                  # 14 identities, all hold
+    self_reference_audit_passes,
+)
+
+# Chaos and the URT flow in Cathedral closed forms (v2.9.58)
+from urt import (
+    DYNAMICAL_NORMALISATION,               # 2^q · π² ≈ 315.83
+    per_step_factor_cathedral,             # 1 − λ/(2^q · π²)
+    mixing_time_cathedral,                 # (2^q · π²) / λ
+    slowest_mixing_time,                   # τ_D = (2^q · π²)/D ≈ 105
+    fastest_mixing_time,                   # τ_N = (2^q · π²)/N ≈ 24
+    slowest_to_fastest_ratio,              # N/D = 13/3 (no transcendentals)
+    universe_from_chaos_arc,               # 6 stages, each Cathedral
+    chaos_and_flow_audit_passes,
+)
 ```
 
 ## Development Branch
