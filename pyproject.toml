@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Cornelius Lytollis", email = "grimnir123@github"},
+    {name = "Cornelius Lytollis"},
 ]
 keywords = [
     "chaos", "physics", "standard-model", "icosahedron",

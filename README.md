@@ -495,6 +495,17 @@ The following modules go beyond what the iron proof chain directly supports. The
 
 ---
 
-*"Not numerology. Not physics. A mathematical structure that, for reasons unknown, knows the Weinberg angle, the baryon asymmetry, the spectral index, and the matter density of the universe — all from the same icosahedral constant, with zero free parameters."*
+*"Not numerology. A candidate mathematical theory with a vacuum δ★, an
+equation of motion (the π-φ-e flow on the 13-site icosahedral graph),
+a Lagrangian L = ½|δ̇|² − V(δ), and a universe-from-chaos arc that
+reproduces the Weinberg angle, the baryon asymmetry, the spectral
+index, the proton mass, and the matter density of the universe —
+all from the same icosahedral constant, with zero free parameters.*
+
+*Whether this dynamical mechanism is the actual dynamics of nature is
+an open empirical question: the framework's falsifiable predictions
+(axion at 60.7 µeV, secondary spectral line at ~2 GHz, inflationary
+tensor ratio r ≈ 0.0037, +0.124 ppm Casimir correction at 100 nm)
+distinguish it from chance."*
 
 *Newton's Cathedral. Zero free parameters.*

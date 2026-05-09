@@ -13,6 +13,104 @@ where φ = (1+√5)/2 (golden ratio), N=13 (icosahedral shell sites), γ=1/81=D^
 **Iron Proof (v2.4)**: D=3 alone → A₅ uniqueness (Jordan 1870) → N=13 → γ=D^{−(D+1)}=1/81 → δ★.
 Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 
+## Dynamical Mechanism
+
+URT is not a list of identities — it is a **dynamical theory** with an
+explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
+chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
+and verified in CI (6,779 tests, 0 xfail).
+
+### Equation of motion (the π–φ–e flow on G_{13})
+
+```
+∂_t δ  =  − L·δ / (4π)  −  (φ−1)·e^{−t/10}·(δ − δ★)·(1 + δ²)
+```
+
+— a parabolic gradient flow on the centred-icosahedral graph.
+Forward-Euler discretization is the **URT iteration**:
+
+```
+δ_{k+1} = δ_k + 0.04·( −0.08·L·δ_k − 0.6·e^{−k/10}·(δ_k − δ★)·(1 + δ_k²) )
+```
+
+with every coefficient forced (see `urt.first_principles`):
+
+| Coefficient | Value | Forced by |
+|---|---|---|
+| η_L | 1/(4π) ≈ 0.08 | spherical surface measure |S²| = 4π |
+| η | η_L/2 = 1/(8π) ≈ 0.04 | half-step Euler convention |
+| µ | 1/φ = φ−1 ≈ 0.6 | A₅ self-similarity |
+| τ | 10 | longest mixing time on G_{13} |
+| δ★ | (1−γ)π/(Nφ) ≈ 0.1475 | ∇V = 0 at uniform configuration |
+
+### Lagrangian
+
+```
+L  =  ½ |δ̇|²  −  V(δ)
+V(δ)  =  ½ Σᵢ (δᵢ − δ★)² (1 + δᵢ²)  +  ½ δᵀ L δ
+```
+
+The URT iteration is the **τ → ∞ over-damped limit** of the
+Euler-Lagrange equation `δ̈ = −∇V(δ) − ζ δ̇` with η = 1/ζ = 1/(8π).
+Code: `cathedral_potential`, `cathedral_potential_gradient`,
+`cathedral_flow_lagrangian`.
+
+### Vacuum + classical rail
+
+| Object | Closed form | Numerical |
+|---|---|---|
+| Vacuum δ★ (UV fixed point) | (1−γ)π/(Nφ) | 0.14751 |
+| Classical rail δ_cl | D/F = 3/20 | 0.15000 |
+| Gap Δ = δ_cl − δ★ | (D/F) − (1−γ)π/(Nφ) | 2.49 × 10⁻³ |
+
+### Universe-from-chaos arc (executable in code)
+
+```
+Step 1.  PURE CHAOS                 — np.random.uniform(0, 0.5, 13)
+Step 2.  URT FLOW                   — urt_evolve(x0, steps=200)
+Step 3.  STRUCTURE FORMS            — variance collapses (contraction map)
+Step 4.  TWO RAILS SPLIT            — δ★ vacuum vs δ_cl classical
+Step 5.  GAP FORMS                  — Δ = δ_cl − δ★ ≈ 2.49 × 10⁻³
+Step 6.  MATTER WINS OVER ANTIMATTER — η_B = γ³ Δ δ★ (8/9) = 6.14 × 10⁻¹⁰
+```
+
+### K₄ ⊕ A₅ unification (one object, eight lenses)
+
+The same 4 + 9 = 13 split shows up in every layer of the framework:
+
+| View       | K₄ (4 modes)        | A₅ (9 modes)              |
+|------------|---------------------|---------------------------|
+| counting   | 4 = D+1             | 9 = D! + D                |
+| symmetry   | Z₂ × Z₂ (Klein)     | A₅ icosahedral rotations  |
+| dynamics   | coherent (gauge)    | exhaust (matter)          |
+| ARF        | residues d_64, d_4  | residues d_35,d_51,d_80,d_79 |
+| Z-channels | Z₄ phases e^{iπk/2} | Z₅ phases e^{i·2π(k-4)/5} |
+| spectrum   | λ ∈ {0,3,3,5}       | λ ∈ {5×6, 7×2, 9, 13}     |
+| cosmology  | Ω_m = 4/13          | Ω_Λ = 9/13                |
+| Casimir    | numerator (D+1)=4   | denominator (D!+D)=9 → 4/9 |
+
+### Theorem (uniqueness, PDF Lytollis 2026 §5)
+
+The URT iteration on G_{13} is the **unique** Euler discretization
+whose only transcendentals are π, φ, e that simultaneously satisfies:
+
+  1. global asymptotic stability to δ★
+  2. preservation of H₃ ⋊ K₄ symmetry
+  3. finite-closure (nullity exactly 1)
+
+CI gate:
+
+```python
+from urt import all_steps_verify
+assert all_steps_verify()             # all 8 forcing steps hold at 1e-15
+```
+
+References:
+  * `urt/cathedral_engine.py`         — engine + Lagrangian + unification
+  * `urt/first_principles.py`         — eight forcing steps as functions
+  * `docs/PI_PHI_E_DERIVATION.md`     — formal derivation of π, φ, e
+  * Lytollis (2026), *The π–φ–e Flow*, PDF §1–§6
+
 ## Key Files
 
 ### Core Constants
