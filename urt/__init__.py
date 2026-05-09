@@ -2077,13 +2077,23 @@ from .cathedral_sectors import (
     print_cathedral_sectors_report,
 )
 
+# v2.9.54 — Matter Direction Theorem: η_B sign is forced by D=3
+from .matter_direction import (
+    matter_direction_inequality,
+    eta_B_prefactor_decomposition,
+    matter_direction_sensitivity,
+    matter_direction_audit,
+    matter_direction_audit_passes,
+    print_matter_direction_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.53"
+__version__ = "2.9.54"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2660,4 +2670,11 @@ __all__ = [
     "cathedral_sectors_audit",
     "cathedral_sectors_audit_passes",
     "print_cathedral_sectors_report",
+    # v2.9.54 — Matter Direction Theorem
+    "matter_direction_inequality",
+    "eta_B_prefactor_decomposition",
+    "matter_direction_sensitivity",
+    "matter_direction_audit",
+    "matter_direction_audit_passes",
+    "print_matter_direction_report",
 ]
