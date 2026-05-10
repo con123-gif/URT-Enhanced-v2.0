@@ -31,7 +31,7 @@ Tier 3 — Physical bridges (≈ identities linking integers to observables):
 
 from math import pi, sqrt, factorial
 from urt.shell_closure import DELTA_STAR
-from urt.cathedral_gap import PHI
+from urt.shell_closure import phi as PHI    # pure-math branch: was cathedral_gap on main
 
 # ── Cathedral integers ────────────────────────────────────────────────────────
 D, N, V, E, F, q, G = 3, 13, 12, 30, 20, 5, 60

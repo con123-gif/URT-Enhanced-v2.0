@@ -85,11 +85,25 @@ class TestAssessIdentity:
             assert key in a
 
 
+import pytest
+
+# pure-math branch: predictions_registry lives only on `main` because predictions
+# are physical-observable claims.  registry_significance() returns [] here.
+HAVE_REGISTRY = False
+try:
+    from urt.predictions_registry import cathedral_predictions  # noqa: F401
+    HAVE_REGISTRY = True
+except ImportError:
+    pass
+
+
 class TestRegistrySignificance:
+    @pytest.mark.skipif(not HAVE_REGISTRY, reason="pure-math: no predictions_registry")
     def test_at_least_some_predictions_assessed(self):
         rows = registry_significance()
         assert len(rows) >= 5
 
+    @pytest.mark.skipif(not HAVE_REGISTRY, reason="pure-math: no predictions_registry")
     def test_each_row_has_tightness(self):
         rows = registry_significance()
         for r in rows:
@@ -99,6 +113,8 @@ class TestRegistrySignificance:
 
 class TestCathedralCompressionAudit:
     def test_audit_passes(self):
+        # Audit is structured to pass with or without the registry
+        # (see urt.cathedral_compression.cathedral_compression_audit_passes).
         assert cathedral_compression_audit_passes()
 
     def test_audit_returns_complete_dict(self):
@@ -107,11 +123,13 @@ class TestCathedralCompressionAudit:
                     "by_tightness", "average_discovery_density", "rows"):
             assert key in a
 
+    @pytest.mark.skipif(not HAVE_REGISTRY, reason="pure-math: no predictions_registry")
     def test_some_exact_or_tight_predictions(self):
         """At least some confirmed predictions are EXACT or TIGHT."""
         a = cathedral_compression_audit()
         assert (a["by_tightness"]["EXACT"] + a["by_tightness"]["TIGHT"]) >= 3
 
+    @pytest.mark.skipif(not HAVE_REGISTRY, reason="pure-math: no predictions_registry")
     def test_average_discovery_density_low(self):
         """Average discovery density across confirmed predictions is <10%."""
         a = cathedral_compression_audit()
