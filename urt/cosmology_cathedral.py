@@ -29,6 +29,9 @@ R_TENSOR    = 12 / N_E**2       # = 12/57² ≈ 0.003695
 A_S = N_E**2 * (D + 1)**3 * q * (32 / 9) * pi**4 * gamma**9 * cos(pi / V)**4
 
 # ── Density parameters ────────────────────────────────────────────────────────
+# Bare ratio Ω_m^bare / Ω_Λ^bare = (D+1)/(D!+D) = 4/9 — the K_4/A_5 sector ratio
+# (cf. urt.sector_ratio).  The factor (1+2γ) is the small icosahedral correction.
+OMEGA_M_BARE_OVER_OMEGA_LAMBDA_BARE = 4 / 9    # = (D+1)/(D!+D), unique to D=3
 OMEGA_M     = (4 / 13) * (1 + 2 * gamma)      # ≈ 0.3153
 OMEGA_LAMBDA = 1 - OMEGA_M                     # ≈ 0.6847
 OMEGA_B     = gamma * OMEGA_M                  # baryon fraction γ × Ω_m ≈ 0.00389

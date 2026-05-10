@@ -49,6 +49,18 @@ from .cathedral_engine import (
 )
 
 
+# ── Cathedral closed form for the dynamical normalisation ───────────────
+# η · η_L = 1/(8π) · 1/(4π) = 1/(32 π²) = 1/(2^q · π²) ≈ 1/315.83.
+# Every mixing time on G_{13} is therefore τ(λ) = (2^q · π²) / λ.
+# Slowest non-trivial: τ_D = (2^q·π²)/D ≈ 105 steps (Fiedler λ=3).
+# Fastest:             τ_N = (2^q·π²)/N ≈  24 steps (max λ=13).
+# Slowest/fastest ratio = N/D = 13/3 — purely Cathedral, no transcendentals.
+# Full closed-form derivation in urt.chaos_and_flow.
+
+import math as _math
+DYNAMICAL_NORMALISATION_2POW_Q_PI_SQ = (2 ** 5) * (_math.pi ** 2)   # ≈ 315.83
+
+
 # ── Linear stability around δ★ ──────────────────────────────────────────
 
 def per_mode_contraction_factors() -> Dict[float, float]:

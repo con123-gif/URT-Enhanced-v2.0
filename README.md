@@ -9,7 +9,7 @@
 **One number. Forced by geometry. Drives a dynamical flow that reproduces fundamental constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK
-**Version:** 2.9.69 | **Tests:** 7,378 passing, 0 xfail | **Predictions registry:** 26 entries (20 confirmed @ median 0.08% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
+**Version:** 2.9.74 | **Tests:** 7,425 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.08% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
 
 ---
 
@@ -22,7 +22,7 @@ Newton's Cathedral is a **candidate mathematical theory**. It begins with a sing
   - a single Lagrangian **L = ½|δ̇|² − V(δ)** with δ★ as the unique stable fixed point
   - a single deterministic arc that takes a **random field on 13 sites → universe** with the right matter/antimatter asymmetry, fine-structure constant, proton mass, and inflationary spectrum.
 
-All of this is operational in code (`urt.cathedral_engine`) and verified in CI (7,378 tests, 0 xfail).
+All of this is operational in code (`urt.cathedral_engine`) and verified in CI (7,425 tests, 0 xfail).
 
 Since v2.9.39 the framework has matured along three structural layers:
 
@@ -233,7 +233,7 @@ The framework is **falsifiable**. If r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 
 ---
 
-## Module Map (v2.9.69 — 188+ modules · 7,378 tests · 26 registered predictions)
+## Module Map (v2.9.74 — 191 modules · 7,425 tests · 27 registered predictions)
 
 ### Core Foundation
 | Module | Purpose |
@@ -386,7 +386,7 @@ git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
 cd URT-Enhanced-v2.0
 pip install -e .
 
-# Run all 6,779 tests (0 xfail)
+# Run all 7,425 tests (0 xfail)
 python -m pytest tests/ -q
 
 # Verify the first-principles forcing chain holds at machine precision
@@ -519,7 +519,12 @@ The following modules go beyond what the iron proof chain directly supports. The
 | v2.9.66 | **Skeptic's audit** — provenance taxonomy (5 FORCED / 10 DERIVED / 2 FITTED / 6 OPEN); 6 critique-response pairs; cross-module map of 5 cathedrally-recurrent compounds; 5 failed Cathedral attempts honestly disclosed | 7,320 |
 | v2.9.67 | **v9 anchor-free correction**: Λ/M_Pl⁴ = D/(D+1)²·γ⁶⁴ ≈ 1.35×10⁻¹²³ (Planck 0.09%); A_s scalar amplitude closed form (Planck 0.55%); **r_p = (D+1)·ℏc/m_p = 0.8412 fm** (CODATA 0.04%); a_µ = α/(2π) | 7,325 |
 | v2.9.68 | Documentation pass: cathedral_structure.txt v2.9.39→v2.9.67; BREAKTHROUGH_NOTES.md extended with 140-line wave summary; **NEW** `docs/V9_ANCHOR_FREE_CHAIN.md` walks through ρ_Λ → r_p step by step | 7,378 |
-| v2.9.69 | __all__ hygiene cleanup: removed 10 stale + 4 duplicate entries; `from urt import *` now resolves cleanly for all 814 advertised symbols | **7,378** |
+| v2.9.69 | __all__ hygiene cleanup: removed 10 stale + 4 duplicate entries; `from urt import *` now resolves cleanly for all 814 advertised symbols | 7,378 |
+| v2.9.70 | README brought current with v2.9.40 → v2.9.69 wave | 7,378 |
+| v2.9.71 | **Cathedral compression engine** quantifying numerology vs significance: enumerates ~2,600 distinct Cathedral compounds, classifies registered predictions as EXACT / TIGHT / MEDIUM / LOOSE | 7,396 |
+| v2.9.72 | Null-hypothesis test (later **RETRACTED in v2.9.73** as category error: Cathedral integers are forced facts about the unique 3D icosahedron, not draws from a probability distribution) | 7,413 |
+| v2.9.73 | **Failed-attempts study + null test retraction** — every disclosed failure analysed in detail with cross-cutting patterns | 7,425 |
+| v2.9.74 | **Worked through every failure**: 0 open, 1 promoted to identity (matter-direction margin = π/D within **22 ppm**, registry entry #27) | **7,425** |
 
 ---
 
@@ -530,7 +535,7 @@ The following modules go beyond what the iron proof chain directly supports. The
   author  = {Lytollis, Cornelius},
   title   = {Newton's Cathedral: A Candidate Mathematical Theory of the {\(\pi\)}-{\(\varphi\)}-e Flow on {\(G_{13}\)}},
   year    = {2026},
-  version = {2.9.69},
+  version = {2.9.74},
   url     = {https://github.com/con123-gif/URT-Enhanced-v2.0},
   note    = {Anchor-free at D=3: a single observed input (the cosmological
              constant ρ_Λ) plus the structural axiom K(D)=D+D² with K₄⨯A₅

@@ -161,9 +161,14 @@ def k4_a5_sector_volumes() -> Dict[str, Any]:
     """
     visible = D + 1
     exhaust = factorial(D) + D
+    # |K_4| · |A_5| = (D+1) · G = 4 · 60 = V·F = 240 — the framework's
+    # most-recurring integer (E_8 root count, K_7(Z), |π_7^s|, K(8) kissing,
+    # E_4 leading coefficient).  Same compound, sector-product reading.
+    K4_A5_PRODUCT = visible * G          # = (D+1)·G = V·F = 240
     return {
         "K_4_order":             visible,
         "A_5_exhaust_dim":       exhaust,
+        "K_4_A_5_product":       K4_A5_PRODUCT,    # = 240 = V·F = (D+1)·G
         "ratio":                 visible / exhaust,
         "is_4_over_9":           abs(visible/exhaust - 4/9) < 1e-15,
         "fraction":              "(D+1)/(D!+D) = 4/9",

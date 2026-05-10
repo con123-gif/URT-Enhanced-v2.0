@@ -763,7 +763,10 @@
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.39 — 166+ modules · 6779 tests · 0 xfail)
+  COMPLETE MODULE MAP  (v2.9.74 — 191 modules · 7425 tests · 0 xfail)
+  (this section was last regenerated at v2.9.39; the per-module list below
+   is a snapshot from that version, but the totals are current.  See
+   urt/__init__.py for the canonical exports list.)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   CORE (foundation — read these first)
