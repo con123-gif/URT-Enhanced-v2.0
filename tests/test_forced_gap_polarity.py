@@ -74,3 +74,60 @@ class TestPolarityAudit:
         for v in a["violations"]:
             assert v["polarity"] in ("UV", "IR")
             assert "name" in v
+
+
+class TestPolarityARFUnification:
+    """Per-observable empirical polarity + monotonic residue check.
+
+    The unification claim: ARF residues point toward observation AND
+    bring the prediction strictly closer to it.  This is the cleaner
+    principle that survives unifying the upload's polarity discipline
+    with the framework's ARF residue chain.
+    """
+
+    def test_audit_runs(self):
+        from urt import polarity_arf_unification_audit
+        a = polarity_arf_unification_audit()
+        assert a["n_checked"] > 0
+
+    def test_unification_holds_for_all_tested(self):
+        """The strong claim: residue is toward observation AND closer."""
+        from urt import polarity_arf_unification_audit_passes
+        assert polarity_arf_unification_audit_passes()
+
+    def test_no_inconsistencies(self):
+        from urt import polarity_arf_unification_audit
+        a = polarity_arf_unification_audit()
+        assert a["n_inconsistencies"] == 0, \
+            f"Found sign mismatches: {a['inconsistencies']}"
+
+    def test_no_nonmonotonic(self):
+        from urt import polarity_arf_unification_audit
+        a = polarity_arf_unification_audit()
+        assert a["n_nonmonotonic"] == 0, \
+            f"Found residues that move prediction AWAY from observed: {a['nonmonotonic']}"
+
+    def test_per_observable_polarity_assignments(self):
+        """Empirical polarities should be self-consistent (UV or IR, not '0' for tested)."""
+        from urt import polarity_arf_unification_audit
+        a = polarity_arf_unification_audit()
+        for r in a["results"]:
+            assert r["empirical_polarity"] in ("UV", "IR")
+            assert r["unification_ok"]
+
+    def test_split_between_uv_and_ir(self):
+        """Confirm: not all observables are on the same side."""
+        from urt import polarity_arf_unification_audit
+        a = polarity_arf_unification_audit()
+        assert a["uv_count"] > 0
+        assert a["ir_count"] > 0
+
+    def test_specific_polarities(self):
+        """Spot-check known empirical polarities."""
+        from urt import empirical_polarity
+        # 1/α: bare = 137 (integer), observed ≈ 137.036 → UV (residue raises)
+        r = empirical_polarity("1/α (fine structure)")
+        assert r["empirical_polarity"] == "UV"
+        # n_s: bare = 1 (scale invariance), observed ≈ 0.965 → IR (residue lowers)
+        r = empirical_polarity("n_s (spectral index)")
+        assert r["empirical_polarity"] == "IR"

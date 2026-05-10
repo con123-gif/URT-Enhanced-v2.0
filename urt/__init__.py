@@ -2246,11 +2246,16 @@ from .lytollis_seven_laws import (
 # the relative-error gate in predictions_registry)
 from .forced_gap_polarity import (
     POLARITY_CLASSIFICATION,
+    BARE_CATHEDRAL_FORMS,
     gap_polarity_signs,
     check_polarity,
     run_polarity_audit,
     forced_gap_polarity_audit_passes,
     print_forced_gap_polarity_report,
+    empirical_polarity,
+    polarity_arf_unification_audit,
+    polarity_arf_unification_audit_passes,
+    print_polarity_arf_unification_report,
 )
 
 # v2.9.63 — Cathedral × Lytollis synthesis: the Cathedral integers are
@@ -3044,13 +3049,18 @@ __all__ = [
     "lytollis_seven_laws_audit",
     "lytollis_seven_laws_audit_passes",
     "print_lytollis_seven_laws_report",
-    # v2.9.79 — Forced Gap Polarity audit
+    # v2.9.79 — Forced Gap Polarity audit + ARF unification
     "POLARITY_CLASSIFICATION",
+    "BARE_CATHEDRAL_FORMS",
     "gap_polarity_signs",
     "check_polarity",
     "run_polarity_audit",
     "forced_gap_polarity_audit_passes",
     "print_forced_gap_polarity_report",
+    "empirical_polarity",
+    "polarity_arf_unification_audit",
+    "polarity_arf_unification_audit_passes",
+    "print_polarity_arf_unification_report",
     # v2.9.63 — Cathedral × Lytollis synthesis
     "gamma_unification",
     "D3_uniqueness_conditions",
