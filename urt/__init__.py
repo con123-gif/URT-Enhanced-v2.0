@@ -2254,13 +2254,30 @@ from .skeptics_audit import (
     print_skeptics_audit_report,
 )
 
+# v2.9.71 — Cathedral compression / discovery-probability engine:
+# enumerates ~2600 distinct Cathedral compounds, classifies every
+# registered prediction as EXACT / TIGHT / MEDIUM / LOOSE, quantifies
+# the framework's identities against random-match search.
+from .cathedral_compression import (
+    cathedral_compounds,
+    find_matches,
+    n_matches_at_tol,
+    discovery_density,
+    tightness_label,
+    assess_identity,
+    registry_significance,
+    cathedral_compression_audit,
+    cathedral_compression_audit_passes,
+    print_cathedral_compression_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.70"
+__version__ = "2.9.71"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2965,4 +2982,15 @@ __all__ = [
     "skeptics_audit",
     "skeptics_audit_passes",
     "print_skeptics_audit_report",
+    # v2.9.71 — Cathedral compression / discovery-probability engine
+    "cathedral_compounds",
+    "find_matches",
+    "n_matches_at_tol",
+    "discovery_density",
+    "tightness_label",
+    "assess_identity",
+    "registry_significance",
+    "cathedral_compression_audit",
+    "cathedral_compression_audit_passes",
+    "print_cathedral_compression_report",
 ]
