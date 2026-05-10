@@ -16,8 +16,8 @@ class TestFailureAnalysis:
         assert len(FAILURE_ANALYSIS) == 6
 
     def test_each_has_required_fields(self):
-        """Every entry has the standard analysis fields."""
-        required = ("id", "name", "category", "severity",
+        """Every entry has the standard analysis fields (incl. v2.9.74 resolution)."""
+        required = ("id", "name", "category", "severity", "resolution",
                     "best_attempt", "observed", "rel_error",
                     "what_we_know", "interpretation", "actionable")
         for f in FAILURE_ANALYSIS:
