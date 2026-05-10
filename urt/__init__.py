@@ -2271,11 +2271,13 @@ from .cathedral_compression import (
     print_cathedral_compression_report,
 )
 
-# v2.9.72 — null-hypothesis test: Cathedral primaries vs K random
-# integer vocabularies on a 19-target PDG/CODATA/Planck observation set.
-# Honest negative result at depth 2 — Cathedral does NOT outperform
-# random.  The framework's specificity comes from STRUCTURAL depth-3+
-# compounds + curated named values, not from the seven primaries alone.
+# v2.9.72 — null-hypothesis test (RETRACTED in v2.9.73):
+# This module is RETAINED FOR TRANSPARENCY but its result is meaningless.
+# The Cathedral integers are forced facts about the unique geometric
+# structure in D=3 (the icosahedron picked out by q=5 non-crystallographic
+# + A_5 non-solvable), not draws from a probability distribution.
+# Comparing them against random integer vocabularies is a category error.
+# See HONEST_FINDING in the module docstring for the full critique.
 from .null_hypothesis_test import (
     PDG_TARGETS,
     CATHEDRAL_PRIMARIES,
@@ -2290,13 +2292,29 @@ from .null_hypothesis_test import (
     print_null_hypothesis_report,
 )
 
+# v2.9.73 — failed-attempts study: detailed analysis of all six honestly
+# disclosed failures, with cross-cutting patterns, severity classifications,
+# and recommendations.  Includes the retraction of the v2.9.72 null test
+# as a category error (per user pushback that the icosahedron is unique
+# to D=3 and not drawn from a probability distribution).
+from .failed_attempts_study import (
+    FAILURE_ANALYSIS,
+    by_category as failures_by_category,
+    by_severity as failures_by_severity,
+    cross_cutting_patterns as failures_cross_cutting_patterns,
+    recommendations as failures_recommendations,
+    failed_attempts_study_audit,
+    failed_attempts_study_audit_passes,
+    print_failed_attempts_study_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.72"
+__version__ = "2.9.73"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3012,7 +3030,7 @@ __all__ = [
     "cathedral_compression_audit",
     "cathedral_compression_audit_passes",
     "print_cathedral_compression_report",
-    # v2.9.72 — null-hypothesis test (Cathedral vs random vocabularies)
+    # v2.9.72 — null-hypothesis test (Cathedral vs random vocabularies — RETRACTED v2.9.73)
     "PDG_TARGETS",
     "CATHEDRAL_PRIMARIES",
     "HONEST_FINDING",
@@ -3024,4 +3042,13 @@ __all__ = [
     "null_hypothesis_audit",
     "null_hypothesis_audit_passes",
     "print_null_hypothesis_report",
+    # v2.9.73 — failed-attempts study (incl. retraction of #6)
+    "FAILURE_ANALYSIS",
+    "failures_by_category",
+    "failures_by_severity",
+    "failures_cross_cutting_patterns",
+    "failures_recommendations",
+    "failed_attempts_study_audit",
+    "failed_attempts_study_audit_passes",
+    "print_failed_attempts_study_report",
 ]

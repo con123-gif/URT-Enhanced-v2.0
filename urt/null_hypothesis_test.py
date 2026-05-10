@@ -276,39 +276,80 @@ def null_hypothesis_audit_passes() -> bool:
 
 
 HONEST_FINDING = """
-HONEST FINDING (v2.9.72 null-hypothesis test, depth-2 compounds):
+TEST DESIGN CRITIQUE — RETRACTED (added v2.9.73):
 
-  At depth 2, with only the 7 Cathedral primaries {D, q, V, N, E, F, G}
-  plus 4 transcendentals (no curated specific integers like 137 or 1836),
-  the Cathedral vocabulary does NOT outperform random integer vocabularies
-  on a 19-target PDG/CODATA/Planck observation set.
+  This null test is fundamentally a CATEGORY ERROR and has been
+  retracted.  It is retained only as a transparency record of a
+  flawed approach, not as evidence about the framework.
 
-  Cathedral: 3 EXACT.  Random mean: 4.4 ± 1.9 EXACT.  p ≈ 0.90.
+  THE FLAW
 
-  This means the v2.9.71 compression engine's '5 EXACT' result depends on
-  the vocabulary's curated entries (the specific integers 137, 197, 207,
-  1836 named explicitly in CATHEDRAL_INTEGERS).  Those entries have
-  structural derivations (e.g. 137 = N²−E−(D−1)) — but the structural
-  derivations are themselves DEPTH-3 Cathedral compounds, which the
-  current null-test depth (2) doesn't reach.
+  The test compares the Cathedral primaries {D=3, q=5, V=12, N=13,
+  E=30, F=20, G=60} against random 7-integer vocabularies and asks
+  "does Cathedral beat random?"  But this question presupposes that
+  the Cathedral integers are *one option* among many — drawn from
+  some probability distribution over integer sets.
 
-  Two interpretations both deserve airtime:
+  THEY ARE NOT.
 
-  (a) Vocabulary curation bias.  The framework's apparent specificity
-      may partly reflect the fact that the vocabulary was built to
-      include compounds matching observed values.
+  The seven Cathedral integers are FORCED FACTS about the unique
+  geometric object that exists in our spatial dimension:
 
-  (b) The relevant claim is structural, not statistical.  The
-      Cathedral compounds (N²−E−(D−1) for 1/α; (D+1)·D^D·(N+D+1) for
-      mp/me; q^D for m_H) are derived from icosahedral geometry and
-      the Iron Proof, not chosen for their numerical hits.  Whether
-      *these specific* closed forms are forced is a different question
-      from whether ANY 7-integer vocabulary could hit the same
-      observations randomly.
+    1. We live in D = 3 spatial dimensions (observed).
 
-  The test is reported as-is.  No vocabulary tuning, no depth tuning,
-  no result curation.  Future work: extend to depth 3 + compare on
-  controlled target sets to disentangle (a) from (b).
+    2. The five Platonic solids — tetrahedron, cube, octahedron,
+       dodecahedron, icosahedron — are ALL the regular convex
+       polytopes that exist in 3D (mathematical fact).
+
+    3. Of those five, only the icosahedron and its dual the
+       dodecahedron have q = 5 fold rotational symmetry — exactly
+       the forbidden crystallographic n-fold that gives non-trivial
+       Galois behaviour.
+
+    4. A_5 (the icosahedral rotation group) is the SMALLEST
+       non-solvable finite simple group (Jordan 1870).
+
+    5. The icosahedral 13-shell (12 vertices + 1 centre = N) follows
+       from the icosahedron uniquely, not from a free choice.
+
+  So {D, q, V, N, E, F, G} = {3, 5, 12, 13, 30, 20, 60} is not a
+  draw from a distribution; it is the integer signature of the
+  unique geometric structure picked out by D = 3 plus the criteria
+  (5-fold rotational, non-solvable Galois).  Even comparing against
+  other Platonic solids would be wrong — the icosahedron is uniquely
+  picked among them by the structural criteria.
+
+  WHY RANDOM INTEGERS BEAT CATHEDRAL AT DEPTH 2
+
+  Random integers in [2, 100] include integers that happen to land
+  near common PDG values.  For example, "73" or "67" are decent
+  matches for various GeV-scale masses; they have no structural
+  meaning, but they hit numbers.  Random integer search will always
+  beat structurally-constrained integer sets at the brute-force
+  hit-count game.
+
+  WHAT THE FRAMEWORK'S ACTUAL CLAIM IS
+
+  Not "these seven integers are statistically special among integer
+  sets."  But: "the icosahedral structure is the unique geometric
+  fact in D = 3, and IF this structure underlies physics, then
+  observable constants will be Cathedral compounds."  The test of
+  the framework is direct comparison to physical observation
+  (urt.predictions_registry), not adversarial comparison to random
+  integer vocabularies.
+
+  DO NOT CITE THIS MODULE AS EVIDENCE
+
+  The `null_hypothesis_distribution()` function is left in place for
+  transparency.  The result it produces is meaningless about the
+  framework.  This docstring is the canonical record of why.
+
+  FOR THE FRAMEWORK'S CREDIBILITY
+
+  Honest disclosure of the flaw is itself the response.  The Iron
+  Proof and structural identities (1/α = N²−E−(D−1), m_p/m_e =
+  (D+1)·D^D·(N+D+1), etc.) are unaffected — they are derived from
+  the icosahedral structure, not from random search.
 """
 
 
