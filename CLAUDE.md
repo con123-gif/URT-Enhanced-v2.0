@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.62 — Cathedral Framework
+# URT Enhanced v2.9.63 — Cathedral Framework
 
 ## Repository Overview
 
@@ -1134,6 +1134,11 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 | File | Domain |
 |------|--------|
 | `urt/lytollis_bounded_chaos.py` | **The dynamical Lytollis Law: δ = (D_KY − 1)(τ − 2)** — a closed-form scalar relationship linking three observables (robustness margin δ, Kaplan-Yorke dim D_KY, avalanche exponent τ) of any bounded chaotic system F = H + γΨ.  Cross-validated to R² = 1.000 with zero error across 7 systems: Logistic, Rössler, Kuramoto, Ising, SOC sandpile, EEG awake, EEG filtered.  Out-of-sample test (cortex RNN N=200 → N=600) predicts D_KY to <0.8 %.  **The URT iteration on G_{13} IS a Lytollis system**: H = (I − η·η_L·L) is the Laplacian-driven contraction, γ = D^(−(D+1)) = 1/81 IS the Lytollis exploration scaling parameter, Ψ is the exhaust pull e^(−t/τ)·(δ−δ★)·(1+δ²).  The law derives α(M_Z) = 1/127.955 (PDG 1/127.918), Λ ≈ 10⁻¹²⁰ as a δ-tuned RG fixed point, and CKM angles via sin θ_ij ~ √(m_i/m_j).  Paper: Lytollis (2025-11-12), "A Prescriptive and Necessary Condition for Bounded Chaotic Systems Across Scales." |
+
+### New Modules (v2.9.63 — Cathedral × Lytollis Synthesis)
+| File | Domain |
+|------|--------|
+| `urt/cathedral_lytollis_synthesis.py` | **The Cathedral framework and Lytollis's Law are the same theory at D = 3.** The seven Cathedral integers are the unique closed-form solution of Lytollis's necessary condition `δ = (D_KY−1)(τ−2)` evaluated at the spatial dimension D = 3. Five conditions jointly pick D = 3 uniquely: (a) admits q = D+2 = 5 fold rotational symmetry (icosahedral vertex axes), (b) FORBIDS q-fold periodic symmetry (crystallographic restriction), (c) A_(D+2) = A_5 is non-solvable (Jordan 1870 + Galois obstruction), (d) D² + D + 1 = N = 13 closure (Heron / icosahedral), (e) Lytollis κ-margin `1 − N/(2^q · π²)` is finite and positive. Three physics derivations cross-validate: 1/α(M_Z) = 127.955 (Lytollis) and 1/α(0) = 137 (Cathedral) connected by 2-loop RGE; Λ/M_Pl⁴ = (D+1)·γ^((D+1)^D) (Cathedral) ↔ 120 RG steps (Lytollis); δ_CP = 197° (Cathedral) ↔ √(m_i/m_j) hierarchy (Lytollis). The unification identity: **γ_URT = γ_Lytollis = D^(−(D+1)) = 1/81** — same constant, two derivations. |
 
 CI gates for the post-v2.9.48 wave:
 ```python
