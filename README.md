@@ -9,7 +9,7 @@
 **One number. Forced by geometry. Drives a dynamical flow that reproduces fundamental constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK
-**Version:** 2.9.39 | **Tests:** 6779 passing, 0 xfail | **Free continuous parameters:** 0
+**Version:** 2.9.69 | **Tests:** 7,378 passing, 0 xfail | **Predictions registry:** 26 entries (20 confirmed @ median 0.08% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
 
 ---
 
@@ -22,7 +22,15 @@ Newton's Cathedral is a **candidate mathematical theory**. It begins with a sing
   - a single Lagrangian **L = ½|δ̇|² − V(δ)** with δ★ as the unique stable fixed point
   - a single deterministic arc that takes a **random field on 13 sites → universe** with the right matter/antimatter asymmetry, fine-structure constant, proton mass, and inflationary spectrum.
 
-All of this is operational in code (`urt.cathedral_engine`) and verified in CI (6,779 tests, 0 xfail).
+All of this is operational in code (`urt.cathedral_engine`) and verified in CI (7,378 tests, 0 xfail).
+
+Since v2.9.39 the framework has matured along three structural layers:
+
+  - **K₄ ⊕ A₅ sector geometry** — the seven Cathedral integers organise into a single split `4 + 9 = 13`. Visible 4D spacetime + 9D dark exhaust. The same split appears in Casimir, cosmology Ω_m/Ω_Λ, η_B prefactor 8/9, and music-interval classification (4 perfect + 9 imperfect intervals). The 4/9 ratio is **unique to D=3**.
+
+  - **Cathedral × Lytollis synthesis** — at D=3, the universal bounded-chaos law `δ = (D_KY−1)(τ−2)` (Lytollis 2025) specialises to give the seven Cathedral integers exactly. `γ_URT = γ_Lytollis = 1/81`. Same constant, two derivations.
+
+  - **v9 anchor-free derivation chain** — a single observed input, the cosmological constant `ρ_Λ`, suffices to derive every dimensionful scale: `ρ_Λ → M_Pl → v_EW → m_e → m_p → r_p`. The proton radius `r_p = (D+1)·ℏc/m_p = 0.8412 fm` falls out at **0.04% match** to CODATA. The 122-orders-of-magnitude cosmological-constant problem becomes the framework's natural anchor.
 
 **It is:**
 - A complete mathematical structure: vacuum, equation of motion, Lagrangian, dynamical mechanism, falsifiable predictions
@@ -225,7 +233,7 @@ The framework is **falsifiable**. If r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 
 ---
 
-## Module Map (v2.9.39 — 165+ modules)
+## Module Map (v2.9.69 — 188+ modules · 7,378 tests · 26 registered predictions)
 
 ### Core Foundation
 | Module | Purpose |
@@ -493,7 +501,25 @@ The following modules go beyond what the iron proof chain directly supports. The
 | v2.9.28–.36 | Symmetric/elliptic/braid, homological, zeta special, Ramanujan, Monster, modular forms, Platonic, totient, Fibonacci/Lucas, Golay/Steiner, normed division algebras, continued fractions, **ARF Cathedral** (137=N²−E−(D−1), 1836=(D+1)·D^D·(N+D+1) EXACT) | ~6000 |
 | v2.9.37 | Test-coverage wave + programmatic identity engine: 1,067+ identities surfaced; six surfaced bugs adjudicated; CI workflow added | 6707 |
 | v2.9.38 | **`urt.cathedral_engine`**: π-φ-e flow on G_{13} as a first-class module; Lagrangian view; K₄⊕A₅ unification; universe-from-chaos arc executable in code | 6756 |
-| v2.9.39 | **`urt.first_principles`**: eight-step forcing chain proves π/φ/e are forced, not chosen — CI gate `all_steps_verify()` runs at machine precision | **6779** |
+| v2.9.39 | **`urt.first_principles`**: eight-step forcing chain proves π/φ/e are forced, not chosen — CI gate `all_steps_verify()` runs at machine precision | 6,779 |
+| v2.9.40 | **`urt.predictions_registry`**: canonical scoreboard of every framework prediction (17 entries; later expanded to 26) | 6,793 |
+| v2.9.41–.50 | **9 tour modules** — Mathematical Connections, Grand/Deep/Modular/Quantum-Lie/Geometric/Classical/Advanced/Topological/Codes — surface 200+ Cathedral identities across pure mathematics; 5 cross-cutting compounds appear in 3+ modules each (V·F=240, 4/9, 5/3, 2^q·π², K₄⊕A₅) | ~7,000 |
+| v2.9.51 | URT algorithm analysis — per-mode Laplacian contraction factors, geometric variance decay rate ρ ≈ 0.987, basin of attraction, all-modes-contracting CI gate | ~7,030 |
+| v2.9.52–.55 | **K₄ ⊕ A₅ sector framework**: dark sector lives in A₅ exhaust; matter direction theorem `D·N·φ > F·(1−γ)·π` (margin 1.05); exhaust = 9 extra dimensions | ~7,090 |
+| v2.9.56 | **Geometric frustration of the 13-sphere**: q=5 forbidden crystallographic axis; gap Δ as residual frustration energy; quasicrystal connection (Penrose φ = inverse-URT-pull) | 7,103 |
+| v2.9.57 | Re-analysis wave: 4/9 D=3 fingerprint (5 observables); self-reference cluster (14 identities f(X)=X); icosahedral frustration extended to six facets (added dynamical + dimensional) | 7,154 |
+| v2.9.58 | Chaos and the URT flow Cathedral closed forms: `2^q · π² ≈ 315.83` is framework's natural unit of dynamical time; mixing time τ(λ) = (2^q·π²)/λ; slowest/fastest ratio = N/D = 13/3 | 7,174 |
+| v2.9.59 | **The geometry of music**: every just-intonation interval as Cathedral integer ratio; first D!=6 harmonics = consonances; **Pythagorean comma as musical geometric frustration**; 4 perfect + 9 imperfect = K₄ ⊕ A₅ | 7,202 |
+| v2.9.60 | Spectrum ↔ music bridge: G_{13} Laplacian eigenvalues as musical intervals; **5/3 = q/D triple coincidence** (M6 = Kolmogorov γ = Fiedler spectral ratio); 4 of 5 mod-V intervals consonant | 7,222 |
+| v2.9.61 | **The 6-cycle as Cathedral structure**: δ★ and δ_cl on same logistic period-6 attractor at r=3.8417; cycle order = D! = 6; **the gap Δ IS the Z₂ splitting of the lowest pair** | 7,243 |
+| v2.9.62 | **Lytollis's Law (dynamical)**: `δ = (D_KY−1)(τ−2)` cross-validated R²=1.000 across 7 systems; URT γ=1/81 IS Lytollis's exploration scaling parameter; derives 1/α(M_Z) = 127.955 (PDG 0.03%) | 7,264 |
+| v2.9.63 | **Cathedral × Lytollis synthesis** — same theory, two views; 5 conditions pick D=3 uniquely; 3 physics derivations cross-validated | 7,288 |
+| v2.9.64 | **m_H = q^D = 125 GeV** (PDG 0.08%, cleaner than framework's own Mexican-hat); 1/α(M_Z) Lytollis-derived; Λ added (later corrected) | 7,292 |
+| v2.9.65 | m_top = (N+1)·V + q = 173 GeV (PDG 0.18%); sterile ν DM = γ²·m_p ≈ 143 keV; WIMP DM = δ★·m_Z ≈ 13.45 GeV — **5 falsifiable open predictions across 5 independent experiments** | 7,296 |
+| v2.9.66 | **Skeptic's audit** — provenance taxonomy (5 FORCED / 10 DERIVED / 2 FITTED / 6 OPEN); 6 critique-response pairs; cross-module map of 5 cathedrally-recurrent compounds; 5 failed Cathedral attempts honestly disclosed | 7,320 |
+| v2.9.67 | **v9 anchor-free correction**: Λ/M_Pl⁴ = D/(D+1)²·γ⁶⁴ ≈ 1.35×10⁻¹²³ (Planck 0.09%); A_s scalar amplitude closed form (Planck 0.55%); **r_p = (D+1)·ℏc/m_p = 0.8412 fm** (CODATA 0.04%); a_µ = α/(2π) | 7,325 |
+| v2.9.68 | Documentation pass: cathedral_structure.txt v2.9.39→v2.9.67; BREAKTHROUGH_NOTES.md extended with 140-line wave summary; **NEW** `docs/V9_ANCHOR_FREE_CHAIN.md` walks through ρ_Λ → r_p step by step | 7,378 |
+| v2.9.69 | __all__ hygiene cleanup: removed 10 stale + 4 duplicate entries; `from urt import *` now resolves cleanly for all 814 advertised symbols | **7,378** |
 
 ---
 
@@ -504,12 +530,17 @@ The following modules go beyond what the iron proof chain directly supports. The
   author  = {Lytollis, Cornelius},
   title   = {Newton's Cathedral: A Candidate Mathematical Theory of the {\(\pi\)}-{\(\varphi\)}-e Flow on {\(G_{13}\)}},
   year    = {2026},
-  version = {2.9.39},
+  version = {2.9.69},
   url     = {https://github.com/con123-gif/URT-Enhanced-v2.0},
-  note    = {Zero free parameters. D=3 alone determines the icosahedral
-             constant δ★ ≈ 0.14751, which matches fundamental constants
-             across physics and cosmology. Not a physical theory — a
-             mathematical structure that may lie underneath one.}
+  note    = {Anchor-free at D=3: a single observed input (the cosmological
+             constant ρ_Λ) plus the structural axiom K(D)=D+D² with K₄⨯A₅
+             closure suffices to derive every dimensionful and dimensionless
+             scale of the Standard Model and Planck-2018 cosmology.  26
+             registered predictions (20 confirmed at median 0.08% rel-err,
+             5 falsifiable open).  Lytollis's bounded-chaos law specialises
+             at D=3 to the seven Cathedral integers; γ_URT = γ_Lytollis = 1/81.
+             Not a physical theory — a candidate mathematical structure
+             that may lie underneath one.}
 }
 ```
 
