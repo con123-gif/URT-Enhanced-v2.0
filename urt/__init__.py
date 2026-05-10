@@ -2260,7 +2260,7 @@ from .baryon_asymmetry import (
     ETA_B_V9,
 )
 
-__version__ = "2.9.68"
+__version__ = "2.9.69"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2568,11 +2568,10 @@ __all__ = [
     "print_economics_report",
     # epidemiology
     "N_SIR_COMPARTMENTS", "N_SEIR_COMPARTMENTS",
-    "R0_CRITICAL", "R0_HERD_IMMUNITY", "HERD_IMMUNITY_THRESHOLD",
-    "BASIC_REPRODUCTION_NUMBER_ICOS", "CONTACT_TRACING_DEPTH",
-    "N_PANDEMIC_WAVES", "MORTALITY_SCALING_DIM",
-    "ENDEMIC_INFECTED_FRAC", "R0_DELTA_STAR",
-    "sir_model", "seir_model", "herd_immunity",
+    "HERD_IMMUNITY_THRESHOLD_Q", "N_EPIDEMIC_PARAMS",
+    "N_PANDEMIC_WAVES", "N_CONTACT_NETWORK_DEGREE",
+    "CATHEDRAL_DECAY_RATE", "R0_TYPICAL",
+    "sir_model", "pandemic_dynamics",
     "epidemiology_summary", "print_epidemiology_report",
     # celestial mechanics
     "N_KEPLER_LAWS", "KEPLER_THIRD_POWER",
@@ -2608,7 +2607,7 @@ __all__ = [
     "gf_add", "gf_sub", "gf_mul", "gf_div", "gf_inv", "gf_pow", "gf_neg",
     "gf_dlog", "gf_sqrt", "poly_eval", "poly_roots",
     "mat_inv_gf13", "solve_linear_gf13",
-    "ikt_forward", "ikt_inverse", "frequency_oracle",
+    "frequency_oracle",
     "fibonacci_gf13", "fibonacci_pisano_period", "crt_reconstruct",
     "a5_projective_orbit",
     "lytollis_law", "print_lytollis_law",
@@ -2680,9 +2679,9 @@ __all__ = [
     "eta_b_v9", "ETA_B_V9",
     # v2.9.38 — dynamical engine: π-φ-e flow on G_{13}
     "cathedral_adjacency", "cathedral_laplacian",
-    "urt_evolve", "consciousness_integration",
+    "consciousness_integration",
     "cathedral_engine_summary", "print_cathedral_engine_report",
-    "ETA", "ETA_LAPLACIAN", "MU_PULL", "TAU_RELAX",
+    "ETA_LAPLACIAN", "MU_PULL", "TAU_RELAX",
     # v2.9.39 — first-principles derivation
     "laplacian_coefficient_from_sphere",
     "euler_step_optimum_for_fiedler",
