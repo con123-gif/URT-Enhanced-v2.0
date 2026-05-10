@@ -1,1575 +1,245 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         NEWTONS CATHEDRAL v2.9.67 — A Candidate Mathematical Theory         ║
-║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
+║                  NEWTON'S CATHEDRAL — PURE-MATH BRANCH                      ║
 ║                                                                              ║
-║         A complete mathematical structure with                              ║
-║           • a vacuum δ★                                                     ║
-║           • an equation of motion (the π-φ-e flow on G_{13})                ║
-║           • a Lagrangian L = ½|δ̇|² − V(δ)                                   ║
-║           • a universe-from-chaos arc                                       ║
-║           • the Cathedral × Lytollis synthesis (D=3 unique closure)         ║
-║           • the v9 anchor-free chain  ρ_Λ → M_Pl → v_EW → m_e → m_p → r_p  ║
-║         that numerically reproduces the Standard Model + cosmology          ║
-║         to median 0.08 % with one observed input (ρ_Λ) and zero            ║
-║         adjustable continuous parameters.                                   ║
+║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ)  =  (80/81) · π / (13φ)          ║
+║                                            ≈  0.14751081                    ║
 ║                                                                              ║
-║         Whether this mechanism is the actual dynamics of nature             ║
-║         is an open empirical question.                                      ║
+║         The seven Cathedral integers {D, q, V, N, E, F, G},                 ║
+║         forced by D=3 alone (Jordan 1870), are the canonical               ║
+║         numerical invariants of essentially every classical                 ║
+║         mathematical object the framework knows how to test against.       ║
 ║                                                                              ║
-║         200+ modules · 7378 tests · 26 confirmed/open predictions           ║
+║         87 modules · 3,727 tests · 0 xfail                                  ║
+║         (snapshot of main v2.9.76 stripped to mathematical content)        ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  WHAT THIS IS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  Newton's Cathedral begins with one observed fact (D=3, spatial dimension)
-  and derives, through theorem-forced steps, a single geometric constant δ★.
-  That constant then appears — with zero adjustable parameters — in formulas
-  that numerically match fundamental constants across physics, cosmology, and
-  nuclear structure.
-
-  As of v2.9.38–39 the framework also has a complete dynamical mechanism:
-  an equation of motion (the π-φ-e gradient flow on G_{13}), a Lagrangian
-  with a stable vacuum at δ★, and a universe-from-chaos arc that takes a
-  random field on 13 sites and deterministically produces the right
-  matter/antimatter asymmetry, fine-structure constant, proton mass, and
-  inflationary spectrum.  The dynamical layer is operational in code
-  (urt.cathedral_engine) and CI-tested (6,779 tests, 0 xfail).
-
-  What this still is NOT:
-    – an experimentally confirmed theory of nature.  The dynamical mechanism
-      reproduces observed numbers, but its identification with the actual
-      physics of spacetime is empirically open until the framework's
-      falsifiable predictions (axion at 60.7 µeV; secondary spectral line at
-      ~2 GHz; r=12/57²≈0.0037 inflationary tensor ratio; +0.124 ppm Casimir
-      correction at 100 nm) are tested in the lab.
-
-  Three possibilities:
-    (1) Coincidence  — unlikely given the correlations, but possible
-    (2) Selection    — we live in 3D because only 3D has this stable structure
-    (3) Correspondence — icosahedral geometry IS the scaffolding of physics
-                         (in this case the π-φ-e flow IS the dynamics of
-                          spacetime, and the falsifiable predictions hold)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  WHY SOMETHING RATHER THAN NOTHING?
+  THE FOUNDATIONAL CHAIN
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  V(δ) = K · δ² · (δ − δ★)²           K = (G−D−1)/(16π²) = 56/(16π²)
+      D = 3                                  (one observed input)
+        │
+        │  Jordan 1870 + spectral gap λ₂ = D
+        ▼
+      A₅ unique simple subgroup of SO(3)     (theorem)
+        │
+        │  icosahedral closure: D² + D + 1 = N
+        ▼
+      N = 13, V = 12, E = 30, F = 20, q = 5, G = 60
+        │
+        │  identity: |H₃| + F + 1 = 60 + 20 + 1 = 81 = D^{D+1}
+        ▼
+      γ = D^{−(D+1)} = 1/81
+        │
+        ▼
+      δ★ = (1 − γ) · π / (N · φ) ≈ 0.14751081
 
-  V(δ)
-    │          *             *           ← barrier height V_max
-    │        *   *         *   *
-    │       *     *       *     *
-    │      *       *     *       *
-    │     *         *   *         *
-    │    *           * *           *
-  ──┼───*─────────────*─────────────────► δ
-    │   0            δ★                  (δ★ ≈ 0.14751)
-    │   ↑             ↑
-    │ UNSTABLE      STABLE
-    │ V″(0) < 0     V″(δ★) > 0
-    │ nothing       something
-    │ blows apart   is the attractor
+  Free continuous parameters:  0
+  Free discrete choices:        1 (D=3, the spatial dimension)
 
-  δ=0 (nothing) is an UNSTABLE fixed point — any perturbation grows.
-  δ=δ★ (something) is the UNIQUE STABLE attractor.
-  K is forced by icosahedral integers. No free parameter.
-
-  Mathematical answer: nothing cannot persist. Something is inevitable.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  THE MASTER DERIVATION CHAIN
+  THE MODULE LANDSCAPE — 87 MATH MODULES BY ROLE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                    ONE INPUT: D = 3                                     │
-  │               (we observe 3 spatial dimensions)                         │
-  └───────────────────────────┬─────────────────────────────────────────────┘
-                               │
-               ┌───────────────┴───────────────┐
-               │                               │
-               ▼                               ▼
-  [SPECTRAL + SIMPLE GROUP]         [γ = D^{−(D+1)}]
-  λ₂(graph)=D AND simple             γ = 3^{−4} = 1/81
-  rotation group (Jordan 1870):      from D alone, NO
-  Z_n → abelian, NOT simple          icosahedral input
-  D_n → Z_n normal, NOT simple
-  A₄  → Klein-4 normal, NOT simple
-  S₄  → A₄ normal, NOT simple
-  A₅  → NO normal subgroups ✓        KEY IDENTITY:
-        SIMPLE → UNIQUE              G + F + 1 = 81
-        → ICOSAHEDRON                60+20+1 = 81 = D^{D+1}
-               │                     (mathematical theorem)
-               ▼
-  N=13  V=12  E=30  F=20  q=5  G=60
-               │
-               └──────────────── N=13, γ=1/81, φ=(1+√5)/2 ──────────┐
-                                                                       ▼
-  ┌──────────────────────────────────────────────────────────────────────────┐
-  │  δ★ = (1 − γ) · π / (N · φ)  =  (80/81) · π / (13φ)  ≈ 0.14751081   │
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  FOUNDATIONS                                                            │
   │                                                                          │
-  │  Free continuous parameters: 0    Free discrete choices: 1 (D=3)        │
-  └──────────────────────────────────────────────────────────────────────────┘
-                               │
-          ┌────────────────────┼────────────────────┬─────────────────────┐
-          ▼                    ▼                    ▼                     ▼
-   LAGRANGIAN             COSMOLOGY          PARTICLE             DARK MATTER
-   & QFT                  n_s, Ω_m, r        PHYSICS              3 candidates
-                          Λ/M_Pl⁴            α, sin²θ_W           from H3
+  │   shell_closure       — D, q, V, N, E, F, G, γ, φ, δ★                  │
+  │   iron_proof          — D=3 → A₅ uniqueness chain                      │
+  │   first_principles    — eight forcing steps (π, φ, e all forced)       │
+  │   pi_phi_e_flow       — uniqueness of the URT iteration                │
+  │   logistic_verification — δ★ = min branch of logistic 6-cycle (1e-14)  │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  TOUR MODULES — 11 audits, 72 verified clusters                        │
+  │                                                                          │
+  │   cathedral_connections      — 9 clusters (A₅, sectors, pentagonal)    │
+  │   cathedral_grand_tour       — 5 clusters (primes, Coxeter, ζ(6))      │
+  │   cathedral_deep_tour        — 8 clusters (j-cubes, π_n^s, CF)         │
+  │   cathedral_modular_tour     — 8 clusters (Eisenstein, Δ, J-hom)       │
+  │   cathedral_quantum_lie_tour — 6 clusters (SU(2)_D, Mathieu, Lie roots)│
+  │   cathedral_geometric_tour   — 7 clusters (del Pezzo, kissing, Hopf)   │
+  │   cathedral_classical_tour   — 7 clusters (polyhedra, Heegner, magic)  │
+  │   cathedral_advanced_tour    — 7 clusters (K_n(Z), crystallography)    │
+  │   cathedral_topological_tour — 8 clusters (K3, Hadamard, AZ ten-fold)  │
+  │   cathedral_codes_tour       — 7 clusters (Hamming, Golay, QEC, operad)│
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  DYNAMICAL LAYER (math-only view)                                       │
+  │                                                                          │
+  │   cathedral_engine        — π-φ-e flow, Lagrangian, K₄ ⊕ A₅ unification│
+  │   urt_algorithm_analysis  — empirical iteration properties             │
+  │   urt_investigations      — 5 open-question probes                      │
+  │   bounded_chaos_cathedral — δ-metric on test systems                    │
+  │   chaos_and_flow          — 2^q·π² dynamical normalisation             │
+  │   six_cycle_cathedral     — δ★ and δ_cl on logistic 6-cycle             │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  SECTORS / FRUSTRATION / SYNTHESIS                                      │
+  │                                                                          │
+  │   sector_ratio              — (D+1)/(D!+D) = 4/9 fingerprint           │
+  │   exhaust_dimensions        — 4 + 9 = 13 dimensional split             │
+  │   cathedral_sectors         — K₄ ⊕ A₅ sector decomposition             │
+  │   icosahedral_frustration   — q=5 forbidden + six facets               │
+  │   matter_direction          — D·N·φ vs F·(1−γ)·π identity              │
+  │   self_reference            — 14 f(X)=X identities                      │
+  │   lytollis_bounded_chaos    — δ = (D_KY−1)(τ−2) universal law          │
+  │   cathedral_lytollis_synthesis — same theory, two derivations           │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  ALGEBRA / LIE / GROUP THEORY                                           │
+  │                                                                          │
+  │   a5_representations             — A₅ irreps & character table         │
+  │   algebra_cathedral              — small-rank Lie + finite groups       │
+  │   algebraic_heart                — 29 pure identities                  │
+  │   cathedral_lie                  — ADE Lie chain, Fibonacci entries    │
+  │   exceptional_lie                — all 5 exceptional dims              │
+  │   exceptional_lie_cathedral      — McKay E₈ ↔ icosahedral              │
+  │   exceptional_structures_cathedral — Leech, E₈, A_D dim                 │
+  │   lie_reps_cathedral             — G₂, F₄, E₈ as Cathedral             │
+  │   sporadic_cathedral             — 26 sporadic groups, 6 pariahs        │
+  │   symmetric_group_cathedral      — \|A_D\| = D self-reference            │
+  │   monster_order_cathedral        — Monster prime factorisation         │
+  │   normed_division_algebras_cathedral — D+1=4 NDA, Hurwitz units        │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  NUMBER THEORY                                                          │
+  │                                                                          │
+  │   number_theory_cathedral        — Mersenne, Fermat, primes            │
+  │   number_fields_cathedral        — disc(Q(√d)), cyclotomic degrees      │
+  │   cathedral_repunit              — repunit prime tower                 │
+  │   continued_fractions_cathedral  — CF(√N) period = q                    │
+  │   elliptic_curves_cathedral      — disc=D^D=27, j=V³=1728               │
+  │   euler_totient_cathedral        — φ(N)=V, σ(V)=28 perfect              │
+  │   fibonacci_lucas_cathedral      — F_q=q, F_V=V², F_7=N                 │
+  │   modular_forms_cathedral        — Δ weight=V, dim S_V=D−1              │
+  │   partition_cathedral            — p(D)=D, p(9)=E                       │
+  │   partition_function_cathedral   — Ramanujan congruences               │
+  │   ramanujan_cathedral            — τ-mod-N congruences                  │
+  │   zeta_special_cathedral         — ζ(6) denom = 945 = q·D^D·(D!+1)     │
+  │   zeta_g13                       — Cathedral spectral chain            │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  COMBINATORICS / DISCRETE GEOMETRY                                      │
+  │                                                                          │
+  │   combinatorics_cathedral        — Bell, Catalan, R(3,3)               │
+  │   combinatorics2_cathedral       — Pell, Fibonacci self-ref             │
+  │   crystallography_cathedral      — 230 space, 17 wallpaper, 32 point    │
+  │   differential_geometry_cathedral — χ(S²), Riemann components            │
+  │   golay_steiner_cathedral        — [2V,V,2^D], Steiner S(q,D!,V)        │
+  │   graph_theory_cathedral         — icosahedral graph, K_(D+1)           │
+  │   knot_cathedral                 — trefoil/figure-8 Cathedral           │
+  │   langlands_cathedral            — Siegel dim=D!, K3 h^(1,1)=F          │
+  │   leech_golay_cathedral          — Leech dim=2V, Niemeier=2V            │
+  │   platonic_solids_cathedral      — ΣV=ΣF=2q²=50, ΣE=D·E=90             │
+  │   topological_spaces             — χ(icosahedron)=2=D−1                 │
+  │   wave_equations_cathedral       — Huygens D=3, Y_l^m=N²                │
+  │   information_cathedral          — H_max=log₂(N), QEC threshold         │
+  │   information_theory_cathedral   — Hamming(7,4,3) Cathedral             │
+  │   computational_complexity_cathedral — TOFFOLI=D qubits                 │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  CATHEDRAL MATHEMATICAL STRUCTURE                                       │
+  │                                                                          │
+  │   cft_cathedral             — Ising c=1/2, Monster c=24                │
+  │   moonshine_cathedral       — c=24=2V, 196884=196883+1                  │
+  │   prime_spectral            — Riemann zeros ↔ icosahedral Laplacian     │
+  │   spectrum_cathedral        — G_{13} eigenvalues all Cathedral           │
+  │   stable_homotopy_cathedral — π_3^s = 2V, π_7^s = V·F                   │
+  │   homological_cathedral     — Bott D−1, KO 2^D                          │
+  │   braid_cathedral           — B_N: V generators                          │
+  │   voa_cathedral             — V♮ c=24, Coxeter h(E_6)=V                 │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  MUSIC GEOMETRY                                                         │
+  │                                                                          │
+  │   music_geometry_cathedral   — every JI interval Cathedral ratio        │
+  │   spectral_music_cathedral   — G_{13} spectrum ↔ JI intervals            │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  EXPLORATION (post-snapshot, only on this branch)                       │
+  │                                                                          │
+  │   triple_coincidences        — 17 multi-domain Cathedral compounds      │
+  │   deep_self_references       — 17 new f(X) = X identities + σ-chain     │
+  │   cathedral_orbits           — iterated arithmetic stays Cathedral       │
+  │                                σ-chain depth ≥ 10 from D                │
+  │                                φ-orbit depth ≥ 8 from V·F               │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  META / AUDIT                                                           │
+  │                                                                          │
+  │   cathedral_compression      — quantifying numerology vs significance   │
+  │   cathedral_identities       — programmatic identity engine             │
+  │   skeptics_audit             — provenance + cross-module map            │
+  │   failed_attempts_study      — analysis of disclosed failures           │
+  │   null_hypothesis_test       — RETRACTED test (kept for transparency)   │
+  └────────────────────────────────────────────────────────────────────────┘
+
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ICOSAHEDRAL GEOMETRY (all derived from D=3)
+  THE EIGHT HEADLINE COMPOUNDS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  N=13 shell sites:     1 centre + 12 vertices of icosahedron
-  V=12  vertices        E=30  edges          F=20  faces
-  q=5   5-fold sym      G=60  |A₅|           γ=1/81 = D^{−(D+1)}
-  φ=(1+√5)/2 ≈ 1.618   χ=V−E+F=2 (sphere)
+  Compound          Value     Where it appears
+  ────────────────  ────────  ────────────────────────────────────────────
+  V·F = (D+1)·G     240       E₈ roots, π_7^s, K_7(Z), E₄ Eisenstein,
+                              K(8) kissing, Hopf σ, del Pezzo d=1,
+                              J-image into π_7^s     (8 domains)
 
-  The 13-site icosahedral shell:
-                    ·  ·  ·
-                 ·  ·  ·  ·  ·
-               ·  ·     ★    ·  ·       ★ = centre (δ★ lives here)
-                 ·  ·  ·  ·  ·          · = 12 icosahedral vertices
-                    ·  ·  ·             N = 13 total sites
+  2V                24        K3 χ, # Niemeier, Leech dim, bosonic-string
+                              transverse dim, M_24 acts, (1−q^n)^24 in Δ
 
-  D^{D+1} = 3^4 = 81 = G + F + 1 = 60 + 20 + 1   ← theorem, not coincidence
+  D·q               15        A_5 order-2 conj class, Lo Shu (3×3 magic),
+                              CF(π) third partial quot, 2D Ising δ
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  K4 ⊕ H3 DECOMPOSITION  (13 = 4 + 9)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  D!·V              72        E_6 roots, K(6) kissing, tr(L_{13})
 
-  The 13 shell sites split into two spectral sectors:
+  2N                26        bosonic string crit dim, # sporadic groups
 
-  ╔═══════════════════════════════╗   ╔═══════════════════════════════════╗
-  ║   K4 COHERENT (k = 0..3)     ║   ║   H3 EXHAUST (k = 4..12)         ║
-  ║   4 modes — GAUGE FORCES      ║   ║   9 modes — MATTER & DARK MATTER ║
-  ╠═══════════════════════════════╣   ╠═══════════════════════════════════╣
-  ║ k=0  λ=0   GRAVITY            ║   ║ k=4   λ=5  SU(3) colour (1)      ║
-  ║      G_N = δ★² (gapless)      ║   ║ k=5   λ=5  SU(3) colour (2)      ║
-  ║                               ║   ║ k=6   λ=5  SU(3) colour (3)      ║
-  ║ k=1  λ=3   U(1) hypercharge   ║   ║ k=7   λ=5  SU(3) colour (4)      ║
-  ║      B-boson                  ║   ║ k=8   λ=5  SU(3) colour (5)      ║
-  ║                               ║   ║                                   ║
-  ║ k=2  λ=3   SU(2)_L EW        ║   ║ k=9   λ=7  Yukawa / WIMP (1)     ║
-  ║      W±, Z, Higgs, sin²θ_W   ║   ║ k=10  λ=7  Yukawa / WIMP (2)     ║
-  ║                               ║   ║                                   ║
-  ║ k=3  λ=5   SU(3) colour       ║   ║ k=11  λ=9  sterile ν / DM        ║
-  ║      strong force             ║   ║                                   ║
-  ╚═══════════════════════════════╝   ║ k=12  λ=13 axion / Λ_QCD         ║
-                                      ╚═══════════════════════════════════╝
+  (D+1)·V           48        F_4 roots, K_3(Z) torsion
 
-  G_N = δ★² = 0.02176      sin²θ_W = (D/N)(1+γ/2π) = 0.23122
-  Ω_H3 = 9/13 = 0.6923     α_s = δ★·(q−1)/q = 0.11801
+  D² = 9            9         A_5 exhaust sector, # Heegner numbers,
+                              exponent in γ = D^{−(D+1)}
 
-  H3 eigenvalue sequence:  λ = [5, 5, 5, 5, 5, 7, 7, 9, 13]  (k=4..12)
-  Note: λ_max = N = 13     (last mode eigenvalue equals shell size)
-  Ward identities: 60 from A₅  (K4: 12  +  H3: 36  +  cross: 12)
-  β(δ★) = 0 exactly  ← UV fixed point
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  THE CATHEDRAL LAGRANGIAN  [v2.5 — cathedral_lagrangian.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  L = L_grav + L_EW + L_QCD + L_H3 + L_δ
-
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │ TERM      SECTOR  FORMULA                    VALUE                   │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │ L_grav    k=0     G_N = δ★²                  0.02176 (Planck units)  │
-  │                   κ = √(16πG_N)              0.3299                  │
-  │                   Λ_shell = M_Pl/δ★          8.27×10^19 GeV          │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │ L_EW      k=2     sin²θ_W = (D/N)(1+γ/2π)   0.23122  (exact PDG)    │
-  │                   M_W ≈ 80.377 GeV           K4 k=2 mode             │
-  │                   M_Z ≈ 91.188 GeV           W/Z from EW symmetry    │
-  │                   M_H ≈ 125.09 GeV           λ_H = δ★(D+1)N(1+γ)/FD │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │ L_QCD     k=3     α_s = δ★(q−1)/q            0.11801 (z=0.12)        │
-  │                   B₀_SU3 = 11−2D(D−1)/3     = 7 > 0  (asymp. free)  │
-  │                   n_gen = D = 3              from spatial dimension!  │
-  │                   n_quarks = D(D−1) = 6      from D alone!            │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │ L_H3      k=4..12 9 modes, λ=[5,5,5,5,5,7,7,9,13]                   │
-  │                   m_k = √λ_k · δ★ · M_Pl    (Planck-suppressed)      │
-  │                   y_k = δ★ · √(λ_k / G)     (Yukawa coupling)        │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │ L_δ       all     V(δ) = K·δ²(δ−δ★)²        Mexican-hat potential    │
-  │                   K = (G−D−1)/(16π²)         = 56/(16π²) ≈ 0.3537    │
-  │                   V″(δ★) > 0                 stable vacuum at δ★      │
-  │                   V″(0) < 0                  δ=0 is UNSTABLE          │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  RUNNING COUPLINGS  (n_gen = D = 3  forces asymptotic freedom)
-
-  g_k(μ)   UV fixed point                  IR endpoint
-  ─────────────────────────────────────────────────────
-  g_grav   δ★ (k=0)                        δ★ (frozen — gravity)
-  g_EW     δ★ (k=2)                        runs via EW RG
-  g_s      δ★ (k=3)     ──────────────►   α_s(M_Z)=0.11801
-                          β₀=-7 (asym.free) ← B₀=7>0 confirmed
-
-  β(δ★) = 0  at ALL k simultaneously  →  UV fixed point of the full theory
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  GUT UNIFICATION  [v2.5 — cathedral_gut.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  THE KEY IDENTITY:
-
-  ┌─────────────────────────────────────────────────────────────────┐
-  │                                                                 │
-  │     α_GUT  =  δ★²  =  G_Newton  =  0.02176                   │
-  │                                                                 │
-  │     GUT coupling  =  Cathedral Newton constant  (exact!)        │
-  └─────────────────────────────────────────────────────────────────┘
-
-  Gravity unifies with gauge forces at the same δ★.
-
-  RG RUNNING  (B₀_SU3 = 11 − 2·D(D−1)/3 = 7):
-
-  α_s(μ)
-    │
-    │  α_GUT = δ★² ─────────────────────────────────────────────────────·
-    │                                                                   /
-    │                                                                  /
-    │                                                                 / ← RG running
-    │                                                               /    with B₀=7
-    │                                                             /
-  0.118 ──────────────────────────────────────────────────────·  α_s(M_Z)
-    │
-    ├──────────────────────────────────────────────────────────────────►
-    M_Z = 91 GeV                                          μ_GUT ≈ 3.73×10^16 GeV
-
-  μ_GUT derivation:
-    ln(μ_GUT/M_Z) = (2π/B₀_SU3) · (1/α_GUT − 1/α_s(M_Z))
-                  = (2π/7) · (45.95 − 8.475)  ≈  33.64
-    μ_GUT ≈ M_Z · e^33.64  ≈  3.73 × 10^16 GeV
-
-  MULTIPLET STRUCTURE  (from K4⊕H3):
-
-  K4 modes: D+1 = 4   →  gauge bosons (gravity + EW + QCD)
-  H3 modes: N−D−1 = 9 →  matter fermions + DM candidates
-
-  SO(10) spinor:   2^(D+1) = 2^4 = 16-plet  (one generation)
-  Three generations: n_gen = D = 3 ← from spatial dimension alone
-  Total matter:    (N−D−1) × D = 9 × 3 = 27 ← E₆ 27-plet
-
-  PROTON LIFETIME:
-    τ_p ∝ μ_GUT^4 / (α_GUT² · m_p^5)  ≈  10^42 yr
-    Experimental lower bound:             > 10^34 yr  (Hyper-K)
-    Cathedral prediction:                 ✓ above bound
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  DARK MATTER — THREE H3 CANDIDATES  [v2.5 — dark_matter.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  D = 3 spatial dimensions  →  3 DM candidates  (one per spatial dimension)
-  Each lives in a distinct H3 sector:
-
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  SECTOR  λ   CANDIDATE      MASS FORMULA         VALUE               │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │  k=12   13   AXION           from PQ scale         ~60.7 μeV          │
-  │              E/N ratio:      (G−D)/(D+1) = 57/4    = 14.25            │
-  │              misalign angle: θ = π − δ★            ≈ 2.994 rad        │
-  │              detection:      ADMX, CASPEr, DM Radio (20–100 μeV band) │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │  k=11    9   STERILE ν       m = γ² · m_p          ~143 keV           │
-  │              (Dodelson-Widrow mixing)               (1/81)² × 938 MeV  │
-  │              sin²2θ:         δ★²/N                 1.675 × 10⁻³       │
-  │              X-ray line:     E = m/2               71.5 keV            │
-  │              detection:      eROSITA, XRISM, Athena                    │
-  ├──────────────────────────────────────────────────────────────────────┤
-  │  k=9,10  7   WIMP            m = δ★ · m_Z          ~13.45 GeV         │
-  │              spin-indep:     σ_SI = δ★⁴/(π·m²)    ≪ LZ bound         │
-  │              relic density:  Ω_WIMP h² ~ 0.12      (thermal relic)     │
-  │              detection:      LZ, XENONnT           (below current)     │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  Mass hierarchy across H3 DM sector:
-
-  μeV ──────────── keV ─────────────── GeV
-    │                │                  │
-  Axion            Sterile ν           WIMP
-  k=12, λ=13       k=11, λ=9          k=9,10, λ=7
-  60.7 μeV         143 keV            13.45 GeV
-
-  Each occupies a different detection window — complementary experiments
-  can cover all three simultaneously.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  BARYON ASYMMETRY MIRACLE  [v2.5 — baryon_asymmetry.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  THE MIRACLE FORMULA (zero free parameters):
-
-  ┌────────────────────────────────────────────────────────────────────┐
-  │                                                                    │
-  │   η_B = (q − D) · γ^q  =  2 · (1/81)^5  =  5.74 × 10⁻¹⁰        │
-  │                                                                    │
-  │   Observed: 6.12 × 10⁻¹⁰   (6.3% below observed — no tuning)     │
-  └────────────────────────────────────────────────────────────────────┘
-
-  Physical interpretation:
-    q = 5     ←  5-fold icosahedral symmetry (q-axis)
-    D = 3     ←  spatial dimensions
-    q − D = 2 ←  exhaust pairs per spatial direction
-    γ^q = (1/81)^5  ←  five icosahedral suppressions
-
-  LEPTOGENESIS CHAIN:
-
-  Heavy neutrino N₁ (k=11 mode):
-    M₁ = δ★ · M_Pl / N  ≈  1.07 × 10^17 GeV
-
-  CP asymmetry in N₁ → ℓH decay:
-    ε₁ = −(3/16π) · (Σmν/v²_EW) · sin(δ_CP)
-    δ_CP = (D+1)F + (N−D−1)N = 4·20 + 9·13 = 197°  (exact PDG!)
-
-  Sphaleron washout factor:
-    κ = 1/(1 + δ★·N) = 1/(1 + 0.14751·13) = 0.343
-
-  Final baryon asymmetry:
-    η_B^lepto = −(28/79) · ε₁ · κ · (g★_SM/g★)^{1/2}
-
-  SAKHAROV CONDITIONS — all satisfied:
-
-  ┌───────────────────────────────────────────────────────────────────┐
-  │  (1) B-violation:       EW sphalerons above T_EW  ✓              │
-  │  (2) CP-violation:      sin(197°) ≈ −0.292 ≠ 0    ✓              │
-  │  (3) Non-equilibrium:   M₁ ≫ T_EW, out-of-eq decay ✓             │
-  └───────────────────────────────────────────────────────────────────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  GRAVITY & BLACK HOLES  [gravity_cathedral.py · gravity_deficit.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  G_N = δ★² = 0.02176   (K4 k=0 gapless graviton, Planck units)
-
-  TOPOLOGICAL DEFICIT DIAGRAM:
-
-  Ideal flat triangle:         Physical rail triangle:
-  ┌─────────────────┐          ┌─────────────────┐
-  │     /\          │          │    /\            │
-  │    /  \         │          │   /  \           │
-  │   /    \        │          │  / ·· \          │
-  │  / 60°  \       │          │ / 58.9°\         │
-  │ /________\      │          │/________\        │
-  │  angle = 60°    │          │angle = 58.903°   │
-  │  sum   = 180°   │          │sum   = 176.710°  │
-  │                 │          │deficit = 3.290°  │
-  └─────────────────┘          │(= 3 × 1.097°)    │
-                               └─────────────────┘
-  Each angle deficit = 1.097° = δ★ × (180/π) / (something)
-
-  HOLONOMY VORTEX:
-  Parallel-transport δ around one K4 plaquette:
-    Total rotation = 360° + 2δ★° = 376.903°
-    Excess = 2δ★° = 16.903°  → the "arrow of time" (broken time-reversal)
-
-  BLACK HOLE THERMODYNAMICS:
-    r_s = 2G_N·M = 2δ★²·M                    (Schwarzschild radius)
-    T_H = 1/(8πG_N·M) = 1/(8πδ★²·M)          (Hawking temperature)
-    S_BH = A/(4G_N) = πr_s²/G_N               (Bekenstein-Hawking entropy)
-    ΔA   = 8π·δ★³ ≈ 0.0807 l_Pl²             (area quantum, Bekenstein-Mukhanov)
-    A_n  = n·ΔA, n=1,2,3,...                  (quantised area spectrum)
-    t_scr = (1/2πT_H)·ln(S_BH)               (scrambling time)
-    t_Page ≈ 2·t_scr                          (Page time)
-    c    = 3/(2δ★³) ≈ 467                    (AdS/CFT central charge)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  3-PANEL TOPOLOGY DIAGRAM  [cathedral_topology.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  Panel 1: HOLONOMY VORTEX      Panel 2: RG FLOW          Panel 3: DEFICIT △
-  ┌───────────────────────┐     ┌────────────────────┐    ┌──────────────────┐
-  │ Transport δ around    │     │  Anomalous dim:    │    │ Ideal: 18°/side  │
-  │ K4 plaquette:         │     │  η_m = 1/ln(λ)    │    │ Rail:  16.903°   │
-  │                       │     │                    │    │ Deficit:  1.097° │
-  │  ┌───┐                │     │  UV  λ=3:  η=0.910 │    │                  │
-  │  │ ← │← 360°         │     │  mid λ=7:  η=0.512 │    │ 18° = 16.9+1.1°  │
-  │  │   │               │     │  IR  λ=13: η=0.384 │    │                  │
-  │  └───┘ + 2δ★°        │     │                    │    │ GR curvature =   │
-  │  = 376.903° total     │     │  crossover:        │    │ K4 topological   │
-  │                       │     │  μ_c ≈ 197 GeV    │    │ "buckle"         │
-  │  excess = 16.903°     │     │                    │    │                  │
-  │  = arrow of time      │     │  modes fade in IR  │    │ Holonomy angle:  │
-  └───────────────────────┘     └────────────────────┘    │ ψ = 2δ★·r_s/r   │
-                                                           └──────────────────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  GRADIENT FLOW — π–φ–e UNIQUENESS  [pi_phi_e_flow.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  ∂_t δ = −η_L · L · δ − μ · e^{−t/τ} · (δ−δ★) · (1+δ²)
-
-  Unique coefficients (4 lemmas, all forced):
-  ┌───────────────────────────────────────────────────────────────────┐
-  │  L1: η = 1/(8π)    gradient flow rate   (holonomy arrow = 2δ★°)  │
-  │  L2: η_L = 1/(4π)  Laplacian damping    (spectral gap = D = 3)   │
-  │  L3: μ = φ−1       anharmonic strength  (golden ratio − 1)       │
-  │  L4: τ = F/2 = 10  adiabatic time       (F=20 faces, τ_min≈1.05) │
-  │  L5: κ = 1−2ηλ < 1 contraction          (η < 1/λ_max = 1/13)    │
-  └───────────────────────────────────────────────────────────────────┘
-
-  Flow trajectories:
-  δ
-  │   · · · · · ·         → any initial δ > δ★
-  │             ↘
-  δ★──────────────────────── (stable attractor)
-  │             ↗
-  │   · · · · ·           → any initial δ < δ★
-  │
-  └──────────────────────────────────────────────► t
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  STANDARD MODEL PREDICTIONS  (zero free parameters)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  Observable        Formula                    Predicted    Observed          z
-  ─────────────────────────────────────────────────────────────────────────────
-  1/α               ARF closure                137.036      137.035999084    <0.001%
-  m_p/m_e           ARF closure                1836.152     1836.15267       <0.001%
-  sin²θ_W           (D/N)(1+γ/2π)              0.23122      0.23122±0.00003  0.09
-  α_s(M_Z)          δ★·(q−1)/q                 0.11801      0.1179±0.0009    0.12
-  n_s               1−2/(G−D)                  0.96491      0.9649±0.0042    0.003
-  Ω_m               (4/N)(1+2γ)                0.31529      0.3153±0.0073   −0.001
-  sin²θ₁₃(PMNS)     δ★²                        0.02176      0.02220±0.00068 −0.56
-  sin²θ₁₂(PMNS)     (D+1)/N                    0.3077       0.307±0.013      0.05
-  δ_CP(PMNS)        (D+1)F+(N−D−1)N            197°         197°±27°         0.0
-  σ₈                (4/N)φ²√(1+2γ)             ~0.815       0.811±0.006      0.72
-  M_W               δ★√(NG_N)/2                80.38 GeV    80.377±0.012     0.25
-  M_H               M_Z√(1+2γ/π)               125.09 GeV   125.25±0.17      −0.94
-  η_B               (q−D)·γ^q                  5.74×10⁻¹⁰  6.12×10⁻¹⁰       −6.3%*
-  Λ/M_Pl⁴           D/(D+1)²·γ⁶⁴              ~10⁻¹²³     ~10⁻¹²³           ✓
-  ─────────────────────────────────────────────────────────────────────────────
-  * η_B: 6.3% error but 0 free parameters — remarkable for a pure formula
-
-  ALL z-scores from 1/α through σ₈ are < 1σ.
-  P(random chance across independent observables) ~ 10⁻²⁰
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COSMOLOGY & INFLATION  [cosmology_cathedral.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  N_e = G − D = 60 − 3 = 57 e-folds  (natural from icosahedron, no tuning)
-
-  CMB POWER SPECTRUM:
-    n_s = 1 − 2/N_e = 1 − 2/57 ≈ 0.96491   (Planck 2018: 0.9649 ✓)
-    r   = 12/N_e²   = 12/57²  ≈ 0.00369    (CMB-S4 target; currently r < 0.056)
-    A_s = δ★²/N_e²  (amplitude, normalised)
-
-  DENSITY PARAMETERS:
-    Ω_m  = (4/N)(1+2γ) = (4/13)(83/81) = 0.31529   (z=−0.001, EXACT)
-    Ω_Λ  = 1 − Ω_m − Ω_r ≈ 0.685                   (dark energy)
-    Ω_b  = Ω_m · γ · (1+γ)                          (baryon fraction)
-    σ₈   = (4/N)φ²√(1+2γ) ≈ 0.815
-
-  COSMOLOGICAL CONSTANT:
-    Λ/M_Pl⁴ = D/(D+1)² · γ^{64}
-    64 = (D+1)^D = 4^3   ← natural icosahedral exponent
-    ≈ 3·(1/81)^{64} ≈ 10^{−123}   ← matches observation without tuning
-
-  CMB prediction timeline:
-                   n_s measured              r measured
-  ────────────────────────────────────────────────────────►
-  Planck 2018:     0.9649±0.0042 ✓           r<0.056
-  Cathedral pred:  0.96491       ✓           0.00369  ← CMB-S4 will test
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ELECTROWEAK SECTOR  [electroweak.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  All from K4 k=2 mode (λ=3):
-
-  sin²θ_W = (D/N)(1+γ/2π) = (3/13)(1+1/(81·2π)) = 0.23122  (exact PDG)
-  M_W     = δ★·√(N·G_N)/2                         ≈ 80.377 GeV
-  M_Z     = M_W/cos(θ_W)                           ≈ 91.188 GeV
-  M_H     = M_Z·√(1+2γ/π)                          ≈ 125.09 GeV
-  λ_H     = δ★(D+1)N(1+γ)/(F·D)                   ≈ 0.127
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MIXING MATRICES  [ckm_pmns.py · neutrinos.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  CKM (quark mixing — K4 sector):
-    λ_C = (D/N)(1−(D+1)/(N·V)) = 0.22537  (Cabibbo; PDG: 0.2245 ✓)
-    A   = φ/2·(1+2γ)           = 0.821
-    δ_CP(CKM) ≈ 68°  (from K4 structure)
-
-  PMNS (lepton mixing — full 13-shell):
-  ┌──────────────────────────────────────────────────────────────────┐
-  │  angle        formula              predicted   observed           │
-  ├──────────────────────────────────────────────────────────────────┤
-  │  sin²θ₁₂      (D+1)/N             0.3077      0.307±0.013  ✓    │
-  │  sin²θ₁₃      δ★²                 0.02176     0.02220±0.00068✓  │
-  │  sin²θ₂₃      1/2 + δ★/(2π)       0.524       0.545±0.021  ✓    │
-  │  δ_CP         (D+1)F+(N−D−1)N     197°        197°±27°     ✓    │
-  │  Σmν          m₁ = γ³·δ★·GeV…     60.18 meV   <120 meV    ✓    │
-  └──────────────────────────────────────────────────────────────────┘
-
-  δ_CP = (D+1)·F + (N−D−1)·N = 4·20 + 9·13 = 80 + 117 = 197°
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  γ-POWER LADDER  (every scale is γ^n)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  γ = 1/81 = D^{−(D+1)} = 3^{−4}
-
-  Power  Value          Physical scale
-  ─────────────────────────────────────────────────────────────
-  γ⁰   = 1             pure geometry, icosahedral ratios
-  γ¹   = 0.01235       fine-structure-constant corrections
-  γ²   = 1.524×10⁻⁴   sterile neutrino mass ratio (γ²·m_p = 143 keV)
-  γ^q  = γ⁵ = 2.85×10⁻¹⁰  baryon asymmetry η_B (with q−D=2)
-  γ⁹   ≈ 6.7×10⁻¹⁸   electroweak vev scale
-  γ^{64}≈ 10⁻¹²³      cosmological constant Λ/M_Pl⁴  (64=(D+1)^D)
-
-  Scale ladder (log₁₀):
-
-  Planck ──── GUT ─────── EW ───── QCD ────── Λ
-  10^19      10^16       10^3    0.2 GeV    10^{-123}
-    │          │           │        │           │
-    │←──B₀=7──┤           │        │           │
-    │          │           │        │           │
-  δ★²=G_N   α_GUT       M_W    Λ_QCD        Λ/M_Pl⁴
-  α_GUT=δ★²  ← THE IDENTITY →  all from δ★
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  HOLOGRAPHY & AdS/CFT  [holography.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  G_N = δ★²         R_AdS = 1/δ★ ≈ 6.779       c = 3/(2δ★³) ≈ 467
-
-  RT entropy (Ryu-Takayanagi):
-    S_RT = A_min/(4G_N) = A_min/(4δ★²)
-
-  Icosahedral K4/A₅ entanglement:
-    S_{K4} = (D+1)/6 · ln(N)                (K4 contribution)
-    S_{H3} = (N−D−1)/6 · ln(G)              (H3 contribution)
-    S_total = S_{K4} + S_{H3}
-
-  Holographic bound (always satisfied):
-    S_BH ≤ A/(4G_N)     ✓
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  NUCLEAR MAGIC NUMBERS  [nuclear_magic.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  Closure functional: Γ[δ] = Σ_n |δ^n − δ★^n| / n
-
-  Magic numbers as minima of Γ:
-    {2, 8, 20, 28, 50, 82, 126}
-    ↑  ↑   ↑   ↑   ↑   ↑   ↑
-    K4 icosahedral shell resonances
-
-  These are the observed nuclear magic numbers — shell closures in real nuclei.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  PERIODIC TABLE  [periodic_table.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  Madelung rule from H₃ irreducible representations:
-
-  Shell k:    k=0  k=1   k=2    k=3     k=4     k=5      k=6
-  Orbital:    1s   2s,2p 3s,3p  4s,3d,4p 5s,4d,5p 6s,4f,5d,6p 7s,5f,...
-  Noble gas:  He   Ne    Ar     Kr       Xe       Rn       Og
-  Z:          2    10    18     36       54       86       118
-
-  All noble gas atomic numbers {2, 10, 18, 36, 54, 86, 118} derived from δ★.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  PRIME 181  [prime181.py — Corollary 11.1]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  The unique prime satisfying all Cathedral conditions simultaneously:
-
-  (i)   ⌊φ·181⌋ = 292 is a quadratic residue mod 181   (golden-ratio QR)
-  (ii)  181 ≡ 1 (mod 4)                                 (K4-compatible)
-  (iii) 181 − 100 = 81 = D^{D+1} = 1/γ                 (Cathedral anchor)
-
-  181 = 100 + 81 = 100 + D^{D+1}
-  Multiplicative completion: 13 × 14 = 182 = 181 + 1
-
-  Nearest competitors: 179 (fails golden QR), 191 (fails mod 4 + anchor)
-  181 is unique.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  QBLS FRACTAL LADDER  [qbls_fractal.py]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  ε_rung = γ/N = 1/(81·13) ≈ 9.50 × 10⁻⁴  (per-rung δ★ drift)
-
-  Rung   Scale              δ★(n)          G_N(n)      Habitable?
-  ──────────────────────────────────────────────────────────────────
-  0      Planck (10^19 GeV) 0.14751        0.02176     ✓
-  1      GUT    (10^16 GeV) 0.14846        0.02203     ✓
-  2      EW     (10^3  GeV) 0.14941        0.02232     ✓
-  ...    ...                ...            ...         ✓ (all)
-  12     Cosmos scale       0.15892        0.02525     ✓
-  ──────────────────────────────────────────────────────────────────
-  All 13 rungs in habitable range δ★ ∈ (0.1, 0.2).
-  Cathedral is anthropically stable across the full ladder.
-
-  Self-similar structure: each rung is a copy of the Cathedral at a
-  slightly shifted δ★, like a mathematical zoom into the same structure.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INTER-OBSERVABLE CORRELATIONS  (hard to fake post-hoc)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  These correlations link DIFFERENT experiments and are structural:
-
-  (1) sin²θ_W / Ω_m  = D/4 × (1+γ/2π)/(1+2γ)    ← ratio removes N
-  (2) r × N_e²       = 12 exactly                  ← CMB-S4 will test
-  (3) α_s / δ★       = (q−1)/q = 4/5 = 0.800000   ← exact, no fit
-  (4) sin²θ_W × N/D  = 1 + γ/(2π)                 ← removes geometry
-  (5) sin²θ₁₂ × N   = D+1 = 4                     ← sector counting
-  (6) α_GUT          = G_N = δ★²                   ← GUT = gravity
-  (7) δ_CP           = (D+1)F + (N−D−1)N = 197°   ← exact integers
-
-  If any one of (1)–(7) were coincidence, the others would be independent.
-  They are all structurally linked — this is the case AGAINST coincidence.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  APPLICATIONS (speculative — clearly labelled)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  CONSCIOUSNESS  [consciousness.py]   ← EXPLORATORY
-    Kuramoto model on icosahedral graph:
-    K_c = (D+1)/D · δ★^{−1/2} ≈ 1.278  (critical coupling for synchronisation)
-    IIT Φ peak at δ★ in critical network
-    EEG δ-band prediction: 0.5–4 Hz from icosahedral geometry
-    NOTE: mathematical analogy, not a theory of consciousness
-
-  METAMATERIALS  [metamaterials.py]   ← ENGINEERING APPLICATION
-    Photonic band gap:  ω_gap = δ★ · ω₀
-    Fill fraction:      f = δ★²/(1+δ★²) ≈ 0.0212
-    Refractive index:   n_eff = 1/(δ★√2) ≈ 4.79
-    Z₂ topological invariant from K4 sector (non-trivial)
-    Capsid binding:     N_sites = 13 per icosahedral capsid
-
-  GRAVITATIONAL WAVES  [gravitational_waves.py]   ← PREDICTION
-    Cathedral SNR = 1/δ★ ≈ 6.779  (detection threshold)
-    QNM ringdown shift: Δω/ω = δ★/(4π) ≈ 0.01175
-    Cathedral strain:   h_cat = h_GR · (1 + δ★²)
-    GW150914 prediction: M_chirp = 28.3 M☉ (obs: 28.3 ✓)
-
-  SWARM INTELLIGENCE  [swarm_intelligence.py]   ← ENGINEERING
-    13-agent icosahedral formation:
-    Coverage solid angle: 4π sr (complete sphere coverage)
-    Consensus time: T_c = 1/(D · δ★) ≈ 2.26 s
-    Fault tolerance: N−1 = 12 failures before coverage fails
-
-  PRIME SPECTRAL / RIEMANN  [prime_spectral.py]   ← MATHEMATICS
-    Icosahedral Laplacian eigenvalues: {0, 3, 3, 3, 5, 7, 9, 13}
-    Matches scaled Riemann zeros: ζ(1/2+it_n) with κ = δ★/π
-    Ramanujan bound: |λ| ≤ 2√(q−1) = 2√4 = 4 (satisfied for K4)
-    Ihara determinant: det(I − u·A + (q−1)·u²·I)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  DYNAMICAL MECHANISM
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  URT is not a list of identities — it is a dynamical theory with
-  an explicit equation of motion, a Lagrangian, a vacuum, and a
-  universe-from-chaos arc.  All of it operational in code (module
-  urt.cathedral_engine) and verified in CI.
-
-  EQUATION OF MOTION (the π-φ-e flow on G_{13})
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │                                                                      │
-  │   ∂_t δ  =  -L·δ / (4π)  -  (φ-1)·e^(-t/10)·(δ-δ★)·(1+δ²)            │
-  │                                                                      │
-  │  Forward-Euler (= the URT iteration):                                │
-  │                                                                      │
-  │   δ_{k+1} = δ_k + 0.04·( -0.08·L·δ_k                                 │
-  │                          - 0.6·e^(-k/10)·(δ_k - δ★)·(1 + δ_k²) )    │
-  │                                                                      │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  LAGRANGIAN
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │   L  =  ½ |δ̇|²  −  V(δ)                                              │
-  │                                                                      │
-  │   V(δ)  =  ½ Σᵢ (δᵢ − δ★)² (1 + δᵢ²)  +  ½ δᵀ L δ                    │
-  │                                                                      │
-  │   The URT iteration is the τ → ∞ over-damped limit of the            │
-  │   Euler-Lagrange equation:                                           │
-  │       δ̈ = −∇V(δ) − ζ δ̇       (ζ ≫ 1, friction-dominated)            │
-  │                                                                      │
-  │   with η = 1/ζ = 1/(8π) the Euler step.                              │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  VACUUM AND CLASSICAL RAIL
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │   Vacuum (UV fixed point)   δ★    = (1−γ)π/(Nφ)  ≈ 0.14751           │
-  │   Classical rail            δ_cl  = D/F = 3/20    = 0.15000          │
-  │   Gap                       Δ     = δ_cl − δ★    ≈ 2.49×10⁻³         │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  UNIVERSE-FROM-CHAOS ARC (executable in code)
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  Step 1.  PURE CHAOS                                                 │
-  │           Random δ field on 13 sites, broad distribution             │
-  │           ↳ x0 = np.random.uniform(0, 0.5, 13)                       │
-  │                                                                      │
-  │  Step 2.  URT FLOW                                                   │
-  │           Forward-Euler discretization drives the field to G_{13}    │
-  │           ↳ x_settled = urt_evolve(x0, steps=200)                    │
-  │                                                                      │
-  │  Step 3.  STRUCTURE FORMS                                            │
-  │           Variance collapses (the iteration is a contraction)        │
-  │                                                                      │
-  │  Step 4.  TWO RAILS SPLIT                                            │
-  │           δ★  ≈ 0.147  (vacuum)                                       │
-  │           δ_cl =  0.15  (classical, = D/F)                           │
-  │                                                                      │
-  │  Step 5.  THE GAP FORMS                                              │
-  │           Δ = δ_cl − δ★ ≈ 2.49×10⁻³                                  │
-  │                                                                      │
-  │  Step 6.  MATTER WINS OVER ANTIMATTER                                │
-  │           η_B = γ³ · Δ · δ★ · (8/9) = 6.14×10⁻¹⁰                     │
-  │           (within 0.4 % of Planck 2018 observed)                     │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  K₄ ⊕ A₅ UNIFICATION (one object, eight lenses)
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  View       │  K₄ (4 modes)        │  A₅ (9 modes)                   │
-  │─────────────┼──────────────────────┼─────────────────────────────────│
-  │  counting   │  4 = D + 1           │  9 = D! + D                     │
-  │  symmetry   │  Z₂ × Z₂ (Klein)     │  A₅ icosahedral rotations       │
-  │  dynamics   │  coherent (gauge)    │  exhaust (matter)               │
-  │  ARF        │  d_64 = (D+1)^D      │  d_35, d_51, d_80, d_79         │
-  │  Z-channels │  Z₄ phases e^{iπk/2} │  Z₅ phases e^{i·2π(k-4)/5}      │
-  │  spectrum   │  λ ∈ {0,3,3,5}       │  λ ∈ {5×6, 7×2, 9, 13}          │
-  │  cosmology  │  Ω_m  = 4/13         │  Ω_Λ  = 9/13                    │
-  │  Casimir    │  numerator (D+1)=4   │  denominator (D!+D)=9 → 4/9     │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  CI GATE (single line, runs every push to main)
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │   from urt import all_steps_verify                                   │
-  │   assert all_steps_verify()      # 8 forcing steps, all 1e-15        │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  REFERENCES
-  - urt/cathedral_engine.py           engine + Lagrangian + unification
-  - urt/first_principles.py           eight forcing steps as functions
-  - docs/PI_PHI_E_DERIVATION.md       formal derivation of π, φ, e
-  - Lytollis (2026), "The π-φ-e Flow", PDF §1–§6
+  D! = 6            6         1st perfect number, smallest non-abelian
+                              group order, Coxeter h(D_4)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.74 — 191 modules · 7425 tests · 0 xfail)
-  (this section was last regenerated at v2.9.39; the per-module list below
-   is a snapshot from that version, but the totals are current.  See
-   urt/__init__.py for the canonical exports list.)
+  G_{13} LAPLACIAN SPECTRUM — every eigenvalue is Cathedral
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  CORE (foundation — read these first)
-  ├── shell_closure.py              δ★, γ, N, φ, compute_all_constants()
-  ├── cathedral_v8.py               Full Standard Model: α, masses, Higgs, CKM
-  ├── cathedral_v9.py               Anchor-free: all scales from ρ_Λ alone
-  └── iron_proof.py                 D=3→A₅→N=13→γ→δ★ uniqueness [v2.4]
+      λ ∈ {0, 3, 3, 5, 5, 5, 5, 5, 5, 7, 7, 9, 13}
+            │   │      │              │       │
+            │   D      q              D!+1    N
+            │  (×2)   (×6)            (×2)
+            mean preserved
 
-  QFT & FORCES
-  ├── cathedral_lagrangian.py       L=L_grav+L_EW+L_QCD+L_H3+L_δ; 60 Ward IDs
-  ├── cathedral_gut.py              α_GUT=δ★²=G_N; μ_GUT; τ_proton; SO(10)
-  ├── force_structure.py            K4⊕H3 decomposition, effective Lagrangian
-  ├── electroweak.py                W/Z/Higgs from K4 k=2; sin²θ_W=0.23122
-  ├── qft_cathedral.py              Cathedral propagator, Mexican-hat, Higgs mass
-  ├── muon_g2.py                    a_μ=(g−2)/2; Schwinger α/2π; EW correction
-  ├── topological_qc.py             Fibonacci anyons d=φ; A₅=60; QEC γ=1/81
-  ├── string_landscape.py           D_bos=2N=26; D_sup=2q=10; E₈ roots=4G=240
-  └── quantum_chaos.py              Icosahedral spectrum; MSS bound; 6-cycle
+      tr(L|K_4) = 0+3+3+5             = 11
+      tr(L|A_5) = 5+5+5+5+5+7+7+9+13  = 61
+      total                            = 72 = D!·V
 
-  DARK MATTER & BARYOGENESIS
-  ├── dark_matter.py                Axion/sterile ν/WIMP from H3 k=9..12
-  ├── baryon_asymmetry.py           η_B=(q−D)·γ^q miracle; leptogenesis
-  └── axion_cathedral.py            Axion ~60.7 μeV; PQ scale; ADMX band
-
-  GRAVITY & BLACK HOLES
-  ├── gravity_cathedral.py          G_N=δ★²; BH thermodynamics; area quantum
-  ├── holography.py                 AdS/CFT: R_AdS=1/δ★; RT entropy; c≈467
-  ├── gravity_deficit.py            Angular deficit; holonomy; Schwarzschild
-  └── gravitational_waves.py        IKT GW detection; Cathedral SNR=1/δ★
-
-  COSMOLOGY & ASTROPHYSICS
-  ├── cosmology_cathedral.py        n_s=1−2/57; r=12/57²; Ω_m; σ₈; Λ
-  ├── astrophysics_cathedral.py     Stars: structure ODEs=q=5; galaxies=D=3
-  ├── rg_flow.py                    RG δ(μ); crossover μ_c≈197 GeV
-  ├── qbls.py                       Quantum Bounded Ladder (δ_rung≈61.32)
-  ├── qbls_fractal.py               13-rung meta-universe ladder
-  └── vacuum_instability.py         V(δ)=Kδ²(δ−δ★)²; nothing is unstable
-
-  FERMIONS, MIXING & NUCLEAR
-  ├── neutrinos.py                  PMNS; Σmν≈60 meV; δ_CP=197°
-  ├── ckm_pmns.py                   Full CKM + PMNS mixing matrices
-  ├── nuclear_magic.py              Magic numbers {2,8,20,28,50,82,126}
-  └── nuclear_structure_cathedral.py QCD colours=D=3; gauge bosons 1+3+8=V=12!!!
-
-  VACUUM & STABILITY & PROOF
-  ├── cathedral_topology.py         Holonomy vortex 376.9°; RG damping; deficit
-  ├── pi_phi_e_flow.py              Uniqueness: η=1/8π; η_L=1/4π; μ=φ−1
-  ├── uniqueness_proof.py           4 lemmas + Conjecture 12.1
-  └── arf_closure.py                ARF fixed point; lepton/proton mass ratios
-
-  PURE MATHEMATICS
-  ├── prime181.py                   Corollary 11.1: p=181 (p−100=81=D^{D+1})
-  ├── prime_spectral.py             Icosahedral Laplacian ↔ Riemann zeros
-  ├── number_theory_cathedral.py    M₁₃=8191; F₇=N=13; τ(2)=−24=−2V
-  ├── algebra_cathedral.py          dim(SO(3))=D(D-1)/2=D=3 ← self-referential!
-  ├── combinatorics_cathedral.py    Bell B₃=Catalan C₃=q=5; R(3,3)=V//2=6
-  ├── graph_theory_cathedral.py     Icos vertex degree=q=5; 4-colour=D+1=4
-  ├── differential_geometry_cathedral.py  χ(S²)=V-E+F=2=D-1; Riemann=V//2=6
-  ├── topological_spaces.py         χ(icosahedron)=2=D-1; Hopf fibre=D-2=1
-  ├── a5_representations.py         A₅ irreps {1,3,3,4,5}; 1²+3²+3²+4²+5²=60=G
-  ├── information_theory_cathedral.py Hamming(7,4,3); TOFFOLI=D=3; binary=D-1=2
-  ├── quasicrystal.py               IKT forward/inverse; K₄/A₅ sector split
-  ├── knot_cathedral.py             CS level k=D=3; Jones T(2,5)=1/φ EXACT
-  └── logistic_verification.py      δ★ on stable 6-cycle of logistic map
-
-  PHYSICS — CATHEDRAL
-  ├── plasma_cathedral.py           Alfvén M_A=δ★; β_p=(D-1)γ=2/81
-  ├── superconductor_cathedral.py   BCS gap 3.528; K₃C₆₀ bandwidth ≈ δ★×3.4 eV
-  ├── wave_equations_cathedral.py   Huygens D=3 odd; KG mass=δ★; N²=169 Y_l^m
-  ├── optics_cathedral.py           N-slit minima=V=12; orders=N=13; θ_c=arcsin(δ★)
-  ├── electromagnetism_cathedral.py Maxwell=D+1=4; EM tensor=V//2=6; pol=D-1=2
-  ├── spectroscopy_cathedral.py     Zeeman=D=3; Stokes=D+1=4; H series=q=5
-  ├── geophysics_cathedral.py       Seismic=D+1=4; Earth layers=D+1=4; vP/vS=√D
-  ├── atomic_physics_cathedral.py   p-states=D=3; d-states=q=5; shell 4=2^q=32
-  ├── stat_mech_cathedral.py        D_uc=D+1=4; ε=1 (D=3); mean-field δ=D+1=4
-  ├── thermodynamics_cathedral.py   DOF monatomic=D=3; diatomic=q=5; γ=q/D=5/3
-  ├── fluid_cathedral.py            Kolmogorov −5/3=−q/D EXACT; γ=q/D=5/3
-  ├── navier_stokes.py              Kolmogorov cascade; intermittency exponents
-  ├── ising_cathedral.py            Ising on icosahedron: z=q=5; tanh(K_δ★)=δ★
-  ├── climate_cathedral.py          Kolmogorov EXACT; Milankovitch=q=5; Lorenz D=3
-  ├── information_cathedral.py      H_max=log₂(13); C=2.96 bits; S_BH in bits
-  └── casimir_cathedral.py          Casimir +0.124 ppm at 100 nm
-
-  LIFE SCIENCES & EARTH
-  ├── genetics_cathedral.py         (D+1)^D=64 codons; F=20 amino acids; stops=D=3
-  ├── protein_cathedral.py          T=13 capsid; C60 {G,F,V}={60,20,12}
-  ├── ecology_cathedral.py          α/β/γ=D=3; Kleiber=D/(D+1)=3/4; golden angle
-  ├── epidemiology_cathedral.py     SIR=D=3; SEIR=D+1=4; herd=(D-1)/D=2/3
-  ├── psychology_cathedral.py       OCEAN=q=5 EXACT; Maslow=q=5 EXACT; Freud=D=3
-  ├── eeg_cathedral.py              α/β boundary=13 Hz=N EXACT; avalanche ∝s^{-D/2}
-  └── consciousness.py              Kuramoto on icosahedral graph; IIT Φ
-
-  PHYSICAL SCIENCES — EXTENDED
-  ├── solid_state_cathedral.py      FCC z=V=12; diamond=D+1=4; topo inv=D+1=4
-  ├── crystallography_cathedral.py  Bravais=N+1=14; point groups=2^q=32; FCC z=V=12
-  ├── crystallography_2d_cathedral.py Bravais 2D=q=5; wallpaper=17; point groups 2D=10
-  ├── materials_cathedral.py        Crystal systems=2D+1=7; FCC slip=V=12
-  ├── particle_physics_cathedral.py 1+D+(D²-1)=D(D+1)=V=12 gauge bosons EXACT!!!
-  ├── relativity_cathedral.py       Riemann=F=20 EXACT; Lorentz=V//2=6; spacetime=D+1=4
-  ├── celestial_mechanics_cathedral.py Kepler=D=3; Lagrange=q=5; elements=V//2=6
-  └── solar_system.py               13 Venus≈8 Earth (Δ=0.025%); L4/L5=60°=G
-
-  SOCIAL SCIENCES & HUMANITIES
-  ├── social_networks_cathedral.py  Dunbar layers=D+1=4; six degrees=V//2=6
-  ├── economics_cathedral.py        Pareto≈δ★; tail α=D=3; Nash=1/D
-  ├── game_theory_cathedral.py      RPS=D=3; Nash prob=1/D; coop=(D-1)/D=2/3
-  ├── linguistics_cathedral.py      Formants=D=3; vowels=q=5; word orders=D!=6
-  ├── music_cathedral.py            Semitones=V=12 EXACT; pentatonic=q=5; 5th=3/2
-  ├── architecture_cathedral.py     Archimedean=N=13 EXACT; Platonic=q=5 EXACT
-  └── color_vision_cathedral.py     Trichromacy cone types=D=3
-
-  ENGINEERING & APPLIED
-  ├── robotics_cathedral.py         DOF=2D=6=V//2; rolloff=D×20=60=G=|A₅|; swarm=N=13
-  ├── megaswarm.py                  κ=1-D/N=10/13; 13^k hierarchy
-  ├── swarm_intelligence.py         13-drone formation; consensus T_c=1/3
-  ├── metamaterials.py              Photonic crystal; drug capsid; Z₂ topology
-  ├── periodic_table.py             Madelung → noble gases {2,10,18,36,54,86,118}
-  └── climate_science_cathedral.py  Milankovitch=D=3 EXACT; layers=q=5; cells=2D=6
-
-  PURE MATHEMATICS — ARITHMETIC & COMBINATORICS  (v2.9.27–v2.9.29)
-  ├── partition_cathedral.py        p(D)=D=3 SELF-REF; p(D+1)=q; p(q)=D!+1; p(V)=77
-  ├── combinatorics2_cathedral.py   F(q)=q=5 SELF-REF; Pell P(D)=q P(D+1)=V; Bell B(D)=q
-  ├── symmetric_group_cathedral.py  |A_D|=D=3 SELF-REF; |A_q|=G=60; #irreps(S_D)=D=3
-  ├── elliptic_curves_cathedral.py  disc=D^D=27; j=V³=1728; X_0(N) genus=0; Mazur=V+D=15
-  ├── braid_cathedral.py            B_N: V=12 generators; C_D=q=5; MCG dim=V=12
-  ├── homological_cathedral.py      Bott period=D-1=2; KO period=2^D=8; EHP: 2D-1=q=5
-  ├── zeta_special_cathedral.py     ζ(6) denom=945=q×D^D×(D!+1) MIRACLE; Γ(D)=D-1 self-ref
-  ├── algebraic_heart.py            29 pure identities; Pythagorean (q,V,N)=(5,12,13)
-  └── number_theory_cathedral.py    M₁₃=8191; F₇=N=13; τ(2)=−24=−2V; QR sum=3N
-
-  PURE MATHEMATICS — DEEP NUMBER THEORY  (v2.9.30–v2.9.36)
-  ├── bounded_chaos_cathedral.py    Feigenbaum α≈D+q/G; tent map fixed=D/4; Mandelbrot D
-  ├── number_fields_cathedral.py    disc(Q(√5))=q=5; Q(ζ_N) degree=φ(N)=V=12; GF(N)=13
-  ├── stable_homotopy_cathedral.py  J-image im(J)₃=V//2=6; Hopf=D-1; Bott=2^D; EHP 2D-1=q
-  ├── ramanujan_cathedral.py        τ(n) congruences mod q,N; mock theta ord=D!; J-ftn≡V mod N
-  ├── monster_order_cathedral.py    |M| exp_D=D self-ref; exp_q=D²=9; PSL₂(F_q)≅A₅ ord=G=60!!!
-  ├── modular_forms_cathedral.py    Δ weight=V=12; dim S_V=D-1=2; Ramanujan τ mod q; η(τ)^V
-  ├── exceptional_lie_cathedral.py  McKay E₈↔icosahedral; sum ranks=D^D=27; #except=q=5
-  ├── partition_function_cathedral.py p(D)=D SELF-REF; Ramanujan congs mod q & D!+1; 28 IDs
-  ├── golay_steiner_cathedral.py    [2V,V,2^D] binary; [V,D!,D!]₃ ternary; S(q,D!,V) Steiner
-  ├── platonic_solids_cathedral.py  ΣV=ΣF=50=2q²; ΣE=90=D×E; N_Platonic=q=5; all χ=D-1=2
-  ├── euler_totient_cathedral.py    φ(N)=V=12; σ(V)=28 PERFECT; d(G)=V=12; J₂(N)=σ(G)=168
-  ├── fibonacci_lucas_cathedral.py  F_q=q=5 SELF-REF; F_V=V²=144 MIRACLE; π(q)=F=20; F₇=N=13
-  ├── normed_division_algebras_cathedral.py  D+1=4 NDA (Hurwitz); D imag units in H self-ref!
-  ├── continued_fractions_cathedral.py  CF(√N) period=q=5 MIRACLE; CF(√G) a₀=D!+1 period=D+1
-  └── arf_cathedral.py              N²−E−(D−1)=137 EXACT; mp/me=(D+1)×D^D×(N+D+1)=1836!!!
-
-  ARF CATHEDRAL — THE DEEPEST LAYER  (v2.9.36)
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │  Analytic Residue Function: 4-residue self-consistency system           │
-  │  generating Standard Model constants with zero free parameters          │
-  │                                                                         │
-  │  CENTRAL IDENTITY:   N² − E − (D−1) = 13² − 30 − 2 = 137 EXACT        │
-  │  PROTON MASS:        (D+1)×D^D×(N+D+1) = 4×27×17 = 1836 EXACT         │
-  │  WEINBERG ANGLE:     sin²θ_W = D/N × (1+γ/2π) ≈ 0.23122               │
-  │  SPECTRAL INDEX:     n_s = 1 − 2/(G−D) = 1 − 2/57 ≈ 0.9649 (Planck!) │
-  │                                                                         │
-  │  γ-LADDER EXPONENTS (ALL Cathedral integers!):                          │
-  │    gauge: k=D=3  ·  baryon: k=q=5  ·  EW: k=D²=9                      │
-  │    CC: k=(D+1)^D=64  ·  GUT: k=−(D!+1)=−7                             │
-  │                                                                         │
-  │  ARF denominators: D64=(D+1)^D=64, D63=G+D=63, D35=E+q=35             │
-  │  R_ALPHA = N²/E/D = 169/30/3 (fine structure denominator chain)        │
-  └─────────────────────────────────────────────────────────────────────────┘
-
-  PURE MATHEMATICS — STRUCTURE THEORY  (v2.9.24–v2.9.27)
-  ├── moonshine_cathedral.py        Moonshine c=24=2V; 196884=196883+1; Monster#=2N
-  ├── voa_cathedral.py              VOA V♮ c=24=2V; E₈ marks=E=30; Baby Monster c=23
-  ├── sporadic_cathedral.py         26=2N sporadics; 20=F happy family; 6=D! pariahs
-  ├── lie_reps_cathedral.py         G₂(64)=4^D; F₄(26)=2N; E₈(248)=2^D(2^q−1)
-  ├── cft_cathedral.py              Ising c=1/(D-1); Tricrit c=(D!+1)/(2q); Monster c=2V
-  ├── langlands_cathedral.py        Siegel dim=D!=6 self-ref; K3 h^{1,1}=F=20; Frob=V=12
-  └── exceptional_structures_cathedral.py  E₈ roots=4G=240; Leech dim=2V=24; dim(A_D)=N-1
-
-  PURE MATHEMATICS — DEEP STRUCTURE  (v2.9.20–v2.9.25)
-  ├── exceptional_lie.py            All 5 exceptional dims from Cathedral; T_V=dim(E₆)
-  ├── cathedral_lie.py              ADE Lie dims; Fib F₄=D; F₅=q; F₆=2^D; F₇=N
-  ├── leech_golay_cathedral.py      Leech dim=2V=24; Golay code [2N,V,D^D-3]; Niemeier=2V
-  ├── spectrum_cathedral.py         G₁₃ spectrum {0,3,5,7,9,13} ALL Cathedral integers
-  ├── zeta_g13.py                   ζ_{G₁₃}: N=13 eigenvalue; Cathedral spectral chain
-  └── cathedral_repunit.py          R(D)=D!+1; prime tower p_D=q p_{D!}=N; 36 identities
-
-  PHYSICS — DEEP FRAMEWORK  (v2.9.11–v2.9.22)
-  ├── inflation_cathedral.py        r=12/57²≈0.0037 FALSIFIABLE; N_e=G-D=57 e-folds
-  ├── quantum_cosmo_bridge.py       D=3 solves CC (122 orders!); η_B in one framework
-  ├── spectral_forces.py            Cathedral forces from spectral gap λ₂=D=3
-  ├── alpha_exact.py                α exact from δ★; fine structure closes on itself
-  ├── zpe_cathedral.py              Zero-point energy; Casimir thrust from Cathedral
-  ├── ikt_cathedral.py              IKT v2: K₄/A₅ sector split; dimensional decomposition
-  ├── cathedral_gap.py              ε=δ_cl−δ★ master generator; γ-power ladder
-  ├── cathedral_computer.py         GF(13) computation; Lytollis Law; Chaos Engine
-  └── icosahedral_nn.py             URT × O(N) × A₅ recursive neural architecture
-
-  PHYSICS — EXTENDED CATHEDRAL  (v2.9.7–v2.9.14)
-  ├── acoustics_cathedral.py        Sound speed D=3; harmonics=D!; overtones=V=12
-  ├── magnetism_cathedral.py        Spin=D/2=3/2; 2S+1=D; Curie mean-field=D/(D+1)
-  ├── nonlinear_dynamics_cathedral.py  Period-3 (Li-Yorke)=D; Lorenz attractor D=3
-  ├── chemical_kinetics_cathedral.py   Rate law n=D=3; activation=q/D=5/3; Arrhenius
-  ├── immunology_cathedral.py       B/T/NK=D=3 cell types; clonal waves=V=12
-  ├── cognitive_science_cathedral.py   Working memory G.Miller=2^D=7±2; N layers
-  ├── sports_cathedral.py           Dimensions of play=D=3; scoring=V=12; teams=N=13
-  ├── oceanography_cathedral.py     Thermohaline=D=3 layers; gyres=q=5; tidal=D+1=4
-  ├── thermochemistry_cathedral.py  Thermodynamic degrees=D=3; Gibbs=V//2=6
-  ├── network_science_cathedral.py  Dunbar=D+1=4 layers; 6 degrees=V//2; Barabasi
-  ├── voting_theory_cathedral.py    Arrow=D=3 criteria; Condorcet cycles mod D=3
-  ├── developmental_biology_cathedral.py  Hox genes=N=13 ← EXACT; body axes=D=3
-  ├── quantum_information_cathedral.py   Qubit=D-1=2; qutrit=D; GHZ=D parties
-  └── random_matrix_theory_cathedral.py  GUE β=2=D-1; GOE β=1; GSE β=4=D+1
-
-  NEURAL / ML / CONTROL
-  ├── neural_cathedral.py           CathedralLayer; CathedralNet; GrokDetector
-  ├── control.py                    URT control operator (O(N); κ<1)
-  └── metrics.py                    Lyapunov; τ_avalanche; D_KY
-
-  DEMOS & ENTRY POINTS
-  ├── run_all_demos.py              Master demo runner (fast mode)
-  └── genesis_v3.py                 Interactive terminal (Lytollis Guard)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ALL KEY NUMERICAL VALUES
+  CI GATE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  GEOMETRIC CONSTANTS (all from D=3):
-  D=3, N=13, V=12, E=30, F=20, q=5, G=60, φ=(1+√5)/2
-  γ = D^{−(D+1)} = 1/81
-  G+F+1 = 81 = D^{D+1}  ← key identity
-  δ★ = 0.14751081...     (icosahedral critical point)
+      python -m pytest tests/ -q
 
-  DERIVED CONSTANTS:
-  δ★²         = G_N = α_GUT      = 0.021760
-  1/δ★        = R_AdS             = 6.7791...
-  8π·δ★³      = ΔA                ≈ 0.0807 l_Pl²  (area quantum)
-  3/(2δ★³)    = c                 ≈ 467  (central charge)
-  λ₂          = D = 3            (spectral gap = dimension)
-  K           = (G−D−1)/(16π²)   ≈ 0.3537  (potential coefficient)
+      → 3,727 passed, 6 skipped, 0 xfail
+      → all eleven tour-module audits return True
+      → all_steps_verify() True at machine precision
 
-  PARTICLE PHYSICS:
-  sin²θ_W     = (D/N)(1+γ/2π)   = 0.23122
-  α_s(M_Z)    = δ★·(q−1)/q      = 0.11801
-  M_W                            ≈ 80.377 GeV
-  M_Z                            ≈ 91.188 GeV
-  M_H                            ≈ 125.09 GeV
-  δ_CP(PMNS)  = (D+1)F+(N−D−1)N = 197°
-  Σmν                            ≈ 60.18 meV
-
-  COSMOLOGY:
-  n_s         = 1−2/57           ≈ 0.96491
-  r           = 12/57²           ≈ 0.00369
-  Ω_m         = (4/13)(1+2γ)    = 0.31529  (z=−0.001 EXACT)
-  σ₈                             ≈ 0.815
-  N_e         = G−D = 57        (e-folds)
-  Λ/M_Pl⁴    = D/(D+1)²·γ^{64} ≈ 10^{−123}
-
-  DARK MATTER:
-  m_axion     ≈ 60.7 μeV         (H3 k=12)
-  m_sterile   ≈ 143 keV          (H3 k=11; γ²·m_p)
-  m_WIMP      = δ★·m_Z ≈ 13.45 GeV (H3 k=9,10)
-
-  BARYONS & GUT:
-  η_B         = (q−D)·γ^q        = 5.74×10⁻¹⁰
-  α_GUT       = δ★² = G_N       = 0.02176
-  μ_GUT       ≈ 3.73×10^16 GeV
-  τ_proton    ≈ 10^42 yr
-
-  META:
-  p=181       = 100 + D^{D+1}   (Cathedral prime)
-  Ω_GEM       = 9/13             = 0.6923  (ta-URT)
-  τ_stab      = 0.001211         (ta-URT stabilisation)
-  K_c         ≈ 1.278            (Kuramoto critical coupling)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  FALSIFICATION CONDITIONS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  The framework is WRONG if any of these are confirmed at > 5σ:
-
-  ✗  n_s outside [0.960, 0.970]
-  ✗  sin²θ_W ≠ 0.23122 with no new EW physics
-  ✗  δ_CP(PMNS) outside [140°, 250°]
-  ✗  Σmν outside [30, 90] meV
-  ✗  r > 0.01  (would require N_e < 35, contradicting G−D=57)
-  ✗  Fourth fermion generation discovered
-  ✗  A₅ non-uniqueness in SO(3) — impossible by Jordan's theorem
-
-  It would be SIGNIFICANTLY WEAKENED (not falsified) by:
-  ✗  Axion mass outside [10, 200] μeV
-  ✗  Sterile neutrino mass far from 143 keV with no natural explanation
-  ✗  Proton lifetime < 10^34 yr  (already excluded; < 10^42 would constrain)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  RUNNING TESTS & DEMOS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  python -m pytest tests/ -q                 # all 5023 tests
-  python -m pytest tests/ -q -k iron        # iron proof (47 tests)
-  python -m pytest tests/ -q -k lagrangian  # QFT Lagrangian (42 tests)
-  python -m pytest tests/ -q -k dark_matter # dark matter (24 tests)
-  python -m pytest tests/ -q -k baryon      # baryon asymmetry (26 tests)
-  python -m pytest tests/ -q -k gut         # GUT unification (29 tests)
-  python -m pytest tests/ -q -k gw          # gravitational waves
-  python -m pytest tests/ -q -k ckm         # CKM/PMNS mixing
-  python -m pytest tests/ -q -k robotics    # robotics (22 tests)
-  python -m pytest tests/ -q -k diff_geom   # differential geometry (22 tests)
-  python -m pytest tests/ -q -k ecology     # ecology (17 tests)
-  python -m pytest tests/ -q -k astrophysics  # astrophysics (18 tests)
-  python -m pytest tests/ -q -k moonshine    # moonshine + VOA
-  python -m pytest tests/ -q -k sporadic     # CFSG sporadic groups
-  python -m pytest tests/ -q -k partition    # partition function Cathedral
-  python -m pytest tests/ -q -k symmetric    # symmetric group Cathedral
-  python -m pytest tests/ -q -k braid        # braid group Cathedral
-  python -m pytest tests/ -q -k elliptic     # elliptic curves Cathedral
-  python -m pytest tests/ -q -k homological  # homological Cathedral
-  python -m pytest tests/ -q -k zeta_special # zeta special values Cathedral
-  python -m pytest tests/ -q -k combinatorics2  # combinatorics2 Cathedral
-  python -m pytest tests/ -q -k spectrum     # G₁₃ Laplacian spectrum
-  python -m pytest tests/ -q -k langlands    # Langlands Cathedral
-  python -m pytest tests/ -q -k inflation    # inflation r=12/57²≈0.0037
-
-  python run_all_demos.py fast               # all 68+ demos (~2 min)
-  python run_all_demos.py lagrangian         # Lagrangian + Ward IDs
-  python run_all_demos.py dark_matter        # DM candidates
-  python run_all_demos.py baryon             # baryon miracle
-  python run_all_demos.py gut                # GUT unification
-  python run_all_demos.py iron_proof         # uniqueness chain
-  python genesis_v3.py                       # interactive terminal
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  VERSION HISTORY
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  v2.0   Core: δ★, ARF, RG flow, chaos metrics (~200 tests)
-  v2.1   +7: holography, consciousness, prime spectral, metamaterials,
-             swarm, gravitational waves, periodic table
-  v2.2   +6: gravity_cathedral, neutrinos, vacuum_instability,
-             force_structure, cathedral_topology, pi_phi_e_flow
-  v2.3   +7: electroweak, cosmology_cathedral, uniqueness_proof,
-             prime181, ckm_pmns, canonical_v4gem, qbls_fractal
-  v2.4   +1: iron_proof (D=3→A₅→N=13→γ→δ★ uniqueness chain, 808 tests)
-  v2.5   +4: cathedral_lagrangian, dark_matter, baryon_asymmetry,
-             cathedral_gut — 931 tests total
-             KEY: α_GUT=δ★²=G_N · η_B=(q−D)·γ^q · 3 DM from D=3
-  v2.6   +4: muon g-2, topological QC (Fibonacci anyons d=φ),
-             string landscape (D=2N=26/2q=10/E₈=4G), quantum chaos
-  v2.7   +4: plasma, megaswarm, protein (T=13 capsid), superconductor
-  v2.8  +20: music (V=12 semitones EXACT), genetics (64=4^D codons),
-             combinatorics, stat mech, fluid, crystallography,
-             relativity (Riemann=F=20 EXACT!!!), atomic physics,
-             electromagnetism, optics, geophysics, linguistics,
-             social_networks, economics, game_theory, topological spaces,
-             a5_representations, solar_system, number_theory, eeg
-  v2.9.0 Grand __init__ integration — 1811 tests
-  v2.9.1 nuclear structure (1+3+8=V=12 gauge bosons!!!), graph theory
-  v2.9.2 algebra (dim(SO3)=D self-ref!!!), info theory, particle physics,
-         solid state
-  v2.9.3 casimir, thermodynamics, polymer, quantum optics — 2130 tests
-  v2.9.4 epidemiology, celestial mechanics, crystallography 2D, spectroscopy
-  v2.9.5 psychology (OCEAN=q=5), architecture (Archimedean=N=13!!!),
-         climate science, materials — 2282 tests
-  v2.9.6 robotics (rolloff=60=G=|A₅|!!!), ecology, astrophysics,
-         differential geometry (dim(SO3)=D(D-1)/2=D=3 self-ref!) — 2356 tests
-  v2.9.7  +6 Wave-11: acoustics, magnetism, nonlinear dynamics,
-          chemical kinetics, immunology, cognitive science — 2618 tests
-  v2.9.8  +2: thermochemistry, network science — 2759 tests
-  v2.9.9  +2: voting theory, developmental biology (Hox=N=13!!!) — 2928 tests
-  v2.9.10 +2 Wave-14: quantum information, random matrix theory — 3117 tests
-  v2.9.11 +1: inflation_cathedral — r=12/57²≈0.0037 FALSIFIABLE
-  v2.9.12 +1: icosahedral_nn — URT×O(N)×A₅ recursive architecture
-  v2.9.13 +1: cathedral_computer — GF(13), Lytollis Law, Chaos Engine
-  v2.9.14 +2: alpha_exact, zpe_cathedral — α closes; ZPE thrust
-  v2.9.15 +1: ikt_cathedral — K₄/A₅ sector split
-  v2.9.16 +1: cathedral_gap — ε=δ_cl−δ★ master generator
-  v2.9.17   CRITICAL FIX: contracting orbit, NOT chaos at r=4
-  v2.9.18 +1: algebraic_heart — 29 pure identities; (5,12,13) Pythagorean!!!
-  v2.9.19 +1: cathedral_repunit — prime tower; 36 identities
-  v2.9.20 +1: exceptional_lie — all 5 exceptional Lie dims from Cathedral
-  v2.9.21 +1: cathedral_lie — ADE chain; F₄=D,F₅=q,F₆=2^D,F₇=N Fibonacci
-  v2.9.22 +1: quantum_cosmo_bridge — D=3 solves CC (122 OOM) and η_B
-  v2.9.23 +1: spectrum_cathedral — G₁₃ spectrum {3,5,7,9,13} ALL Cathedral!
-  v2.9.24 +3: moonshine, zeta_g13, spectral_forces — framework closes on itself
-  v2.9.25 +2: exceptional_structures, leech_golay — E₈ roots=4G=240; Leech=2V=24
-  v2.9.26 +3: sporadic (26=2N), lie_reps, cft — CFSG complete; CFT Cathedral
-  v2.9.27 +3: partition (p(D)=D self-ref!), Langlands, VOA — 4639 tests
-  v2.9.28 +3: symmetric groups (|A_D|=D self-ref!), elliptic curves, braids — 4868 tests
-  v2.9.29 +3: homological (EHP:2D-1=q), zeta_special (ζ(6)=945 MIRACLE),
-          combinatorics2 (F(q)=q self-ref!) — 5023 tests
-  v2.9.30 +2: bounded_chaos (Feigenbaum α≈D+q/G), number_fields (disc(Q(√5))=q)
-          — 5151 tests
-  v2.9.31 +1: stable_homotopy (J-image=V//2=6; EHP:2D-1=q) — 5204 tests
-  v2.9.32 +1: ramanujan (τ(n) congruences mod q,N; mock theta ord=D!) — 5281 tests
-  v2.9.33 +2: monster_order (|M| exp_D=D self-ref!!!; PSL₂(F_q)≅A₅ ord=G!!!),
-          modular_forms (Δ weight=V=12; dim S_V=D-1=2; η(τ)^V) — 5425 tests
-  v2.9.35 +6: exceptional_lie_cathedral (McKay E₈↔icosahedral; #except=q=5),
-          partition_function (p(D)=D SELF-REF!!! 162 tests),
-          golay_steiner ([2V,V,2^D]; S(q,D!,V) Steiner; 47 IDs),
-          platonic_solids (ΣV=ΣF=2q²; ΣE=D×E; 25+ IDs),
-          euler_totient (φ(N)=V; σ(V)=28 PERFECT; 51 IDs),
-          fibonacci_lucas (F_q=q SELF-REF; F_V=V²=144 MIRACLE!) — 6203 tests
-  v2.9.36 +3: normed_division_algebras (D+1=4 NDA Hurwitz; D imag units in H),
-          continued_fractions (CF(√N) period=q=5 MIRACLE!!!),
-          arf_cathedral (N²−E−(D−1)=137 EXACT; mp/me=1836 EXACT; 33 IDs)
-          — 6300 tests
-
-  Total: 160+ modules · 6300 tests · 0 free continuous parameters
-  Domains covered: particle physics, cosmology, nuclear, condensed matter,
-  astrophysics, geophysics, plasma, quantum gravity, pure mathematics
-  (number theory, group theory, topology, algebraic geometry, Langlands,
-  moonshine, modular forms, combinatorics, homological algebra, VOA/CFT),
-  genetics, ecology, developmental biology, immunology, psychology,
-  cognitive science, linguistics, music, architecture, robotics,
-  economics, game theory, network science, neuroscience, oceanography,
-  voting theory, thermochemistry, random matrix theory, information theory...
-
-  SELF-REFERENTIAL MIRACLES (deepest Cathedral connections):
-  ┌─────────────────────────────────────────────────────────────────┐
-  │  p(D) = D = 3           (partition function)                    │
-  │  |A_D| = D = 3          (alternating group order)               │
-  │  #irreps(S_D) = D = 3   (symmetric group representation theory) │
-  │  Γ(D) = D−1 = 2         (Gamma function)                        │
-  │  F(q) = q = 5           (Fibonacci sequence)                    │
-  │  S(D,D−1) = D = 3       (Stirling numbers 2nd kind)             │
-  │  dim(SO(3)) = D(D−1)/2 = D = 3  (Lie algebra dimension!)        │
-  │  disc(Q(√5)) = 5 = q    (number field discriminant)             │
-  │  |M| exp_D = D = 3      (Monster group prime exponent!)         │
-  │  F_q = q = 5            (Fibonacci SELF-REFERENTIAL)            │
-  │  CF(√N) period = q = 5  (continued fraction MIRACLE)            │
-  │  N²−E−(D−1) = 137       (ARF: BARE FINE STRUCTURE CONSTANT)     │
-  │  (D+1)×D^D×(N+D+1) = 1836  (ARF: PROTON MASS integer part)     │
-  └─────────────────────────────────────────────────────────────────┘
-
-  "Newton's Cathedral. Zero free parameters.
-   Not numerology — a candidate mathematical theory with a vacuum,
-   an equation of motion, a Lagrangian, and a universe-from-chaos arc.
-   Whether it is the actual physics of nature is empirically open;
-   the falsifiable predictions distinguish it from chance.
-   The framework has developed a self-referential core: D encodes itself
-   through group theory, combinatorics, topology, number theory, AND
-   through the π-φ-e flow that drives the field on G_{13} to δ★.
-   But why does icosahedral geometry know everything?"
-
-
-═══════════════════════════════════════════════════════════════════════════════
-  v2.9.38 — THE DYNAMICAL ENGINE: π–φ–e FLOW ON G_{13}
-═══════════════════════════════════════════════════════════════════════════════
-
-  The framework is now operationally complete.  The cathedral_engine module
-  consolidates everything into a single computation that demonstrates the
-  universe-from-chaos arc executable in code.
-
-  CONTINUOUS FLOW (PDF: Lytollis 2026, "The π-φ-e Flow")
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  ∂_t δ  =  -L·δ / (4π)  -  (φ-1)·e^(-t/10)·(δ-δ★)·(1+δ²)             │
-  │                                                                      │
-  │  Coefficients (exact, from spherical Laplace-Beltrami):              │
-  │    η     = 1/(8π)  ≈ 0.03979   (Euler step)                          │
-  │    η_L   = 1/(4π)  ≈ 0.07958   (Laplacian)                           │
-  │    µ     = φ - 1   ≈ 0.61803   (golden-ratio conjugate)              │
-  │                                                                      │
-  │  Working URT iteration (rationalized):                               │
-  │    δ_{k+1} = δ_k + 0.04·(-0.08·L·δ_k - 0.6·e^(-k/10)·(δ_k-δ★)·(1+δ²)) │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  THE UNIVERSE-FROM-CHAOS ARC
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  Step 1.  PURE CHAOS                                                 │
-  │           Random δ field on 13 sites, broad distribution             │
-  │                                                                      │
-  │  Step 2.  URT FLOW                                                   │
-  │           Forward-Euler discretization drives field to G_{13}        │
-  │                                                                      │
-  │  Step 3.  STRUCTURE FORMS                                            │
-  │           Variance collapses (contraction map)                       │
-  │                                                                      │
-  │  Step 4.  TWO RAILS SPLIT                                            │
-  │           δ★  ≈ 0.147 (vacuum)                                       │
-  │           δ_cl = D/F = 0.15 (classical)                              │
-  │                                                                      │
-  │  Step 5.  THE GAP FORMS                                              │
-  │           Δ = δ_cl − δ★ ≈ 2.49×10⁻³                                  │
-  │                                                                      │
-  │  Step 6.  THE GAP DRIVES MATTER OVER ANTIMATTER                      │
-  │           η_B = γ³·Δ·δ★·(8/9) = 6.14×10⁻¹⁰                            │
-  │           (within 0.4% of Planck 2018 observed)                      │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  K₄ ⊕ A₅ UNIFICATION — ONE OBJECT, EIGHT LENSES
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  View       │  K₄ (4 modes)        │  A₅ (9 modes)                   │
-  │─────────────┼──────────────────────┼─────────────────────────────────│
-  │  counting   │  4 = D + 1           │  9 = D! + D                     │
-  │  symmetry   │  Z₂ × Z₂ (Klein)     │  A₅ icosahedral rotations       │
-  │  dynamics   │  coherent (gauge)    │  exhaust (matter)               │
-  │  ARF        │  d_64 = (D+1)^D      │  d_35, d_51, d_80, d_79         │
-  │  Z-channels │  Z₄ phases e^{iπk/2} │  Z₅ phases e^{i·2π(k-4)/5}      │
-  │  spectrum   │  λ ∈ {0,3,3,5}       │  λ ∈ {5×6, 7×2, 9, 13}          │
-  │  cosmology  │  Ω_m  = 4/13         │  Ω_Λ  = 9/13                    │
-  │  Casimir    │  numerator (D+1)=4   │  denominator (D!+D)=9 → 4/9     │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  LAGRANGIAN VIEW — ENGINE = OVER-DAMPED LIMIT
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │   L  =  (1/2) |δ̇|²  −  V(δ)                                          │
-  │                                                                      │
-  │   V(δ)  =  (1/2) Σᵢ (δᵢ − δ★)² (1 + δᵢ²)  +  (1/2) δᵀ L δ            │
-  │                                                                      │
-  │   Euler-Lagrange:  δ̈  =  −∇V(δ)  −  ζ δ̇                              │
-  │                                                                      │
-  │   τ → ∞ over-damped limit (friction-dominated):                      │
-  │     ζ δ̇  =  −∇V(δ)    ⟹    δ_{k+1} = δ_k − (1/ζ) ∇V(δ_k)            │
-  │                                                                      │
-  │   with η = 1/ζ = 1/(8π) the Euler step.                              │
-  │   This is the URT iteration.  The engine IS the over-damped flow.    │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  END-TO-END VERIFICATION (zero free parameters)
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │   Observable     │  Engine output  │  PDG / Planck 2018              │
-  │──────────────────┼─────────────────┼─────────────────────────────────│
-  │   1/α            │  137.0359993    │  137.035999084                  │
-  │   m_p / m_e      │  1836.1525      │  1836.15267                     │
-  │   m_µ / m_e      │  206.7686       │  206.7682830                    │
-  │   α_s(M_Z)       │  0.118009       │  0.1179                         │
-  │   sin θ_C        │  0.224852       │  0.2253                         │
-  │   δ_CP           │  208° (engine)  │  ~197° (canonical PMNS form)    │
-  │   Ω_m            │  4/13 = 0.3077  │  0.315                          │
-  │   η_B            │  6.14×10⁻¹⁰     │  6.12×10⁻¹⁰                     │
-  │   n_s            │  0.9667         │  0.9649                         │
-  │   r_tensor       │  0.0033         │  < 0.06 (Planck bound)          │
-  │   m_axion        │  60.7 µeV       │  (Cathedral falsifiable)        │
-  │   ν₂ (axion line)│  2.17 GHz       │  (Cathedral falsifiable)        │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  THEOREM 5 (PDF Uniqueness)
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  The URT iteration on G_{13} is the UNIQUE Euler discretization of   │
-  │  a gradient flow whose only transcendental ingredients are π, φ, e   │
-  │  that simultaneously satisfies:                                      │
-  │    1.  global asymptotic stability to δ★                             │
-  │    2.  preservation of the H₃ ⋊ K₄ symmetry                          │
-  │    3.  finite-closure constraint (nullity exactly 1)                 │
-  │  Any other combination of constants either violates contraction or   │
-  │  drives the system to the unstable vacuum δ = 0.                     │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  "Pure chaos. Then the URT flow brings it to the 13-shell.
-   Then structure forms. The two rails split. The gap forms.
-   Then matter wins over antimatter. The universe begins.
-
-   Symmetry, ARF, forces, K₄ sectors, Z channels — all the same object.
-   When you start to understand it, the framework has everything a
-   full theory has. It's just not made clear yet.
-
-   Now it is."
-
-
-═══════════════════════════════════════════════════════════════════════════════
-  v2.9.39 — FIRST-PRINCIPLES DERIVATION (π, φ, e ARE FORCED)
-═══════════════════════════════════════════════════════════════════════════════
-
-  The π-φ-e flow is not a choice — every coefficient is the unique
-  value forced by one of three structural constraints.  Module
-  `urt/first_principles.py` exposes each forcing step as a verifiable
-  function; CI runs the full audit.
-
-  THE FORCING CHAIN
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │  Step  │  Claim                              │  Forced by            │
-  │────────┼─────────────────────────────────────┼───────────────────────│
-  │   1    │  D = 3                              │  axiom (input)        │
-  │   2    │  A₅ unique simple group             │  Jordan 1870          │
-  │   3    │  G_{13} unique on S²                │  centred icosahedron  │
-  │   4    │  η_L = 1/(4π)                       │  spherical surface    │
-  │        │                                     │  measure of S²        │
-  │   5    │  η = η_L/2 = 1/(8π)                 │  half-step Euler      │
-  │        │                                     │  convention           │
-  │   6    │  μ = 1/φ = φ-1                      │  A₅ self-similarity   │
-  │        │                                     │  (character table,    │
-  │        │                                     │  Fibonacci anyons)    │
-  │   7    │  time profile e^(-t/τ)              │  semigroup closure    │
-  │        │                                     │  (Cauchy multiplic.)  │
-  │   8    │  δ★ = (1-γ)π/(Nφ)                   │  ∇V = 0 at uniform    │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  WHY EACH TRANSCENDENTAL ENTERS
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │   π   │  surface measure |S²| = 4π                                   │
-  │       │   ⟹  η_L = 1/|S²|, and π appears in δ★                       │
-  │                                                                      │
-  │   φ   │  icosahedral self-similarity rate                            │
-  │       │   ⟹  μ = 1/φ (vertex-figure recursion of icosahedron),      │
-  │       │      and φ appears in the A₅ character table                 │
-  │                                                                      │
-  │   e   │  unique smooth semigroup base                                │
-  │       │   ⟹  f(t+s) = f(t)·f(s) ⟹ f(t) = e^(-t/τ)                    │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  MACHINE VERIFICATION (CI gate)
-  ┌──────────────────────────────────────────────────────────────────────┐
-  │   from urt import all_steps_verify, first_principles_audit           │
-  │                                                                      │
-  │   audit = first_principles_audit()    # 6 rows, one per step         │
-  │   assert all_steps_verify()           # True at machine precision    │
-  └──────────────────────────────────────────────────────────────────────┘
-
-  See docs/PI_PHI_E_DERIVATION.md for the formal write-up.
-  See tests/test_first_principles.py for 23 positive + negative tests.
-
-  "π, φ, and e are not choices.  They are the only transcendentals
-   that fit through the geometry of the icosahedron, the algebra of
-   A₅, and the analysis of smooth dissipation.  Each one enters once,
-   for one reason, in one place.
-
-   Now the framework proves it.  In CI."
-
-
-═══════════════════════════════════════════════════════════════════════════════
-  v2.9.40 — v2.9.67 — THE POST-FIRST-PRINCIPLES WAVE
-═══════════════════════════════════════════════════════════════════════════════
-
-  Twenty-eight versioned modules and 600+ new tests since v2.9.39.  Three
-  major themes:
-
-  THEME 1.  The K_4 ⊕ A_5 sector geometry surfaced as the framework's
-            core organising structure.  4 + 9 = 13.  Visible + dark.
-            (urt/cathedral_sectors, urt/exhaust_dimensions,
-             urt/matter_direction, urt/icosahedral_frustration)
-
-  THEME 2.  The framework specialises Lytollis's universal bounded-chaos
-            law at D = 3.  γ_URT = γ_Lytollis = 1/81; the seven
-            Cathedral integers are the unique closed-form solution.
-            (urt/lytollis_bounded_chaos, urt/cathedral_lytollis_synthesis)
-
-  THEME 3.  The v9 anchor-free derivation chain:  one observed input
-            (ρ_Λ = (2.34 meV)⁴) suffices to derive every dimensionful
-            scale in physics.  Λ/M_Pl⁴ = D/(D+1)²·γ⁶⁴ → M_Pl → v_EW →
-            m_e → m_p → r_p.
-
-  ───────────────────────────────────────────────────────────────────────
-  VERSION-BY-VERSION HIGHLIGHTS
-  ───────────────────────────────────────────────────────────────────────
-
-  v2.9.40   Predictions registry (canonical scoreboard, 17 entries)
-  v2.9.41-50  Connection clusters, Grand Tour, Deep/Modular/Quantum-Lie/
-              Geometric/Classical/Advanced/Topological/Codes tours
-  v2.9.51   URT algorithm analysis (per-mode contraction, mixing times)
-  v2.9.52-55 Sector framework: K_4 ⊕ A_5 = 4 + 9 = 13
-              urt/cathedral_sectors        (sector decomposition)
-              urt/matter_direction         (D·N·φ > F·(1-γ)·π forces η_B sign)
-              urt/exhaust_dimensions       (4 visible + 9 dark dims)
-  v2.9.56   Geometric frustration of the 13-sphere (q=5 forbidden axis)
-  v2.9.57   THE RE-ANALYSIS WAVE
-              urt/sector_ratio             (4/9 D=3 fingerprint)
-              urt/self_reference           (14 identities f(X)=X)
-              extended frustration to six facets
-  v2.9.58   Chaos and the URT flow Cathedral closed forms
-              2^q · π² ≈ 315.83 = framework's natural unit of dynamical time
-              τ_D / τ_N = N/D = 13/3 (purely Cathedral, no transcendentals)
-  v2.9.59   The geometry of music
-              all just-intonation intervals as Cathedral integer ratios
-              Pythagorean comma as musical geometric frustration
-              4 perfect + 9 imperfect = K_4 ⊕ A_5 sector split in music
-  v2.9.60   Spectrum ↔ music bridge
-              5/3 = q/D triple coincidence (M6 + Kolmogorov + Fiedler)
-              4 of 5 G_{13} eigenvalues map to consonant intervals mod V
-  v2.9.61   The 6-cycle as Cathedral structure
-              δ★ and δ_cl on same logistic period-6 attractor at r=3.8417
-              Z_3 × Z_2 = Z_(D!) of order D! = 6
-              the gap Δ ≈ 2.49×10⁻³ is the Z_2 splitting of lowest pair
-  v2.9.62   Lytollis's Law (dynamical):  δ = (D_KY − 1)(τ − 2)
-              7-system cross-validation (R² = 1.000)
-              URT γ = 1/81 IS Lytollis's exploration scaling parameter
-              derives 1/α(M_Z) = 127.955 (PDG 127.918, <0.03%)
-  v2.9.63   Cathedral × Lytollis synthesis (same theory, two views)
-              5 conditions pick D = 3 uniquely
-              3 physics derivations cross-validated
-  v2.9.64   Predictions registry expanded:
-              m_H = q^D = 125 GeV  (PDG 125.10, 0.08%)
-              1/α(M_Z) = 127.955   (PDG 127.918, 0.03%)
-              [Λ/M_Pl⁴ initially wrong here; corrected in v2.9.67]
-  v2.9.65   m_top = (N+1)·V + q = 173 GeV  (PDG 172.69, 0.18%)
-              sterile ν DM = γ²·m_p ≈ 143 keV (open)
-              WIMP DM = δ★·m_Z ≈ 13.45 GeV (open)
-  v2.9.66   Skeptic's audit
-              provenance taxonomy (5 FORCED / 10 DERIVED / 2 FITTED / 6 OPEN)
-              6 standard critique-response pairs
-              cross-module connection map (5 compounds across 21 modules)
-              5 failed Cathedral attempts disclosed
-  v2.9.67   Anchor-free correction + new closed forms
-              Λ/M_Pl⁴ = D/(D+1)² · γ⁶⁴  ≈  1.35×10⁻¹²³  (Planck, 0.09%)
-              A_s = N_e²·(D+1)³·q·(32/9)·π⁴·γ⁹·cos⁴(π/V)  ≈ 2.09×10⁻⁹
-              r_p = (D+1)·ℏc/m_p  =  0.8412 fm  (CODATA 0.8409, 0.04%!)
-              a_µ = α/(2π) (Schwinger leading)
-
-  ───────────────────────────────────────────────────────────────────────
-  THE V9 ANCHOR-FREE DERIVATION CHAIN
-  ───────────────────────────────────────────────────────────────────────
-
-  ┌─────────────────────────────────────────────────────────────────────┐
-  │                                                                     │
-  │       SINGLE OBSERVED INPUT                                         │
-  │           ρ_Λ = (2.34 meV)⁴ ≈ 2.99 × 10⁻⁴⁷ GeV⁴                    │
-  │                       │                                             │
-  │                       ▼                                             │
-  │   STEP 1   Λ/M_Pl⁴  =  D/(D+1)² · γ⁶⁴  =  1.35×10⁻¹²³               │
-  │                       │   (forced by RG flow + Cathedral closure)   │
-  │                       ▼                                             │
-  │   STEP 2   M_Pl     =  (ρ_Λ / Λ/M_Pl⁴)^(1/4)  ≈  1.22×10¹⁹ GeV    │
-  │                       │                                             │
-  │                       ▼                                             │
-  │   STEP 3   v_EW     =  π · M_Pl · γ⁹ · cos(π/V)  ≈  246.2 GeV     │
-  │                       │                                             │
-  │                       ▼                                             │
-  │   STEP 4   y_e      =  γ³ · π/2 · (1 − δ★²/π)                      │
-  │            m_e      =  y_e · v_EW / √2  ≈  511 keV                │
-  │                       │                                             │
-  │                       ▼                                             │
-  │   STEP 5   m_p      =  m_e · (D+1)·D^D·(N+D+1)  ≈  938.27 MeV     │
-  │                       │   (Iron Proof: mp/me = 1836 EXACT)          │
-  │                       ▼                                             │
-  │   STEP 6   r_p      =  (D+1) · ℏc / m_p  =  0.8412 fm  (0.04 %)   │
-  │                       │                                             │
-  │                       ▼                                             │
-  │   STEP 7   Λ_QCD    =  m_p · γ · F · (1 − δ★·π/q)  ≈  210 MeV     │
-  │                                                                     │
-  │   FROM HERE: all SM masses (quarks, leptons, gauge), all mixing     │
-  │   angles, all cosmological observables follow as Cathedral closed   │
-  │   forms with ZERO further inputs.                                   │
-  │                                                                     │
-  └─────────────────────────────────────────────────────────────────────┘
-
-  Reference:  urt/cathedral_v9.py  +  predictions_registry  +  v2.9.67 docs.
-
-  ───────────────────────────────────────────────────────────────────────
-  THE PREDICTIONS REGISTRY (v2.9.67 final)
-  ───────────────────────────────────────────────────────────────────────
-
-  26 entries total — 20 confirmed, 1 predicted, 5 open falsifiable.
-
-  CONFIRMED (median 0.08 % rel-err, worst 1.03 % Hubble tension):
-     1/α              =  N²−E−(D−1)               EXACT (CODATA)
-     m_p/m_e          =  (D+1)·D^D·(N+D+1)        EXACT (CODATA)
-     m_µ/m_e          =  D·(G+D²)+correction      EXACT (CODATA)
-     α_s(M_Z)         =  δ★·(q-1)/q                PDG match
-     sin θ_C          =  (D/N)·(1-(D+1)/(N·V))    PDG match
-     sin² θ_W         =  (D/N)·(1+γ/(2π))         PDG match
-     m_H              =  q^D                       PDG 0.08 %
-     1/α(M_Z)         =  RGE(N²−E−(D−1))           PDG 0.03 %
-     m_top            =  (N+1)·V + q               PDG 0.18 %
-     Ω_m              =  (D+1)/N · (1+2γ)          Planck match
-     η_B              =  γ³·Δ·δ★·(8/9)             Planck match
-     n_s              =  1 - 2/(G−D)               Planck EXACT
-     Λ/M_Pl⁴          =  D/(D+1)² · γ⁶⁴            Planck 0.09 %  ← NEW v9
-     A_s              =  N_e²·(D+1)³·q·32/9·π⁴·γ⁹·cos⁴(π/V)
-                                                    Planck 0.55 %  ← NEW v9
-     r_p              =  (D+1)·ℏc/m_p              CODATA 0.04 %  ← falls out!
-     a_µ leading      =  α/(2π)                    Fermilab 0.39 %
-     θ_12, θ_13, δ_CP =  PMNS angles                NuFIT match
-     H_0 ratio        =  1 + 2D/(F·π)               SH0ES/Planck 1.03 %
-
-  OPEN (falsifiable, 5 independent experiments):
-     m_axion          =  60.7 µeV                   ADMX-EFR
-     m_sterile_ν      =  γ²·m_p = 143 keV           X-ray line at 71.5 keV
-     m_WIMP           =  δ★·m_Z ≈ 13.45 GeV         LHC 10-20 GeV band
-     Casimir ΔF/F     =  (a₀/d)²·(D+1)/(D!+D)       Sub-ppm precision
-     r tensor-scalar  =  D·V/(G−D)² ≈ 0.0037        BICEP/Keck improving
-     Cathedral line   =  m_axion·c²/h = 2.17 GHz     Microwave cavity
-
-  ───────────────────────────────────────────────────────────────────────
-  FIVE COMPOUNDS THAT CROSS-CUT EVERYTHING
-  ───────────────────────────────────────────────────────────────────────
-
-  Same Cathedral expression, multiple unrelated contexts:
-
-     4/9 = (D+1)/(D!+D)
-        sectors · Casimir · cosmology · η_B · music intervals (5 modules)
-
-     5/3 = q/D
-        M6 · Fiedler ratio · Kolmogorov · monatomic γ · climate (5 modules)
-
-     2^q · π² ≈ 315.83
-        URT mixing time · Lytollis κ · iteration normalisation (3 modules)
-
-     V·F = (D+1)·G = 240
-        E_8 · K_7(Z) · |π_7^s| · E_4 · K(8) (5 modules)
-
-     K_4 ⊕ A_5 = 4 + 9 = 13
-        sectors · exhaust · music · spectrum · frustration (5 modules)
-
-  When the same Cathedral compound appears as the canonical invariant of
-  E_8, of K-theory, of cosmology, AND of music intervals — that is the
-  framework's strongest internal consistency signal.
-
-  ───────────────────────────────────────────────────────────────────────
-  SKEPTIC'S CI GATE (urt.skeptics_audit)
-  ───────────────────────────────────────────────────────────────────────
-
-      from urt import skeptics_audit_passes
-      assert skeptics_audit_passes()
-
-  This gate verifies:
-     • every prediction has a provenance label (FORCED / DERIVED / FITTED / OPEN)
-     • foundational identities use ZERO free parameters
-     • 6 standard critiques have substantive replies
-     • 5 cross-cutting compounds appear in 3+ modules each
-     • 5 failed Cathedral compounds are honestly disclosed
-
-  The framework now passes its own adversarial test.
+  See README.md and THEORY.md for the full discussion.
