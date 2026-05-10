@@ -1,5 +1,7 @@
 """Tests for the NS-form of the URT iteration on G_{13}."""
 import math
+from math import factorial
+
 import numpy as np
 
 from urt.shell_closure import D, q, V, N, DELTA_STAR
@@ -14,6 +16,16 @@ from urt.ns_microscopic_exhaust import (
     ns_iteration_step,
     viscous_dissipation_rate,
     sector_dissipation,
+    anomalous_dissipation_rate,
+    taylor_microscale_squared,
+    taylor_reynolds_squared,
+    kolmogorov_microscale_to_fourth,
+    onsager_holder_exponent,
+    kolmogorov_45_law_coefficient,
+    kolmogorov_53_inertial_exponent,
+    kraichnan_2d_enstrophy_exponent,
+    reynolds_eddy_count_exponent,
+    ns_cathedral_correspondence,
     ns_microscopic_exhaust_audit,
     ns_microscopic_exhaust_audit_passes,
 )
@@ -150,6 +162,108 @@ class TestDissipation:
         delta = rng.standard_normal(N)
         sd = sector_dissipation(delta)
         assert abs(sd["K4_fraction"] + sd["A5_fraction"] - 1.0) < 1e-12
+
+
+class TestAnomalousDissipation:
+    def test_value_is_18_over_pi(self):
+        """ε = D!·V / (4π) = 72/(4π) = 18/π."""
+        a = anomalous_dissipation_rate()
+        assert abs(a["epsilon"] - 18.0 / math.pi) < 1e-15
+
+    def test_value_is_DF_V_over_4pi(self):
+        a = anomalous_dissipation_rate()
+        assert abs(a["epsilon"] - factorial(D) * V / (4 * math.pi)) < 1e-15
+
+
+class TestTaylorMicroscale:
+    def test_lambda_T_squared_is_q_over_2V(self):
+        """λ_T² = q/(2V) = 5/24."""
+        t = taylor_microscale_squared()
+        assert abs(t["lambda_T_squared"] - q / (2 * V)) < 1e-15
+
+    def test_value_is_5_over_24(self):
+        t = taylor_microscale_squared()
+        assert abs(t["lambda_T_squared"] - 5.0 / 24.0) < 1e-15
+
+
+class TestTaylorReynolds:
+    def test_Re_lambda_squared_is_cathedral(self):
+        """Re_λ² = (D-1)·q·π²/D = 10π²/3."""
+        t = taylor_reynolds_squared()
+        assert abs(t["Re_lambda_squared"] - (D - 1) * q * math.pi ** 2 / D) < 1e-12
+
+    def test_value_is_10_pi_squared_over_3(self):
+        t = taylor_reynolds_squared()
+        assert abs(t["Re_lambda_squared"] - 10 * math.pi ** 2 / 3) < 1e-12
+
+
+class TestKolmogorovMicroscale:
+    def test_eta_K_to_fourth_is_cathedral(self):
+        """η_K⁴ = 1/(2^(D+1)·D!·V·π²) = 1/(1152π²)."""
+        k = kolmogorov_microscale_to_fourth()
+        denom = 2 ** (D + 1) * factorial(D) * V * math.pi ** 2
+        assert abs(k["eta_K_to_fourth"] - 1.0 / denom) < 1e-15
+
+    def test_denom_factorisation_is_1152(self):
+        """1152 = 2^(D+1) · D! · V."""
+        assert 2 ** (D + 1) * factorial(D) * V == 1152
+
+
+class TestOnsagerHolder:
+    def test_alpha_equals_1_over_D(self):
+        """Onsager's threshold is α > 1/D = 1/3 for energy conservation."""
+        o = onsager_holder_exponent()
+        assert abs(o["alpha"] - 1.0 / D) < 1e-15
+        assert abs(o["alpha"] - 1.0 / 3.0) < 1e-15
+
+
+class TestKolmogorov45Law:
+    def test_coefficient_is_4_over_5(self):
+        k = kolmogorov_45_law_coefficient()
+        assert abs(k["coefficient"] - 0.8) < 1e-15
+
+    def test_two_cathedral_forms_agree(self):
+        """4/5 = (D+1)/q = (q-1)/q."""
+        k = kolmogorov_45_law_coefficient()
+        assert abs(k["cathedral_a"] - k["cathedral_b"]) < 1e-15
+        assert abs((D + 1) / q - (q - 1) / q) < 1e-15
+
+
+class TestKolmogorov53:
+    def test_exponent_is_minus_q_over_D(self):
+        """Inertial-range spectrum: E(k) ∝ k^(-5/3) = k^(-q/D)."""
+        k = kolmogorov_53_inertial_exponent()
+        assert abs(k["exponent"] - (-q / D)) < 1e-15
+        assert abs(k["exponent"] - (-5.0 / 3.0)) < 1e-15
+
+
+class TestKraichnan2D:
+    def test_exponent_is_minus_D(self):
+        """2D enstrophy cascade: E(k) ∝ k^(-3) = k^(-D)."""
+        k = kraichnan_2d_enstrophy_exponent()
+        assert k["exponent"] == -D == -3
+
+
+class TestReynoldsEddyCount:
+    def test_exponent_is_9_over_4(self):
+        """N_eddy ~ Re^(D²/(D+1)) = Re^(9/4)."""
+        r = reynolds_eddy_count_exponent()
+        assert abs(r["exponent"] - 9.0 / 4.0) < 1e-15
+        assert abs(r["exponent"] - D * D / (D + 1)) < 1e-15
+
+
+class TestNSCathedralCorrespondence:
+    def test_table_has_twelve_rows(self):
+        """The NS-Cathedral table has 12 rows (3 dynamical + 9 catalogue)."""
+        t = ns_cathedral_correspondence()
+        assert len(t) == 12
+
+    def test_every_table_row_passes(self):
+        """Every entry that has an `agrees` field returns True."""
+        t = ns_cathedral_correspondence()
+        for k, v in t.items():
+            if isinstance(v, dict) and "agrees" in v:
+                assert v["agrees"], f"row {k} fails: {v}"
 
 
 class TestEndToEndAudit:
