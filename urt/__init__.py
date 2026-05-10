@@ -2222,6 +2222,37 @@ from .lytollis_bounded_chaos import (
     print_lytollis_bounded_chaos_report,
 )
 
+# v2.9.79 — The Seven Lytollis Laws taxonomy (URTF tanh contraction,
+# Bounded chaos scaling μ_turb = 2(δ★)², 5D fixed-point manifold,
+# m_n/m_p Cathedral form, etc.)
+from .lytollis_seven_laws import (
+    KAPPA_URTF,
+    MU_TURB,
+    H_LYTOLLIS,
+    M_N_OVER_M_P_CATHEDRAL,
+    urtf_step,
+    urtf_iterate,
+    urtf_convergence_rate,
+    bounded_chaos_scaling,
+    fixed_point_manifold_5D,
+    neutron_proton_mass_ratio,
+    seven_laws_taxonomy,
+    lytollis_seven_laws_audit,
+    lytollis_seven_laws_audit_passes,
+    print_lytollis_seven_laws_report,
+)
+
+# v2.9.79 — Forced Gap Polarity audit (UV/IR sign discipline complementing
+# the relative-error gate in predictions_registry)
+from .forced_gap_polarity import (
+    POLARITY_CLASSIFICATION,
+    gap_polarity_signs,
+    check_polarity,
+    run_polarity_audit,
+    forced_gap_polarity_audit_passes,
+    print_forced_gap_polarity_report,
+)
+
 # v2.9.63 — Cathedral × Lytollis synthesis: the Cathedral integers are
 # the unique closed-form solution of Lytollis's Law at D = 3
 from .cathedral_lytollis_synthesis import (
@@ -2998,6 +3029,28 @@ __all__ = [
     "lytollis_bounded_chaos_audit",
     "lytollis_bounded_chaos_audit_passes",
     "print_lytollis_bounded_chaos_report",
+    # v2.9.79 — Seven Lytollis Laws taxonomy
+    "KAPPA_URTF",
+    "MU_TURB",
+    "H_LYTOLLIS",
+    "M_N_OVER_M_P_CATHEDRAL",
+    "urtf_step",
+    "urtf_iterate",
+    "urtf_convergence_rate",
+    "bounded_chaos_scaling",
+    "fixed_point_manifold_5D",
+    "neutron_proton_mass_ratio",
+    "seven_laws_taxonomy",
+    "lytollis_seven_laws_audit",
+    "lytollis_seven_laws_audit_passes",
+    "print_lytollis_seven_laws_report",
+    # v2.9.79 — Forced Gap Polarity audit
+    "POLARITY_CLASSIFICATION",
+    "gap_polarity_signs",
+    "check_polarity",
+    "run_polarity_audit",
+    "forced_gap_polarity_audit_passes",
+    "print_forced_gap_polarity_report",
     # v2.9.63 — Cathedral × Lytollis synthesis
     "gamma_unification",
     "D3_uniqueness_conditions",
