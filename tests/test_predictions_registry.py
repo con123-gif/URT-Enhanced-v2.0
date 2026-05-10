@@ -109,3 +109,35 @@ class TestOpenPredictions:
                  if "casimir" in p.name.lower())
         # Convert to ppm
         assert 0.01e-6 < c.value < 1e-6
+
+
+# ── New Cathedral identities (v2.9.64) ───────────────────────────────────
+
+class TestNewCathedralIdentities:
+    def test_higgs_mass_is_q_cubed(self):
+        """m_H ≈ q³ GeV — Higgs mass equals q cubed exactly."""
+        from urt.shell_closure import q
+        h = next(p for p in cathedral_predictions()
+                 if "Higgs" in p.name)
+        assert h.value == q ** 3 == 125
+        # Match PDG to <0.1 %
+        assert abs(h.value - h.observed) / h.observed < 0.001
+
+    def test_alpha_at_M_Z_lytollis(self):
+        """1/α(M_Z) = 127.955 (Lytollis) vs PDG 127.918 — within 0.05 %."""
+        a = next(p for p in cathedral_predictions()
+                 if "1/α (M_Z)" in p.name)
+        assert a.value == 127.955
+        assert abs(a.value - a.observed) / a.observed < 0.0005
+
+    def test_lambda_cosmological_constant(self):
+        """Λ/M_Pl⁴ = (D+1)·γ^((D+1)^D) ≈ 2.88×10⁻¹²² — Planck-consistent."""
+        l = next(p for p in cathedral_predictions()
+                 if "Λ" in p.name or "cosmological" in p.name.lower())
+        assert 2.5e-122 < l.value < 3.5e-122
+        # Within 1% of observed mantissa
+        assert abs(l.value - l.observed) / l.observed < 0.01
+
+    def test_total_predictions_at_least_20(self):
+        """v2.9.64 brings registry to >= 20 entries."""
+        assert len(cathedral_predictions()) >= 20
