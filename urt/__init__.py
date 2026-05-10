@@ -2172,13 +2172,28 @@ from .music_geometry_cathedral import (
     print_music_geometry_report,
 )
 
+# v2.9.60 — spectrum ↔ music bridge: G_{13} Laplacian eigenvalues are
+# musical intervals; 4 of 5 are consonant; 5/3 = q/D triple-coincidence
+# (M6 = Kolmogorov γ = spectral ratio)
+from .spectral_music_cathedral import (
+    cathedral_spectrum,
+    nonzero_spectrum,
+    spectrum_ratios_as_intervals,
+    m6_triple_coincidence,
+    spectrum_mod_V_intervals,
+    consonance_count_mod_V,
+    spectral_music_audit,
+    spectral_music_audit_passes,
+    print_spectral_music_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.59"
+__version__ = "2.9.60"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2826,4 +2841,14 @@ __all__ = [
     "music_geometry_audit",
     "music_geometry_audit_passes",
     "print_music_geometry_report",
+    # v2.9.60 — spectrum ↔ music bridge
+    "cathedral_spectrum",
+    "nonzero_spectrum",
+    "spectrum_ratios_as_intervals",
+    "m6_triple_coincidence",
+    "spectrum_mod_V_intervals",
+    "consonance_count_mod_V",
+    "spectral_music_audit",
+    "spectral_music_audit_passes",
+    "print_spectral_music_report",
 ]
