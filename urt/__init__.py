@@ -2315,7 +2315,7 @@ from .baryon_asymmetry import (
     ETA_B_V9,
 )
 
-__version__ = "2.9.74"
+__version__ = "2.9.75"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics

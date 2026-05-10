@@ -145,8 +145,8 @@ ETA_B_LEPTO_PIPELINE = -C_SPHA * EPSILON_1 * KAPPA * (G_STAR_SM / G_STAR)**0.5
 #   η_B = γ³·Δ·δ★·(8/9)
 #
 # where Δ = δ_cl − δ★ ≈ 2.49×10⁻³ is the gap separating the classical rail
-# from the ultraviolet fixed point, and 8/9 = (D-1)·D!/(D+D²) is the K₄
-# coherent-mode normalisation.
+# from the ultraviolet fixed point, and 8/9 = 2·(D+1)/(D!+D) = 2·|K_4|/|A_5|
+# is twice the K_4/A_5 sector ratio (cf. urt.sector_ratio).
 #
 # Numerically this gives 6.14×10⁻¹⁰ — within 0.4 % of the Planck 2018
 # observed value 6.12×10⁻¹⁰.  This is currently the *most accurate* of the
