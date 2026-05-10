@@ -2156,13 +2156,29 @@ from .chaos_and_flow import (
     print_chaos_and_flow_report,
 )
 
+# v2.9.59 — the geometry of music: just-intonation intervals as Cathedral
+# ratios, Pythagorean comma as musical geometric frustration, K_4/A_5
+# sector split in interval classification (4 perfect + 9 imperfect = 13)
+from .music_geometry_cathedral import (
+    cathedral_intervals,
+    all_consonant_intervals_are_cathedral_ratios,
+    first_D_factorial_harmonics,
+    pythagorean_comma_as_frustration,
+    equal_temperament_resolution,
+    perfect_imperfect_interval_split,
+    diatonic_pentatonic_chromatic_split,
+    music_geometry_audit,
+    music_geometry_audit_passes,
+    print_music_geometry_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.58"
+__version__ = "2.9.59"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2799,4 +2815,15 @@ __all__ = [
     "chaos_and_flow_audit",
     "chaos_and_flow_audit_passes",
     "print_chaos_and_flow_report",
+    # v2.9.59 — music geometry Cathedral
+    "cathedral_intervals",
+    "all_consonant_intervals_are_cathedral_ratios",
+    "first_D_factorial_harmonics",
+    "pythagorean_comma_as_frustration",
+    "equal_temperament_resolution",
+    "perfect_imperfect_interval_split",
+    "diatonic_pentatonic_chromatic_split",
+    "music_geometry_audit",
+    "music_geometry_audit_passes",
+    "print_music_geometry_report",
 ]
