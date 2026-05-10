@@ -101,9 +101,12 @@ class TestAuditPassesIsAboutMachineryNotResult:
         assert null_hypothesis_audit_passes()
 
     def test_honest_finding_string_exists(self):
-        """A non-empty HONEST_FINDING string documents the result."""
+        """A non-empty HONEST_FINDING string documents the result.
+        Updated v2.9.73: now contains the retraction critique."""
         assert len(HONEST_FINDING) > 200
-        assert "HONEST FINDING" in HONEST_FINDING
+        # The v2.9.73 retraction wording
+        assert "RETRACTED" in HONEST_FINDING
+        assert "category error" in HONEST_FINDING.lower()
 
 
 class TestEndToEndAudit:
