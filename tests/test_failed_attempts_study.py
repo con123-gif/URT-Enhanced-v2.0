@@ -11,9 +11,9 @@ from urt.failed_attempts_study import (
 
 
 class TestFailureAnalysis:
-    def test_failures_catalogued(self):
-        """All 7 disclosed failures have detailed entries."""
-        assert len(FAILURE_ANALYSIS) == 7
+    def test_six_failures_catalogued(self):
+        """All 6 disclosed failures have detailed entries."""
+        assert len(FAILURE_ANALYSIS) == 6
 
     def test_each_has_required_fields(self):
         """Every entry has the standard analysis fields (incl. v2.9.74 resolution)."""
@@ -24,9 +24,9 @@ class TestFailureAnalysis:
             for k in required:
                 assert k in f, f"failure {f.get('id')} missing {k}"
 
-    def test_ids_are_contiguous(self):
+    def test_ids_are_1_through_6(self):
         ids = sorted(f["id"] for f in FAILURE_ANALYSIS)
-        assert ids == list(range(1, len(FAILURE_ANALYSIS) + 1))
+        assert ids == [1, 2, 3, 4, 5, 6]
 
     def test_null_test_is_retracted(self):
         """The null-hypothesis test is now flagged as a category error."""
@@ -76,6 +76,6 @@ class TestEndToEndAudit:
                     "patterns", "recommendations", "detailed_analysis"):
             assert key in a
 
-    def test_failures_count_in_audit(self):
+    def test_six_failures_in_audit(self):
         a = failed_attempts_study_audit()
-        assert a["n_failures"] == 7
+        assert a["n_failures"] == 6

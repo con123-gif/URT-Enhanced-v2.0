@@ -247,43 +247,6 @@ FAILURE_ANALYSIS: List[Dict[str, Any]] = [
                           "compounds — and the test of THAT is the predictions "
                           "registry, not adversarial random search.",
     },
-    {
-        "id":            7,
-        "name":          "γ⁻¹ as universal divisor of Cathedral graph τ(G)",
-        "category":      "graph-theoretic conjecture",
-        "severity":      "MILD",
-        "resolution":    "FALSIFIED — graph-specific, does not generalise",
-        "best_attempt":  (
-            "Conjecture: for every Cathedral graph G, "
-            "γ⁻¹ = D^(D+1) = 81  divides  τ(G) (number of spanning trees)."
-        ),
-        "observed":      (
-            "G_{13}: τ = 62,015,625 = D⁴·q⁶·(D!+1)²  ✓ divisible by 81; "
-            "K_V=K_12: τ = 12¹⁰ = 61,917,364,224  ✓ divisible by 81; "
-            "K_D, K_(D+1), K_q, K_N, cube, octahedron, dodecahedron, "
-            "Petersen graph: NOT divisible by 81."
-        ),
-        "rel_error":     "n/a (boolean falsified)",
-        "what_we_know":  (
-            "Investigated v2.9.79.  γ⁻¹=81 happens to factor τ(G_{13}) and "
-            "τ(K_V) cleanly, but is NOT a universal divisor of spanning-tree "
-            "counts of icosahedral-canonical or Cathedral-related graphs. "
-            "The factorisation τ(G_{13}) = D^(D+1)·q^(q+1)·(D!+1)² is a "
-            "*specific* clean factoring, not a manifestation of a divisor "
-            "theorem."
-        ),
-        "interpretation": (
-            "FALSIFIED as a universal Cathedral structural theorem.  The "
-            "v2.9.78 discrete-BH result that γ⁻¹ appears as a factor of "
-            "τ(G_{13}) is correct, but the conjecture 'γ⁻¹ is the unique "
-            "constant divisor of icosahedral spectral invariants' does not "
-            "extend to other natural Cathedral graphs.  γ retains its "
-            "self-referential origin (γ = D^(−(D+1))) — it is just not "
-            "additionally an icosahedral-graph universal divisor."
-        ),
-        "actionable":    "Honest negative result.  No further claim should "
-                          "be made beyond the specific G_{13} factorisation.",
-    },
 ]
 
 
