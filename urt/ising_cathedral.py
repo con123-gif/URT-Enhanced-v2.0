@@ -114,42 +114,6 @@ def critical_exponents() -> dict:
 
 # ── Partition function (small exact calculation) ──────────────────────────────
 
-def ising_partition_small(K: float, n_sites: int = 4) -> dict:
-    """
-    Exact Ising partition function for a small ring of n_sites spins.
-
-    Z = 2^n (2 cosh(K))^n / 2  for a ring (transfer matrix).
-    For n-site ring: Z = (2 cosh(K))^n + (2 sinh(K))^n
-
-    Parameters
-    ----------
-    K : float
-        Coupling K = J/(k_B T).
-    n_sites : int
-        Number of spins in the ring.
-
-    Returns
-    -------
-    dict
-        Z, free energy F, entropy S, magnetisation m.
-    """
-    Z = (2 * cosh(K))**n_sites + (2 * sinh(K))**n_sites
-    F = -log(Z)  # free energy (k_B T = 1)
-    # Entropy: S = -∂F/∂T|_V = K × ∂F/∂K + F  (rough)
-    # Exact: S = log Z + K × d(log Z)/dK
-    dlogZ = n_sites * (tanh(K) + 1.0/tanh(K) * (2*sinh(K))**n_sites/(Z)) if Z > 0 else 0
-    S = log(Z) + K * n_sites * tanh(K)  # approximate
-    return {
-        "K": K,
-        "n_sites": n_sites,
-        "Z": Z,
-        "F": F,
-        "S_approx": S,
-        "formula": "Z = (2cosh K)^n + (2sinh K)^n  (ring/periodic BC)",
-    }
-
-
-# ── Cathedral connection: δ★ on the spin curve ───────────────────────────────
 
 def delta_star_on_spin_curve() -> dict:
     """

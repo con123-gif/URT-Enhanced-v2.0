@@ -195,27 +195,6 @@ def ihara_determinant(u: float) -> float:
     return float(np.linalg.det(M).real)
 
 
-def ihara_zeros(u_max: float = 1.0, n_grid: int = 2000) -> np.ndarray:
-    """
-    Find approximate zeros of the Ihara zeta function det(I−Au+Qu²)=0.
-
-    Scans u ∈ (0, u_max] for sign changes (real axis only).
-    """
-    u_grid = np.linspace(1e-4, u_max, n_grid)
-    det_vals = np.array([ihara_determinant(u) for u in u_grid])
-    zero_u   = []
-    for i in range(len(det_vals) - 1):
-        if det_vals[i] * det_vals[i + 1] < 0:
-            # Bisect for precision
-            lo, hi = u_grid[i], u_grid[i + 1]
-            for _ in range(30):
-                mid = (lo + hi) / 2
-                if ihara_determinant(mid) * ihara_determinant(lo) < 0:
-                    hi = mid
-                else:
-                    lo = mid
-            zero_u.append((lo + hi) / 2)
-    return np.array(zero_u)
 
 
 def spectral_gap() -> int:
@@ -237,22 +216,6 @@ def ramanujan_bound() -> float:
 
 # ── Zeta connection to prime counting ────────────────────────────────────────
 
-def cathedral_prime_sum(t_max: float = 100.0) -> float:
-    """
-    Cathedral prime sum: Σ_{t_n ≤ t_max} 1/t_n (sum over Riemann zeros).
-
-    This converges slowly and is related to the prime number theorem.
-    Compared against Σ_{λ_n ≤ Λ_max} 1/λ_n for icosahedral eigenvalues.
-    """
-    t_sum   = sum(1 / t for t in RIEMANN_ZEROS if t <= t_max)
-    kappa   = riemann_scaling_constant()
-    spec    = laplacian_spectrum()
-    lam_sum = sum(1 / (lam * kappa) for lam in spec if lam > 0)
-    return {"riemann_sum": t_sum, "cathedral_sum": lam_sum,
-            "kappa": kappa, "t_max": t_max}
-
-
-# ── Spectral summary ──────────────────────────────────────────────────────────
 
 def spectral_summary() -> dict:
     """Complete spectral characterisation of the icosahedral graph."""

@@ -113,9 +113,6 @@ def axion_mass_eV():
     return axion_mass_GeV() * 1e9
 
 
-def axion_mass_meV():
-    """Axion mass in meV."""
-    return axion_mass_eV() * 1e3
 
 
 def axion_mass_ueV():
@@ -179,24 +176,7 @@ def secondary_spectral_line_GHz():
     return freq_GHz * DELTA_STAR
 
 
-def resonant_cavity_frequency():
-    """Optimal cavity resonance frequency for detecting the Cathedral axion."""
-    return secondary_spectral_line_GHz()
 
-
-# ── Comparison with QCD axion ─────────────────────────────────────────────────
-
-def qcd_axion_mass_ueV(f_a=None):
-    """
-    Standard QCD axion mass from PQ mechanism.
-    m_a_QCD ≈ 5.7 μeV × (10¹² GeV / f_a)
-    """
-    if f_a is None:
-        f_a = peccei_quinn_scale()
-    return 5.7e6 / (f_a / 1e12)   # μeV, with f_a in GeV → 10^12 GeV units
-
-
-# ── Detection status ──────────────────────────────────────────────────────────
 
 def detection_status():
     """Summary of experimental status for Cathedral axion detection."""

@@ -69,9 +69,6 @@ def physical_ladder():
 
 # ── Gravity sector ────────────────────────────────────────────────────────────
 
-def gravity_coupling(n=0):
-    """G_N · M_Pl² is rung-invariant = 1 (in Planck units)."""
-    return 1.0
 
 
 def schwarzschild_radius(M_solar_masses, n=0):
