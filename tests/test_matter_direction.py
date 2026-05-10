@@ -91,5 +91,34 @@ class TestEndToEndAudit:
     def test_audit_returns_complete_dict(self):
         a = matter_direction_audit()
         assert "inequality" in a
+        assert "margin_ratio" in a
         assert "eta_B_prefactor" in a
         assert "sensitivity" in a
+
+
+class TestMarginRatioIdentity:
+    """The matter-direction margin in *ratio* form is exactly δ_cl/δ★."""
+
+    def test_margin_ratio_equals_delta_cl_over_delta_star(self):
+        from urt import matter_direction_margin_ratio
+        m = matter_direction_margin_ratio()
+        assert m["exact_match"]
+        assert abs(m["margin_ratio"] - m["delta_cl_over_delta_star"]) < 1e-15
+
+    def test_margin_equals_one_plus_Delta_over_dstar(self):
+        from urt import matter_direction_margin_ratio
+        m = matter_direction_margin_ratio()
+        assert abs(m["margin_ratio"] - m["one_plus_Delta_over_dstar"]) < 1e-15
+
+    def test_eta_B_via_margin_bridge_identity(self):
+        """η_B = γ³·δ★²·(8/9)·(margin − 1)  is an exact algebraic rewrite."""
+        from urt import matter_direction_margin_ratio
+        m = matter_direction_margin_ratio()
+        assert m["eta_B_bridge_identity"]
+        rel_err = abs(m["eta_B_direct"] - m["eta_B_via_margin"]) / abs(m["eta_B_direct"])
+        assert rel_err < 1e-12
+
+    def test_margin_ratio_matches_observed_value(self):
+        from urt import matter_direction_margin_ratio
+        m = matter_direction_margin_ratio()
+        assert abs(m["margin_ratio"] - 1.0168746266) < 1e-9

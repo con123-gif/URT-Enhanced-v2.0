@@ -182,30 +182,35 @@ FAILURE_ANALYSIS: List[Dict[str, Any]] = [
         "name":          "matter-direction inequality margin",
         "category":      "dynamical quantity",
         "severity":      "MILD",
-        "resolution":    "PROMOTED to near-exact identity (22 ppm)",
-        "best_attempt":  "π/D = 1.0471975512",
-        "observed":      "1.0471743792 (= D·N·φ − F·(1−γ)·π)",
-        "rel_error":     2.2e-5,
+        "resolution":    "RESOLVED — ratio form is EXACT (= δ_cl/δ★)",
+        "best_attempt":  "ratio: D·N·φ / (F·(1−γ)·π) = δ_cl/δ★ = 1 + Δ/δ★ EXACT  |  difference: D·N·φ − F·(1−γ)·π ≈ π/D (22 ppm)",
+        "observed":      "ratio = 1.0168746266 (exact)  |  difference = 1.0471743792",
+        "rel_error":     0.0,
         "what_we_know":  (
-            "Re-investigated v2.9.74 (the previous '0.13 %' figure was a "
-            "digit error).  The actual relative error is 2.2 × 10⁻⁵ — "
-            "TWENTY-TWO PARTS PER MILLION.  This is tighter than most "
-            "predictions in the registry (median 0.08 % = 800 ppm)."
+            "Two distinct objects share the name 'matter-direction margin'.\n"
+            "  (a) Ratio form  D·N·φ / (F·(1−γ)·π) = δ_cl/δ★ = 1 + Δ/δ★  "
+            "      is EXACTLY a function of the framework's two rails. "
+            "      Substituting δ★ = (1−γ)π/(Nφ) into the LHS collapses it "
+            "      to D/(F·δ★) = δ_cl/δ★ algebraically.  No residue.\n"
+            "  (b) Difference form  D·N·φ − F·(1−γ)·π ≈ π/D  is a 22-ppm "
+            "      numerical near-coincidence (NOT an algebraic identity).\n"
+            "Investigated v2.9.79.  The ratio identity also yields the bridge\n"
+            "    η_B  =  γ³ · δ★² · (8/9) · (margin_ratio − 1)\n"
+            "showing baryogenesis and the matter-direction inequality are "
+            "two views of the same statement Δ > 0."
         ),
         "interpretation": (
-            "Near-exact identity:  D·N·φ − F·(1−γ)·π  ≈  π/D  to 22 ppm.\n"
-            "    Equivalent:  D²·N·φ/π  ≈  1 + D·F·(1−γ)  to 22 ppm.\n"
-            "Solving for the φ that would make this EXACT gives "
-            "φ_required = 1627·π/(81·39) = 1.6180345829, which differs "
-            "from φ_actual = 1.6180339887 by only 6 × 10⁻⁷.  φ is a "
-            "mathematical constant so the residue is real, but the "
-            "agreement is striking enough to elevate this from 'failure' "
-            "to 'near-exact Cathedral identity, awaiting closed-form proof'."
+            "RESOLVED.  The exact identity (margin_ratio = δ_cl/δ★) is the "
+            "primary statement; the π/D match is a secondary numerical "
+            "coincidence on the difference form.  Both forms are now "
+            "correctly distinguished in matter_direction.matter_direction_"
+            "margin_ratio()."
         ),
-        "actionable":    "PROMOTED.  Reclassify as a candidate Cathedral "
-                          "identity at 22 ppm precision.  Whether the residue "
-                          "vanishes in some refined form is open research; "
-                          "the empirical fact stands.",
+        "actionable":    "RESOLVED.  See urt.matter_direction_margin_ratio "
+                          "for the exact identity and η_B bridge.  The 22-ppm "
+                          "π/D coincidence on the difference form remains "
+                          "open as a curiosity; whether it is forced by some "
+                          "deeper relation is unclear.",
     },
     {
         "id":            6,
@@ -241,6 +246,43 @@ FAILURE_ANALYSIS: List[Dict[str, Any]] = [
                           "physics, THEN observed constants will be Cathedral "
                           "compounds — and the test of THAT is the predictions "
                           "registry, not adversarial random search.",
+    },
+    {
+        "id":            7,
+        "name":          "γ⁻¹ as universal divisor of Cathedral graph τ(G)",
+        "category":      "graph-theoretic conjecture",
+        "severity":      "MILD",
+        "resolution":    "FALSIFIED — graph-specific, does not generalise",
+        "best_attempt":  (
+            "Conjecture: for every Cathedral graph G, "
+            "γ⁻¹ = D^(D+1) = 81  divides  τ(G) (number of spanning trees)."
+        ),
+        "observed":      (
+            "G_{13}: τ = 62,015,625 = D⁴·q⁶·(D!+1)²  ✓ divisible by 81; "
+            "K_V=K_12: τ = 12¹⁰ = 61,917,364,224  ✓ divisible by 81; "
+            "K_D, K_(D+1), K_q, K_N, cube, octahedron, dodecahedron, "
+            "Petersen graph: NOT divisible by 81."
+        ),
+        "rel_error":     "n/a (boolean falsified)",
+        "what_we_know":  (
+            "Investigated v2.9.79.  γ⁻¹=81 happens to factor τ(G_{13}) and "
+            "τ(K_V) cleanly, but is NOT a universal divisor of spanning-tree "
+            "counts of icosahedral-canonical or Cathedral-related graphs. "
+            "The factorisation τ(G_{13}) = D^(D+1)·q^(q+1)·(D!+1)² is a "
+            "*specific* clean factoring, not a manifestation of a divisor "
+            "theorem."
+        ),
+        "interpretation": (
+            "FALSIFIED as a universal Cathedral structural theorem.  The "
+            "v2.9.78 discrete-BH result that γ⁻¹ appears as a factor of "
+            "τ(G_{13}) is correct, but the conjecture 'γ⁻¹ is the unique "
+            "constant divisor of icosahedral spectral invariants' does not "
+            "extend to other natural Cathedral graphs.  γ retains its "
+            "self-referential origin (γ = D^(−(D+1))) — it is just not "
+            "additionally an icosahedral-graph universal divisor."
+        ),
+        "actionable":    "Honest negative result.  No further claim should "
+                          "be made beyond the specific G_{13} factorisation.",
     },
 ]
 

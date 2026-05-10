@@ -93,6 +93,60 @@ def eta_B_prefactor_decomposition() -> Dict[str, Any]:
     }
 
 
+# ── The margin in ratio form: equals δ_cl / δ★ exactly ──────────────────
+
+def matter_direction_margin_ratio() -> Dict[str, Any]:
+    """Closed form for the matter-direction margin in *ratio* form.
+
+    The conventional difference form `D·N·φ − F·(1−γ)·π ≈ 1.047`
+    is a 22-ppm numerical near-coincidence with `π/D` (already flagged
+    in failed_attempts_study).  The *ratio* form, however, is exact:
+
+        D · N · φ
+        ──────────────  =  (D / F) / δ★  =  δ_cl / δ★  =  1 + Δ/δ★
+        F · (1 − γ) · π
+
+    This is an exact algebraic identity — substituting δ★ = (1−γ)π/(Nφ)
+    collapses the LHS to D/(F·δ★) = δ_cl/δ★.
+
+    Consequence: the matter-direction margin and η_B are both encoded
+    by the same Δ/δ★ ratio.  The η_B closed form factors as
+
+        η_B  =  γ³ · δ★² · (8/9) · (margin − 1)
+
+    making the matter-direction inequality and the baryon asymmetry
+    formula two views of the *same* statement Δ > 0.
+    """
+    LHS = D * N * phi
+    RHS = F * (1 - gamma) * pi
+    margin_ratio = LHS / RHS
+    delta_star = DELTA_STAR
+    delta_cl = D / F
+    Delta = delta_cl - delta_star
+    margin_via_delta = delta_cl / delta_star
+    margin_via_gap = 1 + Delta / delta_star
+
+    eta_B_direct = gamma**3 * Delta * delta_star * (8 / 9)
+    eta_B_via_margin = gamma**3 * delta_star**2 * (8 / 9) * (margin_ratio - 1)
+    eta_B_scale = max(abs(eta_B_direct), abs(eta_B_via_margin), 1e-30)
+
+    return {
+        "margin_ratio":              margin_ratio,
+        "delta_cl_over_delta_star":  margin_via_delta,
+        "one_plus_Delta_over_dstar": margin_via_gap,
+        "exact_match":               (
+            abs(margin_ratio - margin_via_delta) < 1e-15
+            and abs(margin_ratio - margin_via_gap) < 1e-15
+        ),
+        "eta_B_direct":              eta_B_direct,
+        "eta_B_via_margin":          eta_B_via_margin,
+        "eta_B_bridge_identity":     (
+            abs(eta_B_direct - eta_B_via_margin) / eta_B_scale < 1e-12
+        ),
+        "Delta_over_delta_star":     Delta / delta_star,
+    }
+
+
 # ── Sensitivity analysis ─────────────────────────────────────────────────
 
 def matter_direction_sensitivity() -> Dict[str, Any]:
@@ -134,6 +188,7 @@ def matter_direction_sensitivity() -> Dict[str, Any]:
 def matter_direction_audit() -> Dict[str, Any]:
     return {
         "inequality":            matter_direction_inequality(),
+        "margin_ratio":          matter_direction_margin_ratio(),
         "eta_B_prefactor":       eta_B_prefactor_decomposition(),
         "sensitivity":           matter_direction_sensitivity(),
     }
