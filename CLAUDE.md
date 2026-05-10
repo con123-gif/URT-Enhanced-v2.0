@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.59 — Cathedral Framework
+# URT Enhanced v2.9.60 — Cathedral Framework
 
 ## Repository Overview
 
@@ -1120,10 +1120,10 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 |------|--------|
 | `urt/music_geometry_cathedral.py` | The deep Cathedral structure of pitch and harmony. **Every major just-intonation interval is a ratio of Cathedral integers**: P5 = D/(D−1), P4 = (D+1)/D, M3 = q/(D+1), M6 = q/D (= Kolmogorov γ!), m3 = D!/q, m6 = 2^D/q, M7 = D·q/2^D, m2 = 2^(D+1)/(D·q). The first **D! = 6 harmonics are exactly the consonances** (the 7th is the first dissonant overtone). **The Pythagorean comma is musical geometric frustration** — `(D/(D−1))^V / 2^(D!+1) ≈ 1.01364` is the residue of V perfect 5ths failing to close to D!+1 octaves, structurally identical to the icosahedral 5-fold incompatibility. **Equal temperament is the V-fold root resolution**, analogous to the framework's "9 extra dimensions resolve icosahedral frustration." **The K_4 ⊕ A_5 sector split appears in interval classification**: 4 perfect (unison, P4, P5, octave) + 9 imperfect (m2, M2, m3, M3, tritone, m6, M6, m7, M7) = 13 = N. (4, 9) = (\|K_4\|, \|A_5\|). |
 
-### New Modules (v2.9.59 — The Geometry of Music)
+### New Modules (v2.9.60 — The Spectrum ↔ Music Bridge)
 | File | Domain |
 |------|--------|
-| `urt/music_geometry_cathedral.py` | The deep Cathedral structure of pitch and harmony. **Every major just-intonation interval is a ratio of Cathedral integers**: P5 = D/(D−1), P4 = (D+1)/D, M3 = q/(D+1), M6 = q/D (= Kolmogorov γ!), m3 = D!/q, m6 = 2^D/q, M7 = D·q/2^D, m2 = 2^(D+1)/(D·q). The first **D! = 6 harmonics are exactly the consonances** (the 7th is the first dissonant overtone). **The Pythagorean comma is musical geometric frustration** — `(D/(D−1))^V / 2^(D!+1) ≈ 1.01364` is the residue of V perfect 5ths failing to close to D!+1 octaves, structurally identical to the icosahedral 5-fold incompatibility. **Equal temperament is the V-fold root resolution**, analogous to the framework's "9 extra dimensions resolve icosahedral frustration." **The K_4 ⊕ A_5 sector split appears in interval classification**: 4 perfect (unison, P4, P5, octave) + 9 imperfect (m2, M2, m3, M3, tritone, m6, M6, m7, M7) = 13 = N. (4, 9) = (\|K_4\|, \|A_5\|). |
+| `urt/spectral_music_cathedral.py` | Hearing the icosahedron. The G_{13} Laplacian non-zero eigenvalues `{3, 5, 7, 9, 13}` are read as **musical intervals in two complementary ways**: (A) **as harmonic-series indices**, eigenvalue ratios match just-intonation intervals — `5/3 = q/D = M6 (just)`, `9/5 = D²/q = 5-limit m7`, `9/3 = oct+P5`, `7/5 = septimal tritone`, `9/7 = septimal m3`. (B) **mod V semitones**, λ ∈ {3,5,7,9,13} → {m3, P4, P5, M6, m2} — **4 of 5 are consonant**; the *only* dissonance is at λ = N (the A_5 exhaust eigenvalue). The K_4 ⊕ A_5 split shows up *again* as "consonant interior + dissonant edge." Triple-coincidence on `5/3 = q/D`: simultaneously the M6 just-intonation ratio, the Kolmogorov γ from fluid mechanics, and the second-Laplacian / Fiedler spectral ratio. |
 
 CI gates for the post-v2.9.48 wave:
 ```python
