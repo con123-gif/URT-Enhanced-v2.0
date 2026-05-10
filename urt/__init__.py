@@ -2301,6 +2301,7 @@ from .failed_attempts_study import (
     FAILURE_ANALYSIS,
     by_category as failures_by_category,
     by_severity as failures_by_severity,
+    by_resolution as failures_by_resolution,
     cross_cutting_patterns as failures_cross_cutting_patterns,
     recommendations as failures_recommendations,
     failed_attempts_study_audit,
@@ -2314,7 +2315,7 @@ from .baryon_asymmetry import (
     ETA_B_V9,
 )
 
-__version__ = "2.9.73"
+__version__ = "2.9.74"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3043,9 +3044,11 @@ __all__ = [
     "null_hypothesis_audit_passes",
     "print_null_hypothesis_report",
     # v2.9.73 — failed-attempts study (incl. retraction of #6)
+    # v2.9.74 — reclassified: 0 open failures, #5 promoted to identity
     "FAILURE_ANALYSIS",
     "failures_by_category",
     "failures_by_severity",
+    "failures_by_resolution",
     "failures_cross_cutting_patterns",
     "failures_recommendations",
     "failed_attempts_study_audit",

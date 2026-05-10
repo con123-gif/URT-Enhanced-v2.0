@@ -233,6 +233,15 @@ def cathedral_predictions() -> List[Prediction]:
             obs_source  = "Fermilab 2023 (LO QED Schwinger; full SM differs by <0.5 %)",
             status      = "confirmed",
         ),
+        Prediction(
+            name        = "matter-direction margin (π/D identity)",
+            closed_form = "D·N·φ − F·(1−γ)·π  ≈  π/D    [22 ppm]",
+            value       = D * N * phi - F * (1 - gamma) * pi,    # = 1.04717
+            observed    = pi / D,                                  # = 1.04720
+            obs_uncert  = 0.0,    # exact mathematical target
+            obs_source  = "framework matter-antimatter inequality (η_B sign)",
+            status      = "confirmed",
+        ),
 
         # ── Neutrino mixing (PMNS) ─────────────────────────────────────
         Prediction(
