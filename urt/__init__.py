@@ -2258,6 +2258,52 @@ from .forced_gap_polarity import (
     print_polarity_arf_unification_report,
 )
 
+# v2.9.80 — Wave-branch surgical imports: 10 new pure-math modules
+# (Klein invariants, Freudenthal magic square, McKay-Dynkin, del Pezzo,
+#  quantum groups, Grassmannians, affine Lie, operads, derived categories,
+#  spectral sequences).  Each module asserts its identities at import time.
+from .invariant_theory_cathedral import (
+    invariant_theory_summary,
+    print_invariant_theory_report,
+)
+from .freudenthal_magic_square_cathedral import (
+    magic_square_matrix,
+    magic_summary,
+    print_magic_report,
+)
+from .mckay_extended_dynkin_cathedral import (
+    mckay_summary,
+    print_mckay_report,
+)
+from .del_pezzo_cathedral import (
+    del_pezzo_summary,
+    print_del_pezzo_report,
+)
+from .quantum_groups_cathedral import (
+    quantum_groups_summary,
+    print_quantum_groups_report,
+)
+from .grassmannian_cathedral import (
+    grassmannian_summary,
+    print_grassmannian_report,
+)
+from .affine_lie_cathedral import (
+    affine_lie_summary,
+    print_affine_lie_report,
+)
+from .operads_cathedral import (
+    operad_summary,
+    print_operad_report,
+)
+from .derived_categories_cathedral import (
+    derived_summary,
+    print_derived_report,
+)
+from .spectral_sequences_cathedral import (
+    spectral_sequences_summary,
+    print_spectral_sequences_report,
+)
+
 # v2.9.63 — Cathedral × Lytollis synthesis: the Cathedral integers are
 # the unique closed-form solution of Lytollis's Law at D = 3
 from .cathedral_lytollis_synthesis import (
@@ -3061,6 +3107,17 @@ __all__ = [
     "polarity_arf_unification_audit",
     "polarity_arf_unification_audit_passes",
     "print_polarity_arf_unification_report",
+    # v2.9.80 — Wave-branch surgical imports (10 pure-math modules)
+    "invariant_theory_summary", "print_invariant_theory_report",
+    "magic_square_matrix", "magic_summary", "print_magic_report",
+    "mckay_summary", "print_mckay_report",
+    "del_pezzo_summary", "print_del_pezzo_report",
+    "quantum_groups_summary", "print_quantum_groups_report",
+    "grassmannian_summary", "print_grassmannian_report",
+    "affine_lie_summary", "print_affine_lie_report",
+    "operad_summary", "print_operad_report",
+    "derived_summary", "print_derived_report",
+    "spectral_sequences_summary", "print_spectral_sequences_report",
     # v2.9.63 — Cathedral × Lytollis synthesis
     "gamma_unification",
     "D3_uniqueness_conditions",
