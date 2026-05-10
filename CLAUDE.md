@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.76 — Cathedral Framework
+# URT Enhanced v2.9.77 — Cathedral Framework
 
 ## Repository Overview
 
@@ -1771,10 +1771,23 @@ from urt import (
 )
 ```
 
-## Development Branch
+## Branches
 
-Active development: `main` (only branch).  Earlier session branches
-(`claude/13-shell-closure-framework-dXmJi`, `claude/analyze-test-coverage-5uWdk`,
-`grok/universal-chaos-cathedral`, `feat-cathedral-engine`, `fix-final-eta-b`)
-have been retired — main is the single source of truth.
-Test-coverage + exploration wave (v2.9.37): `claude/analyze-test-coverage-5uWdk`
+This repo has TWO permanent branches.
+
+**`main`** — active development.  Full theory: 190 modules, 7,425 tests,
+27 registered predictions across QED/cosmology/EW/dark-matter/inflation,
+v9 anchor-free derivation chain, all domain-specific *_cathedral
+modules.
+
+**`pure-math`** — curated snapshot containing only the mathematical
+content.  85 modules, 3,667 tests, no physics.  Foundational
+constants, all 10 tour modules, sectors / frustration / 6-cycle /
+chaos-and-flow, music geometry, Lytollis bounded-chaos law, meta-
+audit.  No predictions registry, no v9 chain, no domain applications.
+Regenerated from main when necessary; see commit message of the
+initial pure-math commit for the categorisation script.
+
+**Branch workflow** (post-v2.9.77): all work goes through a single
+persistent `claude-work` branch which is reset to track `main` after
+each merge.  No more `claude-work-vX.X.XX` per-version branches.
