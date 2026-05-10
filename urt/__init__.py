@@ -2221,13 +2221,28 @@ from .lytollis_bounded_chaos import (
     print_lytollis_bounded_chaos_report,
 )
 
+# v2.9.63 — Cathedral × Lytollis synthesis: the Cathedral integers are
+# the unique closed-form solution of Lytollis's Law at D = 3
+from .cathedral_lytollis_synthesis import (
+    gamma_unification,
+    D3_uniqueness_conditions,
+    sector_ratio_uniqueness_table,
+    alpha_cross_validation,
+    lambda_cross_validation,
+    CKM_cross_validation,
+    comparative_predictions,
+    cathedral_lytollis_synthesis_audit,
+    cathedral_lytollis_synthesis_audit_passes,
+    print_cathedral_lytollis_synthesis_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.62"
+__version__ = "2.9.63"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2909,4 +2924,15 @@ __all__ = [
     "lytollis_bounded_chaos_audit",
     "lytollis_bounded_chaos_audit_passes",
     "print_lytollis_bounded_chaos_report",
+    # v2.9.63 — Cathedral × Lytollis synthesis
+    "gamma_unification",
+    "D3_uniqueness_conditions",
+    "sector_ratio_uniqueness_table",
+    "alpha_cross_validation",
+    "lambda_cross_validation",
+    "CKM_cross_validation",
+    "comparative_predictions",
+    "cathedral_lytollis_synthesis_audit",
+    "cathedral_lytollis_synthesis_audit_passes",
+    "print_cathedral_lytollis_synthesis_report",
 ]
