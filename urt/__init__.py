@@ -2271,13 +2271,32 @@ from .cathedral_compression import (
     print_cathedral_compression_report,
 )
 
+# v2.9.72 — null-hypothesis test: Cathedral primaries vs K random
+# integer vocabularies on a 19-target PDG/CODATA/Planck observation set.
+# Honest negative result at depth 2 — Cathedral does NOT outperform
+# random.  The framework's specificity comes from STRUCTURAL depth-3+
+# compounds + curated named values, not from the seven primaries alone.
+from .null_hypothesis_test import (
+    PDG_TARGETS,
+    CATHEDRAL_PRIMARIES,
+    HONEST_FINDING,
+    cathedral_primary_vocabulary,
+    random_primary_vocabulary,
+    enumerate_compounds as null_enumerate_compounds,
+    vocabulary_score,
+    null_hypothesis_distribution,
+    null_hypothesis_audit,
+    null_hypothesis_audit_passes,
+    print_null_hypothesis_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.71"
+__version__ = "2.9.72"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2993,4 +3012,16 @@ __all__ = [
     "cathedral_compression_audit",
     "cathedral_compression_audit_passes",
     "print_cathedral_compression_report",
+    # v2.9.72 — null-hypothesis test (Cathedral vs random vocabularies)
+    "PDG_TARGETS",
+    "CATHEDRAL_PRIMARIES",
+    "HONEST_FINDING",
+    "cathedral_primary_vocabulary",
+    "random_primary_vocabulary",
+    "null_enumerate_compounds",
+    "vocabulary_score",
+    "null_hypothesis_distribution",
+    "null_hypothesis_audit",
+    "null_hypothesis_audit_passes",
+    "print_null_hypothesis_report",
 ]
