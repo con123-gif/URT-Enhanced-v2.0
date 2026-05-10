@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.67 — Cathedral Framework
+# URT Enhanced v2.9.68 — Cathedral Framework
 
 ## Repository Overview
 
@@ -1398,7 +1398,11 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 - `urt/metrics.py` — Lyapunov exponent, τ_avalanche, D_KY
 
 ### Documentation
-- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.36)
+- `docs/cathedral_structure.txt` — Full framework ASCII diagram + module map (v2.9.67, ~1572 lines)
+- `docs/BREAKTHROUGH_NOTES.md` — Discovery log; v2.9.37 + v2.9.40-67 wave summary
+- `docs/V9_ANCHOR_FREE_CHAIN.md` — The ρ_Λ → M_Pl → v_EW → m_e → m_p → r_p chain (v2.9.68)
+- `docs/PI_PHI_E_DERIVATION.md` — Why π, φ, e are forced
+- `docs/CASIMIR_REVERSE_ENGINEERING.md` — Casimir candidate formula
 - `docs/black_holes_cathedral.txt` — BH thermodynamics from G_N=δ★²
 
 ## Running Tests
