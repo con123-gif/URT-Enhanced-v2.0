@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.58 — Cathedral Framework
+# URT Enhanced v2.9.59 — Cathedral Framework
 
 ## Repository Overview
 
@@ -1114,6 +1114,16 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 | File | Domain |
 |------|--------|
 | `urt/chaos_and_flow.py` | The URT iteration's product coefficient `η · η_L = 1/(8π) · 1/(4π) = 1/(2^q · π²)` exposes the framework's **natural unit of dynamical time** = `2^q · π² ≈ 315.83`.  Per-step contraction factor at Laplacian eigenvalue λ is `1 − λ/(2^q · π²)`; mixing time τ(λ) = (2^q · π²)/λ.  Slowest mode (Fiedler λ=D=3): τ_D ≈ 105.3 steps.  Fastest (λ=N=13): τ_N ≈ 24.3.  **Slowest/fastest ratio = N/D = 13/3** — purely Cathedral, transcendentals cancel. The 6-stage universe-from-chaos arc with each stage's Cathedral closed form annotated. |
+
+### New Modules (v2.9.59 — The Geometry of Music)
+| File | Domain |
+|------|--------|
+| `urt/music_geometry_cathedral.py` | The deep Cathedral structure of pitch and harmony. **Every major just-intonation interval is a ratio of Cathedral integers**: P5 = D/(D−1), P4 = (D+1)/D, M3 = q/(D+1), M6 = q/D (= Kolmogorov γ!), m3 = D!/q, m6 = 2^D/q, M7 = D·q/2^D, m2 = 2^(D+1)/(D·q). The first **D! = 6 harmonics are exactly the consonances** (the 7th is the first dissonant overtone). **The Pythagorean comma is musical geometric frustration** — `(D/(D−1))^V / 2^(D!+1) ≈ 1.01364` is the residue of V perfect 5ths failing to close to D!+1 octaves, structurally identical to the icosahedral 5-fold incompatibility. **Equal temperament is the V-fold root resolution**, analogous to the framework's "9 extra dimensions resolve icosahedral frustration." **The K_4 ⊕ A_5 sector split appears in interval classification**: 4 perfect (unison, P4, P5, octave) + 9 imperfect (m2, M2, m3, M3, tritone, m6, M6, m7, M7) = 13 = N. (4, 9) = (\|K_4\|, \|A_5\|). |
+
+### New Modules (v2.9.59 — The Geometry of Music)
+| File | Domain |
+|------|--------|
+| `urt/music_geometry_cathedral.py` | The deep Cathedral structure of pitch and harmony. **Every major just-intonation interval is a ratio of Cathedral integers**: P5 = D/(D−1), P4 = (D+1)/D, M3 = q/(D+1), M6 = q/D (= Kolmogorov γ!), m3 = D!/q, m6 = 2^D/q, M7 = D·q/2^D, m2 = 2^(D+1)/(D·q). The first **D! = 6 harmonics are exactly the consonances** (the 7th is the first dissonant overtone). **The Pythagorean comma is musical geometric frustration** — `(D/(D−1))^V / 2^(D!+1) ≈ 1.01364` is the residue of V perfect 5ths failing to close to D!+1 octaves, structurally identical to the icosahedral 5-fold incompatibility. **Equal temperament is the V-fold root resolution**, analogous to the framework's "9 extra dimensions resolve icosahedral frustration." **The K_4 ⊕ A_5 sector split appears in interval classification**: 4 perfect (unison, P4, P5, octave) + 9 imperfect (m2, M2, m3, M3, tritone, m6, M6, m7, M7) = 13 = N. (4, 9) = (\|K_4\|, \|A_5\|). |
 
 CI gates for the post-v2.9.48 wave:
 ```python
