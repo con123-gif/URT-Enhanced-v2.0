@@ -2203,13 +2203,31 @@ from .six_cycle_cathedral import (
     print_six_cycle_report,
 )
 
+# v2.9.62 — Lytollis's Law (dynamical bounded-chaos):  δ = (D_KY−1)(τ−2)
+# cross-validated across 7 systems with R² = 1.000; URT iteration's
+# γ = 1/81 IS the Lytollis exploration scaling parameter
+from .lytollis_bounded_chaos import (
+    lytollis_delta,
+    lytollis_check,
+    cross_system_validation,
+    all_seven_systems_satisfy_law,
+    out_of_sample_prediction,
+    urt_as_lytollis_system,
+    fine_structure_at_M_Z,
+    cosmological_constant_as_RG_fixed_point,
+    CKM_flavour_hierarchy,
+    lytollis_bounded_chaos_audit,
+    lytollis_bounded_chaos_audit_passes,
+    print_lytollis_bounded_chaos_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.61"
+__version__ = "2.9.62"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2878,4 +2896,17 @@ __all__ = [
     "six_cycle_audit",
     "six_cycle_audit_passes",
     "print_six_cycle_report",
+    # v2.9.62 — Lytollis's Law (bounded-chaos δ = (D_KY−1)(τ−2))
+    "lytollis_delta",
+    "lytollis_check",
+    "cross_system_validation",
+    "all_seven_systems_satisfy_law",
+    "out_of_sample_prediction",
+    "urt_as_lytollis_system",
+    "fine_structure_at_M_Z",
+    "cosmological_constant_as_RG_fixed_point",
+    "CKM_flavour_hierarchy",
+    "lytollis_bounded_chaos_audit",
+    "lytollis_bounded_chaos_audit_passes",
+    "print_lytollis_bounded_chaos_report",
 ]
