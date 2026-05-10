@@ -397,34 +397,10 @@ def stable_stem_orders() -> dict:
     }
 
 
-def toda_alpha_family() -> dict:
-    """Return Toda α-family stems and orders at Cathedral primes."""
-    return {
-        "prime_D": {
-            "prime": D,
-            "stem":  TODA_ALPHA_D_STEM,
-            "order": TODA_ALPHA_D_ORDER,
-        },
-        "prime_q": {
-            "prime": q,
-            "stem":  TODA_ALPHA_q_STEM,
-            "order": TODA_ALPHA_q_ORDER,
-        },
-    }
 
 
-def adams_h_elements() -> dict:
-    """Return Adams E_2 h_i elements with their stems."""
-    return {
-        "h_1": {"stem": H1_ADAMS_STEM, "order": D - 1},
-        "h_2": {"stem": H2_ADAMS_STEM, "order": 2 * V // (D * (D - 1))},
-        "h_3": {"stem": H3_ADAMS_STEM, "order": 4 * G // ((D - 1) * D * (D + 1))},
-    }
 
 
-def hopf_invariant_1_spheres() -> list:
-    """Return sphere dimensions n where Hopf invariant 1 is achievable."""
-    return HOPF_DIMS   # [1, 2, 4, 8] = [D-2, D-1, D+1, 2^D]
 
 
 def stable_homotopy_summary() -> dict:

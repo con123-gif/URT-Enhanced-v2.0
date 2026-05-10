@@ -195,14 +195,6 @@ def cathedral_d2V(delta: float) -> float:
     return K_POTENTIAL * (12*delta**2 - 12*DELTA_STAR*delta + 2*DELTA_STAR**2)
 
 
-def cathedral_field_mass_sq(delta: float) -> float:
-    """Mass squared of Cathedral scalar at field value δ."""
-    return cathedral_d2V(delta)
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-#  ONE-LOOP EFFECTIVE POTENTIAL (Coleman-Weinberg)
-# ══════════════════════════════════════════════════════════════════════════════
 
 def effective_potential_1loop(delta: float, mu_sq: float | None = None) -> float:
     """

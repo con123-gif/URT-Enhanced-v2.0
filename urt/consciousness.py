@@ -187,14 +187,6 @@ def peak_phi() -> float:
     return N / 4
 
 
-def phi_at_delta_star(K: Optional[float] = None) -> float:
-    """Φ evaluated at the δ★ operating point."""
-    _, r_trace = kuramoto_evolve(K or critical_coupling(), n_steps=2000)
-    r_steady   = float(r_trace[-500:].mean())
-    return iit_phi_approx(r_steady)
-
-
-# ── EEG delta-band connection ─────────────────────────────────────────────────
 
 def eeg_frequencies() -> dict:
     """

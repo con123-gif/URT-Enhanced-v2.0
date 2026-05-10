@@ -210,17 +210,6 @@ def lyapunov_ns(delta, delta_0=None):
     return exp(pi * PHI * (delta - DELTA_STAR) ** 2)
 
 
-def lyapunov_decay_rate(delta):
-    """Rate of change of V(δ) along the URT flow. Negative = Lyapunov decreasing."""
-    # dV/dt = V · 2π·φ·(δ−δ★) · dδ/dt
-    # dδ/dt = −δ★·G·(δ−δ★) from the contraction
-    V = lyapunov_ns(delta)
-    gap = delta - DELTA_STAR
-    dV_dt = V * 2 * pi * PHI * gap * (-DELTA_STAR * G * gap)
-    return dV_dt
-
-
-# ── Print report ──────────────────────────────────────────────────────────────
 
 def print_ns_report():
     P_d = cascade_downward_fraction()

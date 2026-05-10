@@ -204,14 +204,6 @@ def binding_energy_cathedral(A: int, Z: int) -> float:
 
 # ── Gamma functional landscape ────────────────────────────────────────────────
 
-def gamma_landscape(N_max: int = 130) -> Tuple[np.ndarray, np.ndarray]:
-    """Return (N_array, Gamma_array) for plotting."""
-    N_arr = np.arange(1, N_max + 1)
-    Gamma_arr = np.array([closure_functional(N) for N in N_arr])
-    return N_arr, Gamma_arr
-
-
-# ── Print report ──────────────────────────────────────────────────────────────
 
 def print_nuclear_report():
     result = magic_number_prediction()

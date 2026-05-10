@@ -89,13 +89,6 @@ def gaussian_curvature_per_site():
     return 4 * pi / N_SITE
 
 
-def cathedral_curvature():
-    """
-    The 1.0977° deficit per 13-site cell maps to a discrete Gaussian curvature.
-    K = GRAVITATIONAL_DEFICIT_RAD / A_cell
-    where A_cell is the effective area of one icosahedral cell.
-    """
-    return GRAVITATIONAL_DEFICIT_RAD
 
 
 def compare_deficit_to_gauss_bonnet():
@@ -117,12 +110,6 @@ def scale_damping(z, mu_0=1.0):
     return exp(-GAMMA * log(max(z, 1e-30) / mu_0))
 
 
-def effective_curvature(z):
-    """Effective gravitational deficit at redshift z."""
-    return GRAVITATIONAL_DEFICIT_RAD * scale_damping(z)
-
-
-# ── Black hole entropy from topological buckles ───────────────────────────────
 
 def schwarzschild_area(M_planck):
     """Schwarzschild horizon area A = 16π M² (Planck units, G=c=ℏ=1)."""
@@ -193,17 +180,6 @@ def holonomy_inside_bh(M_planck):
 
 # ── Arrow of time ─────────────────────────────────────────────────────────────
 
-def arrow_of_time_entropy_production(M_planck):
-    """
-    The arrow of time in the Cathedral picture is the orientation of the
-    holonomy vortex. Its rate of entropy production:
-    dS/dt ∝ N_buckles × Δ_rad² / (4π²)
-    """
-    N_cells = horizon_cell_count(M_planck)
-    return N_cells * N_SITE * GRAVITATIONAL_DEFICIT_RAD ** 2 / (4 * pi ** 2)
-
-
-# ── Gravity coupling from deficit ─────────────────────────────────────────────
 
 def newton_G_from_deficit():
     """

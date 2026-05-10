@@ -182,23 +182,6 @@ def ikt_sector_power(x):
 
 # ── Quasicrystal: 6D → 3D cut-and-project ────────────────────────────────────
 
-def icosahedral_basis_6d():
-    """
-    Six basis vectors for the 6D embedding of the icosahedral quasicrystal.
-    These are the 6 vectors obtained by projecting the E₆ root lattice
-    onto the icosahedral subspace.
-
-    e_j = (cos(2π·j/5), sin(2π·j/5), 0) for j=0..4 (5-fold in xy-plane)
-    e_5 = (0, 0, 1) (z-axis)
-
-    In the cut-and-project scheme, 3 basis vectors span the 'physical space'
-    and 3 span the 'perpendicular space' (the cut determines quasiperiodicity).
-    """
-    vecs = []
-    for j in range(5):
-        vecs.append(np.array([np.cos(2 * pi * j / 5), np.sin(2 * pi * j / 5), 0.0]))
-    vecs.append(np.array([0.0, 0.0, 1.0]))
-    return np.array(vecs)   # shape (6, 3)
 
 
 def phi_scaled_radii(n_shells=6):
@@ -239,13 +222,6 @@ def quasicrystal_structure_factor(q_radii, n_sites=100, sigma=0.05):
 
 # ── Penrose tiling connection ─────────────────────────────────────────────────
 
-def penrose_inflation_ratio():
-    """
-    The Penrose tiling inflation ratio is φ = (1+√5)/2.
-    Each generation of the tiling scales by φ.
-    The Cathedral φ_k phases are the same φ — not a coincidence.
-    """
-    return phi_gr
 
 
 def icosahedral_quasicrystal_info():
