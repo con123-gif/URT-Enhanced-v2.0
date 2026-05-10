@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.60 — Cathedral Framework
+# URT Enhanced v2.9.61 — Cathedral Framework
 
 ## Repository Overview
 
@@ -1124,6 +1124,11 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 | File | Domain |
 |------|--------|
 | `urt/spectral_music_cathedral.py` | Hearing the icosahedron. The G_{13} Laplacian non-zero eigenvalues `{3, 5, 7, 9, 13}` are read as **musical intervals in two complementary ways**: (A) **as harmonic-series indices**, eigenvalue ratios match just-intonation intervals — `5/3 = q/D = M6 (just)`, `9/5 = D²/q = 5-limit m7`, `9/3 = oct+P5`, `7/5 = septimal tritone`, `9/7 = septimal m3`. (B) **mod V semitones**, λ ∈ {3,5,7,9,13} → {m3, P4, P5, M6, m2} — **4 of 5 are consonant**; the *only* dissonance is at λ = N (the A_5 exhaust eigenvalue). The K_4 ⊕ A_5 split shows up *again* as "consonant interior + dissonant edge." Triple-coincidence on `5/3 = q/D`: simultaneously the M6 just-intonation ratio, the Kolmogorov γ from fluid mechanics, and the second-Laplacian / Fiedler spectral ratio. |
+
+### New Modules (v2.9.61 — The 6-Cycle as Cathedral Structure)
+| File | Domain |
+|------|--------|
+| `urt/six_cycle_cathedral.py` | The dynamical origin of the gap Δ.  At `r = 3.8417002878419497` the logistic map has a stable period-6 attractor whose six branches partition into **three pairs (low / mid / high)**.  Iteration order: low_a → mid_a → high_a → low_b → mid_b → high_b.  Position 0 carries δ★ (≈0.1474), position D = 3 carries δ_cl (= 0.15) — the framework's two rails sit on the **same attractor, exactly D iterations apart**.  Cycle order = D! = 6.  Factorisation = Z_D × Z_(D−1) = Z_3 × Z_2 = Z_(D!).  **The framework's gap Δ ≈ 2.49×10⁻³ is the Z_2 splitting of the lowest pair** (matches empirically to ~3 %).  Reading: Δ is not a free parameter — it is the dynamical splitting of two near-degenerate branches of the same Cathedral attractor. |
 
 CI gates for the post-v2.9.48 wave:
 ```python

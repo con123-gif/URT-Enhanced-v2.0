@@ -2187,13 +2187,29 @@ from .spectral_music_cathedral import (
     print_spectral_music_report,
 )
 
+# v2.9.61 — the 6-cycle as Cathedral structure: δ★ and δ_cl on the
+# same logistic period-6 attractor (Z_3 × Z_2 = Z_(D!) of order D! = 6;
+# gap Δ is the Z_2 splitting of the lowest pair)
+from .six_cycle_cathedral import (
+    R_SIX_CYCLE,
+    cycle_in_iteration_order,
+    cycle_pairs,
+    z3_z2_structure,
+    gap_as_z2_splitting,
+    delta_star_to_delta_cl_in_3_iterations,
+    cycle_order_is_D_factorial,
+    six_cycle_audit,
+    six_cycle_audit_passes,
+    print_six_cycle_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.60"
+__version__ = "2.9.61"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2851,4 +2867,15 @@ __all__ = [
     "spectral_music_audit",
     "spectral_music_audit_passes",
     "print_spectral_music_report",
+    # v2.9.61 — 6-cycle Cathedral structure (δ★ and δ_cl on same attractor)
+    "R_SIX_CYCLE",
+    "cycle_in_iteration_order",
+    "cycle_pairs",
+    "z3_z2_structure",
+    "gap_as_z2_splitting",
+    "delta_star_to_delta_cl_in_3_iterations",
+    "cycle_order_is_D_factorial",
+    "six_cycle_audit",
+    "six_cycle_audit_passes",
+    "print_six_cycle_report",
 ]
