@@ -2236,13 +2236,31 @@ from .cathedral_lytollis_synthesis import (
     print_cathedral_lytollis_synthesis_report,
 )
 
+# v2.9.66 — skeptic's audit: provenance taxonomy (FORCED / DERIVED /
+# FITTED / OPEN), critique-response pairs, cross-module connection map,
+# honest disclosure of failed Cathedral attempts
+from .skeptics_audit import (
+    PROVENANCE_FORCED,
+    PROVENANCE_DERIVED,
+    PROVENANCE_FITTED,
+    PROVENANCE_OPEN,
+    PREDICTION_PROVENANCE,
+    CRITIQUES_AND_REPLIES,
+    CROSS_MODULE_CONNECTIONS,
+    provenance_summary,
+    failed_attempts,
+    skeptics_audit,
+    skeptics_audit_passes,
+    print_skeptics_audit_report,
+)
+
 # v2.9.37 — third η_B closed form (most accurate of the three views)
 from .baryon_asymmetry import (
     eta_b_v9,
     ETA_B_V9,
 )
 
-__version__ = "2.9.65"
+__version__ = "2.9.66"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -2935,4 +2953,17 @@ __all__ = [
     "cathedral_lytollis_synthesis_audit",
     "cathedral_lytollis_synthesis_audit_passes",
     "print_cathedral_lytollis_synthesis_report",
+    # v2.9.66 — skeptic's audit (provenance + critiques + cross-module)
+    "PROVENANCE_FORCED",
+    "PROVENANCE_DERIVED",
+    "PROVENANCE_FITTED",
+    "PROVENANCE_OPEN",
+    "PREDICTION_PROVENANCE",
+    "CRITIQUES_AND_REPLIES",
+    "CROSS_MODULE_CONNECTIONS",
+    "provenance_summary",
+    "failed_attempts",
+    "skeptics_audit",
+    "skeptics_audit_passes",
+    "print_skeptics_audit_report",
 ]
