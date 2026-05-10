@@ -250,3 +250,37 @@ def test_print_iron_proof_report_runs(capsys):
     assert "Jordan" in out
     assert "A₅" in out
     assert "0" in out  # free parameters = 0
+
+
+class TestFibonacciPower3UniquenessWitness:
+    """Independent uniqueness witness for {N=13, m=81} via Fibonacci × 3^k."""
+
+    def test_witness_picks_framework(self):
+        from urt.iron_proof import fibonacci_power3_uniqueness
+        f = fibonacci_power3_uniqueness()
+        assert f["framework_pick"]
+        assert f["best"]["N"] == 13
+        assert f["best"]["m"] == 81
+
+    def test_best_hits_delta_star_at_machine_precision(self):
+        from urt.iron_proof import fibonacci_power3_uniqueness
+        f = fibonacci_power3_uniqueness()
+        assert f["best"]["abs_err"] < 1e-12
+
+    def test_runner_up_is_far_worse(self):
+        """Margin between best and second-best must be huge."""
+        from urt.iron_proof import fibonacci_power3_uniqueness
+        f = fibonacci_power3_uniqueness()
+        assert f["margin_over_runner_up"] > 1e6  # several orders of magnitude
+
+    def test_includes_all_candidates(self):
+        from urt.iron_proof import fibonacci_power3_uniqueness
+        f = fibonacci_power3_uniqueness()
+        assert f["n_candidates"] >= 5
+        assert isinstance(f["all_candidates"], list)
+
+    def test_appears_in_iron_proof_full(self):
+        from urt.iron_proof import iron_proof_full
+        full = iron_proof_full()
+        assert "fibonacci_power3_witness" in full
+        assert full["fibonacci_power3_witness"]["framework_pick"]
