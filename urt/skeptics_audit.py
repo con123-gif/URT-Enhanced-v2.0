@@ -479,6 +479,17 @@ def failed_attempts() -> List[Dict[str, str]]:
             "match":          "0.13 % — close but not exact",
             "verdict":        "near-coincidence, no closed form",
         },
+        {
+            "observable":     "null-hypothesis test against random vocabularies",
+            "best_compound":  "Cathedral primaries {D,q,V,N,E,F,G,π,φ,e,γ}",
+            "predicted":      "Cathedral should beat random",
+            "observed":       "Cathedral 3 EXACT vs random mean 4.4 (p≈0.90)",
+            "match":          "Cathedral does NOT outperform random at depth 2",
+            "verdict":        "honest negative: framework's specificity comes "
+                              "from depth-3+ STRUCTURAL compounds + curated "
+                              "named values (137, 1836, 197), NOT from primaries "
+                              "alone.  See urt.null_hypothesis_test.HONEST_FINDING.",
+        },
     ]
 
 
