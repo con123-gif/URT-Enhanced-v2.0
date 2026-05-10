@@ -141,3 +141,30 @@ class TestNewCathedralIdentities:
     def test_total_predictions_at_least_20(self):
         """v2.9.64 brings registry to >= 20 entries."""
         assert len(cathedral_predictions()) >= 20
+
+    def test_top_quark_mass_is_N_plus_1_times_V_plus_q(self):
+        """m_top = (N+1)·V + q = 173 GeV, matches PDG 172.69 within 0.2%."""
+        from urt.shell_closure import V, N, q
+        t = next(p for p in cathedral_predictions()
+                 if "top quark" in p.name)
+        assert t.value == (N + 1) * V + q == 173
+        assert abs(t.value - t.observed) / t.observed < 0.005
+
+    def test_sterile_neutrino_mass_is_143_keV(self):
+        """m_sterile = γ²·m_p ≈ 143 keV — open falsifiable DM candidate."""
+        s = next(p for p in cathedral_predictions()
+                 if "sterile" in p.name.lower())
+        assert s.value == 143.0
+        assert s.units == "keV"
+        assert s.status == "open"
+
+    def test_wimp_mass_at_LHC_threshold(self):
+        """m_WIMP = δ★·m_Z ≈ 13.45 GeV — at LHC direct-search threshold."""
+        w = next(p for p in cathedral_predictions()
+                 if "WIMP" in p.name)
+        assert 13.0 < w.value < 14.0
+        assert w.units == "GeV"
+
+    def test_total_predictions_at_least_23(self):
+        """v2.9.65 brings registry to >= 23 entries."""
+        assert len(cathedral_predictions()) >= 23

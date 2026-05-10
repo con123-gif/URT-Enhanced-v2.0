@@ -155,6 +155,16 @@ def cathedral_predictions() -> List[Prediction]:
             obs_source  = "PDG 2022 (running)",
             status      = "confirmed",
         ),
+        Prediction(
+            name        = "m_top (top quark mass) GeV",
+            closed_form = "(N+1)·V + q",
+            value       = (N + 1) * V + q,                # = 173 exactly
+            observed    = 172.69,
+            obs_uncert  = 0.30,
+            obs_source  = "PDG 2022 (top combination)",
+            status      = "confirmed",
+            units       = "GeV",
+        ),
 
         # ── Cosmology ──────────────────────────────────────────────────
         Prediction(
@@ -258,6 +268,26 @@ def cathedral_predictions() -> List[Prediction]:
             obs_source  = "ADMX-EFR target band: 50-100 µeV (open)",
             status      = "open",
             units       = "µeV",
+        ),
+        Prediction(
+            name        = "sterile-neutrino DM mass",
+            closed_form = "γ² · m_p  =  m_p / (D⁴)²  =  m_p / 6561",
+            value       = 143.0,
+            observed    = None,
+            obs_uncert  = None,
+            obs_source  = "X-ray line searches at 71.5 keV (= m_s/2) — open",
+            status      = "open",
+            units       = "keV",
+        ),
+        Prediction(
+            name        = "WIMP DM mass",
+            closed_form = "δ★ · m_Z",
+            value       = 13.45,
+            observed    = None,
+            obs_uncert  = None,
+            obs_source  = "LHC direct-search threshold ~10-20 GeV — open",
+            status      = "open",
+            units       = "GeV",
         ),
         Prediction(
             name        = "Casimir ΔF/F at 100 nm",
