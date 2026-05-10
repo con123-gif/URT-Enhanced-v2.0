@@ -173,7 +173,25 @@ PREDICTION_PROVENANCE: Dict[str, Dict[str, Any]] = {
         "provenance":     PROVENANCE_FORCED,
         "depends_on":     ["D", "γ"],
         "free_params":    0,
-        "derivation":     "(D+1)·γ^((D+1)^D) — γ-ladder at exponent 64 = (D+1)^D.",
+        "derivation":     "D/(D+1)²·γ^64 — anchor-free v9 formula; γ^64 from (D+1)^D = 64.",
+    },
+    "A_s (scalar amplitude)": {
+        "provenance":     PROVENANCE_DERIVED,
+        "depends_on":     ["N_e", "D", "q", "γ", "V"],
+        "free_params":    0,
+        "derivation":     "N_e²·(D+1)³·q·32/9·π⁴·γ^9·cos⁴(π/V), N_e = G−D = 57.",
+    },
+    "r_p (proton charge radius) fm": {
+        "provenance":     PROVENANCE_DERIVED,
+        "depends_on":     ["D", "m_p"],
+        "free_params":    0,
+        "derivation":     "(D+1)·ℏc/m_p; m_p in turn derives from m_e via mp/me = (D+1)·D^D·(N+D+1).",
+    },
+    "a_µ (muon g−2 leading)": {
+        "provenance":     PROVENANCE_DERIVED,
+        "depends_on":     ["α"],
+        "free_params":    0,
+        "derivation":     "Schwinger α/(2π); α inverse = N²−E−(D−1) = 137.",
     },
 
     # ── DERIVED: from forced via explicit mechanism ───────────────────

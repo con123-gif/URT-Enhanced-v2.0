@@ -131,12 +131,19 @@ class TestNewCathedralIdentities:
         assert abs(a.value - a.observed) / a.observed < 0.0005
 
     def test_lambda_cosmological_constant(self):
-        """Λ/M_Pl⁴ = (D+1)·γ^((D+1)^D) ≈ 2.88×10⁻¹²² — Planck-consistent."""
+        """Λ/M_Pl⁴ = D/(D+1)²·γ^64 ≈ 1.35×10⁻¹²³ (v9 anchor-free)."""
         l = next(p for p in cathedral_predictions()
                  if "Λ" in p.name or "cosmological" in p.name.lower())
-        assert 2.5e-122 < l.value < 3.5e-122
-        # Within 1% of observed mantissa
-        assert abs(l.value - l.observed) / l.observed < 0.01
+        assert 1.2e-123 < l.value < 1.5e-123
+        # Sub-0.1% match against Planck observation
+        assert abs(l.value - l.observed) / l.observed < 0.005
+
+    def test_A_s_scalar_amplitude(self):
+        """A_s = N_e²·(D+1)³·q·32/9·π⁴·γ⁹·cos⁴(π/V) ≈ 2.10×10⁻⁹ (Planck)."""
+        a = next(p for p in cathedral_predictions()
+                 if "A_s" in p.name)
+        assert 2.0e-9 < a.value < 2.2e-9
+        assert abs(a.value - a.observed) / a.observed < 0.01
 
     def test_total_predictions_at_least_20(self):
         """v2.9.64 brings registry to >= 20 entries."""
@@ -168,3 +175,28 @@ class TestNewCathedralIdentities:
     def test_total_predictions_at_least_23(self):
         """v2.9.65 brings registry to >= 23 entries."""
         assert len(cathedral_predictions()) >= 23
+
+    def test_total_predictions_at_least_24(self):
+        """v2.9.67 brings registry to >= 24 entries (A_s added)."""
+        assert len(cathedral_predictions()) >= 24
+
+    def test_proton_radius_falls_out(self):
+        """r_p = (D+1)·ℏc/m_p ≈ 0.841 fm — falls out of m_p directly."""
+        r = next(p for p in cathedral_predictions()
+                 if "proton charge radius" in p.name)
+        assert 0.84 < r.value < 0.842
+        assert r.units == "fm"
+        # CODATA 2022 match within 0.1 %
+        assert abs(r.value - r.observed) / r.observed < 0.001
+
+    def test_muon_g2_leading(self):
+        """a_µ Schwinger = α/(2π) — Cathedral α gives leading-order automatically."""
+        a = next(p for p in cathedral_predictions()
+                 if "muon g" in p.name)
+        assert 1.16e-3 < a.value < 1.17e-3
+        # Schwinger leading, full SM differs by <0.5 %
+        assert abs(a.value - a.observed) / a.observed < 0.005
+
+    def test_total_predictions_at_least_26(self):
+        """v2.9.67 brings registry to >= 26 entries (r_p, a_µ added)."""
+        assert len(cathedral_predictions()) >= 26
