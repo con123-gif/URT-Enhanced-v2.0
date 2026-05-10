@@ -2080,6 +2080,7 @@ from .cathedral_sectors import (
 # v2.9.54 — Matter Direction Theorem: η_B sign is forced by D=3
 from .matter_direction import (
     matter_direction_inequality,
+    matter_direction_margin_ratio,
     eta_B_prefactor_decomposition,
     matter_direction_sensitivity,
     matter_direction_audit,
@@ -2893,6 +2894,7 @@ __all__ = [
     "print_cathedral_sectors_report",
     # v2.9.54 — Matter Direction Theorem
     "matter_direction_inequality",
+    "matter_direction_margin_ratio",
     "eta_B_prefactor_decomposition",
     "matter_direction_sensitivity",
     "matter_direction_audit",

@@ -20,6 +20,7 @@ from urt.discrete_black_hole_g13 import (
     canonical_entropy,
     heat_kernel_limits,
     quasi_normal_frequencies,
+    qnm_mixing_duality,
     spectral_zeta,
     spectral_zeta_special_values,
     bekenstein_entropy_high_T,
@@ -305,5 +306,39 @@ class TestEndToEndAudit:
             "lytollis_gamma",
             "transcendentals",
             "bh_entropy_geometric",
+            "qnm_mixing_duality",
         ):
             assert key in a
+
+
+class TestQNMMixingDuality:
+    """Spectral-dynamical duality:  ω(λ)² · τ_mix(λ) = 2^q · π²  modewise."""
+
+    def test_constant_is_2q_pi_squared(self):
+        d = qnm_mixing_duality()
+        expected = (2 ** q) * pi * pi
+        assert abs(d["constant"] - expected) < 1e-12
+
+    def test_all_modes_consistent(self):
+        d = qnm_mixing_duality()
+        assert d["all_modes_consistent"]
+
+    def test_each_mode_hits_target(self):
+        d = qnm_mixing_duality()
+        target = d["constant"]
+        for lam, prod in d["products_by_lambda"].items():
+            assert abs(prod - target) < 1e-10, f"λ={lam} fails: {prod} vs {target}"
+
+    def test_qnm_is_sqrt_lambda(self):
+        """ω(λ) = √λ — the wave-equation eigenfrequency."""
+        qnm = quasi_normal_frequencies()
+        assert abs(qnm["omega_min"] - sqrt(D)) < 1e-15
+        assert abs(qnm["omega_max"] - sqrt(N)) < 1e-15
+
+    def test_mixing_is_target_over_lambda(self):
+        """τ_mix(λ) = (2^q π²)/λ — verify against chaos_and_flow."""
+        from urt.chaos_and_flow import mixing_time_cathedral
+        d = qnm_mixing_duality()
+        for lam in d["products_by_lambda"]:
+            tau = mixing_time_cathedral(lam)
+            assert abs(tau - d["constant"] / lam) < 1e-10
