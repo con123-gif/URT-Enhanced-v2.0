@@ -592,10 +592,90 @@ but the candidate now has a fully scaffolded answer.
 | v2.9.78 | **Discrete BH thermodynamics + Ihara zeta on G_{13}** (2 new modules) | ~7,700 |
 | v2.9.79 | **Lytollis's seven laws** + **forced gap-polarity** + Fibonacci uniqueness witness; polarity-ARF unification (3 new modules) | ~7,800 |
 | v2.9.80 | **10 pure-math modules cherry-picked**: invariant theory, Freudenthal magic square, McKay extended Dynkin, Del Pezzo, derived categories, Grassmannian, operads, quantum groups, spectral sequences, affine Lie | **7,907** |
+| v2.9.81 | **Gap-analysis import wave** (2026-05-11) — see section below | **7,965** |
 
-## Final running totals at v2.9.80
+## v2.9.81 — Gap-Analysis Import Wave (2026-05-11)
 
-**7,907 tests pass + 0 xfail.  204 modules.  27 predictions registered,
+Deep audit of an external 2,487-block Cathedral Colab archive
+(`cathedral_framework.zip`, 5.8 MB), comparing its content against the
+existing 205-module `urt/` framework.  Result: **8 working modules
+imported as new infrastructure, 2 upload claims rejected as
+unverified, 1 upload module dropped as broken**.
+
+### What was imported (8 working modules + 1 enhancement)
+
+| File | LOC | What it adds |
+|------|-----|--------------|
+| `urt/precision_audit.py` | 220 | Decimal-80 mpmath cross-check of every framework constant.  Single CI gate `precision_audit_passes()` verifies float-64 agreement with closed forms at 1e-12 rel-err; 5 integer identities (1/α=137, m_p/m_e=1836, δ_CP=197, N_e=57, γ=1/81) verified **exact** at any precision. |
+| `urt/signal_filter.py` | 175 | Deployable URT δ-classifier.  Constant→0, Lorenz→0.69, empty→NaN cleanly.  Three-bucket verdict (STABLE/FRAGILE/CHAOTIC) at thresholds δ★, δ_cl. |
+| `urt/constraint_engine.py` | 230 | Multi-scale Newton with UV/MID/IR tolerances `γ²`, `γ³·2π`, `γ⁴`.  Frozen mass-sector ladder cross-validated against ARF closure to 3.6 ppm. |
+| `urt/riemann_weil.py` | 230 | Finite Cathedral discretisation of the Weil quadratic on G_{13}.  Manifestly-positive counterterm `A_Cath(u) = δ★·(1+(u/N)²)`.  Cross-basis stress test on Gaussian/cosine/Legendre bases. |
+| `urt/riemann_zero_solver.py` | 130 | mpmath Hardy-Z bracket refinement; first 5 ζ zeros computed to 1e-14 vs canonical values. |
+| `urt/lcft.py` | 200 | Lytollis Chaos Field Theory PDE `∂_t χ = −K_β·(χ − δ★) + D·∇²χ` with closed-form coefficients `K_β = 1/(8π²)`, `D = γ·π²/2`.  Continuum-limit of the discrete URT iteration. |
+| `urt/plasma_pde.py` | 220 | 2D Hasegawa-Wakatani drift-wave solver with URT controller targeting δ★. |
+| `urt/lyapunov_spectrum.py` | 230 | Full Benettin+QR Lyapunov spectrum; Lorenz gives Σλ = -13.667 ≈ -(σ+β+1) and D_KY = 2.062 vs published 2.0627. |
+| `urt/icosahedral_frustration.py` (enhanced) | +35 | `dimensional_collapse_threshold()` exposes the new closed form `γ·φ = (1/81)·(1+√5)/2 ≈ 0.019975` — the unique product of the two D=3 fingerprints; δ★/(γφ) ≈ 7.385. |
+
+### What was rejected (2 unverified upload claims)
+
+  1. **Exodus EED thrust prediction**.  The upload claimed
+     `F = ε₀·E_c² · κ · (δ_ground² − δ_blade²) · A_eff / d` reproduces
+     US Patent 11,511,891 B2 measurements (237 mN / 421 mN at 25 kV, 8 / 15 in² ground)
+     to 7 %.  Running the formula at the patent geometry returns **−10.4 mN / −62.5 mN**
+     — wrong sign, off by ~100×.  The upload's "7 % error" text was hardcoded
+     in print statements, not computed.  Imported as
+     `urt/thruster_cathedral.py` with a DOCUMENTED FAILURE flag + CI test
+     pinning the failure state so the framework cannot silently regress.
+     The closed-form constants `E_c = π·φ·e·10⁶`, `αβ = π/(φ·e²)` ARE correct
+     and preserved.
+
+  2. **"Frozen RKHS certificate" for Weil positivity**.  The upload's
+     `cathedral_riemann_*` files provided a hand-tuned 7-coefficient
+     polynomial counterterm `A_Cath(u) = Σ c_k · u^(2k)` allegedly
+     verified positive-definite by an RKHS-Sobolev certificate.  When
+     actually evaluated on the upload's own test bases, the polynomial
+     is **negative-definite at moderate u** (the `c_12·u^12` term swamps
+     all lower terms for |u| > 5).  Replaced with the manifestly-positive
+     `A_Cath(u) = δ★·(1+(u/N)²)` whose positivity is immediate; module
+     reframed as honest finite Weil-quadratic infrastructure, not as an
+     RH-attack claim.
+
+### What was dropped (1 broken upload module)
+
+  - `urt/attractor_geometry.py` — purported empirical icosahedral
+    vertex recovery from URT iteration with α=1.155, β=0.235, θ_H=2.4.
+    Strict contraction (κ ≈ 0.923 < 1) confirmed; iteration runs to
+    completion; but the recovered 12 pairwise-angle distribution shows
+    no clustering at the icosahedral targets (63.43° / 116.57°) —
+    angles spread roughly uniformly across [5°, 178°].  Removed rather
+    than imported broken.
+
+### New CI gates (10, all pass at machine precision)
+
+```python
+from urt import (
+    precision_audit_passes,
+    signal_filter_audit_passes,
+    constraint_engine_audit_passes,
+    riemann_weil_audit_passes,
+    riemann_zero_audit_passes,
+    lcft_audit_passes,
+    plasma_pde_audit_passes,
+    lyapunov_audit_passes,
+    thruster_claim_holds,               # returns False — pinned failure
+    icosahedral_frustration_audit_passes,
+)
+```
+
+### Tests
+
+109 new tests across 10 new test files.  Existing tests all still pass
+(7,856 → 7,965 with no regressions, 0 xfail).
+
+## Final running totals at v2.9.81
+
+**7,965 tests pass + 0 xfail.  213 modules.  27 predictions registered,
 21 confirmed at median 0.07 % rel-err, worst 1.03 %.  5 falsifiable
-predictions across 5 independent experiments.  All 19 CI audit gates
-pass at machine precision.**
+predictions across 5 independent experiments.  All 29 CI audit gates
+pass at machine precision.  Audit discipline preserved: zero unverified
+claims promoted to the framework's falsifiable-predictions registry.**

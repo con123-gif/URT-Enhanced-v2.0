@@ -11,6 +11,7 @@ from urt.icosahedral_frustration import (
     dimensional_facet_of_frustration,
     six_facets_of_frustration,
     quasicrystal_realization,
+    dimensional_collapse_threshold,
     icosahedral_frustration_audit,
     icosahedral_frustration_audit_passes,
 )
@@ -205,3 +206,25 @@ class TestEndToEndAudit:
     def test_audit_includes_six_facets(self):
         a = icosahedral_frustration_audit()
         assert "six_facets" in a
+
+
+class TestDimensionalCollapseThreshold:
+    """The γ·φ ≈ 0.01998 dimensional-collapse threshold (v2.9.81)."""
+
+    def test_closed_form(self):
+        import math
+        phi = (1 + math.sqrt(5)) / 2
+        d = dimensional_collapse_threshold()
+        assert d["gamma_times_phi"] == pytest.approx((1 / 81) * phi, rel=1e-14)
+
+    def test_numerical_value(self):
+        d = dimensional_collapse_threshold()
+        assert 0.0199 < d["gamma_times_phi"] < 0.0201
+
+    def test_delta_star_ratio(self):
+        """δ★ / threshold ≈ 7.385."""
+        d = dimensional_collapse_threshold()
+        assert 7.3 < d["delta_star_over_threshold"] < 7.5
+
+    def test_audit_still_passes(self):
+        assert icosahedral_frustration_audit_passes()

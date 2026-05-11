@@ -2398,7 +2398,98 @@ from .baryon_asymmetry import (
     ETA_B_V9,
 )
 
-__version__ = "2.9.77"
+# ── v2.9.81 — gap-analysis import wave (2026-05-11) ───────────────────────
+# Modules added after deep audit of an external 2,487-block Cathedral
+# Colab archive.  Two upload claims were investigated and could NOT be
+# verified end-to-end; they are imported as honest failed-candidate
+# documentation (thruster patent prediction, frozen RKHS RH-certificate).
+# Eight working modules are imported as new infrastructure.
+from .precision_audit import (
+    cathedral_constants_mp,
+    integer_identities_hold,
+    cross_check_against_float64,
+    precision_audit_passes,
+    print_precision_report,
+)
+from .signal_filter import (
+    urt_delta,
+    classify_signal,
+    canonical_signal_audit,
+    signal_filter_audit_passes,
+    print_signal_filter_report,
+)
+from .constraint_engine import (
+    ConstraintState,
+    cathedral_targets,
+    residual as constraint_residual,
+    newton_solve,
+    mass_ladder_consistency,
+    constraint_engine_audit_passes,
+    print_constraint_engine_report,
+    TOL_UV, TOL_MID, TOL_IR,
+)
+from .riemann_weil import (
+    cathedral_laplacian,
+    prime_kernel_eigenvalues,
+    K4_A5_split,
+    A_cath,
+    weil_pole_term,
+    weil_gamma_term,
+    weil_prime_term,
+    cathedral_counterterm,
+    weil_quadratic,
+    cross_basis_certificate,
+    riemann_weil_audit_passes,
+    print_riemann_weil_report,
+)
+from .riemann_zero_solver import (
+    hardy_Z,
+    find_sign_change,
+    refine_zero,
+    first_n_zeros,
+    CANONICAL_ZEROS_FIRST_10,
+    riemann_zero_audit_passes,
+    print_riemann_zero_report,
+)
+from .lcft import (
+    K_BETA,
+    DIFFUSION_D,
+    lcft_evolve_1d,
+    lcft_evolve_2d,
+    fixed_point_relaxation_rate,
+    cathedral_lcft_summary,
+    lcft_audit_passes,
+    print_lcft_report,
+)
+from .plasma_pde import (
+    KAPPA_HW, ALPHA_HW, NU_HW,
+    compute_delta_HW,
+    hw_evolve,
+    plasma_pde_audit_passes,
+    print_plasma_pde_report,
+)
+from .lyapunov_spectrum import (
+    benettin_qr_spectrum,
+    kaplan_yorke_dimension,
+    lorenz_rhs, lorenz_jac,
+    rossler_rhs, rossler_jac,
+    lyapunov_audit_passes,
+    print_lyapunov_report,
+)
+from .thruster_cathedral import (
+    E_C_THRUSTER,
+    ALPHA_BETA,
+    KAPPA_THRUST,
+    PREFACTOR_PA,
+    cathedral_thrust_upload,
+    ExodusEED,
+    upload_claim_report,
+    thruster_claim_holds,
+    print_thruster_failure_report,
+)
+from .icosahedral_frustration import dimensional_collapse_threshold
+
+__version__ = "2.9.81"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3176,4 +3267,59 @@ __all__ = [
     "failed_attempts_study_audit",
     "failed_attempts_study_audit_passes",
     "print_failed_attempts_study_report",
+    # v2.9.81 — gap-analysis import wave
+    # precision_audit  — Decimal-80 cross-check of framework constants
+    "cathedral_constants_mp",
+    "integer_identities_hold",
+    "precision_audit_passes",
+    "print_precision_report",
+    # signal_filter    — deployable URT δ-classifier for time-series
+    "urt_delta",
+    "classify_signal",
+    "canonical_signal_audit",
+    "signal_filter_audit_passes",
+    # constraint_engine — multi-scale Newton + frozen mass-sector ladder
+    "ConstraintState",
+    "cathedral_targets",
+    "newton_solve",
+    "mass_ladder_consistency",
+    "constraint_engine_audit_passes",
+    # riemann_weil      — finite explicit-formula Cathedral discretisation
+    "weil_quadratic",
+    "cross_basis_certificate",
+    "K4_A5_split",
+    "A_cath",
+    "prime_kernel_eigenvalues",
+    "riemann_weil_audit_passes",
+    # riemann_zero_solver — Hardy-Z zero finder (mpmath)
+    "first_n_zeros",
+    "hardy_Z",
+    "CANONICAL_ZEROS_FIRST_10",
+    "riemann_zero_audit_passes",
+    # lcft             — Lytollis Chaos Field Theory PDE
+    "lcft_evolve_1d",
+    "lcft_evolve_2d",
+    "fixed_point_relaxation_rate",
+    "lcft_audit_passes",
+    "K_BETA",
+    "DIFFUSION_D",
+    # plasma_pde       — Hasegawa-Wakatani with URT controller
+    "hw_evolve",
+    "compute_delta_HW",
+    "plasma_pde_audit_passes",
+    # lyapunov_spectrum — Benettin+QR full spectrum + D_KY
+    "benettin_qr_spectrum",
+    "kaplan_yorke_dimension",
+    "lorenz_rhs",
+    "lorenz_jac",
+    "rossler_rhs",
+    "rossler_jac",
+    "lyapunov_audit_passes",
+    # thruster_cathedral — DOCUMENTED FAILED CANDIDATE (Exodus EED patent)
+    "cathedral_thrust_upload",
+    "ExodusEED",
+    "upload_claim_report",
+    "thruster_claim_holds",
+    # icosahedral_frustration  enhancement
+    "dimensional_collapse_threshold",
 ]
