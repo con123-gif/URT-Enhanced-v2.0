@@ -2354,6 +2354,20 @@ from .cathedral_compression import (
     print_cathedral_compression_report,
 )
 
+from .expression_uniqueness import (
+    FOUNDATIONAL_ATOMS,
+    HEADLINE_OBSERVABLES,
+    depth3_compounds,
+    find_within,
+    expression_complexity,
+    framework_relative_error,
+    best_alternative,
+    observable_uniqueness_row,
+    expression_uniqueness_report,
+    expression_uniqueness_audit_passes,
+    print_expression_uniqueness_report,
+)
+
 # v2.9.72 — null-hypothesis test (RETRACTED in v2.9.73):
 # This module is RETAINED FOR TRANSPARENCY but its result is meaningless.
 # The Cathedral integers are forced facts about the unique geometric
@@ -3291,6 +3305,12 @@ __all__ = [
     "registry_significance",
     "cathedral_compression_audit",
     "cathedral_compression_audit_passes",
+    "FOUNDATIONAL_ATOMS", "HEADLINE_OBSERVABLES",
+    "depth3_compounds", "find_within", "expression_complexity",
+    "framework_relative_error", "best_alternative",
+    "observable_uniqueness_row", "expression_uniqueness_report",
+    "expression_uniqueness_audit_passes",
+    "print_expression_uniqueness_report",
     "print_cathedral_compression_report",
     # v2.9.72 — null-hypothesis test (Cathedral vs random vocabularies — RETRACTED v2.9.73)
     "PDG_TARGETS",
