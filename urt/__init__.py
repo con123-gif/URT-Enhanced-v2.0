@@ -2514,7 +2514,30 @@ from .hydrodynamic_limit import (
     print_hydrodynamic_limit_report,
 )
 
-__version__ = "2.9.82"
+# ── v2.9.83 — sector unification (K = Z = ARF = L-sector) ──────────────────
+# Proves in code that the framework's eight K_4 ⊕ A_5 viewpoints
+# (group theory, conjugacy classes, irreps, Burnside, Z-phases,
+#  L_{G_13} spectrum, ARF residues, Cathedral counting) are
+# projections of ONE object: the 4 + 9 = 13 sector split.
+# Five cross-identities hold at machine precision.
+from .sector_unification import (
+    klein_4_group, klein_4_multiply, klein_4_is_klein,
+    A5_group_elements, A5_conjugacy_class_sizes, A5_irrep_dimensions,
+    Z4_phases, Z5_phases,
+    K4_ARF_residues, A5_ARF_residues,
+    L_G13_eigenvalues, K4_sector_eigenvalues, A5_sector_eigenvalues,
+    K4_cardinalities, A5_cardinalities,
+    cross_identity_VF_240,
+    cross_identity_N_13,
+    cross_identity_DfacV_72,
+    cross_identity_A5_Burnside,
+    cross_identity_cathedral_decomposition,
+    all_cross_identities,
+    sector_unification_audit_passes,
+    print_sector_unification_report,
+)
+
+__version__ = "2.9.83"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3360,4 +3383,19 @@ __all__ = [
     "laplacian_convergence_ratios",
     "hydrodynamic_limit_audit_passes",
     "print_hydrodynamic_limit_report",
+    # sector_unification (v2.9.83)
+    "klein_4_group", "klein_4_multiply", "klein_4_is_klein",
+    "A5_group_elements", "A5_conjugacy_class_sizes", "A5_irrep_dimensions",
+    "Z4_phases", "Z5_phases",
+    "K4_ARF_residues", "A5_ARF_residues",
+    "L_G13_eigenvalues", "K4_sector_eigenvalues", "A5_sector_eigenvalues",
+    "K4_cardinalities", "A5_cardinalities",
+    "cross_identity_VF_240",
+    "cross_identity_N_13",
+    "cross_identity_DfacV_72",
+    "cross_identity_A5_Burnside",
+    "cross_identity_cathedral_decomposition",
+    "all_cross_identities",
+    "sector_unification_audit_passes",
+    "print_sector_unification_report",
 ]

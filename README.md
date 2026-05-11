@@ -9,7 +9,7 @@
 **One number. Forced by geometry. Drives a dynamical flow that reproduces fundamental constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK
-**Version:** 2.9.82 | **Tests:** 7,995 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
+**Version:** 2.9.83 | **Tests:** 8,038 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
 
 ---
 
@@ -22,7 +22,7 @@ Newton's Cathedral is a **candidate mathematical theory**. It begins with a sing
   - a single Lagrangian **L = ½|δ̇|² − V(δ)** with δ★ as the unique stable fixed point
   - a single deterministic arc that takes a **random field on 13 sites → universe** with the right matter/antimatter asymmetry, fine-structure constant, proton mass, and inflationary spectrum.
 
-All of this is operational in code (`urt.cathedral_engine`) and verified in CI (7,995 tests, 0 xfail).
+All of this is operational in code (`urt.cathedral_engine`) and verified in CI (8,038 tests, 0 xfail).
 
 Since v2.9.39 the framework has matured along three structural layers:
 
@@ -235,7 +235,7 @@ The framework is **falsifiable**. If r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 
 ---
 
-## Module Map (v2.9.82 — 214 modules · 7,995 tests · 27 registered predictions)
+## Module Map (v2.9.83 — 215 modules · 8,038 tests · 27 registered predictions)
 
 ### Core Foundation
 | Module | Purpose |
@@ -388,7 +388,7 @@ git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
 cd URT-Enhanced-v2.0
 pip install -e .
 
-# Run all 7,995 tests (0 xfail)
+# Run all 8,038 tests (0 xfail)
 python -m pytest tests/ -q
 
 # Verify the first-principles forcing chain holds at machine precision
@@ -535,6 +535,7 @@ The following modules go beyond what the iron proof chain directly supports. The
 | v2.9.80 | 10 pure-math modules cherry-picked: **invariant theory**, **Freudenthal magic square**, **McKay extended Dynkin**, **Del Pezzo**, **derived categories**, **Grassmannian**, **operads**, **quantum groups**, **spectral sequences**, **affine Lie** | **7,907** |
 | v2.9.81 | **Gap-analysis import wave** (2026-05-11): after deep audit of an external 2,487-block Cathedral Colab archive, 8 working modules imported as new infrastructure (`urt/precision_audit.py` Decimal-80 verification, `urt/signal_filter.py` deployable URT δ-classifier, `urt/constraint_engine.py` multi-scale Newton, `urt/riemann_weil.py` finite Weil quadratic on G_{13}, `urt/riemann_zero_solver.py` Hardy-Z zero finder, `urt/lcft.py` Lytollis Chaos Field Theory PDE, `urt/plasma_pde.py` Hasegawa-Wakatani with URT controller, `urt/lyapunov_spectrum.py` full Benettin+QR Lyapunov spectrum) + γ·φ ≈ 0.01998 dimensional-collapse threshold added to `urt/icosahedral_frustration.py`.  **Two upload claims (Exodus EED patent thrust law, frozen RKHS RH-certificate) were investigated and found NOT to reproduce their advertised numbers when actually run — imported as honest failed-candidate documentation rather than as falsifiable predictions.**  One upload module (`urt/attractor_geometry.py` icosahedral recovery) was dropped entirely after it failed to reproduce the icosahedron's two-class angular structure. | **7,965** |
 | v2.9.82 | **Hydrodynamic-limit Cathedral-native chain** — `urt/hydrodynamic_limit.py` derives the chain from the discrete URT iteration on G_{13} to a covariant continuity equation `∂_μ j^μ = −K_β·(χ−δ★)` (exact at the fixed point) and a scalar-field perfect-fluid stress-energy `T^μν` from Noether on the Cathedral Lagrangian.  Eight independent CI checks all pass at machine ε (residuals 1.6e-17 to 6.5e-15; Laplacian convergence ratio 4.000).  Surfaces the closed form `V(δ_cl) = ½·Δ²·(1+δ_cl²) ≈ 3.17×10⁻⁶` — the classical-rail vacuum energy is set by the same Δ that controls η_B baryogenesis.  No outside attributions; the inflation/slow-roll bridge is documented as an open question (canonical slow-roll on Cathedral V doesn't reproduce the framework's n_s = 1−2/57, r = 12/57²). | **7,995** |
+| v2.9.83 | **Sector unification — K = Z = ARF = L-sector = ONE OBJECT.** `urt/sector_unification.py` proves in code that the framework's eight K_4 ⊕ A_5 viewpoints (group, conjugacy classes, irreps, Burnside, Z-phases, L_{G_13} spectrum, ARF residues, Cathedral counting) are eight encodings of the same Cathedral object. K_4 sector: cardinality 4 IDENTICAL across 6 of 7 viewpoints (literal unification). A_5 sector: invariants {60, 5, 5, 60, 5, 9, 4, 9} (structural unification). Five cross-identities verified at machine precision: \|K_4\|·\|A_5\| = V·F = 240, K_4_dim + A_5_dim = N = 13, tr(L) = D!·V = 72, Σ(A_5 irrep dim)² = \|A_5\| = 60 (Burnside), (D+1)+(D!+D) = N. **Reduces the framework's apparent complexity** — every K, Z, ARF, sector reference in the codebase points to the same object. | **8,038** |
 
 ---
 
@@ -545,7 +546,7 @@ The following modules go beyond what the iron proof chain directly supports. The
   author  = {Lytollis, Cornelius},
   title   = {Newton's Cathedral: A Candidate Mathematical Theory of the {\(\pi\)}-{\(\varphi\)}-e Flow on {\(G_{13}\)}},
   year    = {2026},
-  version = {2.9.82},
+  version = {2.9.83},
   url     = {https://github.com/con123-gif/URT-Enhanced-v2.0},
   note    = {Anchor-free at D=3: a single observed input (the cosmological
              constant ρ_Λ) plus the structural axiom K(D)=D+D² with K₄⨯A₅
