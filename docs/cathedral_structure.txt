@@ -763,7 +763,7 @@
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.83 — 215 modules · 8038 tests · 0 xfail)
+  COMPLETE MODULE MAP  (v2.9.83 — 217 modules · 8173 tests · 0 xfail)
 
   v2.9.83 wave (2026-05-11): added urt/sector_unification.py — proves
     in code that the framework's eight K_4 ⊕ A_5 viewpoints (group,
