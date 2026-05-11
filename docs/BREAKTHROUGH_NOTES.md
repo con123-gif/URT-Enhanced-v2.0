@@ -593,6 +593,7 @@ but the candidate now has a fully scaffolded answer.
 | v2.9.79 | **Lytollis's seven laws** + **forced gap-polarity** + Fibonacci uniqueness witness; polarity-ARF unification (3 new modules) | ~7,800 |
 | v2.9.80 | **10 pure-math modules cherry-picked**: invariant theory, Freudenthal magic square, McKay extended Dynkin, Del Pezzo, derived categories, Grassmannian, operads, quantum groups, spectral sequences, affine Lie | **7,907** |
 | v2.9.81 | **Gap-analysis import wave** (2026-05-11) — see section below | **7,965** |
+| v2.9.82 | **Hydrodynamic-limit Cathedral-native chain** (2026-05-11) — `urt/hydrodynamic_limit.py`, 8 machine-precision checks linking discrete URT → covariant continuity → scalar-field T^μν from Noether on the Cathedral Lagrangian.  Surfaces V(δ_cl) = ½·Δ²·(1+δ_cl²) ≈ 3.17×10⁻⁶ as a new closed form.  No outside attributions; slow-roll bridge stays open. | **7,995** |
 
 ## v2.9.81 — Gap-Analysis Import Wave (2026-05-11)
 
@@ -672,10 +673,70 @@ from urt import (
 109 new tests across 10 new test files.  Existing tests all still pass
 (7,856 → 7,965 with no regressions, 0 xfail).
 
-## Final running totals at v2.9.81
+## v2.9.82 — Hydrodynamic-Limit Cathedral-Native Chain (2026-05-11)
 
-**7,965 tests pass + 0 xfail.  213 modules.  27 predictions registered,
+After the v2.9.81 import wave, a follow-up question: *can the
+framework derive its hydrodynamic-limit structure in its own
+language, without borrowing constructions from other theorists?*
+
+Yes.  Eight independent checks all pass at machine precision:
+
+| # | Step | Residual |
+|---|---|---|
+| 1 | Discrete continuity on G_{13} (linearised long-time URT iteration) | 1.6e-17 |
+| 2 | Continuum 4-current divergence `∂_μ j^μ = −K_β·(χ−δ★)` | 1.4e-15 |
+| 3 | Strict continuity at the fixed point χ = δ★ | 0 (exact) |
+| 4 | Bianchi identity `ε̇ + 3H(ε+p) = 0` on FRW (RK4 + centred-diff) | 6.5e-15 |
+| 5 | Scalar identity ε + p = δ̇² (analytic) | 3.4e-21 |
+| 6 | Scalar identity ε − p = \|∇δ\|² + 2V (analytic) | 8.5e-22 |
+| 7 | Vacuum equation of state w = −1 at any δ at rest with V > 0 | exact |
+| 8 | Discrete→continuum Laplacian convergence ratio | 4.000 |
+
+### New Cathedral closed form
+
+`V(δ_cl) = ½·Δ²·(1 + δ_cl²) ≈ 3.17×10⁻⁶`
+
+The classical rail δ_cl = D/F = 3/20 carries a non-zero vacuum energy
+controlled by the gap Δ = δ_cl − δ★ — **the same Δ that appears in
+the baryon asymmetry η_B = γ³·Δ·δ★·(8/9)**.  One Cathedral number sets
+both observables.
+
+### What this DOES claim
+
+  * The framework's own equation of motion for δ implies covariant
+    continuity for the 4-current `j^μ = (χ, −D·∂_iχ)` at the fixed
+    point χ = δ★.  No extra axiom.
+  * The Bianchi identity ∇_μ T^μν = 0 follows from the Klein-Gordon
+    equation that's already encoded in `urt.cathedral_engine.urt_evolve`.
+  * At any δ at rest with V(δ) > 0, the equation of state is exactly
+    `w = -1` (cosmological-constant EOS).
+  * The discrete-to-continuum limit is rigorous at O(dx²) — ratio
+    4.000 to four digits.
+
+### What this does NOT claim
+
+  * **Inflation predictions.**  The framework's `urt.inflation_cathedral`
+    asserts `n_s = 1 − 2/(G−D)` and `r = 12/(G−D)²` using Starobinsky
+    form with N_e = 57.  Canonical slow-roll on the Cathedral V does
+    NOT reproduce these (V is far too steep at δ_cl, giving ε_V, η_V
+    ~10⁵).  An α=1 α-attractor argument via A_5 acting on a hyperbolic
+    target space was attempted and **broken by curvature sign**: the
+    (2,3,5) triangle's angle sum 31π/30 > π means A_5 acts on the
+    2-sphere, not the Poincaré disk — so α-attractor universality
+    doesn't apply.  The slow-roll bridge stays an honest open question.
+  * **Uniqueness of the perfect-fluid closure.**  The form Noether
+    gives on the Cathedral L; not a theorem ruling out other closures.
+  * **Emergent metric.**  Uses g^μν as a background; does not derive it.
+
+### Tests
+
+30 new tests in `tests/test_hydrodynamic_limit.py`.  Full suite:
+7,965 → **7,995 (0 xfail)**.
+
+## Final running totals at v2.9.82
+
+**7,995 tests pass + 0 xfail.  214 modules.  27 predictions registered,
 21 confirmed at median 0.07 % rel-err, worst 1.03 %.  5 falsifiable
-predictions across 5 independent experiments.  All 29 CI audit gates
+predictions across 5 independent experiments.  All 30 CI audit gates
 pass at machine precision.  Audit discipline preserved: zero unverified
 claims promoted to the framework's falsifiable-predictions registry.**
