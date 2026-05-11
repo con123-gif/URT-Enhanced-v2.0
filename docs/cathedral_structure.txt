@@ -763,7 +763,18 @@
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.82 — 214 modules · 7995 tests · 0 xfail)
+  COMPLETE MODULE MAP  (v2.9.83 — 215 modules · 8038 tests · 0 xfail)
+
+  v2.9.83 wave (2026-05-11): added urt/sector_unification.py — proves
+    in code that the framework's eight K_4 ⊕ A_5 viewpoints (group,
+    classes, irreps, Burnside, Z-phases, L_{G_13} spectrum, ARF
+    residues, Cathedral counting) are projections of ONE object.
+    K_4: cardinality 4 identical across 6 of 7 viewpoints.
+    A_5: invariants {60, 5, 5, 60, 5, 9, 4, 9} from same group.
+    Five cross-identities at machine precision: |K_4|·|A_5| = V·F =
+    240, K_4_dim+A_5_dim = N = 13, tr(L) = D!·V = 72, Σ(A_5 irrep
+    dim)² = 60, (D+1)+(D!+D) = N.
+
   v2.9.82 wave (2026-05-11): added urt/hydrodynamic_limit.py — Cathedral-
     native chain from discrete URT iteration on G_{13} to covariant
     continuity ∂_μ j^μ = 0 at the fixed point χ = δ★, plus scalar-field

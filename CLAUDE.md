@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.82 — Cathedral Framework
+# URT Enhanced v2.9.83 — Cathedral Framework
 
 ## Repository Overview
 
@@ -18,7 +18,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (7,995 tests, 0 xfail).
+and verified in CI (8,038 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -1222,6 +1222,31 @@ both baryon asymmetry and the pre-vacuum dark-energy scale.**
   * Emergent metric (this module USES `g^μν`; it does not derive it).
 
 CI gate: `from urt import hydrodynamic_limit_audit_passes; assert hydrodynamic_limit_audit_passes()`.
+
+### New Modules (v2.9.83 — Sector Unification: K = Z = ARF = L-sector = ONE OBJECT, 2026-05-11)
+
+The framework presents the K_4 ⊕ A_5 = 4 + 9 = 13 split through at
+least **eight separate viewpoints** scattered across modules: group
+theory (K_4 = Z_2×Z_2, A_5 = alt. group), conjugacy classes, irreps,
+Burnside, Z-channels (Z_4, Z_5 phases), L_{G_13} spectrum, ARF
+residues, Cathedral counting (D+1, D!+D).  Until now they sat as
+nominally-independent constructions tied together by the framework's
+prose.  This module **proves in code** that they are eight encodings
+of one object.
+
+| File | Domain |
+|------|--------|
+| `urt/sector_unification.py` | Explicit construction of K_4 (as Z_2×Z_2), A_5 (as 60 even permutations of 5 letters), Z_4/Z_5 phase channels, K_4/A_5 ARF residue dicts, L_{G_13} sector split.  Cardinality cross-table: K_4 gives **4 across 6 of 7 viewpoints** (literal unification), A_5 gives {60, 5, 5, 60, 5, 9, 4, 9} (structural unification — different invariants of the same group).  Five cross-identities verified at machine precision: \|K_4\|·\|A_5\| = V·F = 240, K_4_dim + A_5_dim = N = 13, tr(L) = D!·V = 72, Σ(A_5 irrep dim)² = \|A_5\| = 60 (Burnside), (D+1)+(D!+D) = N. |
+
+**Why this matters (framework reduction):** what previously read as
+"K_4 IS the visible sector AND Z_4 phases label its modes AND its ARF
+residues are d_4, d_64 AND the L_{G_13} K_4 block has 4 eigenvalues
+AND ..." is now a single object viewed through different invariants.
+The seven Cathedral integers organise into one K_4 ⊕ A_5 split; every
+appearance of {4, 9, 13, 60, 240, 72} in the framework is the SAME
+object measured by a different invariant.
+
+CI gate: `from urt import sector_unification_audit_passes; assert sector_unification_audit_passes()`.
 
 CI gates for the post-v2.9.48 wave:
 ```python
