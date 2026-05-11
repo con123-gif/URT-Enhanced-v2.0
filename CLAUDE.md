@@ -18,7 +18,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (8,038 tests, 0 xfail).
+and verified in CI (8,173 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -1516,7 +1516,7 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 6300 tests
+python -m pytest tests/ -q              # all 8,173 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
@@ -1799,12 +1799,13 @@ from urt import (
 
 # Universe-from-chaos in 5 lines (v2.9.38)
 import numpy as np
-from urt import urt_evolve, delta_star, Delta, gamma
+from urt import urt_evolve, DELTA_STAR, DELTA_CL
+gamma = 1/81
 x0 = np.random.uniform(0, 0.5, 13)        # 1. PURE CHAOS
 x_settled = urt_evolve(x0, steps=200)     # 2-3. URT FLOW → 13-shell, structure forms
 # rails: δ★ ≈ 0.147, δ_cl = 0.15          # 4. RAILS SPLIT
-# gap:   Δ ≈ 2.49e-3                      # 5. GAP FORMS
-eta_B = gamma**3 * Delta * delta_star * 8/9   # → 6.14e-10 (matter wins!)
+Delta = DELTA_CL - DELTA_STAR             # 5. GAP FORMS → ≈ 2.49e-3
+eta_B = gamma**3 * Delta * DELTA_STAR * 8/9   # → 6.14e-10 (matter wins!)
 
 # First-principles derivation (v2.9.39) — π, φ, e are forced, not chosen
 from urt import (
