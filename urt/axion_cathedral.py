@@ -224,7 +224,7 @@ def print_axion_report():
     print(f"  g_aγγ (Cathedral)      = {g:.4e} GeV⁻¹")
     print(f"    [cf. QCD: (α/2π)/f_a = {ALPHA_EM/(2*pi)/f_a:.4e} GeV⁻¹]")
     print(f"\nPrediction #2 — Secondary spectral line:")
-    print(f"  ν₂ = {nu2:.4f} GHz  (9.07 GHz)")
+    print(f"  ν₂ = {nu2:.4f} GHz  (δ★-dressed; manuscript 9.07 GHz uses a different derivation)")
     print(f"\nExperimental status:")
     print(f"  ADMX coverage: {status['ADMX_current_ueV'][0]}–{status['ADMX_current_ueV'][1]} μeV")
     print(f"  ADMX target:   {status['ADMX_target_ueV'][0]}–{status['ADMX_target_ueV'][1]} μeV")

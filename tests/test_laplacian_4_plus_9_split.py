@@ -135,7 +135,7 @@ class TestSpectralSumIdentities:
             prod *= e
         # Manually: 3²·5⁶·7²·9·13 = 9 · 15625 · 49 · 9 · 13 = 8.062·10⁸
         # τ(G) = prod / N is the number of spanning trees of the graph.
-        assert prod == pytest.approx(806_203_125.0, rel=1e-6)
+        assert prod == pytest.approx(806_203_125.0, rel=1e-12)
         # τ(G) = prod / N
         spanning_trees = prod / N
         # 806_203_125 / 13 ≈ 62_015_625 = 5^8·9 = 5⁸·D² ?
