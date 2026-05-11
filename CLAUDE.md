@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.77 — Cathedral Framework
+# URT Enhanced v2.9.80 — Cathedral Framework
 
 ## Repository Overview
 
@@ -18,7 +18,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (6,779 tests, 0 xfail).
+and verified in CI (7,907 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 

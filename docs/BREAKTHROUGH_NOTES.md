@@ -571,3 +571,31 @@ The framework is honest, internally consistent, and machine-tested
 end-to-end.  The empirical question — whether nature instantiates the
 icosahedral 13-shell in the way the dynamics predicts — remains open,
 but the candidate now has a fully scaffolded answer.
+
+
+---
+
+# Post-v2.9.67 wave (2026-05-10) — v2.9.68 → v2.9.80
+
+| Version | Headline | Tests |
+|---|---|---|
+| v2.9.68 | Documentation pass: `cathedral_structure.txt` extended; **NEW** `docs/V9_ANCHOR_FREE_CHAIN.md` | 7,378 |
+| v2.9.69 | `__all__` hygiene cleanup: removed 10 stale + 4 duplicate entries | 7,378 |
+| v2.9.70 | README brought current with v2.9.40 → v2.9.69 wave | 7,378 |
+| v2.9.71 | **Cathedral compression engine** quantifying numerology vs significance | 7,396 |
+| v2.9.72 | Null-hypothesis test (retracted in v2.9.73 as category error) | 7,413 |
+| v2.9.73 | Failed-attempts study + null-test retraction | 7,425 |
+| v2.9.74 | Worked through every failure: 0 open, 1 promoted to identity (matter-direction margin = π/D within 22 ppm) | 7,425 |
+| v2.9.75 | Comprehensive audit fixes — 4 parallel agents reported, defects fixed | ~7,500 |
+| v2.9.76 | Comprehensive cleanup — stripped dead functions, naming-drift renames | ~7,550 |
+| v2.9.77 | `pure-math` snapshot branch + single-branch `claude-work` workflow adopted | ~7,600 |
+| v2.9.78 | **Discrete BH thermodynamics + Ihara zeta on G_{13}** (2 new modules) | ~7,700 |
+| v2.9.79 | **Lytollis's seven laws** + **forced gap-polarity** + Fibonacci uniqueness witness; polarity-ARF unification (3 new modules) | ~7,800 |
+| v2.9.80 | **10 pure-math modules cherry-picked**: invariant theory, Freudenthal magic square, McKay extended Dynkin, Del Pezzo, derived categories, Grassmannian, operads, quantum groups, spectral sequences, affine Lie | **7,907** |
+
+## Final running totals at v2.9.80
+
+**7,907 tests pass + 0 xfail.  204 modules.  27 predictions registered,
+21 confirmed at median 0.07 % rel-err, worst 1.03 %.  5 falsifiable
+predictions across 5 independent experiments.  All 19 CI audit gates
+pass at machine precision.**
