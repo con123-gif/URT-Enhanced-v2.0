@@ -763,7 +763,16 @@
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.81 — 213 modules · 7965 tests · 0 xfail)
+  COMPLETE MODULE MAP  (v2.9.82 — 214 modules · 7995 tests · 0 xfail)
+  v2.9.82 wave (2026-05-11): added urt/hydrodynamic_limit.py — Cathedral-
+    native chain from discrete URT iteration on G_{13} to covariant
+    continuity ∂_μ j^μ = 0 at the fixed point χ = δ★, plus scalar-field
+    T^μν from Noether on the Cathedral Lagrangian.  8 CI checks at
+    machine precision; surfaces V(δ_cl) = ½·Δ²·(1+δ_cl²) ≈ 3.17e-6 as
+    a new closed form (Δ also controls η_B).  Slow-roll bridge to
+    inflation predictions remains an open question — see module docstring.
+
+  (Previous: v2.9.81 — 213 modules · 7965 tests)
   (this section was last regenerated at v2.9.39; the per-module list below
    is a snapshot from that version, but the totals are current.  See
    urt/__init__.py for the canonical exports list.

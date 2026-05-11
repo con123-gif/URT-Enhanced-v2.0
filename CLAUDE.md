@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.81 — Cathedral Framework
+# URT Enhanced v2.9.82 — Cathedral Framework
 
 ## Repository Overview
 
@@ -18,7 +18,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (7,965 tests, 0 xfail).
+and verified in CI (7,995 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -1186,6 +1186,42 @@ from urt import (
     icosahedral_frustration_audit_passes,  # incl. γ·φ threshold
 )
 ```
+
+### New Modules (v2.9.82 — Hydrodynamic-Limit Cathedral-Native Chain, 2026-05-11)
+
+An attempt to derive the framework's hydrodynamic-limit structure *in
+its own language* — no external authorities cited, every step built
+from primitives already in the framework + classical chain-rule /
+Noether arithmetic.  Result: eight machine-precision checks on the
+chain from the discrete URT iteration on G_{13} to a covariant
+continuity equation and a scalar-field stress-energy.
+
+| File | Domain |
+|------|--------|
+| `urt/hydrodynamic_limit.py` | Cathedral-native hydrodynamic-limit chain.  Verifies: (1) the linearised long-time URT iteration is a *discrete continuity equation* on G_{13} (residual 1.6e-17); (2) the continuum 4-current `j^μ = (χ, −D·∂_iχ)` has divergence `∂_μ j^μ = −K_β·(χ−δ★)` (residual 1.4e-15), vanishing exactly at the fixed point; (3) Bianchi identity `ε̇ + 3H(ε+p) = 0` holds on FRW (residual 6.5e-15) from the framework's *own* Klein-Gordon equation; (4) Noether stress-energy from `L = ½(∂δ)² − V(δ)` satisfies the scalar identities ε ± p analytically; (5) at any δ at rest with V > 0, `w = p/ε = −1` exactly (cosmological-constant EOS); (6) discrete-to-continuum limit converges at O(dx²) with ratio 4.000 to four digits. |
+
+**Surfaced Cathedral closed form:**
+
+```
+V(δ_cl) = ½·Δ²·(1 + δ_cl²) ≈ 3.17×10⁻⁶
+```
+
+The classical rail δ_cl = D/F = 3/20 carries a non-zero vacuum energy
+controlled by the same Δ = δ_cl − δ★ that appears in
+`η_B = γ³·Δ·δ★·(8/9)` (baryogenesis).  **One Cathedral number controls
+both baryon asymmetry and the pre-vacuum dark-energy scale.**
+
+**Honest scope** — the module DOES NOT claim:
+  * Inflation predictions.  `urt.inflation_cathedral` postulates the
+    Starobinsky form with N_e = G − D = 57.  Canonical slow-roll on
+    the Cathedral V does NOT reproduce those values (V is too steep at
+    δ_cl); the bridge from URT iteration on G_{13} to Starobinsky R²
+    gravity remains an open question.
+  * Uniqueness of the perfect-fluid closure (other Lagrangians give
+    other closures; this is just the form Noether forces on L).
+  * Emergent metric (this module USES `g^μν`; it does not derive it).
+
+CI gate: `from urt import hydrodynamic_limit_audit_passes; assert hydrodynamic_limit_audit_passes()`.
 
 CI gates for the post-v2.9.48 wave:
 ```python

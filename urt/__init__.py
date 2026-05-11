@@ -2489,7 +2489,32 @@ from .thruster_cathedral import (
 )
 from .icosahedral_frustration import dimensional_collapse_threshold
 
-__version__ = "2.9.81"
+# ── v2.9.82 — hydrodynamic-limit Cathedral-native chain (2026-05-11) ──────
+# Eight machine-precision results connecting the URT iteration on G_{13}
+# to a covariant continuity equation, scalar-field stress-energy from
+# Noether on the Cathedral Lagrangian, and the classical-rail vacuum
+# energy V(δ_cl) = ½·Δ²·(1+δ_cl²).  No outside attributions.  The
+# inflation-observables slow-roll bridge is documented as an OPEN
+# question — canonical slow-roll on the Cathedral V does not reproduce
+# the framework's existing n_s = 1−2/57, r = 12/57² (they remain a
+# Starobinsky-form postulate in `urt.inflation_cathedral`).
+from .hydrodynamic_limit import (
+    V_cathedral,
+    Vprime_cathedral,
+    discrete_continuity_residual_G13,
+    cathedral_4_current,
+    current_divergence_lcft,
+    noether_T_munu,
+    scalar_identities_residuals,
+    bianchi_residual_FRW,
+    vacuum_w_at_rest,
+    classical_rail_vacuum_energy,
+    laplacian_convergence_ratios,
+    hydrodynamic_limit_audit_passes,
+    print_hydrodynamic_limit_report,
+)
+
+__version__ = "2.9.82"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3322,4 +3347,17 @@ __all__ = [
     "thruster_claim_holds",
     # icosahedral_frustration  enhancement
     "dimensional_collapse_threshold",
+    # hydrodynamic_limit  (v2.9.82)
+    "V_cathedral", "Vprime_cathedral",
+    "discrete_continuity_residual_G13",
+    "cathedral_4_current",
+    "current_divergence_lcft",
+    "noether_T_munu",
+    "scalar_identities_residuals",
+    "bianchi_residual_FRW",
+    "vacuum_w_at_rest",
+    "classical_rail_vacuum_energy",
+    "laplacian_convergence_ratios",
+    "hydrodynamic_limit_audit_passes",
+    "print_hydrodynamic_limit_report",
 ]
