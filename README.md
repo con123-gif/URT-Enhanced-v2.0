@@ -9,7 +9,7 @@
 **One number. Forced by geometry. Drives a dynamical flow that reproduces fundamental constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK
-**Version:** 2.9.83 | **Tests:** 8,038 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
+**Version:** 2.9.83 | **Tests:** 8,105 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
 
 ---
 
@@ -22,7 +22,7 @@ Newton's Cathedral is a **candidate mathematical theory**. It begins with a sing
   - a single Lagrangian **L = ½|δ̇|² − V(δ)** with δ★ as the unique stable fixed point
   - a single deterministic arc that takes a **random field on 13 sites → universe** with the right matter/antimatter asymmetry, fine-structure constant, proton mass, and inflationary spectrum.
 
-All of this is operational in code (`urt.cathedral_engine`) and verified in CI (8,038 tests, 0 xfail).
+All of this is operational in code (`urt.cathedral_engine`) and verified in CI (8,105 tests, 0 xfail).
 
 Since v2.9.39 the framework has matured along three structural layers:
 
@@ -235,7 +235,7 @@ The framework is **falsifiable**. If r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 
 ---
 
-## Module Map (v2.9.83 — 215 modules · 8,038 tests · 27 registered predictions)
+## Module Map (v2.9.83 — 215 modules · 8,105 tests · 27 registered predictions)
 
 ### Core Foundation
 | Module | Purpose |
@@ -388,7 +388,7 @@ git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
 cd URT-Enhanced-v2.0
 pip install -e .
 
-# Run all 8,038 tests (0 xfail)
+# Run all 8,105 tests (0 xfail)
 python -m pytest tests/ -q
 
 # Verify the first-principles forcing chain holds at machine precision
