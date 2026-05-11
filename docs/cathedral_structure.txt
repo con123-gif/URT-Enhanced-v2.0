@@ -763,10 +763,23 @@
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.80 — 204 modules · 7907 tests · 0 xfail)
+  COMPLETE MODULE MAP  (v2.9.81 — 213 modules · 7965 tests · 0 xfail)
   (this section was last regenerated at v2.9.39; the per-module list below
    is a snapshot from that version, but the totals are current.  See
-   urt/__init__.py for the canonical exports list.)
+   urt/__init__.py for the canonical exports list.
+
+   v2.9.81 wave (2026-05-11) added 8 working modules + 1 enhancement:
+     precision_audit       — Decimal-80 cross-check of every constant
+     signal_filter         — deployable URT δ-classifier for time-series
+     constraint_engine     — multi-scale Newton (UV/MID/IR)
+     riemann_weil          — finite Weil quadratic on G_{13}
+     riemann_zero_solver   — Hardy-Z bracket refinement (mpmath)
+     lcft                  — Lytollis Chaos Field Theory PDE
+     plasma_pde            — 2D Hasegawa-Wakatani + URT controller
+     lyapunov_spectrum     — Benettin+QR + Kaplan-Yorke dimension
+     icosahedral_frustration  — extended with γ·φ ≈ 0.01998 threshold
+   plus 1 documented failed candidate:
+     thruster_cathedral    — Exodus EED patent claim does NOT verify.)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   CORE (foundation — read these first)

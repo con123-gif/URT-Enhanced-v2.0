@@ -283,27 +283,63 @@ def quasicrystal_realization() -> Dict[str, Any]:
     }
 
 
+def dimensional_collapse_threshold() -> Dict[str, Any]:
+    """
+    γ · φ  =  (1/81) · φ  ≈  0.01998  —  the dimensional-collapse threshold.
+
+    The Cathedral combination γ·φ — first surfaced from the upload's
+    D3 cortical-radar EEG analysis — does not appear elsewhere in the
+    framework, but it is the unique product of the two Cathedral
+    fingerprints of D = 3:
+
+       * γ = D⁻⁽ᴰ⁺¹⁾ = 1/81  (entropy / self-similarity scale)
+       * φ = (1+√5)/2        (A_5 self-similarity ratio)
+
+    Numerically: γ·φ ≈ 0.019975, of order δ★/7.4.  In any 3D
+    inertia-tensor proxy of "phase-space volume" (e.g. EEG Takens
+    embedding) the framework predicts dimensional collapse — the
+    icosahedral attractor degenerating to a limit cycle — exactly
+    when the eigen-volume drops below this threshold.
+
+    Promoted from urt/seizure-prediction inspection (D3 cortical radar,
+    upload archive, 2026-05-11).  Stand-alone Cathedral closed form.
+    """
+    val = gamma * phi
+    return {
+        "gamma_times_phi":          val,
+        "gamma":                    gamma,
+        "phi":                      phi,
+        "delta_star_over_threshold": DELTA_STAR / val,
+        "interpretation":           "dimensional-collapse threshold in 3D phase-volume",
+        "closed_form":              "γ · φ = (1/81) · (1+√5)/2",
+    }
+
+
 # ── End-to-end audit ────────────────────────────────────────────────────
 
 def icosahedral_frustration_audit() -> Dict[str, Any]:
     return {
-        "crystallographic_restriction": crystallographic_restriction_q(),
-        "gap_as_frustration_energy":    gap_as_frustration_energy(),
-        "dihedral_frustration_angle":   dihedral_frustration_angle(),
-        "four_facets":                  four_facets_of_frustration(),
-        "six_facets":                   six_facets_of_frustration(),
-        "quasicrystal_realization":     quasicrystal_realization(),
+        "crystallographic_restriction":   crystallographic_restriction_q(),
+        "gap_as_frustration_energy":      gap_as_frustration_energy(),
+        "dihedral_frustration_angle":     dihedral_frustration_angle(),
+        "four_facets":                    four_facets_of_frustration(),
+        "six_facets":                     six_facets_of_frustration(),
+        "quasicrystal_realization":       quasicrystal_realization(),
+        "dimensional_collapse_threshold": dimensional_collapse_threshold(),
     }
 
 
 def icosahedral_frustration_audit_passes() -> bool:
     a = icosahedral_frustration_audit()
+    th = a["dimensional_collapse_threshold"]
     return (
         a["crystallographic_restriction"]["first_forbidden_is_q"]
         and a["gap_as_frustration_energy"]["Delta_gap"] > 0
         and a["quasicrystal_realization"]["diffraction_is_2q"]
         and a["quasicrystal_realization"]["penrose_is_q"]
         and a["quasicrystal_realization"]["URT_pull_is_inverse_inflation"]
+        and 0.019 < th["gamma_times_phi"] < 0.021      # ≈ 0.01998
+        and 7.0 < th["delta_star_over_threshold"] < 8.0  # ≈ 7.39
     )
 
 
@@ -366,6 +402,7 @@ __all__ = [
     "dimensional_facet_of_frustration",
     "six_facets_of_frustration",
     "quasicrystal_realization",
+    "dimensional_collapse_threshold",
     "icosahedral_frustration_audit",
     "icosahedral_frustration_audit_passes",
     "print_icosahedral_frustration_report",

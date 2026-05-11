@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.80 — Cathedral Framework
+# URT Enhanced v2.9.81 — Cathedral Framework
 
 ## Repository Overview
 
@@ -18,7 +18,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (7,907 tests, 0 xfail).
+and verified in CI (7,965 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -1139,6 +1139,53 @@ The URT iteration `δ_{k+1} = δ_k − η·∇V(δ_k)` is the τ → ∞ over-da
 | File | Domain |
 |------|--------|
 | `urt/cathedral_lytollis_synthesis.py` | **The Cathedral framework and Lytollis's Law are the same theory at D = 3.** The seven Cathedral integers are the unique closed-form solution of Lytollis's necessary condition `δ = (D_KY−1)(τ−2)` evaluated at the spatial dimension D = 3. Five conditions jointly pick D = 3 uniquely: (a) admits q = D+2 = 5 fold rotational symmetry (icosahedral vertex axes), (b) FORBIDS q-fold periodic symmetry (crystallographic restriction), (c) A_(D+2) = A_5 is non-solvable (Jordan 1870 + Galois obstruction), (d) D² + D + 1 = N = 13 closure (Heron / icosahedral), (e) Lytollis κ-margin `1 − N/(2^q · π²)` is finite and positive. Three physics derivations cross-validate: 1/α(M_Z) = 127.955 (Lytollis) and 1/α(0) = 137 (Cathedral) connected by 2-loop RGE; Λ/M_Pl⁴ = (D+1)·γ^((D+1)^D) (Cathedral) ↔ 120 RG steps (Lytollis); δ_CP = 197° (Cathedral) ↔ √(m_i/m_j) hierarchy (Lytollis). The unification identity: **γ_URT = γ_Lytollis = D^(−(D+1)) = 1/81** — same constant, two derivations. |
+
+### New Modules (v2.9.81 — Gap-Analysis Import Wave, 2026-05-11)
+
+After deep audit of a 2,487-block external Cathedral Colab archive,
+8 working modules were imported as new framework infrastructure plus
+1 enhancement to `icosahedral_frustration`.  **Two upload claims were
+investigated and could NOT be verified end-to-end**, so they were
+imported only as honest failed-candidate documentation (no false
+falsifiable predictions are added):
+
+| File | Domain |
+|------|--------|
+| `urt/precision_audit.py` | **Decimal-80 verification harness** for every framework constant.  Single CI gate `precision_audit_passes()` checks that the float-64 values in `compute_all_constants()` agree with their Decimal-80 closed forms to better than 1e-12 relative error.  Integer identities (1/α=137, m_p/m_e=1836, δ_CP=197, N_e=57, γ=1/81) verified to hold **exactly** at any precision.  Closes the long-standing float-64 precision gap — previously all verification ran at machine epsilon ~2.2e-16, leaving room for accumulated rounding noise. |
+| `urt/signal_filter.py` | Deployable URT δ-classifier: takes any (T, D) time-series, estimates D_KY (autocorrelation `e⁻¹` crossing) and τ (variance slicing), returns δ = (D_KY−1)(τ−2) plus a three-bucket verdict (STABLE / FRAGILE / CHAOTIC) against the framework's two rails δ★ and δ_cl.  Constant signal → δ=0; Lorenz → δ≈0.69; empty input → NaN cleanly.  Complements `urt.lytollis_bounded_chaos` (which *validates* the law) by *shipping* the law for use on raw data. |
+| `urt/constraint_engine.py` | Multi-scale Newton solver with UV/MID/IR tolerance gates `γ²`, `γ³·2π`, `γ⁴` forced by the Cathedral hierarchy.  Frozen mass-sector ladder (`B=-11/6`, `A≈8.8845`, `C_mass≈4.4468`, `R_mass_pole≈-2.43`) cross-validated against `urt.shell_closure.C_MASS` closed form to 3.6 ppm — independent verification of the ARF closure via Newton from a different direction. |
+| `urt/riemann_weil.py` | **Finite Cathedral discretisation of the Weil explicit-formula quadratic** on G_{13}.  Computes the four-term Weil quadratic W[h] = pole + 2·Γ − prime + Cath_counterterm across Gaussian / cosine / Legendre test bases.  Uses a **manifestly-positive** Cathedral counterterm `A_Cath(u) = δ★·(1+(u/N)²)` (the upload's hand-tuned 7-coefficient polynomial certificate failed positive-definiteness when actually evaluated).  Infrastructure module — does NOT prove RH; provides the explicit-formula machinery the framework previously lacked. |
+| `urt/riemann_zero_solver.py` | mpmath Hardy-Z bracket-refinement zero finder.  Computes first n imaginary parts of ζ(½+it) to 1e-14 precision; verified against the canonical first 10 zeros (PDG/Odlyzko).  Used directly by `urt.prime_spectral` to verify the κ = t₁/D scaling against *computed* zero positions instead of hard-coded constants. |
+| `urt/lcft.py` | **Lytollis Chaos Field Theory PDE** `∂_t χ = −K_β·(χ − δ★) + D·∇²χ` with Cathedral-forced coefficients `K_β = 1/(8π²)`, `D = γ·π²/2`.  Continuum-limit field-theory realisation of the framework's discrete URT iteration on G_{13}; δ★ is the unique stable spatially-uniform fixed point.  Verified: random 1D / 2D initial conditions relax to χ ≡ δ★ within machine precision. |
+| `urt/plasma_pde.py` | 2D **Hasegawa-Wakatani drift-wave** solver with URT controller that nudges the stretch-vs-contraction balance toward δ★.  Closes the gap noted in `urt.plasma_cathedral` (which was purely algebraic).  CI gate pins numerical stability of the explicit-Euler scheme + responsiveness of the URT controller; L→H formation is a research question, not asserted in CI. |
+| `urt/lyapunov_spectrum.py` | **Full Benettin+QR Lyapunov spectrum** for any ODE flow, with **Kaplan-Yorke dimension** formula `D_KY = j + Σλ_i/|λ_{j+1}|`.  Lorenz spectrum: λ ≈ {0.899, 0.005, -14.57}, Σλ = -13.667 matches `-(σ+β+1)` exactly, D_KY = 2.062 matches published 2.0627.  Closes the gap that the existing `urt.metrics.lyapunov_rosenstein` (single-exponent proxy) couldn't fill — now the Lytollis Law's D_KY can be computed from first principles, not estimated. |
+| `urt/thruster_cathedral.py` | **DOCUMENTED FAILED CANDIDATE** — the upload claims its δ-field thrust formula matches US Patent 11,511,891 B2 (Exodus EED) to 7%.  When the formula is actually evaluated at the patent geometry it returns -10 / -62 mN (wrong sign, off by 100×) vs +237 / +421 mN measured.  The "7% match" was hardcoded in print statements, not what the formula computed.  Module imports the constants (E_c = π·φ·e·10⁶, αβ = π/(φ·e²), κ ≈ -1.3e-3) which ARE correct closed forms, but does NOT claim a falsifiable prediction.  CI test pins the failure state so the framework cannot silently regress.  See `urt.failed_attempts_study` for the framework's other documented failures. |
+| `urt/icosahedral_frustration.py` (extended) | New: `dimensional_collapse_threshold()` — exposes the closed form `γ·φ = (1/81)·(1+√5)/2 ≈ 0.019975`.  The unique product of the two D=3 fingerprints (entropy γ and A_5 self-similarity φ); δ★/(γφ) ≈ 7.385.  Surfaced from upload's D3 cortical-radar EEG analysis, but it's a stand-alone Cathedral closed form valid wherever a 3D phase-volume "dimensional collapse" is measured. |
+
+**One additional upload module was dropped during this wave**:
+`urt/attractor_geometry.py` (icosahedral recovery from URT iteration)
+was implemented and tested but did NOT actually recover an icosahedron
+on the unit sphere — the pairwise vertex angles spread roughly uniformly
+across [5°, 178°] with no clustering at the icosahedral 63°/116°.  The
+upload's claim of "empirical Platonic recovery" is not reproduced by
+the parameters as given.  Removed rather than imported broken.
+
+**CI gates for the v2.9.81 wave** (all pass at machine precision):
+
+```python
+from urt import (
+    precision_audit_passes,                # Decimal-80 verification
+    signal_filter_audit_passes,            # deployable URT classifier
+    constraint_engine_audit_passes,        # multi-scale Newton
+    riemann_weil_audit_passes,             # finite Weil infrastructure
+    riemann_zero_audit_passes,             # Hardy-Z first 5 zeros to 1e-8
+    lcft_audit_passes,                     # χ(x,t) PDE relaxation
+    plasma_pde_audit_passes,               # HW + URT controller stability
+    lyapunov_audit_passes,                 # Lorenz D_KY ≈ 2.062
+    thruster_claim_holds,                  # returns False (pinned failure)
+    icosahedral_frustration_audit_passes,  # incl. γ·φ threshold
+)
+```
 
 CI gates for the post-v2.9.48 wave:
 ```python
