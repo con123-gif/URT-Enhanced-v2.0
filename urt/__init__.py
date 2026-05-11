@@ -2368,6 +2368,16 @@ from .expression_uniqueness import (
     print_expression_uniqueness_report,
 )
 
+from .scale_band_analysis import (
+    nearest_compound_rel_err,
+    physical_observable_nearest_distances,
+    random_target_nearest_distances,
+    framework_chosen_distances,
+    scale_band_summary,
+    scale_band_audit_passes,
+    print_scale_band_report,
+)
+
 # v2.9.72 — null-hypothesis test (RETRACTED in v2.9.73):
 # This module is RETAINED FOR TRANSPARENCY but its result is meaningless.
 # The Cathedral integers are forced facts about the unique geometric
@@ -3311,6 +3321,10 @@ __all__ = [
     "observable_uniqueness_row", "expression_uniqueness_report",
     "expression_uniqueness_audit_passes",
     "print_expression_uniqueness_report",
+    "nearest_compound_rel_err", "physical_observable_nearest_distances",
+    "random_target_nearest_distances", "framework_chosen_distances",
+    "scale_band_summary", "scale_band_audit_passes",
+    "print_scale_band_report",
     "print_cathedral_compression_report",
     # v2.9.72 — null-hypothesis test (Cathedral vs random vocabularies — RETRACTED v2.9.73)
     "PDG_TARGETS",
