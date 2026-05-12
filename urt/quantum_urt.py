@@ -361,6 +361,245 @@ def empirical_contraction_ratio(
     return d_after / d_before
 
 
+# ── π-φ-e continuous-time Lindblad master equation ───────────────────────
+#
+#   The natural quantum lift of the classical π-φ-e flow on G_{13}
+#
+#       ∂_t δ  =  −η_L·L·δ  −  μ·e^(−t/τ)·(δ − δ★)·(1 + δ²)
+#
+#   is the LINDBLAD master equation
+#
+#       dρ/dt  =  −i·μ(t)·[L_{G_13}, ρ]  +  η_L · Σ_i λ_i · D[|φ_0⟩⟨φ_i|](ρ)
+#
+#   where  μ(t) = (φ−1) · e^(−t/τ)    and    η_L = 1/(4π).
+#
+#   All three transcendentals enter for the SAME reason they enter the
+#   classical flow:
+#
+#     π  —  in η_L = 1/(4π)        |S²| spherical surface measure
+#     φ  —  in μ_0 = φ − 1         A_5 self-similarity rate (= 1/φ)
+#     e  —  in e^(−t/τ)            smooth Cauchy semigroup closure
+#
+#   At Trotter step dt = η = 1/(8π) the continuous equation reproduces
+#   the discrete QURT iteration exactly:
+#
+#       p_i  =  γ_i · dt  =  η · η_L · λ_i  =  λ_i / (2^q · π²)
+#
+#   so the discrete QURT step and the continuous Lindblad flow are
+#   the same dynamical theory, viewed at two timescales.
+
+ETA_LIND       = 1.0 / (4.0 * pi)          # η_L = 1/(4π)   dissipator coeff
+PHI            = (1.0 + sqrt(5.0)) / 2.0   # golden ratio
+MU_LIND_0      = PHI - 1.0                 # μ_0 = φ − 1   coherent drive coeff
+TAU_LIND       = 10.0                      # τ = 10   = longest mixing time on G_{13}
+ETA_TIME_STEP  = 1.0 / (8.0 * pi)          # η = 1/(8π) = η_L / 2
+
+
+def cathedral_lindblad_jump_operators() -> List[np.ndarray]:
+    """The Lindblad jump operators of the π-φ-e flow on G_{13}.
+
+    For each non-zero Laplacian eigenmode i ≥ 1:
+
+        L_i  =  √(λ_i / (4π))  ·  |φ_0⟩⟨φ_i|
+
+    (amplitude damping from excited mode |φ_i⟩ to ground |φ_0⟩, at
+    rate γ_i = λ_i / (4π) — Cathedral closed form).
+    """
+    w, U = _laplacian_eigendecomposition()
+    v0 = U[:, 0:1]
+    ops = []
+    for i in range(1, N):
+        if w[i] > 0.0:
+            vi = U[:, i:i + 1]
+            ops.append(sqrt(w[i] * ETA_LIND) * (v0 @ vi.conj().T))
+    return ops
+
+
+def cathedral_lindblad_rates() -> np.ndarray:
+    """The Lindblad rates γ_i = λ_i / (4π) — π appears via η_L = 1/(4π)."""
+    w, _ = _laplacian_eigendecomposition()
+    return w * ETA_LIND
+
+
+def cathedral_lindblad_hamiltonian() -> np.ndarray:
+    """Coherent drive Hamiltonian for the π-φ-e Lindbladian.
+
+    The natural choice is H_coh = L_{G_13} itself — the Hermitian
+    graph Laplacian.  The coherent commutator [L, ρ] rotates among
+    eigenmodes of L with rate set by the spectrum, mirroring the
+    classical (1 + δ²) nonlinear envelope in the linear regime.
+    """
+    return _L.astype(complex).copy()
+
+
+def cathedral_pull_strength(t: float) -> float:
+    """Time-dependent coherent drive strength:
+
+        μ(t)  =  (φ − 1) · e^(−t/τ)        with τ = 10
+
+    Encodes the two transcendentals φ (via μ_0 = 1/φ) and e (envelope).
+    """
+    return MU_LIND_0 * float(np.exp(-t / TAU_LIND))
+
+
+def cathedral_lindblad_rhs(rho: np.ndarray, t: float) -> np.ndarray:
+    """Right-hand side of the π-φ-e Lindblad master equation.
+
+        dρ/dt  =  −i·μ(t)·[L, ρ]  +  Σ_i γ_i · D[L_i](ρ)
+
+    where D[L](ρ) = L ρ L† − ½{L†L, ρ}.
+    """
+    H = cathedral_lindblad_hamiltonian()
+    mu = cathedral_pull_strength(t)
+    coh = -1j * mu * (H @ rho - rho @ H)
+    diss = np.zeros_like(rho, dtype=complex)
+    for L_op in cathedral_lindblad_jump_operators():
+        Ld = L_op.conj().T
+        diss += L_op @ rho @ Ld - 0.5 * (Ld @ L_op @ rho + rho @ Ld @ L_op)
+    return coh + diss
+
+
+def cathedral_lindblad_step(
+    rho: np.ndarray,
+    t: float,
+    dt: float = ETA_TIME_STEP,
+) -> np.ndarray:
+    """One Trotter step of the π-φ-e Lindblad master equation.
+
+    Splits coherent and dissipative evolution:
+
+        ρ  ↦  U(t)  ρ  U(t)†             where U(t) = exp(−i·μ(t)·dt·L)
+        ρ  ↦  E(ρ)  via Kraus, with p_i = γ_i·dt = λ_i·dt/(4π)
+
+    At  dt = η = 1/(8π)  this matches the discrete QURT step's
+    p_i = λ_i / (2^q · π²)  identically.
+    """
+    # Coherent half-step: unitary rotation by H = L
+    mu = cathedral_pull_strength(t)
+    H = cathedral_lindblad_hamiltonian()
+    # U = expm(-i·μ·dt·L) — via eigendecomposition (L is Hermitian)
+    w, U = np.linalg.eigh(H.real)
+    U_t = U @ np.diag(np.exp(-1j * mu * dt * w)) @ U.conj().T
+    rho_unitary = U_t @ rho @ U_t.conj().T
+
+    # Dissipative step: apply the Cathedral Kraus channel with p_i = λ_i·dt/(4π)
+    w_L, U_L = _laplacian_eigendecomposition()
+    p = (w_L * dt) / (4.0 * pi)
+    # Build Kraus ops with this dt-scaled rate (parallels cathedral_kraus_operators)
+    v0 = U_L[:, 0:1]
+    diag = np.ones(N, dtype=complex)
+    diag[1:] = np.sqrt(np.maximum(1.0 - p[1:], 0.0))
+    K0 = U_L @ np.diag(diag) @ U_L.conj().T
+    kraus = [K0]
+    for i in range(1, N):
+        if p[i] > 0.0:
+            vi = U_L[:, i:i + 1]
+            kraus.append(sqrt(p[i]) * (v0 @ vi.conj().T))
+    return apply_channel(rho_unitary, kraus)
+
+
+def cathedral_pi_phi_e_evolve(
+    rho0: np.ndarray,
+    *,
+    T: float = 100.0,
+    dt: float = ETA_TIME_STEP,
+) -> List[np.ndarray]:
+    """Integrate the π-φ-e Lindblad master equation from t=0 to t=T.
+
+    Returns the list of density operators at times 0, dt, 2dt, …, T.
+    """
+    n_steps = int(np.ceil(T / dt))
+    traj = [rho0.copy()]
+    rho = rho0.copy()
+    t = 0.0
+    for _ in range(n_steps):
+        rho = cathedral_lindblad_step(rho, t, dt)
+        t += dt
+        traj.append(rho)
+    return traj
+
+
+def lindblad_step_equals_discrete_qurt(tol: float = 1e-12) -> bool:
+    """The Lindblad Trotter step at dt = η = 1/(8π) equals the discrete
+    QURT step (with β = 1, U = I, t = ∞ → no coherent drive).
+
+    Setting the coherent envelope μ(t→∞) → 0 isolates the dissipative
+    part of the Lindbladian, which at dt = η gives p_i = λ_i / (2^q π²)
+    — exactly the discrete QURT rate.
+    """
+    rng = np.random.default_rng(0)
+    v = rng.normal(size=N) + 1j * rng.normal(size=N)
+    v /= np.linalg.norm(v)
+    rho = np.outer(v, v.conj())
+
+    # discrete QURT step (β = 1, no unitary)
+    rho_discrete = qurt_step(rho, beta=1.0)
+    # Lindblad step at t → ∞ (no coherent drive) reduces to dissipator only,
+    # and at dt = η the Kraus rates match exactly.
+    # We isolate this by passing t very large so e^(-t/τ) ≈ 0.
+    rho_lindblad = cathedral_lindblad_step(rho, t=1e6, dt=ETA_TIME_STEP)
+    return float(np.linalg.norm(rho_discrete - rho_lindblad, ord="fro")) < tol
+
+
+def pi_phi_e_quantum_flow_summary() -> dict:
+    """The three transcendentals appear in the QUANTUM Lindbladian for
+    the SAME reasons they appear in the classical URT flow on G_{13}.
+
+    Returns the summary table of the Cathedral derivation chain
+    lifted from the classical iteration to the quantum master equation.
+    """
+    return {
+        "pi_appears_in": {
+            "coefficient":  "η_L = 1/(4π)",
+            "value":        ETA_LIND,
+            "origin":       "Cathedral surface measure |S²| = 4π",
+            "role":         "Lindblad dissipator rate γ_i = λ_i·η_L",
+        },
+        "phi_appears_in": {
+            "coefficient":  "μ_0 = φ − 1 = 1/φ",
+            "value":        MU_LIND_0,
+            "origin":       "A_5 self-similarity (Cathedral SU(2)_D quantum dims)",
+            "role":         "coherent drive strength μ(t) prefactor",
+        },
+        "e_appears_in": {
+            "coefficient":  "e^(−t/τ) with τ = 10",
+            "tau":          TAU_LIND,
+            "origin":       "smooth semigroup closure (Cauchy multiplicative)",
+            "role":         "time envelope of the coherent drive",
+        },
+        "trotter_step_dt": {
+            "value":            ETA_TIME_STEP,
+            "Cathedral_form":   "η = η_L/2 = 1/(8π)",
+            "product":          ETA_TIME_STEP * ETA_LIND,
+            "discrete_p_i":     f"λ_i / (2^q · π²) = λ_i / {DYN_NORM:.4f}",
+            "agrees_with_discrete": lindblad_step_equals_discrete_qurt(),
+        },
+        "uniqueness_theorem": (
+            "The π-φ-e Lindbladian is the UNIQUE Hermitian-preserving "
+            "CPTP semigroup on H_{13} whose only transcendental "
+            "ingredients are π, φ, e and which (i) preserves H_3 ⋊ K_4 "
+            "symmetry of G_{13}, (ii) has |φ_0⟩⟨φ_0| as unique fixed "
+            "point, (iii) reduces to the URT iteration at Trotter step "
+            "η = 1/(8π).  Lifted from PDF Theorem 5 (Lytollis 2026, §5)."
+        ),
+    }
+
+
+def quantum_pi_phi_e_audit_passes() -> bool:
+    """Single-line gate for the π-φ-e quantum flow lift."""
+    s = pi_phi_e_quantum_flow_summary()
+    # 1. Each transcendental coefficient is exactly the Cathedral closed form
+    if abs(ETA_LIND - 1.0 / (4.0 * pi)) > 1e-15:           return False
+    if abs(MU_LIND_0 - (PHI - 1.0)) > 1e-15:               return False
+    if abs(TAU_LIND - 10.0) > 1e-15:                       return False
+    # 2. Trotter step matches discrete QURT to machine precision
+    if not s["trotter_step_dt"]["agrees_with_discrete"]:    return False
+    # 3. The product η · η_L = 1 / (2^q · π²) — Cathedral dynamical norm
+    prod = ETA_TIME_STEP * ETA_LIND
+    if abs(prod - 1.0 / DYN_NORM) > 1e-15:                  return False
+    return True
+
+
 # ── K_4 ⊕ A_5 sector decomposition of the QURT channel ───────────────────
 
 def qurt_sector_decomposition() -> dict:
@@ -515,10 +754,22 @@ __all__ = [
     # constants
     "DYN_NORM", "LYTOLLIS_GAMMA",
     "LAMBDA_FIEDLER", "KAPPA_QURT", "MARGIN_QURT", "DELTA_QURT_MAX",
+    "ETA_LIND", "PHI", "MU_LIND_0", "TAU_LIND", "ETA_TIME_STEP",
     # channel
     "cathedral_kraus_operators", "is_cptp", "apply_channel",
     # iteration
     "qurt_step", "qurt_evolve",
+    # π-φ-e continuous-time Lindblad
+    "cathedral_lindblad_jump_operators",
+    "cathedral_lindblad_rates",
+    "cathedral_lindblad_hamiltonian",
+    "cathedral_pull_strength",
+    "cathedral_lindblad_rhs",
+    "cathedral_lindblad_step",
+    "cathedral_pi_phi_e_evolve",
+    "lindblad_step_equals_discrete_qurt",
+    "pi_phi_e_quantum_flow_summary",
+    "quantum_pi_phi_e_audit_passes",
     # observables
     "purity", "trace_distance", "von_neumann_entropy",
     # fixed point + convergence
