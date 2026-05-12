@@ -2538,6 +2538,60 @@ from .hydrodynamic_limit import (
     print_hydrodynamic_limit_report,
 )
 
+# ── v2.9.84 — Quantum URT (QURT): the natural quantum lift ─────────────────
+# ρ_{k+1} = E_β(U ρ_k U†), with E_β an amplitude-damping-to-ground-state
+# channel built in the G_{13} Laplacian eigenbasis with per-mode rate
+# p_i = β·λ_i/(2^q π²).  Closed-form Lytollis margin δ_max = D^(D+2)/(2^q π²)
+# and Fiedler-mode contraction κ = 1 − D/(2^q π²) — every factor a
+# Cathedral integer.  The same K_4 ⊕ A_5 = 4 + 9 = 13 split that organises
+# the classical URT iteration organises the QURT channel's contraction
+# budget (K_4 = coherent / slow; A_5 = exhaust / fast; tr(L|K_4) + tr(L|A_5)
+# = 72 = D!·V).
+#
+# Also includes the CONTINUOUS-TIME π-φ-e Lindblad lift:
+#     dρ/dt = -i·(φ-1)·e^(-t/τ)·[L_{G_13}, ρ] + (1/(4π))·Σ_i λ_i · D[|φ_0⟩⟨φ_i|](ρ)
+# Every transcendental π, φ, e appears for the SAME forcing reason as in
+# the classical URT flow.  Trotter step at dt = η = 1/(8π) reduces exactly
+# to the discrete QURT iteration — discrete and continuous are one theory.
+from .quantum_urt import (
+    DYN_NORM as QURT_DYN_NORM,
+    LYTOLLIS_GAMMA as QURT_GAMMA,
+    LAMBDA_FIEDLER as QURT_LAMBDA_FIEDLER,
+    KAPPA_QURT, MARGIN_QURT, DELTA_QURT_MAX,
+    ETA_LIND, MU_LIND_0, TAU_LIND, ETA_TIME_STEP,
+    cathedral_kraus_operators, is_cptp, apply_channel,
+    qurt_step, qurt_evolve,
+    cathedral_lindblad_jump_operators, cathedral_lindblad_rates,
+    cathedral_lindblad_hamiltonian, cathedral_pull_strength,
+    cathedral_lindblad_rhs, cathedral_lindblad_step,
+    cathedral_pi_phi_e_evolve,
+    lindblad_step_equals_discrete_qurt,
+    pi_phi_e_quantum_flow_summary,
+    quantum_pi_phi_e_audit_passes,
+    purity as qurt_purity,
+    trace_distance as qurt_trace_distance,
+    von_neumann_entropy as qurt_von_neumann_entropy,
+    qurt_fixed_point, converges_to_fixed_point,
+    empirical_contraction_ratio,
+    exponential_convergence_rate,
+    lytollis_delta_quantum, qurt_contraction_margin,
+    qurt_sector_decomposition,
+    quantum_urt_audit, quantum_urt_audit_passes,
+    print_quantum_urt_report,
+)
+# QURT chaos control — bounded quantum chaos via the Cathedral backbone.
+# Closed-form λ_L_max = D/(2^(q+1) π²) ≈ 0.00475 per step; scrambling time
+# τ ≈ 2·2^q·π²/D ≈ 210 steps.  Haar-random + kicked-top demos pass.
+from .qurt_chaos_control import (
+    qurt_lyapunov_bound, qurt_scrambling_time,
+    haar_random_unitary, kicked_top_unitary,
+    controlled_chaos_evolution, chaos_contraction_rate,
+    cauchy_convergence, otoc_bound_with_qurt,
+    qurt_chaos_audit, qurt_chaos_audit_passes,
+    print_qurt_chaos_report,
+)
+
+
 # ── v2.9.83 — sector unification (K = Z = ARF = L-sector) ──────────────────
 # Proves in code that the framework's eight K_4 ⊕ A_5 viewpoints
 # (group theory, conjugacy classes, irreps, Burnside, Z-phases,
@@ -2561,7 +2615,7 @@ from .sector_unification import (
     print_sector_unification_report,
 )
 
-__version__ = "2.9.83"
+__version__ = "2.9.84"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3432,4 +3486,32 @@ __all__ = [
     "all_cross_identities",
     "sector_unification_audit_passes",
     "print_sector_unification_report",
+    # quantum_urt (v2.9.84) — the natural quantum lift of URT × Lytollis
+    "QURT_DYN_NORM", "QURT_GAMMA", "QURT_LAMBDA_FIEDLER",
+    "KAPPA_QURT", "MARGIN_QURT", "DELTA_QURT_MAX",
+    "ETA_LIND", "MU_LIND_0", "TAU_LIND", "ETA_TIME_STEP",
+    "cathedral_kraus_operators", "is_cptp", "apply_channel",
+    "qurt_step", "qurt_evolve",
+    "cathedral_lindblad_jump_operators", "cathedral_lindblad_rates",
+    "cathedral_lindblad_hamiltonian", "cathedral_pull_strength",
+    "cathedral_lindblad_rhs", "cathedral_lindblad_step",
+    "cathedral_pi_phi_e_evolve",
+    "lindblad_step_equals_discrete_qurt",
+    "pi_phi_e_quantum_flow_summary",
+    "quantum_pi_phi_e_audit_passes",
+    "qurt_purity", "qurt_trace_distance", "qurt_von_neumann_entropy",
+    "qurt_fixed_point", "converges_to_fixed_point",
+    "empirical_contraction_ratio",
+    "exponential_convergence_rate",
+    "lytollis_delta_quantum", "qurt_contraction_margin",
+    "qurt_sector_decomposition",
+    "quantum_urt_audit", "quantum_urt_audit_passes",
+    "print_quantum_urt_report",
+    # qurt_chaos_control (v2.9.84) — bounded quantum chaos via Cathedral backbone
+    "qurt_lyapunov_bound", "qurt_scrambling_time",
+    "haar_random_unitary", "kicked_top_unitary",
+    "controlled_chaos_evolution", "chaos_contraction_rate",
+    "cauchy_convergence", "otoc_bound_with_qurt",
+    "qurt_chaos_audit", "qurt_chaos_audit_passes",
+    "print_qurt_chaos_report",
 ]
