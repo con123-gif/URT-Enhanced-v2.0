@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.84 — Cathedral Framework
+# URT Enhanced v2.9.85 — Cathedral Framework
 
 ## Repository Overview
 
@@ -1377,6 +1377,35 @@ The framework's "unique theory of bounded chaos" claim (PDF §5) now has
 a quantum counterpart that is internally consistent and falsifiable on
 real hardware via the OTOC ↔ δ_max bound.
 
+### New Modules (v2.9.85 — Tesla 3-6-9 in Cathedral form)
+
+The numbers `{3, 6, 9}` are read inside the framework as `{D, D!, D²}` —
+the three canonical functions of `D = 3`.  The module collects 13
+closed-form identities and one uniqueness theorem.
+
+| File | Domain |
+|---|---|
+| `urt/tesla_369_cathedral.py` | Tesla triplet `{3, 6, 9} = {D, D!, D²}`.  Pairwise sums (`3+6=D²`, `3+9=V`, `6+9=D·q` = magic square constant).  Bilinear compounds — including the headline **`3 + 6·9 = G − D = N_e_efolds = 57`** which gives `n_s = 1 − 2/(3+6·9) = 55/57 ≈ 0.9649` (Planck 2018 spectral index).  Cube sum `D³+(D!)³+(D²)³ = V/γ`; product `D·D!·D² = 2/γ`; sum-of-squares `D²·(N+1) = D² · #Bravais`.  Triangular extension `T_3+T_6+T_9 = D!·V = tr(L_{G_13}) = 72`.  Pentagonal extension `P_3+P_6+P_9 = D·G = 180`.  D-power tower `{D¹,D²,D³,D⁴} = {D, D², D^D, 1/γ} = {3,9,27,81}` with `D!=6` as the unique non-power Cathedral integer between `D` and `D²`.  Spectral reading on `L_{G_13}`: `3 = Fiedler eigenvalue λ_2`, `6 = D! = mult(λ=q)`, `9 = rank-1 boundary eigenvalue`.  γ-ladder intersection: `{D, D²}` are two of the five exponents `{3, 5, 9, 64, −7}`.  Uniqueness theorem: `{D, D!, D²}` is an AP iff `T_D = D!`, which holds only at `D ∈ {1, 3}` — D = 3 is the unique non-trivial dimension where the Tesla triplet is an AP. |
+
+**Headline novelty (the new "Tesla bilinear")**:
+
+```
+N_e_efolds  =  G − D  =  3 + 6·9  =  57
+n_s         =  1 − 2/(3 + 6·9)    =  55/57  ≈  0.9649    (Planck 2018)
+```
+
+The inflation e-fold count is a Tesla-bilinear `D + D!·D²`.  Two further
+bilinear surprises: `3·6 + 9 = D^D = 27` (spherical-harmonics dim Y_N)
+and `(3 + 9)·6 = D!·V = 72` (Laplacian trace) — three Cathedral
+invariants are Tesla bilinears.
+
+CI gate:
+
+```python
+from urt import tesla_369_audit_passes
+assert tesla_369_audit_passes()
+```
+
 ---
 
 CI gates for the post-v2.9.48 wave:
@@ -1393,6 +1422,7 @@ from urt import (
     quantum_urt_audit_passes,              # v2.9.84
     quantum_pi_phi_e_audit_passes,         # v2.9.84
     qurt_chaos_audit_passes,               # v2.9.84
+    tesla_369_audit_passes,                # v2.9.85
 )
 assert all([
     urt_algorithm_audit_passes(),          cathedral_sectors_audit_passes(),
@@ -1400,7 +1430,7 @@ assert all([
     icosahedral_frustration_audit_passes(),sector_ratio_audit_passes(),
     self_reference_audit_passes(),         chaos_and_flow_audit_passes(),
     quantum_urt_audit_passes(),            quantum_pi_phi_e_audit_passes(),
-    qurt_chaos_audit_passes(),
+    qurt_chaos_audit_passes(),             tesla_369_audit_passes(),
 ])
 ```
 

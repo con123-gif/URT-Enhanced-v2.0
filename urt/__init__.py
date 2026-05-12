@@ -2591,6 +2591,32 @@ from .qurt_chaos_control import (
     print_qurt_chaos_report,
 )
 
+# ── v2.9.85 — Tesla 3-6-9 in Cathedral form ────────────────────────────────
+# Reads {3, 6, 9} as {D, D!, D²} and collects 13 closed-form Cathedral
+# identities plus one uniqueness theorem (T_D = D! ⟺ D ∈ {1, 3}).
+# Headline: N_e_efolds = G − D = 3 + 6·9 = 57, so the Planck spectral
+# index n_s = 1 − 2/(3 + 6·9) = 55/57 ≈ 0.9649 is a Tesla bilinear.
+from .tesla_369_cathedral import (
+    GAMMA as TESLA_GAMMA,
+    TESLA_3, TESLA_6, TESLA_9,
+    tesla_triplet_cathedral,
+    pairwise_compounds as tesla_pairwise_compounds,
+    higher_power_sums as tesla_higher_power_sums,
+    bilinear_compounds as tesla_bilinear_compounds,
+    triangular_extension as tesla_triangular_extension,
+    pentagonal_extension as tesla_pentagonal_extension,
+    d_power_tower as tesla_d_power_tower,
+    spectral_reading as tesla_spectral_reading,
+    gamma_ladder_intersection as tesla_gamma_ladder_intersection,
+    digital_root_closure as tesla_digital_root_closure,
+    ap_uniqueness_table,
+    ap_uniqueness_holds,
+    n_s_from_tesla_bilinear,
+    all_tesla_369_identities,
+    tesla_369_audit_passes,
+    print_tesla_369_report,
+)
+
 
 # ── v2.9.83 — sector unification (K = Z = ARF = L-sector) ──────────────────
 # Proves in code that the framework's eight K_4 ⊕ A_5 viewpoints
@@ -3514,4 +3540,21 @@ __all__ = [
     "cauchy_convergence", "otoc_bound_with_qurt",
     "qurt_chaos_audit", "qurt_chaos_audit_passes",
     "print_qurt_chaos_report",
+    # tesla_369_cathedral (v2.9.85) — Tesla 3-6-9 as {D, D!, D²}
+    "TESLA_GAMMA", "TESLA_3", "TESLA_6", "TESLA_9",
+    "tesla_triplet_cathedral",
+    "tesla_pairwise_compounds",
+    "tesla_higher_power_sums",
+    "tesla_bilinear_compounds",
+    "tesla_triangular_extension",
+    "tesla_pentagonal_extension",
+    "tesla_d_power_tower",
+    "tesla_spectral_reading",
+    "tesla_gamma_ladder_intersection",
+    "tesla_digital_root_closure",
+    "ap_uniqueness_table", "ap_uniqueness_holds",
+    "n_s_from_tesla_bilinear",
+    "all_tesla_369_identities",
+    "tesla_369_audit_passes",
+    "print_tesla_369_report",
 ]
