@@ -2633,6 +2633,27 @@ from .cone_icosahedron import (
     print_cone_icosahedron_report,
 )
 
+# ── v2.9.86 — BT8g Cathedral closures ─────────────────────────────────────
+# Two independent self-referential closures of the BT8g bimetric sector:
+#   𝒦·η = D!     (coupling × susceptibility product)
+#   c₁/c₂ = -δ★  (β-function fixed-point ratio)
+# All locked-summary identities verified at 50+ digit precision.  Derivation
+# credit: James Lockwood (mathematician, 2026, private communication).
+from .bt8g_cathedral import (
+    ETA_G13, K_G13_PREFACTOR, BETA_SLOPE_COEFF,
+    eta_g13_cathedral_factorisation,
+    k_g13_cathedral_factorisation,
+    k_eta_product,
+    half_k_eta_potential_coefficient,
+    c1_c2_ratio_is_minus_dstar,
+    beta_slope_cathedral_factorisation,
+    dstar_three_forms,
+    quadratic_potential_at_dstar,
+    all_bt8g_closures,
+    bt8g_cathedral_audit_passes,
+    print_bt8g_cathedral_report,
+)
+
 
 # ── v2.9.83 — sector unification (K = Z = ARF = L-sector) ──────────────────
 # Proves in code that the framework's eight K_4 ⊕ A_5 viewpoints
@@ -3583,4 +3604,17 @@ __all__ = [
     "kirchhoff_index", "average_pairwise_resistance",
     "cone_icosahedron_audit", "cone_icosahedron_audit_passes",
     "print_cone_icosahedron_report",
+    # bt8g_cathedral (v2.9.86) — BT8g locked-summary identities (Lockwood 2026)
+    "ETA_G13", "K_G13_PREFACTOR", "BETA_SLOPE_COEFF",
+    "eta_g13_cathedral_factorisation",
+    "k_g13_cathedral_factorisation",
+    "k_eta_product",
+    "half_k_eta_potential_coefficient",
+    "c1_c2_ratio_is_minus_dstar",
+    "beta_slope_cathedral_factorisation",
+    "dstar_three_forms",
+    "quadratic_potential_at_dstar",
+    "all_bt8g_closures",
+    "bt8g_cathedral_audit_passes",
+    "print_bt8g_cathedral_report",
 ]
