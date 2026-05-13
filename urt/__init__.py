@@ -2617,6 +2617,22 @@ from .tesla_369_cathedral import (
     print_tesla_369_report,
 )
 
+# ── v2.9.86 — Cone(I_12) actual graph Laplacian ───────────────────────────
+# Rigorous graph-Laplacian construction of the centered icosahedral graph.
+# Spectral content (η = 5508/2821, spec = {0, (6−√5)³, 7⁵, (6+√5)³, 13},
+# trace = 84) due to James Lockwood (2026, private communication).
+from .cone_icosahedron import (
+    icosahedron_adjacency, cone_adjacency, cone_laplacian, cone_edge_count,
+    cone_spectrum_numerical, cone_spectrum_closed_form,
+    spectrum_matches_closed_form,
+    eta_g13_symbolic,
+    eta_g13_cathedral_factorisation as cone_eta_factorisation,
+    eta_numerical, numerical_symbolic_agreement,
+    kirchhoff_index, average_pairwise_resistance,
+    cone_icosahedron_audit, cone_icosahedron_audit_passes,
+    print_cone_icosahedron_report,
+)
+
 
 # ── v2.9.83 — sector unification (K = Z = ARF = L-sector) ──────────────────
 # Proves in code that the framework's eight K_4 ⊕ A_5 viewpoints
@@ -3557,4 +3573,14 @@ __all__ = [
     "all_tesla_369_identities",
     "tesla_369_audit_passes",
     "print_tesla_369_report",
+    # cone_icosahedron (v2.9.86) — actual graph Laplacian (Lockwood 2026)
+    "icosahedron_adjacency", "cone_adjacency", "cone_laplacian",
+    "cone_edge_count",
+    "cone_spectrum_numerical", "cone_spectrum_closed_form",
+    "spectrum_matches_closed_form",
+    "eta_g13_symbolic", "cone_eta_factorisation",
+    "eta_numerical", "numerical_symbolic_agreement",
+    "kirchhoff_index", "average_pairwise_resistance",
+    "cone_icosahedron_audit", "cone_icosahedron_audit_passes",
+    "print_cone_icosahedron_report",
 ]
