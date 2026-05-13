@@ -608,7 +608,7 @@ The following modules go beyond what the iron proof chain directly supports. The
   author  = {Lytollis, Cornelius},
   title   = {Newton's Cathedral: A Candidate Mathematical Theory of the {\(\pi\)}-{\(\varphi\)}-e Flow on {\(G_{13}\)}},
   year    = {2026},
-  version = {2.9.83},
+  version = {2.9.86},
   url     = {https://github.com/con123-gif/URT-Enhanced-v2.0},
   note    = {Anchor-free at D=3: a single observed input (the cosmological
              constant ρ_Λ) plus the structural axiom K(D)=D+D² with K₄⨯A₅
@@ -621,6 +621,18 @@ The following modules go beyond what the iron proof chain directly supports. The
              that may lie underneath one.}
 }
 ```
+
+### Collaborators and external contributions
+
+- **James Lockwood** (mathematician, 2026) — derived the BT8g
+  spectral / coupling sector on Cone(I_12): the actual graph Laplacian
+  spectrum `{0, (6−√5)³, 7⁵, (6+√5)³, 13}` (trace 84), the inverse-
+  Laplacian trace `η_{G_13} = Tr'(L^{−1}) = 5508/2821`, the BT8g
+  coupling prefactor `𝒦_{G_13} = (2821/918)·m²/κ²`, and the reduced
+  quadratic normal form `V_eff^{(2)}(δ) = ½·𝒦·η·(δ−δ★)²`.  Surfaced
+  as Cathedral closures in `urt.bt8g_cathedral` and
+  `urt.cone_icosahedron` (v2.9.86): `𝒦·η = D!` (coupling × susceptibility
+  product) and `c₁/c₂ = −δ★` (β-function fixed-point ratio).
 
 ---
 

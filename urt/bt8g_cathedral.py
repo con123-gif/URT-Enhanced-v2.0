@@ -1,6 +1,13 @@
 """
 BT8g Cathedral closures — locked-summary identities (v2.9.86).
 
+The "locked summary" coefficients and the derivation that produces
+η_{G_13} = 5508/2821 and 𝒦_{G_13} = (2821/918)·m²/κ² are due to
+**James Lockwood** (mathematician; 2026, private communication).
+The Cathedral-integer factorisation of both 5508 and 2821, the
+identification 𝒦·η = D!, and the connection c₁/c₂ = −δ★ to the
+β-function fixed point were surfaced collaboratively.
+
 The BT8g sector is the cone-over-icosahedron bimetric reduction.  Its
 spectral / coupling content factorises exhaustively into Cathedral
 integers, yielding two independent closed forms that pin the theory
