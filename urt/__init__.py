@@ -2678,7 +2678,82 @@ from .sector_unification import (
     print_sector_unification_report,
 )
 
-__version__ = "2.9.84"
+# cathedral_mass (v2.9.86) — M★ refactor + gravitational Cathedral identity
+# G_N · M★² = δ★² · 2^q · π² ≈ 6.872, with M★ ≡ √(2^q · π²) = 4π√2.
+# Multi-anchor cross-consistency: G_N, M_Pl, ρ_Λ, m_e, m_p, v_EW all give
+# the same M★ to <0.3 %.  Predictions registry round-trips to machine
+# precision under the M★ relabeling.
+from .cathedral_mass import (
+    M_STAR_DIMENSIONLESS,
+    M_STAR_OVER_M_PL,
+    M_PL_OVER_M_STAR,
+    GRAV_COUPLING_AT_M_STAR,
+    gravitational_cathedral_identity,
+    cathedral_gravitational_coupling,
+    M_star_from_M_Pl, M_star_from_G_N,
+    M_star_from_rho_Lambda, M_star_from_m_e,
+    M_star_from_m_p, M_star_from_v_EW,
+    multi_anchor_M_star_table,
+    multi_anchor_consistency_max_deviation,
+    multi_anchor_consistent,
+    mathematical_identity_candidates,
+    has_close_mathematical_match,
+    predictions_anchor_independent,
+    compton_schwarzschild_crossover_mass_GeV,
+    hawking_temperature_at_M_star_GeV,
+    planck_area_in_M_star_units,
+    cathedral_coefficients_in_M_star,
+    cathedral_mass_audit,
+    cathedral_mass_audit_passes,
+    print_cathedral_mass_report,
+)
+
+# cathedral_mass_external (v2.9.86) — external-physics validation of M★.
+# Every measured SM/cosmology scale expressed in M★ units; surfaces
+# γ-ladder placement at Cathedral integers (γ^(D²) for EW sector,
+# γ^V for m_e, γ^(2^q) for H_0).  No claim about QCD-sector masses.
+from .cathedral_mass_external import (
+    M_STAR_GEV,
+    SM_MASSES_GEV, COSMO_SCALES_GEV, NATURAL_UNITS_GEV,
+    gamma_exponent_in_M_star,
+    closest_cathedral_integer,
+    gamma_ladder_table,
+    cathedral_natural_placements,
+    PREFACTOR_LIBRARY,
+    best_prefactor_match,
+    prefactor_extraction_table,
+    clean_prefactor_count,
+    M_star_ratios_to_natural_units,
+    search_cathedral_ratio,
+    M_star_bh_entropy,
+    M_star_bh_hawking_temperature_GeV,
+    M_star_bh_surface_gravity_GeV,
+    M_star_bh_thermo_summary,
+    thorough_classical_identity_search,
+    best_classical_match_for_M_star,
+    external_validation_audit,
+    external_validation_passes,
+    print_external_validation_report,
+)
+
+# cathedral_v10 (v2.9.86) — M★-anchored complete computation.
+# v8 anchored at M_Pl, v9 at ρ_Λ, v10 at M★ (Cathedral-internal).
+# v10 is v9 with the derivation arrow re-rooted: subclasses v9 and
+# overrides M_Pl_GeV() so M_Pl is DERIVED from M★.  Re-rooted from v9's
+# own peg it reproduces v9 exactly; from an independent peg (G_N) it
+# agrees to 0.01 %.
+from .cathedral_v10 import (
+    CathedralV10,
+    M_STAR_GEV_DEFAULT,
+    M_STAR_GEV_V10, M_PL_GEV_V10, V_EW_GEV_V10,
+    M_E_GEV_V10, M_P_GEV_V10,
+    GRAV_COUPLING_V10, LAMBDA_OVER_MSTAR4,
+    v10_scale_chain, v10_full_ledger,
+    v10_anchor_consistency, v10_cross_peg_agreement,
+    v10_audit_passes,
+)
+
+__version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3617,4 +3692,58 @@ __all__ = [
     "all_bt8g_closures",
     "bt8g_cathedral_audit_passes",
     "print_bt8g_cathedral_report",
+    # cathedral_mass (v2.9.86) — M★ refactor + gravity identity
+    "M_STAR_DIMENSIONLESS",
+    "M_STAR_OVER_M_PL",
+    "M_PL_OVER_M_STAR",
+    "GRAV_COUPLING_AT_M_STAR",
+    "gravitational_cathedral_identity",
+    "cathedral_gravitational_coupling",
+    "M_star_from_M_Pl", "M_star_from_G_N",
+    "M_star_from_rho_Lambda", "M_star_from_m_e",
+    "M_star_from_m_p", "M_star_from_v_EW",
+    "multi_anchor_M_star_table",
+    "multi_anchor_consistency_max_deviation",
+    "multi_anchor_consistent",
+    "mathematical_identity_candidates",
+    "has_close_mathematical_match",
+    "predictions_anchor_independent",
+    "compton_schwarzschild_crossover_mass_GeV",
+    "hawking_temperature_at_M_star_GeV",
+    "planck_area_in_M_star_units",
+    "cathedral_coefficients_in_M_star",
+    "cathedral_mass_audit",
+    "cathedral_mass_audit_passes",
+    "print_cathedral_mass_report",
+    # cathedral_mass_external (v2.9.86) — external-physics validation
+    "M_STAR_GEV",
+    "SM_MASSES_GEV", "COSMO_SCALES_GEV", "NATURAL_UNITS_GEV",
+    "gamma_exponent_in_M_star",
+    "closest_cathedral_integer",
+    "gamma_ladder_table",
+    "cathedral_natural_placements",
+    "PREFACTOR_LIBRARY",
+    "best_prefactor_match",
+    "prefactor_extraction_table",
+    "clean_prefactor_count",
+    "M_star_ratios_to_natural_units",
+    "search_cathedral_ratio",
+    "M_star_bh_entropy",
+    "M_star_bh_hawking_temperature_GeV",
+    "M_star_bh_surface_gravity_GeV",
+    "M_star_bh_thermo_summary",
+    "thorough_classical_identity_search",
+    "best_classical_match_for_M_star",
+    "external_validation_audit",
+    "external_validation_passes",
+    "print_external_validation_report",
+    # cathedral_v10 (v2.9.86) — M★-anchored complete computation
+    "CathedralV10",
+    "M_STAR_GEV_DEFAULT",
+    "M_STAR_GEV_V10", "M_PL_GEV_V10", "V_EW_GEV_V10",
+    "M_E_GEV_V10", "M_P_GEV_V10",
+    "GRAV_COUPLING_V10", "LAMBDA_OVER_MSTAR4",
+    "v10_scale_chain", "v10_full_ledger",
+    "v10_anchor_consistency", "v10_cross_peg_agreement",
+    "v10_audit_passes",
 ]
