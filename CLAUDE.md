@@ -1,4 +1,4 @@
-# URT Enhanced v2.9.85 — Cathedral Framework
+# URT Enhanced v2.9.86 — Cathedral Framework
 
 ## Repository Overview
 
@@ -18,7 +18,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (8,246 tests, 0 xfail).
+and verified in CI (8,441 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -1317,7 +1317,7 @@ Two extensions arrive in the same wave:
 
 ### v2.9.84 CI gates
 
-All pass at machine precision (8,246 / 8,246 tests, 0 xfail):
+All pass at machine precision (8,441 / 8,441 tests, 0 xfail):
 
 ```python
 from urt import (
@@ -1682,7 +1682,7 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 8,246 tests
+python -m pytest tests/ -q              # all 8,441 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
@@ -2053,7 +2053,7 @@ from urt import (
 
 This repo has TWO permanent branches.
 
-**`main`** — active development.  Full theory: 220 modules, 8,246 tests,
+**`main`** — active development.  Full theory: 225 modules, 8,441 tests,
 27 registered predictions across QED/cosmology/EW/dark-matter/inflation,
 v9 anchor-free derivation chain, all domain-specific *_cathedral
 modules, Quantum URT (v2.9.84) with π-φ-e Lindblad lift and chaos
