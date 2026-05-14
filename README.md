@@ -756,6 +756,16 @@ anchor is a framing question; both chains are kept so nothing is lost.
   `urt.cone_icosahedron` (v2.9.86): `𝒦·η = D!` (coupling × susceptibility
   product) and `c₁/c₂ = −δ★` (β-function fixed-point ratio).
 
+- **James Lockwood** (2026) — interactive δ★ *phase-transport*
+  visualization (CodePen): a deterministic irrational-rotation engine
+  driven by the Cathedral constant `δ★/π = 80/(1053φ)`.  The turn
+  fraction `δ★/(2π) = 20(√5−1)/1053` is a quadratic irrational, so the
+  phase samples `n·δ★ mod 2π` never close into a finite cycle and are
+  equidistributed by Weyl's theorem; the central pulse has period
+  `T = 2π/δ★ = 1053φ/40 ≈ 42.5947…` frames.  Worked analysis — with the
+  130-digit verification and honest caveats — in
+  `docs/PHASE_TRANSPORT_VISUALIZATION.md`.
+
 ---
 
 *"Not numerology. A candidate mathematical theory with a vacuum δ★, an
