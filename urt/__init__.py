@@ -2678,7 +2678,37 @@ from .sector_unification import (
     print_sector_unification_report,
 )
 
-__version__ = "2.9.84"
+# cathedral_mass (v2.9.86) — M★ refactor + gravitational Cathedral identity
+# G_N · M★² = δ★² · 2^q · π² ≈ 6.872, with M★ ≡ √(2^q · π²) = 4π√2.
+# Multi-anchor cross-consistency: G_N, M_Pl, ρ_Λ, m_e, m_p, v_EW all give
+# the same M★ to <0.3 %.  Predictions registry round-trips to machine
+# precision under the M★ relabeling.
+from .cathedral_mass import (
+    M_STAR_DIMENSIONLESS,
+    M_STAR_OVER_M_PL,
+    M_PL_OVER_M_STAR,
+    GRAV_COUPLING_AT_M_STAR,
+    gravitational_cathedral_identity,
+    cathedral_gravitational_coupling,
+    M_star_from_M_Pl, M_star_from_G_N,
+    M_star_from_rho_Lambda, M_star_from_m_e,
+    M_star_from_m_p, M_star_from_v_EW,
+    multi_anchor_M_star_table,
+    multi_anchor_consistency_max_deviation,
+    multi_anchor_consistent,
+    mathematical_identity_candidates,
+    has_close_mathematical_match,
+    predictions_anchor_independent,
+    compton_schwarzschild_crossover_mass_GeV,
+    hawking_temperature_at_M_star_GeV,
+    planck_area_in_M_star_units,
+    cathedral_coefficients_in_M_star,
+    cathedral_mass_audit,
+    cathedral_mass_audit_passes,
+    print_cathedral_mass_report,
+)
+
+__version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
     # chaos metrics
@@ -3617,4 +3647,27 @@ __all__ = [
     "all_bt8g_closures",
     "bt8g_cathedral_audit_passes",
     "print_bt8g_cathedral_report",
+    # cathedral_mass (v2.9.86) — M★ refactor + gravity identity
+    "M_STAR_DIMENSIONLESS",
+    "M_STAR_OVER_M_PL",
+    "M_PL_OVER_M_STAR",
+    "GRAV_COUPLING_AT_M_STAR",
+    "gravitational_cathedral_identity",
+    "cathedral_gravitational_coupling",
+    "M_star_from_M_Pl", "M_star_from_G_N",
+    "M_star_from_rho_Lambda", "M_star_from_m_e",
+    "M_star_from_m_p", "M_star_from_v_EW",
+    "multi_anchor_M_star_table",
+    "multi_anchor_consistency_max_deviation",
+    "multi_anchor_consistent",
+    "mathematical_identity_candidates",
+    "has_close_mathematical_match",
+    "predictions_anchor_independent",
+    "compton_schwarzschild_crossover_mass_GeV",
+    "hawking_temperature_at_M_star_GeV",
+    "planck_area_in_M_star_units",
+    "cathedral_coefficients_in_M_star",
+    "cathedral_mass_audit",
+    "cathedral_mass_audit_passes",
+    "print_cathedral_mass_report",
 ]
