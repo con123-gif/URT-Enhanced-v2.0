@@ -7,9 +7,9 @@ from urt.master_audit import (
 )
 
 
-def test_phases_list_has_at_least_8_entries():
-    """The 8-phase investigation must have at least 8 entries (plus DOF)."""
-    assert len(PHASES) >= 9
+def test_phases_list_has_at_least_9_entries():
+    """The 9-phase investigation must have at least 9 entries (plus DOF)."""
+    assert len(PHASES) >= 10
 
 
 def test_every_phase_has_label_and_gate():
@@ -42,6 +42,7 @@ def test_framework_metrics_complete():
         "n_coefficient_table", "n_correction_table",
         "n_a5_dark_filled", "n_a5_dark_open", "n_falsifiable_preds",
         "registration_date", "n_as_factors", "a_s_predicted",
+        "L_trace", "K_4_trace", "A_5_trace", "distinct_eigenvalues",
     }
     assert set(m.keys()) == expected_keys
 

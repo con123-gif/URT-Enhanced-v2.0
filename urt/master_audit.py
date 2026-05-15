@@ -62,6 +62,10 @@ from .structural_dof import (
     total_free_budget_bits, total_forced_budget_bits,
     net_information_after_structural_reduction,
 )
+from .urt_projection import (
+    urt_projection_audit_passes,
+    laplacian_trace, sector_eigenvalue_split, distinct_eigenvalues,
+)
 
 
 # ── Phase status table ──────────────────────────────────────────────────
@@ -76,6 +80,7 @@ PHASES: List[Tuple[str, str, callable]] = [
     ("Phase 6", "A_5 dark-sector 9 channels",                  a5_dark_sector_audit_passes),
     ("Phase 7", "Falsifiable predictions pre-registered",      falsifiable_log_audit_passes),
     ("Phase 8", "A_s eigenmode decomposition",                eigenmode_decomposition_audit_passes),
+    ("Phase 9", "URT iteration → Cathedral observables",      urt_projection_audit_passes),
     ("DOF",     "Structural-DOF accounting",                   structural_dof_audit_passes),
 ]
 
@@ -98,6 +103,7 @@ def all_phases_pass() -> bool:
 # ── Headline numbers ─────────────────────────────────────────────────────
 
 def framework_metrics() -> Dict[str, object]:
+    sec = sector_eigenvalue_split()
     return {
         "info_delivered_bits":  information_delivered_bits(),
         "free_budget_bits":     total_free_budget_bits(),
@@ -116,6 +122,11 @@ def framework_metrics() -> Dict[str, object]:
         "registration_date":    REGISTRATION_DATE,
         "n_as_factors":         len(AS_FACTORS),
         "a_s_predicted":        A_S_PREDICTED,
+        # Phase 9 operator-level metrics
+        "L_trace":              laplacian_trace(),
+        "K_4_trace":            sec["K_4_trace"],
+        "A_5_trace":            sec["A_5_trace"],
+        "distinct_eigenvalues": distinct_eigenvalues(),
     }
 
 
@@ -174,6 +185,11 @@ def print_master_audit_report() -> None:
     print(f"   A_5 dark-sector channels         : {m['n_a5_dark_filled']} filled + {m['n_a5_dark_open']} open = 9")
     print(f"   Falsifiable predictions          : {m['n_falsifiable_preds']} (registered {m['registration_date']})")
     print(f"   A_s factors decomposed           : {m['n_as_factors']}  (= {m['a_s_predicted']:.3e})")
+    print()
+    print(" URT iteration operator-level (Phase 9):")
+    print(f"   L_{{G_{{13}}}} trace                  : {m['L_trace']:.1f}  (= D!·V)")
+    print(f"   K_4 ⊕ A_5 trace split             : {m['K_4_trace']:.1f} + {m['A_5_trace']:.1f} = {m['L_trace']:.1f}")
+    print(f"   Distinct eigenvalues             : {m['distinct_eigenvalues']}  (all Cathedral integers)")
     print()
     print(" Single CI gate:  master_audit_passes()  =", master_audit_passes())
     print("=" * 92)

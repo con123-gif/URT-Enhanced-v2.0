@@ -2914,6 +2914,34 @@ from .master_audit import (
     print_master_audit_report,
 )
 
+# ── URT Projection — Cathedral observables from the URT iteration (2026-05-15) ──
+# The "last URT": run the iteration on G_{13}, project onto Laplacian
+# eigenmodes, expose:
+#   * tr(L) = D! · V = 72  (Cathedral identity at the operator level)
+#   * K_4 ⊕ A_5 trace split = 11 + 61 = 72
+#   * per-mode contraction c(λ) = 1 − λ/(2^q·π²)
+#   * mixing times τ(λ); τ_D / τ_N = N/D (transcendentals cancel)
+from .urt_projection import (
+    ETA_LAPLACIAN as URT_ETA_LAPLACIAN,
+    ETA_STEP as URT_ETA_STEP,
+    DYNAMICAL_NORM as URT_DYNAMICAL_NORM,
+    MU_PULL as URT_MU_PULL,
+    laplacian_eigsystem,
+    distinct_eigenvalues as urt_distinct_eigenvalues,
+    laplacian_trace,
+    per_mode_contraction, mixing_time,
+    evolve_initial_perturbation, project_state_onto_eigenmodes,
+    kernel_mode_amplitude, state_variance,
+    sector_eigenvalue_split, sector_traces_sum_to_72,
+    empirical_variance_decay_rate,
+    delta_star_from_iteration,
+    trace_equals_D_factorial_V,
+    contraction_factor_at_Fiedler_matches_cathedral,
+    variance_decay_matches_dominant_eigenmode,
+    urt_projection_audit_passes,
+    print_urt_projection_report,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
