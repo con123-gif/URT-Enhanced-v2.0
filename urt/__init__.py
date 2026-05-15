@@ -2753,6 +2753,205 @@ from .cathedral_v10 import (
     v10_audit_passes,
 )
 
+# ── Unified Recipe Audit (2026-05-15) ────────────────────────────────────
+# Classifies every v9 ledger formula into one of four templates and
+# performs honest information-theoretic DOF accounting.  See
+# docs/UNIFIED_RECIPE_AUDIT.md for the full investigation.
+from .unified_recipe import (
+    template_INT,
+    template_GAMMA_LADDER,
+    template_DELTA_STAR_LIN,
+    template_TRIG_WRAPPER,
+    canonical_classification,
+    template_coverage_summary,
+    template_fit_quality,
+    unified_recipe_audit_passes,
+    information_delivered_bits,
+    template_DOF_per_observable,
+    total_template_budget_bits,
+    net_information_bits,
+    print_unified_recipe_report,
+    TemplateMatch,
+)
+
+# ── K_4 ⊕ A_5 Channel Mapping (2026-05-15) ──────────────────────────────
+# Structural justification for the 4-template scheme: |K_4| = D+1 = 4
+# (the visible-sector group) gives 4 channels, each one a template family.
+# |A_5| = D!+D = D² = 9 gives 9 dark-sector slots (4 filled, 5 open).
+from .k4_channel_mapping import (
+    K4_CHANNELS, FAMILY_TO_CHANNEL, PHYSICAL_TYPE_TO_CHANNEL,
+    channel_info, channel_for_family, channel_classification, channel_coverage,
+    k4_cardinality, k4_cardinality_holds,
+    A5_CARDINALITY, A5_FILLED, A5_OPEN_PREDICTIONS,
+    a5_channel_coverage, a5_cardinality_holds,
+    channel_assignment_dof_bits,
+    total_template_budget_with_channels_bits,
+    net_information_with_channels_bits,
+    k4_channel_audit_passes, k4_strengthens_audit,
+    print_k4_channel_report,
+    ChannelMatch,
+)
+
+# ── Structural DOF Reduction (2026-05-15) ───────────────────────────────
+# Slot-by-slot accounting: which per-template parameters are STRUCTURALLY
+# forced (0 bits) vs free.  Converts the +12-bit "TIGHT barely" verdict
+# into +120 bits "DECISIVELY TIGHT" by crediting documented forcings.
+from .structural_dof import (
+    SlotDOF,
+    INT_SLOTS, GAMMA_SLOTS, DELTA_SLOTS, TRIG_SLOTS, FAMILY_SLOTS,
+    family_free_dof, family_forced_dof, family_savings,
+    total_free_budget_bits, total_forced_budget_bits,
+    net_information_after_structural_reduction,
+    per_family_summary,
+    structural_reductions_are_strict,
+    total_savings_positive,
+    framework_is_tight_with_structural_reductions,
+    structural_dof_audit_passes,
+    print_structural_dof_report,
+)
+
+# ── Cathedral Levels — γ-ladder exponents from D=3 (2026-05-15) ──────────
+# Each γ-ladder exponent k is itself a Cathedral compound:
+#   k=0 (counting), k=1=D-2, k=3=D, k=5=q, k=9=D², k=64=(D+1)^D, k=-7=-(D!+1)
+# Plus operational mapping: each observable → regime → forced k.
+from .cathedral_levels import (
+    CathedralLevel, LEVELS, LEVELS_BY_K, LEVELS_BY_REGIME,
+    gamma_exponent_for_regime, gamma_exponent_is_cathedral,
+    OBSERVABLE_REGIME, regime_for_observable, gamma_exponent_for_observable,
+    gamma_exponent_dof_per_slot_bits,
+    all_levels_consistent, all_observed_gamma_exponents_are_cathedral,
+    cathedral_levels_audit_passes,
+    print_cathedral_levels_report,
+)
+
+# ── Spectrum → Levels — γ-exponents from L_{G_{13}} eigenvalues (2026-05-15) ──
+# 4 of 7 γ-ladder levels are Laplacian eigenvalues of L_{G_{13}}:
+#   {0, 3, 5, 9} ⊂ {0, 3, 3, 5,…, 5, 7, 7, 9, 13}.
+# The other 3 (1, 64, -7) are Cathedral combinatorial compounds.
+from .spectrum_to_levels import (
+    icosahedral_adjacency_matrix, icosahedral_laplacian,
+    laplacian_spectrum, distinct_eigenvalues_rounded,
+    is_spectral_eigenvalue, level_origin,
+    levels_with_spectral_origin, levels_with_combinatorial_origin,
+    spectrum_matches_expected, spectrum_contains_cathedral_integers,
+    at_least_three_spectral_levels, spectrum_to_levels_audit_passes,
+    print_spectrum_to_levels_report,
+)
+
+# ── Coefficient Projection — K_4 ⊕ A_5 sector decomposition (2026-05-15) ──
+# Every v9 coefficient classified into 6 canonical sector classes:
+#   K4_RATIO, A5_RATIO, SECTOR_RATIO, K4_POWER, GEOMETRIC, COMPOUND.
+# Reduces coefficient slot DOF from 4 bits to 3 bits — additional +15
+# bits net info across the 15 classified observables.
+from .coefficient_projection import (
+    K4_ELEMENTS, A5_ELEMENTS, COEFFICIENT_CLASSES,
+    CoefficientForm, COEFFICIENT_TABLE,
+    coefficient_class_for, all_classified, coefficient_classes_used,
+    coefficient_dof_per_slot_bits, coefficient_savings_bits,
+    total_coefficient_savings_bits,
+    all_v9_coefficients_classified, at_least_5_coefficient_classes_used,
+    coefficient_projection_audit_passes,
+    print_coefficient_projection_report,
+)
+
+# ── Correction Projection — perturbation-order decomposition (2026-05-15) ──
+# Every v9 (1 + ε) correction projects to one of 5 canonical orders:
+#   IDENTITY, ORDER_GAMMA, ORDER_ETA, ORDER_DELTASTAR, SECTOR_RATIO
+# Reduces correction-slot DOF from 2 bits to 1.6 bits per slot —
+# additional +8 bits net info.
+from .correction_projection import (
+    CORRECTION_ORDERS, CorrectionForm, CORRECTION_TABLE,
+    correction_order_for, correction_orders_used,
+    all_corrections_classified,
+    correction_dof_per_slot_bits, correction_savings_bits,
+    total_correction_savings_bits,
+    all_orders_used, correction_projection_audit_passes,
+    print_correction_projection_report,
+)
+
+# ── Phase 6: A_5 dark-sector 9-channel enumeration (2026-05-15) ─────────
+from .a5_dark_sector import (
+    A5_CARDINALITY as A5_DARK_CARDINALITY, A5Channel, A5_CHANNELS,
+    filled_channels, open_channels, channel_by_name,
+    a5_channels_total_is_9, a5_indices_are_distinct,
+    a5_indices_are_complete, at_least_4_filled, at_least_5_open,
+    every_channel_has_structural_reason,
+    a5_dark_sector_audit_passes, print_a5_dark_sector_report,
+)
+
+# ── Phase 7: Pre-registered falsifiable predictions log (2026-05-15) ────
+from .falsifiable_log import (
+    REGISTRATION_DATE,
+    AXION_MASS_UEV, CASIMIR_FRAC_DEV_100NM_PPM, R_TENSOR,
+    FalsifiablePrediction, PREDICTIONS,
+    get_prediction, all_prediction_names, predictions_as_dicts,
+    all_registration_dates_match,
+    axion_pinned, casimir_pinned, r_tensor_pinned,
+    at_least_3_predictions, every_prediction_has_falsification_criterion,
+    falsifiable_log_audit_passes, print_falsifiable_log_report,
+)
+
+# ── Phase 8: A_s eigenmode decomposition (2026-05-15) ───────────────────
+from .eigenmode_decomposition import (
+    N_E as AS_N_E, K_GAMMA_AS, A_S_PREDICTED,
+    AsFactor, AS_FACTORS,
+    reconstructed_A_s, reconstruction_residual,
+    factor_sectors_summary,
+    cathedral_laplacian_eigenvalues,
+    eigenmode_amplitudes_after_T_steps,
+    gamma_level_for_eigenvalue,
+    reconstruction_within_machine_precision,
+    every_factor_has_eigenmode_origin,
+    sectors_cover_K4_A5_and_geometric,
+    eigenmode_decomposition_audit_passes,
+    print_eigenmode_decomposition_report,
+)
+
+# ── Master Audit — single source of truth for all 8 phases (2026-05-15) ──
+from .master_audit import (
+    PHASES as MASTER_PHASES, phase_results, all_phases_pass,
+    framework_metrics, master_audit_passes,
+    print_master_audit_report,
+)
+
+# ── Observable Registry — cross-cutting per-row classification (2026-05-15) ──
+from .observable_registry import (
+    ObservableRow, build_registry, get_row,
+    all_names as registry_observable_names,
+    rows_by_family, coverage_summary as registry_coverage_summary,
+    every_row_has_family_and_channel,
+    observable_registry_audit_passes,
+    print_observable_registry_report,
+)
+
+# ── URT Projection — Cathedral observables from the URT iteration (2026-05-15) ──
+# The "last URT": run the iteration on G_{13}, project onto Laplacian
+# eigenmodes, expose:
+#   * tr(L) = D! · V = 72  (Cathedral identity at the operator level)
+#   * K_4 ⊕ A_5 trace split = 11 + 61 = 72
+#   * per-mode contraction c(λ) = 1 − λ/(2^q·π²)
+#   * mixing times τ(λ); τ_D / τ_N = N/D (transcendentals cancel)
+from .urt_projection import (
+    ETA_LAPLACIAN as URT_ETA_LAPLACIAN,
+    ETA_STEP as URT_ETA_STEP,
+    DYNAMICAL_NORM as URT_DYNAMICAL_NORM,
+    MU_PULL as URT_MU_PULL,
+    laplacian_eigsystem,
+    distinct_eigenvalues as urt_distinct_eigenvalues,
+    laplacian_trace,
+    per_mode_contraction, mixing_time,
+    evolve_initial_perturbation, project_state_onto_eigenmodes,
+    kernel_mode_amplitude, state_variance,
+    sector_eigenvalue_split, sector_traces_sum_to_72,
+    empirical_variance_decay_rate,
+    delta_star_from_iteration,
+    trace_equals_D_factorial_V,
+    contraction_factor_at_Fiedler_matches_cathedral,
+    variance_decay_matches_dominant_eigenmode,
+    urt_projection_audit_passes,
+    print_urt_projection_report,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
@@ -3746,4 +3945,17 @@ __all__ = [
     "v10_scale_chain", "v10_full_ledger",
     "v10_anchor_consistency", "v10_cross_peg_agreement",
     "v10_audit_passes",
+    # unified_recipe (2026-05-15) — 4-template scheme covering the v9 ledger
+    "template_INT", "template_GAMMA_LADDER",
+    "template_DELTA_STAR_LIN", "template_TRIG_WRAPPER",
+    "canonical_classification",
+    "template_coverage_summary",
+    "template_fit_quality",
+    "unified_recipe_audit_passes",
+    "information_delivered_bits",
+    "template_DOF_per_observable",
+    "total_template_budget_bits",
+    "net_information_bits",
+    "print_unified_recipe_report",
+    "TemplateMatch",
 ]
