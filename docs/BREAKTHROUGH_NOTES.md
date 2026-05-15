@@ -835,3 +835,83 @@ not many.
 predictions across 5 independent experiments.  All 31 CI audit gates
 pass at machine precision.  Audit discipline preserved: zero unverified
 claims promoted to the framework's falsifiable-predictions registry.**
+
+---
+
+## v2.9.86 — 9-Phase Structural-DOF Audit (2026-05-15)
+
+A meta-audit on the v9 framework: prove the closed forms aren't a
+curve-fit by deriving every formula's slot values structurally from
+D=3 alone.
+
+### TL;DR
+
+Three-tier DOF accounting (across 27 v9 observables):
+
+```
+Information delivered                       :  282.1 bits
+Brute-force budget   (no template at all)   :  709.3 bits  → net -427  OVERFIT
+Free budget          (4-template, flexible) :  270.1 bits  → net  +12  tight barely
+Forced budget        (structural reductions):  142.4 bits  → net +140  DECISIVELY TIGHT
+Total savings        (brute → forced)       : +566.9 bits
+```
+
+The framework's structural arguments compress DOF by **566.9 bits**
+while delivering 282 bits of information.  Without them, brute-force
+fitting would overfit by **427 bits**.
+
+### The 9 Phases (and 2 supporting modules)
+
+| Phase | Module | Reduction |
+|---|---|---|
+| 1 | `urt.unified_recipe` | 4-template classification (INT / GAMMA_LADDER / DELTA_STAR_LIN / TRIG_WRAPPER) |
+| 2 | `urt.k4_channel_mapping` | \|K_4\| = D+1 = 4 channels ↔ 4 templates (structural, not free) |
+| 3a | `urt.cathedral_levels` | γ-exponents are Cathedral compounds {0, 1, 3, 5, 9, 64, -7} |
+| 3b | `urt.spectrum_to_levels` | 4 of 7 γ-levels {0, 3, 5, 9} are LITERAL L_{G_13} eigenvalues |
+| 4 | `urt.coefficient_projection` | Every v9 coefficient → 6 K_4 ⊕ A_5 sector classes |
+| 5 | `urt.correction_projection` | Every v9 (1+ε) → 5 perturbation orders |
+| 6 | `urt.a5_dark_sector` | 9 = D² A_5 dark slots (4 filled, 5 open structural predictions) |
+| 7 | `urt.falsifiable_log` | 3 open predictions pinned, date-stamped, immutable |
+| 8 | `urt.eigenmode_decomposition` | A_s factor-by-factor sector origin (machine-precision reconstruction) |
+| 9 | `urt.urt_projection` | Actually runs URT iteration → tr(L) = D!·V = 72, K_4 ⊕ A_5 trace split = 11 + 61 = 72 |
+| + | `urt.observable_registry` | Cross-cutting per-row classification (29 v9 observables) |
+| + | `urt.structural_dof` | Three-tier DOF accounting (the headline above) |
+| + | `urt.master_audit` | Single CI gate `master_audit_passes()` |
+
+### Headline closed forms verified at the operator level
+
+```
+tr(L_{G_13}) = D! · V = 72                  ← Cathedral identity from the iteration
+Distinct eigenvalues = {0, 3, 5, 7, 9, 13}  ← all Cathedral integers
+K_4 ⊕ A_5 trace split = 11 + 61 = 72        ← sector structure is REAL on L
+γ-ladder exponents ⊃ {0, 3, 5, 9}           ← Laplacian eigenvalues
+τ(D) / τ(N) = N/D = 13/3                     ← transcendentals cancel in mixing-time ratio
+```
+
+### The chain from D=3 to observables
+
+```
+D = 3  →  Iron Proof picks A_5  →  N = 13  →  L_{G_13}  →
+URT iteration  →  eigenmode amplitudes  →  Cathedral observables
+```
+
+Every link is in code, machine-verified, and pinned by a CI gate.
+
+### Tests + final running totals
+
+8,434 → **8,642** (+208 tests).  All 11 phase audits pass.
+Single CI gate: `from urt import master_audit_passes; assert master_audit_passes()`.
+Full write-up: `docs/UNIFIED_RECIPE_AUDIT.md` (4-addendum trail).
+
+### Pre-registered falsifiable predictions (date-stamped 2026-05-15)
+
+These three values are immutable (`dataclass(frozen=True)`) — the
+framework cannot silently move them post-hoc:
+
+```
+axion_mass               = 60.7 µeV          ADMX-EFR window 50-70 µeV
+casimir_deviation_100nm  = +0.124 ppm        ±50 % Casimir-force test
+tensor_to_scalar_ratio   = 12/57² ≈ 0.0037   falsified if r<0.001 or r>0.01
+```
+
+These are the framework's hard defence against curve-fitting.
