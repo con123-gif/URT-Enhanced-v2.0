@@ -2810,6 +2810,34 @@ from .structural_dof import (
     print_structural_dof_report,
 )
 
+# ── Cathedral Levels — γ-ladder exponents from D=3 (2026-05-15) ──────────
+# Each γ-ladder exponent k is itself a Cathedral compound:
+#   k=0 (counting), k=1=D-2, k=3=D, k=5=q, k=9=D², k=64=(D+1)^D, k=-7=-(D!+1)
+# Plus operational mapping: each observable → regime → forced k.
+from .cathedral_levels import (
+    CathedralLevel, LEVELS, LEVELS_BY_K, LEVELS_BY_REGIME,
+    gamma_exponent_for_regime, gamma_exponent_is_cathedral,
+    OBSERVABLE_REGIME, regime_for_observable, gamma_exponent_for_observable,
+    gamma_exponent_dof_per_slot_bits,
+    all_levels_consistent, all_observed_gamma_exponents_are_cathedral,
+    cathedral_levels_audit_passes,
+    print_cathedral_levels_report,
+)
+
+# ── Spectrum → Levels — γ-exponents from L_{G_{13}} eigenvalues (2026-05-15) ──
+# 4 of 7 γ-ladder levels are Laplacian eigenvalues of L_{G_{13}}:
+#   {0, 3, 5, 9} ⊂ {0, 3, 3, 5,…, 5, 7, 7, 9, 13}.
+# The other 3 (1, 64, -7) are Cathedral combinatorial compounds.
+from .spectrum_to_levels import (
+    icosahedral_adjacency_matrix, icosahedral_laplacian,
+    laplacian_spectrum, distinct_eigenvalues_rounded,
+    is_spectral_eigenvalue, level_origin,
+    levels_with_spectral_origin, levels_with_combinatorial_origin,
+    spectrum_matches_expected, spectrum_contains_cathedral_integers,
+    at_least_three_spectral_levels, spectrum_to_levels_audit_passes,
+    print_spectrum_to_levels_report,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
