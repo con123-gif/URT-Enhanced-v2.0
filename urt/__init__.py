@@ -2753,6 +2753,27 @@ from .cathedral_v10 import (
     v10_audit_passes,
 )
 
+# ── Unified Recipe Audit (2026-05-15) ────────────────────────────────────
+# Classifies every v9 ledger formula into one of four templates and
+# performs honest information-theoretic DOF accounting.  See
+# docs/UNIFIED_RECIPE_AUDIT.md for the full investigation.
+from .unified_recipe import (
+    template_INT,
+    template_GAMMA_LADDER,
+    template_DELTA_STAR_LIN,
+    template_TRIG_WRAPPER,
+    canonical_classification,
+    template_coverage_summary,
+    template_fit_quality,
+    unified_recipe_audit_passes,
+    information_delivered_bits,
+    template_DOF_per_observable,
+    total_template_budget_bits,
+    net_information_bits,
+    print_unified_recipe_report,
+    TemplateMatch,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
@@ -3746,4 +3767,17 @@ __all__ = [
     "v10_scale_chain", "v10_full_ledger",
     "v10_anchor_consistency", "v10_cross_peg_agreement",
     "v10_audit_passes",
+    # unified_recipe (2026-05-15) — 4-template scheme covering the v9 ledger
+    "template_INT", "template_GAMMA_LADDER",
+    "template_DELTA_STAR_LIN", "template_TRIG_WRAPPER",
+    "canonical_classification",
+    "template_coverage_summary",
+    "template_fit_quality",
+    "unified_recipe_audit_passes",
+    "information_delivered_bits",
+    "template_DOF_per_observable",
+    "total_template_budget_bits",
+    "net_information_bits",
+    "print_unified_recipe_report",
+    "TemplateMatch",
 ]
