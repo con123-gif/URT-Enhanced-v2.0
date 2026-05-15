@@ -2907,6 +2907,13 @@ from .eigenmode_decomposition import (
     print_eigenmode_decomposition_report,
 )
 
+# ── Master Audit — single source of truth for all 8 phases (2026-05-15) ──
+from .master_audit import (
+    PHASES as MASTER_PHASES, phase_results, all_phases_pass,
+    framework_metrics, master_audit_passes,
+    print_master_audit_report,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [

@@ -60,92 +60,98 @@ INT_SLOTS: List[SlotDOF] = [
     ),
 ]
 
-# GAMMA_LADDER family: ~12 bits = γ-exponent (3) + coefficient (5) + other (4)
+# GAMMA_LADDER family: forced bits sourced from operational modules
+#   gamma_exponent   ← urt.cathedral_levels   (operational; 0 bits)
+#   coefficient      ← urt.coefficient_projection (3.0 bits, sector-projected)
+#   small_correction ← urt.correction_projection  (1.6 bits, order-projected)
 GAMMA_SLOTS: List[SlotDOF] = [
     SlotDOF(
         name="gamma_exponent",
         free_bits=3.0,        # log_2(8) for the 8-element γ-ladder
-        forced_bits=0.0,
+        forced_bits=0.0,      # sourced from urt.cathedral_levels (Phase 3)
         reason=(
-            "γ-exponent k is forced by physics regime: "
-            "k=0 counting, k=1 gauge, k=3 Yukawa/baryon, k=5 lepton/axion, "
-            "k=9 EW(D²), k=64 cosmological constant ((D+1)^D), k=-7 GUT(-(D!+1)). "
-            "Each is documented in urt.arf_cathedral as a Cathedral integer."
+            "γ-exponent k is forced operationally by Cathedral level: "
+            "k ∈ {0, 1, 3, 5, 9, 64, -7} = {counting, contraction, gauge, "
+            "baryon, EW, cosmological constant, GUT}. 4 of these (0, 3, 5, 9) "
+            "are literal Laplacian eigenvalues of L_{G_{13}}. "
+            "Derivation: urt.cathedral_levels + urt.spectrum_to_levels (Phase 3)."
         ),
     ),
     SlotDOF(
         name="coefficient",
         free_bits=5.0,        # ~32 natural Cathedral rationals
-        forced_bits=4.0,
+        forced_bits=3.0,      # sourced from urt.coefficient_projection (Phase 4)
         reason=(
-            "Coefficient is a Cathedral rational. ~16 natural pairs once "
-            "restricted to {D/N, V/F, (D+1)/N, ...}. log_2(16) = 4 bits. "
-            "Reduction credit: 1 bit — restriction to natural ratios."
+            "Coefficient is one of 6 K_4 ⊕ A_5 sector classes: K4_RATIO, "
+            "A5_RATIO, SECTOR_RATIO, K4_POWER, GEOMETRIC, COMPOUND. "
+            "Within a class the choice is small. "
+            "Derivation: urt.coefficient_projection (Phase 4)."
         ),
     ),
     SlotDOF(
         name="small_correction",
         free_bits=4.0,        # ~16 corrections from finite set
-        forced_bits=2.0,
+        forced_bits=1.6,      # sourced from urt.correction_projection (Phase 5)
         reason=(
-            "Correction is drawn from a finite set of ~4 canonical forms "
-            "(1, 1±γ, 1±γ/2π, 1±δ★/π) that match RG-running orders. "
-            "log_2(4) = 2 bits. Reduction credit: 2 bits."
+            "Correction is one of 5 perturbation orders: IDENTITY, ORDER_GAMMA, "
+            "ORDER_ETA, ORDER_DELTASTAR, SECTOR_RATIO. "
+            "Within an order the form is from a small canonical set. "
+            "Derivation: urt.correction_projection (Phase 5)."
         ),
     ),
 ]
 
-# DELTA_STAR_LIN family: ~10 bits = power (1) + coefficient (5) + correction (4)
+# DELTA_STAR_LIN family: same operational forcings
 DELTA_SLOTS: List[SlotDOF] = [
     SlotDOF(
         name="delta_star_power",
         free_bits=1.0,        # power ∈ {1, 2}
         forced_bits=0.0,
         reason=(
-            "Power is forced by linear/quadratic perturbation order. "
-            "p=1 for first-order, p=2 for cross-terms (e.g. G_N=δ★²)."
+            "Power is forced by linear/quadratic perturbation order: "
+            "p=1 for first-order δ★, p=2 for δ★² (e.g. G_N=δ★²)."
         ),
     ),
     SlotDOF(
         name="coefficient",
         free_bits=5.0,
-        forced_bits=4.0,
-        reason="Same restriction as γ-ladder coefficient.",
+        forced_bits=3.0,
+        reason="Sector-projected (urt.coefficient_projection, Phase 4).",
     ),
     SlotDOF(
         name="small_correction",
         free_bits=3.6,
-        forced_bits=2.0,
-        reason="Same restriction as γ-ladder correction.",
+        forced_bits=1.6,
+        reason="Order-projected (urt.correction_projection, Phase 5).",
     ),
 ]
 
-# TRIG_WRAPPER family: ~12 bits = wrapper (2) + argument (5) + correction (4)
+# TRIG_WRAPPER family: same operational forcings
 TRIG_SLOTS: List[SlotDOF] = [
     SlotDOF(
         name="trig_function",
         free_bits=2.0,        # one of {sin, cos, atan, asin}
         forced_bits=0.0,
         reason=(
-            "Trig wrapper is forced by observable class (angle/magnitude). "
-            "Mixing angles use atan/asin; CKM/PMNS phases use sin. "
-            "Class assignment is K_4-channel structural."
+            "Trig wrapper is K_4-channel structural (Phase 1-2): mixing "
+            "angles use atan/asin; CKM/PMNS phases use sin. The choice "
+            "is observable-class-forced, not a free fit."
         ),
     ),
     SlotDOF(
         name="argument",
         free_bits=5.5,
-        forced_bits=4.0,
+        forced_bits=3.0,
         reason=(
-            "Argument is a Cathedral ratio of degree ≤ 2. "
-            "~16 natural choices once restricted."
+            "Argument is a Cathedral ratio sector-projected via "
+            "urt.coefficient_projection. Same DOF as coefficient slot."
         ),
     ),
     SlotDOF(
         name="small_correction",
         free_bits=4.0,
-        forced_bits=2.0,
-        reason="Same restriction as other corrections.",
+        forced_bits=1.6,
+        reason="Order-projected (urt.correction_projection, Phase 5).",
     ),
 ]
 
