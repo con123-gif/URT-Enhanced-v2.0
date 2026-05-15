@@ -2869,6 +2869,44 @@ from .correction_projection import (
     print_correction_projection_report,
 )
 
+# ── Phase 6: A_5 dark-sector 9-channel enumeration (2026-05-15) ─────────
+from .a5_dark_sector import (
+    A5_CARDINALITY as A5_DARK_CARDINALITY, A5Channel, A5_CHANNELS,
+    filled_channels, open_channels, channel_by_name,
+    a5_channels_total_is_9, a5_indices_are_distinct,
+    a5_indices_are_complete, at_least_4_filled, at_least_5_open,
+    every_channel_has_structural_reason,
+    a5_dark_sector_audit_passes, print_a5_dark_sector_report,
+)
+
+# ── Phase 7: Pre-registered falsifiable predictions log (2026-05-15) ────
+from .falsifiable_log import (
+    REGISTRATION_DATE,
+    AXION_MASS_UEV, CASIMIR_FRAC_DEV_100NM_PPM, R_TENSOR,
+    FalsifiablePrediction, PREDICTIONS,
+    get_prediction, all_prediction_names, predictions_as_dicts,
+    all_registration_dates_match,
+    axion_pinned, casimir_pinned, r_tensor_pinned,
+    at_least_3_predictions, every_prediction_has_falsification_criterion,
+    falsifiable_log_audit_passes, print_falsifiable_log_report,
+)
+
+# ── Phase 8: A_s eigenmode decomposition (2026-05-15) ───────────────────
+from .eigenmode_decomposition import (
+    N_E as AS_N_E, K_GAMMA_AS, A_S_PREDICTED,
+    AsFactor, AS_FACTORS,
+    reconstructed_A_s, reconstruction_residual,
+    factor_sectors_summary,
+    cathedral_laplacian_eigenvalues,
+    eigenmode_amplitudes_after_T_steps,
+    gamma_level_for_eigenvalue,
+    reconstruction_within_machine_precision,
+    every_factor_has_eigenmode_origin,
+    sectors_cover_K4_A5_and_geometric,
+    eigenmode_decomposition_audit_passes,
+    print_eigenmode_decomposition_report,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
