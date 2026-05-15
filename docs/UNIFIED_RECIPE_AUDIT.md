@@ -410,3 +410,190 @@ not yet derived from first principles.
 - `tests/test_cathedral_levels.py` — 11 tests
 - `tests/test_spectrum_to_levels.py` — 13 tests
 - Total suite: 8519 / 8519 passing.
+
+---
+
+# Fourth Addendum (2026-05-15) — Phases 4-9 + cross-cutting registry
+
+The first three addenda took the framework from "+12 net (TIGHT
+barely)" to "+120 net (DECISIVELY TIGHT, with γ-exponent derived from
+L_{G_{13}})".  This addendum adds five further phases (4-9), the
+master audit, and a cross-cutting per-observable registry that
+exposes all classifications in one place.
+
+## Three-tier DOF accounting (the headline)
+
+```
+Information delivered                       : 282.1 bits
+Brute-force budget  (no template at all)    : 709.3 bits  → net −427.2  (OVERFIT)
+Free budget         (4-template, flexible)  : 270.1 bits  → net  +12.0  (TIGHT barely)
+Forced budget       (structural reductions) : 142.4 bits  → net +139.7  (TIGHT)
+Total savings       (brute → forced)        : +566.9 bits
+```
+
+The framework's structural arguments compress the DOF budget by
+**566.9 bits** while delivering **282 bits of information**.  Net info
+goes from −427 bits (overfit) to +140 bits (decisively tight) once the
+9-phase chain of forcings is applied.
+
+## Phase 4 — Coefficients → K_4 ⊕ A_5 sector classes
+
+Module: `urt.coefficient_projection`
+
+Every v9 coefficient classified into one of six sector classes:
+
+| Class | Example |
+|---|---|
+| K4_RATIO | Λ/M_Pl⁴: `D/(D+1)²` |
+| A5_RATIO | α_s(M_Z): `(q-1)/q` |
+| SECTOR_RATIO | η_B: `8/9 = 2·(D+1)/(D!+D)` |
+| K4_POWER | m_s/m_p: `2^D = 8` |
+| GEOMETRIC | m_e Yukawa: `π/2`, mixing angles |
+| COMPOUND | A_s: `(G-D)²·(D+1)³·q·32/9·π⁴·cos⁴(π/V)` |
+
+Reduces coefficient slot DOF from **4 bits → 3 bits** per slot.
+Total savings: **+15 bits** across 15 classified observables.
+
+## Phase 5 — Corrections → perturbation orders
+
+Module: `urt.correction_projection`
+
+Every v9 `(1 + ε)` correction classified by perturbation order:
+
+| Order | Examples |
+|---|---|
+| IDENTITY | G_N=δ★², σ_8, δ_CP, n_s (no shift) |
+| ORDER_GAMMA | sin²θ_W: `(1 + γ/(2π))`; Ω_m: `(1 + 2γ)` |
+| ORDER_ETA | m_μ/m_e: `(1 − 12η/N)`; θ_13: `(1 + 6η)` |
+| ORDER_DELTASTAR | m_e Yukawa: `(1 − δ★²/π)` |
+| SECTOR_RATIO | η_B: `× 8/9`; A_s: `× 32/9` |
+
+Reduces correction slot DOF from **2 bits → 1.6 bits** per slot.
+Total savings: **+8 bits** across 20 classified observables.
+
+## Phase 6 — A_5 dark-sector 9-channel enumeration
+
+Module: `urt.a5_dark_sector`
+
+The K_4 ⊕ A_5 split predicts **9 dark-sector channels** (= |A_5| = D²).
+4 currently filled, 5 open structural slots:
+
+| Index | Status | Channel | Closed form |
+|---|---|---|---|
+| Z_5[0] | filled | axion | ≈ 60.7 µeV |
+| Z_5[1] | filled | sterile neutrino | ≈ 143 keV |
+| Z_5[2] | filled | WIMP | δ★·m_Z ≈ 13.45 GeV |
+| Z_5[3] | filled | dark-energy w | -1 |
+| Z_5[4] | open | dark photon | — |
+| Z_5[5] | open | dark Higgs | — |
+| Z_5[6] | open | dark radiation | — |
+| Z_5[7] | open | second mediator | — |
+| Z_5[8] | open | topological defect | — |
+
+A falsifiable structural prediction: the framework expects all 9 slots
+to be filled by structurally-related dark-sector observables.
+
+## Phase 7 — Falsifiable predictions pre-registered
+
+Module: `urt.falsifiable_log`
+
+Three open Cathedral predictions pinned with date stamps (2026-05-15)
+and explicit falsification criteria:
+
+```
+axion_mass               = 60.7 µeV         ADMX-EFR window 50-70 µeV
+casimir_deviation_100nm  = +0.124 ppm       ±50 % Casimir-force test
+tensor_to_scalar_ratio   = 12/57² ≈ 0.0037  falsified if r<0.001 or r>0.01
+```
+
+`FalsifiablePrediction` is `dataclass(frozen=True)`; any attempt to
+mutate triggers a runtime exception.  This is the framework's hard
+defence against post-hoc fitting.
+
+## Phase 8 — A_s eigenmode decomposition
+
+Module: `urt.eigenmode_decomposition`
+
+`A_s = (G-D)²·(D+1)³·q·32/9·π⁴·γ⁹·cos⁴(π/V)` decomposed into 7
+factors, each tagged with sector origin:
+
+| factor | Cathedral form | sector |
+|---|---|---|
+| (G-D)² | A_5 inflation e-folds squared | A_5 |
+| (D+1)³ | K_4 cubed | K_4 |
+| q | A_5 prime | A_5 |
+| 32/9 | 2^q / \|A_5\| | SECTOR_RATIO |
+| π⁴ | π^\|K_4\| | GEOMETRIC |
+| γ⁹ | γ^(D²), k=9 is L_{G_{13}} eigenvalue | RG |
+| cos⁴(π/V) | V-rotation cosine ^ \|K_4\| | GEOMETRIC |
+
+Product reconstructs A_s to machine precision.
+
+## Phase 9 — URT iteration → Cathedral observables
+
+Module: `urt.urt_projection`
+
+The "last URT": literally run the iteration on G_{13} and pull
+Cathedral identities out of the dynamical operator:
+
+```
+tr(L_{G_{13}})           = D! · V = 72            ✓ Cathedral identity
+Distinct eigenvalues     = {0, 3, 5, 7, 9, 13}    all Cathedral integers
+K_4 trace (4 modes)      = 11                     (sub-block of L)
+A_5 trace (9 modes)      = 61                     (sub-block of L)
+K_4 + A_5 trace          = 72 = D! · V            ✓ sector split is real
+Per-mode contraction     = 1 − λ / (2^q · π²)     forced by η·η_L
+τ(D) / τ(N)              = N / D = 13/3           transcendentals cancel
+```
+
+The framework's structural chain is now operational end-to-end:
+
+```
+D = 3  →  Iron Proof picks A_5  →  N = 13  →  L_{G_{13}}  →
+URT iteration  →  eigenmode amplitudes  →  Cathedral observables
+```
+
+## Cross-cutting observable registry
+
+Module: `urt.observable_registry`
+
+One row per v9 observable with ALL 9-phase classifications:
+
+```
+print_observable_registry_report()
+```
+
+shows a 29-row table with columns `family / K_4 channel / γ-level /
+regime / coefficient class / correction order / falsifiable / err%`.
+Coverage: 29/29 have family + K_4 channel; 16/29 have correction
+order; 14/29 have coefficient class; etc.
+
+This consolidates the picture that was previously distributed across
+the 9 phase modules.
+
+## Master audit
+
+Module: `urt.master_audit`
+
+Single source of truth:
+
+```python
+from urt import print_master_audit_report, master_audit_passes
+print_master_audit_report()
+assert master_audit_passes()
+```
+
+Reports all 12 sub-audits (9 phases + DOF + registry + master) and
+the three-tier DOF accounting in one call.
+
+## Files added in this fourth wave
+
+- `urt/coefficient_projection.py`, `tests/test_coefficient_projection.py`
+- `urt/correction_projection.py`, `tests/test_correction_projection.py`
+- `urt/a5_dark_sector.py`, `tests/test_a5_dark_sector.py`
+- `urt/falsifiable_log.py`, `tests/test_falsifiable_log.py`
+- `urt/eigenmode_decomposition.py`, `tests/test_eigenmode_decomposition.py`
+- `urt/urt_projection.py`, `tests/test_urt_projection.py`
+- `urt/master_audit.py`, `tests/test_master_audit.py`
+- `urt/observable_registry.py`, `tests/test_observable_registry.py`
+- Total suite: **8642 / 8642 passing**

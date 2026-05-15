@@ -110,3 +110,51 @@ def test_structural_dof_audit_passes():
 
 def test_framework_is_tight():
     assert framework_is_tight_with_structural_reductions()
+
+
+def test_three_tier_table_has_required_keys():
+    from urt.structural_dof import three_tier_dof_table
+    t = three_tier_dof_table()
+    expected = {
+        "info_delivered", "brute_force_budget",
+        "free_4_template_budget", "forced_structural_budget",
+        "net_vs_brute_force", "net_vs_free_4_template",
+        "net_vs_forced_structural",
+        "savings_brute_to_free", "savings_free_to_forced",
+        "total_savings",
+    }
+    assert set(t.keys()) == expected
+
+
+def test_brute_force_budget_greater_than_free_budget():
+    """Brute-force search has more freedom than a 4-template scheme."""
+    from urt.structural_dof import (
+        brute_force_budget_bits, total_free_budget_bits,
+    )
+    assert brute_force_budget_bits() > total_free_budget_bits()
+
+
+def test_free_budget_greater_than_forced_budget():
+    """Structural reductions strictly tighten the 4-template free budget."""
+    from urt.structural_dof import (
+        total_free_budget_bits, total_forced_budget_bits,
+    )
+    assert total_free_budget_bits() > total_forced_budget_bits()
+
+
+def test_three_tier_savings_chain_positive():
+    """Each tier saves more than the next: brute > free > forced."""
+    from urt.structural_dof import three_tier_dof_table
+    t = three_tier_dof_table()
+    assert t["savings_brute_to_free"] > 0
+    assert t["savings_free_to_forced"] > 0
+    assert t["total_savings"] > t["savings_brute_to_free"]
+    assert t["total_savings"] > t["savings_free_to_forced"]
+
+
+def test_brute_force_overfits_but_forced_is_tight():
+    """The progression: brute-force fails the audit, but forced-structural passes."""
+    from urt.structural_dof import three_tier_dof_table
+    t = three_tier_dof_table()
+    assert t["net_vs_brute_force"] < 0       # overfitting
+    assert t["net_vs_forced_structural"] > 0  # decisively tight

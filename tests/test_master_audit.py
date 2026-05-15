@@ -36,8 +36,10 @@ def test_all_phases_pass():
 def test_framework_metrics_complete():
     m = framework_metrics()
     expected_keys = {
-        "info_delivered_bits", "free_budget_bits", "forced_budget_bits",
-        "net_info_bits", "n_v9_observables", "n_levels_used",
+        "info_delivered_bits", "brute_force_budget_bits",
+        "free_budget_bits", "forced_budget_bits",
+        "net_info_bits", "n_v9_observables", "n_registry_rows",
+        "n_levels_used",
         "n_spectral_levels", "n_combinatorial_levels",
         "n_coefficient_table", "n_correction_table",
         "n_a5_dark_filled", "n_a5_dark_open", "n_falsifiable_preds",

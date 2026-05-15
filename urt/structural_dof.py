@@ -204,6 +204,39 @@ def net_information_after_structural_reduction() -> float:
     return information_delivered_bits() - total_forced_budget_bits()
 
 
+# ── Three-tier DOF baseline (for the framework's headline accounting) ─────
+
+def brute_force_budget_bits(bits_per_slot: float = 26.27) -> float:
+    """
+    Budget if every observable were fit independently against a fully
+    flexible recipe template (no template family, no K_4 channel, no
+    structural arguments).  Matches `recipe_search_fast.py` 81M-combination
+    search space: log_2(81e6) ≈ 26.3 bits per slot.
+    """
+    n_observed = sum(1 for c in canonical_classification() if c.observed is not None)
+    return n_observed * bits_per_slot
+
+
+def three_tier_dof_table() -> dict:
+    """Headline three-tier DOF accounting."""
+    info  = information_delivered_bits()
+    bf    = brute_force_budget_bits()
+    free  = total_free_budget_bits()
+    forced = total_forced_budget_bits()
+    return {
+        "info_delivered":     info,
+        "brute_force_budget": bf,
+        "free_4_template_budget": free,
+        "forced_structural_budget": forced,
+        "net_vs_brute_force":      info - bf,
+        "net_vs_free_4_template":  info - free,
+        "net_vs_forced_structural": info - forced,
+        "savings_brute_to_free":    bf - free,
+        "savings_free_to_forced":   free - forced,
+        "total_savings":            bf - forced,
+    }
+
+
 def per_family_summary() -> Dict[str, Dict[str, float]]:
     cls = canonical_classification()
     counts = {}
@@ -275,11 +308,13 @@ def print_structural_dof_report() -> None:
     info        = information_delivered_bits()
     free_total  = total_free_budget_bits()
     forced_total = total_forced_budget_bits()
-    print(" Aggregate accounting:")
-    print(f"  Information delivered (Σ log2(1/|err|))  : {info:>7.1f} bits")
-    print(f"  Free budget (no structural reductions)   : {free_total:>7.1f} bits  net {info-free_total:+.1f}")
-    print(f"  Forced budget (with reductions in code)  : {forced_total:>7.1f} bits  net {info-forced_total:+.1f}")
-    print(f"  Total savings from structural arguments  : {free_total - forced_total:>+7.1f} bits")
+    brute_total = brute_force_budget_bits()
+    print(" Three-tier DOF accounting:")
+    print(f"  Information delivered (Σ log2(1/|err|))   : {info:>7.1f} bits")
+    print(f"  Brute-force budget (no template)          : {brute_total:>7.1f} bits  net {info-brute_total:+.1f}  (OVERFIT)")
+    print(f"  4-template free budget                    : {free_total:>7.1f} bits  net {info-free_total:+.1f}")
+    print(f"  Forced budget (with structural reductions): {forced_total:>7.1f} bits  net {info-forced_total:+.1f}")
+    print(f"  Total savings (brute → forced)            : {brute_total - forced_total:>+7.1f} bits")
     print()
     print(" Per-family forcing summary:")
     for fam, s in per_family_summary().items():

@@ -2914,6 +2914,16 @@ from .master_audit import (
     print_master_audit_report,
 )
 
+# ── Observable Registry — cross-cutting per-row classification (2026-05-15) ──
+from .observable_registry import (
+    ObservableRow, build_registry, get_row,
+    all_names as registry_observable_names,
+    rows_by_family, coverage_summary as registry_coverage_summary,
+    every_row_has_family_and_channel,
+    observable_registry_audit_passes,
+    print_observable_registry_report,
+)
+
 # ── URT Projection — Cathedral observables from the URT iteration (2026-05-15) ──
 # The "last URT": run the iteration on G_{13}, project onto Laplacian
 # eigenmodes, expose:

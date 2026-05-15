@@ -66,6 +66,9 @@ from .urt_projection import (
     urt_projection_audit_passes,
     laplacian_trace, sector_eigenvalue_split, distinct_eigenvalues,
 )
+from .observable_registry import (
+    observable_registry_audit_passes, build_registry,
+)
 
 
 # ── Phase status table ──────────────────────────────────────────────────
@@ -81,6 +84,7 @@ PHASES: List[Tuple[str, str, callable]] = [
     ("Phase 7", "Falsifiable predictions pre-registered",      falsifiable_log_audit_passes),
     ("Phase 8", "A_s eigenmode decomposition",                eigenmode_decomposition_audit_passes),
     ("Phase 9", "URT iteration → Cathedral observables",      urt_projection_audit_passes),
+    ("Registry","Cross-cutting observable registry",            observable_registry_audit_passes),
     ("DOF",     "Structural-DOF accounting",                   structural_dof_audit_passes),
 ]
 
@@ -104,11 +108,14 @@ def all_phases_pass() -> bool:
 
 def framework_metrics() -> Dict[str, object]:
     sec = sector_eigenvalue_split()
+    from .structural_dof import brute_force_budget_bits
     return {
         "info_delivered_bits":  information_delivered_bits(),
+        "brute_force_budget_bits": brute_force_budget_bits(),
         "free_budget_bits":     total_free_budget_bits(),
         "forced_budget_bits":   total_forced_budget_bits(),
         "net_info_bits":        net_information_after_structural_reduction(),
+        "n_registry_rows":      len(build_registry()),
         "n_v9_observables":     len([c for c in canonical_classification()
                                      if c.observed is not None]),
         "n_levels_used":        len(LEVELS),
@@ -146,24 +153,26 @@ def print_master_audit_report() -> None:
     print(" CATHEDRAL FRAMEWORK — MASTER AUDIT")
     print("=" * 92)
     print()
-    print(" 8-phase structural-DOF investigation:")
+    print(" 9-phase structural-DOF investigation + cross-cutting registry:")
     print("-" * 92)
     for r in phase_results():
         status = "PASS" if r["passes"] else "FAIL"
         flag = "✓" if r["passes"] else "✗"
         print(f"   {flag}  {r['phase']:<10} {r['desc']:<55} [{status}]")
     print()
-    print(" Information-theoretic verdict:")
+    print(" Three-tier information-theoretic accounting:")
     print("-" * 92)
     m = framework_metrics()
     info = m["info_delivered_bits"]
+    brute = m["brute_force_budget_bits"]
     free = m["free_budget_bits"]
     forced = m["forced_budget_bits"]
     net = m["net_info_bits"]
-    print(f"   Information delivered            : {info:>8.1f} bits")
-    print(f"   Free budget (no reductions)      : {free:>8.1f} bits  → net {info-free:+.1f}")
-    print(f"   Forced budget (with reductions)  : {forced:>8.1f} bits  → net {info-forced:+.1f}")
-    print(f"   Structural savings               : {free-forced:>+8.1f} bits")
+    print(f"   Information delivered                       : {info:>8.1f} bits")
+    print(f"   Brute-force budget   (no template at all)   : {brute:>8.1f} bits  → net {info-brute:+8.1f}   (OVERFIT)")
+    print(f"   Free budget          (4-template, flexible) : {free:>8.1f} bits  → net {info-free:+8.1f}   (TIGHT barely)")
+    print(f"   Forced budget        (structural reductions): {forced:>8.1f} bits  → net {info-forced:+8.1f}   (TIGHT)")
+    print(f"   Total savings        (brute → forced)       : {brute-forced:>+8.1f} bits")
     print()
 
     if   net > 80:   v = "★★★★★ FRAMEWORK IS DECISIVELY TIGHT"
@@ -185,6 +194,7 @@ def print_master_audit_report() -> None:
     print(f"   A_5 dark-sector channels         : {m['n_a5_dark_filled']} filled + {m['n_a5_dark_open']} open = 9")
     print(f"   Falsifiable predictions          : {m['n_falsifiable_preds']} (registered {m['registration_date']})")
     print(f"   A_s factors decomposed           : {m['n_as_factors']}  (= {m['a_s_predicted']:.3e})")
+    print(f"   Observable registry              : {m['n_registry_rows']} rows (each with all 9-phase classifications)")
     print()
     print(" URT iteration operator-level (Phase 9):")
     print(f"   L_{{G_{{13}}}} trace                  : {m['L_trace']:.1f}  (= D!·V)")
