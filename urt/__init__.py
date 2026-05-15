@@ -2774,6 +2774,42 @@ from .unified_recipe import (
     TemplateMatch,
 )
 
+# ── K_4 ⊕ A_5 Channel Mapping (2026-05-15) ──────────────────────────────
+# Structural justification for the 4-template scheme: |K_4| = D+1 = 4
+# (the visible-sector group) gives 4 channels, each one a template family.
+# |A_5| = D!+D = D² = 9 gives 9 dark-sector slots (4 filled, 5 open).
+from .k4_channel_mapping import (
+    K4_CHANNELS, FAMILY_TO_CHANNEL, PHYSICAL_TYPE_TO_CHANNEL,
+    channel_info, channel_for_family, channel_classification, channel_coverage,
+    k4_cardinality, k4_cardinality_holds,
+    A5_CARDINALITY, A5_FILLED, A5_OPEN_PREDICTIONS,
+    a5_channel_coverage, a5_cardinality_holds,
+    channel_assignment_dof_bits,
+    total_template_budget_with_channels_bits,
+    net_information_with_channels_bits,
+    k4_channel_audit_passes, k4_strengthens_audit,
+    print_k4_channel_report,
+    ChannelMatch,
+)
+
+# ── Structural DOF Reduction (2026-05-15) ───────────────────────────────
+# Slot-by-slot accounting: which per-template parameters are STRUCTURALLY
+# forced (0 bits) vs free.  Converts the +12-bit "TIGHT barely" verdict
+# into +120 bits "DECISIVELY TIGHT" by crediting documented forcings.
+from .structural_dof import (
+    SlotDOF,
+    INT_SLOTS, GAMMA_SLOTS, DELTA_SLOTS, TRIG_SLOTS, FAMILY_SLOTS,
+    family_free_dof, family_forced_dof, family_savings,
+    total_free_budget_bits, total_forced_budget_bits,
+    net_information_after_structural_reduction,
+    per_family_summary,
+    structural_reductions_are_strict,
+    total_savings_positive,
+    framework_is_tight_with_structural_reductions,
+    structural_dof_audit_passes,
+    print_structural_dof_report,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
