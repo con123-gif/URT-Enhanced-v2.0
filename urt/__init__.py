@@ -2838,6 +2838,37 @@ from .spectrum_to_levels import (
     print_spectrum_to_levels_report,
 )
 
+# ── Coefficient Projection — K_4 ⊕ A_5 sector decomposition (2026-05-15) ──
+# Every v9 coefficient classified into 6 canonical sector classes:
+#   K4_RATIO, A5_RATIO, SECTOR_RATIO, K4_POWER, GEOMETRIC, COMPOUND.
+# Reduces coefficient slot DOF from 4 bits to 3 bits — additional +15
+# bits net info across the 15 classified observables.
+from .coefficient_projection import (
+    K4_ELEMENTS, A5_ELEMENTS, COEFFICIENT_CLASSES,
+    CoefficientForm, COEFFICIENT_TABLE,
+    coefficient_class_for, all_classified, coefficient_classes_used,
+    coefficient_dof_per_slot_bits, coefficient_savings_bits,
+    total_coefficient_savings_bits,
+    all_v9_coefficients_classified, at_least_5_coefficient_classes_used,
+    coefficient_projection_audit_passes,
+    print_coefficient_projection_report,
+)
+
+# ── Correction Projection — perturbation-order decomposition (2026-05-15) ──
+# Every v9 (1 + ε) correction projects to one of 5 canonical orders:
+#   IDENTITY, ORDER_GAMMA, ORDER_ETA, ORDER_DELTASTAR, SECTOR_RATIO
+# Reduces correction-slot DOF from 2 bits to 1.6 bits per slot —
+# additional +8 bits net info.
+from .correction_projection import (
+    CORRECTION_ORDERS, CorrectionForm, CORRECTION_TABLE,
+    correction_order_for, correction_orders_used,
+    all_corrections_classified,
+    correction_dof_per_slot_bits, correction_savings_bits,
+    total_correction_savings_bits,
+    all_orders_used, correction_projection_audit_passes,
+    print_correction_projection_report,
+)
+
 __version__ = "2.9.86"
 __author__ = "Cornelius Lytollis"
 __all__ = [
