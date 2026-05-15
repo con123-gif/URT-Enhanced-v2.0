@@ -18,7 +18,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (8,441 tests, 0 xfail).
+and verified in CI (8,642 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -1317,7 +1317,7 @@ Two extensions arrive in the same wave:
 
 ### v2.9.84 CI gates
 
-All pass at machine precision (8,441 / 8,441 tests, 0 xfail):
+All pass at machine precision (8,642 / 8,642 tests, 0 xfail):
 
 ```python
 from urt import (
@@ -1406,6 +1406,54 @@ from urt import tesla_369_audit_passes
 assert tesla_369_audit_passes()
 ```
 
+### New Modules (v2.9.86 — Structural-DOF Audit, the 9-phase investigation)
+
+A meta-audit on the framework: prove that the v9 closed forms aren't a
+curve-fit by deriving every slot value structurally from D=3 alone.
+
+| File | Domain |
+|---|---|
+| `urt/unified_recipe.py` | Phase 1 — 4-template scheme: every v9 formula is INT / GAMMA_LADDER / DELTA_STAR_LIN / TRIG_WRAPPER |
+| `urt/k4_channel_mapping.py` | Phase 2 — \|K_4\|=D+1=4 channels = 4 templates; \|A_5\|=D²=9 dark slots |
+| `urt/cathedral_levels.py` | Phase 3a — γ-exponents are Cathedral compounds {0, 1=D-2, 3=D, 5=q, 9=D², 64=(D+1)^D, -7=-(D!+1)} |
+| `urt/spectrum_to_levels.py` | Phase 3b — 4 of 7 γ-levels {0, 3, 5, 9} are LITERALLY L_{G_13} eigenvalues |
+| `urt/coefficient_projection.py` | Phase 4 — every v9 coefficient → 6 K_4 ⊕ A_5 sector classes (K4_RATIO, A5_RATIO, SECTOR_RATIO, K4_POWER, GEOMETRIC, COMPOUND) |
+| `urt/correction_projection.py` | Phase 5 — every (1+ε) → 5 perturbation orders (IDENTITY, ORDER_GAMMA, ORDER_ETA, ORDER_DELTASTAR, SECTOR_RATIO) |
+| `urt/a5_dark_sector.py` | Phase 6 — 9 A_5 dark-sector slots: 4 filled (axion, sterile ν, WIMP, w=-1), 5 open structural predictions (dark photon, dark Higgs, dark radiation, second mediator, topological defect) |
+| `urt/falsifiable_log.py` | Phase 7 — 3 open predictions pinned with date stamps (2026-05-15): axion 60.7 µeV, Casimir +0.124 ppm at 100 nm, r=12/57²≈0.00369; `dataclass(frozen=True)` prevents post-hoc modification |
+| `urt/eigenmode_decomposition.py` | Phase 8 — A_s = (G-D)²·(D+1)³·q·32/9·π⁴·γ⁹·cos⁴(π/V) decomposed factor-by-factor into K_4/A_5/GEOMETRIC/RG sectors; product reconstructs A_s to machine precision |
+| `urt/urt_projection.py` | Phase 9 — actually RUNS urt_evolve on G_{13}; verifies tr(L)=D!·V=72, K_4⊕A_5 trace split = 11+61=72, all 6 distinct eigenvalues are Cathedral integers |
+| `urt/observable_registry.py` | Cross-cutting per-row registry: 29 v9 observables with all 9-phase classifications visible in one table |
+| `urt/structural_dof.py` | Three-tier DOF accounting: brute-force 709.3 → 4-template free 270.1 → forced structural 142.4; total savings +566.9 bits |
+| `urt/master_audit.py` | Single source of truth: `print_master_audit_report()` shows everything; `master_audit_passes()` is the single CI gate |
+
+### v2.9.86 — Headline Verdict
+
+```
+Information delivered                       :  282.1 bits
+Brute-force budget   (no template at all)   :  709.3 bits  → net  -427.2  (OVERFIT)
+Free budget          (4-template, flexible) :  270.1 bits  → net   +12.0  (TIGHT barely)
+Forced budget        (structural reductions):  142.4 bits  → net  +139.7  (TIGHT)
+Total savings        (brute → forced)       : +566.9 bits
+
+Verdict: ★★★★★ FRAMEWORK IS DECISIVELY TIGHT
+```
+
+The structural arguments compress DOF by 566.9 bits while delivering 282 bits of information.
+Without them, brute-force fitting would overfit by 427 bits. The framework's per-formula slot
+values (template family, γ-exponent, coefficient, correction) are all derived from D=3 alone
+via the K_4 ⊕ A_5 sector structure and the L_{G_13} Laplacian spectrum, not freely chosen.
+
+CI gate:
+
+```python
+from urt import master_audit_passes, print_master_audit_report
+assert master_audit_passes()    # passes; 8642/8642 tests
+print_master_audit_report()     # full table of all 11 phase audits + DOF accounting
+```
+
+Full write-up: `docs/UNIFIED_RECIPE_AUDIT.md` (4 addenda covering all 9 phases).
+
 ---
 
 CI gates for the post-v2.9.48 wave:
@@ -1423,6 +1471,7 @@ from urt import (
     quantum_pi_phi_e_audit_passes,         # v2.9.84
     qurt_chaos_audit_passes,               # v2.9.84
     tesla_369_audit_passes,                # v2.9.85
+    master_audit_passes,                   # v2.9.86 (covers all 11 sub-audits)
 )
 assert all([
     urt_algorithm_audit_passes(),          cathedral_sectors_audit_passes(),
@@ -1431,6 +1480,7 @@ assert all([
     self_reference_audit_passes(),         chaos_and_flow_audit_passes(),
     quantum_urt_audit_passes(),            quantum_pi_phi_e_audit_passes(),
     qurt_chaos_audit_passes(),             tesla_369_audit_passes(),
+    master_audit_passes(),                 # single gate for the v2.9.86 audit
 ])
 ```
 
@@ -1682,7 +1732,7 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 8,441 tests
+python -m pytest tests/ -q              # all 8,642 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
@@ -2053,7 +2103,7 @@ from urt import (
 
 This repo has TWO permanent branches.
 
-**`main`** — active development.  Full theory: 225 modules, 8,441 tests,
+**`main`** — active development.  Full theory: 238 modules, 8,642 tests,
 27 registered predictions across QED/cosmology/EW/dark-matter/inflation,
 v9 anchor-free derivation chain, all domain-specific *_cathedral
 modules, Quantum URT (v2.9.84) with π-φ-e Lindblad lift and chaos

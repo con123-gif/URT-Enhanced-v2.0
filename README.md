@@ -9,7 +9,9 @@
 **One number. Forced by geometry. Drives a dynamical flow that reproduces fundamental constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK
-**Version:** 2.9.83 | **Tests:** 8,173 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
+**Version:** 2.9.86 | **Tests:** 8,642 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
+
+**Structural-DOF audit (v2.9.86):** 9-phase investigation; **net +139.7 bits** information surplus after structural reductions (vs. brute-force budget −427 bits — would overfit without the K_4 ⊕ A_5 forcings). Single CI gate `master_audit_passes()` runs all 11 phase audits. See `docs/UNIFIED_RECIPE_AUDIT.md` for the full write-up.
 
 ---
 
@@ -297,7 +299,26 @@ The framework is **falsifiable**. If r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 
 ---
 
-## Module Map (v2.9.83 — 217 modules · 8,173 tests · 27 registered predictions)
+## Module Map (v2.9.86 — 230 modules · 8,642 tests · 27 registered predictions)
+
+### Structural-DOF Audit (v2.9.86 — the 9-phase investigation)
+| Module | Purpose |
+|---|---|
+| `urt/master_audit.py` | Single CI gate `master_audit_passes()`; reports three-tier DOF accounting and all 11 phase audits |
+| `urt/unified_recipe.py` | Phase 1: 4-template scheme (INT/GAMMA_LADDER/DELTA_STAR_LIN/TRIG_WRAPPER) |
+| `urt/k4_channel_mapping.py` | Phase 2: \|K_4\|=D+1=4 channels ↔ 4 templates; \|A_5\|=D²=9 dark slots |
+| `urt/cathedral_levels.py` | Phase 3a: γ-exponents enumerated as Cathedral compounds {0, 1, 3, 5, 9, 64, -7} |
+| `urt/spectrum_to_levels.py` | Phase 3b: 4 of 7 γ-levels {0,3,5,9} are literal L_{G_13} eigenvalues |
+| `urt/coefficient_projection.py` | Phase 4: every v9 coefficient → K_4 ⊕ A_5 sector class (6 classes) |
+| `urt/correction_projection.py` | Phase 5: every v9 correction → perturbation order (5 orders) |
+| `urt/a5_dark_sector.py` | Phase 6: 9 A_5 dark-sector slots (4 filled, 5 open structural predictions) |
+| `urt/falsifiable_log.py` | Phase 7: axion 60.7 µeV / Casimir +0.124 ppm / r=12/57² pinned, date-stamped, immutable |
+| `urt/eigenmode_decomposition.py` | Phase 8: A_s factor-by-factor sector origin (machine-precision reconstruction) |
+| `urt/urt_projection.py` | Phase 9: actually runs URT iteration on G_{13}, derives tr(L)=D!·V=72, K_4⊕A_5 trace split |
+| `urt/observable_registry.py` | Cross-cutting per-row registry: 29 v9 observables with all 9-phase classifications |
+| `urt/structural_dof.py` | Three-tier DOF accounting: brute-force 709 → 4-template 270 → forced 142 → **+139.7 net** |
+
+
 
 ### Core Foundation
 | Module | Purpose |
