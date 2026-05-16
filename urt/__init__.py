@@ -1888,6 +1888,25 @@ from .symmetry_adapted_qft import (
     print_cathedral_qft_report,
 )
 
+# v2.9.88 — path-integral derivation of the QFT propagator
+# Closes the iron_proof.py "speculative_honest" gap: the propagator is
+# no longer postulated.  Langevin URT around δ★ generates equilibrium
+# samples whose two-point function empirically matches T·H^(-1) where
+# H = (1+δ★²)·I + L_{G_{13}} — the K_4 ⊕ A_5 mass spectrum emerges
+# mode-by-mode from the chaos-selected dynamics.
+from .cathedral_path_integral import (
+    hessian_at_delta_star,
+    analytical_propagator_matrix,
+    per_mode_masses_analytical,
+    langevin_step,
+    equilibrium_samples,
+    empirical_correlation_matrix,
+    per_mode_masses_empirical,
+    cathedral_path_integral_audit,
+    cathedral_path_integral_audit_passes,
+    print_cathedral_path_integral_report,
+)
+
 # v2.9.40 — predictions registry (added 2026-05-09)
 # Single source of truth for "what does the framework predict and how
 # does it compare to observation?"
