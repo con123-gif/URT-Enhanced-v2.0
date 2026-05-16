@@ -757,7 +757,7 @@ anchor is a framing question; both chains are kept so nothing is lost.
 | v2.9.37 | Test-coverage wave + programmatic identity engine: 1,067+ identities surfaced; six surfaced bugs adjudicated; CI workflow added | 6707 |
 | v2.9.38 | **`urt.cathedral_engine`**: π-φ-e flow on G_{13} as a first-class module; Lagrangian view; K₄⊕A₅ unification; universe-from-chaos arc executable in code | 6756 |
 | v2.9.39 | **`urt.first_principles`**: eight-step forcing chain proves π/φ/e are forced, not chosen — CI gate `all_steps_verify()` runs at machine precision | 6,779 |
-| v2.9.40 | **`urt.predictions_registry`**: canonical scoreboard of every framework prediction (17 entries; later expanded to 26) | 6,793 |
+| v2.9.40 | **`urt.predictions_registry`**: canonical scoreboard of every framework prediction (17 entries; later expanded to 27) | 6,793 |
 | v2.9.41–.50 | **9 tour modules** — Mathematical Connections, Grand/Deep/Modular/Quantum-Lie/Geometric/Classical/Advanced/Topological/Codes — surface 200+ Cathedral identities across pure mathematics; 5 cross-cutting compounds appear in 3+ modules each (V·F=240, 4/9, 5/3, 2^q·π², K₄⊕A₅) | ~7,000 |
 | v2.9.51 | URT algorithm analysis — per-mode Laplacian contraction factors, geometric variance decay rate ρ ≈ 0.987, basin of attraction, all-modes-contracting CI gate | ~7,030 |
 | v2.9.52–.55 | **K₄ ⊕ A₅ sector framework**: dark sector lives in A₅ exhaust; matter direction theorem `D·N·φ > F·(1−γ)·π` (margin 1.05); exhaust = 9 extra dimensions | ~7,090 |

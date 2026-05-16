@@ -617,4 +617,4 @@ the three-tier DOF accounting in one call.
 - `urt/urt_projection.py`, `tests/test_urt_projection.py`
 - `urt/master_audit.py`, `tests/test_master_audit.py`
 - `urt/observable_registry.py`, `tests/test_observable_registry.py`
-- Total suite: **8642 / 8642 passing**
+- Total suite: **8,760 / 8,760 passing**
