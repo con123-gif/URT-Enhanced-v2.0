@@ -1877,6 +1877,26 @@ from .first_principles import (
     all_steps_verify,
 )
 
+# v2.9.87 — chaos-selected QFT on the attractor-selected basis
+# Architecture: chaos → π-φ-e flow → δ★ attractor → fluctuation basis K_4 ⊕ A_5
+# → second-quantized propagators (K_4 no γ-shift, A_5 + γ).  The QFT is built
+# from fluctuations around the dynamically-selected δ★, not a postulated
+# geometry.  See module docstring + iron_proof.py speculative_honest list.
+from .symmetry_adapted_qft import (
+    K4_DIM, A5_DIM,
+    K4_TRACE_TARGET, A5_TRACE_TARGET, L_TRACE_TARGET,
+    chaos_selects_delta_star,
+    fluctuation_hessian_at_delta_star,
+    attractor_selected_basis,
+    K4_basis, A5_basis,
+    mode_eigenvalue, mode_sector,
+    propagator,
+    K4_pole_masses_squared, A5_pole_masses_squared,
+    cubic_coupling_tensor, sector_block_norm, selection_rule_summary,
+    cathedral_qft_audit, cathedral_qft_audit_passes,
+    print_cathedral_qft_report,
+)
+
 # v2.9.40 — predictions registry (added 2026-05-09)
 # Single source of truth for "what does the framework predict and how
 # does it compare to observation?"
