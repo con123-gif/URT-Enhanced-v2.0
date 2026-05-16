@@ -51,16 +51,26 @@ class TestPerModeContraction:
         expected = 1.0 - 13.0 / (32 * pi ** 2)
         assert abs(per_step_factor_cathedral(13.0) - expected) < 1e-15
 
-    def test_closed_form_close_to_rounded_implementation(self):
-        """The Cathedral closed form uses EXACT 1/(8π)·1/(4π) = 1/(32π²),
-        while the legacy `per_mode_contraction_factors()` uses the
-        rationalized (0.04, 0.08) ≈ rounded coefficients.  The two agree
-        to ~1e-3 (the rounding noise of 0.04 vs 1/(8π))."""
+    def test_closed_form_is_laplacian_only_factor(self):
+        """`per_step_factor_cathedral(λ) = 1 − λ/(2^q·π²)` is the
+        Laplacian-only contribution to the per-step contraction factor.
+
+        The full URT factor (from
+        `urt.urt_algorithm_analysis.per_mode_contraction_factors`)
+        additionally includes the constant pull contribution
+        `η · μ · (1 + δ★²)` ≈ 0.0245, which contracts every mode and is
+        what selects δ★ from chaos.
+
+        The two formulas differ by exactly the constant pull offset.
+        """
         from urt.urt_algorithm_analysis import per_mode_contraction_factors
-        legacy = per_mode_contraction_factors()
-        for lam, fac, _ in cathedral_contraction_table():
-            if lam in legacy:
-                assert abs(legacy[lam] - fac) < 1e-3
+        from urt.cathedral_engine import delta_star, ETA_RAT, MU_RAT
+        pull_offset = ETA_RAT * MU_RAT * (1 + delta_star ** 2)
+        full = per_mode_contraction_factors()
+        for lam, lap_only_fac, _ in cathedral_contraction_table():
+            if lam in full:
+                offset = lap_only_fac - full[lam]
+                assert abs(offset - pull_offset) < 5e-4
 
     def test_all_modes_contract(self):
         """Every Laplacian eigenvalue gives a per-step factor in [0,1]."""
