@@ -32,6 +32,13 @@ from urt.cathedral_path_integral import (
     extract_mode_frequencies,
     lagrangian_audit_passes,
     cathedral_qft_full_audit_passes,
+    # One-loop self-energy
+    cubic_coupling_tensor_local,
+    bubble_integral,
+    one_loop_self_energy,
+    dressed_pole_masses,
+    one_loop_finite_audit_passes,
+    print_one_loop_report,
 )
 
 
@@ -318,5 +325,65 @@ class TestLagrangianAudit:
         assert lagrangian_audit_passes() is True
 
     def test_full_qft_audit_passes(self):
-        """Single combined gate: both static (Langevin) AND dynamical (Feynman) derivations close."""
+        """Combined gate: static (Langevin) + dynamical (Feynman) + one-loop (finite) all close."""
         assert cathedral_qft_full_audit_passes() is True
+
+
+# ─── One-loop self-energy (loops are finite on G_{13}) ───────────────────
+
+class TestOneLoopSelfEnergy:
+    def test_cubic_tensor_shape(self):
+        W = cubic_coupling_tensor_local()
+        assert W.shape == (N, N, N)
+
+    def test_cubic_tensor_matches_symmetry_adapted_qft(self):
+        """Local tensor should be numerically identical to the one in
+        symmetry_adapted_qft (both compute Σ_i V_{ij}V_{im}V_{in})."""
+        from urt.symmetry_adapted_qft import cubic_coupling_tensor
+        local = cubic_coupling_tensor_local()
+        external = cubic_coupling_tensor()
+        np.testing.assert_allclose(local, external, atol=1e-14)
+
+    def test_bubble_integral_formula(self):
+        """B(a, b) = 1/(2·a·b·(a+b))."""
+        for a, b in [(1.0, 1.0), (2.0, 3.0), (0.5, 4.0)]:
+            assert bubble_integral(a, b) == pytest.approx(1.0 / (2 * a * b * (a + b)))
+
+    def test_bubble_integral_symmetric(self):
+        for a, b in [(1.5, 2.5), (0.7, 3.3)]:
+            assert bubble_integral(a, b) == bubble_integral(b, a)
+
+    def test_one_loop_self_energy_shape(self):
+        Sigma = one_loop_self_energy()
+        assert Sigma.shape == (N,)
+
+    def test_one_loop_all_finite(self):
+        """Every Σ_k(0) is a finite real number — no UV divergence on G_{13}."""
+        Sigma = one_loop_self_energy()
+        assert np.all(np.isfinite(Sigma))
+
+    def test_one_loop_corrections_are_small(self):
+        """|Σ_k(0) / m_k²| < 5 % for every mode (perturbation theory valid)."""
+        from urt.cathedral_engine import cathedral_laplacian, delta_star
+        Sigma = one_loop_self_energy()
+        eigvals = np.linalg.eigvalsh(cathedral_laplacian())
+        m_sq = (1 + delta_star ** 2) + eigvals
+        rel_shifts = np.abs(Sigma / m_sq)
+        assert rel_shifts.max() < 0.05
+
+    def test_dressed_pole_masses_close_to_bare(self):
+        """One-loop correction is small → dressed masses ~ bare masses."""
+        bare = feynman_pole_masses()
+        dressed = dressed_pole_masses()
+        rel_err = np.abs(dressed - bare) / bare
+        assert rel_err.max() < 0.05    # ≤5 % shift
+
+    def test_one_loop_finite_audit_passes(self):
+        """CI gate: loops are finite + perturbation theory well-behaved."""
+        assert one_loop_finite_audit_passes() is True
+
+    def test_print_one_loop_report_does_not_crash(self, capsys):
+        print_one_loop_report()
+        captured = capsys.readouterr()
+        assert "ONE-LOOP" in captured.out
+        assert "finite" in captured.out.lower()

@@ -464,14 +464,152 @@ def lagrangian_audit_passes(
 
 
 def cathedral_qft_full_audit_passes() -> bool:
-    """Single CI gate for both halves of the QFT derivation:
+    """Single CI gate for the three halves of the QFT derivation:
 
       - Equal-time propagator from over-damped Langevin (T·H^(-1))
       - Feynman pole masses from Lagrangian dynamics (m_k from FFT)
+      - One-loop self-energies finite mode-by-mode (no UV divergence)
 
-    True iff both derivations close at machine-acceptable precision.
+    True iff all three close at machine-acceptable precision.
     """
-    return cathedral_path_integral_audit_passes() and lagrangian_audit_passes()
+    return (
+        cathedral_path_integral_audit_passes()
+        and lagrangian_audit_passes()
+        and one_loop_finite_audit_passes()
+    )
+
+
+# ═════════════════════════════════════════════════════════════════════════
+#  ONE-LOOP SELF-ENERGY — finite by construction on G_{13}
+# ═════════════════════════════════════════════════════════════════════════
+#
+# The Cathedral V(δ) expanded around δ★ has the cubic term
+#     V_3(ξ) = δ★ · Σ_i ξ_i³
+# Projecting onto the L-eigenbasis ξ_i = Σ_k V_{ik} c_k:
+#     V_3 = δ★ · Σ_{j,m,n} W_{jmn} c_j c_m c_n
+# where W is the cubic coupling tensor (cf. symmetry_adapted_qft).
+# Matching the standard QFT convention V_3 = (g/3!)·W·c³ gives g = 6·δ★.
+#
+# In 0+1D Euclidean field theory the one-loop bubble integral at zero
+# external momentum is FINITE:
+#     B(m_a, m_b)  =  ∫(dω/2π)·1/((ω²+m_a²)(ω²+m_b²))  =  1/(2·m_a·m_b·(m_a+m_b))
+#
+# The one-loop self-energy for mode k is therefore
+#     Σ_k(0)  =  −(g²/2) · Σ_{a,b} W_{kab}² · B(m_a, m_b)
+# — a finite sum over 13×13 = 169 mode-pair terms.  This realises the
+# framework's "natural UV completion" claim: G_{13} has only 13 modes,
+# so every loop integral is automatically finite without subtraction.
+
+def _laplacian_eigendata():
+    """Cached return of (eigvals, V) of L_{G_{13}}."""
+    L = cathedral_laplacian()
+    return np.linalg.eigh(L)
+
+
+def cubic_coupling_tensor_local() -> np.ndarray:
+    """W_{jmn} = Σ_i V_{ij} V_{im} V_{in} (cubic vertex in L-eigenbasis).
+
+    Defined here locally to avoid a circular import from
+    `symmetry_adapted_qft` (which itself imports from this module's
+    backbone, `cathedral_engine`).  Numerically identical to
+    `symmetry_adapted_qft.cubic_coupling_tensor()`.
+    """
+    _, V = _laplacian_eigendata()
+    return np.einsum('ij,im,in->jmn', V, V, V)
+
+
+def bubble_integral(m_a: float, m_b: float) -> float:
+    """0+1D one-loop bubble integral at zero external momentum.
+
+        B(m_a, m_b)  =  ∫(dω/2π) · 1/((ω²+m_a²)(ω²+m_b²))
+                     =  1/(2 · m_a · m_b · (m_a + m_b)).
+    """
+    return 1.0 / (2.0 * m_a * m_b * (m_a + m_b))
+
+
+def one_loop_self_energy() -> np.ndarray:
+    """One-loop self-energy Σ_k(0) for each of the 13 K_4 ⊕ A_5 modes.
+
+        Σ_k(0)  =  −(g² / 2) · Σ_{a,b} W_{kab}² · B(m_a, m_b),    g = 6·δ★.
+
+    Returns the (13,) array of per-mode mass-squared shifts at zero
+    external momentum.  All finite (the bubble integral on G_{13} is a
+    finite 13×13 sum).
+    """
+    eigvals, _ = _laplacian_eigendata()
+    m = np.sqrt((1 + delta_star ** 2) + eigvals)
+    W = cubic_coupling_tensor_local()
+    g = 6.0 * delta_star
+    Sigma = np.empty(N)
+    for k in range(N):
+        s = 0.0
+        for a in range(N):
+            for b in range(N):
+                s += W[k, a, b] ** 2 * bubble_integral(m[a], m[b])
+        Sigma[k] = -(g ** 2 / 2.0) * s
+    return Sigma
+
+
+def dressed_pole_masses() -> np.ndarray:
+    """The one-loop dressed pole masses √(m_k² + Σ_k(0)) per mode.
+
+    These are the corrected Feynman pole masses including the bubble
+    diagram contribution from the cubic vertex.  Compare to
+    `feynman_pole_masses()` (bare).
+    """
+    m_squared_bare = ((1 + delta_star ** 2) + np.linalg.eigvalsh(cathedral_laplacian()))
+    Sigma = one_loop_self_energy()
+    m_squared_dressed = m_squared_bare + Sigma
+    # Take absolute value to avoid sqrt of small negatives (shouldn't happen
+    # with reasonable couplings, but guard against numerical edge cases).
+    return np.sqrt(np.maximum(m_squared_dressed, 1e-30))
+
+
+def one_loop_finite_audit_passes(
+    *, max_relative_shift: float = 0.05,
+) -> bool:
+    """CI gate: every mode's one-loop self-energy is finite and small.
+
+    The "natural UV completion" claim of the Cathedral QFT: G_{13} has
+    only 13 modes, so every loop diagram is automatically finite without
+    regularisation/subtraction.  This audit verifies all 13 self-energy
+    values are finite AND that the relative mass-squared shift
+    |Σ_k(0) / m_k²| is below `max_relative_shift` (default 5 %) — i.e.,
+    perturbation theory is well-behaved.
+    """
+    Sigma = one_loop_self_energy()
+    eigvals, _ = _laplacian_eigendata()
+    m_squared = (1 + delta_star ** 2) + eigvals
+    if not np.all(np.isfinite(Sigma)):
+        return False
+    rel_shift = np.abs(Sigma / m_squared)
+    return bool(np.max(rel_shift) < max_relative_shift)
+
+
+def print_one_loop_report() -> None:
+    """Print the one-loop self-energy report per mode."""
+    eigvals, _ = _laplacian_eigendata()
+    m_bare = np.sqrt((1 + delta_star ** 2) + eigvals)
+    Sigma = one_loop_self_energy()
+    m_dressed = dressed_pole_masses()
+    bar = "=" * 78
+    print(bar)
+    print(" CATHEDRAL ONE-LOOP SELF-ENERGY — finite on G_{13} (no UV divergence)")
+    print(bar)
+    print()
+    print(f"  {'λ':>5} {'sector':>8} {'m_k bare':>10} {'Σ_k(0)':>12} {'m_k dressed':>12} {'rel shift':>10}")
+    print(f"  {'-'*5} {'-'*8} {'-'*10} {'-'*12} {'-'*12} {'-'*10}")
+    K4_DIM = 4
+    for k in range(N):
+        sector = "K_4" if k < K4_DIM else "A_5"
+        rel = Sigma[k] / m_bare[k] ** 2
+        print(f"  {eigvals[k]:5.1f} {sector:>8} {m_bare[k]:10.4f} "
+              f"{Sigma[k]:12.4e} {m_dressed[k]:12.4f} {rel*100:>9.2f}%")
+    print()
+    print(f"  All Σ_k finite?                {bool(np.all(np.isfinite(Sigma)))}")
+    print(f"  Max |Σ_k / m_k²|:              {float(np.max(np.abs(Sigma / m_bare**2))):.3f}")
+    print(f"  one_loop_finite_audit_passes:  {one_loop_finite_audit_passes()}")
+    print(bar)
 
 
 __all__ = [
@@ -493,4 +631,11 @@ __all__ = [
     "extract_mode_frequencies",
     "lagrangian_audit_passes",
     "cathedral_qft_full_audit_passes",
+    # One-loop self-energy
+    "cubic_coupling_tensor_local",
+    "bubble_integral",
+    "one_loop_self_energy",
+    "dressed_pole_masses",
+    "one_loop_finite_audit_passes",
+    "print_one_loop_report",
 ]

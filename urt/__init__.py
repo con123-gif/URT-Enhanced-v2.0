@@ -1912,6 +1912,13 @@ from .cathedral_path_integral import (
     extract_mode_frequencies,
     lagrangian_audit_passes,
     cathedral_qft_full_audit_passes,
+    # One-loop self-energy (finite by construction on G_{13})
+    cubic_coupling_tensor_local,
+    bubble_integral,
+    one_loop_self_energy,
+    dressed_pole_masses,
+    one_loop_finite_audit_passes,
+    print_one_loop_report,
 )
 
 # v2.9.40 — predictions registry (added 2026-05-09)
