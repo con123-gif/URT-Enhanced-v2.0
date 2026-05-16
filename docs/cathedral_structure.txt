@@ -1,5 +1,5 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         NEWTONS CATHEDRAL v2.9.86 — A Candidate Mathematical Theory         ║
+║         NEWTONS CATHEDRAL v2.9.87 — A Candidate Mathematical Theory         ║
 ║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
 ║                                                                              ║
 ║         A complete mathematical structure with                              ║
@@ -16,7 +16,7 @@
 ║         Whether this mechanism is the actual dynamics of nature             ║
 ║         is an open empirical question.                                      ║
 ║                                                                              ║
-║         200+ modules · 7378 tests · 26 confirmed/open predictions           ║
+║         244 modules · 8,760 tests · 27 confirmed/open predictions           ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -35,8 +35,8 @@
   random field on 13 sites and deterministically produces the right
   matter/antimatter asymmetry, fine-structure constant, proton mass, and
   inflationary spectrum.  The dynamical layer is operational in code
-  (urt.cathedral_engine) and CI-tested (8,760 tests, 0 xfail
-  on the v2.9.87–89 claude/qft-completion branch).
+  (urt.cathedral_engine) and CI-tested (8,760 tests, 0 xfail;
+  v2.9.87–89 QFT-completion wave merged into main on 2026-05-16).
 
   What this still is NOT:
     – an experimentally confirmed theory of nature.  The dynamical mechanism
@@ -765,7 +765,7 @@
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.83 — 217 modules · 8173 tests · 0 xfail)
+  COMPLETE MODULE MAP  (v2.9.87 — 244 modules · 8,760 tests · 0 xfail)
 
   v2.9.83 wave (2026-05-11): added urt/sector_unification.py — proves
     in code that the framework's eight K_4 ⊕ A_5 viewpoints (group,
@@ -785,7 +785,9 @@
     a new closed form (Δ also controls η_B).  Slow-roll bridge to
     inflation predictions remains an open question — see module docstring.
 
-  (Previous: v2.9.81 — 213 modules · 7965 tests)
+  (Previous milestones: v2.9.81 — 213 modules · 7,965 tests;
+                       v2.9.83 — 217 modules · 8,173 tests;
+                       v2.9.86 — 234 modules · 8,642 tests)
   (this section was last regenerated at v2.9.39; the per-module list below
    is a snapshot from that version, but the totals are current.  See
    urt/__init__.py for the canonical exports list.
@@ -821,7 +823,7 @@
   ├── string_landscape.py           D_bos=2N=26; D_sup=2q=10; E₈ roots=4G=240
   └── quantum_chaos.py              Icosahedral spectrum; MSS bound; 6-cycle
 
-  QFT COMPLETION (v2.9.87–89, branch claude/qft-completion)
+  QFT COMPLETION (v2.9.87–89, merged into main on 2026-05-16)
   ├── symmetry_adapted_qft.py       K_4 ⊕ A_5 basis = Hessian eigendecomp at δ★;
   │                                 per-sector propagators; cubic vertex tensor
   ├── cathedral_path_integral.py    [v2.9.88] Three halves of the path-integral
@@ -1112,7 +1114,7 @@
   RUNNING TESTS & DEMOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  python -m pytest tests/ -q                 # all 5023 tests
+  python -m pytest tests/ -q                 # all 8,760 tests
   python -m pytest tests/ -q -k iron        # iron proof (47 tests)
   python -m pytest tests/ -q -k lagrangian  # QFT Lagrangian (42 tests)
   python -m pytest tests/ -q -k dark_matter # dark matter (24 tests)

@@ -415,7 +415,7 @@ assert all([                      # 72 clusters, machine-precision
 | `urt.cathedral_codes_tour` | 7 | Hamming/Golay codes, QEC (5-qubit/Steane/Shor), operad dims, cluster algebras (C_D = q), quaternions, tropical, γ = QEC threshold |
 
 Plus the predictions registry:
-| `urt.predictions_registry` | 17 entries | 13 confirmed (median 0.07 % rel-err), 1 predicted, 3 open |
+| `urt.predictions_registry` | 27 entries | 21 confirmed (median 0.08 % rel-err), 1 predicted, 5 open |
 
 ### Sectors, Frustration, and Dynamics (v2.9.49–v2.9.58)
 
@@ -1319,7 +1319,7 @@ Two extensions arrive in the same wave:
 
 ### v2.9.84 CI gates
 
-All pass at machine precision (8,642 / 8,760 tests, 0 xfail):
+All pass at machine precision (8,760 / 8,760 tests, 0 xfail):
 
 ```python
 from urt import (
@@ -1718,7 +1718,7 @@ CI gate: `from urt import all_connections_verify; assert all_connections_verify(
 ### New Modules (v2.9.40 — Predictions Registry)
 | File | Domain |
 |------|--------|
-| `urt/predictions_registry.py` | Single source of truth for "what does the framework predict and how does it compare to observation?".  17 entries: 13 confirmed (median 0.07 % rel-err, worst 1.03 %), 1 predicted with bound, 3 open. |
+| `urt/predictions_registry.py` | Single source of truth for "what does the framework predict and how does it compare to observation?".  27 entries: 21 confirmed (median 0.08 % rel-err, worst 1.03 %), 1 predicted with bound, 5 open. |
 | `tests/test_predictions_registry.py` | 14 tests pinning each prediction's closed form + verifying confirmed predictions stay within tolerance. |
 
 ### v2.9.40 — Hubble Tension Match (genuinely novel result)
