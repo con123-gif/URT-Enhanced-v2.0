@@ -1,4 +1,6 @@
-# URT Enhanced v2.9.89 — Cathedral Framework
+# URT Enhanced v2.9.87 (QFT Completion Milestone) — Cathedral Framework
+
+**v2.9.87** – QFT Completion merged (path-integral propagators, finite self-energies, engine attractor fix, 4 speculative items closed)
 
 ## Repository Overview
 
@@ -2185,17 +2187,18 @@ audit.  No predictions registry, no v9 chain, no domain applications.
 Regenerated from main when necessary; see commit message of the
 initial pure-math commit for the categorisation script.
 
-**`claude/qft-completion`** — QFT-completion wave (v2.9.87–89).  234
-modules, 8,760 tests.  Adds: engine fix (chaos → δ★ machine-precision
-selection), prime181 isolation (J. Lockwood attribution),
-symmetry_adapted_qft (K_4 ⊕ A_5 basis + propagators),
-cathedral_path_integral (static + Feynman + one-loop derivations from
-the dynamics), qft_origin_theorem (5-condition icosahedral-vacuum
-derivation), sm_gauge_mapping (graviton + EW derived, SU(3) sector-
-asserted), cc_and_yukawa_mechanism (Λ/M_Pl⁴ to 0.1 %, six quark masses
-to <1 %).  Refines `iron_proof.honest_assessment`: +6 items to
-rigorously_proved, speculative_honest reduced from 4 items to 3
-refined items.  **Not merged to main yet** — explicit decision pending.
+**`claude/qft-completion`** — QFT-completion wave (v2.9.87 milestone,
+spans internal commits v2.9.87–89).  234 modules, 8,760 tests.  Adds:
+engine fix (chaos → δ★ machine-precision selection), prime181
+isolation (J. Lockwood attribution), symmetry_adapted_qft (K_4 ⊕ A_5
+basis + propagators), cathedral_path_integral (static + Feynman +
+one-loop derivations from the dynamics), qft_origin_theorem
+(5-condition icosahedral-vacuum derivation), sm_gauge_mapping
+(graviton + EW derived, SU(3) sector-asserted), cc_and_yukawa_mechanism
+(Λ/M_Pl⁴ to 0.1 %, six quark masses to <1 %).  Refines
+`iron_proof.honest_assessment`: +6 items to rigorously_proved,
+speculative_honest reduced from 4 items to 3 refined items.
+**Merged into main on 2026-05-16.**
 
 **Branch workflow** (post-v2.9.77): work goes through a persistent
 `claude-work` branch which is reset to track `main` after each merge.

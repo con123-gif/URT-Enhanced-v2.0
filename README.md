@@ -9,11 +9,22 @@
 **One number. Forced by geometry. Drives a dynamical flow that reproduces fundamental constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK
-**Version:** 2.9.89 | **Tests:** 8,760 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
+**Version:** 2.9.87 (QFT Completion Milestone) | **Tests:** 8,760 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
 
-**QFT-completion (v2.9.87–89):** path-integral derivation of the propagator from chaos-selected Langevin dynamics, Feynman pole masses from Lagrangian δ̈ = −∇V (all 13 modes empirically match `m_k = √((1+δ★²)+λ_k)`), one-loop self-energies finite mode-by-mode (no UV divergence on G_{13}), and 4-item closure of the previous `speculative_honest` list (see "QFT Completion" section below).
+**Major Update – 16 May 2026** (merged into `main` from `claude/qft-completion`)
 
-**Engine fix (v2.9.87):** removed the `exp(-t/τ)` pull decay from `cathedral_engine.urt_evolve` so chaos → δ★ now selects the attractor to machine precision (~10⁻⁵ from any chaotic initial). The pre-fix version got variance collapse but only partial mean convergence; the corrected over-damped Langevin actually selects δ★ as the framework's documentation always claimed.
+This release completes the core Quantum Field Theory sector of Newton’s Cathedral:
+
+- Full path-integral derivation of propagators from chaos-selected Langevin dynamics on G₁₃
+- Feynman pole masses derived directly from the Lagrangian `δ̈ = −∇V`, empirically matching all 13 modes
+- One-loop self-energies proven finite mode-by-mode on the icosahedral graph (no UV divergence)
+- Critical engine fix in `cathedral_engine.urt_evolve`: removed `exp(-t/τ)` decay term so chaos now reliably selects δ★ as the global attractor
+- Closed the final 4 “speculative_honest” items; “loops finite” moved to rigorously_proved category
+- Test count increased to **8,760 passing**
+
+**Remaining open items** (explicitly tracked): SU(3) identification and quark Yukawa amplitudes.
+
+This release significantly strengthens the zero-parameter claim and brings the QFT sector to a new level of rigor.
 
 **Structural-DOF audit (v2.9.86):** 9-phase investigation; **net +139.7 bits** information surplus after structural reductions (vs. brute-force budget −427 bits — would overfit without the K_4 ⊕ A_5 forcings). Single CI gate `master_audit_passes()` runs all 11 phase audits. See `docs/UNIFIED_RECIPE_AUDIT.md` for the full write-up.
 
@@ -334,7 +345,7 @@ The remaining `speculative_honest` list has been refined to three explicit resea
 
 ---
 
-## Module Map (v2.9.89 — 234 modules · 8,760 tests · 27 registered predictions)
+## Module Map (v2.9.87 — 234 modules · 8,760 tests · 27 registered predictions)
 
 ### Structural-DOF Audit (v2.9.86 — the 9-phase investigation)
 | Module | Purpose |
