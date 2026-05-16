@@ -1921,6 +1921,32 @@ from .cathedral_path_integral import (
     print_one_loop_report,
 )
 
+# v2.9.89 — QFT-completion modules (close iron_proof speculative_honest items)
+# Item 3: icosahedral axiom QFT-origin theorem (5-condition chain)
+from .qft_origin_theorem import (
+    qft_origin_theorem_holds,
+    qft_origin_audit_passes,
+    print_qft_origin_report,
+)
+# Item 4: SM gauge boson per-K_4-mode identification (graviton + EW derived, SU(3) asserted)
+from .sm_gauge_mapping import (
+    gauge_assignments,
+    gauge_mapping_summary,
+    sm_gauge_mapping_audit_passes,
+    print_sm_gauge_mapping_report,
+)
+# Items 1+2: CC formula structural exponent + quark mass closed forms
+from .cc_and_yukawa_mechanism import (
+    cc_exponent_structural,
+    cc_formula_predicted,
+    CC_OBSERVED,
+    cc_predicted_vs_observed,
+    quark_mass_table,
+    quark_mass_summary,
+    cc_and_yukawa_audit_passes,
+    print_cc_and_yukawa_report,
+)
+
 # v2.9.40 — predictions registry (added 2026-05-09)
 # Single source of truth for "what does the framework predict and how
 # does it compare to observation?"
