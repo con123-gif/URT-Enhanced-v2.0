@@ -435,6 +435,10 @@ def honest_assessment() -> dict:
             "η=1/(8π), η_L=1/(4π), μ=φ−1, τ=10 are uniquely forced (pi_phi_e_flow theorem)",
             "n_s = 1-2/57 exact Planck 2018 match (formula derived from G-D, not tuned)",
             "sin²θ_W = (D/N)(1+γ/2π): leading term D/N=3/13 gives 0.2308 with 0 tuning",
+            "Chaos → δ★ selection is operational at machine precision (post-2026-05 engine fix)",
+            "QFT propagator derived from chaos-selected Langevin dynamics: ⟨δ_i δ_j⟩ = T·H⁻¹",
+            "QFT Feynman pole masses derived from Lagrangian δ̈ = −∇V: m_k = √((1+δ★²)+λ_k)",
+            "K_4 ⊕ A_5 = 4 ⊕ 9 = 13 mode spectrum forced by L_{G_{13}} eigendecomposition",
         ],
         "well_motivated": [
             "Ω_m = (4/13)(1+2γ) = 0.31529: exact match to Planck 2018 full combination (0.3153±0.0073)",
@@ -448,7 +452,8 @@ def honest_assessment() -> dict:
             "CC formula Λ/M_Pl⁴ = D/(D+1)²·γ⁶⁴: 64=(D+1)³ is natural but mechanism unclear",
             "quark masses: ARF residues R_m,C_mass give correct scales but full derivation incomplete",
             "The icosahedral 'axiom': why should the vacuum manifold be icosahedral? No deeper QFT derivation yet",
-            "Connection to Standard Model Lagrangian: not yet shown at the level of path integral",
+            "SM gauge boson mapping: K_4 modes claimed = {graviton, U(1), SU(2), SU(3) sector} in cathedral_lagrangian, but the explicit identification (which mode = which gauge boson) is asserted, not derived from L_{G_{13}}",
+            "Loop diagrams / β-functions in the K_4 ⊕ A_5 basis: cubic vertex tensor exists (W_{jmn} in symmetry_adapted_qft) but one-loop self-energies are not computed mode-by-mode",
         ],
         "what_would_falsify": [
             "n_s measured outside [0.960, 0.970] at > 5σ",
