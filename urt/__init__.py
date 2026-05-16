@@ -1905,6 +1905,13 @@ from .cathedral_path_integral import (
     cathedral_path_integral_audit,
     cathedral_path_integral_audit_passes,
     print_cathedral_path_integral_report,
+    # Lagrangian / Feynman-pole side
+    feynman_pole_masses,
+    lagrangian_step,
+    harmonic_trajectory,
+    extract_mode_frequencies,
+    lagrangian_audit_passes,
+    cathedral_qft_full_audit_passes,
 )
 
 # v2.9.40 — predictions registry (added 2026-05-09)

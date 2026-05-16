@@ -25,6 +25,13 @@ from urt.cathedral_path_integral import (
     cathedral_path_integral_audit,
     cathedral_path_integral_audit_passes,
     print_cathedral_path_integral_report,
+    # Lagrangian / Feynman-pole side
+    feynman_pole_masses,
+    lagrangian_step,
+    harmonic_trajectory,
+    extract_mode_frequencies,
+    lagrangian_audit_passes,
+    cathedral_qft_full_audit_passes,
 )
 
 
@@ -194,3 +201,122 @@ class TestAudit:
         captured = capsys.readouterr()
         assert "CATHEDRAL PATH INTEGRAL" in captured.out
         assert "Audit passes:" in captured.out
+
+
+# ─── Lagrangian dynamics → Feynman pole masses ───────────────────────────
+
+class TestFeynmanPoleMasses:
+    def test_feynman_pole_masses_shape(self):
+        masses = feynman_pole_masses()
+        assert masses.shape == (N,)
+
+    def test_feynman_pole_masses_positive(self):
+        masses = feynman_pole_masses()
+        assert (masses > 0).all()
+
+    def test_feynman_pole_masses_formula(self):
+        """m_k = √((1+δ★²) + λ_k)."""
+        L = cathedral_laplacian()
+        eigvals = np.linalg.eigvalsh(L)
+        expected = np.sqrt((1 + delta_star ** 2) + eigvals)
+        np.testing.assert_allclose(feynman_pole_masses(), expected, rtol=1e-14)
+
+    def test_K4_pole_masses_are_specific_values(self):
+        """K_4 sector (λ ∈ {0,3,3,5}) gives masses ≈ {1.011, 2.005, 2.005, 2.454}."""
+        masses = feynman_pole_masses()
+        # First 4 are K_4 (sorted by λ)
+        K4 = masses[:4]
+        np.testing.assert_allclose(K4[0], 1.010821, atol=1e-5)
+        np.testing.assert_allclose(K4[1], 2.005432, atol=1e-5)
+        np.testing.assert_allclose(K4[2], 2.005432, atol=1e-5)
+        np.testing.assert_allclose(K4[3], 2.453927, atol=1e-5)
+
+    def test_A5_max_mass_is_specific_value(self):
+        """A_5 max mode (λ=13) has the heaviest mass ≈ 3.745."""
+        masses = feynman_pole_masses()
+        assert masses[-1] > masses[-2]    # λ=13 is the largest
+        np.testing.assert_allclose(masses[-1], 3.744564, atol=1e-5)
+
+    def test_masses_increase_with_lambda(self):
+        masses = feynman_pole_masses()
+        for k in range(N - 1):
+            assert masses[k] <= masses[k + 1] + 1e-12
+
+
+class TestLagrangianDynamics:
+    def test_velocity_verlet_step_shape(self):
+        delta = np.full(N, delta_star)
+        vel = np.zeros(N)
+        delta_new, vel_new = lagrangian_step(delta, vel, 0.01)
+        assert delta_new.shape == (N,)
+        assert vel_new.shape == (N,)
+
+    def test_no_motion_at_exact_attractor(self):
+        """If δ = δ★ exactly and velocity = 0, system stays put.
+
+        The gradient vanishes at δ★ (it's the minimum of V), so the
+        velocity-Verlet integrator does nothing.
+        """
+        delta = np.full(N, delta_star)
+        vel = np.zeros(N)
+        for _ in range(50):
+            delta, vel = lagrangian_step(delta, vel, 0.01)
+        np.testing.assert_allclose(delta, np.full(N, delta_star), atol=1e-10)
+        np.testing.assert_allclose(vel, 0.0, atol=1e-10)
+
+    def test_harmonic_trajectory_shape(self):
+        traj = harmonic_trajectory(dt=0.02, n_steps=100)
+        assert traj.shape == (100, N)
+
+    def test_harmonic_trajectory_starts_perturbed_from_delta_star(self):
+        amp = 1e-4
+        traj = harmonic_trajectory(amplitude=amp, n_steps=100)
+        # Initial state is δ★ + amp*(V·𝟙), max deviation should be O(amp)
+        assert 0 < float(np.max(np.abs(traj[0] - delta_star))) < 1e-2
+
+    def test_energy_approximately_conserved(self):
+        """Velocity-Verlet conserves a discrete energy near the continuous H."""
+        from urt.cathedral_engine import cathedral_potential
+        # Perturb in one mode, integrate, measure energy drift
+        L = cathedral_laplacian()
+        _, V = np.linalg.eigh(L)
+        amp = 1e-4
+        dt = 0.02
+        delta = np.full(N, delta_star) + amp * V[:, 1]    # Fiedler mode
+        vel = np.zeros(N)
+        E0 = 0.5 * float(np.sum(vel ** 2)) + cathedral_potential(delta)
+        for _ in range(2000):
+            delta, vel = lagrangian_step(delta, vel, dt)
+        E1 = 0.5 * float(np.sum(vel ** 2)) + cathedral_potential(delta)
+        # Energy drift should be tiny (Verlet is symplectic)
+        assert abs(E1 - E0) / max(abs(E0), 1e-14) < 1e-3
+
+
+class TestModeFrequencyExtraction:
+    def test_extract_frequencies_shape(self):
+        traj = harmonic_trajectory(dt=0.02, n_steps=1000)
+        omegas = extract_mode_frequencies(traj, 0.02)
+        assert omegas.shape == (N,)
+
+    def test_frequencies_are_positive(self):
+        traj = harmonic_trajectory(dt=0.02, n_steps=1000)
+        omegas = extract_mode_frequencies(traj, 0.02)
+        assert (omegas >= 0).all()
+
+    def test_each_mode_oscillates_at_m_k(self):
+        """Empirical FFT peak matches feynman_pole_masses() per mode."""
+        traj = harmonic_trajectory(dt=0.02, n_steps=8000)
+        omegas = extract_mode_frequencies(traj, 0.02)
+        m = feynman_pole_masses()
+        rel_err = np.abs(omegas - m) / m
+        assert rel_err.max() < 0.02   # 2 % from FFT resolution + Verlet bias
+
+
+class TestLagrangianAudit:
+    def test_audit_passes(self):
+        """CI gate: Lagrangian dynamics gives empirical m_k matching m_k = √((1+δ★²)+λ_k)."""
+        assert lagrangian_audit_passes() is True
+
+    def test_full_qft_audit_passes(self):
+        """Single combined gate: both static (Langevin) AND dynamical (Feynman) derivations close."""
+        assert cathedral_qft_full_audit_passes() is True
