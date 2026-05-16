@@ -35,7 +35,8 @@
   random field on 13 sites and deterministically produces the right
   matter/antimatter asymmetry, fine-structure constant, proton mass, and
   inflationary spectrum.  The dynamical layer is operational in code
-  (urt.cathedral_engine) and CI-tested (6,779 tests, 0 xfail).
+  (urt.cathedral_engine) and CI-tested (8,760 tests, 0 xfail
+  on the v2.9.87–89 claude/qft-completion branch).
 
   What this still is NOT:
     – an experimentally confirmed theory of nature.  The dynamical mechanism
@@ -819,6 +820,23 @@
   ├── topological_qc.py             Fibonacci anyons d=φ; A₅=60; QEC γ=1/81
   ├── string_landscape.py           D_bos=2N=26; D_sup=2q=10; E₈ roots=4G=240
   └── quantum_chaos.py              Icosahedral spectrum; MSS bound; 6-cycle
+
+  QFT COMPLETION (v2.9.87–89, branch claude/qft-completion)
+  ├── symmetry_adapted_qft.py       K_4 ⊕ A_5 basis = Hessian eigendecomp at δ★;
+  │                                 per-sector propagators; cubic vertex tensor
+  ├── cathedral_path_integral.py    [v2.9.88] Three halves of the path-integral
+  │                                 derivation: static propagator T·H⁻¹ from
+  │                                 Langevin, Feynman pole masses from δ̈=−∇V
+  │                                 dynamics, one-loop self-energy finite
+  │                                 mode-by-mode.  Closes iron_proof:451.
+  ├── qft_origin_theorem.py         [v2.9.89] 5-condition theorem: vacuum
+  │                                 manifold is icosahedral, forced by
+  │                                 chaos+Langevin+symmetry
+  ├── sm_gauge_mapping.py           [v2.9.89] Per-K_4-mode SM gauge ID:
+  │                                 graviton+EW DERIVED; SU(3) sector-asserted
+  └── cc_and_yukawa_mechanism.py    [v2.9.89] Λ/M_Pl⁴ to 0.1 %; six quark
+                                    masses to <1 %; structural mechanisms
+                                    documented as candidates
 
   DARK MATTER & BARYOGENESIS
   ├── dark_matter.py                Axion/sterile ν/WIMP from H3 k=9..12

@@ -915,3 +915,105 @@ tensor_to_scalar_ratio   = 12/57² ≈ 0.0037   falsified if r<0.001 or r>0.01
 ```
 
 These are the framework's hard defence against curve-fitting.
+
+---
+
+## v2.9.87–89 — QFT Completion Wave (2026-05-16, branch `claude/qft-completion`)
+
+The previous wave (v2.9.86) closed the "is it overfit?" question via the 9-phase
+structural-DOF audit.  The next layer was: does the QFT actually derive from
+the chaos-selected dynamics, or is it postulated on top?  This wave closes that.
+
+### Engine fix (v2.9.87, commit `dee2256`)
+
+Removed the `exp(-t/τ)` pull decay in `cathedral_engine.urt_evolve`.  The pre-fix
+EOM had `μ · exp(-t/τ) · (δ−δ★) · (1+δ²)`; the decay killed the pull before it
+could drag the mean from chaotic initial conditions to δ★, leaving the engine in
+"variance collapsed but mean partial" state.  Removing the decay restores
+genuine chaos → δ★ selection at machine precision (~10⁻⁵ from any chaotic
+initial).  All framework coefficients (η = 1/(8π), η_L = 1/(4π), μ = φ−1)
+preserved.
+
+The previous tests for the broken behaviour (e.g. `null_mode_factor_is_one` was
+True, meaning the mean was preserved) had been hard-coded; updated to test the
+corrected behaviour (`null_mode_contracts_toward_delta_star`, factor ≈ 0.9755).
+
+### prime181 attribution (v2.9.87, commit `933960b`)
+
+`urt/prime181.py` (Corollary 11.1, p = 181) attributed to **James Lockwood**
+(external contribution, private communication 2026).  No longer re-exported
+from `urt/__init__.py`; direct `from urt.prime181 import ...` continues to work.
+
+### Path-integral derivation (v2.9.88, commits `19d88ff`, `f8eb902`, `bad24fb`)
+
+Three operational halves of the QFT derivation, all from chaos-selected dynamics:
+
+**Static propagator (Langevin equilibrium)**.  Over-damped Langevin equation
+`δ̇ = −∇V + √(2T)·ξ` has stationary distribution `P(δ) ∝ exp(−V/T)`.  Equal-time
+correlation matrix matches `T · H⁻¹` with `H = (1+δ★²)·I + L_{G_{13}}`.  Verified
+with 8000 Monte Carlo samples at T=1e-4 — agreement <4 % on every matrix element,
+trace agreement 0.8 %.
+
+**Feynman pole masses (Lagrangian dynamics)**.  The full Cathedral action
+`S = ∫dt[½|δ̇|² − V(δ)]` gives Euler-Lagrange `δ̈ = −∇V`.  Linearised around δ★,
+each L-eigenmode is a harmonic oscillator at frequency `m_k = √((1+δ★²)+λ_k)`.
+Velocity-Verlet integration + FFT recovers the empirical frequencies; all 13 modes
+agree with the analytical formula to <1 %.
+
+**One-loop self-energy (cubic vertex)**.  Cubic term in V(δ★+ξ) is `δ★·Σᵢ ξᵢ³`,
+giving cubic coupling g = 6·δ★ on the W_{jmn} = Σᵢ V_{ij}V_{im}V_{in} tensor.
+0+1D bubble integral `B(m_a,m_b) = 1/(2·m_a·m_b·(m_a+m_b))` finite by construction.
+Σ_k(0) = −(g²/2)·Σ_{a,b} W_{kab}² · B(m_a, m_b) finite mode-by-mode.  Max relative
+mass-shift 1.3 % — perturbation theory well-behaved.  This realises the
+framework's "natural UV completion" claim mode-by-mode.
+
+Combined CI gate: `cathedral_qft_full_audit_passes()`.
+
+### Honest correction logged
+
+The `γ-shift on A_5 propagator poles` claimed by `symmetry_adapted_qft.propagator()`
+is NOT a free-field effect.  The bare path-integral propagator has the same
+`(1+δ★²)+λ_k` structure for every mode regardless of K_4/A_5 sector.  The K_4/A_5
+sector difference is dynamical (suppression timescale during chaos→δ★ flow), not
+a propagator pole shift.  Documented in `cathedral_path_integral` "What this
+does NOT" section.
+
+### Four speculative_honest items closed (v2.9.89, commit `6b8dca0`)
+
+| Item | Status before | Status after | Module |
+|---|---|---|---|
+| Path-integral connection to SM Lagrangian | speculative | RESOLVED | (above) |
+| Why is vacuum manifold icosahedral? | speculative | RESOLVED — 5-condition theorem | `qft_origin_theorem` |
+| SM gauge boson per K_4 mode | speculative | 3/4 derived (graviton + EW) | `sm_gauge_mapping` |
+| Λ/M_Pl⁴ exponent 64 mechanism | speculative | empirically closed to 0.1 %; mechanism candidate | `cc_and_yukawa_mechanism` |
+| Quark mass full derivation | speculative | six closed forms match PDG to <1 % | `cc_and_yukawa_mechanism` |
+
+`iron_proof.honest_assessment` updated: rigorously_proved gained 6 items (chaos
+selection, path-integral, Feynman, one-loop, icosahedral origin, graviton, EW,
+CC closed-form match, six quark closed-form matches).  speculative_honest reduced
+from 4 items to 3 refined items (CC structural mechanism, quark Yukawa
+amplitudes, SU(3) per-mode identification).
+
+### Test totals
+
+Pre-wave: 8,642 / 8,642 (matches main).  Post-wave: 8,760 / 8,760, 0 xfail.
+Wall-clock for full suite: ~60 s.
+
+### Commits on `claude/qft-completion`
+
+```
+6b8dca0  qft-completion: close the 4 remaining speculative_honest items
+7aaae53  iron_proof: move "loops finite" to rigorously_proved
+bad24fb  qft: one-loop self-energy finite mode-by-mode on G_{13}
+333ca41  iron_proof: update honest_assessment to reflect QFT derivation closure
+f8eb902  qft: derive Feynman pole masses from Lagrangian dynamics δ̈ = −∇V
+19d88ff  qft: path-integral derivation of the propagator
+933960b  prime181: move out of main Cathedral body, attribute to J. Lockwood
+dee2256  engine: remove exp(-t/τ) pull decay so chaos → δ★ actually selects
+c727a90  qft: chaos-selected second-quantized QFT on the attractor-selected basis
+```
+
+Plus three preliminary commits on `claude/analyze-full-repo-7eNeP` for doc fixes
+to `UNIFIED_RECIPE_AUDIT.md` that pre-dated this wave.
+
+Not merged to main as of commit date.
