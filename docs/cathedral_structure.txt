@@ -581,7 +581,8 @@
   All noble gas atomic numbers {2, 10, 18, 36, 54, 86, 118} derived from δ★.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  PRIME 181  [prime181.py — Corollary 11.1]
+  PRIME 181  [prime181.py — Corollary 11.1, external contribution: J. Lockwood]
+  ╶─ NOT re-exported from urt/__init__.py; import directly from urt.prime181
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   The unique prime satisfying all Cathedral conditions simultaneously:
@@ -851,7 +852,7 @@
   └── arf_closure.py                ARF fixed point; lepton/proton mass ratios
 
   PURE MATHEMATICS
-  ├── prime181.py                   Corollary 11.1: p=181 (p−100=81=D^{D+1})
+  ├── prime181.py                   [J. Lockwood, not in main body] Corollary 11.1: p=181 (p−100=81=D^{D+1})
   ├── prime_spectral.py             Icosahedral Laplacian ↔ Riemann zeros
   ├── number_theory_cathedral.py    M₁₃=8191; F₇=N=13; τ(2)=−24=−2V
   ├── algebra_cathedral.py          dim(SO(3))=D(D-1)/2=D=3 ← self-referential!
@@ -1065,7 +1066,7 @@
   τ_proton    ≈ 10^42 yr
 
   META:
-  p=181       = 100 + D^{D+1}   (Cathedral prime)
+  p=181       = 100 + D^{D+1}   (J. Lockwood, external contribution; not in main body)
   Ω_GEM       = 9/13             = 0.6923  (ta-URT)
   τ_stab      = 0.001211         (ta-URT stabilisation)
   K_c         ≈ 1.278            (Kuramoto critical coupling)
@@ -1136,7 +1137,8 @@
   v2.2   +6: gravity_cathedral, neutrinos, vacuum_instability,
              force_structure, cathedral_topology, pi_phi_e_flow
   v2.3   +7: electroweak, cosmology_cathedral, uniqueness_proof,
-             prime181, ckm_pmns, canonical_v4gem, qbls_fractal
+             prime181 [J. Lockwood, later moved out of main body],
+             ckm_pmns, canonical_v4gem, qbls_fractal
   v2.4   +1: iron_proof (D=3→A₅→N=13→γ→δ★ uniqueness chain, 808 tests)
   v2.5   +4: cathedral_lagrangian, dark_matter, baryon_asymmetry,
              cathedral_gut — 931 tests total

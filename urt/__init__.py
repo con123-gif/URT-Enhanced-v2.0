@@ -382,18 +382,9 @@ from .uniqueness_proof import (
     uniqueness_theorem_full,
     print_uniqueness_report,
 )
-from .prime181 import (
-    P181,
-    is_prime,
-    legendre_symbol,
-    golden_ratio_residue_test,
-    k4_compatibility_test,
-    closure_representation_test,
-    scan_primes_for_prime181,
-    prime181_properties,
-    corollary_111_statement,
-    print_prime181_report,
-)
+# prime181 module is intentionally NOT re-exported here — it is an external
+# contribution (James Lockwood) and lives outside the Cathedral's main body.
+# Import directly: `from urt.prime181 import P181, prime181_properties, ...`
 from .ckm_pmns import (
     LAMBDA_C,
     A_CKM,
