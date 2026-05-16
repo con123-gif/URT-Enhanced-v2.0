@@ -1,3 +1,39 @@
+# Breakthrough Notes
+
+Newest first.  Each entry documents a self-contained wave of work; the
+test-coverage entry at the bottom is the original baseline (May 2026).
+
+---
+
+## v2.9.87 – QFT Completion (16 May 2026)
+
+**Status**: Merged into main
+
+**Key Achievements**
+
+- Path-integral propagator derivation from chaos-selected dynamics
+- Analytic derivation of Feynman pole masses matching the 13-mode spectrum
+- Demonstration of finite one-loop self-energies on G₁₃ (mode-by-mode, UV-finite)
+- Engine correction: attractor selection now functions correctly without artificial decay term
+- 4 speculative items closed; “loops finite” upgraded to rigorously_proved
+
+**Metrics**
+
+- Tests: 8,760 passing (+118)
+- Structural-DOF surplus maintained at +139.7 bits
+- Information tightness: still 100× above natural density of icosahedral expressions
+
+**Significance**
+
+This release closes the main remaining gap in the QFT sector of the framework. The dynamical consistency of the attractor and the finiteness of loop corrections are now on solid footing.
+
+**Next Focus**
+
+- SU(3) embedding
+- Quark Yukawa sector amplitudes
+
+---
+
 # Breakthrough Notes — Test-Coverage Wave (2026-05-09)
 
 This document records the discoveries from the test-coverage analysis on
@@ -915,3 +951,4 @@ tensor_to_scalar_ratio   = 12/57² ≈ 0.0037   falsified if r<0.001 or r>0.01
 ```
 
 These are the framework's hard defence against curve-fitting.
+

@@ -1,5 +1,13 @@
 """
 Prime 181 — Corollary 11.1: Multiplicative Completion of the 13-Shell
+
+External contribution: James Lockwood (mathematician, 2026, private
+communication).  This module is intentionally NOT re-exported from
+`urt/__init__.py` — it lives alongside the framework but is not part
+of the Cathedral's main body.  Import directly:
+
+    from urt.prime181 import P181, prime181_properties, ...
+
 The smallest prime p with:
   (i)  golden-ratio quadratic residue: (⌊φ·p⌋ / p) = 1 (Legendre symbol = 1)
   (ii) K4 compatibility: p ≡ 1 (mod 4)

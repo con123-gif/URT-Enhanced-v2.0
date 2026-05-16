@@ -382,18 +382,9 @@ from .uniqueness_proof import (
     uniqueness_theorem_full,
     print_uniqueness_report,
 )
-from .prime181 import (
-    P181,
-    is_prime,
-    legendre_symbol,
-    golden_ratio_residue_test,
-    k4_compatibility_test,
-    closure_representation_test,
-    scan_primes_for_prime181,
-    prime181_properties,
-    corollary_111_statement,
-    print_prime181_report,
-)
+# prime181 module is intentionally NOT re-exported here — it is an external
+# contribution (James Lockwood) and lives outside the Cathedral's main body.
+# Import directly: `from urt.prime181 import P181, prime181_properties, ...`
 from .ckm_pmns import (
     LAMBDA_C,
     A_CKM,
@@ -1875,6 +1866,85 @@ from .first_principles import (
     derive_delta_star_from_gradient,
     first_principles_audit,
     all_steps_verify,
+)
+
+# v2.9.87 — chaos-selected QFT on the attractor-selected basis
+# Architecture: chaos → π-φ-e flow → δ★ attractor → fluctuation basis K_4 ⊕ A_5
+# → second-quantized propagators (K_4 no γ-shift, A_5 + γ).  The QFT is built
+# from fluctuations around the dynamically-selected δ★, not a postulated
+# geometry.  See module docstring + iron_proof.py speculative_honest list.
+from .symmetry_adapted_qft import (
+    K4_DIM, A5_DIM,
+    K4_TRACE_TARGET, A5_TRACE_TARGET, L_TRACE_TARGET,
+    chaos_selects_delta_star,
+    fluctuation_hessian_at_delta_star,
+    attractor_selected_basis,
+    K4_basis, A5_basis,
+    mode_eigenvalue, mode_sector,
+    propagator,
+    K4_pole_masses_squared, A5_pole_masses_squared,
+    cubic_coupling_tensor, sector_block_norm, selection_rule_summary,
+    cathedral_qft_audit, cathedral_qft_audit_passes,
+    print_cathedral_qft_report,
+)
+
+# v2.9.88 — path-integral derivation of the QFT propagator
+# Closes the iron_proof.py "speculative_honest" gap: the propagator is
+# no longer postulated.  Langevin URT around δ★ generates equilibrium
+# samples whose two-point function empirically matches T·H^(-1) where
+# H = (1+δ★²)·I + L_{G_{13}} — the K_4 ⊕ A_5 mass spectrum emerges
+# mode-by-mode from the chaos-selected dynamics.
+from .cathedral_path_integral import (
+    hessian_at_delta_star,
+    analytical_propagator_matrix,
+    per_mode_masses_analytical,
+    langevin_step,
+    equilibrium_samples,
+    empirical_correlation_matrix,
+    per_mode_masses_empirical,
+    cathedral_path_integral_audit,
+    cathedral_path_integral_audit_passes,
+    print_cathedral_path_integral_report,
+    # Lagrangian / Feynman-pole side
+    feynman_pole_masses,
+    lagrangian_step,
+    harmonic_trajectory,
+    extract_mode_frequencies,
+    lagrangian_audit_passes,
+    cathedral_qft_full_audit_passes,
+    # One-loop self-energy (finite by construction on G_{13})
+    cubic_coupling_tensor_local,
+    bubble_integral,
+    one_loop_self_energy,
+    dressed_pole_masses,
+    one_loop_finite_audit_passes,
+    print_one_loop_report,
+)
+
+# v2.9.89 — QFT-completion modules (close iron_proof speculative_honest items)
+# Item 3: icosahedral axiom QFT-origin theorem (5-condition chain)
+from .qft_origin_theorem import (
+    qft_origin_theorem_holds,
+    qft_origin_audit_passes,
+    print_qft_origin_report,
+)
+# Item 4: SM gauge boson per-K_4-mode identification (graviton + EW derived, SU(3) asserted)
+from .sm_gauge_mapping import (
+    gauge_assignments,
+    gauge_mapping_summary,
+    sm_gauge_mapping_audit_passes,
+    print_sm_gauge_mapping_report,
+)
+# Items 1+2: CC formula structural exponent + quark mass closed forms
+from .cc_and_yukawa_mechanism import (
+    cc_exponent_structural,
+    cc_formula_predicted,
+    CC_OBSERVED,
+    cc_predicted_vs_observed,
+    quark_mass_table,
+    quark_mass_summary,
+    cc_and_yukawa_audit_passes,
+    print_cc_and_yukawa_report,
 )
 
 # v2.9.40 — predictions registry (added 2026-05-09)

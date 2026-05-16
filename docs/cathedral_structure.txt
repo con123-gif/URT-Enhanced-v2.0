@@ -35,7 +35,8 @@
   random field on 13 sites and deterministically produces the right
   matter/antimatter asymmetry, fine-structure constant, proton mass, and
   inflationary spectrum.  The dynamical layer is operational in code
-  (urt.cathedral_engine) and CI-tested (6,779 tests, 0 xfail).
+  (urt.cathedral_engine) and CI-tested (8,760 tests, 0 xfail
+  on the v2.9.87–89 claude/qft-completion branch).
 
   What this still is NOT:
     – an experimentally confirmed theory of nature.  The dynamical mechanism
@@ -581,7 +582,8 @@
   All noble gas atomic numbers {2, 10, 18, 36, 54, 86, 118} derived from δ★.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  PRIME 181  [prime181.py — Corollary 11.1]
+  PRIME 181  [prime181.py — Corollary 11.1, external contribution: J. Lockwood]
+  ╶─ NOT re-exported from urt/__init__.py; import directly from urt.prime181
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   The unique prime satisfying all Cathedral conditions simultaneously:
@@ -819,6 +821,23 @@
   ├── string_landscape.py           D_bos=2N=26; D_sup=2q=10; E₈ roots=4G=240
   └── quantum_chaos.py              Icosahedral spectrum; MSS bound; 6-cycle
 
+  QFT COMPLETION (v2.9.87–89, branch claude/qft-completion)
+  ├── symmetry_adapted_qft.py       K_4 ⊕ A_5 basis = Hessian eigendecomp at δ★;
+  │                                 per-sector propagators; cubic vertex tensor
+  ├── cathedral_path_integral.py    [v2.9.88] Three halves of the path-integral
+  │                                 derivation: static propagator T·H⁻¹ from
+  │                                 Langevin, Feynman pole masses from δ̈=−∇V
+  │                                 dynamics, one-loop self-energy finite
+  │                                 mode-by-mode.  Closes iron_proof:451.
+  ├── qft_origin_theorem.py         [v2.9.89] 5-condition theorem: vacuum
+  │                                 manifold is icosahedral, forced by
+  │                                 chaos+Langevin+symmetry
+  ├── sm_gauge_mapping.py           [v2.9.89] Per-K_4-mode SM gauge ID:
+  │                                 graviton+EW DERIVED; SU(3) sector-asserted
+  └── cc_and_yukawa_mechanism.py    [v2.9.89] Λ/M_Pl⁴ to 0.1 %; six quark
+                                    masses to <1 %; structural mechanisms
+                                    documented as candidates
+
   DARK MATTER & BARYOGENESIS
   ├── dark_matter.py                Axion/sterile ν/WIMP from H3 k=9..12
   ├── baryon_asymmetry.py           η_B=(q−D)·γ^q miracle; leptogenesis
@@ -851,7 +870,7 @@
   └── arf_closure.py                ARF fixed point; lepton/proton mass ratios
 
   PURE MATHEMATICS
-  ├── prime181.py                   Corollary 11.1: p=181 (p−100=81=D^{D+1})
+  ├── prime181.py                   [J. Lockwood, not in main body] Corollary 11.1: p=181 (p−100=81=D^{D+1})
   ├── prime_spectral.py             Icosahedral Laplacian ↔ Riemann zeros
   ├── number_theory_cathedral.py    M₁₃=8191; F₇=N=13; τ(2)=−24=−2V
   ├── algebra_cathedral.py          dim(SO(3))=D(D-1)/2=D=3 ← self-referential!
@@ -1065,7 +1084,7 @@
   τ_proton    ≈ 10^42 yr
 
   META:
-  p=181       = 100 + D^{D+1}   (Cathedral prime)
+  p=181       = 100 + D^{D+1}   (J. Lockwood, external contribution; not in main body)
   Ω_GEM       = 9/13             = 0.6923  (ta-URT)
   τ_stab      = 0.001211         (ta-URT stabilisation)
   K_c         ≈ 1.278            (Kuramoto critical coupling)
@@ -1136,7 +1155,8 @@
   v2.2   +6: gravity_cathedral, neutrinos, vacuum_instability,
              force_structure, cathedral_topology, pi_phi_e_flow
   v2.3   +7: electroweak, cosmology_cathedral, uniqueness_proof,
-             prime181, ckm_pmns, canonical_v4gem, qbls_fractal
+             prime181 [J. Lockwood, later moved out of main body],
+             ckm_pmns, canonical_v4gem, qbls_fractal
   v2.4   +1: iron_proof (D=3→A₅→N=13→γ→δ★ uniqueness chain, 808 tests)
   v2.5   +4: cathedral_lagrangian, dark_matter, baryon_asymmetry,
              cathedral_gut — 931 tests total
