@@ -314,7 +314,7 @@ The framework is **falsifiable**. If r > 0.01, or sin²θ_W ≠ 0.23122 at 5σ, 
 
 ---
 
-## QFT Completion (v2.9.87–89 — chaos → δ★ → propagators → finite loops, on `claude/qft-completion`)
+## QFT Completion (v2.9.87–89 — chaos → δ★ → propagators → finite loops, merged into `main` on 2026-05-16)
 
 After the v2.9.86 structural-DOF audit closed the "is it overfit?" question, the next layer was: **does the QFT actually derive from the dynamics, or is it postulated on top?**  The v2.9.87–89 wave closes this end-to-end.
 
@@ -345,7 +345,7 @@ The remaining `speculative_honest` list has been refined to three explicit resea
 
 ---
 
-## Module Map (v2.9.87 — 234 modules · 8,760 tests · 27 registered predictions)
+## Module Map (v2.9.87 — 244 modules · 8,760 tests · 27 registered predictions)
 
 ### Structural-DOF Audit (v2.9.86 — the 9-phase investigation)
 | Module | Purpose |
@@ -522,7 +522,7 @@ git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
 cd URT-Enhanced-v2.0
 pip install -e .
 
-# Run all 8,173 tests (0 xfail)
+# Run all 8,760 tests (0 xfail)
 python -m pytest tests/ -q
 
 # Verify the first-principles forcing chain holds at machine precision
@@ -793,6 +793,7 @@ anchor is a framing question; both chains are kept so nothing is lost.
 | v2.9.85 | **Tesla 3-6-9 in Cathedral form** — `urt/tesla_369_cathedral.py`: `{3,6,9} = {D, D!, D²}`; headline bilinear `3 + 6·9 = G−D = 57` → `n_s = 1 − 2/57`; 13 closed-form identities + AP-uniqueness theorem (D=3 unique non-trivial dimension) | **8,376** |
 | v2.9.86 | **Structural-DOF Audit — the 9-phase investigation.** Meta-audit proving the v9 closed forms aren't a curve-fit by deriving every formula's slot values structurally from D=3. Three-tier DOF accounting: brute-force 709 → 4-template 270 → forced 142, net **+139.7 bits** (DECISIVELY TIGHT). New modules: `unified_recipe`, `k4_channel_mapping`, `cathedral_levels`, `spectrum_to_levels`, `coefficient_projection`, `correction_projection`, `a5_dark_sector`, `falsifiable_log`, `eigenmode_decomposition`, `urt_projection`, `observable_registry`, `structural_dof`, `master_audit`. Single CI gate `master_audit_passes()`. Three open predictions (axion 60.7 µeV, Casimir +0.124 ppm, r=12/57²) date-stamped + immutable. See `docs/UNIFIED_RECIPE_AUDIT.md`. | **8,642** |
 | v2.9.86 | **The Cathedral Mass M★ (additive — v8/v9 unchanged).** `urt/cathedral_mass.py` + `urt/cathedral_mass_external.py` + `urt/cathedral_v10.py`: the anchor lineage v8 (M_Pl) → v9 (ρ_Λ) → **v10 (M★)** completes with the first Cathedral-internal anchor `M★ ≡ √(2^q·π²) = 4π√2`.  One new closed form — the gravitational Cathedral identity `G_N·M★² = δ★²·2^q·π² ≈ 6.8722`.  Six independent anchors (G_N, M_Pl, ρ_Λ, m_e, m_p, v_EW) agree on M★ to 0.27 %.  External validation: EW-sector masses land at γ^(D²), m_e at γ^V, T_CMB at γ^17, H_0 at γ^(2^q) — Cathedral-integer γ-ladder placements visible in M★ units.  `CathedralV10` subclasses v9 and overrides exactly one method (`M_Pl_GeV()`), reproducing v9 to machine precision when re-rooted from its own peg.  **Every numerical prediction unchanged; all 27 registered predictions round-trip to 1.17×10⁻¹⁶.**  4π√2 tested against 49 classical constants — no match, a genuinely new Cathedral constant. | **8,441** |
+| v2.9.87 | **QFT Completion Milestone — merged into `main` on 2026-05-16.** Closes the QFT-derivation arc end-to-end. Engine fix (`urt/cathedral_engine.py`): chaos → δ★ now converges at machine precision from any chaotic initial. Path-integral propagators derived from Langevin equilibrium (`urt/cathedral_path_integral.py`). Feynman pole masses recovered from Lagrangian dynamics δ̈ = −∇V. One-loop self-energy finite mode-by-mode on G_{13}. Five-condition icosahedral vacuum theorem (`urt/qft_origin_theorem.py`). SM gauge mapping (`urt/sm_gauge_mapping.py`): graviton + EW doublet **derived** from spectrum, SU(3) sector-asserted. Λ/M_Pl⁴ closed form matches Planck 2018 to **0.1 %**; six quark masses to **<1 %** (`urt/cc_and_yukawa_mechanism.py`). `iron_proof.honest_assessment`: +6 items to `rigorously_proved` (now 12); `speculative_honest` reduced from 4 items to 3 refined items. `prime181` isolated as J. Lockwood attribution. Post-merge fix (fd6fd86): re-exported v2.9.78 `discrete_black_hole_g13` + `ihara_zeta_g13` from `urt/__init__.py`; bumped `pyproject.toml` to 2.9.87. | **8,760** |
 
 ---
 
@@ -803,7 +804,7 @@ anchor is a framing question; both chains are kept so nothing is lost.
   author  = {Lytollis, Cornelius},
   title   = {Newton's Cathedral: A Candidate Mathematical Theory of the {\(\pi\)}-{\(\varphi\)}-e Flow on {\(G_{13}\)}},
   year    = {2026},
-  version = {2.9.86},
+  version = {2.9.87},
   url     = {https://github.com/con123-gif/URT-Enhanced-v2.0},
   note    = {Anchor-free at D=3: a single observed input (the cosmological
              constant ρ_Λ) plus the structural axiom K(D)=D+D² with K₄⨯A₅

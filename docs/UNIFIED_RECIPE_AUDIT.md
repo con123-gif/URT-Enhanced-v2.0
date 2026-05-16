@@ -240,7 +240,7 @@ assert unified_recipe_audit_passes(tol=0.05)   # passes
 ## Files added in this wave
 
 - `urt/unified_recipe.py` — 4-template scheme, CI gate, info accounting
-- `tests/test_unified_recipe.py` — 23 tests (all pass; total suite 8464/8464)
+- `tests/test_unified_recipe.py` — 23 tests (all pass; total suite 8,760/8,760)
 - `docs/RECIPE_INVENTORY.md` — every v9 observable with its closed form
 - `scripts/recipe_audit.py` — initial flexible search (showed Template A overfits)
 - `scripts/recipe_audit_v2.py` — honest structural classification
