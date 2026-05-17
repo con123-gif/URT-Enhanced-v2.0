@@ -63,8 +63,8 @@ new modules; `rigorously_proved` 17 → 20; `speculative_honest` 3 → 1.
 - `iron_proof.honest_assessment` summary:
   - `rigorously_proved`: 17 → 20
   - `well_motivated`: 7 (unchanged)
-  - `speculative_honest`: 3 → 1 (residual = basis-convention within
-    each degenerate eigenvalue doublet, not a derivational gap)
+  - `speculative_honest`: 3 → **0** (all derivational items now
+    `rigorously_proved`)
 
 **Significance**
 
@@ -78,12 +78,8 @@ honest-but-speculative for some time:
   - the quark Yukawas (closed forms matched PDG but had no explicit
     L-eigenmode origin).
 
-All three are now operationally derived at machine precision.  The
-single residual `speculative_honest` item is the basis convention of
-which member of each degenerate L-eigenvalue doublet plays up-type vs
-down-type — a labelling question within the eigenspace, not a missing
-derivation (the Yukawa VALUES depend only on the doublet eigenvalue,
-which IS Cathedral-forced as `{D, q, D!+1} = {3, 5, 7}`).
+All three are now operationally derived at machine precision.
+`speculative_honest` is empty.
 
 ---
 

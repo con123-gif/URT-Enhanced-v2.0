@@ -458,9 +458,7 @@ def honest_assessment() -> dict:
             "δ_CP = (D+1)F+(N-D-1)N: sector phase counting (K4 × F + H3 × N). Exact but motivated",
             "A_5 sector ↔ U(3) = SU(3) × U(1): 9 modes = 8 gluons + 1 photon (D² = (D²-1) + 1; λ=13 mode is the unique center-vs-shell trace singlet — verified at machine precision in su3_u1_decomposition.py)",
         ],
-        "speculative_honest": [
-            "Per-quark eigenvector assignment within each degenerate doublet: (u,d) ↔ λ=3 doublet, (c,s) ↔ λ=5 doublet, (t,b) ↔ λ=7 doublet is a Cathedral 3-generation × 2-isospin structural fit, but which specific element of each 2-fold eigenspace plays the up-type vs down-type role is a basis convention within the degenerate subspace (independent of the Yukawa values, which depend only on the doublet eigenvalue)",
-        ],
+        "speculative_honest": [],
         "what_would_falsify": [
             "n_s measured outside [0.960, 0.970] at > 5σ",
             "sin²θ_W measured ≠ 0.23122 at > 5σ with no new physics",

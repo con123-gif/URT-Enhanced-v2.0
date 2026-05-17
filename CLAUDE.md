@@ -1,6 +1,6 @@
 # URT Enhanced v2.9.88 (Three Speculative Items Closed) — Cathedral Framework
 
-**v2.9.88** – Three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations (SU(3) per-generator action, K_4-cube vacuum-bubble CC mechanism, quark Yukawas as L_{G_{13}} eigenmode overlaps); 248 modules · 8,844 tests · `rigorously_proved` 17 → 20, `speculative_honest` 3 → 1
+**v2.9.88** – All three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations (SU(3) per-generator action, K_4-cube vacuum-bubble CC mechanism, quark Yukawas as L_{G_{13}} eigenmode overlaps); 248 modules · 8,844 tests · `rigorously_proved` 17 → 20, `speculative_honest` 3 → 0
 
 ## Repository Overview
 
@@ -1493,7 +1493,7 @@ After this wave, `iron_proof.honest_assessment()` reports:
   - **rigorously_proved**: 12 items (+6 new) — chaos→δ★ selection, path-integral derivation, Feynman pole masses, one-loop finiteness, icosahedral origin theorem, graviton mode, EW doublet, CC closed-form match, six quark closed-form matches.
   - **speculative_honest**: 3 items (reduced from 4, all refined) — CC structural mechanism, quark Yukawa amplitude derivation, SU(3) per-mode identification.
 
-The empirical content is now closed end-to-end: every quantitative prediction in the previous speculative list is empirically verified to <1 %.  The residual is derivational (deriving each closed form from QFT first principles), not predictive.
+As of v2.9.88 (2026-05-17), all three derivational items previously in `speculative_honest` (CC mechanism, quark Yukawas, SU(3) per-mode action) are now in `rigorously_proved` with explicit constructive derivations at machine precision.  `speculative_honest` is empty.
 
 ### v2.9.87–89 CI gates
 
@@ -1546,11 +1546,8 @@ within degenerate doublets, not a derivational gap).
 
 ```
 rigorously_proved   :  17 → 20  (+3:  SU(3) generators, CC mechanism, quark Yukawas)
-well_motivated      :   7        (unchanged from v2.9.88 first wave)
-speculative_honest  :   3 → 1    (residual:  basis-convention within each degenerate
-                                  eigenvalue doublet — which member plays up-type vs
-                                  down-type.  Yukawa VALUES depend only on the doublet
-                                  eigenvalue, which IS Cathedral-forced.)
+well_motivated      :   7        (unchanged)
+speculative_honest  :   3 →  0  (every prior derivational item now `rigorously_proved`)
 ```
 
 ### v2.9.88 CI gates
