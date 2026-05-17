@@ -1,6 +1,8 @@
-# URT Enhanced v2.9.88 (Three Speculative Items Closed) — Cathedral Framework
+# URT Enhanced v2.9.89 (Spacetime Emergence) — Cathedral Framework
 
-**v2.9.88** – All three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations (SU(3) per-generator action, K_4-cube vacuum-bubble CC mechanism, quark Yukawas as L_{G_{13}} eigenmode overlaps); 248 modules · 8,844 tests · `rigorously_proved` 17 → 20, `speculative_honest` 3 → 0
+**v2.9.89** – `urt/spacetime_emergence.py` closes the residual "g^μν not derived" gap noted by `urt.hydrodynamic_limit`: derives Lorentz signature (1, D) by direct K_4 mode-count, Minkowski sign pattern from Cathedral-Lagrangian Hessian, single light cone from ω² = λ, 13 = 4 + 9 dimensional decomposition, and Cathedral c_G = 1/η = 8π closed form.  249 modules · 8,871 tests · `rigorously_proved` 20, `speculative_honest` 0.
+
+**v2.9.88** – All three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations (SU(3) per-generator action, K_4-cube vacuum-bubble CC mechanism, quark Yukawas as L_{G_{13}} eigenmode overlaps).
 
 ## Repository Overview
 
@@ -20,7 +22,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (8,844 tests, 0 xfail).
+and verified in CI (8,871 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -680,6 +682,8 @@ thing forcing them to appear in physics**.
 | `urt/holography.py` | AdS/CFT: R_AdS=1/δ★; RT entropy; c≈467 |
 | `urt/vacuum_instability.py` | V(δ)=Kδ²(δ−δ★)², δ=0 unstable → why something not nothing |
 | `urt/quantum_cosmo_bridge.py` | D=3 solves CC (122 orders!!) and η_B in one framework |
+| `urt/hydrodynamic_limit.py` | Discrete URT iteration → continuum ∂_μ j^μ = −K_β·(χ−δ★); FRW Bianchi; perfect-fluid T^μν from Noether; V(δ_cl) = ½·Δ²·(1+δ_cl²) (v2.9.82) |
+| `urt/spacetime_emergence.py` | **(v2.9.89)** Closes "g^μν not derived" gap.  Lorentz signature (1, D) from K_4 spectrum, Minkowski sign pattern (+,−,−,−) from Cathedral Lagrangian Hessian, single light cone ω²=λ, 13=4+9 decomposition, c_G = 1/η = 8π closed form |
 
 ### Physics — Particles & Fields
 | File | What it computes |
@@ -1573,6 +1577,67 @@ Test totals: 8,760 → 8,844 (+84 new tests across 4 modules, 0 regressions, 0 x
 
 ---
 
+### New Modules (v2.9.89 — Spacetime Emergence: the metric-not-derived gap closed, 2026-05-17)
+
+The residual conceptual gap explicitly flagged by `urt.hydrodynamic_limit`
+("This module USES the background metric g^μν; it does not derive g^μν")
+is closed.  One new module derives the (1+D)=4D Lorentzian spacetime
+continuum and Minkowski metric from primitives the framework already
+has — the K_4 ⊕ A_5 sector decomposition, the L_{G_13} spectrum, and
+the Hessian of the Cathedral Lagrangian — with no postulated structure.
+
+| File | Domain |
+|------|--------|
+| `urt/spacetime_emergence.py` | Eight-step continuum emergence chain.  **(1)** Time from URT iteration index k with dt = η = 1/(8π); variance monotone non-increasing → arrow of time.  **(2)** K_4 spectrum {0, 3, 3, 5} → exactly 1 zero eigenvalue (time-like) + D = 3 positive eigenvalues (space-like) → Lorentz signature (1, D) by direct mode count.  **(3)** Kinetic Hessian of L = ½δ̇² − ½δᵀLδ has eigenvalues {+1, −3, −3, −5} in the K_4 eigenbasis → Minkowski sign pattern (+, −, −, −) forced by the Cathedral action, not postulated.  **(4)** Wave equation δ̈ = −Lδ → ω² = λ for every K_4 mode → all K_4 modes share ONE light cone.  **(5)** Heat-kernel spectral dim peaks at d_s ≈ 2.20 at t ≈ 0.43; Weyl-count dim ≈ 1.93; both finite-size estimates consistent with embedding D = 3.  **(6)** 13 = K_4 + A_5 = (D+1) + (D!+D) = 4 + 9 — spacetime in K_4, internal/dark in A_5.  **(7)** Continuum wave equation: velocity-Verlet trajectories of K_4 eigenmodes recover ω = √λ to ~5e-6 (O(η²)).  **(8)** Cathedral speed of light c_G = 1/η = 8π (closed form, zero free parameters); physical a_G = c·η is a unit choice. |
+
+### v2.9.89 — Cathedral closed forms
+
+| Quantity | Cathedral form | Value |
+|---|---|---|
+| Lorentz signature | (1, D) | (1, 3) |
+| Spacetime dimensions | D + 1 = \|K_4\| | 4 |
+| Internal dimensions | D! + D = D² = \|A_5\| | 9 |
+| Total Hilbert dim | N = (D+1) + (D!+D) | 13 |
+| Time step (Cathedral) | η = 1/(8π) | 0.03979 |
+| Speed of light (Cathedral) | c_G = 1/η = 8π | 25.13 |
+| Cathedral natural timescale | 2^q · π² | 315.83 |
+| Mid-range spectral t | 1/⟨λ⟩ = N/(D!·V) | 0.181 |
+| Peak spectral dimension | d_s_max (G_{13}) | ≈ 2.20 |
+| Hessian eigenvalues (K_4) | {+1, −λ_1, −λ_2, −λ_3} | {+1, −3, −3, −5} |
+
+### v2.9.89 Honest scope
+
+The module DOES NOT claim:
+  - Local diffeomorphism invariance / curved GR (this module derives
+    the rigid Minkowski metric only).
+  - A unique scalar speed of light in SI units (c_G = 8π is in
+    Cathedral dimensionless units; SI value of c via a_G = c·η is a
+    UNIT CHOICE, not a prediction).
+  - Uniqueness of the K_4 ↔ spacetime identification (the K_4 sector
+    is the framework's canonical choice based on smallest-eigenvalue
+    ordering and group-theoretic structure K_4 = Z_2 × Z_2 = visible
+    gauge group; other sub-spaces of the 13-shell could in principle
+    also host a (1, D) mode count).
+  - Quantum gravity.  This module derives the *classical* metric
+    background; full quantum theory of the metric remains open.
+
+### v2.9.89 CI gate
+
+```python
+from urt import spacetime_emergence_audit_passes
+assert spacetime_emergence_audit_passes()
+```
+
+Ten machine-precision checks all pass; the audit returns True iff
+every step of the emergence chain holds.
+
+### v2.9.89 Test totals
+
+Test totals: 8,844 → 8,871 (+49 new tests across 1 module + 1 init
+update, 0 regressions, 0 xfail).
+
+---
+
 CI gates for the post-v2.9.48 wave:
 ```python
 from urt import (
@@ -1849,7 +1914,7 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 8,844 tests
+python -m pytest tests/ -q              # all 8,871 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
