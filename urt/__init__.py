@@ -2292,6 +2292,23 @@ from .lytollis_bounded_chaos import (
     print_lytollis_bounded_chaos_report,
 )
 
+# v2.9.88 (2026-05-17) — A_5 sector → U(3) = SU(3) × U(1) refinement.
+# Closes the SU(3) per-mode item in iron_proof.speculative_honest at the
+# count level: A_5 (9 modes) = 8 gluons + 1 photon, where the unique λ=N=13
+# center-vs-shell mode is the photon (U(1) trace singlet) and the remaining
+# 8 modes are the gluon octet (D²−1 = SU(3) adjoint dim).  Per-generator
+# action remains open — that's the residual speculative_honest item.
+from .su3_u1_decomposition import (
+    a5_trace_singlet,
+    a5_gluon_octet,
+    u3_decomposition_identity,
+    ModeIdentification,
+    refined_13_mode_identification,
+    su3_u1_decomposition_summary,
+    su3_u1_decomposition_audit_passes,
+    print_su3_u1_decomposition_report,
+)
+
 # v2.9.78 — Discrete black-hole thermodynamics + Ihara zeta on G_{13}.
 # Eighteen rigorous spectral-graph theorems (matrix-tree, Bass identity,
 # Lubotzky-Phillips-Sarnak Ramanujan property) — every Cathedral integer
@@ -3751,6 +3768,15 @@ __all__ = [
     "lytollis_bounded_chaos_audit",
     "lytollis_bounded_chaos_audit_passes",
     "print_lytollis_bounded_chaos_report",
+    # v2.9.88 — A_5 → U(3) = SU(3) × U(1) refinement
+    "a5_trace_singlet",
+    "a5_gluon_octet",
+    "u3_decomposition_identity",
+    "ModeIdentification",
+    "refined_13_mode_identification",
+    "su3_u1_decomposition_summary",
+    "su3_u1_decomposition_audit_passes",
+    "print_su3_u1_decomposition_report",
     # v2.9.78 — Discrete BH thermodynamics + Ihara zeta on G_{13}
     "SPECTRUM",
     "laplacian_pseudo_determinant",
