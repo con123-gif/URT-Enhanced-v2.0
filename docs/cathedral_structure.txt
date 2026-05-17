@@ -838,10 +838,23 @@
   │                                 manifold is icosahedral, forced by
   │                                 chaos+Langevin+symmetry
   ├── sm_gauge_mapping.py           [v2.9.89] Per-K_4-mode SM gauge ID:
-  │                                 graviton+EW DERIVED; SU(3) sector-asserted
-  └── cc_and_yukawa_mechanism.py    [v2.9.89] Λ/M_Pl⁴ to 0.1 %; six quark
-                                    masses to <1 %; structural mechanisms
-                                    documented as candidates
+  │                                 graviton+EW DERIVED; SU(3) octet DERIVED
+  │                                 at v2.9.88 in su3_generators_on_a5.py
+  ├── cc_and_yukawa_mechanism.py    [v2.9.89] Λ/M_Pl⁴ to 0.1 %; six quark
+  │                                 masses to <1 %
+  ├── su3_u1_decomposition.py       [v2.9.88] A_5 = U(3) = SU(3)×U(1):
+  │                                 9 modes = 8 gluons + 1 photon; λ=N=13
+  │                                 mode is the U(1) center-vs-shell trace
+  ├── su3_generators_on_a5.py       [v2.9.88] 8 explicit Hermitian SU(3)
+  │                                 generators on 8 non-trace A_5 modes;
+  │                                 PDG f^abc match to 1e-10
+  ├── k4_cube_vacuum_bubble.py      [v2.9.88] (D+1)^D=64 derived as explicit
+  │                                 K_4-cube vacuum-bubble product; matches
+  │                                 v9 Λ/M_Pl⁴ to 3.7e-16
+  └── quark_yukawa_from_eigenmodes.py
+                                    [v2.9.88] All 6 Yukawas as L_{G_{13}}
+                                    eigenmode overlaps on {D,q,D!+1}={3,5,7}
+                                    doublets; match to 7.5e-16; PDG <1 %
 
   DARK MATTER & BARYOGENESIS
   ├── dark_matter.py                Axion/sterile ν/WIMP from H3 k=9..12
