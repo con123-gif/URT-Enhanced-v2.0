@@ -2364,6 +2364,49 @@ from .quark_yukawa_from_eigenmodes import (
     print_quark_yukawa_report,
 )
 
+# v2.9.89 — Spacetime emergence: closes the "metric not derived" gap
+# noted by `urt.hydrodynamic_limit`.  Derives Lorentz signature (1, D),
+# Minkowski sign pattern, single light cone, and the 13 = 4 + 9
+# dimensional decomposition directly from the K_4 ⊕ A_5 sector structure
+# of L_{G_13} + the Cathedral Lagrangian Hessian.
+from .spacetime_emergence import (
+    # Constants
+    DYNAMICAL_NORMALISATION as STEM_DYN_NORM,
+    T_STAR as STEM_T_STAR,
+    C_G as CATHEDRAL_SPEED_OF_LIGHT,
+    # Step 1 — time arrow
+    continuous_time_from_iteration,
+    time_arrow_exists,
+    # Step 2 — Lorentz signature
+    K4_eigenvalues,
+    lorentz_signature_from_K4,
+    # Step 3 — Minkowski metric
+    kinetic_hessian_diagonal,
+    minkowski_signature_emerges,
+    minkowski_metric_normalised,
+    hessian_sign_pattern_matches_minkowski,
+    # Step 4 — light cone
+    dispersion_omega_squared_equals_lambda,
+    all_K4_modes_share_light_cone,
+    # Step 5 — spectral dimension
+    heat_kernel_Z as heat_kernel_Z_spacetime,
+    spectral_dimension_at,
+    spectral_dimension_at_natural_t,
+    spectral_dimension_peak,
+    weyl_dimension_from_eigenvalue_counting,
+    # Step 6 — decomposition
+    dimensional_decomposition as spacetime_dim_decomposition,
+    # Step 7 — continuum wave equation
+    continuum_dispersion_residual,
+    # Step 8 — speed of light closed form
+    cathedral_speed_of_light,
+    cathedral_planck_length,
+    # Audit + report
+    spacetime_emergence_audit_passes,
+    spacetime_emergence_summary,
+    print_spacetime_emergence_report,
+)
+
 # v2.9.78 — Discrete black-hole thermodynamics + Ihara zeta on G_{13}.
 # Eighteen rigorous spectral-graph theorems (matrix-tree, Bass identity,
 # Lubotzky-Phillips-Sarnak Ramanujan property) — every Cathedral integer
