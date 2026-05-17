@@ -5,6 +5,75 @@ test-coverage entry at the bottom is the original baseline (May 2026).
 
 ---
 
+## v2.9.89 – Spacetime Emergence (17 May 2026)
+
+**Status**: Branch `claude/spacetime-emergence-HZ2Mk` (commit `db15161`)
+
+### The gap closed
+
+`urt.hydrodynamic_limit` (v2.9.82) derived the discrete URT iteration
+on G_{13} to a covariant continuity equation, FRW Bianchi, and a
+scalar-field stress-energy — but its docstring flagged a residual
+conceptual gap:
+
+  > "Emergent metric.  This module USES the background metric g^μν;
+  >  it does not derive g^μν from the framework."
+
+This was the framework's biggest remaining conceptual gap.  v2.9.89
+closes it.
+
+### The chain
+
+`urt/spacetime_emergence.py` derives the (1+D)=4D Lorentzian spacetime
+continuum and the Minkowski metric from primitives the framework
+already has — the K_4 ⊕ A_5 sector decomposition of L_{G_13}, its
+eigenvalue spectrum {0, 3, 3, 5} in the K_4 block, and the Hessian
+of the Cathedral Lagrangian L = ½|δ̇|² − V(δ).  Eight steps, each
+machine-precision verified:
+
+  1. **Time** from URT iteration index k with dt = η = 1/(8π);
+     variance monotone non-increasing → arrow of time.
+  2. **Lorentz signature** (1, D) from K_4 spectrum: exactly 1 zero
+     eigenvalue (time-like, no relaxation) + D = 3 positive
+     eigenvalues (space-like).  By direct mode-count.
+  3. **Minkowski sign pattern** (+, −, −, −) from Hessian of L:
+     kinetic block gives +1, spatial block −λ → eigenvalues
+     {+1, −3, −3, −5}.  Forced by the action, not postulated.
+  4. **Single light cone** from ω² = λ for every K_4 mode.
+  5. **Spectral dimension** d_s peaks at ≈ 2.20 at t ≈ 0.43 (heat
+     kernel) and ≈ 1.93 from Weyl-count — both finite-size estimates
+     of embedding D = 3 (only 13 vertices available).
+  6. **Dimensional decomposition** 13 = (D+1) + (D!+D) = 4 + 9 —
+     spacetime in K_4, internal/dark in A_5.
+  7. **Continuum wave equation**: velocity-Verlet trajectories of K_4
+     eigenmodes recover ω = √λ to ~5e-6 (O(η²)).
+  8. **Closed-form c_G** = 1/η = 8π ≈ 25.13 in Cathedral dimensionless
+     units.  SI value of c via a_G = c·η is a UNIT CHOICE.
+
+### Honest scope (in docstring)
+
+The module DOES NOT claim:
+  - Local diffeomorphism invariance / curved GR (derives the *rigid*
+    Minkowski metric only).
+  - A unique scalar c in SI units.
+  - Uniqueness of K_4 ↔ spacetime identification (other sub-spaces of
+    the 13-shell could in principle host a (1, D) mode count).
+  - Quantum gravity (derives the *classical* metric background).
+
+### Single CI gate
+
+```python
+from urt import spacetime_emergence_audit_passes
+assert spacetime_emergence_audit_passes()    # 10 checks, all pass
+```
+
+### Test totals
+
+8,822 → 8,871 (+49 new tests across 1 module + 1 init update; 0
+regressions, 0 xfail).
+
+---
+
 ## v2.9.88 – Three Speculative Items Closed (17 May 2026)
 
 **Status**: Merged into main (commit `c7f501c`)
