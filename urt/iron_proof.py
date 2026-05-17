@@ -453,11 +453,12 @@ def honest_assessment() -> dict:
             "G_N = δ★²: K4 gapless mode as graviton carrier. Connects to Barbero-Immirzi",
             "PMNS θ₁₃: sin²θ₁₃ = δ★² — reactor angle equals Cathedral gravity coupling",
             "δ_CP = (D+1)F+(N-D-1)N: sector phase counting (K4 × F + H3 × N). Exact but motivated",
+            "A_5 sector ↔ U(3) = SU(3) × U(1): 9 modes = 8 gluons + 1 photon (D² = (D²-1) + 1; λ=13 mode is the unique center-vs-shell trace singlet — verified at machine precision in su3_u1_decomposition.py)",
         ],
         "speculative_honest": [
             "CC formula exponent (D+1)^D = |K_4|^D = 64: structural identity verified, full QFT mechanism (e.g. K_4-cube vacuum bubble) is candidate, not proven",
             "Quark masses: closed forms match PDG to <1 % (Cathedral integer + γ/Δ/δ★ polynomials), but explicit derivation as Yukawa amplitudes from L_{G_{13}} eigenmodes not yet shown",
-            "SU(3) strong sector ↔ K_4[3] at λ=5: asserted at sector level (6-fold λ=5 degeneracy → per-mode choice ambiguous; 8 gluons don't fit one Cathedral mode)",
+            "SU(3) per-generator action: A_5 sector → u(3) = su(3) ⊕ u(1) count match is now FORCED (D² = 8 + 1; see well_motivated list and su3_u1_decomposition.py), but identifying the explicit SU(3) generator action on the 8 non-trace A_5 eigenvectors remains open",
         ],
         "what_would_falsify": [
             "n_s measured outside [0.960, 0.970] at > 5σ",
