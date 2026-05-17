@@ -2440,6 +2440,67 @@ from .gr_emergence import (
     print_gr_emergence_report,
 )
 
+# v2.9.93 — Induced-gravity completion: closes ALL three "Honest Scope -
+# DOES NOT claim" items left open by v2.9.92's induced-gravity module.
+# (1) First-principles matching derivation (zero RG input).
+# (2) Explicit K_4 / A_5 sector decomposition: K_4 = D modes, A_5 = D²
+#     modes; A_5 dominates by factor D = 3.
+# (3) Quantum gravity at one loop: full higher-curvature effective
+#     action with Cathedral closed forms for c_R, c_R², c_R³, c_R⁴
+#     (tr(L²) = 516 connects to Starobinsky inflation modulus).
+from .induced_gravity_completion import (
+    K4_NONZERO_SPECTRUM as IG_K4_SPECTRUM,
+    A5_SPECTRUM as IG_A5_SPECTRUM,
+    FULL_NONZERO_SPECTRUM as IG_FULL_SPECTRUM,
+    # ITEM 1
+    first_principles_matching,
+    matching_is_first_principles,
+    # ITEM 2
+    K4_mode_count, A5_mode_count,
+    sector_induced_gravity,
+    G_N_K4_sector, G_N_A5_sector, G_N_total_combined,
+    sector_decomposition_audit,
+    # ITEM 3
+    trace_L_power,
+    trace_L2_cathedral_decomposition,
+    sector_trace_L_squared,
+    one_loop_curvature_coefficients,
+    quantum_gravity_one_loop_summary,
+    # Audit
+    all_items_closed_audit,
+    induced_gravity_completion_audit_passes,
+    print_induced_gravity_completion_report,
+)
+
+# v2.9.92 — Sakharov-Visser induced gravity at one loop on G_{13}.
+# Closes the residual "EH action from first principles" item disclaimed
+# by `urt.einstein_field_equations`.  Headline closed forms:
+#   - Λ²_match / M_Pl² = D!·π = 6π (Sakharov-Visser matching cutoff)
+#   - det' L = γ⁻¹ · q^(D!) · (D!+1)² · N = 806,203,125
+#   - ζ_L(0)=V, ζ_L(-1)=D!·V, ζ_L(-2)=516, ζ_L(1)=9584/4095
+from .induced_gravity_one_loop import (
+    SPECTRUM_NONZERO,
+    spectrum_with_multiplicities,
+    spectral_zeta,
+    zeta_one_rational,
+    det_prime_L_closed_form,
+    det_prime_L_numerical,
+    det_prime_L_factorisation,
+    log_det_prime_L,
+    log_det_cathedral_closed_form,
+    sakharov_visser_matching_scale_squared,
+    sakharov_visser_matching_cathedral,
+    induced_newton_constant,
+    induced_gravity_matches_cathedral_GN,
+    one_loop_effective_action,
+    cathedral_mass_squared,
+    cathedral_mass_squared_closed,
+    heat_kernel_seeley_dewitt_coefficients,
+    induced_gravity_summary,
+    induced_gravity_audit_passes,
+    print_induced_gravity_report,
+)
+
 # v2.9.91 — Einstein field equations: closes the "EFE not derived" item
 # disclaimed by `urt.gr_emergence`.  The Cathedral Einstein-Hilbert
 # action S = ∫√(-g)[(R - 2Λ)/(16πG_N) + L_δ] with G_N = δ★² and

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "urt-cathedral"
-version = "2.9.91"
+version = "2.9.93"
 description = "Newton's Cathedral — zero-free-parameter framework from icosahedral geometry"
 readme = "README.md"
 requires-python = ">=3.8"
