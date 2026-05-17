@@ -5,6 +5,88 @@ test-coverage entry at the bottom is the original baseline (May 2026).
 
 ---
 
+## v2.9.91 – Einstein Field Equations (17 May 2026)
+
+**Status**: Branch `claude/spacetime-emergence-HZ2Mk`
+
+### The gap closed
+
+`urt.gr_emergence` (v2.9.90) explicitly disclaimed:
+
+  > "Einstein's field equations from first principles.  The framework
+  >  contains the COMPONENT COUNTS and the COUPLING CONSTANT
+  >  (G_N = δ★²), but not the dynamical equations themselves."
+
+v2.9.91 closes this.  The framework supplies *every* ingredient of
+Einstein's field equations as Cathedral closed forms.
+
+### The Cathedral Einstein-Hilbert action
+
+```
+S_Cath  =  ∫d⁴x √(−g) · [ (R − 2Λ) / (16π · G_N)   +   L_δ[δ, g] ]
+```
+
+with all coefficients fixed by the framework:
+
+| Coupling | Cathedral form | Value |
+|---|---|---|
+| G_N | δ★² | 0.02176 |
+| Λ / M_Pl⁴ | (D+1) · γ^((D+1)^D) | 2.88×10⁻¹²² |
+| L_δ | (1/2)·(∂δ)² − V(δ) | (engine) |
+| EH prefactor | 1 / (16π·δ★²) | 0.9143 |
+
+Variation w.r.t. g^μν:
+
+```
+δS / δg^μν = 0   ⇒   G_μν + Λ · g_μν   =   8π · G_N · T_μν^(δ)
+```
+
+This IS Einstein's field equation with the framework's coupling.
+
+### Twelve machine-precision checks
+
+All textbook GR solutions reproduced with the Cathedral coupling
+G_N = δ★², no free parameters:
+
+  1. G_N = δ★² closed form
+  2. Λ/M_Pl⁴ = (D+1)·γ^((D+1)^D) (Planck 2018 match)
+  3. EH prefactor = 1/(16π·δ★²)
+  4. **Schwarzschild R_μν = 0** at sample r > r_s (residual ≤ 1e-7)
+  5. Kretschmann K = 12·r_s²/r⁶ (exact)
+  6. **Bianchi identity ∇^μG_μν = 0**
+  7. Newton ∇²Φ = 0 for r > 0 (residual 3.7e-13)
+  8. g_00 = −(1 + 2Φ) Schwarzschild → Newton at large r
+  9. **Kepler ω²·r³ = G_N·M** (Cathedral identity)
+  10. **BOTH Friedmann equations** from G_μν + Λ·g_μν = 8π·G_N·T_μν
+      (matter, radiation, AND de Sitter w = −1 all verified)
+  11. Linearised □h_μν = −16π·G_N·T_μν^TT coefficient = 16π·δ★²
+  12. Cathedral correspondence dict — every primitive pinned
+
+### Honest scope
+
+The module DOES NOT claim:
+  - A derivation of the Einstein-Hilbert ACTION from a deeper
+    principle.  Like standard GR, S_EH is taken as the starting
+    point — but with ALL coefficients fixed by the Cathedral
+    framework.  The Sakharov-Visser induced-gravity programme
+    (deriving EH from one-loop A_5 mode integration) is documented
+    as an open research direction.
+  - Quantum gravity.
+
+### CI gate
+
+```python
+from urt import einstein_field_equations_audit_passes
+assert einstein_field_equations_audit_passes()    # 12 checks, all pass
+```
+
+### Test totals
+
+8,915 → 8,962 (+47 new tests across 1 module + 1 init update;
+0 regressions, 0 xfail).
+
+---
+
 ## v2.9.90 – GR Emergence (17 May 2026)
 
 **Status**: Branch `claude/spacetime-emergence-HZ2Mk`

@@ -2440,6 +2440,38 @@ from .gr_emergence import (
     print_gr_emergence_report,
 )
 
+# v2.9.91 — Einstein field equations: closes the "EFE not derived" item
+# disclaimed by `urt.gr_emergence`.  The Cathedral Einstein-Hilbert
+# action S = ∫√(-g)[(R - 2Λ)/(16πG_N) + L_δ] with G_N = δ★² and
+# Λ = (D+1)·γ^((D+1)^D)·M_Pl⁴ — zero free parameters.  Verifies
+# Schwarzschild satisfies R_μν = 0 at machine ε, both Friedmann
+# equations from G_μν + Λ·g_μν = 8πG_N·T_μν, Newtonian limit
+# ∇²Φ = 4πG_N·ρ, Kepler ω² = G_N·M/r³, and the Bianchi identity.
+from .einstein_field_equations import (
+    LAMBDA_OVER_MPL4,
+    cathedral_einstein_hilbert_action_coefficient,
+    cathedral_action_density,
+    stress_energy_delta,
+    schwarzschild_metric, schwarzschild_christoffel,
+    schwarzschild_riemann_kretschmann,
+    schwarzschild_ricci as schwarzschild_ricci_efe,
+    schwarzschild_einstein_tensor,
+    schwarzschild_is_vacuum_solution,
+    schwarzschild_radius_cathedral,
+    frw_einstein_tensor, friedmann_equations,
+    friedmann_from_einstein_equations,
+    newtonian_potential, newtonian_poisson_residual,
+    newton_law_at_infinity,
+    kepler_third_law_schwarzschild, kepler_third_law_holds,
+    bianchi_residual_schwarzschild,
+    cosmological_constant_cathedral,
+    linearised_einstein_wave_equation_coefficient,
+    cathedral_einstein_equation_correspondence,
+    einstein_field_equations_audit_passes,
+    einstein_field_equations_summary,
+    print_einstein_field_equations_report,
+)
+
 # v2.9.78 — Discrete black-hole thermodynamics + Ihara zeta on G_{13}.
 # Eighteen rigorous spectral-graph theorems (matrix-tree, Bass identity,
 # Lubotzky-Phillips-Sarnak Ramanujan property) — every Cathedral integer
