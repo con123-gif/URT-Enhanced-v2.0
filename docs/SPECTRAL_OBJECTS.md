@@ -1,6 +1,6 @@
 # Two spectra, one symmetry group — disambiguation
 
-*Status: framework documentation, v2.9.87.  External contribution: James Lockwood (mathematician, 2026, private communication) — derivation of the actual graph-Laplacian spectrum of Cone(I_12), the inverse-Laplacian trace η_{G_{13}} = 5508/2821, and the BT8g coupling sector that turns it into a Cathedral closure.*
+*Status: framework documentation, v2.9.88.  External contribution: James Lockwood (mathematician, 2026, private communication) — derivation of the actual graph-Laplacian spectrum of Cone(I_12), the inverse-Laplacian trace η_{G_{13}} = 5508/2821, and the BT8g coupling sector that turns it into a Cathedral closure.*
 
 ---
 

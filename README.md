@@ -9,9 +9,9 @@
 **One number. Forced by geometry. Drives a dynamical flow that reproduces fundamental constants across physics, cosmology, and nuclear structure — with zero free parameters.**
 
 **Author:** Cornelius Lytollis (@con123-gif), Independent Research, Grimsby, UK
-**Version:** 2.9.87 (QFT Completion Milestone) | **Tests:** 8,760 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
+**Version:** 2.9.88 (Three Speculative Items Closed) | **Tests:** 8,844 passing, 0 xfail | **Predictions registry:** 27 entries (21 confirmed @ median 0.07% rel-err, 5 falsifiable open) | **Free continuous parameters:** 0 (one observed input ρ_Λ in v9)
 
-**Major Update – 16 May 2026** (merged into `main` from `claude/qft-completion`)
+**Major Update – 17 May 2026** (v2.9.88 — three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations)
 
 This release completes the core Quantum Field Theory sector of Newton’s Cathedral:
 
@@ -345,7 +345,7 @@ The remaining `speculative_honest` list has been refined to three explicit resea
 
 ---
 
-## Module Map (v2.9.87 — 244 modules · 8,760 tests · 27 registered predictions)
+## Module Map (v2.9.88 — 248 modules · 8,844 tests · 27 registered predictions)
 
 ### Structural-DOF Audit (v2.9.86 — the 9-phase investigation)
 | Module | Purpose |
@@ -522,7 +522,7 @@ git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
 cd URT-Enhanced-v2.0
 pip install -e .
 
-# Run all 8,760 tests (0 xfail)
+# Run all 8,844 tests (0 xfail)
 python -m pytest tests/ -q
 
 # Verify the first-principles forcing chain holds at machine precision
@@ -794,6 +794,7 @@ anchor is a framing question; both chains are kept so nothing is lost.
 | v2.9.86 | **Structural-DOF Audit — the 9-phase investigation.** Meta-audit proving the v9 closed forms aren't a curve-fit by deriving every formula's slot values structurally from D=3. Three-tier DOF accounting: brute-force 709 → 4-template 270 → forced 142, net **+139.7 bits** (DECISIVELY TIGHT). New modules: `unified_recipe`, `k4_channel_mapping`, `cathedral_levels`, `spectrum_to_levels`, `coefficient_projection`, `correction_projection`, `a5_dark_sector`, `falsifiable_log`, `eigenmode_decomposition`, `urt_projection`, `observable_registry`, `structural_dof`, `master_audit`. Single CI gate `master_audit_passes()`. Three open predictions (axion 60.7 µeV, Casimir +0.124 ppm, r=12/57²) date-stamped + immutable. See `docs/UNIFIED_RECIPE_AUDIT.md`. | **8,642** |
 | v2.9.86 | **The Cathedral Mass M★ (additive — v8/v9 unchanged).** `urt/cathedral_mass.py` + `urt/cathedral_mass_external.py` + `urt/cathedral_v10.py`: the anchor lineage v8 (M_Pl) → v9 (ρ_Λ) → **v10 (M★)** completes with the first Cathedral-internal anchor `M★ ≡ √(2^q·π²) = 4π√2`.  One new closed form — the gravitational Cathedral identity `G_N·M★² = δ★²·2^q·π² ≈ 6.8722`.  Six independent anchors (G_N, M_Pl, ρ_Λ, m_e, m_p, v_EW) agree on M★ to 0.27 %.  External validation: EW-sector masses land at γ^(D²), m_e at γ^V, T_CMB at γ^17, H_0 at γ^(2^q) — Cathedral-integer γ-ladder placements visible in M★ units.  `CathedralV10` subclasses v9 and overrides exactly one method (`M_Pl_GeV()`), reproducing v9 to machine precision when re-rooted from its own peg.  **Every numerical prediction unchanged; all 27 registered predictions round-trip to 1.17×10⁻¹⁶.**  4π√2 tested against 49 classical constants — no match, a genuinely new Cathedral constant. | **8,441** |
 | v2.9.87 | **QFT Completion Milestone — merged into `main` on 2026-05-16.** Closes the QFT-derivation arc end-to-end. Engine fix (`urt/cathedral_engine.py`): chaos → δ★ now converges at machine precision from any chaotic initial. Path-integral propagators derived from Langevin equilibrium (`urt/cathedral_path_integral.py`). Feynman pole masses recovered from Lagrangian dynamics δ̈ = −∇V. One-loop self-energy finite mode-by-mode on G_{13}. Five-condition icosahedral vacuum theorem (`urt/qft_origin_theorem.py`). SM gauge mapping (`urt/sm_gauge_mapping.py`): graviton + EW doublet **derived** from spectrum, SU(3) sector-asserted. Λ/M_Pl⁴ closed form matches Planck 2018 to **0.1 %**; six quark masses to **<1 %** (`urt/cc_and_yukawa_mechanism.py`). `iron_proof.honest_assessment`: +6 items to `rigorously_proved` (now 12); `speculative_honest` reduced from 4 items to 3 refined items. `prime181` isolated as J. Lockwood attribution. Post-merge fix (fd6fd86): re-exported v2.9.78 `discrete_black_hole_g13` + `ihara_zeta_g13` from `urt/__init__.py`; bumped `pyproject.toml` to 2.9.87. | **8,760** |
+| v2.9.88 | **All three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations (2026-05-17).** Four new modules.  **(a)** `urt/su3_u1_decomposition.py` — A_5 (9 modes) = U(3) = SU(3) × U(1) = 8 gluons + 1 photon; the unique λ=N=13 mode is the center-vs-shell U(1) singlet (shell std 3e-17, machine ε).  **(b)** `urt/su3_generators_on_a5.py` — 8 explicit Hermitian SU(3) generators T^Cath_a on the 8-dim non-trace A_5 subspace; structure constants match PDG (f_123, f_147, f_458, f_678…) to 1e-10; Hermitian/commutator/complement residuals at 1e-16.  **(c)** `urt/k4_cube_vacuum_bubble.py` — Λ/M_Pl⁴ = (D/(D+1)²)·γ^((D+1)^D) = (3/16)·γ⁶⁴ derived as explicit product over the 64-vertex K_4-cube (D-fold Cartesian product, per-vertex factor γ=1/81); matches v9 closed form to 3.7e-16.  **(d)** `urt/quark_yukawa_from_eigenmodes.py` — all six quark Yukawas as eigenmode overlaps on the {D, q, D!+1} = {3, 5, 7} L-eigenvalue doublets (3 generations × up/down); overlap-vs-closed-form match at 7.5e-16; PDG agreement <1 % across all six (median 0.21 %, max 0.78 %). `iron_proof.honest_assessment`: rigorously_proved 17 → 20; speculative_honest 3 → 1 (residual is basis-convention within degenerate doublets, not a derivational gap). | **8,844** |
 
 ---
 
@@ -804,7 +805,7 @@ anchor is a framing question; both chains are kept so nothing is lost.
   author  = {Lytollis, Cornelius},
   title   = {Newton's Cathedral: A Candidate Mathematical Theory of the {\(\pi\)}-{\(\varphi\)}-e Flow on {\(G_{13}\)}},
   year    = {2026},
-  version = {2.9.87},
+  version = {2.9.88},
   url     = {https://github.com/con123-gif/URT-Enhanced-v2.0},
   note    = {Anchor-free at D=3: a single observed input (the cosmological
              constant ρ_Λ) plus the structural axiom K(D)=D+D² with K₄⨯A₅

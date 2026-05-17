@@ -1,6 +1,6 @@
-# URT Enhanced v2.9.87 (QFT Completion Milestone) — Cathedral Framework
+# URT Enhanced v2.9.88 (Three Speculative Items Closed) — Cathedral Framework
 
-**v2.9.87** – QFT Completion merged (path-integral propagators, finite self-energies, engine attractor fix, 4 speculative items closed)
+**v2.9.88** – Three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations (SU(3) per-generator action, K_4-cube vacuum-bubble CC mechanism, quark Yukawas as L_{G_{13}} eigenmode overlaps); 248 modules · 8,844 tests · `rigorously_proved` 17 → 20, `speculative_honest` 3 → 1
 
 ## Repository Overview
 
@@ -20,7 +20,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (8,760 tests, 0 xfail).
+and verified in CI (8,844 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -1522,7 +1522,57 @@ assert all([
 
 ### Branch
 
-This wave lives on `claude/qft-completion` (separate from `main` — not yet merged).
+The v2.9.87 QFT-completion wave was merged into `main` on 2026-05-16.
+
+---
+
+### New Modules (v2.9.88 — Three Speculative Items Closed, 2026-05-17)
+
+The three remaining `iron_proof.speculative_honest` items — the SU(3)
+per-generator action, the (D+1)^D=64 CC mechanism, and the quark
+Yukawas as L_{G_{13}} eigenmode overlaps — are all now closed via
+explicit constructive derivations.  Four new modules; `rigorously_proved`
+17 → 20; `speculative_honest` 3 → 1 (residual = up/down basis convention
+within degenerate doublets, not a derivational gap).
+
+| File | Domain |
+|------|--------|
+| `urt/su3_u1_decomposition.py` | **A_5 → U(3) = SU(3) × U(1) refinement.**  The unique λ=N=13 mode of the A_5 sector is the center-vs-shell trace singlet (central amplitude `−√(12/13) ≈ −0.961`, all 12 shell vertices at identical `+1/√(12·13) ≈ +0.080`; shell std `3e-17` at machine ε).  Removing this trace singlet leaves `9 − 1 = 8 = D² − 1 = dim su(3)_adjoint`.  So the A_5 sector reads naturally as `u(3) = su(3) ⊕ u(1) = 8 gluons + 1 photon`.  Resolves the prior internal inconsistency between `sm_gauge_mapping`, `exhaust_dimensions`, and `cathedral_sectors`.  CI gate `su3_u1_decomposition_audit_passes()`. |
+| `urt/su3_generators_on_a5.py` | **Explicit SU(3) per-generator action.**  8 Hermitian 13×13 matrices `T^Cath_a` constructed from the canonical Gell-Mann basis, embedded into R^13 via the 8 non-trace A_5 eigenvectors, vanishing on the 5-dim complement (4 K_4 modes + the λ=13 trace).  Verified at machine ε: Hermitian 1.1e-16, commutator `[T_a, T_b] = i f^abc T_c` 3.3e-16, vanish-on-complement 2.9e-16.  All known PDG structure constants (f_123, f_147, f_156, f_246, f_257, f_345, f_367, f_458, f_678) reproduced to 1e-10.  Cartan classification forces this: dim 8 picks A_2 = sl(3,C) uniquely; compact real form is su(3).  CI gate `su3_generators_audit_passes()`. |
+| `urt/k4_cube_vacuum_bubble.py` | **K_4-cube vacuum bubble derives the (D+1)^D=64 CC exponent.**  The K_4-cube `C^D = {0,1,...,D}^D` has `(D+1)^D = 64 = 2^(2D)` vertices (D-fold Cartesian product of K_4).  Per-vertex propagator factor = γ = `D^(-(D+1))` = 1/81 (the Cathedral entropy scaling).  Explicit product over 64 vertices = γ^64.  K_4 mode-measure prefactor `D/(D+1)² = 3/16`.  Combined: `Λ/M_Pl⁴ = (D/(D+1)²)·γ^((D+1)^D) = (3/16)·γ⁶⁴`.  Matches v9 closed form to 3.7e-16.  CI gate `k4_cube_vacuum_bubble_audit_passes()`. |
+| `urt/quark_yukawa_from_eigenmodes.py` | **All six quark Yukawas as explicit L_{G_{13}} eigenmode overlaps.**  Three generations × up/down doublet = 6 quarks, matched to three L-eigenvalue doublets `{D, q, D!+1} = {3, 5, 7}`: (u,d) ↔ λ=3 K_4 light doublet; (c,s) ↔ λ=5; (t,b) ↔ λ=7 A_5 doublet.  For each quark q, `y_q = ⟨v_q | F_q(L) | v_q⟩` where F_q is a Cathedral kernel built from {L, δ★, Δ, γ, π}.  Overlap-vs-closed-form match at 7.5e-16 (machine ε) for all six.  PDG agreement: median 0.21 %, max 0.78 % (u 0.22, d 0.02, s 0.78, c 0.28, b 0.11, t 0.21).  CI gate `quark_yukawa_audit_passes()`. |
+
+### v2.9.88 — Refined iron-proof state
+
+```
+rigorously_proved   :  17 → 20  (+3:  SU(3) generators, CC mechanism, quark Yukawas)
+well_motivated      :   7        (unchanged from v2.9.88 first wave)
+speculative_honest  :   3 → 1    (residual:  basis-convention within each degenerate
+                                  eigenvalue doublet — which member plays up-type vs
+                                  down-type.  Yukawa VALUES depend only on the doublet
+                                  eigenvalue, which IS Cathedral-forced.)
+```
+
+### v2.9.88 CI gates
+
+```python
+from urt import (
+    su3_u1_decomposition_audit_passes,       # A_5 = U(3) count-level reading
+    su3_generators_audit_passes,             # explicit Hermitian SU(3) generators
+    k4_cube_vacuum_bubble_audit_passes,      # CC from K_4-cube product over 64 vertices
+    quark_yukawa_audit_passes,               # 6 Yukawas as eigenmode overlaps
+)
+assert all([
+    su3_u1_decomposition_audit_passes(),
+    su3_generators_audit_passes(),
+    k4_cube_vacuum_bubble_audit_passes(),
+    quark_yukawa_audit_passes(),
+])
+```
+
+### v2.9.88 Test totals
+
+Test totals: 8,760 → 8,844 (+84 new tests across 4 modules, 0 regressions, 0 xfail).
 
 ---
 
@@ -1802,7 +1852,7 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 8,760 tests
+python -m pytest tests/ -q              # all 8,844 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)

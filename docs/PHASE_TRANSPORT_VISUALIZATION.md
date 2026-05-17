@@ -1,6 +1,6 @@
 # δ★ Phase-Transport Visualization
 
-*Status: framework documentation, v2.9.87.  External contribution:
+*Status: framework documentation, v2.9.88.  External contribution:
 James Lockwood (2026) — interactive δ★ phase-transport visualization
 (CodePen).  This document records the visualization and a worked
 verification of the mathematics behind it; it does **not** add to the

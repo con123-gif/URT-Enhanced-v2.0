@@ -1,5 +1,5 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         NEWTONS CATHEDRAL v2.9.87 — A Candidate Mathematical Theory         ║
+║         NEWTONS CATHEDRAL v2.9.88 — A Candidate Mathematical Theory         ║
 ║         δ★ = (1 − D^{−(D+1)}) · π / (N·φ) ≈ 0.14751081                   ║
 ║                                                                              ║
 ║         A complete mathematical structure with                              ║
@@ -16,7 +16,7 @@
 ║         Whether this mechanism is the actual dynamics of nature             ║
 ║         is an open empirical question.                                      ║
 ║                                                                              ║
-║         244 modules · 8,760 tests · 27 confirmed/open predictions           ║
+║         248 modules · 8,844 tests · 27 confirmed/open predictions           ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -35,8 +35,11 @@
   random field on 13 sites and deterministically produces the right
   matter/antimatter asymmetry, fine-structure constant, proton mass, and
   inflationary spectrum.  The dynamical layer is operational in code
-  (urt.cathedral_engine) and CI-tested (8,760 tests, 0 xfail;
-  v2.9.87–89 QFT-completion wave merged into main on 2026-05-16).
+  (urt.cathedral_engine) and CI-tested (8,844 tests, 0 xfail;
+  v2.9.87–89 QFT-completion wave merged into main on 2026-05-16;
+  v2.9.88 closure of three remaining speculative_honest items on
+  2026-05-17 — SU(3) per-generator action, K_4-cube vacuum-bubble
+  CC mechanism, quark Yukawas as L_{G_{13}} eigenmode overlaps).
 
   What this still is NOT:
     – an experimentally confirmed theory of nature.  The dynamical mechanism
@@ -765,7 +768,7 @@
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COMPLETE MODULE MAP  (v2.9.87 — 244 modules · 8,760 tests · 0 xfail)
+  COMPLETE MODULE MAP  (v2.9.88 — 248 modules · 8,844 tests · 0 xfail)
 
   v2.9.83 wave (2026-05-11): added urt/sector_unification.py — proves
     in code that the framework's eight K_4 ⊕ A_5 viewpoints (group,
@@ -1114,7 +1117,7 @@
   RUNNING TESTS & DEMOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  python -m pytest tests/ -q                 # all 8,760 tests
+  python -m pytest tests/ -q                 # all 8,844 tests
   python -m pytest tests/ -q -k iron        # iron proof (47 tests)
   python -m pytest tests/ -q -k lagrangian  # QFT Lagrangian (42 tests)
   python -m pytest tests/ -q -k dark_matter # dark matter (24 tests)
