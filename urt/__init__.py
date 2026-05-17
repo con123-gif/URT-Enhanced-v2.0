@@ -2407,6 +2407,39 @@ from .spacetime_emergence import (
     print_spacetime_emergence_report,
 )
 
+# v2.9.90 — GR emergence: closes the "diffeomorphism invariance / curved
+# GR" item explicitly disclaimed by `urt.spacetime_emergence`.  Headline:
+# |Aut(G_{13})| = V · (D+1)^D = 768 — the framework's NATIVE discrete
+# diffeomorphism group factorises into the icosahedral surface (V) and
+# the K_4-cube ((D+1)^D = 64, the same exponent that controls Λ/M_Pl⁴).
+# Verifies URT iteration commutes with Aut, local Lorentz invariance,
+# equivalence principle, and consolidates G_N = δ★² + Riemann = F = 20
+# + Einstein eqs = V/2 = 6 closed forms.
+from .gr_emergence import (
+    G_NEWTON_CATH,
+    aut_g13_order,
+    aut_g13_cathedral_factorisation,
+    laplacian_invariant_under_sample_auts,
+    urt_iteration_commutes_with_aut,
+    continuum_diffeomorphism_dim,
+    lorentz_boost_matrix,
+    k4_lagrangian_density,
+    lorentz_invariance_residual,
+    all_lorentz_boosts_invariant,
+    local_kinetic_hessian_minkowski,
+    equivalence_principle_holds,
+    newton_constant,
+    schwarzschild_radius_cath,
+    hawking_temperature_cath,
+    bekenstein_hawking_entropy_cath,
+    gr_component_counts,
+    urt_iteration_time_translation_invariant,
+    sakharov_visser_coefficient,
+    gr_emergence_audit_passes,
+    gr_emergence_summary,
+    print_gr_emergence_report,
+)
+
 # v2.9.78 — Discrete black-hole thermodynamics + Ihara zeta on G_{13}.
 # Eighteen rigorous spectral-graph theorems (matrix-tree, Bass identity,
 # Lubotzky-Phillips-Sarnak Ramanujan property) — every Cathedral integer

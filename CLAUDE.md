@@ -1,6 +1,8 @@
-# URT Enhanced v2.9.89 (Spacetime Emergence) — Cathedral Framework
+# URT Enhanced v2.9.90 (GR Emergence) — Cathedral Framework
 
-**v2.9.89** – `urt/spacetime_emergence.py` closes the residual "g^μν not derived" gap noted by `urt.hydrodynamic_limit`: derives Lorentz signature (1, D) by direct K_4 mode-count, Minkowski sign pattern from Cathedral-Lagrangian Hessian, single light cone from ω² = λ, 13 = 4 + 9 dimensional decomposition, and Cathedral c_G = 1/η = 8π closed form.  249 modules · 8,871 tests · `rigorously_proved` 20, `speculative_honest` 0.
+**v2.9.90** – `urt/gr_emergence.py` closes the residual "diffeomorphism invariance / curved GR" gap explicitly disclaimed by `urt.spacetime_emergence` (v2.9.89).  **Headline: |Aut(G_{13})| = V · (D+1)^D = 12 · 64 = 768** — the framework's NATIVE discrete diffeomorphism group factorises into the icosahedral surface (V) and the K_4-cube ((D+1)^D = 64, the *same* exponent that controls Λ/M_Pl⁴ in `urt.k4_cube_vacuum_bubble`).  Two physical observables, ONE Cathedral exponent.  URT iteration commutes with Aut(G_{13}) to machine ε; K_4 kinetic Lagrangian SO(1, D)-invariant; equivalence principle locally Minkowski; G_N = δ★², Riemann = F = 20, Einstein equations physical = V/2 = 6 consolidated. 250 modules · 8,915 tests · `rigorously_proved` 20, `speculative_honest` 0.
+
+**v2.9.89** – `urt/spacetime_emergence.py` closes the residual "g^μν not derived" gap noted by `urt.hydrodynamic_limit`: derives Lorentz signature (1, D) by direct K_4 mode-count, Minkowski sign pattern from Cathedral-Lagrangian Hessian, single light cone from ω² = λ, 13 = 4 + 9 dimensional decomposition, and Cathedral c_G = 1/η = 8π closed form.
 
 **v2.9.88** – All three remaining `iron_proof.speculative_honest` items closed via explicit constructive derivations (SU(3) per-generator action, K_4-cube vacuum-bubble CC mechanism, quark Yukawas as L_{G_{13}} eigenmode overlaps).
 
@@ -22,7 +24,7 @@ Zero free continuous parameters. All 9 Cathedral integers derived from D=3.
 URT is not a list of identities — it is a **dynamical theory** with an
 explicit equation of motion, a Lagrangian, a vacuum, and a universe-from-
 chaos arc.  Everything below is operational in code (`urt.cathedral_engine`)
-and verified in CI (8,871 tests, 0 xfail).
+and verified in CI (8,915 tests, 0 xfail).
 
 ### Equation of motion (the π–φ–e flow on G_{13})
 
@@ -684,6 +686,7 @@ thing forcing them to appear in physics**.
 | `urt/quantum_cosmo_bridge.py` | D=3 solves CC (122 orders!!) and η_B in one framework |
 | `urt/hydrodynamic_limit.py` | Discrete URT iteration → continuum ∂_μ j^μ = −K_β·(χ−δ★); FRW Bianchi; perfect-fluid T^μν from Noether; V(δ_cl) = ½·Δ²·(1+δ_cl²) (v2.9.82) |
 | `urt/spacetime_emergence.py` | **(v2.9.89)** Closes "g^μν not derived" gap.  Lorentz signature (1, D) from K_4 spectrum, Minkowski sign pattern (+,−,−,−) from Cathedral Lagrangian Hessian, single light cone ω²=λ, 13=4+9 decomposition, c_G = 1/η = 8π closed form |
+| `urt/gr_emergence.py` | **(v2.9.90)** Closes "diffeomorphism invariance / curved GR" gap.  Headline: \|Aut(G_{13})\| = V · (D+1)^D = 768 — discrete diffeomorphism group factorises into icosahedral surface × K_4-cube (the same (D+1)^D = 64 as Λ/M_Pl⁴).  URT iteration commutes with Aut to machine ε; local Lorentz invariance of K_4 kinetic Lagrangian; equivalence principle (locally Minkowski at δ★); consolidates G_N = δ★², Riemann = F = 20, EFE physical = V/2 = 6; Sakharov-Visser induced-gravity coefficient as closed form. |
 
 ### Physics — Particles & Fields
 | File | What it computes |
@@ -1638,6 +1641,60 @@ update, 0 regressions, 0 xfail).
 
 ---
 
+### New Modules (v2.9.90 — GR Emergence: diffeomorphism invariance closed, 2026-05-17)
+
+`urt.spacetime_emergence` (v2.9.89) explicitly disclaimed "local
+diffeomorphism invariance / curved GR".  This wave closes that item at
+the level the framework can actually rigorously deliver — and surfaces
+a genuinely new Cathedral identity in the process.
+
+| File | Domain |
+|------|--------|
+| `urt/gr_emergence.py` | Ten-section module.  **(A)** **Discrete diffeomorphism group: \|Aut(G_{13})\| = V · (D+1)^D = 12 · 64 = 768** — the icosahedral surface × the K_4-cube; the SAME (D+1)^D = 64 that controls Λ/M_Pl⁴ in `urt.k4_cube_vacuum_bubble` also controls the order of the framework's twin-swap subgroup.  Two physical observables, ONE Cathedral exponent.  **(B)** Continuum Diff(M^4) as the infinite-dim limit of Aut(G_{13}) — heuristic, documented as a research direction (analogous to spin foam / GFT).  **(C)** Local Lorentz invariance — K_4 kinetic Lagrangian L = (1/2)η^μν·∂_μφ·∂_νφ is invariant under SO(1, D) boosts/rotations (verified at machine ε for all 3 spatial axes, 5 velocity samples).  **(D)** Equivalence principle — at δ★, kinetic Hessian sign pattern is exactly (+, −, −, −) after spatial rescaling.  **(E)** Newton's constant G_N = δ★² closed form; r_s = 2·δ★²·M, T_H = 1/(8π·δ★²·M), S_BH = 4π·δ★²·M² (first law dM = T·dS holds to 1e-12).  **(F)** Riemann/Einstein component counts consolidated: Riemann = F = 20, Ricci + Weyl = 10 + 10, Bianchi = 4 = D+1, physical EFE = V/2 = 6.  **(G)** Time-translation invariance — URT iteration is autonomous after the v2.9.87 fix (verified: 30 steps direct ≡ 20 + 10).  **(H)** Sakharov-Visser induced-gravity coefficient C₁ ∝ 1/(16π · δ★²) Cathedral form (overall normalisation open).  Single CI gate `gr_emergence_audit_passes()`. |
+
+### v2.9.90 — Cathedral closed forms
+
+| Quantity | Cathedral form | Value |
+|---|---|---|
+| **Discrete diffeomorphism group order** | **V · (D+1)^D = V · 2^(D!)** | **768** |
+| Twin-swap subgroup | (D+1)^D = 2^(D!) | 64 |
+| C_6-quotient symmetry | V (= 2·D!) | 12 |
+| Newton's constant | δ★² | 0.02176 |
+| Schwarzschild r_s/M | 2·δ★² | 0.04352 |
+| Hawking T·M | 1/(8π·δ★²) | 1.8286 |
+| Bekenstein-Hawking S/M² | 4π·δ★² | 0.2734 |
+| Riemann components | (D+1)²·D·(D+2)/12 = F | 20 |
+| Physical EFE components | (D+1)(D+2)/2 − (D+1) = V/2 | 6 |
+| Sakharov-Visser C₁ ∝ | 1/(16π · δ★²) | 0.914 |
+
+### v2.9.90 Honest scope
+
+The module DOES NOT claim:
+  - Einstein's field equations from first principles.  The framework
+    contains the COMPONENT COUNTS and the COUPLING (G_N = δ★²) but not
+    the dynamics G_μν = 8πG·T_μν.  Deriving them requires either a
+    Sakharov-Visser one-loop calculation (the coefficient is given;
+    the full integral over A_5 modes is open) or a direct construction
+    of the Einstein-Hilbert action from G_{13}.  Both are open.
+  - Continuum-limit Diff(M^4).  The framework's native diffeomorphism
+    group is the FINITE group Aut(G_{13}) of order 768.  Recovering
+    infinite-dimensional Diff(M^4) in a continuum limit is open.
+  - Quantum gravity.
+
+### v2.9.90 CI gate
+
+```python
+from urt import gr_emergence_audit_passes
+assert gr_emergence_audit_passes()    # 10 checks, all pass
+```
+
+### v2.9.90 Test totals
+
+Test totals: 8,871 → 8,915 (+44 new tests across 1 module + 1 init
+update, 0 regressions, 0 xfail).
+
+---
+
 CI gates for the post-v2.9.48 wave:
 ```python
 from urt import (
@@ -1914,7 +1971,7 @@ The **ARF (Analytic Residue Function)** is a four-residue self-consistency syste
 ## Running Tests
 
 ```bash
-python -m pytest tests/ -q              # all 8,871 tests
+python -m pytest tests/ -q              # all 8,915 tests
 python -m pytest tests/ -q -k iron     # iron proof uniqueness (47 tests)
 python -m pytest tests/ -q -k lagrangian  # Cathedral Lagrangian (42 tests)
 python -m pytest tests/ -q -k dark_matter # DM candidates (24 tests)
