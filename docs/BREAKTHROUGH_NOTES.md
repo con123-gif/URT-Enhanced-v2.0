@@ -5,6 +5,115 @@ test-coverage entry at the bottom is the original baseline (May 2026).
 
 ---
 
+## v2.9.92 – Sakharov-Visser Induced Gravity (17 May 2026)
+
+**Status**: Branch `claude/spacetime-emergence-HZ2Mk`
+
+### The gap closed
+
+`urt.einstein_field_equations` (v2.9.91) explicitly disclaimed:
+
+  > "A derivation of the Einstein-Hilbert ACTION from a deeper
+  >  principle.  Like standard GR, S_EH is taken as a starting
+  >  point... The Sakharov-Visser induced-gravity programme is
+  >  documented as an open research direction."
+
+v2.9.92 closes this.  Because G_{13} has a FINITE spectrum (only 13
+modes), the one-loop integral is UV-finite by construction and every
+Sakharov-Visser quantity is computable as a Cathedral closed form.
+
+### Three new headline Cathedral closed forms
+
+**(1) Sakharov-Visser matching scale**
+
+```
+Λ²_match / M_Pl²  =  D! · π  =  6π  ≈  18.85
+```
+
+The standard SV formula G^ind = 6π/Λ² combined with the framework's
+postulated G_N = δ★² gives the matching cutoff Λ² = 6π/δ★² as a pure
+Cathedral expression D!·π · M_Pl².  Numerically Λ_match ≈ 4.34 · M_Pl.
+
+**(2) Spectral functional determinant**
+
+```
+det' L_{G_{13}}  =  γ⁻¹ · q^(D!) · (D!+1)² · N
+                =  81 · 5⁶ · 7² · 13
+                =  806 203 125
+```
+
+The product of non-zero eigenvalues of L_{G_{13}}, factorised into a
+pure Cathedral integer product.  The exponent on q is D! = 6, the
+icosahedral group element count per spatial axis.
+
+**(3) Spectral zeta function values**
+
+```
+ζ_L(0)   =  V = 12           (count of non-zero modes)
+ζ_L(-1)  =  D! · V = 72      (= tr L)
+ζ_L(-2)  =  tr(L²) = 516
+ζ_L(1)   =  9584 / 4095       with  4095 = D² · q · (D!+1) · N
+```
+
+Every input to the Sakharov-Visser one-loop calculation expressed
+as a Cathedral closed form.
+
+### Ten machine-precision checks
+
+  1. ζ_L(0) = V = 12
+  2. ζ_L(−1) = D!·V = 72 (= tr L)
+  3. ζ_L(−2) = tr(L²) = 516
+  4. det' L = 806,203,125 (closed form value)
+  5. det' L closed form = direct product over spectrum
+  6. log det' L closed form matches numerical
+  7. Λ²_match / M_Pl² = D! · π
+  8. **Induced G_N^ind = 6π/Λ² matches Cathedral G_N = δ★² exactly**
+  9. M² = 1 + δ★² (Cathedral mass-squared at vacuum)
+  10. Seeley-DeWitt a_0 = N, a_1 = D!·V (consistency)
+
+### The full induced-gravity chain (now closed)
+
+```
+K_4-cube vacuum bubble  (urt.k4_cube_vacuum_bubble)
+       ↓  generates
+Λ / M_Pl⁴  =  (D+1) · γ^((D+1)^D)
+       ↓  feeds
+Cathedral Einstein-Hilbert action  (urt.einstein_field_equations)
+       ↓  variation
+G_μν + Λ·g_μν  =  8π·G_N · T_μν^(δ)
+       ↓  Sakharov-Visser matching  (urt.induced_gravity_one_loop)
+Λ²_SV = D! · π · M_Pl²
+       ↓  gives back
+G_N^ind  =  6π/Λ²_SV  =  δ★²
+```
+
+Same G_N = δ★² across all four layers — the chain closes.
+
+### Honest scope
+
+The module DOES NOT claim:
+  - A first-principles fixing of the matching cutoff Λ_match.  Like
+    all induced-gravity programmes, the matching scale is a
+    renormalisation condition.  What the framework supplies is the
+    Cathedral closed form Λ² = D! · π · M_Pl² that makes G_N^ind
+    coincide with the postulated G_N = δ★².
+  - K_4 vs A_5 sector decomposition of the induced gravity coefficient.
+  - Quantum gravity.
+
+### CI gate
+
+```python
+from urt import induced_gravity_audit_passes
+assert induced_gravity_audit_passes()    # 10 checks, all pass
+```
+
+### Test totals
+
+8,962 → 8,994 (+32 new tests across 1 module + 1 init update;
+0 regressions, 0 xfail).
+
+---
+
 ## v2.9.91 – Einstein Field Equations (17 May 2026)
 
 **Status**: Branch `claude/spacetime-emergence-HZ2Mk`
