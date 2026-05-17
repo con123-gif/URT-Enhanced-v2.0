@@ -1,7 +1,7 @@
 # Newton's Cathedral — Complete Mathematical Framework
 
 **Author**: Cornelius Lytollis  
-**Version**: 2.9.92 (May 2026)
+**Version**: 2.9.93 (May 2026)
 
 ---
 
@@ -475,7 +475,7 @@ testable functions; `all_steps_verify()` is a CI gate.
 ### Status
 
 The dynamical mechanism is **operationally complete and CI-tested**
-(8,994 tests, 0 xfail).  The mathematical structure has a vacuum, a
+(9,035 tests, 0 xfail).  The mathematical structure has a vacuum, a
 Lagrangian, an equation of motion, and a universe-from-chaos arc that
 deterministically reproduces the Standard Model and Planck-2018
 cosmology to <1 % with zero free parameters.

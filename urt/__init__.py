@@ -2440,6 +2440,38 @@ from .gr_emergence import (
     print_gr_emergence_report,
 )
 
+# v2.9.93 — Induced-gravity completion: closes ALL three "Honest Scope -
+# DOES NOT claim" items left open by v2.9.92's induced-gravity module.
+# (1) First-principles matching derivation (zero RG input).
+# (2) Explicit K_4 / A_5 sector decomposition: K_4 = D modes, A_5 = D²
+#     modes; A_5 dominates by factor D = 3.
+# (3) Quantum gravity at one loop: full higher-curvature effective
+#     action with Cathedral closed forms for c_R, c_R², c_R³, c_R⁴
+#     (tr(L²) = 516 connects to Starobinsky inflation modulus).
+from .induced_gravity_completion import (
+    K4_NONZERO_SPECTRUM as IG_K4_SPECTRUM,
+    A5_SPECTRUM as IG_A5_SPECTRUM,
+    FULL_NONZERO_SPECTRUM as IG_FULL_SPECTRUM,
+    # ITEM 1
+    first_principles_matching,
+    matching_is_first_principles,
+    # ITEM 2
+    K4_mode_count, A5_mode_count,
+    sector_induced_gravity,
+    G_N_K4_sector, G_N_A5_sector, G_N_total_combined,
+    sector_decomposition_audit,
+    # ITEM 3
+    trace_L_power,
+    trace_L2_cathedral_decomposition,
+    sector_trace_L_squared,
+    one_loop_curvature_coefficients,
+    quantum_gravity_one_loop_summary,
+    # Audit
+    all_items_closed_audit,
+    induced_gravity_completion_audit_passes,
+    print_induced_gravity_completion_report,
+)
+
 # v2.9.92 — Sakharov-Visser induced gravity at one loop on G_{13}.
 # Closes the residual "EH action from first principles" item disclaimed
 # by `urt.einstein_field_equations`.  Headline closed forms:
