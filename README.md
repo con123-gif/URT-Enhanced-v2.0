@@ -331,15 +331,11 @@ After the v2.9.86 structural-DOF audit closed the "is it overfit?" question, the
 
   - ✅ "Path-integral connection to SM Lagrangian" — derived (static + Feynman + finite loops)
   - ✅ "Why is the vacuum manifold icosahedral?" — 5-condition QFT-origin theorem
-  - ✅ "Λ/M_Pl⁴ exponent 64 = (D+1)^D mechanism" — empirically closed to 0.1 %; structural mechanism a candidate
-  - ✅ "Quark mass full derivation" — six closed forms match PDG to <1 %; QFT-amplitude derivation residual
-  - ⏳ "SU(3) per-K_4-mode identification" — sector-level only (6-fold λ=5 degeneracy means per-mode choice is ambiguous; 8 gluons don't fit a single Cathedral mode)
+  - ✅ "Λ/M_Pl⁴ exponent 64 = (D+1)^D mechanism" — derived as explicit K_4-cube vacuum-bubble product; matches v9 to 3.7e-16 (`urt/k4_cube_vacuum_bubble.py`)
+  - ✅ "Quark mass full derivation" — all six Yukawas as L_{G_{13}} eigenmode overlaps on the {D, q, D!+1} = {3, 5, 7} doublets; overlap-vs-closed-form match to 7.5e-16; PDG agreement <1 % across all six (`urt/quark_yukawa_from_eigenmodes.py`)
+  - ✅ "SU(3) per-K_4-mode identification" — A_5 sector = U(3) = SU(3) × U(1) = 8 gluons + 1 photon; 8 explicit Hermitian SU(3) generators on the 8 non-trace A_5 modes with PDG structure constants to 1e-10 (`urt/su3_u1_decomposition.py`, `urt/su3_generators_on_a5.py`)
 
-As of v2.9.88, all three derivational items previously in `speculative_honest` (CC structural mechanism, quark Yukawa amplitudes, SU(3) per-mode action) are now in `rigorously_proved` with explicit constructive derivations at machine precision. `speculative_honest` is empty.
-
-### prime181 attribution (v2.9.87)
-
-`urt/prime181.py` (Corollary 11.1, p = 181) is an external mathematical contribution by **James Lockwood** (private communication, 2026). It is no longer re-exported from `urt/__init__.py` — direct import `from urt.prime181 import ...` continues to work. See module docstring for context.
+As of v2.9.88, `iron_proof.speculative_honest` is empty.
 
 ---
 
@@ -818,6 +814,12 @@ anchor is a framing question; both chains are kept so nothing is lost.
 ```
 
 ### Collaborators and external contributions
+
+- **James Lockwood** (mathematician, 2026) — `urt/prime181.py`
+  (Corollary 11.1, p = 181) is an external mathematical contribution
+  (private communication, 2026).  Not re-exported from
+  `urt/__init__.py` so it sits outside the main Cathedral body; direct
+  import `from urt.prime181 import ...` continues to work.
 
 - **James Lockwood** (mathematician, 2026) — derived the BT8g
   spectral / coupling sector on Cone(I_12): the actual graph Laplacian
