@@ -2309,6 +2309,61 @@ from .su3_u1_decomposition import (
     print_su3_u1_decomposition_report,
 )
 
+# v2.9.88 (2026-05-17) — Explicit constructive derivations of the three
+# remaining iron_proof.speculative_honest items:
+#   (i)   SU(3) per-generator action on 8 non-trace A_5 modes
+#   (ii)  CC formula (D+1)^D = 64 exponent from K_4-cube vacuum bubble
+#   (iii) Quark Yukawas as L_{G_{13}} eigenmode overlaps on the
+#         {D, q, D!+1} = {3, 5, 7} eigenvalue doublets
+# All three machine-precision verified.
+
+from .su3_generators_on_a5 import (
+    gell_mann_matrices,
+    su3_structure_constants,
+    su3_adjoint_generators,
+    non_trace_a5_basis,
+    cathedral_su3_generators,
+    commutator_residuals,
+    hermitian_residuals,
+    vanishes_on_complement_residuals,
+    known_structure_constants,
+    known_structure_constants_expected,
+    su3_generators_summary,
+    su3_generators_audit_passes,
+    print_su3_generators_report,
+)
+
+from .k4_cube_vacuum_bubble import (
+    k4_cube_vertices,
+    k4_cube_vertex_count,
+    vertex_count_is_cathedral,
+    per_vertex_propagator_factor,
+    k4_cube_vacuum_bubble_amplitude,
+    k4_cube_amplitude_closed_form,
+    k4_measure_prefactor,
+    cc_from_k4_cube,
+    cc_v9_closed_form,
+    cube_amplitude_matches_closed_form,
+    cc_derivation_matches_v9,
+    k4_cube_vacuum_bubble_summary,
+    k4_cube_vacuum_bubble_audit_passes,
+    print_k4_cube_vacuum_bubble_report,
+)
+
+from .quark_yukawa_from_eigenmodes import (
+    QuarkEigenAssignment,
+    QuarkYukawaDerivation,
+    quark_eigenmode_assignment,
+    eigenvectors_at as quark_eigenvectors_at,
+    quark_eigenvectors,
+    yukawa_kernel_eigenvalue,
+    eigenmode_overlap,
+    derive_quark_yukawas,
+    quark_yukawa_summary,
+    quark_yukawa_audit_passes,
+    print_quark_yukawa_report,
+)
+
 # v2.9.78 — Discrete black-hole thermodynamics + Ihara zeta on G_{13}.
 # Eighteen rigorous spectral-graph theorems (matrix-tree, Bass identity,
 # Lubotzky-Phillips-Sarnak Ramanujan property) — every Cathedral integer
@@ -3777,6 +3832,47 @@ __all__ = [
     "su3_u1_decomposition_summary",
     "su3_u1_decomposition_audit_passes",
     "print_su3_u1_decomposition_report",
+    # v2.9.88 — SU(3) generators on A_5 (per-generator action)
+    "gell_mann_matrices",
+    "su3_structure_constants",
+    "su3_adjoint_generators",
+    "non_trace_a5_basis",
+    "cathedral_su3_generators",
+    "commutator_residuals",
+    "hermitian_residuals",
+    "vanishes_on_complement_residuals",
+    "known_structure_constants",
+    "known_structure_constants_expected",
+    "su3_generators_summary",
+    "su3_generators_audit_passes",
+    "print_su3_generators_report",
+    # v2.9.88 — K_4-cube vacuum-bubble CC derivation
+    "k4_cube_vertices",
+    "k4_cube_vertex_count",
+    "vertex_count_is_cathedral",
+    "per_vertex_propagator_factor",
+    "k4_cube_vacuum_bubble_amplitude",
+    "k4_cube_amplitude_closed_form",
+    "k4_measure_prefactor",
+    "cc_from_k4_cube",
+    "cc_v9_closed_form",
+    "cube_amplitude_matches_closed_form",
+    "cc_derivation_matches_v9",
+    "k4_cube_vacuum_bubble_summary",
+    "k4_cube_vacuum_bubble_audit_passes",
+    "print_k4_cube_vacuum_bubble_report",
+    # v2.9.88 — Quark Yukawas from L_{G_{13}} eigenmodes
+    "QuarkEigenAssignment",
+    "QuarkYukawaDerivation",
+    "quark_eigenmode_assignment",
+    "quark_eigenvectors_at",
+    "quark_eigenvectors",
+    "yukawa_kernel_eigenvalue",
+    "eigenmode_overlap",
+    "derive_quark_yukawas",
+    "quark_yukawa_summary",
+    "quark_yukawa_audit_passes",
+    "print_quark_yukawa_report",
     # v2.9.78 — Discrete BH thermodynamics + Ihara zeta on G_{13}
     "SPECTRUM",
     "laplacian_pseudo_determinant",

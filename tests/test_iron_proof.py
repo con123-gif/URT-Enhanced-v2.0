@@ -193,8 +193,13 @@ class TestHonestAssessment:
     def test_rigorously_proved_nonempty(self):
         assert len(self.ha["rigorously_proved"]) >= 5
 
-    def test_speculative_honest_nonempty(self):
-        assert len(self.ha["speculative_honest"]) >= 3
+    def test_speculative_honest_present(self):
+        # As of v2.9.88, two of the prior three speculative_honest items
+        # (SU(3) per-generator action + CC mechanism + quark Yukawas as
+        # eigenmode overlaps) were promoted to `rigorously_proved`.  The
+        # residual item is the basis-convention question of which member
+        # of each L-eigenvalue doublet plays up-type vs down-type.
+        assert len(self.ha["speculative_honest"]) >= 1
 
     def test_falsifiable_conditions_exist(self):
         assert len(self.ha["what_would_falsify"]) >= 4
