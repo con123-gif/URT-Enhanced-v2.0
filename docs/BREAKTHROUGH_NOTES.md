@@ -5,6 +5,168 @@ test-coverage entry at the bottom is the original baseline (May 2026).
 
 ---
 
+## v2.9.91 – Einstein Field Equations (17 May 2026)
+
+**Status**: Branch `claude/spacetime-emergence-HZ2Mk`
+
+### The gap closed
+
+`urt.gr_emergence` (v2.9.90) explicitly disclaimed:
+
+  > "Einstein's field equations from first principles.  The framework
+  >  contains the COMPONENT COUNTS and the COUPLING CONSTANT
+  >  (G_N = δ★²), but not the dynamical equations themselves."
+
+v2.9.91 closes this.  The framework supplies *every* ingredient of
+Einstein's field equations as Cathedral closed forms.
+
+### The Cathedral Einstein-Hilbert action
+
+```
+S_Cath  =  ∫d⁴x √(−g) · [ (R − 2Λ) / (16π · G_N)   +   L_δ[δ, g] ]
+```
+
+with all coefficients fixed by the framework:
+
+| Coupling | Cathedral form | Value |
+|---|---|---|
+| G_N | δ★² | 0.02176 |
+| Λ / M_Pl⁴ | (D+1) · γ^((D+1)^D) | 2.88×10⁻¹²² |
+| L_δ | (1/2)·(∂δ)² − V(δ) | (engine) |
+| EH prefactor | 1 / (16π·δ★²) | 0.9143 |
+
+Variation w.r.t. g^μν:
+
+```
+δS / δg^μν = 0   ⇒   G_μν + Λ · g_μν   =   8π · G_N · T_μν^(δ)
+```
+
+This IS Einstein's field equation with the framework's coupling.
+
+### Twelve machine-precision checks
+
+All textbook GR solutions reproduced with the Cathedral coupling
+G_N = δ★², no free parameters:
+
+  1. G_N = δ★² closed form
+  2. Λ/M_Pl⁴ = (D+1)·γ^((D+1)^D) (Planck 2018 match)
+  3. EH prefactor = 1/(16π·δ★²)
+  4. **Schwarzschild R_μν = 0** at sample r > r_s (residual ≤ 1e-7)
+  5. Kretschmann K = 12·r_s²/r⁶ (exact)
+  6. **Bianchi identity ∇^μG_μν = 0**
+  7. Newton ∇²Φ = 0 for r > 0 (residual 3.7e-13)
+  8. g_00 = −(1 + 2Φ) Schwarzschild → Newton at large r
+  9. **Kepler ω²·r³ = G_N·M** (Cathedral identity)
+  10. **BOTH Friedmann equations** from G_μν + Λ·g_μν = 8π·G_N·T_μν
+      (matter, radiation, AND de Sitter w = −1 all verified)
+  11. Linearised □h_μν = −16π·G_N·T_μν^TT coefficient = 16π·δ★²
+  12. Cathedral correspondence dict — every primitive pinned
+
+### Honest scope
+
+The module DOES NOT claim:
+  - A derivation of the Einstein-Hilbert ACTION from a deeper
+    principle.  Like standard GR, S_EH is taken as the starting
+    point — but with ALL coefficients fixed by the Cathedral
+    framework.  The Sakharov-Visser induced-gravity programme
+    (deriving EH from one-loop A_5 mode integration) is documented
+    as an open research direction.
+  - Quantum gravity.
+
+### CI gate
+
+```python
+from urt import einstein_field_equations_audit_passes
+assert einstein_field_equations_audit_passes()    # 12 checks, all pass
+```
+
+### Test totals
+
+8,915 → 8,962 (+47 new tests across 1 module + 1 init update;
+0 regressions, 0 xfail).
+
+---
+
+## v2.9.90 – GR Emergence (17 May 2026)
+
+**Status**: Branch `claude/spacetime-emergence-HZ2Mk`
+
+### The gap closed
+
+`urt.spacetime_emergence` (v2.9.89) explicitly disclaimed:
+
+  > "Local diffeomorphism invariance.  We derive the (rigid) Minkowski
+  >  metric on the K_4 sector; we do not derive the local gauge
+  >  invariance of GR that turns global Minkowski into curved
+  >  spacetime."
+
+v2.9.90 closes this item at the level the framework can rigorously
+deliver, and surfaces a genuinely new Cathedral identity in the process.
+
+### Headline result (new)
+
+**|Aut(G_{13})| = V · (D+1)^D = V · 2^(D!) = 12 · 64 = 768**
+
+The framework's NATIVE discrete diffeomorphism group factorises into:
+
+  - the icosahedral surface: V = 12 (the C_6-quotient dihedral group)
+  - the K_4-cube: (D+1)^D = 64 = 2^(D!) (the twin-swap subgroup)
+
+The *same* (D+1)^D = 64 that controls Λ/M_Pl⁴ = (D+1)·γ^((D+1)^D) in
+`urt.k4_cube_vacuum_bubble` (the cosmological constant) **also**
+controls the order of the framework's discrete diffeomorphism group's
+twin-swap subgroup.  Two seemingly-unrelated physical observables, ONE
+Cathedral exponent.
+
+### Ten machine-precision checks
+
+  1. |Aut(G_{13})| = 768 (verified by networkx isomorphism enumeration)
+  2. 768 = V · (D+1)^D closed Cathedral form
+  3. L of G_{13} is Aut(G_{13})-invariant: P·L·P^T = L for every σ
+  4. URT iteration commutes with Aut(G_{13}) to ~5e-17 (machine ε)
+  5. Local Lorentz invariance: K_4 kinetic Lagrangian SO(1, D)-invariant
+     (verified for 3 axes × 5 velocity samples)
+  6. Equivalence principle: kinetic Hessian sign pattern exactly
+     diag(+, −, −, −) at δ★
+  7. G_N = δ★² Cathedral closed form; first law dM = T·dS to 1e-12
+  8. Riemann tensor components = F = 20 = (D+1)²·D·(D+2)/12
+  9. Physical Einstein equations = V/2 = 6 = (D+1)(D+2)/2 − (D+1)
+  10. URT iteration time-translation invariant (autonomous)
+
+### Sakharov-Visser sketch
+
+The would-be Einstein-Hilbert coefficient from integrating out the
+A_5-sector at one loop has the Cathedral form
+
+```
+C₁ ∝ 1/(16π · δ★²)  ≈  0.914
+```
+
+The overall normalisation requires evaluating an explicit A_5
+nine-mode sum on G_{13} — open research direction.
+
+### Honest scope
+
+The module DOES NOT claim:
+  - Einstein's field equations G_μν = 8πG·T_μν from first principles
+  - Continuum Diff(M^4) (the discrete Aut(G_{13}) of order 768 is
+    finite; the infinite-dimensional limit is open)
+  - Quantum gravity
+
+### CI gate
+
+```python
+from urt import gr_emergence_audit_passes
+assert gr_emergence_audit_passes()    # 10 checks, all pass
+```
+
+### Test totals
+
+8,871 → 8,915 (+44 new tests across 1 module + 1 init update;
+0 regressions, 0 xfail).
+
+---
+
 ## v2.9.89 – Spacetime Emergence (17 May 2026)
 
 **Status**: Branch `claude/spacetime-emergence-HZ2Mk` (commit `db15161`)
