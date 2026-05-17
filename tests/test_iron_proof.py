@@ -193,15 +193,25 @@ class TestHonestAssessment:
     def test_rigorously_proved_nonempty(self):
         assert len(self.ha["rigorously_proved"]) >= 5
 
-    def test_speculative_honest_empty(self):
-        # As of v2.9.88, all three prior speculative_honest items
-        # (SU(3) per-generator action, K_4-cube CC mechanism, quark
-        # Yukawas as eigenmode overlaps) are now `rigorously_proved`.
-        # No derivational gaps remain; the only residual labelling
-        # freedom is up/down ordering within each degenerate doublet
-        # — a basis convention, not a derivational gap, recorded in
-        # `well_motivated` for transparency.
-        assert len(self.ha["speculative_honest"]) == 0
+    def test_speculative_honest_documents_open_items(self):
+        # As of the 2026-05-17 honest-assessment refresh, three items are
+        # documented as `speculative_honest` rather than overclaimed as
+        # `rigorously_proved`:
+        #   (1) Quark Yukawas as eigenmode overlaps (kernel built to match
+        #       v9 closed forms — Cathedral repackaging, not derivation)
+        #   (2) Object A vs Object B Laplacian distinction (the framework
+        #       uses the character spectrum, not the standard graph
+        #       Laplacian of Cone(I_12); both are legitimate, but Object A
+        #       is a representation-theoretic construction)
+        #   (3) Universal (1−Δ) mass correction (empirically forced by
+        #       PDG match across v_EW, m_e, m_p, all quarks; the
+        #       dynamical mechanism that shifts v_EW from δ★ to δ_cl is
+        #       not yet derived from the π-φ-e flow)
+        # Honest disclosure of these items is the framework's strength,
+        # not a weakness.
+        assert len(self.ha["speculative_honest"]) >= 3
+        for item in self.ha["speculative_honest"]:
+            assert isinstance(item, str) and len(item) > 40
 
     def test_falsifiable_conditions_exist(self):
         assert len(self.ha["what_would_falsify"]) >= 4

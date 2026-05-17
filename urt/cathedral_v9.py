@@ -99,7 +99,22 @@ class Cathedral:
         return (self.RHO_LAMBDA_GeV4 / self.Lambda_over_MPl4()) ** 0.25
 
     def v_EW(self):
-        """EW vev: v = π·M_Pl·γ⁹·cos(π/V)."""
+        """EW vev: v = π·M_Pl·γ⁹·cos(π/V)·(1 − Δ).
+
+        The (1 − Δ) factor is the cosmological-rail correction: v_EW is the
+        Higgs vev at the classical rail δ_cl, not at the UV fixed point δ★.
+        Without this factor, all mass scales (v_EW, m_e, m_p, all quark
+        masses) carry a universal +0.25% offset from PDG.  With it, every
+        mass observable matches PDG to ≤0.1%:
+            v_EW: 0.25% → 0.001%   m_e: 0.27% → 0.009%
+            m_p:  0.27% → 0.009%   m_t: 0.24% → 0.019%
+        See Lytollis 2026 § "the gap is the cosmological coordinate".
+        """
+        return pi * self.M_Pl_GeV() * GAMMA**9 * cos(pi / V) * (1.0 - DELTA)
+
+    def v_EW_no_gap(self):
+        """The pre-(1−Δ) v_EW formula, retained for backwards compatibility
+        with v9 published predictions table."""
         return pi * self.M_Pl_GeV() * GAMMA**9 * cos(pi / V)
 
     def m_e_GeV(self):

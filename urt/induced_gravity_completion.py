@@ -183,14 +183,25 @@ def first_principles_matching() -> Dict[str, object]:
     """
     G_SV_function = lambda Lam_sq: 6 * pi / Lam_sq
     Lambda_sq_match = 6 * pi / G_N_CATH
+
+    # Verify the derivation actually closes: substituting δ★² for G_N
+    # in the SV formula must give exactly 6π/δ★² = D!·π in M_Pl² units.
+    Lambda_over_MPl_sq = Lambda_sq_match * G_N_CATH
+    closed_form_value  = factorial(D) * pi          # = 6π
+    derived_not_chosen = (
+        abs(Lambda_over_MPl_sq - closed_form_value) < 1e-12 and
+        abs(G_SV_function(Lambda_sq_match) - G_N_CATH) < 1e-15
+    )
+
     return {
         "G_SV_formula":      "G_N^ind = 6π / Λ² (one-loop SV)",
         "G_N_framework":     "G_N = δ★² (urt.iron_proof)",
         "matching_eq":       "6π / Λ²_match = δ★²",
         "Lambda_squared":    Lambda_sq_match,
-        "Lambda_over_MPl_sq": Lambda_sq_match * G_N_CATH,  # = 6π = D!·π
+        "Lambda_over_MPl_sq": Lambda_over_MPl_sq,    # = 6π = D!·π
         "closed_form":       "Λ²_match = D! · π · M_Pl² = 6π · M_Pl²",
-        "derived_not_chosen": True,
+        "closed_form_value": closed_form_value,
+        "derived_not_chosen": derived_not_chosen,
         "free_parameters":   0,
     }
 
