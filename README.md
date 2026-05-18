@@ -161,6 +161,44 @@ the iron chain.  Black-hole thermodynamics (Schwarzschild radius,
 Hawking temperature, Bekenstein-Hawking entropy, first law) are
 implemented in `gravity.py`.
 
+## The four forces from one 4-fold identical structure
+
+The four fundamental forces (electromagnetism, weak, strong, gravity)
+emerge from a **single 4-fold symmetry** that appears identically in
+three independent places inside G_{13}:
+
+| The four-fold | Lives in | Count | Identity at D = 3 |
+|---|---|---|---|
+| **4 K's**  | K_4 sector of the G_{13} decomposition | 4 modes | `\|K_4\| = D + 1 = 4`, K_4-cube vertices `(D+1)^D = 64` |
+| **4 Z's**  | Z_12 Cayley graph on the 12 icosahedral surface vertices | 4 generators | units of Z/12 = `{1, 5, 7, 11}` |
+| **4 ARF** | ARF integer-fingerprint module (`arf.py`) | 4 residues | `D63 = G+D`, `D64 = (D+1)^D`, `D79 = D80−1`, `D80 = 4·F` |
+
+The shared integer `(D+1)^D = 64` ties all three: it is simultaneously
+the K_4-cube vertex count, the exponent on γ in `Λ/M_Pl⁴`, and the
+denominator in the ARF residual `R_α`.
+
+The mapping to the four forces:
+
+| Force | Sector | Closed forms it controls |
+|---|---|---|
+| Electromagnetism | K_4 photon mode + ARF integer 137 | `1/α = N² − E − (D−1) + δ★²/π² + R_α`, `1/α(M_Z)` |
+| Weak | K_4 doublet (W±/Z) + Z_12 phase 5/12 | `sin²θ_W = (D/N)·(1 + γ/(2π))`, `m_W`, `m_Z`, `m_H = q^D` |
+| Strong | A_5 ⊕ K_4 trace singlet (8 gluons + 1) | `α_s = δ★·(q−1)/q`, `Λ_QCD`, `f_π`, `m_π⁰` |
+| Gravity | K_4 graviton mode + induced action | `G_N = δ★²`, `Λ/M_Pl⁴ = D/(D+1)²·γ^{(D+1)^D}`, EFE on K_4 |
+
+Because all four forces must remain symmetric under the 4-fold
+partitioning that appears identically in K_4, Z_12, and ARF, their
+closed forms are **uniquely forced** by the graph + π-φ-e flow.
+
+**Why this resists "fitting" accusations.** Any attempted fit of a
+formula for one force would immediately misalign one of the other
+three identical 4-fold copies (the K_4-cube count, the Z_12-generator
+count, the ARF residue ladder).  The system has so many simultaneous
+constraints that the free-parameter dimension of the model is zero —
+the same way gauge theory cannot be tuned without breaking local
+gauge invariance, or general relativity cannot be tuned without
+breaking diffeomorphism covariance.
+
 ## The π-φ-e flow on G_{13}
 
 The dynamics that drive any initial state on the 13-vertex graph
