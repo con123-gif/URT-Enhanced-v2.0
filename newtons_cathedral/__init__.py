@@ -28,7 +28,7 @@ from __future__ import annotations
 from .foundations import (
     D, q, V, E, F, G, N,
     PHI, GAMMA,
-    DELTA_STAR, DELTA_CL, DELTA,
+    DELTA_STAR, DELTA_CL, DELTA, M_STAR,
     cathedral_integers, iron_chain, foundations_audit,
 )
 
@@ -202,7 +202,7 @@ __all__ = [
     # foundations
     "D", "q", "V", "E", "F", "G", "N",
     "PHI", "GAMMA",
-    "DELTA_STAR", "DELTA_CL", "DELTA",
+    "DELTA_STAR", "DELTA_CL", "DELTA", "M_STAR",
     "cathedral_integers", "iron_chain",
     # graph & sectors & dynamics
     "adjacency", "laplacian", "spectrum", "cathedral_eigenvalues",

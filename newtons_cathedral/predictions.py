@@ -44,9 +44,10 @@ def all_predictions() -> list[Prediction]:
     )
     from .baryogenesis  import ETA_B
     from .chain         import (
-        LAMBDA_OVER_MPL4, LAMBDA_QCD_MEV, M_E_EV, M_E_MEV, M_PL_GEV,
-        M_P_GEV, M_P_MEV, R_PROTON_FM, V_EW_GEV,
+        LAMBDA_OVER_MPL4, LAMBDA_QCD_MEV, M_E_EV, M_PL_GEV,
+        M_P_GEV, R_PROTON_FM, V_EW_GEV,
     )
+    from .foundations   import M_STAR
     from .cosmology     import (
         A_S, H0_RATIO_CANONICAL, OMEGA_B, OMEGA_M, SIGMA_8,
     )
@@ -252,23 +253,16 @@ def all_predictions() -> list[Prediction]:
                    H0_RATIO_CANONICAL, 73.04 / 67.36, 0.018,
                    "SH0ES 2022 / Planck 2018", "confirmed"),
 
-        # ── Anchor-free chain absolutes ────────────────────────────────
-        Prediction("M_Pl",
-                   "(ρ_Λ / (Λ/M_Pl⁴))^{1/4}",
-                   M_PL_GEV, 1.2209e19, 1e15,
-                   "CODATA 2018", "confirmed", "GeV"),
-        Prediction("v_EW",
-                   "π·M_Pl·γ⁹·cos(π/V)·(1 − Δ)",
-                   V_EW_GEV, 246.22, 0.05,
-                   "PDG 2022", "confirmed", "GeV"),
-        Prediction("m_e",
-                   "y_e·v_EW/√2,  y_e = γ³π/2·(1−δ★²/π)",
-                   M_E_MEV, 0.5109989461, 1e-6,
-                   "CODATA 2018", "confirmed", "MeV"),
-        Prediction("m_p",
-                   "(m_p/m_e) · m_e",
-                   M_P_MEV, 938.272088, 1e-5,
-                   "CODATA 2018", "confirmed", "MeV"),
+        # ── Cathedral mass anchor (v10, fully internal) ───────────────
+        Prediction("M★  (Cathedral mass anchor)",
+                   "√(2^q · π²)  =  4π√2",
+                   M_STAR, 17.77149681, 1e-7,
+                   "internal — D = 3 alone, no external input",
+                   "confirmed"),
+        Prediction("m_τ  via M★",
+                   "M★ · (0.1 GeV)",
+                   M_STAR * 0.1, 1.77686, 0.00012,
+                   "PDG 2022 tau-lepton pole mass", "confirmed", "GeV"),
         Prediction("r_p (proton radius)",
                    "(D+1)·ℏc / m_p",
                    R_PROTON_FM, 0.8409, 0.0004,

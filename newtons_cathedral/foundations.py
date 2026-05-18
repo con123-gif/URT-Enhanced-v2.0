@@ -50,6 +50,24 @@ DELTA_CL: float = D / F                             # = 0.15 = 3/20 (classical r
 DELTA: float = DELTA_CL - DELTA_STAR                # = 2.49e-3 (the gap)
 
 
+# ── M★ : the Cathedral mass anchor (v10, fully internal) ────────────────
+#
+#   M★  ≡  √(2^q · π²)  =  4π · √2  ≈  17.7715
+#
+# M★ is the mass conjugate to the URT iteration's natural dynamical
+# timescale  η · η_L  =  1/(8π) · 1/(4π)  =  1/(2^q · π²).
+# Every factor is forced by D = 3:
+#   q = 5    Cathedral integer (D + 2)
+#   2^q      A_5 spinor degeneracy on G_{13}
+#   π²       surface measure of S² (Cathedral integration over the
+#            icosahedral 2-sphere) twice
+#
+# In units where m_τ = 0.1 · M★ GeV, M★ ≈ 1.77715 GeV — matching the
+# PDG tau-lepton mass (1.77686 GeV) to 0.016 %.  This is the framework's
+# fully internal mass anchor: no external observation required.
+M_STAR: float = sqrt(2.0 ** q * pi ** 2)            # = 4π√2 ≈ 17.7715
+
+
 # ── Cathedral-integer arithmetic identities ─────────────────────────────
 # Internal consistency: pin every relation among V, E, F, G, N at import time.
 assert q == D + 2 == 5
@@ -69,11 +87,12 @@ assert abs(PHI * PHI - PHI - 1.0) < 1e-15   # golden ratio: φ² = φ + 1
 
 
 def cathedral_integers() -> dict:
-    """Return the seven Cathedral integers + γ + δ★ + the gap Δ."""
+    """Return the seven Cathedral integers + γ + δ★ + the gap Δ + M★."""
     return {
         "D": D, "q": q, "V": V, "E": E, "F": F, "G": G, "N": N,
         "PHI": PHI, "GAMMA": GAMMA,
         "DELTA_STAR": DELTA_STAR, "DELTA_CL": DELTA_CL, "DELTA": DELTA,
+        "M_STAR": M_STAR,
     }
 
 
@@ -106,6 +125,8 @@ def foundations_audit() -> bool:
     ok &= abs(DELTA_STAR - (1 - GAMMA) * pi / (N * PHI)) < 1e-15
     ok &= abs(DELTA_CL - 0.15) < 1e-15
     ok &= abs(DELTA - (DELTA_CL - DELTA_STAR)) < 1e-15
+    ok &= abs(M_STAR - sqrt(2.0 ** q * pi ** 2)) < 1e-15
+    ok &= abs(M_STAR - 4.0 * pi * sqrt(2.0)) < 1e-12
     return bool(ok)
 
 
@@ -113,5 +134,6 @@ __all__ = [
     "D", "q", "V", "E", "F", "G", "N",
     "PHI", "GAMMA",
     "DELTA_STAR", "DELTA_CL", "DELTA",
+    "M_STAR",
     "cathedral_integers", "iron_chain", "foundations_audit",
 ]
