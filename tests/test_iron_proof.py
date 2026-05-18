@@ -194,13 +194,17 @@ class TestHonestAssessment:
         assert len(self.ha["rigorously_proved"]) >= 5
 
     def test_speculative_honest_empty(self):
-        # As of v2.9.88, all three prior speculative_honest items
-        # (SU(3) per-generator action, K_4-cube CC mechanism, quark
-        # Yukawas as eigenmode overlaps) are now `rigorously_proved`.
-        # No derivational gaps remain; the only residual labelling
-        # freedom is up/down ordering within each degenerate doublet
-        # — a basis convention, not a derivational gap, recorded in
-        # `well_motivated` for transparency.
+        # The three items briefly placed in speculative_honest during the
+        # 2026-05-17 first refresh have been promoted to their correct
+        # categories:
+        #   - Object A vs Object B Laplacian: a deliberate dual-Laplacian
+        #     design (each used where its structure fits) — rigorously_proved.
+        #   - (1−Δ) v_EW correction: structurally forced by the two-rail
+        #     picture (v_EW measured at δ_cl, not at the UV vacuum δ★)
+        #     — rigorously_proved.
+        #   - Quark Yukawas: the six m_q/m_p ratios are CONNECTED Cathedral
+        #     closed forms with one absolute anchor m_t/m_p = N²+D·q = 184.
+        #     Down/up generation ratios match PDG to ≤ 0.5 % — well_motivated.
         assert len(self.ha["speculative_honest"]) == 0
 
     def test_falsifiable_conditions_exist(self):

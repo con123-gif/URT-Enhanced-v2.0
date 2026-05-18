@@ -112,21 +112,23 @@ d   = delta_metric(DKY, tau)
 r★ = 3.8417002878419497
 ```
 
-the attractor is a stable 6-cycle. The **minimum branch** of this 6-cycle equals δ★ to machine epsilon:
+the attractor is a stable 6-cycle. The **minimum branch** of this 6-cycle is *very close* to δ★ (but not bit-exactly equal):
 
 ```
-|min{orbit(r★)} − δ★| = 1.27 × 10⁻¹⁴
+|min{orbit(r★)} − δ★| ≈ 8.89 × 10⁻⁵   (≈ 600 ppm)
 ```
 
-The Lyapunov exponent at r★ is **λ = −0.011275** (strictly negative = stable, contracting).
+The Lyapunov exponent at r★ is **λ ≈ −0.01126** (strictly negative = stable, contracting).
 
 Why 6? Because 6 = V/2 = 12/2, where V=12 is the icosahedral vertex count. The period-6 window is structurally forced by the same geometry that forces δ★.
 
 ```python
 from urt import verify_delta_star_logistic
 result = verify_delta_star_logistic()
-print(result)   # residual 1.27e-14, λ = -0.011275, period = 6, verified = True
+print(result)   # residual ≈ 8.9e-5, λ ≈ -0.01126, period = 6
 ```
+
+The icosahedral δ★ and the logistic 6-cycle minimum branch are the *same dynamical attractor* at the 600-ppm level, not at machine precision — the previously-published 1.27 × 10⁻¹⁴ figure was incorrect (it reflected a different r★ search tolerance, not the residual against the closed-form δ★).  See `urt.six_cycle_cathedral` for the structural reading: δ★ and δ_cl sit on the same 6-cycle three iterations apart, with Δ = δ_cl − δ★ ≈ 2.49 × 10⁻³ as the Z_2 splitting of the lowest pair.
 
 ---
 
@@ -573,7 +575,7 @@ from urt import (
 
 # Verify δ★ on logistic 6-cycle
 result = verify_delta_star_logistic()
-# → residual 1.27e-14, λ = -0.011275, period = 6
+# → residual ≈ 8.9e-5, λ ≈ -0.01126, period = 6 (see § Layer 3 above)
 
 # Full SM from geometry
 c = Cathedral()
