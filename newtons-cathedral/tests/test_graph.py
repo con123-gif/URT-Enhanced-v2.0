@@ -1,8 +1,8 @@
 """G_{13} graph: spectrum is all Cathedral integers."""
 import numpy as np
 
-from urt.foundations import N, V
-from urt.graph import (
+from newtons_cathedral.foundations import N, V
+from newtons_cathedral.graph import (
     adjacency, cathedral_eigenvalues, graph_audit, laplacian, spectrum,
 )
 
@@ -21,7 +21,7 @@ def test_centre_degree():
 
 
 def test_surface_degree_q():
-    from urt.foundations import q
+    from newtons_cathedral.foundations import q
     A = adjacency()
     degs = A.sum(axis=1)
     # Every surface vertex has degree q = 5 (= 4 ring neighbours + 1 centre).
@@ -31,7 +31,7 @@ def test_surface_degree_q():
 def test_trace_is_factorial_V():
     # tr(L) = sum of degrees = 12 + 12·5 = 72 = D! · V
     L = laplacian()
-    from urt.foundations import D, V as V_
+    from newtons_cathedral.foundations import D, V as V_
     assert int(np.trace(L)) == 6 * V_
 
 

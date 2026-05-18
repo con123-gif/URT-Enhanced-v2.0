@@ -3,7 +3,7 @@ from math import pi, sqrt
 
 import pytest
 
-from urt.foundations import (
+from newtons_cathedral.foundations import (
     D, DELTA, DELTA_CL, DELTA_STAR, E, F, G, GAMMA, N, PHI,
     cathedral_integers, foundations_audit, iron_chain, q, V,
 )

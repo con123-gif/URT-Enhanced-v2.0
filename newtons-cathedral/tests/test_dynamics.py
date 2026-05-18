@@ -3,11 +3,11 @@ from math import pi
 
 import numpy as np
 
-from urt.dynamics import (
+from newtons_cathedral.dynamics import (
     DYNAMICAL_NORMALISATION, ETA, ETA_L, MU, cathedral_potential,
     dynamics_audit, mixing_time, urt_evolve, urt_step,
 )
-from urt.foundations import D, DELTA_STAR, N, PHI, q
+from newtons_cathedral.foundations import D, DELTA_STAR, N, PHI, q
 
 
 def test_eta_is_one_over_8pi():

@@ -1,10 +1,10 @@
 """ARF Cathedral: 1/α, m_p/m_e, n_s, r from integers."""
-from urt.arf import (
+from newtons_cathedral.arf import (
     ALPHA_INV_BARE, ALPHA_INV_FULL, D64, MP_ME_BARE, MP_ME_FULL,
     MU_E_BARE, N_E_FOLDS, R_ALPHA, SPECTRAL_INDEX_NS, TENSOR_TO_SCALAR_R,
     arf_audit,
 )
-from urt.foundations import D, E, F, G, N, q
+from newtons_cathedral.foundations import D, E, F, G, N, q
 
 
 def test_alpha_inv_bare_is_137():

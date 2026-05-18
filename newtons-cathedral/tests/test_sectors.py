@@ -1,8 +1,8 @@
 """K_4 ⊕ A_5 = 4 + 9 = 13 sector decomposition."""
 import numpy as np
 
-from urt.foundations import D, N
-from urt.sectors import (
+from newtons_cathedral.foundations import D, N
+from newtons_cathedral.sectors import (
     A5_EIGENVALUES, A5_SIZE, ETA_B_PREFACTOR, K4_EIGENVALUES, K4_SIZE,
     OMEGA_L_BARE, OMEGA_M_BARE, SECTOR_RATIO, TR_L_A5, TR_L_K4, TR_L_TOTAL,
     sector_decomposition, sector_power, sector_ratio_at, sectors_audit,
