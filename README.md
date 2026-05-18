@@ -136,6 +136,77 @@ Every ratio is a closed form in `{D, q, V, E, F, G, N, γ, φ, π}`.
 | `(D+1)·F + (N−D−1)·N` (δ_CP) | 197° | T2K + NOvA 197° | exact |
 | `N / V` (Hubble ratio) | 1.0833 | SH0ES/Planck 1.0843 | 0.09 % |
 
+## Gravity
+
+General relativity is recovered on G_{13} via Sakharov-Visser
+induced gravity.  Closed forms:
+
+| Quantity | Cathedral form | Value |
+|---|---|---|
+| Newton's constant (geometric units) | `G_N = δ★²` | 0.021759 |
+| Cosmological constant | `Λ / M_Pl⁴ = D/(D+1)² · γ^{(D+1)^D}` | 1.349 × 10⁻¹²³ |
+| Spacetime dimension | `D + 1` | 4 |
+| Riemann tensor independent comps. | `F` | 20 |
+| Ricci tensor independent comps. | `D(D+1)/2 + D = V/2 + D` | 9 |
+| Bianchi-constraint count | `D + 1` | 4 |
+| Physical EFE components | `Riemann − Bianchi = V/2` | 6 |
+| Aut(G_{13}) order | `V · (D+1)^D` | 768 |
+| K_4-cube vertex count | `(D+1)^D` | 64 |
+| Einstein-Hilbert prefactor | `1 / (16π · G_N)` | 0.9135 |
+
+The Einstein field equations
+`R_µν − ½ g_µν R + Λ g_µν = 8π G_N · T_µν`
+hold on the K_4-sector of G_{13} with all coefficients fixed by
+the iron chain.  Black-hole thermodynamics (Schwarzschild radius,
+Hawking temperature, Bekenstein-Hawking entropy, first law) are
+implemented in `gravity.py`.
+
+## Quantum field theory on G_{13}
+
+The Cathedral path integral is
+
+```
+   Z[J]  =  ∫ Dδ  exp( i · S[δ]  +  i · ∫ J · δ )
+   S[δ]  =  ∫ dt  [ ½ |δ̇|²  −  V(δ) ]
+   V(δ)  =  ½ Σᵢ (δᵢ − δ★)² (1 + δᵢ²)  +  ½ δᵀ · L · δ
+```
+
+Expanding V around δ★ gives the Hessian `H = (1 + δ★²)·I + L_{G_{13}}`
+with 13 eigenvalues — the **Cathedral Feynman pole masses**:
+
+| Mode multiplicity | λ (eigenvalue) | Pole mass m_k = √(1 + δ★² + λ) |
+|---|---|---|
+| 1× (zero mode) | 0 | 1.0108 |
+| 2× (K_4 doublet) | 3 | 2.0054 |
+| 6× (A_5 sextet) | 5 | 2.4539 |
+| 2× (A_5 doublet) | 7 | 2.8323 |
+| 1× | 9 | 3.1657 |
+| 1× (trace singlet) | 13 | 3.7446 |
+
+Propagator: `G_k(p²) = i / (p² − m_k² + iε)`.
+
+**One-loop finiteness.** Because the Laplacian spectrum is finite
+(13 eigenvalues, max λ = N = 13), every self-energy bubble has a
+hard UV cutoff at Λ_UV² = N.  No renormalisation needed.
+
+**Sakharov-Visser matching scale.** The induced-gravity coefficient
+fixes the one-loop matching scale to
+
+```
+   Λ²_match / M_Pl²  =  D! · π  =  6π   (≈ 18.85)
+```
+
+— a Cathedral closed form for where the framework's UV regulator
+sits relative to the Planck mass.
+
+**Spectral functional determinant.**
+`det' L_{G_{13}} = γ⁻¹ · q^(D!) · (D!+1)² · N = 81 · 15625 · 49 · 13`
+`= 806,203,125`.
+
+Cubic-coupling tensor `W_{jmn} = Σᵢ Vᵢⱼ Vᵢₘ Vᵢₙ` from the eigenvector
+matrix V of L; symmetric in all three indices.  Implemented in
+`qft.py`.
+
 ## Six falsifiable open predictions
 
 | Closed form | Cathedral | Falsification target |
