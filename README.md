@@ -161,6 +161,65 @@ the iron chain.  Black-hole thermodynamics (Schwarzschild radius,
 Hawking temperature, Bekenstein-Hawking entropy, first law) are
 implemented in `gravity.py`.
 
+## The π-φ-e flow on G_{13}
+
+The dynamics that drive any initial state on the 13-vertex graph
+to the unique vacuum δ★:
+
+```
+   ∂_t δ  =  − η_L · L · δ   −   μ · (δ − δ★) · (1 + δ²)
+```
+
+with coefficients **forced** by D = 3:
+
+| Symbol | Value | Forced by |
+|---|---|---|
+| `η_L` | `1 / (4π)` | surface measure `|S²| = 4π` in D = 3 |
+| `η`   | `1 / (8π)` | half-step Euler convention = η_L / 2 |
+| `μ`   | `φ − 1 = 1/φ` | A_5 5-fold self-similarity (golden-ratio recursion) |
+| `δ★` | `(1 − γ) · π / (N · φ)` | unique fixed point ∇V = 0 |
+
+Each transcendental enters via exactly one structural reason:
+
+```
+   π   ←  spherical surface measure |S²| = 4π in D = 3
+   φ   ←  A_5 character-table irrationality over Q(√5)
+   e   ←  smooth semigroup closure of the iteration (Cauchy multiplicative)
+```
+
+**Natural dynamical timescale** (the Cathedral clock):
+
+```
+   2^q · π²  ≈  315.83        ( = the M★² conjugate, with M★ = √(2^q·π²) )
+
+   per-step contraction at eigenvalue λ:   1 − λ / (2^q · π²)
+   mixing time at eigenvalue λ:            τ(λ) = (2^q · π²) / λ
+```
+
+- slowest mode  (Fiedler, λ = D = 3):  τ ≈ 105 steps
+- fastest mode  (boundary, λ = N = 13): τ ≈ 24 steps
+- ratio = `N / D = 13 / 3` — purely Cathedral, transcendentals cancel
+
+**The URT iteration** (forward Euler discretisation):
+
+```
+   δ_{k+1}  =  δ_k  +  η · ( − η_L · L · δ_k  −  μ · (δ_k − δ★) · (1 + δ_k²) )
+```
+
+implemented in `dynamics.urt_step` / `urt_evolve`.
+
+**Theorem (uniqueness).**  The URT iteration on G_{13} is the unique
+Euler discretisation of a gradient flow whose only transcendentals
+are π, φ, e satisfying simultaneously
+
+1. global asymptotic stability to δ★
+2. preservation of the H_3 ⋊ K_4 symmetry of G_{13}
+3. finite-closure (Laplacian nullity = 1).
+
+That uniqueness theorem is why "π, φ, e" — and nothing else — appears
+in the flow.  Every other constant in the framework is built from
+those three plus the seven Cathedral integers.
+
 ## The Cathedral Lagrangian
 
 The framework's microscopic dynamics live on the 13-vertex graph
