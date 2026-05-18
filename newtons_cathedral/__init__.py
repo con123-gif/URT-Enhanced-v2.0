@@ -57,6 +57,15 @@ from .vacuum import (
     matter_direction_margin, matter_direction_target,
     vacuum_audit,
 )
+from .uniqueness import (
+    PLATONIC_PLUS_CENTRE,
+    spectral_uniqueness_winner,
+    gamma_from_dimension, gamma_from_icosahedron, gamma_identity_holds,
+    LAPLACIAN_EIGENVALUES,
+    ETA_EXACT, ETA_L_EXACT, MU_EXACT,
+    mode_contraction, all_modes_contract,
+    uniqueness_audit,
+)
 
 # ── ARF arithmetic ──────────────────────────────────────────────────────
 from .arf import (
@@ -166,6 +175,7 @@ def all_audits_pass() -> bool:
         sectors_audit,
         dynamics_audit,
         vacuum_audit,
+        uniqueness_audit,
         arf_audit,
         chain_audit,
         electroweak_audit,
