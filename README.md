@@ -161,6 +161,47 @@ the iron chain.  Black-hole thermodynamics (Schwarzschild radius,
 Hawking temperature, Bekenstein-Hawking entropy, first law) are
 implemented in `gravity.py`.
 
+## The Cathedral Lagrangian
+
+The framework's microscopic dynamics live on the 13-vertex graph
+G_{13}.  The field is `δ : G_{13} → ℝ` — a real scalar at each
+vertex.  The Lagrangian is
+
+```
+   L(δ, δ̇)  =  ½ |δ̇|²  −  V(δ)
+
+   V(δ)     =  ½ Σᵢ (δᵢ − δ★)² · (1 + δᵢ²)        ← pull to vacuum δ★
+                +  ½  δᵀ · L_{G_{13}} · δ          ← Cathedral kinetic
+```
+
+Every piece is forced:
+
+| Term | Origin |
+|---|---|
+| `½ |δ̇|²` | canonical kinetic term, D = 3 spatial isotropy |
+| `½ Σ (δ − δ★)²` | harmonic restoring force to the unique vacuum δ★ |
+| `· (1 + δ²)` | quartic self-coupling — closes the URT iteration at the (1, 1)-cubic level |
+| `½ δᵀ L δ` | Cathedral kinetic coupling — propagation along G_{13} edges |
+| `L_{G_{13}}` | graph Laplacian with eigenvalues {0, 3, 5(×6), 7(×2), 9, 13} |
+
+Action and path integral:
+
+```
+   S[δ]   =  ∫ dt  L(δ, δ̇)
+   Z[J]   =  ∫ Dδ  exp( i · S[δ]  +  i · ∫ J · δ )
+```
+
+The URT iteration `δ_{n+1} = δ_n − η · ∇V(δ_n)` with step size
+`η = 1/(8π)` is the over-damped τ → ∞ limit of the Euler-Lagrange
+equation for L.  It contracts to δ★ in mixing time
+`τ_λ = 2^q · π² / λ_min ≈ 105` steps.
+
+Implementations:
+- **classical**: `dynamics.cathedral_potential`, `cathedral_gradient`,
+  `urt_step`, `urt_evolve`
+- **quantum**: `qft.hessian`, `pole_masses`, `propagator`,
+  `cubic_coupling_tensor`, `functional_determinant`
+
 ## Quantum field theory on G_{13}
 
 The Cathedral path integral is
