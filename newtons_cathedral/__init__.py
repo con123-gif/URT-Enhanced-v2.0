@@ -1,22 +1,6 @@
 """
 Newton's Cathedral — a derivation of physics from D = 3 alone.
 
-The iron chain:
-
-    D = 3                  spatial dimension (input)
-    A_5 unique             Jordan 1870 (non-cyclic simple subgroup of SO(3))
-    q = D + 2 = 5          5-fold rotation axes
-    V, E, F = 12, 30, 20   icosahedral counts (orbit-stabiliser)
-    G = (D+1)·D·q = 60     |A_5|
-    N = D² + D + 1 = 13    centred-icosahedral closure
-    γ = D^{-(D+1)} = 1/81  self-referential entropy
-    φ = (1 + √5) / 2       golden ratio (A_5 character table)
-    δ★ = (1 − γ)·π/(N·φ)   vacuum fixed point
-
-The full anchor-free chain from a single observed input ρ_Λ to every
-Standard-Model mass, gauge boson, mixing angle, neutrino mass, dark-
-sector candidate, and CMB observable.
-
 CI top-level gate:
 
     from newtons_cathedral import all_audits_pass
@@ -24,15 +8,12 @@ CI top-level gate:
 """
 from __future__ import annotations
 
-# ── Foundations ──────────────────────────────────────────────────────────
 from .foundations import (
     D, q, V, E, F, G, N,
     PHI, GAMMA,
     DELTA_STAR, DELTA_CL, DELTA, M_STAR,
     cathedral_integers, iron_chain, foundations_audit,
 )
-
-# ── Graph + sectors + dynamics ──────────────────────────────────────────
 from .graph import (
     adjacency, laplacian, spectrum, cathedral_eigenvalues, graph_audit,
 )
@@ -50,6 +31,8 @@ from .dynamics import (
     urt_step, urt_evolve,
     per_mode_contraction, mixing_time,
     cathedral_potential, cathedral_gradient,
+    lagrangian_step, lagrangian_evolve,
+    mode_frequencies, cathedral_wave_packet, lagrangian_energy,
     dynamics_audit,
 )
 from .vacuum import (
@@ -57,17 +40,6 @@ from .vacuum import (
     matter_direction_margin, matter_direction_target,
     vacuum_audit,
 )
-from .uniqueness import (
-    PLATONIC_PLUS_CENTRE,
-    spectral_uniqueness_winner,
-    gamma_from_dimension, gamma_from_icosahedron, gamma_identity_holds,
-    LAPLACIAN_EIGENVALUES,
-    ETA_EXACT, ETA_L_EXACT, MU_EXACT,
-    mode_contraction, all_modes_contract,
-    uniqueness_audit,
-)
-
-# ── ARF arithmetic ──────────────────────────────────────────────────────
 from .arf import (
     D63, D64, D79, D80, R_ALPHA,
     ALPHA_INV_BARE, ALPHA_INV_FULL,
@@ -76,8 +48,6 @@ from .arf import (
     N_E_FOLDS, SPECTRAL_INDEX_NS, TENSOR_TO_SCALAR_R,
     alpha_inv, mp_over_me, arf_audit,
 )
-
-# ── Anchor-free scale chain ─────────────────────────────────────────────
 from .chain import (
     RHO_LAMBDA_MEV, RHO_LAMBDA_GEV4, LAMBDA_OVER_MPL4,
     M_PL_GEV, V_EW_GEV,
@@ -87,8 +57,6 @@ from .chain import (
     R_PROTON_FM, HBAR_C_GEV_FM,
     chain_audit,
 )
-
-# ── Standard Model ───────────────────────────────────────────────────────
 from .electroweak import (
     SIN2_THETA_W, ALPHA_INV_MZ,
     M_H_GEV, M_TOP_GEV, LAMBDA_H, A_MU_LEADING,
@@ -120,8 +88,6 @@ from .mixing import (
     m_nu_2_eV, m_nu_3_eV, sum_mnu_meV,
     mixing_audit,
 )
-
-# ── Cosmology + inflation + baryogenesis + dark + gravity ───────────────
 from .baryogenesis import ETA_B, baryogenesis_audit
 from .dark import (
     M_AXION_UEV, AXION_FREQ_GHZ, CATHEDRAL_SPECTRAL_LINE_GHZ,
@@ -143,10 +109,28 @@ from .gravity import (
     EH_PREFACTOR, LAMBDA_PLANCK4,
     schwarzschild_radius, hawking_temperature,
     bekenstein_hawking_entropy, first_law_black_hole,
+    geodesic_deviation_cathedral, penrose_diagram_causal_check,
+    kretschner_scalar_cathedral,
     gravity_audit,
 )
-
-# ── Periodic table + nuclear shell model + QFT ─────────────────────────
+from .geometry import (
+    all_pairs_distances, cheeger_constant, cheeger_with_cut,
+    heat_kernel as geometry_heat_kernel,
+    heat_kernel_trace, heat_kernel_trace_formula,
+    spectral_embedding, incidence_matrix, edge_laplacian,
+    hodge_decomposition, betti_numbers,
+    ollivier_ricci_edge, ollivier_ricci_all, mean_ollivier_ricci,
+    ihara_zeta_inverse_coeffs, ramanujan_check,
+    geometry_audit,
+)
+from .lorentz import (
+    M0_SQ, M0,
+    k4_eigenvectors, k4_restricted_action_matrix,
+    minkowski_metric, minkowski_invariant, causal_type,
+    null_cone_vectors, mass_shell_vectors,
+    lorentz_boost, fiedler_equals_D, spacetime_interval,
+    lorentz_audit,
+)
 from .periodic_table import (
     ORBITAL_LETTERS, madelung_order, noble_gas_atomic_numbers,
     KNOWN_NOBLE_GASES, periodic_table_audit,
@@ -155,12 +139,12 @@ from .nuclear import (
     magic_numbers, OBSERVED_MAGIC, nuclear_audit,
 )
 from .qft import (
-    hessian, pole_masses, propagator,
+    hessian, pole_masses, propagator, propagator_4d,
+    spectral_function, ward_identity_check,
+    two_point_function_k4, dispersion_relation_K4,
     cubic_coupling_tensor, functional_determinant,
     LAMBDA_SQ_MATCH_OVER_MPL_SQ, qft_audit,
 )
-
-# ── Predictions registry ────────────────────────────────────────────────
 from .predictions import (
     Prediction, all_predictions, summary,
     print_table, predictions_audit,
@@ -175,7 +159,6 @@ def all_audits_pass() -> bool:
         sectors_audit,
         dynamics_audit,
         vacuum_audit,
-        uniqueness_audit,
         arf_audit,
         chain_audit,
         electroweak_audit,
@@ -187,6 +170,8 @@ def all_audits_pass() -> bool:
         cosmology_audit,
         inflation_audit,
         gravity_audit,
+        geometry_audit,
+        lorentz_audit,
         periodic_table_audit,
         nuclear_audit,
         qft_audit,
@@ -206,15 +191,13 @@ def all_audits_pass() -> bool:
     return True
 
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 __all__ = [
-    # foundations
     "D", "q", "V", "E", "F", "G", "N",
     "PHI", "GAMMA",
     "DELTA_STAR", "DELTA_CL", "DELTA", "M_STAR",
     "cathedral_integers", "iron_chain",
-    # graph & sectors & dynamics
     "adjacency", "laplacian", "spectrum", "cathedral_eigenvalues",
     "K4_SIZE", "A5_SIZE", "SECTOR_RATIO", "ETA_B_PREFACTOR",
     "K4_EIGENVALUES", "A5_EIGENVALUES",
@@ -225,22 +208,21 @@ __all__ = [
     "urt_step", "urt_evolve",
     "per_mode_contraction", "mixing_time",
     "cathedral_potential", "cathedral_gradient",
+    "lagrangian_step", "lagrangian_evolve",
+    "mode_frequencies", "cathedral_wave_packet", "lagrangian_energy",
     "vacuum_potential_at_rail",
     "matter_direction_margin", "matter_direction_target",
-    # ARF
     "D63", "D64", "D79", "D80", "R_ALPHA",
     "ALPHA_INV_BARE", "ALPHA_INV_FULL",
     "MP_ME_BARE", "MP_ME_FULL", "MU_E_BARE",
     "N_E_FOLDS", "SPECTRAL_INDEX_NS", "TENSOR_TO_SCALAR_R",
     "alpha_inv", "mp_over_me",
-    # Chain
     "RHO_LAMBDA_MEV", "RHO_LAMBDA_GEV4", "LAMBDA_OVER_MPL4",
     "M_PL_GEV", "V_EW_GEV",
     "Y_E", "M_E_GEV", "M_E_MEV", "M_E_EV",
     "M_P_GEV", "M_P_MEV",
     "LAMBDA_QCD_GEV", "LAMBDA_QCD_MEV",
     "R_PROTON_FM", "HBAR_C_GEV_FM",
-    # EW + QCD + fermions + mixing
     "SIN2_THETA_W", "ALPHA_INV_MZ",
     "M_H_GEV", "M_TOP_GEV", "LAMBDA_H", "A_MU_LEADING",
     "SM_GAUGE_BOSON_COUNT", "GRAVITON_PLUS_GAUGE",
@@ -259,7 +241,6 @@ __all__ = [
     "THETA_12_DEG", "THETA_13_DEG", "THETA_23_DEG",
     "DELTA_CP_DEG", "DELTA_CP_K4_PART", "DELTA_CP_A5_PART",
     "m_nu_2_eV", "m_nu_3_eV", "sum_mnu_meV",
-    # dark / cosmology / inflation / gravity
     "ETA_B",
     "M_AXION_UEV", "AXION_FREQ_GHZ", "CATHEDRAL_SPECTRAL_LINE_GHZ",
     "m_sterile_keV", "m_WIMP_GeV",
@@ -274,17 +255,29 @@ __all__ = [
     "EH_PREFACTOR", "LAMBDA_PLANCK4",
     "schwarzschild_radius", "hawking_temperature",
     "bekenstein_hawking_entropy", "first_law_black_hole",
-    # periodic table + nuclear + QFT
+    "geodesic_deviation_cathedral", "penrose_diagram_causal_check",
+    "kretschner_scalar_cathedral",
+    "all_pairs_distances", "cheeger_constant", "cheeger_with_cut",
+    "heat_kernel_trace", "heat_kernel_trace_formula",
+    "spectral_embedding", "incidence_matrix", "edge_laplacian",
+    "hodge_decomposition", "betti_numbers",
+    "ollivier_ricci_edge", "ollivier_ricci_all", "mean_ollivier_ricci",
+    "ihara_zeta_inverse_coeffs", "ramanujan_check",
+    "M0_SQ", "M0",
+    "k4_eigenvectors", "k4_restricted_action_matrix",
+    "minkowski_metric", "minkowski_invariant", "causal_type",
+    "null_cone_vectors", "mass_shell_vectors",
+    "lorentz_boost", "fiedler_equals_D", "spacetime_interval",
     "ORBITAL_LETTERS", "madelung_order", "noble_gas_atomic_numbers",
     "KNOWN_NOBLE_GASES",
     "magic_numbers", "OBSERVED_MAGIC",
-    "hessian", "pole_masses", "propagator",
+    "hessian", "pole_masses", "propagator", "propagator_4d",
+    "spectral_function", "ward_identity_check",
+    "two_point_function_k4", "dispersion_relation_K4",
     "cubic_coupling_tensor", "functional_determinant",
     "LAMBDA_SQ_MATCH_OVER_MPL_SQ",
-    # registry
     "Prediction", "all_predictions", "summary",
     "print_table",
-    # top-level gate
     "all_audits_pass",
     "__version__",
 ]
