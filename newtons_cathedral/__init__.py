@@ -15,7 +15,10 @@ from .foundations import (
     cathedral_integers, iron_chain, foundations_audit,
 )
 from .graph import (
-    adjacency, laplacian, spectrum, cathedral_eigenvalues, graph_audit,
+    adjacency, laplacian, spectrum, cathedral_eigenvalues,
+    heat_kernel as graph_heat_kernel,
+    spectral_zeta, graph_diameter, isoperimetric_number,
+    graph_audit,
 )
 from .sectors import (
     K4_SIZE, A5_SIZE, SECTOR_RATIO, ETA_B_PREFACTOR,
@@ -131,6 +134,15 @@ from .lorentz import (
     lorentz_boost, fiedler_equals_D, spacetime_interval,
     lorentz_audit,
 )
+from .uniqueness import (
+    PLATONIC_PLUS_CENTRE,
+    spectral_uniqueness_winner,
+    gamma_from_dimension, gamma_from_icosahedron, gamma_identity_holds,
+    LAPLACIAN_EIGENVALUES,
+    ETA_EXACT, ETA_L_EXACT, MU_EXACT,
+    mode_contraction, all_modes_contract,
+    uniqueness_audit,
+)
 from .periodic_table import (
     ORBITAL_LETTERS, madelung_order, noble_gas_atomic_numbers,
     KNOWN_NOBLE_GASES, periodic_table_audit,
@@ -172,6 +184,7 @@ def all_audits_pass() -> bool:
         gravity_audit,
         geometry_audit,
         lorentz_audit,
+        uniqueness_audit,
         periodic_table_audit,
         nuclear_audit,
         qft_audit,
@@ -191,64 +204,81 @@ def all_audits_pass() -> bool:
     return True
 
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 
 __all__ = [
+    # foundations
     "D", "q", "V", "E", "F", "G", "N",
     "PHI", "GAMMA",
     "DELTA_STAR", "DELTA_CL", "DELTA", "M_STAR",
     "cathedral_integers", "iron_chain",
+    # graph
     "adjacency", "laplacian", "spectrum", "cathedral_eigenvalues",
+    "graph_heat_kernel", "spectral_zeta", "graph_diameter", "isoperimetric_number",
+    # sectors
     "K4_SIZE", "A5_SIZE", "SECTOR_RATIO", "ETA_B_PREFACTOR",
     "K4_EIGENVALUES", "A5_EIGENVALUES",
     "TR_L_K4", "TR_L_A5", "TR_L_TOTAL",
     "OMEGA_M_BARE", "OMEGA_L_BARE",
     "sector_decomposition", "sector_power", "sector_ratio_at",
+    # dynamics
     "ETA", "ETA_L", "MU", "DYNAMICAL_NORMALISATION",
     "urt_step", "urt_evolve",
     "per_mode_contraction", "mixing_time",
     "cathedral_potential", "cathedral_gradient",
     "lagrangian_step", "lagrangian_evolve",
     "mode_frequencies", "cathedral_wave_packet", "lagrangian_energy",
+    # vacuum
     "vacuum_potential_at_rail",
     "matter_direction_margin", "matter_direction_target",
+    # ARF
     "D63", "D64", "D79", "D80", "R_ALPHA",
     "ALPHA_INV_BARE", "ALPHA_INV_FULL",
     "MP_ME_BARE", "MP_ME_FULL", "MU_E_BARE",
     "N_E_FOLDS", "SPECTRAL_INDEX_NS", "TENSOR_TO_SCALAR_R",
     "alpha_inv", "mp_over_me",
+    # chain
     "RHO_LAMBDA_MEV", "RHO_LAMBDA_GEV4", "LAMBDA_OVER_MPL4",
     "M_PL_GEV", "V_EW_GEV",
     "Y_E", "M_E_GEV", "M_E_MEV", "M_E_EV",
     "M_P_GEV", "M_P_MEV",
     "LAMBDA_QCD_GEV", "LAMBDA_QCD_MEV",
     "R_PROTON_FM", "HBAR_C_GEV_FM",
+    # electroweak
     "SIN2_THETA_W", "ALPHA_INV_MZ",
     "M_H_GEV", "M_TOP_GEV", "LAMBDA_H", "A_MU_LEADING",
     "SM_GAUGE_BOSON_COUNT", "GRAVITON_PLUS_GAUGE",
     "GLUON_COUNT", "EW_BOSON_COUNT",
     "gauge_couplings", "m_W_GeV", "m_Z_GeV", "m_H_chain_GeV",
+    # QCD
     "ALPHA_S_MZ", "ETA_QCD",
     "N_GLUONS", "N_TRACE_SINGLET", "A5_COUNT_CHECK",
     "f_pi_GeV", "m_pi0_GeV",
+    # fermions
     "ETA_LEPTON", "MU_E_RATIO", "TAU_MU_BARE", "TAU_MU_RATIO",
     "m_u_over_mp", "m_d_over_mp", "m_s_over_mp",
     "m_c_over_mp", "m_b_over_mp", "m_t_over_mp",
     "quark_masses_GeV", "M_TOP_INTEGER_GEV",
     "r_proton_fm", "QUARK_DOUBLETS_BY_EIGENVALUE",
+    # mixing
     "SIN_THETA_C", "THETA_C_DEG",
     "A_CKM", "RHO_BAR", "ETA_BAR", "J_CKM",
     "THETA_12_DEG", "THETA_13_DEG", "THETA_23_DEG",
     "DELTA_CP_DEG", "DELTA_CP_K4_PART", "DELTA_CP_A5_PART",
     "m_nu_2_eV", "m_nu_3_eV", "sum_mnu_meV",
+    # baryogenesis
     "ETA_B",
+    # dark
     "M_AXION_UEV", "AXION_FREQ_GHZ", "CATHEDRAL_SPECTRAL_LINE_GHZ",
     "m_sterile_keV", "m_WIMP_GeV",
     "BOHR_RADIUS_M", "casimir_fractional_force", "CASIMIR_AT_100NM",
     "R_MASS", "D_35", "D_51", "EV_TO_HZ",
+    # cosmology
     "OMEGA_M", "OMEGA_LAMBDA", "OMEGA_B", "OMEGA_DM", "SIGMA_8",
     "A_S", "H0_RATIO_CANONICAL", "H0_RATIO_PI_FORM",
+    # inflation
     "N_E", "N_S", "R_TS",
+    # gravity
     "G_NEWTON", "AUT_G13_ORDER", "K4_CUBE_VERTICES",
     "SPACETIME_DIM", "RIEMANN_COMPS", "RICCI_COMPS",
     "BIANCHI_CONSTRAINTS", "PHYSICAL_EFE_COMPS",
@@ -257,17 +287,28 @@ __all__ = [
     "bekenstein_hawking_entropy", "first_law_black_hole",
     "geodesic_deviation_cathedral", "penrose_diagram_causal_check",
     "kretschner_scalar_cathedral",
+    # geometry
     "all_pairs_distances", "cheeger_constant", "cheeger_with_cut",
+    "geometry_heat_kernel",
     "heat_kernel_trace", "heat_kernel_trace_formula",
     "spectral_embedding", "incidence_matrix", "edge_laplacian",
     "hodge_decomposition", "betti_numbers",
     "ollivier_ricci_edge", "ollivier_ricci_all", "mean_ollivier_ricci",
     "ihara_zeta_inverse_coeffs", "ramanujan_check",
+    # lorentz
     "M0_SQ", "M0",
     "k4_eigenvectors", "k4_restricted_action_matrix",
     "minkowski_metric", "minkowski_invariant", "causal_type",
     "null_cone_vectors", "mass_shell_vectors",
     "lorentz_boost", "fiedler_equals_D", "spacetime_interval",
+    # uniqueness
+    "PLATONIC_PLUS_CENTRE",
+    "spectral_uniqueness_winner",
+    "gamma_from_dimension", "gamma_from_icosahedron", "gamma_identity_holds",
+    "LAPLACIAN_EIGENVALUES",
+    "ETA_EXACT", "ETA_L_EXACT", "MU_EXACT",
+    "mode_contraction", "all_modes_contract",
+    # periodic table + nuclear + QFT
     "ORBITAL_LETTERS", "madelung_order", "noble_gas_atomic_numbers",
     "KNOWN_NOBLE_GASES",
     "magic_numbers", "OBSERVED_MAGIC",
@@ -276,8 +317,10 @@ __all__ = [
     "two_point_function_k4", "dispersion_relation_K4",
     "cubic_coupling_tensor", "functional_determinant",
     "LAMBDA_SQ_MATCH_OVER_MPL_SQ",
+    # predictions
     "Prediction", "all_predictions", "summary",
     "print_table",
+    # top-level
     "all_audits_pass",
     "__version__",
 ]

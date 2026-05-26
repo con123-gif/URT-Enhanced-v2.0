@@ -39,10 +39,7 @@ the linear program
     min  Σ_{a,b} d(a,b) · T_{ab}
     s.t. Σ_b T_{ab} = μ_u(a),  Σ_a T_{ab} = μ_v(b),  T ≥ 0.
 
-By the vertex-transitivity of the surface ring and the centre-to-surface
-symmetry, all edges of the same topological type have the same curvature:
-    κ_cs   =  κ(0, i)    for any i ∈ {1,…,12}   (centre-to-surface)
-    κ_ss   =  κ(i, j)    for any surface-surface edge
+All 36 edges have κ > 0 (positive curvature throughout, consistent with S² topology).
 
 ────────────────────────────────────────────────────────────────────────────
 HEAT KERNEL
@@ -118,18 +115,6 @@ G_{13} is biregular: centre has degree 12, surface has degree 5.
 For the surface subgraph degree k=5: 2√(5−1) = 4.
 The Fiedler eigenvalue of G_{13} is λ₂ = 3 < 4, so G_{13} satisfies the
 Ramanujan bound — it is a near-optimal spectral expander.
-
-────────────────────────────────────────────────────────────────────────────
-IHARA ZETA FUNCTION
-────────────────────────────────────────────────────────────────────────────
-
-For a graph with adjacency matrix A and degree matrix D_deg, the Ihara
-zeta function satisfies the determinant formula
-
-    Z_G(u)^{−1}  =  (1−u²)^{|E|−N}  ·  det(I − u A + u²(D_deg − I))
-
-We compute the coefficients of  det(I − u A + u²(D_deg − I))  as a
-polynomial in u of degree 2N = 26.
 """
 from __future__ import annotations
 
@@ -145,8 +130,6 @@ from .foundations import D, N, V
 from .graph import adjacency, laplacian
 
 
-# ── Cathedral spectrum multiplicity table ────────────────────────────────
-#  (eigenvalue, multiplicity)
 _CATHEDRAL_SPECTRUM: tuple[tuple[int, int], ...] = (
     (0,  1),
     (3,  2),
@@ -162,7 +145,6 @@ def all_pairs_distances() -> np.ndarray:
     A = adjacency().astype(bool)
     dist = np.full((N, N), np.inf)
     np.fill_diagonal(dist, 0.0)
-    # BFS from each source vertex.
     for src in range(N):
         visited = np.zeros(N, dtype=bool)
         visited[src] = True
@@ -182,20 +164,14 @@ def all_pairs_distances() -> np.ndarray:
 
 
 def cheeger_with_cut() -> tuple[float, frozenset]:
-    """(h, S) where h is the Cheeger constant and S is the minimising vertex set.
-
-    Brute-force over all non-empty subsets S with |S| ≤ N//2 = 6.
-    |∂S| = number of edges with exactly one endpoint in S.
-    """
+    """(h, S) where h is the Cheeger constant and S is the minimising vertex set."""
     A = adjacency()
     verts = list(range(N))
     best_h = float("inf")
     best_S: frozenset = frozenset()
-    # Only need to consider |S| in 1..N//2 = 6 (by symmetry h(S) = h(V\S)).
     for size in range(1, N // 2 + 1):
         for S_tuple in combinations(verts, size):
             S_set = set(S_tuple)
-            # Count crossing edges.
             boundary = 0
             for u in S_set:
                 for v in range(N):
@@ -218,7 +194,6 @@ def heat_kernel(t: float) -> np.ndarray:
     """13×13 heat kernel K(t) = exp(−tL) via spectral decomposition."""
     L = laplacian()
     eigs, U = np.linalg.eigh(L)
-    # K(t) = U diag(exp(−t λ_k)) Uᵀ
     exp_eigs = np.exp(-t * eigs)
     return (U * exp_eigs[np.newaxis, :]) @ U.T
 
@@ -231,11 +206,7 @@ def heat_kernel_trace(t: float) -> float:
 
 
 def heat_kernel_trace_formula(t: float) -> float:
-    """Closed-form tr(K(t)) using Cathedral eigenvalue multiplicities.
-
-        tr(K(t))  =  1·e^{−0·t}  +  2·e^{−3t}  +  6·e^{−5t}
-                  +  2·e^{−7t}  +  1·e^{−9t}  +  1·e^{−13t}
-    """
+    """Closed-form tr(K(t)) using Cathedral eigenvalue multiplicities."""
     result = 0.0
     for lam, mult in _CATHEDRAL_SPECTRUM:
         result += mult * exp(-lam * t)
@@ -243,30 +214,20 @@ def heat_kernel_trace_formula(t: float) -> float:
 
 
 def spectral_embedding() -> np.ndarray:
-    """13×3 coordinates of all vertices using Fiedler eigenvectors.
-
-    Uses the eigenvectors for eigenvalues λ=3 (×2) and λ=5 as the
-    3 coordinate axes.  These are eigenvector indices 1, 2, 3
-    (sorted ascending: index 0 is λ=0, indices 1-2 are λ=3, index 3 is λ=5).
-    The embedding approximately recovers the icosahedral arrangement on S².
-    """
+    """13×3 coordinates using Fiedler eigenvectors (λ=3×2 and λ=5)."""
     L = laplacian()
     _, U = np.linalg.eigh(L)
-    # Columns 1, 2, 3 → eigenvalues 3, 3, 5.
-    return U[:, 1:4]            # shape (13, 3)
+    return U[:, 1:4]
 
 
 def incidence_matrix() -> np.ndarray:
-    """36×13 incidence matrix B with canonical orientation (lower→higher index).
-
-    B_{e, tail(e)} = −1,  B_{e, head(e)} = +1.
-    """
+    """36×13 incidence matrix B with canonical orientation (lower→higher index)."""
     A = adjacency()
     edges = []
     for u in range(N):
         for v in range(u + 1, N):
             if A[u, v] > 0.5:
-                edges.append((u, v))   # oriented u → v  (u < v)
+                edges.append((u, v))
     num_edges = len(edges)
     B = np.zeros((num_edges, N), dtype=float)
     for idx, (u, v) in enumerate(edges):
@@ -282,34 +243,17 @@ def edge_laplacian() -> np.ndarray:
 
 
 def hodge_decomposition(omega: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    """Decompose a 1-form (|E|-vector) into (exact part dα, harmonic part h).
-
-    Exact part:   dα = B · B⁺ · ω   where B⁺ is the Moore-Penrose pseudoinverse.
-    Harmonic part: h = ω − dα        (lies in ker(Bᵀ) = cycle space of G_{13}).
-    """
+    """Decompose a 1-form into (exact part dα, harmonic part h)."""
     B = incidence_matrix()
-    # Project onto the image of B (= exact forms).
     B_pinv = np.linalg.pinv(B)
-    # dα = B · (B⁺ · ω): first get the vertex potential, then re-apply B.
-    alpha_hat = B_pinv @ omega           # 13-vector (vertex potential)
-    d_alpha = B @ alpha_hat              # 36-vector (exact part)
+    alpha_hat = B_pinv @ omega
+    d_alpha = B @ alpha_hat
     harmonic = omega - d_alpha
     return d_alpha, harmonic
 
 
 def betti_numbers() -> dict:
-    """Return Betti numbers and Euler characteristics.
-
-    Graph (1-complex, computed from actual G_{13}):
-        G_{13} has N=13 vertices and |E|=36 edges
-        (12 centre-surface + 24 surface-surface from offsets {1,5,7,11} mod 12).
-        b0 = 1   (one connected component — G_{13} is connected)
-        b1 = |E| − N + b0 = 36 − 13 + 1 = 24   (cycle rank)
-        euler_graph = N − |E| = 13 − 36 = −23
-
-    Surface completion (standard icosahedron S² triangulation, V=12, E=30, F=20):
-        b0=1, b1=0, b2=1, euler_surface = V−E+F = 12−30+20 = 2.
-    """
+    """Betti numbers of G_{13} (1-complex) and icosahedral surface."""
     A = adjacency()
     num_edges = int(A.sum()) // 2
     b1 = num_edges - N + 1
@@ -318,39 +262,22 @@ def betti_numbers() -> dict:
         "b1": b1,
         "b2_surface": 1,
         "euler_graph": N - num_edges,
-        "euler_surface": 2,           # V − E + F = 12 − 30 + 20 = 2
+        "euler_surface": 2,
     }
 
 
 def ollivier_ricci_edge(u: int, v: int, dist: np.ndarray) -> float:
-    """Ollivier-Ricci curvature κ(u,v) for edge (u,v).
-
-    Computes W₁(μ_u, μ_v) via the linear program
-
-        min   Σ_{a,b} dist(a,b) T_{ab}
-        s.t.  Σ_b T_{ab} = μ_u(a)   (row marginal)
-              Σ_a T_{ab} = μ_v(b)   (column marginal)
-              T_{ab} ≥ 0
-
-    where μ_u is uniform over deg(u) neighbours.
-    """
+    """Ollivier-Ricci curvature κ(u,v) via Earth Mover's distance LP."""
     A = adjacency()
     nbrs_u = np.where(A[u] > 0.5)[0]
     nbrs_v = np.where(A[v] > 0.5)[0]
     deg_u = len(nbrs_u)
     deg_v = len(nbrs_v)
-
-    # Cost vector: flattened distance sub-matrix between nbrs_u and nbrs_v.
     cost = dist[np.ix_(nbrs_u, nbrs_v)].ravel()
-
-    # Decision variables: T_{ab} for a ∈ nbrs_u, b ∈ nbrs_v (flattened).
     n_vars = deg_u * deg_v
-
-    # Equality constraints: row sums = 1/deg_u, col sums = 1/deg_v.
     n_eq = deg_u + deg_v
     A_eq = np.zeros((n_eq, n_vars))
     b_eq = np.zeros(n_eq)
-
     for a in range(deg_u):
         for b in range(deg_v):
             idx = a * deg_v + b
@@ -358,14 +285,9 @@ def ollivier_ricci_edge(u: int, v: int, dist: np.ndarray) -> float:
             A_eq[deg_u + b, idx] = 1.0
     b_eq[:deg_u] = 1.0 / deg_u
     b_eq[deg_u:] = 1.0 / deg_v
-
     bounds = [(0.0, None)] * n_vars
     result = scipy.optimize.linprog(
-        c=cost,
-        A_eq=A_eq,
-        b_eq=b_eq,
-        bounds=bounds,
-        method="highs",
+        c=cost, A_eq=A_eq, b_eq=b_eq, bounds=bounds, method="highs",
     )
     w1 = float(result.fun)
     d_uv = float(dist[u, v])
@@ -380,8 +302,7 @@ def ollivier_ricci_all() -> dict:
     for u in range(N):
         for v in range(u + 1, N):
             if A[u, v] > 0.5:
-                kappa = ollivier_ricci_edge(u, v, dist)
-                result[(u, v)] = kappa
+                result[(u, v)] = ollivier_ricci_edge(u, v, dist)
     return result
 
 
@@ -392,18 +313,15 @@ def mean_ollivier_ricci() -> float:
 
 
 def ihara_zeta_inverse_coeffs() -> np.ndarray:
-    """Coefficients of det(I − uA + u²(D_deg−I)) as polynomial in u, degree 2N=26."""
+    """Coefficients of det(I−uA+u²(D_deg−I)) as polynomial in u, degree 2N=26."""
     A_mat = adjacency()
     deg = A_mat.sum(axis=1)
     D_deg = np.diag(deg)
-
-    num_points = 2 * N + 1
     us_real = np.linspace(-0.1, 0.1, 2 * N + 1)
     det_real = np.zeros(2 * N + 1)
     for k, u in enumerate(us_real):
         M = np.eye(N) - u * A_mat + u ** 2 * (D_deg - np.eye(N))
         det_real[k] = float(np.linalg.det(M).real)
-
     coeffs = np.polyfit(us_real, det_real, 2 * N)
     return coeffs[::-1]
 
@@ -430,7 +348,7 @@ def geometry_audit() -> bool:
     dist = all_pairs_distances()
     ok &= bool(np.all(dist >= 0))
     ok &= bool(np.allclose(dist, np.round(dist)))
-    ok &= int(dist[0, 0]) == 0
+    ok &= bool(np.all(np.diag(dist) == 0))   # all self-distances are zero
 
     h = cheeger_constant()
     ok &= h >= 1.5 - 1e-10
@@ -459,8 +377,9 @@ def geometry_audit() -> bool:
 
     kappas = ollivier_ricci_all()
     ok &= len(kappas) == num_edges
+    # All edges have strictly positive Ollivier-Ricci curvature (S² topology).
     for kappa in kappas.values():
-        ok &= -1.0 - 1e-10 <= kappa <= 1.0 + 1e-10
+        ok &= kappa > 0
 
     ram = ramanujan_check()
     ok &= abs(ram["fiedler"] - 3.0) < 1e-10
