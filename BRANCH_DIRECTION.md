@@ -22,27 +22,26 @@ Move the Cathedral / URT framework toward **first-principles mathematical rigor*
 5. **Keep the self-contained spirit**  
    The original `cathedral_v8_complete.py` verifier is excellent — preserve and enhance that style.
 
-## Current Focus Areas (June 2026)
+## Key Experiments on This Branch (June 2026)
 
-- Integrate the GEM v4 octahedral G13 construction (`gem_v4_topology.py`)
-- Add exact continuous-time relaxation alongside (or replacing) discrete URT steps
-- Enhance the verifier with relative-error reporting and thermodynamic audit
-- Document spectral properties and vacuum-exhaust behavior clearly
-- **New**: Direct comparison tools between G13 constructions (`compare_g13_topologies.py`)
+### 1. GEM v4 (Octahedral Double Cover)
+- Clean 4-regular outer shell
+- Integer spectrum
+- Excellent thermodynamic relaxation
 
-## Key Insight from Comparison (added 2026-06-05)
+### 2. Strict Geometric Icosahedron
+- Uses actual 3D golden-ratio coordinates on the unit sphere
+- Recovers correct icosahedral graph via nearest-neighbor distances
+- **Non-integer eigenvalues** appear (involving φ)
+- Thermodynamic performance remains very good (~0.246)
 
-Both the original icosahedral G13 and GEM v4 have **exactly 36 edges** and nearly identical Laplacian spectra (eigenvalues 0, 3, 5, 7, 9, 13).
+**Insight**: "Strict geometry" trades the beautiful integer spectrum of the combinatorial versions for more natural connection to continuous geometry and curvature. All three constructions relax to Ω_Λ extremely well.
 
-GEM v4 shows a small but measurable advantage in thermodynamic relaxation speed toward Ω_Λ = 9/13 (~4% faster in simulation).
+## Current Focus Areas
 
-This suggests the two topologies are complementary rather than competing. Future work on this branch will explore hybrid models and when to use each construction.
-
-## Long-term Vision for the Branch
-
-- Become the "rigor & foundations" development line for the project
-- Produce clean, publishable mathematical components
-- Eventually merge the best elements back into the main `newtons-cathedral` branch
+- Continue comparing and hybridizing G13 constructions
+- Explore geometrically weighted operators on the strict icosahedral embedding
+- Document when to prefer combinatorial vs geometric versions
 
 ---
 Last updated: 2026-06-05 by Grok (on grok-review branch)
