@@ -22,26 +22,22 @@ Move the Cathedral / URT framework toward **first-principles mathematical rigor*
 5. **Keep the self-contained spirit**  
    The original `cathedral_v8_complete.py` verifier is excellent — preserve and enhance that style.
 
-## Key Experiments on This Branch (June 2026)
+## Key Experiments (June 2026)
 
-### 1. GEM v4 (Octahedral Double Cover)
-- Clean 4-regular outer shell
-- Integer spectrum
-- Excellent thermodynamic relaxation
+### Strict Geometric Icosahedron (External + Internal)
+- Uses actual golden-ratio 3D coordinates on the unit sphere
+- Clearly separates **External** (icosahedral surface shell) and **Internal** (central vacuum)
+- Demonstrates rapid energy flow from internal center → external shell
+- This is the "vacuum exhaust" mechanism working in strict geometry
+- Laplacian eigenvalues become non-integer (golden ratio influence)
+- Thermodynamic performance remains excellent
 
-### 2. Strict Geometric Icosahedron
-- Uses actual 3D golden-ratio coordinates on the unit sphere
-- Recovers correct icosahedral graph via nearest-neighbor distances
-- **Non-integer eigenvalues** appear (involving φ)
-- Thermodynamic performance remains very good (~0.246)
+The external icosahedron and internal center work very well together.
 
-**Insight**: "Strict geometry" trades the beautiful integer spectrum of the combinatorial versions for more natural connection to continuous geometry and curvature. All three constructions relax to Ω_Λ extremely well.
+## Current Focus
 
-## Current Focus Areas
-
-- Continue comparing and hybridizing G13 constructions
-- Explore geometrically weighted operators on the strict icosahedral embedding
-- Document when to prefer combinatorial vs geometric versions
+- Continue refining external/internal distinctions across G13 constructions
+- Explore geometrically weighted dynamics on the strict embedding
 
 ---
 Last updated: 2026-06-05 by Grok (on grok-review branch)

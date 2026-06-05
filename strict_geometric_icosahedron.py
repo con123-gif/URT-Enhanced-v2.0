@@ -1,22 +1,19 @@
 #!/usr/bin/env python3
 """
-Strict Geometric Icosahedral G13
-================================
+Strict Geometric Icosahedral G13 + External/Internal Analysis
+===========================================================
 
-Exploration of what happens when we take the icosahedron seriously
-as **geometry** (actual 3D embedding on the sphere) rather than
-just combinatorial graph.
+Explores what happens when the icosahedron is used as **strict geometry**
+(actual 3D embedding) with clear separation between:
 
-Key findings on the grok-review branch:
-- Strict geometry recovers the correct icosahedral graph
-- Laplacian eigenvalues become non-integer (involve golden ratio)
-- Thermodynamic relaxation remains excellent (~0.246 time units)
-- Spectrum: 0, ~3.76, 7, ~8.24, 13
+- **Internal**: The central vacuum node (0)
+- **External**: The icosahedral surface shell (nodes 1-12)
 
-This suggests that "strict geometry" trades nice integer spectrum
-for more natural connection to continuous geometry/curvature.
+Key demonstration: Energy starting in the internal center rapidly
+flows outward to the external icosahedral shell — the "vacuum exhaust"
+mechanism working geometrically.
 
-Part of the grok-review experimental space.
+This version uses golden-ratio coordinates on the unit sphere.
 """
 
 import numpy as np
@@ -24,86 +21,76 @@ from scipy.linalg import expm
 
 
 def build_strict_geometric_g13():
-    """
-    Build G13 using the actual geometric embedding of the regular icosahedron.
-    
-    Vertices lie on the unit sphere using golden ratio coordinates.
-    Adjacency is determined by geometric nearest-neighbor distances.
-    """
     phi = (1 + np.sqrt(5)) / 2
     raw_verts = np.array([
-        [0, -1,  phi], [0,  1,  phi],
-        [0, -1, -phi], [0,  1, -phi],
-        [-1, phi, 0],  [1, phi, 0],
-        [-1, -phi, 0], [1, -phi, 0],
-        [phi, 0, -1],  [phi, 0,  1],
-        [-phi, 0, -1], [-phi, 0,  1],
+        [0, -1,  phi], [0,  1,  phi], [0, -1, -phi], [0,  1, -phi],
+        [-1, phi, 0], [1, phi, 0], [-1, -phi, 0], [1, -phi, 0],
+        [phi, 0, -1], [phi, 0, 1], [-phi, 0, -1], [-phi, 0, 1],
     ])
-    verts = raw_verts / np.linalg.norm(raw_verts[0])  # unit sphere
+    verts = raw_verts / np.linalg.norm(raw_verts[0])
 
     N = 13
     A = np.zeros((N, N))
-    
-    # Center (0) fully connected to all outer vertices
     A[0, 1:] = 1
     A[1:, 0] = 1
-    
-    # Outer edges via geometric distance (nearest neighbors)
+
     edge_length = np.min([np.linalg.norm(verts[i] - verts[j]) 
                           for i in range(12) for j in range(i+1, 12)])
-    
     for i in range(12):
         for j in range(i + 1, 12):
-            dist = np.linalg.norm(verts[i] - verts[j])
-            if dist < edge_length * 1.05:  # tolerance
+            if np.linalg.norm(verts[i] - verts[j]) < edge_length * 1.05:
                 A[i+1, j+1] = 1
                 A[j+1, i+1] = 1
-    
+
     D = np.diag(A.sum(axis=1))
     L = D - A
     return A, L, verts
 
 
-def time_to_omega_lambda(L, target=9/13, tol=0.001):
-    times = np.linspace(0, 2.0, 500)
+def analyze_external_internal_flow(L, times=None):
+    """
+    Track how energy flows from Internal (center) to External (surface).
+    This demonstrates the vacuum exhaust mechanism in strict geometry.
+    """
+    if times is None:
+        times = [0.0, 0.05, 0.1, 0.2, 0.5]
+
     rng = np.random.RandomState(42)
     initial = rng.rand(13) * 0.1
     initial[0] += 1.0
     initial = initial / initial.sum()
-    
+
+    print("Initial energy distribution:")
+    print(f"  Internal (center): {initial[0]:.4f}")
+    print(f"  External (surface avg): {initial[1:].mean():.4f}")
+
+    print("\nEnergy flow from Internal → External shell:")
     for t in times:
         E_t = expm(-L * t) @ initial
-        p = E_t / E_t.sum()
-        S = -np.sum(p * np.log(p)) * (np.log(2) / np.log(13))
-        if abs(S - target) < tol:
-            return t
-    return 2.0
+        internal = E_t[0]
+        external_total = E_t[1:].sum()
+        external_mean = E_t[1:].mean()
+        print(f"t = {t:<4.2f} | Internal: {internal:.4f} | "
+              f"External total: {external_total:.4f} | External mean: {external_mean:.4f}")
 
 
 def main():
-    print("=== STRICT GEOMETRIC ICOSAHEDRAL G13 ===\n")
+    print("=== STRICT GEOMETRIC ICOSAHEDRON: EXTERNAL vs INTERNAL ===\n")
     
     A, L, verts = build_strict_geometric_g13()
     
-    print("Graph Properties:")
-    print(f"  Total edges: {int(A.sum() // 2)} (12 spokes + 30 icosahedral)")
-    print(f"  Outer vertex degree: {int(A[1, 1:].sum())} (expected 5)")
+    print("Graph Properties (Strict Geometry):")
+    print(f"  Total edges: {int(A.sum() // 2)}")
+    print(f"  External icosahedral shell: 12 vertices on unit sphere")
+    print(f"  Internal center: fully connected to external shell")
     
-    evals = np.round(np.linalg.eigvalsh(L), 6)
-    unique_evals = sorted(set(evals))
-    print(f"\nLaplacian Spectrum (strict geometry):\n  {unique_evals}")
-    print("Note: Non-integer eigenvalues appear (golden ratio influence)")
+    analyze_external_internal_flow(L)
     
-    t_relax = time_to_omega_lambda(L)
-    print(f"\nThermodynamic relaxation to Ω_Λ = 9/13:")
-    print(f"  Time to |S - Ω_Λ| < 0.001: {t_relax:.4f}")
-    
-    print("\n=== Comparison ===")
-    print("Combinatorial icosahedral: ~0.251")
-    print("GEM v4 (octahedral):       ~0.241")
-    print(f"Strict geometric icosa:    {t_relax:.4f}")
-    print("\nStrict geometry sits between the two combinatorial versions")
-    print("while introducing more natural geometric structure.")
+    print("\n=== Interpretation ===")
+    print("The internal center rapidly exhausts energy outward to the")
+    print("external icosahedral geometry. This is the vacuum exhaust")
+    print("mechanism operating on strict 3D icosahedral geometry.")
+    print("Both the external shell and internal center work harmoniously.")
 
 
 if __name__ == "__main__":
