@@ -22,22 +22,23 @@ Move the Cathedral / URT framework toward **first-principles mathematical rigor*
 5. **Keep the self-contained spirit**  
    The original `cathedral_v8_complete.py` verifier is excellent — preserve and enhance that style.
 
-## Key Experiments (June 2026)
+## Symmetry and Equations Focus (June 2026)
 
-### Strict Geometric Icosahedron (External + Internal)
-- Uses actual golden-ratio 3D coordinates on the unit sphere
-- Clearly separates **External** (icosahedral surface shell) and **Internal** (central vacuum)
-- Demonstrates rapid energy flow from internal center → external shell
-- This is the "vacuum exhaust" mechanism working in strict geometry
-- Laplacian eigenvalues become non-integer (golden ratio influence)
-- Thermodynamic performance remains excellent
+The user is thinking about symmetry and the equations.
 
-The external icosahedron and internal center work very well together.
+### Current Understanding
+- The Laplacian L commutes with the symmetry group of each G13 construction.
+- Eigenvalue multiplicities reflect the dimensions of irreducible representations.
+- The heat equation preserves symmetry subspaces → dynamics respect symmetry.
+- GEM v4 and combinatorial icosahedral show particularly high symmetry (max degeneracy 6).
+- Strict geometric version has slightly lower degeneracy but more natural geometric interpretation.
 
-## Current Focus
+This symmetry structure is what makes the equations clean and the thermodynamic relaxation robust across constructions.
 
-- Continue refining external/internal distinctions across G13 constructions
-- Explore geometrically weighted dynamics on the strict embedding
+## Next Steps on Branch
+- Deeper representation-theoretic analysis if useful
+- Symmetry-reduced effective equations
+- How symmetry influences the choice of G13 for different parts of the framework
 
 ---
 Last updated: 2026-06-05 by Grok (on grok-review branch)
