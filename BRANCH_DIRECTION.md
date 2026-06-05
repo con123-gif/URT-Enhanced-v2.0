@@ -22,23 +22,22 @@ Move the Cathedral / URT framework toward **first-principles mathematical rigor*
 5. **Keep the self-contained spirit**  
    The original `cathedral_v8_complete.py` verifier is excellent — preserve and enhance that style.
 
-## Symmetry and Equations Focus (June 2026)
+## Deeper Layer: Patterns, Structure, and Function
 
-The user is thinking about symmetry and the equations.
+The user is now thinking about what the equations and geometry are *actually describing* — not just their numerical outcomes.
 
-### Current Understanding
-- The Laplacian L commutes with the symmetry group of each G13 construction.
-- Eigenvalue multiplicities reflect the dimensions of irreducible representations.
-- The heat equation preserves symmetry subspaces → dynamics respect symmetry.
-- GEM v4 and combinatorial icosahedral show particularly high symmetry (max degeneracy 6).
-- Strict geometric version has slightly lower degeneracy but more natural geometric interpretation.
+This is a crucial shift. The framework should articulate:
+- **Structural patterns** encoded in G13 (external ordered shell + internal center)
+- **Functional processes** described by the dynamics (symmetry-preserving exhaust from internal to external, relaxation to equilibrium)
+- **Meaningful patterns** in the spectrum and evolution (degenerate modes as distinct behavioral sectors)
 
-This symmetry structure is what makes the equations clean and the thermodynamic relaxation robust across constructions.
+A new document `patterns_structure_function.md` has been added to begin formalizing this perspective.
 
-## Next Steps on Branch
-- Deeper representation-theoretic analysis if useful
-- Symmetry-reduced effective equations
-- How symmetry influences the choice of G13 for different parts of the framework
+## Current Focus Areas
+
+- Continue developing the structural-functional interpretation across constructions
+- Use this lens to evaluate and hybridize different G13 realizations
+- Strengthen the narrative that the equations describe real patterns and processes, not just outputs
 
 ---
 Last updated: 2026-06-05 by Grok (on grok-review branch)
