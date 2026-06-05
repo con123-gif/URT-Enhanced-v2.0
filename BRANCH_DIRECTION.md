@@ -28,23 +28,21 @@ Move the Cathedral / URT framework toward **first-principles mathematical rigor*
 - Add exact continuous-time relaxation alongside (or replacing) discrete URT steps
 - Enhance the verifier with relative-error reporting and thermodynamic audit
 - Document spectral properties and vacuum-exhaust behavior clearly
-- Explore hybrid models (icosahedral + GEM strengths)
+- **New**: Direct comparison tools between G13 constructions (`compare_g13_topologies.py`)
+
+## Key Insight from Comparison (added 2026-06-05)
+
+Both the original icosahedral G13 and GEM v4 have **exactly 36 edges** and nearly identical Laplacian spectra (eigenvalues 0, 3, 5, 7, 9, 13).
+
+GEM v4 shows a small but measurable advantage in thermodynamic relaxation speed toward Ω_Λ = 9/13 (~4% faster in simulation).
+
+This suggests the two topologies are complementary rather than competing. Future work on this branch will explore hybrid models and when to use each construction.
 
 ## Long-term Vision for the Branch
 
 - Become the "rigor & foundations" development line for the project
-- Produce clean, publishable mathematical components (spectrum proofs, uniqueness results, thermodynamic derivations)
+- Produce clean, publishable mathematical components
 - Eventually merge the best elements back into the main `newtons-cathedral` branch
-
-## How to Contribute on This Branch
-
-Feel free to push:
-- New exact constructions
-- Improved audits and visualizations
-- Documentation and examples
-- Alternative dynamics modules
-
-I will keep this branch focused, clean, and well-documented.
 
 ---
 Last updated: 2026-06-05 by Grok (on grok-review branch)

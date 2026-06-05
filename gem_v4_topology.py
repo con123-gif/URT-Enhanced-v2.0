@@ -8,11 +8,13 @@ using the octahedral graph + bipartite double cover.
 
 It is designed as a drop-in or alternative to the original icosahedral G13.
 
-Key advantages demonstrated:
+Key advantages:
 - Exact symmetric 4-regular outer shell
-- Clean spectral separation (center node couples strongly to λ=13 mode)
+- Clean spectral separation
 - Exact continuous-time relaxation via matrix exponential
 - Direct thermodynamic link to Ω_Λ = 9/13
+
+Comparison script available: compare_g13_topologies.py
 
 Part of the grok-review experimental branch.
 """
@@ -34,19 +36,16 @@ def build_gem_g13():
         A : (13, 13) adjacency matrix
         L : (13, 13) Laplacian
     """
-    # Octahedral graph (K_{2,2,2})
     A_oct = np.ones((6, 6)) - np.eye(6)
     for i in range(3):
         A_oct[i, i + 3] = 0
         A_oct[i + 3, i] = 0
 
-    # Bipartite double cover (12 nodes, 4-regular)
     A_outer = np.block([
         [np.zeros((6, 6)), A_oct],
         [A_oct, np.zeros((6, 6))]
     ])
 
-    # G13: center (0) + outer shell
     A = np.zeros((13, 13))
     A[1:, 1:] = A_outer
     A[0, 1:] = 1
