@@ -22,22 +22,25 @@ Move the Cathedral / URT framework toward **first-principles mathematical rigor*
 5. **Keep the self-contained spirit**  
    The original `cathedral_v8_complete.py` verifier is excellent — preserve and enhance that style.
 
-## Deeper Layer: Patterns, Structure, and Function
+## Deepest Foundations: π, φ, and e
 
-The user is now thinking about what the equations and geometry are *actually describing* — not just their numerical outcomes.
+The user is now focusing on the deepest seeds of the Cathedral: π, φ, and e.
 
-This is a crucial shift. The framework should articulate:
-- **Structural patterns** encoded in G13 (external ordered shell + internal center)
-- **Functional processes** described by the dynamics (symmetry-preserving exhaust from internal to external, relaxation to equilibrium)
-- **Meaningful patterns** in the spectrum and evolution (degenerate modes as distinct behavioral sectors)
+These three constants are being interpreted not merely as numbers that appear in formulas, but as descriptors of fundamental aspects:
 
-A new document `patterns_structure_function.md` has been added to begin formalizing this perspective.
+- **φ**: Structural elegance and ordered geometry (icosahedral shell)
+- **π**: Curved closure and global coherence
+- **e**: Continuous functional evolution and exponential processes (relaxation/exhaust)
 
-## Current Focus Areas
+A new document `foundational_constants.md` has been added to articulate their roles in generating the patterns, structure, and function of the G13 system.
 
-- Continue developing the structural-functional interpretation across constructions
-- Use this lens to evaluate and hybridize different G13 realizations
-- Strengthen the narrative that the equations describe real patterns and processes, not just outputs
+This deepens the structural-functional interpretation we began in `patterns_structure_function.md`.
+
+## Current Focus
+
+- Continue developing the interpretive layer around the foundational constants
+- Explore how these constants constrain or generate the specific equations in the framework
+- Use this lens to evaluate the different G13 constructions
 
 ---
 Last updated: 2026-06-05 by Grok (on grok-review branch)
