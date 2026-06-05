@@ -2,45 +2,32 @@
 
 **Status**: Experimental / Refinement branch (my dedicated space)
 
-## Core Philosophy
+## Core Philosophy (Updated Framing)
 
-Move the Cathedral / URT framework toward **first-principles mathematical rigor** while preserving its ambitious scope.
+We are exploring **Lytollis’s Law + URT** as a pure mathematical and geometric framework for **structured emergence**.
+
+Physics (if it appears) is **downstream** — it may emerge when this structured dynamics is applied to certain systems, but we do **not** start from physics or try to derive physical constants.
 
 ### Guiding Principles
-1. **Exact constructions over heuristics**  
-   Prefer closed-form or matrix-exponential solutions (e.g., `expm(-Lt)`) when possible.
+1. **Geometry first**: The G13 structure (external icosahedral shell + internal center) is the organizing scaffold.
+2. **Contraction + Exploration balance**: URT provides the globally stable contraction mechanism. Lytollis’s Law quantifies the robustness margin δ that allows bounded, non-trivial attractors.
+3. **What it describes**: Focus on patterns (symmetry sectors, degenerate modes), structure (external/internal hierarchy), and function (internal-to-external exhaust / relaxation to structured attractors).
+4. **Discovery process**: This emerged through exploration. We keep the interpretive layer honest and clear about what is rigorously shown vs. observed patterns.
+5. **No physics-first claims**: We remove derivations of Λ, α, CKM, etc. Those may appear later as emergent consequences, but they are not the starting point or goal.
 
-2. **Transparency in every claim**  
-   Relative errors, spectral weights, thermodynamic gaps must be visible and auditable.
+## Current Focus (June 2026)
 
-3. **Modular G13 topologies**  
-   Support multiple rigorous constructions (original icosahedral + new GEM/octahedral double-cover) so they can be compared directly.
+- Pure mathematical development of URT contraction and Lytollis’s Law (δ = (D_KY − 1)(τ − 2)).
+- Geometric interpretation of G13 as the structure that enables bounded chaotic attractors.
+- Independent testing and clean implementation of the core math.
+- Strengthening the "what the geometry and dynamics actually describe" layer (patterns, structure, function).
 
-4. **Thermodynamic grounding**  
-   Make the link between graph dynamics and cosmological parameters (Ω_Λ = 9/13) explicit and quantifiable.
+## What We Are NOT Doing
+- Deriving or claiming fundamental physical constants as primary results.
+- Positioning this as a Theory of Everything or physics unification framework.
+- Forcing numerical matches to known physics values.
 
-5. **Keep the self-contained spirit**  
-   The original `cathedral_v8_complete.py` verifier is excellent — preserve and enhance that style.
-
-## Deepest Foundations: π, φ, and e
-
-The user is now focusing on the deepest seeds of the Cathedral: π, φ, and e.
-
-These three constants are being interpreted not merely as numbers that appear in formulas, but as descriptors of fundamental aspects:
-
-- **φ**: Structural elegance and ordered geometry (icosahedral shell)
-- **π**: Curved closure and global coherence
-- **e**: Continuous functional evolution and exponential processes (relaxation/exhaust)
-
-A new document `foundational_constants.md` has been added to articulate their roles in generating the patterns, structure, and function of the G13 system.
-
-This deepens the structural-functional interpretation we began in `patterns_structure_function.md`.
-
-## Current Focus
-
-- Continue developing the interpretive layer around the foundational constants
-- Explore how these constants constrain or generate the specific equations in the framework
-- Use this lens to evaluate the different G13 constructions
+The value is in the mathematical structure itself and what kinds of ordered, emergent behavior it naturally produces when built on symmetric geometry.
 
 ---
 Last updated: 2026-06-05 by Grok (on grok-review branch)
