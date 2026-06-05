@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
 """
 ================================================================================
-THE CATHEDRAL FRAMEWORK v8 — COMPLETE COMPUTATION
+THE CATHEDRAL FRAMEWORK v8 — IMPROVED VERIFIER (grok-review branch)
 ================================================================================
 
 All of physics from a single structural requirement: K(D) = D + D^2.
 The integer solution is unique: D = 3.
 
-Once D=3 is forced, all shell integers {V=12, E=30, F=20, q=5, G=60, N=13}
-are fixed, and every observable in:
-  * Standard Model (all 25 parameters)
-  * Cosmology (Omega_m, Omega_Lambda, Omega_b, Omega_DM, sigma_8, H_0 ratio)
-  * Dark sector (m_DM, sigma_DM, w_DE, Lambda/M_Pl^4)
-  * Gravity (G_N, cosmological constant, BH entropy)
-  * Nuclear + Atomic (magic numbers, noble gases, Rydberg)
-  * Anomalies + Predictions (axion, proton radius, neutron lifetime)
+G13 construction:
+- 12 vertices of regular icosahedron on the unit sphere
+- + 1 central vertex (geometric center, labeled 0)
+- Center connected to all 12 (spokes)
+- Outer 12 connected as regular icosahedral graph (30 edges)
 
-follows with sub-percent precision. Zero free parameters.
+This improved version adds:
+- Relative error % for every numeric prediction
+- Clearer URT output with actual vs narrative targets
+- Notes on current discrepancies and suggested refinements
+- Cleaner formatting and more comments on G13
 
-Seed: {pi, phi, e, requirement of K_4 x A_5 shell closure}
-D=3 emerges as the unique integer solution.
+Run: python cathedral_v8_complete.py
 """
 
 import numpy as np
@@ -39,7 +39,6 @@ def forced_dimension():
     """
     kissing = {1: 2, 2: 6, 3: 12, 4: 24, 5: 40, 6: 72, 7: 126, 8: 240}
     admissible = [d for d in kissing if kissing[d] == d + d*d]
-    # D=1: gamma=1, trivial. D=2: hexagonal, split 3+3+1. D=3: icosahedral, 4+9 ✓
     return 3, admissible
 
 
@@ -57,12 +56,12 @@ class Cathedral:
         self.D, self.admissible = forced_dimension()
         D = self.D
 
-        # Layer 1: shell integers forced by D=3
+        # Layer 1: shell integers forced by D=3  (G13 core)
         self.V = D + D*D            # 12 -- spatial surface vertices
-        self.N = 1 + D + D*D        # 13 -- bulk (time + visible + exhaust)
+        self.N = 1 + D + D*D        # 13 -- bulk (time + visible + exhaust) = icosa + center
         self.E = 30                 # edges of icosahedron
         self.F = 20                 # faces
-        self.q = 5                  # coordination
+        self.q = 5                  # coordination number
         self.G = 60                 # |A_5| icosahedral rotation group
 
         # Dimensional decomposition
@@ -103,7 +102,7 @@ class Cathedral:
     # ========================================================================
 
     def alpha_inv(self):
-        """alpha(0)^-1 — bare projector + ARF residues. Tier 2."""
+        """alpha(0)^-1 — bare projector + ARF residues."""
         return (self.N*self.N - self.E - 2) + self.delta_eff**2/pi**2 + self.R_alpha
 
     def alpha_MZ_inv(self):
@@ -145,31 +144,25 @@ class Cathedral:
         return self.m_p_over_m_e() * self.m_e_GeV
 
     # ========================================================================
-    # QUARK MASSES (all six, sub-1%) — NEW in v8
+    # QUARK MASSES
     # ========================================================================
 
     def m_u(self):
-        """m_u = m_p * 2*pi*Delta*delta_star."""
         return 2*pi * self.Delta * self.delta_star * self.m_p_GeV()
 
     def m_d(self):
-        """m_d = m_p * 2*Delta."""
         return 2 * self.Delta * self.m_p_GeV()
 
     def m_s(self):
-        """m_s = m_p * 8*gamma."""
         return 8 * self.gamma * self.m_p_GeV()
 
     def m_c(self):
-        """m_c = m_p * (D+1)/D * (1+gamma)."""
         return (self.D+1)/self.D * (1 + self.gamma) * self.m_p_GeV()
 
     def m_b(self):
-        """m_b = m_p * ((D+1) + delta_cl*D)."""
         return ((self.D+1) + self.delta_cl*self.D) * self.m_p_GeV()
 
     def m_t(self):
-        """m_t = m_p * (N^2 + D*q)."""
         return (self.N**2 + self.D*self.q) * self.m_p_GeV()
 
     # ========================================================================
@@ -177,7 +170,6 @@ class Cathedral:
     # ========================================================================
 
     def _gauge_couplings(self):
-        """Return (g^2, g'^2) at M_Z."""
         alpha_MZ = 1 / self.alpha_MZ_inv()
         s2W = self.sin2_theta_W()
         g2 = 4*pi * alpha_MZ / s2W
@@ -193,27 +185,22 @@ class Cathedral:
         return 0.5 * sqrt(g2 + gp2) * self.v_EW
 
     def lambda_H(self):
-        """lambda_H = delta_star * (D+1) * N * (1+gamma) / (F*D). NEW in v8."""
         return self.delta_star * (self.D+1) * self.N * (1+self.gamma) / (self.F*self.D)
 
     def m_H(self):
-        """Higgs mass from derived lambda_H."""
         return sqrt(2 * self.lambda_H()) * self.v_EW
 
     # ========================================================================
-    # QCD — NEW in v8
+    # QCD
     # ========================================================================
 
     def f_pi(self):
-        """f_pi = m_p * (D-1)/D * delta_star."""
         return self.m_p_GeV() * (self.D-1)/self.D * self.delta_star
 
     def m_pi(self):
-        """m_pi = m_p * delta_star * (1 - gamma - 2*q*eta)."""
         return self.m_p_GeV() * self.delta_star * (1 - self.gamma - 2*self.q*self.eta)
 
     def Lambda_QCD_5flavor(self):
-        """Lambda_QCD(5-flavor MSbar) = m_p * gamma * F * (1 - delta_star*pi/q)."""
         return self.m_p_GeV() * self.gamma * self.F * (1 - self.delta_star*pi/self.q)
 
     # ========================================================================
@@ -221,11 +208,9 @@ class Cathedral:
     # ========================================================================
 
     def sin_theta_C(self):
-        """Cabibbo: (D/N)(1 - (D+1)/(NV))."""
         return self.D/self.N * (1 - (self.D+1)/(self.N*self.V))
 
     def A_CKM(self):
-        """A = phi/2 * (1+2*gamma) — exhaust dressing."""
         return self.phi/2 * (1 + 2*self.gamma)
 
     def rho_bar(self):
@@ -236,7 +221,6 @@ class Cathedral:
         return sqrt(lam_P_minus/self.V - self.rho_bar()**2)
 
     def J_CKM(self):
-        """Jarlskog: A^2 * lambda^6 * eta_bar * (1 - lambda^2/2)."""
         lam = self.sin_theta_C()
         return self.A_CKM()**2 * lam**6 * self.eta_bar() * (1 - lam**2/2)
 
@@ -245,23 +229,18 @@ class Cathedral:
     # ========================================================================
 
     def theta_12_deg(self):
-        """Solar: arctan((N+1)/(N*phi)) * (1 - 2*gamma/pi)."""
         return atan((self.N+1)/(self.N*self.phi)) * (1 - 2*self.gamma/pi) * 180/pi
 
     def theta_13_deg(self):
-        """Reactor: arcsin(delta_star) * (1 + 6*eta)."""
         return asin(self.delta_star) * (1 + 6*self.eta) * 180/pi
 
     def theta_23_deg(self):
-        """Atmospheric: arcsin(sqrt((F+V)/(G-1)) * (1+2*gamma))."""
         return asin(sqrt((self.F+self.V)/(self.G-1)) * (1+2*self.gamma)) * 180/pi
 
     def delta_CP_deg(self):
-        """CP phase: (D+1)*F + (N-D-1)*N."""
         return (self.D+1)*self.F + (self.N-self.D-1)*self.N
 
     def neutrino_masses_eV(self):
-        """(m_2, m_3) in eV, assuming m_1 ~ 0."""
         D, N = self.D, self.N
         m_2 = (2/(4*N+1)) * self.phi * self.delta_star * self.gamma**3 * self.m_e_eV
         m_3 = ((5*N-6)/(4*N+1)) * self.delta_star * self.gamma**3/pi * self.m_e_eV
@@ -318,10 +297,11 @@ class Cathedral:
         return (self.D+1) * self.gamma**self.d64
 
     # ========================================================================
-    # 13-SITE URT SIMULATION (Periodic Table + Consciousness proxy)
+    # 13-SITE URT SIMULATION (G13 dynamics)
     # ========================================================================
 
     def build_13shell_graph(self):
+        """Build adjacency matrix for G13: center (0) + 12 icosahedron vertices."""
         adj = np.zeros((self.N, self.N))
         adj[0, 1:] = 1
         adj[1:, 0] = 1
@@ -333,6 +313,7 @@ class Cathedral:
         return adj
 
     def urt_evolve(self, delta0, steps=60):
+        """Symplectic-like evolution on G13 Laplacian + nonlinear pull to delta_star."""
         adj = self.build_13shell_graph()
         L = np.diag(np.sum(adj, axis=1)) - adj
         delta = delta0.copy()
@@ -353,60 +334,103 @@ class Cathedral:
         return final, filled, integration
 
     # ========================================================================
-    # VERIFICATION
+    # VERIFICATION (with relative errors + URT notes)
     # ========================================================================
 
+    def _rel_error(self, pred, obs):
+        if obs == 0:
+            return float('nan')
+        return abs(pred - obs) / abs(obs) * 100
+
     def verify(self):
-        print("="*80)
-        print("THE CATHEDRAL FRAMEWORK v8 — COMPLETE SELF-CONTAINED COMPUTATION")
-        print("All of physics from N=13, D=3, V=12, E=30, F=20, q=5, |H3|=60")
-        print("Zero free parameters. Zero external data. Pure geometry + URT.")
-        print("="*80)
+        print("="*95)
+        print("THE CATHEDRAL FRAMEWORK v8 — IMPROVED SELF-CONTAINED VERIFIER")
+        print("G13 = Icosahedron (12 verts on sphere) + geometric center (vertex 0)")
+        print("All values derived from D=3 + icosahedral geometry + URT dynamics")
+        print("This is the grok-review branch version with relative errors & notes")
+        print("="*95)
         c = self
-        print(f"\n{'Observable':<32} {'Predicted':>18} {'CODATA/Obs':>18}")
-        print("-"*80)
-        print(f"{'1/α(0)':<32} {c.alpha_inv():>18.10f} {'137.035999084':>18}")
-        print(f"{'1/α(M_Z)':<32} {c.alpha_MZ_inv():>18.6f} {'127.955':>18}")
-        print(f"{'sin²θ_W(M_Z)':<32} {c.sin2_theta_W():>18.6f} {'0.23121':>18}")
-        print(f"{'\u03b1_s(M_Z)':<32} {c.alpha_s_MZ():>18.6f} {'0.1179':>18}")
-        print(f"{'m_μ/m_e':<32} {c.m_mu_over_m_e():>18.8f} {'206.7682830':>18}")
-        print(f"{'m_τ/m_μ':<32} {c.m_tau_over_m_mu():>18.6f} {'16.817':>18}")
-        print(f"{'m_p/m_e':<32} {c.m_p_over_m_e():>18.6f} {'1836.15267343':>18}")
-        print(f"{'m_u (MeV)':<32} {c.m_u()*1000:>18.3f} {'2.16':>18}")
-        print(f"{'m_d (MeV)':<32} {c.m_d()*1000:>18.3f} {'4.70':>18}")
-        print(f"{'m_s (MeV)':<32} {c.m_s()*1000:>18.1f} {'93.5':>18}")
-        print(f"{'m_c (GeV)':<32} {c.m_c():>18.3f} {'1.27':>18}")
-        print(f"{'m_b (GeV)':<32} {c.m_b():>18.3f} {'4.18':>18}")
-        print(f"{'m_t (GeV)':<32} {c.m_t():>18.1f} {'172.76':>18}")
-        print(f"{'m_W (GeV)':<32} {c.m_W():>18.4f} {'80.379':>18}")
-        print(f"{'m_Z (GeV)':<32} {c.m_Z():>18.4f} {'91.188':>18}")
-        print(f"{'m_H (GeV)':<32} {c.m_H():>18.2f} {'125.25':>18}")
-        print(f"{'m_π (MeV)':<32} {c.m_pi()*1000:>18.2f} {'134.977':>18}")
-        print(f"{'f_π (MeV)':<32} {c.f_pi()*1000:>18.1f} {'92.07':>18}")
-        print(f"{'\u039b_QCD(5fl) (MeV)':<32} {c.Lambda_QCD_5flavor()*1000:>18.1f} {'210':>18}")
-        print(f"{'sinθ_C':<32} {c.sin_theta_C():>18.6f} {'0.2245':>18}")
-        print(f"{'\u03b812/\u03b813/\u03b823 (°)':<32} {c.theta_12_deg():>5.2f}/{c.theta_13_deg():>5.2f}/{c.theta_23_deg():>5.2f} {'33.41/8.54/49.1':>18}")
-        print(f"{'\u03b4_CP (°)':<32} {c.delta_CP_deg():>18.1f} {'197':>18}")
-        print(f"{'\u0394m²₂₁ (eV²)':<32} {c.dm21_sq():>18.2e} {'7.53e-5':>18}")
-        print(f"{'\u0394m²₃₂ (eV²)':<32} {c.dm32_sq():>18.2e} {'2.51e-3':>18}")
-        print(f"{'\u03a3 m_ν (meV)':<32} {c.sum_m_nu_meV():>18.1f} {'60':>18}")
-        print(f"{'\u03a9_m':<32} {c.Omega_m():>18.6f} {'0.315':>18}")
-        print(f"{'\u03a9_Λ':<32} {c.Omega_Lambda():>18.6f} {'0.685':>18}")
-        print(f"{'\u03b7_B':<32} {c.eta_B():>18.4e} {'6.1e-10':>18}")
-        print(f"{'n_s':<32} {c.n_s():>18.4f} {'0.965':>18}")
-        print(f"{'r':<32} {c.r_tensor():>18.4f} {'0.003':>18}")
-        print(f"{'H0 ratio (theory/obs)':<32} {c.H0_ratio():>18.4f} {'~1.0':>18}")
-        print(f"{'m_a (μeV)':<32} {c.m_axion_mu_eV():>18.1f} {'58.2 (pred)':>18}")
-        print(f"{'m_DM (eV)':<32} {c.m_DM():>18.2e} {'~10^{-5}':>18}")
-        print(f"{'\u039b/M_Pl⁴':<32} {c.Lambda_over_Mpl4():>18.2e} {'~2.9e-123':>18}")
-        print("-"*80)
+
+        # Header
+        print(f"\n{'Observable':<28} {'Predicted':>16} {'Observed':>16} {'Rel.Err %':>12}")
+        print("-"*95)
+
+        def p(name, pred, obs, fmt=".6f"):
+            err = self._rel_error(pred, obs)
+            print(f"{name:<28} {pred:>16{fmt}} {obs:>16{fmt}} {err:>11.3f}%")
+
+        # QED / Gauge
+        p("1/α(0)", c.alpha_inv(), 137.035999084, ".10f")
+        p("1/α(M_Z)", c.alpha_MZ_inv(), 127.955, ".6f")
+        p("sin²θ_W(M_Z)", c.sin2_theta_W(), 0.23121, ".6f")
+        p("α_s(M_Z)", c.alpha_s_MZ(), 0.1179, ".6f")
+
+        # Leptons
+        p("m_μ/m_e", c.m_mu_over_m_e(), 206.7682830, ".8f")
+        p("m_τ/m_μ", c.m_tau_over_m_mu(), 16.817, ".6f")
+        p("m_p/m_e", c.m_p_over_m_e(), 1836.15267343, ".6f")
+
+        # Quarks
+        p("m_u (MeV)", c.m_u()*1000, 2.16, ".3f")
+        p("m_d (MeV)", c.m_d()*1000, 4.70, ".3f")
+        p("m_s (MeV)", c.m_s()*1000, 93.5, ".1f")
+        p("m_c (GeV)", c.m_c(), 1.27, ".3f")
+        p("m_b (GeV)", c.m_b(), 4.18, ".3f")
+        p("m_t (GeV)", c.m_t(), 172.76, ".1f")
+
+        # EW + Higgs
+        p("m_W (GeV)", c.m_W(), 80.379, ".4f")
+        p("m_Z (GeV)", c.m_Z(), 91.188, ".4f")
+        p("m_H (GeV)", c.m_H(), 125.25, ".2f")
+
+        # QCD
+        p("m_π (MeV)", c.m_pi()*1000, 134.977, ".2f")
+        p("f_π (MeV)", c.f_pi()*1000, 92.07, ".1f")
+        p("Λ_QCD(5fl) (MeV)", c.Lambda_QCD_5flavor()*1000, 210, ".1f")
+
+        # CKM
+        p("sinθ_C", c.sin_theta_C(), 0.2245, ".6f")
+
+        # PMNS (angles)
+        t12, t13, t23 = c.theta_12_deg(), c.theta_13_deg(), c.theta_23_deg()
+        print(f"{'\u03b812/\u03b813/\u03b823 (°)':<28} {t12:>5.2f}/{t13:>5.2f}/{t23:>5.2f}   33.41/8.54/49.1     —")
+
+        p("δ_CP (°)", c.delta_CP_deg(), 197, ".1f")
+
+        # Neutrinos
+        p("Δm²₂₁ (eV²)", c.dm21_sq(), 7.53e-5, ".2e")
+        p("Δm²₃₂ (eV²)", c.dm32_sq(), 2.51e-3, ".2e")
+        p("Σ m_ν (meV)", c.sum_m_nu_meV(), 60, ".1f")
+
+        # Cosmology
+        p("Ω_m", c.Omega_m(), 0.315, ".6f")
+        p("Ω_Λ", c.Omega_Lambda(), 0.685, ".6f")
+        p("η_B", c.eta_B(), 6.1e-10, ".4e")
+        p("n_s", c.n_s(), 0.965, ".4f")
+        p("r", c.r_tensor(), 0.003, ".4f")
+        p("H0 ratio (theory/obs)", c.H0_ratio(), 1.0, ".4f")
+
+        # Dark + Axion
+        p("m_a (μeV)", c.m_axion_mu_eV(), 58.2, ".1f")  # framework's own prediction target
+        p("m_DM (eV)", c.m_DM(), 1e-5, ".2e")
+        p("Λ/M_Pl⁴", c.Lambda_over_Mpl4(), 2.9e-123, ".2e")
+
+        print("-"*95)
+
+        # URT on G13
         final, filled, integration = c.run_urt()
-        print(f"{'URT filled sites (13-shell)':<32} {filled:>18d} {'8-10 (Aufbau)':>18}")
-        print(f"{'Consciousness integration proxy':<32} {integration:>18.2f} {'~0.85 (waking)':>18}")
-        print("="*80)
-        print("All values derived from geometry alone. No fitting. No external data.")
-        print("The Cathedral stands — complete, falsifiable, zero free parameters.")
-        print("="*80)
+        print(f"{'URT filled sites (G13)':<28} {filled:>16d} {'8-10 (narrative target)':>16} {'—':>12}")
+        print(f"{'Consciousness proxy':<28} {integration:>16.2f} {'~0.85 (narrative)':>16} {'—':>12}")
+        print("Note: URT dynamics currently yield 4 filled sites and proxy ~19.2.")
+        print("      These are areas for parameter tuning in future versions while")
+        print("      preserving the geometric G13 foundation.")
+
+        print("="*95)
+        print("All core values derived from geometry alone (D=3 + G13 icosa + center).")
+        print("Some discrepancies (W/Z masses ~0.2-0.4%, H0, URT stats) exist.")
+        print("This improved verifier adds transparency via relative errors.")
+        print("Suggested next steps: tune URT, strengthen derivations, expand tests.")
+        print("="*95)
 
 
 if __name__ == "__main__":
