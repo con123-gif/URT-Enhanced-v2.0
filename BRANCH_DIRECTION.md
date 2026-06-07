@@ -23,6 +23,18 @@ Physics (if it appears) is **downstream** — it may emerge when this structured
 - Independent testing and clean implementation of the core math.
 - Strengthening the "what the geometry and dynamics actually describe" layer (patterns, structure, function).
 
+## Cleanup Session (2026-06-07)
+
+Major progress on removing/reframing explicit physics links:
+
+- `pyproject.toml`: Description and keywords updated to pure-math framing.
+- `newtons_cathedral/__init__.py`: Docstring reframed to emphasize mathematical focus; physics quantities noted as historical/downstream.
+- `newtons_cathedral/sectors.py`: Physical interpretations section rewritten as mathematical decomposition + "possible downstream mappings" (not primary claims).
+- `predictions.py`: Moved in full to `legacy/predictions_legacy.py` with deprecation header. Original file deleted from the package.
+- Created `legacy/` directory with README explaining its purpose.
+
+The implementation layer is now significantly cleaner. Remaining physics-named modules (electroweak.py, cosmology.py, etc.) still exist but their role is de-emphasized. Future work can continue isolating or reframing them as needed.
+
 ## What We Are NOT Doing
 
 - Deriving or claiming fundamental physical constants as primary results.
@@ -32,11 +44,5 @@ Physics (if it appears) is **downstream** — it may emerge when this structured
 The value is in the mathematical structure itself and what kinds of ordered, emergent behavior it naturally produces when built on symmetric geometry.
 
 ---
-
-**Session note (2026-06-07 by Grok)**: 
-- Confirmed working exclusively on `grok-review` branch.
-- Initiating alignment refactor: README.md and documentation updated to pure-math framing.
-- Next: Review and refactor `newtons_cathedral/` package modules toward geometry/math core (foundations, graph, geometry, dynamics, lorentz as mathematical structures). Physics-named modules will be isolated or reframed.
-- User directive: "You are only allowed to change this branch but do as you like."
 
 Last updated: 2026-06-07 by Grok (on grok-review branch)
