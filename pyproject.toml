@@ -1,32 +1,34 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "newtons-cathedral"
-version = "0.2.0"
-description = "Physics from D = 3 alone — zero free parameters."
+version = "0.3.0"
+description = "G₁₃ Cathedral: Pure mathematical framework for structured emergence via URT contraction and Lytollis’s Law on centered icosahedral geometry (D=3)."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
 authors = [{ name = "Cathedral collaborators" }]
-keywords = ["physics", "icosahedral", "standard-model", "cosmology"]
+keywords = ["geometry", "graph-theory", "spectral-geometry", "dynamical-systems", "structured-emergence", "icosahedral", "G13"]
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
-    "Topic :: Scientific/Engineering :: Physics",
-]
-dependencies = [
-    "numpy>=1.24",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",  # kept for discoverability only
 ]
 
-[project.optional-dependencies]
-dev = ["pytest>=7"]
+[project.urls]
+Homepage = "https://github.com/con123-gif/URT-Enhanced-v2.0"
+Documentation = "https://github.com/con123-gif/URT-Enhanced-v2.0/blob/grok-review/README.md"
+Repository = "https://github.com/con123-gif/URT-Enhanced-v2.0"
 
 [tool.setuptools.packages.find]
-include = ["newtons_cathedral*"]
+where = ["."]
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = "test_*.py"
-addopts = "-q"
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
