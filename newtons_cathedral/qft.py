@@ -1,6 +1,7 @@
 """
 Quantum field theory on G_{13} — propagators, Feynman pole masses,
-one-loop finiteness.
+one-loop finiteness.  Mathematical resonant mode dynamics on the
+centered icosahedral graph.
 
 The Cathedral path integral on the 13-vertex graph:
 
@@ -8,7 +9,15 @@ The Cathedral path integral on the 13-vertex graph:
     S[δ]  =  ∫ dt  [ ½ |δ̇|²  −  V(δ) ]
 
 Hessian at δ★:  H = (1 + δ★²) I + L_{G_{13}}
-Feynman pole masses:  m_k = √( (1+δ★²) + λ_k )
+
+The Laplacian eigenvalues λ_k of G_{13} define the **resonant frequencies**
+of the geometric scaffold.  Pole masses m_k = √((1+δ★²) + λ_k)
+represent the energy scales of the resonant modes.
+
+Excitations (sources J or perturbations) create energy configurations
+whose localization or propagation emerges from mode decomposition.
+The URT contraction + Lytollis margin δ keeps these resonant states
+bounded and non-trivial.
 
 One-loop self-energy bubbles are UV-finite (finite spectrum, no UV cutoff needed).
 
@@ -25,16 +34,21 @@ from .graph import laplacian
 
 
 def hessian() -> np.ndarray:
+    """Hessian of the Cathedral action at the fixed point δ★."""
     return (1.0 + DELTA_STAR ** 2) * np.eye(N) + laplacian()
 
 
 def pole_masses() -> np.ndarray:
+    """Pole masses of the resonant modes: m_k = √((1 + δ★²) + λ_k)
+    where λ_k are the Laplacian eigenvalues (resonant frequencies of G_{13}).
+    """
     H = hessian()
     eigs = np.linalg.eigvalsh(H)
     return np.sqrt(eigs)
 
 
 def propagator(p_squared: float, k: int = 0) -> complex:
+    """Propagator for resonant mode k."""
     masses = pole_masses()
     if not 0 <= k < N:
         raise ValueError(k)
@@ -62,6 +76,7 @@ def propagator_4d(k0: float, lambda_spatial: float, mode_mass_sq: float) -> comp
 
 
 def spectral_function(omega: float, k: int = 0) -> float:
+    """Spectral function (resonance lineshape) for mode k."""
     masses = pole_masses()
     if not 0 <= k < N:
         raise ValueError(k)
@@ -99,6 +114,42 @@ def dispersion_relation_K4() -> np.ndarray:
     from .sectors import K4_EIGENVALUES
     m0_sq = 1.0 + DELTA_STAR ** 2
     return np.sort(np.array([sqrt(m0_sq + lam) for lam in K4_EIGENVALUES]))
+
+
+def resonant_energy_spectrum() -> dict:
+    """Return the resonant energy spectrum of G_{13} modes.
+
+    Returns dict with:
+        'frequencies': Laplacian eigenvalues (resonant frequencies)
+        'masses': pole masses (energy scales of resonant modes)
+        'ground_state_energy': lowest non-zero mode energy
+    """
+    eigs = np.sort(np.linalg.eigvalsh(laplacian()))
+    masses = np.sqrt(1.0 + DELTA_STAR ** 2 + eigs)
+    return {
+        'frequencies': eigs,
+        'masses': masses,
+        'ground_state_energy': float(masses[1]) if len(masses) > 1 else float(masses[0])
+    }
+
+
+def mode_superposition_energy(k0: float = 1.0, modes: list[int] | None = None) -> float:
+    """Simple estimate of energy in a superposition of resonant modes.
+
+    Demonstrates how coherent excitation of multiple resonant modes
+    can produce localized or extended energy configurations.
+    """
+    if modes is None:
+        modes = [1, 2, 3]  # lowest non-zero modes
+    spec = resonant_energy_spectrum()
+    masses = spec['masses']
+    energy = 0.0
+    for k in modes:
+        if 0 <= k < len(masses):
+            # Toy model: energy contribution ~ |amplitude|^2 * m_k (illustrative)
+            amp = 1.0 / (1.0 + k)
+            energy += amp**2 * masses[k]
+    return float(energy)
 
 
 def qft_audit() -> bool:
@@ -140,4 +191,6 @@ __all__ = [
     "cubic_coupling_tensor", "functional_determinant",
     "LAMBDA_SQ_MATCH_OVER_MPL_SQ",
     "qft_audit",
+    "resonant_energy_spectrum",
+    "mode_superposition_energy",
 ]
