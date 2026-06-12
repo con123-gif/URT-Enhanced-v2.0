@@ -1,8 +1,10 @@
-# G₁₃ Cathedral
+# G_{13} Cathedral
 
 **A Pure Mathematical Framework for Structured Emergence**
 
-**via URT Contraction + Lytollis’s Law on G₁₃ Geometry**
+**via URT Contraction + Lytollis’s Law on G_{13} Geometry**
+
+**with Resonant Energy States on a 5D Manifold**
 
 ---
 
@@ -12,147 +14,135 @@ This project explores a **geometry-first, pure mathematical framework** for unde
 
 We begin with the single input **D = 3** (spatial dimension) and follow what is rigorously forced by:
 
-- Finite subgroup structure of SO(3) → A₅ (unique non-cyclic simple subgroup)
-- Graph theory on the centered icosahedron **G₁₃** (N = D^{2} + D + 1 = 13 vertices)
-- Spectral geometry, curvature, and dynamics
+- Finite subgroup structure of SO(3) → A_{5}
+- Graph theory on the centered icosahedron **G_{13}** (N = D^{2} + D + 1 = 13 vertices)
+- Spectral geometry and resonant mode dynamics
 
 **Physics is downstream**, not the starting point. Any physical interpretations that may later appear are treated as possible emergent consequences, never as primary claims or goals.
 
 The core value lies in:
-- **Patterns**: symmetry sectors, degenerate modes, spectral structure
-- **Structure**: external/internal hierarchy of G₁₃
-- **Function**: contraction/relaxation dynamics leading to bounded, non-trivial attractors
+- **Patterns**: symmetry sectors, degenerate resonant modes, spectral structure
+- **Structure**: external/internal hierarchy of G_{13}
+- **Function**: contraction/relaxation dynamics leading to bounded, non-trivial resonant attractors
+
+## Core Idea: Resonant Energy States on a 5D Manifold
+
+The framework naturally lifts to a **5-dimensional manifold** view:
+
+- **4D emergent Lorentzian spacetime** arises mathematically from the K_{4} sector of G_{13} (see `lorentz.py`).
+- **The 5th dimension** is the resonant / contraction coordinate, parameterized by the Lytollis margin δ.
+
+The Laplacian eigenvalues of G_{13} are the **resonant frequencies** of the geometric scaffold. Excitations and superpositions of these modes create coherent **resonant energy configurations**.
+
+The URT contraction + Lytollis margin keeps these configurations bounded and non-trivial.
+
+See `five_d_urt_manifold.md` for the detailed pure-math exploration.
 
 ## Core Mathematical Objects
 
-### 1. The G₁₃ Graph (Centered Icosahedron)
+### 1. The G_{13} Graph (Centered Icosahedron)
 
 - 12 outer vertices + 1 center = 13 vertices
-- 36 edges
-- Diameter = 2
-- Highly symmetric (A₅ action)
+- Highly symmetric (A_{5} action)
 
 **Key rigorously computed properties** (see `geometry.py`):
 
-- **Cheeger constant** h(G₁₃) = 7/3 ≈ 2.333 (exact, brute-forced over 4096 subsets)
-- **Ollivier-Ricci curvature**: All 36 edges have positive curvature κ > 0
-- **Heat kernel trace** (closed form): 
-  tr(K(t)) = 1 + 2e^{-3t} + 6e^{-5t} + 2e^{-7t} + e^{-9t} + e^{-13t}
-- **Fiedler eigenvalue** λ_{2} = 3 = D (the slowest spatial mode frequency equals the dimension)
-- **Spectral embedding**: Fiedler vectors recover the 3D icosahedral geometry on S^{2}
-- **Discrete de Rham / Hodge structure** on the graph
+- Cheeger constant, positive Ollivier-Ricci curvature on all edges
+- Closed-form heat kernel
+- Fiedler eigenvalue λ_{2} = 3 = D (slowest spatial resonant mode frequency equals the dimension)
+- Spectral embedding recovers the 3D icosahedral geometry
 
 ### 2. Derived Lorentzian Signature (Mathematical, Not Postulated)
 
-The signature (+, −, −, −) emerges naturally from the K_{4} mode analysis of the Cathedral Lagrangian restricted to the four lowest modes of G₁₃ (see `lorentz.py`).
+The signature (+, −, −, −) emerges from K_{4} mode analysis of the Cathedral Lagrangian (see `lorentz.py`).
 
-**Five-step mathematical derivation**:
-
-1. Cathedral Lagrangian L = ½|δ̇|^{2} − V(δ) near the fixed point δ★
-2. Quadratic expansion 	o Hessian H
-3. Projection onto K_{4} eigenspace (λ ∈ {0, 3, 3, 5})
-4. Fourier transform in time 	o quadratic form in momenta
-5. Read off metric signature from kinetic vs potential terms
-
-This yields g_μν = diag(+1, −1, −1, −1) purely from the graph spectrum and mode structure. The single zero mode corresponds to time; the three positive eigenvalues to space. This is a **mathematical consequence** of D = 3 + connectivity of G₁₃.
+This is a mathematical consequence of D = 3 + connectivity of G_{13}.
 
 ### 3. URT Flow & Lytollis’s Law
 
-- **URT** provides a globally stable contraction mechanism on the state space.
-- **Lytollis’s Law** quantifies the robustness margin:
-  δ = (D_KY − 1)(τ − 2)
-  where the margin allows bounded yet non-trivial attractors (neither collapse to trivial fixed point nor divergence).
+- **URT** provides globally stable contraction.
+- **Lytollis’s Law** quantifies the robustness margin δ that allows bounded resonant attractors.
 
-The interplay between URT contraction and geometric structure of G₁₃ creates rich pattern formation and relaxation dynamics (see `dynamics.py`, `qft.py` for mode evolution).
+### 4. Resonant Mode Dynamics & Energy Configurations
+
+- `qft.py` (enhanced): Propagators, pole masses from Laplacian eigenvalues (resonant frequencies), `resonant_energy_spectrum()`, `mode_superposition_energy()`.
+- `canonical_v4_gem_kernel.py`: O(N) resonant shell cascade using π-e harmonic scaling and thermodynamic bounds (Ω_Λ = 9/13). The cascade traces paths along the resonant (5th) dimension.
+- `resonant_modes_demo.py`: Runnable playground for resonant energy ideas.
 
 ## The Mathematical "Iron Chain" (Forced by Geometry)
 
-Every step below is a mathematical necessity following from D = 3 and A₅ symmetry. No free parameters.
+Every step is a mathematical necessity following from D = 3 and A_{5} symmetry. No free parameters.
 
 ```
-D = 3                                          spatial dimension (sole input)
-────────────────────────────────────────────────
-A_{5} is the unique non-cyclic                   Jordan 1870 theorem on finite subgroups
-    simple subgroup of SO(3)                   of SO(3)
-────────────────────────────────────────────────
-q  =  D + 2  =  5                              5-fold axes
-G  =  (D+1) D q  =  60                         |A_{5}|
-N  =  D^{2} + D + 1  =  13                       centred icosahedron (G_{13})
-────────────────────────────────────────────────
-γ  =  D^{-(D+1)}  =  1/81                      self-referential entropy factor
-φ  =  (1 + √5) / 2                             golden ratio from A_{5} character table
-────────────────────────────────────────────────
-δ★  =  (1 − γ) π / (N φ)  ≈  0.14751       unique fixed point of the system
-δ_cl =  D / F  =  3/20  =  0.15                classical reference rail
-Δ   =  δ_cl − δ★  ≈  2.49 × 10^{-3}          master gap
-────────────────────────────────────────────────
-M★  =  √(2^q π^{2})  =  4π√2  ≈  17.7715        Cathedral mass-scale anchor (mathematical)
+D = 3
+→ A_{5} unique non-cyclic simple subgroup of SO(3)
+→ q = D + 2 = 5 (5-fold axes)
+→ N = D^{2} + D + 1 = 13 (centred icosahedron G_{13})
+→ Laplacian eigenvalues λ_k = resonant frequencies of the scaffold
+→ K_{4} sector → emergent Lorentzian 4D
+→ 5th dimension = resonant margin δ (Lytollis)
+→ URT contraction + Lytollis margin → bounded resonant attractors
 ```
 
 ## Implementation
 
-The framework is implemented as a clean Python package:
+The framework is implemented as a clean Python package plus exploration modules:
 
 ```bash
 newtons_cathedral/
-├── foundations.py      # Core constants, fixed points, iron chain
-├── graph.py             # G_{13} construction & basic properties
-├── geometry.py          # Spectral geometry, curvature, heat kernel, embedding
-├── lorentz.py           # Mathematical derivation of signature from K_{4} modes
-├── dynamics.py          # URT flow, symplectic integration, attractors
-├── qft.py               # Mode evolution & propagator structure (mathematical QFT-like)
-├── uniqueness.py        # Proofs of uniqueness / rigidity
-├── sectors.py           # Symmetry sector decomposition
+├── foundations.py, graph.py, geometry.py, lorentz.py
+├── dynamics.py, qft.py (enhanced with resonant tools)
+├── sectors.py, uniqueness.py
 └── __init__.py
+
+Root-level modules (playground & integration):
+- canonical_v4_gem_kernel.py     # O(N) resonant shell cascade (Gem V4)
+- resonant_modes_demo.py         # Quick demo of resonant energy ideas
+- five_d_urt_manifold.md         # 5D manifold exploration
+- cathedral_v8_complete.py, gem_v4_topology.py, etc.
 ```
-
-Additional root-level exploration scripts:
-- `cathedral_v8_complete.py` — monolithic reference implementation
-- `strict_geometric_icosahedron.py`, `gem_v4_topology.py`, `symmetry_and_equations.py`
-
-Tests live in `tests/` and include audit suites for the core mathematical properties.
 
 ## Current Mathematical Results (Verified)
 
-- Exact Cheeger constant, positive Ollivier-Ricci curvature on all edges
-- Closed-form heat kernel matching eigenvalue multiplicities
-- Fiedler eigenvalue exactly equals D = 3
-- Lorentzian signature derived from graph spectrum (no postulate)
-- Unique fixed point δ★ and master gap Δ
+- Exact Cheeger constant, positive curvature
+- Closed-form heat kernel
+- Fiedler = D theorem
+- Lorentzian signature derived from graph spectrum
+- Unique fixed point δ★ and master gap
 - Bounded attractor behavior under URT + Lytollis margin
+- Resonant energy spectrum and mode superpositions (qft.py)
+- Thermodynamic consistency with Ω_Λ = 9/13 target (Gem kernel)
 
-## What This Is Not (Explicitly)
+## What This Is Not
 
-- A derivation of physical constants as primary goal
-- A Theory of Everything or physics unification attempt
-- An attempt to match experimental numbers by construction
+- Derivation of physical constants as primary goal
+- Theory of Everything or physics unification attempt
+- Attempt to match experimental numbers by construction
 
-Any later exploration of possible physical emergence is secondary and clearly labeled as such.
+Any later physical mapping remains secondary and clearly labeled.
 
 ## Getting Started
 
 ```bash
-# Clone and checkout the grok-review branch
 git clone https://github.com/con123-gif/URT-Enhanced-v2.0.git
 cd URT-Enhanced-v2.0
 git checkout grok-review
-
-# Install in editable mode
 pip install -e .
 
-# Run core audits (example)
-python -c "from newtons_cathedral.geometry import geometry_audit; geometry_audit()"
+# Quick resonant demo
+python resonant_modes_demo.py
+python canonical_v4_gem_kernel.py
 ```
 
 ## Branch Direction & Roadmap
 
-See `BRANCH_DIRECTION.md` for the current guiding principles (pure math focus on G_{13} + URT + Lytollis’s Law).
+See `BRANCH_DIRECTION.md` for guiding principles.
 
-**Active work (June 2026)**:
-- Continued refinement of core mathematical modules
-- Strengthening documentation of patterns, structure, and function
-- Independent verification of all geometric and dynamical claims
-- Gradual isolation or reframing of legacy physics-named modules
+**Current focus (June 2026 on grok-review)**:
+- Resonant energy states and 5D manifold interpretation
+- Integration of Gem V4 resonant shell kernel with spectral tools
+- Playable demos connecting geometry → resonant spectrum → energy configurations
+- Continued pure-math refinement and cross-module consistency
 
 ## License
 
@@ -160,6 +150,6 @@ MIT License
 
 ---
 
-*This branch (`grok-review`) is the dedicated space for mathematical exploration and refinement. All changes here respect the pure-geometry, discovery-honest philosophy.*
+*This branch (`grok-review`) is the dedicated space for mathematical exploration and refinement.*
 
-Last updated: 2026-06-07 by Grok on `grok-review` branch
+Last updated: June 2026 by Grok on `grok-review` branch
