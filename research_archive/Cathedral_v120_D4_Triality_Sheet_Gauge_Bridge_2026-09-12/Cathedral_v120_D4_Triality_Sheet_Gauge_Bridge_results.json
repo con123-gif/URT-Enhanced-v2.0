@@ -1,0 +1,104 @@
+{
+  "schema": "cathedral-v120-d4-triality-sheet-gauge-bridge-v1",
+  "D4_triality": {
+    "triality_matrix": [
+      [
+        "1/2",
+        "1/2",
+        "1/2",
+        "-1/2"
+      ],
+      [
+        "1/2",
+        "1/2",
+        "-1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "-1/2",
+        "1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2"
+      ]
+    ],
+    "orthogonal": true,
+    "determinant": "1",
+    "order": 3,
+    "preserves_24_D4_roots": true,
+    "D4_discriminant_norms": {
+      "v": "1",
+      "s_plus": "1",
+      "s_minus": "1"
+    },
+    "cycle": "v -> s_plus -> s_minus -> v"
+  },
+  "D6_comparison": {
+    "D6_discriminant_norms": {
+      "v": "1",
+      "s_plus": "3/2",
+      "s_minus": "3/2"
+    },
+    "obstruction": "D6 distinguishes v (norm 1) from spinors (norm 3/2), so no order-3 discriminant-form symmetry cycles all three nonzero cosets.",
+    "repair": "Keep D6 as global parent; use a local coordinate D4 subset D6 as the triality-compatible four-sheet layer."
+  },
+  "tetrahedral_reconstruction": {
+    "K_order": 4,
+    "triality_C3_order": 3,
+    "generated_group_order": 12,
+    "all_generated_permutations_even": true,
+    "theorem": "(D4*/D4) semidirect C3_triality ~= A4",
+    "local_quartet": "the four cosets carry the natural A4 permutation module 1+3, matching V4 restricted to the selected A4 vacuum."
+  },
+  "EndV4_sheet_split": {
+    "diagonal_character_by_order": {
+      "1": 4,
+      "2": 0,
+      "3": 1
+    },
+    "offdiagonal_character_by_order": {
+      "1": 12,
+      "2": 0,
+      "3": 0
+    },
+    "decomposition": {
+      "diag4": "1 + 3",
+      "offdiag12": "1 + 1' + 1'' + 3 + 3 + 3",
+      "A5_geometry_4_down_A4": "1 + 3",
+      "A5_gauge_1+3+3'+5_down_A4": "1 + 1' + 1'' + 3 + 3 + 3"
+    },
+    "conclusion": "After A5->A4 selection, diagonal sheet responses are exactly the geometry carrier; off-diagonal inter-sheet transitions are exactly the 12-dimensional gauge carrier as A4 modules."
+  },
+  "quadratic_modes": {
+    "Sym2_V4_down_A4": "2*1 + 1' + 1'' + 2*3",
+    "Sym2_0_V4_down_A4": "1 + 1' + 1'' + 2*3",
+    "Lambda2_V4_down_A4": "2*3",
+    "A5_lift": {
+      "Sym2_0": "4 + 5",
+      "Lambda2": "3 + 3'"
+    }
+  },
+  "conditional_expectation": {
+    "projector_rank": 4,
+    "idempotence_error": 0.0,
+    "joint_ranks": {
+      "diag_rank": 4,
+      "offdiag_rank": 12,
+      "sym_rank": 10,
+      "skew_rank": 6,
+      "diag_intersect_sym_rank": 4,
+      "offdiag_intersect_sym_rank": 6,
+      "offdiag_intersect_skew_rank": 6
+    },
+    "identity": "E_K(X)=1/4 sum_{chi in K^} D_chi X D_chi projects onto diagonal sheet response."
+  },
+  "status": {
+    "exact": "D4 triality, A4 semidirect reconstruction, diagonal/offdiagonal A4 character identities, tensor dimensions/decompositions.",
+    "conditional_physics": "geometry=diagonal and gauge=inter-sheet reading uses the selected A4 vacuum and the existing Cathedral physical dictionary; non-Abelian brackets still come from KO-6 finite algebra, not ordinary M4 commutators."
+  }
+}

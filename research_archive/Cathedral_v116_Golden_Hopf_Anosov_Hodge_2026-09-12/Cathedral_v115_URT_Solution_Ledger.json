@@ -1,0 +1,81 @@
+{
+  "schema": "cathedral-v115-urt-solution-ledger-v1",
+  "observational_targets_used": false,
+  "URT": {
+    "alpha": "sqrt(4/3)",
+    "theta_H": "12/5",
+    "beta": "1/4"
+  },
+  "gauge": {
+    "selection_principle": "minimize condition number of the fully relaxed 19-cycle gauge+finite-Dirac Hessian",
+    "beta_gauge_star": 3.6410791945494996,
+    "condition_number": 7.1691059361457885,
+    "gauge_vacuum_cycle_norm": 0.45792818585357475,
+    "chern_flux_sum_over_2pi": 1.0,
+    "face_flux_minmax": [
+      0.12374315524266363,
+      0.530595979092968
+    ]
+  },
+  "gravity": {
+    "G_geom": "1/(4*pi*13)",
+    "G_geom_numeric": 0.006121343965072897
+  },
+  "infrared_response": {
+    "alpha_root_inverse": 137.035999178195,
+    "mass_ratios_to_top": {
+      "t": 1.0,
+      "b": 0.024891898404204027,
+      "tau": 0.00995675936168161,
+      "c": 0.007467569521261208,
+      "s": 0.0005576459455486934,
+      "mu": 0.0005948223419186063,
+      "u": 1.23921321233043e-05,
+      "d": 2.7761732444228736e-05,
+      "e": 2.863785371579562e-06
+    },
+    "CKM_abs": [
+      [
+        0.9745113108035213,
+        0.2243072980697777,
+        0.003733784760630604
+      ],
+      [
+        0.2241717838769131,
+        0.9736365306453021,
+        0.042177215489201524
+      ],
+      [
+        0.008643866579568438,
+        0.041450479196456565,
+        0.9991031685191168
+      ]
+    ],
+    "CKM_J": 3.141364407663608e-05,
+    "CKM_delta_degrees": 65.9746190096938,
+    "PMNS_abs": [
+      [
+        0.8250652040553665,
+        0.5445893028603722,
+        0.15063167086350154
+      ],
+      [
+        0.40013869742326097,
+        0.5389937000997779,
+        0.7411982285982386
+      ],
+      [
+        0.39894414631811864,
+        0.642579397788946,
+        0.6541676281013171
+      ]
+    ],
+    "PMNS_J": -0.032359467925465235,
+    "PMNS_delta_degrees": 285.4875550870983
+  },
+  "interpretation": {
+    "microscopic_transport": "edgewise Hopf charge-plane connection + Ruelle nonbacktracking history + branch-dependent outer return",
+    "observable_rule": "URT fixed response / Schur elimination, not raw passive one-step eigenframes",
+    "no_new_observation_fit": true
+  }
+}

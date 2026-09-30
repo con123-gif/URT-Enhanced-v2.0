@@ -1,0 +1,126 @@
+{
+  "schema": "cathedral-v119-klein-quadruple-force-bridge-v1",
+  "group_bridge": {
+    "D6_discriminant": "D6*/D6 ~= Z2 x Z2",
+    "selected_vacuum": "A5 -> A4",
+    "local_klein": "the selected A4 has a unique normal K ~= Z2 x Z2",
+    "identification": "D6*/D6 ~= K, unique as an abstract group up to automorphism of K"
+  },
+  "restriction_formula": {
+    "trivial_multiplicity": "(dim + 3 chi(2A))/4",
+    "each_nontrivial_multiplicity": "(dim - chi(2A))/4"
+  },
+  "A5_irrep_restrictions_to_K": {
+    "1": {
+      "chi0": 1,
+      "chia": 0,
+      "chib": 0,
+      "chic": 0
+    },
+    "3": {
+      "chi0": 0,
+      "chia": 1,
+      "chib": 1,
+      "chic": 1
+    },
+    "3p": {
+      "chi0": 0,
+      "chia": 1,
+      "chib": 1,
+      "chic": 1
+    },
+    "4": {
+      "chi0": 1,
+      "chia": 1,
+      "chib": 1,
+      "chic": 1
+    },
+    "5": {
+      "chi0": 2,
+      "chia": 1,
+      "chib": 1,
+      "chic": 1
+    }
+  },
+  "force_sector_restrictions": {
+    "gravity_4": {
+      "chi0": 1,
+      "chia": 1,
+      "chib": 1,
+      "chic": 1
+    },
+    "hypercharge_1": {
+      "chi0": 1,
+      "chia": 0,
+      "chib": 0,
+      "chic": 0
+    },
+    "weak_3": {
+      "chi0": 0,
+      "chia": 1,
+      "chib": 1,
+      "chic": 1
+    },
+    "electroweak_1_plus_3": {
+      "chi0": 1,
+      "chia": 1,
+      "chib": 1,
+      "chic": 1
+    },
+    "color_3p_plus_5": {
+      "chi0": 2,
+      "chia": 2,
+      "chib": 2,
+      "chic": 2
+    },
+    "total_16": {
+      "chi0": 4,
+      "chia": 4,
+      "chib": 4,
+      "chic": 4
+    }
+  },
+  "exact_repackaging": {
+    "gravity": "regular K",
+    "electroweak": "regular K",
+    "color": "2 x regular K",
+    "total": "4 x regular K",
+    "equation": "End(V4)|_K = R_K (gravity) + R_K (1+3 electroweak) + 2 R_K (3'+5 color)"
+  },
+  "quadratic_modes_of_four_sheet_regular_module": {
+    "Sym2": [
+      4,
+      2,
+      2,
+      2
+    ],
+    "Sym2_0": [
+      3,
+      2,
+      2,
+      2
+    ],
+    "Lambda2": [
+      0,
+      2,
+      2,
+      2
+    ],
+    "interpretation": {
+      "Sym2_dimension_10": "4 trivial + 2 of each nontrivial K character",
+      "Sym2_0_dimension_9": "3 trivial + 2 of each nontrivial K character",
+      "Lambda2_dimension_6": "2 of each nontrivial K character, no trivial mode"
+    }
+  },
+  "naive_four_forces_equal_four_characters_no_go": {
+    "target_dimensions": [
+      4,
+      1,
+      3,
+      8
+    ],
+    "solutions_found": 0,
+    "statement": "No 4-dimensional K representation induces an End(V) character decomposition with dimensions 4,1,3,8.",
+    "consequence": "The four sheets do not label the four forces one-to-one. The force split is the A5 recombination of quadratic/cross-sheet transfer modes."
+  }
+}

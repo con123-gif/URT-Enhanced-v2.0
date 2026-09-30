@@ -1,0 +1,145 @@
+{
+  "schema": "cathedral-v116-hodge-polarization-v1",
+  "counts": {
+    "vertices": 12,
+    "edges": 30,
+    "faces": 20,
+    "rotations": 60
+  },
+  "signed_edge_character": {
+    "1A": 30.0,
+    "2A": -2.0,
+    "3A": 0.0,
+    "5A": 0.0,
+    "5B": 0.0
+  },
+  "signed_edge_irrep_multiplicities": {
+    "1": 0.0,
+    "3": 2.0,
+    "3'": 2.0,
+    "4": 2.0,
+    "5": 2.0
+  },
+  "canonical_face_circulation_K": {
+    "rank": 30,
+    "A5_commutator_max_frobenius": 0.0,
+    "irrep_singular_scales": {
+      "3": 3.2360679774997894,
+      "3'": 1.23606797749979,
+      "4": 0.9999999999999998,
+      "5": 2.000000000000001
+    },
+    "exact_scale_identifications": {
+      "3": "1 + sqrt(5) = 2*phi",
+      "3_prime": "sqrt(5) - 1 = 2/phi",
+      "4": "1",
+      "5": "2"
+    },
+    "golden_bridge": {
+      "-K^2/4_on_3": "phi^2 = (3+sqrt(5))/2",
+      "-K^2/4_on_3_prime": "phi^-2 = (3-sqrt(5))/2",
+      "-K^2/2_on_3": "3+sqrt(5)",
+      "-K^2/2_on_3_prime": "3-sqrt(5)",
+      "ratio_of_squared_triplet_scales": "phi^4"
+    }
+  },
+  "polar_complex_structure_J": {
+    "construction": "J = K (-K^2)^(-1/2)",
+    "J2_plus_I_frobenius": 1.2106365333661239e-14,
+    "skew_error_frobenius": 1.022960457478969e-14,
+    "orthogonality_error_frobenius": 1.551449182224327e-14,
+    "A5_commutator_max_frobenius": 1.0937077569339904e-14,
+    "plus_i_character": {
+      "1A": [
+        15.0,
+        -1.3877787807814457e-17
+      ],
+      "2A": [
+        -1.0,
+        2.5882221000835422e-17
+      ],
+      "3A": [
+        0.0,
+        -1.1362739216346792e-17
+      ],
+      "5A": [
+        0.0,
+        1.433773634926409e-17
+      ],
+      "5B": [
+        0.0,
+        -3.780375975905774e-18
+      ]
+    },
+    "plus_i_irrep_multiplicities": {
+      "1": [
+        0.0,
+        4.563151122634681e-18
+      ],
+      "3": [
+        1.0,
+        -2.0573755249580872e-18
+      ],
+      "3'": [
+        1.0,
+        -1.0160041681569406e-17
+      ],
+      "4": [
+        1.0,
+        -6.824237667308224e-18
+      ],
+      "5": [
+        1.0,
+        9.101652671673248e-18
+      ]
+    },
+    "conclusion": "Z_+ = 3 + 3' + 4 + 5, complex dimension 15"
+  },
+  "golden_transfer": {
+    "A": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "eigenvalues": [
+      "phi^2",
+      "phi^-2"
+    ],
+    "A6_mod9": [
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        8
+      ]
+    ],
+    "A12_mod9": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "projective_mod9_conclusion": "[A]^6 = I because A^6 = -I mod 9"
+  },
+  "status": {
+    "proved_by_finite_matrix_verification": [
+      "signed oriented 30-edge A5 module = 2*(3+3'+4+5)",
+      "K is full-rank, skew-symmetric and A5-equivariant",
+      "J = K(-K^2)^(-1/2) obeys J^2=-I and commutes with A5",
+      "the +i polarization is exactly 3+3'+4+5",
+      "the triplet K spectrum reproduces the golden cat-map pair via -K^2/4"
+    ],
+    "important_correction": "The raw DEC Hodge star maps primal 1-cochains to dual 1-cochains; it is not by itself the verified 30x30 complex structure. The explicit 30x30 J verified here is the polar normalization of the canonical oriented-face circulation operator K."
+  }
+}

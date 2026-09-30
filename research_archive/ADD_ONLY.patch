@@ -1,0 +1,419 @@
+diff --git a/newtons_cathedral/higgs_normalization.py b/newtons_cathedral/higgs_normalization.py
+new file mode 100644
+index 0000000..2877e9f
+--- /dev/null
++++ b/newtons_cathedral/higgs_normalization.py
+@@ -0,0 +1,188 @@
++"""Finite-Dirac Higgs normalization audit.
++
++This module is intentionally additive.  It does not alter the existing Cathedral
++ledger.  It records the quantities that are basis-independent outputs of the
++finite Dirac audit and keeps the remaining spectral-action normalization in an
++explicit coefficient rather than assuming a preferred convention.
++"""
++from __future__ import annotations
++
++from dataclasses import dataclass
++from fractions import Fraction
++from math import pi
++from typing import Final
++
++from .foundations import DELTA, GAMMA
++
++# Bare one-generation gauge traces on particle states.  Conjugate doubling
++# multiplies all three by the same factor and therefore leaves the ratios fixed.
++K_Y: Final[Fraction] = Fraction(10, 3)
++K_SU2: Final[Fraction] = Fraction(2, 1)
++K_SU3: Final[Fraction] = Fraction(2, 1)
++
++
++def yukawa_trace_a(delta: float = DELTA) -> float:
++    """Weighted quadratic heat trace Tr(Y^†Y)."""
++    return 16.0 * (100.0 + 183.0 * delta * delta) / 75.0
++
++
++def yukawa_trace_b(delta: float = DELTA) -> float:
++    """Weighted quartic heat trace Tr((Y^†Y)^2)."""
++    return (
++        976.0 / 27.0
++        + (384.0 / 5.0) * delta
++        + (99584.0 / 225.0) * delta**2
++        + (1728.0 / 5.0) * delta**3
++        + (420592.0 / 1875.0) * delta**4
++    )
++
++
++def higgs_shape_ratio(delta: float = DELTA) -> float:
++    """Basis-independent shape invariant b/a² fixed by the finite operator."""
++    a = yukawa_trace_a(delta)
++    return yukawa_trace_b(delta) / (a * a)
++
++
++def gauge_trace_ratio() -> tuple[Fraction, Fraction, Fraction]:
++    """Return k_Y:k_2:k_3 with the nonabelian traces normalized to one."""
++    return K_Y / K_SU2, Fraction(1, 1), K_SU3 / K_SU2
++
++
++def canonical_weak_angle_boundary() -> Fraction:
++    """Bare canonical spectral boundary implied by 5/3:1:1 gauge traces."""
++    return Fraction(3, 8)
++
++
++@dataclass(frozen=True)
++class SpectralActionConvention:
++    """Coefficients of one explicitly declared bosonic trace convention.
++
++    The unnormalized action is written as
++
++        A_W f0 k2 W² + A_H f0 a |D H|² - A_V f0 b |H|⁴.
++
++    All three coefficients must come from the same action, generator
++    normalization, trace domain, and scalar-potential convention.
++    """
++
++    A_W: float
++    A_H: float
++    A_V: float
++
++    def __post_init__(self) -> None:
++        if self.A_W <= 0.0 or self.A_H <= 0.0 or self.A_V <= 0.0:
++            raise ValueError("A_W, A_H and A_V must all be positive")
++
++    @property
++    def normalization_coefficient(self) -> float:
++        """C_norm in λ_H/g₂² = C_norm · b/a²."""
++        return 4.0 * float(K_SU2) * self.A_W * self.A_V / (self.A_H**2)
++
++
++def quartic_over_g2_squared(
++    *,
++    delta: float = DELTA,
++    normalization_coefficient: float,
++) -> float:
++    """Return λ_H/g₂² for an explicit normalization coefficient."""
++    if normalization_coefficient <= 0.0:
++        raise ValueError("normalization_coefficient must be positive")
++    return normalization_coefficient * higgs_shape_ratio(delta)
++
++
++def quartic_boundary(
++    g2_squared: float,
++    *,
++    delta: float = DELTA,
++    normalization_coefficient: float,
++) -> float:
++    """Return λ_H at the declared spectral boundary scale."""
++    if g2_squared <= 0.0:
++        raise ValueError("g2_squared must be positive")
++    return g2_squared * quartic_over_g2_squared(
++        delta=delta,
++        normalization_coefficient=normalization_coefficient,
++    )
++
++
++def cathedral_root_alpha_inverse(delta: float = DELTA) -> float:
++    """Locked scalar-residue inverse coupling used by the current audit."""
++    return 137.0 + (17572.0 / 1215.0) * delta - (9.0 / 65.0) * delta**2
++
++
++def cathedral_quartic_slot(gamma: float = GAMMA) -> float:
++    """Earlier Cathedral quartic slot 1/8 + γ/D with D=3."""
++    return 1.0 / 8.0 + gamma / 3.0
++
++
++def g2_squared_from_alpha(alpha_inverse: float, sin2_theta_w: float) -> float:
++    """Compute g₂² = 4πα/sin²θ_W from a declared scale and convention."""
++    if alpha_inverse <= 0.0:
++        raise ValueError("alpha_inverse must be positive")
++    if not 0.0 < sin2_theta_w < 1.0:
++        raise ValueError("sin2_theta_w must lie strictly between zero and one")
++    return 4.0 * pi / (alpha_inverse * sin2_theta_w)
++
++
++def required_normalization_coefficient(
++    target_lambda: float,
++    g2_squared: float,
++    *,
++    delta: float = DELTA,
++) -> float:
++    """C_norm required to reproduce a declared target λ at a declared g₂."""
++    if target_lambda <= 0.0 or g2_squared <= 0.0:
++        raise ValueError("target_lambda and g2_squared must be positive")
++    return target_lambda / (g2_squared * higgs_shape_ratio(delta))
++
++
++def diagnostic_report() -> dict[str, float]:
++    """Return the exact present status without selecting a convention."""
++    a = yukawa_trace_a()
++    b = yukawa_trace_b()
++    rho = higgs_shape_ratio()
++    alpha_inverse = cathedral_root_alpha_inverse()
++    old_sin2 = 3.0 / 13.0
++    g2_sq = g2_squared_from_alpha(alpha_inverse, old_sin2)
++    target = cathedral_quartic_slot()
++    c_required = required_normalization_coefficient(target, g2_sq)
++    lambda_if_c4 = quartic_boundary(
++        g2_sq,
++        normalization_coefficient=4.0,
++    )
++    return {
++        "delta": DELTA,
++        "a": a,
++        "b": b,
++        "rho_h": rho,
++        "canonical_sin2_theta_w": float(canonical_weak_angle_boundary()),
++        "cathedral_alpha_inverse": alpha_inverse,
++        "cathedral_old_sin2_theta_w": old_sin2,
++        "cathedral_g2_squared": g2_sq,
++        "cathedral_quartic_slot": target,
++        "required_c_norm": c_required,
++        "lambda_if_c_norm_4": lambda_if_c4,
++        "relative_slot_gap_if_c_norm_4": (target - lambda_if_c4) / target,
++    }
++
++
++def higgs_normalization_audit() -> bool:
++    """Pin the finite traces and the normalization diagnostic."""
++    report = diagnostic_report()
++    checks = [
++        abs(report["delta"] - 0.002489189840420375) < 1.0e-15,
++        abs(report["a"] - 21.33357522775238) < 1.0e-12,
++        abs(report["b"] - 36.34206561805763) < 1.0e-12,
++        abs(report["rho_h"] - 0.07985136067642659) < 1.0e-14,
++        gauge_trace_ratio() == (Fraction(5, 3), Fraction(1, 1), Fraction(1, 1)),
++        canonical_weak_angle_boundary() == Fraction(3, 8),
++        abs(report["required_c_norm"] - 4.069095184887046) < 1.0e-12,
++        abs(report["lambda_if_c_norm_4"] - 0.12692278796229) < 1.0e-12,
++    ]
++    return all(checks)
++
++
++if __name__ == "__main__":
++    for key, value in diagnostic_report().items():
++        print(f"{key:36s} = {value:.15g}")
++    print("audit_passes", higgs_normalization_audit())
+diff --git a/research/higgs_normalization/README.md b/research/higgs_normalization/README.md
+new file mode 100644
+index 0000000..0e5e4e6
+--- /dev/null
++++ b/research/higgs_normalization/README.md
+@@ -0,0 +1,158 @@
++# Higgs normalization audit
++
++This directory is an **additive research workspace**. It does not replace, rename, or modify any existing Cathedral file.
++
++## Exact finite-operator outputs
++
++The Cathedral finite Dirac audit fixes
++
++\[
++\Delta=\frac{3}{20}-\frac{(1-1/81)\pi}{13\phi},
++\qquad \phi=\frac{1+\sqrt5}{2},
++\]
++
++and
++
++\[
++a(\Delta)=\operatorname{Tr}(Y^\dagger Y)
++=\frac{16}{75}\left(100+183\Delta^2\right),
++\]
++
++\[
++\begin{aligned}
++b(\Delta)&=\operatorname{Tr}\!\left[(Y^\dagger Y)^2\right]\\
++&=\frac{976}{27}+\frac{384}{5}\Delta
+++\frac{99584}{225}\Delta^2
+++\frac{1728}{5}\Delta^3
+++\frac{420592}{1875}\Delta^4.
++\end{aligned}
++\]
++
++Numerically,
++
++\[
++a=21.33357522775238\ldots,
++\qquad
++b=36.34206561805763\ldots,
++\]
++
++so
++
++\[
++\boxed{
++\rho_H=\frac{b}{a^2}=0.07985136067642659\ldots
++}
++\]
++
++is the basis-independent Higgs shape invariant fixed by the finite operator.
++
++## Gauge trace
++
++For one Standard-Model generation of particle states,
++
++\[
++k_Y=\frac{10}{3},\qquad k_2=2,\qquad k_3=2,
++\]
++
++hence
++
++\[
++k_Y:k_2:k_3=\frac53:1:1.
++\]
++
++The canonical bare spectral boundary is therefore
++
++\[
++g_3^2=g_2^2=\frac53g_1^2,
++\qquad
++\sin^2\theta_W=\frac38.
++\]
++
++This means the older Cathedral value \(3/13\) is not the bare gauge coefficient of the canonical finite trace. It must arise through a separately derived normalization, running, or threshold mechanism.
++
++## Canonical normalization without assuming the prefactor
++
++Write one declared bosonic trace convention as
++
++\[
++\mathcal L_{\rm bos}
++=A_Wf_0k_2W^2+A_Hf_0a|DH|^2-A_Vf_0b|H|^4.
++\]
++
++Gauge normalization gives
++
++\[
++A_Wf_0k_2=\frac{1}{4g_2^2},
++\]
++
++and canonical scalar normalization gives
++
++\[
++H_c=\sqrt{A_Hf_0a}\,H.
++\]
++
++Therefore
++
++\[
++\boxed{
++\frac{\lambda_H}{g_2^2}
++=C_{\rm norm}\frac{b}{a^2},
++\qquad
++C_{\rm norm}=\frac{4k_2A_WA_V}{A_H^2}
++}
++\]
++
++The finite operator fixes \(b/a^2\). The physical quartic additionally requires all three action coefficients to be derived in one fixed convention.
++
++## Diagnostic against the old Cathedral slots
++
++Using
++
++\[
++\alpha_{\rm root}^{-1}=137.035999178195\ldots,
++\qquad
++\sin^2\theta_W=\frac3{13},
++\]
++
++gives
++
++\[
++g_2^2=0.397372026247011\ldots .
++\]
++
++The old quartic slot is
++
++\[
++\lambda_{\rm slot}=\frac18+\frac1{243}
++=0.12911522633744857\ldots .
++\]
++
++Exact equality would require
++
++\[
++\boxed{C_{\rm norm}=4.069095184887046\ldots}
++\]
++
++A convention with \(C_{\rm norm}=4\) yields
++
++\[
++\lambda_H=0.126922787962290\ldots,
++\]
++
++which is \(1.69805\%\) below the old slot. This is a near match, not an exact closure.
++
++## Status
++
++Closed:
++
++- the finite Dirac quadratic and quartic traces;
++- the invariant \(b/a^2\);
++- the bare gauge trace ratio \(5/3:1:1\);
++- the exact normalization identity in terms of \(A_W,A_H,A_V\).
++
++Open:
++
++- deriving \(A_W,A_H,A_V\) from one fully declared spectral-action convention;
++- fixing the physical trace domain, including conjugate and Majorana sectors;
++- specifying the boundary scale and RG evolution;
++- deriving the mechanism that connects the bare \(3/8\) boundary to the older \(3/13\) value.
+diff --git a/tests/test_higgs_normalization.py b/tests/test_higgs_normalization.py
+new file mode 100644
+index 0000000..3ba20c3
+--- /dev/null
++++ b/tests/test_higgs_normalization.py
+@@ -0,0 +1,55 @@
++from fractions import Fraction
++from math import isclose
++
++import pytest
++
++from newtons_cathedral.higgs_normalization import (
++    SpectralActionConvention,
++    canonical_weak_angle_boundary,
++    cathedral_quartic_slot,
++    diagnostic_report,
++    gauge_trace_ratio,
++    higgs_normalization_audit,
++    higgs_shape_ratio,
++    quartic_boundary,
++    required_normalization_coefficient,
++    yukawa_trace_a,
++    yukawa_trace_b,
++)
++
++
++def test_finite_dirac_heat_traces_are_pinned():
++    assert isclose(yukawa_trace_a(), 21.33357522775238, rel_tol=0.0, abs_tol=1e-12)
++    assert isclose(yukawa_trace_b(), 36.34206561805763, rel_tol=0.0, abs_tol=1e-12)
++    assert isclose(higgs_shape_ratio(), 0.07985136067642659, rel_tol=0.0, abs_tol=1e-14)
++
++
++def test_bare_gauge_trace_boundary_is_three_eighths():
++    assert gauge_trace_ratio() == (Fraction(5, 3), Fraction(1), Fraction(1))
++    assert canonical_weak_angle_boundary() == Fraction(3, 8)
++
++
++def test_action_convention_keeps_prefactor_explicit():
++    convention = SpectralActionConvention(A_W=1.0, A_H=2.0, A_V=2.0)
++    assert isclose(convention.normalization_coefficient, 4.0, abs_tol=1e-15)
++
++
++def test_old_cathedral_slot_requires_nontrivial_normalization():
++    report = diagnostic_report()
++    required = required_normalization_coefficient(
++        cathedral_quartic_slot(), report["cathedral_g2_squared"]
++    )
++    assert isclose(required, 4.069095184887046, rel_tol=0.0, abs_tol=1e-12)
++    prediction = quartic_boundary(
++        report["cathedral_g2_squared"], normalization_coefficient=4.0
++    )
++    assert isclose(prediction, 0.12692278796229, rel_tol=0.0, abs_tol=1e-12)
++
++
++def test_invalid_conventions_are_rejected():
++    with pytest.raises(ValueError):
++        SpectralActionConvention(A_W=0.0, A_H=1.0, A_V=1.0)
++
++
++def test_complete_audit():
++    assert higgs_normalization_audit()

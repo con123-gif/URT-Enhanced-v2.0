@@ -1,0 +1,104 @@
+{
+  "schema": "cathedral-v117-final-mathematical-closure-v1",
+  "A4_selection": {
+    "subgroup_order": 12,
+    "subgroup_order_counts": {
+      "1": 1,
+      "2": 3,
+      "3": 8
+    },
+    "Hom_A4_3_to_3prime_nullity": 1,
+    "intertwiner_unitarity_error": 3.9967689149208296e-16,
+    "intertwiner_equivariance_error": 1.085012419272534e-15,
+    "cat_block_A4_commutator_error": 1.3074223126479886e-15,
+    "cat_block_similarity_error": 1.0634192642850825e-15,
+    "cat_block_eigenvalues": [
+      0.3819660112501049,
+      0.3819660112501051,
+      0.38196601125010565,
+      2.6180339887498945,
+      2.618033988749895,
+      2.618033988749896
+    ],
+    "conclusion": "A5->A4 makes 3 and 3' equivalent; the unique normalized intertwiner builds a literal threefold Arnold-cat block."
+  },
+  "K_history_bridge": {
+    "S6_square_minus_5I_error": 2.0768066294871275e-14,
+    "Ltrip_eigenvalues": [
+      3.763932022500206,
+      3.76393202250021,
+      3.7639320225002133,
+      8.236067977499786,
+      8.23606797749979,
+      8.236067977499797
+    ],
+    "identity": "S6=-K^2/2-3I; Ltrip=6I+S6=3I-K^2/2"
+  },
+  "affine_phase_no_go": {
+    "det_A_minus_I": -1,
+    "rank_AT_minus_I": 2,
+    "no_nontrivial_constant_increment_circle_factor": true,
+    "translation_Omega_conjugacy_trivial": true,
+    "conclusion": "The exact irrational URT phase law remains on the URT base; the cat map belongs to the A4-selected internal golden sector."
+  },
+  "mod9_C6": {
+    "projective_orbit_from_phase_axis": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        8
+      ]
+    ],
+    "unit_cycle": [
+      1,
+      2,
+      4,
+      8,
+      7,
+      5
+    ],
+    "rule": "iota(A^k[1:0])=2^k mod 9",
+    "equivariance": "iota(Ax)=2*iota(x) mod 9"
+  },
+  "KMS_cutoff_moments": {
+    "f0": "ln(2)",
+    "f0_numeric": 0.6931471805599453,
+    "f2": "9*zeta(3)/4",
+    "f2_numeric": 2.704628032109087,
+    "f4": "225*zeta(5)/8",
+    "f4_numeric": 29.16359311340728,
+    "general": "Integral x^m h(x) dx=(m+2)m! eta(m+2)"
+  },
+  "KO6_polarization": {
+    "complex_conjugation_exchange_error": 0.0,
+    "identity": "conj(P+)=P- because J is real"
+  },
+  "topological_stability": {
+    "energy": "E=a int|dn|^2 + b int|n^*omega|^2, a,b>0",
+    "bound": "E >= C sqrt(ab) |Q_H|^(3/4)",
+    "note": "Hopf charge alone does not stabilize size for a pure quadratic sigma model; the curvature/Skyrme term is required."
+  },
+  "nature_boundary": {
+    "absolute_scale": "one dimensionful calibration remains unavoidable from a dimensionless seed",
+    "empirical_validation": "internal closure does not prove Nature realizes the model"
+  }
+}

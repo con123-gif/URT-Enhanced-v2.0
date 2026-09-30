@@ -1,0 +1,5 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: branch_probability_model_comparison.csv>index,model,predicted_Ih_probability,expected_Ih_count_out_of_120,difference_from_approx_108,standardized_difference_z
+0,Published sequential-grain geometry,0.8666666666666667,104.0,4.0,1.0741723110591497
+1,Candidate URT retention 12/13,0.9230769230769232,110.76923076923076,-2.7692307692307736,-0.9486832980505157
+2,Reported early plateau (approx.),0.9,108.0,0.0,0.0

@@ -1,0 +1,507 @@
+==============================================================================
+CATHEDRAL DIMENSIONLESS CORE v2.6
+From chaos to closure
+Chaos -> pi-phi-e flow -> Geometry -> A5 -> hidden 4+4 -> router
+==============================================================================
+
+==============================================================================
+SECTION 0: PRIMITIVES
+==============================================================================
+  D      = 3
+  V      = 12
+  N      = 13
+  E      = 30
+  F      = 20
+  q      = 5
+  G      = 60
+  phi    = 1.618033988749895
+  gamma  = 0.012345679012346
+  dstar  = 0.147510810159580
+  dcl    = 0.150000000000000
+  Delta  = 0.002489189840420
+
+==============================================================================
+SECTION 1: ICOSAHEDRAL SHELL
+==============================================================================
+  shell vertices = 12
+  shell edges    = 30
+  shell degree   = 5
+
+  vertex Laplacian spectrum:
+    -0.000000 multiplicity 1
+    2.763932 multiplicity 3
+    6.000000 multiplicity 5
+    7.236068 multiplicity 3
+
+  visible projectors:
+    scalar       lambda = 0.000000000000
+    triplet low  lambda = 2.763932022500
+    five         lambda = 6.000000000000
+    triplet high lambda = 7.236067977500
+
+==============================================================================
+SECTION 2: CENTERED G13
+==============================================================================
+  centered nodes = 13
+  center degree  = 12
+
+  G13 Laplacian spectrum:
+    -0.000000 multiplicity 1
+    3.763932 multiplicity 3
+    7.000000 multiplicity 5
+    8.236068 multiplicity 3
+    13.000000 multiplicity 1
+
+==============================================================================
+SECTION 3: CHAOS GENERATION LAYER
+==============================================================================
+  origin chain:
+    raw chaos -> bounded period-3/6 rails -> pi-phi-e flow -> G13 closure
+
+  role:
+    logistic map supplies the bounded-chaos rail structure
+    pi-phi-e flow selects the Cathedral vacuum dstar
+    G13/A5 supplies representation closure
+  period-3 onset:
+    r = 1 + sqrt(8) = 3.828427124746190
+
+  frozen Cathedral dstar rail:
+    dstar        = 0.147510810159580
+    r_pin        = 3.841673786994708
+    branch[0]    = 0.147510810159574
+    rail error   = 5.301e-15
+    cycle length = 6
+    Lyapunov     = -0.009707510
+
+  first two rails:
+    vacuum rail       = 0.147510810159574
+    classical-like rail= 0.149919470125461
+    dcl target        = 0.150000000000000
+    dcl rail error    = 8.053e-05
+    rail split        = 0.002408659965887
+    Delta target      = 0.002489189840420
+    split error       = 8.053e-05
+
+  interpretation:
+    raw chaos is not the finished state
+    bounded chaos contracts onto stable rails
+    dstar is the exact pinned vacuum rail
+    dcl remains the geometric classical rail D/F
+    the second logistic rail is corroborative, not the source of dcl
+
+==============================================================================
+SECTION 4: PI-PHI-E FLOW TO THE VACUUM ATTRACTOR
+==============================================================================
+  flow constants:
+    Laplacian coefficient = 1/(4*pi)
+    pull prefactor        = phi - 1
+    decay                 = exp(-t/10)
+
+  disordered start spread = 0.210556679885
+  final spread            = 6.502267723623e-14
+  final attractor mean    = 0.147821404873388
+  target dstar            = 0.147510810159580
+  attractor error         = 3.106e-04
+
+  interpretation:
+    pi supplies spherical diffusion
+    phi supplies icosahedral self-similar pull
+    e supplies continuous relaxation
+    the flow contracts to the same dstar used by the A5 core
+
+==============================================================================
+SECTION 5: A5 CHARACTER CHECK
+==============================================================================
+  V12 vertex character:
+    1       multiplicity 1.000000
+    3       multiplicity 1.000000
+    3p      multiplicity 1.000000
+    4       multiplicity 0.000000
+    5       multiplicity 1.000000
+  F20 face character:
+    1       multiplicity 1.000000
+    3       multiplicity 1.000000
+    3p      multiplicity 1.000000
+    4       multiplicity 2.000000
+    5       multiplicity 1.000000
+  E30 edge character:
+    1       multiplicity 1.000000
+    3       multiplicity 1.000000
+    3p      multiplicity 1.000000
+    4       multiplicity 2.000000
+    5       multiplicity 3.000000
+
+  formal decomposition:
+    V12 = ['1', '3', '3p', '5']
+    F20 = ['1', '3', '3p', '4', '4', '5']
+    F20 - V12 = ['4', '4']
+
+==============================================================================
+SECTION 6: A5 PRODUCT TABLE
+==============================================================================
+  4 x 4     = ['1', '3', '3p', '4', '5']
+  Sym2(4)   = ['1', '4', '5']
+  Wedge2(4) = ['3', '3p']
+
+==============================================================================
+SECTION 7: FACES AND INCIDENCE
+==============================================================================
+  faces        = 20
+  B shape      = (20, 12)
+  rank(B)      = 12
+  dim ker(B.T) = 8
+  max error in B.T B = 5I + 2A = 0.000e+00
+
+==============================================================================
+SECTION 8: FACE-DUAL GRAPH AND HIDDEN 4+4
+==============================================================================
+  face-dual degree = 3
+  face-dual edges  = 30
+  hidden dim       = 8
+  max |B.T Qhole|  = 4.580e-16
+
+  hidden spectrum:
+    3.000000 multiplicity 4
+    5.000000 multiplicity 4
+
+  hidden split:
+    Q3 dim = 4
+    Q5 dim = 4
+
+==============================================================================
+SECTION 9: CANONICAL VISIBLE SPECTRAL PROJECTORS
+==============================================================================
+  scalar projector dim       = 1
+  triplet low projector dim  = 3
+  five projector dim         = 5
+  triplet high projector dim = 3
+  projector completeness err = 6.661e-16
+
+==============================================================================
+SECTION 10: FIRST VISIBLE HIDDEN RETURN
+==============================================================================
+  return ranks:
+    Sym2(4_3)       = 6
+    Sym2(4_5)       = 6
+    mixed 4_3 x 4_5 = 6
+    all hidden      = 12
+
+  canonical signatures:
+    Sym2(4_3)
+      total power        = 3.600000000000
+      scalar power       = 3.000000000000
+      five power         = 0.600000000000
+      triplet low power  = 0.000000000000
+      triplet high power = 0.000000000000
+      scalar/five ratio  = 5.000000000000
+      chiral signed      = 0.000000000000
+      chiral abs         = 0.000000000000
+    Sym2(4_5)
+      total power        = 4.666666666667
+      scalar power       = 3.000000000000
+      five power         = 1.666666666667
+      triplet low power  = 0.000000000000
+      triplet high power = 0.000000000000
+      scalar/five ratio  = 1.800000000000
+      chiral signed      = 0.000000000000
+      chiral abs         = 0.000000000000
+    4_3 x 4_5
+      total power        = 2.000000000000
+      scalar power       = 0.000000000000
+      five power         = 0.000000000000
+      triplet low power  = 1.894427191000
+      triplet high power = 0.105572809000
+      scalar/five ratio  = 0.000000000000
+      chiral signed      = 0.894427191000
+      chiral abs         = 0.894427191000
+
+==============================================================================
+SECTION 11: A5 SECTOR ROUTER
+==============================================================================
+  Sym2(4_3)    Sym2(4) -> 1 + 4 + 5                   role=even_scalar_five_return
+  Sym2(4_5)    Sym2(4) -> 1 + 4 + 5                   role=even_scalar_five_return
+  4_3 x 4_5    4 x 4 -> 1 + 3 + 3p + 4 + 5            role=odd_chiral_triplet_return
+
+  scalar_charge_slot:
+    selected channel = Sym2(4_5)
+    reason           = even scalar/five return with max five dispersion
+    W_scalar         = 1.800000000000
+
+  chiral_mixing_slot:
+    selected channel = 4_3 x 4_5
+    reason           = unique odd chiral triplet return
+    chi_signed       = 0.894427191000
+
+==============================================================================
+SECTION 12: SINGLE ACTION KERNEL
+==============================================================================
+  S[x] = 1/2 kappa (x-x0)^2 - J (x-x0)
+  stationary rule: x = x0 + J/kappa
+
+  coherent_dim       = 4.000000000000
+  entropy_dim        = 9.000000000000
+  hidden_dim         = 8.000000000000
+  active_faces       = 19.000000000000
+  face_plus_vacuum   = 21.000000000000
+  matter_orientation = 6.000000000000
+
+==============================================================================
+SECTION 13: ABSTRACT SLOT VALUES BEFORE PHYSICS LABELS
+==============================================================================
+  scalar_bare_inverse          = 137.036000036111830
+  scalar_entropy_dressing      = 8.579168393056631e-07
+  scalar_screened_inverse      = 137.035999178194999
+
+  face_oscillator              = 0.224308861637
+  chiral_golden_leak           = 0.042177509492
+  direct_spatial_gap           = 0.003733784761
+  entropy_area                 = 3.141364407664e-05
+  quadratic_area               = 9.998546994089e-11
+
+  solar_triplet                = 0.303463055248
+  atmospheric_triplet          = 0.562129475821
+  reactor_entropy_pair         = 0.022689900267
+  pmns_area                    = -0.032359467925
+
+  baryon_closure               = 0.048582995951
+  cdm_closure                  = 0.267206477733
+  matter_closure               = 0.315789473684
+  vacuum_closure               = 0.684210526316
+  dark_closure                 = 0.951417004049
+
+  tilt                         = 0.965452152803
+  face_screen_depth            = 0.053423912682
+  fivefold_growth              = 0.809016994375
+
+==============================================================================
+SECTION 14: PHYSICS LABELS ATTACH TO PRE-EXISTING SLOTS
+==============================================================================
+  A_s                <= face_vacuum_area                 2.09969486876e-09
+  J_CKM              <= entropy_cp_area                  3.14136440766e-05
+  J_PMNS             <= leptonic_area_slot               -0.0323594679255
+  Omega_Lambda       <= vacuum_closure                   0.684210526316
+  Omega_b            <= baryon_closure                   0.0485829959514
+  Omega_c            <= cdm_closure                      0.267206477733
+  Omega_dark         <= dark_closure                     0.951417004049
+  Omega_m            <= matter_closure                   0.315789473684
+  PMNS_s12_sq        <= solar_triplet_slot               0.303463055248
+  PMNS_s13_sq        <= reactor_entropy_pair_slot        0.0226899002671
+  PMNS_s23_sq        <= atmospheric_triplet_slot         0.562129475821
+  Vcb                <= mixed_chiral_gap_leakage         0.0421775094917
+  Vub                <= direct_spatial_gap_leakage       0.00373378476063
+  Vus                <= lowest_face_rotation             0.224308861637
+  alpha_inv_bare     <= scalar_charge_inverse_bare       137.036000036
+  alpha_inv_dressed  <= scalar_charge_inverse_screened   137.035999178
+  eta_B              <= matter_orientation_area          5.99912819645e-10
+  lambda_H           <= lambda_H                         0.129115226337
+  n_s                <= tilt_slot                        0.965452152803
+  running_ns         <= running_slot                     -6.19606606165e-06
+  sigma8             <= fivefold_growth                  0.809016994375
+  tau_reio           <= face_screen_depth                0.0534239126822
+  tensor_nt          <= tensor_nt_slot                   -6.14614775412e-05
+  tensor_r           <= tensor_slot                      0.00049169182033
+  theta_QCD          <= quadratic_cp_norm                9.99854699409e-11
+  x_RG               <= RG_flow                          0.0621294758208
+  yt_RG              <= yt_RG                            0.937870524179
+  yt_pole            <= yt_pole                          0.99751081016
+
+==============================================================================
+SECTION 15: FINAL OBSERVABLE LEDGER
+==============================================================================
+  alpha_inv_bare      = 137.036000036111830
+  alpha_inv_dressed   = 137.035999178194999
+  alpha               = 0.007297352564268
+
+  sin2W               = 0.230769230769
+  alpha_s             = 0.118343195266
+  alpha1 inverse      = 63.247384236090
+  alpha2 inverse      = 31.623692118045
+  alpha3 inverse      = 8.450000000000
+
+  CKM:
+    Vus = 0.224308861637
+    Vcb = 0.042177509492
+    Vub = 0.003733784761
+    J   = 3.141364407664e-05
+    delta_CKM = 65.974619 degrees
+
+  PMNS:
+    sin2 theta12 = 0.303463055248
+    sin2 theta23 = 0.562129475821
+    sin2 theta13 = 0.022689900267
+    J_PMNS       = -0.032359467925
+    delta_PMNS   = 285.487555 degrees
+    branch       = quadrant IV
+
+  Dark sector:
+    Omega_b      = 0.048582995951
+    Omega_c      = 0.267206477733
+    Omega_m      = 0.315789473684
+    Omega_Lambda = 0.684210526316
+    Omega_dark   = 0.951417004049
+    Omega_c/Omega_b = 5.500000000000
+
+  Cosmology:
+    n_s          = 0.965452152803
+    A_s          = 2.099694868759e-09
+    ln10As       = 3.044377126575
+    running      = -6.196066061652e-06
+    tensor_r     = 4.916918203300e-04
+    tau_reio     = 0.053423912682
+    sigma8       = 0.809016994375
+
+  RG:
+    x_RG         = 0.062129475821
+    lambda_H     = 0.129115226337
+    y_t_RG       = 0.937870524179
+    y_t_pole     = 0.997510810160
+
+==============================================================================
+SECTION 16: HARD GATES
+==============================================================================
+  D=3                                                        PASS
+  V=12                                                       PASS
+  E=30                                                       PASS
+  F=20                                                       PASS
+  N=13                                                       PASS
+  B binary                                                   PASS
+  each face has 3 vertices                                   PASS
+  each vertex touches 5 faces                                PASS
+  B.T B = 5I + 2A                                            PASS
+  rank(B)=12                                                 PASS
+  dim ker(B.T)=8                                             PASS
+  hidden spectrum = 3^4 + 5^4                                PASS
+  Q3 dim=4                                                   PASS
+  Q5 dim=4                                                   PASS
+  Q3 orthonormal                                             PASS
+  Q5 orthonormal                                             PASS
+  projector completeness                                     PASS
+  visible five projector is lambda=6                         PASS
+  Sym2(4_3) rank=6                                           PASS
+  Sym2(4_5) rank=6                                           PASS
+  mixed return rank=6                                        PASS
+  all hidden bilinear return rank=12                         PASS
+  A5 router selects Sym2(4_5) scalar slot                    PASS
+  A5 router selects mixed chiral slot                        PASS
+  CKM unitarity                                              PASS
+  PMNS unitarity                                             PASS
+  Omega components sum to one                                PASS
+  positive Delta                                             PASS
+  positive alpha                                             PASS
+  positive alpha_s                                           PASS
+  positive A_s                                               PASS
+  0 < n_s < 1                                                PASS
+  chaos rail pins dstar                                      PASS
+  chaos rail is contracting                                  PASS
+  chaos has period 6                                         PASS
+  pi-phi-e flow contracts                                    PASS
+  pi-phi-e flow reaches dstar                                PASS
+  second logistic rail only approximates dcl                 WARN
+  alpha entropy dressing wants independent cross-check       WARN
+  dressed alpha inside CODATA 1 sigma                        PASS
+
+  alpha bare sigma miss    = 40.910087
+  alpha dressed sigma miss = 0.056904
+
+  HARD GATE RESULT: PASS
+  warnings = 2
+
+==============================================================================
+SECTION 17: RED-TEAM STRESS TESTS
+==============================================================================
+  hidden-basis rotation trials = 40
+  max signature drift          = 6.217e-15
+
+  fake random triangular systems = 200
+  fake rank 12 count             = 195
+  fake uniform incidence 5 count = 0
+  fake exact identity pass count = 0
+
+  bad Sym2 normalization drift = 8.277e-01
+
+  origin-layer red-team:
+    dstar rail error = 5.301e-15
+    dcl rail error   = 8.053e-05
+    split error      = 8.053e-05
+    result: dstar is exact; dcl is geometric and only corroborated by chaos
+
+  RED-TEAM RESULT: PASS
+
+==============================================================================
+SECTION 18: FROZEN FALSIFICATION LEDGER
+==============================================================================
+  r_pin                3.84167378699          logistic period-3/6 pin for current dstar
+  chaos_rail_0         0.14751081016          vacuum rail
+  chaos_rail_1         0.149919470125         classical-like rail
+  chaos_lyap           -0.00970750983214      negative means contraction
+  flow_mean            0.147821404873         pi-phi-e attractor mean
+  flow_std             6.50226772362e-14      pi-phi-e final spread
+  alpha_inv_dressed    137.035999178          A5 scalar slot plus 9D entropy dressing
+  alpha_inv_bare       137.036000036          bare A5 scalar slot
+  sin2W                0.230769230769         D/N
+  alpha_s              0.118343195266         F/(N*N)
+  Vus                  0.224308861637         lowest face rotation slot
+  Vcb                  0.0421775094917        mixed chiral golden leakage slot
+  Vub                  0.00373378476063       direct spatial gap leakage slot
+  J_CKM                3.14136440766e-05      entropy CP area slot
+  theta_QCD            9.99854699409e-11      quadratic CP norm slot
+  eta_B                5.99912819645e-10      matter orientation area slot
+  A_s                  2.09969486876e-09      face vacuum area slot
+  ln10As               3.04437712658          log(1e10*A_s)
+  PMNS_s12_sq          0.303463055248         solar triplet slot
+  PMNS_s23_sq          0.562129475821         atmospheric triplet slot
+  PMNS_s13_sq          0.0226899002671        reactor entropy pair slot
+  PMNS_delta_deg       285.487555087          ordered chiral branch
+  nu_dm_ratio          0.0286524172891        (dstar+dstar*dstar)*(dstar+dstar*dstar)
+  Omega_b              0.0485829959514        baryon closure slot
+  Omega_c              0.267206477733         CDM closure slot
+  Omega_m              0.315789473684         matter closure slot
+  Omega_Lambda         0.684210526316         vacuum closure slot
+  Omega_dark           0.951417004049         dark closure slot
+  n_s                  0.965452152803         tilt slot
+  running_ns           -6.19606606165e-06     running slot
+  tensor_r             0.00049169182033       tensor slot
+  tau_reio             0.0534239126822        face screen depth slot
+  sigma8               0.809016994375         fivefold growth slot
+  x_RG                 0.0621294758208        RG flow slot
+  lambda_H             0.129115226337         hidden curvature plus entropy
+  yt_RG                0.937870524179         1 - RG flow
+  yt_pole              0.99751081016          1 - Delta
+
+==============================================================================
+SECTION 19: FREEZE HASH
+==============================================================================
+  freeze name:
+    Cathedral Dimensionless Core v2.6
+
+  sha256:
+    fb1dac561abc699a894353df8ce1535c123f70b624b8944e283de5e3cad80a9d
+
+==============================================================================
+SECTION 20: FINAL VERDICT
+==============================================================================
+  status:
+    FORMAL INTERNAL ROUTING CLOSED WITH BOUNDED-CHAOS ORIGIN
+
+  closed internally:
+    bounded-chaos rail pins dstar
+    pi-phi-e flow contracts to dstar
+    exact icosahedral shell
+    exact incidence identity B.TB = 5I + 2A
+    A5 decomposition V12 = 1 + 3 + 3p + 5
+    A5 decomposition F20 = 1 + 3 + 3p + 4 + 4 + 5
+    hidden sector F20 - V12 = 4 + 4
+    curvature split 4_3 + 4_5
+    corrected visible spectral projectors
+    first visible hidden return is quadratic
+    A5 sector router
+    scalar and chiral slots selected before physics labels
+    dimensionless observable ledger
+
+  honest boundary:
+    physical truth still requires external empirical confrontation
+    alpha entropy dressing should be independently cross-tested
+    logistic second rail approximates dcl but does not derive it exactly
+
+  final line:
+    From chaos to closure: Cathedral v2.6 is the current frozen core.

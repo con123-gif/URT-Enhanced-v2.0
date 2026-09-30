@@ -1,0 +1,37 @@
+FIGURE 4 FIRST-PASS QUANTITATIVE AUDIT
+======================================
+
+Source:
+Published Figure 4 inset from:
+Mbah et al., Early-stage bifurcation of crystallization in a sphere,
+Nature Communications 14, 5299 (2023).
+
+Method:
+The blue fitted curve was traced from the published image by a continuity-
+constrained dynamic-programming path. Axes were calibrated from the labelled
+600-800 simulation-time range and the 100%, 60%, and 20% probability levels.
+A four-parameter decreasing logistic curve was fitted.
+
+Fit:
+  lower asymptote                = -0.01035
+  upper asymptote                = 0.93775
+  midpoint t*                    = 717.649
+  logistic scale                 = 8.612
+  10%-90% transition width       = 37.846
+  midpoint slope                 = -0.02752 probability / t*
+  odds multiplier per t*         = 0.89037
+
+URT comparison:
+  candidate kappa                = 12/13 = 0.92307692
+  one 12/13 odds contraction
+  corresponds to                 = 0.689 t*
+
+Important:
+The conversion from outcome probability to a URT pressure/defect variable has
+not been derived. Therefore the odds comparison is diagnostic only, not a
+confirmation of kappa=12/13.
+
+The principal empirical result is the sharp geometric bifurcation:
+the fitted midpoint is near t*=718, while the paper identifies t*=720 as the
+point at which five grains form a pentagonal-bipyramid nucleus and the pathway
+becomes committed to decahedral closure.
