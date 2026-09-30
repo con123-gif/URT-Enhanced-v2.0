@@ -1,0 +1,208 @@
+{
+  "analytic_admissibility_no_go": {
+    "application": "Exact admissibility must remove an open neighborhood of rough faces, hence it cannot be imposed by a nonzero analytic positive-character face weight.",
+    "primary_source": {
+      "arXiv": "hep-lat/0409017",
+      "authors": "Michael Creutz",
+      "title": "Positivity and topology in lattice gauge theory",
+      "url": "https://arxiv.org/abs/hep-lat/0409017"
+    },
+    "statement": "Nonnegative character coefficients plus analyticity near the identity forbid a nonzero single-face weight from vanishing on an open group region.",
+    "status": "E literature theorem plus exact application"
+  },
+  "certificate": "URT overlap-transfer-admissibility trilemma",
+  "date": "2026-09-04",
+  "exact_singular_family": {
+    "construction": [
+      {
+        "M": 0.1,
+        "alpha_minus": -0.9746255873945612,
+        "alpha_plus": -0.07257196380203645,
+        "exact_identity": "(exp(i phi)+exp(-i phi))/2=cos(phi)=1-M; the four spin components of the selected plane wave lie in ker(X)",
+        "finite_repaired_Wilson_action": true,
+        "future_links_of_each_type": 4,
+        "kinetic_X_residual": 0.0,
+        "lowest_antiperiodic_omega": 0.5235987755982988,
+        "nontrivial_triangle_phase": 0.9020536235925247,
+        "nt": 6,
+        "phi": 0.45102681179626236,
+        "scalar_X_residual": 0.0,
+        "strictly_positive_Wilson_Boltzmann_weight_for_finite_beta": true,
+        "target_1_minus_M": 0.9,
+        "temporal_average_imag": 0.0,
+        "temporal_average_real": 0.9,
+        "triangle_deviation": 0.3799999999999999
+      },
+      {
+        "M": 0.5,
+        "alpha_minus": -1.5707963267948966,
+        "alpha_plus": 0.523598775598299,
+        "exact_identity": "(exp(i phi)+exp(-i phi))/2=cos(phi)=1-M; the four spin components of the selected plane wave lie in ker(X)",
+        "finite_repaired_Wilson_action": true,
+        "future_links_of_each_type": 4,
+        "kinetic_X_residual": 0.0,
+        "lowest_antiperiodic_omega": 0.5235987755982988,
+        "nontrivial_triangle_phase": 2.0943951023931957,
+        "nt": 6,
+        "phi": 1.0471975511965979,
+        "scalar_X_residual": 1.1102230246251565e-16,
+        "strictly_positive_Wilson_Boltzmann_weight_for_finite_beta": true,
+        "target_1_minus_M": 0.5,
+        "temporal_average_imag": 0.0,
+        "temporal_average_real": 0.4999999999999999,
+        "triangle_deviation": 1.5000000000000002
+      },
+      {
+        "M": 0.7909405921071238,
+        "alpha_minus": -1.8837820877700864,
+        "alpha_plus": 0.8365845365734889,
+        "exact_identity": "(exp(i phi)+exp(-i phi))/2=cos(phi)=1-M; the four spin components of the selected plane wave lie in ker(X)",
+        "finite_repaired_Wilson_action": true,
+        "future_links_of_each_type": 4,
+        "kinetic_X_residual": 0.0,
+        "lowest_antiperiodic_omega": 0.5235987755982988,
+        "nontrivial_triangle_phase": 2.7203666243435753,
+        "nt": 6,
+        "phi": 1.3601833121717877,
+        "scalar_X_residual": 2.7755575615628914e-17,
+        "strictly_positive_Wilson_Boltzmann_weight_for_finite_beta": true,
+        "target_1_minus_M": 0.20905940789287625,
+        "temporal_average_imag": 0.0,
+        "temporal_average_real": 0.20905940789287628,
+        "triangle_deviation": 1.9125883279429599
+      },
+      {
+        "M": 1.0,
+        "alpha_minus": -2.0943951023931953,
+        "alpha_plus": 1.0471975511965979,
+        "exact_identity": "(exp(i phi)+exp(-i phi))/2=cos(phi)=1-M; the four spin components of the selected plane wave lie in ker(X)",
+        "finite_repaired_Wilson_action": true,
+        "future_links_of_each_type": 4,
+        "kinetic_X_residual": 0.0,
+        "lowest_antiperiodic_omega": 0.5235987755982988,
+        "nontrivial_triangle_phase": 3.141592653589793,
+        "nt": 6,
+        "phi": 1.5707963267948966,
+        "scalar_X_residual": 6.123233995736766e-17,
+        "strictly_positive_Wilson_Boltzmann_weight_for_finite_beta": true,
+        "target_1_minus_M": 0.0,
+        "temporal_average_imag": 0.0,
+        "temporal_average_real": 6.123233995736766e-17,
+        "triangle_deviation": 2.0
+      },
+      {
+        "M": 1.5,
+        "alpha_minus": -2.6179938779914944,
+        "alpha_plus": 1.570796326794897,
+        "exact_identity": "(exp(i phi)+exp(-i phi))/2=cos(phi)=1-M; the four spin components of the selected plane wave lie in ker(X)",
+        "finite_repaired_Wilson_action": true,
+        "future_links_of_each_type": 4,
+        "kinetic_X_residual": 0.0,
+        "lowest_antiperiodic_omega": 0.5235987755982988,
+        "nontrivial_triangle_phase": 4.188790204786391,
+        "nt": 6,
+        "phi": 2.0943951023931957,
+        "scalar_X_residual": 2.220446049250313e-16,
+        "strictly_positive_Wilson_Boltzmann_weight_for_finite_beta": true,
+        "target_1_minus_M": -0.5,
+        "temporal_average_imag": 0.0,
+        "temporal_average_real": -0.5000000000000002,
+        "triangle_deviation": 1.4999999999999996
+      },
+      {
+        "M": 1.9,
+        "alpha_minus": -3.2141646173918295,
+        "alpha_plus": 2.166967066195232,
+        "exact_identity": "(exp(i phi)+exp(-i phi))/2=cos(phi)=1-M; the four spin components of the selected plane wave lie in ker(X)",
+        "finite_repaired_Wilson_action": true,
+        "future_links_of_each_type": 4,
+        "kinetic_X_residual": 0.0,
+        "lowest_antiperiodic_omega": 0.5235987755982988,
+        "nontrivial_triangle_phase": 5.3811316835870615,
+        "nt": 6,
+        "phi": 2.6905658417935308,
+        "scalar_X_residual": 1.1102230246251565e-16,
+        "strictly_positive_Wilson_Boltzmann_weight_for_finite_beta": true,
+        "target_1_minus_M": -0.8999999999999999,
+        "temporal_average_imag": 0.0,
+        "temporal_average_real": -0.9,
+        "triangle_deviation": 0.3800000000000001
+      }
+    ],
+    "maximum_floating_kinetic_residual": 0.0,
+    "maximum_floating_scalar_residual": 2.220446049250313e-16,
+    "proof_status": "E analytic identity; floating rows are corroboration",
+    "range": "every 0<M<2 and every c_t; c_t multiplies an exactly vanishing term"
+  },
+  "observational_targets_used": false,
+  "scope": "local products of compact-group single-face weights on the repaired spatial-square plus elementary-triangle cell complex",
+  "selected_clock_context": {
+    "M_selected": 0.7909405921071238,
+    "c_t_interval": [
+      0.9779029419996036,
+      1.0
+    ]
+  },
+  "support_lemma": {
+    "consequence": "no volume-uniform positive polar gap on full compact support",
+    "statement": "An ordinary repaired Wilson action is finite on the singular configuration, so exp(-S_g)>0 there for every finite beta. Continuity then places arbitrarily small kernel gaps in positive-weight neighborhoods.",
+    "status": "E"
+  },
+  "trilemma": {
+    "branch_table": [
+      {
+        "analytic_near_identity": true,
+        "branch": "analytic Wilson/heat-kernel face weight",
+        "continuum_status": "standard gauge branch possible; chiral merger unproved",
+        "exact_GW_overlap_at_every_supported_configuration": false,
+        "nonnegative_character_cone": true,
+        "open_set_admissibility": false,
+        "uniform_global_polar_gap": false
+      },
+      {
+        "analytic_near_identity": false,
+        "branch": "compact-support autocorrelation face weight",
+        "continuum_status": "unproved for the nonanalytic weight",
+        "exact_GW_overlap_at_every_supported_configuration": "conditional on that bound",
+        "nonnegative_character_cone": true,
+        "open_set_admissibility": true,
+        "uniform_global_polar_gap": "conditional on a proved plaquette-gap bound"
+      },
+      {
+        "analytic_near_identity": true,
+        "branch": "finite Wilson/domain-wall fermion regulator",
+        "continuum_status": "local positive regulator; exact finite-spacing chirality surrendered",
+        "exact_GW_overlap_at_every_supported_configuration": false,
+        "nonnegative_character_cone": true,
+        "open_set_admissibility": false,
+        "uniform_global_polar_gap": "not required"
+      },
+      {
+        "analytic_near_identity": true,
+        "branch": "almost-everywhere overlap with analytic gauge weight",
+        "continuum_status": "measure-local limiting construction required and unproved",
+        "exact_GW_overlap_at_every_supported_configuration": false,
+        "nonnegative_character_cone": true,
+        "open_set_admissibility": false,
+        "uniform_global_polar_gap": false
+      }
+    ],
+    "incompatible_joint_requirements": [
+      "uniform global gap for the exact polar overlap",
+      "analytic positive-character transfer weight",
+      "exact open-set admissibility"
+    ],
+    "logical_form": "Within the stated face-factor class, analytic positive transfer AND exact open-set admissibility is false; analytic full support also implies failure of a uniform polar gap through the explicit singular family.",
+    "status": "E"
+  },
+  "verdict": {
+    "analytic_full_support_overlap_merger": false,
+    "next_gate": "derive a triangular plaquette-to-kernel gap theorem, then either prove the nonanalytic admissible branch has an OS continuum limit or retain a finite Wilson/domain-wall regulator",
+    "nonanalytic_admissible_overlap_merger": "U",
+    "old_incomplete_parallelogram_action": "F/W",
+    "regulator_branch_selected_by_current_axioms": false,
+    "status": "E regulator trilemma; U viable interacting branch",
+    "theory_of_nature": false,
+    "triangular_face_geometry_repaired": true
+  }
+}

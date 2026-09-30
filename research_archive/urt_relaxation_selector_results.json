@@ -1,0 +1,93 @@
+{
+  "certificate": "URT A4 contraction selector and certified locality",
+  "certified_complex_strip": {
+    "H_squared_real_torus_gap_lower": "0.7560507960904336411007334823714949914830171781416746423890819293474406",
+    "complex_perturbation_upper": "0.7317122482203736291476443536653652249576039442779046922060568323767104",
+    "elementary_transcendental_bound": "sinh(x)<=x/(1-x) for 0<=x<1",
+    "outward_bounds": {
+      "r_lower": "1.16954339716037",
+      "r_upper": "1.16954339716038",
+      "sinh(sqrt(2)tau)_upper": "0.04587741270845644182045422456033928263268262326972655535044737406328604",
+      "sqrt(2)_upper": "1.415",
+      "sqrt(5)_upper": "2.237"
+    },
+    "root_norm_bound": "|alpha.eta| <= sqrt(2)||eta||",
+    "strict_positive_margin": "0.0243385478700600119530891287061297665254132338637699501830250969707302",
+    "strip_radius_proved": 0.031,
+    "theorem": "For every centered complex A4 momentum q=p+i eta with ||eta||<=0.031, F_r(q) is nonzero at the unique minimax root.",
+    "zero_exclusion": true
+  },
+  "comparison_with_complex_strip_proxy": {
+    "H_squared_relaxation_factor_increase_percent": 11.20956146672123,
+    "abs_H_relaxation_factor_increase_percent": 16.003372428104967,
+    "conclusion": "The searched strip maximizer is strictly worse under the URT uniform-contraction objective and is not selected by that rule.",
+    "locality_proxy_kernel": {
+      "Chebyshev_factor_for_H_squared": 0.43785018416512145,
+      "H_squared_maximum": 5.19173322047447,
+      "H_squared_minimum": 0.7935773039217391,
+      "condition_number_H": 2.5577704442181375,
+      "condition_number_H_squared": 6.542189645315849,
+      "optimal_Richardson_factor_for_H_squared": 0.7348250184557319,
+      "optimal_Richardson_factor_for_abs_H": 0.4378501841651215,
+      "optimal_Richardson_step_for_H_squared": 0.33415141818423155,
+      "optimal_Richardson_step_for_abs_H": 0.6310408202059281,
+      "r": 1.3114150071596995
+    },
+    "r_locality_proxy": 1.3114150071596995
+  },
+  "date": "2026-09-04",
+  "exact_selector_theorem": {
+    "derivative_identity": {
+      "combined_numerator": "2(240r^3-392r^2-28r+185)",
+      "consequence": "Every strictly increasing function of K has the same unique minimizer r_star on the proved admissible branch.",
+      "log_derivative": "K'(r)/K(r)=10/(5r-2)+8r/(4r^2-5)-8/(8r-9)",
+      "spectral_ratio": "K(r)=((5r-2)^2(4r^2-5))/(4(8r-9))"
+    },
+    "isolating_interval": [
+      "1.16954339716037",
+      "1.16954339716038"
+    ],
+    "selected_r": 1.169543397160373,
+    "statement": "Optimal scale-free Richardson relaxation of H_r^2, optimal Richardson relaxation of |H_r|, and every strictly monotone condition-number convergence criterion select the same unique r_star.",
+    "stationarity_polynomial": "240r^3-392r^2-28r+185=0",
+    "status": "E conditional on the explicitly formalized URT rule"
+  },
+  "frozen_URT_radial_multiplier_test": {
+    "URT_radial_multiplier": 0.3770906008363131,
+    "difference": 0.00035548111831845697,
+    "minimum_abs_H_Richardson_factor": 0.37744608195463153,
+    "relative_difference_percent": 0.09426941894867813,
+    "verdict": "NO exact equality: the frozen URT radial multiplier lies below the globally minimal normalized kernel factor. The numerical near-match cannot be promoted to an identity."
+  },
+  "input_status": {
+    "exact_prior_input": "The sharp global A4 spectral endpoints and unique minimax stationarity root proved on 2026-09-03.",
+    "formalized_URT_rule": "Select the normalized microscopic member with maximal uniform worst-mode contraction of its positive quadratic relaxation.",
+    "status_warning": "The mathematical consequence is exact. Calling this precise optimization rule the fundamental physical URT axiom is an explicit premise, not an empirical theorem."
+  },
+  "observational_targets_used": false,
+  "phenomenology_gate": "CLOSED",
+  "selected_kernel": {
+    "Chebyshev_factor_for_H_squared": 0.3774460819546316,
+    "H_squared_maximum": 3.7012315007070478,
+    "H_squared_minimum": 0.7560507960904395,
+    "condition_number_H": 2.212573147526558,
+    "condition_number_H_squared": 4.89547993315558,
+    "optimal_Richardson_factor_for_H_squared": 0.6607570507106295,
+    "optimal_Richardson_factor_for_abs_H": 0.37744608195463153,
+    "optimal_Richardson_step_for_H_squared": 0.44870391122343317,
+    "optimal_Richardson_step_for_abs_H": 0.7159809762710868,
+    "r": 1.169543397160373
+  },
+  "what_closes": [
+    "r is unique if URT is explicitly defined by maximal uniform contraction",
+    "r_star has a rigorously nonzero analytic strip and hence an exponential-locality bound",
+    "r_locality_proxy is not a competing selector under that precise URT rule"
+  ],
+  "what_remains_open": [
+    "derivation of the formalized URT rule from one microscopic physical action",
+    "history Mobius parameter and finite wall extent/boundary data",
+    "microscopic gauge-link bulk action",
+    "determinant-line trivialization lambda",
+    "parameter-free phenomenology and empirical tests"
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "certificate": "URT reflected-kernel uniform-contraction selector",
+  "date": "2026-09-04",
+  "exact_flat_direction": {
+    "all_points_have_same_condition_number": 9.597636185642553,
+    "c_t_interval": [
+      0.9779029419996036,
+      1.0
+    ],
+    "exact_interval_formula": "sqrt(2M_*-M_*^2)<=c_t<=1",
+    "gauge_spatial_to_electric_ratio_interval": [
+      4.0,
+      4.365626709229385
+    ],
+    "status": "E conditional on the selected numerical (r,M): c_t is not selected",
+    "sufficient_full_OS_lhs": 0.07107398105657735,
+    "sufficient_full_OS_rhs": 0.04370583602851996,
+    "tau_interval": [
+      1.0,
+      1.0225963713282349
+    ]
+  },
+  "exact_reduction": {
+    "OS_low_height_condition": "0<c_t<=1 and 0<M<=1-sqrt(1-c_t^2), with full R_p>=0",
+    "endpoint_values": "S^2+[rB+1-M-/+C]^2",
+    "maximum_time_face": "y=-1",
+    "minimum_time_face": "y=+1",
+    "monotonicity": "A=rB+1-M>=sqrt(1-c_t^2)>=(1-c_t^2)C, so dF/dy<=0 on [-1,1]",
+    "radicand": "F(y,p)=S^2+c_t^2 C^2(1-y^2)+[rB+1-M-Cy]^2",
+    "random_endpoint_identity_residual": 0.0,
+    "status": "E",
+    "temporal_kinetic_cancels": true
+  },
+  "global_numerical_selector": {
+    "KKT_multiplier": -1.1047573288076105,
+    "KKT_residual": 1.7763568394002505e-15,
+    "active_one_axis_minimum_t": 0.24223834837159616,
+    "active_symmetric_maximum_t": 0.5420141938784075,
+    "condition_number": 9.597636185642553,
+    "equal_active_minimum": 0.6255870202427674,
+    "full_search_maximum": 6.004156622750093,
+    "full_search_maximum_residual": 1.9184653865522705e-13,
+    "full_search_minimum": 0.6255870202427675,
+    "full_search_minimum_OS_margin": 4.85722573273506e-17,
+    "full_search_minimum_residual": 0.0,
+    "maximum_XdaggerX": 6.004156622750285,
+    "minimum_XdaggerX": 0.6255870202427675,
+    "multistarts": {
+      "OS_multistarts": [
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "value": 4.85722573273506e-17,
+          "x": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "maximum": 6.004156622750093,
+      "maximum_multistarts": [
+        {
+          "value": 6.004156622748729,
+          "x": [
+            -0.41244122622712576,
+            -0.4124424112431593,
+            -0.41244154475564776
+          ]
+        },
+        {
+          "value": 6.004156622748788,
+          "x": [
+            -0.41244028878154204,
+            -0.4124405258149113,
+            -0.4124414441975781
+          ]
+        },
+        {
+          "value": 6.004156622745528,
+          "x": [
+            -0.4124413995329421,
+            -0.41244012678502195,
+            -0.4124426874524737
+          ]
+        },
+        {
+          "value": 6.004156622744748,
+          "x": [
+            -0.4124391917005583,
+            -0.4124411085571471,
+            -0.4124417041328582
+          ]
+        },
+        {
+          "value": 6.004156622747412,
+          "x": [
+            -0.4124428671564122,
+            -0.4124418155874563,
+            -0.4124420752222441
+          ]
+        },
+        {
+          "value": 6.004156622747082,
+          "x": [
+            -0.41244261679315,
+            -0.41244216719679005,
+            -0.4124426488474986
+          ]
+        },
+        {
+          "value": 6.004156622745171,
+          "x": [
+            -0.41244289651288946,
+            -0.41244057490703134,
+            -0.4124406049518299
+          ]
+        },
+        {
+          "value": 6.004156622748553,
+          "x": [
+            -0.41243992955984987,
+            -0.4124409345385732,
+            -0.4124409917754307
+          ]
+        },
+        {
+          "value": 6.004156622750093,
+          "x": [
+            -0.4124413934758525,
+            -0.4124416490652474,
+            -0.41244145427105683
+          ]
+        },
+        {
+          "value": 6.004156622749294,
+          "x": [
+            -0.4124421661541202,
+            -0.41244148391526725,
+            -0.4124412087139221
+          ]
+        },
+        {
+          "value": 6.004156622748409,
+          "x": [
+            -0.41244193752004543,
+            -0.4124422452070797,
+            -0.41244235788791406
+          ]
+        },
+        {
+          "value": 6.004156622747967,
+          "x": [
+            -0.4124403012777098,
+            -0.4124420334186898,
+            -0.4124415744968386
+          ]
+        }
+      ],
+      "minimum": 0.6255870202427675,
+      "minimum_OS_margin": 4.85722573273506e-17,
+      "minimum_multistarts": [
+        {
+          "value": 0.6255870202435339,
+          "x": [
+            0.9999999999999682,
+            0.9999999999999181,
+            0.9999999999993783
+          ]
+        },
+        {
+          "value": 0.6255870202432515,
+          "x": [
+            0.9999999999999527,
+            0.9999999999997116,
+            0.9999999999998712
+          ]
+        },
+        {
+          "value": 0.6255870202437525,
+          "x": [
+            0.9999999999996478,
+            0.9999999999994471,
+            0.9999999999999598
+          ]
+        },
+        {
+          "value": 0.6255870202436703,
+          "x": [
+            0.9999999999999043,
+            0.9999999999998406,
+            0.9999999999993887
+          ]
+        },
+        {
+          "value": 0.6255870202438345,
+          "x": [
+            0.9999999999997478,
+            0.9999999999996632,
+            0.9999999999995652
+          ]
+        },
+        {
+          "value": 0.6255870202441249,
+          "x": [
+            0.9999999999999656,
+            0.9999999999997684,
+            -0.8826415940794484
+          ]
+        },
+        {
+          "value": 0.6255870202434263,
+          "x": [
+            0.9999999999998712,
+            0.9999999999999922,
+            0.9999999999995044
+          ]
+        },
+        {
+          "value": 0.625587020243529,
+          "x": [
+            0.9999999999999902,
+            0.9999999999996669,
+            0.9999999999996121
+          ]
+        },
+        {
+          "value": 0.6255870202438252,
+          "x": [
+            0.9999999999999729,
+            0.9999999999997131,
+            -0.8826408990481325
+          ]
+        },
+        {
+          "value": 0.6255870202429923,
+          "x": [
+            -0.8826412231221772,
+            0.9999999999999705,
+            0.9999999999999456
+          ]
+        },
+        {
+          "value": 0.6255870202429069,
+          "x": [
+            0.9999999999999589,
+            -0.8826411073434887,
+            0.9999999999999909
+          ]
+        },
+        {
+          "value": 0.6255870202433674,
+          "x": [
+            0.999999999999627,
+            0.9999999999998817,
+            0.9999999999999156
+          ]
+        }
+      ]
+    },
+    "optimal_contraction_factor": 0.8112786696046844,
+    "optimal_relaxation_step": 0.30167078965621713,
+    "overlap_height_M": 0.7909405921071238,
+    "spatial_wilson_r": 0.35550803492351907,
+    "status": "N strong KKT plus independent multistart; global algebraic proof open"
+  },
+  "inherited_metric_comparison": {
+    "KKT_multiplier": -4.54038149858226,
+    "KKT_residual": 2.6645352591003757e-15,
+    "active_OS_symmetric_t": 0.959478899888848,
+    "active_maximum_t": 0.6326038384749225,
+    "c_t": 0.8944271909999159,
+    "comparison": "strictly worse than the global contraction minimum",
+    "condition_number": 21.786944996428506,
+    "contraction_factor": 0.9122304459718725,
+    "full_search_maximum": 5.844596222074227,
+    "full_search_minimum": 0.2682613933726407,
+    "full_search_minimum_OS_margin": -2.7755575615628914e-16,
+    "maximum_XdaggerX": 5.844596222074994,
+    "minimum_XdaggerX": 0.2682613933726407,
+    "overlap_height_M": 0.517939565367081,
+    "spatial_wilson_r": 0.27409931691525397,
+    "status": "N constrained optimum on the inherited c_t slice",
+    "tau": 1.118033988749895
+  },
+  "observational_targets_used": false,
+  "verdict": {
+    "inherited_A4_metric_is_global_minimizer": false,
+    "next_calculation": "Audit whether a target-blind locality or positive-transfer criterion is constant on, or uniquely resolves, the c_t interval.",
+    "old_A4_root_r_may_be_reused": false,
+    "status": "E continuous no-go for the time aspect; N for numerical bounds",
+    "surviving_exact_modulus": "c_t in a nonzero closed interval",
+    "uniform_contraction_selects_r_and_M": "N within the reflected family",
+    "uniform_contraction_selects_time_aspect": false
+  }
+}

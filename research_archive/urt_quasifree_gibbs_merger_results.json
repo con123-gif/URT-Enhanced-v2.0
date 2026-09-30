@@ -1,0 +1,94 @@
+{
+  "certificate": "URT exact quasi-free Gibbs merger and selection boundary",
+  "date": "2026-09-04",
+  "inverse_selection_theorem": {
+    "consequence": "The variational principle is a bijective response map once V is supplied; it imposes no target-blind choice among faithful Q.",
+    "domain": "every faithful covariance Q with 0<Q<I",
+    "inverse": "V_Q=log((I-Q)Q^-1)-H0",
+    "reconstruction_residual": 1.1388065259043017e-15,
+    "status": "E"
+  },
+  "noncommuting_finite_witness": {
+    "H0_V_commutator_norm": 1.2909944978493066,
+    "covariance_formula_residual": 1.1052102846080025e-16,
+    "dGamma_linearity_residual": 5.551115123125783e-16,
+    "density_merger_residual": 1.1775598535677482e-16,
+    "functional_minimum_direct": 0.013522962827673624,
+    "functional_minimum_formula": 0.013522962827672513,
+    "functional_minimum_residual": 1.1102230246251565e-15,
+    "partition_determinant_residual": 1.7763568394002505e-15
+  },
+  "observational_targets_used": false,
+  "positive_cost_nonuniqueness": {
+    "consequence": "Even restricting the supplied one-particle history cost to positive Grams leaves continuous inequivalent Gibbs states.",
+    "family": "V_gamma=gamma |u><u|, gamma>=0",
+    "samples": [
+      {
+        "covariance_distance_from_gamma_0": 0.0,
+        "covariance_trace": 0.009932036636990021,
+        "gamma": 0.0,
+        "minimum_eigenvalue_V": 0.0
+      },
+      {
+        "covariance_distance_from_gamma_0": 0.000548176995050179,
+        "covariance_trace": 0.009383859641939794,
+        "gamma": 0.25,
+        "minimum_eigenvalue_V": -4.1850932380839913e-17
+      },
+      {
+        "covariance_distance_from_gamma_0": 0.001568125170966799,
+        "covariance_trace": 0.008363911466023211,
+        "gamma": 1.0,
+        "minimum_eigenvalue_V": -1.6740372952335965e-16
+      },
+      {
+        "covariance_distance_from_gamma_0": 0.0024374201354587046,
+        "covariance_trace": 0.007494616501531322,
+        "gamma": 4.0,
+        "minimum_eigenvalue_V": -6.696149180934386e-16
+      }
+    ],
+    "status": "E"
+  },
+  "reflection_positivity_and_locality_boundary": {
+    "finite_result": "H0+V defines a valid finite unitary inner dynamics and its Gibbs state once V and a time normalization are supplied.",
+    "not_implied": "a lattice-local kernel, a reflection operation, Osterwalder-Schrader positivity, a Lorentzian continuation, chirality or anomaly measure",
+    "reason": "The response functional is defined on a static density matrix and is covariant under arbitrary one-particle basis changes; those extra spacetime structures are absent from its premises.",
+    "status": "U pending an independently specified local history/Dirac block"
+  },
+  "second_quantization_scope": {
+    "Fock_dimension": 16,
+    "codimension": 53,
+    "consequence": "A generic number-preserving 16x16 cost, including a generic positive Gram, has no one-particle V whose second quantization it is.",
+    "dGamma_one_body_plus_global_scalar_real_dimension": 17,
+    "identity": "sum_k binomial(4,k)^2=binomial(8,4)=70",
+    "mode_count": 4,
+    "number_preserving_Hermitian_real_dimension": 70,
+    "number_sector_dimensions": [
+      1,
+      4,
+      6,
+      4,
+      1
+    ],
+    "status": "E"
+  },
+  "theorem": {
+    "commutativity_required": false,
+    "covariance": "Q_V=(I+exp(H0+V))^-1",
+    "functional": "F_V(rho)=D(rho||rho0)+Tr[rho dGamma(V)]",
+    "minimum": "min F_V=log Z0-log Z_V",
+    "prior": "rho0=exp[-dGamma(H0)]/Z0",
+    "proof": "Insert log rho0=-dGamma(H0)-log Z0 and use linearity of dGamma; the Gibbs variational identity then applies to H0+V.",
+    "status": "E",
+    "unique_minimizer": "rho_V=exp[-dGamma(H0+V)]/det(I+exp[-(H0+V)])"
+  },
+  "verdict": {
+    "advance": "The relative-information principle exactly closes the algebra of a supplied quasi-free cost, including noncommuting matrices.  It is a response theorem, not a generator-selection theorem: V is in exact bijection with the desired faithful covariance and generic stored many-body costs lie outside dGamma's 17-dimensional image.",
+    "canonical_merger_given_H0_and_V": "E",
+    "generic_many_body_Gram_is_one_body_Dirac_cost": "F",
+    "history_cost_V_selected_by_relative_information": "F",
+    "phenomenology_gate": "CLOSED",
+    "reflection_positive_local_dynamics_derived": "F"
+  }
+}

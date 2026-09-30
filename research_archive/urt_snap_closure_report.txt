@@ -1,0 +1,170 @@
+URT / CATHEDRAL SNAP-CLOSURE REPORT
+===================================
+Date: 2026-08-05
+
+1. FUNDAMENTAL OBJECT
+---------------------
+Let V be the real four-dimensional irreducible representation of A5.
+The complete exterior algebra is
+
+  Lambda^0 V = 1
+  Lambda^1 V = 4
+  Lambda^2 V = 3 + 3'
+  Lambda^3 V = 4
+  Lambda^4 V = 1.
+
+Therefore
+
+  Lambda^even V = 1 + 3 + 3' + 1,
+  Lambda^odd  V = 4 + 4,
+  Lambda^bullet V = 1 + 4 + 3 + 3' + 4 + 1.
+
+The Cathedral spaces are exactly
+
+  C13  = Lambda^even V + 5,
+  Hsh  = Lambda^odd V,
+  H21  = Lambda^bullet V + 5.
+
+Thus 13, 8 and 21 are three faces of one exterior-algebra object.
+
+2. GENERATION AND MASS SECTORS
+------------------------------
+The Hodge star splits the middle degree:
+
+  G3  = Lambda^2_+ V,
+  G3' = Lambda^2_- V.
+
+The exact A5 tensor identities are
+
+  Sym^2_0(G3) = 5,
+  Hom(G3,G3') = 4 + 5.
+
+Hence the fiveplet is exactly the traceless symmetric generation-mass
+operator and the quartet plus fiveplet are exactly the complete typed
+amplitude from G3 to G3'.
+
+3. HIDDEN QUARTETS AND COMPLEX STRUCTURE
+----------------------------------------
+The two hidden quartets are Hodge partners:
+
+  * : Lambda^1 V -> Lambda^3 V.
+
+The independently reconstructed Clebsch maps satisfy
+
+  C45(*h) = C43(h)
+
+with numerical residual 2.392e-15.
+
+With passive stiffness K=diag(3 I4,5 I4), the unique metric-compatible
+complex coordinate is
+
+  z = sqrt(3) Xi3 + i sqrt(5) *^{-1} Xi5.
+
+This fixes the relative hidden phase and normalization that were previously
+left arbitrary.
+
+4. TETRAHEDRAL COLOUR/LEPTON VACUUM
+------------------------------------
+A5 contains exactly five tetrahedral A4 subgroups. Each fixes one unit
+vector t_i in V. The five vectors satisfy
+
+  sum_i t_i = 0,
+  t_i dot t_j = -1/4 for i != j,
+  sum_i t_i t_i^T = (5/4) I4.
+
+For any selected vacuum t,
+
+  V restricted to A4 = 1 + 3.
+
+The exact projectors are
+
+  P_lepton = t t^T,
+  P_colour = I4 - t t^T,
+  X_CL = P_colour - 3 P_lepton = I4 - 4 t t^T,
+
+with spectrum (-3,1,1,1).
+
+Therefore the 3+1 colour/lepton split is not inserted by hand. It is the
+restriction of the A5 quartet after selection of one tetrahedral vacuum.
+The five possible vacua are one A5 orbit.
+
+The two Hodge-paired odd quartets are then consistently identified as
+
+  Lambda^1 V : (u_r,u_g,u_b,nu)_R,
+  Lambda^3 V : (d_r,d_g,d_b,e)_R.
+
+5. PARTICLE HILBERT SPACE
+-------------------------
+The chiral particle spaces are
+
+  H_R = Lambda^odd V tensor Lambda^2_+ V,
+  H_L = Lambda^even V tensor Lambda^2_- V.
+
+Each has dimension 8 x 3 = 24. Thus
+
+  dim H_particle = 48,
+  dim including conjugates = 96.
+
+This obtains the state count, chirality, colour/lepton grouping and three
+generation carrier from one fundamental V.
+
+6. CANONICAL PASSIVE STATE
+--------------------------
+Let Nhat be exterior degree. Since Delta=exp(-eta_Delta),
+
+  rho0 = Delta^Nhat / (1+Delta)^4.
+
+No assumed identity metric or invented passive K0 is required.
+
+7. OPERATOR AUDIT
+-----------------
+The exterior CAR and Dirac identities hold numerically:
+
+  {c_a,c_b^dagger}=delta_ab,
+  D(v)^2=||v||^2 I,
+  {D,Gamma}=0.
+
+Errors:
+  Hodge star square                0.000e+00
+  Hodge equivariance              3.322e-15
+  Lambda1->Lambda3 pairing        2.678e-15
+  hidden quartet pairing          2.362e-15
+  Clebsch Hodge relation          2.392e-15
+  CAR                             0.000e+00
+  Dirac square                    2.065e-17
+  Dirac/grading anticommutator    0.000e+00
+
+The Weyl-projected quaternionic Clifford frames also satisfy their Clifford
+relations with zero numerical error after the forced sqrt(2) bivector
+normalization.
+
+8. DECISIVE DYNAMICAL TEST
+--------------------------
+The fully Hodge-symmetric 24x24 stationary construction was evaluated.
+It produces order-one flavour mixing and, structurally, J_L=-J_Q. This is
+incompatible with the desired quark/lepton hierarchy.
+
+The conclusion is not that the exterior construction fails. It proves the
+unbroken exterior machine cannot be the final flavour operator. The
+A4-selected colour/lepton grading and the gauge connection must act inside
+the finite Dirac operator before stationary reduction. Compressing the
+machine to four separate 3x3 costs, or summing all Clifford generators
+without the A4 grading, are both incorrect.
+
+9. FINAL STRUCTURAL IDENTITY
+----------------------------
+The framework's common source is
+
+  A5 quartet V
+    -> exterior algebra Lambda^bullet V
+    -> Hodge split Lambda^2_+ + Lambda^2_-
+    -> tetrahedral vacuum A5 -> A4
+    -> colour/lepton 3+1 grading
+    -> hidden Hodge-paired quartets
+    -> fiveplet generation mass operator
+    -> 13, 8, 21, 48 and 96 state counts.
+
+This is the exact structural closure. The remaining physics is one sharply
+typed object: the A4-graded gauge connection inside the 48-state finite
+Dirac operator. It is not a free CKM/PMNS gate and cannot be replaced by
+coordinate corrections or fitted golden exponents.

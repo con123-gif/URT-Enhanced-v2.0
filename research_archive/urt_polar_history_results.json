@@ -1,0 +1,118 @@
+{
+  "certificate": "URT unique polar-history completion obstruction",
+  "covariance": {
+    "A5_generator_commutator_residuals": [
+      4.418838878898756e-15,
+      3.9694779378100996e-15
+    ],
+    "flux_conjugation_residual": 0.0,
+    "generic_endpoint_gauge_residual": 3.830317359535611e-15
+  },
+  "date": "2026-09-03",
+  "doubled_GW_lift": {
+    "GW_residual": 7.561439134959319e-15,
+    "Gamma": "branch swap",
+    "Gamma_kernel_Gamma_minus_kernel_dagger": 0.0,
+    "conclusion": "The universal GW lift exists but doubles the polar rank defect and contains no orientation phase.",
+    "kernel": "diag(V_T,V_T^dagger)",
+    "zero_mode_count": 20
+  },
+  "exact_polar_reduction": {
+    "P_cube_minus_identity_residual": 2.8780270159990897e-15,
+    "Pi_1_projector_residual": 6.638168205731153e-16,
+    "absolute_transfer": "|T|=(I+Pi_1)/2",
+    "absolute_transfer_residual": 3.161212630532228e-15,
+    "midpoint_spectral_formula_residual": 1.2072877792441454e-15,
+    "midpoint_square_minus_P_residual": 2.507082959636993e-15,
+    "minimum_singular_value_T": 0.4999999999999997,
+    "numeric_minus_exact_polar_residual": 3.5219910920174026e-15,
+    "polar_formula": "V_T=L C=T(T^dagger T)^(-1/2)",
+    "polar_midpoint": "C=polar((I+P)/2)=P^(1/2)_principal",
+    "polar_unitarity_residual": 5.38230659256649e-15,
+    "reconstruction_residual": 4.652449473318229e-15,
+    "transfer": "T=(L+R)/2=L(I+P)/2, P=L^dagger R",
+    "uniqueness": "T is invertible (minimum singular value 1/2), so its polar unitary is unique and is the unique Frobenius-nearest unitary."
+  },
+  "observational_targets_used": false,
+  "polar_no_go": {
+    "axiom_boundary": "All coefficient-free completions presently implied by the finite-history and Haar data have now been exhausted: affine GW, Mobius GW, overlap, determinant topology, Szegedy/Stinespring and polar unitarization. A new microscopic axiom must be stated and independently justified before the operator can advance.",
+    "phenomenology_gate": "CLOSED: no masses or CKM/PMNS calculation is licensed.",
+    "status": "F/no-go for the final coefficient-free Haar completion",
+    "theorem": "Polar unitarization is unique, gauge/A5 covariant and coefficient-free, but the symmetric Haar average makes its spectrum flux-conjugation paired. Its degree-five trace is real, I-V_T has ten zero modes, and the doubled GW determinant has no orientation phase. Therefore the polar principle cannot fix lambda or freeze the flavour action."
+  },
+  "spectrum_and_orientation": {
+    "D_zero_mode_count": 10,
+    "conjugate_pairing_residual": 1.1102230246251565e-15,
+    "det_V": {
+      "imag": -2.220446049250312e-16,
+      "real": 0.9999999999999984
+    },
+    "eigenangle_groups": [
+      {
+        "angle": -3.141592653589793,
+        "multiplicity": 5
+      },
+      {
+        "angle": -2.388582451377128,
+        "multiplicity": 6
+      },
+      {
+        "angle": -1.9356601549083798,
+        "multiplicity": 2
+      },
+      {
+        "angle": -1.4179180997157195,
+        "multiplicity": 6
+      },
+      {
+        "angle": -0.9553166181245092,
+        "multiplicity": 4
+      },
+      {
+        "angle": -0.36486382811348383,
+        "multiplicity": 2
+      },
+      {
+        "angle": -1.3877787807814452e-16,
+        "multiplicity": 10
+      },
+      {
+        "angle": 0.3648638281134833,
+        "multiplicity": 2
+      },
+      {
+        "angle": 0.9553166181245089,
+        "multiplicity": 4
+      },
+      {
+        "angle": 1.4179180997157181,
+        "multiplicity": 6
+      },
+      {
+        "angle": 1.9356601549083792,
+        "multiplicity": 2
+      },
+      {
+        "angle": 2.3885824513771254,
+        "multiplicity": 6
+      },
+      {
+        "angle": 3.141592653589793,
+        "multiplicity": 5
+      }
+    ],
+    "eigenvalue_minus_one_multiplicity": 10,
+    "eigenvalue_one_multiplicity": 10,
+    "fifth_trace": {
+      "imag": -1.5205600838809061e-16,
+      "real": 13.685339714124463
+    },
+    "interpretation": "The unique Haar polar unitary has conjugate-paired spectrum, ten exact eigenvalues at one, and real traces. It erases the orientation-odd fifth Wilson trace; det(I-V_T) vanishes.",
+    "maximum_imaginary_trace_degree_1_to_60": 6.754715433282268e-15,
+    "nonzero_pseudodeterminant": {
+      "imag": 2.1287195839941084e-08,
+      "real": 2715898.498773228
+    },
+    "orientation_odd_fifth_trace": -1.5205600838809061e-16
+  }
+}

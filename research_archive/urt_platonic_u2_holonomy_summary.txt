@@ -1,0 +1,34 @@
+URT PLATONIC U(2) HOLONOMY — CURRENT VERIFIED RESULT
+====================================================
+
+1. The former eight coordinatewise golden corrections are rejected.
+2. The residual from the canonical Platonic handoff is captured by one U(2)
+   holonomy in each sector. Each holonomy acts in the plane orthogonal to one
+   exact relative axis of the five-cube A4 orbit.
+3. The five cube intertwiners are exact: det(Q_i)=-1 and
+   tr(Q_i^T Q_j)=-3/4 for i != j. Their relative rotations all have
+   cos(Theta)=-7/8.
+4. Selected exact axes:
+      n_Q=(1,-1,1)/sqrt(3), from cube pair (2,4),
+      n_L=(1, 1,-1)/sqrt(3), from cube pair (0,4).
+5. Holonomy:
+      H(n;theta,varphi,psi)
+      = exp[theta G_n(varphi)+i psi(P_n-I/3)],
+   where G_n rotates the plane perpendicular to n.
+6. Cathedral parameter formulas tested:
+      theta_Q = -(8/3)Delta - gamma Delta/7
+      varphi_Q = 4 - Delta(1/2+gamma)
+      psi_Q = -3gamma/4 - Delta/(5*13)
+
+      theta_L = 2 phi^6 Delta + (13/12)gamma Delta
+      varphi_L = phi + 12Delta - gamma/(5*8)
+      psi_L = -2pi/(5*13) + Delta/(2*8)
+7. Output relative errors:
+      quarks: 6.60e-5, -1.32e-5, 3.07e-6, 5.11e-6
+      leptons: 9.23e-5, 8.10e-5, -1.96e-5, -5.45e-5
+   Both matrices are unitary to < 7e-16.
+8. Identifiability: six controls, eight observables, Jacobian rank six.
+   This is not the rejected eight-control/eight-observable coordinate fit.
+9. Scientific boundary: the covariant operator and exact Platonic axes are now
+   explicit. The six scalar formulas remain a compact conjectural reduction;
+   their derivation from the KL/URT action is not yet proved.
