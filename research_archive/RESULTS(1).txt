@@ -1,0 +1,115 @@
+URT DIRECT-SELECTION SIMULATION
+===============================
+
+FIXED CONSTANTS
+---------------
+alpha       = 1.155
+theta_H     = 2.4
+beta        = 0.235
+delta_star  = 0.147510810159580
+kappa bound = beta*alpha*(1+theta_H)
+            = 0.922845000000000 < 1
+
+SELECTION RULE
+--------------
+The state consisted of twelve initially random unit directions.
+
+The update used:
+
+    S(X) = sum_(i<j) log ||x_i-x_j||
+
+    G_i = tangent gradient of S at x_i
+
+    u_i = ||G_i|| / (1 + ||G_i||)
+
+    P_(i,k+1)
+      = beta[alpha(P_(i,k)-theta_H*phi(P_(i,k))) + u_(i,k)]
+
+    x_(i,k+1)
+      = Exp_(x_i)[delta_star P_(i,k+1) G_i/||G_i||]
+
+with the URT entropy-admissibility condition:
+
+    S(X_(k+1)) >= S(X_k).
+
+No icosahedral coordinates, edge list, adjacency matrix, golden-ratio
+spectrum, or icosahedral error appeared in the update rule.
+
+RANDOM-START RESULT
+-------------------
+Trials                         = 64
+Icosahedral outcomes           = 64/64
+Median iterations              = 1607
+Maximum iterations             = 2038
+Total entropy backtracks       = 0
+
+Representative final topology:
+    vertices                    = 12
+    edges                       = 30
+    triangular faces            = 20
+    minimum shell degree        = 5
+    maximum shell degree        = 5
+
+Representative geometric errors:
+    dot-product RMS error       = 4.750601e-09
+    isotropy error              = 1.152224e-16
+
+CENTRED 13-STATE OPERATOR
+-------------------------
+Numerical spectrum:
+
+[2.664535259100376e-15, 3.763932022500212e+00, 3.763932022500214e+00,
+ 3.763932022500214e+00, 6.999999999999998e+00, 6.999999999999999e+00,
+ 7.000000000000000e+00, 7.000000000000000e+00, 7.000000000000004e+00,
+ 8.236067977499788e+00, 8.236067977499790e+00, 8.236067977499793e+00,
+ 1.300000000000000e+01]
+
+Expected spectrum:
+
+    0                 multiplicity 1
+    6 - sqrt(5)       multiplicity 3
+    7                 multiplicity 5
+    6 + sqrt(5)       multiplicity 3
+    13                multiplicity 1
+
+Maximum absolute spectral error:
+    3.996803e-15
+
+Thus the selected geometry generated the mode grouping:
+
+    1, 3, 5, 3, 1
+
+DAMAGE-RECOVERY TEST
+--------------------
+Perturbation:
+    one selected vertex displaced by 25 degrees
+
+Before recovery:
+    dot-product RMS error       = 1.059416e-01
+    isotropy error              = 4.980604e-02
+
+After URT recovery:
+    iterations                  = 1319
+    dot-product RMS error       = 4.225598e-09
+    isotropy error              = 1.647794e-16
+    edges                       = 30
+    faces                       = 20
+    degree range                = 5-5
+
+CONCLUSION
+----------
+For this explicit minimal URT instantiation, the sequence was:
+
+    random twelve-direction shell
+    -> URT entropy-oriented contraction
+    -> regular icosahedron
+    -> centred thirteen-state Laplacian
+    -> exact 1,3,5,3,1 spectral multiplets
+    -> five measurable resonator-frequency groups.
+
+This is a successful computational existence test of the proposed selection
+mechanism.
+
+It is not yet an experimental validation of URT, and the map from the geometric
+entropy gradient to the bounded input u_i is an explicit modelling choice that
+must be frozen before comparison with laboratory data.

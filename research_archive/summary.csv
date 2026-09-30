@@ -1,0 +1,7 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: summary.csv>index,N,Selected structure,Trials,Successful_runs,Median_iterations,Maximum_error,Median_error,Success_rate
+0,2,Antipodal pair,20,20,1482.5,2.220446049250313e-16,0.0,1.0
+1,3,Equilateral triangle,20,20,781.5,4.651426737183654e-09,4.091505689303419e-09,1.0
+2,4,Tetrahedron,20,20,981.5,6.978071962224507e-09,6.9124507971613195e-09,1.0
+3,6,Octahedron,20,20,1586.0,7.040462739995964e-09,6.3039640255427375e-09,1.0
+4,12,Icosahedron,20,20,1628.0,6.0332920086201995e-09,4.718281540181895e-09,1.0

@@ -1,0 +1,44 @@
+SECOND-STAGE URT AUDIT OF THE EXISTING BIFURCATION TEST
+========================================================
+
+Exact published geometric route:
+    P(Dh precursor) = (2/5)(2/6) = 2/15 = 0.133333333
+    P(Ih complement) = 13/15 = 0.866666667
+
+Candidate URT retention:
+    12/13 = 0.923076923
+
+Reported early plateau:
+    approximately 0.90, corresponding approximately to 108/120 outcomes.
+
+At n=120:
+    geometry model expects 104.000 Ih outcomes;
+    URT 12/13 expects 110.769 Ih outcomes.
+
+Approximate standardized deviations from 108:
+    geometry model: 1.074 sigma
+    URT 12/13:      -0.949 sigma
+
+Both are compatible with the published approximate plateau.
+The current experiment is not statistically capable of deciding between them.
+
+Approximate sample size needed to distinguish 13/15 from 12/13:
+    463 independent outcomes per comparison
+    (two-sided alpha 0.05, 80% power, normal approximation).
+
+Digitized kinetic transition:
+    midpoint t* = 717.65
+    scale s = 8.61
+    10%-90% width = 37.84
+    normalized odds multiplier per unit t* = exp(-1/s) = 0.890347
+
+The normalized logistic coordinate obeys:
+    log(q/(1-q)) = -(t-t_c)/s
+
+where q=(p-L)/(U-L). This is a clean one-dimensional closure coordinate:
+its log-odds contract linearly through the bifurcation.
+
+Strongest current conclusion:
+    the data establish boundary-preordered, path-dependent geometric selection
+    with a sharp low-dimensional closure threshold. They do not yet identify
+    the numerical URT coefficient uniquely.

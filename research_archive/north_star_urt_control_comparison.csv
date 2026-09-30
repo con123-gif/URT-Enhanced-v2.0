@@ -1,0 +1,4 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: north_star_urt_control_comparison.csv>index,controller,minimum_Ti_keV,time_Q_below_1_s,time_Q_below_2_s,final_Q,peak_bias_MV,peak_external_drive_MW
+0,URT,154.15302471359078,0.01,0.12,3.163668731387039,3.298602513237,14.212355594870724
+1,fixed settings,50.0,14.84,17.01,0.0340738249740854,2.999999999999999,10.198599595358523

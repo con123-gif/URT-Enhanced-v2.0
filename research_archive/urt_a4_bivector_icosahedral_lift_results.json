@@ -1,0 +1,239 @@
+{
+  "certificate": "URT minimal A4-bivector icosahedral lift",
+  "cut_and_project_theorem": {
+    "density": "Each projected additive group has rank six in R^3 and cannot be discrete.  Its closure is A5-invariant; irreducibility of 3 or 3_prime forces the nonzero identity component to be the full space.",
+    "injectivity": "If pi_+(z)=0 for nonzero integral z, then Nz=-sqrt(5)z, impossible because Nz and z are integral; similarly for pi_-.",
+    "missing_locality_data": [
+      "a compact acceptance window in the conjugate Hodge space",
+      "window scale, offset and boundary convention",
+      "a finite-neighbour adjacency/streaming rule on the selected point set"
+    ],
+    "six_dimensional_lattice": "Lambda^2 A4 embeds as a full lattice in E_+ direct_sum E_-, where E_+=3 and E_-=3_prime.",
+    "status": "E for the cut-and-project carrier; U for a unique window and local dynamics"
+  },
+  "date": "2026-09-04",
+  "icosahedral_orbits": {
+    "anti_self_dual_3_prime": {
+      "Gram_eigenvalues": [
+        -1.4097379506726574e-15,
+        -2.691771905893042e-16,
+        -1.9744744682404548e-16,
+        -1.6181139880422283e-16,
+        -9.583046155260622e-17,
+        6.864522094207724e-17,
+        1.6565385031055591e-16,
+        4.2543837004048224e-16,
+        8.030816475849106e-16,
+        3.999999999999997,
+        4.0,
+        4.000000000000002
+      ],
+      "Hodge_eigenvector_residual": 5.132905769563414e-16,
+      "axis_stabilizer_order": 10,
+      "maximum_inner_product_residual": 2.7755575615628914e-16,
+      "oriented_orbit_size": 12,
+      "oriented_stabilizer_order": 5,
+      "pair_inner_product_counts": {
+        "+1/sqrt(5)": 30,
+        "-1": 6,
+        "-1/sqrt(5)": 30
+      },
+      "unoriented_axis_count": 6
+    },
+    "self_dual_3": {
+      "Gram_eigenvalues": [
+        -1.2305356430999396e-15,
+        -8.89995753824096e-16,
+        -7.63176953973477e-16,
+        -5.791060108270898e-16,
+        -1.6015654779041592e-16,
+        -8.862163770393426e-17,
+        8.840974690471248e-17,
+        2.0091893880815114e-16,
+        4.0240719799213317e-16,
+        3.9999999999999982,
+        3.9999999999999982,
+        4.0
+      ],
+      "Hodge_eigenvector_residual": 1.7554167342883506e-16,
+      "axis_stabilizer_order": 10,
+      "maximum_inner_product_residual": 2.220446049250313e-16,
+      "oriented_orbit_size": 12,
+      "oriented_stabilizer_order": 5,
+      "pair_inner_product_counts": {
+        "+1/sqrt(5)": 30,
+        "-1": 6,
+        "-1/sqrt(5)": 30
+      },
+      "unoriented_axis_count": 6
+    }
+  },
+  "integral_carrier": {
+    "Hodge_commutator_residual": 0,
+    "Hodge_numerator_N": [
+      [
+        0,
+        0,
+        0,
+        1,
+        -2,
+        3
+      ],
+      [
+        0,
+        -1,
+        2,
+        2,
+        -4,
+        2
+      ],
+      [
+        1,
+        -2,
+        1,
+        3,
+        -2,
+        1
+      ],
+      [
+        0,
+        -2,
+        4,
+        1,
+        -2,
+        0
+      ],
+      [
+        2,
+        -4,
+        2,
+        2,
+        -1,
+        0
+      ],
+      [
+        3,
+        -2,
+        0,
+        1,
+        0,
+        0
+      ]
+    ],
+    "Hodge_self_adjoint_residual": 0,
+    "Hodge_square_residual": 0,
+    "Hodge_star": "*=N/sqrt(5) in the integral simple-root bivector basis",
+    "bivector_Gram_determinant": 125,
+    "exact_identities": [
+      "N^2=5 I6",
+      "N is self-adjoint for the bivector Gram metric",
+      "N commutes with every A5 action"
+    ],
+    "lattice": "Lambda^2 A4 ~= Z^6",
+    "metric_invariance_residual": 0,
+    "simple_root_Gram_determinant": 5,
+    "status": "E"
+  },
+  "minimal_rational_representation_theorem": {
+    "A5_character_rows": {
+      "3": "(3,-1,0,phi,1-phi)",
+      "3_prime": "(3,-1,0,1-phi,phi)",
+      "4": "(4,0,1,-1,-1)",
+      "Lambda2_4": "(6,-2,0,1,1)=3+3_prime"
+    },
+    "computed_bivector_character_counts": {
+      "1": {
+        "6": 1
+      },
+      "2": {
+        "-2": 15
+      },
+      "3": {
+        "0": 20
+      },
+      "5": {
+        "1": 24
+      }
+    },
+    "computed_order_counts": {
+      "1": 1,
+      "2": 15,
+      "3": 20,
+      "5": 24
+    },
+    "no_rank_four_projection": "The character inner products <4,3> and <4,3_prime> are zero, so Hom_A5(V4,V3)=Hom_A5(V4,V3_prime)=0.",
+    "rank_six_minimality": "An integral/rational representation containing 3 must also contain its Q(sqrt(5))-Galois conjugate 3_prime with equal multiplicity. Therefore the minimum rational rank is six, achieved by Lambda^2 A4.",
+    "status": "E"
+  },
+  "observational_targets_used": false,
+  "order_five_fixed_axis_classification": {
+    "Sylow_C5_subgroup_count": 6,
+    "all_subgroup_audits": [
+      {
+        "integral_average_rank": 2,
+        "minus_fixed_rank": 1,
+        "plus_fixed_rank": 1
+      },
+      {
+        "integral_average_rank": 2,
+        "minus_fixed_rank": 1,
+        "plus_fixed_rank": 1
+      },
+      {
+        "integral_average_rank": 2,
+        "minus_fixed_rank": 1,
+        "plus_fixed_rank": 1
+      },
+      {
+        "integral_average_rank": 2,
+        "minus_fixed_rank": 1,
+        "plus_fixed_rank": 1
+      },
+      {
+        "integral_average_rank": 2,
+        "minus_fixed_rank": 1,
+        "plus_fixed_rank": 1
+      },
+      {
+        "integral_average_rank": 2,
+        "minus_fixed_rank": 1,
+        "plus_fixed_rank": 1
+      }
+    ],
+    "fixed_space_per_subgroup": "rank two over the rational six-carrier, splitting as one line in each Hodge 3-space",
+    "order_five_element_count": 24,
+    "projection_norm_squared_exact": {
+      "minus": "(25-10 sqrt(5))/2",
+      "plus": "(25+10 sqrt(5))/2"
+    },
+    "projection_norm_squared_residuals": {
+      "minus": 8.881784197001252e-16,
+      "plus": 3.552713678800501e-15
+    },
+    "representative_Ns": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "representative_integral_orbit_sum_s": [
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "representative_projections": "pi_+(s)=(s+Ns/sqrt(5))/2 and pi_-(s)=(s-Ns/sqrt(5))/2",
+    "status": "E"
+  },
+  "verdict": {
+    "advance": "The icosahedral directions are no longer an external geometric insertion: they arise canonically from the existing A4 bivector carrier.  Local site selection still requires an acceptance-window and adjacency axiom not contained in the current theory.",
+    "canonical_twelve_directions": "E: the six C5 fixed axes in either Hodge sector have a twelve-point A5 orbit equal to a regular icosahedron",
+    "exact_local_microscopic_streaming": "U",
+    "minimal_higher_dimensional_origin": "E: Lambda^2 A4 is rank-six minimal",
+    "phenomenology_gate": "CLOSED"
+  }
+}

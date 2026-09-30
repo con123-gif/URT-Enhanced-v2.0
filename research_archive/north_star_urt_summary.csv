@@ -1,0 +1,20 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: north_star_urt_summary.csv>index,metric,value,unit
+0,Cone plasma volume,0.0020106192982974,m^3
+1,"Old paper Eq.(17), recalculated equal p:B fusion power",1.40129475792673,MW
+2,Updated fuel ratio p:B,10.0,:1
+3,Updated target fusion power diagnostic,463.237936504704,kW
+4,Updated target bremsstrahlung diagnostic,46.62195537892279,kW
+5,Thermal inventory at target,355.814656401458,kJ
+6,Auxiliary power required at tau_E = 1 s,124.49384987755842,kW
+7,Auxiliary power required at tau_E = 100 us,3.5579152432080563,GW
+8,Optimistic tau_E threshold with 60% alpha deposition,1.5381869955770533,s
+9,URT max vortex deviation after startup,9.37963987388246,%
+10,Fixed-control max vortex deviation after startup,34.9133222076462,%
+11,URT max bias deviation after startup,8.23536217149401,%
+12,Fixed-control max bias deviation after startup,24.999788777082465,%
+13,URT max Ti deviation after startup,7.56241117036518,%
+14,Fixed-control max Ti deviation after startup,21.92728533137576,%
+15,URT peak auxiliary power,639.1494269186668,kW
+16,URT final Ti,599.8080078145022,keV
+17,Fixed-control final Ti,524.3973832305771,keV

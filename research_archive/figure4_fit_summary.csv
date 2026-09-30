@@ -1,0 +1,11 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: figure4_fit_summary.csv>index,quantity,value
+0,Lower asymptote,-0.0103520128551588
+1,Upper asymptote,0.9377451562216742
+2,Bifurcation midpoint t*,717.6494140917725
+3,Logistic scale t*,8.612303901530861
+4,10%-90% transition width t*,37.84633159986444
+5,Midpoint probability slope per t*,-0.0275215894584347
+6,Odds multiplier per one t*,0.8903746510729567
+7,Candidate URT kappa 12/13,0.9230769230769232
+8,t* interval equivalent to one 12/13 odds contraction,0.6893521235858915
