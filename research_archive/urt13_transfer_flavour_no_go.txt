@@ -1,0 +1,106 @@
+URT 13-CHANNEL TRANSFER / FLAVOUR AUDIT
+========================================
+
+1. CANONICAL TRANSFORM ISSUE
+----------------------------
+The project fibre construction specifies the unitary polar factor of the
+Delta-star-seeded Vandermonde, followed by the exact A5 group phase operator.
+The literal later QR formula is not canonical: QR depends on channel ordering
+and creates a triangular R factor that is absent from the polar transform.
+
+For the seeded 13x13 Vandermonde at delta_star:
+  condition number = 2.8126370238116e12
+  polar unitary residual = 6.66e-16
+
+The first four columns of the full polar factor have coherent-sector overlap
+  Tr(P4^* P_coh P4) = 2.089572964973139
+rather than 4. Thus the full polar factor does not itself identify its first
+four columns with the exact 1+3 coherent sector.
+
+The literal fivefold phase sequence on k=4,...,12 has multiplicities
+  (2,2,2,2,1),
+whereas the exact exhaust C5 projectors have ranks
+  (3,1,2,2,1).
+Therefore the literal column-phase formula is not exactly A5-equivariant.
+
+2. REPRESENTATION NO-GO
+-----------------------
+Centred fibre:
+  C13 = 1 + 3 + 5 + 3' + 1.
+Flavour/entropy field:
+  E13 = 5 + 4_3 + 4_5.
+
+They have equal dimension but are not isomorphic A5 representations.
+
+  dim Hom_A5(E13,C13) = 1.
+
+The sole linear equivariant map is 5 -> 5. Every linear equivariant map kills
+both hidden quartets. Therefore a 13x13 unitary transform on C13 cannot be
+applied as a change of basis on 5+4+4 without breaking A5 covariance.
+
+3. LOWEST VALID BRIDGE
+----------------------
+The first bridge carrying the hidden quartets into the centred fibre is
+quadratic:
+  4_3 x 4_5 = 1 + 3 + 3' + 4 + 5.
+
+Unique normalized intertwiners to 3, 3', and 5 were constructed. Equivariance
+residuals were respectively approximately
+  2.0e-15, 6.0e-15, 3.3e-15.
+
+4. NUMERICAL TESTS
+------------------
+A. Closed finite-order K4/C5 recycling of the quadratic return collapses the
+   quark frames to the same phase eigenbasis; CKM is identity to about 1e-14.
+
+B. Adding the noncommuting polar Vandermonde step can create mixing, but the
+   canonical passive branch (t10,r1) gives no viable simultaneous quark/lepton
+   result. Other diagnostic branches can move Vus, but spoil Vcb and/or the
+   lepton frame.
+
+C. Feeding the portal load back into the successful passive shell/dual
+   operators through one universal clutch gives the best diagnostic result
+   approximately:
+     Vus = 0.213382
+     Vcb = 0.042929
+     Vub = 0.003711
+     Jq  = 3.07693e-5
+     s12^2 = 0.306869
+     s23^2 = 0.602108
+     s13^2 = 0.022939
+     Jl = -0.032424
+   The reactor and CP channels improve, but the missing Cabibbo shift remains.
+
+D. Allowing three positive passive channel impedances to vary still gives best
+   common diagnostic output approximately:
+     weights (5,4_3,4_5) = (0.987139,0.986025,0.979616)
+     Vus = 0.213571
+     Vcb = 0.043543
+     Vub = 0.004083
+     Jq  = 2.82143e-5
+     s12^2 = 0.298883
+     s23^2 = 0.572014
+     s13^2 = 0.028279
+     Jl = -0.033848
+   Therefore the transfer is not merely calibrating the three impedances.
+
+E. The minimal species-loaded nonlinear fixed point built from the unique maps
+     4_3 x 4_5 -> (3',5),
+     3 x 3' -> 4,
+     3 x 5 -> 4,
+   with exact divisors 3,5,7, converges but produces order-one wrong mixing;
+   its best tested branch has Vcb approximately 0.979.
+
+5. VERDICT
+----------
+The 13-state URT transform is a transform of the centred visible fibre. It is
+not the missing flavour operator and cannot linearly act on the 5+4+4 entropy
+field.
+
+The static machine and the transform are both valid in their own spaces. The
+missing flavour law must be a species-loaded nonlinear connection on the full
+21-channel space
+  C13 + H_sh,
+acting during propagation. The current axioms do not specify that connection
+uniquely. Consequently the frozen CKM/PMNS ledger is not derivable from the
+present axioms without one additional physical law.

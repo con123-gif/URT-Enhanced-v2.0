@@ -1,0 +1,5 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: urt_target_free_audit_summary.csv>index,system,count,mean,std,minimum,median,maximum
+0,henon,220,0.9928518628018724,0.0487084770278917,0.2979522278777159,1.0,1.0
+1,logistic,220,0.8899157880167232,0.2123950208695482,0.01,1.0,1.0
+2,tent,220,1.0,0.0,1.0,1.0,1.0

@@ -1,0 +1,162 @@
+{
+  "certificate": "URT SU(5) adjoint-breaking underdetermination theorem",
+  "complete_generic_stationary_strata": {
+    "consequence": "Every generic stationary point has at most three distinct eigenvalues.",
+    "multiplicity_partitions": [
+      "5 (the trace-zero origin)",
+      "4+1",
+      "3+2",
+      "3+1+1",
+      "2+2+1"
+    ],
+    "stationary_equation": "d x_i^3+b x_i^2+(a+c S2)x_i-lambda=0, S2=sum_j x_j^2",
+    "status": "E",
+    "three_value_solution_when_d_nonzero": {
+      "2+2+1": "values (u,u,v,v,w), s=u+v=b/d, w=-2s, uv=[a+(6c+2d)s^2]/(4c+d)",
+      "3+1+1": "values (u,u,u,v,w), u=b/(2d), v+w=-3u, vw=[a+(12c+3d)u^2]/(2c+d)",
+      "reality": "The corresponding quadratic discriminant must be positive; zero discriminant reduces to a two-value stratum.",
+      "singular_loci": "d=0 or vanishing displayed denominators give lower-degree or tuned flat cases; they do not restore uniqueness."
+    },
+    "two_value_solution": {
+      "parameterization": "multiplicities (m,n=5-m), values (n q,-m q)",
+      "solutions": "q={-b(n-m)+/-sqrt[b^2(n-m)^2-4aL_m]}/(2L_m), L_m=5cmn+d(25-3mn)",
+      "split_hessian": [
+        "h_x=5q[b+d(3n-5)q], multiplicity m-1",
+        "h_y=5q[-b+d(3m-5)q], multiplicity n-1",
+        "h_rad=q[b(n-m)+2L_m q], multiplicity 1"
+      ],
+      "stationarity": "a+b(n-m)q+[5 c m n+d(25-3mn)]q^2=0"
+    }
+  },
+  "date": "2026-09-04",
+  "deterministic_branch_witnesses": {
+    "four_plus_one_global_example": {
+      "cartan_hessian_eigenvalues": [
+        1.4285714285714268,
+        1.4285714285714268,
+        1.4285714285714277,
+        1.9999999999999978
+      ],
+      "coefficients_a_b_c_d": [
+        -1.0,
+        0.0,
+        1.0,
+        -1.0
+      ],
+      "eigenvalues": [
+        0.3779644730092272,
+        0.3779644730092272,
+        0.3779644730092272,
+        0.3779644730092272,
+        -1.5118578920369088
+      ],
+      "minimum_energy_exact": "-5/7",
+      "minimum_energy_numeric": -0.7142857142857149,
+      "stabilizer": "S(U(4)xU(1))",
+      "stationarity_residual": 1.1102230246251565e-15
+    },
+    "three_plus_one_plus_one_stationary_example": {
+      "coefficients_a_b_c_d": [
+        -45.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "eigenvalues": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        -5.0
+      ],
+      "stabilizer": "S(U(3)xU(1)xU(1))",
+      "stationarity_residual": 0.0
+    },
+    "three_plus_two_global_example": {
+      "cartan_hessian_eigenvalues": [
+        0.13513513513513503,
+        0.13513513513513506,
+        0.5405405405405409,
+        2.000000000000001
+      ],
+      "coefficients_a_b_c_d": [
+        -1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "eigenvalues": [
+        0.3287979746107146,
+        0.3287979746107146,
+        0.3287979746107146,
+        -0.4931969619160719,
+        -0.4931969619160719
+      ],
+      "minimum_energy_exact": "-15/74",
+      "minimum_energy_numeric": -0.20270270270270271,
+      "stabilizer": "S(U(3)xU(2))",
+      "stationarity_residual": 2.0816681711721685e-17
+    },
+    "two_plus_two_plus_one_stationary_example": {
+      "coefficients_a_b_c_d": [
+        -62.0,
+        3.0,
+        1.0,
+        1.0
+      ],
+      "eigenvalues": [
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        -6.0
+      ],
+      "stabilizer": "S(U(2)xU(2)xU(1))",
+      "stationarity_residual": 0.0
+    }
+  },
+  "exact_trace_inequality": {
+    "lower_equality": "3+2 spectrum, proportional to (2,2,2,-3,-3)",
+    "proof": "Extremize p4 at fixed p2 and p1=0.  Each x_i obeys one depressed cubic.  For two roots the multiplicity formula gives 7/30 or 13/20; for three roots their unweighted sum is zero and the only multiplicity partitions give ratios 1/4 and 1/2.  Compactness then proves the bounds.",
+    "statement": "For real x_i with sum x_i=0, 7/30 <= sum x_i^4/(sum x_i^2)^2 <= 13/20.",
+    "stationary_ratios": {
+      "2+2+1_three_value": "1/4",
+      "3+1+1_three_value": "1/2",
+      "3+2": "7/30",
+      "4+1": "13/20"
+    },
+    "status": "E",
+    "upper_equality": "4+1 spectrum, proportional to (1,1,1,1,-4)"
+  },
+  "field": "Phi=Phi^dagger in su(5), Tr Phi=0",
+  "finite_seed_scope": {
+    "available_direction": "Once a centre-plus-tetrahedral plane P2 is chosen, Y=-P3/3+P2/2 is an exact 3+2 adjoint direction.",
+    "missing_dynamics": "A gauge-invariant linear preference for that fixed Y is forbidden; an SU(5)-invariant potential sees only its spectrum and retains the four free coefficients above.  A coupled dynamical seed field would be an additional action premise."
+  },
+  "maximum_stationarity_residual": 1.1102230246251565e-15,
+  "observational_targets_used": false,
+  "reflection_symmetric_global_selection": {
+    "boundedness": "c+d r>0 for every r in [7/30,13/20]",
+    "consequence": "The sign of one allowed invariant coefficient decides between the desired Standard-Model stabilizer and S(U(4)xU(1)).",
+    "d_negative": "The unique orbit type at the global minimum is 4+1.",
+    "d_positive": "The unique orbit type at the global minimum is 3+2.",
+    "d_zero": "Every trace-zero direction with the same p2 is degenerate.",
+    "radial_minimum": "At fixed r=p4/p2^2, p2=-a/(c+dr) and V_min(r)=-a^2/[4(c+dr)].",
+    "status": "E",
+    "subfamily": "b=0, a<0"
+  },
+  "renormalizable_invariant_classification": {
+    "A5_consequence": "SU(5) invariance already implies invariance under its A5 Weyl subgroup, so A5 supplies no relation among a,b,c,d.  Allowing only A5 invariance would add terms rather than remove this family.",
+    "independent_real_coefficients_excluding_constant": 4,
+    "potential": "V=a Tr(Phi^2)/2+b Tr(Phi^3)/3+c (Tr(Phi^2))^2/4+d Tr(Phi^4)/4+constant",
+    "reason": "The conjugation-invariant polynomial ring is generated by the power traces of degrees 2,3,4,5 for a traceless 5x5 matrix; through degree four the independent monomials are p2,p3,p2^2,p4.",
+    "status": "E"
+  },
+  "verdict": {
+    "breaking_scale": "U",
+    "dynamical_three_plus_two_selection": "U",
+    "no_go": "The current A4/A5 and parent-gauge data identify the desired 3+2 orbit but do not select it dynamically.  Symmetry permits equally valid bounded potentials with a 4+1 vacuum, an unbroken vacuum, or additional stationary strata, and the mass/quartic ratios set a continuous breaking scale.",
+    "phenomenology_gate": "CLOSED",
+    "three_plus_two_stabilizer_given_orbit": "E"
+  }
+}

@@ -1,0 +1,661 @@
+{
+  "Hodge_bound": {
+    "decomposition": "theta=k+eta, k in ker(B), eta in range(B^dagger)",
+    "exact_bound": "||eta||_infinity<=||eta||_2<=36 delta/sqrt(6-2 sqrt(7))",
+    "flat_kernel": "ker(B)=47 gauge modes plus four torons; after gauge fixing, torons only shift the continuous free momenta",
+    "numeric_coefficient": 42.769421609193266,
+    "status": "E in the stated real-lift sector"
+  },
+  "certificate": "URT triangular finite-volume U1 overlap-gap theorem",
+  "date": "2026-09-04",
+  "face_complex": {
+    "Fourier_block_size": [
+      27,
+      11
+    ],
+    "all_exact_annihilator_checks": true,
+    "classes": [
+      {
+        "class": "spatial_zero_temporal_zero",
+        "exact_annihilator": "x*(x - 12)*(x - 8)",
+        "exact_spectrum": [
+          {
+            "eigenvalue": "0",
+            "multiplicity": 4
+          },
+          {
+            "eigenvalue": "8",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "12",
+            "multiplicity": 4
+          }
+        ],
+        "least_positive_eigenvalue": "8",
+        "least_positive_eigenvalue_numeric": 8.0,
+        "momentum_block_count": 1,
+        "rank_per_block": 7,
+        "representative_annihilator_checks": [
+          true
+        ],
+        "representative_spectral_witnesses": [
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "72",
+              "768"
+            ],
+            "candidate_roots_are_distinct": true,
+            "expected_trace_moments": [
+              "11",
+              "72",
+              "768"
+            ],
+            "moments_match_exactly": true
+          }
+        ]
+      },
+      {
+        "class": "one_spatial_pi_any_temporal",
+        "exact_annihilator": "x*(x - 14)*(x - 10)*(x - 6)*(x - 4)*(x - 2)",
+        "exact_spectrum": [
+          {
+            "eigenvalue": "0",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "2",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "4",
+            "multiplicity": 2
+          },
+          {
+            "eigenvalue": "6",
+            "multiplicity": 2
+          },
+          {
+            "eigenvalue": "10",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "14",
+            "multiplicity": 2
+          }
+        ],
+        "least_positive_eigenvalue": "2",
+        "least_positive_eigenvalue_numeric": 2.0,
+        "momentum_block_count": 18,
+        "rank_per_block": 10,
+        "representative_annihilator_checks": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "representative_spectral_witnesses": [
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "80",
+              "800",
+              "9056",
+              "109952",
+              "1393280"
+            ],
+            "moments_match_exactly": true
+          }
+        ]
+      },
+      {
+        "class": "two_spatial_pi_any_temporal",
+        "exact_annihilator": "x*(x - 16)*(x - 12)*(x - 8)*(x - 4)*(x**2 - 24*x + 112)",
+        "exact_spectrum": [
+          {
+            "eigenvalue": "0",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "4",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "12 - 4*sqrt(2)",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "8",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "12",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "16",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "4*sqrt(2) + 12",
+            "multiplicity": 1
+          }
+        ],
+        "least_positive_eigenvalue": "4",
+        "least_positive_eigenvalue_numeric": 4.0,
+        "momentum_block_count": 18,
+        "rank_per_block": 10,
+        "representative_annihilator_checks": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "representative_spectral_witnesses": [
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "88",
+              "992",
+              "13312",
+              "198144",
+              "3125248",
+              "50929664"
+            ],
+            "moments_match_exactly": true
+          }
+        ]
+      },
+      {
+        "class": "three_spatial_pi_any_temporal",
+        "exact_annihilator": "x*(x - 20)*(x - 14)*(x - 6)",
+        "exact_spectrum": [
+          {
+            "eigenvalue": "0",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "6",
+            "multiplicity": 7
+          },
+          {
+            "eigenvalue": "14",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "20",
+            "multiplicity": 2
+          }
+        ],
+        "least_positive_eigenvalue": "6",
+        "least_positive_eigenvalue_numeric": 6.0,
+        "momentum_block_count": 6,
+        "rank_per_block": 10,
+        "representative_annihilator_checks": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "representative_spectral_witnesses": [
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "moments_match_exactly": true
+          },
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "96",
+              "1248",
+              "20256"
+            ],
+            "moments_match_exactly": true
+          }
+        ]
+      },
+      {
+        "class": "spatial_zero_temporal_plus_minus_one",
+        "exact_annihilator": "x*(x - 12)*(x - 8)*(x**2 - 12*x + 8)",
+        "exact_spectrum": [
+          {
+            "eigenvalue": "0",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "6 - 2*sqrt(7)",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "8",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "2*sqrt(7) + 6",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "12",
+            "multiplicity": 1
+          }
+        ],
+        "least_positive_eigenvalue": "6 - 2*sqrt(7)",
+        "least_positive_eigenvalue_numeric": 0.7084973778708188,
+        "momentum_block_count": 2,
+        "rank_per_block": 10,
+        "representative_annihilator_checks": [
+          true
+        ],
+        "representative_spectral_witnesses": [
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "72",
+              "720",
+              "7584",
+              "81792"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "72",
+              "720",
+              "7584",
+              "81792"
+            ],
+            "moments_match_exactly": true
+          }
+        ]
+      },
+      {
+        "class": "spatial_zero_temporal_plus_minus_two",
+        "exact_annihilator": "x*(x - 12)*(x - 8)*(x**2 - 12*x + 24)",
+        "exact_spectrum": [
+          {
+            "eigenvalue": "0",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "6 - 2*sqrt(3)",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "8",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "2*sqrt(3) + 6",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "12",
+            "multiplicity": 1
+          }
+        ],
+        "least_positive_eigenvalue": "6 - 2*sqrt(3)",
+        "least_positive_eigenvalue_numeric": 2.5358983848622456,
+        "momentum_block_count": 2,
+        "rank_per_block": 10,
+        "representative_annihilator_checks": [
+          true
+        ],
+        "representative_spectral_witnesses": [
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "72",
+              "624",
+              "5856",
+              "57216"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "72",
+              "624",
+              "5856",
+              "57216"
+            ],
+            "moments_match_exactly": true
+          }
+        ]
+      },
+      {
+        "class": "spatial_zero_temporal_three",
+        "exact_annihilator": "x*(x - 12)*(x - 8)*(x - 4)",
+        "exact_spectrum": [
+          {
+            "eigenvalue": "0",
+            "multiplicity": 1
+          },
+          {
+            "eigenvalue": "4",
+            "multiplicity": 3
+          },
+          {
+            "eigenvalue": "8",
+            "multiplicity": 6
+          },
+          {
+            "eigenvalue": "12",
+            "multiplicity": 1
+          }
+        ],
+        "least_positive_eigenvalue": "4",
+        "least_positive_eigenvalue_numeric": 4.0,
+        "momentum_block_count": 1,
+        "rank_per_block": 10,
+        "representative_annihilator_checks": [
+          true
+        ],
+        "representative_spectral_witnesses": [
+          {
+            "Vandermonde_trace_moments": [
+              "11",
+              "72",
+              "576",
+              "4992"
+            ],
+            "candidate_roots_are_distinct": true,
+            "exact_gauge_kernel_check": true,
+            "expected_trace_moments": [
+              "11",
+              "72",
+              "576",
+              "4992"
+            ],
+            "moments_match_exactly": true
+          }
+        ]
+      }
+    ],
+    "classification_argument": "spatial permutations cover equal Hamming weights; temporal momenta 4 and 5 are complex conjugates of 2 and 1",
+    "face_count": 1296,
+    "faces_per_site": 27,
+    "gauge_nullity": 47,
+    "link_count": 528,
+    "links_per_site": 11,
+    "momentum_block_count": 48,
+    "nullity_B": 51,
+    "rank_B": 477,
+    "site_count": 48,
+    "smallest_positive_BdaggerB_eigenvalue": "6-2*sqrt(7)",
+    "smallest_positive_singular_value": 0.8417228628656933,
+    "spatial_squares_per_site": 3,
+    "status": "E",
+    "toron_nullity": 4,
+    "triangles_per_site": 24
+  },
+  "free_kernel_gap": {
+    "all_leaf_bounds_at_least_3_over_5": true,
+    "certified_leaf_count": 13,
+    "exact_lower_bound": "3/5",
+    "frozen_M_rational": "197735148026781/250000000000000",
+    "frozen_r_rational": "355508034923519/1000000000000000",
+    "leaf_paths": [
+      "0L1L",
+      "0L1R2L",
+      "0L1R2R0L",
+      "0L1R2R0R",
+      "0R1L2L",
+      "0R1L2R0L",
+      "0R1L2R0R1L",
+      "0R1L2R0R1R",
+      "0R1R2L0L",
+      "0R1R2L0R1L",
+      "0R1R2L0R1R2L",
+      "0R1R2L0R1R2R",
+      "0R1R2R"
+    ],
+    "maximum_depth": 6,
+    "spatial_polynomial": "-873614037104817995043820656639*t0**4/250000000000000000000000000000 + 355508034923519*t0**3*t1*t2/250000000000000 + t0**2*t1**2*t2**2 + 126385962895182004956179343361*t0**2*t1**2/125000000000000000000000000000 + 126385962895182004956179343361*t0**2*t2**2/125000000000000000000000000000 + 16736192334663720557931898919*t0**2/25000000000000000000000000000 + 355508034923519*t0*t1**3*t2/250000000000000 + 355508034923519*t0*t1*t2**3/250000000000000 - 234210761743399*t0*t1*t2/50000000000000 - 873614037104817995043820656639*t1**4/250000000000000000000000000000 + 126385962895182004956179343361*t1**2*t2**2/125000000000000000000000000000 + 16736192334663720557931898919*t1**2/25000000000000000000000000000 - 873614037104817995043820656639*t2**4/250000000000000000000000000000 + 16736192334663720557931898919*t2**2/25000000000000000000000000000 + 54854680916423212585920073201/10000000000000000000000000000",
+    "spatial_variables": "t_i=cos(p_i/2) in [0,1]",
+    "split_count": 12,
+    "status": "E exact rational Bernstein certificate",
+    "time_minimum": "For c_t^2>=2M-M^2, dF/dy=2C[(1-c_t^2)Cy-A]<=0; therefore y=cos(omega)=1 is the minimum.",
+    "weakest_leaf_Bernstein_bound": {
+      "exact": "2489714461989855480303733090901/4000000000000000000000000000000",
+      "numeric": 0.6224286154974639
+    },
+    "whole_cube_Bernstein_lower_bound": 0.386501145868374
+  },
+  "interacting_gap": {
+    "equivalent_maximum_U1_face_holonomy_deviation": 0.0029853974616174304,
+    "hop_norm_bound": "5+3r",
+    "hop_norm_bound_numeric": 6.066524104770557,
+    "operator_perturbation_bound": "||X(theta)-X(k)||<=(5+3r)*36 delta/sqrt(6-2 sqrt(7))",
+    "operator_perturbation_coefficient": 259.4617271392657,
+    "positive_gap_below_threshold": true,
+    "singular_value_lower_bound": "sigma_min(X_theta)>=sqrt(3/5)-(5+3r)*36 delta/sqrt(6-2 sqrt(7))",
+    "status": "E conditional on the scope premises",
+    "strict_face_angle_threshold": 0.0029853985702705194
+  },
+  "observational_targets_used": false,
+  "scope": {
+    "clock_scope": "sqrt(2M-M^2)<=c_t<=1 for the frozen rational M",
+    "gauge_group": "U(1)",
+    "lattice": "Nt=6, Ns=2^3 periodic gauge cell; antiperiodic fermion time",
+    "topological_scope": "zero-lift sector: link phases admit real lifts with every face equation B theta=f and |f_p|<=delta"
+  },
+  "verdict": {
+    "all_topological_sectors_proved": false,
+    "continuum_limit_proved": false,
+    "fermion_gauge_reflection_positivity_proved": false,
+    "next_gate": "replace the finite-cell Hodge factor by a volume-uniform local curvature estimate and extend it to the compact non-Abelian factors",
+    "non_Abelian_gap_proved": false,
+    "nonempty_finite_volume_admissible_overlap_domain": true,
+    "status": "E finite zero-lift U1 gap; U full interacting theory",
+    "triangular_faces_remove_extra_flat_modes": true,
+    "volume_uniform_gap_proved": false
+  }
+}

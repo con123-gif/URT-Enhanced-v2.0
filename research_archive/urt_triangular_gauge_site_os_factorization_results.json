@@ -1,0 +1,338 @@
+{
+  "certificate": "URT exact triangular gauge site-reflection factorization",
+  "date": "2026-09-04",
+  "exact_factorization": {
+    "Haar_split": "dU=dU_0 dU_+ dU_- with theta-invariant Haar measure",
+    "OS_identity": "integral theta(F)F W_gauge dU = integral dU_0 W_0 |integral dU_+ F W_+|^2",
+    "character_expansion_needed_for_this_site_factorization": false,
+    "density": "W_gauge=W_0 W_+ theta(W_+)",
+    "site_reflection_positive": true,
+    "status": "E"
+  },
+  "face_orbits": {
+    "bottom_rule": "B_i,b in slab t maps to the reversed T_i,complement(b+e_i) in slab -t-1",
+    "bottom_type_checks": 12,
+    "fixed_faces": "only spatial squares on t=0",
+    "representative_triangle_rows": [
+      {
+        "axis": 1,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          -1,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          0,
+          0
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 1,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          -1,
+          0
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          0,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 1,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          0,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          -1,
+          0
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 1,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          0,
+          0
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          -1,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 2,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          -1,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          0,
+          -1,
+          0
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 2,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          -1,
+          0
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          0,
+          -1,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 2,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          0,
+          -1,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          -1,
+          0
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 2,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          0,
+          -1,
+          0
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          -1,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 3,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          -1,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          0,
+          0,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 3,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          -1,
+          0,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          0,
+          -1,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 3,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          0,
+          -1,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          0,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      },
+      {
+        "axis": 3,
+        "bottom_maps_to": "top",
+        "minus_bits": [
+          0,
+          0,
+          -1
+        ],
+        "orientation": "reversed",
+        "reflected_minus_bits": [
+          -1,
+          -1,
+          -1
+        ],
+        "source_slab": [
+          2,
+          3
+        ],
+        "target_slab": [
+          -3,
+          -2
+        ]
+      }
+    ],
+    "spatial_checks": 21,
+    "spatial_orientation": "preserved",
+    "spatial_rule": "Q_ij(t,n) maps to Q_ij(-t,n+t*1)",
+    "spatial_square_types": 3,
+    "status": "E exact integer-coordinate enumeration",
+    "time_spanning_fixed_face_count": 0,
+    "top_rule": "follows by theta^2=1",
+    "triangle_types_per_slab": 24
+  },
+  "gap_weight_merger": {
+    "U1_choice": "delta=epsilon_star/2",
+    "U1_delta_numeric": 0.0005609749687209334,
+    "entire_weight_support_has_uniform_overlap_gap": true,
+    "epsilon_star_exact": "394924599595820227835064176865/351998414917049746226536404412312",
+    "epsilon_star_numeric": 0.0011219499374418669,
+    "general_compact_choice": "choose supp(f)=V with V V^-1 inside the epsilon_star norm ball",
+    "maximum_face_deviation_numeric": 0.0005609749613653148,
+    "status": "E",
+    "strict_support_chain": "2 sin(delta/2)<delta<epsilon_star"
+  },
+  "observational_targets_used": false,
+  "reflection": {
+    "fixed_sites": "the complete t=0 spatial slice",
+    "involution_verified": true,
+    "map": "theta(t,n)=(-t,n+t(1,1,1))",
+    "negative_slabs": "[t,t+1] with t<=-1",
+    "positive_slabs": "[t,t+1] with t>=0"
+  },
+  "verdict": {
+    "continuum_limit_proved": false,
+    "nonanalytic_admissibility_compatible_with_gauge_OS": true,
+    "polar_overlap_fermion_gauge_OS_proved": false,
+    "remaining_OS_gate": "the gauge-dependent polar-overlap fermion cross-boundary cone",
+    "repaired_gauge_sector_site_reflection_positive": true,
+    "status": "E gauge-only OS/gap merger; U fermionic merger",
+    "theory_of_nature": false,
+    "volume_uniform_overlap_gap_on_support": true
+  },
+  "weight_hypotheses": {
+    "autocorrelation_choice": "w=f*f_tilde with f real nonnegative central",
+    "boundary_weight": "product of w over t=0 spatial squares, hence nonnegative",
+    "face_weight": "real central w with w(g)>=0 and w(g^-1)=w(g)",
+    "group": "any compact group"
+  }
+}

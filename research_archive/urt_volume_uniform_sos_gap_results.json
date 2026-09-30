@@ -1,0 +1,96 @@
+{
+  "certificate": "URT exact volume-uniform compact-group overlap-gap theorem",
+  "clock_and_coherence_perturbation": {
+    "clock_bound": "||Y_c-Y_1||<=1-c",
+    "clock_uniform_gap_constant_exact": "8776102213240449507445870597/50000000000000000000000000000",
+    "clock_uniform_gap_constant_numeric": 0.175522044264809,
+    "coherence_bound": "||X_c-Y_c||<=3 epsilon",
+    "epsilon_coefficient_exact": "43999801864631218278317050551539/281250000000000000000000000000",
+    "epsilon_coefficient_numeric": 156.44373996313323,
+    "final_operator_inequality": "X_c^dagger X_c>=g_clock-(C_sos+6B)epsilon",
+    "status": "E",
+    "uniform_kernel_norm_B_exact": "734210761743399/100000000000000",
+    "uniform_kernel_norm_B_numeric": 7.34210761743399
+  },
+  "date": "2026-09-04",
+  "exact_SOS_certificate": {
+    "Gershgorin_conclusion": "H=R^T Q R>0 exactly, hence Q>0 exactly",
+    "all_Laurent_coefficients_match_exactly": true,
+    "all_rows_strictly_diagonally_dominant": true,
+    "basis_size": 54,
+    "certificate_payload_sha256": "dfab9e765f3a1e8bb0319171f1fd25fc7f7d513e4feb7621c422557bf255f6df",
+    "coherent_kernel_term_count": 45,
+    "commuting_Laurent_coefficient_count": 97,
+    "congruence_is_exactly_symmetric": true,
+    "congruence_is_invertible": true,
+    "identity": "Y_1^dagger Y_1-1/2=W^dagger Q W+E",
+    "kernel_gram_term_count": 1003,
+    "maximum_off_diagonal_numeric": 1.9474622565510337e-08,
+    "minimum_diagonal_dominance_margin_exact": "1599999427216759930347896384299935019559303889/1600000000000000000000000000000000000000000000",
+    "minimum_diagonal_dominance_margin_numeric": 0.999999642010475,
+    "minimum_diagonal_exact": "3599999924005688468308669444449759104038362263/3600000000000000000000000000000000000000000000",
+    "monomial_basis": "W_k=V^k0 S_1^k1 S_2^k2 S_3^k3, k in {0,1}x{0,1,2}^3",
+    "q_polynomial_sha256": "cf9fe5cd35113b8303d5cc8de000b09d7627dde866ea9989c7eef0266a43ca46",
+    "rounded_Gram_groups_repaired_exactly": 92,
+    "status": "E exact rational sum-of-squares certificate"
+  },
+  "frozen_parameters": {
+    "M_exact": "197735148026781/250000000000000",
+    "M_numeric": 0.790940592107124,
+    "c_t_min_numeric": 0.9779029419996036,
+    "lower_bound_square_check": "c_lower^2 < 2M-M^2 verified exactly",
+    "r_exact": "355508034923519/1000000000000000",
+    "r_numeric": 0.355508034923519,
+    "strict_rational_lower_bound_for_c_t_min": "977902941999603/1000000000000000",
+    "surviving_clock_interval": "sqrt(2M-M^2)<=c_t<=1"
+  },
+  "literature_method": {
+    "reference": {
+      "arXiv": "hep-lat/9808010",
+      "authors": "P. Hernandez, K. Jansen, M. Luscher",
+      "title": "Locality properties of Neuberger's lattice Dirac operator",
+      "url": "https://arxiv.org/abs/hep-lat/9808010"
+    },
+    "relation": "The proof follows the HJL local-commutator strategy, but its rational Gram certificate and triangular coherent product are specific to the Cathedral stencil."
+  },
+  "local_hypotheses": {
+    "derived_commutators": [
+      "||[S_i,S_j]||<=epsilon",
+      "||[S_i,V]||<=2 epsilon"
+    ],
+    "face_bound": "||I-rho(U_f)||<=epsilon for every repaired elementary spatial square and future/spatial triangle",
+    "future_coherence": "||A-(1+S_3)(1+S_2)(1+S_1)V/8||<=3 epsilon/2",
+    "scope": "all lattice volumes, every compact gauge group in a unitary fermion representation, and every topology satisfying the local face bound"
+  },
+  "noncommutative_remainder": {
+    "C_sos_exact": "31609995260211360153317050551539/281250000000000000000000000000",
+    "C_sos_numeric": 112.39109425852928,
+    "canonical_coefficient_sum_is_exactly_zero": true,
+    "conclusion": "Y_1^dagger Y_1>=1/2-C_sos epsilon",
+    "maximum_weighted_swap_cost": 36,
+    "noncanonical_term_count": 2468,
+    "reduced_word_Clifford_term_count": 2744,
+    "sorting_rule": "each spatial/spatial inversion costs epsilon; each V/spatial inversion costs 2 epsilon; inverse commutators have the same norm",
+    "status": "E exact rational word bound"
+  },
+  "observational_targets_used": false,
+  "remaining_boundary": {
+    "chiral_gauge_measure_global_integrability": "U",
+    "continuum_limit_and_universality": "U",
+    "empirical_validation": "not supplied by a mathematical gap proof",
+    "interacting_fermion_reflection_positivity": "U",
+    "next_gate": "construct or rule out a reflection-positive nonanalytic admissibility implementation compatible with the fermion measure",
+    "reflection_positive_weight_enforcing_strict_admissibility": "U; an analytic positive-character weight cannot enforce an open exclusion by the Creutz obstruction",
+    "theory_of_nature": false
+  },
+  "theorem": {
+    "compact_non_Abelian_groups_included": true,
+    "global_gauge_fixing_required": false,
+    "statement": "If every repaired face obeys the local norm bound with epsilon below the displayed strict radius, then X_c^dagger X_c has the displayed positive volume-uniform lower bound for every surviving c_t.  The polar overlap is therefore well-defined and exponentially local by the standard gap argument.",
+    "status": "E conditional lattice theorem",
+    "strict_admissibility_radius_exact": "394924599595820227835064176865/351998414917049746226536404412312",
+    "strict_admissibility_radius_numeric": 0.0011219499374418669,
+    "topologically_trivial_sector_required": false,
+    "volume_uniform_kernel_gap_established": true
+  }
+}

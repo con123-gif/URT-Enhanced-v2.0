@@ -1,0 +1,23 @@
+TARGET-FREE URT AUDIT
+
+Raw estimator sweep:
+  system  count     mean      std  minimum  median  maximum
+   henon    220 0.992852 0.048708 0.297952     1.0      1.0
+logistic    220 0.889916 0.212395 0.010000     1.0      1.0
+    tent    220 1.000000 0.000000 1.000000     1.0      1.0
+
+Original URT map thresholds, using alpha=1.155 and theta_H=2.4:
+Global sufficient contraction threshold beta = 0.254647313471
+Local zero fixed-point threshold beta          = 0.618429189858
+|multiplier| at beta=0.1475                    = 0.238507500000
+|multiplier| at beta=0.1500                    = 0.242550000000
+
+Archived explicit 0.15 refinement:
+  0.0010 -> 0.148991494566
+  0.0100 -> 0.149053855814
+  0.0500 -> 0.149330419916
+  0.1475 -> 0.149983899925
+  0.1500 -> 0.150000000000
+  0.3000 -> 0.150873352629
+  0.5000 -> 0.151699620336
+  1.0000 -> 0.152449921228
