@@ -1,0 +1,128 @@
+URT / NEWTON'S CATHEDRAL — MINIMAL RECURSIVE NETWORK COMPLETION
+================================================================
+
+STATUS
+------
+This is a single-law candidate completion, not an experimental proof.
+Construction uses no observed CKM/PMNS entries or particle masses.
+Observed data are used only after the construction as diagnostics.
+
+UNIVERSAL RESPONSE LAW
+----------------------
+Serial independent transmissions multiply.
+Parallel independent responses add.
+A conserved source shared over m symmetry-equivalent exits contributes 1/m per exit.
+Gaussian hidden modes are eliminated by Schur complement.
+Positive complex radial modes carry the invariant -log(r) Jacobian.
+The outer/Galois sheet fixes orientation sign.
+
+FOUNDATION
+----------
+D = 3 from exterior self-duality.
+Local quaternionic dimension L = D+1 = 4.
+Finite C3 resolution:
+    gamma = D^(-L) = 0.012345679012346 = 1/81.
+
+Golden shell amplitude impedance:
+    sqrt((5+sqrt(5))/(5-sqrt(5))) = phi.
+
+Hence the target-free vacuum response rail is
+    d_star = (1-gamma) pi/(N phi)
+           = 0.147510810159580
+
+while
+    d_cl = D/F = 0.150000000000000
+    Delta = d_cl-d_star = 0.002489189840420
+    eta_Delta = -ln Delta = 5.995797986741314
+
+FLAVOUR
+-------
+Quarks:
+    s12 = 0.224308861636818
+    s23 = 0.042177509491690
+    s13 = 0.003733784760631
+    J   = 3.141364407663573e-05
+
+Leptons:
+    sin^2 theta12 = 0.303463055248289
+    sin^2 theta23 = 0.562129475820753
+    sin^2 theta13 = 0.022689900267130
+    J             = -3.235946792546487e-02
+
+MASS TREE (dimensionless, normalized to top)
+--------------------------------------------
+    t   1.000000000000000e+00
+    b   2.489189840420375e-02
+    tau 9.956759361681500e-03
+    c   7.467569521261125e-03
+    s   5.576459455486811e-04
+    mu  5.948223419185931e-04
+    u   1.239213212330402e-05
+    d   2.776173244422781e-05
+    e   2.863785371579468e-06
+
+Neutrino normal hierarchy:
+    m3/mt = 2.866892136839058e-13
+    m2/m3 = 1.728302001533427e-01
+    m1/m3 = 4.626955407371302e-08
+    Delta m21^2 / Delta m31^2 = 2.987027808504242e-02
+
+EFFECTIVE COUPLINGS
+-------------------
+    alpha_root^-1 = 137.035999178194999
+    sin^2 theta_W (IR response) = 0.230769230769231
+    alpha_s (IR response) = 0.118343195266272
+    lambda_H (IR response) = 0.129115226337449
+    y_t (IR response) = 0.997510810159580
+
+CANONICAL SPECTRAL BOUNDARY
+---------------------------
+    sin^2 theta_W = 3/8 = 0.375000000000000
+    a = 21.333575227752380
+    b = 36.342065618057632
+    b/a^2 = 0.079851360676427
+
+For the minimal exponential spectral lift:
+    G Lambda^2 / g_U^2 = eta_Delta/(16 pi)
+                        = 0.119282610921289
+
+COSMOLOGICAL CHANNEL EQUILIBRIUM
+-------------------------------
+    Omega_m      = 0.315789473684211
+    Omega_Lambda = 0.684210526315789
+    Omega_b      = 0.048582995951417
+    Omega_c      = 0.267206477732793
+    n_s          = 0.965452152803383
+    r            = 4.916918203299506e-04
+    running      = -6.196066061652012e-06
+
+RECURSIVE GRAVITY CANDIDATE
+---------------------------
+Full 21-channel scalar survival with 4D/3D normalization, rail survival,
+and one hidden entropy defect shared isotropically over h=8:
+    alpha_G^(e) = alpha_root^21 * (4/3)*(d_star/d_cl)*(1-gamma/h)
+                = 1.751751568778790e-45
+
+DIAGNOSTIC VALUES (NOT INPUTS TO CONSTRUCTION)
+----------------------------------------------
+Using the observed top mass only as a unit, the dimensionless mass tree gives:
+      t  172.6 GeV
+      b  4.29634166457 GeV
+    tau  1.71853666583 GeV
+      c  1.28890249937 GeV
+      s  0.0962496902017 GeV
+     mu  0.102666336215 GeV
+      u  0.00213888200448 GeV
+      d  0.00479167501987 GeV
+      e  0.000494289355135 GeV
+
+Neutrinos from the same top unit:
+    m3 = 0.0494825582818 eV
+    m2 = 0.00855208045195 eV
+    m1 = 2.28953590613e-09 eV
+    Delta m21^2 = 7.31380800566e-05 eV^2
+    Delta m31^2 = 0.00244852357412 eV^2
+
+The recursive gravity expression and mass multiplicities were identified in this
+completion pass. They therefore require independent out-of-sample validation and
+must not be presented as already experimentally proved.

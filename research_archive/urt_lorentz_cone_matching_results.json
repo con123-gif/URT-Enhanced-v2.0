@@ -1,0 +1,249 @@
+{
+  "certificate": "URT common Lorentz-cone normalization audit",
+  "corrected_inherited_metric_kernel": {
+    "GW_residual": 8.885546675491028e-16,
+    "Wilson_OS_cone": "E",
+    "conservative_hop_norm_bound": 8.6,
+    "conservative_link_gap_radius": 0.06368866947734489,
+    "expected_exact_numerical_minimum": "4/5 at p=0, omega=+/-pi/2",
+    "formula": "D_W=i gamma_i sin(p_i)+i(2/sqrt(5))gamma0 C(p)sin(omega)+r sum_i(1-cos p_i)+1-C(p)cos(omega)",
+    "gamma5_hermiticity_residual": 0.0,
+    "minimum_temporal_hop_eigenvalue_exact": "(1-2/sqrt(5))/2>0",
+    "multistarts": [
+      {
+        "minimum": 0.8216854588553275,
+        "point": [
+          -1.2473027294397903e-07,
+          -5.162713582899624e-08,
+          -0.948457732137796,
+          2.2926782978028053e-07
+        ],
+        "seed": 0
+      },
+      {
+        "minimum": 0.8000000000000167,
+        "point": [
+          -1.5707964592951258,
+          1.2443419894836227e-07,
+          2.885904179916948e-08,
+          -1.070994248486105e-08
+        ],
+        "seed": 1
+      },
+      {
+        "minimum": 0.8000000000000916,
+        "point": [
+          -1.5707964543550028,
+          -1.591127999105524e-07,
+          -2.2969601586371745e-07,
+          -1.7959031373499262e-07
+        ],
+        "seed": 2
+      },
+      {
+        "minimum": 0.8216854588553285,
+        "point": [
+          2.4219014050732875e-07,
+          -2.3741708105966377e-07,
+          -2.7006949794402468e-08,
+          0.9484575384803956
+        ],
+        "seed": 3
+      },
+      {
+        "minimum": 0.800000000000046,
+        "point": [
+          -1.5707962210157311,
+          1.8115616823088097e-07,
+          -1.2796163278025176e-07,
+          7.458035475751809e-08
+        ],
+        "seed": 4
+      },
+      {
+        "minimum": 0.8000000000000886,
+        "point": [
+          -1.5707966828885347,
+          2.2570151563188317e-07,
+          -1.4879331279407734e-07,
+          -7.90376417746501e-08
+        ],
+        "seed": 5
+      },
+      {
+        "minimum": 0.8216854588553825,
+        "point": [
+          -5.900945100504631e-07,
+          -2.383395908865706e-08,
+          0.9484575591194403,
+          -3.733113890639966e-08
+        ],
+        "seed": 6
+      },
+      {
+        "minimum": 0.8216854588553347,
+        "point": [
+          -2.5935437388172295e-07,
+          1.2938640299539566e-07,
+          -0.9484577547143754,
+          -1.0905523525011596e-07
+        ],
+        "seed": 7
+      },
+      {
+        "minimum": 0.8000000000000304,
+        "point": [
+          1.5707965638919685,
+          8.346273855584028e-08,
+          -1.4264853395991007e-08,
+          -1.291633011381337e-07
+        ],
+        "seed": 8
+      },
+      {
+        "minimum": 0.8000000000000879,
+        "point": [
+          -1.5707968950677216,
+          -5.157547491595113e-08,
+          -1.57147974764127e-07,
+          -4.2393591686360294e-08
+        ],
+        "seed": 9
+      },
+      {
+        "minimum": 0.8216854588553478,
+        "point": [
+          2.864835375419351e-07,
+          1.5853019368116885e-07,
+          0.9484577359396125,
+          1.8292150055312055e-07
+        ],
+        "seed": 10
+      },
+      {
+        "minimum": 0.8000000000001419,
+        "point": [
+          -1.570795755115829,
+          1.0679252032373374e-08,
+          1.0411818389898532e-07,
+          2.913712976378782e-07
+        ],
+        "seed": 11
+      }
+    ],
+    "numerical_global_minimum_XdaggerX": 0.8000000000000167,
+    "numerical_minimizer": [
+      -1.5707964592951258,
+      1.2443419894836227e-07,
+      2.885904179916948e-08,
+      -1.070994248486105e-08
+    ],
+    "rigorous_XdaggerX_lower_bound": 0.29999999999999993,
+    "rigorous_bound_derivation": "the c_t=1 bound 1/2 loses at most (1-c_t^2)C^2 sin^2(omega)=1/5",
+    "status": "E algebra and positive gap; N exact sharp minimum",
+    "temporal_hop_eigenvalues": [
+      0.05278640450004207,
+      0.05278640450004207,
+      0.05278640450004207,
+      0.05278640450004207,
+      0.9472135954999579,
+      0.9472135954999579,
+      0.9472135954999579,
+      0.9472135954999579
+    ],
+    "unique_doubler_free_zero": "E: the unchanged nonnegative Wilson scalar vanishes only at the origin",
+    "weak_field_hop_norm_sum": 8.403057382481032
+  },
+  "date": "2026-09-04",
+  "general_matching_equations": {
+    "Wilson_OS_condition": "temporal hop matrices (I+/-c_t gamma0)/2 are positive iff |c_t|<=1",
+    "combined_consequence_at_r_t_1": "tau>=1",
+    "fermion_principal_symbol": "i gamma_i k_i+i gamma_0(c_t tau) k_0; unit cone requires c_t tau=1",
+    "gauge_frame": "M_sp=diag(0_3,1_3), M_el=diag(8 tau^2 I_3,4 I_3)",
+    "gauge_isotropy": "a/b=8 tau^2-4",
+    "physical_layer_length": "tau in spatial-edge units",
+    "remaining_modulus": "Every tau>=1 gives a common leading cone and a positive Wilson reflection kernel after c_t=1/tau and a/b=8tau^2-4.",
+    "sampled_branches": [
+      {
+        "Wilson_OS_allowed": false,
+        "continuum_speed_c_t_times_tau": 1.0,
+        "gauge_spatial_to_electric_weight_ratio": 1.120000000000001,
+        "minimum_temporal_OS_hop_eigenvalue": -0.125,
+        "tau": 0.8,
+        "temporal_kinetic_c_t": 1.25
+      },
+      {
+        "Wilson_OS_allowed": true,
+        "continuum_speed_c_t_times_tau": 1.0,
+        "gauge_spatial_to_electric_weight_ratio": 4.0,
+        "minimum_temporal_OS_hop_eigenvalue": 0.0,
+        "tau": 1.0,
+        "temporal_kinetic_c_t": 1.0
+      },
+      {
+        "Wilson_OS_allowed": true,
+        "continuum_speed_c_t_times_tau": 1.0,
+        "gauge_spatial_to_electric_weight_ratio": 6.000000000000002,
+        "minimum_temporal_OS_hop_eigenvalue": 0.05278640450004207,
+        "tau": 1.118033988749895,
+        "temporal_kinetic_c_t": 0.8944271909999159
+      },
+      {
+        "Wilson_OS_allowed": true,
+        "continuum_speed_c_t_times_tau": 1.0,
+        "gauge_spatial_to_electric_weight_ratio": 14.0,
+        "minimum_temporal_OS_hop_eigenvalue": 0.16666666666666669,
+        "tau": 1.5,
+        "temporal_kinetic_c_t": 0.6666666666666666
+      },
+      {
+        "Wilson_OS_allowed": true,
+        "continuum_speed_c_t_times_tau": 1.0,
+        "gauge_spatial_to_electric_weight_ratio": 28.0,
+        "minimum_temporal_OS_hop_eigenvalue": 0.25,
+        "tau": 2.0,
+        "temporal_kinetic_c_t": 0.5
+      }
+    ],
+    "status": "E"
+  },
+  "observational_targets_used": false,
+  "reflection_positivity_boundary": {
+    "Wilson_bilinear": "E for every tau>=1 because the two temporal hop matrices are positive",
+    "overlap_operator": "GW and locality follow from the gap, but the published free-overlap spectral proof used c_t=r_t=1. Its pole/residue step must be redone for c_t=2/sqrt(5); it is not established by the Wilson cone alone.",
+    "status": "E Wilson; U corrected-overlap OS proof"
+  },
+  "two_distinguished_branches": {
+    "compatibility_correction": "The earlier c_t=1 free kernel and the 6:1 gauge action use different tau branches. They become a common-cone pair only by changing the fermion coefficient to 2/sqrt(5), or the gauge ratio to 4:1.",
+    "inherited_A4_metric": {
+      "Wilson_OS_allowed": true,
+      "continuum_speed_c_t_times_tau": 1.0,
+      "exact_c_t": "2/sqrt(5)",
+      "exact_gauge_ratio": "6:1",
+      "exact_tau": "sqrt(5)/2",
+      "gauge_spatial_to_electric_weight_ratio": 6.000000000000002,
+      "minimum_temporal_OS_hop_eigenvalue": 0.05278640450004207,
+      "tau": 1.118033988749895,
+      "temporal_kinetic_c_t": 0.8944271909999159
+    },
+    "unit_layer_metric": {
+      "Wilson_OS_allowed": true,
+      "continuum_speed_c_t_times_tau": 1.0,
+      "exact_c_t": "1",
+      "exact_gauge_ratio": "4:1",
+      "exact_tau": "1",
+      "gauge_spatial_to_electric_weight_ratio": 4.0,
+      "minimum_temporal_OS_hop_eigenvalue": 0.0,
+      "tau": 1.0,
+      "temporal_kinetic_c_t": 1.0
+    }
+  },
+  "verdict": {
+    "advance": "The gauge/fermion speed mismatch is repaired exactly on either metric branch, but the physical layer aspect ratio remains a true continuous modulus. The inherited A4 branch now has a corrected doubler-free GW kernel with a rigorous gap.",
+    "common_cone_exists": "E as a one-parameter family",
+    "corrected_overlap_reflection_positivity": "U",
+    "inherited_metric_common_cone": "E for gauge plus Wilson/GW algebra",
+    "phenomenology_gate": "CLOSED",
+    "unique_physical_time_normalization": "U"
+  }
+}

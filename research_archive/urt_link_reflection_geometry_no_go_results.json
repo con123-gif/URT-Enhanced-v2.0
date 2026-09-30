@@ -1,0 +1,352 @@
+{
+  "certificate": "URT half-step reflection geometry no-go",
+  "date": "2026-09-05",
+  "enumeration": {
+    "admissible_half_step_linear_parts": 7,
+    "determinant_counts": {
+      "-1": 1,
+      "1": 6
+    },
+    "linear_involutions": 20,
+    "maximum_graph_direction_residual": 0,
+    "representatives": [
+      {
+        "R": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "belongs_to_selected_tetrahedral_A4": false,
+        "determinant": -1,
+        "graph_direction_residual": 0,
+        "integer_coordinate_k_equals_Rh_plus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_coordinate_m_equals_a_minus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_label_map": "(t,n)->(1-t,R n+t k+m)",
+        "trace": -3,
+        "twice_spatial_translation_a": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "R": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "belongs_to_selected_tetrahedral_A4": false,
+        "determinant": 1,
+        "graph_direction_residual": 0,
+        "integer_coordinate_k_equals_Rh_plus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_coordinate_m_equals_a_minus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_label_map": "(t,n)->(1-t,R n+t k+m)",
+        "trace": -1,
+        "twice_spatial_translation_a": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "R": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "belongs_to_selected_tetrahedral_A4": false,
+        "determinant": 1,
+        "graph_direction_residual": 0,
+        "integer_coordinate_k_equals_Rh_plus_h": [
+          0,
+          1,
+          1
+        ],
+        "integer_coordinate_m_equals_a_minus_h": [
+          0,
+          0,
+          -1
+        ],
+        "integer_label_map": "(t,n)->(1-t,R n+t k+m)",
+        "trace": -1,
+        "twice_spatial_translation_a": [
+          1,
+          1,
+          -1
+        ]
+      },
+      {
+        "R": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "belongs_to_selected_tetrahedral_A4": false,
+        "determinant": 1,
+        "graph_direction_residual": 0,
+        "integer_coordinate_k_equals_Rh_plus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_coordinate_m_equals_a_minus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_label_map": "(t,n)->(1-t,R n+t k+m)",
+        "trace": -1,
+        "twice_spatial_translation_a": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "R": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "belongs_to_selected_tetrahedral_A4": false,
+        "determinant": 1,
+        "graph_direction_residual": 0,
+        "integer_coordinate_k_equals_Rh_plus_h": [
+          1,
+          1,
+          0
+        ],
+        "integer_coordinate_m_equals_a_minus_h": [
+          0,
+          -1,
+          0
+        ],
+        "integer_label_map": "(t,n)->(1-t,R n+t k+m)",
+        "trace": -1,
+        "twice_spatial_translation_a": [
+          1,
+          -1,
+          1
+        ]
+      },
+      {
+        "R": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "belongs_to_selected_tetrahedral_A4": false,
+        "determinant": 1,
+        "graph_direction_residual": 0,
+        "integer_coordinate_k_equals_Rh_plus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_coordinate_m_equals_a_minus_h": [
+          0,
+          0,
+          0
+        ],
+        "integer_label_map": "(t,n)->(1-t,R n+t k+m)",
+        "trace": -1,
+        "twice_spatial_translation_a": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "R": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "belongs_to_selected_tetrahedral_A4": false,
+        "determinant": 1,
+        "graph_direction_residual": 0,
+        "integer_coordinate_k_equals_Rh_plus_h": [
+          1,
+          0,
+          1
+        ],
+        "integer_coordinate_m_equals_a_minus_h": [
+          0,
+          0,
+          -1
+        ],
+        "integer_label_map": "(t,n)->(1-t,R n+t k+m)",
+        "trace": -1,
+        "twice_spatial_translation_a": [
+          1,
+          1,
+          -1
+        ]
+      }
+    ],
+    "signed_permutations": 48,
+    "trace_counts": {
+      "-1": 6,
+      "-3": 1
+    }
+  },
+  "exact_criteria": {
+    "cycle_classification": "an involutive signed permutation is admissible iff every one-cycle has sign -1",
+    "involution": "R^2=I and (I+R)a=0",
+    "lattice_preservation": "a-h in Z^3; Rh+h is automatically integral",
+    "odd_vector_form": "v=2a has all coordinates odd and Rv=-v"
+  },
+  "lattice": {
+    "R_class": "three-dimensional signed permutation matrices",
+    "candidate": "Theta_(R,a)(t,x)=(1-t,Rx+a)",
+    "physical_embedding": "x=n+t(1,1,1)/2",
+    "spatial_directions": "(0,+/-e_i)",
+    "temporal_directions": "(+/-1,+/-(1/2,1/2,1/2))"
+  },
+  "observational_targets_used": false,
+  "pure_time_half_step": {
+    "R": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "Rh_plus_h_twice": [
+      2,
+      2,
+      2
+    ],
+    "admissible": false,
+    "contradiction": "R=I makes involutivity require a=0, while lattice preservation requires a-(1,1,1)/2 in Z^3",
+    "status": "F"
+  },
+  "selected_spatial_symmetry": {
+    "admissible_half_step_intersection_count": 0,
+    "consequence": "no half-step reflection is compatible with the selected A4 spatial stabilizer",
+    "status": "E",
+    "tetrahedral_A4_order": 12
+  },
+  "surviving_site_reflection": {
+    "integer_label_map": "theta(t,n)=(-t,n+t(1,1,1))",
+    "physical_map": "theta(t,x)=(-t,x)",
+    "role": "the direct interacting polar-fermion OS gate must be decided on this site-reflection geometry unless the model symmetry is changed"
+  },
+  "verdict": {
+    "A4_compatible_half_step_reflection_available": false,
+    "interacting_overlap_reflection_positivity_disproved": false,
+    "interacting_overlap_reflection_positivity_proved": false,
+    "status": "E geometry classification; U interacting overlap OS",
+    "usual_pure_time_link_reflection_available": false
+  }
+}

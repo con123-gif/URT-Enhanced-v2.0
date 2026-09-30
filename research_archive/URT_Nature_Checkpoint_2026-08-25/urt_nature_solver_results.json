@@ -1,0 +1,552 @@
+{
+  "a4_su5": {
+    "adjoint_branching": "24=(8,1)_0+(1,3)_0+(1,1)_0+(3,2)_(-5/6)+(bar3,2)_(+5/6)",
+    "cartan_determinant": 5,
+    "centre_t_vacuum_certificate": {
+      "ad_Y_multiplicities": {
+        "+5/6": 6,
+        "-5/6": 6,
+        "0_in_sl5": 12
+      },
+      "centre": "(1,1,1,1,1)/sqrt(5)",
+      "hypercharge_spectrum": [
+        -0.33333333333333337,
+        -0.3333333333333333,
+        -0.33333333333333326,
+        0.4999999999999999,
+        0.5
+      ],
+      "projector_ranks": [
+        3,
+        2
+      ],
+      "tetrahedral_t": "(1,1,1,1,-4)/sqrt(20), up to the A5 orbit"
+    },
+    "gauge_scope": "Physical SU(5) is conditional on treating this copy of A_4 as internal gauge roots and choosing the compact/unitary real form.",
+    "global_cover": {
+      "conclusion": "if fundamental 5/10 matter weights are admitted, the gauge cover is SU(5), not only PSU(5)",
+      "root_lattice": "Q(A_4)",
+      "weight_lattice_quotient": "P/Q = Z5"
+    },
+    "hidden_vs_block_principal_cos2": [
+      -1.1506198617545262e-16,
+      -2.5462321816065717e-17,
+      0.33333333333333304,
+      0.3333333333333334,
+      0.3999999999999999,
+      0.5999999999999996,
+      0.6000000000000002,
+      0.9333333333333329
+    ],
+    "kernel_certificate": "diag(z^-2 A,z^3 B) has kernel z^6=1",
+    "low_energy_group": "S(U(3)xU(2)) = (SU(3)xSU(2)xU(1))/Z6",
+    "nonconflation": "For this adapted block split, the incidence 4-isotypic rank-eight space and the within-block 6+2 coordinate subspace have zero exact intersection.  Equal dimensions never justify identifying them.",
+    "projector_overlap_trace": 3.1999999999999997,
+    "rank": 4,
+    "root_count": 20,
+    "root_datum": "type A_4, giving sl(5,C); its canonical compact real form is su(5)",
+    "root_system": "A_4 = {e_i-e_j : i != j} in sum(x_i)=0",
+    "split_scope": "The coordinate 3+2 split is an adapted Cartan basis.  Relating it to the original tetrahedral t-vacuum requires the corresponding SU(5) basis change.",
+    "tight_frame_error": 1.4043333874306805e-15,
+    "tight_frame_identity": "sum u_ij u_ij^T = 5(I-11^T/5)",
+    "vacuum_root_counts": {
+      "cartan": 4,
+      "colour_to_colour": 6,
+      "cross_XY": 12,
+      "weak_to_weak": 2
+    }
+  },
+  "continuum_lorentz": {
+    "base": "HP^1 minus infinity = H = R4, regulated by a scaled A_4 root lattice",
+    "fermion_regulator_gate": "A chiral lattice Dirac operator is not supplied here; a naive root-lattice Dirac operator has doubling and needs an overlap/Ginsparg-Wilson or equivalent repair.",
+    "hopf_chart": "y=q1 q2^-1=tau+x i+y j+z k on q2 != 0",
+    "lattice": {
+      "directions": 20,
+      "normalized_root_cell_volume": "sqrt(5) a^4/4",
+      "numeric_symbol_error_at_a_1e-3": -1.8056285968626185e-06,
+      "positive_laplacian": "L_a f=(2/(5a^2)) sum_u [f(x)-f(x+a u)]",
+      "principal_symbol": "|k|^2",
+      "quartic_correction": "-a^2[5 sum_(i=1..5) k_i^4+3|k|^4]/120, sum_i k_i=0",
+      "quartic_identity_error": 2.2737367544323206e-13,
+      "tight_frame_error": 3.862726694573076e-15
+    },
+    "lorentz_metric": "g=h-2u tensor u=Omega^2(-d tau^2+d x_vec^2), u=Omega d tau",
+    "newton_repair": "The old finite rank-five projector is only a polarization carrier.  The regulator supplies a continuum scalar wave operator whose static Green function is 1/(4 pi r); a constrained massless spin-2 action, gauge symmetry and Newton normalization still have to be specified.",
+    "repair": "A punctured Hopf chart is one minimal sufficient topology repair; entropy/outer orientation may fix the sign of u on a noncritical clock domain.  Neither the puncture nor clock is selected by the Riemannian quotient alone.",
+    "round_metric": "h=Omega^2(d tau^2+d x_vec^2), Omega=2/(1+|y|^2)",
+    "sample_metric_eigenvalues": [
+      -2.3668639053254434,
+      2.3668639053254434,
+      2.3668639053254434,
+      2.3668639053254434
+    ],
+    "soldering": "Use separate tangent and internal V4 copies.  Their A5-equivariant intertwiner is unique up to one scale; only the finite seed is shared, while Spin(1,3) and SU(5) remain distinct continuous groups.",
+    "topology_no_go": "chi(S4)=2, so compact S4 has no nowhere-zero time vector and no global Lorentz metric"
+  },
+  "density_information_dynamics": {
+    "affinity": "A_rho=log(rho)-log(rho0)+eta K",
+    "dissipative_free_energy_rate": -4.235250706545213,
+    "law": "rho_dot=-i[H,rho]-K_rho(A_rho), with Tr(A_rho[H,rho])=0",
+    "onsager": "K_rho(A)=integral_0^1 rho^s[A-Tr(rho A)I]rho^(1-s) ds",
+    "reversible_free_energy_rate": -3.3306690738754696e-16,
+    "scope": "This closes the information/density sector only.  H, K and their coupling to gauge links, metrics and Grassmann fermions remain part of the finite-action gate.",
+    "sector": "positive trace-one density matrices",
+    "stationary_residual": 5.55880258418021e-16,
+    "stationary_state": "rho*=exp(log(rho0)-eta K)/Z",
+    "tested_choice": "H=A_rho",
+    "trace_rate_abs": 6.672824780506689e-16
+  },
+  "finite_dirac_gate": {
+    "acceptance_test": [
+      "use no CKM, PMNS, mass or cosmology targets",
+      "solve grad Gamma=0",
+      "require positive physical Hessian after gauge zero modes are removed",
+      "certify the selected history orbit globally",
+      "only then compute masses and mixing from the left singular frames"
+    ],
+    "canonical_connection_no_go": "the first-order A4-graded vector connection makes all four generation Grams scalar and equal",
+    "declared_amplitude_to_retain": "T_tilde[f,e]=C5(H_e)+C43(Xi3_e+J q_f/3)+i C45(Xi5_e+J Delta g(q_f)/5)",
+    "exact_no_go_dimensions": {
+      "Hom_A4_HR_to_HL_real": 48,
+      "species_spectral_relative_orientation_flat_space": 16
+    },
+    "minimal_missing_transport": {
+      "count_formula": "E-V+1=19",
+      "independent_cycle_holonomies": 19,
+      "phase_gate": "multiplicity-one Clebsch maps still have relative phases; a C43 sign changes the blind spectral branch and C45 conjugation reverses CP orientation",
+      "reason": "A5 has no two-dimensional irrep, so no nonzero constant global A5-equivariant map Q2 -> V4 exists",
+      "shell_links": 30,
+      "shell_vertices": 12,
+      "tensor": "edgewise oriented charge-plane embedding J_e, equivalently a U(1) connection on the charge complex line"
+    },
+    "next_blind_action": "Gamma[x]=V_edge(x)-eta^(-1) log det(1+exp(-eta D_full(x)^2)), with joint off-diagonal species/history blocks fixed by h_fg and one common real/graded/star convention",
+    "oriented_species_form": {
+      "anomaly_weighted_residual": 2.0297354698375684e-14,
+      "definition": "h_fg=q_f.q_g+i n.(q_f cross q_g)",
+      "eigenvalues": [
+        -2.6399950520834128e-14,
+        -6.868784340663261e-15,
+        2.9716021182696855e-14,
+        112.00000000000006
+      ],
+      "names": [
+        "u",
+        "d",
+        "e",
+        "nu"
+      ],
+      "rank": 1,
+      "rank_one_identity_error": 1.11679598287472e-12
+    },
+    "required_passive_relative_operator": "R_f,e=K0_f^(-1/2) K_f,e K0_f^(-1/2), with K0_f derived from rho0",
+    "required_positive_operator": "K_f,e=T_tilde[f,e]^dagger T_tilde[f,e], including every interference term",
+    "status": "No unique blind stationary point exists with the stored constant-frame tensors.  J_e/its 19 cycle holonomies and the history push-forward defining K0 are the exact missing objects, not discarded problems.",
+    "uniform_edge_passive_candidate": {
+      "archived_matrix_residual": 2.97e-16,
+      "result": "K0^(1-link)=(23/45) I3 for p0=1/30 on the 30-edge alphabet",
+      "scope": "Exact for that uniform one-link ensemble, but the push-forward from exterior rho0 through physical histories is not derived."
+    }
+  },
+  "fluid_information_limit": null,
+  "frozen_primitives": {
+    "D": 3,
+    "Delta": 0.002489189840420375,
+    "E": 30,
+    "F": 20,
+    "N": 13,
+    "V": 12,
+    "d_classical": 0.15,
+    "d_star": 0.14751081015957962,
+    "eta_Delta": 5.995797986741314,
+    "gamma": 0.012345679012345678,
+    "hidden": 8,
+    "phi": 1.618033988749895,
+    "q": 5
+  },
+  "historical_branches": [
+    {
+      "branch": "global URT contraction creates chaos",
+      "now": "replaced by expanding base + contracting fibres + history lift",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "time-independent scalar gradient creates period six",
+      "now": "reversible/dissipative split",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "one-parameter logistic identifies both rails",
+      "now": "zero-preserving capacity map solves both rails",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "old logistic delta equals geometric d_star",
+      "now": "mismatch measured and reconciled by two-rail closure",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "SU(5) inserted as a shortcut",
+      "now": "A_4 roots provide a canonical SU(5) envelope if compact internal gauging is admitted",
+      "old": "WITHDRAWN"
+    },
+    {
+      "branch": "nested G2>SU3>SU2 is the SM gauge product",
+      "now": "Spin7 chain is generation history; block stabilizer is commuting SM group",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "compact S4 is global spacetime",
+      "now": "one sufficient repair is a punctured Hopf chart with a chosen clock",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "A_4 roots equal icosahedral face centres metrically",
+      "now": "only the A5-set/module equivalence is retained",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "hidden 4+4 equals the 6+2 unbroken root subset",
+      "now": "principal-angle spectrum proves zero exact intersection",
+      "old": "FORBIDDEN_CONFLATION"
+    },
+    {
+      "branch": "finite fiveplet projector yields Newton 1/r",
+      "now": "fiveplet is polarization; continuum scalar propagation exists but spin-2 dynamics remains open",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "pure scalar gradient yields magnetic force",
+      "now": "skew Hodge/gauge mobility supplies energy-preserving deflection",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "H21 state module is pre-Bianchi curvature",
+      "now": "distinct modules retained; hidden 4+5 maps only to traceless Ricci",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "endpoint/static/ribbon selector predicts CKM/PMNS",
+      "now": "finite Dirac gate requires oriented noncommuting history curvature",
+      "old": "WITHDRAWN"
+    },
+    {
+      "branch": "response mass/cosmology arithmetic is derived physics",
+      "now": "retained as conditional response-model outputs",
+      "old": "UNSUPPORTED"
+    },
+    {
+      "branch": "mod-9 doubling proves Mersenne primality",
+      "now": "C6 residue arithmetic only",
+      "old": "FALSIFIED"
+    },
+    {
+      "branch": "13-velocity moments alone prove Navier-Stokes",
+      "now": "exact isotropy retained; BGK/continuum assumptions explicit",
+      "old": "UNSUPPORTED"
+    },
+    {
+      "branch": "finite core already proves Born/Einstein/Newton",
+      "now": "conditional theorems separated from missing dynamics and scale",
+      "old": "UNSUPPORTED"
+    },
+    {
+      "branch": "A5 fiveplet is an SU5 fundamental Higgs 5",
+      "now": "modules differ: 5_A5 versus (1+4)_A5",
+      "old": "FORBIDDEN_CONFLATION"
+    },
+    {
+      "branch": "K3=12 alone selects the icosahedron",
+      "now": "only average valence follows; selection functional remains an action gate",
+      "old": "UNSUPPORTED"
+    },
+    {
+      "branch": "May v9 ARF masses were zero-fit predictions",
+      "now": "optimization against mass/Higgs targets is recorded as fitting",
+      "old": "FALSIFIED_BY_ARCHIVE"
+    },
+    {
+      "branch": "May v9 QFT/nuclear/EEG/scale-ladder claims",
+      "now": "retained in provenance ledger, not promoted",
+      "old": "UNVERIFIED_TRUNCATED_SOURCE"
+    },
+    {
+      "branch": "old 100 microsecond North Star net gain",
+      "now": "engineering branch retained with corrected power balance",
+      "old": "WITHDRAWN"
+    }
+  ],
+  "history_chaos": {
+    "a": 1.1557273497909217,
+    "angle": "x' = 2x mod 1 (theta shift may be added)",
+    "history_inverse_error": 1.1102230246251565e-16,
+    "history_lift": "b=floor(2x); x'=2x-b; p'=(p+b)/2",
+    "lyapunov_exponents": [
+      0.6931471805599453,
+      -0.6931471805599453,
+      -0.9752697998857527
+    ],
+    "lyapunov_sum": -0.9752697998857527,
+    "old_global_contraction_no_go": "A strict global contraction has only a fixed-point attractor and all Lyapunov exponents negative; it cannot produce the period-six/chaotic branch.",
+    "potential": "V=(a-1)[r^6/(6r*^4)-r^2/2+r*^2/3]",
+    "r_star": 0.6923076923076923,
+    "radial_invariant_interval": [
+      0.0,
+      1.1426725158986202
+    ],
+    "radial_map": "R(r)=r[a-(a-1)(r/r*)^4]",
+    "radial_maximum_image": 0.7065203222487884,
+    "repair": "Use invertible reversible history transport plus transverse entropy relaxation. Tracing out p recovers angular doubling while the radial fibre contracts.",
+    "unit_gradient_step_error": 1.1102230246251565e-16
+  },
+  "master_dynamics": {
+    "continuous_free_energy_form": "Xdot=[J(X)-M(X)] deltaPhi/deltaX",
+    "expected_dissipation": -86.36334907022024,
+    "free_energy_derivative_test": -86.36334907022024,
+    "generic_extension": "Xdot=J deltaE+M deltaS with J*=-J, M*=M>=0 and degeneracy conditions J deltaS=0, M deltaE=0",
+    "lorentz_force_repair": "Antisymmetric J supplies v cross B / symplectic transport with v.Jv=0; scalar dissipation alone cannot do so.",
+    "operators": "J*=-J carries Hodge/gauge/Lorentz transport; M*=M>=0 carries relative-information relaxation",
+    "pure_gradient_no_go": "For M>0, Phi strictly decreases off equilibria, so an autonomous pure gradient flow cannot carry a nontrivial cycle or chaos.",
+    "quantum_status": "The reversible sector may be represented unitarily and the 16-state branching is exact, but Born measurement remains conditional on norm-squared/refinement axioms rather than proved by this dynamics.",
+    "skew_power_error": -3.027240557475849e-18,
+    "split_step": "Y_n=B_J(X_n) by reversible two-sheet/history transport; rho_(n+1)=argmin_rho {D_KL(rho||Y_n)+dt Phi[rho]} on a specified probability/density manifold"
+  },
+  "master_state": {
+    "gates": {
+      "absolute_scale": {
+        "content": "A dimensionless finite core cannot determine a number carrying units, so one lattice length a_* is unavoidable. That does not select dimensionless gravity/cosmology coefficients such as G/a_*^2 or Lambda a_*^2.",
+        "status": "SCALE_AND_DIMENSIONLESS_COUPLINGS_OPEN"
+      },
+      "archive_completeness": {
+        "content": "The migration manifest names all_my_colab_work_combined.md (322 notebooks), but that source is absent; newtons_cathedral.pdf is truncated/corrupt and only four streams are recoverable.",
+        "status": "SOURCE_GAP"
+      },
+      "chiral_lattice_dirac": {
+        "content": "continuum scalar symbol passes; chiral fermions still require a doubling-safe lattice Dirac construction",
+        "status": "OPEN_WELL_POSED"
+      },
+      "cosmology_slots": {
+        "content": "retained arithmetic; no Friedmann/inflation/baryogenesis action yet",
+        "status": "QUARANTINED_CONDITIONAL"
+      },
+      "finite_dirac_yukawa": {
+        "content": "A4 covariance leaves 48 real intertwiner dimensions; spectral-only actions leave 16 relative-orientation dimensions. The required selector is the oriented noncommuting three-return curvature retaining the charge-plane two-form.",
+        "status": "OPEN_WELL_POSED"
+      },
+      "finite_seed_geometry": {
+        "content": "13 centred states, 42 edges, 20 faces, hidden 4+4",
+        "status": "EXACT_FOR_SUPPLIED_SEED"
+      },
+      "flavour_mass_response_numbers": {
+        "content": "retained as outputs of the August response-routing axiom, not eigenvalues of the selected Dirac operator",
+        "status": "QUARANTINED_CONDITIONAL"
+      },
+      "gravity_equation": {
+        "content": "A_4 continuum supplies propagation and the hidden 4+5 source is exactly traceless-Ricci typed. Einstein-Hilbert form follows only after locality/diffeomorphism/second-order assumptions; one length supplies units, while G/a_*^2 and Lambda a_*^2 remain unselected.",
+        "status": "PROPAGATION_CARRIER_REPAIRED_DYNAMICS_OPEN"
+      },
+      "history_chaos": {
+        "content": "baker natural extension plus exact radial relaxation",
+        "status": "MATHEMATICAL_PASS_PHYSICAL_SELECTION_OPEN"
+      },
+      "icosahedron_selection": {
+        "content": "K3=12 plus Euler/triangular counting fixes average valence five, not 5-regularity or the unique icosahedron. The log-distance/Coulomb simulations select it only after an energy functional is supplied.",
+        "status": "OPEN_WELL_POSED"
+      },
+      "lorentzian_base": {
+        "content": "chosen punctured HP1 chart, clock reflection and A_4 continuum regulator",
+        "status": "CONDITIONAL_CONSTRUCTION"
+      },
+      "north_star_reactor": {
+        "content": "retained, but it is not evidence for the fundamental theory and the old 100 microsecond gain claim remains withdrawn",
+        "status": "SEPARATE_ENGINEERING_MODEL"
+      },
+      "one_matter_family": {
+        "content": "Lambda-even C5 = 16 with exact SM branching and anomalies",
+        "status": "EXACT_BRANCHING_PHYSICAL_DICTIONARY_OPEN"
+      },
+      "standard_model_group": {
+        "content": "A_4 roots -> SU5 -> S(U3xU2)",
+        "status": "PASS_GIVEN_GAUGING"
+      },
+      "su5_breaking_higgs": {
+        "content": "The selected 3+2 decomposition fixes the stabilizer, but its dynamical breaking field and scale are not selected. The existing A5-irreducible V5 is not an SU5 fundamental 5, whose A5 restriction is 1+4.",
+        "status": "OPEN_WELL_POSED"
+      },
+      "three_generations": {
+        "content": "outer Spin(7) return flag has stabilizers 14->8->3->0",
+        "status": "STRUCTURAL_PASS_PHYSICAL_DICTIONARY_OPEN"
+      }
+    },
+    "law_template": "reversible covariant/history transport followed by constrained relative-information relaxation.  This is not closed until E/Phi, J, M, constraints, measure, gauge action and finite Dirac operator are specified.",
+    "state": {
+      "base": "punctured quaternionic Hopf chart, A_4-regulated",
+      "hidden": "Hodge-paired quartets with stiffness 3 I4 + 5 I4",
+      "history": "outer two-sheet bit, baker conjugate p, radial entropy coordinate",
+      "internal_gauge": "W5_C with SU(5) root/weight data and 3+2 vacuum",
+      "links": "S(U3xU2) gauge holonomies plus spin connection",
+      "matter": "Lambda^even W5_C tensor three-return flag"
+    }
+  },
+  "schema": "urt-nature-solver-v1",
+  "standard_model_family": {
+    "A5_equivariant_bridge": "5|A5=1+4; 10=Lambda^2(5)|A5=4+3+3'; hence 1+10+bar5 restricts as 2*1+2*4+3+3', exactly Lambda^bullet(V4).",
+    "ambient_space": "W5_C = C centre + (V4_root)_C",
+    "anomaly_residuals": {
+      "SU2_squared_U1": 0.0,
+      "SU3_squared_U1": 0.0,
+      "U1_cubed": 2.2898349882893854e-16,
+      "Witten_SU2_doublets_mod2": 0,
+      "gravity2_U1": 0.0
+    },
+    "bare_angle_scope": "sin^2(theta_W)=3/8 follows at a boundary only after imposing one unified canonically normalized kinetic coupling; it is not the measured infrared angle.",
+    "bare_sin2_thetaW": 0.375,
+    "exterior_dimensions": {
+      "Lambda_bullet_V4": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "Lambda_even_W5": [
+        1,
+        10,
+        5
+      ]
+    },
+    "fock_identity": "Lambda^even(C centre + V4_C) = Lambda^even(V4_C) + centre wedge Lambda^odd(V4_C) ~= Lambda^bullet(V4_C)",
+    "hypercharge": "Y=diag(-1/3,-1/3,-1/3,1/2,1/2)=diag(-2,-2,-2,3,3)/6",
+    "multiplets": [
+      {
+        "Y": 0.0,
+        "degree": 0,
+        "dimension": 1,
+        "name": "nu^c",
+        "rep": "(1,1)"
+      },
+      {
+        "Y": -0.6666666666666666,
+        "degree": 2,
+        "dimension": 3,
+        "name": "u^c",
+        "rep": "(bar3,1)"
+      },
+      {
+        "Y": 0.16666666666666666,
+        "degree": 2,
+        "dimension": 6,
+        "name": "Q",
+        "rep": "(3,2)"
+      },
+      {
+        "Y": 1.0,
+        "degree": 2,
+        "dimension": 1,
+        "name": "e^c",
+        "rep": "(1,1)"
+      },
+      {
+        "Y": -0.5,
+        "degree": 4,
+        "dimension": 2,
+        "name": "L",
+        "rep": "(1,2)"
+      },
+      {
+        "Y": 0.3333333333333333,
+        "degree": 4,
+        "dimension": 3,
+        "name": "d^c",
+        "rep": "(bar3,1)"
+      }
+    ],
+    "physical_dictionary_assumptions": [
+      "complexify W5",
+      "choose Lambda-even chirality",
+      "interpret the Fock module as fermionic matter",
+      "gauge the compact 3+2 block stabilizer"
+    ],
+    "quartet_scope": "V4_root is the standard A_4 root-lattice module.  It is not silently identified with either incidence-hidden quartet 4_3 or 4_5.",
+    "status": "Exact representation branching and anomaly calculation.  Its interpretation as one physical family is conditional on the stated dictionary.",
+    "trace_kY_over_k2": 1.6666666666666665,
+    "vacuum_split": "W5_C = C3_colour + C2_weak, with C2=span(centre,t)"
+  },
+  "two_rail_dynamics": {
+    "geometric_rails": {
+      "Delta": 0.002489189840420375,
+      "d_classical": 0.15,
+      "d_star": 0.14751081015957962
+    },
+    "one_parameter_logistic_no_go": {
+      "all_roots_of_f3_dstar_equals_dclassical": [
+        1.180888268973763,
+        3.8415842953342874
+      ],
+      "conclusion": "one parameter cannot put both geometric rails on the same period-six orbit",
+      "domain": "0 <= r <= 4",
+      "f6_return_residual_at_those_roots": [
+        0.003901357289932933,
+        1.821306403917977e-05
+      ],
+      "its_f3_minus_dclassical": -8.052987454573723e-05,
+      "period6_return_root_near_archive": 3.8416737869947086
+    },
+    "rejected_equal_parameter_repair": {
+      "c": -0.00016434369852395394,
+      "map": "f(x)=r x(1-x)+c",
+      "orbit": [
+        0.14751081015957962,
+        0.4829887822271362,
+        0.9592563360709444,
+        0.1499999999999994,
+        0.4897072421401842,
+        0.9599611389716557
+      ],
+      "r": 3.842130085009489,
+      "reason_not_selected": "c != 0 destroys the exact vacuum f(0)=0"
+    },
+    "selected_minimal_repair": {
+      "K": 1.000273169040965,
+      "cycle_multiplier": 0.9394884346742104,
+      "f3_residual": -1.1102230246251565e-16,
+      "f6_residual": -9.71445146547012e-16,
+      "interpretation": "This interpolates the two already supplied geometric rails; it does not independently predict them.",
+      "lyapunov_per_step": -0.010403295048396485,
+      "map": "f(x)=r x (1-x/K)",
+      "maps_unit_interval_into_itself": true,
+      "minimum_cycle_separation": 0.000704802931541515,
+      "orbit": [
+        0.14751081015957962,
+        0.4831200562488416,
+        0.9595716464912569,
+        0.14999999999999988,
+        0.4898385158233831,
+        0.9602764494227984
+      ],
+      "r": 3.841685569463323,
+      "selection": "general zero-preserving quadratic; stable continuation of archived six-cycle",
+      "unit_interval_certificate": {
+        "f(0)": 0.0,
+        "f(1)": 0.0010491429693203604,
+        "f(K/2)": 0.9606837497565056
+      }
+    },
+    "status": "The rail mismatch is solved without observed physical targets.  This is one locally selected stable, minimal-degree branch; it is not a global uniqueness theorem over all map families."
+  },
+  "verification": {
+    "all_internal_assertions_pass": true,
+    "honesty_gate": "Physical gauging, seed selection, breaking/Higgs dynamics, chiral lattice Dirac, finite Yukawa/history action, gravity coefficients and a scale remain explicit; conditional response numbers are not promoted.",
+    "new_mathematical_closures": [
+      "A_4 compact gauge envelope -> Standard Model block stabilizer (conditional on gauging)",
+      "one chiral 16-state Standard Model branching",
+      "two geometric rails on one stable zero-preserving quadratic cycle",
+      "invertible history lift of bounded chaos",
+      "Lorentz-signature metric on a chosen punctured Hopf chart",
+      "A_4 isotropic continuum principal symbol",
+      "verified reversible/dissipative law template",
+      "trace-preserving Kubo-Mori information-sector evolution",
+      "13-velocity entropic-BGK moment closure (conditional continuum limit)",
+      "rank-one oriented species form and target-free finite-Dirac acceptance equation"
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "certificate": "URT literal entropy gauge-coupling phenomenology",
+  "comparison_protocol": "post-freeze test of c*nu=1; no parameter was adjusted in the tested branch",
+  "conventions": {
+    "alpha1": "(5/3) alpha_EM / cos^2(theta_W)",
+    "alpha2": "alpha_EM / sin^2(theta_W)",
+    "alpha3": "alpha_s",
+    "one_loop_beta_coefficients": {
+      "alpha1": 4.1,
+      "alpha2": -3.1666666666666665,
+      "alpha3": -7.0
+    },
+    "running": "alpha_i^-1(mu)=alpha_i^-1(MZ)-b_i ln(mu/MZ)/(2pi)",
+    "scope_warning": "one-loop Standard Model running only; no threshold or new-matter corrections"
+  },
+  "date": "2026-09-04",
+  "formal_alpha1_literal_scale": {
+    "inverse_couplings_at_that_scale": {
+      "alpha1": 1.7650848012212066,
+      "alpha2": 73.79834393564215,
+      "alpha3": 106.20064984471121
+    },
+    "log_mu_over_MZ": 87.71871851507458,
+    "mu_GeV": 1.136823653629642e+40,
+    "not_a_common_crossing": true
+  },
+  "frozen_literal_prediction": {
+    "alpha_U": 0.5665450177283993,
+    "alpha_U_inverse": 1.7650848012212126,
+    "formula": "alpha_U=pi/(8 log 2)",
+    "premise": "c*nu=1"
+  },
+  "measured_scale_couplings": {
+    "direct": {
+      "alpha1": 0.016947819070733325,
+      "alpha2": 0.033796423532007645,
+      "alpha3": 0.118
+    },
+    "inverse": {
+      "alpha1": 59.004642180000005,
+      "alpha2": 29.5889297,
+      "alpha3": 8.474576271186441
+    },
+    "literal_over_measured": {
+      "alpha1": 33.42878604992596,
+      "alpha2": 16.76346070145086,
+      "alpha3": 4.8012289637999945
+    }
+  },
+  "monotonic_literal_no_go": {
+    "alpha2_at_MZ": 0.033796423532007645,
+    "alpha2_decreases_for_mu_above_MZ": true,
+    "alpha3_at_MZ": 0.118,
+    "alpha3_decreases_for_mu_above_MZ": true,
+    "b2_negative": true,
+    "b3_negative": true,
+    "literal_alpha_U": 0.5665450177283993,
+    "literal_common_coupling_impossible_for_mu_at_or_above_MZ": true,
+    "proof": "b2,b3<0 imply d(alpha_i^-1)/d ln(mu)>0; hence alpha2 and alpha3 decrease above MZ and never reach the larger literal value"
+  },
+  "observational_targets_used": true,
+  "pairwise_one_loop_crossings": [
+    {
+      "coupling": 0.02358062139117885,
+      "crossing_residual": 0.0,
+      "inverse_coupling": 42.40770348715597,
+      "literal_to_crossing_coupling_ratio": 24.02587312395148,
+      "log_mu_over_MZ": 25.434546668058058,
+      "mu_GeV": 10139603163068.572,
+      "pair": [
+        "alpha1",
+        "alpha2"
+      ],
+      "required_c_times_nu": 24.02587312395148,
+      "spectator": "alpha3",
+      "spectator_coupling": 0.027165930789562757,
+      "spectator_fractional_coupling_mismatch": 0.1520447378763783,
+      "spectator_inverse_coupling": 36.81081306384699,
+      "spectator_inverse_mismatch": -5.596890423308977
+    },
+    {
+      "coupling": 0.024789055302228306,
+      "crossing_residual": 7.105427357601002e-15,
+      "inverse_coupling": 40.340383601068865,
+      "literal_to_crossing_coupling_ratio": 22.85464334243799,
+      "log_mu_over_MZ": 28.6026817737904,
+      "mu_GeV": 240948680621929.16,
+      "pair": [
+        "alpha1",
+        "alpha3"
+      ],
+      "required_c_times_nu": 22.85464334243799,
+      "spectator": "alpha2",
+      "spectator_coupling": 0.022724993013674342,
+      "spectator_fractional_coupling_mismatch": -0.08326506449676696,
+      "spectator_inverse_coupling": 44.00441396828015,
+      "spectator_inverse_mismatch": 3.664030367211282
+    },
+    {
+      "coupling": 0.021262471282733814,
+      "crossing_residual": 0.0,
+      "inverse_coupling": 47.031221662932936,
+      "literal_to_crossing_coupling_ratio": 26.645304310814616,
+      "log_mu_over_MZ": 34.60836397422215,
+      "mu_GeV": 9.775954965628517e+16,
+      "pair": [
+        "alpha2",
+        "alpha3"
+      ],
+      "required_c_times_nu": 26.645304310814616,
+      "spectator": "alpha1",
+      "spectator_coupling": 0.027456337160808707,
+      "spectator_fractional_coupling_mismatch": 0.29130507906221714,
+      "spectator_inverse_coupling": 36.421464164834205,
+      "spectator_inverse_mismatch": -10.60975749809873
+    }
+  ],
+  "sources": {
+    "electroweak": {
+      "citation": "Particle Data Group, Electroweak Model and Constraints on New Physics, revised April 2024",
+      "inputs": {
+        "M_Z_GeV": [
+          91.188,
+          0.002
+        ],
+        "alpha_MSbar_5_inverse_MZ": [
+          127.93,
+          0.008
+        ],
+        "sin2_thetaW_MSbar_MZ": [
+          0.23129,
+          4e-05
+        ]
+      },
+      "url": "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-standard-model.pdf"
+    },
+    "strong": {
+      "citation": "Particle Data Group, Quantum Chromodynamics, 2024 review; PDG 2023 average quoted in the 2024 edition",
+      "inputs": {
+        "alpha_s_MZ": [
+          0.118,
+          0.0009
+        ]
+      },
+      "url": "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-qcd.pdf"
+    }
+  },
+  "verdict": {
+    "cost_of_survival": "the entropy number is not an absolute coupling prediction; the alpha1-alpha2 crossing requires c*nu equal to the reported value",
+    "literal_branch_status": "F under the stated spectral-action/SM-running identification",
+    "literal_c_times_nu_equals_one_branch_matches_SM_unification": false,
+    "one_loop_minimal_SM_has_exact_triple_crossing": false,
+    "reason_whole_framework_survives": "c*nu is already an unfixed normalization and thresholds/new matter are not derived; allowing either removes the literal prediction",
+    "status": "F literal normalization-one phenomenology; U normalized theory",
+    "whole_framework_falsified": false
+  }
+}

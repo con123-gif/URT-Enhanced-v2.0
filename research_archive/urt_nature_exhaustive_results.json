@@ -1,0 +1,587 @@
+{
+  "constants": {
+    "D": 3,
+    "N": 13,
+    "V": 12,
+    "E_shell": 30,
+    "F": 20,
+    "q": 5,
+    "G": 60,
+    "phi": 1.618033988749895,
+    "gamma": 0.012345679012345678,
+    "delta_classical": 0.15,
+    "delta_star": 0.14751081015957962,
+    "Delta": 0.002489189840420375,
+    "eta_Delta": 5.995797986741314,
+    "eta_conf": 9.8601129428,
+    "eta_IR": 15.697202919
+  },
+  "dimensionless_residues": {
+    "alpha_inverse_dressed": 137.035999178195,
+    "sin2_thetaW_root": 0.23076923076923078,
+    "alpha_s_face": 0.11834319526627218,
+    "Omega_m": 0.3157894736842105,
+    "Omega_Lambda": 0.6842105263157895,
+    "Omega_b": 0.048582995951417005,
+    "Omega_c": 0.2672064777327935,
+    "n_s": 0.9654521528033834,
+    "r": 0.0004916918203299506,
+    "running_residue": -6.1960660616520115e-06
+  },
+  "geometry_and_hodge": {
+    "shell_edges": 30,
+    "centred_edges": 42,
+    "faces": 20,
+    "chain_error": 0.0,
+    "euler_characteristic": -9,
+    "betti": {
+      "b0": 1,
+      "b1": 11,
+      "b2": 1
+    },
+    "L0_spectrum": [
+      {
+        "value": -2.220446049250313e-16,
+        "multiplicity": 1
+      },
+      {
+        "value": 3.7639320225001995,
+        "multiplicity": 3
+      },
+      {
+        "value": 6.999999999999996,
+        "multiplicity": 5
+      },
+      {
+        "value": 8.236067977499786,
+        "multiplicity": 3
+      },
+      {
+        "value": 13.0,
+        "multiplicity": 1
+      }
+    ],
+    "L1_spectrum": [
+      {
+        "value": -1.9677232353420065e-15,
+        "multiplicity": 11
+      },
+      {
+        "value": 0.7639320225002063,
+        "multiplicity": 3
+      },
+      {
+        "value": 1.9999999999999976,
+        "multiplicity": 5
+      },
+      {
+        "value": 2.999999999999997,
+        "multiplicity": 4
+      },
+      {
+        "value": 3.763932022500209,
+        "multiplicity": 3
+      },
+      {
+        "value": 4.999999999999994,
+        "multiplicity": 4
+      },
+      {
+        "value": 5.23606797749979,
+        "multiplicity": 3
+      },
+      {
+        "value": 6.9999999999999964,
+        "multiplicity": 5
+      },
+      {
+        "value": 8.236067977499788,
+        "multiplicity": 3
+      },
+      {
+        "value": 13.000000000000002,
+        "multiplicity": 1
+      }
+    ],
+    "L2_spectrum": [
+      {
+        "value": -1.5543122344752192e-15,
+        "multiplicity": 1
+      },
+      {
+        "value": 0.7639320225002084,
+        "multiplicity": 3
+      },
+      {
+        "value": 1.9999999999999976,
+        "multiplicity": 5
+      },
+      {
+        "value": 2.999999999999997,
+        "multiplicity": 4
+      },
+      {
+        "value": 4.999999999999998,
+        "multiplicity": 4
+      },
+      {
+        "value": 5.236067977499789,
+        "multiplicity": 3
+      }
+    ],
+    "Hodge_Dirac_spectrum": [
+      {
+        "value": -3.6055512754639882,
+        "multiplicity": 1
+      },
+      {
+        "value": -2.8698550446842788,
+        "multiplicity": 3
+      },
+      {
+        "value": -2.6457513110645907,
+        "multiplicity": 5
+      },
+      {
+        "value": -2.288245611270736,
+        "multiplicity": 3
+      },
+      {
+        "value": -2.2360679774997947,
+        "multiplicity": 4
+      },
+      {
+        "value": -1.9400855709221208,
+        "multiplicity": 3
+      },
+      {
+        "value": -1.7320508075688767,
+        "multiplicity": 4
+      },
+      {
+        "value": -1.4142135623730963,
+        "multiplicity": 5
+      },
+      {
+        "value": -0.8740320488976437,
+        "multiplicity": 3
+      },
+      {
+        "value": -1.9929434950622756e-15,
+        "multiplicity": 13
+      },
+      {
+        "value": 0.8740320488976425,
+        "multiplicity": 3
+      },
+      {
+        "value": 1.414213562373092,
+        "multiplicity": 5
+      },
+      {
+        "value": 1.7320508075688743,
+        "multiplicity": 4
+      },
+      {
+        "value": 1.9400855709221196,
+        "multiplicity": 3
+      },
+      {
+        "value": 2.2360679774997854,
+        "multiplicity": 4
+      },
+      {
+        "value": 2.288245611270737,
+        "multiplicity": 3
+      },
+      {
+        "value": 2.6457513110645876,
+        "multiplicity": 5
+      },
+      {
+        "value": 2.869855044684276,
+        "multiplicity": 3
+      },
+      {
+        "value": 3.6055512754639896,
+        "multiplicity": 1
+      }
+    ],
+    "hidden_dimension": 8,
+    "hidden_face_spectrum": [
+      {
+        "value": 3.0,
+        "multiplicity": 4
+      },
+      {
+        "value": 5.0,
+        "multiplicity": 4
+      }
+    ]
+  },
+  "edge_shadow_tight_frames": {
+    "phi_norm_squared": 1.0000000000000007,
+    "xi3_norm_squared": 0.4,
+    "xi5_norm_squared": 0.13333333333333314,
+    "phi_covariance_eigenvalues": [
+      0.19999999999999982,
+      0.19999999999999998,
+      0.20000000000000004,
+      0.20000000000000007,
+      0.2000000000000001
+    ],
+    "xi3_covariance_eigenvalues": [
+      0.09999999999999996,
+      0.09999999999999998,
+      0.10000000000000005,
+      0.10000000000000009
+    ],
+    "xi5_covariance_eigenvalues": [
+      0.0333333333333333,
+      0.03333333333333331,
+      0.033333333333333326,
+      0.033333333333333354
+    ],
+    "cross_covariance_norms": {
+      "phi_xi3": 1.915137887412312e-15,
+      "phi_xi5": 1.5712118539656986e-15,
+      "xi3_xi5": 5.026765041661796e-15
+    }
+  },
+  "entropy_vacuum": {
+    "edge_coexistence_eta": 4.778025251274813,
+    "isotropic_spinodal_eta": 5.0,
+    "eta_orientation": 7.616838968785596,
+    "phi_r_at_threshold": 0.9832360776406837,
+    "xi5_t_at_threshold": 0.19443505075311493,
+    "at_eta_Delta": {
+      "eta": 5.995797986741314,
+      "potential": -0.07548862041951931,
+      "edge_index": 0,
+      "coefficients": {
+        "phi_r": 0.928178049585218,
+        "xi3_s": -8.913433068943028e-10,
+        "xi5_t": 0.17645369560719557
+      },
+      "norms": {
+        "phi": 0.9281780495852184,
+        "xi3": 5.77907786031782e-10,
+        "xi5": 0.06443177962614079
+      },
+      "gradient_norm": 1.091785090579355e-09,
+      "hessian_min": 0.6928125330795069,
+      "hessian_spectrum": [
+        0.6928125330795069,
+        0.7584378126490773,
+        0.7898490455307673,
+        0.8929952695736204,
+        0.8930159050424126,
+        0.8930159052005403,
+        2.9293273895413026,
+        2.929410557707649,
+        2.984505045405449,
+        4.900829453643757,
+        4.976470185902547,
+        4.97676143113787,
+        4.976761431139393
+      ],
+      "relative_entropy": 2.1923471121071825,
+      "dominant_probability": 0.4526928804491385
+    },
+    "at_eta_conf": {
+      "eta": 9.8601129428,
+      "potential": -0.2443806448569127,
+      "edge_index": 0,
+      "coefficients": {
+        "phi_r": 0.9979703600653207,
+        "xi3_s": 0.25331195440487886,
+        "xi5_t": 0.19932389162978909
+      },
+      "norms": {
+        "phi": 0.9979703689196635,
+        "xi3": 0.1602085468936279,
+        "xi5": 0.07278279446356704
+      },
+      "gradient_norm": 1.5941348812236303e-09,
+      "hessian_min": 0.9848067397509933,
+      "hessian_spectrum": [
+        0.9848067397509933,
+        0.9900022647042083,
+        0.9944282136962681,
+        0.9950852928670714,
+        0.9955654301092679,
+        1.3407830156697926,
+        2.9966687165945634,
+        2.9969693902960004,
+        2.999331567347044,
+        4.994483897868566,
+        4.9988889738637985,
+        4.998889630311642,
+        4.998889885115059
+      ],
+      "relative_entropy": 3.0106404372221935,
+      "dominant_probability": 0.8782204754723733
+    },
+    "at_eta_IR": {
+      "eta": 15.697202919,
+      "potential": -0.36435598823678217,
+      "edge_index": 0,
+      "coefficients": {
+        "phi_r": 0.9999874397409955,
+        "xi3_s": -0.3218166455989144,
+        "xi5_t": 0.19999581327770558
+      },
+      "norms": {
+        "phi": 0.9999874397443478,
+        "xi3": 0.2035347178095543,
+        "xi5": 0.07302814555919365
+      },
+      "gradient_norm": 5.092929466981842e-10,
+      "hessian_min": 0.9998434626463927,
+      "hessian_spectrum": [
+        0.9998434626463927,
+        0.9999014201507062,
+        0.9999331102279212,
+        0.9999593734830281,
+        0.999968308826102,
+        2.5736865691144337,
+        2.999967140619129,
+        2.999976526156759,
+        2.9999934279632594,
+        4.9999452369489275,
+        4.999989046723432,
+        4.9999890467499615,
+        4.999989046844577
+      ],
+      "relative_entropy": 3.313739165588288,
+      "dominant_probability": 0.9827124124527099
+    },
+    "interpretation": "At eta_Delta the fiveplet and 4_5 shadow are nonzero but 4_3 is zero. At eta_orientation the paired-edge Z2 orientation symmetry bifurcates; above it both shadow quartets are nonzero, giving 30 oriented minima."
+  },
+  "charge_hierarchy": {
+    "up": {
+      "word": [
+        1,
+        3,
+        -4
+      ],
+      "entries": [
+        0.9999998149217837,
+        0.00746750782852236,
+        -2.4737994692534334e-05
+      ],
+      "absolute_sorted": [
+        2.4737994692534334e-05,
+        0.00746750782852236,
+        0.9999998149217837
+      ],
+      "normalized_to_largest": [
+        2.4737999270999115e-05,
+        0.007467509210595645,
+        1.0
+      ],
+      "formal_smith_depths": [
+        0,
+        1,
+        2
+      ]
+    },
+    "down": {
+      "word": [
+        1,
+        -3,
+        2
+      ],
+      "entries": [
+        0.9999999074608918,
+        -0.0074675386748917424,
+        1.234586256923031e-05
+      ],
+      "absolute_sorted": [
+        1.234586256923031e-05,
+        0.0074675386748917424,
+        0.9999999074608918
+      ],
+      "normalized_to_largest": [
+        1.2345863711705528e-05,
+        0.007467539365931176,
+        1.0
+      ],
+      "formal_smith_depths": [
+        0,
+        1,
+        2
+      ]
+    },
+    "charged_lepton": {
+      "word": [
+        -3,
+        -3,
+        6
+      ],
+      "entries": [
+        -3.0000002776173242,
+        -0.007467847138585567,
+        3.731520503213321e-05
+      ],
+      "absolute_sorted": [
+        3.731520503213321e-05,
+        0.007467847138585567,
+        3.0000002776173242
+      ],
+      "normalized_to_largest": [
+        1.2438400526339246e-05,
+        0.0024892821491725725,
+        1.0
+      ],
+      "formal_smith_depths": [
+        0,
+        1,
+        2
+      ]
+    },
+    "neutrino": {
+      "word": [
+        -3,
+        3,
+        0
+      ],
+      "entries": [
+        -3.0,
+        0.007467569521261125,
+        -1.3880866222113905e-07
+      ],
+      "absolute_sorted": [
+        1.3880866222113905e-07,
+        0.007467569521261125,
+        3.0
+      ],
+      "normalized_to_largest": [
+        4.6269554073713016e-08,
+        0.002489189840420375,
+        1.0
+      ],
+      "formal_smith_depths": [
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  "hypercharge_anomalies": {
+    "charges": [
+      1,
+      3,
+      4,
+      -2,
+      -3,
+      -6,
+      0
+    ],
+    "SU2_squared_U1": 0,
+    "SU3_squared_U1": 0,
+    "gravity_squared_U1": 0,
+    "U1_cubed": 0
+  },
+  "supplied_mixing_layer": {
+    "ckm_abs": [
+      [
+        0.9745109509094659,
+        0.224308861637,
+        0.003733784761
+      ],
+      [
+        0.22417334369241235,
+        0.9736361587732943,
+        0.042177509492
+      ],
+      [
+        0.008643988390313436,
+        0.041450752952115984,
+        0.9991031561077218
+      ]
+    ],
+    "ckm_J": 3.141407003432816e-05,
+    "ckm_unitarity_error": 1.1102230246331605e-16,
+    "pmns_abs": [
+      [
+        0.8250652040555924,
+        0.5445893028601496,
+        0.15063167086306917
+      ],
+      [
+        0.40013869729709217,
+        0.538993700193152,
+        0.7411982285984503
+      ],
+      [
+        0.39894414644419807,
+        0.6425793977108128,
+        0.6541676281011767
+      ]
+    ],
+    "pmns_J": -0.03235946793899643,
+    "pmns_unitarity_error": 1.110879686356484e-16,
+    "status": "Matrices reconstructed from supplied frozen mixing numbers. They are not outputs of the presently specified KL vacuum operator."
+  },
+  "legacy_v8_graph_audit": {
+    "edge_count": 36,
+    "degree_sequence": [
+      12,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "laplacian_spectrum": [
+      {
+        "value": -2.761679773755077e-15,
+        "multiplicity": 1
+      },
+      {
+        "value": 2.9999999999999996,
+        "multiplicity": 2
+      },
+      {
+        "value": 4.999999999999996,
+        "multiplicity": 6
+      },
+      {
+        "value": 7.000000000000002,
+        "multiplicity": 2
+      },
+      {
+        "value": 9.0,
+        "multiplicity": 1
+      },
+      {
+        "value": 13.0,
+        "multiplicity": 1
+      }
+    ],
+    "finding": "This is a 36-edge centred Cayley graph, not the 42-edge centred icosahedral complex used by the canonical Hodge construction."
+  },
+  "action_identifiability": {
+    "one_mode_expansion": "For R(g)=I+a*g*T+O(g^2), Gamma=Tr[a^2*g^2*T^2/4]+O(g^3).",
+    "conclusion": "The logarithmic series fixes 1/4,-1/6,1/8,... after the outer factor, but the physical Hessian still depends on the unspecified field-to-operator normalization a and on the passive state.",
+    "missing_for_full_hessians": [
+      "explicit passive state rho_0 or modular operator",
+      "explicit closure operators F_a and target values f_a",
+      "typed finite matter map from End(3) to Hom(3,3')",
+      "sector-specific field embeddings and boundary conditions",
+      "one dimensional unit anchor for absolute masses"
+    ]
+  },
+  "final_status": {
+    "computed": "All outputs determined by the explicit finite geometry, edge-face alphabet, KL potential, charge words and supplied frozen angles.",
+    "not_computable_without_new_definition": "Absolute spectrum, gauge/Newton Hessians, and CKM/PMNS generated from the action, because the passive state and typed finite matter operator are not fully specified."
+  }
+}

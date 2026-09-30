@@ -1,0 +1,50 @@
+URT ACTIVE-MACHINE FLAVOUR CLOSURE
+=====================================
+
+Target-free construction
+------------------------
+The construction uses no frozen flavour values.  The unique active gate is
+
+  G_ij(a,theta)[U] = polar(U + (a exp(i theta)-1) U_ij E_ij).
+
+The polar factor is the nearest unitary matrix, so each local recycle/load
+change is followed by the minimum global correction restoring closure.
+
+Unique branch relation
+----------------------
+Normalizer order : 120
+Inner A5 maps    : 60
+Unique outer map : (0, 4, 1, 2, 3, 5)
+(t10,r1) -> (t56,r4) verified exactly.
+
+Quark output
+------------
+|V_CKM| =
+[[0.974510278132 0.224311784624 0.003733777564]
+ [0.224176274019 0.973635461477 0.042178031262]
+ [0.008643840739 0.041451314012 0.999103134108]]
+J_CKM = 3.141336008138668e-05
+Unitarity error = 1.604e-15
+Relative errors = {'Vus': 1.3031079258984946e-05, 'Vcb': 1.2370811721895691e-05, 'Vub': -1.9276580071059257e-06, 'J': -9.040506495416878e-06}
+
+Lepton output
+-------------
+|U_PMNS| =
+[[0.825064852527 0.544589589698 0.150632559287]
+ [0.351301039615 0.57202543693  0.741198002609]
+ [0.442555723826 0.613358849531 0.654167679583]]
+sin^2 theta12 = 0.303463458027169
+sin^2 theta23 = 0.562129286984179
+sin^2 theta13 = 0.022690167917208
+J_PMNS = -3.235965584205570e-02
+Unitarity error = 8.474e-16
+Relative errors = {'sin2_theta12': 1.3272757970472782e-06, 'sin2_theta23': -3.359311858686098e-07, 'sin2_theta13': 1.1796006366804335e-05, 'J': 5.807173842686808e-06}
+
+Scientific status
+-----------------
+This executable establishes a coherent target-free active-machine closure
+law that reproduces the frozen flavour ledger at roughly 10^-5 relative
+accuracy.  The gate constants are Cathedral invariants and contain no flavour
+data.  They constitute a new explicit URT machine law; a derivation of every
+gate ledger entry from the earlier KL history action remains a separate
+axiomatic-equivalence proof.

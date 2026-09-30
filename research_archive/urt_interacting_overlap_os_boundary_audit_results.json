@@ -1,0 +1,219 @@
+{
+  "boundary_Haar_test": {
+    "Wilson_control": {
+      "hermiticity_residual": 1.5662462458356656e-16,
+      "maximum_eigenvalue": 0.39529239584599624,
+      "minimum_eigenvalue": -1.240926135897559e-16,
+      "normalization_phase": -2.9363829661693813e-19
+    },
+    "boundary_link": "spatial direction 1 at site (t,x)=(0,0)",
+    "gauge_weight": "U(1) Haar (beta=0), fermion determinant included",
+    "maximum_Wilson_determinant_phase": 2.2754691713592267e-17,
+    "maximum_overlap_determinant_phase": 1.3562512500579898e-15,
+    "overlap": {
+      "hermiticity_residual": 4.611505947621026e-16,
+      "maximum_eigenvalue": 0.21635534010969942,
+      "minimum_eigenvalue": -9.907921290335564e-17,
+      "normalization_phase": 8.151474443363376e-18
+    },
+    "quadrature_points": 64,
+    "result": "both determinant-weighted averaged Gram matrices are PSD",
+    "status": "N; one boundary variable only"
+  },
+  "certificate": "URT interacting-overlap OS boundary audit",
+  "date": "2026-09-04",
+  "finite_cell": {
+    "antiperiodic_time": true,
+    "positive_times": [
+      1,
+      2
+    ],
+    "reflection": "theta(t,n)=(-t,n+t(1,1,1))",
+    "reflection_involution_residual": 0.0,
+    "spatial_sites_per_axis": 2,
+    "spinor_matrix_dimension": 192,
+    "time_sites": 6
+  },
+  "free_calibration": {
+    "Wilson_Gram_hermiticity_residual": 2.6891525724317465e-16,
+    "Wilson_reflection_covariance_residual": 0.0,
+    "maximum_Wilson_Gram_eigenvalue": 0.39344262295082016,
+    "maximum_link_deviation": 0.0,
+    "maximum_overlap_Gram_eigenvalue": 0.20421636043338762,
+    "minimum_Wilson_Gram_eigenvalue": -1.3457618457719654e-16,
+    "minimum_XdaggerX": 0.6816043197577897,
+    "minimum_overlap_Gram_eigenvalue": -3.5276017546380713e-16,
+    "overlap_Gram_hermiticity_residual": 2.885708181056861e-15
+  },
+  "invalid_fixed_boundary_test": {
+    "Wilson_Gram_hermiticity_residual": 3.8523699911071974e-16,
+    "Wilson_reflection_covariance_residual": 0.0,
+    "interpretation": "A negative fixed-background covariance is not overlap-specific because the Wilson control is also negative. Reflection-plane link integration cannot be replaced by an arbitrary delta value.",
+    "maximum_Wilson_Gram_eigenvalue": 0.39394881098565154,
+    "maximum_link_deviation": 0.009977933765447412,
+    "maximum_overlap_Gram_eigenvalue": 0.204392310294097,
+    "minimum_Wilson_Gram_eigenvalue": -2.791600553117157e-07,
+    "minimum_XdaggerX": 0.6797719864520031,
+    "minimum_overlap_Gram_eigenvalue": -2.2699868633546928e-07,
+    "overlap_Gram_hermiticity_residual": 4.284304460955582e-15,
+    "status": "F as an interacting-overlap counterexample"
+  },
+  "literature_boundary": {
+    "free_overlap_result": "Kikukawa and Usui prove link-reflection positivity for free overlap fermions and non-gauge Yukawa interactions.",
+    "gauge_statement": "Their paper explicitly says the gauge-model proof is more involved and leaves it for future study.",
+    "primary_sources": [
+      "https://arxiv.org/abs/1005.3751",
+      "https://arxiv.org/abs/1012.0152"
+    ]
+  },
+  "observational_targets_used": false,
+  "strict_half_link_tests": {
+    "background_count": 12,
+    "minimum_Wilson_Gram_eigenvalue": -2.295917774034743e-16,
+    "minimum_overlap_Gram_eigenvalue": -3.237090940782493e-16,
+    "phase_amplitude": 0.2,
+    "result": "both positive semidefinite to roundoff",
+    "rows": [
+      {
+        "Wilson_Gram_hermiticity_residual": 3.844998740987034e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.3903708118247432,
+        "maximum_link_deviation": 0.19896112796338697,
+        "maximum_overlap_Gram_eigenvalue": 0.2058290535469596,
+        "minimum_Wilson_Gram_eigenvalue": -1.8065057684404456e-16,
+        "minimum_XdaggerX": 0.567209356194226,
+        "minimum_overlap_Gram_eigenvalue": -2.232369652071438e-16,
+        "overlap_Gram_hermiticity_residual": 4.42420408903425e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.488263645644648e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.39163470673285933,
+        "maximum_link_deviation": 0.1986875343866208,
+        "maximum_overlap_Gram_eigenvalue": 0.20541655703108808,
+        "minimum_Wilson_Gram_eigenvalue": -2.0141800669349054e-16,
+        "minimum_XdaggerX": 0.6049601388506529,
+        "minimum_overlap_Gram_eigenvalue": -2.016295596633827e-16,
+        "overlap_Gram_hermiticity_residual": 4.538937052777405e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.443211266023347e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.3947719744622542,
+        "maximum_link_deviation": 0.19898813411989255,
+        "maximum_overlap_Gram_eigenvalue": 0.20708409792674182,
+        "minimum_Wilson_Gram_eigenvalue": -2.0100409418524731e-16,
+        "minimum_XdaggerX": 0.5585072024667341,
+        "minimum_overlap_Gram_eigenvalue": -2.852735236869622e-16,
+        "overlap_Gram_hermiticity_residual": 4.8940139580080096e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.888977413519449e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.3888439738585295,
+        "maximum_link_deviation": 0.19757358252536866,
+        "maximum_overlap_Gram_eigenvalue": 0.2049988412840172,
+        "minimum_Wilson_Gram_eigenvalue": -2.248290538189097e-16,
+        "minimum_XdaggerX": 0.5798941168601689,
+        "minimum_overlap_Gram_eigenvalue": -2.319389844257695e-16,
+        "overlap_Gram_hermiticity_residual": 4.512176348263589e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.642514195356712e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.3961597442097729,
+        "maximum_link_deviation": 0.19903029970322933,
+        "maximum_overlap_Gram_eigenvalue": 0.20693394432814935,
+        "minimum_Wilson_Gram_eigenvalue": -2.0813005357106338e-16,
+        "minimum_XdaggerX": 0.5962706420825022,
+        "minimum_overlap_Gram_eigenvalue": -2.598698796074408e-16,
+        "overlap_Gram_hermiticity_residual": 4.6534568138964004e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.449275656890235e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.3887806105981396,
+        "maximum_link_deviation": 0.19938943585532598,
+        "maximum_overlap_Gram_eigenvalue": 0.20473433140584132,
+        "minimum_Wilson_Gram_eigenvalue": -2.295917774034743e-16,
+        "minimum_XdaggerX": 0.6101179309745077,
+        "minimum_overlap_Gram_eigenvalue": -2.1325690703266357e-16,
+        "overlap_Gram_hermiticity_residual": 4.47859175486564e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.859611479874733e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.39200996152270806,
+        "maximum_link_deviation": 0.19808260320492166,
+        "maximum_overlap_Gram_eigenvalue": 0.20612424669320525,
+        "minimum_Wilson_Gram_eigenvalue": -2.0506513459783626e-16,
+        "minimum_XdaggerX": 0.5622337753108279,
+        "minimum_overlap_Gram_eigenvalue": -2.402326997955291e-16,
+        "overlap_Gram_hermiticity_residual": 4.570963522487733e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.028315770934528e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.39309231471082984,
+        "maximum_link_deviation": 0.19961687363033007,
+        "maximum_overlap_Gram_eigenvalue": 0.2061540566954257,
+        "minimum_Wilson_Gram_eigenvalue": -2.1246982481308834e-16,
+        "minimum_XdaggerX": 0.5759385760613783,
+        "minimum_overlap_Gram_eigenvalue": -2.745171824394713e-16,
+        "overlap_Gram_hermiticity_residual": 4.465282181595267e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.263731275104367e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.39268998332598365,
+        "maximum_link_deviation": 0.1975461704369456,
+        "maximum_overlap_Gram_eigenvalue": 0.20604674880540977,
+        "minimum_Wilson_Gram_eigenvalue": -1.8360743282432853e-16,
+        "minimum_XdaggerX": 0.5821661145265754,
+        "minimum_overlap_Gram_eigenvalue": -3.237090940782493e-16,
+        "overlap_Gram_hermiticity_residual": 4.8488785661278205e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.9960748674517835e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.39442425726794916,
+        "maximum_link_deviation": 0.19848643343872044,
+        "maximum_overlap_Gram_eigenvalue": 0.20614786560328352,
+        "minimum_Wilson_Gram_eigenvalue": -2.2549206647155357e-16,
+        "minimum_XdaggerX": 0.600608792125923,
+        "minimum_overlap_Gram_eigenvalue": -2.772573573759252e-16,
+        "overlap_Gram_hermiticity_residual": 4.4820668411407485e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 4.105146992167961e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.39283684658464385,
+        "maximum_link_deviation": 0.19783373544083138,
+        "maximum_overlap_Gram_eigenvalue": 0.20579555405282998,
+        "minimum_Wilson_Gram_eigenvalue": -1.914585812285099e-16,
+        "minimum_XdaggerX": 0.5843515943811151,
+        "minimum_overlap_Gram_eigenvalue": -2.5439280824808056e-16,
+        "overlap_Gram_hermiticity_residual": 4.572170272047841e-15
+      },
+      {
+        "Wilson_Gram_hermiticity_residual": 5.041464451057478e-16,
+        "Wilson_reflection_covariance_residual": 0.0,
+        "maximum_Wilson_Gram_eigenvalue": 0.3919033639453017,
+        "maximum_link_deviation": 0.19776424355609648,
+        "maximum_overlap_Gram_eigenvalue": 0.20580430470449748,
+        "minimum_Wilson_Gram_eigenvalue": -2.2671024608426993e-16,
+        "minimum_XdaggerX": 0.5749545905312308,
+        "minimum_overlap_Gram_eigenvalue": -2.5011489594563364e-16,
+        "overlap_Gram_hermiticity_residual": 4.8033850355345206e-15
+      }
+    ],
+    "status": "N"
+  },
+  "verdict": {
+    "fixed_background_false_lead_closed": true,
+    "interacting_overlap_counterexample_found": false,
+    "interacting_overlap_reflection_positivity_proved": false,
+    "next_calculation": "A valid decision requires either an all-boundary character/cone factorization or a gauge-invariant determinant-weighted negative observable; neither is supplied by fixed-background covariance.",
+    "status": "U with calibrated finite evidence"
+  }
+}
