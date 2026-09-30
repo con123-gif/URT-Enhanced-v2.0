@@ -1,0 +1,526 @@
+{
+  "certificate": "URT entropy spectral-action SU(5)-breaking audit",
+  "date": "2026-09-04",
+  "exact_representation_traces": {
+    "definitions": "p_k=sum_i x_i^k, p_1=0",
+    "exterior_weights": "0; x_i+x_j for i<j; -x_i",
+    "formulas": {
+      "adjoint_24": {
+        "T2": "10 p2",
+        "T4": "10 p4+6 p2^2"
+      },
+      "exterior_even_16": {
+        "T2": "4 p2",
+        "T4": "3 p2^2-2 p4"
+      },
+      "fundamental_5": {
+        "T2": "p2",
+        "T4": "p4"
+      }
+    },
+    "maximum_trace_formula_residual": 1.7053025658242404e-13,
+    "numerical_audit_rows": [
+      {
+        "adjoint_24_T2_residual": 2.1316282072803006e-14,
+        "adjoint_24_T4_residual": 8.526512829121202e-14,
+        "exterior_even_16_T2_residual": 3.552713678800501e-15,
+        "exterior_even_16_T4_residual": 2.842170943040401e-14,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 4.452119423161844,
+        "p4": 8.110611522251205
+      },
+      {
+        "adjoint_24_T2_residual": 1.4210854715202004e-14,
+        "adjoint_24_T4_residual": 0.0,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 5.684341886080802e-14,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 9.817796149723165,
+        "p4": 40.57642836873552
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 0.0,
+        "exterior_even_16_T2_residual": 3.552713678800501e-15,
+        "exterior_even_16_T4_residual": 0.0,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 5.387495218174959,
+        "p4": 11.479747108618582
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 5.684341886080802e-14,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 7.105427357601002e-15,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 5.1008970068006745,
+        "p4": 9.693596959774869
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 5.684341886080802e-14,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 2.842170943040401e-14,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 7.017291621684842,
+        "p4": 15.489356489421699
+      },
+      {
+        "adjoint_24_T2_residual": 3.552713678800501e-15,
+        "adjoint_24_T4_residual": 1.7763568394002505e-15,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 8.881784197001252e-16,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 1.2693901660839664,
+        "p4": 0.438377651844427
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 2.842170943040401e-14,
+        "exterior_even_16_T2_residual": 1.7763568394002505e-15,
+        "exterior_even_16_T4_residual": 0.0,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 2.873545927721028,
+        "p4": 3.3840279098608024
+      },
+      {
+        "adjoint_24_T2_residual": 1.4210854715202004e-14,
+        "adjoint_24_T4_residual": 1.7053025658242404e-13,
+        "exterior_even_16_T2_residual": 7.105427357601002e-15,
+        "exterior_even_16_T4_residual": 2.842170943040401e-14,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 7.557851926213347,
+        "p4": 15.167312040844411
+      },
+      {
+        "adjoint_24_T2_residual": 7.105427357601002e-15,
+        "adjoint_24_T4_residual": 5.684341886080802e-14,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 0.0,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 5.433843892802648,
+        "p4": 13.809364256851694
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 1.7763568394002505e-15,
+        "exterior_even_16_T2_residual": 4.440892098500626e-16,
+        "exterior_even_16_T4_residual": 1.1102230246251565e-16,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 0.6760507703714271,
+        "p4": 0.23531066275722431
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 0.0,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 0.0,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 2.222438365655512,
+        "p4": 2.7505375848298406
+      },
+      {
+        "adjoint_24_T2_residual": 1.7763568394002505e-15,
+        "adjoint_24_T4_residual": 3.552713678800501e-15,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 8.881784197001252e-16,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 1.5290059881677183,
+        "p4": 0.7014193190530382
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 0.0,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 0.0,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 1.3829213189956646,
+        "p4": 0.5425973754834068
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 7.105427357601002e-15,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 3.552713678800501e-15,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 2.166847046285051,
+        "p4": 1.4407651333050198
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 0.0,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 0.0,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 3.5810500905973557,
+        "p4": 3.4464468381586815
+      },
+      {
+        "adjoint_24_T2_residual": 1.7763568394002505e-15,
+        "adjoint_24_T4_residual": 3.552713678800501e-15,
+        "exterior_even_16_T2_residual": 8.881784197001252e-16,
+        "exterior_even_16_T4_residual": 2.220446049250313e-15,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 1.0712285495252631,
+        "p4": 0.5184569217075443
+      },
+      {
+        "adjoint_24_T2_residual": 1.7763568394002505e-15,
+        "adjoint_24_T4_residual": 7.105427357601002e-15,
+        "exterior_even_16_T2_residual": 0.0,
+        "exterior_even_16_T4_residual": 8.881784197001252e-16,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 1.479167975070431,
+        "p4": 1.075196177508347
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 0.0,
+        "exterior_even_16_T2_residual": 3.552713678800501e-15,
+        "exterior_even_16_T4_residual": 1.4210854715202004e-14,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 7.263961333722172,
+        "p4": 22.583032136065107
+      },
+      {
+        "adjoint_24_T2_residual": 1.7763568394002505e-15,
+        "adjoint_24_T4_residual": 3.552713678800501e-15,
+        "exterior_even_16_T2_residual": 8.881784197001252e-16,
+        "exterior_even_16_T4_residual": 0.0,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 1.1108536618051523,
+        "p4": 0.3222140562468613
+      },
+      {
+        "adjoint_24_T2_residual": 0.0,
+        "adjoint_24_T4_residual": 4.440892098500626e-16,
+        "exterior_even_16_T2_residual": 2.220446049250313e-16,
+        "exterior_even_16_T4_residual": 5.551115123125783e-17,
+        "fundamental_5_T2_residual": 0.0,
+        "fundamental_5_T4_residual": 0.0,
+        "p2": 0.3247561289388636,
+        "p4": 0.05249715647728804
+      }
+    ],
+    "self_adjoint_completion": "Adding the conjugate 16bar doubles every trace and does not change the orbit-selection sign.",
+    "status": "E"
+  },
+  "finite_radius_numerical_audit": {
+    "interpretation": "These target-blind searches illustrate the exact small-field sign and show that the adjoint trace can change to a lower-symmetry shape as the radius grows. They are not global numerical proofs.",
+    "multistarts_per_case": 36,
+    "rows": [
+      {
+        "best_minus_four_plus_one": -5.216779949090977e-05,
+        "best_minus_three_plus_two": 5.995204332975845e-14,
+        "best_multistart_entropy": 3.4545153569130083,
+        "best_sorted_eigenvalues": [
+          -0.10955093846256587,
+          -0.10954670683275343,
+          -0.10953588898402303,
+          0.1643157463988985,
+          0.16431778788044377
+        ],
+        "four_plus_one_entropy": 3.454567524712499,
+        "radius": 0.3,
+        "representation": "fundamental_5",
+        "three_plus_two_entropy": 3.4545153569129483
+      },
+      {
+        "best_minus_four_plus_one": -0.005793427471556534,
+        "best_minus_three_plus_two": 2.6645352591003757e-15,
+        "best_multistart_entropy": 3.344278710625904,
+        "best_sorted_eigenvalues": [
+          -0.5477227377774284,
+          -0.5477223772327644,
+          0.3651480303912738,
+          0.3651484559962859,
+          0.36514862862263303
+        ],
+        "four_plus_one_entropy": 3.3500721380974605,
+        "radius": 1.0,
+        "representation": "fundamental_5",
+        "three_plus_two_entropy": 3.3442787106259013
+      },
+      {
+        "best_minus_four_plus_one": -0.22236972764290552,
+        "best_minus_three_plus_two": -4.440892098500626e-16,
+        "best_multistart_entropy": 2.57501776371691,
+        "best_sorted_eigenvalues": [
+          -1.6431676956631238,
+          -1.6431676493678715,
+          1.0954450725814149,
+          1.0954451068913447,
+          1.095445165558237
+        ],
+        "four_plus_one_entropy": 2.7973874913598156,
+        "radius": 3.0,
+        "representation": "fundamental_5",
+        "three_plus_two_entropy": 2.5750177637169105
+      },
+      {
+        "best_minus_four_plus_one": -0.0005165215627123132,
+        "best_minus_three_plus_two": 3.0091484859440243e-12,
+        "best_multistart_entropy": 16.524078301373887,
+        "best_sorted_eigenvalues": [
+          -0.10956449437860126,
+          -0.1095383695670255,
+          -0.10953066938522402,
+          0.16431417588908986,
+          0.16431935744176096
+        ],
+        "four_plus_one_entropy": 16.5245948229366,
+        "radius": 0.3,
+        "representation": "adjoint_24",
+        "three_plus_two_entropy": 16.524078301370878
+      },
+      {
+        "best_minus_four_plus_one": -0.052238771226086556,
+        "best_minus_three_plus_two": 1.0658141036401503e-14,
+        "best_multistart_entropy": 15.504666475150856,
+        "best_sorted_eigenvalues": [
+          -0.5477225996776719,
+          -0.5477225153324201,
+          0.3651478933994672,
+          0.36514839661463705,
+          0.3651488249959881
+        ],
+        "four_plus_one_entropy": 15.556905246376942,
+        "radius": 1.0,
+        "representation": "adjoint_24",
+        "three_plus_two_entropy": 15.504666475150845
+      },
+      {
+        "best_minus_four_plus_one": -1.400574761411903,
+        "best_minus_three_plus_two": -0.19508288745675273,
+        "best_multistart_entropy": 10.870438715832144,
+        "best_sorted_eigenvalues": [
+          -1.7019322797303034,
+          -1.2662647875653004,
+          -2.3994049284445862e-08,
+          1.2662648744481562,
+          1.7019322168414968
+        ],
+        "four_plus_one_entropy": 12.271013477244047,
+        "radius": 3.0,
+        "representation": "adjoint_24",
+        "three_plus_two_entropy": 11.065521603288897
+      },
+      {
+        "best_minus_four_plus_one": 1.149302875091962e-12,
+        "best_minus_three_plus_two": -0.00010381976020390482,
+        "best_multistart_entropy": 11.045568881520477,
+        "best_sorted_eigenvalues": [
+          -0.26832815668614385,
+          0.06706977821587204,
+          0.06707712693290413,
+          0.06708392316299801,
+          0.06709732837436967
+        ],
+        "four_plus_one_entropy": 11.045568881519328,
+        "radius": 0.3,
+        "representation": "exterior_even_16",
+        "three_plus_two_entropy": 11.045672701280681
+      },
+      {
+        "best_minus_four_plus_one": 7.105427357601002e-15,
+        "best_minus_three_plus_two": -0.011015185026444385,
+        "best_multistart_entropy": 10.615411863677906,
+        "best_sorted_eigenvalues": [
+          -0.22360700349123366,
+          -0.22360693096532874,
+          -0.22360692231043436,
+          -0.22360633423278914,
+          0.8944271909997861
+        ],
+        "four_plus_one_entropy": 10.615411863677899,
+        "radius": 1.0,
+        "representation": "exterior_even_16",
+        "three_plus_two_entropy": 10.62642704870435
+      },
+      {
+        "best_minus_four_plus_one": 0.0,
+        "best_minus_three_plus_two": -0.3412971445403912,
+        "best_multistart_entropy": 8.003084476401032,
+        "best_sorted_eigenvalues": [
+          -2.6832815729997463,
+          0.670820356048659,
+          0.6708203589048902,
+          0.6708204002271038,
+          0.6708204578190944
+        ],
+        "four_plus_one_entropy": 8.003084476401032,
+        "radius": 3.0,
+        "representation": "exterior_even_16",
+        "three_plus_two_entropy": 8.344381620941423
+      }
+    ],
+    "status": "N"
+  },
+  "observational_targets_used": false,
+  "radial_scale_no_go": {
+    "derivative_witnesses": {
+      "adjoint_24": [
+        {
+          "analytic_derivative": -0.12493491843227675,
+          "derivative_residual": 9.097533559820903e-10,
+          "entropy": 16.63240814705243,
+          "finite_difference_derivative": -0.12493491752252339,
+          "scale": 0.05
+        },
+        {
+          "analytic_derivative": -0.4958563726434288,
+          "derivative_residual": 2.0733820216278787e-10,
+          "entropy": 16.58573989789039,
+          "finite_difference_derivative": -0.495856372850767,
+          "scale": 0.2
+        },
+        {
+          "analytic_derivative": -2.0438047201596676,
+          "derivative_residual": 2.8674840280018543e-11,
+          "entropy": 15.504666475150845,
+          "finite_difference_derivative": -2.043804720130993,
+          "scale": 1.0
+        },
+        {
+          "analytic_derivative": -1.7113347635626746,
+          "derivative_residual": 1.002079086376284e-09,
+          "entropy": 11.065521603288897,
+          "finite_difference_derivative": -1.7113347645647536,
+          "scale": 3.0
+        },
+        {
+          "analytic_derivative": -0.010848200068303391,
+          "derivative_residual": 3.964055177857473e-10,
+          "entropy": 8.330953059817622,
+          "finite_difference_derivative": -0.010848199671897873,
+          "scale": 10.0
+        }
+      ],
+      "exterior_even_16": [
+        {
+          "analytic_derivative": -0.04998021563677833,
+          "derivative_residual": 1.149507017350615e-10,
+          "entropy": 11.08910513629409,
+          "finite_difference_derivative": -0.04998021552182763,
+          "scale": 0.05
+        },
+        {
+          "analytic_derivative": -0.19874077099457374,
+          "derivative_residual": 4.87274082194844e-10,
+          "entropy": 11.070417974006528,
+          "finite_difference_derivative": -0.19874077050729966,
+          "scale": 0.2
+        },
+        {
+          "analytic_derivative": -0.8620432184932285,
+          "derivative_residual": 3.5157809996633205e-10,
+          "entropy": 10.62642704870435,
+          "finite_difference_derivative": -0.8620432181416504,
+          "scale": 1.0
+        },
+        {
+          "analytic_derivative": -1.1683194637869352,
+          "derivative_residual": 1.3854386526901408e-09,
+          "entropy": 8.344381620941423,
+          "finite_difference_derivative": -1.1683194651723738,
+          "scale": 3.0
+        },
+        {
+          "analytic_derivative": -0.3734652397323064,
+          "derivative_residual": 3.3434410795507574e-10,
+          "entropy": 3.5341322757295126,
+          "finite_difference_derivative": -0.3734652400666505,
+          "scale": 10.0
+        }
+      ],
+      "fundamental_5": [
+        {
+          "analytic_derivative": -0.012498177282242963,
+          "derivative_residual": 9.967142562683495e-11,
+          "entropy": 3.465423425584527,
+          "finite_difference_derivative": -0.012498177381914388,
+          "scale": 0.05
+        },
+        {
+          "analytic_derivative": -0.049883536713617574,
+          "derivative_residual": 7.890811615229865e-11,
+          "entropy": 3.460741729351025,
+          "finite_difference_derivative": -0.04988353663470946,
+          "scale": 0.2
+        },
+        {
+          "analytic_derivative": -0.23602885987026287,
+          "derivative_residual": 8.002462581480074e-11,
+          "entropy": 3.3442787106259013,
+          "finite_difference_derivative": -0.23602885979023824,
+          "scale": 1.0
+        },
+        {
+          "analytic_derivative": -0.46975893973881977,
+          "derivative_residual": 2.305471369368206e-10,
+          "entropy": 2.5750177637169105,
+          "finite_difference_derivative": -0.4697589399693669,
+          "scale": 3.0
+        },
+        {
+          "analytic_derivative": -0.12350183617915637,
+          "derivative_residual": 4.667530251190044e-12,
+          "entropy": 0.4079227736989749,
+          "finite_difference_derivative": -0.12350183617448884,
+          "scale": 10.0
+        }
+      ]
+    },
+    "maximization": "The unique maximal-entropy point is Phi=0 (unbroken).",
+    "maximum_derivative_residual": 1.3854386526901408e-09,
+    "minimization": "The entropy decreases toward the infinite-radius boundary and has no finite nonzero radial minimum.",
+    "status": "E",
+    "theorem": "For any nonzero represented direction, d/ds Tr h(s rho(Phi))=sum_a h'(s|lambda_a|)|lambda_a|<0 for every s>0."
+  },
+  "small_fixed_norm_orbit_theorem": {
+    "consequence": "The same universal entropy function gives opposite breaking orbits on two equally natural finite traces. On the Cathedral matter carrier itself, its weak-field preference is the wrong 4+1 stabilizer.",
+    "entropy_expansion": "Tr_R h(rho_R(Phi))=dim(R)log(2)-T2/8+T4/64+O(||Phi||^6)",
+    "lower_equality": "3+2, proportional to (2,2,2,-3,-3)",
+    "selection": {
+      "adjoint_24": "3+2 for sufficiently small fixed nonzero p2",
+      "exterior_even_16": "4+1 for sufficiently small fixed nonzero p2",
+      "fundamental_5": "3+2 for sufficiently small fixed nonzero p2"
+    },
+    "status": "E asymptotically at fixed norm",
+    "trace_inequality": "7/30<=p4/p2^2<=13/20",
+    "upper_equality": "4+1, proportional to (1,1,1,1,-4)"
+  },
+  "universal_function": {
+    "Taylor_series": "h(x)=log(2)-x^2/8+x^4/64-x^6/576+O(x^8)",
+    "h": "h(x)=log(1+exp(-|x|))+|x|/(1+exp(|x|))",
+    "radial_derivative": "h'(x)=-x/[4 cosh^2(x/2)] for x>0",
+    "status": "E"
+  },
+  "verdict": {
+    "advance": "The universal entropy cutoff fixes the quartic sign only after a finite representation is chosen. The actual exterior matter trace prefers 4+1 near the origin, while unconstrained entropy has a radial runaway. A finite Dirac/Higgs construction remains indispensable.",
+    "dynamical_three_plus_two_breaking": "U",
+    "entropy_selects_finite_breaking_scale": "F",
+    "entropy_selects_three_plus_two_on_Cathedral_16_trace": "F at small fixed norm",
+    "entropy_selects_three_plus_two_on_fundamental_trace": "E conditional at small fixed norm",
+    "phenomenology_gate": "CLOSED"
+  }
+}

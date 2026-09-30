@@ -1,0 +1,218 @@
+{
+  "certificate": "URT entropy spectral-action gauge-normalization audit",
+  "date": "2026-09-04",
+  "literal_one_entropy_trace_branch": {
+    "exact_values": {
+      "F0": "log(2)",
+      "alpha_U": "pi/(8 log(2))",
+      "g_U": "pi/sqrt(2 log(2))",
+      "g_U_squared": "pi^2/(2 log(2))",
+      "g_Y_squared": "3 pi^2/(10 log(2))",
+      "sin_squared_theta_W": "3/8"
+    },
+    "extra_physical_premise": "S_boson is exactly one entropy spectral action in the cited Standard Model trace convention",
+    "numerical_values": {
+      "action_weight_c": 1.0,
+      "alpha_U": 0.5665450177283992,
+      "canonical_normalization_residual": 0.0,
+      "effective_F0": 0.6931471805599453,
+      "g_U": 2.6682231283184983,
+      "g_U_squared": 7.119414662493752,
+      "g_Y": 2.0667967479885996,
+      "g_Y_squared": 4.271648797496251,
+      "inverse_alpha_U": 1.765084801221213,
+      "sin_squared_theta_W": 0.37499999999999994,
+      "trace_ratio_nu": 1.0,
+      "unification_relation_residual": 0.0
+    },
+    "status": "E conditional on the displayed physical premise and trace convention"
+  },
+  "normalization_escape": {
+    "OS_positive_rescaling_witnesses": [
+      {
+        "action_weight_c": 0.125,
+        "base_OS_quadratic_form": 2.75,
+        "homogeneity_residual": 0.0,
+        "positivity_preserved": true,
+        "scaled_OS_quadratic_form": 22.0
+      },
+      {
+        "action_weight_c": 0.5,
+        "base_OS_quadratic_form": 2.75,
+        "homogeneity_residual": 0.0,
+        "positivity_preserved": true,
+        "scaled_OS_quadratic_form": 5.5
+      },
+      {
+        "action_weight_c": 1.0,
+        "base_OS_quadratic_form": 2.75,
+        "homogeneity_residual": 0.0,
+        "positivity_preserved": true,
+        "scaled_OS_quadratic_form": 2.75
+      },
+      {
+        "action_weight_c": 3.0,
+        "base_OS_quadratic_form": 2.75,
+        "homogeneity_residual": 0.0,
+        "positivity_preserved": true,
+        "scaled_OS_quadratic_form": 0.9166666666666666
+      },
+      {
+        "action_weight_c": 11.0,
+        "base_OS_quadratic_form": 2.75,
+        "homogeneity_residual": 0.0,
+        "positivity_preserved": true,
+        "scaled_OS_quadratic_form": 0.25
+      }
+    ],
+    "coupling_orbit": "g_U(c,nu)=pi/sqrt(2 c nu log(2))",
+    "effective_moment": "F0_eff=c nu log(2)",
+    "general_action": "S_boson=c S_entropy with c>0",
+    "maximum_OS_scaling_residual": 0.0,
+    "maximum_scaling_residual": 2.220446049250313e-16,
+    "relative_trace_multiplicity": "nu=Tr_Cathedral/Tr_standard on the gauge generators",
+    "scaling_witnesses": [
+      {
+        "action_weight_c": 0.25,
+        "alpha_U": 2.2661800709135966,
+        "canonical_normalization_residual": 0.0,
+        "effective_F0": 0.17328679513998632,
+        "g_U": 5.336446256636997,
+        "g_U_squared": 28.47765864997501,
+        "g_Y": 4.133593495977199,
+        "g_Y_squared": 17.086595189985005,
+        "inverse_alpha_U": 0.44127120030530326,
+        "predicted_g_U_from_scale_orbit": 5.336446256636997,
+        "scale_orbit_residual": 0.0,
+        "sin_squared_theta_W": 0.37499999999999994,
+        "trace_ratio_nu": 1.0,
+        "unification_relation_residual": 0.0
+      },
+      {
+        "action_weight_c": 0.5,
+        "alpha_U": 0.5665450177283992,
+        "canonical_normalization_residual": 0.0,
+        "effective_F0": 0.6931471805599453,
+        "g_U": 2.6682231283184983,
+        "g_U_squared": 7.119414662493752,
+        "g_Y": 2.0667967479885996,
+        "g_Y_squared": 4.271648797496251,
+        "inverse_alpha_U": 1.765084801221213,
+        "predicted_g_U_from_scale_orbit": 2.6682231283184983,
+        "scale_orbit_residual": 0.0,
+        "sin_squared_theta_W": 0.37499999999999994,
+        "trace_ratio_nu": 2.0,
+        "unification_relation_residual": 0.0
+      },
+      {
+        "action_weight_c": 1.0,
+        "alpha_U": 0.5665450177283992,
+        "canonical_normalization_residual": 0.0,
+        "effective_F0": 0.6931471805599453,
+        "g_U": 2.6682231283184983,
+        "g_U_squared": 7.119414662493752,
+        "g_Y": 2.0667967479885996,
+        "g_Y_squared": 4.271648797496251,
+        "inverse_alpha_U": 1.765084801221213,
+        "predicted_g_U_from_scale_orbit": 2.6682231283184983,
+        "scale_orbit_residual": 0.0,
+        "sin_squared_theta_W": 0.37499999999999994,
+        "trace_ratio_nu": 1.0,
+        "unification_relation_residual": 0.0
+      },
+      {
+        "action_weight_c": 2.0,
+        "alpha_U": 0.2832725088641996,
+        "canonical_normalization_residual": 0.0,
+        "effective_F0": 1.3862943611198906,
+        "g_U": 1.8867186677527936,
+        "g_U_squared": 3.559707331246876,
+        "g_Y": 1.4614459958370427,
+        "g_Y_squared": 2.1358243987481256,
+        "inverse_alpha_U": 3.530169602442426,
+        "predicted_g_U_from_scale_orbit": 1.8867186677527936,
+        "scale_orbit_residual": 0.0,
+        "sin_squared_theta_W": 0.37499999999999994,
+        "trace_ratio_nu": 1.0,
+        "unification_relation_residual": 0.0
+      },
+      {
+        "action_weight_c": 3.0,
+        "alpha_U": 0.1416362544320998,
+        "canonical_normalization_residual": 0.0,
+        "effective_F0": 2.772588722239781,
+        "g_U": 1.3341115641592491,
+        "g_U_squared": 1.779853665623438,
+        "g_Y": 1.0333983739942998,
+        "g_Y_squared": 1.0679121993740628,
+        "inverse_alpha_U": 7.060339204884852,
+        "predicted_g_U_from_scale_orbit": 1.3341115641592491,
+        "scale_orbit_residual": 0.0,
+        "sin_squared_theta_W": 0.37499999999999994,
+        "trace_ratio_nu": 1.3333333333333333,
+        "unification_relation_residual": 0.0
+      },
+      {
+        "action_weight_c": 7.0,
+        "alpha_U": 0.20233750633157113,
+        "canonical_normalization_residual": 0.0,
+        "effective_F0": 1.940812105567847,
+        "g_U": 1.5945683095269918,
+        "g_U_squared": 2.5426480937477685,
+        "g_Y": 1.2351473014376306,
+        "g_Y_squared": 1.525588856248661,
+        "inverse_alpha_U": 4.942237443419396,
+        "predicted_g_U_from_scale_orbit": 1.594568309526992,
+        "scale_orbit_residual": 2.220446049250313e-16,
+        "sin_squared_theta_W": 0.375,
+        "trace_ratio_nu": 0.4,
+        "unification_relation_residual": 0.0
+      }
+    ],
+    "status": "E",
+    "surviving_dimension": 1,
+    "why_current_principles_do_not_fix_it": [
+      "positive rescaling preserves gauge and spacetime symmetries",
+      "positive rescaling preserves locality and additivity",
+      "positive rescaling preserves the sign of every OS quadratic form",
+      "a normalized Gibbs state is insensitive to the choice of physical bosonic action weight",
+      "the Cathedral finite carrier has not been proved trace-equivalent to the cited Standard Model spectral triple"
+    ]
+  },
+  "observational_targets_used": false,
+  "perturbative_control_audit": {
+    "classification": "The one-copy value is order one, so a weak-coupling loop or one-loop RG treatment would not be controlled by alpha_U << 1.",
+    "literal_alpha_U": 0.5665450177283992,
+    "literal_inverse_alpha_U": 1.765084801221213,
+    "observational_comparison_performed": false
+  },
+  "published_inputs": {
+    "canonical_gauge_equations": [
+      "g_3^2 F_0/(2 pi^2)=1/4",
+      "g_3^2=g_2^2=(5/3)g_Y^2"
+    ],
+    "entropy_cutoff": "h(x)=log(1+exp(-|x|))+|x|/(1+exp(|x|))",
+    "entropy_zero_moment": "h(0)=log(2)",
+    "primary_references": [
+      {
+        "arXiv": "1004.0464",
+        "equations": "(5.48), (5.51), (6.1)",
+        "title": "Noncommutative Geometry as a Framework for Unification of all Fundamental Interactions including Gravity. Part I"
+      },
+      {
+        "arXiv": "1809.02944",
+        "role": "universal KMS entropy cutoff and its moments",
+        "title": "Entropy and the spectral action"
+      }
+    ],
+    "standard_model_trace_convention": "three-generation almost-commutative Standard Model finite trace, with hypercharge coupling denoted g_Y"
+  },
+  "verdict": {
+    "advance": "The entropy cutoff converts the old free F0 into an exact number. The remaining obstruction is now isolated to one physical action/trace normalization c nu, rather than an arbitrary cutoff shape.",
+    "conditional_absolute_gauge_normalization": "E",
+    "phenomenology_gate": "CLOSED",
+    "relative_gauge_couplings": "E conditional on the parent/finite trace",
+    "unconditional_absolute_gauge_normalization": "U",
+    "weak_mixing_boundary_value": "3/8 conditional"
+  }
+}

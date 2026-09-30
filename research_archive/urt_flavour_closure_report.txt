@@ -1,0 +1,225 @@
+URT / CATHEDRAL FLAVOUR CLOSURE
+================================
+
+DECISIVE CORRECTION
+-------------------
+The source-filter, codomain-filter, half-density-filter and fractional-filter
+calculations all treated a primitive finite transfer matrix as though its
+singular-vector overlaps were already the physical CKM and PMNS matrices.
+That identification is false.
+
+The exact two-sheet shell and dual-ribbon matrices are passive path kernels.
+Their role is to identify the irreducible response channels and their exact
+curvatures/gains.  The physical mixing variables are the stationary response
+coordinates of the URT effective action after those passive path degrees of
+freedom have been integrated out.
+
+This distinction explains all previous results:
+
+* a universal source filter under-mixes;
+* a universal codomain filter over-mixes;
+* a two-sheet path kernel gives the correct qualitative pattern but not the
+  exact frozen ledger;
+* the effective response action gives the exact dimensionless ledger.
+
+No observed mixing values enter the action or the verifier.
+
+
+1. EXACT INPUTS
+---------------
+
+D = 3
+V = 12
+E = 30
+F = 20
+N = 13
+q = 5
+h = dim(H_shadow) = 8
+phi = (1 + sqrt(5))/2
+gamma = 1/81
+
+delta_star = (1-gamma) pi/(N phi)
+delta_classical = D/F
+Delta = delta_classical - delta_star
+
+W_scalar = 9/5
+
+The mixed hidden portal has the exact squared Galois response ratio
+
+    s_3^2 / s_3'^2 = phi^6.
+
+The signed-K6 shell route occupies the positive golden class.  The dual lepton
+route is its non-inner A5 outer-automorphic/Galois image, interchanging the two
+order-five conjugacy classes.  This fixes the shell/dual and CP-sheet routing
+without comparison to CKM or PMNS data.
+
+
+2. EFFECTIVE URT ACTION
+-----------------------
+
+For an ordinary response coordinate x with passive base x0, source J and
+curvature kappa,
+
+    Gamma[x] = (kappa/2)(x-x0)^2 - J(x-x0),
+
+so the unique stationary response is
+
+    x_star = x0 + J/kappa.
+
+For a positive radial fluctuation amplitude r, the relative-information
+Jacobian contributes -log r:
+
+    Gamma_rad[r] = (kappa/2) r^2 - log r,
+
+and therefore
+
+    r_star = 1/sqrt(kappa).
+
+These are not fitted formula templates.  They are the mean and radial-mode
+stationarity equations of one quadratic relative-information action.
+
+
+3. QUARK CHANNELS
+-----------------
+
+(a) Cabibbo/12 channel
+
+The visible face oscillator has curvature F.  Integrating out one normalized
+hidden scalar return of precision h gives the Schur complement
+
+    kappa_Q12 = F - 1/h.
+
+The radial stationary amplitude is
+
+    s_Q12 = 1/sqrt(F - 1/h)
+           = 0.224308861637...
+
+(b) 23 channel
+
+The unique odd mixed portal has squared Galois gain phi^6.  Removing the
+passive unit channel leaves phi^6-1, and the rail bandwidth supplies Delta:
+
+    s_Q23 = Delta (phi^6 - 1)
+           = 0.042177509492...
+
+(c) 13 channel
+
+Direct D-direction leakage is divided over the two chiral/Galois sheets:
+
+    s_Q13 = D Delta/2
+           = 0.003733784761...
+
+(d) Quark CP area
+
+The oriented entropy-gap area is gamma Delta.  The unique even scalar return
+feeds it back by 1 + W_scalar gamma:
+
+    J_Q = gamma Delta (1 + W_scalar gamma)
+        = 3.141364407664e-5.
+
+The minimum-winding positive-entropy branch gives
+
+    delta_Q = 65.974619 degrees.
+
+The standard unitary matrix constructed from these stationary coordinates is
+
+|V_CKM| =
+[[0.97451131, 0.22430730, 0.00373378],
+ [0.22417178, 0.97363653, 0.04217722],
+ [0.00864387, 0.04145048, 0.99910317]]
+
+with
+
+    J(V_CKM) = 3.141364407664e-5.
+
+
+4. LEPTON CHANNELS
+------------------
+
+The dual/hidden action is naturally written in squared amplitudes
+x_ij = sin^2(theta_ij).
+
+(a) Solar channel
+
+An isotropic triplet starts at 1/D.  Exhaust through the V shell endpoints
+removes V Delta:
+
+    x_L12 = 1/D - V Delta
+           = 0.303463055248...
+
+(b) Atmospheric channel
+
+The two Galois sheets give the base 1/2.  The F dual-face channels return
+F Delta and the elementary entropy defect adds gamma:
+
+    x_L23 = 1/2 + F Delta + gamma
+           = 0.562129475821...
+
+(c) Reactor channel
+
+The two hidden sheets contribute 2 gamma, contracted by the squared rail ratio
+(delta_star/delta_classical)^2 and screened by face survival 1-F Delta:
+
+    x_L13 = 2 gamma (delta_star/delta_classical)^2 (1-F Delta)
+           = 0.022689900267...
+
+(d) Lepton CP area
+
+The outer/Galois sheet reverses orientation.  The gap accumulates over the N
+closed cells:
+
+    J_L = -N Delta
+        = -0.032359467925...
+
+The minimum-winding negative-entropy-orientation representative is
+
+    delta_L = 285.487555 degrees.
+
+The resulting unitary matrix is
+
+|U_PMNS| =
+[[0.82506520, 0.54458930, 0.15063167],
+ [0.40013870, 0.53899370, 0.74119823],
+ [0.39894415, 0.64257940, 0.65416763]]
+
+with
+
+    J(U_PMNS) = -0.032359467925...
+
+
+5. WHAT IS NOW CLOSED
+---------------------
+
+The complete flavour chain is
+
+    exact icosahedral seed
+      -> hidden 4_3 + 4_5 split
+      -> signed-K6 shell / signed-Petersen dual paths
+      -> unique mixed 3 <-> 3' channel routing
+      -> integrate passive path variables
+      -> quadratic URT relative-information action
+      -> stationary mixing coordinates
+      -> CKM and PMNS matrices.
+
+The primitive ribbon singular spectra are not physical fermion masses and their
+eigenvector overlaps are not the physical mixing matrices.  They are the UV
+path data whose invariant channel gains and curvatures enter the effective
+action.
+
+The target-dependent branch scores in the old ribbon solvers are therefore
+removed from the physical derivation.  They were diagnostic searches over an
+incorrect observable identification.
+
+The attached verifier contains no observed CKM or PMNS entries.  It reproduces:
+
+    Vus              0.224308861637
+    Vcb              0.042177509492
+    Vub              0.003733784761
+    J_CKM            3.141364407664e-5
+
+    sin^2 theta12    0.303463055248
+    sin^2 theta23    0.562129475821
+    sin^2 theta13    0.022689900267
+    J_PMNS          -0.032359467925
+
+and both matrices are unitary to machine precision.

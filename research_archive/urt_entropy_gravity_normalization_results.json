@@ -1,0 +1,261 @@
+{
+  "certificate": "URT entropy spectral-action gravity-normalization audit",
+  "date": "2026-09-04",
+  "finite_Dirac_reopening": {
+    "conclusion": "Until the finite Majorana/Yukawa block is selected, even the entropy moments do not uniquely fix the Einstein or vacuum coefficient.",
+    "published_formulas": [
+      "1/kappa_0^2=Lambda^2[96 f2-f0 c_M]/(12 pi^2)",
+      "gamma_0=Lambda^4[48 f4-f2 c_M+(f0/4)d_M]/pi^2"
+    ],
+    "rank_one_family": "c_M=x, d_M=x^2 for x>=0",
+    "status": "E",
+    "witnesses": [
+      {
+        "G_Lambda_squared": 0.01814940340393568,
+        "Newton_denominator": 259.6442910824723,
+        "dimensionless_vacuum_to_Einstein_ratio": 64.69708832529994,
+        "majorana_c": 0.0,
+        "majorana_d": 0.0,
+        "positive_Newton_coefficient": true,
+        "vacuum_numerator": 1399.85246944355
+      },
+      {
+        "G_Lambda_squared": 0.018154249867941757,
+        "Newton_denominator": 259.57497636441633,
+        "dimensionless_vacuum_to_Einstein_ratio": 64.70194126309403,
+        "majorana_c": 0.1,
+        "majorana_d": 0.010000000000000002,
+        "positive_Newton_coefficient": true,
+        "vacuum_numerator": 1399.5837395082906
+      },
+      {
+        "G_Lambda_squared": 0.0181979847988997,
+        "Newton_denominator": 258.95114390191236,
+        "dimensionless_vacuum_to_Einstein_ratio": 64.75296183603822,
+        "majorana_c": 1.0,
+        "majorana_d": 1.0,
+        "positive_Newton_coefficient": true,
+        "vacuum_numerator": 1397.321128206581
+      },
+      {
+        "G_Lambda_squared": 0.018647209879850943,
+        "Newton_denominator": 252.71281927687286,
+        "dimensionless_vacuum_to_Einstein_ratio": 66.01017895083932,
+        "majorana_c": 10.0,
+        "majorana_d": 100.0,
+        "positive_Newton_coefficient": true,
+        "vacuum_numerator": 1390.134868636458
+      },
+      {
+        "G_Lambda_squared": 0.02475910025673795,
+        "Newton_denominator": 190.32957302647776,
+        "dimensionless_vacuum_to_Einstein_ratio": 180.46113835820904,
+        "majorana_c": 100.0,
+        "majorana_d": 10000.0,
+        "positive_Newton_coefficient": true,
+        "vacuum_numerator": 2862.2576176325047
+      }
+    ]
+  },
+  "literal_scalar_free_one_trace_branch": {
+    "beta_equals_a": {
+      "Einstein_coefficient_magnitude": 1.0961444541021577,
+      "Einstein_matching_residual": 0.0,
+      "G_Lambda_squared": 0.01814940340393568,
+      "G_over_a_squared": 0.01814940340393568,
+      "Lambda_E_over_Lambda_squared": 64.69708832529994,
+      "action_weight": 1.0,
+      "beta_over_lattice_spacing": 1.0,
+      "combined_weight": 1.0,
+      "f2": 2.7046280321090865,
+      "f4": 29.163593113407295,
+      "trace_ratio": 1.0,
+      "volume_coefficient": 141.83470912866997,
+      "volume_matching_residual": 0.0
+    },
+    "beta_over_a_equals_eta_Delta": {
+      "Einstein_coefficient_magnitude": 1.0961444541021577,
+      "Einstein_matching_residual": 0.0,
+      "G_Lambda_squared": 0.01814940340393568,
+      "G_over_a_squared": 0.6524636745992786,
+      "Lambda_E_over_Lambda_squared": 64.69708832529994,
+      "action_weight": 1.0,
+      "beta_over_lattice_spacing": 5.995797986741314,
+      "combined_weight": 1.0,
+      "f2": 2.7046280321090865,
+      "f4": 29.163593113407295,
+      "trace_ratio": 1.0,
+      "volume_coefficient": 141.83470912866997,
+      "volume_matching_residual": 0.0
+    },
+    "exact_values": {
+      "G_Lambda_squared": "pi/(144 zeta(3))",
+      "G_over_a_squared_if_beta_equals_a": "pi/(144 zeta(3))",
+      "G_over_a_squared_if_beta_over_a_equals_eta_Delta": "eta_Delta^2 pi/(144 zeta(3))",
+      "Lambda_E_over_Lambda_squared": "75 zeta(5)/zeta(3)"
+    },
+    "matching_convention": "S_E=-integral sqrt(g)(R-2 Lambda_E)/(16 pi G)",
+    "status": "E conditional on one entropy trace, the standard finite trace, a scalar-free background and the displayed scale identification"
+  },
+  "observational_targets_used": false,
+  "published_inputs": {
+    "entropy_moments": {
+      "f0": "log(2)",
+      "f2": "(9/4) zeta(3)",
+      "f4": "(225/8) zeta(5)"
+    },
+    "primary_references": [
+      {
+        "arXiv": "1809.02944",
+        "title": "Entropy and the spectral action"
+      },
+      {
+        "arXiv": "0901.0577",
+        "equations": "spectral action coefficients and kappa_0, gamma_0",
+        "title": "Noncommutative Geometry as the Key to Unlock the Secrets of Space-Time"
+      },
+      {
+        "arXiv": "1004.0464",
+        "equations": "(5.12)-(5.14), (5.45)-(5.49)",
+        "title": "Noncommutative Geometry as a Framework for Unification of all Fundamental Interactions including Gravity. Part I"
+      }
+    ],
+    "standard_trace_scalar_free_terms": "S_E contains [48 f4 Lambda^4/pi^2 - 4 f2 Lambda^2 R/pi^2] integral sqrt(g)"
+  },
+  "scale_and_weight_orbit": {
+    "general_laws": [
+      "G Lambda^2=pi/[144 c_B nu zeta(3)]",
+      "G/a^2=(beta/a)^2 G Lambda^2",
+      "Lambda_E/Lambda^2=75 zeta(5)/zeta(3) in the bare scalar-free action"
+    ],
+    "maximum_scaling_residual": 8.673617379884035e-19,
+    "status": "E",
+    "unfixed_inputs": [
+      "physical bosonic action weight c_B",
+      "Cathedral-to-standard finite trace ratio nu",
+      "beta/a identification for the full spacetime Dirac operator"
+    ],
+    "witnesses": [
+      {
+        "Einstein_coefficient_magnitude": 0.2740361135255394,
+        "Einstein_matching_residual": 0.0,
+        "G_Lambda_squared": 0.07259761361574273,
+        "G_over_a_squared": 0.01814940340393568,
+        "Lambda_E_over_Lambda_squared": 64.69708832529994,
+        "action_weight": 0.25,
+        "beta_over_lattice_spacing": 0.5,
+        "combined_weight": 0.25,
+        "f2": 2.7046280321090865,
+        "f4": 29.163593113407295,
+        "scale_law_residual": 0.0,
+        "trace_ratio": 1.0,
+        "volume_coefficient": 35.45867728216749,
+        "volume_matching_residual": 0.0
+      },
+      {
+        "Einstein_coefficient_magnitude": 1.0961444541021577,
+        "Einstein_matching_residual": 0.0,
+        "G_Lambda_squared": 0.01814940340393568,
+        "G_over_a_squared": 0.01814940340393568,
+        "Lambda_E_over_Lambda_squared": 64.69708832529994,
+        "action_weight": 0.5,
+        "beta_over_lattice_spacing": 1.0,
+        "combined_weight": 1.0,
+        "f2": 2.7046280321090865,
+        "f4": 29.163593113407295,
+        "scale_law_residual": 0.0,
+        "trace_ratio": 2.0,
+        "volume_coefficient": 141.83470912866997,
+        "volume_matching_residual": 0.0
+      },
+      {
+        "Einstein_coefficient_magnitude": 1.0961444541021577,
+        "Einstein_matching_residual": 0.0,
+        "G_Lambda_squared": 0.01814940340393568,
+        "G_over_a_squared": 0.6524636745992786,
+        "Lambda_E_over_Lambda_squared": 64.69708832529994,
+        "action_weight": 1.0,
+        "beta_over_lattice_spacing": 5.995797986741314,
+        "combined_weight": 1.0,
+        "f2": 2.7046280321090865,
+        "f4": 29.163593113407295,
+        "scale_law_residual": 0.0,
+        "trace_ratio": 1.0,
+        "volume_coefficient": 141.83470912866997,
+        "volume_matching_residual": 0.0
+      },
+      {
+        "Einstein_coefficient_magnitude": 3.2884333623064728,
+        "Einstein_matching_residual": 0.0,
+        "G_Lambda_squared": 0.006049801134645227,
+        "G_over_a_squared": 0.05444821021180704,
+        "Lambda_E_over_Lambda_squared": 64.69708832529994,
+        "action_weight": 2.0,
+        "beta_over_lattice_spacing": 3.0,
+        "combined_weight": 3.0,
+        "f2": 2.7046280321090865,
+        "f4": 29.163593113407295,
+        "scale_law_residual": 0.0,
+        "trace_ratio": 1.5,
+        "volume_coefficient": 425.5041273860099,
+        "volume_matching_residual": 0.0
+      },
+      {
+        "Einstein_coefficient_magnitude": 3.0692044714860414,
+        "Einstein_matching_residual": 4.440892098500626e-16,
+        "G_Lambda_squared": 0.006481929787119885,
+        "G_over_a_squared": 0.5250363127567107,
+        "Lambda_E_over_Lambda_squared": 64.69708832529994,
+        "action_weight": 7.0,
+        "beta_over_lattice_spacing": 9.0,
+        "combined_weight": 2.8000000000000003,
+        "f2": 2.7046280321090865,
+        "f4": 29.163593113407295,
+        "scale_law_residual": 8.673617379884035e-19,
+        "trace_ratio": 0.4,
+        "volume_coefficient": 397.13718556027595,
+        "volume_matching_residual": 5.684341886080802e-14
+      }
+    ]
+  },
+  "vacuum_counterterm_obstruction": {
+    "counterterm": "delta_v Lambda^4 integral sqrt(g)",
+    "status": "E",
+    "theorem": "A field-independent volume term changes the gravitational vacuum coefficient while multiplying a fixed-geometry normalized measure by a cancelling scalar. OS positivity and normalized Gibbs data therefore cannot select delta_v.",
+    "witnesses": [
+      {
+        "dimensionless_volume_counterterm_delta_v": -100.0,
+        "normalized_measure_change": 0.0,
+        "shifted_Lambda_E_over_Lambda_squared": 19.08266240462641
+      },
+      {
+        "dimensionless_volume_counterterm_delta_v": -1.0,
+        "normalized_measure_change": 0.0,
+        "shifted_Lambda_E_over_Lambda_squared": 64.2409440660932
+      },
+      {
+        "dimensionless_volume_counterterm_delta_v": 0.0,
+        "normalized_measure_change": 0.0,
+        "shifted_Lambda_E_over_Lambda_squared": 64.69708832529994
+      },
+      {
+        "dimensionless_volume_counterterm_delta_v": 3.0,
+        "normalized_measure_change": 0.0,
+        "shifted_Lambda_E_over_Lambda_squared": 66.06552110292014
+      },
+      {
+        "dimensionless_volume_counterterm_delta_v": 100.0,
+        "normalized_measure_change": 0.0,
+        "shifted_Lambda_E_over_Lambda_squared": 110.31151424597348
+      }
+    ]
+  },
+  "verdict": {
+    "advance": "The universal entropy moments fix exact bare gravity ratios on a fully specified branch. The residual freedom is localized to action/trace weight, beta-to-lattice scale, the finite Dirac invariants and an entropy-invisible volume counterterm.",
+    "conditional_G_Lambda_squared": "E",
+    "conditional_bare_Lambda_E_over_Lambda_squared": "E",
+    "phenomenology_gate": "CLOSED",
+    "unconditional_G_over_a_squared": "U",
+    "unconditional_cosmological_coefficient": "U"
+  }
+}

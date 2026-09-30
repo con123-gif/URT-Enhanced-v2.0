@@ -1,0 +1,51 @@
+URT GATE-2 SPECTRAL-FILTRATION VERDICT
+======================================
+
+Canonical depth:
+  Delta = 3/20 - 80*pi/(1053*phi)
+  eta   = -log(Delta) = 5.9957979867413025
+
+Parameter-free covariant repair:
+  A_f = M0_f^dagger M0_f = sum_i lambda_fi P_fi
+  R_f = Delta^2 P_f1 + Delta P_f2 + P_f3
+  M_f = M0_f R_f
+
+This is the unique monotone basis-covariant filtration with depth weights
+(Delta^2, Delta, 1) and no external generation flag.
+
+Best converged branch among the four intertwiner-sign branches:
+  relative signs = (-1, +1) or its CP-conjugate (-1, -1)
+  objective      = 0.39776212619882934
+  gradient norm  = 1.621958690426267e-07
+
+Normalized mass spectra (light, middle, heavy):
+  u  = (9.4327488e-7, 2.3551975e-3, 1)
+  d  = (1.1203282e-6, 2.2045993e-3, 1)
+  e  = (2.2690143e-6, 1.3322918e-3, 1)
+  nu = (3.9610759e-7, 1.9905204e-3, 1)
+
+|V_CKM|:
+  0.9792274110  0.2001535931  0.0324378899
+  0.1910299299  0.9643058003  0.1833627263
+  0.0679797281  0.1733576150  0.9825099968
+
+J_CKM = -1.2653679536e-5 (sign reverses on the conjugate branch)
+
+|U_PMNS|:
+  0.0423672489  0.0424995527  0.9981977781
+  0.1704812505  0.9841352864  0.0491312649
+  0.9844496734  0.1722542481  0.0344574314
+
+J_PMNS = -1.2660707392e-5 (sign reverses on the conjugate branch)
+
+CONCLUSION
+----------
+The common-flag no-go is removed, but the frozen primitive matter source still
+fails. The CKM 2-3 and 1-3 mixings are far too large, and the PMNS matrix is
+permutation-like rather than the observed broad pattern.
+
+Any depth operator R_f that is a functional calculus of A_f commutes with A_f
+and cannot alter its spectral projectors. Therefore basis-covariant depth
+filtration can change masses but cannot repair the primitive mixing geometry.
+The failed object is the frozen charge-to-field source map, not the depth
+filter, the bandwidth, or the finite icosahedral seed.

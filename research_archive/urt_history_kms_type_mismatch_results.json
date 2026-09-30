@@ -1,0 +1,92 @@
+{
+  "actual_Cathedral_history_spaces": [
+    {
+      "dimension": 36,
+      "factorization": "12 shell vertices x 3 generation components",
+      "full_Fock_dimension_if_each_basis_state_is_a_mode": "2^36",
+      "is_power_of_two": false,
+      "source": "Hopf passive/species history Y"
+    },
+    {
+      "dimension": 144,
+      "factorization": "4 species x 12 vertices x 3 generations",
+      "full_Fock_dimension_if_each_basis_state_is_a_mode": "2^144",
+      "is_power_of_two": false,
+      "source": "Hopf four-species joint Gram"
+    },
+    {
+      "dimension": 180,
+      "factorization": "60 directed history states x 3 generations",
+      "full_Fock_dimension_if_each_basis_state_is_a_mode": "2^180",
+      "is_power_of_two": false,
+      "source": "Wilson directed-history Y"
+    },
+    {
+      "dimension": 720,
+      "factorization": "4 species x 60 histories x 3 generations",
+      "full_Fock_dimension_if_each_basis_state_is_a_mode": "2^720",
+      "is_power_of_two": false,
+      "source": "Wilson four-species joint Gram"
+    }
+  ],
+  "additive_shift_diagnostic": {
+    "Boltzmann_identity": "rho_B(k+cI)=rho_B(k)",
+    "Boltzmann_shift_residual": 5.133213711957238e-16,
+    "Fock_fixed_mu_shift_distance": 0.29739058964362014,
+    "chemical_potential_compensation_residual": 5.551493073326481e-17,
+    "consequence": "The master's Gibbs-invisible identity shift is compatible with the conditioned one-particle state, but a full Fock interpretation needs an independently specified or co-shifted chemical potential.",
+    "grand_canonical_identity": "rho_F(k+cI,mu+c)=rho_F(k,mu) because k-mu I is unchanged",
+    "mean_particle_number_after": 0.44689421731515494,
+    "mean_particle_number_before": 0.9301767848297986,
+    "shift_c": 1.37,
+    "status": "E"
+  },
+  "certificate": "URT history heat versus full fermionic KMS type audit",
+  "completion_dichotomy": {
+    "conditioned_history_state": "Retain existing normalized heat outputs, but treat them as the N=1 sector and do not equate their entropy with the full fermionic entropy spectral action.",
+    "full_Fock_lift": "Retain Tr h(beta k), add vacuum and all multiparticle sectors, and specify particle number/chemical potential plus their couplings.",
+    "status": "U; neither branch is selected by current axioms"
+  },
+  "conditioning_theorem": {
+    "finite_witness": {
+      "Fock_dimension": 8,
+      "conditioning_residual": 1.3359637926594684e-16,
+      "mode_count": 3
+    },
+    "identity": "P1 rho_F P1/Tr(P1 rho_F)=e^{-beta k}/Tr(e^{-beta k})=rho_B",
+    "reason": "dGamma(k) restricted to exterior degree one equals k",
+    "status": "E"
+  },
+  "date": "2026-09-04",
+  "entropy_comparison": {
+    "consequence": "The normalized history heat entropy is not Tr h(beta k); the latter is the entropy before conditioning on particle number one.",
+    "difference_conditioned_minus_full": -0.8063257788960336,
+    "full_Fock_direct": 1.7441412259005085,
+    "full_Fock_identity_residual": 4.440892098500626e-16,
+    "full_Fock_spectral_formula": 1.744141225900509,
+    "one_particle_conditioned_entropy": 0.9378154470044748
+  },
+  "observational_targets_used": false,
+  "scope_of_exact_finite_factorizations": {
+    "not_automatically_full_Fock": "the 36/144/180/720-dimensional normalized history heat states",
+    "note": "A history cost k can be declared a one-particle generator for a new 2^N-dimensional Fock theory, but that changes the state space and does not identify the already used rho_B with its full KMS state.",
+    "valid_full_Fock_cases": [
+      "16-dimensional exterior prior = Fock(C^4)",
+      "8-dimensional hidden 3/5 block admits a Fock(C^3) realization"
+    ]
+  },
+  "two_states": {
+    "Cathedral_history_heat_state": "rho_B=e^{-beta k}/Tr e^{-beta k} on H1",
+    "dimensions": "dim H1=N while dim Fock(H1)=2^N",
+    "fermionic_KMS_state": "rho_F=e^{-beta dGamma(k)}/det(I+e^{-beta k}) on Fock(H1)",
+    "status": "E"
+  },
+  "verdict": {
+    "advance": "The entropy spectral-action connection survives exactly for the finite exterior and hidden factorizations, but it does not close the history theory.  The existing heat states are conditioned sectors; a full Fock lift requires new occupancy and chemical-potential data.",
+    "finite_exterior_KMS_identity_promotes_automatically_to_history": "F",
+    "history_heat_state_is_full_fermionic_KMS": "F",
+    "history_heat_state_is_one_particle_conditioned_KMS": "E",
+    "master_shift_symmetry_matches_fixed_mu_full_Fock_state": "F",
+    "phenomenology_gate": "CLOSED"
+  }
+}

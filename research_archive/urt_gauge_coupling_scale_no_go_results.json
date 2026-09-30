@@ -1,0 +1,70 @@
+{
+  "certificate": "URT gauge-coupling scale circularity no-go",
+  "date": "2026-09-04",
+  "deterministic_witnesses": [
+    {
+      "analytic_derivative": 2.685758803913437,
+      "beta": 0.1,
+      "cost_expectation": 0.4479401757451694,
+      "eta_beta_scaling_residual": 0.0,
+      "finite_difference_derivative": 2.6857588039941316,
+      "minimum_relative_information_value": 0.3703781158835304,
+      "partition": 0.6904732023871216
+    },
+    {
+      "analytic_derivative": 0.3545045976741086,
+      "beta": 0.5,
+      "cost_expectation": 0.05912550730662292,
+      "eta_beta_scaling_residual": 0.0,
+      "finite_difference_derivative": 0.35450459767716325,
+      "minimum_relative_information_value": 0.8147612730056375,
+      "partition": 0.442745009931698
+    },
+    {
+      "analytic_derivative": 0.03568026823131795,
+      "beta": 1.0,
+      "cost_expectation": 0.005950878983951559,
+      "eta_beta_scaling_residual": 0.0,
+      "finite_difference_derivative": 0.03568026829547932,
+      "minimum_relative_information_value": 0.8836895338655467,
+      "partition": 0.41325537576265253
+    },
+    {
+      "analytic_derivative": 0.0003950407920489523,
+      "beta": 2.0,
+      "cost_expectation": 6.588627450800006e-05,
+      "eta_beta_scaling_residual": 0.0,
+      "finite_difference_derivative": 0.0003950408333786015,
+      "minimum_relative_information_value": 0.891510274206209,
+      "partition": 0.4100360180637872
+    }
+  ],
+  "exact_theorem": {
+    "partition_derivative": "d[-log Z]/d beta=eta Tr(rho_beta K0)>=0",
+    "scale_identity": "F_{c eta,beta/c}(rho)=F_{eta,beta}(rho) for every c>0",
+    "stationarity": "There is no positive interior stationary beta; minimizing the variational value over beta sends beta to 0.",
+    "status": "E",
+    "strictness": "The derivative is positive whenever K0 is nonzero on the faithful support of rho_beta."
+  },
+  "fixed_inputs_do_not_repair_it": {
+    "conclusion": "Geometric and trace normalization determine the tensor form and relative couplings. They supply no non-homogeneous equation for beta.",
+    "eta_Delta": 5.995797986741314,
+    "parent_trace": "fixes g1:g2:g3 but not their common magnitude",
+    "plaquette_bivector_frame": "5 I on Lambda^2(V4)"
+  },
+  "maximum_derivative_residual": 8.069456214343518e-11,
+  "maximum_eta_beta_scaling_residual": 0.0,
+  "observational_targets_used": false,
+  "setup": {
+    "gauge_cost": "K_g(beta)=beta K0 with K0>=0",
+    "minimizer": "rho_beta=exp(log rho0-eta beta K0)/Z in the displayed commuting form; the eta-beta product statement is general",
+    "minimum_value": "F_min(beta)=-log Z(beta)",
+    "relative_information": "F_{eta,beta}(rho)=D(rho||rho0)+eta beta Tr(rho K0)"
+  },
+  "verdict": {
+    "absolute_bare_gauge_coupling": "U",
+    "no_go": "The declared relative-information principle cannot select a nonzero absolute gauge coupling from eta_Delta and the normalized plaquette action. Setting beta or g to one would be a convention.",
+    "phenomenology_gate": "CLOSED",
+    "relative_parent_couplings": "E conditional on one parent trace"
+  }
+}

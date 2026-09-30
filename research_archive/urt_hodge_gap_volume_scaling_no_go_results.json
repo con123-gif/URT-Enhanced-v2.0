@@ -1,0 +1,128 @@
+{
+  "asymptotics": {
+    "exact_eigenvalue": "6-2 sqrt(9-8 sin^2(pi/Nt))",
+    "limit_Nt_squared_lambda": "8*pi**2/3",
+    "limit_formula": "8 pi^2/3",
+    "singular_value_scaling": "sigma_min^+(B)<=sqrt(8/3) pi/Nt+O(Nt^-3)",
+    "smallest_temporal_momentum": "k_min=2pi/Nt",
+    "status": "E"
+  },
+  "certificate": "URT global-Hodge gap volume-scaling no-go",
+  "date": "2026-09-04",
+  "exact_spatial_zero_block": {
+    "characteristic_polynomial": "x (x-8)^3 (x-12) [x^2-12x+8q]^3",
+    "least_branch": "lambda_-=6-2 sqrt(9-2q)",
+    "multiplicity": 3,
+    "q": "2-z-z^-1=4 sin^2(k/2)",
+    "status": "E",
+    "symbolic_residual": "0"
+  },
+  "global_Hodge_route": {
+    "Hodge_factor_L_cubed_coefficient": 1.0128558556767444,
+    "face_count_isotropic": "27 L^4",
+    "optimistic_Hodge_factor": "sqrt(27 L^4/lambda_min)<=not applicable; the actual factor is at least (9/(2 sqrt(2) pi)) L^3 asymptotically",
+    "optimistic_limit_L_cubed_delta": 0.12606312083575813,
+    "rows": [
+      {
+        "L_cubed_times_threshold": 0.12149437249475256,
+        "Nt_squared_times_eigenvalue": 24.445824720006726,
+        "isotropic_length": 4,
+        "long_wavelength_curvature_eigenvalue": 1.5278640450004204,
+        "optimistic_face_angle_threshold_upper_bound": 0.0018983495702305088,
+        "optimistic_global_Hodge_factor_lower_bound": 67.26040984531554,
+        "q_min": 1.9999999999999996,
+        "temporal_k_min": 1.5707963267948966
+      },
+      {
+        "L_cubed_times_threshold": 0.12410068810924858,
+        "Nt_squared_times_eigenvalue": 25.50590560334947,
+        "isotropic_length": 6,
+        "long_wavelength_curvature_eigenvalue": 0.7084973778708186,
+        "optimistic_face_angle_threshold_upper_bound": 0.0005745402227280027,
+        "optimistic_global_Hodge_factor_lower_bound": 222.23643371237097,
+        "q_min": 0.9999999999999998,
+        "temporal_k_min": 1.0471975511965976
+      },
+      {
+        "L_cubed_times_threshold": 0.12497031694919812,
+        "Nt_squared_times_eigenvalue": 25.8646205527279,
+        "isotropic_length": 8,
+        "long_wavelength_curvature_eigenvalue": 0.40413469613637343,
+        "optimistic_face_angle_threshold_upper_bound": 0.00024408265029140258,
+        "optimistic_global_Hodge_factor_lower_bound": 523.1169440799869,
+        "q_min": 0.585786437626905,
+        "temporal_k_min": 0.7853981633974483
+      },
+      {
+        "L_cubed_times_threshold": 0.1255806682611859,
+        "Nt_squared_times_eigenvalue": 26.117881581193984,
+        "isotropic_length": 12,
+        "long_wavelength_curvature_eigenvalue": 0.18137417764718045,
+        "optimistic_face_angle_threshold_upper_bound": 7.267399783633443e-05,
+        "optimistic_global_Hodge_factor_lower_bound": 1756.9388491731668,
+        "q_min": 0.26794919243112264,
+        "temporal_k_min": 0.5235987755982988
+      },
+      {
+        "L_cubed_times_threshold": 0.12579235060806754,
+        "Nt_squared_times_eigenvalue": 26.20600587942613,
+        "isotropic_length": 16,
+        "long_wavelength_curvature_eigenvalue": 0.10236721046650832,
+        "optimistic_face_angle_threshold_upper_bound": 3.071102309767274e-05,
+        "optimistic_global_Hodge_factor_lower_bound": 4157.5876426291525,
+        "q_min": 0.15224093497742647,
+        "temporal_k_min": 0.39269908169872414
+      },
+      {
+        "L_cubed_times_threshold": 0.12594296815587003,
+        "Nt_squared_times_eigenvalue": 26.26879900390611,
+        "isotropic_length": 24,
+        "long_wavelength_curvature_eigenvalue": 0.045605553826225886,
+        "optimistic_face_angle_threshold_upper_bound": 9.110457765904949e-06,
+        "optimistic_global_Hodge_factor_lower_bound": 14015.077332472514,
+        "q_min": 0.0681483474218634,
+        "temporal_k_min": 0.2617993877991494
+      },
+      {
+        "L_cubed_times_threshold": 0.12599557187644167,
+        "Nt_squared_times_eigenvalue": 26.29074743286219,
+        "isotropic_length": 32,
+        "long_wavelength_curvature_eigenvalue": 0.025674558039904483,
+        "optimistic_face_angle_threshold_upper_bound": 3.8450797081433615e-06,
+        "optimistic_global_Hodge_factor_lower_bound": 33207.05416144315,
+        "q_min": 0.038429439193539104,
+        "temporal_k_min": 0.19634954084936207
+      },
+      {
+        "L_cubed_times_threshold": 0.12604624244692597,
+        "Nt_squared_times_eigenvalue": 26.311897938776383,
+        "isotropic_length": 64,
+        "long_wavelength_curvature_eigenvalue": 0.006423803207709078,
+        "optimistic_face_angle_threshold_upper_bound": 4.808282564045943e-07,
+        "optimistic_global_Hodge_factor_lower_bound": 265549.63944536314,
+        "q_min": 0.009630546655606228,
+        "temporal_k_min": 0.09817477042468103
+      },
+      {
+        "L_cubed_times_threshold": 0.1260589017898257,
+        "Nt_squared_times_eigenvalue": 26.317183428589487,
+        "isotropic_length": 128,
+        "long_wavelength_curvature_eigenvalue": 0.00160627340262387,
+        "optimistic_face_angle_threshold_upper_bound": 6.010956849566732e-08,
+        "optimistic_global_Hodge_factor_lower_bound": 2124183.775043836,
+        "q_min": 0.0024090875896552147,
+        "temporal_k_min": 0.04908738521234052
+      }
+    ],
+    "status": "E asymptotic obstruction for this norm-comparison method",
+    "sufficient_delta_must_shrink_at_least_as": "L^-3"
+  },
+  "observational_targets_used": false,
+  "verdict": {
+    "finite_volume_certificate_invalidated": false,
+    "global_flat_connection_comparison_volume_uniform": false,
+    "required_replacement": "derive X^dagger X directly as a positive flat part plus local covariant-shift commutators bounded by individual triangular and square holonomies",
+    "status": "F global Hodge proof route; U local commutator theorem",
+    "volume_uniform_local_admissibility_disproved": false
+  }
+}

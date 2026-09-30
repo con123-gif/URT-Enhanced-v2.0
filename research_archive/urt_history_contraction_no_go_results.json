@@ -1,0 +1,141 @@
+{
+  "certificate": "URT history contraction-selector boundary-collapse no-go",
+  "date": "2026-09-04",
+  "direct_matrix_checks": [
+    {
+      "singular_formula_residual": 4.440892098500626e-16,
+      "t": 0.0,
+      "unitarity_residual": 2.222052912919766e-16
+    },
+    {
+      "singular_formula_residual": 1.3322676295501878e-15,
+      "t": 0.5,
+      "unitarity_residual": 4.965965568690461e-16
+    },
+    {
+      "singular_formula_residual": 2.220446049250313e-15,
+      "t": 0.7071067811865475,
+      "unitarity_residual": 1.0299460570735572e-15
+    },
+    {
+      "singular_formula_residual": 1.3322676295501878e-15,
+      "t": 0.9,
+      "unitarity_residual": 1.8742736263542593e-15
+    }
+  ],
+  "exact_monotonicity_theorem": {
+    "boundary_operator": "V_1=-I and D_1=2I because 1 is not in spec(W)",
+    "conclusion": "Maximal uniform contraction has no nontrivial minimizer in the admissible open family. Its closure selects t=1, which erases W.",
+    "condition_ratio": "K_D(t)=[(1-c_min)/(1-c_max)][(1+t^2-2t c_max)/(1+t^2-2t c_min)]",
+    "infimum": "K_D(t)->1 as t->1",
+    "log_derivative": "d log K_D/dt=2(c_min-c_max)(1-t^2)/[(1+t^2-2t c_max)(1+t^2-2t c_min)]",
+    "sign": "strictly negative for -1<t<1",
+    "status": "E"
+  },
+  "history_family": {
+    "branch_phases": "theta=+/- pi/30+2 pi k/5, k=0,...,4",
+    "cosine_max": 0.9945218953682733,
+    "cosine_min": -0.8660254037844386,
+    "definition": "V_t=(W-tI)(I-tW)^(-1), D_t=I-V_t, -1<t<1",
+    "maximum_phase": "|theta|=5pi/6",
+    "minimum_phase": "|theta|=pi/30",
+    "singular_value_formula": "sigma_t(theta)^2=2(1+t)^2(1-cos(theta))/(1+t^2-2t cos(theta))"
+  },
+  "no_go": {
+    "determinant_line_lambda": "unfixed",
+    "phenomenology_gate": "CLOSED",
+    "required_repair": "A joint even/odd action must constrain contraction and ordered orientation simultaneously. Any scalar tradeoff inserted between them would be a new coefficient and is not yet derived.",
+    "statement": "The URT uniform-contraction rule that conditionally fixes the A4 Wilson coefficient cannot by itself fix a nontrivial history Mobius parameter: it drives the history operator to D=2I and loses the ordered five-cycle invariant."
+  },
+  "observational_targets_used": false,
+  "orientation_boundary": {
+    "exact_t_equals_1_ratio": "det D_1(R)/det D_1(L)=1",
+    "meaning": "At the contraction optimum the physical determinant ratio is orientation-blind, even though a continuously unwrapped logarithm can approach an integer multiple of pi."
+  },
+  "orientation_phase_witnesses": [
+    {
+      "degree_five_coefficient": 0.0,
+      "determinant_ratio_imag": 0.0,
+      "determinant_ratio_real": 1.0,
+      "principal_half_phase": 0.0,
+      "t": 0.0
+    },
+    {
+      "degree_five_coefficient": 0.1875,
+      "determinant_ratio_imag": 0.37592788263930627,
+      "determinant_ratio_real": 0.9266489233006893,
+      "principal_half_phase": 0.1926989513679747,
+      "t": 0.5
+    },
+    {
+      "degree_five_coefficient": 1.060660171779821,
+      "determinant_ratio_imag": 0.6018711989326012,
+      "determinant_ratio_real": -0.7985931754625952,
+      "principal_half_phase": 1.2478752443948047,
+      "t": 0.7071067811865475
+    },
+    {
+      "degree_five_coefficient": 3.5429400000000006,
+      "determinant_ratio_imag": 0.4603697466265772,
+      "determinant_ratio_real": 0.8877272646432475,
+      "principal_half_phase": 0.23920583140922907,
+      "t": 0.9
+    },
+    {
+      "degree_five_coefficient": 5.7059402994,
+      "determinant_ratio_imag": -0.7821580068758162,
+      "determinant_ratio_real": -0.623080133112947,
+      "principal_half_phase": -1.1217354379895117,
+      "t": 0.99
+    },
+    {
+      "degree_five_coefficient": 5.999970000059999,
+      "determinant_ratio_imag": -0.00022392315854075084,
+      "determinant_ratio_real": 0.9999999749292073,
+      "principal_half_phase": -0.00011196158020603076,
+      "t": 0.999999
+    }
+  ],
+  "spectral_witnesses": [
+    {
+      "condition_number_D": 18.456256379557306,
+      "condition_number_D_squared": 340.6333995479498,
+      "maximum_DdaggerD": 3.7320508075688776,
+      "minimum_DdaggerD": 0.01095620926345342,
+      "optimal_abs_D_Richardson_factor": 0.8972053019356077,
+      "t": 0.0
+    },
+    {
+      "condition_number_D": 6.412981964559615,
+      "condition_number_D_squared": 41.1263376777669,
+      "maximum_DdaggerD": 3.9683428667784533,
+      "minimum_DdaggerD": 0.09649152078337768,
+      "optimal_abs_D_Richardson_factor": 0.7302030398075015,
+      "t": 0.5
+    },
+    {
+      "condition_number_D": 3.41951590324859,
+      "condition_number_D_squared": 11.693089012570018,
+      "maximum_DdaggerD": 3.991563831562721,
+      "minimum_DdaggerD": 0.341360937838736,
+      "optimal_abs_D_Richardson_factor": 0.547461748348979,
+      "t": 0.7071067811865475
+    },
+    {
+      "condition_number_D": 1.4170954629255126,
+      "condition_number_D_squared": 2.0081595510440726,
+      "maximum_DdaggerD": 3.9992046261118506,
+      "minimum_DdaggerD": 1.9914775317691285,
+      "optimal_abs_D_Richardson_factor": 0.17256060810303467,
+      "t": 0.9
+    },
+    {
+      "condition_number_D": 1.004585548599754,
+      "condition_number_D_squared": 1.0091921244554687,
+      "maximum_DdaggerD": 3.999992747997318,
+      "minimum_DdaggerD": 3.963559218375391,
+      "optimal_abs_D_Richardson_factor": 0.0022875295110039145,
+      "t": 0.99
+    }
+  ]
+}

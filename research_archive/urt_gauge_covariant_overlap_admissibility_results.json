@@ -1,0 +1,187 @@
+{
+  "certificate": "URT gauge-covariant overlap admissibility",
+  "covariant_overlap": {
+    "definition": "D_U=(I+X_U(X_U^dagger X_U)^(-1/2))/2",
+    "finite_periodic_witness": {
+      "gauge_group": "U(1) witness; algebra extends to any unitary representation",
+      "linear_size": 2,
+      "maximum_gauge_covariance_residual": 9.074701005957978e-15,
+      "maximum_gauge_spectrum_residual": 5.684341886080802e-14,
+      "rows": [
+        {
+          "Wilson_gauge_covariance_residual": 1.1924070438302326e-15,
+          "analytic_sigma_minimum_lower_bound": 0.6641101483705374,
+          "difference_minus_bound": -0.032229435011056344,
+          "gamma5_hermiticity_residual": 0.0,
+          "gauge_spectrum_residual": 5.684341886080802e-14,
+          "inside_conservative_chart": true,
+          "maximum_link_deviation": 0.004999608466977921,
+          "operator_difference_norm": 0.010310384536656607,
+          "overlap_diagnostics": {
+            "GW_residual": 5.92859666331455e-15,
+            "maximum_XdaggerX_eigenvalue": 49.24307695913638,
+            "minimum_XdaggerX_eigenvalue": 0.9977877401039381,
+            "polar_gamma5_hermiticity_residual": 1.2050418377364518e-14,
+            "polar_unitarity_residual": 2.0869362941219438e-14
+          },
+          "overlap_gauge_covariance_residual": 7.388176081360972e-15,
+          "phase_amplitude": 0.005,
+          "transformed_overlap_diagnostics": {
+            "GW_residual": 5.9236892172914666e-15,
+            "maximum_XdaggerX_eigenvalue": 49.243076959136374,
+            "minimum_XdaggerX_eigenvalue": 0.9977877401039466,
+            "polar_gamma5_hermiticity_residual": 2.0245504434319028e-14,
+            "polar_unitarity_residual": 2.2164507888510036e-14
+          },
+          "triangle_bound": 0.04253981954771295
+        },
+        {
+          "Wilson_gauge_covariance_residual": 1.2393061343216876e-15,
+          "analytic_sigma_minimum_lower_bound": 0.5796998985491291,
+          "difference_minus_bound": -0.09423675470078888,
+          "gamma5_hermiticity_residual": 0.0,
+          "gauge_spectrum_residual": 5.684341886080802e-14,
+          "inside_conservative_chart": true,
+          "maximum_link_deviation": 0.014814753795048655,
+          "operator_difference_norm": 0.03181650671912153,
+          "overlap_diagnostics": {
+            "GW_residual": 1.121940493153694e-14,
+            "maximum_XdaggerX_eigenvalue": 49.252474219794706,
+            "minimum_XdaggerX_eigenvalue": 0.9920931586911272,
+            "polar_gamma5_hermiticity_residual": 1.3125582101365015e-14,
+            "polar_unitarity_residual": 2.644586657449635e-14
+          },
+          "overlap_gauge_covariance_residual": 6.0597345466529605e-15,
+          "phase_amplitude": 0.015,
+          "transformed_overlap_diagnostics": {
+            "GW_residual": 6.667268803582843e-15,
+            "maximum_XdaggerX_eigenvalue": 49.252474219794756,
+            "minimum_XdaggerX_eigenvalue": 0.9920931586911316,
+            "polar_gamma5_hermiticity_residual": 9.961699252009678e-15,
+            "polar_unitarity_residual": 1.6087608122628474e-14
+          },
+          "triangle_bound": 0.1260532614199104
+        },
+        {
+          "Wilson_gauge_covariance_residual": 1.2749068399496906e-15,
+          "analytic_sigma_minimum_lower_bound": 0.4507979002720788,
+          "difference_minus_bound": -0.1983616025609613,
+          "gamma5_hermiticity_residual": 0.0,
+          "gauge_spectrum_residual": 5.684341886080802e-14,
+          "inside_conservative_chart": true,
+          "maximum_link_deviation": 0.029803358245868456,
+          "operator_difference_norm": 0.055224151217362676,
+          "overlap_diagnostics": {
+            "GW_residual": 9.231766232515152e-15,
+            "maximum_XdaggerX_eigenvalue": 49.23831562299904,
+            "minimum_XdaggerX_eigenvalue": 0.9820297686883936,
+            "polar_gamma5_hermiticity_residual": 1.3817310663939132e-14,
+            "polar_unitarity_residual": 2.81508302085251e-14
+          },
+          "overlap_gauge_covariance_residual": 7.126741409118951e-15,
+          "phase_amplitude": 0.03,
+          "transformed_overlap_diagnostics": {
+            "GW_residual": 1.1011029839703432e-14,
+            "maximum_XdaggerX_eigenvalue": 49.23831562299906,
+            "minimum_XdaggerX_eigenvalue": 0.9820297686884013,
+            "polar_gamma5_hermiticity_residual": 1.2774480562964613e-14,
+            "polar_unitarity_residual": 2.6033916852162688e-14
+          },
+          "triangle_bound": 0.253585753778324
+        },
+        {
+          "Wilson_gauge_covariance_residual": 1.0330816319182373e-15,
+          "analytic_sigma_minimum_lower_bound": 0.28305700046346344,
+          "difference_minus_bound": -0.32421795278790927,
+          "gamma5_hermiticity_residual": 0.0,
+          "gauge_spectrum_residual": 5.684341886080802e-14,
+          "inside_conservative_chart": true,
+          "maximum_link_deviation": 0.049308114037567914,
+          "operator_difference_norm": 0.0953265549971349,
+          "overlap_diagnostics": {
+            "GW_residual": 1.0749814952402967e-14,
+            "maximum_XdaggerX_eigenvalue": 49.258778345304655,
+            "minimum_XdaggerX_eigenvalue": 0.9724370903261783,
+            "polar_gamma5_hermiticity_residual": 1.8863378707226233e-14,
+            "polar_unitarity_residual": 3.680961364916036e-14
+          },
+          "overlap_gauge_covariance_residual": 9.074701005957978e-15,
+          "phase_amplitude": 0.05,
+          "transformed_overlap_diagnostics": {
+            "GW_residual": 7.253509414028738e-15,
+            "maximum_XdaggerX_eigenvalue": 49.25877834530468,
+            "minimum_XdaggerX_eigenvalue": 0.9724370903261814,
+            "polar_gamma5_hermiticity_residual": 1.0737617280022206e-14,
+            "polar_unitarity_residual": 1.660641967171367e-14
+          },
+          "triangle_bound": 0.41954450778504415
+        }
+      ],
+      "sites": 16,
+      "spinor_matrix_dimension": 64
+    },
+    "identities": [
+      "D_{U^g}=G D_U G^dagger",
+      "D_U^dagger=gamma5 D_U gamma5",
+      "gamma5 D_U+D_U gamma5=2 D_U gamma5 D_U"
+    ],
+    "status": "E algebraically whenever the gap is open; N numerical witnesses"
+  },
+  "date": "2026-09-04",
+  "global_free_gap_theorem": {
+    "cases": [
+      "For 1-1/sqrt(2)<=B<=1+1/sqrt(2), S^2>=B(2-B)>=1/2.",
+      "For B>=1+1/sqrt(2), r>=1 and C<=1 give (rB-C)^2>=1/2.",
+      "For B<=1-1/sqrt(2), C>=1-B/2 and r<6/5 give a lower bound whose minimum exceeds 1/2."
+    ],
+    "conclusion": "X0^dagger X0>=1/2 on the full Brillouin torus",
+    "definitions": [
+      "x_i=1-cos(p_i) in [0,2]",
+      "B=sum_i x_i",
+      "S^2=sum_i x_i(2-x_i)",
+      "C=product_i sqrt(1-x_i/2) in [0,1]"
+    ],
+    "finite_L2_minimum_X0daggerX0": 0.999999999999984,
+    "low_B_margin_above_one_half": "(387-238 sqrt(2))/200=0.2520858607760168",
+    "omega_minimization": "X0^dagger X0=S^2+C^2+r^2B^2-2rBC cos(omega), whose minimum is S^2+(rB-C)^2",
+    "status": "E global bound; N finite-volume displayed eigenvalue"
+  },
+  "observational_targets_used": false,
+  "remaining_boundary": {
+    "missing": [
+      "a global gauge-invariant plaquette admissibility theorem on this non-orthogonal lattice",
+      "reflection positivity of the interacting non-ultralocal overlap operator",
+      "a local smooth nonabelian chiral-measure reconstruction",
+      "selection of the surviving topological theta phase",
+      "an interacting continuum limit"
+    ],
+    "status": "U/C"
+  },
+  "selected_root": {
+    "P_at_6_over_5": "41/25",
+    "P_at_7_over_6": "-1/9",
+    "P_prime_at_6_over_5": "68",
+    "P_prime_at_7_over_6": "112/3",
+    "isolating_interval": "7/6<r<6/5",
+    "polynomial": "240 r^3-392 r^2-28 r+185",
+    "r": 1.169543397160372,
+    "status": "E",
+    "uniqueness_reason": "P is strictly increasing throughout the isolating interval"
+  },
+  "verdict": {
+    "advance": "Gauge interaction no longer immediately destroys the overlap construction: a rigorous parameter-free open neighborhood of the vacuum has an invertible covariant kernel and exact GW chirality. The remaining obstruction is global measure/admissibility and interacting reflection positivity.",
+    "gauge_covariant_GW_operator": "E on the open-gap domain",
+    "global_admissible_chiral_gauge_theory": "U",
+    "phenomenology_gate": "CLOSED",
+    "rigorous_nonzero_weak_field_domain": "E"
+  },
+  "weak_field_gap_chart": {
+    "numerical_threshold": 0.08222171874262181,
+    "perturbation_bound": "||X_U-X_0||<=(43/5) epsilon",
+    "position_space_hop_norm_sum": "3(r+1)+2=3r+5<43/5",
+    "scope": "This is a gauge-fixed open chart around the trivial connection. The spectral gap itself is gauge invariant, but link closeness to I is not a global gauge-invariant admissibility condition.",
+    "singular_value_bound": "sigma_min(X_U)>=1/sqrt(2)-(43/5)epsilon",
+    "status": "E",
+    "sufficient_condition": "epsilon=max_link ||U-I||<5/(43 sqrt(2))"
+  }
+}
