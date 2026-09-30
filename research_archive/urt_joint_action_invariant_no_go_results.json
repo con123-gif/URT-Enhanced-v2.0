@@ -1,0 +1,142 @@
+{
+  "certificate": "URT lowest-degree joint-action invariant no-go",
+  "date": "2026-09-04",
+  "exact_invariant_classification": {
+    "linear_independence": "E2 is chirality even and quadratic/positive, whereas O5 is linear in chi and orientation sensitive at degree five. They cannot be scalar multiples as invariant functions.",
+    "lowest_joint_space": "span_R{E2, i O5}",
+    "normalization_quotient": "One overall nonzero action normalization fixes the coefficient of E2 but leaves lambda=b/a continuously free.",
+    "normalized_family": "S_lambda=E2+i lambda chi Omega5, lambda in R",
+    "orientation_line": "O5=chi*Omega5, with Omega5=-(i/60)Tr(tau3 W^5); chi and Omega5 are separately reversal odd, so O5 is even.",
+    "positive_line": "E2=normalized Tr(D^dagger D), or the selected A4 H_r^2 quadratic form; it is real, positive, gauge/A5 covariant and reversal even.",
+    "real_dimension": 2,
+    "status": "E"
+  },
+  "explicit_history_invariants": [
+    {
+      "E2_branch_conjugation_residual": 0.0,
+      "E2_normalized_trace": 2.0000000000000004,
+      "E5": 0.8660254037844387,
+      "Omega5_imaginary_residual": 8.289665250534502e-16,
+      "Omega5_real": 1.0,
+      "maximum_positive_eigenvalue": 3.7320508075688776,
+      "minimum_positive_eigenvalue": 0.010956209263453327,
+      "t": 0.0
+    },
+    {
+      "E2_branch_conjugation_residual": 0.0,
+      "E2_normalized_trace": 2.917346785456332,
+      "E5": 0.8660254037844387,
+      "Omega5_imaginary_residual": 8.289665250534502e-16,
+      "Omega5_real": 1.0,
+      "maximum_positive_eigenvalue": 3.9683428667784533,
+      "minimum_positive_eigenvalue": 0.0964915207833768,
+      "t": 0.5
+    },
+    {
+      "E2_branch_conjugation_residual": 0.0,
+      "E2_normalized_trace": 3.17656250137195,
+      "E5": 0.8660254037844387,
+      "Omega5_imaginary_residual": 8.289665250534502e-16,
+      "Omega5_real": 1.0,
+      "maximum_positive_eigenvalue": 3.991563831562722,
+      "minimum_positive_eigenvalue": 0.3413609378387334,
+      "t": 0.7071067811865475
+    },
+    {
+      "E2_branch_conjugation_residual": 0.0,
+      "E2_normalized_trace": 3.5892243904862045,
+      "E5": 0.8660254037844387,
+      "Omega5_imaginary_residual": 8.289665250534502e-16,
+      "Omega5_real": 1.0,
+      "maximum_positive_eigenvalue": 3.999204626111851,
+      "minimum_positive_eigenvalue": 1.9914775317691238,
+      "t": 0.9
+    }
+  ],
+  "observational_targets_used": false,
+  "phase_witnesses": [
+    {
+      "chirality": -1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 0.0,
+      "phase_imag": 0.0,
+      "phase_real": 1.0,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    },
+    {
+      "chirality": 1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 0.0,
+      "phase_imag": 0.0,
+      "phase_real": 1.0,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    },
+    {
+      "chirality": -1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 0.731,
+      "phase_imag": -0.6676144758470572,
+      "phase_real": 0.7445071602338416,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    },
+    {
+      "chirality": 1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 0.731,
+      "phase_imag": 0.6676144758470572,
+      "phase_real": 0.7445071602338416,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    },
+    {
+      "chirality": -1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 1.123,
+      "phase_imag": -0.901403437105813,
+      "phase_real": 0.432980188431095,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    },
+    {
+      "chirality": 1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 1.123,
+      "phase_imag": 0.901403437105813,
+      "phase_real": 0.432980188431095,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    },
+    {
+      "chirality": -1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 3.141592653589793,
+      "phase_imag": -1.2246467991473532e-16,
+      "phase_real": -1.0,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    },
+    {
+      "chirality": 1,
+      "flux_conjugation_residual": 0.0,
+      "lambda": 3.141592653589793,
+      "phase_imag": 1.2246467991473532e-16,
+      "phase_real": -1.0,
+      "reversal_invariance_residual": 0.0,
+      "unit_modulus_residual": 0.0
+    }
+  ],
+  "symmetry_theorem": {
+    "contraction_independence": "The determinant-line multiplier does not change D^dagger D, the A4 kernel spectrum, r_star, or any condition-number relaxation factor.",
+    "cross_term_consequence": "Allowing higher products of E2 and O5 enlarges the invariant algebra and cannot remove the already present one-parameter subfamily without an additional non-homogeneous equation.",
+    "statement": "If S_0 satisfies the declared gauge, A5, reversal and KO-6 conditions, then S_0+i lambda chi Omega5 satisfies the same conditions for every real lambda. The multiplier has unit modulus, is reversal invariant, and is carried to its complex conjugate by flux conjugation."
+  },
+  "verdict": {
+    "joint_action_uniqueness": "F",
+    "minimum_new_datum": "A normalized microscopic bulk/regulator or measure principle that supplies a non-homogeneous equation for lambda. Symmetry, index, positivity of the even sector, and contraction do not.",
+    "phenomenology_gate": "CLOSED",
+    "theorem": "Common normalization plus the presently declared symmetries does not quantize the orientation coefficient. The exact continuous lambda ambiguity survives after r_star is selected."
+  }
+}

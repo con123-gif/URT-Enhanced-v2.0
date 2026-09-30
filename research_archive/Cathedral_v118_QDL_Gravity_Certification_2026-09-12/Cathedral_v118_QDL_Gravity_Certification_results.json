@@ -1,0 +1,51 @@
+{
+  "schema": "cathedral-v118-qdl-gravity-certification-v1",
+  "date": "2026-09-12",
+  "gate_1_two_massless_spin2": {
+    "assumption": "nonzero Einstein-Hilbert two-derivative term in IR",
+    "null_momentum": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "symmetric_tensor_dimension": 10,
+    "linearized_Einstein_rank": 4,
+    "kernel_dimension": 6,
+    "gauge_subspace_rank": 4,
+    "physical_massless_dimension": 2,
+    "Einstein_operator_annihilates_gauge": true,
+    "verdict": "PASS CONDITIONALLY"
+  },
+  "gate_2_equivalence_principle": {
+    "geometry_quartet_multiplicity_in_EndV4": 1,
+    "principle": "one coframe e in the master principal symbol slashD_e tensor 1",
+    "verdict": "PASS at minimal principal-symbol level",
+    "limitation": "nonminimal curvature couplings are not excluded by representation multiplicity alone"
+  },
+  "gate_3_bianchi_integrability": {
+    "finite_shell": {
+      "rank_d0": 11,
+      "rank_d1": 19,
+      "max_abs_d1_d0": 0
+    },
+    "linearized_continuum_Bianchi_zero": true,
+    "verdict": "PASS exactly for finite boundary-of-boundary and linearized Einstein operator"
+  },
+  "gate_4_information_metric": {
+    "a": 0.24999845099308235,
+    "b": 1.5490069176638177e-06,
+    "eta_Delta": 5.995797986741312,
+    "chi35": 47.96697830338018,
+    "chi35_closed_form": "8 eta_Delta (1+Delta^2)/(1-Delta^2)",
+    "closed_form_residual": 0.0,
+    "quartet_information_metric": "chi35 * I4",
+    "quartet_anisotropy": 0.0,
+    "verdict": "PASS exactly at the selected block-scalar vacuum"
+  },
+  "overall": {
+    "result": "three exact/structural passes plus one conditional IR spin-2 pass",
+    "strongest_new_bridge": "g_info|4 = chi35 g_carrier|4",
+    "remaining_gravity_gate": "derive full nonlinear torsion-free metric-compatible continuum coframe action from microscopic URT spectral dynamics"
+  }
+}

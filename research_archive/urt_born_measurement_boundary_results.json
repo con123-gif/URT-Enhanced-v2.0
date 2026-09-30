@@ -1,0 +1,124 @@
+{
+  "cathedral_dynamics_audit": {
+    "circularity_boundary": "This trace pairing defines a mathematical expectation inside the chosen Gibbs model.  Treating it as a derivation of physical outcome probabilities would assume the rule being claimed.",
+    "existing_input": "The relative-information law already writes states as density matrices and costs through Tr(rho K).",
+    "missing_objects": [
+      "a physical measurement/instrument map",
+      "outcome records and update dynamics",
+      "derivation of projector noncontextuality",
+      "derivation of orthogonal additivity across every frame"
+    ]
+  },
+  "certificate": "URT Born-rule conditional closure and measurement boundary",
+  "conditional_gleason_closure": {
+    "continuity_note": "In finite dimension >=3, nonnegativity plus the frame-additivity premise is sufficient; continuity need not be separately assumed.",
+    "deterministic_trace_witness": {
+      "probability_sum_residual": 2.220446049250313e-16,
+      "rho_idempotence_residual": 1.6451212177108096e-16,
+      "rho_trace_residual": 1.2644609078030618e-18,
+      "trace_vs_squared_amplitude_residual": 5.551115123125783e-17
+    },
+    "premises": [
+      "mu(P)>=0 for every orthogonal projector P",
+      "mu(I)=1",
+      "mu(sum_i P_i)=sum_i mu(P_i) for every orthogonal family",
+      "mu(P) depends only on P, not on the projective frame containing P",
+      "complex Hilbert dimension at least three"
+    ],
+    "primary_reference": {
+      "author": "Andrew M. Gleason",
+      "doi": "10.1512/iumj.1957.6.56050",
+      "journal": "Journal of Mathematics and Mechanics 6 (1957), 885-893",
+      "title": "Measures on the Closed Subspaces of a Hilbert Space"
+    },
+    "pure_state_step": "If the preparation ray psi has certainty mu(P_psi)=1, positivity and Tr rho=1 force rho=P_psi. Hence mu(P_e)=|<e,psi>|^2 exactly.",
+    "status": "C: exact theorem after the measurement premises are postulated",
+    "theorem": "There is a unique positive trace-one operator rho such that mu(P)=Tr(rho P) for every projector P."
+  },
+  "covariant_non_born_family": {
+    "born_member": "alpha=1",
+    "definition": "p_i^(alpha)(psi;{e_j})=|<e_i,psi>|^(2 alpha)/sum_j |<e_j,psi>|^(2 alpha), alpha>0",
+    "deterministic_witnesses": [
+      {
+        "alpha": 0.5,
+        "context_gap": 0.07313218497098617,
+        "normalization_residual_rotated": 0.0,
+        "normalization_residual_standard": 0.0,
+        "probability_of_same_rank_two_projector_aligned_context": 0.6339745962155614,
+        "probability_of_same_rank_two_projector_standard_context": 0.7071067811865476,
+        "simultaneous_unitary_covariance_residual": 3.3306690738754696e-16
+      },
+      {
+        "alpha": 1.0,
+        "context_gap": 1.1102230246251565e-16,
+        "normalization_residual_rotated": 1.1102230246251565e-16,
+        "normalization_residual_standard": 0.0,
+        "probability_of_same_rank_two_projector_aligned_context": 0.75,
+        "probability_of_same_rank_two_projector_standard_context": 0.7500000000000001,
+        "simultaneous_unitary_covariance_residual": 3.3306690738754696e-16
+      },
+      {
+        "alpha": 2.0,
+        "context_gap": 0.06666666666666676,
+        "normalization_residual_rotated": 0.0,
+        "normalization_residual_standard": 0.0,
+        "probability_of_same_rank_two_projector_aligned_context": 0.9000000000000001,
+        "probability_of_same_rank_two_projector_standard_context": 0.8333333333333334,
+        "simultaneous_unitary_covariance_residual": 6.661338147750939e-16
+      },
+      {
+        "alpha": 3.0,
+        "context_gap": 0.06428571428571417,
+        "normalization_residual_rotated": 0.0,
+        "normalization_residual_standard": 0.0,
+        "probability_of_same_rank_two_projector_aligned_context": 0.9642857142857143,
+        "probability_of_same_rank_two_projector_standard_context": 0.9000000000000001,
+        "simultaneous_unitary_covariance_residual": 6.661338147750939e-16
+      }
+    ],
+    "maximum_unitary_covariance_residual": 6.661338147750939e-16,
+    "non_born_members": "every alpha!=1",
+    "properties_for_every_alpha": [
+      "nonnegative and normalized",
+      "continuous in state and basis",
+      "independent of vector phases",
+      "covariant under simultaneous unitary action on state and basis",
+      "covariant under relabeling of outcomes",
+      "certainty for a state equal to a basis vector"
+    ],
+    "same_projector_counterexample": {
+      "alpha_2_context_gap": "1/15",
+      "alpha_2_rotated_probability": "9/10",
+      "alpha_2_standard_probability": "5/6",
+      "born_probability_in_both_contexts": "3/4",
+      "rank_two_projector": "P=span(e1,e2)",
+      "rotated_context_squared_amplitudes": [
+        "3/4",
+        "0",
+        "1/4"
+      ],
+      "state_squared_amplitudes_in_standard_context": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ]
+    },
+    "status": "E",
+    "theorem": "Unitary covariance, normalization, continuity, phase blindness and eigenstate certainty do not determine the Born rule."
+  },
+  "date": "2026-09-04",
+  "exact_carrier": {
+    "complex_dimension": 16,
+    "gleason_dimension_gate": "passes because 16>=3",
+    "space": "Lambda^bullet(V4_C)",
+    "status": "E"
+  },
+  "observational_targets_used": false,
+  "verdict": {
+    "born_rule_given_gleason_premises": "E/C",
+    "gleason_premises_from_urt_dynamics": "U",
+    "no_go": "The current finite Hilbert/CAR/Gibbs structure does not derive the Born rule or measurement.  It satisfies the dimension needed for a conditional Gleason theorem, but a continuous covariant non-Born family survives every weaker premise presently derived.",
+    "phenomenology_gate": "CLOSED",
+    "physical_measurement_process": "U"
+  }
+}

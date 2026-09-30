@@ -1,0 +1,1000 @@
+# URT / Newton's Cathedral: revised full three-week reconstruction
+
+**Audit window:** 3–24 August 2026 (Europe/London)  
+**Priority window:** 20–24 August 2026  
+**Prepared:** 24 August 2026  
+**Revision:** 2 — omissions and superseded-status correction
+
+## 1. What this reconstruction does
+
+This is a status-controlled reconstruction of the work completed, attempted, corrected, rejected, or left open during the last three weeks. It covers all 115 dated Library artifacts in the window, the earlier frozen objects actively used during the window, and project work recoverable only from the conversation record. It does not treat a numerical match as a derivation, an explicit construction as a uniqueness theorem, or a later proposal as if it had already been proved in the 22 August master manuscript.
+
+The original `cathedral_master_verifier.py` was rerun successfully. A second verifier, `urt_three_week_gap_verifier.py`, was written and run for the late A4-lattice, resonance/outer-return, entropy, and vortex branches that were not all present in the 22 August master.
+
+### Status key
+
+| Mark | Meaning |
+|---|---|
+| **E** | Exact finite or algebraic statement; independently checked |
+| **N** | Numerical consequence of explicitly stated definitions; recalculated |
+| **C** | Conditional theorem/construction: exact after an extra axiom, ansatz, route, or supplied parameter |
+| **P** | Physical interpretation or proposed bridge; not derived |
+| **F** | Falsified by a direct test or blocked by a no-go result |
+| **W** | Withdrawn or superseded; must not be reused as a current result |
+| **U** | Unresolved or conversation-only; no recovered executable certificate |
+
+## 1A. Revision notice: what the first reconstruction missed or misstated
+
+The first version of this report was not exhaustive. It preserved the dated file inventory but compressed away large parts of the actual mathematical object. It also repeated a superseded negative operator verdict.
+
+The corrected omissions are:
+
+1. the complete frozen integer/constant set and centred-icosahedral spectrum;
+2. the face-normal heat-kernel split and entropy-scale projection;
+3. the scalar-residue polynomial giving \(137.035999178195\ldots\);
+4. the full hidden Gibbs law and entropy-driven vacuum landmarks;
+5. the exact mixed-quartet portal and edge-depth projectors;
+6. the Clifford, KO-real, \(\operatorname{Spin}(7)\), and \(14\to8\to3\to0\) stabilizer chain;
+7. the conditional three-generation mechanism and the 16/48/96 state construction;
+8. the finite-algebra/gauge proposal and the nested-versus-product obstruction;
+9. the full \(\operatorname{Hom}(3,3')=4\oplus5\) Yukawa geometry;
+10. the corrected interference-preserving matter operator;
+11. the fact that the earlier “dressed CKM/PMNS operator fails” verdict is void;
+12. the full response mixing, mass-tree, and cosmology ledgers with their conditional status;
+13. the hidden-source-to-Ricci isometry, thermodynamic-gravity chain, spectral-gravity candidate, and regular-core black-hole branch;
+14. the final bounded-chaos engine, corrected logistic embedding, and tanh separatrix audit;
+15. the finite-fluid moments, electromagnetic carrier, Lorentz-force correction, and application side branches.
+
+The operator correction is decisive. For
+
+\[
+\widetilde T_{f,e}=A_e+B_f,
+\]
+
+the physical positive operator is
+
+\[
+K_{f,e}
+=A_e^\dagger A_e+B_f^\dagger B_f
++A_e^\dagger B_f+B_f^\dagger A_e.
+\]
+
+The retracted calculation omitted the two interference terms, used a covariance-level surrogate, reduced the full \(5\oplus4_3\oplus4_5\) amplitude to one Clebsch block, and assumed rather than derived the passive metric. Consequently its dressed CKM/PMNS values and its negative verdict on the declared operator are void. The exact Hom-space dimensions, Clebsch representatives, rank-depth arithmetic, and local positive-Hessian calculations survive. filecitefile_000000007a0881f495d7319e16039dc9
+
+## 1B. The complete canonical object carried through the window
+
+### Frozen integers and constants
+
+The fixed discrete data are
+
+\[
+D=3,\quad V=12,\quad N=13,\quad E=30,\quad F=20,
+\quad q=5,\quad |A_5|=60,\quad h=8.
+\]
+
+The frozen algebraic constants are
+
+\[
+\phi=\frac{1+\sqrt5}{2},\qquad
+\gamma=\frac1{81},
+\]
+
+\[
+d_*=\frac{(1-\gamma)\pi}{N\phi}
+=\frac{80\pi}{1053\phi}
+=0.14751081015957962\ldots,
+\]
+
+\[
+d_{\rm cl}=\frac{D}{F}=\frac3{20}=0.15,
+\]
+
+\[
+\Delta=d_{\rm cl}-d_*
+=0.002489189840420375\ldots,
+\qquad
+\eta_\Delta=-\ln\Delta
+=5.995797986741314\ldots.
+\]
+
+Here \(d_*\) is a frozen geometric closure postulate. The arithmetic following from it is exact; a unique selection of that postulate from a wider action remains open.
+
+### Centred icosahedral seed, cochains, and representations
+
+The exact finite seed is:
+
+- 13 vertices: 12 shell vertices plus the centre;
+- 42 edges: 30 shell edges plus 12 spokes;
+- 20 triangular shell faces;
+- 60 orientation-preserving \(A_5\) rotations;
+- cochain ranks \(\operatorname{rank}d_0=12\) and \(\operatorname{rank}d_1=19\);
+- Betti numbers \((1,11,1)\);
+- unsigned face-vertex incidence rank 12 and hidden kernel dimension 8.
+
+The centred Laplacian spectrum is
+
+\[
+\operatorname{spec}L_{13}
+=\left\{
+0^{(1)},\,
+(6-\sqrt5)^{(3)},\,
+7^{(5)},\,
+(6+\sqrt5)^{(3)},\,
+13^{(1)}
+\right\}.
+\]
+
+The shell spectrum is
+
+\[
+\left\{
+0^{(1)},\,
+(5-\sqrt5)^{(3)},\,
+6^{(5)},\,
+(5+\sqrt5)^{(3)}
+\right\}.
+\]
+
+The permutation carriers decompose as
+
+\[
+12=1\oplus3\oplus3'\oplus5,
+\]
+
+\[
+20=1\oplus3\oplus3'\oplus4\oplus4\oplus5,
+\]
+
+\[
+30=1\oplus3\oplus3'\oplus4\oplus4
+\oplus5\oplus5\oplus5.
+\]
+
+The hidden face complement is
+
+\[
+H_{\rm hid}=\ker B^\mathsf T
+\cong4_3\oplus4_5,
+\]
+
+and its dual-face Laplacian is
+
+\[
+L_{\rm hid}=3P_3+5P_5.
+\]
+
+For the outward face-normal matrix \(N_f\),
+
+\[
+N_f^\mathsf TN_f=\frac{20}{3}I_3,
+\qquad
+L_2N_f=(3-\sqrt5)N_f.
+\]
+
+The two golden heat rates are
+
+\[
+\lambda_\parallel=3-\sqrt5=\frac{2}{\phi^2},
+\qquad
+\lambda_\perp=3+\sqrt5=2\phi^2,
+\]
+
+with ratio \(\lambda_\perp/\lambda_\parallel=\phi^4\). The reported slow-sector share at the frozen entropy depth is approximately \(99.895\%\). The exact incidence, cochain, Hom-projector, and portal certificates are in the seed audit. filecitefile_00000000e53082109389be8c23dd1faa
+
+### Scalar residue and metric-entropy scaling
+
+With
+
+\[
+W_{\rm scalar}=\frac95,\qquad
+S_{\rm ent}=\frac{1+\gamma}{D}=\frac{82}{243},
+\qquad
+S_{\rm exh}=\frac{N-D-1}{qN}=\frac9{65},
+\]
+
+the scalar inverse-coupling polynomial is
+
+\[
+\alpha_{\rm root}^{-1}
+=137+\frac{17572}{1215}\Delta-\frac9{65}\Delta^2,
+\]
+
+and therefore
+
+\[
+\alpha_{\rm root}^{-1}
+=137.035999178195\ldots.
+\]
+
+This is **E/N** arithmetic. Its identification with the physical electromagnetic inverse coupling is **C/P** until a common action and charge normalization select the route.
+
+The frozen entropy-to-metric projection is
+
+\[
+d\sigma=\frac{N-D}{N}\,d\eta
+=\frac{10}{13}\,d\eta,
+\qquad
+\sigma=\frac{10}{13}\eta,
+\]
+
+\[
+\frac{\mu}{\mu_C}=e^{-\sigma},
+\qquad
+\frac{d\alpha_i^{-1}}{d\eta}
+=\frac{10}{13}\frac{b_i}{2\pi}.
+\]
+
+The recorded landmarks are
+
+\[
+\eta_W=d_*,
+\qquad
+\eta_\Delta=5.995797986741314\ldots,
+\]
+
+\[
+\eta_{\rm conf}=9.8601129428\ldots,
+\qquad
+\eta_{\rm IR}=15.6972029190\ldots.
+\]
+
+The \(10/13\) projection is a frozen conditional rule; its identification with physical RG running is not derived. filecitefile_00000000dfb8822f8bc426e35389642e
+
+### Exact hidden Gibbs law and entropy-driven vacuum
+
+For
+
+\[
+\rho_\eta=\frac{e^{-\eta L_{\rm hid}}}{Z_\eta},
+\qquad
+Z_\eta=4e^{-3\eta}+4e^{-5\eta},
+\]
+
+the frozen probabilities are
+
+\[
+p_3=\frac1{1+\Delta^2}
+=0.9999938039723294,
+\]
+
+\[
+p_5=p_{\rm ex}
+=\frac{\Delta^2}{1+\Delta^2}
+=6.196027670655245\times10^{-6}.
+\]
+
+The entropy is
+
+\[
+\frac{S_{\rm hid}}{k_B}
+=\ln4+H_2(p_{\rm ex})
+=1.3863748574272237,
+\]
+
+and
+
+\[
+\frac{dS_{\rm hid}}{dp_{\rm ex}}
+=2k_B\eta_\Delta
+=11.991595973482628\,k_B.
+\]
+
+The sign convention is fixed:
+
+\[
+\delta S_{\rm hid}
+=2k_B\eta_\Delta\,\delta p_{\rm ex}.
+\]
+
+If the eigenvalue-three probability is used instead, \(p_3=1-p_{\rm ex}\), so its variation carries the opposite sign.
+
+For the explicit 30-edge entropy potential
+
+\[
+\mathcal V_\eta(z)
+=\frac12z^\mathsf TKz
+-\frac1\eta\ln\left(
+\frac1{30}\sum_e e^{\eta a_e\cdot z}
+\right),
+\qquad
+K=\operatorname{diag}(I_5,3I_4,5I_4),
+\]
+
+the numerical landmarks are:
+
+- coexistence of competing edge vacua near \(\eta=4.778025251274813\);
+- isotropic instability at \(\eta=5\);
+- orientation bifurcation near \(\eta=7.616838968785596\);
+- at \(\eta_\Delta\), \(\mathcal V=-0.07548862041951931\), \(r_5=0.928178049585218\), \(s_{4_3}\simeq0\), \(t_{4_5}=0.17645369560719557\), dominant edge probability about \(0.452692880449\), Hessian minimum about \(0.692812533\), and a 15-element unoriented orbit.
+
+These are verified stationary points of the displayed model, not a proof that this potential is the unique fundamental action. filecitefile_00000000698c81f798e630c72131a31a
+
+### Exterior algebra, edge-depth filtration, and the mixed portal
+
+For the real quartet \(V_4\),
+
+\[
+\Lambda^\bullet V_4
+=1\oplus4\oplus(3\oplus3')\oplus4\oplus1,
+\]
+
+so the old state carrier is organized as
+
+\[
+H_{21}=\Lambda^\bullet V_4\oplus5.
+\]
+
+The useful exact regrouping is
+
+\[
+H_{21}
+=(1\oplus3\oplus3')
+\oplus(1\oplus5)
+\oplus(4\oplus4)
+=V_7\oplus M_6\oplus S_8.
+\]
+
+The representative generation-depth projectors are
+
+\[
+Q_1=\operatorname{diag}(0,0,1),\quad
+Q_2=\operatorname{diag}(0,1,0),\quad
+Q_3=\operatorname{diag}(1,0,0),
+\]
+
+\[
+R_\Delta
+=Q_1+\Delta Q_2+\Delta^2Q_3
+=\operatorname{diag}(\Delta^2,\Delta,1).
+\]
+
+The opposite \(C_3\) orientation swaps the second and third depth directions.
+
+The physical triplet and conjugate-triplet portal channels arise only from the mixed product \(4_3\otimes4_5\). The exact squared singular values are
+
+\[
+\sigma_\pm^2=\frac{20\pm8\sqrt5}{15},
+\]
+
+so
+
+\[
+\frac{\sigma_+}{\sigma_-}=\phi^3,
+\qquad
+\frac{\sigma_+^2}{\sigma_-^2}=\phi^6.
+\]
+
+The depth projectors act on the three-dimensional generation triplet, not on a nine-dimensional shadow cone. The diagonal \(4\otimes4\) symmetric terms cannot emit triplets because
+
+\[
+\operatorname{Sym}^2(4)=1\oplus4\oplus5.
+\]
+
+This removed the earlier claimed Clebsch–Gordan wall. filecitefile_00000000e53082109389be8c23dd1faa
+
+### Golden Hodge operator, fermionic outer lift, and Spin(7)
+
+On the six unoriented icosahedral axes, the signed golden matrix satisfies
+
+\[
+S^2=5I_6,
+\qquad
+H_\phi=\frac{S}{\sqrt5},
+\qquad
+H_\phi^2=I_6.
+\]
+
+The period-six projective cycle cannot lie in \(A_5\), which has no order-six element. Its signed lift obeys
+
+\[
+\widehat C H_\phi\widehat C^{-1}=-H_\phi,
+\qquad
+\widehat C^6=-I_6,
+\qquad
+\widehat C^{12}=I_6.
+\]
+
+The signed \(A_5\) lifts together with \(\widehat C\) generate a group of order 240, with an order-120 quotient and central kernel \(\{\pm I\}\).
+
+The quartet identities
+
+\[
+\Lambda^2(4)=3\oplus3',
+\qquad
+\operatorname{Sym}^2(4)=1\oplus4\oplus5,
+\]
+
+\[
+\operatorname{End}(4)
+=1\oplus3\oplus3'\oplus4\oplus5
+\]
+
+produce six \(4\times4\) gamma maps. Clifford closure forces
+
+\[
+a=b=2,
+\qquad
+\delta_{\rm relative}=\frac\pi2,
+\]
+
+\[
+\gamma_a^\dagger\gamma_b
++\gamma_b^\dagger\gamma_a
+=2\delta_{ab}I_4.
+\]
+
+Adding the grading gives seven \(8\times8\) gamma matrices whose 21 bivectors close \(\mathfrak{spin}(7)\). The compatible antilinear real structure is unique up to scale and has an eight-real-dimensional fixed subspace, exactly the hidden \(4\oplus4\).
+
+For the actual lifted recursive orbit, the pointwise stabilizers are
+
+\[
+14\longrightarrow8\longrightarrow3\longrightarrow0,
+\]
+
+with compact Lie algebras
+
+\[
+\mathfrak g_2
+\longrightarrow\mathfrak{su}(3)
+\longrightarrow\mathfrak{su}(2)
+\longrightarrow0.
+\]
+
+The setwise stabilizer of an oriented two-spinor plane is \(\mathfrak u(3)\). The vector lift has order 12 and the spin lift order 24. The chain was verified for 38 KO-real starting spinors and both one- and two-step recursive orbits.
+
+This is **E** structural closure to numerical linear-algebra precision. Interpreting the three nontrivial returns as three observed matter generations is **C/P** because it additionally assumes that generations are recursive spinor flags and that retained continuous stabilizer is the physical selection criterion. filecitefile_00000000ea3481f48590666836d36e78
+
+### KO-6 seed, matter counts, and gauge-product obstruction
+
+The hidden spectral-triple seed is organized with
+
+\[
+H_{\rm sh}=H_3\oplus H_5,
+\qquad
+\Gamma_F=\operatorname{diag}(-I_4,+I_4),
+\]
+
+\[
+J_{\rm lin}
+=\begin{pmatrix}0&-U^\mathsf T\\ U&0\end{pmatrix},
+\qquad
+\mathcal J_F=C_FK,
+\qquad
+D_{\rm sh}=iJ_{\rm lin}.
+\]
+
+This realizes the declared KO-dimension-six sign pattern once the chosen intertwiner \(U\), grading, and conjugation are supplied.
+
+Under the \(SU(3)\) stabilizer,
+
+\[
+\Delta_8^{\mathbb C}
+=1\oplus1\oplus3\oplus\overline3.
+\]
+
+With the proposed chiral dictionary
+
+\[
+\Delta_L=1\oplus3,
+\qquad
+\Delta_R=1\oplus\overline3,
+\]
+
+and a right-handed neutrino, the Standard-Model-style count is 16 complex particle states per generation, 48 for three generations, and 96 after conjugates.
+
+The representation decompositions are exact. The identification with quarks, leptons, weak chirality, and physical generations is conditional.
+
+The natural finite-algebra candidate is
+
+\[
+\mathcal A_F
+=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C),
+\]
+
+suggesting
+
+\[
+\mathfrak u(1)\oplus\mathfrak{su}(2)
+\oplus\mathfrak{su}(3)
+\]
+
+and, after unimodularity, the familiar global quotient candidate. But the recursive stabilizer chain is nested,
+
+\[
+\mathfrak g_2\supset\mathfrak{su}(3)
+\supset\mathfrak{su}(2),
+\]
+
+whereas the Standard Model algebra is a commuting direct sum. The actual commutants, cross-brackets, representations, global quotient, and 48-state action still have to be derived. The finite algebra is natural but not uniquely forced.
+
+### Conditional hypercharge and the two weak-angle slots
+
+Assuming Standard-Model multiplets, one Higgs of hypercharge \(h\), Yukawa invariance, a neutral right-handed neutrino, and anomaly cancellation gives
+
+\[
+(q,u,d,\ell,e,n)
+=\frac16(1,4,-2,-3,-6,0)
+\]
+
+after choosing \(h=1/2\). All remaining gauge and cubic anomalies cancel exactly.
+
+The bare quadratic trace factors are
+
+\[
+k_Y=\frac{10}{3},\qquad k_2=k_3=2,
+\]
+
+and hence
+
+\[
+k_Y:k_2:k_3=\frac53:1:1,
+\qquad
+\sin^2\theta_W\big|_{\rm bare}=\frac38.
+\]
+
+The separate low-energy response assignment is
+
+\[
+\sin^2\theta_W\big|_{\rm response}=\frac3{13}.
+\]
+
+These are different quantities. A common action must derive the matching scale, running, thresholds, and normalization. The anomaly result is exact conditional arithmetic; the physical gauge derivation remains incomplete. filecitefile_00000000698c81f798e630c72131a31a
+
+### Full Hom(3,3') Yukawa geometry
+
+The exact transfer carrier is
+
+\[
+\operatorname{Hom}_{A_5}(3,3')=4\oplus5.
+\]
+
+For the 15 unoriented edge-fiveplet directions \(X_a\),
+
+\[
+\frac1{15}\sum_a X_a\otimes X_a=\frac15I_5,
+\]
+
+and their inner products are
+
+\[
+1,\qquad \frac14\ \text{for eight neighbours},\qquad
+-\frac12\ \text{for six neighbours}.
+\]
+
+The 60 nearest-neighbour pairs split into two 30-element classes whose count/weight relation is governed by \(\phi^2\).
+
+The fivefold Hodge coefficients are
+
+\[
+c_{72}
+=\sqrt{\frac{5-2\sqrt5}{3}},
+\qquad
+c_{144}
+=\sqrt{\frac{5+2\sqrt5}{3}},
+\]
+
+\[
+\frac{c_{144}}{c_{72}}=\phi^3.
+\]
+
+A fiveplet-only map has rank two; a quartet-only map also has rank two. The complex quadrature
+
+\[
+T=M_5+iM_4
+\]
+
+has rank three. At the audited selector maximum,
+
+\[
+\sigma(T)\approx
+(1.22425545,\ 0.67219435,\ 0.22215614),
+\]
+
+\[
+\frac{\sigma_1}{\sigma_2}\approx1.821282,\quad
+\frac{\sigma_1}{\sigma_3}\approx5.510788,\quad
+\frac{\sigma_2}{\sigma_3}\approx3.025774,
+\]
+
+\[
+\|T\|_F^2=2,\qquad
+|\det T|\approx0.182821.
+\]
+
+The selector gives one \(A_5\)-invariant Yukawa shape, but not the Standard Model hierarchy. The missing object is the species/history-dependent orientation \(\Omega_f\).
+
+### Correct finite matter operator and surviving flavour no-go theorems
+
+The declared full operator is
+
+\[
+\widetilde T_{f,e}
+=C_5(H_e)
++C_{4_3}\left(\Xi_{3e}+\frac{Jq_f}{3}\right)
++iC_{4_5}\left(\Xi_{5e}
++\frac{J\Delta g(q_f)}5\right).
+\]
+
+It must be squared with every cross term retained and compared with the passive operator derived from the same history state:
+
+\[
+R_{f,e}
+=K_{0,f}^{-1/2}K_{f,e}K_{0,f}^{-1/2}.
+\]
+
+The earlier dressed verdict is withdrawn; the complete operator has not yet been globally solved and blind-certified.
+
+What is genuinely ruled out is:
+
+1. **A4 covariance alone:**  
+   \[
+   \dim_{\mathbb R}
+   \operatorname{Hom}_{A_4}(H_R,H_L)=48,
+   \]
+   so it does not select one Dirac operator.
+
+2. **Natural first-order A4 Clifford connection:**  
+   \[
+   K_u=K_d=K_e=K_\nu
+   =\frac{|z_\ell|^2+3|z_c|^2}{3}I_3,
+   \]
+   so it is generation- and species-degenerate.
+
+3. **Separate spectral actions:** four nondegenerate species carry a 16-real-dimensional relative-flag space invisible to sums of individual spectral functions.
+
+4. **Untyped one-sheet ribbons:** the Clebsch maps live in \(\operatorname{Hom}(3,3')\), not \(\operatorname{End}(3)\); the correct lift requires both sheets.
+
+5. **Blind real Wilson–KL history:** it gives wrong mixing and is chirality-degenerate, flipping the sign of \(J\) while preserving absolute mixing and free energy.
+
+The oriented species plane contains both
+
+\[
+g_{fg}=q_f\cdot q_g,
+\qquad
+\omega_{fg}=n\cdot(q_f\times q_g),
+\]
+
+and the Hermitian pairing
+
+\[
+h_{fg}=g_{fg}+i\omega_{fg}
+\]
+
+has rank one and obeys the anomaly-weighted closure
+
+\[
+3z_u+3z_d+z_e+z_\nu=0.
+\]
+
+Dropping \(\omega\) discards the only canonical species orientation. The missing flavour ingredient is therefore an oriented, noncommuting, history-sensitive connection. filecitefile_00000000a0bc81f4be8cef793fe19486
+
+### Response-layer mixing, mass, and cosmology ledgers
+
+After integrating out the passive path variables, the response model uses
+
+\[
+\Gamma[x]
+=\frac\kappa2(x-x_0)^2-J(x-x_0),
+\qquad
+x_*=x_0+\frac J\kappa,
+\]
+
+and for a positive radial mode,
+
+\[
+\Gamma_{\rm rad}[r]
+=\frac\kappa2r^2-\ln r,
+\qquad
+r_*=\frac1{\sqrt\kappa}.
+\]
+
+Applied to the frozen counts, the quark assignments are
+
+\[
+s_{12}^Q=\frac1{\sqrt{20-1/8}}
+=0.22430886163681774,
+\]
+
+\[
+s_{23}^Q=\Delta(\phi^6-1)
+=0.04217750949169026,
+\]
+
+\[
+s_{13}^Q=\frac32\Delta
+=0.0037337847606305624,
+\]
+
+\[
+J_Q=\gamma\Delta
+\left(1+\frac95\gamma\right)
+=3.1413644076635733\times10^{-5}.
+\]
+
+The lepton assignments are
+
+\[
+\sin^2\theta_{12}^L
+=\frac13-12\Delta
+=0.3034630552482888,
+\]
+
+\[
+\sin^2\theta_{23}^L
+=\frac12+20\Delta+\gamma
+=0.5621294758207531,
+\]
+
+\[
+\sin^2\theta_{13}^L
+=2\gamma
+\left(\frac{d_*}{d_{\rm cl}}\right)^2
+(1-20\Delta)
+=0.02268990026713027,
+\]
+
+\[
+J_L=-13\Delta
+=-0.032359467925464874.
+\]
+
+These are exact outputs of the displayed **response-routing model**. They are not CKM/PMNS eigenvectors of the unresolved full interference-preserving Dirac operator.
+
+The recursive mass tree uses the top mass as an external unit and assigns, among other routes,
+
+\[
+\frac{m_b}{m_t}=2q\Delta,\qquad
+\frac{m_\tau}{m_t}=4\Delta,\qquad
+\frac{m_c}{m_t}=3\Delta,
+\]
+
+\[
+\frac{m_s}{m_t}
+=(2q\Delta)(3D\Delta),\qquad
+\frac{m_u}{m_t}=2\Delta^2,
+\]
+
+with longer serial routes for \(m_\mu,m_d,m_e\). The proposed neutrino tree is
+
+\[
+\frac{m_3}{m_t}=D\Delta^q
+=2.866892136839058\times10^{-13},
+\]
+
+\[
+\frac{m_2}{m_3}=\sqrt{V\Delta}
+=0.1728302001533427,
+\]
+
+\[
+\frac{m_1}{m_3}=D\Delta^3
+=4.626955407371302\times10^{-8}.
+\]
+
+This is reproducible route arithmetic; it does not yet supply finite-Dirac eigenvalues or an internally derived mass scale.
+
+The response cosmology ledger includes
+
+\[
+\Theta_{\rm QCD}
+=\left(\frac{J_Q}{\pi}\right)^2
+=9.998546994088552\times10^{-11},
+\]
+
+\[
+\eta_B=6\Theta_{\rm QCD}
+=5.999128196453131\times10^{-10},
+\]
+
+\[
+A_s=21\Theta_{\rm QCD}
+=2.099694868758596\times10^{-9},
+\]
+
+\[
+\Omega_m=\frac6{19},\qquad
+\Omega_\Lambda=\frac{13}{19},
+\]
+
+\[
+\Omega_b=\frac6{19}\frac2{13},
+\qquad
+\Omega_c=\frac6{19}\frac{11}{13},
+\qquad
+\frac{\Omega_c}{\Omega_b}=\frac{11}{2},
+\]
+
+\[
+n_s=1-3\gamma+\Delta
+=0.9654521528033834,
+\]
+
+\[
+\alpha_s=-\Delta^2
+=-6.196066061652012\times10^{-6},
+\]
+
+\[
+r=16\gamma\Delta
+=0.0004916918203299506,
+\qquad
+n_t=-\frac r8.
+\]
+
+These assignments do not derive Friedmann evolution, inflation, baryogenesis, dark-matter dynamics, recombination, or a likelihood. Their status is **C**, not observational closure. filecitefile_0000000031c081f49360cd0338824aeb
+
+### Higgs trace and normalization obstruction
+
+The recovered trace polynomials give
+
+\[
+a_Y
+=\frac{16(100+183\Delta^2)}{75}
+=21.33357522775238,
+\]
+
+\[
+b_Y
+=36.34206561805763,
+\qquad
+\frac{b_Y}{a_Y^2}
+=0.07985136067642659.
+\]
+
+For
+
+\[
+\frac{\lambda_H}{g_2^2}
+=C_{\rm norm}\frac{b_Y}{a_Y^2},
+\]
+
+the formerly claimed target
+
+\[
+\lambda_{H,\rm target}
+=\frac18+\frac\gamma3
+=0.12911522633744857
+\]
+
+requires
+
+\[
+C_{\rm norm}=4.069095184887046.
+\]
+
+The simple choice \(C_{\rm norm}=4\) gives
+
+\[
+\lambda_H=0.12692278796229012,
+\]
+
+about \(1.69805\%\) low. Therefore the physical Higgs closure is not exact; a common gauge/Higgs trace convention must derive the normalization.
+
+### Hidden source, Ricci map, and gravity branches
+
+Identify the two hidden quartets with the same real four-space and set
+
+\[
+x=\Xi_3,\qquad
+y=*^{-1}\Xi_5,\qquad
+z=\sqrt3\,x+i\sqrt5\,y.
+\]
+
+Then
+
+\[
+\operatorname{Re}(zz^\dagger)
+=3xx^\mathsf T+5yy^\mathsf T,
+\]
+
+and
+
+\[
+\Sigma
+=\left[3xx^\mathsf T+5yy^\mathsf T\right]_0
+\in\operatorname{Sym}^2_0(V_4)
+=4\oplus5.
+\]
+
+The standard four-dimensional curvature-operator decomposition puts traceless Ricci in
+
+\[
+\operatorname{Hom}(\Lambda^2_+,\Lambda^2_-)
+=4\oplus5.
+\]
+
+For the constructed Kulkarni–Nomizu map, every singular value of
+
+\[
+\Sigma\longmapsto B_\Sigma
+\]
+
+is \(1/2\). Thus
+
+\[
+2B:
+\operatorname{Sym}^2_0(V_4)
+\longrightarrow
+\operatorname{Hom}(\Lambda^2_+,\Lambda^2_-)
+\]
+
+is an isometric isomorphism. This establishes the exact carrier and normalization of the finite traceless-Ricci map. It does not yet identify \(\Sigma\) with physical stress-energy.
+
+For trace-preserving hidden-density perturbations,
+
+\[
+T_C
+=3J_3\delta\rho_{33}J_3^\mathsf T
++5J_5\delta\rho_{55}J_5^\mathsf T,
+\]
+
+\[
+\delta S_{\rm hid}
+=k_B\eta\,\operatorname{Tr}(T_C).
+\]
+
+The trace is the scalar entropy response and the traceless part occupies the Ricci carrier. For null \(k^a\), a metric-proportional ambiguity drops out because \(g_{ab}k^ak^b=0\).
+
+The thermodynamic Einstein chain is conditional on local Rindler horizons, Unruh temperature, local equilibrium, Raychaudhuri focusing, area entropy, a conserved physical stress tensor, and a physical area-per-cell map. The missing normalization can be written as
+
+\[
+2k_B\eta_\Delta
+\frac{dp_{\rm ex}}{dA}
+=\frac{k_B}{4\ell_*^2},
+\qquad
+\ell_*^2=G\hbar.
+\]
+
+The finite seed does not yet determine \(dp_{\rm ex}/dA\), \(\ell_*\), energy per cell, or the continuum gluing.
+
+For the chosen exponential spectral kernel,
+
+\[
+\frac{G\Lambda_{\rm cut}^2}{g_U^2}
+=\frac{\eta_\Delta}{16\pi}
+=0.1192826109212893.
+\]
+
+This fixes only a dimensionless combination within that candidate.
+
+Two proposed gravitational response formulas give
+
+\[
+\alpha_G^{(1)}
+=1.7517515687787907\times10^{-45},
+\]
+
+\[
+\alpha_G^{(2)}
+=1.7518093166537004\times10^{-45},
+\]
+
+differing relatively by about \(3.29658\times10^{-5}\). Neither is selected uniquely, so neither derives Newton's constant.
+
+The finite eigenvalue-seven fiveplet projector has zero central response and is not a positive radial \(1/r\) Green function.
+
+The separate regular-core black-hole ansatz
+
+\[
+f(r)
+=1-\frac{r_sr^2}{(r^2+a^2)^{3/2}},
+\qquad
+a=d_*r_s,
+\]
+
+has a finite de Sitter-type core and exact Einstein tensor. For the frozen \(d_*\), the dimensionless horizon radii are
+
+\[
+\frac{r_-}{r_s}=0.06462981756549308,
+\qquad
+\frac{r_+}{r_s}=0.9660164266449951.
+\]
+
+This is exact for the chosen metric ansatz; selection of that metric and its source from the common URT action is unproved. filecitefile_00000000698c81f798e630c72131a31a
+
+### Final bounded-chaos engine, logistic rail, and tanh audit
+
+The final constructed complex engine is
+
+\[
+Z_{n+1}

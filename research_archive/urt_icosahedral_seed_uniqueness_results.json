@@ -1,0 +1,131 @@
+{
+  "certificate": "URT icosahedral shell conditional uniqueness theorem",
+  "date": "2026-09-04",
+  "exact_conference_classification": {
+    "all_integer_equations_exact": true,
+    "expected_labelled_C5_count": 12,
+    "graph_consequence": "the +1 graph on five vertices is 2-regular, hence C5; there is one switching/permutation class",
+    "normalized_labelled_conference_count": 12,
+    "oriented_axis_Gram": "G=I_6+S/sqrt(5)",
+    "representative_audits": [
+      {
+        "Gram_eigenvalues": [
+          -2.3597737875480093e-16,
+          -1.2484510424837492e-16,
+          -1.1102230246251565e-16,
+          1.9999999999999998,
+          2.0,
+          2.0000000000000004
+        ],
+        "S_squared_residual": 0,
+        "plus_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "plus_edge_count": 5
+      },
+      {
+        "Gram_eigenvalues": [
+          -6.057329490821643e-16,
+          -5.055671508448018e-17,
+          -2.2236949269560216e-17,
+          1.999999999999999,
+          2.0,
+          2.0000000000000013
+        ],
+        "S_squared_residual": 0,
+        "plus_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "plus_edge_count": 5
+      },
+      {
+        "Gram_eigenvalues": [
+          -1.8957449449815898e-16,
+          -6.196040951847807e-17,
+          0.0,
+          1.9999999999999991,
+          2.0,
+          2.0
+        ],
+        "S_squared_residual": 0,
+        "plus_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "plus_edge_count": 5
+      }
+    ],
+    "row_sum_consequence": "(S^2)_1j=0 forces two +1 and two -1 entries in every row of the remaining 5x5 block",
+    "status": "E",
+    "switching_normalization": "sign-switch axes so S_1j=+1 for j>1",
+    "tight_frame_equation": "G^2=2G iff S^2=5I_6"
+  },
+  "exact_projective_design_proof": {
+    "axis_consequence": "(v_i dot v_j)^2=1/5 for every i!=j",
+    "frame_operator": "sum_i u_i tensor u_i=(4/5) I_5 from the fourth moment",
+    "off_diagonal_projector_inner_product": "<u_i,u_j>=-2/15",
+    "projector_norm_squared": "||u_i||^2=2/3",
+    "simplex_Gram": "Gram(u)=(4/5)(I_6-J_6/6)",
+    "status": "E",
+    "traceless_projectors": "u_i=v_i v_i^T-I/3 in Sym^2_0(R^3), dimension 5",
+    "zero_sum": "sum_i u_i=0 from the second moment"
+  },
+  "icosahedron_consequence": {
+    "numerical_coordinate_audit": {
+      "edge_count": 30,
+      "fourth_moment_residual": 6.280369834735101e-16,
+      "maximum_nonantipodal_squared_inner_product_residual": 8.326672684688674e-17,
+      "second_moment_residual": 0.0,
+      "triangular_face_count": 20,
+      "vertex_degrees": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "statement": "The six axes are unique up to O(3), sign switching and permutation. Their twelve signed endpoints are the regular icosahedron.",
+    "status": "E conditional on the stated moment/antipodality premises",
+    "valence": "For each vertex, exactly one endpoint on each of the other five axes has inner product +1/sqrt(5), so the nearest-neighbour degree is 5."
+  },
+  "observational_targets_used": false,
+  "premises": {
+    "directions": "12 unit vectors in R^3 grouped as six antipodal pairs +/-v_i",
+    "fourth_moment": "sum over 12 directions n_a^{tensor 4}=(4/5)(delta_ij delta_kl+delta_ik delta_jl+delta_il delta_jk)",
+    "second_moment": "sum over 12 directions n_a tensor n_a = 4 I_3",
+    "weights": "equal nonzero weight on the 12 moving directions plus one rest state"
+  },
+  "verdict": {
+    "closed": "No other 12-direction antipodal equal-weight shell satisfies the stated exact second/fourth isotropy up to rotation.",
+    "mathematical_seed_uniqueness": "E conditional",
+    "physical_seed_selection": "C/P",
+    "remaining_premise": "Derive, rather than postulate, why the microscopic action requires antipodality and exact second/fourth isotropy with six axes."
+  },
+  "weight_closure": {
+    "equations": "c_s^2=4w, (4/5)w=c_s^4, w0+12w=1",
+    "moving_weight": "1/20",
+    "rest_weight": "2/5",
+    "sound_speed_squared": "1/5",
+    "status": "E",
+    "uniqueness": true
+  }
+}

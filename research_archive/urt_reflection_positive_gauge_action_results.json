@@ -1,0 +1,394 @@
+{
+  "certificate": "URT reflection-positive compact gauge action",
+  "date": "2026-09-04",
+  "exact_bivector_frames": {
+    "basis": [
+      "t^x1",
+      "t^x2",
+      "t^x3",
+      "x1^x2",
+      "x1^x3",
+      "x2^x3"
+    ],
+    "electric_frame": [
+      [
+        "10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "10",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "10",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "4",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "4",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "4"
+      ]
+    ],
+    "identities": [
+      "M_spatial=diag(0,0,0,1,1,1)",
+      "M_electric=diag(10,10,10,4,4,4)"
+    ],
+    "irrational_part_cancels_exactly": true,
+    "spatial_frame": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "status": "E"
+  },
+  "isotropic_Wilson_action": {
+    "combined_frame": [
+      [
+        "10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "10",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "10",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "10",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "10",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10"
+      ]
+    ],
+    "formula": "S_g=beta[6 sum_spatial (1-Re tr_R U_p/d_R)+sum_electric (1-Re tr_R U_p/d_R)]",
+    "group_scope": "any compact group and unitary representation; in particular S(U(3)xU(2)) in the parent fundamental trace",
+    "isotropy_equation": "a+4b=10b",
+    "quadratic_continuum_symbol": "10 beta ||F||^2 up to area/trace convention",
+    "status": "E conditional on the plaquette-local action premise",
+    "unique_positive_ratio": "a:b=6:1"
+  },
+  "link_reflection_character_cone": {
+    "U1_identity": "exp(k cos theta)=sum_{n in Z} I_n(k) exp(i n theta), I_n(k)>=0 for k>=0",
+    "U1_witnesses": [
+      {
+        "I_n_minus_I_minus_n_residual": 0.0,
+        "coefficients_n_minus16_to_16": {
+          "-1": 0.005000062500260418,
+          "-10": 2.691150571711142e-30,
+          "-11": 1.2232500281925962e-33,
+          "-12": 5.096874300662485e-37,
+          "-13": 1.96033600020868e-40,
+          "-14": 7.001199167269282e-44,
+          "-15": 2.3337328126592815e-47,
+          "-16": 7.292914369255682e-51,
+          "-2": 1.2500104166992188e-05,
+          "-3": 2.0833463541992187e-08,
+          "-4": 2.6041796875271263e-11,
+          "-5": 2.604177517380487e-14,
+          "-6": 2.170146639397031e-17,
+          "-7": 1.5501040504159538e-20,
+          "-8": 9.688146951160732e-24,
+          "-9": 5.382302366672312e-27,
+          "0": 1.0000250001562505,
+          "1": 0.005000062500260418,
+          "10": 2.691150571711142e-30,
+          "11": 1.2232500281925962e-33,
+          "12": 5.096874300662485e-37,
+          "13": 1.96033600020868e-40,
+          "14": 7.001199167269282e-44,
+          "15": 2.3337328126592815e-47,
+          "16": 7.292914369255682e-51,
+          "2": 1.2500104166992188e-05,
+          "3": 2.0833463541992187e-08,
+          "4": 2.6041796875271263e-11,
+          "5": 2.604177517380487e-14,
+          "6": 2.170146639397031e-17,
+          "7": 1.5501040504159538e-20,
+          "8": 9.688146951160732e-24,
+          "9": 5.382302366672312e-27
+        },
+        "coupling": 0.01,
+        "minimum_coefficient": 7.292914369255682e-51
+      },
+      {
+        "I_n_minus_I_minus_n_residual": 0.0,
+        "coefficients_n_minus16_to_16": {
+          "-1": 0.10050083402812511,
+          "-10": 2.7582381773426824e-17,
+          "-11": 2.507299317386363e-19,
+          "-12": 2.0892821768352462e-21,
+          "-13": 1.607051840679792e-23,
+          "-14": 1.1478395151668862e-25,
+          "-15": 7.651944615141192e-28,
+          "-16": 4.7822895707391114e-30,
+          "-2": 0.005016687513894677,
+          "-3": 0.00016708375023156418,
+          "-4": 4.175006947752356e-06,
+          "-5": 8.347232146991889e-08,
+          "-6": 1.3908742564117845e-09,
+          "-7": 1.9866085211824974e-11,
+          "-8": 2.482915840364713e-13,
+          "-9": 2.7584889072744207e-15,
+          "0": 1.0100250277951457,
+          "1": 0.10050083402812511,
+          "10": 2.7582381773426824e-17,
+          "11": 2.507299317386363e-19,
+          "12": 2.0892821768352462e-21,
+          "13": 1.607051840679792e-23,
+          "14": 1.1478395151668862e-25,
+          "15": 7.651944615141192e-28,
+          "16": 4.7822895707391114e-30,
+          "2": 0.005016687513894677,
+          "3": 0.00016708375023156418,
+          "4": 4.175006947752356e-06,
+          "5": 8.347232146991889e-08,
+          "6": 1.3908742564117845e-09,
+          "7": 1.9866085211824974e-11,
+          "8": 2.482915840364713e-13,
+          "9": 2.7584889072744207e-15
+        },
+        "coupling": 0.2,
+        "minimum_coefficient": 4.7822895707391114e-30
+      },
+      {
+        "I_n_minus_I_minus_n_residual": 0.0,
+        "coefficients_n_minus16_to_16": {
+          "-1": 0.565159103992485,
+          "-10": 2.7529480398368737e-10,
+          "-11": 1.2489783084924912e-11,
+          "-12": 5.19576115339285e-13,
+          "-13": 1.9956316782072008e-14,
+          "-14": 7.118790054128286e-16,
+          "-15": 2.370463051280748e-17,
+          "-16": 7.400900286041487e-19,
+          "-2": 0.1357476697670383,
+          "-3": 0.022168424924331905,
+          "-4": 0.0027371202210468666,
+          "-5": 0.0002714631559569719,
+          "-6": 2.2488661477147575e-05,
+          "-7": 1.5992182312009952e-06,
+          "-8": 9.960624033363978e-08,
+          "-9": 5.518385862758672e-09,
+          "0": 1.2660658777520084,
+          "1": 0.565159103992485,
+          "10": 2.7529480398368737e-10,
+          "11": 1.2489783084924912e-11,
+          "12": 5.19576115339285e-13,
+          "13": 1.9956316782072008e-14,
+          "14": 7.118790054128286e-16,
+          "15": 2.370463051280748e-17,
+          "16": 7.400900286041487e-19,
+          "2": 0.1357476697670383,
+          "3": 0.022168424924331905,
+          "4": 0.0027371202210468666,
+          "5": 0.0002714631559569719,
+          "6": 2.2488661477147575e-05,
+          "7": 1.5992182312009952e-06,
+          "8": 9.960624033363978e-08,
+          "9": 5.518385862758672e-09
+        },
+        "coupling": 1.0,
+        "minimum_coefficient": 7.400900286041487e-19
+      },
+      {
+        "I_n_minus_I_minus_n_residual": 0.0,
+        "coefficients_n_minus16_to_16": {
+          "-1": 9.759465153704449,
+          "-10": 0.00040378896132693047,
+          "-11": 7.130822788322104e-05,
+          "-12": 1.159370796921468e-05,
+          "-13": 1.7459800679329595e-06,
+          "-14": 2.448375276504436e-07,
+          "-15": 3.2117374379853926e-08,
+          "-16": 3.957219801539176e-09,
+          "-2": 6.422189375284105,
+          "-3": 3.337275778420344,
+          "-4": 1.4162757076535888,
+          "-5": 0.5047243631131664,
+          "-6": 0.154464799870673,
+          "-7": 0.04132996350114732,
+          "-8": 0.00980992761665736,
+          "-9": 0.0020902530345178736,
+          "0": 11.30192195213633,
+          "1": 9.759465153704449,
+          "10": 0.00040378896132693047,
+          "11": 7.130822788322104e-05,
+          "12": 1.159370796921468e-05,
+          "13": 1.7459800679329595e-06,
+          "14": 2.448375276504436e-07,
+          "15": 3.2117374379853926e-08,
+          "16": 3.957219801539176e-09,
+          "2": 6.422189375284105,
+          "3": 3.337275778420344,
+          "4": 1.4162757076535888,
+          "5": 0.5047243631131664,
+          "6": 0.154464799870673,
+          "7": 0.04132996350114732,
+          "8": 0.00980992761665736,
+          "9": 0.0020902530345178736
+        },
+        "coupling": 4.0,
+        "minimum_coefficient": 3.957219801539176e-09
+      }
+    ],
+    "general_compact_group_proof": "exp[k(chi_R+chi_Rbar)] expands into tensor powers of R and Rbar; decomposition multiplicities and Taylor coefficients are nonnegative, hence every irreducible-character coefficient is nonnegative. Crossing plaquettes are sums of theta(F_alpha)F_alpha.",
+    "maximum_I_n_symmetry_residual": 0.0,
+    "minimum_sampled_character_coefficient": 7.292914369255682e-51,
+    "status": "E for nonnegative Wilson character coefficients; C for the adapted one-step transfer construction"
+  },
+  "local_cell_geometry": {
+    "electric_plaquettes": "parallelograms v_eps wedge u_i",
+    "future_link_squared_length": "2",
+    "future_links": "v_eps=(sqrt(5)/2,eps1/2,eps2/2,eps3/2), all eight sign triples",
+    "maximum_time_span_in_layers": 1,
+    "orthonormal_coordinates": "(t,x1,x2,x3)",
+    "plaquettes_per_cell": {
+      "electric_types": 24,
+      "spatial_types": 3
+    },
+    "spatial_links": "u_i=e_i, i=1,2,3, and reverses",
+    "spatial_plaquettes": "unit squares u_i wedge u_j",
+    "status": "E"
+  },
+  "observational_targets_used": false,
+  "remaining_boundary": {
+    "not_proved_here": [
+      "a gauge-covariant overlap determinant with a globally trivialized chiral measure",
+      "dynamical 3+2 breaking and a selected finite Higgs/Yukawa Dirac block",
+      "continuum limit and universality of the interacting theory",
+      "absolute gauge coupling and lattice spacing"
+    ],
+    "status": "U/C"
+  },
+  "site_reflection_positivity": {
+    "action_split": "S=S_+ + theta(S_+) + S_0",
+    "deterministic_U1_quadrature_witness": {
+      "conditional_square_form": 0.015358430461637358,
+      "direct_OS_form_imaginary_abs": 1.881119003693926e-20,
+      "direct_OS_form_real": 0.015358430461637358,
+      "factorization_residual": 1.881119003693926e-20,
+      "nonnegative": true
+    },
+    "exact_factorization": "<theta(F)F>=integral dU_0 e^{-S_0} |integral dU_+ F e^{-S_+}|^2 >=0",
+    "reason": "Every electric plaquette lies between one adjacent pair of layers; none contains both t>0 and t<0 links. Spatial plaquettes at t=0 belong to S_0.",
+    "reflection": "theta(t,x)=(-t,x), with gauge-link orientation reversed",
+    "status": "E"
+  },
+  "verdict": {
+    "advance": "The reflection-closed lattice now carries both a free overlap fermion kernel and a compact reflection-positive gauge measure. Their unresolved merger is specifically the chiral gauge measure, not Euclidean locality or positivity of the separate free layers.",
+    "interacting_chiral_gauge_theory": "U",
+    "link_character_positive_Wilson_weight": "E",
+    "local_compact_gauge_action": "E conditional",
+    "phenomenology_gate": "CLOSED",
+    "site_OS_reflection_positivity": "E",
+    "unique_isotropic_plaquette_ratio": "E"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "A5_orbit_classification": {
+    "A5_order": 60,
+    "all_ten_types_in_one_orbit": true,
+    "consequence": "A5 invariance forces one common coefficient on all shortest unoriented triangle loops.",
+    "orbit_size_on_unoriented_types": 10,
+    "seed_triangle": [
+      0,
+      1,
+      2
+    ],
+    "stabilizer_order": 6
+  },
+  "bivector_tight_frame": {
+    "Lambda2_V4_dimension": 6,
+    "ambient_frame_eigenvalues": [
+      -1.0917525765675372e-15,
+      -7.785643335597916e-16,
+      5.309869534277047e-18,
+      9.76828620892927e-16,
+      4.9999999999999964,
+      5.0,
+      5.000000000000001,
+      5.000000000000001,
+      5.000000000000004,
+      5.000000000000006
+    ],
+    "ambient_frame_exact_polynomial": "M^2=5M",
+    "continuum_consequence": "The quadratic small-holonomy term is proportional to the full isotropic norm Tr(F_{mu nu}F^{mu nu}); the 3 and 3' Hodge blocks receive the same coefficient.",
+    "exact_restricted_frame": "sum A_ijk tensor A_ijk=5 I on Lambda^2(V4); for geometric triangle areas A/2 the coefficient is 5/4",
+    "maximum_integer_polynomial_residual": 0,
+    "rank": 6,
+    "raw_bivector": "A_ijk=(e_i-e_j) wedge (e_j-e_k)",
+    "raw_norm_squared_values": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "status": "E"
+  },
+  "certificate": "URT A4 shortest-loop gauge-action closure",
+  "date": "2026-09-04",
+  "minimal_gauge_action": {
+    "formula": "S_g=beta sum_{x, {i,j,k}} [1-(1/d_R) Re Tr_R U_{x;ijk}]",
+    "status": "E conditional on the listed locality/trace premises",
+    "uniqueness": "Under these conditions the linear fundamental-character action is unique up to beta and an additive constant.",
+    "uniqueness_conditions": [
+      "strict shortest-loop locality",
+      "gauge invariance",
+      "A5 invariance",
+      "reversal reality",
+      "one chosen parent representation trace"
+    ]
+  },
+  "observational_targets_used": false,
+  "parent_trace_reduction": {
+    "Tr5_T1_squared": "1/2",
+    "Tr5_Y_squared": "5/6",
+    "block_group": "S(U(3)xU(2))=(SU(3)xSU(2)xU(1))/Z6",
+    "conditional_weak_angle_at_parent_scale": "sin^2(theta_W)=3/8",
+    "hypercharge_generator": "Y=diag(-1/3,-1/3,-1/3,1/2,1/2)",
+    "nonabelian_generator_normalization": "Tr_fund(T_a T_b)=delta_ab/2",
+    "normalized_generator": "T1=sqrt(3/5) Y",
+    "one_parent_coupling_relation": "g3=g2=g1 with g1=sqrt(5/3) gY",
+    "parent_carrier": "C^5=C^3+C^2",
+    "status": "E algebraically, C/P as a physical unification boundary condition"
+  },
+  "remaining_freedom": {
+    "phenomenology_gate": "CLOSED",
+    "with_one_parent_trace": [
+      "one overall bare gauge coupling beta",
+      "the scale at which the parent relation is imposed",
+      "symmetry-breaking and threshold dynamics"
+    ],
+    "without_one_parent_trace": "An invariant quadratic form on u(1)+su(2)+su(3) has three independent positive coefficients, so g1, g2 and g3 remain free."
+  },
+  "root_lattice": {
+    "carrier": "A4={n in Z^5: sum n_i=0}",
+    "primitive_step_count": 20,
+    "primitive_steps": "Phi(A4)={e_i-e_j:i!=j}",
+    "shortest_nonbacktracking_loop_length": 3,
+    "triangle_closure": "(e_i-e_j)+(e_j-e_k)+(e_k-e_i)=0",
+    "unoriented_triangle_types_per_translation_cell": 10
+  }
+}

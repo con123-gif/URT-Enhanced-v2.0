@@ -1,0 +1,89 @@
+URT CHAOS-TO-STRUCTURE SIMULATION
+=================================
+
+FIXED CORE
+----------
+alpha       = 1.155
+theta_H     = 2.4
+beta        = 0.235
+delta_star  = 0.147510810159580
+kappa       = 0.922845000000000 < 1
+
+The same recursion was used in every run:
+
+    P_(i,k+1)
+      = beta[alpha(P_(i,k)-theta_H phi(P_(i,k))) + u_(i,k)]
+
+with:
+
+    u_i = ||G_i||/(1+||G_i||)
+
+and:
+
+    G_i = tangent gradient of
+          S(X)=sum_(i<j) log ||x_i-x_j||.
+
+The state update was:
+
+    x_(i,k+1)
+      = Exp_(x_i)[delta_star P_(i,k+1) G_i/||G_i||].
+
+The only changed input was N, the number of available states.
+
+RESULTS
+-------
+Total random starts:
+    100
+
+Total successful canonical selections:
+    100/100
+
+ N   Selected structure  Trials  Successful_runs  Median_iterations  Maximum_error  Median_error  Success_rate
+ 2       Antipodal pair      20               20             1482.5   2.220446e-16  0.000000e+00           1.0
+ 3 Equilateral triangle      20               20              781.5   4.651427e-09  4.091506e-09           1.0
+ 4          Tetrahedron      20               20              981.5   6.978072e-09  6.912451e-09           1.0
+ 6           Octahedron      20               20             1586.0   7.040463e-09  6.303964e-09           1.0
+12          Icosahedron      20               20             1628.0   6.033292e-09  4.718282e-09           1.0
+
+SELECTED STRUCTURES
+-------------------
+N=2:
+    antipodal pair
+
+N=3:
+    equilateral triangle
+
+N=4:
+    regular tetrahedron
+
+N=6:
+    regular octahedron
+
+N=12:
+    regular icosahedron
+
+INTERPRETATION
+--------------
+The algorithm was not told any target coordinates, edge sets, symmetry groups,
+or Platonic-solid names.
+
+It was given only:
+
+    random possibilities,
+    a conserved spherical boundary,
+    a rotationally invariant ordering functional,
+    the same bounded URT recursion,
+    monotone admissibility.
+
+The output depended on the available state count and converged to a canonical
+closed structure.
+
+This is a computational demonstration of:
+
+    unorganised possibility
+    -> recursive admissibility
+    -> contraction
+    -> canonical structure.
+
+It is a proof-of-mechanism simulation, not evidence that every physical or
+mathematical system uses this exact entropy functional.

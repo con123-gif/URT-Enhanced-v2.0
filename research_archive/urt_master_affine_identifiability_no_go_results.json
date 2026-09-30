@@ -1,0 +1,148 @@
+{
+  "certificate": "URT master affine-identifiability and completion-moduli no-go",
+  "conservative_currently_unfixed_direction_count": 10,
+  "count_scope": "This counts independently unconstrained sector choices under the presently proved kinematic axioms.  It is not an exhaustive parameter count or a claimed manifold dimension, because a coupled continuum completion has not been constructed.  Conditional new axioms such as a ball window or Gleason noncontextuality can remove a listed direction only by being explicitly added.",
+  "date": "2026-09-04",
+  "exact_affine_theorem": {
+    "Gibbs_identity": "rho_{eta',K'}=rho_{eta,K}; Z_{eta',K'}=exp(-eta b/a) Z_{eta,K}",
+    "functional_identity": "F_{eta',K'}(rho)=F_{eta,K}(rho)+eta b/a",
+    "maximum_witness_residual": 7.105427357601002e-15,
+    "noncommuting_witnesses": [
+      {
+        "a": 0.4,
+        "b": -0.3,
+        "eta_prime": 14.989494966853284,
+        "free_energy_shift_residual": 0.0,
+        "partition_law_residual": 7.105427357601002e-15,
+        "state_frobenius_residual": 9.772754057429725e-16
+      },
+      {
+        "a": 1.0,
+        "b": 0.0,
+        "eta_prime": 5.995797986741314,
+        "free_energy_shift_residual": 0.0,
+        "partition_law_residual": 0.0,
+        "state_frobenius_residual": 0.0
+      },
+      {
+        "a": 2.7,
+        "b": 0.19,
+        "eta_prime": 2.2206659210153012,
+        "free_energy_shift_residual": 1.6653345369377348e-15,
+        "partition_law_residual": 4.440892098500626e-16,
+        "state_frobenius_residual": 9.520182785340303e-16
+      },
+      {
+        "a": 9.0,
+        "b": 1.1,
+        "eta_prime": 0.6661997763045905,
+        "free_energy_shift_residual": 5.551115123125783e-16,
+        "partition_law_residual": 1.1102230246251565e-16,
+        "state_frobenius_residual": 9.17793524980672e-16
+      }
+    ],
+    "quotient_statement": "Every normalized-state output factors through eta K modulo R I. The state can identify neither an additive energy zero nor a separate cost scale and inverse-depth scale.",
+    "status": "E",
+    "transformation": "K'=aK+bI, eta'=eta/a, with a>0 and b real"
+  },
+  "logical_consequence": {
+    "arithmetic_limit": "Further exact calculation inside one chosen completion cannot turn the choice into a theorem from the weaker axiom set.",
+    "minimum_repair_type": "At least one genuinely new non-homogeneous microscopic law must couple sectors and fix action normalization, vacuum zero, clock, measurement and locality data; separate optimization slogans do not.",
+    "non_uniqueness": "There are continuous sectorwise inequivalent extensions sharing every presently certified finite algebraic and symmetry identity; even one such direction is enough to refute uniqueness from the current axioms."
+  },
+  "master_functional": "F_{eta,K}(rho)=D(rho||rho0)+eta Tr(rho K), Tr rho=1",
+  "observational_targets_used": false,
+  "outputs_not_fixed_by_the_quotient": [
+    "the additive vacuum/free-energy zero",
+    "a physical energy unit separate from eta",
+    "a kinetic generator or seconds per relaxation step",
+    "couplings not already specified as operators in K",
+    "a physical measurement/instrument interpretation of rho"
+  ],
+  "outputs_that_factor_through_the_quotient": [
+    "the normalized Gibbs minimizer rho",
+    "von Neumann entropy and state-only expectation values",
+    "probability ratios encoded by rho",
+    "symmetry/covariance of rho",
+    "stationary points and tangent variations of F on Tr rho=1"
+  ],
+  "sector_independent_completion_moduli": [
+    {
+      "certificate": "urt_joint_action_invariant_no_go_results.json",
+      "domain": "one real phase direction",
+      "name": "determinant_line_phase",
+      "parameter": "lambda",
+      "preserved_data": "gauge/A5/reversal/KO-6 identities and positive spectrum"
+    },
+    {
+      "certificate": "urt_gauge_coupling_scale_no_go_results.json",
+      "domain": "R_{>0}",
+      "name": "absolute_parent_gauge_coupling",
+      "parameter": "beta or common g",
+      "preserved_data": "shortest-loop form and g1:g2:g3 parent ratios"
+    },
+    {
+      "certificate": "urt_gravity_normalization_no_go_results.json",
+      "domain": "R_{>0}",
+      "name": "Newton_source_normalization",
+      "parameter": "G/a_*^2 relative to source conversion C",
+      "preserved_data": "trace-free Ricci representation channel"
+    },
+    {
+      "certificate": "urt_gravity_normalization_no_go_results.json",
+      "domain": "R",
+      "name": "cosmological_vacuum_coefficient",
+      "parameter": "Lambda a_*^2",
+      "preserved_data": "all normalized Gibbs and trace-free source observables"
+    },
+    {
+      "certificate": "urt_su5_adjoint_breaking_no_go_results.json",
+      "domain": "open interval in R_{>0}",
+      "name": "adjoint_Higgs_orbit_shape",
+      "parameter": "d/c in an open bounded-potential 3+2 region",
+      "preserved_data": "SU(5), A5 and the desired 3+2 stabilizer type"
+    },
+    {
+      "certificate": "urt_su5_adjoint_breaking_no_go_results.json",
+      "domain": "R_{>0}",
+      "name": "adjoint_Higgs_radial_scale",
+      "parameter": "dimensionless breaking amplitude q in lattice units",
+      "preserved_data": "same invariant potential form and 3+2 orbit type"
+    },
+    {
+      "certificate": "urt_clock_orientation_scale_no_go_results.json",
+      "domain": "R_{>0}",
+      "name": "physical_clock_rate",
+      "parameter": "kappa a_*/c or seconds per update",
+      "preserved_data": "Gibbs state, detailed balance, entropy arrow and per-step ordering"
+    },
+    {
+      "certificate": "urt_cut_project_window_no_go_results.json",
+      "domain": "R_{>0}",
+      "name": "cut_project_window_scale",
+      "parameter": "R in internal-lattice units",
+      "preserved_data": "A5, reversal, Hodge metric and regular model-set axioms"
+    },
+    {
+      "certificate": "urt_cut_project_window_no_go_results.json",
+      "domain": "open interval about zero",
+      "name": "cut_project_window_shape",
+      "parameter": "epsilon in the h6 deformation",
+      "preserved_data": "A5, reversal, smooth convexity and fixed window volume"
+    },
+    {
+      "certificate": "urt_born_measurement_boundary_results.json",
+      "domain": "R_{>0}",
+      "name": "measurement_response",
+      "parameter": "alpha in p_i proportional to |amplitude_i|^(2 alpha)",
+      "preserved_data": "normalization, continuity, phase blindness, covariance and certainty"
+    }
+  ],
+  "verdict": {
+    "empirical_theory_of_nature": "U and unvalidated",
+    "mathematical_subtheorems": "many E/C results retained",
+    "no_go": "The current Cathedral/URT axioms leave at least ten explicit continuous sector choices unconstrained.  Therefore the framework is not yet a unique theory of nature, regardless of the exactness of its internal finite theorems.",
+    "phenomenology_gate": "CLOSED",
+    "unique_theory_from_current_axioms": "F"
+  }
+}

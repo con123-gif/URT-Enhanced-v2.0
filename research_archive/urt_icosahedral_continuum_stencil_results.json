@@ -1,0 +1,94 @@
+{
+  "certificate": "URT icosahedral continuum-stencil closure and lattice obstruction",
+  "characteristic_numerical_audit": {
+    "fourth_jet_error_over_k6_t_0p01": 0.00011102230246251564,
+    "fourth_jet_error_over_k6_t_0p02": 0.00011969591984239966,
+    "fourth_jet_error_over_k6_t_0p04": 0.00012178300902443426,
+    "symbol_imaginary_residual": 0.0
+  },
+  "date": "2026-09-04",
+  "fourth_order_symbol_theorem": {
+    "expansion": "chi(k)=1-(ell^2/2) M2_ij k_i k_j+(ell^4/24) M4_ijkl k_i k_j k_k k_l+O(|k|^6)",
+    "geometric_closure": "Together with the antipodal theorem, the exact projective-design and conference-matrix proof forces the unique regular icosahedron up to O(3), sign choices and relabeling.",
+    "moments": "Mr=sum_a w_a n_a^{tensor r}",
+    "rotational_isotropy": [
+      "M2=A delta",
+      "M4=B(delta_ij delta_kl+delta_ik delta_jl+delta_il delta_jk)"
+    ],
+    "status": "E conditional on a self-adjoint equal-shell propagator and fourth-order isotropy",
+    "unit_speed_trace_for_equal_weight_w": [
+      "12w=3A, hence A=4w",
+      "12w=15B, hence B=4w/5"
+    ],
+    "unweighted_consequence": [
+      "sum_a n_a n_a^T=4 I3",
+      "sum_a n_a^{tensor 4}=(4/5) sym(delta tensor delta)"
+    ],
+    "weight_scope": "Rotational isotropy alone leaves any 0<w<=1/12 with w0=1-12w; it fixes the geometry but not the moving/rest weights."
+  },
+  "gaussian_heat_jet_closure": {
+    "coefficient_equations": [
+      "c_s^2=4w",
+      "c_s^4=4w/5",
+      "w0+12w=1"
+    ],
+    "premise_precision": "The numerical weights require Gaussian fourth-cumulant matching, not rotational invariance or pressure isotropy alone.",
+    "status": "E conditional on fourth-order Gaussian/Maxwellian matching",
+    "target": "exp[-c_s^2 ell^2 |k|^2/2]+O(|k|^6)",
+    "unique_nontrivial_solution": {
+      "moving_weight": "1/20",
+      "rest_weight": "2/5",
+      "sound_speed_squared": "1/5"
+    }
+  },
+  "observational_targets_used": false,
+  "propagator": {
+    "characteristic_symbol": "chi(k)=w0+sum_a w_a exp(i ell n_a dot k)",
+    "definition": "(Tf)(x)=w0 f(x)+sum_a w_a f(x+ell n_a), with twelve distinct unit n_a",
+    "normalization": "w0+sum_a w_a=1"
+  },
+  "self_adjointness_theorem": {
+    "adjoint_kernel": "T^* has weight w_{-v} on translation v",
+    "consequence": "T=T^* iff w_v=w_{-v}.  With twelve distinct equal positive moving weights, the support is exactly six antipodal pairs.",
+    "status": "E"
+  },
+  "sixth_order_boundary": {
+    "audit": {
+      "gaussian_sixth_directional_target_at_cs2_1_over_5": "3/25",
+      "maximum_sixth_fraction_residual": 2.7755575615628914e-17,
+      "raw_fourth_moment_residual": 6.280369834735101e-16,
+      "raw_second_moment_residual": 0.0,
+      "sixth_anisotropy_vertex_minus_face_exact": "32/1125",
+      "weighted_sixth_directional_moments": {
+        "edge_axis": {
+          "exact": "2/25",
+          "weighted_sixth_directional_moment": 0.08000000000000003
+        },
+        "face_axis": {
+          "exact": "17/225",
+          "weighted_sixth_directional_moment": 0.07555555555555554
+        },
+        "vertex_axis": {
+          "exact": "13/125",
+          "weighted_sixth_directional_moment": 0.10400000000000001
+        }
+      }
+    },
+    "consequence": "The first direction-dependent truncation error occurs at O(|k|^6); the finite stencil is not an exactly rotation-invariant continuum kernel.",
+    "statement": "The icosahedral shell is isotropic through degree five but not six.",
+    "status": "E"
+  },
+  "three_dimensional_lattice_obstruction": {
+    "A4_scope": "The four-dimensional A4 root lattice can carry order-five symmetry, but the project has not supplied a local projection/streaming map whose twelve three-dimensional velocities land exactly on sites.",
+    "consequence": "No rank-three Bravais lattice is invariant under full icosahedral symmetry.  Exact local site-to-site streaming of this shell requires an off-lattice rule, a quasicrystal/cut-and-project structure, or an explicit higher-dimensional lift.",
+    "proof": "If a rank-three Bravais lattice admitted a nontrivial order-five rotation R, a lattice basis would represent R in GL(3,Z), so Tr R would be an integer.  A real three-dimensional order-five rotation has eigenvalues 1,zeta5,zeta5^-1 (or their square) and trace phi or 1-phi, neither an integer.",
+    "status": "E for the rank-three obstruction; U for the required bridge"
+  },
+  "verdict": {
+    "advance": "The former antipodality and moment assumptions are now derived from a single explicit continuum-stencil requirement.  The irreducible remaining choices are that requirement itself and its missing local higher-dimensional/off-lattice realization.",
+    "exact_microscopic_local_streaming": "U",
+    "phenomenology_gate": "CLOSED",
+    "regular_icosahedral_geometry": "E conditional on self-adjoint equal-shell propagation and fourth-order rotational isotropy",
+    "weights_2_over_5_and_1_over_20": "E conditional on the stronger fourth-order Gaussian heat-jet premise"
+  }
+}

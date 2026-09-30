@@ -1,0 +1,229 @@
+{
+  "analytic_setup": {
+    "complex_conjugation_used": false,
+    "interpretation": "Every zero is an overlap-polar branch singularity and gives an upper bound on the isotropic analytic radius.",
+    "kernel_square": "F_r(q)=sum_mu S_mu(q)^2+[rB(q)-1]^2",
+    "status": "E",
+    "strip_metric": "A5-invariant Euclidean norm of centered Im(q) in V4"
+  },
+  "antipodal_1_plus_1_plus_3_at_condition_minimax": {
+    "B": 1.3694410492451252,
+    "D": 0.36194751112225426,
+    "branch": "q=(pi+i u, i v, 0,0,0), up to A5 permutation/sign",
+    "coefficient": 1.169543397160372,
+    "kernel_square_residual": 1.6653345369377348e-16,
+    "stationarity_residual": 6.938893903907228e-17,
+    "u": 0.270740455737758,
+    "v": 0.9671381952245356,
+    "width": 0.8379665698186385,
+    "width_squared": 0.7021879721336152
+  },
+  "certificate": "URT A4 complex-momentum locality audit",
+  "comparison": {
+    "coefficient_difference": 0.14187160999932757,
+    "condition_candidate_width": 0.8379665698185988,
+    "condition_number_coefficient": 1.169543397160372,
+    "locality_proxy_coefficient": 1.3114150071596995,
+    "locality_proxy_width": 0.9417394391639001,
+    "width_increase_percent": 12.383891324896856,
+    "width_ratio": 1.1238389132489686
+  },
+  "date": "2026-09-03",
+  "full_complex_multistarts": {
+    "at_condition_minimax": {
+      "best_centered_imaginary_momentum5": [
+        0.7195624740591637,
+        0.02316469329851009,
+        -0.2475757798980955,
+        -0.24757551100195496,
+        -0.24757587645762355
+      ],
+      "best_centered_real_momentum5": [
+        -0.628318529013604,
+        2.5132741167834394,
+        -0.6283185765457783,
+        -0.6283184744177034,
+        -0.6283185368063536
+      ],
+      "best_kernel_square_residual": 9.90367610198559e-14,
+      "best_width": 0.8379665698185988,
+      "start_count": 40,
+      "status": "N deterministic multistart; not an exhaustive proof",
+      "successful_count": 40,
+      "ten_smallest_feasible_widths": [
+        0.8379665698185988,
+        0.8379665698186385,
+        0.8379665698186385,
+        0.8379665698186386,
+        0.8379665698186386,
+        0.8379665698186386,
+        0.8379665698186386,
+        0.8379665698186386,
+        0.8379665698186386,
+        0.8379665698186386
+      ]
+    },
+    "at_locality_proxy_candidate": {
+      "best_centered_imaginary_momentum5": [
+        0.8092322063981555,
+        -0.2777523336400685,
+        -0.2777524405919756,
+        -0.27775245885501143,
+        0.024025026688899963
+      ],
+      "best_centered_real_momentum5": [
+        -0.6283185217223379,
+        -0.628318506507366,
+        -0.6283185631195662,
+        -0.6283184991209558,
+        2.513274090470227
+      ],
+      "best_kernel_square_residual": 8.720645530517728e-14,
+      "best_width": 0.9417394391639001,
+      "start_count": 40,
+      "status": "N deterministic multistart; not an exhaustive proof",
+      "successful_count": 40,
+      "ten_smallest_feasible_widths": [
+        0.9417394391639001,
+        0.9417394391639079,
+        0.9417394391639079,
+        0.9417394391639079,
+        0.9417394391639079,
+        0.941739439163908,
+        0.941739439163908,
+        0.941739439163908,
+        0.941739439163908,
+        0.941739439163908
+      ]
+    }
+  },
+  "locality_proxy_crossing": {
+    "antipodal_branch": {
+      "B": 1.301652246183854,
+      "D": 0.4998578937441346,
+      "branch": "q=(pi+i u, i v, 0,0,0), up to A5 permutation/sign",
+      "coefficient": 1.3114150071596995,
+      "kernel_square_residual": 1.6653345369377348e-16,
+      "stationarity_residual": 2.0816681711721685e-16,
+      "u": 0.3017774554977515,
+      "v": 1.0869846168993291,
+      "width": 0.9417394391639079,
+      "width_squared": 0.8868731712767518
+    },
+    "candidate_coefficient": 1.3114150071596995,
+    "candidate_width": 0.9417394391639079,
+    "crossing_residual": 3.885780586188048e-16,
+    "status": "N: exact branch equations, numerical stationary crossing; global nearest-zero optimality on the full complex torus is not proved",
+    "two_plus_three_branch": {
+      "all_roots": [
+        {
+          "B_imag": 1.0023241124533402,
+          "B_real": 0.351295479506555,
+          "phase_imag": 0.859686556870561,
+          "phase_real": 1.0381999169641603,
+          "quadratic_residual": 1.5700924586837752e-16,
+          "width": 0.9417394391639081
+        },
+        {
+          "B_imag": -1.0023241124533402,
+          "B_real": 0.351295479506555,
+          "phase_imag": -0.859686556870561,
+          "phase_real": 1.0381999169641603,
+          "quadratic_residual": 1.5700924586837752e-16,
+          "width": 0.9417394391639081
+        }
+      ],
+      "analytic_equation": "1+2(1-r)B+(r^2-0.8333333333333334)B^2=0",
+      "multiplicities": [
+        2,
+        3
+      ],
+      "nearest": {
+        "B_imag": 1.0023241124533402,
+        "B_real": 0.351295479506555,
+        "phase_imag": 0.859686556870561,
+        "phase_real": 1.0381999169641603,
+        "quadratic_residual": 1.5700924586837752e-16,
+        "width": 0.9417394391639081
+      },
+      "status": "E formula; N decimal evaluation"
+    }
+  },
+  "observational_targets_used": false,
+  "two_cluster_at_condition_minimax": {
+    "one_plus_four": {
+      "all_roots": [
+        {
+          "B_imag": 2.533053189013236,
+          "B_real": 1.4388599496965957,
+          "phase_imag": 1.8967420739585803,
+          "phase_real": 1.8073826118323628,
+          "quadratic_residual": 1.1102230246251565e-16,
+          "width": 1.6964976852621276
+        },
+        {
+          "B_imag": -2.533053189013236,
+          "B_real": 1.4388599496965957,
+          "phase_imag": -1.8967420739585803,
+          "phase_real": 1.8073826118323628,
+          "quadratic_residual": 1.1102230246251565e-16,
+          "width": 1.6964976852621276
+        }
+      ],
+      "analytic_equation": "1+2(1-r)B+(r^2-1.25)B^2=0",
+      "multiplicities": [
+        1,
+        4
+      ],
+      "nearest": {
+        "B_imag": 2.533053189013236,
+        "B_real": 1.4388599496965957,
+        "phase_imag": 1.8967420739585803,
+        "phase_real": 1.8073826118323628,
+        "quadratic_residual": 1.1102230246251565e-16,
+        "width": 1.6964976852621276
+      },
+      "status": "E formula; N decimal evaluation"
+    },
+    "two_plus_three": {
+      "all_roots": [
+        {
+          "B_imag": 1.3305248870289594,
+          "B_real": 0.317200929668607,
+          "phase_imag": 1.0467412024582001,
+          "phase_real": 1.0929446521421404,
+          "quadratic_residual": 1.1102230246251565e-16,
+          "width": 1.1466475369128764
+        },
+        {
+          "B_imag": -1.3305248870289594,
+          "B_real": 0.317200929668607,
+          "phase_imag": -1.0467412024582001,
+          "phase_real": 1.0929446521421404,
+          "quadratic_residual": 1.1102230246251565e-16,
+          "width": 1.1466475369128764
+        }
+      ],
+      "analytic_equation": "1+2(1-r)B+(r^2-0.8333333333333334)B^2=0",
+      "multiplicities": [
+        2,
+        3
+      ],
+      "nearest": {
+        "B_imag": 1.3305248870289594,
+        "B_real": 0.317200929668607,
+        "phase_imag": 1.0467412024582001,
+        "phase_real": 1.0929446521421404,
+        "quadratic_residual": 1.1102230246251565e-16,
+        "width": 1.1466475369128764
+      },
+      "status": "E formula; N decimal evaluation"
+    }
+  },
+  "verdict": {
+    "axiom_consequence": "Do not adopt either coefficient silently; the archive contains no rule choosing between these target-blind locality criteria.",
+    "phenomenology_gate": "CLOSED",
+    "statement": "The deterministic search finds a nearer 1+1+3 antipodal singularity than either two-cluster slice.  The three-family analytic-radius proxy is maximized at r approximately 1.311415007, not at the exact condition-number value 1.169543397.  Thus spectral conditioning and complex-strip locality are inequivalent selection proposals.  A certified global complex-torus bound is still required before calling the new coefficient a true locality optimum.",
+    "status": "N/U"
+  }
+}

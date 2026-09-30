@@ -1,0 +1,107 @@
+{
+  "certificate": "URT exact temporal-link coherence obstruction",
+  "date": "2026-09-04",
+  "direct_matrix_check": {
+    "explicit_plane_wave_residuals": [
+      3.830866045620268e-16,
+      3.830866045620268e-16,
+      3.830866045620268e-16,
+      3.830866045620268e-16
+    ],
+    "fifth_XdaggerX_eigenvalue": 0.04370583602851566,
+    "four_smallest_XdaggerX_eigenvalues": [
+      -2.2117737300247377e-15,
+      -7.053191517073449e-16,
+      6.243995748337873e-16,
+      1.2412501861017801e-15
+    ],
+    "matrix_dimension": 192,
+    "minimum_singular_value_X": 2.868291774837065e-16,
+    "numerical_zero_multiplicity_below_1e_minus_12": 4,
+    "status": "N corroboration of the exact mode calculation"
+  },
+  "exact_configuration": {
+    "X_scalar_coefficient": -2.7755575615628914e-17,
+    "alpha_minus": -1.8837820877700864,
+    "alpha_plus": 0.8365845365734889,
+    "analytic_identity": "(1/8)sum_d exp(i(omega+alpha_d))=(exp(i phi)+exp(-i phi))/2=cos(phi)=1-M",
+    "cos_phi": 0.20905940789287628,
+    "future_links": "four U_d=exp(i alpha_+), four U_d=exp(i alpha_-)",
+    "omega": 0.5235987755982988,
+    "phi": 1.3601833121717877,
+    "spatial_links": "U_i(x)=1",
+    "status": "E",
+    "target_1_minus_M": 0.20905940789287625,
+    "temporal_average": {
+      "imaginary": 0.0,
+      "real": 0.20905940789287628
+    },
+    "temporal_kinetic_coefficient": 0.0
+  },
+  "missing_coherence_face": {
+    "loop": "future link d_+, a spatial connector between its endpoint and the d_- endpoint, then the reverse d_- link",
+    "loop_deviation_from_identity": 1.955805883999207,
+    "loop_holonomy": {
+      "imaginary": 0.4088796200622777,
+      "real": -0.91258832794296
+    },
+    "loop_phase": 2.7203666243435753,
+    "minus_direction": [
+      1,
+      -1,
+      0,
+      0
+    ],
+    "plus_direction": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "spatial_displacement_between_endpoints": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "status": "E",
+    "why_current_action_misses_it": "all declared electric faces compare a fixed future-link type at spatially translated base points; none compares d_+ with d_-"
+  },
+  "observational_targets_used": false,
+  "selected_kernel": {
+    "M": 0.7909405921071238,
+    "Ns": 2,
+    "Nt": 6,
+    "c_t": 1.0,
+    "r": 0.35550803492351907
+  },
+  "theorem": {
+    "proof_scope": "cos(phi)=1-M is solvable exactly for 0<=M<=2; equal +/- groups kill the kinetic average; constancy kills every included plaquette",
+    "selected_M_inside_scope": true,
+    "statement": "For every 0<M<2 and c_t arbitrary, the current independent-eight-link face set admits a constant zero-action compact U(1) field with X=D_W-M singular, by the displayed construction.",
+    "status": "E"
+  },
+  "verdict": {
+    "current_gauge_overlap_merger": "F",
+    "failure": "the polar overlap is undefined on a zero-action field, so neither Wilson suppression nor admissibility of the existing faces repairs it",
+    "pure_gauge_reflection_positivity": "not contradicted; the problem is incompleteness of the face set relative to the eight-link fermion kernel",
+    "required_repair_options": [
+      "add positive-character diagonal-coherence faces and redo the gauge frame/OS audit",
+      "derive all diagonal transporters from a smaller coherent primitive-link set",
+      "or keep the reflection-positive Wilson/domain-wall fermion regulator instead of the polar overlap"
+    ],
+    "status": "E no-go for the current merger",
+    "theory_of_nature_status": "not established"
+  },
+  "zero_action_check": {
+    "conclusion": "accepted with maximal weight by every included plaquette factor",
+    "declared_ratio_4_to_1_action_at_beta_1": 0.0,
+    "electric_action_sum": 0.0,
+    "electric_plaquette_count": 1152,
+    "maximum_electric_holonomy_deviation": 0.0,
+    "maximum_spatial_holonomy_deviation": 0.0,
+    "spatial_action_sum": 0.0,
+    "spatial_plaquette_count": 144,
+    "status": "E"
+  }
+}

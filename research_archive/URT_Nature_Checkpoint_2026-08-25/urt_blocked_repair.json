@@ -1,0 +1,344 @@
+{
+  "scope": {
+    "blocked_scripts": [
+      "run_endpoint_test.py",
+      "gauge_preserving_exterior_solver_q.py",
+      "urt_gate2_solver.py",
+      "urt_gate2_solver(1).py",
+      "urt_gate2_spectral_solver.py",
+      "urt_gate2_global_modular_solver.py",
+      "urt_gate2_global_modular_eta_scan.py"
+    ],
+    "originals_modified": false,
+    "packages_installed": false,
+    "compatibility_stack": "NumPy/SciPy"
+  },
+  "run_endpoint_test.py": {
+    "right_source": {
+      "closure": {
+        "objective": 0.09845747434512325,
+        "grad_norm": 7.508366869955728e-09,
+        "success": true,
+        "CKM_abs": [
+          [
+            0.9999998918503242,
+            0.00046507957640904416,
+            5.720139796866674e-07
+          ],
+          [
+            0.00046507980742009153,
+            0.9999996691349718,
+            0.0006674059624067847
+          ],
+          [
+            3.351460852906749e-07,
+            0.0006674061233867558,
+            0.9999997772844522
+          ]
+        ],
+        "PMNS_abs": [
+          [
+            0.9999938229250691,
+            0.003514837924848725,
+            5.105613584631435e-06
+          ],
+          [
+            0.0035148196587296457,
+            0.9999916505019355,
+            0.0020844589660027873
+          ],
+          [
+            1.2428670588311683e-05,
+            0.0020844281653216138,
+            0.9999978275000156
+          ]
+        ],
+        "J_CKM": 8.549566217631743e-14,
+        "J_PMNS": -1.7869745301664976e-12,
+        "normalized_spectra": {
+          "u": [
+            7.412856931240853e-07,
+            0.0028583008481863326,
+            1.0
+          ],
+          "d": [
+            2.1709576782824716e-07,
+            0.001980738384018279,
+            1.0
+          ],
+          "e": [
+            3.430869623751349e-06,
+            0.003618361019918113,
+            1.0
+          ],
+          "nu": [
+            3.1690949748305656e-07,
+            0.0014738840736350874,
+            1.0
+          ]
+        }
+      },
+      "confinement": {
+        "objective": -0.13328206183322944,
+        "grad_norm": 3.1289027180752664e-08,
+        "success": true,
+        "CKM_abs": [
+          [
+            0.9999998589328366,
+            0.0005311630821520047,
+            2.94689474973884e-07
+          ],
+          [
+            0.0005311630258124422,
+            0.9999996355405221,
+            0.0006684195259452046
+          ],
+          [
+            3.8300505754004963e-07,
+            0.0006684194811744453,
+            0.9999997766076005
+          ]
+        ],
+        "PMNS_abs": [
+          [
+            0.999996486140378,
+            0.002650978565047302,
+            4.4209003856175754e-06
+          ],
+          [
+            0.0026509651330414406,
+            0.9999946274712476,
+            0.0019280592581905447
+          ],
+          [
+            9.526809489379216e-06,
+            0.001928040789857232,
+            0.999998141282249
+          ]
+        ],
+        "J_CKM": 9.925225860528723e-14,
+        "J_PMNS": -1.51149920763086e-12,
+        "normalized_spectra": {
+          "u": [
+            1.1717821089908463e-06,
+            0.00283360161905363,
+            1.0
+          ],
+          "d": [
+            5.960737035957152e-07,
+            0.0020242274715577325,
+            1.0
+          ],
+          "e": [
+            2.7715786966482175e-06,
+            0.003472041189829006,
+            1.0
+          ],
+          "nu": [
+            5.529347090894036e-07,
+            0.0015607216553570826,
+            1.0
+          ]
+        }
+      }
+    },
+    "left_codomain": {
+      "closure": {
+        "objective": 0.0350345252153406,
+        "grad_norm": 1.6315807331027805e-08,
+        "success": true,
+        "CKM_abs": [
+          [
+            0.9752051824368253,
+            0.09568084825830873,
+            0.1995495613248222
+          ],
+          [
+            0.07486666091384672,
+            0.960111769571896,
+            0.26940744795408766
+          ],
+          [
+            0.20825425621573634,
+            0.2627366841651425,
+            0.9421250445466023
+          ]
+        ],
+        "PMNS_abs": [
+          [
+            0.1467154858360834,
+            0.738734077154738,
+            0.6578347280785798
+          ],
+          [
+            0.8852390147501444,
+            0.3207954788166028,
+            0.33681173901011846
+          ],
+          [
+            0.44139149627068647,
+            0.5927581496876813,
+            0.6736551959264923
+          ]
+        ],
+        "J_CKM": 0.003923527649567516,
+        "J_PMNS": 0.0283564797763882,
+        "normalized_spectra": {
+          "u": [
+            1.0714768369242051e-06,
+            0.003054171978371186,
+            1.0
+          ],
+          "d": [
+            2.4063471998126662e-06,
+            0.0017390178967702907,
+            1.0
+          ],
+          "e": [
+            1.589667207236748e-05,
+            0.007955101183818642,
+            1.0
+          ],
+          "nu": [
+            1.2591689995437776e-06,
+            0.00039849695913928755,
+            1.0
+          ]
+        }
+      },
+      "confinement": {
+        "objective": -0.17723967908007443,
+        "grad_norm": 1.307426808033034e-08,
+        "success": true,
+        "CKM_abs": [
+          [
+            0.9082043282425105,
+            0.3140612743080289,
+            0.2766413095356281
+          ],
+          [
+            0.2535744591123896,
+            0.9384780006893433,
+            0.23443343598555252
+          ],
+          [
+            0.3329637996050462,
+            0.14361252801253072,
+            0.9319391342520281
+          ]
+        ],
+        "PMNS_abs": [
+          [
+            0.3649084710921149,
+            0.6997911604526882,
+            0.6141124811282503
+          ],
+          [
+            0.6888774855932935,
+            0.6236221731182555,
+            0.36951751655087434
+          ],
+          [
+            0.6263302783419279,
+            0.34840740082200355,
+            0.6973683857794096
+          ]
+        ],
+        "J_CKM": -0.0019008843379369096,
+        "J_PMNS": 0.04264923609568896,
+        "normalized_spectra": {
+          "u": [
+            1.6997306633532567e-06,
+            0.003052758351275671,
+            1.0
+          ],
+          "d": [
+            6.689168186152142e-06,
+            0.0017788448142978658,
+            1.0
+          ],
+          "e": [
+            1.6262947743763912e-05,
+            0.008418485525014393,
+            1.0
+          ],
+          "nu": [
+            2.616576732167103e-06,
+            0.0003443243397933399,
+            1.0
+          ]
+        }
+      }
+    },
+    "archived_left_codomain_max_difference": 6.440670641261192e-08,
+    "verdict_reproduced": true,
+    "semantic_verdict": "Both source-side (near identity) and codomain-side (order-one) placements miss the frozen physical flavour targets."
+  },
+  "gauge_preserving_exterior_solver_q.py": {
+    "cases_re_evaluated": 12,
+    "max_objective_difference": 1.3322676295501878e-15,
+    "max_numeric_grad_norm_at_archive": 2.043423013393612e-07,
+    "weyl_audit_max": 0.0,
+    "verdict_reproduced": true,
+    "semantic_verdict": "Exterior/Weyl identities reproduce; archived stationary branches still do not select physical flavour."
+  },
+  "urt_gate2_solver.py": {
+    "archived_observable_arrays_recomputed": 12,
+    "max_absolute_difference": 0.0,
+    "verdict_reproduced": true,
+    "semantic_verdict": "The universal source-side depth flag still forces near-identity CKM and PMNS."
+  },
+  "urt_gate2_solver(1).py": {
+    "cases_re_evaluated": 8,
+    "max_objective_difference": 2.220446049250313e-16,
+    "max_CKM_abs_difference": 8.792879618857441e-16,
+    "max_PMNS_abs_difference": 4.0689934061033384e-13,
+    "max_numeric_grad_norm": 7.025203256632206e-07,
+    "verdict_reproduced": true
+  },
+  "urt_gate2_spectral_solver.py": {
+    "cases_re_evaluated": 8,
+    "max_objective_difference": 2.148281552649678e-13,
+    "max_CKM_abs_difference": 1.3625833031327694e-09,
+    "max_PMNS_abs_difference": 1.089022531874928e-09,
+    "max_numeric_grad_norm": 16131.727611568887,
+    "verdict_reproduced": true
+  },
+  "urt_gate2_global_modular_solver.py": {
+    "endpoint_cases_re_evaluated": 2,
+    "max_objective_difference": 3.3306690738754696e-16,
+    "max_numeric_x_gradient": 0.00011013522769203695,
+    "max_softmax_logit_gradient": 5.716059379791672e-05,
+    "endpoint_verdict_reproduced": true,
+    "eta_scan_rows_inspected": 20,
+    "eta_scan_faithful_replay": false,
+    "eta_scan_limitation": "The scan JSON omitted x and p at every eta; replay requires a fresh 40-branch continuation, not mere dependency substitution."
+  },
+  "urt_gate2_global_modular_eta_scan.py": {
+    "covered_by": "urt_gate2_global_modular_solver.py.eta_scan_*"
+  },
+  "missing_inputs": {
+    "unique_machine_intertwiner": {
+      "deterministic_regeneration": true,
+      "equivariance_error_3": 1.5948236156041096e-15,
+      "equivariance_error_5": 2.552567971770031e-15,
+      "constraint_error_3": 7.259991645477619e-16,
+      "constraint_error_5": 2.1904032320208814e-15,
+      "caveat": "Irrep-wide signs are fixed by a declared largest-entry convention; the missing original byte convention is unrecoverable."
+    },
+    "clifford_six_axis": {
+      "canonical_equivalent_regeneration": true,
+      "clifford_error": 0.0,
+      "spin7_stabilizer_dim": 14,
+      "archived_spin7_stabilizer_dim": 14,
+      "spin7_bracket_closure_error": 1.3152527651651651e-15,
+      "caveat": "A canonical basis-equivalent Cl(6) input is recoverable; the exact missing gamma basis/bytes are not inferable from archived invariants."
+    }
+  },
+  "summary": {
+    "faithfully_reproduced_verdicts": 6,
+    "structurally_resolved_but_not_fully_replayed": 1,
+    "failed_reproductions": 0,
+    "bottom_line": "Dependency removal does not rescue any archived physical-flavour verdict; the only unreplayed numerical object is the state-discarding eta continuation scan."
+  }
+}

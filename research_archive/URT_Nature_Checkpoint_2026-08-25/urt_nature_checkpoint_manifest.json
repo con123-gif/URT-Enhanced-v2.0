@@ -1,0 +1,141 @@
+{
+  "schema": "urt-nature-checkpoint-v1",
+  "date": "2026-08-25",
+  "purpose": "Executable progress checkpoint over every recoverable URT/Newton's Cathedral branch; no paper and no observational target fitting.",
+  "recoverable_corpus": {
+    "expanded_files": 319,
+    "unique_nonempty_sha256_blobs": 245,
+    "status_coded_claims": 224,
+    "chronological_branches": 48,
+    "contradictions": 18,
+    "live_equations_or_tasks": 15,
+    "source_gaps": [
+      "The migration manifest names all_my_colab_work_combined.md containing 322 notebooks, but that source is absent from Library.",
+      "newtons_cathedral.pdf is truncated/corrupt; only four Flate content streams/four initial pages are recoverable."
+    ]
+  },
+  "legacy_reproducibility": {
+    "scripts": 50,
+    "initial_pass": 41,
+    "initial_blocked": 9,
+    "classification": {
+      "exact": 16,
+      "conditional": 20,
+      "fitted_or_target_loaded": 14
+    },
+    "dependency_repair": {
+      "dependency_blocked_verdicts_reproduced": 6,
+      "failed_reproductions": 0,
+      "unreplayed": 1,
+      "unreplayed_reason": "The eta-continuation output discarded all optimizer states, so a faithful replay requires a fresh 40-branch continuation."
+    }
+  },
+  "new_mathematical_progress": [
+    {
+      "result": "A_4 root/weight data give a canonical compact SU(5) gauge envelope; a selected 3+2 block has stabilizer S(U(3)xU(2))=(SU3xSU2xU1)/Z6.",
+      "scope": "Conditional on treating the A_4 copy as internal gauge roots and gauging the compact real form."
+    },
+    {
+      "result": "Lambda-even(C5) branches to exactly one anomaly-free 16-state Standard Model family including nu^c; the A5 restriction equals the existing Lambda-bullet(V4).",
+      "scope": "Exact representation theorem; physical matter/chirality dictionary remains an assumption."
+    },
+    {
+      "result": "The one-parameter logistic family cannot contain both supplied geometric rails; the locally selected zero-preserving quadratic f(x)=r x(1-x/K) has r=3.841685569463323 and K=1.000273169040965, primitive stable period six, and exactly contains both rails.",
+      "scope": "Internal interpolation of supplied rails, not an independent prediction or global uniqueness theorem."
+    },
+    {
+      "result": "The contraction/chaos contradiction is repaired by the baker natural history lift plus exact radial entropy relaxation; pure global contraction and pure gradient recurrence remain no-go results.",
+      "scope": "Exact dynamics of the defined map; physical selection remains open."
+    },
+    {
+      "result": "A chosen punctured HP1 chart supports the exact Lorentz-signature metric g=Omega^2(-d tau^2+d x^2); the A_4 root regulator has isotropic continuum principal symbol |k|^2 and a fixed quartic anisotropy correction.",
+      "scope": "Valid construction, not a unique spacetime selection."
+    },
+    {
+      "result": "A trace-preserving Kubo-Mori reversible/dissipative density law is closed and numerically certified; the 13-velocity entropic-BGK moments are exact.",
+      "scope": "Density and conditional hydrodynamic sectors only, not a complete field action or global Navier-Stokes theorem."
+    },
+    {
+      "result": "The finite-Dirac gate is narrowed to an exact missing edgewise oriented charge connection. Uniform one-link averaging gives K0=(23/45)I3 with residual 2.97e-16; a minimal U(1) connection has 19 shell-cycle holonomies.",
+      "scope": "No unique blind stationary Yukawa operator exists until this transport, its phases, and the rho0 history push-forward are supplied."
+    }
+  ],
+  "remaining_nonnegotiable_gates": [
+    "Derive the seed-selection action; K3=12 and Euler counting do not force the regular icosahedron.",
+    "Select compact gauging and the dynamical SU5-to-SM breaking/Higgs sector; the existing A5 fiveplet is not an SU5 fundamental Higgs 5.",
+    "Construct a doubling-safe chiral lattice Dirac operator.",
+    "Derive the 19-cycle oriented charge connection, common Clebsch phases, passive history push-forward, and one blind joint finite action.",
+    "Derive a conserved hidden stress tensor and select G/a^2 and Lambda a^2; one lattice length supplies units but not these dimensionless coefficients.",
+    "Keep Born measurement conditional unless noncontextual orthogonal additivity is physically derived.",
+    "Do not promote response masses, CKM/PMNS, cosmology slots, prime claims, EEG/music claims, or reactor controller outputs to derived fundamental physics."
+  ],
+  "artifacts": [
+    {
+      "file": "urt_nature_solver.py",
+      "bytes": 48589,
+      "sha256": "fb1dd79f4125ef97ddb64bf2c957fc98710cd9243916f9f1dca807806b17ffa8",
+      "role": "executable solver and assertion suite"
+    },
+    {
+      "file": "urt_nature_solver_results.json",
+      "bytes": 24490,
+      "sha256": "a1770a31bdcb328d41b74f31b25d848c1c3c3b2af8024175880ca8158592d5e3",
+      "role": "deterministic solver output"
+    },
+    {
+      "file": "urt_full_claim_ledger.json",
+      "bytes": 98032,
+      "sha256": "2414120ef6f1a952b80dc48d6ebfe1b82d9107aaa947c88d4286f69b0efaf534",
+      "role": "complete recoverable chronology, claims, dependencies and contradictions"
+    },
+    {
+      "file": "urt_reproducibility_matrix.json",
+      "bytes": 31751,
+      "sha256": "56cffa4ee364cd5f979c569d258758f06defffab31934127c2ed893cbb97df09",
+      "role": "50-script reproducibility and classification matrix"
+    },
+    {
+      "file": "urt_blind_dirac_gate.json",
+      "bytes": 8294,
+      "sha256": "de5465a5a430911b11a4188442adafe5813d68c388b2b9cb7228c1cc36f56514",
+      "role": "target-free finite-Dirac underdetermination certificate"
+    },
+    {
+      "file": "urt_blocked_repair.json",
+      "bytes": 9972,
+      "sha256": "e54504860bf7566b36b2aa6c1c9596472b728015712ca9d94db85ae4d30f5da2",
+      "role": "dependency-blocked legacy runner repair results"
+    },
+    {
+      "file": "urt_blocked_numpy_compat.py",
+      "bytes": 21619,
+      "sha256": "6139fc1995dd0bc2db7a67efddd8eb942fdce7d60b0dc784ab836d01dc6d64b6",
+      "role": "NumPy/SciPy compatibility runner"
+    },
+    {
+      "file": "clifford_six_axis_results_regenerated.json",
+      "bytes": 3583,
+      "sha256": "06d788d3a7507be1c4062d4310d515bc171063d6337ee86ba192b2f268d25e3d",
+      "role": "canonical basis-equivalent recovery of missing Clifford input"
+    },
+    {
+      "file": "unique_machine_intertwiner_regenerated.npz",
+      "bytes": 1863,
+      "sha256": "1a96dff58eae5a78cc8af2a78163c9c7c6a236775abb24aa3074afb9f7a0b5e4",
+      "role": "deterministic recovery of missing intertwiner up to declared sign convention"
+    },
+    {
+      "file": "spin7_real_structure_regenerated.json",
+      "bytes": 9847,
+      "sha256": "dd4285dfc6713912969e647609475ae5a9b8a17c2d3a2058e8c6b47c7fad0b09",
+      "role": "regenerated Spin(7) structural certificate"
+    }
+  ],
+  "validation": {
+    "solver_compiles": true,
+    "solver_output_deterministic": true,
+    "solver_internal_assertions_pass": true,
+    "all_json_parse": true,
+    "observational_targets_used_by_new_solver": false
+  }
+}

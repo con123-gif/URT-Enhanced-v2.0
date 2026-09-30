@@ -1,0 +1,117 @@
+{
+  "certificate": "URT gravity normalization and vacuum-energy no-go",
+  "conservation_gate": {
+    "counterexample": {
+      "divergence_component_exact": 5.3999999999999995,
+      "divergence_component_finite_difference": 5.3999999993781245,
+      "field": "x(u)=(1+u)e_1, y(u)=0 on flat R^4",
+      "finite_difference_residual": 6.21874995943017e-10,
+      "trace_residual": 0.0
+    },
+    "representation_is_insufficient": "Membership in Sym^2_0(V4) is pointwise algebraic and does not imply a differential conservation law.",
+    "requirement": "nabla^m T_mn=0 follows from the Bianchi identity",
+    "status": "U for the project source dynamics"
+  },
+  "continuum_assumptions": [
+    "four-dimensional torsion-free metric",
+    "local diffeomorphism-invariant bulk action",
+    "metric Lagrangian with at most two derivatives",
+    "boundary terms omitted from the bulk equation"
+  ],
+  "date": "2026-09-04",
+  "gibbs_vacuum_shift_theorem": {
+    "deterministic_noncommuting_witnesses": [
+      {
+        "additive_shift": 0.0,
+        "free_energy_shift_residual": 0.0,
+        "partition_law_residual": 0.0,
+        "state_frobenius_residual": 0.0
+      },
+      {
+        "additive_shift": 0.07,
+        "free_energy_shift_residual": 4.996003610813204e-16,
+        "partition_law_residual": 1.1102230246251565e-16,
+        "state_frobenius_residual": 3.958703582538625e-16
+      },
+      {
+        "additive_shift": 0.19,
+        "free_energy_shift_residual": 6.661338147750939e-16,
+        "partition_law_residual": 8.326672684688674e-17,
+        "state_frobenius_residual": 3.616109878717251e-16
+      },
+      {
+        "additive_shift": 0.41,
+        "free_energy_shift_residual": 8.881784197001252e-16,
+        "partition_law_residual": 2.7755575615628914e-17,
+        "state_frobenius_residual": 8.084578025551691e-16
+      }
+    ],
+    "free_energy": "-log Z_{K+cI}=-log Z_K+eta c",
+    "identity": "rho_{K+cI}=rho_K and Z_{K+cI}=exp(-eta c) Z_K for every real c",
+    "local_gravity_consequence": "A constant cost per cell becomes a volume/vacuum term when cell number or geometry varies.  All normalized-state and entropy-transfer data are blind to its coefficient, so they cannot select Lambda.",
+    "maximum_witness_residual": 8.881784197001252e-16,
+    "state": "rho_K=exp(log rho0-eta K)/Z_K",
+    "status": "E"
+  },
+  "lattice_dimensionless_coefficients": {
+    "conclusion": "Supplying a_* converts units but supplies no equation for either dimensionless coefficient.",
+    "curvature_coefficient": "a_*^2/(16 pi G)=1/(16 pi g_G)",
+    "g_G": "G/a_*^2",
+    "lambda_Lambda": "Lambda a_*^2",
+    "volume_coefficient": "-Lambda a_*^4/(8 pi G)=-lambda_Lambda/(8 pi g_G)"
+  },
+  "maximum_unit_rescaling_residual": 5.551115123125783e-17,
+  "observational_targets_used": false,
+  "tracefree_projection_theorem": {
+    "application": "The hidden 4+5 source Sigma is exactly trace-free, so its normalized Ricci representation map contains no information about Lambda.",
+    "cosmological_cancellation": "The trace-free projection annihilates Lambda g_mn exactly.",
+    "equation": "Ricci_0=8 pi G T_0",
+    "newton_degeneracy": "If T_0=C Sigma/a_*^4, the equation contains only the product (G/a_*^2) C.  The replacement (g_G,C)->(s g_G,C/s) leaves it unchanged.",
+    "status": "E"
+  },
+  "two_derivative_classification": {
+    "bulk_basis": [
+      "integral sqrt(|g|)",
+      "integral sqrt(|g|) R"
+    ],
+    "coefficient_dimension": 2,
+    "einstein_parameterization": {
+      "A": "1/(16 pi G)",
+      "B": "-Lambda/(8 pi G)=-2 Lambda A",
+      "field_equation": "G_mn+Lambda g_mn=8 pi G T_mn"
+    },
+    "general_action": "S_g=integral sqrt(|g|) (A R+B)",
+    "proof": "At derivative order zero the only metric scalar is a constant. At derivative order two, Levi-Civita covariance combines metric derivatives into one Riemann tensor, whose only scalar contraction is R; the epsilon contraction vanishes by the first Bianchi identity.",
+    "status": "E conditional on the listed continuum assumptions"
+  },
+  "unit_rescaling_witnesses": [
+    {
+      "G_over_a_star_squared_residual": 1.3877787807814457e-17,
+      "Lambda_a_star_squared_residual": 2.7755575615628914e-17,
+      "scale": 0.3
+    },
+    {
+      "G_over_a_star_squared_residual": 1.3877787807814457e-17,
+      "Lambda_a_star_squared_residual": 0.0,
+      "scale": 0.8
+    },
+    {
+      "G_over_a_star_squared_residual": 0.0,
+      "Lambda_a_star_squared_residual": 0.0,
+      "scale": 2.0
+    },
+    {
+      "G_over_a_star_squared_residual": 1.3877787807814457e-17,
+      "Lambda_a_star_squared_residual": 5.551115123125783e-17,
+      "scale": 7.0
+    }
+  ],
+  "verdict": {
+    "G_over_a_star_squared": "U",
+    "Lambda_a_star_squared": "U",
+    "conserved_hidden_stress_tensor": "U",
+    "einstein_hilbert_plus_cosmological_form": "E conditional on locality, diffeomorphism invariance and the two-derivative metric premise",
+    "no_go": "The exact finite entropy and 4+5 curvature-typing identities do not select the gravitational normalization or vacuum energy.  They fix a tensor channel, not the two continuum coefficients or conservation law.",
+    "phenomenology_gate": "CLOSED"
+  }
+}

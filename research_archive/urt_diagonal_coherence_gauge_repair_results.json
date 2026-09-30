@@ -1,0 +1,545 @@
+{
+  "cell_complex": {
+    "bottom_triangle_types": 12,
+    "decomposition": "Each old future/spatial parallelogram is the union of one top and one bottom triangle. Replacing, rather than supplementing, the parallelograms is the minimal face-complete action.",
+    "future_type_adjacency": "The 12 top triangles are the 12 edges of the sign cube; their connected adjacency graph compares all eight future-link types.",
+    "old_electric_parallelogram_types": 24,
+    "spatial_square_types": 3,
+    "top_triangle_types": 12,
+    "total_triangle_types": 24,
+    "triangle_labels": [
+      {
+        "axis": 1,
+        "minus_future_signs": [
+          -1,
+          -1,
+          -1
+        ],
+        "plus_future_signs": [
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "axis": 1,
+        "minus_future_signs": [
+          -1,
+          -1,
+          1
+        ],
+        "plus_future_signs": [
+          1,
+          -1,
+          1
+        ]
+      },
+      {
+        "axis": 1,
+        "minus_future_signs": [
+          -1,
+          1,
+          -1
+        ],
+        "plus_future_signs": [
+          1,
+          1,
+          -1
+        ]
+      },
+      {
+        "axis": 1,
+        "minus_future_signs": [
+          -1,
+          1,
+          1
+        ],
+        "plus_future_signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "axis": 2,
+        "minus_future_signs": [
+          -1,
+          -1,
+          -1
+        ],
+        "plus_future_signs": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      {
+        "axis": 2,
+        "minus_future_signs": [
+          -1,
+          -1,
+          1
+        ],
+        "plus_future_signs": [
+          -1,
+          1,
+          1
+        ]
+      },
+      {
+        "axis": 2,
+        "minus_future_signs": [
+          1,
+          -1,
+          -1
+        ],
+        "plus_future_signs": [
+          1,
+          1,
+          -1
+        ]
+      },
+      {
+        "axis": 2,
+        "minus_future_signs": [
+          1,
+          -1,
+          1
+        ],
+        "plus_future_signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "axis": 3,
+        "minus_future_signs": [
+          -1,
+          -1,
+          -1
+        ],
+        "plus_future_signs": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "axis": 3,
+        "minus_future_signs": [
+          -1,
+          1,
+          -1
+        ],
+        "plus_future_signs": [
+          -1,
+          1,
+          1
+        ]
+      },
+      {
+        "axis": 3,
+        "minus_future_signs": [
+          1,
+          -1,
+          -1
+        ],
+        "plus_future_signs": [
+          1,
+          -1,
+          1
+        ]
+      },
+      {
+        "axis": 3,
+        "minus_future_signs": [
+          1,
+          1,
+          -1
+        ],
+        "plus_future_signs": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "certificate": "URT diagonal-coherence triangular gauge repair",
+  "date": "2026-09-04",
+  "exact_bivector_frames": {
+    "all_triangles": [
+      [
+        "2*tau**2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2*tau**2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "2*tau**2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "basis": [
+      "t^x1",
+      "t^x2",
+      "t^x3",
+      "x1^x2",
+      "x1^x3",
+      "x2^x3"
+    ],
+    "bottom_triangles": [
+      [
+        "tau**2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "tau**2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "tau**2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2"
+      ]
+    ],
+    "identities": [
+      "M_sp=diag(0_3,I_3)",
+      "M_old_el=diag(8 tau^2 I_3,4 I_3)",
+      "M_top=M_bottom=M_old_el/8",
+      "M_tri=M_old_el/4=diag(2 tau^2 I_3,I_3)"
+    ],
+    "old_parallelograms": [
+      [
+        "8*tau**2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "8*tau**2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "8*tau**2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "4",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "4",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "4"
+      ]
+    ],
+    "spatial": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "status": "E",
+    "symbolic_checks": {
+      "all_triangles": true,
+      "bottom_triangles": true,
+      "old_parallelogram": true,
+      "spatial": true,
+      "top_triangles": true
+    },
+    "top_triangles": [
+      [
+        "tau**2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "tau**2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "tau**2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2"
+      ]
+    ]
+  },
+  "isotropic_repaired_action": {
+    "formula": "S_g=beta[a sum_spatial W(U_square)+d sum_all_triangles W(U_triangle)]",
+    "isotropy_equation": "a+d=2 d tau^2",
+    "old_ratio_withdrawn": "The 4:1 spatial/parallelogram ratio belongs to the incomplete face set and is not the repaired action.",
+    "positive_through_OS_interval": true,
+    "status": "E quadratic frame conditional on the triangular face premise",
+    "surviving_clock_rows": [
+      {
+        "a_over_d": 1.0914066773073465,
+        "c_t": 0.9779029419996036,
+        "electric_frame_entry": 0.9999999999999999,
+        "exact_ratio_formula": 1.0914066773073463,
+        "isotropy_residual": 1.1102230246251565e-16,
+        "magnetic_frame_entry": 1.0,
+        "spatial_weight_a": 0.5218529180142599,
+        "tau": 1.0225963713282349,
+        "triangle_weight_d": 0.47814708198574
+      },
+      {
+        "a_over_d": 1.044937476522314,
+        "c_t": 0.9889514709998017,
+        "electric_frame_entry": 1.0,
+        "exact_ratio_formula": 1.044937476522314,
+        "isotropy_residual": 0.0,
+        "magnetic_frame_entry": 1.0,
+        "spatial_weight_a": 0.5109874940036642,
+        "tau": 1.0111719627546825,
+        "triangle_weight_d": 0.48901250599633583
+      },
+      {
+        "a_over_d": 1.0,
+        "c_t": 1.0,
+        "electric_frame_entry": 1.0,
+        "exact_ratio_formula": 1.0,
+        "isotropy_residual": 0.0,
+        "magnetic_frame_entry": 1.0,
+        "spatial_weight_a": 0.5,
+        "tau": 1.0,
+        "triangle_weight_d": 0.5
+      }
+    ],
+    "unique_positive_ratio": "a/d=2 tau^2-1",
+    "unit_frame_normalization": "d=c_t^2/2, a=1-c_t^2/2 when tau=1/c_t"
+  },
+  "observational_targets_used": false,
+  "old_obstruction_retest": {
+    "configuration": "four alpha_+ and four alpha_- constant future links",
+    "reason_removed_at_zero_action": "Zero top-triangle curvature forces equal neighboring sign-cube transporters (including the spatial connector). Connectivity then forbids the incoherent four-plus/four-minus assignment.",
+    "rows": [
+      {
+        "c_t": 0.9779029419996036,
+        "nontrivial_bottom_triangles_per_cell": 4,
+        "nontrivial_top_triangles_per_cell": 4,
+        "repair_action_per_cell": 7.3159882243672945,
+        "triangle_holonomy_deviation": 1.9558058839992072,
+        "triangle_phase_absolute": 2.7203666243435753,
+        "triangle_weight_d": 0.47814708198574,
+        "zero_action_after_repair": false
+      },
+      {
+        "c_t": 1.0,
+        "nontrivial_bottom_triangles_per_cell": 4,
+        "nontrivial_top_triangles_per_cell": 4,
+        "repair_action_per_cell": 7.650353311771839,
+        "triangle_holonomy_deviation": 1.9558058839992072,
+        "triangle_phase_absolute": 2.7203666243435753,
+        "triangle_weight_d": 0.5,
+        "zero_action_after_repair": false
+      }
+    ],
+    "status": "E"
+  },
+  "reflection_and_compact_group": {
+    "Creutz_boundary": "A nonzero single-face weight cannot be analytic near the identity, have nonnegative character coefficients, and vanish on an open set (hep-lat/0409017).",
+    "analyticity_split": "Ordinary Wilson weights are analytic but do not exclude rough fields or overlap-kernel zeros. Exact compact-support autocorrelation weights stay in the nonnegative-character cone only by being nonanalytic at the identity.",
+    "character_weights": "Wilson weights and the compact-support autocorrelation-square weights have nonnegative compact-group character coefficients.",
+    "reflection_pairing": "top and bottom triangles are exchanged by slice reflection",
+    "site_reflection_factorization": "Conditioning on the reflection slice separates positive and negative one-step triangles into conjugate factors.",
+    "status": "E site-reflection gauge cone; link-orientation audit still required",
+    "time_span": "every triangle lies between two adjacent slices"
+  },
+  "verdict": {
+    "exact_zero_action_coherence_obstruction_repaired": true,
+    "interacting_overlap_merger_proved": false,
+    "pure_gauge_quadratic_isotropy_repaired": true,
+    "remaining_steps": [
+      "derive a volume-uniform plaquette-to-kernel gap bound for the triangular face set",
+      "complete the link-reflection orientation proof for triangular character weights",
+      "choose between analytic full-support weights and nonanalytic exact admissibility",
+      "prove or disprove fermion-plus-gauge overlap reflection positivity",
+      "construct the anomaly-free chiral determinant measure and continuum limit"
+    ],
+    "status": "E minimal gauge repair; F that analytic Wilson support supplies a global overlap gap; U interacting overlap theory"
+  },
+  "zero_curvature_structure": {
+    "consequence": "At zero curvature all graph shifts form one coherent flat connection; the free momentum-gap proof applies after holonomy shifts.",
+    "spatial_squares": "make the three spatial covariant shifts commute",
+    "status": "E local relations; global toron classification not expanded here",
+    "triangles": "express every future covariant shift through one reference future shift and spatial shifts"
+  }
+}

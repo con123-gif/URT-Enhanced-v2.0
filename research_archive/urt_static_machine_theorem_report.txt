@@ -1,0 +1,20 @@
+URT STATIC MACHINE THEOREM
+==========================
+
+1. A fixed chiral grading leaves a 16-dimensional V4-equivariant coupling space.
+2. Transport around the complete order-five recycling cycle is injective on that space; at z=Delta exp(2pi i/5) its family rank is still 16. Recycling gives full support but does not select a coupling.
+3. Full A5 covariance in Hom(R6,R6) reduces the ordered 3+5 coupling space to dimension 5: one triplet copy and four fiveplet copies.
+4. Machine constraints select unique normalized maps: triplet = antisymmetric mean-zero transport; fiveplet = symmetric mean-zero zero-diagonal transport.
+5. Accumulating their five chiral projections in the common ambient shaft space gives a full-rank operator with singular depths 4+3+1.
+
+Singular values at Delta:
+[9.417156334285e-01 7.222161126358e-01 6.917220624499e-01
+ 3.366505478101e-01 1.645970769587e-03 1.474831778192e-03
+ 1.268497227882e-03 3.305619433723e-06]
+
+Small-g first-return coefficients: [0.6613637924848824, 0.5924375801942392, 0.5096482619643949]
+Small-g second-return coefficient: 0.533439580667
+
+The outer-related quark and lepton cycles are isospectral to numerical error 1.618e-06. Therefore a gauge-blind spectral governor cannot distinguish their flavour patterns.
+
+The direct static 3+5 load interpretation gives order-one mixing and is rejected. Hence the unique static linear machine solves support and hierarchy, but not flavour orientation. A noncommuting gauge-loaded operating functional is mathematically necessary.

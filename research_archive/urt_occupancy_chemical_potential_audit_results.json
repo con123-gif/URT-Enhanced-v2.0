@@ -1,0 +1,161 @@
+{
+  "A5_invariant_quasifree_classification": {
+    "Schur_result": "every A5-invariant covariance is Q=p I4",
+    "allowed_interval": "0<=p<=1; faithful states have 0<p<1",
+    "carrier": "irreducible V4_C",
+    "consequence": "A5 symmetry fixes equal occupations but leaves their common value and hence the fugacity continuous.",
+    "corresponding_depth": "beta(epsilon-mu)=log((1-p)/p)",
+    "status": "E"
+  },
+  "Hodge_particle_hole_test": {
+    "action_on_degree": "k maps to 4-k",
+    "degree_distribution_total_variation_from_Hodge_reverse": 0.9999630692274181,
+    "invariance_condition": "Delta^k proportional Delta^(4-k) for all k",
+    "status": "E",
+    "stored_p_minus_half": -0.4975169908407525,
+    "unique_positive_solution": "Delta=1, equivalently p=1/2 and eta=0",
+    "verdict": "F: the stored Delta prior is not Hodge/particle-hole invariant"
+  },
+  "certificate": "URT occupancy and chemical-potential selection audit",
+  "date": "2026-09-04",
+  "degree_two_conditioning": {
+    "consequence": "The recovered source-chiral prior I3/3 cannot be inverted to select the unconditioned fugacity or chemical potential.",
+    "identity": "P(N=2) conditioning makes every Lambda2 basis state weight 1/6 and every chosen Hodge triplet state weight 1/3 for all Delta>0",
+    "samples": [
+      {
+        "Lambda2_uniform_residual": 0.0,
+        "chiral_triplet_uniform_residual": 0.0,
+        "fugacity": 0.0001
+      },
+      {
+        "Lambda2_uniform_residual": 0.0,
+        "chiral_triplet_uniform_residual": 0.0,
+        "fugacity": 0.002489189840420375
+      },
+      {
+        "Lambda2_uniform_residual": 2.7755575615628914e-17,
+        "chiral_triplet_uniform_residual": 5.551115123125783e-17,
+        "fugacity": 0.2
+      },
+      {
+        "Lambda2_uniform_residual": 0.0,
+        "chiral_triplet_uniform_residual": 0.0,
+        "fugacity": 1.0
+      },
+      {
+        "Lambda2_uniform_residual": 0.0,
+        "chiral_triplet_uniform_residual": 0.0,
+        "fugacity": 5.0
+      }
+    ],
+    "status": "E"
+  },
+  "fixed_mean_number_rule": {
+    "derivative": "dNbar/dmu=beta sum_j f_j(1-f_j)>0 for finite beta and 0<m<N",
+    "equation": "Nbar(mu)=sum_j [1+exp(beta(epsilon_j-mu))]^-1=m",
+    "logical_boundary": "conditioning on N=1 does not imply grand-canonical mean N=1; fixing m is a new ensemble constraint and beta normalization remains open",
+    "scalar_energy_comparison": [
+      {
+        "depth_for_mean_number_one": 1.0986122886681098,
+        "depth_minus_eta_Delta": -4.897185698073204,
+        "fugacity_for_mean_number_one_at_scalar_energy": 0.3333333333333333,
+        "mean_number_if_Delta_is_replicated": 0.00993203663699002,
+        "one_particle_mode_count": 4
+      },
+      {
+        "depth_for_mean_number_one": 3.5553480614894135,
+        "depth_minus_eta_Delta": -2.4404499252519005,
+        "fugacity_for_mean_number_one_at_scalar_energy": 0.02857142857142857,
+        "mean_number_if_Delta_is_replicated": 0.08938832973291018,
+        "one_particle_mode_count": 36
+      },
+      {
+        "depth_for_mean_number_one": 4.962844630259907,
+        "depth_minus_eta_Delta": -1.032953356481407,
+        "fugacity_for_mean_number_one_at_scalar_energy": 0.006993006993006993,
+        "mean_number_if_Delta_is_replicated": 0.3575533189316407,
+        "one_particle_mode_count": 144
+      },
+      {
+        "depth_for_mean_number_one": 5.187385805840755,
+        "depth_minus_eta_Delta": -0.8084121809005591,
+        "fugacity_for_mean_number_one_at_scalar_energy": 0.00558659217877095,
+        "mean_number_if_Delta_is_replicated": 0.44694164866455094,
+        "one_particle_mode_count": 180
+      },
+      {
+        "depth_for_mean_number_one": 6.577861357721047,
+        "depth_minus_eta_Delta": 0.5820633709797329,
+        "fugacity_for_mean_number_one_at_scalar_energy": 0.0013908205841446453,
+        "mean_number_if_Delta_is_replicated": 1.7877665946582038,
+        "one_particle_mode_count": 720
+      }
+    ],
+    "status": "C as an additional premise, not selected by current axioms",
+    "uniqueness": "one mu exists for each supplied beta, spectrum and target m"
+  },
+  "half_filling_and_centered_neutrality": {
+    "centered_number_charge": "<N-2>=0 is the same condition",
+    "compatibility_with_stored_prior": false,
+    "half_filling": "mean N=2 on four modes forces p=1/2 for Q=pI4",
+    "note": "Neutrality for a different physical gauge charge requires a declared charge operator and does not determine the particle-number chemical potential without an additional coupling premise.",
+    "status": "E for centered number; U for any new physical charge map"
+  },
+  "history_one_particle_conditioning": {
+    "consequence": "All existing normalized N=1 history heat outputs are exactly blind to the fugacity of any proposed full-Fock extension.",
+    "identity": "z exp(-beta k)/Tr[z exp(-beta k)] is independent of every z>0",
+    "nondiagonal_samples": [
+      {
+        "distance_from_z_1": 1.1502879904429024e-16,
+        "fugacity": 1e-08
+      },
+      {
+        "distance_from_z_1": 2.4288657563162593e-17,
+        "fugacity": 0.002489189840420375
+      },
+      {
+        "distance_from_z_1": 1.125939028413099e-16,
+        "fugacity": 0.1
+      },
+      {
+        "distance_from_z_1": 0.0,
+        "fugacity": 1.0
+      },
+      {
+        "distance_from_z_1": 1.2254361179051382e-16,
+        "fugacity": 17.0
+      },
+      {
+        "distance_from_z_1": 1.212192432490151e-16,
+        "fugacity": 100000.0
+      }
+    ],
+    "status": "E"
+  },
+  "observational_targets_used": false,
+  "stored_exterior_prior": {
+    "Delta": 0.002489189840420375,
+    "binomial_mean_formula": 0.00993203663699002,
+    "binomial_variance_formula": 0.009907375299050392,
+    "degree_probabilities_k_0_to_4": [
+      0.9901048941736024,
+      0.009858236174109686,
+      3.680853199358768e-05,
+      6.10822825861512e-08,
+      3.801134931078349e-11
+    ],
+    "eta_Delta": 5.995797986741314,
+    "mean_number": 0.009932036636990016,
+    "occupation_per_mode": 0.002483009159247505,
+    "variance_number": 0.009907375299050388
+  },
+  "verdict": {
+    "A5_symmetry_selects_fugacity": "F",
+    "Hodge_symmetry_selects_stored_Delta": "F",
+    "advance": "Every surviving intrinsic candidate either leaves a continuous fugacity, erases it by conditioning, or selects half filling in direct conflict with the stored Delta.  A full history-Fock lift therefore requires an explicit occupancy/chemical-potential axiom.",
+    "conditioned_chiral_prior_selects_fugacity": "F",
+    "fixed_mean_number_can_select_mu_conditionally": "E conditional",
+    "history_heat_outputs_select_full_Fock_chemical_potential": "F",
+    "phenomenology_gate": "CLOSED"
+  }
+}

@@ -1,0 +1,88 @@
+URT CENTRED-ICOSAHEDRAL SEED AUDIT
+==================================
+
+Geometry
+--------
+Vertices                         : 13 (12 shell + centre)
+Edges                            : 42 (30 shell + 12 spokes)
+Faces                            : 20
+Every shell vertex degree        : 5
+Number of A5 rotations           : 60
+
+Cochain/Hodge audit
+-------------------
+||d1 d0||                        : 0.000e+00
+rank(d0)                         : 12
+rank(d1)                         : 19
+Betti numbers                    : (1, 11, 1)
+dim ker(DX)                      : 13
+
+Incidence audit
+---------------
+||B^T B - (5I+2A)||              : 0.000e+00
+rank(B)                          : 12
+dim ker(B^T)                     : 8
+||B^T H3|| or ||B^T H5||        : 5.089e-15
+
+Face-normal triplet
+-------------------
+||N^T N - (20/3)I||              : 1.986e-15
+||Lf N - (3-sqrt(5))N||          : 1.514e-15
+
+Hom(3,3') character projectors
+------------------------------
+rank(Pi4)                        : 4.000000000000
+rank(Pi5)                        : 5.000000000000
+||Pi4^2-Pi4||                    : 2.464e-15
+||Pi5^2-Pi5||                    : 2.358e-15
+||Pi4+Pi5-I||                    : 3.539e-15
+
+Normalized intertwiners
+-----------------------
+||J43^T J43-I||                  : 1.371e-15
+||J45^T J45-I||                  : 2.704e-15
+||J5^T J5-I||                    : 2.025e-15
+equivariance residual J43        : 2.409e-15
+equivariance residual J45        : 2.699e-15
+equivariance residual J5         : 3.135e-15
+
+Representative edge depth projectors
+------------------------------------
+Q1 = diag(0,0,1)
+Q2 = diag(0,1,0)
+Q3 = diag(1,0,0)
+
+R_Delta = Q1 + Delta Q2 + Delta^2 Q3
+        = diag(Delta^2, Delta, 1)
+in this representative edge frame.
+The opposite C3 orientation swaps Q2 and Q3.
+
+Quadratic portal
+----------------
+Diagonal triplet-block residual  : 1.099e-14
+singular values 4_3 x 4_5 -> 3  : [1.58930894 1.58930894 1.58930894]
+singular values 4_3 x 4_5 -> 3' : [0.37518495 0.37518495 0.37518495]
+
+Exact squared singular values:
+  4_3 x 4_5 -> 3  : (20 + 8 sqrt(5))/15
+  4_3 x 4_5 -> 3' : (20 - 8 sqrt(5))/15
+
+Physical/conjugate amplitude ratio:
+  s_3 / s_3' = 4.236067977499788
+  phi^3       = 4.236067977499790
+
+Power ratio:
+  (s_3/s_3')^2 = phi^6 = 17.944271909999163
+
+Key correction
+--------------
+The depth projectors Q1,Q2,Q3 are 3x3 projectors on the generation triplet.
+They are not 9x9 projectors on the shadow cone.
+
+The physical 3 and conjugate 3' quadratic portal channels are generated
+only by the mixed 4_3 x 4_5 term. The diagonal 4_3 x 4_3 and 4_5 x 4_5
+terms cannot generate triplets because:
+
+  Sym^2(4) = 1 + 4 + 5.
+
+This computation removes the claimed Clebsch-Gordan wall.

@@ -1,0 +1,141 @@
+{
+  "certificate": "URT blind finite-Dirac gate",
+  "date": "2026-08-25",
+  "observational_targets_used": false,
+  "verdict": "underdetermined",
+  "verdict_detail": "The stored data determine every one-link endpoint amplitude and the oriented species pairing, but they do not determine the edgewise charge-plane transport or the passive history push-forward. Therefore no unique blind stationary finite Dirac operator follows from the current action.",
+  "present_data": {
+    "C5": {
+      "shape": [9, 5],
+      "type": "normalized A5 intertwiner 5 -> Hom(3,3')",
+      "multiplicity": 1
+    },
+    "C43": {
+      "shape": [9, 4],
+      "type": "normalized A5 intertwiner 4_3 -> Hom(3,3')",
+      "multiplicity": 1
+    },
+    "C45": {
+      "shape": [9, 4],
+      "type": "normalized A5 intertwiner 4_5 -> Hom(3,3')",
+      "multiplicity": 1
+    },
+    "edge_alphabet": {
+      "shape": [30, 13],
+      "blocks": ["H_e in R^5", "Xi_3,e in R^4", "Xi_5,e in R^4"]
+    },
+    "vacuum_orbit": {
+      "shape": [15, 13]
+    },
+    "charge_embeddings": {
+      "J43_shape": [4, 2],
+      "J45_shape": [4, 2],
+      "scope": "multiplicity-one S3-normalizer intertwiners in one chosen frame"
+    },
+    "charge_words": {
+      "u": [1, 3, -4],
+      "d": [1, -3, 2],
+      "e": [-3, -3, 6],
+      "nu": [-3, 3, 0]
+    }
+  },
+  "endpoint_operator": {
+    "status": "fully executable once a stored frame convention is adopted",
+    "formula": "T_tilde[f,e] = C5(H_e) + C43(Xi_3,e + J43 q_f/3) + i C45(Xi_5,e + J45 Delta g(q_f)/5)",
+    "quadratic_covariant": "g(a,b,c) = (bc,ca,ab) - ((ab+bc+ca)/3)(1,1,1)",
+    "gram_formula": "K[f,e] = T_tilde[f,e]^* T_tilde[f,e]",
+    "interference_retained": true,
+    "typed_two_sheet_lift": "Mhat[f,e] = [[0,T_tilde[f,e]^*],[T_tilde[f,e],0]]"
+  },
+  "oriented_species_pairing": {
+    "status": "present and executable",
+    "formula": "h_fg = q_f.q_g + i n.(q_f x q_g), n=(1,1,1)/sqrt(3)",
+    "rank": 1,
+    "kernel_dimension": 3,
+    "eigenvalues_exact": [0, 0, 0, 112],
+    "outer_product_residual_reported": 1.811e-14,
+    "anomaly_weighted_closure": "3 z_u + 3 z_d + z_e + z_nu = 0",
+    "anomaly_weighted_closure_residual_reported": 7.772e-16,
+    "limitation": "h_fg supplies one oriented complex species line. It does not define transport of that line over edges and does not itself contract the generation-space flags."
+  },
+  "new_exact_one_link_passive_candidate": {
+    "definition": "A_e = C5(H_e) + C43(Xi_3,e) + i C45(Xi_5,e); K0_uniform = (1/30) sum_e A_e^* A_e",
+    "alphabet_block_covariances": {
+      "E_HH_T": "I5/5",
+      "E_Xi3Xi3_T": "I4/10",
+      "E_Xi5Xi5_T": "I4/30",
+      "cross_covariances": 0
+    },
+    "trace_derivation": "Tr K0_uniform = 1 + 4/10 + 4/30 = 23/15",
+    "schur_derivation": "A5 invariance on the irreducible generation triplet forces K0_uniform to be scalar",
+    "result_exact": "K0_uniform = (23/45) I3",
+    "computed_scalar_residual_frobenius": 2.974710572497158e-16,
+    "computed_eigenvalues": [0.5111111111111111, 0.5111111111111111, 0.5111111111111111],
+    "scientific_status": "exact for the stated uniform one-link push-forward; not yet identified by the theory as the physical passive history operator"
+  },
+  "why_rho0_does_not_finish_K0": {
+    "rho0_present": "rho0 = Delta^Nhat/(1+Delta)^4 on Lambda^bullet(V4)",
+    "type_mismatch": "rho0 acts on the 16-dimensional exterior carrier, whereas K0 needed by the relative matter operator acts on the generation triplet after typed two-sheet history transport.",
+    "missing_map": "No stored channel or completely positive push-forward maps rho0 through the edge histories into a positive generation-space K0.",
+    "required_history_formula": "K0_history = Pi_+ sum_omega P0(omega) Mhat[0,omega]^* Mhat[0,omega] Pi_+, with Mhat[0,omega] the ordered passive two-sheet product.",
+    "consequence": "K0_uniform=(23/45)I3 is a natural one-link candidate, while A_vac^*A_vac and history-averaged K0 are inequivalent candidates already present conceptually. The current action selects none of them."
+  },
+  "exact_transport_obstruction": {
+    "charge_plane": "Q is the oriented real two-dimensional standard representation of S3, equivalently one complex line.",
+    "group_fact": "A5 has no nontrivial real two-dimensional representation.",
+    "proof": "Any homomorphism A5 -> O(2) is trivial: its kernel is normal; simplicity makes a nontrivial map injective, but finite subgroups of O(2) are cyclic or dihedral and contain no copy of A5. With the trivial A5 action on Q, Hom_A5(Q,4)=0 because the A5 quartet has no invariant vector.",
+    "conclusion": "The stored nonzero J43 and J45 can be S3-equivariant in one normalizer frame, but cannot be extended as one constant nonzero A5-equivariant map over the full edge orbit. A connection/transition law is mathematically necessary."
+  },
+  "minimal_missing_tensor": {
+    "name": "edgewise oriented charge connection",
+    "symbol": "mathcal_J_e",
+    "local_type": "mathcal_J_e: Q_e -> (4_3)_e direct_sum (4_5)_e",
+    "equivalent_link_variable": "u_e in U(1), with u_reverse(e)=conjugate(u_e)",
+    "covariance_condition": "mathcal_J_{g e} = (R_43(g) direct_sum R_45(g)) mathcal_J_e tau_g(e)^(-1)",
+    "purpose": "transport q_f and its oriented phase into every local Hom(3,3') amplitude before ordered two-sheet multiplication",
+    "shell_graph_count": {
+      "vertices": 12,
+      "edges": 30,
+      "link_phases": 30,
+      "independent_vertex_rephasings": 11,
+      "gauge_invariant_cycle_holonomies": 19,
+      "formula": "E - V + 1 = 30 - 12 + 1 = 19"
+    },
+    "centered_graph_alternative_count": {
+      "vertices": 13,
+      "edges": 42,
+      "gauge_invariant_cycle_holonomies": 30,
+      "formula": "42 - 13 + 1 = 30"
+    },
+    "minimum_claim": "The current 30-edge alphabet already requires 19 independent U(1) cycle holonomies before any larger U(3) generation connection is considered."
+  },
+  "remaining_phase_ambiguity": {
+    "fact": "Multiplicity one fixes each Clebsch line, not the relative scalar phase between distinct Clebsch lines.",
+    "normalized_complex_freedom": "U(1)^3/U(1)_overall = U(1)^2 before imposing a common real/Hodge convention",
+    "after_hidden_hodge_pairing": "At least the relative phase between the fiveplet block and the Hodge-paired hidden block remains to be derived from a common real structure and chain orientation.",
+    "observable_effect": "The equally equivariant C43 sign choice changes the blind mixing frames; the C45 sign choice complex-conjugates the CP-odd invariants while leaving absolute mixing unchanged.",
+    "status": "not fixed by the stored null-space normalizations"
+  },
+  "action_underdetermination": {
+    "spectral_no_go": {
+      "relative_flag_dimension": 16,
+      "formula": "4 species x dim(U(3)/U(1)^3) - dim(PU(3)) = 4x6-8 = 16",
+      "consequence": "Any sum of separate spectral or heat actions is constant on a 16-dimensional relative-orientation space."
+    },
+    "cross_invariants_available_but_unweighted": [
+      "Tr(K_f K_g)",
+      "(1/(3i)) Tr([K_f,K_g]^3)",
+      "Re(h_fg Tr(U_f^* U_g))"
+    ],
+    "missing_selection": "The current theory supplies no unique contraction, relative coefficient, edge transport, or passive history normalization for these inequivalent joint invariants.",
+    "failed_minimal_completion": "The archived blind Wilson-KL test chose the trivial/common edge embedding and a real Wilson cost. It failed, and it retained an exact conjugate-chirality free-energy degeneracy.",
+    "why_no_stationary_point_is_reported_as_physical": "Choosing a different connection, cross-invariant coefficient, Clebsch phase, or K0 because of its output would be a new axiom or a fit."
+  },
+  "completion_test_after_missing_tensor_is_supplied": [
+    "Build mathcal_J_e on all 30 oriented edge frames and certify its covariance and reversal law.",
+    "Construct every T_tilde[f,e] and its 6x6 two-sheet lift without one-sheet type violations.",
+    "Define P0 and push rho0 through the same ordered passive histories to obtain positive full-rank K0_history.",
+    "Evaluate one declared real joint KL/Wilson action, retaining h_fg and every interference term.",
+    "Solve all symmetry orbits blindly and certify the global stationary orbit before any observational comparison."
+  ]
+}

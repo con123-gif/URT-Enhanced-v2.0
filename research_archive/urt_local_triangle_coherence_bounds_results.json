@@ -1,0 +1,97 @@
+{
+  "Wilson_kernel_consequence": {
+    "Lipschitz_norm": "||T(A)-T(B)||<=(1+c_t)||A-B||",
+    "clock_range": "0<c_t<=1",
+    "coherent_replacement_bound": "||T(A)-T(P_rev V)||<=3 epsilon",
+    "status": "E",
+    "temporal_map": "T(A)=(c_t gamma_0-I)A/2+(-c_t gamma_0-I)A^dagger/2"
+  },
+  "certificate": "URT local triangular coherence bounds",
+  "date": "2026-09-04",
+  "derived_bounds": {
+    "P_V_commutator_word_crossings": [
+      0,
+      2,
+      2,
+      4,
+      2,
+      4,
+      4,
+      6
+    ],
+    "average_crossings_exact": "3",
+    "direct_product_commutator": "||P V-V P||<=3 epsilon",
+    "same_order_product_comparison": "||P_fwd V-V P_fwd||<=(15/4) epsilon after spatial reordering; the direct word-commutator estimate improves this to 3 epsilon",
+    "status": "E",
+    "two_triangle_product_comparison": "||P_rev V-V P_fwd||<=3 epsilon"
+  },
+  "future_average": {
+    "average_path_steps_exact": "3/2",
+    "definition": "A=(1/8) sum_b V_b",
+    "left_coherence_bound": "||A-P_rev V||<=(3/2) epsilon",
+    "left_product": "P_rev=(1+S_3)(1+S_2)(1+S_1)/8",
+    "path_lengths": [
+      0,
+      1,
+      1,
+      2,
+      1,
+      2,
+      2,
+      3
+    ],
+    "reference": "V=V_(-1,-1,-1)",
+    "right_coherence_bound": "||A-V P_fwd||<=(3/2) epsilon",
+    "right_product": "P_fwd=(1+S_1)(1+S_2)(1+S_3)/8",
+    "status": "E telescoping unitary-path bound",
+    "total_path_steps": 12
+  },
+  "literature_method_boundary": {
+    "adaptation_status": "The Cathedral coherent product P V is not a primitive unitary shift, so the standard Appendix-C cancellation cannot be copied without a new noncommutative positive decomposition.",
+    "reference": {
+      "arXiv": "hep-lat/9808010",
+      "authors": "P. Hernandez, K. Jansen, M. Luscher",
+      "title": "Locality properties of Neuberger's lattice Dirac operator",
+      "url": "https://arxiv.org/abs/hep-lat/9808010"
+    },
+    "standard_result": "For the hypercubic s=0 Wilson kernel, a local commutator expansion gives A^dagger A>=1-30 epsilon."
+  },
+  "observational_targets_used": false,
+  "premise": {
+    "face_admissibility": "||1-U_face||<=epsilon for every elementary triangle and square",
+    "gauge_group_scope": "every compact unitary representation",
+    "operator_translation": "two path transports around a face differ by a unitary factor times (1-U_face), hence by at most epsilon",
+    "volume_dependence": "none"
+  },
+  "spatial_reordering": {
+    "average_inversions_exact": "3/4",
+    "product_reordering_bound": "||P_rev-P_fwd||<=(3/4) epsilon",
+    "square_bound": "||[S_i,S_j]||<=epsilon",
+    "status": "E",
+    "subset_inversion_counts": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      3
+    ],
+    "total_inversions": 6
+  },
+  "triangle_relations": {
+    "bottom": "||S_i V_b-V_(b+e_i)||<=epsilon",
+    "commutator": "||[S_i,V_b]||<=2 epsilon",
+    "sign_cube_edge_count": 12,
+    "status": "E",
+    "top": "||V_b S_i-V_(b+e_i)||<=epsilon"
+  },
+  "verdict": {
+    "global_Hodge_comparison_needed": false,
+    "remaining_exact_problem": "prove Y^dagger Y>=g0-C epsilon for the coherent-product kernel Y, using only the displayed local commutator bounds",
+    "status": "E local reduction; U noncommutative gap inequality",
+    "volume_independent_coherence_established": true,
+    "volume_uniform_kernel_gap_established": false
+  }
+}

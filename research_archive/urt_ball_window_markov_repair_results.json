@@ -1,0 +1,105 @@
+{
+  "added_premises": [
+    "the fixed-volume isoperimetric acceptance window is a centred ball",
+    "the physical displacement shell is the minimum-internal-length C5-fixed orbit",
+    "each of the twelve signed displacements is proposed with probability 1/12",
+    "a proposal leaving the window is rejected to a self-loop"
+  ],
+  "certificate": "URT conditional ball-window Markov repair",
+  "correlation_obstruction": {
+    "consequence": "Step increments are correlated.  The long-wave diffusion coefficient contains the full Green-Kubo velocity-correlation sum, and the fourth-order term requires a graph corrector.  One-step averaged moments do not prove the Gaussian heat symbol or c_s^2=1/5 for the homogenized chain.",
+    "exact_backtracking": "Conditioned on any accepted move v_a, the reverse edge is present at the destination and the next-step backtracking probability is 1/12.",
+    "iid_comparison": "The translation-invariant averaged 13-velocity law would assign probability 1/20 to that reverse direction; the exact gap is 1/30.",
+    "status": "E for non-iid correlation; U for homogenized coefficients",
+    "symmetry_scope": "A5 symmetry forces any existing homogenized rank-two tensor to be scalar and excludes rank-four anisotropy, but it does not fix their scalar coefficients."
+  },
+  "date": "2026-09-04",
+  "equal_ball_overlap_closure": {
+    "R_over_d": 1.828253715642884,
+    "algebraic_equation": "5x^3-15x+4=0",
+    "dimensionless_variable": "x=d/(2R)",
+    "internal_displacement_numeric": 0.5137431483730077,
+    "internal_displacement_squared": "(5-2 sqrt(5))/2",
+    "model_set_density_numeric_for_covolume_5sqrt5": 0.3104424667389074,
+    "overlap_fraction": "f(d/R)=1-3d/(4R)+d^3/(16R^3), for 0<=d<=2R",
+    "overlap_fraction_residual": 1.1102230246251565e-16,
+    "required_average_moving_fraction": "12w=3/5",
+    "root_isolation": {
+      "interval": [
+        "6837/25000",
+        "27349/100000"
+      ],
+      "polynomial_at_left": "217618253/3125000000000 > 0",
+      "polynomial_at_right": "-13828610451/200000000000000 < 0",
+      "uniqueness": "p'(x)=15(x^2-1)<0 on (0,1), so this is the unique physical root"
+    },
+    "status": "E conditional on the added ball/proposal premises",
+    "window_radius_numeric_in_internal_lattice_units": 0.9392528198990248,
+    "window_volume_numeric": 3.470852293654572,
+    "x_numeric": 0.27348501781886486
+  },
+  "local_inhomogeneity": {
+    "deterministic_internal_points": [
+      {
+        "degree": 12,
+        "directional_second_moment_maximum": 0.33333333333333365,
+        "directional_second_moment_minimum": 0.3333333333333333,
+        "local_drift_norm": 3.700743415417188e-17,
+        "local_rest_probability": 0.0,
+        "radial_fraction": 0.0
+      },
+      {
+        "degree": 11,
+        "directional_second_moment_maximum": 0.31666666666666693,
+        "directional_second_moment_minimum": 0.25000000000000017,
+        "local_drift_norm": 0.08333333333333334,
+        "local_rest_probability": 0.08333333333333337,
+        "radial_fraction": 0.5
+      },
+      {
+        "degree": 6,
+        "directional_second_moment_maximum": 0.16666666666666682,
+        "directional_second_moment_minimum": 0.16666666666666666,
+        "local_drift_norm": 0.10300566479164916,
+        "local_rest_probability": 0.5,
+        "radial_fraction": 0.9
+      },
+      {
+        "degree": 6,
+        "directional_second_moment_maximum": 0.16666666666666682,
+        "directional_second_moment_minimum": 0.16666666666666666,
+        "local_drift_norm": 0.10300566479164916,
+        "local_rest_probability": 0.5,
+        "radial_fraction": 0.999999
+      }
+    ],
+    "status": "E/N",
+    "theorem": "The origin has all twelve moves and zero rest probability, while open internal regions nearer the boundary have fewer moves, nonzero rest probability and generally nonzero local drift.  Density of the internal projection realizes these patterns in the model set."
+  },
+  "observational_targets_used": false,
+  "reversible_partial_graph_kernel": {
+    "actual_internal_norm_residual": 2.220446049250313e-16,
+    "averaged_moment_audit": {
+      "fourth_moment_residual": 2.1938059574477536e-16,
+      "second_moment_residual": 1.291305597389893e-16,
+      "third_moment_residual": 6.973502068242163e-18
+    },
+    "definition": "P(x,x+v_a)=1/12 when both window points exist; rejected proposals are added to P(x,x).",
+    "detailed_balance": "An accepted edge has P(x,y)=P(y,x)=1/12 because the signed shell contains both lattice displacements.  Counting/Palm measure is reversible.",
+    "row_stochasticity": "degree(x)/12+[12-degree(x)]/12=1 exactly",
+    "spatial_average": {
+      "each_oriented_move": "f/12=(3/5)/12=1/20",
+      "reason": "Regular model-set frequencies equal normalized internal-window intersection volumes.",
+      "rest": "1-f=2/5"
+    },
+    "status": "E conditional"
+  },
+  "verdict": {
+    "advance": "The ball-window radius and average 13-state weights close algebraically, but the quasicrystal repair replaces translation invariance by correlated site-dependent motion.  A corrector/spectral homogenization theorem is the next indispensable calculation.",
+    "homogenized_fourth_order_heat_closure": "U",
+    "one_step_averaged_weights_and_moments": "E conditional",
+    "phenomenology_gate": "CLOSED",
+    "reversible_markov_kernel": "E conditional",
+    "window_radius_from_average_weights": "E conditional"
+  }
+}

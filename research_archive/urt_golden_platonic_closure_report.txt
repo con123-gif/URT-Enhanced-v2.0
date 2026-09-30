@@ -1,0 +1,26 @@
+URT / CATHEDRAL GOLDEN PLATONIC HANDOFF
+========================================
+
+NUMERICAL RESULT
+----------------
+|V_CKM| =
+[[0.9745103395122274, 0.22431151725187426, 0.0037338200178057956], [0.22417607697394892, 0.9736354964401531, 0.04217827147129939], [0.00864203079914475, 0.041451939639763895, 0.9991031238084325]]
+J_CKM = 3.140673301336954e-05
+
+|U_PMNS| =
+[[0.8250651721629211, 0.5445892545304429, 0.1506320202803699], [0.4001382858197618, 0.538997062903802, 0.7411960053874398], [0.3989446251110447, 0.6425766180239142, 0.6541700666217897]]
+angles = {'sin2_theta12': 0.30346303407241393, 'sin2_theta23': 0.5621261641781635, 'sin2_theta13': 0.02269000553374577}
+J_PMNS = -3.235975164850337e-02
+
+Relative errors:
+quarks = {'Vus': 1.1839099244070894e-05, 'Vcb': 1.8066009789929893e-05, 'Vub': 9.442645479751377e-06, 'J': -0.00022000196009086537}
+leptons = {'sin2_theta12': -6.977978272981744e-08, 'sin2_theta23': -5.8912456630810794e-06, 'sin2_theta13': 4.6393657322507664e-06, 'J': 8.767866765291288e-06}
+
+STATUS
+------
+The calculation is unitary and numerically closes the Platonic residual at about
+10^-5 for the principal moduli/angles, except J_CKM at about 2.2e-4 relative.
+The construction uses only Cathedral constants during execution. However, the
+exact exponent ledger was identified while inspecting the residuals. Therefore
+this is a compact golden closure conjecture and numerical result, not yet a
+unique first-principles derivation.

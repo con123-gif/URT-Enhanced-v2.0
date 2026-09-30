@@ -1,0 +1,22 @@
+{
+  "certificate": "URT overlap reflection-orbit long-double cross-check",
+  "date": "2026-09-05",
+  "arithmetic": "std::complex<long double>, pivoted in-house LU, Newton matrix sign; no LAPACK",
+  "long_double_decimal_digits": 18,
+  "overlap_fixed_witness_OS_value": -4.53572834039487495932779e-08,
+  "Wilson_same_witness_OS_value": 8.96798880812806772254673e-08,
+  "maximum_determinant_phase": 2.71092034390755228212494e-19,
+  "matrix_sign": {
+    "maximum_iterations": 18,
+    "maximum_final_iteration_difference_Frobenius": 3.24706732919708066344618e-17,
+    "maximum_S_squared_minus_I_Frobenius": 4.17638494813658246676565e-17,
+    "maximum_S_minus_S_dagger_Frobenius": 3.78756373526096597187515e-16
+  },
+  "verdict": {
+    "overlap_negative": true,
+    "Wilson_positive": true,
+    "independent_extended_precision_reproduction": true,
+    "rigorous_interval_arithmetic": false,
+    "status": "N robust; interval enclosure remains"
+  }
+}

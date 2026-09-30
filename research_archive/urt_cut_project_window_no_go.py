@@ -1,0 +1,335 @@
+#!/usr/bin/env python3
+"""Acceptance-window and uniform-streaming audit for the A4 bivector lift.
+
+The exact split Lambda^2(A4) -> 3+3' supplies a canonical icosahedral direction
+set but not a discrete physical site set.  This certificate proves three facts.
+
+* A5 symmetry, inversion symmetry, the inherited metric and even a fixed window
+  volume leave a continuous family of smooth regular acceptance windows.
+* No nonzero lattice displacement can act as a globally defined reversible
+  translation on every point of a compact-window model set.
+* Two explicit extra optimizations can make parts of the choice discrete: the
+  fixed-volume isoperimetric principle selects a centered ball, and minimum
+  internal displacement among shortest C5-fixed integral vectors selects one
+  twelve-vector orbit.  These are additional premises and still give only a
+  partial, boundary-dependent neighbour graph.
+
+No observational target is used.
+"""
+
+from __future__ import annotations
+
+import argparse
+import itertools
+import json
+import math
+from collections import Counter
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+
+from urt_a4_bivector_icosahedral_lift import (
+    bivector_metric_and_hodge_numerator,
+    exterior_square,
+    parity,
+    root_representation,
+)
+
+
+def short_lattice_shells() -> dict[str, Any]:
+    metric, hodge_numerator = bivector_metric_and_hodge_numerator()
+    elements = [
+        p for p in itertools.permutations(range(5)) if parity(p) == 0
+    ]
+    actions = [exterior_square(root_representation(p)) for p in elements]
+
+    # If q(z)=z^T G z<=5, then z_i^2<=(G^-1)_ii q(z)<=4, so [-2,2]^6
+    # is an exact exhaustive box, not a heuristic cutoff.
+    shells: dict[int, list[np.ndarray]] = {3: [], 4: [], 5: []}
+    all_small_norm_counts: Counter[int] = Counter()
+    for coordinates in itertools.product(range(-2, 3), repeat=6):
+        if not any(coordinates):
+            continue
+        vector = np.asarray(coordinates, dtype=int)
+        norm_squared = int(vector @ metric @ vector)
+        if norm_squared <= 5:
+            all_small_norm_counts[norm_squared] += 1
+        if norm_squared in shells:
+            shells[norm_squared].append(vector)
+    if set(all_small_norm_counts) != {3, 4, 5}:
+        raise RuntimeError(
+            f"unexpected nonzero norms through five: {all_small_norm_counts}"
+        )
+
+    def orbit_partition(vectors: list[np.ndarray]) -> list[list[np.ndarray]]:
+        remaining = {tuple(vector) for vector in vectors}
+        orbits: list[list[np.ndarray]] = []
+        while remaining:
+            seed = np.asarray(next(iter(remaining)), dtype=int)
+            orbit_set = {tuple(action @ seed) for action in actions}
+            orbit = [np.asarray(vector, dtype=int) for vector in orbit_set]
+            remaining -= orbit_set
+            orbits.append(orbit)
+        return orbits
+
+    shell_audits = {}
+    for norm_squared, vectors in shells.items():
+        orbits = orbit_partition(vectors)
+        shell_audits[str(norm_squared)] = {
+            "vector_count": len(vectors),
+            "orbit_sizes": sorted(len(orbit) for orbit in orbits),
+            "oriented_stabilizer_orders": sorted(
+                60 // len(orbit) for orbit in orbits
+            ),
+        }
+        if norm_squared == 5:
+            signatures = Counter(
+                int(vector @ metric @ hodge_numerator @ vector)
+                for vector in vectors
+            )
+            shell_audits[str(norm_squared)]["Hodge_signatures"] = {
+                str(key): value for key, value in sorted(signatures.items())
+            }
+            shell_audits[str(norm_squared)]["projection_norms_squared"] = {
+                "signature_+10": {
+                    "physical_plus": "(5+2 sqrt(5))/2",
+                    "internal_minus": "(5-2 sqrt(5))/2",
+                },
+                "signature_-10": {
+                    "physical_plus": "(5-2 sqrt(5))/2",
+                    "internal_minus": "(5+2 sqrt(5))/2",
+                },
+            }
+
+    # The norm-three orbit projects to a 20-point dodecahedral shell, showing
+    # that shortest full-lattice displacement does not select the 12 directions.
+    plus_projector = (
+        np.eye(6) + hodge_numerator.astype(float) / math.sqrt(5.0)
+    ) / 2.0
+    shortest = shells[3]
+    projected = [plus_projector @ vector for vector in shortest]
+    projected = [
+        vector / math.sqrt(float(vector @ metric @ vector))
+        for vector in projected
+    ]
+    dots = [
+        float(left @ metric @ right)
+        for i, left in enumerate(projected)
+        for right in projected[i + 1 :]
+    ]
+    targets = (
+        -1.0,
+        -math.sqrt(5.0) / 3.0,
+        -1.0 / 3.0,
+        1.0 / 3.0,
+        math.sqrt(5.0) / 3.0,
+    )
+    dodecahedral_residual = max(
+        min(abs(dot - target) for target in targets) for dot in dots
+    )
+
+    generator = (1, 2, 3, 4, 0)
+    generator_action = exterior_square(root_representation(generator))
+    fixed_basis = np.asarray(
+        [
+            [1, 0],
+            [0, 1],
+            [1, 0],
+            [0, 1],
+            [0, 1],
+            [1, 0],
+        ],
+        dtype=int,
+    )
+    fixed_residual = int(
+        np.max(np.abs((generator_action - np.eye(6, dtype=int)) @ fixed_basis))
+    )
+    fixed_quadratic_form = fixed_basis.T @ metric @ fixed_basis
+
+    return {
+        "coordinate_bound_proof": (
+            "diag(G^-1)<=4/5, so q(z)<=5 implies |z_i|<=2"
+        ),
+        "exhaustive_nonzero_norm_counts_through_five": {
+            str(key): value for key, value in sorted(all_small_norm_counts.items())
+        },
+        "shells": shell_audits,
+        "shortest_full_lattice_shell": {
+            "norm_squared": 3,
+            "point_count": len(shortest),
+            "projected_polyhedron": "regular dodecahedral 20-point orbit",
+            "allowed_pair_inner_products": [
+                "-1",
+                "-sqrt(5)/3",
+                "-1/3",
+                "+1/3",
+                "+sqrt(5)/3",
+            ],
+            "maximum_inner_product_residual": dodecahedral_residual,
+            "consequence": (
+                "Minimum six-dimensional lattice norm selects 20 directions, not "
+                "the Cathedral 12-direction shell."
+            ),
+        },
+        "representative_C5_fixed_lattice_audit": {
+            "rank_of_g_minus_identity": int(
+                np.linalg.matrix_rank(generator_action - np.eye(6, dtype=int))
+            ),
+            "fixed_basis_residual": fixed_residual,
+            "fixed_basis_columns": fixed_basis.tolist(),
+            "restricted_Gram": fixed_quadratic_form.tolist(),
+            "consequence": (
+                "z=(a,b,a,b,b,a) and q(z)=5[a^2+(a-b)^2]"
+            ),
+        },
+    }
+
+
+def window_harmonic_values() -> dict[str, str]:
+    # h_6(u)=sum_{v in I}(u.v)^6-12/7 is the first nonconstant even
+    # icosahedrally invariant spherical function.  Values use the exact sixth
+    # moments already certified at vertex, edge and face axes.
+    from fractions import Fraction
+
+    return {
+        "vertex_axis": str(Fraction(52, 25) - Fraction(12, 7)),
+        "edge_axis": str(Fraction(8, 5) - Fraction(12, 7)),
+        "face_axis": str(Fraction(68, 45) - Fraction(12, 7)),
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args()
+
+    shells = short_lattice_shells()
+
+    out = {
+        "certificate": "URT cut-and-project acceptance-window and streaming no-go",
+        "date": "2026-09-04",
+        "observational_targets_used": False,
+        "model_set": {
+            "definition": (
+                "Lambda(W)={pi_+(z): z in Lambda^2 A4, pi_-(z) in W}, "
+                "with compact regular W subset E_-"
+            ),
+            "regular_window": (
+                "W is the closure of its nonempty interior and has boundary of "
+                "three-dimensional measure zero"
+            ),
+        },
+        "continuous_fixed_volume_window_family": {
+            "icosahedral_harmonic": (
+                "h6(u)=sum_{v in the 12-point icosahedron}(u dot v)^6-12/7"
+            ),
+            "zero_mean": (
+                "The spherical average of (u dot v)^6 is 1/7 for each unit v, "
+                "so the average of h6 is zero."
+            ),
+            "nonconstant_exact_values": window_harmonic_values(),
+            "radial_windows": (
+                "W_epsilon={r u: 0<=r<=R C_epsilon[1+epsilon h6(u)]}, "
+                "with C_epsilon chosen so Vol(W_epsilon) is fixed"
+            ),
+            "properties": (
+                "For every sufficiently small real epsilon these windows are "
+                "compact, smooth, centrally symmetric and A5-invariant; small C2 "
+                "perturbations of the ball can also be kept strictly convex."
+            ),
+            "inequivalence": (
+                "h6 is nonconstant, so W_epsilon and W_0 have nonempty symmetric "
+                "difference for epsilon!=0.  Density of pi_-(Lambda^2 A4) makes "
+                "the corresponding model sets different."
+            ),
+            "theorem": (
+                "Metric, Hodge conjugation, A5, reversal, lattice covolume and even "
+                "fixed window volume do not select an acceptance window."
+            ),
+            "status": "E",
+        },
+        "global_uniform_streaming_no_go": {
+            "assumption": (
+                "A fixed nonzero l in Lambda^2 A4 and both translations +/-pi_+(l) "
+                "map every point of Lambda(W) back into Lambda(W)."
+            ),
+            "proof": (
+                "Internal projections of selected lattice points are dense in W. "
+                "The assumption gives W+pi_-(l) subset W and W-pi_-(l) subset W, "
+                "hence W+pi_-(l)=W.  A nonempty compact set cannot be invariant "
+                "under a nonzero translation.  Injectivity of pi_- gives l=0, a "
+                "contradiction."
+            ),
+            "consequence": (
+                "A compact-window quasicrystal permits only site-dependent partial "
+                "edges for any nonzero displacement; it cannot realize a uniform "
+                "reversible lattice-Boltzmann stream on every site."
+            ),
+            "status": "E",
+        },
+        "exact_short_vector_classification": shells,
+        "conditional_discrete_repairs": {
+            "window": {
+                "extra_principle": (
+                    "At fixed window volume, minimize Euclidean boundary area."
+                ),
+                "consequence": (
+                    "The isoperimetric equality selects a ball up to translation; "
+                    "central reversal fixes its centre.  The radius remains free "
+                    "unless density/window volume is separately fixed."
+                ),
+                "status": "C: target-blind but not derived by URT",
+            },
+            "twelve_displacement_orbit": {
+                "C5_fixed_lattice": (
+                    "For a representative C5, every fixed integral vector is "
+                    "z=(a,b,a,b,b,a) and ||z||^2=5[a^2+(a-b)^2]."
+                ),
+                "minimum": (
+                    "The minimum nonzero norm is 5, with four vectors forming two "
+                    "antipodal pairs per C5.  Across six C5 subgroups these are two "
+                    "A5 orbits of 12."
+                ),
+                "Hodge_split": (
+                    "The two orbits have Hodge signatures +/-10 and swap the squared "
+                    "physical/internal lengths (5+2sqrt(5))/2 and (5-2sqrt(5))/2."
+                ),
+                "extra_principle": (
+                    "After choosing the physical Hodge sector, select the minimum-"
+                    "norm C5-fixed orbit with the smaller internal displacement "
+                    "(equivalently the larger acceptance overlap for a ball window)."
+                ),
+                "consequence": "This selects one 12-vector icosahedral orbit discretely.",
+                "status": "C: a viable locality selector, not yet a derived axiom",
+            },
+            "remaining_limit": (
+                "Even these two choices do not evade the uniform-streaming no-go; "
+                "they define a canonical partial neighbour graph, not twelve edges "
+                "available at every site."
+            ),
+        },
+        "verdict": {
+            "unique_window_from_current_data": "F",
+            "uniform_nonzero_site_translation": "F",
+            "conditional_ball_window": "C",
+            "conditional_twelve_neighbour_orbit": "C",
+            "advance": (
+                "The weakest explicit discrete repair found is fixed-volume "
+                "isoperimetry plus minimum internal displacement in the shortest "
+                "C5-fixed shell.  It remains a new locality axiom and yields only a "
+                "site-dependent quasicrystal graph."
+            ),
+            "phenomenology_gate": "CLOSED",
+        },
+    }
+
+    rendered = json.dumps(out, indent=2, sort_keys=True) + "\n"
+    if args.output is None:
+        print(rendered, end="")
+    else:
+        args.output.write_text(rendered, encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

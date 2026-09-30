@@ -1,0 +1,440 @@
+{
+  "bare_lattice_obstruction": {
+    "consequence": "the selected time reflection is not in Aut(A4)",
+    "lattice": "L=A4={x in Z^5: sum x_i=0}",
+    "reflected_witness": [
+      "-1",
+      "-1/2",
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "reflected_witness_is_integral": false,
+    "status": "E",
+    "witness_root": [
+      "1",
+      "-1",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "certificate": "URT minimal A4 time-reflection closure",
+  "date": "2026-09-04",
+  "interpretation_boundary": {
+    "advance": "The selected 1+3 split now has a unique minimal two-coset lattice on which time reflection and a translation-invariant isotropic graph coexist.  Its sector weights reproduce 3/5 and 2/5 without fitting.",
+    "not_yet_proved": [
+      "fermionic Osterwalder-Schrader positivity",
+      "identification of temporal 2/5 with the old rest channel",
+      "a chiral anomaly-safe transfer matrix",
+      "Lorentzian physical time and seconds per layer"
+    ],
+    "status": "E geometry; C/P physical identification"
+  },
+  "minimal_reflection_superlattice": {
+    "alpha_minus_R_alpha_minus_w_over_2": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "definition": "L_ref=L+Z(w/2)=L union (L+w/2)",
+    "enumerated_reflection_membership_failures": 0,
+    "minimality_proof": "R(alpha)=alpha-w/2 for alpha=e0-e1, so every R-stable additive superlattice containing L must contain w/2; conversely R maps x+m w/2 to x-(x0+m)w/2.",
+    "quotient": "L_ref/L is C2",
+    "status": "E"
+  },
+  "observational_targets_used": false,
+  "reflection_closed_root_graph": {
+    "all_q2": true,
+    "future_layer_plus_1": 8,
+    "original_oriented_roots": 20,
+    "past_layer_minus_1": 8,
+    "reflected_oriented_roots": 20,
+    "reflected_root_moment_minus_10_P_V4": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "root_moment_minus_10_P_V4": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "spatial_layer_0": 12,
+    "spatial_moment_minus_8_P_spatial": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "status": "E",
+    "temporal_moment_minus_4Psp_20Pt": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "unique_q2_directions": 28
+  },
+  "selected_split": {
+    "R_fixes_spatial_projector_residual": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "R_squared_minus_I": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "R_w_plus_w": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "reflection": [
+      [
+        "-3/5",
+        "2/5",
+        "2/5",
+        "2/5",
+        "2/5"
+      ],
+      [
+        "2/5",
+        "9/10",
+        "-1/10",
+        "-1/10",
+        "-1/10"
+      ],
+      [
+        "2/5",
+        "-1/10",
+        "9/10",
+        "-1/10",
+        "-1/10"
+      ],
+      [
+        "2/5",
+        "-1/10",
+        "-1/10",
+        "9/10",
+        "-1/10"
+      ],
+      [
+        "2/5",
+        "-1/10",
+        "-1/10",
+        "-1/10",
+        "9/10"
+      ]
+    ],
+    "stabilizer": "even permutations of the four unselected coordinates, A4",
+    "status": "E",
+    "time_weight_vector_w": [
+      "4",
+      "-1",
+      "-1",
+      "-1",
+      "-1"
+    ],
+    "unit_time": "t=w/sqrt(20)",
+    "w_squared": "20"
+  },
+  "short_shells_of_L_ref": {
+    "counts_by_squared_norm": {
+      "1": 6,
+      "2": 28
+    },
+    "q_1_note": "Six purely spatial vectors are geometrically shorter; the inherited root/reflected-root graph deliberately uses the generating q=2 shell.",
+    "q_2_generates_both_cosets": true
+  },
+  "unique_isotropic_weights": {
+    "identity": "The spatial sector has twelve directions of weight 1/20 and total weight 3/5; the reflection-paired temporal sector has total 2/5.",
+    "isotropy_equation": "8a+4b=20b",
+    "normalized_second_moment": [
+      [
+        "2/5",
+        "-1/10",
+        "-1/10",
+        "-1/10",
+        "-1/10"
+      ],
+      [
+        "-1/10",
+        "2/5",
+        "-1/10",
+        "-1/10",
+        "-1/10"
+      ],
+      [
+        "-1/10",
+        "-1/10",
+        "2/5",
+        "-1/10",
+        "-1/10"
+      ],
+      [
+        "-1/10",
+        "-1/10",
+        "-1/10",
+        "2/5",
+        "-1/10"
+      ],
+      [
+        "-1/10",
+        "-1/10",
+        "-1/10",
+        "-1/10",
+        "2/5"
+      ]
+    ],
+    "orbit_weights": "a on 12 spatial directions, b on 16 temporal directions",
+    "probability_per_spatial_direction": "1/20",
+    "probability_per_temporal_direction": "1/40",
+    "status": "E",
+    "total_integer_weight": "40",
+    "total_spatial_probability": "3/5",
+    "total_temporal_probability": "2/5",
+    "unique_positive_ratio": "a:b=2:1",
+    "weighted_moment_minus_20_P_V4": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "verdict": {
+    "bare_A4_supports_selected_time_reflection": "F",
+    "phenomenology_gate": "CLOSED",
+    "reflection_closed_isotropic_local_graph": "E",
+    "reflection_positive_fermion_theory": "U",
+    "stored_1_over_20_and_2_over_5_sector_weights_recovered": "E",
+    "unique_minimal_two_coset_reflection_closure": "E"
+  }
+}

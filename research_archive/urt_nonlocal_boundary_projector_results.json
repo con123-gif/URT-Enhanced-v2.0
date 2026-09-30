@@ -1,0 +1,478 @@
+{
+  "certificate": "URT nonlocal A5-equivariant history projector audit",
+  "continuous_reversal_covariant_family": {
+    "conclusion": "Rank, A5 covariance, endpoint-gauge covariance, reversal pairing and Omega5 do not remove alpha. Nonzero alpha is more nonlocal and need not commute with L, showing exactly which extra spectral axiom the principal rule adds.",
+    "definition": "U_alpha=exp[i alpha (R+R^dagger)/2], P_L(alpha)=U_alpha P_L(0) U_alpha^dagger, P_R(alpha)=Q^dagger P_L(alpha) Q",
+    "generator_A5_commutator_residuals": [
+      1.0367552758305676e-15,
+      1.0177254659737347e-15
+    ],
+    "witnesses": [
+      {
+        "A5_commutator_residuals": [
+          7.267594370949802e-15,
+          7.053268790263517e-15
+        ],
+        "Hermiticity_residual": 9.349628482635347e-16,
+        "commutator_with_left_transfer": 6.655369356717568e-15,
+        "diagonal_minmax": [
+          0.1999999999999998,
+          0.2000000000000004
+        ],
+        "distance_from_principal_spectral_projector": 5.144912273874956e-15,
+        "endpoint_gauge_residuals": {
+          "left_projector": 7.867278685100713e-15,
+          "right_projector": 7.877055063774824e-15
+        },
+        "idempotence_residual": 3.3898677744028753e-15,
+        "nonzero_entries_per_row_minmax": [
+          5,
+          5
+        ],
+        "parameter": 0.0,
+        "rank_trace": 12.000000000000005,
+        "restricted_normalized_Omega5": {
+          "imag": 4.440892098500626e-16,
+          "real": 1.0000000000000004
+        },
+        "reversal_pairing_residual": 6.284591800474322e-15
+      },
+      {
+        "A5_commutator_residuals": [
+          7.259231313076668e-15,
+          7.004765136124539e-15
+        ],
+        "Hermiticity_residual": 1.0158336765399939e-15,
+        "commutator_with_left_transfer": 0.9680397133943144,
+        "diagonal_minmax": [
+          0.19999999999999982,
+          0.20000000000000034
+        ],
+        "distance_from_principal_spectral_projector": 0.5422825466934539,
+        "endpoint_gauge_residuals": {
+          "left_projector": 7.623305976429882e-15,
+          "right_projector": 7.640365801614366e-15
+        },
+        "idempotence_residual": 3.3064460418806316e-15,
+        "nonzero_entries_per_row_minmax": [
+          51,
+          51
+        ],
+        "parameter": 0.2,
+        "rank_trace": 12.000000000000005,
+        "restricted_normalized_Omega5": {
+          "imag": 2.9605947323337506e-16,
+          "real": 1.0000000000000002
+        },
+        "reversal_pairing_residual": 6.265987450579431e-15
+      },
+      {
+        "A5_commutator_residuals": [
+          7.55571781825346e-15,
+          7.24539248581391e-15
+        ],
+        "Hermiticity_residual": 1.044229468092121e-15,
+        "commutator_with_left_transfer": 2.2729731193148033,
+        "diagonal_minmax": [
+          0.19999999999999982,
+          0.20000000000000034
+        ],
+        "distance_from_principal_spectral_projector": 1.3290996398621258,
+        "endpoint_gauge_residuals": {
+          "left_projector": 7.906656977177652e-15,
+          "right_projector": 7.928131818190542e-15
+        },
+        "idempotence_residual": 3.3105751714126502e-15,
+        "nonzero_entries_per_row_minmax": [
+          51,
+          51
+        ],
+        "parameter": 0.5,
+        "rank_trace": 12.000000000000005,
+        "restricted_normalized_Omega5": {
+          "imag": 1.4802973661668753e-16,
+          "real": 1.0000000000000004
+        },
+        "reversal_pairing_residual": 6.24431053540599e-15
+      },
+      {
+        "A5_commutator_residuals": [
+          8.029403520761218e-15,
+          7.89802115717377e-15
+        ],
+        "Hermiticity_residual": 1.1817956048680537e-15,
+        "commutator_with_left_transfer": 3.677528303266817,
+        "diagonal_minmax": [
+          0.19999999999999984,
+          0.2000000000000004
+        ],
+        "distance_from_principal_spectral_projector": 2.4767883592880957,
+        "endpoint_gauge_residuals": {
+          "left_projector": 8.651852634777669e-15,
+          "right_projector": 8.664934787902221e-15
+        },
+        "idempotence_residual": 3.3577544476997666e-15,
+        "nonzero_entries_per_row_minmax": [
+          51,
+          51
+        ],
+        "parameter": 1.0,
+        "rank_trace": 12.000000000000007,
+        "restricted_normalized_Omega5": {
+          "imag": 0.0,
+          "real": 1.0000000000000002
+        },
+        "reversal_pairing_residual": 6.1511814100100766e-15
+      }
+    ]
+  },
+  "date": "2026-09-03",
+  "five_cyclic_spectral_projectors": {
+    "formula": "P_k(L)=(1/5) sum_{n=0}^4 lambda_k^{-n} L^n, lambda_k=exp[i(-pi/30+2 pi k/5)]",
+    "interpretation": "Each P_k is a gauge- and A5-covariant rank-12 Fourier band and retains normalized Omega5=1, but has diagonal 1/5 and support on all five sites of every pentagon. It is a cyclic spectral filter, not a local wall.",
+    "witnesses": [
+      {
+        "A5_commutator_residuals": [
+          9.842304913514214e-16,
+          9.194885379718944e-16
+        ],
+        "Hermiticity_residual": 9.390736112843393e-16,
+        "diagonal_minmax": [
+          0.2,
+          0.2
+        ],
+        "idempotence_residual": 8.522215734548572e-16,
+        "left_eigenvalue": {
+          "imag": -0.10452846326765346,
+          "real": 0.9945218953682733
+        },
+        "left_index": 0,
+        "left_principal_angle": -0.10471975511965977,
+        "nonzero_entries_per_row_minmax": [
+          5,
+          5
+        ],
+        "off_diagonal_norm": 3.098386676965934,
+        "paired_right_index": 0,
+        "paired_right_principal_angle": 0.10471975511965977,
+        "rank_trace": 12.000000000000002,
+        "restricted_D_singular_value": 0.10467191248588766,
+        "restricted_normalized_Omega5": {
+          "imag": -1.4802973661668753e-16,
+          "real": 1.0000000000000002
+        },
+        "reversal_pairing_residual": 3.333801397010373e-15,
+        "spectral_residual": 9.080760078919415e-16
+      },
+      {
+        "A5_commutator_residuals": [
+          9.77861023012018e-16,
+          8.866796008059095e-16
+        ],
+        "Hermiticity_residual": 1.1095838389714471e-15,
+        "diagonal_minmax": [
+          0.2,
+          0.2
+        ],
+        "idempotence_residual": 1.1150980004421495e-15,
+        "left_eigenvalue": {
+          "imag": 0.9135454576426009,
+          "real": 0.4067366430758002
+        },
+        "left_index": 1,
+        "left_principal_angle": 1.1519173063162575,
+        "nonzero_entries_per_row_minmax": [
+          5,
+          5
+        ],
+        "off_diagonal_norm": 3.0983866769659345,
+        "paired_right_index": 4,
+        "paired_right_principal_angle": -1.151917306316258,
+        "rank_trace": 12.000000000000002,
+        "restricted_D_singular_value": 1.0892780700300542,
+        "restricted_normalized_Omega5": {
+          "imag": -1.4802973661668753e-16,
+          "real": 1.0000000000000002
+        },
+        "reversal_pairing_residual": 5.167611594902013e-15,
+        "spectral_residual": 1.0135059168909439e-15
+      },
+      {
+        "A5_commutator_residuals": [
+          9.863668803207403e-16,
+          8.935493101290973e-16
+        ],
+        "Hermiticity_residual": 3.905834015149413e-15,
+        "diagonal_minmax": [
+          0.2,
+          0.2
+        ],
+        "idempotence_residual": 2.3958719631803713e-15,
+        "left_eigenvalue": {
+          "imag": 0.6691306063588583,
+          "real": -0.743144825477394
+        },
+        "left_index": 2,
+        "left_principal_angle": 2.4085543677521746,
+        "nonzero_entries_per_row_minmax": [
+          5,
+          5
+        ],
+        "off_diagonal_norm": 3.0983866769659345,
+        "paired_right_index": 3,
+        "paired_right_principal_angle": -2.408554367752175,
+        "rank_trace": 12.000000000000002,
+        "restricted_D_singular_value": 1.8671608529944033,
+        "restricted_normalized_Omega5": {
+          "imag": -1.4802973661668753e-16,
+          "real": 1.0000000000000002
+        },
+        "reversal_pairing_residual": 4.176566530299939e-15,
+        "spectral_residual": 2.1611478325708863e-15
+      },
+      {
+        "A5_commutator_residuals": [
+          1.0196323287838362e-15,
+          9.26686618052707e-16
+        ],
+        "Hermiticity_residual": 5.49943683687838e-15,
+        "diagonal_minmax": [
+          0.2,
+          0.2
+        ],
+        "idempotence_residual": 2.993049342531236e-15,
+        "left_eigenvalue": {
+          "imag": -0.4999999999999997,
+          "real": -0.8660254037844388
+        },
+        "left_index": 3,
+        "left_principal_angle": -2.617993877991495,
+        "nonzero_entries_per_row_minmax": [
+          5,
+          5
+        ],
+        "off_diagonal_norm": 3.0983866769659336,
+        "paired_right_index": 2,
+        "paired_right_principal_angle": 2.6179938779914944,
+        "rank_trace": 12.000000000000002,
+        "restricted_D_singular_value": 1.9318516525781366,
+        "restricted_normalized_Omega5": {
+          "imag": -1.4802973661668753e-16,
+          "real": 1.0000000000000002
+        },
+        "reversal_pairing_residual": 4.9155075944499964e-15,
+        "spectral_residual": 2.7913867715379115e-15
+      },
+      {
+        "A5_commutator_residuals": [
+          9.666317549002929e-16,
+          8.711628617244555e-16
+        ],
+        "Hermiticity_residual": 1.7339326955124508e-15,
+        "diagonal_minmax": [
+          0.2,
+          0.2
+        ],
+        "idempotence_residual": 1.273435844442811e-15,
+        "left_eigenvalue": {
+          "imag": -0.9781476007338056,
+          "real": 0.20791169081775943
+        },
+        "left_index": 4,
+        "left_principal_angle": -1.361356816555577,
+        "nonzero_entries_per_row_minmax": [
+          5,
+          5
+        ],
+        "off_diagonal_norm": 3.0983866769659345,
+        "paired_right_index": 1,
+        "paired_right_principal_angle": 1.361356816555577,
+        "rank_trace": 12.000000000000002,
+        "restricted_D_singular_value": 1.2586407820996748,
+        "restricted_normalized_Omega5": {
+          "imag": -1.4802973661668753e-16,
+          "real": 1.0000000000000002
+        },
+        "reversal_pairing_residual": 3.776638303434395e-15,
+        "spectral_residual": 1.1099063271359003e-15
+      }
+    ]
+  },
+  "measure_obstruction": {
+    "candidate_phase_before_trivialization": "pi/5",
+    "frame_or_counterterm_angle_witness": 0.731,
+    "multiplicative_phase_witness": {
+      "imag": 0.6676144758470572,
+      "real": 0.7445071602338416
+    },
+    "statement": "Even the principal spectral band fixes only a candidate endomorphism phase. Rephasing a chiral determinant-line frame, or multiplying by exp(i lambda chi Omega5), changes it continuously without changing the projector, covariance, index or winding."
+  },
+  "observational_targets_used": false,
+  "principal_log_candidate": {
+    "boundary_failure": "The selected band is delocalized and I-L has nonzero gap 2 sin(pi/60); it is not a chiral wall zero mode.",
+    "endpoint_gauge_covariance_residuals": {
+      "left": 9.263274384236538e-16,
+      "right": 9.047968739144876e-16
+    },
+    "exact_half_phase": "pi/5 before any determinant-line counterterm",
+    "left_angle": -0.10471975511965977,
+    "next_absolute_angle_gap": 1.0471975511965979,
+    "restricted_operator_gap": 0.10467191248588766,
+    "reversal_pairing_residual": 3.333801397010373e-15,
+    "right_angle": 0.10471975511965977,
+    "selected_left_index": 0,
+    "selected_right_index": 0,
+    "selection_scope": "The minimum-phase rule uniquely selects k=0 only after imposing the additional conditions P=f(L), one complete Fourier band, and the principal branch. Those conditions are not consequences of A5 covariance.",
+    "spectral_band_determinant_ratio": {
+      "imag": 0.9510565162951589,
+      "real": 0.30901699437493796
+    },
+    "spectral_band_half_phase": 0.628318530717964
+  },
+  "regular_representation_and_commutant": {
+    "all_equivariant_orthogonal_projectors": "P=direct_sum_rho I_{d_rho} tensor P_rho, where P_rho is an arbitrary orthogonal projector on C^{d_rho}",
+    "character_inner_product_and_commutant_dimension": 60.0,
+    "classification_conclusion": "Every A5-equivariant rank-12 component has positive Grassmannian dimension; A5 symmetry alone supplies no isolated nonlocal boundary projector.",
+    "generated_group_order": 60,
+    "identity_character": 60.0,
+    "maximum_family_real_dimension": 18,
+    "maximum_nonidentity_character_modulus": 0.0,
+    "minimum_family_real_dimension": 4,
+    "rank_12_multiplicity_patterns": [
+      {
+        "multiplicity_space_ranks": {
+          "1": 0,
+          "3": 0,
+          "3prime": 0,
+          "4": 3,
+          "5": 0
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 6
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 0,
+          "3": 0,
+          "3prime": 1,
+          "4": 1,
+          "5": 1
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 18
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 0,
+          "3": 1,
+          "3prime": 0,
+          "4": 1,
+          "5": 1
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 18
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 0,
+          "3": 1,
+          "3prime": 3,
+          "4": 0,
+          "5": 0
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 4
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 0,
+          "3": 2,
+          "3prime": 2,
+          "4": 0,
+          "5": 0
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 8
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 0,
+          "3": 3,
+          "3prime": 1,
+          "4": 0,
+          "5": 0
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 4
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 1,
+          "3": 0,
+          "3prime": 1,
+          "4": 2,
+          "5": 0
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 12
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 1,
+          "3": 0,
+          "3prime": 2,
+          "4": 0,
+          "5": 1
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 12
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 1,
+          "3": 1,
+          "3prime": 0,
+          "4": 2,
+          "5": 0
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 12
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 1,
+          "3": 1,
+          "3prime": 1,
+          "4": 0,
+          "5": 1
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 16
+      },
+      {
+        "multiplicity_space_ranks": {
+          "1": 1,
+          "3": 2,
+          "3prime": 0,
+          "4": 0,
+          "5": 1
+        },
+        "projector_rank": 12,
+        "real_Grassmannian_dimension": 12
+      }
+    ],
+    "rank_12_pattern_count": 11,
+    "rank_formula": "rank(P)=k_1+3 k_3+3 k_3prime+4 k_4+5 k_5, 0<=k_d<=d",
+    "regular_decomposition": "C[A5]=V_1 tensor C^1 + V_3 tensor C^3 + V_3prime tensor C^3 + V_4 tensor C^4 + V_5 tensor C^5"
+  },
+  "uniqueness_gate": {
+    "A5_equivariant_rank_12_projector": "NOT UNIQUE: 11 positive-dimensional families",
+    "determinant_measure": "FAIL: the lambda/frame phase remains continuous",
+    "local_boundary": "FAIL: every cyclic band has five-site support and diagonal 1/5",
+    "one_chiral_zero_mode": "FAIL: the principal band has gap 2 sin(pi/60)",
+    "orientation_invariant": "PASS: normalized Omega5 remains 1",
+    "phenomenology_gate": "CLOSED",
+    "principal_log_band": "UNIQUE only inside the newly imposed five-band spectral subclass",
+    "verdict": "F/no-go for nonlocal projector selection from the current premises. The principal-log rule gives a conditional pi/5 band phase but neither a local wall nor a fixed chiral measure."
+  }
+}

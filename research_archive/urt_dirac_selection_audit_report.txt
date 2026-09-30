@@ -1,0 +1,94 @@
+URT FINITE-DIRAC SELECTION AUDIT
+=================================
+
+1. A4 COVARIANCE ALONE
+----------------------
+H_L and H_R each restrict as 2*1 + 2*2 + 6*3 over the real A4 irreducibles.
+Therefore
+
+  dim_R Hom_A4(H_R,H_L) = 2*2 + 2*(2*2) + 6*6 = 48.
+
+A4 covariance alone does not select a finite Dirac operator.
+
+2. NATURAL FIRST-ORDER / CLIFFORD-LINEAR CONNECTION
+---------------------------------------------------
+Because V|A4 = 1 + 3,
+
+  End_A4(V) = R P_lepton + R P_colour.
+
+Thus the natural vector connection has only two real channel weights (or two
+complex weights before KO reality).  For arbitrary complex z_l,z_c, direct
+calculation gives exactly
+
+  K_u = K_d = K_e = K_nu
+      = (|z_l|^2 + 3 |z_c|^2)/3 * I_3.
+
+Maximum scalar residual over 20 random complex tests: 1.230e-14
+Maximum inter-species residual:                         4.416e-15
+
+This is a theorem-level no-go: the canonical A4-graded Clifford connection is
+generation-degenerate.  The fiveplet order parameter is necessary.
+
+3. SPECTRAL RELATIVE-INFORMATION NO-GO
+--------------------------------------
+For four nondegenerate species Grams K_f, independent flag orbits have 4*6
+real dimensions.  Quotienting common PU(3) conjugation removes 8, leaving
+
+  4*6 - 8 = 16
+
+physical relative-orientation dimensions.  Any action that is only a sum of
+functions of the individual spectra of K_f is exactly invariant on this
+16-dimensional space.  Numerical heat-entropy invariance error:
+
+  0.000e+00.
+
+Therefore rho_D proportional to exp(-eta D_F^2), used only spectrally, can fix
+mass spectra but cannot select CKM or PMNS orientation.
+
+4. THE OMITTED ORIENTED CHARGE STRUCTURE
+----------------------------------------
+The four charge words lie in the oriented plane q1+q2+q3=0.  They possess both
+
+  g_fg     = q_f dot q_g,
+  omega_fg = n dot (q_f cross q_g),  n=(1,1,1)/sqrt(3).
+
+The Hermitian pairing
+
+  h_fg = g_fg + i omega_fg
+
+has rank 1 and spectrum [-9.845325793526e-15 -4.327200252843e-15  3.878546694619e-14
+  1.120000000000e+02].
+It is the outer product of one complex species vector, with residual
+1.811e-14.  It also obeys the anomaly-weighted closure
+
+  3 z_u + 3 z_d + z_e + z_nu = 0
+
+to residual 7.772e-16.
+
+Previous real/spectral constructions used g_fg but discarded omega_fg.  That
+removed the only canonical species orientation.
+
+5. MINIMAL REQUIRED FLAVOUR CURVATURE
+-------------------------------------
+The first CP-even cross-species invariant is
+
+  Tr(K_f K_g).
+
+The first CP-odd simultaneous-conjugation invariant for two 3x3 Hermitian
+Grams is
+
+  J_fg^geom = (1/(3 i)) Tr([K_f,K_g]^3),
+
+which equals, up to orientation convention,
+
+  2 J_fg prod_(i<j)(k_fi-k_fj) prod_(a<b)(k_ga-k_gb).
+
+Numerical identity residual: 8.882e-16.
+
+FINAL RESULT
+------------
+The missing finite-Dirac ingredient is not another scalar correction.  It is
+an oriented, noncommuting recursive curvature/holonomy term.  Endpoint KL or
+heat-spectrum minimisation cannot determine flavour.  The URT action must act
+on ordered three-return histories and retain the antisymmetric charge-plane
+form omega as well as the symmetric metric g.

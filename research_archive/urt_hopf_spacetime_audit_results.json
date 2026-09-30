@@ -1,0 +1,45 @@
+{
+  "basis_B": [
+    [
+      0.35681800612882447,
+      0.9341739187657994,
+      -1.0948617258190424e-16,
+      2.6888799855117262e-17
+    ],
+    [
+      0.8051991830250081,
+      -0.3075546868222633,
+      0.5070151775534127,
+      1.731615218937449e-16
+    ],
+    [
+      -0.12978824202733286,
+      0.049574046982967086,
+      0.2361903987152403,
+      0.9617232042806917
+    ],
+    [
+      -0.4555109201649993,
+      0.17398740752462513,
+      0.828944935013911,
+      -0.274022769762075
+    ]
+  ],
+  "hopf": {
+    "sphere_identity_max_error": 6.661338147750939e-16,
+    "right_SU2_fibre_invariance_max_error": 4.90457592513324e-16,
+    "stereographic_chart_fibre_invariance_max_error": 8.959506687427606e-16,
+    "chart_reconstruction_max_error": 4.2147377386852397e-16,
+    "base_dimension": 4,
+    "fibre_dimension": 3,
+    "total_dimension": 7
+  },
+  "A4_quaternion_split": {
+    "fixed_scalar_max_error": 8.881784197001252e-16,
+    "block_offdiag_max_error": 2.1203100758598867e-15,
+    "spatial_SO3_orthogonality_max_error": 2.458635952914446e-15,
+    "spatial_SO3_det_max_error": 1.5543122344752192e-15,
+    "interpretation": "After selecting t, the A5 quartet is canonically R + R^3; choosing orientation supplies a quaternion algebra H=R+Im H."
+  },
+  "conclusion": "The two hidden quartets can be organized as H^2 after A4-vacuum selection. Unit states form S7, common right unit-quaternion phase is an SU2 fibre, and the gauge-invariant local state space is HP1=S4. A stereographic patch is one quaternion y=tau+x i+y j+z k, giving one scalar and one spatial triplet."
+}

@@ -1,0 +1,64 @@
+URT GATE 2: BACK-REACTED CLASSICAL-CAR SOLUTION
+=======================================================
+
+Model frozen in the calculation:
+- explicit centred-icosahedral A5 matrices and normalized intertwiners
+- one global H + Xi3 + Xi5 vacuum
+- charge sources q/3 and Delta g(q)/5
+- universal R_Delta = Q1 + Delta Q2 + Delta^2 Q3
+- tracial passive CAR state Q0 = I/2
+- full quark colour multiplicity 3
+- exact fermionic back-reaction included
+
+eta = 5.995797986741
+  objective              = 0.255845757587309
+  vacuum norms H,Xi3,Xi5 = (0.692832937968, 0.026753865445, 0.048806062205)
+  dominant edge weight   = 0.372205140203
+  singular values (light, middle, heavy):
+    u : 1.06710599874e-06, 0.00336423647569, 1.13672899122   normalized=9.38751e-07, 0.00295958, 1
+    d : 3.74951576953e-07, 0.0020639802883, 1.05942760487   normalized=3.53919e-07, 0.0019482, 1
+    e : 4.40838164935e-06, 0.00467459612788, 1.25503529075   normalized=3.51256e-06, 0.00372467, 1
+    nu: 3.83040790349e-07, 0.00138563293427, 1.03237800506   normalized=3.71028e-07, 0.00134218, 1
+  |CKM|:
+    0.999999844  0.000557803  0.000000663
+    0.000557803  0.999999752  0.000430500
+    0.000000459  0.000430500  0.999999907
+  J_CKM = -6.932623e-14
+  |PMNS|:
+    0.999991130  0.004211876  0.000004946
+    0.004211858  0.999989135  0.001997298
+    0.000013355  0.001997260  0.999998005
+  J_PMNS = 1.649938e-12
+
+eta = 9.860112942800
+  objective              = -0.0285439221322634
+  vacuum norms H,Xi3,Xi5 = (0.905543019853, 0.161293657788, 0.071479499788)
+  dominant edge weight   = 0.874425292472
+  singular values (light, middle, heavy):
+    u : 1.53465591556e-06, 0.00351249294855, 1.20996314769   normalized=1.26835e-06, 0.00290298, 1
+    d : 7.51935758211e-07, 0.00232724647254, 1.1379736237   normalized=6.60767e-07, 0.00204508, 1
+    e : 3.69025756267e-06, 0.00468838501177, 1.32219554734   normalized=2.79101e-06, 0.00354591, 1
+    nu: 6.69266082596e-07, 0.00173209503404, 1.1127226783   normalized=6.01467e-07, 0.00155663, 1
+  |CKM|:
+    0.999999845  0.000556715  0.000000357
+    0.000556715  0.999999690  0.000556202
+    0.000000327  0.000556202  0.999999845
+  J_CKM = -9.401282e-14
+  |PMNS|:
+    0.999996169  0.002768097  0.000004434
+    0.002768083  0.999994398  0.001882178
+    0.000009639  0.001882159  0.999998229
+  J_PMNS = 1.552376e-12
+
+Conclusion
+----------
+The frozen minimal Gate-2 construction has a stable, reproducible global minimum,
+but its left-handed mixing matrices are essentially the identity and its CP
+invariants are numerically zero. It therefore does not reproduce the observed
+quark/lepton mixing architecture. Several mass hierarchy scales are generated,
+but the charged-lepton and down-sector ratios are also substantially too steep.
+
+This is a falsification of the frozen minimal charge-to-field/depth realization,
+not of the exact icosahedral Hodge and portal results. Any repair would require
+changing a stated structural map or adding a new derived mechanism; post-hoc
+coefficient tuning is not allowed.

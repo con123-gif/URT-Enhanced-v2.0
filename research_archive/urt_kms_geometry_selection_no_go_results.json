@@ -1,0 +1,233 @@
+{
+  "A5_covariance_dichotomy": {
+    "Schur_commutant": "End_A5(V4)=C I4",
+    "carrier": "irreducible complex V4 of A5",
+    "consequence": "An A5-equivariant self-adjoint involution is D=+I4 or -I4. Both commute with every algebra element and have zero one-forms.",
+    "dichotomy": "Keep full A5 covariance and obtain a trivial Dirac geometry, or relax it and introduce an entropy-invisible continuous sign choice.",
+    "status": "E"
+  },
+  "certificate": "URT KMS state versus Dirac geometry selection no-go",
+  "date": "2026-09-04",
+  "hidden_3_5_eigenspace_ambiguity": {
+    "consequence": "The stored spectrum and entropy do not select the hidden eigenspaces, their tensor-factor identification or their coupling to geometry.",
+    "cost_family": "K(Q)=3 I8+2Q for any rank-four orthogonal projector Q",
+    "max_spectrum_residual": 1.7763568394002505e-15,
+    "moduli": "U(8)/(U(4)xU(4))=Gr_C(4,8)",
+    "real_dimension": 32,
+    "samples": [
+      {
+        "projector_distance_from_theta_0": 0.0,
+        "spectrum": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "spectrum_residual": 0.0,
+        "theta": 0.0
+      },
+      {
+        "projector_distance_from_theta_0": 0.275899379282943,
+        "spectrum": [
+          2.999999999999999,
+          2.9999999999999996,
+          3.0,
+          3.0,
+          4.999999999999998,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "spectrum_residual": 1.7763568394002505e-15,
+        "theta": 0.19634954084936207
+      },
+      {
+        "projector_distance_from_theta_0": 0.541196100146197,
+        "spectrum": [
+          3.0,
+          3.0,
+          3.0,
+          3.0000000000000004,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "spectrum_residual": 4.440892098500626e-16,
+        "theta": 0.39269908169872414
+      },
+      {
+        "projector_distance_from_theta_0": 0.785694958387102,
+        "spectrum": [
+          2.9999999999999987,
+          3.0,
+          3.0,
+          3.0,
+          4.999999999999998,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "spectrum_residual": 1.7763568394002505e-15,
+        "theta": 0.5890486225480862
+      }
+    ],
+    "spectrum_for_every_Q": {
+      "3": 4,
+      "5": 4
+    },
+    "status": "E"
+  },
+  "observational_targets_used": false,
+  "passive_state_reconstruction": {
+    "A_minus_I_norm": 0.0,
+    "Connes_one_forms": "Omega^1_A={sum a[D,b]}=0 for D=A=I4",
+    "Delta": 0.002489189840420375,
+    "Delta_minus_exp_minus_eta_residual": 0.0,
+    "commutator_with_arbitrary_algebra_witness_norm": 0.0,
+    "eta_Delta": 5.995797986741314,
+    "one_particle_to_vacuum_block": [
+      [
+        0.002489189840420375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.002489189840420375,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.002489189840420375,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.002489189840420375
+      ]
+    ],
+    "reconstructed_A_at_beta_eta_Delta": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "reconstructed_beta_A": [
+      [
+        5.995797986741314,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.995797986741314,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        5.995797986741314,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        5.995797986741314
+      ]
+    ],
+    "state": "rho0=Delta^N/(1+Delta)^4 on Fock(C^4)",
+    "status": "E conditional on the ordinary positive CAR Gibbs identification",
+    "theorem": "For rho proportional exp[-beta dGamma(A)], the one-particle/vacuum block ratio is exp(-beta A).  Here it is Delta I4, so beta A=(-log Delta)I4."
+  },
+  "signed_Dirac_ambiguity": {
+    "continuous_moduli_example": "fixed-signature orbit U(4)/(U(2)xU(2))",
+    "family": "D(theta)=[[cos2t,sin2t], [sin2t,-cos2t]] direct-sum [1] direct-sum [-1]",
+    "geometry_changes": "For P=diag(1,0,0,0), ||[D(theta),P]||=|sin(2 theta)| although |D(theta)|, the KMS state and Tr h(eta D(theta)) are fixed.",
+    "max_D_squared_minus_I_norm": 2.5860532068485732e-17,
+    "max_abs_D_minus_I_norm": 0.0,
+    "max_entropy_identity_residual": 0.0,
+    "premise": "If the state Hamiltonian is |D|, the passive state fixes only |D|=I4; every self-adjoint involution D remains invisible to it.",
+    "real_dimension_of_example_moduli": 8,
+    "samples": [
+      {
+        "D_squared_minus_I_norm": 0.0,
+        "abs_D_minus_I_norm": 0.0,
+        "commutator_formula_residual": 0.0,
+        "entropy": 0.06949487302779525,
+        "expected_abs_sin_2theta": 0.0,
+        "operator_commutator_norm_with_P": 0.0,
+        "theta": 0.0
+      },
+      {
+        "D_squared_minus_I_norm": 2.1634997285925725e-17,
+        "abs_D_minus_I_norm": 0.0,
+        "commutator_formula_residual": 0.0,
+        "entropy": 0.06949487302779525,
+        "expected_abs_sin_2theta": 0.3826834323650898,
+        "operator_commutator_norm_with_P": 0.3826834323650898,
+        "theta": 0.19634954084936207
+      },
+      {
+        "D_squared_minus_I_norm": 1.0146536357569526e-17,
+        "abs_D_minus_I_norm": 0.0,
+        "commutator_formula_residual": 0.0,
+        "entropy": 0.06949487302779525,
+        "expected_abs_sin_2theta": 0.7071067811865475,
+        "operator_commutator_norm_with_P": 0.7071067811865475,
+        "theta": 0.39269908169872414
+      },
+      {
+        "D_squared_minus_I_norm": 2.5860532068485732e-17,
+        "abs_D_minus_I_norm": 0.0,
+        "commutator_formula_residual": 0.0,
+        "entropy": 0.06949487302779525,
+        "expected_abs_sin_2theta": 0.9238795325112867,
+        "operator_commutator_norm_with_P": 0.9238795325112867,
+        "theta": 0.5890486225480862
+      }
+    ],
+    "status": "E"
+  },
+  "verdict": {
+    "A5_equivariant_nontrivial_Dirac_from_prior": "F",
+    "advance": "The exact finite KMS factorization does not supply the missing Dirac operator.  In the positive reading it uniquely returns a scalar generator with zero differential calculus; in the signed reading it leaves a continuous entropy-invisible geometry choice.",
+    "passive_prior_is_finite_KMS_state": "E",
+    "phenomenology_gate": "CLOSED",
+    "positive_generator_is_nontrivial_geometry": "F",
+    "signed_Dirac_selected_by_state_or_even_entropy": "F",
+    "unique_hidden_eigenspace_from_3_5_spectrum": "F"
+  }
+}

@@ -1,0 +1,2985 @@
+diff --git a/newtons_cathedral/higgs_normalization.py b/newtons_cathedral/higgs_normalization.py
+new file mode 100644
+index 0000000..2877e9f
+--- /dev/null
++++ b/newtons_cathedral/higgs_normalization.py
+@@ -0,0 +1,188 @@
++"""Finite-Dirac Higgs normalization audit.
++
++This module is intentionally additive.  It does not alter the existing Cathedral
++ledger.  It records the quantities that are basis-independent outputs of the
++finite Dirac audit and keeps the remaining spectral-action normalization in an
++explicit coefficient rather than assuming a preferred convention.
++"""
++from __future__ import annotations
++
++from dataclasses import dataclass
++from fractions import Fraction
++from math import pi
++from typing import Final
++
++from .foundations import DELTA, GAMMA
++
++# Bare one-generation gauge traces on particle states.  Conjugate doubling
++# multiplies all three by the same factor and therefore leaves the ratios fixed.
++K_Y: Final[Fraction] = Fraction(10, 3)
++K_SU2: Final[Fraction] = Fraction(2, 1)
++K_SU3: Final[Fraction] = Fraction(2, 1)
++
++
++def yukawa_trace_a(delta: float = DELTA) -> float:
++    """Weighted quadratic heat trace Tr(Y^†Y)."""
++    return 16.0 * (100.0 + 183.0 * delta * delta) / 75.0
++
++
++def yukawa_trace_b(delta: float = DELTA) -> float:
++    """Weighted quartic heat trace Tr((Y^†Y)^2)."""
++    return (
++        976.0 / 27.0
++        + (384.0 / 5.0) * delta
++        + (99584.0 / 225.0) * delta**2
++        + (1728.0 / 5.0) * delta**3
++        + (420592.0 / 1875.0) * delta**4
++    )
++
++
++def higgs_shape_ratio(delta: float = DELTA) -> float:
++    """Basis-independent shape invariant b/a² fixed by the finite operator."""
++    a = yukawa_trace_a(delta)
++    return yukawa_trace_b(delta) / (a * a)
++
++
++def gauge_trace_ratio() -> tuple[Fraction, Fraction, Fraction]:
++    """Return k_Y:k_2:k_3 with the nonabelian traces normalized to one."""
++    return K_Y / K_SU2, Fraction(1, 1), K_SU3 / K_SU2
++
++
++def canonical_weak_angle_boundary() -> Fraction:
++    """Bare canonical spectral boundary implied by 5/3:1:1 gauge traces."""
++    return Fraction(3, 8)
++
++
++@dataclass(frozen=True)
++class SpectralActionConvention:
++    """Coefficients of one explicitly declared bosonic trace convention.
++
++    The unnormalized action is written as
++
++        A_W f0 k2 W² + A_H f0 a |D H|² - A_V f0 b |H|⁴.
++
++    All three coefficients must come from the same action, generator
++    normalization, trace domain, and scalar-potential convention.
++    """
++
++    A_W: float
++    A_H: float
++    A_V: float
++
++    def __post_init__(self) -> None:
++        if self.A_W <= 0.0 or self.A_H <= 0.0 or self.A_V <= 0.0:
++            raise ValueError("A_W, A_H and A_V must all be positive")
++
++    @property
++    def normalization_coefficient(self) -> float:
++        """C_norm in λ_H/g₂² = C_norm · b/a²."""
++        return 4.0 * float(K_SU2) * self.A_W * self.A_V / (self.A_H**2)
++
++
++def quartic_over_g2_squared(
++    *,
++    delta: float = DELTA,
++    normalization_coefficient: float,
++) -> float:
++    """Return λ_H/g₂² for an explicit normalization coefficient."""
++    if normalization_coefficient <= 0.0:
++        raise ValueError("normalization_coefficient must be positive")
++    return normalization_coefficient * higgs_shape_ratio(delta)
++
++
++def quartic_boundary(
++    g2_squared: float,
++    *,
++    delta: float = DELTA,
++    normalization_coefficient: float,
++) -> float:
++    """Return λ_H at the declared spectral boundary scale."""
++    if g2_squared <= 0.0:
++        raise ValueError("g2_squared must be positive")
++    return g2_squared * quartic_over_g2_squared(
++        delta=delta,
++        normalization_coefficient=normalization_coefficient,
++    )
++
++
++def cathedral_root_alpha_inverse(delta: float = DELTA) -> float:
++    """Locked scalar-residue inverse coupling used by the current audit."""
++    return 137.0 + (17572.0 / 1215.0) * delta - (9.0 / 65.0) * delta**2
++
++
++def cathedral_quartic_slot(gamma: float = GAMMA) -> float:
++    """Earlier Cathedral quartic slot 1/8 + γ/D with D=3."""
++    return 1.0 / 8.0 + gamma / 3.0
++
++
++def g2_squared_from_alpha(alpha_inverse: float, sin2_theta_w: float) -> float:
++    """Compute g₂² = 4πα/sin²θ_W from a declared scale and convention."""
++    if alpha_inverse <= 0.0:
++        raise ValueError("alpha_inverse must be positive")
++    if not 0.0 < sin2_theta_w < 1.0:
++        raise ValueError("sin2_theta_w must lie strictly between zero and one")
++    return 4.0 * pi / (alpha_inverse * sin2_theta_w)
++
++
++def required_normalization_coefficient(
++    target_lambda: float,
++    g2_squared: float,
++    *,
++    delta: float = DELTA,
++) -> float:
++    """C_norm required to reproduce a declared target λ at a declared g₂."""
++    if target_lambda <= 0.0 or g2_squared <= 0.0:
++        raise ValueError("target_lambda and g2_squared must be positive")
++    return target_lambda / (g2_squared * higgs_shape_ratio(delta))
++
++
++def diagnostic_report() -> dict[str, float]:
++    """Return the exact present status without selecting a convention."""
++    a = yukawa_trace_a()
++    b = yukawa_trace_b()
++    rho = higgs_shape_ratio()
++    alpha_inverse = cathedral_root_alpha_inverse()
++    old_sin2 = 3.0 / 13.0
++    g2_sq = g2_squared_from_alpha(alpha_inverse, old_sin2)
++    target = cathedral_quartic_slot()
++    c_required = required_normalization_coefficient(target, g2_sq)
++    lambda_if_c4 = quartic_boundary(
++        g2_sq,
++        normalization_coefficient=4.0,
++    )
++    return {
++        "delta": DELTA,
++        "a": a,
++        "b": b,
++        "rho_h": rho,
++        "canonical_sin2_theta_w": float(canonical_weak_angle_boundary()),
++        "cathedral_alpha_inverse": alpha_inverse,
++        "cathedral_old_sin2_theta_w": old_sin2,
++        "cathedral_g2_squared": g2_sq,
++        "cathedral_quartic_slot": target,
++        "required_c_norm": c_required,
++        "lambda_if_c_norm_4": lambda_if_c4,
++        "relative_slot_gap_if_c_norm_4": (target - lambda_if_c4) / target,
++    }
++
++
++def higgs_normalization_audit() -> bool:
++    """Pin the finite traces and the normalization diagnostic."""
++    report = diagnostic_report()
++    checks = [
++        abs(report["delta"] - 0.002489189840420375) < 1.0e-15,
++        abs(report["a"] - 21.33357522775238) < 1.0e-12,
++        abs(report["b"] - 36.34206561805763) < 1.0e-12,
++        abs(report["rho_h"] - 0.07985136067642659) < 1.0e-14,
++        gauge_trace_ratio() == (Fraction(5, 3), Fraction(1, 1), Fraction(1, 1)),
++        canonical_weak_angle_boundary() == Fraction(3, 8),
++        abs(report["required_c_norm"] - 4.069095184887046) < 1.0e-12,
++        abs(report["lambda_if_c_norm_4"] - 0.12692278796229) < 1.0e-12,
++    ]
++    return all(checks)
++
++
++if __name__ == "__main__":
++    for key, value in diagnostic_report().items():
++        print(f"{key:36s} = {value:.15g}")
++    print("audit_passes", higgs_normalization_audit())
+diff --git a/research/higgs_normalization/README.md b/research/higgs_normalization/README.md
+new file mode 100644
+index 0000000..0e5e4e6
+--- /dev/null
++++ b/research/higgs_normalization/README.md
+@@ -0,0 +1,158 @@
++# Higgs normalization audit
++
++This directory is an **additive research workspace**. It does not replace, rename, or modify any existing Cathedral file.
++
++## Exact finite-operator outputs
++
++The Cathedral finite Dirac audit fixes
++
++\[
++\Delta=\frac{3}{20}-\frac{(1-1/81)\pi}{13\phi},
++\qquad \phi=\frac{1+\sqrt5}{2},
++\]
++
++and
++
++\[
++a(\Delta)=\operatorname{Tr}(Y^\dagger Y)
++=\frac{16}{75}\left(100+183\Delta^2\right),
++\]
++
++\[
++\begin{aligned}
++b(\Delta)&=\operatorname{Tr}\!\left[(Y^\dagger Y)^2\right]\\
++&=\frac{976}{27}+\frac{384}{5}\Delta
+++\frac{99584}{225}\Delta^2
+++\frac{1728}{5}\Delta^3
+++\frac{420592}{1875}\Delta^4.
++\end{aligned}
++\]
++
++Numerically,
++
++\[
++a=21.33357522775238\ldots,
++\qquad
++b=36.34206561805763\ldots,
++\]
++
++so
++
++\[
++\boxed{
++\rho_H=\frac{b}{a^2}=0.07985136067642659\ldots
++}
++\]
++
++is the basis-independent Higgs shape invariant fixed by the finite operator.
++
++## Gauge trace
++
++For one Standard-Model generation of particle states,
++
++\[
++k_Y=\frac{10}{3},\qquad k_2=2,\qquad k_3=2,
++\]
++
++hence
++
++\[
++k_Y:k_2:k_3=\frac53:1:1.
++\]
++
++The canonical bare spectral boundary is therefore
++
++\[
++g_3^2=g_2^2=\frac53g_1^2,
++\qquad
++\sin^2\theta_W=\frac38.
++\]
++
++This means the older Cathedral value \(3/13\) is not the bare gauge coefficient of the canonical finite trace. It must arise through a separately derived normalization, running, or threshold mechanism.
++
++## Canonical normalization without assuming the prefactor
++
++Write one declared bosonic trace convention as
++
++\[
++\mathcal L_{\rm bos}
++=A_Wf_0k_2W^2+A_Hf_0a|DH|^2-A_Vf_0b|H|^4.
++\]
++
++Gauge normalization gives
++
++\[
++A_Wf_0k_2=\frac{1}{4g_2^2},
++\]
++
++and canonical scalar normalization gives
++
++\[
++H_c=\sqrt{A_Hf_0a}\,H.
++\]
++
++Therefore
++
++\[
++\boxed{
++\frac{\lambda_H}{g_2^2}
++=C_{\rm norm}\frac{b}{a^2},
++\qquad
++C_{\rm norm}=\frac{4k_2A_WA_V}{A_H^2}
++}
++\]
++
++The finite operator fixes \(b/a^2\). The physical quartic additionally requires all three action coefficients to be derived in one fixed convention.
++
++## Diagnostic against the old Cathedral slots
++
++Using
++
++\[
++\alpha_{\rm root}^{-1}=137.035999178195\ldots,
++\qquad
++\sin^2\theta_W=\frac3{13},
++\]
++
++gives
++
++\[
++g_2^2=0.397372026247011\ldots .
++\]
++
++The old quartic slot is
++
++\[
++\lambda_{\rm slot}=\frac18+\frac1{243}
++=0.12911522633744857\ldots .
++\]
++
++Exact equality would require
++
++\[
++\boxed{C_{\rm norm}=4.069095184887046\ldots}
++\]
++
++A convention with \(C_{\rm norm}=4\) yields
++
++\[
++\lambda_H=0.126922787962290\ldots,
++\]
++
++which is \(1.69805\%\) below the old slot. This is a near match, not an exact closure.
++
++## Status
++
++Closed:
++
++- the finite Dirac quadratic and quartic traces;
++- the invariant \(b/a^2\);
++- the bare gauge trace ratio \(5/3:1:1\);
++- the exact normalization identity in terms of \(A_W,A_H,A_V\).
++
++Open:
++
++- deriving \(A_W,A_H,A_V\) from one fully declared spectral-action convention;
++- fixing the physical trace domain, including conjugate and Majorana sectors;
++- specifying the boundary scale and RG evolution;
++- deriving the mechanism that connects the bare \(3/8\) boundary to the older \(3/13\) value.
+diff --git a/research/week_2026-07-13_to_2026-07-20/00_chronology.md b/research/week_2026-07-13_to_2026-07-20/00_chronology.md
+new file mode 100644
+index 0000000..6971106
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/00_chronology.md
+@@ -0,0 +1,38 @@
++# Chronology
++
++## 2026-07-13 — rails and structural sorting
++
++The central clarification was frozen:
++
++- `delta_star` is the lowest branch of the logistic-map cycle.
++- `delta_classic` is the neighbouring classical rail near `0.150`.
++- Their difference is the stability window, not an arbitrary correction.
++
++The original URTF description was separated from later Cathedral interpretation. The aim remained a direct, non-iterative, deterministic framework with no hand-picked slots.
++
++## 2026-07-14 — source recovery and adversarial audits
++
++The logistic verification report and the pi-phi-e flow report were recovered. Two audits were produced:
++
++1. A target-free estimator sweep showed that the archived raw estimator does not select `0.1475` or `0.150`; the later refinement explicitly attracts values toward `0.15`.
++2. The archived tanh operator was solved exactly. It has a superstable zero and unstable amplitude separatrices, but neither rail is a bifurcation in the parameter `delta`.
++
++These negative results are retained because they prevent circular derivations from re-entering the framework.
++
++## 2026-07-15 to 2026-07-19 — consolidation state
++
++The rail semantics, gap-as-bandwidth interpretation, scalar root coupling, entropy-scale map, hidden `A5` sector, and physical-action requirements were consolidated. No additional target-free derivation of the rail-selection parameter was established in the accessible record.
++
++## 2026-07-20 — finite Dirac/Higgs trace audit
++
++The charge-word matrices were traced exactly. The matrix invariant
++
++`G2 / Y2^2 = 0.128356357761657...`
++
++was verified. It lies close to, but is not exactly equal to, the earlier Cathedral quartic slot
++
++`1/8 + 1/243 = 0.129115226337449...`.
++
++The difference is about `0.587745%`.
++
++The physical Higgs coupling did not close because the gauge kinetic coefficient, scalar kinetic coefficient, quartic coefficient, trace domain, and boundary scale must all be obtained from the same action. A convention-dependent prefactor may not be inserted after the trace calculation.
+diff --git a/research/week_2026-07-13_to_2026-07-20/01_frozen_definitions.md b/research/week_2026-07-13_to_2026-07-20/01_frozen_definitions.md
+new file mode 100644
+index 0000000..674dbbe
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/01_frozen_definitions.md
+@@ -0,0 +1,89 @@
++# Frozen definitions
++
++## Geometric constants
++
++\[
++D=3,\quad V=12,\quad E=30,\quad F=20,\quad q=5,\quad N=13,\quad G=60,
++\]
++
++\[
++\phi=\frac{1+\sqrt5}{2},\qquad \gamma=\frac1{81}.
++\]
++
++## Rail semantics
++
++The semantic definition is:
++
++\[
++\boxed{\delta_\star=\text{lowest branch of the selected attracting logistic-map cycle}.}
++\]
++
++The classical rail is
++
++\[
++\boxed{\delta_{\rm cl}=\frac3{20}=0.15.}
++\]
++
++The stability bandwidth is
++
++\[
++\boxed{\Delta=\delta_{\rm cl}-\delta_\star.}
++\]
++
++## Two numerical realizations currently in the record
++
++### Algebraic/geometric realization
++
++\[
++\delta_\star^{\rm geom}
++=\left(1-\frac1{81}\right)\frac{\pi}{13\phi}
++=0.14751081015957962\ldots
++\]
++
++which gives
++
++\[
++\Delta_{\rm geom}
++=0.002489189840420375\ldots
++\]
++
++### Logistic-cycle realization at the archived target parameter
++
++At
++
++\[
++r_{\rm target}=3.8417002878419497,
++\]
++
++the two lowest branches recorded in the verification report are
++
++\[
++\delta_\star^{\rm cycle}=0.1474219361622878,
++\]
++
++\[
++\delta_{\rm cl}^{\rm cycle}=0.1500067276982269,
++\]
++
++with split
++
++\[
++\Delta_{\rm cycle}=0.0025847915359391016.
++\]
++
++## Unresolved identity condition
++
++The archived geometric and logistic values differ by
++
++\[
++\delta_\star^{\rm geom}-\delta_\star^{\rm cycle}
++=8.887399729182177\times10^{-5}.
++\]
++
++Therefore the statement that the geometric closed form is *exactly* the archived logistic branch is not presently true for the numbers retained here. The framework must either:
++
++- derive a different logistic parameter at which the lower branch equals the geometric value;
++- revise the algebraic expression;
++- or treat the agreement as approximate rather than exact.
++
++This discrepancy is frozen as an open issue and must not be hidden by rounding both values to `0.1475`.
+diff --git a/research/week_2026-07-13_to_2026-07-20/02_logistic_rails.md b/research/week_2026-07-13_to_2026-07-20/02_logistic_rails.md
+new file mode 100644
+index 0000000..78f4c82
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/02_logistic_rails.md
+@@ -0,0 +1,54 @@
++# Logistic rails
++
++## Verified cycle at the archived parameter
++
++For
++
++\[
++f_r(x)=rx(1-x),\qquad r=3.8417002878419497,
++\]
++
++the archived computation gives a stable six-cycle:
++
++| Ordered branch | Value |
++|---:|---:|
++| 1 | 0.1474219361622878 |
++| 2 | 0.1500067276982269 |
++| 3 | 0.4828583491613422 |
++| 4 | 0.4898348785861162 |
++| 5 | 0.9592962413714381 |
++| 6 | 0.9600281102477677 |
++
++The uploaded report quoted a Lyapunov exponent near `-0.011275`. Direct evaluation of the six-cycle multiplier gives
++
++\[
++\lambda_6=\frac16\sum_{j=1}^6\ln|r(1-2x_j)|
++=-0.011252611976695\ldots,
++\]
++
++so the orbit is attracting rather than chaotic. The small numerical difference does not change the stability classification.
++
++## Interpretation retained this week
++
++- Branch 1 is the lower vacuum rail, `delta_star`.
++- Branch 2 is the neighbouring classical rail.
++- The lower pair is the period-doubled split of the lowest period-three branch.
++- The difference between the lower pair is a dynamical stability bandwidth.
++- The upper four branches are candidate exhaust/thermalization rails, not yet identified with unique physical sectors.
++
++## What is and is not selected
++
++The logistic map supplies a dynamical realization of a rail pair once `r` is fixed. It does **not** yet supply a target-free derivation of
++
++\[
++r=3.8417002878419497.
++\]
++
++The archived verification explicitly states that no low-degree, small-coefficient polynomial relation was found for this parameter. In that report, `r` was selected by requiring the lowest branch to match a prior `delta_star` value.
++
++Consequently:
++
++- existence and stability of the six-cycle: **VERIFIED**;
++- interpretation of the lowest pair as rails: **CONDITIONAL**;
++- target-free selection of `r_target`: **OPEN**;
++- exact equality with the geometric closed form: **OPEN / numerically inconsistent in the archived values**.
+diff --git a/research/week_2026-07-13_to_2026-07-20/03_urt_operator_audits.md b/research/week_2026-07-13_to_2026-07-20/03_urt_operator_audits.md
+new file mode 100644
+index 0000000..2aeccb9
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/03_urt_operator_audits.md
+@@ -0,0 +1,111 @@
++# URT and URTF operator audits
++
++## 1. Target-free estimator audit
++
++The archived raw estimator was
++
++\[
++\delta=(D-1)(\tau-2),
++\]
++
++with `D` and `tau` inferred from autocorrelation and block-variance statistics.
++
++A sweep over logistic, tent, and Henon maps did not concentrate near either rail. The reported summaries were:
++
++| System | Mean | Standard deviation | Median |
++|---|---:|---:|---:|
++| Henon | 0.992852 | 0.048708 | 1.0 |
++| Logistic | 0.889916 | 0.212395 | 1.0 |
++| Tent | 1.0 | 0.0 | 1.0 |
++
++The later refinement loop contains the explicit term `(delta - 0.15)`, and therefore cannot be used as independent evidence for the classical rail.
++
++**Status:** the universal target-free rail claim is not supported by this archived estimator.
++
++## 2. Original contraction-map thresholds
++
++For the archived map using
++
++\[
++\alpha=1.155,\qquad \theta_H=2.4,
++\]
++
++the sufficient global contraction threshold is
++
++\[
++\beta<\frac1{\alpha(1+\theta_H)}
++=0.254647313471\ldots
++\]
++
++and the local zero-fixed-point threshold is
++
++\[
++\beta<\frac1{\alpha|1-\theta_H|}
++=0.618429189858\ldots
++\]
++
++Both `0.1475` and `0.1500` are safely inside the contraction region, but the contraction inequality does not select either value.
++
++## 3. Exact tanh-operator audit
++
++For
++
++\[
++T_\delta(x)=\left[x-\delta\tanh(x/\delta)\right]
++\left[1+\frac\pi\phi\delta^2\right],
++\]
++
++define
++
++\[
++A(\delta)=1+\frac\pi\phi\delta^2.
++\]
++
++The fixed points are
++
++\[
++x=0
++\]
++
++and
++
++\[
++x=\pm x_c(\delta),
++\]
++
++where `y=x_c/delta` solves
++
++\[
++\tanh y=\frac{A-1}{A}y.
++\]
++
++The derivative is
++
++\[
++T_\delta'(x)=A(\delta)\tanh^2(x/\delta).
++\]
++
++Therefore:
++
++- `x=0` is superstable for every positive `delta`;
++- `+/-x_c` are unstable separatrices;
++- initial amplitudes inside the separatrix collapse to zero;
++- amplitudes outside run away.
++
++At the geometric lower rail,
++
++\[
++x_c=3.639025867553060,
++\]
++
++and at `delta_classic=0.15`,
++
++\[
++x_c=3.583574765336563.
++\]
++
++This operator has a collapse/runaway boundary in **state amplitude**, not a bifurcation selecting the two `delta` rails.
++
++## Required correction to the framework
++
++A distinct stage-cascade recurrence, normalization condition, or boundary-selection theorem is still required. Neither the target-free estimator nor the tanh map may be cited as a derivation of the rail values.
+diff --git a/research/week_2026-07-13_to_2026-07-20/04_entropy_root_coupling.md b/research/week_2026-07-13_to_2026-07-20/04_entropy_root_coupling.md
+new file mode 100644
+index 0000000..d2a5235
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/04_entropy_root_coupling.md
+@@ -0,0 +1,86 @@
++# Entropy scale and scalar root coupling
++
++This file records the frozen carry-in equations used during the week.
++
++## Minimal scalar residue
++
++With
++
++\[
++W_{\rm scalar}=\frac95,
++\qquad
++S_{\rm ent}=\frac{1+\gamma}{D}=\frac{82}{243},
++\qquad
++S_{\rm exh}=\frac{N-D-1}{qN}=\frac9{65},
++\]
++
++the scalar inverse-coupling polynomial is
++
++\[
++\boxed{
++\alpha_{\rm root}^{-1}
++=137+\frac{17572}{1215}\Delta-\frac9{65}\Delta^2.
++}
++\]
++
++Using the geometric bandwidth,
++
++\[
++\boxed{
++\alpha_{\rm root}^{-1}=137.035999178195\ldots
++}
++\]
++
++This arithmetic identity is verified. Its identification with the physical electromagnetic coupling remains a physical theorem to be justified by the action and representation, not by numerical agreement alone.
++
++## Metric entropy projection
++
++The proposed projection from total entropy depth `eta` to metric entropy `sigma` is
++
++\[
++\boxed{d\sigma=\frac{N-D}{N}d\eta=\frac{10}{13}d\eta.}
++\]
++
++Hence
++
++\[
++\sigma=\frac{10}{13}\eta,
++\qquad
++\frac{\mu}{\mu_C}=e^{-\sigma},
++\qquad
++\beta_{\rm scale}=\frac{13}{10}.
++\]
++
++The corresponding entropy-form running equation is
++
++\[
++\frac{d\alpha_i^{-1}}{d\eta}
++=\frac{10}{13}\frac{b_i}{2\pi}.
++\]
++
++## Recorded entropy landmarks
++
++Using the geometric gap:
++
++\[
++\eta_W=\delta_\star,
++\qquad
++\eta_\Delta=-\ln\Delta,
++\qquad
++\eta_{\rm conf}=\frac{13}{10}\frac{169\pi}{70},
++\qquad
++\eta_{\rm IR}=-\phi^2\ln\Delta.
++\]
++
++The proposed hierarchy is
++
++\[
++\eta_W<\eta_\Delta<\eta_{\rm conf}<\eta_{\rm IR}.
++\]
++
++## Status
++
++- scalar polynomial arithmetic: **VERIFIED**;
++- `10/13` entropy projection as an internally stated rule: **FROZEN / CONDITIONAL**;
++- identification with physical RG scale: **OPEN**;
++- electromagnetic identification of the scalar singlet: **OPEN PHYSICAL STEP**.
+diff --git a/research/week_2026-07-13_to_2026-07-20/05_gap_field_and_hidden_sector.md b/research/week_2026-07-13_to_2026-07-20/05_gap_field_and_hidden_sector.md
+new file mode 100644
+index 0000000..f07285c
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/05_gap_field_and_hidden_sector.md
+@@ -0,0 +1,43 @@
++# Gap field, A5 cone, and hidden sector
++
++## Gap as bandwidth
++
++The week retained the interpretation
++
++\[
++\Delta=\delta_{\rm cl}-\delta_\star
++\]
++
++as more than a numerical residual. It is the width of the lower dynamical rail pair and therefore a candidate bandwidth in which an effective field can live.
++
++The roles currently assigned to the gap include:
++
++- stability bandwidth between lower rails;
++- small universal correction scale;
++- source for light-sector mass splittings;
++- possible field-support interval;
++- bridge between dynamical and geometric descriptions.
++
++These roles must ultimately be derived from a single operator. Reusing the same small number in several formulas is not itself proof that the roles are identical.
++
++## Visible and hidden representation sectors
++
++The retained A5 decomposition includes a hidden eight-dimensional sector
++
++\[
++\ker(B^T)\cong \mathbf4\oplus\mathbf4.
++\]
++
++The visible centred-icosahedral sectors contain scalar, triplet, conjugate triplet, and five-dimensional components. The working proposal is that the hidden `4+4` sector supports a shadow cone complementary to the visible cone.
++
++## Shadow-cone proposal
++
++The shadow cone and its connection to the dark sector are currently a hypothesis with the following required structure:
++
++1. a projector onto the hidden `4+4` subspace;
++2. a quadratic form defining its cone;
++3. a coupling operator between visible and hidden sectors;
++4. positivity/unitarity conditions;
++5. a derivation of any dark-sector observables from the hidden propagator.
++
++No unique shadow-cone metric or Lagrangian was derived in the accessible weekly record. The idea is preserved as **OPEN**, not deleted.
+diff --git a/research/week_2026-07-13_to_2026-07-20/06_higgs_trace_and_normalization.md b/research/week_2026-07-13_to_2026-07-20/06_higgs_trace_and_normalization.md
+new file mode 100644
+index 0000000..e50411d
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/06_higgs_trace_and_normalization.md
+@@ -0,0 +1,152 @@
++# Finite Dirac and Higgs trace audit
++
++## A/B charge-word construction
++
++Let
++
++\[
++a=\frac{\phi}{\sqrt3},\qquad b=\frac1{\sqrt3\phi},
++\]
++
++\[
++A=\begin{pmatrix}a&0&0\\0&b&0\\0&0&0\end{pmatrix},
++\qquad
++B=\begin{pmatrix}0&0&-b\\0&0&0\\0&-a&0\end{pmatrix}.
++\]
++
++The exact golden-ratio identities give
++
++\[
++a^2+b^2=1,
++\qquad
++ab=\frac13,
++\qquad
++A\perp B
++\]
++
++in the Frobenius inner product.
++
++For
++
++\[
++T=pA+qB,
++\qquad S=p^2+q^2,
++\]
++
++one obtains
++
++\[
++\boxed{\operatorname{tr}(TT^\dagger)=S}
++\]
++
++and
++
++\[
++\boxed{
++\operatorname{tr}[(TT^\dagger)^2]
++=\frac{7S^2-10p^2q^2}{9}.
++}
++\]
++
++These identities are exact.
++
++## Aggregated particle-sector trace
++
++Using the four archived charge words and colour multiplicities gives
++
++\[
++Y_2=33.8869774978071\ldots,
++\]
++
++\[
++G_2=147.395102550220\ldots,
++\]
++
++and the normalized shape invariant
++
++\[
++\boxed{
++\mathcal R_H=\frac{G_2}{Y_2^2}
++=0.128356357761657\ldots
++}
++\]
++
++For the particle-only off-diagonal finite matrix,
++
++\[
++D_F=\begin{pmatrix}0&M\\M^\dagger&0\end{pmatrix},
++\]
++
++this is equivalent to
++
++\[
++2\frac{\operatorname{Tr}D_F^4}{(\operatorname{Tr}D_F^2)^2}
++=\mathcal R_H.
++\]
++
++## Comparison with the earlier slot
++
++The earlier slot was
++
++\[
++\lambda_{\rm slot}=\frac18+\frac1{243}
++=0.129115226337449\ldots
++\]
++
++The relative discrepancy is
++
++\[
++\boxed{0.587745\%}.
++\]
++
++This is a near match, not exact equality.
++
++## Structural defect of the simplified matrices
++
++Each matrix `T=pA+qB` has
++
++\[
++\det T=0,
++\]
++
++so it is generically rank two. If interpreted literally as a three-generation Yukawa matrix, it leaves one zero singular value in each fermion sector. It is therefore a skeleton or reduced charge operator, not yet a complete physical Yukawa matrix.
++
++## Physical normalization requirement
++
++The physical quartic must be derived from one declared bosonic action,
++
++\[
++\mathcal L
++=K_W W_{\mu\nu}W^{\mu\nu}
+++K_H(D_\mu H)^\dagger(D^\mu H)
++-V_H(H^\dagger H)^2.
++\]
++
++After canonical normalization,
++
++\[
++g_2^{-2}=4K_W,
++\qquad
++H_c=\sqrt{K_H}H,
++\qquad
++\boxed{\lambda_H=\frac{V_H}{K_H^2}}.
++\]
++
++The same trace domain, generator convention, scalar normalization, and boundary scale must determine all three coefficients. Therefore `g2=1` or a prefactor such as `2` or `4` cannot be inserted without deriving it from that action.
++
++## Provisional full-operator formula retained separately
++
++A later provisional record introduced
++
++\[
++a_{\rm full}(\Delta)=\frac{16}{75}(100+183\Delta^2)
++\]
++
++and a quartic polynomial `b_full(Delta)` giving
++
++\[
++\frac{b_{\rm full}}{a_{\rm full}^2}
++=0.07985136067642659\ldots
++\]
++
++These formulae are preserved in `newtons_cathedral/higgs_normalization.py`, but their full derivation was not present in the accessible source record. Their status is **PROVISIONAL UNTIL SOURCE DERIVATION IS RECOVERED**.
+diff --git a/research/week_2026-07-13_to_2026-07-20/07_status_ledger.md b/research/week_2026-07-13_to_2026-07-20/07_status_ledger.md
+new file mode 100644
+index 0000000..56fb835
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/07_status_ledger.md
+@@ -0,0 +1,26 @@
++# Consolidated status ledger
++
++| Item | Status | Reason |
++|---|---|---|
++| `delta_star` means lowest logistic-cycle branch | FROZEN | Explicit user clarification |
++| `delta_classic = 3/20` | FROZEN | Exact classical rail definition |
++| `Delta` is the lower-rail stability bandwidth | FROZEN INTERPRETATION | Central weekly clarification |
++| Six-cycle at `r=3.8417002878419497` | VERIFIED NUMERICALLY | Reproducible attracting orbit |
++| Negative Lyapunov exponent at archived `r` | VERIFIED NUMERICALLY | Stable periodic contraction |
++| Exact equality of geometric and archived logistic `delta_star` | OPEN / CURRENTLY FALSE NUMERICALLY | Difference `8.8874e-5` |
++| Logistic-map algebra selects `r_target` | OPEN | Archived report says it does not |
++| Raw URT estimator selects rails | SUPERSEDED | Target-free sweep does not cluster there |
++| Refinement toward `0.15` is independent evidence | REJECTED | Target appears explicitly in update |
++| Tanh URTF map selects rail values | REJECTED | Rails are not parameter bifurcations |
++| Tanh-map amplitude separatrix | VERIFIED | Exact fixed-point/derivative audit |
++| Scalar residue polynomial | VERIFIED ARITHMETIC | Exact coefficients and value |
++| Scalar residue equals physical EM coupling | CONDITIONAL | Needs action/representation proof |
++| Metric entropy projection `10/13` | FROZEN ANSATZ | Physical derivation still required |
++| Gap is a physical field bandwidth | OPEN PHYSICAL INTERPRETATION | Field operator not yet uniquely defined |
++| Hidden sector `4+4` | RETAINED REPRESENTATION CLAIM | Needs source-level reconstruction |
++| Shadow cone/dark connection | OPEN | No unique metric/action derived |+| A/B trace identity | VERIFIED EXACTLY | Direct matrix algebra |
++| `G2/Y2^2 = 0.128356...` | VERIFIED FOR STATED MATRICES | Reproducible arithmetic |
++| Exact equality to old Higgs slot | REJECTED | Difference `0.587745%` |
++| Physical Higgs quartic derived | OPEN | Canonical action normalization absent |
++| Provisional full-operator `a,b` polynomials | PROVISIONAL | Derivation source not recovered |
+diff --git a/research/week_2026-07-13_to_2026-07-20/08_next_derivation.md b/research/week_2026-07-13_to_2026-07-20/08_next_derivation.md
+new file mode 100644
+index 0000000..1e6c7b6
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/08_next_derivation.md
+@@ -0,0 +1,68 @@
++# Next derivation
++
++The shortest non-circular route is:
++
++## Step 1 — derive the rail-selection equation
++
++Construct a scalar equation
++
++\[
++F(r;G_{13},\gamma,\phi)=0
++\]
++
++from the fixed geometry and dynamics, without inserting either rail value. It must have a unique admissible root inside the stable period-six interval. The logistic cycle is then computed from that root, and `delta_star` is defined as its lowest branch.
++
++This would remove the present circularity in which `r_target` is chosen to match a prior `delta_star`.
++
++## Step 2 — reconcile the two lower-rail values
++
++The theory must explain or remove
++
++\[
++8.887399729182177\times10^{-5}
++\]
++
++between the geometric formula and archived logistic branch. A successful closure must state whether the difference is:
++
++- a finite-discretization correction;
++- a flow-to-map renormalization;
++- an incorrect archived target parameter;
++- or evidence that the geometric formula is only approximate.
++
++## Step 3 — build the complete finite operator
++
++The operator must lift the rank-two null modes without fitted coefficients. Candidate lifts may depend only on already forced objects such as the gap, hidden-sector projector, chirality operator, or graph Laplacian.
++
++## Step 4 — derive the bosonic action in one convention
++
++Compute from the same finite Hilbert space:
++
++\[
++K_W,\qquad K_H,\qquad V_H.
++\]
++
++Then set
++
++\[
++g_2^{-2}=4K_W,
++\qquad
++\lambda_H=V_H/K_H^2.
++\]
++
++No external prefactor is allowed.
++
++## Step 5 — identify the boundary scale
++
++Use the entropy-scale map only after proving which entropy depth corresponds to the spectral boundary. Then run all couplings to a common physical scale before comparing with measured values.
++
++## Completion criterion
++
++The Higgs/rail sector is closed only when a single executable program starts from the fixed geometry and returns:
++
++1. `r_target`;
++2. the six-cycle and lower-rail split;
++3. the complete finite Dirac spectrum;
++4. gauge, scalar kinetic, and scalar quartic coefficients;
++5. the boundary scale and RG-evolved low-energy outputs;
++
++without target values, branch choices, fitted coefficients, or post-hoc normalization.
+diff --git a/research/week_2026-07-13_to_2026-07-20/README.md b/research/week_2026-07-13_to_2026-07-20/README.md
+new file mode 100644
+index 0000000..f3f8598
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/README.md
+@@ -0,0 +1,39 @@
++# Newton's Cathedral weekly research archive
++
++**Window:** 2026-07-13 through 2026-07-20  
++**Author:** Cornelius Lytollis  
++**Repository target:** `con123-gif/URT-Enhanced-v2.0`, default branch `newtons-cathedral`
++
++This directory preserves the work developed during the stated week without replacing or deleting any earlier Cathedral or URT material. It is intentionally additive.
++
++## Archive rules
++
++1. `delta_star` means the **lowest branch/value of the logistic-map attracting cycle**. This semantic definition takes precedence over older descriptions of it as merely a geometric candidate.
++2. `delta_classic = 3/20` is the classical rail.
++3. `Delta = delta_classic - delta_star` is the stability bandwidth/gap.
++4. Where the logistic branch and algebraic closed form differ numerically, both are retained and the difference is recorded rather than silently erased.
++5. Every result is labelled as `VERIFIED`, `CONDITIONAL`, `PROVISIONAL`, `OPEN`, or `SUPERSEDED`.
++6. No target-led fitting, selected branches, post-hoc coefficients, or hidden normalization choices may be promoted to a first-principles result.
++
++## Contents
++
++- `00_chronology.md` — work sequence and decisions.
++- `01_frozen_definitions.md` — constants and semantic definitions.
++- `02_logistic_rails.md` — stable six-cycle result and rail discrepancy.
++- `03_urt_operator_audits.md` — target-free and separatrix audits.
++- `04_entropy_root_coupling.md` — scalar residue and entropy-scale bridge.
++- `05_gap_field_and_hidden_sector.md` — bandwidth interpretation, A5 cone and shadow-sector status.
++- `06_higgs_trace_and_normalization.md` — exact trace calculation and normalization audit.
++- `07_status_ledger.md` — consolidated claim ledger.
++- `08_next_derivation.md` — the shortest route to a physically closed action.
++- `memory_snapshot.json` — machine-readable snapshot.
++- `code/` — reproducible calculations.
++- `sources/` — reconstructed source notes and preserved audits.
++
++## Current headline
++
++The week produced three robust outputs:
++
++1. The logistic-map semantics of the two rails were made explicit: the lower rail is the lowest attracting-cycle branch, the upper rail is the neighbouring classical branch, and their split is the stability bandwidth.
++2. The archived URT operators were audited honestly: neither the raw estimator nor the tanh operator independently derives the two rail values.
++3. The finite-Dirac trace gives an exact normalized matrix invariant, but the physical Higgs quartic still requires a single, explicitly normalized bosonic action.
+diff --git a/research/week_2026-07-13_to_2026-07-20/VALIDATION.md b/research/week_2026-07-13_to_2026-07-20/VALIDATION.md
+new file mode 100644
+index 0000000..1a55b41
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/VALIDATION.md
+@@ -0,0 +1,10 @@
++# Validation
++
++Validation run on 2026-07-20.
++
++- `python -m pytest -q`: **10 passed**.
++- `weekly_constants_audit.py`: reproduced both rail realizations, the `8.887399729e-05` mismatch, the geometric gap, and `alpha_root_inverse`.
++- `logistic_cycle_audit.py`: reproduced all six archived branches; direct cycle Lyapunov `-0.011252611976695...`.
++- `urtf_operator_exact_audit.py`: reproduced both amplitude separatrices and their instability multipliers.
++- `higgs_charge_word_audit.py`: reproduced `Y2`, `G2`, `G2/Y2^2`, zero determinants, and the `0.587745%` slot discrepancy.
++- `urt_target_free_audit.py`: reproduced the target-free sweep and explicit attraction of the archived refinement toward `0.15`.
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/README.md b/research/week_2026-07-13_to_2026-07-20/code/README.md
+new file mode 100644
+index 0000000..9223bb4
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/README.md
+@@ -0,0 +1,8 @@
++# Code notes
++
++- `weekly_constants_audit.py` reproduces both rail realizations and the scalar root coupling.
++- `logistic_cycle_audit.py` reproduces the archived six-cycle. It is intentionally computationally heavy because the transient was retained from the source report.
++- `urtf_operator_exact_audit.py` verifies the amplitude separatrix of the archived tanh operator.
++- `higgs_charge_word_audit.py` reproduces the exact A/B trace calculation and its rank-two determinant defect.
++
++None of these programs selects `r_target` from first principles. That remains the main open derivation.
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/higgs_charge_word_audit.py b/research/week_2026-07-13_to_2026-07-20/code/higgs_charge_word_audit.py
+new file mode 100644
+index 0000000..29be029
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/higgs_charge_word_audit.py
+@@ -0,0 +1,86 @@
++#!/usr/bin/env python3
++"""Exact A/B charge-word trace audit from the weekly Higgs calculation."""
++from __future__ import annotations
++
++from dataclasses import dataclass
++from math import sqrt
++
++import numpy as np
++
++PHI = (1.0 + sqrt(5.0)) / 2.0
++A_COEFF = PHI / sqrt(3.0)
++B_COEFF = 1.0 / (sqrt(3.0) * PHI)
++
++A = np.array(
++    [[A_COEFF, 0.0, 0.0], [0.0, B_COEFF, 0.0], [0.0, 0.0, 0.0]],
++    dtype=float,
++)
++B = np.array(
++    [[0.0, 0.0, -B_COEFF], [0.0, 0.0, 0.0], [0.0, -A_COEFF, 0.0]],
++    dtype=float,
++)
++
++
++@dataclass(frozen=True)
++class ChargeWord:
++    k: int
++    m: int
++    omega: int
++    colour: int
++
++    @property
++    def lambda_squared(self) -> float:
++        return (18.0 + 7.0 * self.k) / (8.0 * self.k**3)
++
++    @property
++    def p_squared(self) -> float:
++        return 3.0 * self.m**2 * self.lambda_squared
++
++    @property
++    def q_squared(self) -> float:
++        return (self.omega**2 / 25.0) * self.lambda_squared
++
++    def matrix(self) -> np.ndarray:
++        # Signs do not affect the scalar traces, but retain the charge-word signs.
++        p = (1.0 if self.m >= 0 else -1.0) * sqrt(self.p_squared)
++        q = (1.0 if self.omega >= 0 else -1.0) * sqrt(self.q_squared)
++        return p * A + q * B
++
++
++WORDS = {
++    "u": ChargeWord(13, -12, 70, 3),
++    "d": ChargeWord(7, -6, -20, 3),
++    "e": ChargeWord(27, 54, 0, 1),
++    "nu": ChargeWord(9, 0, -54, 1),
++}
++
++
++def traces(matrix: np.ndarray) -> tuple[float, float]:
++    product = matrix @ matrix.conjugate().T
++    return float(np.trace(product).real), float(np.trace(product @ product).real)
++
++
++def aggregate() -> tuple[float, float, float]:
++    y2 = 0.0
++    g2 = 0.0
++    for word in WORDS.values():
++        quadratic, quartic = traces(word.matrix())
++        y2 += word.colour * quadratic
++        g2 += word.colour * quartic
++    return y2, g2, g2 / (y2 * y2)
++
++
++if __name__ == "__main__":
++    print("A norm", np.trace(A @ A.T))
++    print("B norm", np.trace(B @ B.T))
++    print("A.B", np.trace(A @ B.T))
++    for name, word in WORDS.items():
++        quadratic, quartic = traces(word.matrix())
++        print(name, "S=", quadratic, "Q=", quartic, "det=", np.linalg.det(word.matrix()))
++    y2, g2, ratio = aggregate()
++    print("Y2", y2)
++    print("G2", g2)
++    print("G2/Y2^2", ratio)
++    slot = 1.0 / 8.0 + 1.0 / 243.0
++    print("slot", slot)
++    print("relative discrepancy", (slot - ratio) / slot)
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/logistic_cycle_audit.py b/research/week_2026-07-13_to_2026-07-20/code/logistic_cycle_audit.py
+new file mode 100644
+index 0000000..6266db3
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/logistic_cycle_audit.py
+@@ -0,0 +1,63 @@
++#!/usr/bin/env python3
++"""Reproduce the archived attracting six-cycle and compare both rail definitions."""
++from __future__ import annotations
++
++from math import log, pi, sqrt
++
++R_TARGET = 3.8417002878419497
++ARCHIVED_DELTA_STAR = 0.14742193616230046
++
++
++def logistic(x: float, r: float) -> float:
++    return r * x * (1.0 - x)
++
++
++def attractor(
++    r: float,
++    *,
++    transient: int = 200_000,
++    samples: int = 200,
++    tolerance: float = 1.0e-12,
++) -> list[float]:
++    x = 0.5
++    for _ in range(transient):
++        x = logistic(x, r)
++    points: list[float] = []
++    for _ in range(samples):
++        x = logistic(x, r)
++        if not any(abs(x - prior) < tolerance for prior in points):
++            points.append(x)
++    return sorted(points)
++
++
++def lyapunov(r: float, *, transient: int = 10_000, samples: int = 100_000) -> float:
++    x = 0.3
++    for _ in range(transient):
++        x = logistic(x, r)
++    total = 0.0
++    for _ in range(samples):
++        x = logistic(x, r)
++        total += log(abs(r * (1.0 - 2.0 * x)))
++    return total / samples
++
++
++def cycle_lyapunov(cycle: list[float], r: float) -> float:
++    return sum(log(abs(r * (1.0 - 2.0 * x))) for x in cycle) / len(cycle)
++
++
++def geometric_delta_star() -> float:
++    phi = (1.0 + sqrt(5.0)) / 2.0
++    return (80.0 / 81.0) * pi / (13.0 * phi)
++
++
++if __name__ == "__main__":
++    cycle = attractor(R_TARGET)
++    print("cycle")
++    for index, point in enumerate(cycle, 1):
++        print(index, f"{point:.16f}")
++    print("archived lower-branch error", abs(cycle[0] - ARCHIVED_DELTA_STAR))
++    print("finite-sample Lyapunov", lyapunov(R_TARGET))
++    print("six-cycle Lyapunov", cycle_lyapunov(cycle, R_TARGET))
++    print("cycle lower-pair gap", cycle[1] - cycle[0])
++    print("geometric delta_star", geometric_delta_star())
++    print("geometric minus cycle", geometric_delta_star() - cycle[0])
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit.png b/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..950d1b91a9c5af99b80aa7ed5d57f549a58b0c51
+GIT binary patch
+literal 65613
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit.py b/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit.py
+new file mode 100644
+index 0000000..c5355ea
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit.py
+@@ -0,0 +1,146 @@
++#!/usr/bin/env python3
++"""Target-free audit of the archived URT rail claim."""
++from __future__ import annotations
++
++import math
++from pathlib import Path
++
++import matplotlib.pyplot as plt
++import numpy as np
++import pandas as pd
++
++ALPHA = 1.155
++THETA_H = 2.4
++
++
++def raw_urt_estimator(x: np.ndarray) -> tuple[float, float, float]:
++    x = np.asarray(x, dtype=float).ravel()
++    if x.size < 40 or not np.all(np.isfinite(x)):
++        return math.nan, math.nan, math.nan
++    sigma = float(np.std(x))
++    if sigma < 1.0e-12:
++        return math.nan, math.nan, math.nan
++    x = (x - np.mean(x)) / (sigma + 1.0e-10)
++    acf = np.correlate(x - np.mean(x), x - np.mean(x), mode="full")
++    acf = acf[acf.size // 2 :]
++    if abs(acf[0]) < 1.0e-15:
++        return math.nan, math.nan, math.nan
++    acf /= acf[0]
++    hits = np.where(acf < math.exp(-1.0))[0]
++    decay_lag = int(hits[0]) if hits.size else len(acf) // 10
++    dimension = 1.0 + 2.0 / (1.0 + math.exp(-decay_lag / 10.0))
++    dimension = max(1.0, min(dimension, 5.0))
++    variances = [np.var(x[index::20]) for index in range(20)]
++    tau = 2.0 + 0.5 * np.mean(variances) / (np.std(variances) + 1.0e-10)
++    tau = max(1.5, min(tau, 3.5))
++    delta = (dimension - 1.0) * (tau - 2.0)
++    delta = max(0.01, min(delta, 1.0))
++    return float(delta), float(dimension), float(tau)
++
++
++def archived_refinement(delta: float) -> float:
++    for index in range(30):
++        kappa = delta**2 / (1.0 + delta**2)
++        delta -= 0.5 * math.exp(-index / 8.0) * (delta - 0.15) * (1.0 + kappa)
++        delta = max(0.001, min(delta, 0.5))
++    return float(delta)
++
++
++def logistic_map(r: float, n: int = 3000, x0: float = 0.123456) -> np.ndarray:
++    x = np.empty(n)
++    x[0] = x0
++    for index in range(1, n):
++        x[index] = r * x[index - 1] * (1.0 - x[index - 1])
++    return x
++
++
++def tent_map(m: float, n: int = 3000, x0: float = 0.123456) -> np.ndarray:
++    x = np.empty(n)
++    x[0] = x0
++    for index in range(1, n):
++        previous = x[index - 1]
++        x[index] = m * previous if previous < 0.5 else m * (1.0 - previous)
++    return x
++
++
++def henon_map(
++    a: float,
++    b: float = 0.3,
++    n: int = 3000,
++    x0: float = 0.1,
++    y0: float = 0.1,
++) -> np.ndarray | None:
++    x = np.empty(n)
++    y = np.empty(n)
++    x[0], y[0] = x0, y0
++    for index in range(1, n):
++        x[index] = 1.0 - a * x[index - 1] ** 2 + y[index - 1]
++        y[index] = b * x[index - 1]
++        if not np.isfinite(x[index]) or abs(x[index]) > 1.0e6:
++            return None
++    return x
++
++
++def run() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
++    rows: list[dict[str, float | str]] = []
++    for r in np.linspace(3.57, 4.0, 220):
++        delta, dimension, tau = raw_urt_estimator(logistic_map(float(r))[500:])
++        rows.append({"system": "logistic", "parameter": r, "delta_raw": delta, "D": dimension, "tau": tau})
++    for m in np.linspace(1.5, 1.999, 220):
++        delta, dimension, tau = raw_urt_estimator(tent_map(float(m))[500:])
++        rows.append({"system": "tent", "parameter": m, "delta_raw": delta, "D": dimension, "tau": tau})
++    for a in np.linspace(1.1, 1.42, 220):
++        x = henon_map(float(a))
++        if x is not None:
++            delta, dimension, tau = raw_urt_estimator(x[500:])
++            rows.append({"system": "henon", "parameter": a, "delta_raw": delta, "D": dimension, "tau": tau})
++    raw = pd.DataFrame(rows)
++    summary = raw.groupby("system")["delta_raw"].agg(
++        count="count", mean="mean", std="std", minimum="min", median="median", maximum="max"
++    ).reset_index()
++    audit = pd.DataFrame(
++        [
++            {
++                "quantity": "global sufficient contraction threshold beta",
++                "value": 1.0 / (ALPHA * (1.0 + THETA_H)),
++            },
++            {
++                "quantity": "local zero fixed-point stability threshold beta",
++                "value": 1.0 / (ALPHA * abs(1.0 - THETA_H)),
++            },
++            {
++                "quantity": "local multiplier magnitude at beta=0.1475",
++                "value": abs(0.1475 * ALPHA * (1.0 - THETA_H)),
++            },
++            {
++                "quantity": "local multiplier magnitude at beta=0.1500",
++                "value": abs(0.1500 * ALPHA * (1.0 - THETA_H)),
++            },
++        ]
++    )
++    return raw, summary, audit
++
++
++if __name__ == "__main__":
++    output = Path(__file__).resolve().parent
++    raw, summary, audit = run()
++    print("\nRAW ESTIMATOR SUMMARY")
++    print(summary.to_string(index=False))
++    print("\nORIGINAL URT MAP THRESHOLDS")
++    print(audit.to_string(index=False))
++    print("\nARCHIVED REFINEMENT TEST")
++    for initial in (0.001, 0.01, 0.05, 0.1475, 0.15, 0.3, 0.5, 1.0):
++        print(f"{initial:8.4f} -> {archived_refinement(initial):.12f}")
++    summary.to_csv(output / "urt_target_free_audit_summary.csv", index=False)
++    figure, axis = plt.subplots(figsize=(8, 5))
++    for system, group in raw.groupby("system"):
++        axis.scatter(group["parameter"], group["delta_raw"], s=9, alpha=0.55, label=system)
++    axis.axhline(0.1475, linestyle="--", linewidth=1.2, label="claimed lower rail")
++    axis.axhline(0.1500, linestyle=":", linewidth=1.2, label="claimed upper rail")
++    axis.set_xlabel("system parameter")
++    axis.set_ylabel("raw archived delta estimator")
++    axis.set_title("Target-free archived URT estimator")
++    axis.legend()
++    axis.grid(alpha=0.25)
++    figure.tight_layout()
++    figure.savefig(output / "urt_target_free_audit.png", dpi=180)
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit_summary.csv b/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit_summary.csv
+new file mode 100644
+index 0000000..a45e15c
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/urt_target_free_audit_summary.csv
+@@ -0,0 +1,4 @@
++system,count,mean,std,minimum,median,maximum
++henon,220,0.9928518628018724,0.04870847702789177,0.2979522278777159,1.0,1.0
++logistic,220,0.8899157880167232,0.2123950208695482,0.01,1.0,1.0
++tent,220,1.0,0.0,1.0,1.0,1.0
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/urtf_operator_exact_audit.py b/research/week_2026-07-13_to_2026-07-20/code/urtf_operator_exact_audit.py
+new file mode 100644
+index 0000000..2147d80
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/urtf_operator_exact_audit.py
+@@ -0,0 +1,54 @@
++#!/usr/bin/env python3
++"""Exact fixed-point and basin-boundary audit for the archived URTF operator."""
++from __future__ import annotations
++
++import math
++
++import numpy as np
++from scipy.optimize import brentq
++
++PHI = (1.0 + math.sqrt(5.0)) / 2.0
++KAPPA = math.pi / PHI
++
++
++def scale(delta: float) -> float:
++    return 1.0 + KAPPA * delta**2
++
++
++def operator(x: float, delta: float) -> float:
++    return (x - delta * math.tanh(x / delta)) * scale(delta)
++
++
++def separatrix(delta: float) -> float:
++    coefficient = (scale(delta) - 1.0) / scale(delta)
++
++    def equation(y: float) -> float:
++        return math.tanh(y) - coefficient * y
++
++    grid = np.geomspace(1.0e-5, max(4.0, 2.0 / coefficient), 2000)
++    previous_y = float(grid[0])
++    previous_value = equation(previous_y)
++    for current in grid[1:]:
++        current_y = float(current)
++        current_value = equation(current_y)
++        if previous_value > 0.0 and current_value < 0.0:
++            return delta * brentq(equation, previous_y, current_y)
++        previous_y = current_y
++        previous_value = current_value
++    raise RuntimeError("No positive nonzero fixed point")
++
++
++def derivative(x: float, delta: float) -> float:
++    return scale(delta) * math.tanh(x / delta) ** 2
++
++
++if __name__ == "__main__":
++    delta_star = (80.0 / 81.0) * math.pi / (13.0 * PHI)
++    delta_classic = 3.0 / 20.0
++    for name, delta in (("delta_star", delta_star), ("delta_classic", delta_classic)):
++        x_c = separatrix(delta)
++        print(name, delta)
++        print("  scale =", scale(delta))
++        print("  x_c =", x_c)
++        print("  derivative at zero =", derivative(0.0, delta))
++        print("  derivative at x_c =", derivative(x_c, delta))
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/weekly_constants_audit.json b/research/week_2026-07-13_to_2026-07-20/code/weekly_constants_audit.json
+new file mode 100644
+index 0000000..93f8841
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/weekly_constants_audit.json
+@@ -0,0 +1,19 @@
++{
++  "phi": 1.618033988749895,
++  "gamma": 0.012345679012345678,
++  "delta_star_geometric": 0.14751081015957962,
++  "delta_classic": 0.15,
++  "Delta_geometric": 0.002489189840420375,
++  "r_target": 3.8417002878419497,
++  "cycle": [
++    0.1474219361622878,
++    0.1500067276982269,
++    0.4828583491613422,
++    0.4898348785861162,
++    0.9592962413714381,
++    0.9600281102477677
++  ],
++  "Delta_cycle": 0.0025847915359391016,
++  "delta_star_difference": 8.887399729182177e-05,
++  "alpha_root_inverse": 137.035999178195
++}
+diff --git a/research/week_2026-07-13_to_2026-07-20/code/weekly_constants_audit.py b/research/week_2026-07-13_to_2026-07-20/code/weekly_constants_audit.py
+new file mode 100644
+index 0000000..0d1fb1a
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/code/weekly_constants_audit.py
+@@ -0,0 +1,52 @@
++#!/usr/bin/env python3
++"""Reproduce the frozen weekly constants and expose unresolved differences."""
++from __future__ import annotations
++
++import json
++from math import pi, sqrt
++from pathlib import Path
++
++D = 3
++N = 13
++F = 20
++PHI = (1.0 + sqrt(5.0)) / 2.0
++GAMMA = 1.0 / 81.0
++DELTA_STAR_GEOM = (1.0 - GAMMA) * pi / (N * PHI)
++DELTA_CLASSIC = D / F
++DELTA_GEOM = DELTA_CLASSIC - DELTA_STAR_GEOM
++
++R_TARGET = 3.8417002878419497
++CYCLE_ARCHIVED = (
++    0.1474219361622878,
++    0.1500067276982269,
++    0.4828583491613422,
++    0.4898348785861162,
++    0.9592962413714381,
++    0.9600281102477677,
++)
++
++
++def root_alpha_inverse(delta: float = DELTA_GEOM) -> float:
++    return 137.0 + (17572.0 / 1215.0) * delta - (9.0 / 65.0) * delta * delta
++
++
++def audit() -> dict[str, float | list[float]]:
++    return {
++        "phi": PHI,
++        "gamma": GAMMA,
++        "delta_star_geometric": DELTA_STAR_GEOM,
++        "delta_classic": DELTA_CLASSIC,
++        "Delta_geometric": DELTA_GEOM,
++        "r_target": R_TARGET,
++        "cycle": list(CYCLE_ARCHIVED),
++        "Delta_cycle": CYCLE_ARCHIVED[1] - CYCLE_ARCHIVED[0],
++        "delta_star_difference": DELTA_STAR_GEOM - CYCLE_ARCHIVED[0],
++        "alpha_root_inverse": root_alpha_inverse(),
++    }
++
++
++if __name__ == "__main__":
++    report = audit()
++    print(json.dumps(report, indent=2))
++    out = Path(__file__).with_name("weekly_constants_audit.json")
++    out.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+diff --git a/research/week_2026-07-13_to_2026-07-20/memory_snapshot.json b/research/week_2026-07-13_to_2026-07-20/memory_snapshot.json
+new file mode 100644
+index 0000000..dc75ae4
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/memory_snapshot.json
+@@ -0,0 +1,73 @@
++{
++  "window": {
++    "start": "2026-07-13",
++    "end": "2026-07-20"
++  },
++  "author": "Cornelius Lytollis",
++  "semantic_definitions": {
++    "delta_star": "lowest branch/value of the selected attracting logistic-map cycle",
++    "delta_classic": "3/20",
++    "Delta": "delta_classic - delta_star; lower-rail stability bandwidth"
++  },
++  "geometry": {
++    "D": 3,
++    "V": 12,
++    "E": 30,
++    "F": 20,
++    "q": 5,
++    "N": 13,
++    "G": 60,
++    "gamma": 0.012345679012345678,
++    "phi": 1.618033988749895
++  },
++  "rails": {
++    "geometric_delta_star": 0.14751081015957962,
++    "geometric_delta_classic": 0.15,
++    "geometric_gap": 0.002489189840420375,
++    "logistic_r_target": 3.8417002878419497,
++    "logistic_cycle": [
++      0.1474219361622878,
++      0.1500067276982269,
++      0.4828583491613422,
++      0.4898348785861162,
++      0.9592962413714381,
++      0.9600281102477677
++    ],
++    "logistic_lower_pair_gap": 0.0025847915359391016,
++    "geometric_minus_logistic_delta_star": 0.00008887399729182177,
++    "reported_lyapunov": -0.011275,
++    "audited_cycle_lyapunov": -0.011252611976695285
++  },
++  "root_coupling": {
++    "formula": "137 + (17572/1215) Delta - (9/65) Delta^2",
++    "alpha_inverse_at_geometric_gap": 137.035999178195
++  },
++  "entropy_projection": {
++    "d_sigma_over_d_eta": "10/13",
++    "beta_scale": "13/10",
++    "scale_map": "mu/mu_C = exp(-sigma)"
++  },
++  "higgs_charge_word_trace": {
++    "Y2": 33.8869774978071,
++    "G2": 147.39510255022,
++    "G2_over_Y2_squared": 0.12835635776165666,
++    "old_slot": 0.12911522633744857,
++    "relative_discrepancy": 0.00587745223641,
++    "status": "verified matrix invariant; physical quartic normalization open"
++  },
++  "provisional_full_operator": {
++    "a": 21.33357522775238,
++    "b": 36.34206561805763,
++    "b_over_a_squared": 0.07985136067642659,
++    "status": "preserved but source derivation not recovered"
++  },
++  "open_items": [
++    "target-free derivation of logistic r_target",
++    "reconciliation of geometric and logistic delta_star values",
++    "stage-cascade recurrence selecting both rails",
++    "complete rank-three finite Dirac/Yukawa operator",
++    "single-convention derivation of gauge, Higgs kinetic, and quartic terms",
++    "physical derivation of entropy projection and boundary scale",
++    "shadow-cone metric and visible-hidden coupling operator"
++  ]
++}
+diff --git a/research/week_2026-07-13_to_2026-07-20/source_manifest.md b/research/week_2026-07-13_to_2026-07-20/source_manifest.md
+new file mode 100644
+index 0000000..811da21
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/source_manifest.md
+@@ -0,0 +1,24 @@
++# Source manifest
++
++## Recovered uploads from 2026-07-14
++
++| Source | Archive handling | Notes |
++|---|---|---|
++| `URT_Logistic_Map_Verification.pdf` | Reconstructed note + executable audit | Supplies the six-cycle and archived `r_target` |
++| `pi_phi_e_flow.pdf` | Reconstructed note | Supplies the proposed continuous flow and Euler interpretation |
++| `urtf_operator_exact_audit.py` | Reproduced in `code/` | Exact amplitude-separatrix audit |
++| `urtf_operator_exact_audit.txt` | Copied into `sources/` | Numerical results and conclusion |
++| `urt_target_free_audit.py` | Reproduced in `code/` | Target-free estimator sweep |
++| `urt_target_free_audit_report.txt` | Copied into `sources/` | Summary results |
++| `urt_target_free_audit_summary.csv` | Values preserved in report | Original binary/file-library object not directly mounted |
++| `urtf_operator_separatrix.csv` | Conclusions preserved in operator note | Original file-library object not directly mounted |
++| `all_my_colab_work_combined.md` | Indexed but not duplicated | Contains 322 historical notebooks and is outside the one-week research delta |
++
++## 2026-07-20 generated source
++
++| Source | Archive handling |
++|---|---|
++| `ADD_ONLY.patch` | Superseded by the expanded weekly additive patch |
++| Higgs normalization module and tests | Included in the expanded workspace |
++
++The original PDFs and large combined notebook remain in the user's File Library. This archive preserves their weekly-relevant content and filenames, but it does not claim byte-for-byte duplication of files that were not mounted in the local runtime.
+diff --git a/research/week_2026-07-13_to_2026-07-20/sources/URT_Logistic_Map_Verification_reconstructed.md b/research/week_2026-07-13_to_2026-07-20/sources/URT_Logistic_Map_Verification_reconstructed.md
+new file mode 100644
+index 0000000..23b35cc
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/sources/URT_Logistic_Map_Verification_reconstructed.md
+@@ -0,0 +1,22 @@
++# Reconstructed source note: URT Logistic Map Verification
++
++Original uploaded title: `URT_Logistic_Map_Verification.pdf`  
++Original report date: 2026-04-22  
++Recovered into the weekly archive: 2026-07-14
++
++The report identifies an attracting six-cycle of the logistic map at
++
++`r = 3.8417002878419497`
++
++with ordered branches:
++
++1. `0.1474219361622878`
++2. `0.1500067276982269`
++3. `0.4828583491613422`
++4. `0.4898348785861162`
++5. `0.9592962413714381`
++6. `0.9600281102477677`
++
++It reports Lyapunov exponent `-0.011275`; the weekly direct cycle-multiplier audit gives `-0.011252611976695...`. Both are negative. The report interprets the lower pair as the split of the lowest period-three branch after period doubling.
++
++The report also records that `r_target` was not found to be a simple low-degree algebraic number and was selected by matching the lower branch to a prior URT value. This selection dependence is preserved as an open issue.
+diff --git a/research/week_2026-07-13_to_2026-07-20/sources/pi_phi_e_flow_reconstructed.md b/research/week_2026-07-13_to_2026-07-20/sources/pi_phi_e_flow_reconstructed.md
+new file mode 100644
+index 0000000..a2a3cae
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/sources/pi_phi_e_flow_reconstructed.md
+@@ -0,0 +1,23 @@
++# Reconstructed source note: pi-phi-e flow
++
++Original uploaded title: `pi_phi_e_flow.pdf`  
++Original report date: April 2026  
++Recovered into the weekly archive: 2026-07-14
++
++The report proposes a continuous field equation on a 13-site centred icosahedral graph:
++
++\[
++\partial_t\delta
++=-\frac1{4\pi}L\delta
++-(\phi-1)e^{-t/10}(\delta-\delta_\star)(1+\delta^2).
++\]
++
++It uses
++
++\[
++\delta_\star=(1-1/81)\frac{\pi}{13\phi}
++\]
++
++and describes the working URT update as an Euler discretization with approximate coefficients.
++
++Weekly audit note: the report's uniqueness statements and coefficient-forcing claims require proof beyond the supplied text. In addition, its graph spectrum differs from other centred-icosahedral spectra recorded elsewhere in the project and must be reconciled before it can serve as the definitive operator source.
+diff --git a/research/week_2026-07-13_to_2026-07-20/sources/urt_target_free_audit_report.txt b/research/week_2026-07-13_to_2026-07-20/sources/urt_target_free_audit_report.txt
+new file mode 100644
+index 0000000..e330781
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/sources/urt_target_free_audit_report.txt
+@@ -0,0 +1,28 @@
++TARGET-FREE URT AUDIT
++
++Raw estimator sweep:
++  system  count     mean      std  minimum  median  maximum
++   henon    220 0.992852 0.048708 0.297952     1.0      1.0
++logistic    220 0.889916 0.212395 0.010000     1.0      1.0
++    tent    220 1.000000 0.000000 1.000000     1.0      1.0
++
++Original URT map thresholds, using alpha=1.155 and theta_H=2.4:
++Global sufficient contraction threshold beta = 0.254647313471
++Local zero fixed-point threshold beta          = 0.618429189858
++|multiplier| at beta=0.1475                    = 0.238507500000
++|multiplier| at beta=0.1500                    = 0.242550000000
++
++Archived explicit 0.15 refinement:
++  0.0010 -> 0.148991494566
++  0.0100 -> 0.149053855814
++  0.0500 -> 0.149330419916
++  0.1475 -> 0.149983899925
++  0.1500 -> 0.150000000000
++  0.3000 -> 0.150873352629
++  0.5000 -> 0.151699620336
++  1.0000 -> 0.152449921228
++
++Conclusion:
++The raw archived estimator does not independently select the two rails. The
++later refinement explicitly contains the target 0.15 and is therefore circular
++as evidence for that rail.
+diff --git a/research/week_2026-07-13_to_2026-07-20/sources/urtf_operator_exact_audit.txt b/research/week_2026-07-13_to_2026-07-20/sources/urtf_operator_exact_audit.txt
+new file mode 100644
+index 0000000..2afdada
+--- /dev/null
++++ b/research/week_2026-07-13_to_2026-07-20/sources/urtf_operator_exact_audit.txt
+@@ -0,0 +1,36 @@
++EXACT AUDIT OF THE ARCHIVED URTF OPERATOR
++
++Operator:
++T_delta(x) = [x - delta*tanh(x/delta)] * [1 + (pi/phi)*delta^2]
++
++Let A(delta) = 1 + (pi/phi)*delta^2.
++
++Fixed points:
++1. x = 0 for every delta > 0.
++2. x = +/-x_c(delta), where y=x_c/delta solves
++       tanh(y) = [(A-1)/A] y.
++
++Derivative:
++T'_delta(x) = A(delta)*tanh^2(x/delta).
++
++Consequences:
++- T'_delta(0) = 0 for every positive delta, so x=0 is superstable.
++- At +/-x_c, |T'| > 1, so those points are unstable separatrices.
++- |x_0| < x_c eventually collapses to zero.
++- |x_0| > x_c runs away in magnitude.
++
++delta_star = 0.147510810159580
++A(delta_star) = 1.042248367180092
++x_c(delta_star) = 3.639025867553060
++T'(x_c; delta_star) = 1.042248367180092
++
++delta_classic = 0.150000000000000
++A(delta_classic) = 1.043686248371323
++x_c(delta_classic) = 3.583574765336563
++T'(x_c; delta_classic) = 1.043686248371323
++
++x_c(delta_star) - x_c(delta_classic) = 0.055451102216497
++
++Conclusion:
++This operator contains an exact collapse/runaway boundary in state amplitude x,
++not at a special value of delta. Neither rail is a bifurcation of this operator.
+diff --git a/tests/test_higgs_normalization.py b/tests/test_higgs_normalization.py
+new file mode 100644
+index 0000000..3ba20c3
+--- /dev/null
++++ b/tests/test_higgs_normalization.py
+@@ -0,0 +1,55 @@
++from fractions import Fraction
++from math import isclose
++
++import pytest
++
++from newtons_cathedral.higgs_normalization import (
++    SpectralActionConvention,
++    canonical_weak_angle_boundary,
++    cathedral_quartic_slot,
++    diagnostic_report,
++    gauge_trace_ratio,
++    higgs_normalization_audit,
++    higgs_shape_ratio,
++    quartic_boundary,
++    required_normalization_coefficient,
++    yukawa_trace_a,
++    yukawa_trace_b,
++)
++
++
++def test_finite_dirac_heat_traces_are_pinned():
++    assert isclose(yukawa_trace_a(), 21.33357522775238, rel_tol=0.0, abs_tol=1e-12)
++    assert isclose(yukawa_trace_b(), 36.34206561805763, rel_tol=0.0, abs_tol=1e-12)
++    assert isclose(higgs_shape_ratio(), 0.07985136067642659, rel_tol=0.0, abs_tol=1e-14)
++
++
++def test_bare_gauge_trace_boundary_is_three_eighths():
++    assert gauge_trace_ratio() == (Fraction(5, 3), Fraction(1), Fraction(1))
++    assert canonical_weak_angle_boundary() == Fraction(3, 8)
++
++
++def test_action_convention_keeps_prefactor_explicit():
++    convention = SpectralActionConvention(A_W=1.0, A_H=2.0, A_V=2.0)
++    assert isclose(convention.normalization_coefficient, 4.0, abs_tol=1e-15)
++
++
++def test_old_cathedral_slot_requires_nontrivial_normalization():
++    report = diagnostic_report()
++    required = required_normalization_coefficient(
++        cathedral_quartic_slot(), report["cathedral_g2_squared"]
++    )
++    assert isclose(required, 4.069095184887046, rel_tol=0.0, abs_tol=1e-12)
++    prediction = quartic_boundary(
++        report["cathedral_g2_squared"], normalization_coefficient=4.0
++    )
++    assert isclose(prediction, 0.12692278796229, rel_tol=0.0, abs_tol=1e-12)
++
++
++def test_invalid_conventions_are_rejected():
++    with pytest.raises(ValueError):
++        SpectralActionConvention(A_W=0.0, A_H=1.0, A_V=1.0)
++
++
++def test_complete_audit():
++    assert higgs_normalization_audit()
+diff --git a/tests/test_week_20260713_archive.py b/tests/test_week_20260713_archive.py
+new file mode 100644
+index 0000000..0cfb533
+--- /dev/null
++++ b/tests/test_week_20260713_archive.py
+@@ -0,0 +1,32 @@
++from math import isclose, pi, sqrt
++
++
++def test_geometric_rails_and_gap():
++    phi = (1.0 + sqrt(5.0)) / 2.0
++    delta_star = (80.0 / 81.0) * pi / (13.0 * phi)
++    delta_classic = 3.0 / 20.0
++    gap = delta_classic - delta_star
++    assert isclose(delta_star, 0.14751081015957962, rel_tol=0.0, abs_tol=1e-15)
++    assert isclose(gap, 0.002489189840420375, rel_tol=0.0, abs_tol=1e-15)
++
++
++def test_geometric_and_archived_logistic_values_are_not_identical():
++    phi = (1.0 + sqrt(5.0)) / 2.0
++    geometric = (80.0 / 81.0) * pi / (13.0 * phi)
++    archived_cycle = 0.1474219361622878
++    assert isclose(geometric - archived_cycle, 8.887399729182177e-05, rel_tol=0.0, abs_tol=1e-16)
++    assert geometric != archived_cycle
++
++
++def test_root_coupling_polynomial():
++    phi = (1.0 + sqrt(5.0)) / 2.0
++    gap = 3.0 / 20.0 - (80.0 / 81.0) * pi / (13.0 * phi)
++    alpha_inverse = 137.0 + (17572.0 / 1215.0) * gap - (9.0 / 65.0) * gap**2
++    assert isclose(alpha_inverse, 137.035999178195, rel_tol=0.0, abs_tol=1e-12)
++
++
++def test_charge_word_shape_ratio_and_slot_are_close_not_equal():
++    ratio = 0.12835635776165666
++    slot = 1.0 / 8.0 + 1.0 / 243.0
++    assert isclose((slot - ratio) / slot, 0.00587745223641, rel_tol=0.0, abs_tol=1e-12)
++    assert ratio != slot

@@ -1,0 +1,40 @@
+URT / ICOSAHEDRON SIMULATION RESULTS
+======================================
+
+SELECTION TEST
+--------------
+Random starts: 32
+Icosahedral outcomes: 32/32
+Exact icosahedral Coulomb energy: 49.165253057629
+Representative final energy: 49.165253057629
+Representative dot-product RMS error: 1.281e-07
+Representative isotropy error: 7.357e-15
+Convex hull: 12 vertices, 30 edges, 20 triangular faces
+Shell degrees: min=5, max=5
+
+CENTRED 13-NODE SPECTRUM
+------------------------
+Numerical eigenvalues:
+[2.6645352591e-15 3.7639320225e+00 3.7639320225e+00 3.7639320225e+00
+ 7.0000000000e+00 7.0000000000e+00 7.0000000000e+00 7.0000000000e+00
+ 7.0000000000e+00 8.2360679775e+00 8.2360679775e+00 8.2360679775e+00
+ 1.3000000000e+01]
+
+Expected groups:
+0 (x1)
+6-sqrt(5) (x3)
+7 (x5)
+6+sqrt(5) (x3)
+13 (x1)
+
+Maximum absolute spectral error: 3.997e-15
+
+INTERPRETATION
+--------------
+This simulation shows that:
+1. Isotropic repulsion plus spherical closure selects an icosahedron from random initial states.
+2. The resulting centred 13-node resonator network has the exact 1,3,5,3,1 mode grouping.
+
+It does not yet uniquely validate URT. A decisive URT test requires the exact,
+frozen URT state-update law to predict the trajectory, transition threshold,
+or coupling repair without encoding the icosahedron as the target.

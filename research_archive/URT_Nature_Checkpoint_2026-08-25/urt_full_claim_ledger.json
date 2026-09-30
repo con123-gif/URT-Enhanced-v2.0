@@ -1,0 +1,1195 @@
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-08-25",
+  "corpus_root": "/workspace/scratch/804d9a77836a/full_library",
+  "purpose": "Machine-readable chronological and dependency-aware audit of the recoverable URT, LURT, and Newton's Cathedral corpus.",
+  "audit_policy": {
+    "unit_of_record": "A substantive claim branch or artifact class, not each duplicate download companion.",
+    "separation_rule": "Exact definitions and finite calculations are separated from numerical experiments, physical identifications, fitted response routes, withdrawn constructions, contradictions, and unresolved equations.",
+    "completeness_limit": "This ledger is exhaustive for recoverable artifacts in full_library, but the corpus itself is incomplete because a referenced 322-notebook combined source is absent and newtons_cathedral.pdf is truncated.",
+    "external_validation": false,
+    "project_files_modified": [
+      "/workspace/scratch/804d9a77836a/urt_full_claim_ledger.json"
+    ]
+  },
+  "status_legend": {
+    "DEFINITION": "A stipulated object, equation, normalization, or modeling choice.",
+    "PROVED_EXACT": "Follows exactly from the stated finite assumptions or is symbolically checked.",
+    "VERIFIED_NUMERIC": "Reproduced numerically for the defined finite model; not a general proof or physical validation.",
+    "CONDITIONAL": "Valid only if explicitly listed hypotheses or identifications are supplied.",
+    "PHYSICAL_ID_OPEN": "Mathematical carrier exists, but its identification with nature is not derived.",
+    "FIT_OR_ROUTE": "Uses a target, route choice, calibration, optimized coefficient, label selection, or observed scale.",
+    "PROPOSED": "Candidate mechanism or action not yet selected or closed.",
+    "NO_GO": "A tested construction cannot supply the claimed output under its own assumptions.",
+    "WITHDRAWN": "The corpus later retracts, supersedes, or invalidates the construction.",
+    "CONTRADICTED": "Logically or numerically conflicts with another claim or its own equations.",
+    "UNSUPPORTED": "Claim is asserted without recoverable derivation, raw evidence, or executable certificate.",
+    "BUG": "Recoverable implementation or verification defect.",
+    "MISSING_SOURCE": "Referenced source or content is absent, unreadable, or truncated.",
+    "IRRELEVANT": "Artifact has no recoverable substantive theory content.",
+    "DUPLICATE": "Byte-identical or download-companion copy; no independent evidence."
+  },
+  "corpus_inventory": {
+    "total_files": 319,
+    "total_bytes": 48990324,
+    "nonempty_files": 308,
+    "zero_byte_files": 11,
+    "unique_nonempty_sha256_blobs": 245,
+    "duplicate_nonempty_copies": 63,
+    "duplicate_groups": 45,
+    "extension_counts": {
+      "png": 57,
+      "py": 50,
+      "txt": 39,
+      "json": 31,
+      "csv": 17,
+      "pdf": 16,
+      "jpg": 11,
+      "md": 7,
+      "zip": 7,
+      "npz": 4,
+      "jpeg": 3,
+      "patch": 2,
+      "bundle": 1
+    },
+    "inspection": [
+      "All nonempty readable text, Markdown, Python, JSON, CSV, patch, checksum, and report families were inspected.",
+      "ZIP manifests and migration patch or bundle contents were indexed and substantive files compared with top-level copies.",
+      "Readable PDFs were text-extracted; image-only artifacts were OCR-inspected and classified.",
+      "The four surviving Flate content streams in corrupt newtons_cathedral.pdf were decompressed manually, recovering only its first four pages."
+    ],
+    "zero_byte_placeholders": [
+      "1000035571(1).png.openai-download-59e6ff1805dc4200ae80cf543ae952a0",
+      "1000036208(1).jpg.openai-download-c5c5bb8757544acba5b518c8ff479628",
+      "RESULTS(1).txt.openai-download-31ea6c83a1534903847fae0113520e4a",
+      "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.txt.openai-download-dcdb3018fcf54343a7e3223a66fa2450",
+      "cathedral-week-2026-07-13-to-20-additive.zip.openai-download-feafab62b3f24cbdb67458e34a0457b2",
+      "cathedral-week-2026-07-13-to-20.bundle.openai-download-eb236c70b79e438b9c1f858380205204",
+      "derive_a4_clifford_dirac.py.openai-download-882ad3971ed44a18b6b9d0dcc2382d73",
+      "urt_corrected_dual_ribbon_solver.py.openai-download-cd673f2841254683941fbf5036eafd39",
+      "urt_golden_platonic_closure.py.openai-download-86d0cce0f66b47c1bb35f7d31d719ba2",
+      "urt_machine_flavour_closure_sha256.txt.openai-download-ee35073d661e40e5a7d69016d97f24d2",
+      "urt_ribbon_kernel_report.txt.openai-download-4e09b57b9e9e44e9b7e33677244e6279"
+    ]
+  },
+  "source_integrity": [
+    {
+      "id": "SRC-001",
+      "status": "MISSING_SOURCE",
+      "source": "all_my_colab_work_combined.md",
+      "claim": "The migration manifest says this combined source indexed 322 notebooks.",
+      "finding": "The file is not present in full_library; source_manifest.md inside the migration archive says originals remained in the user's File Library.",
+      "impact": "The supplied full_library cannot support a literal start-to-finish or notebook-level exhaustive audit. Any derivation existing only in those notebooks remains unavailable."
+    },
+    {
+      "id": "SRC-002",
+      "status": "MISSING_SOURCE",
+      "source": "newtons_cathedral.pdf",
+      "claim": "May 2026 v9.0 presents an anchor-free complete framework.",
+      "finding": "The PDF lacks a valid catalog, cross-reference table, and page tree. Only four content streams, corresponding to approximately four opening pages, are recoverable; the document ends mid-development.",
+      "impact": "Claimed QFT, chemistry, nuclear, consciousness, QBLS, and detailed mass machinery cannot be audited beyond the surviving assertions."
+    },
+    {
+      "id": "SRC-003",
+      "status": "UNSUPPORTED",
+      "source": "MIGRATION_STATUS.md",
+      "claim": "The additive migration was intended to preserve the week and push it remotely.",
+      "finding": "Local additive artifacts exist, but the recorded remote push failed with HTTP 403.",
+      "impact": "The migration is locally recoverable but not confirmed in the intended remote repository."
+    },
+    {
+      "id": "SRC-004",
+      "status": "DUPLICATE",
+      "source": "*.openai-download-* and numbered duplicate PDFs",
+      "claim": "Download companions or repeated copies add evidence.",
+      "finding": "Most are byte-identical copies or empty placeholders. They do not constitute independent confirmations."
+    },
+    {
+      "id": "SRC-005",
+      "status": "MISSING_SOURCE",
+      "source": "North Star v3-v9 image and CSV sequence",
+      "claim": "Later reactor designs follow from reproducible generators.",
+      "finding": "The reduced early simulation is present, but generator code for several v3-v9 design stages and the final v9 plot is absent.",
+      "impact": "Those stages can be read as recorded numerical scenarios, not fully regenerated design studies."
+    }
+  ],
+  "chronological_claim_ledger": [
+    {
+      "id": "C-2025-10-01",
+      "period": "2025-10-12",
+      "branch": "Original URT recursive cascade",
+      "sources": ["North star tuning_2025-10-12_182728 (1).pdf"],
+      "dependencies": ["Chebyshev polynomial T_d", "pi", "e", "phi", "chosen degree sequence d_i"],
+      "definitions": [
+        "p_0 = 1/lambda",
+        "p_(i+1) = f_i(p_i)",
+        "a_i = pi*frac(p_i)",
+        "f_i(p) = (pi/e) T_(d_i)(p) + p/phi"
+      ],
+      "claims": [
+        {"statement": "The elementwise cascade is O(N) in the number of applied stages.", "status": "PROVED_EXACT", "qualification": "This does not establish equivalence to a general optimization problem."},
+        {"statement": "The map is globally bounded or convergent to [-1,1].", "status": "CONTRADICTED", "evidence": "The paper's own sequence 1 -> 1.7738 -> 3.1462 -> 5.5807 escapes; the stated bound |p_next| <= pi/e + 1/phi = 1.7737 does not preserve [-1,1]."},
+        {"statement": "A Lyapunov decrement holds outside the interval.", "status": "UNSUPPORTED", "qualification": "No valid global sign proof is supplied and the exhibited orbit contradicts the claimed conclusion."}
+      ],
+      "current_disposition": "Retain only the recurrence definition and its elementwise cost; withdraw the global convergence reading."
+    },
+    {
+      "id": "C-2025-10-02",
+      "period": "2025-10-12",
+      "branch": "North Star vortex-confined p-11B reactor",
+      "sources": [
+        "North star tuning_2025-10-12_182728 (1).pdf",
+        "north_star_urt_simulation.py",
+        "north_star_urt_summary.csv",
+        "north_star_urt_timeseries.csv",
+        "north_star_urt_voltage_sensitivity.csv"
+      ],
+      "dependencies": ["Rankine vortex ansatz", "conical chamber", "hand-set reactivity and confinement surrogates", "applied electrostatic bias"],
+      "definitions": [
+        "Early chamber h=0.3 m, R=0.08 m, angular rate about 1e5 rad/s, bias at most 600 kV",
+        "Early plasma target n=1e21 m^-3, T_i=600 keV, <sigma v>=2e-21 m^3/s",
+        "f_URT(E)=f_M(E)[1+epsilon sin(2 pi E/E_r)]"
+      ],
+      "claims": [
+        {"statement": "The original baseline fusion power is approximately 1 W.", "status": "CONTRADICTED", "evidence": "Recalculation of the stated density, reactivity, and volume gives about 1.401 MW, an error of roughly six orders of magnitude."},
+        {"statement": "The oscillatory distribution produces a 100-1000x fusion enhancement.", "status": "CONTRADICTED", "evidence": "The paper's own tabulated factors span only about 1.0 to 1.503."},
+        {"statement": "Suydam and Rayleigh stability follow from URT control.", "status": "UNSUPPORTED", "qualification": "No kinetic or MHD derivation and no stability proof are recoverable."},
+        {"statement": "The reduced plant can be controlled in its own simulation.", "status": "VERIFIED_NUMERIC", "qualification": "The plant, gains, disturbances, confinement exponents, and actuators are stipulated rather than derived."},
+        {"statement": "A 100 microsecond confinement target closes the energy balance.", "status": "NO_GO", "evidence": "The corrected reduced model requires approximately 3.558 GW of auxiliary power."}
+      ],
+      "current_disposition": "Concept study only; no experimentally or first-principles validated reactor claim."
+    },
+    {
+      "id": "C-2025-10-03",
+      "period": "2025-10-16",
+      "branch": "URT feedback controller and contraction claim",
+      "sources": ["Urt_2025-10-16_195050_Clean_Final (1).pdf", "urt_target_free_audit.py", "urt_target_free_audit_report.txt"],
+      "dependencies": ["chosen beta, alpha, theta", "piecewise nonlinearity", "optional neural correction"],
+      "definitions": [
+        "P_(k+1)=beta[alpha(P_k-theta_H phi(P_k))+u_k]",
+        "alpha=1.155, theta_H=2.4, nominal beta=0.235",
+        "phi(P)=sin(P) for |P|<=pi and sign(P) otherwise"
+      ],
+      "claims": [
+        {"statement": "The nominal scalar sufficient factor is beta*alpha*(1+theta_H)=0.922845.", "status": "PROVED_EXACT", "qualification": "Only for a genuinely global 1-Lipschitz nonlinearity and with input terms handled."},
+        {"statement": "The implemented piecewise phi is globally Lipschitz and yields a global contraction.", "status": "CONTRADICTED", "evidence": "phi is discontinuous at plus or minus pi because sin(pi)=0 while the outer branch is plus or minus 1."},
+        {"statement": "Adaptive beta up to 0.5 preserves the same contraction.", "status": "CONTRADICTED", "evidence": "The sufficient ceiling is approximately 0.254647; the local zero-state ceiling is approximately 0.618429."},
+        {"statement": "The Lyapunov proof covers affine input and neural terms.", "status": "UNSUPPORTED", "qualification": "Those nonzero contributions are omitted from the displayed decrement."},
+        {"statement": "92-99 percent suppression, 900-1300x speed, 0.42 ms per 10,000 variables, and 100,000-DOF validation were formally verified.", "status": "UNSUPPORTED", "qualification": "No raw benchmark suite is recoverable, and the comparison is an elementwise recurrence versus full MPC or LQR solves."}
+      ],
+      "current_disposition": "Use the later exact thresholds and restrict the nonlinearity or invariant domain before making a contraction statement."
+    },
+    {
+      "id": "C-2025-11-01",
+      "period": "2025-11",
+      "branch": "Lytollis's Law: contraction and adaptive dynamics",
+      "sources": ["lytollis_comprehensive_final-2.pdf"],
+      "dependencies": ["uniform Jacobian norm or logarithmic norm bound", "chosen correction Psi"],
+      "definitions": [
+        "Discrete sufficient condition ||J Psi|| <= (1-kappa)/gamma-delta",
+        "Continuous sufficient condition mu(JH)+gamma||J Psi|| <= -delta"
+      ],
+      "claims": [
+        {"statement": "The displayed discrete bound implies ||JF|| <= 1-gamma*delta.", "status": "PROVED_EXACT"},
+        {"statement": "The displayed continuous logarithmic-norm bound implies exponential contraction.", "status": "PROVED_EXACT"},
+        {"statement": "Strict uniform contraction can retain a positive largest Lyapunov exponent and bounded chaos.", "status": "CONTRADICTED", "evidence": "Uniform contraction forces all trajectory-separation Lyapunov exponents negative; the manuscript confuses volume contraction with norm contraction."},
+        {"statement": "delta=(D_KY-1)(tau-2) is independently validated with R^2=1.", "status": "FIT_OR_ROUTE", "evidence": "delta_calc is computed from the same measured D_KY and tau used for delta_obs, making the displayed identity circular."},
+        {"statement": "Logistic, Rossler, Duffing, Kuramoto, Ising, SOC, RNN, EEG, CPTP, GR, RG, CKM, and fusion validations are established.", "status": "UNSUPPORTED", "qualification": "The claimed datasets, executable analyses, or independent predictions are not in the recoverable corpus."}
+      ],
+      "current_disposition": "Keep the standard sufficient contraction inequalities; withdraw the bounded-chaos proposition and the circular validation claim."
+    },
+    {
+      "id": "C-2026-04-01",
+      "period": "2026-04-22",
+      "branch": "Cathedral v8 broad phenomenology",
+      "sources": ["Cathedral_Framework_Full_Manuscript.pdf"],
+      "dependencies": ["K(D)=D+D^2", "D=3", "N=13", "gamma=1/81", "route-selected residue formulas"],
+      "definitions": ["K(D)=D+D^2", "gamma=1/81"],
+      "claims": [
+        {"statement": "More than 44 Standard Model and cosmological observables follow with no external fit.", "status": "FIT_OR_ROUTE", "evidence": "Values are produced by individually selected arithmetic routes and anchors, not by a common action and spectrum."},
+        {"statement": "The archived logistic value d*=0.147510810 is exactly a stable six-cycle point.", "status": "CONTRADICTED", "evidence": "At r=3.84170028784 the recovered orbit point is about 0.147421936, differing by 8.8874e-5."},
+        {"statement": "A finite-shell drain asymmetry proves Navier-Stokes regularity.", "status": "CONDITIONAL", "evidence": "The finite drain estimates are down 0.874+/-0.036 and up 0.337+/-0.092, but the BKM conclusion additionally assumes an unproved scale-uniform Littlewood-Paley paraproduct hypothesis H."},
+        {"statement": "The work solves the Clay Navier-Stokes problem.", "status": "UNSUPPORTED", "qualification": "No proof of the required continuum estimate is present."},
+        {"statement": "Predictions include an axion around 60.7 micro-eV, an EEG rail near 0.1475, a Casimir correction of +0.124 ppm at 100 nm, an fMRI 4+9 split, and warm dark matter.", "status": "UNSUPPORTED", "qualification": "These are live historical outputs without derivation or out-of-sample tests in the corpus."}
+      ],
+      "current_disposition": "Historical route ledger; not a closed theory. Preserve predictions as tests, not established results."
+    },
+    {
+      "id": "C-2026-04-02",
+      "period": "2026-04",
+      "branch": "Old logistic rail",
+      "sources": ["URT_Logistic_Map_Verification.pdf", "URT_Logistic_Map_Verification(1).pdf", "URT_Logistic_Map_Verification(2).pdf"],
+      "dependencies": ["chosen logistic parameter r_old=3.8417002878419497"],
+      "definitions": ["x_(n+1)=r x_n(1-x_n)"],
+      "claims": [
+        {"statement": "d_old=0.1474219361623 is the lowest point on a stable period-six orbit and has lambda approximately -0.01125.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The logistic map independently derives the geometric d*=0.147510810.", "status": "FIT_OR_ROUTE", "evidence": "r_old was selected to match a target rail, and the exact old orbit point is not the later geometric value."}
+      ],
+      "current_disposition": "Retain d_old and d* as distinct quantities; logistic pinning is an embedding, not seed selection."
+    },
+    {
+      "id": "C-2026-04-03",
+      "period": "2026-04",
+      "branch": "pi-phi-e flow",
+      "sources": ["pi_phi_e_flow.pdf", "pi_phi_e_flow(1).pdf", "pi_phi_e_flow(2).pdf", "cathedral_dimensionless_core_v2_6.py", "cathedral_dimensionless_core_v2_6_output.txt"],
+      "dependencies": ["target d* inserted into the potential or pull", "historical centered graph", "rounded coefficients"],
+      "claims": [
+        {"statement": "The flow derives d* uniquely from pi, phi, and e.", "status": "FIT_OR_ROUTE", "evidence": "d* is already included in the potential or attraction term."},
+        {"statement": "The historical 36-edge centered graph has spectrum [0,3x2,5x6,7x2,9,13].", "status": "CONTRADICTED", "evidence": "The later canonical centered icosahedral complex has 42 edges and spectrum 0,(6-sqrt(5))x3,7x5,(6+sqrt(5))x3,13."},
+        {"statement": "Coefficients 1/(4pi), 1/(8pi), phi-1, and exp(-t/10) uniquely define the physical flow.", "status": "UNSUPPORTED", "qualification": "They are asserted and then rounded to 0.08, 0.04, and 0.6 without a uniqueness theorem."},
+        {"statement": "The v2.6 run reaches the same d* and passes its hard gate.", "status": "BUG", "evidence": "Its final value is 0.147821404873, missing d* by about 3.106e-4, yet the output labels the gate PASS."}
+      ],
+      "current_disposition": "Do not use this flow as a derivation of d* or as a canonical graph certificate."
+    },
+    {
+      "id": "C-2026-04-04",
+      "period": "2026-04",
+      "branch": "D=3, N=13, icosahedron, and scalar seed",
+      "sources": ["cathedral_framework(1).pdf", "Newtons_Cathedral_Mathematical_Oddity.pdf"],
+      "dependencies": ["imposed exterior self-duality criterion", "three-dimensional kissing-number theorem", "assumed triangular shell", "regular icosahedron assumption"],
+      "definitions": [
+        "D=3 from dim Lambda^1 = dim Lambda^2",
+        "N approximately (D+1)/(1-ln 2)=13.035, rounded to 13",
+        "d_cl=3/20",
+        "d*=(1-1/81)pi/(13 phi)=0.147510810...",
+        "Delta=d_cl-d*=0.00248918984...",
+        "T_geo=ln 2-9/13=0.000839488..."
+      ],
+      "claims": [
+        {"statement": "D=3 follows from equality of one-form and two-form dimensions.", "status": "PROVED_EXACT", "qualification": "Only after choosing that equality as the selection criterion."},
+        {"statement": "The three-dimensional kissing theorem gives 12 equal neighbors around a center.", "status": "PROVED_EXACT"},
+        {"statement": "Euler plus V=12 and triangular faces gives E=30, F=20, and average degree 5.", "status": "PROVED_EXACT"},
+        {"statement": "Those counts force every degree to be 5 and uniquely select the regular icosahedron.", "status": "CONTRADICTED", "evidence": "Euler fixes only average valence. Equal valence, convex regularity, or an independently derived energy functional is still needed."},
+        {"statement": "N=13 is uniquely derived.", "status": "FIT_OR_ROUTE", "evidence": "13 is selected by rounding a chosen expression near 13.035; the core later also imports the K_3=12 shell."},
+        {"statement": "d* and Delta are exact arithmetic once their formula is stipulated.", "status": "PROVED_EXACT"},
+        {"statement": "The seed uniquely fixes nature.", "status": "UNSUPPORTED", "qualification": "The selection principle, physical action, and identification map are open."}
+      ],
+      "current_disposition": "Treat the 13-site centered icosahedral object as a frozen candidate seed, not a theorem forced by Euler or one axiom."
+    },
+    {
+      "id": "C-2026-05-01",
+      "period": "2026-05",
+      "branch": "Newton's Cathedral v9 anchor-free completion",
+      "sources": ["newtons_cathedral.pdf"],
+      "dependencies": ["D=3", "N=13", "81-dimensional microclosure", "observed cosmological density", "optimized mass coefficients"],
+      "claims": [
+        {"statement": "A complete anchor-free framework derives the Standard Model, neutrinos, cosmology, periodic table, nuclear magic, gravity, consciousness, QFT, and QBLS.", "status": "MISSING_SOURCE", "evidence": "Only the first four pages survive; the remainder is truncated and no independent complete code certificate is present."},
+        {"statement": "There are zero free parameters beyond one cosmological input.", "status": "CONTRADICTED", "evidence": "The observed rho_Lambda=(2.34 meV)^4 is an absolute anchor, and later surviving text discloses target optimization of mass coefficients."},
+        {"statement": "rho_Lambda/M_Pl^4=[D/(D+1)^2] Delta^64 sets all absolute scales.", "status": "FIT_OR_ROUTE", "qualification": "The relation uses an observed dimensional input and is not derived from a recovered action."},
+        {"statement": "One million systems give delta_class=0.15230+/-0.00051 and physical UV delta*=0.14751.", "status": "UNSUPPORTED", "qualification": "No raw ensemble or generator is recoverable."},
+        {"statement": "An 81-dimensional closure has rank 80, nullity 1, gamma=1/81, and splits 13=4+9.", "status": "UNSUPPORTED", "qualification": "The construction is not recovered in the surviving pages."},
+        {"statement": "Four K4 gaps generate the forces using R_m approximately -2.427188 and C_mass approximately 10.814807.", "status": "FIT_OR_ROUTE", "evidence": "The document says these coefficients were refined by a population-200, 800-generation, five-seed optimization against the observed mass and Higgs spectrum."},
+        {"statement": "The theory supplies a second-quantized finite or asymptotically-free QFT with Feynman rules and one-loop beta functions.", "status": "UNSUPPORTED", "qualification": "No surviving equations, code, or certificate establish this."},
+        {"statement": "The periodic table, Aufbau ordering, nuclear magic numbers 2,8,20,28,50,82,126, QBLS, and EEG or consciousness follow from H3, Fibonacci, and closure.", "status": "UNSUPPORTED", "qualification": "Only opening-page assertions survive."},
+        {"statement": "Inflation predicts N_e=57, n_s=0.964912, r=0.003693, and A_s=2.088e-9.", "status": "FIT_OR_ROUTE", "qualification": "No recovered inflationary action or perturbation derivation selects these expressions."},
+        {"statement": "The axion is about 58.2 micro-eV with a 9.07 GHz line and Casimir shift +0.124 ppm.", "status": "CONTRADICTED", "evidence": "The axion value conflicts with the April 60.7 micro-eV live prediction; neither is derived by a recovered common action."}
+      ],
+      "current_disposition": "Preserve as an incomplete historical high-claim branch. Do not import its completion claims or optimized masses into the current exact core."
+    },
+    {
+      "id": "C-2026-06-01",
+      "period": "2026-06",
+      "branch": "Mathematical Oddity strict finite freeze",
+      "sources": ["Newtons_Cathedral_Mathematical_Oddity.pdf", "Newtons_Cathedral_Mathematical_Oddity(1).pdf", "Newtons_Cathedral_Mathematical_Oddity(1)(1).pdf", "Newtons_Cathedral_Mathematical_Oddity(1)(2).pdf"],
+      "dependencies": ["centered regular icosahedron is supplied", "chosen incidence maps and normalizations"],
+      "definitions": [
+        "C_core = 1_center direct-sum I_12",
+        "A5 decomposition = 1_center + 1_shell + 3 + 3' + 5",
+        "gamma=1/(N-D-1)^2=1/81",
+        "entropy depth sigma=-ln(1-ell)"
+      ],
+      "claims": [
+        {"statement": "The core has 13 sites but is not literally a single irreducible 13-shell.", "status": "PROVED_EXACT"},
+        {"statement": "For the supplied regular icosahedron, the shell spectrum and golden-ratio eigenspaces are exact.", "status": "PROVED_EXACT"},
+        {"statement": "The face-vertex incidence B has rank 12, dim ker(B^T)=8=4_3+4_5, hidden eigenvalues 3 and 5, W_scalar=9/5, and |chi|=2/sqrt(5).", "status": "PROVED_EXACT"},
+        {"statement": "sigma is physical time.", "status": "CONTRADICTED", "evidence": "The strict document explicitly says entropy depth is not clock time."},
+        {"statement": "Alpha-like, closure, face, and cosmology-like residue arithmetic is exact.", "status": "PROVED_EXACT", "qualification": "Their physical labels are not forced."},
+        {"statement": "Mixing formulas and dimensional scales are derived by this freeze.", "status": "PHYSICAL_ID_OPEN", "qualification": "Mixing grammars are labeled provisional and dimensional scales are excluded."}
+      ],
+      "current_disposition": "Best pre-August status-controlled finite seed; retain its explicit boundary between exact arithmetic and physical naming."
+    },
+    {
+      "id": "C-2026-07-01",
+      "period": "2026-07-13 to 2026-07-20",
+      "branch": "Additive migration and target-free audits",
+      "sources": [
+        "ADD_ONLY.patch",
+        "CATHEDRAL_WEEK_2026-07-13_TO_20_ADD_ONLY.patch",
+        "cathedral-week-2026-07-13-to-20-additive.zip",
+        "cathedral-week-2026-07-13-to-20.bundle",
+        "WEEKLY_MIGRATION_FILES.txt",
+        "MIGRATION_STATUS.md",
+        "urt_target_free_audit.py",
+        "urt_target_free_audit_report.txt",
+        "urt_target_free_audit_summary.csv"
+      ],
+      "dependencies": ["recorded datasets or generated maps", "separation of old and geometric rails"],
+      "claims": [
+        {"statement": "d_old=0.147421936... and d*=0.147510810... are distinct by 8.8874e-5; their corresponding splits are about 0.00258479 and 0.00248919.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The target-free estimator delta=(D-1)(tau-2) naturally selects the 0.15 rail.", "status": "NO_GO", "evidence": "Sweeps give means approximately 0.99285 for Henon, 0.88992 for logistic, and 1 for tent maps."},
+        {"statement": "A later refinement is target-free.", "status": "CONTRADICTED", "evidence": "The refinement contains an explicit (delta-0.15) term."},
+        {"statement": "The additive patch preserves prior work without deleting it.", "status": "VERIFIED_NUMERIC", "qualification": "Local archive and patch artifacts exist; the remote push did not complete."}
+      ],
+      "current_disposition": "Use the migration as the main provenance boundary, while retaining the explicit missing-notebook caveat."
+    },
+    {
+      "id": "C-2026-07-02",
+      "period": "2026-07-13 to 2026-07-20",
+      "branch": "Exact saturating operator and separatrix",
+      "sources": ["urtf_operator_exact_audit.py", "urtf_operator_exact_audit.txt", "urtf_operator_separatrix.csv", "urtf_operator_separatrix.png"],
+      "definitions": ["T_delta(x)=[x-delta tanh(x/delta)] [1+(pi/phi)delta^2]"],
+      "claims": [
+        {"statement": "x=0 is superstable and plus or minus x_c are unstable separatrices for the stated scalar map.", "status": "PROVED_EXACT"},
+        {"statement": "Interior trajectories collapse while exterior trajectories run away for the audited parameter.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The separatrices are physical rails or bifurcations selected by nature.", "status": "PHYSICAL_ID_OPEN"}
+      ],
+      "current_disposition": "Exact dynamical property of a constructed map, not a derivation of the physical rail."
+    },
+    {
+      "id": "C-2026-07-03",
+      "period": "2026-07-13 to 2026-07-20",
+      "branch": "Alpha residue, hidden entropy, gauge traces, and Higgs normalization",
+      "sources": [
+        "cathedral_finite_dirac_trace_audit.py",
+        "cathedral_full_closure_audit.py",
+        "cathedral-higgs-normalization-additive.zip",
+        "urt_four_gate_closure.py",
+        "urt_four_gate_closure_audit.txt",
+        "urt_four_gate_closure_audit.json"
+      ],
+      "claims": [
+        {"statement": "137+(17572/1215)Delta-(9/65)Delta^2=137.035999178195...", "status": "PROVED_EXACT", "qualification": "Identification with inverse electromagnetic alpha remains open."},
+        {"statement": "d_sigma=(10/13)d_eta.", "status": "PROVED_EXACT", "qualification": "Identification with an RG or entropy flow is open."},
+        {"statement": "The simplified charge word gives Y2=33.8869775, G2=147.3951, and ratio 0.12835636.", "status": "VERIFIED_NUMERIC", "qualification": "It differs from the old Higgs target 0.129115 by about 0.5877 percent."},
+        {"statement": "Each simplified transfer T has rank 2 and determinant zero.", "status": "PROVED_EXACT"},
+        {"statement": "Full heat traces are a=16(100+183 Delta^2)/75=21.3335752... and b=36.3420656..., so b/a^2=0.0798513606764...", "status": "PROVED_EXACT"},
+        {"statement": "Gauge traces k_Y:k_2:k_3=5/3:1:1 and hence bare sin^2(theta_W)=3/8 under the supplied Standard Model trace assignment.", "status": "CONDITIONAL"},
+        {"statement": "The old Higgs quartic is produced without a common normalization.", "status": "NO_GO", "evidence": "Including the response g2^2 requires C_norm=4.069095...; C_norm=4 gives lambda=0.126922788..., 1.698 percent below 0.129115."}
+      ],
+      "current_disposition": "Finite traces are exact; common bosonic normalization and physical gauge or Higgs identification remain unresolved."
+    },
+    {
+      "id": "C-2026-07-04",
+      "period": "2026-07",
+      "branch": "Finite closure and operator erratum",
+      "sources": [
+        "lytollis_urt_finite_closure_package.zip",
+        "lytollis_urt_closure_master_report.md",
+        "lytollis_urt_operator_closure_audit.py",
+        "lytollis_urt_operator_closure_results.json",
+        "lytollis_urt_operator_erratum.md",
+        "lytollis_urt_explicit_intertwiners_and_vacuum.npz"
+      ],
+      "claims": [
+        {"statement": "The oriented 30-edge vacuum, exact charge word, and cubic polynomial were computed for the supplied finite model.", "status": "PROVED_EXACT"},
+        {"statement": "The earlier reduced operator derived physical CKM or PMNS mixing.", "status": "WITHDRAWN", "evidence": "It used G_e+T_f*T_f, invented whitening, omitted A*B+B*A interference, and did not derive the passive metric, phase, or order."},
+        {"statement": "Exact vacuum stationarity and Hessian survive the erratum.", "status": "PROVED_EXACT"},
+        {"statement": "The full interference-preserving finite matter operator is closed.", "status": "PHYSICAL_ID_OPEN", "qualification": "Its species loading, history connection, ordering, and evaluation remain open."}
+      ],
+      "current_disposition": "Retain exact finite vacuum results; do not reuse the invalid dressed mixing verdict."
+    },
+    {
+      "id": "C-2026-07-05",
+      "period": "2026-07",
+      "branch": "Icosahedral structure selection simulations",
+      "sources": [
+        "RESULTS.txt",
+        "RESULTS(1).txt",
+        "RESULTS(2).txt",
+        "run_simulation.py",
+        "run_urt_selection_simulation.py",
+        "run_chaos_to_structure.py",
+        "urt_icosahedron_simulation.zip",
+        "urt_direct_selection_simulation.zip",
+        "urt_chaos_to_structure.zip",
+        "02_selected_icosahedron.png",
+        "02_urt_selected_icosahedron.png",
+        "N4_selected_structure.png",
+        "N6_selected_structure.png",
+        "N12_selected_structure.png",
+        "07_damage_recovery.png"
+      ],
+      "claims": [
+        {"statement": "Isotropic Coulomb repulsion produces an icosahedron for N=12 in 32 of 32 reported runs.", "status": "VERIFIED_NUMERIC", "qualification": "This is the generic Thomson problem, not a uniquely URT mechanism."},
+        {"statement": "A log-distance entropy gradient plus a bounded scalar recursion produces an icosahedron in 64 of 64 runs and recovers from 25-degree damage.", "status": "VERIFIED_NUMERIC", "qualification": "The entropy functional, bounded-input map, and N=12 are modeling choices."},
+        {"statement": "The same construction selects antipodal, equilateral, tetrahedral, octahedral, and icosahedral configurations for N=2,3,4,6,12 in 100 of 100 reported trials.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "These experiments prove the seed is uniquely forced by the master principle.", "status": "UNSUPPORTED", "qualification": "They are finite optimization experiments, not a universal selection theorem."},
+        {"statement": "The centered icosahedral Laplacian spectrum is 0,(6-sqrt(5))^3,7^5,(6+sqrt(5))^3,13.", "status": "PROVED_EXACT"}
+      ],
+      "current_disposition": "Proof of mechanism for chosen objectives; seed-selection gap remains."
+    },
+    {
+      "id": "C-2026-07-06",
+      "period": "2026-07",
+      "branch": "Sphere crystallization empirical comparison",
+      "sources": ["AUDIT_REPORT.txt", "STAGE2_REPORT.txt", "figure4_digitized_curve.csv", "figure4_fit_summary.csv", "figure4_logistic_fit.png", "branch_probability_model_comparison.csv", "stage2_summary.csv", "summary.csv", "binomial_model_overlap.png", "linear_log_odds_bifurcation.png"],
+      "claims": [
+        {"statement": "A digitized external sphere-crystallization curve has fitted midpoint 717.649, scale 8.612, width 37.846, and odds multiplier 0.89037.", "status": "VERIFIED_NUMERIC", "qualification": "These are fit results for digitized data."},
+        {"statement": "An approximate observed ratio 108/120=0.9 distinguishes an icosahedral 13/15=0.8667 route from a 12/13=0.9231 URT route.", "status": "CONDITIONAL", "evidence": "Both lie within roughly one sigma; about 463 independent outcomes would be needed at the stated assumptions."},
+        {"statement": "The crystallization data confirm URT.", "status": "UNSUPPORTED", "qualification": "The mapping from experimental probability to a URT variable is not derived and the audit itself says the comparison is not confirmation."}
+      ],
+      "current_disposition": "Retain as an empirical exploratory branch; it is missing from many later summaries but is not evidence of theory closure."
+    },
+    {
+      "id": "C-2026-08-01",
+      "period": "2026-08-03 to 2026-08-06",
+      "branch": "Canonical finite complex and Hodge geometry",
+      "sources": ["urt_seed_geometry_audit.py", "urt_seed_geometry_report.txt", "urt_seed_geometry_matrices.npz", "cathedral_canonical_hodge_audit.py"],
+      "dependencies": ["chosen centered icosahedral cell complex with 13 vertices, 42 edges, 20 faces", "orientation conventions"],
+      "claims": [
+        {"statement": "For the chosen complex, d1*d0=0, rank(d0)=12, rank(d1)=19, Betti numbers are (1,11,1), Euler characteristic is -9, and dim ker(D)=13.", "status": "PROVED_EXACT"},
+        {"statement": "B^T B=5I+2A, the hidden sector has dimension 8, face normals satisfy N^T N=(20/3)I, and L2*N=(3-sqrt(5))N.", "status": "PROVED_EXACT"},
+        {"statement": "Hom(3,3') decomposes as 4+5 and normalized equivariant intertwiners exist.", "status": "PROVED_EXACT"},
+        {"statement": "Mixed-portal squared singular values are (20+/-8sqrt(5))/15, giving amplitude ratio phi^3 and power ratio phi^6.", "status": "PROVED_EXACT"},
+        {"statement": "The complex is spacetime topology or a physical Dirac geometry.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "The displayed 3x3 depth projectors are full 9x9 shadow-generation operators.", "status": "CONTRADICTED", "qualification": "They are only generation-space projectors unless an additional tensor construction is supplied."}
+      ],
+      "current_disposition": "Strong exact finite core with an open continuum and physical interpretation."
+    },
+    {
+      "id": "C-2026-08-02",
+      "period": "2026-08-03 to 2026-08-06",
+      "branch": "Exterior algebra, A4 color-lepton grading, and fermionic carriers",
+      "sources": ["exterior_algebra_master_audit.py", "exterior_algebra_master_results.json", "urt_snap_closure_report.txt", "a4_colour_lepton_audit.py", "a4_colour_lepton_results.json", "derive_a4_clifford_dirac.py"],
+      "dependencies": ["four-dimensional A5 permutation representation", "chosen A4 subgroup or simplex direction", "exterior algebra"],
+      "claims": [
+        {"statement": "Lambda^bullet(V4) decomposes by degree as 1,4,(3+3'),4,1 with even dimension 8 and odd dimension 8.", "status": "PROVED_EXACT"},
+        {"statement": "C13 can be represented as Lambda_even plus 5, H_shadow as Lambda_odd, and H21 as Lambda^bullet plus 5.", "status": "PROVED_EXACT", "qualification": "These are representation-space identifications, not yet a physical Hilbert-space derivation."},
+        {"statement": "Hodge star pairs hidden quartets and forces the passive coordinate z=sqrt(3)Xi_3+i sqrt(5)(star^-1 Xi_5) once conventions are fixed.", "status": "PROVED_EXACT"},
+        {"statement": "There are exactly five A4 subgroups fixing simplex directions t_i, 4 restricted to A4 is 1+3, and X=I-4tt^T has eigenvalues (-3,1,1,1).", "status": "PROVED_EXACT"},
+        {"statement": "The finite creation-annihilation operators satisfy CAR, the constructed Dirac square and chirality identities hold, and candidate matter spaces are 24_L+24_R=48 or 96 including conjugates.", "status": "PROVED_EXACT"},
+        {"statement": "Fully Hodge-symmetric couplings yield observed mixing.", "status": "NO_GO", "evidence": "They produce order-one mixing and J_L=-J_Q; an A4-graded, gauge-loaded connection is required."}
+      ],
+      "current_disposition": "Exact carrier algebra; physical species assignments and finite connection remain underdetermined."
+    },
+    {
+      "id": "C-2026-08-03",
+      "period": "2026-08",
+      "branch": "Hopf quotient and candidate spacetime chart",
+      "sources": ["urt_hopf_spacetime_audit.py", "urt_hopf_spacetime_audit_report.txt", "urt_hopf_spacetime_audit_results.json"],
+      "claims": [
+        {"statement": "The hidden sector can be organized as H^2, its unit sphere is S^7, and S^7/SU(2)=S^4, with a local R^4 chart.", "status": "PROVED_EXACT"},
+        {"statement": "A Lorentzian metric, physical time orientation, global spacetime gluing, and dynamics follow automatically.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "This is already reconciled with the older five-dimensional M_URT base-manifold images.", "status": "UNSUPPORTED", "qualification": "No recovered gluing or equivalence joins the older 5D base to the later local 4D quotient."}
+      ],
+      "current_disposition": "Valid local topological carrier; not yet spacetime physics."
+    },
+    {
+      "id": "C-2026-08-04",
+      "period": "2026-08",
+      "branch": "Spin(7), double cover, KO-6 seed, and generation return flag",
+      "sources": ["derive_outer_double_cover.py", "derive_spin7_real_structure.py", "outer_spinor_return_flag_results.json", "urt_spin7_structural_closure_report.txt", "urt_spin7_structural_closure_results.json"],
+      "dependencies": ["six signed axes", "chosen real intertwiner", "grading and conjugation conventions"],
+      "claims": [
+        {"statement": "The six-axis operator satisfies S^2=5I; H_phi^2=I; C H_phi C^-1=-H_phi; C^6=-I and C^12=I.", "status": "PROVED_EXACT"},
+        {"statement": "The generated binary group has order 240 and quotient order 120.", "status": "PROVED_EXACT"},
+        {"statement": "Clifford closure forces a=b=2 and phase pi/2; seven gamma matrices close a Spin(7)-type algebra and the KO-real fixed space has dimension 8.", "status": "PROVED_EXACT", "qualification": "For the supplied construction."},
+        {"statement": "The outer-orbit stabilizer dimensions are 14 -> 8 -> 3 -> 0, corresponding to g2 -> su3 -> su2 -> 0; a setwise 2-plane stabilizer is u3; vector and spin lifts have lengths 12 and 24.", "status": "PROVED_EXACT"},
+        {"statement": "The return flag uniquely derives the three observed generations.", "status": "CONDITIONAL", "qualification": "It requires identifying retained controllability or return stages with physical generations."},
+        {"statement": "KO dimension 6 is derived without choices.", "status": "CONDITIONAL", "qualification": "The sign pattern follows once the supplied H3+H5 space, grading diag(-I4,+I4), real intertwiner, and conjugation are chosen."}
+      ],
+      "current_disposition": "Exact structural closure with an open physical-generation and KO-selection bridge."
+    },
+    {
+      "id": "C-2026-08-05",
+      "period": "2026-08",
+      "branch": "Six-axis species support",
+      "sources": ["urt_six_axis_species_audit.txt", "urt_six_axis_species_audit.json"],
+      "claims": [
+        {"statement": "The order-two grading gives a 2_L+4_R split.", "status": "PROVED_EXACT"},
+        {"statement": "The order-five golden class of size 16 has singular values about 0.951 and 0.588 but lacks full right support.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The equal class of size 8 gives singular values about 0.866 and 0.866 with full four-arrow support.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "A unique physical species or Yukawa map follows.", "status": "NO_GO", "evidence": "Equivariant map freedom remains dimension 7 for A5 or 16 for the V4 restriction."}
+      ],
+      "current_disposition": "Carrier support is constrained but Yukawa and species maps are not unique."
+    },
+    {
+      "id": "C-2026-08-06",
+      "period": "2026-08",
+      "branch": "Gauge group and hypercharge",
+      "sources": ["gauge_preserving_exterior_solver_q.py", "gauge_preserving_exterior_q_results.json", "Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md"],
+      "claims": [
+        {"statement": "The Spin stabilizer chain is the Standard Model gauge algebra.", "status": "NO_GO", "evidence": "A nested stabilizer chain is not the commuting direct sum su(3)+su(2)+u(1)."},
+        {"statement": "A candidate finite algebra C+H+M3(C) and global quotient (SU3 x SU2 x U1)/Z6 are uniquely forced by the seed.", "status": "PHYSICAL_ID_OPEN", "qualification": "They are candidate identifications, not a unique output of the finite geometry."},
+        {"statement": "Hypercharges q=1/6,u=2/3,d=-1/3,l=-1/2,e=-1,nu=0 follow.", "status": "CONDITIONAL", "qualification": "They follow after assuming Standard Model multiplets, one Higgs, a neutral right-handed neutrino, Yukawa invariance, and anomaly cancellation."},
+        {"statement": "Bare sin^2(theta_W)=3/8 follows from the supplied traces.", "status": "CONDITIONAL"},
+        {"statement": "The response value 3/13 is the same derivation as the bare trace value 3/8.", "status": "CONTRADICTED", "qualification": "They arise from different slots and require a derived RG or response bridge."}
+      ],
+      "current_disposition": "Gauge representation and common normalization remain open; reject the older nested-Hopf shortcut."
+    },
+    {
+      "id": "C-2026-08-07",
+      "period": "2026-08",
+      "branch": "Linear A5 flavor transfer no-go",
+      "sources": ["urt13_transfer_flavour_no_go.txt"],
+      "claims": [
+        {"statement": "C13=2*1+3+3'+5 whereas the proposed E13=5+4+4, so Hom_A5(C13,E13) has dimension 1 and only maps the common 5.", "status": "PROVED_EXACT"},
+        {"statement": "A full A5-equivariant linear 13x13 flavor transfer exists.", "status": "NO_GO"},
+        {"statement": "A tested nonlinear transfer gives V_cb approximately 0.979.", "status": "VERIFIED_NUMERIC", "qualification": "This is grossly incompatible with observed quark mixing."},
+        {"statement": "The first representation-theoretically available mixed bridge is quadratic.", "status": "PROVED_EXACT"}
+      ],
+      "current_disposition": "Any viable route must be nonlinear and species-loaded, likely in the full 21-state or history connection."
+    },
+    {
+      "id": "C-2026-08-08",
+      "period": "2026-08",
+      "branch": "Static Dirac and mixing selection no-gos",
+      "sources": [
+        "urt_dirac_selection_audit.py",
+        "urt_dirac_selection_audit_report.txt",
+        "urt_dirac_selection_audit_results.json",
+        "urt_static_machine_theorem.py",
+        "urt_static_machine_theorem_report.txt",
+        "urt_static_machine_theorem_results.json",
+        "endpoint_conditioning_audit.txt",
+        "endpoint_conditioning_results.json"
+      ],
+      "claims": [
+        {"statement": "Hom_A4(H_R,H_L) has dimension 48.", "status": "PROVED_EXACT"},
+        {"statement": "The natural Clifford connection distinguishes u,d,e,nu mass Grams.", "status": "NO_GO", "evidence": "It gives identical scalar Grams; separate spectral functions leave a 16-dimensional relative flag invisible."},
+        {"statement": "The oriented charge elements g and omega, with h=g+i omega, have a rank-one or anomaly-closing structure.", "status": "PROVED_EXACT"},
+        {"statement": "The static support machine gives distinct quark and lepton cycles and observed mixing.", "status": "NO_GO", "evidence": "Quark and lepton cycles are isospectral and the mixing is wrong."},
+        {"statement": "Endpoint conditioning alone fixes the problem.", "status": "NO_GO", "evidence": "The source filter remains near identity while codomain filtering overmixes."}
+      ],
+      "current_disposition": "A noncommuting, gauge-loaded, oriented history curvature is required."
+    },
+    {
+      "id": "C-2026-08-09",
+      "period": "2026-08",
+      "branch": "Gate-2 hierarchy and spectral filtering no-go",
+      "sources": [
+        "urt_gate2_solver.py",
+        "urt_gate2_solution.npz",
+        "urt_gate2_solution_report.txt",
+        "urt_gate2_results.json",
+        "urt_gate2_random_start_audit.json",
+        "urt_gate2_spectral_solver.py",
+        "urt_gate2_spectral_results.json",
+        "urt_gate2_spectral_verdict.txt",
+        "urt_gate2_global_modular_solver.py",
+        "urt_gate2_global_modular_results.json",
+        "urt_gate2_global_modular_eta_scan.py",
+        "urt_gate2_global_modular_eta_scan.json"
+      ],
+      "claims": [
+        {"statement": "A frozen M_f with right multiplication R_Delta produces singular depths O(1), O(Delta), O(Delta^2).", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The same construction derives realistic mixing.", "status": "NO_GO", "evidence": "It gives a common left flag and hence CKM and PMNS equal to I+O(Delta)."},
+        {"statement": "Basis-covariant functional calculus can rotate eigenprojectors to repair mixing.", "status": "NO_GO", "evidence": "A function of A_f commutes with A_f and cannot change its eigenprojectors; CKM 23 and 13 remain too large and PMNS is permutation-like."},
+        {"statement": "A global modular average closes mixing.", "status": "NO_GO", "evidence": "One eta_Delta result has a CKM row about (0.584,0.706,0.401) and J about 0.00927; the conformal solve does not converge and another branch is near identity."}
+      ],
+      "current_disposition": "Frozen-charge source and basis-covariant spectral filters are excluded as the flavor solution."
+    },
+    {
+      "id": "C-2026-08-10",
+      "period": "2026-08",
+      "branch": "Platonic, golden, holonomy, and active-machine fitting attempts",
+      "sources": [
+        "platonic_entry_stage_audit.txt",
+        "urt_platonic_axis_audit.py",
+        "urt_golden_platonic_closure.py",
+        "urt_golden_platonic_closure_report.txt",
+        "urt_golden_platonic_closure_results.json",
+        "golden_closure_final_audit.txt",
+        "urt_platonic_u2_holonomy.py",
+        "urt_platonic_u2_holonomy_summary.txt",
+        "urt_platonic_u2_holonomy_results.json",
+        "urt_machine_flavour_closure.py",
+        "urt_machine_flavour_closure_report.txt",
+        "urt_machine_flavour_closure_results.json",
+        "urt_active_machine_red_team.txt",
+        "gate_identifiability_audit.py",
+        "gate_identifiability_results.json",
+        "golden_gearbox_identifiability_audit.py",
+        "golden_gearbox_identifiability_results.json"
+      ],
+      "claims": [
+        {"statement": "The 20-element object partitions exactly as 4+4+12.", "status": "PROVED_EXACT", "qualification": "The 12-element remainder is not a regular icosahedron."},
+        {"statement": "Five cube frames have determinant -1 and pair trace -3/4, equivalent to cosine -7/8 in the cited metric.", "status": "PROVED_EXACT"},
+        {"statement": "Endpoint metrics distinguish the proposed D and I placements.", "status": "NO_GO", "evidence": "The endpoint metrics are identical; the reported best branch is target-selected."},
+        {"statement": "The golden closure gives a covariant prediction of eight observables.", "status": "WITHDRAWN", "evidence": "It has eight controls for eight observables and uses coordinatewise noncovariant residual fitting; the final audit withdraws it."},
+        {"statement": "The U(2) holonomy construction provides a covariant six-control carrier.", "status": "PROVED_EXACT", "qualification": "The six scalar phenomenology formulas are conjectural and not derived from a KL action."},
+        {"statement": "The active machine predicts the response ledger.", "status": "WITHDRAWN", "evidence": "Seven complex loads provide 14 real controls, reproduce eight targets to about 1e-5, and have Jacobian rank 8 with nullity 6; it is reverse-identified fitting."}
+      ],
+      "current_disposition": "Use these as identifiability and covariance controls; none closes flavor."
+    },
+    {
+      "id": "C-2026-08-11",
+      "period": "2026-08",
+      "branch": "Ribbon and typed Wilson history tests",
+      "sources": [
+        "urt_ribbon_kernel_solver.py",
+        "urt_ribbon_kernel_report.txt",
+        "urt_ribbon_kernel_results.json",
+        "urt_corrected_dual_ribbon_solver.py",
+        "urt_corrected_dual_ribbon_report.txt",
+        "urt_corrected_dual_ribbon_results.json",
+        "oriented_joint_wilson_typed.py",
+        "oriented_joint_wilson_typed_results.json",
+        "urt_blind_history_completion_test.txt"
+      ],
+      "claims": [
+        {"statement": "The original 18x18 one-sheet ribbon gives near-CKM numbers.", "status": "WITHDRAWN", "evidence": "Its operator typing is invalid."},
+        {"statement": "The corrected shell 36x36 and dual 60x60 constructions realize exact signed K6 and Petersen structures.", "status": "PROVED_EXACT"},
+        {"statement": "The corrected dual ribbon predicts CKM and PMNS blindly.", "status": "FIT_OR_ROUTE", "evidence": "eta_Q=(10/3)eta_Delta, eta_L=eta_IR, and label choices are target-selected; the spectra are not mass spectra."},
+        {"statement": "A correctly typed six-dimensional two-sheet history produces observed mixing.", "status": "NO_GO", "evidence": "It gives grossly wrong CKM and PMNS."},
+        {"statement": "The real free energy selects chirality.", "status": "NO_GO", "evidence": "Chiral partners have the same absolute mixing and free energy while J changes sign."}
+      ],
+      "current_disposition": "Correct typing removes the apparent flavor success; chirality requires additional oriented data or a complex action."
+    },
+    {
+      "id": "C-2026-08-12",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Candidate variational master principle",
+      "sources": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.txt", "urt_three_week_gap_verifier.py", "cathedral_master_verifier.py"],
+      "definitions": [
+        "F_eta(rho)=D(rho||rho_0)+eta Tr(rho K)",
+        "Candidate K_URT=C_closure+D_X^dagger D_X"
+      ],
+      "claims": [
+        {"statement": "For fixed rho_0, K, eta, and trace domain, the minimizer is the corresponding Gibbs state.", "status": "PROVED_EXACT"},
+        {"statement": "The unique physical rho_0, K_URT, normalization, spacetime-gauge-finite gluing, and admissible domain are derived.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "One master action currently produces all finite, gravitational, gauge, flavor, quantum, cosmological, and reactor outputs.", "status": "UNSUPPORTED"}
+      ],
+      "current_disposition": "Best candidate organizing principle, but not yet a selected or evaluated theory of nature."
+    },
+    {
+      "id": "C-2026-08-13",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Hidden Gibbs state and oriented edge transition",
+      "sources": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "cathedral_full_closure_audit.py", "urt_nature_exhaustive_audit.py", "urt_nature_exhaustive_results.json", "urt_nature_exhaustive_results.csv"],
+      "dependencies": ["K=diag(3 I4,5 I4)", "eta_Delta=-ln Delta", "chosen 30-edge potential"],
+      "claims": [
+        {"statement": "Z=4 exp(-3 eta)+4 exp(-5 eta).", "status": "PROVED_EXACT"},
+        {"statement": "At eta_Delta, p3=1/(1+Delta^2)=0.99999380397... and p5=Delta^2/(1+Delta^2)=6.19602767e-6.", "status": "PROVED_EXACT"},
+        {"statement": "S/k_B=ln 4+H_2(p5)=1.3863748574... and dS/dp5=2 k_B eta_Delta.", "status": "PROVED_EXACT"},
+        {"statement": "Earlier assignments reversing p3 and p5 or the entropy sign are valid.", "status": "WITHDRAWN", "evidence": "The current exact Gibbs calculation corrects them."},
+        {"statement": "For the explicitly chosen edge potential, coexistence occurs near eta=4.7780, isotropic spinodal at 5, and orientation near 7.61684; eta_Delta lies in an unoriented phase with modes 5 and 4_5 nonzero and 4_3 zero.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "Those transitions are uniquely forced by the master principle.", "status": "PHYSICAL_ID_OPEN", "qualification": "The potential itself is chosen and global uniqueness is not proved."}
+      ],
+      "current_disposition": "Exact Gibbs sector plus numerical phase diagram for one candidate potential."
+    },
+    {
+      "id": "C-2026-08-14",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "A4 root or quad lattice and emergent Lorentz carrier",
+      "sources": ["urt_three_week_gap_verifier.py", "Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md"],
+      "claims": [
+        {"statement": "The A4 root system has 20 roots in four dimensions with inner products -1,-1/2,0,1/2,1.", "status": "PROVED_EXACT"},
+        {"statement": "A4 roots and oriented icosahedral faces are both A5/C3 sets and share permutation module 1+3+3'+2*4+5, giving visible 12 plus hidden 8.", "status": "PROVED_EXACT"},
+        {"statement": "The two 20-point sets are Euclidean-isometric.", "status": "CONTRADICTED", "evidence": "The oriented face centers span three dimensions whereas the A4 roots span four."},
+        {"statement": "The A4 Cartan determinant is 5 and A4*/A4 is isomorphic to Z5.", "status": "PROVED_EXACT"},
+        {"statement": "g=P-2tt^T has Lorentzian signature once a unit direction t is supplied.", "status": "PROVED_EXACT"},
+        {"statement": "Entropy uniquely selects t, lattice spacing, causal orientation, and physical metric.", "status": "PHYSICAL_ID_OPEN"}
+      ],
+      "current_disposition": "Exact lattice and representation bridge; not yet a dynamical spacetime or physical quadrilateral lattice."
+    },
+    {
+      "id": "C-2026-08-15",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Curvature carrier, gravity, entropy-area bridge, and time",
+      "sources": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "urt_three_week_gap_verifier.py", "cathedral_unified_closure.py"],
+      "claims": [
+        {"statement": "The 21-state space is automatically the physical Riemann curvature tensor.", "status": "CONTRADICTED", "evidence": "Before Bianchi, Sym^2(Lambda^2) has dimension 21 and decomposes as 2*1+4+3*5; Bianchi removes one scalar, leaving 20."},
+        {"statement": "For hidden x and y, Sigma=[3xx^T+5yy^T]_0 lies in Sym^2_0(V4)=4+5.", "status": "PROVED_EXACT"},
+        {"statement": "The normalized off-diagonal Hodge or Ricci map has all singular values 1/2, so twice the map is an isometry on the audited carrier.", "status": "PROVED_EXACT"},
+        {"statement": "This carrier is physical stress-energy and yields Einstein's equation.", "status": "CONDITIONAL", "qualification": "The thermodynamic chain additionally assumes local Rindler horizons, Unruh temperature, equilibrium Clausius relation, Raychaudhuri, area entropy, and stress conservation."},
+        {"statement": "The exact missing bridge is 2 k_B eta_Delta (d p_ex/dA)=k_B/(4 ell_*^2), with ell_*^2=G hbar.", "status": "PHYSICAL_ID_OPEN", "qualification": "The seed fixes neither area per cell, d p/dA, energy per cell, nor physical distance."},
+        {"statement": "G Lambda_cut^2/g_U^2=eta_Delta/(16pi)=0.11928261... is a candidate dimensionless bridge.", "status": "PROPOSED"},
+        {"statement": "The theory uniquely predicts alpha_G.", "status": "CONTRADICTED", "evidence": "Two surviving candidates, about 1.75175157e-45 and 1.75180932e-45, differ by 3.296e-5 relative and neither is selected."},
+        {"statement": "The earlier electron-calibrated gravity formula is anchor-free.", "status": "WITHDRAWN", "evidence": "It uses the electron mass as an external dimensional anchor."},
+        {"statement": "The finite P5/7 kernel is a positive 1/r gravitational Green function.", "status": "NO_GO", "evidence": "It has a zero center and sign changes."},
+        {"statement": "The metric f(r)=1-r_s r^2/(r^2+a^2)^(3/2), a=d*r_s, has horizons about 0.0646298 and 0.9660164 with threshold a/r_s=0.384900.", "status": "PROVED_EXACT", "qualification": "These are properties of a stipulated regular-core ansatz, not a seed-selected gravitational solution."},
+        {"statement": "Outer lift plus wedge signature (3,3) supplies a conformal Lorentz carrier under stated assumptions.", "status": "CONDITIONAL"},
+        {"statement": "Entropy depth is already physical clock time and selects a time orientation.", "status": "CONTRADICTED", "qualification": "The strict core distinguishes entropy depth from clock time; time orientation remains a postulate."}
+      ],
+      "current_disposition": "No absolute scale or Einstein coefficient is derived. Preserve exact curvature carriers and expose the entropy-area equation as the main missing bridge."
+    },
+    {
+      "id": "C-2026-08-16",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Quantum structure and Born rule",
+      "sources": ["exterior_algebra_master_audit.py", "derive_a4_clifford_dirac.py", "Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md"],
+      "claims": [
+        {"statement": "The supplied exterior algebra realizes CAR, a finite Clifford module, chirality, a complex structure, and positive Gibbs states.", "status": "PROVED_EXACT"},
+        {"statement": "The Born weight is F(x)=x when x is squared Hilbert norm and F is continuous, phase-independent, additive under orthogonal refinement, and noncontextual.", "status": "CONDITIONAL", "qualification": "This is a valid functional-equation result after the quantum probability assumptions are supplied."},
+        {"statement": "The seed derives complex Hilbert space, orthogonal branches, noncontextuality, measurement, unitary time evolution, locality, spin-statistics, and quantum field theory.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "The May v9 claim of a complete second-quantized QFT is certified by the later finite CAR construction.", "status": "UNSUPPORTED", "qualification": "Finite CAR is not a continuum interacting QFT, and the required action, fields, renormalization, and scattering construction are absent."}
+      ],
+      "current_disposition": "Quantum kinematic carriers are exact; the Born result is conditional and quantum dynamics or measurement are not derived."
+    },
+    {
+      "id": "C-2026-08-17",
+      "period": "2026-08-20 to 2026-08-25",
+      "branch": "Higgs, bosonic normalization, and four-gate RG",
+      "sources": ["urt_four_gate_closure.py", "urt_four_gate_closure_audit.txt", "urt_four_gate_closure_audit.json", "framework_core.py", "URT_full_framework.zip"],
+      "claims": [
+        {"statement": "The finite heat-trace coefficients a and b are exact for the chosen operator.", "status": "PROVED_EXACT"},
+        {"statement": "A physical Higgs quartic follows before choosing a common bosonic action normalization.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "The four-gate running predicts sin^2(theta_W)=0.311309 and alpha_s=0.0283336 at the stated IR route.", "status": "VERIFIED_NUMERIC", "qualification": "These fail the desired response values."},
+        {"statement": "Small threshold corrections close the RG mismatch.", "status": "NO_GO", "evidence": "The required beta shifts are about 9.1889 and 8.2253, not a derived threshold correction."},
+        {"statement": "framework_core.py correctly reproduces the July or August Higgs normalization.", "status": "BUG", "evidence": "Its regression sets C_norm from target/ratio and lambda_C4=4*ratio, omitting the g2^2 factor. It reports C_norm=1.6169446 and lambda_C4=0.319405 instead of C_norm=4.069095 and lambda_C4=0.126922788."},
+        {"statement": "The package all_pass flag detects this error.", "status": "BUG", "evidence": "The verification suite passes despite the regression and conflicts with the August 24 master values."}
+      ],
+      "current_disposition": "Fix the implementation before using package Higgs values; derive one bosonic normalization and threshold-matched RG flow."
+    },
+    {
+      "id": "C-2026-08-18",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Response-coordinate phenomenology ledger",
+      "sources": ["URT_response_closure_report.txt", "urt_response_layer_closure.py", "urt_response_layer_closure.json", "Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "cathedral_unified_closure.py", "minimal_response_theorem.py", "minimal_response_theorem_results.json"],
+      "claims": [
+        {"statement": "The listed CKM route gives s12=0.22430886, s23=0.04217751, s13=0.003733785, J=3.1413644e-5.", "status": "FIT_OR_ROUTE"},
+        {"statement": "The listed PMNS route gives sin^2(theta12)=0.3034631, sin^2(theta23)=0.5621295, sin^2(theta13)=0.02268990, J=-0.03235947.", "status": "FIT_OR_ROUTE"},
+        {"statement": "The mass-tree route gives t=1, b=0.0248919, tau=0.00995676, c=0.00746757, s=0.000557646, mu=0.000594822, u=1.2392e-5, d=2.7762e-5, e=2.8638e-6.", "status": "FIT_OR_ROUTE"},
+        {"statement": "The cosmology route gives theta_QCD=9.9985e-11, eta_B=5.9991e-10, A_s=2.09969e-9, Omega_m=6/19, Omega_Lambda=13/19, Omega_b=0.048583, Omega_c=0.267206, n_s=0.965452, running=-Delta^2, r=0.00049169.", "status": "FIT_OR_ROUTE"},
+        {"statement": "These values are algebraically reproducible from the selected route formulas.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The route assignment and normalization follow from a common finite Dirac operator or Friedmann action.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "cathedral_unified_closure.py derives CKM and PMNS eigenframes.", "status": "FIT_OR_ROUTE", "evidence": "It constructs an effective IR Dirac by inserting the already produced V_CKM and U_PMNS as left frames; this realizes assumed answers rather than deriving them."}
+      ],
+      "current_disposition": "Keep as a labeled response-coordinate ledger, not as solved flavor, mass, or cosmology."
+    },
+    {
+      "id": "C-2026-08-19",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Neutrino route",
+      "sources": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "cathedral_unified_closure.py"],
+      "claims": [
+        {"statement": "Using the observed top mass as scale, the route gives m1=2.2895e-9 eV, m2=0.0085521 eV, m3=0.0494826 eV, sum=0.0580346 eV, Delta m21^2=7.3138e-5 eV^2, Delta m31^2=0.0024485 eV^2, m_beta=0.008789 eV, and Omega_nu h^2=0.0006232.", "status": "FIT_OR_ROUTE"},
+        {"statement": "This is an anchor-free absolute mass prediction.", "status": "CONTRADICTED", "evidence": "The absolute scale is tied to the observed top mass."},
+        {"statement": "The route is normal, Dirac, and has no standard light-neutrino neutrinoless double-beta signal.", "status": "CONDITIONAL"}
+      ],
+      "current_disposition": "Prospective conditional route; freeze it before experimental comparison if retained."
+    },
+    {
+      "id": "C-2026-08-20",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Constructed bounded-chaos engine and logistic embedding",
+      "sources": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "cathedral_master_verifier.py"],
+      "definitions": ["Z_(n+1)=[pi/e-(pi/e-1)(|Z|/(9/13))^4](Z^2/|Z|) exp(i pi(3-sqrt(5)))"],
+      "claims": [
+        {"statement": "The radius 9/13 is invariant; phase doubling gives lambda_plus=ln 2; radial multiplier is 5-4pi/e=0.37709... with lambda_minus about -0.97527 and sum about -0.282.", "status": "PROVED_EXACT"},
+        {"statement": "This resolves the 2025 claim that a uniformly contracting scalar map has a positive exponent.", "status": "WITHDRAWN", "qualification": "The valid construction is two-dimensional and has one expanding and one contracting direction; it is not a uniform contraction."},
+        {"statement": "The exact dynamical map is uniquely selected by the seed.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "At r*=3.841673786994709, the logistic orbit contains the geometric d*; a neighboring point is 0.14991947 rather than exactly 0.15 and lambda is about -0.0097265.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The logistic pin derives d*.", "status": "FIT_OR_ROUTE", "evidence": "r* is tuned to the already-fixed d*."},
+        {"statement": "An unrestricted feedback ansatz can serve as a prediction engine.", "status": "NO_GO", "evidence": "Unrestricted feedback can realize an arbitrary recurrence; an admissible dynamics class must be fixed first."}
+      ],
+      "current_disposition": "Retain as an exact example of bounded chaos; derive admissibility and selection before physical use."
+    },
+    {
+      "id": "C-2026-08-21",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Prime residues, vortex arithmetic, resonance, and music",
+      "sources": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "cathedral_master_verifier.py", "05_resonator_frequency_response.png", "06_resonator_response.png"],
+      "claims": [
+        {"statement": "Modulo 9 splits as {0}, {3,6}, and {1,2,4,8,7,5}; doubling acts as a six-cycle on units, inverse of 2 is 5, and unit squares are {1,4,7}.", "status": "PROVED_EXACT"},
+        {"statement": "Powers 2^a 3^b fall into the stated residue strata and Mersenne residues cycle.", "status": "PROVED_EXACT"},
+        {"statement": "The mod-9 or Mersenne pattern proves primality or the Riemann hypothesis.", "status": "UNSUPPORTED"},
+        {"statement": "For L_phi=5I-S, F_epsilon=exp(-epsilon L_phi)C, and epsilon=-ln(Delta)/30, F^6=-Delta I6 and F^12=Delta^2 I6.", "status": "PROVED_EXACT"},
+        {"statement": "On each 3D Hodge sector the two-step determinant is Delta; on the full 6D carrier it is Delta^2.", "status": "PROVED_EXACT"},
+        {"statement": "sqrt((5+sqrt(5))/(5-sqrt(5)))=phi.", "status": "PROVED_EXACT", "qualification": "It is a frequency ratio only under an equal-mass harmonic model."},
+        {"statement": "f_res=T_geo/ln 2=0.00121113... is the physical detuning or musical loss.", "status": "PHYSICAL_ID_OPEN"},
+        {"statement": "The theory has validated musical or audio predictions.", "status": "UNSUPPORTED", "qualification": "No audio analysis, dataset, or certificate is recoverable."}
+      ],
+      "current_disposition": "Exact modular and resonator arithmetic; no prime theorem or empirical music theory."
+    },
+    {
+      "id": "C-2026-08-22",
+      "period": "2026-08-20 to 2026-08-24",
+      "branch": "Finite lattice fluid, Navier-Stokes, and electromagnetism",
+      "sources": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md", "cathedral_unified_closure.py"],
+      "claims": [
+        {"statement": "Twelve shell directions plus rest with w0=2/5 and w_a=1/20 have second moment delta/5, zero third moment, and isotropic fourth moment divided by 25.", "status": "PROVED_EXACT"},
+        {"statement": "A BGK or Chapman-Enskog expansion yields c_s^2/c^2=p/(rho c^2)=nu/(c^2 tau)=1/5.", "status": "CONDITIONAL", "qualification": "Requires the stipulated kinetic equilibrium, collision rule, scaling, and continuum limit."},
+        {"statement": "This proves global three-dimensional Navier-Stokes regularity.", "status": "UNSUPPORTED"},
+        {"statement": "A scalar potential gradient alone gives the magnetic Lorentz force.", "status": "NO_GO", "evidence": "v dot (v cross B)=0 while a scalar gradient is conservative."},
+        {"statement": "An antisymmetric two-form can represent F=q star(i_v d theta_2)=q v cross B_star.", "status": "CONDITIONAL", "qualification": "The two-form, skew mobility, Maxwell dynamics, photon sector, and charge representation must be supplied."}
+      ],
+      "current_disposition": "Finite isotropy is exact; continuum fluid and electromagnetic dynamics remain conditional."
+    },
+    {
+      "id": "C-2026-08-23",
+      "period": "2026-08",
+      "branch": "North Star reactor redesign and fusion application",
+      "sources": [
+        "north_star_urt_simulation.py",
+        "north_star_urt_dynamic_run.csv",
+        "north_star_urt_control_comparison.csv",
+        "north_star_urt_optimized_design.csv",
+        "north_star_vortex_only_candidate.csv",
+        "north_star_vortex_startup_payback.csv",
+        "north_star_v6_transport_threshold.csv",
+        "Original 100 us confinement target: energy-balance failure.png",
+        "North Star redesign: Q sensitivity to electrostatic well.png",
+        "North Star redesign: emergent confinement closure.png",
+        "North Star v3: emergent confinement.png",
+        "North Star v3: robustness to anomalous cross-field transport.png",
+        "North Star v4: vortex-only self-field robustness.png",
+        "North Star v5: dense pulsed vortex gain.png",
+        "North Star v6: transport threshold.png",
+        "North Star v7: effect of regenerating coherent vortex_self-field energy.png",
+        "North Star v8: reactor-scale vortex-only design.png",
+        "North Star v9: cold-vortex compression robustness.png",
+        "North Star Reactor Concept Infographic.png"
+      ],
+      "claims": [
+        {"statement": "The corrected small-cone model gives V=0.0020106 m^3, P_fusion=463.238 kW, P_brem=46.622 kW, P_aux at 1 s=124.494 kW, P_aux at 100 microseconds=3.558 GW, and optimistic alpha confinement threshold 1.538 s.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The controller improves recovery for the selected reduced disturbance model.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The optimized large design has R=0.4 m, h=1.2 m, V=0.2923 m^3, n=1.897e21 m^-3, T_i=170 keV, T_e=30.6 keV, P_fusion=32.265 MW, P_aux=10.199 MW, Q=3.1637, and surface area 10.019 m^2.", "status": "VERIFIED_NUMERIC", "qualification": "Recorded CSV result; the generator and full engineering model are not recoverable."},
+        {"statement": "The vortex-only candidate has R=0.008 m, L=1 m, n=1.5686e23 m^-3, self-field 86.74 T, P_fusion=101.1 MW, P_external=46.9 MW, Q=2.155, and tau=0.00824 s.", "status": "VERIFIED_NUMERIC", "qualification": "It assumes anomalous transport around 1e-6 of Bohm and momentum factor 30."},
+        {"statement": "The vortex-only design closes startup and net cycle power.", "status": "NO_GO", "evidence": "The recorded full startup-pulse gain is 0.491, below unity, and Q collapses for less optimistic transport."},
+        {"statement": "URT has solved practical p-11B fusion.", "status": "UNSUPPORTED", "qualification": "No first-principles kinetic or MHD closure, materials, electrodes, radiation, recirculating power, or experimental validation is present."}
+      ],
+      "current_disposition": "Reduced sensitivity and control study only; preserve failures and assumptions in any future optimization."
+    },
+    {
+      "id": "C-2026-08-24",
+      "period": "2026-08-25 package",
+      "branch": "URT_full_framework archive",
+      "sources": ["URT_full_framework.zip", "URT_full_framework.sha256", "framework_core.py", "active_core.py"],
+      "claims": [
+        {"statement": "The package is a complete history of all URT work.", "status": "CONTRADICTED", "evidence": "Its manifest focuses on August 3-24 plus carry-ins and excludes the 2025 URT or Lytollis papers, April live predictions, much of May v9, and the absent 322-notebook combined source."},
+        {"statement": "The snapshot provides a useful status-controlled inventory of the current finite core.", "status": "VERIFIED_NUMERIC"},
+        {"statement": "The full interference-preserving operator is solved because a definition is present.", "status": "PHYSICAL_ID_OPEN", "qualification": "The operator remains unselected and unevaluated for species, masses, and mixing."},
+        {"statement": "All package checks passing means the theory is physically closed.", "status": "CONTRADICTED", "evidence": "The checks mainly validate arithmetic, unitarity, and positivity; they miss the Higgs regression and do not test physical derivation or out-of-sample prediction."}
+      ],
+      "current_disposition": "Use as current code snapshot after repairing the Higgs regression, not as the exhaustive historical corpus or a closure certificate."
+    },
+    {
+      "id": "C-ORPHAN-01",
+      "period": "undated image-era branch",
+      "branch": "Older five-dimensional base manifold and 13-state fiber",
+      "sources": ["1000035571.png", "1000035571(1).png", "1000035571(2).png", "1000035571(3).png", "1000035571(4).png", "1000035571(5).png", "1781948335934.png", "1000036299.png", "1000036307.png", "1000036307(1).png", "5D base manifold and 13-state fibre.png"],
+      "claims": [
+        {"statement": "A candidate M_URT=S1 x R_plus x S1 x R x B has a conserved-b four-dimensional leaf, an ordered horizon band, positive tangent and negative transverse Lyapunov directions, and exhaustion condition G_exh>L_star.", "status": "DEFINITION"},
+        {"statement": "The 13-state fiber decomposes as A5 4+9 and can carry polar Vandermonde phases, unitary groups, heat-kernel metrics, and a Levi-Civita connection.", "status": "PROPOSED"},
+        {"statement": "A global action, atlas, gluing, metric field equations, or bridge to the later S7/SU2=S4 chart is supplied.", "status": "MISSING_SOURCE"}
+      ],
+      "current_disposition": "Orphan candidate geometry; reconcile or explicitly retire it before claiming a unique spacetime."
+    },
+    {
+      "id": "C-ORPHAN-02",
+      "period": "undated image-era branch",
+      "branch": "Nested Hopf gauge ladder",
+      "sources": ["1000035875.jpg"],
+      "claims": [
+        {"statement": "S1,S3,S5,S7,S9 form a Hopf ladder generating U1,SU2,SU3,SU4,SU5.", "status": "UNSUPPORTED", "qualification": "This is not a valid chain of standard Hopf fibrations and it does not yield the commuting Standard Model product."},
+        {"statement": "The image closes gauge unification.", "status": "WITHDRAWN", "evidence": "Later audits identify the nested-versus-product gauge obstruction and reject an SU5 shortcut."}
+      ],
+      "current_disposition": "Historical visualization only."
+    },
+    {
+      "id": "C-ORPHAN-03",
+      "period": "undated image-era branch",
+      "branch": "Reduced scalar Lagrangian screenshots",
+      "sources": ["1000035941.jpg", "1783504784218.jpeg"],
+      "claims": [
+        {"statement": "A scalar screenshot constitutes a complete typed finite action whose variation yields all sectors.", "status": "WITHDRAWN", "qualification": "No typed operator, domain, normalization, or variation certificate survives; later operator audits supersede it."}
+      ],
+      "current_disposition": "Do not treat the screenshot formula as the current action."
+    },
+    {
+      "id": "C-ORPHAN-04",
+      "period": "undated image-era branch",
+      "branch": "Riemann-zeta and prime spectral laboratory",
+      "sources": ["1000036208.jpg", "1000036208(1).jpg"],
+      "claims": [
+        {"statement": "A MAX or random-matrix laboratory could compare zeta-zero spacings with GUE statistics.", "status": "PROPOSED"},
+        {"statement": "URT has executed or proved a Riemann-hypothesis or prime result.", "status": "UNSUPPORTED", "qualification": "No code, zero dataset, test output, or proof is present."}
+      ],
+      "current_disposition": "Unexecuted research proposal."
+    },
+    {
+      "id": "C-ORPHAN-05",
+      "period": "undated image-era branch",
+      "branch": "Regenerable distinctions ontology and lattice duality",
+      "sources": ["1000036450.jpg", "1000036451.jpg"],
+      "claims": [
+        {"statement": "Void, potential, and identity operators provide an ontological grammar.", "status": "DEFINITION"},
+        {"statement": "Standard U(1) lattice duality motivates non-Abelian, noncommutative, and gravitational extensions.", "status": "PROPOSED"},
+        {"statement": "These images derive the later A5 finite action or gravity sector.", "status": "UNSUPPORTED"}
+      ],
+      "current_disposition": "Philosophical and methodological branch; no mathematical dependency should be inferred without a typed bridge."
+    },
+    {
+      "id": "C-ORPHAN-06",
+      "period": "undated image-era branch",
+      "branch": "Fermat spiral and golden angle",
+      "sources": ["1000036477.jpg", "1000036477(1).jpg"],
+      "claims": [
+        {"statement": "Fermat spirals exhibit the standard golden-angle packing pattern.", "status": "DEFINITION"},
+        {"statement": "The image uniquely derives URT, particle masses, or cosmology.", "status": "UNSUPPORTED"}
+      ],
+      "current_disposition": "Visual analogy only."
+    },
+    {
+      "id": "C-ORPHAN-07",
+      "period": "undated diagram branch",
+      "branch": "Unified framework diagrams",
+      "sources": ["Unified Recursive Theory Framework.png", "Universal Recursive Topology Diagram.png", "Universal Recursive Tuning Infographic.png"],
+      "claims": [
+        {"statement": "One geometry points to fluid, gravity, gauge, flavor, quantum, and fusion branches through recursive or KL selection arrows.", "status": "PROPOSED"},
+        {"statement": "The arrows themselves are derivations or closure certificates.", "status": "UNSUPPORTED", "qualification": "Exact finite subcomponents exist, but the physical arrows are not supplied by one evaluated action."}
+      ],
+      "current_disposition": "Roadmap diagrams, not evidence."
+    },
+    {
+      "id": "C-IRRELEVANT-01",
+      "period": "undated",
+      "branch": "Non-theory visual artifacts",
+      "sources": ["1000035798.jpg", "1000036359.jpg", "1000036479.png", "1000036601.jpg", "1781691318395.jpeg", "1782565308589.jpeg", "Compression now determines plasma density.png", "Late-night equations in a cluttered lab.png", "image-gen-1.png", "chart-1.png"],
+      "claims": [
+        {"statement": "Generic lab imagery, IQ screenshots, quotations, drone or ozone material, and decorative charts add a recoverable theory derivation.", "status": "IRRELEVANT"}
+      ],
+      "current_disposition": "Exclude from the claim graph while preserving them as historical media."
+    }
+  ],
+  "dependency_graph": {
+    "candidate_seed_chain": [
+      "choose exterior self-duality as dimension criterion",
+      "obtain D=3",
+      "import K_3=12 equal-neighbor kissing result",
+      "form center plus 12-shell C13",
+      "add triangular or regular icosahedral shell assumption",
+      "compute A5 spectra and Hodge carriers",
+      "define gamma=1/81, d*, Delta, T_geo",
+      "choose KL or Gibbs action data rho0, K, eta",
+      "select physical spacetime, gauge, finite Dirac, and normalization",
+      "derive continuum and phenomenology"
+    ],
+    "first_unproved_edges": [
+      "Why exterior one-form/two-form self-duality is the unique dimension principle",
+      "Why the 12-neighbor shell must be regular icosahedral rather than merely average-valence five",
+      "Why the displayed formula for d* is selected rather than stipulated",
+      "Why eta equals -ln Delta physically",
+      "Which unique rho0, K, trace domain, and normalization define the master functional"
+    ],
+    "physics_bottleneck_edges": [
+      "finite complex -> global Lorentzian spacetime and causal dynamics",
+      "hidden entropy -> area density, energy density, and Newton constant",
+      "nested stabilizers -> commuting Standard Model gauge product and global Z6 quotient",
+      "finite exterior carrier -> typed species-loaded two-sheet Dirac operator",
+      "finite spectra -> Yukawa matrices, masses, CKM, and PMNS without inserted targets",
+      "finite CAR -> local interacting QFT, Born measurement, spin-statistics, and renormalization",
+      "finite isotropy -> continuum Navier-Stokes control and Maxwell equations",
+      "reduced vortex model -> kinetic-MHD reactor and net engineering power"
+    ]
+  },
+  "contradiction_register": [
+    {"id": "X-001", "left": "Original cascade is globally bounded", "right": "Its own sequence escapes 1 -> 1.7738 -> 3.1462 -> 5.5807", "resolution": "Withdraw global boundedness."},
+    {"id": "X-002", "left": "Uniform contraction preserves a positive Lyapunov exponent", "right": "Uniform contraction forces negative separation exponents", "resolution": "Use the later two-dimensional expanding-contracting map instead."},
+    {"id": "X-003", "left": "d*=0.147510810 is the old exact logistic cycle point", "right": "The old cycle point is 0.1474219361623", "resolution": "Keep d_old and d* separate."},
+    {"id": "X-004", "left": "pi-phi-e flow independently derives d*", "right": "d* is inserted and the run ends at 0.147821404873", "resolution": "Treat as target-driven and fail the stated hard gate."},
+    {"id": "X-005", "left": "Euler and K3 force a regular icosahedron", "right": "They fix count and average valence, not equal degree or regularity", "resolution": "Add and derive an admissible selection functional or weaken the claim."},
+    {"id": "X-006", "left": "May v9 is zero-fit and anchor-free", "right": "It uses observed rho_Lambda and discloses optimized mass coefficients", "resolution": "Classify absolute scales and mass spectrum as fitted or missing-source."},
+    {"id": "X-007", "left": "36-edge historical graph is canonical", "right": "The current centered complex has 42 edges and a different spectrum", "resolution": "Retire or explicitly map the historical graph."},
+    {"id": "X-008", "left": "Nested stabilizer or Hopf ladder is the SM gauge product", "right": "Nested groups are not a commuting direct sum", "resolution": "Derive commuting left/right actions and their quotient."},
+    {"id": "X-009", "left": "Reduced or static finite operator predicts mixing", "right": "Errata and typed tests show omitted interference, isospectral sectors, bad mixing, or target selection", "resolution": "Build the full interference-preserving oriented history operator before comparison."},
+    {"id": "X-010", "left": "Response effective IR Dirac derives eigenframes", "right": "The code inserts V_CKM and U_PMNS", "resolution": "Classify as realization of response inputs, not prediction."},
+    {"id": "X-011", "left": "One unique Newton coupling is derived", "right": "Two candidate alpha_G values disagree and the area bridge is absent", "resolution": "Solve entropy-area and scale normalization first."},
+    {"id": "X-012", "left": "Entropy depth equals physical time", "right": "The strict freeze explicitly denies that identification", "resolution": "Keep time orientation and clock dynamics open."},
+    {"id": "X-013", "left": "Bare weak angle 3/8 equals response 3/13", "right": "They are different constructions with failed four-gate running", "resolution": "Derive thresholds and RG matching from one action."},
+    {"id": "X-014", "left": "Axion prediction is unique", "right": "Historical values 60.7 and 58.2 micro-eV conflict", "resolution": "Preserve both as superseded route outputs until one is derived and frozen."},
+    {"id": "X-015", "left": "Fusion enhancement is 100-1000x and early baseline is 1 W", "right": "Own table gives at most 1.503x and stated inputs imply about 1.401 MW", "resolution": "Correct arithmetic and replace the reactivity surrogate with a physical distribution calculation."},
+    {"id": "X-016", "left": "Vortex-only reactor has Q>2", "right": "Its full startup pulse gain is 0.491 and relies on 1e-6 Bohm transport", "resolution": "Report steady-state surrogate and startup or engineering gain separately."},
+    {"id": "X-017", "left": "URT_full_framework all_pass validates Higgs closure", "right": "framework_core.py omits g2^2 and reports inconsistent normalization", "resolution": "Repair regression and add invariant checks against the July or August master values."},
+    {"id": "X-018", "left": "The full_library is all work from start to finish", "right": "The 322-notebook combined source is absent and May v9 is truncated", "resolution": "Make corpus incompleteness explicit and recover missing sources before claiming exhaustiveness."}
+  ],
+  "unresolved_equations_and_tasks": [
+    {
+      "id": "U-001",      "priority": "critical",
+      "problem": "Seed selection",
+      "required_result": "Specify an admissible class and prove that one action or principle uniquely selects D=3, N=13, a regular centered icosahedron, d*, and eta without inserting them."
+    },
+    {
+      "id": "U-002",
+      "priority": "critical",
+      "problem": "Master operator",
+      "required_result": "Derive rho0, K_URT, trace domain, common normalization, and spacetime-gauge-finite gluing, then prove existence, boundedness, covariance, and relevant uniqueness."
+    },
+    {
+      "id": "U-003",
+      "priority": "critical",
+      "problem": "Spacetime and time",
+      "required_result": "Construct event gluing, continuum limit, vierbein or metric, connection, causal cones, Lorentzian signature, clock dynamics, and time orientation from the selected action."
+    },
+    {
+      "id": "U-004",
+      "priority": "critical",
+      "problem": "Gravity scale",
+      "equation": "2*k_B*eta_Delta*(d p_ex/dA)=k_B/(4*ell_*^2), ell_*^2=G*hbar",
+      "required_result": "Derive cell area, probability-area response, energy density, cutoff matching, Newton's constant, and Einstein dynamics without an electron or cosmological calibration."
+    },
+    {
+      "id": "U-005",
+      "priority": "critical",
+      "problem": "Gauge closure",
+      "required_result": "Derive commuting SU(3), SU(2), and U(1) actions, their matter representations, hypercharge, global Z6 quotient, bosonic trace normalization, symmetry breaking, and threshold-matched running."
+    },
+    {
+      "id": "U-006",
+      "priority": "critical",
+      "problem": "Fermions, Yukawa, and mixing",
+      "required_result": "Construct and evaluate a fully typed two-sheet, interference-preserving, species-loaded, oriented edge or history Dirac operator before reading targets; derive masses, CKM, PMNS, CP signs, and generations from its spectrum and eigenframes."
+    },
+    {
+      "id": "U-007",
+      "priority": "high",
+      "problem": "Higgs and RG",
+      "required_result": "Repair the g2^2 regression, derive one common bosonic normalization, obtain the Higgs potential and vacuum, and run all couplings with derived thresholds from a common matching scale."
+    },
+    {
+      "id": "U-008",
+      "priority": "high",
+      "problem": "Quantum theory",
+      "required_result": "Derive rather than assume the complex Hilbert norm, admissible observables, noncontextual refinement, unitary time evolution, measurement, locality, spin-statistics, interacting fields, renormalization, and scattering."
+    },
+    {
+      "id": "U-009",
+      "priority": "high",
+      "problem": "Cosmology",
+      "required_result": "Derive and solve the physical Friedmann or alternative cosmological equations, perturbations, inflation or bounce, baryogenesis, dark components, thermal history, and absolute amplitude from the selected action."
+    },
+    {
+      "id": "U-010",
+      "priority": "high",
+      "problem": "Dynamics and chaos",
+      "required_result": "Define the admissible evolution class before fitting, prove why the constructed complex map or another map is selected, and state which observables are invariant under reparameterization."
+    },
+    {
+      "id": "U-011",
+      "priority": "high",
+      "problem": "Fluids and electromagnetism",
+      "required_result": "Derive collision rules, continuum estimates, boundary conditions, Maxwell two-form dynamics, charges, photons, and Lorentz force from the action; do not infer Clay regularity from finite-shell isotropy."
+    },
+    {
+      "id": "U-012",
+      "priority": "high",
+      "problem": "Fusion",
+      "required_result": "Replace hand-set confinement and reactivity surrogates with kinetic-MHD transport, radiation, instabilities, electrodes, materials, pulsed startup, recovery, recirculating power, uncertainty propagation, and an experimental validation plan."
+    },
+    {
+      "id": "U-013",
+      "priority": "medium",
+      "problem": "Prime, resonance, and music claims",
+      "required_result": "Separate exact modular or spectral identities from any claimed prime theorem, physical resonator, or musical prediction; supply datasets and pre-registered tests for empirical claims."
+    },
+    {
+      "id": "U-014",
+      "priority": "critical",
+      "problem": "Prediction discipline",
+      "required_result": "Freeze the action, route, labels, normalization, and code hash before evaluating new out-of-sample observables; retain all failed and withdrawn branches in the ledger."
+    },
+    {
+      "id": "U-015",
+      "priority": "critical",
+      "problem": "Source recovery",
+      "required_result": "Recover all_my_colab_work_combined.md or the 322 original notebooks, a complete May v9 document, and missing North Star generators, then rerun this ledger against them."
+    }
+  ],
+  "artifact_classes": [
+    {
+      "class": "Foundational PDFs",
+      "members": ["North star tuning_2025-10-12_182728 (1).pdf", "Urt_2025-10-16_195050_Clean_Final (1).pdf", "lytollis_comprehensive_final-2.pdf"],
+      "role": "Original recursive, control, fusion, and Lytollis claims; contains major boundedness, contraction, and power errors."
+    },
+    {
+      "class": "Cathedral manuscript PDFs",
+      "members": ["Cathedral_Framework_Full_Manuscript.pdf", "cathedral_framework(1).pdf", "Newtons_Cathedral_Mathematical_Oddity*.pdf", "newtons_cathedral.pdf"],
+      "role": "April-May-June progression from broad phenomenology to truncated v9 to the stricter finite freeze."
+    },
+    {
+      "class": "Rail and flow PDFs",
+      "members": ["URT_Logistic_Map_Verification*.pdf", "pi_phi_e_flow*.pdf"],
+      "role": "Historical target embeddings; do not independently select the current geometric rail."
+    },
+    {
+      "class": "Migration provenance",
+      "members": ["ADD_ONLY.patch", "CATHEDRAL_WEEK_2026-07-13_TO_20_ADD_ONLY.patch", "cathedral-week-2026-07-13-to-20-additive.zip", "cathedral-week-2026-07-13-to-20.bundle", "MIGRATION_STATUS.md", "WEEKLY_MIGRATION_FILES.txt"],
+      "role": "Additive July audit history and manifest of the missing 322-notebook source."
+    },
+    {
+      "class": "Finite geometry and representation certificates",
+      "members": ["urt_seed_geometry_*", "cathedral_canonical_hodge_audit.py", "exterior_algebra_master_*", "a4_colour_lepton_*", "derive_a4_clifford_dirac.py", "derive_outer_double_cover.py", "derive_spin7_real_structure.py", "urt_spin7_structural_closure_*", "urt_hopf_spacetime_audit_*"],
+      "role": "Strongest exact mathematical core."
+    },
+    {
+      "class": "Selection simulations",
+      "members": ["RESULTS*.txt", "run_simulation.py", "run_urt_selection_simulation.py", "run_chaos_to_structure.py", "urt_*selection_simulation.zip", "urt_chaos_to_structure.zip", "N*_selected_structure.png", "02_*icosahedron.png", "03_*convergence.png", "04_*spectrum.png", "07_damage_recovery.png"],
+      "role": "Numerical selection evidence for chosen objectives, not unique seed proof."
+    },
+    {
+      "class": "Crystallization fit data",
+      "members": ["AUDIT_REPORT.txt", "STAGE2_REPORT.txt", "figure4_*.csv", "branch_probability_model_comparison.csv", "stage2_summary.csv", "summary.csv", "*model*.png"],
+      "role": "Exploratory external-data comparison that does not confirm URT."
+    },
+    {
+      "class": "Finite operator and flavor audits",
+      "members": ["lytollis_urt_*", "urt13_transfer_flavour_no_go.txt", "urt_dirac_selection_*", "urt_static_machine_*", "endpoint_conditioning_*", "urt_gate2_*", "urt_golden_platonic_*", "golden_closure_final_audit.txt", "urt_platonic_*", "urt_machine_flavour_*", "urt_active_machine_red_team.txt", "urt_ribbon_kernel_*", "urt_corrected_dual_ribbon_*", "oriented_joint_wilson_typed*"],
+      "role": "Exact carrier results plus a sequence of no-go, identifiability, fitting, and typing controls; no target-free flavor closure."
+    },
+    {
+      "class": "Integrated master reports and verifiers",
+      "members": ["Cathedral_URT_Theory_of_Nature_2026-08-22.md", "URT_Cathedral_Three_Week_Reconstruction_2026-08-24.*", "cathedral_master_verifier.py", "urt_three_week_gap_verifier.py", "urt_nature_exhaustive_*", "cathedral_unified_closure.py"],
+      "role": "Current status-controlled synthesis and conditional response ledger."
+    },
+    {
+      "class": "Response and identifiability artifacts",
+      "members": ["URT_response_closure_report.txt", "urt_response_layer_closure.*", "minimal_response_theorem*", "gate_identifiability_*", "golden_gearbox_identifiability_*", "urt_flavour_closure*", "urt_minimal_completion*"],
+      "role": "Reproducible arithmetic routes and fit-capacity diagnostics, not a common-action prediction."
+    },
+    {
+      "class": "Reactor code, data, and plots",
+      "members": ["north_star_urt_simulation.py", "north_star_*.csv", "North Star*.png", "Optimized North Star*.png", "Updated North Star*.png", "Original 100 us confinement target*.png", "Compression now determines plasma density.png"],
+      "role": "Reduced control, power-balance, and transport-sensitivity scenarios; several generator stages are missing."
+    },
+    {
+      "class": "Image-only theory branches",
+      "members": ["1000035571*", "1000035875.jpg", "1000035941.jpg", "1000036208*", "1000036299.png", "1000036307*", "1000036450.jpg", "1000036451.jpg", "1000036477*", "1781948335934.png", "1783504784218.jpeg", "5D base manifold and 13-state fibre.png", "Unified Recursive Theory Framework.png", "Universal Recursive Topology Diagram.png", "Universal Recursive Tuning Infographic.png"],
+      "role": "Recovered speculative or superseded base-manifold, gauge, action, prime, ontology, lattice, and visual roadmap branches."
+    },
+    {
+      "class": "Current package",
+      "members": ["URT_full_framework.zip", "URT_full_framework.sha256", "framework_core.py", "active_core.py"],
+      "role": "August snapshot with a Higgs normalization regression and incomplete historical scope."
+    },
+    {
+      "class": "Download companions and duplicates",
+      "members": ["*.openai-download-*", "numbered repeated PDF copies"],
+      "role": "No independent evidentiary weight; 11 are empty placeholders."
+    }
+  ],
+  "minimum_consistent_current_core": {
+    "retain_as_exact": [
+      "Finite centered-icosahedral spectra and incidence identities after the regular seed is supplied",
+      "A5 and A4 representation decompositions, exterior algebra, Hodge carriers, CAR and finite Clifford identities",
+      "Spin(7)-type finite closure and stabilizer dimensions for the chosen construction",
+      "A4 root-system arithmetic and module equivalence without Euclidean isometry",
+      "Hidden two-level Gibbs formulas for the chosen K and eta",
+      "Finite lattice isotropy moments",
+      "Mod-9 and resonator identities",
+      "Constructed two-dimensional bounded-chaos exponents",
+      "Exact arithmetic of response formulas when labeled as routes"
+    ],
+    "retain_as_numerical_only": [
+      "Chosen-objective icosahedron selection and recovery runs",
+      "Chosen edge-potential phase transitions",
+      "Reduced North Star power and control scenarios",
+      "Digitized sphere-crystallization fits"
+    ],
+    "do_not_claim_solved": [
+      "Unique seed selection",
+      "A single evaluated master action",
+      "Standard Model gauge product and normalization",
+      "Fermion masses, Yukawa matrices, CKM, PMNS, or CP phase",
+      "Higgs mass and RG closure",
+      "Absolute scale or Newton's constant",
+      "Physical time, global spacetime, Einstein dynamics, or cosmology",
+      "Born measurement, interacting QFT, or renormalization",
+      "Navier-Stokes regularity or complete Maxwell theory",
+      "Prime theorem, Riemann hypothesis, or validated music theory",
+      "Net-positive practical p-11B fusion"
+    ],
+    "required_next_checkpoint": "Freeze one admissible action and all route or label choices before computing any further observed quantity, then make at least one genuinely out-of-sample prediction."
+  }
+}

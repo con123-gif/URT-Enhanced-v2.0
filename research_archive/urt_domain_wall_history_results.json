@@ -1,0 +1,379 @@
+{
+  "augmented_wall_candidate": {
+    "A5_root_symbol_covariance_residuals": [
+      1.551802021918427e-16,
+      1.7915797092458113e-16
+    ],
+    "Wilson_parameter_witnesses": [
+      {
+        "Hermitian_kernel_eigenvalues": [
+          -1.0417225201728502,
+          -1.0417225201728502,
+          1.0417225201728502,
+          1.0417225201728502
+        ],
+        "Hermitian_kernel_residual": 0.0,
+        "Wilson_coefficient": 0.75,
+        "continuum_principal_symbol_residual": 6.670220069762254e-13,
+        "finite_transfer_witnesses": [
+          {
+            "finite_extent_GW_residual": 0.5510111292868614,
+            "sign_approximation_error": 0.29765522251622695,
+            "transfer_formula_residual": 1.4812957118856044e-15,
+            "transfer_scale": 0.15,
+            "wall_extent": 8
+          },
+          {
+            "finite_extent_GW_residual": 0.17432797285618723,
+            "sign_approximation_error": 0.08915095983810772,
+            "transfer_formula_residual": 2.2450237958750657e-15,
+            "transfer_scale": 0.15,
+            "wall_extent": 12
+          },
+          {
+            "finite_extent_GW_residual": 0.04481679018892098,
+            "sign_approximation_error": 0.022535355658120145,
+            "transfer_formula_residual": 1.0569892468323345e-14,
+            "transfer_scale": 0.3,
+            "wall_extent": 8
+          },
+          {
+            "finite_extent_GW_residual": 0.0034088412222248177,
+            "sign_approximation_error": 0.0017051474931058538,
+            "transfer_formula_residual": 9.626015131647468e-14,
+            "transfer_scale": 0.3,
+            "wall_extent": 12
+          }
+        ],
+        "minimum_nonphysical_critical_scalar": 0.20000000000000018,
+        "overlap_GW_residual": 5.161957873263918e-16,
+        "polar_sign_formula_residual": 2.7755575615628914e-16,
+        "same_extent_scale_dependence": {
+          "12": 0.08744581234500187,
+          "8": 0.27511986685810674
+        },
+        "test_momentum_Wilson_scalar": 0.19345269197714787,
+        "wall_height": 1.0
+      },
+      {
+        "Hermitian_kernel_eigenvalues": [
+          -1.002413307254662,
+          -1.0024133072546608,
+          1.002413307254661,
+          1.0024133072546615
+        ],
+        "Hermitian_kernel_residual": 0.0,
+        "Wilson_coefficient": 1.0,
+        "continuum_principal_symbol_residual": 4.17221834686821e-13,
+        "finite_transfer_witnesses": [
+          {
+            "finite_extent_GW_residual": 0.5978433072700349,
+            "sign_approximation_error": 0.3253915724982359,
+            "transfer_formula_residual": 1.0770372509710445e-15,
+            "transfer_scale": 0.15,
+            "wall_extent": 8
+          },
+          {
+            "finite_extent_GW_residual": 0.20012034208731744,
+            "sign_approximation_error": 0.1026968308081689,
+            "transfer_formula_residual": 1.6326344366558794e-15,
+            "transfer_scale": 0.15,
+            "wall_extent": 12
+          },
+          {
+            "finite_extent_GW_residual": 0.055050105789236775,
+            "sign_approximation_error": 0.027717112475614623,
+            "transfer_formula_residual": 4.683831418186264e-15,
+            "transfer_scale": 0.3,
+            "wall_extent": 8
+          },
+          {
+            "finite_extent_GW_residual": 0.004657422038659875,
+            "sign_approximation_error": 0.0023300683239282512,
+            "transfer_formula_residual": 1.2446451260593146e-13,
+            "transfer_scale": 0.3,
+            "wall_extent": 12
+          }
+        ],
+        "minimum_nonphysical_critical_scalar": 0.6000000000000001,
+        "overlap_GW_residual": 1.415259242418619e-15,
+        "polar_sign_formula_residual": 7.16794835417666e-16,
+        "same_extent_scale_dependence": {
+          "12": 0.10036676248424065,
+          "8": 0.29767446002262127
+        },
+        "test_momentum_Wilson_scalar": 0.19345269197714787,
+        "wall_height": 1.0
+      },
+      {
+        "Hermitian_kernel_eigenvalues": [
+          -0.8545167562467971,
+          -0.8545167562467965,
+          0.8545167562467967,
+          0.8545167562467968
+        ],
+        "Hermitian_kernel_residual": 0.0,
+        "Wilson_coefficient": 2.0,
+        "continuum_principal_symbol_residual": 6.352212603148517e-13,
+        "finite_transfer_witnesses": [
+          {
+            "finite_extent_GW_residual": 0.8007769628175733,
+            "sign_approximation_error": 0.45130827006635926,
+            "transfer_formula_residual": 1.2052324283032894e-15,
+            "transfer_scale": 0.15,
+            "wall_extent": 8
+          },
+          {
+            "finite_extent_GW_residual": 0.33202550249312623,
+            "sign_approximation_error": 0.1735419536672225,
+            "transfer_formula_residual": 1.579817218189608e-15,
+            "transfer_scale": 0.15,
+            "wall_extent": 12
+          },
+          {
+            "finite_extent_GW_residual": 0.11698406466196493,
+            "sign_approximation_error": 0.05937333042234291,
+            "transfer_formula_residual": 4.953985864597915e-15,
+            "transfer_scale": 0.3,
+            "wall_extent": 8
+          },
+          {
+            "finite_extent_GW_residual": 0.014740908440727396,
+            "sign_approximation_error": 0.00738408539966137,
+            "transfer_formula_residual": 3.756343311247406e-14,
+            "transfer_scale": 0.3,
+            "wall_extent": 12
+          }
+        ],
+        "minimum_nonphysical_critical_scalar": 2.2,
+        "overlap_GW_residual": 1.2936203286597729e-15,
+        "polar_sign_formula_residual": 7.560717834682166e-16,
+        "same_extent_scale_dependence": {
+          "12": 0.16615786826756113,
+          "8": 0.3919349396440163
+        },
+        "test_momentum_Wilson_scalar": 0.19345269197714787,
+        "wall_height": 1.0
+      }
+    ],
+    "candidate_kernel": "A_{r,M}(p)=i S(p)+[r B(p)-M]I, H_{r,M}=gamma5 A_{r,M}",
+    "combined_surface_and_A4_chamber": "r>0 and 0<M<min(2,8r/5); the wall profile also requires |1-M|<1",
+    "exact_A4_single_orbit_chamber": "r>0 and 0<M<8r/5; the first nonphysical A4 derivative zero has B=8/5",
+    "finite_wall_transfer": "T_a=(I-a5 H)(I+a5 H)^(-1), epsilon_L=(I-T_a^L)(I+T_a^L)^(-1)=tanh[L artanh(a5 H)]",
+    "fixed_standard_normalization_slice": "M=1 fixes the standard GW radius and i gamma.p coefficient; every r>5/8 remains admissible",
+    "infinite_wall_overlap": "D_infinity=I+gamma5 sign(H_{r,M})=I+A_{r,M}/sqrt(A_{r,M}^dagger A_{r,M})",
+    "parameter_conclusion": "The augmented wall realizes chiral surface modes and tends to the exact overlap operator, but it does not select r, the finite transfer scale a5, the extent L, or the boundary link mass.",
+    "surface_mode_theorem": {
+      "boundary_link_mass_witnesses_at_M_equals_1": [
+        {
+          "boundary_mass": 0.0,
+          "reflection_gamma5_hermiticity_residual": 0.0,
+          "smallest_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "zero_mode_count": 4
+        },
+        {
+          "boundary_mass": 0.1,
+          "reflection_gamma5_hermiticity_residual": 0.0,
+          "smallest_singular_values": [
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "zero_mode_count": 0
+        },
+        {
+          "boundary_mass": 1.0,
+          "reflection_gamma5_hermiticity_residual": 0.0,
+          "smallest_singular_values": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zero_mode_count": 0
+        }
+      ],
+      "finite_slab_statement": "An open finite slab has a rank-2 Weyl sector on each wall. At M=1 both are exactly supported on their boundary layers, so the 4-dimensional zero space is explicit. A single boundary sector requires a half-line/orbifold or another boundary prescription.",
+      "half_line_normalizability": "|1-M|<1, equivalently 0<M<2",
+      "profile": "psi_s proportional to (1-M)^s",
+      "wall_extent": 8,
+      "witnesses": [
+        {
+          "absolute_tail_ratio": 0.5,
+          "expected_truncation_tail": 0.003382937543396614,
+          "left_wall_mode_residual": 0.003382937543396614,
+          "near_surface_mode_multiplicity": 4,
+          "right_wall_mode_residual": 0.003382937543396614,
+          "smallest_singular_value": 0.0029299446037958127,
+          "wall_height": 0.5
+        },
+        {
+          "absolute_tail_ratio": 0.19999999999999996,
+          "expected_truncation_tail": 2.508277496618189e-06,
+          "left_wall_mode_residual": 2.5082774966181895e-06,
+          "near_surface_mode_multiplicity": 4,
+          "right_wall_mode_residual": 2.5082774966181895e-06,
+          "smallest_singular_value": 2.4576000001022657e-06,
+          "wall_height": 0.8
+        },
+        {
+          "absolute_tail_ratio": 0.0,
+          "expected_truncation_tail": 0.0,
+          "left_wall_mode_residual": 0.0,
+          "near_surface_mode_multiplicity": 4,
+          "right_wall_mode_residual": 0.0,
+          "smallest_singular_value": 0.0,
+          "wall_height": 1.0
+        },
+        {
+          "absolute_tail_ratio": 0.19999999999999996,
+          "expected_truncation_tail": 2.508277496618189e-06,
+          "left_wall_mode_residual": 2.5082774966181895e-06,
+          "near_surface_mode_multiplicity": 4,
+          "right_wall_mode_residual": 2.5082774966181895e-06,
+          "smallest_singular_value": 2.4575999999763635e-06,
+          "wall_height": 1.2
+        },
+        {
+          "absolute_tail_ratio": 0.5,
+          "expected_truncation_tail": 0.003382937543396614,
+          "left_wall_mode_residual": 0.003382937543396614,
+          "near_surface_mode_multiplicity": 4,
+          "right_wall_mode_residual": 0.003382937543396614,
+          "smallest_singular_value": 0.002929944603795859,
+          "wall_height": 1.5
+        }
+      ]
+    }
+  },
+  "certificate": "URT oriented domain-wall / recursive-history boundary audit",
+  "date": "2026-09-03",
+  "determinant_phase": {
+    "allowed_boundary_counterterm": "exp(i lambda chi Omega5), lambda real",
+    "conclusion": "A domain-wall/PV quotient can reproduce the index/anomaly class, but the periodic nowhere-zero boundary factor has zero winding for every lambda. Without an independently normalized bulk level and boundary phase convention, inflow does not select lambda.",
+    "counterterm_witnesses": [
+      {
+        "lambda": 0.0,
+        "maximum_modulus": 1.0,
+        "minimum_modulus": 1.0,
+        "periodicity_residual": 0.0,
+        "winding": 0.0
+      },
+      {
+        "lambda": 0.731,
+        "maximum_modulus": 1.0000000000000002,
+        "minimum_modulus": 0.9999999999999998,
+        "periodicity_residual": 3.5808672407068607e-16,
+        "winding": 2.8271597168564594e-16
+      },
+      {
+        "lambda": 1.123,
+        "maximum_modulus": 1.0000000000000002,
+        "minimum_modulus": 0.9999999999999998,
+        "periodicity_residual": 5.501113421769911e-16,
+        "winding": 0.0
+      }
+    ],
+    "inherited_determinant_line_winding": 12
+  },
+  "existing_history_boundary_obstruction": {
+    "A5_action_monomial_residuals": [
+      2.220446049250313e-16,
+      2.220446049250313e-16
+    ],
+    "closed_branch_A5_commutator_residuals": [
+      1.4661933719414479e-15,
+      1.4392811567525336e-15
+    ],
+    "closed_branch_cycle_count": 12,
+    "closed_branch_cycle_lengths": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "closed_left_fifth_trace": {
+      "imag": -30.000000000000004,
+      "real": 51.96152422706635
+    },
+    "closed_normalized_Omega5": {
+      "imag": 1.1842378929335003e-16,
+      "real": 1.0000000000000002
+    },
+    "closed_right_fifth_trace": {
+      "imag": 30.000000000000007,
+      "real": 51.96152422706634
+    },
+    "exact_dilemma": "The existing history coordinate cannot simultaneously be a domain-wall slab and retain the ordered Wilson invariant: periodic pentagons preserve Omega5 but have no wall, while local cuts create walls only by breaking A5 and setting the fifth trace to zero.",
+    "history_dimension": 60,
+    "left_monomial_residual": 2.220446049250313e-16,
+    "local_boundary_constraints": {
+      "constraint_nullity": 1,
+      "constraint_rank": 59,
+      "interpretation": "The two A5 generators act transitively on the 60 history states. A commuting diagonal projector is constant, so its rank is 0 or 60; there is no local A5-invariant rank-12 choice of one wall site per pentagon.",
+      "next_singular_value": 0.47490285528005066,
+      "smallest_singular_value": 2.366485975097159e-16
+    },
+    "representative_one_cut_per_cycle": {
+      "boundary_projector_A5_commutator_residuals": [
+        2.8284271247461903,
+        2.8284271247461903
+      ],
+      "boundary_projector_rank": 12,
+      "interpretation": "Cutting one edge in each pentagon produces twelve open five-site chains, but kills every degree-five closed walk and breaks the local A5 symmetry.",
+      "open_shift_A5_commutator_residuals": [
+        2.8284271247461903,
+        2.8284271247461903
+      ],
+      "open_shift_fifth_power_residual": 0.0,
+      "open_shift_fifth_trace": {
+        "imag": 0.0,
+        "real": 0.0
+      }
+    }
+  },
+  "method_provenance_not_URT_premises": [
+    {
+      "url": "https://arxiv.org/abs/hep-lat/9206013",
+      "work": "D. B. Kaplan, A Method for Simulating Chiral Fermions on the Lattice"
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-lat/9405004",
+      "work": "V. Furman and Y. Shamir, Axial Symmetries in Lattice QCD with Kaplan Fermions"
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-lat/9707022",
+      "work": "H. Neuberger, Exactly massless quarks on the lattice"
+    }
+  ],
+  "observational_targets_used": false,
+  "premise_status": "CANDIDATE ONLY: standard domain-wall/overlap machinery is tested as explicitly new input; it is not derived from or adopted as a URT axiom.",
+  "uniqueness_gate": {
+    "A5_covariance_and_orientation": "FAIL for a local cut: the cut breaks A5 and erases Omega5",
+    "KO6_reality": "PASS for the reflection/gamma5-hermitian vectorlike slab; CONDITIONAL for isolating one chiral boundary determinant and its measure phase",
+    "doubler_free_A4_limit": "PASS for the open chamber 0<M<8r/5, but the chamber is continuous",
+    "gauge_covariance": "CONDITIONAL: covariant link insertion is compatible with every member, but the recoverable premises contain no microscopic gauge-link bulk action or coupling that selects one member",
+    "minimum_next_premise": "An independently stated new bulk action must add a wall coordinate or nonlocal boundary projector, derive r/a5/extent/boundary mass, and fix the determinant phase. Otherwise the flavour gate remains closed.",
+    "one_chiral_boundary_sector": "FAIL on the existing periodic history carrier; CONDITIONAL on adding a half-line/orbifold boundary prescription",
+    "phenomenology_gate": "CLOSED",
+    "unique_boundary_condition": "FAIL: the boundary link mass remains",
+    "unique_kernel_normalization": "FAIL: after M=1 fixes the conventional radius/principal symbol, r>5/8 remains",
+    "unique_measure_phase": "FAIL: lambda remains a real zero-winding counterterm",
+    "unique_wall_transfer": "FAIL: a5 and finite wall extent remain",
+    "verdict": "F/no-go for selecting the microscopic action by merely naming a domain-wall or anomaly-inflow regulator."
+  }
+}

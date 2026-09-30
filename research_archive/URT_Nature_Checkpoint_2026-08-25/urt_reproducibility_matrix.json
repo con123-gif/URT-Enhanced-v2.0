@@ -1,0 +1,560 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-25",
+  "scope": {
+    "directory": "/workspace/scratch/804d9a77836a/full_library",
+    "python_scripts_total": 50,
+    "shared_files_modified_during_audit": false,
+    "execution_method": "Each script was copied to an isolated temporary directory. Hard-coded /mnt/data paths were rewritten only in the temporary copy. Inputs in full_library were read-only.",
+    "audit_workspace": "/tmp/urt_repro_audit.XmAv6w",
+    "result_index": "/tmp/urt_repro_audit.XmAv6w/results.json",
+    "limitations": [
+      "The standard runtime lacks PyTorch and JAX.",
+      "A minimal audit-only networkx compatibility module was used for the small graph API needed by several scripts.",
+      "A minimal audit-only mpmath compatibility module used double precision for the one script that needed elementary high-precision functions.",
+      "A torch import stub let oriented_joint_wilson_typed.py execute its NumPy-only path, but it deliberately raises if tensor operations are attempted.",
+      "Temporary audit paths are not durable deliverables."
+    ]
+  },
+  "classification_definitions": {
+    "exact": "The executable establishes finite algebraic, combinatorial, representation-theoretic, or explicitly defined dynamical identities. Physical interpretation may still be absent.",
+    "conditional": "The result is valid only after supplied operators, states, closures, normalizations, ansatzes, or model assumptions. It is not a blind derivation of nature.",
+    "fitted": "Observed or frozen target values enter formulas, optimization objectives, branch selection, inverse calibration, or post-hoc label routing. Numerical agreement is not a prediction."
+  },
+  "top_level_summary": {
+    "run_status_counts": {
+      "pass": 41,
+      "blocked": 9
+    },
+    "classification_counts": {
+      "exact": 16,
+      "conditional": 20,
+      "fitted": 14
+    },
+    "portable_as_delivered": false,
+    "current_theory_status": "A substantial exact finite A5/A4/Hodge/Clifford core is reproduced. A single target-free action deriving flavour, gauge running, gravity, cosmology, continuum dynamics, and dimensional scales is not present. The response/gearbox layers are arithmetic or fitted, and the declared Gate-2 flavour operator has a structural near-identity no-go.",
+    "genuinely_reproducible_core": [
+      "Centred icosahedral complex: 13 vertices, 42 edges, 20 faces; d1*d0=0; Betti numbers (1,11,1).",
+      "Face incidence: B^T B=5I+2A, rank(B)=12, dim ker(B^T)=8, hidden dual-Laplacian spectrum 3^4 plus 5^4.",
+      "A5 rotation group order 60; Hom(3,3')=4+5; normalized intertwiner residuals are approximately 1e-15.",
+      "Mixed 4_3 x 4_5 portal squared singular values (20 plus/minus 8 sqrt(5))/15; amplitude ratio phi^3 and power ratio phi^6.",
+      "Exterior algebra of the four-dimensional carrier has dimensions 1,4,6,4,1 with Lambda^2=3+3'.",
+      "A4 subgroup/fixed-axis and 4-simplex facts, quaternionic Hopf quotient S^7/SU(2)=HP^1=S^4, and the order-240 outer double cover.",
+      "Finite 96-state gauge trace U(1):SU(2):SU(3)=5/3:1:1, giving the bare boundary value sin^2(theta_W)=3/8.",
+      "Exact finite fluid second, third, and fourth moments; these do not by themselves derive Navier-Stokes.",
+      "Exact no-go results: A4 covariance leaves 48 equivariant Dirac degrees of freedom; the natural A4-graded connection is generation-degenerate; species-separable spectral actions leave a 16-dimensional relative-orientation flat space."
+    ],
+    "decisive_nonclosures": [
+      "H21 is not the four-dimensional curvature module after Bianchi: the pre-Bianchi 21 and post-Bianchi 20 have different A5 types.",
+      "Bare sin^2(theta_W)=3/8 conflicts with the response slot 3/13; the one-loop four-gate run gives about 0.31131 and alpha_s about 0.02833 at its declared IR scale.",
+      "The declared Gate-2 right multiplication by R_Delta on the left-handed carrier forces CKM and PMNS to I+O(Delta); the explicit off-diagonal entries are around 1e-3 or smaller, not observed mixing.",
+      "Moving the hierarchy filter to the opposite matrix side removes under-mixing but produces severe over-mixing; spectral functional calculus cannot change primitive eigenprojectors.",
+      "The gauge-preserving exterior repair gives u=nu spectra, d=e spectra, and J_PMNS=-J_CKM across every archived normalization/weight choice.",
+      "The Higgs trace ratio is exact for the supplied operator, but normalization 4 gives lambda=0.1269228 rather than the response target 0.1291152; matching it requires normalization 4.069095.",
+      "The Newton fiveplet has zero central response and no radial 1/r Green function; Newton's constant and the metric ansatz are not derived.",
+      "No Navier-Stokes solver or continuum limit is present; only conditional BGK/Chapman-Enskog moment formulas p=rho*c^2/5 and nu=c^2*tau/5.",
+      "The North Star run is a reduced controller ODE with an anchored fusion reactivity surrogate. In the fresh comparison URT control used about 52 percent more auxiliary energy than fixed control over two seconds."
+    ],
+    "target_leakage_and_identifiability": [
+      "cathedral_dimensionless_core_v2_6.py constructs named numerical slots and then attaches physics labels. Its pi-phi-e flow takes d_star as an explicit target, and its logistic parameter is bisected to force a branch to d_star.",
+      "The archived raw chaos estimator does not select 0.15: means are about 0.8899 for logistic, 0.9929 for Henon, and 1.0 for tent; the refinement map explicitly attracts inputs to 0.15.",
+      "golden_gearbox_identifiability_audit.py has eight controls for eight observables, Jacobian rank eight, and an exact target root residual about 6.94e-18.",
+      "gate_identifiability_audit.py has 14 controls for eight observables, rank eight, and nullity six.",
+      "urt_platonic_u2_holonomy.py fits three continuous parameters per sector; urt_corrected_dual_ribbon_solver.py chooses discrete orientations/endpoints by frozen target comparison; urt_ribbon_kernel_solver.py contains targets directly in its objective.",
+      "Two incompatible neutrino mass-squared-ratio slots coexist: about 0.0286524 from (d_star+d_star^2)^2 and about 0.0298703 from the mass tree. No common action selects one."
+    ],
+    "reproducibility_fixes": [
+      "Replace every hard-coded /mnt/data path by a CLI argument or Path(__file__).resolve().parent and an explicit output directory.",
+      "Add a locked dependency file with Python, NumPy, SciPy, pandas, matplotlib, networkx, mpmath, PyTorch, and JAX versions.",
+      "Include or deterministically generate clifford_six_axis_results.json and unique_machine_intertwiner.npz before dependent scripts run.",
+      "Fix random seeds, group-element ordering, eigenspace phase/orientation conventions, and optimizer tolerances; reject optimizer records when gradient norms are not small even if success=true.",
+      "Create one dependency-ordered command that regenerates every claimed output from clean inputs and compares invariant quantities rather than basis-dependent branch indices."
+    ],
+    "next_equations": [
+      "Retain the corrected declared amplitude T_tilde[f,e]=C5(H_e)+C43(Xi3_e+J*q_f/3)+i*C45(Xi5_e+J*Delta*g(q_f)/5), then form K_f,e=T_tilde^dagger*T_tilde with all interference terms.",
+      "Derive K0_f from the passive state and use R_f,e=K0_f^(-1/2)*K_f,e*K0_f^(-1/2); do not replace K0_f by identity or a fitted whitening matrix.",
+      "A species-separable spectral action cannot choose flavour. The next finite action must contain joint noncommuting species/history terms retaining h_fg=g_fg+i*omega_fg. The first diagnostic invariants are Tr(K_f*K_g) and (1/(3i))*Tr([K_f,K_g]^3).",
+      "A concrete zero-target test is a single block action Gamma[x]=V_edge(x)-eta^(-1)*log det(1+exp(-eta*D_full(x)^2)), with every off-diagonal species block fixed by the exact charge-plane h and the common real/graded/star convention. Solve grad Gamma=0, require a positive Hessian, certify the orbit globally, and only then reveal CKM/PMNS.",
+      "Continuum claims require a separate scaling theorem from a declared discrete action to Maxwell/Dirac/Einstein/BGK dynamics plus one physical scale. Without that bridge, gravity, cosmology, and fusion numbers remain models rather than deductions."
+    ]
+  },
+  "scripts": [
+    {
+      "script": "a4_colour_lepton_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 5.485,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "Five A4 subgroups, V4 restricted to A4 as 1+3, and the five fixed directions forming a regular 4-simplex are reproduced. Lepton/colour labels are an added physical interpretation."
+    },
+    {
+      "script": "active_core.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.253,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "not_standalone",
+      "key_verdict": "Imports successfully but is an infrastructure/constants module with no standalone verification output. Downstream claims inherit their own assumptions."
+    },
+    {
+      "script": "cathedral_canonical_hodge_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.064,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The incidence/Hodge ranks, Betti numbers, and hidden 3^4 plus 5^4 spectrum reproduce. The script correctly states that bare Hodge data do not generate particle labels."
+    },
+    {
+      "script": "cathedral_dimensionless_core_v2_6.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.368,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_prescription",
+      "key_verdict": "The numerical ledger is reproducible, but physics labels are attached after arbitrary slots are constructed. The flow contains x-target with target=d_star, the logistic r is inversely pinned to d_star, and the alpha coefficient is target-rationalized."
+    },
+    {
+      "script": "cathedral_finite_dirac_trace_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.482,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The universal cubic, heat traces, and bare gauge traces reproduce. The canonical bare result is sin^2(theta_W)=3/8, not the response value 3/13."
+    },
+    {
+      "script": "cathedral_full_closure_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.584,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_constructed_model",
+      "key_verdict": "The chosen 30-state chiral potential has a stable branch with minimum Hessian about 0.9256, but its direct CKM and PMNS matrices are far from observation; absolute scales and action normalization remain absent."
+    },
+    {
+      "script": "cathedral_master_verifier.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.146,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "This is the most reliable status audit: it reproduces the exact finite core and explicitly marks hypercharge, Born rule, gravity, Higgs, fluid, cosmology, masses, and black-hole claims as conditional, supplied, or underived."
+    },
+    {
+      "script": "cathedral_unified_closure.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.070,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_prescription",
+      "key_verdict": "A reproducible response ledger, not a solver. Cosmology, gravity, masses, and mixing are route assignments built from selected constants rather than stationary outputs of one action."
+    },
+    {
+      "script": "derive_a4_clifford_dirac.py",
+      "run_status": "pass",
+      "runtime_seconds": 1.845,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_candidate_scan",
+      "key_verdict": "Clifford/Weyl constructions execute, but multiple normalization/loading choices give widely different mixing. No internal theorem selects the physical variant."
+    },
+    {
+      "script": "derive_outer_double_cover.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.382,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The order-240 double cover, order-120 quotient, kernel/center of order two, and outer lift of order 12 reproduce to numerical precision."
+    },
+    {
+      "script": "derive_spin7_real_structure.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.211,
+      "failure": {
+        "type": "missing_input",
+        "detail": "clifford_six_axis_results.json is absent from full_library and the inspected framework archive."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "not_reproducible",
+      "key_verdict": "The claimed Spin(7) real-structure continuation cannot be regenerated until its undeclared upstream JSON is supplied or derived."
+    },
+    {
+      "script": "exterior_algebra_master_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.295,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "Exterior dimensions 1,4,6,4,1, Lambda^2=3+3', Hodge identities, CAR, and Clifford relations reproduce. Interpreting 16 dimensions as one Standard Model generation is not established by dimension counting."
+    },
+    {
+      "script": "framework_core.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.078,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_mixed_status",
+      "key_verdict": "It honestly separates exact finite data from supplied Standard Model multiplets and response numbers. Its North Star values are explicitly labelled non-experimental, and it records the nested-versus-direct-sum gauge obstruction."
+    },
+    {
+      "script": "gate_identifiability_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.312,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The active-machine flavour map has 14 controls, eight observables, Jacobian rank eight, and nullity six. Its near-perfect ledger match is non-identifiable, even when controls are renamed as Cathedral invariants."
+    },
+    {
+      "script": "gauge_preserving_exterior_solver_q.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.842,
+      "failure": {
+        "type": "missing_dependency",
+        "detail": "PyTorch is not installed."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "archived_output_only",
+      "key_verdict": "Archived output has exact Weyl/Clifford checks but an exact sector degeneracy: u=nu spectra, d=e spectra, and J_PMNS=-J_CKM for all 12 normalization/weight cases. This repair cannot yield four fermion sectors."
+    },
+    {
+      "script": "golden_gearbox_identifiability_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.351,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "It proves the golden gearbox is locally a full target fit: eight controls, eight observables, rank eight, with target residual about 6.94e-18."
+    },
+    {
+      "script": "lytollis_urt_operator_closure_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 1.560,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "basis_sensitive_and_retracted",
+      "key_verdict": "Vacuum invariants reproduce, but fresh mixing/CP values differ from the archived JSON and the accompanying erratum retracts the dressed calculation because interference terms, passive metric, phase fixing, and action-derived ordering were missing."
+    },
+    {
+      "script": "lytollis_urt_oriented_chiral_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 1.324,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_constructed_model",
+      "key_verdict": "The stable vacuum calculation reproduces, but raw and dressed mixing diagnostic errors are large. The erratum says this reduced operator is not the declared full finite operator."
+    },
+    {
+      "script": "minimal_response_theorem.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.061,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_prescription",
+      "key_verdict": "It algebraically reconstructs unitary CKM/PMNS matrices from preassigned primitive angles and Jarlskog sources. It verifies parameterization consistency, not origin of those values."
+    },
+    {
+      "script": "north_star_urt_simulation.py",
+      "run_status": "pass",
+      "runtime_seconds": 1.798,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_toy_ode",
+      "key_verdict": "The controller ODE reproduces. Over two seconds the URT controller used about 378.35 kJ auxiliary energy versus 248.99 kJ fixed control while tracking a higher temperature; the model assumes its reactivity surrogate, confinement time, alpha-heating fraction, and target. It is not a reactor-gain demonstration."
+    },
+    {
+      "script": "oriented_joint_wilson_typed.py",
+      "run_status": "pass",
+      "runtime_seconds": 6.592,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_numpy_path",
+      "key_verdict": "The typed Wilson/history construction executes without tensor optimization, but its selected CKM and PMNS outputs are far from observed flavour. It demonstrates that this blind candidate action does not close the sector."
+    },
+    {
+      "script": "run_chaos_to_structure.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.592,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced_and_ablated",
+      "key_verdict": "For N=12, 40 seeds converge to the same icosahedral energy and graph. A plain monotone-gradient ablation reached the same result for five of five seeds, so the optimization selects the icosahedron once N=12 is supplied; it does not show that URT selects N=12 or causes the geometry."
+    },
+    {
+      "script": "run_endpoint_test.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.839,
+      "failure": {
+        "type": "missing_dependency",
+        "detail": "PyTorch is not installed."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "archived_output_only",
+      "key_verdict": "The archived endpoint audit validates the original near-identity result, then shows that codomain placement overmixes badly. Matrix-side placement alone is not a flavour solution."
+    },
+    {
+      "script": "run_simulation.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.294,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_constructed_optimization",
+      "key_verdict": "With N=12 supplied, the generic spherical repulsion/log-distance optimization returns 30 edges, 20 faces, degree five, and the expected centred spectrum."
+    },
+    {
+      "script": "run_urt_selection_simulation.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.429,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_constructed_optimization",
+      "key_verdict": "The declared URT-stepped optimizer returns the icosahedron for supplied N=12, but an ablation shows the URT recursion is not necessary for that result."
+    },
+    {
+      "script": "test_covariant_golden_impedance.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.278,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduced_candidate_scan",
+      "key_verdict": "A scan over many hand-named impedance/filter recipes produces many outcomes and compares them to the flavour ledger. It is model selection against targets, not a unique derivation."
+    },
+    {
+      "script": "test_species_loaded_nonlinear_cycle.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.796,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduced_target_scored_search",
+      "key_verdict": "The nonlinear cycle search converges numerically, but alternatives are ranked by a target-based score and the best displayed matrices remain far from physical mixing."
+    },
+    {
+      "script": "urt_corrected_dual_ribbon_solver.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.384,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduced_discrete_target_selection",
+      "key_verdict": "The corrected two-sheet computation is reproducible, but the script explicitly selects finite orientations and endpoints by comparison with frozen target matrices. Discrete tuning remains tuning."
+    },
+    {
+      "script": "urt_dirac_selection_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 1.817,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "Reproduces three decisive no-go results: 48-dimensional A4-equivariant freedom, generation degeneracy of the natural connection, and a 16-dimensional flavour-orientation flat space for species-separable spectral actions. It identifies omega_fg and commutator-cubic curvature as necessary information."
+    },
+    {
+      "script": "urt_flavour_closure.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.063,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_prescription",
+      "key_verdict": "Produces exactly unitary CKM/PMNS matrices from ledger primitives assigned by hand. The term target-free in its banner is unsupported by the dependency chain."
+    },
+    {
+      "script": "urt_four_gate_closure.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.087,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_prescription",
+      "key_verdict": "The arithmetic is reproducible, including a logistic rail pinned to d_star. Its own one-loop flow predicts sin^2(theta_W) about 0.31131 and alpha_s about 0.02833, requiring large additional beta-function differences to approach observation."
+    },
+    {
+      "script": "urt_gate2_global_modular_eta_scan.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.329,
+      "failure": {
+        "type": "missing_dependency",
+        "detail": "JAX is not installed."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "archived_output_only",
+      "key_verdict": "The eta scan cannot be regenerated in the current environment. Archived scans explore a chosen modular objective; they do not remove the structural flavour-placement obstruction."
+    },
+    {
+      "script": "urt_gate2_global_modular_solver.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.359,
+      "failure": {
+        "type": "missing_dependency",
+        "detail": "JAX is not installed."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "archived_output_only",
+      "key_verdict": "The global modular optimization cannot be rerun here. Archived success flags are insufficient without small gradients and a global certificate."
+    },
+    {
+      "script": "urt_gate2_solver(1).py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.353,
+      "failure": {
+        "type": "missing_dependency",
+        "detail": "JAX is not installed."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "archived_output_only",
+      "key_verdict": "A duplicate/variant Gate-2 optimizer blocked by JAX. Its archived family does not provide an independent closure proof."
+    },
+    {
+      "script": "urt_gate2_solver.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.776,
+      "failure": {
+        "type": "missing_dependency",
+        "detail": "PyTorch is not installed."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "archived_output_statically_audited",
+      "key_verdict": "The archived declared Gate-2 solution is structurally decisive: K_f=R_Delta*A_f*R_Delta forces a common left flag and nearly identity CKM/PMNS, with Jarlskog invariants around 1e-13 to 1e-12."
+    },
+    {
+      "script": "urt_gate2_spectral_solver.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.318,
+      "failure": {
+        "type": "missing_dependency",
+        "detail": "JAX is not installed."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "archived_output_statically_audited",
+      "key_verdict": "The covariant spectral filter changes eigenvalues but preserves primitive projectors, so it cannot repair mixing. Archived eta_conf records marked success have gradient norms about 82.4 and 1043.6 and are not stationary solutions."
+    },
+    {
+      "script": "urt_golden_platonic_closure.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.060,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_gearbox",
+      "key_verdict": "The close flavour ledger reproduces, but the identifiability audit shows its eight effective controls locally fit all eight observables."
+    },
+    {
+      "script": "urt_hopf_spacetime_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 5.664,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The quaternionic Hopf quotient, fibre invariance, and local four-dimensional chart reproduce. Lorentzian signature, time, global gluing, field equations, and scale are additional postulates."
+    },
+    {
+      "script": "urt_machine_flavour_closure.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.325,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_nonidentifiable_map",
+      "key_verdict": "It matches the frozen flavour ledger at roughly 1e-5 relative accuracy, but the map has 14 controls for eight outputs and six local null directions. Claimed unique group choices are unique only after selected indices/pairs are fixed."
+    },
+    {
+      "script": "urt_minimal_completion.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.023,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_prescription",
+      "key_verdict": "Mass, neutrino, cosmology, Higgs, and gravity ledgers reproduce their definitions. They are response-tree assignments and include a neutrino ratio inconsistent with the separate cosmology response slot."
+    },
+    {
+      "script": "urt_nature_exhaustive_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 1.247,
+      "failure": null,
+      "classification": "conditional",
+      "output_reproducibility": "reproduced_mixed_status",
+      "key_verdict": "The finite complex/Hodge and supplied operator spectra reproduce. The audit itself calls CKM/PMNS a supplied mixing layer and lists the passive state, unique operator, continuum dynamics, and physical scale as missing."
+    },
+    {
+      "script": "urt_platonic_axis_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 6.447,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The platonic axes and A5 matching relations reproduce. Assigning particular axes to quark/lepton sectors is not fixed by these geometry identities alone."
+    },
+    {
+      "script": "urt_platonic_u2_holonomy.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.472,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_fit",
+      "key_verdict": "Fits three continuous parameters in each sector against flavour data. Six controls have Jacobian rank six for eight observables; close formula parameters remain target-informed."
+    },
+    {
+      "script": "urt_response_layer_closure.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.021,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "not_standalone",
+      "key_verdict": "Imports with no standalone output and exposes the preassigned response layer consumed by other ledgers. It is not a dynamical derivation."
+    },
+    {
+      "script": "urt_ribbon_kernel_solver.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.457,
+      "failure": null,
+      "classification": "fitted",
+      "output_reproducibility": "reproduces_target_optimized_search",
+      "key_verdict": "Its objective contains frozen CKM/PMNS/J targets explicitly. The one-sheet composition was later withdrawn, and the displayed lepton structure is not observed."
+    },
+    {
+      "script": "urt_seed_geometry_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.255,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The strongest finite result: all chain, rank, Hodge, A5 projector, intertwiner, depth-projector, and mixed-portal identities reproduce at approximately 1e-14 or better."
+    },
+    {
+      "script": "urt_static_machine_theorem.py",
+      "run_status": "blocked",
+      "runtime_seconds": 0.254,
+      "failure": {
+        "type": "missing_input",
+        "detail": "unique_machine_intertwiner.npz is absent from full_library and the inspected framework archive."
+      },
+      "classification": "conditional",
+      "output_reproducibility": "not_reproducible",
+      "key_verdict": "The claimed static-machine theorem cannot be regenerated until the undeclared intertwiner artifact is supplied or generated by an auditable upstream step."
+    },
+    {
+      "script": "urt_target_free_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 3.199,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "It falsifies the chaos-origin claim: raw estimators cluster near 0.89 to 1.0, not 0.15, while the archived refinement map pulls arbitrary seeds toward 0.15 by construction."
+    },
+    {
+      "script": "urt_three_week_gap_verifier.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.122,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced",
+      "key_verdict": "The A4 root system and oriented icosahedral faces are the same 20-point A5 permutation set but are not Euclidean-isometric; A4*/A4=Z5 and the mod-9 doubling cycle are exact, while no Mersenne-prime theorem follows."
+    },
+    {
+      "script": "urtf_operator_exact_audit.py",
+      "run_status": "pass",
+      "runtime_seconds": 0.325,
+      "failure": null,
+      "classification": "exact",
+      "output_reproducibility": "reproduced_defined_map",
+      "key_verdict": "The derivative and critical-point statements for the explicitly chosen URTF map reproduce. This validates that map, not a unique selection of it from the finite geometry."
+    }
+  ]
+}

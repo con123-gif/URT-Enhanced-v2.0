@@ -1,0 +1,153 @@
+{
+  "certificate": "URT admissible OS quadratic three-scale analysis",
+  "channels": {
+    "point_split_mesons": {
+      "Wilson_control": {
+        "consistent_with_accumulated_second_difference_roundoff": true,
+        "fitted_pairwise_inverse_step_exponents": [
+          1.9876087903305597,
+          2.0304797837843878
+        ],
+        "h_squared_absolute_curvature_spread_ratio": 1.0406918842202786,
+        "nonzero_quadratic_sign_resolved": false,
+        "scales": [
+          {
+            "absolute_curvature_times_step_squared": 6.576171445481823e-14,
+            "apparent_minimum_curvature": -1.0275267883565349e-07,
+            "coarse_step": 0.0008,
+            "input": "urt_admissible_os_quadratic_response_h0008_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 6.843768252554071e-14,
+            "apparent_minimum_curvature": -1.7109420631385177e-10,
+            "coarse_step": 0.02,
+            "input": "urt_admissible_os_quadratic_response_h002_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 6.700696779023883e-14,
+            "apparent_minimum_curvature": -4.187935486889927e-11,
+            "coarse_step": 0.04,
+            "input": "urt_admissible_os_quadratic_response_h004_results.json"
+          }
+        ]
+      },
+      "overlap": {
+        "consistent_with_accumulated_second_difference_roundoff": true,
+        "fitted_pairwise_inverse_step_exponents": [
+          1.9963181813602295,
+          2.0135136113432353
+        ],
+        "h_squared_absolute_curvature_spread_ratio": 1.0119218221193933,
+        "nonzero_quadratic_sign_resolved": false,
+        "scales": [
+          {
+            "absolute_curvature_times_step_squared": 4.2098545181190636e-14,
+            "apparent_minimum_curvature": -6.577897684561036e-08,
+            "coarse_step": 0.0008,
+            "input": "urt_admissible_os_quadratic_response_h0008_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 4.260043654832603e-14,
+            "apparent_minimum_curvature": -1.0650109137081507e-10,
+            "coarse_step": 0.02,
+            "input": "urt_admissible_os_quadratic_response_h002_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 4.220326464199076e-14,
+            "apparent_minimum_curvature": -2.6377040401244223e-11,
+            "coarse_step": 0.04,
+            "input": "urt_admissible_os_quadratic_response_h004_results.json"
+          }
+        ]
+      }
+    },
+    "scalar_density": {
+      "Wilson_control": {
+        "consistent_with_accumulated_second_difference_roundoff": true,
+        "fitted_pairwise_inverse_step_exponents": [
+          2.0488710626484825,
+          1.9205440410722712
+        ],
+        "h_squared_absolute_curvature_spread_ratio": 1.1703582307740146,
+        "nonzero_quadratic_sign_resolved": false,
+        "scales": [
+          {
+            "absolute_curvature_times_step_squared": 2.78562815160736e-13,
+            "apparent_minimum_curvature": -4.352543986886499e-07,
+            "coarse_step": 0.0008,
+            "input": "urt_admissible_os_quadratic_response_h0008_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 2.380150007374314e-13,
+            "apparent_minimum_curvature": -5.950375018435785e-10,
+            "coarse_step": 0.02,
+            "input": "urt_admissible_os_quadratic_response_h002_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 2.514912943180869e-13,
+            "apparent_minimum_curvature": -1.571820589488043e-10,
+            "coarse_step": 0.04,
+            "input": "urt_admissible_os_quadratic_response_h004_results.json"
+          }
+        ]
+      },
+      "overlap": {
+        "consistent_with_accumulated_second_difference_roundoff": true,
+        "fitted_pairwise_inverse_step_exponents": [
+          1.9774057168539003,
+          2.0183271769651676
+        ],
+        "h_squared_absolute_curvature_spread_ratio": 1.0754381842666503,
+        "nonzero_quadratic_sign_resolved": false,
+        "scales": [
+          {
+            "absolute_curvature_times_step_squared": 9.399831281330439e-13,
+            "apparent_minimum_curvature": -1.4687236377078808e-06,
+            "coarse_step": 0.0008,
+            "input": "urt_admissible_os_quadratic_response_h0008_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 1.0108937485606868e-12,
+            "apparent_minimum_curvature": -2.527234371401717e-09,
+            "coarse_step": 0.02,
+            "input": "urt_admissible_os_quadratic_response_h002_results.json"
+          },
+          {
+            "absolute_curvature_times_step_squared": 9.981331528153493e-13,
+            "apparent_minimum_curvature": -6.238332205095933e-10,
+            "coarse_step": 0.04,
+            "input": "urt_admissible_os_quadratic_response_h004_results.json"
+          }
+        ]
+      }
+    }
+  },
+  "date": "2026-09-05",
+  "inputs": [
+    "urt_admissible_os_quadratic_response_h0008_results.json",
+    "urt_admissible_os_quadratic_response_h002_results.json",
+    "urt_admissible_os_quadratic_response_h004_results.json"
+  ],
+  "observational_targets_used": false,
+  "physical_support": {
+    "alpha": 0.00014024374218023336,
+    "alpha_squared": 1.9668307220715765e-08,
+    "inside_exact_volume_uniform_gap_domain": true
+  },
+  "roundoff_discriminator": {
+    "genuine_coefficient": "approaches a nonzero constant as h changes",
+    "second_difference_roundoff": "absolute apparent coefficient proportional to h^-2",
+    "tests": "pairwise exponent in (1.8,2.2) and spread of h^2|lambda| below 1.25"
+  },
+  "verdict": {
+    "all_four_channels_follow_inverse_step_squared": true,
+    "conclusion": "The apparent negative curvatures in the raw finite-difference files are h^-2 subtraction artifacts.  No overlap-specific quadratic obstruction is resolved in either gauge-invariant basis.",
+    "exact_quadratic_vanishing_proved": false,
+    "interacting_overlap_reflection_positivity_disproved": false,
+    "interacting_overlap_reflection_positivity_proved": false,
+    "next_executable_gate": "derive the fourth-order gauge-invariant nullspace form or directly factor the selected face-weight polar cross-boundary cone",
+    "nonzero_quadratic_nullspace_response_detected": false,
+    "raw_negative_signs_are_numerically_resolved": false,
+    "status": "N: quadratic response consistent with zero; fourth order/direct cone unresolved"
+  }
+}

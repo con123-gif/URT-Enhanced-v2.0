@@ -1,0 +1,31 @@
+GOLDEN CLOSURE FINAL AUDIT
+==========================
+
+1. The published golden correction acts directly on the three standard mixing
+   coordinates and one CP phase in each sector: eight real controls total.
+2. The diagnostic ledger contains eight real observables.
+3. The numerical Jacobian from controls to observables has rank 8. By the
+   inverse-function theorem, any sufficiently nearby ledger can be matched by
+   choosing those eight controls.
+4. Solving exactly from the rounded Platonic baseline gives the residual-derived
+   controls:
+     4.5443028013555535
+    19.437014135621343
+   -19.640373045757705
+    -0.7148318008271523
+    -1.2193732777019597
+    -6.221355559349670
+     8.239502923046901
+     0.3587252251010587
+   The published phi/count combinations are nearby approximants to these values.
+5. The coordinatewise correction is not a covariant Hilbert-space operator.
+6. Canonical covariant golden-impedance replacements based on the species charge
+   projector and passive Gram matrices were tested at phi, phi^2, Delta phi^3,
+   and Delta phi^6 strengths. None reproduced CKM and PMNS simultaneously.
+
+VERDICT
+-------
+The claimed golden numerical closure is a phenomenological residual fit, not a
+first-principles derivation. Phi is present in the exact icosahedral spectrum,
+but the current axioms do not specify the noncommuting species-loaded operator
+needed to turn that spectrum into the physical flavour frames.

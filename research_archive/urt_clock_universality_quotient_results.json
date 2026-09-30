@@ -1,0 +1,219 @@
+{
+  "certificate": "URT clock universality-quotient audit",
+  "date": "2026-09-04",
+  "fermion_series": {
+    "canonically_normalized_overlap": "(2M/a)D_ov=i gamma.k+a k^2/(2M)+i a^2 sum_mu gamma_mu deltaK_mu(c_t)+O(a^3)",
+    "dimension_six_vector_coefficient": "deltaK=kappa-k k^2/(2M^2)+k W_2/M; kappa_0=-k_0^3/(6c_t^2)-k_0|k_sp|^2/8, kappa_i=-k_i^3/6",
+    "endpoint_pure_temporal_difference": [
+      {
+        "coefficient_residual": 1.1432600955044864e-05,
+        "difference_over_a_squared": 0.0072857350988597335,
+        "lattice_spacing": 0.08,
+        "operator_norm_difference": 4.66287046327023e-05,
+        "predicted_a_squared_coefficient": 0.007297167699814778
+      },
+      {
+        "coefficient_residual": 2.8606754182824295e-06,
+        "difference_over_a_squared": 0.007294307024396496,
+        "lattice_spacing": 0.04,
+        "operator_norm_difference": 1.1670891239034394e-05,
+        "predicted_a_squared_coefficient": 0.007297167699814778
+      },
+      {
+        "coefficient_residual": 7.153264451669958e-07,
+        "difference_over_a_squared": 0.007296452373369611,
+        "lattice_spacing": 0.02,
+        "operator_norm_difference": 2.918580949347845e-06,
+        "predicted_a_squared_coefficient": 0.007297167699814778
+      },
+      {
+        "coefficient_residual": 1.7884132449963452e-07,
+        "difference_over_a_squared": 0.007296988858490279,
+        "lattice_spacing": 0.01,
+        "operator_norm_difference": 7.296988858490279e-07,
+        "predicted_a_squared_coefficient": 0.007297167699814778
+      },
+      {
+        "coefficient_residual": 4.471278989247318e-08,
+        "difference_over_a_squared": 0.007297122987024886,
+        "lattice_spacing": 0.005,
+        "operator_norm_difference": 1.8242807467562215e-07,
+        "predicted_a_squared_coefficient": 0.007297167699814778
+      }
+    ],
+    "exact_conclusions": [
+      "the Dirac principal symbol is c_t-independent",
+      "the dimension-five a k^2/(2M) term is c_t-independent",
+      "generic c_t dependence first occurs at dimension six, O(a^2)"
+    ],
+    "kernel_second_order_scalar": "W_2=(r/2+1/8)|k_sp|^2+k_0^2/(2c_t^2)",
+    "maximum_ratio_of_remainder_over_a_cubed": 1.0004116481724925,
+    "numerical_series_checks": [
+      {
+        "c_t": 0.9779029419996036,
+        "checks": [
+          {
+            "lattice_spacing": 0.08,
+            "operator_norm_remainder": 1.2200410277978695e-05,
+            "remainder_over_a_cubed": 0.023828926324177133
+          },
+          {
+            "lattice_spacing": 0.04,
+            "operator_norm_remainder": 1.5254633446217383e-06,
+            "remainder_over_a_cubed": 0.023835364759714657
+          },
+          {
+            "lattice_spacing": 0.02,
+            "operator_norm_remainder": 1.9069579800254087e-07,
+            "remainder_over_a_cubed": 0.023836974750317604
+          },
+          {
+            "lattice_spacing": 0.01,
+            "operator_norm_remainder": 2.3837380681686262e-08,
+            "remainder_over_a_cubed": 0.023837380681686258
+          },
+          {
+            "lattice_spacing": 0.005,
+            "operator_norm_remainder": 2.9796813650501656e-09,
+            "remainder_over_a_cubed": 0.02383745092040132
+          }
+        ]
+      },
+      {
+        "c_t": 0.9889514709998017,
+        "checks": [
+          {
+            "lattice_spacing": 0.08,
+            "operator_norm_remainder": 1.2572102479950001e-05,
+            "remainder_over_a_cubed": 0.02455488765615234
+          },
+          {
+            "lattice_spacing": 0.04,
+            "operator_norm_remainder": 1.5719675573104783e-06,
+            "remainder_over_a_cubed": 0.02456199308297622
+          },
+          {
+            "lattice_spacing": 0.02,
+            "operator_norm_remainder": 1.965101594364341e-07,
+            "remainder_over_a_cubed": 0.02456376992955426
+          },
+          {
+            "lattice_spacing": 0.01,
+            "operator_norm_remainder": 2.4564214186945336e-08,
+            "remainder_over_a_cubed": 0.02456421418694533
+          },
+          {
+            "lattice_spacing": 0.005,
+            "operator_norm_remainder": 3.0705496825698154e-09,
+            "remainder_over_a_cubed": 0.02456439746055852
+          }
+        ]
+      },
+      {
+        "c_t": 1.0,
+        "checks": [
+          {
+            "lattice_spacing": 0.08,
+            "operator_norm_remainder": 1.2931543885198103e-05,
+            "remainder_over_a_cubed": 0.02525692165077754
+          },
+          {
+            "lattice_spacing": 0.04,
+            "operator_norm_remainder": 1.616938918975438e-06,
+            "remainder_over_a_cubed": 0.025264670608991215
+          },
+          {
+            "lattice_spacing": 0.02,
+            "operator_norm_remainder": 2.0213286979506962e-07,
+            "remainder_over_a_cubed": 0.0252666087243837
+          },
+          {
+            "lattice_spacing": 0.01,
+            "operator_norm_remainder": 2.5267092526487913e-08,
+            "remainder_over_a_cubed": 0.02526709252648791
+          },
+          {
+            "lattice_spacing": 0.005,
+            "operator_norm_remainder": 3.1584148270522342e-09,
+            "remainder_over_a_cubed": 0.02526731861641787
+          }
+        ]
+      }
+    ],
+    "status": "E series; numerical checks corroborate the remainder order"
+  },
+  "gauge_series": {
+    "general_frame": "M_sp=diag(0_3,I_3), M_el=diag(8 tau^2 I_3,4 I_3)",
+    "interpretation": "The continuum F^2 term is exactly common, but finite-spacing plaquette F^4 moments distinguish the endpoints.",
+    "maximum_quadratic_matching_residual": 8.881784197001252e-16,
+    "quartic_endpoint_change": {
+      "electric_quartic_relative_change": 0.045703338653673375,
+      "magnetic_quartic_relative_change": 0.026223501617111955
+    },
+    "rows": [
+      {
+        "a_over_b": 4.365626709229386,
+        "c_t": 0.9779029419996036,
+        "electric_quadratic_frame_entry": 0.9999999999999999,
+        "electric_weight_b": 0.119536770496435,
+        "expected_a_over_b": 4.365626709229385,
+        "magnetic_quadratic_frame_entry": 1.0,
+        "pure_electric_quartic_moment": 1.0457033386536734,
+        "pure_magnetic_quartic_moment": 0.641389688510695,
+        "spatial_weight_a": 0.5218529180142599,
+        "tau": 1.0225963713282349
+      },
+      {
+        "a_over_b": 4.179749906089256,
+        "c_t": 0.9889514709998017,
+        "electric_quadratic_frame_entry": 1.0,
+        "electric_weight_b": 0.12225312649908396,
+        "expected_a_over_b": 4.179749906089256,
+        "magnetic_quadratic_frame_entry": 1.0,
+        "pure_electric_quartic_moment": 1.022468738261157,
+        "pure_magnetic_quartic_moment": 0.6332406205027481,
+        "spatial_weight_a": 0.5109874940036642,
+        "tau": 1.0111719627546825
+      },
+      {
+        "a_over_b": 4.0,
+        "c_t": 1.0,
+        "electric_quadratic_frame_entry": 1.0,
+        "electric_weight_b": 0.125,
+        "expected_a_over_b": 4.0,
+        "magnetic_quadratic_frame_entry": 1.0,
+        "pure_electric_quartic_moment": 1.0,
+        "pure_magnetic_quartic_moment": 0.625,
+        "spatial_weight_a": 0.5,
+        "tau": 1.0
+      }
+    ],
+    "status": "E",
+    "unit_quadratic_frame_weights": "b=c_t^2/8 and a_sp=1-c_t^2/2"
+  },
+  "observational_targets_used": false,
+  "physical_momentum_map": {
+    "consequence": "c_t C(p) sin(omega)=a k_0+O(a^3)",
+    "spatial": "p_i=a k_i",
+    "temporal": "omega=a k_0/c_t=tau a k_0"
+  },
+  "surviving_OS_interval": {
+    "M": 0.7909405921071238,
+    "c_t_max": 1.0,
+    "c_t_min": 0.9779029419996036,
+    "r": 0.35550803492351907,
+    "tau_interval": [
+      1.0,
+      1.0225963713282349
+    ]
+  },
+  "verdict": {
+    "advance": "The clock interval is no longer an infrared tree-level ambiguity; it is isolated to the unproved continuum/universality gate or to measurable cutoff-scale artifacts.",
+    "c_t_is_unconditionally_redundant": false,
+    "conditional_quotient": "If an interacting continuum limit exists and universality erases irrelevant operators, all surviving c_t values represent the same infrared theory and c_t is a regulator choice.",
+    "finite_spacing_actions_identical": false,
+    "fundamental_lattice_branch": "If a is nonzero and fundamental, the O(a^2) fermion and higher gauge artifacts are physical; c_t remains an unfixed parameter.",
+    "same_tree_level_continuum_action": true,
+    "status": "E tree-level quotient; U nonperturbative universality"
+  }
+}

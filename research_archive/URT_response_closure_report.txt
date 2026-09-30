@@ -1,0 +1,147 @@
+URT / NEWTON'S CATHEDRAL — MINIMAL RESPONSE CLOSURE
+====================================================
+Date: 2026-08-21
+
+PURPOSE
+-------
+Derive the flavour response from the already-fixed Cathedral geometry without
+identifying passive ribbon eigenvector overlaps with CKM/PMNS and without using
+measured flavour values as inputs.
+
+1. UNIVERSAL RESPONSE LAW
+-------------------------
+After the passive shell/dual path variables are integrated out, each typed
+irreducible response coordinate x carries the minimum-relative-information
+quadratic action
+
+    Gamma[x] = (kappa/2)(x-x0)^2 - J(x-x0).
+
+Hence
+
+    x* = x0 + J/kappa.
+
+For a positive complex radial amplitude r, quotienting its phase gives the
+radial Jacobian term -log r:
+
+    Gamma_rad[r] = (kappa/2) r^2 - log r,
+    r* = 1/sqrt(kappa).
+
+Composition rules are universal:
+  (i) parallel independent route sources add with orientation sign;
+ (ii) serial survival probabilities multiply;
+(iii) symmetry-equivalent branches share a conserved source equally;
+ (iv) Gaussian hidden modes are eliminated by Schur complement;
+  (v) the outer/Galois map fixes the orientation sign.
+
+2. EXACT PRIMITIVES
+-------------------
+D=3, V=12, E=30, F=20, N=13, q=5, h=8.
+phi=(1+sqrt(5))/2, gamma=1/81.
+d_star=(1-gamma) pi/(N phi), d_cl=D/F, Delta=d_cl-d_star.
+W_s=9/5 is the exact scalar/five response ratio of the selected even 4_5
+quadratic channel.  The unique mixed 4_3 x 4_5 portal has squared Galois gain
+phi^6.
+
+3. QUARK RESPONSE
+-----------------
+Q12 (radial face mode):
+A unit conserved hidden scalar return is distributed isotropically across h
+hidden channels.  Therefore c=(1/h,...,1/h), sum c_i=1, and
+
+    ||c||^2 = h(1/h)^2 = 1/h.
+
+The F equivalent unit-precision face routes give bare radial precision F.
+Eliminating the hidden return gives
+
+    kappa_Q12 = F - ||c||^2 = F - 1/h,
+    s12 = 1/sqrt(F-1/h).
+
+Q23 (unique odd portal):
+The normalized passive unit channel is removed from the exact squared portal
+gain phi^6. The only transmitted defect is the rail bandwidth Delta:
+
+    s23 = Delta (phi^6 - 1).
+
+Q13 (direct spatial cross-sheet mode):
+D equivalent spatial sources each carry Delta. The two Galois sheets contribute
+precision 2:
+
+    s13 = D Delta / 2.
+
+Quark oriented area:
+The primitive entropy-gap area is gamma Delta. At quadratic order the unique
+even scalar return contributes the single allowed scalar-feedback route
+W_s gamma times that source:
+
+    J_Q = gamma Delta (1 + W_s gamma).
+
+The minimum-winding positive orientation fixes the CKM phase from the standard
+Jarlskog relation.
+
+4. LEPTON RESPONSE
+------------------
+The dual/Galois route is naturally expressed in probabilities x_ij=sin^2 theta_ij.
+
+L12 (solar triplet):
+An isotropic D-component triplet starts at 1/D.  The V shell endpoints are
+parallel exhaust channels, each carrying the signed defect -Delta:
+
+    x12 = 1/D - V Delta.
+
+L23 (atmospheric dual mode):
+Two equivalent Galois sheets give base 1/2.  The F dual-face return channels
+add +Delta and the elementary entropy source adds +gamma:
+
+    x23 = 1/2 + F Delta + gamma.
+
+L13 (reactor hidden-pair route):
+Two hidden sheets supply probability source 2 gamma.  Serial filters multiply:
+rail amplitude survival d_star/d_cl becomes probability survival
+(d_star/d_cl)^2, and the total face-exhaust survival is 1-F Delta. Thus
+
+    x13 = 2 gamma (d_star/d_cl)^2 (1-F Delta).
+
+Lepton oriented area:
+The outer/Galois map reverses orientation.  The gap area adds over the N centred
+cells:
+
+    J_L = -N Delta.
+
+The minimum-winding negative orientation fixes the PMNS phase from the standard
+Jarlskog relation.
+
+5. NUMERICAL STATIONARY POINT
+-----------------------------
+Delta = 0.002489189840420375
+
+Quarks:
+  s12 = 0.22430886163681774
+  s23 = 0.04217750949169026
+  s13 = 0.0037337847606305624
+  J_Q = 3.1413644076635733e-05
+  delta_Q = 65.9746190096952 deg
+
+|V_CKM| =
+[[0.974511310804, 0.224307298070, 0.003733784761],
+ [0.224171783877, 0.973636530645, 0.042177215489],
+ [0.008643866580, 0.041450479196, 0.999103168519]]
+
+Leptons:
+  sin^2 theta12 = 0.3034630552482888
+  sin^2 theta23 = 0.5621294758207531
+  sin^2 theta13 = 0.02268990026713027
+  J_L = -0.032359467925464874
+  delta_L = 285.4875550871009 deg
+
+|U_PMNS| =
+[[0.825065204055, 0.544589302860, 0.150631670864],
+ [0.400138697423, 0.538993700100, 0.741198228598],
+ [0.398944146318, 0.642579397789, 0.654167628101]]
+
+6. STATUS
+---------
+The response action is a model closure principle, not experimental proof of the
+Cathedral framework.  What is new here is that one common information-geometric
+composition law supplies all eight flavour coordinates; no CKM/PMNS targets,
+independent gate loads, branch scores, or coordinate-by-coordinate fitted
+coefficients enter the executable derivation.

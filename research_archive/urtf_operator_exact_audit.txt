@@ -1,0 +1,48 @@
+EXACT AUDIT OF THE ARCHIVED URTF OPERATOR
+
+Operator:
+T_delta(x) = [x - delta*tanh(x/delta)] * [1 + (pi/phi)*delta^2]
+
+Let A(delta) = 1 + (pi/phi)*delta^2.
+
+Fixed points:
+1. x = 0 for every delta > 0.
+2. x = +/-x_c(delta), where y=x_c/delta solves
+       tanh(y) = [(A-1)/A] y.
+
+Derivative:
+T'_delta(x) = A(delta)*tanh^2(x/delta).
+
+Consequences:
+- T'_delta(0) = 0 for every positive delta, so x=0 is superstable.
+- At +/-x_c, |T'| > 1, so those points are unstable separatrices.
+- |x_0| < x_c eventually collapses to zero.
+- |x_0| > x_c runs away in magnitude.
+
+delta_star = 0.147510810159580
+A(delta_star) = 1.042248367180092
+x_c(delta_star) = 3.639025867553060
+T'(x_c; delta_star) = 1.042248367180092
+
+delta_classic = 0.150000000000000
+A(delta_classic) = 1.043686248371323
+x_c(delta_classic) = 3.583574765336563
+T'(x_c; delta_classic) = 1.043686248371323
+
+x_c(delta_star) - x_c(delta_classic)
+= 0.055451102216497
+
+Trajectory checks:
+         rail    side       x0  final_abs_x  steps classification
+   delta_star  inside 3.602636 7.698267e-17    114       collapse
+   delta_star outside 3.675416 1.007999e+12    748        runaway
+delta_classic  inside 3.547739 0.000000e+00    111       collapse
+delta_classic outside 3.619411 1.041210e+12    725        runaway
+
+Conclusion:
+This archived operator does contain an exact collapse/runaway boundary, but the
+boundary is in state amplitude x, not at a special value of delta. Its basin
+threshold x_c(delta) varies smoothly through both delta_star and delta_classic.
+Neither rail is a bifurcation of this operator. A distinct stage-cascade
+recurrence, normalization, or boundary condition is still required to derive
+the two delta rails.

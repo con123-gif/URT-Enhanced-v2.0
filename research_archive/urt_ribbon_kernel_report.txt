@@ -1,0 +1,144 @@
+URT ICOSAHEDRAL RIBBON-KERNEL AUDIT
+====================================
+
+1. VISUAL GEOMETRY
+
+The twelve icosahedral vertices are the antipodal two-cover of six axes.
+After choosing one representative on each axis, the shell is encoded by
+the signed complete graph K6 with sign matrix
+
+S =
+[[ 0 -1  1 -1  1 -1]
+ [-1  0  1 -1 -1  1]
+ [ 1  1  0 -1  1  1]
+ [-1 -1 -1  0  1  1]
+ [ 1 -1  1  1  0  1]
+ [-1  1  1  1  1  0]]
+
+It satisfies
+
+S^2 = 5 I_6
+
+and therefore has spectrum
+
+-2.236067977500 (multiplicity 3),
+2.236067977500 (multiplicity 3).
+
+This is the visual origin of the Galois-paired triplets.
+
+2. TWO-RAIL RIBBONS
+
+Every pair of axes is joined by two antipodal shell edges. Their even and
+odd combinations separate exactly:
+
+even rail pair -> fiveplet + H5,
+odd rail pair  -> H3.
+
+Numerically, for every one of the 15 axis pairs,
+
+||H_even||  = 1.414213562373,
+||H3_odd||  = 0.894427191000,
+||H5_even|| = 0.516397779494,
+
+with all crossed parity projections zero to numerical precision.
+
+3. PARAMETER-FREE LOCAL RIBBON RESPONSE
+
+The passive Green response is
+
+M_ab^(1) =
+mat[
+  (1/7) J5 H_ab^(+)
+  + (1/3) J43 Xi3_ab^(-)
+  + i (1/5) J45 Xi5_ab^(+)
+].
+
+The denominators 7, 3 and 5 are the exact passive eigenvalues of the
+fiveplet, H3 and H5 channels.
+
+The full recursive path sum is
+
+K_eta = exp[ eta (T - alpha I) ],
+
+where T is the 18x18 six-axis x generation ribbon transfer and alpha is
+its spectral abscissa. The subtraction changes only overall scale, not
+mass ratios or mixing.
+
+4. CHIRAL DEPTH
+
+Using the fivefold orbit distributed over the two incoming left branches,
+
+eta_chi = (5/2) eta_delta
+        = 14.989494966853256.
+
+No continuous coefficient was fitted. At this fixed depth, the exhaustive
+finite search covered every order-two grading, every full-support
+order-five fork, both Galois orientations, both fork assignments and both
+endpoint assignments.
+
+5. BEST DISCRETE RESULT AT eta_chi
+
+|V_CKM| =
+[[0.9747687  0.22317337 0.00442947]
+ [0.22271179 0.97363313 0.04937592]
+ [0.01501447 0.04724582 0.99877044]]
+
+J_CKM = -2.085196123365e-05
+
+The three principal entries are
+
+|V_us| = 0.223173372944
+|V_cb| = 0.049375919028
+|V_ub| = 0.004429471102
+
+The frozen framework targets were
+
+0.224308861637,
+0.042177509492,
+0.003733784761.
+
+The shell-ribbon kernel therefore recovers the hierarchical CKM shape
+without charge words, fitted Yukawa coefficients or a common depth flag.
+
+The associated primitive spectra are
+
+u  = [0.01720008 0.08017767 1.        ]
+d  = [0.01303597 0.07978648 1.        ]
+
+6. LEPTON RESULT FROM THE SAME SHELL KERNEL
+
+|U_PMNS| =
+[[0.94508902 0.31029803 0.10257621]
+ [0.24494287 0.73758345 0.62926436]
+ [0.21635558 0.59973809 0.77039242]]
+
+J_PMNS = -1.469875867119e-02
+
+Primitive spectra:
+
+e  = [0.17796695 0.42295697 1.        ]
+nu = [0.01606664 0.14258976 1.        ]
+
+This is not the observed lepton structure. It proves that the shell
+two-rail kernel is the quark-like path operator, but it must not be reused
+unchanged for the lepton fork. The lepton route must be constructed on
+the dual face/shadow network, where H3 and H5 actually live.
+
+7. STATUS
+
+Established by direct finite computation:
+
+* the icosahedron is a signed K6 antipodal two-cover;
+* S^2 = 5I explains the two triplets visually;
+* every axis pair is a two-rail ribbon;
+* ribbon parity separates H3 from fiveplet + H5 exactly;
+* inverse passive eigenvalues generate a unique local ribbon response;
+* recursive path summation produces noncommuting mass blocks and CP phase;
+* at eta_chi = (5/2) eta_delta, the shell kernel gives a near-CKM hierarchy.
+
+Not established:
+
+* the lepton dual-face kernel;
+* physical fermion mass ratios;
+* a proof that eta_chi is the final physical quark depth rather than the
+  canonical chiral candidate depth.

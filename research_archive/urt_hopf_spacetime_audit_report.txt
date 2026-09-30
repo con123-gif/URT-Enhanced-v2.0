@@ -1,0 +1,41 @@
+URT QUATERNIONIC HOPF-SPACETIME AUDIT
+=====================================
+
+A selected tetrahedral vacuum gives the exact split V4 = 1 + 3.  In an
+oriented orthonormal basis B=(t,e1,e2,e3), every element of the selected A4
+subgroup is block diagonal 1 + SO(3):
+
+  scalar fixed error       8.882e-16
+  scalar/vector mixing     2.120e-15
+  spatial orthogonality    2.459e-15
+  spatial determinant      1.554e-15
+
+This makes each hidden quartet a quaternion q=a+x i+y j+z k once the A4
+vacuum and orientation are selected.  The hidden 4+4 sector is therefore H^2.
+
+For normalized (q1,q2) in H^2, define the quaternionic Hopf map
+
+  X0 = |q1|^2-|q2|^2,
+  X  = 2 q1 conjugate(q2).
+
+Then (X0,X) lies on S4 and is invariant under common right multiplication
+(q1,q2)->(q1 u,q2 u), |u|=1. Numerical certificates over 100 random tests:
+
+  S4 identity error             6.661e-16
+  right-SU(2) fibre invariance  4.905e-16
+  chart fibre invariance        8.960e-16
+  chart reconstruction error    4.215e-16
+
+On q2 != 0, the gauge-invariant coordinate is
+
+  y = q1 q2^(-1) = tau + x i + y j + z k in H ~= R4.
+
+Thus the local four-dimensional base is not appended to the 8-real hidden
+state: it is the quotient
+
+  S7 / SU(2) = HP1 = S4,
+
+with a local R4 chart.  The selected A4 singlet is the scalar coordinate and
+the A4 triplet is the spatial 3-vector.  Entropy orientation can distinguish
+the scalar coordinate as causal time; this last Lorentzian identification is
+a physical postulate, not a consequence of the Riemannian Hopf quotient alone.

@@ -1,0 +1,127 @@
+{
+  "certificate": "URT anisotropic free-overlap OS region",
+  "date": "2026-09-04",
+  "exact_low_height_OS_region": {
+    "boundary_inequality_4_times_a0_times_rs": 2.086996778999804,
+    "full_spatial_sufficient_domain": "r_s>=7/6; S^2<=2B gives R_p>=R_0>=0",
+    "general": "0<c_t<=r_t and 0<M<=r_t-sqrt(r_t^2-c_t^2), plus R_p>=0 for every spatial momentum",
+    "height_ceiling": 0.552786404500042,
+    "height_interval": "0<M<=1-1/sqrt(5)",
+    "inherited_metric_c_t": "2/sqrt(5)",
+    "r_t": 1,
+    "spectral_residue": "c_t C sinh(E)-sqrt(S^2+(A-r_t C cosh(E))^2)>0 where Q_p(cosh(E))<0",
+    "status": "E free spectral OS factorization"
+  },
+  "excluded_M_equals_1_point": {
+    "Gram_determinant": "-0.00557929074723273391354853358248398885207160041219411067646085",
+    "Gram_eigenvalues": [
+      "-0.0112277672784101316175058456589909520144836076371731601843581",
+      "0.496918987442957554811832678297381994558156039126177057767904"
+    ],
+    "OS_Gram_matrix_times_1_2": [
+      [
+        "0.448254511969322101989571408438616358879574276904551510737818",
+        "0.14953415699772872121907562229778334275867828380447782212569"
+      ],
+      [
+        "0.14953415699772872121907562229778334275867828380447782212569",
+        "0.0374367081952253212047554241997746836640981545844523868457274"
+      ]
+    ],
+    "action_kernel_d_plus_3_positive_partial_sum": 0.013915786650087454,
+    "cosh_branch_points": [
+      {
+        "imag": 1.9999999999999996,
+        "real": 0.0
+      },
+      {
+        "imag": -1.9999999999999996,
+        "real": 0.0
+      }
+    ],
+    "exact_branch_points": "+/-2i",
+    "imaginary_quadrature_residual": "5.765024354e-72",
+    "off_imaginary_energy_axis": true,
+    "physical_mass_in_covariance_test": 0.5,
+    "positive_frequency_coefficients_G1_to_G5": [
+      "0.448254511969322101989571408438616358879574276904551510737818",
+      "0.14953415699772872121907562229778334275867828380447782212569",
+      "0.0374367081952253212047554241997746836640981545844523868457274",
+      "0.00833325295936934625235279888256868712746707694676992913734781",
+      "0.00191280166369960904752872645086597141830371655977370414078646"
+    ],
+    "series_term_witnesses": [
+      {
+        "j": 1,
+        "negative_bracket_piece": -0.04736067977499791
+      },
+      {
+        "j": 2,
+        "negative_bracket_piece": -0.007005127457812109
+      },
+      {
+        "j": 3,
+        "negative_bracket_piece": -0.0010852723051171195
+      },
+      {
+        "j": 4,
+        "negative_bracket_piece": -0.00017625077839549593
+      },
+      {
+        "j": 5,
+        "negative_bracket_piece": -2.96205338145609e-05
+      },
+      {
+        "j": 6,
+        "negative_bracket_piece": -5.104332284587139e-06
+      },
+      {
+        "j": 7,
+        "negative_bracket_piece": -8.964133724287107e-07
+      },
+      {
+        "j": 8,
+        "negative_bracket_piece": -1.5976498933791505e-07
+      }
+    ],
+    "status": "F: direct negative OS norm at M=1"
+  },
+  "kernel_family": {
+    "branch_discriminant_sign": "R_p=c_t^2 A^2-(r_t^2-c_t^2)(S^2+c_t^2 C^2)",
+    "general_radical": "Q_p(x)=S^2+(A-r_t C x)^2+c_t^2 C^2(1-x^2), A=r_s B+r_t-M",
+    "zero_spatial_momentum": "X_s(w)=(r_t-M)-r_t cos(w)+i s c_t sin(w)"
+  },
+  "method_sources": [
+    "https://arxiv.org/abs/1005.3751",
+    "https://arxiv.org/abs/1012.0152"
+  ],
+  "observational_targets_used": false,
+  "repaired_witness": {
+    "M": 0.5,
+    "energy_cut_interval": [
+      0.9624236501192069,
+      1.9248473002384139
+    ],
+    "exact_full_discriminant_lower_bound": "1/25",
+    "expected_branch_points": [
+      1.5,
+      3.5
+    ],
+    "full_discriminant_lower_bound": 0.039999999999999994,
+    "root_residual": 1.7763568394002505e-15,
+    "sampled_minimum_full_discriminant": 0.03999999999999998,
+    "status": "E repair; numerical sampling is corroborative only",
+    "zero_momentum_cosh_branch_points": [
+      3.4999999999999982,
+      1.5
+    ]
+  },
+  "selection_verdict": {
+    "M_equals_1_inherited_branch": "excluded",
+    "inherited_aspect_ratio": "not excluded; repaired by a continuous M interval",
+    "next_calculation": "Re-run the target-blind uniform-contraction selector on the full reflected (r_s,M,c_t) family subject to the exact OS region.",
+    "old_open_question": "resolved",
+    "status": "E no-go for unique aspect selection by OS alone",
+    "time_aspect_selected_by_OS_alone": false
+  }
+}

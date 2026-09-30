@@ -1,0 +1,110 @@
+URT ENDPOINT-CONDITIONING AUDIT
+===============================
+
+Question
+--------
+Does replacing the frozen Gate-2 source filtration
+
+    M_f = raw_f R_Delta
+
+by terminal/codomain filtration
+
+    M_f = R_Delta raw_f
+
+reproduce the frozen CKM and PMNS matrices without retuning?
+
+Method
+------
+1. Reconstructed the exact 42-edge centred-icosahedral seed, A5 carrier bases,
+   hidden H3/H5 quartets, normalized intertwiners, edge projectors and charge
+   frames from the archived seed and Gate-2 solver.
+2. Re-solved the classical + CAR-backreacted vacuum at eta_Delta and eta_conf.
+3. Validated the reconstruction by reproducing the archived source-filter
+   CKM, PMNS, Jarlskog invariants and mass ratios.
+4. Changed only the multiplication order from raw_f @ R_Delta to
+   R_Delta @ raw_f and repeated the complete calculation.
+
+Constants
+---------
+Delta       = 0.0024891898404204027
+eta_Delta   = 5.9957979867413025
+eta_conf    = 9.8601129428
+R_Delta     = Q1 + Delta Q2 + Delta^2 Q3
+
+Validation: original source filtration at eta_Delta
+---------------------------------------------------
+|CKM| =
+[[0.999999892, 0.000465080, 0.000000572],
+ [0.000465080, 0.999999669, 0.000667406],
+ [0.000000335, 0.000667406, 0.999999777]]
+
+J_CKM = 8.549565619e-14
+
+|PMNS| =
+[[0.999993823, 0.003514838, 0.000005106],
+ [0.003514819, 0.999991651, 0.002084459],
+ [0.000012429, 0.002084428, 0.999997827]]
+
+J_PMNS = -1.786974733e-12
+
+These reproduce the archived Gate-2 report.
+
+Terminal/codomain filtration at eta_Delta
+-----------------------------------------
+|CKM| =
+[[0.97520518, 0.09568084, 0.19954957],
+ [0.07486671, 0.96011177, 0.26940743],
+ [0.20825424, 0.26273668, 0.94212505]]
+
+J_CKM = 3.923530043e-03
+
+Principal comparison:
+                     frozen target        terminal result
+|V_us|               0.224308861637       0.09568084
+|V_cb|               0.042177509492       0.26940743
+|V_ub|               0.003733784761       0.19954957
+J_CKM                3.141364408e-05      3.923530043e-03
+
+|PMNS| =
+[[0.14671547, 0.73873408, 0.65783472],
+ [0.88523903, 0.32079543, 0.33681176],
+ [0.44139148, 0.59275817, 0.67365519]]
+
+J_PMNS = 2.835647767e-02
+
+Angle comparison:
+                     frozen target        terminal result
+sin^2(theta12)       0.303463055248       0.962053225
+sin^2(theta23)       0.562129475821       0.199984955
+sin^2(theta13)       0.022689900267       0.432746519
+
+Terminal/codomain filtration at eta_conf
+----------------------------------------
+|CKM| =
+[[0.90820433, 0.31406126, 0.27664134],
+ [0.25357444, 0.93847801, 0.23443344],
+ [0.33296382, 0.14361253, 0.93193912]]
+
+J_CKM = -1.900882687e-03
+
+|PMNS| =
+[[0.36490841, 0.69979120, 0.61411247],
+ [0.68887755, 0.62362211, 0.36951752],
+ [0.62633025, 0.34840744, 0.69736839]]
+
+J_PMNS = 4.264923443e-02
+
+sin^2(theta12) = 0.786216975
+sin^2(theta23) = 0.219217657
+sin^2(theta13) = 0.377134126
+
+Verdict
+-------
+NO. Terminal/codomain placement removes the structural near-identity
+obstruction, but it does not reproduce the frozen CKM or PMNS matrices.
+It changes under-mixing into severe over-mixing.
+
+Therefore the proposed endpoint-conditioning theorem is not a completed
+flavour solution. Matrix-side placement alone is insufficient. A unique,
+sector-dependent terminal frame or path-conditioned depth operator would
+still have to be derived and tested without target-based branch selection.

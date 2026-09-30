@@ -1,0 +1,176 @@
+{
+  "canonical_Szegedy_GW_walk": {
+    "D_zero_mode_count": 40,
+    "GW_residual": 9.544168140282114e-15,
+    "Gamma_hat_involution_residual": 1.4439849363159866e-14,
+    "R_A_involution_residual": 6.8798004559188125e-15,
+    "R_B_involution_residual": 3.996471455896655e-15,
+    "chiral_intertwining_residual": 7.111273291140338e-15,
+    "chirality": "Gamma=R_A, Gamma U_S Gamma=U_S^dagger",
+    "flux_conjugate_spectrum_residual": 0.0,
+    "index_half_trace": -1.8762769116165146e-14,
+    "reflections": "R_A=2AA^dagger-I, R_B=2BB^dagger-I",
+    "walk": "U_S=R_B R_A",
+    "walk_cube_minus_identity_residual": 1.312313764711096e-14,
+    "walk_eigenvalue_multiplicities": {
+      "1": 40,
+      "exp(+2pi_i/3)": 40,
+      "exp(-2pi_i/3)": 40
+    },
+    "walk_unitarity_residual": 9.36570795320412e-15
+  },
+  "certificate": "URT Haar Stinespring / Szegedy dilation obstruction",
+  "date": "2026-09-03",
+  "dilation_no_go": {
+    "phenomenology_gate": "CLOSED: masses and CKM/PMNS remain quarantined.",
+    "status": "F/no-go for coefficient-free selection by Haar dilation",
+    "theorem": "The canonical range-only Szegedy completion is an exact covariant GW walk, but factors through T^dagger T, erases Omega_5, and has forty full zero modes (twenty in the physical chiral block). A direct Stinespring unitary retains an arbitrary U(60) completion; its reversal-real scalar members are orientation-blind, while chirality-paired members retain a continuous phase. Therefore the closed Haar channel does not provide the missing microscopic Dirac/measure selector."
+  },
+  "edge_isometries": {
+    "A5_covariance": [
+      {
+        "A_intertwiner": 0.0,
+        "B_intertwiner": 1.6559685904893853e-15,
+        "walk_commutator": 3.55334081737703e-15
+      },
+      {
+        "A_intertwiner": 0.0,
+        "B_intertwiner": 1.6135278425929519e-15,
+        "walk_commutator": 3.5063533539500313e-15
+      }
+    ],
+    "A_definition": "A|s>=(|s,L>+|s,R>)/sqrt(2)",
+    "A_isometry_residual": 1.7199501139797033e-15,
+    "B_definition": "B has incoming amplitudes U_s,t/sqrt(2)",
+    "B_isometry_residual": 1.1960706086503483e-15,
+    "gauge_covariance": {
+      "A": 8.165656717437679e-16,
+      "B": 1.3527551185576187e-15,
+      "walk": 3.769296801087491e-15
+    },
+    "overlap_identity": "A^dagger B=T=(L+R)/2",
+    "overlap_residual": 1.043329096962059e-15,
+    "space": "120 allowed directed transitions over 60 history states"
+  },
+  "observational_targets_used": false,
+  "physical_chiral_map": {
+    "Bdagger_C_in_residual": 1.4284762112174221e-16,
+    "C_in_isometry_residual": 1.0825614857159567e-15,
+    "conclusion": "The canonical chiral block has a 20-dimensional kernel. Its nonzero data are flux-even, and any phase of a reduced determinant again depends on a basis/measure choice.",
+    "kernel_dimension": 20,
+    "nonzero_pseudodeterminant_magnitude": 3486784401.0,
+    "rank": 40,
+    "restricted_identity": "A^dagger (I-U_S) V_-=2 A^dagger C_in",
+    "restricted_identity_residual": 4.606254987658119e-15,
+    "singular_values": [
+      {
+        "multiplicity": 20,
+        "value": 1.9209453542609776e-17
+      },
+      {
+        "multiplicity": 40,
+        "value": 1.7320508075688756
+      }
+    ],
+    "source_frame": "V_-=R_A C_in spans Gamma_hat=-1",
+    "target_frame": "A spans Gamma=+1"
+  },
+  "singular_value_reduction": {
+    "P_cube_minus_identity_residual": 2.8780270159990897e-15,
+    "P_eigenvalue_multiplicities": {
+      "1": 20,
+      "exp(+2pi_i/3)": 20,
+      "exp(-2pi_i/3)": 20
+    },
+    "T_singular_values": [
+      {
+        "multiplicity": 40,
+        "value": 0.4999999999999997
+      },
+      {
+        "multiplicity": 20,
+        "value": 0.9999999999999994
+      }
+    ],
+    "TdaggerT_identity": "T^dagger T=I/2+(P+P^dagger)/4",
+    "TdaggerT_residual": 5.438959822042073e-16,
+    "interpretation": "The product-of-reflections spectrum depends only on singular values of T. It is therefore invariant under Hopf-flux conjugation and cannot retain the orientation-odd Wilson trace.",
+    "relative_branch": "P=L^dagger R"
+  },
+  "unitary_completion_freedom": {
+    "A5_commutant_statement": "Because the 60 history states carry the regular A5 representation, covariant completions contain the unitary right-group algebra. Even the local scalar slice C=e^(i phi)I is a continuous gauge- and A5-covariant family.",
+    "Haar_isometry": "K=2^(-1/2)[L;R]",
+    "K_isometry_residual": 1.1161776417704111e-15,
+    "Kperp_isometry_residual": 1.1161776417704111e-15,
+    "all_extensions": "U_C=[K,K_perp C], C in U(60)",
+    "canonical_complement": "K_perp=2^(-1/2)[L;-R]",
+    "orthogonality_residual": 1.0138282806592748e-15,
+    "reversal_statement": "If the same fixed scalar completion must be carried to its complex conjugate, phi=0 or pi are the real choices; both are flux-even and orientation-blind. If conjugate Hodge sectors carry C_chi=e^(i chi phi), reversal permits continuous phi, so uniqueness still fails.",
+    "scalar_phase_witnesses": [
+      {
+        "complex_conjugation_reversal_residual": 0.0,
+        "det_extension_phase": -1.110223024625155e-16,
+        "expected_det_extension_phase_mod_2pi": 0.0,
+        "flux_conjugate_logdet": {
+          "imag": -1.1657341758564118e-15,
+          "real": 2.432790648648982
+        },
+        "log_absolute_flux_difference": 0.0,
+        "logdet": {
+          "imag": 1.1657341758564118e-15,
+          "real": 2.432790648648982
+        },
+        "phase": 0.0,
+        "unitarity_residual": 2.1324635099587036e-15
+      },
+      {
+        "complex_conjugation_reversal_residual": 3.0777720382857776,
+        "det_extension_phase": -0.5663706143591728,
+        "expected_det_extension_phase_mod_2pi": -0.5663706143591729,
+        "flux_conjugate_logdet": {
+          "imag": -0.2831853071796167,
+          "real": -10.198740445121416
+        },
+        "log_absolute_flux_difference": -13.074005115364248,
+        "logdet": {
+          "imag": -0.28318530717958806,
+          "real": 2.8752646702428324
+        },
+        "phase": 0.2,
+        "unitarity_residual": 2.496098422776425e-15
+      },
+      {
+        "complex_conjugation_reversal_residual": 7.427228507042396,
+        "det_extension_phase": -1.4159265358979347,
+        "expected_det_extension_phase_mod_2pi": -1.4159265358979325,
+        "flux_conjugate_logdet": {
+          "imag": 2.4336293856408275,
+          "real": 3.6808395733759793
+        },
+        "log_absolute_flux_difference": 11.132149216756053,
+        "logdet": {
+          "imag": 2.433629385640816,
+          "real": -7.451309643380074
+        },
+        "phase": 0.5,
+        "unitarity_residual": 1.906452234070986e-15
+      },
+      {
+        "complex_conjugation_reversal_residual": 1.9301555048060674e-15,
+        "det_extension_phase": -8.604228440844936e-15,
+        "expected_det_extension_phase_mod_2pi": -2.1558735510086122e-14,
+        "flux_conjugate_logdet": {
+          "imag": -3.2474023470285785e-15,
+          "real": 3.977102427465119
+        },
+        "log_absolute_flux_difference": 2.6645352591003757e-15,
+        "logdet": {
+          "imag": -3.5249581031848633e-15,
+          "real": 3.9771024274651166
+        },
+        "phase": 3.141592653589793,
+        "unitarity_residual": 2.2282767390350142e-15
+      }
+    ]
+  }
+}

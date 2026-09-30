@@ -1,0 +1,189 @@
+{
+  "U1_triangle_construction": {
+    "Fourier_nonnegativity": "cn=(1-cos(n delta))/(pi delta n^2)>=0",
+    "autocorrelation": "w=f*f_tilde=max(delta-|theta|,0), up to scale",
+    "normalized_weight": "max(1-|theta|/delta,0)",
+    "seed_function": "f=indicator of |theta|<delta/2",
+    "small_field_warning": "The triangle has a cusp and is an existence proof for the reflection cone, not the preferred continuum action.",
+    "status": "E",
+    "support": "|theta|<=delta"
+  },
+  "admissibility_translation": {
+    "U1_identity": "||1-exp(i theta)||=2|sin(theta/2)|",
+    "examples": [
+      {
+        "epsilon": 0.01,
+        "example_strict_delta": 0.009000037500421882,
+        "maximal_arc_angle": 0.010000041667135424,
+        "maximum_link_deviation_on_support": 0.009000007125072944,
+        "strictly_inside_epsilon": true
+      },
+      {
+        "epsilon": 0.05,
+        "example_strict_delta": 0.04500468881885005,
+        "maximal_arc_angle": 0.05000520979872228,
+        "maximum_link_deviation_on_support": 0.04500089085302643,
+        "strictly_inside_epsilon": true
+      },
+      {
+        "epsilon": 0.1,
+        "example_strict_delta": 0.09003754225038603,
+        "maximal_arc_angle": 0.10004171361154003,
+        "maximum_link_deviation_on_support": 0.09000713230473917,
+        "strictly_inside_epsilon": true
+      }
+    ],
+    "instruction": "For the now-certified epsilon_*, any support angle delta<2 asin(epsilon_*/2) enforces the kernel gap."
+  },
+  "analytic_transfer_matrix_boundary": {
+    "application": "Both the triangular and smooth-bump autocorrelation weights evade the theorem only because they are not real analytic at the identity; C-infinity is not enough.",
+    "primary_source": {
+      "arXiv": "hep-lat/0409017",
+      "authors": "Michael Creutz",
+      "title": "Positivity and topology in lattice gauge theory",
+      "url": "https://arxiv.org/abs/hep-lat/0409017"
+    },
+    "status": "E literature theorem plus exact application",
+    "theorem": "For a single-plaquette weight analytic near the identity, nonnegative Fourier/character coefficients imply an analytic continuation to an annulus. Vanishing on an open group region then forces the weight to vanish identically."
+  },
+  "certificate": "URT reflection-positive admissibility weight",
+  "certified_overlap_gap_implementation": {
+    "U1_support_angle_choice": "delta=epsilon_star/2",
+    "U1_support_angle_numeric": 0.0005609749687209334,
+    "epsilon_star_exact": "394924599595820227835064176865/351998414917049746226536404412312",
+    "epsilon_star_numeric": 0.0011219499374418669,
+    "gauge_weight_in_positive_character_cone": true,
+    "gauge_weight_pointwise_nonnegative": true,
+    "general_compact_group_choice": "choose an identity neighborhood V so that V V^-1 is inside the epsilon_star representation-norm ball, then use w=f*f_tilde",
+    "maximum_U1_face_deviation_on_support": 0.0005609749613653148,
+    "real_analytic_at_identity": false,
+    "status": "E conditional nonanalytic gauge-weight/gap merger",
+    "strict_chain": "2 sin(delta/2)<delta=epsilon_star/2<epsilon_star",
+    "strict_local_overlap_gap_enforced": true
+  },
+  "date": "2026-09-04",
+  "general_compact_group_theorem": {
+    "Peter_Weyl_coefficients": "w_hat(R)=f_hat(R) f_hat(R)^dagger>=0",
+    "central_case": "Schur's lemma makes each coefficient a nonnegative scalar multiple of the identity, hence a nonnegative character coefficient",
+    "construction": "w=f*f_tilde, f_tilde(g)=f(g^-1)",
+    "pointwise_nonnegative": "w(g)=integral f(h)f(g^-1 h)dh>=0",
+    "premise": "G compact; f real nonnegative central L2 function supported in an identity neighborhood V",
+    "reflection_consequence": "A product of such plaquette weights has the standard crossing-plaquette positive-character expansion and is link-reflection positive.",
+    "status": "E",
+    "support": "supp(w) subset V V^-1"
+  },
+  "observational_targets_used": false,
+  "sharp_cutoff_no_go": {
+    "Fourier_coefficients": "c0=delta/pi; cn=sin(n delta)/(pi n)",
+    "conclusion": "The naive hard indicator is outside the link-reflection positive-character cone.",
+    "negative_mode_construction": "n=floor(pi/delta)+1 gives pi<n delta<pi+delta<2pi, so cn<0 for every 0<delta<pi",
+    "rows": [
+      {
+        "delta": 0.05,
+        "sharp_cutoff_first_constructed_negative_mode": 63,
+        "sharp_cutoff_negative_coefficient": -4.247793575486019e-05,
+        "triangle_c0": 0.007957747154594767,
+        "triangle_formula": "c0=delta/(2pi); cn=(1-cos(n delta))/(pi delta n^2)",
+        "triangle_minimum_coefficient_n_0_to_1024": 4.416587280061612e-12
+      },
+      {
+        "delta": 0.2,
+        "sharp_cutoff_first_constructed_negative_mode": 16,
+        "sharp_cutoff_negative_coefficient": -0.0011613166844068306,
+        "triangle_c0": 0.03183098861837907,
+        "triangle_formula": "c0=delta/(2pi); cn=(1-cos(n delta))/(pi delta n^2)",
+        "triangle_minimum_coefficient_n_0_to_1024": 1.7666331699017708e-11
+      },
+      {
+        "delta": 0.6,
+        "sharp_cutoff_first_constructed_negative_mode": 6,
+        "sharp_cutoff_negative_coefficient": -0.02347643865653083,
+        "triangle_c0": 0.0954929658551372,
+        "triangle_formula": "c0=delta/(2pi); cn=(1-cos(n delta))/(pi delta n^2)",
+        "triangle_minimum_coefficient_n_0_to_1024": 3.724512179011593e-12
+      },
+      {
+        "delta": 1.0,
+        "sharp_cutoff_first_constructed_negative_mode": 4,
+        "sharp_cutoff_negative_coefficient": -0.06022442903626885,
+        "triangle_c0": 0.15915494309189535,
+        "triangle_formula": "c0=delta/(2pi); cn=(1-cos(n delta))/(pi delta n^2)",
+        "triangle_minimum_coefficient_n_0_to_1024": 1.14755988848248e-15
+      },
+      {
+        "delta": 2.5,
+        "sharp_cutoff_first_constructed_negative_mode": 2,
+        "sharp_cutoff_negative_coefficient": -0.15261753836344882,
+        "triangle_c0": 0.3978873577297384,
+        "triangle_formula": "c0=delta/(2pi); cn=(1-cos(n delta))/(pi delta n^2)",
+        "triangle_minimum_coefficient_n_0_to_1024": 2.8688997212061997e-15
+      }
+    ],
+    "status": "E",
+    "weight": "1 if |theta|<delta, 0 otherwise"
+  },
+  "smooth_compact_construction": {
+    "numerical_quadrature_checks": [
+      {
+        "delta": 0.2,
+        "grid_size": 65536,
+        "maximum_imaginary_coefficient": 2.3500706219169944e-17,
+        "measured_small_field_quadratic_coefficient": 153.79143003182932,
+        "minimum_Fourier_coefficient_all_grid_modes": 6.4139957303510115e-43,
+        "minimum_Fourier_coefficient_modes_0_to_512": 5.316823030525592e-18,
+        "minimum_pointwise_weight": -6.505213034913027e-19,
+        "predicted_small_field_quadratic_coefficient": 153.87920946614696,
+        "quadratic_relative_residual": 0.0005704437566463882,
+        "support_leakage_outside_delta": 6.505213034913027e-19
+      },
+      {
+        "delta": 0.6,
+        "grid_size": 65536,
+        "maximum_imaginary_coefficient": 2.346775609822443e-17,
+        "measured_small_field_quadratic_coefficient": 17.096724174946488,
+        "minimum_Fourier_coefficient_all_grid_modes": 0.0,
+        "minimum_Fourier_coefficient_modes_0_to_512": 5.536707375951163e-19,
+        "minimum_pointwise_weight": -1.734723475976807e-18,
+        "predicted_small_field_quadratic_coefficient": 17.09781311010739,
+        "quadratic_relative_residual": 6.368856378813348e-05,
+        "support_leakage_outside_delta": 1.734723475976807e-18
+      },
+      {
+        "delta": 1.0,
+        "grid_size": 65536,
+        "maximum_imaginary_coefficient": 2.3464593372669955e-17,
+        "measured_small_field_quadratic_coefficient": 6.155075086105491,
+        "minimum_Fourier_coefficient_all_grid_modes": 0.0,
+        "minimum_Fourier_coefficient_modes_0_to_512": 8.884119798632926e-22,
+        "minimum_pointwise_weight": -3.241709736649371e-18,
+        "predicted_small_field_quadratic_coefficient": 6.155216267041452,
+        "quadratic_relative_residual": 2.2936795367800578e-05,
+        "support_leakage_outside_delta": 3.241709736649371e-18
+      }
+    ],
+    "properties": [
+      "w is C-infinity, pointwise nonnegative and supported in |theta|<=delta",
+      "w_hat(n)=|f_hat(n)|^2>=0 for every integer n",
+      "-log(w(theta)/w(0))=kappa theta^2+O(theta^4)",
+      "kappa=integral |f'|^2/(2 integral |f|^2)>0",
+      "w is necessarily nonanalytic at theta=0 despite being C-infinity"
+    ],
+    "seed_function": "f_delta(theta)=exp[-1/(1-(2theta/delta)^2)] for |theta|<delta/2, and 0 otherwise",
+    "status": "E C-infinity/nonanalytic formulas; N quadrature corroboration",
+    "weight": "w=f_delta*f_delta_tilde"
+  },
+  "verdict": {
+    "Cathedral_overlap_gap_repaired_now": true,
+    "admissibility_and_OS_character_semipositivity_compatible": true,
+    "admissibility_and_analytic_positive_transfer_compatible": false,
+    "conventional_continuum_repair_proved": false,
+    "explicit_nonanalytic_positive_character_weight_exists": true,
+    "naive_indicator_allowed": false,
+    "remaining_steps": [
+      "adopt or reject the explicitly nonanalytic compact-support transfer weight",
+      "prove the fermion-plus-gauge interacting OS cone and chiral measure",
+      "establish the continuum/universality class of the new gauge weight"
+    ],
+    "status": "E nonanalytic gauge-weight/gap merger; F analytic admissibility; U fermionic OS and continuum merger"
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "schema": "cathedral-v129-universe-fallout-symbiotic-theorem-v1",
+  "date": "2026-09-12",
+  "theorem": {
+    "statement": "Under the already frozen v61 finite-cutoff completion premises, with v117-v126 inserted as structural refinements rather than resets, every declared Cathedral sector is reachable from one master finite transfer machine and no new continuous parameter is needed for the integration.",
+    "master_machine": "(P_G H, T_Cat, R_URT), T_Cat=P_G W_Delta^(1/2) exp(-a H_local[X]) W_Delta^(1/2) P_G=B^*B",
+    "local_transfer_field": "X in Omega^1(M_b) tensor End(V4)_C",
+    "four_sheet_identity": "End(V4) = Omega0_sheet(4 diagonal) + Omega1_sheet(12 offdiagonal)",
+    "force_identity": "End(V4)=4_g + 1_Y + 3_W + (3p+5)_C",
+    "tensor_identity": "End(V4)=1 + (4+5)_Sym0 + (3+3p)_Lambda2",
+    "status": "internal finite-theory fallout theorem; physical realization remains empirical"
+  },
+  "exact_refinements": {
+    "triality": {
+      "orthogonality_error": 0.0,
+      "order3_error": 0.0,
+      "det": 1.0
+    },
+    "four_sheet": {
+      "one_form_rank": 12,
+      "conditional_expectation_rank": 4,
+      "sym_rank": 10,
+      "skew_rank": 6
+    },
+    "G13_spectrum": {
+      "0": 1,
+      "6-sqrt5": 3,
+      "7": 5,
+      "6+sqrt5": 3,
+      "13": 1
+    },
+    "hidden_heat_gap_residual": 0.0,
+    "BKM_chi35": 47.966978303380195,
+    "response_Hessian_min": 0.9967848318278154
+  },
+  "representative_outputs": {
+    "alpha_inverse_response": 137.035999178195,
+    "sin2thetaW_response": 0.23076923076923078,
+    "alpha_s_response_slot": 0.11834319526627218,
+    "CKM_abs": [
+      [
+        0.9745113108035213,
+        0.2243072980697777,
+        0.0037337847606305624
+      ],
+      [
+        0.2241717838769131,
+        0.9736365306453021,
+        0.04217721548920106
+      ],
+      [
+        0.008643866579568431,
+        0.041450479196456086,
+        0.9991031685191168
+      ]
+    ],
+    "CKM_delta_deg": 65.9746190096952,
+    "J_CKM": 3.1413644076635733e-05,
+    "PMNS_abs": [
+      [
+        0.8250652040553663,
+        0.5445893028603725,
+        0.1506316708635016
+      ],
+      [
+        0.40013869742326513,
+        0.5389937000997755,
+        0.7411982285982381
+      ],
+      [
+        0.398944146318115,
+        0.6425793977889478,
+        0.6541676281013176
+      ]
+    ],
+    "PMNS_delta_deg": -74.51244491289914,
+    "J_PMNS": -0.032359467925464874,
+    "mass_ratios_to_top": {
+      "u/t": 1.2392132123304023e-05,
+      "c/t": 0.007467569521261125,
+      "t/t": 1.0,
+      "b/t": 0.02489189840420375,
+      "s/t": 0.0005576459455486811,
+      "d/t": 2.776173244422781e-05,
+      "tau/t": 0.0099567593616815,
+      "mu/t": 0.0005948223419185931,
+      "e/t": 2.8637853715794675e-06
+    },
+    "neutrino_ratios": {
+      "m3/t": 2.866892136839058e-13,
+      "m2/m3": 0.1728302001533427,
+      "m1/m3": 4.6269554073713016e-08
+    },
+    "cosmology": {
+      "Omega_m": 0.3157894736842105,
+      "Omega_Lambda": 0.6842105263157895,
+      "Omega_b": 0.048582995951417005,
+      "Omega_c": 0.2672064777327935,
+      "n_s": 0.9654521528033834,
+      "running": -6.1960660616520115e-06,
+      "r": 0.0004916918203299506
+    },
+    "gravity_operational": {
+      "G_route1_GeV_minus2": 7.157946998636172e-39,
+      "G_route2_GeV_minus2": 7.153205332e-39,
+      "relative_mismatch": 0.0006628729941471345
+    }
+  },
+  "dependency_graph": {
+    "nodes": [
+      "frozen_seed",
+      "D6_parent",
+      "D4_sheet_layer",
+      "A4_vacuum",
+      "four_sheet_calculus",
+      "EndV4_transfer",
+      "geometry_4",
+      "gauge_12",
+      "KO6_gauge_algebra",
+      "exterior_matter_16",
+      "G13_centered_cell",
+      "vortex_rails_history",
+      "hidden_3_5_heat",
+      "entropy_BKM",
+      "Schur_response",
+      "response_flavour",
+      "response_mass",
+      "D48_wall",
+      "H_local_v61",
+      "positive_transfer",
+      "operational_observables",
+      "one_MZ_unit",
+      "RG_heavy",
+      "curvature_source",
+      "semiclassical_gravity",
+      "cosmology_response",
+      "fluid_EM_projection",
+      "engineering_projection",
+      "URT_relaxation"
+    ],
+    "edges": [
+      [
+        "frozen_seed",
+        "D6_parent"
+      ],
+      [
+        "D6_parent",
+        "D4_sheet_layer"
+      ],
+      [
+        "D4_sheet_layer",
+        "A4_vacuum"
+      ],
+      [
+        "A4_vacuum",
+        "four_sheet_calculus"
+      ],
+      [
+        "four_sheet_calculus",
+        "EndV4_transfer"
+      ],
+      [
+        "EndV4_transfer",
+        "geometry_4"
+      ],
+      [
+        "EndV4_transfer",
+        "gauge_12"
+      ],
+      [
+        "gauge_12",
+        "KO6_gauge_algebra"
+      ],
+      [
+        "KO6_gauge_algebra",
+        "exterior_matter_16"
+      ],
+      [
+        "frozen_seed",
+        "G13_centered_cell"
+      ],
+      [
+        "frozen_seed",
+        "vortex_rails_history"
+      ],
+      [
+        "vortex_rails_history",
+        "G13_centered_cell"
+      ],
+      [
+        "G13_centered_cell",
+        "hidden_3_5_heat"
+      ],
+      [
+        "hidden_3_5_heat",
+        "entropy_BKM"
+      ],
+      [
+        "hidden_3_5_heat",
+        "Schur_response"
+      ],
+      [
+        "Schur_response",
+        "response_flavour"
+      ],
+      [
+        "Schur_response",
+        "response_mass"
+      ],
+      [
+        "response_flavour",
+        "D48_wall"
+      ],
+      [
+        "response_mass",
+        "D48_wall"
+      ],
+      [
+        "exterior_matter_16",
+        "D48_wall"
+      ],
+      [
+        "D48_wall",
+        "H_local_v61"
+      ],
+      [
+        "geometry_4",
+        "H_local_v61"
+      ],
+      [
+        "gauge_12",
+        "H_local_v61"
+      ],
+      [
+        "frozen_seed",
+        "URT_relaxation"
+      ],
+      [
+        "URT_relaxation",
+        "H_local_v61"
+      ],
+      [
+        "H_local_v61",
+        "positive_transfer"
+      ],
+      [
+        "positive_transfer",
+        "operational_observables"
+      ],
+      [
+        "operational_observables",
+        "one_MZ_unit"
+      ],
+      [
+        "one_MZ_unit",
+        "RG_heavy"
+      ],
+      [
+        "hidden_3_5_heat",
+        "curvature_source"
+      ],
+      [
+        "geometry_4",
+        "curvature_source"
+      ],
+      [
+        "curvature_source",
+        "semiclassical_gravity"
+      ],
+      [
+        "positive_transfer",
+        "semiclassical_gravity"
+      ],
+      [
+        "Schur_response",
+        "cosmology_response"
+      ],
+      [
+        "frozen_seed",
+        "cosmology_response"
+      ],
+      [
+        "G13_centered_cell",
+        "fluid_EM_projection"
+      ],
+      [
+        "geometry_4",
+        "fluid_EM_projection"
+      ],
+      [
+        "G13_centered_cell",
+        "engineering_projection"
+      ]
+    ],
+    "reachable": [
+      "A4_vacuum",
+      "D48_wall",
+      "D4_sheet_layer",
+      "D6_parent",
+      "EndV4_transfer",
+      "G13_centered_cell",
+      "H_local_v61",
+      "KO6_gauge_algebra",
+      "RG_heavy",
+      "Schur_response",
+      "URT_relaxation",
+      "cosmology_response",
+      "curvature_source",
+      "engineering_projection",
+      "entropy_BKM",
+      "exterior_matter_16",
+      "fluid_EM_projection",
+      "four_sheet_calculus",
+      "frozen_seed",
+      "gauge_12",
+      "geometry_4",
+      "hidden_3_5_heat",
+      "one_MZ_unit",
+      "operational_observables",
+      "positive_transfer",
+      "response_flavour",
+      "response_mass",
+      "semiclassical_gravity",
+      "vortex_rails_history"
+    ],
+    "complete": true
+  },
+  "status_map": {
+    "geometry_and_sheet_origin": "E structure / C physical reading",
+    "gauge_carrier": "E representation / C compact gauging",
+    "matter_carrier": "E representation / C particle dictionary",
+    "vortex_history": "E/C closed selected family",
+    "entropy_response": "E/C closed",
+    "flavour_mass_response": "C/N closed inside response law",
+    "finite_wall_D48": "E/C closed",
+    "H_local": "E/N/C closed finite-cutoff definition",
+    "positive_transfer": "E under selected Hamiltonian-transfer definition",
+    "operational_observables": "E/C closed",
+    "RG_heavy": "C/N frozen",
+    "gravity": "C/N closed semiclassical finite-theory interface",
+    "cosmology": "C/N closed response layer",
+    "fluid_EM": "E/C projection layer",
+    "nature_identification": "prospective empirical question"
+  },
+  "checks": {
+    "D4_triality_orthogonal": true,
+    "D4_triality_order3": true,
+    "D4_triality_det1": true,
+    "four_sheet_oneform_rank12": true,
+    "sheet_diagonal_projector_rank4": true,
+    "symmetric_skew_10_6": true,
+    "EndV4_dimension16": true,
+    "geometry_gauge_split_4_12": true,
+    "tensor_split_1_9_6": true,
+    "hidden_heat_same_gap": true,
+    "response_Hessian_positive": true,
+    "CKM_unitary": true,
+    "PMNS_unitary": true,
+    "cosmology_closes": true,
+    "all_declared_nodes_reachable_from_one_root": true
+  },
+  "checks_passed": 15,
+  "checks_total": 15
+}

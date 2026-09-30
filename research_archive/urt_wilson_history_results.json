@@ -1,0 +1,2336 @@
+{
+  "certificate": "URT equivariant Wilson-history and KO-6 continuation",
+  "date": "2026-08-28",
+  "observational_targets_used": false,
+  "topological_obstruction": {
+    "direct_continuous_kappa": "NO_GO",
+    "proof": "The dyadic solenoid is connected, whereas a finite-state or finite-alphabet history shift is totally disconnected. A continuous image of a connected space is connected, so every such direct coding is constant.",
+    "measure_theoretic_strengthening": "The Haar solenoid automorphism is mixing and therefore has no nontrivial finite periodic factor/eigenfunction.",
+    "repair": "Use the almost-everywhere binary Markov section together with the 2I frame fibre. The resulting skew product codes complete non-backtracking Wilson histories and is equivariant."
+  },
+  "dual_history": {
+    "dual_vertices": 20,
+    "dual_edges": 30,
+    "directed_edges": 60,
+    "spin_lifted_directed_edges": 120,
+    "A5_regular_action_size": 60,
+    "out_degree": [
+      2.0
+    ],
+    "in_degree": [
+      2.0
+    ],
+    "strongly_connected": true,
+    "perron_value": 2.0,
+    "topological_entropy": 0.6931471805599453,
+    "URT_angular_exponent": 0.6931471805599453,
+    "entropy_match_error": 0.0,
+    "coding_rule": "state g in 2I; bit 0 sends g -> g(AB), bit 1 sends g -> g(AB^{-1}); projection is the left/right non-backtracking walk on directed dual edges",
+    "coding_orbit_classification": {
+      "orientation_preserving_classes": 2,
+      "frames_per_class": 120,
+      "within_class": "all base-frame and central-sign choices form one regular 2I orbit",
+      "between_classes": "exchanging the two binary symbols swaps the left/right ordered-history orbits and reverses the Wilson orientation; the classes are paired by shell reflection/complex conjugation"
+    }
+  },
+  "binary_icosahedral": {
+    "presentation_residual": 7.514078601507346e-16,
+    "chosen_lift_signs": {
+      "A": -1,
+      "B": 1
+    },
+    "group_order": 120,
+    "C6_order": 6,
+    "right_cosets_G_over_C6": 20,
+    "orders": {
+      "A": 4,
+      "B": 6,
+      "AB_left": 10,
+      "ABinv_right": 5
+    },
+    "central_relations": {
+      "A2_plus_I": 4.501967683884157e-17,
+      "B3_plus_I": 5.822058658345461e-16,
+      "AB5_plus_I": 7.514078601507346e-16
+    },
+    "regular_state_identity": "20 faces x 3 directed boundary positions x 2 spin sheets = 120 = |2I|"
+  },
+  "dual_hopf": {
+    "pentagon_phase_minmax": [
+      0.5235987755982986,
+      0.523598775598299
+    ],
+    "pentagon_phase_target": 0.5235987755982988,
+    "pentagon_phase_error": 2.220446049250313e-16,
+    "total_phase": 6.283185307179586,
+    "chern_number": 1.0,
+    "magnetic_spectrum": [
+      {
+        "value": 0.19748292311185267,
+        "multiplicity": 2
+      },
+      {
+        "value": 1.2679491924311204,
+        "multiplicity": 4
+      },
+      {
+        "value": 2.543149748252141,
+        "multiplicity": 6
+      },
+      {
+        "value": 4.070466269319271,
+        "multiplicity": 2
+      },
+      {
+        "value": 5.188901059316732,
+        "multiplicity": 6
+      }
+    ]
+  },
+  "history_channel": {
+    "left_unitarity_residual": 1.5059797815742444e-15,
+    "right_unitarity_residual": 1.5059797815742444e-15,
+    "kraus_trace_preserving_residual": 9.930136612989092e-16,
+    "kraus_unital_residual": 1.4043333874306805e-15,
+    "uniform_stationary_residual": 2.406831145064446e-17,
+    "random_gauge_covariance_residual": 7.238704040244655e-16,
+    "haar_branch_weights": [
+      0.5,
+      0.5
+    ]
+  },
+  "ordered_history": {
+    "allowed_ordered_two_steps": 120,
+    "A5_orbits": {
+      "left": 60,
+      "right": 60
+    },
+    "A5_orbits_verified": {
+      "left": true,
+      "right": true
+    },
+    "two_step_edge_stabilizer_intersection_sizes": [
+      1
+    ],
+    "trivial_stabilizer_count": 120,
+    "left_fifth_power_phase": -0.5235987755982986,
+    "right_fifth_power_phase": 0.5235987755982988,
+    "left_fifth_scalar_residual": 2.4184011361052488e-15,
+    "right_fifth_scalar_residual": 2.4184011361052488e-15,
+    "fifth_phase_target_error": 4.47545209131181e-16,
+    "orientation_odd_invariant": 1.0,
+    "orientation_odd_target": 1.0,
+    "orientation_odd_target_error": 0.0,
+    "orientation_even_invariant": 0.866025403784439,
+    "orientation_even_target": 0.8660254037844386,
+    "orientation_even_target_error": 4.440892098500626e-16,
+    "interpretation": "The left/right binary branches are the two regular A5 orbits of ordered two-step histories. Their five-step Wilson loops have opposite phases -pi/6 and +pi/6, so the normalized orientation-odd trace is exactly one and changes sign under flux conjugation."
+  },
+  "oriented_entropy_vacuum": {
+    "coefficients": [
+      0.9156221283301194,
+      0.3684186569566095,
+      1.948762300704804e-16,
+      0.9959358591260835
+    ],
+    "potential": -0.435555231880576,
+    "stationarity_residual": 3.848771895058496e-15,
+    "hessian_min": 0.9255858209615311,
+    "hessian_eigenvalues": [
+      0.9255858209615311,
+      0.9429616147162548,
+      0.9453774485887234,
+      0.9905092439166,
+      0.9947669888026814,
+      0.9977999129317585,
+      0.9992009855860596,
+      0.9998474634452577
+    ],
+    "orbit_size": 30,
+    "stabilizer": {
+      "order": 2,
+      "element_orders": [
+        1,
+        2
+      ],
+      "max_field_invariance_residual": 4.557391697959899e-16,
+      "generation_spectra_nonidentity": [
+        [
+          -1.0000000000000013,
+          -1.0,
+          1.000000000000001
+        ]
+      ],
+      "orbit_stabilizer_product": 60
+    }
+  },
+  "ruelle_history_measure": {
+    "perron_value": 461.32269590008775,
+    "log_perron": 6.134097789223624,
+    "row_stochastic_residual": 2.220446049250313e-16,
+    "stationarity_residual": 4.555424804644729e-16,
+    "entropy_rate": 0.14254820583787792,
+    "stationary_minmax": [
+      1.1059018257334869e-27,
+      0.09974725527802267
+    ],
+    "left_right_branch_probability_minmax": [
+      8.890869579765942e-16,
+      0.9999999999999991
+    ],
+    "selected_vacuum_stabilizer": {
+      "state_potential_invariance_residual": 1.0444360777476668e-15,
+      "normalized_transfer_invariance_residual": 4.584882230828202e-19,
+      "doob_transition_invariance_residual": 1.0611935037671722e-12,
+      "stationary_measure_invariance_residual": 3.8391742701383166e-13
+    }
+  },
+  "finite_blocks": {
+    "Clebsch_multiplicities": {
+      "5": 1,
+      "43": 1,
+      "45": 1
+    },
+    "Clebsch_gram_errors": {
+      "5": 4.440892098500626e-16,
+      "43": 4.757738529387486e-16,
+      "45": 6.661338147750939e-16
+    },
+    "C45_H_minus_C43": 1.8670625165584858e-15,
+    "HJ43_vs_archived_J45_up_to_sign": 3.206339664342982e-15,
+    "charge_embedding": {
+      "normalizer_order": 6,
+      "multiplicity_43": 1,
+      "multiplicity_45": 1,
+      "gram_error_43": 3.552713678800501e-15,
+      "gram_error_45": 8.458136755094438e-16
+    }
+  },
+  "KO6_completion_certificate": {
+    "D_self_adjoint": 0.0,
+    "D_anticommutes_grading": 0.0,
+    "J_squared_plus_one": 0.0,
+    "J_commutes_D": 0.0,
+    "J_anticommutes_grading": 0.0
+  },
+  "Haar_flavour_no_go": {
+    "max_conditional_eigenvalue_deviation_from_one_third": 4.996003610813204e-16,
+    "theorem": "The Haar history action is A5-equivariant. The generation carrier is the irreducible real triplet, so every reduced generation density commuting with A5 is I3/3 by Schur's lemma. Its eigenframes are therefore undefined and no CKM/PMNS matrix can be extracted."
+  },
+  "Haar_branches_by_free_energy": [
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": -1,
+      "flux": -1,
+      "history_measure": "Haar",
+      "free_energy": -0.9219650046830355,
+      "joint_minmax": [
+        0.015280515925500868,
+        2.0901532427222382
+      ],
+      "K0_minmax": [
+        0.01528051592550101,
+        0.6542953723899791
+      ],
+      "A5_history_covariance_residual": 7.864995244117313e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 5.099237962651493e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3333333333333328,
+          0.33333333333333326,
+          0.33333333333333354
+        ],
+        "d": [
+          0.33333333333333326,
+          0.33333333333333337,
+          0.3333333333333334
+        ],
+        "e": [
+          0.33333333333333304,
+          0.33333333333333326,
+          0.3333333333333336
+        ],
+        "nu": [
+          0.33333333333333304,
+          0.33333333333333326,
+          0.3333333333333334
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.6546768380080192,
+          0.7559088819267976,
+          0.0
+        ],
+        [
+          0.7559088819267977,
+          0.6546768380080192,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.446272390555585,
+          0.894897174779205,
+          0.0
+        ],
+        [
+          0.8948971747792048,
+          0.4462723905555851,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ckm_J": -9.71445146547012e-17,
+      "pmns_J": 5.551115123125783e-17
+    },
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": -1,
+      "flux": 1,
+      "history_measure": "Haar",
+      "free_energy": -0.9219650046830355,
+      "joint_minmax": [
+        0.015280515925500874,
+        2.090153242722237
+      ],
+      "K0_minmax": [
+        0.015280515925501108,
+        0.6542953723899794
+      ],
+      "A5_history_covariance_residual": 7.861297847347282e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 6.458387927643505e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3333333333333331,
+          0.33333333333333326,
+          0.33333333333333354
+        ],
+        "d": [
+          0.3333333333333329,
+          0.3333333333333334,
+          0.33333333333333354
+        ],
+        "e": [
+          0.33333333333333304,
+          0.3333333333333334,
+          0.33333333333333365
+        ],
+        "nu": [
+          0.3333333333333333,
+          0.33333333333333354,
+          0.3333333333333337
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.6456866565284742,
+          0.7636024761491281,
+          0.0
+        ],
+        [
+          0.7636024761491281,
+          0.6456866565284743,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.8508418771845382,
+          0.0,
+          0.5254218305600665
+        ],
+        [
+          0.5254218305600663,
+          0.0,
+          0.8508418771845387
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "ckm_J": -1.1102230246251565e-16,
+      "pmns_J": 0.0
+    },
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": 1,
+      "flux": -1,
+      "history_measure": "Haar",
+      "free_energy": -0.9219650046830355,
+      "joint_minmax": [
+        0.015280515925500867,
+        2.0901532427222365
+      ],
+      "K0_minmax": [
+        0.015280515925501108,
+        0.6542953723899794
+      ],
+      "A5_history_covariance_residual": 7.861297847347282e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 5.020165154138703e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.33333333333333315,
+          0.33333333333333326,
+          0.33333333333333354
+        ],
+        "d": [
+          0.33333333333333304,
+          0.3333333333333334,
+          0.3333333333333335
+        ],
+        "e": [
+          0.33333333333333304,
+          0.33333333333333337,
+          0.3333333333333336
+        ],
+        "nu": [
+          0.33333333333333337,
+          0.3333333333333334,
+          0.3333333333333334
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9859968767113477,
+          0.1654334023427168,
+          0.021022571317039496
+        ],
+        [
+          0.1655602831451111,
+          0.9851870499060069,
+          0.044679630061238935
+        ],
+        [
+          0.019998793973083913,
+          0.04514716034050557,
+          0.9987801470558025
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.40759571568627434,
+          0.9131624896776003,
+          0.0
+        ],
+        [
+          0.9131624896776005,
+          0.40759571568627445,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ckm_J": 0.00014726445746183515,
+      "pmns_J": 1.3877787807814457e-17
+    },
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": 1,
+      "flux": 1,
+      "history_measure": "Haar",
+      "free_energy": -0.9219650046830355,
+      "joint_minmax": [
+        0.015280515925500905,
+        2.090153242722236
+      ],
+      "K0_minmax": [
+        0.01528051592550101,
+        0.6542953723899791
+      ],
+      "A5_history_covariance_residual": 7.864995244117313e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 4.63239023559263e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3333333333333332,
+          0.3333333333333334,
+          0.33333333333333354
+        ],
+        "d": [
+          0.333333333333333,
+          0.33333333333333326,
+          0.3333333333333335
+        ],
+        "e": [
+          0.33333333333333315,
+          0.3333333333333332,
+          0.3333333333333336
+        ],
+        "nu": [
+          0.3333333333333332,
+          0.33333333333333326,
+          0.33333333333333337
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.473323878874364,
+          0.8808884751699991,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.880888475169999,
+          0.473323878874364,
+          0.0
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.7867915425962322,
+          0.6172188173565689,
+          0.0
+        ],
+        [
+          0.6172188173565688,
+          0.7867915425962321,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ckm_J": 0.0,
+      "pmns_J": 5.551115123125783e-17,
+      "KO6_completion": {
+        "D_self_adjoint": 0.0,
+        "D_anticommutes_grading": 0.0,
+        "J_squared_plus_one": 0.0,
+        "J_commutes_D": 0.0,
+        "J_anticommutes_grading": 0.0
+      }
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": -1,
+      "flux": -1,
+      "history_measure": "Haar",
+      "free_energy": -0.9161469130264986,
+      "joint_minmax": [
+        0.01528051592550036,
+        2.4245110341709837
+      ],
+      "K0_minmax": [
+        0.015280515925501028,
+        0.6542953723899786
+      ],
+      "A5_history_covariance_residual": 7.948339181379959e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 5.371982060257642e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3333333333333331,
+          0.3333333333333333,
+          0.3333333333333335
+        ],
+        "d": [
+          0.3333333333333331,
+          0.33333333333333326,
+          0.3333333333333336
+        ],
+        "e": [
+          0.3333333333333331,
+          0.33333333333333326,
+          0.33333333333333354
+        ],
+        "nu": [
+          0.33333333333333337,
+          0.3333333333333334,
+          0.3333333333333336
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.11869462804672974,
+          0.9929308058836972,
+          0.0
+        ],
+        [
+          0.9929308058836974,
+          0.11869462804672973,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.5418096270040359,
+          0.0,
+          0.8405012362190476
+        ],
+        [
+          0.8405012362190479,
+          0.0,
+          0.5418096270040359
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "ckm_J": -2.0816681711721685e-17,
+      "pmns_J": -0.0
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": -1,
+      "flux": 1,
+      "history_measure": "Haar",
+      "free_energy": -0.9161469130264985,
+      "joint_minmax": [
+        0.015280515925500617,
+        2.4245110341709823
+      ],
+      "K0_minmax": [
+        0.01528051592550107,
+        0.6542953723899787
+      ],
+      "A5_history_covariance_residual": 7.86111227331659e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 4.960785510655336e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333334
+        ],
+        "d": [
+          0.3333333333333331,
+          0.3333333333333335,
+          0.3333333333333336
+        ],
+        "e": [
+          0.33333333333333304,
+          0.3333333333333333,
+          0.33333333333333365
+        ],
+        "nu": [
+          0.33333333333333326,
+          0.3333333333333334,
+          0.3333333333333335
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.40018631683902334,
+          0.5085044674568092,
+          0.7624133513988873
+        ],
+        [
+          0.860804457078265,
+          0.09455759354389814,
+          0.5000745426207782
+        ],
+        [
+          0.3144305940728579,
+          0.8558516624273471,
+          0.41067180744645215
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.9958088757808012,
+          0.0,
+          0.0914586404675697
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.09145864046756978,
+          0.0,
+          0.9958088757808011
+        ]
+      ],
+      "ckm_J": 0.01121326253852366,
+      "pmns_J": 0.0
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": 1,
+      "flux": -1,
+      "history_measure": "Haar",
+      "free_energy": -0.9161469130264985,
+      "joint_minmax": [
+        0.015280515925500787,
+        2.424511034170984
+      ],
+      "K0_minmax": [
+        0.015280515925501024,
+        0.6542953723899788
+      ],
+      "A5_history_covariance_residual": 7.87943596394941e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 3.966286892025021e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3333333333333332,
+          0.3333333333333335,
+          0.3333333333333336
+        ],
+        "d": [
+          0.33333333333333326,
+          0.3333333333333334,
+          0.3333333333333334
+        ],
+        "e": [
+          0.3333333333333332,
+          0.33333333333333337,
+          0.3333333333333334
+        ],
+        "nu": [
+          0.33333333333333326,
+          0.3333333333333334,
+          0.3333333333333335
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.935860414707681,
+          0.3523709468488669,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.3523709468488669,
+          0.9358604147076812,
+          0.0
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.9838622061493683,
+          0.17892780474509407,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.17892780474509415,
+          0.9838622061493684,
+          0.0
+        ]
+      ],
+      "ckm_J": 0.0,
+      "pmns_J": 0.0
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": 1,
+      "flux": 1,
+      "history_measure": "Haar",
+      "free_energy": -0.9161469130264985,
+      "joint_minmax": [
+        0.015280515925500667,
+        2.4245110341709832
+      ],
+      "K0_minmax": [
+        0.015280515925501047,
+        0.6542953723899787
+      ],
+      "A5_history_covariance_residual": 7.897110613979612e-15,
+      "history_covariance_scope": "A5 generators",
+      "generation_symmetry_commutator_residual": 5.327299580958224e-16,
+      "conditional_eigenvalues": {
+        "u": [
+          0.33333333333333315,
+          0.3333333333333332,
+          0.33333333333333354
+        ],
+        "d": [
+          0.3333333333333333,
+          0.33333333333333337,
+          0.33333333333333354
+        ],
+        "e": [
+          0.33333333333333304,
+          0.3333333333333333,
+          0.3333333333333335
+        ],
+        "nu": [
+          0.3333333333333332,
+          0.3333333333333334,
+          0.3333333333333334
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9716944675624521,
+          0.1458018955438086,
+          0.18588079234917065
+        ],
+        [
+          0.19283595264585238,
+          0.07789020043162058,
+          0.978134659463557
+        ],
+        [
+          0.13647035236889302,
+          0.9862428321324087,
+          0.09327871671370638
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.9940473236625416,
+          0.10894915474356934,
+          0.0
+        ],
+        [
+          0.10894915474356939,
+          0.9940473236625419,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ckm_J": -0.001826964731221194,
+      "pmns_J": -9.540979117872439e-18
+    }
+  ],
+  "oriented_vacuum_branches_by_free_energy": [
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": -1,
+      "flux": 1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0705825013760624,
+      "joint_minmax": [
+        7.021339538707286e-12,
+        123302.71152491502
+      ],
+      "K0_minmax": [
+        1.0354273004460868e-11,
+        36754.3655315143
+      ],
+      "A5_history_covariance_residual": 5.200211398347055e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 4.660657178571144e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3297968652673485,
+          0.3323466916315275,
+          0.3378564431011241
+        ],
+        "d": [
+          0.32983199730644697,
+          0.3314539898995328,
+          0.33871401279401986
+        ],
+        "e": [
+          0.33176787131708374,
+          0.33300281257199155,
+          0.3352293161109245
+        ],
+        "nu": [
+          0.3303574542699775,
+          0.3317503271049203,
+          0.33789221862510216
+        ]
+      },
+      "ckm_abs": [
+        [
+          1.0000000000000004,
+          6.30965973792997e-10,
+          2.385890629288943e-10
+        ],
+        [
+          6.360593854815827e-10,
+          0.9911341360770574,
+          0.13286506050420135
+        ],
+        [
+          2.2465711492412037e-10,
+          0.13286506050420122,
+          0.9911341360770571
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.9999999999999999,
+          5.159014656156225e-10,
+          4.341517230990923e-10
+        ],
+        [
+          6.10198638331903e-10,
+          0.9449107132950546,
+          0.32732818989544793
+        ],
+        [
+          2.868791285414505e-10,
+          0.327328189895448,
+          0.9449107132950552
+        ]
+      ],
+      "ckm_J": 1.8817155592295936e-20,
+      "pmns_J": -3.900049186021558e-20
+    },
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": 1,
+      "flux": -1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0705825013760624,
+      "joint_minmax": [
+        8.623206611917057e-12,
+        123302.71152491511
+      ],
+      "K0_minmax": [
+        1.0354273004460868e-11,
+        36754.3655315143
+      ],
+      "A5_history_covariance_residual": 5.200211398347055e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 6.732616570526051e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.32979686526801366,
+          0.3323466916307393,
+          0.3378564431012474
+        ],
+        "d": [
+          0.32983199730323,
+          0.3314539899032959,
+          0.33871401279347363
+        ],
+        "e": [
+          0.3317678713185681,
+          0.33300281257172193,
+          0.33522931610970974
+        ],
+        "nu": [
+          0.33035745426619656,
+          0.33175032710762853,
+          0.3378922186261748
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9999999999999998,
+          8.581785686623299e-10,
+          2.7758107261932345e-10
+        ],
+        [
+          8.789181349117424e-10,
+          0.9911341359705954,
+          0.1328650612983769
+        ],
+        [
+          2.0254544749747162e-10,
+          0.1328650612983771,
+          0.9911341359705955
+        ]
+      ],
+      "pmns_abs": [
+        [
+          1.0,
+          1.9843632852720585e-09,
+          7.688373899774549e-10
+        ],
+        [
+          2.1054231656804763e-09,
+          0.9449107132076588,
+          0.327328190147739
+        ],
+        [
+          3.098413592416462e-10,
+          0.3273281901477389,
+          0.9449107132076585
+        ]
+      ],
+      "ckm_J": 2.0396440203260798e-20,
+      "pmns_J": 2.011930307022483e-19
+    },
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": 1,
+      "flux": 1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0705825013760575,
+      "joint_minmax": [
+        1.0327416824977626e-11,
+        123302.71152491508
+      ],
+      "K0_minmax": [        1.0354273004464486e-11,
+        36754.365531514304
+      ],
+      "A5_history_covariance_residual": 5.171257074993153e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 7.415749199686281e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.32979686526940744,
+          0.3323466916293728,
+          0.33785644310122004
+        ],
+        "d": [
+          0.3298319973031292,
+          0.3314539899045641,
+          0.3387140127923069
+        ],
+        "e": [
+          0.33176787131888197,
+          0.33300281256997627,
+          0.3352293161111419
+        ],
+        "nu": [
+          0.33035745426473573,
+          0.33175032710796437,
+          0.3378922186272997
+        ]
+      },
+      "ckm_abs": [
+        [
+          1.0000000000000002,
+          1.7429847281559326e-09,
+          8.641766396061664e-11
+        ],
+        [
+          1.716948852423098e-09,
+          0.9911341360466145,
+          0.1328650607312979
+        ],
+        [
+          3.123289143101909e-10,
+          0.1328650607312978,
+          0.9911341360466145
+        ]
+      ],
+      "pmns_abs": [
+        [
+          1.0,
+          1.2739337675033568e-10,
+          1.1165720341264004e-10
+        ],
+        [
+          1.285508644500212e-10,
+          0.9449107131853798,
+          0.3273281902120518
+        ],
+        [
+          1.1032286607712045e-10,
+          0.32732819021205173,
+          0.9449107131853797
+        ]
+      ],
+      "ckm_J": 7.672560931836749e-21,
+      "pmns_J": 4.3856250475270785e-21
+    },
+    {
+      "fiveplet_phase": 0.0,
+      "chirality": -1,
+      "flux": -1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0705825013760562,
+      "joint_minmax": [
+        1.0266982260802712e-11,
+        123302.71152491518
+      ],
+      "K0_minmax": [
+        1.0354273004464486e-11,
+        36754.365531514304
+      ],
+      "A5_history_covariance_residual": 5.171257074993153e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 8.366728650443594e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3297968652681459,
+          0.3323466916317524,
+          0.33785644310010177
+        ],
+        "d": [
+          0.3298319973030486,
+          0.33145398990257263,
+          0.338714012794379
+        ],
+        "e": [
+          0.3317678713184309,
+          0.3330028125729552,
+          0.3352293161086139
+        ],
+        "nu": [
+          0.3303574542679009,
+          0.33175032710601676,
+          0.3378922186260824
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9999999999999998,
+          1.3294356457212881e-09,
+          2.1357356051567508e-10
+        ],
+        [
+          1.2900429160340584e-09,
+          0.991134135997662,
+          0.13286506109646629
+        ],
+        [
+          3.8574958792235135e-10,
+          0.1328650610964664,
+          0.9911341359976624
+        ]
+      ],
+      "pmns_abs": [
+        [
+          1.0,
+          5.044346395205397e-10,
+          4.156023159911746e-10
+        ],
+        [
+          3.416874630867262e-10,
+          0.9449107130226924,
+          0.3273281906816866
+        ],
+        [
+          5.571616524288341e-10,
+          0.3273281906816867,
+          0.9449107130226925
+        ]
+      ],
+      "ckm_J": 8.559977361392496e-21,
+      "pmns_J": -6.902949064702521e-21
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": -1,
+      "flux": 1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0704814565667673,
+      "joint_minmax": [
+        8.80294518254997e-12,
+        135870.79412317608
+      ],
+      "K0_minmax": [
+        1.0354273004462542e-11,
+        36754.365531514224
+      ],
+      "A5_history_covariance_residual": 4.246579358428545e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 7.257557862512557e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3298500739985592,
+          0.3323546993401917,
+          0.33779522666124895
+        ],
+        "d": [
+          0.3295797235496226,
+          0.33141956408843365,
+          0.33900071236194385
+        ],
+        "e": [
+          0.3312594662960977,
+          0.33371554092127115,
+          0.3350249927826309
+        ],
+        "nu": [
+          0.3291368695514577,
+          0.3318434046662665,
+          0.3390197257822756
+        ]
+      },
+      "ckm_abs": [
+        [
+          1.0000000000000002,
+          1.2012665696685609e-09,
+          3.804523788573054e-10
+        ],
+        [
+          1.2296719848579599e-09,
+          0.9935776601310712,
+          0.11315225710724926
+        ],
+        [
+          2.751213909105054e-10,
+          0.11315225710724924,
+          0.9935776601310718
+        ]
+      ],
+      "pmns_abs": [
+        [
+          2.613822369689825e-10,
+          0.8595309866581462,
+          0.511083635987764
+        ],
+        [
+          0.9999999999999994,
+          3.0388294340794644e-10,
+          8.102824751613729e-10
+        ],
+        [
+          8.249738402273894e-10,
+          0.5110836359877637,
+          0.8595309866581464
+        ]
+      ],
+      "ckm_J": -2.837284474050076e-20,
+      "pmns_J": 6.599746805097562e-20
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": -1,
+      "flux": -1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0704814565667071,
+      "joint_minmax": [
+        -1.0313935170911972e-11,
+        135870.79412317608
+      ],
+      "K0_minmax": [
+        1.0354273004463293e-11,
+        36754.365531514224
+      ],
+      "A5_history_covariance_residual": 4.264079142736558e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 7.178752047437236e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.32985007399911753,
+          0.3323546993395498,
+          0.33779522666133266
+        ],
+        "d": [
+          0.32957972354708726,
+          0.3314195640896754,
+          0.33900071236323714
+        ],
+        "e": [
+          0.3312594662947424,
+          0.3337155409222014,
+          0.33502499278305586
+        ],
+        "nu": [
+          0.3291368695517042,
+          0.33184340466469153,
+          0.33901972578360406
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9999999999999996,
+          3.144974880344166e-10,
+          2.046249672297631e-10
+        ],
+        [
+          3.100228003157107e-10,
+          0.993577660225608,
+          0.11315225627713311
+        ],
+        [
+          2.1134305243758433e-10,
+          0.11315225627713313,
+          0.9935776602256082
+        ]
+      ],
+      "pmns_abs": [
+        [
+          7.763920567971537e-10,
+          0.8595309869484684,
+          0.5110836354995058
+        ],
+        [
+          1.0000000000000002,
+          1.403576875688201e-09,
+          1.1539107969776037e-09
+        ],
+        [
+          1.6427882508181345e-09,
+          0.5110836354995055,
+          0.8595309869484687
+        ]
+      ],
+      "ckm_J": -7.161012040259751e-21,
+      "pmns_J": -3.8200397059179743e-19
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": 1,
+      "flux": 1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.070481456566672,
+      "joint_minmax": [
+        7.837286253361836e-13,
+        135870.79412317602
+      ],
+      "K0_minmax": [
+        1.0354273004459877e-11,
+        36754.36553151424
+      ],
+      "A5_history_covariance_residual": 4.264079142736558e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 1.2020410505022093e-11,
+      "conditional_eigenvalues": {
+        "u": [
+          0.32985007399964983,
+          0.3323546993399969,
+          0.33779522666035294
+        ],
+        "d": [
+          0.3295797235495829,
+          0.3314195640905475,
+          0.33900071235986945
+        ],
+        "e": [
+          0.33125946629601954,
+          0.3337155409218575,
+          0.3350249927821233
+        ],
+        "nu": [
+          0.32913686954990873,
+          0.33184340466472645,
+          0.3390197257853646
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9999999999999998,
+          1.0071142462902082e-09,
+          5.920883646111584e-10
+        ],
+        [
+          9.82187548601491e-10,
+          0.9935776601708146,
+          0.11315225675826587
+        ],
+        [
+          6.325780551317441e-10,
+          0.11315225675826593,
+          0.9935776601708152
+        ]
+      ],
+      "pmns_abs": [
+        [
+          3.3259785206710626e-10,
+          0.85953098657936,
+          0.5110836361202654
+        ],
+        [
+          0.9999999999999998,
+          1.3502327217159853e-09,
+          1.6631414230882104e-09
+        ],
+        [
+          2.1162574849907395e-09,
+          0.5110836361202656,
+          0.8595309865793596
+        ]
+      ],
+      "ckm_J": -6.381397895831277e-20,
+      "pmns_J": -1.1802699160273904e-19
+    },
+    {
+      "fiveplet_phase": 3.141592653589793,
+      "chirality": 1,
+      "flux": -1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.070481456566626,
+      "joint_minmax": [
+        -1.0150615678565848e-12,
+        135870.794123176
+      ],
+      "K0_minmax": [
+        1.0354273004460752e-11,
+        36754.36553151424
+      ],
+      "A5_history_covariance_residual": 4.246579358428545e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 5.7411356537802984e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.32985007400197386,
+          0.332354699341013,
+          0.337795226657013
+        ],
+        "d": [
+          0.3295797235507803,
+          0.3314195640891998,
+          0.3390007123600199
+        ],
+        "e": [
+          0.3312594662956556,
+          0.3337155409208398,
+          0.3350249927835045
+        ],
+        "nu": [
+          0.329136869551585,
+          0.3318434046655521,
+          0.33901972578286294
+        ]
+      },
+      "ckm_abs": [
+        [
+          1.0000000000000004,
+          2.769123174032212e-10,
+          2.718765141931029e-10
+        ],
+        [
+          2.791712724952885e-10,
+          0.9935776601685425,
+          0.11315225677822126
+        ],
+        [
+          2.6955641567482087e-10,
+          0.1131522567782212,
+          0.9935776601685424
+        ]
+      ],
+      "pmns_abs": [
+        [
+          4.6109479940923173e-10,
+          0.859530986611147,
+          0.5110836360668055
+        ],
+        [
+          0.9999999999999996,
+          2.44887201294329e-10,
+          7.800485948370072e-10
+        ],
+        [
+          6.751570816015245e-10,
+          0.5110836360668053,
+          0.8595309866111471
+        ]
+      ],
+      "ckm_J": 8.439317367502611e-21,
+      "pmns_J": 8.378461432206157e-20
+    }
+  ],
+  "continuous_phase_probe": [],
+  "continuous_phase_minimum": {
+    "grid_size": 24,
+    "grid": [
+      {
+        "fiveplet_phase": 0.0,
+        "free_energy": -1.0705825013760575
+      },
+      {
+        "fiveplet_phase": 0.2617993877991494,
+        "free_energy": -1.070672324806225
+      },
+      {
+        "fiveplet_phase": 0.5235987755982988,
+        "free_energy": -1.0708963415763542
+      },
+      {
+        "fiveplet_phase": 0.7853981633974483,
+        "free_energy": -1.0712106224684192
+      },
+      {
+        "fiveplet_phase": 1.0471975511965976,
+        "free_energy": -1.071543825923855
+      },
+      {
+        "fiveplet_phase": 1.308996938995747,
+        "free_energy": -1.0718014411522259
+      },
+      {
+        "fiveplet_phase": 1.5707963267948966,
+        "free_energy": -1.0718948570176734
+      },
+      {
+        "fiveplet_phase": 1.832595714594046,
+        "free_energy": -1.0717851310296023
+      },
+      {
+        "fiveplet_phase": 2.0943951023931953,
+        "free_energy": -1.0715066925229968
+      },
+      {
+        "fiveplet_phase": 2.356194490192345,
+        "free_energy": -1.0711482071207141
+      },
+      {
+        "fiveplet_phase": 2.617993877991494,
+        "free_energy": -1.0708094064021583
+      },
+      {
+        "fiveplet_phase": 2.8797932657906435,
+        "free_energy": -1.0705696504347726
+      },
+      {
+        "fiveplet_phase": 3.141592653589793,
+        "free_energy": -1.070481456566672
+      },
+      {
+        "fiveplet_phase": 3.4033920413889422,
+        "free_energy": -1.0705770538751533
+      },
+      {
+        "fiveplet_phase": 3.665191429188092,
+        "free_energy": -1.0708684918879474
+      },
+      {
+        "fiveplet_phase": 3.926990816987241,
+        "free_energy": -1.071328352672
+      },
+      {
+        "fiveplet_phase": 4.1887902047863905,
+        "free_energy": -1.0718637012787995
+      },
+      {
+        "fiveplet_phase": 4.45058959258554,
+        "free_energy": -1.0723299214489688
+      },
+      {
+        "fiveplet_phase": 4.71238898038469,
+        "free_energy": -1.0725298033178827
+      },
+      {
+        "fiveplet_phase": 4.974188368183839,
+        "free_energy": -1.072266223430289
+      },
+      {
+        "fiveplet_phase": 5.235987755982988,
+        "free_energy": -1.0717868770720627
+      },
+      {
+        "fiveplet_phase": 5.497787143782138,
+        "free_energy": -1.0712916907102177
+      },
+      {
+        "fiveplet_phase": 5.759586531581287,
+        "free_energy": -1.0708930031948907
+      },
+      {
+        "fiveplet_phase": 6.021385919380436,
+        "free_energy": -1.0706521659664288
+      }
+    ],
+    "optimizer_success": true,
+    "optimizer_message": "Solution found.",
+    "selected_branch": {
+      "fiveplet_phase": 4.694692450303334,
+      "chirality": 1,
+      "flux": 1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0725310624292224,
+      "joint_minmax": [
+        -1.1093869934674636e-11,
+        132253.40901962918
+      ],
+      "K0_minmax": [
+        1.3474878688745856e-13,
+        39774.479845844166
+      ],
+      "A5_history_covariance_residual": 4.714550599488614e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 5.888139831548679e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.32207803658919887,
+          0.3310539629131893,
+          0.3468680004976116
+        ],
+        "d": [
+          0.32133945039040457,
+          0.3309371417979035,
+          0.34772340781169203
+        ],
+        "e": [
+          0.33103821773874165,
+          0.3329025300278243,
+          0.3360592522334341
+        ],
+        "nu": [
+          0.3231056528494824,
+          0.3304889694599425,
+          0.3464053776905749
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9998524317041299,
+          1.5781154942063192e-10,
+          0.017178906115893802
+        ],
+        [
+          1.5768777694487795e-10,
+          1.0,
+          2.7582531127963413e-11
+        ],
+        [
+          0.017178906115893483,
+          2.6863901006782692e-11,
+          0.99985243170413
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.9962384861489503,
+          4.395743884863286e-10,
+          0.08665378650496626
+        ],
+        [
+          4.36181463221917e-10,
+          0.9999999999999997,
+          1.6561847226112933e-10
+        ],
+        [
+          0.08665378650496673,
+          1.5639065492755714e-10,
+          0.9962384861489497
+        ]
+      ],
+      "ckm_J": -7.101048915057551e-23,
+      "pmns_J": 5.873290764162e-21
+    },
+    "selected_phase_offset_from_three_pi_over_two": -0.017696530081355633,
+    "selected_phase_derivative_residual": 2.431388423929093e-10,
+    "selected_phase_curvature": 0.008078848701131847,
+    "selected_sector_branches": [
+      {
+        "fiveplet_phase": 4.694692450303334,
+        "chirality": 1,
+        "flux": 1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.0725310624292224,
+        "joint_minmax": [
+          -1.1093869934674636e-11,
+          132253.40901962918
+        ],
+        "K0_minmax": [
+          1.3474878688745856e-13,
+          39774.479845844166
+        ],
+        "A5_history_covariance_residual": 4.714550599488614e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 5.888139831548679e-12,
+        "conditional_eigenvalues": {
+          "u": [
+            0.32207803658919887,
+            0.3310539629131893,
+            0.3468680004976116
+          ],
+          "d": [
+            0.32133945039040457,
+            0.3309371417979035,
+            0.34772340781169203
+          ],
+          "e": [
+            0.33103821773874165,
+            0.3329025300278243,
+            0.3360592522334341
+          ],
+          "nu": [
+            0.3231056528494824,
+            0.3304889694599425,
+            0.3464053776905749
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9998524317041299,
+            1.5781154942063192e-10,
+            0.017178906115893802
+          ],
+          [
+            1.5768777694487795e-10,
+            1.0,
+            2.7582531127963413e-11
+          ],
+          [
+            0.017178906115893483,
+            2.6863901006782692e-11,
+            0.99985243170413
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9962384861489503,
+            4.395743884863286e-10,
+            0.08665378650496626
+          ],
+          [
+            4.36181463221917e-10,
+            0.9999999999999997,
+            1.6561847226112933e-10
+          ],
+          [
+            0.08665378650496673,
+            1.5639065492755714e-10,
+            0.9962384861489497
+          ]
+        ],
+        "ckm_J": -7.101048915057551e-23,
+        "pmns_J": 5.873290764162e-21
+      },
+      {
+        "fiveplet_phase": 4.694692450303334,
+        "chirality": 1,
+        "flux": -1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.072531062429027,
+        "joint_minmax": [
+          -1.5617908874583207e-11,
+          132253.40901962927
+        ],
+        "K0_minmax": [
+          1.347487868864978e-13,
+          39774.479845844195
+        ],
+        "A5_history_covariance_residual": 4.718412605849169e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 4.8430346077546196e-12,
+        "conditional_eigenvalues": {
+          "u": [
+            0.3220780365902897,
+            0.331053962912286,
+            0.34686800049742417
+          ],
+          "d": [
+            0.32133945039095996,
+            0.3309371417973057,
+            0.34772340781173444
+          ],
+          "e": [
+            0.3310382177378586,
+            0.33290253002907433,
+            0.33605925223306693
+          ],
+          "nu": [
+            0.32310565284941883,
+            0.3304889694608884,
+            0.3464053776896923
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9998524317018189,
+            8.17928345810958e-11,
+            0.017178906250370295
+          ],
+          [
+            8.014422482174246e-11,
+            1.0,
+            9.920574721585011e-11
+          ],
+          [
+            0.01717890625037022,
+            9.785075711879481e-11,
+            0.9998524317018188
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9962384861429143,
+            2.895168051576123e-10,
+            0.08665378657435702
+          ],
+          [
+            2.712784449761419e-10,
+            1.0000000000000002,
+            2.3225866976532987e-10
+          ],
+          [
+            0.08665378657435728,
+            2.0908420376121422e-10,
+            0.9962384861429138
+          ]
+        ],
+        "ckm_J": -3.099027154447984e-23,
+        "pmns_J": -1.6348435613527695e-21
+      },
+      {
+        "fiveplet_phase": 4.694692450303334,
+        "chirality": -1,
+        "flux": 1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.0718938582353692,
+        "joint_minmax": [
+          5.993122562379129e-12,
+          142498.2151317307
+        ],
+        "K0_minmax": [
+          1.0354776157600377e-11,
+          55839.45085111413
+        ],
+        "A5_history_covariance_residual": 4.751909152904161e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 9.074260456447856e-12,
+        "conditional_eigenvalues": {
+          "u": [
+            0.32394976959539323,
+            0.3337279284551309,
+            0.3423223019494755
+          ],
+          "d": [
+            0.32345008433640815,
+            0.3339437152112656,
+            0.34260620045232615
+          ],
+          "e": [
+            0.33048891026350974,
+            0.33397473343211825,
+            0.335536356304372
+          ],
+          "nu": [
+            0.3244727844143987,
+            0.33402019912007463,
+            0.341507016465527
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9994909300092556,
+            1.6828111935883728e-10,
+            0.03190424468990757
+          ],
+          [
+            1.673211313388852e-10,
+            1.0000000000000002,
+            3.768366270617453e-10
+          ],
+          [
+            0.03190424468990743,
+            3.7640892098589475e-10,
+            0.9994909300092557
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9478441673492923,
+            4.0286906219270937e-10,
+            0.31873411242276417
+          ],
+          [
+            0.31873411242276417,
+            4.671332302959308e-10,
+            0.9478441673492923
+          ],
+          [
+            5.225037345250562e-10,
+            0.9999999999999999,
+            3.278825380050505e-10
+          ]
+        ],
+        "ckm_J": 2.0080322329910255e-21,
+        "pmns_J": -2.1791384763056105e-20
+      },
+      {
+        "fiveplet_phase": 4.694692450303334,
+        "chirality": -1,
+        "flux": -1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.0718938582351734,
+        "joint_minmax": [
+          9.326312711204907e-12,
+          142498.21513173074
+        ],
+        "K0_minmax": [
+          1.0354776157599566e-11,
+          55839.45085111412
+        ],
+        "A5_history_covariance_residual": 4.842127215078515e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 6.959663383898198e-12,
+        "conditional_eigenvalues": {
+          "u": [
+            0.3239497695964955,
+            0.3337279284543822,
+            0.3423223019491225
+          ],
+          "d": [
+            0.3234500843378075,
+            0.3339437152116004,
+            0.34260620045059165
+          ],
+          "e": [
+            0.3304889102631925,
+            0.3339747334306468,
+            0.3355363563061608
+          ],
+          "nu": [
+            0.32447278441414246,
+            0.33402019912202424,
+            0.3415070164638335
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9994909300118475,
+            1.3742440449481992e-10,
+            0.03190424460873522
+          ],
+          [
+            1.4399205267658724e-10,
+            1.0000000000000004,
+            2.368141611534003e-10
+          ],
+          [
+            0.03190424460873519,
+            2.4068519463951735e-10,
+            0.999490930011847
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9478441673515544,
+            2.503328612363653e-10,
+            0.31873411241603783
+          ],
+          [
+            0.3187341124160378,
+            1.646363514531049e-09,
+            0.9478441673515542
+          ],
+          [
+            5.502881668839664e-10,
+            1.0000000000000002,
+            1.571738611523463e-09
+          ]
+        ],
+        "ckm_J": -5.427978707721705e-22,
+        "pmns_J": -1.2367309778740225e-19
+      }
+    ],
+    "conjugate_partner": {
+      "fiveplet_phase": 1.5884928568762522,
+      "chirality": -1,
+      "flux": -1,
+      "history_measure": "oriented-vacuum Ruelle equilibrium",
+      "free_energy": -1.0725310624291613,
+      "joint_minmax": [
+        -9.975391873639814e-12,
+        132253.40901962924
+      ],
+      "K0_minmax": [
+        1.3474878688806276e-13,
+        39774.479845844166
+      ],
+      "A5_history_covariance_residual": 4.714550599488614e-13,
+      "history_covariance_scope": "selected-vacuum stabilizer",
+      "generation_symmetry_commutator_residual": 5.186793086092349e-12,
+      "conditional_eigenvalues": {
+        "u": [
+          0.3220780365896868,
+          0.33105396291374745,
+          0.34686800049656547
+        ],
+        "d": [
+          0.3213394503886196,
+          0.33093714179955347,
+          0.34772340781182687
+        ],
+        "e": [
+          0.33103821773986697,
+          0.3329025300286141,
+          0.3360592522315189
+        ],
+        "nu": [
+          0.32310565284876874,
+          0.3304889694608801,
+          0.3464053776903509
+        ]
+      },
+      "ckm_abs": [
+        [
+          0.9998524317018376,
+          1.417925678341903e-10,
+          0.017178906249280538
+        ],
+        [
+          1.420726041614069e-10,
+          0.9999999999999998,
+          4.95900092853386e-11
+        ],
+        [
+          0.017178906249280364,
+          5.038596267375818e-11,
+          0.9998524317018378
+        ]
+      ],
+      "pmns_abs": [
+        [
+          0.9962384861276915,
+          1.5047387400169047e-10,
+          0.08665378674937219
+        ],
+        [
+          1.339449523673956e-10,
+          1.0,
+          2.664812010328071e-10        ],
+        [
+          0.08665378674937253,
+          2.5750963155698607e-10,
+          0.9962384861276912
+        ]
+      ],
+      "ckm_J": 1.1513093586435478e-22,
+      "pmns_J": -2.2060741919422705e-21
+    },
+    "conjugation_free_energy_residual": 6.106226635438361e-14,
+    "global_partner_branches": [
+      {
+        "fiveplet_phase": 4.694692450303334,
+        "chirality": 1,
+        "flux": 1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.0725310624292224,
+        "joint_minmax": [
+          -1.1093869934674636e-11,
+          132253.40901962918
+        ],
+        "K0_minmax": [
+          1.3474878688745856e-13,
+          39774.479845844166
+        ],
+        "A5_history_covariance_residual": 4.714550599488614e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 5.888139831548679e-12,
+        "conditional_eigenvalues": {
+          "u": [
+            0.32207803658919887,
+            0.3310539629131893,
+            0.3468680004976116
+          ],
+          "d": [
+            0.32133945039040457,
+            0.3309371417979035,
+            0.34772340781169203
+          ],
+          "e": [
+            0.33103821773874165,
+            0.3329025300278243,
+            0.3360592522334341
+          ],
+          "nu": [
+            0.3231056528494824,
+            0.3304889694599425,
+            0.3464053776905749
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9998524317041299,
+            1.5781154942063192e-10,
+            0.017178906115893802
+          ],
+          [
+            1.5768777694487795e-10,
+            1.0,
+            2.7582531127963413e-11
+          ],
+          [
+            0.017178906115893483,
+            2.6863901006782692e-11,
+            0.99985243170413
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9962384861489503,
+            4.395743884863286e-10,
+            0.08665378650496626
+          ],
+          [
+            4.36181463221917e-10,
+            0.9999999999999997,
+            1.6561847226112933e-10
+          ],
+          [
+            0.08665378650496673,
+            1.5639065492755714e-10,
+            0.9962384861489497
+          ]
+        ],
+        "ckm_J": -7.101048915057551e-23,
+        "pmns_J": 5.873290764162e-21
+      },
+      {
+        "fiveplet_phase": 1.5884928568762522,
+        "chirality": -1,
+        "flux": -1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.0725310624291613,
+        "joint_minmax": [
+          -9.975391873639814e-12,
+          132253.40901962924
+        ],
+        "K0_minmax": [
+          1.3474878688806276e-13,
+          39774.479845844166
+        ],
+        "A5_history_covariance_residual": 4.714550599488614e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 5.186793086092349e-12,
+        "conditional_eigenvalues": {
+          "u": [
+            0.3220780365896868,
+            0.33105396291374745,
+            0.34686800049656547
+          ],
+          "d": [
+            0.3213394503886196,
+            0.33093714179955347,
+            0.34772340781182687
+          ],
+          "e": [
+            0.33103821773986697,
+            0.3329025300286141,
+            0.3360592522315189
+          ],
+          "nu": [
+            0.32310565284876874,
+            0.3304889694608801,
+            0.3464053776903509
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9998524317018376,
+            1.417925678341903e-10,
+            0.017178906249280538
+          ],
+          [
+            1.420726041614069e-10,
+            0.9999999999999998,
+            4.95900092853386e-11
+          ],
+          [
+            0.017178906249280364,
+            5.038596267375818e-11,
+            0.9998524317018378
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9962384861276915,
+            1.5047387400169047e-10,
+            0.08665378674937219
+          ],
+          [
+            1.339449523673956e-10,
+            1.0,
+            2.664812010328071e-10
+          ],
+          [
+            0.08665378674937253,
+            2.5750963155698607e-10,
+            0.9962384861276912
+          ]
+        ],
+        "ckm_J": 1.1513093586435478e-22,
+        "pmns_J": -2.2060741919422705e-21
+      },
+      {
+        "fiveplet_phase": 1.5884928568762522,
+        "chirality": -1,
+        "flux": 1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.0725310624290356,
+        "joint_minmax": [
+          -1.0110906240864692e-11,
+          132253.40901962924
+        ],
+        "K0_minmax": [
+          1.3474878688877435e-13,
+          39774.47984584418
+        ],
+        "A5_history_covariance_residual": 4.718412605849169e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 1.1507069055924135e-11,
+        "conditional_eigenvalues": {
+          "u": [
+            0.3220780365913613,
+            0.3310539629119302,
+            0.34686800049670846
+          ],
+          "d": [
+            0.32133945038952233,
+            0.33093714179889794,
+            0.34772340781157995
+          ],
+          "e": [
+            0.33103821773940934,
+            0.33290253002778847,
+            0.33605925223280236
+          ],
+          "nu": [
+            0.323105652847821,
+            0.330488969462699,
+            0.34640537768948
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9998524317024735,
+            1.5875335607996016e-10,
+            0.017178906212278418
+          ],
+          [
+            1.5453121935333172e-10,
+            1.0000000000000002,
+            2.5209742087920895e-10
+          ],
+          [
+            0.017178906212278758,
+            2.4946000402900856e-10,
+            0.9998524317024738
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9962384861451788,
+            4.708557700835965e-10,
+            0.08665378654832293
+          ],
+          [
+            4.544543249233137e-10,
+            0.9999999999999994,
+            3.4533677298732515e-10
+          ],
+          [
+            0.086653786548323,
+            3.2261569228346263e-10,
+            0.9962384861451787
+          ]
+        ],
+        "ckm_J": 1.3444191817963058e-22,
+        "pmns_J": -1.0995238671764567e-20
+      },
+      {
+        "fiveplet_phase": 4.694692450303334,
+        "chirality": 1,
+        "flux": -1,
+        "history_measure": "oriented-vacuum Ruelle equilibrium",
+        "free_energy": -1.072531062429027,
+        "joint_minmax": [
+          -1.5617908874583207e-11,
+          132253.40901962927
+        ],
+        "K0_minmax": [
+          1.347487868864978e-13,
+          39774.479845844195
+        ],
+        "A5_history_covariance_residual": 4.718412605849169e-13,
+        "history_covariance_scope": "selected-vacuum stabilizer",
+        "generation_symmetry_commutator_residual": 4.8430346077546196e-12,
+        "conditional_eigenvalues": {
+          "u": [
+            0.3220780365902897,
+            0.331053962912286,
+            0.34686800049742417
+          ],
+          "d": [
+            0.32133945039095996,
+            0.3309371417973057,
+            0.34772340781173444
+          ],
+          "e": [
+            0.3310382177378586,
+            0.33290253002907433,
+            0.33605925223306693
+          ],
+          "nu": [
+            0.32310565284941883,
+            0.3304889694608884,
+            0.3464053776896923
+          ]
+        },
+        "ckm_abs": [
+          [
+            0.9998524317018189,
+            8.17928345810958e-11,
+            0.017178906250370295
+          ],
+          [
+            8.014422482174246e-11,
+            1.0,
+            9.920574721585011e-11
+          ],
+          [
+            0.01717890625037022,
+            9.785075711879481e-11,
+            0.9998524317018188
+          ]
+        ],
+        "pmns_abs": [
+          [
+            0.9962384861429143,
+            2.895168051576123e-10,
+            0.08665378657435702
+          ],
+          [
+            2.712784449761419e-10,
+            1.0000000000000002,
+            2.3225866976532987e-10
+          ],
+          [
+            0.08665378657435728,
+            2.0908420376121422e-10,
+            0.9962384861429138
+          ]
+        ],
+        "ckm_J": -3.099027154447984e-23,
+        "pmns_J": -1.6348435613527695e-21
+      }
+    ],
+    "global_partner_free_energy_spread": 1.9539925233402755e-13
+  },
+  "status": {
+    "equivariant_history_coding": "CLOSED on the canonical a.e. symbolic section and 2I skew-product bundle; impossible as a nonconstant continuous map from the connected solenoid alone",
+    "full_A5_edge_frame_connection": "CLOSED by the regular A5 action on 60 directed dual edges",
+    "ordered_CP_history_pushforward": "CLOSED for the coefficient-free left/right Hopf history channel",
+    "KO6_real_graded_star_completion": "CLOSED for every declared history amplitude by the four-block real completion",
+    "KO6_relative_phase_and_species_contraction": "NO_GO: the KO-6 identities hold for an arbitrary complex history amplitude M, so they cannot select its relative Clebsch phase or the contraction of species blocks",
+    "fully_symmetric_flavour_result": "NO_GO: exact A5/Haar reduction is I3/3 for every species, so its eigenframes and apparent mixing are basis artefacts",
+    "symmetry_broken_flavour_test": "DIAGNOSTIC ONLY: the stored oriented 30-vacuum is inserted through its coefficient-free Ruelle equilibrium measure into the previously tested positive rank-one Gram contraction",
+    "conditional_positive_Gram_phase": "The diagnostic vacuum-weighted Gram is minimized over the continuous fiveplet phase without observational targets; this does not promote the underived Gram to the physical action",
+    "residual_flavour_obstruction": "NO_GO for this 30-vacuum: its C2 stabilizer enforces a common 1+2 generation split, hence at most one real mixing angle and zero Jarlskog invariant",
+    "ordered_CP_invariant": "CLOSED: the two binary branch operators obey L^5=exp(-i*pi/6)I and R^5=exp(+i*pi/6)I; their normalized odd trace is one, but the tested positive Gram discards it",
+    "physical_action": "OPEN: a real joint action must derive, rather than insert, the coupling of the KO-6/Hodge chirality to the orientation-odd five-step Wilson invariant"
+  },
+  "KO6_underdetermination_theorem": {
+    "statement": "For every complex history amplitude M, the four-block D_M used here is self-adjoint, odd for the grading, and obeys J^2=+1, JD_M=D_MJ and J*grading=-grading*J. Therefore these KO-6 kinematic identities impose no equation on M itself.",
+    "consequence": "Neither the continuous phase multiplying the 5 Clebsch channel nor the rank-one species-history contraction can be selected by KO-6 reality/grading/star alone.",
+    "required_extra_input": "A dynamical axiom such as the recursive relative-information/Pfaffian phase action is still required; fitting a coefficient is forbidden."
+  }
+}

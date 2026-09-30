@@ -1,0 +1,120 @@
+CORRECTED URT DUAL-RIBBON RESULT
+================================
+
+CENTRAL CORRECTION
+------------------
+J43, J45 and J5 take values in Hom(3,3'), not End(3).
+
+The earlier 18x18 one-sheet ribbon calculation multiplied these 3x3
+arrays as though they were endomorphisms of one triplet. That composition
+was not valid.
+
+The corrected transfer acts on both Galois sheets:
+
+    (six axes) x (3 + 3')       for the shell,
+    (ten face axes) x (3 + 3') for the dual face graph.
+
+Every local ribbon matrix is inserted off-diagonally together with its
+adjoint. The shell and dual propagators are therefore 36x36 and 60x60.
+
+EXACT VISUAL GEOMETRY
+---------------------
+1. The icosahedral shell is the antipodal two-cover of a signed K6:
+
+       S^2 = 5 I6,
+
+   with eigenvalues -sqrt(5) x3 and +sqrt(5) x3.
+
+2. The dodecahedral face graph is the antipodal two-cover of a signed
+   Petersen graph on ten face axes.
+
+3. Every shell or dual-face quotient edge is a two-rail ribbon.
+
+4. Ribbon parity is exact:
+
+       shell even -> fiveplet + H5,
+       shell odd  -> H3,
+
+       dual even  -> H5,
+       dual odd   -> H3.
+
+5. The unsigned six-axis / ten-face-axis incidence D satisfies
+
+       D D^T = 3 I6 + 2 J6,
+
+   with eigenvalues 15 x1 and 3 x5.
+
+QUARK ROUTE
+-----------
+The shell route is evaluated at
+
+    eta_Q = (10/3) eta_delta
+          = 19.985993289137674.
+
+The best finite orientation/label branch is
+
+|V_CKM| =
+[[0.97725621 0.21202663 0.00387402]
+ [0.21194048 0.97636111 0.04242895]
+ [0.0071787  0.04199631 0.99909198]]
+
+J_CKM = 2.608394178348e-05
+
+Principal entries:
+
+|V_us| = 0.212026631434
+|V_cb| = 0.042428945867
+|V_ub| = 0.003874023068
+
+Normalized primitive transfer spectra:
+
+u = [0.0055162  0.02599035 1.        ]
+d = [0.00535186 0.03649335 1.        ]
+
+LEPTON ROUTE
+------------
+The dual face/shadow route is evaluated at the already frozen IR depth
+
+    eta_L = eta_IR
+          = 15.697202918966921.
+
+The colorless endpoint map is the unsigned incidence D.
+
+|U_PMNS| =
+[[0.79708663 0.58567953 0.14707955]
+ [0.4120537  0.49703545 0.76365405]
+ [0.44143477 0.64026186 0.62864942]]
+
+J_PMNS = 3.227042414139e-02
+
+Derived angle variables:
+
+sin^2(theta12) = 0.350604934910
+sin^2(theta23) = 0.596061750591
+sin^2(theta13) = 0.021632393254
+
+Normalized primitive transfer spectra:
+
+e  = [0.29643091 0.52403225 1.        ]
+nu = [0.21973181 0.66128152 1.        ]
+
+SCIENTIFIC STATUS
+-----------------
+The corrected two-sheet architecture generates:
+
+* hierarchical quark mixing;
+* large lepton mixing;
+* nonzero quark and lepton CP invariants;
+* distinct noncommuting generation blocks from actual shell and dual paths.
+
+It does not yet derive physical fermion mass ratios. The singular spectra
+printed above are transfer spectra. No theorem currently identifies them
+with renormalized pole or running masses.
+
+The finite orientation and endpoint labels were selected by exhaustive
+comparison with the frozen target matrices. They are discrete choices,
+not continuous fitted coefficients, but this means the matrices are not
+yet blind predictions.
+
+The previous one-sheet near-CKM result at eta = (5/2) eta_delta is
+withdrawn because its composition law was invalid.

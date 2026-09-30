@@ -1,0 +1,963 @@
+{
+  "certificate": "URT admissible gauge-invariant interacting OS audit",
+  "date": "2026-09-05",
+  "determinants": {
+    "Wilson_control": {
+      "effective_sample_size_all": 1023.9999999999993,
+      "effective_sample_size_holdout": 767.9999999999995,
+      "logweight_range": [
+        175.36215594688053,
+        175.36215611093454
+      ],
+      "maximum_absolute_phase": 9.505236283612366e-21,
+      "negative_count": 0
+    },
+    "overlap": {
+      "effective_sample_size_all": 1023.9999999999998,
+      "effective_sample_size_holdout": 767.9999999999997,
+      "logweight_range": [
+        -6.035337196674115,
+        -6.035337126455243
+      ],
+      "maximum_absolute_phase": 1.6916506091535016e-15,
+      "negative_count": 0
+    }
+  },
+  "fermions": {
+    "M": 0.7909405921071238,
+    "c_t": 1.0,
+    "median_sampled_XdaggerX": 0.6815795096982039,
+    "minimum_sampled_XdaggerX": 0.6815528855610463,
+    "physical_mass": 0.5,
+    "r": 0.35550803492351907
+  },
+  "finite_cell": {
+    "Ns": 2,
+    "Nt": 6,
+    "link_count": 528,
+    "reflection": "theta(t,n)=(-t,n+t(1,1,1))",
+    "site_count": 48
+  },
+  "gauge_covariance_calibration": {
+    "Wilson_control": {
+      "determinant_phase_residual": 3.543890500343399e-18,
+      "logabsdet_residual": 2.842170943040401e-14,
+      "point_split_block_residual": 6.308760684519363e-16,
+      "scalar_block_residual": 5.7432263779385695e-16
+    },
+    "XdaggerX_gap_residual": 1.5543122344752192e-15,
+    "overlap": {
+      "determinant_phase_residual": 3.834685016615993e-16,
+      "logabsdet_residual": 4.440892098500626e-15,
+      "point_split_block_residual": 2.643946549531406e-15,
+      "scalar_block_residual": 6.417449844143812e-14
+    }
+  },
+  "gauge_measure": {
+    "base_density": "independent uniform U(1) link angles on [-alpha,alpha]",
+    "face_holonomies_unchanged_by_gauge_average": true,
+    "factorization": "even identical link densities pair across theta; fixed t=0 spatial-link density is pointwise nonnegative",
+    "gauge_invariant": true,
+    "physical_density": "local-Haar gauge average of the base product density",
+    "scope_note": "this is an admissible RP probe measure, not the previously selected face-autocorrelation action",
+    "site_reflection_positive_on_gauge_invariant_algebra": true
+  },
+  "method": {
+    "confidence_multiplier": 3.5,
+    "holdout_samples": 768,
+    "observables": [
+      "local scalar density",
+      "all 112 elementary positive-half point-split scalar mesons"
+    ],
+    "samples": 1024,
+    "seed": 2026090501,
+    "selection": "lowest training direction; fixed independent holdout sign test",
+    "training_samples": 256
+  },
+  "observable_tests": {
+    "point_split_mesons": {
+      "descriptive_full_sample_spectra": {
+        "Wilson_control": {
+          "maximum_antihermitian_residual": 5.411022391285926e-06,
+          "maximum_eigenvalue": 3.038910268468214,
+          "minimum_eigenvalue_descriptive_only": -3.043803466562274e-11,
+          "modes": [
+            {
+              "maximum_eigenvalue": 3.038910268468214,
+              "minimum_eigenvalue": -2.2217409663949142e-11,
+              "momentum_pi_units": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 3.15330605754496e-11,
+              "minimum_eigenvalue": -1.0751478157934456e-11,
+              "momentum_pi_units": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.518868125780191e-11,
+              "minimum_eigenvalue": -3.043803466562274e-11,
+              "momentum_pi_units": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.679603830609638e-11,
+              "minimum_eigenvalue": -6.751814119305085e-12,
+              "momentum_pi_units": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 2.532796755789588e-11,
+              "minimum_eigenvalue": -2.3673000923033563e-11,
+              "momentum_pi_units": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.8414066800253705e-11,
+              "minimum_eigenvalue": -1.933465107584809e-11,
+              "momentum_pi_units": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 2.292000224895351e-11,
+              "minimum_eigenvalue": -1.473272654174632e-11,
+              "momentum_pi_units": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 3.166384130949149e-12,
+              "minimum_eigenvalue": -3.6031867765489e-12,
+              "momentum_pi_units": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "warning": "adaptive same-sample minimum; holdout test controls selection"
+        },
+        "overlap": {
+          "maximum_antihermitian_residual": 2.5863295202004225e-06,
+          "maximum_eigenvalue": 1.6115820049455256,
+          "minimum_eigenvalue_descriptive_only": -1.508034908353202e-11,
+          "modes": [
+            {
+              "maximum_eigenvalue": 1.6115820049455256,
+              "minimum_eigenvalue": -1.3065222370237203e-11,
+              "momentum_pi_units": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.653347729303214e-11,
+              "minimum_eigenvalue": -1.313032262755906e-11,
+              "momentum_pi_units": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.212170574358606e-11,
+              "minimum_eigenvalue": -1.508034908353202e-11,
+              "momentum_pi_units": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.019948712696075e-11,
+              "minimum_eigenvalue": -1.1465152466481716e-11,
+              "momentum_pi_units": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.1728329077302693e-11,
+              "minimum_eigenvalue": -1.2607069483865893e-11,
+              "momentum_pi_units": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.1083490324550225e-11,
+              "minimum_eigenvalue": -1.395307816534145e-11,
+              "momentum_pi_units": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.4192511239746097e-11,
+              "minimum_eigenvalue": -1.2788431742170427e-11,
+              "momentum_pi_units": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.4069478008667242e-11,
+              "minimum_eigenvalue": -9.690944172623947e-12,
+              "momentum_pi_units": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "warning": "adaptive same-sample minimum; holdout test controls selection"
+        }
+      },
+      "dimensions": {
+        "block_dimension": 14,
+        "momentum_blocks": 8
+      },
+      "independent_holdout_tests": {
+        "Wilson_at_Wilson_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            -3.065774843708174e-11,
+            4.2532569286005837e-11,
+            6.172639068936901e-11,
+            6.420052898032491e-11,
+            3.728881524387386e-11,
+            1.1321935661314079e-10,
+            -4.333198845388739e-11,
+            1.5831586105913792e-12,
+            1.9384696357844655e-12,
+            -5.7545726867459125e-11,
+            3.3444861222089462e-12,
+            -1.9764254396521413e-11,
+            3.1041023635562355e-11,
+            -5.851824460986754e-11,
+            -7.555107054574808e-12,
+            -1.6791494130837708e-11,
+            5.157646155950878e-13,
+            -1.9448910177678418e-10,
+            -3.1004179103081114e-12,
+            -1.713687855411096e-11,
+            -6.812769140284595e-11,
+            1.8752050681424487e-11,
+            -9.563261759345158e-12,
+            2.036477810756553e-11
+          ],
+          "batch_standard_error": 1.1897650144171418e-11,
+          "confidence_interval": [
+            -4.885204966290172e-11,
+            3.801250587320256e-11
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 1.2409222219443469e-11,
+          "delta_method_standard_error": 1.2409222219443469e-11,
+          "mean": -5.419771894849579e-12,
+          "normal_z_score": -0.4367535530436045,
+          "status": "sign unresolved at this fixed witness"
+        },
+        "Wilson_at_overlap_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            -2.214238446928962e-11,
+            2.747475346251145e-11,
+            4.146174541417427e-11,
+            6.816692348383213e-11,
+            2.7310144212616543e-11,
+            7.559439568438166e-11,
+            -4.509674250712422e-11,
+            -1.938716967383402e-11,
+            -6.4409908701664784e-12,
+            -3.78428426038714e-11,
+            2.73031683747651e-12,
+            -1.4252780540285352e-11,
+            2.4283593027432113e-11,
+            -4.73154461242967e-11,
+            -2.0203858816647078e-11,
+            -1.4317550305218702e-11,
+            2.2264033078540235e-11,
+            -1.5252663306098534e-10,
+            7.346478045733713e-12,
+            5.413667933389321e-13,
+            -5.50594619209752e-11,
+            1.0825964397061644e-12,
+            -5.741917260298946e-13,
+            8.061083115555205e-12
+          ],
+          "batch_standard_error": 9.308262640533745e-12,
+          "confidence_interval": [
+            -3.926578749931896e-11,
+            2.852890209532501e-11
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 9.68495565637771e-12,
+          "delta_method_standard_error": 9.68495565637771e-12,
+          "mean": -5.368442701996972e-12,
+          "normal_z_score": -0.5543074116670592,
+          "status": "sign unresolved at this fixed witness"
+        },
+        "overlap_at_Wilson_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            -9.264577060315924e-12,
+            1.5451028321815875e-11,
+            2.4855575035473983e-11,
+            2.4183434783537777e-11,
+            1.347402955109217e-11,
+            4.1778194429044083e-11,
+            -1.9250358393682603e-11,
+            2.0523591850010412e-13,
+            -2.4584271224010498e-14,
+            -1.9431407722623596e-11,
+            -7.455061839800233e-13,
+            -6.928691277929742e-12,
+            9.659481444749146e-12,
+            -2.507307854391344e-11,
+            -6.061205834269971e-12,
+            -6.054314350233062e-12,
+            2.9703175608645274e-12,
+            -7.480090607191077e-11,
+            2.912543837600798e-12,
+            -4.112638161412785e-12,
+            -2.923385700064589e-11,
+            4.783404730272498e-12,
+            -1.4754561186027407e-12,
+            6.431863174555652e-12
+          ],
+          "batch_standard_error": 4.557845112414093e-12,
+          "confidence_interval": [
+            -1.8973531797973288e-11,
+            1.4327575813469047e-11
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 4.757301087348905e-12,
+          "delta_method_standard_error": 4.757301087348905e-12,
+          "mean": -2.32297799225212e-12,
+          "normal_z_score": -0.48829745050814993,
+          "status": "sign unresolved at this fixed witness"
+        },
+        "overlap_at_overlap_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            -8.898419816805551e-13,
+            5.831296599284592e-12,
+            1.3081009463270615e-11,
+            2.1508324640046755e-11,
+            8.662287206607513e-12,
+            2.1542748060698766e-11,
+            -2.0567774731397706e-11,
+            -6.0156800178260795e-12,
+            -1.1122410868870216e-11,
+            -9.083456371600551e-12,
+            2.428985018107435e-12,
+            -6.523849827778696e-12,
+            -2.3431387033607227e-12,
+            -1.8185529794535272e-11,
+            -1.2410743508593662e-11,
+            -5.9181232384854695e-12,
+            1.4433763175621207e-11,
+            -5.2463634483400204e-11,
+            8.484191609447536e-12,
+            5.661135867461802e-12,
+            -3.5615004483468916e-11,
+            -9.429766367400025e-12,
+            7.90336484066804e-12,
+            -6.304611444886034e-13
+          ],
+          "batch_standard_error": 3.4719210717202243e-12,
+          "confidence_interval": [
+            -1.7664791669710937e-11,
+            1.0859599271757902e-11
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 4.074912991638405e-12,
+          "delta_method_standard_error": 4.074912991638405e-12,
+          "mean": -3.4025961989765186e-12,
+          "normal_z_score": -0.8350107612011692,
+          "status": "sign unresolved at this fixed witness"
+        }
+      },
+      "training_witnesses": {
+        "Wilson_control": {
+          "largest_edge_components": [
+            {
+              "absolute_value": 0.8062252887593252,
+              "edge_type": "spatial t=1, direction=2",
+              "imaginary": 2.0378078431789546e-05,
+              "real": -0.806225288501788
+            },
+            {
+              "absolute_value": 0.5739435721686561,
+              "edge_type": "spatial t=1, direction=3",
+              "imaginary": -3.577228022231194e-05,
+              "real": 0.5739435710538635
+            },
+            {
+              "absolute_value": 0.08052703418947851,
+              "edge_type": "future t=1->2, spatial signs=(1, -1, -1)",
+              "imaginary": 4.0555478164181397e-07,
+              "real": 0.08052703418845727
+            },
+            {
+              "absolute_value": 0.07760438681015451,
+              "edge_type": "future t=1->2, spatial signs=(1, -1, 1)",
+              "imaginary": 2.2923649113005812e-06,
+              "real": -0.0776043867762973
+            },
+            {
+              "absolute_value": 0.05106669227974193,
+              "edge_type": "future t=1->2, spatial signs=(1, 1, -1)",
+              "imaginary": -1.847435081719701e-06,
+              "real": 0.05106669224632468
+            },
+            {
+              "absolute_value": 0.04695287727920222,
+              "edge_type": "future t=1->2, spatial signs=(-1, 1, -1)",
+              "imaginary": 4.065921178794481e-06,
+              "real": -0.046952877103156404
+            },
+            {
+              "absolute_value": 0.03344603037908726,
+              "edge_type": "future t=1->2, spatial signs=(-1, -1, 1)",
+              "imaginary": 1.7260524509635952e-06,
+              "real": 0.03344603033454899
+            },
+            {
+              "absolute_value": 0.03138389182187061,
+              "edge_type": "future t=1->2, spatial signs=(-1, -1, -1)",
+              "imaginary": -4.982061988727264e-06,
+              "real": 0.03138389142642982
+            }
+          ],
+          "mode_minima": [
+            -5.5160583869127834e-11,
+            -1.7859953100413063e-11,
+            -4.088988763264436e-11,
+            -2.8270506899155935e-11,
+            -6.165896665232573e-11,
+            -3.714544917769853e-11,
+            -1.4121667509128195e-11,
+            -1.019769918108914e-11
+          ],
+          "momentum_pi_units": [
+            1,
+            0,
+            0
+          ],
+          "training_minimum": -6.165896665232573e-11
+        },
+        "overlap": {
+          "largest_edge_components": [
+            {
+              "absolute_value": 0.7438211029320173,
+              "edge_type": "spatial t=1, direction=2",
+              "imaginary": 6.494190253312983e-05,
+              "real": 0.7438211000970274
+            },
+            {
+              "absolute_value": 0.4514649929691091,
+              "edge_type": "spatial t=1, direction=3",
+              "imaginary": -7.672817331934808e-05,
+              "real": -0.45146498644898825
+            },
+            {
+              "absolute_value": 0.24787156511971675,
+              "edge_type": "future t=1->2, spatial signs=(-1, -1, 1)",
+              "imaginary": -5.0972720673064694e-05,
+              "real": -0.2478715598786592
+            },
+            {
+              "absolute_value": 0.23150259440599513,
+              "edge_type": "future t=1->2, spatial signs=(1, -1, -1)",
+              "imaginary": -2.2590309449335323e-05,
+              "real": -0.23150259330379996
+            },
+            {
+              "absolute_value": 0.18441231797284013,
+              "edge_type": "future t=1->2, spatial signs=(1, 1, -1)",
+              "imaginary": -2.4432190464051438e-05,
+              "real": -0.18441231635436925
+            },
+            {
+              "absolute_value": 0.16564118694212732,
+              "edge_type": "future t=1->2, spatial signs=(1, -1, 1)",
+              "imaginary": 1.6884170135050796e-05,
+              "real": 0.16564118608160702
+            },
+            {
+              "absolute_value": 0.13779412945517547,
+              "edge_type": "future t=1->2, spatial signs=(-1, 1, 1)",
+              "imaginary": -4.224014145937878e-05,
+              "real": -0.1377941229809171
+            },
+            {
+              "absolute_value": 0.1205355054053249,
+              "edge_type": "future t=1->2, spatial signs=(-1, 1, -1)",
+              "imaginary": 1.4634244084764957e-05,
+              "real": 0.12053550451695139
+            }
+          ],
+          "mode_minima": [
+            -2.021295968690921e-11,
+            -2.0649101158390588e-11,
+            -2.2561983324146412e-11,
+            -2.6107744957343405e-11,
+            -2.8978284676618397e-11,
+            -2.3580516776319285e-11,
+            -2.017814700308432e-11,
+            -2.627226797592284e-11
+          ],
+          "momentum_pi_units": [
+            1,
+            0,
+            0
+          ],
+          "training_minimum": -2.8978284676618397e-11
+        }
+      }
+    },
+    "scalar_density": {
+      "descriptive_full_sample_spectra": {
+        "Wilson_control": {
+          "maximum_antihermitian_residual": 8.738757802843808e-10,
+          "maximum_eigenvalue": 42.84744829040994,
+          "minimum_eigenvalue_descriptive_only": -1.0540988938299309e-12,
+          "modes": [
+            {
+              "maximum_eigenvalue": 42.84744829040994,
+              "minimum_eigenvalue": -3.375077994860476e-14,
+              "momentum_pi_units": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 7.253981808680164e-13,
+              "minimum_eigenvalue": 5.499096133895012e-13,
+              "momentum_pi_units": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.1052864082397516e-13,
+              "minimum_eigenvalue": -1.0332412587486976e-12,
+              "momentum_pi_units": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 3.2794256768373196e-13,
+              "minimum_eigenvalue": 1.524702465382313e-14,
+              "momentum_pi_units": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 5.221499094843968e-13,
+              "minimum_eigenvalue": -1.0540988938299309e-12,
+              "momentum_pi_units": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 4.422147543292959e-13,
+              "minimum_eigenvalue": -4.40396731440259e-13,
+              "momentum_pi_units": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 5.105372176252876e-13,
+              "minimum_eigenvalue": -2.614120659076732e-13,
+              "momentum_pi_units": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": -4.623891474445142e-16,
+              "minimum_eigenvalue": -3.6797735765465574e-15,
+              "momentum_pi_units": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "warning": "adaptive same-sample minimum; holdout test controls selection"
+        },
+        "overlap": {
+          "maximum_antihermitian_residual": 1.4506147029478744e-10,
+          "maximum_eigenvalue": 274.2626500826461,
+          "minimum_eigenvalue_descriptive_only": -1.446104823631004e-13,
+          "modes": [
+            {
+              "maximum_eigenvalue": 274.2626500826461,
+              "minimum_eigenvalue": 3.727408109455155e-05,
+              "momentum_pi_units": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.2946121057843066e-13,
+              "minimum_eigenvalue": 9.572599275815352e-14,
+              "momentum_pi_units": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 2.081136630601364e-15,
+              "minimum_eigenvalue": -1.446104823631004e-13,
+              "momentum_pi_units": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 4.5931710038049943e-14,
+              "minimum_eigenvalue": -1.1864841780824538e-16,
+              "momentum_pi_units": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 1.2945088065031294e-13,
+              "minimum_eigenvalue": -1.295579404005085e-13,
+              "momentum_pi_units": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": 7.592858164804134e-14,
+              "minimum_eigenvalue": -7.712121767611285e-14,
+              "momentum_pi_units": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "maximum_eigenvalue": 5.4455832122328896e-14,
+              "minimum_eigenvalue": -2.53979949602463e-14,
+              "momentum_pi_units": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "maximum_eigenvalue": -9.105708393824274e-16,
+              "minimum_eigenvalue": -3.784361506588857e-15,
+              "momentum_pi_units": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "warning": "adaptive same-sample minimum; holdout test controls selection"
+        }
+      },
+      "dimensions": {
+        "block_dimension": 2,
+        "momentum_blocks": 8
+      },
+      "independent_holdout_tests": {
+        "Wilson_at_Wilson_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            5.01337621907991e-13,
+            -6.549293168111453e-13,
+            3.4451501540077395e-12,
+            -1.4062143487840805e-13,
+            -2.7485596367729183e-12,
+            4.758996648335127e-12,
+            -1.1533613644599033e-12,
+            2.1161189347164838e-12,
+            5.205005123229551e-13,
+            -4.063070977307951e-12,
+            -2.1689530587509163e-13,
+            1.1278563557905247e-12,
+            1.8005520155270757e-13,
+            -3.4715681710897622e-12,
+            -2.47677488215213e-12,
+            -5.957896857764768e-13,
+            3.742709713616837e-12,
+            -1.0906093022899633e-11,
+            -1.7754734872496188e-12,
+            -2.377428765254682e-12,
+            -5.9170229925469535e-12,
+            5.038610026681312e-13,
+            -3.8181209237018075e-12,
+            3.1706434051389164e-12
+          ],
+          "batch_standard_error": 6.99145436966129e-13,
+          "confidence_interval": [
+            -3.3528577491666578e-12,
+            1.6654843784278318e-12
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 7.169060182277842e-13,
+          "delta_method_standard_error": 7.169060182277842e-13,
+          "mean": -8.436866853694129e-13,
+          "normal_z_score": -1.1768441942432493,
+          "status": "sign unresolved at this fixed witness"
+        },
+        "Wilson_at_overlap_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            -9.265399124732153e-12,
+            7.41348411148425e-13,
+            -1.7538040762058528e-12,
+            -1.95034428197272e-12,
+            2.807017377192266e-12,
+            4.1722240304673735e-12,
+            -3.992552770083697e-12,
+            -8.495289180995507e-12,
+            3.189802836746952e-12,
+            4.117910484947446e-12,
+            6.358960632457291e-12,
+            5.33209972749257e-12,
+            -5.526310084565692e-12,
+            -2.514655751251221e-12,
+            2.174815944130741e-12,
+            3.0217786497370063e-12,
+            -2.0265523384965937e-12,
+            -9.532454311533032e-12,
+            -3.502592687676554e-12,
+            -3.0405280052036606e-12,
+            -2.5447353619816414e-12,
+            1.989437588541459e-12,
+            -4.504227212951423e-12,
+            3.747633054452872e-12
+          ],
+          "batch_standard_error": 9.481900783447303e-13,
+          "confidence_interval": [
+            -4.193515957965052e-12,
+            2.44381459044806e-12
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 9.481900783447303e-13,
+          "delta_method_standard_error": 7.350225711558313e-13,
+          "mean": -8.748506837584961e-13,
+          "normal_z_score": -0.9226532777960893,
+          "status": "sign unresolved at this fixed witness"
+        },
+        "overlap_at_Wilson_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            2.311822025360611e-13,
+            -4.550359403006383e-13,
+            8.963320025756764e-13,
+            1.1351277166998313e-13,
+            -1.1065068719295574e-12,
+            6.450609545950182e-13,
+            -3.2799141514446997e-13,
+            9.560132733517679e-13,
+            -8.043641074485891e-14,
+            -9.878250944423843e-13,
+            2.9957806583148523e-13,
+            7.966773100648157e-13,
+            2.2243083272523428e-13,
+            -1.140507581529944e-13,
+            -4.905085670479324e-13,
+            -1.1273725805025335e-13,
+            6.321819047527844e-13,
+            -2.2894309341921795e-12,
+            -7.360745071555406e-13,
+            -6.22874248156608e-13,
+            -5.700790948289681e-13,
+            2.594551678783245e-13,
+            -8.87580653704274e-13,
+            5.006338075253431e-13
+          ],
+          "batch_standard_error": 1.5539094306733734e-13,
+          "confidence_interval": [
+            -6.783713614849466e-13,
+            4.093652399864147e-13
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 1.5539094306733734e-13,
+          "delta_method_standard_error": 1.36186308654922e-13,
+          "mean": -1.3450306074926596e-13,
+          "normal_z_score": -0.8655785085941605,
+          "status": "sign unresolved at this fixed witness"
+        },
+        "overlap_at_overlap_selected_witness": {
+          "batch_count": 24,
+          "batch_means": [
+            -1.8718859175127433e-12,
+            1.549871484399573e-13,
+            -3.449458909315292e-13,
+            -5.007677657642959e-13,
+            6.672804200907778e-14,
+            7.207054157008815e-13,
+            -2.838079816893359e-13,
+            -9.418704973390749e-13,
+            1.0101820293564521e-12,
+            7.327047983211382e-13,
+            1.3010210411514376e-12,
+            1.2710740808490227e-12,
+            -1.0897200874889742e-12,
+            -4.0250348911470537e-13,
+            5.828597050161345e-13,
+            6.689378133659339e-14,
+            -7.378630513365466e-13,
+            -2.080653723932695e-12,
+            -6.796279309405391e-13,
+            -3.3607855226792455e-13,
+            -5.738918934390152e-13,
+            6.242268240516716e-13,
+            -3.657783840114868e-13,
+            6.097585542442556e-13
+          ],
+          "batch_standard_error": 1.8172550396531133e-13,
+          "confidence_interval": [
+            -7.6388317013259e-13,
+            5.081953576245893e-13
+          ],
+          "confidence_multiplier": 3.5,
+          "conservative_standard_error": 1.8172550396531133e-13,
+          "delta_method_standard_error": 1.410243858570069e-13,
+          "mean": -1.2784390625400027e-13,
+          "normal_z_score": -0.7035000782190911,
+          "status": "sign unresolved at this fixed witness"
+        }
+      },
+      "training_witnesses": {
+        "Wilson_control": {
+          "mode_minima": [
+            7.158718062783009e-13,
+            6.669381745906788e-13,
+            -1.3638441369910417e-12,
+            -4.717262766481893e-13,
+            -1.631060814915885e-12,
+            -7.379998753574569e-13,
+            -8.674624341019404e-14,
+            -2.859652947177788e-14
+          ],
+          "momentum_pi_units": [
+            1,
+            0,
+            0
+          ],
+          "time_layer_vector": [
+            {
+              "imaginary": 0.0,
+              "real": -0.9728269526640474
+            },
+            {
+              "imaginary": 2.4186243377413193e-13,
+              "real": 0.23153341048406686
+            }
+          ],
+          "training_minimum": -1.631060814915885e-12
+        },
+        "overlap": {
+          "mode_minima": [
+            3.7274081236660095e-05,
+            -1.9848995069430402e-15,
+            -1.941503101523802e-13,
+            -7.065195113385903e-14,
+            -9.163366789275863e-14,
+            -4.2482076605596556e-14,
+            -6.718520796961462e-14,
+            -3.118124260408647e-14
+          ],
+          "momentum_pi_units": [
+            0,
+            1,
+            0
+          ],
+          "time_layer_vector": [
+            {
+              "imaginary": 0.0,
+              "real": -0.2696647637030446
+            },
+            {
+              "imaginary": -9.277613556999037e-08,
+              "real": 0.9629542643433139
+            }
+          ],
+          "training_minimum": -1.941503101523802e-13
+        }
+      }
+    }
+  },
+  "observational_targets_used": false,
+  "support_theorem": {
+    "alpha_exact": "394924599595820227835064176865/2815987319336397969812291235298496",
+    "alpha_numeric": 0.00014024374218023336,
+    "entire_gauge_averaged_support_inside_certified_gap": true,
+    "epsilon_star_exact": "394924599595820227835064176865/351998414917049746226536404412312",
+    "epsilon_star_numeric": 0.0011219499374418669,
+    "norm_inequality": "|exp(i phi)-1|<=|phi|",
+    "sampled_face_checks_first_16_configurations": {
+      "maximum_spatial_square_angle": 0.0005014073423294871,
+      "maximum_spatial_square_norm_deviation": 0.0005014073370770505,
+      "maximum_triangle_angle": 0.0004104692574141412,
+      "maximum_triangle_norm_deviation": 0.0004104692545325613
+    },
+    "spatial_square_angle_bound_exact": "394924599595820227835064176865/703996829834099492453072808824624",
+    "spatial_square_bound_over_epsilon_star": "1/2",
+    "triangle_angle_bound_exact": "1184773798787460683505192530595/2815987319336397969812291235298496",
+    "triangle_bound_over_epsilon_star": "3/8"
+  },
+  "verdict": {
+    "Wilson_control_failure": false,
+    "conclusion": "No holdout-confirmed negative direction was found in the local scalar or complete elementary point-split meson bases on this cell.",
+    "interacting_overlap_reflection_positivity_proved": false,
+    "overlap_negative_witness_found": false,
+    "remaining_gate": "direct all-boundary polar Grassmann-cone factorization or a replicated gauge-invariant negative observable for the selected face weight",
+    "selected_face_autocorrelation_weight_decided": false,
+    "status": "finite admissible gauge-invariant test passed; theorem remains open"
+  }
+}

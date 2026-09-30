@@ -1,0 +1,37 @@
+{
+  "schema": "cathedral-v124-whole-project-symbiotic-closure-v1",
+  "corrections": {
+    "v123_is_global_endpoint": false,
+    "four_sheet_scale_equals_majorana_invariant": false,
+    "majorana_invariant_on_dirac_neutrino_branch": 0.0
+  },
+  "spectral_reconciliation": {
+    "general_ratio": "R[f]=f0/(32*pi*f2), scalar-free common trace, c_M=0",
+    "eta_delta": 5.995797986741314,
+    "eta_eff_KMS": 0.12814094439807763,
+    "R_exponential": 0.1192826109212893,
+    "R_KMS": 0.0025492830891772214,
+    "ratio_exp_to_KMS": 46.79064927221859,
+    "x_required_to_force_match": 366.58192452895963,
+    "x_Einstein_sign_boundary": 374.5875311398134,
+    "required_cutoff_scale_map_if_same_G": 0.14619094189294984
+  },
+  "v30_same_scale_bridge": {
+    "mu_U_GeV": 1.72933782875344e+18,
+    "alpha_U_inverse": 34.3039760050435,
+    "gU_squared": 0.3663240264776193,
+    "Lambda_grav_squared_over_muU_squared": 2.041241452319315,
+    "G_exp_GeV_minus2": 7.157946998636172e-39,
+    "G_KMS_GeV_minus2": 1.5297815076240288e-40
+  },
+  "microscopic_master": {
+    "transfer": "T=P_G W_Delta^(1/2) exp(-a H_local) W_Delta^(1/2) P_G=B^*B>=0",
+    "four_sheet_internal": "C^4 -> Omega1=OffDiag(M4)",
+    "wall": "L=13 endpoint Schur complement -> D48",
+    "spectral_action_status": "candidate continuum/IR projection, not unique microscopic law"
+  },
+  "remaining_fundamental_gates": [
+    "derive U_response from ordered Hopf/history operator without fitted continuous coefficient",
+    "derive continuum gravity/gauge normalization and cutoff map from finite positive transfer"
+  ]
+}

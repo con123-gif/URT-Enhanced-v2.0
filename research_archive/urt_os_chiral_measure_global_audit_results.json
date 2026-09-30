@@ -1,0 +1,245 @@
+{
+  "CP_boundary": {
+    "conclusion": "Even adding exact CP does not select between the two fixed points. A positivity, vacuum-selection or microscopic-regulator rule is still required to choose zero rather than pi.",
+    "linear_CP_condition": "exp(i theta Q)=exp(-i theta Q) for every integer Q",
+    "rows": [
+      {
+        "CP_invariant_on_integer_sectors": true,
+        "maximum_CP_residual_Q_minus3_to_3": 0.0,
+        "theta": 0.0
+      },
+      {
+        "CP_invariant_on_integer_sectors": false,
+        "maximum_CP_residual_Q_minus3_to_3": 1.0792640974679386,
+        "theta": 0.19
+      },
+      {
+        "CP_invariant_on_integer_sectors": true,
+        "maximum_CP_residual_Q_minus3_to_3": 7.347880794884119e-16,
+        "theta": 3.141592653589793
+      },
+      {
+        "CP_invariant_on_integer_sectors": false,
+        "maximum_CP_residual_Q_minus3_to_3": 1.7431515448271764,
+        "theta": 4.2
+      },
+      {
+        "CP_invariant_on_integer_sectors": true,
+        "maximum_CP_residual_Q_minus3_to_3": 1.4695761589768238e-15,
+        "theta": 6.283185307179586
+      }
+    ],
+    "solutions": "theta=0 or pi modulo 2 pi",
+    "status": "E"
+  },
+  "anomaly_prerequisites": {
+    "carrier": "one left-handed 16=1+10+5bar generation, repeated three times",
+    "gauge_group": "(SU(3)xSU(2)xU(1))/Z6",
+    "global_input": "Omega_5^Spin(BG)=0 for the Z6-quotient Standard Model group",
+    "local_anomaly_audit": {
+      "Witten_SU2_doublet_count": 4,
+      "Witten_anomaly_cancelled": true,
+      "Witten_mod_two_residue": 0,
+      "all_local_coefficients_zero": true,
+      "coefficients": {
+        "SU2_cubed": {
+          "reason": "SU(2) has no perturbative cubic invariant and its doublet is pseudoreal.",
+          "text": "0",
+          "zero": true
+        },
+        "SU2_squared_U1": {
+          "denominator": 1,
+          "numerator": 0,
+          "text": "0",
+          "zero": true
+        },
+        "SU3_cubed": {
+          "denominator": 1,
+          "numerator": 0,
+          "text": "0",
+          "zero": true
+        },
+        "SU3_squared_U1": {
+          "denominator": 1,
+          "numerator": 0,
+          "text": "0",
+          "zero": true
+        },
+        "U1_cubed": {
+          "denominator": 1,
+          "numerator": 0,
+          "text": "0",
+          "zero": true
+        },
+        "gravity_squared_U1": {
+          "denominator": 1,
+          "numerator": 0,
+          "text": "0",
+          "zero": true
+        },
+        "one_nonabelian_two_U1": {
+          "reason": "A single traceless nonabelian generator has zero trace.",
+          "text": "0",
+          "zero": true
+        }
+      },
+      "field_rows": [
+        {
+          "SU2_parity_constraint": 0,
+          "field": "Q",
+          "hypercharge": "1/6",
+          "integer_charge_6Y": 1,
+          "multiplicity": 6
+        },
+        {
+          "SU2_parity_constraint": 0,
+          "field": "u^c",
+          "hypercharge": "-2/3",
+          "integer_charge_6Y": -4,
+          "multiplicity": 3
+        },
+        {
+          "SU2_parity_constraint": 0,
+          "field": "d^c",
+          "hypercharge": "1/3",
+          "integer_charge_6Y": 2,
+          "multiplicity": 3
+        },
+        {
+          "SU2_parity_constraint": 0,
+          "field": "L",
+          "hypercharge": "-1/2",
+          "integer_charge_6Y": -3,
+          "multiplicity": 2
+        },
+        {
+          "SU2_parity_constraint": 0,
+          "field": "e^c",
+          "hypercharge": "1",
+          "integer_charge_6Y": 6,
+          "multiplicity": 1
+        },
+        {
+          "SU2_parity_constraint": 0,
+          "field": "nu^c",
+          "hypercharge": "0",
+          "integer_charge_6Y": 0,
+          "multiplicity": 1
+        }
+      ],
+      "left_handed_state_count": 16
+    },
+    "meaning": "Gauge anomalies do not obstruct a measure, but cancellation does not canonically choose its phase.",
+    "status": "E arithmetic; E from cited spin-bordism computation"
+  },
+  "certificate": "URT global OS/chiral-measure phase audit",
+  "date": "2026-09-04",
+  "lattice_measure_scope": {
+    "Ginsparg_Wilson_fact": "Changing a chiral basis changes the finite-lattice Weyl measure by a gauge-field-dependent phase.",
+    "known_constructive_scope": "Anomaly-free U(1) chiral theories have a nonperturbative local, smooth, gauge-invariant measure construction; the general four-dimensional nonabelian reconstruction is not supplied by the current Cathedral certificates.",
+    "primary_references": [
+      {
+        "arXiv": "hep-lat/9811032",
+        "authors": "Martin Luscher",
+        "title": "Abelian chiral gauge theories on the lattice with exact gauge invariance"
+      },
+      {
+        "arXiv": "hep-lat/9904009",
+        "authors": "Martin Luscher",
+        "title": "Weyl fermions on the lattice and the non-abelian gauge anomaly"
+      },
+      {
+        "arXiv": "1910.11277",
+        "authors": "Joe Davighi, Ben Gripaios, Nakarin Lohitsiri",
+        "title": "Global anomalies in the Standard Model(s) and Beyond"
+      }
+    ],
+    "status": "E literature boundary"
+  },
+  "observational_targets_used": false,
+  "reflection_even_history_phase": {
+    "OS_reality": "Phi_lambda[theta A]=conj(Phi_lambda[A])",
+    "advance": "Vacuum OS anti-linearity supplies the missing non-homogeneous equation for this specific local history counterterm.",
+    "continuous_configuration_consequence": "lambda=0",
+    "functional": "Phi_lambda=exp(i lambda chi Omega5)",
+    "parity": "(chi Omega5)[theta A]=+(chi Omega5)[A]",
+    "status": "E conditional on vacuum OS reflection"
+  },
+  "reflection_odd_topological_phase": {
+    "OS_reality_identity": "Phi_theta[theta A]=exp(-i theta Q[A])=conj(Phi_theta[A]) for every real theta",
+    "charge": "Q=(1/8 pi^2) integral tr(F wedge F), integer on normalized nonabelian sectors",
+    "finite_sector_witnesses": [
+      {
+        "OS_reality_residual": 0.0,
+        "absolute_square": 0.26021778513354576,
+        "direct_OS_form_imaginary_abs": 1.9312351197398048e-17,
+        "direct_OS_form_real": 0.2602177851335458,
+        "factorization_residual": 5.877461033295942e-17,
+        "nonnegative": true,
+        "theta": 0.0
+      },
+      {
+        "OS_reality_residual": 0.0,
+        "absolute_square": 0.28472909773582294,
+        "direct_OS_form_imaginary_abs": 7.14218181124826e-18,
+        "direct_OS_form_real": 0.2847290977358229,
+        "factorization_residual": 5.596872941245409e-17,
+        "nonnegative": true,
+        "theta": 0.19
+      },
+      {
+        "OS_reality_residual": 0.0,
+        "absolute_square": 0.32250722261278464,
+        "direct_OS_form_imaginary_abs": 4.54009659728305e-18,
+        "direct_OS_form_real": 0.3225072226127846,
+        "factorization_residual": 5.569650247665682e-17,
+        "nonnegative": true,
+        "theta": 0.73
+      },
+      {
+        "OS_reality_residual": 0.0,
+        "absolute_square": 0.2699065521365098,
+        "direct_OS_form_imaginary_abs": 4.756937031780151e-18,
+        "direct_OS_form_real": 0.2699065521365096,
+        "factorization_residual": 2.2209555381915585e-16,
+        "nonnegative": true,
+        "theta": 1.5707963267948966
+      },
+      {
+        "OS_reality_residual": 0.0,
+        "absolute_square": 0.2545419292657806,
+        "direct_OS_form_imaginary_abs": 3.4558944247975454e-18,
+        "direct_OS_form_real": 0.2545419292657806,
+        "factorization_residual": 3.4558944247975454e-18,
+        "nonnegative": true,
+        "theta": 3.141592653589793
+      },
+      {
+        "OS_reality_residual": 0.0,
+        "absolute_square": 0.20724325037797905,
+        "direct_OS_form_imaginary_abs": 6.735605996566196e-18,
+        "direct_OS_form_real": 0.207243250377979,
+        "factorization_residual": 5.5918300217018e-17,
+        "nonnegative": true,
+        "theta": 5.91
+      }
+    ],
+    "functional": "Phi_theta[A]=exp(i theta Q[A])",
+    "half_space_factorization": "if Q=Q_++Q_- and Q_+(theta A_-)=-Q_-(A_-), then Phi_theta=F_theta Theta(F_theta), F_theta=exp(i theta Q_+)",
+    "maximum_OS_reality_residual": 0.0,
+    "maximum_factorization_residual": 2.2209555381915585e-16,
+    "minimum_sampled_OS_form": 0.20724325037797905,
+    "parameter_space": "theta in R/(2 pi Z)",
+    "parity": "Q[theta A]=-Q[A]",
+    "status": "E"
+  },
+  "verdict": {
+    "CP_selects_unique_theta": "F",
+    "OS_selects_history_lambda_zero": "E conditional",
+    "OS_selects_topological_theta": "F",
+    "advance": "OS closes the previously exhibited reflection-even lambda orbit, but an explicit reflection-odd topological theta circle remains OS-positive. The determinant ambiguity has been reduced and reclassified, not eliminated.",
+    "globally_unique_chiral_measure": "U",
+    "local_and_global_gauge_anomalies_cancel": "E",
+    "phenomenology_gate": "CLOSED"
+  }
+}

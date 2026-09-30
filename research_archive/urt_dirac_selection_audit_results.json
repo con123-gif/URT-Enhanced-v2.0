@@ -1,0 +1,145 @@
+{
+  "A4_equivariant_Dirac_space_real_dimension": 48,
+  "A4_vector_connection": {
+    "real_dimension": 2,
+    "complex_real_dimension": 4
+  },
+  "clifford_linear_no_go": {
+    "formula": "K_u=K_d=K_e=K_nu=((|z_l|^2+3|z_c|^2)/3) I_3",
+    "max_scalar_error": 1.2304368383773718e-14,
+    "max_species_pair_error": 4.415649474465271e-15,
+    "consequence": "A4 grading plus the natural first-order Clifford connection cannot split generations or define flavour mixing."
+  },
+  "charge_plane": {
+    "names": [
+      "u",
+      "d",
+      "e",
+      "nu"
+    ],
+    "symmetric_gram": [
+      [
+        26.0,
+        -16.0,
+        -36.0,
+        6.0
+      ],
+      [
+        -16.0,
+        14.0,
+        18.0,
+        -12.0
+      ],
+      [
+        -36.0,
+        18.0,
+        54.0,
+        0.0
+      ],
+      [
+        6.0,
+        -12.0,
+        0.0,
+        18.0
+      ]
+    ],
+    "oriented_area": [
+      [
+        0.0,
+        -10.392304845413266,
+        10.392304845413266,
+        20.78460969082653
+      ],
+      [
+        10.392304845413266,
+        0.0,
+        -20.78460969082653,
+        -10.392304845413266
+      ],
+      [
+        -10.392304845413266,
+        20.78460969082653,
+        0.0,
+        -31.176914536239796
+      ],
+      [
+        -20.78460969082653,
+        10.392304845413266,
+        31.176914536239796,
+        0.0
+      ]
+    ],
+    "oriented_area_over_sqrt3": [
+      [
+        0,
+        -6,
+        6,
+        12
+      ],
+      [
+        6,
+        0,
+        -12,
+        -6
+      ],
+      [
+        -6,
+        12,
+        0,
+        -18
+      ],
+      [
+        -12,
+        6,
+        18,
+        0
+      ]
+    ],
+    "complex_gram_eigenvalues": [
+      -9.845325793525565e-15,
+      -4.327200252843349e-15,
+      3.878546694619346e-14,
+      112.00000000000003
+    ],
+    "complex_gram_rank": 1,
+    "complex_gram_outer_product_error": 1.810876330143806e-14,
+    "complex_coordinates": [
+      [
+        -1.414213562373095,
+        4.898979485566356
+      ],
+      [
+        2.82842712474619,
+        -2.449489742783178
+      ],
+      [
+        0.0,
+        -7.3484692283495345
+      ],
+      [
+        -4.242640687119285,
+        1.1102230246251565e-16
+      ]
+    ],
+    "weighted_anomaly_vector": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "weighted_complex_closure": [
+      0.0,
+      -7.771561172376096e-16
+    ]
+  },
+  "spectral_action_no_go": {
+    "relative_flag_dimension": 16,
+    "numerical_spectral_invariance_error": 0.0,
+    "consequence": "Any action built only from separate functions of K_f=Y_f Y_f^dagger spectra leaves physical relative orientations undetermined."
+  },
+  "minimal_cross_invariants": {
+    "CP_even": "Tr(K_f K_g)",
+    "CP_odd": "(1/(3i)) Tr([K_f,K_g]^3)",
+    "jarlskog_identity_residual": 8.881784197001252e-16,
+    "consequence": "Nonzero CP requires an orientation-sensitive history/curvature term or an equivalent holonomy; endpoint heat entropy alone cannot generate it."
+  }
+}

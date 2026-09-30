@@ -1,0 +1,70 @@
+URT / Cathedral Platonic Entry-Stage Audit
+Date: 2026-08-05
+
+PURPOSE
+Construct and test the three Platonic entry maps:
+  J_T      : tetrahedral coherent seed,
+  J_CO     : cube/octahedral dual stage,
+  J_DI     : dodecahedral/icosahedral completion,
+then apply the existing target-free hidden self-energy/load law inside the shell and dual ribbon propagators.
+
+EXACT GEOMETRIC RESULTS
+1. The 20 dodecahedral vertices admit an exact partition 20 = 4 + 4 + 12 into two interpenetrating tetrahedra and a twelve-channel remainder.
+2. The twelve-channel remainder is not itself a regular icosahedron.
+3. For each of the five inscribed-cube orientations Q_i in the face 3' carrier:
+       J_T^(i)  = (1/sqrt(5)) Q_i,
+       J_CO^(i) = sqrt(2/5) Q_i.
+   Thus T and C/O have the same orientation for a fixed cube and differ only in transmission strength.
+4. The five Q_i all have determinant -1. For i != j,
+       tr(Q_i^T Q_j) = -3/4,
+       cos Theta = -7/8,
+       Theta = 2.636232143305636 rad.
+5. On the complete 3' + 5 gearbox, the dodecahedral and icosahedral endpoint metrics are both the identity. Therefore static D/I endpoint geometry alone cannot distinguish u from d.
+6. Stage metric spectra:
+   T:       (0,0,0,0,0,8/15,8/15,8/15)
+   Cube:    (0,0,2/5,2/5,2/5,2/3,2/3,2/3)
+   Octa:    rank-3 projector with nonzero eigenvalues 2/5
+   D/I:     identity on 3' + 5
+
+STRONGEST STAGE ARCHITECTURE TESTED
+  neutrino       enters at T,
+  charged lepton enters at C,
+  down quark     enters at O,
+  up quark       enters at D,
+  I is the common completion.
+
+Best diagnostic discrete orientation branch tested:
+  s_u = -1, s_d = +1, s_e = -1, s_nu = -1,
+with raw geometric stage capacities and the canonical octahedral row-space projector.
+This sign branch was identified by comparing the finite enumerated branches to the frozen ledger; it is not yet independently selected by the Platonic geometry.
+
+BEST DIAGNOSTIC NUMERICAL OUTPUT
+|V_CKM| =
+[[0.974053978155, 0.226294786309, 0.003085017067],
+ [0.226118558106, 0.973395397676, 0.037037784270],
+ [0.009446974172, 0.035945367893, 0.999309103934]]
+
+J_CKM = 2.466952723659e-5
+
+|U_PMNS| =
+[[0.834484738682, 0.529480002627, 0.152597993841],
+ [0.337079861308, 0.563295423045, 0.754370885889],
+ [0.435904104141, 0.634310013475, 0.638465675505]]
+
+sin^2 theta_12 = 0.287032965211
+sin^2 theta_23 = 0.582642943121
+sin^2 theta_13 = 0.023286147724
+J_PMNS          = -0.0323354400404
+
+RELATIVE DIFFERENCES FROM THE FROZEN DIAGNOSTIC LEDGER
+  V_us:   +0.8854%
+  V_cb:  -12.1859%
+  V_ub:  -17.3756%
+  J_CKM: -21.4688%
+  s12:    -5.4142%
+  s23:    +3.6492%
+  s13:    +2.6278%
+  J_PMNS: -0.07425%
+
+VERDICT
+The Platonic entry-stage hypothesis is not rejected. It materially improves the Cabibbo channel and nearly fixes the lepton CP invariant and reactor scale in one finite diagnostic branch. But the branch orientation is not yet selected internally, and the three static entry maps do not close flavour. The unresolved component is the noncommuting dynamic handoff between stages, especially O -> D for quarks and T -> C -> I for the two large lepton angles. Static endpoint metrics cannot supply this because D and I are identical on the 3' + 5 gearbox.

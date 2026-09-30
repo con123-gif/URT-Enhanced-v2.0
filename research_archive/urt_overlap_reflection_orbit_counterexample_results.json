@@ -1,0 +1,452 @@
+{
+  "certificate": "URT explicit overlap reflection-orbit counterexample",
+  "configuration_diagnostics": [
+    {
+      "Wilson_control": {
+        "determinant_phase": 2.3286483041840844e-19,
+        "determinant_sign": 1,
+        "fixed_witness_value_before_gauge_average": 7.307322462673117e-08,
+        "logabsdet": 175.36138060097727
+      },
+      "link_signs": [
+        -1,
+        -1
+      ],
+      "minimum_XdaggerX": 0.6799095148715566,
+      "overlap_methods": {
+        "Hermitian_sign": {
+          "determinant_phase": -8.806814455200367e-21,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": 1.904079387655413e-06,
+          "logabsdet": -6.035481604729614
+        },
+        "SVD": {
+          "determinant_phase": -2.0266347442712346e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": 1.9040793876519435e-06,
+          "logabsdet": -6.035481604729622
+        },
+        "XdaggerX": {
+          "determinant_phase": -1.3571297225634643e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": 1.9040793865842754e-06,
+          "logabsdet": -6.035481604729614
+        }
+      }
+    },
+    {
+      "Wilson_control": {
+        "determinant_phase": -2.561855830438126e-19,
+        "determinant_sign": 1,
+        "fixed_witness_value_before_gauge_average": 1.0628654739902425e-07,
+        "logabsdet": 175.3613808617297
+      },
+      "link_signs": [
+        -1,
+        1
+      ],
+      "minimum_XdaggerX": 0.6794347366156989,
+      "overlap_methods": {
+        "Hermitian_sign": {
+          "determinant_phase": 4.250179566027048e-20,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": -1.9948573427874838e-06,
+          "logabsdet": -6.035514118472039
+        },
+        "SVD": {
+          "determinant_phase": 1.7680307832017905e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": -1.9948573422799687e-06,
+          "logabsdet": -6.03551411847203
+        },
+        "XdaggerX": {
+          "determinant_phase": 3.8597379099096416e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": -1.9948573419356803e-06,
+          "logabsdet": -6.035514118472029
+        }
+      }
+    },
+    {
+      "Wilson_control": {
+        "determinant_phase": 2.561855830438126e-19,
+        "determinant_sign": 1,
+        "fixed_witness_value_before_gauge_average": 1.0628654739902425e-07,
+        "logabsdet": 175.3613808617297
+      },
+      "link_signs": [
+        1,
+        -1
+      ],
+      "minimum_XdaggerX": 0.6794347366156989,
+      "overlap_methods": {
+        "Hermitian_sign": {
+          "determinant_phase": -4.250179566027048e-20,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": -1.9948573427874838e-06,
+          "logabsdet": -6.035514118472039
+        },
+        "SVD": {
+          "determinant_phase": -1.7680307832017905e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": -1.9948573422799687e-06,
+          "logabsdet": -6.03551411847203
+        },
+        "XdaggerX": {
+          "determinant_phase": -3.8597379099096416e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": -1.9948573419356803e-06,
+          "logabsdet": -6.035514118472029
+        }
+      }
+    },
+    {
+      "Wilson_control": {
+        "determinant_phase": -2.3286483041840844e-19,
+        "determinant_sign": 1,
+        "fixed_witness_value_before_gauge_average": 7.307322462673117e-08,
+        "logabsdet": 175.36138060097727
+      },
+      "link_signs": [
+        1,
+        1
+      ],
+      "minimum_XdaggerX": 0.6799095148715566,
+      "overlap_methods": {
+        "Hermitian_sign": {
+          "determinant_phase": 8.806814455200367e-21,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": 1.904079387655413e-06,
+          "logabsdet": -6.035481604729614
+        },
+        "SVD": {
+          "determinant_phase": 2.0266347442712346e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": 1.9040793876519435e-06,
+          "logabsdet": -6.035481604729622
+        },
+        "XdaggerX": {
+          "determinant_phase": 1.3571297225634643e-16,
+          "determinant_sign": 1,
+          "fixed_witness_value_before_gauge_average": 1.9040793865842754e-06,
+          "logabsdet": -6.035481604729614
+        }
+      }
+    }
+  ],
+  "date": "2026-09-05",
+  "determinant_weighted_OS_results": {
+    "Wilson_control": {
+      "fixed_same_witness_OS_value": 8.967988763603678e-08,
+      "maximum_full_scalar_Gram_eigenvalue": 42.85048715022834,
+      "minimum_full_scalar_Gram_eigenvalue": -1.536046450116658e-14,
+      "normalized_determinant_weights": [
+        0.24999996740594457,
+        0.2500000325940555,
+        0.2500000325940555,
+        0.24999996740594457
+      ]
+    },
+    "minimum_XdaggerX_over_all_four_configurations": 0.6794347366156989,
+    "overlap": {
+      "Hermitian_sign": {
+        "Gram_antihermitian_residual_before_symmetrization_max": 8.644125462505714e-14,
+        "fixed_rational_witness_OS_value": -4.5357286356320376e-08,
+        "maximum_full_scalar_Gram_eigenvalue": 274.26229527576965,
+        "minimum_full_scalar_Gram_eigenvalue": -5.737302327442073e-08,
+        "normalized_determinant_weights": [
+          0.2500040642178028,
+          0.24999593578219714,
+          0.24999593578219714,
+          0.2500040642178028
+        ]
+      },
+      "SVD": {
+        "Gram_antihermitian_residual_before_symmetrization_max": 7.855954947932199e-14,
+        "fixed_rational_witness_OS_value": -4.5357288851665886e-08,
+        "maximum_full_scalar_Gram_eigenvalue": 274.26229527576953,
+        "minimum_full_scalar_Gram_eigenvalue": -5.737302472365204e-08,
+        "normalized_determinant_weights": [
+          0.2500040642178006,
+          0.24999593578219936,
+          0.24999593578219936,
+          0.2500040642178006
+        ]
+      },
+      "XdaggerX": {
+        "Gram_antihermitian_residual_before_symmetrization_max": 1.021408483903794e-13,
+        "fixed_rational_witness_OS_value": -4.535728825134314e-08,
+        "maximum_full_scalar_Gram_eigenvalue": 274.26229527576953,
+        "minimum_full_scalar_Gram_eigenvalue": -5.7373023904906934e-08,
+        "normalized_determinant_weights": [
+          0.25000406421780147,
+          0.24999593578219848,
+          0.24999593578219848,
+          0.25000406421780147
+        ]
+      }
+    }
+  },
+  "fermion_parameters": {
+    "M_exact": "197735148026781/250000000000000",
+    "c_t": 1,
+    "mass_exact": "1/2",
+    "r_exact": "355508034923519/1000000000000000"
+  },
+  "finite_cell": {
+    "Ns": 2,
+    "Nt": 6,
+    "fermion_matrix_dimension": 192,
+    "positive_times": [
+      1,
+      2
+    ],
+    "reflection": "theta(t,n)=(-t,n+t(1,1,1))"
+  },
+  "gauge_probe_measure": {
+    "all_other_links": "identity",
+    "four_configurations": "each varied link independently takes z or z_inverse with probability 1/2",
+    "gauge_average_preserves_invariant_expectations": true,
+    "gauge_invariant": true,
+    "link_unitary_exact": {
+      "unit_norm_identity": "12^2+5^2=13^2",
+      "z": "(12+5i)/13",
+      "z_inverse": "(12-5i)/13"
+    },
+    "maximum_spatial_square_deviation": 0,
+    "maximum_triangle_norm_deviation_exact": "sqrt(2/13)",
+    "maximum_triangle_norm_deviation_numeric": 0.3922322702763681,
+    "physical_measure": "local-Haar gauge average of the four-point product measure",
+    "reflection_phase_rule": "theta exchanges the two links and inverts U",
+    "selected_face_autocorrelation_action": false,
+    "site_reflection_positive_before_gauge_average": true,
+    "varied_reflection_orbit": [
+      {
+        "integer_direction": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "site": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "stored_direction_index": 8
+      },
+      {
+        "integer_direction": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "site": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "stored_direction_index": 5
+      }
+    ]
+  },
+  "observable": {
+    "coefficient_norm_before_normalization": 1.0000026549964756,
+    "coefficients": [
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": -0.0017,
+        "coefficient_exact": "-17/10000",
+        "positive_site": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient_decimal": 0.892,
+        "coefficient_exact": "223/250",
+        "positive_site": [
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": 0.0051,
+        "coefficient_exact": "51/10000",
+        "positive_site": [
+          2,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "coefficient_decimal": 0.0051,
+        "coefficient_exact": "51/10000",
+        "positive_site": [
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": -0.2038,
+        "coefficient_exact": "-1019/5000",
+        "positive_site": [
+          2,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient_decimal": 0.0051,
+        "coefficient_exact": "51/10000",
+        "positive_site": [
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": -0.2038,
+        "coefficient_exact": "-1019/5000",
+        "positive_site": [
+          2,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "coefficient_decimal": -0.2038,
+        "coefficient_exact": "-1019/5000",
+        "positive_site": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient_decimal": -0.2822,
+        "coefficient_exact": "-1411/5000",
+        "positive_site": [
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "definition": "F=sum_x c_x S_x, S_x=sum_a bar(psi)_(x,a) psi_(x,a)",
+    "gauge_invariant": true,
+    "normalization": "the script normalizes this exact rational coefficient vector to unit Euclidean norm"
+  },
+  "observational_targets_used": false,
+  "polar_cross_checks": {
+    "fixed_witness_value_spread": 2.4953455100840127e-15,
+    "maximum_pairwise_polar_operator_residuals": {
+      "SVD_vs_Hermitian_sign": 8.650021099004051e-15,
+      "XdaggerX_vs_Hermitian_sign": 7.0023641680781594e-15,
+      "XdaggerX_vs_SVD": 8.743185055227893e-15
+    },
+    "methods": [
+      "XdaggerX",
+      "SVD",
+      "Hermitian_sign"
+    ],
+    "negative_margin_over_method_spread": 18176755.953444418,
+    "negative_margin_using_least_negative_method": 4.5357286356320376e-08
+  },
+  "verdict": {
+    "all_four_polar_kernels_gapped": true,
+    "conclusion": "Generic gauge-covariant massive overlap reflection positivity fails this finite RP gauge-measure test numerically.  An interval certificate would promote the finite statement to E; the specially selected face weight still requires a direct calculation.",
+    "fixed_gauge_invariant_overlap_OS_witness_negative": true,
+    "generic_interacting_overlap_RP_supported": false,
+    "next_executable_gate": "certify the fixed negative scalar with interval/backward-error bounds, then test whether the selected compact-support face weight contains the same mode",
+    "rigorous_interval_arithmetic_completed": false,
+    "same_fixed_Wilson_witness_positive": true,
+    "selected_face_autocorrelation_weight_decided": false,
+    "status": "N robust finite-volume overlap-specific negative witness",
+    "theory_of_nature": false
+  }
+}

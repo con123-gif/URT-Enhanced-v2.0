@@ -1,0 +1,12 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: stage2_summary.csv>index,quantity,value
+0,Sequential geometry Dh probability,0.1333333333333333
+1,Sequential geometry Ih probability,0.8666666666666667
+2,Candidate URT probability 12/13,0.9230769230769232
+3,Approximate reported early Ih probability,0.9
+4,Approximate observed Ih count out of 120,108.0
+5,Figure-4 logistic midpoint t*,717.65
+6,Figure-4 logistic scale t*,8.61
+7,Figure-4 10%-90% width t*,37.8362072217297
+8,Odds multiplier per one t*,0.8903469875519653
+9,Approx. samples per model needed for 80% discrimination,463.0

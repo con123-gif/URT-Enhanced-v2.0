@@ -1,0 +1,77 @@
+{
+  "certificate": "URT monoidal Fock extension and identity-quotient obstruction",
+  "chemical_potential_repair": {
+    "Delta_prime": 0.007623665511114896,
+    "compensation_residual": 0.0,
+    "cost": "Delta/chemical potential must transform with the arbitrary identity representative, so it is no longer a fixed universal constant.",
+    "status": "E but not a selector",
+    "transformation": "theta_Delta' = theta_Delta-beta b, equivalently Delta'=Delta exp(beta b)"
+  },
+  "conditional_monoidal_extension": {
+    "Cathedral_choice": "z=Delta from the four-mode exterior prior",
+    "classification": "Unitary covariance gives Q_H=p_H I_H; natural direct-sum factorization forces one common p, equivalently one fugacity z.",
+    "new_numerical_parameter": false,
+    "new_structural_premise": "the V4 exterior fugacity is universal and monoidal on every history one-particle carrier",
+    "prior_on_n_modes": "rho_0,n=Delta^N/(1+Delta)^n",
+    "rho_5_minus_rho_3_tensor_rho_2_residual": 2.220446049250313e-16,
+    "status": "E conditional"
+  },
+  "date": "2026-09-04",
+  "history_embedding": {
+    "N1_conditioned_state": "rho_B proportional exp(-beta K)",
+    "conditioning_residual": 9.092591453915232e-16,
+    "full_state": "rho_F proportional exp[-dGamma(theta_Delta I+beta K)]",
+    "status": "E conditional"
+  },
+  "identity_quotient_obstruction": {
+    "full_state_distance_at_fixed_Delta": 0.002534513012926398,
+    "history_shift_residual": 2.2259959329897926e-16,
+    "master_equivalence": "K~K+bI in every normalized N=1 heat state",
+    "mean_number_after_fixed_Delta": 0.0012325030958802346,
+    "mean_number_before": 0.0037705511484508415,
+    "positive_shift_family": [
+      {
+        "b": 0.0,
+        "full_state_distance_from_b_0": 0.0,
+        "mean_number": 0.0037705511484508415,
+        "minimum_eigenvalue_K_plus_bI": 0.15000000000000005
+      },
+      {
+        "b": 0.1,
+        "full_state_distance_from_b_0": 0.00032681317196636694,
+        "mean_number": 0.0034430803165829684,
+        "minimum_eigenvalue_K_plus_bI": 0.2500000000000001
+      },
+      {
+        "b": 0.5,
+        "full_state_distance_from_b_0": 0.0013745078332499938,
+        "mean_number": 0.0023936804518079487,
+        "minimum_eigenvalue_K_plus_bI": 0.65
+      },
+      {
+        "b": 2.0,
+        "full_state_distance_from_b_0": 0.0031549144281252106,
+        "mean_number": 0.0006117830022831581,
+        "minimum_eigenvalue_K_plus_bI": 2.1500000000000004
+      }
+    ],
+    "second_quantized_shift": "dGamma(K+bI)=dGamma(K)+bN",
+    "status": "E",
+    "theorem": "At fixed nonzero beta and fixed Delta, the full-Fock extension is not invariant on [K]=K+R I unless b=0 or one conditions on fixed N."
+  },
+  "observational_targets_used": false,
+  "possible_sections_of_the_quotient": {
+    "fixed_mean_number": "choose the chemical potential from a declared mean occupancy; unique after beta and K are supplied, but the mean is a new premise",
+    "fixed_number_sector": "condition on N=1; recovers the existing theory but forfeits the full fermionic entropy spectral action",
+    "minimum_zero": "replace K by K-lambda_min(K)I; preserves positivity but is a new spectral-zero prescription and is nonsmooth at level crossings",
+    "trace_zero": "replace K by K-Tr(K)I/n; canonical and linear but generally destroys the positive-Gram interpretation"
+  },
+  "verdict": {
+    "advance": "Universally copying Delta is the strongest target-blind full-Fock repair found, but it conflicts exactly with the existing identity-shift quotient.  Co-shifting chemical potential or choosing a cost zero is unavoidable additional structure.",
+    "extension_derived_from_current_carrier_axioms": "U",
+    "fixed_Delta_full_state_descends_to_master_cost_quotient": "F",
+    "parameter_free_numeric_extension_from_Delta": "E conditional",
+    "phenomenology_gate": "CLOSED",
+    "unique_quotient_repair_selected": "F"
+  }
+}

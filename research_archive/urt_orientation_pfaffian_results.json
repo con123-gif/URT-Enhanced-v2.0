@@ -1,0 +1,199 @@
+{
+  "certificate": "URT degree-five orientation/Pfaffian continuation",
+  "date": "2026-09-03",
+  "observational_targets_used": false,
+  "branch_doubled_algebra": {
+    "history_space": "C^2_branch tensor C^60_directed-edge",
+    "W": "diag(L,R)",
+    "tau3": "diag(-I60,+I60)",
+    "left_fifth_residual": 2.4184011361052488e-15,
+    "right_fifth_residual": 2.4184011361052488e-15,
+    "tau3_square_residual": 0.0,
+    "tau3_commutes_W_residual": 0.0,
+    "branch_swap_flips_tau3_residual": 0.0
+  },
+  "degree_five_exhaustion": {
+    "ordered_words_tested": 32,
+    "closed_words": [
+      {
+        "word": "LLLLL",
+        "fixed_states": 60,
+        "trace": {
+          "real": 51.96152422706635,
+          "imag": -30.0
+        },
+        "trace_abs": 60.00000000000003
+      },
+      {
+        "word": "RRRRR",
+        "fixed_states": 60,
+        "trace": {
+          "real": 51.961524227066334,
+          "imag": 30.0
+        },
+        "trace_abs": 60.000000000000014
+      }
+    ],
+    "nonclosed_trace_max": 0.0,
+    "left_cycle_lengths": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "right_cycle_lengths": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "complex_closed_trace_dimension": 2,
+    "real_invariant_dimension": 2,
+    "reversal_even_dimension": 1,
+    "reversal_odd_dimension": 1,
+    "hodge_linear_reversal_even_coupling_dimension": 1,
+    "theorem": "Only L^5 and R^5 close on the regular A5 history set.  Reality pairs their traces, reversal splits the resulting real plane into one even and one odd line, and Hodge chirality is reversal-odd.  Therefore the real degree-five interaction linear in Hodge chirality is spanned by chi*Omega5 and is one-dimensional."
+  },
+  "normalized_scalars": {
+    "E5_definition": "Re Tr(W^5)/120",
+    "E5": 0.8660254037844392,
+    "E5_target": 0.8660254037844386,
+    "E5_target_error": 5.551115123125783e-16,
+    "Omega5_definition": "-i Tr(tau3 W^5)/60",
+    "Omega5": 1.0000000000000002,
+    "Omega5_reality_residual": 1.1842378929335003e-16,
+    "Omega5_target_error": 2.220446049250313e-16,
+    "branch_swapped_E5": 0.8660254037844392,
+    "branch_swapped_Omega5": -1.0000000000000002,
+    "branch_swap_even_residual": 0.0,
+    "branch_swap_odd_residual": 0.0,
+    "generic_unitary_connection_R5_equals_conj_L5_residual": 0.0
+  },
+  "symmetry": {
+    "random_U1_gauge_covariance_residual": 1.216039919338516e-15,
+    "A5_generator_covariance_residual": 1.4661933719414479e-15,
+    "hodge_swap_flips_chirality_residual": 0.0,
+    "combined_hodge_branch_coupling_reversal_residual": 0.0
+  },
+  "KO6_branch_orientation": {
+    "base_completion": {
+      "D_self_adjoint": 0.0,
+      "D_anticommutes_grading": 0.0,
+      "J_squared_plus_one": 0.0,
+      "J_commutes_D": 0.0,
+      "J_anticommutes_grading": 0.0
+    },
+    "tau3_lift": "diag(tau3,tau3,-tau3,-tau3)",
+    "tau3_lift_residuals": {
+      "commutes_D": 0.0,
+      "commutes_grading": 0.0,
+      "J_odd": 0.0
+    },
+    "full_D_determinant": {
+      "real": 1.0000000000000182,
+      "imag": 8.881784197001315e-16
+    },
+    "phase_cancellation_identity": "The unreduced four-block completion contains M, M^T and their conjugates; det(D_M)=|det(M)|^4 (up to the fixed even-dimensional block sign), so its full determinant/spectral action cannot retain an orientation phase.  A chiral Pfaffian must be defined on the physical half-space, which is precisely part of the still-open doubling-safe lattice-Dirac gate."
+  },
+  "naive_pfaffian_phase": {
+    "identity": "Pf([[0,-M^T],[M,0]])=det(M) for the even dimensions used here",
+    "det_L": {
+      "real": 1.0000000000000022,
+      "imag": 1.6653345369377363e-16
+    },
+    "det_R": {
+      "real": 1.0000000000000018,
+      "imag": -2.775557561562894e-16
+    },
+    "det_L_minus_one": 2.2266822963392197e-15,
+    "det_R_minus_one": 1.7979101253009106e-15,
+    "conclusion": "The unshifted finite KO-6/Majorana Pfaffian is orientation-blind: the twelve pentagon phases sum to +/-2*pi, so det L=det R=1."
+  },
+  "shifted_pfaffian_family": {
+    "definition": "A_s(a)=[[0,-(I-a U_s)^T],[I-a U_s,0]], 0<a<1",
+    "exact_ratio": "Pf A_R/Pf A_L=[(1-a^5 exp(+i*pi/6))/(1-a^5 exp(-i*pi/6))]^12",
+    "degree_five_expansion": "(chi/(2i)) log(Pf A_R/Pf A_L) = -6 chi a^5 Omega5 + O(a^10)",
+    "witnesses": [
+      {
+        "amplitude": 0.5,
+        "interpretation": "1/2 is the classical Haar transfer weight; 1/sqrt(2) is the Kraus/Stinespring amplitude.  The present axioms do not identify either with the relative hopping strength in the finite Dirac/Pfaffian.",
+        "log_pfaffian_left": {
+          "real": -0.32768771955819154,
+          "imag": 0.19269895136797469
+        },
+        "log_pfaffian_right": {
+          "real": -0.32768771955819154,
+          "imag": -0.1926989513679747
+        },
+        "determinant_formula_residual": 6.684427777288335e-16,
+        "log_pfaffian_ratio": {
+          "real": 0.0,
+          "imag": -0.3853979027359494
+        },
+        "half_log_ratio_phase_action": -0.1926989513679747,
+        "half_log_ratio_imaginary_residual": 0.0,
+        "degree_five_coefficient_of_Omega5": -0.1875,
+        "exact_action_minus_degree_five_term": -0.0051989513679747135,
+        "positive_cost_minmax_left": [
+          0.2554781046317251,
+          2.1160254037844406
+        ]
+      },
+      {
+        "amplitude": 0.7071067811865475,
+        "interpretation": "1/2 is the classical Haar transfer weight; 1/sqrt(2) is the Kraus/Stinespring amplitude.  The present axioms do not identify either with the relative hopping strength in the finite Dirac/Pfaffian.",
+        "log_pfaffian_left": {
+          "real": -1.9289739156891519,
+          "imag": 1.2478752443948047
+        },
+        "log_pfaffian_right": {
+          "real": -1.9289739156891519,
+          "imag": -1.2478752443948047
+        },
+        "determinant_formula_residual": 1.1322097734007351e-15,
+        "log_pfaffian_ratio": {
+          "real": 0.0,
+          "imag": -2.4957504887896094
+        },
+        "half_log_ratio_phase_action": -1.2478752443948047,
+        "half_log_ratio_imaginary_residual": 0.0,
+        "degree_five_coefficient_of_Omega5": -1.060660171779821,
+        "exact_action_minus_degree_five_term": -0.1872150726149837,
+        "positive_cost_minmax_left": [
+          0.09353364749319003,
+          2.724744871391592
+        ]
+      }
+    ],
+    "degree_five_coefficient_spread": 0.873160171779821
+  },
+  "relative_information_no_go": {
+    "family": "For every 0<a<1, K_s(a)=(I-aU_s)^*(I-aU_s)>=0 and the same relative-information functional has the unique Gibbs minimizer rho_a proportional to exp(log rho0-eta K_s(a)).",
+    "nonidentifiability": "Relative information selects rho after K is supplied; it does not select the hopping ratio a or the coefficient lambda in lambda*chi*Omega5.  Adding any real lambda*chi*Omega5 preserves reality, U(1), A5 and reversal symmetry.",
+    "quadratic_lattice_functional_scope": "The Hessian of sum ||Psi_y-U_xy Psi_x||^2 plus a real local potential is Hermitian and has the same determinant under flux conjugation.  It can generate reversal-even Wilson traces only.  Omega5 can enter through a genuinely chiral fermion Pfaffian, and then its coefficient depends on the hopping-to-onsite ratio and on the chosen chiral measure.",
+    "phase_is_not_a_convex_energy": "arg Pf is a phase (defined modulo 2*pi), not a bounded real KL cost. Turning it into a minimizable real term requires an additional branch/interference prescription, which the current master functional does not supply."
+  },
+  "verdict": {
+    "invariant_direction": "CLOSED/EXACT: the allowed real reversal-compatible degree-five Hodge-orientation coupling is one-dimensional, span{chi*Omega5}.",
+    "geometric_normalization": "CLOSED/EXACT: division by 60 makes Omega5=1 on the certified unit-flux regular Hopf connection.",
+    "dynamical_coefficient": "UNDERDETERMINED: KO-6 kinematics and the unshifted Pfaffian are blind to Omega5; shifted Pfaffians form a continuous admissible family whose degree-five coefficient is -6a^5.",
+    "flavour_action": "NOT FROZEN: no blind mass/CKM/PMNS evaluation is licensed by this result.",
+    "minimal_missing_premise": "Derive the dimensionless diagonal-to-history hopping ratio (or an equivalent normalized antisymmetric fermion operator and chiral measure) from the microscopic lattice action; this must be done together with the doubling-safe chiral lattice-Dirac construction."
+  }
+}

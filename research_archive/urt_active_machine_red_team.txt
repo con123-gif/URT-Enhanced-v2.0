@@ -1,0 +1,75 @@
+URT ACTIVE-MACHINE RED-TEAM AUDIT
+=================================
+
+1. REPRODUCIBILITY
+------------------
+The missing local dependency active_core.py was reconstructed solely from the
+centred-icosahedral seed audit and the corrected two-sheet ribbon construction.
+The delivered machine verifier then runs locally and reproduces the reported
+CKM/PMNS outputs to floating-point precision.
+
+2. WHAT IS RIGOROUS
+-------------------
+For a locally modified matrix A, polar_close(A) is the unique nearest unitary
+matrix when A is nonsingular:
+
+    polar(A) = argmin_{Q^*Q=I} ||Q-A||_F^2.
+
+Embedding matrices as equal-covariance isotropic Gaussian response means makes
+this equivalent to a KL minimum-change projection. Thus the closure/projection
+part of the active gate is mathematically valid.
+
+3. WHAT IS NOT DERIVED
+----------------------
+The construction uses seven complex pathway loads:
+
+    3 quark gates + 4 lepton gates = 14 real controls.
+
+The eight reported flavour diagnostics are:
+
+    Vus, Vcb, Vub, J_CKM,
+    sin^2(theta12), sin^2(theta23), sin^2(theta13), J_PMNS.
+
+A central-difference Jacobian of these eight outputs with respect to the 14 gate
+controls at the reported solution has:
+
+    total rank   = 8
+    total nullity= 6
+
+Sector by sector:
+
+    quarks:  6 controls -> 4 observables, rank 4, nullity 2
+    leptons: 8 controls -> 4 observables, rank 4, nullity 4
+
+Therefore the gate family is locally capable of independently fitting every
+reported observable, with six remaining unconstrained directions. Removing
+observed numbers from the final source code does not make the construction a
+blind prediction because the gate formulae were reverse-identified from the
+residuals before being written as Cathedral-constant combinations.
+
+4. SINGLE-FUNCTIONAL TEST
+-------------------------
+A replacement using one load-aware polar variational law built only from the
+passive transfer spectra was tested. It did not reproduce the flavour ledger.
+The previously audited finite-Dirac/vacuum relative action also does not produce
+the frozen CKM/PMNS matrices.
+
+5. VERDICT
+----------
+The following remain reproducible:
+
+    exact centred icosahedral geometry;
+    A5 decomposition and intertwiners;
+    hidden 4_3 + 4_5 portal;
+    corrected two-sheet shell/dual passive kernels;
+    the unique outer branch relation;
+    the polar minimum-change closure theorem.
+
+The seven-load active gate ledger is a compact phenomenological fit, not yet a
+derivation from the URT relative-information action. The claim that flavour is
+solved must therefore be withdrawn.
+
+The hard remaining requirement is one universal action that derives the entire
+complex load matrix before CKM/PMNS comparison. It must output the pathway loads
+from the exact finite Dirac, passive ribbon generator and entropy covariance,
+not from seven separately chosen formulas.

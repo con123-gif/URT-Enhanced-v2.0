@@ -1,0 +1,111 @@
+{
+  "schema": "cathedral-v123-mathematical-endpoint-scale-orbit-v1",
+  "exact_scale_orbit": {
+    "sheet_operator": "D_square(lambda)=lambda(J4-I4)",
+    "spectrum": "lambda*(3,-1,-1,-1)",
+    "invariants_preserved": [
+      "D4 triality and A4 covariance",
+      "4+12 finite differential calculus",
+      "first-order left-right condition",
+      "A5 representation projectors",
+      "Hopf Chern class and normalized holonomies",
+      "KO-6 sign relations (for arbitrary complex finite block)",
+      "URT scale-free condition-number/contraction selectors"
+    ],
+    "KMS_identity": "S_{beta/s}(sD)=S_beta(D)",
+    "consequence": "positive Dirac normalization is an exact R_+ orbit of the current axioms"
+  },
+  "connes_sheet_metric": {
+    "distance": "d(i,j)=1/(sqrt(2)|lambda|), i!=j",
+    "coefficient": 0.7071067811865475,
+    "proof_sketch": "For fixed a_i-a_j=1, convexity plus the stabilizer exchanging the other two sheets reduces the minimizer to (1/2,-1/2,0,0); the commutator has singular values sqrt(2),sqrt(2),0,0."
+  },
+  "one_action_rank_one_family": {
+    "domain": "0 <= x < 96 f2/f0",
+    "xcrit": 374.5875311398134,
+    "R(x)": "G Lambda^2/g_U^2 = f0/[pi(32 f2-f0 x/3)]",
+    "R0": 0.0025492830891772214,
+    "R_derivative": "f0^2/[3 pi (32 f2-f0 x/3)^2] > 0",
+    "theorem": "For nonnegative rank-one finite Dirac invariant, R(x) is strictly increasing; R(x)>=R(0) and diverges at the Einstein-sign boundary.",
+    "GLambda2_over_alpha_lower_bound": 0.03203523609951941,
+    "bare_vacuum_ratio": "12(48 f4-f2 x+f0 x^2/4)/(96 f2-f0 x)",
+    "bare_vacuum_stationary_roots": [
+      -2.9671892797539483,
+      752.1422515593807
+    ],
+    "physical_positive_domain_has_no_stationary_root": true,
+    "bare_vacuum_monotone_in_positive_EH_domain": true
+  },
+  "normalization_ambiguity_examples": [
+    {
+      "convention": "edge_hopping_Lambda=lambda",
+      "toy_x_if_cM=lambda^2": 1.0,
+      "GLambda2_over_gU2": 0.002556106879793036,
+      "GLambda2_over_alphaU": 0.03212098638139252
+    },
+    {
+      "convention": "inverse_Connes_distance_Lambda=sqrt(2)lambda",
+      "toy_x_if_cM=lambda^2": 0.5,
+      "GLambda2_over_gU2": 0.0025526904241950574,
+      "GLambda2_over_alphaU": 0.03207805393416082
+    },
+    {
+      "convention": "RMS_eigenvalue_Lambda=sqrt(TrD2/4)=sqrt(3)lambda",
+      "toy_x_if_cM=lambda^2": 0.3333333333333333,
+      "GLambda2_over_gU2": 0.0025515536342631713,
+      "GLambda2_over_alphaU": 0.03206376861056607
+    },
+    {
+      "convention": "spectral_radius_Lambda=3lambda",
+      "toy_x_if_cM=lambda^2": 0.1111111111111111,
+      "GLambda2_over_gU2": 0.0025500394884093907,
+      "GLambda2_over_alphaU": 0.03204474129260326
+    }
+  ],
+  "rescaling_witnesses": [
+    {
+      "s": 0.25,
+      "x_from_x0_1": 0.0625,
+      "R_g": 0.00254970850852126
+    },
+    {
+      "s": 0.5,
+      "x_from_x0_1": 0.25,
+      "R_g": 0.0025509856188978023
+    },
+    {
+      "s": 1,
+      "x_from_x0_1": 1,
+      "R_g": 0.002556106879793036
+    },
+    {
+      "s": 2,
+      "x_from_x0_1": 4,
+      "R_g": 0.002576799212899317
+    },
+    {
+      "s": 4,
+      "x_from_x0_1": 16,
+      "R_g": 0.002663030851954093
+    }
+  ],
+  "irreducible_no_go": {
+    "statement": "No equation built only from the currently retained symmetry, Hopf topology, KO-6 signs, KMS entropy ratios, and scale-free URT selection can fix x=c_M/Lambda^2.",
+    "reason": "All such data admit a continuous positive rescaling of the finite Dirac normalization; Hopf/KO-6 are homogeneous or topological, entropy depends on beta D, and URT contraction uses spectral ratios.",
+    "what_would_break_orbit": [
+      "an explicit normalization tying the internal Connes distance to the continuum cutoff length",
+      "a dimensionful microscopic datum",
+      "a new dynamical field/potential whose exact (not truncated) action has an interior scale minimum",
+      "an independent empirical calibration"
+    ]
+  },
+  "other_independent_boundary": {
+    "chiral_measure_phase": "Even spectral actions and vectorlike KO-6 determinants are orientation-blind; determinant-line/Pfaffian coefficient remains a separate fermionic-measure datum unless a chiral regulator/trivialization is derived.",
+    "vacuum_counterterm": "An additive volume term remains invisible to normalized Gibbs data and leaves the physical cosmological coefficient unfixed."
+  },
+  "endpoint": {
+    "finite_mathematical_structure": "closed up to continuous normalization/moduli explicitly classified above",
+    "no_further_internal_scale_derivation_from_current_axioms": true,
+    "status": "This is the end of the deduction from the current axioms: further numerical fixing would add a new premise rather than continue the existing mathematics."
+  }
+}

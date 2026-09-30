@@ -1,0 +1,167 @@
+URT–CATHEDRAL SPIN(7) STRUCTURAL CLOSURE
+========================================
+
+1. GOLDEN SIX-AXIS HODGE OPERATOR
+---------------------------------
+On the six unoriented icosahedral axes, define
+
+    S_ab = sqrt(5) v_a·v_b  (a != b),   S_aa = 0,
+    H_phi = S/sqrt(5).
+
+The exact identities are
+
+    S^2 = 5 I_6,
+    H_phi^2 = I_6,
+    R^6 = 3 (+1) + 3 (-1) = 3 + 3'.
+
+Thus phi is not a scalar correction. It defines the Hodge/chiral split of
+the six-axis carrier.
+
+2. ENTROPY CYCLE AS THE OUTER LIFT
+----------------------------------
+The period-six URT rail cannot lie in A5, because A5 has no element of order
+six. Its axis permutation lies in the order-120 normalizer. The unique signed
+orientation lift used here satisfies exactly
+
+    C_hat H_phi C_hat^(-1) = -H_phi,
+    C_hat^6 = -I_6,
+    C_hat^12 = I_6.
+
+The signed A5 lifts together with C_hat generate a group of order 240. Its
+center and kernel over the 120-element normalizer are {+I,-I}. This is the
+non-trivial fermionic double cover of the static-plus-dynamic symmetry.
+
+Numerical certificates:
+
+    generated group order       = 240
+    quotient order              = 120
+    central kernel              = 2
+    outer lift order            = 12
+    A5 Hodge preservation error = 0.000e+00
+    outer Hodge reversal error  = 0.000e+00
+
+3. HIDDEN QUARTETS ARE CLIFFORD SPINORS
+---------------------------------------
+The exact A5 decompositions are
+
+    Lambda^2(4) = 3 + 3',
+    Sym^2(4)    = 1 + 4 + 5,
+    End(4)      = 1 + 3 + 3' + 4 + 5.
+
+The two unique triplet intertwiners produce six 4x4 gamma maps. Clifford
+closure forces, rather than fits,
+
+    a = b = 2,
+    relative phase = pi/2,
+
+and
+
+    gamma_a^† gamma_b + gamma_b^† gamma_a = 2 delta_ab I_4.
+
+Maximum pair residual = 1.279e-14.
+
+Adding the existing KO grading gives seven 8x8 gamma matrices. Their 21
+bivectors close spin(7) with the previously measured closure error below
+5e-15.
+
+4. UNIQUE KO-REAL STRUCTURE
+---------------------------
+The spin representation admits one anti-linear intertwiner up to scale. Its
+fixed subspace has real dimension eight, exactly the hidden 4+4 sector.
+
+    real-structure commutator error = 4.410e-15
+    involution error                = 1.569e-15
+    fixed real dimension            = 8
+
+For every tested normalized KO-real spinor, the Spin(7) orbit has dimension
+seven and the pointwise stabilizer has dimension fourteen.
+
+5. RECURSIVE STABILIZER THEOREM
+-------------------------------
+For independent KO-real return spinors psi_0, psi_1, psi_2, ... the exact
+pointwise stabilizer dimensions are
+
+    one spinor:    14
+    two spinors:    8
+    three spinors:  3
+    four spinors:   0
+
+The first three stabilizers close under commutators with errors
+
+    1.772e-15,
+    1.319e-15,
+    1.774e-15.
+
+Their Lie invariants are
+
+    dim 14: center 0, derived dim 14, rank 2, Killing eigenvalue -4
+            => compact g2;
+    dim  8: center 0, derived dim  8, rank 2, Killing eigenvalue -3
+            => su(3);
+    dim  3: center 0, derived dim  3, rank 1, Killing eigenvalue -2
+            => su(2).
+
+The setwise stabilizer of an oriented two-spinor plane has
+
+    dimension 9, center dimension 1, derived dimension 8, rank 3,
+
+hence u(3) = su(3) + u(1).
+
+6. THE NEW CORE FACTORISATION
+-----------------------------
+The old 21 state channels regroup exactly as
+
+    H_21 = (1 + 3 + 3') + (1 + 5) + (4 + 4)
+         = V_7             + M_6     + S_8.
+
+Interpretation:
+
+    V_7: seven Clifford/vector directions (centre plus golden triplets),
+    M_6: scalar plus fiveplet metric deformation,
+    S_8: KO-real matter spinor.
+
+The 21-dimensional Spin(7) bivector algebra is the control algebra acting on
+S_8; it is not an accidental equality with the 21 state count.
+
+7. THREE-GENERATION CONSEQUENCE
+-------------------------------
+The order-twelve vector lift was lifted again to the eight-real-dimensional
+spin representation. The spin lift is unitary, preserves the KO-real subspace,
+and has order twenty-four:
+
+    spin covariance error       = 1.272e-14
+    unitarity error             = 1.024e-15
+    KO-real preservation error  = 8.841e-15
+    U_spin^24 - I error         = 6.571e-14
+
+For every one of 38 KO-real starting spinors tested, and for both the one-step
+and two-step recursive orbit, the actual outer-cycle returns satisfy
+
+    Stab(psi_0)                         = 14,
+    Stab(psi_0,psi_1)                   = 8,
+    Stab(psi_0,psi_1,psi_2)             = 3,
+    Stab(psi_0,psi_1,psi_2,psi_3)       = 0.
+
+Thus
+
+    14 -> 8 -> 3 -> 0
+
+is not an arbitrary-spinor dimension count; it is the exact recursive orbit
+of the entropy-cycle spin lift.
+
+Therefore the framework no longer needs to postulate a separate generation
+triplet. Three generations are the maximal non-trivial recursive spinor flag.
+A fourth independent return destroys all continuous stabilizer and is rejected
+by the URT requirement of retained controllability/closure.
+
+8. SCIENTIFIC STATUS
+--------------------
+This structural closure is target-free and exact to numerical linear-algebra
+precision. It unifies the golden A5 split, the period-six entropy direction,
+the two hidden quartets, the forced complex phase, the 21-generator control
+algebra, and the existence of exactly three non-trivial recursive returns.
+
+It does not yet constitute a numerical derivation of CKM and PMNS. Those
+matrices are now precisely the relative holonomies of the quark and lepton
+three-spinor flags selected by the URT action. Earlier fitted golden and U(2)
+closures remain withdrawn.
