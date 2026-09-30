@@ -1,0 +1,89 @@
+URT / CATHEDRAL — BLIND TWO-SHEET HISTORY COMPLETION TEST
+Date: 2026-08-21
+
+Goal
+----
+Execute the proposed final Wilson–KL history law without CKM/PMNS targets.
+
+Inputs only
+-----------
+- exact icosahedral / dual-Petersen route geometry
+- exact Clebsch maps J5, J43, J45
+- passive Green denominators 7, 3, 5
+- Delta = 0.0024891898404204027
+- eta_Delta = 5.9957979867413025
+- exact charge words u,d,e,nu and quadratic covariant g(q)
+- rank-one oriented charge pairing h_fg = g_fg + i omega_fg
+- six-return closed histories
+
+Typing correction
+-----------------
+Every local 3x3 amplitude M_e is Hom(3,3'), so direct products M_e M_e' are invalid.
+The path calculation therefore uses the correct 6x6 Galois-sheet lift
+
+  Mhat_e = [[0, M_e^dagger], [M_e, 0]].
+
+After six links the history returns to the same sheet and the unprimed 3x3 block is extracted.
+
+Blind path law tested
+---------------------
+For a common closed route omega shared by each species pair,
+
+  W_fg(omega) = -Re[ hhat_fg Tr(U_f(omega)^dagger U_g(omega))/3 ]
+
+with hhat_fg = h_fg/|h_fg| and U_f built from the polar factors of the correctly lifted local amplitudes.
+The selected path measure is
+
+  P*(omega) proportional to P0(omega) exp[-eta W_fg(omega)],
+
+where P0 is the passive route measure generated from the exact local Green-response norms.
+The full (not merely unitary) lifted amplitudes are averaged with P*, then the source singular frames are used for mixing.
+
+Result A — universal eta_Delta
+------------------------------
+|V_CKM| =
+[[0.9298270243, 0.2925915711, 0.2231857465],
+ [0.1949724062, 0.1226798364, 0.9731060675],
+ [0.3121016914, 0.9483352942, 0.0570324819]]
+J_CKM = -8.05276646e-05 (opposite chirality flips sign only)
+
+|U_PMNS| =
+[[0.3075806847, 0.6268707824, 0.7158401669],
+ [0.0072743125, 0.7508539315, 0.6604282383],
+ [0.9514941969, 0.2079696989, 0.2267319950]]
+J_PMNS = -3.97529668e-04
+sin^2 theta12 = 0.8059656592
+sin^2 theta23 = 0.8945646850
+sin^2 theta13 = 0.5124271445
+
+Result B — existing route depths eta_Q and eta_L
+------------------------------------------------
+eta_Q = 19.985993289137674
+eta_L = 15.697202918966921
+
+|V_CKM| =
+[[0.8533548285, 0.4233531791, 0.3042328426],
+ [0.2825208657, 0.1165459991, 0.9521549194],
+ [0.4381409559, 0.8984370406, 0.0290411254]]
+J_CKM = -2.27031743e-03
+
+|U_PMNS| =
+[[0.3093070867, 0.8083584778, 0.5008849145],
+ [0.0091583730, 0.5241972659, 0.8515476209],
+ [0.9509181092, 0.2679063228, 0.1548578440]]
+J_PMNS = -2.13087473e-04
+sin^2 theta12 = 0.8722880159
+sin^2 theta23 = 0.9679875931
+sin^2 theta13 = 0.2508856976
+
+Verdict
+-------
+The explicit Wilson–KL completion proposed in the preceding derivation is falsified.
+It does not produce the observed hierarchical quark mixing or PMNS pattern.
+The result is not rescued by using the already-frozen quark/lepton route depths.
+
+The calculation also shows exact chirality degeneracy of the free energy: complex-conjugate chiral branches have identical F and identical absolute mixing matrices, while J changes sign. Thus this real Wilson free energy cannot itself select the CP orientation.
+
+What remains mathematically undefined
+-------------------------------------
+The exact project contains (i) a passive edge/ribbon transfer and (ii) a species-loaded finite Dirac amplitude, but no proved A5/outer-covariant rule that transports the charge embedding over every oriented ribbon edge. The minimal common embedding used here is the most direct completion, and it fails. A successful completion therefore requires deriving the edgewise species connection itself; choosing another edge connection by hand would be a new axiom or a fit.

@@ -1,0 +1,101 @@
+{
+  "backward_vector_case": {
+    "equality": "u=-a and the other four transverse components coincide; |Z-z_1|=4 then forces the other four unit phases to coincide.",
+    "proof": "There is at most one x_j<0. Write it x_1=-u. Then u<=-a and Cauchy applied to y_1=-sum_{j>1}y_j gives Y>=y_1^2+y_1^2/4=(5/4)(1-u^2)>=(5/4)(1-a^2).",
+    "status": "E"
+  },
+  "certificate": "URT exact five-phase A4 lower envelope",
+  "conditional_minimax_consequence": {
+    "algebra_status": "E conditional on that candidate axiom",
+    "entry": "r_entry=(5+sqrt(185))/16",
+    "maximum_for_r_at_or_above_entry": "h_max^2=(5r/2-1)^2",
+    "minimum_for_r_at_or_above_entry": "h_min^2=(2r-9/4)/(r^2-5/4)",
+    "principle_status": "C: minimizing the global kernel condition number is a new candidate axiom, not a recovered URT premise.",
+    "root_certificate": {
+      "decimal_root": 1.169543397160372,
+      "exact_sign_at_lower": "-1311116102792032593911012041/12500000000000000000000000000000000000000",
+      "exact_sign_at_upper": "459811147652497028912662577/1562500000000000000000000000000000000000",
+      "isolating_interval": [
+        "1.16954339716037",
+        "1.16954339716038"
+      ],
+      "polynomial": "240 r^3-392 r^2-28 r+185",
+      "status": "E conditional on adopting global condition-number minimization",
+      "uniqueness_on_admissible_branch": "P'(r)=720r^2-784r-28 is positive for r>=r_entry; P(r_entry)<P(1.1626)<0, while the upper isolating endpoint has positive P."
+    }
+  },
+  "conversion_to_A4_envelope": "Multiplying the Y bound by rho^2/25 and using rho^2=25-10B gives ||S||^2 >= (25-rho^2)(rho^2-9)/80=2B-(5/4)B^2.",
+  "date": "2026-09-03",
+  "diagnostics": {
+    "a_grid_count": 203,
+    "largest_A_minus_1": 0.0,
+    "largest_B_for_a_strictly_below_1": -9.999499993551257e-05,
+    "largest_C_for_a_strictly_below_1": -5.000062491344264e-09,
+    "maximum_squared_factorization_residual": 1.3915951724285947e-14,
+    "minimum_h_minus_q": -5.018555016000903e-15,
+    "role": "floating-point audit of the displayed exact identities",
+    "v_grid_count": 1001
+  },
+  "forward_vector_case": {
+    "Hermite_minorant": "For h(v)=sqrt(1-cv), let q(v)=A+Bv+Cv^2 satisfy q(1)=a, q(1/16)=h(1/16)=b, and q'(1/16)=h'(1/16), where b=sqrt(1-c/16).",
+    "a_negative_all_forward_subcase": "If rho<sqrt(15) but all x_j>=0, apply the a=0 forward lemma. Y<=5/4 would force rho>=sqrt(15), so Y>5/4>=(5/4)(1-a^2).",
+    "coefficient_signs": "For 0<=a<1, C<0 and B<0, while 0<A<=1. The sign checks reduce respectively to (15+17a^2)^2-(32ab)^2=225(1-a^2)^2, the two-region identity (64ab)^2-(259a^2-195)^2=225(1-a^2)(297a^2-169), and 16{[b(450-2a)]^2-(435+13a^2)^2}=900(1-a)^3(3a+11).",
+    "coefficients": {
+      "A": "b+c/(32b)+C/256",
+      "B": "-c/(2b)-C/8",
+      "C": "(256/225)[a-b+15c/(32b)]"
+    },
+    "exact_factorization": "h(v)^2-q(v)^2=(v-1/16)^2(1-v)[C^2 v+256(1-A^2)].",
+    "normalization": "For a>=0 put c=1-a^2 and u_j=y_j/sqrt(c). Then |u_j|<=1 and sum u_j=0.",
+    "status": "E",
+    "summed_bound": "If E=sum u_j^2<=5/4, the minorant and the fourth-moment lemma give sum h(u_j^2)>=5A+(5/4)B+(65/64)C=a+4b. Since rho=a+4b identically, equality rigidity forces E=5/4 and u proportional to (4,-1,-1,-1,-1)."
+  },
+  "observational_targets_used": false,
+  "phenomenology_gate": "CLOSED",
+  "reduction": {
+    "definitions": "Rotate Z=sum z_j=rho>0 to the real axis; write z_j=x_j+i y_j. Then sum x_j=rho, sum y_j=0, Y=sum y_j^2, and ||S||^2=rho^2 Y/25.",
+    "individual_resultant_bound": "|Z-z_j|<=4 gives x_j>=a=(rho^2-15)/(2rho).",
+    "range": "0<=B<=8/5 is equivalent to 3<=rho<=5",
+    "target_in_Y": "Y >= (5/4)(1-a^2) = 5(25-rho^2)(rho^2-9)/(16rho^2)."
+  },
+  "sharp_fourth_moment_lemma": {
+    "equality": "permutation and scaling of (4,-1,-1,-1,-1)",
+    "lagrange_polynomial": "4 x^3-2 lambda x-mu=0",
+    "normalization": "sum u_j=0 and E=sum u_j^2=1",
+    "sharp_bound": "sum u_j^4 <= (13/20)(sum u_j^2)^2",
+    "sharp_constant": "13/20",
+    "status": "E",
+    "three_value_cases": {
+      "multiplicities_2_2_1": {
+        "M4_over_E2": "1/4",
+        "decimal": 0.25,
+        "root_pattern": "+q, -q, 0 with +/-q repeated twice"
+      },
+      "multiplicities_3_1_1": {
+        "M4_over_E2": "1/2",
+        "decimal": 0.5,
+        "root_pattern": "0, +q, -q with zero repeated three times"
+      }
+    },
+    "two_value_cases": {
+      "1+4": {
+        "M4_over_E2": "13/20",
+        "decimal": 0.65
+      },
+      "2+3": {
+        "M4_over_E2": "7/30",
+        "decimal": 0.23333333333333334
+      }
+    }
+  },
+  "theorem": {
+    "statement": "For five unit phases, ||S||^2 >= 2B-(5/4)B^2 on 0<=B<=8/5. Equality is exactly a 1+4 two-phase cluster, up to common phase, permutation and conjugation.",
+    "status": "E"
+  },
+  "unfixed_after_this_proof": [
+    "the history Mobius/locality parameter t",
+    "domain-wall transfer scale and extent",
+    "microscopic gauge-link action",
+    "determinant-line trivialization lambda"
+  ]
+}

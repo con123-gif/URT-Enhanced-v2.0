@@ -1,0 +1,322 @@
+{
+  "A4_root_overlap_family": {
+    "A5_root_covariance_residuals": [
+      1.551802021918427e-16,
+      1.7915797092458113e-16
+    ],
+    "Clifford_residual": 0.0,
+    "beyond_interval_witness": {
+      "interpretation": "For m>8/5 the 1+4 critical point becomes an extra zero.",
+      "mass": 1.7,
+      "one_plus_four_overlap_norm": 5.248977889088198e-14
+    },
+    "conclusion": "Every m in the open interval has one massless orbit, no root-lattice doublers, the same i gamma.p principal symbol, exact GW chirality, and A5 covariance. The root data do not select m.",
+    "critical_values": {
+      "one_plus_four": {
+        "Wilson_scalar": 1.6,
+        "derivative_norm": 1.5438170262024087e-15
+      },
+      "physical": {
+        "Wilson_scalar": 0.0,
+        "derivative_norm": 0.0
+      },
+      "two_plus_three": {
+        "Wilson_scalar": 2.4,
+        "derivative_norm": 1.6144808724742338e-15
+      },
+      "zero_polygon_sum": {
+        "Wilson_scalar": 2.5,
+        "derivative_norm": 9.212175479737625e-16
+      }
+    },
+    "derivative_zero_classification": "Let Z=sum_j exp(i p_j). S=0 iff Z=0 or every phase is parallel/antiparallel to Z. Also sum_{i<j}(1-cos(p_i-p_j))=(25-|Z|^2)/2. The first nonphysical zero is the 1+4 antipodal split, where B=8/5.",
+    "doubler_free_mass_interval": "0<m<8/5 (Wilson coefficient r=1)",
+    "fixed_standard_GW_radius_family": {
+      "conclusion": "Fixing the GW coefficient and the i gamma.p normalization to one does not restore uniqueness: the Wilson coefficient r remains continuous.",
+      "definition": "m=1, A_r=iS+rB-1, D_r=I+A_r/sqrt(A_r^dagger A_r)",
+      "doubler_free_interval": "r>5/8",
+      "subcritical_witness": {
+        "Wilson_coefficient": 0.6,
+        "one_plus_four_overlap_norm": 7.719085131012037e-14
+      },
+      "witnesses": [
+        {
+          "GW_residual_standard_radius": 2.2247891877385024e-16,
+          "Wilson_coefficient": 0.75,
+          "continuum_principal_symbol_residual": 6.670220069762254e-13,
+          "gamma5_hermiticity_residual": 0.0
+        },
+        {
+          "GW_residual_standard_radius": 4.460393600705249e-16,
+          "Wilson_coefficient": 1.0,
+          "continuum_principal_symbol_residual": 4.17221834686821e-13,
+          "gamma5_hermiticity_residual": 0.0
+        },
+        {
+          "GW_residual_standard_radius": 1.899515931548077e-17,
+          "Wilson_coefficient": 2.0,
+          "continuum_principal_symbol_residual": 6.352212603148517e-13,
+          "gamma5_hermiticity_residual": 0.0
+        }
+      ]
+    },
+    "mass_witnesses": [
+      {
+        "GW_residual": 2.229272691855636e-16,
+        "continuum_principal_symbol_residual": 2.417621662226039e-12,
+        "gamma5_hermiticity_residual": 0.0,
+        "mass": 0.5
+      },
+      {
+        "GW_residual": 4.460393600705249e-16,
+        "continuum_principal_symbol_residual": 4.17221834686821e-13,
+        "gamma5_hermiticity_residual": 0.0,
+        "mass": 1.0
+      },
+      {
+        "GW_residual": 1.1102682338608073e-15,
+        "continuum_principal_symbol_residual": 1.9495521027613113e-13,
+        "gamma5_hermiticity_residual": 0.0,
+        "mass": 1.5
+      }
+    ],
+    "root_system": "Phi(A4)={e_i-e_j}; ten positive roots are used in paired differences",
+    "symbol": {
+      "A_m": "i S+B-m",
+      "B": "(1/5) sum_{i<j} [1-cos(p_i-p_j)]",
+      "D_m": "m [I+A_m (A_m^dagger A_m)^(-1/2)]",
+      "S": "(1/5) sum_{i<j} gamma(e_i-e_j) sin(p_i-p_j)"
+    },
+    "tight_frame_half_residual": 3.5884057874861924e-15
+  },
+  "GW_Mobius_family": {
+    "domain": "-1<t<1",
+    "locality_tradeoff": "t=0 is the affine one-step operator. Nonzero t is a covariant rational function of W (finite pentagon-range after using the minimal polynomial), and its orientation coefficient varies continuously as 6 t^5+O(t^10).",
+    "witnesses": [
+      {
+        "GW_residual": 8.195934420817177e-15,
+        "best_affine_one_step_residual": 7.70725909408146e-15,
+        "definition": "V_t=(W-tI)(I-tW)^(-1), D_t=I-V_t",
+        "degree_five_coefficient_of_Omega5": 0.0,
+        "determinant_formula_residual": 2.6645352591003757e-15,
+        "exact_action_minus_degree_five_term": -1.3322676295501878e-15,
+        "gamma_hermiticity_residual": 9.596206788773835e-15,
+        "half_log_ratio_imaginary_residual": 0.0,
+        "half_log_ratio_phase_action": -1.3322676295501878e-15,
+        "interpretation": "Exact GW, gauge covariance and A5 covariance permit a continuous Mobius parameter once strict one-step history locality is relaxed.",
+        "log_chiral_determinant_ratio": {
+          "imag": -2.6645352591003757e-15,
+          "real": 0.0
+        },
+        "parameter": 0.0,
+        "principal_branch_winding_removed": 1,
+        "unitarity_residual": 2.129855409132948e-15
+      },
+      {
+        "GW_residual": 9.043355776864477e-15,
+        "best_affine_one_step_residual": 4.8459895736438545,
+        "definition": "V_t=(W-tI)(I-tW)^(-1), D_t=I-V_t",
+        "degree_five_coefficient_of_Omega5": 0.1875,
+        "determinant_formula_residual": 6.4047456679787536e-15,
+        "exact_action_minus_degree_five_term": 0.0051989513679773225,
+        "gamma_hermiticity_residual": 1.0525460243142341e-14,
+        "half_log_ratio_imaginary_residual": 1.7763568394002505e-15,
+        "half_log_ratio_phase_action": 0.19269895136797732,
+        "interpretation": "Exact GW, gauge covariance and A5 covariance permit a continuous Mobius parameter once strict one-step history locality is relaxed.",
+        "log_chiral_determinant_ratio": {
+          "imag": 0.38539790273595464,
+          "real": -3.552713678800501e-15
+        },
+        "parameter": 0.5,
+        "principal_branch_winding_removed": -1,
+        "unitarity_residual": 2.939624618471116e-15
+      },
+      {
+        "GW_residual": 8.311589516957044e-15,
+        "best_affine_one_step_residual": 6.127084902433752,
+        "definition": "V_t=(W-tI)(I-tW)^(-1), D_t=I-V_t",
+        "degree_five_coefficient_of_Omega5": 1.060660171779821,
+        "determinant_formula_residual": 5.687116766346677e-15,
+        "exact_action_minus_degree_five_term": 0.18721507261498127,
+        "gamma_hermiticity_residual": 1.0721175762842213e-14,
+        "half_log_ratio_imaginary_residual": 1.7763568394002505e-15,
+        "half_log_ratio_phase_action": 1.2478752443948022,
+        "interpretation": "Exact GW, gauge covariance and A5 covariance permit a continuous Mobius parameter once strict one-step history locality is relaxed.",
+        "log_chiral_determinant_ratio": {
+          "imag": 2.4957504887896045,
+          "real": -3.552713678800501e-15
+        },
+        "parameter": 0.7071067811865475,
+        "principal_branch_winding_removed": -1,
+        "unitarity_residual": 4.052413891451581e-15
+      },
+      {
+        "GW_residual": 7.0769617002365315e-15,
+        "best_affine_one_step_residual": 4.589743230936892,
+        "definition": "V_t=(W-tI)(I-tW)^(-1), D_t=I-V_t",
+        "degree_five_coefficient_of_Omega5": -0.1875,
+        "determinant_formula_residual": 8.045862168512413e-15,
+        "exact_action_minus_degree_five_term": 0.004954739267371,
+        "gamma_hermiticity_residual": 1.0659118359287499e-14,
+        "half_log_ratio_imaginary_residual": 3.552713678800501e-15,
+        "half_log_ratio_phase_action": -0.182545260732629,
+        "interpretation": "Exact GW, gauge covariance and A5 covariance permit a continuous Mobius parameter once strict one-step history locality is relaxed.",
+        "log_chiral_determinant_ratio": {
+          "imag": -0.365090521465258,
+          "real": 7.105427357601002e-15
+        },
+        "parameter": -0.5,
+        "principal_branch_winding_removed": 1,
+        "unitarity_residual": 2.5629339538733478e-15
+      }
+    ]
+  },
+  "branch_doubled_GW_operator": {
+    "D": "I-W",
+    "D_Gamma_hermiticity_residual": 1.5380944280627848e-14,
+    "GW_residual": 8.195934420817177e-15,
+    "Gamma": "[[0,Q],[Q^dagger,0]]",
+    "Gamma_W_Gamma_minus_Wdagger": 9.596206788773835e-15,
+    "Gamma_hat": "Gamma(1-D)=Gamma W",
+    "Gamma_hat_hermitian_residual": 7.897424600402098e-15,
+    "Gamma_hat_square_residual": 9.235609254358503e-15,
+    "Gamma_hermitian_residual": 0.0,
+    "Gamma_square_residual": 1.2020243850724055e-14,
+    "KO6_completion_residuals": {
+      "D_anticommutes_grading": 0.0,
+      "D_self_adjoint": 0.0,
+      "J_anticommutes_grading": 0.0,
+      "J_commutes_D": 0.0,
+      "J_squared_plus_one": 0.0
+    },
+    "W": "diag(L,R)",
+    "index_half_trace_Gamma_plus_Gamma_hat": 0.0,
+    "internal_zero_mode_count": 0,
+    "minimum_singular_value_D": 0.10467191248588736,
+    "minimum_singular_value_exact": 0.10467191248588766,
+    "space": "C^2_branch tensor C^60_directed-edge"
+  },
+  "certificate": "URT chiral Dirac / measure obstruction continuation",
+  "date": "2026-09-03",
+  "fermion_measure_ambiguity": {
+    "basis_change": "U_+ -> U_+ B_+, V_- -> V_- B_-",
+    "conclusion": "The chiral projectors do not specify a fermionic measure. The missing orientation coefficient is exactly a permitted measure/counterterm phase.",
+    "determinant_change": "det M -> det(B_+^dagger) det(B_-) det M",
+    "numeric_phase_ratio": {
+      "imag": 0.6676144758470556,
+      "real": 0.7445071602338394
+    },
+    "phase_witness_residual": 2.687565378447544e-15,
+    "symmetry_allowed_counterterm": "exp(i lambda chi Omega_5), lambda real",
+    "target_phase": {
+      "imag": 0.6676144758470572,
+      "real": 0.7445071602338416
+    },
+    "witness_angle": 0.731
+  },
+  "gauge_covariance": {
+    "Gamma_residual": 9.069800590401081e-16,
+    "Mobius_D_t_residual": 2.745544306008949e-15,
+    "W_residual": 1.7438173463529993e-15
+  },
+  "history_reversal_chirality": {
+    "A5_generator_commutator_residuals": [
+      3.4791755192097186e-15,
+      5.902547983198874e-15
+    ],
+    "entry_modulus_minmax": [
+      0.9999999999999978,
+      1.0000000000000007
+    ],
+    "intertwining_residuals": {
+      "Q_R_Qdagger_minus_Ldagger": 6.857031667587092e-15,
+      "Qdagger_L_Q_minus_Rdagger": 6.7305410932495655e-15
+    },
+    "linear_conditions": "Q R=L^dagger Q and [Q,U_A]=[Q,U_B]=0",
+    "next_combined_singular_value": 0.4749028552800514,
+    "relation_nullity": 12,
+    "relation_plus_A5_nullity": 1,
+    "smallest_combined_singular_value": 4.668830872437885e-16,
+    "support": "Q=diag(d) S, S|a,b>=|b,a>",
+    "uniqueness_statement": "Reversal intertwining alone leaves one phase per pentagon (12 lines); A5 covariance reduces these to one global phase.",
+    "unitarity_residual": 8.503177779169583e-15
+  },
+  "observational_targets_used": false,
+  "one_step_pfaffian_obstruction": {
+    "Abel_resummed_half_log_ratio": "-5 pi, hence exp(log ratio)=exp(-10 pi i)=1",
+    "common_log_absolute_value_exact": -7.901747381548901,
+    "det_I_minus_L_log": {
+      "imag": -3.141592653589791,
+      "real": -7.9017473815488986
+    },
+    "det_I_minus_R_log": {
+      "imag": 3.1415926535897927,
+      "real": -7.9017473815488986
+    },
+    "determinant_ratio": {
+      "imag": -2.9094646189298464e-15,
+      "real": 1.0
+    },
+    "determinant_ratio_minus_one": 2.9094646189298464e-15,
+    "exact_identity": "det(I-L)=(1-e^(-i pi/6))^12 and det(I-R)=(1-e^(+i pi/6))^12; both are the same negative real number, so their ratio is one.",
+    "interpretation": "The leading -6 a^5 Omega_5 term for |a|<1 is canceled at the GW point a=1 by all higher 5n-step closed walks. Strict one-step GW therefore does not induce a physical orientation phase."
+  },
+  "one_step_ratio_theorem": {
+    "ansatz": "D_a=I-aW",
+    "conclusion": "GW fixes the positive relative coefficient only inside the strict affine one-step ansatz.",
+    "identity": "{Gamma,D_a}-D_a Gamma D_a=(1-a^2) Gamma",
+    "positive_solution": "a=1",
+    "real_solutions": [
+      -1,
+      1
+    ],
+    "witnesses": [
+      {
+        "GW_residual": 8.21583836257749,
+        "amplitude": 0.5,
+        "exact_residual_norm": 8.215838362577491
+      },
+      {
+        "GW_residual": 5.477225575051661,
+        "amplitude": 0.7071067811865475,
+        "exact_residual_norm": 5.477225575051662
+      },
+      {
+        "GW_residual": 8.195934420817177e-15,
+        "amplitude": 1.0,
+        "exact_residual_norm": 0.0
+      },
+      {
+        "GW_residual": 8.195934420817177e-15,
+        "amplitude": -1.0,
+        "exact_residual_norm": 0.0
+      }
+    ]
+  },
+  "physical_chiral_half_space": {
+    "Gamma_U_minus_U": 5.941747717054311e-15,
+    "Gamma_hat_V_plus_V": 4.60547525805743e-15,
+    "U_isometry_residual": 4.684037011406951e-15,
+    "U_plus": "2^(-1/2) [Q;I]",
+    "V_isometry_residual": 4.5950385291092404e-15,
+    "V_minus": "2^(-1/2) [-Q R;I]",
+    "dimension": 60,
+    "restricted_operator_identity": "U_plus^dagger D V_minus=I-R",
+    "restricted_operator_residual": 6.078798265270059e-15,
+    "source_projector": "P_hat_-=(I-Gamma_hat)/2",
+    "target_projector": "P_+=(I+Gamma)/2"
+  },
+  "status": {
+    "exact": [
+      "A5-covariant reversal chirality on the 120-state history space",
+      "one-step GW ratio identity and physical chiral projectors",
+      "trivial exact orientation ratio at a=1",
+      "continuous covariant GW Mobius family",
+      "A4-root overlap mass interval and doubler classification",
+      "fermion-measure phase transformation law"
+    ],
+    "no_go": "The five requested operator conditions do not select one microscopic chiral Dirac/measure pair. Strict one-step GW fixes a=1 but cancels the orientation phase; allowing GW-compatible finite-range completion leaves t continuous; the A4 overlap construction independently leaves 0<m<8/5; and the chiral measure permits arbitrary exp(i lambda chi Omega_5).",
+    "phenomenology_gate": "CLOSED: no masses or CKM/PMNS calculation is licensed.",
+    "unresolved": "A new microscopic measure principle or anomaly-inflow datum capable of quantizing lambda, plus a coefficient-free selector for the overlap kernel, would be required before the flavour action can be frozen."
+  }
+}

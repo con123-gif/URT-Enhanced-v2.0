@@ -1,0 +1,75 @@
+{
+  "Pauli_Villars_consequence": {
+    "PV_kernel": "Y^dagger Y",
+    "overlap_fermion_OS_violation_proved": false,
+    "reason": "time/spatial covariant shifts do not commute; the obstruction is nonzero even at arbitrarily weak admissible flux",
+    "reflected_kernel": "Y Y^dagger",
+    "reflection_invariant_on_background": false,
+    "simple_domain_wall_PV_OS_proof_available": false,
+    "status": "F for the PV proof route; U for the overlap measure itself"
+  },
+  "Weyl_background": {
+    "N": 5601,
+    "certified_epsilon_star_exact": "394924599595820227835064176865/351998414917049746226536404412312",
+    "certified_epsilon_star_numeric": 0.0011219499374418669,
+    "exact_margin_below_epsilon_star": "34038512884048038933126239416225/222784372780394706033475835325809624856",
+    "face_audit": {
+      "axis_1_bottom_triangles": "flat because V_plus=S V_minus",
+      "axis_1_top_triangles": "holonomy q or q^-1 because V_minus S and S V_minus differ",
+      "axis_2_and_axis_3_triangles": "flat",
+      "future_average": "A=(V+S V)/2=(1+S)V/2",
+      "maximum_repaired_face_deviation": "|q-1|",
+      "spatial_squares": "flat"
+    },
+    "face_deviation": "|q-1|=2 sin(pi/N)",
+    "finite_matrix_realization": "N-dimensional clock and shift unitaries; V^a S^b are Hilbert-Schmidt orthogonal modulo N",
+    "future_type_assignment": "V_b=V when b_1=-1 and V_b=S V when b_1=0; dependence on b_2,b_3 is trivial",
+    "linear_independence_condition": "N>4",
+    "relations": [
+      "S V=q V S",
+      "q=exp(2 pi i/N)",
+      "S_2=S_3=I"
+    ],
+    "strict_rational_upper_bound": "2*(355/113)/5601",
+    "strict_rational_upper_bound_numeric": 0.0011217971506352375,
+    "strictly_inside_certified_gap_domain": true
+  },
+  "certificate": "URT exact domain-wall Pauli-Villars OS-route obstruction",
+  "date": "2026-09-04",
+  "exact_normality_defect": {
+    "defect_nonzero_for_q_not_equal_1": true,
+    "defect_sha256": "1d06921d66a52cb5381ce52d24665fe29443b8803778df62f2f9e9f76465460f",
+    "definition": "Y^dagger Y-Y Y^dagger",
+    "every_coefficient_vanishes_at_q=1": true,
+    "kernel_term_count": 13,
+    "nonzero_Weyl_Clifford_coefficient_count": 18,
+    "status": "E exact Laurent/Weyl/Clifford calculation",
+    "witness_coefficient": "-(q-1)/4",
+    "witness_independent_of_r_and_M": true,
+    "witness_monomial": "S gamma_0"
+  },
+  "literature_resolution": {
+    "early_proceedings": {
+      "arXiv": "hep-lat/0111035",
+      "authors": "Y. Kikukawa",
+      "claim_boundary": "a domain-wall positivity argument was sketched, with the detailed gauge proof cited only as 'in preparation'",
+      "title": "Analytic progress on exact lattice chiral symmetry"
+    },
+    "later_detailed_analysis": {
+      "arXiv": "1005.3751",
+      "authors": "Y. Kikukawa and K. Usui",
+      "conclusion": "free and nongauge cases are proved; with gauge interaction the PV bosonic positivity condition fails because covariant time/spatial differences do not commute, and the overlap case is left open",
+      "title": "Reflection positivity of free overlap fermions",
+      "url": "https://arxiv.org/abs/1005.3751"
+    }
+  },
+  "observational_targets_used": false,
+  "verdict": {
+    "controlled_alternative": "retain an explicit finite Wilson/domain-wall regulator, at the cost of not having the exact polar-overlap theory",
+    "domain_wall_PV_shortcut_closed": true,
+    "interacting_overlap_reflection_positivity": "U",
+    "next_gate": "directly factor the gauge-covariant polar-overlap cross-boundary kernel or construct a gauge-invariant negative OS observable",
+    "theory_of_nature": false,
+    "volume_uniform_overlap_gap_retained": true
+  }
+}

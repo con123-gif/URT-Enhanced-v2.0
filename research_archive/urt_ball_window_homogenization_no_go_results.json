@@ -1,0 +1,56 @@
+{
+  "certificate": "URT ball-window homogenized-diffusion strict no-go",
+  "date": "2026-09-04",
+  "deterministic_monte_carlo_trial": {
+    "cross_term": -0.004698240192219802,
+    "drift_corrector_Dirichlet_energy": 0.0025849544141493645,
+    "exact_cross_identity_residual": 4.529582779131021e-06,
+    "mean_degree": 7.199595,
+    "mean_squared_local_drift_component": 0.0023513848874994665,
+    "one_step_directional_energy": 0.19998225000000014,
+    "optimal_trial_scale": 1.8175330932347835,
+    "reduction_below_one_step_energy": 0.008539207029325258,
+    "sample_count": 400000,
+    "trial_upper_bound_on_effective_variance": 0.19144304297067488
+  },
+  "nonzero_drift_open_set": {
+    "A5_consequence": "The covariance integral average(b b^T) is A5-invariant and nonzero, hence is a positive scalar multiple of I3. Therefore ||b_e||_2>0 for every nonzero physical direction e.",
+    "deterministic_witness": {
+      "acceptance_dot_threshold": 0.8242202510944332,
+      "degree": 11,
+      "drift_norm": 0.08333333333333336,
+      "drift_norm_minus_one_over_12_residual": 2.7755575615628914e-17,
+      "internal_radial_fraction": 0.5,
+      "one_over_sqrt5": 0.4472135954999579
+    },
+    "exact_geometry": "At y=(R/2)u for an internal shell axis u, the acceptance threshold lies strictly between 1/sqrt(5) and 1. Exactly the outward move is missing, so b=-v/12. Strict inequalities persist on an open set.",
+    "status": "E/N"
+  },
+  "numerical_scope": "The Monte Carlo trial estimates one explicit upper bound only; the exact strict inequality follows from the first-variation argument.",
+  "observational_targets_used": false,
+  "reversible_corrector_principle": {
+    "constant_trial": "E_e(0)=1/5 from the exact averaged shell moment",
+    "environment": "y is uniform in the internal ball W; an accepted signed proposal has internal increment t_a and unit physical increment v_a",
+    "first_variation": "For every test phi, the edge-reversal identity gives d E_e(epsilon phi)/d epsilon at 0=-4 <b_e,phi>.",
+    "homogenized_variance": "If the stationary chain obeys the standard diffusive homogenization/CLT hypotheses, sigma_e^2=inf_phi E_e(phi).",
+    "local_drift": "b_e(y)=(1/12) sum_a I_a(y) (e dot v_a)",
+    "status": "E",
+    "strict_trial": "Taking phi=b_e gives E_e(epsilon b_e)=1/5-4 epsilon ||b_e||_2^2+epsilon^2 B_e, with finite B_e>=0.",
+    "variational_energy": "E_e(phi)=average_y sum_a I_a(y)/12 [(e dot v_a)+phi(y+t_a)-phi(y)]^2"
+  },
+  "scope": "Conditional on the centred-ball window, selected C5 displacement orbit and symmetric proposal/rejection kernel.",
+  "strict_no_go": {
+    "isotropy": "A5 still forces sigma_e^2 to be direction independent; the failure is the scalar normalization, not a rank-two anisotropy.",
+    "possible_rescaling": "A continuous rescaling of microscopic time could rename the smaller coefficient as 1/5, but that reintroduces an unselected clock scale and does not fix the fourth-order corrector.",
+    "status": "E conditional on existence of the homogenized limit",
+    "theorem": "For every unit e, sigma_e^2<1/5 whenever the homogenized variance exists.  Thus the proposal/rejection quasicrystal cannot retain the naive c_s^2=1/5 per microscopic step."
+  },
+  "verdict": {
+    "absolute_diffusion_clock_normalization": "U",
+    "advance": "The ball-window construction is a valid reversible microscopic Markov model, but its graph correlations provably renormalize the continuum coefficient.  It cannot serve as the claimed exact 13-velocity heat symbol without a new time normalization and a solved corrector problem.",
+    "fourth_order_homogenized_coefficient": "U",
+    "isotropic_homogenized_diffusion_form": "C",
+    "naive_homogenized_sound_speed_squared_1_over_5": "F",
+    "phenomenology_gate": "CLOSED"
+  }
+}

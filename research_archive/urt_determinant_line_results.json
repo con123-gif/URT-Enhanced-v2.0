@@ -1,0 +1,198 @@
+{
+  "A4_overlap_index_stability": {
+    "fixed_radius_family": "A_r=iS+rB-1, r>5/8",
+    "gap_boundary": "r=5/8, where the 1+4 derivative zero closes the kernel gap",
+    "statement": "The interval r>5/8 is connected and gapped away from the one physical zero, so its overlap index/anomaly class is constant. Topology cannot select one r inside the interval."
+  },
+  "GW_chiral_determinant": {
+    "consequence": "All covariant GW Mobius members define the same determinant-line zero divisor and local winding, although their Hopf-point phases differ.",
+    "direct_matrix_checks": [
+      {
+        "Mobius_unitarity_residual": 0.0,
+        "determinant_formula_relative_error": 1.823610297592392e-15,
+        "parameter": 0.0,
+        "unitary_fifth_power_residual": 0.0
+      },
+      {
+        "Mobius_unitarity_residual": 2.147689162501948e-15,
+        "determinant_formula_relative_error": 1.1173442141919589e-14,
+        "parameter": 0.5,
+        "unitary_fifth_power_residual": 0.0
+      },
+      {
+        "Mobius_unitarity_residual": 2.3547093267309305e-15,
+        "determinant_formula_relative_error": 1.2168923053740337e-14,
+        "parameter": 0.7071067811865475,
+        "unitary_fifth_power_residual": 0.0
+      },
+      {
+        "Mobius_unitarity_residual": 1.2319991898324651e-15,
+        "determinant_formula_relative_error": 5.473422227937779e-15,
+        "parameter": -0.5,
+        "unitary_fifth_power_residual": 0.0
+      }
+    ],
+    "domain": "-1<t<1",
+    "exact_divisor_statement": "For every -1<t<1, F_t has a zero of order 12 at z=1 and no pole in the closed unit disk. F_t/F_0=(1+t)^60/(1-t^5 z)^12 is holomorphic and nowhere zero there.",
+    "formula": "F_t(z)=(1+t)^60 (1-z)^12/(1-t^5 z)^12",
+    "topology_checks": [
+      {
+        "fitted_zero_order": 11.999999999714863,
+        "only_pole": null,
+        "parameter": 0.0,
+        "pole_outside_closed_unit_disk": true,
+        "relative_factor_minimum_modulus_on_loop": 0.9999999999999999,
+        "relative_factor_winding": 1.3977369943825504e-32,
+        "small_loop_winding": 12.0,
+        "zero_at_z_equals_one_order": 12,
+        "zero_quotient_limit_exact": 1.0,
+        "zero_quotient_probe_relative_error": 7.006406566034684e-09
+      },
+      {
+        "fitted_zero_order": 12.000025290598465,
+        "only_pole": 32.0,
+        "parameter": 0.5,
+        "pole_outside_closed_unit_disk": true,
+        "relative_factor_minimum_modulus_on_loop": 52179890288.44209,
+        "relative_factor_winding": 1.1595772276169072e-17,
+        "small_loop_winding": 12.0,
+        "zero_at_z_equals_one_order": 12,
+        "zero_quotient_limit_exact": 53818917368.826996,
+        "zero_quotient_probe_relative_error": 4.5716085583791255e-08
+      },
+      {
+        "fitted_zero_order": 12.000168368477416,
+        "only_pole": 5.656854249492382,
+        "parameter": 0.7071067811865475,
+        "pole_outside_closed_unit_disk": true,
+        "relative_factor_minimum_modulus_on_loop": 725539158912730.0,
+        "relative_factor_winding": 1.0160105232452901e-16,
+        "small_loop_winding": 12.0,
+        "zero_at_z_equals_one_order": 12,
+        "zero_quotient_limit_exact": 890080678033781.0,
+        "zero_quotient_probe_relative_error": 2.6469112524019067e-07
+      },
+      {
+        "fitted_zero_order": 11.999976242145978,
+        "only_pole": -32.0,
+        "parameter": -0.5,
+        "pole_outside_closed_unit_disk": true,
+        "relative_factor_minimum_modulus_on_loop": 5.823901075113464e-19,
+        "relative_factor_winding": -1.987846675914698e-17,
+        "small_loop_winding": 12.0,
+        "zero_at_z_equals_one_order": 12,
+        "zero_quotient_limit_exact": 5.995600973774262e-19,
+        "zero_quotient_probe_relative_error": 2.935722953623099e-08
+      }
+    ]
+  },
+  "KO6_vectorlike_completion": {
+    "phase_residuals": [
+      {
+        "imaginary_residual": 0.0,
+        "is_positive": true,
+        "parameter": 0.0
+      },
+      {
+        "imaginary_residual": 0.0,
+        "is_positive": true,
+        "parameter": 0.5
+      },
+      {
+        "imaginary_residual": 0.0,
+        "is_positive": true,
+        "parameter": 0.7071067811865475
+      },
+      {
+        "imaginary_residual": 0.0,
+        "is_positive": true,
+        "parameter": -0.5
+      }
+    ],
+    "statement": "On the unitary locus the conjugate KO-6 sectors give |F_t|^2 (and the four-block determinant a further positive power), so the unreduced completion has no orientation phase to quantize."
+  },
+  "anomaly_insufficiency_theorem": {
+    "minimal_new_datum": "A specified microscopic UV regulator/bulk with a fixed boundary phase convention and normalization. Naming anomaly inflow is insufficient: the bulk action and its quantized level must be derived independently.",
+    "phenomenology_gate": "CLOSED: masses and CKM/PMNS remain quarantined.",
+    "status": "F/no-go for coefficient selection from determinant-line topology alone",
+    "theorem": "The integer zero multiplicity/winding is 12 for every admissible GW completion, while both the Mobius deformation and exp(i lambda chi Omega_5) multiply the determinant by nowhere-zero factors. Hence anomaly or index data determine only the determinant-line topology, not its local trivialization or the coefficient lambda."
+  },
+  "certificate": "URT determinant-line topology / anomaly insufficiency",
+  "date": "2026-09-03",
+  "holonomy_family": {
+    "Hopf_point": "z=exp(i pi/6)",
+    "Omega5_on_unitary_locus": "-i(z-z^(-1))=2 sin(theta)",
+    "definition": "U_z^5=z I_60, with twelve five-cycles"
+  },
+  "measure_counterterm": {
+    "definition_on_unitary_flux_locus": "C_lambda=exp(i lambda chi Omega_5), Omega_5=2 sin(theta)",
+    "interpretation": "This nowhere-zero periodic factor changes the local orientation phase but neither the determinant zero divisor nor its winding.",
+    "lambda": 0.731,
+    "large_gauge_periodicity_residual": 3.5808672407068607e-16,
+    "maximum_modulus": 1.0000000000000002,
+    "minimum_modulus": 0.9999999999999998,
+    "winding": 3.533949646070574e-17
+  },
+  "observational_targets_used": false,
+  "orientation_phase_witnesses": [
+    {
+      "degree_five_coefficient_of_Omega5": 0.0,
+      "determinant_ratio": {
+        "imag": -2.9295138687966517e-15,
+        "real": 1.0
+      },
+      "half_phase_action_principal": -1.4647569343983258e-15,
+      "parameter": 0.0
+    },
+    {
+      "degree_five_coefficient_of_Omega5": 0.1875,
+      "determinant_ratio": {
+        "imag": 0.37592788263930366,
+        "real": 0.926648923300691
+      },
+      "half_phase_action_principal": 0.19269895136797316,
+      "parameter": 0.5
+    },
+    {
+      "degree_five_coefficient_of_Omega5": 1.060660171779821,
+      "determinant_ratio": {
+        "imag": 0.6018711989326047,
+        "real": -0.7985931754625938
+      },
+      "half_phase_action_principal": 1.2478752443948027,
+      "parameter": 0.7071067811865475
+    },
+    {
+      "degree_five_coefficient_of_Omega5": -0.1875,
+      "determinant_ratio": {
+        "imag": -0.3570338512659496,
+        "real": 0.9340914457643874
+      },
+      "half_phase_action_principal": -0.18254526073263236,
+      "parameter": -0.5
+    }
+  ],
+  "shifted_regulator_topological_transition": [
+    {
+      "amplitude": 0.5,
+      "location": "outside unit disk",
+      "unit_circle_winding_when_nonsingular": 0,
+      "zero_order": 12,
+      "zero_z": 32.0
+    },
+    {
+      "amplitude": 1.0,
+      "location": "on unit circle",
+      "unit_circle_winding_when_nonsingular": null,
+      "zero_order": 12,
+      "zero_z": 1.0
+    },
+    {
+      "amplitude": 1.4142135623730951,
+      "location": "inside unit disk",
+      "unit_circle_winding_when_nonsingular": 12,
+      "zero_order": 12,
+      "zero_z": 0.1767766952966368
+    }
+  ]
+}

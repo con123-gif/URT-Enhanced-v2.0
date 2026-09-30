@@ -1,0 +1,214 @@
+{
+  "Cathedral_spectra": [
+    {
+      "entropy_values": [
+        2.772588722239781,
+        2.5102911881174097,
+        1.9011463121318357,
+        0.7645995662582201,
+        0.06949487302779525,
+        0.00032198522933252145,
+        3.836542336259627e-09
+      ],
+      "large_scale_limit": 0.0,
+      "maximum_at_zero": 2.772588722239781,
+      "name": "passive |D|=I4",
+      "positive_scale_derivatives": [
+        -3.917355275853324,
+        -5.365332136368968,
+        -3.254347442339913,
+        -0.35616611463111725,
+        -0.0017819463674325574,
+        -2.208238846550256e-08
+      ],
+      "scales": [
+        0.0,
+        0.125,
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "singular_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "strictly_decreasing_sampled": true,
+      "zero_mode_count": 0
+    },
+    {
+      "entropy_values": [
+        2.0794415416798357,
+        1.8615809391528495,
+        1.5774442526844457,
+        1.4036680793768395,
+        1.3863748574272237,
+        1.3862943620790262,
+        1.3862943611198906
+      ],
+      "large_scale_limit": 1.3862943611198906,
+      "maximum_at_zero": 2.0794415416798357,
+      "name": "hidden |D|=diag(0,0,2)",
+      "positive_scale_derivatives": [
+        -2.682666068184484,
+        -1.6271737211699564,
+        -0.17808305731555862,
+        -0.0008909731837162787,
+        -1.104119423275128e-08,
+        -8.477701570636904e-19
+      ],
+      "scales": [
+        0.0,
+        0.125,
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "singular_values": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "strictly_decreasing_sampled": true,
+      "zero_mode_count": 2
+    },
+    {
+      "entropy_values": [
+        3.4657359027997265,
+        2.571374526469684,
+        1.6465441567709656,
+        0.9323592836886458,
+        0.45652082365228236,
+        0.12366374338723894,
+        0.006144932112563776
+      ],
+      "large_scale_limit": 0.0,
+      "maximum_at_zero": 3.4657359027997265,
+      "name": "generic nonzero witness",
+      "positive_scale_derivatives": [
+        -9.638200424626495,
+        -5.119911498519743,
+        -1.6184426497738669,
+        -0.5851015479443318,
+        -0.17106748228314161,
+        -0.009696918872639558
+      ],
+      "scales": [
+        0.0,
+        0.125,
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "singular_values": [
+        0.3,
+        0.8,
+        1.7,
+        2.4,
+        3.1
+      ],
+      "strictly_decreasing_sampled": true,
+      "zero_mode_count": 0
+    }
+  ],
+  "beta_D_identifiability": {
+    "base_value": 1.6750090225874446,
+    "consequence": "The entropy action cannot separately select inverse KMS scale and Dirac normalization.",
+    "identity": "S_{beta/a}(aD)=S_beta(D) for every a>0",
+    "maximum_residual": 2.220446049250313e-16,
+    "rows": [
+      {
+        "S_beta_over_a_aD": 1.6750090225874446,
+        "a": 0.2,
+        "residual_from_S_beta_D": 0.0
+      },
+      {
+        "S_beta_over_a_aD": 1.6750090225874446,
+        "a": 0.5,
+        "residual_from_S_beta_D": 0.0
+      },
+      {
+        "S_beta_over_a_aD": 1.6750090225874446,
+        "a": 2.0,
+        "residual_from_S_beta_D": 0.0
+      },
+      {
+        "S_beta_over_a_aD": 1.6750090225874443,
+        "a": 7.0,
+        "residual_from_S_beta_D": 2.220446049250313e-16
+      }
+    ],
+    "status": "E"
+  },
+  "certificate": "URT entropy spectral-action Dirac-scale no-go",
+  "continuum_coefficient_implication": {
+    "fixed_by_entropy_theorem": "dimensionless moment ratios h0:h2:h4",
+    "four_dimensional_scaling": "Tr h(beta|D|) ~ h4 beta^-4 a0+h2 beta^-2 a2+h0 a4+...",
+    "not_fixed": "beta/length normalization, the choice of D and finite block, an overall boson-to-fermion action weight, and additive vacuum terms",
+    "note": "Fixing a principal symbol, norm, volume, or lattice-to-length map can stop the scale orbit only as an additional premise."
+  },
+  "date": "2026-09-04",
+  "derivative_numerical_audit": {
+    "maximum_residual": 2.639186647002134e-10,
+    "rows": [
+      {
+        "analytic": -9.887207780321058,
+        "finite_difference": -9.887207780057139,
+        "residual": 2.639186647002134e-10,
+        "scale": 0.1
+      },
+      {
+        "analytic": -2.3355644050087765,
+        "finite_difference": -2.335564404987167,
+        "residual": 2.1609380951304047e-11,
+        "scale": 0.4
+      },
+      {
+        "analytic": -0.5851015479443318,
+        "finite_difference": -0.5851015479063637,
+        "residual": 3.796807312994588e-11,
+        "scale": 1.0
+      },
+      {
+        "analytic": -0.08852093139628904,
+        "finite_difference": -0.0885209313974955,
+        "residual": 1.2064654830723498e-12,
+        "scale": 2.5
+      }
+    ]
+  },
+  "observational_targets_used": false,
+  "scale_orbit_theorem": {
+    "action": "S(s)=sum_j h(beta s sigma_j), sigma_j>=0",
+    "consequence": "For beta>0 and at least one nonzero sigma_j, S'(s)<0 for all s>0.  There is no nonzero finite stationary scale.",
+    "derivative": "S'(s)=-beta^2 s sum_j sigma_j^2 exp(beta s sigma_j)/(1+exp(beta s sigma_j))^2",
+    "maximization": "s=0, giving dim(H) log(2)",
+    "minimization": "runaway s->infinity, with limit dim ker(D) log(2); the limit is zero when D is invertible",
+    "status": "E"
+  },
+  "universal_function": {
+    "endpoint_values": {
+      "h(0)": "log(2)",
+      "h(infinity)": 0
+    },
+    "h": "log(1+exp(-x))+x/(1+exp(x)), x>=0",
+    "h_prime": "-x exp(x)/(1+exp(x))^2",
+    "monotonicity": "h'(x)<0 for every x>0",
+    "status": "E"
+  },
+  "verdict": {
+    "advance": "The universal entropy cutoff repairs generic cutoff-shape freedom but supplies no variational mechanism for a finite nonzero Dirac scale.  The exact beta-D orbit is the spectral counterpart of the master affine identifiability quotient.",
+    "entropy_fixes_cutoff_moment_ratios": "E conditional on the KMS premise",
+    "entropy_selects_nonzero_finite_Dirac_scale": "F",
+    "entropy_separately_selects_beta_and_D": "F",
+    "phenomenology_gate": "CLOSED",
+    "unique_Cathedral_action": "U"
+  }
+}

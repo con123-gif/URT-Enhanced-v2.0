@@ -1,0 +1,139 @@
+{
+  "certificate": "URT A4 overlap spectral-locality minimax candidate",
+  "comparison_coefficients": [
+    {
+      "Wilson_coefficient": 1.0,
+      "condition_number": 2.4999999999999996,
+      "maximum_H_squared": 2.25,
+      "minimum_H_squared": 0.3600000000000001
+    },
+    {
+      "Wilson_coefficient": 1.169543397160372,
+      "condition_number": 2.2125731475265575,
+      "maximum_H_squared": 3.7012315007070375,
+      "minimum_H_squared": 0.7560507960904377
+    },
+    {
+      "Wilson_coefficient": 1.5,
+      "condition_number": 3.1754264805429417,
+      "maximum_H_squared": 7.5625,
+      "minimum_H_squared": 0.75
+    },
+    {
+      "Wilson_coefficient": 2.0,
+      "condition_number": 5.0142653642240695,
+      "maximum_H_squared": 16.0,
+      "minimum_H_squared": 0.6363636363636364
+    }
+  ],
+  "conditional_exact_minimax": {
+    "all_polynomial_roots": [
+      {
+        "imag": 0.0,
+        "real": 1.169543397160372
+      },
+      {
+        "imag": 0.0,
+        "real": 1.0762079434759486
+      },
+      {
+        "imag": 0.0,
+        "real": -0.612418007302986
+      }
+    ],
+    "condition_number": 2.2125731475265575,
+    "entry_coefficient": 1.1625919067959654,
+    "maximum_H_squared": 3.7012315007070375,
+    "maximum_in_minimax_domain": "(5r/2-1)^2, attained at Z=0",
+    "minimax_coefficient": 1.169543397160372,
+    "minimizing_B": 1.4388599496965955,
+    "minimum_H_squared": 0.7560507960904377,
+    "piecewise_minimum_for_r_above_5_over_8": "(8r/5-1)^2 until r_entry=(5+sqrt(185))/16; thereafter (2r-9/4)/(r^2-5/4)",
+    "squared_condition_number": 4.8954799331555785,
+    "stationarity_polynomial": "240 r^3-392 r^2-28 r+185=0",
+    "stationarity_polynomial_residual": 0.0,
+    "status": "E exact algebra conditional on adopting the new minimax axiom; N independently corroborated on the full four-torus",
+    "uniqueness_statement": "On r>=r_entry the condition-number derivative has numerator 240r^3-392r^2-28r+185. Exactly one real root lies in that domain; the r<r_entry lower bound is already worse at the endpoint."
+  },
+  "date": "2026-09-03",
+  "deterministic_global_checks": {
+    "Sobol_sample_count": 524288,
+    "differential_evolution_maximum": {
+      "B": 2.4999999999999263,
+      "H_squared": 3.701231500706759,
+      "S_squared": 5.3194367388190577e-14,
+      "absolute_error_from_analytic": 2.7844393457598926e-13,
+      "function_evaluations": 15045,
+      "success": true
+    },
+    "differential_evolution_minimum": {
+      "B": 1.4388590274217277,
+      "H_squared": 0.7560507960910503,
+      "S_squared": 0.28982392885271785,
+      "absolute_error_from_analytic": 6.126210649881614e-13,
+      "function_evaluations": 5845,
+      "success": true
+    },
+    "exact_maximum_minus_sample": 2.9124639500111016e-06,
+    "minimum_Cauchy_upper_envelope_slack": 7.382019707686419e-07,
+    "minimum_lower_envelope_slack_on_B_le_8_over_5": 1.8475767120974818e-06,
+    "sample_maximum_H_squared": 3.7012285882430875,
+    "sample_minimum_H_squared": 0.7560784398422915,
+    "sample_minimum_minus_exact": 2.7643751853823062e-05
+  },
+  "momentum_invariants": {
+    "definitions": "Z=sum_j exp(i p_j), B=(25-|Z|^2)/10, S_j=Im(exp(i p_j) conjugate(Z))/5",
+    "exact_Cauchy_upper_bound": "||S||^2 <= 2B-(4/5)B^2",
+    "exact_sharp_lower_envelope": "For 0<=B<=8/5, ||S||^2 >= 2B-(5/4)B^2, with equality on a 1+4 two-phase cluster; for B>=8/5 the displayed right side is nonpositive and the bound is trivial.",
+    "kernel": "H_r^2=||S||^2+(r B-1)^2 on M=1",
+    "lower_envelope_proof_status": "E: urt_a4_lower_envelope_proof.py proves the global inequality and equality classification by a sharp fourth-moment lemma and an exact Hermite-minorant factorization.",
+    "upper_bound_proof": "Rotate Z=rho real. Then ||S||^2=rho^2 sum(sin^2 p_j)/25 and sum(cos^2 p_j)>=(sum cos p_j)^2/5=rho^2/5."
+  },
+  "observational_targets_used": false,
+  "overlap_operator_at_candidate": {
+    "A5_root_symbol_covariance_residuals": [
+      1.551802021918427e-16,
+      1.7915797092458113e-16
+    ],
+    "GW_residual": 1.7656769741690146e-16,
+    "Wilson_coefficient": 1.169543397160372,
+    "continuum_principal_symbol_residual": 2.4735772704933696e-13,
+    "doubler_margin_at_first_nonphysical_orbit": 0.8712694354565951,
+    "gamma5_Hermiticity_residual": 0.0,
+    "test_momentum_B": 0.19345269197714787
+  },
+  "premise_status": "CANDIDATE ONLY: minimizing the global Wilson-kernel condition number is not an already-declared URT axiom.",
+  "selection_result": {
+    "conditional_selected_Wilson_coefficient": 1.169543397160372,
+    "phenomenology_gate": "CLOSED",
+    "verdict": "The target-blind algebraic minimax theorem is exact, conditional only on adopting its new selection principle. It does not freeze the joint microscopic action or measure and is not licensed for mass or mixing calculations.",
+    "what_it_does_not_fix": [
+      "the history Mobius/locality parameter t",
+      "a domain-wall transfer scale or extent",
+      "the chiral determinant-line trivialization lambda",
+      "a microscopic gauge-link action"
+    ],
+    "what_it_would_fix": "One r on the already normalized M=1 overlap slice, if global condition-number minimization is adopted as a new axiom."
+  },
+  "symmetric_extremum_witnesses": {
+    "maximum_zero_polygon_sum": {
+      "B": 2.5,
+      "H_squared": 3.7012315007070375,
+      "S_squared": 6.162975822039156e-33,
+      "phases": [
+        0.0,
+        1.2566370614359172,
+        2.5132741228718345,
+        3.7699111843077517,
+        5.026548245743669
+      ]
+    },
+    "minimum_one_plus_four": {
+      "B": 1.4388599496965955,
+      "H_squared": 0.7560507960904375,
+      "S_squared": 0.2898224558420792,
+      "one_plus_four_formula_residual": 4.440892098500626e-16,
+      "phase_difference": 2.4957201866664223
+    }
+  }
+}
