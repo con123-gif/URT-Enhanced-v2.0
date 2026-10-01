@@ -1,0 +1,106 @@
+{
+  "frozen": {
+    "phi": 1.618033988749895,
+    "d_star": 0.14751081015957962,
+    "d_cl": 0.15,
+    "Delta": 0.002489189840420375,
+    "eta_Delta": 5.995797986741314
+  },
+  "arithmetic": {
+    "alpha_root_inverse": 137.035999178195,
+    "cabibbo_s12": 0.2243088616368177,
+    "Omega_m": 0.3157894736842105,
+    "Omega_Lambda": 0.6842105263157895
+  },
+  "entropy": {
+    "p5": 6.196027670655245e-06,
+    "a": 0.24999845099308235,
+    "b": 1.5490069176638112e-06,
+    "dS_over_kB_dp5": 11.991595973482628,
+    "chi35": 47.966978303380195,
+    "kappa_generator": 0.749465460810106,
+    "chi_times_kappa": 35.94959349781119,
+    "eta_squared": 35.94959349781119
+  },
+  "A4_frame": {
+    "triangle_count": 10,
+    "rank": 6,
+    "M2_minus_5M_max_abs": 0.0
+  },
+  "A5_characters": {
+    "4x4_multiplicities": {
+      "1": 1.0,
+      "3": 1.0000000000000002,
+      "3p": 1.0,
+      "4": 1.0,
+      "5": 1.0
+    },
+    "Sym2_4_multiplicities": {
+      "1": 1.0,
+      "3": 0.0,
+      "3p": 0.0,
+      "4": 1.0,
+      "5": 1.0
+    },
+    "Wedge2_4_multiplicities": {
+      "1": 0.0,
+      "3": 1.0,
+      "3p": 1.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  "gauge_trace": {
+    "TrY2": 0.8333333333333333,
+    "TrT1_squared": 0.49999999999999994,
+    "TrT3_squared": 0.5,
+    "raw_Y_to_SU2_trace_ratio": 1.6666666666666665,
+    "sin2_thetaW_parent": 0.375
+  },
+  "published_comparisons": {
+    "alpha_inverse": {
+      "candidate": 137.035999178195,
+      "reference": 137.035999177,
+      "sigma": 2.1e-08,
+      "difference": 1.1949907730013365e-09,
+      "z": 0.05690432252387317,
+      "evidentiary_status": "retrospective concordance, not a blind prediction"
+    },
+    "Vus_Cabibbo": {
+      "candidate": 0.2243088616368177,
+      "reference": 0.22431,
+      "sigma": 0.00085,
+      "difference": -1.1383631823014273e-06,
+      "z": -0.0013392508027075616,
+      "evidentiary_status": "retrospective concordance, not a blind prediction"
+    },
+    "Omega_m_base_LCDM": {
+      "candidate": 0.3157894736842105,
+      "reference": 0.315,
+      "sigma": 0.007,
+      "difference": 0.0007894736842105066,
+      "z": 0.11278195488721522,
+      "evidentiary_status": "model-dependent retrospective concordance"
+    }
+  },
+  "checks": {
+    "Delta_from_locked_rails": true,
+    "alpha_arithmetic": true,
+    "cabibbo_arithmetic": true,
+    "cosmology_sum": true,
+    "entropy_slope_equals_2eta": true,
+    "BKM_closed_form": true,
+    "dual_metric_closed_form": true,
+    "dual_metric_product": true,
+    "A4_triangle_frame_rank_6": true,
+    "A4_triangle_frame_M2_eq_5M": true,
+    "A5_4tensor4": true,
+    "A5_sym2_4_eq_1plus4plus5": true,
+    "A5_wedge2_4_eq_3plus3p": true,
+    "parent_trace_TrT1sq_half": true,
+    "parent_trace_ratio_5over3": true,
+    "parent_weak_angle_3over8": true
+  },
+  "all_math_checks_pass": true,
+  "scope_warning": "Passing these checks establishes the displayed arithmetic and finite algebra only. It does not prove that alpha_root is physical alpha, s12 is physical V_us, 6/19 is the physical cosmological matter fraction, or that the entropy carrier has the claimed continuum force interpretation."
+}

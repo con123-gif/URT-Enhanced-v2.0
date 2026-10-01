@@ -1,0 +1,96 @@
+{
+  "inputs": {
+    "Delta": 0.002489189840420375,
+    "eta_Delta": 5.995797986741314,
+    "external_reference_values_used_only_for_comparison": {
+      "NIST_2022_CODATA_alpha_inverse": {
+        "value": 137.035999177,
+        "sigma": 2.1e-08
+      },
+      "PDG_2025_kaon_sector_Vus": {
+        "value": 0.22431,
+        "sigma": 0.00085
+      },
+      "Planck_2018_base_LCDM_Omega_m": {
+        "value": 0.315,
+        "sigma": 0.007
+      }
+    }
+  },
+  "checks": {
+    "fine_structure_scalar_residue": {
+      "cathedral_value": 137.035999178195,
+      "external_value": 137.035999177,
+      "difference": 1.1949907730013365e-09,
+      "difference_in_external_sigma": 0.05690432252387317,
+      "arithmetic_verified": true,
+      "physical_identification_status": "OPEN: archive says common current/action normalization is still required",
+      "blind_prediction_status": "NOT ESTABLISHED as prospective; treat present comparison as retrospective"
+    },
+    "cabibbo_response": {
+      "cathedral_value": 0.2243088616368177,
+      "external_value": 0.22431,
+      "difference": -1.1383631823014273e-06,
+      "difference_in_external_sigma": -0.0013392508027075616,
+      "arithmetic_verified": true,
+      "derivation_status": "INTERNAL-CONDITIONAL: follows exactly from kappa_12=20-1/8 inside the declared response law",
+      "blind_prediction_status": "NOT ESTABLISHED as prospective; treat present comparison as retrospective"
+    },
+    "cosmology_response": {
+      "Omega_m": 0.3157894736842105,
+      "Omega_Lambda": 0.6842105263157895,
+      "Planck_Omega_m_difference_in_sigma": 0.11278195488721522,
+      "flat_Planck_Omega_Lambda_difference_in_sigma": -0.11278195488722315,
+      "arithmetic_verified": true,
+      "physical_derivation_status": "OPEN: no archived Friedmann/perturbation derivation uniquely forces 6/19 and 13/19",
+      "blind_prediction_status": "NOT ESTABLISHED here; comparison is only a compatibility check"
+    },
+    "entropy_BKM": {
+      "p5": 6.196027670655245e-06,
+      "chi35": 47.966978303380195,
+      "kappa_generator": 0.749465460810106,
+      "chi_times_kappa_minus_eta_squared": 0.0,
+      "first_second_identity_residual": 5.551115123125783e-17,
+      "math_status": "VERIFIED to floating precision",
+      "physical_force_identification_status": "CONDITIONAL: curvature-to-generator normalization map remains to be derived"
+    },
+    "A4_root_frame": {
+      "root_count": 20,
+      "rank": 4,
+      "norm_residual_sum_alpha_alphaT_minus_10P": 0.0,
+      "math_status": "VERIFIED"
+    },
+    "A4_triangle_bivector_frame": {
+      "triangle_count": 10,
+      "rank": 6,
+      "norm_residual_M2_minus_5M": 0.0,
+      "eigenvalues": [
+        -1.0917525765675372e-15,
+        -7.785643335597916e-16,
+        5.309869534277047e-18,
+        9.76828620892927e-16,
+        4.9999999999999964,
+        5.0,
+        5.000000000000001,
+        5.000000000000001,
+        5.000000000000004,
+        5.000000000000006
+      ],
+      "math_status": "VERIFIED: six eigenvalues 5 and four null ambient directions"
+    },
+    "gauge_trace_normalization": {
+      "Tr_Y2": 0.8333333333333333,
+      "Tr_T1_squared": 0.5,
+      "Tr_T3_squared": 0.5,
+      "kY_over_k2": 1.6666666666666665,
+      "relative_ratio_kY_k2_k3": [
+        "5/3",
+        "1",
+        "1"
+      ],
+      "parent_sin2_thetaW": 0.375,
+      "math_status": "VERIFIED",
+      "physical_status": "RELATIVE normalization only; common absolute gauge stiffness remains open"
+    }
+  }
+}
