@@ -284,6 +284,15 @@ Delta = d_cl - d_*
 
 is the finite **bandwidth/window between the two rails**. It is not a free coupling or fitted normalization. The same unchanged bandwidth is propagated into the master state, entropy depth and response sectors.
 
+### v36–v38 rail closure
+**Status:** CLOSED / FROZEN
+
+- v36: exact reconstruction of the classical 3/20 rail and the distinct d_* projected rail.
+- v37: exact incidence-action selection of 3/20, with the arbitrary-potential boundary explicit.
+- v38: exact relative-information odds product and convergence to the selected rail.
+
+These later results supersede the early-August wording of the rails as merely postulated.
+
 ### Master state
 **Status:** CLOSED / FROZEN
 
@@ -503,8 +512,8 @@ alpha_root^(-1)
 
 The arithmetic/invariant is retained.
 
-### Positive scale orbit
-**Status:** CLOSED no-go under the retained scale-free axioms
+### Positive scale orbit / v124 reconciliation
+**Status:** CLOSED LOCAL COMMON-RESCALING RESULT; NOT A GLOBAL NO-GO
 
 The v123 audit exhibits a positive normalization orbit schematically
 
@@ -514,7 +523,7 @@ D -> lambda D
 
 (or equivalent generator / inverse-temperature rescaling) preserving the scale-free finite structure.
 
-Therefore the old finite spectral machinery alone does not fix the absolute physical electromagnetic current-current normalization.
+v124 establishes that v123 was only the endpoint of the reduced v117–v123 axiom set. The orbit does not reopen the derived rail bandwidth Delta and is distinct from the Majorana invariant. Treat it as a common finite-Dirac/cutoff/unit rescaling issue unless a dimensionless observable is shown to depend on it.
 
 ### Old four-gate alpha / RG normalization
 **Status:** RETIRED / SUPERSEDED
