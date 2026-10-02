@@ -1,13 +1,15 @@
-# Newton's Cathedral / URT
+# Newton’s Cathedral
 
-**Canonical research workspace for Universal Recursive Tuning and the Newton's Cathedral program**
+**A mathematical oddity — working towards a theory of nature.**
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Workspace](https://img.shields.io/badge/workspace-GitHub%20first-181717)
 ![Status](https://img.shields.io/badge/status-active%20research-orange)
 
-This repository is the **single primary workspace** for the URT / Newton's Cathedral project. It contains the current finite core, the full audit trail, historical code, recovered conversation provenance, vortex/Navier–Stokes work, and engineering experiments.
+This repository is the **single primary workspace for Newton’s Cathedral**. Newton’s Cathedral is an evolving mathematical-physics construction: a mathematical oddity being developed towards a theory of nature. It is not presented here as a completed theory of nature.
+
+**Universal Recursive Tuning (URT)** is the selection/dynamical principle inside Newton’s Cathedral, not the name of the overall project. The repository contains the current finite core, full audit trail, historical code, recovered conversation provenance, vortex/Navier–Stokes work, and engineering experiments.
 
 > **Canonical rule:** current claims are governed by the canonical state and closure ledgers, not by older filenames, historical scripts, or attractive numerical matches.
 
@@ -23,6 +25,12 @@ This repository is the **single primary workspace** for the URT / Newton's Cathe
 | Recovered chat chronology | [conversation_archive/README.md](conversation_archive/README.md) |
 | Research archive | [research_archive/](research_archive/) |
 | Engineering work | [engineering/](engineering/) |
+
+## The Newton’s Cathedral programme
+
+The working goal is to determine whether one parameter-free mathematical structure can connect history selection, information geometry, matter, gauge interactions, gravity and cosmology strongly enough to constitute a genuine theory of nature.
+
+The current causal spine is:
 
 ## Canonical spine
 
