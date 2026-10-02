@@ -1,4 +1,4 @@
-# Newton's Cathedral / URT Closure Ledger
+# Newton’s Cathedral — Closure Ledger
 
 Recovered Aug–Sep closures that were missing from the first reconstruction are recorded in `docs/CLOSURE_LEDGER_SUPPLEMENT_2026-10-02.md`; read it as part of this ledger.
 
