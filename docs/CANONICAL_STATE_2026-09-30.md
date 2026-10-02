@@ -1,4 +1,4 @@
-# Canonical State — 2026-09-30
+# Newton’s Cathedral — Canonical State — 2026-09-30
 
 ## 1. Ontology and causal order
 
