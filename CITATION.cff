@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use material from this research repository, cite the repository and the specific commit or archived artifact used."
-title: "Newton's Cathedral / URT"
+message: "Newton’s Cathedral is a mathematical oddity being developed towards a theory of nature. If you use material from this repository, cite the specific commit or archived artifact used."
+title: "Newton’s Cathedral"
 type: software
 version: "0.3.1"
 date-released: "2026-10-02"
