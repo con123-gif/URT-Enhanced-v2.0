@@ -18,9 +18,9 @@
 | Finite algebra C + H + M3(C) with KO-6 seed | EXACT FOR DEFINED FINITE DATA | Continuum identification separate |
 | SM-form hypercharge assignment is anomaly-consistent | EXACT ALGEBRAIC SOLUTION | Does not by itself prove physical uniqueness |
 | Gravity comes from same entropy state as gauge response | ACTIVE PROGRAM | Finite thermodynamic structure closed; continuum normalization open |
-| Scalar alpha residue polynomial | EXACT INTERNAL INVARIANT | Physical electromagnetic normalization still open |
+| Scalar alpha residue polynomial | EXACT INTERNAL INVARIANT | Dimensionless normalization is fixed by Delta=d_cl-d_*; physical electromagnetic identification/continuum mapping remains to be proved |
 | Old four-gate alpha/RG route | FALSIFIED / SUPERSEDED | Circular normalization |
-| v123 positive scale orbit | EXACT NO-GO FOR RETAINED SCALE-FREE AXIOMS | Does not rule out normalization from added physical principle |
+| v123 positive scale orbit | EXACT COMMON-RESCALING RESULT | Does not reopen the derived Delta normalization; interpret as continuum unit/clock scale unless a dimensionless observable is shown to depend on it |
 | H64 history carrier | ACTIVE CANONICAL | Avoids generation double counting |
 | v59/v61 terminal-wall mass closure | SUPERSEDED | Circular embedding of target data |
 | Unforced Navier-Stokes branch is solved | NOT CLAIMED | Research/proof program only |
