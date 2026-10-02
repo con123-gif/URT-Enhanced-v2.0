@@ -3,7 +3,10 @@
 ## Canonical layer
 - `README.md`
 - `docs/CANONICAL_STATE_2026-09-30.md`
+- `docs/CANONICAL_STATE_PLAIN_2026-09-30.md`
 - `docs/CLAIM_LEDGER.md`
+- `docs/CLOSURE_LEDGER.md`
+- `docs/CONTINUITY_PROTOCOL.md`
 - `cathedral_core/`
 
 ## Historical public package
