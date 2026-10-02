@@ -1,5 +1,7 @@
 # Newton's Cathedral / URT Closure Ledger
 
+Recovered Aug–Sep closures that were missing from the first reconstruction are recorded in `docs/CLOSURE_LEDGER_SUPPLEMENT_2026-10-02.md`; read it as part of this ledger.
+
 Last reconstructed: 2026-10-02
 
 This ledger is the durable cross-conversation project memory. It supplements the Sept. 30 canonical state and claim ledger.
