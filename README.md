@@ -17,7 +17,8 @@ This repository is the **single primary workspace for Newton’s Cathedral**. Ne
 
 | Purpose | File |
 |---|---|
-| Current project state | [docs/CANONICAL_STATE_PLAIN_2026-09-30.md](docs/CANONICAL_STATE_PLAIN_2026-09-30.md) |
+| **Current live state** | [docs/LIVE_STATE_2026-10-02.md](docs/LIVE_STATE_2026-10-02.md) |
+| Canonical Sept. 30 reference | [docs/CANONICAL_STATE_PLAIN_2026-09-30.md](docs/CANONICAL_STATE_PLAIN_2026-09-30.md) |
 | Closure status | [docs/CLOSURE_LEDGER.md](docs/CLOSURE_LEDGER.md) |
 | Claim status | [docs/CLAIM_LEDGER.md](docs/CLAIM_LEDGER.md) |
 | Continuity / workflow | [docs/CONTINUITY_PROTOCOL.md](docs/CONTINUITY_PROTOCOL.md) |
