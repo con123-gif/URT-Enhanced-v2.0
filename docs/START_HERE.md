@@ -4,12 +4,13 @@ GitHub is the primary workspace. Newton’s Cathedral is a mathematical oddity b
 
 ## Read in this order
 
-1. **Canonical state** — `CANONICAL_STATE_PLAIN_2026-09-30.md`
-2. **Closure ledger** — `CLOSURE_LEDGER.md`
-3. **Claim ledger** — `CLAIM_LEDGER.md`
-4. **Continuity protocol** — `CONTINUITY_PROTOCOL.md`
-5. **Project map** — `PROJECT_MAP.md`
-6. **Recovered chronology** — `../conversation_archive/README.md`
+1. **Current live state** — `LIVE_STATE_2026-10-02.md`
+2. **Canonical state** — `CANONICAL_STATE_PLAIN_2026-09-30.md`
+3. **Closure ledger** — `CLOSURE_LEDGER.md`
+4. **Claim ledger** — `CLAIM_LEDGER.md`
+5. **Continuity protocol** — `CONTINUITY_PROTOCOL.md`
+6. **Project map** — `PROJECT_MAP.md`
+7. **Recovered chronology** — `../conversation_archive/README.md`
 
 For a sector-specific continuation, then inspect the relevant files in `../research_archive/`.
 
