@@ -2,37 +2,73 @@
 
 Date: 2026-10-02
 
-## Core correction
+## Derived gap
 
-A correct parameter-free theory of nature should not require an arbitrary fitted overall normalisation.
+Newton’s Cathedral does not contain an arbitrary dimensionless normalization constant.
 
-The v123 positive scale orbit must therefore be interpreted by testing physical observables, not by choosing a preferred lambda by hand.
+The two rails are fixed independently:
 
-Schematically:
+```
+d_*  = 80 pi / (1053 phi)
+d_cl = 3/20
+```
+
+and therefore
+
+```
+Delta = d_cl - d_*
+      = 0.002489189840420375
+```
+
+with
+
+```
+eta_Delta = -ln Delta
+          = 5.995797986741314.
+```
+
+Delta is the derived rail gap. It is not selected by fitting an observed coupling.
+
+The master state, hidden occupation and entropy response are all built from this same fixed gap:
+
+```
+rho_* = (I4 + Delta^2 I4) / [4(1+Delta^2)]
+
+p5 = Delta^2/(1+Delta^2)
+
+delta S = 2 k_B eta_Delta delta p5.
+```
+
+The archived minimal exponential lift also gives the dimensionless gauge/gravity relation
+
+```
+G Lambda^2 / g_U^2
+=
+eta_Delta/(16 pi)
+=
+0.119282610921289.
+```
+
+## Correct interpretation of v123
+
+The v123 orbit
 
 ```
 D -> lambda D
 ```
 
-There are only two acceptable outcomes.
+does not make Delta arbitrary and does not reopen the rail/entropy normalization.
 
-### Case A — the orbit is physically redundant
+It exposes a common positive rescaling of the finite Dirac generator. The surviving question is whether lambda is:
 
-If every dimensionless observable is invariant under the positive scale orbit, then lambda is a representation / field-coordinate / unit redundancy.
+1. purely a unit/clock/field-coordinate redundancy in the continuum realization; or
+2. an absolute dimensional conversion fixed by the continuum construction.
 
-In that case there is **no physical normalisation problem**. One may choose a convenient representative exactly as one normalises an eigenvector or sets Tr(rho)=1.
+It is **not** permission to fit a new dimensionless number.
 
-### Case B — the orbit changes a dimensionless observable
+## Alpha
 
-If a dimensionless physical quantity changes with lambda, then the retained finite axioms are not yet physically complete.
-
-Newton’s Cathedral must then derive the orbit-breaking condition from its own state, entropy geometry, topology, history, or continuum construction.
-
-The value must not be fitted from measurement.
-
-## Consequence for alpha
-
-The internal scalar
+The Cathedral electromagnetic invariant is
 
 ```
 alpha_root^(-1)
@@ -41,39 +77,26 @@ alpha_root^(-1)
 +
 (17572/1215) Delta
 -
-(9/65) Delta^2
+(9/65) Delta^2.
 ```
 
-should not be rejected merely because a finite Dirac operator admits a positive rescaling.
+All ingredients are functions of the already-derived finite geometry and rail gap.
 
-The decisive question is whether the correctly defined electromagnetic observable is invariant under that rescaling.
-
-Therefore the live audit is:
-
-```
-lambda orbit
--> construct physical current/current coefficient
--> quotient all field/basis redundancies
--> test d(alpha_physical)/d(lambda)
-```
-
-If
-
-```
-d(alpha_physical)/d(lambda) = 0,
-```
-
-the v123 “normalisation gap” disappears as gauge/representation redundancy.
-
-If not, an internal orbit-breaking principle is required.
+The remaining scientific task is therefore not to choose a normalization constant, but to prove that the correctly identified electromagnetic observable is the invariant above and that no hidden continuum convention changes the dimensionless result.
 
 ## Rule
 
-Do not introduce or fit an external normalisation constant merely to match experiment.
+No external dimensionless normalization is permitted.
 
-The acceptable Cathedral alternatives are:
+The Cathedral normalization chain is
 
-1. prove the apparent scale is unphysical; or
-2. derive its physical fixing internally.
+```
+finite geometry
+-> d_* and d_cl
+-> Delta
+-> eta_Delta
+-> rho_*
+-> entropy / response coefficients.
+```
 
-This is the parameter-free normalisation standard for Newton’s Cathedral.
+Any remaining common rescaling must be shown to be either unphysical units or internally fixed by the continuum realization.
