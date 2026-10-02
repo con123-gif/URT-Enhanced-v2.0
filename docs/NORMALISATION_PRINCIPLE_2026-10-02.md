@@ -2,9 +2,11 @@
 
 Date: 2026-10-02
 
-## Derived gap
+## Derived bandwidth
 
 Newton’s Cathedral does not contain an arbitrary dimensionless normalization constant.
+
+The physical interpretation of Delta is the **bandwidth/window between the two rails**: the finite interval separating the geometric/quantum response rail from the classical rail.
 
 The two rails are fixed independently:
 
@@ -27,7 +29,13 @@ eta_Delta = -ln Delta
           = 5.995797986741314.
 ```
 
-Delta is the derived rail gap. It is not selected by fitting an observed coupling.
+Delta is therefore the derived **rail bandwidth**:
+
+```
+Delta = d_cl - d_*
+```
+
+It is the width of the admissible window between the two independently fixed rails, not a number selected by fitting an observed coupling.
 
 The master state, hidden occupation and entropy response are all built from this same fixed gap:
 
@@ -83,6 +91,23 @@ alpha_root^(-1)
 All ingredients are functions of the already-derived finite geometry and rail gap.
 
 The remaining scientific task is therefore not to choose a normalization constant, but to prove that the correctly identified electromagnetic observable is the invariant above and that no hidden continuum convention changes the dimensionless result.
+
+## Cross-sector provenance
+
+The evidential value of Delta is cumulative only when the same fixed bandwidth is carried downstream **without retuning**.
+
+The relevant pattern is:
+
+```
+same derived Delta
+-> hidden occupation
+-> entropy depth
+-> response stiffness
+-> coupling / hierarchy candidates
+-> cosmological / gravitational channels
+```
+
+When an independently constructed downstream sector works with the unchanged Delta, that strengthens the provenance/coherence of the bandwidth interpretation. Reusing Delta algebraically in a formula that was designed around a target does not count as independent evidence.
 
 ## Rule
 
