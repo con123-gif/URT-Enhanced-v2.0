@@ -5,11 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "newtons-cathedral"
 version = "0.3.1"
-description = "Canonical URT / Newton's Cathedral research code, audits, and finite-geometry experiments."
+description = "Newton’s Cathedral: a mathematical oddity being developed towards a theory of nature."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Cathedral / URT research project" }]
+authors = [{ name = "Newton’s Cathedral research project" }]
 keywords = [
     "physics",
     "complex-systems",
