@@ -267,7 +267,7 @@ alpha_{m root}^{-1}
 137.035999178195ldots
 ]
 
-but the v123 positive scale orbit shows that the retained scale-free axioms do not by themselves fix the absolute finite-Dirac/gauge normalization. Therefore the residue is an internal exact/candidate invariant, not yet a completed first-principles derivation of the physical electromagnetic current-current coefficient.
+The dimensionless rail bandwidth Delta=d_cl-d_* is already fixed upstream. v123 exposes a common positive rescaling of the four-sheet Dirac generator, but v124 establishes that this is not the global endpoint and is distinct from the Majorana invariant. The remaining task is the physical-current/continuum identification; no external dimensionless normalization is to be fitted.
 
 ## 11. Vortex / Navier–Stokes
 
