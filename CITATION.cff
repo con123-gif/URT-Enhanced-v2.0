@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use material from this research repository, cite the repository and the specific commit or archived artifact used."
+title: "Newton's Cathedral / URT"
+type: software
+version: "0.3.1"
+date-released: "2026-10-02"
+repository-code: "https://github.com/con123-gif/URT-Enhanced-v2.0"
+license: MIT
+keywords:
+  - URT
+  - complex systems
+  - bounded chaos
+  - icosahedral geometry
+  - information geometry
+  - mathematical physics
