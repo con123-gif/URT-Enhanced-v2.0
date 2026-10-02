@@ -1,6 +1,6 @@
-# Start Here — Newton's Cathedral / URT
+# Start Here — Newton’s Cathedral
 
-GitHub is the primary workspace. This page is the shortest safe route into the project.
+GitHub is the primary workspace. Newton’s Cathedral is a mathematical oddity being developed towards a theory of nature. This page is the shortest safe route into the project.
 
 ## Read in this order
 
