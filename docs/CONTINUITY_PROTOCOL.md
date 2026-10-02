@@ -1,4 +1,4 @@
-# Cathedral / URT Continuity Protocol
+# Newton’s Cathedral — Continuity Protocol
 
 Date: 2026-10-02
 
