@@ -1,0 +1,105 @@
+# Cathedral / URT Continuity Protocol
+
+Date: 2026-10-02
+
+## Source-of-truth rule
+
+GitHub is the durable project memory for Newton's Cathedral / URT.
+
+Conversation state is transient working context. Any substantive result reached in chat must be persisted to this repository before it is treated as durable project state.
+
+## Required workflow
+
+For every substantive Cathedral / URT session:
+
+1. Read the latest repository state before declaring a result new, missing, closed, reopened, or superseded.
+2. Treat later explicit corrections as higher precedence than earlier claims.
+3. Persist every substantive closure, correction, no-go, reopen, equation, operator, numerical certificate, and status change to GitHub.
+4. Never rely on chat memory alone for canonical project continuity.
+5. Never silently downgrade a prior closure merely because a downstream physical identification or continuum step remains unfinished.
+6. Never delete failed or superseded routes. Preserve them with their status and reason.
+7. When a result is reopened, record the exact contradiction, failed audit, or new premise that reopened it.
+
+## Canonical status classes
+
+Every important result should have exactly one of these statuses:
+
+- CLOSED / FROZEN
+  The mathematical or internal construction is closed and should not be reopened without an explicit contradiction.
+
+- CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING
+  The finite/internal mathematics is closed, while its physical normalization, continuum interpretation, or empirical identification remains open.
+
+- REOPENED
+  A previously closed result was explicitly reopened by a later contradiction, failed audit, no-go, or new premise.
+
+- RETIRED / SUPERSEDED
+  The route is preserved for provenance but must not be used as live evidence.
+
+Use OPEN only for genuinely unfinished constructions that were never previously closed.
+
+## Provenance requirement
+
+Each ledger entry should include where possible:
+
+- date;
+- version / artifact label;
+- exact equation or operator;
+- status;
+- superseding or reopening result;
+- repository file or commit;
+- whether the result is internal mathematics, physical identification, or empirical validation.
+
+## Mandatory read set before continuing the project
+
+At minimum, inspect:
+
+- `docs/CANONICAL_STATE_PLAIN_2026-09-30.md`
+- `docs/CLAIM_LEDGER.md`
+- `docs/CLOSURE_LEDGER.md`
+- `docs/PROJECT_MAP.md`
+- recent commits on `newtons-cathedral`
+- relevant `research_archive/` reports for the sector being changed
+
+## Separation of layers
+
+Do not conflate:
+
+1. exact finite/internal mathematics;
+2. candidate physical identification;
+3. absolute dimensional normalization;
+4. continuum completion;
+5. external empirical validation.
+
+A downstream open item does not erase an upstream closed result.
+
+## URT continuity rule
+
+The primitive URT object remains the original O(N) recursive selection principle together with the exact logarithmic scale-phase law
+
+```
+r_(k+1) = (pi/e) r_k
+theta_(k+1) = theta_k + 2 pi / phi^2
+```
+
+or
+
+```
+w_(k+1) = w_k + Omega
+Omega = ln(pi/e) + i 2 pi / phi^2
+```
+
+Later bounded-response maps are derived selector / relaxation realizations and must not silently replace the primitive URT definition.
+
+## Archive rule
+
+Historical branches may contain:
+
+- valid exact mathematics;
+- target-conditioned numerics;
+- fitted formulas;
+- superseded constructions;
+- explicit no-go results;
+- later-reopened no-go results.
+
+Therefore a file name containing "closure", "proof", or "no-go" is not enough to set status. The latest precedence-ordered audit decides the live state.
