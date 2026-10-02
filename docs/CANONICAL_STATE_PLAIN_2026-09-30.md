@@ -73,9 +73,23 @@ nu=(-3,3,0)
 
 ## Normalization boundary
 
+The dimensionless Cathedral normalization is fixed by the two derived rails:
+
+d_* = 80 pi / (1053 phi)
+
+d_cl = 3/20
+
+Delta = d_cl - d_*
+
+eta_Delta = -ln(Delta)
+
+Hence Delta is not a fitted or arbitrary normalization parameter. It is the derived gap between the quantum/geometric rail and the classical rail.
+
+The internal electromagnetic residue is
+
 alpha_root^(-1) = 137 + (17572/1215) Delta - (9/65) Delta^2
 
-The internal residue is retained. The absolute physical current normalization remains a separate closure problem because the v123 scale orbit leaves a positive normalization freedom under the retained scale-free axioms.
+The v123 positive scale orbit applies only to a common rescaling of the finite Dirac generator. It does not reopen Delta or the dimensionless rail/entropy normalization. The remaining question is whether that common rescaling is purely a choice of dimensional units/clock scale in the continuum realization; no external dimensionless normalization constant is to be fitted.
 
 ## Audit discipline
 
