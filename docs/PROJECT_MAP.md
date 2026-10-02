@@ -9,6 +9,14 @@
 - `docs/CONTINUITY_PROTOCOL.md`
 - `cathedral_core/`
 
+## Conversation archive
+- `conversation_archive/README.md`
+- `conversation_archive/RECOVERABLE_CHAT_INDEX_2026-08-19_to_2026-09-30.md`
+- dated reconstructed technical records for Aug–Sep 2026
+- `conversation_archive/2026-10-02_continuity_correction.md`
+
+This archive is the durable migration of substantive chat-derived project state. It preserves technical content and precedence so future work does not depend on conversation memory.
+
 ## Historical public package
 - `newtons_cathedral/`
 - root-level May/June scripts
