@@ -1,4 +1,4 @@
-# Canonical State — Plain Reference
+# Newton’s Cathedral — Canonical State (Plain Reference)
 
 This file is the formatting-safe companion to CANONICAL_STATE_2026-09-30.md.
 
