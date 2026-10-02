@@ -94,3 +94,87 @@ finite geometry + URT
 with no target-dependent branch choices or additional continuous constants.
 
 That is the parameter-free theory-of-nature target.
+
+
+## Why the bandwidth propagates
+
+The hidden generator is
+
+```
+L_hid = 3 P3 + 5 P5.
+```
+
+The selected state is
+
+```
+rho_* = exp(-eta_Delta L_hid)/Z
+```
+
+with
+
+```
+eta_Delta = -ln Delta.
+```
+
+Therefore the relative Boltzmann weight of the two hidden quartets is
+
+```
+w5/w3
+=
+exp[-eta_Delta(5-3)]
+=
+exp(-2 eta_Delta)
+=
+Delta^2.
+```
+
+This is the central transmission mechanism.
+
+The rail bandwidth is not merely inserted into later formulas. It becomes the exact relative occupation of the two hidden irreducible sectors:
+
+```
+p3 = 1/(1+Delta^2)
+p5 = Delta^2/(1+Delta^2).
+```
+
+Hence
+
+```
+rho_* = (I4 + Delta^2 I4)/[4(1+Delta^2)].
+```
+
+All linear-response geometry built from this state inherits the same eigenvalue ratio.
+
+In particular,
+
+```
+Hom(4_3,4_5)
+~= 4 tensor 4
+= 1 + 3 + 3' + 4 + 5
+```
+
+is the common response carrier later regrouped into geometry/gravity, U(1), SU(2), and the eight-dimensional colour carrier.
+
+The BKM/Kubo-Mori stiffness on off-diagonal 4_3 <-> 4_5 perturbations is therefore a function only of the two state eigenvalues, and thus only of Delta:
+
+```
+chi_35/k_B
+=
+8 eta_Delta (1+Delta^2)/(1-Delta^2).
+```
+
+This explains why the same bandwidth appears across several response sectors: those sectors are not independent systems being fitted to the same number. They are different irreducible directions of one response space built from the same rho_*.
+
+The scientific question is therefore shifted from
+
+```
+why does one number fit many things?
+```
+
+to
+
+```
+does the physical identification of each irreducible response direction follow uniquely from this one state?
+```
+
+That is the sharper theory-of-nature test.
