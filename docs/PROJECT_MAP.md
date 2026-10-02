@@ -1,4 +1,4 @@
-# Full Project Map
+# Newton’s Cathedral — Full Project Map
 
 ## Start here
 - `README.md`
