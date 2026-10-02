@@ -103,3 +103,17 @@ Historical branches may contain:
 - later-reopened no-go results.
 
 Therefore a file name containing "closure", "proof", or "no-go" is not enough to set status. The latest precedence-ordered audit decides the live state.
+
+
+## Primary workspace policy
+
+Effective 2026-10-02, GitHub is the primary working environment for Newton's Cathedral / URT.
+
+- Repository: `con123-gif/URT-Enhanced-v2.0`
+- Primary branch: `newtons-cathedral`
+- Chat is an interactive working surface, not the canonical store.
+- Before substantive Cathedral work, read the current repository state first.
+- During substantive work, create or update repository artifacts as the derivation progresses.
+- At the end of any substantive session, persist new equations, proofs, audits, closures, corrections, no-go results, reopenings, code and status changes to GitHub.
+- Do not leave important project state only in chat.
+- When repository and chat recollection conflict, the precedence-ordered repository record governs unless a new explicit correction is being committed.
