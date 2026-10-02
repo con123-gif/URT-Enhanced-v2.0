@@ -62,10 +62,14 @@ It is not yet sufficient to call it a completed theory of nature.
 
 ## Decisive remaining joins
 
-### 1. Absolute physical normalization
-The v123 scale orbit proves that the retained scale-free finite axioms do not yet fix the absolute electromagnetic/current normalization.
+### 1. Absolute dimensional scale / continuum unit map
+The dimensionless response normalization is already fixed by the derived rail gap
 
-A successful theory-of-nature closure needs a derived physical principle that removes this scale freedom without inserting a measured constant.
+Delta = d_cl - d_*
+
+and eta_Delta = -ln Delta.
+
+The v123 scale orbit therefore does not represent an arbitrary dimensionless coupling. It is a common positive rescaling of the finite Dirac generator. The remaining issue is narrower: determine whether this is entirely a choice of continuum units/clock scale or whether the continuum construction fixes an absolute dimensional conversion internally. No external dimensionless normalization is allowed.
 
 ### 2. Continuum gravity
 The finite entropy-gravity sector is internally structured, but the unique map
@@ -78,7 +82,7 @@ still needs to be derived with the correct dimensional normalization.
 The correct typed H64/Feshbach machinery exists, but physical fermion masses, CKM and PMNS must emerge from the frozen operator without feeding observed masses or mixings back into the construction.
 
 ### 4. Continuum gauge dynamics
-The finite representation/algebra structure is strong. A complete derivation still needs the continuum gauge action and running physical couplings from the same information geometry, including absolute normalization.
+The finite representation/algebra structure and the Delta/eta_Delta dimensionless normalization are already fixed. A complete derivation still needs the continuum gauge action and running couplings from the same information geometry, together with the dimensional scale map if one is physically meaningful.
 
 ### 5. Cosmological dynamics
 Finite ratios such as Omega_m=6/19 and Omega_Lambda=13/19 are internal structural candidates. They must arise from the derived continuum dynamics rather than sector counting alone.
@@ -94,7 +98,7 @@ Two distinct notions of “close” must be separated.
 Newton’s Cathedral is advanced. Most of the finite carrier, state, symmetry, history and response machinery is already present.
 
 ### Completed physical theory
-The project is not yet at closure because the remaining interfaces are foundational. Absolute normalization, continuum dynamics and blind prediction are not polishing steps; they determine whether the finite mathematics is actually the mathematics of nature.
+The project is not yet at closure because the remaining interfaces are foundational. The derived rail gap already fixes the dimensionless normalization; what remains is continuum realization, any genuinely dimensional unit map, target-free flavour completion, cosmological dynamics and blind prediction.
 
 Therefore the correct description is:
 
