@@ -4,13 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "newtons-cathedral"
-version = "0.2.0"
-description = "Physics from D = 3 alone — zero free parameters."
+version = "0.3.1"
+description = "Canonical URT / Newton's Cathedral research code, audits, and finite-geometry experiments."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Cathedral collaborators" }]
-keywords = ["physics", "icosahedral", "standard-model", "cosmology"]
+authors = [{ name = "Cathedral / URT research project" }]
+keywords = [
+    "physics",
+    "complex-systems",
+    "bounded-chaos",
+    "icosahedral",
+    "information-geometry",
+    "kubo-mori",
+    "gauge-theory",
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -24,7 +32,7 @@ dependencies = [
 dev = ["pytest>=7"]
 
 [tool.setuptools.packages.find]
-include = ["newtons_cathedral*"]
+include = ["newtons_cathedral*", "cathedral_core*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
