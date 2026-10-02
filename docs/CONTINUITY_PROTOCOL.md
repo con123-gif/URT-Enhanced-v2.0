@@ -54,6 +54,7 @@ Each ledger entry should include where possible:
 
 At minimum, inspect:
 
+- `docs/LIVE_STATE_2026-10-02.md`
 - `docs/CANONICAL_STATE_PLAIN_2026-09-30.md`
 - `docs/CLAIM_LEDGER.md`
 - `docs/CLOSURE_LEDGER.md`
