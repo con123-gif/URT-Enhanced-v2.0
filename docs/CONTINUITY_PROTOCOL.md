@@ -4,9 +4,9 @@ Date: 2026-10-02
 
 ## Source-of-truth rule
 
-GitHub is the durable project memory for Newton's Cathedral / URT.
+GitHub is the durable checkpoint and persistent memory anchor for Newton’s Cathedral.
 
-Conversation state is transient working context. Any substantive result reached in chat must be persisted to this repository before it is treated as durable project state.
+The active reasoning context is broader than GitHub: use the current conversation, recoverable prior conversation context, project memory, and the repository together. GitHub exists so important state survives crashes, truncation, and conversation changes without forcing the user to remember and restate the project.
 
 ## Required workflow
 
@@ -117,3 +117,18 @@ Effective 2026-10-02, GitHub is the primary working environment for Newton's Cat
 - At the end of any substantive session, persist new equations, proofs, audits, closures, corrections, no-go results, reopenings, code and status changes to GitHub.
 - Do not leave important project state only in chat.
 - When repository and chat recollection conflict, the precedence-ordered repository record governs unless a new explicit correction is being committed.
+
+
+## Continuity burden
+
+The user should not have to act as the project's memory.
+
+Before asking the user to restate something, first use all recoverable context already available:
+- current conversation;
+- prior recoverable Cathedral context;
+- canonical project memory;
+- GitHub ledgers, archives and code.
+
+GitHub is the persistent save point, not the only reasoning source.
+
+The assistant is responsible for reconciling these sources and carrying forward prior closures correctly.
