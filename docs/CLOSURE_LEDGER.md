@@ -260,7 +260,7 @@ Do not introduce a second gravity normalization by conflating the two.
 
 ## 7. Rails / master state / entropy
 
-### Rails
+### Rails / bandwidth
 **Status:** CLOSED / FROZEN
 
 ```
@@ -275,6 +275,14 @@ Delta = d_cl - d_*
 eta_Delta = -ln Delta
           = 5.995797986741314
 ```
+
+Canonical interpretation:
+
+```
+Delta = d_cl - d_*
+```
+
+is the finite **bandwidth/window between the two rails**. It is not a free coupling or fitted normalization. The same unchanged bandwidth is propagated into the master state, entropy depth and response sectors.
 
 ### Master state
 **Status:** CLOSED / FROZEN
