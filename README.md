@@ -1,133 +1,157 @@
 # Newton's Cathedral / URT
 
-**Canonical research repository — reconstructed 30 September 2026**
+**Canonical research workspace for Universal Recursive Tuning and the Newton's Cathedral program**
 
-This branch contains the complete textual/code/data working record of the URT / Newton's Cathedral program: canonical mathematics, active physics construction, audit trail, verification code, failed and superseded branches, the Navier–Stokes/vortex program, and downstream engineering work.
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Workspace](https://img.shields.io/badge/workspace-GitHub%20first-181717)
+![Status](https://img.shields.io/badge/status-active%20research-orange)
 
-The repository no longer treats the May/June 2026 "D=3 -> all observables" scripts as the current theory. Those files remain preserved for provenance.
+This repository is the **single primary workspace** for the URT / Newton's Cathedral project. It contains the current finite core, the full audit trail, historical code, recovered conversation provenance, vortex/Navier–Stokes work, and engineering experiments.
 
-## Current causal spine
+> **Canonical rule:** current claims are governed by the canonical state and closure ledgers, not by older filenames, historical scripts, or attractive numerical matches.
 
-\`\`\`text
+## Start here
+
+| Purpose | File |
+|---|---|
+| Current project state | [docs/CANONICAL_STATE_PLAIN_2026-09-30.md](docs/CANONICAL_STATE_PLAIN_2026-09-30.md) |
+| Closure status | [docs/CLOSURE_LEDGER.md](docs/CLOSURE_LEDGER.md) |
+| Claim status | [docs/CLAIM_LEDGER.md](docs/CLAIM_LEDGER.md) |
+| Continuity / workflow | [docs/CONTINUITY_PROTOCOL.md](docs/CONTINUITY_PROTOCOL.md) |
+| Repository map | [docs/PROJECT_MAP.md](docs/PROJECT_MAP.md) |
+| Recovered chat chronology | [conversation_archive/README.md](conversation_archive/README.md) |
+| Research archive | [research_archive/](research_archive/) |
+| Engineering work | [engineering/](engineering/) |
+
+## Canonical spine
+
+```text
 raw possibility / chaos
-    ->
-URT selection / piecewise contraction
-    ->
+    ↓
+URT selection
+    ↓
 bounded history-dependent response
-    ->
-independent symmetry + Hodge reduction
-    ->
-5 -> 4 -> 3 -> 12 -> 13
-    ->
-finite 13-site / A4-A5 algebra
-    ->
-81 = 80 + 1 closure
-    ->
-dual rails d_* and d_cl
-    ->
-master state rho_*
-    ->
-entropy / Kubo-Mori geometry
-    ->
-one 16-dimensional geometry + gauge carrier
-    ->
-gravity + gauge + matter response
-    ->
-continuum interpretation and external tests
-\`\`\`
+    ↓
+symmetry + Hodge reduction
+    ↓
+5 → 4 → 3 → 12 → 13
+    ↓
+finite A4/A5 / 13-site structure
+    ↓
+dual rails + master state ρ*
+    ↓
+Kubo–Mori / BKM information geometry
+    ↓
+geometry + gauge + matter response
+    ↓
+gravity / spacetime / cosmology
+```
 
-URT and entropy play different roles:
+URT and entropy have different roles:
 
-- **URT is the selection principle** on admissible histories.
-- **Entropy is the information geometry** of the selected history.
-- Entropy does not replace URT.
+- **URT** selects admissible histories.
+- **Entropy / information geometry** structures the selected state.
+- The positive transfer machine `T = B†B` and the KM/BKM Hessian are the dynamical and response branches of one finite construction.
 
-## Canonical equations
+## Core finite objects
 
-Original URT spiral law:
+```text
+φ = (1 + √5)/2
+D = 3
+N = 13
+γ = 1/81
 
-\`\`\`text
-r_(k+1) = (pi/e) r_k
-theta_(k+1) = theta_k + 2 pi / phi^2
-\`\`\`
+d*  = 80π / (1053φ)
+dcl = 3/20
+Δ   = dcl - d*
 
-Historical bounded-response recursion:
+ρ* = (I4 ⊕ Δ² I4) / [4(1 + Δ²)]
 
-\`\`\`text
-P_(k+1) = beta [ alpha (P_k - theta_H varphi(P_k)) + u_k ]
-\`\`\`
+16 = 4_g ⊕ 1_Y ⊕ 3_W ⊕ (3' ⊕ 5)_C
 
-For the archived canonical numerical values
-\`alpha = 1.155\`, \`beta = 0.235\`, \`theta_H = 2.4\`,
-the fibre is piecewise contractive away from branch-switching surfaces.
+H64 = H13 ⊕ H51
+```
 
-Canonical rail sector:
+The canonical 13-site spectrum is
 
-\`\`\`text
-gamma = 1/81
-d_*   = (1-gamma) pi / (13 phi)
-d_cl  = 3/20
-Delta = d_cl - d_*
-\`\`\`
+```text
+{0^(1), (6-√5)^(3), 7^(5), (6+√5)^(3), 13^(1)}.
+```
 
-Master entropy/information state:
+## Repository layout
 
-\`\`\`text
-rho_* = (I4 (+) Delta^2 I4) / [4(1 + Delta^2)]
-\`\`\`
+```text
+cathedral_core/          compact current finite core
+newtons_cathedral/       historical public Python package
+tests/                   canonical + legacy verification
+docs/                    canonical state, ledgers, maps, workflow
+research_archive/        full research/audit corpus
+conversation_archive/    recovered cross-chat technical chronology
+engineering/             applied URT experiments and validation
+archive/                 superseded repository snapshots / provenance
+```
 
-Sixteen-dimensional response carrier:
+### Canonical vs historical code
 
-\`\`\`text
-16 = 4_g (+) 1_Y (+) 3_W (+) (3' (+) 5)_C
-\`\`\`
+`cathedral_core/` is intentionally small and conservative. It contains the currently retained finite constants, URT primitives, master entropy state and BKM response functions.
+
+`newtons_cathedral/` is the earlier public package. It is preserved for provenance and executable historical audits, but individual modules are **not automatically canonical**.
+
+## Quick verification
+
+```bash
+python -m pip install -e ".[dev]"
+python -m pytest tests/test_canonical_core.py
+```
+
+To run the full historical suite:
+
+```bash
+python -m pytest
+```
 
 ## Status discipline
 
-- **EXACT** — theorem / identity / rank / spectrum for explicitly defined objects.
-- **NUMERICAL** — independently computed numerical certificate.
-- **CONDITIONAL** — theorem under stated hypotheses.
-- **CANDIDATE PHYSICS** — mathematically defined mapping whose physical identification is not yet independently closed.
-- **NO-GO / FALSIFIED** — failure of a specified construction under specified assumptions.
-- **SUPERSEDED** — retained only for provenance.
-- **OPEN** — unresolved.
+Every serious result should be classified as one of:
 
-A no-go is local to its assumptions. It is not automatically a no-go for the whole multiplex Cathedral machine.
+- **CLOSED / FROZEN** — established for the defined mathematical construction.
+- **CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING** — finite mathematics closed; physical normalization/continuum interpretation remains separate.
+- **REOPENED** — an explicit later contradiction, failed audit or new premise reopened the result.
+- **RETIRED / SUPERSEDED** — preserved for provenance; not live evidence.
+- **OPEN** — genuinely unfinished and never previously closed.
 
-## September 30 audit corrections
+A no-go is local to the assumptions it tested unless the current ledger explicitly promotes it to a global obstruction.
 
-Retired as independent evidence:
+## Active research fronts
 
-- forced-delta 20K / 5.4K collapse experiments whose controller steered toward the target;
-- PCA as proof of intrinsic five-dimensionality;
-- seeded icosahedral "emergence";
-- threshold-tuned random-cloud decoding as proof of URT-specific icosahedral emergence;
-- frozen Standard Model/cosmology values later reused as fresh predictions;
-- circular terminal-wall flavour/mass closures;
-- the old four-gate alpha/RG normalization route.
+The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
 
-The later 5D ambient-manifold construction, exact 13-site algebra, 81=80+1 closure, entropy/BKM construction, gauge carrier and gravity program must stand on their own derivations.
+1. entropy-to-continuum gravitational normalization;
+2. absolute gauge/current normalization without a free scale;
+3. target-free flavour poles and mixing from the typed `H64` history operator;
+4. continuum cosmological dynamics;
+5. the exact unforced Navier–Stokes relay/shadowing theorem;
+6. blind external validation of engineering branches.
 
-## Repository map
+## Engineering
 
-- \`cathedral_core/\` — compact current implementation of the canonical finite machine.
-- \`docs/\` — canonical state, claim ledger, project map and provenance rules.
-- \`research_archive/\` — **340/340 textual project files**, preserving the complete text/code/data archive.
-- \`newtons_cathedral/\` — earlier public package, retained until reconciled module-by-module.
-- \`tests/\` — legacy and canonical tests.
+Applied work is kept separate from fundamental-physics claims. The consolidated engineering area includes bounded-chaos control, plasma/turbulence experiments, EEG/seizure prediction, sensing, materials/fusion, vortex-flow control and constrained optimization.
 
-The original project library also contains 101 binary-only assets (figures, PDFs, ZIPs, NPZs and one Git bundle). Their exact inventory is tracked separately because the current GitHub connector accepts text Git objects but not raw local binary file references.
+See [engineering/README.md](engineering/README.md).
 
-## Current frontier
+## Provenance and consolidation
 
-1. derive a unique continuum gravitational normalization from the entropy/BKM state;
-2. derive the absolute gauge/current normalization without reintroducing a free scale;
-3. close flavour masses/mixings without circular use of observed targets;
-4. finish the unforced Navier–Stokes/vortex program as a theorem or explicit counterexample;
-5. move engineering branches to independent blind validation.
+This repository now consolidates the material previously split across the URT/Cathedral repositories. Older snapshots are retained under `archive/repository_snapshots/`; unique chaos-lab code and notebooks live under `engineering/chaos_lab/`.
 
-## Branch
+The durable workflow is:
 
-\`cathedral-full-project-2026-09-30\`
+```text
+work in chat → verify / derive → commit to GitHub → continue from GitHub
+```
 
-This branch is intended to replace the outdated May/June top-level framing after review.
+Important project state should never exist only in a conversation.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
