@@ -42,6 +42,8 @@ d_cl = 3/20
 
 Delta = d_cl - d_*
 
+Interpretation: Delta is the bandwidth/window between the classical rail d_cl and the geometric/quantum rail d_*.
+
 eta_Delta = -ln(Delta)
 
 ## Master state
@@ -83,7 +85,7 @@ Delta = d_cl - d_*
 
 eta_Delta = -ln(Delta)
 
-Hence Delta is not a fitted or arbitrary normalization parameter. It is the derived gap between the quantum/geometric rail and the classical rail.
+Hence Delta is not a fitted or arbitrary normalization parameter. It is the derived **bandwidth of the rail window** between the quantum/geometric rail and the classical rail.
 
 The internal electromagnetic residue is
 
