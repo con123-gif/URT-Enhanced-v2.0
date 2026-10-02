@@ -11,7 +11,7 @@
 | Random-cloud threshold decoder proves URT-specific icosahedron | OPEN / NOT PROVEN | Requires blind reconstruction |
 | 13=4+9 finite split for explicit construction | EXACT | Matrix/representation statement |
 | 81=80+1 rank/nullity closure | EXACT | Explicit rank/nullity certificate |
-| Rail values d_* and d_cl and gap Delta | EXACT FOR DEFINITIONS | Physical interpretation remains downstream |
+| Rails d_cl=3/20 and d_*=80π/(1053φ), and bandwidth Delta=d_cl-d_* | CLOSED / FROZEN IN CURRENT FINITE MODEL | v36 reconstructed both rails; v37 selected 3/20 by incidence action; v38 gave relative-information convergence; Delta is the derived bandwidth, not a fitted parameter |
 | Master state rho_* | EXACT FOR FINITE MODEL | Defined KMS/entropy state |
 | BKM response is scalar on 16-carrier | EXACT FOR FINITE MODEL | Four-sheet audit removes earlier anisotropy obstruction |
 | 16 = 4_g + 1_Y + 3_W + (3'+5)_C | EXACT REPRESENTATION DECOMPOSITION | Physical sector labels are candidate identifications |
@@ -20,7 +20,7 @@
 | Gravity comes from same entropy state as gauge response | ACTIVE PROGRAM | Finite thermodynamic structure closed; continuum normalization open |
 | Scalar alpha residue polynomial | EXACT INTERNAL INVARIANT | Dimensionless normalization is fixed by Delta=d_cl-d_*; physical electromagnetic identification/continuum mapping remains to be proved |
 | Old four-gate alpha/RG route | FALSIFIED / SUPERSEDED | Circular normalization |
-| v123 positive scale orbit | EXACT COMMON-RESCALING RESULT | Does not reopen the derived Delta normalization; interpret as continuum unit/clock scale unless a dimensionless observable is shown to depend on it |
+| v123 positive scale orbit | EXACT LOCAL COMMON-RESCALING RESULT, RECONCILED BY v124 | v123 is not the global endpoint; it does not reopen Delta, and four-sheet scale is distinct from the Majorana invariant |
 | H64 history carrier | ACTIVE CANONICAL | Avoids generation double counting |
 | v59/v61 terminal-wall mass closure | SUPERSEDED | Circular embedding of target data |
 | Unforced Navier-Stokes branch is solved | NOT CLAIMED | Research/proof program only |
