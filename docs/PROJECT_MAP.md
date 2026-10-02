@@ -5,6 +5,7 @@
 - `docs/START_HERE.md`
 
 ## Canonical layer
+- `docs/LIVE_STATE_2026-10-02.md` — current precedence-ordered handoff
 - `docs/CANONICAL_STATE_2026-09-30.md`
 - `docs/CANONICAL_STATE_PLAIN_2026-09-30.md`
 - `docs/CLAIM_LEDGER.md`
