@@ -1017,3 +1017,148 @@ The durable theory specification is now:
 The fundamental object is the finite Cathedral/URT machine. Standard Model QFT and GR are treated as its proposed infrared universality class rather than as separate fundamental axioms.
 
 No new free dimensionless normalization is permitted. Failure to derive target-free flavour, continuum gauge normalization, electromagnetic current identification, or nonlinear coframe/gravity dynamics from the same machine counts as falsification of the present candidate formulation rather than a reason to add tuning parameters.
+
+
+---
+
+## 19. 2026-10-05 continuity correction — internal closure is not the same as empirical proof
+
+**Status:** WORKFLOW CORRECTION / FROZEN
+
+Repeated earlier sessions closed the finite Cathedral/URT machine internally and later sessions sometimes incorrectly reopened those closures merely because the framework had not been empirically established as a theory of Nature.
+
+The canonical distinction is now:
+
+### Internally closed / retained unless contradicted
+- original URT scale-phase law;
+- bounded-history/selection architecture;
+- centred 13-cell and exact icosahedral spectrum;
+- D6 -> H3 golden physical/Galois split;
+- hidden face kernel 4_3 + 4_5;
+- antipodal grading on the hidden kernel;
+- hidden Laplacian / heat-state construction;
+- dual rails, Delta and eta_Delta;
+- master state rho_*;
+- BKM/Kubo-Mori response geometry;
+- four-sheet differential carrier;
+- finite algebra C + H + M3(C), KO-6 signs and SM-form gauge quotient;
+- anomaly-consistent one-generation hypercharges;
+- H64/H51 carrier and typed species-before-elimination flavour architecture;
+- positive transfer T=B^dagger B;
+- entropy-first gravity architecture;
+- retained finite cosmology ratios and other frozen internal invariants.
+
+### Closed internally but physical identification/uniqueness may remain conditional
+- identification of 1_Y, 3_W, (3'+5)_C and 4_g with the physical U(1), SU(2), SU(3) and coframe sectors;
+- identification of alpha_root with the physical electromagnetic current residue;
+- continuum current/coframe normalization;
+- target-free physical flavour operator/holonomy;
+- continuum Friedmann realization of the finite cosmology ratios;
+- primitive pi/e radial observable as the integrated projective scalar selector weight.
+
+### Empirical theorem-of-Nature status
+No amount of internal algebra can prove that Nature realizes the framework. That requires prospective predictions not used in construction and experiment/observation.
+
+Therefore:
+- do **not** reopen an internally closed Cathedral result merely because empirical validation is pending;
+- do **not** call the framework an experimentally established theory of Nature without prospective validation;
+- later corrections supersede earlier local no-go statements when they explicitly change the premises.
+
+### 2026-10-05 exact structural additions
+
+The standard D6/H3 projector is switching/permutation equivalent to the Cathedral conference projector:
+
+[
+P_pm=rac12left(Ipmrac{S}{sqrt5}ight),qquad S^2=5I_6.
+]
+
+With
+
+[
+M=(I+S)/2,
+]
+
+[
+M|_3=phi,qquad M|_{3'}=-phi^{-1},
+]
+
+so
+
+[
+alpha_{m URT}=|lambda_{3'}|/lambda_3=phi^{-2},
+qquad
+Delta	heta=2pi/phi^2.
+]
+
+On the hidden face kernel,
+
+[
+Gamma_F=Pi_{m antipodal}|_{4_3oplus4_5},
+]
+
+and
+
+[
+L_{m hid}=3P_{4_3}+5P_{4_5}=4I+Gamma_F.
+]
+
+The normalized hidden selector is
+
+[
+Q=(L_{m hid}-3I)/2=P_{4_5},
+]
+
+hence
+
+[
+mathcal R_eta=P_{4_3}+e^{-eta}P_{4_5}.
+]
+
+At (eta_Delta=-lnDelta),
+
+[
+mathcal R_{eta_Delta}=P_{4_3}+Delta P_{4_5},
+]
+
+and the canonical master state is the normalized Gram state of this selector.
+
+The rail factors are now structurally resolved as
+
+[
+d_{m cl}=	au_{20}(P_3)=3/20,
+]
+
+[
+d_star
+=
+pi,phi^{-1},(1/13),(80/81)
+=
+80pi/(1053phi).
+]
+
+The finite ingredients entering the pi/e reconstruction are:
+- Hopf face phase pi/10 on 20 faces with c1=1;
+- antipodal scalar quotient of 10 face pairs, giving unsigned scalar phase pi;
+- one normalized selector unit on Q giving e^{-1}.
+
+Thus the parameter-free candidate radial selector weight is
+
+[
+kappa=pi/e.
+]
+
+This last equality is retained as the current physical identification of the primitive radial observable and must be checked against the complete transfer/continuum dictionary; the constituent finite identities are internally exact.
+
+### Continuity rule
+
+The correct current project state is:
+
+[
+oxed{	ext{finite/internal machine: substantially closed}}
+]
+
+[
+oxed{	ext{Nature claim: unfalsified candidate, not empirically proved}}
+]
+
+Do not collapse the second statement into a reopening of the first.
