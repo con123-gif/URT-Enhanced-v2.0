@@ -2,7 +2,7 @@
 
 Recovered Aug–Sep closures that were missing from the first reconstruction are recorded in `docs/CLOSURE_LEDGER_SUPPLEMENT_2026-10-02.md`; read it as part of this ledger.
 
-Last reconstructed: 2026-10-02
+Last reconstructed: 2026-10-05
 
 This ledger is the durable cross-conversation project memory. It supplements the Sept. 30 canonical state and claim ledger.
 
@@ -753,3 +753,267 @@ A downstream open physical identification does **not** erase an upstream closed 
 A prior no-go does **not** become globally final unless the latest precedence-ordered ledger says so.
 
 Any new closure or correction reached in chat should be committed to this file or a linked sector-specific ledger before the session ends.
+
+
+---
+
+## 19. 2026-10-05 literature/structure integration
+
+### D6 -> H3 conference projector identity
+**Status:** CLOSED / FROZEN internally
+
+The Cathedral six-axis operator is the standard golden (D_6	o H_3) physical/internal projector, up to signed permutation:
+
+[
+S^2=5I_6,
+qquad
+P_pm=rac12left(Ipmrac{S}{sqrt5}ight).
+]
+
+With
+
+[
+M=rac{I+S}{2},
+]
+
+[
+M^2=M+I,
+qquad
+M|_3=phi,
+qquad
+M|_{3'}=-phi^{-1}.
+]
+
+Consequences:
+
+[
+oxed{
+alpha_{m URT}=phi^{-2}
+}
+]
+
+from the internal/physical eigenvalue ratio, and
+
+[
+oxed{
+Delta	heta=2pi/phi^2.
+}
+]
+
+The same (M) is an automorphism of the (D_6) lattice and cycles the three nonzero discriminant classes of (D_6^*/D_6congmathbb Z_2^2).
+
+### D6-root / Yukawa-edge bridge
+**Status:** CLOSED INTERNALLY
+
+The two projected (D_6) root-length classes are proportional to the two archived edge-fiveplet commutator classes. Their ratio is exactly (phi^2). This identifies the older (C_pm) golden split with the same (D_6/H_3) geometry rather than an independent coincidence.
+
+### Antipodal grading = hidden KO grading
+**Status:** CLOSED / FROZEN internally
+
+On the twenty-face carrier,
+
+[
+H_+=1oplus4_5oplus5,
+qquad
+H_-=3oplus3'oplus4_3.
+]
+
+Hence
+
+[
+oxed{
+Gamma_F
+=
+Pi_{m antipodal}|_{4_3oplus4_5}
+=
+-P_{4_3}+P_{4_5}.
+}
+]
+
+The hidden face Laplacian satisfies
+
+[
+oxed{
+L_{m hid}
+=
+3P_{4_3}+5P_{4_5}
+=
+4I+Gamma_F.
+}
+]
+
+The affine binary selector is
+
+[
+oxed{
+Q
+=
+rac{L_{m hid}-3I}{2}
+=
+P_{4_5}.
+}
+]
+
+This joins icosahedral antipodal geometry, KO-6 grading, hidden entropy and the response carrier.
+
+### Selector amplitude -> master probability state
+**Status:** CLOSED / FROZEN internally
+
+[
+mathcal R_eta=e^{-eta Q}
+=
+P_{4_3}+e^{-eta}P_{4_5}.
+]
+
+At
+
+[
+eta_Delta=-lnDelta,
+]
+
+[
+oxed{
+mathcal R_{eta_Delta}
+=
+P_{4_3}+Delta P_{4_5}.
+}
+]
+
+Then
+
+[
+oxed{
+ho_star
+=
+rac{
+mathcal R_{eta_Delta}^dagger
+mathcal R_{eta_Delta}
+}{
+operatorname{Tr}
+mathcal R_{eta_Delta}^dagger
+mathcal R_{eta_Delta}
+}
+}
+]
+
+reproduces the frozen
+
+[
+ho_star
+=
+rac{I_4oplusDelta^2I_4}{4(1+Delta^2)}.
+]
+
+Thus (Delta) is an amplitude ratio and (Delta^2) its probability ratio.
+
+### Hopf projective scalar flux
+**Status:** CLOSED internally for the finite quotient
+
+The archived Hopf shell has equal face phase
+
+[
+gamma_f=pi/10
+]
+
+on twenty faces and total Chern flux
+
+[
+2pi,qquad c_1=1.
+]
+
+Because the positive scalar machine is flux-conjugation even and antipodal-even, the ten opposite-face pairs carry unsigned scalar flux
+
+[
+oxed{
+Phi_{m proj}
+=
+10(pi/10)=pi.
+}
+]
+
+This is not a half Chern number; (c_1) remains one.
+
+### Reconstruction of the primitive URT multiplier
+**Status:** CLOSED as a parameter-free candidate identification; physical uniqueness still testable
+
+One normalized exhaust-selector unit gives (e^{-1}) on (P_{4_5}). Combining it with the antipodal scalar Hopf flux gives
+
+[
+oxed{
+kappa
+=
+pi e^{-1}
+=
+pi/e.
+}
+]
+
+Together with (alpha_{m URT}=phi^{-2}),
+
+[
+oxed{
+q_{m URT}
+=
+rac{pi}{e}
+e^{i2pi/phi^2}.
+}
+]
+
+The exact finite ingredients are closed. The remaining physical-identification question is whether the primitive radial observable of the full transfer/history machine is uniquely the integrated projective scalar selector weight.
+
+### Rail factorization
+**Status:** CLOSED INTERNALLY
+
+[
+oxed{
+d_{m cl}
+=
+	au_{20}(P_3)
+=
+3/20.
+}
+]
+
+The projected rail is
+
+[
+oxed{
+d_star
+=
+pi
+cdotphi^{-1}
+cdotrac1{13}
+cdotrac{80}{81}
+=
+rac{80pi}{1053phi}.
+}
+]
+
+Interpretation of factors:
+- (pi): projective scalar Hopf flux;
+- (phi^{-1}): contracting/internal golden branch;
+- (1/13): unique nonuniform radial singlet weight;
+- (80/81): trace-free response share of the (9^2=81) exhaust endomorphism carrier.
+
+Therefore
+
+[
+oxed{
+Delta
+=
+d_{m cl}-d_star
+}
+]
+
+is a discrete/projective commensuration defect and is necessarily nonzero.
+
+### Theory-of-nature status update
+**Status:** CANDIDATE THEORY DEFINED; EMPIRICAL/CONTINUUM VERIFICATION OPEN
+
+The durable theory specification is now:
+
+- `docs/THEORY_OF_NATURE_2026-10-05.md`
+
+The fundamental object is the finite Cathedral/URT machine. Standard Model QFT and GR are treated as its proposed infrared universality class rather than as separate fundamental axioms.
+
+No new free dimensionless normalization is permitted. Failure to derive target-free flavour, continuum gauge normalization, electromagnetic current identification, or nonlinear coframe/gravity dynamics from the same machine counts as falsification of the present candidate formulation rather than a reason to add tuning parameters.
