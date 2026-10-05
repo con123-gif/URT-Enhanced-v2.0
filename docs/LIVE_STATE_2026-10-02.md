@@ -1068,3 +1068,283 @@ The highest-leverage remaining joins are:
 5. blind prospective predictions/engineering tests frozen before comparison.
 
 Everything already closed above remains frozen unless an explicit later contradiction reopens it.
+
+
+---
+
+## 24. 2026-10-05 integration — candidate theory-of-nature closure
+
+A dated full specification now lives at:
+
+- `docs/THEORY_OF_NATURE_2026-10-05.md`
+
+The project description advances from **working towards a theory of nature** to **candidate theory of nature**, with the following status discipline: finite mathematics may be closed internally while physical identification and empirical validation remain separate gates.
+
+### D6/H3 golden identification — CLOSED INTERNALLY
+
+The six-axis Cathedral conference operator is identified with the standard (D_6	o H_3) golden projector structure:
+
+[
+S^2=5I_6,
+qquad
+P_pm=rac12left(Ipmrac{S}{sqrt5}ight).
+]
+
+With
+
+[
+M=rac{I+S}{2},
+qquad
+M^2=M+I,
+]
+
+the physical/internal eigenvalues are
+
+[
+M|_3=phi I,
+qquad
+M|_{3'}=-phi^{-1}I.
+]
+
+Therefore the canonical URT angular fraction is reconstructed as
+
+[
+oxed{
+alpha_{m URT}
+=
+rac{|lambda_{3'}|}{lambda_3}
+=
+phi^{-2}
+}
+]
+
+and
+
+[
+oxed{
+Delta	heta
+=
+rac{2pi}{phi^2}.
+}
+]
+
+The same (M) preserves (D_6) and cycles the three nonzero classes of (D_6^*/D_6congmathbb Z_2^2).
+
+### Hidden antipodal grading — CLOSED INTERNALLY
+
+On the twenty-face/dodecahedral carrier, antipodal parity splits the representation as
+
+[
+H_+=1oplus4_5oplus5,
+qquad
+H_-=3oplus3'oplus4_3.
+]
+
+Hence on the hidden kernel
+
+[
+oxed{
+Gamma_F
+=
+Pi_{m antipodal}|_{H_{m hid}}
+=
+-P_{4_3}+P_{4_5}.
+}
+]
+
+The hidden Laplacian is equivalently
+
+[
+oxed{
+L_{m hid}
+=
+3P_{4_3}+5P_{4_5}
+=
+4I+Gamma_F.
+}
+]
+
+Its affine two-level normalization is
+
+[
+oxed{
+Q
+=
+rac{L_{m hid}-3I}{2}
+=
+P_{4_5}
+=
+rac{I+Gamma_F}{2}.
+}
+]
+
+Thus the selector amplitude is
+
+[
+mathcal R_eta
+=
+e^{-eta Q}
+=
+P_{4_3}+e^{-eta}P_{4_5}.
+]
+
+At (eta_Delta=-lnDelta),
+
+[
+oxed{
+mathcal R_{eta_Delta}
+=
+P_{4_3}+Delta P_{4_5},
+}
+]
+
+and the master state is its normalized Gram state:
+
+[
+oxed{
+ho_star
+=
+rac{
+mathcal R_{eta_Delta}^daggermathcal R_{eta_Delta}
+}{
+operatorname{Tr}mathcal R_{eta_Delta}^daggermathcal R_{eta_Delta}
+}.
+}
+]
+
+This explains the appearance of (Delta^2) in the probability state as the square of a selector amplitude.
+
+### Hopf scalar flux and the pi/e reconstruction — NEW CONDITIONAL PHYSICAL IDENTIFICATION
+
+The existing Hopf certificate gives exact equal face phase
+
+[
+gamma_f=pi/10
+]
+
+on twenty faces, with total Chern flux (2pi) and (c_1=1).
+
+The positive scalar channel is flux-conjugation even and the face shell has ten antipodal pairs, so the unsigned antipodal scalar flux is
+
+[
+oxed{
+Phi_{m proj}
+=
+10(pi/10)
+=
+pi.
+}
+]
+
+One normalized selector unit on the exhaust projector contributes (e^{-1}). Therefore the parameter-free candidate radial selector weight is
+
+[
+oxed{
+kappa
+=
+Phi_{m proj}e^{-1}
+=
+rac{pi}{e}.
+}
+]
+
+Together with the golden angular fraction,
+
+[
+oxed{
+q_{m URT}
+=
+rac{pi}{e}
+e^{i2pi/phi^2}.
+}
+]
+
+The finite ingredients are exact; the identification of the primitive radial observable with this integrated projective scalar selector weight remains a physical-identification theorem to be checked against the complete transfer/continuum dictionary.
+
+### Rail factorization — CLOSED INTERNALLY
+
+The classical rail is a normalized projector trace:
+
+[
+d_{m cl}
+=
+	au_{20}(P_3)
+=
+3/20.
+]
+
+The projected rail factors as
+
+[
+oxed{
+d_star
+=
+pi
+left(phi^{-1}ight)
+left(rac1{13}ight)
+left(rac{80}{81}ight)
+=
+rac{80pi}{1053phi}.
+}
+]
+
+Here (1/13) is the unique nonuniform centred radial singlet weight and (80/81) is the trace-free share of (operatorname{Herm}(9)=1oplus80).
+
+Thus
+
+[
+oxed{
+Delta=d_{m cl}-d_star
+}
+]
+
+is a discrete/projective commensuration defect. It cannot vanish exactly because it is the difference of an algebraic number and a nonzero algebraic multiple of transcendental (pi).
+
+### One-action theory principle — ACTIVE CANONICAL FORMULATION
+
+The finite Cathedral, not continuum GR or the Standard Model separately, is taken as the candidate fundamental object:
+
+[
+oxed{
+mathfrak C
+=
+(
+mathcal H,,
+T=B^dagger B,,
+Gamma_F,,
+mathcal A_F,,
+mathcal R_{m URT},,
+ho_star,,
+g_{m BKM},,
+mathbb A
+).
+}
+]
+
+The unified superconnection is
+
+[
+mathbb A=d_{m base}+delta_square+X,
+qquad
+mathbb F=mathbb A^2.
+]
+
+The active fundamental response principle is relative-information geometry about (ho_star); its Hessian is the BKM metric. Separate arbitrary fundamental gauge and gravity normalization factors are not permitted.
+
+The continuum target is an infrared universality class:
+- Yang-Mills as the leading local gauge invariant;
+- Einstein-Hilbert as the leading local two-derivative coframe invariant;
+- Dirac/Higgs/matter dynamics from the typed KO-6/history carrier.
+
+### Remaining decisive gates
+
+The theory is now defined tightly enough that the remaining work is verification, not addition of new sectors:
+
+1. target-free (H_{64}) flavour poles, residues and CKM/PMNS;
+2. physical electromagnetic-current identification of (alpha_{m root}) without an extra multiplier;
+3. common continuum gauge normalization from the same selected state;
+4. nonlinear entropy/coframe continuum limit in the Einstein universality class;
+5. continuum cosmology from the same coframe state;
+6. genuinely prospective predictions frozen before comparison.
+
+Any requirement for a new free dimensionless constant at these gates counts as failure of the current candidate theory rather than permission to retune it.
