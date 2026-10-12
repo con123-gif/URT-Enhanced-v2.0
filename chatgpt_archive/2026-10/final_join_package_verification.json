@@ -1,0 +1,124 @@
+{
+  "manifest_hashes_match": true,
+  "source_file_count": 743,
+  "format_counts": {
+    ".py": 202,
+    ".md": 153,
+    ".json": 236,
+    ".npz": 98,
+    ".txt": 35,
+    ".log": 13,
+    ".patch": 1,
+    ".b64": 4,
+    ".png": 1
+  },
+  "finite_array_count": 3306,
+  "continued_sections": 85,
+  "new_relative_links_verified": 40,
+  "new_math_delimiters_balanced": true,
+  "archive_entries": 744,
+  "archive_size_bytes": 58969147,
+  "archive_sha256": "9c132f8598d1e1e6ac5089951484976dc2b14b4c2d0ef55b75b1f8e3ab8f6461",
+  "archive_CRC_and_member_hashes_pass": true,
+  "coupled_named_checks": 242,
+  "coupled_operator_array_count": 256,
+  "coupled_source_provenance_verified": true,
+  "common_action_named_checks": 208,
+  "common_action_operator_array_count": 134,
+  "common_action_source_provenance_verified": true,
+  "physical_leaf_named_checks": 336,
+  "physical_leaf_operator_array_count": 117,
+  "physical_leaf_source_provenance_verified": true,
+  "physical_leaf_overview_sections": 7,
+  "physical_leaf_v6_input_revision_verified": true,
+  "physical_leaf_portable_cached_reproduction_passes": true,
+  "geometric_time_named_checks": 451,
+  "geometric_time_operator_array_count": 281,
+  "geometric_time_source_provenance_verified": true,
+  "geometric_time_overview_sections": 7,
+  "geometric_time_scientific_reports_math_checked": [
+    "geometric_time_work/gauge/a4_height_transfer_report.md",
+    "geometric_time_work/matter/geometric_height_matter_report.md",
+    "geometric_time_work/matter/root_normal_matter_report.md",
+    "geometric_time_work/recovery/canonical_action_recovery_report.md",
+    "geometric_time_work/review/geometric_reflection_audit.md",
+    "geometric_time_work/review/geometric_source_audit.md",
+    "geometric_time_work/root_time/root_normal_scalar_transfer_report.md",
+    "geometric_time_work/scalar/a4_height_scalar_transfer_report.md",
+    "geometric_time_work/source/height_source_transport_report.md"
+  ],
+  "geometric_time_v7_input_revision_verified": true,
+  "geometric_time_portable_cached_reproduction_passes": true,
+  "geometric_time_operational_search_and_Python_caches_excluded": true,
+  "canonical_time_named_checks": 521,
+  "canonical_time_operator_array_count": 161,
+  "canonical_time_source_provenance_verified": true,
+  "canonical_time_overview_sections": 5,
+  "canonical_time_scientific_reports_math_checked": [
+    "physical_time_work/fermion/general_root_wilson_report.md",
+    "physical_time_work/recovery/canonical_time_applicability_report.md",
+    "physical_time_work/review/positive_time_independent_audit_report.md",
+    "physical_time_work/review/positive_time_source_audit_report.md",
+    "physical_time_work/source/kernel_source_contacts_report.md",
+    "physical_time_work/thermal_sources/integer_thermal_source_jets_report.md",
+    "physical_time_work/transfer/positive_thermal_reflection_report.md"
+  ],
+  "canonical_time_scientific_report_links_verified": [
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "latest_time_chat_retrieval.json"
+    },
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "theory_input_v8.md"
+    },
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "../../canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py"
+    },
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "../../canonical_sources/Cathedral/Cathedral_Live_State_v61.md"
+    },
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "../transfer/positive_thermal_reflection_report.md"
+    },
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "canonical_applicability_ledger.py"
+    },
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "canonical_applicability_ledger_checks.json"
+    },
+    {
+      "from": "physical_time_work/recovery/canonical_time_applicability_report.md",
+      "to": "canonical_applicability_ledger_operators.npz"
+    }
+  ],
+  "canonical_time_v8_input_revision_verified": true,
+  "canonical_time_preserves_exact_v8_body": true,
+  "canonical_time_portable_cached_reproduction_passes": true,
+  "canonical_time_successful_conversation_recovery_preserved": true,
+  "canonical_time_operational_queries_duplicate_reads_and_Python_caches_excluded": true,
+  "portable_cached_reproduction_from_different_root_passes": true,
+  "new_records_strict_finite_JSON": true,
+  "preserved_historical_Python_JSON_sentinels": [
+    {
+      "path": "canonical_sources/canonical_v61_full_reproduced_report.json",
+      "field": "$.matched_two_loop_thresholds.scan.points.SU2_mass__SU3_mass.last_Jacobian_condition_number",
+      "value": "Infinity",
+      "meaning": "Unevaluated Jacobian-condition sentinel: v61 exits at first already-converged iteration.",
+      "original_source_bytes_preserved": true
+    },
+    {
+      "path": "canonical_sources/canonical_v61_reproduced_report.json",
+      "field": "$.matched_two_loop_thresholds.scan.points.SU2_mass__SU3_mass.last_Jacobian_condition_number",
+      "value": "Infinity",
+      "meaning": "Unevaluated Jacobian-condition sentinel: v61 exits at first already-converged iteration.",
+      "original_source_bytes_preserved": true
+    }
+  ],
+  "complete_theory_of_nature_established": false
+}

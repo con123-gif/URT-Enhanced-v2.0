@@ -1,0 +1,91 @@
+{
+  "counts": [
+    12,
+    30,
+    20
+  ],
+  "centered_cochain_dimensions": [
+    13,
+    42,
+    20
+  ],
+  "ranks_d0_d1": [
+    12,
+    19
+  ],
+  "betti": [
+    1,
+    11,
+    1
+  ],
+  "hodge_dirac_nullity": 13,
+  "boundary_squared_exact": true,
+  "K_skew_exact": true,
+  "K_characteristic_polynomial_exact": true,
+  "K_annihilator_exact": true,
+  "A5_equivariance_exact_all_rotations": 60,
+  "K_singular_values": [
+    [
+      3.23606797749979,
+      6
+    ],
+    [
+      1.2360679774997896,
+      6
+    ],
+    [
+      1.0,
+      8
+    ],
+    [
+      2.0,
+      10
+    ]
+  ],
+  "J_square_residual": 1.2106365333661239e-14,
+  "Pplus_projector_residual": 3.0177971159505695e-15,
+  "Pplus_rank": 15,
+  "Sgold_square_residual": 2.9607002779147746e-14,
+  "weak_bracket_residual": 1.9972933092583713e-15,
+  "colour_closure_residual": 3.1401849173675503e-16,
+  "weak_colour_commutator_residual": 4.021663779062723e-16,
+  "stationary_quartic_ratios": [
+    "7/30",
+    "1/4",
+    "1/2",
+    "13/20"
+  ],
+  "classical_rail_from_stationary_gap": "3/20",
+  "gamma_from_gap_ratio": "1/81",
+  "pure_polar_wall_singular_values": [
+    1.0000000000000022,
+    1.0000000000000016,
+    1.0000000000000007
+  ],
+  "TFD_trace_residual": 0.0,
+  "TFD_norm": 1.0,
+  "chi_density_tangent": 47.9669783033801,
+  "KM_generator_tangent_offdiag": 0.020847675533681314,
+  "dual_product": 0.9999999999999998,
+  "conference_squared_exact": true,
+  "Walsh_H13_orthogonality_residual": 1.1282601376740571e-15,
+  "KO6_J_squared_residual": 0.0,
+  "KO6_J_D_commutation_residual": 0.0,
+  "KO6_J_grading_residual": 0.0,
+  "KO6_D_grading_residual": 0.0,
+  "hypercharge_trace_index": "10/3",
+  "weak_trace_index": "2",
+  "colour_trace_index": "2",
+  "bare_sin_squared": "3/8",
+  "curvature_intertwiner_rank": 9,
+  "curvature_intertwiner_isometry_residual": 1.2137485395168163e-15,
+  "v113_trial_energy": 3.8846802896719836,
+  "v113_trial_hidden_spectral_radius": 0.40408535014225916,
+  "v113_trial_B_Frobenius": 0.06245730100182763,
+  "v113_trial_constraint_residual": 2.220446049250313e-16,
+  "v113_trial_Sigma_z0_F": 0.010341993386122458,
+  "v113_trial_Sigma_z0_op": 0.01030692097669545,
+  "v113_trial_Sigma_z1_F": 0.0024180335670430197,
+  "v113_trial_Sigma_z1_op": 0.0024066120610711293,
+  "v113_trial_stationarity_residual": 1.0904927450704395e-09
+}

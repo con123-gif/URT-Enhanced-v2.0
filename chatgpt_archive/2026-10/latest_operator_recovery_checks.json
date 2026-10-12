@@ -1,0 +1,247 @@
+{
+  "schema": "cathedral-latest-operator-recovery-evidence-v1",
+  "date": "2026-10-08",
+  "finite_source_definition_checks_only": true,
+  "physical_closure_asserted": false,
+  "source_checks": [
+    {
+      "name": "cathedral_v129_universe_fallout_verify.py",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 1055,
+      "reported_original_bytes": 1056,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Cathedral_v129_Universe_Fallout_Symbiotic_Theorem_results.json",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 8914,
+      "reported_original_bytes": 8914,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v129_Universe_Fallout_Symbiotic_Theorem.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 8733,
+      "reported_original_bytes": 8734,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "URT_Cathedral_Archive_Audit_2026-09-30.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 11850,
+      "reported_original_bytes": 11851,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v115_URT_Solution_Closure.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 2121,
+      "reported_original_bytes": 2122,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Cathedral_v115_URT_Solution_Ledger.json",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 2170,
+      "reported_original_bytes": 2171,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v99_Correct_A5_Typed_History_13_51.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 1122,
+      "reported_original_bytes": 1123,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v106_Global_Sine_URT_Theorem.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 1086,
+      "reported_original_bytes": 1087,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v116_Golden_Hopf_Anosov_Hodge_Closure.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 13493,
+      "reported_original_bytes": 13494,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v117_Final_Mathematical_Closure.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 8960,
+      "reported_original_bytes": 8961,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v128_Final_Internal_Closure.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 4475,
+      "reported_original_bytes": 4476,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "cathedral_v93_original_urt_engine.py",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 299,
+      "reported_original_bytes": 300,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Cathedral_v93_Original_URT_ON_Engine_Simulation.json",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 2982,
+      "reported_original_bytes": 2983,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v102_SixBit_History_A5_Decomposition.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 717,
+      "reported_original_bytes": 718,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v113_URT_Selected_History_Vacuum_SelfEnergy.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 1317,
+      "reported_original_bytes": 1318,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "Newton_Cathedral_v114_CommonMode_Newton_Normalization_Theorem.md",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 921,
+      "reported_original_bytes": 922,
+      "hash_scope": "Returned text from complete Library read; original binary byte identity not asserted."
+    },
+    {
+      "name": "test_species_loaded_nonlinear_cycle.py",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 4771,
+      "reported_original_bytes": 4772,
+      "hash_scope": "Returned Library text, not original bytes."
+    },
+    {
+      "name": "framework_core.py",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 30232,
+      "reported_original_bytes": 30233,
+      "hash_scope": "Returned Library text, not original bytes."
+    },
+    {
+      "name": "urt_corrected_dual_ribbon_solver.py",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 23064,
+      "reported_original_bytes": 23065,
+      "hash_scope": "Returned Library text, not original bytes."
+    },
+    {
+      "name": "urt_platonic_u2_holonomy.py",
+      "hash_matches": true,
+      "complete_read": true,
+      "returned_text_bytes": 5088,
+      "reported_original_bytes": 5089,
+      "hash_scope": "Returned Library text, not original bytes."
+    }
+  ],
+  "literal_anchors": [
+    {
+      "source": "Newton_Cathedral_v102_SixBit_History_A5_Decomposition.md",
+      "literal": "H64 = 4(1 + 3 + 3' + 4 + 5).",
+      "present": true,
+      "starting_line": 16
+    },
+    {
+      "source": "Newton_Cathedral_v113_URT_Selected_History_Vacuum_SelfEnergy.md",
+      "literal": "A\nspecies-dependent typed interaction must enter before the vacuum is selected,",
+      "present": true,
+      "starting_line": 31
+    },
+    {
+      "source": "Newton_Cathedral_v115_URT_Solution_Closure.md",
+      "literal": "alpha = sqrt(4/3)",
+      "present": true,
+      "starting_line": 6
+    },
+    {
+      "source": "Newton_Cathedral_v115_URT_Solution_Closure.md",
+      "literal": "The 60-state nonbacktracking Ruelle history",
+      "present": true,
+      "starting_line": 20
+    },
+    {
+      "source": "Newton_Cathedral_v129_Universe_Fallout_Symbiotic_Theorem.md",
+      "literal": "Y_{24}=U_{\\rm response}M",
+      "present": true,
+      "starting_line": 309
+    },
+    {
+      "source": "cathedral_v129_universe_fallout_verify.py",
+      "literal": "assert all(data[\"checks\"].values())",
+      "present": true,
+      "starting_line": 27
+    },
+    {
+      "source": "cathedral_v93_original_urt_engine.py",
+      "literal": "alpha=math.pi/math.e",
+      "present": true,
+      "starting_line": 6
+    }
+  ],
+  "archive_access": [
+    {
+      "name": "Newtons_Cathedral_URT_Consolidated_2026-10-01.zip",
+      "library_file_id": "libfile_5af1ddcb386881918118608ec0428997",
+      "reported_bytes": 35053055,
+      "fresh_attempts": 2,
+      "status": "HTTP403",
+      "bytes_recovered": 0,
+      "member_list_recovered": false,
+      "byte_sha256": null
+    },
+    {
+      "name": "Newtons_Cathedral_URT_Full_Project_2026-09-30.zip",
+      "library_file_id": "libfile_d7781c4ca604819187939b6b0f6f869f",
+      "reported_bytes": 34936171,
+      "fresh_attempts": 1,
+      "status": "HTTP403",
+      "bytes_recovered": 0,
+      "member_list_recovered": false,
+      "byte_sha256": null
+    }
+  ],
+  "drive_colab_access": {
+    "file_id": "1hIfhuSygPWQE1QrHcrFyk1pVOynWD2hj",
+    "reported_bytes": 53040913,
+    "raw_fetch_returned_file_reference": true,
+    "authenticated_transfer": "HTTP403",
+    "bytes_recovered": 0,
+    "readable_fetch": "MCP response body exceeds 8388608 bytes",
+    "byte_sha256": null
+  },
+  "latest_october_chat_context": "Root supplied dated retrieval; this subagent Personal Context returned unavailable. Not independently read literal source.",
+  "missing_latest_source_entries": "Not yet recovered independently; no absence or mathematical no-go inference.",
+  "all_source_checks_pass": true,
+  "all_literal_anchors_pass": true
+}
