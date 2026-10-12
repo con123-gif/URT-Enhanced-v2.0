@@ -1,0 +1,1145 @@
+{
+  "date_utc": "2026-10-09",
+  "scope": "Recovered current canonical species-first specification and finite physical calculations, with explicit legacy, conditional and supplemental scopes.",
+  "source_checks": {
+    "full_v61_global_gates": 59,
+    "full_v61_all_pass": true,
+    "core_verifiers_use_observational_targets": true,
+    "internal_finite_derivations_use_observational_targets": false,
+    "new_wall_current_and_graded_calculations_use_observational_targets": false,
+    "latest_physical_calculations_fit_observed_parameters": false,
+    "weighted_triangle_uses_supplied_conditional_bare_coupling": true
+  },
+  "calculation_assertions": {
+    "source_59_gates_reproduced": true,
+    "source_integrity_and_precedence": true,
+    "coherent_retained_moment_return": true,
+    "conditional_hidden_return": true,
+    "typed_product_return": true,
+    "quantum_breathing_25_checks": true,
+    "exact_charge_9_checks": true,
+    "independent_general_current_review": true,
+    "conditional_weak_current_40_checks": true,
+    "supplemental_graded_product_11_checks": true,
+    "independent_supplemental_review": true,
+    "kernel_identity_exclusion_proved": true,
+    "twenty_complete_text_sources_checked": true,
+    "source_complete_hidden_loop_and_contacts": true,
+    "electron_normalized_conditional_free_current": true,
+    "independent_free_current_realspace_review": true,
+    "full_trace_external_current_photon_dictionary": true,
+    "actual_signed_legacy_history_resolvents": true,
+    "independent_directed_history_intervals": true,
+    "common_coframe_and_stress_source": true,
+    "exact_tensor_pole_identity": true,
+    "independent_exact_off_axis_tensor_pole_review": true,
+    "literal_weighted_triangle_spectrum": true,
+    "independent_narrow_hat_spectrum_proof": true,
+    "actual_weighted_flux_correlator_and_Legendre_inverse": true,
+    "independent_latest_source_and_tensor_review": true,
+    "recovered_global_selector_and_golden_ratio": true,
+    "golden_species_source_and_full64_completion_witnesses": true,
+    "whole_A4_unfitted_Gaussian_photon_sector": true,
+    "retained_exponential_Einstein_coefficient_and_conditional_exchange": true,
+    "exact_standalone_trace_vacuum_and_offshell_Ward_condition": true,
+    "selected_transfer_generator_and_contact_dictionary": true,
+    "independent_new_face_source_and_Einstein_factor_review": true,
+    "independent_golden_slopes_decoder_and_allmode_geometry": true,
+    "fixed_volume_diamond_and_exact_hidden_source": true,
+    "supplemental_contact_complete_selected_transfer_and_KKT": true,
+    "actual64_shared_species_probe_and_completion_comparisons": true,
+    "affine_signed_root_spurion_nonuniqueness_witness": true,
+    "independent_full64_deformation_determinants": true,
+    "literal_correlated_K5_hat_covariance_and_geometry": true,
+    "independent_full_action_reference_and_constrained_review": true,
+    "combined_saved_records_and_operator_provenance": true,
+    "recovered_nonlinear_single_entropy_source_curve": true,
+    "actual_hidden_metric_compression_and_fixed_volume_jets": true,
+    "all_order_conditional_positive_round_screen_realization": true,
+    "actual_twelve_phase_signed_source_and_shared_probe": true,
+    "conditional_entrywise_gauge_and_covariant_matter_source_join": true,
+    "correlated_multislice_electric_response_and_source_contacts": true,
+    "independent_entropy_area_and_geodesic_geometry_review": true,
+    "independent_combined_source_cached_operator_audit": true,
+    "physical_join_records_operators_and_provenance": true,
+    "full_order_gauge_chart_and_tensor_completion": true,
+    "covariant_scalar_metric_contacts_and_Ward_identity": true,
+    "full_period768_field_poles_and_source_endpoints": true,
+    "Duhamel_magnetic_and_complete_spatial_cosine_response": true,
+    "exact_critical_instrument_hitting_and_entropy_law": true,
+    "unique_finite_critical_ball_and_causal_completions": true,
+    "independent_physical_join_review": true,
+    "coupled_response_records_arrays_and_input_revisions": true,
+    "actual_signed_rail_chronology_and_positive_subdivision": true,
+    "fixed_reference_scalar_gauge_entropy_contacts": true,
+    "compact_electron_and_primitive_source_charts": true,
+    "full_period_bilinear_Fock_current_responses": true,
+    "common_action_tensor_and_scalar_pole_residues": true,
+    "source_placement_and_palindromic_temporal_contacts": true,
+    "correlated_harmonic_magnetic_resummation": true,
+    "independent_coupled_source_audit": true,
+    "common_action_sources_records_operators_and_frozen_input": true,
+    "literal_original_CAR_Clebsch_trace_recovered": true,
+    "all_translated_photon_bands_and_literal_selector_restriction": true,
+    "actual_Wilson_Ward_Higgs_and_hidden_contact_dictionary": true,
+    "selected_coframe_contacts_and_actual_radial_stress_poles": true,
+    "compact_Gauss_and_physical_charged_observable_rule": true,
+    "conserved_leaf_records_and_frozen_source_provenance": true,
+    "literal_fixed_boundary_leaf_and_compatible_symplectic_chart": true,
+    "crossing_complete_A4_slice_source_and_Ward_identity": true,
+    "exact_root_Wilson_and_symbolic_dispersion_source": true,
+    "common_clock_cone_invariants_and_conditional_spatial_weights": true,
+    "actual_normal_memory_contact_and_full_pole_normalization": true,
+    "independent_conserved_leaf_source_audit": true,
+    "geometric_time_records_inputs_and_operator_provenance": true,
+    "independent_geometric_source_review": true,
+    "canonical_positive_time_sources_and_frozen_provenance": true,
+    "independent_positive_time_source_review": true
+  },
+  "all_calculation_assertions_pass": true,
+  "physical_binding_results": {
+    "free_wall_static_Schur_product_equals_actual_pole": false,
+    "electron_top_pole_ratio_over_response_ratio": 2.4079082181337057,
+    "full_conserved_charge_vertex_equals_kinetic_Z": true,
+    "normalized_full_conserved_charge_is_identity": true,
+    "uniform_wall_weak_probe_equals_boundary_response": false,
+    "uniform_wall_probe_is_full_Lorentz_chiral_gauged_Wilson_vertex_proved": false,
+    "uniform_wall_weak_current_quark_boundary_max_difference": 0.20465797496130317,
+    "uniform_wall_weak_current_lepton_boundary_max_difference": 0.6621990237213653,
+    "supplemental_Whitney_transfer_equals_canonical_full_carrier_transfer": false,
+    "metaplectic_transport_equals_periodic_internal_outer_history": false,
+    "supplemental_graded_product_free_dispersion_proved": true,
+    "supplemental_graded_product_equals_historical_tensor_placement": false,
+    "full_gauge_Higgs_mirror_interacting_poles_computed": false,
+    "independent_pre_response_photon_coefficient_derived": false,
+    "independent_conditional_free_current_Hessian_calculated": true,
+    "hidden_determinant_and_normalization_Jacobian_retained": true,
+    "Ward_identity_alone_certifies_complete_hidden_loop": false,
+    "central_all_occurrence_link_background_trace_Hessian_is_zero": true,
+    "BKM_state_metric_equals_contact_complete_partition_Hessian_automatically": false,
+    "physical_photon_1PI_equals_screened_external_current_response": false,
+    "legacy_signed_history_automatically_yields_three_generations": false,
+    "actual_signed_history_poles_are_identified_as_particle_masses": false,
+    "common_coframe_source_supplies_nine_traceless_directions": true,
+    "tracefree_Ricci_entropy_norm_has_simple_Einstein_pole": false,
+    "v114_scalar_common_mode_residue_preserved": true,
+    "selected_triangle_gauge_weight_retained": true,
+    "physical_selected_cell_flux_Legendre_response_computed": true,
+    "canonical_golden_block_and_alpha_ratio_derived": true,
+    "finite_data_alone_select_unique_species_source_action": false,
+    "real_decoder_rank13_equals_retained13_projector": false,
+    "premature_retained13_decoder_rank": 5,
+    "whole_A4_conditional_Gaussian_Maxwell_coefficient_derived": true,
+    "conditional_Gaussian_action_identified_with_selected_hat_transfer": false,
+    "retained_common_trace_Einstein_coefficient_derived": true,
+    "physical_selected_transfer_Einstein_pole_derived": false,
+    "standalone_unsubtracted_exponential_trace_has_homothetic_stationary_vacuum": false,
+    "full_Cathedral_joint_vacuum_cancellation_computed": false,
+    "current_gravity_route": "fixed-volume differential entropy/coframe response",
+    "spectral_normalization_is_current_physical_gravity_route": false,
+    "standalone_homothety_test_applies_to_current_fixed_volume_entropy": false,
+    "fixed_volume_entropy_Einstein_tensor_factor_derived": true,
+    "physical_coframe_area_state_derivative_evaluated": false,
+    "cosmological_density_curvature_dictionary_recovered": true,
+    "source_dependent_constraint_multiplier_contacts_derived": true,
+    "shared_species_vacuum_solves_action_completion_choice": false,
+    "local_correlated_hat_selected_transfer_response_computed": true,
+    "local_correlated_hat_equals_full_photon_residue": false,
+    "recovered_stronger_area_law_fixes_diagonal_source_slope": true,
+    "single_entropy_factor_eight_correction_applied": true,
+    "round_screen_positive_normalized_transfer_constructed": true,
+    "constructed_round_clock_equals_actual_selected_clock_proved": false,
+    "actual_full_period_real_decoder_rank": 18,
+    "cube_outer_and_exterior_outer_histories_identified": false,
+    "conditional_96_state_commuting_gauge_matrices_constructed": true,
+    "physical_family_identification_derived_from_full_history": false,
+    "correlated_long_cylinder_free_electric_response_computed": true,
+    "local_electric_kinetic_coefficient_as_function_of_supplied_g2_derived": true,
+    "reference_constant_G_stationarity_preserved": true,
+    "earlier_linear_hidden8_source_has_full_continuous_gauge_covariance": false,
+    "conditional_tensor_gauge_source_has_all_order_covariance": true,
+    "tensor_gauge_source_is_recovered_canonical_embedding": false,
+    "scalar_tensor_sufficient_completion_and_Ward_identity_derived": true,
+    "regional_Wald_compensator_exact_on_independent_source_space": false,
+    "positive_Fock_full_period_field_poles_computed": true,
+    "field_poles_equal_bilinear_electric_current_poles": false,
+    "first_canonical_U1_magnetic_Duhamel_insertion_computed": true,
+    "complete_translated_A4_cosine_Ward_contact_computed": true,
+    "recorded_rail_eventual_critical_return_law_derived": true,
+    "unrecorded_rail_channel_resets_population": false,
+    "fixed_volume_round_critical_endpoint_within_convex_hemisphere": false,
+    "intrinsic_critical_entropy_fixes_causal_trapping": false,
+    "critical_round_root_identity_equals_fixed_filter_instrument": false,
+    "actual_signed_U8_exchanges_rails": true,
+    "actual_even_twelve_step_reference_record_prepares_critical_state": false,
+    "conditional_equal_positive_comoving_roots_reconstruct_reference_endpoint": true,
+    "equal_endpoint_implies_equal_time_source_Hessian": false,
+    "electron_normalized_pure_U1_period_on_quarks": "6pi",
+    "color_compensation_closes_electron_normalized_2pi_rotation": true,
+    "fixed_reference_entropy_includes_mixed_scalar_gauge_contact": true,
+    "modular_static_metric_equals_physical_photon_kinetic_coefficient": false,
+    "bilinear_current_transitions_of_declared_period_Fock_realization_computed": true,
+    "uniform_interspecies_probe_is_recovered_canonical_charged_vertex": false,
+    "common_scalar_tensor_action_simple_poles_and_sources_derived": true,
+    "bare_breathing_minimum_alone_is_common_metric_scalar_vacuum": false,
+    "correlated_magnetic_harmonic_restriction_resummed": true,
+    "harmonic_restriction_solves_all_phase_compact_interacting_theory": false,
+    "established_theory_of_nature": false
+  },
+  "history_scope": {
+    "last_100_complete_transcripts_read": false,
+    "available_complete_sources_recovered": true,
+    "October_photon_evidence": "bounded personal-context retrieval, not complete transcripts",
+    "entrywise_original_v54_Python_recovered": false,
+    "missing_v54_bytes_prove_source_nonexistence": false,
+    "additional_complete_text_sources_checked": 20,
+    "archive_transfer_failure_proves_operator_absence": false,
+    "latest_canonical_species_loaded_generator_entrywise_recovered": false,
+    "legacy_beta_theta_substituted_for_canonical_branch": false
+  },
+  "continued_calculation_checks": {
+    "hidden_loop": 17,
+    "conditional_free_current": 18,
+    "photon_source_dictionary": 25,
+    "weighted_triangle": 14,
+    "narrow_hat_review": 14,
+    "flux_correlator": 18
+  },
+  "new_theory_specification": "continued_physics_work/theory/current_theory_specification.md",
+  "three_derivations": {
+    "report": "Cathedral_Three_Derivations_2026-10-08.md",
+    "golden_alpha": 0.38196601125010515,
+    "golden_lower_slopes_in_sigma_squared": {
+      "direct": -0.4472135954999579,
+      "polynomial": 0.5527864045000421
+    },
+    "photon_momentum_count": 28561,
+    "photon_Z_over_declared_face_c": "sqrt(5)/2",
+    "photon_declared_unit_HS_Z": 0.8379278585797991,
+    "photon_declared_unital_Z": 6.703422868638393,
+    "gravity_G_cutoff2_over_gU2": 0.11928261092128908,
+    "gravity_EH_TT_residue_times_cutoff2_over_gU2": 11.991595973482605,
+    "truncated_vacuum_heat_curvature_parameter": 23.999999999999993,
+    "all_new_calculations_fit_observed_parameters": false
+  },
+  "source_sha256": {
+    "canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py": "e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75",
+    "canonical_sources/Cathedral/urt_v35_wall_current_residue.py": "45431a26bc60587bf46d5a96438a9af981679f8da6d189c1ec809c9f5871d2eb",
+    "canonical_sources/Cathedral/Cathedral_Live_State_v61.md": "dcd4dee3d0dfca119f6f7452a7af51ec01180b43b5b0b90d211af360d8745533",
+    "canonical_recovery_work/v54_source_search/Newton_Cathedral_v54_Explicit_Local_Hamiltonian_Theorem.md": "e3ae11bd80f7a1fc29b3430edf34d1fb798f7ed8214302ca3581af0e7699f75d",
+    "canonical_sources/october_photon_retrieval.json": "79b4b3168f34e5dbac06b05de60dca08438f9219b82c22bcb55496dd02e25f4e"
+  },
+  "joint_vacuum": {
+    "report": "Cathedral_Joint_Vacuum_2026-10-08.md",
+    "fixed_volume_hidden_checks": 16,
+    "correlated_hat_checks": 28,
+    "independent_action_checks": 18,
+    "shared_species_probe_is_canonical_full_action": false,
+    "finite_transfer_probe_is_canonical_full_action": false,
+    "coframe_and_modular_identifications_are_assumed_in_tensor_relation": true,
+    "four_status_ledger": "Closed and frozen; mathematically closed with physical identification pending; reopened scope error rejected; superseded physical normalization.",
+    "new_measured_parameters_fitted": false
+  },
+  "combined_sources": {
+    "report": "Cathedral_Combined_Source_2026-10-08.md",
+    "source_curve_checks": 16,
+    "gauge_join_checks": 49,
+    "photon_multislice_checks": 23,
+    "independent_geometry_checks": 23,
+    "independent_combined_operator_checks": 31,
+    "reference_G_over_A": 1552.8662635751791,
+    "required_reference_area_source_b": 0.18069299683606135,
+    "round_beta_curvature_first": -5.122554849945606,
+    "round_beta_curvature_second": -2.6178076445551737,
+    "actual_period_decoder_rank": 18,
+    "one_entropy_not_two_copies": true,
+    "finite_record_receipt": {
+      "mode": "validate_executed_records",
+      "steps": [],
+      "records": {
+        "entropy_source_curve_checks.json": {
+          "passed": true,
+          "named_checks": 16,
+          "record_sha256": "d7f71ddf1cc68d6aeb15f72f22bb2e6434307776fdce444d45efc90e2f5ee8e4"
+        },
+        "gauge/charged_gauge_join_checks.json": {
+          "passed": true,
+          "named_checks": 49,
+          "record_sha256": "bc6099ee86535be147a74d31a4b7f109480309adef9312a35524c24236643fb9"
+        },
+        "gravity/hidden_metric_compression_checks.json": {
+          "passed": true,
+          "named_checks": 0,
+          "record_sha256": "4cd00b03a6537b8bd93e5be5d2ad8ee447c7f3207c310ddfcb0166c01730953b"
+        },
+        "gravity/round_screen_transfer_checks.json": {
+          "passed": true,
+          "named_checks": 0,
+          "record_sha256": "301b57d973d26a2f65505a76748ccb8e159a1a600aa2de133cd2fc753a06a045"
+        },
+        "photon/correlated_long_transfer_checks.json": {
+          "passed": true,
+          "named_checks": 23,
+          "record_sha256": "8cbf8c21f0081b62ac5b2a3ce0b7224fe4b925d075d72dfbbb0ed78bbeb37dc2"
+        },
+        "review/combined_source_audit_checks.json": {
+          "passed": true,
+          "named_checks": 31,
+          "record_sha256": "f1769b94aeb053a7d5809d62b66bf8981383b86a3df4c1c72c5dd410502c75f3"
+        },
+        "review/entropy_area_geometry_review_checks.json": {
+          "passed": true,
+          "named_checks": 23,
+          "record_sha256": "aa8672873447a2bcc20ba395fb28148240c4ee2ac3281925a13cf64b40f2ca47"
+        },
+        "species/combined_signed_source_checks.json": {
+          "passed": true,
+          "named_checks": 0,
+          "record_sha256": "10d2b9ec4824cc54cead236631f8791f0ed2ea2b703f1f93b4a18b11d19d7a87"
+        }
+      },
+      "all_records_pass": true,
+      "finite_operator_arrays": 192,
+      "source_hashes_match": true,
+      "photon_quadrature_repeated": false,
+      "elapsed_seconds": 0.08832977600013692,
+      "scope": "Declared constructions and source identities. Conditional source realizations do not certify the full interacting physical theory."
+    },
+    "all_new_computations_fit_measured_parameters": false,
+    "conditional_scope": "Recovered nonlinear area law, declared screen geometry, conditional history continuation and exterior-family physical dictionary, and local free-electric restriction."
+  },
+  "physical_joins": {
+    "report": "Cathedral_Physical_Joins_2026-10-08.md",
+    "finite_record_receipt": {
+      "all_records_pass": true,
+      "records": {
+        "causal/critical_round_flrw_checks.json": {
+          "passed": true,
+          "named_checks": 36,
+          "record_sha256": "bf4de72a0550d9169c1d02307ab908ccb0cc0b7a5cb7f51e9febf3004f604cbb"
+        },
+        "critical/rail_transition_checks.json": {
+          "passed": true,
+          "named_checks": 20,
+          "record_sha256": "d60436396656cecda55b0066e5efda400ba73c595edbd344679e9abe0d0854d3"
+        },
+        "gauge/full_entropy_gauge_join_checks.json": {
+          "passed": true,
+          "named_checks": 28,
+          "record_sha256": "d89a97c9c1ef42c8ffad43c2acf86a3850432f4d88217c187e547f299a3fa282"
+        },
+        "gravity/covariant_entropy_join_checks.json": {
+          "passed": true,
+          "named_checks": 0,
+          "record_sha256": "046098265bc99aa6118a94a7bf82e6f1cf91108539dcd5784a8746df4d2fb58c"
+        },
+        "matter/full_period_physical_checks.json": {
+          "passed": true,
+          "named_checks": 0,
+          "record_sha256": "375b11e3339528ec7a9c279daa586e660a812545fc0a546cf6328a7789fbb8f6"
+        },
+        "photon/magnetic_selected_response_checks.json": {
+          "passed": true,
+          "named_checks": 21,
+          "record_sha256": "030abdb7f44470d0501a7180c2bcac221257ef9c0a06ad48938fb690fb7fa72d"
+        },
+        "review/final_join_review_checks.json": {
+          "passed": true,
+          "named_checks": 30,
+          "record_sha256": "34668418e277a0e134241f205ed8c883f9f45cb1350f64a7ce969cece97dcfb8"
+        }
+      },
+      "named_checks": 135,
+      "finite_operator_arrays": 173,
+      "operator_archives": [
+        {
+          "path": "final_join_work/causal/critical_round_flrw_operators.npz",
+          "array_count": 22,
+          "sha256": "18420e5229de244a3ff5dd6eebbc21a1333b7fcf87a8f03d0f0fcf6709be3840"
+        },
+        {
+          "path": "final_join_work/critical/rail_transition_operators.npz",
+          "array_count": 13,
+          "sha256": "d3f8975c93850b08da9f4dfcd64c48ce643061d513be4c710939d07938b93819"
+        },
+        {
+          "path": "final_join_work/gauge/full_entropy_gauge_join_operators.npz",
+          "array_count": 37,
+          "sha256": "062544a1f9a2cf87558574274360aaa5ac960db3afd4b728e74b1c300e7e79cb"
+        },
+        {
+          "path": "final_join_work/gravity/covariant_entropy_join_operators.npz",
+          "array_count": 7,
+          "sha256": "028ce52e6cf753a7e907fb8b7d47768ffc205d3509f023643bb7718fff9bf711"
+        },
+        {
+          "path": "final_join_work/matter/full_period_physical_operators.npz",
+          "array_count": 69,
+          "sha256": "a01ca7035b7390a0b2dc8cac78a1a740b84f694a816c4265862db308b3dca8e4"
+        },
+        {
+          "path": "final_join_work/photon/magnetic_selected_response_operators.npz",
+          "array_count": 25,
+          "sha256": "d98e6cb7b4626017d6e6dc78ba8d0ee258515904de40ceb0ece73cdc9378239f"
+        }
+      ],
+      "source_hashes_match": true,
+      "provenance_hashes_checked": 24,
+      "frozen_input_revisions": [
+        {
+          "record": "final_join_work/matter/full_period_physical_checks.json",
+          "source_path": "continued_physics_work/theory/current_theory_specification.md",
+          "sha256": "f29f70351fe5665a9fcece6636817eeb24feb312b9bde406215813c25f3c27c2",
+          "snapshot_path": "final_join_work/recovery/theory_input_v3.md",
+          "reason": "Authoritative v3 input read and verified before integration; current specification advances its prose."
+        }
+      ],
+      "scripts_parse": 8,
+      "quadrature_repeated": false,
+      "new_measured_parameters_fitted": false,
+      "elapsed_seconds": 0.13617719499961822,
+      "scope": "Exact and numerical construction tests under declared premises; physical identity and empirical tests remain separately stated."
+    },
+    "named_checks": 135,
+    "reference_entropy_and_constant_G_stationarity": "S_gen/H_star=2u+u^-2; derivative at1 is0",
+    "conditional_gauge_tensor_carrier_dimension": 40,
+    "full_finite_algebra_tensor_carrier_dimension": 48,
+    "scalar_null_production_positivity_condition": "F>0 and Z+27F/8>=0; Z is not selected by the entropy curve",
+    "absolute_hidden_trace_sigma_derivative_at_reference": 1.6251047727402181,
+    "full_period_retained_hidden_dimensions": [
+      156,
+      612
+    ],
+    "eventual_reference_critical_hitting_probability": 1.2392055341310765e-05,
+    "conditional_reference_return_mean_filter_steps": 1.0000123922089061,
+    "critical_geometry": {
+      "reference_R": 1.902113032590307,
+      "reference_R_squared": 3.6180339887498945,
+      "reference_area": 45.46555599797938,
+      "reference_volume": 28.826875532573663,
+      "canonical_Delta": 0.0024891898404204027,
+      "reference_population": 6.196027670655383e-06,
+      "reference_binary_entropy": 8.049630733313202e-05,
+      "critical_area_ratio": 0.010776438344804998,
+      "critical_dimensionless_radius_x": 2.9667273912782393,
+      "critical_K_times_R_squared": 2.808670026596769,
+      "critical_sectional_curvature_K": 0.7762973027147329,
+      "critical_geodesic_radius": 3.367158830893487,
+      "critical_areal_radius": 0.19745764155679613,
+      "critical_area": 0.48995676102450436,
+      "critical_screen_Gaussian_curvature": 25.647917559261288,
+      "critical_spatial_Ricci_scalar": 4.657783816288397,
+      "critical_outward_spatial_shape_curvature": -4.987145501842367,
+      "critical_ball_fraction_of_entire_3sphere": 0.9988722491723373,
+      "hemisphere_sectional_curvature_at_fixed_reference_volume": 0.48940467654700903,
+      "hemisphere_area_ratio": 0.5647539050916129,
+      "hemisphere_binary_entropy": 0.000252381474250023,
+      "hemisphere_population": 2.1482449177049876e-05,
+      "hemisphere_modular_gap": 10.748252790865687,
+      "maximum_positive_curvature_before_cutlocus_K": 0.7768814983888785,
+      "hemisphere_radius_at_critical_K": 1.7828131896620358,
+      "cutlocus_radius_at_critical_K": 3.5656263793240717,
+      "reference_area_over_critical_area": 92.79503747006268,
+      "critical_area_over_reference_area": 0.010776438344804998
+    },
+    "all_new_computations_fit_measured_parameters": false,
+    "conditional_scope": "Specified source and action completions are proved, while canonical physical identification and empirical predictions remain separately typed."
+  },
+  "coupled_responses": {
+    "report": "Cathedral_Coupled_Responses_2026-10-08.md",
+    "continued_sections": [
+      51,
+      59
+    ],
+    "finite_record_receipt": {
+      "all_records_pass": true,
+      "records": {
+        "chronology/chronology_channel_checks.json": {
+          "passed": true,
+          "named_checks": 38,
+          "sha256": "ad87bb077faf0423392f19da8892678f7fb4f22926924a60151f110ad5a5b683"
+        },
+        "entropy/common_reference_contacts_checks.json": {
+          "passed": true,
+          "named_checks": 43,
+          "sha256": "cc4e479f3e6a127e5c7f1010e1aa913cbd72f6552ada0e18678d91a11c395fee"
+        },
+        "gravity/scalar_coframe_response_checks.json": {
+          "passed": true,
+          "named_checks": 0,
+          "sha256": "07947a93fa3e23090c524021ba35944a692d11c0f5bdc399685a12bf85b0be44"
+        },
+        "matter/bilinear_fock_response_checks.json": {
+          "passed": true,
+          "named_checks": 0,
+          "sha256": "88660786668403164413219427e98f19aa3017da9fac1ba9c816ceaae3d81ad2"
+        },
+        "normalization/compact_source_normalization_checks.json": {
+          "passed": true,
+          "named_checks": 56,
+          "sha256": "0f8e38970c0072a26095ff51cfcb8faa601cede7b53fe43c761f7554d0a0fa64"
+        },
+        "photon/harmonic_mehler_response_checks.json": {
+          "passed": true,
+          "named_checks": 16,
+          "sha256": "6b805036609ab2415305fc3f18f5758da1a2441d444d90633e6958879c61a353"
+        },
+        "photon/rail_multitime_response_checks.json": {
+          "passed": true,
+          "named_checks": 26,
+          "sha256": "2561398255656e811fdaadec19d8e409554c2bc8bca297bb6358fae0eb63ef13"
+        },
+        "review/rail_scalar_review_checks.json": {
+          "passed": true,
+          "named_checks": 18,
+          "sha256": "852e445afb7aa083387eab8ce17a4c18c8c60c6bcac2053dbf22266b2d814b51"
+        },
+        "review/response_audit_checks.json": {
+          "passed": true,
+          "named_checks": 29,
+          "sha256": "ff305a1a00e642048e141168cf3629d2df4b09ddd64b018b9623ce0413d1da59"
+        },
+        "review/thermal_current_review_checks.json": {
+          "passed": true,
+          "named_checks": 16,
+          "sha256": "2e3222f21d92920325c04de1462fb43eca0abf060ecc8ff18ab37176241b8f90"
+        }
+      },
+      "named_checks": 242,
+      "finite_operator_arrays": 256,
+      "operator_archives": [
+        {
+          "path": "response_join_work/chronology/chronology_channel_operators.npz",
+          "array_count": 48,
+          "sha256": "95d17b3dac8e074d0430ccc989d0994c98d76d3e51803e7e12f0b588a85a9619"
+        },
+        {
+          "path": "response_join_work/entropy/common_reference_contacts_operators.npz",
+          "array_count": 16,
+          "sha256": "d3439ae52c0912c078241d302d39192ffbadf61a7f04cb9bb9faf178ca59bd2c"
+        },
+        {
+          "path": "response_join_work/gravity/scalar_coframe_response_operators.npz",
+          "array_count": 14,
+          "sha256": "806991f0a0d77dea604711081966272f7ca406ca34b008f178198651fdc497b8"
+        },
+        {
+          "path": "response_join_work/matter/bilinear_fock_response_operators.npz",
+          "array_count": 50,
+          "sha256": "17925f80d8b06afd8e9af48a53e1ff7a2fe9e37da004936dda38051c77fa610b"
+        },
+        {
+          "path": "response_join_work/normalization/compact_source_normalization_operators.npz",
+          "array_count": 35,
+          "sha256": "0aec893b3b4349369efe7714bf681973966ecf015e7de49b9279a31037149cf4"
+        },
+        {
+          "path": "response_join_work/photon/harmonic_mehler_response_operators.npz",
+          "array_count": 51,
+          "sha256": "da3b9a65772962d1d0a92f4e658a6a1db10e156ad043366a749a501bd161586c"
+        },
+        {
+          "path": "response_join_work/photon/rail_multitime_response_operators.npz",
+          "array_count": 42,
+          "sha256": "36eef1b0a2cd7f4586accfdcd55cbd51c94b72e436e10d1ad83816b0f53c20ba"
+        }
+      ],
+      "source_hashes_match": true,
+      "provenance_hashes_checked": 47,
+      "frozen_input_revisions": [
+        {
+          "record": "response_join_work/matter/bilinear_fock_response_checks.json",
+          "source_path": "continued_physics_work/theory/current_theory_specification.md",
+          "sha256": "29c36fe96a7ec60414a9bb59e38ae19163aef354009a0ce207fc193f20e7352f",
+          "snapshot_path": "response_join_work/recovery/theory_input_v4.md",
+          "reason": "Authoritative v4 specification verified before coupled-response integration; execution provenance is not rewritten."
+        }
+      ],
+      "scripts_parse": 12,
+      "json_files_parse": 15,
+      "quadrature_repeated": false,
+      "measured_parameters_fitted": false,
+      "complete_theory_of_nature_established": false,
+      "scope": "Verified chronological/source and conditional common-action responses; canonical physical identities remain explicitly stated.",
+      "elapsed_seconds": 0.11479639000026509
+    },
+    "real_cross_rail_source_dimension": 16,
+    "complex_cross_rail_source_real_dimension": 32,
+    "conditional_endpoint_assumptions": [
+      "Fixed endpoint",
+      "Equal positive subdivisions",
+      "Co-moving covariance"
+    ],
+    "same_endpoint_not_same_temporal_Hessian": true,
+    "source_second_contacts_retained": true,
+    "constant_G_reference_route_preserved": true,
+    "canonical_potential_zero_preserved": true,
+    "physical_clock_and_action_conversion_sources_symbolic": true,
+    "measured_parameters_fitted": false,
+    "scope": "Actual finite chronology/charge and declared conditional common-action source responses, with action matching separately stated."
+  },
+  "common_action_derivations": {
+    "report": "Cathedral_Common_Action_2026-10-08.md",
+    "continued_sections": [
+      60,
+      66
+    ],
+    "finite_record_receipt": {
+      "all_records_pass": true,
+      "records": {
+        "recovery/recovery_provenance_checks.json": {
+          "passed": true,
+          "named_checks": 26,
+          "sha256": "7eded953c443a2e660b625289e30e57f04058e30750448debf44a88cb6826f04"
+        },
+        "gauss/charged_observable_dictionary_checks.json": {
+          "passed": true,
+          "named_checks": 25,
+          "sha256": "a5dff2b5ea05dd8ee2b289c0e10f50a80ffc965b4f685dc80da53b39e664cd58"
+        },
+        "review/source_action_lemma_checks.json": {
+          "passed": true,
+          "named_checks": 39,
+          "sha256": "799dff07bf85b20eaf872b141b6e2d4b093d58bb42c666ffb48ac5f8665be26f"
+        },
+        "review/source_response_dictionary_checks.json": {
+          "passed": true,
+          "named_checks": 24,
+          "sha256": "b9408efb695937351774573b84fc326c00fe7a39730b968c3708184db125fa54"
+        },
+        "gravity/selected_coframe_hessian_checks.json": {
+          "passed": true,
+          "named_checks": 13,
+          "sha256": "2bb1cc69cf026163d5066fdde8b301923523c74890ab8a8637b33476889e8005"
+        },
+        "photon/translated_photon_response_checks.json": {
+          "passed": true,
+          "named_checks": 28,
+          "sha256": "4481ac8049ace7f32e91eb75486d50913578267f2d1d6761eba3e7b727913d74"
+        },
+        "matter/microscopic_source_currents_checks.json": {
+          "passed": true,
+          "named_checks": 35,
+          "sha256": "2788a03bffc6f1e908a62e3c3fb73993b2d7404da3d050812eb45aaba17d3ac6"
+        },
+        "review/common_action_audit_checks.json": {
+          "passed": true,
+          "named_checks": 18,
+          "sha256": "670ce411fea81c39f06e60a7488c52a0caac60e24960e626a765874193655a40"
+        }
+      },
+      "named_checks": 208,
+      "operator_archives": [
+        {
+          "path": "common_action_work/recovery/recovered_original_clifford_operators.npz",
+          "array_count": 14,
+          "sha256": "8cb4cf79276bc07537e7b66634c76be9b8ef6303158eb53b6c622b7f598da2b1"
+        },
+        {
+          "path": "common_action_work/gauss/charged_observable_dictionary_operators.npz",
+          "array_count": 13,
+          "sha256": "180c54d9d70b65ff41e5373986bf6db30611d6f034576d635e5082a71f4886e5"
+        },
+        {
+          "path": "common_action_work/gravity/selected_coframe_hessian_operators.npz",
+          "array_count": 19,
+          "sha256": "448ca68951f92f6df93c286bd12b0104f36bc84d549df9e85b37fb8d66faaab2"
+        },
+        {
+          "path": "common_action_work/photon/translated_photon_response_operators.npz",
+          "array_count": 50,
+          "sha256": "a95d1269d8010d5c61738a5de1f48395305f1da35b709a2e6403b6d9568e2083"
+        },
+        {
+          "path": "common_action_work/matter/microscopic_source_currents_operators.npz",
+          "array_count": 38,
+          "sha256": "75dd59c01d3b802edc1a2f2a1ec394daf7f9c57a63b7da5440e2386dd8f3865b"
+        }
+      ],
+      "finite_operator_arrays": 134,
+      "provenance_hashes_checked": 56,
+      "source_hashes_match": true,
+      "frozen_input_revisions": [
+        {
+          "record": "gravity/selected_coframe_hessian_checks.json",
+          "source_path": "continued_physics_work/theory/current_theory_specification.md",
+          "sha256": "745d2b85ddfb29f387ce88431512d7787b5b2cbadfc597dbb98194fded7b0021",
+          "snapshot_path": "common_action_work/recovery/theory_input_v5.md",
+          "reason": "Full authoritative v5 input verified before common-action integration."
+        },
+        {
+          "record": "photon/translated_photon_response_checks.json",
+          "source_path": "continued_physics_work/theory/current_theory_specification.md",
+          "sha256": "745d2b85ddfb29f387ce88431512d7787b5b2cbadfc597dbb98194fded7b0021",
+          "snapshot_path": "common_action_work/recovery/theory_input_v5.md",
+          "reason": "Full authoritative v5 input verified before common-action integration."
+        }
+      ],
+      "source_recovery_dependency": "NetworkX 3.5; cached validation does not import it.",
+      "physics_recomputed": false,
+      "measured_parameters_fitted": false,
+      "complete_theory_of_nature_established": false,
+      "scope": "Actual recovered source restrictions, exact transfer/observable dictionary and independent audit; physical canonical action identification separately stated.",
+      "elapsed_seconds": 0.12789151299875812
+    },
+    "original_source_trace": "Tr M\u2020M=8(|z_l|\u00b2+3|z_c|\u00b2)",
+    "exact_translated_A4_bands": "0;(5\u2212|S|)x3;(5+|S|)x3;10x3",
+    "Hamiltonian_graph_geometric_dimensions": 4,
+    "additional_transfer_clock": true,
+    "physical_3plus1_leaf_identification_claimed": false,
+    "same_source_entropy_action_contacts_derived": true,
+    "charged_observable_Gauss_dressing_and_IR_threshold_scope_derived": true,
+    "all_diamond_conditional_Einstein_interface_preserved": true,
+    "full_October_Fcan_claimed_recovered": false,
+    "measured_parameters_fitted": false,
+    "scope": "Exact source identities and literal recovered sector restrictions, not a certificate of the full interacting canonical theory of Nature."
+  },
+  "physical_leaf": {
+    "report": "Cathedral_Physical_Leaf_2026-10-09.md",
+    "continued_sections": [
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "named_checks": 336,
+    "finite_operator_arrays": 117,
+    "provenance_hashes_checked": 53,
+    "literal_conserved_boundary_label_recovered": true,
+    "fixed_boundary_base_leaf_dimensions": 4,
+    "fibrewise_positive_transfer_in_typed_registry_derived": true,
+    "compatible_symplectic_chart_and_Casimir_derived": true,
+    "A4_height_identified_with_boundary_label": false,
+    "A4_one_slice_Gaussian_source_retains_all_normal_modes": true,
+    "freezing_crossing_links_is_gauge_invariant_leaf_reduction": false,
+    "raw_common_clock_relative_cones_removed_by_unit_change": false,
+    "conditional_bare_common_cone_scalar_weight": "1/(2n)",
+    "conditional_bare_common_cone_fermion_weight": "1/n",
+    "these_weights_claimed_recovered_canonical_entries": false,
+    "full_physical_time_coframe_embedding_established": false,
+    "full_nonlinear_species_action_identification_established": false,
+    "measured_parameters_fitted": false,
+    "scope": "Resolved conserved-boundary geometry and fibrewise positivity with exact action-slicing and source-memory conditions; physical identification retains its stated conditions."
+  },
+  "geometric_time": {
+    "report": "Cathedral_Geometric_Time_2026-10-09.md",
+    "continued_sections": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "finite_record_receipt": {
+      "all_records_pass": true,
+      "runner_sha256": "b2ef8ad5805a07154e26d72097cdb32de1d3300916859364766b44f755383420",
+      "records": {
+        "scalar/a4_height_scalar_transfer_checks.json": {
+          "passed": true,
+          "named_checks": 50,
+          "sha256": "825eb9488eae1b4ff77447f3ba280ed48bd36f499385c3eb4e4406ce892ac50d",
+          "script": "geometric_time_work/scalar/a4_height_scalar_transfer.py",
+          "script_sha256": "f2cefd0c3dc7bdd7357fa0af968cdb04dbe0ef5e916acefe8ba8fc3a498010c2",
+          "declared_script_hash_verified": true
+        },
+        "gauge/a4_height_transfer_checks.json": {
+          "passed": true,
+          "named_checks": 30,
+          "sha256": "8a624f855a0aa0a0ba27bada503ff9a53d8a2e0f49e7074b489f13290de36eab",
+          "script": "geometric_time_work/gauge/a4_height_transfer.py",
+          "script_sha256": "7a6d83d626a3432b5a4fbd3f476ba32e2a6c575ec7ebecf92e3a6ad09e29868a",
+          "declared_script_hash_verified": true
+        },
+        "matter/geometric_height_matter_checks.json": {
+          "passed": true,
+          "named_checks": 41,
+          "sha256": "2c92abc0293865e0d112079c50b2f5b9b23b43bf5fd42dbc857af88967f5d077",
+          "script": "geometric_time_work/matter/geometric_height_matter.py",
+          "script_sha256": "165bef1948f7bfeef1ab62a33ce84b22243336d829192a82fcce8b8a3b2c447b",
+          "declared_script_hash_verified": true
+        },
+        "source/height_source_transport_checks.json": {
+          "passed": true,
+          "named_checks": 27,
+          "sha256": "1d3fcbe5026c89ef40dedab173a22846fef2879d8fb26d2ec65b2f803105c5d1",
+          "script": "geometric_time_work/source/height_source_transport.py",
+          "script_sha256": "78b27cef3961fc63ed37ed3ad72934f4e32a2fc86b8846a832e9b2128952c059",
+          "declared_script_hash_verified": true
+        },
+        "recovery/phase_covariant_selection_checks.json": {
+          "passed": true,
+          "named_checks": 79,
+          "sha256": "5f87942093467d545ae86762c0f8bc17e4ec08d66663dfe16fd50d750083e1b8",
+          "script": "geometric_time_work/recovery/phase_covariant_selection.py",
+          "script_sha256": "6f1ef3ea98bbbe976dc8f4f31ad547d42f1d62603be8971fde7c03704f801c82",
+          "declared_script_hash_verified": true
+        },
+        "root_time/root_normal_scalar_transfer_checks.json": {
+          "passed": true,
+          "named_checks": 47,
+          "sha256": "6b098a024c48027accc79e0ac51ba5edb56047a4908cb859f5983d5742f45436",
+          "script": "geometric_time_work/root_time/root_normal_scalar_transfer.py",
+          "script_sha256": "9b14672ee52a59b3203eefcd3a41aaaa95411b46460f538c7a691ff9e4cedca3",
+          "declared_script_hash_verified": true
+        },
+        "matter/root_normal_matter_checks.json": {
+          "passed": true,
+          "named_checks": 35,
+          "sha256": "59a785ed40c05341e8a2605e8e23964d1f781b0e5c367843d3cc522351cba449",
+          "script": "geometric_time_work/matter/root_normal_matter.py",
+          "script_sha256": "00a75601ce4e3ac700c3121f6e871d534efd370a3eee45b802f5c6d0b22f42ae",
+          "declared_script_hash_verified": true
+        },
+        "review/geometric_reflection_audit_checks.json": {
+          "passed": true,
+          "named_checks": 19,
+          "sha256": "69ef22ecfd0147f3ef3806dc9d04c825cadb78f4cdda1a9f934e608ba6ac65f6",
+          "script": "geometric_time_work/review/geometric_reflection_audit.py",
+          "script_sha256": "0eb845fb5005c05cc57f960e6e885af2ca7b246b94a5b2ef8304d54ed17b3d4f",
+          "declared_script_hash_verified": true
+        },
+        "review/geometric_source_audit_checks.json": {
+          "passed": true,
+          "named_checks": 123,
+          "sha256": "04224d3dfdb23dcf518a16ba382bd09ffb4d358c2b414e2beb715045316f1559",
+          "script": "geometric_time_work/review/geometric_source_audit.py",
+          "script_sha256": "0b34c6158864c630d1ec85faf7d4282a013e22cb5c374ed406162a4d269221bd",
+          "declared_script_hash_verified": true
+        }
+      },
+      "named_checks": 451,
+      "operator_archives": [
+        {
+          "path": "geometric_time_work/scalar/a4_height_scalar_transfer_operators.npz",
+          "array_count": 35,
+          "sha256": "27c916acd853dff7268771024c1987f7843d3383f30de5963cf3a0a80ac00371"
+        },
+        {
+          "path": "geometric_time_work/gauge/a4_height_transfer_operators.npz",
+          "array_count": 55,
+          "sha256": "d0e22d149cd2f1880625eb186ea89740dc97db35305295384191ccbbfcf639bb"
+        },
+        {
+          "path": "geometric_time_work/matter/geometric_height_matter_operators.npz",
+          "array_count": 44,
+          "sha256": "14e66879c14ff6304ee8f253d4998a9129bf25eaf7565cc4073a350e7efc14b2"
+        },
+        {
+          "path": "geometric_time_work/source/height_source_transport_operators.npz",
+          "array_count": 34,
+          "sha256": "efc9276d20d513d3390134bede20f5672d733f47bee12287877f64c4b0de61a6"
+        },
+        {
+          "path": "geometric_time_work/recovery/phase_covariant_selection_operators.npz",
+          "array_count": 24,
+          "sha256": "306968fd3dfe5b61684cc67af37d755aee4826b7bdb2e0458f368825b465997c"
+        },
+        {
+          "path": "geometric_time_work/root_time/root_normal_scalar_transfer_operators.npz",
+          "array_count": 40,
+          "sha256": "b50551c2588c02110b5a4e166de7f1d885f0aa5e7c2929fe9b0cb6e7fc62fc2b"
+        },
+        {
+          "path": "geometric_time_work/matter/root_normal_matter_operators.npz",
+          "array_count": 33,
+          "sha256": "918bbca5b80329a975c37bfd6983847fc00eda6f4457723fa66fba66306d2340"
+        },
+        {
+          "path": "geometric_time_work/review/geometric_reflection_audit_operators.npz",
+          "array_count": 16,
+          "sha256": "01050403ae0bbb6b68b3d3eac9c8c4d0164d9c7d612712c80e8b0b5a108a81cb"
+        }
+      ],
+      "finite_operator_arrays": 281,
+      "source_hashes_match": true,
+      "provenance_hashes_checked": 65,
+      "frozen_input_revisions": [],
+      "v7_input_revision": {
+        "source_path": "continued_physics_work/theory/current_theory_specification.md",
+        "sha256": "8d5fe606b31d8ca2b4636059d41517ad09943dee7786e7547fa5ccedb75c8d4f",
+        "snapshot_path": "geometric_time_work/recovery/theory_input_v7.md",
+        "reason": "Full authoritative version7 read; restored omitted final newline matches exact source bytes."
+      },
+      "frozen_scientific_receipts": {
+        "scalar/a4_height_scalar_transfer_receipt.json": {
+          "passed": true,
+          "sha256": "5709d8257b633ebb7ac705ea7c83b80a1bb7cad3f40c00547aa675d5f623c645",
+          "file_fingerprints_verified": 5
+        },
+        "gauge/a4_height_transfer_receipt.json": {
+          "passed": true,
+          "sha256": "787ec911b5645d3ccf5c03c45c21f7ffb2c6904f29aa896b3cccf0350efa5cd1",
+          "file_fingerprints_verified": 4
+        },
+        "matter/geometric_height_matter_receipt.json": {
+          "passed": true,
+          "sha256": "4ddaedd3387927e877a4444ef388fc4e52ea5c9ae1e8808a9d7c6abd50a5f190",
+          "file_fingerprints_verified": 5
+        },
+        "recovery/canonical_action_recovery_receipt.json": {
+          "passed": true,
+          "sha256": "6e5d27e9e61e39376ce2d60992cc3a18f749b8f7235f89d135420450c32ec6be",
+          "file_fingerprints_verified": 4
+        },
+        "root_time/root_normal_scalar_transfer_receipt.json": {
+          "passed": true,
+          "sha256": "a08afd38d37fcedf67f5f1f5f1ad6489dcb39784bc3c3b224e085ae8508724fb",
+          "file_fingerprints_verified": 5
+        },
+        "matter/root_normal_matter_receipt.json": {
+          "passed": true,
+          "sha256": "b6936c4372f324a3c685c4b169df4771d2db75ee9adbd7f8b90521c81d2a4e67",
+          "file_fingerprints_verified": 5
+        }
+      },
+      "excluded_operational_recovery_records": [        {
+          "path": "recovery/pca_unavailable.json",
+          "reason": "Unavailable Personal Context error, not scientific source evidence."
+        }
+      ],
+      "physics_recomputed": false,
+      "measured_parameters_fitted": false,
+      "archived_sector_timing_logs_preserved": [],
+      "complete_theory_of_nature_established": false,
+      "scope": "Literal geometric-height scalar, gauge and matter restrictions; exact source and phase-selector contacts; independently scoped reflection and physical-time conditions.",
+      "elapsed_seconds": 0.30524459299977025
+    },
+    "shared_bare_geometric_continuum_principal_speed": 1,
+    "open_scalar_polar_transfer_derived": true,
+    "finite_seam_holonomy_and_connection_contacts_retained": true,
+    "full_gauge_crossing_Schur_poles_and_contacts_derived": true,
+    "full_Wilson_poles_and_endpoint_conversion_derived": true,
+    "root_normal_infinite_scalar_site_reflection_positive": true,
+    "positive_two_height_scalar_step_distance": "sqrt2",
+    "original_odd13_scalar_finite_site_reflection_positive": false,
+    "odd13_obstruction_scope": "zero-spatial site reflection for every positive scalar mass and loading",
+    "distinct_even26_scalar_site_reflection_positive": true,
+    "literal_r1_root_normal_full_spin_CAR_source_positive": false,
+    "r1_obstruction_scope": "every m0>0 at rest, including every positive even-height separation",
+    "normalized_free_rest_Dirac_continuum_source_limit_derived": true,
+    "interacting_continuum_limit_established": false,
+    "phase_covariant_joint_selector_and_source_jets_derived": true,
+    "orbit_and_decoder_rank18_envelopes_identical": false,
+    "selected_transfer_identified_with_geometric_time": false,
+    "measured_parameters_fitted": false,
+    "scope": "Exact geometric-time, selector and source theorems for specified complete root actions; finite reflection obstructions and free limits explicitly retained."
+  },
+  "canonical_time": {
+    "report": "Cathedral_Canonical_Time_2026-10-09.md",
+    "continued_sections": [
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "finite_record_receipt": {
+      "all_records_pass": true,
+      "runner_sha256": "2cad22c6e60d8703c46e6dcfa11866c92e9d0ff9bec87fb22345466957d73c7b",
+      "helper_source_sha256": {
+        "run_geometric_time.py": "b2ef8ad5805a07154e26d72097cdb32de1d3300916859364766b44f755383420"
+      },
+      "records": {
+        "transfer/positive_thermal_reflection_checks.json": {
+          "passed": true,
+          "named_checks": 34,
+          "sha256": "b2c41f6a4c216042fe7dc2830eef7376e6c9816e22dcd0f5dd8b81c8684538d4",
+          "script": "physical_time_work/transfer/positive_thermal_reflection.py",
+          "script_sha256": "039e0a5e3f734c2df3a3576710a3e2c20e2969d2b0384e979e26ebc6e3c60dce",
+          "declared_script_hash_verified": true
+        },
+        "thermal_sources/integer_thermal_source_jets_checks.json": {
+          "passed": true,
+          "named_checks": 87,
+          "sha256": "36a2d09a4bceba67047a373dd8dc8c0c80269ea5e07cf4f08f87a24ce88437b3",
+          "script": "physical_time_work/thermal_sources/integer_thermal_source_jets.py",
+          "script_sha256": "7140f7c3659e701ab75e3228043462d9f414090096323c92cbd56ca519291114",
+          "declared_script_hash_verified": true
+        },
+        "source/kernel_source_contacts_checks.json": {
+          "passed": true,
+          "named_checks": 120,
+          "sha256": "a97529772412c9e4111c990bc5348f69b130fc4237943bca197cca4ee1dcafab",
+          "script": "physical_time_work/source/kernel_source_contacts.py",
+          "script_sha256": "d4ceb9e37b5b16df5711ac10b68c9fa96fd6d6339205c2fcf058f4718f1eecc8",
+          "declared_script_hash_verified": true
+        },
+        "fermion/general_root_wilson_checks.json": {
+          "passed": true,
+          "named_checks": 61,
+          "sha256": "1bc06f9571b387b9fd45711578f7498d608c632e66ce65e541c2e15760649bd6",
+          "script": "physical_time_work/fermion/general_root_wilson.py",
+          "script_sha256": "62dbb3a2bc2b1196ee9cc2151f166202c10d9dfe302b4e82a23f827484351654",
+          "declared_script_hash_verified": true
+        },
+        "recovery/canonical_applicability_ledger_checks.json": {
+          "passed": true,
+          "named_checks": 49,
+          "sha256": "fa1040b8ae47bb11283fc27debcd3c58ed4e5f1be661453ced4e297d859d6865",
+          "script": "physical_time_work/recovery/canonical_applicability_ledger.py",
+          "script_sha256": "a0415be0028262a64d5ef3c13680f20fa73f49239b13170dc1d217d9139597db",
+          "declared_script_hash_verified": true
+        },
+        "review/positive_time_independent_audit_checks.json": {
+          "passed": true,
+          "named_checks": 48,
+          "sha256": "fdbc3730235091055fa80ef86c350b77cd9197f58a42cc009b01b4a75c88486c",
+          "script": "physical_time_work/review/positive_time_independent_audit.py",
+          "script_sha256": "eb3db19d6e56d0b614b96a9ed24f1013b14712ceaa2b0d2313d50a62d9087df1",
+          "declared_script_hash_verified": true
+        },
+        "review/positive_time_source_audit_checks.json": {
+          "passed": true,
+          "named_checks": 122,
+          "sha256": "34ada43563c83e7e5af8fc9347b0a1e4b72bb38373906f0140ffbd989aa46558",
+          "script": "physical_time_work/review/positive_time_source_audit.py",
+          "script_sha256": "1c4bcdbf598718766c52d25e43ce8bc25f4a5ae1a8ea7c3f4bcc4c198cf5059a",
+          "declared_script_hash_verified": true
+        }
+      },
+      "named_checks": 521,
+      "operator_archives": [
+        {
+          "path": "physical_time_work/transfer/positive_thermal_reflection_operators.npz",
+          "array_count": 38,
+          "sha256": "342781483cdfdaea3bed1c6f2882ffdaac1f0caa54eca1ae6af7b0bf00164587"
+        },
+        {
+          "path": "physical_time_work/thermal_sources/integer_thermal_source_jets_operators.npz",
+          "array_count": 39,
+          "sha256": "ed5d5a71d04a93bdae5686d3ef20377c2d235a16e004f477ff7187afec8b6d3f"
+        },
+        {
+          "path": "physical_time_work/source/kernel_source_contacts_operators.npz",
+          "array_count": 20,
+          "sha256": "61166bf15522c043990bc3f460837b1668e0b230cf1fc411123fd79e1694e510"
+        },
+        {
+          "path": "physical_time_work/fermion/general_root_wilson_operators.npz",
+          "array_count": 20,
+          "sha256": "68968ab581b7e7d2c13800406629619b6d23f93155687988dab2a8b7f7566493"
+        },
+        {
+          "path": "physical_time_work/recovery/canonical_applicability_ledger_operators.npz",
+          "array_count": 24,
+          "sha256": "6f4233f126c65905581dac938f2064e6c9639d6f724559acaa64bb2e783be2b9"
+        },
+        {
+          "path": "physical_time_work/review/positive_time_independent_audit_operators.npz",
+          "array_count": 20,
+          "sha256": "81d03a2fd7d0f497f42f7fd6a06dddf53c0f135880dfb42a4b1f82e505579b72"
+        }
+      ],
+      "finite_operator_arrays": 161,
+      "source_hashes_match": true,
+      "provenance_hashes_checked": 96,
+      "frozen_input_revisions": [],
+      "v8_input_revision": {
+        "source_path": "continued_physics_work/theory/current_theory_specification.md",
+        "snapshot_path": "physical_time_work/recovery/theory_input_v8.md",
+        "version": 8,
+        "sha256": "24b21ab1897294bb148c6438f678d6f7d1b73a34de797f087ac0e34ac207b8d0",
+        "reason": "Authoritativeversion8 fullread, exactlocalbytes verified."
+      },
+      "frozen_scientific_receipts": {
+        "transfer/positive_thermal_reflection_receipt.json": {
+          "passed": true,
+          "sha256": "a45116bc5b32d800600fbb0cfe311643fd6f00926c09de6f4a925f0d31f8813a",
+          "file_fingerprints_verified": 5
+        },
+        "thermal_sources/integer_thermal_source_jets_receipt.json": {
+          "passed": true,
+          "sha256": "64e7870d6badcf561f0fc5cabf672ab027ac5d7e84c0b845d1f7f41dae8e9e00",
+          "file_fingerprints_verified": 5
+        },
+        "source/kernel_source_contacts_receipt.json": {
+          "passed": true,
+          "sha256": "e042d7c086edfabbbd72d8cde808f13e989385b84ceb27bacc247cca9bc9796b",
+          "file_fingerprints_verified": 4
+        },
+        "fermion/general_root_wilson_receipt.json": {
+          "passed": true,
+          "sha256": "a3abf7ed2fbf7350d7af7f86ce45f6fe01546554ec5e8332fab1f4969e42fbb0",
+          "file_fingerprints_verified": 5
+        },
+        "recovery/canonical_applicability_ledger_receipt.json": {
+          "passed": true,
+          "sha256": "655d13edf28961198ce743f109698f6c7c670437ef9661941700a685f2775613",
+          "file_fingerprints_verified": 4
+        },
+        "review/positive_time_review_receipt.json": {
+          "passed": true,
+          "sha256": "ea30da7d0761fb4008aca9fcc33a12ab7f93aeb32fa59bd616bff1e26155eb6d",
+          "file_fingerprints_verified": 7
+        }
+      },
+      "excluded_operational_recovery_records": [
+        {
+          "path": "recovery/pca_wilson_endpoint_unavailable.json",
+          "reason": "Unavailable additional context probe; not absence evidence."
+        },
+        {
+          "path": "recovery/current_reads.json",
+          "reason": "Operational duplicate read response; exact v8 snapshot and successful conversation response are retained."
+        }
+      ],
+      "physics_recomputed": true,
+      "archived_sector_timing_logs_preserved": [
+        {
+          "path": "physical_time_work/transfer/positive_thermal_reflection_run.json",
+          "historical_sha256": "9b328b11465c43b324f98908b37c20a592e2ade7862e11c3953d5f2131e9cb39",
+          "recomputed_seconds": 0.23160161099985999
+        },
+        {
+          "path": "physical_time_work/thermal_sources/integer_thermal_source_jets_run.json",
+          "historical_sha256": "0275fea23d22684e0d2126a9584a2426721309c8b70ae7fa40cc82d813775b54",
+          "recomputed_seconds": 1.504258552000465
+        }
+      ],
+      "measured_parameters_fitted": false,
+      "complete_theory_of_nature_established": false,
+      "scope": "Canonical positive operator time and source laws, literal finite operator witnesses, complete diagnostic admission and independent source/adjoint review.",
+      "elapsed_seconds": 3.482683297999756
+    },
+    "canonical_positive_transfer_reopened_by_diagnostic": false,
+    "positive_operator_time_on_transfer_support_derived": true,
+    "odd13_thermal_source_reflection_positive": true,
+    "thermal13_state_identified_with_hidden_primitive_state": false,
+    "internal13_fibre_identified_with_inverse_temperature": false,
+    "ground_source_channel_spectral_residues_positive": true,
+    "equal_time_kernel_source_contacts_retained": true,
+    "integer_source_jets_smooth_through_rank_gain": true,
+    "fractional_halfword_source_derivatives_assumed_at_rank_gain": false,
+    "constant_rank_kernel_mixed_contacts_derived": true,
+    "rank_gain_only_directional_Schur_positivity_asserted": true,
+    "general_r_fixed_normal_Euclidean_repair_ruled_out": true,
+    "general_r_domain": "positive additive m0 and uniform r>=0, full10root spin4 inverse, fixed normal Dirac adjoint",
+    "diagnostic_negative_forms_identified_as_canonical_correlators": false,
+    "actual_archived_wall_entries_identified_as_corrected_October_species_action": false,
+    "source_state_time_adjoint_intertwining_conditions_derived": true,
+    "physical_clock_geometric_leaf_interacting_map_established": false,
+    "full_selected_nonlinear_species_action_reconstructed": false,
+    "measured_parameters_fitted": false,
+    "scope": "Closed canonical positive operator time and complete source laws; exact diagnostic admission obstructions preserve prior positivity without replacing the physical interacting action."
+  },
+  "reproduction": [
+    "python3 run_all.py",
+    "python3 run_canonical.py",
+    "python3 run_continued_physics.py",
+    "python3 run_three_derivations.py",
+    "python3 run_joint_vacuum.py --recompute",
+    "python3 run_combined_sources.py --recompute",
+    "python3 run_final_joins.py",
+    "python3 run_coupled_responses.py",
+    "python3 run_common_action.py",
+    "python3 run_physical_leaf.py",
+    "python3 run_geometric_time.py",
+    "python3 run_canonical_time.py"
+  ],
+  "report": "Cathedral_Continued_Derivations_2026-10-08.md"
+}
