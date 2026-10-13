@@ -69,3 +69,32 @@ Every f agrees exactly with rho_star at xstar; f=0 gives no halo, while differen
 - CONDITIONAL NO-GO: the static, canonical, locally covariant, gradient-only information field cannot explain dark matter in the claimed way.
 
 One must derive an **independently specified** microscopic response equation and stress tensor which survives these checks before comparing its predictions with observations. Do not add a potential or radial source chosen solely to enforce the desired halo. Do not present agreement of one radial exponent as evidence that nature implements the whole mechanism.
+
+
+## Stronger result: any local, shift-symmetric kinetic-only exterior
+
+Do not assume a monomial initially. For a static spherical, source-free action with Lagrangian L=F(X), X=(u')^2/2, the Euler-Lagrange equation has the radial first integral
+
+r^2 F_X(X) u'(r) = Q = constant.
+
+For an asymptotic power profile u' proportional to r^(-alpha), alpha>0, this forces F_X proportional to r^(alpha-2). Since X proportional to r^(-2alpha), integration gives the *radially varying part* of F proportional to r^(-[alpha+2]) (apart from an irrelevant constant vacuum energy). The stress tensor components and the active gravitational source have this same radial exponent.
+
+The URT-mapped rail population implies alpha=1+nu/2=1.068795462, so a local shift-symmetric kinetic theory enforcing that profile has stress energy proportional to r^(-3.068795462), not the r^-2 needed for a flat halo in the Newtonian-dust analogy. This theorem requires source-free, local shift symmetry and a regular nonzero radial flux; it does not apply to potentials, nonlocal URT memory, matter sources or more general tensor degrees of freedom.
+
+For the monomial F~X^n the equation of motion gives n_EOM=1/2+1/alpha=1.435632715. An energy density scaling as r^-2 for the *same* specified derivative requires n_halo=1/alpha=0.935632715. These requirements differ by exactly 1/2 and cannot both hold. This incompatibility is not a failed numerical fit; it is algebraic.
+
+## Mass scaling: an additional required coupling
+
+Writing the conditional Newtonian proxy halo mass as a positive gradient-density integral yields exactly at the reference radius:
+
+v_proxy^2(Rstar) = [2 pi G K nu^2/c^2] J,
+J = integral_0^1 p(x)[1-p(x)] dx = 7.1844961714e-6.
+
+Its dimensionless coefficient is 2 pi nu^2 J = 8.5458597352e-7. Therefore for a *universal* K and fixed canonical p(Rstar)=p_star, this velocity is independent of baryonic mass and Rstar. This cannot by itself predict the empirical baryonic Tully-Fisher relation M_b proportional to v_flat^3.85 (Lelli et al. 2019, https://arxiv.org/abs/1901.05966). To force that empirical scaling through K would require K proportional to M_b^(2/3.85) = M_b^0.51948, a mass-dependent effective normalization not contained in the frozen state.
+
+For illustration only, taking K=c^4/G (an additional dimensional assumption; also circular if gravity has not been derived) gives v_proxy=277.14 km/s for every reference halo. The coincidence with some galactic speeds is **not** evidence for the model, because the relativistic scalar stresses have already invalidated this velocity as a physical prediction.
+
+The normalized reference state also admits infinitely many positive local extensions:
+B_f(x)=[P3+Delta exp(f(x)/2) P5]/[2 sqrt(1+Delta^2)] with f(xstar)=0. Therefore rho_star, positivity and the BKM metric cannot by themselves determine baryonic-mass dependence, lensing or clustering.
+
+**Definitive local verdict:** the parameter-free *profile algebra* is real; its identification as a self-sustained cold-dark-matter halo from the frozen finite machine is not proved. Both the simplest canonical model and the entire shift-symmetric kinetic-only source-free class fail one or more necessary dynamical criteria. More general Cathedral transfer/nonlocal response remains testable and is not logically excluded.
