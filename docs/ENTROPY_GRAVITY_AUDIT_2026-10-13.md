@@ -82,3 +82,8 @@ The two-rail population \(p(s)=[1+e^{8\Delta s}]^{-1}\) gives the information-ge
 ## Reproducibility
 
 Run Python 3 with numpy, scipy, sympy and mpmath (the repository already uses these dependencies). Execute the six scripts in this directory. All six were executed successfully in this session. Earlier mathematical constructs are preserved and remain independently citable in the repository. The labels above distinguish algebraic closure, conditional identifications, and open physics.
+
+
+## Further exact result: 13-site stress-channel reconstruction
+
+The 2026-10-13 follow-up reconstructs \(\mathbb R^{13}\supset (1+1+3+5)\) through explicit icosahedral shell quadrature, leaving a \(3'\) complement. The 10 channels have precisely the spatial component counts of a symmetric 4D stress tensor, and are graph-Laplacian eigenspaces with eigenvalues \(0,13,6-\sqrt5,7\). This is a representation embedding only. See STRESS_TENSOR_RECONSTRUCTION_2026-10-13.md and the 13-cell stress representation script; Lorentz transformations, conservation, local stress operators and physical coupling are not derived.

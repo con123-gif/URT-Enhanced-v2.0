@@ -10,3 +10,5 @@ The files here are a preserved, runnable copy of six calculation checks from the
 6. cathedral_entropy_gravity_remaining_gates_2026_10_13.py — new independent mother/daughter information, modular uniqueness, UV first derivative and normalization erratum
 
 Read ../../docs/ENTROPY_GRAVITY_AUDIT_2026-10-13.md for derived equations and explicit physical status. Only mathematical properties of the finite objects are verified; GR and a cosmological bounce remain physical matching problems. No previous source has been overwritten.
+
+7. cathedral_13cell_stress_representation_2026_10_13.py — explicit 10-channel stress kinematics and exact spectral projector checks
