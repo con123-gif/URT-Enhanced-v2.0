@@ -1,0 +1,41 @@
+name: Newton primordial k-feature physical CMB test
+on:
+  push:
+    branches: [newtons-cathedral]
+    paths:
+      - '.github/workflows/newton-primordial-camb.yml'
+      - 'newton-scale/planck_primordial_camb_fit.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      OPENBLAS_NUM_THREADS: '2'
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: newtons-cathedral
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CAMB and numerics
+        run: python -m pip install --disable-pip-version-check numpy scipy camb
+      - name: Compute primordial sine/cosine Boltzmann transfer across all four Platonic scales
+        run: python -u newton-scale/planck_primordial_camb_fit.py
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add newton-scale/PLANCK_PRIMORDIAL_CAMB_RESULTS.json
+          git diff --cached --quiet || (git commit -m "Record full-CMB primordial Newton Platonic feature test" && git push origin HEAD:newtons-cathedral)
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: newton-camb-physical-feature
+          path: newton-scale/PLANCK_PRIMORDIAL_CAMB_RESULTS.json
+          if-no-files-found: warn
