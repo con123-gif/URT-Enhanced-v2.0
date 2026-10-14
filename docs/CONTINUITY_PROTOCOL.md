@@ -1,6 +1,14 @@
 # Newton’s Cathedral — Continuity Protocol
 
-Date: 2026-10-02
+Date: 2026-10-02; precedence correction 2026-10-14
+
+## Precedence correction — 2026-10-14 (overrides conflicting sections below)
+
+The **recoverable dated conversation history and explicit subsequent user corrections** are the primary source for reconstructing what Newton's Cathedral / URT actually derived, rejected or superseded. GitHub is an essential **persistent save point and verification archive**, not a reason to ignore calculations confined to chats. An older repository status may be superseded by a later recovered chat even if no commit was previously made. Preserve its provenance, resolve the contradiction, and commit the correction.
+
+No mathematical no-go may be promoted from a failed implementation or narrowly defined set of axioms into a universal project-wide impossibility without proof that every admissible canonical route is covered. Similarly, no internal arithmetic agreement may be promoted to a verified physical law without a valid observable map. See `docs/NO_GO_PRECEDENCE_AND_RECOVERY_AUDIT_2026-10-14.md`.
+
+Before calling a sector unknown or solved, first reconcile relevant prior conversations, then use the repository to inspect executable artifacts, preserve audits and validate status. Never ask the user to reconstruct previously supplied work before searching available history. This update was requested after repeated continuity failures and prevails wherever the older protocol says GitHub alone governs.
 
 ## Source-of-truth rule
 
@@ -12,7 +20,7 @@ The active reasoning context is broader than GitHub: use the current conversatio
 
 For every substantive Cathedral / URT session:
 
-1. Read the latest repository state before declaring a result new, missing, closed, reopened, or superseded.
+1. Reconstruct relevant dated conversations and explicit corrections, THEN check the latest repository state before declaring a result new, missing, closed, reopened, or superseded.
 2. Treat later explicit corrections as higher precedence than earlier claims.
 3. Persist every substantive closure, correction, no-go, reopen, equation, operator, numerical certificate, and status change to GitHub.
 4. Never rely on chat memory alone for canonical project continuity.
@@ -113,11 +121,11 @@ Effective 2026-10-02, GitHub is the primary working environment for Newton's Cat
 - Repository: `con123-gif/URT-Enhanced-v2.0`
 - Primary branch: `newtons-cathedral`
 - Chat is an interactive working surface, not the canonical store.
-- Before substantive Cathedral work, read the current repository state first.
+- Before substantive Cathedral work, reconstruct the relevant conversation history and latest explicit corrections first; check the current repository state for persistent artifacts and verification second.
 - During substantive work, create or update repository artifacts as the derivation progresses.
 - At the end of any substantive session, persist new equations, proofs, audits, closures, corrections, no-go results, reopenings, code and status changes to GitHub.
 - Do not leave important project state only in chat.
-- When repository and chat recollection conflict, the precedence-ordered repository record governs unless a new explicit correction is being committed.
+- When repository and recoverable dated conversation calculations conflict, reconstruct the timeline, apply later explicit corrections within their demonstrated scope, and commit the reconciled result; an older repository entry does not automatically override later conversation work.
 
 
 ## Continuity burden
