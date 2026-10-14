@@ -126,5 +126,86 @@ for mode in ("additive","fractional","fractional_envelope"):
     print(label,[(name,round(output["fits"][label][name]["delta_chi2"],3))
                 for name in ratios],
           "global p",round(output["fits"][label]["global4freq_p_MC"],4),flush=True)
+
+# Independent data-split predictions with fully conditional Gaussian covariance.
+def cross_predict(F,train,hold):
+    ct=c[np.ix_(train,train)]
+    chold=c[np.ix_(hold,hold)]
+    xcov=c[np.ix_(hold,train)]
+    tF=F[train]
+    hF=F[hold]
+    yt=res[train]
+    yh=res[hold]
+    cc=cho_factor(ct,lower=True)
+    tf_ci=cho_solve(cc,tF)
+    b=np.linalg.solve(tF.T@tf_ci,tF.T@cho_solve(cc,yt))
+    yc=yh-xcov@cho_solve(cc,yt)
+    FC=hF-xcov@tf_ci
+    ccov=chold-xcov@cho_solve(cc,xcov.T)
+    hchol=cho_factor(ccov,lower=True)
+    prediction=FC@b
+    strength=float(prediction@cho_solve(hchol,prediction))
+    matched=float(yc@cho_solve(hchol,prediction))
+    gain=2*matched-strength
+    z=matched/np.sqrt(strength) if strength>0 else None
+    return {"heldout_delta_chi2":float(gain),"matched_filter_z":float(z),
+            "prediction_squared_norm":strength,"training_amplitude":b.tolist(),
+            "ntrain":len(train),"nhold":len(hold)}
+
+idx=np.arange(613)
+temperature=idx[:215]
+polarization=idx[215:]
+lowTT=temperature[ell[:215]<900]
+highTT=temperature[ell[:215]>=900]
+output["cross_validation"]={}
+for mode in ("fractional","fractional_envelope"):
+    output["cross_validation"][mode]={}
+    for name,s in ratios.items():
+        F=design(2*np.pi/np.log(1/s),mode,True)
+        output["cross_validation"][mode][name]={
+          "TT_train_pol_test":cross_predict(F,temperature,polarization),
+          "pol_train_TT_test":cross_predict(F,polarization,temperature),
+          "lowTT_train_highTT_test":cross_predict(F,lowTT,highTT),
+          "highTT_train_lowTT_test":cross_predict(F,highTT,lowTT)}
+# Family-wise correction for every inspected frequency x template x parameter count.
+# Simulate jointly through exact template covariance; shared and separate
+# templates span overlapping subspaces and cannot use a naive independent count.
+allF=[]
+tests=[]
+for mode in ("additive","fractional","fractional_envelope"):
+    for variant in ("shared2","separate6"):
+        label=f"{mode}_{variant}"
+        for solid,s in ratios.items():
+            F=design(2*np.pi/np.log(1/s),mode,variant=="shared2")
+            allF.append(F)
+            tests.append({"name":label+"_"+solid,"cols":F.shape[1],
+                "observed":output["fits"][label][solid]["delta_chi2"]})
+stack=np.column_stack(allF)
+G=stack.T@cho_solve(ch,stack)
+G=(G+G.T)*.5
+v,U=np.linalg.eigh(G)
+v=np.maximum(v,0)
+rng=np.random.default_rng(20261014+1)
+samples=rng.normal(size=(30000,len(v)))@(U*np.sqrt(v)).T
+offset=0
+minp=np.ones(30000)
+observed_min=1.
+for test in tests:
+    d=test["cols"]
+    gs=G[offset:offset+d,offset:offset+d]
+    yy=samples[:,offset:offset+d]
+    score=np.einsum("bi,ij,bj->b",yy,np.linalg.inv(gs),yy)
+    minp=np.minimum(minp,chi2.sf(score,d))
+    observed_min=min(observed_min,float(chi2.sf(test["observed"],d)))
+    offset+=d
+output["all_six_models_4_frequencies"]={
+  "tests":24,
+  "min_observed_naive_p":observed_min,
+  "global_min_p_MC":float((1+(minp<=observed_min).sum())/(len(minp)+1)),
+  "null_samples":len(minp),
+  "note":"Conditional fixed-baseline Gaussian probability only; not a physical cosmology likelihood"}
+
 Path("newton-scale/PLANCK_JOINT_EMPIRICAL_RESULTS.json").write_text(json.dumps(output,indent=2))
+print('HOLDOUT',json.dumps(output['cross_validation'],indent=2))
+print('ALL-MODEL FAMILY-WISE',output['all_six_models_4_frequencies'])
 print("RESULT FILE WRITTEN; baseline chi2",chi0)
