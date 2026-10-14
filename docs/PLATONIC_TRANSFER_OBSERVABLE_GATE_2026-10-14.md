@@ -71,3 +71,30 @@ Cathedral_Transfer_Observable_Operators_2026-10-14.npz
 Results:
 Cathedral_Transfer_Observable_Verification_2026-10-14.json
 All local tests passed with NumPy/SciPy (spectral residual below 1e-12; heat transfer rank 12).
+
+
+## New resolution: entropy-grading candidate supplies the second singlet (13/13)
+The preceding 12-of-13 rank applies **only** to the quadratic shell-contact F and its heat transport. An explicit further calculation adds a central quadratic source from the already frozen grading Gamma_F=P5-P3, with no new continuous coefficient but an explicit **unverified identification** of central-site sourcing with the modular observable.
+
+On the orthonormal ordered Sym²(H3+H5) basis (10 + 16 + 10 columns), its unit-Hilbert–Schmidt-normalized row is
+  q_Gamma: -a/sqrt(8) at the four diagonal Sym² H3 coordinates, +b/sqrt(8) at the four diagonal Sym² H5 coordinates, and 0 otherwise.
+Here diagonal indices within either Sym² quartet are **0,4,7,9**; using 0,1,2,3 would spuriously break icosahedral symmetry and is incorrect.
+
+The new finite contact B13=[q_Gamma; F] is 13x36, with:
+  rank(B13)=13,
+  K13=B13 B13^T positive definite,
+  T13=B13^T B13 positive semidefinite,
+  full 13-state response eigenvalues consisting of 5x lambda5, 3x lambda3, 3x lambda3prime and *two* singlets.
+
+For normalized shell scalar u=1_12/sqrt(12), the two-singlet positive Gram block has the EXACT expression
+  [[(a²+b²)/2, -sqrt(3/2)(a²-b²)],
+   [-sqrt(3/2)(a²-b²), 3(a²+b²)]],
+with determinant 6a²b²>0. Its eigenvalues are approximately
+  4.11330e-12 and 0.2187472892505768.
+The determinant is proportional to Delta^4, since b=a Delta².
+
+Replacing Gamma_F by the identity (same Hilbert–Schmidt normalization) leaves rank **12**, so the extra channel is the *entropy contrast*, not an arbitrary extra scalar. The constructed positive heat evolution exp(-tL13)B13 retains rank 13 for every finite t>=0.
+
+**Precedence/limitation:** This closes the *finite algebraic* second-singlet gap **under the modular-central-source hypothesis**; it is not yet a derivation from the fully species-loaded canonical B_star/H64 action or the actual Casini stress-energy interface. A fixed Hilbert–Schmidt normalization is mathematical; the central coupling strength in physical units is not thereby proven. Do not conflate this with a verified Einstein/gravity or alpha current normalization.
+
+Updated local executable and result matrix artifacts in the same conversation contain B13/T13/K13 and pass all rank/PSD checks.
