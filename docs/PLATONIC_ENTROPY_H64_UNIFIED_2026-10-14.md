@@ -49,3 +49,15 @@ Retain H64 results: full 64-state Walsh representation is 4(1+3+3prime+4+5), wit
 
 ## Executable checkpoint
 The full standalone 299-line verified calculation is attached in the conversation as cathedral_full_platonic_integration.py alongside cathedral_integrated_platonic_actual.npz. Earlier repository scripts for the H64 test and the A4 doubling clock remain in research_archive/2026-10-14_hidden4/ and research_archive/2026-10-14_platonic_vortex/.
+
+
+## Result 5: a second, exactly commuting graph geometry from five cubes
+Let M be the 20x5 binary membership matrix, M_{v,j}=1 when dodecahedral vertex v belongs to inscribed cube j. Each vertex belongs to two cubes and each cube contains eight vertices. Therefore
+  M^T M=6I_5+2 J_5.
+The weighted combined-cube adjacency is A_cube=M M^T-2I_20: it is actually a simple 14-regular graph (each vertex shares a cube with exactly fourteen others). Its Laplacian
+  L_cube=16I_20-M M^T
+has exact spectrum {0 x1, 10 x4, 16 x15}. It commutes exactly with the ordinary dodecahedral graph Laplacian L_dod, allowing simultaneous diagonalization **without introducing a mixing coefficient**. In the illustrative natural unit-weight sum L_sum=L_cube+L_dod, the eigenvalues are
+  {0 x1, 15 x4, (19-sqrt5) x3, 18 x5, 19 x4, (19+sqrt5) x3}.
+This demonstrates what the user's overlapping-lattice proposal does algebraically: two different connected graphs sharing vertices yield a new joint spectrum while preserving the original A5 representation channels. The sum is a **mathematical composite**, not a claim that the two physical lattice couplings have equal strength.
+
+The cube-incidence graph preserves the extended S5 combinatorial symmetry. The geometric dodecahedral edge graph preserves only its geometric A5×inversion symmetry, so the latter breaks the order-four doubling symmetry even though both Laplacians commute. This distinction is useful for an URT selection mechanism but does not itself supply a physical time evolution.
