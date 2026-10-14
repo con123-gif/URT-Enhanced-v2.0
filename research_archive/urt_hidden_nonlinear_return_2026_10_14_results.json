@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-14",
+  "run": "independent nonlinear A5 hidden-response test",
+  "source": "local executed numpy/scipy coordinate and Gram calculation",
+  "linear_multiplicity_H13_to_4": 0,
+  "quadratic_multiplicity_Sym2H13_to_4": 4,
+  "hidden_eigenband_dims": [
+    4,
+    4
+  ],
+  "quadratic_generated_hidden_rank": 8,
+  "generic_selected_Jacobian_rank": 8,
+  "positive_Gram_min_eigen": 0.000006183820961676127,
+  "dynamic_Feshbach_return_norm": 2.750350376547262,
+  "Feshbach_directional_derivative_norm": 8.542873229276138,
+  "zero_state_return_norm": 0,
+  "fivefold_covariance_norms": {
+    "nonlinear": 1.3269852241888009e-15,
+    "Jacobian": 7.849506947119534e-15,
+    "Gram": 1.126983410119678e-14
+  },
+  "weight_delta": 0.0024891898404204027,
+  "qualification": "Existence witness, not uniquely identified physical H64 transfer. No experimental data used."
+}
