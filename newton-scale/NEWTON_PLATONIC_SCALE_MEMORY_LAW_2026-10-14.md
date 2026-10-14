@@ -61,3 +61,16 @@ This is a mathematically proved law of a specified Platonic history process. A p
 ## Reproduce
 
 Run `python newton-scale/scale_memory_dynamical_law_exact.py` (SymPy). The same script is saved as a conversation artifact. It uses neither the Cathedral repository nor fitted physics inputs.
+
+## Exact continuous log-scale flow (not a separately fitted differential equation)
+Let the dimensionless refinement depth be \(u=\ln(\ell_0/\ell)\). On the discrete Newton levels \(u_n=2n\ln\varphi\). The unique \(S_5\)-equivariant continuous-time Markov semigroup with \(e^{(2\ln\varphi)\mathscr G}=T\) is
+\[
+\mathscr G=\beta(J_5/5-I_5),\qquad
+\beta=\frac{\ln(4/3)}{2\ln\varphi}.
+\]
+Therefore the exact Newton–Platonic log-scale memory equation is
+\[
+\boxed{\frac{dp_j}{du}=\beta\left(\frac15-p_j\right)},\qquad
+p_j(u)=\frac15+e^{-\beta u}\left(p_j(0)-\frac15\right).
+\]
+This follows uniquely because the 5D permutation representation is the direct sum of a trivial line and an irreducible real four-space, so an \(S_5\)-equivariant real Markov generator must be a scalar on the four-space; its scalar rate is fixed by the already derived \(3/4\) discrete eigenvalue. It is an honest, fully solvable **law of the specified history model**. The operational identification of \(u\) with physical log-distance remains a separate empirical condition.
