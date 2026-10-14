@@ -121,3 +121,22 @@ for t in (0,1,5):
     assert np.linalg.eigvalsh(K4).min() > -1e-12
     print("positive heat return t=", t, "trace hidden4=", np.trace(K4),
           "full trace=", np.trace(K), "fraction=", np.trace(K4)/np.trace(K))
+
+
+# Check connected coupling across the three canonical Walsh-degree layers.
+Walsh = {}
+for degree in (2,3,4):
+    columns = []
+    for subset in itertools.combinations(range(6), degree):
+        columns.append(np.prod(bits[:,subset],axis=1)/8)
+    wk = np.column_stack(columns)
+    Walsh[degree] = P4 @ wk @ wk.T @ P4
+for degree, projector in Walsh.items():
+    A = H.T @ G @ projector
+    print("four-sector degree:", degree,
+          "rank:", round(np.trace(projector)),
+          "squared visible coupling:", np.linalg.norm(A)**2)
+for left,right in ((2,3),(2,4),(3,4)):
+    print("degree mixing",left,right,
+          "||P_left G P_right||F:",
+          np.linalg.norm(Walsh[left]@G@Walsh[right]))
