@@ -74,3 +74,34 @@ print("PASS 36->12 positive Gram, exact phi^6, selected rho, centre heat.")
 print("Eigenvalues 1,5,3,3prime:",s1,s5,s3,s3p)
 print("Legacy numerics (not yet current/stress-derived):",
       "alpha^-1=",alpha,"MS sin²=",sin2,"Vus=",vus,"Omega_m=",omega)
+
+
+# Second, independently sourced singlet from the frozen hidden modular grading.
+# Indices 0,4,7,9 are the diagonal Sym²-coordinates of one quartet.
+modular=np.zeros(36)
+identity=np.zeros(36)
+for j in (0,4,7,9):
+    modular[j]=-a/np.sqrt(8)
+    modular[26+j]=b/np.sqrt(8)
+    identity[j]=a/np.sqrt(8)
+    identity[26+j]=b/np.sqrt(8)
+B13=np.vstack([modular,F])
+B_identity=np.vstack([identity,F])
+assert np.linalg.matrix_rank(B13,tol=1e-12)==13
+assert np.linalg.matrix_rank(B_identity,tol=1e-12)==12
+K13=B13@B13.T
+assert np.linalg.eigvalsh(K13).min()>0
+scalar=np.ones(12)/np.sqrt(12)
+singlets=np.array([[modular@modular,modular@F.T@scalar],
+                   [scalar@F@modular,scalar@K@scalar]])
+analytic=np.array([[(a*a+b*b)/2,-np.sqrt(3/2)*(a*a-b*b)],
+                   [-np.sqrt(3/2)*(a*a-b*b),3*(a*a+b*b)]])
+assert np.allclose(singlets,analytic)
+assert abs(np.linalg.det(analytic)-6*a*a*b*b)<1e-17
+for t in (0,.1,1):
+    H=expm(-t*L13)@B13
+    assert np.linalg.matrix_rank(H,tol=1e-12)==13
+    assert np.linalg.eigvalsh(H@H.T).min()>-1e-12
+print("PASS second modular singlet; 13x36 positive transfer rank13")
+print("Two scalar eigenvalues",np.linalg.eigvalsh(analytic),
+      "det=6 a² b²",6*a*a*b*b)
