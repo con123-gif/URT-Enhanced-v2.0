@@ -1,5 +1,8 @@
 # Newton’s Cathedral — Continuity Snapshot
 
+> **2026-10-14 precedence correction:** This October 12 snapshot is a historical repository checkpoint, not the final word on calculations performed subsequently or preserved only in chat. Recover the dated conversations and later explicit corrections first; verify against GitHub second. See [continuity protocol](CONTINUITY_PROTOCOL.md) and [no-go audit](NO_GO_PRECEDENCE_AND_RECOVERY_AUDIT_2026-10-14.md). The sentence below saying “GitHub is the source of truth. Chat is only a working surface” is superseded.
+
+
 **Date:** 2026-10-12  
 **Branch:** newtons-cathedral  
 **Purpose:** Single first-read handoff. GitHub is the source of truth. Chat is only a working surface.
