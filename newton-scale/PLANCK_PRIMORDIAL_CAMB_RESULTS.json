@@ -1,0 +1,74 @@
+{
+  "data_hashes": {
+    "c_matrix_plik_v22.dat": "ad90378c50bd67841764179c90ae6711fa4317c649966ab2b0712143b31e0a32",
+    "cl_cmb_plik_v22.dat": "dac0d9d493213e77c940a10a968cf0da3c5730bae60e1356c4cd8bcff96377ff",
+    "blmin.dat": "325b351cbf8f694556bb13e98f285344e8d66811bb8eef18bcdcf1626518719d",
+    "blmax.dat": "c28ade0fa5270c7e87ba07bdcb68aef8783b132b352bfaa36c04d17694ab4014",
+    "bweight.dat": "8afcbd8bad769e2de96bacd80177e6543f96b2b406e6c2da1fd0d26718c9e415",
+    "COM_PowerSpect_CMB-base-plikHM-TTTEEE-lowl-lowE-lensing-minimum-theory_R3.01.txt": "50eecd4422e22026070bdacf9fa8a7e7ef3badf4fa50fffea040df669715cf51"
+  },
+  "cosmology_frozen": {
+    "H0": 67.36,
+    "ombh2": 0.02237,
+    "omch2": 0.12,
+    "tau": 0.0544,
+    "As": 2.100549e-09,
+    "ns": 0.9649,
+    "mnu": 0.06
+  },
+  "camb_version": "2.0.5",
+  "model": "primordial P(k)=As(k/.05)^(ns-1)*[1+A*sin(omega ln(k/.05)+phase)]",
+  "epsilon_perturbation": 0.02,
+  "n_bandpowers": 613,
+  "baseline_chi2": 585.4745658870222,
+  "camb_vs_official_model_relative_rms": 0.008482870919974338,
+  "fits": {
+    "cube": {
+      "omega": 11.438403469520512,
+      "delta_chi2": 2.469498579762922,
+      "amplitude": 0.005660289333446578,
+      "phase": -2.2142347834429117,
+      "naive_p_2dof": 0.29090768672665557,
+      "parameters": [
+        -0.003395889889986978,
+        -0.004528444235431562
+      ]
+    },
+    "octahedron": {
+      "omega": 30.992483355699488,
+      "delta_chi2": 6.830751852756048,
+      "amplitude": 0.015729614444534596,
+      "phase": -0.15637261373446176,
+      "naive_p_2dof": 0.03286404991578608,
+      "parameters": [
+        0.015537692634623124,
+        -0.0024496689910454687
+      ]
+    },
+    "dodecahedron": {
+      "omega": 6.528502605272993,
+      "delta_chi2": 1.3052176960428272,
+      "amplitude": 0.003221832217365498,
+      "phase": -1.5706805568927882,
+      "naive_p_2dof": 0.5206856136700693,
+      "parameters": [
+        3.729911995810772e-07,
+        -0.0032218321957749206
+      ]
+    },
+    "icosahedron": {
+      "omega": 13.057005210545986,
+      "delta_chi2": 0.3793039385703417,
+      "amplitude": 0.0022752111889370904,
+      "phase": -3.0526723896511507,
+      "naive_p_2dof": 0.8272469912105628,
+      "parameters": [
+        -0.002266222278993333,
+        -0.00020204587711407268
+      ]
+    }
+  },
+  "four_frequency_global_p": 0.11475770484590309,
+  "MC_null_draws": 50000,
+  "limitation": "Fixed cosmology and Planck Lite covariance; non-linear lensing and nuisance effects not refit; exploratory physics test"
+}
