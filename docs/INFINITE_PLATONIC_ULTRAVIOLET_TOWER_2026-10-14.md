@@ -54,3 +54,28 @@ Reproduce in the repository with:
   python research_archive/2026-10-14_platonic_unification/infinite_uv_fractal_transfer.py
 
 An expanded independently executed script and JSON are saved as local turn artifacts. Do not elevate a local failed physical identification to a global Cathedral no-go.
+
+
+## Intrinsic scale dictionary and rail crossing (14 October continuation)
+The golden five-branch IFS establishes an **intrinsic dimensionless length ratio** if the length contraction hypothesis s=phi^-2 is adopted:
+  ell_n/ell_0 = s^n = phi^(-2n)
+  k_n/k_0 = phi^(2n) (under the further inverse-length momentum identification).
+This does not require a separately fitted scale at each level. It **does** retain the single overall calibration ell_0: multiplying all physical lengths by any c>0 preserves all preceding dimensionless identities, so the finite geometry alone cannot uniquely express ell_0 in metres.
+
+The previously frozen rail gap Delta=3/20-80pi/(1053phi) defines a *testable dimensionaless crossing criterion* once compared to a normalized geometric interval:
+  n_Delta=(-ln Delta)/(2 ln phi)=6.229894689307205;
+  s^6=0.003105620015141859 > Delta=0.002489189840420403 > s^7=0.001186241289642227.
+Therefore the **first integer level finer than the rail fraction** is 7, with no parameter fitting. This is an arithmetic relation of two pre-existing constructs, **not yet a physical rail transition**.
+
+For the candidate 13-state positive K13 with top eigenvalue lambda=0.21874728925057668, the level-aggregate top fibre contribution scales as lambda^n=(ell_n/ell_0)^zeta, where
+  zeta=-ln(lambda)/(2 ln phi)=1.57917788660982.
+This is an internal response-scaling exponent; the actual per-address maximum eigenvalue of R5^tensor n tensor K13^n instead scales as [(13/40)lambda]^n. Do not confuse per-address eigenvalue with level-aggregate trace.
+
+If, merely as an **external calibration**, ell_0 is set to the known Planck length 1.616255e-35 metres, the model's ratios imply:
+  ell_1=6.17354e-36 m;
+  ell_7=1.91727e-38 m;
+  ell_10=1.06846e-39 m;
+  ell_0*Delta=4.02317e-38 m.
+Using a measured Planck anchor is not deriving the dimensional Planck length from the Cathedral; equally, this mathematically valid sequence is not experimentally verified sub-Planck geometry.
+
+The precise corrected verdict: **The Cathedral now has a relative scale and a conditional infinite scale ladder; what is not derived is its unique absolute metric calibration and the proof that the proposed golden subdivision is the physically selected spacetime recursion.** Do not revert to the overbroad claim that the theory 'has no scale'.
