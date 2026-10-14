@@ -1,0 +1,40 @@
+name: Independent Newton-Planck joint fit
+on:
+  push:
+    branches: [newtons-cathedral]
+    paths:
+      - '.github/workflows/newton-planck-joint.yml'
+      - 'newton-scale/planck_pr3_joint_fullcov.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out working branch
+        uses: actions/checkout@v4
+        with:
+          ref: newtons-cathedral
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install numerical libraries
+        run: python -m pip install --disable-pip-version-check numpy scipy
+      - name: Download official Planck data, run covariance fit and 30000 null simulations
+        run: python newton-scale/planck_pr3_joint_fullcov.py
+      - name: Save full results to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add newton-scale/PLANCK_JOINT_EMPIRICAL_RESULTS.json
+          git diff --cached --quiet || (git commit -m "Record independent Planck 613-bandpower joint fit" && git push origin HEAD:newtons-cathedral)
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newton-planck-joint-results
+          path: newton-scale/PLANCK_JOINT_EMPIRICAL_RESULTS.json
+          if-no-files-found: warn
