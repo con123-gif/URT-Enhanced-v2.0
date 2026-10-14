@@ -73,3 +73,28 @@ Conversation executable files: newton_scale_gravity_continuation_2026_10_14.py, 
 - Fierz–Pauli/massive gravity tensor structure: https://pmc.ncbi.nlm.nih.gov/articles/PMC5256007/
 - Planck localization caveats: https://pmc.ncbi.nlm.nih.gov/articles/PMC5255898/
 - Quantum-field counterterms in curved spacetime: https://doi.org/10.1093/oso/9780198838319.003.0013
+
+
+## F. Exact spectral representation and noncommuting ultraviolet limits
+The closed positive scale operator H=Q†Q has a positive spectral projection measure E_H. At any fixed refinement site n, the FULL Euclidean response is a positive Källén–Lehmann/Stieltjes integral
+\[
+D_n(q^2)=\langle e_n,(q^2+H)^{-1}e_n\rangle
+=\int_{[0,\infty)}\frac{\mathrm d\rho_n(t)}{q^2+t},\qquad
+\mathrm d\rho_n(t)=\mathrm d\langle e_n,E_H(t)e_n\rangle\ge0,
+\quad\int\mathrm d\rho_n=1.
+\]
+Its massless atom is exactly \(\rho_n(\{0\})=\mu_n\). Massive weight is \(1-\mu_n\), not ignored.
+
+There is an exact, instructive **noncommuting-limits result**:
+\[
+\forall n:\ \lim_{q\to\infty}q^2D_n(q^2)=1
+\]
+by bounded convergence in the spectral integral, whereas along the **Newton refinement path** \(q_n=s^{-n}\):
+\[
+\boxed{\lim_{n\to\infty} q_n^2D_n(q_n^2)=0}.
+\]
+The latter follows rigorously from the Fisher-precision Cauchy bound and \(\lambda/s^2<1\). Moreover the localization-weighted quantity \(s^{-2n}q_n^2D_n(q_n^2)\to0\) because \(\lambda/s^4<1\).
+
+Thus there is NO contradiction with the usual positive-spectral-weight \(1/q^2\) tail at fixed spacetime mode. The ultraviolet softening occurs in a **joint momentum-plus-refinement limit**, not by subtracting positive spectral residues. This is a mathematically precise, previously missing physical mechanism candidate. It also shows why ordinary fixed-level scalar Källén–Lehmann sums could not close the sub-Planck question.
+
+The analytic statement is restricted to the chosen Fisher-precision inter-level kinetic action. A normalized transfer spectrum does not, by itself, force the choice of Q. The continuum spacetime interpretation, including real trapped surfaces, remains a separate physical question.
