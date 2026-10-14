@@ -48,3 +48,17 @@ A subtlety: at the particular selected v113 scalar vacuum the direct sources P4(
 The old linear no-go was too broad if applied to all nonlinear/history routes. This calculation establishes explicit A5 hidden quartet multiplicities, four symmetry-allowed quadratic channels, and a nonzero positive feedback through the actual recovered v113 selected-state history blocks.
 
 It does NOT identify the H64 quartets with the entropy-rail 4_3 + 4_5, derive a gravity/SM coupling, recover the later fully species-loaded T-star, or prove a theorem of nature. Continue by identifying the physically selected multiplicity subspace and calculating the four-sector return in the later exact T-star without adding freely adjustable weights.
+
+
+## Do the hidden layers combine dynamically?
+Yes, **in this v113 positive Gram test**. The 16-dimensional four-isotypic space has three canonical Walsh-degree layers: k=2 (rank 4), k=3 (rank 8, two quartets), and k=4 (rank 4). Define P_{4,k}=P4 P_k where P_k projects onto Walsh degree k. The actual positive G=J^T J has nonzero off-diagonal mixing, measured as ||P_{4,k} G P_{4,l}||_F:
+
+| Degrees | Positive Gram cross-layer norm |
+| --- | ---: |
+| 2 <-> 3 | 0.00782756249243 |
+| 2 <-> 4 | 0.00552144343405 |
+| 3 <-> 4 | 0.00782756249243 |
+
+Each layer also couples to the 13-dimensional visible carrier through G. The squared visible-coupling norms by layer are respectively 0.0000537143320290 (k=2), 0.0001348263817675 (k=3), and 0.0000205387213688 (k=4); they sum to the full hidden-four return trace 0.0002090794351653.
+
+Thus the 4 hidden quartets are **not merely four unrelated labels** in this selected scalar branch: they form a connected coupling graph inside its positive Gram operator. The inference stops at this operator; the relationship between different Platonic-solid hidden sectors and the fully selected October T-star is a separate identification that has not been demonstrated.
