@@ -530,5 +530,386 @@
       "max_delta_chi2": 13.098878827312237,
       "MC_trials": 30000
     }
+  },
+  "cross_validation": {
+    "fractional": {
+      "cube": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": 0.09066792394466405,
+          "matched_filter_z": 0.30111421484946166,
+          "prediction_squared_norm": 0.0898532861633774,
+          "training_amplitude": [
+            0.0005950612910622428,
+            -0.0017576996891603544
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -74.9643057122324,
+          "matched_filter_z": 0.27902133223240777,
+          "prediction_squared_norm": 79.95416085924518,
+          "training_amplitude": [
+            0.013368868626125232,
+            -0.006555044476032264
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": -1.679338876412569,
+          "matched_filter_z": 0.41032407280594746,
+          "prediction_squared_norm": 3.1315800748740434,
+          "training_amplitude": [
+            0.0019781845344165037,
+            -0.003024730860554117
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": 0.5807796634870265,
+          "matched_filter_z": 0.9415981694349819,
+          "prediction_squared_norm": 0.15099557334263955,
+          "training_amplitude": [
+            -0.0001564253482623781,
+            -0.0011183920328879525
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      },
+      "octahedron": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": 2.1026480832649477,
+          "matched_filter_z": 1.709241392166466,
+          "prediction_squared_norm": 0.6469525924367505,
+          "training_amplitude": [
+            0.0017926247939568211,
+            -0.004841215428686291
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -12.421942454707008,
+          "matched_filter_z": 2.5049337549112733,
+          "prediction_squared_norm": 46.63379858567356,
+          "training_amplitude": [
+            0.009304618283944353,
+            -0.006651037232759474
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": 7.2148079913954835,
+          "matched_filter_z": 2.809110610897382,
+          "prediction_squared_norm": 3.9471333846909453,
+          "training_amplitude": [
+            0.0014586248009874146,
+            -0.0037988288507089653
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": 1.7305136209315863,
+          "matched_filter_z": 1.4559848834819948,
+          "prediction_squared_norm": 4.326344982103062,
+          "training_amplitude": [
+            0.001973317793862787,
+            -0.005426535464296328
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      },
+      "dodecahedron": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": 0.29032916456412405,
+          "matched_filter_z": 0.7288523752667296,
+          "prediction_squared_norm": 0.05666312276204124,
+          "training_amplitude": [
+            0.0013088521914895938,
+            0.0003502632195200421
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -60.74056829739867,
+          "matched_filter_z": -0.3653276173136141,
+          "prediction_squared_norm": 55.30679224712063,
+          "training_amplitude": [
+            0.009048212273207297,
+            -0.009675567023621136
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": -7.578982940118916,
+          "matched_filter_z": -0.5277166290063927,
+          "prediction_squared_norm": 5.17744917391849,
+          "training_amplitude": [
+            0.004579793191002819,
+            -0.0019300445058917839
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": -3.677766691743675,
+          "matched_filter_z": -1.1911084589976313,
+          "prediction_squared_norm": 1.1372853020615343,
+          "training_amplitude": [
+            -0.0006607463825221235,
+            0.0026174211973019066
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      },
+      "icosahedron": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": -0.2263186413990755,
+          "matched_filter_z": -1.2969614962684142,
+          "prediction_squared_norm": 0.00713975446459062,
+          "training_amplitude": [
+            0.0005357865983186213,
+            5.697313991259062e-06
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -15.500489515349974,
+          "matched_filter_z": -0.016828122313550412,
+          "prediction_squared_norm": 15.368547816397923,
+          "training_amplitude": [
+            -0.0020160453808911252,
+            0.0063196886471481
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": 0.03120755897992672,
+          "matched_filter_z": 0.2010899612650721,
+          "prediction_squared_norm": 0.08830456421322877,
+          "training_amplitude": [
+            0.0005156183641492872,
+            0.00029418575615581285
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": 0.04425561659115785,
+          "matched_filter_z": 0.21652108777819634,
+          "prediction_squared_norm": 0.027317104937283808,
+          "training_amplitude": [
+            0.0004704468511740136,
+            -9.041353313495085e-05
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      }
+    },
+    "fractional_envelope": {
+      "cube": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": 0.150727719447774,
+          "matched_filter_z": 0.38865598487605274,
+          "prediction_squared_norm": 0.13734976862756434,
+          "training_amplitude": [
+            0.001118903100968033,
+            -0.0024842797371505913
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -48.585064526367454,
+          "matched_filter_z": 0.2969268164364069,
+          "prediction_squared_norm": 52.90448687342798,
+          "training_amplitude": [
+            0.015044430057427161,
+            -0.0074389694390696115
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": -0.5133828656284001,
+          "matched_filter_z": 0.43714944680643447,
+          "prediction_squared_norm": 1.6294114209423138,
+          "training_amplitude": [
+            0.0024143595396789322,
+            -0.0032219872457843273
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": 0.7287638584962969,
+          "matched_filter_z": 0.9449239107487316,
+          "prediction_squared_norm": 0.29139475891389843,
+          "training_amplitude": [
+            -7.220281418898192e-05,
+            -0.00180841211642498
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      },
+      "octahedron": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": 2.223355023716019,
+          "matched_filter_z": 1.7240157517690209,
+          "prediction_squared_norm": 0.7372625534722126,
+          "training_amplitude": [
+            0.0020340983977546107,
+            -0.006164720234407527
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -4.019204640223801,
+          "matched_filter_z": 2.355828196050605,
+          "prediction_squared_norm": 29.694101266859803,
+          "training_amplitude": [
+            0.009804400735353993,
+            -0.008059530945049872
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": 5.451397854267022,
+          "matched_filter_z": 2.7354074408561093,
+          "prediction_squared_norm": 1.7167713520124663,
+          "training_amplitude": [
+            0.0012468117237478774,
+            -0.00397342165362291
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": -0.3534178445695666,
+          "matched_filter_z": 1.2730540186695385,
+          "prediction_squared_norm": 7.172086508161385,
+          "training_amplitude": [
+            0.002777701031983697,
+            -0.008274454343331608
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      },
+      "dodecahedron": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": 0.266819472789673,
+          "matched_filter_z": 0.6205423382924965,
+          "prediction_squared_norm": 0.07654215689578114,
+          "training_amplitude": [
+            0.0018396241974811018,
+            0.0003493093267219069
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -46.03565155491711,
+          "matched_filter_z": -0.40163493533112726,
+          "prediction_squared_norm": 40.89858025308336,
+          "training_amplitude": [
+            0.010943866142855536,
+            -0.011062711355708918
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": -3.5876607807571816,
+          "matched_filter_z": -0.5187736764009536,
+          "prediction_squared_norm": 2.0883045111874985,
+          "training_amplitude": [
+            0.0044193892821606405,
+            -0.0019207527828016377
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": -4.7517020604095315,
+          "matched_filter_z": -1.0103155783892006,
+          "prediction_squared_norm": 1.9384285983437881,
+          "training_amplitude": [
+            -0.0010523365271170814,
+            0.0041005687185069195
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      },
+      "icosahedron": {
+        "TT_train_pol_test": {
+          "heldout_delta_chi2": -0.18564888704292262,
+          "matched_filter_z": -1.7337293978004036,
+          "prediction_squared_norm": 0.002781318738509924,
+          "training_amplitude": [
+            0.00036955443974785404,
+            -0.00014129996795284383
+          ],
+          "ntrain": 215,
+          "nhold": 398
+        },
+        "pol_train_TT_test": {
+          "heldout_delta_chi2": -11.111363154904243,
+          "matched_filter_z": -0.013637364650595514,
+          "prediction_squared_norm": 11.02081755397612,
+          "training_amplitude": [
+            -0.00491475922371491,
+            0.006075086365647251
+          ],
+          "ntrain": 398,
+          "nhold": 215
+        },
+        "lowTT_train_highTT_test": {
+          "heldout_delta_chi2": -0.12421872065502843,
+          "matched_filter_z": -0.32183776794794816,
+          "prediction_squared_norm": 0.024162962042308486,
+          "training_amplitude": [
+            -0.00046076228564367547,
+            -0.00012456786512930556
+          ],
+          "ntrain": 103,
+          "nhold": 112
+        },
+        "highTT_train_lowTT_test": {
+          "heldout_delta_chi2": -0.12208030090203482,
+          "matched_filter_z": -0.08273400032222294,
+          "prediction_squared_norm": 0.07635692935065727,
+          "training_amplitude": [
+            0.0009242646795161247,
+            -2.70389506860287e-05
+          ],
+          "ntrain": 112,
+          "nhold": 103
+        }
+      }
+    }
+  },
+  "all_six_models_4_frequencies": {
+    "tests": 24,
+    "min_observed_naive_p": 0.0024181835175414385,
+    "global_min_p_MC": 0.03443218559381354,
+    "null_samples": 30000,
+    "note": "Conditional fixed-baseline Gaussian probability only; not a physical cosmology likelihood"
   }
 }
