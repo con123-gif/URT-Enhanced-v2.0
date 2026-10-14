@@ -55,3 +55,16 @@ print("Pole spectral strengths n=0,1,2:",[(n,W(n),W(n)/S0) for n in range(3)])
 print("Euclidean high Q: D(Q)=S0/Q²-mu0²*S2/Q⁴+o(Q^-4)")
 print("S0 =",S0,"S2 =",S2)
 print("Model causal/reflection-positive; physical Planck gravity NOT derived")
+
+
+# Subleading fractional-power UV residue: analytically positive formula.
+alpha=-log(float(Fraction(8,125)))/log(1/s)
+def UV_remainder(Q):
+    return sum(W(n)*s**(-4*n)/(Q**4*(Q**2+s**(-2*n)))
+               for n in range(120))
+Q=1e5
+expected_ratio=s**(2+alpha)
+ratio=UV_remainder(Q/s)/UV_remainder(Q)
+assert abs(ratio-expected_ratio)<2e-5
+print("Newton UV correction exponent 2+alpha =",2+alpha)
+print("Log-periodic step ratio measured / exact =",ratio,expected_ratio)
