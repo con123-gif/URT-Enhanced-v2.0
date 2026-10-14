@@ -155,6 +155,30 @@ In particular the fourth mass moment diverges in the fixed-level transfer model.
 
 **Important exact obstruction scoped to this free model:** positivity and nonzero \(S_0\) force \(D_E(Q^2)\sim S_0/Q^2\). Thus a four-dimensional loop integral \(\int d^4Q\,D_E(Q^2)\) is quadratically UV divergent. The finite *internal graph-energy* moment previously proved does **not** by itself remove ordinary QFT loop divergences, and the field is not an ultraviolet-complete interacting theory of gravity.
 
+## 5a. New ultraviolet fractional-power / discrete-scale signature
+
+After the first two ultraviolet terms, define the **positive** remainder for dimensionless \(q=Q/m_0\):
+
+\[
+\mathcal R(q)=\sum_{n\ge0} \frac{W_n\,s^{-4n}}{q^4(q^2+s^{-2n})}>0.
+\]
+
+This is exactly \(m_0^2D_E(Q^2)-S_0/q^2+S_2/q^4\) and avoids subtractive cancellation in numerical checks. The top Platonic eigenvalue is \(\lambda_*=8/125\), and
+
+\[
+\alpha_*=-\frac{\ln\lambda_*}{\ln(1/s)}=2.856197678934829\ldots.
+\]
+
+Because \(2<\alpha_*<4\), write \(u=\ln q/\ln(1/s)\). Index shifting \(n\mapsto n-u\) in the sum proves the positive large-\(q\) remainder has the form
+
+\[
+\boxed{\mathcal R(q)=q^{-(2+\alpha_*)}\,[\mathcal P(u)+o(1)]},
+\]
+
+where \(\mathcal P(u+1)=\mathcal P(u)\) and \(\mathcal P(u)>0\). The other Platonic eigenvalues contribute strictly smaller corrections at leading nonanalytic order. The mathematical logarithmic angular frequency is \(2\pi/\ln(1/s)=6.52850260527\ldots\).
+
+Hence the ratio of residuals at two high momenta separated by exactly \(s^{-1}\) tends to \(s^{2+\alpha_*}=0.00933747416002\ldots\). The stable numerical calculation at \(q=10^5\) gives \(0.00933678701277\), approaching that exact asymptotic prediction. **This is a candidate test signature of the *assumed physical scalar field*, not a discovered UV feature of observed Nature.**
+
 ## 6. The static spacetime signature
 
 With a chosen linear source interaction \(gJ\Phi\), scalar exchange between stationary point sources gives
