@@ -58,3 +58,15 @@ Preserve q=(pi/e)exp(i 2pi/phi^2), independently of the positive Hermitian trans
 This is an active positive line of mathematical development, not a no-go. Previously separate project pieces are now explicitly constructed together: five inscribed cubes -> cubic tetrahedral parity -> 4D regular simplex -> A4 twenty roots -> the 4_3 spectral hidden sector. The icosahedral shell independently generates both hidden fours quadratically and admits an exact quartic feedback functional weighted by the pre-existing Delta.
 
 Do not identify the nested 13=4+4+5 carrier with the original centred 13=1+1+3+3'+5 merely because both are 13-dimensional. Both are A5 representations, and a symmetry-preserving *linear* map shares only the 5 band, while nonlinear products overcome that limitation.
+
+## 5. The missing 16th response mode is a four-site A5 singlet (new verified calculation)
+
+The two quadratic hidden maps h3(x),h5(x) give the quartic product X(x)=h3(x) tensor h5(x) in 4_3 tensor 4_5. A 1500-state numeric span has rank **16** (condition number 2.335), confirming it populates the complete response carrier rather than merely having formal dimension 16. An independent deterministic witness using equal-amplitude support subsets gives rank 15 for supports of at most three sites and rank 16 when four-site subsets are included.
+
+Find the unique normalised 4x4 matrix S orthogonal to all three-site-supported X(x). Its singular values are (1/2,1/2,1/2,1/2). Direct 72-degree and 120-degree icosahedral rotation checks show S is an A5 intertwiner. Define the scalar c(x)=h3(x)^T S h5(x).
+
+Expand c(x) into homogeneous degree-four monomials in x_1,...,x_12. **All** monomials supported on fewer than four distinct shell vertices have coefficient zero (numerical residual <5e-15). Of the 495 four-distinct-site monomials, precisely 120 have nonzero coefficients, 60 positive and 60 negative, with equal magnitude 2/sqrt(15) up to <5e-15 error. The coefficient changes sign under shell antipodal inversion. This is an A5 rotational singlet with *odd inversion parity* (a pseudoscalar under the full point group); it must not be silently identified with physical U(1) hypercharge.
+
+No physical constants were adjusted to obtain the coefficient pattern. Under the conditional complexified uniform URT shell action x -> q x, the new response satisfies X(qx)=q^4 X(x), and c(qx)=q^4 c(x) for q=(pi/e) exp(i 2pi/phi^2). This provides an exact fourth-harmonic *candidate* for a microscopic history/response dictionary. The origin of a physical scalar gauge current and appropriate space-time scale are separate identifications.
+
+**Continuity:** do not terminate this line after verifying dimension 16. The 120 allowed quartets, their parity, the exact A4 root construction, and the Delta-weighted quartic backreaction together specify an explicit finite polynomial interaction machine to continue deriving and testing.
