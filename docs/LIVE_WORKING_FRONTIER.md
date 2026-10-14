@@ -46,3 +46,19 @@ Can a distinct Newton–Platonic hidden-sector law generate scale, information/h
 ## Update log
 
 - **2026-10-14:** Established a compact re-entry file to protect conversation continuity and separate independent Newton–Platonic claims from Cathedral-integrated and physically conditional constructions.
+
+
+## 2026-10-14 — new all-five-Platonic exact closure (supersedes frontier description of purely open algebra)
+
+An independent, successfully verified all-five-solid construction now proves:
+- Vertex–face incidence Gram polynomials for tetra/cube/octa/dodeca/icosa in \`newton-scale/ALL_FIVE_PLATONIC_HIDDEN_ALGEBRA_LAW_2026-10-14.md\`.
+- Dual pairs have hidden vertex/face dimensions cube (4/2) and octa (2/4), dodeca (8/0) and icosa (0/8); tetra (0/0). Quadratic maps take hidden cube vertex 4D to face rank4; dode hidden8 to full 12-face rank12.
+- Five inscribed cubes give exact mean-projector spectrum \(0^{\times7},(1/4)^{\times8},(2/5)^{\times5}\); unique uniform orbit average under A5; pair overlaps \(5/8\).
+- The five cube-hidden projectors generate a real operator *-algebra \(M_9(\mathbb R)\oplus M_4(\mathbb R)\), dim97, on active dimension13. Adding a compressed **native geometric coordinate** gives all \(M_{13}(\mathbb R)\), dim169. Two exact mod101 commutant-rank certificates (167 then168) establish generation without merely numerical rank guesses.
+- A geometrically preferred **equal cube, maximally mixed in cube-hidden state** ensemble is \(\rho_{\rm geo}=\bar P/4=(1/16)P_{H8}+(1/10)P_{V5}\), with exact probabilities 1/2 hidden, 1/2 fiveplet, parity 3/4 even, 1/4 odd; \(S=\frac12\ln160\), Holevo \(\frac12\ln10\), modular contrast \(\ln(8/5)\), density-tangent off-diagonal BKM coefficient \((80/3)\ln(8/5)\).
+- Canonical geometric Kraus instrument \(K_j=P_j(\sum P_i)^{-1/2}\) is **exactly** complete on active13 and leaves the canonical ensemble invariant; parity makes stationary state nonunique without the symmetric preparation.
+- Discrete equal-orbit averaging law \(\psi_{n+1}=\bar P\psi_n\) fixes relative hidden-to-fiveplet amplitude decay \((5/8)^n\); identifying one n with golden spectral refinement is a **conditional** physics assumption. Do not conflate this 5/8 law with the separate 3/4 simplex Markov channel or the previous Planck sine templates.
+- **Scientific status:** exact finite geometry + quantum information model and complete operator algebra; not yet a measured fundamental spacetime/gauge/force law. Previous Planck null sine-feature analysis is not a test of the new projector contraction or density state.
+- Reproducible code \`newton-scale/all_platonic_incidence_and_algebra.py\`; GitHub Actions \`newton-all-platonic-algebra.yml\` PASSED. Entropy details: \`newton-scale/PLATONIC_CANONICAL_ENTROPY_STATE_2026-10-14.md\`.
+
+**Active physical frontier:** produce an observable map for this *specific* geometric instrument/its even-odd parity and hidden-fiveplet contrast from existing experimental systems, and test both the \(5/8\) relative response and \(\ln(8/5)\) modular contrast. Do not return to generic unanchored oscillation scans or reopen completed finite algebra.
