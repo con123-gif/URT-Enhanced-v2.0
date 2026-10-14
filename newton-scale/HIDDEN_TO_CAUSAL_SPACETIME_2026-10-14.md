@@ -115,3 +115,16 @@ Unlike the naive previous claim, **the graph-wave law and the multiscale Fourier
 `newton_causal_emergence_2026_10_14.py` reads the previous conversation's actual `Cathedral_Transfer_Observable_Operators_2026-10-14.npz`. The repository version instead regenerates the matrices from adjacent archived Platonic scripts. Results: `Newton_Causal_Emergence_Results_2026-10-14.json`.
 
 References: Kotelina & Pevnyi, *Spherical semidesigns* (icosahedron 5-design), https://files.ele-math.com/articles/jca-06-13.pdf ; Surya, *The causal set approach to quantum gravity*, Living Reviews in Relativity 22, 5 (2019), https://doi.org/10.1007/s41114-019-0023-1. Those works are background, not empirical verification of the present model.
+
+## 7. No additional zero-frequency branches; what bounded dispersion does not imply
+For every nonzero momentum vector k, at least one of the twelve frame dot products k·u_i is nonzero. Because ell_n→0, for sufficiently large n every |ell_n k·u_i| is less than 2π. All terms in the nonnegative sum defining the multiscale symbol could vanish only if ell_n k·u_i were an integer multiple of 2π for every n and i, hence zero for sufficiently large n. This would force k orthogonal to the entire spanning 3D frame, implying k=0. Thus
+
+\[
+\widehat{\mathscr D}(k)>0\quad\text{for every } k\ne0,
+\]
+
+while \(\widehat{\mathscr D}(0)=0\). This excludes unintended additional *zero-frequency spatial modes* in the candidate symbol.
+
+There is a separate, substantial limitation: a bounded dispersion function on ordinary continuous R³ does **not** by itself regulate high-momentum field theory. In fact, a Gaussian quantum field using this symbol has infinitely many high-wave-number degrees of freedom with bounded frequency, so naive continuum density-of-states and heat-trace integrals remain ultraviolet divergent without a separately derived physical measure or constraint. The prior finite 19-mode graph-energy theorem cannot silently be promoted into a finite four-dimensional quantum-field loop integral.
+
+A causal discrete update exists as proved above, but a microscopic light cone with exactly the observed physical light speed remains unestablished. A full proof of sub-quantum spacetime must uniquely derive the coherent history clock, operational spacetime metric, physical ultraviolet state counting and coupling to stress-energy. The present construction is a **specific working mathematical prototype** exhibiting the needed qualitative regime change; it is not yet a unique physical law.
