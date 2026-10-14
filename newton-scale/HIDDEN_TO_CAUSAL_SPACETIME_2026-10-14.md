@@ -128,3 +128,19 @@ while \(\widehat{\mathscr D}(0)=0\). This excludes unintended additional *zero-f
 There is a separate, substantial limitation: a bounded dispersion function on ordinary continuous R³ does **not** by itself regulate high-momentum field theory. In fact, a Gaussian quantum field using this symbol has infinitely many high-wave-number degrees of freedom with bounded frequency, so naive continuum density-of-states and heat-trace integrals remain ultraviolet divergent without a separately derived physical measure or constraint. The prior finite 19-mode graph-energy theorem cannot silently be promoted into a finite four-dimensional quantum-field loop integral.
 
 A causal discrete update exists as proved above, but a microscopic light cone with exactly the observed physical light speed remains unestablished. A full proof of sub-quantum spacetime must uniquely derive the coherent history clock, operational spacetime metric, physical ultraviolet state counting and coupling to stress-energy. The present construction is a **specific working mathematical prototype** exhibiting the needed qualitative regime change; it is not yet a unique physical law.
+
+## 8. Exact hidden-operation ordering generates the entire 16-response algebra
+A separate exact, purely rational calculation strengthens the source of the rotational degrees of freedom. In the four-dimensional sum-zero carrier H4⊂R5, put P=I5−J5/5 and define five rank-one Platonic projectors Q_j=(5/4)P|j⟩⟨j|P. They obey Q_j²=Q_j, Tr(Q_j Q_k)=1/16 for j≠k, and ∑Q_j=(5/4)P.
+
+**Theorem (ordered-pair closure):** The twenty-five ordered two-step operators Q_iQ_j span all of End(H4), exactly dimension 16. Their order-reversal symmetric and antisymmetric parts span orthogonal blocks of dimensions 10 and 6 respectively:
+
+\[
+\operatorname{span}\{Q_iQ_j+Q_jQ_i\}=\operatorname{Sym}(H_4),\quad\dim=10,
+\]
+\[
+\operatorname{span}\{[Q_i,Q_j]\}=\mathfrak{so}(H_4),\quad\dim=6.
+\]
+
+Under icosahedral A5 this is `1+4+5` for the symmetric block and `3+3prime` for the order-sensitive rotational block. In particular, ordered noncommutative Platonic histories alone generate the whole previously used 16-dimensional Cathedral/Platonic response algebra. The ten antisymmetric ordered-pair commutators have exact equal squared Frobenius norms **15/128**, and their rank-six frame operator has six equal nonzero eigenvalues **25/128** (the other nineteen in the ambient 25-vector matrix-coordinate space are zero). Equivalently, ∑_{i<j}[Q_i,Q_j]^T[Q_i,Q_j]=(75/256)P on H4. Every statement was verified symbolically over the rationals in `newton_hidden_order_algebra_exact_2026_10_14.py`.
+
+This provides a mathematically explicit source of **orientation/rotation from event ordering**, not merely a dimension coincidence. The difference of AB and BA may be regarded as an internal order sensitivity, but no thermodynamic arrow of time, causal cone, Born rule, or gravitational clock is thereby uniquely fixed. Commutators of rank-one projectors generating matrix algebras is standard linear algebra; originality is not claimed without prior-art review.
