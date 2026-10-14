@@ -1,6 +1,6 @@
 """2026-10-14: original October 8 Cathedral v113 Walsh history-source audit.
 
-Run next to Cathedral_Rederivation_2026-10-08.py. The original code builds the
+Run from the repository alongside the recovered original reconstruction. The original code builds the
 64-state Walsh basis, signed Jacobian and 13x51/51x51 history blocks. Here we
 also test its positive Gram completion J.T@J and differentiate the resulting
 Feshbach response. This is NOT the later species-loaded physical operator.
@@ -13,7 +13,7 @@ from pathlib import Path
 import numpy as np
 from scipy.linalg import null_space
 
-src = Path(__file__).with_name("Cathedral_Rederivation_2026-10-08.py")
+src = Path(__file__).resolve().parents[1] / "2026-10-14_recovered_H64" / "Cathedral_Rederivation_2026-10-08.py"
 assert src.exists()
 with tempfile.TemporaryDirectory() as tmp:
     env = os.environ.copy()
