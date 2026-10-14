@@ -42,3 +42,5 @@ Before continuing Cathedral / URT work, read:
 - [Dated false-no-go recovery register](RECOVERED_FALSE_NO_GO_REGISTER_2026-10-14.md): 16 cases with *local failure* distinguished from global impossibility; includes positive nonlinear A5 return calculation.
 
 These are bounded recovered records, **not** full transcripts of the last 100 conversations. Read the dated originals and later corrections before changing project status.
+
+- [Recovered October 11 integrated proof audit, part 1](RECOVERED_2026-10-11_INTEGRATED_AUDIT_PART_1.md) and [part 2](RECOVERED_2026-10-11_INTEGRATED_AUDIT_PART_2.md): retained four-layer 52-state construction, gauge Lie-algebra work, and conditional electromagnetic/Einstein/typed-history identifiability arguments. This is a reconstructed historical source, not raw transcripts.
