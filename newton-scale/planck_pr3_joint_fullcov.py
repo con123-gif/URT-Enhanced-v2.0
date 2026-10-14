@@ -31,8 +31,8 @@ for name,url in P.items():
 
 ell,obs,sigma=np.loadtxt(DEST/"cl_cmb_plik_v22.dat",unpack=True)
 assert len(ell)==613
-mn=np.loadtxt(DEST/"blmin.dat",dtype=int)
-mx=np.loadtxt(DEST/"blmax.dat",dtype=int)
+mn=np.loadtxt(DEST/"blmin.dat").astype(int)
+mx=np.loadtxt(DEST/"blmax.dat").astype(int)
 wt=np.loadtxt(DEST/"bweight.dat")
 data=np.loadtxt(DEST/"COM_PowerSpect_CMB-base-plikHM-TTTEEE-lowl-lowE-lensing-minimum-theory_R3.01.txt")
 e=data[:,0].astype(int)
@@ -76,7 +76,7 @@ def fit(F):
 
 def design(w,mode,shared):
     basis=np.array([np.sin(w*np.log(ell)),np.cos(w*np.log(ell))]).T
-    factor=model if "fractional" in mode else np.ones(613)
+    factor=model.copy() if "fractional" in mode else np.ones(613)
     if "envelope" in mode:factor*=np.power(ell/300.,-beta)
     x=basis*factor[:,None]
     if shared:return x
