@@ -58,6 +58,18 @@ Each ledger entry should include where possible:
 - repository file or commit;
 - whether the result is internal mathematics, physical identification, or empirical validation.
 
+## 2026-10-14 source-file rescue and no-go preservation
+
+The **actual** 30 September full-project ZIP (441 entries) and 1 October consolidated ZIP (470 entries including directories) were successfully materialized and inspected on 14 October. There are **439 byte-identical shared files** by per-member SHA-256; the consolidated archive includes the original 28 September Global Closure Audit and additional verification. The archives contain **14 original no-go source programs and 14 results certificates**. Do not rely on abbreviated summaries in their place.
+
+Mandatory start documents for disputed obstructions:
+- `docs/ORIGINAL_ARCHIVES_RECOVERED_14_NOGOS_2026-10-14.md` (primary source inventory, precise limits)
+- `docs/RECOVERED_FALSE_NOGOS_AND_NONLINEAR_PORTAL_2026-10-14.md` (seven previously corrected false stops and constructive return)
+- `research_archive/urt_nonlinear_hidden_portal_2026_10_14.py` (rank-8 quadratic coupling, two positive rank-4 residues)
+- `research_archive/urt_doubled_hidden_dirac_reopen_2026_10_14.py` (non-scalar graded Dirac on 4+4, so single-4 Schur no-go cannot be global)
+
+Treat these as mandatory *additional* recovery checkpoints, not replacements for dated conversations, the original ZIPs, v123/v124 records or H64 physical-gate calculations. A finite candidate's successful return is not itself a physical law, but cannot be dismissed by a theorem limited to a different carrier or linear map.
+
 ## Mandatory read set before continuing the project
 
 At minimum, inspect:
