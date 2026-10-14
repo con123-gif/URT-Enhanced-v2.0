@@ -60,3 +60,42 @@ This result upgrades the earlier arbitrary golden IFS contraction to a **derived
 **Next exact equation:** derive, from the selected species-loaded T_star and its H64 inter-scale action R, the triplet-covariance relation
   R^dagger (P_low L P_low) R = s^2 P_high L P_high
 on appropriately scaled levels, and the separate order-3 transfer/contact covariance, without adding fitted coefficients. These are the concrete physical selector tests.
+
+
+## 7. Canonical energy-metric lift of doubling (additional first-principles test)
+On the 20-dimensional dodecahedron carrier let P0 project onto constants and L_+^{±1/2} be the ordinary positive square root and inverse square root of L restricted to mean-zero states. The **canonical L-energy isometry** associated with the actual doubling permutation D is
+  U_L=P0+L_+^{-1/2} D L_+^{1/2}.
+Its identity is exact: U_L^T L U_L=L, and U_L^4=I. On the high-triplet-to-low-triplet channel it amplifies mode amplitudes by phi²=2.61803398875; on the reverse channel it attenuates by phi^-2=0.38196601125. The observed matrix residuals are ~3.91e-14 for energy preservation and ~1.59e-14 for order four. **This derives an intrinsic energy-normalized amplitude scale without matching a physical length.** Equating that amplitude scale with a change in physical length still requires the spectral-covariance/distance identification.
+
+Because U_L^4=I, repeated application alone does NOT produce ever-smaller distances. An infinite one-way refinement needs additional branching, an inverse-limit history extension or a noninvertible selector. This precise limitation concerns only repeated D, not URT as a whole.
+
+## 8. Deriving noninvertible five-branch history selection from the same cubes
+Let Q_j denote the rank-one projections of the five cube hidden projectors into the four-dimensional A4 simplex. They satisfy
+  Tr(Q_j)=1; Tr(Q_i Q_j)=1/16 (i!=j);
+  sum_j Q_j=5/4 I4.
+Define five **geometry-normalized** Kraus operators A_j=sqrt(4/5) Q_j. Then
+  sum_j A_j† A_j=I4
+with no free continuous branch weight. Starting in simplex state Q_i, the chosen cube label follows the exact transition probabilities
+  P(j|i)=4/5 for j=i, and 1/20 otherwise.
+This stochastic matrix has eigenvalues 1 (x1) and 3/4 (x4): nonstationary label correlations decay as (3/4)^n. This is a legitimate positive bounded-memory finite history selector built from the existing Platonic geometry, though not yet identified with the canonical URT/H64 selector.
+
+The full 13D cube-span similarly admits the canonical fusion-frame instrument
+  S=sum_j P_j=(5/4)(P_4_3+P_4_5)+2P_5,
+  A_j^(13)=P_j S^(-1/2),
+  sum_j (A_j^(13))† A_j^(13)=P13.
+In the three invariant representation population blocks (4_3,4_5,5), its exact population transition matrix (rows=output, columns=input) is
+  [[1,0,0],[0,1/3,1/3],[0,2/3,2/3]].
+It has two independent stationary sectors. Hence the geometry produces a normalized channel but **does not uniquely select the complete vacuum entropy populations**; URT/rail selection must still make that choice.
+
+## 9. Conditional infinite fractal with actual Markov histories, not independent branches
+Combine the **derived** relative triplet scale s=phi^-2 with the **derived** rank-one five-branch quantum instrument and identify cube labels with the proposed five affine 4-simplex refinements. This latter spatial identification remains a physical/geometric hypothesis. The resulting stationary branch process has transition probabilities 4/5 (repeat) and 1/20 (switch).
+
+Its exact entropy rate is
+  h=-(4/5)ln(4/5)-4(1/20)ln(1/20)=0.777661295762166 nats/step.
+For five non-overlapping golden similarity branches its candidate internal dimensions are:
+  support Hausdorff dimension D0=ln5/(2ln phi)=1.6722759381845547;
+  Markov information dimension D1=h/(2ln phi)=0.8080238839370208;
+  Markov correlation dimension D2=-ln(13/20)/(2ln phi)=0.4476021719116077.
+These are new consequences of the actual geometry-normalized branch probabilities, rather than the *different* independent tensor-product R5 ansatz. Neither branch model has yet been shown to describe measurable sub-Planck spacetime. Keeping both explicit prevents inconsistent assumptions being silently combined.
+
+Local executable artifacts: cathedral_scale_first_principles_2026_10_14.py; cathedral_scale_fractal_selector_2026_10_14.py; Cathedral_First_Principles_Scale_Certificate_2026-10-14.json; Cathedral_Five_Cube_History_Selector_2026-10-14.json.
