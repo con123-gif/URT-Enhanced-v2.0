@@ -106,6 +106,46 @@ for solid,scale in ratios.items():
     Flist.append(F)
     print(solid,w,dchi,"A",np.linalg.norm(pars),flush=True)
 
+
+# Held-out conditional predictions, using a single primordial phase/amplitude.
+def cross_predict(F,train,hold,y):
+    ct=c[np.ix_(train,train)]
+    xc=c[np.ix_(hold,train)]
+    cH=c[np.ix_(hold,hold)]
+    h=cho_factor(ct,lower=True)
+    a=cho_solve(h,F[train])
+    pars=np.linalg.solve(F[train].T@a,F[train].T@cho_solve(h,y[train]))
+    Y=y[hold]-xc@cho_solve(h,y[train])
+    X=F[hold]-xc@a
+    cc=cH-xc@cho_solve(h,xc.T)
+    chh=cho_factor(cc,lower=True)
+    pred=X@pars
+    strength=float(pred@cho_solve(chh,pred))
+    corr=float(Y@cho_solve(chh,pred))
+    return {"delta_chi2_heldout":2*corr-strength,
+       "matched_filter_z":corr/np.sqrt(strength) if strength>0 else None,
+       "prediction_norm2":strength,"n_train":len(train),
+       "n_heldout":len(hold),"train_coeffs":pars.tolist()}
+inds=np.arange(613)
+T=inds[:215]; Pol=inds[215:]
+low=T[ell[:215]<900]; high=T[ell[:215]>=900]
+for solid,F in zip(ratios,Flist):
+    fits[solid]["heldout"]={
+      "TT_to_TE_EE":cross_predict(F,T,Pol,res),
+      "TE_EE_to_TT":cross_predict(F,Pol,T,res),
+      "lowTT_to_highTT":cross_predict(F,low,high,res),
+      "highTT_to_lowTT":cross_predict(F,high,low,res)}
+    # Fit exactly the same physical feature using the independent CAMB
+    # reference rather than the official Planck minimum-theory baseline.
+    alternative=obs-reconcile
+    v=F.T@cho_solve(ch,alternative)
+    G=F.T@cho_solve(ch,F)
+    p=np.linalg.solve(G,v)
+    fits[solid]["alternate_CAMB_baseline"]={
+       "baseline_chi2":float(alternative@cho_solve(ch,alternative)),
+       "delta_chi2":float(v@p),
+       "amplitude":float(np.linalg.norm(p))}
+
 # Four-frequency correlated trial correction.
 stack=np.column_stack(Flist)
 GG=stack.T@cho_solve(ch,stack)
