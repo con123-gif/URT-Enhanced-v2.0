@@ -20,52 +20,256 @@
   "model": "primordial P(k)=As(k/.05)^(ns-1)*[1+A*sin(omega ln(k/.05)+phase)]",
   "epsilon_perturbation": 0.02,
   "n_bandpowers": 613,
-  "baseline_chi2": 585.4745658870222,
-  "camb_vs_official_model_relative_rms": 0.008482870919974338,
+  "baseline_chi2": 585.4745658870219,
+  "camb_vs_official_model_relative_rms": 0.008482870919974333,
   "fits": {
     "cube": {
       "omega": 11.438403469520512,
-      "delta_chi2": 2.469498579762922,
-      "amplitude": 0.005660289333446578,
-      "phase": -2.2142347834429117,
-      "naive_p_2dof": 0.29090768672665557,
+      "delta_chi2": 2.4694985797630693,
+      "amplitude": 0.005660289333446709,
+      "phase": -2.2142347834428886,
+      "naive_p_2dof": 0.29090768672663403,
       "parameters": [
-        -0.003395889889986978,
-        -0.004528444235431562
-      ]
+        -0.0033958898899869535,
+        -0.004528444235431744
+      ],
+      "heldout": {
+        "TT_to_TE_EE": {
+          "delta_chi2_heldout": -1.425834326153693,
+          "matched_filter_z": -0.2904505920772876,
+          "prediction_norm2": 0.8806877972186473,
+          "n_train": 215,
+          "n_heldout": 398,
+          "train_coeffs": [
+            -0.006212187755785396,
+            -0.00102629012665245
+          ]
+        },
+        "TE_EE_to_TT": {
+          "delta_chi2_heldout": -32.847546582806615,
+          "matched_filter_z": -0.4677170486226191,
+          "prediction_norm2": 27.906009434294848,
+          "n_train": 398,
+          "n_heldout": 215,
+          "train_coeffs": [
+            0.0006673606304104592,
+            -0.019972542944589746
+          ]
+        },
+        "lowTT_to_highTT": {
+          "delta_chi2_heldout": -0.8151082770436044,
+          "matched_filter_z": 0.7495176749206794,
+          "prediction_norm2": 3.6976410005666387,
+          "n_train": 103,
+          "n_heldout": 112,
+          "train_coeffs": [
+            -0.009987960248788872,
+            -0.004029092517702782
+          ]
+        },
+        "highTT_to_lowTT": {
+          "delta_chi2_heldout": 1.0882729857120208,
+          "matched_filter_z": 1.2055914755488544,
+          "prediction_norm2": 0.36155210502969026,
+          "n_train": 112,
+          "n_heldout": 103,
+          "train_coeffs": [
+            -0.004503022395282793,
+            -0.00020350979920906472
+          ]
+        }
+      },
+      "alternate_CAMB_baseline": {
+        "baseline_chi2": 584.4654866952473,
+        "delta_chi2": 2.8636432608480358,
+        "amplitude": 0.00603865593060286
+      }
     },
     "octahedron": {
       "omega": 30.992483355699488,
-      "delta_chi2": 6.830751852756048,
-      "amplitude": 0.015729614444534596,
-      "phase": -0.15637261373446176,
-      "naive_p_2dof": 0.03286404991578608,
+      "delta_chi2": 6.830751852755991,
+      "amplitude": 0.015729614444534513,
+      "phase": -0.15637261373447622,
+      "naive_p_2dof": 0.03286404991578701,
       "parameters": [
-        0.015537692634623124,
-        -0.0024496689910454687
-      ]
+        0.015537692634623006,
+        -0.0024496689910456803
+      ],
+      "heldout": {
+        "TT_to_TE_EE": {
+          "delta_chi2_heldout": -4.968290880653429,
+          "matched_filter_z": 0.19845996906715546,
+          "prediction_norm2": 5.9352846869621665,
+          "n_train": 215,
+          "n_heldout": 398,
+          "train_coeffs": [
+            0.021357544300128088,
+            -0.01015616951048612
+          ]
+        },
+        "TE_EE_to_TT": {
+          "delta_chi2_heldout": 2.105392175240273,
+          "matched_filter_z": 1.4588667321759432,
+          "prediction_norm2": 2.5927249838856,
+          "n_train": 398,
+          "n_heldout": 215,
+          "train_coeffs": [
+            0.011505159806130425,
+            0.006844212718966309
+          ]
+        },
+        "lowTT_to_highTT": {
+          "delta_chi2_heldout": 6.5294262268545245,
+          "matched_filter_z": 2.62672576711295,
+          "prediction_norm2": 4.073269148359993,
+          "n_train": 103,
+          "n_heldout": 112,
+          "train_coeffs": [
+            0.016849015102979474,
+            -0.010507267446184774
+          ]
+        },
+        "highTT_to_lowTT": {
+          "delta_chi2_heldout": 1.560202527446779,
+          "matched_filter_z": 1.4785965979051807,
+          "prediction_norm2": 5.152114101276808,
+          "n_train": 112,
+          "n_heldout": 103,
+          "train_coeffs": [
+            0.025851692298945544,
+            -0.009004236492055678
+          ]
+        }
+      },
+      "alternate_CAMB_baseline": {
+        "baseline_chi2": 584.4654866952473,
+        "delta_chi2": 6.024037824060703,
+        "amplitude": 0.014771847694494385
+      }
     },
     "dodecahedron": {
       "omega": 6.528502605272993,
-      "delta_chi2": 1.3052176960428272,
-      "amplitude": 0.003221832217365498,
-      "phase": -1.5706805568927882,
-      "naive_p_2dof": 0.5206856136700693,
+      "delta_chi2": 1.3052176960428774,
+      "amplitude": 0.003221832217365556,
+      "phase": -1.5706805568928002,
+      "naive_p_2dof": 0.5206856136700562,
       "parameters": [
-        3.729911995810772e-07,
-        -0.0032218321957749206
-      ]
+        3.7299119954257306e-07,
+        -0.0032218321957749787
+      ],
+      "heldout": {
+        "TT_to_TE_EE": {
+          "delta_chi2_heldout": 0.645339599511874,
+          "matched_filter_z": 1.4616211412531774,
+          "prediction_norm2": 0.05786784282801176,
+          "n_train": 215,
+          "n_heldout": 398,
+          "train_coeffs": [
+            0.0003799563240664,
+            -0.0013352233070311722
+          ]
+        },
+        "TE_EE_to_TT": {
+          "delta_chi2_heldout": -20.506099669605526,
+          "matched_filter_z": -0.3154459770677711,
+          "prediction_norm2": 17.8412790406087,
+          "n_train": 398,
+          "n_heldout": 215,
+          "train_coeffs": [
+            -0.00875499283202073,
+            -0.009179267649530884
+          ]
+        },
+        "lowTT_to_highTT": {
+          "delta_chi2_heldout": -11.214728739180899,
+          "matched_filter_z": -0.7568683287645985,
+          "prediction_norm2": 7.163309500225409,
+          "n_train": 103,
+          "n_heldout": 112,
+          "train_coeffs": [
+            -0.006315584660389577,
+            -0.0062707899423930305
+          ]
+        },
+        "highTT_to_lowTT": {
+          "delta_chi2_heldout": -4.305835654604916,
+          "matched_filter_z": -1.3234967951193217,
+          "prediction_norm2": 1.2943565551221143,
+          "n_train": 112,
+          "n_heldout": 103,
+          "train_coeffs": [
+            0.0047292890734877855,
+            -0.0006254685166763241
+          ]
+        }
+      },
+      "alternate_CAMB_baseline": {
+        "baseline_chi2": 584.4654866952473,
+        "delta_chi2": 1.2866443292573688,
+        "amplitude": 0.0031852805628467995
+      }
     },
     "icosahedron": {
       "omega": 13.057005210545986,
-      "delta_chi2": 0.3793039385703417,
-      "amplitude": 0.0022752111889370904,
-      "phase": -3.0526723896511507,
-      "naive_p_2dof": 0.8272469912105628,
+      "delta_chi2": 0.3793039385703759,
+      "amplitude": 0.0022752111889371676,
+      "phase": -3.052672389651118,
+      "naive_p_2dof": 0.8272469912105486,
       "parameters": [
-        -0.002266222278993333,
-        -0.00020204587711407268
-      ]
+        -0.0022662222789934026,
+        -0.0002020458771141544
+      ],
+      "heldout": {
+        "TT_to_TE_EE": {
+          "delta_chi2_heldout": -1.674002523857963,
+          "matched_filter_z": -0.7971389229037107,
+          "prediction_norm2": 0.5220683105219028,
+          "n_train": 215,
+          "n_heldout": 398,
+          "train_coeffs": [
+            -0.004099357381637368,
+            0.003296999958769383
+          ]
+        },
+        "TE_EE_to_TT": {
+          "delta_chi2_heldout": -7.018473864383228,
+          "matched_filter_z": -0.5065723736165683,
+          "prediction_norm2": 4.799013129604201,
+          "n_train": 398,
+          "n_heldout": 215,
+          "train_coeffs": [
+            -0.002456393694488682,
+            -0.008571093217966431
+          ]
+        },
+        "lowTT_to_highTT": {
+          "delta_chi2_heldout": -1.0470335635149097,
+          "matched_filter_z": 0.32507434207020713,
+          "prediction_norm2": 1.9564070762625134,
+          "n_train": 103,
+          "n_heldout": 112,
+          "train_coeffs": [
+            -0.008402206214557324,
+            0.0028840124242046246
+          ]
+        },
+        "highTT_to_lowTT": {
+          "delta_chi2_heldout": 0.6593467784886324,
+          "matched_filter_z": 1.0286832940252593,
+          "prediction_norm2": 0.15772294105341553,
+          "n_train": 112,
+          "n_heldout": 103,
+          "train_coeffs": [
+            -0.0018049524216190915,
+            0.002110171141653138
+          ]
+        }
+      },
+      "alternate_CAMB_baseline": {
+        "baseline_chi2": 584.4654866952473,
+        "delta_chi2": 0.5773973194696218,
+        "amplitude": 0.002753494395828925
+      }
     }
   },
   "four_frequency_global_p": 0.11475770484590309,
