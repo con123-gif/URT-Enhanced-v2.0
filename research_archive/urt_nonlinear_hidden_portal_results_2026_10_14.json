@@ -1,0 +1,68 @@
+{
+  "schema": "cathedral-nonlinear-hidden-portal-v1",
+  "date": "2026-10-14",
+  "geometry": "icosahedral 20x12 face-vertex incidence; dual dodecahedral 4_3+4_5",
+  "input_state": [
+    0.2,
+    0.8,
+    1.4,
+    -0.3,
+    0.6,
+    -1.1,
+    0.9,
+    0.15,
+    0.45,
+    -0.7,
+    1.25,
+    -0.25
+  ],
+  "delta": 0.0024891898404204027,
+  "linear_hidden_norm": 3.6141980099064835e-15,
+  "quadratic_polynomial_ranks": {
+    "3": 4,
+    "5": 4,
+    "joint": 8
+  },
+  "state_dependent_coupling_ranks": {
+    "3": 4,
+    "5": 4,
+    "joint": 8
+  },
+  "return_residue_ranks": {
+    "z3": 4,
+    "z5": 4
+  },
+  "positive_gram_rank": 8,
+  "positive_gram_minimum_eigenvalue": -5.117810993130298e-16,
+  "self_energy_z0_frobenius_norm": 3.6061044564891733,
+  "energy_initial": 8.791538419474604,
+  "energy_after_gradient_step": 8.789116482289847,
+  "gradient_finite_difference_max_error": 1.2441430108367513e-9,
+  "fivefold_symmetry_covariance_error": 4.438069968397115e-14,
+  "uniform_state_energy": 1.695861345959317e-30,
+  "quartic_onset_check": [
+    {
+      "epsilon": 0.2,
+      "energy": 0.01406646147116001,
+      "energy_divided_epsilon4": 8.791538419475003
+    },
+    {
+      "epsilon": 0.1,
+      "energy": 0.0008791538419475195,
+      "energy_divided_epsilon4": 8.791538419475193
+    },
+    {
+      "epsilon": 0.05,
+      "energy": 0.00005494711512172186,
+      "energy_divided_epsilon4": 8.791538419475497
+    },
+    {
+      "epsilon": 0.025,
+      "energy": 0.000003434194695109051,
+      "energy_divided_epsilon4": 8.791538419479169
+    }
+  ],
+  "qualification": "Finite constructed witness; no physical identification of H64 current, Lorentzian metric or particle poles established.",
+  "local_verifier": "/mnt/data/cathedral_reopened_nonlinear_portal.py",
+  "repository_verifier": "research_archive/urt_nonlinear_hidden_portal_2026_10_14.py"
+}
