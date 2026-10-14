@@ -1,0 +1,28 @@
+name: Verify all-Platonic hidden-algebra closure
+on:
+  push:
+    branches: [newtons-cathedral]
+    paths:
+      - '.github/workflows/newton-all-platonic-algebra.yml'
+      - 'newton-scale/all_platonic_incidence_and_algebra.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: newtons-cathedral
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install exact and numeric libraries
+        run: python -m pip install --disable-pip-version-check numpy scipy sympy
+      - name: Verify all five polynomials, quadratic coupling and exact modular closure
+        run: python -u newton-scale/all_platonic_incidence_and_algebra.py
