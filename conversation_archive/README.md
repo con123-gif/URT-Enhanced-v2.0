@@ -34,3 +34,11 @@ Before continuing Cathedral / URT work, read:
 - `docs/CONTINUITY_PROTOCOL.md`
 - this conversation archive
 - relevant `research_archive/` artifacts for the sector being changed.
+
+## October 14 conversation-first recovery and reopened branches
+
+- [Recovered October 7 chat-first construction](RECOVERED_2026-10-07_CHAT_FIRST_CONSTRUCTION.md): retained URT spiral/inverse-limit and geometry, finite-to-physical status by source.
+- [Recovered October 8 original-operator provenance](RECOVERED_2026-10-08_OPERATOR_RECOVERY.md): earlier v99/v102/v113/v115/v116/v117/v129 source traces, missing-transfer boundaries.
+- [Dated false-no-go recovery register](RECOVERED_FALSE_NO_GO_REGISTER_2026-10-14.md): 16 cases with *local failure* distinguished from global impossibility; includes positive nonlinear A5 return calculation.
+
+These are bounded recovered records, **not** full transcripts of the last 100 conversations. Read the dated originals and later corrections before changing project status.
