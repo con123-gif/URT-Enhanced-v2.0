@@ -116,3 +116,17 @@ Literature sources for priority review:
 Run `python newton_five_cube_exact_operator.py` with SymPy. This reconstructs all five cube face-incidence projectors **from integer face lists**, evaluates every equality by exact rational arithmetic and prints the full characteristic polynomials. It imports no URT/Cathedral files and fits nothing.
 
 **Mathematical verdict:** exact potentially publishable *five-cube projector-filter theorem* and exact accompanying finite-rank conjugacy identities. **Novelty verdict:** unlocated in the checked sources, not established as historically first. **Physics verdict:** geometrically unbounded, physical sub-Planck law unproved. These three statuses must not be conflated.
+
+## 8. Exact hidden/golden-sector selection rule (new consequence)
+Because the spectral filter polynomial contains the factor \((L^2-6L+4I)\), and the golden triplet eigenvalues \(\lambda_\pm=3\pm\sqrt5\) are precisely its roots, the corresponding rank-three spectral projectors \(E_\pm\) obey:
+\[
+\boxed{\bar P E_+=\bar P E_-=0,\qquad [\bar P,L]=[\bar P,D]=0.}
+\]
+The full 20D carrier splits into a rank-13 composite cube-hidden response and a rank-7 null sector consisting of one constant mode plus both golden triplets:
+\[
+\mathbb R^{20}=\underbrace{(\mathbf4\oplus\mathbf4\oplus\mathbf5)}_{13,\ \operatorname{ran}\bar P}
+\oplus\underbrace{(\mathbf1\oplus\mathbf3\oplus\mathbf3')}_{7,\ \ker\bar P}.
+\]
+Thus the *golden scale triplets are not directly contained in the five-cube hidden projection*: the doubled triplet exchange acts on its seven-dimensional complement, while the five-cube projector mean remains invariant. A physical theory identifying these structures must use an independently derived nonlinear/contact channel rather than silently assuming a nonzero linear hidden-to-triplet map. This is an exact **selection rule**, not a no-go for such nonlinear routes.
+
+The identity also implies the exact projector purity \(\mathrm{Tr}(\bar P^2)=13/10\), consistent with five rank-four projectors and pairwise overlap \(5/8\).
