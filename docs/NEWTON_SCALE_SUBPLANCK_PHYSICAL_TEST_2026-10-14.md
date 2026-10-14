@@ -94,3 +94,17 @@ Local evidence retained in conversation:
 - F. Saueressig, Scales and Hierarchies in Asymptotically Safe Quantum Gravity, Foundations of Physics 49 (2019): https://link.springer.com/article/10.1007/s10701-019-00263-1
 
 **Interpretation rule:** candidate scalar UV divergence is not a no-go for the original URT/Cathedral or Newton Scale spectral theorem. Physical sub-Planck law remains unproved until the projected physical transfer and a measurable observable are derived.
+
+
+## 6. Propagation/contact commutator localizes the physical binding problem
+One more direct check uses the **existing 13-cell Laplacian L13**, not any invented UV operator. Numerically,
+  ||[L13,K13]||_F = 1.956226232918.
+Yet on the nonsinglet eleven-dimensional subspace,
+  ||P_ns [L13,K13] P_ns||_F = 1.52e-16.
+Hence the current free-graph propagation and entropy-weighted contact operator are simultaneously diagonalizable on 3+3prime+5, while their failure to commute is confined to the two-dimensional singlet block.
+
+In basis (centre, normalized uniform shell), those two blocks are:
+  L_s=[[12,-sqrt(12)],[-sqrt(12),1]],
+  K_s=[[(a²+b²)/2,-sqrt(3/2)(a²-b²)],
+       [-sqrt(3/2)(a²-b²),3(a²+b²)]].
+The noncommutation is exact for the stated candidate. It is not a contradiction: interacting source contacts need not commute with free propagation. But it means the large-singlet UV interpretation cannot be settled by pretending both operators share eigenmodes. The physical Ward/constraint equations must determine their correct coupled treatment.
