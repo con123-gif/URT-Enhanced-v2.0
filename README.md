@@ -169,6 +169,10 @@ The [Sun–Earth–Moon numerical baseline and research ledger](research_archive
 
 The [URTF–Cathedral Symmetry Compiler](engineering/urtf_symmetry_compiler/README.md) is now reproducible directly from the repository. **URT's O(N) analytical cascade is foundational, not a newly discovered consequence of the compiler.** The October 15 extension uses the Cathedral's proper-A5 multiplicities for five cubic Cayley–Hamilton inverses, low-rank 12×12 species corrections and stage-local direct recurrences (up to 32,000 unknowns tested). The finite reductions are exact for the stated symmetry/locality assumptions; physical action and arbitrary nonlinear universality are not established.
 
+## URT mathematics and cross-domain structure engine (15 October)
+
+The [URT Mathematics Direct Solver](engineering/urt_math_direct_solver/README.md) extends the original URT O(N) recursive algorithm with a reusable mathematical problem dispatcher, certified low-rank harmonic inverses, local block recurrences, a **combined local physics plus global URT resonance solver** and a special nonlinear scalar reduction. The new coupled test solved 4,096 variables through a 6×6 correction with relative residual ~1×10⁻¹⁶. Other checks cover a 32,768-variable harmonic interaction and a 24,000-variable discrete diffusion equation. These are exact reductions for specified structured models, not an unrestricted O(N) solution for all mathematics, physics, or computation.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
