@@ -1197,3 +1197,13 @@ Do not collapse the second statement into a reopening of the first.
 - **CLOSED finite representation:** Omega=[0,-J5^T;J5,0] is skew-adjoint and squares to -P10; adding a *chosen* positive Laplacian damping term gives norm-squared decay -2Gamma(6||e||²+2||b||²).
 - **DISTINCTION FROZEN:** the normalized old finite transfer M=(L+11^T)/12 connects complement-graph vertices, not the 30 nearest-neighbour edges; its 4^-n law is not contact friction.
 - **OPEN:** microscopic contact dissipation coefficients, thermal-bath entropy bookkeeping, an A5-equivariant 5+5 embedding into the single-fiveplet Hom(4,4) BKM carrier, four-dimensional Weyl/Bianchi and physical force laws. The dissipative mechanism cannot by itself explain a low-entropy *total-universe* initial condition.
+
+### 2026-10-15 continuation — exact chirality-mediated spin-2/BKM pullback
+
+**Source:** [proof, distinctions and continuum literature](../research_archive/2026-10-15_icosahedral_125_DEC_H64/ENTANGLEMENT_SPIN2_CHIRAL_BRIDGE.md), [exact SymPy operator test](../research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_entanglement_spin2_exact.py).
+
+- **CLOSED / FROZEN finite geometric theorem:** a sign-defined proper-A5-equivariant, antipodal-odd, 20x20 integer face chirality operator W obeys W^T=-W, W²=-15(P_4_3+P_4_5), rank 8. It supplies an isometry R=W/sqrt(15) between the hidden odd and even quartets.
+- **CLOSED / FROZEN finite coupling theorem:** direct parity-even icosahedral quadrupole multiplication cannot couple opposite-parity quartet sectors; chirality-mediated B(x)=sqrt(3)P_4_5 diag(Cx) R P_4_3 does, and for x,y in the visible vertex fiveplet Tr[B(x)^T B(y)]=x·y exactly, proven by rational incidence polynomial identity.
+- **CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING:** the pullback density-tangent Umegaki/BKM metric has g(x,y)=chi_35 x·y. Full reversible four-pair rotation has D=2eta tanh eta sin²(theta) and curvature 4eta tanh eta, distinct from chi_35 itself.
+- **CORRECTION:** as Delta→1 the off-block density-tangent BKM coefficient tends to 8 (not zero); its unitary-orbit response vanishes because a fully mixed reference is invariant under unitary rotation.
+- **OPEN physically:** a canonical tensor factorization and entanglement cut of geometric H64; a four-dimensional continuum Weyl/Einstein reconstruction, holographic entanglement-to-area relation, dimensional thermal scale, and equality with gravitational canonical energy. This new 5D finite pullback does not supply two independent curvature fiveplets.
