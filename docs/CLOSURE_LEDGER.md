@@ -1187,3 +1187,13 @@ Do not collapse the second statement into a reopening of the first.
 - **CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING:** 8-carrier off-block relative-entropy Hessian chi35=(ln a-ln b)/(a-b)=47.9669783. A relative-entropy free-energy penalty has a local restoring-force gradient if physical temperature and displacement coupling are specified.
 - **DISTINCTION PROVEN in a positive probability fiveplet family:** ordinary Shannon entropy increases while spatial quadrupole power decreases; these cannot be identified without a gravitational entropy functional. Reversible unitary motion preserves von Neumann entropy.
 - **OPEN physical:** continuum 4D Weyl curvature/initial-state low gravitational entropy; physical force scale and full Helmholtz response; gauge curvature, charges and dynamical equations; cosmological arrow of time. No blanket no-go is inferred.
+
+### 2026-10-15 continuation — kissing geometry and dissipative entropy
+
+**Sources:** [full derivation and scope](../research_archive/2026-10-15_icosahedral_125_DEC_H64/KISSING_FRICTION_ENTROPY.md) and [executable matrix tests](../research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_kissing_entropy.py).
+
+- **CLOSED / FROZEN finite contact geometry:** twelve equal shell spheres at icosahedral directions contact the centre, but not each other. Central star 13-site Laplacian has 0,1(x11),13; eliminating centre gives I-11^T/12 with no golden decomposition.
+- **CLOSED MATHEMATICALLY / CONDITIONAL DYNAMICS:** for a chosen equal-rate symmetric diffusion on the **30-edge neighbour graph**, entropy-production dS/dt=k_B Gamma sum_edges (p_i-p_j)(ln p_i-ln p_j)>=0; near uniform on a pure fiveplet, dS/dt=45 k_B Gamma ||Q||²+O(||delta||³). Gamma is not fixed microscopically.
+- **CLOSED finite representation:** Omega=[0,-J5^T;J5,0] is skew-adjoint and squares to -P10; adding a *chosen* positive Laplacian damping term gives norm-squared decay -2Gamma(6||e||²+2||b||²).
+- **DISTINCTION FROZEN:** the normalized old finite transfer M=(L+11^T)/12 connects complement-graph vertices, not the 30 nearest-neighbour edges; its 4^-n law is not contact friction.
+- **OPEN:** microscopic contact dissipation coefficients, thermal-bath entropy bookkeeping, an A5-equivariant 5+5 embedding into the single-fiveplet Hom(4,4) BKM carrier, four-dimensional Weyl/Bianchi and physical force laws. The dissipative mechanism cannot by itself explain a low-entropy *total-universe* initial condition.
