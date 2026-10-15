@@ -3,7 +3,7 @@ import json,time,os
 import numpy as np
 from URT_structure_engine import (harmonic_solver,phase_features,DiagonalLowRank,
  BlockTridiagonal,radial_quartic_solve,oscillator_response,URT_ANGLE,URT_SCALE,
- urt_boundary,solve_problem)
+ urt_boundary,solve_problem,LocalPlusGlobalResonance,urt_features)
 
 rng=np.random.default_rng(20261015)
 report={'scope':'structurally characterized finite linear / special nonlinear systems',
@@ -56,6 +56,19 @@ for n in [32,128]:
     x,c=solve_problem({'kind':'dense','matrix':A,'b':b})
     assert c.relative_residual<1e-12
     report['benchmarks'][f'dense_fallback_{n}']={'n':n,'relative_residual':c.relative_residual,'method':c.method}
+
+for n in [128,4096]:
+    t0=time.perf_counter()
+    base=BlockTridiagonal(np.tile(np.array([[[3.]]]),(n,1,1)),
+                          np.tile(np.array([[[-1.]]]),(n-1,1,1)))
+    U=urt_features(n,3,weights=[.7,.2,.02])
+    op=LocalPlusGlobalResonance(base,U)
+    rhs=np.cos(np.arange(n)*URT_ANGLE)
+    x,cert=op.solve(rhs)
+    assert cert.relative_residual<1e-12
+    report['benchmarks'][f'local_plus_global_{n}']={
+        'n':n,'reduced_dimension':6,'relative_residual':cert.relative_residual,
+        'seconds_local':time.perf_counter()-t0,'method':cert.method}
 
 report['environment']={'openblas_num_threads':os.environ.get('OPENBLAS_NUM_THREADS'),
                        'test_command':'OPENBLAS_NUM_THREADS=1 python -m unittest -v test_URT_structure_engine.py'}
