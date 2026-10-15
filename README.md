@@ -143,6 +143,10 @@ The [full 13-cell / 64-state / 125-simplex DEC audit](research_archive/2026-10-1
 
 [Verified finite entropy/force construction](research_archive/2026-10-15_icosahedral_125_DEC_H64/ENTROPY_GRAVITY_FORCE_BRIDGE.md): the positive-transfer vertex quadrupole contracts in amplitude by 1/2; vertex–face fiveplets have a canonical incidence isometry; the BKM relative-entropy Hessian has exact stiffness chi35. These establish finite geometric/information dynamics, **not** a measured four-dimensional gravitational entropy, Newton constant, or unified physical force law.
 
+### Kissing geometry and entropy production (15 October)
+
+The [exact contact-versus-interaction audit](research_archive/2026-10-15_icosahedral_125_DEC_H64/KISSING_FRICTION_ENTROPY.md) separates the 12 physical central contacts from 30 non-contact icosahedral neighbour couplings. Symmetric diffusion on the latter has provably nonnegative entropy production, and the vertex/face fiveplets form an exact reversible 10D complex structure with conditional dissipative damping. The physical friction rate, gravity/gauge dynamics and cosmological initial entropy are still open.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
