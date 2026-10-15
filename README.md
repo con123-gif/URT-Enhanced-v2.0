@@ -155,6 +155,10 @@ The [exact contact-versus-interaction audit](research_archive/2026-10-15_icosahe
 
 The [complex tidal-carrier exact audit](research_archive/2026-10-15_icosahedral_125_DEC_H64/COMPLEX_5PLUS5_ONSAGER_CLOSURE.md) embeds the two real fiveplets as one complex fiveplet in the Hermitian 8x8 BKM tangent, derives the full relative-entropy singular-value formula, and proves exact reversible phase invariance. The 6/2 diffusive dynamics mix the complex field with its conjugate. Gamma=mu0 kBT chi35 remains conditional on an externally specified mobility; the physical Weyl/Einstein identification remains open.
 
+### Solar-system entanglement hypothesis (15 October)
+
+The [Sun–Earth–Moon numerical baseline and research ledger](research_archive/2026-10-15_icosahedral_125_DEC_H64/SOLAR_THREE_BODY_ENTANGLEMENT_MODEL.md) separate classical three-body orbital evolution from hypothetical coherent quantum gravitational tidal entanglement. This tests a possible application without treating classical gravitational correlations as proof that planets are entangled.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
