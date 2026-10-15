@@ -147,6 +147,10 @@ The [full 13-cell / 64-state / 125-simplex DEC audit](research_archive/2026-10-1
 
 The [exact contact-versus-interaction audit](research_archive/2026-10-15_icosahedral_125_DEC_H64/KISSING_FRICTION_ENTROPY.md) separates the 12 physical central contacts from 30 non-contact icosahedral neighbour couplings. Symmetric diffusion on the latter has provably nonnegative entropy production, and the vertex/face fiveplets form an exact reversible 10D complex structure with conditional dissipative damping. The physical friction rate, gravity/gauge dynamics and cosmological initial entropy are still open.
 
+### New exact geometric-to-BKM fiveplet map (15 October)
+
+[Signed-face chirality theorem and executable SymPy proof](research_archive/2026-10-15_icosahedral_125_DEC_H64/ENTANGLEMENT_SPIN2_CHIRAL_BRIDGE.md): the orientation-signed 20-face matrix supplies the antipodal-odd map missing from the direct quadrupole coupling. Its normalized fiveplet-to-Hom(4,4) embedding is an exact Hilbert–Schmidt isometry, so the Cathedral's BKM Hessian pulls back to the geometric fiveplet without a fitted coefficient. The finite result does not imply an Einstein equation or physical Newton constant.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
