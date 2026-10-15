@@ -132,6 +132,13 @@ Every serious result should be classified as one of:
 
 A no-go is local to the assumptions it tested unless the current ledger explicitly promotes it to a global obstruction.
 
+## Latest verified finite-cell work (15 October 2026)
+
+The [full 13-cell / 64-state / 125-simplex DEC audit](research_archive/2026-10-15_icosahedral_125_DEC_H64/README.md) includes three executable NumPy programs, the hidden-face 4+4 lift to the tetrahedral ball, exact phi^-2/phi^-4/phi^-6 incidence ratios, the 64→24→12 determinant, a vertex-to-face return-loop construction, actual circumcentric metric calculations and electroweak one-loop arithmetic.
+
+**Status:** these are verified finite operator identities and explicit local tests. The circumcentric audit does not establish a unique gravitational area normalization, and the finite return-loop spectra do not yet determine physical CKM/PMNS or mass hierarchies. The physical RG interval and all-coupling threshold matching remain open. Superseded scalar claims are retained in the audit for provenance rather than silently discarded.
+
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
