@@ -1,0 +1,87 @@
+{
+  "scope": "structurally characterized finite linear / special nonlinear systems",
+  "claims": {
+    "universal_exact_solver": false,
+    "physical_force_laws_derived": false
+  },
+  "constants": {
+    "urt_scale": 1.1557273497909217,
+    "urt_angle_rad": 2.399963229728653
+  },
+  "benchmarks": {
+    "harmonic_64": {
+      "n": 64,
+      "reduced_dimension": 6,
+      "relative_residual": 2.329901847249208e-16,
+      "seconds_local": 0.0006864229999337113,
+      "method": "diagonal + low rank / Woodbury"
+    },
+    "harmonic_2048": {
+      "n": 2048,
+      "reduced_dimension": 6,
+      "relative_residual": 1.220937365945306e-15,
+      "seconds_local": 0.0004776149999088375,
+      "method": "diagonal + low rank / Woodbury"
+    },
+    "harmonic_16384": {
+      "n": 16384,
+      "reduced_dimension": 6,
+      "relative_residual": 3.138259967282824e-15,
+      "seconds_local": 0.0027250109997112304,
+      "method": "diagonal + low rank / Woodbury"
+    },
+    "harmonic_32768": {
+      "n": 32768,
+      "reduced_dimension": 6,
+      "relative_residual": 2.28256111736766e-17,
+      "seconds_local": 0.010529286999371834,
+      "method": "diagonal + low rank / Woodbury"
+    },
+    "screened_poisson_1d_24000": {
+      "n": 24000,
+      "reduced_dimension": 1,
+      "relative_residual": 3.047701059200086e-16,
+      "seconds_local": 0.5730787539996527,
+      "method": "block tridiagonal elimination"
+    },
+    "oscillator_2048": {
+      "n": 2048,
+      "reduced_dimension": 4,
+      "relative_residual": 9.557817055324413e-17
+    },
+    "quartic_256": {
+      "n": 256,
+      "scalar_tau": 0.1649729472628233,
+      "relative_residual": 1.511944315462647e-13
+    },
+    "urt_boundary_13": {
+      "n": 13,
+      "terminal_residual": 0,
+      "backward_sensitivity_unit_target": 42.01327903632414
+    },
+    "urt_boundary_64": {
+      "n": 64,
+      "terminal_residual": 0,
+      "backward_sensitivity_unit_target": 67094192449.85434
+    },
+    "urt_boundary_125": {
+      "n": 125,
+      "terminal_residual": 0,
+      "backward_sensitivity_unit_target": 1538999739289066800
+    },
+    "dense_fallback_32": {
+      "n": 32,
+      "relative_residual": 4.340570964463318e-16,
+      "method": "dense numerical fallback"
+    },
+    "dense_fallback_128": {
+      "n": 128,
+      "relative_residual": 4.766142460971025e-16,
+      "method": "dense numerical fallback"
+    }
+  },
+  "environment": {
+    "openblas_num_threads": "1",
+    "test_command": "OPENBLAS_NUM_THREADS=1 python -m unittest -v test_URT_structure_engine.py"
+  }
+}
