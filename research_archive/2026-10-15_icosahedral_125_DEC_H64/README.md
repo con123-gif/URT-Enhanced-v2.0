@@ -129,3 +129,10 @@ New **interpretive distinction**: in the test family the ordinary spatial Shanno
 - [Standalone executable operator checks](cathedral_kissing_entropy.py).
 
 **Exact finite result:** the true 12-contact star has spectrum 0, 1(x11), 13, and eliminating its centre does not generate golden-ratio sector splitting. The regular icosahedral shell has 30 **neighbour interactions, not literal outer-sphere contacts**. If symmetric diffusive exchange is posited on that graph, Shannon entropy production is exactly nonnegative and its small quadrupolar coefficient is 45 k_B Gamma ||Q||². A skew 5+5 vertex-face rotation can coexist with positive Laplacian dissipation. **Physical Gamma, the 4D gravity/gauge dynamics and primordial global low entropy remain underived.**
+
+## Exact spin-2 to quantum modular-response coupling (15 October)
+
+- [Proof and physical scope: signed 20-face chirality map to BKM](ENTANGLEMENT_SPIN2_CHIRAL_BRIDGE.md).
+- [Executable SymPy rational/integer verification](cathedral_entanglement_spin2_exact.py) (requires numpy and sympy).
+
+**New finite theorem:** an antipodal-even vertex quadrupole has zero direct map between the antipodal-odd/even hidden quartets. A canonical orientation-signed face matrix W has W²=-15(P_4_3+P_4_5), and its normalized parity-changing isometry supplies a fiveplet-to-Hom(4,4) map B(x) with exact Hilbert–Schmidt Gram ⟨B(x),B(y)⟩=x·y. The pullback BKM Hessian is chi35 times the Euclidean fiveplet norm. The full unitary-orbit relative entropy is D=2eta tanh(eta) sin²(theta). **No four-dimensional Einstein/canonical energy equality is inferred from this finite result.**
