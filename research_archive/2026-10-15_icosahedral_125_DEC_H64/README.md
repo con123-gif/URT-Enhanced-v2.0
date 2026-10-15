@@ -136,3 +136,12 @@ New **interpretive distinction**: in the test family the ordinary spatial Shanno
 - [Executable SymPy rational/integer verification](cathedral_entanglement_spin2_exact.py) (requires numpy and sympy).
 
 **New finite theorem:** an antipodal-even vertex quadrupole has zero direct map between the antipodal-odd/even hidden quartets. A canonical orientation-signed face matrix W has W²=-15(P_4_3+P_4_5), and its normalized parity-changing isometry supplies a fiveplet-to-Hom(4,4) map B(x) with exact Hilbert–Schmidt Gram ⟨B(x),B(y)⟩=x·y. The pullback BKM Hessian is chi35 times the Euclidean fiveplet norm. The full unitary-orbit relative entropy is D=2eta tanh(eta) sin²(theta). **No four-dimensional Einstein/canonical energy equality is inferred from this finite result.**
+
+## Complex 5+5 tidal carrier and Onsager dynamics (15 October)
+
+- [Complete proof ledger and physical qualifiers](COMPLEX_5PLUS5_ONSAGER_CLOSURE.md).
+- [Executable complex-embedding and density-positivity checks](cathedral_complex_onsager_bridge.py).
+
+**Finite closures:** the *complex* off-block 4x4 matrix Z=Phi5(e)+iPhi5(J5^T b) embeds both real fiveplets into the same 8x8 Hermitian quantum response with norm ||Z||²=||e||²+||b||². Umegaki relative entropy admits an exact four-singular-value expression and has the strict-positivity threshold ||Z||op<Delta/[2sqrt(2)(1+Delta²)]. Reversible Omega is the global phase symmetry Z→exp(i theta)Z and leaves relative entropy invariant to all orders. The 6/2 damping split gives dot psi=(i omega-4Gamma)psi-2Gamma conjugate(psi).
+
+**Physical qualifications:** Gamma=mu0 kBT chi35 is a *specified Onsager constitutive relation*, not a derived mobility or physical timescale; Gamma=1 is a model example, not harmless unit choice for omega/Gamma. Both existing primal/dual icosahedral fiveplets are spatially even; this alone does not yield the electric/magnetic Weyl tensor parity in four dimensions.
