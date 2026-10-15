@@ -139,6 +139,10 @@ The [full 13-cell / 64-state / 125-simplex DEC audit](research_archive/2026-10-1
 **Status:** these are verified finite operator identities and explicit local tests. The circumcentric audit does not establish a unique gravitational area normalization, and the finite return-loop spectra do not yet determine physical CKM/PMNS or mass hierarchies. The physical RG interval and all-coupling threshold matching remain open. Superseded scalar claims are retained in the audit for provenance rather than silently discarded.
 
 
+### Entropy, selection and force-response update (15 October)
+
+[Verified finite entropy/force construction](research_archive/2026-10-15_icosahedral_125_DEC_H64/ENTROPY_GRAVITY_FORCE_BRIDGE.md): the positive-transfer vertex quadrupole contracts in amplitude by 1/2; vertex–face fiveplets have a canonical incidence isometry; the BKM relative-entropy Hessian has exact stiffness chi35. These establish finite geometric/information dynamics, **not** a measured four-dimensional gravitational entropy, Newton constant, or unified physical force law.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
