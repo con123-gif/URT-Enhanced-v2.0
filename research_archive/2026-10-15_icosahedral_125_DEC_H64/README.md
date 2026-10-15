@@ -122,3 +122,10 @@ These findings are **local audits of named constructions**, not global no-go the
 New **exact finite identities**: on the visible 12-vertex carrier M=(L_ico+11^T)/20 the normalized quadrupole amplitude contracts by 1/2 each iteration, while its squared geometric asymmetry contracts by 1/4. The canonical projector is P_5=-(1/24)L(L²-10L+20I), with Q-Gram=(8/5)P_5. The vertex-to-face fiveplet map J_5=C_inc P_5/sqrt(3) is isometric and obeys L_face J_5=2J_5. The off-block quantum relative-entropy Hessian agrees with chi_35=8eta(1+Delta²)/(1-Delta²).
 
 New **interpretive distinction**: in the test family the ordinary spatial Shannon entropy *increases* as the quadrupolar inhomogeneity decreases. This is not a derivation of cosmological low gravitational entropy; in 3D the Weyl tensor itself vanishes. A physical force also requires full free-energy differentiation: entropy alone does not supply the energy contribution, bath temperature, physical units or gauge connections.
+
+## Supplement: kissing contacts vs shell entropy-production dynamics
+
+- [Exact 12-contact / 30-edge distinction, entropy theorem, and reversible 5+5 generator](KISSING_FRICTION_ENTROPY.md).
+- [Standalone executable operator checks](cathedral_kissing_entropy.py).
+
+**Exact finite result:** the true 12-contact star has spectrum 0, 1(x11), 13, and eliminating its centre does not generate golden-ratio sector splitting. The regular icosahedral shell has 30 **neighbour interactions, not literal outer-sphere contacts**. If symmetric diffusive exchange is posited on that graph, Shannon entropy production is exactly nonnegative and its small quadrupolar coefficient is 45 k_B Gamma ||Q||². A skew 5+5 vertex-face rotation can coexist with positive Laplacian dissipation. **Physical Gamma, the 4D gravity/gauge dynamics and primordial global low entropy remain underived.**
