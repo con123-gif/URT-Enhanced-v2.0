@@ -275,3 +275,41 @@ def solve_problem(spec: dict):
             'O(N³) factorization / O(N²) memory',rel<1e-9,
             'General linear fallback; no URT-related speedup asserted.')
     raise ValueError(f'unsupported problem kind: {kind}; no universal exact method claimed')
+
+
+class LocalPlusGlobalResonance:
+    """Combined nearest-neighbour physics and all-to-all harmonic coupling.
+
+    Given any nonsingular block-tridiagonal B and a fixed-rank U C U^H,
+    eliminate B by the local direct solver, then apply an r×r Woodbury
+    correction. For fixed block size and harmonic rank, total work O(N).
+    This is an explicit cross-domain synthesis, not a universal N-body solver.
+    """
+    def __init__(self, base: BlockTridiagonal, features, core=None):
+        U=np.asarray(features)
+        if U.ndim!=2 or len(U)!=base.t*base.d:
+            raise ValueError('feature shape must be (N,r)')
+        r=U.shape[1]
+        C=np.eye(r,dtype=np.result_type(U,base.D)) if core is None else np.asarray(core)
+        if C.shape!=(r,r): raise ValueError('core must be r×r')
+        self.base,self.U,self.C=base,U,C
+        self.baseU=base.solve(U)[0]
+        self.reduced=np.eye(r,dtype=np.result_type(self.baseU,U,C))+C@(U.conj().T@self.baseU)
+        self.cond=np.linalg.cond(self.reduced)
+
+    @property
+    def size(self):return self.U.shape[0]
+    @property
+    def rank(self):return self.U.shape[1]
+    def apply(self,x):
+        return self.base.apply(x)+self.U@(self.C@(self.U.conj().T@x))
+    def solve(self,b):
+        b=_rhs(b,self.size)
+        x0=self.base.solve(b)[0]
+        core=np.linalg.solve(self.reduced,self.C@(self.U.conj().T@x0))
+        x=x0-self.baseU@core
+        rel=np.linalg.norm(self.apply(x)-b)/max(np.linalg.norm(b),1e-300)
+        return x,SolveCertificate('local blocks + fixed-rank global resonances',self.size,
+             self.rank,float(rel),'O(N d³+N r²+r³), fixed d,r -> O(N)',
+             bool(self.cond<1e12 and rel<1e-9),
+             'Exact Schur/Woodbury composition; valid for structured, invertible base.')
