@@ -78,6 +78,20 @@
       "n": 128,
       "relative_residual": 4.766142460971025e-16,
       "method": "dense numerical fallback"
+    },
+    "local_plus_global_128": {
+      "n": 128,
+      "reduced_dimension": 6,
+      "relative_residual": 1.0658051876785385e-16,
+      "seconds_local": 0.0072286750000785105,
+      "method": "local blocks + fixed-rank global resonances"
+    },
+    "local_plus_global_4096": {
+      "n": 4096,
+      "reduced_dimension": 6,
+      "relative_residual": 1.0279416158502339e-16,
+      "seconds_local": 0.16545629599932,
+      "method": "local blocks + fixed-rank global resonances"
     }
   },
   "environment": {
