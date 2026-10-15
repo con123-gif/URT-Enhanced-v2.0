@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-15",
+  "experiment": "URT + A5 symmetry compiler on mathematics, LOCAL only",
+  "assumptions": "URT cascade and forcing are prescribed, K is a chosen A5-equivariant test operator",
+  "linear_systems": {
+    "URT_forcing": {
+      "relative_residual": 7.762566448291266e-15,
+      "relative_dense_error": 3.680724635050453e-15,
+      "energy_gain_fdagger_Kinv_f": 0.40174300977921207,
+      "objective_minimum_real": -0.20087150488960603,
+      "irrep_source_energy": {
+        "1": 0.254672586840508,
+        "3": 0.06281332350994406,
+        "3p": 0.19644801456322086,
+        "4": 0.33779309577628525,
+        "5": 0.14827297931004163
+      }
+    },
+    "generic_complex_forcing": {
+      "relative_residual": 4.452803940262651e-15,
+      "relative_dense_error": 3.5334954830268427e-15,
+      "energy_gain_fdagger_Kinv_f": 0.4764854734677497,
+      "objective_minimum_real": -0.23824273673387486,
+      "irrep_source_energy": {
+        "1": 0.0578351613594752,
+        "3": 0.1700049253408719,
+        "3p": 0.1807845283060555,
+        "4": 0.31307040736866254,
+        "5": 0.2783049776249347
+      }
+    }
+  },
+  "linear_gain_bounds": {
+    "minimum": 0.14294268580089411,
+    "maximum": 0.8136786029000946,
+    "URT_value": 0.40174300977921207
+  },
+  "batch_wall_timings": {
+    "rhs_count": 128,
+    "dense_LU_solve_seconds_per_batch": 0.0005551696249312954,
+    "cubic_python_seconds_per_batch": 0.011576352500014764,
+    "relative_solver_error": 3.524840893393654e-15
+  },
+  "boundary_value": {
+    "13": {
+      "x_minus_one": 2.4527452456257293,
+      "terminal_residual": 5.204170427930421e-18,
+      "absolute_backward_sensitivity_to_unit_terminal_change": 42.013279036324136,
+      "trajectory_max_absolute_amplitude": 1.2593205852797094
+    },
+    "64": {
+      "x_minus_one": -4.307554391237226,
+      "terminal_residual": 1.2407709188295415e-24,
+      "absolute_backward_sensitivity_to_unit_terminal_change": 67094192449.85899,
+      "trajectory_max_absolute_amplitude": 5.276669467312796
+    },
+    "125": {
+      "x_minus_one": 2.3700657220763803,
+      "terminal_residual": 3.174775142700834e-33,
+      "absolute_backward_sensitivity_to_unit_terminal_change": 1.5389997392890685e+18,
+      "trajectory_max_absolute_amplitude": 1.3084533914184826
+    }
+  },
+  "radial_quartic_nonlinear": {
+    "class": "unitarily invariant quartic optimization",
+    "quartic_coefficient_chosen": 5.995797986741314,
+    "scalar_root": 0.6508508902450415,
+    "scalar_brent_iterations": 7,
+    "stationarity_residual": 1.2703281550729868e-15,
+    "relative_change_from_quadratic_minimizer": 0.26861916699254296,
+    "objective_at_nonlinear_solution": -0.17101682833664947,
+    "objective_at_quadratic_solution": -0.14225511993421014,
+    "fitting": false,
+    "one_pass_solution": false
+  },
+  "symmetry_broken_hessian": {
+    "Hessian_A5_max_relative_commutator": 1.0129664529790148,
+    "uncorrected_cubic_residual": 7.440317363647134,
+    "dense_solve_residual": 1.547083481239187e-16,
+    "update_rank": 64
+  },
+  "pointwise_quartic_nonlinear": {
+    "optimization_variable_count": 12,
+    "BFGS_iterations": 20,
+    "post_refinement_gradient_norm": 6.781819299654554e-10,
+    "pointwise_nonlinear_term": "eta/4 sum_i x_i^4",
+    "gradient_at_linear_solution": 0.26390895477684734
+  },
+  "stage_chains": {
+    "13": {
+      "unknowns": 832,
+      "relative_residual": 1.807269787995022e-15,
+      "seconds": 0.0011339370012137806
+    },
+    "64": {
+      "unknowns": 4096,
+      "relative_residual": 1.798949310395148e-15,
+      "seconds": 0.0028213650002726354
+    },
+    "125": {
+      "unknowns": 8000,
+      "relative_residual": 1.7856802274634476e-15,
+      "seconds": 0.002878749999581487
+    }
+  },
+  "phase_sampling": {
+    "N": 64,
+    "URT_golden_max_circular_gap_radians": 0.13374536686502836,
+    "finite_equispaced_optimal_max_gap_radians": 0.09817477042468159,
+    "URT_max_gap_over_equal_optimum": 1.3623191201413205
+  },
+  "caveats": [
+    "Analytical inverse follows from A5 symmetry and Cayley-Hamilton, not from golden phase",
+    "URT golden phase is a forcing/boundary parametrization, not a universal optimizer",
+    "quartic radial objective reduces to scalar nonlinear equation that still requires root finding",
+    "generic nonuniform pointwise interactions break equivariance and may be full rank",
+    "wall times depend on BLAS/runtime and are not a proof of asymptotic performance",
+    "linear stages O(m) for fixed cell size and finite neighbor range only",
+    "No GitHub updates performed"
+  ]
+}
