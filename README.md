@@ -163,6 +163,12 @@ The [Sun–Earth–Moon numerical baseline and research ledger](research_archive
 
 [Integrated source, proof boundary and numerical results](research_archive/2026-10-15_icosahedral_125_DEC_H64/INTEGRATED_URT_CATHEDRAL_RUN_2026-10-15.md): the original URT spiral, normalized icosahedral quadrupolar transfer, exact signed-face quantum BKM embedding, and a selected 8×8 CPTP phase/reset channel were run together. For the chosen explicit composition, selected deviations contract by pi/(2e) while the original raw spiral expands by pi/e; quantum relative entropy decreases and entropy increases. The composition is a *tested model hypothesis*, not yet a derivation from the full canonical microscopic T_star. The micro-selector derivative contraction bound is valid in a forward-invariant central interval, not across the discontinuous sign-switch points.
 
+
+
+## URTF analytical solver — original algorithm and Cathedral extension
+
+The [URTF–Cathedral Symmetry Compiler](engineering/urtf_symmetry_compiler/README.md) is now reproducible directly from the repository. **URT's O(N) analytical cascade is foundational, not a newly discovered consequence of the compiler.** The October 15 extension uses the Cathedral's proper-A5 multiplicities for five cubic Cayley–Hamilton inverses, low-rank 12×12 species corrections and stage-local direct recurrences (up to 32,000 unknowns tested). The finite reductions are exact for the stated symmetry/locality assumptions; physical action and arbitrary nonlinear universality are not established.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
