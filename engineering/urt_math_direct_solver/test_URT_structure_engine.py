@@ -3,7 +3,7 @@ import unittest
 import numpy as np
 from URT_structure_engine import (DiagonalLowRank, phase_features, harmonic_solver,
      BlockTridiagonal, radial_quartic_solve,urt_boundary,oscillator_response, solve_problem,
-     URT_ANGLE)
+     URT_ANGLE, LocalPlusGlobalResonance)
 
 
 class StructureTests(unittest.TestCase):
@@ -89,6 +89,22 @@ class StructureTests(unittest.TestCase):
         self.assertLess(c.relative_residual,1e-12)
         with self.assertRaises(ValueError):
             solve_problem({'kind':'arbitrary-nonlinear','b':b})
+
+    def test_local_plus_global_physics(self):
+        rng=np.random.default_rng(999)
+        n=160
+        base=BlockTridiagonal(np.tile(np.array([[[2.6]]]),(n,1,1)),
+                              np.tile(np.array([[[-1.0]]]),(n-1,1,1)))
+        U=phase_features(np.arange(n)*URT_ANGLE,3,weights=[.7,.2,.02])
+        combo=LocalPlusGlobalResonance(base,U)
+        b=rng.normal(size=n)
+        x,c=combo.solve(b)
+        # Independent dense normal equations for the coupled local/global field.
+        B=np.diag([2.6]*n)+np.diag([-1.0]*(n-1),1)+np.diag([-1.0]*(n-1),-1)
+        ref=np.linalg.solve(B+U@U.T,b)
+        self.assertLess(np.linalg.norm(x-ref)/np.linalg.norm(ref),1e-11)
+        self.assertTrue(c.stable)
+        self.assertEqual(c.reduced_dimension,6)
 
     def test_no_arbitrary_matrix_claim(self):
         # The interface cannot claim structure on unprovided arbitrary dense K.
