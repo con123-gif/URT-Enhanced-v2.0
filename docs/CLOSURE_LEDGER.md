@@ -1162,3 +1162,18 @@ The correct current project state is:
 ]
 
 Do not collapse the second statement into a reopening of the first.
+
+---
+
+## 2026-10-15 — Augmented 64-state / complete tetrahedral DEC audit
+
+**Source:** [reproducible construction and derivation ledger](../research_archive/2026-10-15_icosahedral_125_DEC_H64/README.md).
+
+- **CLOSED / FROZEN for the defined finite complex:** 64=1+12+30+20+1 coarse augmented icosahedral carrier; d^2=0; 20x12 vertex-face incidence matrix of rank 12; hidden 4_3 (+) 4_5 in its kernel; L_hid=3P_4_3+5P_4_5 and Gamma_F=-P_4_3+P_4_5.
+- **CLOSED / FROZEN for the defined combinatorial 3D complex:** full cone triangulation counts 13V+42E+50F+20T=125; the canonical 50-face hidden lift J_lambda[h]=(h,lambda^-1 d2h) is 3-boundary-free and radial-edge curl-free, and raises unweighted eigenvalues 3→4 and 5→6 without changing their gap.
+- **CLOSED / FROZEN for the defined incidence representation:** C_inc^T C_inc=15I-2 L_ico; vertex-edge, edge-face and vertex-face squared singular-value ratios phi^-2, phi^-4 and phi^-6 respectively. 64-state A5 multiplicities include three hidden triplet pairs; this alone does not identify Standard Model generations.
+- **CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING:** exact dressed 64→24→12 determinant, triangular K_f with det=320sqrt(5), explicit inverse vertex-face return block and closed-loop singular spectrum {phi^2/2 (x3),phi^-2/2 (x3)} at zero charge perturbation. The adopted phased-cycle Yukawa seed is a choice, not proven to be uniquely forced by charge orthogonality.
+- **REOPENED locally / area-normalization not physically closed:** a=-1 is exact only for an assigned-star DEC scaling family. Actual circumcentric dual volumes for an explicitly defined fixed-volume tetrahedral family yield a different lifted-mode Rayleigh-gap derivative, ≈-3.23259663. Neither result alone determines the physical eigenbranch susceptibility or Newton's constant.
+- **OPEN:** physical fermion mass eigenvalues, three-generation mapping, CKM and PMNS from the stated finite operator.
+- **OPEN / arithmetic corrected:** one-loop weak-angle slope 109 alpha_EM/(48pi). Proposed modular interval 4eta_Delta+ln4 produces sin^2(theta_W)≈0.231681 using measured alpha_EM(MZ), but without threshold corrections gives alpha_s≈0.07059. The interval and thresholds are not derived physical identifications.
+- The preceding items are **local** status changes; no global no-go is established for the Cathedral's URT selection, rail, KMS/BKM or physical-unification programmes.
