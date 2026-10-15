@@ -113,3 +113,12 @@ These findings are **local audits of named constructions**, not global no-go the
 - [cathedral_125_circumcentric_audit.py](cathedral_125_circumcentric_audit.py) — metric-dependent DEC duals, return loop, golden-ratio ratios and candidate RG interval.
 
 **Next mathematical interfaces (without re-opening established finite identities):** actual metric-eigenbranch susceptibility and entropy coupling; unambiguous symmetry/cycle/phase selection for the species Yukawa map; physical three-generation reduction and absolute masses; three-coupling threshold matching from specified cellular representations.
+
+## Supplement: entropy, finite selection and possible force response (15 October)
+
+- [Entropy–gravity–force derivation and qualification ledger](ENTROPY_GRAVITY_FORCE_BRIDGE.md).
+- [Executable smoothing, quadrupole isometry, BKM Hessian and force checks](cathedral_entropy_force_bridge.py).
+
+New **exact finite identities**: on the visible 12-vertex carrier M=(L_ico+11^T)/20 the normalized quadrupole amplitude contracts by 1/2 each iteration, while its squared geometric asymmetry contracts by 1/4. The canonical projector is P_5=-(1/24)L(L²-10L+20I), with Q-Gram=(8/5)P_5. The vertex-to-face fiveplet map J_5=C_inc P_5/sqrt(3) is isometric and obeys L_face J_5=2J_5. The off-block quantum relative-entropy Hessian agrees with chi_35=8eta(1+Delta²)/(1-Delta²).
+
+New **interpretive distinction**: in the test family the ordinary spatial Shannon entropy *increases* as the quadrupolar inhomogeneity decreases. This is not a derivation of cosmological low gravitational entropy; in 3D the Weyl tensor itself vanishes. A physical force also requires full free-energy differentiation: entropy alone does not supply the energy contribution, bath temperature, physical units or gauge connections.
