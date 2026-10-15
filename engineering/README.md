@@ -27,3 +27,7 @@ As these branches mature, reusable engineering code should move here while raw e
 ## Validation rule
 
 Engineering success is evaluated independently of the fundamental-physics programme. Prefer blind tests, held-out targets, reproducible baselines and explicit failure reporting.
+
+## URTF analytical algorithm and Cathedral Symmetry Compiler
+
+[URTF–Cathedral Symmetry Compiler](urtf_symmetry_compiler/README.md) — a reusable finite mathematical tool specialized to the existing original URT O(N) boundary-cascade programme. Original URT's pi/e scaling, golden-angle phase and one-pass recursion **predate** the 15 October 2026 compiler. This implementation adds proper-A5 representation reduction, cubic Cayley–Hamilton inverse formulas, Woodbury corrections, a 64-cell test suite and nearest-stage O(number of stages) direct coupling. Results, dependencies, and reproducibility instructions are all committed in that folder. No universal optimization or complete physical-action claim is made.
