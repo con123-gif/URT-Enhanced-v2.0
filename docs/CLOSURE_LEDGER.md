@@ -1177,3 +1177,13 @@ Do not collapse the second statement into a reopening of the first.
 - **OPEN:** physical fermion mass eigenvalues, three-generation mapping, CKM and PMNS from the stated finite operator.
 - **OPEN / arithmetic corrected:** one-loop weak-angle slope 109 alpha_EM/(48pi). Proposed modular interval 4eta_Delta+ln4 produces sin^2(theta_W)≈0.231681 using measured alpha_EM(MZ), but without threshold corrections gives alpha_s≈0.07059. The interval and thresholds are not derived physical identifications.
 - The preceding items are **local** status changes; no global no-go is established for the Cathedral's URT selection, rail, KMS/BKM or physical-unification programmes.
+
+### 2026-10-15 continuation — entropy-driven selection and finite force response
+
+**Sources:** [exact derivation/limitations](../research_archive/2026-10-15_icosahedral_125_DEC_H64/ENTROPY_GRAVITY_FORCE_BRIDGE.md) and [executable numerical checks](../research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_entropy_force_bridge.py).
+
+- **CLOSED / FROZEN for the defined normalized finite operator:** vertex M=(L_ico+11^T)/20; rank-5 projector P5=-(1/24)L(L²-10L+20I); relative fiveplet amplitude contracts by 1/2 and invariant quadrupole power by 1/4 at each iteration. Quadrupole Gram is exactly (8/5)P5.
+- **CLOSED / FROZEN for the finite representation:** J5=C_inc P5/sqrt(3) is an isometry vertex fiveplet to face fiveplet and L_face J5=2J5. It is a candidate pair of 5-dimensional curvature carriers; no 4D Weyl identification proven.
+- **CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING:** 8-carrier off-block relative-entropy Hessian chi35=(ln a-ln b)/(a-b)=47.9669783. A relative-entropy free-energy penalty has a local restoring-force gradient if physical temperature and displacement coupling are specified.
+- **DISTINCTION PROVEN in a positive probability fiveplet family:** ordinary Shannon entropy increases while spatial quadrupole power decreases; these cannot be identified without a gravitational entropy functional. Reversible unitary motion preserves von Neumann entropy.
+- **OPEN physical:** continuum 4D Weyl curvature/initial-state low gravitational entropy; physical force scale and full Helmholtz response; gauge curvature, charges and dynamical equations; cosmological arrow of time. No blanket no-go is inferred.
