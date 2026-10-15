@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-15",
+  "scope": "LOCAL: symmetry-compiled direct Cathedral/URTF solver",
+  "core_finding": "A5 equivariant 64 cell = 4 copies each of 1,3,3p,4,5 => 5 cubic Cayley-Hamilton inverse polynomials",
+  "group_order": 60,
+  "irrep_ranks": {
+    "1": 4,
+    "3": 12,
+    "3p": 12,
+    "4": 16,
+    "5": 20
+  },
+  "coupled_operator": {
+    "min_eigen": 1.2289864775057657,
+    "max_eigen": 6.9958109041893,
+    "includes_signed_face_iW": true,
+    "incidence_coupling_strength_DELTA": 0.002489189840420375,
+    "chirality_coupling_strength_DELTA": 0.002489189840420375,
+    "noncommuting": true,
+    "physical_action_derived": false
+  },
+  "cubic_invariants": {
+    "1": {
+      "e1_e2_e3_e4": [
+        23.186553557572203,
+        198.73010124415637,
+        745.7495252239352,
+        1034.4596874560161
+      ],
+      "imaginary_artifact": 1.9159505858649093e-17
+    },
+    "3": {
+      "e1_e2_e3_e4": [
+        6.11523601385106,
+        13.84377428359711,
+        13.743217551591147,
+        5.05068631643749
+      ],
+      "imaginary_artifact": 2.6914757075786545e-19
+    },
+    "3p": {
+      "e1_e2_e3_e4": [
+        11.47804076493504,
+        49.22478336785056,
+        93.47962268624022,
+        66.32822507778431
+      ],
+      "imaginary_artifact": 1.8650800495699955e-18
+    },
+    "4": {
+      "e1_e2_e3_e4": [
+        8.796638389393049,
+        28.83797669917384,
+        41.75221033755632,
+        22.528146647793932
+      ],
+      "imaginary_artifact": 7.25543725173489e-20
+    },
+    "5": {
+      "e1_e2_e3_e4": [
+        8.796638389393046,
+        28.298819541631502,
+        39.380825062579895,
+        20.04177317335173
+      ],
+      "imaginary_artifact": 8.60823083539648e-19
+    }
+  },
+  "full_logdet_from_five_quartics": 51.83220924398435,
+  "logdet_formula_residual": 1.2789769243681803e-13,
+  "sector_eigenvalues_audit_only": {
+    "1": {
+      "rank": 4,
+      "distinct_roots": 4,
+      "eigenvalues": [
+        4.597465874596802,
+        4.597478792044788,
+        6.995797986741314,
+        6.995810904189297
+      ]
+    },
+    "3": {
+      "rank": 12,
+      "distinct_roots": 4,
+      "eigenvalues": [
+        1.2289864775057648,
+        1.2290191041256993,
+        1.828598902799829,
+        1.8286315294197628
+      ]
+    },
+    "3p": {
+      "rank": 12,
+      "distinct_roots": 4,
+      "eigenvalues": [
+        2.5697184735840564,
+        2.5697202918966946,
+        3.169300090570827,
+        3.169301908883461
+      ]
+    },
+    "4": {
+      "rank": 16,
+      "distinct_roots": 4,
+      "eigenvalues": [
+        1.8992147278547953,
+        1.8993696980111965,
+        2.498949496685327,
+        2.499104466841728
+      ]
+    },
+    "5": {
+      "rank": 20,
+      "distinct_roots": 4,
+      "eigenvalues": [
+        1.5995746316893702,
+        1.59957979867413,
+        2.798739396022392,
+        2.79874456300715
+      ]
+    }
+  },
+  "inverse_tests": [
+    {
+      "relative_residual": 3.3447097099852025e-15,
+      "relative_dense_error": 3.914406512539195e-15
+    },
+    {
+      "relative_residual": 4.066701502331098e-15,
+      "relative_dense_error": 3.4757780883261545e-15
+    }
+  ],
+  "inverse_products_per_rhs": 3,
+  "urt": {
+    "kappa": 1.1557273497909217,
+    "angle": 2.399963229728653,
+    "boundary_64_initial_minus_one": -4.307554391237226,
+    "boundary_sensitivity": 67094192449.85899
+  },
+  "symmetry_breaking": {
+    "relative_twirling_defect": 0.00018636111268073796,
+    "unrepaired_inverse_residual": 0.0007013370750569407,
+    "woodbury_rank": 4,
+    "woodbury_residual": 3.258096166984071e-15,
+    "woodbury_relative_dense_error": 4.002993895348038e-15
+  },
+  "actual_geometric_H64_species_12x12_reductions": {
+    "u": {
+      "solve_residual": 4.150738315025594e-15,
+      "relative_to_dense": 5.479720755639019e-15,
+      "logdet_reduction_error": 2.1121993043493603e-14,
+      "reduced_size": 12
+    },
+    "d": {
+      "solve_residual": 4.167206557835621e-15,
+      "relative_to_dense": 5.505482652536716e-15,
+      "logdet_reduction_error": 2.566002965664893e-14,
+      "reduced_size": 12
+    },
+    "nu": {
+      "solve_residual": 4.21654952294889e-15,
+      "relative_to_dense": 5.4570133969503924e-15,
+      "logdet_reduction_error": 4.718447854656915e-15,
+      "reduced_size": 12
+    },
+    "e": {
+      "solve_residual": 4.203442205641535e-15,
+      "relative_to_dense": 5.461707449062761e-15,
+      "logdet_reduction_error": 4.9404924595819466e-15,
+      "reduced_size": 12
+    }
+  },
+  "generic_dense_equivariant_test_residual": 2.3347479229111838e-15,
+  "multi_stage_test": {
+    "13": {
+      "unknowns": 832,
+      "residual": 1.807269787995022e-15,
+      "wall_seconds": 0.0009322679998149397,
+      "reference_sparse_error": 1.9360809867111773e-15
+    },
+    "64": {
+      "unknowns": 4096,
+      "residual": 1.798949310395148e-15,
+      "wall_seconds": 0.0013575760003732285
+    },
+    "125": {
+      "unknowns": 8000,
+      "residual": 1.7856802274634476e-15,
+      "wall_seconds": 0.0018664659992282395
+    },
+    "500": {
+      "unknowns": 32000,
+      "residual": 1.8119841332782653e-15,
+      "wall_seconds": 0.008016103000045405
+    }
+  },
+  "caveats": [
+    "Stage couplings and mobility are example quadratic action, not derived Einstein or gauge physics",
+    "A5 equivariance must hold for cubic formula; finite-rank defects corrected by Woodbury",
+    "Spectral moments/projectors have a preprocessing cost; complexity linear in stages for fixed cell size and nearest-stage couplings",
+    "URTF phase generates a forcing; it does not automatically fix a physical action",
+    "All files local, no GitHub changes"
+  ]
+}
