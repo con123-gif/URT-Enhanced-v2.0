@@ -151,6 +151,10 @@ The [exact contact-versus-interaction audit](research_archive/2026-10-15_icosahe
 
 [Signed-face chirality theorem and executable SymPy proof](research_archive/2026-10-15_icosahedral_125_DEC_H64/ENTANGLEMENT_SPIN2_CHIRAL_BRIDGE.md): the orientation-signed 20-face matrix supplies the antipodal-odd map missing from the direct quadrupole coupling. Its normalized fiveplet-to-Hom(4,4) embedding is an exact Hilbert–Schmidt isometry, so the Cathedral's BKM Hessian pulls back to the geometric fiveplet without a fitted coefficient. The finite result does not imply an Einstein equation or physical Newton constant.
 
+### Complex 5+5 BKM and Onsager response (15 October)
+
+The [complex tidal-carrier exact audit](research_archive/2026-10-15_icosahedral_125_DEC_H64/COMPLEX_5PLUS5_ONSAGER_CLOSURE.md) embeds the two real fiveplets as one complex fiveplet in the Hermitian 8x8 BKM tangent, derives the full relative-entropy singular-value formula, and proves exact reversible phase invariance. The 6/2 diffusive dynamics mix the complex field with its conjugate. Gamma=mu0 kBT chi35 remains conditional on an externally specified mobility; the physical Weyl/Einstein identification remains open.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
