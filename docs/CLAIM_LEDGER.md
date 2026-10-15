@@ -25,3 +25,10 @@
 | v59/v61 terminal-wall mass closure | SUPERSEDED | Circular embedding of target data |
 | Unforced Navier-Stokes branch is solved | NOT CLAIMED | Research/proof program only |
 | O(N) URT engineering kernel | ACTIVE / TESTABLE | Separate from physical unification claims |
+
+| 2026-10-15 exact incidence: vertex-face C^T C=15I-2L and phi^-2, phi^-4, phi^-6 squared spectral ratios | EXACT IN DEFINED GEOMETRY | Full code and derivation in research_archive/2026-10-15_icosahedral_125_DEC_H64/ |
+| Complete tetrahedral hidden-face lift 3,5→4,6 and gap preservation | EXACT FOR UNWEIGHTED FULL COMPLEX | Lifted vectors include 30 radial-face components; physical metric deformation separate |
+| Augmented 64-state / 24-to-12 interacting determinant and closed golden return-loop spectrum | EXACT FOR DEFINED FINITE OPERATORS | One visible and three hidden triplet-pair copies do not by themselves prove physical families |
+| Fixed-volume circumcentric DEC forces universal area susceptibility a=-1 | NOT ESTABLISHED FOR ACTUAL DUAL VOLUMES | a=-1 follows from an assumed-star model; explicit circumcentric test differs; no global gravity no-go |
+| Phased 3-cycle bridge and zero-diagonal charge orthogonality uniquely select a physical Yukawa map | OPEN / NOT UNIQUE FROM PRESENT CONDITIONS | Hilbert-Schmidt orthogonality against traceless charges alone allows other matrices |
+| 4eta_Delta+ln4 weak-angle interval completes three-coupling unification | OPEN / NOT ESTABLISHED | Weak-angle arithmetic conditional on measured alpha_EM; no-threshold alpha_s≈0.07059 |
