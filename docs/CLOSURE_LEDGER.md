@@ -1217,3 +1217,11 @@ Do not collapse the second statement into a reopening of the first.
 - **CLOSED nonlinear symmetry:** Omega on the tidal 10D space acts as Z→exp(i theta)Z; conjugation by U_theta=diag(exp(i theta/2)I4,exp(-i theta/2)I4) commutes with rho_star and leaves full relative entropy invariant, not just the Hessian. This is distinct from a cross-quartet mixing unitary, which *raises* modular relative entropy.
 - **CLOSED only for the chosen constitutive law:** with mobility mu0 diag(6I5,2I5), gamma=mu0 kBT chi35, and dot psi=(i omega-4gamma)psi-2gamma conjugate(psi), the BKM free-energy dissipation is nonnegative when assigned bath conditions hold; 6-versus-2 damping breaks complex U(1) linearity.
 - **OPEN:** microscopic mu0, physical Gamma and ratio omega/Gamma, 4D electric/magnetic Weyl parity (both existing geometric fiveplets are antipodal-even), nonlinear Einstein/canonical energy identification, spacetime normalization. No parameter-free physical critical damping has been derived.
+
+### 2026-10-15 continuation — solar-system quantum-entanglement hypothesis
+
+**Source:** [minimal model scope and numeric results](../research_archive/2026-10-15_icosahedral_125_DEC_H64/SOLAR_THREE_BODY_ENTANGLEMENT_MODEL.md) and [standalone NumPy baseline](../research_archive/2026-10-15_icosahedral_125_DEC_H64/solar_three_body_entanglement_baseline.py).
+
+- **CLOSED mathematically for specified quantum Hamiltonian:** Newtonian tidal expansion between planet COM displacements gives K_ij=G m_i m_j(3 n n^T-I)/r³, radial longitudinal strength 2G m_i m_j/r³. For hypothetical pure three-qubit spatial superpositions, exactly solvable Ising evolution yields one-body purity (1+product cos²(Phi_ij/2))/2.
+- **MODEL DIAGNOSTIC only:** 30-day approximate Sun–Earth–Moon Newtonian orbit and nonzero entanglement in an *assumed coherent* three-body thought experiment. The numerical values are not evidence for observed macroscopic orbital entanglement.
+- **OPEN physical:** full solar-system time-dependent tidal-coupling simulation, actual planetary quantum-coherence/decoherence model, mixed-state entanglement witness, differentiation from classical correlations, and URT-specific prediction. The fitted/observed solar-system masses/G enter the empirical test as measured controls, not first-principles Cathedral derivations.
