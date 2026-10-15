@@ -159,6 +159,10 @@ The [complex tidal-carrier exact audit](research_archive/2026-10-15_icosahedral_
 
 The [Sun–Earth–Moon numerical baseline and research ledger](research_archive/2026-10-15_icosahedral_125_DEC_H64/SOLAR_THREE_BODY_ENTANGLEMENT_MODEL.md) separate classical three-body orbital evolution from hypothetical coherent quantum gravitational tidal entanglement. This tests a possible application without treating classical gravitational correlations as proof that planets are entangled.
 
+### Cathedral × URT integrated finite run (15 October)
+
+[Integrated source, proof boundary and numerical results](research_archive/2026-10-15_icosahedral_125_DEC_H64/INTEGRATED_URT_CATHEDRAL_RUN_2026-10-15.md): the original URT spiral, normalized icosahedral quadrupolar transfer, exact signed-face quantum BKM embedding, and a selected 8×8 CPTP phase/reset channel were run together. For the chosen explicit composition, selected deviations contract by pi/(2e) while the original raw spiral expands by pi/e; quantum relative entropy decreases and entropy increases. The composition is a *tested model hypothesis*, not yet a derivation from the full canonical microscopic T_star. The micro-selector derivative contraction bound is valid in a forward-invariant central interval, not across the discontinuous sign-switch points.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
