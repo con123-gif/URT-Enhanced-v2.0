@@ -152,3 +152,12 @@ New **interpretive distinction**: in the test family the ordinary spatial Shanno
 - [Minimal three-body orbit + pure-state tidal entanglement baseline](solar_three_body_entanglement_baseline.py).
 
 Separates observed classical N-body motion from an idealized coherent three-qubit gravitational phase experiment. The idealized model can create mathematical entanglement, but **does not imply the real Sun, Earth and Moon are demonstrably entangled**. Next empirical gate is a time-dependent JPL/SPICE-based N-body tidal matrix plus a physically justified open-system decoherence/witness model.
+
+## Integrated URT × complete finite Cathedral trial (15 October)
+
+- [Unified experiment, complete mathematical scope and actual 12-step results](INTEGRATED_URT_CATHEDRAL_RUN_2026-10-15.md).
+- [Executable integrated URT/geometry/8×8 BKM/125-simplex/H64 checker](cathedral_unified_urt_runner.py).
+
+The original URT amplitude factor pi/e and the exact icosahedral fiveplet selection factor 1/2 can be **composed as an explicit hypothesis** to give lambda=pi/(2e)=0.577863675. With a phase U_theta commuting with rho_star, E(rho)=lambda U_theta rho U_theta†+(1-lambda)rho_star Tr(rho) is a CPTP channel, fixes rho_star and contracts relative entropy. In the tested off-block state, entropy rises as modular relative entropy decreases (9.6001e-7 to 1.8452e-12 after 12 steps). This is a valid finite trial, **not** a proof that full microscopic T_star uniquely generates this channel.
+
+A precise local issue was also found in the archived micro-selector code: the sin-to-sign gate is discontinuous at ±pi. The quoted derivative contraction bound holds on the forward-invariant central strip for bounded drive, and the simulated trajectory stays inside that region. No global URT no-go is inferred. All prior Platonic, gauge, v129 microscopic, vortex, 4D coframe and physical H64 material remains in its own precedence ledger.
