@@ -145,3 +145,10 @@ New **interpretive distinction**: in the test family the ordinary spatial Shanno
 **Finite closures:** the *complex* off-block 4x4 matrix Z=Phi5(e)+iPhi5(J5^T b) embeds both real fiveplets into the same 8x8 Hermitian quantum response with norm ||Z||²=||e||²+||b||². Umegaki relative entropy admits an exact four-singular-value expression and has the strict-positivity threshold ||Z||op<Delta/[2sqrt(2)(1+Delta²)]. Reversible Omega is the global phase symmetry Z→exp(i theta)Z and leaves relative entropy invariant to all orders. The 6/2 damping split gives dot psi=(i omega-4Gamma)psi-2Gamma conjugate(psi).
 
 **Physical qualifications:** Gamma=mu0 kBT chi35 is a *specified Onsager constitutive relation*, not a derived mobility or physical timescale; Gamma=1 is a model example, not harmless unit choice for omega/Gamma. Both existing primal/dual icosahedral fiveplets are spatially even; this alone does not yield the electric/magnetic Weyl tensor parity in four dimensions.
+
+## New Sun–Earth–Moon model — orbit vs. genuine quantum entanglement (15 October)
+
+- [Scope, quantum tidal Hamiltonian, computed coupling strengths and experimental requirements](SOLAR_THREE_BODY_ENTANGLEMENT_MODEL.md).
+- [Minimal three-body orbit + pure-state tidal entanglement baseline](solar_three_body_entanglement_baseline.py).
+
+Separates observed classical N-body motion from an idealized coherent three-qubit gravitational phase experiment. The idealized model can create mathematical entanglement, but **does not imply the real Sun, Earth and Moon are demonstrably entangled**. Next empirical gate is a time-dependent JPL/SPICE-based N-body tidal matrix plus a physically justified open-system decoherence/witness model.
