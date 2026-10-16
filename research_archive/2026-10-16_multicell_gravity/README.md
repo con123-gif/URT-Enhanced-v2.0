@@ -12,6 +12,8 @@ This archive preserves all three user-proposed multi-cell theorems in a complete
 | [Three-theorem executable](cathedral_multicell_three_theorems_2026_10_16.py) | Original icosahedral matrices, true TT projector, corrected transfer spectra, 48³ screened lattice |
 | [Three-theorem numeric JSON](cathedral_multicell_three_theorems_results_2026_10_16.json) | Machine-checkable checkpoints |
 | [Four-link DEC/FDT audit](NEWTON_CATHEDRAL_FOUR_LINKS_DEC_FDT_AUDIT_2026-10-16.md) | Edge Hodge separation, orientation parity, native curl wave, BKM positivity, energy |
+| [Four-link executable](cathedral_four_links_audit_2026_10_16.py) | Hodge, signed parity, native curl, conditional OU: regenerates its own reduced results file |
+| [Five-stage executable](cathedral_five_stage_audit_2026_10_16.py) | Recreates propagator and numerical trajectory from a conditional Langevin bath |
 | [Four-link JSON](cathedral_four_links_results.json) | Earlier DEC/FDT calculation results |
 | [Five-stage tidal report](cathedral_five_stage_report_2026_10_16.md) | Exact propagator, two different action ratios, Gaussian-bath assumptions |
 
