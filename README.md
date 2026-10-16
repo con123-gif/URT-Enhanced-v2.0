@@ -194,6 +194,10 @@ The [complete three-theorem and same-day DEC/FDT archive](research_archive/2026-
 
 [Exact 12-outcome vertex POVM and 11-channel BKM susceptibility](research_archive/2026-10-16_hidden_visible_povm/README.md). The two hidden face quartets induce positive quantum measurement effects on the 12 vertices with p_i(rho*)=1/12. The actual unsigned inter-quartet incidence transfer has rank 6 with golden singular-value ratio phi³; adding parity-even intra-quartet response generates the 5D quadrupole, giving a fixed 11-mode BKM response with triplet ratio phi⁶. This preserves the distinct signed chirality fiveplet map. A 4/16 representation fraction is **not** a prediction of 25% dark-matter abundance or gravitational coupling.
 
+### Center-4 and augmented 64-state gauge geometry — 16 October
+
+[Integrated mathematical theorems, exact Dirac spectral polynomial and tested solenoidal/Wilson link identities](research_archive/2026-10-15_icosahedral_125_DEC_H64/UNIFIED_CATHEDRAL_ADVANCED_SYNTHESIS.md), with [reproducible center-4 proof script](research_archive/2026-10-16_center4_synthesis/README.md). The 64×64 integer polynomial and exact 30-edge Hodge decomposition were verified; the proposed damping window remains a conditional oscillator model and the U(8) vacuum stabilizer is not automatically a massless Yang–Mills gauge theory. All earlier H64 history, hidden-POVM, entropy and URT branches remain intact.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
