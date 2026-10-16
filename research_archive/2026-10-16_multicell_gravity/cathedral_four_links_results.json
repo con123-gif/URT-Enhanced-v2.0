@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-16",
+  "scope": "finite icosahedral DEC / conditional OU noise / energy accounting",
+  "dimensions": {
+    "vertices": 12,
+    "edges": 30,
+    "faces": 20,
+    "exact_edge_1_forms": 11,
+    "coexact_edge_1_forms": 19
+  },
+  "checks": {
+    "chain_nilpotency": 0.0,
+    "gradient_isometry": 1.0514065791862037e-15,
+    "curl_isometry": 1.3461247220718953e-15,
+    "orthogonal_hodge_spaces": 8.488056752734594e-17,
+    "gradient_eigen6": 1.8225033340147716e-15,
+    "curl_eigen2": 9.456809554243017e-16,
+    "gradient_curl_zero": 2.0988456014418934e-16,
+    "curl_div_zero": 2.576341785827013e-16,
+    "vertex_to_face_fiveplet": 8.750712804614061e-16,
+    "edge_antipodal_chain_covariance": 0.0,
+    "face_antipodal_chain_covariance": 0.0,
+    "vertex_e_even": 1.3790031262336695e-15,
+    "oriented_face_b_odd": 3.323885903065703e-16,
+    "unsigned_J5_parity_defect": 4.4721359549995805,
+    "new_edge_complex_structure_skew": 0.0,
+    "new_edge_complex_structure_square": 1.0162371830965674e-15,
+    "new_edge_complex_structure_parity_flip": 7.705193081226271e-16,
+    "new_edge_complex_structure_rank": 10.000000000000007,
+    "native_DEC_Maxwell_wave_subspace_invariance": 7.468266777859649e-16,
+    "native_DEC_Maxwell_wave_reduced_skew": 1.5543122344752192e-15
+  },
+  "edge_spectrum": [
+    0.7639320225,
+    0.7639320225,
+    0.7639320225,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.7639320225,
+    2.7639320225,
+    2.7639320225,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.2360679775,
+    5.2360679775,
+    5.2360679775,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    7.2360679775,
+    7.2360679775,
+    7.2360679775
+  ],
+  "native_cochain_curl_wave": {
+    "natural_frequency": 1.4142135623730951,
+    "coexact_edge_to_face_5_plus_5": true,
+    "not_the_exact_gradient_fiveplet": true
+  },
+  "parity": {
+    "vertex_fiveplet": "even (signed actual vertex pullback)",
+    "oriented_face_fiveplet": "odd (signed cochain action)",
+    "unsigned_incidence_map_is_Ih_equivariant": false,
+    "nonintertwiner_norm": 4.4721359549995805
+  },
+  "BKM": {
+    "rail_gap": 0.002489189840420375,
+    "exhaust_probability": 6.196027670655245e-06,
+    "chi_35": 47.966978303380195,
+    "rho_star_P5_projector_measurement_variance": 6.195989279896349e-06,
+    "positivity_max_offblock_singular_value": 0.0008800560550254987,
+    "upper_bound_total_10D_density_tangent_squared_norm": 3.0979946399481746e-06,
+    "claimed_10D_Gaussian_total_variance": 0.20847675533681279,
+    "factor_Gaussian_total_variance_exceeds_positivity_bound": 67294.0981396599,
+    "claimed_quadrupole_floor_if_Gaussian": 0.16678140426945023,
+    "finite_two_sector_stat_variance": 6.195989279896349e-06,
+    "finite_two_sector_autocorrelation_at_1_over_rate": 2.2793770737925165e-06,
+    "detailed_balance_fix_rate_ratio_only": 6.1960660616520115e-06
+  },
+  "OU_assumed": {
+    "gamma_test_units": 1.0,
+    "omega_test_units": 2.399963229728653,
+    "linear_A_eigs": [
+      [
+        -4.0,
+        1.3265833950602532
+      ],
+      [
+        -4.0,
+        -1.3265833950602532
+      ]
+    ],
+    "Q_noise_eigenvalues": [
+      0.08339070213472512,
+      0.08339070213472512,
+      0.08339070213472512,
+      0.08339070213472512,
+      0.08339070213472512,
+      0.25017210640417537,
+      0.25017210640417537,
+      0.25017210640417537,
+      0.25017210640417537,
+      0.25017210640417537
+    ],
+    "stationary_cov_error": 1.1614920853003861e-17,
+    "stationary_variance_trace": 0.20847675533681276,
+    "stationary_mean_quadratic_energy_kBT_units": 4.999999999999999,
+    "deterministic_thermal_drain_rate_kBT_units_at_equilibrium": 39.99999999999999,
+    "stochastic_replenishment_rate_kBT_units_at_equilibrium": 40.00000000000001,
+    "noise_half_strength_covariance_trace": 0.10423837766840638
+  },
+  "reservoir_assumed": {
+    "test_F": 68.35294408231678,
+    "test_dFdt": -330.9721502933233,
+    "required_bg_rate_for_total_energy_conservation": 330.9721502933233,
+    "laplacian_maps_uniform_to_zero": true
+  },
+  "physical_results": {
+    "full_4D_Weyl_equations_derived": false,
+    "microscopic_noise_derived": false,
+    "gravity_G_derived": false,
+    "true_entanglement_cut_derived": false
+  }
+}
