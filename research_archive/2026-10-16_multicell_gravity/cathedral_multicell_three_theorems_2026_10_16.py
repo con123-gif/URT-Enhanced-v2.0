@@ -118,7 +118,14 @@ report={
  "physical_source_map":False,
  "global_icosahedral_tiling":False
 }
-out=HERE/"cathedral_multicell_three_theorems_results_2026_10_16.json"
-out.write_text(json.dumps(report,indent=2)+"\n")
+# A command-line output path prevents tests from rewriting tracked results.
+# Default preserves the historical standalone script behavior.
+import argparse
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--output",type=Path,
+    default=HERE/"cathedral_multicell_three_theorems_results_2026_10_16.json")
+args=parser.parse_args()
+args.output.parent.mkdir(parents=True,exist_ok=True)
+args.output.write_text(json.dumps(report,indent=2)+"\n")
 print(json.dumps(report,indent=2))
 print("PASS: checked all exact identities and screened-lattice counterexample.")
