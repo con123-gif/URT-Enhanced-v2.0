@@ -137,7 +137,7 @@ eta=-s.log(Delta)
 chi=8*eta*(1+Delta**2)/(1-Delta**2)
 a=1/(4*(1+Delta**2));b=Delta**2*a
 orbit=s.simplify(mixed*chi*(a-b)**2)
-assert s.simplify(orbit-s.Rational(2,5)*eta*s.tanh(eta))==0
+assert s.simplify(orbit-s.Rational(2,5)*eta*(1-Delta**2)/(1+Delta**2))==0
 print(json.dumps({
  "hidden_POVM_effects":12,
  "associative_rank_by_word_degree":assoc,
