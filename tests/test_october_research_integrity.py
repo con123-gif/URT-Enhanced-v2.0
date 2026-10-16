@@ -49,6 +49,11 @@ def test_theorem_generated_json_has_committed_schema(tmp_path):
     produced=json.loads(output.read_text(encoding="utf-8"))
     assert json.loads(p.read_text(encoding="utf-8"))==archived
     def compare_keys_and_values(x,y):
+        # JSON 4 and 4.0 are the same numeric datum, not a schema mismatch.
+        if (isinstance(x,(int,float)) and not isinstance(x,bool)
+                and isinstance(y,(int,float)) and not isinstance(y,bool)):
+            assert np.isclose(x,y,rtol=1e-7,atol=2e-14)
+            return
         assert type(x)==type(y)
         if isinstance(x,dict):
             assert set(x)==set(y)
