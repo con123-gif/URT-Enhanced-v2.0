@@ -1248,3 +1248,15 @@ Do not collapse the second statement into a reopening of the first.
 4. **Prior same-day work preserved:** 30-edge exact/coexact 1-form decomposition and native coexact-edge/face curl-wave, signed inversion parity, conditional BKM Langevin covariance vs density positivity, and five-stage exact tidal/Lyapunov 9/5 versus single-electric 3/7 ratios. The reports, runnable scripts and numeric results are linked in the archive.
 
 **Precedence:** This checkpoint alters only the named three multi-cell claims and documents October 16 local results. It does not retire earlier verified URT selection, hidden quartets, BKM state, 125-simplex, gauge-seed, Newton Scale, H64 flavour, vortex or plasma engineering branches.
+
+---
+
+## 2026-10-16 — Restored v115/v125/v129 conversation frontier (historical preservation)
+
+**Priority source:** [conversation-first recovery record](../research_archive/2026-10-16_conversation_first_recovery/RECOVERED_PREVIOUS_FRONTIER_2026-10-16.md). This section does **not** declare new physical closure or overturn the status of the specific original v115–v129 operators.
+
+- **HISTORICAL OUTPUT RECOVERED (not erased):** v115 September 9 mass response relative to top: b=.0248918984, tau=.00995675936, c=.00746756952, mu=.000594822342, s=.000557645946, d=.0000277617324, u=.0000123921321, e=.00000286378537. Original source calculations and response-fed flags need full reconciliation, not replacement by a newer flat 64-cell candidate.
+- **HISTORICAL RESPONSE CLOSED MATHEMATICALLY / INDEPENDENT PHYSICAL PROOF PENDING:** v125/v129 CKM s12=.224308861636818, s23=.042177509491690, s13=.003733784760631, JQ=3.141364407663573e-5; PMNS sin²12=.303463055248289, sin²23=.562129475820753, sin²13=.022689900267130, JL=-.032359467925465. Fiveplet response Sigma5(0)=1/8 supplies 159/8 and s12=sqrt(8/159). v59/v61 response-fed terminal-wall route cannot be an independent first-principles proof, but its numerical outputs and provenance remain preserved.
+- **HISTORICAL COSMOLOGY/GRAVITY OUTPUTS RETAINED:** Omega_m=6/19, Omega_Lambda=13/19, Omega_b=12/247, Omega_c=66/247, G Lambda²/g_U²=eta_Delta/(16pi); their physical Friedmann/coupling interpretation remains a separate proof requirement.
+- **SOURCE-RECOVERY PENDING (NOT ASSERTED FALSE):** later 'Rule D' Cabibbo derivation, right-handed Gate-2 local no-go and Koide reduction named in Oct 16 review. Exact formula chain not present in currently recovered excerpts. Preserve these as missing **source material**, not missing **mathematics** or universal no-go conclusions.
+- **CONTINUITY CORRECTION:** conversation results and later corrections take precedence over compact repository snapshots; distinct H64 geometric realizations may not replace canonical six-bit history results without an explicit intertwinement theorem. No other earlier closure is globally reopened by this checkpoint.
