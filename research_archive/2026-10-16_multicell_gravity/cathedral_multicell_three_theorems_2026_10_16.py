@@ -93,10 +93,13 @@ assert scaled["10"]<scaled["2"]
 assert abs(J*Lk[0,0,0])<1e-10
 
 report={
+ "date":"2026-10-16",
+ "source":"cathedral_multicell_three_theorems_2026_10_16.py",
+ "verified_with":"NumPy icosahedral DEC plus 48^3 periodic lattice FFT",
  "theorem_1":{"status":"dipole quotient invalid; k-transversality gives 2",
-     "edge_dipole_quadrupole_overlap":edge_overlap,
+     "gradient_dipole_quadrupole_overlap":edge_overlap,
      "rank_quadrupole_gradient":5,"rank_combined_images":8,
-     "spatial_TT_nullity":2,"TT_residual_max":max(tt_errors)},
+     "TT_nullity":2,"TT_residual_max":max(tt_errors)},
  "theorem_2":{"status":"screened Yukawa, no G_N prediction",
      "chi":float(CHI),"illustrative_J_over_chi":16,
      "screening_length_cells":float(np.sqrt(J/CHI)),
@@ -104,15 +107,16 @@ report={
      "r_times_G_axis":scaled,
      "continuum_denominator":"chi + J a^2 |k|^2",
      "continuum_green":"exp(-r/ell)/(4 pi J a^2 r), normalization depends on continuum dictionary",
-     "massless_candidate":"shift-symmetric intercell-only J L, independently unproved"},
+     "massless_alternative":"shift-symmetric intercell-only J L, independently unproved"},
  "theorem_3":{"status":"corrected exact finite spectrum",
      "transfer_eigenvalues":transfer,"normalized_ratios":relative,
-     "matrix_spectral_residual":spec_error,
-     "quadrupole_relative_power_decay":.25,
+     "spectral_residual":spec_error,
+     "quadrupole_power_decay":.25,
      "diffusive_5_over_dipole_rate":float(6/(5-np.sqrt(5)))},
- "physics_closure":{"graviton_field_equations":False,
-     "newton_G_derived":False,"physical_source_map":False,
-     "global_icosahedral_tiling":False}
+ "physical_gravity_closed":False,
+ "physical_newton_G_derived":False,
+ "physical_source_map":False,
+ "global_icosahedral_tiling":False
 }
 out=HERE/"cathedral_multicell_three_theorems_results_2026_10_16.json"
 out.write_text(json.dumps(report,indent=2)+"\n")
