@@ -181,6 +181,11 @@ The [complete three-theorem and same-day DEC/FDT archive](research_archive/2026-
 
 [Conversation-first recovery of the v115 mass-response outputs, v125/v129 CKM/PMNS, cosmological ratios and later corrections](research_archive/2026-10-16_conversation_first_recovery/RECOVERED_PREVIOUS_FRONTIER_2026-10-16.md). **Earlier responses were substantially more developed than later compact code snapshots implied.** The historical numerical outputs are preserved even where their target-free physical derivation requires reconciliation. Do not replace these results with the flat spectra of a different geometric H64 candidate. The still-unlocated Rule D, right-handed Gate-2 and Koide source derivations are explicitly tracked rather than presumed nonexistent.
 
+
+## Conversation-first recovery (16 October)
+
+[Recovered prior-conversation mathematical frontier and provenance](conversation_archive/CHAT_FIRST_RECOVERY_STATUS_2026-10-16.md) now supplements the dated research archive. This includes previously omitted v27/v115/v129 and later entropy, H64 and continuum status corrections. **This is not a claim that the last 100 raw ChatGPT transcripts have been exported**; it preserves available past work without fabricating originals.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
