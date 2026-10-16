@@ -8,7 +8,14 @@ table, and nuclear physics — all closed forms in
 {D, q, V, E, F, G, N, γ, φ, π} (with the single dimensional input
 ρ_Λ = (2.34 meV)⁴ for absolute mass scales).
 
-Status (May 2026):
+HISTORICAL REGISTRY WARNING (October 2026): these May 2026 "confirmed"
+labels mean numerical comparisons in a LEGACY candidate registry. They do NOT
+certify a preregistered, target-free, first-principles physical prediction,
+and may include calibrated inputs, fitted choices and superseded routes.
+Only explicit independent-source/parameter-provenance audits can upgrade
+physical evidence status.
+
+Status (May 2026; legacy labels, NOT scientific confirmation):
     confirmed  : ~40    (median rel-err < 0.1 %)
     predicted  :  1     (r tensor-to-scalar — within current bound)
     open       :  6     (axion, sterile-ν, WIMP, Casimir, microwave line,
