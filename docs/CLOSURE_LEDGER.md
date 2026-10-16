@@ -1276,3 +1276,5 @@ Do not collapse the second statement into a reopening of the first.
 - **RETAIN positivity boundary:** \(32/\chi_{35}\) is not a physically admissible unscaled quantum-density Gaussian noise floor. Diagonal and offdiagonal BKM coefficients are **different**: \(1/a\), \(1/b\), and \(\chi_{35}\), respectively. Quantum detailed balance and any real dark-sector gravitation remain physical-source/dynamics tasks.
 
 All new rank, parity, POVM, Gram and BKM identities verified numerically using exact geometrical projectors; machine epsilon residuals reported in the new report.
+
+**Exact symbolic certificate added:** C^T(P3◦P5)C = Lico(Lico−6I)(Lico−7I)/60, C^T(P3◦P3)C = 3P0+(3/25)P5, C^T(P5◦P5)C = 3P0+(1/3)P5. Here P3/P5 are hidden **face** projector labels in the Hadamard products; vertex P5 is the separate rank-five quadrupole. All three equalities were verified using exact rational matrices in the linked standalone SymPy certificate.
