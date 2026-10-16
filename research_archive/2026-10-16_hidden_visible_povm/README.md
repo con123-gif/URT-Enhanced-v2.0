@@ -17,3 +17,5 @@ The A5 identity 4⊗4=1+3+3prime+4+5 is exact. The two quartets have opposite fu
 The extra rank-4 A5 irrep is a legitimate hidden representation, NOT an automatic 25% gravitating dark-matter fraction. The static vertex POVM has other invisible directions, and a proper stress-energy / Einstein exchange coupling is still to be derived. No 32/chi Gaussian quantum-noise floor is asserted.
 
 Preserve the original URT, existing DEC/125/H64, mass/flavour, gauge and cosmological branches separately; this is an **additive** finite result, not an overhaul.
+
+[Exact symbolic certificate of the three hidden-to-visible Gram polynomial identities](hidden_visible_exact_certificate.py) (SymPy; no floating point or fitted coefficients).
