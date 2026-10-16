@@ -1,3 +1,11 @@
+"""Canonical URT/Cathedral finite constants and historical scalar-residue candidate.
+
+ALPHA_RESIDUE_INV is internally defined by the previously archived Delta
+polynomial. It is NOT currently derived from a normalized electromagnetic
+current correlator and must not be treated as an independent prediction
+of measured physical alpha. Its constituent coefficients have historical
+geometric/entropy interpretations, not a demonstrated unique physical rule.
+"""
 from math import pi, sqrt, log
 
 PHI = (1 + sqrt(5.0)) / 2.0
