@@ -173,6 +173,10 @@ The [URTF–Cathedral Symmetry Compiler](engineering/urtf_symmetry_compiler/READ
 
 The [URT Mathematics Direct Solver](engineering/urt_math_direct_solver/README.md) extends the original URT O(N) recursive algorithm with a reusable mathematical problem dispatcher, certified low-rank harmonic inverses, local block recurrences, a **combined local physics plus global URT resonance solver** and a special nonlinear scalar reduction. The new coupled test solved 4,096 variables through a 6×6 correction with relative residual ~1×10⁻¹⁶. Other checks cover a 32,768-variable harmonic interaction and a 24,000-variable discrete diffusion equation. These are exact reductions for specified structured models, not an unrestricted O(N) solution for all mathematics, physics, or computation.
 
+### Multi-cell gravity/DEC audit — 16 October 2026
+
+The [complete three-theorem and same-day DEC/FDT archive](research_archive/2026-10-16_multicell_gravity/README.md) contains executable tests of the proposed graviton-polarization split, long-range BKM lattice force and four-sector icosahedral transfer, plus the preceding four-link and five-stage tidal reports. The **exact** corrected transfer ratios are retained; dipole and quadrupole edge-gradient sectors are orthogonal, and the supplied positive on-site BKM lattice action gives a screened response. A symmetry-protected massless field, physical energy-to-tensor coupling, spacetime dynamics and G_N normalization remain open research targets, not global impossibilities.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
