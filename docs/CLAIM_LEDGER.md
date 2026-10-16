@@ -42,3 +42,8 @@
 | 2026-10-16 internal alpha-residue coefficient decomposition | EXACT ARITHMETIC, PHYSICAL QED CLAIM STILL OPEN | 137=N²−E−(D−1); 17572/1215=N+9/5−82/243; 9/65=(N−D−1)/(5N). Historical selection and photon current-current normalization still unproved |
 | Legacy ~40 confirmed labels in old prediction registry | HISTORICAL NUMERICAL COMPARISONS ONLY | Header explicitly warns these do not establish independent target-free predictions |
 | Theorem regression writing tracked JSON file | CODE FIX COMMITTED, CI VERIFICATION PENDING | Standalone theorem accepts --output path; pytest uses temporary directory and fixture stability check |
+
+| 2026-10-16 canonical 8D hidden-to-12-vertex POVM | EXACT FOR SPECIFIED FACE INCIDENCE | E_i=(1/3)H^T diag(C_i) H >=0, sum E_i=I8, rho* yields p_i=1/12; tracefree linear response rank11 |
+| 2026-10-16 off-quartet bilinear generates all 12 visible modes under full Ih | FALSE FOR UNSIGNED PARITY-PRESERVING MAP | Opposite-parity quartets give entirely odd 16; natural incidence bilinear rank6 (3_u+3prime_u), not 12. Existing W signed-chirality 5-portal is distinct and remains valid |
+| 2026-10-16 hidden-to-visible exact BKM static susceptibility | EXACT INTERNALLY / PHYSICAL COUPLING OPEN | R=(a/75+b/27)P5 + [2(5+2sqrt5)/(135chi)]P3 + [2(5-2sqrt5)/(135chi)]P3prime; triplet response ratio phi^6 |
+| 2026-10-16 extra A5 quartet = 25 percent gravitating dark matter | NOT DERIVED | A5 4/16 is a representation dimension, not dark abundance/coupling; actual vertex POVM has 10/16 real mixed directions invisible, and additional imaginary directions. Dark-dark quadrupole portals allowed by Sym²4. |
