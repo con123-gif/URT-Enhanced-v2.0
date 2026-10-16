@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-16",
+  "source": "cathedral_multicell_three_theorems_2026_10_16.py",
+  "verified_with": "NumPy icosahedral DEC plus 48^3 periodic lattice FFT",
+  "theorem_1": {
+    "status": "dipole edge intersection is zero; TT rank-two requires independent physical wavevector",
+    "gradient_dipole_quadrupole_overlap": 9.09654900257786e-16,
+    "rank_quadrupole_gradient": 5,
+    "rank_combined_images": 8,
+    "TT_nullity": 2,
+    "TT_residual_max": 1.9102448511921688e-16
+  },
+  "theorem_2": {
+    "status": "screened multi-cell BKM action; no unscreened G_N",
+    "chi": 47.966978303380195,
+    "illustrative_J_over_chi": 16,
+    "screening_length_cells": 4,
+    "fft_equation_residual": 6.82319569715735e-16,
+    "r_times_G_axis": {
+      "2": 0.0000703591458783022,
+      "4": 0.00003983365356469772,
+      "6": 0.000023691111261987678,
+      "8": 0.000014286350676729915,
+      "10": 0.000008648417167804842
+    },
+    "massless_alternative": "shift-symmetric intercell coupling; not derived"
+  },
+  "theorem_3": {
+    "status": "corrected transfer eigenvalues",
+    "transfer_eigenvalues": {
+      "monopole": 0.6,
+      "dipole": 0.1381966011250105,
+      "quadrupole": 0.3,
+      "other_triplet": 0.36180339887498947
+    },
+    "normalized_ratios": {
+      "monopole": 1,
+      "dipole": 0.23032766854168418,
+      "quadrupole": 0.5,
+      "other_triplet": 0.6030056647916492
+    },
+    "spectral_residual": 3.3190841028655766e-16,
+    "quadrupole_power_decay": 0.25,
+    "diffusive_5_over_dipole_rate": 2.170820393249937
+  },
+  "physical_gravity_closed": false,
+  "physical_newton_G_derived": false
+}
