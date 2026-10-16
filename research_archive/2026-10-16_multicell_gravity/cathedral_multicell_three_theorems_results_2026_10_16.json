@@ -23,7 +23,9 @@
       "8": 0.000014286350676729915,
       "10": 0.000008648417167804842
     },
-    "massless_alternative": "shift-symmetric intercell coupling; not derived"
+    "massless_alternative": "shift-symmetric intercell coupling; not derived",
+    "continuum_denominator": "chi + J a^2 |k|^2",
+    "continuum_green": "exp(-r/ell)/(4 pi J a^2 r), normalization depends on continuum dictionary"
   },
   "theorem_3": {
     "status": "corrected transfer eigenvalues",
@@ -44,5 +46,7 @@
     "diffusive_5_over_dipole_rate": 2.170820393249937
   },
   "physical_gravity_closed": false,
-  "physical_newton_G_derived": false
+  "physical_newton_G_derived": false,
+  "physical_source_map": false,
+  "global_icosahedral_tiling": false
 }
