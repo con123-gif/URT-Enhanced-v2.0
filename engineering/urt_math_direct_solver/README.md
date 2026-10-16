@@ -90,3 +90,20 @@ At a deeper level, unrestricted problems include NP-hard optimization, unstructu
 The most promising immediate physics target is **local operators plus finite-rank global interactions**: simplified wave, diffusion, plasma, coupled-resonator and information-transfer models can use this combined solver without building a dense global matrix.
 
 **Status:** original URT's algorithmic role preserved; new structure-enabled mathematics proven for the explicitly represented operator classes; broader generalization remains a research/engineering programme.
+
+
+## 16 October independent performance audit — compiled SciPy beats this Python implementation
+
+The original URT O(N) algorithm is preserved, and all 10 operator tests passed. However, the **Python implementation is not a faster numerical solver than optimized SciPy** for the existing local-plus-global benchmark. Both compute the same Schur/Woodbury reduction in O(N). The difference is the compiled tridiagonal kernel versus interpreted Python block elimination.
+
+Independent reproducible script: [compare_scipy_banded.py](compare_scipy_banded.py). With OPENBLAS_NUM_THREADS=1 and the same positive tridiagonal matrix, six URT harmonic columns and right-hand side, one run observed:
+
+| Variables | Python engine time (s) | SciPy banded + Woodbury (s) | Slower by |
+|---:|---:|---:|---:|
+| 4,096 | 0.1252 | 0.0008 | 148× |
+| 16,384 | 0.5151 | 0.0025 | 210× |
+| 65,536 | 1.9747 | 0.0067 | 295× |
+
+The two methods agree to ~1e−16 relative solution error. This is a **single-machine comparison**, not a universal speed ratio. An independently reported audit found the Python version 72–116× slower over a different range. The engineering claim is **mathematical O(N) structure and testable solver selection, not accelerated SciPy runtime or a new asymptotic algorithm**.
+
+**Correction to the tool roadmap:** prefer compiled SciPy banded/structured factorizations when available; reserve custom URT recursion for the original phase–boundary history task and for cases where its admissibility or control law adds information beyond a generic forcing vector. Any new performance claim needs an equal-accuracy matched baseline, including preprocessing, memory and numerical stability.
