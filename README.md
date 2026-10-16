@@ -186,6 +186,10 @@ The [complete three-theorem and same-day DEC/FDT archive](research_archive/2026-
 
 [Recovered prior-conversation mathematical frontier and provenance](conversation_archive/CHAT_FIRST_RECOVERY_STATUS_2026-10-16.md) now supplements the dated research archive. This includes previously omitted v27/v115/v129 and later entropy, H64 and continuum status corrections. **This is not a claim that the last 100 raw ChatGPT transcripts have been exported**; it preserves available past work without fabricating originals.
 
+### Physical derivative-order and coefficient provenance gate (16 October)
+
+[Executable physical scalar/spin-2 operator test and anti-fitting source audit](research_archive/2026-10-16_physics_gates/PHYSICS_AND_PROVENANCE_GATES.md): the fiveplet/BKM scalar traceless-Hessian map yields a fourth-order Fourier k^4 operator, not the Newtonian k² Poisson constraint. A physical source/coframe constraint is still required; no measured Newton G was inserted. The historical alpha scalar polynomial is now explicitly labeled internal until a target-free photon-current correlation derivation is established. The October theorem regression uses a temporary output path rather than modifying its tracked JSON fixture.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
