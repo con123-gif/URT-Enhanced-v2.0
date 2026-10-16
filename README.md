@@ -190,6 +190,10 @@ The [complete three-theorem and same-day DEC/FDT archive](research_archive/2026-
 
 [Executable physical scalar/spin-2 operator test and anti-fitting source audit](research_archive/2026-10-16_physics_gates/PHYSICS_AND_PROVENANCE_GATES.md): the fiveplet/BKM scalar traceless-Hessian map yields a fourth-order Fourier k^4 operator, not the Newtonian k² Poisson constraint. A physical source/coframe constraint is still required; no measured Newton G was inserted. The historical alpha scalar polynomial is now explicitly labeled internal until a target-free photon-current correlation derivation is established. The October theorem regression uses a temporary output path rather than modifying its tracked JSON fixture.
 
+### Hidden quartets to visible probabilities (16 October)
+
+[Exact 12-outcome vertex POVM and 11-channel BKM susceptibility](research_archive/2026-10-16_hidden_visible_povm/README.md). The two hidden face quartets induce positive quantum measurement effects on the 12 vertices with p_i(rho*)=1/12. The actual unsigned inter-quartet incidence transfer has rank 6 with golden singular-value ratio phi³; adding parity-even intra-quartet response generates the 5D quadrupole, giving a fixed 11-mode BKM response with triplet ratio phi⁶. This preserves the distinct signed chirality fiveplet map. A 4/16 representation fraction is **not** a prediction of 25% dark-matter abundance or gravitational coupling.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
