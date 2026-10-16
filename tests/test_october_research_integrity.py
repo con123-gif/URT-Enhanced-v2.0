@@ -37,14 +37,17 @@ def test_oct16_scripts_compile(filename):
     ast.parse(p.read_text(encoding="utf-8"),filename=str(p))
 
 @pytest.mark.skipif(importlib.util.find_spec("numpy") is None,reason="NumPy unavailable")
-def test_theorem_generated_json_has_committed_schema():
+def test_theorem_generated_json_has_committed_schema(tmp_path):
     import numpy as np
     p=OCT16/"cathedral_multicell_three_theorems_results_2026_10_16.json"
     archived=json.loads(p.read_text(encoding="utf-8"))
     env={**os.environ,"OPENBLAS_NUM_THREADS":"1","OMP_NUM_THREADS":"1"}
-    done=subprocess.run([sys.executable,str(OCT16/"cathedral_multicell_three_theorems_2026_10_16.py")],
+    output=tmp_path/"generated_theorem_results.json"
+    done=subprocess.run([sys.executable,str(OCT16/"cathedral_multicell_three_theorems_2026_10_16.py"),
+                         "--output",str(output)],
                         cwd=OCT16,env=env,check=True,text=True,capture_output=True,timeout=90)
-    produced=json.loads(p.read_text(encoding="utf-8"))
+    produced=json.loads(output.read_text(encoding="utf-8"))
+    assert json.loads(p.read_text(encoding="utf-8"))==archived
     def compare_keys_and_values(x,y):
         assert type(x)==type(y)
         if isinstance(x,dict):
