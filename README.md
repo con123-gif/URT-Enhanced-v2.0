@@ -198,6 +198,10 @@ The [complete three-theorem and same-day DEC/FDT archive](research_archive/2026-
 
 [Integrated mathematical theorems, exact Dirac spectral polynomial and tested solenoidal/Wilson link identities](research_archive/2026-10-15_icosahedral_125_DEC_H64/UNIFIED_CATHEDRAL_ADVANCED_SYNTHESIS.md), with [reproducible center-4 proof script](research_archive/2026-10-16_center4_synthesis/README.md). The 64×64 integer polynomial and exact 30-edge Hodge decomposition were verified; the proposed damping window remains a conditional oscillator model and the U(8) vacuum stabilizer is not automatically a massless Yang–Mills gauge theory. All earlier H64 history, hidden-POVM, entropy and URT branches remain intact.
 
+### Koide charged-lepton phase and actual H64 holonomy gate — 16 October
+
+[Exact mass-ratio/phase and rank-one charge-plane audit](research_archive/2026-10-16_koide_phase/README.md), plus a new cubic determinant invariant for the three-return positive mass-spectrum operator. Assuming exact Q=2/3, measured mu/e implies delta=0.222222047073088; setting delta=2/9 simultaneously misses CODATA by 442 sigma. A Q shift −1.42146×10⁻⁷ can reconcile the isolated rational phase but is not derived. The historical h=g+iω charge-plane is rank one, so every triangle phase is exactly zero. Only a genuinely new typed-H64 return holonomy can establish a target-free phase. This is an additive recovery, not a restart or replacement of v115 mass or v125/v129 CKM/PMNS work.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
