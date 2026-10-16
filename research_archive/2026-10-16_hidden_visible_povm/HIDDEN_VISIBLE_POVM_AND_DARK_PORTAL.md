@@ -120,3 +120,41 @@ The first new microscopic-to-observable component is now explicit and entirely i
 The next *physical* calculation must combine this vertex POVM with the previously verified orientation-odd signed-face chirality fiveplet map, the selected URT history transfer, and the massless scale-chain. Derive a conserved stress-energy source current and a gauge-protected field operator. Do not identify the \(4\) in \(4\otimes4\) with dark matter or use \(\dim4/\dim16\) as a measured density fraction.
 
 **Source continuity:** This result extends (not replaces) the October 15 face/edge/125-DEC/H64 work, the prior signed-face chirality theorem, BKM and the original URT recursive dynamics. Do not retire earlier flavour or cosmological routes because of this local static measurement calculation.
+
+
+## 7. Exact rational-matrix proof (independent of numerical diagonalization)
+
+[Standalone SymPy exact certificate](hidden_visible_exact_certificate.py) reconstructs all 12 icosahedral vertices, 30 edges and 20 triangular faces from golden coordinates and checks the following identities by **exact symbolic matrix equality**, not floating-point tolerance.
+
+Let \(L_F\) be the 20-face dodecahedral graph Laplacian, and \(I=I_{20}\). Its hidden-quartet projectors are the rational polynomials
+\[
+P_{4_3}=\frac1{30}L_F(L_F-2I)(L_F-5I)(L_F^2-6L_F+4I),
+\]
+\[
+P_{4_5}=-\frac1{30}L_F(L_F-2I)(L_F-3I)(L_F^2-6L_F+4I).
+\]
+Both are exact rank-4 orthogonal projectors, are annihilated by \(C^\top\), and have precisely \(1/5\) on every face diagonal.
+
+With \(\circ\) denoting entrywise (Hadamard) product, the *bilinear* hidden-to-vertex Gram matrix obeys the new polynomial identity
+\[
+\boxed{
+C^\top(P_{4_3}\circ P_{4_5})C
+=\frac{L_{\rm ico}(L_{\rm ico}-6I_{12})(L_{\rm ico}-7I_{12})}{60}.
+}
+\]
+This yields the two exact nonzero eigenvalues \((5\pm2\sqrt5)/15\), each of multiplicity 3, directly from the pre-existing icosahedral Laplacian roots.
+
+The even sector is certified independently:
+\[
+\boxed{
+C^\top(P_{4_3}\circ P_{4_3})C=3P_0+\frac3{25}P_5,
+}
+\]
+\[
+\boxed{
+C^\top(P_{4_5}\circ P_{4_5})C=3P_0+\frac13P_5.
+}
+\]
+Here \(P_0=\mathbf1\mathbf1^\top/12\) and \(P_5=-L_{\rm ico}(L_{\rm ico}^2-10L_{\rm ico}+20I)/24\).
+
+All five claims passed exact symbolic equality in the local run, taking ~0.05 seconds for the matrix checks after constructing the finite combinatorics. These identities provide the precise mathematical foundation for the 12-outcome POVM and the three positive BKM response bands, without fitting any spectral constant.
