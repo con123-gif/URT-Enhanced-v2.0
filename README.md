@@ -177,6 +177,10 @@ The [URT Mathematics Direct Solver](engineering/urt_math_direct_solver/README.md
 
 The [complete three-theorem and same-day DEC/FDT archive](research_archive/2026-10-16_multicell_gravity/README.md) contains executable tests of the proposed graviton-polarization split, long-range BKM lattice force and four-sector icosahedral transfer, plus the preceding four-link and five-stage tidal reports. The **exact** corrected transfer ratios are retained; dipole and quadrupole edge-gradient sectors are orthogonal, and the supplied positive on-site BKM lattice action gives a screened response. A symmetry-protected massless field, physical energy-to-tensor coupling, spacetime dynamics and G_N normalization remain open research targets, not global impossibilities.
 
+## Recovered conversation frontier (16 October 2026)
+
+[Conversation-first recovery of the v115 mass-response outputs, v125/v129 CKM/PMNS, cosmological ratios and later corrections](research_archive/2026-10-16_conversation_first_recovery/RECOVERED_PREVIOUS_FRONTIER_2026-10-16.md). **Earlier responses were substantially more developed than later compact code snapshots implied.** The historical numerical outputs are preserved even where their target-free physical derivation requires reconciliation. Do not replace these results with the flat spectra of a different geometric H64 candidate. The still-unlocated Rule D, right-handed Gate-2 and Koide source derivations are explicitly tracked rather than presumed nonexistent.
+
 ## Active research fronts
 
 The finite machine is substantially constructed. Current work is concentrated on the interfaces that turn the finite model into a complete physical theory:
