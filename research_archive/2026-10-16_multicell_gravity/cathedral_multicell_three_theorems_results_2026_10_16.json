@@ -3,7 +3,7 @@
   "source": "cathedral_multicell_three_theorems_2026_10_16.py",
   "verified_with": "NumPy icosahedral DEC plus 48^3 periodic lattice FFT",
   "theorem_1": {
-    "status": "dipole edge intersection is zero; TT rank-two requires independent physical wavevector",
+    "status": "dipole quotient invalid; k-transversality gives 2",
     "gradient_dipole_quadrupole_overlap": 9.09654900257786e-16,
     "rank_quadrupole_gradient": 5,
     "rank_combined_images": 8,
@@ -11,7 +11,7 @@
     "TT_residual_max": 1.9102448511921688e-16
   },
   "theorem_2": {
-    "status": "screened multi-cell BKM action; no unscreened G_N",
+    "status": "screened Yukawa, no G_N prediction",
     "chi": 47.966978303380195,
     "illustrative_J_over_chi": 16,
     "screening_length_cells": 4,
@@ -23,12 +23,12 @@
       "8": 0.000014286350676729915,
       "10": 0.000008648417167804842
     },
-    "massless_alternative": "shift-symmetric intercell coupling; not derived",
+    "massless_alternative": "shift-symmetric intercell-only J L, independently unproved",
     "continuum_denominator": "chi + J a^2 |k|^2",
     "continuum_green": "exp(-r/ell)/(4 pi J a^2 r), normalization depends on continuum dictionary"
   },
   "theorem_3": {
-    "status": "corrected transfer eigenvalues",
+    "status": "corrected exact finite spectrum",
     "transfer_eigenvalues": {
       "monopole": 0.6,
       "dipole": 0.1381966011250105,
