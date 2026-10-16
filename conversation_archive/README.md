@@ -44,3 +44,7 @@ Before continuing Cathedral / URT work, read:
 These are bounded recovered records, **not** full transcripts of the last 100 conversations. Read the dated originals and later corrections before changing project status.
 
 - [Recovered October 11 integrated proof audit, part 1](RECOVERED_2026-10-11_INTEGRATED_AUDIT_PART_1.md) and [part 2](RECOVERED_2026-10-11_INTEGRATED_AUDIT_PART_2.md): retained four-layer 52-state construction, gauge Lie-algebra work, and conditional electromagnetic/Einstein/typed-history identifiability arguments. This is a reconstructed historical source, not raw transcripts.
+
+## October 16 chat-first recovery checkpoint
+
+[Additional recovered past-conversation mathematics and source-status register](CHAT_FIRST_RECOVERY_STATUS_2026-10-16.md). This preserves v27, v114/v115, v116–v129, CKM/PMNS and gravity/cosmology provenance recovered from earlier conversations. **It is a technical reconstruction, not a copy of 100 verbatim chats**. The exact Rule D, right-handed Gate-2 and Koide original chains remain flagged as source-pending without discarding their reported existence.
