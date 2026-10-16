@@ -126,6 +126,6 @@ result={
  "reservoir_conditional":{"dFdt":float(dF),"needed_bg_transfer":float(-dF)},
  "physical_gravity_derived":False
 }
-(HERE/"cathedral_four_links_results.json").write_text(json.dumps(result,indent=2)+"\n")
+(HERE/"cathedral_four_links_results_reproduced.json").write_text(json.dumps(result,indent=2)+"\n")
 print(json.dumps(result,indent=2))
 print("PASS: 30-edge Hodge, parity, native curl and conditional FDT audit.")
