@@ -28,7 +28,7 @@ assert norm(Wn@Wn+15*(Pe+Po))<1e-12
 def basis(P,n):
     vals,U=np.linalg.eigh(P)
     assert int(sum(vals>.5))==n
-    return U[:,vals>.5
+    return U[:,vals>.5]
 
 Ue,Uo=basis(Pe,4),basis(Po,4)
 def phi5(x):
