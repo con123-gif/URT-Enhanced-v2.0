@@ -36,3 +36,9 @@
 | 2026-10-16 positive on-site BKM multi-cell energy produces unscreened 1/r² Newton gravity | REJECTED FOR STATED MASSIVE ACTION / CONSTRUCTIVE MASSLESS ALTERNATIVE OPEN | Operator chi I+J L gives Yukawa screening; shift-protected massless sector, continuum tiling, source normalization and G_N open |
 | 2026-10-16 icosahedral 4-irrep transfer eigenvalues and relative damping | EXACT AFTER ARITHMETIC CORRECTION | Nonuniform rank-one all-ones term vanishes; M eig=(.6,(5−sqrt5)/20,.3,(5+sqrt5)/20); ratios 1,.230327669,.5,.603005665 |
 | 2026-10-16 edge DEC parity, curl, FDT and five-stage Lyapunov archive | FINITE OPERATOR RESULTS RETAINED, STOCHASTIC PHYSICS CONDITIONAL | Previous two October 16 local reports and executable code preserved in research_archive/2026-10-16_multicell_gravity/ |
+
+| 2026-10-16 scalar Hessian to fiveplet BKM yields Newton Poisson equation | FALSE FOR THE TESTED MAP | Exact STF symbol is (2/3) k^4, giving biharmonic response; physical k² scalar constraint requires a separate 4D source/coframe operator, not a global gravity no-go |
+| 2026-10-16 scalar gradient field would yield inverse-square source force | STANDARD CONDITIONAL IDENTITY | Effective G is g²/(4πκ) after independent physical source coupling g and kinetic κ are established; chi35 does not uniquely fix either |
+| 2026-10-16 internal alpha-residue coefficient decomposition | EXACT ARITHMETIC, PHYSICAL QED CLAIM STILL OPEN | 137=N²−E−(D−1); 17572/1215=N+9/5−82/243; 9/65=(N−D−1)/(5N). Historical selection and photon current-current normalization still unproved |
+| Legacy ~40 confirmed labels in old prediction registry | HISTORICAL NUMERICAL COMPARISONS ONLY | Header explicitly warns these do not establish independent target-free predictions |
+| Theorem regression writing tracked JSON file | CODE FIX COMMITTED, CI VERIFICATION PENDING | Standalone theorem accepts --output path; pytest uses temporary directory and fixture stability check |
