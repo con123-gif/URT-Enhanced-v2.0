@@ -1,0 +1,344 @@
+{
+  "source_zip": "Grok_URT_Cathedral_Complete_Handoff_2026-10-17.zip",
+  "source_root": "Grok_URT_Cathedral_Handoff_2026-10-17/",
+  "restoration_mode": "copy-only, never overwrite by default",
+  "not_recovered": [
+    "kl_urt_koide_action.py original source",
+    "a uniquely selected physical photon-current/H64 mass action",
+    "the complete unabridged 100-chat history"
+  ],
+  "files": [
+    {
+      "destination": "research_archive/2026-10-17_source_first_recovery/source_order_regression.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/source_order_regression.py",
+      "sha256": "96718c196ebead4c9c06cd8b8305864f56d9595e7f50fa141ecf81f16a051b04",
+      "size_bytes": 2043
+    },
+    {
+      "destination": "research_archive/2026-10-17_source_first_recovery/golden_species_operators.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/golden_species_operators.npz",
+      "sha256": "9bfd183c01b43e3a589917f334ec5758cefb912cf30f55147b58ccb496b0399b",
+      "size_bytes": 1073079
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_14D_H64_reduction/native_h64_exact_14_to4.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/native_h64_exact_14_to4.py",
+      "sha256": "058eb35c74bbc0f0fa962422e8cafe3e9ea8826ba6f5c6c52bf0ce7de19101ce",
+      "size_bytes": 3821
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_14D_H64_reduction/execute_exact_full64_to3.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/execute_exact_full64_to3.py",
+      "sha256": "b753f6c19c6737e308fea2b6ee94a3b1d8ad433d6adbe2bdc92f8ea6e9a7d1d7",
+      "size_bytes": 3161
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_14D_H64_reduction/golden_species_operators.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/golden_species_operators.npz",
+      "sha256": "9bfd183c01b43e3a589917f334ec5758cefb912cf30f55147b58ccb496b0399b",
+      "size_bytes": 1073079
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_14D_H64_reduction/reference_results.json",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/native_h64_14_to4_results.json",
+      "sha256": "51fc09b103e89dfcce37f1b2f88644ad93f5f02da4637de258c421719b263afd",
+      "size_bytes": 8834
+    },
+    {
+      "destination": "research_archive/2026-10-17_full_six_triplet_photon/six_triplet_photon_cumulant.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/six_triplet_photon_cumulant.py",
+      "sha256": "5779cc79b6901f7ea94fd0fd3fc1529a268c4651a259a6dc6c2ddd9090152f4a",
+      "size_bytes": 6469
+    },
+    {
+      "destination": "research_archive/2026-10-17_full_six_triplet_photon/native_chiral_selected_history.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/native_chiral_selected_history.py",
+      "sha256": "b54fd5d85bc29b4fa8d0e5cb69ded2079656ba3759b3c0288ed9e221840b2415",
+      "size_bytes": 5331
+    },
+    {
+      "destination": "research_archive/2026-10-17_full_six_triplet_photon/native_bulk_peierls_check.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/native_bulk_peierls_check.py",
+      "sha256": "8746eaaec91f89fafb679b82eb5166b66d9796dc85317b3881ad846fad06b74b",
+      "size_bytes": 7019
+    },
+    {
+      "destination": "research_archive/2026-10-17_full_six_triplet_photon/cathedral_strict_64_closure.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/cathedral_strict_64_closure.py",
+      "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
+      "size_bytes": 10395
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_c3_bulk_mass/exact_bulk_chiral_koide_certificate_fast.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/exact_bulk_chiral_koide_certificate_fast.py",
+      "sha256": "56f5fe076869bf6d3523fb9bd7cf8678afa6de1a3c93afe5445efa95ff13ec23",
+      "size_bytes": 2162
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_c3_bulk_mass/full_cone_a5_and_mass_test.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/full_cone_a5_and_mass_test.py",
+      "sha256": "f8a3e9769b9f7c73c700586c0e25833245b6c607352d873a20c4a90a7abf1406",
+      "size_bytes": 3953
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_c3_bulk_mass/cathedral_strict_64_closure.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/cathedral_strict_64_closure.py",
+      "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
+      "size_bytes": 10395
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_c3_bulk_mass/hidden_G4_seesaw_H64_bridge_audit.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/hidden_G4_seesaw_H64_bridge_audit.py",
+      "sha256": "803f365229093011bb7d06f57b5b75e76c025684d612a735bb9514e6dce0edba",
+      "size_bytes": 8794
+    },
+    {
+      "destination": "research_archive/2026-10-17_exact_c3_bulk_mass/exact_conditioned_G4_zero_triplet_certificate.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/exact_conditioned_G4_zero_triplet_certificate.py",
+      "sha256": "efe035bb21e2c82f37c90c33dc97433a81902cd2331c153e6d35a60c754c61b4",
+      "size_bytes": 3138
+    },
+    {
+      "destination": "research_archive/2026-10-17_photon_path_resolved_chiral/symbolic_gauged_chiral.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/symbolic_gauged_chiral.py",
+      "sha256": "cbcfecff8c17f0fc07f26607bf5d682767a872226b06ca734f8ae61d11527c42",
+      "size_bytes": 2580
+    },
+    {
+      "destination": "research_archive/2026-10-17_photon_path_resolved_chiral/gauged_chiral_face_loops.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/gauged_chiral_face_loops.py",
+      "sha256": "d8125a18664db2d9a83b187316dc484a8b37280874dab6924a39fa480900d638",
+      "size_bytes": 5262
+    },
+    {
+      "destination": "research_archive/2026-10-17_photon_path_resolved_chiral/photon_wilson_on_urt_shell.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/photon_wilson_on_urt_shell.py",
+      "sha256": "880e133e7cea093f0cc8c7e7dbd5e4cae59f43ddf6ba6d7bba2bd286bea3ce52",
+      "size_bytes": 3657
+    },
+    {
+      "destination": "research_archive/2026-10-17_photon_path_resolved_chiral/cathedral_strict_64_closure.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/cathedral_strict_64_closure.py",
+      "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
+      "size_bytes": 10395
+    },
+    {
+      "destination": "research_archive/2026-10-17_source_h64_joint_flux/joint_urt_h64_joint_holonomy_and_mass.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/joint_urt_h64_joint_holonomy_and_mass.py",
+      "sha256": "c9b4c0a2190234304a6c0baefc4a2103a765baa19d6462db3466467cfafdd182",
+      "size_bytes": 6090
+    },
+    {
+      "destination": "research_archive/2026-10-17_source_h64_joint_flux/joint_original_h64_species_link_source.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/joint_original_h64_species_link_source.npz",
+      "sha256": "1bf7f26d468bc6a672eba573522bd6063ac592a0642d8a9550e3b9df5c672642",
+      "size_bytes": 8545
+    },
+    {
+      "destination": "research_archive/2026-10-17_source_h64_joint_flux/reference_results.json",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/joint_numerical_result.json",
+      "sha256": "61c8a55513fc4a5b7bf7f6fb68a96055134feee5b265c969809dda68924d47dd",
+      "size_bytes": 8175
+    },
+    {
+      "destination": "research_archive/2026-10-17_h64_neutral_photon/urt_h64_source_level_mass_gate.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/urt_h64_source_level_mass_gate.py",
+      "sha256": "884c745d792200d18351ab0865818b45d2bc1df458e52023d98e6efb89b5d9c1",
+      "size_bytes": 4552
+    },
+    {
+      "destination": "research_archive/2026-10-17_h64_neutral_photon/urt_h64_source_arrays.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/urt_h64_source_arrays.npz",
+      "sha256": "047c3d60d6cc16fd0b68e8469db27aafd3aedfaad2300f6dd128747e5bfbcb16",
+      "size_bytes": 3994
+    },
+    {
+      "destination": "research_archive/2026-10-17_h64_neutral_photon/reference_results.json",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/urt_h64_source_level_mass_gate_results.json",
+      "sha256": "f41f06a137d94b91a2151406f5daccdd200e6323c79cf050b56958520a92d18b",
+      "size_bytes": 2820
+    },
+    {
+      "destination": "research_archive/2026-10-17_h64_quadratic_koide_phase/urt_h64_quadratic_phase_derivation.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/urt_h64_quadratic_phase_derivation.py",
+      "sha256": "5290346ebe7c4c667f1ddca4355e4692800ca053b37b5e05fda9c1f9146438b4",
+      "size_bytes": 6570
+    },
+    {
+      "destination": "research_archive/2026-10-17_h64_quadratic_koide_phase/combined_signed_source_operators.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/combined_signed_source_operators.npz",
+      "sha256": "00715b3891570814eb346387017ea7abcaf166f215d5e83655b17673c23e1b58",
+      "size_bytes": 4627514
+    },
+    {
+      "destination": "research_archive/2026-10-17_h64_quadratic_koide_phase/reference_results.json",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/quadratic_RESULTS.json",
+      "sha256": "67012009cd0feb4db5592a3ded9d9c868b5fd842915430a1484c37801d148b9c",
+      "size_bytes": 4787
+    },
+    {
+      "destination": "research_archive/2026-10-17_native_3d_photon_chiral/native_bulk_peierls_check.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/native_bulk_peierls_check.py",
+      "sha256": "8746eaaec91f89fafb679b82eb5166b66d9796dc85317b3881ad846fad06b74b",
+      "size_bytes": 7019
+    },
+    {
+      "destination": "research_archive/2026-10-17_native_3d_photon_chiral/native_chiral_selected_history.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/native_chiral_selected_history.py",
+      "sha256": "b54fd5d85bc29b4fa8d0e5cb69ded2079656ba3759b3c0288ed9e221840b2415",
+      "size_bytes": 5331
+    },
+    {
+      "destination": "research_archive/2026-10-17_native_3d_photon_chiral/cathedral_strict_64_closure.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/cathedral_strict_64_closure.py",
+      "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
+      "size_bytes": 10395
+    },
+    {
+      "destination": "research_archive/2026-10-17_native_photon_wilson/photon_wilson_on_urt_shell.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/PHOTON/photon_wilson_on_urt_shell.py",
+      "sha256": "880e133e7cea093f0cc8c7e7dbd5e4cae59f43ddf6ba6d7bba2bd286bea3ce52",
+      "size_bytes": 3657
+    },
+    {
+      "destination": "research_archive/2026-10-17_native_photon_wilson/cathedral_strict_64_closure.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/GEOMETRY/cathedral_strict_64_closure.py",
+      "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
+      "size_bytes": 10395
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/canonical_nature_work/binding_audit.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/canonical_nature_work/binding_audit.py",
+      "sha256": "04e79f18dcfbf42a0569938a62ab86be8e4dc12c64513d75010b7b5cee946716",
+      "size_bytes": 19801
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py",
+      "sha256": "e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75",
+      "size_bytes": 350420
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/combined_source_work/gauge/charged_gauge_join.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/combined_source_work/gauge/charged_gauge_join.py",
+      "sha256": "749fe1500b46a511fa4ab8d91a0132158799db99a14ac4b2fa150add435464b3",
+      "size_bytes": 20423
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/combined_source_work/gauge/charged_gauge_join_operators.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/combined_source_work/gauge/charged_gauge_join_operators.npz",
+      "sha256": "787f64c5de24188c9f4833cfabefda5e340578fd7c0d49c8f02613e722371a33",
+      "size_bytes": 83931
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/combined_source_work/photon/correlated_long_transfer.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/combined_source_work/photon/correlated_long_transfer.py",
+      "sha256": "e006dda807a2afdafbfd50612e861162c6ff1b3fc8666efb9fffeb4047d9a31e",
+      "size_bytes": 16944
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/combined_source_work/species/combined_signed_source.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/combined_source_work/species/combined_signed_source.py",
+      "sha256": "9801136f61d9280430b78f3821d780a7d310807687143b001b7f2ad956c3bbf5",
+      "size_bytes": 21152
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/combined_source_work/species/combined_signed_source_operators.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/combined_source_work/species/combined_signed_source_operators.npz",
+      "sha256": "00715b3891570814eb346387017ea7abcaf166f215d5e83655b17673c23e1b58",
+      "size_bytes": 4627514
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/matter/microscopic_source_currents.py",
+      "sha256": "a2564f6d93b428b6c2aad7b7556ee48b2c498bba7c09c4c1a47d19a93e0eead5",
+      "size_bytes": 18917
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/photon/translated_photon_response.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/photon/translated_photon_response.py",
+      "sha256": "5fd6fe37768908c676ecf74dccfc76f747657951723b10d18b4b503ccd293274",
+      "size_bytes": 21665
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/photon/translated_photon_response_operators.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/photon/translated_photon_response_operators.npz",
+      "sha256": "a95d1269d8010d5c61738a5de1f48395305f1da35b709a2e6403b6d9568e2083",
+      "size_bytes": 520756
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/derive_a4_clifford_dirac.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/derive_a4_clifford_dirac.py",
+      "sha256": "82eb6346d00b3e8a0d630e1ccdea889d402a2b140bb883ed82f279bdd55c9dfb",
+      "size_bytes": 5206
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/urt_dirac_selection_audit.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/urt_dirac_selection_audit.py",
+      "sha256": "2ca3a13cb94860822777ce02b83c73e3e1e20daa95d38149bb44e4b7da4494fe",
+      "size_bytes": 9009
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/urt_platonic_u2_holonomy.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/urt_platonic_u2_holonomy.py",
+      "sha256": "765b07c592d868dd8642c9c8ca1e7eb7cd12b8576dcebc73c438e31c22c84249",
+      "size_bytes": 5089
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/review/source_action_lemma.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/review/source_action_lemma.py",
+      "sha256": "839e45efeeaa2731c82d8db4a45038175e147586a0e48835cf4b3d71d46b5f88",
+      "size_bytes": 12202
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/common_action_work/review/source_response_dictionary.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/common_action_work/review/source_response_dictionary.py",
+      "sha256": "81928fcbba7e4fa62b166aaa826a598e9041dbc34397c3fd799c728fbc88bf1e",
+      "size_bytes": 4881
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/continued_physics_work/photon/free_fock_photon.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/continued_physics_work/photon/free_fock_photon.py",
+      "sha256": "f7b02a1d1cd34774940c635a2bab5752a49df5bf1ef66ad96a7216346a73dfff",
+      "size_bytes": 12958
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/continued_physics_work/photon/source_dictionary.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/continued_physics_work/photon/source_dictionary.py",
+      "sha256": "5f30cd4fca553c126890ab7e0c3c22ef589ccdded774b673578094d669c21ee0",
+      "size_bytes": 11464
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/derive_three_work/species/golden_species_derivation.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/derive_three_work/species/golden_species_derivation.py",
+      "sha256": "1b8de404389fc815f7b00ce4acb0fe5e38810c67df5ed82386d2269f11340b15",
+      "size_bytes": 20967
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/derive_three_work/species/golden_species_operators.npz",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/derive_three_work/species/golden_species_operators.npz",
+      "sha256": "9bfd183c01b43e3a589917f334ec5758cefb912cf30f55147b58ccb496b0399b",
+      "size_bytes": 1073079
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/final_join_work/matter/full_period_physical.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/final_join_work/matter/full_period_physical.py",
+      "sha256": "a6ca5279a5267bef1c13668e2407e7b5b0d1cbb1c50ea5a937394953713788b4",
+      "size_bytes": 13837
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/joint_vacuum_work/species/shared_species_vacuum.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/joint_vacuum_work/species/shared_species_vacuum.py",
+      "sha256": "80362428374375cc2679f53bf27d4574f32cd09c1c3d6c3ea97c1d171c92e34d",
+      "size_bytes": 15102
+    },
+    {
+      "destination": "research_archive/2026-10-17_original_oct08_source/joint_vacuum_work/species/verify_full64_deformations.py",
+      "original_member": "Grok_URT_Cathedral_Handoff_2026-10-17/SOURCE/original_oct08/joint_vacuum_work/species/verify_full64_deformations.py",
+      "sha256": "1aa48c95f5b33c1257abab871ab337737bb797d47e7d946af0762f0701b555e5",
+      "size_bytes": 1945
+    }
+  ],
+  "total_files": 55,
+  "total_bytes": 13840673
+}
