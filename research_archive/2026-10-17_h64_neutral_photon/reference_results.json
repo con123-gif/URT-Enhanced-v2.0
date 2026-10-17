@@ -1,0 +1,113 @@
+{
+  "original": {
+    "t": 0.0,
+    "singulars": [
+      1.93163753989504,
+      1.3516622551673894,
+      0.6709574848536346
+    ],
+    "Koide_Q_if_singulars_sqrt_masses": 0.3842632706743234,
+    "gauge_Ward_error": 0.0
+  },
+  "canonical_URT_alpha_illustration": {
+    "t": 0.38196601125010515,
+    "singulars": [
+      4.684608501512093,
+      2.2949176085569802,
+      0.7863319565948067
+    ],
+    "Koide_Q_if_singulars_sqrt_masses": 0.4614689109740598,
+    "gauge_Ward_error": 0.0
+  },
+  "unit_positive_polynomial": {
+    "t": 1.0,
+    "singulars": [
+      9.139009087449965,
+      3.8211368304116338,
+      0.9730117733060875
+    ],
+    "Koide_Q_if_singulars_sqrt_masses": 0.5103170778244364,
+    "gauge_Ward_error": 0.0
+  },
+  "rail_delta_illustration": {
+    "t": 0.0024891898404204027,
+    "singulars": [
+      1.9495780559273488,
+      1.3578092461912634,
+      0.671709355319706
+    ],
+    "Koide_Q_if_singulars_sqrt_masses": 0.3849941940178278,
+    "gauge_Ward_error": 0.0
+  },
+  "power_1_illustration": {
+    "Koide_Q_if_sqrt": 0.3842632706743234
+  },
+  "power_3_illustration": {
+    "Koide_Q_if_sqrt": 0.5838185280063198
+  },
+  "power_5_illustration": {
+    "Koide_Q_if_sqrt": 0.7474786004663704
+  },
+  "power_7_illustration": {
+    "Koide_Q_if_sqrt": 0.8587328561831542
+  },
+  "actual_source_generalized_koide_coordinates": {
+    "r": 0.5527925687325587,
+    "delta_rad": 0.569696907194363,
+    "Q": 0.3842632706743234
+  },
+  "conditional_one_loop_QED": {
+    "coupling_assumption": "alpha=1/137.035999178195",
+    "pole_MS_rel": [
+      0.002322819464175073,
+      0.004810788890299604,
+      0.009691390113166241
+    ],
+    "Q_after_if_singulars_are_sqrt_masses": 0.3839608831061183
+  },
+  "source_checks": {
+    "Yukawa_singulars": [
+      1.93163753989504,
+      1.3516622551673894,
+      0.6709574848536346
+    ],
+    "EM_neutral_Higgs_mass_invariant": 2.6046471873613723e-16,
+    "Yukawa_Q_if_sqrt": 0.3842632706743234,
+    "H48_charge_commutation_before_neutral_gauge": 2.9257340062292085,
+    "H48_charge_commutation_after_neutral_gauge": 1.9610855298670249e-16,
+    "original_Higgs_doublet": [
+      [
+        0.4472135954999579,
+        0.0
+      ],
+      [
+        0.0,
+        0.8944271909999159
+      ]
+    ],
+    "neutralized_Higgs_doublet": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.9999999999999999,
+        0.0
+      ]
+    ],
+    "neutralized_electron_block_Yukawa_residual": 2.6046471873613723e-16,
+    "complete_D48_unitary_spectrum_residual": 5.818511828468904e-15,
+    "Q_L_minus_identity_error": 0.0,
+    "Q_R_minus_identity_error": 0.0,
+    "K20_shape": [
+      10,
+      10
+    ],
+    "K20_hermiticity_error": 1.8930530260995558e-17,
+    "C20_photon_covariance_shape": [
+      10,
+      10
+    ],
+    "archive_arrays_sha256_to_be_checked_separately": true
+  }
+}
