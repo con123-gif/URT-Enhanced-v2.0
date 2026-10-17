@@ -1,0 +1,21 @@
+name: October Cathedral source integrity
+on:
+  push:
+    paths:
+      - 'research_archive/2026-10-17_**/**'
+      - 'tests/test_oct17_recovery.py'
+      - '.github/workflows/cathedral-oct17-recovery.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy scipy sympy networkx pytest
+      - name: Reconstitute original matrix file bytes
+        run: python research_archive/2026-10-17_recovery_assets/restore_matrices.py
+      - name: Verify original archive integrity and key calculations
+        run: python -m pytest -q tests/test_oct17_recovery.py
