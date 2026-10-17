@@ -1,6 +1,6 @@
 # LIVE WORKING FRONTIER — Newton Scale / Cathedral / URT
 
-**As of:** 2026-10-14 (conversation-first).
+**Newton Scale independent frontier:** 2026-10-14; **Cathedral/H64 source repair:** 2026-10-17.
 **Use:** Quick re-entry to the mathematical frontier at the start of a new chat; not a substitute for the underlying calculations or chat history. Later explicit corrections supersede older notes.
 
 ## The research question — not ownership or publicity
@@ -62,3 +62,12 @@ An independent, successfully verified all-five-solid construction now proves:
 - Reproducible code \`newton-scale/all_platonic_incidence_and_algebra.py\`; GitHub Actions \`newton-all-platonic-algebra.yml\` PASSED. Entropy details: \`newton-scale/PLATONIC_CANONICAL_ENTROPY_STATE_2026-10-14.md\`.
 
 **Active physical frontier:** produce an observable map for this *specific* geometric instrument/its even-odd parity and hidden-fiveplet contrast from existing experimental systems, and test both the \(5/8\) relative response and \(\ln(8/5)\) modular contrast. Do not return to generic unanchored oscillation scans or reopen completed finite algebra.
+
+
+## 2026-10-17 — repaired executable Cathedral/H64 frontier (supersedes older source-availability statements)
+
+The earlier October 16–17 calculations were committed mainly as isolated Markdown notes; their original code and matrix data are now restored under `research_archive/2026-10-17_*`. The [repository entry point](../README.md#17-october-2026--executable-h64urt-source-restoration) and [recovery manifest](../research_archive/2026-10-17_recovery_assets/RECOVERY_MANIFEST.json) identify every original recovered byte. Reconstruct the large signed-source NPZ using `python research_archive/2026-10-17_recovery_assets/restore_matrices.py`, then run `python -m pytest -q tests/test_oct17_recovery.py`. The original source and the entire recovered calculation are now executable without conversation attachments.
+
+**Latest source-correct precedence for mass work:** species sources load into full signed-history H64 **before** retained H13 projection (all four primitive charge vectors originate in H51); the 5+4+4 amplitude decoder is not the retained H13. The restored original rank-one cross-history completion has a 14-state invariant carrier, a four-state active e-type block, and a source-derived 64-to-3 Dyson/Feshbach kernel. Its *conditional* charged-source spectrum is not the measured Koide spectrum. Distinguish this historical witness from the coarse cellular 1+12+30+20+1=64 model, whose hidden chiral triplet is decoupled from the existing species Yukawa perturbation. Exact 3D photon/face-chirality results and six-triplet calculations remain finite-model mathematics pending an actual species-loaded photon-current vertex and charged-particle pole prescription.
+
+**Recovered but not physically proved:** the numerical Berry-screened Koide expression, H64 conditional mass/wall values, signed loop phases, φ^6 hierarchy, and source-dependent photon holonomy are retained with their defined operators and limitations. **Not recovered:** original `kl_urt_koide_action.py` bytes, the uniquely selected full photon–matter H64 action, or all raw historical chats. Re-derivations must not replace existing closed calculations with smaller unrelated toy models or turn unverified numerical agreements into measured physical laws.
