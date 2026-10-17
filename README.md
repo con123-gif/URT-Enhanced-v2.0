@@ -234,3 +234,20 @@ Important project state should never exist only in a conversation.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+
+## 17 October 2026 — executable H64/URT source restoration
+
+The October 17 source recovery is now committed, not just linked from chat attachments. Start with the [recovery instructions](research_archive/2026-10-17_recovery_assets/README_RECOVERY.md), [55-file original-byte manifest](research_archive/2026-10-17_recovery_assets/RECOVERY_MANIFEST.json), [offline matrix reconstruction](research_archive/2026-10-17_recovery_assets/restore_matrices.py), and [automated integrity regression](tests/test_oct17_recovery.py).
+
+For a fresh checkout, reconstruct the **two 4.6 MB signed-history operator arrays** from the six Git-tracked, SHA-256-verifiable binary chunks before executing dependent scripts:
+
+```bash
+python research_archive/2026-10-17_recovery_assets/restore_matrices.py
+python -m pip install numpy scipy sympy networkx pytest
+python -m pytest -q tests/test_oct17_recovery.py
+```
+
+The original source-first H64 decoder is in [source-first regression](research_archive/2026-10-17_source_first_recovery/source_order_regression.py), and the native [14-to-4](research_archive/2026-10-17_exact_14D_H64_reduction/native_h64_exact_14_to4.py) and [64-to-3](research_archive/2026-10-17_exact_14D_H64_reduction/execute_exact_full64_to3.py) derivations are executable from the same restored matrix inputs. The [original v61 physics compendium](research_archive/2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py), gauge/Yukawa material, bulk geometry and photon scripts are preserved in their recovered locations. [GitHub Actions](.github/workflows/cathedral-oct17-recovery.yml) defines the source-integrity job.
+
+**Scope:** these are exact restorations and conditional finite-model calculations, **not** a first-principles prediction of the measured charged-lepton mass spectrum. The original `kl_urt_koide_action.py` and a uniquely determined photon-current / H64 charged-pole action were not recovered. The complete raw historical conversations were not restored. Do not equate the distinct coarse cellular 64 and signed-history H64 representations or label a conditional Koide fit as physical closure.
