@@ -1,0 +1,158 @@
+{
+  "source_sha256": {
+    "combined_signed_source_operators.npz": "00715b3891570814eb346387017ea7abcaf166f215d5e83655b17673c23e1b58",
+    "golden_species_operators.npz": "9bfd183c01b43e3a589917f334ec5758cefb912cf30f55147b58ccb496b0399b"
+  },
+  "Delta": 0.0024891898404204027,
+  "p5": 6.196027670655383e-06,
+  "Hessian_eigenvalues": [
+    2.446230251124388,
+    2.9422794035054967,
+    2.9422794035054998,
+    3.725460209484152,
+    3.725460209484158,
+    3.8224064110405735,
+    4.649154998342422,
+    4.649154998342431,
+    5.954456341640185,
+    5.954456341640189,
+    6.739460607643635,
+    6.73946060764364,
+    7.4957406530041695,
+    7.495740653004173,
+    7.495998010474693,
+    7.495998010474701,
+    9.484721805221195,
+    9.4847218052212
+  ],
+  "full_returns": {
+    "u": {
+      "raw_identity": 4.159530369057602e-15,
+      "polar_identity": 3.2957957955951885e-15,
+      "polar_det": 1.1123768607488537e-15,
+      "eigenphases": [
+        -9.992007221626419e-16,
+        -1.7347234759768022e-16,
+        1.3322676295501886e-15
+      ]
+    },
+    "d": {
+      "raw_identity": 1.8477568277532942e-15,
+      "polar_identity": 2.2698697312358433e-15,
+      "polar_det": 2.8351204389971256e-16,
+      "eigenphases": [
+        -1.1934897514720435e-15,
+        0.0,
+        7.771561172376101e-16
+      ]
+    },
+    "e": {
+      "raw_identity": 3.143676281092265e-15,
+      "polar_identity": 4.975139851729435e-15,
+      "polar_det": 6.103611883502823e-15,
+      "eigenphases": [
+        -1.1102230246251528e-15,
+        -7.424616477180742e-16,
+        6.522560269672779e-16
+      ]
+    },
+    "nu": {
+      "raw_identity": 2.3433573555344712e-14,
+      "polar_identity": 1.5704473800736475e-14,
+      "polar_det": 2.889223637031266e-15,
+      "eigenphases": [
+        -1.094957458036561e-14,
+        2.775557561562896e-17,
+        1.0436096431476467e-14
+      ]
+    }
+  },
+  "analytic_18D_electron_first_derivative_max_norm": 5.586140810755069e-15,
+  "analytic_first_derivative_max_by_species": {
+    "u": 1.0369527654301258e-14,
+    "d": 1.3019075314933483e-14,
+    "e": 5.586140810755069e-15,
+    "nu": 1.4182697683221813e-12
+  },
+  "canonical_quartet_response": [
+    {
+      "step": 0.01,
+      "eigenvalues": [
+        -0.7429489218973083,
+        -0.3754286302785392,
+        1.1183775504673905
+      ],
+      "full_norm": 1.3941621506735267,
+      "C3_projection_norm": 0.12705592593238368,
+      "non_cyclic_norm": 1.3883605057230066,
+      "commutator_with_C3": 2.384486409124642,
+      "coefficient_b": 0.08984210513181855,
+      "coefficient_c": -2.012656209270283e-05,
+      "trace": -1.708456598414898e-09
+    },
+    {
+      "step": 0.005,
+      "eigenvalues": [
+        -0.7429722791921766,
+        -0.375449780785829,
+        1.118422059873083
+      ],
+      "full_norm": 1.394215998169184,
+      "C3_projection_norm": 0.12705893590503453,
+      "non_cyclic_norm": 1.3884143028451579,
+      "commutator_with_C3": 2.384579417699682,
+      "coefficient_b": 0.08984423080998842,
+      "coefficient_c": -2.8162134906508035e-05,
+      "trace": -1.0492295920982997e-10
+    },
+    {
+      "step": 0.0025,
+      "eigenvalues": [
+        -0.7429781183454206,
+        -0.3754550688003314,
+        1.1184331872133955
+      ],
+      "full_norm": 1.3942294600560836,
+      "C3_projection_norm": 0.12705968835923287,
+      "non_cyclic_norm": 1.3884277521320425,
+      "commutator_with_C3": 2.384602669881878,
+      "coefficient_b": 0.08984476216578986,
+      "coefficient_c": -3.0171074250097688e-05,
+      "trace": 6.764366844436154e-11
+    },
+    {
+      "step": 0.00125,
+      "eigenvalues": [
+        -0.7429795781468366,
+        -0.3754563907720022,
+        1.1184359690142398
+      ],
+      "full_norm": 1.3942328254992462,
+      "C3_projection_norm": 0.12705987630588755,
+      "non_cyclic_norm": 1.3884311144396657,
+      "commutator_with_C3": 2.384608482956906,
+      "coefficient_b": 0.08984489488487023,
+      "coefficient_c": -3.067321582026907e-05,
+      "trace": 9.540057632762e-11
+    }
+  ],
+  "local_quartet_gram_identity_max_residual": 3.3533497269083425e-15,
+  "local_Gibbs_quadratic_response": "I_3 / 3 (12 steps, all four species)",
+  "bare_chiral_minimal_wilson": {
+    "delta": 0.06685314704506819,
+    "mu_e": 3.1310566339523063,
+    "curvature_at_min": 1.4976747918174427,
+    "derivative_at_screened": 0.2243575340310368
+  },
+  "KMS_chiral_minimal_wilson": {
+    "delta": 0.00024825406974352996,
+    "mu_e": 1.0041609718819455,
+    "curvature_at_min": 0.34518514628749547,
+    "derivative_at_screened": 0.07108327747635744
+  },
+  "proposed_screening_formula": {
+    "delta": 0.2222220469105011,
+    "mu_e": 206.76828081257236
+  },
+  "interpretation": "No photon-H64 vertex derived, no unique physical Koide phase selected. Wilson probe is conditional."
+}
