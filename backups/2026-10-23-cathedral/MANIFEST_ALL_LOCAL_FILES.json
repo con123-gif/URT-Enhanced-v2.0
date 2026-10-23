@@ -1,0 +1,364 @@
+{
+  "project": "Newton Cathedral / URT",
+  "date": "2026-10-23",
+  "source_scope": "all files available in this chat runtime; NOT all historical conversations or external Drive",
+  "files": [
+    {
+      "path": "600_cell_cathedral_independent_audit_2026-10-21.zip",
+      "size_bytes": 5753,
+      "sha256": "abbc5f64f55645bd440228ff47d5dc8c6d2d49300dfba6ed71db7c17d5c4ca83"
+    },
+    {
+      "path": "600_cell_cathedral_local_audit.md",
+      "size_bytes": 4311,
+      "sha256": "4f7ae26ec97bc0a76fe7ba15995c19ca473b77e880225a11f06b19d511a87858"
+    },
+    {
+      "path": "CATHEDRAL_600CELL_SPIN_CURVATURE_PHYSICS_2026-10-21.md",
+      "size_bytes": 17316,
+      "sha256": "b6b51ff9fef35984ce518f6bb952ce181b5d64ccb892478e1e80a1687c222615"
+    },
+    {
+      "path": "CATHEDRAL_600CELL_SPIN_PHYSICS_2026-10-21.zip",
+      "size_bytes": 23684,
+      "sha256": "02ead8c871a7d7cdb16ead3f8b2e12ff6de3ec34ce96d768aba6c190f721b4f9"
+    },
+    {
+      "path": "CATHEDRAL_CHAT_FIRST_CONTINUITY_2026-10-18.md",
+      "size_bytes": 7042,
+      "sha256": "a4a120be5ae85d5758dde9889410bc29b3ebfd81ee3978b6aabaf937cc90e3d9"
+    },
+    {
+      "path": "CATHEDRAL_CROSS_DIMENSIONAL_RESONANCE_2026_10_21.zip",
+      "size_bytes": 11932,
+      "sha256": "1782902883d99a94588794f0980c21005fe9bf08fc69d776df6ee20b4d912ab6"
+    },
+    {
+      "path": "CATHEDRAL_FIRST_PRINCIPLES_GATE_2026-10-23.zip",
+      "size_bytes": 14938,
+      "sha256": "84856749d5eadc8080013ea9b9cde5cc7868251ee91fc5aacaf92d71fda145d1"
+    },
+    {
+      "path": "CATHEDRAL_FIVE_ORIENTATION_FIRST_PRINCIPLES_2026-10-23.zip",
+      "size_bytes": 24315,
+      "sha256": "8a9c3fbb7cd5f5265ff1ca3caf146cc701a42dd7b4a28b8463378813fafa9ede"
+    },
+    {
+      "path": "CATHEDRAL_H64_THREE_TRANSFORMS_EXACT_AUDIT_2026_10_18.zip",
+      "size_bytes": 8460,
+      "sha256": "283e6f9fdd1254258b9eab54d89544f93d5ca89d8ad5e8b0a47f6ded2ca7e2c7"
+    },
+    {
+      "path": "CATHEDRAL_SPIN_BILINEAR_PHYSICS_2026-10-21.zip",
+      "size_bytes": 104321,
+      "sha256": "1d758a5f2da370012385abb80a7dd95dd9efd580ac534a6e53efb5cca8271871"
+    },
+    {
+      "path": "CATHEDRAL_SPIN_BILINEAR_PHYSICS_FRONTIER_2026-10-21.md",
+      "size_bytes": 9519,
+      "sha256": "75ef208d08add28c955a35f98e4dc37a57cb73cfc7805ede8b17e7b214b2091c"
+    },
+    {
+      "path": "Grok_URT_Cathedral_Complete_Handoff_2026-10-17.zip",
+      "size_bytes": 11841208,
+      "sha256": "6192bac0054a8b1b3fc801594e78058876f4c4caee145d45b99122727f2cef74"
+    },
+    {
+      "path": "HYPERCUBE_CATHEDRAL_64_EXACT_AUDIT_2026-10-20.zip",
+      "size_bytes": 11423,
+      "sha256": "0e49b8d7502d3fd4d68660aa3149784d962f0c0ea7795feac744603678a7e62a"
+    },
+    {
+      "path": "HYPERCUBE_CATHEDRAL_64_EXACT_FRONTIER_2026-10-20.md",
+      "size_bytes": 6851,
+      "sha256": "267574bc149ef0f760383b2af3c2fb81d8ac9bd4a0ecd78e59ef3ed58cdef0e3"
+    },
+    {
+      "path": "JOINT_URT_H64_QUARK_CALCULATION_2026-10-18.md",
+      "size_bytes": 5892,
+      "sha256": "7f308d74581c4de4c14b96b65b5014a1f42706496813e21838f583799ba41353"
+    },
+    {
+      "path": "JOINT_URT_H64_QUARK_DOUBLET_2026-10-18_SELF_CONTAINED.zip",
+      "size_bytes": 1034629,
+      "sha256": "aabd1c023fe1b1599adda2517dc7ed7a6053d350cfa205192769e4be2f8bfbd7"
+    },
+    {
+      "path": "JOINT_URT_H64_QUARK_DOUBLEt_2026-10-18.zip",
+      "size_bytes": 8481,
+      "sha256": "214d7fa6e7da743af8832dbbb0ea3a00b27c1c7d23061334279d78cdc731d9a4"
+    },
+    {
+      "path": "URT_FIRST_PRINCIPLES_DYNAMICS_2026-10-23.zip",
+      "size_bytes": 115954,
+      "sha256": "28caaba31d2428c560b1880848d4ed79739ae2ba1125513941a1b8becd38b962"
+    },
+    {
+      "path": "URT_H64_QUARK_PHYSICAL_MATCHING_AUDIT_2026-10-18.zip",
+      "size_bytes": 1038626,
+      "sha256": "94cde72b07d1dfc3f35135888f4c330ef515498d6d0d18fc88e3d2f643b2f0e7"
+    },
+    {
+      "path": "URT_H64_QUARK_PHYSICAL_MATCHING_TEST_2026-10-18.md",
+      "size_bytes": 5255,
+      "sha256": "cbce94fd931d93c54850248d13200fbc8e78c82599139e64aa1c934459df137f"
+    },
+    {
+      "path": "URT_H64_RAIL_SOURCE_CALCULATION_2026-10-18.zip",
+      "size_bytes": 5524646,
+      "sha256": "0732bae26954b87f5876ac21bc39ea5adca1127a7351f3ef80cf5c4d88338996"
+    },
+    {
+      "path": "URT_H64_RAIL_TO_KOIDE_SOURCE_AUDIT_2026-10-18.md",
+      "size_bytes": 10332,
+      "sha256": "aa82e45fe59e5e75dfdf7c18ebeea020c8d47e9392cff1d5db83b55da340ef98"
+    },
+    {
+      "path": "cathedral_13_mode_qr_audit.py",
+      "size_bytes": 7715,
+      "sha256": "adfa438195ebb98aba8f9e8f0d9261877c6e762c3c831682385900ed5209839a"
+    },
+    {
+      "path": "cathedral_13_mode_qr_results.txt",
+      "size_bytes": 1508,
+      "sha256": "fb0b9bb421414d20ac20efd90b0e0c4486ba8631e5e754ec62392369f2563d12"
+    },
+    {
+      "path": "cathedral_5orientation_test/600_cell_cathedral_local_audit.py",
+      "size_bytes": 4898,
+      "sha256": "81bc99d6b8f5923b8de3bd48f4c5265ac94b96504ddf6d2df904b48e4789f7cf"
+    },
+    {
+      "path": "cathedral_5orientation_test/600_cell_cathedral_local_audit_results.json",
+      "size_bytes": 2517,
+      "sha256": "5eb5d93c6e6b0c7443383bd67a8fb904bff6df91dc1940730893a115be568dda"
+    },
+    {
+      "path": "cathedral_5orientation_test/FIVE_ORIENTATION_FIRST_PRINCIPLES_RESULT_2026-10-23.md",
+      "size_bytes": 8556,
+      "sha256": "bd1268e6b64718aac89ac82e62a1a0f8d4ef8ca26e75441de1fe25b5c547806c"
+    },
+    {
+      "path": "cathedral_5orientation_test/combined_coset_audit.py",
+      "size_bytes": 7818,
+      "sha256": "ad8013c005a99c03755d219befabe59de4fd800c9dddd3c8277d92ffe93ecb75"
+    },
+    {
+      "path": "cathedral_5orientation_test/exact_8d_triplet.py",
+      "size_bytes": 1630,
+      "sha256": "40b5a8210e3cb4e4996f2f3bc0761b77c522ed0286da6e114def647d55473eb2"
+    },
+    {
+      "path": "cathedral_5orientation_test/exact_centralizer.py",
+      "size_bytes": 893,
+      "sha256": "47f54aad2a4f714da0114cf02d96ac7c643ce2f38f9d95132295c5451392738d"
+    },
+    {
+      "path": "cathedral_5orientation_test/exact_pentacycle.py",
+      "size_bytes": 1586,
+      "sha256": "3845b09cc8f90f2281752784e11fb809faea3c4f870dd08686b8dac865ec09d7"
+    },
+    {
+      "path": "cathedral_5orientation_test/exact_pentacycle_results.json",
+      "size_bytes": 304,
+      "sha256": "d37ba3b34dbec0247acd833c7a9bff0350d7a31d50d05f28fae97e9633631bba"
+    },
+    {
+      "path": "cathedral_5orientation_test/exact_positive_history.py",
+      "size_bytes": 1600,
+      "sha256": "04180a61781e35538da86f41e91e64ef7d540cba8360bb016b17d3324bc6c1f2"
+    },
+    {
+      "path": "cathedral_5orientation_test/exact_triplet_split.py",
+      "size_bytes": 1036,
+      "sha256": "03f384ff589e975e0578cb3279c243873feb45f3a89d6e58008eda67181bc54f"
+    },
+    {
+      "path": "cathedral_5orientation_test/five_cycle_mass_projection.py",
+      "size_bytes": 2489,
+      "sha256": "bab62853c5904e4ca090f9dc96952646b79accba9aa5848a730faab2e677487e"
+    },
+    {
+      "path": "cathedral_5orientation_test/five_cycle_mass_projection_results.json",
+      "size_bytes": 242,
+      "sha256": "845d3a55b6c1de0a3355223116b9672cbb8c3a2cfaf513a2b35c4b95c4633b23"
+    },
+    {
+      "path": "cathedral_5orientation_test/five_tetrahedral_orientations.py",
+      "size_bytes": 4030,
+      "sha256": "f349d082c1be75ec99f940cea14049706675a73e6a650b0f468795c285ccf133"
+    },
+    {
+      "path": "cathedral_5orientation_test/five_tetrahedral_orientations_results.json",
+      "size_bytes": 824,
+      "sha256": "f836353fa804f0380255851aa635e96b123528221e0d51e82d073c05a3cc3e51"
+    },
+    {
+      "path": "cathedral_5orientation_test/full_16d_positive_transfer.py",
+      "size_bytes": 1402,
+      "sha256": "5bb78ba0ac6821b603d1be0cb2bbaf32c818cbba5ac9336a3c2a189de007ffc1"
+    },
+    {
+      "path": "cathedral_5orientation_test/full_16d_positive_transfer_results.json",
+      "size_bytes": 4705,
+      "sha256": "761a6372cc02453275f9954b9b82ba57610dfb6956b0823181f096eeac1d7aea"
+    },
+    {
+      "path": "cathedral_5orientation_test/history_positive_transfer.py",
+      "size_bytes": 2110,
+      "sha256": "d1b347933b8d29e3768125f08e11a0ebe0194f8574b1d80c43014731402dec89"
+    },
+    {
+      "path": "cathedral_5orientation_test/history_positive_transfer_results.json",
+      "size_bytes": 935,
+      "sha256": "20e451da191123a2c262e3394223a310a2026a69cba442c753f14a469111c574"
+    },
+    {
+      "path": "cathedral_5orientation_test/new_invariant_quartets.py",
+      "size_bytes": 1310,
+      "sha256": "59404a6d16f0f4722ab32550b9df976053a820c05a0c645a69c75af16376e6ed"
+    },
+    {
+      "path": "cathedral_5orientation_test/structure_followup.py",
+      "size_bytes": 2006,
+      "sha256": "63696f483822075c6b45d0f07fcd55f4405dfe2e1b4ddfdf1321802efb970d14"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/600_cell_cathedral_local_audit.py",
+      "size_bytes": 4898,
+      "sha256": "81bc99d6b8f5923b8de3bd48f4c5265ac94b96504ddf6d2df904b48e4789f7cf"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/600_cell_cathedral_local_audit_results.json",
+      "size_bytes": 2517,
+      "sha256": "5eb5d93c6e6b0c7443383bd67a8fb904bff6df91dc1940730893a115be568dda"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/CATHEDRAL_CROSS_DIMENSIONAL_RESONANCE_2026_10_21.md",
+      "size_bytes": 7968,
+      "sha256": "7d504ed3f164aadf1847c6123ef908faea36dae0be2033f3a92f36a019fd69cc"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/FIRST_PRINCIPLES_GATE_2026-10-23.md",
+      "size_bytes": 6248,
+      "sha256": "7e9b0340ad82cc90836b7f3f1815cf6812187c1f630fffe260e12da33a59a5d5"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/combined_coset_audit.py",
+      "size_bytes": 7818,
+      "sha256": "ad8013c005a99c03755d219befabe59de4fd800c9dddd3c8277d92ffe93ecb75"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/cross_dim_operator_results.json",
+      "size_bytes": 1905,
+      "sha256": "26bb2b413fa6cce21270153102d10747b90fffbf2671e9e7a198837e5c05b423"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/energy_dependent_resonance.py",
+      "size_bytes": 1420,
+      "sha256": "eb10888f80c363af18f66681a1c788744f59ba97e3c2aefd772f25dd7fb4c9e5"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/energy_dependent_resonance_results.json",
+      "size_bytes": 1018,
+      "sha256": "cfc100b064fbf48a8429b220e4ffe696a2e8d24633c73a944f06c8fab81bc638"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/first_principles_gate.py",
+      "size_bytes": 3053,
+      "sha256": "ccd21eba8ab6a22063872205b17dfd9eb112f8db10e335a55b06e4bd3ed5ed0c"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/first_principles_gate_results.json",
+      "size_bytes": 5227,
+      "sha256": "7c3ebb57de706b770ef401d9a9a7bdf26568d3204b2762c892dadfd7bd4f95ab"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/repro_stdout.txt",
+      "size_bytes": 2110,
+      "sha256": "01a754eaf3deb5d00ee7ec43e9f08b0572a14dff67f404245e67a3497309fdac"
+    },
+    {
+      "path": "cathedral_first_principles_20261023/verified_source_run.txt",
+      "size_bytes": 2110,
+      "sha256": "01a754eaf3deb5d00ee7ec43e9f08b0572a14dff67f404245e67a3497309fdac"
+    },
+    {
+      "path": "cross_dim_rebuild/CATHEDRAL_CROSS_DIMENSIONAL_RESONANCE_2026_10_21.md",
+      "size_bytes": 7968,
+      "sha256": "7d504ed3f164aadf1847c6123ef908faea36dae0be2033f3a92f36a019fd69cc"
+    },
+    {
+      "path": "physical_interface/Newton_Cathedral_Full.py",
+      "size_bytes": 300106,
+      "sha256": "12ca02d35f8847d5d424aa407b75ff7886db45fa28848ea70cf2164a55f3a18e"
+    },
+    {
+      "path": "physical_interface/Newton_Cathedral_Full_v59.py",
+      "size_bytes": 348319,
+      "sha256": "717f1a839cb46459735c7066fdd1bb570e2e8a6361b3e38483bebe361a3b15e6"
+    },
+    {
+      "path": "physical_interface/urt_v35_wall_current_residue.py",
+      "size_bytes": 13789,
+      "sha256": "45431a26bc60587bf46d5a96438a9af981679f8da6d189c1ec809c9f5871d2eb"
+    },
+    {
+      "path": "quark_joint_entropy_audit_2026-10-18.py",
+      "size_bytes": 3426,
+      "sha256": "49e2ea2271684a78461db1001664b19dc98463cbd7b56fb0e6b1883aa7ded3a6"
+    },
+    {
+      "path": "quark_joint_entropy_results_2026-10-18.json",
+      "size_bytes": 1721,
+      "sha256": "5bb739c5e946ac938bc51e1f52cd50728d10f071c5a4379913b512047e8d7a4f"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/FIRST_PRINCIPLES_DYNAMICS_AND_KOIDE_RESULT.md",
+      "size_bytes": 9747,
+      "sha256": "d60beb3c6ec0de0b15a4c473fe3c804b4b64a31e858fe90cf8e8e294c52e20cb"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/bkm_history_selector_results.json",
+      "size_bytes": 2569,
+      "sha256": "5051362591f9e8cc32110cd2dc9a7a4ab1f9cf1bc3dc2890307a4c5ffb5f90a8"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/bkm_history_selector_test.py",
+      "size_bytes": 2530,
+      "sha256": "bed9a58eeb671d7d3c2d27741bc4bb60e0f858785d45e53bd8db98ab0e75b592"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/combined_free_energy_trial.py",
+      "size_bytes": 691,
+      "sha256": "82b96982a10f32da802cf9b6b0e7e095a7e9b6903b43fef1f8f0765db82fe435"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/complete_source_selection_audit.py",
+      "size_bytes": 5510,
+      "sha256": "56580e1bf348e696e16f3b1a37414186129e21dd7b92414c6d4d2200d6cf6559"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/complete_source_selection_results.json",
+      "size_bytes": 2755,
+      "sha256": "42b26038566d0c445a775b44d77bb4b3f766759e0c8449ed992e1b76789dd0ff"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/selection_law_gate.py",
+      "size_bytes": 2757,
+      "sha256": "4149e04f385545aa44afe2f3fe8cef2c8bd380101c198e272f5e11ec9690a94d"
+    },
+    {
+      "path": "urt_first_principles_attempt_20261023/selection_law_gate_results.json",
+      "size_bytes": 3072,
+      "sha256": "8b49c3e14c3e81723e0c0f39a620269810f7ee967befffdd66dae1ceaabe793a"
+    },
+    {
+      "path": "urt_source_first_h64_checkpoint_2026-10-17.zip",
+      "size_bytes": 1028364,
+      "sha256": "076271d8730cb307f21c9ef088d8934bc39432ca7d1c192dab3022fbdbf12f7c"
+    }
+  ],
+  "count": 71,
+  "bytes": 21674618
+}
