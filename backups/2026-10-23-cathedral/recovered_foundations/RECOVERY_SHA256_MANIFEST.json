@@ -1,0 +1,407 @@
+{
+  "source_oct8": "Cathedral_Continuation_2026-10-08(1).zip",
+  "source_koide": "ChatGPT saved library kl_urt_koide_action.py",
+  "file_count": 80,
+  "files": [
+    {
+      "path": "Cathedral_Common_Action_2026-10-08.md",
+      "size": 19590,
+      "sha256": "aa041b4d5a24333ffbaa725fec65c0c36965f6289faf52517fda681903113e90"
+    },
+    {
+      "path": "Cathedral_Joint_Vacuum_2026-10-08.md",
+      "size": 14984,
+      "sha256": "e71e114f1410443a2573edc4a7d8eb7e8e5a020ce99d3b18b985bf0d01fb8d5e"
+    },
+    {
+      "path": "GROK_START_HERE_RECOVERED.md",
+      "size": 3576,
+      "sha256": "9a3f8f6a685444c07e37ab815eb8b12223648603bc1e6e38473ef0279dabf2b0"
+    },
+    {
+      "path": "continued_physics_work/gravity/spin2_metric_pole_identity.md",
+      "size": 9971,
+      "sha256": "195318ce630f03ce2032e3afbca52c7493d1127695bcf35292cd8ad673b0a927"
+    },
+    {
+      "path": "continued_physics_work/gravity/spin2_pole_checks.json",
+      "size": 4500,
+      "sha256": "7dd87fcd2cca2763c17e342035076909a9ca6709d7522a000a41f090413c669b"
+    },
+    {
+      "path": "continued_physics_work/gravity/spin2_pole_identity.py",
+      "size": 8245,
+      "sha256": "562143e22414b66b675963d8241434cbafb02bb16d9998f05b19b60df3eee213"
+    },
+    {
+      "path": "continued_physics_work/gravity/spin2_pole_operators.npz",
+      "size": 22532,
+      "sha256": "d0292bedf23e4a8f949f01d72fa4dfddeb263c05e2efd2e3c896f3fdd0264bbc"
+    },
+    {
+      "path": "derive_three_work/gravity/Einstein_Pole_From_Retained_Entropy_Branch.md",
+      "size": 16153,
+      "sha256": "bcf94d2e6b13d641158659088e97a4b3290f47959166d9e0e7924314fe06a6f8"
+    },
+    {
+      "path": "derive_three_work/gravity/einstein_branch_checks.json",
+      "size": 3686,
+      "sha256": "2cf8e9f1274c2153178033db3f9e54e8bb0ca68ee2bb5e04a7996eb9b1a0e1d9"
+    },
+    {
+      "path": "derive_three_work/gravity/einstein_branch_derivation.py",
+      "size": 9235,
+      "sha256": "d4aa560c4595f9e44957cf86dc1f240242142263a479a34336bfacb3b1722143"
+    },
+    {
+      "path": "derive_three_work/gravity/einstein_branch_operators.npz",
+      "size": 2068618,
+      "sha256": "c521caf4a956299b6e90d80527584f18666263a852f646450f69eb9c75708879"
+    },
+    {
+      "path": "derive_three_work/gravity/vacuum_stationarity_checks.json",
+      "size": 6975,
+      "sha256": "185a64e1bd4060fc788eacfd99f5e831ec654cbe3a2fcbc0d166f48c1b7d2b78"
+    },
+    {
+      "path": "derive_three_work/gravity/vacuum_stationarity_review.md",
+      "size": 12051,
+      "sha256": "89d1b677d5cf18e241738fb8d3e088d5456305d0bff87053c642032a0963a391"
+    },
+    {
+      "path": "derive_three_work/gravity/vacuum_stationarity_review.py",
+      "size": 7376,
+      "sha256": "bf130717e6eea397a0008293b9b59f8f94082d0ef44e7201d4f53e8566ac44e3"
+    },
+    {
+      "path": "derive_three_work/operator_dictionary/joint_derivation_review.md",
+      "size": 8037,
+      "sha256": "18c32fcc809f446d4747fbcdf72d561b8707a7ed2d2a938a7b6a99d8d74c9a42"
+    },
+    {
+      "path": "derive_three_work/operator_dictionary/joint_derivation_review.py",
+      "size": 5823,
+      "sha256": "88aacd608d19727ad6d66c1d87721664b6d687918b590ad4069d0e67d51632d0"
+    },
+    {
+      "path": "derive_three_work/operator_dictionary/joint_derivation_review_checks.json",
+      "size": 2185,
+      "sha256": "f6acd68437c0e343a53ae6ce690bcc5a81265ccf58d1095c2910129ebca7017a"
+    },
+    {
+      "path": "derive_three_work/operator_dictionary/selected_generator.py",
+      "size": 13752,
+      "sha256": "1a3ec29e8777f5610affa2de942e4002e1b46d735d580d09370a29269febc4be"
+    },
+    {
+      "path": "derive_three_work/operator_dictionary/selected_generator_checks.json",
+      "size": 2849,
+      "sha256": "72eac513588ca2763e642c8bacc89b1f26ff610d08b3f087905f5d3b96700494"
+    },
+    {
+      "path": "derive_three_work/operator_dictionary/selected_generator_operators.npz",
+      "size": 7130,
+      "sha256": "394b955f243a7367ff5c7c372f595f27dac8703ff9671f65cd95039863cf7e01"
+    },
+    {
+      "path": "derive_three_work/operator_dictionary/selected_generator_report.md",
+      "size": 17824,
+      "sha256": "f532266f265b252881ea088c60079bcba5965e1fe15e926f7d3fc2aa53f1cdb5"
+    },
+    {
+      "path": "derive_three_work/photon/a4_entropy_gaussian.py",
+      "size": 10976,
+      "sha256": "7427047e8dd10432c87e588a39612f32cd04fc99c97b3e165b0966bdd065a7c6"
+    },
+    {
+      "path": "derive_three_work/photon/a4_entropy_gaussian_checks.json",
+      "size": 12739,
+      "sha256": "d5980006a29d4bede90ed0aa1b3e879d202a122c2381f0df813676bb9c70f952"
+    },
+    {
+      "path": "derive_three_work/photon/a4_entropy_gaussian_operators.npz",
+      "size": 1676467,
+      "sha256": "4c7ecd636f0ef758100aa611f1125edd1f5ff95ea26ac598c838c974231e432f"
+    },
+    {
+      "path": "derive_three_work/photon/a4_entropy_gaussian_run.log",
+      "size": 12739,
+      "sha256": "d5980006a29d4bede90ed0aa1b3e879d202a122c2381f0df813676bb9c70f952"
+    },
+    {
+      "path": "derive_three_work/photon/photon_derivation_report.md",
+      "size": 15725,
+      "sha256": "f31db32e91c95bb399fc5d002464a4d7dccc0998f0cf77f3e72938e4295cff74"
+    },
+    {
+      "path": "derive_three_work/recovery/cathedral_v62_foundation_certificate.py",
+      "size": 7306,
+      "sha256": "86ae2260ea7e5385d2398e2af3b457881506d9cb93f81c93dde771be72d281a2"
+    },
+    {
+      "path": "derive_three_work/recovery/check_governing_principles.py",
+      "size": 5144,
+      "sha256": "542e8ae503ab7235328c73b1c64e0d1854857bccd69312935cf811230e8f84c7"
+    },
+    {
+      "path": "derive_three_work/recovery/governing_principle_audit.md",
+      "size": 11635,
+      "sha256": "4ce3343f4ab435ca712e9444b575322089f301464667181bdcf96d45678b7aa6"
+    },
+    {
+      "path": "derive_three_work/recovery/governing_principle_checks.json",
+      "size": 3490,
+      "sha256": "77e6d998acfab45860e80b280a027df3ecf5b9f63aee3ccaf4f8d377e1578ebe"
+    },
+    {
+      "path": "derive_three_work/recovery/governing_principle_search_evidence.json",
+      "size": 138915,
+      "sha256": "77f65d3ab97e837d70e68b9593ee55c8995133751d9d3bb96aae63f7625b4e82"
+    },
+    {
+      "path": "derive_three_work/recovery/latest_selection_chat_retrieval.json",
+      "size": 26465,
+      "sha256": "106ce83c7026986e2d30c113a2eaf7d5790d468f6db19a08f148de2c05775b91"
+    },
+    {
+      "path": "derive_three_work/review/independent_derivation_review.md",
+      "size": 8014,
+      "sha256": "1394832c7bf41ca7a6a9c2da5be02f42fe1606cfec4b9636c1063b2cec458768"
+    },
+    {
+      "path": "derive_three_work/review/independent_derivation_review.py",
+      "size": 7696,
+      "sha256": "76b3d4532cb020a0ae923afb0cb7f16cc789b62d16a4ae91e158fd94fd3154d2"
+    },
+    {
+      "path": "derive_three_work/review/independent_derivation_review_checks.json",
+      "size": 3682,
+      "sha256": "cdddca3d4d26fef94b91850559663a8adc625e9b6b40be4b32c769265b40f621"
+    },
+    {
+      "path": "derive_three_work/species/golden_species_checks.json",
+      "size": 16172,
+      "sha256": "8dcc91dd36781ba02c0e20b19b7bc1cfb519c2a909405f287a1e39bd5a248494"
+    },
+    {
+      "path": "derive_three_work/species/golden_species_derivation.py",
+      "size": 20967,
+      "sha256": "1b8de404389fc815f7b00ce4acb0fe5e38810c67df5ed82386d2269f11340b15"
+    },
+    {
+      "path": "derive_three_work/species/golden_species_derivation_report.md",
+      "size": 21582,
+      "sha256": "2a471e431506e1d6edf21b855a9cae51bff4fbdc7036d4f676bdeb72f06baba9"
+    },
+    {
+      "path": "derive_three_work/species/golden_species_operators.npz",
+      "size": 1073079,
+      "sha256": "9bfd183c01b43e3a589917f334ec5758cefb912cf30f55147b58ccb496b0399b"
+    },
+    {
+      "path": "derive_three_work/species/golden_species_run.json",
+      "size": 7293,
+      "sha256": "7f182b7300871e4c94feae342c4f0dbba06c90c6a4f2f39ba2a68d5103906b61"
+    },
+    {
+      "path": "flavour_work_v2/outer_history_checks.json",
+      "size": 4541,
+      "sha256": "4551a9381be764e522853d36788634d4cac54c43ce2c1fc6f1247f5c273dc7d6"
+    },
+    {
+      "path": "flavour_work_v2/outer_history_operators.npz",
+      "size": 2085758,
+      "sha256": "0b3c73cbbb8ad611b0a218822fb4efb673fc591d41ef59aa747de9fac3b004cf"
+    },
+    {
+      "path": "joint_vacuum_run_receipts.json",
+      "size": 1978,
+      "sha256": "bfa06e69ab3874638b9d2239d2824abbb9036cbebae8fd71b56cbd32bdabbda6"
+    },
+    {
+      "path": "joint_vacuum_work/entropy_diamond.py",
+      "size": 6906,
+      "sha256": "1731e301e3bedfc07c223cf5624eed9ab0a116c8916ec5807dc643b4c9fedbd8"
+    },
+    {
+      "path": "joint_vacuum_work/entropy_diamond_checks.json",
+      "size": 4139,
+      "sha256": "8771bfbec2b27ba08df5272a357fe733ff2780ea4b43eda4f35b0fbf9f1ff579"
+    },
+    {
+      "path": "joint_vacuum_work/entropy_diamond_operators.npz",
+      "size": 2107,
+      "sha256": "b3fe36a29574b5bd30fd3ff6ceef7511ea4b298113c7afe14d05215d988c15bc"
+    },
+    {
+      "path": "joint_vacuum_work/gravity/joint_selected_vacuum.py",
+      "size": 10292,
+      "sha256": "5d9d7875db45690b6dcfdf506d5e69cf72087ca9d152e38226f299b61ba6a415"
+    },
+    {
+      "path": "joint_vacuum_work/gravity/joint_selected_vacuum_checks.json",
+      "size": 2943,
+      "sha256": "6df4ce311f1c89fd64b2fa9d1665c1e60392b4eb53e237390b37e776df255e47"
+    },
+    {
+      "path": "joint_vacuum_work/gravity/joint_selected_vacuum_operators.npz",
+      "size": 115820,
+      "sha256": "0c15bcc0392bc12ee1688e346095ae387305da633df07e6018e995678f0b9b4e"
+    },
+    {
+      "path": "joint_vacuum_work/gravity/joint_selected_vacuum_report.md",
+      "size": 25026,
+      "sha256": "fbd80e3357c3fbaf6ae6f7f63ffef9bf6a99d9fc66c55daf4eb30fe9f2ff0c4d"
+    },
+    {
+      "path": "joint_vacuum_work/photon/correlated_hat_k5.py",
+      "size": 16156,
+      "sha256": "a5dca35456f992acf5cb0206d9a599350ae46207e23356e872713d533047a575"
+    },
+    {
+      "path": "joint_vacuum_work/photon/correlated_hat_k5_checks.json",
+      "size": 28270,
+      "sha256": "8bfadef0b57139f35c7dfc1b734f9888705d5d508c00657d7bd7a3f2264a477c"
+    },
+    {
+      "path": "joint_vacuum_work/photon/correlated_hat_k5_operators.npz",
+      "size": 3612,
+      "sha256": "2556bdeeb17005281dc17b586531da86a91efc7bfd9c5ab4a5dd6b30127570ad"
+    },
+    {
+      "path": "joint_vacuum_work/photon/correlated_hat_k5_report.md",
+      "size": 11308,
+      "sha256": "257bda344db6293a56c027bad6543ba1d25259a6d36461d069c62174fe54f1c0"
+    },
+    {
+      "path": "joint_vacuum_work/photon/correlated_hat_k5_run.log",
+      "size": 28270,
+      "sha256": "8bfadef0b57139f35c7dfc1b734f9888705d5d508c00657d7bd7a3f2264a477c"
+    },
+    {
+      "path": "joint_vacuum_work/photon/correlated_hat_k5_scramble_data.json",
+      "size": 267545,
+      "sha256": "5af75113e5f22965d53ca7c4f3c088f20d5ae08130af63b374061307baaabdf6"
+    },
+    {
+      "path": "joint_vacuum_work/recovery/joint_vacuum_chat_recovery.json",
+      "size": 34520,
+      "sha256": "f899afc361d43a7e196d729c060b759796c9f142f4dea9ba4b49270a593a25ea"
+    },
+    {
+      "path": "joint_vacuum_work/review/source_audit.md",
+      "size": 4905,
+      "sha256": "d1e245590848b916005bdbc8c23fc9aefa14a8fd6e74e515bda7176616dfbca3"
+    },
+    {
+      "path": "joint_vacuum_work/review/total_vacuum_review.md",
+      "size": 17565,
+      "sha256": "69e79074f57f0682bb0bf29cfdbd9aa16e178d99bf0f361093f897a3db7825e4"
+    },
+    {
+      "path": "joint_vacuum_work/review/total_vacuum_review.py",
+      "size": 10867,
+      "sha256": "f73c041cadcae52f4eadb901a5e42754e63d4210a4c02330ff47756286f6fe17"
+    },
+    {
+      "path": "joint_vacuum_work/review/total_vacuum_review_checks.json",
+      "size": 5822,
+      "sha256": "3fb2d30c61038e9893d51518c0220415c35d2c3a9e46b24c348b46ac6f373cb7"
+    },
+    {
+      "path": "joint_vacuum_work/run_logs/bridge_spurion_witness.log",
+      "size": 1160,
+      "sha256": "bc23b1ddf27bf94071cb02b8dfc746416eb6ace14f12d2bbb56fa59dc4160ff0"
+    },
+    {
+      "path": "joint_vacuum_work/run_logs/correlated_hat_k5.log",
+      "size": 28270,
+      "sha256": "8bfadef0b57139f35c7dfc1b734f9888705d5d508c00657d7bd7a3f2264a477c"
+    },
+    {
+      "path": "joint_vacuum_work/run_logs/entropy_diamond.log",
+      "size": 63,
+      "sha256": "f1a511c95bbdc36e972c0b4bc24fa8f3aa599d1d3bd8bfdd6efc1fb83b270fe3"
+    },
+    {
+      "path": "joint_vacuum_work/run_logs/joint_selected_vacuum.log",
+      "size": 220,
+      "sha256": "f1ff23d117aaaad0b3a0a3575fbde32e0a4008ff9b89aadf92018dba85b926c3"
+    },
+    {
+      "path": "joint_vacuum_work/run_logs/shared_species_vacuum.log",
+      "size": 9593,
+      "sha256": "a4d5b16f9ce95b3157189252b68961950cb53cfa982d4b1e0cf724f40d3950d9"
+    },
+    {
+      "path": "joint_vacuum_work/run_logs/total_vacuum_review.log",
+      "size": 58,
+      "sha256": "5207e725036531c53eb1d1ff8d60489d7512d50df9c0c5e86b6337a3be9fb611"
+    },
+    {
+      "path": "joint_vacuum_work/run_logs/verify_full64_deformations.log",
+      "size": 228,
+      "sha256": "917ebb65dcf9446b49574369d56d469fa722be8ea7ba137783f2416545480438"
+    },
+    {
+      "path": "joint_vacuum_work/species/bridge_spurion_witness.py",
+      "size": 2097,
+      "sha256": "050213634c7c387e0928191020e7b6946b0ab1395b6ab1852616665fbb5a72fc"
+    },
+    {
+      "path": "joint_vacuum_work/species/bridge_spurion_witness_checks.json",
+      "size": 1160,
+      "sha256": "bc23b1ddf27bf94071cb02b8dfc746416eb6ace14f12d2bbb56fa59dc4160ff0"
+    },
+    {
+      "path": "joint_vacuum_work/species/bridge_spurion_witness_operators.npz",
+      "size": 5551,
+      "sha256": "a358df737765b1ed53024650106110c1aee6766368c3c3581e8c54c9af9a3250"
+    },
+    {
+      "path": "joint_vacuum_work/species/full64_deformation_checks.json",
+      "size": 228,
+      "sha256": "917ebb65dcf9446b49574369d56d469fa722be8ea7ba137783f2416545480438"
+    },
+    {
+      "path": "joint_vacuum_work/species/shared_species_vacuum.py",
+      "size": 15102,
+      "sha256": "80362428374375cc2679f53bf27d4574f32cd09c1c3d6c3ea97c1d171c92e34d"
+    },
+    {
+      "path": "joint_vacuum_work/species/shared_species_vacuum_checks.json",
+      "size": 9593,
+      "sha256": "a4d5b16f9ce95b3157189252b68961950cb53cfa982d4b1e0cf724f40d3950d9"
+    },
+    {
+      "path": "joint_vacuum_work/species/shared_species_vacuum_operators.npz",
+      "size": 154039,
+      "sha256": "e830df2c187583c4a7ab2dd925acaf8c59dba1a480040972112eaa367775c90a"
+    },
+    {
+      "path": "joint_vacuum_work/species/shared_species_vacuum_report.md",
+      "size": 18681,
+      "sha256": "acc3d2678761a1bd1a10d2043b51228825e503a5689403461dd79416b8fe7617"
+    },
+    {
+      "path": "joint_vacuum_work/species/shared_species_vacuum_run.json",
+      "size": 9593,
+      "sha256": "a4d5b16f9ce95b3157189252b68961950cb53cfa982d4b1e0cf724f40d3950d9"
+    },
+    {
+      "path": "joint_vacuum_work/species/verify_full64_deformations.py",
+      "size": 1945,
+      "sha256": "1aa48c95f5b33c1257abab871ab337737bb797d47e7d946af0762f0701b555e5"
+    },
+    {
+      "path": "kl_urt_koide_action.py",
+      "size": 5528,
+      "sha256": "0f8a996d7fe097772053760b667bb9c844d5c61c452999b79c0b70694ed0b502"
+    },
+    {
+      "path": "run_joint_vacuum.py",
+      "size": 4474,
+      "sha256": "ee3dd8dff2c0cf8a219cf09d13baa9f3b5fbbb5c3f2a9b74c9b7ee51165448b0"
+    }
+  ]
+}
