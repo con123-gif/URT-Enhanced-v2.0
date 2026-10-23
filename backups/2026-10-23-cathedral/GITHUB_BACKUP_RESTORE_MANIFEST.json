@@ -1,0 +1,75 @@
+{
+  "archive": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip",
+  "total_bytes": 21088679,
+  "sha256": "23818e5555be22cb8b8cf46bcddec06ed18e5c7bf778fdd32da39d81a1da2f2c",
+  "parts": [
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part001",
+      "size_bytes": 2000000,
+      "sha256": "c806122db1a423ae671d4d53360bea8a77455a4fe8b9e1d58193c44626ace9a9",
+      "git_blob_sha1": "2ac88e9c52520c102b0eac5d65a7abcd27e65fb8"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part002",
+      "size_bytes": 2000000,
+      "sha256": "8b7d3fcfcf29ea16feb9a8c9d174182b40167e307bd54a193e5514ad5270531f",
+      "git_blob_sha1": "1fdce3c60387a5c47d42a1237572f308b1aaf078"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part003",
+      "size_bytes": 2000000,
+      "sha256": "3e78420467889aa057d34962065fa062d4e68094b08dd6a0d6cb394a05f844df",
+      "git_blob_sha1": "8ee505741c3c296bd0926f68e6fc95860a42f5b8"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part004",
+      "size_bytes": 2000000,
+      "sha256": "a39b97aee45766c88f81cd5c7163d156fdfa51495093dd58a8ce0e4763a7d855",
+      "git_blob_sha1": "b9476d9fba387753a34e8f9481798ecf68f5b033"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part005",
+      "size_bytes": 2000000,
+      "sha256": "fb229d4d953fd63c8dd99122ace59450958a2c94fadb940da0d8bf3730ec4006",
+      "git_blob_sha1": "476ec0d114ee65e081a4bf718a7c8220982e4605"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part006",
+      "size_bytes": 2000000,
+      "sha256": "e2414929f2493c911ab4d68a1f2b6d27cdf766c54274bfa9dea9f3d5fb041ad9",
+      "git_blob_sha1": "929d74b18b4fadf46c96b39fa4ab74151a4b0e08"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part007",
+      "size_bytes": 2000000,
+      "sha256": "34321705f83f2d7eae407665b6cc0777cddaac03653528cba76110f826efd71e",
+      "git_blob_sha1": "471accce166222a4a57c31b74918d63800d0e4c0"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part008",
+      "size_bytes": 2000000,
+      "sha256": "9328a5f1d319e559b995d1681195d26f19c07e9bafa91939359ad07b784dd067",
+      "git_blob_sha1": "fa0547bae41c51f0e26f148ed02da4ed74896b02"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part009",
+      "size_bytes": 2000000,
+      "sha256": "e715c33002cdd8357726a1636105ca9e0bca3aa9a2936368c4f52d3f86849ebc",
+      "git_blob_sha1": "f7653b982940f7ef073ab05bcd5dcb8b189b83b2"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part010",
+      "size_bytes": 2000000,
+      "sha256": "452c42fa427606af8b3f86dbb3f2c9cff9379d05867433626fe3dd19bb6e02a0",
+      "git_blob_sha1": "de24010614a26ff135746d16330564a97ed03149"
+    },
+    {
+      "filename": "CATHEDRAL_FULL_AVAILABLE_SNAPSHOT_2026-10-23.zip.part011",
+      "size_bytes": 1088679,
+      "sha256": "d6f10b7c7634829b8db5268f808f89caac71399451dd1485296857cf16dfeebc",
+      "git_blob_sha1": "7f13a7ce4d5551d56d756579392c589e779f5438"
+    }
+  ],
+  "restore": "Concatenate parts in numeric order to recover original ZIP; verify sha256.",
+  "count": 11
+}
