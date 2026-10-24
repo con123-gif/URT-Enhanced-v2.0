@@ -1,0 +1,16 @@
+# Round 103: orientation parity, hidden chirality, and Koide determinant gate
+Date: 2026-10-24. Additive independent proof/verification; **not** a rerun of the unavailable /workspace/round102_odd_ordering_theorem source. Run \`python round103_chiral_gate.py\` (requires NumPy, SymPy).
+
+## Exact statements
+
+1. Four labelled vertices of an oriented regular tetrahedron have 24 orderings. Explicit exact rational orthogonal matrices show det(rotation matrix) = permutation sign. The 12 proper permutations form A4; action of A4 on all S4 orderings gives two 12-element orbits. **This does not certify the reported concrete A5 action on actual Round 102 face tuples**: the latter requires consistently oriented faces and the actual round files.
+2. For a Hermitian block H=[[A,B],[B†,C]], flipping the sign of the off-diagonal bridge is conjugation by R=diag(I,-I). No full-spectrum sign splitting can result. Exchanging left and right by S=[[0,I],[I,0]] also preserves the full spectrum, but at fixed left projector P_L the projected operator becomes the original right-sector projection. Thus full-spectrum equality can coexist with different *physical chiral projections*, if the projection is derived.
+3. On the canonical hidden 4+4 state, a=1/[4(1+Delta²)], b=Delta²a, J†=-J, J²=-I and RJR=-J. Both rho±=rho* ∓ i sqrt(ab) J have eigenvalues 1/4 (four times) and 0 (four times). They both have entropy ln4. Each has Umegaki D(rho±||rho*)=H2(p5)=0.000080496307333... The master rho* has entropy ln4+H2(p5); **entropy alone selects neither sign**.
+4. With a hypothetical oriented Hermitian source M=-iJ and h, the *exact* 8x8 Gibbs law is rho(h)=exp(log rho*+hM)/Z(h), Z(h)=cosh(sqrt(eta²+h²))/cosh eta, eta=-ln Delta. The chirality response is <M>_h=h*tanh(sqrt(eta²+h²))/sqrt(eta²+h²), and susceptibility at h=0 is tanh(eta)/eta=0.1667814042694505, with <M>_0=0. A source sign and coupling have **not** been derived.
+5. For the conditional Q=2/3 charged-lepton circulant, det(H)/A³=[sqrt(2)cos(3delta)-1]/2. For delta_old=0.212 (the reported *rounded* prior result), determinant is 0.068851931509, while for empirical-ratio-inferred delta=0.222222047073088 it is 0.055706441097. Required delta and determinant shifts are +0.010222047073088 and -0.013145490411868. The old electron/tau ratio is 59.45% above the target. These are diagnostics, **not derived mass predictions**.
+
+## Preserved physical boundary
+
+The Oct 16 corrected hidden bridge (4_3 <-> 4_5) and Oct 17 intrinsic signed-face complex structure provide legitimate geometrical inputs. The native canonical KMS chiral triangle phase is -0.00074476220923059 radians, not the required 0.010222 phase adjustment with coefficient one. A physical branch preference must come from an independently fixed chiral/holonomy source and a typed map from A5/URT history to the charged-lepton H64 -> H13 -> H3 operator. No fitting of the missing sign or phase is allowed.
+
+**Ledger:** tetrahedral 12+12 exact; off-diagonal sign and L/R swap theorems exact; chiral-entropy degeneracy and parameter-free source susceptibility exact; concrete Round 102 A5 face-equivariance, physical chirality preference, and physical Koide determinant OPEN. No blanket no-go for the Cathedral/URT.
