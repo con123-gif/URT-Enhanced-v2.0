@@ -1,0 +1,21 @@
+==============================================================================
+URT map: f(x) = r x (1-x), r_URT = 3.84167378699470952;  delta_star = 0.147510810160
+targets: Q = 0.66666446 +- 5.1e-06, delta = 0.22222476 +- 6.3e-06; Koide needs eps = sqrt2 = 1.41421
+stable 6-cycle (orbit order): [0.14751081, 0.483095746, 0.959320674, 0.14991947, 0.489596824, 0.960002678]
+   lowest point vs delta_star: -9.6e-15
+period-3 orbit, parent of the URT 6-cycle (doubled): [0.148642899, 0.486156855, 0.959682257]  multiplier -1.0141
+period-3 orbit, saddle partner: [0.170051099, 0.542189724, 0.953580372]  multiplier +2.8639
+==============================================================================
+PRE-REGISTERED TESTS
+   U1 period-3 orbit (parent) as sqrt-masses      Q = 0.463910 (-39906 sigma)  delta = 0.427078 (+32722 sigma)  eps = 0.88513  FAIL
+   U2 period-3 orbit (parent) as masses           Q = 0.374855 (-57434 sigma)  delta = 0.552088 (+52690 sigma)  eps = 0.49913  FAIL
+   U1 period-3 orbit (saddle) as sqrt-masses      Q = 0.444043 (-43816 sigma)  delta = 0.494684 (+43521 sigma)  eps = 0.81502  FAIL
+   U2 period-3 orbit (saddle) as masses           Q = 0.368824 (-58620 sigma)  delta = 0.609135 (+61802 sigma)  eps = 0.46146  FAIL
+   U3 6-cycle even-step three-cycle as sqrt-masses Q = 0.463693 (-39949 sigma)  delta = 0.433072 (+33679 sigma)  eps = 0.88440  FAIL
+   U3 6-cycle odd-step three-cycle as sqrt-masses Q = 0.463987 (-39891 sigma)  delta = 0.421517 (+31834 sigma)  eps = 0.88539  FAIL
+==============================================================================
+CONTROL: period-3 orbits across the whole period-3 window
+   as sqrt-masses: Q ranges 0.4404..0.4696; delta ranges 0.4121..0.5112
+   closest approach to Q = 2/3 anywhere in the window: Q = 0.4696 at r = 3.85700
+==============================================================================
+RESULT: 0 of 6 pass
