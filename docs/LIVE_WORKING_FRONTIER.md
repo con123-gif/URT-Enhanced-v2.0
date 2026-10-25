@@ -71,3 +71,20 @@ The earlier October 16–17 calculations were committed mainly as isolated Markd
 **Latest source-correct precedence for mass work:** species sources load into full signed-history H64 **before** retained H13 projection (all four primitive charge vectors originate in H51); the 5+4+4 amplitude decoder is not the retained H13. The restored original rank-one cross-history completion has a 14-state invariant carrier, a four-state active e-type block, and a source-derived 64-to-3 Dyson/Feshbach kernel. Its *conditional* charged-source spectrum is not the measured Koide spectrum. Distinguish this historical witness from the coarse cellular 1+12+30+20+1=64 model, whose hidden chiral triplet is decoupled from the existing species Yukawa perturbation. Exact 3D photon/face-chirality results and six-triplet calculations remain finite-model mathematics pending an actual species-loaded photon-current vertex and charged-particle pole prescription.
 
 **Recovered but not physically proved:** the numerical Berry-screened Koide expression, H64 conditional mass/wall values, signed loop phases, φ^6 hierarchy, and source-dependent photon holonomy are retained with their defined operators and limitations. **Not recovered:** original `kl_urt_koide_action.py` bytes, the uniquely selected full photon–matter H64 action, or all raw historical chats. Re-derivations must not replace existing closed calculations with smaller unrelated toy models or turn unverified numerical agreements into measured physical laws.
+
+
+## 2026-10-25 — whole-Cathedral correction and all-five selected-state bridge
+
+**Scope correction:** The Cathedral is not the icosahedron. The primitive URT spiral/history selector, *all five* Platonic incidence complexes, five-cube/A4 fusion, dual eight-dimensional quartets, nonlinearly sourced H13, species-loaded Walsh H64/H51, BKM, gauge/matter/gravity and the independent Newton Scale are retained as distinct but coupled layers. The Golay/H64 kinetics of Oct 25 is a candidate **subsector**, not a replacement for the whole construction or for the original source-loaded T_star.
+
+**New exact all-five independent recalculation (SymPy rational rank):** The incidence hidden vertex/face dimensions (tetra, cube, octa, dodeca, icosa) are (0,0), (4,2), (2,4), (8,0), (0,8); the corresponding quadratic hidden-to-opposite-face/vertex ranks are (0,0), (4,1), (1,4), (12,0), (0,12). Vertex/face results exchange under Platonic duality. The five-cube 13-dimensional active representation 4+4+5 is **not identical** to the centered icosahedral H13 representation 2·1+3+3'+5; the nonlinear incidence return, rather than identity of the two carriers, is indispensable.
+
+**New exact operator bridge from five cubes to existing entropy state:** With Pbar=(1/5)Σ_j P_j=(1/4)P8+(2/5)P_vis5, rho_geo=Pbar/4=P8/16+P_vis5/10, P8=P3+P5 (dodecahedral hidden Laplacian eigenvalues 3 and 5), and the pre-existing Delta=3/20−80π/(1053φ), define the *constructed measurement outcome* F=P3+Delta·P5. It obeys F†F≤I; therefore F is a valid completable Kraus outcome. Exactly,
+
+    F rho_geo F† / Tr(F rho_geo F†)
+      = (P3+Delta² P5)/[4(1+Delta²)] = rho_star,
+    Tr(F rho_geo F†)=(1+Delta²)/4 ≈ 0.2500015490165154.
+
+The conditional hidden p5=Delta²/(1+Delta²)=6.196027670655×10^−6 and dual BKM stiffness 47.96697830338 are identical to frozen Cathedral values. The identity was reproduced with exact 20×20 rational spectral projectors and symbolic entry-wise verification, without new observational constants. **This is an existence/construction theorem, not a proof** that canonical source-loaded H64 T_star physically selects F. The primitive URT symplectic angular step and the Newton Scale φ^(−2) spectral matching are not replaced by 15°×24 planar rotations.
+
+**What to calculate next from the actual source:** derive F as a reduction of the recovered species-loaded H64 T_star with a source-preserving intertwiner; compose that physical contact with the nonlinear 4+4→12 shell map, supply the independent central singlet, then extract normalized photon/fermion and metric/stress observables. Do not substitute a newly constructed Golay Hamiltonian for T_star.
