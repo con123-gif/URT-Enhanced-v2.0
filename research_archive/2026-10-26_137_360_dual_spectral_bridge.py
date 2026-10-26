@@ -52,3 +52,15 @@ assert s.expand(s.trace((Pi-c*K)**2)-
 print("PASS: 137 dual Coulomb index, 360 Maxwell norm,")
 print("      equal planar-dual spanning trees, exact source projection.")
 print("c_HS =",c)
+
+# Forced golden ratio of the positive Maxwellizing coframe amplitudes:
+lam_minus=5-s.sqrt(5)
+lam_plus=5+s.sqrt(5)
+Pplus=(K-lam_minus*s.eye(30))*P6/(2*s.sqrt(5))
+Pminus=(lam_plus*s.eye(30)-K)*P6/(2*s.sqrt(5))
+assert (s.trace(Pplus),s.trace(Pminus))==(3,3)
+assert s.simplify(lam_plus/lam_minus-(3+s.sqrt(5))/2)==0
+phi=(1+s.sqrt(5))/2
+assert s.simplify((lam_plus/lam_minus)-phi**2)==0
+assert s.simplify(K-(6*P5+lam_minus*Pminus+lam_plus*Pplus))==s.zeros(30)
+print('EXACT: m_plus/m_minus=phi for any h6>0, with common scale Z unfixed.')
