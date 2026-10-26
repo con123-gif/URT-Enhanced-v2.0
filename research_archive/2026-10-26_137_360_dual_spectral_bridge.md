@@ -35,3 +35,17 @@ At the rail clock beta = −ln Delta = 5.9957979867413068, `h5=5.900702960956784
 Validated independently with exact SymPy/NetworkX 30×30 construction and high-precision rail clock; executable artifact `cathedral_137_360_dual_spectral_2026_10_26.py` in the conversation.
 
 **Status:** exact finite mathematics / continuum physical Maxwell ID still open. No other Cathedral closures reopened or erased.
+
+
+## Exact golden coframe normalization (derived after first certificate)
+
+The source Hessian splits as Pi=h5 P5+h6(Pminus+Pplus), where K=6P5+(5−sqrt(5))Pminus+(5+sqrt(5))Pplus. For h5,h6>0, the unique positive symmetry-equivariant diagonal intertwiner of the 11 gauge-cycle modes with M_Z† Pi M_Z=Z K (for any Z>0) has amplitudes
+
+```
+m5=sqrt(Z*6/h5)
+mminus=sqrt(Z*(5-sqrt(5))/h6)
+mplus=sqrt(Z*(5+sqrt(5))/h6)
+mplus/mminus=phi exactly.
+```
+
+The ratio is independent of the clock and the common Z. Numerically at the frozen entropy clock for illustrative Z=1, (mminus,m5,mplus)=(0.5250644756093501,1.0083788978502457,0.8495721678210687). This is an exact no-fit constraint on a viable Maxwellizing history/coframe transfer **in the specified native finite current model**, not evidence that the physical H64 transfer realizes it and not a determination of the physical overall photon stiffness.
