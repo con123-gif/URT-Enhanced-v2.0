@@ -102,3 +102,17 @@ James's actual condition is on *conditional compact-group block laws*, not the G
 This exact decimation now places genuine SU(2) conditional dynamics in the Cathedral bridge. However the single-link forest influence row sum equals \(3\beta\approx8.99358553>1\), and **the exact induced Bessel action alone does not bound the influence of an arbitrarily large non-Abelian cube**. In particular it does not prove the uniform \(D(n(a),\alpha)\) inequality as \(\beta_W(a)\to\infty\), nor the nontrivial Osterwalder–Schrader continuum limit. The present entropy coefficient is scale-independent; physically meaningful continuum tuning also remains to be derived from URT.
 
 **Verified advancement:** conditional parent SU(2)/SU(3) coupling equality (fixing the earlier index mismatch), plus a fully exact, gauge-invariant non-Abelian first coarse-graining step rather than an unrelated Gaussian comparison. **Not claimed:** nonperturbative 4D SU(2)/SU(3) continuum mass gap.
+
+## 7. A non-fitted *perturbative* scale trajectory from the resulting pure Yang–Mills actions
+
+The constant entropy-derived \(\kappa\) can be used as an initial condition at a **reference lattice spacing** \(a_0\); it must not be interpreted as constant at every refinement. For **pure** SU(N) Yang–Mills, the standard one-loop ultraviolet beta function is
+
+\[\mu\frac{dg_N}{d\mu}=-\frac{11N}{48\pi^2}g_N^3+O(g_N^5).\]
+
+Combining this with \(\beta_W^{(N)}=2N/g_N^2\) gives the leading-log trajectory
+
+\[\boxed{\beta_W^{(N)}(a)=\beta_W^{(N)}(a_0)+\frac{11N^2}{12\pi^2}\log\frac{a_0}{a}+\text{higher-loop corrections}.}\]
+
+For dyadic refinement \(a=a_0/2^k\), the SU(2) initial value \(\kappa/2\) increases by \(\frac{11}{3\pi^2}\ln2=0.2575118068\ldots\) per level, while the SU(3) initial value \(3\kappa/4\) increases by \(\frac{33}{4\pi^2}\ln2=0.5794015654\ldots\). At levels \(k=0,4,8,16\), the leading-log values are respectively SU(2) \((2.99786,4.02791,5.05796,7.11805)\) and SU(3) \((4.49679,6.81440,9.13201,13.76722)\).
+
+**Scope:** This supplies a concrete **perturbative** increasing-coupling trajectory with no empirical fit, conditional on selecting pure SU(2)/SU(3) Yang–Mills as the ultraviolet gauge action. It is not a nonperturbative derivation of the Cathedral-selected RG flow, does not fix the physical reference scale \(a_0\), and does not prove James's averaged-cube Dobrushin–Shlosman condition. A credible constructive strategy must now analyze the exact Bessel-generated multi-plaquette interactions along this running rather than repeatedly replacing them with a single effective Wilson coefficient.
