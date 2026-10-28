@@ -104,3 +104,29 @@ Previous canonical provenance:
 - \`docs/WHOLE_CATHEDRAL_FINITE_GEOMETRY_HISTORY_BRIDGE_2026-10-26.md\`
 - \`docs/CATHEDRAL_UNIFIED_FINITE_DYNAMICS_2026-10-25.md\`
 - \`docs/PLATONIC_A4_NONLINEAR_EMERGENCE_2026-10-14.md\`
+
+
+## Exact two-field slice (no floating-point input)
+
+For the fixed normalized difference of two adjacent icosahedral vertex indicators \(v=(e_0-e_1)/\sqrt2\), the pre-existing rational incidence projectors yield
+\[
+\|d_1^Tv\|^2=6,\qquad \|P_3(Cv)^2\|^2=\frac25,\qquad \|P_5(Cv)^2\|^2=\frac2{15}.
+\]
+Writing \(q_*=U_h(h_3/18+\Delta h_5/16)\) and \(u=q_*/\|q_*\|\), restrict \(y=s\,u\), \(\phi=t\,v\), \(a=b=0\). The exact two-field potential is
+\[
+V(t,s)=3t^2+\tfrac12\mu s^2
++\left(\tfrac1{10}+\tfrac{\Delta^2}{30}\right)t^4
+-d\,st^2,
+\]
+where
+\[
+A=\|q_*\|^2=\frac1{810}+\frac{\Delta^2}{1920},\qquad
+\mu=\frac{\frac1{45}+\frac{\Delta^2}{120}}{A},\qquad
+d=\frac{\frac1{45}+\frac{\Delta^2}{120}}{\sqrt A}.
+\]
+Eliminating \(s\) yields the **exact** non-Gaussian one-field potential
+\[
+\boxed{V_{\rm reduced}(t)=3t^2+
+\left(\frac4{45}+\frac7{240}\Delta^2\right)t^4.}
+\]
+Its strictly positive quartic coefficient is derived from the selected contact and pre-existing history spectrum, with no measured input. This is an exact interacting subtheory, not a demonstration of continuum renormalization or physical particle scattering.
