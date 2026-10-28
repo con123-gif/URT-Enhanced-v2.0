@@ -13,6 +13,7 @@ import json
 from pathlib import Path
 import numpy as np
 from scipy.sparse.linalg import LinearOperator, cg
+from scipy.linalg import expm
 
 PHI=(1+math.sqrt(5))/2
 DELTA=3/20-80*math.pi/(1053*PHI)
@@ -51,6 +52,20 @@ def entropy_plaquette(q):
     D=np.trace(RHO @ (LOGRHO -R@LOGRHO@R.T))
     D_from_wilson=KAPPA*(1-q[0])
     return D, D_from_wilson, R
+
+def su3_entropy_plaquette(U3):
+    """Selected complex 4=1+3 representation of SU(3) in the balanced bridge.
+    This is a newly chosen representation, not uniquely dictated by T_star.
+    """
+    U4=np.zeros((4,4),dtype=complex)
+    U4[0,0]=1
+    U4[1:,1:]=U3
+    D8=np.block([[U4,np.zeros((4,4),dtype=complex)],
+                 [np.zeros((4,4),dtype=complex),I4.astype(complex)]])
+    R=S @ D8 @ S.T
+    Dr=np.trace(RHO @ (LOGRHO - R@LOGRHO@R.conj().T)).real
+    predicted=KAPPA*(3-np.trace(U3).real)/4
+    return float(Dr),float(predicted)
 
 def screen_f0(h):
     t=MASS*h
@@ -129,6 +144,16 @@ def main():
         g_inv=g*np.array([1,-1,-1,-1])
         conj=quaternion_mul(quaternion_mul(g,q),g_inv)
         assert abs(entropy_plaquette(q)[0]-entropy_plaquette(conj)[0])<1e-12
+    max_su3_entropy=0
+    for _ in range(100):
+        X=rng.normal(size=(3,3))+1j*rng.normal(size=(3,3))
+        H=(X+X.conj().T)/2
+        H-=np.trace(H)/3*np.eye(3)
+        U=expm(1j*H)
+        assert abs(np.linalg.det(U)-1)<1e-12
+        d,w=su3_entropy_plaquette(U)
+        max_su3_entropy=max(max_su3_entropy,abs(d-w))
+    assert max_su3_entropy<1e-12
     # The Gaussian block theorem's physical cube size is fixed;
     # alpha <=1/2 uniformly for n*h=16/mass, independent of n.
     ell=16/MASS
@@ -137,12 +162,13 @@ def main():
         h=ell/n
         cube_data.append(gaussian_cube(n,h))
     out={'delta':DELTA,'eta':ETA,'lambda':LAMBDA,'mass':MASS,
-         'beta_W_entropy':KAPPA,'rho_block_eigenvalues':[P3,P5],
+         'beta_W_entropy':KAPPA,'beta_W_su3_1plus3_choice':3*KAPPA/4,
+         'su3_entropy_identity_err':max_su3_entropy, 'rho_block_eigenvalues':[P3,P5],
          'homomorphism_err':max_hom,'entropy_identity_err':max_entropy,
          'orthogonal_err':max_orth,
          'gaussian_fixed_physical_cube_side':ell,'gaussian_alpha_upper':0.5,
          'gaussian_cubes':cube_data,
-         'scope':'BKM-Wilson SU2 is an explicitly chosen balanced bridge; '
+         'scope':'BKM-Wilson SU2 and SU3 are explicitly chosen balanced bridges; '
                  'the proved physical-cube averaged contraction is for a '
                  'different MASSIVE GAUSSIAN scalar model, not Wilson.'}
     with open(Path(__file__).with_suffix('.json'),'w') as f:
