@@ -67,6 +67,26 @@ S_{\rm ent}[U]=\sum_p\mathscr D(Q_p)
 
 This is **exactly the standard gauge-invariant Wilson SU(2) plaquette action** with conventional inverse coupling \(\beta_W=\beta_{\rm ent}\) (constant additive term irrelevant). For any site gauge transformation, \(Q_p\mapsto g_xQ_pg_x^{-1}\), and quaternion scalar part is unchanged. This supplies a mathematically concrete *non-Abelian, history-state-dependent* gauge-interface candidate without choosing a measured coupling. It does not dynamically couple the old scalar history field \(y\) to the \(a\)-sector of the separate 2026-10-28 action; it defines a **new** compact-link action whose coefficient depends on the frozen master state.
 
+### Theorem A2 — same entropy bridge also generates SU(3), with a representation-dependent coefficient
+
+The previous proof works for **any** specified unitary four-dimensional representation \(U:G\to U(4)\), replacing \(L(q)\) by \(U(g)\) and the transpose by adjoint. Since \(R_{35}=(I_4-U)/2\), the exact universal class function is
+
+\[
+\boxed{D(\rho_\star\Vert R(g)\rho_\star R(g)^\dagger)
+=\frac{\beta_{\rm ent}}4\left(4-\operatorname{ReTr}U(g)\right)}.
+\]
+
+For the existing Cathedral finite-algebra \(\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)\), consider the **explicit additional representation premise** \(U_4(g)=1\oplus g\) for \(g\in SU(3)\). Then
+
+\[
+S_{SU(3)}(Q_p)=\frac{\beta_{\rm ent}}4\left(3-\operatorname{ReTr} Q_p\right)
+=\boxed{\beta_W^{(3)}\left(1-\frac13\operatorname{ReTr} Q_p\right)},\qquad
+\beta_W^{(3)}=\frac34\beta_{\rm ent}
+=4.4967927648606265\ldots
+\]
+
+This is genuinely non-Abelian, and exactly gauge-invariant. It is **not** claimed to yield the full exceptional-group statement of James's paper: larger groups require other representation carriers. The SU(3) coupling is also outside James's proved fixed-spacing block interval \(\beta_W\le0.76\). SU(3) unification is not automatic: if bare Wilson conventions \(\beta_W^{(2)}=4/g_2^2\), \(\beta_W^{(3)}=6/g_3^2\) are used, this simple \(1\oplus3\) bridge predicts \(g_3^2=2g_2^2\), **not** the parent Cathedral relative-normalization \(g_3^2=g_2^2\). Therefore the selection of representation multiplicities and the connection to the full KO-6 fermionic trace remain unresolved; the relative-entropy interface is an explicit constructive candidate, not a closed physical coupling derivation.
+
 **Why the continuum does not follow:** James's verified fixed-spacing SU(2) theorem runs through \(\beta_W\le 0.345\), while \(\beta_{\rm ent}\approx5.9957\); it is outside that interval. Moreover the bare coefficient stays finite because the frozen \(\Delta\) stays fixed, whereas the standard asymptotically free continuum tuning for Wilson SU(2) requires \(\beta_W(a)\to\infty\). No Cathedral derivation of such a scale dependence is yet available. One must not quietly insert a depth-dependent multiplicative factor or claim \(\Delta^2\) is James's contraction coefficient.
 
 **Important separation:** This is not the physical gauge symmetry derived uniquely from four-sheet/KO-6 dynamics; the choice of balanced mixed representation and relative-entropy Gibbs weighting still require derivation from canonical source-loaded URT if claimed fundamental.
@@ -161,16 +181,17 @@ which proves the theorem. The limit \(h\to0\) is controlled by the *block size* 
 
 ## Executed independent numerical tests
 
-`cathedral_yangmills_entropy_and_cube_2026_10_28.py` checks 250 random SU(2) holonomies and group products, 20 random conjugations, the exact relative-entropy identity, representation orthogonality, and seven independently solved four-dimensional Gaussian Dirichlet cubes. The complete machine-readable output is `cathedral_yangmills_entropy_and_cube_2026_10_28.json`.
+`cathedral_yangmills_entropy_and_cube_2026_10_28.py` checks 250 random SU(2) holonomies and group products, 20 random conjugations, 100 random SU(3) holonomies, the exact relative-entropy identity, representation orthogonality, and seven independently solved four-dimensional Gaussian Dirichlet cubes. The complete machine-readable output is `cathedral_yangmills_entropy_and_cube_2026_10_28.json`.
 
 - SU(2) homomorphism max Frobenius residual: `1.32e-15`.
+- SU(3) entropy-to-Wilson identity max residual: `3.56e-15`.
 - Entropy identity max absolute residual: `7.11e-15`.
 - Fixed physical cube side \(\ell=16/\mu=18.3059648901659\), actual \(\max_cK_c/N_n\) for \(n=2,4,6,8,10,12,16\): `0.058824, 0.108627, 0.149020, 0.181286, 0.207077, 0.227875, 0.258891`; all below the analytic \(\alpha=1/2\) bound. The analytic proof holds for **all** even n, not just the tested examples.
 
 ## Exact remaining target, without relabelling the result as a Clay solution
 
-- Replace the Gaussian site conditionals with the **actual Wilson SU(2)** forest-fixed compact link conditionals derived from Theorem A's entropy action. Prove \(D(n(a),\alpha)\) uniformly as \(\beta_W(a)\to\infty\); do not substitute the Gaussian K's. James's Theorem 51 and Proposition 53 impose substantial constraints here.
+- Replace the Gaussian site conditionals with the **actual Wilson SU(2) or SU(3)** forest-fixed compact link conditionals derived from Theorem A's entropy action. Prove \(D(n(a),\alpha)\) uniformly as \(\beta_W(a)\to\infty\); do not substitute the Gaussian K's. James's Theorem 51 and Proposition 53 impose substantial constraints here.
 - Derive, rather than assume, a multi-scale \(\beta_W(a)\) running and the balanced bridge from the original full URT source-loaded \(T_\star\), 64 histories and the four-sheet/KO-6 differential calculus. A constant \(\beta_{\rm ent}\) does not provide a Yang–Mills continuum limit.
 - Independently prove a nontrivial Osterwalder–Schrader continuum limit, with appropriate reflection and Euclidean invariance.
 
-**Latest finding:** An exact, gauge-invariant SU(2) Wilson action can be generated by the retained Cathedral 4+4 entropy spectrum after an explicit balanced quaternionic coupling premise; and an exact physical-size cube contraction can be proved for the associated *Gaussian comparison problem*. Their intersection is a coherent research bridge, **not yet a theorem that Cathedral satisfies the non-Abelian continuum contraction**.
+**Latest finding:** Exact, gauge-invariant SU(2) and SU(3) Wilson actions can be generated by the retained Cathedral 4+4 entropy spectrum after an explicit balanced quaternionic coupling premise; and an exact physical-size cube contraction can be proved for the associated *Gaussian comparison problem*. Their intersection is a coherent research bridge, **not yet a theorem that Cathedral satisfies the non-Abelian continuum contraction**.
