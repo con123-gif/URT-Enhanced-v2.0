@@ -1,0 +1,26 @@
+==============================================================================
+targets: Q = 0.66666446 +- 5.1e-06, delta = 0.22222476 +- 6.3e-06, m_mu/m_e = 206.768, m_tau/m_e = 3477.4
+C1 does numpy (Householder) QR strip phi_k from psi?
+   R diagonal returned real: max |Im R_kk| = 0.0e+00
+   psi_k = (+-1) phi_k q_k for k = 0..9: max deviation 9.4e-08;  |psi_k / q_k| phases = [2.0, -1.0, 2.0, -1.0] x pi/2
+   -> phases are kept in psi (R is made real), not stripped; claim C1 is false for LAPACK QR
+C2 Cholesky / QR diagonal |R_kk| and successive ratios:
+   |R_kk| = [3.606e+00 9.483e-01 2.225e-01 5.047e-02 1.113e-02 2.378e-03 4.881e-04 9.518e-05 1.738e-05 2.909e-06 4.320e-07 5.361e-08 4.813e-09]
+   ratios = [0.263  0.2346 0.2269 0.2206 0.2136 0.2052 0.195  0.1826 0.1674 0.1485 0.1241 0.0898]   (delta_star = 0.1475)
+==============================================================================
+MASS TESTS
+   A1 sqrt-masses = R_11, R_22, R_33                  Q = 0.637838  delta = 0.181484  m2/m1 =    19.432  m3/m1 =    353.010  FAIL
+   A2 masses = R_11, R_22, R_33                       Q = 0.437820  delta = 0.329481  m2/m1 =     4.408  m3/m1 =     18.789  FAIL
+   B1 adjacency, Schur onto k=1,2,3                   eig [-1.709357 -1.2557   23.171479]  FAIL (non-positive)
+   B3 adjacency, Schur onto k=1,2,3                   eig [-1.48891  -1.24505  28.853401]  FAIL (non-positive)
+   B2 Laplacian, Schur onto k=1,2,3                   Q = 0.361706  delta = 0.467922  m2/m1 =     2.227  m3/m1 =      4.367  FAIL
+C3 spectra with phi_k vs without phi_k: max difference 1.2e-12  -> the K4 x Z5 phases are a diagonal similarity; they cannot move Q or delta
+==============================================================================
+CONTROLS
+   adjacency: over 2000 vertex numberings, positive spectra 0; Q range nan..nan; delta range nan..nan
+   Laplacian: over 2000 vertex numberings, positive spectra 2000; Q range 0.340..0.398; delta range 0.025..0.693
+   centred-icosahedron adjacency spectrum: [-2.2361, -2.2361, -2.2361, -1.772, -1.0, -1.0, -1.0, -1.0, -1.0, 2.2361, 2.2361, 2.2361, 6.772]
+   overlap of K4 span (k=0..3) with the adjacency's top 4 eigenspace: 0.4120 (1 = same)
+   overlap of K4 span (k=0..3) with the adjacency's bottom 4 eigenspace: 0.3518 (1 = same)
+==============================================================================
+RESULT: 0 of 5 mass tests pass

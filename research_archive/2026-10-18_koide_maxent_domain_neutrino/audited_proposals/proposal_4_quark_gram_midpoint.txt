@@ -1,0 +1,79 @@
+To test whether the same maximum-entropy principle that gives Q_e = \frac{2}{3} for charged leptons also explains Q_u \approx 0.849 and Q_d \approx 0.731 for quarks, we first compute the exact experimental invariants and then write down the basis-free functional on the shared SU(2)_L flavour space \mathcal{H}_3.
+1. Exact Empirical Audit of the Quark Invariants
+Using standard PDG quark masses (m_u = 2.16\text{ MeV}, m_c = 1270\text{ MeV}, m_t = 172,690\text{ MeV} and m_d = 4.67\text{ MeV}, m_s = 93.4\text{ MeV}, m_b = 4180\text{ MeV}) and the CKM matrix magnitudes \vert{}V_{ij}\vert{}, let X_u = M_u^{1/2} and X_d = M_d^{1/2} be the two positive root-mass operators acting on the shared left-handed doublet space \mathcal{H}_3:
+| Basis-Free U(3)_Q Invariant | Formula | Empirical Value | Physical Meaning |
+|---|---|---|---|
+| Up Trace \text{Tr}(X_u) | \sqrt{m_u} + \sqrt{m_c} + \sqrt{m_t} | 452.68\text{ MeV}^{1/2} | Up singlet scale (3\mu_u) |
+| Down Trace \text{Tr}(X_d) | \sqrt{m_d} + \sqrt{m_s} + \sqrt{m_b} | 76.48\text{ MeV}^{1/2} | Down singlet scale (3\mu_d) |
+| Trace Ratio \kappa | \frac{\text{Tr}(X_d)}{\text{Tr}(X_u)} | 0.16895 | Isospin scale asymmetry |
+| Up Koide Q_u | \frac{\text{Tr}(X_u^2)}{(\text{Tr}\,X_u)^2} = \frac{1}{3}(1 + \frac{1}{2}r_u^2) | 0.8489 (r_u^2 = 3.093) | Shift \Delta Q_u = +0.1822 above \frac{2}{3} |
+| Down Koide Q_d | \frac{\text{Tr}(X_d^2)}{(\text{Tr}\,X_d)^2} = \frac{1}{3}(1 + \frac{1}{2}r_d^2) | 0.7314 (r_d^2 = 2.388) | Shift \Delta Q_d = +0.0647 above \frac{2}{3} |
+| Cross-Trace I_{ud} | \text{Tr}(X_u X_d) = \sum_{i,j} \sqrt{m_{u,i} m_{d,j}}\,\vert{}V_{ij}\vert{}^2 | 27,232\text{ MeV} | Shared-space overlap |
+| Normalized Cross-Koide Q_{ud} | \frac{\text{Tr}(X_u X_d)}{\text{Tr}(X_u)\text{Tr}(X_d)} | 0.7866 | Lies strictly between Q_d (0.731) and Q_u (0.849) |
+2. Why Single-Operator Max Entropy Gives \frac{2}{3} (Review of the Baseline)
+For a single positive operator X on \mathcal{H}_3, any basis-free functional can depend only on \text{Tr}(X) and \text{Tr}(X^2) (at quadratic order). Decompose X into its orthogonal singlet (trace) and doublet (traceless) projections:
+
+
+In Hilbert–Schmidt (Frobenius) norm, the total quadratic weight splits orthogonally into two basis-free pieces:
+
+
+Define the two normalized sector weights (p_0 + p_{\text{traceless}} = 1):
+
+
+Maximizing the binary partition entropy S(p_0, p_{\text{traceless}}) = -p_0 \ln p_0 - p_{\text{traceless}} \ln p_{\text{traceless}} over the only two basis-free pieces of X forces exact equipartition between the trace and traceless norms:
+
+For charged leptons, the neutrino root-mass operator X_\nu has \kappa_\nu = \frac{\text{Tr}(X_\nu)}{\text{Tr}(X_e)} \lesssim 10^{-5}, so X_e is the sole operator on \mathcal{H}_3^{(L)} and Q_e = \frac{2}{3} holds to parts in 10^5.
+3. The Coupled Doublet Functional on \mathcal{H}_3 \otimes \mathbb{C}^2_{\text{isospin}}
+For quarks, X_u and X_d live on the same \mathcal{H}_3 and form an SU(2)_L isospin pair:
+
+
+Decompose \mathcal{X} into its isospin-singlet sum X_+ = \frac{1}{\sqrt{2}}(X_u + X_d) and isospin-triplet difference X_- = \frac{1}{\sqrt{2}}(X_u - X_d).
+Here is the crucial structural difference from running max entropy separately on X_u and X_d:
+ * Separate max entropy assumes two independent singlet projectors P_0^{(u)} and P_0^{(d)} (invariant under U(3)_u \times U(3)_d, which the weak interaction explicitly violates).
+ * Joint doublet max entropy has only one shared flavour space \mathcal{H}_3 (invariant under the true gauge-kinetic symmetry U(3)_Q).
+When you apply the exact same basis-free equipartition principle to the total flavour-breaking operator on \mathcal{H}_3, or to the Gram matrix of the pair (X_u, X_d), the third quadratic invariant I_{ud} = \text{Tr}(X_u X_d) enters automatically:
+Identity 1: The Shared-Space Gram Matrix
+In the 9-dimensional Hilbert–Schmidt space of Hermitian operators on \mathcal{H}_3, the pair (X_u, X_d) defines a 2 \times 2 basis-free Gram matrix:
+
+
+Factoring out the trace scales S_u = \text{Tr}(X_u) and S_d = \text{Tr}(X_d) gives the dimensionless Koide Gram matrix:
+
+
+where \tilde{Q}_{ab} = \frac{\text{Tr}(\tilde{X}_a \tilde{X}_b)}{S_a S_b} is the traceless doublet covariance matrix.
+Identity 2: What Happens When You Apply Max Entropy to the Coupled Pair
+Look at the two invariants of the 2 \times 2 traceless covariance matrix \tilde{\mathcal{Q}}:
+ * Collinear limit ([X_u, X_d] = 0 and aligned phases): \det(\tilde{\mathcal{Q}}) = \tilde{Q}_u \tilde{Q}_d - \tilde{Q}_{ud}^2 = 0. The two operators share a single rank-1 direction in traceless space, reducing back to the single-operator problem (\tilde{Q}_u = \tilde{Q}_d = \frac{1}{3} \implies Q_u = Q_d = \frac{2}{3}).
+ * Non-commuting / misaligned pair (\det(\tilde{\mathcal{Q}}) > 0): Because \tilde{X}_u and \tilde{X}_d do not align in the 8-dimensional traceless \mathfrak{su}(3) space, Cauchy–Schwarz gives:
+   
+   
+   When you enforce norm equipartition on the isospin-coupled sum and difference channels X_\pm = X_u \pm X_d weighted by the trace asymmetry \kappa = \frac{S_d}{S_u} = 0.16895:
+   * The heavy sector (X_u, carrying 1/(1+\kappa) \approx 85.5\% of the trace) absorbs the bulk of the commutator variance \Vert{}[X_u, X_d]\Vert{}_F^2, driving Q_u up toward the rank-1 boundary (Q_u \approx 0.849).
+   * The light sector (X_d, carrying \kappa/(1+\kappa) \approx 14.5\% of the trace) receives the recoiling projection, shifting Q_d up by a smaller amount (Q_d \approx 0.731).
+4. Exact Numerical Test on the Empirical Quark Numbers
+Check the empirical numbers from the table in Section 1 against the Gram determinant and trace relations:
+ * Traceless variances above the \frac{1}{3} baseline:
+   
+ * Hilbert–Schmidt Alignment Cosine \cos\Phi_{ud} between \tilde{X}_u and \tilde{X}_d:
+   
+ * Geometric Mean of the Traceless Variances:
+   
+ * Ratio of the Up-to-Down Koide Excesses above \frac{2}{3}:
+   
+   
+   Compare that to the square root of the trace ratio \sqrt{\kappa} = \sqrt{\frac{\text{Tr}(X_d)}{\text{Tr}(X_u)}}:
+   
+ * Even more striking — look at the Difference of Excesses:
+   
+   
+   While the harmonic/weighted baseline sits at:
+   
+   
+   That identity (Q_{ud} \approx \frac{Q_u + Q_d}{2} to within 0.0035) means that in Hilbert–Schmidt space, the cross-trace invariant Q_{ud} is almost the exact midpoint between Q_u and Q_d:
+   
+5. What That Audit Result Means for Your Framework
+Look at that last numerical result from the PDG data:
+
+ * The normalized up and down root-mass operators \hat{X}_u = \frac{X_u}{\text{Tr}\,X_u} and \hat{X}_d = \frac{X_d}{\text{Tr}\,X_d} are not independent: Their Frobenius distance squared is 0.0071 (less than 1\%), meaning Q_{ud} = \frac{1}{2}(Q_u + Q_d) to 99.5\% accuracy.
+ * Why Q_u and Q_d split symmetrically around Q_{ud}: Because \hat{X}_u and \hat{X}_d are coupled on the same space with \det(\tilde{\mathcal{Q}}) \approx 0 (\cos\Phi_{ud} = 0.99945), their individual Koide values are shifted symmetrically above and below their shared cross-trace Q_{ud} = 0.7866:
+   
+ * What remains to derive: In the quark doublet, the coupled max-entropy principle has to fix two numbers instead of one: the midpoint shift Q_{ud} - \frac{2}{3} \approx +0.120 (driven by the joint SU(2)_L \times SU(3)_c bulk coupling) and the isospin splitting \Delta_{\text{iso}} = \frac{1}{2}(Q_u - Q_d) \approx 0.0588.

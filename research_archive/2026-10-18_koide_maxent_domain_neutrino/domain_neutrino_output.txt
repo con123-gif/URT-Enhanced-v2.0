@@ -1,0 +1,46 @@
+========================================================================================
+T1  DOMAIN CHECK - charged leptons: pole masses vs running (MS-bar) masses at M_Z, one-loop QED
+   pole masses      Q = 0.66666446 +- 5.1e-06   (-0.43 sigma from 2/3)
+   running at M_Z   m = [4.8830000e-01 1.0286400e+02 1.7473707e+03] MeV
+                    Q = 0.667833   misses 2/3 by +1.17e-03 = 230x the pole error bar
+   T1: pass - the rule holds on the physical spectrum and not on running masses
+========================================================================================
+T2  NEUTRINOS - solve Q = 2/3 on signed sqrt-masses, both orderings, every sign pattern
+   NuFIT 6.0 (with SK-atm)
+     NO signs (-1, 1, 1)   lightest   0.3642 meV | m = [ 0.3642  8.6621 50.1312] meV | sum  59.157 meV | m_beta  8.85 meV | 3delta 1.4378
+     IO signs (1, 1, -1)   lightest   2.9168 meV | m = [49.1692 49.925   2.9168] meV | sum 102.011 meV | m_beta 48.85 meV | 3delta 3.1256
+   JUNO d21 + NuFIT d31
+     NO signs (-1, 1, 1)   lightest   0.3648 meV | m = [ 0.3648  8.6679 50.1312] meV | sum  59.164 meV | m_beta  8.86 meV | 3delta 1.4383
+     IO signs (1, 1, -1)   lightest   2.9167 meV | m = [49.1682 49.925   2.9167] meV | sum 102.010 meV | m_beta 48.86 meV | 3delta 3.1256
+   NuFIT 6.0 (no SK-atm)
+     NO signs (-1, 1, 1)   lightest   0.3621 meV | m = [ 0.3621  8.6621 50.3402] meV | sum  59.364 meV | m_beta  8.85 meV | 3delta 1.4343
+     IO signs (1, 1, -1)   lightest   2.9322 meV | m = [49.4338 50.1856  2.9322] meV | sum 102.552 meV | m_beta 49.12 meV | 3delta 3.1258
+   (no all-positive solution exists in either ordering: Q = 2/3 forces one negative Dirac eigenvalue)
+========================================================================================
+T3  COSMOLOGY - DESI DR2 + CMB: sum < 64.2 meV (LambdaCDM, 95%); 53 meV (Feldman-Cousins); 163 meV (w0waCDM)
+   NuFIT 6.0 (with SK-atm)  NO: sum  59.157 meV -> LambdaCDM allowed, FC excluded, w0waCDM allowed
+   NuFIT 6.0 (with SK-atm)  IO: sum 102.011 meV -> LambdaCDM excluded, FC excluded, w0waCDM allowed
+   JUNO d21 + NuFIT d31     NO: sum  59.164 meV -> LambdaCDM allowed, FC excluded, w0waCDM allowed
+   JUNO d21 + NuFIT d31     IO: sum 102.010 meV -> LambdaCDM excluded, FC excluded, w0waCDM allowed
+   NuFIT 6.0 (no SK-atm)    NO: sum  59.364 meV -> LambdaCDM allowed, FC excluded, w0waCDM allowed
+   NuFIT 6.0 (no SK-atm)    IO: sum 102.552 meV -> LambdaCDM excluded, FC excluded, w0waCDM allowed
+   oscillation floor for NO (m1 = 0): 58.784 meV - the NO solution sits 0.37 meV above it
+   T3: pass - surviving ordering: ['NO']
+========================================================================================
+T4  PHASE RELATION (Brannen 2006 hypothesis): 3 delta_nu = 3 delta_e + pi/4
+   3 delta_e = 0.666666141  (Q = 2/3 exact, m_tau = 1776.96903 MeV)  ->  predicted 3 delta_nu = 1.452064
+   predicted signed sqrt-masses (units of mu): [-0.19581  0.94404  2.25176]  Q = 0.666666666667
+   -> one negative eigenvalue, on the lightest state; normal ordering
+   predicted R = dm2_21 / dm2_31 = 0.030839
+   NuFIT 6.0 (with SK-atm)  R = 0.029805 +- 0.000792  pull +1.30 sigma | 3delta_nu(data) = 1.4378 +- 0.0111 vs 1.4521 | relation needs dm2_21 = 7.750e-5 (measured 7.49 +- 0.19)
+   JUNO d21 + NuFIT d31     R = 0.029845 +- 0.000533  pull +1.86 sigma | 3delta_nu(data) = 1.4383 +- 0.0075 vs 1.4521 | relation needs dm2_21 = 7.750e-5 (measured 7.50 +- 0.12)
+   NuFIT 6.0 (no SK-atm)    R = 0.029558 +- 0.000800  pull +1.60 sigma | 3delta_nu(data) = 1.4343 +- 0.0113 vs 1.4521 | relation needs dm2_21 = 7.815e-5 (measured 7.49 +- 0.19)
+   T4: pass at the 3-sigma standard (largest pull +1.86 sigma)
+========================================================================================
+CHECKS - substitute the solutions back
+   NuFIT 6.0 (with SK-atm)  NO: Q - 2/3 = +0.0e+00 | dm2_21 +2.2e-16 | dm2_3l -2.2e-16  (relative)
+   NuFIT 6.0 (with SK-atm)  IO: Q - 2/3 = +1.1e-16 | dm2_21 -4.0e-15 | dm2_3l +0.0e+00  (relative)
+   JUNO d21 + NuFIT d31     NO: Q - 2/3 = +1.1e-16 | dm2_21 +0.0e+00 | dm2_3l +2.2e-16  (relative)
+   JUNO d21 + NuFIT d31     IO: Q - 2/3 = +0.0e+00 | dm2_21 -6.0e-15 | dm2_3l +2.2e-16  (relative)
+   NuFIT 6.0 (no SK-atm)    NO: Q - 2/3 = +0.0e+00 | dm2_21 +2.2e-16 | dm2_3l -2.2e-16  (relative)
+   NuFIT 6.0 (no SK-atm)    IO: Q - 2/3 = +0.0e+00 | dm2_21 +1.8e-15 | dm2_3l -2.2e-16  (relative)

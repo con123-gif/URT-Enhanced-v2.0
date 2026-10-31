@@ -1,0 +1,9 @@
+u* = (pi/12 - delta*)/(pi/12) = 0.15117430586 +- 1.5e-09   (a match must agree to ~5e-09)
+special point of the period-3 window                  r  floor r^2(4-r)/16  lowest 3-cycle pt
+onset (saddle-node), r = 1+sqrt8         3.828427124747      0.15716991411      0.15992846489
+superstable 3-cycle                      3.831874055283      0.15428979707      0.15428979707
+3 -> 6 flip (multiplier -1)              3.841499007544      0.14618858212      0.14872047045
+superstable 6-cycle                      3.844568792194      0.14358646768      0.14742143531
+closest of these to u*: 0.14872047045  off -2.45e-03 = -1.6e+06 sigma
+the floor equals u* at r = 3.835587771850; the lowest 3-cycle point equals u* at r = 3.836538545948 (3-cycle multiplier there -0.556333)
+neither r is one of the special points above, so u* is a floor only after choosing r to make it one
