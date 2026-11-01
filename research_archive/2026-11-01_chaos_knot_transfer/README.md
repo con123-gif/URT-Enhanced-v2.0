@@ -1,111 +1,113 @@
 # Knot preservation under positive Cathedral transfer
 
 **Date:** 2026-11-01  
-**Status:** CLOSED / EXACT for the stated finite-dimensional linear construction; **physical identification OPEN**.  
-**Scope:** This is an algebraic/topological result about a particular real three-dimensional realization of the Cathedral common/relative transfer. It is not a proof that the full Cathedral dynamics generates Lorenz knots, that periodic physical trajectories are preserved, or that a theory of nature is complete.
+**Status:** CLOSED / EXACT for the specified finite-dimensional linear construction; **physical identification OPEN**.  
+**Scope:** This is an algebraic/topological result about a real three-dimensional realization of the Cathedral common/relative transfer. It is not a proof that the full Cathedral dynamics generates Lorenz knots, that physical periodic trajectories are preserved, or that a theory of nature is complete.
 
-## Motivation: chaos can have topological order
+## Motivation: chaos can have a topological skeleton
 
-Periodic orbits of a smooth three-dimensional flow may define knots, and distinct disjoint periodic orbits may have integer linking numbers. Template theory for Lorenz-type dynamics (Birman–Williams) is motivation for seeking topology among selected histories. It does **not** directly yield a Lorenz template from the Cathedral finite operator.
+Periodic orbits of a smooth three-dimensional flow may define knots; distinct, disjoint periodic orbits may have integer linking numbers. Lorenz-type template theory (Birman–Williams) motivates seeking topology among selected histories. It does **not** directly yield a Lorenz template from the Cathedral finite operator.
 
-A knot type is preserved under an *ambient isotopy*: a continuous family of homeomorphisms of the ambient three-dimensional space starting at the identity. In a changing dynamical system, periodic orbits can be born or lost at bifurcations; one must not infer permanent existence of an individual orbit from topological invariance alone.
+A knot type is preserved under an *ambient isotopy*: a continuous family of homeomorphisms of the three-dimensional ambient space starting at the identity. In a parameter-dependent dynamical system, periodic orbits may be created or destroyed at bifurcations. Invariance of knot type does not imply permanent existence of an orbit.
 
-## Frozen rail and transfer
+## Frozen rail and positive transfer
 
-Let
+Take the finite Cathedral quantities
 
-```text
-phi   = (1 + sqrt(5))/2
-dstar = 80*pi/(1053*phi)
-dcl   = 3/20
-Delta = dcl - dstar = 0.0024891898404204...  (strictly between 0 and 1)
-```
+$$
+\phi=\frac{1+\sqrt5}{2},\quad
+d_\star=\frac{80\pi}{1053\phi},\quad
+d_{\mathrm{cl}}=\frac3{20},\quad
+\Delta=d_{\mathrm{cl}}-d_\star
+=0.0024891898404204\ldots .
+$$
 
-On a *real* Euclidean vector space with mutually orthogonal projectors
-(P_c,P_r) satisfying
+Let $P_c,P_r$ be **orthogonal projectors** on a real Euclidean vector space, with
 
-[
-P_c^2=P_c,qquad P_r^2=P_r,qquad P_cP_r=P_rP_c=0,qquad P_c+P_r=I,
-]
+$$
+P_c^2=P_c,\quad P_r^2=P_r,\quad
+P_cP_r=P_rP_c=0,\quad P_c+P_r=I.
+$$
 
-define the amplitude transfer
+Define the amplitude map and its positive-transfer square:
 
-[
-B=P_c+Delta P_r.
-]
+$$
+B=P_c+\Delta P_r,\qquad
+T=B^\dagger B=P_c+\Delta^2P_r.
+$$
 
-It is self-adjoint and positive definite when both projectors are orthogonal. Its positive-transfer square is
+Idempotence and orthogonality give, for every integer $n\geq1$,
 
-[
-T=B^dagger B=P_c+Delta^2P_r.
-]
+$$
+\boxed{B^n=P_c+\Delta^nP_r},
+\qquad
+\boxed{T^n=P_c+\Delta^{2n}P_r}.
+$$
 
-For any positive integer (n), idempotence and orthogonality give
+**Strict positive gap:** Since $d_\star>0$, we have $\Delta<3/20<1$. For the lower bound, $\phi>8/5$ and $\pi<22/7$ give
 
-[
-oxed{B^n=P_c+Delta^n P_r},qquad
-oxed{T^n=P_c+Delta^{2n}P_r}.
-]
+$$
+d_\star<
+\frac{80(22/7)}{1053(8/5)}
+=\frac{8800}{58968}<\frac3{20},
+$$
 
-**Proof that (0<Delta<1).** Clearly (d_star>0), hence (Delta<3/20<1). Also (phi>8/5) and (pi<22/7) imply
-(d_star<80(22/7)/(1053(8/5))=8800/58968<3/20), hence (Delta>0).
+so **$0<\Delta<1$**. In particular, $B$ is invertible.
 
-## Theorem: ambient-isotopy preservation of knots
+## Theorem — knot preservation by Cathedral transfer
 
-**Hypotheses.** Work in (mathbb R^3). Let (P_c) be an *orthogonal rank-one* projector, (P_r=I_3-P_c) have rank two, and (0<Delta<1). Let (K:S^1hookrightarrowmathbb R^3) be any smooth embedded closed curve.
+**Hypotheses.** Work in $\mathbb R^3$ with $P_c$ an orthogonal rank-one projector and $P_r=I_3-P_c$ the rank-two orthogonal complement. Let $K:S^1\hookrightarrow\mathbb R^3$ be a smooth embedded closed curve and let $n\geq1$ be finite.
 
-**Claim.** For every finite positive integer (n), (B^n(K)) has the same knot type as (K). If (K_1,K_2) are two disjoint oriented closed curves, their mutual integer linking number is unchanged under simultaneous application of (B^n).
+**Claim.** The image $B^n(K)$ has the same knot type as $K$. If $K_1,K_2$ are disjoint oriented embedded closed curves, their integer linking number is unchanged under simultaneous application of $B^n$.
 
-**Proof.** Consider
+**Proof.** For $s\in[0,1]$ define
 
-[
-F_s=P_c+igl((1-s)+sDelta^nigr)P_r,qquad 0le sle1.
-]
+$$
+F_s=P_c+a_sP_r,\qquad
+a_s=(1-s)+s\Delta^n>0.
+$$
 
-For each (s), write (a_s=(1-s)+sDelta^n>0). In an orthonormal common/relative basis, (F_s=operatorname{diag}(1,a_s,a_s)), so
+In an orthonormal common/relative basis,
 
-[
-det F_s=a_s^2>0.
-]
+$$
+F_s=\operatorname{diag}(1,a_s,a_s),\qquad
+\det(F_s)=a_s^2>0.
+$$
 
-Every (F_s) is an orientation-preserving linear diffeomorphism of the entire ambient space, (F_0=I_3), and (F_1=B^n). Thus ((F_s)) is an ambient isotopy taking (K) to (B^n(K)), proving knot-type invariance. It simultaneously takes a disjoint two-component link to another disjoint link and preserves orientations, hence preserves its integer linking number. QED.
+Thus every $F_s$ is an orientation-preserving linear diffeomorphism of the whole ambient space. Because $F_0=I_3$ and $F_1=B^n$, the family $(F_s)_{0\leq s\leq1}$ is an ambient isotopy. It takes $K$ continuously to $B^n(K)$ without singularities or self-intersections. The same ambient isotopy preserves disjointness and oriented linking number for a two-component link. QED.
 
-The argument generalizes to finite-dimensional Euclidean spaces with positive relative eigenvalues, but classical *three-dimensional* knot classification and linking-number conclusions are asserted here only for the explicitly stated (mathbb R^3) realization.
+The argument extends as an invertible linear isotopy to higher-dimensional Euclidean spaces, but the classical **three-dimensional** knot-type/linking statements here are explicitly restricted to the above $\mathbb R^3$ specialization.
 
-## The conditional 24-composition result
+## Conditional 24-step statement
 
-Assuming **24 successive applications of the same amplitude map** (B) to the same ambient three-dimensional embedding,
+**Only if** 24 successive applications of the *same* $B$ are prescribed in this same three-dimensional ambient realization,
 
-[
-B^{24}=P_c+Delta^{24}P_r,qquad
-det(B^{24})=Delta^{48}>0.
-]
+$$
+B^{24}=P_c+\Delta^{24}P_r,\qquad
+\det(B^{24})=\Delta^{48}>0.
+$$
 
-Numerically, using the frozen rail,
+With the frozen rail:
 
-```text
-Delta^24 = 3.20178727342021e-63
-Delta^48 = 1.02514417442356e-125
-```
+    Delta^24 = 3.20178727342021e-63  (relative amplitude)
+    Delta^48 = 1.02514417442356e-125 (amplitude squared; also determinant for ranks 1+2)
 
-The first number is the relative *amplitude* factor. The second is both its square (relative weight for this rank-one/rank-two model) and the determinant of (B^{24}). These meanings must not be confused in a different-rank model. The determinant is tiny but strictly nonzero: **there is no exact annihilation at any finite n.**
+These are strong suppressions, **not exact annihilation at finite transfer depth**. The determinant formula is specific to the rank-two relative subspace: more generally $\det(B^n)=\Delta^{n\,\operatorname{rank}(P_r)}$.
 
-A 24-track *ordering* (mathbb Z/24mathbb Z) does not itself prove 24 iterations of an identical map. That physical/model identification is a separate open gate. Also, (B) does not by itself send a periodic orbit of a specified dynamical vector field to a periodic orbit of *that same* vector field; this theorem concerns the geometric image of embedded curves.
+The cyclic track structure $\mathbb Z/24\mathbb Z$ does **not** on its own imply 24 iterations of the same map. That identification must be separately derived. Nor does $B$ automatically map a periodic orbit of a given vector field to another orbit of the **same** vector field; the theorem is about embedded geometric curves under a linear ambient diffeomorphism.
 
-## Connections, not proven consequences
+## Where this sits in the *whole* Cathedral
 
-The full Cathedral includes five Platonic Hodge complexes (190 dimensions), the (H_{13}oplus H_{51}) history carrier (64 dimensions), 24-fold ordering, (D_6	o H_3), hidden sectors, and higher-dimensional hexagonal/hypercube and Golay/Leech structures. None of these structures is being collapsed into the single three-dimensional transfer specialization used in this theorem.
+The full construction also contains all five Platonic Hodge complexes (190-dimensional total), the $H_{13}\oplus H_{51}$ 64-history carrier, 24-fold ordering, $D_6\rightarrow H_3$, hidden sectors, and higher-dimensional hexagonal/hypercube and Golay/Leech structures. **They are not reduced to the three-dimensional model used in the theorem.** No coupling to these additional structures has been inferred from the knot-preservation proof.
 
-The next **open** mathematical gate is to construct from the full bounded-chaos history dynamics (not from arbitrarily chosen diagrams) explicit embedded periodic trajectories and a topological template/braid map, then calculate knot/link invariants and check compatibility with the actual transfer and symmetry action. Failure to find such a map would limit or refute this proposed connection, without invalidating the linear isotopy theorem above.
+**Open gate:** derive from the full bounded-chaos history process an actual flow, return map, or embedded periodic-trajectory family with a braid/template description. Then compute knot and linking invariants and check compatibility with the actual operator and symmetries. This is a falsifiable programme, not a completed inference.
 
-## Reproduction
+## Executable regression check
 
-Run:
+Run from repository root:
 
-```bash
-python -m pytest tests/test_cathedral_knot_transfer_2026_11_01.py
-```
+    python -m pytest tests/test_cathedral_knot_transfer_2026_11_01.py
 
-The executable tests check the frozen gap, exact projector-power identity in the diagonal realization, positivity along the displayed isotopy, and the 24-composition numerical invariants. Topological invariance itself follows from the rigorous invertible ambient-isotopy proof, not from floating-point testing.
+The accompanying tests check frozen constants, projector identities, matrix powers, positivity of the displayed isotopy, and the 24-step numerical factors. Topological invariance itself is the theorem proved above, **not** a conclusion from floating-point test output.
 
-**Provenance:** Research discussion of Lorenz knots and bounded chaos, 2026-11-01. The theorem here is a direct specialization of standard ambient-isotopy principles, not claimed to be novel general knot theory.
+**Provenance:** Newton's Cathedral bounded-chaos / Lorenz-knot discussion, 2026-11-01. The result is a specialization of standard ambient-isotopy theory; it is **not claimed** as a novel theorem of knot theory or experimental evidence of physical unification.
