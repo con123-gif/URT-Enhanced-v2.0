@@ -17,9 +17,11 @@ This repository is the **single primary workspace for Newton’s Cathedral**. Ne
 
 | Purpose | File |
 |---|---|
+| **Latest research-state handoff (7 November)** | [docs/LATEST_RESEARCH_STATE_2026-11-07.md](docs/LATEST_RESEARCH_STATE_2026-11-07.md) — entire late research frontier, source paths and dependencies |
+| **Saved ChatGPT Library sources** | [docs/SAVED_SOURCES_INDEX_2026-11-07.md](docs/SAVED_SOURCES_INDEX_2026-11-07.md) — 617 archived research files outside GitHub |
 | **Complete tracked-file index** | [FILE_INDEX.md](FILE_INDEX.md) — every file, run status and parameter status |
 | **Dated research field notebook** | [FIELD_NOTEBOOK.md](FIELD_NOTEBOOK.md) — findings, dead ends, and open questions |
-| **Current live state** | [docs/LIVE_STATE_2026-10-02.md](docs/LIVE_STATE_2026-10-02.md) |
+| Earlier canonical state (2 October) | [docs/LIVE_STATE_2026-10-02.md](docs/LIVE_STATE_2026-10-02.md) — read with the 7 November update |
 | Canonical Sept. 30 reference | [docs/CANONICAL_STATE_PLAIN_2026-09-30.md](docs/CANONICAL_STATE_PLAIN_2026-09-30.md) |
 | Closure status | [docs/CLOSURE_LEDGER.md](docs/CLOSURE_LEDGER.md) |
 | Claim status | [docs/CLAIM_LEDGER.md](docs/CLAIM_LEDGER.md) |
