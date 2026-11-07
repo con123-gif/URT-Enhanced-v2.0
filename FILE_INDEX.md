@@ -2,7 +2,7 @@
 
 **Index update:** 2026-11-07 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
 
-**Coverage:** **839 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the two navigation documents added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **841 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -87,8 +87,10 @@
 - [`conversation_archive/RECOVERED_2026-10-11_INTEGRATED_AUDIT_PART_2.md`](conversation_archive/RECOVERED_2026-10-11_INTEGRATED_AUDIT_PART_2.md) — Research/continuity note: RECOVERED 2026 10 11 INTEGRATED AUDIT PART 2; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`conversation_archive/RECOVERED_FALSE_NO_GO_REGISTER_2026-10-14.md`](conversation_archive/RECOVERED_FALSE_NO_GO_REGISTER_2026-10-14.md) — Failure/no-go/correction record: RECOVERED FALSE NO GO REGISTER 2026 10 14; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 
-### docs (64)
+### docs (66)
 
+- [`docs/SAVED_SOURCES_INDEX_2026-11-07.md`](docs/SAVED_SOURCES_INDEX_2026-11-07.md) — Inventory of 617 research files saved in ChatGPT Library beyond GitHub; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
+- [`docs/LATEST_RESEARCH_STATE_2026-11-07.md`](docs/LATEST_RESEARCH_STATE_2026-11-07.md) — Most current cross-archive technical research handoff and source status; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`docs/A5_HIDDEN_FOUR_NONLINEAR_RETURN_2026-10-14.md`](docs/A5_HIDDEN_FOUR_NONLINEAR_RETURN_2026-10-14.md) — Research/continuity note: A5 HIDDEN FOUR NONLINEAR RETURN 2026 10 14; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`docs/A5_ORDER_FIVE_GOLAY_ROTATION_CLASSES_2026-10-25.md`](docs/A5_ORDER_FIVE_GOLAY_ROTATION_CLASSES_2026-10-25.md) — Research/continuity note: A5 ORDER FIVE GOLAY ROTATION CLASSES 2026 10 25; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`docs/ACTUAL_H64_SOURCE_RESPONSE_2026-10-14.md`](docs/ACTUAL_H64_SOURCE_RESPONSE_2026-10-14.md) — Research/continuity note: ACTUAL H64 SOURCE RESPONSE 2026 10 14; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
