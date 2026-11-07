@@ -1,0 +1,748 @@
+# Newton's Cathedral — saved-source inventory outside GitHub
+
+**Inventory date:** 2026-11-07 · **Scope:** ChatGPT Library's two dedicated research trees, plus selected current root-level Cathedral/URT artifacts. This is a *navigation manifest*, not proof of file content or originality. These Library paths are **not GitHub filesystem paths**: use the user's connected ChatGPT Library to open the originals. Files may duplicate archived GitHub material; do not count duplicate names as independent experiments.
+
+**Read first:** [Latest cross-archive research state](LATEST_RESEARCH_STATE_2026-11-07.md) · [Canonical GitHub file index](../FILE_INDEX.md) · [Dated notebook](../FIELD_NOTEBOOK.md).
+
+## Coverage
+
+| Library source | File count | Content level |
+|---|---:|---|
+| `/Cathedral/` | 175 | All files listed; content verification not implied |
+| `/Newton's Cathedral URT/` | 442 | All files listed; content verification not implied |
+| `/ (selected recent research artifacts)` | 92 | Filtered current root listing; not an exhaustive root-library inventory |
+| `/URT_GitHub_Bridge_Temp/` | 103 | Transport/archive chunks; counted separately, not enumerated as independent research |
+| **Dedicated research trees** | **617** | Comprehensive filenames for the two named trees |
+
+**Source limits:** The connected Google Drive also contains `chat.html` (321,040,558 bytes, October 17, 2026), `all_my_colab_work_combined.md` (~53 MB), `Cathedral_URT_Master_Proof.ipynb` (~31 MB), and additional archives. The large HTML cannot be retrieved in one piece through the available connector limits. The 2026-11-04 conversation reconciliation indexes 343 conversations and 24,174 messages but reports no access to complete raw JSON shards. **Do not claim every message has been read.**
+
+**Review status:** Unless a separate source script, log, results file, or live execution explicitly establishes otherwise, assume that each file's function and free parameters still require code-level classification. The labels below classify *file type*, not mathematical truth. No outside Yang–Mills research is adopted into this project.
+
+## `/Cathedral/` (175 research files)
+
+- `/Cathedral/Cathedral_Live_State_v58.md` — Research note; content not individually verified here.
+- `/Cathedral/Cathedral_Live_State_v59.md` — Research note; content not individually verified here.
+- `/Cathedral/Cathedral_Live_State_v60.md` — Research note; content not individually verified here.
+- `/Cathedral/Cathedral_Live_State_v61.md` — Research note; content not individually verified here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/000.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/001.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/002.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/003.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/004.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/005.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/006.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/007.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/008.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/009.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/010.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/011.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/012.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/013.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/014.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/015.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/016.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/017.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/018.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/019.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/020.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/021.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/022.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/023.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/024.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/025.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/026.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/027.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/028.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/029.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/030.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/031.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/032.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/033.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/034.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/035.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/036.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/037.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/038.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/039.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/040.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/041.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/042.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/043.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/044.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/045.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/bin00.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/bin02.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/bin03.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/bin04.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/bin04(1).txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/bin05.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/bin07.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_0.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_1.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_2.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_3.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_cathedral-oct17-recovery.yml` — Archived file; not individually examined.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_manifest_recovery.json` — Model values/manifest; content not verified here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_README_RECOVERY.md` — Research note; content not individually verified here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_restore_matrices.py` — Python source; run unverified in this inventory.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/final_test_oct17_recovery.py` — Python source; run unverified in this inventory.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/original_v61_source_transfer.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/part_00.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/part_01.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/part_02.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/part_03.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/part_04.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/part_05.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/probe.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/rawpart00.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/rawpart01.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/rawpart02.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/rawpart03.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/rawpart04.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/rawpart05.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/sample.json` — Model values/manifest; content not verified here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_00.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_01.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_02.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_03.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_04.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_05.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_06.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_07.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/v61_08.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Repair_Staging_2026-10-17/verify_repo_expected.json` — Model values/manifest; content not verified here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/CATHEDRAL_VORTEX_D6_ICO_NEW_EXACT_RESULT_2026-10-23.zip.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part01.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part02.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part03.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part04.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part05.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part06.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part07.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part08.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_RECOVERED_MISSING_FOUNDATIONS_2026-10-23.zip.part09.b64.txt` — Text/provenance; not independently checked here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/GROK_START_HERE_RECOVERED.md` — Research note; content not individually verified here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/kl_urt_koide_action.py` — Python source; run unverified in this inventory.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/NEW_VORTEX_CATHEDRAL_RESULT_2026-10-23.md` — Research note; content not individually verified here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/RECOVERY_SHA256_MANIFEST.json` — Model values/manifest; content not verified here.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/run_joint_vacuum.py` — Python source; run unverified in this inventory.
+- `/Cathedral/GitHub_Upload_Staging_2026-10-23/ZIP_PARTS_SHA256_MANIFEST.json` — Model values/manifest; content not verified here.
+- `/Cathedral/GitHubRestoreStaging/000.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/001.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/002.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/003.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/004.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/005.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/006.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/007.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/008.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/009.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/010.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/011.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/012.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/013.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/014.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/015.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/016.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/017.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/018.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/019.b64` — Archived file; not individually examined.
+- `/Cathedral/GitHubRestoreStaging/native_chiral_selected_history.py` — Python source; run unverified in this inventory.
+- `/Cathedral/Newton_Cathedral_Full_v58.py` — Python source; run unverified in this inventory.
+- `/Cathedral/Newton_Cathedral_Full_v59.py` — Python source; run unverified in this inventory.
+- `/Cathedral/Newton_Cathedral_Full_v61.py` — Python source; run unverified in this inventory.
+- `/Cathedral/Newton_Cathedral_URT_Full_Archive_v58.zip` — Research bundle; not unpacked here.
+- `/Cathedral/Newton_Cathedral_URT_Full_Archive_v59.zip` — Research bundle; not unpacked here.
+- `/Cathedral/Newton_Cathedral_URT_Full_Paper_v35.docx` — Archived file; not individually examined.
+- `/Cathedral/Newton_Cathedral_v26_full_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v27_full_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v32_full_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v54_Explicit_Local_Hamiltonian_Theorem.md` — Research note; content not individually verified here.
+- `/Cathedral/Newton_Cathedral_v55_Nonthermal_Mirror_Abundance_Bound.md` — Research note; content not individually verified here.
+- `/Cathedral/Newton_Cathedral_v56_A4_Continuum_and_Radiative_Closure.md` — Research note; content not individually verified here.
+- `/Cathedral/Newton_Cathedral_v57_Postlock_Supernova_Nature_Audit.md` — Research note; content not individually verified here.
+- `/Cathedral/Newton_Cathedral_v58_Closure_Bundle.zip` — Research bundle; not unpacked here.
+- `/Cathedral/Newton_Cathedral_v58_full_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v58_manifest.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v59_full_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v59_manifest.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v59_quick_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v59_Unified_Bundle.zip` — Research bundle; not unpacked here.
+- `/Cathedral/Newton_Cathedral_v59_Unified_Causal_Spine_Theorem.md` — Research note; content not individually verified here.
+- `/Cathedral/Newton_Cathedral_v60_Zero_Mode_Phase_Rail_Closure_Theorem.md` — Research note; content not individually verified here.
+- `/Cathedral/Newton_Cathedral_v61_Breathing_Singlet_Deflation_Theorem.md` — Research note; content not individually verified here.
+- `/Cathedral/Newton_Cathedral_v61_full_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newton_Cathedral_v61_quick_report.json` — Model values/manifest; content not verified here.
+- `/Cathedral/Newtons_Cathedral_Existing_Science_Evidence_Dossier_v59.docx` — Archived file; not individually examined.
+- `/Cathedral/README_Cathedral_v58.md` — Research note; content not individually verified here.
+- `/Cathedral/urt_selected_face_overlap_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_selected_face_overlap_no_go.py` — Python source; run unverified in this inventory.
+- `/Cathedral/urt_v26_prediction_lock.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v27_prediction_lock.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v32_theory_definition_lock.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v33_3adic_holdout_audit_results.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v33_3adic_holdout_audit.py` — Python source; run unverified in this inventory.
+- `/Cathedral/urt_v34_desi_dr2_full_bao_likelihood_results.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v34_desi_dr2_full_bao_likelihood.py` — Python source; run unverified in this inventory.
+- `/Cathedral/urt_v35_evidence_checkpoint_lock.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v35_wall_current_residue_results.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v35_wall_current_residue.py` — Python source; run unverified in this inventory.
+- `/Cathedral/urt_v59_unified_causal_spine_results.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v59_unified_causal_spine.py` — Python source; run unverified in this inventory.
+- `/Cathedral/urt_v60_zero_mode_phase_rail_closure_results.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v60_zero_mode_phase_rail_closure.py` — Python source; run unverified in this inventory.
+- `/Cathedral/urt_v61_breathing_singlet_deflation_results.json` — Model values/manifest; content not verified here.
+- `/Cathedral/urt_v61_breathing_singlet_deflation.py` — Python source; run unverified in this inventory.
+- `/Cathedral/urt_v61_integration_manifest.json` — Model values/manifest; content not verified here.
+
+## `/Newton's Cathedral URT/` (442 research files)
+
+- `/Newton's Cathedral URT/02_selected_icosahedron.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/02_urt_selected_icosahedron.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/03_energy_convergence.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/03_entropy_convergence.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/04_laplacian_spectrum.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/05_resonator_frequency_response.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/05_selected_laplacian_spectrum.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/06_resonator_response.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/07_damage_recovery.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035571.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035571(1).png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035571(2).png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035571(3).png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035571(4).png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035571(5).png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035798.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035875.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000035941.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036208.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036208(1).jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036299.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036307.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036307(1).png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036359.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036450.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036451.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036477.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036477(1).jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036479.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1000036601.jpg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1781691318395.jpeg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1781948335934.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1782565308589.jpeg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/1783504784218.jpeg` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/5D base manifold and 13-state fibre.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/a4_colour_lepton_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/a4_colour_lepton_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/active_core.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/ADD_ONLY.patch` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/AUDIT_REPORT.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/BINARY_ASSET_SHA256_2026-09-30.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/binomial_model_overlap.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/branch_probability_model_comparison.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/cathedral_canonical_hodge_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/cathedral_dimensionless_core_v2_6_output.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/cathedral_dimensionless_core_v2_6.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/cathedral_finite_dirac_trace_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Cathedral_Framework_Full_Manuscript.pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/cathedral_framework(1).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/cathedral_full_closure_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/cathedral_hopf_dirac_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_Live_State_v46.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_Master_Index.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/cathedral_master_verifier.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/cathedral_unified_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Cathedral_URT_Theory_of_Nature_2026-08-22.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/Cathedral_v115_URT_Solution_Ledger.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/Cathedral_v116_Hodge_Polarization_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/cathedral_v116_hodge_polarization_verify.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/Cathedral_v116_J_complex_structure.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/Cathedral_v116_K_face_circulation.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/Newton_Cathedral_v115_URT_Solution_Closure.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/Newton_Cathedral_v116_Golden_Hopf_Anosov_Hodge_Closure.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/README_Cathedral_v116.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/URT_5D_Manifold_Reference.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Cathedral_v117_Final_Mathematical_Closure_2026-09-12/Cathedral_v117_A4_3_to_3prime_intertwiner.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/Cathedral_v117_Final_Mathematical_Closure_2026-09-12/cathedral_v117_final_closure_verify.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Cathedral_v117_Final_Mathematical_Closure_2026-09-12/Cathedral_v117_Final_Mathematical_Closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v117_Final_Mathematical_Closure_2026-09-12/Newton_Cathedral_v117_Final_Mathematical_Closure.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v118_QDL_Gravity_Certification_2026-09-12/Cathedral_v118_QDL_Gravity_Certification_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v118_QDL_Gravity_Certification_2026-09-12/cathedral_v118_qdl_gravity_certification_verify.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Cathedral_v118_QDL_Gravity_Certification_2026-09-12/Newton_Cathedral_v118_QDL_Gravity_Certification.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v119_Klein_Quadruple_Force_Bridge_2026-09-12/Cathedral_v119_Klein_Quadruple_Force_Bridge_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v119_Klein_Quadruple_Force_Bridge_2026-09-12/Newton_Cathedral_v119_Klein_Quadruple_Force_Bridge.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v120_D4_Triality_Sheet_Gauge_Bridge_2026-09-12/Cathedral_v120_D4_Triality_Sheet_Gauge_Bridge_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v120_D4_Triality_Sheet_Gauge_Bridge_2026-09-12/Newton_Cathedral_v120_D4_Triality_Sheet_Gauge_Bridge.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v121_Four_Sheet_Differential_One_Action_2026-09-12/Cathedral_v121_Four_Sheet_Differential_One_Action_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v121_Four_Sheet_Differential_One_Action_2026-09-12/Newton_Cathedral_v121_Four_Sheet_Differential_One_Action.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v123_Mathematical_Endpoint_2026-09-12/Cathedral_v123_Mathematical_Endpoint_Scale_Orbit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v123_Mathematical_Endpoint_2026-09-12/Newton_Cathedral_v123_Mathematical_Endpoint_Scale_Orbit.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v124_Whole_Project_Symbiotic_Closure_2026-09-12/Cathedral_v124_Whole_Project_Symbiotic_Closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v124_Whole_Project_Symbiotic_Closure_2026-09-12/Newton_Cathedral_v124_Whole_Project_Symbiotic_Closure.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/Cathedral_v129_Universe_Fallout_2026-09-12/Cathedral_v129_Universe_Fallout_Symbiotic_Theorem_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/Cathedral_v129_Universe_Fallout_2026-09-12/cathedral_v129_universe_fallout_verify.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Cathedral_v129_Universe_Fallout_2026-09-12/Newton_Cathedral_v129_Universe_Fallout_Symbiotic_Theorem.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/CATHEDRAL_WEEK_2026-07-13_TO_20_ADD_ONLY.patch` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/cathedral-higgs-normalization-additive.zip` — Research bundle; not unpacked here.
+- `/Newton's Cathedral URT/cathedral-week-2026-07-13-to-20-additive.zip` — Research bundle; not unpacked here.
+- `/Newton's Cathedral URT/cathedral-week-2026-07-13-to-20.bundle` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/chart-1.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Compression now determines plasma density.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/derive_a4_clifford_dirac.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/derive_outer_double_cover.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/derive_spin7_real_structure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/endpoint_conditioning_audit.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/endpoint_conditioning_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/exterior_algebra_master_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/exterior_algebra_master_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/figure4_digitized_curve.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/figure4_fit_summary.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/figure4_logistic_fit.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/framework_core.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/gate_identifiability_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/gate_identifiability_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/gauge_preserving_exterior_q_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/gauge_preserving_exterior_solver_q.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/golden_closure_final_audit.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/golden_gearbox_identifiability_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/golden_gearbox_identifiability_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/hopf_dirac_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/image-gen-1.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Late-night equations in a cluttered lab.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/linear_log_odds_bifurcation.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/lytollis_comprehensive_final-2.pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/lytollis_urt_closure_master_report.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/lytollis_urt_explicit_intertwiners_and_vacuum.npz` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/lytollis_urt_finite_closure_package.zip` — Research bundle; not unpacked here.
+- `/Newton's Cathedral URT/lytollis_urt_operator_closure_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/lytollis_urt_operator_closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/lytollis_urt_operator_erratum.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/lytollis_urt_oriented_chiral_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/lytollis_urt_oriented_chiral_data.npz` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/lytollis_urt_oriented_chiral_report.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/lytollis_urt_oriented_chiral_report(1).md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/lytollis_urt_oriented_chiral_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/MIGRATION_STATUS.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/minimal_response_theorem_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/minimal_response_theorem.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/N12_selected_structure.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/N4_selected_structure.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/N6_selected_structure.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Newton_Cathedral_Full.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Newtons_Cathedral_Mathematical_Oddity.pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Newtons_Cathedral_Mathematical_Oddity(1).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Newtons_Cathedral_Mathematical_Oddity(1)(1).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Newtons_Cathedral_Mathematical_Oddity(1)(2).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/newtons_cathedral.pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star Reactor Concept Infographic.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star redesign: emergent confinement closure.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star redesign: Q sensitivity to electrostatic well.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North star tuning_2025-10-12_182728 (1).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v3: emergent confinement.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v3: robustness to anomalous cross-field transport.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v4: vortex-only self-field robustness.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v5: dense pulsed vortex gain.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v6: transport threshold.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v7: effect of regenerating coherent vortex_self-field energy.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v8: reactor-scale vortex-only design.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/North Star v9: cold-vortex compression robustness.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/north_star_q_vs_bias.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/north_star_urt_control_comparison.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_urt_disturbance_Q.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/north_star_urt_dynamic_run.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_urt_optimized_design.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_urt_simulation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/north_star_urt_summary.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_urt_timeseries.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_urt_voltage_sensitivity.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_v6_transport_threshold.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_v6_transport_threshold.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/north_star_vortex_only_candidate.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/north_star_vortex_startup_payback.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/Optimized North Star: corrected disturbance recovery.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Optimized North Star: corrected Q during disturbances.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Optimized North Star: disturbance recovery.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Optimized North Star: Q during disturbances.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/oriented_joint_wilson_typed_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/oriented_joint_wilson_typed.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Original 100 µs confinement target: energy-balance failure.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/outer_spinor_return_flag_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/pi_phi_e_flow.pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/pi_phi_e_flow(1).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/pi_phi_e_flow(2).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/platonic_entry_stage_audit.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/RESULTS.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/RESULTS(1).txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/RESULTS(2).txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/run_chaos_to_structure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/run_endpoint_test.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/run_simulation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/run_urt_selection_simulation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/STAGE2_REPORT.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/stage2_summary.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/summary.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/test_covariant_golden_impedance.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/test_species_loaded_nonlinear_cycle.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/Unified Recursive Theory Framework.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Universal Recursive Topology Diagram.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Universal Recursive Tuning Infographic.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Updated North Star: reduced power balance under URT.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Updated North Star: URT closed-loop response.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/Urt_2025-10-16_195050_Clean_Final (1).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/urt_a4_bivector_icosahedral_lift_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_a4_bivector_icosahedral_lift.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_a4_complex_kkt_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_a4_complex_kkt_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_a4_complex_locality_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_a4_complex_locality_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_a4_gauge_action_closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_a4_gauge_action_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_a4_lower_envelope_proof_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_a4_lower_envelope_proof.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_a4_minimax_locality_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_a4_minimax_locality_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_a4_time_reflection_closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_a4_time_reflection_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_active_machine_local_sha256.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_active_machine_red_team.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_admissible_gauge_invariant_os_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_admissible_gauge_invariant_os_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_admissible_os_quadratic_response_h0008_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_admissible_os_quadratic_response_h002_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_admissible_os_quadratic_response_h004_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_admissible_os_quadratic_response.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_admissible_os_quadratic_scale_analysis_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_admissible_os_quadratic_scale_analysis.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_anisotropic_overlap_os_region_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_anisotropic_overlap_os_region.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_anomaly_inflow_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_anomaly_inflow_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_ball_window_homogenization_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_ball_window_homogenization_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_ball_window_markov_repair_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_ball_window_markov_repair.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_blind_history_completion_test.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_born_measurement_boundary_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_born_measurement_boundary.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/URT_Cathedral_Three_Week_Reconstruction_2026-08-24.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/URT_Cathedral_Three_Week_Reconstruction_2026-08-24.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_chaos_to_structure.zip` — Research bundle; not unpacked here.
+- `/Newton's Cathedral URT/urt_chiral_dirac_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_chiral_dirac_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_clock_orientation_scale_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_clock_orientation_scale_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_clock_universality_quotient_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_clock_universality_quotient.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_compact_overlap_global_gap_obstruction_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_compact_overlap_global_gap_obstruction.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_corrected_dual_ribbon_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_corrected_dual_ribbon_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_corrected_dual_ribbon_solver.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_cut_project_window_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_cut_project_window_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_determinant_line_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_determinant_line_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_diagonal_coherence_gauge_repair_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_diagonal_coherence_gauge_repair.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_dirac_selection_audit_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_dirac_selection_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_dirac_selection_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_direct_selection_simulation.zip` — Research bundle; not unpacked here.
+- `/Newton's Cathedral URT/urt_domain_wall_history_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_domain_wall_history_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_domain_wall_pv_os_obstruction_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_domain_wall_pv_os_obstruction.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_entropy_dirac_scale_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_entropy_dirac_scale_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_entropy_gauge_normalization_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_entropy_gauge_normalization.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_entropy_gravity_normalization_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_entropy_gravity_normalization.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_entropy_spectral_action_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_entropy_spectral_action_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_entropy_su5_breaking_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_entropy_su5_breaking_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_flavour_closure_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_flavour_closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_flavour_closure_sha256.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_flavour_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_four_gate_closure_audit.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_four_gate_closure_audit.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_four_gate_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/URT_full_framework.sha256` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/URT_full_framework.zip` — Research bundle; not unpacked here.
+- `/Newton's Cathedral URT/urt_gate2_global_modular_eta_scan.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gate2_global_modular_eta_scan.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_gate2_global_modular_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gate2_global_modular_solver.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_gate2_random_start_audit.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gate2_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gate2_solution_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_gate2_solution_report(1).txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_gate2_solution.npz` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/urt_gate2_solver.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_gate2_solver(1).py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_gate2_spectral_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gate2_spectral_solver.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_gate2_spectral_verdict.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_gauge_coupling_scale_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gauge_coupling_scale_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_gauge_covariant_overlap_admissibility_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gauge_covariant_overlap_admissibility.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_golden_platonic_closure_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_golden_platonic_closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_golden_platonic_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_gravity_normalization_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_gravity_normalization_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_haar_dilation_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_haar_dilation_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_history_contraction_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_history_contraction_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_history_kms_type_mismatch_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_history_kms_type_mismatch.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_hodge_gap_volume_scaling_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_hodge_gap_volume_scaling_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_hopf_spacetime_audit_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_hopf_spacetime_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_hopf_spacetime_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_icosahedral_continuum_stencil_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_icosahedral_continuum_stencil.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_icosahedral_seed_uniqueness_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_icosahedral_seed_uniqueness.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_icosahedron_simulation.zip` — Research bundle; not unpacked here.
+- `/Newton's Cathedral URT/urt_interacting_overlap_os_boundary_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_interacting_overlap_os_boundary_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_joint_action_invariant_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_joint_action_invariant_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_kms_geometry_selection_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_kms_geometry_selection_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_link_reflection_geometry_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_link_reflection_geometry_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_literal_entropy_coupling_phenomenology_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_literal_entropy_coupling_phenomenology.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_local_triangle_coherence_bounds_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_local_triangle_coherence_bounds.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/URT_Logistic_Map_Verification.pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/URT_Logistic_Map_Verification(1).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/URT_Logistic_Map_Verification(2).pdf` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/urt_lorentz_cone_matching_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_lorentz_cone_matching.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_machine_flavour_closure_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_machine_flavour_closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_machine_flavour_closure_sha256.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_machine_flavour_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_master_affine_identifiability_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_master_affine_identifiability_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_microscopic_axiom_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_microscopic_axiom_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_minimal_completion_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_minimal_completion_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_minimal_completion.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_monoidal_fock_extension_obstruction_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_monoidal_fock_extension_obstruction.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/clifford_six_axis_results_regenerated.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/spin7_real_structure_regenerated.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/unique_machine_intertwiner_regenerated.npz` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_blind_dirac_gate.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_blocked_numpy_compat.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_blocked_repair.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_full_claim_ledger.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_nature_checkpoint_manifest.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_nature_solver_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_nature_solver.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/URT_Nature_Checkpoint_2026-08-25/urt_reproducibility_matrix.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_nature_exhaustive_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_nature_exhaustive_results.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/urt_nature_exhaustive_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_nonlocal_boundary_projector_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_nonlocal_boundary_projector_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_NS_Unforced_Blowup_Program_2026-09-10.md` — Research note; content not individually verified here.
+- `/Newton's Cathedral URT/urt_occupancy_chemical_potential_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_occupancy_chemical_potential_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_orientation_pfaffian_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_orientation_pfaffian_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_os_chiral_measure_global_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_os_chiral_measure_global_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_os_reflection_phase_selector_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_os_reflection_phase_selector.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_overlap_reflection_orbit_counterexample_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_overlap_reflection_orbit_counterexample.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_overlap_reflection_orbit_long_double_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_overlap_reflection_orbit_long_double.cpp` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/urt_overlap_transfer_admissibility_trilemma_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_overlap_transfer_admissibility_trilemma.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_platonic_axis_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_platonic_u2_holonomy_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_platonic_u2_holonomy_summary.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_platonic_u2_holonomy.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_polar_history_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_polar_history_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_quasifree_gibbs_merger_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_quasifree_gibbs_merger.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_reflected_kernel_contraction_selector_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_reflected_kernel_contraction_selector.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_reflected_locality_flat_direction_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_reflected_locality_flat_direction.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_reflection_positive_admissibility_weight_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_reflection_positive_admissibility_weight.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_reflection_positive_gauge_action_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_reflection_positive_gauge_action.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_reflection_positive_wilson_kernel_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_reflection_positive_wilson_kernel.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_relaxation_selector_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_relaxation_selector_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/URT_response_closure_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_response_layer_closure.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_response_layer_closure.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_ribbon_kernel_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_ribbon_kernel_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_ribbon_kernel_solver.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_seed_geometry_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_seed_geometry_matrices.npz` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/urt_seed_geometry_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_six_axis_species_audit.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_six_axis_species_audit.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_snap_closure_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_spin7_structural_closure_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_spin7_structural_closure_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_static_machine_theorem_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_static_machine_theorem_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_static_machine_theorem_sha256.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_static_machine_theorem.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_strong_coupling_clifford_os_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_strong_coupling_clifford_os_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_strong_coupling_gauge_invariant_os_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_strong_coupling_gauge_invariant_os_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_strong_coupling_point_split_os_audit_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_strong_coupling_point_split_os_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_su5_adjoint_breaking_no_go_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_su5_adjoint_breaking_no_go.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_target_free_audit_report.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urt_target_free_audit_summary.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/urt_target_free_audit.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/urt_target_free_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_temporal_link_coherence_obstruction_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_temporal_link_coherence_obstruction.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_three_week_gap_verifier.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_triangular_gauge_site_os_factorization_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_triangular_gauge_site_os_factorization.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_triangular_u1_gap_certificate_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_triangular_u1_gap_certificate.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_volume_uniform_sos_gap_certificate.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_volume_uniform_sos_gap_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt_volume_uniform_sos_gap.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_wilson_history_continuation.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urt_wilson_history_results.json` — Model values/manifest; content not verified here.
+- `/Newton's Cathedral URT/urt13_transfer_flavour_no_go.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urtf_operator_exact_audit.py` — Python source; run unverified in this inventory.
+- `/Newton's Cathedral URT/urtf_operator_exact_audit.txt` — Text/provenance; not independently checked here.
+- `/Newton's Cathedral URT/urtf_operator_separatrix.csv` — Data/results; not independently validated here.
+- `/Newton's Cathedral URT/urtf_operator_separatrix.png` — Archived file; not individually examined.
+- `/Newton's Cathedral URT/WEEKLY_MIGRATION_FILES.txt` — Text/provenance; not independently checked here.
+
+## Root-level generated research artifacts (92 selected names)
+
+These artifacts were preserved by ChatGPT Library outside the two trees. Identical `(1)` copies may be duplicates; check hashes before importing any code.
+
+- `/audit_glazer_174.py` — Python source; run unverified in this inventory.
+- `/audit_glazer_174(1).py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_ALL_AT_ONCE_PHYSICS_RESEARCH_2026_11_07.zip` — Research bundle; not unpacked here.
+- `/cathedral_all_five_geometry_interaction_2026-11-07.zip` — Research bundle; not unpacked here.
+- `/cathedral_all_in_one.py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_CONSTRUCTED_COMPLETE_FINITE_INTERACTION_2026-11-07.md` — Research note; content not individually verified here.
+- `/Cathedral_Continuum_Proof_Check.py` — Python source; run unverified in this inventory.
+- `/Cathedral_Continuum_Proof_Check(1).py` — Python source; run unverified in this inventory.
+- `/Cathedral_Continuum_Spectral_Theorem.md` — Research note; content not individually verified here.
+- `/Cathedral_Conversation_and_Whole_Project_Audit_2026-11-04.zip` — Research bundle; not unpacked here.
+- `/Cathedral_Conversation_First_Reconciliation_2026-11-04.md` — Research note; content not individually verified here.
+- `/cathedral_cut_project_hodge_bridge.py` — Python source; run unverified in this inventory.
+- `/cathedral_cut_project_hodge_bridge(1).py` — Python source; run unverified in this inventory.
+- `/cathedral_derived_physics_step.py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_FIBONACCI_MIRROR_144_BRIDGE_2026-11-07.md` — Research note; content not individually verified here.
+- `/CATHEDRAL_FIBONACCI_MIRROR_RESEARCH_2026_11_07.zip` — Research bundle; not unpacked here.
+- `/cathedral_first_principles_scaling.py` — Python source; run unverified in this inventory.
+- `/cathedral_first_principles_scaling(1).py` — Python source; run unverified in this inventory.
+- `/cathedral_gap_test.py` — Python source; run unverified in this inventory.
+- `/cathedral_gap_test(1).py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_GEOMETRIC_FIBONACCI_CLOCK_FULL_RESEARCH_2026_11_07.zip` — Research bundle; not unpacked here.
+- `/CATHEDRAL_GEOMETRIC_FIBONACCI_CLOCK_SELECTION_2026-11-07.md` — Research note; content not individually verified here.
+- `/Cathedral_H64_Proof_2026-10-31.zip` — Research bundle; not unpacked here.
+- `/cathedral_hierarchy_derived_continuum.py` — Python source; run unverified in this inventory.
+- `/cathedral_hopf_platonic_exact.py` — Python source; run unverified in this inventory.
+- `/cathedral_hopf24_golden_bridge_2026_11_04.py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_INTEGRATED_PHYSICS_RESEARCH_2026_11_07.zip` — Research bundle; not unpacked here.
+- `/CATHEDRAL_INTEGRATED_PHYSICS_RESULTS_2026-11-07.md` — Research note; content not individually verified here.
+- `/cathedral_integrated_verification.py` — Python source; run unverified in this inventory.
+- `/cathedral_integrated_verification(1).py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_MONTHLY_BOTTLENECK_AND_24_TRACK_RESULT_2026-11-05.md` — Research note; content not individually verified here.
+- `/cathedral_shared_memory_test.py` — Python source; run unverified in this inventory.
+- `/cathedral_shared_memory_test(1).py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_SIMULTANEOUS_GEOMETRY_HISTORY_CLOCK_ENTROPY_2026-11-07.md` — Research note; content not individually verified here.
+- `/CATHEDRAL_SIMULTANEOUS_INTERACTING_CONSTRUCTION_2026_11_07.zip` — Research bundle; not unpacked here.
+- `/CATHEDRAL_SOURCE_LOADED_24_CLOCK_PHYSICS_RESULT_2026_11_05.md` — Research note; content not individually verified here.
+- `/CATHEDRAL_SOURCE_LOADED_URT_24_CLOCK_PHYSICS_2026_11_05.zip` — Research bundle; not unpacked here.
+- `/cathedral_spin_dynamics.py` — Python source; run unverified in this inventory.
+- `/cathedral_spin_dynamics(1).py` — Python source; run unverified in this inventory.
+- `/cathedral_spin_first_principles_audit.py` — Python source; run unverified in this inventory.
+- `/cathedral_spin_first_principles_audit(1).py` — Python source; run unverified in this inventory.
+- `/cathedral_spinning_selection.py` — Python source; run unverified in this inventory.
+- `/cathedral_spinning_test.py` — Python source; run unverified in this inventory.
+- `/cathedral_spinning_test(1).py` — Python source; run unverified in this inventory.
+- `/cathedral_temporal_flow_test.py` — Python source; run unverified in this inventory.
+- `/cathedral_temporal_flow_test(1).py` — Python source; run unverified in this inventory.
+- `/Cathedral_Temporal_Hydrodynamics_2026-11-02.md` — Research note; content not individually verified here.
+- `/cathedral_urt_24_cycle_bridge.py` — Python source; run unverified in this inventory.
+- `/cathedral_urt_24_cycle_bridge(1).py` — Python source; run unverified in this inventory.
+- `/cathedral_urt_chiral_derivation.py` — Python source; run unverified in this inventory.
+- `/cathedral_urt_chiral_derivation(1).py` — Python source; run unverified in this inventory.
+- `/cathedral_urt_global_selection_2026-11-04.py` — Python source; run unverified in this inventory.
+- `/Cathedral_URT_Global_Selection_Theorem_2026-11-04.md` — Research note; content not individually verified here.
+- `/cathedral_urt_phase_extension_2026-11-04.py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_URT_PHASE_LOCK_RESEARCH_2026-11-05.zip` — Research bundle; not unpacked here.
+- `/CATHEDRAL_URT_TO_WAVE_PHYSICS_PHASE_LOCK_THEOREM_2026-11-05.md` — Research note; content not individually verified here.
+- `/cathedral_wave_physics_2026_11_05.py` — Python source; run unverified in this inventory.
+- `/cathedral_wave_physics_2026_11_05(1).py` — Python source; run unverified in this inventory.
+- `/CATHEDRAL_WHOLE_GEOMETRY_INTERACTION_THEOREM_2026-11-07.md` — Research note; content not individually verified here.
+- `/cathedral_whole_geometry_proof.py` — Python source; run unverified in this inventory.
+- `/cathedral_whole_geometry_proof(1).py` — Python source; run unverified in this inventory.
+- `/diophantine_961_candidate.zip` — Research bundle; not unpacked here.
+- `/diophantine_degree_audit_package.zip` — Research bundle; not unpacked here.
+- `/diophantine_degree_audit_report.md` — Research note; content not individually verified here.
+- `/diophantine_degree_audit.py` — Python source; run unverified in this inventory.
+- `/diophantine_degree_audit(1).py` — Python source; run unverified in this inventory.
+- `/glazer_3_reductions_standalone.py` — Python source; run unverified in this inventory.
+- `/glazer_959_scalar.py` — Python source; run unverified in this inventory.
+- `/glazer_959_scalar(1).py` — Python source; run unverified in this inventory.
+- `/glazer_961_reduction.py` — Python source; run unverified in this inventory.
+- `/glazer_961_reduction(1).py` — Python source; run unverified in this inventory.
+- `/Newtons_Cathedral_Whole_Project_Readthrough_2026-11-04.md` — Research note; content not individually verified here.
+- `/Newtons_Cathedral_Whole_Project_Readthrough_2026-11-04(1).md` — Research note; content not individually verified here.
+- `/quartic_959_exact_reduction.zip` — Research bundle; not unpacked here.
+- `/quartic_960_recursive_research.zip` — Research bundle; not unpacked here.
+- `/quartic_syzygy_hunter.py` — Python source; run unverified in this inventory.
+- `/quartic_syzygy_hunter(1).py` — Python source; run unverified in this inventory.
+- `/quartic_syzygy_research_package.zip` — Research bundle; not unpacked here.
+- `/README_quartic_959.md` — Research note; content not individually verified here.
+- `/README_quartic_960.md` — Research note; content not individually verified here.
+- `/README_quartic_961.md` — Research note; content not individually verified here.
+- `/urt_cathedral_phase_lock_physics_2026_11_05.py` — Python source; run unverified in this inventory.
+- `/urt_cathedral_phase_lock_physics_2026_11_05(1).py` — Python source; run unverified in this inventory.
+- `/urt_diophantine_fibonacci.py` — Python source; run unverified in this inventory.
+- `/urt_diophantine_fibonacci(1).py` — Python source; run unverified in this inventory.
+- `/URT_Diophantine_Independent_Result_2026-11-07.md` — Research note; content not individually verified here.
+- `/URT_Diophantine_Research_2026-11-07.zip` — Research bundle; not unpacked here.
+- `/urt_integer_selection_24track.py` — Python source; run unverified in this inventory.
+- `/urt_integer_selection_24track(1).py` — Python source; run unverified in this inventory.
+- `/urt_platonic_gateway_test.py` — Python source; run unverified in this inventory.
+- `/urt_platonic_gateway_test(1).py` — Python source; run unverified in this inventory.
+- `/urt_spinning_interaction_law.py` — Python source; run unverified in this inventory.
+
+## Retrieval and provenance rules
+
+1. Fetch the *actual file* from Library by exact path; do not infer that this Markdown filename is a mounted local or GitHub path.
+2. For any Python proof, inspect its parameter defaults, source dependencies and assertions, then run using the saved results/hashes. Record actual commands before updating the canonical status.
+3. Preserve old versions, unsuccessful branches and conflicting results with their dates. Record any correction in the append-only field notebook.
+4. Do not republish external researchers' protected or unapproved material into the repository. Files explicitly associated with unrelated Yang–Mills research are excluded from this index if present.
+5. Treat transport chunks and duplicate ZIPs as *storage*, not as independently established research results.
+
