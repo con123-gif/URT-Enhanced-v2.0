@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Snapshot:** 2026-11-07 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
+**Index update:** 2026-11-07 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
 
-**Coverage:** **837 tracked files**, including historical and backup files. Generated from the complete Git tree (`truncated=false`). Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **839 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the two navigation documents added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -860,12 +860,14 @@
 - [`research_archive/urtf_operator_separatrix.csv`](research_archive/urtf_operator_separatrix.csv) — Tabular experiment results: urtf operator separatrix; **Run:** N/A (non-executable); **Free:** stored data may include parameters; not classified.
 - [`research_archive/WEEKLY_MIGRATION_FILES.txt`](research_archive/WEEKLY_MIGRATION_FILES.txt) — Plain-text record: WEEKLY MIGRATION FILES; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 
-### ROOT (5)
+### ROOT (7)
 
 - [`.gitignore`](.gitignore) — Git exclusions; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`CITATION.cff`](CITATION.cff) — Project citation metadata; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — Contribution guidelines; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`pyproject.toml`](pyproject.toml) — Python build, dependencies and pytest configuration; **Run:** N/A (non-executable); **Free:** Python >=3.10; numpy >=1.24; pytest >=7 optional.
+- [`FIELD_NOTEBOOK.md`](FIELD_NOTEBOOK.md) — Append-only dated findings, failures and open questions; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
+- [`FILE_INDEX.md`](FILE_INDEX.md) — Complete navigable file inventory and verification status; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 - [`README.md`](README.md) — Main project entrypoint and status guidance; **Run:** N/A (non-executable); **Free:** N/A for file; consult content for assumptions.
 
 ### tests (24)
