@@ -18,6 +18,7 @@ This repository is the **single primary workspace for Newton’s Cathedral**. Ne
 | Purpose | File |
 |---|---|
 | **Complete tracked-file index** | [FILE_INDEX.md](FILE_INDEX.md) — every file, run status and parameter status |
+| **Dated research field notebook** | [FIELD_NOTEBOOK.md](FIELD_NOTEBOOK.md) — findings, dead ends, and open questions |
 | **Current live state** | [docs/LIVE_STATE_2026-10-02.md](docs/LIVE_STATE_2026-10-02.md) |
 | Canonical Sept. 30 reference | [docs/CANONICAL_STATE_PLAIN_2026-09-30.md](docs/CANONICAL_STATE_PLAIN_2026-09-30.md) |
 | Closure status | [docs/CLOSURE_LEDGER.md](docs/CLOSURE_LEDGER.md) |
