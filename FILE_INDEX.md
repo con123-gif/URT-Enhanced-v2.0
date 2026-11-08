@@ -1,12 +1,12 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index update:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 887 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **887 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **887 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
-[README.md](README.md) → [docs/START_HERE.md](docs/START_HERE.md) → [docs/LIVE_STATE_2026-10-02.md](docs/LIVE_STATE_2026-10-02.md) → [docs/CLAIM_LEDGER.md](docs/CLAIM_LEDGER.md) + [docs/CLOSURE_LEDGER.md](docs/CLOSURE_LEDGER.md) → this file → relevant research folder.
+[README.md](README.md) → [docs/LATEST_RESEARCH_STATE_2026-11-07.md](docs/LATEST_RESEARCH_STATE_2026-11-07.md) → [FIELD_NOTEBOOK.md](FIELD_NOTEBOOK.md) → [research_archive/2026-11-08_native_h64_diffusion/](research_archive/2026-11-08_native_h64_diffusion/) → [docs/CLAIM_LEDGER.md](docs/CLAIM_LEDGER.md) and [docs/CLOSURE_LEDGER.md](docs/CLOSURE_LEDGER.md) → this file. The [October 2 live state](docs/LIVE_STATE_2026-10-02.md) remains historical, not the current endpoint.
 
 **Status rule:** `Run: not executed` means **unknown**, not passed or failed. `Free: not classified` means **not audited**, not zero parameters. File purposes inferred from filenames are navigation hints; the file and latest claim/closure ledgers control the science. A parameter in code may be a user input, numerical setting, fitted value, or proposed physical coupling—do not treat these as equivalent. This index does not copy or assert authorship of historical material.
 
