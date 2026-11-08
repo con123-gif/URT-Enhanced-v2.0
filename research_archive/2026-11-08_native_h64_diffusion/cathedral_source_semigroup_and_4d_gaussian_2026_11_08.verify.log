@@ -1,0 +1,19 @@
+Native face response + 4D Gaussian verification — 2026-11-08
+Command: OPENBLAS_NUM_THREADS=1 python cathedral_source_semigroup_and_4d_gaussian_2026_11_08.py
+
+PASS canonical face incidence: C^TC =5I+2 Aico; hidden projection annihilates im C
+PASS A5 fifth-turn covariance of incidence, 4_3 and 4_5 hidden source channels
+PASS original nonlinear source equals projected face-observable square with positive Gibbs amplitude
+PASS exact semigroup 2nd Frechet derivative yields face square at short times
+semigroup small-time source errors ['0.193682', '0.105912', '0.0555353', '0.0284573']
+PASS native 62 positive history modes yield a 4D Euclidean Gaussian covariance, m²=10,16,18
+PASS Osterwalder–Schrader time-reflection positivity in the free sector (sum-of-squares identity)
+spatial diffusion D=pi^2/(5e^2) 0.267141141410950
+induced free-sector dispersion omega^2 = lambda/r^2 + |k|^2/5; propagation slope 1/sqrt(5)
+lowest free-sector temporal energy sqrt(10)/r 2.736179654085763
+example positive OS quadratic form 0.362707502342706
+
+SHA256
+2d79da8d513dc4caa3c2446c16c8ba640d244d1915fa43e11cbc8f622f5444ab  cathedral_source_semigroup_and_4d_gaussian_2026_11_08.py
+5c1eda94206c318c0e351109f852f0f49d345a1e1c78f8e721afe6bce9495aa9  CATHEDRAL_NATIVE_SOURCE_RESPONSE_AND_4D_GAUSSIAN_2026-11-08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  cathedral_constructed_joint_dynamics_2026_11_07.py
