@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 902 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 905 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **902 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **905 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -1015,4 +1015,11 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_PERTURBATION_STABLE_NONLOCAL_WICK_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_PERTURBATION_STABLE_NONLOCAL_WICK_2026-11-08.md) — Exact resolvent/Schur-order stability theorem for the original 190×64×24 geometry with self-consistently recomputed Wick covariance; **Run:** N/A; **Free:** perturbation norm ε≤0.01 specified, support must preserve the kernel complement; no observational inputs.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.py) — Original model regression for two rank-one 0.01 perturbations, mixed and triplet; **Run:** PASS 2026-11-08; **Free:** perturbation norm ε≤0.01 specified, support must preserve the kernel complement; no observational inputs.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.verify.log) — All PASS outputs, counterexample and SHA256 hashes; **Run:** N/A; **Free:** perturbation norm ε≤0.01 specified, support must preserve the kernel complement; no observational inputs.
+
+
+### 8 November 2026 — scalar URT prototype audit and corrected derivation order (3 files)
+
+- [`research_archive/2026-11-08_urt_prototype_audit/URT_PROTOTYPE_VS_CATHEDRAL_2026-11-08.md`](research_archive/2026-11-08_urt_prototype_audit/URT_PROTOTYPE_VS_CATHEDRAL_2026-11-08.md) — Exact source-level proof that scalar recurrence underdetermines hidden physics, plus branch discontinuity and corrected theory-building hierarchy; **Run:** N/A; **Free:** original adjustable prototype α,β,θh; no observed values fitted.
+- [`research_archive/2026-11-08_urt_prototype_audit/test_urt_prototype_scope_2026_11_08.py`](research_archive/2026-11-08_urt_prototype_audit/test_urt_prototype_scope_2026_11_08.py) — Original `cathedral_core/urt.py` regression testing parameter independence, jump, forward bound and hidden non-identifiability; **Run:** PASS 2026-11-08; **Free:** original adjustable prototype α,β,θh; no observed values fitted.
+- [`research_archive/2026-11-08_urt_prototype_audit/urt_prototype_scope_2026_11_08.verify.log`](research_archive/2026-11-08_urt_prototype_audit/urt_prototype_scope_2026_11_08.verify.log) — PASS output and matching original Git blob SHA; **Run:** N/A; **Free:** original adjustable prototype α,β,θh; no observed values fitted.
 

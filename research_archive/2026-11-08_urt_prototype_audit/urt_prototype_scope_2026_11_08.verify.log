@@ -1,0 +1,9 @@
+PASS original scalar update leaves exported golden spiral constants unused
+PASS branch jump magnitude 0.6514199999999999 ; global contraction claim invalid
+PASS branchwise derivative upper bound 0.9228449999999999
+PASS original absorbing bound valid as forward estimate
+PASS two distinct positive hidden models with identical scalar observation
+Source: /mnt/data/urt_prototype_audit/cathedral_core/urt.py
+Original repository urt.py Git blob SHA: 96a1fe6b9420f02f6c8db4bea17226e2bae0b091
+The execution source copy was byte-for-byte identical (git hash-object reproduced exact blob SHA).
+All checks passed.
