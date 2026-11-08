@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 918 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 924 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **918 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **924 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -1047,4 +1047,14 @@
 - [`tests/test_native_spatial_transport.py`](tests/test_native_spatial_transport.py) — Rational Walsh order-6 universal theorem, original 190/64/24 model, both parity propagators and finite-time covariance regression; **Run:** PASS 2026-11-08; **Free:** original frozen pi/e, six axes and original Hbits; readout fixed in 2026-11-08 native history Green–Kubo proof, no fitted coefficients.
 - [`docs/NATIVE_URT_EXACT_3D_SPATIAL_PROPAGATOR_2026-11-08.md`](docs/NATIVE_URT_EXACT_3D_SPATIAL_PROPAGATOR_2026-11-08.md) — Complete native 3D propagation theorem through k6 and source provenance; **Run:** N/A; **Free:** original frozen pi/e, six axes and original Hbits; readout fixed in 2026-11-08 native history Green–Kubo proof, no fitted coefficients.
 - [`research_archive/2026-11-08_full_dynamics/native_spatial_transport.verify.log`](research_archive/2026-11-08_full_dynamics/native_spatial_transport.verify.log) — Executed 1-pass pytest log, exact eigenvalues and original model SHA256; **Run:** N/A; **Free:** original frozen pi/e, six axes and original Hbits; readout fixed in 2026-11-08 native history Green–Kubo proof, no fitted coefficients.
+
+
+### 8 November — native H64 finite-speed 3D propagation and exact sixth-order icosahedral signature (6 files)
+
+- [`docs/CATHEDRAL_NATIVE_H64_FINITE_SPEED_AND_SIXTH_ORDER_PROPAGATION_2026-11-08.md`](docs/CATHEDRAL_NATIVE_H64_FINITE_SPEED_AND_SIXTH_ORDER_PROPAGATION_2026-11-08.md) — Native all-64 history finite-speed, exact covariance and degree-six sector-resolved propagation theorem; **Run:** N/A; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
+- [`cathedral_core/history_propagation.py`](cathedral_core/history_propagation.py) — Installable real-time 64-history transport/finite-time MGF and exact cumulant engine; **Run:** PASS 2026-11-08; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
+- [`tests/test_history_propagation.py`](tests/test_history_propagation.py) — History pair-flip, finite cone, parity modes, all orientations and eigensolver test; **Run:** PASS 2026-11-08; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
+- [`research_archive/2026-11-08_native_h64_diffusion/certify_history_sixth_exact.py`](research_archive/2026-11-08_native_h64_diffusion/certify_history_sixth_exact.py) — Independent universal rational-polynomial Walsh certificate, all 57 monomials both parities; **Run:** PASS 2026-11-08; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
+- [`research_archive/2026-11-08_native_h64_diffusion/verify_original_history_interface.py`](research_archive/2026-11-08_native_h64_diffusion/verify_original_history_interface.py) — Direct original 7 November all-five 190/64/24 source and SHA256 matching; **Run:** PASS 2026-11-08; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
+- [`research_archive/2026-11-08_native_h64_diffusion/native_history_sixth_order.verify.log`](research_archive/2026-11-08_native_h64_diffusion/native_history_sixth_order.verify.log) — All PASS outputs, original-source SHA256 and checksums; **Run:** N/A; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
 
