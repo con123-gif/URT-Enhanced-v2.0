@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 896 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 899 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **896 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **899 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -1001,4 +1001,11 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_OPERATOR_DERIVED_190_24_WICK_COVARIANCE_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_OPERATOR_DERIVED_190_24_WICK_COVARIANCE_2026-11-08.md) — Original full five-solid 190×24 zero-source Gibbs covariance and exact general-Wick tensor proof; **Run:** N/A; **Free:** no trial source variances; zero-source Gaussian determined by the existing URT action.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.py) — Direct 24×190 inverse/Schur source and complex U1 Wick verification; **Run:** PASS 2026-11-08; **Free:** no trial source variances; zero-source Gaussian determined by the existing URT action.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.verify.log) — PASS log, native covariance, cross-carrier response and original-source SHA256; **Run:** N/A; **Free:** no trial source variances; zero-source Gaussian determined by the existing URT action.
+
+
+### Original full-geometry Gaussian covariance and full nonlocal 24-history Wick proof (8 November 2026; 3 files)
+
+- [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_190_24_COVARIANCE_AND_NONLOCAL_WICK_STABILITY_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_190_24_COVARIANCE_AND_NONLOCAL_WICK_STABILITY_2026-11-08.md) — Analytic source-covariance, A5 symmetry-breaking, complete 64-history Schur-Wick positivity and exact temporal Green function; **Run:** N/A; **Free:** fixed original geometry, η=−lnΔ and golden 24-clock, free complex Gaussian reference; no experimental fit.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.py) — Direct original 190×64×24 matrix/clock/Schur verification, Wick gauge checks and continuum-time convergence; **Run:** PASS 2026-11-08; **Free:** fixed original geometry, η=−lnΔ and golden 24-clock, free complex Gaussian reference; no experimental fit.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.verify.log) — PASS execution outputs and original-source SHA256 provenance; **Run:** N/A; **Free:** fixed original geometry, η=−lnΔ and golden 24-clock, free complex Gaussian reference; no experimental fit.
 

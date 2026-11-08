@@ -1,0 +1,94 @@
+native model SHA256 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd
+H spectrum min/max -1.2177343961791257e-15 9.000000000000034
+clock gap 0.0019153967537672845 mode 9
+eta 5.9957979867413025
+G eight spectrum [0.06026785 0.06026785 0.06097514 0.06097514 0.06097514 0.07717139
+ 0.07717139 0.07717139]
+a triplet 0.0770443102621946 b quintet 0.06076846906420885 ratio a/b 1.2678336553252387
+triplet isotropy err 1.2690568313638377e-16 quintet isotropy err 0.0009140074587972226 cross 3x5 0.0024750964712603536
+G diag [0.07704431 0.07704431 0.07704431 0.06026785 0.06026785 0.06110222
+ 0.06110222 0.06110222]
+G full [[ 0.077044310262 -0.             -0.              0.             -0.             -0.             -0.              0.001428997614]
+ [-0.              0.077044310262 -0.             -0.              0.              0.              0.001428997614  0.            ]
+ [-0.             -0.              0.077044310262 -0.             -0.              0.001428997614  0.             -0.            ]
+ [ 0.             -0.             -0.              0.060267846561  0.             -0.             -0.             -0.            ]
+ [-0.              0.             -0.              0.              0.060267846561  0.             -0.             -0.            ]
+ [-0.              0.              0.001428997614 -0.              0.              0.061102217399  0.             -0.            ]
+ [-0.              0.001428997614  0.             -0.             -0.              0.              0.061102217399  0.            ]
+ [ 0.001428997614  0.             -0.             -0.             -0.             -0.              0.              0.061102217399]]
+two-channel deviation Frobenius 0.0036176808481163543 relative 0.018991929382547196
+positive M min/max -2.2240159921978517e-17 0.051179551007533804
+mass counterterm uniform coeff 8lambda_max 0.40943640806027043
+M3 spectrum positive [0.1750807  0.1750807  0.1750807  0.1751458  0.1751458  0.23030798
+ 0.23030798 0.23030798]
+M5 spectrum positive [2.91087010e-17 1.45863967e-16 2.02612223e-16 4.86036503e-02
+ 4.86036503e-02 4.86036503e-02 4.86314627e-02 4.86314627e-02]
+two-channel approximate norm mass 8max 0.409320676091287
+PASS: direct 190D 24-mode Gaussian covariance + native full 50-source counterterm
+complex hidden squared-source covariance 3 trace 0.21289934214182682 5 trace 0.029542398965286036 cross norm 0.00043070010995268694
+dual Gibbs-weighted response 0.07096648398994006
+for real Gaussian, hidden projected mean norms 0.008344622902386052 0.0009140074587969333
+M in native source 8 carrier [[ 0.051165084511 -0.              0.              0.              0.             -0.              0.              0.000421109412]
+ [-0.              0.051165084511 -0.             -0.             -0.              0.              0.000421109412  0.            ]
+ [ 0.             -0.              0.051165084511 -0.             -0.              0.000421109412  0.              0.            ]
+ [ 0.              0.             -0.              0.038921355587 -0.             -0.              0.              0.            ]
+ [ 0.             -0.             -0.             -0.              0.038921355587  0.              0.             -0.            ]
+ [-0.              0.              0.000421109412 -0.              0.              0.03892135555  -0.             -0.            ]
+ [-0.              0.000421109412  0.              0.              0.             -0.              0.03892135555  -0.            ]
+ [ 0.000421109412 -0.              0.             -0.             -0.             -0.              0.              0.03892135555 ]]
+M source eights eigenvalues [0.03890689 0.03890689 0.03890689 0.03892136 0.03892136 0.05117955
+ 0.05117955 0.05117955]
+PASS: full anisotropic Gaussian Wick counterterm, exact restoration and U(1) charge covariance
+six lowest clock modes [9, 10, 8, 11, 7, 12]
+mass coefficient low/high/full [np.float64(0.1594081173199683), np.float64(0.2500383713745218), np.float64(0.40943640806027043)]
+low-shell covariance spectrum [0.02346205 0.02346205 0.02372334 0.02372334 0.02372334 0.03142794
+ 0.03142794 0.03142794]
+PASS: native clock-spectral coarse/fine covariance addition is exact; tensor counterterm adds
+3↔5 cross in all local incidence norm= 0.22715071817453134 entries [[-0.            0.           -0.           -0.            0.1311455283]
+ [-0.           -0.            0.            0.1311455283  0.          ]
+ [-0.           -0.            0.1311455283  0.            0.          ]]
+3↔5 cross in all bridge norm= 0.5374912084332556 entries [[ 0.            0.           -0.            0.           -0.3103206939]
+ [-0.            0.            0.           -0.3103206939  0.          ]
+ [ 0.           -0.           -0.3103206939  0.           -0.          ]]
+local solid 3↔5 mixing tetrahedron 0.6386424850925165
+local solid 3↔5 mixing cube 0.10575606352177992
+local solid 3↔5 mixing octahedron 0.05167997576267871
+local solid 3↔5 mixing dodecahedron 0.08637705009928313
+local solid 3↔5 mixing icosahedron 0.16767867753424331
+PASS: native all-five mixing computed without enforcing A5-only covariance
+minimum eigen original H_geo+clock 0.002558406375279881
+minimum eigen Wick-mass H_geo-8UMU†+clock 0.0025584063752832806
+number negative Wick Hessian eigenvalues at min clock 0
+min eigen shifted geometry without clock 2.1819821684985883e-15
+PASS: self-consistent free-Gibbs native covariance gives positive complete quadratic 190×24 Wick reference (no ad hoc uniform repair needed)
+baseline nonzero 190H eigenvalue 0.7639320225002082 zero rank 2
+counterterm 8opnorm 0.40943640806027043 proved surviving nonzero-sector bound 0.35449561443993777
+null-to-source projection residual 1.0935021665224595e-15
+PASS: analytic spectral lower-bound certificate (no fitting, all 24 clock positions)
+nonlocal history Wick counterterm Hermiticity residual 1.238406199463495e-16
+full nonlocal history Wick max ||M_m|| 0.05214117535921722 8x= 0.4171294028737378
+full nonlocal history Wick min eigen across 24 clock modes 0.002558406375280014 bare 0.002558406375280653
+full nonlocal history Wick min by lowest m [(np.int64(9), 0.002558406375), (np.int64(10), 0.063244790324), (np.int64(8), 0.123749944415), (np.int64(11), 0.301673419485), (np.int64(7), 0.418560401406), (np.int64(12), 0.701595776802)]
+full nonlocal history static lower-bound counterterm=8||M_static|| 0.40943640806027043
+PASS: full native 24-clock nonlocal history Schur-Wick correction leaves entire 190×24 geometry quadratic Hessian strictly positive
+full native source V_original / Wick polynomial / mass / vacuum 0.0008039702171125019 1.091812673586983 0.060575065482169496 1.15158376885204
+native full Wick identity residual 3.5453411040275995e-17
+PASS: exact 64-history Schur vs 24-site source matrix; full nonlocal Wick identity and local U(1) gauge covariance
+time-continuum native G8 trace/eigenvalues 0.6671034059555869 [0.07726698 0.07726698 0.07790428 0.07790428 0.07790428 0.09295221
+ 0.09295221 0.09295221]
+clock refinement   24 sites: ||G_N-G_cont||_F=0.0467421759808, a=0.0770443102622, b=0.0607684690642
+clock refinement   48 sites: ||G_N-G_cont||_F=0.0154619700764, a=0.0879781289325, b=0.0719189037925
+clock refinement   96 sites: ||G_N-G_cont||_F=0.00425222137276, a=0.0915416191234, b=0.0761039559825
+clock refinement  192 sites: ||G_N-G_cont||_F=0.00109169931451, a=0.0925047249763, b=0.0773042270717
+clock refinement  384 sites: ||G_N-G_cont||_F=0.00027480215786, a=0.092750493317, b=0.0776159546416
+clock refinement  768 sites: ||G_N-G_cont||_F=6.88193193604e-05, a=0.0928122559148, b=0.0776946551332
+PASS: full 190-dimensional native Gaussian 24→768 clock refinement agrees with continuum spectral Green function
+continuum time a,b 0.09283287213699892 0.07772095790891805
+continuum time mixed 3x5 norm 0.002311824528472801
+continuum time static local Wick 8||M|| 0.523574975254763 surviving geometric gap 0.24035704724544515
+PASS: full five-solid native local-Wick source remains below original geometric gap after clock-continuum refinement
+Schur-positive operator order upper bound for FULL nonlocal 8||M|| <= 0.4606159590788976
+certified via exact Schur order surviving nonzero-sector margin 0.3033160634213106
+PASS: full-clock Schur-product order bound proves positivity without relying only on numerical diagonalisation of nonlocal history interaction
+0496b7f882ffd27e086b0c51096a03bdd651643e8f6436a01d5841f0232863b6  /mnt/data/cathedral_native_24clock_covariance_2026_11_08.py
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  /mnt/data/cathedral_reconstruction/cathedral_constructed_joint_dynamics_2026_11_07.py
