@@ -1,0 +1,17 @@
+PASS all-five original portal Q: 50→8→12, Gram QQ^T = Pi3+Pi5 exact A5 projector
+PASS exact S_50 face Gaussian covariance diagonal= 3*sqrt(5)/10 + 3/2
+PASS exact hidden covariance per complex Gaussian var sigma^2: 2sigma^4 × 6*sqrt(5)/5 + 3 (4_3); 2sigma^4 × 1 (4_5)
+PASS 50-vertex Wick M3 eigenvalues: 0(42), 4*sqrt(5)/5 + 2 (3), 12*sqrt(5)/25 + 6/5 (5)
+PASS 50-vertex Wick M5 eigenvalues: 0(45), 4/5 (5)
+PASS all-site complex U(1) rotations preserve quartic Wick counterterms
+PASS exact finite-cutoff tensor counterterm and vacuum subtraction restore original positive quartic
+PASS conservative uniform correction at sigma^2=.5: 3.367870561777628
+PASS original 190×64×24 source-free triplet Wick instability at sigma2=.5
+full 24-clock bare geometry g3= 2.470955814463733
+full 24-clock critical sigma2= 0.367222281181353
+full 24-clock negative quadratic coefficient at sigma2=.5= -0.447178170469307
+PASS Gibbs-weighted source dual susceptibility = ( 16*sqrt(5)/5 + 8 + 9.91370569864e-06 ) sigma^4
+SOURCE SHA256 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd
+4bd966871891f60112277288cd750c47ea9f5decdcf1ad7ef9c45c495e6470a8  /mnt/data/cathedral_full50_complex_wick_2026_11_08.py
+4a00ed52b3982f5fe4cee80b229b448b3d935eecde744fe13f6b2333f6eaa9e6  /mnt/data/CATHEDRAL_FULL50_COMPLEX_WICK_AND_24CLOCK_STABILITY_2026-11-08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  /mnt/data/cathedral_constructed_joint_dynamics_2026_11_07.py

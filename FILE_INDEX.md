@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 887 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 890 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **887 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **890 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -980,4 +980,11 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_4D_FINITE_SUBTRACTED_HIDDEN_RESPONSE_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_4D_FINITE_SUBTRACTED_HIDDEN_RESPONSE_2026-11-08.md) — Analytic cutoff-independent 4D native hidden 3/5 one-loop momentum-response difference; **Run:** N/A; **Free:** symbolic Gaussian reference mass and subtraction point, no empirical fitting.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.py) — Independent hard-cutoff integral/Feynman-parameter test against native projectors; **Run:** PASS 2026-11-08; **Free:** symbolic Gaussian reference mass and subtraction point, no empirical fitting.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.verify.log) — Execution output with SHA256 and convergence errors; **Run:** N/A; **Free:** symbolic Gaussian reference mass and subtraction point, no empirical fitting.
+
+
+### 8 November — corrected all-five 50→8→12 complex-source Wick theorem (3 files)
+
+- [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_FULL50_COMPLEX_WICK_AND_24CLOCK_STABILITY_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_FULL50_COMPLEX_WICK_AND_24CLOCK_STABILITY_2026-11-08.md) — Corrected 50-source exact A5 Wick matrices, charged U(1) counterterms and genuine full 24-clock instability; **Run:** N/A; **Free:** specified white 50-vertex Gaussian reference and original frozen URT values; not experimentally fitted.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_full50_complex_wick_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_full50_complex_wick_2026_11_08.py) — Verified original-model all-five exact SymPy + U(1) 24-clock test; **Run:** PASS 2026-11-08; **Free:** specified white 50-vertex Gaussian reference and original frozen URT values; not experimentally fitted.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_full50_complex_wick_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_full50_complex_wick_2026_11_08.verify.log) — PASS execution log with SHA256 source provenance; **Run:** N/A; **Free:** specified white 50-vertex Gaussian reference and original frozen URT values; not experimentally fitted.
 
