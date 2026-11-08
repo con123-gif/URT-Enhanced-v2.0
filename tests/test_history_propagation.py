@@ -76,6 +76,37 @@ def test_exact_cumulants_and_parity():
             assert lam[6]==s2**3/F(300000)-s2*s4/F(40000)+s6/F(24000)+F(p*prod,640)
 
 
+def test_exact_kinetic_pde_and_bare_quantum_transfer():
+    e=NativeHistoryPropagation()
+    identity=np.eye(64)
+    for t in (0.,.13,.5):
+        heat=e.history_transfer(t)
+        unitary=e.history_transfer(t,quantum=True)
+        assert np.max(abs(heat.sum(axis=1)-1))<1e-13
+        assert np.min(heat.real)>-1e-12
+        assert np.linalg.norm(unitary.conj().T@unitary-identity)<1e-12
+        assert np.linalg.norm(heat-e.history_transfer(-1j*t,quantum=True))<1e-12
+    for parity in (-1,1):
+        for time in (.15,.8):
+            at_zero=e.spatial_fourier_characteristic([0,0,0],time,parity)
+            assert abs(at_zero-1)<1e-12
+            wave=[.31,-.11,.17]
+            char=e.spatial_fourier_characteristic(wave,time,parity)
+            conj=e.spatial_fourier_characteristic([-x for x in wave],time,parity)
+            assert abs(char-np.conj(conj))<1e-12
+            assert abs(char)<=1+1e-11
+            assert abs(char.imag)<1e-12
+            assert abs(e.spatial_fourier_generator([0,0,0],parity).real+e.restrictions[parity][1]).max()<1e-13
+    n=e.axes[0]
+    for parity in (-1,1):
+        for wave in (.06,.1,.15):
+            eig=np.linalg.eigvals(e.spatial_fourier_generator(wave*n,parity))
+            slow=eig[np.argmin(np.abs(eig))]
+            c=e.cumulant_rates(n,parity)
+            predicted=-c[2]*wave**2+c[4]*wave**4-c[6]*wave**6
+            assert abs(slow-predicted)<1e-9,(slow,predicted)
+
+
 def test_propagator_and_rate_expansion():
     e=NativeHistoryPropagation()
     for t in [0,.1,1,10]:
@@ -98,10 +129,12 @@ if __name__=='__main__':
     test_generator_and_symmetries()
     test_exact_cumulants_and_parity()
     test_propagator_and_rate_expansion()
+    test_exact_kinetic_pde_and_bare_quantum_transfer()
     e=NativeHistoryPropagation()
     print('PASS native 64 history spectrum, six icosahedral axes, both 32-state parity sectors')
     print('PASS exact rational Walsh cumulants through sixth order')
     print('PASS eigensolver comparison, finite-time MGF and full isotropic covariance')
+    print('PASS exact 3D kinetic Fourier PDE, full-H64 Markov/quantum transfer, sixth-order dispersion')
     print('D',e.diffusion_coefficient,'quartic coefficient',e.cumulant_rates([1,2,3])[4])
     print('finite propagation speed bound',e.max_speed)
     for name,d in [('twofold',[1,0,0]),('threefold',[1,1,1]),('fivefold',e.axes[0])]:

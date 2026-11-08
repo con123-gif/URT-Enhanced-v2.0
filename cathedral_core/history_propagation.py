@@ -96,6 +96,47 @@ class NativeHistoryPropagation:
         overlaps=(v.T@np.ones(32))**2/32.0
         return float(overlaps@np.exp(time*w))
 
+    def spatial_fourier_generator(self, wavevector, parity=1):
+        """Exact Fourier symbol of the 64-velocity 3D transport equation.
+
+        A_q=-L_parity-i*r*diag(q dot X(s)); p_t=-r*X(s) dot grad p-Lp.
+        This retains all 32 velocities in the chosen invariant parity sector.
+        """
+        k=np.asarray(wavevector,float)
+        if k.shape!=(3,) or not np.all(np.isfinite(k)):
+            raise ValueError("wavevector must be a finite three-vector")
+        if parity not in self.restrictions:raise ValueError("parity must be +1 or -1")
+        ids,L=self.restrictions[parity]
+        return -L-1j*R*np.diag(self.positions[ids]@k)
+
+    def spatial_fourier_characteristic(self, wavevector, time, parity=1):
+        """Exact characteristic function E(exp(-i k.Y_t)) at finite time.
+
+        Initial history is uniform in the chosen parity sector and Y_0=0.
+        The transfer is the full 32x32 kinetic Fourier semigroup, not a
+        Gaussian or truncated long-wave diffusion kernel.
+        """
+        if time<0 or not np.isfinite(time):raise ValueError("time must be nonnegative")
+        from scipy.linalg import expm  # scipy is in the native-engine optional dependencies
+        M=expm(time*self.spatial_fourier_generator(wavevector,parity))
+        return complex(np.sum(M)/32.0)
+
+    def history_transfer(self, time, *, quantum=False):
+        """Original H64 supports heat/Markov or unitary spectral evolution.
+
+        quantum=False: exp(-time*H64) is a nonnegative stochastic matrix.
+        quantum=True:  exp(-i*time*H64) is unitary. Their relation by
+        analytic continuation is exact for this *finite bare history*.
+        The U1-twisted 24-clock full Hamiltonian is not a Markov generator.
+        """
+        if not np.isfinite(time):
+            raise ValueError("time must be finite")
+        if not quantum and (np.iscomplexobj(time) or time<0):
+            raise ValueError("Markov time must be real and nonnegative")
+        eigen,base=np.linalg.eigh(self.L)
+        weights=np.exp((-1j if quantum else -1.0)*time*eigen)
+        return (base*weights)@base.T
+
     def cumulant_rates(self,direction,parity=1):
         """Exact degree 2,4,6 Taylor coefficients, evaluated on a direction.
 

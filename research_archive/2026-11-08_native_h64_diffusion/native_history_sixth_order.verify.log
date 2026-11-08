@@ -4,6 +4,7 @@ PASS universal identity in all six independent a_i; no direction fit or numerica
 PASS native 64 history spectrum, six icosahedral axes, both 32-state parity sectors
 PASS exact rational Walsh cumulants through sixth order
 PASS eigensolver comparison, finite-time MGF and full isotropic covariance
+PASS exact 3D kinetic Fourier PDE, full-H64 Markov/quantum transfer, sixth-order dispersion
 D 0.2671411414109495 quartic coefficient -0.0008920548679293124
 finite propagation speed bound 3.7400122673791003
 twofold c6 plus 0.0 c6 minus 0.0
@@ -12,8 +13,8 @@ fivefold c6 plus -4.277769265224456e-05 c6 minus 9.043860377621048e-05
 PASS exact H64 original matrix matching, SHA256 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd
 PASS six actual antipodal axes, all-five 190 Hodge, 50->8->12, hidden 4+4 source
 native diffusion 0.2671411414109495
-96103b5327ac07f85a66be30438af7749cf0c5abe73e3786be30a0869000308b  cathedral_core/history_propagation.py
-a8183564eca2757c2e4f634be6e6d1b1c7244d2495db643f5e62b1039c973d00  test_history_propagation.py
+a66cd639f6f560222a69843ebf9151f1052c6e541bba0ea0054b1e41c9330012  cathedral_core/history_propagation.py
+4fbe9e0c7c7d93c54202e0a973f29048b54818843bfb649460d838f2698e947c  test_history_propagation.py
 ce961aa2555aa75f99daf37a957cd2df819d6cd865d1c0026c2cce2d0b5b323e  certify_history_sixth_exact.py
 26d0e63aea9dc9462f8b1a0ec50e663131eac12e0df628682cb10fb5f329e3cf  verify_original_history_interface.py
 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  original_source.py

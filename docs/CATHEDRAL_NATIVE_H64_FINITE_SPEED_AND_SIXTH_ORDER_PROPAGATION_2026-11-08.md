@@ -105,3 +105,29 @@ The new installable package module `cathedral_core/history_propagation.py` inclu
 The tests `tests/test_history_propagation.py` compare exact rational Walsh coefficients, the parity-sector eigenvalues, finite-time propagators and all special directions. `certify_history_sixth_exact.py` supplies the independent **universal polynomial** verification. `verify_original_history_interface.py` imports the **unchanged original** 7 November all-five interaction code by SHA256 `5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd`, and verifies equality with its native 64×64 Hbits matrix, while retaining its 190×190 Hodge geometry, 50→8→12 portal and 64×20 hidden isometry.
 
 The theorem materially improves the earlier single diffusion-coefficient result: its stochastic spatial propagator has a finite microscopic speed, an isotropic quadratic and quartic regime, and a calculable sixth-order native icosahedral signature. It does **not** substitute this history observable for the separately interacting v3 Hamiltonian nor claim that tested emergent physical cosmology already follows.
+
+## Theorem 3 — exact 64-velocity three-dimensional kinetic PDE and the bare-H64 quantum continuation
+
+Because each of the 64 histories has the actual velocity \(v_s=rX(s)\), and each unordered pair of signs flips at rate one, the corresponding spatial probability densities satisfy the **exact closed first-order kinetic system**
+
+\[
+ \boxed{\partial_t p_s(t,x)=-rX(s)\cdot\nabla_xp_s(t,x)-(Lp(t,x))_s,\quad s\in\{\pm1\}^6.}
+\]
+
+This is a transport-and-jump equation, not an assumed second-order spatial heat equation. It is conservative (integrated total mass is constant), positivity-preserving, and has the finite-speed support bound of Theorem 1 for initially compactly supported data. On either parity class it is a 32-velocity subsystem. Its exact Fourier propagator at wavevector \(k\) is
+
+\[
+ \widehat p(t,k)=\exp\!\left[t\bigl(-L_\epsilon-ir\operatorname{diag}(k\cdot X(s))\bigr)\right]\widehat p(0,k).
+\]
+
+The new implementation computes this 32-by-32 matrix exponential, allowing exact finite-time Fourier transport without replacing the 64-state history by a Gaussian approximation. Its slow eigenvalue agrees with the proven anisotropic sixth-order characteristic dispersion (real tilt \(t\mapsto it\)), an independent long-wave test.
+
+**One same native operator, two exactly related evolutions.** The original positive 64-state \(L=H_{64}\) also defines
+
+\[
+ P(\tau)=e^{-\tau L},\qquad U(t)=e^{-itL},\qquad U(-i\tau)=P(\tau).
+\]
+
+For \(\tau\ge0\), \(P(\tau)\) is an entrywise nonnegative, mass-conserving Markov matrix, while for real \(t\), \(U(t)\) is unitary. The equality is exact by the finite spectral theorem and is checked numerically at the full 64×64 level. This algebraic Wick rotation identifies the same bare history operator in stochastic and unitary descriptions. **It does not establish that every probability trajectory becomes a quantum history,** or that the added complex charge-two golden 24-clock is itself a real Markov generator. In particular, the separately constructed full nonlinear v3 Hamiltonian time remains a specified dynamical completion.
+
+Updated tests verify stochasticity, unitarity, complex-time continuation, Fourier characteristic conjugate symmetry/normalisation and the sixth-order eigenvalue dispersion, in addition to the original-model SHA256 comparison.
