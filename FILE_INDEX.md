@@ -2,7 +2,7 @@
 
 **Index update:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
 
-**Coverage:** **869 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **872 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -940,3 +940,9 @@
 - [`research_archive/2026-11-07_joint_interacting_native/CATHEDRAL_MODULAR_SOURCE_INTERFACE_THEOREM_2026-11-08.md`](research_archive/2026-11-07_joint_interacting_native/CATHEDRAL_MODULAR_SOURCE_INTERFACE_THEOREM_2026-11-08.md) — Research proof/report or provenance README; **Run:** N/A; **Free:** inspect stated original modeling assumptions; no experimental fitting claimed.
 - [`research_archive/2026-11-07_joint_interacting_native/cathedral_modular_joint_interface_verify.py`](research_archive/2026-11-07_joint_interacting_native/cathedral_modular_joint_interface_verify.py) — Native 190×64×24 Python source or reproducibility test; **Run:** PASS as executed 2026-11-08; **Free:** inspect stated original modeling assumptions; no experimental fitting claimed.
 - [`research_archive/2026-11-07_joint_interacting_native/README.md`](research_archive/2026-11-07_joint_interacting_native/README.md) — Research proof/report or provenance README; **Run:** N/A; **Free:** inspect stated original modeling assumptions; no experimental fitting claimed.
+
+### Canonical source-selection and 4D continuum checks (3 files; 2026-11-08)
+
+- [`research_archive/2026-11-07_joint_interacting_native/CATHEDRAL_SELECTION_AND_4D_REFINEMENT_THEOREMS_2026-11-08.md`](research_archive/2026-11-07_joint_interacting_native/CATHEDRAL_SELECTION_AND_4D_REFINEMENT_THEOREMS_2026-11-08.md) — Conditional source selector, original 24-clock refinement, classical 4D Euclidean continuum; **Run:** N/A (math document); **Free:** selection axioms and refinement rules explicit; no empirical fits.
+- [`research_archive/2026-11-07_joint_interacting_native/cathedral_selection_and_refinement_verify_2026_11_08.py`](research_archive/2026-11-07_joint_interacting_native/cathedral_selection_and_refinement_verify_2026_11_08.py) — Original five-solid 190/64/24 source and refinement test; **Run:** PASS: rerun 2026-11-08; original-source Python exit 0; **Free:** selection axioms and refinement rules explicit; no empirical fits.
+- [`research_archive/2026-11-07_joint_interacting_native/cathedral_4d_euclidean_consistency_verify_2026_11_08.py`](research_archive/2026-11-07_joint_interacting_native/cathedral_4d_euclidean_consistency_verify_2026_11_08.py) — Original-source 4D covariant lattice action convergence test; **Run:** PASS: rerun 2026-11-08; original-source Python exit 0; **Free:** selection axioms and refinement rules explicit; no empirical fits.
