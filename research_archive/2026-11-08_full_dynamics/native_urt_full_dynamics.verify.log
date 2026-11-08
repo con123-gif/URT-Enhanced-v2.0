@@ -1,0 +1,21 @@
+modes 6096
+full linearized geometry gap 0.0025584063752775495
+full linearized history gap 0.010228725137850734
+Hbits distinct eigenvalues/multiplicities (array([-0., 10., 16., 18.]), array([ 2, 12, 30, 20]))
+original full-action diff -1.4210854715202004e-14 finite difference -0.32710288060400217 analytical -0.32710288048055336
+exact continuous-time Noether derivative -1.4988010832439613e-15
+history norm squared time derivative (energy exchange witness) 0.0011836871198479815
+Hamiltonian flow 6×dt=0.001 initial/final E 36.97528268458673 36.97528268457909 drift -7.638334409421077e-12
+Noether charge initial/final 11.61925785332867 11.619257853327236 drift -1.4335199693960021e-12
+history norm squared initial/final 0.10383254612452046 0.10383975506460735 change 7.20894008689188e-06
+PASS: full 190+64 at 24, original action, exact gradients, gauge, symplectic conservation, RK4, fluctuation spectrum
+..                                                                       [100%]
+2 passed in 0.52s
+SHA256 e28ee63f9bba2be4396436a00396bd9988a8569146d0d858ba65a360457f503a cathedral_core/full_dynamics.py
+SHA256 a9c8a6b18534b278ff9ef24e6f3487e4df5976c9b35e9c05855549311a80262b cathedral_core/urt.py
+SHA256 f984064bd2edda9b43e755a1765c369b99dcd5a6203be18aa28583b983066f8d tests/test_full_dynamics.py
+SHA256 3d0d802eb54001aad5a6d5544f101e86ad2fb8030f7899b0c6b38dccb2ab2705 tests/test_full_dynamics_factory.py
+SHA256 cb82bff4723c9ffef4bbdb339ffd446c6d7fbdbf7ef81af2ff3204cb1d3fff73 docs/NATIVE_URT_FULL_COUPLED_HAMILTONIAN_DYNAMICS_2026_11_08.md
+SHA256 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd research_archive/2026-11-07_joint_interacting_native/cathedral_constructed_joint_dynamics_2026_11_07.py
+
+Backwards compatibility plus new factory: 7 passed in 0.57s (tests/test_canonical_core.py tests/test_native_urt.py tests/test_full_dynamics_factory.py). Original scalar urt_step and historical functions preserved verbatim; appended only new factory.

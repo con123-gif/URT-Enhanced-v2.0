@@ -32,3 +32,13 @@ def native_urt_engine():
     """
     from .native_urt import NativeURTEngine
     return NativeURTEngine.from_archive()
+
+
+def native_urt_full_dynamics(source_path=None):
+    """Construct the coupled canonical 190-geometry/64-history/24-clock URT.
+
+    Unlike `native_urt_engine()`, both geometry and history are dynamical.
+    The original scalar controller is retained for historical comparison.
+    """
+    from .full_dynamics import NativeURTFullDynamics
+    return NativeURTFullDynamics.from_archive(source_path)
