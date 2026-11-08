@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 893 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 896 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **893 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **896 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -994,4 +994,11 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_A5_TWO_CHANNEL_WICK_RG_FLOW_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_A5_TWO_CHANNEL_WICK_RG_FLOW_2026-11-08.md) — Exact full 50-vertex A5 two-channel Wick counterterm and Gaussian-scale composition; **Run:** N/A; **Free:** two specified Gaussian channel variances a,b, no empirical fit.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_a5_two_covariance_rg_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_a5_two_covariance_rg_2026_11_08.py) — Independent original 190×64×24 matrix / exact symbolic covariance verifier; **Run:** PASS 2026-11-08; **Free:** two specified Gaussian channel variances a,b, no empirical fit.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_a5_two_covariance_rg_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_a5_two_covariance_rg_2026_11_08.verify.log) — PASS log, covariance sweep and SHA256 provenance; **Run:** N/A; **Free:** two specified Gaussian channel variances a,b, no empirical fit.
+
+
+### 8 November — derived native 190-cochain and golden 24-clock Gaussian covariance (3 files)
+
+- [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_OPERATOR_DERIVED_190_24_WICK_COVARIANCE_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_OPERATOR_DERIVED_190_24_WICK_COVARIANCE_2026-11-08.md) — Original full five-solid 190×24 zero-source Gibbs covariance and exact general-Wick tensor proof; **Run:** N/A; **Free:** no trial source variances; zero-source Gaussian determined by the existing URT action.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.py) — Direct 24×190 inverse/Schur source and complex U1 Wick verification; **Run:** PASS 2026-11-08; **Free:** no trial source variances; zero-source Gaussian determined by the existing URT action.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.verify.log) — PASS log, native covariance, cross-carrier response and original-source SHA256; **Run:** N/A; **Free:** no trial source variances; zero-source Gaussian determined by the existing URT action.
 

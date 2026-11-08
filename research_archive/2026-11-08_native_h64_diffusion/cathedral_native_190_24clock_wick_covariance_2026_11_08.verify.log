@@ -1,0 +1,14 @@
+PASS exact 190×24 positive charged Hessian -> local 50-vertex complex Gibbs covariance
+native covariance a3 trace-average: 0.077044310262195 b5 trace-average: 0.060768469064209
+native G8 3x5 off-block norm: 0.002475096471260
+native G8 five-carrier splitting norm: 0.000914007458797
+native 8-channel eigenvalues: 0.060267846561 0.060267846561 0.060975139641 0.060975139641 0.060975139641 0.077171388021 0.077171388021 0.077171388021
+face covariance diagonal min/max: 0.152342520533653 0.158243059974375
+hidden P3 (S◦S) P5 off-block norm: 0.000215350054976
+hidden real Gaussian un-centred means 3/5: 0.008344622902386 0.000914007458797
+native source modular susceptibility: 0.070966483989940
+PASS 50-vertex complex local Wick tensor and 24-clock U1 covariance; restoring mass coefficient: 0.409436408060270
+SOURCE SHA256: 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd
+df88a71f940722b7d6a5440b265183aff2f94eb596cd18be25c718304bcf049e  /mnt/data/cathedral_native_190_24clock_wick_covariance_2026_11_08.py
+1cf12a22b4675a4e4644d5cf1d3eeab2b6f858c95bb84175218c509c5e29f1b9  /mnt/data/CATHEDRAL_OPERATOR_DERIVED_190_24_WICK_COVARIANCE_2026-11-08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  /mnt/data/cathedral_constructed_joint_dynamics_2026_11_07.py
