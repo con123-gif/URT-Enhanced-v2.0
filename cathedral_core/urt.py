@@ -42,3 +42,12 @@ def native_urt_full_dynamics(source_path=None):
     """
     from .full_dynamics import NativeURTFullDynamics
     return NativeURTFullDynamics.from_archive(source_path)
+
+def native_urt_spatial_transport(source_path=None):
+    """Native full-64-history spatial Fourier propagator; original model intact.
+
+    Gives the exact finite-time tilted Markov operator and its 3D low-k
+    transport spectrum, with D=(pi/e)^2/5. No inserted spatial Laplacian.
+    """
+    from .spatial_transport import NativeURTSpatialTransport
+    return NativeURTSpatialTransport.from_archive(source_path)

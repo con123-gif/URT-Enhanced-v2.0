@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 914 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 918 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **914 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **918 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -1039,4 +1039,12 @@
 - [`tests/test_full_dynamics_factory.py`](tests/test_full_dynamics_factory.py) — Public new engine factory, zero-field Hessian, all 6096 modes and backwards-compatible native engine; **Run:** PASS 2026-11-08; **Free:** frozen model parameters and explicitly chosen canonical Hamiltonian time convention; no observational fit.
 - [`docs/NATIVE_URT_FULL_COUPLED_HAMILTONIAN_DYNAMICS_2026_11_08.md`](docs/NATIVE_URT_FULL_COUPLED_HAMILTONIAN_DYNAMICS_2026_11_08.md) — Research theorem, reproducible results, or SHA256 verification log; **Run:** N/A; **Free:** frozen model parameters and explicitly chosen canonical Hamiltonian time convention; no observational fit.
 - [`research_archive/2026-11-08_full_dynamics/native_urt_full_dynamics.verify.log`](research_archive/2026-11-08_full_dynamics/native_urt_full_dynamics.verify.log) — Research theorem, reproducible results, or SHA256 verification log; **Run:** N/A; **Free:** frozen model parameters and explicitly chosen canonical Hamiltonian time convention; no observational fit.
+
+
+### 8 November — v4 original H64 exact 3D spatial propagator (four files; existing controller factory extended)
+
+- [`cathedral_core/spatial_transport.py`](cathedral_core/spatial_transport.py) — Native 32+32 full-history spatial tilted generator, finite-time characteristic function and exact small-wave pole to k6; **Run:** PASS 2026-11-08; **Free:** original frozen pi/e, six axes and original Hbits; readout fixed in 2026-11-08 native history Green–Kubo proof, no fitted coefficients.
+- [`tests/test_native_spatial_transport.py`](tests/test_native_spatial_transport.py) — Rational Walsh order-6 universal theorem, original 190/64/24 model, both parity propagators and finite-time covariance regression; **Run:** PASS 2026-11-08; **Free:** original frozen pi/e, six axes and original Hbits; readout fixed in 2026-11-08 native history Green–Kubo proof, no fitted coefficients.
+- [`docs/NATIVE_URT_EXACT_3D_SPATIAL_PROPAGATOR_2026-11-08.md`](docs/NATIVE_URT_EXACT_3D_SPATIAL_PROPAGATOR_2026-11-08.md) — Complete native 3D propagation theorem through k6 and source provenance; **Run:** N/A; **Free:** original frozen pi/e, six axes and original Hbits; readout fixed in 2026-11-08 native history Green–Kubo proof, no fitted coefficients.
+- [`research_archive/2026-11-08_full_dynamics/native_spatial_transport.verify.log`](research_archive/2026-11-08_full_dynamics/native_spatial_transport.verify.log) — Executed 1-pass pytest log, exact eigenvalues and original model SHA256; **Run:** N/A; **Free:** original frozen pi/e, six axes and original Hbits; readout fixed in 2026-11-08 native history Green–Kubo proof, no fitted coefficients.
 

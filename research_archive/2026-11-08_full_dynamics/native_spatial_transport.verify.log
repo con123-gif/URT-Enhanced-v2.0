@@ -1,0 +1,21 @@
+PASS exact rational universal Walsh calculation: order 2/4/6, six representative inputs and both 32-state parities
+pole at |k|=0.5 parity -1 direction [1.0, 0.0, 0.0] exact decay 0.06684103860955803 6th approximation 0.06684103878198296 relative error 2.5796266058952255e-09
+pole at |k|=0.5 parity -1 direction [0.7071067811865475, 0.7071067811865475, 0.0] exact decay 0.06684192886423812 6th approximation 0.06684192197147294 relative error 1.0312038110192713e-07
+pole at |k|=0.5 parity -1 direction [0.5773502691896258, 0.5773502691896258, 0.5773502691896258] exact decay 0.06684077484610018 6th approximation 0.06684077709620814 relative error 3.366370252659081e-08
+pole at |k|=0.5 parity -1 direction [0.2672612419124244, 0.5345224838248488, 0.8017837257372732] exact decay 0.06684176317841364 6th approximation 0.06684175760058426 relative error 8.344826817396995e-08
+pole at |k|=0.5 parity 1 direction [1.0, 0.0, 0.0] exact decay 0.06684103860955803 6th approximation 0.06684103878198296 relative error 2.5796266058952255e-09
+pole at |k|=0.5 parity 1 direction [0.7071067811865475, 0.7071067811865475, 0.0] exact decay 0.0668406162831564 6th approximation 0.06684062103107813 relative error 7.103348213209422e-08
+pole at |k|=0.5 parity 1 direction [0.5773502691896258, 0.5773502691896258, 0.5773502691896258] exact decay 0.06684116375896801 6th approximation 0.06684116256002882 relative error 1.7937138084060375e-08
+pole at |k|=0.5 parity 1 direction [0.2672612419124244, 0.5345224838248488, 0.8017837257372732] exact decay 0.06684069488254496 6th approximation 0.06684069877893209 relative error 5.829363588239562e-08
+PASS full original H64 all parity modes, isotropic k²+k⁴, sixth-order icosahedral/parity splitting
+D native 3D 0.2671411414109495
+fourth-order isotropic coefficient 0.0008920548679293115
+no parameter fitting, no replacement 13-state or spatial heat equation
+.
+1 passed in 0.43s
+
+SHA256 original 7 November
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  research_archive/2026-11-07_joint_interacting_native/cathedral_constructed_joint_dynamics_2026_11_07.py
+SHA256 new files
+647f67456bb908757a51472e1316749d6203aeae838e7552716210fb0a1a7179  cathedral_core/spatial_transport.py
+d001b880a157297542e6fbd9199eba141c43ae9ae5529538676ea254226372cc  tests/test_native_spatial_transport.py
