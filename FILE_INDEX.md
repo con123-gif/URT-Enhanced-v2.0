@@ -2,7 +2,7 @@
 
 **Index update:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
 
-**Coverage:** **884 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **887 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -973,4 +973,11 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_4D_WICK_STABILITY_COUNTERTERM_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_4D_WICK_STABILITY_COUNTERTERM_2026-11-08.md) — Exact icosahedral rational/surd Wick counterterms, instability threshold and minimum stabilising scalar coefficient; **Run:** N/A; **Free:** Gaussian variance and regulator symbolic; no measured constants.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_4d_wick_stability_counterterm_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_4d_wick_stability_counterterm_2026_11_08.py) — Full original-model symbolic 12-vertex mass matrices and 4D bubble regression; **Run:** PASS 2026-11-08; **Free:** Gaussian variance and regulator symbolic; no measured constants.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_4d_wick_stability_counterterm_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_4d_wick_stability_counterterm_2026_11_08.verify.log) — Executed exact checks, source SHA256 hashes; **Run:** N/A; **Free:** Gaussian variance and regulator symbolic; no measured constants.
+
+
+### UV-finite native hidden-source momentum subtraction (8 November 2026; 3 files)
+
+- [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_4D_FINITE_SUBTRACTED_HIDDEN_RESPONSE_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_4D_FINITE_SUBTRACTED_HIDDEN_RESPONSE_2026-11-08.md) — Analytic cutoff-independent 4D native hidden 3/5 one-loop momentum-response difference; **Run:** N/A; **Free:** symbolic Gaussian reference mass and subtraction point, no empirical fitting.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.py) — Independent hard-cutoff integral/Feynman-parameter test against native projectors; **Run:** PASS 2026-11-08; **Free:** symbolic Gaussian reference mass and subtraction point, no empirical fitting.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.verify.log) — Execution output with SHA256 and convergence errors; **Run:** N/A; **Free:** symbolic Gaussian reference mass and subtraction point, no empirical fitting.
 

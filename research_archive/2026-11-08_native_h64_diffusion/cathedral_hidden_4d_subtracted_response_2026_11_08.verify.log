@@ -1,0 +1,17 @@
+UV-finite hidden one-loop response verification — 2026-11-08
+Command: OPENBLAS_NUM_THREADS=1 python cathedral_hidden_4d_subtracted_response_2026_11_08.py
+
+PASS exact 4D subtracted bubble equals convergent Feynman-parameter formula
+PASS independent hard-cutoff integral converges to unique finite momentum response
+PASS hidden 3/5 response matrices proportional to 12P3+4Delta²P5 with no new fit
+PASS low-momentum source-response derivative from Gaussian history spatial kinetic
+subtracted bubble B_R(p²=10,m²=10) -0.006033718091108
+cutoffs 20,80,320:  -0.006021921675 -0.006033669800 -0.006033717902
+absolute errors: 1.17964e-05 4.8291e-08 1.8919e-10
+per-quartet 3/5 response ratio= 484178.1817929916
+D spatial= 0.267141141410950
+
+SHA256
+0997a48dfc51c1908dc5eee16423829cd52a7a21fc3f13b87a8356cff0677986  cathedral_hidden_4d_subtracted_response_2026_11_08.py
+87d4c35768a854aba7843b5016f622eef7654c4b8820488bccef6b5b8100d3a6  CATHEDRAL_4D_FINITE_SUBTRACTED_HIDDEN_RESPONSE_2026-11-08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  cathedral_constructed_joint_dynamics_2026_11_07.py
