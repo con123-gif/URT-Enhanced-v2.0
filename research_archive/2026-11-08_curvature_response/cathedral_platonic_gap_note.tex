@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{array}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Newton's Cathedral --- mathematical working note}
+\fancyhead[R]{\small 8 November 2026}
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+\title{\vspace{-1.1cm}\textbf{An Exact Co-closed Curvature Gap\\for the Five Platonic Cell Complexes}\\[5pt]\large An independent finite-dimensional Hodge calculation inspired by a constrained block Poincar\'e bound}
+\author{Newton's Cathedral --- independent research note}
+\date{8 November 2026 \;\textbullet\; Working draft, not a continuum Yang--Mills theorem}
+\begin{document}
+\maketitle
+\vspace{-7mm}
+\begin{abstract}
+For the direct sum of the standard, unit-weight oriented cellular cochain complexes of all five Platonic solids, viewed as cellulations of $S^2$, we prove a sharp spectral inequality for co-closed edge cochains $\phi$. With $d_0:C^0\to C^1$ and $d_1:C^1\to C^2$, the inequality is
+\[
+\boxed{\quad d_0^{\!*}\phi=0\quad\Longrightarrow\quad
+\|d_1\phi\|^2\ge (3-\sqrt 5)\,\|\phi\|^2.\quad}
+\]
+The coefficient is the exact smallest positive eigenvalue of the dodecahedral graph Laplacian, which is dual to the icosahedral face Laplacian. We provide a reproducible incidence-matrix verification. This concerns a fixed finite complex and does not establish scale-uniform lattice Yang--Mills coercivity, non-Abelian gauge dynamics, or a continuum mass gap.
+\end{abstract}
+
+\section{Question and precise scope}
+The shared Lockwood constrained-block claim is the inequality
+\begin{equation}\label{eq:lockwood}
+ \|d\varphi\|^2\ge \frac{537}{5000}\|\varphi\|^2
+ \qquad\left(\frac{537}{5000}=0.1074\right)
+\end{equation}
+for forest-gauge link fields satisfying specific zero block-average constraints, uniformly over specified finite supports. The supplied image does not define those supports, gauge-fixing operators, or block constraints. Therefore its constant cannot be independently certified from the image alone. Lockwood's constrained-cube work is credited in the 2026 lattice Yang--Mills preprint of Bhattacharjee, Bhattacharya, Lockwood and Romanov~\cite{bhattacharjee2026}. The preprint itself distinguishes its conditional continuum criterion from a completed Yang--Mills solution.
+
+Rather than copy equation~\eqref{eq:lockwood} into another system, we test the corresponding coercivity question on a fully specified independent object: the complete five-solid Platonic Hodge complex of Newton's Cathedral, of dimensions $(50,90,50)$ in cochain degrees $0,1,2$.
+
+\section{Five-solid complex and exact theorem}
+For each Platonic solid $P$ use the canonical oriented face-edge-vertex incidences, unit Euclidean inner products in cellular bases, and coboundaries
+\[
+ C^0(P)\xrightarrow{d_0}C^1(P)\xrightarrow{d_1}C^2(P),
+ \qquad d_1d_0=0.
+\]
+The total complex is the direct sum over $P\in\{\text{tetrahedron, cube, octahedron, dodecahedron, icosahedron}\}$. In total it has $50$ vertex, $90$ edge, and $50$ face basis elements; the edge space decomposes orthogonally into $45$ exact and $45$ coexact dimensions.
+
+\begin{theorem}[Sharp five-Platonic co-closed curvature bound]\label{thm:gap}
+Let $\phi\in C^1$ for the full direct sum, and impose $d_0^{\!*}\phi=0$. Then
+\begin{equation}\label{eq:theorem}
+ \langle \phi,d_1^{\!*}d_1\phi\rangle
+ =\|d_1\phi\|^2\ge \mu_*\|\phi\|^2,
+ \qquad \mu_*:=3-\sqrt5=0.7639320225\ldots .
+\end{equation}
+The constant $\mu_*$ is optimal.
+\end{theorem}
+
+\begin{proof}
+Each boundary surface is a cellular $2$-sphere. Hence its first cohomology vanishes, and
+$\ker d_1=\operatorname{im}d_0$ and $C^1=\operatorname{im}d_0\oplus\operatorname{im}d_1^{\!*}$ orthogonally. The co-closed condition $d_0^{\!*}\phi=0$ therefore restricts $\phi$ to $\operatorname{im}d_1^{\!*}$. On that subspace the positive spectrum of $d_1^{\!*}d_1$ equals that of $d_1d_1^{\!*}$. Because every edge has exactly two incident faces with opposite boundary signs, $d_1d_1^{\!*}$ is exactly the combinatorial graph Laplacian of the \emph{dual} Platonic graph.
+
+The dual-graph Laplacian gaps are listed in Table~\ref{tab:gaps}; their minimum is $3-\sqrt5$, occurring for the dodecahedral dual graph of the icosahedral cellulation. Exactness follows directly from the dodecahedral Laplacian characteristic polynomial
+\begin{equation}\label{eq:charpoly}
+ \det(\lambda I-L_{\mathrm{dodec}})
+ =\lambda(\lambda-5)^4(\lambda-3)^4(\lambda-2)^5
+ (\lambda^2-6\lambda+4)^3.
+\end{equation}
+Its least nonzero root is $3-\sqrt5$ (multiplicity three). Taking an associated coexact singular vector on the icosahedral summand and zero on the remaining four summands saturates~\eqref{eq:theorem}.
+\end{proof}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{lrrrl}
+\toprule
+Cell surface & $V$ & $E$ & $F$ & Smallest positive eigenvalue of $d_1^{\!*}d_1$ \\
+\midrule
+Tetrahedron &4&6&4& $4$ \\
+Cube &8&12&6& $4$ \\
+Octahedron &6&12&8& $2$ \\
+Dodecahedron &20&30&12& $5-\sqrt5=2.763932\ldots$ \\
+Icosahedron &12&30&20& $3-\sqrt5=0.763932\ldots$ \\
+\midrule
+Total & \textbf{50}&\textbf{90}&\textbf{50}& \textbf{Minimum $3-\sqrt5$} \\
+\bottomrule
+\end{tabular}
+\caption{Exactly computed unit-weight incidence spectra. These are different operators and constraints from Lockwood's forest-gauge block problem.}\label{tab:gaps}
+\end{table}
+
+\section{A mathematically valid transfer consequence}
+Set $K=d_1^{\!*}d_1$ restricted to $\ker d_0^{\!*}$ and take the \emph{explicitly defined} heat transfer $T_t=\exp(-tK)$ for $t>0$. Theorem~\ref{thm:gap} immediately gives
+\begin{equation}\label{eq:semigroup}
+ \|T_t\|_{\ker d_0^{\!*}}\le e^{-t(3-\sqrt5)},
+ \qquad -\log T_t=tK\succeq t(3-\sqrt5)I.
+\end{equation}
+This supplies a finite-cell contraction estimate \emph{if} Cathedral transfer is defined from this $K$ or proved to obey a compatible operator inequality. It does not by itself identify $T_t$ with a previously proposed positive URT transfer $B^{\!*}B$ or with a physical time-evolution operator.
+
+\begin{corollary}[Uncoupled 24-track replication]
+For $24$ independent copies, $K_{24}=I_{24}\otimes K$ has the same sharp lower bound $3-\sqrt5$. Adding any positive semidefinite cross-track quadratic form preserves the bound. Arbitrary indefinite or non-commuting couplings do not come with that guarantee.
+\end{corollary}
+
+\section{What the comparison does and does not establish}
+The numerical ratio $(3-\sqrt5)/(537/5000)\approx7.11296$ is \emph{not} an improvement over Lockwood's inequality: it compares distinct configurations, normalizations and constraint spaces. Also, the un-gauged version of our inequality is false. For every nonconstant vertex function $f$, the nonzero edge field $\phi=d_0f$ has $d_1\phi=d_1d_0f=0$. The co-closed restriction is essential, as forest-gauge and block constraints are essential in the quoted research.
+
+Three ingredients remain separate from this finite-dimensional result: (i) an explicit map from Cathedral carrier degrees of freedom (including $H_{13}\oplus H_{51}$ and the $24$-track ordering) to a specified lattice gauge theory; (ii) a coupling-dependent, scale-uniform coercivity or correlation estimate through refinement; and (iii) construction and nontriviality of the requisite four-dimensional continuum quantum theory with reflection positivity and a physical spectral gap. None is proved here. The boundedness of a single fixed finite Hodge operator must not be mistaken for uniformity as the lattice spacing tends to zero.
+
+\section{Reproducibility and provenance}
+The accompanying standalone script \texttt{cathedral\_hodge\_gap.py} independently constructs the oriented boundary/coboundary matrices from each graph's planar embedding. It checks $d_1d_0=0$, Euler characteristic, the ranks $\operatorname{rank}d_0=V-1$ and $\operatorname{rank}d_1=F-1$, computes the five spectra and symbolically factors~\eqref{eq:charpoly}. No external Yang--Mills proof or code is incorporated. The calculation uses only standard graph and cellular Hodge theory; novelty relative to existing mathematical literature is not claimed.
+
+\begin{thebibliography}{9}
+\bibitem{bhattacharjee2026} D. Bhattacharjee, U. Bhattacharya, J. M. Lockwood and T. Romanov, \emph{One Cube Estimate Implies the Yang--Mills Mass Gap}, Hexagon preprint 2610.00341v7 (2026), \url{https://hexagonmath.org/2610.00341v7}. The paper states that the condition required throughout continuum tuning and the construction of a nontrivial continuum limit remain open.
+\end{thebibliography}
+\end{document}
