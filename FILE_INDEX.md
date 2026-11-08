@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 905 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 909 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **905 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **909 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -1022,4 +1022,12 @@
 - [`research_archive/2026-11-08_urt_prototype_audit/URT_PROTOTYPE_VS_CATHEDRAL_2026-11-08.md`](research_archive/2026-11-08_urt_prototype_audit/URT_PROTOTYPE_VS_CATHEDRAL_2026-11-08.md) — Exact source-level proof that scalar recurrence underdetermines hidden physics, plus branch discontinuity and corrected theory-building hierarchy; **Run:** N/A; **Free:** original adjustable prototype α,β,θh; no observed values fitted.
 - [`research_archive/2026-11-08_urt_prototype_audit/test_urt_prototype_scope_2026_11_08.py`](research_archive/2026-11-08_urt_prototype_audit/test_urt_prototype_scope_2026_11_08.py) — Original `cathedral_core/urt.py` regression testing parameter independence, jump, forward bound and hidden non-identifiability; **Run:** PASS 2026-11-08; **Free:** original adjustable prototype α,β,θh; no observed values fitted.
 - [`research_archive/2026-11-08_urt_prototype_audit/urt_prototype_scope_2026_11_08.verify.log`](research_archive/2026-11-08_urt_prototype_audit/urt_prototype_scope_2026_11_08.verify.log) — PASS output and matching original Git blob SHA; **Run:** N/A; **Free:** original adjustable prototype α,β,θh; no observed values fitted.
+
+
+### Full-state executable URT prototype upgrade (8 November 2026; 4 new files, 1 changed)
+
+- [`cathedral_core/native_urt.py`](cathedral_core/native_urt.py) — New runnable native 190-geometry/64-history/24-clock state-update engine with analytic gradients and exact H64 semigroup; **Run:** PASS 2026-11-08; **Free:** original frozen Cathedral model, numerical line search; no measured constants.
+- [`tests/test_native_urt.py`](tests/test_native_urt.py) — Original-source equivalence, gauge/gradient/descent/semigroup regression; **Run:** PASS 2026-11-08; **Free:** original frozen Cathedral model, numerical line search; no measured constants.
+- [`docs/NATIVE_URT_FULL_STATE_V2_2026_11_08.md`](docs/NATIVE_URT_FULL_STATE_V2_2026_11_08.md) — How to run full-state algorithm and distinguish unchanged legacy scalar call; **Run:** N/A; **Free:** original frozen Cathedral model, numerical line search; no measured constants.
+- [`research_archive/2026-11-08_urt_prototype_audit/native_urt_v2.verify.log`](research_archive/2026-11-08_urt_prototype_audit/native_urt_v2.verify.log) — Original-script SHA256 + 6 passing tests and five-step energy descent; **Run:** N/A; **Free:** original frozen Cathedral model, numerical line search; no measured constants.
 

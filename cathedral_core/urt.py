@@ -11,6 +11,7 @@ def phi_branch(p: float) -> float:
     return copysign(1.0, p)
 
 def urt_step(p: float, u: float, alpha=1.155, beta=0.235, theta_h=2.4) -> float:
+    """Historical scalar URT prototype; unchanged for reproducibility."""
     return beta * (alpha * (p - theta_h * phi_branch(p)) + u)
 
 def absorbing_bound(U: float, alpha=1.155, beta=0.235, theta_h=2.4) -> float:
@@ -20,4 +21,14 @@ def absorbing_bound(U: float, alpha=1.155, beta=0.235, theta_h=2.4) -> float:
     return beta * (alpha * theta_h + U) / (1.0 - lam)
 
 def max_piecewise_fibre_derivative(alpha=1.155, beta=0.235, theta_h=2.4) -> float:
+    """Maximum derivative on a smooth branch; not a global Lipschitz bound."""
     return alpha * beta * (1.0 + theta_h)
+
+def native_urt_engine():
+    """Active full-state algorithm: original 190 geometry × 64 history × 24 clock.
+
+    Requires the native archived Cathedral source plus scipy and mpmath.
+    Legacy `urt_step` remains a separately callable prototype.
+    """
+    from .native_urt import NativeURTEngine
+    return NativeURTEngine.from_archive()

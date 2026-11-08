@@ -1,0 +1,13 @@
+2026-11-08 Full-state URT v2 original-model code regression
+Original November model (sha256):
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  research_archive/2026-11-07_joint_interacting_native/cathedral_constructed_joint_dynamics_2026_11_07.py
+New implementation and tests (sha256):
+63cf4fd7150677a7b880dfa500ddbf1f0b904e8a9efe17d5e9f255ea14023a88  cathedral_core/native_urt.py
+b42eab0df04cdefc5051d40a50b04f3a5fbada7cb58b2666baea9fa09c464b51  cathedral_core/urt.py
+9f7d784cbda3375b1eae148a4ec7fc73096153f701fb7d4bdc71ee50ff18ecd5  tests/test_native_urt.py
+pytest 6 tests:
+......                                                                   [100%]
+6 passed in 0.41s
+full execution metrics:
+PASS native full-state v2: source, original model, analytic gradient, gauge, descent, H64 semigroup
+source energy 35.01437917402023 after 9.203149940804446 5 steps 0.6565226952026264
