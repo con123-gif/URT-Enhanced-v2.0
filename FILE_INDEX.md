@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 924 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 929 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **924 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **929 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -1057,4 +1057,13 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/certify_history_sixth_exact.py`](research_archive/2026-11-08_native_h64_diffusion/certify_history_sixth_exact.py) — Independent universal rational-polynomial Walsh certificate, all 57 monomials both parities; **Run:** PASS 2026-11-08; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
 - [`research_archive/2026-11-08_native_h64_diffusion/verify_original_history_interface.py`](research_archive/2026-11-08_native_h64_diffusion/verify_original_history_interface.py) — Direct original 7 November all-five 190/64/24 source and SHA256 matching; **Run:** PASS 2026-11-08; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
 - [`research_archive/2026-11-08_native_h64_diffusion/native_history_sixth_order.verify.log`](research_archive/2026-11-08_native_h64_diffusion/native_history_sixth_order.verify.log) — All PASS outputs, original-source SHA256 and checksums; **Run:** N/A; **Free:** six original icosahedral axes, H64 pair flip and r=π/e; no empirical fit.
+
+
+### 8 November 2026 — original-source unified three-dimensional URT v4 nonlinear spatial interaction (5 files)
+
+- [`cathedral_core/spatial_dynamics.py`](cathedral_core/spatial_dynamics.py) — Installable five-solid 190/64/24 Hamiltonian and native six-axis 3D history transport with local Noether current; **Run:** PASS 2026-11-08; **Free:** original URT constants, six native axes; externally defined spatial positions and Hamiltonian time remain explicit choices, no observed fitting.
+- [`tests/test_spatial_dynamics.py`](tests/test_spatial_dynamics.py) — Seven original-model spatial energy, native history, flux/gauge, coupled propagation and spectrum tests; **Run:** PASS 2026-11-08; **Free:** original URT constants, six native axes; externally defined spatial positions and Hamiltonian time remain explicit choices, no observed fitting.
+- [`tests/test_spatial_factory.py`](tests/test_spatial_factory.py) — Additional public factory, grid-spacing and zero-vacuum test; **Run:** PASS 2026-11-08; **Free:** original URT constants, six native axes; externally defined spatial positions and Hamiltonian time remain explicit choices, no observed fitting.
+- [`docs/NATIVE_URT_UNIFIED_SPATIAL_INTERACTION_2026_11_08.md`](docs/NATIVE_URT_UNIFIED_SPATIAL_INTERACTION_2026_11_08.md) — Five mathematical spatial-transport theorems, original-model comparison and precise scope; **Run:** N/A; **Free:** original URT constants, six native axes; externally defined spatial positions and Hamiltonian time remain explicit choices, no observed fitting.
+- [`research_archive/2026-11-08_spatial_integration/native_spatial_full_regression.verify.log`](research_archive/2026-11-08_spatial_integration/native_spatial_full_regression.verify.log) — Eight PASS outputs with original model and new script SHA256 hashes; **Run:** N/A; **Free:** original URT constants, six native axes; externally defined spatial positions and Hamiltonian time remain explicit choices, no observed fitting.
 

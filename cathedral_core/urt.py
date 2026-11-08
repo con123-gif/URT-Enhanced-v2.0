@@ -51,3 +51,14 @@ def native_urt_spatial_transport(source_path=None):
     """
     from .spatial_transport import NativeURTSpatialTransport
     return NativeURTSpatialTransport.from_archive(source_path)
+
+
+def native_urt_spatial_dynamics(source_path=None, spacing=(1.,1.,1.)):
+    """Full original 190+64×24 nonlinear dynamics with native 3D history transport.
+
+    Keeps native source, live 64 histories and charge-one/two 24-clock.
+    Spatial advection acts through the existing six icosahedral history axes.
+    See docs/NATIVE_URT_UNIFIED_SPATIAL_INTERACTION_2026_11_08.md.
+    """
+    from .spatial_dynamics import NativeURTSpatialDynamics
+    return NativeURTSpatialDynamics.from_archive(source_path,spacing=spacing)

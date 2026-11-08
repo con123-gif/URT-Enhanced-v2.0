@@ -1,0 +1,15 @@
+PASS native uniform 3D limit exactly 3× original 190×64×24 action
+.PASS original 64 states / parity / 3D native axes / strict continuum speed 3.7400122673791003
+.PASS exact unitary 3D advection, native finite cone, Markov/quantum dispersion relation, D 0.2671411414109495
+.PASS full spatial nonlinear gradient, clock gauge, exact ODE conservation derivatives 0.0 3.219646771412954e-15
+.PASS native history transport induces nonlinear all-five geometric response at another spatial site 0.050699395920585956
+.PASS spatial 190+64×24 interacting RK4 with energy/charge drift -1.7763568394002505e-13 -2.842170943040401e-14
+.PASS exact local charge continuity for spatially resolved modes; max residual 2.4936649967166602e-17
+..
+8 passed in 0.74s
+a1efa46d957df8c2bfcfc7f930d9428bb734c8c9cdb1340a9d987571e920f0fc  cathedral_core/spatial_dynamics.py
+a0f2c19c6fe130b99403ae52204b56c1c3493d20f12038fc74451b175ca0fc67  cathedral_core/urt.py
+e85e6b1caea7f965ed7d22780f9b6c5af134781ab7c91a318ca84a1b666d2f67  tests/test_spatial_dynamics.py
+3361469ac94f912066f2d368729459c3b6d951dc32224fa58448933422f00096  tests/test_spatial_factory.py
+9e54744ec29756ac6087b4a457dee4f2f0ce377b430ee88721a39ae1f83ae446  docs/NATIVE_URT_UNIFIED_SPATIAL_INTERACTION_2026_11_08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  research_archive/2026-11-07_joint_interacting_native/cathedral_constructed_joint_dynamics_2026_11_07.py
