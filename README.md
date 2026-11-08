@@ -263,3 +263,7 @@ The independently developed [five-Platonic curvature and 24-track response resea
 The [whole-Cathedral spinning and chiral computation archive](research_archive/2026-11-07_spinning_whole_machine/README.md) retains nine distinct runnable original scripts generated in recent conversations, rather than collapsing them into a new surrogate. The scripts were executed with exit status 0 on 8 November 2026. All finite/model qualifications remain stated in their READMEs.
 
 Compiled PDF copies are separately saved in the ChatGPT Library; the complete LaTeX manuscript sources are in GitHub and can rebuild those PDFs. See [FILE_INDEX.md](FILE_INDEX.md) and [FIELD_NOTEBOOK.md](FIELD_NOTEBOOK.md) for provenance and navigation.
+
+## 8 November — modular source-transfer theorem on the original full system
+
+[Original all-five/64-history/24-clock interacting source and executable November 8 proof](research_archive/2026-11-07_joint_interacting_native/README.md) now preserve the complete November 7 native joint model, results, randomized regressions and a new theorem showing that the positive square root of the hidden Gibbs transfer uniquely gives the original `P3+ΔP5` amplitude **once positive modular source transport is required**. A5 character theory also proves four independent equivariant quadratic source maps remain possible on the selected 3⊕5 portal. The full physical source-selection/SM/GR claim remains open; see the exact proof and two-model counterexample.

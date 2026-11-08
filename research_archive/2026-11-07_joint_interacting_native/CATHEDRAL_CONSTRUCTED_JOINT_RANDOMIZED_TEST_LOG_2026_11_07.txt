@@ -1,0 +1,3 @@
+PASS: 8 random all-five Hodge/H64/24-clock/gauge/KMS fields,
+      source response, coercive bound, 4096-word Golay, 24 clock distinction
+max randomized residual 3.552713678800501e-15
