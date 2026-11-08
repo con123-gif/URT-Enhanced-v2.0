@@ -1,0 +1,12 @@
+checking 3
+checking 5
+PASS a=1, b=1: sharp uniform mct2= 6.735741123555; leading sector=3
+PASS a=1, b=0.1: sharp uniform mct2= 4.041445541582; leading sector=5
+PASS a=0.1, b=1: sharp uniform mct2= 6.735741123555; leading sector=3
+PASS a=100, b=0.1: sharp uniform mct2= 404.144468280765; leading sector=5
+PASS a=0.3, b=2.3: sharp uniform mct2= 15.492204584177; leading sector=3
+PASS exact additive 2-sector Gaussian covariance/Wick counterterm flow (cross vacuum term included)
+SHA256 original 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd
+2e13bc407ad7bdb56c258bcb29df6e7335f134d8134c2a2834f11763d09d6455  /mnt/data/cathedral_a5_two_covariance_rg_2026_11_08.py
+f5aad692c0be000f2a04ae6579d3fdcc844b487bd9d62d78f54faf8b562b627a  /mnt/data/CATHEDRAL_A5_TWO_CHANNEL_WICK_RG_FLOW_2026-11-08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  /mnt/data/cathedral_constructed_joint_dynamics_2026_11_07.py
