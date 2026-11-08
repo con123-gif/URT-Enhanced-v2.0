@@ -2,7 +2,7 @@
 
 **Index update:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
 
-**Coverage:** **872 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **875 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -946,3 +946,10 @@
 - [`research_archive/2026-11-07_joint_interacting_native/CATHEDRAL_SELECTION_AND_4D_REFINEMENT_THEOREMS_2026-11-08.md`](research_archive/2026-11-07_joint_interacting_native/CATHEDRAL_SELECTION_AND_4D_REFINEMENT_THEOREMS_2026-11-08.md) — Conditional source selector, original 24-clock refinement, classical 4D Euclidean continuum; **Run:** N/A (math document); **Free:** selection axioms and refinement rules explicit; no empirical fits.
 - [`research_archive/2026-11-07_joint_interacting_native/cathedral_selection_and_refinement_verify_2026_11_08.py`](research_archive/2026-11-07_joint_interacting_native/cathedral_selection_and_refinement_verify_2026_11_08.py) — Original five-solid 190/64/24 source and refinement test; **Run:** PASS: rerun 2026-11-08; original-source Python exit 0; **Free:** selection axioms and refinement rules explicit; no empirical fits.
 - [`research_archive/2026-11-07_joint_interacting_native/cathedral_4d_euclidean_consistency_verify_2026_11_08.py`](research_archive/2026-11-07_joint_interacting_native/cathedral_4d_euclidean_consistency_verify_2026_11_08.py) — Original-source 4D covariant lattice action convergence test; **Run:** PASS: rerun 2026-11-08; original-source Python exit 0; **Free:** selection axioms and refinement rules explicit; no empirical fits.
+
+### Native 64-history Green–Kubo / three-dimensional continuum (8 November 2026; 3 files)
+
+- [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_H64_GREEN_KUBO_SPATIAL_EMERGENCE_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_H64_GREEN_KUBO_SPATIAL_EMERGENCE_2026-11-08.md) — Exact 64-history Markov, 3⊕5/radial, diffusion theorem; **Run:** N/A (document/log); **Free:** original URT values, specified displacement readout; no empirical fitting.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_history_diffusion_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_history_diffusion_2026_11_08.py) — Original-H64, all-five source, native diffusion regression; **Run:** PASS 2026-11-08, imports original 190×64×24 model; **Free:** original URT values, specified displacement readout; no empirical fitting.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_history_diffusion_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_history_diffusion_2026_11_08.verify.log) — Execution output with source SHA256 certificates; **Run:** N/A (document/log); **Free:** original URT values, specified displacement readout; no empirical fitting.
+

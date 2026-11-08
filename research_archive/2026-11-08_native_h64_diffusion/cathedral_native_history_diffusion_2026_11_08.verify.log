@@ -1,0 +1,23 @@
+Native H64 Green-Kubo diffusion verification — 2026-11-08
+Python:
+Python 3.13.5
+Command: OPENBLAS_NUM_THREADS=1 python cathedral_native_history_diffusion_2026_11_08.py
+
+PASS actual archived 190x64x24 operator, portal, full 64-history-generated five-solid fields
+PASS native quadratic observable populates both physical hidden 4+4 channels
+PASS six icosahedral unit axes: sum u_i u_i^T = 2I3
+PASS original H64 2-component Markov generator spectrum 0(2) 10(12) 16(30) 18(20)
+PASS 3-vector X(s): HX=10X, covariance=2I3 on each parity class
+PASS independent radial scalar |X|^2-6: HR=16R, variance=12; dual response=3/4
+PASS 5-quadrupole Q(s): HQ=16Q, covariance=32/5 I5, 3+5 orthogonal
+PASS native energy-dual susceptibilities: X=1/5; Q=2/5 per component (raw normalisation)
+PASS additive-function exact finite-time covariance and diffusive limit
+spatial diffusion coefficient D=(pi/e)^2/5: 0.267141141410950
+golden clock residual theta - 3pi/4: 0.043768739536308
+golden residual modulated Green-Kubo coefficient: 0.267136023879300
+ratio golden/unmodulated: 0.999980843341379
+
+SHA256 of source and original imported model:
+36dd36a50ea428247c9ce645d886bb9202d4e829a9c74948893a704837903f89  cathedral_native_history_diffusion_2026_11_08.py
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  cathedral_constructed_joint_dynamics_2026_11_07.py
+5b072d69bbea86f2ade053e0bd5a9a662bbd020ae04b071cebd3ee67e4e0e91a  CATHEDRAL_NATIVE_H64_GREEN_KUBO_SPATIAL_EMERGENCE_2026-11-08.md
