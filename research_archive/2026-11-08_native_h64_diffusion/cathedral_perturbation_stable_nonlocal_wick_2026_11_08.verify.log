@@ -1,0 +1,16 @@
+original source SHA256 5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd
+H positive-sector gap 0.7639320225002082 golden holonomy gap 0.0025584063752810988
+baseline full min / actual 8M / ordered 8M upper (0.0025584063752800237, 0.4171294028737377, 0.4606159590788975)
+epsilon 0.01 relative covariance inflation 1.0132637952780381
+PROVED positive-sector perturbed gap >= 0.28720654763829095 response per unit source <= 3.481814771365881
+PROVED complete 190x24 system gap >= 0.0025584063752810988
+original triplet recomputed full min / actual 8M / ordered 8M upper (0.0025584063752829046, 0.4171304681000753, 0.4606171253799146)
+PASS: original 190+64+24 positive source response re-evaluated under norm 0.01 E
+all-eight mixing recomputed full min / actual 8M / ordered 8M upper (0.0025584063752813317, 0.41734210765299073, 0.4608500685357226)
+PASS: original 190+64+24 positive source response re-evaluated under norm 0.01 E
+COUNTEREXAMPLE: unrestricted -0.01 projection onto clock/geometry null-mode gives -0.007441593624718901
+LOCKWOOD supplied block number (if hypotheses hold) 0.0974
+PURE CATHEDRAL 45 co-closed curvature gap 0.7539320225002082
+ALL TESTS PASSED
+SHA256 cathedral_perturbation_stable_nonlocal_wick_2026_11_08.py 08221c74c19b13f5528d163f85cb9a31a274d072cc9fcb1bcaf2d46b90823205
+SHA256 CATHEDRAL_PERTURBATION_STABLE_NONLOCAL_WICK_2026-11-08.md 862966a2d59225f7d3cb8b1972e4d01e545b3d7e82054665381451a7f93af41d

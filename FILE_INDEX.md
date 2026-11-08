@@ -1,8 +1,8 @@
 # Newton's Cathedral — complete tracked-file index
 
-**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 899 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
+**Index verified:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral`. All 902 paths were checked directly against the complete current branch tree (`truncated=false`); no missing or extra index entries.
 
-**Coverage:** **899 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **902 tracked files**, including historical and backup files. Originally generated from the complete Git tree and subsequently reconciled with the live branch after research commits. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -1008,4 +1008,11 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_190_24_COVARIANCE_AND_NONLOCAL_WICK_STABILITY_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_190_24_COVARIANCE_AND_NONLOCAL_WICK_STABILITY_2026-11-08.md) — Analytic source-covariance, A5 symmetry-breaking, complete 64-history Schur-Wick positivity and exact temporal Green function; **Run:** N/A; **Free:** fixed original geometry, η=−lnΔ and golden 24-clock, free complex Gaussian reference; no experimental fit.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.py) — Direct original 190×64×24 matrix/clock/Schur verification, Wick gauge checks and continuum-time convergence; **Run:** PASS 2026-11-08; **Free:** fixed original geometry, η=−lnΔ and golden 24-clock, free complex Gaussian reference; no experimental fit.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.verify.log) — PASS execution outputs and original-source SHA256 provenance; **Run:** N/A; **Free:** fixed original geometry, η=−lnΔ and golden 24-clock, free complex Gaussian reference; no experimental fit.
+
+
+### 8 November — sector-constrained perturbation-stable nonlocal Wick gap (3 files)
+
+- [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_PERTURBATION_STABLE_NONLOCAL_WICK_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_PERTURBATION_STABLE_NONLOCAL_WICK_2026-11-08.md) — Exact resolvent/Schur-order stability theorem for the original 190×64×24 geometry with self-consistently recomputed Wick covariance; **Run:** N/A; **Free:** perturbation norm ε≤0.01 specified, support must preserve the kernel complement; no observational inputs.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.py) — Original model regression for two rank-one 0.01 perturbations, mixed and triplet; **Run:** PASS 2026-11-08; **Free:** perturbation norm ε≤0.01 specified, support must preserve the kernel complement; no observational inputs.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.verify.log) — All PASS outputs, counterexample and SHA256 hashes; **Run:** N/A; **Free:** perturbation norm ε≤0.01 specified, support must preserve the kernel complement; no observational inputs.
 
