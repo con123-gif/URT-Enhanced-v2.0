@@ -1,0 +1,17 @@
+Original Cathedral 4D Wick stability/counterterm verification — 2026-11-08
+Command: OPENBLAS_NUM_THREADS=1 python cathedral_4d_wick_stability_counterterm_2026_11_08.py
+
+PASS exact rational/surd counterterm M3 eigenvalues {12/5: 5, 2 - 4*sqrt(5)/5: 3, 4*sqrt(5)/5 + 2: 3, 0: 1}
+PASS exact rational counterterm M5 eigenvalues {4/5: 5, 2/3: 6, 0: 1}
+PASS Wick source quartic normal-ordering formula and pure 3-triplet zero-source ray
+PASS explicit instability: Wick-ordered original action unbounded below above sigma^2 threshold
+critical sigma^2: 0.410337779551525
+Wick quadratic coefficient at sigma^2=0.5: -0.301971076824644
+PASS minimal stability-preserving uniform mass counterterm m_ct^2: 3.367874176149498
+PASS 4D Gaussian bubble grows logarithmically; leading coefficient: 0.079367684632629
+bubble at Lambda=100,1000,10000: 0.234521737146 0.417194070106 0.599944131872
+
+SHA256
+1a61fc077529f85a6f2a70b0a43b6625d2631050314d6cc93e7594b75e3df36a  cathedral_4d_wick_stability_counterterm_2026_11_08.py
+0e148a39bcc3b42f38a703812dba6d45875b48c569d1f372eb28cb00bba21106  CATHEDRAL_4D_WICK_STABILITY_COUNTERTERM_2026-11-08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  cathedral_constructed_joint_dynamics_2026_11_07.py
