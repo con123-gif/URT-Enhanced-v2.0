@@ -2,7 +2,7 @@
 
 **Index update:** 2026-11-08 · Canonical repo [con123-gif/URT-Enhanced-v2.0](https://github.com/con123-gif/URT-Enhanced-v2.0) · branch `newtons-cathedral` · Git tree `d5c8193d70bafe3ad96b59a919f8e3c2020dcbbd`.
 
-**Coverage:** **878 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
+**Coverage:** **881 tracked files**, including historical and backup files. Generated from the complete baseline Git tree (`truncated=false`), plus the four documentation/index files added immediately afterwards. Each file appears exactly once below. This is the *entry-point inventory*, not a scientific claim ledger or a mass code review.
 
 ## Read first
 
@@ -959,4 +959,11 @@
 - [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_SOURCE_RESPONSE_AND_4D_GAUSSIAN_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_NATIVE_SOURCE_RESPONSE_AND_4D_GAUSSIAN_2026-11-08.md) — Exact face-local source derivative, A5 equivariance, Gaussian Osterwalder–Schrader theorem; **Run:** N/A; **Free:** parameters inherited from original fixed URT/native-H64 fields, time-continuum reconstruction stated in note.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_source_semigroup_and_4d_gaussian_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_source_semigroup_and_4d_gaussian_2026_11_08.py) — Original-model semigroup/OS verification; **Run:** PASS 2026-11-08; **Free:** parameters inherited from original fixed URT/native-H64 fields, time-continuum reconstruction stated in note.
 - [`research_archive/2026-11-08_native_h64_diffusion/cathedral_source_semigroup_and_4d_gaussian_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_source_semigroup_and_4d_gaussian_2026_11_08.verify.log) — Execution stdout and SHA256 audit; **Run:** N/A; **Free:** parameters inherited from original fixed URT/native-H64 fields, time-continuum reconstruction stated in note.
+
+
+### Native hidden-incidence Wick identity and Gaussian-source response (8 November 2026; 3 files)
+
+- [`research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_HIDDEN_INCIDENCE_WICK_AND_DUAL_RESPONSE_2026-11-08.md`](research_archive/2026-11-08_native_h64_diffusion/CATHEDRAL_HIDDEN_INCIDENCE_WICK_AND_DUAL_RESPONSE_2026-11-08.md) — Exact incidence-square hidden spectra and Wick-cancelled source dual susceptibility; **Run:** N/A; **Free:** native model parameters, Gaussian variance scale symbolic; no empirical fitting.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_wick_exact_2026_11_08.py`](research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_wick_exact_2026_11_08.py) — Original 190/64/24 source-matrix theorem and Gaussian regression; **Run:** PASS 2026-11-08; **Free:** native model parameters, Gaussian variance scale symbolic; no empirical fitting.
+- [`research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_wick_exact_2026_11_08.verify.log`](research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_wick_exact_2026_11_08.verify.log) — Executed tests, sample statistics and source SHA256; **Run:** N/A; **Free:** native model parameters, Gaussian variance scale symbolic; no empirical fitting.
 

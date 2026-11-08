@@ -1,0 +1,17 @@
+Hidden-incidence Wick / energy-dual verification — 2026-11-08
+Command: OPENBLAS_NUM_THREADS=1 python cathedral_hidden_wick_exact_2026_11_08.py
+
+PASS exact combinatorial face overlap identity: (CC^T)°² = CC^T +6I+2Adual
+PASS rank8 hidden identity: Ph[(CC^T)°²]Ph =6P3+2P5
+PASS full quadratic source automatically Wick centred for every A5-invariant real Gaussian covariance
+PASS exact hidden fluctuations: covariance =12P3+4P5, trace3=48, trace5=16
+PASS exact 3/5 modular-source dual susceptibility: 16+(16/5)Delta²
+PASS Monte Carlo check vs exact covariance, relative error: 0.0106862
+golden-rail source susceptibility: 16.000019827411389
+expected static nonlinear source energy per sigma^4: 10.666688352897882
+Note: divergent variance under 4D UV removal is not cancelled by centring.
+
+SHA256
+987b025be757637be18f8828d9ef34db5166ac3f716bc31e560f156e0d7690a1  cathedral_hidden_wick_exact_2026_11_08.py
+50d462efd0d2faba2ff8de8bf2a9b747431f0e21930ebe60360ba31eea991199  CATHEDRAL_HIDDEN_INCIDENCE_WICK_AND_DUAL_RESPONSE_2026-11-08.md
+5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd  cathedral_constructed_joint_dynamics_2026_11_07.py
