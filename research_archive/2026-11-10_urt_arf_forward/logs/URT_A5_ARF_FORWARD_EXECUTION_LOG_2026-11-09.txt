@@ -1,0 +1,45 @@
+PASS URT_EXACT_SIX_BIT_MEMORY_2026-11-09.py
+phase 3.141592653589793 trace PSD power 57.61286749033103 min eigenvalue -2.819198177537215e-15 max eigenvalue 21.82038078532809
+PASS exact finite six-bit source memory
+PASS URT_WALSH_RESPONSE_AND_CLOCK_GATE_2026-11-09.py
+clock m 12 source spectral trace 57.61286749033103 min eigen -2.819198177537215e-15
+PASS
+PASS URT_A5_PAIR_WALK_FROM_SIX_BITS_2026-11-09.py
+commutator norm [Q,K] 0.0
+PASS
+PASS URT_NATIVE_HISTORY_CLOCK_KERNEL_THEOREM_2026-11-09.py
+delta ratio for reversed cost: 6.19606606165215e-06 versus ordinary K Boltzmann ratio: 161392.7272643304
+PASS
+PASS URT_24_CLOCK_MUST_BE_FIBRE_2026-11-09.py
+native clock *is* a 24D cyclic fibre with unit shift and URT golden phase
+PASS
+PASS URT_NATIVE_24_PERIODIC_SOURCE_SCHUR_2026-11-09.py
+1000 periodic binary histories MC mean 366.65499286924273 standard error 3.2549524912768524 theory 369.2352612209787
+PASS all-five + actual hidden + 24-period URT correlation + Gaussian Schur
+PASS URT_24_CLOSED_SOURCE_RESPONSE_2026-11-09.py
+all algebraic lag candidates checked against original sources: PASS
+derivative high precision: PASS
+PASS URT_A5_AVERAGED_CHRONOLOGY_2026-11-09.py
+original 2step trace -0.5083333333333341 A5-averaged 2step trace 0.02625000000000001
+PASS: canonical symmetry average, not a new physically proven URT law
+PASS URT_A5_AVERAGE_SOURCE_RESOLVENT_2026-11-09.py
+hidden 5 Krylov span rank 8
+PASS
+PASS URT_A5_SOURCE_POLE_INTEGER_CERTIFICATE_2026-11-09.py
+h3 numerical source polynomial residual 2.1040966808495123e-09
+h5 numerical source polynomial residual 1.5689857387589803e-09
+PASS URT_EXACT_SOURCE_WALSH_CORRELATIONS_2026-11-09.py
+5 (0+0*sqrt(5)) agrees? True
+Q(sqrt5) exact hidden source autocorrelation certificate: PASS
+PASS URT_A5_EXACT_SOURCE_ISOTYPIC_CERTIFICATE_2026-11-09.py
+Four URT/A5 source poles + exact Q(sqrt5) residues therefore have independent algebraic certificates.
+PASS
+PASS URT_A5_24_CLOCK_CLOSED_RESPONSE_2026-11-09.py
+full 24-clock golden orientation source derivative -1.03501109278213784711139748052078665996162646155022750671812
+PASS
+PASS URT_A5_GAUGE_COVARIANT_CLOCK_SOURCE_2026-11-09.py
+explicit 24x24 Gaussian gauge conjugation and trace Ward identity: PASS
+PASS
+PASS URT_GAUGE_CURRENT_24_WINDING_THEOREM_2026-11-09.py
+direct full clock J -0.0000000000000002359394193416206481119940888572782095973045222317544202544395077193051
+PASS analytic roots-of-unity and 24-winding current

@@ -1,0 +1,14 @@
+hidden3 one native isotropised step: 5184*sqrt(5)/323 + 12960/323 76.01169162649818
+hidden3 two consecutive URT steps viewed as one: 758400*sqrt(5)/52003 + 1896000/52003 69.0697450942415
+hidden3 difference: 38112*(2*sqrt(5) + 5)/52003 6.941946532256677
+hidden5 one native isotropised step: 605/84 7.2023809523809526
+hidden5 two consecutive URT steps viewed as one: 179425/25536 7.026354949874687
+hidden5 difference: 4495/25536 0.17602600250626566
+source covariance total 3/5 72*sqrt(5)/5 + 36 7
+native source p5 0.0930858752376523
+A5-coupled feedback source p5 0.08655243913887008
+separately frozen KMS p5 6.196027670655335e-06
+native Gaussian response ratio hidden5/hidden3 0.115470259843842
+ordinary Gaussian-K thermal5/3 161392.7272643318
+complementary-(18-K) thermal5/3 6.196066061652101e-06
+PASS: finite-step URT exact; response nonuniqueness; native-vs-selected KMS polarity
