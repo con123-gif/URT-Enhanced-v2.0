@@ -1,0 +1,79 @@
+{
+  "integrity": {
+    "predeclaration_sha256": "6760ad783640ae8618bd95fc45aa07bc815efd72406e8d0d6b4e882ef43709fb"
+  },
+  "constants": {
+    "eta": 5.9957979867413025,
+    "c_even": 1.3555131567782033e-06,
+    "c_odd": 0.2222379983269106,
+    "nuclear_norm": 4.640379972803843,
+    "y_c_even": 0.006011318618427269,
+    "r_over_ye": 855834.5504799715
+  },
+  "T1_unit_norm_histories": {
+    "max_||h5||_unit_5": 0.5962847939693596,
+    "max_||h5||_unit_3oplus5": 0.5477225575051662,
+    "ye_matching_r_star_to_max_unit5": 6.967290507668212e-07,
+    "ye_matching_r_star_to_1": 1.168450139620067e-06,
+    "y_c_even": 0.006011318618427269,
+    "below_y_c": true,
+    "incompatible_with_condensation": true,
+    "fixes_ye_in_condensed_phase": false,
+    "note": "F of a unit-norm visible source produces ||h5|| = O(1). Matching that to the condensed r_* would require ye ~ O(c_even) << y_c,even, i.e. no condensate. ye is a Yukawa, not a history amplitude."
+  },
+  "T2_64_history_Z": {
+    "Z_hist_0": 64.0,
+    "Z_hist_eta": 2.0,
+    "Z_hist_depends_on_ye": false,
+    "matching_is_an_extra_postulate": true,
+    "counterfactual_ye": {
+      "Z_hist_eta": {
+        "Z": 2.0,
+        "T": 5.9957979867413025,
+        "ye": 0.002045947770286979,
+        "above_y_c": false,
+        "Omega_star_at_that_ye": -4.155970469716731
+      },
+      "Z_hist_0_equals_64": {
+        "Z": 64.0,
+        "T": 5.9957979867413025,
+        "ye": 0.005011528077588068,
+        "above_y_c": false,
+        "Omega_star_at_that_ye": -24.93582281830038
+      },
+      "Z_equals_64_at_T0_undefined": {
+        "Z": 64.0,
+        "T": 0.0,
+        "ye": null,
+        "reason": "T=0 matching e^{-\u03a9/T} is singular"
+      }
+    },
+    "counterfactuals_disagree": true,
+    "fixes_ye": false,
+    "note": "Z_hist is independent of ye (cycle 17). Equating it to the fermion grand potential would be a new matching and the named targets disagree with each other."
+  },
+  "T3_KMS_at_eta": {
+    "eta": 5.9957979867413025,
+    "rho_star_odd_block": 0.24999845099308235,
+    "rho_star_even_block": 1.5490069176638457e-06,
+    "rho_star_depends_on_ye": false,
+    "eta_depends_on_ye": false,
+    "Tr_rho_equals_1_automatic": true,
+    "fixes_ye": false
+  },
+  "T4_Ward_charge2_vertex": {
+    "hopping_phase_sample": -0.16239968643763675,
+    "pairing_phase_sample": -0.7778785757133004,
+    "global_pairing_phase_over_alpha": 2.0,
+    "extracted_charge": 2,
+    "charge_depends_on_ye": false,
+    "cycle12_Ward_holds_for_every_ye": true,
+    "Ward_identity_is_homogeneous_in_ye": true,
+    "fixes_ye": false
+  },
+  "ye_status": "FREE",
+  "n_candidates_that_fix_ye": 0,
+  "classification": "PROVED",
+  "classification_note": "Overall y_even is FREE. None of the four named archived normalisations uniquely fixes ye > y_c,even without an extra postulate.",
+  "advances_physical_ARF": false
+}
