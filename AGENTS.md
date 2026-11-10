@@ -50,3 +50,17 @@ Before answering a research comparison or proposing new Cathedral work, not just
 6. When the user points out a continuity failure, retrieve the missing work and correct the specific record before moving on. Do not respond with a generic apology or a fresh speculative research plan.
 
 This preflight adds to, and does not override, CONTINUITY_PROTOCOL.md or RESEARCH_PROTOCOL.md. It does not close any physical gate.
+
+## In-session loss prevention — write-ahead checkpoints
+
+Conversation context can expire before the final result. **Do not wait for the end of a conversation or a full theorem to preserve work.** Apply this to interactive Cathedral research as well as scheduled sessions.
+
+- At the start of substantive work, open or create a dated working note in `research_archive/` recording the precise task, original source paths and commit, assumptions, and next executable step. Do not overwrite previous notes.
+- After **each substantive intermediate derivation**, numerical certificate, counterexample, failed route, or important decision, persist the exact equation, code/command, inputs, output and status to the working note and push a checkpoint **before** continuing. A checkpoint is `WORK IN PROGRESS / NOT VERIFIED`, not a theorem or a closed gate.
+- Keep a short `RESUME HERE` section containing the last completed step, current files, outstanding uncertainty, and the **single next command or mathematical question**. Update it at each checkpoint.
+- Before a long computation or context-heavy research step, save a reproducible script and its input provenance first. Prefer durable CI/compute jobs for long runs, so the calculation survives a chat ending.
+- If GitHub write access fails, immediately provide the complete checkpoint text and code in the conversation and clearly label it **NOT SAVED TO GITHUB**. Never claim persistence without a verified commit SHA.
+- At every new session, read the newest work-in-progress note and resume it before starting an unrelated derivation. Reconcile it with `RESEARCH_LOG.md` and `docs/RESEARCH_STATE.md`; do not silently treat provisional work as verified.
+- For scheduled single-commit sessions, preserve the protocol's one final research commit; if at risk of losing unsaved work, prioritize a clearly labeled recovery checkpoint and disclose the exception. Do not edit protected workflows or close gates.
+
+This policy is for loss prevention, not evidence of physical correctness. Existing historical conversations remain potentially unrecovered.
