@@ -1,0 +1,278 @@
+{
+  "classification": "PROVED",
+  "A5_class_counts": [
+    1,
+    15,
+    20,
+    12,
+    12
+  ],
+  "three_is_low_laplacian_eigenspace": true,
+  "traces_5A": {
+    "low": 1.6180339887498947,
+    "high": -0.6180339887498958,
+    "phi": 1.618033988749895,
+    "phi_bar": -0.6180339887498949
+  },
+  "inversion_parities_on_C12": {
+    "1": 0.9999999999999994,
+    "3": -1.0,
+    "3p": -0.9999999999999997,
+    "5": 1.0
+  },
+  "channels": {
+    "3x5": {
+      "irrep4_dimension": 4,
+      "inversion_parities": [
+        -1.0,
+        -1.0000000000000004,
+        -1.0,
+        -1.0
+      ],
+      "mean_inversion_parity": -1.0,
+      "parity_matches_expected": true,
+      "hidden_target": "4_3",
+      "sector": "odd",
+      "adjacent_residuals": [
+        0.05668566769106326,
+        0.051652703785447576,
+        0.05443692832203869,
+        0.04476954796474303
+      ],
+      "max_adjacent_residual": 0.05668566769106326,
+      "strictly_contained_in_adjacent": false,
+      "P_A_singular_values": [
+        0.9732489894677305,
+        0.9732489894677304,
+        0.9732489894677302,
+        0.9732489894677299
+      ],
+      "P_A_norm": [
+        0.9732489894677301,
+        0.9732489894677303,
+        0.9732489894677303,
+        0.9732489894677302
+      ],
+      "complement_norm": [
+        0.22975292054736124,
+        0.22975292054736113,
+        0.22975292054736116,
+        0.2297529205473612
+      ],
+      "dim_P_A_image": 4
+    },
+    "3px5": {
+      "irrep4_dimension": 4,
+      "inversion_parities": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "mean_inversion_parity": -1.0,
+      "parity_matches_expected": true,
+      "hidden_target": "4_3",
+      "sector": "odd",
+      "adjacent_residuals": [
+        0.2186320604957198,
+        0.23752700391212392,
+        0.2359762196773261,
+        0.2505591263301983
+      ],
+      "max_adjacent_residual": 0.2505591263301983,
+      "strictly_contained_in_adjacent": false,
+      "P_A_singular_values": [
+        0.22975292054736132,
+        0.22975292054736118,
+        0.22975292054736107,
+        0.22975292054736107
+      ],
+      "P_A_norm": [
+        0.22975292054736118,
+        0.22975292054736113,
+        0.22975292054736124,
+        0.2297529205473611
+      ],
+      "complement_norm": [
+        0.9732489894677302,
+        0.9732489894677301,
+        0.9732489894677302,
+        0.9732489894677302
+      ],
+      "dim_P_A_image": 4
+    },
+    "3x3p": {
+      "irrep4_dimension": 4,
+      "inversion_parities": [
+        1.0000000000000004,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_inversion_parity": 1.0,
+      "parity_matches_expected": true,
+      "hidden_target": "4_5",
+      "sector": "even",
+      "adjacent_residuals": [
+        0.1439306310827486,
+        0.15402118178621438,
+        0.13057784835064123,
+        0.12685243277632038
+      ],
+      "max_adjacent_residual": 0.15402118178621438,
+      "strictly_contained_in_adjacent": false,
+      "P_A_singular_values": [
+        0.7071067811865477,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.7071067811865474
+      ],
+      "P_A_norm": [
+        0.7071067811865477,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "complement_norm": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "dim_P_A_image": 4
+    },
+    "Sym2(5)": {
+      "irrep4_dimension": 4,
+      "inversion_parities": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_inversion_parity": 1.0,
+      "parity_matches_expected": true,
+      "hidden_target": "4_5",
+      "sector": "even",
+      "adjacent_residuals": [
+        0.146708140065346,
+        0.15524726201972694,
+        0.16753098530753546,
+        0.16139253047916188
+      ],
+      "max_adjacent_residual": 0.16753098530753546,
+      "strictly_contained_in_adjacent": false,
+      "P_A_singular_values": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "P_A_norm": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "complement_norm": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "dim_P_A_image": 4
+    }
+  },
+  "strict_containment_of_CG_4s": {
+    "3x5": false,
+    "3px5": false,
+    "3x3p": false,
+    "Sym2(5)": false
+  },
+  "image_dimensions": {
+    "3x5": 4,
+    "3px5": 4,
+    "3x3p": 4,
+    "Sym2(5)": 4,
+    "odd_3x5_plus_3px5": 4,
+    "even_3x3p_plus_Sym2(5)": 4,
+    "all_four": 8
+  },
+  "P_A_singular_values_closed_form": {
+    "3x5": {
+      "numeric": 0.9732489894677305,
+      "formula": "sqrt((5+2*sqrt(5))/10)"
+    },
+    "3px5": {
+      "numeric": 0.22975292054736132,
+      "formula": "sqrt((5-2*sqrt(5))/10)"
+    },
+    "3x5_over_3px5": {
+      "numeric": 4.236067977499789,
+      "formula": "2+sqrt(5)"
+    },
+    "3x3p": {
+      "numeric": 0.7071067811865477,
+      "formula": "1/sqrt(2)"
+    },
+    "Sym2(5)": {
+      "numeric": 0.7071067811865476,
+      "formula": "1/sqrt(2)"
+    }
+  },
+  "odd_channels_become_parallel": true,
+  "even_channels_become_parallel": true,
+  "handedness_3_vs_3p_is_not_residual_after_hopping": true,
+  "Phi_rank": 2,
+  "Phi_kernel_dimension": 2,
+  "cycle06_current_dimension_without_inversion": 4,
+  "inversion_covariant_adjacent_current_dimension": 2,
+  "yukawa_dimension_after_edge_Noether": 2,
+  "currents_and_yukawas_identified": true,
+  "currents_and_yukawas_reduced": true,
+  "surviving_dimension": 2,
+  "is_a_ray": false,
+  "hodge_kinetic": {
+    "eigenvalues": [
+      -2.220446049250313e-16,
+      3.7639320225001995,
+      3.7639320225002066,
+      3.763932022500212,
+      6.999999999999996,
+      6.999999999999998,
+      7.0,
+      7.000000000000001,
+      7.000000000000004,
+      8.236067977499786,
+      8.236067977499786,
+      8.236067977499792,
+      13.0
+    ],
+    "predicted": [
+      0.0,
+      3.76393202250021,
+      3.76393202250021,
+      3.76393202250021,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      8.23606797749979,
+      8.23606797749979,
+      8.23606797749979,
+      13.0
+    ],
+    "match": true,
+    "unique_ray_scale_free": true,
+    "Noether_vector_current_unique_up_to_scale": true,
+    "jK_charge_sector": 0,
+    "jK_constrains_yukawas": false
+  },
+  "hodge_kinetic_scale_remaining": 1,
+  "total_parameters_including_kinetic_scale": 3,
+  "counterexample_pair": [
+    "odd_adjacent_pairing_current_to_4_3",
+    "even_adjacent_pairing_current_to_4_5"
+  ],
+  "statement": "None of the four CG 4-spaces is strictly supported on icosahedral edges. Their adjacent projections are nevertheless injective. The two odd channels (3\u22975 and 3'\u22975) project onto one and the same odd adjacent 4 (singular values sqrt((5\u00b12\u221a5)/10), ratio 2+\u221a5), and the two even channels (3\u22973' and Sym\u00b25) project onto one and the same even adjacent 4 (singular value 1/\u221a2). The map \u03a6 from the 4 inversion-allowed Yukawas to hopping pairing-currents therefore has rank 2 and kernel 2. The Hodge Noether vector current is a unique charge-0 ray and does not cut the pairing sector. Surviving dimension is 2: not a ray. The explicit counterexample pair is the odd (to 4_3) versus even (to 4_5) adjacent pairing-current. Handedness 3 vs 3' is not residual after hopping: those two Yukawas become parallel currents."
+}
