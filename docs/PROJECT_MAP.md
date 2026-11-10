@@ -1,8 +1,11 @@
 # Newton’s Cathedral — Full Project Map
 
 ## Start here
+- `AGENTS.md`: entry point for every assistant (from 2026-11-10)
+- `docs/RESEARCH_STATE.md`: current state (living)
+- `research_archive/cathedral_arf_runner/`: orchestrator, registry, protocol, queue and log
 - `README.md`
-- `docs/START_HERE.md`
+- `docs/START_HERE.md` (October reading order, dated record)
 
 ## Canonical layer
 - `docs/LIVE_STATE_2026-10-02.md` — current precedence-ordered handoff

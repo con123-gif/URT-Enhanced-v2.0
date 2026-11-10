@@ -194,6 +194,39 @@ gating = true
 run = "python research_archive/cathedral_arf_runner/full_64_ward_stress.py"
 timeout = 300
 
+# ------------------------------------------------------------------ compute queue
+# Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
+# one at a time, back to back, up to 330 minutes each; results land on the state branch under
+# compute/<id>/ (status.json, log tail, outputs up to 5 MB per file; larger files stay in the
+# run artifact for 90 days). A job runs once; to re-run it, give it a new id.
+# Queue a job when a task needs more than ~10 minutes of computation. Each job must answer a
+# stated question with an exact or finite computation: no scans against measured values.
+#
+# [[job]]
+# id = "gateA-axis-order-classes"                 # [A-Za-z0-9._-]
+# question = "Which A5 classes of signed six-axis assignments give distinct chronology second moments?"
+# run = "python research_archive/2026-11-11_axis_order/classify.py --out {out}"   # {out} = outputs dir
+# timeout_minutes = 120                           # 1..330
+# requested_by = "Claude"                         # Claude | GPT | Grok | Con
+# claim = "conditional"
+
+# Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
+[[job]]
+id = "selftest-compute-queue-1"
+question = "Self-test 1/2: does the compute queue run a job and record it on the state branch?"
+run = "python research_archive/cathedral_arf_runner/handover_claims.py --json {out}/handover_claims.json"
+timeout_minutes = 5
+requested_by = "Claude"
+claim = "independent"
+
+[[job]]
+id = "selftest-compute-queue-2"
+question = "Self-test 2/2: did the first job's run dispatch this one by itself?"
+run = "python research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_runner.py --once --output {out}/arf_results.jsonl"
+timeout_minutes = 5
+requested_by = "Claude"
+claim = "regression"
+
 # ------------------------------------------------------------------ research queue
 # The open mathematical gates (handover 2026-11-10, section 13), in dependency order.
 # status is "open" or "closed". A gate may be set to "closed" only together with

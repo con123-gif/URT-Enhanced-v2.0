@@ -1,5 +1,9 @@
 # Start Here — Newton’s Cathedral
 
+> **Superseded as the entry point on 2026-11-10.** Start at [`AGENTS.md`](../AGENTS.md), then
+> [`RESEARCH_STATE.md`](RESEARCH_STATE.md). The reading order below is the October record, kept for
+> provenance.
+
 GitHub is the primary workspace. Newton’s Cathedral is a mathematical oddity being developed towards a theory of nature. This page is the shortest safe route into the project.
 
 ## Read in this order

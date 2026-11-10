@@ -17,7 +17,11 @@ This repository is the **single primary workspace for Newton’s Cathedral**. Ne
 
 | Purpose | File |
 |---|---|
-| **Latest research-state handoff (7 November)** | [docs/LATEST_RESEARCH_STATE_2026-11-07.md](docs/LATEST_RESEARCH_STATE_2026-11-07.md) — entire late research frontier, source paths and dependencies |
+| **Entry point for every assistant (10 November)** | [AGENTS.md](AGENTS.md): read order, lanes for Claude / GPT / Grok, rules, automation |
+| **Current research state (living)** | [docs/RESEARCH_STATE.md](docs/RESEARCH_STATE.md): established, ruled out, conditional, and the one missing object |
+| **Work queue and log** | [research_archive/cathedral_arf_runner/RESEARCH_LOG.md](research_archive/cathedral_arf_runner/RESEARCH_LOG.md) |
+| **Latest CI verdict** | [`summary.md` on `cathedral-research-state`](https://github.com/con123-gif/URT-Enhanced-v2.0/blob/cathedral-research-state/summary.md) |
+| Research-state handoff (7 November, dated record) | [docs/LATEST_RESEARCH_STATE_2026-11-07.md](docs/LATEST_RESEARCH_STATE_2026-11-07.md) — entire late research frontier, source paths and dependencies |
 | **Saved ChatGPT Library sources** | [docs/SAVED_SOURCES_INDEX_2026-11-07.md](docs/SAVED_SOURCES_INDEX_2026-11-07.md) — 617 archived research files outside GitHub |
 | **Complete tracked-file index** | [FILE_INDEX.md](FILE_INDEX.md) — every file, run status and parameter status |
 | **Dated research field notebook** | [FIELD_NOTEBOOK.md](FIELD_NOTEBOOK.md) — findings, dead ends, and open questions |

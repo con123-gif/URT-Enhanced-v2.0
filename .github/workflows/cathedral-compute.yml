@@ -1,0 +1,143 @@
+name: Cathedral compute queue
+
+# Runs the [[job]] entries of research_archive/cathedral_arf_runner/registry.toml one at a time,
+# back to back, until none is left: each finished run records its result on the state branch
+# (compute/<id>/) and dispatches the next run itself. Hourly schedule = backstop if a chain breaks.
+#   pick   -> first job with no compute/<id>/status.json on the state branch
+#   run    -> executes it (read-only token; research code never sees a write token)
+#   record -> commits the result and re-dispatches (the only job with write access)
+
+on:
+  schedule:
+    - cron: '41 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [newtons-cathedral]
+    paths:
+      - 'research_archive/cathedral_arf_runner/registry.toml'
+      - '.github/workflows/cathedral-compute.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cathedral-compute
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: '3.11'
+  STATE_BRANCH: cathedral-research-state
+  RUNNER_DIR: research_archive/cathedral_arf_runner
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+  PYTHONHASHSEED: '0'
+  MPLBACKEND: Agg
+  PYTHONDONTWRITEBYTECODE: '1'
+
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      job: ${{ steps.pick.outputs.job }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Read compute records (read-only)
+        run: |
+          git clone -q --depth 1 --single-branch --branch "$STATE_BRANCH" \
+            "https://github.com/$GITHUB_REPOSITORY.git" .state || mkdir -p .state
+      - id: pick
+        run: |
+          job=$(python3 "$RUNNER_DIR/orchestrator.py" next-job --state-dir .state)
+          echo "job=$job" >> "$GITHUB_OUTPUT"
+          echo "next job: ${job:-none queued}"
+
+  run:
+    needs: pick
+    if: needs.pick.outputs.job != ''
+    name: run (${{ needs.pick.outputs.job }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: research_archive/cathedral_arf_runner/requirements.txt
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r "$RUNNER_DIR/requirements.txt"
+      - name: Restore split H64 matrix snapshot (sha256-checked)
+        run: python research_archive/2026-10-17_recovery_assets/restore_matrices.py
+      - name: Run job
+        run: python -u "$RUNNER_DIR/orchestrator.py" run-job "${{ needs.pick.outputs.job }}" --out results/job
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: compute-${{ needs.pick.outputs.job }}
+          path: results/
+          retention-days: 90
+          if-no-files-found: warn
+
+  record:
+    needs: [pick, run]
+    if: ${{ !cancelled() && needs.pick.outputs.job != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v7
+        continue-on-error: true
+        with:
+          path: results
+      - name: Check out state branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $auth" clone -q --depth 20 --single-branch \
+            --branch "$STATE_BRANCH" "https://github.com/$GITHUB_REPOSITORY.git" .state \
+            || git init -q -b "$STATE_BRANCH" .state
+      - name: Record result
+        run: python3 "$RUNNER_DIR/orchestrator.py" record-job --results results --state-dir .state --job "${{ needs.pick.outputs.job }}"
+      - name: Persist to ${{ env.STATE_BRANCH }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB: ${{ needs.pick.outputs.job }}
+        run: |
+          cd .state
+          git config user.name "cathedral-orchestrator[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Compute job ${JOB}: run ${GITHUB_RUN_ID}"
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          url="https://github.com/$GITHUB_REPOSITORY.git"
+          for i in 1 2 3 4 5; do
+            git -c "http.extraheader=AUTHORIZATION: basic $auth" push -q "$url" "HEAD:refs/heads/$STATE_BRANCH" && exit 0
+            sleep $((i * 7))
+            git -c "http.extraheader=AUTHORIZATION: basic $auth" fetch -q --depth 20 "$url" "$STATE_BRANCH" \
+              && git rebase -q FETCH_HEAD || git rebase --abort 2>/dev/null || true
+          done
+          echo "::error::could not push compute record"; exit 1
+      - name: Dispatch the next queued job
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          next=$(python3 "$RUNNER_DIR/orchestrator.py" next-job --state-dir .state)
+          if [ -n "$next" ]; then
+            echo "chaining to $next"
+            gh workflow run cathedral-compute.yml --repo "$GITHUB_REPOSITORY" --ref "$GITHUB_REF_NAME"
+          else
+            echo "queue empty"
+          fi

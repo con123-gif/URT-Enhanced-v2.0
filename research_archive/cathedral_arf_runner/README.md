@@ -43,12 +43,22 @@ The `[[gate]]` entries in `registry.toml` are the research queue: the open probl
 set to `closed` only with a `proof_check` whose `claim = "derivation"` passes in the same run;
 otherwise the run fails. The summary prints the gate table on every run.
 
-## Scheduled research sessions
-A scheduled Claude session runs every 4 hours. It follows `RESEARCH_PROTOCOL.md`: read
-`RESEARCH_LOG.md`, do one unit of mathematics on the next open gate (a theorem, an obstruction,
-or an executed archive claim), register its certificate here as a `[[check]]`, add a log entry with
-the precise next step, push one commit to `newtons-cathedral`, and confirm the orchestrator verdict.
-The log is where continuity lives: each session starts from its top entry.
+## Research sessions (Claude, GPT, Grok)
+Each agent works one lane of the Queue in `RESEARCH_LOG.md`, following `RESEARCH_PROTOCOL.md`; the
+entry point is `AGENTS.md`.
+- **Claude**, every 4 hours, takes `[derive]`.
+- **GPT** takes `[compute]`.
+- **Grok** takes `[verify]`, `[repair]` and `[review]`.
+
+Paste-ready briefs for GPT and Grok are in `AGENT_BRIEFS.md`. Each session does one unit of work,
+registers its certificate here as a `[[check]]`, logs it with the next step, pushes one commit, and
+confirms the orchestrator verdict.
+
+## Compute queue
+`.github/workflows/cathedral-compute.yml` runs the `[[job]]` entries of `registry.toml` one at a time,
+back to back, up to 330 minutes each. When a job finishes it records the result under `compute/<id>/`
+on `cathedral-research-state` and dispatches the next job itself; an hourly schedule is the backstop.
+Agents queue a job for anything needing more than ~10 minutes of computation.
 
 ## Two things worth knowing
 - **`run_native_source.py`** executes the archived `microscopic_source_currents.py` unmodified

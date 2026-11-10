@@ -8,6 +8,10 @@
   orchestrator.py aggregate --results DIR --state-dir DIR [--summary F]
                                                          merge into the durable checkpoint, decide verdict
   orchestrator.py local [--stage S] [--sweep-minutes M]  everything above, on this machine
+  orchestrator.py next-job --state-dir DIR               first [[job]] not yet recorded (compute queue)
+  orchestrator.py run-job ID --out DIR                   run one job
+  orchestrator.py record-job --results DIR --state-dir DIR --job ID
+                                                         record a job's result on the state branch
 
 Everything that runs is declared in registry.toml. Exit codes verify computations
 only; the physical status is read from the [[gate]] research queue, which no
@@ -469,6 +473,102 @@ Only the orchestrator's aggregate job writes this branch. Do not merge it into t
 """
 
 
+# ------------------------------------------------------------------ compute queue
+# Long exact computations declared as [[job]] in registry.toml. GitHub runs one at a time
+# (cathedral-compute.yml), records each on the state branch under compute/<id>/, and
+# re-dispatches itself while jobs remain. A job runs once; to re-run it, give it a new id.
+MAX_COMMIT_FILE = 5 * 1024 * 1024
+MAX_COMMIT_JOB = 20 * 1024 * 1024
+JOB_FIELDS = ("id", "question", "run", "requested_by")
+
+
+def jobs(reg: dict) -> list[dict]:
+    out = reg.get("job", [])
+    for j in out:
+        missing = [k for k in JOB_FIELDS if k not in j]
+        if missing:
+            raise SystemExit(f"registry: job {j.get('id')} lacks {missing}")
+        if not re.fullmatch(r"[A-Za-z0-9._-]+", j["id"]):
+            raise SystemExit(f"registry: job id {j['id']!r} must be [A-Za-z0-9._-]")
+        if not 1 <= int(j.get("timeout_minutes", 60)) <= 330:
+            raise SystemExit(f"registry: job {j['id']} timeout_minutes must be 1..330")
+    return out
+
+
+def next_job(state_dir: Path) -> str:
+    for j in jobs(load_registry()):
+        if not (state_dir / "compute" / j["id"] / "status.json").is_file():
+            return j["id"]
+    return ""
+
+
+def run_job(job_id: str, out: Path) -> int:
+    reg = load_registry()
+    j = next((x for x in jobs(reg) if x["id"] == job_id), None)
+    if j is None:
+        raise SystemExit(f"no job {job_id!r} in registry")
+    out = out.resolve()
+    (out / "outputs").mkdir(parents=True, exist_ok=True)
+    print(f"job {job_id}: {j['question']}", flush=True)
+    r = execute(argv_for(j["run"], out / "outputs"), REPO / j.get("cwd", "."), 60 * int(j.get("timeout_minutes", 60)),
+                out / "job.log")
+    r.update(id=job_id, question=j["question"], requested_by=j["requested_by"], claim=j.get("claim", "conditional"),
+             run=j["run"], utc=now(), versions=versions(), sha=os.environ.get("GITHUB_SHA", "local"))
+    atomic_write(out / "job-result.json", json.dumps(r, indent=2))
+    print(r["tail"][-3000:])
+    print(f"==> job {job_id}: {r['status'].upper()} ({r['wall_s']}s)", flush=True)
+    return 0
+
+
+def record_job(results: Path, state_dir: Path, job_id: str) -> int:
+    dest = state_dir / "compute" / job_id
+    found = sorted(results.rglob("job-result.json"))
+    if found:
+        r = json.loads(found[0].read_text())
+        src = found[0].parent
+    else:
+        r = {"id": job_id, "status": "no_result", "detail": "run job produced no result (cancelled, timed out "
+             "at the runner limit, or failed to start)", "utc": now()}
+        src = None
+    meta = run_meta()
+    r["run_url"] = meta["url"]
+    dest.mkdir(parents=True, exist_ok=True)
+    kept, skipped, total = [], [], 0
+    if src is not None and (src / "outputs").is_dir():
+        for f in sorted(p for p in (src / "outputs").rglob("*") if p.is_file()):
+            size = f.stat().st_size
+            rel = f.relative_to(src / "outputs")
+            entry = {"path": str(rel), "bytes": size, "sha256": sha256_file(f)}
+            if size <= MAX_COMMIT_FILE and total + size <= MAX_COMMIT_JOB:
+                (dest / "outputs" / rel).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, dest / "outputs" / rel)
+                total += size
+                kept.append(entry)
+            else:
+                skipped.append(entry)
+    if src is not None and (src / "job.log").is_file():
+        atomic_write(dest / "job.log.tail.txt", (src / "job.log").read_text(errors="replace")[-20000:])
+    r["outputs_committed"], r["outputs_artifact_only"] = kept, skipped
+    atomic_write(dest / "status.json", json.dumps(r, indent=2) + "\n")
+    rows = []
+    reg_ids = [j["id"] for j in jobs(load_registry())]
+    for jid in reg_ids:
+        f = state_dir / "compute" / jid / "status.json"
+        if f.is_file():
+            s = json.loads(f.read_text())
+            rows.append(f"| `{jid}` | {s['status']} | {s.get('wall_s', '')} | {s.get('utc', '')} | "
+                        f"{s.get('requested_by', '')} | {s.get('question', '')[:120]} |")
+        else:
+            rows.append(f"| `{jid}` | queued | | | | |")
+    atomic_write(state_dir / "compute" / "README.md",
+                 "# Compute queue — results\n\nOne folder per job: `status.json`, `job.log.tail.txt`, `outputs/`.\n"
+                 "Large outputs stay in the run's artifact (90 days).\n\n"
+                 "| Job | Status | Wall (s) | Finished | Requested by | Question |\n|---|---|---|---|---|---|\n"
+                 + "\n".join(rows) + "\n")
+    print(f"recorded job {job_id}: {r['status']}; committed {len(kept)} output file(s), artifact-only {len(skipped)}")
+    return 0
+
+
 # ------------------------------------------------------------------ local
 def local(stage: str | None, sweep_minutes: float | None, workdir: Path) -> int:
     reg = load_registry()
@@ -495,10 +595,21 @@ def main() -> int:
     p.add_argument("--state-dir", type=Path, required=True); p.add_argument("--summary", type=Path)
     p = sub.add_parser("local"); p.add_argument("--stage"); p.add_argument("--sweep-minutes", type=float)
     p.add_argument("--workdir", type=Path, default=Path(".orchestrator-local"))
+    p = sub.add_parser("next-job"); p.add_argument("--state-dir", type=Path, required=True)
+    p = sub.add_parser("run-job"); p.add_argument("job"); p.add_argument("--out", type=Path, required=True)
+    p = sub.add_parser("record-job"); p.add_argument("--results", type=Path, required=True)
+    p.add_argument("--state-dir", type=Path, required=True); p.add_argument("--job", required=True)
     a = ap.parse_args()
     if a.cmd == "stages":
         print(json.dumps(stages(load_registry())))
         return 0
+    if a.cmd == "next-job":
+        print(next_job(a.state_dir))
+        return 0
+    if a.cmd == "run-job":
+        return run_job(a.job, a.out)
+    if a.cmd == "record-job":
+        return record_job(a.results, a.state_dir, a.job)
     if a.cmd == "run-stage":
         return run_stage(a.stage, a.out)
     if a.cmd == "sweep":
