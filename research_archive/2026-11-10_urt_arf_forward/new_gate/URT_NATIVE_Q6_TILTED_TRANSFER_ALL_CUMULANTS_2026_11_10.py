@@ -54,6 +54,22 @@ def cumulants(g,order=4):
         k[n]=lam[n]-sum(comb(n-1,j-1)*k[j]*lam[n-j] for j in range(1,n))
     return k[1:]
 
+
+def finite_cumulants(g,n,order=4):
+    """Independent finite-time transfer moments, not eigenvalue perturbation."""
+    zero=g[0]-g[0];one=zero+1
+    powers=[[one]*64]
+    for j in range(1,order+1):powers.append(dot(powers[-1],g))
+    v=[[one]*64]+[[zero]*64 for _ in range(order)]
+    for _ in range(n):
+        qv=[q(x) for x in v]
+        v=[[sum((comb(k,j)*powers[j][h]*qv[k-j][h] for j in range(k+1)),zero) for h in range(64)] for k in range(order+1)]
+    m=[mean(x) for x in v]
+    k=[zero]*(order+1)
+    for i in range(1,order+1):
+        k[i]=m[i]-sum(comb(i-1,j-1)*k[j]*m[i-j] for j in range(1,i))
+    return k[1:]
+
 def native():
     root=Path(__file__).resolve().parent
     source=root/'URT_EXACT_A4_THIRD_CUMULANT_RATE_2026_11_10.py'
@@ -62,7 +78,7 @@ def native():
     with contextlib.redirect_stdout(io.StringIO()):
         r=runpy.run_path(str(source))
     Q5=r['Q5'];E=r['E'];res=r['res']
-    result=[]
+    result=[];total4=Q5()
     for i,row in enumerate(res):
         t=row[7]
         coeff=[Q5(F(int(x.p),int(x.q))) for x in t]
@@ -71,8 +87,13 @@ def native():
         assert K[0]==Q5()
         assert K[1]==row[6]
         assert K[2]==row[3]
-        result.append({'vacuum':i,'raw_K2':str(K[1]),'raw_K3':str(K[2]),'raw_K4':str(K[3]),'norm_squared':str(row[5])})
-    return result
+        F24=finite_cumulants(g,24)
+        F25=finite_cumulants(g,25)
+        assert all(F25[j]-F24[j]==K[j] for j in range(4)),(i,F24,F25,K)
+        total4+=K[3]/Q5(F(int((row[5]**2).p),int((row[5]**2).q)))
+        result.append({'vacuum':i,'raw_K2':str(K[1]),'raw_K3':str(K[2]),'raw_K4':str(K[3]),'norm_squared':str(row[5]),'unit_K4':str(K[3]/Q5(F(int((row[5]**2).p),int((row[5]**2).q)))),'independent_24_to_25_step':'exact_pass'})
+    assert total4/5==Q5(F(845671,57600),F(4271,800))
+    return {'five_vacua':result,'A5_mean_unit_K4':str(total4/5)}
 
 def selftest():
     for h in range(64):
