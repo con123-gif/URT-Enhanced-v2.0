@@ -1,0 +1,45 @@
+{
+  "closed_form": {
+    "E1": "4*(pi/e)**2 * sin(pi/phi**2 - 3*pi/8)**2",
+    "E1_algebraic_angle": "4*(pi/e)**2 * sin(pi*(9-4*sqrt(5))/8)**2",
+    "delta_star": "80*pi/(1053*phi)",
+    "rewrite": "(3/20 - E1) - delta_star = Delta - E1"
+  },
+  "precision_80": {
+    "dps": 80,
+    "E1_sin_phi": "0.002558406375281020019223655813160050402273",
+    "E1_sin_radical": "0.002558406375281020019223655813160050402273",
+    "E1_cos_form": "0.002558406375281020019223655813160050402273",
+    "E1_forms_agree": true,
+    "delta_star": "0.147510810159579607015906220699919920808",
+    "Delta": "0.002489189840420392984093779300080079192048",
+    "three20_minus_E1": "0.1474415936247189799807763441868399495977",
+    "three20_minus_E1_minus_delta_star": "-0.00006921653486062703512987651307997121022524",
+    "Delta_minus_E1": "-0.00006921653486062703512987651307997121022524",
+    "identity_Delta_minus_E1_eq_three20_E1_minus_dstar": true,
+    "rel_three20_E1_vs_delta_star": "0.00046923025360478635877",
+    "rel_E1_vs_Delta": "0.027806852549638090041",
+    "abs_diff": "0.00006921653486062703513"
+  },
+  "precision_120": {
+    "dps": 120,
+    "E1_sin_phi": "0.002558406375281020019223655813160050402273",
+    "E1_sin_radical": "0.002558406375281020019223655813160050402273",
+    "E1_cos_form": "0.002558406375281020019223655813160050402273",
+    "E1_forms_agree": true,
+    "delta_star": "0.147510810159579607015906220699919920808",
+    "Delta": "0.002489189840420392984093779300080079192048",
+    "three20_minus_E1": "0.1474415936247189799807763441868399495977",
+    "three20_minus_E1_minus_delta_star": "-0.00006921653486062703512987651307997121022524",
+    "Delta_minus_E1": "-0.00006921653486062703512987651307997121022524",
+    "identity_Delta_minus_E1_eq_three20_E1_minus_dstar": true,
+    "rel_three20_E1_vs_delta_star": "0.00046923025360478635877",
+    "rel_E1_vs_Delta": "0.027806852549638090041",
+    "abs_diff": "0.00006921653486062703513"
+  },
+  "difference_stable_under_precision": true,
+  "is_identity": false,
+  "classification": "FALSIFIED",
+  "note": "The equality 3/20 - E1 = delta* is not an identity. It is the same near-hit as E1 vs Delta, rewritten over the larger scale delta*. Closed forms involve (pi/e)^2 sin^2(pi(9-4sqrt(5))/8) versus 80*pi/(1053*phi); high-precision difference is stable.",
+  "advances_ARF": false
+}
