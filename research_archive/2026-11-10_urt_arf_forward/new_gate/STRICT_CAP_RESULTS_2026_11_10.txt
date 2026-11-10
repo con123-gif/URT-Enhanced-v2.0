@@ -1,0 +1,7 @@
+primitive URT invariant circle supports a fixed angular orbit and Haar-typical chaotic orbits
+strict golden coupling cap phi^-2: 0.38196601125010515
+unfitted local gauge coupling κA=phi^-2: 0.38196601125010515
+unfitted local gauge coupling κB=phi^-4: 0.14589803375031546
+both κ below cap, positive, compact gauge invariant, O(N) local
+45 positive Maxwell modes; stiffness ratio phi^2: 2.6180339887498949
+PASS: URT O(N)+strict golden cap+gauge symmetry does not uniquely fix current stiffness or orbit law
