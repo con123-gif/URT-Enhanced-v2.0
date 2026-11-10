@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=91292d13eb6d9856c7eef5ee8be063dee124835c2cc115b455ab543a81ac6a28
+bytes=2106
+test_chirality_handedness.py sha256=dbb76beb0f1ff10e3ec017ecdcd199886db17307d55fc80eb8602f3a04b5af00
+bytes=6853
