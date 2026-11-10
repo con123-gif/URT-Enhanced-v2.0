@@ -1,0 +1,41 @@
+
+## URT_CANONICAL_HAAR_GREEN_KUBO_2026_11_10.py
+URT natural Haar 64-symbol chronology exact P^6=J/64: PASS
+All five Platonic source: hidden dimensions 8
+P3 odd exact zero-frequency Green-Kubo trace = 18*(27*sqrt(5) + 67)/25 = 91.70916148259592
+P5 even exact zero-frequency Green-Kubo trace = 71/12 = 5.916666666666667
+TOTAL exact Green-Kubo source trace = 486*sqrt(5)/25 + 16247/300 = 97.62582814926257
+P3 four positive eigenvalues [12.69620225099766 13.46867036298624 27.87988280075944 37.66440606785258]
+P5 four positive eigenvalues [0.56864786770692 1.07080120004545 1.875            2.40221759891431]
+trace S 97.62582814926255 cross-block norm 8.012963510474074e-15 smallest eigenvalue 0.5686478677069154
+A5 isotropy within P3, P5 (Frob residuals) 20.877054567466647 1.415808563644426
+EXACT n>=5 hidden3 additive-source variance: 18*n*(27*sqrt(5) + 67)/25 - 504/25 - 216*sqrt(5)/25
+EXACT n>=5 hidden5 additive-source variance: 71*n/12 + 49/15
+PASS — direct six-bit URT natural-source Hessian and all-n O(N) finite-memory variance: no fitting
+
+## URT_FIXED_FRAME_A5_GREEN_KUBO_2026_11_10.py
+A5 physical rotations and fixed frame count 60
+time-consistent 60-frame mean vs Schur scalar residual 7.535794679514256e-14
+URT response scalar on hidden3 quartet: 22.92729037064897
+URT response scalar on hidden5 quartet: 1.4791666666666687
+URT stationary linear-response p5 = 0.06060554649145242
+URT fixed-frame lag2 trace: 1.3766511385665905
+independently redrawn frame lag2 trace: 0.8787422359499613
+time-consistent vs independently-redrawn 2-step discrepancy: 0.5813388765545305
+PASS fixed one-frame A5 averaging preserves original multi-time dynamics; trace-level Green-Kubo source is intrinsic
+
+## URT_A4_SCALAR_CUMULANTS_2026_11_10.py
+A4 hidden3 singlet one-point mean,variance,skew-third,4th: [1.52655666e-15 1.70498447e+01 8.17124146e-14 2.09301988e+03]
+A4 hidden3 3rd additive URT cumulant rates by horizon: [(6, 9.306301990583118e-13), (8, 1.2469881933761872e-12), (10, 1.5636917666668466e-12), (12, 1.880395339957506e-12)]
+five tetrahedral singlet variance/third-moment range 17.049844718999232 17.049844718999253 4.2743586448068527e-14 2.3081536681957004e-13
+five tetrahedral time-cumulant range -5.743859656458333e-12 2.89005827418692e-12
+A4 hidden5 singlet one-point mean,variance,skew-third,4th: [1.08593690e-15 1.75000000e+00 1.64316767e+00 1.09666667e+01]
+A4 hidden5 3rd additive URT cumulant rates by horizon: [(6, -0.28545668644133576), (8, -0.2455185832899), (10, -0.24551858328988213), (12, -0.24551858328986426)]
+five tetrahedral singlet variance/third-moment range 1.7499999999999993 1.7500000000000024 1.6431676725154734 1.6431676725155069
+five tetrahedral time-cumulant range -2.084437791214162 6.45184153801061
+PASS A4 subgroup enumeration, rank-one singlets, source-moment and URT-cumulant sums
+
+## URT_A4_CUBIC_EXACT_SOURCE_THEOREM_2026_11_10.py
+hidden 3 exact moment2 (9+18/5*sqrt(5)) third-moment squared (0+0*sqrt(5)) fourth moment (26244/25+11664/25*sqrt(5))
+hidden 5 exact moment2 (7/4+0*sqrt(5)) third-moment squared (27/10+0*sqrt(5)) fourth moment (329/30+0*sqrt(5))
+PASS: five A4 vacua all have identical source second, cubic-squared and fourth moments in exact Q(sqrt5) arithmetic
