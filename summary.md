@@ -1,6 +1,6 @@
 # Cathedral orchestrator — ✅ PASS
 
-2026-11-10T20:14:06Z · [run 42890431851](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42890431851) · `5bc6645` · push on `newtons-cathedral` · checkpoint #3
+2026-11-10T20:26:37Z · [run 42892169483](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42892169483) · `7fc0078` · push on `newtons-cathedral` · checkpoint #4
 
 ## Physical status
 
@@ -19,23 +19,24 @@
 
 | Stage | Check | Claim | Status | Passing runs | Wall |
 |---|---|---|---|---|---|
-| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 3 | 0.05s |
-| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 3 | 0.0s |
-| integrity | `integrity.handover_claims` | independent | ✅ pass | 3 | 0.28s |
-| tests | `tests.suite` | regression | ✅ pass | 3 | 7.97s |
-| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 3 | 10.57s |
-| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 3 | 0.38s |
-| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 3 | 6.44s |
-| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 3 | 6.01s |
-| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 3 | 0.55s |
-| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 3 | 0.41s |
-| history | `history.native_24clock_fourier` | conditional | ✅ pass | 3 | 0.8s |
-| native | `native.wilson_source` | native | ✅ pass | 3 | 1.13s |
-| native | `native.output_gate` | native | ✅ pass | 3 | 0.09s |
-| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 3 | 0.32s |
-| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 3 | 0.2s |
-| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 3 | 0.48s |
-| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 3 | 0.08s |
+| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 4 | 0.06s |
+| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 4 | 0.0s |
+| integrity | `integrity.handover_claims` | independent | ✅ pass | 4 | 0.3s |
+| tests | `tests.suite` | regression | ✅ pass | 4 | 9.47s |
+| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 4 | 8.84s |
+| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 4 | 0.38s |
+| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 4 | 4.67s |
+| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 4 | 4.63s |
+| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 4 | 0.42s |
+| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 4 | 0.33s |
+| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 1 | 11.49s |
+| history | `history.native_24clock_fourier` | conditional | ✅ pass | 4 | 0.59s |
+| native | `native.wilson_source` | native | ✅ pass | 4 | 1.7s |
+| native | `native.output_gate` | native | ✅ pass | 4 | 0.12s |
+| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 4 | 0.41s |
+| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 4 | 0.28s |
+| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 4 | 0.58s |
+| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 4 | 0.09s |
 
 ## Archive sweep
 
