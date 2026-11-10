@@ -1,0 +1,2 @@
+024d975bec5ce3ea58e39fe87675f0a2fa6018686d758f50343f5ab101995a80  /workspace/arf_research/coupled_cycle19_vev_and_r/PREDECLARATION.md
+997e7ea6371600dca54081e4f7d4b5886de10ba744e3af63f9ab50fa28586f72  /workspace/arf_research/coupled_cycle19_vev_and_r/test_vev_and_r.py
