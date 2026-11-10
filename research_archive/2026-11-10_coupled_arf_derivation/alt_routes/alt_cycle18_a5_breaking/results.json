@@ -1,0 +1,109 @@
+{
+  "H1_each_structure_preserves_A5": {
+    "hodge_spectrum_multiplicities": [
+      [
+        -4.336808689942018e-17,
+        1
+      ],
+      [
+        2.7639320225002106,
+        3
+      ],
+      [
+        6.000000000000002,
+        5
+      ],
+      [
+        7.23606797749979,
+        3
+      ]
+    ],
+    "cbridge_joint_spectrum": [
+      [
+        4.000000000000002,
+        1
+      ],
+      [
+        6.000000000000002,
+        5
+      ],
+      [
+        6.763932022500211,
+        3
+      ],
+      [
+        7.236067977499791,
+        3
+      ]
+    ],
+    "cbridge_joint_multiplicities": [
+      1,
+      3,
+      3,
+      5
+    ],
+    "clock_min_eigenvalue": 0.007657918270344197,
+    "clock_has_no_spatial_A5_action": true,
+    "rho_star_is_A5_invariant": true,
+    "rho_star_splits_multiplets": false,
+    "rho_star_makes_singlets_massive": false,
+    "Delta": 0.0024891898404204027,
+    "rho_star_normalised_trace": 1.0
+  },
+  "H2_joint_product": {
+    "product_K_otimes_I_plus_I_otimes_L_preserves_spatial_degeneracies": true,
+    "product_of_joint_Hodge_Cbridge_with_clock_preserves_degeneracies": true,
+    "max_distinct_nonzero_mass_numbers_with_rho_star": 3,
+    "multiplicities_remain": [
+      1,
+      1,
+      3,
+      3,
+      5
+    ]
+  },
+  "H3_2I_lift": {
+    "H13_decomposition": {
+      "1": 2,
+      "2": 0,
+      "2'": 0,
+      "3": 1,
+      "3'": 1,
+      "4": 0,
+      "4'": 0,
+      "5": 1,
+      "6": 0
+    },
+    "H13_tensor_2": {
+      "1": 0,
+      "2": 3,
+      "2'": 0,
+      "3": 0,
+      "3'": 0,
+      "4": 0,
+      "4'": 2,
+      "5": 0,
+      "6": 2
+    },
+    "has_a_singlet": false,
+    "smallest_irrep_dimension": 2,
+    "enlarges_degeneracies": true
+  },
+  "H4_three_masses": {
+    "three_nondegenerate_charged_masses_obtained": false,
+    "n_fivefold_axes_of_the_icosahedron": 6,
+    "picking_a_C5_axis_is_an_extra_choice": true,
+    "C5_restriction_of_the_spatial_3": "1 \u2295 2 over R (eigenvalues 1, e^{\u00b12\u03c0i/5})",
+    "none_of_the_four_structures_selects_one_axis": true
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED",
+    "overall": "FALSIFIED that any of {24-clock, \u03c1*, 2I lift, five-solid bridge} breaks A5 minimally to give three distinct nondegenerate charged masses without new parameters."
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Three nondegenerate charged masses require an A5-breaking identification that these four structures do not supply. The existing numbers m3, m3', m5 can already differ, but they come with multiplicities 3, 3 and 5, and the two singlets remain massless."
+}
