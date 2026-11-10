@@ -1,0 +1,717 @@
+{
+  "C_mass": 4.446800183122003,
+  "R_mass": -2.4299997428893794,
+  "T1_strict": {
+    "_n_atoms": 1050,
+    "abs_C_mass": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          7,
+          6,
+          2
+        ],
+        4.445627013125122
+      ],
+      "nearest_rel": 0.0002638234120197075,
+      "rel_1e-3": 21,
+      "rel_1e-4": 0,
+      "rel_1e-6": 0
+    },
+    "abs_C_over_R": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          4,
+          50,
+          0
+        ],
+        [
+          7,
+          4,
+          0
+        ],
+        1.83
+      ],
+      "nearest_rel": 2.234109055275295e-05,
+      "rel_1e-3": 56,
+      "rel_1e-4": 10,
+      "rel_1e-6": 0
+    },
+    "abs_R_mass": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          -8,
+          190,
+          0
+        ],
+        2.4300306918416843
+      ],
+      "nearest_rel": 1.2736195711746258e-05,
+      "rel_1e-3": 51,
+      "rel_1e-4": 6,
+      "rel_1e-6": 0
+    },
+    "abs_R_over_C": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          7,
+          12,
+          0
+        ],
+        [
+          -7,
+          190,
+          0
+        ],
+        0.5464912280701755
+      ],
+      "nearest_rel": 5.660501325065613e-05,
+      "rel_1e-3": 122,
+      "rel_1e-4": 9,
+      "rel_1e-6": 0
+    },
+    "koide_like": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          7,
+          1,
+          2
+        ],
+        2.9920670881258236
+      ],
+      "nearest_rel": 9.439688739562916e-06,
+      "rel_1e-3": 67,
+      "rel_1e-4": 9,
+      "rel_1e-6": 0
+    },
+    "lowest_three_mu2_over_mu1": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        1.118033988749895
+      ],
+      "nearest_rel": 6.359665732066483e-06,
+      "rel_1e-3": 87,
+      "rel_1e-4": 43,
+      "rel_1e-6": 0
+    },
+    "lowest_three_mu3_over_mu1": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        1.118033988749895
+      ],
+      "nearest_rel": 6.359423068033102e-06,
+      "rel_1e-3": 87,
+      "rel_1e-4": 43,
+      "rel_1e-6": 0
+    },
+    "lowest_three_mu3_over_mu2": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          7,
+          3,
+          0
+        ],
+        [
+          -4,
+          3,
+          0
+        ],
+        1.0000000000000002
+      ],
+      "nearest_rel": 1.2719007911150569e-05,
+      "rel_1e-3": 197,
+      "rel_1e-4": 153,
+      "rel_1e-6": 0
+    },
+    "mu1_over_mu2": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          120,
+          2
+        ],
+        [
+          7,
+          3,
+          2
+        ],
+        0.8944370763439962
+      ],
+      "nearest_rel": 4.692455097750629e-06,
+      "rel_1e-3": 69,
+      "rel_1e-4": 6,
+      "rel_1e-6": 0
+    },
+    "mu1_over_mu3": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        0.894427190999916
+      ],
+      "nearest_rel": 6.359463510727745e-06,
+      "rel_1e-3": 69,
+      "rel_1e-4": 6,
+      "rel_1e-6": 0
+    },
+    "mu1_over_mu4": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          -1,
+          3,
+          0
+        ],
+        0.6666666666666667
+      ],
+      "nearest_rel": 1.0110995373268287e-10,
+      "rel_1e-3": 224,
+      "rel_1e-4": 148,
+      "rel_1e-6": 144
+    },
+    "mu2_over_mu1": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        1.118033988749895
+      ],
+      "nearest_rel": 6.359665732066483e-06,
+      "rel_1e-3": 87,
+      "rel_1e-4": 43,
+      "rel_1e-6": 0
+    },
+    "mu2_over_mu3": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          8,
+          3,
+          0
+        ],
+        [
+          -5,
+          3,
+          0
+        ],
+        0.9999999999999998
+      ],
+      "nearest_rel": 1.271916968644147e-05,
+      "rel_1e-3": 198,
+      "rel_1e-4": 152,
+      "rel_1e-6": 0
+    },
+    "mu2_over_mu4": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        0.7453559924999298
+      ],
+      "nearest_rel": 6.359564621186087e-06,
+      "rel_1e-3": 138,
+      "rel_1e-4": 65,
+      "rel_1e-6": 0
+    },
+    "mu3_over_mu1": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        1.118033988749895
+      ],
+      "nearest_rel": 6.359423068033102e-06,
+      "rel_1e-3": 87,
+      "rel_1e-4": 43,
+      "rel_1e-6": 0
+    },
+    "mu3_over_mu2": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          7,
+          3,
+          0
+        ],
+        [
+          -4,
+          3,
+          0
+        ],
+        1.0000000000000002
+      ],
+      "nearest_rel": 1.2719007911150569e-05,
+      "rel_1e-3": 197,
+      "rel_1e-4": 153,
+      "rel_1e-6": 0
+    },
+    "mu3_over_mu4": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          13,
+          0
+        ],
+        [
+          7,
+          4,
+          2
+        ],
+        0.745363596610761
+      ],
+      "nearest_rel": 3.842396178836111e-06,
+      "rel_1e-3": 138,
+      "rel_1e-4": 64,
+      "rel_1e-6": 0
+    },
+    "mu4_over_mu1": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          8,
+          3,
+          0
+        ],
+        [
+          -7,
+          6,
+          0
+        ],
+        1.4999999999999998
+      ],
+      "nearest_rel": 1.0110993524941226e-10,
+      "rel_1e-3": 127,
+      "rel_1e-4": 106,
+      "rel_1e-6": 105
+    },
+    "mu4_over_mu2": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          80,
+          2
+        ],
+        [
+          7,
+          2,
+          2
+        ],
+        1.3416556145159944
+      ],
+      "nearest_rel": 4.692556208508716e-06,
+      "rel_1e-3": 60,
+      "rel_1e-4": 6,
+      "rel_1e-6": 0
+    },
+    "mu4_over_mu3": {
+      "exact": 0,
+      "n_pairs": 550725,
+      "nearest_desc": [
+        [
+          1,
+          80,
+          2
+        ],
+        [
+          7,
+          2,
+          2
+        ],
+        1.3416556145159944
+      ],
+      "nearest_rel": 1.741178558054678e-05,
+      "rel_1e-3": 58,
+      "rel_1e-4": 6,
+      "rel_1e-6": 0
+    }
+  },
+  "abs_C_mass": 4.446800183122003,
+  "abs_C_over_R": 1.8299591167176656,
+  "abs_R_mass": 2.4299997428893794,
+  "abs_R_over_C": 0.5464602956778977,
+  "any_ratio_within_1e-4_of_an_ARF": 0,
+  "classification": "PROVED",
+  "classification_note": "Unique-orbit BdG spectrum has three or more distinct positive values without new parameters; none of the recorded ratios matches |C_mass|, |R_mass| or their quotient at 1e-4.",
+  "comparison_performed": 1,
+  "from_cycle25": {
+    "classification_25": "PROVED",
+    "even_condenses_at_y1": 1,
+    "even_stab": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "even_stab_ray": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "even_y_c": 0.0059401416448682486,
+    "odd_condenses_at_y1": 0,
+    "odd_y_c": 2.380264212169863,
+    "sphere_essentially_degenerate": 0,
+    "vacuum_r": 861260.6863776222
+  },
+  "hypotheses": {
+    "H1_three_nondeg_without_new_params": 1,
+    "H2_stab_name": "A4",
+    "H3_comparison_skipped_if_no_unique_spectrum": 0
+  },
+  "n_distinct_positive": 4,
+  "recorded_ratios": {
+    "koide_like": 2.9920388442104375,
+    "lowest_three_mu2_over_mu1": 1.1180268784726684,
+    "lowest_three_mu3_over_mu1": 1.11804109884625,
+    "lowest_three_mu3_over_mu2": 1.0000127191696866,
+    "mu1_over_mu2": 0.8944328792578723,
+    "mu1_over_mu3": 0.8944215029590047,
+    "mu1_over_mu4": 0.6666666667340734,
+    "mu2_over_mu1": 1.1180268784726684,
+    "mu2_over_mu3": 0.9999872809920886,
+    "mu2_over_mu4": 0.7453512523904747,
+    "mu3_over_mu1": 1.11804109884625,
+    "mu3_over_mu2": 1.0000127191696866,
+    "mu3_over_mu4": 0.7453607326395301,
+    "mu4_over_mu1": 1.4999999998483349,
+    "mu4_over_mu2": 1.341649318751154,
+    "mu4_over_mu3": 1.3416322543028545
+  },
+  "relative_errors_vs_ARFs": {
+    "koide_like": {
+      "abs_C_mass": 0.32714789938913086,
+      "abs_C_over_R": 0.6350304314869909,
+      "abs_R_mass": 0.231291835715492,
+      "abs_R_over_C": 4.475308760536277,
+      "any_within_1e-4": 0
+    },
+    "lowest_three_mu2_over_mu1": {
+      "abs_C_mass": 0.7485772167779922,
+      "abs_C_over_R": 0.3890427014139887,
+      "abs_R_mass": 0.5399065856923574,
+      "abs_R_over_C": 1.045943478996453,
+      "any_within_1e-4": 0
+    },
+    "lowest_three_mu3_over_mu1": {
+      "abs_C_mass": 0.7485740188889491,
+      "abs_C_over_R": 0.38903493054443666,
+      "abs_R_mass": 0.539900733686149,
+      "abs_R_over_C": 1.0459695016987318,
+      "any_within_1e-4": 0
+    },
+    "lowest_three_mu3_over_mu2": {
+      "abs_C_mass": 0.7751163357946075,
+      "abs_C_over_R": 0.45353275380087466,
+      "abs_R_mass": 0.5884720884864678,
+      "abs_R_over_C": 0.8299823922781907,
+      "any_within_1e-4": 0
+    },
+    "mu1_over_mu2": {
+      "abs_C_mass": 0.7988592150704846,
+      "abs_C_over_R": 0.5112279443367098,
+      "abs_R_mass": 0.6319205868744862,
+      "abs_R_over_C": 0.6367756016899745,
+      "any_within_1e-4": 0
+    },
+    "mu1_over_mu3": {
+      "abs_C_mass": 0.7988617733817195,
+      "abs_C_over_R": 0.5112341610323526,
+      "abs_R_mass": 0.6319252684794538,
+      "abs_R_over_C": 0.6367547835281472,
+      "any_within_1e-4": 0
+    },
+    "mu1_over_mu4": {
+      "abs_C_mass": 0.8500794640459826,
+      "abs_C_over_R": 0.6356931361778999,
+      "abs_R_mass": 0.7256515484477473,
+      "abs_R_over_C": 0.21997274460179528,
+      "any_within_1e-4": 0
+    },
+    "mu2_over_mu1": {
+      "abs_C_mass": 0.7485772167779922,
+      "abs_C_over_R": 0.3890427014139887,
+      "abs_R_mass": 0.5399065856923574,
+      "abs_R_over_C": 1.045943478996453,
+      "any_within_1e-4": 0
+    },
+    "mu2_over_mu3": {
+      "abs_C_mass": 0.7751220563524357,
+      "abs_C_over_R": 0.45354665475492634,
+      "abs_R_mass": 0.5884825568734181,
+      "abs_R_over_C": 0.8299358414531824,
+      "any_within_1e-4": 0
+    },
+    "mu2_over_mu4": {
+      "abs_C_mass": 0.8323848111683806,
+      "abs_C_over_R": 0.5926951342348098,
+      "abs_R_mass": 0.6932710570972249,
+      "abs_R_over_C": 0.36396231946887897,
+      "any_within_1e-4": 0
+    },
+    "mu3_over_mu1": {
+      "abs_C_mass": 0.7485740188889491,
+      "abs_C_over_R": 0.38903493054443666,
+      "abs_R_mass": 0.539900733686149,
+      "abs_R_over_C": 1.0459695016987318,
+      "any_within_1e-4": 0
+    },
+    "mu3_over_mu2": {
+      "abs_C_mass": 0.7751163357946075,
+      "abs_C_over_R": 0.45353275380087466,
+      "abs_R_mass": 0.5884720884864678,
+      "abs_R_over_C": 0.8299823922781907,
+      "any_within_1e-4": 0
+    },
+    "mu3_over_mu4": {
+      "abs_C_mass": 0.8323826792423517,
+      "abs_C_over_R": 0.592689953655108,
+      "abs_R_mass": 0.6932671557597522,
+      "abs_R_over_C": 0.36397966793706654,
+      "any_within_1e-4": 0
+    },
+    "mu4_over_mu1": {
+      "abs_C_mass": 0.6626787941716741,
+      "abs_C_over_R": 0.18030955656603248,
+      "abs_R_mass": 0.3827159841322587,
+      "abs_R_over_C": 1.7449386747989575,
+      "any_within_1e-4": 0
+    },
+    "mu4_over_mu2": {
+      "abs_C_mass": 0.6982888226362332,
+      "abs_C_over_R": 0.2668419165791944,
+      "abs_R_mass": 0.4478808803675541,
+      "abs_R_over_C": 1.4551634022867197,
+      "any_within_1e-4": 0
+    },
+    "mu4_over_mu3": {
+      "abs_C_mass": 0.6982926601030849,
+      "abs_C_over_R": 0.2668512416226578,
+      "abs_R_mass": 0.44788790277500473,
+      "abs_R_over_C": 1.455132175043982,
+      "any_within_1e-4": 0
+    }
+  },
+  "spectra": {
+    "pairing_singular_values_of_unit_hat": {
+      "distinct": [
+        {
+          "mult": 2,
+          "value": 0.5477225575051661
+        },
+        {
+          "mult": 6,
+          "value": 0.40824829046386296
+        },
+        {
+          "mult": 3,
+          "value": 0.3651483716701107
+        },
+        {
+          "mult": 1,
+          "value": 6.173941260575784e-17
+        }
+      ],
+      "n_distinct": 4,
+      "sigma": [
+        0.5477225575051662,
+        0.547722557505166,
+        0.4082483022052559,
+        0.4082483022052557,
+        0.4082482876930754,
+        0.4082482876930754,
+        0.4082482814932578,
+        0.4082482814932576,
+        0.36514838217193174,
+        0.36514836919184307,
+        0.36514836364655745,
+        6.173941260575784e-17
+      ]
+    },
+    "primary_yeven1_yodd0": {
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 0.0
+        },
+        {
+          "mult": 3,
+          "value": 314487.9372715066
+        },
+        {
+          "mult": 3,
+          "value": 351605.96682497085
+        },
+        {
+          "mult": 3,
+          "value": 351610.43896092573
+        },
+        {
+          "mult": 2,
+          "value": 471731.90585956303
+        }
+      ],
+      "energies": [
+        0.0,
+        314487.9303611357,
+        314487.93513707194,
+        314487.9463163122,
+        351605.959098941,
+        351605.9644386006,
+        351605.9769373708,
+        351610.43123489607,
+        351610.43657455535,
+        351610.4490733259,
+        471731.90585956286,
+        471731.90585956327
+      ],
+      "hat": [
+        -0.4012369303819193,
+        0.44033540414685846,
+        0.7883405336309653,
+        0.1537298298540743
+      ],
+      "n_distinct": 5,
+      "n_positive_distinct": 4,
+      "r": 861260.6863776222,
+      "ratios": {
+        "koide_like": 2.9920388442104375,
+        "lowest_three_mu2_over_mu1": 1.1180268784726684,
+        "lowest_three_mu3_over_mu1": 1.11804109884625,
+        "lowest_three_mu3_over_mu2": 1.0000127191696866,
+        "mu1_over_mu2": 0.8944328792578723,
+        "mu1_over_mu3": 0.8944215029590047,
+        "mu1_over_mu4": 0.6666666667340734,
+        "mu2_over_mu1": 1.1180268784726684,
+        "mu2_over_mu3": 0.9999872809920886,
+        "mu2_over_mu4": 0.7453512523904747,
+        "mu3_over_mu1": 1.11804109884625,
+        "mu3_over_mu2": 1.0000127191696866,
+        "mu3_over_mu4": 0.7453607326395301,
+        "mu4_over_mu1": 1.4999999998483349,
+        "mu4_over_mu2": 1.341649318751154,
+        "mu4_over_mu3": 1.3416322543028545
+      },
+      "three_nondegenerate": 1,
+      "y_even": 1.0,
+      "y_odd": 0.0
+    }
+  },
+  "three_nondegenerate_masses": 1,
+  "unique_A5_orbit_of_vacua": 1
+}
