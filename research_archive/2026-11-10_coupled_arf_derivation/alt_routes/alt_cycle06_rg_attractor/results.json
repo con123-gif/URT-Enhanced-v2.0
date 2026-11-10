@@ -1,0 +1,57 @@
+{
+  "constants": {
+    "r": 1.1557273497909217,
+    "theta": 2.3999632297286535,
+    "one_over_phi2": 0.38196601125010515,
+    "delta_star": 0.14751081015957962,
+    "Delta": 0.002489189840420393,
+    "three_over_20": 0.15,
+    "eta": 5.995797986741307
+  },
+  "H1_N1_spiral": {
+    "multiplier_modulus": 1.1557273497909217,
+    "modulus_greater_than_one": true,
+    "unique_fixed_point": 0,
+    "fixed_point_is_repeller": true,
+    "finite_attractor": false,
+    "delta_star_is_attractor": false
+  },
+  "H2_N4_circle": {
+    "rotation_number": 0.38196601125010515,
+    "equals_two_minus_phi": true,
+    "equals_phi_minus_one": false,
+    "algebraic_value": "(3-sqrt(5))/2",
+    "in_Q_sqrt5_not_Q": true,
+    "attractive_fixed_point": false
+  },
+  "H3_trial_normalisations": {
+    "N2_fixed_point": 0.1347440205677349,
+    "N2_highprec": "0.13474402056773491278222521035391038257125537609148446054566971105195495542932294",
+    "N2_equals_delta_star": false,
+    "N2_equals_Delta": false,
+    "N2_equals_3_over_20": false,
+    "N2_rel_error_vs_delta_star": 0.08654816266030518,
+    "N3_fixed_point": 0.5013303203045988,
+    "N3_highprec": "0.50133032030459882843720106979945022291218777641143919242481593418048861556148186",
+    "N3_equals_delta_star": false,
+    "N3_equals_Delta": false,
+    "N3_equals_3_over_20": false,
+    "N3_rel_error_vs_delta_star": 2.3986005484089707,
+    "these_normalisations_are_extra_not_derived": true
+  },
+  "H4_rate_from_gap": {
+    "linearisation_rate_equals_gap": true,
+    "identifies_k_and_beta_separately": false,
+    "produces_delta_star": false
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED",
+    "H5": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "The primitive recursion has no finite attractor. Extra normalisations that do have finite fixed points do not hit \u03b4* (N2 relative error 0.0865, N3 relative error 2.3986). \u03b4* remains an input, not an RG output."
+}

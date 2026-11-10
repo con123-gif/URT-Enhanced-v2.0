@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=3b9bae41a09c87c673915c1d0fa910042da19e9698f2e7bcf4fb430d236ef158
+bytes=1938
+test_anomaly_charges.py sha256=6e6c567575ddb047ea1ef1ccc6dd8908e5cf77ff4170c47ddcc4d68171d3b172
+bytes=5579
