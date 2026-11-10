@@ -1,0 +1,124 @@
+{
+  "source": "/workspace/arf_research/repo/research_archive/2026-11-07_joint_interacting_native/cathedral_constructed_joint_dynamics_2026_11_07.py",
+  "checks": {
+    "D_shape": {
+      "ok": true,
+      "detail": "(190, 190)"
+    },
+    "Tr_D2": {
+      "ok": true,
+      "detail": 720.0
+    },
+    "Tr_D4": {
+      "ok": true,
+      "detail": 3456.0
+    },
+    "Cbridge_trace": {
+      "ok": true,
+      "detail": 160.0
+    },
+    "V_E_F_totals": {
+      "ok": true,
+      "detail": [
+        [
+          4,
+          6,
+          4
+        ],
+        [
+          8,
+          12,
+          6
+        ],
+        [
+          6,
+          12,
+          8
+        ],
+        [
+          20,
+          30,
+          12
+        ],
+        [
+          12,
+          30,
+          20
+        ]
+      ]
+    },
+    "N24": {
+      "ok": true,
+      "detail": 24
+    },
+    "Hbits_spectrum": {
+      "ok": true,
+      "detail": {
+        "0": 2,
+        "10": 12,
+        "16": 30,
+        "18": 20
+      }
+    },
+    "Uh_isometry": {
+      "ok": true,
+      "detail": 1.8325877049392893e-15
+    },
+    "trace_P3": {
+      "ok": true,
+      "detail": 3.9999999999999996
+    },
+    "trace_P5": {
+      "ok": true,
+      "detail": 4.000000000000001
+    },
+    "Hbits_Uh_P3": {
+      "ok": true,
+      "detail": 7.717060602410489e-15
+    },
+    "Hbits_Uh_P5": {
+      "ok": true,
+      "detail": 7.23686282596862e-15
+    },
+    "Plinear_rank": {
+      "ok": true,
+      "detail": 8
+    },
+    "Plinear_shape": {
+      "ok": true,
+      "detail": [
+        12,
+        50
+      ]
+    },
+    "C_shape": {
+      "ok": true,
+      "detail": [
+        20,
+        12
+      ]
+    },
+    "clock_m1": {
+      "ok": true,
+      "detail": 9
+    },
+    "clock_m2": {
+      "ok": true,
+      "detail": 18
+    },
+    "b1b2_all_solids": {
+      "ok": true,
+      "detail": true
+    }
+  },
+  "all_ok": true,
+  "constants": {
+    "phi": 1.618033988749895,
+    "r": 1.1557273497909217,
+    "theta": 2.399963229728653,
+    "Delta": 0.0024891898404204027,
+    "eta": 5.9957979867413025
+  },
+  "classification": "PROVED",
+  "advances_ARF": false
+}
