@@ -260,3 +260,29 @@ Result: Induced h3, the V∘F portal and ρ* all preserve A4 (||h3||/||h5|| ~ 10
 Predeclaration sha256: `2bc28647cfcfa8e26cf9aacc74d7625d3db91f9feef6b202832c49b188fff9c5`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 31–33)
+
+Date: 10 November 2026 (Europe/London). Repo read-only at `6bad7b3`. No commits or pushes.
+
+The negative London kernel of alt_cycle29 is a genuine instability of the condensed A4 phase. At κ = 0 (the fermion-only action) the joint minimum over the 30 icosahedral edge phases is the all-π connection: every face holonomy is −1, the unpaired mode is lifted to energy 10, and the fermion gain is −5.000 at T = 0 and −1.880 at T = η. The pattern is A5-invariant, so the combined (Δ, A) stabiliser remains A4; time reversal is not broken and no handedness is picked. The minimum is finite because the domain (ℝ/2πℤ)^{30} is compact, with no new parameters. The condensate scale r_* does not shift. The Hodge Maxwell coefficient κ is not uniquely derived: at the unit identification κ = 1 the order-π magnetic cost (40 compact, or 10π² noncompact) overwhelms the O(1) fermion gain, while gradient deformations A = dλ cost no Maxwell and lift the unpaired mode at zero flux, so A = 0 is not in general restored. In the κ = 0 vacuum the pairing multiplets remain 3 ⊕ 6 ⊕ 2 (ratios 2 : √5 : 3) under a lifted singlet of energy 10; the unique |Φ| is π, which matches the predeclared U(1) quantum π as an identity and does not match 2π/φ², γ or δ*. There are no three nondegenerate charged singlets, so C_mass and R_mass were not compared. The 2I spinor lift (vertex12 ⊗ 2, no singlet) gaps the kinetic operator (λ_min = 0.746746); pairing Δ ⊗ ε does not by itself lift the kernel of K ⊗ I_2. The even channel still condenses (y_c = 0.004203, r_* ≈ 1.735×10^6). The unpaired zero disappears, but the spectrum becomes 2 ⊕ 6 ⊕ 12 ⊕ 4, not three distinct levels.
+
+## alt_cycle31 — spontaneous gauge flux in the condensed A4 phase
+Directory: `/workspace/arf_research/alt_cycle31_spontaneous_flux/`
+Classification: PROVED (H1–H3); unique pattern CONDITIONAL on κ. Advances ARF? No.
+Result: Primary A is the 30 icosahedral edges (the other 60 five-solid edges have no derived hopping). κ is free (κ = 0 is the alt29 action; κ = 1 is the Hodge unit identification). At κ = 0 the minimiser is A_e ≡ π at T = η and T = 0, with every face holonomy −1, combined stabiliser A4, no T-breaking and no handedness, fermion gain −5.000 (T = 0) and −1.880 (T = η). The minimum is finite without new parameters. Absolute Ω = c_even r² + F(r, A) keeps r_* = 8.61261×10^5 (relative shift 0). At κ = 1 the all-π Maxwell cost (40 or ≈ 98.7) exceeds the fermion gain; gradient probes and the T = η noncompact run show a zero-flux phase-winding instability that Maxwell does not penalise.
+Predeclaration sha256: `ca3dc438de76083657f7edd0b4e7b22362122047aa4182a27d69647b444d6eb3`.
+
+## alt_cycle32 — spectrum and fluxes of the spontaneous-A vacuum
+Directory: `/workspace/arf_research/alt_cycle32_flux_spectrum/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: In the κ = 0 vacuum the unpaired mode is lifted to E = 10 and the pairing spectrum remains 3 ⊕ 6 ⊕ 2 (large-r ratios 2 : √5 : 3, with the known 1.27×10^{-5} split of the 6). Not three nondegenerate charged singlets. The per-face flux is π, matching the predeclared quantum π at relative error 0 (identity) and not matching 2π/φ² (rel 0.309), γ (rel 253) or δ* (rel 20.3). The κ = 1 seed minimum is A = 0, so the two discrete κ choices disagree. No unique three-singlet spectrum; C_mass, R_mass and T1/G_strict were not compared.
+Predeclaration sha256: `5a953fcfa10fe4b61f5697125390893847acb3e4c788241fac6393d8df6b98fc`.
+
+## alt_cycle33 — pairing on the 2I spinor lift
+Directory: `/workspace/arf_research/alt_cycle33_spinor_lift/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: K_spin has gap 0.746746 and no zero mode; face holonomy traces equal 2 cos(π/10), the spherical spin holonomy of an icosahedral face (Ω = π/5). K ⊗ I_2 keeps a 2-dimensional kernel which Δ ⊗ ε does not lift. Even pairing still condenses at T = η, y = 1: χ = 0.076728, y_c = 0.004203, r_* = 1.73493×10^6 (nuclear norm twice the spatial value). The unpaired zero is absent (E_min equals the K_spin gap). The condensed spectrum is 2 ⊕ 6 ⊕ 12 ⊕ 4 — the spatial 0 ⊕ 3 ⊕ 6 ⊕ 2 tensored with the spin 2 — not three distinct levels. The extra H13 singlet ⊗ 2 is a decoupled spectator.
+Predeclaration sha256: `5a4062431318f8721cea277d629ddc867876297230efa45d05e6e7843913a11a`.
+
+No repository files were modified, committed, or pushed.
