@@ -1,0 +1,262 @@
+{
+  "A4_preserved": {
+    "induced_odd": 1,
+    "portal": 1,
+    "rho_star": 1,
+    "vacuum": 1
+  },
+  "C_mass": 4.446800183122003,
+  "P1_induced_odd": {
+    "h3_star": [
+      6.504971498397176e-12,
+      -1.3541662304432578e-05,
+      2.708331159892216e-05,
+      -1.3009942996794352e-11
+    ],
+    "stab": {
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "vacuum_stab": {
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "||h3||": 3.028006580461498e-05,
+    "||h3||_over_||h5||": 3.515784045823566e-11
+  },
+  "P1_portal": {
+    "h3_star": [
+      6.504971498397176e-12,
+      -1.3541662304432578e-05,
+      2.708331159892216e-05,
+      -1.3009942996794352e-11
+    ],
+    "stab": {
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "||alpha||": 0.0,
+    "||h3||": 3.028006580461498e-05
+  },
+  "P2_rho_star": {
+    "h3_star": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stab": {
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "weight_even": 1.5490069176638457e-06,
+    "weight_odd": 0.24999845099308235,
+    "||h3||": 0.0
+  },
+  "P3_A5_invariant_kinetics": {
+    "Hodge_Lambda": {
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 0.9999999999019904
+        },
+        {
+          "mult": 1,
+          "value": 314487.9303818041
+        },
+        {
+          "mult": 1,
+          "value": 314487.93515774043
+        },
+        {
+          "mult": 1,
+          "value": 314487.94633698073
+        },
+        {
+          "mult": 1,
+          "value": 351605.9591145834
+        },
+        {
+          "mult": 1,
+          "value": 351605.96445424284
+        },
+        {
+          "mult": 1,
+          "value": 351605.9769530132
+        },
+        {
+          "mult": 1,
+          "value": 351610.43125053874
+        },
+        {
+          "mult": 1,
+          "value": 351610.43659019796
+        },
+        {
+          "mult": 1,
+          "value": 351610.4490889683
+        },
+        {
+          "mult": 2,
+          "value": 471731.90587334224
+        }
+      ],
+      "has_zero": 0,
+      "max_positive_mult": 2,
+      "n_distinct_positive": 11,
+      "three_nondeg_singlets": 0
+    },
+    "K_plus_Cico": {
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 4.000000000062098
+        },
+        {
+          "mult": 1,
+          "value": 314487.9303611355
+        },
+        {
+          "mult": 1,
+          "value": 314487.935137072
+        },
+        {
+          "mult": 1,
+          "value": 314487.9463163121
+        },
+        {
+          "mult": 1,
+          "value": 351607.95913306996
+        },
+        {
+          "mult": 1,
+          "value": 351607.9644727294
+        },
+        {
+          "mult": 1,
+          "value": 351607.9769715
+        },
+        {
+          "mult": 1,
+          "value": 351608.4312690252
+        },
+        {
+          "mult": 1,
+          "value": 351608.43660868466
+        },
+        {
+          "mult": 1,
+          "value": 351608.4491074548
+        },
+        {
+          "mult": 2,
+          "value": 471731.9058595634
+        }
+      ],
+      "has_zero": 0,
+      "max_positive_mult": 2,
+      "n_distinct_positive": 11,
+      "three_nondeg_singlets": 0
+    },
+    "graph_K": {
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 2.349178840555691e-10
+        },
+        {
+          "mult": 1,
+          "value": 314487.9303611356
+        },
+        {
+          "mult": 1,
+          "value": 314487.93513707205
+        },
+        {
+          "mult": 1,
+          "value": 314487.9463163121
+        },
+        {
+          "mult": 1,
+          "value": 351605.95909894136
+        },
+        {
+          "mult": 1,
+          "value": 351605.9644386005
+        },
+        {
+          "mult": 1,
+          "value": 351605.97693737084
+        },
+        {
+          "mult": 1,
+          "value": 351610.4312348961
+        },
+        {
+          "mult": 1,
+          "value": 351610.4365745554
+        },
+        {
+          "mult": 1,
+          "value": 351610.44907332596
+        },
+        {
+          "mult": 2,
+          "value": 471731.9058595633
+        }
+      ],
+      "has_zero": 1,
+      "max_positive_mult": 2,
+      "n_distinct_positive": 10,
+      "three_nondeg_singlets": 0
+    }
+  },
+  "R_mass": -2.4299997428893794,
+  "T1_strict": null,
+  "any_derived_A4_breaking": 0,
+  "classification": "PROVED",
+  "classification_note": "No listed derived effect breaks A4 or splits the triplets into three singlets without new parameters. The 3 of A4 is irreducible, so A4-invariant operators (induced singlet h3, \u03c1*, Hodge/Cbridge kinetics) cannot do it, and there is no labelling-independent insertion of \u03b8. C_mass and R_mass were not compared.",
+  "comparison_performed": 0,
+  "hypotheses": {
+    "H1_induced_odd_preserves_A4": 1,
+    "H2_rho_star_preserves_A4": 1,
+    "H3_A5_kinetics_do_not_split": 1,
+    "H3_no_derived_theta_breaking": 1,
+    "H4_no_ARF_comparison": 1,
+    "H4_no_three_singlets": 1
+  },
+  "recorded_ratios": {},
+  "relative_errors_vs_ARFs": null,
+  "repr_theory": {
+    "3_down_Z2_is_not_three_nondeg": 1,
+    "3_down_Z3_is_1_1p_1pp": 1,
+    "3_of_A4_is_irreducible_over_C": 1,
+    "4_of_A5_branches_as_1_plus_3_of_A4": 1,
+    "A4_invariant_operator_cannot_split_the_3": 1,
+    "gold_angle_degrees": 137.50776405003785,
+    "no_A5_invariant_background_connection": 1,
+    "theta": 2.399963229728653
+  },
+  "skip_reason": "No derived A4-breaking produced three distinct singlet masses, so C_mass and R_mass are not compared.",
+  "split_to_three_singlets": 0
+}
