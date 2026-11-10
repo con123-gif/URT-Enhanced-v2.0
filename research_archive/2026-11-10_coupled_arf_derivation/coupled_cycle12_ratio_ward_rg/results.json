@@ -1,0 +1,423 @@
+{
+  "classification": "PROVED",
+  "surviving_dimension": 2,
+  "is_a_ray": false,
+  "one_loop_EM_ARF_ran": false,
+  "reason_pipeline_skipped": "no Ward identity, matching rule, or one-loop RG condition forces a unique ratio without an extra assumption",
+  "W1_three_theories": {
+    "pure_odd": {
+      "y_odd": 1.0,
+      "y_even": 0.0,
+      "inversion_Ward": true,
+      "U1_Ward": true,
+      "A5_Ward": true,
+      "currents_orthogonal": true,
+      "satisfies_all": true
+    },
+    "pure_even": {
+      "y_odd": 0.0,
+      "y_even": 1.0,
+      "inversion_Ward": true,
+      "U1_Ward": true,
+      "A5_Ward": true,
+      "currents_orthogonal": true,
+      "satisfies_all": true
+    },
+    "democratic": {
+      "y_odd": 1.0,
+      "y_even": 1.0,
+      "inversion_Ward": true,
+      "U1_Ward": true,
+      "A5_Ward": true,
+      "currents_orthogonal": true,
+      "satisfies_all": true
+    }
+  },
+  "W1_all_three_satisfy_Wards": true,
+  "W2_hidden_hessian": {
+    "H3": 0.4444759966538212,
+    "H5": 2.7110263135564066e-06,
+    "cross_mixing": false,
+    "ratio_H3_over_H5": 163951.19236992727
+  },
+  "M1_matching_recipes": {
+    "n_named_recipes": 6,
+    "values": {
+      "V_hist_Delta2": 6.19606606165215e-06,
+      "V_hist_Delta": 0.0024891898404204027,
+      "F_singular_value_45_over_43": 0.4194695241216066,
+      "F_frobenius_Sym2_5_over_3x5": 0.5932194900149638,
+      "canonical_hidden_sqrt_H5_over_H3": 0.0024696915183305035,
+      "democratic": 1.0
+    },
+    "all_agree": false,
+    "spread_max_over_min": 161392.72726433055
+  },
+  "R1_fermion_selfenergy_irreps": {
+    "odd_kernel": {
+      "1": {
+        "value": -5.840235702455251e-18,
+        "dimension": 1,
+        "off_block_norm": 1.7472486332531e-16,
+        "is_scalar": true
+      },
+      "3": {
+        "value": 0.6314757303333054,
+        "dimension": 3,
+        "off_block_norm": 5.42644241035466e-16,
+        "is_scalar": true
+      },
+      "3p": {
+        "value": 0.035190936333361386,
+        "dimension": 3,
+        "off_block_norm": 7.54728340116109e-16,
+        "is_scalar": true
+      },
+      "5": {
+        "value": 0.4000000000000001,
+        "dimension": 5,
+        "off_block_norm": 1.0775407784213714e-15,
+        "is_scalar": true
+      }
+    },
+    "even_kernel": {
+      "1": {
+        "value": -8.866364432770416e-19,
+        "dimension": 1,
+        "off_block_norm": 1.4370942434788325e-16,
+        "is_scalar": true
+      },
+      "3": {
+        "value": 0.3333333333333333,
+        "dimension": 3,
+        "off_block_norm": 6.583278465186172e-16,
+        "is_scalar": true
+      },
+      "3p": {
+        "value": 0.3333333333333333,
+        "dimension": 3,
+        "off_block_norm": 7.676954912924617e-16,
+        "is_scalar": true
+      },
+      "5": {
+        "value": 0.4,
+        "dimension": 5,
+        "off_block_norm": 1.212365899700769e-15,
+        "is_scalar": true
+      }
+    }
+  },
+  "R1_kernels_are_A5_scalars": true,
+  "R1_equal_weights": {
+    "z_oo": {
+      "mean": 0.5,
+      "std": 5.551115123125783e-17,
+      "per_generator": [
+        0.5,
+        0.5,
+        0.5,
+        0.5000000000000001
+      ]
+    },
+    "z_oe": {
+      "mean": 0.3666666666666667,
+      "std": 4.8074067159589095e-17,
+      "per_generator": [
+        0.36666666666666675,
+        0.36666666666666664,
+        0.3666666666666667,
+        0.36666666666666675
+      ]
+    },
+    "z_ee": {
+      "mean": 0.3666666666666667,
+      "std": 3.925231146709438e-17,
+      "per_generator": [
+        0.3666666666666667,
+        0.36666666666666664,
+        0.3666666666666667,
+        0.36666666666666675
+      ]
+    },
+    "z_eo": {
+      "mean": 0.3666666666666667,
+      "std": 6.798699777552591e-17,
+      "per_generator": [
+        0.3666666666666668,
+        0.36666666666666664,
+        0.3666666666666667,
+        0.36666666666666675
+      ]
+    },
+    "c_oo": {
+      "mean": 0.25,
+      "std": 4.8074067159589095e-17,
+      "per_generator": [
+        0.25000000000000006,
+        0.25,
+        0.25000000000000006,
+        0.25000000000000006
+      ]
+    },
+    "c_oe": {
+      "mean": 0.11666666666666667,
+      "std": 2.1942709178604383e-17,
+      "per_generator": [
+        0.11666666666666665,
+        0.11666666666666667,
+        0.11666666666666671,
+        0.11666666666666667
+      ]
+    },
+    "c_ee": {
+      "mean": 0.11666666666666668,
+      "std": 1.3877787807814457e-17,
+      "per_generator": [
+        0.1166666666666667,
+        0.11666666666666667,
+        0.11666666666666667,
+        0.1166666666666667
+      ]
+    },
+    "c_eo": {
+      "mean": 0.11666666666666667,
+      "std": 2.0816681711721685e-17,
+      "per_generator": [
+        0.1166666666666667,
+        0.11666666666666665,
+        0.1166666666666667,
+        0.11666666666666667
+      ]
+    },
+    "A_o": 0.75,
+    "B_o": 0.25,
+    "A_e": 0.75,
+    "B_e": 0.25,
+    "mixed_r_star_squared": 1.0,
+    "mixed_r_star": 1.0,
+    "mixed_status": "positive",
+    "axes_are_fixed_rays": true,
+    "G_odd": 1.0,
+    "G_even": 1.0
+  },
+  "R1_hodge_fermions": {
+    "z_oo": {
+      "mean": 0.5171875,
+      "std": 1.4686870114880517e-16,
+      "per_generator": [
+        0.5171875000000001,
+        0.5171874999999998,
+        0.5171875000000001,
+        0.5171875000000001
+      ]
+    },
+    "z_oe": {
+      "mean": 0.3591666666666667,
+      "std": 8.777083671441753e-17,
+      "per_generator": [
+        0.35916666666666686,
+        0.35916666666666663,
+        0.3591666666666667,
+        0.3591666666666667
+      ]
+    },
+    "z_ee": {
+      "mean": 0.3702291666666666,
+      "std": 6.206335383118183e-17,
+      "per_generator": [
+        0.3702291666666666,
+        0.3702291666666667,
+        0.37022916666666655,
+        0.3702291666666666
+      ]
+    },
+    "z_eo": {
+      "mean": 0.35916666666666675,
+      "std": 9.205483015737869e-17,
+      "per_generator": [
+        0.35916666666666675,
+        0.3591666666666667,
+        0.3591666666666666,
+        0.3591666666666668
+      ]
+    },
+    "c_oo": {
+      "mean": 0.24140625000000004,
+      "std": 5.003707553108401e-17,
+      "per_generator": [
+        0.24140625000000007,
+        0.24140625,
+        0.2414062500000001,
+        0.24140625
+      ]
+    },
+    "c_oe": {
+      "mean": 0.07911458333333339,
+      "std": 7.537568132987154e-17,
+      "per_generator": [
+        0.07911458333333352,
+        0.07911458333333331,
+        0.07911458333333339,
+        0.07911458333333338
+      ]
+    },
+    "c_ee": {
+      "mean": 0.1825729166666665,
+      "std": 3.3993498887762956e-17,
+      "per_generator": [
+        0.18257291666666647,
+        0.18257291666666653,
+        0.18257291666666645,
+        0.1825729166666665
+      ]
+    },
+    "c_eo": {
+      "mean": 0.0791145833333334,
+      "std": 6.938893903907228e-18,
+      "per_generator": [
+        0.0791145833333334,
+        0.0791145833333334,
+        0.07911458333333339,
+        0.0791145833333334
+      ]
+    },
+    "A_o": 0.7757812499999999,
+    "B_o": 0.2800520833333333,
+    "A_e": 0.6876562500000001,
+    "B_e": 0.2800520833333333,
+    "mixed_r_star_squared": 1.2162024022489133,
+    "mixed_r_star": 1.1028156701139649,
+    "mixed_status": "positive",
+    "axes_are_fixed_rays": true,
+    "G_odd": 1.0,
+    "G_even": 1.0
+  },
+  "R1_hodge_plus_Vhist_hidden": {
+    "z_oo": {
+      "mean": 0.5171875,
+      "std": 1.4686870114880517e-16,
+      "per_generator": [
+        0.5171875000000001,
+        0.5171874999999998,
+        0.5171875000000001,
+        0.5171875000000001
+      ]
+    },
+    "z_oe": {
+      "mean": 0.3591666666666667,
+      "std": 8.777083671441753e-17,
+      "per_generator": [
+        0.35916666666666686,
+        0.35916666666666663,
+        0.3591666666666667,
+        0.3591666666666667
+      ]
+    },
+    "z_ee": {
+      "mean": 0.3702291666666666,
+      "std": 6.206335383118183e-17,
+      "per_generator": [
+        0.3702291666666666,
+        0.3702291666666667,
+        0.37022916666666655,
+        0.3702291666666666
+      ]
+    },
+    "z_eo": {
+      "mean": 0.35916666666666675,
+      "std": 9.205483015737869e-17,
+      "per_generator": [
+        0.35916666666666675,
+        0.3591666666666667,
+        0.3591666666666666,
+        0.3591666666666668
+      ]
+    },
+    "c_oo": {
+      "mean": 0.24140625000000004,
+      "std": 5.003707553108401e-17,
+      "per_generator": [
+        0.24140625000000007,
+        0.24140625,
+        0.2414062500000001,
+        0.24140625
+      ]
+    },
+    "c_oe": {
+      "mean": 0.07911458333333339,
+      "std": 7.537568132987154e-17,
+      "per_generator": [
+        0.07911458333333352,
+        0.07911458333333331,
+        0.07911458333333339,
+        0.07911458333333338
+      ]
+    },
+    "c_ee": {
+      "mean": 0.1825729166666665,
+      "std": 3.3993498887762956e-17,
+      "per_generator": [
+        0.18257291666666647,
+        0.18257291666666653,
+        0.18257291666666645,
+        0.1825729166666665
+      ]
+    },
+    "c_eo": {
+      "mean": 0.0791145833333334,
+      "std": 6.938893903907228e-18,
+      "per_generator": [
+        0.0791145833333334,
+        0.0791145833333334,
+        0.07911458333333339,
+        0.0791145833333334
+      ]
+    },
+    "A_o": 1.1204637642441497,
+    "B_o": 103301.13062088005,
+    "A_e": 69220.13429924328,
+    "B_e": 0.6300724570992999,
+    "mixed_r_star_squared": -1.4388995630198708e-05,
+    "mixed_r_star": null,
+    "mixed_status": "non_positive",
+    "axes_are_fixed_rays": true,
+    "G_odd": 2.24984027827907,
+    "G_even": 368863.99626574246
+  },
+  "R1_axes_always_fixed": true,
+  "R1_unique_rg_ratio": false,
+  "R1_extra_mixed_rays": [
+    {
+      "variant": "equal_weights",
+      "r_star": 1.0
+    },
+    {
+      "variant": "hodge_fermions",
+      "r_star": 1.1028156701139649
+    }
+  ],
+  "R1_minimum_fixed_rays": 2,
+  "inversion_parities": {
+    "odd": -1.0,
+    "even": 1.0,
+    "odd_list": [
+      -1.0000000000000002,
+      -1.0,
+      -1.0,
+      -1.0000000000000002
+    ],
+    "even_list": [
+      1.0,
+      1.0,
+      1.0,
+      1.0000000000000002
+    ]
+  },
+  "Hodge_eigenvalues_used": {
+    "3": 3.76393202250021,
+    "3p": 8.23606797749979,
+    "5": 7.0,
+    "1_spoke": 1.0
+  },
+  "statement": "The inversion, A5 and U(1) Ward identities hold for the three theories (1,0), (0,1) and (1,1). The hidden Hessian is block diagonal on 4_3 \u2295 4_5 (no mixing), so no joint hidden Ward relates y_odd to y_even. Named matching recipes (V_hist \u0394\u00b2 and \u0394, F singular-value and Frobenius ratios, canonical hidden sqrt(H_5/H_3), democratic) disagree by a factor 1.61e+05 and are not Ward identities. One-loop Yukawa betas are of the form \u03b2_o \u221d y_o and \u03b2_e \u221d y_e because inversion forbids mixing: both axes are RG-fixed rays in every scheme variant. A mixed fixed ratio exists in some variants ([{'variant': 'equal_weights', 'r_star': 1.0}, {'variant': 'hodge_fermions', 'r_star': 1.1028156701139649}]) but is an extra ray, not uniqueness. The residual dimension remains 2. No unique ray is forced, so the one-loop / EM / ARF pipeline is not run."
+}

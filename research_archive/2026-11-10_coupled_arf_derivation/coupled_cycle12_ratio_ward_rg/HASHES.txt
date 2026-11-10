@@ -1,0 +1,2 @@
+83793c1e71eb7d4b4ab4dd9389e556ca02a4dea7acc0e2211820b9aba56ce842  /workspace/arf_research/coupled_cycle12_ratio_ward_rg/PREDECLARATION.md
+cc0b739e66cded40962d8cc5289e385ea986a0145a32e04a16b7aac87b358837  /workspace/arf_research/coupled_cycle12_ratio_ward_rg/test_ratio_ward_rg.py
