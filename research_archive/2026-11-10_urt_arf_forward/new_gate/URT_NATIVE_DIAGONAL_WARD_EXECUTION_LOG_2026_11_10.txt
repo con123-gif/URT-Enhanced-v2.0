@@ -1,0 +1,30 @@
+native original cochain sizes: 190 spatial, 64 signed histories, 24 clock, 5 solids
+full original nonlinear source action: diagonal temporal U(1) variation -4.440892098500626e-16
+native source charges: geometry +1, quadratic hidden history +2
+original source decomposes into exactly 15 nonzero unordered five-solid charge sectors
+sectors: five 2e_s plus ten e_s+e_t, s<t (not 15 extra independent history states)
+native bridge on five scalar harmonics: U0^T Cbridge U0 = L5 exactly
+independent five-solid phase variation of native full action: -0.0007535157043112584
+PASS: native diagonal gauge symmetry; U(1)^5 extension requires charged bridge/dressing
+Hodge trace E: [6, 12, 12, 30, 30] sum 90 mean 18
+bridge weights (tet,cube,oct,dod,ico): [((0, 1), '0'), ((0, 2), '0'), ((0, 3), '18/5'), ((0, 4), '18/5'), ((1, 2), '6/5'), ((1, 3), '24/5'), ((1, 4), '24/5'), ((2, 3), '24/5'), ((2, 4), '24/5'), ((3, 4), '42/5')]
+M = B W B^T = P diag(E) P: exact
+spectrum M: 0, 12, 30, 15±3sqrt(145)/5 (exact)
+compact U(1)^5 gauge invariance: C G=0 exactly
+nonlinear Wilson current Ward G^T J=0, contact-inclusive Hessian H G=0: verified
+24-clock Stueckelberg elimination: H_eff=M tensor (J24/24) exactly
+rank nonzero bridge curvature 188 screened clock frequencies 23 relative holonomy modes 4
+mode 1 old all-clock Green 0.0411938462293092160890609 bridge-screened scalar trace (not gauge observable) 0.241078893681148996523556 difference 0.19988504745183978043
+mode 2 old all-clock Green 0.0347493766303374039441493 bridge-screened scalar trace (not gauge observable) 0.240811226562070235464569 difference 0.20606184993173283152
+mode 3 old all-clock Green 0.0254369543074354723336032 bridge-screened scalar trace (not gauge observable) 0.240421974603165112590867 difference 0.21498502029572964026
+mode 4 old all-clock Green 0.0211836101730676181259228 bridge-screened scalar trace (not gauge observable) 0.240243880472560352953829 difference 0.21906027029949273483
+PASS: no-fit original Hodge bridge and exact gauge Ward screening; physical ARFs remain unproved
+native six-bit history K spectrum: [(0, 2), (10, 12), (16, 30), (18, 20)]
+all five collective Platonic clock channels; original q=2, Nclock=24, r=pi/e, golden theta
+full 5x24x64 charged-matter Wilson action gauge variation 0.0
+exact charged-current local Ward max residual 2.3314683517128287e-15
+Wilson current analytic/finite diff 0.10881846714736682 0.10881846642218918
+Wilson contact analytic/finite diff -0.2390713931943826 -0.23907138491097157
+fixed neutral history source is NOT a gauge-covariant charged-linear source
+a transforming charged source section restores the Ward identity; charge embedding remains unproved
+PASS typed native 64x24 Wilson action with all five collective solid channels
