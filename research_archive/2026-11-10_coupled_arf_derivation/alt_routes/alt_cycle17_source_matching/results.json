@@ -1,0 +1,74 @@
+{
+  "H1_orbit_module": {
+    "orbit_sizes": [
+      12,
+      12,
+      20,
+      20
+    ],
+    "parity_constant_on_each_orbit": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    },
+    "orbit_hamming_parity": {
+      "0": {
+        "1": 12
+      },
+      "1": {
+        "0": 12
+      },
+      "2": {
+        "0": 20
+      },
+      "3": {
+        "1": 20
+      }
+    },
+    "orbit_parity_value": {
+      "0": -1,
+      "1": 1,
+      "2": 1,
+      "3": -1
+    },
+    "all_flip_preserves_each_orbit": true,
+    "permutation_character_on_12": [
+      12.0,
+      0.0,
+      0.0,
+      2.0,
+      2.0
+    ],
+    "decomposition_of_a_12_orbit": {
+      "1": 1,
+      "3": 1,
+      "3'": 1,
+      "4": 0,
+      "5": 1
+    },
+    "each_12_orbit_is_1_plus_3_plus_3p_plus_5": true
+  },
+  "H2_source_matching_implied": false,
+  "H3_orbit_projectors": {
+    "scalar_on_each_orbit": true,
+    "same_eigenvalue_on_3_and_3p": true,
+    "can_kill_3p_keep_3": false,
+    "hamming_weight_mean_on_each_orbit": {
+      "0": 3.0,
+      "1": 3.0,
+      "2": 3.0,
+      "3": 3.0
+    },
+    "hamming_weight_invariant_part_is_the_constant_3": true,
+    "note": "Hamming parity distinguishes the two 12-orbits (and the two 20-orbits) and is the orbit label used for opposite charges. It cannot separate 3 from 3' inside a 12-orbit, so it does not imply \u03b2 = 0 with \u03b1 kept."
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "FALSIFIED",
+    "H3": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Source-matching remains an extra assumption. Hamming-parity orbit labels fix opposite-charge pairings of histories, not the 3 versus 3' Yukawa channel."
+}
