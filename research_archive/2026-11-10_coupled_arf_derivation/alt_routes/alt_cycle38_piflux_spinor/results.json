@@ -1,0 +1,121 @@
+{
+  "classification": "PROVED",
+  "classification_note": "Combined \u03c0-flux + spin connection has trace \u22122 cos(\u03c0/10) on every face, preserves A4, does not pick a U(1) handedness, and does not produce three singlets. The fermion-only vacuum is \u03c0-flux.",
+  "holonomy": {
+    "2cos_pi_over_10": 1.902113032590307,
+    "A0_matches_2cos": 1,
+    "mean_trace_A0": {
+      "im": 0.0,
+      "re": 1.9021130325903073
+    },
+    "mean_trace_pi": {
+      "im": 6.886989234017144e-16,
+      "re": -1.9021130325903073
+    },
+    "minus_2cos": -1.902113032590307,
+    "n_faces": 20,
+    "pi_matches_minus_2cos": 1
+  },
+  "hypotheses": {
+    "H1_combined_does_not_reduce_A4": 1,
+    "H1_holonomy_is_A5": 1,
+    "H1_no_T_handedness": 1,
+    "H2_not_three_singlets": 1,
+    "H3_vacuum_is_pi_flux": 1
+  },
+  "spectra": {
+    "A0": {
+      "Emin": 0.7467459579691105,
+      "grouped_rel_1e-5": [
+        {
+          "mult": 2,
+          "value": 0.7467459580094337
+        },
+        {
+          "mult": 6,
+          "value": 633507.6525722038
+        },
+        {
+          "mult": 12,
+          "value": 708283.0877002283
+        },
+        {
+          "mult": 4,
+          "value": 950261.478845608
+        }
+      ],
+      "max_mult": 12,
+      "n_distinct_positive": 4,
+      "n_positive_singlets": 0,
+      "three_nondeg_singlets": 0
+    },
+    "all_pi": {
+      "Emin": 9.253254041675993,
+      "grouped_rel_1e-5": [
+        {
+          "mult": 2,
+          "value": 9.253254041730067
+        },
+        {
+          "mult": 6,
+          "value": 633507.6525587757
+        },
+        {
+          "mult": 12,
+          "value": 708283.0877002286
+        },
+        {
+          "mult": 4,
+          "value": 950261.4788366563
+        }
+      ],
+      "max_mult": 12,
+      "n_distinct_positive": 4,
+      "n_positive_singlets": 0,
+      "three_nondeg_singlets": 0
+    }
+  },
+  "stabilizer": {
+    "Delta_stab_name": "A4",
+    "Delta_stab_order": 12,
+    "T_breaks_pattern": 0,
+    "combined_stab_name": "A4",
+    "combined_stab_order": 12,
+    "holonomy_stab_name": "A5",
+    "holonomy_stab_order": 60,
+    "is_Z2": 0,
+    "is_Z3": 0,
+    "n_rotations_mapping_hol_to_conjugate": 60,
+    "picks_handedness": 0,
+    "traces_all_real": 1
+  },
+  "vacuum": {
+    "cycle34_dOmega": -8.506449896842241,
+    "cycle34_spinor_T0_unstable": 1,
+    "name": "pi_flux",
+    "omegas": {
+      "T0": {
+        "delta": -8.506449896842241,
+        "omega_A0": -8050745.188355155,
+        "omega_Api": -8050753.694805052,
+        "pi_lower": 1,
+        "random_delta_vs_A0": [
+          -3.0614065434783697,
+          -4.5969916470348835,
+          -4.126087309792638
+        ]
+      },
+      "Teta": {
+        "delta": -3.24024657625705,
+        "omega_A0": -8050752.776785971,
+        "omega_Api": -8050756.017032547,
+        "pi_lower": 1,
+        "random_delta_vs_A0": [
+          -0.5768231591209769,
+          -1.135674505494535,
+          -0.9439109368249774
+        ]
+      }
+    }
+  }
+}
