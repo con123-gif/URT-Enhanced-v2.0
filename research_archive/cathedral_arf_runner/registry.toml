@@ -202,6 +202,14 @@ gating = true
 run = "python research_archive/2026-11-10_sandbox_bound_scripts/classify_sandbox_bound_scripts.py"
 timeout = 60
 
+[[check]]
+id = "research.missing_intermediates"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-10_missing_intermediates/find_missing_intermediate_producers.py"
+timeout = 60
+
 
 # ------------------------------------------------------------------ research (independent calculations)
 [[check]]
