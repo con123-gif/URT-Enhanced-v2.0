@@ -1,0 +1,293 @@
+{
+  "D6_H3": {
+    "n_diameter_units": 6,
+    "n_projected_roots": 60,
+    "projected_root_lengths": [
+      {
+        "length": 1.0514622242382676,
+        "mult": 30
+      },
+      {
+        "length": 1.701301616704079,
+        "mult": 30
+      }
+    ],
+    "root_length_ratio": 1.6180339887498936
+  },
+  "H2_Ward": {
+    "every_nonzero_Cbridge_pair_connected": 0,
+    "full_five_solid_Ward_restored": 0,
+    "n_pairs_with_enumeration_capped": 0,
+    "recipe_A": {
+      "first_Ward_holds": 0,
+      "gauge_invariance_abs_err": 4.212431940909937,
+      "gauge_invariance_holds": 0
+    },
+    "recipe_B": {
+      "first_Ward_holds": 0,
+      "gauge_invariance_abs_err": 4.212431940909937,
+      "gauge_invariance_holds": 0
+    }
+  },
+  "H3_uniqueness": {
+    "all_Cbridge_pairs_have_unique_shortest_path": 0,
+    "current_A_minus_B_l2_norm": 14.918547611716747,
+    "current_A_minus_B_relative": 0.7059216038270971,
+    "currents_agree_numerically": 0,
+    "gauged_current_unique": 0,
+    "path_ambiguity_removed": 0
+  },
+  "H4_ico_offedge_ambiguity": {
+    "all_unique_after_links": 0,
+    "n_ico_off_edge": 36,
+    "n_multiple_after_links": 36,
+    "n_paths_minmax_after_links": [
+      2,
+      10
+    ],
+    "removed_0_855_ambiguity": 0
+  },
+  "advances_ARF": 0,
+  "candidates": {
+    "d1": 0.38196601125010515,
+    "d2": 1.618033988749894,
+    "d2_kept": 0,
+    "d2_matched_scale": null,
+    "d2_over_d1": 4.236067977499787,
+    "d2_over_d1_minus_phi3": -2.6645352591003757e-15,
+    "d3": 2.0,
+    "d3_over_d1": 5.23606797749979,
+    "d3_over_d1_minus_2phi2": 0.0,
+    "distance_groups": [
+      {
+        "length": 0.38196601125010515,
+        "mult": 12
+      },
+      {
+        "length": 1.618033988749894,
+        "mult": 24
+      },
+      {
+        "length": 2.0,
+        "mult": 72
+      }
+    ],
+    "kept_scales": [
+      0.38196601125010515
+    ],
+    "n_links": 12,
+    "n_root_parallel_intersolid": 108
+  },
+  "classification": "PROVED",
+  "classification_note": "D6\u2192H3 rule produced 12 inter-solid links; five-solid connected=False; full Ward=False; unique current=False; ico 0.855 ambiguity removed=False.",
+  "connectivity": {
+    "components": [
+      {
+        "n_verts": 4,
+        "solids": [
+          "tetrahedron"
+        ]
+      },
+      {
+        "n_verts": 8,
+        "solids": [
+          "cube"
+        ]
+      },
+      {
+        "n_verts": 6,
+        "solids": [
+          "octahedron"
+        ]
+      },
+      {
+        "n_verts": 32,
+        "solids": [
+          "dodecahedron",
+          "icosahedron"
+        ]
+      }
+    ],
+    "five_solids_path_connected": 0,
+    "n_components": 4,
+    "n_enlarged_edges": 102
+  },
+  "geometry": {
+    "Tr_Cbridge": 160.0,
+    "Tr_Cbridge_squared": 799.9999999999995,
+    "n_Cbridge_nonzero_upper": 1063,
+    "n_cross_solid_nonzero_Cbridge": 836,
+    "n_cross_solid_pairs": 920,
+    "n_ico_off_edge": 36,
+    "n_original_edges": 90,
+    "n_vertices": 50
+  },
+  "hypotheses": {
+    "H1_five_connected": 0,
+    "H1_nonempty_links": 1,
+    "H2_full_Ward_restored": 0,
+    "H3_current_unique": 0,
+    "H4_ico_ambiguity_removed": 0
+  },
+  "paths_Cbridge_pairs": {
+    "all_connected": 0,
+    "all_unique": 0,
+    "n_connected": 467,
+    "n_disconnected": 596,
+    "n_multiple_shortest_paths": 215,
+    "n_pairs": 1063,
+    "n_paths_minmax": [
+      1,
+      20
+    ],
+    "n_unique_shortest_path": 252,
+    "path_length_minmax": [
+      1,
+      5
+    ]
+  },
+  "paths_cross_solid_Cbridge_pairs": {
+    "all_connected": 0,
+    "all_unique": 0,
+    "n_connected": 240,
+    "n_disconnected": 596,
+    "n_multiple_shortest_paths": 132,
+    "n_pairs": 836,
+    "n_paths_minmax": [
+      1,
+      12
+    ],
+    "n_unique_shortest_path": 108,
+    "path_length_minmax": [
+      1,
+      4
+    ]
+  },
+  "paths_ico_off_edge": {
+    "all_connected": 1,
+    "all_unique": 0,
+    "n_connected": 36,
+    "n_disconnected": 0,
+    "n_multiple_shortest_paths": 36,
+    "n_pairs": 36,
+    "n_paths_minmax": [
+      2,
+      10
+    ],
+    "n_unique_shortest_path": 0,
+    "path_length_minmax": [
+      2,
+      3
+    ]
+  },
+  "posthoc_note": "Variants keep extra observed root-parallel lengths (d2 = \u03c6, d3 = 2) whose ratios to d1 are \u03c6\u00b3 and 2\u03c6\u00b2. They are diagnostics, not the predeclared C4 test.",
+  "posthoc_scale_variants": {
+    "diagnostic_all_observed_lengths": {
+      "Ward": {
+        "gauge_invariance_holds": 1,
+        "recipe_A_err": 1.1368683772161603e-13,
+        "recipe_B_err": 1.1368683772161603e-13
+      },
+      "current_A_minus_B_relative": 0.5890473459044028,
+      "five_solids_path_connected": 1,
+      "full_Ward": 1,
+      "ico_ambiguity_removed": 0,
+      "n_components": 1,
+      "n_enlarged_edges": 198,
+      "n_links": 108,
+      "paths_all_C": {
+        "all_connected": 1,
+        "all_unique": 0,
+        "n_connected": 1063,
+        "n_disconnected": 0,
+        "n_multiple_shortest_paths": 547,
+        "n_pairs": 1063,
+        "n_paths_minmax": [
+          1,
+          30
+        ],
+        "n_unique_shortest_path": 516
+      },
+      "paths_cross_C": {
+        "all_connected": 1,
+        "all_unique": 0,
+        "n_connected": 836,
+        "n_disconnected": 0,
+        "n_multiple_shortest_paths": 464,
+        "n_pairs": 836,
+        "n_paths_minmax": [
+          1,
+          24
+        ],
+        "n_unique_shortest_path": 372
+      },
+      "paths_ico_off": {
+        "all_connected": 1,
+        "all_unique": 0,
+        "n_connected": 36,
+        "n_disconnected": 0,
+        "n_multiple_shortest_paths": 36,
+        "n_pairs": 36,
+        "n_paths_minmax": [
+          2,
+          12
+        ],
+        "n_unique_shortest_path": 0
+      },
+      "tag": "diagnostic_all_observed_lengths",
+      "unique_current": 0
+    },
+    "diagnostic_d1_plus_d2": {
+      "Ward": null,
+      "current_A_minus_B_relative": null,
+      "five_solids_path_connected": 0,
+      "full_Ward": 0,
+      "ico_ambiguity_removed": 0,
+      "n_components": 3,
+      "n_enlarged_edges": 126,
+      "n_links": 36,
+      "paths_all_C": {
+        "all_connected": 0,
+        "all_unique": 0,
+        "n_connected": 659,
+        "n_disconnected": 404,
+        "n_multiple_shortest_paths": 263,
+        "n_pairs": 1063,
+        "n_paths_minmax": [
+          1,
+          18
+        ],
+        "n_unique_shortest_path": 396
+      },
+      "paths_cross_C": {
+        "all_connected": 0,
+        "all_unique": 0,
+        "n_connected": 432,
+        "n_disconnected": 404,
+        "n_multiple_shortest_paths": 180,
+        "n_pairs": 836,
+        "n_paths_minmax": [
+          1,
+          6
+        ],
+        "n_unique_shortest_path": 252
+      },
+      "paths_ico_off": {
+        "all_connected": 1,
+        "all_unique": 0,
+        "n_connected": 36,
+        "n_disconnected": 0,
+        "n_multiple_shortest_paths": 36,
+        "n_pairs": 36,
+        "n_paths_minmax": [
+          2,
+          12
+        ],
+        "n_unique_shortest_path": 0
+      },
+      "tag": "diagnostic_d1_plus_d2",
+      "unique_current": 0
+    }
+  },
+  "which_ARF": null
+}
