@@ -312,3 +312,29 @@ Result: Eight commits (10 November 2026, 07:23:17–07:24:31 Europe/London) add 
 Predeclaration sha256: `7443626033ad600a412600778aadd4626c56027e5e7fccbe69da91bb8fcf6610`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 37–39)
+
+Date: 10 November 2026 (Europe/London). Repo read-only at `6bad7b3`. No commits or pushes.
+
+The matching nested counts 276 → 8 → 4 → 2 in the new H64 certificate and in our H13 pairing chain are a coincidence of counts, not the same subspaces: for every energy-respecting embedding of 3, 3', 5 into H64 the images are Hilbert–Schmidt orthogonal (all principal angles 90°, overlap ≤ 2.8×10^{-16}). The Clebsch–Gordan types differ (certificate 1⊗4 on H_0 ⊗ H_16/H_18 versus our 3⊗3', 3⊗5, 3'⊗5, Sym² 5 on pairs among H_10, H_16, H_18). Combining π-flux with the 2I spinor lift produces face holonomy traces −2 cos(π/10) and does not reduce the residual A4 (combined stabiliser still A4, traces real, no T-handedness). The fermion-only vacuum remains π-flux (ΔΩ = −8.506 at T = 0 and −3.240 at T = η) with spectrum 2 ⊕ 6 ⊕ 12 ⊕ 4 and the lowest 2 lifted from 0.747 to 9.253; not three singlets. Static Gaussian fluctuations of 4_3 ⊕ 4_5 about the A4 condensate have an A4-invariant, positive-definite Hessian (κ_rad = 2 c_even = 2.711024×10^{-6}, κ_ang = 1.626079×10^{-6}, κ_odd = 2 c_3 = 0.444475). The raw 8×8 finite-difference Hessian at step 0.02 had mixed-sign O(10^{-6}) even eigenvalues; those are cancellation noise, resolved by directional second derivatives that are stable across δh ∈ {50, 200, 1000, 3000}. The five A5-related A4 directions remain degenerate (no order by disorder). The one-loop fermion self-energy is a scalar on each multiplet (relative spreads ~ 10^{-14}) and does not produce three nondegenerate charged singlets, so C_mass and R_mass were not compared. No Higgs kinetic, Nambu–Gor'kov Ward EM response, or y_even history normalisation was introduced.
+
+## alt_cycle37 — principal angles of the two 276 → 8 → 4 → 2 flags
+Directory: `/workspace/arf_research/alt_cycle37_paircount_angles/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Eight energy-respecting embeddings (3, 3' independently into H_10 or H_18; 5 into H_16; two Walsh A5 realisations) all give V8 ⊥ C8 and V4 ⊥ C4_S, every principal angle 90°, max overlap singular value 2.83×10^{-16}. C8 image dimension 32 (CG type 1⊗4); V8 image dimension 16 (CG types 3⊗3', 3⊗5, 3'⊗5, Sym² 5). C4_B was not constructed (source isometry U_h not invented); orthogonality to all of C8 already implies orthogonality to C4_B and C2. The matching counts are a coincidence, not an identification of cuts.
+Predeclaration sha256: `ec4c48302559e5abd3964812cee1af2dd846b16e2621ccdbcd372a645180a179`.
+
+## alt_cycle38 — π-flux combined with the spinor lift
+Directory: `/workspace/arf_research/alt_cycle38_piflux_spinor/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Combined face holonomy traces equal −2 cos(π/10) = −1.902113032590307 on all 20 faces (A = 0 traces equal +2 cos(π/10)). Holonomy stabiliser A5; Δ stabiliser A4; combined stabiliser A4 (order 12), not ℤ3 or ℤ2. Traces real; time reversal does not pick a handedness. Spectrum at the π-flux vacuum: 2 ⊕ 6 ⊕ 12 ⊕ 4 with E_min = 9.253254 (the A = 0 spinor gap 0.746746 lifted by π-flux); pairing levels unchanged at 633507.653 × 6, 708283.088 × 12, 950261.479 × 4. Not three nondegenerate charged singlets; C_mass and R_mass were not compared. Fermion-only vacuum is π-flux: ΔΩ = −8.506450 (T = 0) and −3.240247 (T = η), matching cycle 34’s spinor sector; random connections lie between A = 0 and A = π.
+Predeclaration sha256: `41506a6dadd257d348b398a30a09aada123762e61d915c31ec2e8b2a8da743a8`.
+
+## alt_cycle39 — Gaussian fluctuations of 4_5 and 4_3
+Directory: `/workspace/arf_research/alt_cycle39_gaussian_fluctuations/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: A raw 8×8 finite-difference Hessian at step 0.02 mixes the O(10^{-6}) 4_5 block with cancellation noise (two apparent negative eigenvalues ~10^{-6}); it remains A4-invariant (commutator residual 9.0×10^{-6}). Directional second derivatives are stable and positive definite: κ_rad = 2.711024×10^{-6} = 2 c_even, κ_ang = 1.626079×10^{-6} (the 3 of A4), κ_odd = 0.444475 = 2 c_3. Relative fluctuation amplitude δh_rad / r_* ≈ 7.1×10^{-4}. The A5-orbit of ĥ has size 5 and equal Hessian patterns; fluctuations do not select a direction. The raw inverted Hessian produces a spurious O(1) split of every multiplet; the sanitized A4-invariant covariance gives a scalar W on each (relative spreads ~ 10^{-14}; shifts 0.261, 0.073, 0.073, 0.391 on the 3, 3, 3, 2). No three nondegenerate charged singlets; C_mass and R_mass were not compared. No Higgs kinetic was introduced.
+Predeclaration sha256: `c64442acb624642fcd3ca34ef814be7659dd49f6a5fad10a7fe4b61c09ac3a5c`.
+
+No repository files were modified, committed, or pushed.
