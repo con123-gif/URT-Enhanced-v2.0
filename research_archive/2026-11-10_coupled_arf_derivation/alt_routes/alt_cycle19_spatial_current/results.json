@@ -1,0 +1,194 @@
+{
+  "H1_hodge_current": {
+    "five_solids": {
+      "tetrahedron": {
+        "nV": 4,
+        "nE": 6,
+        "nF": 4
+      },
+      "cube": {
+        "nV": 8,
+        "nE": 12,
+        "nF": 6
+      },
+      "octahedron": {
+        "nV": 6,
+        "nE": 12,
+        "nF": 8
+      },
+      "dodecahedron": {
+        "nV": 20,
+        "nE": 30,
+        "nF": 12
+      },
+      "icosahedron": {
+        "nV": 12,
+        "nE": 30,
+        "nF": 20
+      }
+    },
+    "ward_per_solid": {
+      "tetrahedron": {
+        "nV": 4,
+        "nE": 6,
+        "nF": 4,
+        "current_matches_finite_difference": true,
+        "current_finite_difference_max_abs_err": 1.0566016617197249e-08,
+        "exact_gauge_invariance_abs_err": 0.0,
+        "first_Ward_residual": 4.3172376784639255e-10,
+        "first_Ward_holds": true
+      },
+      "cube": {
+        "nV": 8,
+        "nE": 12,
+        "nF": 6,
+        "current_matches_finite_difference": true,
+        "current_finite_difference_max_abs_err": 1.2706654284322383e-08,
+        "exact_gauge_invariance_abs_err": 1.7763568394002505e-15,
+        "first_Ward_residual": 4.530882335984643e-10,
+        "first_Ward_holds": true
+      },
+      "octahedron": {
+        "nV": 6,
+        "nE": 12,
+        "nF": 8,
+        "current_matches_finite_difference": true,
+        "current_finite_difference_max_abs_err": 2.3026117901281395e-08,
+        "exact_gauge_invariance_abs_err": 7.105427357601002e-15,
+        "first_Ward_residual": -3.60867078441629e-08,
+        "first_Ward_holds": true
+      },
+      "dodecahedron": {
+        "nV": 20,
+        "nE": 30,
+        "nF": 12,
+        "current_matches_finite_difference": true,
+        "current_finite_difference_max_abs_err": 1.2633217405522146e-07,
+        "exact_gauge_invariance_abs_err": 0.0,
+        "first_Ward_residual": 3.0824232055692846e-10,
+        "first_Ward_holds": true
+      },
+      "icosahedron": {
+        "nV": 12,
+        "nE": 30,
+        "nF": 20,
+        "current_matches_finite_difference": true,
+        "current_finite_difference_max_abs_err": 1.20256690605558e-07,
+        "exact_gauge_invariance_abs_err": 0.0,
+        "first_Ward_residual": -1.4618696653201368e-07,
+        "first_Ward_holds": true
+      }
+    },
+    "total_vertices": 50,
+    "total_spatial_edges": 90,
+    "five_solid_ward_holds": true,
+    "current_unique_given_hodge_ray_and_q_equals_1": true,
+    "formula": "j_e = \u22122 q Im(\u03c8_i* \u03c8_j) = \u2202S/\u2202A_e |_{A=0}, S = ||d_A \u03c8||\u00b2"
+  },
+  "H2_cbridge_nonlocal": {
+    "n_vertex_pairs": 66,
+    "n_spatial_edges": 30,
+    "n_off_edge_pairs_with_nonzero_Cbridge": 36,
+    "sample_off_edge_entries": [
+      [
+        0,
+        1,
+        -0.11388026216662389
+      ],
+      [
+        0,
+        3,
+        -0.6666666666666659
+      ],
+      [
+        0,
+        5,
+        -0.11388026216662417
+      ],
+      [
+        0,
+        7,
+        -0.11388026216662417
+      ],
+      [
+        0,
+        9,
+        -0.11388026216662406
+      ]
+    ],
+    "Hodge_current_satisfies_Ward_for_Hodge_plus_ungauged_Cbridge": false,
+    "Hodge_plus_Cbridge_Ward_residual": 26.599279332517597,
+    "gauging_Cbridge_requires_Wilson_lines_off_spatial_edges": true,
+    "n_additional_pairs_needing_a_path_choice": 36
+  },
+  "H3_one_loop_Pi": {
+    "transverse_dimension": 19,
+    "lambda_min_Delta1_T": 0.7639320225002085,
+    "Delta1_T_spectrum_min_max": [
+      0.7639320225002085,
+      5.23606797749979
+    ],
+    "regulated_diagnostics": [
+      {
+        "epsilon": 0.1,
+        "Ward_Pi_longitudinal_relative_norm": 1.5418665400116087e-15,
+        "lambda_min_Pi_T": 1.5381462513123065,
+        "lambda_max_Pi_T": 1.6414849681967345,
+        "lambda_min_Delta1_T": 0.7639320225002085,
+        "R_EM_regulated": 2.0134595828019326
+      },
+      {
+        "epsilon": 0.01,
+        "Ward_Pi_longitudinal_relative_norm": 1.664146108668236e-13,
+        "lambda_min_Pi_T": 16.53104108653218,
+        "lambda_max_Pi_T": 16.641955064883675,
+        "lambda_min_Delta1_T": 0.7639320225002085,
+        "R_EM_regulated": 21.63941371698117
+      },
+      {
+        "epsilon": 0.001,
+        "Ward_Pi_longitudinal_relative_norm": 1.3824929838625277e-11,
+        "lambda_min_Pi_T": 166.53029297739215,
+        "lambda_max_Pi_T": 166.64200698383647,
+        "lambda_min_Delta1_T": 0.7639320225002085,
+        "R_EM_regulated": 217.9909835856458
+      },
+      {
+        "epsilon": 0.0001,
+        "Ward_Pi_longitudinal_relative_norm": 1.117552691817209e-09,
+        "lambda_min_Pi_T": 1666.5302177761537,
+        "lambda_max_Pi_T": 1666.6420122314616,
+        "lambda_min_Delta1_T": 0.7639320225002085,
+        "R_EM_regulated": 2181.5163767083723
+      }
+    ],
+    "lambda_min_Pi_T_increases_as_epsilon_decreases": true,
+    "R_EM_regulated_depends_on_epsilon": true,
+    "R_EM_regulated_values": [
+      2.0134595828019326,
+      21.63941371698117,
+      217.9909835856458,
+      2181.5163767083723
+    ],
+    "scaled_lambda_min_Pi_T_times_epsilon": [
+      0.15381462513123068,
+      0.1653104108653218,
+      0.16653029297739216,
+      0.16665302177761537
+    ],
+    "finite_parameter_free_R_EM": false,
+    "note": "A charge-1 mass term \u03b5||\u03c6||\u00b2 is locally gauge invariant, so \u03a0_\u03b5 is transverse, but the charged constant mode of the Hodge Laplacian contributes a piece ~ 2/(\u03b5 n) to \u03a0 on every edge, including transverse ones. The massless limit is infrared-singular and the regulated ratio depends on \u03b5. No Yukawa mass is available to replace \u03b5, because no unique Yukawa ray has been derived."
+  },
+  "H4_ARF_comparison": {
+    "performed": false,
+    "reason": "No finite parameter-free R_EM exists, so no comparison with R_\u03b1 (or the other historical ARFs) was performed, as predeclared."
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "A unique local spatial-edge current exists for the Hodge kinetic and satisfies Ward, but the one-loop electromagnetic response is infrared-singular without a derived fermion mass, and Cbridge cannot be gauged along spatial edges alone."
+}
