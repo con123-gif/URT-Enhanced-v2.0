@@ -129,6 +129,10 @@ assert np.array_equal(Hbits@constant,np.zeros(N,dtype=np.int64))
 assert np.array_equal(Hbits@parity,np.zeros(N,dtype=np.int64))
 assert np.array_equal(Q2@constant,2*constant)
 assert np.array_equal(Q2@parity,np.zeros(N,dtype=np.int64))
+for weight in (2,3,4):
+    representative=np.array([(-1)**((h&((1<<weight)-1)).bit_count()) for h in range(N)],dtype=np.int64)
+    assert np.sum(representative)==0
+    assert np.array_equal(np.linalg.matrix_power(Q2,6)@representative,np.zeros(N,dtype=np.int64))
 # Q^6 is rank-one Haar projector: Qv=v implies v constant.
 stationary_resonant={E:quartets[E] for E in (16,18)}
 stationary_bright={E:1 for E in (16,18)}
