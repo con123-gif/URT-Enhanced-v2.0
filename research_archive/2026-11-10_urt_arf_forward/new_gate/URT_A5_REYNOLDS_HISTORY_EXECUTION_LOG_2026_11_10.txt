@@ -1,0 +1,9 @@
+energy 16 two-quartet reduced characteristic (30*x + 1)*(60*x + 1)/1800 trace -1/5 trace squared 1/180
+energy 18 two-quartet reduced characteristic x**2 trace 0 trace squared 0
+Reynolds R(Q)=M/120: nonnegative, doubly stochastic, A5-equivariant, commutes with H64: EXACT
+Hilbert-Schmidt squared norms: Q= 32 R(Q)= 23/10 difference= 297/10
+fraction of original squared transfer norm removed: 297/320
+exact integer charpoly(M): z**9*(z - 120)*(z - 16)**6*(z - 8)**6*(z + 2)**4*(z + 4)**4*(z + 8)**5*(z + 16)**5*(z**2 - 2000)**3*(z**2 - 80)**9
+largest nontrivial eigenvalue modulus: sqrt(5)/6 ~ 0.37267799624996495
+six-step memory: Q^6=J/64, but R(Q)^6 differs from J/64 by exact max entry 29461/116640000
+PASS: unique Frobenius projection under added A5 criterion, not native Q and not physical ARF
