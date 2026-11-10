@@ -1,0 +1,407 @@
+{
+  "C_mass": 4.446800183122003,
+  "R_mass": -2.4299997428893794,
+  "T1_strict": null,
+  "classification": "PROVED",
+  "classification_note": "Spectra and predeclared flux comparisons are recorded. The \u03ba=0 vacuum does not produce three nondegenerate charged singlets, so C_mass and R_mass are not compared.",
+  "comparison_performed": 0,
+  "flux_comparison": {
+    "A_zero": {
+      "all_holonomies_minus_one": 0,
+      "all_holonomies_plus_one": 1,
+      "any_match_1e-4": 1,
+      "comparison": [
+        {
+          "match_1e-4": 1,
+          "nearest": "0",
+          "nearest_abs": 0.0,
+          "nearest_rel": null,
+          "value": 0.0
+        }
+      ],
+      "unique_abs_principal": [
+        0.0
+      ]
+    },
+    "all_pi": {
+      "all_holonomies_minus_one": 1,
+      "all_holonomies_plus_one": 0,
+      "any_match_1e-4": 1,
+      "comparison": [
+        {
+          "match_1e-4": 1,
+          "nearest": "pi",
+          "nearest_abs": 0.0,
+          "nearest_rel": 0.0,
+          "value": 3.141592653589793
+        }
+      ],
+      "unique_abs_principal": [
+        3.141592653589793
+      ]
+    },
+    "kappa0_T0": {
+      "all_holonomies_minus_one": 1,
+      "all_holonomies_plus_one": 0,
+      "any_match_1e-4": 1,
+      "comparison": [
+        {
+          "match_1e-4": 1,
+          "nearest": "pi",
+          "nearest_abs": 4.593480973369424e-07,
+          "nearest_rel": 1.4621504058206294e-07,
+          "value": 3.141592194241696
+        }
+      ],
+      "unique_abs_principal": [
+        3.141592194241696
+      ]
+    },
+    "kappa0_Teta": {
+      "all_holonomies_minus_one": 1,
+      "all_holonomies_plus_one": 0,
+      "any_match_1e-4": 1,
+      "comparison": [
+        {
+          "match_1e-4": 1,
+          "nearest": "pi",
+          "nearest_abs": 3.142148337076378e-07,
+          "nearest_rel": 1.0001768795473691e-07,
+          "value": 3.1415923393749594
+        }
+      ],
+      "unique_abs_principal": [
+        3.1415923393749594
+      ]
+    },
+    "kappa1_T0": {
+      "all_holonomies_minus_one": 0,
+      "all_holonomies_plus_one": 1,
+      "any_match_1e-4": 1,
+      "comparison": [
+        {
+          "match_1e-4": 1,
+          "nearest": "0",
+          "nearest_abs": 0.0,
+          "nearest_rel": null,
+          "value": 0.0
+        }
+      ],
+      "unique_abs_principal": [
+        0.0
+      ]
+    }
+  },
+  "flux_targets_predeclared": {
+    "0": 0.0,
+    "2pi": 6.283185307179586,
+    "2pi_over_3": 2.0943951023931953,
+    "2pi_over_5": 1.2566370614359172,
+    "2pi_over_phi2": 2.399963229728653,
+    "Delta": 0.0024891898404204027,
+    "delta_star": 0.1475108101595796,
+    "eta": 5.9957979867413025,
+    "gamma": 0.012345679012345678,
+    "pi": 3.141592653589793,
+    "pi_over_2": 1.5707963267948966,
+    "pi_over_3": 1.0471975511965976,
+    "pi_over_5": 0.6283185307179586,
+    "r_pi_over_e": 1.1557273497909217,
+    "theta": 2.399963229728653
+  },
+  "from_cycle31": {
+    "combined_stab_all_pi": {
+      "T_breaks_as_a_pattern": 0,
+      "combined_stab_name": "A4",
+      "combined_stab_order": 12,
+      "holonomies_all_real": 1,
+      "n_A4_elements_mapping_flux_to_minus": 12,
+      "picks_a_handedness": 0
+    },
+    "kappa0_is_all_pi": 1,
+    "kappa1_is_trivial": 0,
+    "kappa_ambiguous": 0
+  },
+  "hypotheses": {
+    "H1_A4_multiplets_not_split_if_all_pi": 1,
+    "H1_unpaired_lifted_at_kappa0": 1,
+    "H2_three_singlets": 0,
+    "H3_no_comparison_unless_policy_met": 1,
+    "flux_list_compared": 1
+  },
+  "recorded_ratios": {},
+  "relative_errors_vs_ARFs": null,
+  "skip_reason": "The \u03ba=0 vacuum does not produce three nondegenerate charged singlets, so C_mass and R_mass are not compared.",
+  "spectra": {
+    "A_zero": {
+      "Emin": 2.349178840555691e-10,
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 2.349178840555691e-10
+        },
+        {
+          "mult": 1,
+          "value": 314487.9303611356
+        },
+        {
+          "mult": 1,
+          "value": 314487.93513707205
+        },
+        {
+          "mult": 1,
+          "value": 314487.9463163121
+        },
+        {
+          "mult": 1,
+          "value": 351605.95909894136
+        },
+        {
+          "mult": 1,
+          "value": 351605.9644386005
+        },
+        {
+          "mult": 1,
+          "value": 351605.97693737084
+        },
+        {
+          "mult": 1,
+          "value": 351610.4312348961
+        },
+        {
+          "mult": 1,
+          "value": 351610.4365745554
+        },
+        {
+          "mult": 1,
+          "value": 351610.44907332596
+        },
+        {
+          "mult": 2,
+          "value": 471731.9058595633
+        }
+      ],
+      "max_positive_mult": 2,
+      "n_distinct_positive": 10,
+      "n_positive_singlets": 9,
+      "three_nondeg_singlets": 0,
+      "unpaired_lifted": 0
+    },
+    "all_pi": {
+      "Emin": 9.999999999695767,
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 9.999999999695767
+        },
+        {
+          "mult": 1,
+          "value": 314487.93032933766
+        },
+        {
+          "mult": 1,
+          "value": 314487.9351052744
+        },
+        {
+          "mult": 1,
+          "value": 314487.9462845142
+        },
+        {
+          "mult": 1,
+          "value": 351605.9590989412
+        },
+        {
+          "mult": 1,
+          "value": 351605.9644386007
+        },
+        {
+          "mult": 1,
+          "value": 351605.976937371
+        },
+        {
+          "mult": 1,
+          "value": 351610.4312348962
+        },
+        {
+          "mult": 1,
+          "value": 351610.43657455564
+        },
+        {
+          "mult": 1,
+          "value": 351610.4490733259
+        },
+        {
+          "mult": 2,
+          "value": 471731.90583836474
+        }
+      ],
+      "max_positive_mult": 2,
+      "n_distinct_positive": 11,
+      "n_positive_singlets": 10,
+      "three_nondeg_singlets": 0,
+      "unpaired_lifted": 1
+    },
+    "kappa0_T0": {
+      "Emin": 9.999999999885027,
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 9.999999999885027
+        },
+        {
+          "mult": 1,
+          "value": 314487.9303293376
+        },
+        {
+          "mult": 1,
+          "value": 314487.9351052742
+        },
+        {
+          "mult": 1,
+          "value": 314487.9462845143
+        },
+        {
+          "mult": 1,
+          "value": 351605.9590989412
+        },
+        {
+          "mult": 1,
+          "value": 351605.9644386004
+        },
+        {
+          "mult": 1,
+          "value": 351605.976937371
+        },
+        {
+          "mult": 1,
+          "value": 351610.4312348963
+        },
+        {
+          "mult": 1,
+          "value": 351610.4365745556
+        },
+        {
+          "mult": 1,
+          "value": 351610.4490733259
+        },
+        {
+          "mult": 2,
+          "value": 471731.9058383645
+        }
+      ],
+      "max_positive_mult": 2,
+      "n_distinct_positive": 11,
+      "n_positive_singlets": 10,
+      "three_nondeg_singlets": 0,
+      "unpaired_lifted": 1
+    },
+    "kappa0_Teta": {
+      "Emin": 9.999999999807606,
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 9.999999999807606
+        },
+        {
+          "mult": 1,
+          "value": 314487.93032933783
+        },
+        {
+          "mult": 1,
+          "value": 314487.93510527443
+        },
+        {
+          "mult": 1,
+          "value": 314487.94628451444
+        },
+        {
+          "mult": 1,
+          "value": 351605.9590989412
+        },
+        {
+          "mult": 1,
+          "value": 351605.9644386006
+        },
+        {
+          "mult": 1,
+          "value": 351605.976937371
+        },
+        {
+          "mult": 1,
+          "value": 351610.4312348965
+        },
+        {
+          "mult": 1,
+          "value": 351610.4365745556
+        },
+        {
+          "mult": 1,
+          "value": 351610.4490733259
+        },
+        {
+          "mult": 2,
+          "value": 471731.9058383649
+        }
+      ],
+      "max_positive_mult": 2,
+      "n_distinct_positive": 11,
+      "n_positive_singlets": 10,
+      "three_nondeg_singlets": 0,
+      "unpaired_lifted": 1
+    },
+    "kappa1_T0": {
+      "Emin": 0.0,
+      "distinct": [
+        {
+          "mult": 1,
+          "value": 0.0
+        },
+        {
+          "mult": 1,
+          "value": 314487.9303611356
+        },
+        {
+          "mult": 1,
+          "value": 314487.93513707176
+        },
+        {
+          "mult": 1,
+          "value": 314487.94631631195
+        },
+        {
+          "mult": 1,
+          "value": 351605.95909894124
+        },
+        {
+          "mult": 1,
+          "value": 351605.9644386005
+        },
+        {
+          "mult": 1,
+          "value": 351605.9769373708
+        },
+        {
+          "mult": 1,
+          "value": 351610.431234896
+        },
+        {
+          "mult": 1,
+          "value": 351610.4365745553
+        },
+        {
+          "mult": 1,
+          "value": 351610.44907332596
+        },
+        {
+          "mult": 2,
+          "value": 471731.90585956303
+        }
+      ],
+      "max_positive_mult": 2,
+      "n_distinct_positive": 10,
+      "n_positive_singlets": 9,
+      "three_nondeg_singlets": 0,
+      "unpaired_lifted": 0
+    }
+  }
+}
