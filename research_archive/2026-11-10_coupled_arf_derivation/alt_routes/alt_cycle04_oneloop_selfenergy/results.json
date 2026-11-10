@@ -1,0 +1,158 @@
+{
+  "Hom_contains_4": {
+    "Hom(1,1)": 0,
+    "Hom(1,3)": 0,
+    "Hom(1,3')": 0,
+    "Hom(1,5)": 0,
+    "Hom(3,1)": 0,
+    "Hom(3,3)": 0,
+    "Hom(3,3')": 1,
+    "Hom(3,5)": 1,
+    "Hom(3',1)": 0,
+    "Hom(3',3)": 1,
+    "Hom(3',3')": 0,
+    "Hom(3',5)": 1,
+    "Hom(5,1)": 0,
+    "Hom(5,3)": 1,
+    "Hom(5,3')": 1,
+    "Hom(5,5)": 2
+  },
+  "singlets_absent_from_every_4_in_End": true,
+  "Weyl_channels": {
+    "3\u22973'": {
+      "n4": 1,
+      "feeds": [
+        "3",
+        "3'"
+      ],
+      "parity": "even",
+      "hidden": "4_5"
+    },
+    "3\u22975": {
+      "n4": 1,
+      "feeds": [
+        "3",
+        "5"
+      ],
+      "parity": "odd",
+      "hidden": "4_3"
+    },
+    "3'\u22975": {
+      "n4": 1,
+      "feeds": [
+        "3'",
+        "5"
+      ],
+      "parity": "odd",
+      "hidden": "4_3"
+    },
+    "Sym2(5)": {
+      "n4": 1,
+      "feeds": [
+        "5"
+      ],
+      "parity": "even",
+      "hidden": "4_5"
+    }
+  },
+  "forced_pole_degeneracies": [
+    1,
+    1,
+    3,
+    3,
+    5
+  ],
+  "counterexamples": {
+    "ray_A_pure_3x5_to_4_3": {
+      "active": [
+        "3\u22975"
+      ],
+      "massive_isotypes": {
+        "1a": false,
+        "1b": false,
+        "3": true,
+        "3'": false,
+        "5": true
+      },
+      "fingerprint": {
+        "m3_zero": false,
+        "m3p_zero": true,
+        "m5_zero": false,
+        "singlets_zero": true
+      }
+    },
+    "ray_B_pure_3px5_to_4_3": {
+      "active": [
+        "3'\u22975"
+      ],
+      "massive_isotypes": {
+        "1a": false,
+        "1b": false,
+        "3": false,
+        "3'": true,
+        "5": true
+      },
+      "fingerprint": {
+        "m3_zero": true,
+        "m3p_zero": false,
+        "m5_zero": false,
+        "singlets_zero": true
+      }
+    },
+    "ray_C_pure_3x3p_to_4_5": {
+      "active": [
+        "3\u22973'"
+      ],
+      "massive_isotypes": {
+        "1a": false,
+        "1b": false,
+        "3": true,
+        "3'": true,
+        "5": false
+      }
+    },
+    "ray_D_pure_Sym2_5_to_4_5": {
+      "active": [
+        "Sym2(5)"
+      ],
+      "massive_isotypes": {
+        "1a": false,
+        "1b": false,
+        "3": false,
+        "3'": false,
+        "5": true
+      }
+    },
+    "ray_A_and_ray_B_incompatible": true,
+    "both_rays_satisfy_A5_inversion_and_vertex_charge_plus_1": true
+  },
+  "distinct_mass_supports": {
+    "3\u22975": [
+      "3",
+      "5"
+    ],
+    "3'\u22975": [
+      "3'",
+      "5"
+    ],
+    "3\u22973'": [
+      "3",
+      "3'"
+    ],
+    "Sym2(5)": [
+      "5"
+    ]
+  },
+  "parameter_independent_ratio_exists": false,
+  "C_mass_derived": false,
+  "R_mass_derived": false,
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "The one-loop hidden contraction produces an A5-block-diagonal \u03a3 whose isotype support depends on the Yukawa ray. Two inversion-allowed rays already give incompatible zero/nonzero patterns, so no parameter-independent charged mass ratio exists in this family. C_mass and R_mass are not obtained."
+}
