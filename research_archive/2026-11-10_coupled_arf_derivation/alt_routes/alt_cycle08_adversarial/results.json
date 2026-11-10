@@ -1,0 +1,529 @@
+{
+  "targets": {
+    "Delta_delta": -0.00035959042756760504,
+    "R_alpha": 0.03380535602328556,
+    "C_mass": 4.446800183122003,
+    "R_mass": -2.4299997428893794
+  },
+  "H1_explicit_counterexample": {
+    "ray_A": {
+      "channel": "3 \u2297 5 \u2192 4_3",
+      "premises_satisfied": [
+        "A5",
+        "inversion (odd channel to odd hidden)",
+        "vertex charge +1",
+        "positive hidden covariance"
+      ],
+      "one_loop_massive_isotypes": [
+        "3",
+        "5"
+      ],
+      "one_loop_massless_isotypes": [
+        "1a",
+        "1b",
+        "3'"
+      ]
+    },
+    "ray_B": {
+      "channel": "3' \u2297 5 \u2192 4_3",
+      "premises_satisfied": [
+        "A5",
+        "inversion (odd channel to odd hidden)",
+        "vertex charge +1",
+        "positive hidden covariance"
+      ],
+      "one_loop_massive_isotypes": [
+        "3'",
+        "5"
+      ],
+      "one_loop_massless_isotypes": [
+        "1a",
+        "1b",
+        "3"
+      ]
+    },
+    "responses_agree": false,
+    "parameter_independent_ratio": false
+  },
+  "H2_direction_dependence": {
+    "test_polynomial": "V = a t^2 f^2 + b f^4",
+    "a": 0.490435304391,
+    "b": 4.16132699108e-07,
+    "note": "archived shape used only as a test polynomial, not to build a model",
+    "directions": {
+      "t=0,f=1": {
+        "eigenvalues": [
+          4.993592389296e-06,
+          0.980870608782
+        ],
+        "ratio_low_over_high": 5.090979732277648e-06
+      },
+      "t=1,f=0": {
+        "eigenvalues": [
+          0.0,
+          0.980870608782
+        ],
+        "ratio_low_over_high": 0.0
+      },
+      "t=f=1": {
+        "eigenvalues": [
+          -0.9808681119873943,
+          2.9426143231437836
+        ],
+        "ratio_low_over_high": -0.33333220200582386
+      },
+      "t=2,f=1": {
+        "eigenvalues": [
+          -1.7381029354857775,
+          6.642460972988168
+        ],
+        "ratio_low_over_high": -0.2616655095986024
+      },
+      "t=1,f=2": {
+        "eigenvalues": [
+          -1.7380910616886123,
+          6.642464079968169
+        ],
+        "ratio_low_over_high": -0.26166359964673547
+      }
+    },
+    "ratios_depend_on_direction": true
+  },
+  "grammars": {
+    "G_strict": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      12,
+      13,
+      15,
+      16,
+      18,
+      20,
+      24,
+      30,
+      32,
+      50,
+      51,
+      60,
+      64,
+      80,
+      81,
+      90,
+      120,
+      190
+    ],
+    "G_wide_extra": [
+      7,
+      9,
+      35,
+      36,
+      63,
+      79,
+      105,
+      137,
+      1053
+    ]
+  },
+  "T1_strict": {
+    "Delta_delta": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 0,
+      "rel_1e-3": 0,
+      "nearest_rel": 0.0050973483322409325,
+      "nearest_desc": [
+        [
+          2,
+          190,
+          1
+        ],
+        [
+          -1,
+          90,
+          1
+        ],
+        -0.00036142338523385657
+      ],
+      "n_pairs": 550725,
+      "defining_writing_present": false,
+      "exact_nondefining": 0
+    },
+    "R_alpha": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 3,
+      "rel_1e-3": 40,
+      "nearest_rel": 1.0920531741999284e-06,
+      "nearest_desc": [
+        [
+          1,
+          51,
+          2
+        ],
+        [
+          5,
+          190,
+          0
+        ],
+        0.03380531910603921
+      ],
+      "n_pairs": 550725,
+      "defining_writing_present": false,
+      "exact_nondefining": 0
+    },
+    "C_mass": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 0,
+      "rel_1e-3": 21,
+      "nearest_rel": 0.0002638234120197075,
+      "nearest_desc": [
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          7,
+          6,
+          2
+        ],
+        4.445627013125122
+      ],
+      "n_pairs": 550725,
+      "defining_writing_present": false,
+      "exact_nondefining": 0
+    },
+    "R_mass": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 6,
+      "rel_1e-3": 51,
+      "nearest_rel": 1.2736195711746258e-05,
+      "nearest_desc": [
+        [
+          8,
+          190,
+          0
+        ],
+        [
+          -4,
+          1,
+          1
+        ],
+        -2.4300306918416843
+      ],
+      "n_pairs": 550725,
+      "defining_writing_present": false,
+      "exact_nondefining": 0
+    },
+    "_n_atoms": 1050
+  },
+  "T1_wide": {
+    "Delta_delta": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 0,
+      "rel_1e-3": 1,
+      "nearest_rel": 0.0002241901572795877,
+      "nearest_desc": [
+        [
+          5,
+          36,
+          2
+        ],
+        [
+          -7,
+          81,
+          1
+        ],
+        -0.0003595098109330924
+      ],
+      "n_pairs": 1018878,
+      "defining_writing_present": false,
+      "exact_nondefining": 0
+    },
+    "R_alpha": {
+      "exact": 1,
+      "rel_1e-6": 6,
+      "rel_1e-4": 15,
+      "rel_1e-3": 110,
+      "nearest_rel": 8.876962021378141e-07,
+      "nearest_desc": [
+        [
+          1,
+          8,
+          2
+        ],
+        [
+          -5,
+          137,
+          2
+        ],
+        0.033805386032171716
+      ],
+      "n_pairs": 1018878,
+      "defining_writing_present": true,
+      "exact_nondefining": 0
+    },
+    "C_mass": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 1,
+      "rel_1e-3": 27,
+      "nearest_rel": 8.74755479139401e-05,
+      "nearest_desc": [
+        [
+          7,
+          1,
+          1
+        ],
+        [
+          7,
+          36,
+          1
+        ],
+        4.446411196839521
+      ],
+      "n_pairs": 1018878,
+      "defining_writing_present": false,
+      "exact_nondefining": 0
+    },
+    "R_mass": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 6,
+      "rel_1e-3": 70,
+      "nearest_rel": 1.2736195711746258e-05,
+      "nearest_desc": [
+        [
+          8,
+          190,
+          0
+        ],
+        [
+          -4,
+          1,
+          1
+        ],
+        -2.4300306918416843
+      ],
+      "n_pairs": 1018878,
+      "defining_writing_present": false,
+      "exact_nondefining": 0
+    },
+    "_n_atoms": 1428
+  },
+  "T2_strict": {
+    "Delta_delta": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 0,
+      "rel_1e-3": 0,
+      "nearest_rel": 0.0038725195484369626,
+      "nearest_desc": [
+        [
+          4,
+          81,
+          0,
+          1
+        ],
+        [
+          -3,
+          190,
+          1,
+          1
+        ],
+        -0.0003581979066074187
+      ],
+      "n_pairs": 15677200
+    },
+    "R_alpha": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 10,
+      "rel_1e-3": 84,
+      "nearest_rel": 2.696263361419179e-05,
+      "nearest_desc": [
+        [
+          5,
+          190,
+          2,
+          0
+        ],
+        [
+          -4,
+          90,
+          1,
+          1
+        ],
+        0.033806267504714216
+      ],
+      "n_pairs": 15677200
+    },
+    "C_mass": {
+      "exact": 0,
+      "rel_1e-6": 1,
+      "rel_1e-4": 260,
+      "rel_1e-3": 3300,
+      "nearest_rel": 5.579027851620973e-07,
+      "nearest_desc": [
+        [
+          2,
+          18,
+          2,
+          3
+        ],
+        [
+          -3,
+          64,
+          0,
+          3
+        ],
+        4.446802664004211
+      ],
+      "n_pairs": 15677200
+    },
+    "R_mass": {
+      "exact": 0,
+      "rel_1e-6": 1,
+      "rel_1e-4": 299,
+      "rel_1e-3": 2748,
+      "nearest_rel": 8.600635521456e-07,
+      "nearest_desc": [
+        [
+          3,
+          80,
+          0,
+          3
+        ],
+        [
+          -8,
+          5,
+          0,
+          1
+        ],
+        -2.43000183284359
+      ],
+      "n_pairs": 15677200
+    },
+    "_n_atoms": 5600
+  },
+  "T2_wide": {
+    "Delta_delta": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 0,
+      "rel_1e-3": 1,
+      "nearest_rel": 0.00014404649882930905,
+      "nearest_desc": [
+        [
+          5,
+          51,
+          1,
+          0
+        ],
+        [
+          -4,
+          1053,
+          3,
+          2
+        ],
+        -0.0003596422253097087
+      ],
+      "n_pairs": 28997920
+    },
+    "R_alpha": {
+      "exact": 0,
+      "rel_1e-6": 0,
+      "rel_1e-4": 27,
+      "rel_1e-3": 238,
+      "nearest_rel": 6.3888548669923596e-06,
+      "nearest_desc": [
+        [
+          7,
+          137,
+          1,
+          1
+        ],
+        [
+          -4,
+          90,
+          1,
+          1
+        ],
+        0.03380557200079892
+      ],
+      "n_pairs": 28997920
+    },
+    "C_mass": {
+      "exact": 0,
+      "rel_1e-6": 5,
+      "rel_1e-4": 530,
+      "rel_1e-3": 6208,
+      "nearest_rel": 1.0323673326857812e-07,
+      "nearest_desc": [
+        [
+          3,
+          5,
+          0,
+          3
+        ],
+        [
+          3,
+          79,
+          3,
+          1
+        ],
+        4.446800642195128
+      ],
+      "n_pairs": 28997920
+    },
+    "R_mass": {
+      "exact": 0,
+      "rel_1e-6": 10,
+      "rel_1e-4": 569,
+      "rel_1e-3": 5454,
+      "nearest_rel": 3.176471420428576e-08,
+      "nearest_desc": [
+        [
+          -3,
+          32,
+          2,
+          2
+        ],
+        [
+          -8,
+          1053,
+          0,
+          0
+        ],
+        -2.4299998200776267
+      ],
+      "n_pairs": 28997920
+    },
+    "_n_atoms": 7616
+  },
+  "notes": {
+    "R_alpha_79_not_in_G_strict": true,
+    "R_mass_35_not_in_G_strict": true,
+    "R_mass_51_is_in_G_strict": true,
+    "C_mass_and_Delta_delta_need_delta_star_absent_from_T1_T2": true,
+    "numerical_coincidence_is_not_a_derivation": true
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED",
+    "H5": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Uniqueness of the charged response is falsified by two inversion-allowed Yukawa rays with incompatible one-loop mass patterns, and by direction-dependent Hessian ratios of the reported two-amplitude shape. Look-elsewhere shows that several ARF numerical values have nearby Cathedral-looking writings; a numerical match inside the grammar is not a derivation."
+}
