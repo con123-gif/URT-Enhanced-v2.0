@@ -1,0 +1,66 @@
+{
+  "H1_haar_S3": {
+    "is_a_dirac_mass": false,
+    "picks_a_point_or_ray": false
+  },
+  "H2_haar_S2_galois_even": {
+    "is_a_dirac_mass": false,
+    "picks_a_point": false
+  },
+  "H3_logdet_on_the_sphere": {
+    "note": "An extra variational principle, not a derived KMS condition. Yukawas are parameters in the archived model, not dynamical fields.",
+    "n_random_samples": 4000,
+    "special_values": {
+      "pure_alpha": 19.752806240801576,
+      "pure_beta": 19.079169610433084,
+      "pure_gamma": 19.634350254892354,
+      "pure_delta": 18.57180988157228,
+      "galois_even_alpha_beta": 19.484444004781253,
+      "equal_four": 19.335179189032846,
+      "alpha_delta": 19.22005131909989,
+      "gamma_delta": 19.18132089569908
+    },
+    "best_special": "pure_alpha",
+    "worst_special": "pure_delta",
+    "random_max_value": 19.75157304381364,
+    "random_max_point": [
+      0.9916683368301838,
+      0.012374449357327084,
+      -0.1258632578659323,
+      0.024479032883954997
+    ],
+    "random_min_value": 18.583467388244273,
+    "random_min_point": [
+      -0.007429627337996431,
+      -0.13129658873896322,
+      -0.03826299520640042,
+      0.9905765743348492
+    ],
+    "logdet_range_on_samples": 1.1681056555693665,
+    "galois_symmetric": false,
+    "pure_alpha_ties_pure_beta": false,
+    "prefers_alpha_over_beta_because_kinetics_split": true,
+    "special_pure_alpha": 19.752806240801576,
+    "special_pure_beta": 19.079169610433084,
+    "optimised_max_point_abs": [
+      0.9999999999996697,
+      4.993339095398289e-07,
+      4.0234482503715443e-07,
+      4.993339098064652e-07
+    ],
+    "optimised_max_value": 19.75280624080122,
+    "unique_maximiser_up_to_signs": true,
+    "n_random_within_1e-3_of_optimised_max": 0,
+    "note_kinetics": "Because \u03bb3 = 5-\u221a5 < \u03bb3' = 5+\u221a5, log det is not Galois-symmetric and prefers putting mass on the lighter spatial 3. This is an extra variational principle, not a derived KMS condition."
+  },
+  "H4_canonical_point_forced": false,
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "CONDITIONAL (log-det is an extra principle, not KMS; kinetics split \u03b1 and \u03b2)",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Maximum entropy on the residual sphere is uniform, not a point, and KMS does not apply to Yukawa parameters. If one extra principle is added \u2014 maximising log det(K+\u03a3) on the unit sphere with the Hodge kinetic \u2014 the unique maximiser (up to signs) is the pure 3\u22975 \u2192 4_3 ray, because \u03bb3 = 5\u2212\u221a5 is lighter than \u03bb3\u2032. That principle is not derived."
+}
