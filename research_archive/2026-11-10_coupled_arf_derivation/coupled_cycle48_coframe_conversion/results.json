@@ -1,0 +1,240 @@
+{
+  "approach": {
+    "G_comb": {
+      "defined": true,
+      "last_err_lt_first": false,
+      "monotonic_err_decrease": false,
+      "rel_err": [
+        0.6180339887498955,
+        0.9090574641917688,
+        0.959718662548648
+      ],
+      "values": [
+        0.7639320225002091,
+        0.1818850716164624,
+        0.08056267490270397
+      ]
+    },
+    "G_euc_circ": {
+      "defined": true,
+      "last_err_lt_first": true,
+      "monotonic_err_decrease": true,
+      "rel_err": [
+        0.4793480003889272,
+        0.354108224954387,
+        0.3364177547060476
+      ],
+      "values": [
+        2.9586960007778544,
+        2.708216449908774,
+        2.6728355094120952
+      ]
+    },
+    "G_euc_dec": {
+      "defined": true,
+      "last_err_lt_first": true,
+      "monotonic_err_decrease": true,
+      "rel_err": [
+        0.4793480003889312,
+        0.35410822495440364,
+        0.33641775470591995
+      ],
+      "values": [
+        2.9586960007778624,
+        2.7082164499088073,
+        2.67283550941184
+      ]
+    },
+    "G_sph_circ": {
+      "defined": true,
+      "last_err_lt_first": true,
+      "monotonic_err_decrease": true,
+      "rel_err": [
+        0.21054765266440145,
+        0.0545469214958616,
+        0.024660774008210762
+      ],
+      "values": [
+        2.421095305328803,
+        2.109093842991723,
+        2.0493215480164215
+      ]
+    },
+    "G_sph_dec": {
+      "defined": true,
+      "last_err_lt_first": true,
+      "monotonic_err_decrease": true,
+      "rel_err": [
+        0.21054765266440056,
+        0.055434182943968846,
+        0.02485783768143701
+      ],
+      "values": [
+        2.421095305328801,
+        2.1108683658879377,
+        2.049715675362874
+      ]
+    }
+  },
+  "continuum_lmin_S2": 2.0,
+  "note": "No Jacobian Z is selected from these sequences.",
+  "pred_sha": "713ed33e7b65985dfadcab4c008a624e9906ddd60963aff13563fac4bce195b2",
+  "table": {
+    "1": {
+      "G_comb": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 0.7639320225002093,
+        "defined": true,
+        "nT": 19,
+        "rayleigh_max": 5.236067977499793,
+        "rayleigh_min": 0.7639320225002091,
+        "reason": null,
+        "rel_err_to_2": 0.6180339887498955
+      },
+      "G_euc_circ": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5957568972123184,
+        "defined": true,
+        "nT": 19,
+        "rayleigh_max": 20.279204076466648,
+        "rayleigh_min": 2.9586960007778544,
+        "reason": null,
+        "rel_err_to_2": 0.4793480003889272
+      },
+      "G_euc_dec": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5957568972123204,
+        "defined": true,
+        "nT": 19,
+        "rayleigh_max": 20.27920407646665,
+        "rayleigh_min": 2.9586960007778624,
+        "reason": null,
+        "rel_err_to_2": 0.4793480003889312
+      },
+      "G_sph_circ": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5957568972123217,
+        "defined": true,
+        "nT": 19,
+        "rayleigh_max": 16.594434092732044,
+        "rayleigh_min": 2.421095305328803,
+        "reason": null,
+        "rel_err_to_2": 0.21054765266440145
+      },
+      "G_sph_dec": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5957568972123237,
+        "defined": true,
+        "nT": 19,
+        "rayleigh_max": 16.59443409273204,
+        "rayleigh_min": 2.421095305328801,
+        "reason": null,
+        "rel_err_to_2": 0.21054765266440056
+      }
+    },
+    "2": {
+      "G_comb": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 0.18188507161645967,
+        "defined": true,
+        "nT": 79,
+        "rayleigh_max": 5.699315195763727,
+        "rayleigh_min": 0.1818850716164624,
+        "reason": null,
+        "rel_err_to_2": 0.9090574641917688
+      },
+      "G_euc_circ": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5197391861229186,
+        "defined": true,
+        "nT": 79,
+        "rayleigh_max": 85.15594878501113,
+        "rayleigh_min": 2.708216449908774,
+        "reason": null,
+        "rel_err_to_2": 0.354108224954387
+      },
+      "G_euc_dec": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5197391861229121,
+        "defined": true,
+        "nT": 79,
+        "rayleigh_max": 85.15594878501122,
+        "rayleigh_min": 2.7082164499088073,
+        "reason": null,
+        "rel_err_to_2": 0.35410822495440364
+      },
+      "G_sph_circ": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.2477102538987355,
+        "defined": true,
+        "nT": 79,
+        "rayleigh_max": 67.30677447959704,
+        "rayleigh_min": 2.109093842991723,
+        "reason": null,
+        "rel_err_to_2": 0.0545469214958616
+      },
+      "G_sph_dec": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.2477102538986955,
+        "defined": true,
+        "nT": 79,
+        "rayleigh_max": 65.99479809867351,
+        "rayleigh_min": 2.1108683658879377,
+        "reason": null,
+        "rel_err_to_2": 0.055434182943968846
+      }
+    },
+    "3": {
+      "G_comb": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 0.08056267490270397,
+        "defined": true,
+        "nT": 179,
+        "rayleigh_max": 5.849250403805034,
+        "rayleigh_min": 0.08056267490270397,
+        "reason": null,
+        "rel_err_to_2": 0.959718662548648
+      },
+      "G_euc_circ": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5145611337099856,
+        "defined": true,
+        "nT": 179,
+        "rayleigh_max": 194.36422096966209,
+        "rayleigh_min": 2.6728355094120952,
+        "reason": null,
+        "rel_err_to_2": 0.3364177547060476
+      },
+      "G_euc_dec": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.5145611337097904,
+        "defined": true,
+        "nT": 179,
+        "rayleigh_max": 194.36422096966209,
+        "rayleigh_min": 2.67283550941184,
+        "reason": null,
+        "rel_err_to_2": 0.33641775470591995
+      },
+      "G_sph_circ": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.194384203280293,
+        "defined": true,
+        "nT": 179,
+        "rayleigh_max": 151.0340643475053,
+        "rayleigh_min": 2.0493215480164215,
+        "reason": null,
+        "rel_err_to_2": 0.024660774008210762
+      },
+      "G_sph_dec": {
+        "continuum_target": 2.0,
+        "coord_lambda_min_M": 1.1943754796339476,
+        "defined": true,
+        "nT": 179,
+        "rayleigh_max": 151.27270036275578,
+        "rayleigh_min": 2.049715675362874,
+        "reason": null,
+        "rel_err_to_2": 0.02485783768143701
+      }
+    }
+  }
+}
