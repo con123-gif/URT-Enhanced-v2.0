@@ -37,3 +37,16 @@ If two agents finish the same task, the later one records its work as an indepen
 ## What runs automatically
 - **Orchestrator** (`.github/workflows/cathedral-orchestrator.yml`) runs on every push touching research code, and hourly. It executes every registered check plus a sweep of all archive scripts, and writes `summary.md` / `sweep.md` to `cathedral-research-state`. Register your certificate as a `[[check]]` in `research_archive/cathedral_arf_runner/registry.toml`.
 - **Compute queue** (`.github/workflows/cathedral-compute.yml`): for anything needing more than ~10 minutes, add a `[[job]]` to `registry.toml`. GitHub runs the queue back to back, up to 5.5 h per job, and writes results to `compute/<id>/` on `cathedral-research-state` for the next session to read.
+
+## Mandatory continuity preflight — prevent rediscovery
+
+Before answering a research comparison or proposing new Cathedral work, not just before committing code:
+
+1. Search the current research state, research log, claim/closure ledgers, relevant archived code and recovered conversation context for the exact topic, including historical synonyms (e.g. Hopf, bundle, holonomy, helicity, contact, Beltrami, torsion).
+2. Create a compact **prior-work ledger** in the working analysis: existing result; precise source path or commit; mathematical scope; status class; whether its certificate was actually executed. Do not call archived work novel or merely hypothetical.
+3. Compare the external claim with the ledger by stating **already established / potentially new / unverified or incompatible**. Never suggest redoing a closed calculation without a specific contradiction or new premise.
+4. If retrieval is incomplete, say which records were checked and which remain unchecked; never substitute plausible recollection for verified provenance.
+5. For substantive new work, run the actual named native operators and a fail-on-error certificate, update the log/registry/Queue according to RESEARCH_PROTOCOL.md, and verify CI status. Do not claim a commit or PASS without evidence.
+6. When the user points out a continuity failure, retrieve the missing work and correct the specific record before moving on. Do not respond with a generic apology or a fresh speculative research plan.
+
+This preflight adds to, and does not override, CONTINUITY_PROTOCOL.md or RESEARCH_PROTOCOL.md. It does not close any physical gate.
