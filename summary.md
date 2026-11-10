@@ -1,6 +1,6 @@
 # Cathedral orchestrator — ✅ PASS
 
-2026-11-10T19:54:38Z · [run 42888496058](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42888496058) · `79f1dd3` · pull_request on `claude/cathedral-orchestrator` · checkpoint #1
+2026-11-10T20:01:36Z · [run 42888823899](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42888823899) · `340ee1c` · pull_request on `claude/cathedral-orchestrator` · checkpoint #2
 
 ## Physical status
 
@@ -19,23 +19,23 @@
 
 | Stage | Check | Claim | Status | Passing runs | Wall |
 |---|---|---|---|---|---|
-| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 1 | 0.05s |
-| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 1 | 0.01s |
-| integrity | `integrity.handover_claims` | independent | ✅ pass | 1 | 0.31s |
-| tests | `tests.suite` | regression | ✅ pass | 1 | 8.97s |
-| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 1 | 9.69s |
-| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 1 | 0.34s |
-| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 1 | 4.8s |
-| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 1 | 4.59s |
-| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 1 | 0.4s |
-| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 1 | 0.32s |
-| history | `history.native_24clock_fourier` | conditional | ✅ pass | 1 | 0.58s |
-| native | `native.wilson_source` | native | ✅ pass | 1 | 0.89s |
-| native | `native.output_gate` | native | ✅ pass | 1 | 0.08s |
-| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 1 | 0.59s |
-| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 1 | 0.34s |
-| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 1 | 0.89s |
-| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 1 | 0.13s |
+| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 2 | 0.05s |
+| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 2 | 0.0s |
+| integrity | `integrity.handover_claims` | independent | ✅ pass | 2 | 0.24s |
+| tests | `tests.suite` | regression | ✅ pass | 2 | 9.58s |
+| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 2 | 10.56s |
+| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 2 | 0.38s |
+| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 2 | 6.21s |
+| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 2 | 6.08s |
+| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 2 | 0.58s |
+| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 2 | 0.42s |
+| history | `history.native_24clock_fourier` | conditional | ✅ pass | 2 | 0.8s |
+| native | `native.wilson_source` | native | ✅ pass | 2 | 1.65s |
+| native | `native.output_gate` | native | ✅ pass | 2 | 0.12s |
+| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 2 | 0.51s |
+| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 2 | 0.37s |
+| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 2 | 0.89s |
+| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 2 | 0.11s |
 
 ## Archive sweep
 
