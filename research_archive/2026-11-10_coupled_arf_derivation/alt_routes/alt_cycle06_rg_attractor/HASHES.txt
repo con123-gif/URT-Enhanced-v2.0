@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=d628455df96978f0f5f61007d9752aa7a2d1fbd9d0d8cbcc423d8657bbfd23d2
+bytes=2058
+test_rg_attractor.py sha256=f21db547163dd6d801ce9e7e7fa3bacc13459e9bdeb0c3dddc232e1318388535
+bytes=4179

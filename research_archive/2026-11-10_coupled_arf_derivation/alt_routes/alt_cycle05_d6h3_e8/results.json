@@ -1,0 +1,71 @@
+{
+  "H1_inversion_cuts_8_to_4": {
+    "channels_with_a_4": {
+      "3x3'": 1,
+      "3x5": 1,
+      "3px5": 1,
+      "Sym2(5)": 1,
+      "Sym2(3)": 0,
+      "Sym2(3')": 0,
+      "3x3": 0
+    },
+    "channel_parity": {
+      "3x3'": "even",
+      "3x5": "odd",
+      "3px5": "odd",
+      "Sym2(5)": "even"
+    },
+    "odd_hidden_4_3_channels": [
+      "3x5",
+      "3px5"
+    ],
+    "even_hidden_4_5_channels": [
+      "3x3'",
+      "Sym2(5)"
+    ],
+    "yukawa_dim_without_inversion": 8,
+    "yukawa_dim_with_inversion": 4,
+    "H13_even_dim": 7,
+    "H13_odd_dim": 6
+  },
+  "H2_still_not_a_ray": {
+    "dimension": 4,
+    "is_a_ray": false,
+    "plus_hodge_kinetic_scale_still_free": true
+  },
+  "H3_six_diameters": {
+    "character": [
+      6,
+      2,
+      0,
+      1,
+      1
+    ],
+    "decomposition": {
+      "1": 1,
+      "3": 0,
+      "3'": 0,
+      "4": 0,
+      "5": 1
+    },
+    "contains_4": false,
+    "contains_3_or_3p": false,
+    "forbids_a_surviving_CG_channel": false
+  },
+  "H4_optional_galois_H4": {
+    "H3_inversion_swaps_3_and_3p": false,
+    "extra_assumption": "Galois / left-right H4 identification of 3 with 3'",
+    "yukawa_dim_after_identifying_odd_couplings": 3,
+    "is_a_ray": false
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "CONDITIONAL",
+    "H5": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Inversion is a real constraint and halves the H13 Weyl-Yukawa space from 8 to 4, but 4 > 1. D6-via-diameters does not cut further. Optional H4/Galois would only reach 3. A unique coupling is still missing."
+}
