@@ -1,0 +1,50 @@
+{
+  "H1_Cbridge_traces": {
+    "Tr_Cbridge": 160.0,
+    "Tr_Cbridge_squared": 799.9999999999995,
+    "psd": true
+  },
+  "H2_ico_vertex_block": {
+    "equals_4_P1_plus_4_P3": true,
+    "frobenius_error": 0.0,
+    "acts_on_3p_or_5": false
+  },
+  "H3_spatial_3_is_lower_eigenspace": {
+    "laplacian_eigenvalue": 2.76393202250021,
+    "other_3_eigenvalue": 7.23606797749979,
+    "joint_spectrum_predicted": [
+      [
+        4.0,
+        1
+      ],
+      [
+        6.76393202250021,
+        3
+      ],
+      [
+        6.0,
+        5
+      ],
+      [
+        7.23606797749979,
+        3
+      ]
+    ],
+    "joint_spectrum_matched": true,
+    "kinetics_of_3_and_3p_split": true
+  },
+  "H4_scales_and_yukawas": {
+    "overall_action_scale_free": true,
+    "yukawa_ratios_fixed": false,
+    "3_vs_3p_kinetic_split_forces_a_yukawa_to_vanish": false
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Cbridge distinguishes the spatial 3 from 3' in the kinetic (joint eigenvalues 9-\u221a5 \u2248 6.7639 versus 5+\u221a5 \u2248 7.2361) but does not fix the overall scale or any Yukawa ratio."
+}
