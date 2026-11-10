@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=d0b9f7bfe0a9abe4feb6977e63180d66f0987c9dc77641b5c7d65e9f9be65c03
+bytes=1987
+test_kms_os_polarity.py sha256=378ef92fc0ec24fc18a0e77a7b7408cd81e27e17751e89f35f65c76e5109e11c
+bytes=10059

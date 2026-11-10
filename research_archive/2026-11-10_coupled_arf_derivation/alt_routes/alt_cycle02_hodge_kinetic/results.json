@@ -1,0 +1,224 @@
+{
+  "five_solids": {
+    "tetrahedron": {
+      "V": 4,
+      "E": 6,
+      "b0": 1,
+      "spectrum_clusters": [
+        [
+          1.1102230246251565e-16,
+          1
+        ],
+        [
+          3.9999999999999996,
+          3
+        ]
+      ]
+    },
+    "cube": {
+      "V": 8,
+      "E": 12,
+      "b0": 1,
+      "spectrum_clusters": [
+        [
+          3.3306690738754696e-16,
+          1
+        ],
+        [
+          1.9999999999999998,
+          3
+        ],
+        [
+          3.9999999999999996,
+          3
+        ],
+        [
+          6.000000000000002,
+          1
+        ]
+      ]
+    },
+    "octahedron": {
+      "V": 6,
+      "E": 12,
+      "b0": 1,
+      "spectrum_clusters": [
+        [
+          -8.881784197001252e-16,
+          1
+        ],
+        [
+          4.0,
+          3
+        ],
+        [
+          6.0,
+          2
+        ]
+      ]
+    },
+    "icosahedron": {
+      "V": 12,
+      "E": 30,
+      "b0": 1,
+      "spectrum_clusters": [
+        [
+          2.476317761956892e-16,
+          1
+        ],
+        [
+          2.7639320225002106,
+          3
+        ],
+        [
+          6.000000000000002,
+          5
+        ],
+        [
+          7.236067977499791,
+          3
+        ]
+      ]
+    },
+    "dodecahedron": {
+      "V": 20,
+      "E": 30,
+      "b0": 1,
+      "spectrum_clusters": [
+        [
+          -1.3322676295501878e-15,
+          1
+        ],
+        [
+          0.7639320225002111,
+          3
+        ],
+        [
+          2.0000000000000004,
+          5
+        ],
+        [
+          3.0000000000000004,
+          4
+        ],
+        [
+          5.0,
+          4
+        ],
+        [
+          5.236067977499789,
+          3
+        ]
+      ]
+    }
+  },
+  "totals": {
+    "V": 50,
+    "E": 90,
+    "F_expected": 50
+  },
+  "icosahedron_faces_found": 20,
+  "H1_icosahedral_spectrum": {
+    "eigenvalues_with_multiplicities": [
+      [
+        0.0,
+        1
+      ],
+      [
+        2.76393202250021,
+        3
+      ],
+      [
+        6.0,
+        5
+      ],
+      [
+        7.23606797749979,
+        3
+      ]
+    ],
+    "isotypes": {
+      "1": 0.0,
+      "3_or_3p_low": 2.76393202250021,
+      "5": 6.0,
+      "3_or_3p_high": 7.23606797749979
+    },
+    "all_distinct": true,
+    "polynomials_in_Delta_span_End_A5_of_12": true,
+    "End_A5_dim_on_12": 4
+  },
+  "H2_lowest_order_Hodge_ray_on_H13": {
+    "singlet_2x2_eigenvalues": [
+      0.0,
+      13.0
+    ],
+    "isotype_eigenvalues": {
+      "1_global": 0.0,
+      "1_radial": 13.0,
+      "3": 3.76393202250021,
+      "3p": 8.23606797749979,
+      "5": 7.0
+    },
+    "all_distinct": true,
+    "selects_a_unique_ray_including_singlet_mixing": true,
+    "overall_scale_free": true,
+    "End_A5_Hermitian_dim_on_H13": 7,
+    "remaining_free_parameters_after_pure_Hodge": 1
+  },
+  "H3_mass_term_destroys_the_ray": {
+    "ratios_m2_eq_0": {
+      "3_over_5": 0.5377045746428871,
+      "3p_over_5": 1.1765811396428272,
+      "radial_over_5": 1.8571428571428572
+    },
+    "ratios_m2_eq_1": {
+      "3_over_5": 0.5954915028125263,
+      "3p_over_5": 1.1545084971874737,
+      "radial_over_5": 1.75
+    },
+    "ratios_depend_on_m2": true,
+    "family_dimension_if_mass_allowed": 2
+  },
+  "H4_five_solid_A5": {
+    "solids_with_native_A5": [
+      "icosahedron",
+      "dodecahedron"
+    ],
+    "solids_without_native_A5": [
+      "tetrahedron",
+      "cube",
+      "octahedron"
+    ],
+    "A5_forced_incidence_coupling_across_all_five": false,
+    "dodecahedron_splits_the_two_fours": {
+      "true": true,
+      "laplacian_eigenvalues_on_the_two_4s": [
+        3.0,
+        5.0
+      ],
+      "identification_with_4_3_and_4_5_is_extra": true
+    }
+  },
+  "H5_archived_G13": {
+    "spectrum_multiplicities": {
+      "0": 1,
+      "3": 2,
+      "5": 6,
+      "7": 2,
+      "9": 1,
+      "13": 1
+    },
+    "is_A5_equivariant": false,
+    "reason": "Surface is the 4-regular Z12 Cayley graph with generators {1,5,7,11}; A5-invariant graphs on 12 icosahedral vertices are regular of degree in {0,1,5,6,10,11}. Multiplicities {1,2,6,2,1,1} cannot arise from isotypes {1,1,3,3,5} without a leftover multiplicity 2 \u2260 3."
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED",
+    "H5": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Pure Hodge kinetic on geometric H13 does cut the 7-cone down to a single ray (scale still free). It does not touch the Yukawa space, and a mass term or higher-derivative p(\u0394) immediately restores freedom. Five-solid coupling is not A5-forced."
+}
