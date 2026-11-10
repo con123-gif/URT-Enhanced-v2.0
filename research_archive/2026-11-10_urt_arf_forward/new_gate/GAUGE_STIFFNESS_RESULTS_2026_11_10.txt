@@ -1,0 +1,9 @@
+Platonic (vertices,edges,faces): 50 90 50
+Hessian rank: 45 gauge+harmonic kernel: 45
+kappa(phi^-1): 0.61803398874989479
+kappa(phi^-2): 0.38196601125010515
+transverse stiffness ratio kappa1/kappa2: 1.6180339887498947
+unit-charge fixed; both local Wilson U(1) actions positive and gauge invariant
+both use one plaquette stencil per face = O(V+E+F) operations
+CONCLUSION: O(N), full Platonic geometry, URT seed, gauge invariance and a positive cap do NOT by themselves select electromagnetic stiffness
+PASS
