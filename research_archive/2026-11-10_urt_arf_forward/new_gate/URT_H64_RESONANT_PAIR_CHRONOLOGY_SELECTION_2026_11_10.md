@@ -15,6 +15,8 @@ Q[h,2h mod64] = Q[h,(2h+1) mod64] = 1/2.
 
 For a Walsh monomial of weight k, the Hbits eigenvalue is exactly `E(k)=2k(6-k)`. The unaveraged primitive Q is used, not an A5-averaged chronology.
 
+The previously identified decomposition `H64=H13⊕H51` is an **abstract A5-module decomposition**. It is not yet shown to be invariant under `Hbits` or the unaveraged `Q`. Therefore the energy-resolved counts apply to the full 64-carrier, not separately to physical H13 and H51 fermion blocks without a further intertwining theorem.
+
 The **Weyl-pair counting hypothesis** is explicitly conditional: regard all 64 signed histories as uniformly charge-+1 Weyl-flavor coordinates, so a Lorentz-scalar symmetric flavor pair has U1 charge +2 and can pair with a charge-−2 conjugate hidden source. This is *not* the actual established 16/48/96-state physical electromagnetic charge assignment. The previous exact A5 theorem found 138 quartet copies in `Sym²(H64)`, or 276 symmetry-permitted source-to-pair tensor structures for the two hidden quartets.
 
 ## 2. Independently verified exact A5/Hbits decomposition
