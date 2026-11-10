@@ -1,0 +1,178 @@
+{
+  "classification": "PROVED",
+  "surviving_dimension": 2,
+  "is_a_ray": false,
+  "unique_stable_fixed_point_selects_r": false,
+  "one_loop_EM_ARF_ran": false,
+  "C1_linear_carrier": {
+    "yukawas_appear_in_linear_T": false,
+    "hidden_source_Jacobian_at_zero": 0.0,
+    "T_depends_on_r": false,
+    "selects_r": false
+  },
+  "C2_unconstrained_gradient": {
+    "potential": "V = 1/2 (H3 + y_o^2 pi_o) rho3^2 + 1/2 (H5 + y_e^2 pi_e) rho5^2",
+    "unique_hidden_critical_point": "origin",
+    "hidden_origin_stable": true,
+    "r_at_origin": "flat (neutrally stable, any r)",
+    "selects_r": false,
+    "pi_o": 0.03686635944700456,
+    "pi_e": 0.026333113890717547,
+    "pi_o_std": 7.757919228897728e-18,
+    "pi_e_std": 1.0693553686590446e-17
+  },
+  "C3_hidden_sphere_conditional": {
+    "conditional_on": "forced nonzero hidden vev |h|=1, not implied by V_hist",
+    "mu3_sq_minus_mu5_sq_at_s": "H3-H5+pi_o - s(pi_o+pi_e)",
+    "s_crossing": 7.616197092376927,
+    "vev_on_4_5_for_all_r": true,
+    "vev_on_4_3_for_all_r": false,
+    "fixes_r": false,
+    "reason": "If the lighter hidden quartet is 4_5 for every s in [0,1], the constrained vacuum is always h3=0, h5\u22600, independently of r. A vanishing h3 does not set y_odd = 0. If a crossing exists, alignment depends on r but still does not select r."
+  },
+  "C4_C6_bubble_chain_and_extra_spectral_min": {
+    "status": "extra_not_derived",
+    "functional": "spectral radius of bubble-chain T on y_o^2 + y_e^2 = 1",
+    "s_star_ye_squared": 8.53905375793736e-06,
+    "r_star": 0.002922178412417537,
+    "r_star_squared": 8.539126673999075e-06,
+    "equals_sqrt_H5_over_H3_if_pi_o_equals_pi_e": true,
+    "sqrt_H5_over_H3": 0.0024696915183305035,
+    "r_star_over_sqrtH": 1.183215956619923,
+    "pi_o_over_pi_e": 1.3999999999999997,
+    "selects_r_as_derived": false
+  },
+  "C5_convergence_law": {
+    "Gamma": 0.04598968179431101,
+    "eta": 5.9957979867413025,
+    "k_E2_minus_E1": 0.007670318762574964,
+    "beta_equals_eta": true,
+    "law": "delta(t) = delta* + (delta(0)-delta*) e^{-Gamma t}",
+    "attracts_delta_to_input_delta_star": true,
+    "selects_r": false,
+    "analytic_decay_rate_rho3_min": 0.4444759966538212,
+    "analytic_decay_rate_rho5_min_at_late_times": 2.7110263135564066e-06,
+    "both_rates_strictly_positive": true,
+    "t_star_for_rho5_e_fold": 368863.99626574246,
+    "max_final_rho3_after_t20": 0.00043875225807669434,
+    "max_r_drift_over_t20": 0.9203287357491742,
+    "sample_final_ratios_distinct": true,
+    "n_sample_trajectories": 8,
+    "sample_r_finals": [
+      -0.5395796531210524,
+      0.024556894187189975,
+      -0.5967900517971161,
+      1.0607045315686543,
+      -0.5314686068044371,
+      -0.34179037299489445,
+      -0.9183860965118461,
+      -8.065146648593208
+    ],
+    "analytic_late_time_ratios": [
+      -1.5907342615440676e-75,
+      4.192016397414091e-75,
+      -0.5118155074173356,
+      1.0592647252021028,
+      -0.3741052694716486,
+      -0.22236452019608258,
+      -1.6575189693233012e-75,
+      -7.00792800834688
+    ],
+    "analytic_late_time_ratios_distinct": true
+  },
+  "R_z_poles": {
+    "uncoupled_T0_cycle05": {
+      "z1": 1.015457944705908,
+      "z2": 1.0632490584253973,
+      "depends_on_r": false
+    },
+    "pure_odd_yo1_ye0": {
+      "analytic_poles": [
+        3.4722343540197453,
+        -3.4722343540197453,
+        null,
+        null
+      ],
+      "T_eigenvalues": [
+        -0.28799899374370214,
+        0.0,
+        0.0,
+        0.2879989937437021
+      ],
+      "spectral_radius": 0.28799899374370214
+    },
+    "pure_even_yo0_ye1": {
+      "analytic_poles": [
+        null,
+        null,
+        0.01014648827217105,
+        -0.01014648827217105
+      ],
+      "T_eigenvalues": [
+        -98.55626628404207,
+        0.0,
+        0.0,
+        98.55626628404208
+      ],
+      "spectral_radius": 98.55626628404208
+    },
+    "democratic_yo1_ye1": {
+      "analytic_poles": [
+        3.4722343540197453,
+        -3.4722343540197453,
+        0.01014648827217105,
+        -0.01014648827217105
+      ],
+      "T_eigenvalues": [
+        -98.55626628404207,
+        -0.28799899374370214,
+        0.2879989937437021,
+        98.55626628404208
+      ],
+      "spectral_radius": 98.55626628404208
+    },
+    "extra_spectral_min": {
+      "analytic_poles": [
+        3.4722491789125924,
+        -3.4722491789125924,
+        3.472249178912593,
+        -3.472249178912593
+      ],
+      "T_eigenvalues": [
+        -0.28799776412163225,
+        -0.2879977641216322,
+        0.2879977641216322,
+        0.2879977641216322
+      ],
+      "spectral_radius": 0.28799776412163225
+    }
+  },
+  "pi_indices": {
+    "odd": {
+      "mean": 0.03686635944700456,
+      "std": 7.757919228897728e-18,
+      "per_generator": [
+        0.03686635944700456,
+        0.03686635944700455,
+        0.03686635944700456,
+        0.036866359447004546
+      ]
+    },
+    "even": {
+      "mean": 0.026333113890717547,
+      "std": 1.0693553686590446e-17,
+      "per_generator": [
+        0.026333113890717536,
+        0.02633311389071756,
+        0.026333113890717557,
+        0.02633311389071754
+      ]
+    }
+  },
+  "hidden_masses": {
+    "H3": 0.4444759966538212,
+    "H5": 2.7110263135564066e-06,
+    "Delta": 0.0024891898404204027
+  },
+  "statement": "The derived unconstrained flow of the one-loop quadratic V(h, y) has a unique stable hidden critical point at the origin, where r is a flat (neutrally stable) direction. Linear T on 4_3 \u2295 4_5 \u2295 H13 is independent of r (Yukawas are cubic; the hidden-source Jacobian at zero vanishes). The cycle-17 convergence law slaves \u03b4(t) to the input \u03b4* and does not select r: sample trajectories with the time-dependent H5(t) still collapse to h = 0 at distinct final ratios. Constraining |h| = 1 is extra; it places the vev on the lighter hidden quartet without fixing r. Minimising the bubble-chain spectral radius on the Yukawa sphere is extra and gives r_* = 0.00292218 (\u2248 \u221a(\u03c0_o/\u03c0_e) \u221a(H5/H3)), not a derivation. Uncoupled T0 poles remain z1, z2 of cycle 05, independent of r. No unique stable fixed point selects r."
+}
