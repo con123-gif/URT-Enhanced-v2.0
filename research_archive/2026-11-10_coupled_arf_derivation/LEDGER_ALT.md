@@ -338,3 +338,29 @@ Result: A raw 8×8 finite-difference Hessian at step 0.02 mixes the O(10^{-6}) 4
 Predeclaration sha256: `c64442acb624642fcd3ca34ef814be7659dd49f6a5fad10a7fe4b61c09ac3a5c`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 40–42)
+
+Date: 10 November 2026 (Europe/London). Repo read-only at `6bad7b3`. No commits or pushes.
+
+The only derived pairing on the Cathedral’s other solids is the polar-duality lift of the residual even/odd frames from the 30 icosahedral edges to the 30 dodecahedral edges. Abstract H51 (2·1 ⊕ 3·3 ⊕ 3·3' ⊕ 4·4 ⊕ 3·5) has no canonical embedding and is not used as a BCS carrier; tetra/cube/octa have Hodge kinetics but no A5 and no derived pairing; Cbridge and F do not produce a charge-2 bilinear. On the dodecahedron the even / 4_5 channel condenses (y_c = 0.005791, r_* = 9.852×10^5) with stabiliser D3, not A4; the odd channel does not (y_c = 2.345). Both pairings couple to the same hidden 4_5, so there is a single h. The joint nuclear-norm sum is maximised on the H13 A4 ray (sum 9.739 versus 9.425 at the dodeca D3 ray: icosahedral variation 0.553 outweighs the dodecahedral preference 0.239). Overlap of the two preferred rays is √6/4 ≈ 0.612372. The true joint stabiliser is A4. The 32-site spectrum at that vacuum is a tower of A4 multiplets (plus an unpaired near-zero on K0, lifted by Cbridge), not three nondegenerate charged singlets, so C_mass and R_mass were not compared. No Higgs kinetic, Nambu–Gor'kov Ward EM response, or y_even history normalisation was introduced, and the coupled line’s π-flux GI response and SYNTHESIS.md were not duplicated.
+
+## alt_cycle40 — derived pairing/condensation on H51
+Directory: `/workspace/arf_research/alt_cycle40_h51_condensation/`
+Classification: PROVED (H1–H3, with H3 reporting D3 rather than the expected A4). Advances ARF? No.
+Result: Duality lift of the residual frames onto the dodecahedron is the complete adjacent pairing (edge modules isomorphic). Even / 4_5 condenses at T = η, y = 1: χ = 0.040417, y_c = 0.005791, r_* = 9.85212×10^5, nuclear-norm maximum 5.337632, stabiliser D3 (order 6). Odd / 4_3 has y_c = 2.345 and does not condense. Cbridge as a kinetic control and T = 0 leave the same D3 even vacuum. Abstract H51 is not a condensate carrier; tetra/cube/octa have no derived pairing.
+Predeclaration sha256: `151029c0f4c22ffa3100a7138f7d6fd549816a2c32baf1d3363850dd453340c3`.
+
+## alt_cycle41 — joint H13 + H51 vacuum
+Directory: `/workspace/arf_research/alt_cycle41_joint_h13_h51/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: A single shared 4_5, no relative-orientation modulus. ĥ_ico has stab A4 and ĥ_d has stab D3; ĥ_joint coincides with ĥ_ico (overlap 1) and not with ĥ_d (overlap √6/4). Joint nuclear sums 9.739158 (A4) versus 9.424628 (D3). Combined stabiliser A4 on both pairing matrices. Even joint y_c = 0.004147, r_* = 1.797640×10^6 on K0 and on KC = K0 + Cbridge|_{32}; odd joint y_c = 1.670, no condensate. Cbridge does not change the ray or the stabiliser.
+Predeclaration sha256: `b7af64ab104d209945ef9a94ea52254aaa7527bd4f631a64310b640dc0a6163f`.
+
+## alt_cycle42 — joint spectrum and mass-ARF comparison
+Directory: `/workspace/arf_research/alt_cycle42_joint_singlets/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Joint stabiliser A4, so A4-triplets do not split and the comparison gate stays closed. K0 spectrum: unpaired ~0 × 1, then 3 × 4, 7.376×10^4 × 3, 1.907×10^5 × 1, 6.564×10^5 × 5, 7.302×10^5 × 3, 7.339×10^5 × 12, 8.471×10^5 × 1, 9.846×10^5 × 2. KC lifts the constant (lowest levels 3 × 1, 4 × 1, 5 × 3) and leaves the pairing tower unchanged; four numerical multiplicity-1 levels sit among leftover multiplets and are not a 1 ⊕ 1' ⊕ 1'' split. Not three nondegenerate charged singlets. C_mass and R_mass were not compared.
+Predeclaration sha256: `8e569988e670badfa454e3e64e8d05a5e595715d5fcce478ecf2e8a2d692d228`.
+
+No repository files were modified, committed, or pushed.

@@ -1,0 +1,263 @@
+{
+  "classification": "PROVED",
+  "classification_note": "Derived H51 pairing is the duality lift of the residual frames onto the dodecahedron. Even channel condenses=True with stabiliser D3; odd condenses=False. Abstract H51 is not a condensate carrier.",
+  "constants": {
+    "C3": 0.2222379207611084,
+    "C5": 0.21876978874206543,
+    "C_EVEN": 1.3555120633395222e-06,
+    "DELTA_HIDDEN": 0.0024891898404204027,
+    "ETA": 5.9957979867413025
+  },
+  "even_Cbridge_kinetic": {
+    "channel": "even_4_5_Cbridge_kinetic",
+    "chi": 0.04020797916837182,
+    "condenses_at_y1": 1,
+    "hat": [
+      0.512793926440734,
+      -0.1600067396096049,
+      -0.2706362160478528,
+      -0.7988718738623231
+    ],
+    "nuclear_norm_max": 5.337631667698036,
+    "nuclear_norm_max_sampled": 5.3343054885908465,
+    "nuclear_norm_min_sampled": 4.953251656623985,
+    "omega_star": -1313560.1677064463,
+    "r_pred_large_vev": 984430.8678721607,
+    "r_rel_to_pred": 0.0007938210684402337,
+    "r_star": 985212.3298355006,
+    "ray_stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "stiffness": 1.3555120633395222e-06,
+    "y_c": 0.005806247847577728
+  },
+  "even_Hodge": {
+    "channel": "even_4_5",
+    "chi": 0.04041723400405317,
+    "condenses_at_y1": 1,
+    "hat": [
+      0.512793926440734,
+      -0.1600067396096049,
+      -0.2706362160478528,
+      -0.7988718738623231
+    ],
+    "nuclear_norm_max": 5.337631667698036,
+    "nuclear_norm_max_sampled": 5.3343054885908465,
+    "nuclear_norm_min_sampled": 4.953251656623985,
+    "omega_star": -1313560.879173223,
+    "r_pred_large_vev": 984430.8678721607,
+    "r_rel_to_pred": 0.0007938210684402337,
+    "r_star": 985212.3298355006,
+    "ray_stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "stiffness": 1.3555120633395222e-06,
+    "y_c": 0.005791197805687258
+  },
+  "even_T0": {
+    "channel": "even_4_5_T0",
+    "chi": 0.19105991455603544,
+    "condenses_at_y1": 1,
+    "hat": [
+      0.512793926440734,
+      -0.1600067396096049,
+      -0.2706362160478528,
+      -0.7988718738623231
+    ],
+    "nuclear_norm_max": 5.337631667698036,
+    "nuclear_norm_max_sampled": 5.3343054885908465,
+    "nuclear_norm_min_sampled": 4.953251656623985,
+    "omega_star": -1313607.516119293,
+    "r_pred_large_vev": 984430.8678721607,
+    "r_rel_to_pred": 0.0007938210684402337,
+    "r_star": 985212.3298355006,
+    "ray_stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "stiffness": 1.3555120633395222e-06,
+    "y_c": 0.0026635871059543905
+  },
+  "hypotheses": {
+    "H1_abstract_H51_not_used": 1,
+    "H1_only_derived_pairing_is_duality_lift": 1,
+    "H1_tetra_cube_octa_no_pairing": 1,
+    "H2_even_condenses": 1,
+    "H2_odd_does_not": 1,
+    "H3_is_A4": 0,
+    "H3_stabilizer_name": "D3"
+  },
+  "inventory": {
+    "abstract_H51": {
+      "BCS_constructed": 0,
+      "Sym2_quartets": 90,
+      "canonical_embedding": 0,
+      "decomposition": "2*1 + 3*3 + 3*3' + 4*4 + 3*5"
+    },
+    "derived_not_pairing": [
+      "Cbridge vertex restriction 4 P1 + 4 P3 on the dodecahedron (kinetic control only)",
+      "F: Sym^2(3+5) -> 4_3+4_5 sources hidden fields from the H13 portal, not a dodeca bilinear"
+    ],
+    "derived_used": [
+      "Hodge Laplacian of the dodecahedron (20 vertices, 30 edges)",
+      "residual even/odd 4x30 frames of coupled cycles 10-11",
+      "polar duality ico-edge <-> dodeca-edge (A5-equivariant bijection)",
+      "V_hist at frozen c3, c5, Delta, T=eta"
+    ],
+    "not_derived_not_used": [
+      "canonical embedding of abstract H51 into H64",
+      "pairing on tetrahedron, cube, or octahedron",
+      "off-edge pairings in Sym^2 of the 20-vertex module",
+      "identification of dodeca Laplacian 4-eigenspaces (evals 3 and 5) with hidden 4_3, 4_5",
+      "Higgs kinetic or y_even normalisation"
+    ],
+    "spatial": {
+      "A5_covariant_complement": "dodecahedron",
+      "A5_permutes_dodeca": 60,
+      "A5_permutes_ico": 60,
+      "dodecahedron": 20,
+      "dual_degrees_all_3": 1,
+      "duality_n_edges": 30,
+      "five_solid_vertices": 50,
+      "icosahedron": 12,
+      "tetra_cube_octa": 18
+    }
+  },
+  "odd_Hodge": {
+    "channel": "odd_4_3",
+    "chi": 0.04042013301841507,
+    "condenses_at_y1": 0,
+    "hat": [
+      0.6219877935259841,
+      -0.5360479935281558,
+      0.1358457349156594,
+      -0.5543732223370287
+    ],
+    "nuclear_norm_max": 5.602456093933269,
+    "nuclear_norm_max_sampled": 5.594900857416111,
+    "nuclear_norm_min_sampled": 5.2468285037603355,
+    "r_star": 0.0,
+    "ray_stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "stabilizer": {
+      "class_counts": {
+        "0": 1,
+        "2": 2
+      },
+      "name": "C3",
+      "order": 3,
+      "order_counts": {
+        "1": 1,
+        "3": 2
+      }
+    },
+    "stiffness": 0.2222379207611084,
+    "y_c": 2.344823799173336
+  },
+  "other_solids": {
+    "cube": {
+      "Hodge_kinetic": 1,
+      "derived_pairing": 0,
+      "n_vertices": 8,
+      "native_A5": 0
+    },
+    "octahedron": {
+      "Hodge_kinetic": 1,
+      "derived_pairing": 0,
+      "n_vertices": 6,
+      "native_A5": 0
+    },
+    "tetrahedron": {
+      "Hodge_kinetic": 1,
+      "derived_pairing": 0,
+      "n_vertices": 4,
+      "native_A5": 0
+    }
+  }
+}
