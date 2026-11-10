@@ -194,6 +194,15 @@ gating = true
 run = "python research_archive/cathedral_arf_runner/full_64_ward_stress.py"
 timeout = 300
 
+[[check]]
+id = "research.sandbox_bound_scripts"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-10_sandbox_bound_scripts/classify_sandbox_bound_scripts.py"
+timeout = 60
+
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

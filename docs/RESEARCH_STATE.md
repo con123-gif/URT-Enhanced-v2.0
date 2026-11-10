@@ -124,7 +124,7 @@ Nothing in the archive selects this map. Gates B → C → D are this object; ga
 ## 7. Archive health (sweep, 2026-11-10)
 
 - 259 research scripts were executed (orchestrator run 42894969958): **235 pass**, **24 missing_file**, 0 assertion failures, 0 regressions.
-- **14 are bound to `/mnt/data`**, ChatGPT's sandbox paths (queue Q5).
+- **14 are bound to `/mnt/data`** (Q5, classified 2026-11-10 by Grok): 3 write-only (`urt_platonic_u2_holonomy.py`, `cathedral_golay_leech_selection_audit.py`, `cathedral_native_spatial_vacuum_audit_2026-11-09.py`) and become runnable if `/mnt/data` exists and is writable; 11 read hardcoded ChatGPT-sandbox inputs, so creating the directory does not unblock them. Proposed sweep line `Path("/mnt/data").mkdir(parents=True, exist_ok=True)` in `orchestrator.py` `sweep()`, not inserted: on this environment `/mnt` is root-owned and that mkdir raises `PermissionError`. Details: `research_archive/2026-11-10_sandbox_bound_scripts/`.
 - **10 scripts were unblocked on 2026-11-10** by byte-identical companion copies (`COMPANION_SOURCE_NOTE.md` in two folders), and all 10 now pass. The remaining missing-file scripts wait on uncommitted intermediates (queue Q6) or the missing `URT_Nature_Checkpoint_2026-08-25/full_library/`.
 - Live per-script status: `sweep.md` on `cathedral-research-state`.
 - The raw `microscopic_source_currents.py` needs `common_action_work/recovery/theory_input_v5.md`, which is absent; CI runs it through `run_native_source.py`.
