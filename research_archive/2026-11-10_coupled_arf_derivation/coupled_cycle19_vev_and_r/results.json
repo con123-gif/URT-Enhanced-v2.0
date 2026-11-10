@@ -1,0 +1,117 @@
+{
+  "classification": "PROVED",
+  "advances_physical_ARF": false,
+  "four_5_condensation": "PROVED",
+  "Q1_vev": {
+    "T_eta": {
+      "r_star": 854982.7851815503,
+      "omega_star": -992793.0190667964,
+      "omega_0": 0.0,
+      "r_analytic_nuc_over_4c": 855834.5504799715,
+      "relative_to_analytic": 0.0009952452818637154,
+      "nuclear_norm": 4.640379972803843,
+      "condenses": true
+    },
+    "T_0": {
+      "r_star": 854982.7851815503,
+      "omega_star": -992812.8939145643,
+      "omega_0": 1.4210854715202004e-14,
+      "r_analytic_nuc_over_4c": 855834.5504799715,
+      "relative_to_analytic": 0.0009952452818637154,
+      "nuclear_norm": 4.640379972803843,
+      "condenses": true
+    },
+    "vev_finite": true,
+    "matches_large_vev_balance": true,
+    "extra_hidden_quartic_from_full_F_portal": false,
+    "A4_direction_in_rank1_Sym2_5_cone": true,
+    "rank1_alignment": 0.9999999999999717,
+    "comment": "F is surjective Sym\u00b2 \u2192 4_3 \u2295 4_5 (cycle 03), so the unrestricted portal V_hist(h \u2212 F(S)) supplies no extra hidden quartic. The large vev is the balance r = (nuclear norm)/(4 c_even) between the tiny tree stiffness and a pairing energy that saturates linearly at large r."
+  },
+  "Q2_ratio": {
+    "T1_grad_h3": [
+      0.0,
+      -1.1641532182693481e-08,
+      0.0,
+      1.1641532182693481e-08
+    ],
+    "T1_grad_norm": 1.6463612699567982e-08,
+    "T1_hess_diag_h3": [
+      0.44446205720305443,
+      0.4444736987352371,
+      0.44447602704167366,
+      0.4444736987352371
+    ],
+    "T1_even_force_scale": 2.3178808282649275,
+    "T1_tadpole_vanishes": true,
+    "T1_reason": "inversion: even vacuum cannot source an odd tadpole",
+    "T2_rank1_alignment": 0.9999999999999717,
+    "T2_in_cone": true,
+    "T2_induces_h3_from_pure_5": false,
+    "T3_pairs": {
+      "ye1_yo0": {
+        "yo": 0.0,
+        "ye": 1.0,
+        "r_even": 860657.6304304774,
+        "omega": -992762.4704121526,
+        "omega_0": 0.0,
+        "even_on": true,
+        "expected_even_on": true
+      },
+      "ye1_yo1": {
+        "yo": 1.0,
+        "ye": 1.0,
+        "r_even": 860657.6304304774,
+        "omega": -992762.4704121526,
+        "omega_0": 0.0,
+        "even_on": true,
+        "expected_even_on": true
+      },
+      "ye1_yo0p1": {
+        "yo": 0.1,
+        "ye": 1.0,
+        "r_even": 860657.6304304774,
+        "omega": -992762.4704121526,
+        "omega_0": 0.0,
+        "even_on": true,
+        "expected_even_on": true
+      },
+      "ye0p1_yo1": {
+        "yo": 1.0,
+        "ye": 0.1,
+        "r_even": 85059.30346904045,
+        "omega": -9872.779157259172,
+        "omega_0": 0.0,
+        "even_on": true,
+        "expected_even_on": true
+      },
+      "ye0p001_yo1": {
+        "yo": 1.0,
+        "ye": 0.001,
+        "r_even": 2.8864138386853602e-06,
+        "omega": -1.4199561413426148e-14,
+        "omega_0": 0.0,
+        "even_on": false,
+        "expected_even_on": false
+      },
+      "ye0_yo1": {
+        "yo": 1.0,
+        "ye": 0.0,
+        "r_even": 0.0,
+        "r_odd": 0.0,
+        "omega": 0.0,
+        "even_on": false,
+        "odd_on": false
+      }
+    },
+    "T3_expected_pattern_holds": true,
+    "selects_unique_r": false,
+    "reason": "The even vev turns on whenever y_even > y_c,even, independently of y_odd as long as y_odd < y_c,odd. Inversion forbids an h3 tadpole, and Sym\u00b2(5) cannot source 4_3. No unique r is selected."
+  },
+  "selects_r": false,
+  "surviving_dimension": 2,
+  "is_a_ray": false,
+  "integrity": {
+    "predeclaration_sha256": "024d975bec5ce3ea58e39fe87675f0a2fa6018686d758f50343f5ab101995a80"
+  }
+}

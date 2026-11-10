@@ -234,3 +234,29 @@ Result: 108 root-parallel inter-solid pairs, in three lengths φ^{-2} (12), φ (
 Predeclaration sha256: `e2bbdd4c35e5debc07e721124f4f1c3b7dc9da25043063b3ccdd9584a40d693b`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 28–30)
+
+Date: 10 November 2026 (Europe/London). Repo read-only at `6bad7b3`. No commits or pushes.
+
+The 4_5 pairing condensate of alt_cycle25 is robust: the vev stays finite at T = η and T = 0 once V∘F and the second parity are included, V∘F adds no hidden quartic, and the number 8.61×10^5 is the tree/pairing balance in cycle-03 hidden-frame units, not a unit error. Cycle 13’s π_o, π_e stiffen the Dirac measure (origin stable); the pairing χ softens with the opposite sign and similar magnitude (~10^{-2}) and must not be added. The stabiliser remains A4; the induced h3 is 10^{-11} of ||h5||. The condensate is charge 2 and breaks geometric U(1) to ℤ2, but the BdG zero mode is an unpaired constant fermion rather than the Goldstone, and the fermion-induced London kernel is not a positive Meissner mass (no archived |DΔ|²), so the photon is not shown to be Higgsed and the IR problem of R_EM remains. No derived subleading effect (odd response, V∘F portal, ρ*, Hodge/Cbridge kinetics, or a labelling-independent clock phase) breaks A4 or splits the triplets into 1 ⊕ 1' ⊕ 1''. C_mass and R_mass were not compared.
+
+## alt_cycle28 — robustness of the 4_5 pairing condensate
+Directory: `/workspace/arf_research/alt_cycle28_condensation_robustness/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: r_* = 8.61261×10^5 at T = η and T = 0, for (y_e, y_o) = (1, 0) and (1, 1), matching (nuclear norm)/(4 c_even) to 0.6%. V∘F realises the A4 direction on the rank-1 cone (||α|| ≈ 1.516 for the unit hat, ≈ 1890 for the large vev) but supplies no extra hidden quartic. Cycle-13 π_e/2 = 0.013167 stiffens the Dirac combination ½(H5+π_e) = +0.013168; pairing χ_even = 0.038416 gives c_even − χ = −0.038414. They are alternative measures, not two terms; a counterfactual sum would shrink r_* to 88.1. Induced ||h3||/||h5|| ≈ 7.8×10^{-12}; stabiliser A4 is robust.
+Predeclaration sha256: `4a6b86143276595bc0ce26e85fcb2d2f31facf0d88a6f52f45a5dbdf30baa01e`.
+
+## alt_cycle29 — charge-2 pairing, geometric U(1), and the photon
+Directory: `/workspace/arf_research/alt_cycle29_charge2_higgs/`
+Classification: H1–H2 PROVED; H3 FALSIFIED; H4 PROVED. Advances ARF? No.
+Result: Pairing is charge 2 and breaks geometric U(1) to ℤ2. The BdG zero mode has K v0 = 0 and ||Δ v0|| ≈ 1.0×10^{-10} (unpaired constant fermion), not the Goldstone; a global phase of Δ leaves the spectrum invariant (max difference 4.7×10^{-10}). The fermion-induced London kernel on the 19-dimensional cycle space is not positive definite (at r = 20: T = η eigenvalues in [−0.00155, +0.00665]; T = 0 all negative, in [−0.0953, −0.0708]). Finite-A scans at the physical vev lower Ω. There is no archived |DΔ|², so the photon is not shown to acquire a Meissner mass. R_α was not compared.
+Predeclaration sha256: `6179cdd27ac0b876eb13df54c70028463828f9385207d49effe44501f789fca7`.
+
+## alt_cycle30 — residual A4 and three singlet masses
+Directory: `/workspace/arf_research/alt_cycle30_A4_splitting/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: Induced h3, the V∘F portal and ρ* all preserve A4 (||h3||/||h5|| ~ 10^{-11}). The 3 of A4 is irreducible, so A4-invariant operators cannot split it into 1 ⊕ 1' ⊕ 1''. There is no labelling-independent insertion of θ = 2π/φ² on the icosahedral 2-complex. Hodge Λ and K+C_ico lift the unpaired mode to 1 and 4 respectively but leave a pairing doublet; no spectrum consists of three nondegenerate singlets. C_mass and R_mass were not compared.
+Predeclaration sha256: `2bc28647cfcfa8e26cf9aacc74d7625d3db91f9feef6b202832c49b188fff9c5`.
+
+No repository files were modified, committed, or pushed.
