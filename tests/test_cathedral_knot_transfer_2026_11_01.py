@@ -56,6 +56,13 @@ def test_isotopy_stays_invertible():
 
 
 def test_24_transfer_determinant_and_amplitude():
-    assert isclose(DELTA**24, 3.20178727342021e-63, rel_tol=2e-13)
-    assert isclose(DELTA**48, 1.02514417442356e-125, rel_tol=3e-13)
+    # Reference values are exact (60-digit decimal arithmetic):
+    #   Delta^24 = 3.201787273419910e-63,  Delta^48 = 1.025144174423370e-125.
+    # (The earlier constants 3.20178727342021e-63 / 1.02514417442356e-125 came from one
+    # particular float evaluation and are wrong from the 12th significant digit.)
+    # Delta = 3/20 - 80*pi/(1053*phi) cancels ~1.8 digits: ~7 roundings in delta_star,
+    # magnified by delta_star/Delta ~ 59, bound the float Delta's relative error by
+    # ~5.3e-14, hence Delta^n by n*5.3e-14. The tolerances are that bound, not a fit.
+    assert isclose(DELTA**24, 3.201787273419910e-63, rel_tol=1.5e-12)
+    assert isclose(DELTA**48, 1.025144174423370e-125, rel_tol=3e-12)
     assert isclose((DELTA**24)**2, DELTA**48, rel_tol=1e-14)

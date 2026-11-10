@@ -43,8 +43,10 @@ def orbit(t):
  return u@H@u.conj().T
 fdj=(orbit(eps)-orbit(-eps))/(2*eps)
 fdw=(orbit(eps)+orbit(-eps)-2*H)/eps**2
-assert np.linalg.norm(fdj-J)<1e-4
-assert np.linalg.norm(fdw-W)<1e-4
+# Central differences carry truncation error ~eps^2*max|q_i-q_j|^2/12 = 8.3e-8 *relative*;
+# with charge gaps up to 10, ||W|| ~ 2.4e3, so an absolute 1e-4 bound was too tight (measured 1.5e-4).
+assert np.linalg.norm(fdj-J)<1e-6*np.linalg.norm(J)
+assert np.linalg.norm(fdw-W)<1e-6*np.linalg.norm(W)
 # Independent finite difference of the effective action, not only H.
 def effective(t):return schur(orbit(t))
 fd_s1=(effective(eps)-effective(-eps))/(2*eps)
