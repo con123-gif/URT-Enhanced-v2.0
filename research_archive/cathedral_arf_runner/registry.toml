@@ -236,6 +236,14 @@ gating = true
 run = "python -u research_archive/2026-11-10_signed_a5_covariance/signed_a5_covariance.py"
 timeout = 300
 
+[[check]]
+id = "research.signed_dictionary_classes"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-10_signed_dictionary_classes/signed_dictionary_classes.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

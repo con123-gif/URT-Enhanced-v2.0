@@ -21,11 +21,21 @@ commit as your result.
 - [x] Q10 [compute] (A) **Unsigned axis-order K₂ spectrum.** Using the exact six-bit source and A4 projectors, enumerate one representative of each of the 12 unsigned A5 axis-order classes; compute and count the distinct five-vacuum K₂ multisets without varying source coefficients. Record exact witnesses for any collisions. — GPT 2026-11-10: OBSTRUCTION (Exact unsigned A5 axis-order spectra and fixed-endpoint sign choice)
 
 - [x] Q11 [compute] (A) **Signed A5 covariance.** Construct the induced signed six-axis transformations from the 60 proper icosahedral rotations, transport the five A4 vacua simultaneously, and test exact invariance of the five K₂ multiset under all 60 transformations on the native source. Record exact counterexamples if covariance fails. — GPT 2026-11-10: THEOREM + OBSTRUCTION (Signed A5 covariance and fixed-Q obstruction)
-- [ ] Q12 [compute] (A) **Signed axis dictionary classes.** Enumerate the 768 signed six-axis dictionaries modulo proper A5; evaluate exact five-vacuum K₂ spectra for one representative per orbit and count collisions. Keep the original fixed Q and distinguish passive joint covariance from active Q symmetry.
+- [x] Q12 [compute] (A) **Signed axis dictionary classes.** Enumerate the 768 signed six-axis dictionaries modulo proper A5; evaluate exact five-vacuum K₂ spectra for one representative per orbit and count collisions. Keep the original fixed Q and distinguish passive joint covariance from active Q symmetry. — GPT 2026-11-10: OBSTRUCTION (Signed dictionary quotient and native K₂ collisions)
 - [ ] Q13 [repair] **Companion copies of existing intermediates.** For the three remaining missing_file scripts whose missing basename or near-name already exists in the archive — `golden_species_operators.npz` (three byte-identical copies), `run_endpoint_test.py` (at `research_archive/run_endpoint_test.py`, with other `full_library/` names at archive root) and `joint_original_h64_species_link_source.npz` (same directory as the consumer) — test whether a byte-identical companion copy at the path the consumer actually opens unblocks that script. Do not invent file contents.
 
+- [ ] Q14 [compute] (A) **Third cumulant collision test.** For signed dictionaries (0,2,4,6,8,10) and (0,2,5,6,9,11), calculate the five native A4 K₃ rates by the exact Q6 tilted-transfer/Poisson recursion and determine whether their multisets differ without fitted inputs.
 
 ## Log
+
+### 2026-11-10 22:22 UTC — GPT — Gate A — Signed dictionary quotient and native K₂ collisions
+- Task: Q12 [compute] — enumerate all signed six-axis dictionaries modulo proper A5, compute exact five-vacuum K₂ spectra, and test collisions with fixed Q.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native hidden-5 source and fixed de Bruijn Q).
+- Statement: 6!·2⁶=46,080 signed dictionaries form 768 free proper-A5 orbits; global inversion pairs them into 384 classes. Exact native K₂ gives 56 distinct five-vacuum spectra: 16 with multiplicity 8 and 40 with multiplicity 16 among the 768 A5 classes. Joint source/vacuum covariance makes K₂ an A5 orbit invariant even though active A5 does not commute with Q. Non-parity collision: (0,2,4,6,8,10) and (0,2,5,6,9,11), both yielding (5/6,25/24,67/48,33/16,33/16).
+- Evidence: research.signed_dictionary_classes; GPT container Python 3.13.5, SymPy 1.14.0, NetworkX 3.6.1, 2026-11-10 22:22 UTC, exit 0 (~3.6 s); Q11 original operator reconstructed locally and 25 independent direct-Q cross-checks; CI pending next orchestrator verdict.
+- Dead ends: proper A5 plus central inversion does not uniquely select the six-axis chronology dictionary; K₂ collisions survive both quotients. No physical ARF follows.
+- Next step: Q14 [compute] — evaluate exact native five-vacuum K₃ spectra for the displayed non-parity K₂-collision pair with the Q6 Poisson/tilted-transfer recursion; test whether K₃ separates them.
+
 
 ### 2026-11-10 22:17 UTC — Grok — Archive — Missing intermediate producer map
 - Task: Q6 [repair] — for each remaining non-`/mnt/data` `missing_file` script, find whether another archived script produces the missing file; record producer → consumer pairs and any sweep ordering that would help.
