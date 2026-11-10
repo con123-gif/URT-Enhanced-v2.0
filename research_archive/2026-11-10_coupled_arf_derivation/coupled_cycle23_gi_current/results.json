@@ -1,0 +1,240 @@
+{
+  "integrity": {
+    "predeclaration_sha256": "5cf25d9603ef57dd580f80eb8e4f2dd398ce8d5fde6f6a3ed18dd85d82bfdefb"
+  },
+  "eta": 5.9957979867413025,
+  "n_cycle": 19,
+  "rank_d0": 11,
+  "points": {
+    "r20_Teta": {
+      "r": 20.0,
+      "T": 5.9957979867413025,
+      "omega_0": 0.0,
+      "transverse_eigenvalues_minmax": [
+        -0.0015487751167347164,
+        0.00664814937153898
+      ],
+      "transverse_n_negative": 4,
+      "transverse_n_positive": 15,
+      "transverse_n_near_zero": 0,
+      "transverse_positive_definite": false,
+      "gauge_invariance_max_residual": 4.263256414560601e-14,
+      "WI_hessian_max_abs": 3.157967714489334e-09,
+      "WI_gradient_max_abs": 0.0,
+      "exact_A_frozen_vs_compensated": [
+        {
+          "frozen_Delta_exact_curvature": -0.027144178855249064,
+          "compensated": 0.0
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.02421005420829816,
+          "compensated": 3.157967714489334e-09
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.017360251705314213,
+          "compensated": 3.157967714489334e-09
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.014330639588580298,
+          "compensated": 3.157967714489334e-09
+        }
+      ],
+      "transverse_eigenvalues": [
+        -0.0015487751167347164,
+        -0.00154869101903841,
+        -0.0015486394860734077,
+        -0.0002702389245099546,
+        0.0002978596801310614,
+        0.0002980141360147935,
+        0.001695759252879025,
+        0.0016959334575514429,
+        0.0016961463997334475,
+        0.0019084932668208163,
+        0.001908575066795702,
+        0.0019088486336272836,
+        0.004876575058064517,
+        0.0048766140267974675,
+        0.004876796580977678,
+        0.006568145521556198,
+        0.0065682731025827,
+        0.006568416017375124,
+        0.00664814937153898
+      ]
+    },
+    "r20_T0": {
+      "r": 20.0,
+      "T": 0.0,
+      "omega_0": -0.0,
+      "transverse_eigenvalues_minmax": [
+        -0.0952646346520108,
+        -0.07075992669471744
+      ],
+      "transverse_n_negative": 19,
+      "transverse_n_positive": 0,
+      "transverse_n_near_zero": 0,
+      "transverse_positive_definite": false,
+      "gauge_invariance_max_residual": 3.552713678800501e-14,
+      "WI_hessian_max_abs": 7.894919286223335e-09,
+      "WI_gradient_max_abs": 0.0,
+      "exact_A_frozen_vs_compensated": [
+        {
+          "frozen_Delta_exact_curvature": -0.4009628090292002,
+          "compensated": 3.157967714489334e-09
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.3636078863185806,
+          "compensated": 1.578983857244667e-09
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.43335115328267826,
+          "compensated": 6.315935428978668e-09
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.5353069935962493,
+          "compensated": 1.578983857244667e-09
+        }
+      ],
+      "transverse_eigenvalues": [
+        -0.0952646346520108,
+        -0.08570666385511654,
+        -0.08570656614335773,
+        -0.0857062714437049,
+        -0.08527440678034333,
+        -0.08527432534981541,
+        -0.08527413475623359,
+        -0.08347255422742177,
+        -0.07789588315791435,
+        -0.07789583264010544,
+        -0.07789566810073466,
+        -0.07458239955722276,
+        -0.07458204274169966,
+        -0.07458188862472626,
+        -0.07280369226945423,
+        -0.07280355441921857,
+        -0.07280351881768246,
+        -0.07076006624362104,
+        -0.07075992669471744
+      ]
+    },
+    "r100_Teta": {
+      "r": 100.0,
+      "T": 5.9957979867413025,
+      "omega_0": 0.0,
+      "transverse_eigenvalues_minmax": [
+        -0.009008704516842905,
+        -0.00032960798242684023
+      ],
+      "transverse_n_negative": 19,
+      "transverse_n_positive": 0,
+      "transverse_n_near_zero": 0,
+      "transverse_positive_definite": false,
+      "gauge_invariance_max_residual": 8.526512829121202e-14,
+      "WI_hessian_max_abs": 3.789561257387201e-08,
+      "WI_gradient_max_abs": 0.0,
+      "exact_A_frozen_vs_compensated": [
+        {
+          "frozen_Delta_exact_curvature": -0.017811594767004457,
+          "compensated": -1.8947806286936004e-08
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.03372719624571295,
+          "compensated": 1.2631870857957336e-08
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.02034289536823053,
+          "compensated": -6.315935428978668e-09
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.029876970428530412,
+          "compensated": -6.315935428978668e-09
+        }
+      ],
+      "transverse_eigenvalues": [
+        -0.009008704516842905,
+        -0.0041887491146548,
+        -0.004188740572531128,
+        -0.004188710636761554,
+        -0.003906917366462312,
+        -0.003906894900939773,
+        -0.003906876633377282,
+        -0.0027534410259132153,
+        -0.001572083518798739,
+        -0.0015720776923549482,
+        -0.001572059771618089,
+        -0.001498286897029229,
+        -0.001498274976920815,
+        -0.0014982651587528099,
+        -0.0007842070844489964,
+        -0.0007841921383971162,
+        -0.00032968876771971134,
+        -0.00032964415420661864,
+        -0.00032960798242684023
+      ]
+    },
+    "r100_T0": {
+      "r": 100.0,
+      "T": 0.0,
+      "omega_0": -0.0,
+      "transverse_eigenvalues_minmax": [
+        -0.09243931234450142,
+        -0.08371022539076352
+      ],
+      "transverse_n_negative": 19,
+      "transverse_n_positive": 0,
+      "transverse_n_near_zero": 0,
+      "transverse_positive_definite": false,
+      "gauge_invariance_max_residual": 8.526512829121202e-14,
+      "WI_hessian_max_abs": 1.8947806286936004e-08,
+      "WI_gradient_max_abs": 0.0,
+      "exact_A_frozen_vs_compensated": [
+        {
+          "frozen_Delta_exact_curvature": -0.48970932514041327,
+          "compensated": -6.315935428978668e-09
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.41874509785581415,
+          "compensated": -1.8947806286936004e-08
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.5057009957454284,
+          "compensated": 0.0
+        },
+        {
+          "frozen_Delta_exact_curvature": -0.43790187318235335,
+          "compensated": -6.315935428978668e-09
+        }
+      ],
+      "transverse_eigenvalues": [
+        -0.09243931234450142,
+        -0.08759729849601543,
+        -0.087597296473836,
+        -0.08759728308140456,
+        -0.08733937123354506,
+        -0.08733934040635957,
+        -0.08733933374847096,
+        -0.08627137569412774,
+        -0.08491663717820133,
+        -0.08491660716017567,
+        -0.08491659569702129,
+        -0.084690708385818,
+        -0.08469069575220516,
+        -0.08469068756128692,
+        -0.08400344390830825,
+        -0.08400342597905748,
+        -0.08371029568774647,
+        -0.08371025410112064,
+        -0.08371022539076352
+      ]
+    }
+  },
+  "gauge_invariance_holds": true,
+  "longitudinal_WI_holds": true,
+  "transverse_sign_agrees_with_alt29": true,
+  "Meissner_positive_definite": false,
+  "reconciliation": "alt29 was not missing Nambu-Gor'kov vertices (they sit inside the BdG determinant) and was not missing the Goldstone in the transverse sector (unitary gauge). It was missing Goldstone compensation along exact A = d\u03bb, which is a gauge artefact. The non-positive transverse kernel is the genuine one-loop result of the archived action.",
+  "H3_Meissner_of_archived_oneloop": "FALSIFIED",
+  "classification": "PROVED",
+  "classification_note": "alt29 was not missing Nambu-Gor'kov vertices (they sit inside the BdG determinant) and was not missing the Goldstone in the transverse sector (unitary gauge). It was missing Goldstone compensation along exact A = d\u03bb, which is a gauge artefact. The non-positive transverse kernel is the genuine one-loop result of the archived action.",
+  "advances_physical_ARF": false,
+  "R_alpha_compared": false
+}
