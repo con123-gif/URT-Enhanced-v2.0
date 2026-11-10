@@ -1,0 +1,241 @@
+# Cathedral orchestrator registry — the only file to edit to change what runs.
+#
+# Every [[check]] runs in its stage's CI job, in the order listed. Commands are
+# split shell-style (no shell); a leading "python" means the job's interpreter;
+# "{out}" is the stage's results directory; cwd is relative to the repo root.
+#
+# claim (set HERE, never inferred from a script's output):
+#   regression   reproduces an archived computation: "the code still computes what it computed"
+#   independent  recomputes a stated result from scratch, importing nothing from the archive
+#   native       executes the archived native source operators (v61 Wilson, Q96 registry, H64 history)
+#   conditional  exact algebra on a declared conditional input (e.g. the A5 quartet spectrum)
+#   synthetic    generic algebra on synthetic/random matrices; says nothing about the Cathedral operator
+#
+# gating = true: a failure turns the run red (and GitHub emails you).
+# gating = false: reported in the summary only.
+#
+# A passing check NEVER closes a physical gate. See [[gate]] at the bottom.
+
+[run]
+python = "3.11"
+state_branch = "cathedral-research-state"
+
+[sweep]
+# Resumable execution sweep over every archived research script.
+# Priority each run: never executed > source changed since last run > oldest result.
+include = ["research_archive/**/*.py"]
+exclude = [
+  "research_archive/cathedral_arf_runner/**",          # the orchestrator itself
+  "research_archive/2026-10-28_cathedral_james_yangmills/**",  # third-party material: not executed here
+]
+per_script_timeout = 120     # seconds
+budget_minutes = 20          # per run; the cursor resumes next run
+
+[sweep.args]
+# Command-line arguments for scripts that need them ({out} = sweep results dir).
+"research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_runner.py" = ["--once", "--output", "{out}/arf_colab_sweep.jsonl"]
+
+# ------------------------------------------------------------------ integrity
+[[check]]
+id = "integrity.h64_snapshot_sha256"
+stage = "integrity"
+claim = "regression"
+gating = true
+run = "python research_archive/2026-10-17_recovery_assets/restore_matrices.py --verify"
+timeout = 120
+
+[[check]]
+id = "integrity.arf_forward_manifest"
+stage = "integrity"
+claim = "regression"
+gating = true
+run = "sha256sum --quiet --strict -c MANIFEST.sha256"
+cwd = "research_archive/2026-11-10_urt_arf_forward"
+timeout = 60
+
+[[check]]
+id = "integrity.handover_claims"
+stage = "integrity"
+claim = "independent"
+gating = true
+run = "python research_archive/cathedral_arf_runner/handover_claims.py --json {out}/handover_claims.json"
+outputs = ["{out}/handover_claims.json"]
+timeout = 120
+
+# ------------------------------------------------------------------ tests
+[[check]]
+id = "tests.suite"
+stage = "tests"
+claim = "regression"
+gating = true
+run = "python -m pytest -q -o addopts= -p no:cacheprovider -rfEs tests/"
+timeout = 1200
+
+# ------------------------------------------------------------------ geometry
+[[check]]
+id = "geometry.all_platonic_hidden_algebra"
+stage = "geometry"
+claim = "regression"
+gating = true
+run = "python -u newton-scale/all_platonic_incidence_and_algebra.py"
+timeout = 600
+
+[[check]]
+id = "geometry.hidden_isometry_24clock_Q6"
+stage = "geometry"
+claim = "regression"
+gating = true
+run = "python -u research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_runner.py --once --output {out}/arf_results.jsonl"
+outputs = ["{out}/arf_results.jsonl"]
+timeout = 300
+
+# ------------------------------------------------------------------ history (2026-11-10 new_gate)
+[[check]]
+id = "history.a4_third_cumulant_rate"
+stage = "history"
+claim = "regression"
+gating = true
+run = "python -u research_archive/2026-11-10_urt_arf_forward/new_gate/URT_EXACT_A4_THIRD_CUMULANT_RATE_2026_11_10.py"
+timeout = 900
+
+[[check]]
+id = "history.a5_symmetric_cubic_source"
+stage = "history"
+claim = "regression"
+gating = true
+run = "python -u research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_SYMMETRIC_CUBIC_SOURCE_2026_11_10.py"
+timeout = 900
+
+[[check]]
+id = "history.a5_chronology_dirichlet_gap"
+stage = "history"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_CHRONOLOGY_DIRICHLET_GAP_2026_11_10.py"
+timeout = 900
+
+[[check]]
+id = "history.source_schur_ward_contacts"
+stage = "history"
+claim = "regression"
+gating = true
+run = "python -u research_archive/2026-11-10_urt_arf_forward/new_gate/URT_SOURCE_SCHUR_WARD_CONTACTS_2026_11_10.py"
+timeout = 900
+
+[[check]]
+id = "history.native_24clock_fourier"
+stage = "history"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_SOURCE_24CLOCK_FOURIER_VERIFY_2026_11_10.py"
+timeout = 900
+
+# ------------------------------------------------------------------ native charged matter
+[[check]]
+id = "native.wilson_source"
+stage = "native"
+claim = "native"
+gating = true
+run = "python -u research_archive/cathedral_arf_runner/run_native_source.py"
+outputs = [
+  "research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_operators.npz",
+  "research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_checks.json",
+  "research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_shim_provenance.json",
+]
+collect = true               # copy outputs into the stage artifact
+timeout = 900
+
+[[check]]
+id = "native.output_gate"
+stage = "native"
+claim = "native"
+gating = true
+run = "python research_archive/cathedral_arf_runner/native_charged_source_gate.py"
+timeout = 120
+
+# ------------------------------------------------------------------ conditional / synthetic algebra
+[[check]]
+id = "conditional.source_moment_recurrence"
+stage = "conditional"
+claim = "conditional"
+gating = true
+run = "python research_archive/cathedral_arf_runner/symbolic_discovery.py --degree 32"
+timeout = 300
+
+[[check]]
+id = "conditional.observable_nonuniqueness"
+stage = "conditional"
+claim = "conditional"
+gating = true
+run = "python research_archive/cathedral_arf_runner/observable_map_search.py"
+timeout = 300
+
+[[check]]
+id = "conditional.charged_ward_2x2"
+stage = "conditional"
+claim = "synthetic"
+gating = true
+run = "python research_archive/cathedral_arf_runner/charged_matter_ward_search.py"
+timeout = 300
+
+[[check]]
+id = "conditional.ward_13_51_random_blocks"
+stage = "conditional"
+claim = "synthetic"
+gating = true
+run = "python research_archive/cathedral_arf_runner/full_64_ward_stress.py"
+timeout = 300
+
+# ------------------------------------------------------------------ research queue
+# The open mathematical gates (handover 2026-11-10, section 13), in dependency order.
+# status is "open" or "closed". A gate may be set to "closed" only together with
+# proof_check = "<check id>" naming a check with claim = "derivation" that passes
+# in the same run; otherwise the run fails (claim guard). Nothing else closes a gate.
+
+[[gate]]
+id = "A"
+title = "Primitive selection"
+status = "open"
+question = "Derive the source and physical action from the π–φ–e URT recurrence F(x)=2x+φ⁻² mod 1, retaining all five solids, the 64 histories and the 24-clock."
+evidence = ["geometry.hidden_isometry_24clock_Q6", "history.source_schur_ward_contacts", "integrity.handover_claims"]
+missing = "The A5 chronology coefficient and the source weights (4,2,2,0) are not derived from the recurrence; the 24-clock is not derived from the six-bit mixing."
+
+[[gate]]
+id = "B"
+title = "Charged operator"
+status = "open"
+question = "Establish the physical H13⊕H51 operator and its relation to the archived v61 Wilson operator and the 64-history transfer."
+evidence = ["native.wilson_source", "native.output_gate", "conditional.ward_13_51_random_blocks"]
+missing = "The 192×192 Wilson operator and the Q96 registry are not mapped to H64/H13⊕H51; the 13+51 Ward test uses random blocks, not that operator."
+
+[[gate]]
+id = "C"
+title = "Gauge selection"
+status = "open"
+question = "Derive the electromagnetic generator, gauge-field normalisation and physical photon projector from the full source."
+evidence = ["native.output_gate"]
+missing = "native.output_gate reports physical_photon_residue = unselected."
+
+[[gate]]
+id = "D"
+title = "Ward completion"
+status = "open"
+question = "First- and second-order gauge identities on the joined physical operator, including seagulls, source rotation, Schur relaxation and hidden-sector contacts."
+evidence = ["history.source_schur_ward_contacts", "native.wilson_source", "conditional.charged_ward_2x2"]
+missing = "Ward identities hold separately on the history sector and on the Wilson sea; not on a joined physical operator."
+
+[[gate]]
+id = "E"
+title = "Physical observables"
+status = "open"
+question = "Define physical pole residues, couplings and renormalisation prescriptions without fitted values."
+evidence = ["conditional.observable_nonuniqueness"]
+missing = "Six distinct admissible observables of the same source spectrum exist; the history spectrum alone selects none."
+
+[[gate]]
+id = "F"
+title = "Four ARFs"
+status = "open"
+question = "Recover the four historical ARFs from the observables of E, with uniqueness arguments and falsification tests."
+evidence = []
+missing = "Requires A–E."

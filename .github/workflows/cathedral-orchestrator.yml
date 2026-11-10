@@ -1,0 +1,194 @@
+name: Cathedral orchestrator
+
+# One workflow for all Cathedral verification. What runs is declared in
+# research_archive/cathedral_arf_runner/registry.toml; this file only wires jobs.
+#   plan       -> reads the registry, emits the stage list
+#   stage (xN) -> one independent job per stage; research code runs with a read-only token
+#   sweep      -> resumable execution sweep over every archived research script
+#   aggregate  -> merges results into the durable checkpoint on the state branch
+#                 (the only job with write access; it runs no research code)
+
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+    inputs:
+      sweep_minutes:
+        description: 'Archive sweep time budget (minutes)'
+        required: false
+        default: '20'
+  push:
+    branches: [newtons-cathedral]
+    paths:
+      - '.github/workflows/cathedral-orchestrator.yml'
+      - 'research_archive/**'
+      - 'cathedral_core/**'
+      - 'newtons_cathedral/**'
+      - 'newton-scale/**'
+      - 'tests/**'
+  pull_request:
+    branches: [newtons-cathedral]
+    paths:
+      - '.github/workflows/cathedral-orchestrator.yml'
+      - 'research_archive/**'
+      - 'cathedral_core/**'
+      - 'newtons_cathedral/**'
+      - 'newton-scale/**'
+      - 'tests/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cathedral-orchestrator
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: '3.11'
+  STATE_BRANCH: cathedral-research-state
+  RUNNER_DIR: research_archive/cathedral_arf_runner
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+  PYTHONHASHSEED: '0'
+  MPLBACKEND: Agg
+  PYTHONDONTWRITEBYTECODE: '1'
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      stages: ${{ steps.plan.outputs.stages }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - id: plan
+        run: echo "stages=$(python3 "$RUNNER_DIR/orchestrator.py" stages)" >> "$GITHUB_OUTPUT"
+
+  stage:
+    needs: plan
+    name: stage (${{ matrix.stage }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        stage: ${{ fromJSON(needs.plan.outputs.stages) }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: research_archive/cathedral_arf_runner/requirements.txt
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r "$RUNNER_DIR/requirements.txt"
+      - name: Restore split H64 matrix snapshot (sha256-checked)
+        run: python research_archive/2026-10-17_recovery_assets/restore_matrices.py
+      - name: Run stage ${{ matrix.stage }}
+        run: python -u "$RUNNER_DIR/orchestrator.py" run-stage "${{ matrix.stage }}" --out "results/${{ matrix.stage }}"
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: stage-${{ matrix.stage }}
+          path: results/
+          retention-days: 14
+          if-no-files-found: warn
+
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: research_archive/cathedral_arf_runner/requirements.txt
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r "$RUNNER_DIR/requirements.txt"
+      - name: Restore split H64 matrix snapshot (sha256-checked)
+        run: python research_archive/2026-10-17_recovery_assets/restore_matrices.py
+      - name: Read previous checkpoint (read-only)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $auth" clone -q --depth 1 --single-branch \
+            --branch "$STATE_BRANCH" "https://github.com/$GITHUB_REPOSITORY.git" .state \
+            || { echo "no checkpoint yet: starting fresh"; mkdir -p .state; }
+      - name: Resumable archive sweep
+        run: |
+          python -u "$RUNNER_DIR/orchestrator.py" sweep --state .state/state.json --out results/sweep \
+            --budget-minutes "${{ github.event.inputs.sweep_minutes || '20' }}"
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: sweep
+          path: results/
+          retention-days: 14
+          if-no-files-found: warn
+
+  aggregate:
+    needs: [plan, stage, sweep]
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v7
+        continue-on-error: true      # missing stage artifacts are reported as no_result, not hidden
+        with:
+          path: results
+      - name: Check out durable checkpoint branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          if ! git -c "http.extraheader=AUTHORIZATION: basic $auth" clone -q --depth 1 --single-branch \
+               --branch "$STATE_BRANCH" "https://github.com/$GITHUB_REPOSITORY.git" .state; then
+            echo "creating orphan branch $STATE_BRANCH"
+            git init -q -b "$STATE_BRANCH" .state
+          fi
+      - name: Merge results, apply claim guard, write checkpoint
+        id: agg
+        env:
+          ORCH_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set +e
+          python3 "$RUNNER_DIR/orchestrator.py" aggregate --results results --state-dir .state \
+            --summary "$GITHUB_STEP_SUMMARY"
+          echo "rc=$?" >> "$GITHUB_OUTPUT"
+      - name: Persist checkpoint to ${{ env.STATE_BRANCH }}
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd .state
+          git config user.name "cathedral-orchestrator[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && { echo "checkpoint unchanged"; exit 0; }
+          git commit -q -m "Checkpoint: run ${GITHUB_RUN_ID} (${GITHUB_EVENT_NAME}, ${GITHUB_SHA::7})"
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          for i in 1 2 3; do
+            git -c "http.extraheader=AUTHORIZATION: basic $auth" push -q \
+              "https://github.com/$GITHUB_REPOSITORY.git" "HEAD:refs/heads/$STATE_BRANCH" && exit 0
+            sleep $((i * 10))
+          done
+          echo "::error::could not push checkpoint"; exit 1
+      - name: Verdict
+        if: steps.agg.outputs.rc != '0'
+        run: |
+          echo "::error::gating check failure or claim-guard violation; see the run summary"
+          exit 1
