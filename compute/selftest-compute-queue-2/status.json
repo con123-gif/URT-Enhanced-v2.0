@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 0.45,
+  "tail": "{\"utc\": \"2026-11-10T20:24:23.079705+00:00\", \"delta\": 0.0024891898404204027, \"hidden_isometry_error\": 1.7959039869012194e-15, \"hidden_ranks\": [4, 4, 8], \"clock_spectrum_error\": 2.220446049250313e-15, \"clock_inverse_errors\": {\"3\": 9.495661566942597e-16, \"5\": 1.0605189740380604e-15}, \"clock_correlation_lengths\": {\"3\": 0.3656186482306215, \"5\": 0.37988487806921384}, \"history_ranks\": [64, 32, 16, 8, 4, 2, 1], \"six_step_mixing_error\": 0.0, \"physical_four_ARFs_derived\": false}\n",
+  "id": "selftest-compute-queue-2",
+  "question": "Self-test 2/2: did the first job's run dispatch this one by itself?",
+  "requested_by": "Claude",
+  "claim": "regression",
+  "run": "python research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_runner.py --once --output {out}/arf_results.jsonl",
+  "utc": "2026-11-10T20:24:23Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "4601e56e675e5da3c898a2b69cdbf40b4a54a2da",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42894829407",
+  "outputs_committed": [
+    {
+      "path": "arf_results.jsonl",
+      "bytes": 474,
+      "sha256": "45588aa1ab2386db4b72627ac5a19ad8f9e0f532a17670b47e2a819c6c183de6"
+    }
+  ],
+  "outputs_artifact_only": []
+}
