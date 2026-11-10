@@ -1,0 +1,171 @@
+{
+  "integrity": {
+    "predeclaration_sha256": "8473707748d400bfe29e68fcf78b4a943f081f64abe36473c0cbea9499f9aede"
+  },
+  "Q_geo_of_Delta": 2,
+  "geometric_photon_has_zero_mode": false,
+  "pi_flux_lambda_min": 0.08332422454382332,
+  "pi_flux_identity_like": true,
+  "Hbits": {
+    "spectrum_rounded": [
+      0,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "n_kernel": 2,
+    "UhP5_rank": 4,
+    "UhP3_rank": 4,
+    "overlap_4_5_with_ker": 1.0628131548397342e-16,
+    "overlap_4_3_with_ker": 2.2333295747733724e-16,
+    "principal_angles_4_5_ker_deg": [
+      90.0,
+      90.0
+    ]
+  },
+  "clock": {
+    "n_sites": 24,
+    "wilson_charge_geometry": 1,
+    "wilson_charge_history": 2,
+    "golden_mode_charge1": 9,
+    "golden_mode_charge2": 18,
+    "phase_under_one_tick_m18": {
+      "re": -1.8369701987210297e-16,
+      "im": -1.0,
+      "closed_form": "exp(2*pi*i*18/24) = exp(3*pi*i/2) = -i"
+    },
+    "phase_under_one_tick_m9": {
+      "re": -0.7071067811865475,
+      "im": 0.7071067811865476,
+      "closed_form": "exp(2*pi*i*9/24) = exp(3*pi*i/4)"
+    },
+    "has_derived_gauge_field_on_30_edges": false,
+    "reason_not_gauged": "alt_cycle34: H64 and the 24-clock have no derived charged current onto the 30 icosahedral edges; no clock gauge field is invented here."
+  },
+  "Frobenius_Schur_4": 1.0,
+  "End_A5_4_is_reals": true,
+  "candidates": [
+    {
+      "name": "clock_Wilson_on_pairing_as_psipsi",
+      "Q_other_of_Delta": 2,
+      "c_if_used": -1.0,
+      "independent_of_Q_geo_on_geometry": false,
+      "note": "If the clock acts on geometric fermions with Wilson charge 1, that action coincides with global Q_geo on the 12 vertices, and \u03c8\u03c8 then has clock charge 2, equal to Q_geo(\u0394). The formal c = -1 makes Q_geo - Q_clock vanish on all geometric fields (\u03c8, \u0394, A) and equal \u22122 on history. That is not a second gauge U(1) mixed with A; it is the statement that clock-on-geometry is global Q_geo.",
+      "independently_gauged": false,
+      "produces_massless_gauge_photon": false
+    },
+    {
+      "name": "clock_Fourier_m18_on_hidden_golden_mode",
+      "Q_other_of_hidden": 18,
+      "c_if_hidden_were_the_condensate": -0.1111111111111111,
+      "independent_of_Q_geo": true,
+      "note": "A clock tick multiplies the m=18 mode by \u2212i (Z_24 charge 18). The condensed-phase \u0394 of cycles 18\u201326 carries no clock index, so this charge is not a charge of the spatial 4_5 pairing used to Higgs A. Even if it were, Z_24 is discrete and is not gauged on the 30 edges.",
+      "independently_gauged": false,
+      "produces_massless_gauge_photon": false
+    },
+    {
+      "name": "Hbits_kernel_SO2",
+      "Q_other_of_4_5": 0,
+      "overlap_with_ker": 1.0628131548397342e-16,
+      "principal_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "c_if_used": null,
+      "independently_gauged": false,
+      "produces_massless_gauge_photon": false,
+      "note": "4_5 = Uh P5 lives at Hbits = 16 and is orthogonal to ker Hbits."
+    },
+    {
+      "name": "A5_commutant_of_the_4",
+      "Q_other_of_4_5": 0,
+      "Frobenius_Schur_of_4": 1.0,
+      "End_A5_4_is_reals": true,
+      "c_if_used": null,
+      "independently_gauged": false,
+      "produces_massless_gauge_photon": false,
+      "note": "Real irrep: no A5-invariant U(1) that can charge 4_5."
+    }
+  ],
+  "discrete_remnant": {
+    "unbroken_Z2": true,
+    "action_on_fermions": "psi -> -psi when alpha = pi",
+    "action_on_Delta": "identity (exp(i*2*pi) = 1)",
+    "is_a_U1": false,
+    "has_gauge_field": false
+  },
+  "c_fixed_as_gauge_mixing_angle": false,
+  "c_value": null,
+  "unbroken_gauged_combination_exists": false,
+  "GI_response_of_combination_computed": false,
+  "reason_GI_not_computed": "No independently gauged Q_other (criterion C2); a mixed kernel would invent a second gauge field.",
+  "hypotheses": {
+    "H1_geo_Higgsed_to_Z2": true,
+    "H2_no_gauged_mixing": true,
+    "H3_no_history_or_A5_U1_on_4_5": true
+  },
+  "classification": "PROVED",
+  "classification_note": "The geometric U(1) is Higgsed to Z2 (Q_geo(\u0394)=2, \u03a0_T has no zero mode). No second derived, independently gauged U(1) charges the 4_5 condensate, so there is no electroweak-like mixing angle and no massless Maxwell photon from a combination. The Hbits-kernel SO(2) does not act on 4_5; End_A5(4) \u2245 \u211d.",
+  "advances_physical_ARF": false,
+  "R_alpha_compared": false
+}
