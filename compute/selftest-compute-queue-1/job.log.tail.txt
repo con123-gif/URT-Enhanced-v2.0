@@ -1,0 +1,32 @@
+PASS     §3   3.delta_star_identity          stated=80/1053                  computed=80/1053
+PASS     §3   3.delta_star                   stated=0.14751081015958         computed=0.14751081015957961
+PASS     §3   3.Delta                        stated=0.002489189840420        computed=0.002489189840420393
+PASS     §3   3.eta_Delta                    stated=5.9957979867             computed=5.9957979867413
+ERRATUM  §3   3.p5                           stated=6.19613e-6               computed=6.1960276707e-6   [repository files (docs/, research_archive/) all record 6.196027670655e-6; the handover value is a transcription error]
+PASS     §3   3.chi35                        stated=47.96697830              computed=47.96697830338
+PASS     §3   3.rho_trace                    stated=1                        computed=1.0
+PASS     §3   3.kms_form                     stated=6.196066061652e-06       computed=6.196066061652e-06
+PASS     §3   3.chi35_is_BKM                 stated=47.96697830              computed=47.96697830   [finite-difference Fréchet derivative of log ρ⋆, ε=1e-10]
+PASS     §4   4.sum_VEF                      stated=(50, 90, 50)             computed=(50, 90, 50)
+PASS     §4   4.cochain_dim                  stated=190                      computed=190
+PASS     §4   4.tr_D2_8E                     stated=720                      computed=720.0
+PASS     §4   4.tr_D4                        stated=3456                     computed=3456.0
+PASS     §4   4.ico_laplacian                stated=[1, 3, 5, 3]             computed=[1, 3, 5, 3]
+PASS     §4   4.cell13_laplacian             stated=[1, 3, 5, 3, 1]          computed=[1, 3, 5, 3, 1]
+PASS     §4   4.face_vertex_rank             stated=12                       computed=12
+PASS     §4   4.hidden_kernel                stated=8 = [4, 4]               computed=8 = [4, 4]
+PASS     §5   5.Q6_J64                       stated=J/64                     computed=J/64
+PASS     §5   5.translation_conjugacy        stated=0                        computed=2.2e-16
+PASS     §6   6.H64_spectrum                 stated=[2, 12, 30, 20]          computed=[2, 12, 30, 20]
+PASS     §6   6.Uh_isometry                  stated=0                        computed=1.2e-14
+PASS     §6   6.intertwining_P3              stated=0                        computed=1.1e-14
+PASS     §6   6.intertwining_P5              stated=0                        computed=1.1e-14
+PASS     §7   7.resolvent_closed_form        stated=identity                 computed=identity at 11 rational points
+PASS     §7   7.moments                      stated=8, 2234/15, 500201/180   computed=8, 2234/15, 500201/180
+PASS     §7   7.dark_pole                    stated=0                        computed=0
+PASS     §9   9.alpha_inverse_polynomial     stated=137.035999178            computed=137.035999178195   [value of the stated polynomial only; the linear coefficient is not derived]
+PASS     §10  10.N_star                      stated=161393                   computed=161393.7273   [exact 161393.73; the handover truncates rather than rounds]
+PASS     §10  10.N_star_equal_split          stated=0.5                      computed=0.500000000000000
+
+28/29 handover claims reproduced; documented errata: ['3.p5']
+Scope: arithmetic and finite geometry as stated. Physical interpretation is not tested here.

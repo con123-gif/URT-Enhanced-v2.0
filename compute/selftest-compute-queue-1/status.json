@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 0.19,
+  "tail": "PASS     \u00a73   3.delta_star_identity          stated=80/1053                  computed=80/1053\nPASS     \u00a73   3.delta_star                   stated=0.14751081015958         computed=0.14751081015957961\nPASS     \u00a73   3.Delta                        stated=0.002489189840420        computed=0.002489189840420393\nPASS     \u00a73   3.eta_Delta                    stated=5.9957979867             computed=5.9957979867413\nERRATUM  \u00a73   3.p5                           stated=6.19613e-6               computed=6.1960276707e-6   [repository files (docs/, research_archive/) all record 6.196027670655e-6; the handover value is a transcription error]\nPASS     \u00a73   3.chi35                        stated=47.96697830              computed=47.96697830338\nPASS     \u00a73   3.rho_trace                    stated=1                        computed=1.0\nPASS     \u00a73   3.kms_form                     stated=6.196066061652e-06       computed=6.196066061652e-06\nPASS     \u00a73   3.chi35_is_BKM                 stated=47.96697830              computed=47.96697830   [finite-difference Fr\u00e9chet derivative of log \u03c1\u22c6, \u03b5=1e-10]\nPASS     \u00a74   4.sum_VEF                      stated=(50, 90, 50)             computed=(50, 90, 50)\nPASS     \u00a74   4.cochain_dim                  stated=190                      computed=190\nPASS     \u00a74   4.tr_D2_8E                     stated=720                      computed=720.0\nPASS     \u00a74   4.tr_D4                        stated=3456                     computed=3456.0\nPASS     \u00a74   4.ico_laplacian                stated=[1, 3, 5, 3]             computed=[1, 3, 5, 3]\nPASS     \u00a74   4.cell13_laplacian             stated=[1, 3, 5, 3, 1]          computed=[1, 3, 5, 3, 1]\nPASS     \u00a74   4.face_vertex_rank             stated=12                       computed=12\nPASS     \u00a74   4.hidden_kernel                stated=8 = [4, 4]               computed=8 = [4, 4]\nPASS     \u00a75   5.Q6_J64                       stated=J/64                     computed=J/64\nPASS     \u00a75   5.translation_conjugacy        stated=0                        computed=2.2e-16\nPASS     \u00a76   6.H64_spectrum                 stated=[2, 12, 30, 20]          computed=[2, 12, 30, 20]\nPASS     \u00a76   6.Uh_isometry                  stated=0                        computed=1.2e-14\nPASS     \u00a76   6.intertwining_P3              stated=0                        computed=1.1e-14\nPASS     \u00a76   6.intertwining_P5              stated=0                        computed=1.1e-14\nPASS     \u00a77   7.resolvent_closed_form        stated=identity                 computed=identity at 11 rational points\nPASS     \u00a77   7.moments                      stated=8, 2234/15, 500201/180   computed=8, 2234/15, 500201/180\nPASS     \u00a77   7.dark_pole                    stated=0                        computed=0\nPASS     \u00a79   9.alpha_inverse_polynomial     stated=137.035999178            computed=137.035999178195   [value of the stated polynomial only; the linear coefficient is not derived]\nPASS     \u00a710  10.N_star                      stated=161393                   computed=161393.7273   [exact 161393.73; the handover truncates rather than rounds]\nPASS     \u00a710  10.N_star_equal_split          stated=0.5                      computed=0.500000000000000\n\n28/29 handover claims reproduced; documented errata: ['3.p5']\nScope: arithmetic and finite geometry as stated. Physical interpretation is not tested here.\n",
+  "id": "selftest-compute-queue-1",
+  "question": "Self-test 1/2: does the compute queue run a job and record it on the state branch?",
+  "requested_by": "Claude",
+  "claim": "independent",
+  "run": "python research_archive/cathedral_arf_runner/handover_claims.py --json {out}/handover_claims.json",
+  "utc": "2026-11-10T20:23:19Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "16696154b3d20bfa00abcd42a8f3e0d98e26e3f5",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42894695592",
+  "outputs_committed": [
+    {
+      "path": "handover_claims.json",
+      "bytes": 7522,
+      "sha256": "6597814ad3c293893395879f8a2634678e8cbaac33e3d811a8af6304d5a19471"
+    }
+  ],
+  "outputs_artifact_only": []
+}

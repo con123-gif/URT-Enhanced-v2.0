@@ -1,0 +1,270 @@
+{
+  "claims": [
+    {
+      "id": "3.delta_star_identity",
+      "section": "3",
+      "statement": "\u03b4\u22c6=(1-\u03b3)\u03c0/(N\u03c6)=80\u03c0/(1053\u03c6)",
+      "stated": "80/1053",
+      "computed": "80/1053",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "3.delta_star",
+      "section": "3",
+      "statement": "\u03b4\u22c6\u22480.14751081015958",
+      "stated": "0.14751081015958",
+      "computed": "0.14751081015957961",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "3.Delta",
+      "section": "3",
+      "statement": "\u0394=3/20-\u03b4\u22c6\u22480.002489189840420",
+      "stated": "0.002489189840420",
+      "computed": "0.002489189840420393",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "3.eta_Delta",
+      "section": "3",
+      "statement": "\u03b7_\u0394=-ln\u0394\u22485.9957979867",
+      "stated": "5.9957979867",
+      "computed": "5.9957979867413",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "3.p5",
+      "section": "3",
+      "statement": "p5=\u0394\u00b2/(1+\u0394\u00b2)\u22486.19613e-6",
+      "stated": "6.19613e-6",
+      "computed": "6.1960276707e-6",
+      "verdict": "ERRATUM",
+      "note": "repository files (docs/, research_archive/) all record 6.196027670655e-6; the handover value is a transcription error"
+    },
+    {
+      "id": "3.chi35",
+      "section": "3",
+      "statement": "\u03c735=8\u03b7(1+\u0394\u00b2)/(1-\u0394\u00b2)\u224847.96697830",
+      "stated": "47.96697830",
+      "computed": "47.96697830338",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "3.rho_trace",
+      "section": "3",
+      "statement": "Tr \u03c1\u22c6 = 1",
+      "stated": "1",
+      "computed": "1.0",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "3.kms_form",
+      "section": "3",
+      "statement": "\u03c1\u22c6 \u221d exp(-\u03b2 P5), \u03b2=2\u03b7_\u0394 \u21d2 weight ratio e^{-\u03b2}=\u0394\u00b2",
+      "stated": "6.196066061652e-06",
+      "computed": "6.196066061652e-06",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "3.chi35_is_BKM",
+      "section": "3",
+      "statement": "\u03c735 equals the BKM metric \u27e8X,X\u27e9 for a unit visible\u2194hidden probe",
+      "stated": "47.96697830",
+      "computed": "47.96697830",
+      "verdict": "PASS",
+      "note": "finite-difference Fr\u00e9chet derivative of log \u03c1\u22c6, \u03b5=1e-10"
+    },
+    {
+      "id": "4.sum_VEF",
+      "section": "4",
+      "statement": "\u03a3V=50, \u03a3E=90, \u03a3F=50",
+      "stated": "(50, 90, 50)",
+      "computed": "(50, 90, 50)",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "4.cochain_dim",
+      "section": "4",
+      "statement": "complete cochain dimension 190",
+      "stated": "190",
+      "computed": "190",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "4.tr_D2_8E",
+      "section": "4",
+      "statement": "Tr D_P\u00b2 = 8E for each solid; aggregate 720",
+      "stated": "720",
+      "computed": "720.0",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "4.tr_D4",
+      "section": "4",
+      "statement": "aggregate fourth moment \u03a3 Tr D_P\u2074 = 3456",
+      "stated": "3456",
+      "computed": "3456.0",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "4.ico_laplacian",
+      "section": "4",
+      "statement": "icosahedral Laplacian 0(1),(5-\u221a5)(3),6(5),(5+\u221a5)(3)",
+      "stated": "[1, 3, 5, 3]",
+      "computed": "[1, 3, 5, 3]",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "4.cell13_laplacian",
+      "section": "4",
+      "statement": "centred 13-cell 0(1),(6-\u221a5)(3),7(5),(6+\u221a5)(3),13(1)",
+      "stated": "[1, 3, 5, 3, 1]",
+      "computed": "[1, 3, 5, 3, 1]",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "4.face_vertex_rank",
+      "section": "4",
+      "statement": "20\u00d712 face\u2013vertex incidence has rank 12",
+      "stated": "12",
+      "computed": "12",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "4.hidden_kernel",
+      "section": "4",
+      "statement": "ker C\u1d40 is 8-dim = 4 (eigenvalue 3) \u2295 4 (eigenvalue 5)",
+      "stated": "8 = [4, 4]",
+      "computed": "8 = [4, 4]",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "5.Q6_J64",
+      "section": "5",
+      "statement": "Q\u2076 = J/64 exactly (64-history doubling transfer)",
+      "stated": "J/64",
+      "computed": "J/64",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "5.translation_conjugacy",
+      "section": "5",
+      "statement": "y=x+a conjugates F_a to y\u21a62y mod 1",
+      "stated": "0",
+      "computed": "2.2e-16",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "6.H64_spectrum",
+      "section": "6",
+      "statement": "H64 spectrum 0(2),10(12),16(30),18(20)",
+      "stated": "[2, 12, 30, 20]",
+      "computed": "[2, 12, 30, 20]",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "6.Uh_isometry",
+      "section": "6",
+      "statement": "U_h\u1d40U_h = P_hidden (isometric hidden embedding)",
+      "stated": "0",
+      "computed": "1.2e-14",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "6.intertwining_P3",
+      "section": "6",
+      "statement": "H64 U_h P3 = 18 U_h P3",
+      "stated": "0",
+      "computed": "1.1e-14",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "6.intertwining_P5",
+      "section": "6",
+      "statement": "H64 U_h P5 = 16 U_h P5",
+      "stated": "0",
+      "computed": "1.1e-14",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "7.resolvent_closed_form",
+      "section": "7",
+      "statement": "G(z)=20(2400z\u00b2-91480z+871257)/((15z-266)(20z-391)(20z-389))",
+      "stated": "identity",
+      "computed": "identity at 11 rational points",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "7.moments",
+      "section": "7",
+      "statement": "source moments m0,m1,m2 = 8, 2234/15, 500201/180",
+      "stated": "8, 2234/15, 500201/180",
+      "computed": "8, 2234/15, 500201/180",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "7.dark_pole",
+      "section": "7",
+      "statement": "fourth pole 521/30 carries zero source weight",
+      "stated": "0",
+      "computed": "0",
+      "verdict": "PASS",
+      "note": ""
+    },
+    {
+      "id": "9.alpha_inverse_polynomial",
+      "section": "9",
+      "statement": "137+(17572/1215)\u0394-(9/65)\u0394\u00b2\u2248137.035999178",
+      "stated": "137.035999178",
+      "computed": "137.035999178195",
+      "verdict": "PASS",
+      "note": "value of the stated polynomial only; the linear coefficient is not derived"
+    },
+    {
+      "id": "10.N_star",
+      "section": "10",
+      "statement": "N\u22c6=1+\u0394\u207b\u00b2\u2248161,393",
+      "stated": "161393",
+      "computed": "161393.7273",
+      "verdict": "PASS",
+      "note": "exact 161393.73; the handover truncates rather than rounds"
+    },
+    {
+      "id": "10.N_star_equal_split",
+      "section": "10",
+      "statement": "at N=N\u22c6 the common/relative probabilities are both 1/2",
+      "stated": "0.5",
+      "computed": "0.500000000000000",
+      "verdict": "PASS",
+      "note": ""
+    }
+  ],
+  "errata": {
+    "3.p5": "handover states 6.19613e-6; \u0394\u00b2/(1+\u0394\u00b2) = 6.196027670655e-6, as every repository file records"
+  },
+  "unexpected": [],
+  "stale_errata": []
+}
