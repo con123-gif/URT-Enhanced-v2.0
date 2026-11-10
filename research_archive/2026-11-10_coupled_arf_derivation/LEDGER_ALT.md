@@ -88,3 +88,53 @@ What is now proved, beyond the main coupled line:
 What would still be needed to derive an ARF: a principle that selects one ray in the remaining 4-dimensional inversion-allowed Yukawa space (or in the 8-dimensional anomaly-free pairing space) and one polarity, then transports that geometric response into charged H13⊕H51 matter while preserving the Ward identities. None of the eight alternative routes provides that principle.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 09–15)
+
+Date: 10 November 2026 (Europe/London). Repo still read-only at `d71974d5ce01ad2f8f7992adf64af65810dd5436`. No commits or pushes.
+
+Combining every previously proved cut still leaves 4 real Yukawa parameters plus one kinetic scale. Neither history signature, clock orientation, Ward/seagull/Jacobi/stability, the five-solid bridge, the dodecahedral/Hbits identification, nor maximum entropy / KMS forces a unique ray from the declared premises. Two refinements are new: Hamming parity canonically labels the four history orbits (but not 3 vs 3'); clock reversal equals the Galois dual of 2π/φ²; Cbridge splits the kinetic eigenvalues of 3 and 3'; and the dodecahedral Laplacian eigenvalues 3 and 5 are exactly 4_3 and 4_5 via the history embedding (Hbits 18 and 16). An extra, not-derived, log-det maximisation on the Yukawa sphere would pick the pure 3⊗5 → 4_3 ray because the spatial 3 is kinetically lighter. No ARF comparison was performed.
+
+## alt_cycle09 — combined cuts
+Directory: `/workspace/arf_research/alt_cycle09_combined_cuts/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: residual Yukawa dimension 4 after inversion + anomaly-free minimal charges (m = 4, not 2m) + Ward + positivity; Hodge leaves one kinetic scale. H13 alone with q_vertex = 1 is not anomaly-free (q_c = −12 gives Tr Q³ = −1716). Assignment (1, −1, 1, −1) has m = 35.
+Predeclaration sha256: `55998793b16af7fdf0ae60d8d745a3ce30feb873bb5afe89ce7d1b50ba9bf9b6`.
+
+## alt_cycle10 — chirality / handedness
+Directory: `/workspace/arf_research/alt_cycle10_chirality_handedness/`
+Classification: H1–H3 PROVED (H1, H2 refined); H4 CONDITIONAL. Advances ARF? No.
+Result: history all-flip preserves each orbit rather than swapping pairs. Hamming parity is constant on orbits and distinguishes the two 12-orbits (odd vs even weight) and the two 20-orbits; it does not pick 3 vs 3'. Clock reversal θ → −θ equals 2π/φ̄² mod 2π, so the archived +2π/φ² is the spatial-3 orientation; L2 spectra of ±θ coincide and do not pick a Yukawa. Round 102’s swap is the S5 outer automorphism, not realised by these native operations.
+Predeclaration sha256: `91292d13eb6d9856c7eef5ee8be063dee124835c2cc115b455ab543a81ac6a28`.
+
+## alt_cycle11 — nonlinear consistency
+Directory: `/workspace/arf_research/alt_cycle11_nonlinear_consistency/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: F is the unique inversion-allowed quadratic 3⊕5 → 4_3⊕4_5 up to two source scales. Ward/seagull, Jacobi-type closure and stability of V_hist ∘ F do not cut (α, β, γ, δ).
+Predeclaration sha256: `a3e16b38910bf80a537cf5c7dd21225ff215e7a64302e474aefa64acf29eae63`.
+
+## alt_cycle12 — joint Hodge + Cbridge
+Directory: `/workspace/arf_research/alt_cycle12_joint_hodge_bridge/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: Tr Cbridge = 160 and Tr(Cbridge²) = 800 reproduced. Icosahedral vertex block is exactly 4 P_1 + 4 P_3. Spatial 3 is the 5−√5 Laplacian eigenspace. Joint spectrum of Δ + Cbridge: 4 (1), 9−√5 (3), 6 (5), 5+√5 (3'). Overall scale and Yukawa ratios remain free.
+Predeclaration sha256: `bd3e8ebd2bd8797420c35ab6d4a1068802b38efd91ee51090302df1c233d5c5c`.
+
+## alt_cycle13 — dodecahedral split via Hbits
+Directory: `/workspace/arf_research/alt_cycle13_dodeca_hbits/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: im P3 (resp. P5) is exactly the Lface-eigenspace of eigenvalue 3 (resp. 5). History embedding gives Hbits = 18 and 16, and 21 − Hbits recovers 3 and 5 (intertwiner error 3.6×10⁻¹⁴). Hidden quartets are labelled; fermion 3 vs 3' is not.
+Predeclaration sha256: `4090a6b6cf77e3a11693e59b4dc2f7afd170a96a4c44425c2e0a766aa2292921`.
+
+## alt_cycle14 — maxent / KMS
+Directory: `/workspace/arf_research/alt_cycle14_maxent_kms/`
+Classification: H1, H2, H4 PROVED; H3 CONDITIONAL. Advances ARF? No.
+Result: Haar measure on S³ (or on the Galois-even S²) is not a point. KMS does not apply to Yukawa parameters. An extra log-det maximisation on the sphere, using the Hodge kinetic, has a unique maximiser up to signs: the pure 3⊗5 → 4_3 ray (value 19.7528 versus 19.0792 for the 3' ray), because λ3 = 5−√5 is lighter. That principle is not derived.
+Predeclaration sha256: `f2d365b994810aa88af5b630eceb64f50048590f14bcd1ee60a1d075674f0f82`.
+
+## alt_cycle15 — observables if a unique ray emerged
+Directory: `/workspace/arf_research/alt_cycle15_unique_ray_observables/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: no unique ray was derived from the declared premises, so no ARF comparison was performed. Independently, the A5 mass pattern (1,1,3,3,5) with massless singlets cannot give three distinct lepton masses, and no vertex-to-edge charged current is available for an electromagnetic response.
+Predeclaration sha256: `f8c668ae3eb6c4846790aff4cd0ca721ffaecd8b8ed242ac25393fcac7e71c1a`.
+
+No repository files were modified, committed, or pushed.
