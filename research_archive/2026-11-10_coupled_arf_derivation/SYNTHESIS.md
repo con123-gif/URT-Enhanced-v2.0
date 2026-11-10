@@ -3,12 +3,11 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–57 and alt routes 01–66. It
-performs no new numerical experiment. Alt routes 64–66 are
-integrated from their REPORT.md files, not duplicated: the
-scratch substitution of geometric H13 for G_{13}, the H13
-isotype sector assignment, and the D=3 coincidence catalogue
-are not recomputed here.
+This note compiles coupled cycles 01–62 and alt routes 01–70
+(alt 67 was absent). It performs no new numerical experiment.
+Alt routes 68–70 are integrated from their REPORT.md files,
+not duplicated. Suggested cycles 59–60 were folded into
+coupled cycle 61 as status notes, not run as separate cycles.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -74,7 +73,10 @@ selects the y_even branch; cycle 53 records that C_IR remains
 blocked by the missing hidden-51 embedding; cycle 55 finds no
 derived term that bounds the y-runaway; cycle 56 records that
 three charged singlets are still missing; cycle 57 records that
-y_π is not a selector.
+y_π is not a selector; cycle 61 finds that alt-65 P1 is a block
+of the coupled H13 kinetic, not of any other named 4-block;
+cycle 62 derives ρ_10 = 1/(φ√5) and finds it is not a
+historical ARF.
 
 H13 = 2·1 ⊕ 3 ⊕ 3' ⊕ 5. Inversion then hopping collapse eight H13
 Yukawas to a residual ratio r = y_even / y_odd (cycles 10–11). The
@@ -385,6 +387,13 @@ then splits into two derived phases.
   in the machine bounds the y-runaway (cycle 55). Three
   nondegenerate charged singlets remain missing (cycle 56).
   y_π is not a selector of y_even or of a branch (cycle 57).
+  Convention-applied R_mass^(C) and det′L, and the 1/α / K_γ
+  chain, remain blocked (status notes folded into cycle 61).
+  Alt-65 P1 is a 4-block of the coupled H13 kinetic, related
+  to K0 by a cone-lift, and is not any other named 4-block
+  (cycle 61). The unique unweighted gap ratio
+  ρ_10 = λ_min(Δ1_T)/λ_min(Δ0^+) = 1/(φ√5) does not match a
+  historical ARF (cycle 62).
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -544,7 +553,8 @@ refinement / continuum test, 45 G_{13} coupled-operator relation,
 obstruction, 50 charge chart / electron convention, 51 4D
 coframe obstruction, 52 y_even branch selection, 53 hidden-51
 / C_IR status, 55 y-runaway bound, 56 three-singlet status,
-57 y_π integrity.
+57 y_π integrity, 61 P1 versus coupled 4-blocks
+(with folded status 59–60), 62 gap ratio ρ_10.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -566,7 +576,9 @@ prefactor / denominator origins, 60 1/α chain blockers, 61
 what is unique about N=13, 62 G_{13} archive inventory, 63
 C_mass 5/16 and 7/8, 64 geometric-H13 scratch substitution,
 65 H13 isotype sector assignment, 66 D=3 coincidence
-catalogue.
+catalogue, 68 uniqueness.py on geometric cones, 69 H13
+prefactor look-elsewhere, 70 R_mass form on the P1
+complement. Alt 67 was absent.
 
 ## Alt routes 55–57 (integrated; not duplicated)
 
@@ -763,5 +775,59 @@ catalogue.
   (C1, C2, C10–C12) have weight 0. This does not derive any
   ARF prefactor. Pred sha256
   `d2c25f9dd9436559b92947c69704d01a74a90d57fd390868cc9a77b19b816357`.
+
+## Coupled cycles 61–62 (59–60 folded as status)
+
+- **cycle 61 (PROVED).** Alt-65 P1 = 1_const ⊕ 3_low, spectrum
+  {0, (6−√5)×3}, is a block of the geometric H13 kinetic
+  already used on the coupled line. It is the H13 kernel plus
+  the cone-lift of the 12-site Fiedler 3 (6−√5 = (5−√5)+1).
+  It is not the K0 4-block {0, (5−√5)×3}, not the hidden
+  Hessians 4_3 or 4_5, and not the dodeca 3- or 5-eigenspaces
+  (which are 4-dimensional but have spectra {3}⁴ and {5}⁴).
+  No mass or charge formula was built from it. Folded status
+  notes: convention-applied R_mass^(C) and det′L are not
+  promoted to ARFs (59); 1/α and K_γ remain blocked by the
+  coframe and C_IR obstructions, and κ_iso is not promoted
+  (60). Pred sha256
+  `eaead43c8a3f4c47033371d8a092f50c800b8e5e0da887c964bfe6aa6c5ea92f`.
+- **cycle 62 (PROVED).** The unique dimensionless gap ratio
+  ρ_10 = λ_min(Δ1_T)/λ_min(Δ0^+) on the unweighted icosahedral
+  2-complex equals (3−√5)/(5−√5) = (5−√5)/10 = 1/(φ√5) =
+  2/(5+√5) ≈ 0.276393202250021. No T1 or T2 hit at 10^{-4}.
+  A 4,763-value look-elsewhere catalogue hits only algebraic
+  aliases of this closed form. ρ_10 is a derived A5
+  irrational, not a historical ARF. Pred sha256
+  `8995e34ff1880167166e5f2056d94170ef0c9f301028eda5e98f897e7781734c`.
+
+## Alt routes 68–70 (integrated; not duplicated). Alt 67 absent.
+
+- **alt 67.** No directory was present at write time; skipped.
+- **alt 68 (PROVED).** In a scratch copy, uniqueness.py’s
+  hardcoded Cayley λ₂ and spectrum were replaced by genuine
+  geometric-cone data, without retuning Theorem 1’s winner
+  string. Theorem 1 then has no winner (AssertionError on an
+  empty list). Theorem 2 is untouched. L4 holds for every
+  geometric platonic cone and does not uniquely select N=13.
+  Tests: 3 failed, 6 passed. This is the companion to alt 64’s
+  insulated uniqueness_audit pass. Pred sha256
+  `ce007bb506294da440992c2faa6f02da87d2dd80b710f9a793d03e769ced16b8`.
+- **alt 69 (PROVED).** A look-elsewhere catalogue built only
+  from genuine H13 / S1 integers (Cayley-only 72, 36, 768, 3,
+  5, 9 excluded) still hits 35, 51, 63, 80, 5/16 and 7/8 at
+  comparable rates (32–45 integer expressions; 16 and 28
+  rational). None is a unique named geometric invariant.
+  Prefactors remain underived. Pred sha256
+  `722192185661d0bcada9b62a1ab56c33b16fdbe3a06d747fa3d31a71b8a2fe71`.
+- **alt 70 (PROVED).** The production R_mass form evaluated on
+  the derived P1 complement gives R_P1 = −2.428071256588326.
+  The historical two-atom writing is identically the
+  stipulated piece T; the residual is identically the
+  stipulated sum S, with weight 0.08%. Almost all of the
+  numerical agreement is stipulated, not a property of the
+  P1 list. Independence fails on the summand, 1/N, and the
+  two-atom prefactors. No closer writing is adopted. Pred
+  sha256
+  `6612e688befb74fec93caaddecfe4b514ca8c78c477fa0024e404230236c79d4`.
 
 No ARF was derived.
