@@ -123,9 +123,10 @@ Nothing in the archive selects this map. Gates B → C → D are this object; ga
 
 ## 7. Archive health (sweep, 2026-11-10)
 
-- 256 research scripts were executed: **222 pass**.
-- **14 are bound to `/mnt/data`**, ChatGPT's sandbox paths.
-- **20 needed files that were never committed.** 10 of those were restored on 2026-11-10 by byte-identical companion copies (`COMPANION_SOURCE_NOTE.md` in two folders). The rest wait on uncommitted intermediates (queue Q6) or the missing `URT_Nature_Checkpoint_2026-08-25/full_library/`.
+- 259 research scripts were executed (orchestrator run 42894969958): **235 pass**, **24 missing_file**, 0 assertion failures, 0 regressions.
+- **14 are bound to `/mnt/data`**, ChatGPT's sandbox paths (queue Q5).
+- **10 scripts were unblocked on 2026-11-10** by byte-identical companion copies (`COMPANION_SOURCE_NOTE.md` in two folders), and all 10 now pass. The remaining missing-file scripts wait on uncommitted intermediates (queue Q6) or the missing `URT_Nature_Checkpoint_2026-08-25/full_library/`.
+- Live per-script status: `sweep.md` on `cathedral-research-state`.
 - The raw `microscopic_source_currents.py` needs `common_action_work/recovery/theory_input_v5.md`, which is absent; CI runs it through `run_native_source.py`.
 
 ## 8. Gates (the research queue in `registry.toml`)
