@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=e9d69e34e5e6ffa00e40b5aa0860e3ef30c37b904b1c8861fb3d84f6e35b52da
+bytes=2021
+test_hodge_kinetic.py sha256=c6d2449b19d265e6d28c60bf4516318f2a7ad81fa3a51607d847e4d3d6807df6
+bytes=10978

@@ -1,0 +1,126 @@
+{
+  "group_order": 120,
+  "irreps": {
+    "1": 1,
+    "2": 2,
+    "2'": 2,
+    "3": 3,
+    "3'": 3,
+    "4": 4,
+    "4'": 4,
+    "5": 5,
+    "6": 6
+  },
+  "spinorial_irreps": [
+    "2",
+    "2'",
+    "4'",
+    "6"
+  ],
+  "spinorial_dimensions": [
+    2,
+    4,
+    6
+  ],
+  "H1_no_spinorial_structure_on_existing_modules": {
+    "H13_spinorial_multiplicities": {
+      "2'": 0,
+      "2": 0,
+      "6": 0,
+      "4'": 0
+    },
+    "H51_spinorial_multiplicities": {
+      "2'": 0,
+      "2": 0,
+      "6": 0,
+      "4'": 0
+    },
+    "H64_spinorial_multiplicities": {
+      "2'": 0,
+      "2": 0,
+      "6": 0,
+      "4'": 0
+    },
+    "compatible_spinorial_structure": false,
+    "reason": "-I already acts as +Id because these are A5 pullbacks"
+  },
+  "H2_no_odd_dimensional_spinorial_module": {
+    "spinorial_irrep_dims": [
+      2,
+      4,
+      6
+    ],
+    "all_even": true,
+    "H13_cannot_be_spinorial": true,
+    "H51_cannot_be_spinorial": true
+  },
+  "H3_natural_lifts": {
+    "H13_otimes_2": {
+      "1": 0,
+      "2": 3,
+      "2'": 0,
+      "3": 0,
+      "3'": 0,
+      "4": 0,
+      "4'": 2,
+      "5": 0,
+      "6": 2
+    },
+    "H13_otimes_2p": {
+      "1": 0,
+      "2": 0,
+      "2'": 3,
+      "3": 0,
+      "3'": 0,
+      "4": 0,
+      "4'": 2,
+      "5": 0,
+      "6": 2
+    },
+    "dim": 26,
+    "kinetic_End_dim": 17,
+    "H13_kinetic_End_dim_for_comparison": 7,
+    "yukawa_Hom_Sym2_to_one_4": 21,
+    "yukawa_Hom_Sym2_to_two_4s": 42,
+    "yukawa_Hom_4_to_End_one_hidden": 40,
+    "yukawa_Hom_4_to_End_two_hiddens": 80,
+    "vertex12_otimes_2": {
+      "1": 0,
+      "2": 2,
+      "2'": 0,
+      "3": 0,
+      "3'": 0,
+      "4": 0,
+      "4'": 2,
+      "5": 0,
+      "6": 2
+    },
+    "vertex12_otimes_2_End_dim": 12,
+    "vertex12_otimes_2_Hom_Sym2_to_one_4": 19
+  },
+  "H4_does_not_fix_a_ray": {
+    "kinetic_cone_dim": 17,
+    "kinetic_is_a_ray": false,
+    "yukawa_two_hidden_sym_dim": 42,
+    "yukawa_is_a_ray": false,
+    "charge_normalisation_fixed_by_2I": false,
+    "2I_central_contribution": "Z2 = {\u00b1I} only",
+    "kinetic_cone_grew_from_7_to": 17
+  },
+  "H5_structural_identity": {
+    "vectorial_4_is_2_otimes_2p": true,
+    "2_otimes_2_is_1_plus_3": true,
+    "2_otimes_3_is_2_plus_4p": true,
+    "2_otimes_3p_is_6": true
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED",
+    "H5": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "A fermionic 2I carrier must be a new module (e.g. H13\u22972, dim 26). That lift enlarges the kinetic cone from 7 to 17 and leaves a Yukawa space of dimension 42 (Sym2) or 80 (Dirac/End), not a ray."
+}
