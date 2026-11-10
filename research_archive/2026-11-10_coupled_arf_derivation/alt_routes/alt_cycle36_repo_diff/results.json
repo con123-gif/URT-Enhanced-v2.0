@@ -1,0 +1,61 @@
+{
+  "classification": "PROVED",
+  "range": "d71974d..6bad7b3",
+  "base": {
+    "hash": "d71974d",
+    "date_europe_london": "2026-11-10 06:18:29 +0000",
+    "subject": "Add honest ARF fourth-cumulant status and remaining physical proof obligation"
+  },
+  "head": {
+    "hash": "6bad7b3",
+    "date_europe_london": "2026-11-10 07:24:31 +0000",
+    "subject": "Add exact nilpotent-excited-Walsh chronology regression"
+  },
+  "n_commits": 8,
+  "files_added": [
+    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H64_RESONANT_PAIR_CHRONOLOGY_2026_11_10.py",
+    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H64_RESONANT_PAIR_CHRONOLOGY_SELECTION_2026_11_10.md",
+    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H64_RESONANT_PAIR_STATUS_2026_11_10.md"
+  ],
+  "files_modified": [],
+  "insertions": 279,
+  "deletions": 0,
+  "verification": {
+    "script": "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H64_RESONANT_PAIR_CHRONOLOGY_2026_11_10.py",
+    "exit_code": 0,
+    "reproduced": {
+      "A5_rotations": 60,
+      "orders": {"1": 1, "2": 15, "3": 20, "5": 24},
+      "walsh_quartet_mult": {"0": 0, "1": 0, "2": 1, "3": 2, "4": 1, "5": 0, "6": 0},
+      "Hbits_dims": {"0": 2, "10": 12, "16": 30, "18": 20},
+      "Hbits_quartets": {"0": 0, "10": 0, "16": 2, "18": 2},
+      "pair_decompositions": {"16": [[0, 16]], "18": [[0, 18]]},
+      "resonant_total": 8,
+      "resonant_plus_bright": 4,
+      "resonant_plus_stationary": 4,
+      "resonant_plus_both": 2,
+      "PASS_commutation": true
+    }
+  },
+  "relevance": {
+    "derived_Maxwell_kappa": false,
+    "new_charged_current_to_30_ico_edges": false,
+    "change_to_H13_kinetics": false,
+    "new_pairing_condensation_on_spatial_edges": false,
+    "new_ARF_claim_or_derivation": false,
+    "bears_on_routes_34_35_hypotheses": false,
+    "notes": [
+      "The added theorem is about H64 Walsh/Hbits charge-two Weyl-pair tensor counts under extra premises R, S, B.",
+      "It explicitly infers no new transverse Maxwell or fermion-pole normalization.",
+      "Uniform-charge H64 Weyl pairing is stated as not the physical 16/48/96 EM assignment.",
+      "H13/H51 is an abstract A5-module split, not shown to be Hbits-invariant.",
+      "All four historical ARFs remain OPEN; an intermediate count of four tensors is not an ARF identification.",
+      "Recommended next step in the note is a Ward-complete transverse gauge response, which is the subject of alt_cycle34 for the already-established spatial charged fermions."
+    ]
+  },
+  "hypotheses": {
+    "H1_adds_H64_notes_and_executable_only": true,
+    "H2_no_Maxwell_no_new_current_no_ARF": true,
+    "H3_executable_reproduces": true
+  }
+}
