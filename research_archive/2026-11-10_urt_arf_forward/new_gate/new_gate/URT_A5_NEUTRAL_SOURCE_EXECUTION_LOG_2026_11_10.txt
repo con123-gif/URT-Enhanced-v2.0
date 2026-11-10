@@ -1,0 +1,34 @@
+EXACT original 64-history 4_5 source norm: n in {0, (56±24sqrt5)/5}
+counts: [('(0)+(0)*sqrt(5)', 24), ('(56/5)+(-24/5)*sqrt(5)', 20), ('(56/5)+(24/5)*sqrt(5)', 20)]
+exact mean n: (7)+(0)*sqrt(5)
+exact connected two-point lags n: [(507/5)+(0)*sqrt(5), (-41/25)+(0)*sqrt(5), (-49/25)+(0)*sqrt(5), (9/5)+(0)*sqrt(5), (-9/5)+(0)*sqrt(5), (0)+(0)*sqrt(5)]
+exact neutral Green-Kubo K2_55: (471/5)+(0)*sqrt(5) decimal 94.2
+native 4_3 neutral norm mean: (36)+(72/5)*sqrt(5)
+exact neutral Green-Kubo K2_33: (2554416/625)+(1135296/625)*sqrt(5) decimal 8148.824048933762
+exact neutral cross Green-Kubo K2_35: (11556/25)+(23112/125)*sqrt(5) decimal 875.6800247678011
+exact 2x2 neutral source covariance determinant: (1259712/3125)+(559872/3125)*sqrt(5)
+exact neutral time-integrated third cumulant K3_555: (152754/125)+(6912/125)*sqrt(5) decimal 1345.6776148838283
+four symmetric neutral third cumulants K3_333,335,355,555:
+   333 (8470303488/15625)+(3786974208/15625)*sqrt(5) decimal 1084047.0557520913
+   335 (182596032/3125)+(81248832/3125)*sqrt(5) decimal 116567.66190222726
+   355 (4092552/625)+(1671408/625)*sqrt(5) decimal 12527.89424981915
+   555 (152754/125)+(6912/125)*sqrt(5) decimal 1345.6776148838283
+independent 10/12-lag third cumulant enumeration: EXACT MATCH
+full 4_5 vector K2 trace 71/12; A5 averaged singlet K2 71/48: EXACT
+A5 simplex T3 norm squared: 3/16
+native charged A5 singlet cubic: forbidden as local U(1) invariant without dressing
+PASS: no fitting, no historical ARF inputs, exact Q(sqrt5)
+Original five-solid pullback: native 64 histories and hidden 4_5; 24-clock gauge phase
+Native exact hidden C5 lag sequence verified numerically: [np.float64(7.000000000000046), np.float64(0.17500000000001578), np.float64(-0.5083333333333157), np.float64(-0.04166666666664738), np.float64(-0.1666666666666492), np.float64(1.9611482576786798e-14)]
+Hidden full-quartet Green-Kubo trace: 5.916666666666893 exact 71/12
+Original 4_3 autocorrelation lags: [np.float64(68.19937887599669), np.float64(6.8199378875996945), np.float64(1.8849844718999214), np.float64(3.0499689437998647), np.float64(-5.507313355357368e-15), np.float64(2.963775058706375e-15)]
+Independent floating K2_33 and K2_35: 8148.824048933803 875.6800247678034
+A5 five-simplex second tensor = I4/4; cubic tensor norm^2: 3/16
+Gauge-charged A5 cubic is annihilated by 24-clock Haar phase average
+Gauge-neutral n(h)=||P5 E(h)||^2: min/max/mean: -1.7763568394002505e-15 21.93312629199911 7.000000000000027
+Gauge-neutral centered n Green-Kubo K2: 94.20000000000002
+Gauge-neutral centered n third cumulant K3: 1345.6776148838383
+Independent 3-point lag enumeration: 1345.6776148838374
+Independent four cubic neutral channels: 1084047.0557520983 116567.66190222783 12527.894249818966 1345.6776148838374
+Native nonlinear source Ward first/second contacts: [(np.float64(42.65584777877305), np.float64(0.0), np.float64(0.0)), (np.float64(24.178836197120013), np.float64(0.0), np.float64(0.0))]
+PASS source-level neutral cumulant; not physical ARF or mass pole

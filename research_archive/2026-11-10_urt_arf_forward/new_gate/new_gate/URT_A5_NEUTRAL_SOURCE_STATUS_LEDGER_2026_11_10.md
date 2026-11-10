@@ -1,0 +1,15 @@
+# Cathedral ARF continuation: honest status ledger — 10 November 2026
+
+**New independent result:** original signed-six-axis/64-history hidden source has two gauge-neutral quartet norms. The `4_5` norm has an exactly three-level Q(sqrt5) distribution (multiplicities 24,20,20). Their exact two-channel Green–Kubo covariance has strictly positive determinant, and their symmetric third cumulant tensor has four independently reproduced exact algebraic components. See `URT_A5_NEUTRAL_TWO_QUARTET_CUMULANT_THEOREM_2026_11_10.md`.
+
+**Checks passed:** exact 20 supporting icosahedral faces/30 edges; rational rank-four hidden projectors; all 64 histories; Q^6=J/64; original archived 4_3 and 4_5 lag certificates independently reproduced; exact cumulant formula equals direct lag-pair enumeration at horizons 10 and 12; independent floating implementation reproduces all four cubic values; both first and second nonlinear source Ward identities pass with their required contacts; A5 five-simplex trace/cubic tensor identities pass. No target ARF coefficients appear in scripts.
+
+**Correction to earlier interpretation:** the A5-singlet real-slice cubic source carries diagonal U(1) charge +6 when complexified as the native charged source, so its undressed cubic is not a physical local gauge-invariant observable. Gauge-neutral squared norms are admissible source observables, but their four third-cumulant components have no proved identification with the four historical physical ARFs.
+
+**Explicit hypotheses retained:** the previously archived isometric five-solid-to-icosahedron pullback and its geometric sign-history ↔ URT six-bit cylinder dictionary; native diagonal charge-one cochain/charge-two hidden source action; Haar as the absolutely continuous invariant history measure. No claim of unique primitive dynamical selection of the history dictionary or the full physical action.
+
+**Not proved:** any of the four physical historical ARFs from source-to-pole dynamics; a unique electromagnetic current/charge normalization; the `H13⊕H51` fermion representation and its charged mass-pole observable; an independent U(1)^5 symmetry of the native action; the physical status of the 24-clock relative modes. The four mathematical cubic tensor components are not four experimentally established physical couplings.
+
+**Next exact obligation:** construct and prove the unique (or explicitly characterize nonuniqueness of) local gauge-equivariant source-to-fermion/current intertwiner from the original 190-cochain, 64-history, 24-clock action to `H13⊕H51`, preserving the first and second Ward contacts. Then derive actual physical pole observables and only afterward test whether the four historical ARFs emerge without fitted parameters. Do not substitute a scalar source cumulant for a pole observable.
+
+**Repository policy:** new original theorem, two new executable tests and this ledger only. Do not alter prior files, use external Yang–Mills/James material, or introduce historical ARF values as inputs.
