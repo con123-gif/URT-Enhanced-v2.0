@@ -1,0 +1,304 @@
+{
+  "channels": {
+    "even_4_5": {
+      "T0_expected_linear_ratio": 2.0,
+      "T0_expected_quadratic_ratio": 4.0,
+      "T0_linear_attraction": 0,
+      "T0_omega_at_s": {
+        "om1": -9.166640779767476e-10,
+        "om2": -2.291677958510263e-10,
+        "s1": 0.0001,
+        "s2": 5e-05
+      },
+      "T0_omega_ratio": 3.9999689946515775,
+      "chi_T0_at_nucmax": 0.09166640779767476,
+      "chi_T0_probes": [
+        0.09166640779767476,
+        0.09166605252630688,
+        0.09166640779767476,
+        0.09166498671220324
+      ],
+      "chi_Teta_at_nucmax": 0.038415791436818836,
+      "chi_Teta_mean_over_hats": 0.038415791839012836,
+      "chi_Teta_probes": [
+        0.038415791436818836,
+        0.03841579854224619,
+        0.038415791436818836,
+        0.03841579854224619
+      ],
+      "dirac_condenses": 0,
+      "dirac_curvature_at_0": 0.07778049138096321,
+      "frame_overlap_with_all_ones_edges": 6.568167990716596e-16,
+      "kernel_pairing_v0Delta_v0_at_nucmax": 4.6070981027939554e-17,
+      "name": "even/4_5",
+      "nuclear_norm": {
+        "hat_max_optimized": [
+          -0.4012369303819193,
+          0.44033540414685846,
+          0.7883405336309653,
+          0.1537298298540743
+        ],
+        "hat_max_sampled": [
+          -0.4018505394867337,
+          0.47302919903407187,
+          0.7681727853952282,
+          0.1570671593731244
+        ],
+        "hat_min": [
+          0.1780352595069845,
+          -0.639626012246081,
+          0.26352545587798093,
+          0.6998116496134938
+        ],
+        "max_optimized": 4.640379972803842,
+        "max_sampled": 4.638323192378134,
+        "mean": 4.171939736468011,
+        "min": 3.826892674260067,
+        "relative_variation": 0.17494048699569703,
+        "std": 0.19089740914005995
+      },
+      "stabilizer_ray": {
+        "class_counts": {
+          "0": 1,
+          "1": 3,
+          "2": 8
+        },
+        "name": "A4",
+        "order": 12,
+        "order_counts": {
+          "1": 1,
+          "2": 3,
+          "3": 8
+        }
+      },
+      "stabilizer_vector": {
+        "class_counts": {
+          "0": 1,
+          "1": 3,
+          "2": 8
+        },
+        "name": "A4",
+        "order": 12,
+        "order_counts": {
+          "1": 1,
+          "2": 3,
+          "3": 8
+        }
+      },
+      "stiffness": 1.3555120633395222e-06,
+      "vacuum_hat": [
+        -0.4012369303819193,
+        0.44033540414685846,
+        0.7883405336309653,
+        0.1537298298540743
+      ],
+      "vacuum_is_origin_at_y1": 0,
+      "vacuum_omega": -992757.3894772552,
+      "vacuum_r": 861260.6863776222,
+      "y1_condenses_Teta": 1,
+      "y1_condenses_linearized": 1,
+      "y1_scan": {
+        "best": {
+          "condenses": 1,
+          "hat": [
+            -0.4012369303819193,
+            0.44033540414685846,
+            0.7883405336309653,
+            0.1537298298540743
+          ],
+          "nuclear_norm": 4.640379972803842,
+          "omega_0": 0.0,
+          "omega_star": -992757.3894772552,
+          "r_star": 861260.6863776222
+        },
+        "n_condense": 43,
+        "n_hats": 43,
+        "omega_variation_among_condensed": 317554.9697142275
+      },
+      "y_c_T0": 0.003845444849099138,
+      "y_c_Teta": 0.0059401416448682486,
+      "y_c_Teta_O1": 0
+    },
+    "odd_4_3": {
+      "T0_expected_linear_ratio": 2.0,
+      "T0_expected_quadratic_ratio": 4.0,
+      "T0_linear_attraction": 0,
+      "T0_omega_at_s": {
+        "om1": -1.1206928718365816e-09,
+        "om2": -2.801705534238863e-10,
+        "s1": 0.0001,
+        "s2": 5e-05
+      },
+      "T0_omega_ratio": 4.00003804161753,
+      "chi_T0_at_nucmax": 0.11206928718365816,
+      "chi_T0_probes": [
+        0.11206928718365816,
+        0.11206786609818664,
+        0.11206928718365816,
+        0.1120685766409224
+      ],
+      "chi_Teta_at_nucmax": 0.039225440673362755,
+      "chi_Teta_mean_over_hats": 0.039225441477750755,
+      "chi_Teta_probes": [
+        0.039225440673362755,
+        0.039225440673362755,
+        0.039225440673362755,
+        0.039225440673362755
+      ],
+      "dirac_condenses": 0,
+      "dirac_curvature_at_0": 0.5611425066831544,
+      "frame_overlap_with_all_ones_edges": 5.803836207831226e-16,
+      "kernel_pairing_v0Delta_v0_at_nucmax": -2.9395758221258426e-18,
+      "name": "odd/4_3",
+      "nuclear_norm": {
+        "hat_max_optimized": [
+          -0.6219878041059634,
+          0.5360479842525316,
+          -0.13584574843031097,
+          0.5543732161239826
+        ],
+        "hat_max_sampled": [
+          -0.6608651751434079,
+          0.5150699425929608,
+          -0.13583504357510431,
+          0.5286861218690221
+        ],
+        "hat_min": [
+          -0.19559816582814496,
+          0.5865488381414173,
+          0.6639793468293311,
+          -0.4205154515397904
+        ],
+        "max_optimized": 3.7699945634389476,
+        "max_sampled": 3.767760535004967,
+        "mean": 3.590332579412166,
+        "min": 3.2978991993908533,
+        "relative_variation": 0.1247057320253752,
+        "std": 0.10116102438417118
+      },
+      "stabilizer_vector": {
+        "name": "A5",
+        "order": 60
+      },
+      "stiffness": 0.2222379207611084,
+      "vacuum_is_origin_at_y1": 1,
+      "y1_condenses_Teta": 0,
+      "y1_condenses_linearized": 0,
+      "y1_scan": {
+        "best": {
+          "condenses": 0,
+          "hat": [
+            0.5,
+            0.5,
+            -0.5,
+            0.5
+          ],
+          "nuclear_norm": 3.632586109541422,
+          "omega_0": 0.0,
+          "omega_star": -1.406474168380088e-14,
+          "r_star": 2.564102564102564e-08
+        },
+        "n_condense": 0,
+        "n_hats": 43,
+        "omega_variation_among_condensed": null
+      },
+      "y_c_T0": 1.4082046620950135,
+      "y_c_Teta": 2.380264212169863,
+      "y_c_Teta_O1": 1
+    }
+  },
+  "classification": "PROVED",
+  "classification_note": "Even/4_5 pairing condenses at any O(1) Yukawa at T=\u03b7; odd/4_3 has a finite O(1)-scale critical coupling; the Dirac-like measure does not condense; the ratio y_even/y_odd is not fixed to a unique number. The predeclared T=0 linear IR singularity does not occur: the residual frames annihilate the constant mode, so y_c(T=0) remains finite.",
+  "constants": {
+    "T_KMS": 5.9957979867413025,
+    "c3": 0.2222379207611084,
+    "c5": 0.21876978874206543,
+    "c_even": 1.3555120633395222e-06,
+    "c_odd": 0.2222379207611084,
+    "delta2": 6.19606606165215e-06,
+    "delta_hidden": 0.0024891898404204027,
+    "delta_star": 0.1475108101595796,
+    "eta": 5.9957979867413025,
+    "hidden_hessian_4_5": 2.7110241266790443e-06,
+    "phi": 1.618033988749895
+  },
+  "geometry": {
+    "K_has_zero_mode": 1,
+    "K_spectrum": [
+      -8.04336439607491e-33,
+      2.7639320225002098,
+      2.76393202250021,
+      2.7639320225002124,
+      5.999999999999998,
+      6.0,
+      6.000000000000002,
+      6.000000000000002,
+      6.000000000000003,
+      7.236067977499787,
+      7.23606797749979,
+      7.236067977499792
+    ],
+    "even_frame_frob": 2.0,
+    "n_edges": 30,
+    "n_pts": 12,
+    "n_rots": 60,
+    "odd_frame_frob": 1.9999999999999998
+  },
+  "hypotheses": {
+    "H1_K_has_zero_mode": 1,
+    "H1_T0_IR_singular": 0,
+    "H1_T0_linear_attraction": 0,
+    "H1_T0_yc_vanishes": 0,
+    "H1_frames_annihilate_constant_mode": 1,
+    "H2_even_condenses_at_O1": 1,
+    "H2_odd_yc_is_O1": 1,
+    "H2_vacuum_not_origin": 1,
+    "H3_dirac_does_not_condense": 1,
+    "H4_stab_in_allowed_list": 1,
+    "H4_stab_not_C5_or_D5": 1,
+    "H4_stab_selected_by_Omega": 1,
+    "H5_ratio_irrelevant_if_only_even_condenses": 1,
+    "H5_ratio_not_uniquely_fixed": 1
+  },
+  "ratio_r": {
+    "even_condenses_at_O1": 1,
+    "even_much_softer": 1,
+    "even_vacuum_omega": -992757.3894772552,
+    "even_vacuum_r": 861260.6863776222,
+    "even_vacuum_stab": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "even_vacuum_stab_ray": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "odd_condenses_at_O1": 0,
+    "ratio_fixed_to_unique_number": 0,
+    "ratio_qualitatively_irrelevant_except_near_pure_odd": 1,
+    "reason": "A one-sided 4_5 condensate at generic O(1) (y_odd, y_even) does not select a unique value of y_even/y_odd; the ratio remains a free parameter of the residual 2-plane except near the pure-odd axis y_even < y_c,even, where the even vev switches off.",
+    "y_c_even_Teta": 0.0059401416448682486,
+    "y_c_odd_Teta": 2.380264212169863
+  },
+  "sphere_essentially_degenerate": 0
+}
