@@ -3,12 +3,12 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–53 and alt routes 01–63. It
-performs no new numerical experiment. Alt routes 61–63 are
-integrated from their REPORT.md files, not duplicated: G_{13}
-internal structure, the uniqueness.py Theorem 1 geometry, the
-35/51/63/40 search, and C_mass’s PT/Casimir catalogue are not
-recomputed here.
+This note compiles coupled cycles 01–57 and alt routes 01–66. It
+performs no new numerical experiment. Alt routes 64–66 are
+integrated from their REPORT.md files, not duplicated: the
+scratch substitution of geometric H13 for G_{13}, the H13
+isotype sector assignment, and the D=3 coincidence catalogue
+are not recomputed here.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -71,7 +71,10 @@ Maxwell term, three charged singlets, a derived y_even, and any of
 the four historical ARFs. Cycle 51 names the exact obstruction to
 a unique 4D coframe; cycle 52 finds no derived principle that
 selects the y_even branch; cycle 53 records that C_IR remains
-blocked by the missing hidden-51 embedding.
+blocked by the missing hidden-51 embedding; cycle 55 finds no
+derived term that bounds the y-runaway; cycle 56 records that
+three charged singlets are still missing; cycle 57 records that
+y_π is not a selector.
 
 H13 = 2·1 ⊕ 3 ⊕ 3' ⊕ 5. Inversion then hopping collapse eight H13
 Yukawas to a residual ratio r = y_even / y_odd (cycles 10–11). The
@@ -278,9 +281,12 @@ stability of the origin, and the resolvent
 R(z) = (I − z T_coupled)^{-1}: none selects a unique finite y
 or a branch without a postulate on y_even (the free energy, if
 minimised in y as an extra postulate, runs away to large y).
-Observables that scale as 1/y_even² (13/E_pair, m_odd/E_pair)
-are therefore not predictions. No Yukawa ray was found, so the
-one-loop / EM / ARF pipeline was not run.
+Cycle 55 finds no derived term already in the coupled machine
+that bounds that runaway (in particular no tree Maxwell term
+and no tree |D_A Δ|²). Cycle 57 records that y_π is not a
+selector. Observables that scale as 1/y_even² (13/E_pair,
+m_odd/E_pair) are therefore not predictions. No Yukawa ray was
+found, so the one-loop / EM / ARF pipeline was not run.
 
 ## Obstructions
 
@@ -375,7 +381,10 @@ then splits into two derived phases.
   in which a small even condensate forms on A = 0 before A = π
   is preferred, which still does not select a unique y.
   Hidden-51 has no new canonical embedding into H64, so C_IR
-  remains a missing input (cycle 53).
+  remains a missing input (cycle 53). No derived term already
+  in the machine bounds the y-runaway (cycle 55). Three
+  nondegenerate charged singlets remain missing (cycle 56).
+  y_π is not a selector of y_even or of a branch (cycle 57).
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -534,7 +543,8 @@ refinement / continuum test, 45 G_{13} coupled-operator relation,
 47 A5-invariant Hodge weightings, 48 coframe / continuum
 obstruction, 50 charge chart / electron convention, 51 4D
 coframe obstruction, 52 y_even branch selection, 53 hidden-51
-/ C_IR status.
+/ C_IR status, 55 y-runaway bound, 56 three-singlet status,
+57 y_π integrity.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -554,7 +564,9 @@ Laplacian, 56 R_mass spectral list, 57 arf.py 1/α inconsistency
 (documentary), 58 G_{13} structure and the K4 cut, 59
 prefactor / denominator origins, 60 1/α chain blockers, 61
 what is unique about N=13, 62 G_{13} archive inventory, 63
-C_mass 5/16 and 7/8.
+C_mass 5/16 and 7/8, 64 geometric-H13 scratch substitution,
+65 H13 isotype sector assignment, 66 D=3 coincidence
+catalogue.
 
 ## Alt routes 55–57 (integrated; not duplicated)
 
@@ -684,5 +696,72 @@ C_mass 5/16 and 7/8.
   underived (rationals not unique, πφ pairing stipulated, three
   charged singlets still missing). Pred sha256
   `18b8d3331ac85a06105e20d0f0a19d6fca804b4cd6e3dcd7624f5ae7ee25efa6`.
+
+## Coupled cycles 55–57
+
+- **cycle 55 (PROVED).** No derived term already in the coupled
+  machine bounds the cycle-52 y-runaway. The existing
+  Nambu-plus-gauge functional has leading form
+  −N² y²/(16 c_even); remainders on the existing sample
+  {0.1, 1, 2} are +51.752, +139.408, +198.498 and do not turn
+  ω upward. A tree Maxwell term and a tree |D_A Δ|² are absent
+  from the archived action and were not introduced. History
+  normalisations, resolvent poles, induced Π_T, the finite
+  graph, y_odd and the history complex supply no potential or
+  compact domain for y. Pred sha256
+  `206b7742081ffa65ef005a17c8fbbe1a2b04e15925f51a9dc9142230e25e2b5e`.
+- **cycle 56 (PROVED as a status reading).** No new unique
+  spectrum of three nondegenerate charged singlets has been
+  derived since alt 42. C_mass and R_mass still lack that
+  matching observable. Pred sha256
+  `26079809d7e9f8c5f5aea36cc848d73e673447e8f6726157757888edcf9f5de7`.
+- **cycle 57 (PROVED as an integrity / status reading).** y_π
+  is not a derived selector of y_even or of the sub- versus
+  supercritical branch (both sides of y_π are supercritical).
+  y_π was not located or compared to γ, Δ, or a historical
+  coefficient. G13 was not retuned and the 35/51/63/40 search
+  was not reopened. Pred sha256
+  `72bc5968f606be678ed8b8718a7792cc36df506af7804409a076c04ec153195b`.
+
+## Alt routes 64–66 (integrated; not duplicated)
+
+- **alt 64 (PROVED).** In a scratch copy only, geometric H13
+  was substituted for stipulated G13 with no retuning (repo
+  remained clean). Live graph: 13 vertices, 42 edges, surface
+  degree 6, tr(L)=84, spectrum
+  {0, (6−√5)×3, 7×5, (6+√5)×3, 13}. The homogeneous flow
+  fixed point remains δ★. Five live audits fail (graph,
+  sectors, geometry, lorentz, qft: degrees, traces, integer
+  spectrum, Fiedler=D, heat-trace formula, det′L). Eighteen
+  audits pass, several only by insulation (uniqueness, dark,
+  gravity). Class-A tests: 8 failed, 130 passed. As-written
+  R_MASS is unchanged. The convention-applied four-smallest
+  complement is observational only
+  (R_mass^(C)=−2.428071256588326), not a derived ARF. Live
+  det′L = 31³·7⁵·13 = 6,509,065,381. Pred sha256
+  `1832590c7e412de5dd1b9eb48e85d86b11092d1f02b450e5fb9b0fac7e5fe14a`.
+- **alt 65 (PROVED).** Geometric H13 isotypes give a derived
+  4+9 assignment under the predeclared four-smallest /
+  lowest-isotype rule: P1 = {0} ⊕ {(6−√5)×3} versus
+  {7×5, (6+√5)×3, 13}, coinciding with the unique
+  four-smallest cut (gap √5). Four Aut-invariant 4-spaces
+  exist; P3 yields none without splitting an irrep. None
+  equals the Cayley lists {0,3,3,5} and {5×5,7,7,9,13}. The
+  fermions.py λ=3 / λ∈{5,7} identification does not carry
+  (no eigenvalue 3 or 5). This does not recover R_mass
+  prefactors and was not PDG-fitted. Pred sha256
+  `954b149e43963a9391b5b39eab0eb09023cb2ed939943d3c3ca51547542568ea`.
+- **alt 66 (PROVED for aliasing and Theorem 2; C3 as a
+  geometric degree identity FALSIFIED).** Honest effective
+  independent D=3 coincidence count is 3 (C4:
+  2^{D+1}=(D+1)²; C6: G+F+1=D^{D+1}, which is uniqueness
+  Theorem 2 and is one derivation of 81, not two of γ;
+  C7: λ_5(H13)=2^D−1, counted only if 7/8 is so written),
+  or 2 if C7 is dropped. C5 is an alias of C4. C3 fails on
+  geometric H13 (total degree 6 ≠ q=5). Cayley tr(L)=72 and
+  Aut=768 are not geometric inputs. Readings and writings
+  (C1, C2, C10–C12) have weight 0. This does not derive any
+  ARF prefactor. Pred sha256
+  `d2c25f9dd9436559b92947c69704d01a74a90d57fd390868cc9a77b19b816357`.
 
 No ARF was derived.
