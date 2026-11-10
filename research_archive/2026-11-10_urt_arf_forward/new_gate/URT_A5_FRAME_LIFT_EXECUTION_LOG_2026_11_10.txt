@@ -1,0 +1,11 @@
+A4 line stabilizer order 12; five orbit branches, each 12/60=1/5 of Haar frame measure
+regular-simplex A5 cubic invariant norm² 3/16 matching archived A5 source-frame theorem
+frame fixed along each trajectory: five-branch averaging is NOT resampling at each URT step
+A5 conjugacy orbit of primitive dyadic Q: 60 distinct frames, exactly
+all 60x60x64 frame-covariance transition checks: PASS
+native six-step history erasure in each frame: Q_g^6=J64/64, EXACT
+frame-resolved state size: 3840 ; with independent 24-clock: 92160
+one-step frame average R(Q)=M/120, but (R(Q))^6 != average(Q_g^6)
+exact numerator max difference at step 6: 754201600 over 2985984000000
+24 temporal clock slots alone cannot label all 60 distinct A5 frames injectively
+PASS: covariant frame lift is a conditional mathematical construction, not a derived physical matter coupling
