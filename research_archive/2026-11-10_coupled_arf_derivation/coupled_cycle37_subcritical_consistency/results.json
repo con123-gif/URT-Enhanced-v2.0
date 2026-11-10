@@ -1,0 +1,146 @@
+{
+  "integrity": {
+    "predeclaration_sha256": "f91539ea36e2f2272ff1abdea1418e5e6a633bf93adcb8065692859c5b165b5c"
+  },
+  "y_c": {
+    "ico": {
+      "eta": 0.005940144040707988,
+      "T0": 0.003845446400083969
+    },
+    "H13": {
+      "eta": 0.006011318618427269,
+      "T0": 0.004185418011108536
+    }
+  },
+  "derived_numbers": {
+    "Delta": 0.0024891898404204027,
+    "Delta2": 6.19606606165215e-06,
+    "delta_star": 0.1475108101595796,
+    "gamma": 0.012345679012345678,
+    "eta": 5.9957979867413025,
+    "sqrt_Delta": 0.049891781291314934,
+    "c5": 0.21876996521511627,
+    "c_even": 1.3555131567782033e-06,
+    "sqrt_c_even": 0.001164265071527186,
+    "1_over_eta": 0.1667834710594539,
+    "phi": 1.618033988749895
+  },
+  "comparisons": {
+    "Delta": {
+      "value": 0.0024891898404204027,
+      "lt_yc_eta_ico": true,
+      "lt_yc_eta_H13": true,
+      "leq_yc_T0_ico": true,
+      "leq_yc_T0_H13": true,
+      "would_be_subcritical_at_eta_if_ye": true,
+      "would_never_condense_if_ye": true
+    },
+    "Delta2": {
+      "value": 6.19606606165215e-06,
+      "lt_yc_eta_ico": true,
+      "lt_yc_eta_H13": true,
+      "leq_yc_T0_ico": true,
+      "leq_yc_T0_H13": true,
+      "would_be_subcritical_at_eta_if_ye": true,
+      "would_never_condense_if_ye": true
+    },
+    "delta_star": {
+      "value": 0.1475108101595796,
+      "lt_yc_eta_ico": false,
+      "lt_yc_eta_H13": false,
+      "leq_yc_T0_ico": false,
+      "leq_yc_T0_H13": false,
+      "would_be_subcritical_at_eta_if_ye": false,
+      "would_never_condense_if_ye": false
+    },
+    "gamma": {
+      "value": 0.012345679012345678,
+      "lt_yc_eta_ico": false,
+      "lt_yc_eta_H13": false,
+      "leq_yc_T0_ico": false,
+      "leq_yc_T0_H13": false,
+      "would_be_subcritical_at_eta_if_ye": false,
+      "would_never_condense_if_ye": false
+    },
+    "eta": {
+      "value": 5.9957979867413025,
+      "lt_yc_eta_ico": false,
+      "lt_yc_eta_H13": false,
+      "leq_yc_T0_ico": false,
+      "leq_yc_T0_H13": false,
+      "would_be_subcritical_at_eta_if_ye": false,
+      "would_never_condense_if_ye": false
+    },
+    "sqrt_Delta": {
+      "value": 0.049891781291314934,
+      "lt_yc_eta_ico": false,
+      "lt_yc_eta_H13": false,
+      "leq_yc_T0_ico": false,
+      "leq_yc_T0_H13": false,
+      "would_be_subcritical_at_eta_if_ye": false,
+      "would_never_condense_if_ye": false
+    },
+    "c5": {
+      "value": 0.21876996521511627,
+      "lt_yc_eta_ico": false,
+      "lt_yc_eta_H13": false,
+      "leq_yc_T0_ico": false,
+      "leq_yc_T0_H13": false,
+      "would_be_subcritical_at_eta_if_ye": false,
+      "would_never_condense_if_ye": false
+    },
+    "c_even": {
+      "value": 1.3555131567782033e-06,
+      "lt_yc_eta_ico": true,
+      "lt_yc_eta_H13": true,
+      "leq_yc_T0_ico": true,
+      "leq_yc_T0_H13": true,
+      "would_be_subcritical_at_eta_if_ye": true,
+      "would_never_condense_if_ye": true
+    },
+    "sqrt_c_even": {
+      "value": 0.001164265071527186,
+      "lt_yc_eta_ico": true,
+      "lt_yc_eta_H13": true,
+      "leq_yc_T0_ico": true,
+      "leq_yc_T0_H13": true,
+      "would_be_subcritical_at_eta_if_ye": true,
+      "would_never_condense_if_ye": true
+    },
+    "1_over_eta": {
+      "value": 0.1667834710594539,
+      "lt_yc_eta_ico": false,
+      "lt_yc_eta_H13": false,
+      "leq_yc_T0_ico": false,
+      "leq_yc_T0_H13": false,
+      "would_be_subcritical_at_eta_if_ye": false,
+      "would_never_condense_if_ye": false
+    },
+    "phi": {
+      "value": 1.618033988749895,
+      "lt_yc_eta_ico": false,
+      "lt_yc_eta_H13": false,
+      "leq_yc_T0_ico": false,
+      "leq_yc_T0_H13": false,
+      "would_be_subcritical_at_eta_if_ye": false,
+      "would_never_condense_if_ye": false
+    }
+  },
+  "identifications": {
+    "y_even_identified_with_any_listed_number": false,
+    "citation": "coupled_cycle22_ye_normalisation: y_even is FREE",
+    "checked": [
+      "unit-norm histories",
+      "Z_hist",
+      "KMS (eta, rho*)",
+      "charge-2 Ward identity"
+    ],
+    "note": "No coupled-line or original-Cathedral source identifies the even Yukawa with Delta, Delta^2, gamma, sqrt(Delta) or c_even. Such an identification would be a new postulate."
+  },
+  "hypotheses": {
+    "H1_no_identification": true,
+    "H2_Delta_below_yc0_gamma_above_yc_eta": true,
+    "H3_subcritical_not_selected": true
+  },
+  "conclusion": "The subcritical branch is a consistent phase of the archived action but is not selected by any derived coupling. Occupying it requires an extra postulate that sets y_even < y_c(eta). Any O(1) Yukawa together with T = eta selects the supercritical / London-massive branch (cycle 33)."
+}
