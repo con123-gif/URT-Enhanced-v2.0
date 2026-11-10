@@ -1,0 +1,318 @@
+{
+  "five_solid": {
+    "VEF_by_solid": {
+      "tetrahedron": [
+        4,
+        6,
+        4
+      ],
+      "cube": [
+        8,
+        12,
+        6
+      ],
+      "octahedron": [
+        6,
+        12,
+        8
+      ],
+      "dodecahedron": [
+        20,
+        30,
+        12
+      ],
+      "icosahedron": [
+        12,
+        30,
+        20
+      ]
+    },
+    "totals": {
+      "V": 50,
+      "E": 90,
+      "F": 50
+    },
+    "Tr_D2": 720.0,
+    "Tr_D4": 3456.0,
+    "Tr_Cbridge": 160.0,
+    "Tr_Cbridge2": 799.9999999999995,
+    "rank_Plinear": 8,
+    "solid_Eglobal_frobenius": {
+      "tetrahedron": 0.7542624988016079,
+      "cube": 1.1234661391439926,
+      "octahedron": 1.0010137073430176,
+      "dodecahedron": 1.797025924063464,
+      "icosahedron": 1.3919702953201578
+    },
+    "every_solid_contributes_to_Eglobal": true,
+    "pair_mixed_quartics_schur": {
+      "tetrahedron|cube": 5.028106226032731e-68,
+      "tetrahedron|octahedron": 3.0163181207930788e-68,
+      "tetrahedron|dodecahedron": 3.71331739412192e-67,
+      "tetrahedron|icosahedron": 7.775960488873564e-66,
+      "cube|octahedron": 4.493293323321106e-67,
+      "cube|dodecahedron": 1.5269616315115498e-66,
+      "cube|icosahedron": -6.197301557949033e-67,
+      "octahedron|dodecahedron": 8.676183318412013e-67,
+      "octahedron|icosahedron": 2.003366483386028e-67,
+      "dodecahedron|icosahedron": 5.406581748023666e-66
+    },
+    "every_pair_nonzero": false,
+    "identities_ok": false,
+    "pair_mixed_quartics_dipole0": {
+      "tetrahedron|cube": 0.03090465876154324,
+      "tetrahedron|octahedron": 0.025750528850112055,
+      "tetrahedron|dodecahedron": 0.0554551311877576,
+      "tetrahedron|icosahedron": 0.04003918692642907,
+      "cube|octahedron": 0.0008796901200188952,
+      "cube|dodecahedron": 0.003092934358593581,
+      "cube|icosahedron": 0.001769632268674794,
+      "octahedron|dodecahedron": 0.002419563772392746,
+      "octahedron|icosahedron": 0.001357237021562273,
+      "dodecahedron|icosahedron": 0.0044545007621128755
+    },
+    "pair_mixed_quartics_quad3": {
+      "tetrahedron|cube": NaN,
+      "tetrahedron|octahedron": NaN,
+      "tetrahedron|dodecahedron": NaN,
+      "tetrahedron|icosahedron": NaN,
+      "cube|octahedron": NaN,
+      "cube|dodecahedron": NaN,
+      "cube|icosahedron": NaN,
+      "octahedron|dodecahedron": 7.776838970829485e-07,
+      "octahedron|icosahedron": 4.6551498926525656e-07,
+      "dodecahedron|icosahedron": 6.300752382513054e-07
+    },
+    "every_pair_nonzero_constants": false,
+    "every_pair_nonzero_dipole0": true,
+    "every_pair_nonzero_quad3": false,
+    "identities_structural": true,
+    "note_constants_in_portal_kernel": "Unit constant indicators on each regular solid are orthogonal to the degree-1 and degree-2 harmonics, hence lie in ker Plinear; their mixed quartics are numerical zeros (~1e-66). Nonzero mixed quartics appear once each solid is represented by a deterministic 3-mode (Pdip col 0) or 5-mode (harmonic_moments col 3)."
+  },
+  "T0": {
+    "eta": 5.9957979867413025,
+    "Delta_loaded": 0.0024891898404204027,
+    "Delta_frozen": 0.0024891898404204027,
+    "delta_match": true,
+    "ker_Hg": 2,
+    "ker_Hbits": 2,
+    "Hg_min": -5.329070518200751e-15,
+    "Hbits_spectrum_rounded": {
+      "0": 2,
+      "10": 12,
+      "16": 30,
+      "18": 20
+    },
+    "m1": 9,
+    "m2": 18,
+    "gaps1_m1": 0.0019153967537672845,
+    "gaps2_m2": 0.007657918270344455,
+    "E1": 0.0025584063752757697,
+    "E1_mult": 2,
+    "E1_origin": "geom_kernel_x_charge1_m9",
+    "E2": 0.010228725137850734,
+    "E2_mult": 2,
+    "E2_origin": "hist_kernel_x_charge2_m18",
+    "T0_lambda_1": 0.9847773659298271,
+    "T0_lambda_2": 0.9405134122394003,
+    "pole_z_1": 1.015457944705908,
+    "pole_z_2": 1.0632490584253973,
+    "residue_scalar_1": -1.015457944705908,
+    "residue_scalar_2": -1.0632490584253973,
+    "residue_operator": "(-exp(eta E_k)) * P_k",
+    "Gamma_eta_E2_minus_E1": 0.04598968179431101,
+    "transfers": {
+      "one_step": {
+        "lambda_1": 0.9847773659298271,
+        "lambda_2": 0.9405134122394003,
+        "ratio_2_over_1": 0.9550518165609617
+      },
+      "two_step": {
+        "lambda_1": 0.9697864604476887,
+        "lambda_2": 0.8845654786022001,
+        "ratio_2_over_1": 0.9121239723163929
+      },
+      "n_step_formula": "exp(-n * eta * E_k)",
+      "no_timestep_identification": true,
+      "gap_one_step": 0.044263953690426794
+    },
+    "lowest_fifteen": [
+      0.0025584063752757697,
+      0.0025584063752820425,
+      0.010228725137850734,
+      0.010228725137861534,
+      0.04045911795499582,
+      0.04045911795500662,
+      0.0632447903241214,
+      0.06324479032412768,
+      0.12374994441538655,
+      0.12374994441539282,
+      0.16135353476179307,
+      0.1613535347618039,
+      0.24998456190082718,
+      0.249984561900838,
+      0.30167341948480075
+    ]
+  },
+  "ward": {
+    "ker_Hg": 2,
+    "ker_Hbits": 2,
+    "vertex_constant_Hg_residual": 1.33692157020843e-15,
+    "face_constant_Hg_residual": 1.3043452376109788e-15,
+    "vertex_face_overlap": 0.0,
+    "clock_charge_geometry": 1,
+    "clock_charge_history": 2,
+    "history_quotient_by_Hbits_kernel": true,
+    "comment": "Adding Hbits-kernel vectors to y does not change the Gaussian completion used by history_source_solve; this is the original two-dimensional quotient."
+  },
+  "charged_matter": {
+    "H13_character": [
+      13.0,
+      1.0,
+      1.0,
+      3.0,
+      3.0
+    ],
+    "H13_decomposition": {
+      "1": 2.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 0.0,
+      "5": 1.0
+    },
+    "H51_character": [
+      51.0,
+      -1.0,
+      3.0,
+      1.0,
+      1.0
+    ],
+    "H51_decomposition": {
+      "1": 2.0,
+      "3": 3.0,
+      "3'": 3.0,
+      "4": 4.0,
+      "5": 3.0
+    },
+    "H64_decomposition": {
+      "1": 4.0,
+      "3": 4.0,
+      "3'": 4.0,
+      "4": 4.0,
+      "5": 4.0
+    },
+    "Hom_A5_4_to_H13": 0.0,
+    "Sym2_H13_quartets": 4.0,
+    "Sym2_H51_quartets": 90.0,
+    "H13_otimes_H51_quartets": 44.0,
+    "Weyl_Yukawa_dim_two_hidden_quartets_on_H13": 8.0,
+    "uniform_charge_H13_H51_dim_two_sources": 276.0,
+    "unique_vertex": false,
+    "mean_field_fermion_poles": "vanish in any centred hidden ensemble (restated from isolated cycle 07; no new fit)",
+    "unique_EM_current_on_90_edges": false,
+    "obstruction": "Geometry + A5 + diagonal U(1) + Ward leave an 8-real-parameter H13 Yukawa space and do not produce a unique charged current or fermion kinetic. Abstract H51 is not a canonical subspace of the signed 64 histories.",
+    "classification": "OPEN"
+  },
+  "ARF_targets": {
+    "Delta_delta": -0.00035959042756760504,
+    "R_alpha": 0.03380535602328556,
+    "C_mass": 4.446800183122003,
+    "R_mass": -2.4299997428893794
+  },
+  "derived_for_comparison": {
+    "E1": 0.0025584063752757697,
+    "E2": 0.010228725137850734,
+    "three_twentieths_minus_E1": 0.14744159362472423,
+    "delta_star": 0.1475108101595796,
+    "rel_diff_three_twentieths_minus_E1_vs_delta_star": 0.00046923025356911607,
+    "rel_diff_E1_vs_Delta": 0.027806852547524834,
+    "T0_lambda2_over_lambda1": 0.9550518165609617,
+    "Gamma": 0.04598968179431101,
+    "V_best_a": 0.48154259920004555,
+    "V_best_b": 4.0665394703346127e-07,
+    "V_archived_a": 0.490435304391,
+    "V_archived_b": 4.16132699108e-07,
+    "rho_hid_gold": 163951.19236992727
+  },
+  "comparisons": {
+    "E1_vs_Delta_delta": 0.0029179968028433746,
+    "E1_vs_R_alpha": 0.031246949648009795,
+    "Gamma_vs_R_alpha": 0.012184325771025448,
+    "three_twentieths_minus_E1_vs_delta_star": 6.921653485536527e-05,
+    "T0_ratio_vs_any_ARF_min": 0.9212464605376761,
+    "note": "None of these is promoted to an identity; see relative figures in derived."
+  },
+  "look_elsewhere": {
+    "cathedral_integer_list": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      12,
+      13,
+      15,
+      16,
+      18,
+      20,
+      24,
+      35,
+      40,
+      51,
+      63,
+      64,
+      79,
+      80,
+      81,
+      90,
+      1053
+    ],
+    "integers_appearing_in_ARF_writings": {
+      "Delta_delta": [
+        63,
+        40,
+        80,
+        1053,
+        81
+      ],
+      "R_alpha": [
+        3,
+        64,
+        1,
+        79
+      ],
+      "C_mass": [
+        5,
+        16,
+        7,
+        8
+      ],
+      "R_mass": [
+        3,
+        35,
+        4,
+        51
+      ],
+      "delta_star_prefactor": [
+        80,
+        1053
+      ]
+    },
+    "count_of_list_members_used_across_four_ARFs": 16,
+    "prior_near_hits": "First-programme cycle 05: R_alpha's exact writing is unique in its template but has 8 rivals within 1e-4 (nearest 1/(45 phi^2)+2/79). C_mass 5/16 coefficient has nearest rival 4/13 at relative 3.5e-6. 4/51 is isolated at 0.1% but 5/64 is 0.39% away. 1/40 has 34 Cathedral trace writings (first-programme cycle 04).",
+    "derivation_claimed": false
+  },
+  "classifications": {
+    "A_five_solid": "PROVED",
+    "B_T0_poles_residues": "PROVED",
+    "C_transfers_no_timestep_id": "PROVED",
+    "D_Ward": "PROVED",
+    "E_H13_H51_fermion_EM": "OPEN",
+    "ARF_derivation": "OPEN",
+    "A_five_solid_note": "Operator identities and all-five Eglobal support are proved. Constant-per-solid mixed quartics vanish because those vectors lie in ker Plinear. Deterministic dipole-0 indicators (each solid's Pdip column 0) give a strictly positive mixed quartic for every one of the 10 solid pairs. A fixed quadrupole column is not available on the tetrahedron or cube (harmonic_moments column 3 vanishes there)."
+  },
+  "advances_ARF": false
+}
