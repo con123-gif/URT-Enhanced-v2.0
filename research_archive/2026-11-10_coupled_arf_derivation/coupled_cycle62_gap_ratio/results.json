@@ -1,0 +1,58 @@
+{
+  "lambda_min_Delta0_plus": 2.7639320225002098,
+  "lambda_min_Delta1_T": 0.7639320225002085,
+  "rho_10_operator": 0.27639320225002045,
+  "closed_forms": {
+    "(3-sqrt5)/(5-sqrt5)": 0.276393202250021,
+    "(5-sqrt5)/10": 0.276393202250021,
+    "1/(phi*sqrt5)": 0.276393202250021
+  },
+  "operator_agrees_with_closed_form": true,
+  "closed_forms_agree": true,
+  "relative_op_vs_closed": 2.008412319093264e-15,
+  "T1_targets": {
+    "Delta_delta": -0.00035959042756760504,
+    "abs_Delta_delta": 0.00035959042756760504,
+    "R_alpha": 0.03380535602328556,
+    "abs_R_alpha": 0.03380535602328556,
+    "C_mass": 4.446800183122003,
+    "abs_C_mass": 4.446800183122003,
+    "R_mass": -2.4299997428893794,
+    "abs_R_mass": 2.4299997428893794,
+    "inv_alpha_delta_star": 137.0360100481497,
+    "inv_alpha_deff": 137.03599931239566
+  },
+  "T1_hits": [],
+  "T2_hits": [],
+  "look_elsewhere": {
+    "n_expressions_stored": 12066,
+    "n_distinct_values": 4763,
+    "n_hits": 1,
+    "hits": [
+      {
+        "value": 0.27639320225,
+        "rel_err": 7.390957334263773e-14,
+        "n_expr": 5,
+        "examples": [
+          "(3-sqrt5)/(5-sqrt5)",
+          "(2/phi2)/(5-sqrt5)",
+          "(3-sqrt5_gap)/(5-sqrt5)",
+          "(5-sqrt5)/(10)",
+          "(2)/(5+sqrt5)"
+        ]
+      }
+    ]
+  },
+  "arf_status": "no T1 hit at 1e-4",
+  "unique_T1_structural_identification": false,
+  "hypotheses": {
+    "H1": true,
+    "H2": true,
+    "H3": true
+  },
+  "classification": "PROVED",
+  "advances_physical_ARF": false,
+  "integrity": {
+    "predeclaration_sha256": "8995e34ff1880167166e5f2056d94170ef0c9f301028eda5e98f897e7781734c"
+  }
+}
