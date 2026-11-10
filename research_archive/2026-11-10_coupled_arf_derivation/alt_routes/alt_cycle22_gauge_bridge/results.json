@@ -1,0 +1,57 @@
+{
+  "H1_icosahedral_Ward": {
+    "n_off_edge_nonzero_pairs": 36,
+    "n_on_edge_nonzero_pairs": 30,
+    "off_edge_shortest_path_counts_minmax": [
+      2,
+      10
+    ],
+    "off_edge_shortest_path_lengths_present": [
+      2,
+      3
+    ],
+    "recipe_A": {
+      "gauge_invariance_abs_err": 2.842170943040401e-14,
+      "first_Ward_fd_residual": 3.3209420227109376e-06,
+      "gauge_invariance_holds": true,
+      "first_Ward_holds": true
+    },
+    "recipe_B": {
+      "gauge_invariance_abs_err": 0.0,
+      "first_Ward_fd_residual": 2.242228577031824e-06,
+      "gauge_invariance_holds": true,
+      "first_Ward_holds": true
+    },
+    "both_recipes_restore_Ward": true,
+    "no_new_continuous_couplings": true
+  },
+  "H2_current_not_unique": {
+    "current_A_minus_B_l2_norm": 5.042776201888009,
+    "current_A_minus_B_relative": 0.854609266252049,
+    "currents_differ": true,
+    "n_off_edge_pairs_with_multiple_shortest_paths": 36,
+    "n_off_edge_pairs_with_a_unique_shortest_path": 0
+  },
+  "H3_2I_does_not_select_a_path": {
+    "twoI_picks_a_unique_path_between_two_vertices": false,
+    "recipe_A_is_the_symmetry_invariant_shortest_path_average": true,
+    "note": "2I (and A5) act as graph symmetries. They permute shortest paths but do not pick one path between a given pair. Averaging over the group reproduces recipe A and leaves the discrete ambiguity of H2."
+  },
+  "H4_cross_solid": {
+    "n_cross_solid_vertex_pairs": 920,
+    "n_cross_solid_nonzero_Cbridge_entries": 836,
+    "cross_solid_pairs_have_an_incidence_path": false,
+    "full_Cbridge_Ward_restored_without_new_inter_solid_links": false,
+    "Tr_Cbridge": 160.0,
+    "Tr_Cbridge_squared": 799.9999999999995
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Ward for the icosahedral block of Cbridge can be restored without new continuous couplings, but the current depends on the path-weighting recipe, and the full five-solid Cbridge has hundreds of cross-solid entries with no incidence path."
+}
