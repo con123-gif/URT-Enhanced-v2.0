@@ -1,0 +1,44 @@
+{
+  "H1_uniqueness_of_F": {
+    "Hom_dimensions": {
+      "3x5_to_4": 1,
+      "3px5_to_4": 1,
+      "Sym2_5_to_4": 1,
+      "Sym2_3_to_4": 0,
+      "3x3_to_4": 0,
+      "3x3p_to_4": 1
+    },
+    "source_space": "3 \u2295 5 (no independent 3')",
+    "odd_quadratic_maps_3oplus5_to_4_3": 1,
+    "even_quadratic_maps_3oplus5_to_4_5": 1,
+    "F_unique_up_to_two_scales": true,
+    "those_scales_are_source_normalisations_not_yukawas": true
+  },
+  "H2_Ward_and_seagull": {
+    "first_second_Ward_cut_residual_yukawas": false,
+    "seagull_comes_from_covariant_Hodge_kinetic": true,
+    "seagull_constrains_yukawa_ratios": false
+  },
+  "H3_Jacobi": {
+    "facewise_product_commutative": true,
+    "Lie_bracket_of_commutative_product": 0,
+    "projected_product_lands_in_4_3_oplus_4_5": true,
+    "F_iterable_as_algebra_on_3_oplus_5": false,
+    "Jacobi_on_3_oplus_5_available_to_cut_yukawas": false
+  },
+  "H4_stability": {
+    "V_hist_positive_definite_in_h": true,
+    "V_hist_circ_F_nonnegative_quartic_in_t_f": true,
+    "bounded_below_independently_of_yukawa_ratios": true,
+    "stability_restricts_alpha_beta_gamma_delta": false
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "F is unique up to two source scales, and neither Ward/seagull, Jacobi-type closure, nor stability of V_hist \u2218 F cuts the residual four Yukawa parameters."
+}

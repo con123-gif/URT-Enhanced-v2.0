@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=bd3e8ebd2bd8797420c35ab6d4a1068802b38efd91ee51090302df1c233d5c5c
+bytes=1698
+test_joint_hodge_bridge.py sha256=5ed6184ca2beab0e20ecd2e827dd7fa8ceac31c7c67fee5432e6701128644815
+bytes=8023
