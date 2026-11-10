@@ -1,0 +1,250 @@
+{
+  "n_rotations": 60,
+  "class_counts": [
+    1,
+    15,
+    20,
+    12,
+    12
+  ],
+  "characters": {
+    "ico_vertices": [
+      12.0,
+      0.0,
+      0.0,
+      2.0,
+      2.0
+    ],
+    "ico_unsigned_edges": [
+      30.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ico_signed_edges": [
+      30.0,
+      -2.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ico_faces": [
+      20.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0
+    ],
+    "dod_vertices": null,
+    "dod_unsigned_edges": null,
+    "dod_signed_edges": null
+  },
+  "decompositions": {
+    "ico_vertices": {
+      "1": 1.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 0.0,
+      "5": 1.0
+    },
+    "ico_unsigned_edges": {
+      "1": 1.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 2.0,
+      "5": 3.0
+    },
+    "ico_signed_C1": {
+      "1": 0.0,
+      "3": 2.0,
+      "3'": 2.0,
+      "4": 2.0,
+      "5": 2.0
+    },
+    "ico_faces": {
+      "1": 1.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 2.0,
+      "5": 1.0
+    },
+    "ico_gradients": {
+      "1": 0.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 0.0,
+      "5": 1.0
+    },
+    "ico_conserved": {
+      "1": 0.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 2.0,
+      "5": 1.0
+    },
+    "dod_vertices": "preserved_by_12_of_60",
+    "dod_signed_C1": "preserved_by_12_of_60",
+    "dod_gradients": null,
+    "dod_conserved": null
+  },
+  "preservation": {
+    "dodecahedron": 12,
+    "tetrahedron": 12,
+    "cube": 12,
+    "octahedron": 12
+  },
+  "conserved_dims": {
+    "tetrahedron": {
+      "V": 4,
+      "E": 6,
+      "F": 4,
+      "b1_shape": [
+        4,
+        6
+      ],
+      "dim_ker_div": 3
+    },
+    "cube": {
+      "V": 8,
+      "E": 12,
+      "F": 6,
+      "b1_shape": [
+        8,
+        12
+      ],
+      "dim_ker_div": 5
+    },
+    "octahedron": {
+      "V": 6,
+      "E": 12,
+      "F": 8,
+      "b1_shape": [
+        6,
+        12
+      ],
+      "dim_ker_div": 7
+    },
+    "dodecahedron": {
+      "V": 20,
+      "E": 30,
+      "F": 12,
+      "b1_shape": [
+        20,
+        30
+      ],
+      "dim_ker_div": 11
+    },
+    "icosahedron": {
+      "V": 12,
+      "E": 30,
+      "F": 20,
+      "b1_shape": [
+        12,
+        30
+      ],
+      "dim_ker_div": 19
+    }
+  },
+  "Hom": {
+    "Hom_4plus4_to_signed_C1_ico": 4.0,
+    "Hom_4plus4_to_cons_ico": 4.0,
+    "Hom_4plus4_to_unsigned_edges_ico_Sym2_supported": 4.0,
+    "Hom_4plus4_to_signed_C1_dodeca": null,
+    "Hom_4plus4_to_cons_dodeca": null,
+    "Hom_4plus4_to_tetra_cube_octa": 0,
+    "reason_tco": "full A5 does not preserve those vertex sets; trivial action gives Hom(4,1)=0",
+    "Hom_4plus4_to_signed_C1_90": 4.0,
+    "Hom_4plus4_to_conserved_90_Ward": 4.0,
+    "H13_edge_supported_Sym2_pairings": 4.0,
+    "H13_edge_supported_Lambda2_pairings": 4.0,
+    "surviving_Ward_and_H13_ico_hopping": 4.0,
+    "convention_single_ico_A5_on_190": {
+      "C1_90": 4.0,
+      "Ward_conserved_90": 4.0,
+      "note": "archived dodeca/tetra/cube/octa vertex sets are each preserved by only 12 of the icosahedral 60, so they receive no geometric action of this A5"
+    },
+    "convention_each_A5_solid_uses_own_rotations": {
+      "C1_ico": 4.0,
+      "C1_dodeca": 4.0,
+      "C1_90": 8.0,
+      "Ward_ico": 4.0,
+      "Ward_dodeca": 0.0,
+      "Ward_90": 4.0
+    }
+  },
+  "unique_current": false,
+  "classification": "PROVED",
+  "obstruction": true,
+  "surviving_dimension": 4.0,
+  "advances_ARF": false,
+  "dodeca_own_A5": {
+    "n_rotations": 60,
+    "class_counts": [
+      1,
+      15,
+      20,
+      12,
+      12
+    ],
+    "chi_vertices": [
+      20.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0
+    ],
+    "chi_unsigned_edges": [
+      30.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "chi_signed_edges": [
+      30.0,
+      -2.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dec_vertices": {
+      "1": 1.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 2.0,
+      "5": 1.0
+    },
+    "dec_unsigned": {
+      "1": 1.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 2.0,
+      "5": 3.0
+    },
+    "dec_signed_C1": {
+      "1": 0.0,
+      "3": 2.0,
+      "3'": 2.0,
+      "4": 2.0,
+      "5": 2.0
+    },
+    "dec_gradients": {
+      "1": 0.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 2.0,
+      "5": 1.0
+    },
+    "dec_conserved": {
+      "1": 0.0,
+      "3": 1.0,
+      "3'": 1.0,
+      "4": 0.0,
+      "5": 1.0
+    },
+    "Hom_4plus4_to_signed_C1": 4.0,
+    "Hom_4plus4_to_conserved": 0.0
+  },
+  "note_alignment": "H13 vertex matter hops on the 12 icosahedral vertices, so the H13-coupled current lives on the 30 icosahedral edges. That space has Ward-surviving dimension 4 under either convention."
+}
