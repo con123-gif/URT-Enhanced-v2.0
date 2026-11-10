@@ -138,3 +138,41 @@ Result: no unique ray was derived from the declared premises, so no ARF comparis
 Predeclaration sha256: `f8c668ae3eb6c4846790aff4cd0ca721ffaecd8b8ed242ac25393fcac7e71c1a`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 16–20)
+
+Date: 10 November 2026 (Europe/London). Repo still read-only at `d71974d5ce01ad2f8f7992adf64af65810dd5436`. No commits or pushes.
+
+The log-det maximiser of alt_cycle14 is not the one-loop effective action of the coupled path integral: integrating fermions first gives −Tr log(K+Yh) as a functional of the hidden field, integrating the Gaussian hidden sector first gives a four-fermion theory, and the two quadratic expansions of ⟨log det(K+M)⟩ and log det(K+Σ) have opposite leading Yukawa dependence. Yukawas are not integration variables. The pure 3⊗5 → 4_3 ray therefore remains CONDITIONAL and is not promoted to PROVED. Hamming-parity orbit labels do not imply source-matching. None of the 24-clock, ρ*, the 2I lift, or the five-solid bridge breaks A5 to three nondegenerate charged masses. A unique Hodge Noether current on the 90 spatial edges exists and satisfies Ward, but Cbridge is non-local (36 off-edge pairs on the icosahedron) and the one-loop EM response is infrared-singular. No ARF comparison was performed.
+
+## alt_cycle16 — path-integral status of log det(K+Σ)
+Directory: `/workspace/arf_research/alt_cycle16_path_integral_logdet/`
+Classification: PROVED (H1–H6). The pure 3⊗5 → 4_3 ray remains CONDITIONAL, not promoted to PROVED. Advances ARF? No.
+Result: Euclidean Z_ψ[h] = det(K+Yh), so S_eff[h] contains −Tr log(K+Yh). The exact hidden Gaussian integral is a four-fermion theory, not det(K+Σ). On a two-channel Hodge analog, ⟨det(K+M)⟩ and det(K+Σ) differ by 26–45%. The quadratic shifts have opposite sign: the cycle-14 proxy prefers pure α, while ⟨log det(K+M)⟩ prefers pure β. Π/α² ≈ 0.482 > Π/β² ≈ 0.184 > 0; the hidden Hessian correction stiffens every inversion-allowed channel and does not pick a ray. Yukawas are parameters, not integration variables.
+Predeclaration sha256: `28f9483b82bd7faa8d873539939e8203a7c8e28365842d321392c73f6a5b7ac3`.
+
+## alt_cycle17 — source-matching from Hamming-parity orbit labels
+Directory: `/workspace/arf_research/alt_cycle17_source_matching/`
+Classification: H1 PROVED; H2 FALSIFIED; H3 PROVED. Advances ARF? No.
+Result: Hamming parity is constant on the four orbits and each 12-orbit decomposes as 1⊕3⊕3'⊕5 (permutation character (12, 0, 0, 2, 2)). Orbit projectors are scalars on each orbit and cannot kill 3'⊗5 → 4_3 while keeping 3⊗5 → 4_3. The invariant part of Hamming weight is the constant 3. Source-matching remains an extra assumption.
+Predeclaration sha256: `1026ea2729128baab1c05562df8c3f3ab4e73edd8fda413b013e1c4a7062f1ec`.
+
+## alt_cycle18 — minimal A5 breaking for three distinct charged masses
+Directory: `/workspace/arf_research/alt_cycle18_a5_breaking/`
+Classification: PROVED (H1–H4); overall FALSIFIED that any of the four structures works. Advances ARF? No.
+Result: Hodge, Hodge+Cbridge, the product with the 24-clock, and ρ* all preserve spatial degeneracies (1, 3, 3, 5). ρ* can separate the three numbers m3, m3', m5 but not their multiplicities, and the singlets stay massless. H13⊗2 ≅ 3·2 ⊕ 2·4' ⊕ 2·6 has no singlet. Selecting one of the six C5 vertex axes would split 3 → 1⊕2, but that choice is not supplied by these structures.
+Predeclaration sha256: `51c5d6e3b70f732fe9d8f3ed320df578a2443f623f99358cb78d545e0942a6d8`.
+
+## alt_cycle19 — vertex-to-spatial-edge charged current
+Directory: `/workspace/arf_research/alt_cycle19_spatial_current/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Unique Hodge Noether current j_e = −2q Im(ψ_i* ψ_j) on the 90 spatial edges (q = 1) matches ∂S/∂A_e and satisfies the first Ward identity on every solid. Cbridge is nonzero on all 36 off-edge icosahedral pairs; the Hodge current fails Ward for Hodge+ungauged Cbridge (residual ≈ 26.6). One-loop Π_T on the 19-dimensional transverse edge space is infrared-singular: λ_min(Π_T) ∼ 2/(ε n) with n = 12, so the predeclared ratio R_EM depends on the regulator (values 2.01, 21.64, 217.99, 2181.52 at ε = 10^{-1}…10^{-4}). No comparison with R_α was performed.
+Predeclaration sha256: `45c12b5daa735c331d270d90497acab6387c48b8220112bded4373b1afdc8800`.
+
+## alt_cycle20 — observable pipeline only if cycle 16 derived a ray
+Directory: `/workspace/arf_research/alt_cycle20_pipeline_if_ray/`
+Classification: PROVED (H1–H2). Advances ARF? No.
+Result: Cycle 16 did not set `pure_alpha_ray_derived` to true, so the one-loop observable pipeline was not run and no ARF comparison was performed. Independently, the A5 pattern (1, 1, 3, 3, 5) still cannot give three distinct lepton masses, and cycle 19 found no finite parameter-free EM response.
+Predeclaration sha256: `abac6aa80ac4311a830a59aa9ddfd1bb03972aeed5a9d6d39dc76622506c9b8c`.
+
+No repository files were modified, committed, or pushed.
