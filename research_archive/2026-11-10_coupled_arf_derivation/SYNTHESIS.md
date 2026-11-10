@@ -3,7 +3,7 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–26 and alt routes 01–39. It
+This note compiles coupled cycles 01–29 and alt routes 01–42. It
 performs no new numerical experiment.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
@@ -55,7 +55,9 @@ not positive definite, while about the derived π-flux vacuum it is
 positive definite but identity-like, not Maxwell-like (see below).
 Scripts: `coupled_cycle04_ratio_invariance/`,
 `coupled_cycle23_gi_current/`,
-`coupled_cycle25_piflux_kernel/`.
+`coupled_cycle25_piflux_kernel/`,
+`coupled_cycle28_unbroken_photon/`,
+`coupled_cycle29_momentum_expansion/`.
 
 ### E. Five-solid constraints, response, Ward, H13 ⊕ H51
 **PROVED** for the five-solid identities, the T0 poles/residues, the
@@ -124,6 +126,16 @@ Question D (cycles 23, 25, 26):
 - Because neither kernel is a unique positive Maxwell coefficient,
   α_eff = 1/κ was not compared to
   R_α = 3/(64 φ) + 1/(79 φ²) ≈ 0.03380535602328556.
+- Cycle 28: no second derived, independently gauged U(1) charges
+  the condensate (clock Wilson charges coincide with global Q_geo
+  on geometry; ker Hbits ⊥ 4_5; End_{A5}(4) ≅ ℝ). There is no
+  electroweak-like mixing angle and no massless Maxwell photon
+  from a combination Q_geo + c Q_other. The geometric U(1) is
+  Higgsed to ℤ2.
+- Cycle 29: the canonical Frobenius projection is
+  Π_T = m² I + κ Δ1_T + β Δ1_T² + R with, at large vev,
+  m² → 1/12 (T = 0) and tanh(10/(2η))/12 (T = η), and with
+  κ, β consistent with 0 (w_κ ∼ 10^{-5}). α_eff was not compared.
 
 ## Parameter-free predictions (not ARF identifications)
 
@@ -137,7 +149,9 @@ Question D (cycles 23, 25, 26):
   10 ⊕ 3 ⊕ 6 ⊕ 2 (spatial) or 2 ⊕ 6 ⊕ 12 ⊕ 4 (spinor).
 - One-loop transverse polarisation: −I/12 at A = 0, T = 0 and
   +I/12 at A = π, T = 0 (spatial graph); the spinor analogue
-  ±0.141772 I.
+  ±0.141772 I. The Frobenius projection of the π-flux kernel
+  confirms m² = 1/12 and κ = 0 at large vev (cycle 29).
+- No electroweak-like unbroken gauged combination (cycle 28).
 
 ## Remaining free parameters
 
@@ -157,16 +171,19 @@ found, so the one-loop / EM / ARF pipeline was not run.
    (Question C, condensed-phase).
 4. The archived one-loop action has no tree-level |D_A Δ|². Its
    induced Π_T is an isotropic mass from the unpaired (or
-   spin-lifted) charged mode, not a multiple of Δ1_T, so there is
-   no unique positive Maxwell κ and no derived α.
+   spin-lifted) charged mode, not a multiple of Δ1_T. The
+   cycle-29 projection gives κ consistent with 0, so there is no
+   unique positive Maxwell coefficient and no derived α. Cycle 28
+   finds no second gauged U(1) that could leave a massless mixed
+   photon.
 5. The condensed spectrum is not three nondegenerate charged
    singlets. A4 (spatial) or 2I (spinor) protects multiplets;
-   combining π-flux with the spin connection preserves A4 and
-   yields face traces −2 cos(π/10) without picking a U(1)
-   handedness (alt 38). Gaussian fluctuations of 4_5 / 4_3 do not
-   split multiplets: after sanitizing a noisy raw Hessian, the
-   static one-loop self-energy is a scalar on every A4 irrep
-   (alt 39).
+   combining π-flux with the spin connection preserves A4
+   (alt 38). The duality-lifted dodeca even channel condenses
+   with stabiliser D3, but the joint H13+dodeca vacuum aligns
+   with the icosahedral A4 ray (alt 40–41); the joint spectrum
+   still has leftover multiplets, so C_mass and R_mass were not
+   compared (alt 42).
 6. The H64 certificate’s nested counts 276 ⊃ 8 ⊃ 4 ⊃ 2 match the
    Yukawa / inversion / hopping dimensions, but the concrete
    subspaces are orthogonal inside Sym² H64 for every
@@ -205,6 +222,34 @@ found, so the one-loop / EM / ARF pipeline was not run.
   R_mass were not compared. Pred sha256
   `c64442acb624642fcd3ca34ef814be7659dd49f6a5fad10a7fe4b61c09ac3a5c`.
 
+## Alt routes 40–42 (integrated, not duplicated)
+
+- **alt 40 (PROVED).** Abstract H51 is not a condensate carrier
+  (no canonical embedding into H64). The only derived pairing on
+  the A5-covariant complement is the polar-duality lift of the
+  residual even/odd frames onto the dodecahedron. The even
+  channel condenses at T = η, y = 1 (y_c = 0.005791,
+  r_* = 9.85212×10^5) with stabiliser D3 (order 6), not A4. The
+  odd channel does not condense (y_c = 2.345). Tetrahedron, cube
+  and octahedron have Hodge kinetics but no derived pairing.
+  Pred sha256
+  `151029c0f4c22ffa3100a7138f7d6fd549816a2c32baf1d3363850dd453340c3`.
+- **alt 41 (PROVED).** A single shared hidden 4_5: there is no
+  extra relative-orientation modulus. The joint nuclear-norm
+  maximiser coincides with the icosahedral A4 ray (overlap 1) and
+  not with the dodeca D3 ray (overlap √6/4). Joint stabiliser
+  A4; Cbridge does not reduce it. Even joint y_c = 0.004147,
+  r_* = 1.79764×10^6; odd joint does not condense.
+  Pred sha256
+  `b7af64ab104d209945ef9a94ea52254aaa7527bd4f631a64310b640dc0a6163f`.
+- **alt 42 (PROVED).** Joint stabiliser is A4, not smaller. The
+  32-site spectrum has leftover multiplets (K0: two positive
+  singlets plus 4, 3, 5, 3, 12, 2; KC: four singlets plus the
+  same multiplets), so three nondegenerate charged singlets do
+  not appear. C_mass and R_mass were not compared.
+  Pred sha256
+  `8e569988e670badfa454e3e64e8d05a5e595715d5fcce478ecf2e8a2d692d228`.
+
 ## Paths to verification scripts
 
 Coupled line, under `/workspace/arf_research/coupled_cycleNN_*/`
@@ -214,7 +259,7 @@ and the same names in this archive: 01 reconstruct, 02 V, 03 F,
 measure, 19 vev and r, 20 effective reduction, 21 numpy-only
 verifier, 22 y_even normalisation, 23 GI current at A = 0, 24
 non-pairing ratios (DID_NOT_RUN), 25 π-flux kernel, 26 spinor
-π-flux kernel. Independent verifier:
+π-flux kernel, 28 unbroken combination, 29 momentum expansion. Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
 Alt line, under `alt_routes/alt_cycleNN_*/` and
@@ -222,6 +267,7 @@ Alt line, under `alt_routes/alt_cycleNN_*/` and
 charge-2 Higgs / London, 31–32 π-flux vacuum and spectrum, 33
 spinor lift, 34 induced κ at A = 0, 35 derived-vacuum spectrum,
 36 repo diff through 6bad7b3, 37 principal angles, 38 π-flux ×
-spinor, 39 Gaussian fluctuations.
+spinor, 39 Gaussian fluctuations, 40 dodeca / H51 condensation,
+41 joint H13+dodeca vacuum, 42 joint spectrum.
 
 No ARF was derived.
