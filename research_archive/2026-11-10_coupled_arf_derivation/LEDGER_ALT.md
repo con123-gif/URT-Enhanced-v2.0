@@ -286,3 +286,29 @@ Result: K_spin has gap 0.746746 and no zero mode; face holonomy traces equal 2 c
 Predeclaration sha256: `5a4062431318f8721cea277d629ddc867876297230efa45d05e6e7843913a11a`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 34–36)
+
+Date: 10 November 2026 (Europe/London). Repo read-only at `6bad7b3`. No commits or pushes.
+
+Integrating out the charged matter actually coupled to the 30 icosahedral edges does not produce a unique positive Maxwell coefficient. In the primary condensed sector (12-component H13, graph kinetic, even pairing) the T = 0 transverse Hessian is −I/12, an identity-like wrong-sign mass from the unpaired mode, not a multiple of Δ1_T. Generalised eigenvalues κ_i = (−1/12)/λ_i(Δ1_T) lie in [−0.109, −0.016] with spread 2.33; κ_iso = −1/48. Hodge Λ = K+I and the 13-site geometric Hodge give the same T = 0 Hessian; the spinor lift gives another negative multiple of I (−0.141771 I) and a still larger preference for π-flux (ΔΩ = −8.506). Other solids and the history/clock sector have no derived coupling to this A and were not added. With no external Maxwell term the derived vacuum is the all-π flux phase. Its spectrum is 10 ⊕ 3 ⊕ 6 ⊕ 2, not three singlets, so C_mass and R_mass were not compared. Because induced κ is negative and not Maxwell-like, 1/κ was not compared to R_α. The eight commits from d71974d to 6bad7b3 add only an H64 chronology / conditional charge-two pair-count certificate (verification rerun: PASS). They derive no Maxwell coefficient, no new spatial current, and no historical ARF.
+
+## alt_cycle34 — induced Maxwell coefficient from vacuum polarisation
+Directory: `/workspace/arf_research/alt_cycle34_induced_kappa/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Primary T = 0 Π_T = −(1/12) I_19 (rel 5.8×10^{-5}), all 19 eigenvalues negative, Maxwell residual 0.459, κ_iso = −1/48, κ_REM = (−1/12)/(3−√5) ≈ −0.109, generalised κ in [−0.109, −0.016]. T = η: residual gapped Hessian O(10^{-6}) with mixed signs; unpaired mode drops out at quadratic order. Full Ω(π)−Ω(0) = −5.000 (T = 0) and −1.880 (T = η). Hodge Λ = K+I: same T = 0 Hessian, T = η Π_T = −[tanh(1/(2η))/12] I ≈ −0.006934 I. 13-site Hodge: same T = 0 Hessian, unpaired energy 8 at A = π. Spinor: Π_T = −0.141771 I at T = 0, ΔΩ(π) = −8.506. Every sector selects π-flux. No unique positive κ.
+Predeclaration sha256: `fbbb0892457b055b3f5fa849d653507ee8f27091f3c371f189896d1bca606c11`.
+
+## alt_cycle35 — spectrum and induced-α in the derived vacuum
+Directory: `/workspace/arf_research/alt_cycle35_derived_vacuum/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Derived vacuum is all-π. Spectrum 10 ⊕ 3 ⊕ 6 ⊕ 2 (E_min = 10; pairing levels r_* times √(2/15), √(1/6), √(3/10), with the known 1.27×10^{-5} split of the 6). Not three nondegenerate charged singlets; C_mass and R_mass were not compared. Primary κ fails uniqueness, positivity and Maxwell-likeness, so 1/κ was not compared to R_α ≈ 0.033805. The spinor alternative also selects π-flux and, at A = 0, still has the 2 ⊕ 6 ⊕ 12 ⊕ 4 spectrum.
+Predeclaration sha256: `f401434d06dfc47b28d32e572dff02a4abcc038a5fbd592ffee0aa25dab4ccc2`.
+
+## alt_cycle36 — read-only diff of d71974d..6bad7b3
+Directory: `/workspace/arf_research/alt_cycle36_repo_diff/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Eight commits (10 November 2026, 07:23:17–07:24:31 Europe/London) add three files (279 lines) and modify nothing prior: an exact H64 Walsh/Hbits A5 quartet certificate and two notes. Verification script rerun: exit 0, all assertions reproduced (276 → 8 → 4 → 2 conditional pair counts; [2Q, Hbits] = 0; (2Q)^6 = J_64; unique Q-stationary zero-energy line). No derived Maxwell coefficient, no new charged current onto the 30 icosahedral edges, no change to H13 kinetics, no ARF derivation (all four historical ARFs remain OPEN; an intermediate count of four is not an ARF identification). Does not change the hypotheses of routes 34–35.
+Predeclaration sha256: `7443626033ad600a412600778aadd4626c56027e5e7fccbe69da91bb8fcf6610`.
+
+No repository files were modified, committed, or pushed.
