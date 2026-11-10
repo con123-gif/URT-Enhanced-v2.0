@@ -1,0 +1,154 @@
+{
+  "C_mass": 4.446800183122003,
+  "R_alpha": 0.03380535602328556,
+  "R_mass": -2.4299997428893794,
+  "classification": "PROVED",
+  "classification_note": "Spectrum and the predeclared \u03b1 / mass policies are recorded. The derived vacuum does not consist of three nondegenerate charged singlets (leftover multiplicity \u2265 2 after grouping at relative 10^{-5}). Primary induced \u03ba is not a unique, finite, positive, Maxwell-like coefficient, so 1/\u03ba is not compared to R_\u03b1.",
+  "from_cycle34": {
+    "classification34": "PROVED",
+    "derived_vacuum": {
+      "name": "pi_flux",
+      "reason": "Primary \u03a0_T has a negative eigenvalue at T=0 and the full \u03a9_matter is lower at the all-\u03c0 connection than at A=0; no external Maxwell term."
+    }
+  },
+  "hypotheses": {
+    "H1_primary_is_pi_flux": 1,
+    "H1_spectrum_not_three_singlets": 1,
+    "H2_alpha_not_compared": 1,
+    "H3_spinor_not_three_singlets": 1
+  },
+  "induced_alpha": {
+    "R_alpha": 0.03380535602328556,
+    "T1_strict": null,
+    "comparison_performed": 0,
+    "records": {
+      "T0": {
+        "alpha_REM": null,
+        "alpha_eff": null,
+        "identity_like": 1,
+        "kappa_REM": -0.10909111529455164,
+        "kappa_all_positive": 0,
+        "kappa_gen_spread": 2.3258371298811746,
+        "kappa_iso": -0.02083302209292566,
+        "kappa_unique": 0,
+        "maxwell_like": 0,
+        "residual_maxwell": 0.45883190130733376,
+        "skip_reason": "kappa not all positive; generalised eigenvalues not unique; Pi_T not Maxwell-like",
+        "usable": 0
+      },
+      "Teta": {
+        "alpha_REM": null,
+        "alpha_eff": null,
+        "identity_like": 0,
+        "kappa_REM": -8.222195794239403e-06,
+        "kappa_all_positive": 0,
+        "kappa_gen_spread": null,
+        "kappa_iso": -4.47414348234979e-07,
+        "kappa_unique": 0,
+        "maxwell_like": 0,
+        "residual_maxwell": 0.8818989429383535,
+        "skip_reason": "kappa not all positive; generalised eigenvalues not unique; Pi_T not Maxwell-like",
+        "usable": 0
+      }
+    },
+    "relative_errors_vs_R_alpha": null,
+    "skip_reason": "Primary induced \u03ba is not a unique, finite, positive, Maxwell-like coefficient, so 1/\u03ba is not compared to R_\u03b1."
+  },
+  "mass_ARFs": {
+    "T1_strict": null,
+    "comparison_performed": 0,
+    "recorded_ratios": {},
+    "relative_errors_vs_ARFs": null,
+    "skip_reason": "The derived vacuum does not consist of three nondegenerate charged singlets (leftover multiplicity \u2265 2 after grouping at relative 10^{-5})."
+  },
+  "spectrum": {
+    "A_is_all_pi": 1,
+    "Emin": 9.999999999695767,
+    "grouped_rel_1e-5": [
+      {
+        "mult": 1,
+        "value": 9.999999999695767
+      },
+      {
+        "mult": 3,
+        "value": 314487.9372397088
+      },
+      {
+        "mult": 3,
+        "value": 351605.96682497096
+      },
+      {
+        "mult": 3,
+        "value": 351610.4389609259
+      },
+      {
+        "mult": 2,
+        "value": 471731.90583836474
+      }
+    ],
+    "max_mult": 3,
+    "n_distinct_positive": 5,
+    "three_nondeg_singlets": 0,
+    "unpaired_lifted": 1,
+    "vacuum": "pi_flux"
+  },
+  "spinor_alternative": {
+    "T0_selects_pi": 1,
+    "T0_unstable": 1,
+    "cycle33_spectrum_if_A0": {
+      "Emin": 0.7467459579691105,
+      "distinct": [
+        {
+          "mult": 2,
+          "value": 0.7467459580094337
+        },
+        {
+          "mult": 2,
+          "value": 633507.6386518767
+        },
+        {
+          "mult": 2,
+          "value": 633507.6482725802
+        },
+        {
+          "mult": 2,
+          "value": 633507.670792154
+        },
+        {
+          "mult": 2,
+          "value": 708280.0098807791
+        },
+        {
+          "mult": 2,
+          "value": 708281.7627520445
+        },
+        {
+          "mult": 2,
+          "value": 708281.7841287636
+        },
+        {
+          "mult": 2,
+          "value": 708284.391360177
+        },
+        {
+          "mult": 2,
+          "value": 708284.4125745685
+        },
+        {
+          "mult": 2,
+          "value": 708286.1655050372
+        },
+        {
+          "mult": 4,
+          "value": 950261.478845608
+        }
+      ],
+      "max_mult": 4,
+      "n_distinct_positive": 11,
+      "three_distinct_levels": 0,
+      "three_or_more_distinct": 1,
+      "zero_mode_absent": 1
+    },
+    "three_distinct_if_A0": 0
+  }
+}
