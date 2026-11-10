@@ -1,0 +1,100 @@
+{
+  "classification": "PROVED",
+  "modular_or_periodicity_selects_r": "FALSIFIED",
+  "surviving_dimension": 2,
+  "is_a_ray": false,
+  "advances_physical_ARF": false,
+  "eta": 5.9957979867413025,
+  "tau_star_im": 0.9542608873703127,
+  "M1_histories": {
+    "spectrum": {
+      "0.0": 2,
+      "10.0": 12,
+      "16.0": 30,
+      "18.0": 20
+    },
+    "computed_spectrum": {
+      "-0.0": 2,
+      "10.0": 12,
+      "16.0": 30,
+      "18.0": 20
+    },
+    "matches_closed_form": true,
+    "Z_hist_at_eta": 2.0,
+    "Z_hist_closed_form": "2 + 12 e^{-10 eta} + 30 e^{-16 eta} + 20 e^{-18 eta}",
+    "integer_spectrum": true,
+    "T_invariant": true,
+    "Z_hist_S": 2.0,
+    "S_raw_relative": 0.0,
+    "S_auto64_relative": 3.473547412011678,
+    "S_auto24_relative": 0.7538583578305668,
+    "S_saturated_at_tau_star": true,
+    "S_saturation_reason": "eta and 4 pi^2/eta are both much larger than 1/10, so Z and Z o S both equal dim(ker Hbits)=2 up to e^{-10 eta}. This is not functional S-invariance.",
+    "S_auxiliary_beta": 0.5,
+    "Z_hist_aux": 2.0933874389078344,
+    "Z_hist_aux_S": 2.0,
+    "S_raw_auxiliary": 0.044610680838209606,
+    "S_invariant": false,
+    "Z_hist_beta_inf": 2.0,
+    "Z_hist_beta_0": 64.0,
+    "depends_on_r": false
+  },
+  "M2_clock": {
+    "lambda_18": 0.0076579182703445,
+    "lambda_18_matches_cycle14": true,
+    "E2_match_relative": 7.073737460717023e-13,
+    "integer_spectrum": false,
+    "T_invariant": false,
+    "Z_clock_at_eta": 2.4117378938808343,
+    "Z_clock_S": 2.2997158116124767,
+    "S_raw_relative": 0.04644869683085579,
+    "S_auto24_relative": 0.6723939226834321,
+    "S_auto64_relative": 3.2657569645126885,
+    "S_invariant": false,
+    "n_modes": 24,
+    "depends_on_r": false
+  },
+  "M3_free_Z": {
+    "depends_on_r": false,
+    "can_select_r": false
+  },
+  "M4_coupled_hidden": {
+    "Z_hid": "[2 pi / (beta mu3)]^2 [2 pi / (beta mu5)]^2",
+    "mu3": "H3 + y_o^2 pi_o",
+    "mu5": "H5 + y_e^2 pi_e",
+    "pi_o": 0.03686635944700456,
+    "pi_e": 0.026333113890717547,
+    "H3": 0.4444759966538212,
+    "H5": 2.7110263135564066e-06,
+    "periodicity_Z_beta_plus_24_over_Z": 0.001596416792873109,
+    "periodicity_holds": false,
+    "S_ratio_Z_beta_over_Z_1_over_beta": 5.98720411426834e-07,
+    "S_ratio_independent_of_r": true,
+    "S_ratio_sample_values": [
+      5.98720411426834e-07,
+      5.987204114268342e-07,
+      5.987204114268342e-07,
+      5.98720411426834e-07
+    ],
+    "periodicity_sample_values": [
+      0.0015964167928731094,
+      0.001596416792873109,
+      0.0015964167928731086,
+      0.0015964167928731088
+    ],
+    "S_holds_only_if_eta_equals_1": true,
+    "eta_equals_1": false,
+    "S_holds": false,
+    "modular_ratio_depends_on_r": false,
+    "selects_r": false
+  },
+  "look_elsewhere_24": {
+    "shared_integer_24": "24 is the clock length and the weight of Delta_Ramanujan = eta(tau)^24",
+    "Z_clock_is_Ramanujan_discriminant": false,
+    "reason": "Z_clock is a sum of 24 exponentials of gold-phased clock energies (pi/e)^2 * 4 sin^2(pi k/24 - 2 pi / phi^2). It is not identified with the discriminant modular form; the shared integer 24 is not a derivation."
+  },
+  "selects_r": false,
+  "integrity": {
+    "predeclaration_sha256": "be421004b294022f6215b4011785966b9248d7a14ccb27fb61dd4a8bcc1974c6"
+  }
+}
