@@ -1,0 +1,393 @@
+{
+  "eta": 5.9957979867413025,
+  "c_even": 1.3555131567782033e-06,
+  "nuclear_norm": 4.640379972803843,
+  "y_c_ico": 0.005940144040707988,
+  "omega_ref_A0_r0": 0.0,
+  "omega_A_pi_r0_y0": 0.08773582709207517,
+  "y_sample": [
+    0.0,
+    0.002970072020353994,
+    0.0058807426003009075,
+    0.005999545481115068,
+    0.01,
+    0.1,
+    1.0,
+    2.0
+  ],
+  "rows": [
+    {
+      "y": 0.0,
+      "y_over_yc": 0.0,
+      "side": "sub",
+      "A0": {
+        "r_star": 0.0,
+        "omega_star": 0.0,
+        "omega_0": 0.0,
+        "condenses": false,
+        "r_analytic": 0.0
+      },
+      "Api": {
+        "r_star": 0.0,
+        "omega_star": 0.08773582709207517,
+        "omega_0": 0.08773582709207517,
+        "condenses": false,
+        "r_analytic": 0.0
+      },
+      "assumed_dichotomy_A": "A=0",
+      "derived_A": "A=0",
+      "derived_r": 0.0,
+      "derived_omega": 0.0,
+      "dichotomy_matches_actual": true,
+      "omega_analytic_large_vev": -0.0,
+      "rel_to_large_vev": null
+    },
+    {
+      "y": 0.002970072020353994,
+      "y_over_yc": 0.5,
+      "side": "sub",
+      "A0": {
+        "r_star": 3.9078593942421165e-09,
+        "omega_star": -1.4210854694501467e-14,
+        "omega_0": 0.0,
+        "condenses": false,
+        "r_analytic": 2541.890252432801,
+        "relative_to_analytic": 0.9999999999984627
+      },
+      "Api": {
+        "r_star": 9.769219908541169e-08,
+        "omega_star": 0.08773582709206096,
+        "omega_0": 0.08773582709207517,
+        "condenses": false,
+        "r_analytic": 2541.890252432801,
+        "relative_to_analytic": 0.9999999999615672
+      },
+      "assumed_dichotomy_A": "A=0",
+      "derived_A": "A=0",
+      "derived_r": 3.9078593942421165e-09,
+      "derived_omega": -1.4210854694501467e-14,
+      "dichotomy_matches_actual": true,
+      "omega_analytic_large_vev": -8.758249816767169,
+      "rel_to_large_vev": null
+    },
+    {
+      "y": 0.0058807426003009075,
+      "y_over_yc": 0.9899999999999999,
+      "side": "sub",
+      "A0": {
+        "r_star": 8.378725849074043e-06,
+        "omega_star": -1.4115693561545569e-14,
+        "omega_0": 0.0,
+        "condenses": false,
+        "r_analytic": 5032.942699816946,
+        "relative_to_analytic": 0.9999999983352234
+      },
+      "Api": {
+        "r_star": 329.134176482018,
+        "omega_star": 0.08762239269581676,
+        "omega_0": 0.08773582709207517,
+        "condenses": true,
+        "r_analytic": 5032.942699816946,
+        "relative_to_analytic": 0.9346040286741216
+      },
+      "assumed_dichotomy_A": "A=0",
+      "derived_A": "A=0",
+      "derived_r": 8.378725849074043e-06,
+      "derived_omega": -1.4115693561545569e-14,
+      "dichotomy_matches_actual": true,
+      "omega_analytic_large_vev": -34.335842581654,
+      "rel_to_large_vev": null
+    },
+    {
+      "y": 0.005999545481115068,
+      "y_over_yc": 1.01,
+      "side": "super",
+      "A0": {
+        "r_star": 1177.3145715551675,
+        "omega_star": -0.018749995838859057,
+        "omega_0": 0.0,
+        "condenses": true,
+        "r_analytic": 5134.618309914259,
+        "relative_to_analytic": 0.770710401339486
+      },
+      "Api": {
+        "r_star": 1682.6319638895193,
+        "omega_star": 0.007708133676985973,
+        "omega_0": 0.08773582709207517,
+        "condenses": true,
+        "r_analytic": 5134.618309914259,
+        "relative_to_analytic": 0.672296583245422
+      },
+      "assumed_dichotomy_A": "A=pi",
+      "derived_A": "A=0",
+      "derived_r": 1177.3145715551675,
+      "derived_omega": -0.018749995838859057,
+      "dichotomy_matches_actual": false,
+      "omega_analytic_large_vev": -35.73716255233676,
+      "rel_to_large_vev": null
+    },
+    {
+      "y": 0.01,
+      "y_over_yc": 1.6834608607922124,
+      "side": "super",
+      "A0": {
+        "r_star": 8391.665491177955,
+        "omega_star": -48.93324554400266,
+        "omega_0": 0.0,
+        "condenses": true,
+        "r_analytic": 8558.345504799716,
+        "relative_to_analytic": 0.019475728518822098
+      },
+      "Api": {
+        "r_star": 8391.665491177955,
+        "omega_star": -50.11994841028559,
+        "omega_0": 0.08773582709207517,
+        "condenses": true,
+        "r_analytic": 8558.345504799716,
+        "relative_to_analytic": 0.019475728518822098
+      },
+      "assumed_dichotomy_A": "A=pi",
+      "derived_A": "A=pi",
+      "derived_r": 8391.665491177955,
+      "derived_omega": -50.11994841028559,
+      "dichotomy_matches_actual": true,
+      "omega_analytic_large_vev": -99.284937702021,
+      "rel_to_large_vev": null
+    },
+    {
+      "y": 0.1,
+      "y_over_yc": 16.834608607922124,
+      "side": "super",
+      "A0": {
+        "r_star": 84834.74684321776,
+        "omega_star": -9874.86878940251,
+        "omega_0": 0.0,
+        "condenses": true,
+        "r_analytic": 85583.45504799715,
+        "relative_to_analytic": 0.008748282064091745
+      },
+      "Api": {
+        "r_star": 84834.74684321776,
+        "omega_star": -9876.742033445862,
+        "omega_0": 0.08773582709207517,
+        "condenses": true,
+        "r_analytic": 85583.45504799715,
+        "relative_to_analytic": 0.008748282064091745
+      },
+      "assumed_dichotomy_A": "A=pi",
+      "derived_A": "A=pi",
+      "derived_r": 84834.74684321776,
+      "derived_omega": -9876.742033445862,
+      "dichotomy_matches_actual": true,
+      "omega_analytic_large_vev": -9928.4937702021,
+      "rel_to_large_vev": 0.005212445911136861
+    },
+    {
+      "y": 1.0,
+      "y_over_yc": 168.34608607922124,
+      "side": "super",
+      "A0": {
+        "r_star": 847758.9642527166,
+        "omega_star": -992708.0887916421,
+        "omega_0": 0.0,
+        "condenses": true,
+        "r_analytic": 855834.5504799715,
+        "relative_to_analytic": 0.009435919854749791
+      },
+      "Api": {
+        "r_star": 847758.9642527166,
+        "omega_star": -992709.9689600612,
+        "omega_0": 0.08773582709207517,
+        "condenses": true,
+        "r_analytic": 855834.5504799715,
+        "relative_to_analytic": 0.009435919854749791
+      },
+      "assumed_dichotomy_A": "A=pi",
+      "derived_A": "A=pi",
+      "derived_r": 847758.9642527166,
+      "derived_omega": -992709.9689600612,
+      "dichotomy_matches_actual": true,
+      "omega_analytic_large_vev": -992849.3770202099,
+      "rel_to_large_vev": 0.0001404120940953865
+    },
+    {
+      "y": 2.0,
+      "y_over_yc": 336.6921721584425,
+      "side": "super",
+      "A0": {
+        "r_star": 1722100.1925868813,
+        "omega_star": -3971197.129360406,
+        "omega_0": 0.0,
+        "condenses": true,
+        "r_analytic": 1711669.100959943,
+        "relative_to_analytic": 0.006094105233942962
+      },
+      "Api": {
+        "r_star": 1722100.1925868813,
+        "omega_star": -3971199.009581585,
+        "omega_0": 0.08773582709207517,
+        "condenses": true,
+        "r_analytic": 1711669.100959943,
+        "relative_to_analytic": 0.006094105233942962
+      },
+      "assumed_dichotomy_A": "A=pi",
+      "derived_A": "A=pi",
+      "derived_r": 1722100.1925868813,
+      "derived_omega": -3971199.009581585,
+      "dichotomy_matches_actual": true,
+      "omega_analytic_large_vev": -3971397.5080808396,
+      "rel_to_large_vev": 4.998202744771817e-05
+    }
+  ],
+  "P1": {
+    "subcritical_omega_constant": true,
+    "subcritical_omega_values": [
+      0.0,
+      -1.4210854694501467e-14,
+      -1.4115693561545569e-14
+    ],
+    "supercritical_omega_monotone_decreasing": true,
+    "supercritical_omega_values": [
+      -0.018749995838859057,
+      -50.11994841028559,
+      -9876.742033445862,
+      -992709.9689600612,
+      -3971199.009581585
+    ],
+    "argmin_index": 7,
+    "argmin_y": 2.0,
+    "at_endpoint_of_Y": true,
+    "interior_minimum": false,
+    "runaway_to_large_y": true,
+    "selects_unique_finite_y": false,
+    "note": "Minimising \u03a9 with respect to y is an extra postulate (cycle 22: y_even is a Yukawa, not a field). Even if granted, the sample shows no interior minimum."
+  },
+  "P2": {
+    "stability": [
+      {
+        "y": 0.0,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": 2.7110263135564066e-06,
+        "omega_0": 0.0,
+        "omega_probe_r1": 1.3555131567782033e-06,
+        "fd_curvature_r1": 2.7110263135564066e-06,
+        "d2_sign_negative": false,
+        "expected_unstable": false,
+        "matches_yc_rule": true
+      },
+      {
+        "y": 0.002970072020353994,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": 2.0332697351673048e-06,
+        "omega_0": 0.0,
+        "omega_probe_r1": 1.0166349193068405e-06,
+        "fd_curvature_r1": 2.033269838613681e-06,
+        "d2_sign_negative": false,
+        "expected_unstable": false,
+        "matches_yc_rule": true
+      },
+      {
+        "y": 0.0058807426003009075,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": 5.394942363977272e-08,
+        "omega_0": 0.0,
+        "omega_probe_r1": 2.697489604178065e-08,
+        "fd_curvature_r1": 5.39497920835613e-08,
+        "d2_sign_negative": false,
+        "expected_unstable": false,
+        "matches_yc_rule": true
+      },
+      {
+        "y": 0.005999545481115068,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": -5.449162890248458e-08,
+        "omega_0": 0.0,
+        "omega_probe_r1": -2.724560404796046e-08,
+        "fd_curvature_r1": -5.449120809592092e-08,
+        "d2_sign_negative": true,
+        "expected_unstable": true,
+        "matches_yc_rule": true
+      },
+      {
+        "y": 0.01,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": -4.9721319738073605e-06,
+        "omega_0": 0.0,
+        "omega_probe_r1": -2.4860653971532096e-06,
+        "fd_curvature_r1": -4.972130794306419e-06,
+        "d2_sign_negative": true,
+        "expected_unstable": true,
+        "matches_yc_rule": true
+      },
+      {
+        "y": 0.1,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": -0.0007656048024228204,
+        "omega_0": 0.0,
+        "omega_probe_r1": -0.0003828015705798466,
+        "fd_curvature_r1": -0.0007656031411596932,
+        "d2_sign_negative": true,
+        "expected_unstable": true,
+        "matches_yc_rule": true
+      },
+      {
+        "y": 1.0,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": -0.07682887184732412,
+        "omega_0": 0.0,
+        "omega_probe_r1": -0.03840665672669191,
+        "fd_curvature_r1": -0.07681331345338382,
+        "d2_sign_negative": true,
+        "expected_unstable": true,
+        "matches_yc_rule": true
+      },
+      {
+        "y": 2.0,
+        "chi_ico": 0.038415791436818836,
+        "analytic_curvature": -0.30732362046823714,
+        "omega_0": 0.0,
+        "omega_probe_r1": -0.15353754185652863,
+        "fd_curvature_r1": -0.30707508371305725,
+        "d2_sign_negative": true,
+        "expected_unstable": true,
+        "matches_yc_rule": true
+      }
+    ],
+    "origin_unstable_iff_y_gt_yc": true,
+    "selects_branch_independently_of_y": false
+  },
+  "P3": {
+    "T0_poles_r_independent": {
+      "z1": 1.015458,
+      "z2": 1.063249,
+      "source": "cycles 05/13/16",
+      "depends_on_y": false,
+      "selects_branch": false
+    },
+    "cycle13_bubble_chain": {
+      "pairing_kernel": "Dirac pi, FALSIFIED as coupled pairing measure in cycle 18",
+      "selects_r_in_cycle13": false,
+      "is_derived_selector": false,
+      "recomputed": false
+    },
+    "nambu_linearisation": {
+      "negative_mode_iff": "y > y_c(eta)",
+      "is_P2_again": true,
+      "selects_branch_independently_of_y": false
+    },
+    "photon_massless_not_used": true,
+    "pole_matching_to_T0_not_used": true
+  },
+  "hypotheses": {
+    "H1_runaway_no_min": true,
+    "H1_Api_for_all_super": false,
+    "H2": true,
+    "H3": true
+  },
+  "classification": "PROVED",
+  "selects_y_even_branch": false,
+  "advances_physical_ARF": false,
+  "integrity": {
+    "predeclaration_sha256": "0179844439f2dfdad768433323942df02208087748b71aa657e746c262a96797"
+  }
+}
