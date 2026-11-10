@@ -1,0 +1,48 @@
+=== EXACT 24x64 PURITY CERTIFICATE ===
+symbolic purity= 2*z**2 - 2*z + 64/3
+global exact minimum= 125/6 maximum= 64/3
+uniqueness: stationary in each piece only at z=1/2; golden z is irrational
+PASS exact sympy polynomial identity and extrema
+=== 24-fold WILSON ===
+m= 8 N= 192 factorization error= 1.0236001744782593e-13 eigphases= [0.3746608729367117, 1.5596713555890132, 2.071123441522717, 2.677517383760606]
+m= 16 N= 384 factorization error= 9.514902882508433e-14 eigphases= [1.2951076810833635, 1.8327150285819567, 1.845473577975979, 2.54407736232418]
+m= 32 N= 768 factorization error= 1.1022232655722963e-13 eigphases= [1.5194939664737155, 1.7895191529272585, 1.9033540314656714, 2.2866545808582495]
+fundamental steps 64 total-equivalent steps 1536 eigenphases rad [1.575286560485936, 1.7755235639062137, 1.9209986446067415, 2.2228018893365395] distance from identity 4.54209641249544 orthogonality residual 1.72191900426913e-13 det 0.9999999999999607
+fundamental steps 128 total-equivalent steps 3072 eigenphases rad [1.5892163173072127, 1.7720237217664503, 1.925407096959626, 2.206870288436898] distance from identity 4.542932192177115 orthogonality residual 7.875612261192554e-13 det 0.9999999999989893
+fundamental steps 256 total-equivalent steps 6144 eigenphases rad [1.592697615938036, 1.771148694282366, 1.926509015868729, 2.2028893635994544] distance from identity 4.543129945410811 orthogonality residual 7.368294839919989e-13 det 1.0000000000009723
+fundamental steps 512 total-equivalent steps 12288 eigenphases rad [1.5935678694470456, 1.7709299331036048, 1.9267844830705485, 2.201894255885481] distance from identity 4.543178685908197 orthogonality residual 9.654316690814088e-13 det 1.000000000001038
+fundamental steps 1024 total-equivalent steps 24576 eigenphases rad [1.5937854283786421, 1.7708752425384444, 1.9268533490823354, 2.2016454866756074] distance from identity 4.543190827445308 orthogonality residual 6.206642322764049e-13 det 1.0000000000003182
+PASS: exact 24-fold source-information holonomy factorization; no ARF matching
+=== GOLDEN BASEPOINT CONJUGACY ===
+substep 64 max independent-basepoint angle difference 0.018482529891641786 golden [1.575272650018413, 1.7713760752167507, 1.9051459026579005, 2.2269283489989484]
+substep 128 max independent-basepoint angle difference 0.004700091905789128 golden [1.5891503502273026, 1.7708468159111903, 1.9208731868367, 2.2081102706773907]
+substep 256 max independent-basepoint angle difference 0.0009650347335601328 golden [1.5926815531426946, 1.7709523166511631, 1.925750094472739, 2.203101818808298]
+substep 512 max independent-basepoint angle difference 0.0002914269877949405 golden [1.5935609257276726, 1.7708564922923, 1.9265002377692615, 2.201974736254625]
+substep 1024 max independent-basepoint angle difference 6.058272467091008e-05 golden [1.5937842112623135, 1.7708631769372785, 1.9268066182682622, 2.2016587920783333]
+PASS: arbitrary golden offset does not change holonomy eigenangle conjugacy class
+=== EIGHT-PART SOURCE-FIDELITY TEST ===
+eight exact-affine pieces of source fidelity (c0,c1,c2) in z=(192a)%1:
+0 [np.float64(2.40327350142659), np.float64(-0.35459625786835), np.float64(0.29361700597421)]
+1 [np.float64(2.34229424953244), np.float64(-0.23299213436399), np.float64(0.26101221285913)]
+2 [np.float64(2.37031432802758), np.float64(-0.37171043144674), np.float64(0.25869554434198)]
+3 [np.float64(2.25729944092282), np.float64(-0.35702171446269), np.float64(0.23291384247401)]
+4 [np.float64(2.13319156893415), np.float64(-0.10880597048533), np.float64(0.23291384247401)]
+5 [np.float64(2.25729944092282), np.float64(-0.14568065723721), np.float64(0.25869554434197)]
+6 [np.float64(2.37031432802758), np.float64(-0.28903229135426), np.float64(0.26101221285913)]
+7 [np.float64(2.34229424953244), np.float64(-0.23263775408006), np.float64(0.2936170059742)]
+global source fidelity minimum over all a 2.120484360243258 at a= 0.019616793867655836 one representative, k,z= 3 0.7664244225899205
+global source fidelity maximum over all a 2.403273501426586 at a= 0.041666666666666664 one representative, k,z= 7 1
+golden phase a= 0.38196601125010515 branch 1 fraction 0.3374741600201929
+golden source fidelity= 2.293391794670449 derivative dF/da= -10.909896918662279
+gap vs max= 0.10988170675613684 gap vs min= 0.17290743442719103
+check 24-clock row-rotation periodicity 1.7763568394002505e-15
+PASS exhaustive no-fit native source-fidelity selection test
+=== NATIVE GAUSSIAN DETERMINANT ===
+theta_golden= 2.39996322972865332223155550663361385312499901106
+48*theta mod 2*pi= 2.10089949774280288245950252035136111890185415329
+sin(48theta)= 0.86275490956887851497774723124742932532337930633
+native Gaussian phase action shift Δlogdet= 0.000000000000000000000167908034027388109739488984288075192879368245992961185894924987040556809
+exact native Gaussian derivative at golden= 0.00000000000000000000461832082295162101755496517128902039362495239838068344302201753624686568
+direct 24-mode logdet residual= 0.0
+minimum of each positive-E sector at 48theta=2*pi*k, golden not stationary
+PASS exact derivative, Chebyshev identity, irrationality nonstationarity proof
