@@ -1,0 +1,97 @@
+{
+  "integrity": {
+    "predeclaration_sha256": "0054edca2048b55d59fb6b0916a3fd86fb2f54a13f4a99c7010bc149e35d3d7a"
+  },
+  "algebraic": {
+    "definition_y_c": "sqrt(c_even / chi) whenever chi > 0",
+    "definition_c_even": "Delta^2 * c5",
+    "identity": "y_c(T) = Delta * sqrt(c5 / chi(T))",
+    "exact_by_substitution": true,
+    "c5": 0.21876996521511627,
+    "c_even": 1.3555131567782033e-06,
+    "c_even_minus_Delta2_c5": 0.0,
+    "Delta": 0.0024891898404204027,
+    "eta": 5.9957979867413025,
+    "sqrt_c5_over_chi_eta_ico_stored": 2.38637646042487,
+    "meaning": "y_c inherits its smallness from the rail gap Delta; sqrt(c5/chi) is an O(1) ratio of hidden kinetic to pairing bubble. This does not set y_even = Delta."
+  },
+  "stored_checks": {
+    "ico_eta_stored": {
+      "y_c": 0.005940144040707988,
+      "chi": 0.038415791436818836,
+      "Delta_sqrt_c5_over_chi": 0.005940144040707988,
+      "sqrt_ceven_over_chi": 0.005940144040707988,
+      "rel_yc_vs_Delta_formula": 0.0,
+      "rel_yc_vs_sqrt_ceven": 0.0,
+      "rel_two_rhs": 0.0,
+      "ok_1e12": true,
+      "tag": "ico_eta_stored"
+    },
+    "ico_T0_stored": {
+      "y_c": 0.003845446400083969,
+      "chi": 0.09166640779767476,
+      "Delta_sqrt_c5_over_chi": 0.003845446400083969,
+      "sqrt_ceven_over_chi": 0.003845446400083969,
+      "rel_yc_vs_Delta_formula": 0.0,
+      "rel_yc_vs_sqrt_ceven": 0.0,
+      "rel_two_rhs": 0.0,
+      "ok_1e12": true,
+      "tag": "ico_T0_stored"
+    },
+    "H13_eta_stored": {
+      "y_c": 0.006011318618427269,
+      "chi": 0.037511483697016956,
+      "Delta_sqrt_c5_over_chi": 0.0060113186184272685,
+      "sqrt_ceven_over_chi": 0.006011318618427269,
+      "rel_yc_vs_Delta_formula": 1.4428809934139373e-16,
+      "rel_yc_vs_sqrt_ceven": 0.0,
+      "rel_two_rhs": 1.4428809934139376e-16,
+      "ok_1e12": true,
+      "tag": "H13_eta_stored"
+    },
+    "H13_T0_stored": {
+      "y_c": 0.004185418011108536,
+      "chi": 0.07737952500974643,
+      "Delta_sqrt_c5_over_chi": 0.004185418011108536,
+      "sqrt_ceven_over_chi": 0.004185418011108536,
+      "rel_yc_vs_Delta_formula": 0.0,
+      "rel_yc_vs_sqrt_ceven": 0.0,
+      "rel_two_rhs": 0.0,
+      "ok_1e12": true,
+      "tag": "H13_T0_stored"
+    }
+  },
+  "fresh_checks": {
+    "ico_eta_fresh": {
+      "y_c": 0.005940144040707988,
+      "chi": 0.038415791436818836,
+      "Delta_sqrt_c5_over_chi": 0.005940144040707988,
+      "sqrt_ceven_over_chi": 0.005940144040707988,
+      "rel_yc_vs_Delta_formula": 0.0,
+      "rel_yc_vs_sqrt_ceven": 0.0,
+      "rel_two_rhs": 0.0,
+      "ok_1e12": true,
+      "tag": "ico_eta_fresh",
+      "Omega_pair": -3.8415791436818836e-08,
+      "s_used": 0.001,
+      "frob2_Delta_unit": 2.0
+    },
+    "ico_T0_fresh": {
+      "y_c": 0.003845446400083969,
+      "chi": 0.09166640779767476,
+      "Delta_sqrt_c5_over_chi": 0.003845446400083969,
+      "sqrt_ceven_over_chi": 0.003845446400083969,
+      "rel_yc_vs_Delta_formula": 0.0,
+      "rel_yc_vs_sqrt_ceven": 0.0,
+      "rel_two_rhs": 0.0,
+      "ok_1e12": true,
+      "tag": "ico_T0_fresh",
+      "Omega_pair": -9.166640779767476e-10,
+      "s_used": 0.0001,
+      "frob2_Delta_unit": 2.0
+    }
+  },
+  "H1_exact_identity": true,
+  "H2_numerical_1e12": true,
+  "H3_does_not_fix_y_even": true
+}
