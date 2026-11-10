@@ -1,0 +1,39 @@
+Newton Cathedral URT 2026-11-10 -- source-to-KMS recovery tests
+Run context: original five-Platonic/64-history/24-clock source read from ../forward; no fit
+--- URT_KMS_POSITIVE_TRANSFER_CLOCK_GATE_2026_11_10.py
+n, exact g3(n), exact g5(n), native p5(n)
+1 36*sqrt(5)/125 + 18/25 19/1350 0.010212949513394
+2 36*sqrt(5)/3125 + 18/625 19/303750 0.00114516820823942
+3 36*sqrt(5)/78125 + 18/15625 19/68343750 0.00012737056600247
+4 36*sqrt(5)/1953125 + 18/390625 19/15377343750 1.41538875902065e-05
+5 36*sqrt(5)/48828125 + 18/9765625 19/3459902343750 1.57267396286782e-06
+6 36*sqrt(5)/1220703125 + 18/244140625 19/778478027343750 1.74741795706978e-07
+native clock G_18: 0.04878508438851508 G_16: 0.05411455345484842 ratio: 1.109243821818375
+unweighted source clock odds: 0.11385304207603926 probability: 0.10221549681620105
+frozen KMS odds: 6.196066061652101e-06 probability: 6.196027670655334e-06
+original preweighted source odds (explicit Delta^2): 7.054409700231956e-07
+n_eff interpolating discrete Gram-odds to KMS: 4.375969259464454
+PASS original five-Platonic source; exact Gram spectral recursion; exact golden clock; no fitted inputs
+--- URT_HAAR_CLOCK_POLAR_KMS_BRIDGE_2026_11_10.py
+source+Haar24 geometric transfer A5-twirl: a= 0.2735258181967471 b= 0.2998221304708654 b/a= 1.0961383186694404
+native twirled p5= 0.5229322458859648 frozen KMS p5= 6.196027670655383e-06
+negative native modular gap if H5=1: -0.0917933837284221
+original transfer spectral variance ||T-Ttw||_F= 0.4511412123087565
+canonical polar isometric recovery ||U^T U-P_hidden|| 7.746954439459213e-15
+recovered frozen KMS with independently specified Delta ||rho-rho_star|| 9.21832842559994e-16
+Recovery is a change in the observation/instrument; original unconditioned transfer remains T
+PASS original URT Haar24 source; A5 twirl; canonical polar recovery; KMS-source distinction
+--- URT_POLAR_MINIMUM_DISTURBANCE_COVARIANCE_2026_11_10.py
+8 strict positive singular values; polar Procrustes unique minimizer
+minimum source-to-isometry distance squared 2.1512401059719175
+alternative isometry excess cost 1.0835229638163715
+local-clock U(1) and hidden block-symmetry equivariance error 5.780581263509179e-15
+source recovered p5 6.196027670701511e-06 frozen p5 6.196027670655383e-06
+PASS unique minimum-disturbance conditional recovery, gauge covariance and KMS factorization
+--- URT_POLAR_A4_TWO_ARF_FACTORS_2026_11_10.py
+native A4 singlet rank 0.9999999999999999
+minimally disturbing 24-clock recovery rank-one inverse energy contribution: 0.02499999999999996
+minimally disturbing complementary rank-seven trace: 0.8749999999999996
+original unconditioned clock transfer unweighted A4 singlet: 0.030497865686797226
+PASS conditional information-readout two-factor bridge: no fitted ARF inputs
+ALL FOUR SOURCE VERIFICATIONS PASSED
