@@ -3,9 +3,10 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–33 and alt routes 01–42. It
-performs no new numerical experiment. Alt cycles 43–45 were not
-present at the time of writing and were not integrated.
+This note compiles coupled cycles 01–37 and alt routes 01–48. It
+performs no new numerical experiment. Alt cycles 49–51 (C3 flux
+stability, spinor C3 spectrum, handedness) had no reports at the
+time of writing and were not integrated or duplicated.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -159,6 +160,23 @@ Question D (cycles 23, 25, 26):
   η places all O(1) Yukawas deep in the supercritical branch.
   High-T formula T_c^{HT} = y_e² / (4 c_even), from
   ||Δ_unit||_F² = 2.
+- Cycle 35: the archive uniquely states α(0)^{-1} = 4π K_γ for a
+  4D infrared transverse q² residue K_γ in the electron chart,
+  and does not uniquely extract that K_γ from the finite-graph
+  Π_T (λ free; no q → 0 mode; inequivalent discrete avatars;
+  “massless photon projection” is electroweak Q = Y+T_3 plus
+  running). No unique κ_IR; α_eff was not compared to R_α or
+  to 1/137.036.
+- Cycle 36: the spinor-lifted subcritical branch at T = η has
+  the same dichotomy. Vacuum A = 0 (Ω(π)−Ω(0) = 0.167833);
+  gap 0.746746^{⊕4} at A = 0; Π_T positive definite and
+  Maxwell-like (residual 0.046) but not unique (spread 0.215,
+  w_β = 0.176, m² = −1.28×10^{-4}). No α_eff comparison.
+- Cycle 37: no derived coupling selects the subcritical branch.
+  Δ and Δ² lie below y_c(0) (would never condense if they were
+  y_even); γ = 1/81 lies above y_c(η). Cycle 22 still stands:
+  y_even is FREE. Occupying the subcritical branch requires an
+  extra postulate y_even < y_c(η) ≈ 0.006.
 
 ## Parameter-free predictions (not ARF identifications)
 
@@ -250,6 +268,11 @@ then splits into two derived phases.
 - The KMS temperature η lies far below T_c for every O(1)
   Yukawa, so the programme’s only derived temperature selects
   the supercritical / London-massive side.
+- No unique archived map sends the subcritical Π_T to a
+  Thomson α_eff = 1/(4π K_γ) (cycle 35). The spinor lift
+  repeats the structural prediction (cycle 36) and does not
+  create such a map. The subcritical phase is consistent but
+  unselected (cycle 37).
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -309,12 +332,43 @@ then splits into two derived phases.
   Pred sha256
   `8e569988e670badfa454e3e64e8d05a5e595715d5fcce478ecf2e8a2d692d228`.
 
-## Alt routes 43–45
+## Alt routes 43–45 (integrated, not duplicated)
 
-Not present under `/workspace/arf_research/alt_cycle4{3,4,5}*` at
-the time of writing. The alt line’s mapping of the full joint 4_5
-potential for Z3 mixed minima and A4/D3 transitions was not
-duplicated.
+- **alt 43 (PROVED on H1–H2; H3 FALSIFIED).** Joint nuclear-norm
+  potential α(ĥ) = ||Δ_ico||_* + ||Δ_dodeca||_* on RP³. A4 is
+  the global maximiser. A C3 critical point exists as a
+  metastable local maximum of α below A4; it is not a winning
+  Z3 minimum. Pred sha256
+  `6245008f4aff749ff1899cd048469b19609485c66552812bbe9922824d251557`.
+- **alt 44 (PROVED).** Derived weight changes (two-sided spinor
+  lift, χ isotropy, Cbridge) do not invert the A4 < C3 < D3
+  ranking of Ω at T = η. Pred sha256
+  `5577ffaeb7554a66eff3d09bb0d1d1e99eb8d1b2959a8cd6bcbb82ca3a2b1957`.
+- **alt 45 (PROVED).** A smaller stabiliser does not win at
+  physical values (T = η, y = 1). C_mass and R_mass were not
+  compared. Pred sha256
+  `1ff4f1717c94f6a4a6c6c1ddf1add218a66b8ff3ae9435f4baf76c2c79cc4c6c`.
+
+## Alt routes 46–51 (integrated as far as reported; not duplicated)
+
+- **alt 46 (CONDITIONAL).** Metastable mixed C3 spectrum (not
+  the ground state). Three pairing-scale singlets appear;
+  predeclared ratios do not match |C_mass| or |R_mass| at
+  10^{-4} (closest: ρ31 vs |C_mass| at 1.333%). Catalogue
+  hits are look-elsewhere (84% of random numbers also hit).
+  Not an ARF. Pred sha256
+  `ee8be58a24f26fda80f07df42739581c667075f9d62dcf4316648e9c7aad3b24`.
+- **alt 47 (PROVED; H2 FALSIFIED).** Haar basins on RP³
+  (N = 800): A4 29.1%, C3 70.9%, D3 0. The C3 basin has
+  positive measure and is the majority; each A4 well is
+  individually larger. Pred sha256
+  `eea4f5803c9d5cce67d410be3e7807e731bf939addf961d0393fba06f681f9e7`.
+- **alt 48 (PROVED).** A4–A4 mountain pass in field space has
+  a D3 core (Ω-barrier 2.779×10^5). No spatial wall is derived
+  without a hidden kinetic, which is not introduced. Pred sha256
+  `d4fab25509c17ee83f02d0fc0f84b62b1df1c1d6704ffcd2ccf199a972e36d85`.
+- **alt 49–51.** No reports at the time of writing (C3 flux
+  stability, spinor C3 spectrum, handedness). Not duplicated.
 
 ## Paths to verification scripts
 
@@ -326,7 +380,9 @@ measure, 19 vev and r, 20 effective reduction, 21 numpy-only
 verifier, 22 y_even normalisation, 23 GI current at A = 0, 24
 non-pairing ratios (DID_NOT_RUN), 25 π-flux kernel, 26 spinor
 π-flux kernel, 28 unbroken combination, 29 momentum expansion, 31 Cathedral
-EM U(1) reading, 32 dichotomy / subcritical kernel, 33 T_c vs η.
+EM U(1) reading, 32 dichotomy / subcritical kernel, 33 T_c vs η,
+35 IR projection / κ_IR, 36 spinor subcritical kernel, 37 subcritical
+consistency.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -336,7 +392,9 @@ charge-2 Higgs / London, 31–32 π-flux vacuum and spectrum, 33
 spinor lift, 34 induced κ at A = 0, 35 derived-vacuum spectrum,
 36 repo diff through 6bad7b3, 37 principal angles, 38 π-flux ×
 spinor, 39 Gaussian fluctuations, 40 dodeca / H51 condensation,
-41 joint H13+dodeca vacuum, 42 joint spectrum.
-Alt 43–45 were not available.
+41 joint H13+dodeca vacuum, 42 joint spectrum, 43 joint 4_5 sphere,
+44 derived weights, 45 smaller-stabiliser spectrum, 46 C3 metastable
+spectrum, 47 RP³ basins, 48 A4 domain defects. Alt 49–51 had no
+reports.
 
 No ARF was derived.
