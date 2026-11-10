@@ -1,6 +1,6 @@
 # Cathedral orchestrator — ✅ PASS
 
-2026-11-10T20:26:37Z · [run 42892169483](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42892169483) · `7fc0078` · push on `newtons-cathedral` · checkpoint #4
+2026-11-10T20:34:26Z · [run 42894969958](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42894969958) · `c462563` · push on `newtons-cathedral` · checkpoint #5
 
 ## Physical status
 
@@ -19,31 +19,31 @@
 
 | Stage | Check | Claim | Status | Passing runs | Wall |
 |---|---|---|---|---|---|
-| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 4 | 0.06s |
-| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 4 | 0.0s |
-| integrity | `integrity.handover_claims` | independent | ✅ pass | 4 | 0.3s |
-| tests | `tests.suite` | regression | ✅ pass | 4 | 9.47s |
-| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 4 | 8.84s |
-| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 4 | 0.38s |
-| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 4 | 4.67s |
-| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 4 | 4.63s |
-| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 4 | 0.42s |
-| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 4 | 0.33s |
-| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 1 | 11.49s |
-| history | `history.native_24clock_fourier` | conditional | ✅ pass | 4 | 0.59s |
-| native | `native.wilson_source` | native | ✅ pass | 4 | 1.7s |
-| native | `native.output_gate` | native | ✅ pass | 4 | 0.12s |
-| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 4 | 0.41s |
-| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 4 | 0.28s |
-| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 4 | 0.58s |
-| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 4 | 0.09s |
+| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 5 | 0.04s |
+| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 5 | 0.0s |
+| integrity | `integrity.handover_claims` | independent | ✅ pass | 5 | 0.18s |
+| tests | `tests.suite` | regression | ✅ pass | 5 | 9.21s |
+| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 5 | 11.94s |
+| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 5 | 0.37s |
+| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 5 | 6.0s |
+| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 5 | 6.37s |
+| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 5 | 0.51s |
+| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 5 | 0.4s |
+| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 2 | 14.9s |
+| history | `history.native_24clock_fourier` | conditional | ✅ pass | 5 | 0.77s |
+| native | `native.wilson_source` | native | ✅ pass | 5 | 1.67s |
+| native | `native.output_gate` | native | ✅ pass | 5 | 0.12s |
+| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 5 | 0.41s |
+| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 5 | 0.27s |
+| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 5 | 0.67s |
+| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 5 | 0.09s |
 
 ## Archive sweep
 
-Executed at least once: **256/256** research scripts. Latest status: assertion_failed 1, missing_file 33, pass 222.
-This run: 256 executed (assertion_failed 1, missing_file 33, pass 222).
+Executed at least once: **259/259** research scripts. Latest status: missing_file 24, pass 235.
+This run: 259 executed (missing_file 24, pass 235).
 Regressions (passed before, failing now, same source): none.
-Recovered: none.
+Recovered: `research_archive/2026-11-08_native_h64_diffusion/cathedral_4d_wick_stability_counterterm_2026_11_08.py`, `research_archive/2026-11-08_native_h64_diffusion/cathedral_a5_two_covariance_rg_2026_11_08.py`, `research_archive/2026-11-08_native_h64_diffusion/cathedral_full50_complex_wick_2026_11_08.py`, `research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.py`, `research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_wick_exact_2026_11_08.py`, `research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.py`, `research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.py`, `research_archive/2026-11-08_native_h64_diffusion/cathedral_source_semigroup_and_4d_gaussian_2026_11_08.py`, `research_archive/2026-11-10_urt_arf_forward/aux_tests/CATHEDRAL_ARF_FOUR_CHANNELS_RECONCILIATION_2026-11-09.py`, `research_archive/2026-11-10_urt_arf_forward/aux_tests/CATHEDRAL_ARF_FULL_K64_SPECTRAL_PROOF_2026-11-09.py`.
 
 Full per-script table: `sweep.md` on this branch.
 
