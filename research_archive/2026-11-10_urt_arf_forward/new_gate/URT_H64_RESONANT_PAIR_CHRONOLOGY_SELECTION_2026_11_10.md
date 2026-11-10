@@ -76,7 +76,7 @@ Since `Q^6=J64/64`, any vector fixed by Q must lie in the rank-one Haar image, s
 ker(Hbits) ∩ ker(Q-I) = span{1}.
 ```
 
-This is an **unconditional finite theorem about the specified URT transition**. It distinguishes the stationary constant Walsh vacuum from the second, nonstationary zero-energy parity state, despite both being A5 singlets.
+This is an **unconditional finite theorem about the specified URT transition**. It distinguishes the stationary constant Walsh vacuum from the second, nonstationary zero-energy parity state, despite both being A5 singlets. Moreover, `Q^6=J64/64` annihilates every mean-zero positive-energy Walsh mode, so **no nonzero energy-16 or energy-18 quartet vector is itself Q-stationary**. The spectator-stationarity condition S is therefore deliberately imposed only on the zero-energy leg; imposing `Qv=v` on both legs would kill every resonant pairing. A physical vertex must instead transport the excited leg covariantly through chronology.
 
 **Extra premise S:** If a Weyl pair's zero-energy spectator must be stationary under Q, the zero-energy spectator multiplicity becomes one. Combined with R, the resonant quartet pairing count is **2 per hidden source, 4 total**.
 
