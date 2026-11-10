@@ -1,0 +1,30 @@
+{
+  "H1_both_fours_in_Ph": {
+    "trace_P3": 3.9999999999999996,
+    "trace_P5": 4.000000000000001,
+    "Ph_fixes_im_P3": true,
+    "Ph_fixes_im_P5": true
+  },
+  "H2_Lface_on_hidden": {
+    "Lface_on_im_P3": 3,
+    "Lface_on_im_P5": 5,
+    "P3_is_lambda3_four": true,
+    "P5_is_lambda5_four": true
+  },
+  "H3_history_embedding": {
+    "Hbits_on_Uh_P3": 18,
+    "Hbits_on_Uh_P5": 16,
+    "twenty_one_minus_Hbits_recovers_3_and_5": true,
+    "intertwiner_error": 3.589102811717147e-14,
+    "labels_hidden_quartets": true,
+    "picks_fermion_3_versus_3p": false
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "The dodecahedral split (3, 5) is exactly (4_3, 4_5) via face/vertex duality and the history embedding (Hbits 18 and 16, with 21\u2212Hbits reproducing 3 and 5). This labels the hidden quartets; it does not select a fermion Yukawa ratio."
+}
