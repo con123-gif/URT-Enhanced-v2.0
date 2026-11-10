@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact A5-equivariant vacuum-switching variance from the original URT Q6 source.
 
-Conditional vacuum transition P_t=(1-t)I+t J/5, 0<=t<=1.
+Conditional vacuum transition P_t=(1-t)I+t J/5, 0<=t<=5/4.
 The five normalized A4 singlets form a regular simplex in hidden 4_5.
 No physical ARF or measured constant enters. --native verifies archived source.
 """
@@ -27,6 +27,7 @@ def theorem():
     assert K2(F(1))==F(71,48)
     assert K2(F(0))==F(7,4)
     assert K2(F(1,2))==F(3307,1920)
+    assert K2(-F(1,4))==F(1315,768)
     def finite_var(n,u):
         return n*C[0]+2*sum((n-d)*C[d]*u**d for d in range(1,min(n,6)))
     assert finite_var(24,F(1))==F(2179,60)
@@ -38,6 +39,7 @@ def theorem():
         assert v==[F(1,64)]*64
     return {'K2_frozen':str(K2(F(1))),'K2_iid':str(K2(F(0))),
             'K2_half_mixing':str(K2(F(1,2))),
+            'K2_zero_diagonal_switching':str(K2(-F(1,4))),
             'open_24_step_variance':{'frozen':'2179/60','half_mixing':'79583/1920','iid':'42'},
             'C0_to_C5':[str(x) for x in C],
             'K2_u':'7/4 + 7*u/80 - 61*u**2/240 - u**3/48 - u**4/12'}
@@ -54,7 +56,7 @@ def independent_markov_test():
               for i in range(5))/5 for d in range(6)]
     assert lags==[F(8),F(4),F(0),F(0),F(0),F(0)],lags
     outcomes={}
-    for t in (F(0),F(1,2),F(1)):
+    for t in (F(0),F(1,2),F(1),F(5,4)):
         u=1-t
         m1=[[F(0)]*64 for _ in range(5)]
         m2=[[F(0)]*64 for _ in range(5)]
