@@ -1,0 +1,87 @@
+{
+  "H1_history_signature": {
+    "orbit_sizes": [
+      12,
+      12,
+      20,
+      20
+    ],
+    "all_flip_preserves_each_orbit": true,
+    "all_flip_swaps_paired_orbits": false,
+    "n_histories_staying_in_their_orbit_under_all_flip": 64,
+    "orbit_hamming_weights": {
+      "0": {
+        "1": 3,
+        "3": 6,
+        "5": 3
+      },
+      "1": {
+        "2": 6,
+        "4": 6
+      },
+      "2": {
+        "0": 1,
+        "2": 9,
+        "4": 9,
+        "6": 1
+      },
+      "3": {
+        "1": 3,
+        "3": 14,
+        "5": 3
+      }
+    },
+    "orbit_hamming_parity": {
+      "0": {
+        "1": 12
+      },
+      "1": {
+        "0": 12
+      },
+      "2": {
+        "0": 20
+      },
+      "3": {
+        "1": 20
+      }
+    },
+    "parity_constant_on_each_orbit": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    },
+    "inversion_swaps_3_and_3p": false,
+    "signature_picks_3_vs_3p": false,
+    "hamming_parity_distinguishes_the_two_12_orbits": true
+  },
+  "H2_clock_orientation": {
+    "theta": 2.399963229728653,
+    "minus_theta_mod_2pi": 3.883222077450933,
+    "galois_2pi_over_phibar2_mod_2pi": 3.8832220774509345,
+    "galois_equals_reversal": true,
+    "algebraic_identity": "2\u03c0/\u03c6\u0304\u00b2 = 2\u03c0 \u03c6\u00b2 \u2261 2\u03c0/\u03c6 \u2261 \u22122\u03c0/\u03c6\u00b2 (mod 2\u03c0)",
+    "L2_spectra_equal": true,
+    "archived_plus_theta_uses_phi_of_spatial_3": true,
+    "clock_spectrum_picks_a_yukawa_ray": false,
+    "clock_orientation_is_galois_tied_to_3_versus_3p": true
+  },
+  "H3_round102": {
+    "round102_swap_is_S5_outer_automorphism": true,
+    "realised_by_A5_or_inversion_or_allflip_or_clock": false
+  },
+  "H4_source_matching": {
+    "would_set_beta_to_zero_and_keep_alpha": true,
+    "is_an_extra_assumption": true,
+    "derived_from_C1_or_C2": false
+  },
+  "classification": {
+    "H1": "PROVED (refined: all-flip preserves each orbit rather than swapping pairs; Hamming parity labels the four orbits but still does not pick 3 vs 3')",
+    "H2": "PROVED (refined: clock reversal IS Galois dual of the golden angle mod 2\u03c0; spectra still coincide and do not pick a Yukawa ray)",
+    "H3": "PROVED",
+    "H4": "CONDITIONAL"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Hamming parity labels the four history orbits but does not pick 3 vs 3'. Clock reversal equals the Galois dual of 2\u03c0/\u03c6\u00b2, so the archived orientation is consistently the spatial-3 (\u03c6) choice; the clock spectrum itself is the same either way and does not set a Yukawa coupling to zero."
+}
