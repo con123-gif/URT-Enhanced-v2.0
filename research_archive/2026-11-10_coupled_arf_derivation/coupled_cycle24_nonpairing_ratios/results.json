@@ -1,0 +1,24 @@
+{
+  "integrity": {
+    "predeclaration_sha256": "a04f1c7d7d22f040c0c2ece666d747c6c5389378e3fe72d2a0f6f2d0f69488fc"
+  },
+  "classification": "DID_NOT_RUN",
+  "reason": "cycle 22 classified y_even as FREE; no unique derived scale",
+  "ARF_comparison_performed": false,
+  "symbolic_formulas": {
+    "g_star": "ye**2 * N / (4 * c_even)",
+    "E_3": "g_star * sqrt(2/15)",
+    "E_6pm": "g_star * sqrt(1/6) +/- sqrt(5)",
+    "E_2": "g_star * sqrt(3/10)",
+    "R13": "13 / E_3",
+    "R_odd": "sqrt(2*c_odd) / E_3",
+    "N": 4.640379972803843,
+    "c_even": 1.3555131567782033e-06,
+    "c_odd": 0.2222379983269106,
+    "at_ye_equals_1_E_3": 312506.59252678277,
+    "at_ye_equals_1_R13": 4.159912242134815e-05,
+    "at_ye_equals_1_R_odd": 2.1333640516610304e-06,
+    "scale": "all non-pairing ratios listed run as 1/ye**2"
+  },
+  "advances_physical_ARF": false
+}
