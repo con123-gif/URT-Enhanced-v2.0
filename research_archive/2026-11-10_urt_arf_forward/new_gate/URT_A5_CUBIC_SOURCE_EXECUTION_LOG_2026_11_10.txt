@@ -1,0 +1,22 @@
+tetrahedron 0 ||t||^2 3/40 one-time cubic (27/800+0*sqrt(5)) repeated (-39/3200+0*sqrt(5)) distinct (441/128000+-437/256000*sqrt(5)) total exact raw (1143/64000+-1311/128000*sqrt(5))
+  normalized asymptotic third cumulant -0.24551858328997472 square exactly (1535489/768000+-55499/64000*sqrt(5))
+  normalized asymptotic quadratic cumulant (67/48+0*sqrt(5)) = 1.3958333333333333
+tetrahedron 1 ||t||^2 1/30 one-time cubic (-1/100+0*sqrt(5)) repeated (-17/2400+0*sqrt(5)) distinct (-91/192000+-37/96000*sqrt(5)) total exact raw (-1091/32000+-37/16000*sqrt(5))
+  normalized asymptotic third cumulant -6.451841538010442 square exactly (32876847/1024000+1089909/256000*sqrt(5))
+  normalized asymptotic quadratic cumulant (33/16+0*sqrt(5)) = 2.0625
+tetrahedron 2 ||t||^2 1/30 one-time cubic (-1/100+0*sqrt(5)) repeated (73/7200+0*sqrt(5)) distinct (-77/64000+-11/288000*sqrt(5)) total exact raw (1267/96000+-11/48000*sqrt(5))
+  normalized asymptotic third cumulant 2.084437791213846 square exactly (4823127/1024000+-41811/256000*sqrt(5))
+  normalized asymptotic quadratic cumulant (25/24+0*sqrt(5)) = 1.0416666666666667
+tetrahedron 3 ||t||^2 3/40 one-time cubic (27/800+0*sqrt(5)) repeated (153/6400+0*sqrt(5)) distinct (1359/512000+99/128000*sqrt(5)) total exact raw (31077/256000+297/64000*sqrt(5))
+  normalized asymptotic third cumulant 6.415475981528216 square exactly (36030987/1024000+341847/128000*sqrt(5))
+  normalized asymptotic quadratic cumulant (33/16+0*sqrt(5)) = 2.0625
+tetrahedron 4 ||t||^2 1/30 one-time cubic (-1/100+0*sqrt(5)) repeated (17/1800+0*sqrt(5)) distinct (-913/576000+41/432000*sqrt(5)) total exact raw (847/96000+41/72000*sqrt(5))
+  normalized asymptotic third cumulant 1.6589803932592164 square exactly (6591161/3072000+34727/128000*sqrt(5))
+  normalized asymptotic quadratic cumulant (5/6+0*sqrt(5)) = 0.8333333333333334
+PASS exact Q(sqrt5) triple-time cumulants; no parameter fitting
+A5 regular 5-simplex Gram: diag 1/30, offdiag -1/120, sum zero: EXACT
+relative sign selection [1, -1, -1, 1, -1] one-time cubic raw (1/100+0*sqrt(5)) normalized one-time 1.6431676725154982
+five fixed-frame normalized cubic rates [-0.24551858328997458, 6.451841538010442, -2.0844377912138454, 6.415475981528214, -1.6589803932592164]
+fixed-frame A5-average source cubic-rate raw (4/375+1/16000*sqrt(5)) squared normalized exactly (786567/256000+9/250*sqrt(5)) value ± 1.7756761503551237
+A5-average quadratic rate exact (71/48+0*sqrt(5)) numerically 1.4791666666666667
+PASS: A5-equivariant simplex orienting removes relative tetrahedral sign ambiguity; global sign remains
