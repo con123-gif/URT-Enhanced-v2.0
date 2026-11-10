@@ -108,7 +108,11 @@ def classify(rc: int | None, text: str, timed_out: bool) -> tuple[str, str]:
         path = m[-1].replace(str(REPO) + os.sep, "")
         return "missing_file", ("sandbox path " if path.startswith("/mnt/data") else "") + path[-200:]
     if re.search(r"\bAssertionError\b|^E\s+assert\b|\bFAILED\b", text, re.M):
-        return "assertion_failed", ""
+        failed = re.findall(r"^FAILED (\S+)", text, re.M)
+        if failed:
+            return "assertion_failed", f"{len(failed)} failed, first: {failed[0]}"[:200]
+        msg = [m.strip() for m in re.findall(r"AssertionError:? ?(.*)$", text, re.M) if m.strip()]
+        return "assertion_failed", (msg[-1] if msg else "")[:200]
     if "MemoryError" in text:
         return "memory", ""
     last = [ln for ln in text.strip().splitlines() if ln.strip()][-1:] or [""]
