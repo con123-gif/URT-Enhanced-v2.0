@@ -1,0 +1,92 @@
+{
+  "branches": [
+    "* newtons-cathedral",
+    "  remotes/origin/HEAD -> origin/newtons-cathedral",
+    "  remotes/origin/newtons-cathedral"
+  ],
+  "n_commits_all_branches": 650,
+  "git_log_pickaxe": [],
+  "git_grep_all_commits": [],
+  "working_tree_hits_excluding_this_programme": [
+    {
+      "needle": "0.490435304391",
+      "files": [
+        "/workspace/arf_research/alt_cycle08_adversarial/results.json",
+        "/workspace/arf_research/alt_cycle08_adversarial/test_adversarial.py"
+      ]
+    },
+    {
+      "needle": "4.16132699108",
+      "files": [
+        "/workspace/arf_research/alt_cycle08_adversarial/results.json",
+        "/workspace/arf_research/alt_cycle08_adversarial/test_adversarial.py"
+      ]
+    },
+    {
+      "needle": "1.961741217564",
+      "files": []
+    },
+    {
+      "needle": "0.490435",
+      "files": [
+        "/workspace/arf_research/alt_cycle08_adversarial/results.json",
+        "/workspace/arf_research/alt_cycle08_adversarial/test_adversarial.py"
+      ]
+    },
+    {
+      "needle": "4.161326",
+      "files": [
+        "/workspace/arf_research/alt_cycle08_adversarial/results.json",
+        "/workspace/arf_research/alt_cycle08_adversarial/test_adversarial.py"
+      ]
+    },
+    {
+      "needle": "1.961741",
+      "files": []
+    },
+    {
+      "needle": "490435304391",
+      "files": [
+        "/workspace/arf_research/alt_cycle08_adversarial/results.json",
+        "/workspace/arf_research/alt_cycle08_adversarial/test_adversarial.py"
+      ]
+    }
+  ],
+  "notebook_hits": [],
+  "phrase_hits_research_archive": [],
+  "origin_found": false,
+  "classification": "OPEN",
+  "note": "Printed digits were not found in any of the 650 commits on the only branch (newtons-cathedral), nor in Colab notebooks, drive_archive, backups, or research_archive outside this programme. alt_cycle08 only reuses the digits supplied in the user brief.",
+  "advances_ARF": false,
+  "working_tree_hits_excluding_this_programme_and_alt_citations": [
+    {
+      "needle": "0.490435304391",
+      "files": []
+    },
+    {
+      "needle": "4.16132699108",
+      "files": []
+    },
+    {
+      "needle": "1.961741217564",
+      "files": []
+    },
+    {
+      "needle": "0.490435",
+      "files": []
+    },
+    {
+      "needle": "4.161326",
+      "files": []
+    },
+    {
+      "needle": "1.961741",
+      "files": []
+    },
+    {
+      "needle": "490435304391",
+      "files": []
+    }
+  ],
+  "alt_cycle08_note": "alt_cycle08_adversarial quotes the same user-supplied printed digits as a test polynomial; it is not an independent origin of those digits."
+}
