@@ -1,0 +1,179 @@
+{
+  "VcircF": {
+    "F_rank_archived": 8,
+    "F_surjective_onto_hidden": 1,
+    "hidden_quartic_beyond_Vhist": 0,
+    "note": "V\u2218F(\u03b1)=V_hist(F(\u03b1\u2299\u03b1)) is quartic in the visible 3\u22955 and quadratic in the hidden amplitude once h=F(S). Because F is surjective, this does not add a stabilising hidden quartic beyond V_hist.",
+    "rank1_cone_hits": {
+      "large_h5": {
+        "min_sq_residual": 2.607538390866606e-09,
+        "realizable": 1,
+        "relative_residual": 3.51529247162615e-21,
+        "||alpha||": 1890.156394896844,
+        "||q3||": 4.886288770296677e-05,
+        "||q5||": 861260.6863911556
+      },
+      "unit_hat5": {
+        "min_sq_residual": 4.6705625182288095e-15,
+        "realizable": 1,
+        "relative_residual": 4.670562518228809e-15,
+        "||alpha||": 1.515889545978325,
+        "||q3||": 6.305444521520741e-08,
+        "||q5||": 0.9999999877931285
+      }
+    }
+  },
+  "classification": "PROVED",
+  "classification_note": "The pairing vev is finite at T=\u03b7 and T=0; V\u2218F adds no hidden quartic; the huge number is the pairing/tree balance in cycle-03 hidden-frame units; cycle-13 \u03c0 stiffens the Dirac measure while \u03c7 softens pairing; A4 is robust.",
+  "hypotheses": {
+    "H1_no_hidden_quartic_from_VcircF": 1,
+    "H1_not_a_unit_error": 1,
+    "H1_vev_finite_T0": 1,
+    "H1_vev_finite_Teta": 1,
+    "H2_must_not_add": 1,
+    "H2_same_order_chi_and_pi_over_2": 1,
+    "H3_Dirac_positive_pairing_negative": 1,
+    "H4_induced_h3_in_singlet_or_tiny": 1,
+    "H4_stab_A4_robust": 1
+  },
+  "induced_h3_at_even_vac_ye1_yo1": {
+    "A4_singlet": {
+      "induced_h3_fraction_in_singlet": 0.27256011051085177,
+      "n_A4": 12,
+      "n_invariants": 1,
+      "projector_eigenvalues": [
+        1.0,
+        1.1102230246251565e-16,
+        1.4679774479538654e-17,
+        1.4679774479538654e-17
+      ],
+      "tadpole_fraction_in_singlet": 0.36155888219670984
+    },
+    "h3_star": [
+      3.800940680370564e-06,
+      3.801176455605225e-06,
+      1.2668201461701824e-06,
+      3.8011779893800533e-06
+    ],
+    "omega_at_h3_0": -992757.389477255,
+    "omega_at_h3_star": -992757.389477256,
+    "tadpole": [
+      3.4924596548080444e-07,
+      -3.4924596548080444e-07,
+      3.4924596548080444e-07,
+      -2.3283064365386963e-07
+    ],
+    "||h3_star||": 6.7044671594417835e-06,
+    "||h3||_over_||h5||": 7.784480663618948e-12,
+    "||tadpole||": 6.481730801553957e-07
+  },
+  "reconciliation": {
+    "Dirac_V_coeff_even_at_ye1": 0.013167912457422113,
+    "Dirac_V_coeff_odd_at_yo1": 0.24067110048461068,
+    "Dirac_even_stays_positive": 1,
+    "H3": 0.4444758415222168,
+    "H5": 2.7110241266790443e-06,
+    "analytic_r_pairing_only": 855835.2408483033,
+    "c_even": 1.3555120633395222e-06,
+    "c_odd": 0.2222379207611084,
+    "chi_even_T0": 0.09166665648763228,
+    "chi_even_Teta": 0.038415791436818836,
+    "chi_odd_Teta": 0.039225440673362755,
+    "computed_over_analytic": 1.0063393574725215,
+    "computed_r_Teta": 861260.6863776222,
+    "convention_V_hist": "c r^2 = (1/2) H r^2",
+    "counterfactual_r_if_pi_added": 88.10014472317299,
+    "dirac_added_stiffness_coeff_even": 0.013166556945358773,
+    "must_not_add_pi_to_pairing": 1,
+    "pairing_even_negative_hence_condenses": 1,
+    "pairing_odd_negative": 0,
+    "pairing_quad_coeff_even_at_ye1": -0.0384144359247555,
+    "pairing_quad_coeff_odd_at_yo1": 0.18301248008774565,
+    "pairing_softening_coeff_even": 0.038415791436818836,
+    "pi_e_cycle13": 0.026333113890717547,
+    "pi_e_over_2": 0.013166556945358773,
+    "pi_o_cycle13": 0.03686635944700456,
+    "pi_o_over_2": 0.01843317972350228,
+    "ratio_chi_even_to_pi_e_over_2": 2.917679359626394,
+    "reason": "\u03c0 is the second variation of the cycle-16 Dirac measure \u2212log det(\u039b+yh\u00b7T) on Hodge-weighted \u039b; \u03c7 is the second variation of the Nambu/BdG pairing measure on the graph Laplacian. Same residual frames, opposite thermodynamic sign, similar magnitude. They are alternative measures, not two terms of one potential.",
+    "same_order_of_magnitude": 1,
+    "units": "orthonormal hidden-frame units of coupled cycles 03/11, same as cycle-13 \u03c1",
+    "y_c_pairing_even": 0.0059401416448682486,
+    "y_c_pairing_odd": 2.380264212169863
+  },
+  "scans": {
+    "both_T0_ye1_yo1": {
+      "condenses": 1,
+      "finite": 1,
+      "omega_0": 0.0,
+      "omega_at_even_vac_with_yo": -992780.2780236942,
+      "omega_star": -992780.2780236942,
+      "r_star": 861260.6863776222
+    },
+    "both_Teta_ye1_yo1": {
+      "condenses": 1,
+      "finite": 1,
+      "omega_0": 0.0,
+      "omega_at_even_vac_with_yo": -992757.389477255,
+      "omega_star": -992757.389477255,
+      "r_star": 861260.6863776222
+    },
+    "even_T0_ye1_yo0": {
+      "condenses": 1,
+      "finite": 1,
+      "omega_0": 0.0,
+      "omega_star": -992780.2780236942,
+      "r_star": 861260.6863776222
+    },
+    "even_Teta_ye1_yo0": {
+      "condenses": 1,
+      "finite": 1,
+      "omega_0": 0.0,
+      "omega_star": -992757.389477255,
+      "r_star": 861260.6863776222
+    }
+  },
+  "stabilizer": {
+    "A4_robust": 1,
+    "even_plus_induced_odd": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "note": "induced ||h3||/||h5|| < 1e-6; stabiliser that of the even vacuum",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "even_unit_hat": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "induced_h3_tiny": 1
+  },
+  "vacuum_cycle25": {
+    "hat": [
+      -0.4012369303819193,
+      0.44033540414685846,
+      0.7883405336309653,
+      0.1537298298540743
+    ],
+    "nuc": 4.640379972803842,
+    "r": 861260.6863776222
+  }
+}
