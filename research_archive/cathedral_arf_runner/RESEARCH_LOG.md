@@ -20,9 +20,19 @@ commit as your result.
 
 - [x] Q10 [compute] (A) **Unsigned axis-order K₂ spectrum.** Using the exact six-bit source and A4 projectors, enumerate one representative of each of the 12 unsigned A5 axis-order classes; compute and count the distinct five-vacuum K₂ multisets without varying source coefficients. Record exact witnesses for any collisions. — GPT 2026-11-10: OBSTRUCTION (Exact unsigned A5 axis-order spectra and fixed-endpoint sign choice)
 
-- [ ] Q11 [compute] (A) **Signed A5 covariance.** Construct the induced signed six-axis transformations from the 60 proper icosahedral rotations, transport the five A4 vacua simultaneously, and test exact invariance of the five K₂ multiset under all 60 transformations on the native source. Record exact counterexamples if covariance fails.
+- [x] Q11 [compute] (A) **Signed A5 covariance.** Construct the induced signed six-axis transformations from the 60 proper icosahedral rotations, transport the five A4 vacua simultaneously, and test exact invariance of the five K₂ multiset under all 60 transformations on the native source. Record exact counterexamples if covariance fails. — GPT 2026-11-10: THEOREM + OBSTRUCTION (Signed A5 covariance and fixed-Q obstruction)
+- [ ] Q12 [compute] (A) **Signed axis dictionary classes.** Enumerate the 768 signed six-axis dictionaries modulo proper A5; evaluate exact five-vacuum K₂ spectra for one representative per orbit and count collisions. Keep the original fixed Q and distinguish passive joint covariance from active Q symmetry.
 
 ## Log
+
+### 2026-11-10 21:18 UTC — GPT — Gate A — Signed A5 covariance and fixed-Q obstruction
+- Task: Q11 [compute] — transport six antipodal-axis signs and all five A4 vacua under every proper A5 rotation; check native K₂ invariance and fixed-Q commutation.
+- Result: THEOREM + OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (specified native icosahedral source output and fixed six-bit chronology).
+- Statement: All 60 signed A5 rotations preserve the native five-vacuum K₂ multiset {5/6,25/24,67/48,33/16,33/16} under joint axis/vacuum transport (76,800 exact face-source equalities, 300 exact normalized K₂ checks). Only the identity of A5 commutes with the untransformed de Bruijn Q. Explicit witness at h=0: transported successors {54,55} versus successors after transport {44,45}.
+- Evidence: research.signed_a5_covariance; local Python 3.13.5, SymPy 1.14.0, NetworkX 3.6.1, 2026-11-10 21:18 UTC, exit 0, 3.73 s; script SHA256 1a08ef941f2e661c1df2ffa22441a33ab24525d0988ef1d44943af9e5ece4011; CI pending this commit.
+- Dead ends: treating passive joint A5 covariance as an active symmetry of the fixed URT chronology is invalid; no full charged-matter observable or ARF follows.
+- Next step: Q12 [compute] — enumerate 768 signed-axis dictionaries modulo proper A5 and compute exact representative K₂ spectra and collisions.
+
 
 ### 2026-11-10 21:13 UTC — GPT — Gate A — Exact unsigned A5 axis-order K₂ spectra
 - Task: Q10 [compute] — enumerate 12 A5 unsigned axis-order classes and compute exact K₂ multiset for each canonical representative, without free coefficients.

@@ -72,6 +72,7 @@ Each holds for its stated operators and hypotheses only.
   - The normalised master ρ cannot fix absolute field stiffness.
   - Isospectral BKM distinguishability is not a photon stiffness (`2026-10-24_alpha_physical_gate/`).
   - Literal Berry/Maxwell matching does not reproduce the historical α scalar. The naive Hilbert–Schmidt match of the native Peierls Hessian leaves a 42.9% residual (`2026-10-26_137_360_dual_spectral_bridge.md`).
+- **Signed A5 axis covariance (Q11, 2026-11-10).** The exact native hidden-5 icosahedral face source and five A4 singlets have 60/60 joint signed-axis/vacuum covariance: 76,800 face equalities and 300 exact K₂ invariances. This is passive transport, not active A5 symmetry of fixed Q: only the identity proper rotation commutes with Q. The signed dictionary and physical chronology remain unselected (`research_archive/2026-11-10_signed_a5_covariance/`).
 - **Chronology.**
   - A5 covariance plus the primitive shift does **not** select an axis-order-independent response: second moments 31440, 42480, 27120.
   - A5 averaging destroys Q's six-step Haar property.
