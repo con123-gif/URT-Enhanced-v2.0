@@ -18,9 +18,19 @@ commit as your result.
 - [x] Q8 [compute] **Independent K₂.** Recompute the five native K₂ rates {67/48, 33/16, 25/24, 33/16, 5/6} from the five-solid source with a standalone exact script that does not import the archived K₂ code. — GPT 2026-11-10: THEOREM (Independent exact five-vacuum K₂ reconstruction)
 - [ ] Q9 [review] **Claim ledger catch-up.** Fold the 2026-10-18 → 2026-11-10 results into `docs/CLAIM_LEDGER.md`: one row per result, with a `CONTINUITY_PROTOCOL.md` status class and a linked source file, using `RESEARCH_STATE.md` §2–4 as the index. Read each source; do not copy statuses blindly.
 
-- [ ] Q10 [compute] (A) **Unsigned axis-order K₂ spectrum.** Using the exact six-bit source and A4 projectors, enumerate one representative of each of the 12 unsigned A5 axis-order classes; compute and count the distinct five-vacuum K₂ multisets without varying source coefficients. Record exact witnesses for any collisions.
+- [x] Q10 [compute] (A) **Unsigned axis-order K₂ spectrum.** Using the exact six-bit source and A4 projectors, enumerate one representative of each of the 12 unsigned A5 axis-order classes; compute and count the distinct five-vacuum K₂ multisets without varying source coefficients. Record exact witnesses for any collisions. — GPT 2026-11-10: OBSTRUCTION (Exact unsigned A5 axis-order spectra and fixed-endpoint sign choice)
+
+- [ ] Q11 [compute] (A) **Signed A5 covariance.** Construct the induced signed six-axis transformations from the 60 proper icosahedral rotations, transport the five A4 vacua simultaneously, and test exact invariance of the five K₂ multiset under all 60 transformations on the native source. Record exact counterexamples if covariance fails.
 
 ## Log
+
+### 2026-11-10 21:13 UTC — GPT — Gate A — Exact unsigned A5 axis-order K₂ spectra
+- Task: Q10 [compute] — enumerate 12 A5 unsigned axis-order classes and compute exact K₂ multiset for each canonical representative, without free coefficients.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (fixed-endpoint six-axis source dictionary only).
+- Statement: Proper icosahedral A5 acts freely on 720 unsigned six-axis orders in 12 orbits of 60. Their 12 lexicographically first representatives have pairwise distinct five-vacuum K₂ multisets; exhaustive exact evaluation of all 720 fixed-endpoint orders gives 44 different multisets, with per-orbit counts (8,8,10,7,8,10,10,8,7,10,8,8). In the same unsigned orbit, (0,1,2,3,4,5) yields (5/6,25/24,67/48,33/16,33/16) but (0,5,4,2,1,3) yields (299/240,121/60,649/240,649/240,103/30).
+- Evidence: research.unsigned_axis_order_k2; CI pending new commit; executed GPT container 2026-11-10 21:09 UTC, Python 3.11 with SymPy and NetworkX, exit 0, 28.66 seconds. Exact Q(sqrt(5)) geometry/source projector and rational K₂ assertions; all 720 orders enumerated.
+- Dead ends: unsigned axis relabelings alone do not transport the signs induced by proper A5 rotations. The count 44 is scoped to fixed axis-endpoint signs, NOT a count of physical theories or A5-invariant observables.
+- Next step: Q11 [compute] — certify signed A5 covariance with simultaneous transportation of the five A4 vacua.
 
 ### 2026-11-10 20:50 UTC — GPT — Gate A — Independent exact five-vacuum K₂ reconstruction
 - Task: Q8 [compute]; reconstruct the five native source second cumulant rates without importing archived K₂ code.
