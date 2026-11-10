@@ -1,0 +1,29 @@
+{
+  "H1_cycle16_status": {
+    "pure_alpha_ray_derived": false,
+    "cycle16_H6_classification_of_the_ray": "CONDITIONAL on an extra variational principle (maximise log det(K+\u03a3) on the Yukawa sphere) that the coupled path integral does not supply. Not promoted to PROVED."
+  },
+  "H2_pipeline": {
+    "pipeline_run": false,
+    "arf_comparison_performed": false,
+    "reason": "Cycle 16 did not derive the pure 3\u22975 \u2192 4_3 ray (it remains CONDITIONAL on an extra variational principle that the coupled path integral does not supply). Per the predeclared policy, no ray was selected by hand and the one-loop observable pipeline was not run.",
+    "independent_mass_pattern": {
+      "forced_degeneracies": [
+        1,
+        1,
+        3,
+        3,
+        5
+      ],
+      "singlets_massless_at_this_order": true,
+      "can_reproduce_three_distinct_lepton_masses_without_breaking_A5": false
+    }
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Still missing: a derived unique source-to-charged-matter coupling that selects a Yukawa ray, an A5-breaking mechanism that produces three nondegenerate charged masses without new parameters, and a finite parameter-free electromagnetic response. None of alt_cycles 16\u201319 provides all three."
+}
