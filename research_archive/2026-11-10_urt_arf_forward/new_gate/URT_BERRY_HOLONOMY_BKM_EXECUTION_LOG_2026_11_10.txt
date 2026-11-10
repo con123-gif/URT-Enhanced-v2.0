@@ -1,0 +1,51 @@
+NOVEMBER 10 URT/Cathedral source Berry holonomy and KMS curvature, original sources in ../forward
+-- URT_POLAR_GOLDEN_PHASE_SPECIFICITY_TEST_2026_11_10.py
+shift, raw p5, min_positive_Gram, max_positive_Gram
+0.0 0.5076160359480912 0.038346810202345455 0.5545635426716797
+0.14285714285714285 0.5478374712629774 0.027084802036164948 0.5713966849054826
+0.3819660112501051 0.5229322458859645 0.051213771366547055 0.5077639599569109
+0.41421356237309515 0.5159086024680408 0.03737385804319621 0.5187268512226584
+0.495 0.5244747656469374 0.042233350592269354 0.5200119171094558
+all five polar readouts recover *identical* rho_star after externally fixed F
+PASS: minimum-disturbance polar isometry does not uniquely select the golden phase or KMS cost
+-- URT_NATIVE_POLAR_BERRY_CURRENT_2026_11_10.py
+eps, finite-difference Berry connection residual: 0.0001 0.010559385345738857
+eps, finite-difference Berry connection residual: 1e-05 0.00010561210310372912
+eps, finite-difference Berry connection residual: 1e-06 1.0571073576327826e-06
+source Berry connection ||A||_F= 103.8529607671056
+3-5 interquartet ||P3 A P5||_F= 62.20899114217872
+intraquartet norms 3,5= 40.09251320390745 37.92242986984267
+source singular values [0.71257558 0.69662961 0.64179598 0.52982487 0.49642753 0.47185764
+ 0.29566004 0.2263046 ]
+connection eigenvalues imaginary parts [ 62.91468824 -62.91468824  33.56352659 -33.56352659  16.22407255
+ -16.22407255   6.68804053  -6.68804053]
+PASS exact-bin derivative plus Sylvester current; original 64-history/24-clock/5-solid source
+-- URT_POLAR_PHASE_WILSON_HOLONOMY_2026_11_10.py
+steps 768 holonomy distance from I 4.5380304517449135 det 1.0000000000000695 minimum readout singular 0.15950997604917508 angles rad [-2.286654581, -1.903354031, -1.789519153, -1.519493966, 1.519493966, 1.789519153, 1.903354031, 2.286654581]
+steps 1536 holonomy distance from I 4.542096412495489 det 1.000000000000125 minimum readout singular 0.15950997604917508 angles rad [-2.222801889, -1.920998645, -1.775523564, -1.57528656, 1.57528656, 1.775523564, 1.920998645, 2.222801889]
+steps 3072 holonomy distance from I 4.542932192177427 det 1.0000000000000293 minimum readout singular 0.15950997604917508 angles rad [-2.206870288, -1.925407097, -1.772023722, -1.589216317, 1.589216317, 1.772023722, 1.925407097, 2.206870288]
+steps 6144 holonomy distance from I 4.543129945410545 det 1.0000000000000853 minimum readout singular 0.15950997604917508 angles rad [-2.202889364, -1.926509016, -1.771148694, -1.592697616, 1.592697616, 1.771148694, 1.926509016, 2.202889364]
+PASS closed phase loop holonomy computation: original 64 binary histories, 24 clock, hidden source
+-- URT_POLAR_WILSON_GAUGE_COVARIANCE_2026_11_10.py
+canonical Wilson vs gauge transported Wilson difference 1.1244145696600732e-13
+ungauged naive Wilson difference under changing output-clock frame 0.602539177788923
+nontrivial hidden frame-invariant holonomy: distance from identity 4.509854537910531
+unit determinant check (1.000000000000016+0j)
+PASS gauge-covariant clock-link Wilson and periodic hidden-frame equivariance
+-- URT_BERRY_A5_FRAME_SENSITIVITY_2026_11_10.py
+baseline positive phases [1.295107681083362, 1.8327150285819407, 1.84547357797598, 2.5440773623242032]
+A5 rotation 1 axis map [(0, 1), (3, 1), (1, -1), (4, -1), (5, -1), (2, -1)] phases [1.2951076810833828, 1.8327150285819982, 1.8454735779759162, 2.544077362324096] max change 1.0702549957386509e-13
+A5 rotation 2 axis map [(0, 1), (2, -1), (5, -1), (1, 1), (3, -1), (4, -1)] phases [1.2951076810834186, 1.8327150285820226, 1.8454735779759144, 2.544077362324038] max change 1.652011860642233e-13
+A5 rotation 3 axis map [(0, 1), (5, 1), (4, 1), (2, -1), (1, -1), (3, 1)] phases [1.2951076810833941, 1.8327150285819545, 1.8454735779759286, 2.544077362324096] max change 1.0702549957386509e-13
+A5 rotation 4 axis map [(0, 1), (4, -1), (3, -1), (5, 1), (2, 1), (1, 1)] phases [1.2951076810833746, 1.8327150285818967, 1.845473577975911, 2.54407736232414] max change 6.905587213168474e-14
+all 60 A5 rotations: source equivariance, hidden orthogonality, quartet preservation 9.728521763969243e-15 8.716585311202035e-15 1.9160967543780095e-15
+PASS original A5 source equivariance and hidden-frame invariant Wilson conjugacy class
+-- URT_BERRY_KMS_ENTROPIC_STIFFNESS_2026_11_10.py
+t, exact unitary-orbit relative entropy, quadratic approximation, relative error 0.001 0.011594146114399332 0.011601601158688177 0.0006430007190944698
+t, exact unitary-orbit relative entropy, quadratic approximation, relative error 0.0001 0.00011601526581726164 0.00011601601158688177 6.428202485916417e-06
+t, exact unitary-orbit relative entropy, quadratic approximation, relative error 1e-05 1.160160041291613e-06 1.1601601158688178e-06 6.428182498539156e-08
+Berry portal ||A35||^2= 3869.9585789276703
+exact KMS information stiffness (coefficient of t^2)= 11601.601158688176
+BKM Hessian / 2 cross-check= 11601.601158688169
+PASS exact KMS relative entropy identity and source-induced portal curvature
+ALL SIX ORIGINAL-SOURCE BERRY/CLOCK/KMS TESTS PASSED
