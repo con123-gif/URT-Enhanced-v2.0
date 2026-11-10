@@ -208,3 +208,29 @@ Result: Both hidden vevs vanish, so neither inversion parity is killed. The resi
 Predeclaration sha256: `ecef47269f8f29bf2f68391ca7d6cd27b01f06504b63920762cecbf5abf68d8f`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 25–27)
+
+Date: 10 November 2026 (Europe/London). Repo read-only at `6bad7b3` (“Add exact nilpotent-excited-Walsh chronology regression”). No commits or pushes.
+
+The hidden 4_5 stiffness 2.711×10^{-6} does produce dynamical pairing condensation: at the KMS temperature η the even-channel critical Yukawa is y_c = 0.00594, so any O(1) even Yukawa condenses and the vacuum is not the origin. The odd channel has y_c = 2.38 and stays at the origin for y_odd = 1. The condensate direction is selected by the nuclear norm of the pairing matrix and has stabiliser A4. The predeclared T=0 linear infrared singularity does not occur (the residual frames annihilate the constant mode). The ratio y_even : y_odd remains free. The A4 vacuum induces a rigid pairing spectrum 0 ⊕ 3 ⊕ 6 ⊕ 2 with large-vev mass ratios 0 : 2 : √5 : 3, not three nondegenerate charged singlets, and none of the recorded ratios matches |C_mass|, |R_mass| or |C/R| at 10^{-4}. The predeclared D6→H3 nearest-length rule yields 12 links and does not restore five-solid Ward; keeping all three observed root-parallel lengths does restore Ward but makes the path ambiguity worse, not unique.
+
+## alt_cycle25 — dynamical condensation from the soft 4_5
+Directory: `/workspace/arf_research/alt_cycle25_dynamical_condensation/`
+Classification: PROVED (main claims); H1 linear T=0 singularity FALSIFIED. Advances ARF? No.
+Result: y_c(even, T=η) = 0.005940, y_c(odd, T=η) = 2.380. Any O(1) even Yukawa condenses (||h5||_* ≈ 8.613×10^5 at y_even = 1); the odd channel does not condense at y_odd = 1. The nuclear-norm maximiser has stabiliser A4 (order 12). χ is isotropic; direction selection is large-vev. The residual frames annihilate the constant mode, so Ω_f is quadratic at T=0 and y_c(T=0) is finite (0.003845 even, 1.408 odd). The reduced Dirac-like curvature at the origin is positive. y_even : y_odd is not fixed and is qualitatively irrelevant except near the pure-odd axis.
+Predeclaration sha256: `af7c008ce85973517f5ae1c65699a5863c82c2a46e56d5cf6651f4c3eea4b8a2`.
+
+## alt_cycle26 — charged-fermion masses from the broken vacuum
+Directory: `/workspace/arf_research/alt_cycle26_condensate_masses/`
+Classification: PROVED. Advances ARF? No.
+Result: Unique A5-orbit (stab A4). Finite-r BdG spectrum: 0 (×1), 3.144879×10^5 (×3), 3.516060×10^5 (×3), 3.516104×10^5 (×3), 4.717319×10^5 (×2). The two nearby triplets are a Laplacian split (relative 1.27×10^{-5}) of one pairing level. Large-vev singular values give 0 ⊕ 3 ⊕ 6 ⊕ 2 with ratios 0 : 2 : √5 : 3, i.e. r times {0, √(2/15), √(1/6), √(3/10)}. Three distinct positive levels without new parameters, but not three singlets, and a charged massless mode survives. Recorded ratios were written before comparison; none matches |C_mass|, |R_mass| or |C/R| within 10^{-4} (closest μ4/μ1 vs |C/R|, relative error 0.180). T1/G_strict writes 3/2 and √5/2 as two-atom sums, which is the algebraic identity, not an ARF match.
+Predeclaration sha256: `df96bd9d6faea2f9ccd331ced90e04dc77d6822b9140c30dd6b014fd411a11c0`.
+
+## alt_cycle27 — inter-solid links from the D6 → H3 projection
+Directory: `/workspace/arf_research/alt_cycle27_d6_intersolid_links/`
+Classification: PROVED. Advances ARF? No.
+Result: 108 root-parallel inter-solid pairs, in three lengths φ^{-2} (12), φ (24) and 2 (72), with ratios φ³ and 2φ². Predeclared C4 keeps only the 12 shortest links (φ³ is not in {φ, φ^{-1}, φ², 2}); those join only dodecahedron to icosahedron (four components). 596 of 1063 nonzero Cbridge pairs stay disconnected, so full five-solid Ward is not restored and the 0.855 icosahedral ambiguity is unchanged (off-edge paths still 2–10). Diagnostic: keeping all three observed lengths (108 links) connects every Cbridge pair and restores exact Ward (residuals 1.1×10^{-13}), but 547 pairs have multiple shortest paths (ico off-edge 2–12) and the two currents differ by relative 0.589. The links do not make the gauged current unique.
+Predeclaration sha256: `e2bbdd4c35e5debc07e721124f4f1c3b7dc9da25043063b3ccdd9584a40d693b`.
+
+No repository files were modified, committed, or pushed.
