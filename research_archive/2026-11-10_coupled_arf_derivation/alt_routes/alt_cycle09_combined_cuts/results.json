@@ -1,0 +1,68 @@
+{
+  "H1_H13_after_inversion_Ward_positivity_Hodge": {
+    "channels": {
+      "3x5": {
+        "n4": 1,
+        "parity": "odd",
+        "hidden": "4_3"
+      },
+      "3px5": {
+        "n4": 1,
+        "parity": "odd",
+        "hidden": "4_3"
+      },
+      "3x3p": {
+        "n4": 1,
+        "parity": "even",
+        "hidden": "4_5"
+      },
+      "Sym2(5)": {
+        "n4": 1,
+        "parity": "even",
+        "hidden": "4_5"
+      }
+    },
+    "yukawa_dimension": 4,
+    "ward_cuts_dimension": false,
+    "positivity_cuts_dimension": false,
+    "hodge_fixes_kinetic_ray_scale_free": true,
+    "kinetic_scale_remaining": 1
+  },
+  "H2_H13_not_anomaly_free_alone": {
+    "q_vertex": 1,
+    "integer_qc_solving_both_anomalies": [],
+    "qc_minus_12_fails_cubic": {
+      "qc": -12,
+      "TrQ": 0,
+      "TrQ3": -1716
+    }
+  },
+  "H3_anomaly_free_H64": {
+    "pairing_m": {
+      "(1,-1,0,0)": 4,
+      "(1,-1,2,-2)": 4,
+      "(1,-1,-2,2)": 4,
+      "(1,-1,1,-1)": 35,
+      "(-1,1,0,0)": 4,
+      "(0,0,0,0)": 0
+    },
+    "residual_after_inversion_equals_m_not_2m": true,
+    "residual_minimal": 4,
+    "residual_at_(1,-1,1,-1)": 35,
+    "is_a_ray": false
+  },
+  "H4_combined": {
+    "residual_yukawa_dimension": 4,
+    "residual_including_kinetic_scale": 5,
+    "unique_ray": false
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "All proven cuts together leave 4 real Yukawa parameters plus one kinetic scale. The residual space is not a ray."
+}

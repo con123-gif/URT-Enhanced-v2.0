@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=55998793b16af7fdf0ae60d8d745a3ce30feb873bb5afe89ce7d1b50ba9bf9b6
+bytes=1957
+test_combined_cuts.py sha256=c376786747b9b77f215e3c903e9d4d400dcc9f67fbff95a409c867390d109fe3
+bytes=5412
