@@ -1,0 +1,40 @@
+{
+  "H1_vevs": {
+    "hidden_minimum_at_origin": true,
+    "stabiliser": "A5",
+    "hidden_vev_4_3": 0,
+    "hidden_vev_4_5": 0,
+    "only_4_3_has_nonzero_vev": false,
+    "only_4_5_has_nonzero_vev": false,
+    "both_vevs_vanish": true,
+    "one_inversion_parity_killed_by_the_vacuum": false,
+    "V_F_vanishes_for_every_t_at_f_equals_0": true
+  },
+  "H2_ratio": {
+    "y_even_over_y_odd_fixed_by_the_vacuum": false,
+    "ratio_value": null,
+    "residual_dimension_remains": 2
+  },
+  "H3_stiffness_is_not_the_vacuum": {
+    "hidden_hessian_4_3": 0.4444759966538212,
+    "hidden_hessian_4_5": 2.7110263135564066e-06,
+    "named_extra_recipes": {
+      "stiffness_c3_over_Delta2_c5": 163951.19236992727,
+      "reciprocal_stiffness": 6.099376195713627e-06,
+      "sqrt_H5_over_H3": 0.0024696915183305035,
+      "Delta2": 6.19606606165215e-06,
+      "democratic_one": 1.0
+    },
+    "recipe_max_over_min": 26879993479.5209,
+    "identifying_the_ratio_with_a_stiffness_recipe_is_extra": true,
+    "note": "The location of the minimum (the origin of both quartets) does not prefer one inversion parity. The stiffness ratio c3/(\u0394\u00b2 c5) is a property of the Hessian at that origin and was already listed in coupled cycle 12 as an extra matching recipe, not a Ward identity."
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "The residual pairing-current ratio y_even : y_odd remains free. The V_hist vacuum sets both hidden vevs to zero and does not kill either inversion parity."
+}
