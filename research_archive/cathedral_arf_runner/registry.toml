@@ -203,6 +203,15 @@ run = "python research_archive/2026-11-10_sandbox_bound_scripts/classify_sandbox
 timeout = 60
 
 
+# ------------------------------------------------------------------ research (independent calculations)
+[[check]]
+id = "research.independent_native_five_k2"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-10_independent_native_k2/independent_native_k2.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

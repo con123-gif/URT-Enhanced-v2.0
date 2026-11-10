@@ -15,10 +15,20 @@ commit as your result.
 - [x] Q5 [repair] **Sandbox-bound scripts.** For the 14 scripts that fail on `/mnt/data` paths (`sweep.md`), classify each as write-only there (runnable if the runner creates `/mnt/data`) or reading inputs that existed only in ChatGPT's sandbox. List both groups, and for write-only ones propose the one-line sweep change. — Grok 2026-11-10: VERIFIED-ARCHIVE, 3 write-only / 11 read-input (log: "Sandbox-bound /mnt/data classification")
 - [ ] Q6 [repair] **Missing intermediates.** For each remaining `missing_file` script, find whether another archived script produces the missing file. Record producer → consumer pairs; where a producer exists, say what ordering the sweep needs.
 - [ ] Q7 [review] **Independent review** of Theorems 1–2 in `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_Q6_CUMULANTS_AND_A5_MIXING_THEOREMS_2026_11_10.md` (finite Poisson inverse and cumulant recursion; non-ergodic A5 mixing with κ₄ ≈ (1493/1920)n²). Re-derive; AGREE / DISAGREE / PARTIAL with reasons.
-- [ ] Q8 [compute] **Independent K₂.** Recompute the five native K₂ rates {67/48, 33/16, 25/24, 33/16, 5/6} from the five-solid source with a standalone exact script that does not import the archived K₂ code.
+- [x] Q8 [compute] **Independent K₂.** Recompute the five native K₂ rates {67/48, 33/16, 25/24, 33/16, 5/6} from the five-solid source with a standalone exact script that does not import the archived K₂ code. — GPT 2026-11-10: THEOREM (Independent exact five-vacuum K₂ reconstruction)
 - [ ] Q9 [review] **Claim ledger catch-up.** Fold the 2026-10-18 → 2026-11-10 results into `docs/CLAIM_LEDGER.md`: one row per result, with a `CONTINUITY_PROTOCOL.md` status class and a linked source file, using `RESEARCH_STATE.md` §2–4 as the index. Read each source; do not copy statuses blindly.
 
+- [ ] Q10 [compute] (A) **Unsigned axis-order K₂ spectrum.** Using the exact six-bit source and A4 projectors, enumerate one representative of each of the 12 unsigned A5 axis-order classes; compute and count the distinct five-vacuum K₂ multisets without varying source coefficients. Record exact witnesses for any collisions.
+
 ## Log
+
+### 2026-11-10 20:50 UTC — GPT — Gate A — Independent exact five-vacuum K₂ reconstruction
+- Task: Q8 [compute]; reconstruct the five native source second cumulant rates without importing archived K₂ code.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (stipulated finite six-axis dictionary).
+- Statement: For the canonical 64-history Q and the five rank-one A4 normalizer singlets in the native hidden-5 icosahedral face output, the exact unit-normalized K₂ multiset is {5/6, 25/24, 67/48, 33/16, 33/16}; its equal-vacuum mean is 71/48.
+- Evidence: research.independent_native_five_k2; CI pending first run from this commit; executed in GPT container on 2026-11-10 using Python 3.11, sympy 1.14.0 and networkx 3.6.1, exit 0, wall time 1.45 s. Script reconstructed geometry, A5/A4 projectors and Q⁶ exactly, with no archived imports.
+- Dead ends: none new; rates depend on the archived choice of six-bit antipodal ordering. This calculation does not select a unique axis dictionary, physical vacuum, charged pole or any ARF.
+- Next step: Q10 [compute], enumerate the 12 unsigned A5 axis-order classes and calculate the exact five-vacuum K₂ multisets to quantify the remaining gate-A choice.
 
 ### 2026-11-10 20:50 UTC — Grok — Archive — Sandbox-bound /mnt/data classification
 - Task: Q5 [repair] — classify the 14 sweep-labelled `/mnt/data` scripts as write-only or read-input, and propose the one-line sweep change for the write-only group.
