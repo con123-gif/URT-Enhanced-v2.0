@@ -4,27 +4,27 @@
 
 ## 1. Scope and original mathematical inputs
 
-The original **five-Platonic 190-cochain** action, 50-vertex harmonic bridge, icosahedral face incidence, hidden source quartets \`4_3⊕4_5\`, 24-clock charge-two Wilson/Schur source and previously established Ward contacts are **unchanged**. This theorem concerns the full 64 signed-history carrier \`H64=H13⊕H51\` inside that model; it does not collapse the full Cathedral to 13 or 64 cochains. The native source isometry injects one A5 quartet into H64 energy 18 (\`4_3\`) and one into energy 16 (\`4_5\`), as independently established in the preceding native source-to-history theorem.
+The original **five-Platonic 190-cochain** action, 50-vertex harmonic bridge, icosahedral face incidence, hidden source quartets `4_3⊕4_5`, 24-clock charge-two Wilson/Schur source and previously established Ward contacts are **unchanged**. This theorem concerns the full 64 signed-history carrier `H64=H13⊕H51` inside that model; it does not collapse the full Cathedral to 13 or 64 cochains. The native source isometry injects one A5 quartet into H64 energy 18 (`4_3`) and one into energy 16 (`4_5`), as independently established in the preceding native source-to-history theorem.
 
 Let
 
-\`\`\`
+```
 Hbits = 15 I64 - sum_(0<=i<j<6) X_i X_j,
 Q[h,2h mod64] = Q[h,(2h+1) mod64] = 1/2.
-\`\`\`
+```
 
-For a Walsh monomial of weight k, the Hbits eigenvalue is exactly \`E(k)=2k(6-k)\`. The unaveraged primitive Q is used, not an A5-averaged chronology.
+For a Walsh monomial of weight k, the Hbits eigenvalue is exactly `E(k)=2k(6-k)`. The unaveraged primitive Q is used, not an A5-averaged chronology.
 
-The **Weyl-pair counting hypothesis** is explicitly conditional: regard all 64 signed histories as uniformly charge-+1 Weyl-flavor coordinates, so a Lorentz-scalar symmetric flavor pair has U1 charge +2 and can pair with a charge-−2 conjugate hidden source. This is *not* the actual established 16/48/96-state physical electromagnetic charge assignment. The previous exact A5 theorem found 138 quartet copies in \`Sym²(H64)\`, or 276 symmetry-permitted source-to-pair tensor structures for the two hidden quartets.
+The **Weyl-pair counting hypothesis** is explicitly conditional: regard all 64 signed histories as uniformly charge-+1 Weyl-flavor coordinates, so a Lorentz-scalar symmetric flavor pair has U1 charge +2 and can pair with a charge-−2 conjugate hidden source. This is *not* the actual established 16/48/96-state physical electromagnetic charge assignment. The previous exact A5 theorem found 138 quartet copies in `Sym²(H64)`, or 276 symmetry-permitted source-to-pair tensor structures for the two hidden quartets.
 
 ## 2. Independently verified exact A5/Hbits decomposition
 
-The executable reconstructs the 12 golden-ratio icosahedral vertices, certifies the 30 graph edges in Q(sqrt5), enumerates all 120 graph automorphisms, and certifies each orientation determinant *exactly* to obtain the 60 proper A5 rotations. Their element orders have counts \`1,15,20,24\` for orders \`1,2,3,5\`. A signed rotation acts on each six-bit Walsh-weight space by signed subset permutation. Taking the exact character inner product with the A5 quartet character \`chi4(order 1,2,3,5)=(4,0,1,-1)\` gives
+The executable reconstructs the 12 golden-ratio icosahedral vertices, certifies the 30 graph edges in Q(sqrt5), enumerates all 120 graph automorphisms, and certifies each orientation determinant *exactly* to obtain the 60 proper A5 rotations. Their element orders have counts `1,15,20,24` for orders `1,2,3,5`. A signed rotation acts on each six-bit Walsh-weight space by signed subset permutation. Taking the exact character inner product with the A5 quartet character `chi4(order 1,2,3,5)=(4,0,1,-1)` gives
 
-\`\`\`
+```
 Walsh weight k:      0  1  2  3  4  5  6
 quartet mult_4(k):   0  0  1  2  1  0  0.
-\`\`\`
+```
 
 Hence the energy-resolved decomposition is:
 
@@ -39,21 +39,21 @@ Both zero-energy Walsh vectors (constant and full six-bit parity) are *trivial A
 
 ## 3. New conditional theorem: additive-energy-resonant Weyl pairing
 
-**Extra premise R:** Suppose the free pair energy is additive, \`E_pair=E_i+E_j\`, and a charge-two source at Hbits energy E couples only to Weyl pairs at the same energy E. The native sources lie at E=16 and E=18.
+**Extra premise R:** Suppose the free pair energy is additive, `E_pair=E_i+E_j`, and a charge-two source at Hbits energy E couples only to Weyl pairs at the same energy E. The native sources lie at E=16 and E=18.
 
-Because the one-particle energies are exactly \`{0,10,16,18}\`, the only unordered pairs with energy 16 or 18 are
+Because the one-particle energies are exactly `{0,10,16,18}`, the only unordered pairs with energy 16 or 18 are
 
-\`\`\`
+```
 16 = 0 + 16,
 18 = 0 + 18.
-\`\`\`
+```
 
-Write \`Z=H_0=1⊕1\` as an A5 module. For distinct energy spaces, \`Sym²(H64)\` contains the cross term \`Z⊗H_E\` once. Thus
+Write `Z=H_0=1⊕1` as an A5 module. For distinct energy spaces, `Sym²(H64)` contains the cross term `Z⊗H_E` once. Thus
 
-\`\`\`
+```
 dim Hom_A5(4_5, (Sym² H64)_16) = 2 * 2 = 4,
 dim Hom_A5(4_3, (Sym² H64)_18) = 2 * 2 = 4.
-\`\`\`
+```
 
 **Proved under R:** The unrestricted 276 symmetry-permitted Weyl-pair tensors reduce to **8 energy-resonant tensors**. This is an exact intertwiner dimension, not eight determined physical Yukawa constants.
 
@@ -61,18 +61,18 @@ dim Hom_A5(4_3, (Sym² H64)_18) = 2 * 2 = 4.
 
 Exact integer matrix calculations establish
 
-\`\`\`
+```
 [2Q,Hbits]=0,
 (2Q)^6=J64,
 Q 1=1,
 Q w_012345=0.
-\`\`\`
+```
 
-Since \`Q^6=J64/64\`, any vector fixed by Q must lie in the rank-one Haar image, so
+Since `Q^6=J64/64`, any vector fixed by Q must lie in the rank-one Haar image, so
 
-\`\`\`
+```
 ker(Hbits) ∩ ker(Q-I) = span{1}.
-\`\`\`
+```
 
 This is an **unconditional finite theorem about the specified URT transition**. It distinguishes the stationary constant Walsh vacuum from the second, nonstationary zero-energy parity state, despite both being A5 singlets.
 
@@ -92,7 +92,7 @@ This is an **unconditional finite theorem about the specified URT transition**. 
 
 ## 5. Ward typing, limits and next theorem
 
-For charge-two h and charge-two Weyl pair B(psi,psi), \`2 Re[h†B]\` is gauge invariant, with local first and second gauge contacts \`(-2i+2i)=0\` and \`(-4+8-4)=0\`. These are existing local Yukawa contacts, **not substitutes** for the 24-clock Wilson seagull, nonlinear source-rotation acceleration, history Schur relaxation or spatial charged-fermion contacts. No new physical transverse Maxwell or fermion-pole normalization is inferred here.
+For charge-two h and charge-two Weyl pair B(psi,psi), `2 Re[h†B]` is gauge invariant, with local first and second gauge contacts `(-2i+2i)=0` and `(-4+8-4)=0`. These are existing local Yukawa contacts, **not substitutes** for the 24-clock Wilson seagull, nonlinear source-rotation acceleration, history Schur relaxation or spatial charged-fermion contacts. No new physical transverse Maxwell or fermion-pole normalization is inferred here.
 
 **PROVED:** Exact A5/Walsh energy quartet multiplicities; exact integer commutation and six-step mixing; uniqueness of the Q-stationary zero-energy line; conditional intertwiner counts 276→8→4→2.
 
@@ -102,8 +102,8 @@ For charge-two h and charge-two Weyl pair B(psi,psi), \`2 Re[h†B]\` is gauge i
 
 ## Reproduction
 
-\`\`\`sh
+```sh
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python URT_H64_RESONANT_PAIR_CHRONOLOGY_2026_11_10.py
-\`\`\`
+```
 
 Dependencies: NumPy, SymPy, NetworkX. The executable independently constructs all 60 A5 rotations and 64×64 integer Hbits/chronology matrices and asserts every count. No historical ARF target appears in the executable. No previous source file is modified.
