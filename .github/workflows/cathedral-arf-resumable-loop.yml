@@ -1,0 +1,62 @@
+name: Cathedral ARF resumable research loop
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cathedral-arf-resumable-loop
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONHASHSEED: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: newtons-cathedral
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install numerical and exact libraries
+        run: python -m pip install --disable-pip-version-check numpy scipy sympy mpmath
+      - name: Resume next queued test and exact mathematical gate
+        id: research
+        shell: bash
+        run: |
+          set +e
+          python -u research_archive/cathedral_arf_runner/research_loop.py --timeout 180 > cathedral-arf-loop.log 2>&1
+          rc=$?
+          cat cathedral-arf-loop.log
+          echo "exit_code=$rc" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Persist checkpoint and audit history on research branch
+        shell: bash
+        run: |
+          git config user.name 'cathedral-arf-runner[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research_archive/cathedral_arf_runner/state.json research_archive/cathedral_arf_runner/history.jsonl
+          if ! git diff --cached --quiet; then
+            git commit -m 'Checkpoint Cathedral ARF test queue [skip ci]'
+            git push origin HEAD:newtons-cathedral
+          fi
+      - name: Upload execution log even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cathedral-arf-loop-${{ github.run_id }}
+          path: |
+            cathedral-arf-loop.log
+            research_archive/cathedral_arf_runner/state.json
+            research_archive/cathedral_arf_runner/history.jsonl
+          retention-days: 90
+      - name: Fail run if mathematical gate or queued test failed
+        if: steps.research.outputs.exit_code != '0'
+        run: exit 1
