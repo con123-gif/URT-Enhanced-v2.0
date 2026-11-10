@@ -1,0 +1,210 @@
+{
+  "Cbridge_32_evals_minmax": [
+    1.9999999999999964,
+    7.2360679774997925
+  ],
+  "classification": "PROVED",
+  "classification_note": "Single shared 4_5. Joint stabiliser A4 (ico A4, dodeca D3); overlaps joint/ico=1.000000, ico/dodeca=0.612372.",
+  "compete": [
+    {
+      "label": "hat_j",
+      "nuc_sum": 9.739157514616743,
+      "omega_K0_at_r0": -4373275.829258261,
+      "overlap_joint": 1.0000000000000002
+    },
+    {
+      "label": "hat_ico",
+      "nuc_sum": 9.739157514616743,
+      "omega_K0_at_r0": -4373275.8292582575,
+      "overlap_joint": 0.9999999999999998
+    },
+    {
+      "label": "hat_d",
+      "nuc_sum": 9.424628446697838,
+      "omega_K0_at_r0": -4090570.8749932144,
+      "overlap_joint": 0.6123724270062515
+    },
+    {
+      "label": "s0",
+      "nuc_sum": 9.347742704602924,
+      "omega_K0_at_r0": -4021464.447630886,
+      "overlap_joint": 0.4012368883803522
+    },
+    {
+      "label": "s5",
+      "nuc_sum": 9.545794563379179,
+      "omega_K0_at_r0": -4199477.37987691,
+      "overlap_joint": 0.33685461472992273
+    },
+    {
+      "label": "s10",
+      "nuc_sum": 9.249787814259529,
+      "omega_K0_at_r0": -3933420.652803058,
+      "overlap_joint": 0.050249041816156054
+    },
+    {
+      "label": "s20",
+      "nuc_sum": 9.200828457300403,
+      "omega_K0_at_r0": -3889415.0133848367,
+      "overlap_joint": 0.32388637748580074
+    },
+    {
+      "label": "s40",
+      "nuc_sum": 9.35442081906466,
+      "omega_K0_at_r0": -4027466.8691619243,
+      "overlap_joint": 0.3369833436082569
+    }
+  ],
+  "critical": {
+    "chi_even": 0.07883298280830786,
+    "chi_odd": 0.07964555948092311,
+    "y_c_even": 0.004146653186528658,
+    "y_c_odd": 1.6704300685712994
+  },
+  "hats": {
+    "dodeca": [
+      0.5127939253741457,
+      -0.16000674182942848,
+      -0.27063621845730435,
+      -0.7988718732860959
+    ],
+    "ico": [
+      0.4012369017791012,
+      -0.44033543187323465,
+      -0.7883405326558048,
+      -0.15372983009059046
+    ],
+    "joint": [
+      0.4012368883803522,
+      -0.44033541716884456,
+      -0.788340544926431,
+      -0.1537298442550779
+    ]
+  },
+  "hypotheses": {
+    "H1_no_relative_orientation_modulus": 1,
+    "H1_single_hidden_field": 1,
+    "H2_dodeca_stab_is_A4": 0,
+    "H2_ico_stab_is_A4": 1,
+    "H2_joint_stab_is_A4": 1,
+    "H3_Cbridge_does_not_change_stab": 1,
+    "even_joint_condenses": 1,
+    "odd_joint_condenses": 0
+  },
+  "joint_stab_smaller_than_A4": 0,
+  "nuclear": {
+    "alpha_at_special_hats": {
+      "hat_d": {
+        "nuc_d": 5.337631667698036,
+        "nuc_ico": 4.086996778999802,
+        "nuc_sum": 9.424628446697838
+      },
+      "hat_ico": {
+        "nuc_d": 5.098777541812899,
+        "nuc_ico": 4.640379972803843,
+        "nuc_sum": 9.739157514616743
+      },
+      "hat_j": {
+        "nuc_d": 5.0987775418128995,
+        "nuc_ico": 4.640379972803843,
+        "nuc_sum": 9.739157514616743
+      }
+    },
+    "n_d_at_hat_d": 5.337631667698036,
+    "n_ico_at_hat_ico": 4.640379972803843,
+    "n_joint_at_hat_j": 9.739157514616743
+  },
+  "overlaps": {
+    "aligned_ico_dodeca": 0,
+    "aligned_joint_ico": 1,
+    "dodeca_vs_cycle40": 1.0000000000000002,
+    "ico_vs_cycle25": 0.9999999999999993,
+    "ico_vs_dodeca": 0.6123724215933637,
+    "joint_vs_dodeca": 0.6123724270062515,
+    "joint_vs_ico": 0.9999999999999998
+  },
+  "radial": {
+    "K0": {
+      "omega": -4373275.829258261,
+      "r_pred": 1796213.7294858815,
+      "r_star": 1797639.601787769
+    },
+    "KC": {
+      "omega": -4373272.732673669,
+      "r_pred": 1796213.7294858815,
+      "r_star": 1797639.601787769
+    }
+  },
+  "stabilizers": {
+    "dodeca": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 2
+      },
+      "name": "D3",
+      "order": 6,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      }
+    },
+    "ico": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "joint": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "joint_on_dodeca": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    },
+    "joint_on_ico": {
+      "class_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 8
+      },
+      "name": "A4",
+      "order": 12,
+      "order_counts": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      }
+    }
+  }
+}
