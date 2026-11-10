@@ -3,11 +3,13 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–41 and alt routes 01–54. It
-performs no new numerical experiment. The alt line’s reading of
-the historical ARFs’ intended observables and its computation of
-Δ_δ as a fixed-point shift (alt 52–54) are integrated, not
-duplicated.
+This note compiles coupled cycles 01–45 and alt routes 01–57. It
+performs no new numerical experiment. The alt line’s tests of the
+archived δ-flow, of the R_mass spectral list, and of the arf.py
+1/α writings (alt 55–57) are integrated, not duplicated. Alt
+work on the internal structure of G_{13}, on the integers
+35/51/63/40, and on the 1/α chain blockers (alt 58–60, if
+running) is not integrated here.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -196,6 +198,28 @@ Question D (cycles 23, 25, 26):
   definitions y_c = √(c_even/χ) and c_even = Δ² c5 (relative
   error 0 on the ico numbers). √(c5/χ(η)) = 2.38638 is O(1), so
   y_c is O(Δ). This does not set y_even = Δ.
+- Cycle 43: the derived Hodge structure uniquely fixes the
+  Gauss-law / transverse projector P_T (sphere: b₁ = 0; unique
+  Δ0⁺ zero-mode removal; 19 coexact modes). At r = 0 the
+  charge-0 Hodge–Noether current is unique, conditionally on
+  the working Q_geo identification (cycle 31 stands). The
+  projected subcritical Π_T is positive definite and
+  Maxwell-like (resid_M = 0.060123) but not unique (spread
+  0.305459, w_β = 0.2096, κ_iso = 0.002061847). The conversion
+  gate therefore fails; no K_γ and no α_eff comparison.
+- Cycle 44: the unique A5-equivariant frequency-n subdivisions
+  of the 2-complex (n = 1, 2, 3) are a derived refinement
+  sequence. Combinatorial κ_iso = 0.002061944, 0.002246307,
+  0.002276376 appears to approach a finite nonzero value under
+  the predeclared three-point test, but spread stays ≈ 0.26
+  (not unique Maxwell at n = 3) and the coframe conversion
+  remains missing. No K_γ; no α_eff comparison. The dyadic
+  clock list N = 12, 24, 48, 96 was not run.
+- Cycle 45: the archived G_{13} graph is not a sub-block,
+  quotient or restriction of geometric H13, K0, the joint
+  32-site Laplacian, subcritical BdG, the five-solid 0-form
+  Laplacian, or the H64 hypercube. Internal structure of G_{13}
+  is left to the alt line.
 
 ## Parameter-free predictions (not ARF identifications)
 
@@ -297,6 +321,13 @@ then splits into two derived phases.
   The missing inputs that would close physical α and masses
   remain those listed by the archive itself (cycle 39). The
   smallness of y_c is exactly Δ times an O(1) factor (cycle 41).
+  The Hodge Gauss projector is now uniquely derived (cycle 43),
+  but it does not make the subcritical Π_T a unique q² residue.
+  A derived spatial refinement (cycle 44) appears to stabilise
+  combinatorial κ_iso near 0.00228 without collapsing the
+  spread and without supplying the coframe conversion. The
+  archived G_{13} graph is not a block of the coupled-line
+  A5 kinetics (cycle 45).
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -450,7 +481,8 @@ non-pairing ratios (DID_NOT_RUN), 25 π-flux kernel, 26 spinor
 EM U(1) reading, 32 dichotomy / subcritical kernel, 33 T_c vs η,
 35 IR projection / κ_IR, 36 spinor subcritical kernel, 37 subcritical
 consistency, 39 missing-input catalogue, 40 clock-momentum q² residue,
-41 y_c identity.
+41 y_c identity, 43 Hodge Gauss / IR projection, 44 derived
+refinement / continuum test, 45 G_{13} coupled-operator relation.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -465,6 +497,38 @@ spinor, 39 Gaussian fluctuations, 40 dodeca / H51 condensation,
 spectrum, 47 RP³ basins, 48 A4 domain defects, 49 C3 full stability,
 50 spinor C3 spectrum, 51 C3 handedness, 52 archival ARF meanings,
 53 Δ_δ as a fixed-point shift, 54 archival observables for C_mass,
-R_mass and R_α.
+R_mass and R_α, 55 archived δ-flow fixed point with the G_{13}
+Laplacian, 56 R_mass spectral list, 57 arf.py 1/α inconsistency
+(documentary).
+
+## Alt routes 55–57 (integrated; not duplicated)
+
+- **alt 55 (PROVED; identification with Δ_δ FALSIFIED).** The
+  archived π-φ-e flow with L equal to the G_{13} Laplacian has
+  a unique homogeneous fixed point at δ★: the shift is
+  identically zero, independently of the stipulated coefficients
+  η_L and μ. G = 60, D = 3, F = 20 are the archive’s integers,
+  so 1/63 and 1/40 follow arithmetically from G+D and 4F, not
+  from the fixed-point equation. Relative error to historical
+  Δ_δ is 1. Pred sha256
+  `9c39b52409cc9f1695d71544ac15fdd87bb4e338ca0924572cda40e6e81912d2`.
+- **alt 56 (PROVED; partial on R_mass).** Among 29 derived or
+  archival spectra, the unique match to the stipulated list
+  (5,5,5,5,5,7,7,9,13) is the G_{13} Laplacian spectrum after
+  deleting its four smallest eigenvalues {0,3,3,5}. The graph
+  is not A5-equivariant (alt 02). The production prefactors
+  3/35, 4/51 and 1/N remain stipulated; finding the list
+  derives the spectral sum s, not those weights and not a
+  unique A5 origin. Pred sha256
+  `7cbecfccc3c57f9268b1941874b2307f130d928b7c6d761ff989c2e7a33f26b7`.
+- **alt 57 (PROVED, documentary).** `arf.py` implements
+  1/α = 137 + δ★²/π² + R_α = 137.0360100481, in agreement with
+  `docs/DERIVATION.md` step 10, while the module docstring uses
+  d_eff in place of δ★ and gives 137.0359993124 (difference
+  1.0736×10^{-5}). The docstring writing sits closer to CODATA
+  137.035999084; that fact is recorded, not used to choose a
+  writing. No IR photon / α_eff was constructed (coupled-line
+  work, not duplicated). Pred sha256
+  `3d173df0844a83a20f5ac4f0002445c3c9e6c7a07014e4765d5c8bbb4c80cd01`.
 
 No ARF was derived.
