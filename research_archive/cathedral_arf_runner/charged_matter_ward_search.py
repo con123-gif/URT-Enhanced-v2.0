@@ -17,7 +17,7 @@ U=s.diag(s.exp(s.I*q*t),1)
 Ht=U*H*U.conjugate()
 R=z*s.eye(2)-Ht
 D=s.factor(R.det())
-assert s.simplify(D-(z-a)*(z-d)-( -b*b-c*c))==0
+assert s.simplify(D-(z-a)*(z-d)+(b*b+c*c))==0
 # The second-order seagull is essential: d²H/dt²=-q²[Q,[Q,H]].
 J=s.diff(Ht,t).subs(t,0)
 W=s.diff(Ht,t,2).subs(t,0)
