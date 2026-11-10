@@ -3,8 +3,9 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–29 and alt routes 01–42. It
-performs no new numerical experiment.
+This note compiles coupled cycles 01–33 and alt routes 01–42. It
+performs no new numerical experiment. Alt cycles 43–45 were not
+present at the time of writing and were not integrated.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -136,6 +137,28 @@ Question D (cycles 23, 25, 26):
   Π_T = m² I + κ Δ1_T + β Δ1_T² + R with, at large vev,
   m² → 1/12 (T = 0) and tanh(10/(2η))/12 (T = η), and with
   κ, β consistent with 0 (w_κ ∼ 10^{-5}). α_eff was not compared.
+- Cycle 31: the Cathedral does not uniquely identify U(1)_EM with
+  Q_geo on the 30 icosahedral edges. Several candidate maps are
+  recorded (finite-algebra u(1), 16-carrier / H64 species charge,
+  Hodge–Maxwell connection on those edges, coupled-line Peierls
+  Q_geo) and none is selected. A propagating continuum photon is a
+  desired closure obligation, not a microscopic axiom that Q_geo
+  remain unbroken.
+- Cycle 32 (dichotomy). Supercritical (y_even > y_c(T)):
+  superconducting, A ≡ π, London mass 1/12, not Maxwell.
+  Subcritical (y_even < y_c(T), r = 0): U(1) unbroken; at T = 0
+  the connection is exactly flat (Π_T = 0); at T = η the derived
+  vacuum is A = 0 (Ω(π)−Ω(0) = 0.087736; all 40 random connections
+  lie above A = 0) and Π_T is positive definite and Maxwell-like
+  (residual 0.060) but not unique (generalised-κ spread 0.305,
+  w_β = 0.210). No unique positive Maxwell κ; α_eff was not
+  compared. The subcritical T = η kernel has a near-zero London
+  piece (m² = −1.71×10^{-4}, w_m = 0.023).
+- Cycle 33: T_c(y_even = 1) = 1.844301×10^5 = 3.076×10^4 η.
+  Every O(1) coupling has T_c ≫ η. The only derived temperature
+  η places all O(1) Yukawas deep in the supercritical branch.
+  High-T formula T_c^{HT} = y_e² / (4 c_even), from
+  ||Δ_unit||_F² = 2.
 
 ## Parameter-free predictions (not ARF identifications)
 
@@ -152,6 +175,14 @@ Question D (cycles 23, 25, 26):
   ±0.141772 I. The Frobenius projection of the π-flux kernel
   confirms m² = 1/12 and κ = 0 at large vev (cycle 29).
 - No electroweak-like unbroken gauged combination (cycle 28).
+- Subcritical (r = 0) identities (cycle 32): Ω_f[A] is exactly
+  flat at T = 0 (K[A] ⪰ 0, Tr K[A] = 60); spectra
+  0 ⊕ (5−√5)^3 ⊕ 6^5 ⊕ (5+√5)^3 at A = 0 and
+  10 ⊕ (5+√5)^3 ⊕ 4^5 ⊕ (5−√5)^3 at A = π;
+  Ω_f(π)−Ω_f(0) = 0.08773582709207517 at T = η;
+  Tr(K^4) equals 14880 (A = 0) and 19680 (A = π).
+- T_c^{HT}(y_e) = y_e² / (4 c_even) with ||Δ_unit||_F² = 2
+  (cycle 33); T_c(1) = 1.844301×10^5.
 
 ## Remaining free parameters
 
@@ -169,13 +200,19 @@ found, so the one-loop / EM / ARF pipeline was not run.
    (Question D, original).
 3. y_even is not fixed by any archived history normalisation
    (Question C, condensed-phase).
-4. The archived one-loop action has no tree-level |D_A Δ|². Its
-   induced Π_T is an isotropic mass from the unpaired (or
-   spin-lifted) charged mode, not a multiple of Δ1_T. The
-   cycle-29 projection gives κ consistent with 0, so there is no
-   unique positive Maxwell coefficient and no derived α. Cycle 28
-   finds no second gauged U(1) that could leave a massless mixed
-   photon.
+4. The archived one-loop action has no tree-level |D_A Δ|². On
+   the supercritical branch its induced Π_T is an isotropic
+   London mass from the unpaired (or spin-lifted) charged mode,
+   not a multiple of Δ1_T (cycle 29: κ consistent with 0). Cycle
+   28 finds no second gauged U(1) that could leave a massless
+   mixed photon. On the subcritical branch at T = η the kernel
+   is Maxwell-like (residual 0.060) with a near-zero London mass,
+   but κ is not unique (spread 0.305), so α_eff is still not
+   compared (cycle 32). The unique derived temperature η does
+   not place O(1) couplings on that subcritical branch
+   (cycle 33: T_c(1)/η ≈ 3.08×10^4). The Cathedral itself does
+   not declare Q_geo to be U(1)_EM, nor does it impose a
+   massless microscopic photon (cycle 31).
 5. The condensed spectrum is not three nondegenerate charged
    singlets. A4 (spatial) or 2I (spinor) protects multiplets;
    combining π-flux with the spin connection preserves A4
@@ -191,6 +228,28 @@ found, so the one-loop / EM / ARF pipeline was not run.
    different CG types 1⊗4 versus 3⊗3', 3⊗5, 3'⊗5, Sym² 5). This
    is a coincidence of counts, not an identification (alt 37).
 7. All four historical ARFs remain underived.
+
+## Dichotomy (cycles 31–33)
+
+The key tension of this block — in the condensed vacuum the
+geometric U(1) is Higgsed, with photon mass 1/12 — is a tension
+with a desired continuum output and with the coupled line’s
+working identification of that U(1) as Q_geo, not a violation of
+an archived microscopic requirement (cycle 31). The even channel
+then splits into two derived phases.
+
+- SuperCRITICAL, y_even > y_c(T): superconducting. Derived flux
+  vacuum A ≡ π; unpaired mode at E = 10; Π_T = (1/12) I
+  (T = 0) or [tanh(10/(2T))/12] I (T = η); not Maxwell-like.
+- SubCRITICAL, y_even < y_c(T): normal, r = 0, U(1) unbroken.
+  Derived flux vacuum A = 0 at T = η and the entire connection
+  torus at T = 0. Unpaired mode at E = 0. Π_T(T = 0) = 0;
+  Π_T(T = η) is positive definite and Maxwell-like but not a
+  unique κ. No α_eff comparison. Parameter-free spectral
+  identities as listed above.
+- The KMS temperature η lies far below T_c for every O(1)
+  Yukawa, so the programme’s only derived temperature selects
+  the supercritical / London-massive side.
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -250,6 +309,13 @@ found, so the one-loop / EM / ARF pipeline was not run.
   Pred sha256
   `8e569988e670badfa454e3e64e8d05a5e595715d5fcce478ecf2e8a2d692d228`.
 
+## Alt routes 43–45
+
+Not present under `/workspace/arf_research/alt_cycle4{3,4,5}*` at
+the time of writing. The alt line’s mapping of the full joint 4_5
+potential for Z3 mixed minima and A4/D3 transitions was not
+duplicated.
+
 ## Paths to verification scripts
 
 Coupled line, under `/workspace/arf_research/coupled_cycleNN_*/`
@@ -259,7 +325,9 @@ and the same names in this archive: 01 reconstruct, 02 V, 03 F,
 measure, 19 vev and r, 20 effective reduction, 21 numpy-only
 verifier, 22 y_even normalisation, 23 GI current at A = 0, 24
 non-pairing ratios (DID_NOT_RUN), 25 π-flux kernel, 26 spinor
-π-flux kernel, 28 unbroken combination, 29 momentum expansion. Independent verifier:
+π-flux kernel, 28 unbroken combination, 29 momentum expansion, 31 Cathedral
+EM U(1) reading, 32 dichotomy / subcritical kernel, 33 T_c vs η.
+Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
 Alt line, under `alt_routes/alt_cycleNN_*/` and
@@ -269,5 +337,6 @@ spinor lift, 34 induced κ at A = 0, 35 derived-vacuum spectrum,
 36 repo diff through 6bad7b3, 37 principal angles, 38 π-flux ×
 spinor, 39 Gaussian fluctuations, 40 dodeca / H51 condensation,
 41 joint H13+dodeca vacuum, 42 joint spectrum.
+Alt 43–45 were not available.
 
 No ARF was derived.
