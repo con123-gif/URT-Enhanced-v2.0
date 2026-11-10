@@ -1,0 +1,312 @@
+{
+  "H3_status": "FALSIFIED",
+  "London": {
+    "Meissner_mass_squared_positive": 0,
+    "R_EM_London_over_Delta1": -0.002027707351896477,
+    "T0": {
+      "eigenvalues_minmax": [
+        -0.09526419829293495,
+        -0.07076001000517984
+      ],
+      "lambda_max": -0.07076001000517984,
+      "lambda_min": -0.09526419829293495
+    },
+    "Teta": {
+      "eigenvalues_minmax": [
+        -0.0015490305783728178,
+        0.006647222383338676
+      ],
+      "lambda_max": 0.006647222383338676,
+      "lambda_min": -0.0015490305783728178,
+      "n_negative": 4,
+      "n_positive": 15
+    },
+    "curvature_exact_direction": -2.235174179077148e-06,
+    "curvature_random_transverse": -9.313225746154783e-07,
+    "finite_A_landscapes": {
+      "r_100_T0": {
+        "exact": {
+          "curvature_at_s": -0.08890707322279921,
+          "omega": [
+            -0.0,
+            -0.00011113384152849903,
+            -0.00044450751073554784,
+            -0.0017775844588356904,
+            -0.011090437076802573,
+            -0.04408528519783772
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        },
+        "transverse": {
+          "curvature_at_s": -0.08502914697601226,
+          "omega": [
+            -0.0,
+            -0.00010628643372001534,
+            -0.00042511529025546224,
+            -0.0016999741206689123,
+            -0.010603552082528722,
+            -0.042111373138197905
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        }
+      },
+      "r_100_Teta": {
+        "exact": {
+          "curvature_at_s": -0.006963658915992708,
+          "omega": [
+            0.0,
+            -8.704573644990887e-06,
+            -3.4821626911707426e-05,
+            -0.0001393397784568151,
+            -0.0008731922296760786,
+            -0.003525212650345111
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        },
+        "transverse": {
+          "curvature_at_s": -0.0016975049220491196,
+          "omega": [
+            0.0,
+            -2.1218811525614e-06,
+            -8.498079324681385e-06,
+            -3.4161033624968695e-05,
+            -0.00022084529246058082,
+            -0.0009858217041767148
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        }
+      },
+      "r_10_T0": {
+        "exact": {
+          "curvature_at_s": -0.0509077422861992,
+          "omega": [
+            -0.0,
+            -6.363467785774901e-05,
+            -0.00025451702644829766,
+            -0.0010177212532482827,
+            -0.006345612935888312,
+            -0.025167793476406075
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        },
+        "transverse": {
+          "curvature_at_s": -0.04848861177038088,
+          "omega": [
+            -0.0,
+            -6.0610764712976106e-05,
+            -0.0002424269597725015,
+            -0.0009694502598946997,
+            -0.006047796638085856,
+            -0.024030316773576033
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        }
+      },
+      "r_10_Teta": {
+        "exact": {
+          "curvature_at_s": -0.0014841466963844139,
+          "omega": [
+            0.0,
+            -1.8551833704805176e-06,
+            -7.420140782699036e-06,
+            -2.9671082103277513e-05,
+            -0.0001850300766932378,
+            -0.0007342379664834198
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        },
+        "transverse": {
+          "curvature_at_s": 0.004687605832032204,
+          "omega": [
+            0.0,
+            5.859507290040256e-06,
+            2.342900900487166e-05,
+            9.357186038982945e-05,
+            0.0005785575362935447,
+            0.0022270204929597526
+          ],
+          "omega_positive_for_nonzero_s": 1,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        }
+      },
+      "r_8.613e+05_T0": {
+        "exact": {
+          "curvature_at_s": -0.08333325386047362,
+          "omega": [
+            -0.0,
+            -0.00010416656732559204,
+            -0.0004166427534073591,
+            -0.001666240394115448,
+            -0.010399476625025272,
+            -0.04139124462381005
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        },
+        "transverse": {
+          "curvature_at_s": -0.08333139121532439,
+          "omega": [
+            -0.0,
+            -0.0001041642390191555,
+            -0.0004166276194155216,
+            -0.0016660382971167564,
+            -0.010391989490017295,
+            -0.04127318784594536
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        }
+      },
+      "r_8.613e+05_Teta": {
+        "exact": {
+          "curvature_at_s": -2.235174179077148e-06,
+          "omega": [
+            0.0,
+            -2.7939677238464355e-09,
+            -1.862645149230957e-08,
+            -2.484302967786789e-07,
+            -9.123003110289574e-06,
+            -0.00014327443204820156
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        },
+        "transverse": {
+          "curvature_at_s": -9.313225746154783e-07,
+          "omega": [
+            0.0,
+            -1.1641532182693481e-09,
+            -1.5366822481155396e-08,
+            -2.3632310330867767e-07,
+            -9.033828973770142e-06,
+            -0.00014216406270861626
+          ],
+          "omega_positive_for_nonzero_s": 0,
+          "s": [
+            0.0,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1.0
+          ]
+        }
+      }
+    },
+    "hessian_pairing_scale_used": 20.0,
+    "lambda_min_Delta1_T": 0.7639320225002085,
+    "n_transverse": 19,
+    "photon_massive": 0
+  },
+  "R_EM_comment": "The cycle-23 R_EM is a massless-photon residue of a regularised fermion loop. In the condensed phase the analogous kernel is the London Hessian, whose scale is the pairing gap, not a massless-photon pole. No comparison with R_\u03b1 is performed.",
+  "charge": {
+    "global_U1_broken_to_Z2": 1,
+    "hopping_picks_lambda_j_minus_lambda_i": 1,
+    "local_U1_broken_by_frozen_real_Delta": 1,
+    "pairing_charge": 2,
+    "pairing_picks_lambda_i_plus_lambda_j": 1,
+    "superconducting_phase": 1
+  },
+  "classification": "CONDITIONAL",
+  "classification_note": "H1 and H2 are proved: the pairing is charge 2 and breaks geometric U(1) to Z2, and the BdG zero mode is the unpaired constant fermion, not the U(1) Goldstone (the overall phase of \u0394 leaves the spectrum invariant). H3 is falsified: the fermion-induced London kernel of the Nambu potential is not positive definite (mixed signs at T=\u03b7; all negative at T=0, consistent with \u2212\u00bd \u03bb_min(K[A]) from the unpaired mode). There is no archived tree-level |D\u0394|\u00b2, so the photon is not shown to acquire a Meissner mass. H4: R_\u03b1 is not compared.",
+  "hypotheses": {
+    "H1_charge2_breaks_U1_to_Z2": 1,
+    "H2_zero_mode_is_unpaired_fermion_not_Goldstone": 1,
+    "H3_Meissner_photon_massive": false,
+    "H4_no_Ralpha_comparison": 1
+  },
+  "zero_mode": {
+    "global_phase_flat_in_BdG": 1,
+    "is_the_U1_Goldstone": 0,
+    "n_bdg_near_zero": 2,
+    "note": "K v0 = 0 and \u0394 v0 = 0, so (v0, 0) is a fermionic BdG zero mode: an unpaired constant charged fermion. The U(1) Goldstone is the overall phase of \u0394, which does not change the BdG spectrum and is eaten by A in unitary gauge.",
+    "phase_spectrum_maxdiff": 4.656612873077393e-10,
+    "unpaired_constant_fermion": 1,
+    "||Delta_v0||": 1.0186340659856796e-10,
+    "||K_v0||": 2.7194799110210365e-16
+  }
+}
