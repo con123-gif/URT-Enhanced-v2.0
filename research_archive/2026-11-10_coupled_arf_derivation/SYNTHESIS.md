@@ -3,11 +3,14 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–62 and alt routes 01–70
+This note compiles coupled cycles 01–64 and alt routes 01–73
 (alt 67 was absent). It performs no new numerical experiment.
-Alt routes 68–70 are integrated from their REPORT.md files,
-not duplicated. Suggested cycles 59–60 were folded into
-coupled cycle 61 as status notes, not run as separate cycles.
+Coupled cycle 64 is a compilation only. Alt routes 71–73 are
+integrated from their REPORT.md files, not duplicated.
+Suggested cycles 59–60 were folded into coupled cycle 61 as
+status notes, not run as separate cycles. Both lines agree
+that the ARF derivation has reached a pause point; see the
+section “Pause point / what would unblock” below.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -76,7 +79,9 @@ three charged singlets are still missing; cycle 57 records that
 y_π is not a selector; cycle 61 finds that alt-65 P1 is a block
 of the coupled H13 kinetic, not of any other named 4-block;
 cycle 62 derives ρ_10 = 1/(φ√5) and finds it is not a
-historical ARF.
+historical ARF. Coupled cycle 64 records a pause: further
+numerical cycles on the present operators will not close E
+without one of the four new inputs listed below.
 
 H13 = 2·1 ⊕ 3 ⊕ 3' ⊕ 5. Inversion then hopping collapse eight H13
 Yukawas to a residual ratio r = y_even / y_odd (cycles 10–11). The
@@ -554,7 +559,8 @@ obstruction, 50 charge chart / electron convention, 51 4D
 coframe obstruction, 52 y_even branch selection, 53 hidden-51
 / C_IR status, 55 y-runaway bound, 56 three-singlet status,
 57 y_π integrity, 61 P1 versus coupled 4-blocks
-(with folded status 59–60), 62 gap ratio ρ_10.
+(with folded status 59–60), 62 gap ratio ρ_10, 64
+compilation and pause point.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -578,7 +584,9 @@ C_mass 5/16 and 7/8, 64 geometric-H13 scratch substitution,
 65 H13 isotype sector assignment, 66 D=3 coincidence
 catalogue, 68 uniqueness.py on geometric cones, 69 H13
 prefactor look-elsewhere, 70 R_mass form on the P1
-complement. Alt 67 was absent.
+complement, 71 derived R_mass form or stop, 72 U(1) /
+three-singlet blockers on H13, 73 heat-kernel and zeta
+invariants. Alt 67 was absent.
 
 ## Alt routes 55–57 (integrated; not duplicated)
 
@@ -830,4 +838,93 @@ complement. Alt 67 was absent.
   sha256
   `6612e688befb74fec93caaddecfe4b514ca8c78c477fa0024e404230236c79d4`.
 
-No ARF was derived.
+## Coupled cycle 64 (compilation)
+
+Classification: PROVED as a compilation. No new numerical
+experiment. Alt 71–73 reports existed and were integrated,
+not duplicated. Pred sha256
+`39a0cb21c5e5222dbe7effc3aa867cb0cbb63d655be4c5f32ec142c79d023502`.
+
+## Alt routes 71–73 (integrated; not duplicated)
+
+- **alt 71 (PROVED; R_mass-to-historical-closeness line
+  STOPPED).** There is no unique derived R_mass form from
+  resolvent / Casimir / dimension traces on geometric H13 or
+  P1. The only unique derived scalar under the predeclared
+  averaging rule is a mass-weight of the same type as cycle
+  70’s S (O(10^{-3}), type-incompatible with an O(1) R_mass
+  coefficient). π³ does not arise as a resolvent, Casimir or
+  dimension of L. No type-compatible average matches R_hist
+  at 10^{-4}. Pred sha256
+  `6039222d4fce27b12d81154fd22fb7ea4bfe173369fd14f17d87095f8861d0f1`.
+- **alt 72 (PROVED; three-singlet spectrum FALSIFIED; unique
+  Aut-invariant harmonic current FALSIFIED).** Geometric H13
+  has exactly two Aut-invariant 0-form singlets (λ=0 and
+  λ=13), not three. The unique Aut-invariant 1-form is not
+  harmonic: it is the coboundary of the radial singlet 1_hub
+  (constant on the 12 spokes, zero on the 30 surface edges).
+  dim(ker Δ_1)^{Aut} = 0, while b1=30. These remain blockers
+  for an alt-line 1/α chain. No α_eff was built, and the
+  coupled line’s EM/IR work was not duplicated. Pred sha256
+  `9ee6a5875a0ee8cd420c512afb3694cf42d050841b8e302b07e3cdcbc598666b`.
+- **alt 73 (PROVED).** A closed list of 132 heat-kernel and
+  spectral-zeta invariants on geometric H13 and the P1 blocks,
+  compared in 228 gated pairs to the four historical ARFs (and
+  type-gated 1/α), produced zero hits at relative 10^{-4} and
+  zero in a 10^{-3} band. No invariant entered the 1/α gate
+  [50, 200]. The miss is not a near miss of a unique
+  correspondence. Pred sha256
+  `dc31dc21f83dbae386cc68e7b11c7dea0e077749ae4a5226d826cf943bea30f8`.
+
+## Pause point / what would unblock
+
+Both the coupled line (through cycle 62, compiled here) and
+the alt line (through cycle 73) agree that the ARF derivation
+has reached diminishing returns on the operators already in
+hand. Unique derived numbers continue to appear (icosahedral
+and H13 closed forms, isotype blocks, heat-kernel and zeta
+invariants), but they are not the four historical ARFs, and
+the same structural blockers remain. Further numerical cycles
+that only scan the present machine — more gap ratios, more
+look-elsewhere catalogues, more identifications of one named
+block with another, retuning of G_{13}, Hodge-weight hunts,
+promotion of κ_iso or of convention-applied R_mass, locating
+y_π, or reopening the integers 35, 51, 63 and 40 — will not
+close Question E.
+
+No ARF has been derived. Question E remains OPEN for a unique
+Maxwell term, three charged singlets, a derived y_even, and
+any of the four historical ARFs.
+
+What would unblock the programme is a *new derived input*,
+not another scan. The four required new inputs are:
+
+1. A unique derived 4D / spacetime coframe, together with the
+   unique infrared residue K_γ that would convert
+   α(0)^{-1} = 4π K_γ. This is blocked today by the cycle-51
+   obstruction (no unique vierbein; the spatial geometry is a
+   2-complex; Theory of Nature §9’s local HP¹ chart is not a
+   Maxwell coframe).
+2. A canonical embedding of hidden-51 into H64, together with
+   the continuum Coulomb residue that would fix C_IR
+   (CHARGE_TRACE). Abstract H51 still has no unique intertwiner
+   (Hom_A5(4, Sym² H51) has dimension 90; cycle 53). κ_iso is
+   not unique and is not that residue.
+3. A derived potential, or a derived compact domain, for the
+   Yukawa y_even. The overall scale remains free (cycle 22).
+   Free-energy minimisation of the existing Nambu-plus-gauge
+   functional, if granted as an extra postulate, runs away as
+   −N² y²/(16 c_even), and no term already in the machine
+   bounds that runaway (cycles 52, 55). y_π is not a selector
+   (cycle 57).
+4. A derived spectrum of three nondegenerate charged singlets,
+   which would supply the missing matching observable for
+   C_mass and R_mass. A4 / 2I still protect multiplets; the
+   joint H13+dodeca vacuum still has leftover multiplets
+   (alt 42; coupled cycle 56). On geometric H13 itself there
+   are only two Aut-invariant 0-form singlets (alt 72).
+
+A genuinely new principle not already in the catalogue could
+also unblock the programme. Until one of these inputs is
+derived, this archive is the pause point of the coupled ARF
+derivation line.
