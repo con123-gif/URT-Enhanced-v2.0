@@ -1,0 +1,96 @@
+{
+  "classification": "PROVED",
+  "Galois_selects_a_ray_or_forces_one_Yukawa_to_zero": "FALSIFIED",
+  "surviving_dimension": 2,
+  "is_a_ray": false,
+  "advances_physical_ARF": false,
+  "G1_hodge": {
+    "spectrum": [
+      0.0,
+      13.0,
+      3.76393202250021,
+      8.23606797749979,
+      7.0
+    ],
+    "spectrum_after_sqrt5_flip": [
+      0.0,
+      13.0,
+      8.23606797749979,
+      3.76393202250021,
+      7.0
+    ],
+    "set_invariant": true,
+    "3_swap_restores_labels": true,
+    "lambda_3": 3.76393202250021,
+    "lambda_3p": 8.23606797749979,
+    "traces_5A_low": 1.6180339887498947,
+    "traces_5A_high": -0.6180339887498958,
+    "phi": 1.618033988749895,
+    "phi_bar": -0.6180339887498949,
+    "kinetic_Galois_covariant": true
+  },
+  "G2_hopping": {
+    "sigma_3x5": 0.9732489894677302,
+    "sigma_3px5": 0.22975292054736113,
+    "sigma_even": 0.7071067811865475,
+    "ratio_3_over_3p": 4.236067977499791,
+    "ratio_closed_form": 4.23606797749979,
+    "galois_swaps_odd_singular_values": true,
+    "galois_fixes_even_singular_values": true,
+    "ratio_galois": -0.2360679774997898,
+    "odd_image_is_unique_adjacent_4": true,
+    "even_image_is_unique_adjacent_4": true,
+    "cycle10_surviving_dimension": 2
+  },
+  "G3_Yukawas": {
+    "y_odd_galois_parity": "even",
+    "y_even_galois_parity": "even",
+    "forces_y_odd_zero": false,
+    "forces_y_even_zero": false,
+    "imposes_relation_y_even_of_y_odd": false,
+    "holds_for_every_r": true,
+    "reason": "Both residual Yukawas multiply Galois-even currents (the unique odd adjacent 4 times h3, the unique even adjacent 4 times h5). A Galois-odd coupling would have to vanish; neither residual coupling is odd. The two odd CG maps are already identified by hopping, so the 3 <-> 3' swap does not produce a new condition on y_odd."
+  },
+  "G4_hidden_quartets": {
+    "Hbits_4_3": 18,
+    "Hbits_4_5": 16,
+    "galois_swaps_hidden_quartets": false,
+    "A5_has_unique_real_4": true,
+    "distinguished_by": "rational Hbits 18 vs 16 and inversion parity, not Galois"
+  },
+  "G5_frozen_inputs": {
+    "phi": 1.618033988749895,
+    "phi_bar": -0.6180339887498949,
+    "delta_star": 0.1475108101595796,
+    "delta_star_galois": -0.3861883147058126,
+    "Delta": 0.0024891898404204027,
+    "Delta_galois": 0.5361883147058126,
+    "lam18": 0.007657918270344439,
+    "lam18_galois": 3.9923420817296553,
+    "rho": 0.01022872513785789,
+    "rho_galois": 5.332594103081132,
+    "c3": 0.2222379983269106,
+    "c3_galois": 0.22857074966499444,
+    "c5": 0.2187699652151163,
+    "c5_galois": 0.22656168782924607,
+    "invariance_flags": {
+      "phi_equals_phi_bar": false,
+      "delta_star_equals_gal": false,
+      "Delta_equals_gal": false,
+      "lam18_equals_gal": false,
+      "c3_equals_c3_gal": false,
+      "c5_equals_c5_gal": false,
+      "c3_maps_to_c5": false,
+      "c5_maps_to_c3": false
+    },
+    "frozen_inputs_are_Galois_even": false,
+    "this_constrains_r": false,
+    "comment": "phi, delta_star, Delta, lam_18, c3 and c5 all change under sqrt5 -> -sqrt5, and c3 does not map to c5. That is a property of the frozen named constants. Changing them to Galois-even combinations would alter the inputs and is not performed. It would still not mix y_even with y_odd, because 4_3 and 4_5 do not swap (G4)."
+  },
+  "selects_r": false,
+  "forces_one_Yukawa_to_zero": false,
+  "alt05_extra_3_identification_redundant_after_hopping": true,
+  "integrity": {
+    "predeclaration_sha256": "a0e421e27ca35530ecfa292cb28b5049301bbcb1d3b6f2d91071242997d0bbd9"
+  }
+}
