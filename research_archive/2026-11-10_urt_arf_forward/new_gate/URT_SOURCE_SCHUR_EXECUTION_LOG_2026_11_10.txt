@@ -1,0 +1,18 @@
+PASS: all five Platonic cochain dimensions [(4, 6, 4), (8, 12, 6), (6, 12, 8), (20, 30, 12), (12, 30, 20)] total 190
+PASS: original 50->12 pullback rank 8 hidden ranks 4 4
+PASS: 64-history H64 spectrum 0(2),10(12),16(30),18(20), source intertwining
+PASS: direct uneliminated 64x24 history action equals Schur energy 2.842170943040401e-14
+PASS: 24-clock charge-two source Schur, exact gauge variation 0.0
+PASS: first Ward residual 4.440892098500626e-16
+PASS: second Ward with source acceleration, seagull, relaxation 2.842170943040401e-14
+PASS: source acceleration, seagull, relaxation (nonzero separately) 238.11960607195883 1.592922739878237 -239.71252881183705
+PASS: 24-link current and Hessian finite differences
+Haar source Fourier k=4pi/24, theta=2pi/phi²: J= -8.339895795899402 H= -11.477859100942238
+WARNING: these are conditional history-induced gauge responses, not physical ARFs or H13+H51 fermion poles
+PASS exact neutral Gram--Schmidt alpha = 7704*sqrt(5)/3925 + 3852/785 ~ 9.2959662926518165
+PASS residual covariance K_R5 = 0, K_RR = 186624*sqrt(5)/98125 + 419904/98125 ~ 8.5320555437749886
+PASS residual cubic K_RRR = 5417924454144*sqrt(5)/1511676953125 + 484846912512/60467078125 ~ 16.032539319411294
+PASS other transformed cubic components K_RR5 = -12246430176/385140625 - 5440965696*sqrt(5)/385140625 K_R55 = 872208/98125 + 2113344*sqrt(5)/490625
+PASS binary cubic discriminant = 17438112362288322183168*sqrt(5)/3814697265625 + 38992806977284026925056/3814697265625 ~ 20443460172.156805 positive; 3 distinct real projective zero directions
+projective zeros x/y = [-0.111141704940492, -0.108653347184465, -0.102795174794727]
+NOTE: four cubic tensor components arise from Sym^3(R^2), not four independent physical source charges
