@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=450ba95f1e3a01ad1dabd35877e5141ff83e28b0c66aaca9d2b7e71f410e2a30
+bytes=1946
+test_2I_spinor.py sha256=153fddb7d7019829f993bf5c72c4e6b9fd528f6051da566c22ae8df4a4ad35a6
+bytes=9723
