@@ -61,6 +61,7 @@ verdict is in `summary.md` on branch `cathedral-research-state`.
   - Native K₂ rates: {67/48, 33/16, 25/24, 33/16, 5/6}.
   - The A5 mean of the native K₄ rates is 845671/57600 + (4271/800)√5 (**CI-verified 2026-11-10**).
   - Source: `.../2026-11-10_urt_arf_forward/new_gate/URT_Q6_CUMULANTS_AND_A5_MIXING_THEOREMS_2026_11_10.md`.
+- **Native K3 signed dictionary collision (Q14, 2026-11-10).** The Q12 non-parity K2 collision pair D0=(0,2,4,6,8,10) and D1=(0,2,5,6,9,11) is separated at order 3: the unique K2=25/24 vacuum has scale/sign-invariant K3²/r2³ = 4823127/1024000 ∓ (41811/256000)√5. Local exact certificate executed; GitHub CI pending. This does not settle the 768-orbit classification or select a physical ARF (`research_archive/2026-11-10_signed_dictionary_k3/`).
 - **24-clock holonomy.** For the 291,840-mode conditional operator, Tr K(θ)ⁿ is θ-independent for n < 24, and cos 24θ first appears at n = 24. This does **not** select the golden phase.
 
 ## 3. Proven obstructions and falsified routes — do not retry these

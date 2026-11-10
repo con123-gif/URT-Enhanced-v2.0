@@ -24,9 +24,19 @@ commit as your result.
 - [x] Q12 [compute] (A) **Signed axis dictionary classes.** Enumerate the 768 signed six-axis dictionaries modulo proper A5; evaluate exact five-vacuum K₂ spectra for one representative per orbit and count collisions. Keep the original fixed Q and distinguish passive joint covariance from active Q symmetry. — GPT 2026-11-10: OBSTRUCTION (Signed dictionary quotient and native K₂ collisions)
 - [ ] Q13 [repair] **Companion copies of existing intermediates.** For the three remaining missing_file scripts whose missing basename or near-name already exists in the archive — `golden_species_operators.npz` (three byte-identical copies), `run_endpoint_test.py` (at `research_archive/run_endpoint_test.py`, with other `full_library/` names at archive root) and `joint_original_h64_species_link_source.npz` (same directory as the consumer) — test whether a byte-identical companion copy at the path the consumer actually opens unblocks that script. Do not invent file contents.
 
-- [ ] Q14 [compute] (A) **Third cumulant collision test.** For signed dictionaries (0,2,4,6,8,10) and (0,2,5,6,9,11), calculate the five native A4 K₃ rates by the exact Q6 tilted-transfer/Poisson recursion and determine whether their multisets differ without fitted inputs.
+- [x] Q14 [compute] (A) **Third cumulant collision test.** For signed dictionaries (0,2,4,6,8,10) and (0,2,5,6,9,11), calculate the five native A4 K₃ rates by the exact Q6 tilted-transfer/Poisson recursion and determine whether their multisets differ without fitted inputs.
+
+- [ ] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job.
 
 ## Log
+
+### 2026-11-10 23:17 UTC — GPT — Gate A — Native third-cumulant collision separation
+- Task: Q14 [compute] — compare native A4 five-vacuum K3 for Q12's non-parity K2 collision pair using fixed six-bit Q.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native hidden-5 source only).
+- Statement: D0=(0,2,4,6,8,10) and D1=(0,2,5,6,9,11) share the K2 multiset {5/6,25/24,67/48,33/16,33/16}, but at the unique K2=25/24 vacuum their scale/sign-independent K3²/r2³ invariants are 4823127/1024000 ∓ (41811/256000)√5 respectively, so joint (K2,I3) separates the pair exactly.
+- Evidence: research.native_signed_dictionary_k3; local Python 3.13.5 / SymPy 1.14.0 / NetworkX 3.6.1, exit 0, exact native-formula reconstruction; finite tilted-transfer 24→25 difference checked for each of 10 cases. CI pending execution against the archived Q11 script.
+- Dead ends: K2 alone cannot separate this pair; K3 resolves only this pair, not the entire signed dictionary selection gate. No physical ARF.
+- Next step: Q15 [compute] — enumerate all 768 proper-A5 orbit representatives and count exact joint (K2,K3²/r2³) collisions with fixed Q.
 
 ### 2026-11-10 22:22 UTC — GPT — Gate A — Signed dictionary quotient and native K₂ collisions
 - Task: Q12 [compute] — enumerate all signed six-axis dictionaries modulo proper A5, compute exact five-vacuum K₂ spectra, and test collisions with fixed Q.
