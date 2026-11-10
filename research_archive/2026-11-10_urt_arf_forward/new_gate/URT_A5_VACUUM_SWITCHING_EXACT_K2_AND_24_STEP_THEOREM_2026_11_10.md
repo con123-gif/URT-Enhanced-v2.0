@@ -10,7 +10,7 @@ Use the original five-Platonic 190-cochain nonlinear source, its archived exactl
 
 The five oriented unit A4 singlets v_i form an A5-equivariant regular simplex in the hidden four-dimensional real space: Σ_i v_i=0, and (1/5)Σ_i v_i v_iᵀ=I₄/4. Set g_i(h)=v_i·s(h).
 
-**New explicit conditional dynamical hypothesis:** independently of the URT history, the vacuum label i follows the A5-equivariant stochastic matrix `P_t=(1-t)I₅+(t/5)J₅`, with `0≤t≤1`. At t=0 it is a uniformly chosen frozen vacuum; at t=1 the vacuum is independently resampled uniformly at every time; 0<t≤1 gives an irreducible mixing chain. This family is NOT selected by the primitive π/φ/e recursion, the 24-clock, or the charged H13⊕H51 action.
+**New explicit conditional dynamical hypothesis:** independently of the URT history, the vacuum label i follows the A5-equivariant stochastic matrix `P_t=(1-t)I₅+(t/5)J₅`, with `0≤t≤5/4`. At t=0 it is a uniformly chosen frozen vacuum; at t=1 the vacuum is independently resampled uniformly at every time; at t=5/4 the chain has zero self-transition and uniform jumps to the other four vacua. All t>0 in this interval give irreducible mixing chains. **This is the complete A5-equivariant 5-state Markov family:** A5 acts 2-transitively on the five tetrahedral vacua, so a commuting transition matrix has one common diagonal and one common off-diagonal entry; stochasticity leaves exactly one free parameter. Positivity restricts it to 0≤t≤5/4. This family is NOT selected by the primitive π/φ/e recursion, the 24-clock, or the charged H13⊕H51 action.
 
 ## Theorem — exact source variance rate for every switching rate
 
@@ -28,7 +28,7 @@ Exact special cases:
 
 - Frozen uniformly selected vacuum `t=0`: `K2=71/48`, reproducing the archived five-vacuum quenched average.
 - Independent uniform vacuum resampling `t=1`: `K2=7/4`.
-- Half-mixing `t=1/2`: `K2=3307/1920`.
+- Half-mixing `t=1/2`: `K2=3307/1920`.\n- No self-transition `t=5/4`: `K2=1315/768`.
 
 These **different exact answers** are all A5-invariant and use the same primitive history Q and native source. Therefore A5 invariance, Haar history, and the hidden source alone do not select a unique effective quadratic response. This is a precise nonuniqueness certificate; it does not falsify the Cathedral construction. A physically selected vacuum-transition law is still required.
 
@@ -54,7 +54,7 @@ The finite sum follows from Q⁶=Haar for functions of six-bit history. This for
 
 `python URT_A5_MARKOV_VACUUM_K2_THEOREM_2026_11_10.py`
 
-**PASS locally:** 64 exact Q⁶=Haar checks; all exact source-lag polynomial coefficients; three exact K2 values; three open 24-step variances. An independent exact 320-state product Markov calculation, using a deliberately different six-bit zero-sum source with nonzero lag-one covariance, checked all n=1,…,9 and t=0,1/2,1. An independent fourth-moment 320-state tilted-transfer check at t=1 reproduced K4=224 for this *synthetic verification source* at n=1,…,8. **224 is not a native Cathedral physical prediction**.
+**PASS locally:** 64 exact Q⁶=Haar checks; all exact source-lag polynomial coefficients; four exact K2 values; three open 24-step variances. An independent exact 320-state product Markov calculation, using a deliberately different six-bit zero-sum source with nonzero lag-one covariance, checked all n=1,…,9 and t=0,1/2,1,5/4. An independent fourth-moment 320-state tilted-transfer check at t=1 reproduced K4=224 for this *synthetic verification source* at n=1,…,8. **224 is not a native Cathedral physical prediction**.
 
 `python URT_A5_MARKOV_VACUUM_K2_THEOREM_2026_11_10.py --native`
 
