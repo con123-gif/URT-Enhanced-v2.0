@@ -3,10 +3,11 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–37 and alt routes 01–48. It
-performs no new numerical experiment. Alt cycles 49–51 (C3 flux
-stability, spinor C3 spectrum, handedness) had no reports at the
-time of writing and were not integrated or duplicated.
+This note compiles coupled cycles 01–41 and alt routes 01–54. It
+performs no new numerical experiment. The alt line’s reading of
+the historical ARFs’ intended observables and its computation of
+Δ_δ as a fixed-point shift (alt 52–54) are integrated, not
+duplicated.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -177,6 +178,24 @@ Question D (cycles 23, 25, 26):
   y_even); γ = 1/81 lies above y_c(η). Cycle 22 still stands:
   y_even is FREE. Occupying the subcritical branch requires an
   extra postulate y_even < y_c(η) ≈ 0.006.
+- Cycle 39: the archive’s own missing inputs for physical α and
+  masses include M_U, f_G, the coframe/continuum conversion, the
+  electron chart as a matching condition, C_IR, the hidden-51
+  determinant, the physical clock and Gauss projection, the
+  Maxwell stiffness λ, running/thresholds/EW photon projection,
+  Newton’s G, lepton/Higgs poles, and T_*[A]. None of these is
+  fixed by proved coupled-line structure through cycle 38.
+- Cycle 40: the product of the solid with the 24-clock supplies a
+  genuine discrete momentum but not the archive’s K_γ. Π_T(0) is
+  nonzero (spatial λ ∈ [0.001611, 0.012756]; spinor
+  [0.003289, 0.024387]), so lim Tr[Π]/(nT q²) diverges. The
+  dynamical residue R(q) = (Π(q)−Π(0))/[4 sin²(q/2)] is neither
+  unique (spreads 4.45 and 3.96) nor positive (K_iso ≈ −1.35×10^{-5}
+  spatial, −2.85×10^{-5} spinor). No α_eff comparison.
+- Cycle 41: y_c(η) = Δ √(c5/χ(η)) is an exact identity of the
+  definitions y_c = √(c_even/χ) and c_even = Δ² c5 (relative
+  error 0 on the ico numbers). √(c5/χ(η)) = 2.38638 is O(1), so
+  y_c is O(Δ). This does not set y_even = Δ.
 
 ## Parameter-free predictions (not ARF identifications)
 
@@ -272,7 +291,12 @@ then splits into two derived phases.
   Thomson α_eff = 1/(4π K_γ) (cycle 35). The spinor lift
   repeats the structural prediction (cycle 36) and does not
   create such a map. The subcritical phase is consistent but
-  unselected (cycle 37).
+  unselected (cycle 37). Adding the 24-clock as a periodic
+  direction (cycle 40) produces a genuine q but not a unique
+  positive q² residue; the literal archive limit still diverges.
+  The missing inputs that would close physical α and masses
+  remain those listed by the archive itself (cycle 39). The
+  smallness of y_c is exactly Δ times an O(1) factor (cycle 41).
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -349,7 +373,7 @@ then splits into two derived phases.
   compared. Pred sha256
   `1ff4f1717c94f6a4a6c6c1ddf1add218a66b8ff3ae9435f4baf76c2c79cc4c6c`.
 
-## Alt routes 46–51 (integrated as far as reported; not duplicated)
+## Alt routes 46–54 (integrated; not duplicated)
 
 - **alt 46 (CONDITIONAL).** Metastable mixed C3 spectrum (not
   the ground state). Three pairing-scale singlets appear;
@@ -367,8 +391,51 @@ then splits into two derived phases.
   a D3 core (Ω-barrier 2.779×10^5). No spatial wall is derived
   without a hidden kinetic, which is not introduced. Pred sha256
   `d4fab25509c17ee83f02d0fc0f84b62b1df1c1d6704ffcd2ccf199a972e36d85`.
-- **alt 49–51.** No reports at the time of writing (C3 flux
-  stability, spinor C3 spectrum, handedness). Not duplicated.
+- **alt 49 (PROVED on H1, H3; H2 with a pairing-gauge caveat).**
+  The metastable C3 point is a local minimum of the hidden-field
+  Ω (positive even-angular, radial and odd curvatures). Fermion-
+  only Ω prefers icosahedral π-flux for both C3 and A4; the
+  A4−C3 gap −99841 is flux-independent and is not closed by
+  π-flux. C3 remains metastable, not the ground state. Pred
+  sha256
+  `c7d5f746483de024e919b520bf0ae8f3a801e1a87b27a96f81bbc0b6965185ee`.
+- **alt 50 (CONDITIONAL).** Two-sided spinor lift of the
+  metastable C3 point: spatial pairing singlets become doublets
+  (⊗ ε at doubled r_*). Zero pairing-scale singlets on A = 0 and
+  on all-π. C_mass and R_mass were not compared. Pred sha256
+  `c7c798856080f9ae9bebdd17889b3e7865d70c10b8c1ddd4333ea897b8125a05`.
+- **alt 51 (PROVED on H1–H2; H3 FALSIFIED).** Time reversal is a
+  symmetry of the C3 vacuum with and without π-flux (holonomy
+  traces real; H ≅ H_TR ≅ H*). No leftover 3-fold orientation
+  or opposite-chirality C3 orbit. The even+/odd− history-parity
+  rule does not assign opposite signs to g and g^{-1}. Pred
+  sha256
+  `fc6d57b2cf8d1186b9788433b24a2e298d605b4f8ed0f52c3a9497cebd0b7fb6`.
+- **alt 52 (PROVED, documentary).** Archival intended meanings
+  of the four historical ARFs, not recomputed here: Δ_δ is the
+  shift of the effective vacuum rail off δ★
+  (Δ_δ = −δ★³/63 − γ/40; δ_eff = δ★ + Δ_δ); R_α is the
+  subleading electromagnetic correction in 1/α; C_mass is a mass
+  coefficient, not a named PDG ratio; R_mass is the A_5 mass
+  residue. A conflict between the arf.py docstring (uses d_eff)
+  and the executed 1/α formula (uses unshifted δ★) is recorded,
+  not resolved. Coupled-line α_eff work was not duplicated.
+  Pred sha256
+  `fa0edf9a4f7d7070cc66fff7fb9efaf590b0b914ebf5bebc67a168b3b6b949ed`.
+- **alt 53 (PROVED; identification with Δ_δ FALSIFIED).** The
+  unique parameter-free Hessian shift is
+  O_★ := (3/20 − √(κ_even/κ_odd)) − δ★ ≈ +1.950×10^{-5}
+  (tree / Hbits, and essentially unchanged on both the
+  supercritical A4 condensate and the parameter-free subcritical
+  point y = 0). Relative mismatch to historical Δ_δ is 1.054
+  (no 10^{-4} hit; polynomial types disagree). Pred sha256
+  `ccbbe0854f5fb0ac54e0350ce3ededdb9ac01aa0ca697161c38a07773eec92de`.
+- **alt 54 (PROVED).** Given those archival meanings, none of
+  C_mass, R_mass or R_α has a newly computable matching
+  observable from proved structure alone. R_α still needs a
+  unique electromagnetic current and an IR projection of 1/α
+  (the coupled line’s present work). Pred sha256
+  `6e65bb8bc50f50cd4d36f3abecec2946bbcc70b56d5dd3e3822a3a508764e123`.
 
 ## Paths to verification scripts
 
@@ -382,7 +449,8 @@ non-pairing ratios (DID_NOT_RUN), 25 π-flux kernel, 26 spinor
 π-flux kernel, 28 unbroken combination, 29 momentum expansion, 31 Cathedral
 EM U(1) reading, 32 dichotomy / subcritical kernel, 33 T_c vs η,
 35 IR projection / κ_IR, 36 spinor subcritical kernel, 37 subcritical
-consistency.
+consistency, 39 missing-input catalogue, 40 clock-momentum q² residue,
+41 y_c identity.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -394,7 +462,9 @@ spinor lift, 34 induced κ at A = 0, 35 derived-vacuum spectrum,
 spinor, 39 Gaussian fluctuations, 40 dodeca / H51 condensation,
 41 joint H13+dodeca vacuum, 42 joint spectrum, 43 joint 4_5 sphere,
 44 derived weights, 45 smaller-stabiliser spectrum, 46 C3 metastable
-spectrum, 47 RP³ basins, 48 A4 domain defects. Alt 49–51 had no
-reports.
+spectrum, 47 RP³ basins, 48 A4 domain defects, 49 C3 full stability,
+50 spinor C3 spectrum, 51 C3 handedness, 52 archival ARF meanings,
+53 Δ_δ as a fixed-point shift, 54 archival observables for C_mass,
+R_mass and R_α.
 
 No ARF was derived.
