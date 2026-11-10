@@ -3,11 +3,12 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–50 and alt routes 01–60. It
-performs no new numerical experiment. Alt routes 58–60 are
+This note compiles coupled cycles 01–53 and alt routes 01–63. It
+performs no new numerical experiment. Alt routes 61–63 are
 integrated from their REPORT.md files, not duplicated: G_{13}
-internal structure and the search for the integers 35, 51, 63
-and 40 are not recomputed here.
+internal structure, the uniqueness.py Theorem 1 geometry, the
+35/51/63/40 search, and C_mass’s PT/Casimir catalogue are not
+recomputed here.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -67,7 +68,10 @@ Scripts: `coupled_cycle04_ratio_invariance/`,
 1/2/n-step transfers and the original Ward contacts (cycle 05).
 **OPEN**, after the full subsequent programme, for a unique
 Maxwell term, three charged singlets, a derived y_even, and any of
-the four historical ARFs.
+the four historical ARFs. Cycle 51 names the exact obstruction to
+a unique 4D coframe; cycle 52 finds no derived principle that
+selects the y_even branch; cycle 53 records that C_IR remains
+blocked by the missing hidden-51 embedding.
 
 H13 = 2·1 ⊕ 3 ⊕ 3' ⊕ 5. Inversion then hopping collapse eight H13
 Yukawas to a residual ratio r = y_even / y_odd (cycles 10–11). The
@@ -268,9 +272,15 @@ Question D (cycles 23, 25, 26):
 
 The overall y_even is free. After inversion and hopping the
 Yukawa sector is a 2-plane (y_even, y_odd); condensation does not
-fix their ratio. Observables that scale as 1/y_even² (13/E_pair,
-m_odd/E_pair) are therefore not predictions. No Yukawa ray was
-found, so the one-loop / EM / ARF pipeline was not run.
+fix their ratio. Cycle 52 tested free-energy minimisation of the
+full coupled machine at T = η (including the gauge sector),
+stability of the origin, and the resolvent
+R(z) = (I − z T_coupled)^{-1}: none selects a unique finite y
+or a branch without a postulate on y_even (the free energy, if
+minimised in y as an extra postulate, runs away to large y).
+Observables that scale as 1/y_even² (13/E_pair, m_odd/E_pair)
+are therefore not predictions. No Yukawa ray was found, so the
+one-loop / EM / ARF pipeline was not run.
 
 ## Obstructions
 
@@ -351,8 +361,21 @@ then splits into two derived phases.
   no unique coframe conversion; the obstruction is the
   conjunction of non-unique κ, non-unique inner product,
   non-unique 2-complex Jacobian, and a missing 4D coframe
-  (cycle 48). The electron Q = −1 chart remains a matching
-  condition (cycle 50).
+  (cycle 48). Cycle 51 attacks clause (iv) directly and finds
+  no unique derived 4D / spacetime coframe with Maxwell symbol
+  (K/4)∫F²: the spatial geometry is a 2-complex (at most 2+1
+  with time); the only exact 4-real-dimensional archival chart
+  (Theory of Nature §9, a local Hopf chart on HP¹ = S⁴) lacks
+  global gluing, Lorentzian signature, metric scale, connection
+  and continuum Maxwell dynamics; C_24 was not reused and
+  spherical DEC was not selected for its S² Rayleigh. The
+  electron Q = −1 chart remains a matching condition (cycle 50).
+  No derived principle occupies one y_even branch without a
+  postulate on y (cycle 52); just above y_c there is a window
+  in which a small even condensate forms on A = 0 before A = π
+  is preferred, which still does not select a unique y.
+  Hidden-51 has no new canonical embedding into H64, so C_IR
+  remains a missing input (cycle 53).
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -509,7 +532,9 @@ consistency, 39 missing-input catalogue, 40 clock-momentum q² residue,
 41 y_c identity, 43 Hodge Gauss / IR projection, 44 derived
 refinement / continuum test, 45 G_{13} coupled-operator relation,
 47 A5-invariant Hodge weightings, 48 coframe / continuum
-obstruction, 50 charge chart / electron convention.
+obstruction, 50 charge chart / electron convention, 51 4D
+coframe obstruction, 52 y_even branch selection, 53 hidden-51
+/ C_IR status.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -527,7 +552,9 @@ spectrum, 47 RP³ basins, 48 A4 domain defects, 49 C3 full stability,
 R_mass and R_α, 55 archived δ-flow fixed point with the G_{13}
 Laplacian, 56 R_mass spectral list, 57 arf.py 1/α inconsistency
 (documentary), 58 G_{13} structure and the K4 cut, 59
-prefactor / denominator origins, 60 1/α chain blockers.
+prefactor / denominator origins, 60 1/α chain blockers, 61
+what is unique about N=13, 62 G_{13} archive inventory, 63
+C_mass 5/16 and 7/8.
 
 ## Alt routes 55–57 (integrated; not duplicated)
 
@@ -587,5 +614,75 @@ prefactor / denominator origins, 60 1/α chain blockers.
   archival arithmetic, not selected by CODATA, and not computed
   here as a derived 1/α. Pred sha256
   `4b9f85915af852801b8c4bbb57f26fb0b3dd39775de7b7a0196a2ada733b2527`.
+
+## Coupled cycles 51–53
+
+- **cycle 51 (PROVED).** No unique derived 4D / spacetime
+  coframe with Maxwell symbol (K/4)∫F². Exact obstruction: the
+  cycle-48 conjunction (i)–(iii), plus (iv) no unique 4D
+  geometry with a unique vierbein (spatial 2-complex is at most
+  2+1 with time; ToN §9’s local HP¹ chart is not a Maxwell
+  coframe; internal 4-spaces and H64 = Q_6 are not spacetime;
+  C_24 not reused; spherical DEC not selected). The archive
+  still lists the vierbein as missing (ToN §15, §41, §43, §46;
+  NATIVE_137). No K_γ. Pred sha256
+  `9aaee7250a51e406de7d9bf74ebd6f4e2360774a13f6348ce07830c54ba8c8b4`.
+- **cycle 52 (PROVED).** Free-energy minimisation at T = η
+  including the gauge sector, origin stability, and the
+  resolvent poles do not select the y_even branch or a unique
+  finite y. Subcritical ω ≡ 0; supercritical ω runs away as
+  −N² y²/(16 c_even) (relative error 1.4×10^{-4} at y = 1).
+  Minimising in y is an extra postulate (cycle 22) and, if
+  granted, has no interior minimum. A near-threshold window
+  y_c < y < y_π ∈ (0.0059995, 0.01) prefers A = 0 with a small
+  condensate; it does not occupy a branch without choosing y.
+  Pred sha256
+  `0179844439f2dfdad768433323942df02208087748b71aa657e746c262a96797`.
+- **cycle 53 (PROVED as a status reading).** No new unique
+  embedding of abstract H51 into H64 (Hom_A5(4, Sym² H51) still
+  has dimension 90). C_IR remains a missing input and is not a
+  graph κ. Pred sha256
+  `2f2549b3f33f007a8e6852f3e7f80c7cc332ea31f0c1affa72ecf0585554f301`.
+
+## Alt routes 61–63 (integrated; not duplicated)
+
+- **alt 61 (PROVED).** uniqueness.py Theorem 1 has no geometric
+  winner among the true platonic cones (icosahedron+centre has
+  λ₂ = 6−√5, not 3). C1 alone selects cube+centre (N=9); C2
+  alone selects both N=13 and N=21. The only uniqueness of N=13
+  is combinatorial: it is the smallest simple platonic cone, or
+  equivalently V+1 for the 12-vertex A5-orbit, already written
+  in foundations and independent of the Cayley edges. Lemma L4
+  holds for every geometric platonic cone and does not uniquely
+  select N=13. Theorem 1 is not restored and G_{13} was not
+  retuned. Pred sha256
+  `3222e7bfd511e60d2ce07eba2c88eda047d08487f76a3cb344a9319afd49ec32`.
+- **alt 62 (PROVED).** Archived G_{13} (Cay(Z_12, {1,5,7,11}),
+  Aut 768) is an isolated stipulation: no primary file derives
+  the edge set. Downstream production modules that import
+  `graph.laplacian` or hardcode the Cayley spectrum (dynamics,
+  geometry, qft, lorentz, sectors, dark, gravity, uniqueness)
+  therefore leave UNDERIVED-via-G13 the R_mass spectral list and
+  sum, the K4 list {0,3,3,5} as used in gravity/qft, uniqueness
+  Theorem 1 and the Cayley L4 check, and the flow-operator
+  frequencies. Independent of the Cayley edges (and still
+  possibly stipulated for other reasons): δ★, the Δ_δ
+  denominators G+D and 4F, 137 and R_α, C_mass’s 5/16 and 7/8,
+  and the sector sizes 4 and 9 as D+1 and D². The gravity.py
+  formula |Aut| = V·(D+1)^D = 768 is an integer identification,
+  not a derivation of the edges. Pred sha256
+  `b176bae20c9bd7dea4eb769409ce7cf6941190ac76fb0812b35baaf92d414aa2`.
+- **alt 63 (PROVED).** C_mass’s rationals 5/16 and 7/8 have no
+  unique predeclared PT or Casimir role (5/16 has three
+  coinciding D=3 writings dim(5)/2^{D+1} = q/16 = dim(5)/(D+1)²;
+  7/8 has two, 7_{H13}/2^D and (2^D−1)/2^D). No resolvent-trace
+  ratio on geometric H13 hits either target at 10^{-4}. The V_0
+  expansion about δ★ is (N/2)(1+δ★²)x² + N δ★ x³ + (N/2)x⁴, with
+  no (7/8)πφ term and with cubic coefficient N δ★ ≈ 1.918, not
+  5/16. Both fractions occur in a predeclared look-elsewhere
+  catalogue (14 and 3 expressions). C_mass as a whole remains
+  underived (rationals not unique, πφ pairing stipulated, three
+  charged singlets still missing). Pred sha256
+  `18b8d3331ac85a06105e20d0f0a19d6fca804b4cd6e3dcd7624f5ae7ee25efa6`.
 
 No ARF was derived.
