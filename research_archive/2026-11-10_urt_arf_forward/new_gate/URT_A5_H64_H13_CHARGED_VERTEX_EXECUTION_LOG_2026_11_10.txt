@@ -1,0 +1,31 @@
+explicit icosahedral 13-vertex sector 3x3' dim 9 quartet rank 4
+explicit icosahedral 13-vertex sector 3x5 dim 15 quartet rank 4
+explicit icosahedral 13-vertex sector 3'x5 dim 15 quartet rank 4
+explicit icosahedral 13-vertex sector Sym2(5) dim 15 quartet rank 4
+H13 character [13, 1, 1, 3, 3] Sym2 character [91, 7, 1, 6, 6] wedge2 character [78, -6, 0, 3, 3]
+Sym2(H13) decomposition {'1': 6, '3': 4, "3'": 4, '4': 4, '5': 9}
+Wedge2(H13) decomposition {'1': 1, '3': 6, "3'": 6, '4': 4, '5': 5}
+A5 quartet multiplicity in Sym2(H13) = 4; two hidden quartets give 8 allowed independent vertex tensors
+exact 91x91 integer idempotent M^2=15M, trace(M)=240, rank(M)=16: PASS
+U(1) local Yukawa Ward: first =0; second =(-4+8-4)=0: PASS
+Bare h† Dirac mass coupling: NOT gauge invariant: PASS
+No four historical ARFs, fitted couplings, or pole identifications used.
+full Sym²(H13⊕H51) quartet multiplicities: H13-H13 4, cross 44, H51-H51 90, total 138
+two independent native hidden quartets allow 276 symmetry-permitted tensors under uniform charge-one Weyl hypothesis
+Walsh weight 0 energy 0 A5 decomposition {'1': 1, '3': 0, "3'": 0, '4': 0, '5': 0}
+Walsh weight 1 energy 10 A5 decomposition {'1': 0, '3': 1, "3'": 1, '4': 0, '5': 0}
+Walsh weight 2 energy 16 A5 decomposition {'1': 1, '3': 0, "3'": 0, '4': 1, '5': 2}
+Walsh weight 3 energy 18 A5 decomposition {'1': 0, '3': 2, "3'": 2, '4': 2, '5': 0}
+Walsh weight 4 energy 16 A5 decomposition {'1': 1, '3': 0, "3'": 0, '4': 1, '5': 2}
+Walsh weight 5 energy 10 A5 decomposition {'1': 0, '3': 1, "3'": 1, '4': 0, '5': 0}
+Walsh weight 6 energy 0 A5 decomposition {'1': 1, '3': 0, "3'": 0, '4': 0, '5': 0}
+H64 energy 0 multiplicity 2 A5 {'1': 2, '3': 0, "3'": 0, '4': 0, '5': 0}
+H64 energy 10 multiplicity 12 A5 {'1': 0, '3': 2, "3'": 2, '4': 0, '5': 0}
+H64 energy 16 multiplicity 30 A5 {'1': 2, '3': 0, "3'": 0, '4': 2, '5': 4}
+H64 energy 18 multiplicity 20 A5 {'1': 0, '3': 2, "3'": 2, '4': 2, '5': 0}
+H64 A5-equivariant for all 60 rotations; Q one-step A5 commutant cardinality 1
+all 46080 signed-axis transformations commuting with Q: [((0, 1, 2, 3, 4, 5), 0), ((0, 1, 2, 3, 4, 5), 63)]
+Q^6=J64/64 exactly from 6 independent appended fair bits
+Source-support input from archived native 190-cochain theorem: E18 quartet 4_3 and E16 quartet 4_5
+Each energy E18 and E16 has two A5 quartets; one native source-coupled quartet, one orthogonal complement
+PASS: no fitted ARFs; H51 decomposition is abstract and does not specify unique embedding
