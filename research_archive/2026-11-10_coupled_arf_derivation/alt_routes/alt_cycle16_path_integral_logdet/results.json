@@ -1,0 +1,96 @@
+{
+  "H1_fermion_measure": {
+    "euclidean_Z_psi_at_fixed_h": "det(K + Y\u00b7h)",
+    "contribution_to_S_eff_of_h": "\u2212Tr log(K + Y\u00b7h)",
+    "is_a_functional_of_the_hidden_field": true,
+    "is_a_functional_of_Yukawa_direction_at_fixed_norm_with_Sigma_substituted": false
+  },
+  "H2_hidden_integral": {
+    "exact_theory_after_integrating_gaussian_h": "four-fermion",
+    "equals_det_K_plus_Sigma": false
+  },
+  "H3_numerical_analog": {
+    "lambda3": 2.76393202250021,
+    "lambda3p": 7.23606797749979,
+    "points": {
+      "pure_alpha": {
+        "alpha": 1.0,
+        "beta": 0.0,
+        "mean_det": 11141.640786499873,
+        "det_K_plus_Sigma": 20203.807797699603,
+        "relative_det_mismatch": 0.44853757776450165,
+        "logdet_K_plus_Sigma": 9.913626370461106,
+        "mean_logdet_on_positive_support": 8.751324347471764,
+        "gaussian_mass_where_K_plus_M_positive": 0.9971952040594466,
+        "quadratic_shift_of_mean_logdet": -0.19635254915624212,
+        "quadratic_shift_of_logdet_proxy": 1.0854101966249685,
+        "quadratic_shifts_have_opposite_sign": true,
+        "logdet_K": 8.987196820661973
+      },
+      "pure_beta": {
+        "alpha": 0.0,
+        "beta": 1.0,
+        "mean_det": 8458.359213500127,
+        "det_K_plus_Sigma": 11796.192202300394,
+        "relative_det_mismatch": 0.28295851165847824,
+        "logdet_K_plus_Sigma": 9.375532063656305,
+        "mean_logdet_on_positive_support": 8.957670326908188,
+        "gaussian_mass_where_K_plus_M_positive": 0.999999999999905,
+        "quadratic_shift_of_mean_logdet": -0.028647450843757884,
+        "quadratic_shift_of_logdet_proxy": 0.41458980337503154,
+        "quadratic_shifts_have_opposite_sign": true,
+        "logdet_K": 8.987196820661973
+      },
+      "equal": {
+        "alpha": 0.7071067811865475,
+        "beta": 0.7071067811865475,
+        "mean_det": 11871.874999999996,
+        "det_K_plus_Sigma": 16098.453125,
+        "relative_det_mismatch": 0.26254560560457596,
+        "logdet_K_plus_Sigma": 9.686478467164108,
+        "mean_logdet_on_positive_support": 8.861664423867008,
+        "gaussian_mass_where_K_plus_M_positive": 0.9999653183696424,
+        "quadratic_shift_of_mean_logdet": -0.11249999999999999,
+        "quadratic_shift_of_logdet_proxy": 0.7499999999999999,
+        "quadratic_shifts_have_opposite_sign": true,
+        "logdet_K": 8.987196820661973
+      }
+    },
+    "minimum_relative_det_mismatch": 0.26254560560457596,
+    "proxy_prefers_pure_alpha": true,
+    "quadratic_mean_logdet_prefers_pure_beta": true,
+    "leading_corrections_have_opposite_sign": true,
+    "jensen": "log det is concave on positive-definite Hermitian matrices, so \u27e8log det(K+M)\u27e9 \u2264 log det K when \u27e8M\u27e9 = 0 and K+M stays PD, while log det(K+\u03a3) \u2265 log det K."
+  },
+  "H4_yukawas_are_parameters": {
+    "are_integration_variables_in_the_archived_model": false,
+    "path_integral_supplies_a_stationary_principle_on_the_Yukawa_sphere": false
+  },
+  "H5_hidden_hessian_correction": {
+    "Pi_over_alpha2": 0.4824045318333193,
+    "Pi_over_beta2": 0.18426213483334736,
+    "Pi_over_gamma2": 0.4,
+    "Pi_over_delta2": 0.1111111111111111,
+    "alpha_larger_than_beta": true,
+    "all_positive": true,
+    "unique_channel_forced": false,
+    "note": "S_eff[h] = \u00bd h A h \u2212 Tr log(K+Yh) expands as \u00bd h (A+\u03a0) h. \u03a0 is positive on every inversion-allowed channel and is largest for \u03b1 because \u03bb3 is smallest. This stiffens hidden modes; it does not maximise log det(K+\u03a3) and does not pick a ray."
+  },
+  "H6_ray_status": {
+    "pure_alpha_ray_derived": false,
+    "classification_of_the_ray": "CONDITIONAL on an extra variational principle (maximise log det(K+\u03a3) on the Yukawa sphere) that the coupled path integral does not supply. Not promoted to PROVED.",
+    "path_integral_maximiser_would_prefer": "At quadratic order, \u27e8log det(K+M)\u27e9 on the unit circle is larger for the heavier 3' channel (pure \u03b2), the opposite of the cycle-14 proxy."
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED",
+    "H5": "PROVED",
+    "H6": "PROVED"
+  },
+  "pure_alpha_ray_derived": false,
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "The coupled path integral does not promote log det(K+\u03a3) or the pure 3\u22975 \u2192 4_3 ray. A source-to-charged-matter coupling that would both select a unique ray and break the A5 mass degeneracies is still missing."
+}
