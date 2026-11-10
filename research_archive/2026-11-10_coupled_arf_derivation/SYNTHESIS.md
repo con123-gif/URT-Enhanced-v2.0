@@ -3,13 +3,11 @@
 Date: 10 November 2026 (Europe/London).
 Branch: `arf-coupled-research`.
 Archive: `research_archive/2026-11-10_coupled_arf_derivation/`.
-This note compiles coupled cycles 01–45 and alt routes 01–57. It
-performs no new numerical experiment. The alt line’s tests of the
-archived δ-flow, of the R_mass spectral list, and of the arf.py
-1/α writings (alt 55–57) are integrated, not duplicated. Alt
-work on the internal structure of G_{13}, on the integers
-35/51/63/40, and on the 1/α chain blockers (alt 58–60, if
-running) is not integrated here.
+This note compiles coupled cycles 01–50 and alt routes 01–60. It
+performs no new numerical experiment. Alt routes 58–60 are
+integrated from their REPORT.md files, not duplicated: G_{13}
+internal structure and the search for the integers 35, 51, 63
+and 40 are not recomputed here.
 
 Frozen constants used throughout: γ = 1/81, δ★ = 80π/(1053 φ),
 Δ = 3/20 − δ★, η = −ln Δ, ρ★ = (I4 ⊕ Δ² I4)/[4(1+Δ²)],
@@ -220,6 +218,27 @@ Question D (cycles 23, 25, 26):
   32-site Laplacian, subcritical BdG, the five-solid 0-form
   Laplacian, or the H64 hypercube. Internal structure of G_{13}
   is left to the alt line.
+- Cycle 47: lumped A5-invariant Hodge metrics on the frequency-n
+  2-complex form a cone of dimension 3, 6, 11 at n = 1, 2, 3
+  (2, 5, 10 after scale). No unique derived weighting exists
+  at n ≥ 2. All eight named geometric Hodge stars are
+  well-defined and inequivalent. None of the predeclared
+  family, including G_comb, is unique Maxwell (zero hits at
+  spread < 0.05; smallest observed 0.089 at one named point
+  of n = 2, not selected). The ~26% residual is not resolved.
+  No K_γ.
+- Cycle 48: there is no unique coframe / continuum conversion.
+  The exact obstruction is the conjunction of (i) no unique
+  discrete κ, (ii) no unique Hodge inner product, (iii) no
+  unique Jacobian even to the S² symbol ℓ(ℓ+1)=2
+  (combinatorial Rayleigh → 0; spherical DEC/circ → 2.05;
+  Euclidean → 2.67; none selected), and (iv) no unique 4D
+  coframe (the Thomson formula is 4D; an S² match would not
+  be that map). No Z, no K_γ, no α_eff comparison.
+- Cycle 50: cycle 31 still stands. No principle of cycles 32–48
+  selects a unique U(1)_EM generator or fixes the electron
+  Q = −1 chart beyond the stated convention. κ_iso was not
+  promoted to K_γ.
 
 ## Parameter-free predictions (not ARF identifications)
 
@@ -327,7 +346,13 @@ then splits into two derived phases.
   combinatorial κ_iso near 0.00228 without collapsing the
   spread and without supplying the coframe conversion. The
   archived G_{13} graph is not a block of the coupled-line
-  A5 kinetics (cycle 45).
+  A5 kinetics (cycle 45). No unique A5-invariant lumped Hodge
+  metric removes the subcritical spread (cycle 47). There is
+  no unique coframe conversion; the obstruction is the
+  conjunction of non-unique κ, non-unique inner product,
+  non-unique 2-complex Jacobian, and a missing 4D coframe
+  (cycle 48). The electron Q = −1 chart remains a matching
+  condition (cycle 50).
 
 ## Alt routes 37–39 (integrated, not duplicated)
 
@@ -482,7 +507,9 @@ EM U(1) reading, 32 dichotomy / subcritical kernel, 33 T_c vs η,
 35 IR projection / κ_IR, 36 spinor subcritical kernel, 37 subcritical
 consistency, 39 missing-input catalogue, 40 clock-momentum q² residue,
 41 y_c identity, 43 Hodge Gauss / IR projection, 44 derived
-refinement / continuum test, 45 G_{13} coupled-operator relation.
+refinement / continuum test, 45 G_{13} coupled-operator relation,
+47 A5-invariant Hodge weightings, 48 coframe / continuum
+obstruction, 50 charge chart / electron convention.
 Independent verifier:
 `coupled_cycle21_independent_verification/`.
 
@@ -499,7 +526,8 @@ spectrum, 47 RP³ basins, 48 A4 domain defects, 49 C3 full stability,
 53 Δ_δ as a fixed-point shift, 54 archival observables for C_mass,
 R_mass and R_α, 55 archived δ-flow fixed point with the G_{13}
 Laplacian, 56 R_mass spectral list, 57 arf.py 1/α inconsistency
-(documentary).
+(documentary), 58 G_{13} structure and the K4 cut, 59
+prefactor / denominator origins, 60 1/α chain blockers.
 
 ## Alt routes 55–57 (integrated; not duplicated)
 
@@ -530,5 +558,34 @@ Laplacian, 56 R_mass spectral list, 57 arf.py 1/α inconsistency
   writing. No IR photon / α_eff was constructed (coupled-line
   work, not duplicated). Pred sha256
   `3d173df0844a83a20f5ac4f0002445c3c9e6c7a07014e4765d5c8bbb4c80cd01`.
+
+## Alt routes 58–60 (integrated; not duplicated)
+
+- **alt 58 (PROVED).** Internal structure of the archived G_{13}
+  graph (Aut of order 768, no A5 subgroup; Aut-isotypes of the
+  Laplacian). The four-smallest eigenvalue cut that produces
+  the R_mass list is not a derived projection: no Aut-invariant
+  4-space, and no Klein-four invariant 4-space, has spectrum
+  {0, 3, 3, 5}. A uniqueness claim that identifies this Cayley
+  cone with geometric H13 is a misidentification (geometric
+  H13 has λ_2 = 6−√5, not 3). The R_mass list remains a
+  stipulated-graph multiset. Pred sha256
+  `d0f53a5e6fa141e8aea79303f070373420d5fa4b60af2a87f8ba381beae44405`.
+- **alt 59 (PROVED).** The R_mass prefactors D/35, (D+1)/51 and
+  1/N, and the d_eff denominators G+D and 4F, remain stipulated.
+  Tree-level back-reaction on the archived flow gives a zero
+  shift, not Δ_δ. A one-loop shift exists only conditionally on
+  a stipulated measure and has the wrong polynomial type.
+  In a predeclared catalogue those integers are not rare.
+  Coupled-line work was not duplicated. Pred sha256
+  `df4f69a63cc6ebd6b2c4193d2c20d689cc9ea034bebedea0f4b987fce6cc55dd`.
+- **alt 60 (PROVED).** The unique derived self-consistent rail
+  of the archived flow is δ★, not d_eff. The physical 1/α chain
+  is blocked even on that rail: no unique IR photon / α_eff
+  (I2), 1/π² stipulated (I3), R_α still blocked (I4). The two
+  writings 137.0360100 and 137.0359993 are restated as
+  archival arithmetic, not selected by CODATA, and not computed
+  here as a derived 1/α. Pred sha256
+  `4b9f85915af852801b8c4bbb57f26fb0b3dd39775de7b7a0196a2ada733b2527`.
 
 No ARF was derived.
