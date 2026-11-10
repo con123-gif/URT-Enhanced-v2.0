@@ -1,0 +1,188 @@
+{
+  "H13_spectrum_clusters": [
+    [
+      -2.6645352591003757e-15,
+      1
+    ],
+    [
+      3.7639320225001995,
+      3
+    ],
+    [
+      6.999999999999995,
+      5
+    ],
+    [
+      8.236067977499786,
+      3
+    ],
+    [
+      13.000000000000002,
+      1
+    ]
+  ],
+  "K0_spectrum_clusters": [
+    [
+      -1.214306433183765e-16,
+      1
+    ],
+    [
+      2.7639320225002098,
+      3
+    ],
+    [
+      5.999999999999995,
+      5
+    ],
+    [
+      7.236067977499789,
+      3
+    ]
+  ],
+  "isotype_dims": {
+    "ker": 1,
+    "3_low": 3,
+    "5": 5,
+    "3_high": 3,
+    "1_hub": 1
+  },
+  "blocks": {
+    "L1_H13_P1": {
+      "spectrum": [
+        -3.6950455776800396e-16,
+        3.7639320225002075,
+        3.763932022500209,
+        3.76393202250021
+      ],
+      "dim": 4,
+      "equals_P1": true,
+      "is_control_block_of_H13": true
+    },
+    "L2_H13_P2": {
+      "spectrum": [
+        -3.6950455776800396e-16,
+        8.236067977499786,
+        8.23606797749979,
+        8.236067977499792
+      ],
+      "dim": 4,
+      "equals_P1": false
+    },
+    "L2_H13_P4_hub_low": {
+      "spectrum": [
+        3.7639320225002098,
+        3.7639320225002106,
+        3.763932022500212,
+        13.0
+      ],
+      "dim": 4,
+      "equals_P1": false
+    },
+    "L2_H13_P4_hub_high": {
+      "spectrum": [
+        8.236067977499788,
+        8.23606797749979,
+        8.236067977499792,
+        13.0
+      ],
+      "dim": 4,
+      "equals_P1": false
+    },
+    "L3_K0_ker_plus_Fiedler": {
+      "spectrum": [
+        -1.214306433183765e-16,
+        2.7639320225002098,
+        2.7639320225002106,
+        2.763932022500211
+      ],
+      "dim": 4,
+      "equals_P1": false,
+      "expected_spectrum": [
+        0.0,
+        2.76393202250021,
+        2.76393202250021,
+        2.76393202250021
+      ],
+      "matches_expected": true
+    },
+    "L4_hidden_4_3": {
+      "spectrum": [
+        0.4444759966538212,
+        0.4444759966538212,
+        0.4444759966538212,
+        0.4444759966538212
+      ],
+      "dim": 4,
+      "equals_P1": false,
+      "hess_value": 0.4444759966538212
+    },
+    "L4_hidden_4_5": {
+      "spectrum": [
+        2.7110263135564066e-06,
+        2.7110263135564066e-06,
+        2.7110263135564066e-06,
+        2.7110263135564066e-06
+      ],
+      "dim": 4,
+      "equals_P1": false,
+      "hess_value": 2.7110263135564066e-06
+    },
+    "L5_dodeca": {
+      "lambda_3": {
+        "lambda": 3.0,
+        "dim": 4,
+        "is_4_dimensional": true,
+        "spectrum": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "equals_P1": false
+      },
+      "lambda_5": {
+        "lambda": 5.0,
+        "dim": 4,
+        "is_4_dimensional": true,
+        "spectrum": [
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "equals_P1": false
+      }
+    }
+  },
+  "cone_lift": {
+    "fiedler_lift_residuals": [
+      1.88329301639005e-15,
+      1.8184139026960954e-15,
+      1.6554897943242194e-15
+    ],
+    "fiedler_lift_in_3_low": [
+      2.0246279515861724e-15,
+      1.2524426338400086e-15,
+      1.9354456595217857e-15
+    ],
+    "lift_is_3_low": true,
+    "six_minus_sqrt5_equals_fiedler_plus_1": true,
+    "ker_is_13_constant": true,
+    "padded_12_constant_is_not_kernel": true,
+    "P1_equals_K0_4block": false
+  },
+  "other_blocks_equal_P1": [],
+  "hypotheses": {
+    "H1": true,
+    "H2": true,
+    "H3": true
+  },
+  "classification": "PROVED",
+  "P1_is_a_block_of_coupled_H13_kinetic": true,
+  "P1_equals_another_named_coupled_4block": false,
+  "built_mass_or_charge_formula": false,
+  "advances_physical_ARF": false,
+  "integrity": {
+    "predeclaration_sha256": "eaead43c8a3f4c47033371d8a092f50c800b8e5e0da887c964bfe6aa6c5ea92f"
+  }
+}
