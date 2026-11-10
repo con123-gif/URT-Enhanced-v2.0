@@ -43,6 +43,13 @@ The `[[gate]]` entries in `registry.toml` are the research queue: the open probl
 set to `closed` only with a `proof_check` whose `claim = "derivation"` passes in the same run;
 otherwise the run fails. The summary prints the gate table on every run.
 
+## Scheduled research sessions
+A scheduled Claude session runs every 4 hours. It follows `RESEARCH_PROTOCOL.md`: read
+`RESEARCH_LOG.md`, do one unit of mathematics on the next open gate (a theorem, an obstruction,
+or an executed archive claim), register its certificate here as a `[[check]]`, add a log entry with
+the precise next step, push one commit to `newtons-cathedral`, and confirm the orchestrator verdict.
+The log is where continuity lives: each session starts from its top entry.
+
 ## Two things worth knowing
 - **`run_native_source.py`** executes the archived `microscopic_source_currents.py` unmodified
   (its sha256 is pinned in `RECOVERY_MANIFEST.json`). That script hashes

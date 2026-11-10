@@ -123,6 +123,14 @@ run = "python -u research_archive/2026-11-10_urt_arf_forward/new_gate/URT_SOURCE
 timeout = 900
 
 [[check]]
+id = "history.native_q6_fourth_cumulants"
+stage = "history"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_Q6_TILTED_TRANSFER_ALL_CUMULANTS_2026_11_10.py --native"
+timeout = 900
+
+[[check]]
 id = "history.native_24clock_fourier"
 stage = "history"
 claim = "conditional"
