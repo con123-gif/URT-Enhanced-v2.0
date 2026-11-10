@@ -1,0 +1,6 @@
+native source history eigenvalue 16 uniform golden: min/max 16.010228725137853 21.33259410308113 exact inverse bound <= 0.0625
+native source history eigenvalue 18 uniform golden: min/max 18.01022872513785 23.33259410308113 exact inverse bound <= 0.05555555555555555
+PASS: 12 generic 24-link configurations, exact holonomy spectrum and gauge redistribution
+THEOREM: spec(A5) subset [16,16+4(pi/e)^2], spec(A3) subset [18,18+4(pi/e)^2]
+NO-GO: native Gaussian hidden source cannot create a zero-energy/massless pole by itself
+LIMITATION: does not exclude poles from independent spatial gauge, fermion, continuum or collective dynamics
