@@ -1,0 +1,4 @@
+PREDECLARATION.md sha256=59900ec6f80052ae56ede2f80f48c25eee47345ad2bab88c1d10f2adc4d63dcf
+bytes=2470
+test_adversarial.py sha256=a29437c3e9cee35ff3c4ffc29300b21e0f1eede5e0353650733d2b3c4e686a99
+bytes=10665

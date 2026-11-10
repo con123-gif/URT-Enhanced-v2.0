@@ -1,0 +1,180 @@
+{
+  "sym2_quartets_per_orbit": {
+    "12A": 4,
+    "12B": 4,
+    "20A": 15,
+    "20B": 15
+  },
+  "cross_quartets": {
+    "12A\u229712B": 8,
+    "12A\u229720A": 16,
+    "12A\u229720B": 16,
+    "12B\u229720A": 16,
+    "12B\u229720B": 16,
+    "20A\u229720B": 28
+  },
+  "window": "each q_i in [-3,3], 7^4 = 2401 assignments",
+  "n_scanned": 2401,
+  "n_anomaly_free": 49,
+  "n_opposite_charge_family_in_window": 49,
+  "n_anomaly_free_not_opposite": 0,
+  "sample_non_opposite_anomaly_free": [],
+  "m_value_counts_anomaly_free": {
+    "0": 21,
+    "4": 6,
+    "15": 6,
+    "20": 4,
+    "31": 4,
+    "32": 4,
+    "35": 4
+  },
+  "m_value_counts_opposite_family": {
+    "0": 21,
+    "4": 6,
+    "15": 6,
+    "20": 4,
+    "31": 4,
+    "32": 4,
+    "35": 4
+  },
+  "m_equals_one_count": 0,
+  "m_equals_one_count_opposite_family": 0,
+  "min_positive_m": 4,
+  "min_positive_m_opposite_family": 4,
+  "min_positive_two_hidden_dim": 8,
+  "samples_at_min_positive_m": [
+    [
+      -1,
+      1,
+      -2,
+      2
+    ],
+    [
+      -1,
+      1,
+      0,
+      0
+    ],
+    [
+      -1,
+      1,
+      2,
+      -2
+    ],
+    [
+      1,
+      -1,
+      -2,
+      2
+    ],
+    [
+      1,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      2,
+      -2
+    ]
+  ],
+  "samples_at_min_positive_m_opposite": [
+    [
+      -1,
+      1,
+      -2,
+      2
+    ],
+    [
+      -1,
+      1,
+      0,
+      0
+    ],
+    [
+      -1,
+      1,
+      2,
+      -2
+    ],
+    [
+      1,
+      -1,
+      -2,
+      2
+    ],
+    [
+      1,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      2,
+      -2
+    ]
+  ],
+  "special": {
+    "zero": {
+      "q": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trQ": 0,
+      "trQ3": 0,
+      "m": 0
+    },
+    "opposite_1_0": {
+      "q": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "m": 4
+    },
+    "opposite_1_1": {
+      "q": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "m": 35
+    },
+    "opposite_1_2": {
+      "q": [
+        1,
+        -1,
+        2,
+        -2
+      ],
+      "m": 4
+    },
+    "opposite_0_1": {
+      "q": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "m": 15
+    }
+  },
+  "unique_yukawa_ray": false,
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Anomaly cancellation is a real constraint and is automatically solved by opposite charges on sign-swapped orbit pairs, but it never reduces the pairing count m to 1 inside the scanned window. The Yukawa ray is still not unique."
+}
