@@ -1,0 +1,72 @@
+{
+  "L2_spectrum_min": 0.007657918270344197,
+  "L2_kernel_dim": 0,
+  "L2_psd": true,
+  "L2_matches_phased_cycle": true,
+  "lambda_min_A3_minus_A5": 2.0,
+  "H1_kernel_present": false,
+  "H1_lambda_mins_strictly_above_18_and_16": true,
+  "lambda_min_A3": 18.01022872513785,
+  "lambda_min_A5": 16.010228725137853,
+  "H1_lambda_mins_are_exactly_18_and_16": false,
+  "schur_block_positivity": {
+    "K3_min": 0.4444759966538211,
+    "K5_min": 0.4375399304302326,
+    "bound3_equals_2_over_9": 0.2222222222222222,
+    "bound5_equals_7_over_32": 0.21875,
+    "both_blocks_positive": true
+  },
+  "polarities": {
+    "w_rho_star": 6.19606606165215e-06,
+    "w_reversed": 161392.72726433055,
+    "combined_min_eigenvalue_rho_star": 2.7110263135564066e-06,
+    "combined_min_eigenvalue_reversed": 0.4444759966538211,
+    "both_positive": true
+  },
+  "OS_half_interval": {
+    "gold_angle_os3_min": -0.00020386146103164323,
+    "gold_angle_os5_min": -0.00027771006771352036,
+    "gold_angle_naive_OS_psd": false,
+    "unphased_os3_min": -4.274859333748435e-22,
+    "unphased_os5_min": -2.1818286587975235e-19,
+    "unphased_naive_OS_psd": true,
+    "depends_on_w": false,
+    "both_sectors_behave_identically": true,
+    "note": "Naive reflection n -> -n is OS-positive for the unphased cycle and fails (small negative eigenvalues) for the archived constant gold-angle clock, because the charge-2 holonomy is a physical flux. A3 and A5 share L2, so the failure cannot select a polarity."
+  },
+  "H2_H3_RP_does_not_select_polarity": true,
+  "H4_KMS_reading": {
+    "clock_constants": {
+      "sector3": 18,
+      "sector5": 16
+    },
+    "lighter_sector": 5,
+    "rho_star_weight_ratio_p5_over_p3": 6.19606606165215e-06,
+    "rho_star_occupies_lighter_sector_more": false,
+    "schur_bound_cov5_over_cov3": 163954.51658598657,
+    "KMS_positive_T_direction_matches_rho_star": false,
+    "KMS_positive_T_direction_matches_schur_covariance": true,
+    "beta_equals_eta_would_produce": "1/Delta^2",
+    "exact_1_over_Delta2_without_extra_identifications": false
+  },
+  "H5_gaps_independent_of_Delta": {
+    "first_gap_A3": 0.030230392817152563,
+    "first_gap_A5": 0.030230392817152563,
+    "gaps_equal": true,
+    "depends_on_Delta": false,
+    "decay_scale_A3": 18.09102613657773,
+    "decay_scale_A5": 16.09102613657773
+  },
+  "Delta": 0.0024891898404204027,
+  "delta_star": 0.1475108101595796,
+  "classification": {
+    "H1": "FALSIFIED-in-part (L2\u227d0 proved; kernel and exact 18/16 falsified for the archived constant gold-angle clock)",
+    "H2": "PROVED (Schur Hessian positive for both w; naive OS fails equally for both sectors of the gold-angle clock and holds equally for the unphased control)",
+    "H3": "PROVED",
+    "H4": "CONDITIONAL",
+    "H5": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "The archived constant gold-angle clock Laplacian is positive definite (no kernel) because the charge-2 holonomy is nontrivial, so \u03bb_min(A3)=18+(\u03c0/e)\u00b2\u03bb_min(L2)>18 and likewise for A5; their difference remains exactly 2. RP/OS positivity holds for both polarities, so it cannot select \u0394^2 versus 1/\u0394^2. A positive-temperature reading of the 16 vs 18 clock constants prefers the reversed polarity, but only after identifying the energy unit and \u03b2 = \u03b7 does one recover the exact value 1/\u0394^2. Those identifications are not derived."
+}
