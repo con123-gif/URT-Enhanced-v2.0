@@ -27,12 +27,18 @@ def theorem():
     assert K2(F(1))==F(71,48)
     assert K2(F(0))==F(7,4)
     assert K2(F(1,2))==F(3307,1920)
+    def finite_var(n,u):
+        return n*C[0]+2*sum((n-d)*C[d]*u**d for d in range(1,min(n,6)))
+    assert finite_var(24,F(1))==F(2179,60)
+    assert finite_var(24,F(1,2))==F(79583,1920)
+    assert finite_var(24,F(0))==F(42)
     for h in range(64):
         v=[F(0)]*64;v[h]=F(1)
         for _ in range(6):v=Q(v)
         assert v==[F(1,64)]*64
     return {'K2_frozen':str(K2(F(1))),'K2_iid':str(K2(F(0))),
             'K2_half_mixing':str(K2(F(1,2))),
+            'open_24_step_variance':{'frozen':'2179/60','half_mixing':'79583/1920','iid':'42'},
             'C0_to_C5':[str(x) for x in C],
             'K2_u':'7/4 + 7*u/80 - 61*u**2/240 - u**3/48 - u**4/12'}
 
