@@ -1,6 +1,6 @@
 # Cathedral orchestrator — ✅ PASS
 
-2026-11-10T21:03:11Z · [run 42899156369](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42899156369) · `b829079` · push on `newtons-cathedral` · checkpoint #7
+2026-11-10T21:12:03Z · [run 42899397413](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42899397413) · `8291462` · push on `newtons-cathedral` · checkpoint #8
 
 ## Physical status
 
@@ -19,30 +19,31 @@
 
 | Stage | Check | Claim | Status | Passing runs | Wall |
 |---|---|---|---|---|---|
-| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 7 | 0.04s |
-| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 7 | 0.0s |
-| integrity | `integrity.handover_claims` | independent | ✅ pass | 7 | 0.18s |
-| tests | `tests.suite` | regression | ✅ pass | 7 | 5.49s |
-| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 7 | 9.31s |
-| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 7 | 0.35s |
-| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 7 | 6.16s |
-| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 7 | 6.11s |
-| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 7 | 0.51s |
-| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 7 | 0.4s |
-| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 4 | 15.17s |
-| history | `history.native_24clock_fourier` | conditional | ✅ pass | 7 | 0.75s |
-| native | `native.wilson_source` | native | ✅ pass | 7 | 1.65s |
-| native | `native.output_gate` | native | ✅ pass | 7 | 0.11s |
-| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 7 | 0.43s |
-| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 7 | 0.27s |
-| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 7 | 0.68s |
-| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 7 | 0.08s |
-| research | `research.sandbox_bound_scripts` | independent | ✅ pass | 1 | 0.1s |
+| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 8 | 0.04s |
+| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 8 | 0.0s |
+| integrity | `integrity.handover_claims` | independent | ✅ pass | 8 | 0.16s |
+| tests | `tests.suite` | regression | ✅ pass | 8 | 7.67s |
+| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 8 | 10.75s |
+| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 8 | 0.39s |
+| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 8 | 6.3s |
+| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 8 | 6.04s |
+| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 8 | 0.54s |
+| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 8 | 0.42s |
+| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 5 | 15.25s |
+| history | `history.native_24clock_fourier` | conditional | ✅ pass | 8 | 0.79s |
+| native | `native.wilson_source` | native | ✅ pass | 8 | 1.6s |
+| native | `native.output_gate` | native | ✅ pass | 8 | 0.12s |
+| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 8 | 0.33s |
+| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 8 | 0.21s |
+| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 8 | 0.5s |
+| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 8 | 0.09s |
+| research | `research.sandbox_bound_scripts` | independent | ✅ pass | 2 | 0.06s |
+| research | `research.independent_native_five_k2` | independent | ✅ pass | 1 | 0.65s |
 
 ## Archive sweep
 
-Executed at least once: **260/260** research scripts. Latest status: missing_file 24, pass 236.
-This run: 260 executed (missing_file 24, pass 236).
+Executed at least once: **261/261** research scripts. Latest status: missing_file 24, pass 237.
+This run: 261 executed (missing_file 24, pass 237).
 Regressions (passed before, failing now, same source): none.
 Recovered: none.
 
