@@ -1,0 +1,230 @@
+{
+  "cutoffs": {
+    "eta_KMS": 5.9957979867413025,
+    "lambda_min_L2": 0.007657918270344197,
+    "hidden_hessian_small_eigenvalue": 2.7110263135564066e-06,
+    "Delta": 0.0024891898404204027,
+    "c5_gold": 0.21876996521511627,
+    "r": 1.1557273497909217
+  },
+  "lambda_min_Delta1_T": 0.7639320225002085,
+  "H1_finiteness": {
+    "primary": {
+      "KMS": {
+        "lambda_min_Pi_T": 0.0025495199588060247,
+        "lambda_max_Pi_T": 0.00987014425414328,
+        "lambda_min_Delta1_T": 0.7639320225002085,
+        "R_EM": 0.00333736495357521,
+        "epsilon": 5.9957979867413025,
+        "finite": true
+      },
+      "clock": {
+        "lambda_min_Pi_T": 21.628145616371757,
+        "lambda_max_Pi_T": 21.73926700966109,
+        "lambda_min_Delta1_T": 0.7639320225002085,
+        "R_EM": 28.31161016864672,
+        "epsilon": 0.007657918270344197,
+        "finite": true
+      },
+      "hidden": {
+        "lambda_min_Pi_T": 61477.196251436515,
+        "lambda_max_Pi_T": 61477.308054703615,
+        "lambda_min_Delta1_T": 0.7639320225002085,
+        "R_EM": 80474.6946596544,
+        "epsilon": 2.7110263135564066e-06,
+        "finite": true
+      }
+    },
+    "all_three_positive": true,
+    "all_three_make_Pi_T_finite": true
+  },
+  "H2_identifications": {
+    "KMS_temperature_is_a_fermion_kinetic_term": false,
+    "hidden_4_5_hessian_is_a_fermion_kinetic_term": false,
+    "product_sum_assumes_fermions_carry_the_24_clock": true,
+    "clock_sum": {
+      "lambda_min_Pi_T": 30.182549866455105,
+      "lambda_max_Pi_T": 31.294638640611886,
+      "lambda_min_Delta1_T": 0.7639320225002085,
+      "R_EM": 39.509470708759125,
+      "epsilon_scheme": "sum_k Pi(lambda_k(L2))",
+      "n_clock_modes": 24,
+      "finite": true
+    },
+    "clock_sum_r2": {
+      "lambda_min_Pi_T": 22.35367548290326,
+      "lambda_max_Pi_T": 23.30978002274409,
+      "lambda_min_Delta1_T": 0.7639320225002085,
+      "R_EM": 29.261341093863045,
+      "epsilon_scheme": "sum_k Pi(r^2 lambda_k(L2))",
+      "n_clock_modes": 24,
+      "r_squared": 1.3357057070547476,
+      "finite": true
+    }
+  },
+  "R_EM_values_recorded_before_comparison": {
+    "KMS": 0.00333736495357521,
+    "clock": 28.31161016864672,
+    "hidden": 80474.6946596544,
+    "clock_sum": 39.509470708759125,
+    "clock_sum_r2": 29.261341093863045
+  },
+  "H3_comparison": {
+    "R_alpha": 0.03380535602328556,
+    "relative_error_to_R_alpha": {
+      "KMS": 0.9012770357668651,
+      "clock": 836.4888922674063,
+      "hidden": 2380529.901796224,
+      "clock_sum": 1167.73405153741,
+      "clock_sum_r2": 864.5829884976646
+    },
+    "within_relative_1e-4_of_R_alpha": {
+      "KMS": false,
+      "clock": false,
+      "hidden": false,
+      "clock_sum": false,
+      "clock_sum_r2": false
+    },
+    "any_within_relative_1e-4": false,
+    "equals_R_alpha_as_an_identity": false,
+    "T1_strict": {
+      "R_alpha": {
+        "exact": 0,
+        "rel_1e-6": 0,
+        "rel_1e-4": 3,
+        "rel_1e-3": 40,
+        "nearest_rel": 1.0920531741999284e-06,
+        "nearest_desc": [
+          [
+            1,
+            51,
+            2
+          ],
+          [
+            5,
+            190,
+            0
+          ],
+          0.03380531910603921
+        ],
+        "n_pairs": 550725
+      },
+      "R_EM_KMS": {
+        "exact": 0,
+        "rel_1e-6": 0,
+        "rel_1e-4": 0,
+        "rel_1e-3": 1,
+        "nearest_rel": 0.00014544114436251893,
+        "nearest_desc": [
+          [
+            2,
+            90,
+            2
+          ],
+          [
+            -1,
+            120,
+            1
+          ],
+          0.0033378503437532132
+        ],
+        "n_pairs": 550725
+      },
+      "R_EM_clock": {
+        "exact": 0,
+        "rel_1e-6": 0,
+        "rel_1e-4": 0,
+        "rel_1e-3": 0,
+        "nearest_rel": 0.47018202388885916,
+        "nearest_desc": [
+          [
+            7,
+            1,
+            0
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          15.0
+        ],
+        "n_pairs": 550725
+      },
+      "R_EM_hidden": {
+        "exact": 0,
+        "rel_1e-6": 0,
+        "rel_1e-4": 0,
+        "rel_1e-3": 0,
+        "nearest_rel": 0.9998136060029374,
+        "nearest_desc": [
+          [
+            7,
+            1,
+            0
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          15.0
+        ],
+        "n_pairs": 550725
+      },
+      "R_EM_clock_sum": {
+        "exact": 0,
+        "rel_1e-6": 0,
+        "rel_1e-4": 0,
+        "rel_1e-3": 0,
+        "nearest_rel": 0.6203441926475987,
+        "nearest_desc": [
+          [
+            7,
+            1,
+            0
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          15.0
+        ],
+        "n_pairs": 550725
+      },
+      "R_EM_clock_sum_r2": {
+        "exact": 0,
+        "rel_1e-6": 0,
+        "rel_1e-4": 0,
+        "rel_1e-3": 0,
+        "nearest_rel": 0.4873782458608523,
+        "nearest_desc": [
+          [
+            7,
+            1,
+            0
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          15.0
+        ],
+        "n_pairs": 550725
+      },
+      "_n_atoms": 1050
+    },
+    "G_strict_contains_79": false,
+    "numerical_near_hit_is_not_a_derivation": true
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "CONDITIONAL (product-sum assumes fermions carry the 24-clock; \u03b5_KMS and \u03b5_hid are extra identifications)",
+    "H3": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Each named cutoff makes R_EM finite, but identifying \u03b5_KMS or \u03b5_hid with a spatial fermion mass is extra, the product-sum requires clocked fermions, and none of the five predeclared ratios equals R_\u03b1 as an identity."
+}
