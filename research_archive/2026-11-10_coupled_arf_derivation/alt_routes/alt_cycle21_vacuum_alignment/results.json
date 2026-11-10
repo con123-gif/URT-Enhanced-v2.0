@@ -1,0 +1,66 @@
+{
+  "H1_hidden_minimum": {
+    "c3": 0.2222379983269106,
+    "c5": 0.21876996521511627,
+    "Delta2": 6.19606606165215e-06,
+    "lam_min_L2": 0.007657918270344197,
+    "hidden_hessian_eigenvalues": {
+      "4_3": 0.4444759966538212,
+      "4_5": 2.7110263135564066e-06
+    },
+    "positive_definite": true,
+    "V_at_origin": 0.0,
+    "n_multistarts": 19,
+    "max_optimum_norm": 2.7295601807498398e-14,
+    "max_optimum_V": 6.532500914253757e-29,
+    "unique_minimum_at_origin": true,
+    "stabiliser_of_the_minimum": "A5"
+  },
+  "H2_no_C5_D5_in_the_4": {
+    "max_Reynolds_C5_invariant_norm_on_random_vectors": 9.678699938266253e-17,
+    "algebraic_only_zero_is_C5_invariant": true,
+    "algebraic_only_zero_is_D5_invariant": true,
+    "algebraic_only_zero_in_4plus4_is_C5_or_D5_invariant": true,
+    "possible_stabilisers_of_nonzero_vectors_in_the_4": [
+      "A4",
+      "C3",
+      "C2",
+      "1"
+    ],
+    "C5_or_D5_can_stabilise_a_nonzero_hidden_vector": false
+  },
+  "H3_F_sourced": {
+    "V_F_untruncated_min_on_samples": 0.026001027198152886,
+    "V_F_truncated_min_on_samples": 0.02600102719815293,
+    "vanishes_on_the_plane_f_equals_0_untruncated": true,
+    "vanishes_on_the_plane_f_equals_0_truncated": true,
+    "min_h5_on_unit_f_samples": 0.11734693906300703,
+    "min_h5_after_sphere_optimisation": 2.9307347164945407e-09,
+    "h5_vanishes_for_some_nonzero_f": true,
+    "V_F_multistart_reaches_zero": false,
+    "max_f_norm_at_V_F_optima": 1.683834127007768,
+    "t_direction_selected_by_V": false,
+    "picking_the_most_symmetric_point_of_the_t_sphere_is_extra": true,
+    "n_undirected_fivefold_axes": 6,
+    "C5_restriction_of_the_spatial_3": "1 \u2295 2 over R"
+  },
+  "H4_masses": {
+    "derived_C5_or_D5_axis_selection": false,
+    "extra_D5_principle_would_split_an_A5_invariant_Sigma": false,
+    "hidden_vev_at_the_minimum": [
+      0,
+      0
+    ],
+    "three_distinct_charged_masses_from_this_vacuum": false,
+    "note": "The hidden minimum is the origin, with stabiliser A5. V\u2218F vanishes for every t at f = 0, so no axis in the 3 is selected. C5/D5 cannot fix a nonzero vector in 4_3 \u2295 4_5. Even the extra residual-symmetry rule that would pick a five-fold axis would not split an A5-equivariant self-energy, and the hidden vev remains zero."
+  },
+  "classification": {
+    "H1": "PROVED",
+    "H2": "PROVED",
+    "H3": "PROVED",
+    "H4": "PROVED"
+  },
+  "advances_ARF": false,
+  "which_ARF": null,
+  "next_obstruction": "Vacuum alignment of V_hist does not break A5 and does not select a five-fold axis. Three nondegenerate charged masses still require an A5-breaking structure that these potentials do not supply."
+}
