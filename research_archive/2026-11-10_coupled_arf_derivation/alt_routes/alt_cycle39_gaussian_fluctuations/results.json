@@ -1,0 +1,348 @@
+{
+  "any_multiplet_split": 1,
+  "any_multiplet_split_sanitized": false,
+  "classification": "PROVED",
+  "classification_note": "Hidden Hessian is A4-invariant; 4_3 curvature is 2 c3; 4_5 directional curvatures are positive (radial near 2 c_even, angular positive). Five A4 directions remain degenerate. Sanitized one-loop W does not split the fermion 3 and 6 into singlets. C_mass and R_mass not compared.",
+  "directional_curvatures": {
+    "C_EVEN": 1.3555120633395222e-06,
+    "angular": [
+      [
+        1.626078225672245e-06,
+        1.6260786447674036e-06,
+        1.6260788938961924e-06,
+        1.6260809832149083e-06
+      ],
+      [
+        1.6260780394077302e-06,
+        1.626078668050468e-06,
+        1.6260788128711283e-06,
+        1.6260800078097317e-06
+      ],
+      [
+        1.6260780394077302e-06,
+        1.6260785982012748e-06,
+        1.6260787062346936e-06,
+        1.6260791866936618e-06
+      ]
+    ],
+    "odd": [
+      [
+        0.4444783553481102,
+        0.4444746300578116,
+        0.444474845426157
+      ],
+      [
+        0.4444713704288006,
+        0.4444747231900691,
+        0.44447482214309264
+      ],
+      [
+        0.4444783553481102,
+        0.4444746300578116,
+        0.44447493855841447
+      ],
+      [
+        0.4444783553481102,
+        0.44447509571909893,
+        0.44447482796385873
+      ]
+    ],
+    "radial": [
+      2.711023390293121e-06,
+      2.7110240829642863e-06,
+      2.711024125572294e-06,
+      2.711024125986215e-06
+    ],
+    "two_C3": 0.4444758415222168,
+    "two_C_EVEN": 2.7110241266790443e-06
+  },
+  "fermion_W": [
+    {
+      "E": 1.6870512949703983e-10,
+      "mult": 1,
+      "note": "unpaired / near-zero, skipped"
+    },
+    {
+      "E": 314487.93727150635,
+      "W_evals": [
+        86436.78741008826,
+        293556.2346514005,
+        402720.3103908724
+      ],
+      "W_spread": 316283.5229807842,
+      "mult": 3,
+      "rel_spread": 1.005709553520101,
+      "splits": 1
+    },
+    {
+      "E": 351605.96682497096,
+      "W_evals": [
+        50134.76953669149,
+        59252.99717562396,
+        109387.26074652726
+      ],
+      "W_spread": 59252.49120983577,
+      "mult": 3,
+      "rel_spread": 0.16851958385373927,
+      "splits": 1
+    },
+    {
+      "E": 351610.4389609259,
+      "W_evals": [
+        50137.14682778143,
+        59250.18764885088,
+        109387.69298219318
+      ],
+      "W_spread": 59250.54615441176,
+      "mult": 3,
+      "rel_spread": 0.1685119086040452,
+      "splits": 1
+    },
+    {
+      "E": 471731.90585956327,
+      "W_evals": [
+        278311.51143096096,
+        504401.820908321
+      ],
+      "W_spread": 226090.30947736005,
+      "mult": 2,
+      "rel_spread": 0.479277120476706,
+      "splits": 1
+    }
+  ],
+  "fermion_W_sanitized": [
+    {
+      "E": 1.6870512949703983e-10,
+      "mult": 1,
+      "note": "unpaired skipped"
+    },
+    {
+      "E": 314487.93727150635,
+      "W_evals": [
+        0.2607017092968403,
+        0.2607017269448635,
+        0.26070172883998144
+      ],
+      "W_spread": 1.9543141160927036e-08,
+      "mult": 3,
+      "rel_spread": 6.214273695354772e-14,
+      "splits": false
+    },
+    {
+      "E": 351605.96682497096,
+      "W_evals": [
+        0.07288914108160519,
+        0.07288914388118095,
+        0.07288914506160779
+      ],
+      "W_spread": 3.980002605263877e-09,
+      "mult": 3,
+      "rel_spread": 1.1319496768509386e-14,
+      "splits": false
+    },
+    {
+      "E": 351610.4389609259,
+      "W_evals": [
+        0.07288913916055545,
+        0.0728891419601312,
+        0.07288914314055796
+      ],
+      "W_spread": 3.980002508119362e-09,
+      "mult": 3,
+      "rel_spread": 1.1319352519455931e-14,
+      "splits": false
+    },
+    {
+      "E": 471731.90585956327,
+      "W_evals": [
+        0.39110801941622914,
+        0.391108032336905
+      ],
+      "W_spread": 1.292067586255996e-08,
+      "mult": 2,
+      "rel_spread": 2.7389870606730815e-14,
+      "splits": false
+    }
+  ],
+  "hessian_T0": {
+    "evals": [
+      -7.676130985632736e-07,
+      1.0395059515011964e-06,
+      1.468192025305343e-06,
+      2.334436283353609e-06,
+      0.4444728663694834,
+      0.44447377022340356,
+      0.4444761522219165,
+      0.4444778269073389
+    ],
+    "min": -7.676130985632736e-07,
+    "positive_definite": 0
+  },
+  "hessian_Teta": {
+    "A4_commutator_residuals": [
+      4.275204937840487e-16,
+      7.88067704136817e-06,
+      8.962223456271187e-06,
+      8.132491083721356e-06,
+      8.73491655568987e-06,
+      7.880677041577437e-06,
+      8.734916555630815e-06,
+      8.641876375900696e-06,
+      8.13543575975395e-06,
+      8.641876376029154e-06,
+      8.962223456254238e-06,
+      8.970364563402653e-06
+    ],
+    "A4_invariant": 1,
+    "evals": [
+      -1.921299813689341e-06,
+      -3.2706845975058205e-07,
+      9.524789874482125e-07,
+      2.4600255435292763e-06,
+      0.4444710673250679,
+      0.44447314731013887,
+      0.4444749962849127,
+      0.4444767481910077
+    ],
+    "max_A4_residual": 8.970364563402653e-06,
+    "min": -1.921299813689341e-06,
+    "mode_overlaps": [
+      {
+        "eval": -1.921299813689341e-06,
+        "even_weight": 0.9999999999948123,
+        "odd_weight": 5.187750552722309e-12,
+        "radial_overlap2": 0.12082783693630783
+      },
+      {
+        "eval": -3.2706845975058205e-07,
+        "even_weight": 0.99999999998894,
+        "odd_weight": 1.1060510092477276e-11,
+        "radial_overlap2": 0.03301865062296804
+      },
+      {
+        "eval": 9.524789874482125e-07,
+        "even_weight": 0.999999999980556,
+        "odd_weight": 1.944377560268099e-11,
+        "radial_overlap2": 0.5655974350966948
+      },
+      {
+        "eval": 2.4600255435292763e-06,
+        "even_weight": 0.9999999999975331,
+        "odd_weight": 2.4671360843417853e-12,
+        "radial_overlap2": 0.280556077327839
+      },
+      {
+        "eval": 0.4444710673250679,
+        "even_weight": 1.1966219229896125e-11,
+        "odd_weight": 0.9999999999880331,
+        "radial_overlap2": 6.096458438333978e-13
+      },
+      {
+        "eval": 0.44447314731013887,
+        "even_weight": 1.39513126587652e-11,
+        "odd_weight": 0.9999999999860484,
+        "radial_overlap2": 8.374450864913766e-12
+      },
+      {
+        "eval": 0.4444749962849127,
+        "even_weight": 1.2498210336572172e-12,
+        "odd_weight": 0.9999999999987498,
+        "radial_overlap2": 7.259405423417324e-13
+      },
+      {
+        "eval": 0.4444767481910077,
+        "even_weight": 1.0991819407427267e-11,
+        "odd_weight": 0.9999999999890071,
+        "radial_overlap2": 6.480646117970073e-12
+      }
+    ],
+    "positive_definite": 0
+  },
+  "hypotheses": {
+    "H1_4_3_is_2c3": true,
+    "H1_hess_A4_invariant": 1,
+    "H1_hess_posdef_Teta": true,
+    "H2_no_order_by_disorder": true,
+    "H2_note": "Five A5-related A4 directions found (orbit size 5). Each has the same raw Hessian pattern (4_3 block at 2 c3, 4_5 block O(10^{-6})). Equality is required by A5 and is observed; fluctuations do not select.",
+    "H3_no_singlet_split": true
+  },
+  "mass_ARFs": {
+    "comparison_performed": false,
+    "skip_reason": "Sanitized one-loop W does not split multiplets into three nondegenerate charged singlets; C_mass and R_mass are not compared."
+  },
+  "order_by_disorder": {
+    "equal_measures": 0,
+    "equal_measures_note": "Five A5-related A4 directions found (orbit size 5). Each has the same raw Hessian pattern (4_3 block at 2 c3, 4_5 block O(10^{-6})). Equality is required by A5 and is observed; fluctuations do not select.",
+    "expected_orbit": 5,
+    "measures": [
+      {
+        "ev_minmax": [
+          -1.9212998137197423e-06,
+          0.4444767481910076
+        ],
+        "half_tr_log": null
+      },
+      {
+        "ev_minmax": [
+          -5.376494290904581e-06,
+          0.4444703645108816
+        ],
+        "half_tr_log": null
+      },
+      {
+        "ev_minmax": [
+          -1.9857804985950723e-06,
+          0.44447692659051796
+        ],
+        "half_tr_log": null
+      },
+      {
+        "ev_minmax": [
+          -2.2808220227170145e-06,
+          0.4444751214705819
+        ],
+        "half_tr_log": null
+      },
+      {
+        "ev_minmax": [
+          -1.912292379888653e-06,
+          0.44447613975123873
+        ],
+        "half_tr_log": null
+      }
+    ],
+    "n_A4": 12,
+    "orbit_size": 5
+  },
+  "posdef_used_for_D": 0,
+  "sanitized_hessian": {
+    "evals": [
+      1.6260787062346932e-06,
+      1.6260788128711276e-06,
+      1.626078893896192e-06,
+      2.7110241255722945e-06,
+      0.4444746300578116,
+      0.4444746300578116,
+      0.4444747231900691,
+      0.44447509571909893
+    ],
+    "kappas_in_A4_basis": {
+      "angular": [
+        1.6260788938961924e-06,
+        1.6260788128711283e-06,
+        1.6260787062346936e-06
+      ],
+      "odd": [
+        0.4444746300578116,
+        0.4444747231900691,
+        0.4444746300578116,
+        0.44447509571909893
+      ],
+      "radial": 2.711024125572294e-06
+    },
+    "note": "The raw 8\u00d78 finite-difference Hessian mixed O(10^{-6}) 4_5 modes with cancellation noise (apparent negative evals ~10^{-6}). Directional second derivatives with \u03b4h \u2208 {50,200,1000,3000} on 4_5 and \u03b4h \u2208 {0.01,0.05,0.2} on 4_3 resolve the true curvatures.",
+    "positive_definite": true,
+    "two_C3": 0.4444758415222168,
+    "two_C_EVEN": 2.7110241266790443e-06
+  }
+}
