@@ -176,3 +176,35 @@ Result: Cycle 16 did not set `pure_alpha_ray_derived` to true, so the one-loop o
 Predeclaration sha256: `abac6aa80ac4311a830a59aa9ddfd1bb03972aeed5a9d6d39dc76622506c9b8c`.
 
 No repository files were modified, committed, or pushed.
+
+## Frontier update (alt_cycles 21–24)
+
+Date: 10 November 2026 (Europe/London). Repo still read-only at `d71974d5ce01ad2f8f7992adf64af65810dd5436`. No commits or pushes.
+
+V_hist is positive definite on 4_3 ⊕ 4_5 with unique minimum at the origin (stabiliser A5). No nonzero hidden vector has stabiliser C5 or D5, and V∘F vanishes for every t at f = 0, so there is no derived five-fold axis and no three distinct charged masses from this vacuum. On the icosahedron, Cbridge can be gauged by incidence Wilson lines without new continuous couplings and Ward is restored, but every off-edge pair has multiple shortest paths and two canonical recipes give currents that differ by relative 0.85; the full five-solid Cbridge has 836 cross-solid nonzero entries with no incidence path. The three named internal IR cutoffs (and two predeclared clock product-sums) all make R_EM finite, but none lies within relative 10^{-4} of R_α (closest is η, at 90% relative error). The V_hist vacuum sets both hidden vevs to zero and does not fix y_even : y_odd.
+
+## alt_cycle21 — vacuum alignment of V_hist
+Directory: `/workspace/arf_research/alt_cycle21_vacuum_alignment/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: V_hist = c3 ||h3||² + Δ² c5 ||h5||² is positive definite (Hessian 0.444476 ×4 and 2.711×10^{-6} ×4). Unique minimum at the origin, stabiliser A5. C5/D5 cannot fix a nonzero vector in 4_3 ⊕ 4_5 (the 4 is the deleted permutation representation). V∘F vanishes on the plane f = 0 for every t, so no axis in the 3 is selected. Three distinct charged masses do not arise.
+Predeclaration sha256: `52f544dc54dd85235a4c15b2f618b28c010a4edeaa98700c0eec95f675b4c702`.
+
+## alt_cycle22 — gauge the bridge
+Directory: `/workspace/arf_research/alt_cycle22_gauge_bridge/`
+Classification: PROVED (H1–H4). Advances ARF? No.
+Result: Both shortest-path-average and lex-first-path Wilson recipes restore exact gauge invariance of Hodge + icosahedral Cbridge (residuals 2.8×10^{-14} and 0) with no new continuous couplings. All 36 off-edge pairs have 2–10 shortest paths; the two currents differ by relative 0.855. 2I does not pick a path. 836 of 920 cross-solid vertex pairs have nonzero Cbridge and no incidence path.
+Predeclaration sha256: `3a71adae486aa709859679531a01b3fbcd3a40c4fe650c52a98bbc3a2c46acac`.
+
+## alt_cycle23 — IR regulators from inside the system
+Directory: `/workspace/arf_research/alt_cycle23_ir_cutoff/`
+Classification: H1 PROVED; H2 CONDITIONAL; H3 PROVED. Advances ARF? No.
+Result: R_EM(η) = 0.003337, R_EM(λ_min L2) = 28.312, R_EM(2 Δ² c5) = 80475, R_EM(Σ Π(λ_k)) = 39.509, R_EM(Σ Π(r² λ_k)) = 29.261. Relative errors to R_α ≈ 0.033805 are 0.901, 836, 2.38×10^6, 1168, 865; none within 10^{-4}. Using η or the hidden Hessian as a spatial mass is an extra identification; the product sums assume clocked fermions. T1/G_strict look-elsewhere: R_α still has rival 1/(51 φ²)+5/190 at 1.09×10^{-6}; no R_EM matches R_α.
+Predeclaration sha256: `2d37695519814751a5b5fabf81b06e21eb871ebf9c5b72199deaae55b0078b1a`.
+
+## alt_cycle24 — y_even : y_odd from the vacuum of route 21
+Directory: `/workspace/arf_research/alt_cycle24_yeven_yodd/`
+Classification: PROVED (H1–H3). Advances ARF? No.
+Result: Both hidden vevs vanish, so neither inversion parity is killed. The residual pairing-current ratio remains free (dimension 2). The stiffness ratio c3/(Δ² c5) ≈ 163951 is an extra matching recipe already considered in coupled cycle 12, not a consequence of the vacuum location.
+Predeclaration sha256: `ecef47269f8f29bf2f68391ca7d6cd27b01f06504b63920762cecbf5abf68d8f`.
+
+No repository files were modified, committed, or pushed.

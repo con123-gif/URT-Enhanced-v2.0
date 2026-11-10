@@ -1,0 +1,52 @@
+{
+  "classification": "PROVED",
+  "identity_sqrtH_equals_Delta": "FALSIFIED",
+  "closed_form": {
+    "formula": "sqrt(H5/H3) = Delta * sqrt((14+rho)(18+rho)) / (16+rho)",
+    "H5_over_H3": "Delta^2 * (14+rho)(18+rho) / (16+rho)^2",
+    "c3": "(16+rho)/(4(18+rho))",
+    "c5": "(14+rho)/(4(16+rho))",
+    "rho": "(pi/e)^2 * lambda_min(L2_charge2_gold)"
+  },
+  "numeric": {
+    "phi": 1.618033988749895,
+    "Delta": 0.0024891898404204027,
+    "Delta2": 6.19606606165215e-06,
+    "lambda_min_L2": 0.007657918270344439,
+    "rho": 0.01022872513785789,
+    "c3": 0.2222379983269106,
+    "c5": 0.21876996521511627,
+    "H3": 0.4444759966538212,
+    "H5": 2.7110263135564066e-06,
+    "H5_over_H3": 6.099376195713627e-06,
+    "sqrt_H5_over_H3": 0.0024696915183305035,
+    "structural_factor": 0.9921667999068299,
+    "relative_Delta_minus_sqrtH_over_Delta": 0.007833200093170112
+  },
+  "limits": {
+    "rho_to_0_factor": 0.9921567416492215,
+    "rho_to_0_factor_formula": "3*sqrt(7)/8 = sqrt(63/64)",
+    "rho_to_0_sqrtH": 0.0024696664814178523,
+    "rho_to_inf_sqrtH": 0.0024891898404204027,
+    "rho_to_inf_is_exactly_Delta": true,
+    "physical_vs_rho0_relative": -1.0137770763604743e-05,
+    "one_minus_3sqrt7_over_8": 0.007843258350778481
+  },
+  "archive_match": {
+    "c3_rel_err": 0.0,
+    "c5_rel_err": 0.0,
+    "H3_rel_err": 0.0,
+    "H5_rel_err": 0.0,
+    "rho_vs_E2_rel_err": 6.995724532595953e-13,
+    "E2": 0.010228725137850734,
+    "cycle12_sqrtH_rel_err": 0.0,
+    "cycle12_Delta": 0.0024891898404204027
+  },
+  "identity_holds": false,
+  "relative_difference_is_the_structural_factor": true,
+  "look_elsewhere": {
+    "scanned_Cathedral_targets_to_match_the_0.78pct": false,
+    "origin": "The factor 1 - sqrt((14+rho)(18+rho))/(16+rho) is forced by Hbits eigenvalues 18 and 16 together with the archived gold-angle clock shift rho = E2. At rho = 0 it is 1 - 3*sqrt(7)/8 = 1 - sqrt(63/64) \u2248 0.7843258%."
+  },
+  "statement": "H5/H3 = \u0394\u00b2 (c5/c3) = \u0394\u00b2 (14+\u03c1)(18+\u03c1)/(16+\u03c1)\u00b2 exactly, with \u03c1 = (\u03c0/e)\u00b2 \u03bb_min(L2) = E2 = 1.0228725137857889e-02. Therefore \u221a(H5/H3) = \u0394 \u00d7 0.9921667999068299, not \u0394. The relative difference 0.78332001% equals 1 minus that structural factor (and equals 1 \u2212 3\u221a7/8 at \u03c1 = 0, which is already within 0.001% of the physical value). The identity \u221a(H5/H3) = \u0394 holds if and only if c3 = c5, i.e. in the limit \u03c1 \u2192 \u221e (clock dominates 18 and 16). It is not an identity at the archived \u03c1, and the 0.78% is not an independent coincidence."
+}
