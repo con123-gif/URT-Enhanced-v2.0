@@ -1,0 +1,149 @@
+{
+  "classification": "PROVED",
+  "classification_note": "The spin connection gaps K_spin; vertex12\u22972 has no singlet and no zero mode. Pairing \u0394\u2297\u03b5 on K\u2297I still sees the kernel of the scalar theory. Condensation and the resulting multiplet structure are recorded.",
+  "condensation": {
+    "chi_Teta": 0.07672792889934499,
+    "condenses": 1,
+    "nuclear_norm_Dspin_unit": 9.280759945607684,
+    "omega_0": 0.0,
+    "omega_star": -3970561.485695684,
+    "r_star": 1734932.1582640836,
+    "y1_condenses_linearized": 1,
+    "y_c": 0.004203150643759362
+  },
+  "control_Kkron_unit_pairing": {
+    "Emin": 6.50294459607147e-15,
+    "distinct": [
+      {
+        "mult": 2,
+        "value": 8.061377719634589e-15
+      },
+      {
+        "mult": 6,
+        "value": 2.7805710035976783
+      },
+      {
+        "mult": 6,
+        "value": 6.011100842053254
+      },
+      {
+        "mult": 4,
+        "value": 6.024948132556829
+      },
+      {
+        "mult": 6,
+        "value": 7.252706958597261
+      }
+    ],
+    "n_near_zero": 2
+  },
+  "hypotheses": {
+    "H1_K_spin_has_no_zero_mode": 1,
+    "H2_K_kron_keeps_a_kernel": 1,
+    "H2_pairing_alone_does_not_lift_Kkron_kernel": 1,
+    "H3_even_channel_still_condenses": 1,
+    "H3_three_distinct_levels": 0,
+    "H3_zero_mode_absent_after_condensation": 1
+  },
+  "kinetics": {
+    "K_kron_evals_minmax": [
+      -1.4988064008503734e-15,
+      7.2360679774997925
+    ],
+    "K_kron_n_near_zero": 2,
+    "K_spin_evals_minmax": [
+      0.7467459582397975,
+      6.902113032590316
+    ],
+    "K_spin_gap": 0.7467459582397975,
+    "K_spin_n_near_zero": 0,
+    "spatial_Delta_annihilates_v0": 1
+  },
+  "module": {
+    "H13_otimes_2": "3\u00b72 \u2295 2\u00b74' \u2295 2\u00b76 (dim 26, extra 2 is a decoupled spectator)",
+    "no_2I_singlet": 1,
+    "vertex12_otimes_2": "2\u00b72 \u2295 2\u00b74' \u2295 2\u00b76 (dim 24, no singlet)"
+  },
+  "spectrum_condensed": {
+    "Emin": 0.7467459579691105,
+    "distinct": [
+      {
+        "mult": 2,
+        "value": 0.7467459580094337
+      },
+      {
+        "mult": 2,
+        "value": 633507.6386518767
+      },
+      {
+        "mult": 2,
+        "value": 633507.6482725802
+      },
+      {
+        "mult": 2,
+        "value": 633507.670792154
+      },
+      {
+        "mult": 2,
+        "value": 708280.0098807791
+      },
+      {
+        "mult": 2,
+        "value": 708281.7627520445
+      },
+      {
+        "mult": 2,
+        "value": 708281.7841287636
+      },
+      {
+        "mult": 2,
+        "value": 708284.391360177
+      },
+      {
+        "mult": 2,
+        "value": 708284.4125745685
+      },
+      {
+        "mult": 2,
+        "value": 708286.1655050372
+      },
+      {
+        "mult": 4,
+        "value": 950261.478845608
+      }
+    ],
+    "max_mult": 4,
+    "n_distinct_positive": 11,
+    "three_distinct_levels": 0,
+    "three_or_more_distinct": 1,
+    "zero_mode_absent": 1
+  },
+  "spin_connection": {
+    "face_holonomy_traces": [
+      "(1.9021130325903073+0j)",
+      "(1.9021130325903073-2.7755575615628914e-17j)",
+      "(1.9021130325903075+1.0273175689867963e-16j)",
+      "(1.9021130325903075+0j)",
+      "(1.9021130325903075-9.132872921166998e-17j)",
+      "(1.9021130325903073+2.7755575615628914e-17j)",
+      "(1.9021130325903073+0j)",
+      "(1.9021130325903075-1.0273175689867963e-16j)",
+      "(1.9021130325903075+9.132872921166998e-17j)",
+      "(1.9021130325903075+0j)",
+      "(1.9021130325903075+1.0273175689867963e-16j)",
+      "(1.9021130325903075-9.132872921166998e-17j)",
+      "(1.9021130325903075+0j)",
+      "(1.9021130325903075-1.0273175689867963e-16j)",
+      "(1.9021130325903075+0j)",
+      "(1.9021130325903075+9.132872921166998e-17j)",
+      "(1.9021130325903073+0j)",
+      "(1.9021130325903073+0j)",
+      "(1.9021130325903073+0j)",
+      "(1.9021130325903073+0j)"
+    ],
+    "mean_Im_trace": 0.0,
+    "mean_Re_trace": 1.9021130325903073,
+    "n_edges": 30,
+    "n_faces_with_U_eq_minus_I": 0
+  }
+}
