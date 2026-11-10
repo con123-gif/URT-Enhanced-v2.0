@@ -1,0 +1,260 @@
+{
+  "H1_R1_fails": true,
+  "H2_R2_fails": true,
+  "H3_R3_computed": true,
+  "H4_R4_R6_reduce_or_fail": true,
+  "R1_equal_raw_labelling": false,
+  "R1_similar_or_equal": false,
+  "R2_any": false,
+  "R2_reducing_subspace": {
+    "BdG_subcritical_pm": {
+      "missing": [
+        2.9999999999999996,
+        3.000000000000001,
+        4.999999999999996,
+        4.999999999999998,
+        5.0,
+        5.0,
+        5.0000000000000036,
+        5.000000000000004,
+        7.000000000000002,
+        7.000000000000002,
+        9.0,
+        13.0
+      ],
+      "spectrum_contained": false
+    },
+    "BdG_subcritical_positive": {
+      "missing": [
+        2.9999999999999996,
+        3.000000000000001,
+        4.999999999999996,
+        4.999999999999998,
+        5.0,
+        5.0,
+        5.0000000000000036,
+        5.000000000000004,
+        7.000000000000002,
+        7.000000000000002,
+        9.0,
+        13.0
+      ],
+      "spectrum_contained": false
+    },
+    "H13_geometric": {
+      "missing": [
+        2.9999999999999996,
+        3.000000000000001,
+        4.999999999999996,
+        4.999999999999998,
+        5.0,
+        5.0,
+        5.0000000000000036,
+        5.000000000000004,
+        9.0
+      ],
+      "spectrum_contained": false
+    },
+    "H64_hypercube": {
+      "missing": [
+        2.9999999999999996,
+        3.000000000000001,
+        4.999999999999996,
+        4.999999999999998,
+        5.0,
+        5.0,
+        5.0000000000000036,
+        5.000000000000004,
+        7.000000000000002,
+        7.000000000000002,
+        9.0,
+        13.0
+      ],
+      "spectrum_contained": false
+    },
+    "K0_ico": {
+      "missing": [
+        2.9999999999999996,
+        3.000000000000001,
+        4.999999999999996,
+        4.999999999999998,
+        5.0,
+        5.0,
+        5.0000000000000036,
+        5.000000000000004,
+        7.000000000000002,
+        7.000000000000002,
+        9.0,
+        13.0
+      ],
+      "spectrum_contained": false
+    },
+    "five_solid_0form": {
+      "missing": [
+        5.0000000000000036,
+        5.000000000000004,
+        7.000000000000002,
+        7.000000000000002,
+        9.0,
+        13.0
+      ],
+      "spectrum_contained": false
+    },
+    "joint_32": {
+      "missing": [
+        5.0000000000000036,
+        5.000000000000004,
+        7.000000000000002,
+        7.000000000000002,
+        9.0,
+        13.0
+      ],
+      "spectrum_contained": false
+    }
+  },
+  "R3_cayley_is_ico_minus_1factor": false,
+  "R3_n_hits": 0,
+  "R3_n_perfect_matchings": 125,
+  "R4": {
+    "H13_has_deg12_hub": true,
+    "H64_degree": 6,
+    "K0_max_degree": 5.0,
+    "five_solid_max_degree": 5.0,
+    "joint32_max_degree": 5.0,
+    "other_derived_deg12_vertex": false,
+    "reduces_to_R1": true
+  },
+  "R5_ev_schur_G13": [
+    0.0,
+    3.0,
+    3.0000000000000027,
+    4.999999999999993,
+    4.999999999999995,
+    4.999999999999998,
+    5.0,
+    5.0,
+    5.000000000000001,
+    7.000000000000001,
+    7.000000000000002,
+    9.000000000000002
+  ],
+  "R5_ev_schur_H13": [
+    0.0,
+    3.763932022500206,
+    3.7639320225002098,
+    3.76393202250021,
+    6.999999999999994,
+    6.999999999999998,
+    6.999999999999998,
+    7.0,
+    7.000000000000001,
+    8.236067977499786,
+    8.236067977499792,
+    8.236067977499792
+  ],
+  "R5_schur_spectra_equal": false,
+  "R6_equal_cell_quotients": {
+    "BdG_subcritical_pm": {
+      "dim": 24,
+      "equal_cell_13_divides": false,
+      "singletons_only_if_dim13": false
+    },
+    "BdG_subcritical_positive": {
+      "dim": 12,
+      "equal_cell_13_divides": false,
+      "singletons_only_if_dim13": false
+    },
+    "H13_geometric": {
+      "dim": 13,
+      "equal_cell_13_divides": true,
+      "singletons_only_if_dim13": true
+    },
+    "H64_hypercube": {
+      "dim": 64,
+      "equal_cell_13_divides": false,
+      "singletons_only_if_dim13": false
+    },
+    "K0_ico": {
+      "dim": 12,
+      "equal_cell_13_divides": false,
+      "singletons_only_if_dim13": false
+    },
+    "five_solid_0form": {
+      "dim": 50,
+      "equal_cell_13_divides": false,
+      "singletons_only_if_dim13": false
+    },
+    "joint_32": {
+      "dim": 32,
+      "equal_cell_13_divides": false,
+      "singletons_only_if_dim13": false
+    }
+  },
+  "any_named_relation": false,
+  "classification_no_relation": true,
+  "deg_G13": [
+    12.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0
+  ],
+  "ev_G13": [
+    0.0,
+    2.9999999999999996,
+    3.000000000000001,
+    4.999999999999996,
+    4.999999999999998,
+    5.0,
+    5.0,
+    5.0000000000000036,
+    5.000000000000004,
+    7.000000000000002,
+    7.000000000000002,
+    9.0,
+    13.0
+  ],
+  "ev_H13": [
+    0.0,
+    3.7639320225001995,
+    3.7639320225002066,
+    3.763932022500212,
+    6.999999999999996,
+    6.999999999999998,
+    7.0,
+    7.000000000000001,
+    7.000000000000004,
+    8.236067977499786,
+    8.236067977499786,
+    8.236067977499792,
+    13.0
+  ],
+  "ev_K0": [
+    0.0,
+    2.7639320225002098,
+    2.76393202250021,
+    2.7639320225002124,
+    5.999999999999998,
+    6.0,
+    6.000000000000002,
+    6.000000000000002,
+    6.000000000000003,
+    7.236067977499787,
+    7.23606797749979,
+    7.236067977499792
+  ],
+  "n_cayley_edges": 24,
+  "n_ico_edges": 30,
+  "pred_sha": "b1325ab5cf30356321646bd54f854050a916c4b5751a7d15fd736c576f5111cf",
+  "rebuild_agrees_with_graph_py": true,
+  "spectrum_agrees_with_graph_py": true,
+  "spectrum_expected": true
+}
