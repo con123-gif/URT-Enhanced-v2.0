@@ -1,0 +1,55 @@
+## URT_SIX_BIT_TRIALITY_RETURN_2026_11_10.py
+All 64 initial six-bit words produce each final word once after six fresh digits: PASS
+single sheet= 1/4 complete three-sheet cycle= 1/64
+all-block consecutive-return geometric resolvent = 1/63
+time-six sampling is necessary: partial overlapping blocks are not independent
+PASS exact O(N) URT/A4 3-cycle source-return factor, with no fitted rate
+## URT_UNIQUE_MINIMAL_PAIR_COUPLING_2026_11_10.py
+Exact canonical P=A_pair/15: 15 equally likely two-bit flips; original Hbits=15(I-P)
+Commutator [P,Q] residual 0.0
+One joint process F=PQ=QP, F^6=J64/64 residual 3.6513353776420814e-16
+Source hidden3 eigenvalue P: -1/5 hidden5: -1/15
+Joint URT+geometry two-sided Green-Kubo hidden3 = 18*(2403*sqrt(5) + 6011)/3125 = 65.57340297560829
+Joint URT+geometry two-sided Green-Kubo hidden5 = 4235591/607500 = 6.972166255144033
+Source ratio even/(odd+even) = 0.09610740296167539
+PASS exact finite-memory combined chronology and minimal A5 pair coupling, no fitted scalar
+## URT_MINIMAL_PAIR_POSITIVE_TRANSFER_2026_11_10.py
+exact positive T=B^T B, B=QP=PQ; rank 32
+T spectrum: 0(32), 1/225(15), 1/25(10), 1/9(6), 1(1)
+original five-solid nonlinear source Tr(R3^T T R3)/64= 36*sqrt(5)/125 + 18/25 = 1.36398757751994
+original five-solid nonlinear source Tr(R5^T T R5)/64= 19/1350 = 0.01407407407407408
+hidden even response fraction of source T: 0.010212949513394045
+KMS ratio delta^2 not obtained by this T alone: a physically selected cost/observable dictionary is needed
+PASS: source-loaded primitive URT plus minimal pair flip yields a bounded, positive, no-fit transfer
+## URT_TYPED_79_BOND_RESPONSE_2026_11_10.py
+D6/H3 S^2=5I; ranks P+ and P-: 3 3
+15 pair flips: exact HS Gram is 64 I_15; no Walsh-state double counting
+typed graded dimension (history plus independent operator tangents): 79
+rank-3 expanding branch inverse response: -3/128 + 3*sqrt(5)/128 = 0.02897034322265132
+rank-1 quadratic minus-branch scalar response (with typed scalar isometry): 3/158 - sqrt(5)/158 = 0.004835012800634243
+sum of the two mathematical source traces: -45/10112 + 173*sqrt(5)/10112 0.03380535602328556
+PASS exact golden tensor eigenresponse and distinct history/operator carrier ranks
+## URT_EXACT_A4_THIRD_CUMULANT_RATE_2026_11_10.py
+tetrahedron 0 ||t||^2 3/40 one-time cubic (27/800+0*sqrt(5)) repeated (-39/3200+0*sqrt(5)) distinct (441/128000+-437/256000*sqrt(5)) total exact raw (1143/64000+-1311/128000*sqrt(5))
+  normalized asymptotic third cumulant -0.24551858328997472 square exactly (1535489/768000+-55499/64000*sqrt(5))
+  normalized asymptotic quadratic cumulant (67/48+0*sqrt(5)) = 1.3958333333333333
+tetrahedron 1 ||t||^2 1/30 one-time cubic (-1/100+0*sqrt(5)) repeated (-17/2400+0*sqrt(5)) distinct (-91/192000+-37/96000*sqrt(5)) total exact raw (-1091/32000+-37/16000*sqrt(5))
+  normalized asymptotic third cumulant -6.451841538010442 square exactly (32876847/1024000+1089909/256000*sqrt(5))
+  normalized asymptotic quadratic cumulant (33/16+0*sqrt(5)) = 2.0625
+tetrahedron 2 ||t||^2 1/30 one-time cubic (-1/100+0*sqrt(5)) repeated (73/7200+0*sqrt(5)) distinct (-77/64000+-11/288000*sqrt(5)) total exact raw (1267/96000+-11/48000*sqrt(5))
+  normalized asymptotic third cumulant 2.084437791213846 square exactly (4823127/1024000+-41811/256000*sqrt(5))
+  normalized asymptotic quadratic cumulant (25/24+0*sqrt(5)) = 1.0416666666666667
+tetrahedron 3 ||t||^2 3/40 one-time cubic (27/800+0*sqrt(5)) repeated (153/6400+0*sqrt(5)) distinct (1359/512000+99/128000*sqrt(5)) total exact raw (31077/256000+297/64000*sqrt(5))
+  normalized asymptotic third cumulant 6.415475981528216 square exactly (36030987/1024000+341847/128000*sqrt(5))
+  normalized asymptotic quadratic cumulant (33/16+0*sqrt(5)) = 2.0625
+tetrahedron 4 ||t||^2 1/30 one-time cubic (-1/100+0*sqrt(5)) repeated (17/1800+0*sqrt(5)) distinct (-913/576000+41/432000*sqrt(5)) total exact raw (847/96000+41/72000*sqrt(5))
+  normalized asymptotic third cumulant 1.6589803932592164 square exactly (6591161/3072000+34727/128000*sqrt(5))
+  normalized asymptotic quadratic cumulant (5/6+0*sqrt(5)) = 0.8333333333333334
+PASS exact Q(sqrt5) triple-time cumulants; no parameter fitting
+## URT_A5_SYMMETRIC_CUBIC_SOURCE_2026_11_10.py
+A5 regular 5-simplex Gram: diag 1/30, offdiag -1/120, sum zero: EXACT
+relative sign selection [1, -1, -1, 1, -1] one-time cubic raw (1/100+0*sqrt(5)) normalized one-time 1.6431676725154982
+five fixed-frame normalized cubic rates [-0.24551858328997458, 6.451841538010442, -2.0844377912138454, 6.415475981528214, -1.6589803932592164]
+fixed-frame A5-average source cubic-rate raw (4/375+1/16000*sqrt(5)) squared normalized exactly (786567/256000+9/250*sqrt(5)) value ± 1.7756761503551237
+A5-average quadratic rate exact (71/48+0*sqrt(5)) numerically 1.4791666666666667
+PASS: A5-equivariant simplex orienting removes relative tetrahedral sign ambiguity; global sign remains
