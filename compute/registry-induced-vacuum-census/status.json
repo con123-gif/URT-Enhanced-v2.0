@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 2.0,
+  "tail": "metric_site_effective_contact_fd_error\": 1.1606388640912338e-07,\n  \"geometric_site_logdet_first_split_error\": 1.9281166238941895e-16,\n  \"geometric_site_logdet_second_split_error\": 6.661338147750939e-16,\n  \"geometric_site_hidden_current_contribution_norm\": 0.18617833059707875,\n  \"geometric_site_effective_current_norm\": 0.1968343724767513,\n  \"geometric_site_effective_contact_norm\": 0.3484930139234635,\n  \"geometric_site_full_logdet_second\": [\n    -0.9186932599397506,\n    0.821323848946904\n  ],\n  \"geometric_site_hidden_logdet_second\": [\n    -1.0235345446822817,\n    0.5542577596380925\n  ],\n  \"geometric_site_retained_logdet_second\": [\n    0.10484128474253107,\n    0.26706608930881215\n  ],\n  \"validated_archive_arrays\": 38,\n  \"provenance\": {\n    \"v61_source\": \"canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py\",\n    \"v61_sha256\": \"e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75\",\n    \"physical_registry_sha256\": \"787f64c5de24188c9f4833cfabefda5e340578fd7c0d49c8f02613e722371a33\",\n    \"history_sample_sha256\": \"00715b3891570814eb346387017ea7abcaf166f215d5e83655b17673c23e1b58\",\n    \"current_spec_snapshot_sha256\": \"ABSENT_FROM_REPOSITORY\",\n    \"script_sha256\": \"a2564f6d93b428b6c2aad7b7556ee48b2c498bba7c09c4c1a47d19a93e0eead5\",\n    \"npz_sha256\": \"bd05344bee22510ced0bd42d164ec34b118951859f64fddb34d0a65ee9778fbe\",\n    \"scope\": \"actual reflected v61 Wilson source restriction and gauge-covariant Higgs formula; NOT a new canonical H64 action or full selected photon residue\",\n    \"physical_clock\": \"symbolic a; h/a, transition gap/a, polarization/a\",\n    \"samples\": \"alpha=phi^-2 for Higgs verification chart only; no physical vacuum/amplitude fit\"\n  },\n  \"checks\": {\n    \"literal_v61_h_is_selfadjoint\": true,\n    \"link_first_entry_fd_error\": true,\n    \"link_second_entry_fd_error\": true,\n    \"flat_mean_link_current_max\": true,\n    \"local_gauge_vertex_error\": true,\n    \"local_gauge_seagull_error\": true,\n    \"local_gauge_finite_orbit_error\": true,\n    \"full_hessian_incidence_Ward_error\": true,\n    \"ground_transverse_fd_error\": true,\n    \"current_f_sum_error\": true,\n    \"current_contact_plus_retarded_equals_hessian_error\": true,\n    \"mixed_nonabelian_exponential_contact_error\": true,\n    \"neutral_Higgs_Q_commutator_norm\": true,\n    \"charged_Higgs_covariance_error\": true,\n    \"mixed_Higgs_gauge_vertex_fd_error\": true,\n    \"charged_Higgs_orbit_total_hessian\": true,\n    \"geometric_site_Schur_inverse_error\": true,\n    \"geometric_site_effective_current_fd_error\": true,\n    \"geometric_site_effective_contact_fd_error\": true,\n    \"geometric_site_logdet_first_split_error\": true,\n    \"geometric_site_logdet_second_split_error\": true,\n    \"Wilson_spectral_gap\": true,\n    \"Wilson_equal_sea_dimensions\": true,\n    \"local_incidence_rank_47\": true,\n    \"sea_hessian_rank_481\": true,\n    \"sea_hessian_gauge_nullity_47\": true,\n    \"sea_hessian_has_both_transverse_signs\": true,\n    \"physical_Q96_index_32\": true,\n    \"electron_charge_minus_one\": true,\n    \"Q_is_noncentral_in_weak_algebra\": true,\n    \"mixed_Q_weak_seagull_is_nonzero\": true,\n    \"charged_Higgs_mixed_current_is_nonzero\": true,\n    \"kinetic_sea_response_has_positive_absorption_weights\": true,\n    \"gap_preserving_conditional_tensor_occupation\": true,\n    \"atomic_npz_reloaded_all_38_arrays\": true\n  },\n  \"passed\": true,\n  \"source_sha256\": {\n    \"canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py\": \"e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75\",\n    \"combined_source_work/gauge/charged_gauge_join_operators.npz\": \"787f64c5de24188c9f4833cfabefda5e340578fd7c0d49c8f02613e722371a33\",\n    \"combined_source_work/species/combined_signed_source_operators.npz\": \"00715b3891570814eb346387017ea7abcaf166f215d5e83655b17673c23e1b58\",\n    \"common_action_work/recovery/theory_input_v5.md\": \"ABSENT_FROM_REPOSITORY\"\n  },\n  \"script_sha256\": \"a2564f6d93b428b6c2aad7b7556ee48b2c498bba7c09c4c1a47d19a93e0eead5\",\n  \"archive_sha256\": \"bd05344bee22510ced0bd42d164ec34b118951859f64fddb34d0a65ee9778fbe\"\n}\n",
+  "id": "registry-induced-vacuum-census",
+  "question": "Q16 census: from 30 random starts (plus theta*), with saddle escape, is any strict local minimum of Gamma_Q = 36G(t)+36G(2t)+12G(3t) below -10679.896670 (the minimum reached from theta*)?",
+  "requested_by": "Claude",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_INDUCED_VACUUM_2026_11_11.py 30",
+  "utc": "2026-11-11T02:12:52Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "79c6fe36c7535f6b40c34cce2acbfeb72db6c6df",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42944361223",
+  "outputs_committed": [],
+  "outputs_artifact_only": []
+}
