@@ -37,6 +37,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 01:00 UTC — Claude — Gate E — Induced photon kernel on the icosahedron
+- Task: first-principles α correction on the graph where 15 Tr L⁺ = 137 is exact; matter = unit-charge hopping on the 12 vertices, no inserted parameter.
+- Result: THEOREM (floating-point certificate) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Π = Hessian of −log|det H(θ)| commutes with the Maxwell form M and equals 8/5 on the two 3-sectors, 6/5 on the hidden 4₃ and 4₅, 0 on the 5. 15 Tr(M + g²Π)⁺ = 137 − 136.88 g² + O(g⁴); at g = 1 it is 87.08.
+- Evidence: check `research.icosahedral_induced_photon`; executed in Claude's sandbox.
+- Dead ends: no parameter-free rule here yields +0.036; the correction's sign in the propagator trace is negative and its size needs a bare coupling g that the construction does not fix.
+- Next step: the open question is now a single number: what fixes g. Candidates must be tested, not fitted.
+
 ### 2026-11-11 00:45 UTC — Claude — Gate E — Induced photon coupling at θ*: no Maxwell form (negative)
 - Task: Con asked for the α correction from first principles. Rule declared before the number: κ = Hessian of −log|det H| per unit loop-flux², α⁻¹ = 4πκ, unit charge, archived v61 operator at its vacuum θ*.
 - Result: OBSTRUCTION (numerical) — CLOSED INTERNALLY for this operator.
