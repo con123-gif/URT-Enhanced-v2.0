@@ -372,6 +372,14 @@ gating = false
 run = "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_MAXWELL_TEST_2026_11_11.py"
 timeout = 600
 
+[[check]]
+id = "research.native_signed_dictionary_k4"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_native_k4_collision/native_k4_collision.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

@@ -33,13 +33,24 @@ commit as your result.
 - [ ] Q18 [review] (C) **Independent review** of `INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.md` statements 2–4 with independent code (do not import its modules).
 - [x] Q19 [derive] (C) (Claude 2026-11-11: census of 60 starts, none lower; θ* stands) After compute job `induced-photon-vacuum-census` finishes, read `compute/induced-photon-vacuum-census/` and record whether θ* survived.
 
-- [ ] Q20 [compute] (A) **Native K4 residual collision test.** For D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact five-vacuum K4 with fixed Q6; determine whether fourth order separates the surviving non-parity joint K2–I3 collision. Do not fit inputs.
+- [x] Q20 [compute] (A) **Native K4 residual collision test.** For D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact five-vacuum K4 with fixed Q6; determine whether fourth order separates the surviving non-parity joint K2–I3 collision. Do not fit inputs. — GPT 2026-11-11: OBSTRUCTION (exact five-vacuum joint K2–I3–I4 collision; local certificate exit 0, 10/10 finite-time checks; log: Q20 fourth-cumulant collision)
 
 - [ ] Q23 [derive] (C) **Photon identification on the incidence graph.** (renumbered from a duplicate Q20, 2026-11-11) The incidence gauge field has (squares − 1) physical modes (59 on the icosahedron); 19 are ordinary link fluxes, 11 dual link fluxes. Decompose all 59 under A5, identify which combination couples to the Q96 charges, and state whether any A5-invariant kernel on it is forced. Source: `research_archive/2026-11-11_icosahedral_induced_photon/`.
 - [ ] Q21 [review] (C) **Independent review** of `HODGE_DIRAC_INDUCED_PHOTON_2026_11_11.md` items 1 and 3 with independent code, including an analytic (not finite-difference) Hessian.
 - [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
 
+- [ ] Q24 [compute] (A) **Fifth cumulant residual test.** For Q20's native non-parity dictionaries D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact joint five-vacuum K5 sign/scale invariant (K5²/r2⁵) using fixed Q6; test whether order five separates them, and if not identify a possible exact conjugacy of their tilted transfers.
+
 ## Log
+
+### 2026-11-11 02:14 UTC — GPT — Gate A — Q20 fourth-cumulant collision
+- Task: Q20 [compute] — evaluate native K4 for the Q15 surviving non-parity pair D=(0,2,4,6,8,10), E=(0,2,8,10,7,4), with the original fixed 64-history Q6.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native hidden-5 source only).
+- Statement: D and E have identical five-vacuum multisets of the complete joint invariants (K2/r2, K3²/r2³, K4/r2²). Their ordered normalized K4 values are 7547/900+(447/200)√5; 280439/28800+(1503/800)√5; 19163/57600+(103/50)√5; 552571/19200+(15201/1600)√5; 502531/19200+(17631/1600)√5, matched to their common (K2,I3) signatures. Therefore K4 cannot separate this pair. This is not a universal order-four no-go or a physical ARF prediction.
+- Evidence: research.native_signed_dictionary_k4; GPT local container Python 3.11 / SymPy 1.14.0 / NetworkX 3.6.1, standalone Q20 certificate exit 0 (9.81 s), with faithful local reconstruction of the Q11 native icosahedral source and Q6 cumulant core; 10/10 independent finite-time K4(25)-K4(24) equalities exact. Original archived Q11 and Q6 scripts will be exercised verbatim by the registered GitHub CI check; CI pending at commit time.
+- Dead ends: Q20's fourth cumulant retains the Q15 non-parity ambiguity; do not assert K4 chooses the chronology dictionary.
+- Next step: Q24 [compute] — calculate the fifth cumulant for this same pair and test for separation or a deeper exact tilted-transfer conjugacy.
+
 
 ### 2026-11-11 02:12 UTC — Claude — Gate C — Registry vacuum: the induced photon is not Maxwell-like (negative)
 - Task: the next step of Q16.
