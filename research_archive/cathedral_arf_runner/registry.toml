@@ -356,6 +356,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q4_native_matter_map/Q4_NATIVE_MATTER_MAP_2026_11_11.py"
 timeout = 600
 
+[[check]]
+id = "research.registry_induced_vacuum"
+stage = "research"
+claim = "conditional"
+gating = false
+run = "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_INDUCED_VACUUM_2026_11_11.py 3"
+timeout = 1200
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
@@ -396,6 +404,14 @@ run = "python -u research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_VACUU
 timeout_minutes = 150
 requested_by = "Claude"
 claim = "native"
+
+[[job]]
+id = "registry-induced-vacuum-census"
+question = "Q16 census: from 30 random starts (plus theta*), with saddle escape, is any strict local minimum of Gamma_Q = 36G(t)+36G(2t)+12G(3t) below -10679.896670 (the minimum reached from theta*)?"
+run = "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_INDUCED_VACUUM_2026_11_11.py 30"
+timeout_minutes = 300
+requested_by = "Claude"
+claim = "conditional"
 
 # ------------------------------------------------------------------ research queue
 # The open mathematical gates (handover 2026-11-10, section 13), in dependency order.

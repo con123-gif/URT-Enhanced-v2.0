@@ -76,6 +76,10 @@ Each holds for its stated operators and hypotheses only.
   - Literal Berry/Maxwell matching does not reproduce the historical α scalar. The naive Hilbert–Schmidt match of the native Peierls Hessian leaves a 42.9% residual (`2026-10-26_137_360_dual_spectral_bridge.md`).
 - **Signed dictionaries (Q12, 2026-11-10).** For the native hidden-5 source and fixed de Bruijn Q, the 46,080 signed six-axis dictionaries form 768 free proper-A5 orbits and 384 orbits after central inversion. Joint source/vacuum covariance makes the five-vacuum K₂ multiset an A5 orbit invariant, although the active signed rotation does not commute with Q. Exactly 56 distinct spectra occur (16 of multiplicity 8 and 40 of multiplicity 16 among the 768 classes); non-parity collisions remain. This is a source-level obstruction to uniqueness, not a physical ARF result (`research_archive/2026-11-10_signed_dictionary_classes/`).
 - **Signed A5 axis covariance (Q11, 2026-11-10).** The exact native hidden-5 icosahedral face source and five A4 singlets have 60/60 joint signed-axis/vacuum covariance: 76,800 face equalities and 300 exact K₂ invariances. This is passive transport, not active A5 symmetry of fixed Q: only the identity proper rotation commutes with Q. The signed dictionary and physical chronology remain unselected (`research_archive/2026-11-10_signed_a5_covariance/`).
+- **The native URT cannot produce R_α** (2026-11-11, `research_archive/2026-11-11_hidden_parity/`).
+  - Under central inversion the hidden 4₃ is odd and 4₅ even; 15 Tr L⁺ = 99/2 (even) + 175/2 (odd). In each A4 vacuum the 4₃ singlet is the tetrahedral parity vector and the 4₅ singlet the cube contrast.
+  - The native photon (edge cochains) is free, and the 7 November action obeys S(z, y; Δ) = S(z, Ry; −Δ) with R = I − 2U_hP₅U_hᵀ. Every geometric or photon observable is even in Δ, so 15 Tr M⁺ = 137 is uncorrected and the Δ polynomial's linear term has no native source.
+- **No matter map, and no A5 on the v61 lattice** (Q4, 2026-11-11, `research_archive/2026-11-11_q4_native_matter_map/`). The 48 sites are six cube slices in a 6-cycle with complete joins; the site graph has no automorphism of order 5, so no A5-equivariant site or link map exists. Of 136 archived arrays, none couples the Wilson lattice to geometry or histories; the only Wilson–registry join is a conditional Kronecker-sum table.
 - **Flat links are not a vacuum** (2026-11-11). For the archived v61 operator, θ = 0 is a saddle of the scale-free induced action −log|det H| and of the archive's sea energy: 72 negative, 409 positive physical modes. A stable flux vacuum θ* lies 99.10 lower. Archived native photon kernels at θ = 0 are not vacuum responses (`research_archive/2026-11-10_induced_photon/`).
 - **Chronology.**
   - A5 covariance plus the primitive shift does **not** select an axis-order-independent response: second moments 31440, 42480, 27120.
@@ -117,6 +121,8 @@ Known constraints on it:
 - The 7 November action has no vertex-to-edge charged coupling.
 - Symmetry alone leaves at least two intertwiners.
 - The 24-clock cannot carry the A5 repair by itself.
+- The v61 site graph has no automorphism of order 5 (Q4): the map must act on internal (spinor or registry) indices, never by identifying lattice sites or links with Platonic cells.
+- To feed a Δ-linear α correction it must reach the photon and be odd under R = I − 2U_hP₅U_hᵀ (hidden parity, 2026-11-11).
 
 Nothing in the archive selects this map. Gates B → C → D are this object; gates E and F follow from it.
 
@@ -127,6 +133,7 @@ Nothing in the archive selects this map. Gates B → C → D are this object; ga
 - **The ~40 legacy "confirmed" labels:** historical comparisons only.
 
 - **Three α assemblies coexist:** 137.0360100481 (`newtons_cathedral/arf.py`), 137.035999312 (v8 with δ_eff), 137.035999178 (Δ polynomial); 518σ, 6.4σ and 0.06σ from CODATA 2022. Successive versions add terms and approach the measured value.
+- **Precision scope for any first-principles α.** α(0) is the end of the running and contains the hadronic vacuum polarisation, Δα_had⁽⁵⁾(M_Z²) = 0.027813(48) (lattice, arXiv:2511.01623; data-driven about twice as uncertain). Through α⁻¹(0) = α⁻¹(M_Z)/(1 − Δα), even an exact high-scale prediction fixes α⁻¹(0) only to ±0.007–0.015, against R_α ≈ 0.034. An eight-digit match of R_α is therefore the signature of a fit, not a derivation target; a geometric theory must state the scale its α applies at.
 - **The 2025 chaos survey is not evidence for δ★** (2026-11-11, executed). The "universal chaos invariant" δ_chaos = 0.1523 ± 0.0005 of the Nov 2025 paper comes from a refinement step that relaxes every estimate to a hard-coded 0.15: every raw value in [0.01, 1] lands in [0.14905, 0.15245], white noise gives 0.1513, and moving the setpoint moves the "invariant". The original ARFs were fitted values rounded to 2π, 3π², π²φ, 4 (1.9 % mean error). δ⋆ and δ_cl remain frozen definitions (`research_archive/2026-11-11_arf_origin/`).
 
 ## 7. Archive health (sweep, 2026-11-10)

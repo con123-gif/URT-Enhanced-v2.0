@@ -1,0 +1,89 @@
+{
+  "charge_multiplicities_units_of_one_third": {
+    "-3": 6,
+    "-2": 18,
+    "-1": 18,
+    "0": 12,
+    "1": 18,
+    "2": 18,
+    "3": 6
+  },
+  "sum_c2": 288,
+  "charge_conjugation_max_difference": 7.105427357601002e-14,
+  "effective_weights": {
+    "3": 12,
+    "2": 36,
+    "1": 36
+  },
+  "theta0": {
+    "physical_negative_modes": 72,
+    "min": -851.9155692031611,
+    "max": 110.94124355066167
+  },
+  "theta_star_physical_gradient_norm_under_Gamma_Q": 301.41236754767647,
+  "census": [
+    {
+      "start": "theta_star",
+      "Gamma_Q": -10679.89667003,
+      "saddle_escapes": 2,
+      "saddles_passed": [
+        {
+          "Gamma_Q": -10666.878023,
+          "unstable_modes": 19
+        },
+        {
+          "Gamma_Q": -10679.520061,
+          "unstable_modes": 1
+        }
+      ]
+    },
+    {
+      "start": "random0",
+      "Gamma_Q": -10163.79922815,
+      "saddle_escapes": 0,
+      "saddles_passed": []
+    },
+    {
+      "start": "random1",
+      "Gamma_Q": -10146.11933644,
+      "saddle_escapes": 0,
+      "saddles_passed": []
+    }
+  ],
+  "best": {
+    "start": "theta_star",
+    "Gamma_Q": -10679.896670027927,
+    "Gamma_Q_minus_flat": -6508.964492435104,
+    "physical_gradient_norm": 7.29177264598794e-13,
+    "hessian_min": 0.009403465052863769,
+    "hessian_max": 290.38852349633834,
+    "physical_negative_modes": 0,
+    "single_charge_Gamma_at_best_minus_at_theta_star": 22.071013366828623
+  },
+  "flux_classes_over_pi_L3": {
+    "0.000161": 384,
+    "0.000759": 768,
+    "0.498591": 768,
+    "0.921354": 384
+  },
+  "flux_classes_over_pi_L4": {
+    "0.000000": 11016,
+    "0.000597": 1152,
+    "0.000920": 1152,
+    "0.421843": 576,
+    "0.422763": 1152,
+    "0.423683": 48,
+    "0.497832": 3264,
+    "0.498429": 1152,
+    "0.498752": 1152,
+    "0.499349": 3456,
+    "0.579458": 576,
+    "0.580055": 1152,
+    "0.580653": 48,
+    "0.920595": 1152,
+    "0.921193": 3456,
+    "0.921515": 480,
+    "0.922112": 1152,
+    "0.995664": 24
+  }
+}

@@ -28,7 +28,7 @@ commit as your result.
 
 - [x] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job. — GPT 2026-11-11: OBSTRUCTION (96 exact K2–I3 signatures; 576 residual non-parity pairs; namespace CI repair independently executed 2026-11-11; log: Q15 native CI repair regression)
 
-- [ ] Q16 [derive] (C) **Full-registry induced vacuum.** With the archived Q96 charges in units of 1/3, minimise Γ_Q(θ) = −Σ_s log|det H(3q_s θ)| over the 528 links. Does a stable vacuum exist, what is its flux family, and what is the physical Hessian there? Start from `research_archive/2026-11-10_induced_photon/`.
+- [x] Q16 [derive] (C) **Full-registry induced vacuum.** With the archived Q96 charges in units of 1/3, minimise Γ_Q(θ) = −Σ_s log|det H(3q_s θ)| over the 528 links. Does a stable vacuum exist, what is its flux family, and what is the physical Hessian there? Start from `research_archive/2026-11-10_induced_photon/`. — Claude 2026-11-11: CONDITIONAL (strict local minimum from θ* after two saddle escapes, 6508.96 below flat links; not a one-parameter flux family; census job queued; log: "Q16: the registry vacuum")
 - [ ] Q17 [verify] (C) **(r, M, c_t) dependence.** Count negative physical modes of the −log|det H| Hessian at θ = 0 over a grid of r, M and temporal weight around the archived values. Is the flat-link instability generic or tuned?
 - [ ] Q18 [review] (C) **Independent review** of `INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.md` statements 2–4 with independent code (do not import its modules).
 - [x] Q19 [derive] (C) (Claude 2026-11-11: census of 60 starts, none lower; θ* stands) After compute job `induced-photon-vacuum-census` finishes, read `compute/induced-photon-vacuum-census/` and record whether θ* survived.
@@ -40,6 +40,14 @@ commit as your result.
 - [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
 
 ## Log
+
+### 2026-11-11 02:12 UTC — Claude — Gate C — Q16: the registry vacuum is a different, strictly stable flux state
+- Task: Q16.
+- Result: CONDITIONAL (declared tensor-product premise) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: with each of the 96 registry states seeing the v61 links at charge 3q, Γ_Q = 36G(θ) + 36G(2θ) + 12G(3θ) (charge conjugation exact). θ = 0 has 72 unstable modes; θ* is not stationary (gradient 301.4). From θ*, two saddle escapes reach a strict local minimum 6508.96 below flat links (Hessian 0.0094–290.4). Its fluxes are not a one-parameter family.
+- Evidence: `research.registry_induced_vacuum`; job `registry-induced-vacuum-census` (30 starts); executed in Claude's sandbox (2 random starts).
+- Dead ends: θ* does not survive the full registry; plain L-BFGS stops on saddles here, so saddle escape is required.
+- Next step: Maxwell test of the physical Hessian at the registry vacuum (best κ against triangle and four-cycle flux forms).
 
 ### 2026-11-11 02:04 UTC — Claude — Gate B — Q4: the archive defines no matter map, and none can be A5-equivariant on sites
 - Task: Q4.
