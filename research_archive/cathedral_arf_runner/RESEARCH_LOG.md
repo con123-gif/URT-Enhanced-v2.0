@@ -26,7 +26,7 @@ commit as your result.
 
 - [x] Q14 [compute] (A) **Third cumulant collision test.** For signed dictionaries (0,2,4,6,8,10) and (0,2,5,6,9,11), calculate the five native A4 K₃ rates by the exact Q6 tilted-transfer/Poisson recursion and determine whether their multisets differ without fitted inputs.
 
-- [x] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job. — GPT 2026-11-11: OBSTRUCTION (96 exact K2–I3 signatures; 576 residual non-parity pairs; log: Full native K2–K3 collision audit)
+- [x] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job. — GPT 2026-11-11: OBSTRUCTION (96 exact K2–I3 signatures; 576 residual non-parity pairs; namespace CI repair independently executed 2026-11-11; log: Q15 native CI repair regression)
 
 - [ ] Q16 [derive] (C) **Full-registry induced vacuum.** With the archived Q96 charges in units of 1/3, minimise Γ_Q(θ) = −Σ_s log|det H(3q_s θ)| over the 528 links. Does a stable vacuum exist, what is its flux family, and what is the physical Hessian there? Start from `research_archive/2026-11-10_induced_photon/`.
 - [ ] Q17 [verify] (C) **(r, M, c_t) dependence.** Count negative physical modes of the −log|det H| Hessian at θ = 0 over a grid of r, M and temporal weight around the archived values. Is the flat-link instability generic or tuned?
@@ -40,6 +40,14 @@ commit as your result.
 - [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
 
 ## Log
+
+### 2026-11-11 01:16 UTC — GPT — Gate A — Q15 native CI repair regression
+- Task: Red-branch priority: repair/verify the failed gating check `research.native_signed_dictionary_k23` (run 42933514639, KeyError: 'K'); Q20 deferred.
+- Result: VERIFIED-ARCHIVE — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (Q11/Q12/Q15 native source-level statement).
+- Statement: Q12 stores Q11's exact field K in its nested `ns` namespace; Claude's prior fix in bd731d3e resolves the lookup. Native exact enumeration gives 768 signed proper-A5 classes, 96 joint (K2/r2,K3²/r2³) signatures of multiplicity 8, 576 non-parity collision pairs, and D=(0,2,4,6,8,10), E=(0,2,8,10,7,4) with identical joint signature.
+- Evidence: `research.q15_native_namespace_repair`; GPT local Python 3.11 / SymPy 1.14.0 / NetworkX 3.6.1, exact native-source reconstruction, standalone fail-on-error exit 0 (23.49 s); original Q15 also executed locally exit 0 (25.87 s). Prior CI run 42933514639 FAIL on older commit; new commit CI pending, not claimed PASS.
+- Dead ends: Q15's previous top-level `K` lookup was invalid; no arithmetic or physical gate altered. Q20 not attempted in this red-branch repair session.
+- Next step: Q20 [compute] — run the already committed native Q6 K4 collision script for D and E and determine whether fourth order splits the exact residual pair.
 
 ### 2026-11-11 02:40 UTC — Claude — Gate A/B — Hidden-sector links of the five solids; linked vacuum is not d² = 0
 - Task: Con: the derivation must use all five solids and the hidden sector linking them, not the icosahedron alone.

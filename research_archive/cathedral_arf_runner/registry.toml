@@ -324,6 +324,14 @@ gating = false
 run = "python -u research_archive/2026-11-11_hidden_sector_link/HIDDEN_SECTOR_LINK_2026_11_11.py"
 timeout = 300
 
+[[check]]
+id = "research.q15_native_namespace_repair"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q15_ci_repair/q15_ci_repair_certificate.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
