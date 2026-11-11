@@ -1,6 +1,6 @@
 # Cathedral orchestrator — ✅ PASS
 
-2026-11-11T10:34:43Z · [run 43002158646](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43002158646) · `1988002` · push on `newtons-cathedral` · checkpoint #38
+2026-11-11T11:36:36Z · [run 43010731250](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43010731250) · `9d2014c` · push on `newtons-cathedral` · checkpoint #39
 
 ## Physical status
 
@@ -19,68 +19,69 @@
 
 | Stage | Check | Claim | Status | Passing runs | Wall |
 |---|---|---|---|---|---|
-| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 38 | 0.04s |
-| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 38 | 0.0s |
-| integrity | `integrity.handover_claims` | independent | ✅ pass | 38 | 0.22s |
-| tests | `tests.suite` | regression | ✅ pass | 38 | 7.25s |
-| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 38 | 11.01s |
-| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 38 | 0.4s |
-| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 38 | 4.63s |
-| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 38 | 4.58s |
-| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 38 | 0.4s |
-| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 38 | 0.31s |
-| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 35 | 11.31s |
-| history | `history.native_24clock_fourier` | conditional | ✅ pass | 38 | 0.57s |
-| native | `native.wilson_source` | native | ✅ pass | 38 | 1.89s |
-| native | `native.output_gate` | native | ✅ pass | 38 | 0.11s |
-| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 38 | 0.51s |
-| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 38 | 0.33s |
-| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 38 | 0.83s |
-| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 38 | 0.11s |
-| research | `research.sandbox_bound_scripts` | independent | ✅ pass | 32 | 0.11s |
-| research | `research.missing_intermediates` | independent | ✅ pass | 11 | 0.26s |
-| research | `research.q6_repair_structural_regression` | regression | ✅ pass | 11 | 0.04s |
-| research | `research.independent_native_five_k2` | independent | ✅ pass | 31 | 1.15s |
-| research | `research.unsigned_axis_order_k2` | independent | ✅ pass | 30 | 56.19s |
-| research | `research.signed_a5_covariance` | independent | ✅ pass | 29 | 6.02s |
-| research | `research.signed_dictionary_classes` | native | ✅ pass | 27 | 8.57s |
-| research | `research.native_signed_dictionary_k3` | native | ✅ pass | 25 | 18.27s |
-| research | `research.induced_photon_logdet_kernel` | native | ✅ pass | 24 | 1.85s |
-| research | `research.induced_photon_vacuum_selection` | native | ✅ pass | 24 | 5.26s |
-| research | `research.native_signed_dictionary_k23` | native | ✅ pass | 20 | 37.29s |
-| research | `research.icosahedral_induced_photon` | independent | ✅ pass | 20 | 0.25s |
-| research | `research.hodge_dirac_flux_vacuum` | independent | ✅ pass | 20 | 0.71s |
-| research | `research.hodge_dirac_photon_kernel` | independent | ✅ pass | 20 | 0.66s |
-| research | `research.hodge_dirac_19_mode_photon` | independent | ✅ pass | 20 | 0.53s |
-| research | `research.incidence_photon_a5_sectors` | independent | ✅ pass | 20 | 3.92s |
-| research | `research.platonic_hidden_sector_link` | independent | ✅ pass | 19 | 0.24s |
-| research | `research.q15_native_namespace_repair` | native | ✅ pass | 18 | 36.97s |
-| research | `research.chaos_invariant_refinement_audit` | independent | ✅ pass | 17 | 4.51s |
-| research | `research.hidden_parity_delta_selection` | native | ✅ pass | 16 | 0.68s |
-| research | `research.q4_native_matter_map` | native | ✅ pass | 15 | 1.62s |
-| research | `research.registry_induced_vacuum` | conditional | ✅ pass | 15 | 327.95s |
-| research | `research.registry_maxwell_test` | conditional | ✅ pass | 15 | 5.61s |
-| research | `research.native_signed_dictionary_k4` | native | ✅ pass | 15 | 23.72s |
-| research | `research.q23_photon_gauge_typing` | native | ✅ pass | 14 | 0.67s |
-| research | `research.q3_twirled_chronology_classes` | native | ✅ pass | 14 | 61.87s |
-| research | `research.q7_review_q6_cumulants` | independent | ✅ pass | 14 | 3.09s |
-| research | `research.candidate1_induced_em_icosahedron` | conditional | ✅ pass | 13 | 0.2s |
-| research | `research.q25_4d_a5_photon` | native | ✅ pass | 13 | 0.61s |
-| research | `research.candidate1_4d_holonomy_instability` | conditional | ✅ pass | 12 | 0.1s |
-| research | `research.q22_tetrahedron_exact_kernel` | native | ✅ pass | 10 | 0.03s |
-| research | `research.q24_history_symmetries` | native | ✅ pass | 9 | 93.22s |
-| research | `research.q27_twirled_orientation` | native | ✅ pass | 8 | 1.81s |
-| research | `research.q28_twirled_third_trace` | native | ✅ pass | 7 | 2.01s |
-| research | `research.q29_twirled_fourth_trace` | native | ✅ pass | 6 | 4.01s |
-| research | `research.q30_twirled_all_order_spectrum` | native | ✅ pass | 4 | 95.76s |
-| research | `research.q31_rational_similarity` | native | ✅ pass | 3 | 192.66s |
-| research | `research.q33_singular_spectrum` | native | ✅ pass | 2 | 38.03s |
-| research | `research.q34_seventh_mixed_words` | native | ✅ pass | 1 | 8.06s |
+| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 39 | 0.04s |
+| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 39 | 0.0s |
+| integrity | `integrity.handover_claims` | independent | ✅ pass | 39 | 0.24s |
+| tests | `tests.suite` | regression | ✅ pass | 39 | 8.49s |
+| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 39 | 6.86s |
+| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 39 | 0.29s |
+| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 39 | 5.01s |
+| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 39 | 4.71s |
+| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 39 | 0.42s |
+| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 39 | 0.33s |
+| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 36 | 11.62s |
+| history | `history.native_24clock_fourier` | conditional | ✅ pass | 39 | 0.57s |
+| native | `native.wilson_source` | native | ✅ pass | 39 | 1.67s |
+| native | `native.output_gate` | native | ✅ pass | 39 | 0.11s |
+| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 39 | 0.58s |
+| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 39 | 0.36s |
+| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 39 | 0.88s |
+| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 39 | 0.12s |
+| research | `research.sandbox_bound_scripts` | independent | ✅ pass | 33 | 0.11s |
+| research | `research.missing_intermediates` | independent | ✅ pass | 12 | 0.26s |
+| research | `research.q6_repair_structural_regression` | regression | ✅ pass | 12 | 0.03s |
+| research | `research.independent_native_five_k2` | independent | ✅ pass | 32 | 1.12s |
+| research | `research.unsigned_axis_order_k2` | independent | ✅ pass | 31 | 55.59s |
+| research | `research.signed_a5_covariance` | independent | ✅ pass | 30 | 5.89s |
+| research | `research.signed_dictionary_classes` | native | ✅ pass | 28 | 8.54s |
+| research | `research.native_signed_dictionary_k3` | native | ✅ pass | 26 | 18.11s |
+| research | `research.induced_photon_logdet_kernel` | native | ✅ pass | 25 | 1.89s |
+| research | `research.induced_photon_vacuum_selection` | native | ✅ pass | 25 | 5.36s |
+| research | `research.native_signed_dictionary_k23` | native | ✅ pass | 21 | 36.83s |
+| research | `research.icosahedral_induced_photon` | independent | ✅ pass | 21 | 0.25s |
+| research | `research.hodge_dirac_flux_vacuum` | independent | ✅ pass | 21 | 0.71s |
+| research | `research.hodge_dirac_photon_kernel` | independent | ✅ pass | 21 | 0.67s |
+| research | `research.hodge_dirac_19_mode_photon` | independent | ✅ pass | 21 | 0.53s |
+| research | `research.incidence_photon_a5_sectors` | independent | ✅ pass | 21 | 3.96s |
+| research | `research.platonic_hidden_sector_link` | independent | ✅ pass | 20 | 0.24s |
+| research | `research.q15_native_namespace_repair` | native | ✅ pass | 19 | 36.87s |
+| research | `research.chaos_invariant_refinement_audit` | independent | ✅ pass | 18 | 4.52s |
+| research | `research.hidden_parity_delta_selection` | native | ✅ pass | 17 | 0.68s |
+| research | `research.q4_native_matter_map` | native | ✅ pass | 16 | 1.63s |
+| research | `research.registry_induced_vacuum` | conditional | ✅ pass | 16 | 332.76s |
+| research | `research.registry_maxwell_test` | conditional | ✅ pass | 16 | 5.7s |
+| research | `research.native_signed_dictionary_k4` | native | ✅ pass | 16 | 23.64s |
+| research | `research.q23_photon_gauge_typing` | native | ✅ pass | 15 | 0.69s |
+| research | `research.q3_twirled_chronology_classes` | native | ✅ pass | 15 | 62.27s |
+| research | `research.q7_review_q6_cumulants` | independent | ✅ pass | 15 | 2.98s |
+| research | `research.candidate1_induced_em_icosahedron` | conditional | ✅ pass | 14 | 0.21s |
+| research | `research.q25_4d_a5_photon` | native | ✅ pass | 14 | 0.62s |
+| research | `research.candidate1_4d_holonomy_instability` | conditional | ✅ pass | 13 | 0.1s |
+| research | `research.q22_tetrahedron_exact_kernel` | native | ✅ pass | 11 | 0.03s |
+| research | `research.q24_history_symmetries` | native | ✅ pass | 10 | 89.48s |
+| research | `research.q27_twirled_orientation` | native | ✅ pass | 9 | 1.82s |
+| research | `research.q28_twirled_third_trace` | native | ✅ pass | 8 | 2.02s |
+| research | `research.q29_twirled_fourth_trace` | native | ✅ pass | 7 | 3.97s |
+| research | `research.q30_twirled_all_order_spectrum` | native | ✅ pass | 5 | 96.26s |
+| research | `research.q31_rational_similarity` | native | ✅ pass | 4 | 193.61s |
+| research | `research.q33_singular_spectrum` | native | ✅ pass | 3 | 38.19s |
+| research | `research.q34_seventh_mixed_words` | native | ✅ pass | 2 | 8.09s |
+| research | `research.q35_eighth_mixed_words` | native | ✅ pass | 1 | 16.51s |
 
 ## Archive sweep
 
-Executed at least once: **303/303** research scripts. Latest status: missing_file 22, pass 280, timeout 1.
-This run: 290 executed (missing_file 20, pass 269, timeout 1).
+Executed at least once: **304/304** research scripts. Latest status: missing_file 22, pass 281, timeout 1.
+This run: 249 executed (missing_file 11, pass 237, timeout 1).
 Regressions (passed before, failing now, same source): none.
 Recovered: none.
 
