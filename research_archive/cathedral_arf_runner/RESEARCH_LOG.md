@@ -16,7 +16,7 @@ commit as your result.
 - [x] Q6 [repair] **Missing intermediates.** For each remaining `missing_file` script, find whether another archived script produces the missing file. Record producer → consumer pairs; where a producer exists, say what ordering the sweep needs. — Grok 2026-11-10: VERIFIED-ARCHIVE, 1 basename-only producer / 0 exact-path producers (log: "Missing intermediate producer map")
 - [x] Q7 [review] **Independent review** of Theorems 1–2 in `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_Q6_CUMULANTS_AND_A5_MIXING_THEOREMS_2026_11_10.md` (finite Poisson inverse and cumulant recursion; non-ergodic A5 mixing with κ₄ ≈ (1493/1920)n²). Re-derive; AGREE / DISAGREE / PARTIAL with reasons. — Claude 2026-11-11: REVIEW, AGREE on both (log: "Q7: independent review")
 - [x] Q8 [compute] **Independent K₂.** Recompute the five native K₂ rates {67/48, 33/16, 25/24, 33/16, 5/6} from the five-solid source with a standalone exact script that does not import the archived K₂ code. — GPT 2026-11-10: THEOREM (Independent exact five-vacuum K₂ reconstruction)
-- [ ] Q9 [review] **Claim ledger catch-up.** Fold the 2026-10-18 → 2026-11-10 results into `docs/CLAIM_LEDGER.md`: one row per result, with a `CONTINUITY_PROTOCOL.md` status class and a linked source file, using `RESEARCH_STATE.md` §2–4 as the index. Read each source; do not copy statuses blindly.
+- [ ] Q9 [review] **Claim ledger catch-up.** Fold the 2026-10-18 → 2026-11-10 results into `docs/CLAIM_LEDGER.md`: one row per result, with a `CONTINUITY_PROTOCOL.md` status class and a linked source file, using `RESEARCH_STATE.md` §2–4 as the index. Read each source; do not copy statuses blindly. — PARTIAL (Claude 2026-11-11): rows for 2026-11-10 → 11 added; 2026-10-18 → 11-09 still to fold
 
 - [x] Q10 [compute] (A) **Unsigned axis-order K₂ spectrum.** Using the exact six-bit source and A4 projectors, enumerate one representative of each of the 12 unsigned A5 axis-order classes; compute and count the distinct five-vacuum K₂ multisets without varying source coefficients. Record exact witnesses for any collisions. — GPT 2026-11-10: OBSTRUCTION (Exact unsigned A5 axis-order spectra and fixed-endpoint sign choice)
 
@@ -29,7 +29,7 @@ commit as your result.
 - [x] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job. — GPT 2026-11-11: OBSTRUCTION (96 exact K2–I3 signatures; 576 residual non-parity pairs; namespace CI repair independently executed 2026-11-11; log: Q15 native CI repair regression)
 
 - [x] Q16 [derive] (C) **Full-registry induced vacuum.** With the archived Q96 charges in units of 1/3, minimise Γ_Q(θ) = −Σ_s log|det H(3q_s θ)| over the 528 links. Does a stable vacuum exist, what is its flux family, and what is the physical Hessian there? Start from `research_archive/2026-11-10_induced_photon/`. — Claude 2026-11-11: CONDITIONAL (strict local minimum from θ* after two saddle escapes, 6508.96 below flat links; not a one-parameter flux family; census job queued; log: "Q16: the registry vacuum")
-- [ ] Q17 [verify] (C) **(r, M, c_t) dependence.** Count negative physical modes of the −log|det H| Hessian at θ = 0 over a grid of r, M and temporal weight around the archived values. Is the flat-link instability generic or tuned?
+- [x] Q17 [verify] (C) **(r, M, c_t) dependence.** Count negative physical modes of the −log|det H| Hessian at θ = 0 over a grid of r, M and temporal weight around the archived values. Is the flat-link instability generic or tuned? — Claude 2026-11-11: generic (all 118 nonsingular points of a 120-point grid unstable; 72 the plateau count; log: "Q17: flat links generic")
 - [ ] Q18 [review] (C) **Independent review** of `INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.md` statements 2–4 with independent code (do not import its modules).
 - [x] Q19 [derive] (C) (Claude 2026-11-11: census of 60 starts, none lower; θ* stands) After compute job `induced-photon-vacuum-census` finishes, read `compute/induced-photon-vacuum-census/` and record whether θ* survived.
 
@@ -42,6 +42,14 @@ commit as your result.
 - [ ] Q24 [compute] (A) **Fifth cumulant residual test.** For Q20's native non-parity dictionaries D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact joint five-vacuum K5 sign/scale invariant (K5²/r2⁵) using fixed Q6; test whether order five separates them, and if not identify a possible exact conjugacy of their tilted transfers.
 
 ## Log
+
+### 2026-11-11 02:42 UTC — Claude — Gate C — Q17: flat links are unstable across the whole (r, M, c_t) grid; ledger partly caught up
+- Task: Q17 (my lane was empty); part of Q9.
+- Result: VERIFIED-ARCHIVE extension (numerical certificate).
+- Statement: independent Wilson builder (equal to v61 at the archived point) and gradient-difference Hessian. On 120 points around (R_EXACT, M_EXACT, 1/16), H is singular at 2; every one of the other 118 has unstable flat links. The count is 72 at all c_t ≥ 1/16 points but two (69); other counts (18–114) only at c_t = 1/32 with large M or r, or r = 1.
+- Evidence: job `q17-flat-link-genericity`; executed in Claude's sandbox (12 min). `docs/CLAIM_LEDGER.md` gains 17 rows for 2026-11-10 → 11, each read from its linked source, including a correction row for the scalar α polynomial.
+- Dead ends: none.
+- Next step: Q9's remaining span (2026-10-18 → 11-09) for Grok or GPT; Q18 and Q21 need a reviewer other than Claude.
 
 ### 2026-11-11 02:35 UTC — Claude — Gate C/F — Candidate 1 (induced EM from native vertex scalars): no Maxwell photon, κ₃ = 91.57
 - Task: compute, in its minimal form, the first of three new ingredients proposed to Con for R_α (his choice is pending).

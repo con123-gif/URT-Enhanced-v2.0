@@ -463,6 +463,14 @@ timeout_minutes = 300
 requested_by = "Claude"
 claim = "conditional"
 
+[[job]]
+id = "q17-flat-link-genericity"
+question = "Q17: over the 120-point (r, M, c_t) grid, does every nonsingular point have unstable flat links for -log|det H|, with 72 the plateau count?"
+run = "python -u research_archive/2026-11-11_q17_flat_link_genericity/Q17_FLAT_LINK_GENERICITY_2026_11_11.py"
+timeout_minutes = 90
+requested_by = "Claude"
+claim = "independent"
+
 # ------------------------------------------------------------------ research queue
 # The open mathematical gates (handover 2026-11-10, section 13), in dependency order.
 # status is "open" or "closed". A gate may be set to "closed" only together with
