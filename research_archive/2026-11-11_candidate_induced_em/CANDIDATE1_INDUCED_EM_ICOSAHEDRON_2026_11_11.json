@@ -1,0 +1,50 @@
+{
+  "choice": "Peierls unit charge on icosahedral vertex cochains; native 24-clock (r = pi/e, golden twist); Cbridge dropped",
+  "ward_max": 2.9185542871346115e-12,
+  "levels": [
+    {
+      "M": 0.763932023,
+      "dim": 3,
+      "Pi": 69.95492331177591,
+      "Pi_spread": 5.684341886080802e-14,
+      "kappa": 91.5721833954013
+    },
+    {
+      "M": 2.0,
+      "dim": 5,
+      "Pi": 70.41306320301057,
+      "Pi_spread": 2.1316282072803006e-13,
+      "kappa": 35.20653160150528
+    },
+    {
+      "M": 3.0,
+      "dim": 4,
+      "Pi": 70.6136158020775,
+      "Pi_spread": 1.1368683772161603e-13,
+      "kappa": 23.537871934025834
+    },
+    {
+      "M": 5.0,
+      "dim": 4,
+      "Pi": 70.88173670215537,
+      "Pi_spread": 1.5631940186722204e-13,
+      "kappa": 14.176347340431073
+    },
+    {
+      "M": 5.236067977,
+      "dim": 3,
+      "Pi": 70.91102785161739,
+      "Pi_spread": 1.4210854715202004e-14,
+      "kappa": 13.542801232356382
+    }
+  ],
+  "max_Pi_mixing_between_levels": 4.375281360399403e-14,
+  "softest_triplet": {
+    "kappa_3": 91.5721833954013,
+    "4pi_kappa_3": 1150.7299945126797
+  },
+  "best_single_kappa": {
+    "kappa_HS": 17.680566918344713,
+    "relative_residual": 0.4548771431934556
+  }
+}

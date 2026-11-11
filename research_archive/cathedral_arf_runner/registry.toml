@@ -406,6 +406,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q7_review/Q7_REVIEW_Q6_CUMULANTS_A5_MIXING_2026_11_11.py"
 timeout = 300
 
+[[check]]
+id = "research.candidate1_induced_em_icosahedron"
+stage = "research"
+claim = "conditional"
+gating = false
+run = "python -u research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_INDUCED_EM_ICOSAHEDRON_2026_11_11.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

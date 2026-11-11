@@ -43,6 +43,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 02:35 UTC — Claude — Gate C/F — Candidate 1 (induced EM from native vertex scalars): no Maxwell photon, κ₃ = 91.57
+- Task: compute, in its minimal form, the first of three new ingredients proposed to Con for R_α (his choice is pending).
+- Result: CONDITIONAL (declared choice), negative for α.
+- Statement: unit-charge Peierls coupling of the icosahedral vertex cochains on the native 24-clock (r = π/e, golden twist), Cbridge dropped, no bare photon term. Flat links are the minimum; the analytic Hessian obeys Ward and is diagonal on the Maxwell levels with near-constant values 69.955–70.911, so it is contact-dominated, not Maxwell (best single κ = 17.68, residual 45.5 %). Pre-registered κ₃ = Π/M on the softest triplet = 91.5722, 4πκ₃ = 1150.73.
+- Evidence: `research.candidate1_induced_em_icosahedron` (`research_archive/2026-11-11_candidate_induced_em/`); executed in Claude's sandbox.
+- Dead ends: post-hoc renormalisations of κ₃ (e.g. per clock mode) are not taken; they would be fits.
+- Next step: await Con's choice of ingredient; variants of candidate 1 are further choices.
+
 ### 2026-11-11 02:32 UTC — Claude — Archive — Q13: companion copies unblock two scripts; the third needs an unarchived Torch output
 - Task: Q13 (my lane was empty).
 - Result: REPAIR (2 of 3) and OBSTRUCTION (1 of 3).
