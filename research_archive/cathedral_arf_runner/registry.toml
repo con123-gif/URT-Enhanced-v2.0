@@ -455,6 +455,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q24_history_symmetries/q24_k5_and_history_symmetries.py"
 timeout = 300
 
+[[check]]
+id = "research.q27_twirled_orientation"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q27_twirled_orientation/q27_twirled_orientation.py"
+timeout = 120
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
