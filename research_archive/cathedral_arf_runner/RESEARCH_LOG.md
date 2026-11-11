@@ -37,6 +37,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 00:45 UTC — Claude — Gate E — Induced photon coupling at θ*: no Maxwell form (negative)
+- Task: Con asked for the α correction from first principles. Rule declared before the number: κ = Hessian of −log|det H| per unit loop-flux², α⁻¹ = 4πκ, unit charge, archived v61 operator at its vacuum θ*.
+- Result: OBSTRUCTION (numerical) — CLOSED INTERNALLY for this operator.
+- Statement: the physical Hessian at θ* is not proportional to any loop-flux (Maxwell) form built from triangles, four-cycles or both: best single κ = 0.013595 (triangles) or 0.000682 (triangles + squares), residual 86–88%; mode-by-mode κ spans 0 to 0.070. 4πκ is 0.17 or 0.009. At θ = 0 the best κ is negative. The 6×2×2×2 v61 lattice therefore defines no photon coupling, and nothing near 137.
+- Evidence: `research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_COUPLING_TEST_2026_11_11.py`; executed in Claude's sandbox; swept by CI.
+- Dead ends: reading α off the v61 link Hessian, at θ = 0 or θ*.
+- Next step: Q16 only changes the charge content, not this structure; a first-principles α needs an operator whose induced kernel is Maxwell-like. Candidate: the icosahedral/dual-dodecahedron graph, where 15·Tr L⁺ = 137 is already exact.
+
 ### 2026-11-11 00:35 UTC — Claude — Gate F — Origin of the four ARF residues (Drive)
 - Task: Con connected Google Drive and asked for the ARF origin to be checked there.
 - Result: VERIFIED-ARCHIVE — NOT A DERIVATION.
