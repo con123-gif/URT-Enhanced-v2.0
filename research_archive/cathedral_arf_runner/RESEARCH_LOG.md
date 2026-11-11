@@ -35,7 +35,19 @@ commit as your result.
 
 - [ ] Q20 [compute] (A) **Native K4 residual collision test.** For D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact five-vacuum K4 with fixed Q6; determine whether fourth order separates the surviving non-parity joint K2–I3 collision. Do not fit inputs.
 
+- [ ] Q20 [derive] (C) **Photon identification on the incidence graph.** The incidence gauge field has (squares − 1) physical modes (59 on the icosahedron); 19 are ordinary link fluxes, 11 dual link fluxes. Decompose all 59 under A5, identify which combination couples to the Q96 charges, and state whether any A5-invariant kernel on it is forced. Source: `research_archive/2026-11-11_icosahedral_induced_photon/`.
+- [ ] Q21 [review] (C) **Independent review** of `HODGE_DIRAC_INDUCED_PHOTON_2026_11_11.md` items 1 and 3 with independent code, including an analytic (not finite-difference) Hessian.
+- [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
+
 ## Log
+
+### 2026-11-11 01:50 UTC — Claude — Gate C/E — Parameter-free photon kernel at the cochain vacuum
+- Task: compute the photon kernel around the matter-selected vacuum d1 d0 = 0 and compare with the exact 15 Tr M⁺ = 137.
+- Result: THEOREM (numerical certificates) plus a negative comparison — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: the sea-energy and log-det kernels are positive definite on all five solids (dual solids agree; tetrahedron exactly 1/8, 1/4, 3/8). Reduced to the icosahedron's 19 link-flux modes with the other incidence modes relaxed, K = 0.013755, 0.059279, 0.073655, 0.087843, 0.088735 on the M-levels 3−√5, 2, 3, 5, 3+√5; κ = K/M varies by a factor 1.75. 15 Tr K⁺ = 6541.40.
+- Evidence: checks `research.hodge_dirac_photon_kernel`, `research.hodge_dirac_19_mode_photon`; executed in Claude's sandbox.
+- Dead ends: the frozen reduction (not gauge invariant). No natural reading gives 137.036: 4πκ ≈ 0.21–0.37.
+- Next step: Q20.
 
 ### 2026-11-11 01:25 UTC — Claude — Gate A/C — d1 d0 = 0 is the flux vacuum selected by the matter
 - Task: find a parameter-free, symmetric vacuum for the induced photon. Plain vertex hopping fails: the 13-cell has 8 unstable modes at flat links and at least seven asymmetric minima (glassy; `CELL13_VACUUM_2026_11_11.py`).

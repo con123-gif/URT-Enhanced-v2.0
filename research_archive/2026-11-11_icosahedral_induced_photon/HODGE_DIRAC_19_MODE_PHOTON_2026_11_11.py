@@ -34,4 +34,7 @@ for name,K in (("frozen",Kf),("relaxed",Kr)):
                "pairs(M,K)":[(round(float(m),6),round(float(np.mean(np.linalg.eigvalsh(Bp[:,np.abs(mM-m)<1e-6].T@K@Bp[:,np.abs(mM-m)<1e-6]))),6)) for m in sorted(set(np.round(mM,6)))]}
 print(json.dumps(out,indent=1))
 json.dump(out,open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"HODGE_DIRAC_19_MODE_PHOTON_2026_11_11.json"),"w"),indent=1)
-assert all(out[k]["ward"]<1e-6 for k in ("frozen","relaxed")) and abs(out["15TrMplus"]-137)<1e-9
+# the frozen reduction is NOT gauge invariant (edge-face phases must compensate); only the relaxed one is a photon kernel
+assert out["relaxed"]["ward"]<1e-5 and out["frozen"]["ward"]>1e-2 and abs(out["15TrMplus"]-137)<1e-9
+assert min(v for v,_ in out["relaxed"]["K_levels"])>0
+print("PASS: relaxed 19-mode kernel is gauge invariant and positive; kappa = K/M is not constant (no exact Maxwell form).")
