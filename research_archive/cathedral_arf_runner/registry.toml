@@ -340,6 +340,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_arf_origin/CHAOS_INVARIANT_REFINEMENT_AUDIT_2026_11_11.py"
 timeout = 300
 
+[[check]]
+id = "research.hidden_parity_delta_selection"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_hidden_parity/HIDDEN_PARITY_DELTA_SELECTION_2026_11_11.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

@@ -1,0 +1,74 @@
+{
+  "hidden_parity": {
+    "4_3": -0.9999999999999996,
+    "4_5": 0.9999999999999998
+  },
+  "levels": {
+    "-0.000000": {
+      "dim": 1,
+      "parity": 0.9999999999999996
+    },
+    "0.763932": {
+      "dim": 3,
+      "parity": -1.0
+    },
+    "2.000000": {
+      "dim": 5,
+      "parity": 0.9999999999999998
+    },
+    "3.000000": {
+      "dim": 4,
+      "parity": -1.0000000000000004
+    },
+    "5.000000": {
+      "dim": 4,
+      "parity": 1.0000000000000002
+    },
+    "5.236068": {
+      "dim": 3,
+      "parity": -1.0000000000000002
+    }
+  },
+  "15TrLplus": {
+    "even": 49.5,
+    "odd": 87.49999999999996,
+    "total": 136.99999999999994
+  },
+  "a4_vacua": [
+    {
+      "singlet_3_is_tetrahedral_parity": true,
+      "singlet_5_is_cube_contrast": true,
+      "rank_P3_avA4_P3": 1,
+      "rank_P5_avA4_P5": 1
+    },
+    {
+      "singlet_3_is_tetrahedral_parity": true,
+      "singlet_5_is_cube_contrast": true,
+      "rank_P3_avA4_P3": 1,
+      "rank_P5_avA4_P5": 1
+    },
+    {
+      "singlet_3_is_tetrahedral_parity": true,
+      "singlet_5_is_cube_contrast": true,
+      "rank_P3_avA4_P3": 1,
+      "rank_P5_avA4_P5": 1
+    },
+    {
+      "singlet_3_is_tetrahedral_parity": true,
+      "singlet_5_is_cube_contrast": true,
+      "rank_P3_avA4_P3": 1,
+      "rank_P5_avA4_P5": 1
+    },
+    {
+      "singlet_3_is_tetrahedral_parity": true,
+      "singlet_5_is_cube_contrast": true,
+      "rank_P3_avA4_P3": 1,
+      "rank_P5_avA4_P5": 1
+    }
+  ],
+  "edge_shift_changes_history_plus_KMS_by": 0.0,
+  "edge_shift_changes_geometric_energy_by": 933.8550939403167,
+  "R_symmetry_history_energy_difference": 1.7053025658242404e-13,
+  "reduced_history_energy_even_in_Delta": 0.0,
+  "optimal_history_maps_by_R": 8.485224156606891e-19
+}

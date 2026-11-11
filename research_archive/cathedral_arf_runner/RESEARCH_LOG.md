@@ -41,6 +41,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 01:56 UTC — Claude — Gate C/F — Hidden parity: 4₃ odd, 4₅ even; the native action is even in Δ and its photon is free
+- Task: find where a Δ-linear α correction (the Δ polynomial's 17572/1215) could come from, using all five solids and the A4 vacua.
+- Result: THEOREM (exact representation theory) and OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: under central inversion 4₃ is odd and 4₅ even (W swaps them); 15 Tr L⁺ = 99/2 (even) + 175/2 (odd). In each A4 vacuum the 4₃ singlet is the tetrahedral parity vector and the 4₅ singlet the cube contrast 2·1_rest − 3·1_cube. The native photon (edge cochains) is free: history and KMS read vertex cochains only. R = I − 2U_hP₅U_hᵀ commutes with Hbits and S(z, y; Δ) = S(z, Ry; −Δ). So every z-observable is even in Δ and 15 Tr M⁺ = 137 is uncorrected; no native source exists for a Δ-linear term.
+- Evidence: `research.hidden_parity_delta_selection` (`research_archive/2026-11-11_hidden_parity/`); executed in Claude's sandbox (native file run verbatim to its first test block), CI pending.
+- Dead ends: 4₃–4₅ interference is parity-odd; the A5 mixture kills the cube-contrast channel; the native action cannot produce R_α.
+- Next step: a Δ-linear term needs a new coupling that reaches the edges and is odd under R. State the minimal such coupling compatible with gauge invariance, A4 and parity, or prove none exists.
+
 ### 2026-11-11 01:50 UTC — Claude — Gate F — The 2025 chaos-invariant survey is a refinement artifact; log timestamps corrected
 - Task: Con: "check my drive, everything is there". Read the unread Drive evidence for the ARFs and δ★ in full.
 - Result: REVIEW (executed audit of historical evidence) — no gate affected.
