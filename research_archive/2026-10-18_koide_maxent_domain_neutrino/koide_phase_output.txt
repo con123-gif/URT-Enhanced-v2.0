@@ -1,0 +1,27 @@
+==============================================================================
+TARGET  delta* = 0.222222047073 +- 4.0e-10  (Q = 2/3); physical arc 0 < delta < pi/12 = 0.261799
+STRUCTURE
+   on the Koide circle sum p = 1 and sum p^2 = 2/3 are fixed, so every symmetric function of the weights
+   depends on delta only through e3 = p_e p_mu p_tau = (sqrt2 cos3delta - 1)/54   (max error 2e-17)
+   phase target as one number: e3* = sqrt(m_e m_mu m_tau)/(sum sqrt m)^3 = 0.002063201522  (direct from data: 0.002063233)
+   electron: pi/12 - delta* = 0.039577341;  3 p_e = 0.040350090  -> the phase is the electron's share
+==============================================================================
+PRE-REGISTERED MECHANISMS
+   P1 max entropy of sqrt-mass weights                        delta = 0.000000001  -5.61e+08 sigma  FAIL (arc end delta=0: m_e = m_mu)
+   P2 max entropy of mass weights                             delta = 0.261799387  +9.99e+07 sigma  FAIL (arc end delta=pi/12: m_e = 0)
+   P3 spin-1/2 Bargmann phase, icosahedron face               delta = 0.104719755  -2.97e+08 sigma  FAIL 
+   P3 spin-1/2 Bargmann phase, dodecahedron face              delta = 0.174532925  -1.20e+08 sigma  FAIL 
+   P3 spin-1/2 Bargmann phase, cube face (octant)             delta = 0.261799388  +9.99e+07 sigma  FAIL (off the arc: a negative sqrt-mass)
+   P3 spin-1/2 Bargmann phase, tetrahedron face               delta = 0.523598776  +7.61e+08 sigma  FAIL (off the arc: a negative sqrt-mass)
+   P4 hierarchical max entropy, L=3, sites (e,mu,tau)              no root on the physical arc  FAIL
+      other site orderings: roots none; nearest |delta - delta*| = nan
+   P4 hierarchical max entropy, L=13, sites (e,mu,tau)              no root on the physical arc  FAIL
+      other site orderings: roots none; nearest |delta - delta*| = nan
+   P5(i) 3 delta = Q with Q = 2/3                             delta = 0.222222222  +4.42e+02 sigma  FAIL 
+   P5(ii) 3 delta = Q, Q free: Q = 0.6666665548 (-1.12e-07), m_tau = 1776.9670 MeV  +0.41 sigma  PASS  (not a derivation: the law itself is assumed)
+   P6 repo screening formula (2/9)(1 - (2/(5pi)) Delta^2/(1+Delta^2)) delta = 0.222222047  -4.10e-01 sigma  PASS (numerical match)
+   P6 look-elsewhere: needed coefficient c* = 0.127206 +- 0.000863 (3 sigma, 0.68%)
+      2275 simple constants (p/q) pi^a phi^b; inside the window: 4 -> [0.126651, 0.127322, 0.127324, 0.12751]
+      expected chance hits from their density near c*: 3.63
+==============================================================================
+RESULT: 2 of 11 pre-registered entries pass; derivations among them: 0

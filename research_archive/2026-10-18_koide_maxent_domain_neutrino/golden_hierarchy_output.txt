@@ -1,0 +1,15 @@
+target: 3 delta* = 0.666666141 rad = 38.197156 deg;  m_mu/m_e = 206.7682827, m_tau/m_mu = 16.8177
+A) golden powers, no Koide
+   m_mu/m_e          = phi^11.0795;  phi^11 =   199.005  (-3.8%)  FAIL
+   m_tau/m_mu        = phi^5.8653;  phi^6 =    17.944  (+6.7%)  FAIL
+   sqrt(m_mu/m_e)    = phi^5.5398;  phi^6 =    17.944  (+24.8%)  FAIL
+   sqrt(m_tau/m_mu)  = phi^2.9326;  phi^3 =     4.236  (+3.3%)  FAIL
+B) golden phase on the Koide circle (Q = 2/3)
+   B1 pi/5                      3delta =  36.0000 deg  m_mu/m_e =   109.885 (-2.1e+07 sigma)  m_tau =  1006.30 MeV  FAIL
+   B2 arctan(1/phi)             3delta =  31.7175 deg  m_mu/m_e =    43.628 (-3.5e+07 sigma)  m_tau =   454.09 MeV  FAIL
+   B3 arctan(1/phi^2)           3delta =  20.9052 deg  m_mu/m_e =     8.925 (-4.3e+07 sigma)  m_tau =   132.06 MeV  FAIL
+   B4 arccos(1/sqrt phi)        3delta =  38.1727 deg  m_mu/m_e =   205.126 (-3.6e+05 sigma)  m_tau =  1764.09 MeV  FAIL
+   B5 icosa 5-fold/3-fold       3delta =  37.3774 deg  m_mu/m_e =   160.323 (-1.0e+07 sigma)  m_tau =  1410.64 MeV  FAIL
+   B6 icosa 3-fold/3-fold       3delta =  41.8103 deg  m_mu/m_e =  1056.360 (+1.8e+08 sigma)  m_tau =  8201.29 MeV  FAIL
+   B7 arccos(1/(2 phi))         3delta =  72.0000 deg -> off the physical window (0, 45 deg)  FAIL
+   B8 golden angle 2pi/phi^2    3delta = 137.5078 deg -> off the physical window (0, 45 deg)  FAIL

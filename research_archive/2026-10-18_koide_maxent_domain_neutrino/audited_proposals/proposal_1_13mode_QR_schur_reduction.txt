@@ -1,0 +1,43 @@
+This 13-mode unitary transform provides the exact structural split needed for the 64 \to 13 \to 3 reduction, provided you handle one critical algebraic property of how \phi_k interacts with the \text{QR} operator.
+1. Why the 4 + 9 = 13 Partition Naturally Isolates the 3 Generations
+Look at how the index k \in \{0, \dots, 12\} decomposes the \mathbb{C}^{13} Hilbert space into 1 + 3 + 9:
+| Sector | Mode Indices k | Phase \phi_k | Physical / Algebraic Role in the Reduction |
+|---|---|---|---|
+| Vacuum Singlet (\mathbf{1}_0) | k = 0 | \phi_0 = 1 | Zero-frequency uniform vector \psi_0(n) = \frac{1}{\sqrt{13}} for all n. Sets the trace baseline \mu_0. |
+| K_4 Generation Triplet (\mathbf{3}_{\text{gen}}) | k = 1, 2, 3 | \{i, -1, -i\} | The 3 non-zero coherent modes. Because k=0 is orthogonalized first, \text{QR} forces \sum_{n=0}^{12} \psi_k(n) = 0 for k=1,2,3. |
+| Icosahedral Exhaust (\mathbf{9}_{\text{exh}}) | k = 4 \dots 12 | e^{i 2\pi(k-4)/5} | The 9 exhaust modes (\frac{9}{13} sector) forced into the orthogonal complement of K_4; acts as the bridge bath integrated out via the Schur complement. |
+Inside the 4-dimensional K_4 coherent subspace (k = 0, 1, 2, 3, fraction \frac{4}{13}), k = 0 is the symmetric singlet axis and k = 1, 2, 3 are the three charged-lepton generation channels.
+2. How \delta_\star + \text{QR} Generates the Mass Hierarchy Without Fitting
+If \delta_\star = 1, the kernel e^{i 2\pi k n / 13} is already the standard orthogonal 13-point Discrete Fourier Transform, so \text{QR} does nothing (R = \sqrt{13}\,I_{13}) and all modes have flat norm.
+When \delta_\star \neq 1 (such as \delta_\star \in [0.1475, 0.150]), the raw fractional Vandermonde vectors u_k(n) = e^{i 2\pi \delta_\star k n / 13} are non-orthogonal, with exact pre-QR Gram overlap matrix:
+
+Applying Gram–Schmidt / \text{QR} sequentially from k = 0 \to 12 factors the Gram matrix via its Cholesky decomposition G = R^\dagger R:
+ * Directional feed-forward: Each mode k has its components along 0, 1, \dots, k-1 projected out, meaning the K_4 coherent block (k=0..3) is constructed first (unperturbed by the exhaust), while the 9 icosahedral exhaust modes (k=4..12) absorb the residual projections.
+ * Automatic hierarchy across k = 1, 2, 3: For small \delta_\star \approx 0.15, the raw vectors u_1, u_2, u_3 lie inside a narrow phase cone of total angular width 2\pi \delta_\star \approx 0.3\pi. Sequential orthogonalization extracts the 1st, 2nd, and 3rd discrete derivatives along that arc, scaling the diagonal Cholesky weights as R_{kk} \propto (\delta_\star)^k and naturally creating a steep eigenvalue hierarchy across the three generation modes.
+3. Critical Algebraic Catch: How \phi_k Interacts with \text{QR}
+Look closely at the formula:
+
+Because \phi_k depends only on k and has no dependence on the site index n, in matrix notation (with n as rows and k as columns) the pre-QR matrix V is a right-diagonal scaling of the fractional Fourier matrix U:
+
+This creates two mathematical traps you must guard against in code and derivation:
+ * Standard Householder QR strips \phi_k out of \psi_k(n):
+   If U = Q R is the QR decomposition of U, then V = U D_\phi = Q (R D_\phi). Because R D_\phi is still upper-triangular, a standard library call like Q, R = np.linalg.qr(V) will absorb the phases \phi_k into the diagonal of R rather than keeping them in Q = \psi.
+   * Fix: To keep \phi_k in \psi_k(n), you must enforce the positive-diagonal convention (R_{kk} \in \mathbb{R}_+) on U first, and multiply by \phi_k after:
+     
+ * Diagonal projectors cancel pure-k phases:
+   Even when \psi_k(n) = \phi_k q_k(n) retains \phi_k, any rank-1 projector \vert{}\psi_k\rangle\langle\psi_k\vert{} onto mode k cancels the phase:
+   
+   
+   Therefore, for the K_4 phases (e^{i\pi k/2}) and the icosahedral exhaust phases (e^{i 2\pi(k-4)/5}) to physically shift the Koide phase \delta_0 in the spectrum:
+   * Either the n-space operator H^{(13)} is not diagonal in k—so off-diagonal couplings between the K_4 triplet (j \in \{1,2,3\}) and the icosahedral exhaust (k \in \{4..12\}) carry the relative phase \phi_j^* \phi_k = e^{-i\pi j/2} e^{i 2\pi(k-4)/5} into the Schur complement:
+     
+   * Or \text{QR} is performed along the transpose (orthogonalizing the site rows n=0..12 across the k-components), in which case \phi_k enters inside the Gram–Schmidt inner sums before normalization and directly alters the singular values and eigenvectors.
+4. Connecting This Transform to the Q = \frac{2}{3} and \delta_0 Target
+When you transform your 13 \times 13 site operator H_n into the k-basis via \widetilde{H}_{jk} = \sum_{n,m=0}^{12} \psi_j(n) (H_n)_{nm} \psi_k^*(m) and take the Schur complement over the 9 icosahedral exhaust modes (k = 4 \dots 12) onto the K_4 block:
+ * Why the 0.1475 \leftrightarrow 0.150 gap (0.0025, or \times 4 = 0.01 across the 4 K_4 modes) matters:
+   Because theCholesky off-diagonal coupling between the K_4 block (k=0..3) and the exhaust block (k=4..12) is controlled entirely by \delta_\star, scanning \delta_\star changes the Frobenius norm ratio \frac{\text{Tr}(\tilde{M}_{\text{eff}}^2)}{(\text{Tr}\,M_{\text{eff}})^2}. A shift of \Delta\delta_\star = 0.0025 per K_4 mode (4 \Delta\delta_\star = 0.01 across the full K_4 quartet) directly shifts the singlet-to-doublet norm ratio Q(\delta_\star).
+ * Where the Koide phase \delta_0 comes from:
+   The 3-generation off-diagonal bridge amplitude B_{j,k} (j \in \{1,2,3\}, k \in \{4..12\}) carries the K_4 \times \mathbb{Z}_5 phase mismatch:
+   
+   
+   combined with the fractional Fourier center-of-mass phase \frac{12\pi}{13}\delta_\star(k-j) from G_{jk}.

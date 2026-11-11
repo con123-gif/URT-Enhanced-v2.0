@@ -1,0 +1,12 @@
+reproduced: Q_u = 0.8490, Q_d = 0.7314, Q_ud = 0.7847, midpoint = 0.7902, ||Xu^-Xd^||^2 = 0.0110
+1) identity Q_ud = (Q_u+Q_d)/2 - ||Xu^-Xd^||^2/2 holds to 0.0e+00: the 'midpoint' is algebra, not physics
+   normalised diagonals: up [0.003 0.079 0.918], down [0.033 0.123 0.844]: both ~90% third generation
+2) commutator ||[Xu^, Xd^]|| = 3.59e-02: CKM misalignment is far too small to push Q_u up by 0.18
+3) aligned limit (V = I, operators commute): Q_u = 0.8490, Q_d = 0.7314 -> commuting does NOT give 2/3
+4) control: 20000 random hierarchical spectra (each step 3x-30x in sqrt-mass), same CKM:
+   |Q_ud - midpoint| median 0.0055; fraction at or below the quarks' 0.0055: 0.50
+5) the attachment's table claims I_ud = 27,232 MeV, Q_ud = 0.7866, D^2 = 0.0071, cos = 0.99945
+   bound over ALL mixing matrices (perfect alignment): I_ud <= 27214.7 MeV, Q_ud <= 0.7861, D^2 >= 0.0082
+   standard CKM: I_ud = 27165.2 MeV, Q_ud = 0.7847, D^2 = 0.0110, traceless cos = 0.99620
+   traceless cos from the attachment's own Q values: 1.00054  (above 1 is impossible)
+6) collinear counterexample X_d := X_u: det = 0.0e+00, Q = 0.8490  (claim: collinear forces 2/3)

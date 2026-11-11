@@ -1,0 +1,63 @@
+==============================================================================
+1) SPIN-1/2 THREE-RETURN ON THE CATHEDRAL ICOSAHEDRON  (axes: 6 five-, 10 three-, 15 two-fold)
+   generations = spinor along axis n carried round a 3-fold axis m by the SU(2) lift of the A4 3-cycle
+   theorem: Q = (1 + cos^2 theta)/2, theta = angle(n, m)        max error 4.4e-16
+   reference axis     angle  pairs          Q    |det G|
+   2-fold           90.0000     30   0.500000    3.0e-16
+   5-fold           79.1877     30   0.517595    2.4e-16
+   3-fold           70.5288     60   0.555556    1.9e-16
+   2-fold           69.0948     30   0.563661    3.7e-16
+   2-fold           54.7356     60   0.666667    2.2e-16  <- Koide 2/3
+   3-fold           41.8103     30   0.777778    1.4e-16
+   5-fold           37.3774     30   0.815738    1.2e-16
+   2-fold           20.9052     30   0.936339    3.2e-17
+   => Q = 2/3 exactly for, and only for, a 2-fold axis at the magic angle arccos(1/sqrt3) = 54.7356 deg:
+      the reference spinor sits on an axis of one of the five inscribed cubes; the 3-cycle runs its 3 axes
+   cube triad: |<g_j|g_k>|^2 = 0.500000000000  eigenvalues [-0.         0.6339746  2.3660254]
+      = {0, (3-sqrt3)/2, (3+sqrt3)/2};  Q = 0.666666666666667;  delta = 0.261799387799 (pi/12 = 0.261799387799)
+   prediction: m_e = 0,  m_mu/m_tau = 7-4sqrt3 = 0.071797   measured 0.059461 (+20.7%)
+==============================================================================
+2) WHICH SPIN?  spin-j coherent states on the cube triad: overlaps are spin-1/2 overlaps^(2j)
+   j = 1/2:  Q = 0.6666666667   (1/3 + (2/3) 4^-j = 0.6666666667)
+   j = 2/2:  Q = 0.5000000000   (1/3 + (2/3) 4^-j = 0.5000000000)
+   j = 3/2:  Q = 0.4166666667   (1/3 + (2/3) 4^-j = 0.4166666667)
+   j = 4/2:  Q = 0.3750000000   (1/3 + (2/3) 4^-j = 0.3750000000)
+   j = 5/2:  Q = 0.3541666667   (1/3 + (2/3) 4^-j = 0.3541666667)
+   j = 6/2:  Q = 0.3437500000   (1/3 + (2/3) 4^-j = 0.3437500000)
+   => only spin-1/2 gives the Koide sqrt2 on orthogonal axes
+==============================================================================
+3) WHAT THE SAME STRUCTURE DOES TO THE PHASE
+   any spin-1/2 three-return Gram is rank 2: max |det G| over all axis pairs = 3.7e-16  -> one massless generation
+   Bargmann phase of the cube triad: Phi = 3 delta = pi/4 = 0.785398163397
+   needed: Phi* = 3 delta* = 0.666666141219;  gap pi/4 - Phi* = 0.118732022178 rad
+   on the Koide circle, sqrt(m_e)/sum sqrt(m) = (1 + sqrt2 cos(delta + 2pi/3))/3 = 0.013450; zero at delta = pi/12
+   so pi/12 - delta* = 0.039577 ~ 3 x 0.013450 = 0.040350: the missing phase IS the electron mass
+   mixing spinor triads to reach delta*: best Q = 0.660217 (optimised 2-mixes); random 2-4-mixes within 5e-4 of delta*: max Q = 0.657232
+      measured Q = 0.66666446 +- 5.1e-06  -> shortfall 1269 sigma: mixing cannot give the electron its mass
+==============================================================================
+4) SECOND ROUTE: equipartition between two complex modes (phase left free)
+   weight exp(-k/2 ||X||_F^2), trace part and traceless part each one complex mode with any scale factor
+   dims (2,2), random scales/k: Q = 0.6666666660   (theory 1/3 + (d1-1)/(3(d0-1)) = 0.6666666667)
+   dims (3,3), random scales/k: Q = 0.6666666723   (theory 1/3 + (d1-1)/(3(d0-1)) = 0.6666666667)
+   dims (4,4), random scales/k: Q = 0.6666666659   (theory 1/3 + (d1-1)/(3(d0-1)) = 0.6666666667)
+   dims (1,2) [Hermitian circulant: real trace mode]: no interior mode, trace radius -> 0
+   dims (4,3), random scales/k: Q = 0.5555555588   (theory 1/3 + (d1-1)/(3(d0-1)) = 0.5555555556)
+   => Q = 2/3 for every coupling and scale iff the two modes have equal dimension; delta is flat
+   H64 period field (18 dims) under the clock U (Z12 = Z3 x Z4), multiplicity by k (eigenvalue e^(i k pi/6)):
+      {0: 1, 1: 1, 2: 2, 3: 2, 4: 2, 5: 1, 6: 1, 7: 1, 8: 2, 9: 2, 10: 2, 11: 1}  ;  invariant: 5e-15
+      Z3-singlets k=3,9 are complex (U = +-i), Z3-doublets k=1,2,4,5,... are complex: both modes exist in H64
+      selected vacuum P*: weight in k=0 sector 1.000000000000000 (all of it)
+      missing: an H64 map from these modes to the charged-lepton sqrt-mass operator
+==============================================================================
+5) WHAT FIXES THE PHASE
+   real cubic term g|s|^3 cos3delta : minimum at delta = 0 or pi/3 (two equal masses)
+   complex cubic coupling g e^(-i beta) s^3 : delta = beta/3, needs beta = 0.666666141219 rad, an input
+   law 3delta = Q with Q = 2/3      : delta = 2/9, 1.751e-07 rad off = 442 sigma
+   spinor cube (section 1)           : delta = pi/12 = 0.261799, m_e = 0
+==============================================================================
+SUMMARY
+   sqrt2 : DERIVED two ways with no fitted number:
+           (a) spin-1/2 three-return on an inscribed-cube axis (unique axis, unique spin) -> Q = 2/3 exactly
+           (b) equipartition of two complex modes, isotropic weight -> Q = 2/3 for any coupling
+   phase : NOT DERIVED. (a) forces delta = pi/12 and m_e = 0, and no mixture can repair it within data;
+           (b) leaves delta flat. The phase needs one more input: beta = 3 delta* = 0.666666141 rad.

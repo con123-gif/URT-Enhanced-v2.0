@@ -1,0 +1,4 @@
+target delta* = 0.222222047073 +- 4.0e-10
+   F1 Fisher centre, sqrt-mass weights    delta = 0.178266015845  off -4.396e-02 (-1.1e+08 sigma)  m_mu/m_e = 35.9636  FAIL
+   F2 Fisher centre, mass weights         delta = 0.130899693900  off -9.132e-02 (-2.3e+08 sigma)  m_mu/m_e = 10.8822  FAIL
+   F3 Gibbs over generation index: ratio 0.208712 per step; sum p^2 = 0.666666666667; delta = 0.162232; m_mu/m_e = 22.96, m_tau/m_mu = 22.96  FAIL (measured 206.77, 16.82)

@@ -1,0 +1,11 @@
+target  delta* = 0.222222047073 +- 3.96e-10   (needs 2/9 - delta* = 1.7515e-07)
+framework Delta = 3/20 - 80pi/(1053 phi) = 0.0024891898   (attachment uses 0.0025)
+   attachment, Delta rounded to 0.0025    delta = 0.222222048611  off +1.538e-09 rad = +3.9 sigma;  m_mu/m_e = 206.7683006 (+3.9 sigma)
+   framework's exact Delta                delta = 0.222222050109  off +3.036e-09 rad = +7.7 sigma;  m_mu/m_e = 206.7683179 (+7.7 sigma)
+   the attachment's '7e-9 precision' is the relative size of the miss; the measurement allows 1.8e-9
+   Delta = 0.0025: needed divisor 35.684 +- 0.242 (3 sigma); 36 is +3.9 sigma; products of Cathedral integers in window: []
+   Delta = exact: needed divisor 35.376 +- 0.240 (3 sigma); 36 is +7.8 sigma; products of Cathedral integers in window: []
+Z5 channel multiplicities of the 9 exhaust labels: [2, 2, 2, 2, 1]  -> weights [0.22222222 0.22222222 0.22222222 0.22222222 0.11111111]
+   phi_k multiplies whole rows: shown last turn that it changes no spectrum (1e-12), so this count is not dynamical
+   phase = w (radians), as asserted       delta = 0.222222 -> folded 0.222222  (on the physical arc)
+   Peierls/holonomy phase 2 pi w          delta = 1.396263 -> folded 0.698132  (off the physical arc)

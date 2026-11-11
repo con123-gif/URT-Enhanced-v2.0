@@ -1,0 +1,9 @@
+(1) logistic map x -> r x(1-x): every period-3 orbit in the period-3 window, points as sqrt-masses
+    max Q anywhere = 0.4696 (Koide 2/3);  max largest/smallest = 6.72 (leptons need sqrt(m_tau/m_e) = 59.0)
+    bound: a logistic orbit lies in [r^2(4-r)/16, r/4]; at r = 3.8417 that is [0.148, 0.960], ratio <= 6.5
+(2) URT edge rule on the phase window: walls delta = 0 (m_e = m_mu) and delta = pi/12 (m_e = 0)
+    actual position: delta* sits a fraction 0.151174 of the window in from the m_e = 0 wall
+    wall itself (pure edge)            delta = pi/12 -> m_e = 0 exactly
+    delta_cl = 0.15                    delta = 0.222529480  off +3.07e-04 rad (+7.8e+05 sigma)  m_mu/m_e =   210.381  (measured 206.768)
+    delta_star = (80/81)pi/(13 phi)    delta = 0.223181148  off +9.59e-04 rad (+2.4e+06 sigma)  m_mu/m_e =   218.337  (measured 206.768)
+    midpoint C                         delta = 0.222855420  off +6.33e-04 rad (+1.6e+06 sigma)  m_mu/m_e =   214.308  (measured 206.768)

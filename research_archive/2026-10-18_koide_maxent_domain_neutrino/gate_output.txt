@@ -1,0 +1,57 @@
+==============================================================================
+0) TARGETS  (CODATA 2022 m_e, m_mu/m_e; PDG 2026 m_tau)
+   measured Q            = 0.66666446 +- 5.1e-06   (2/3 is 0.43 sigma away)
+   measured delta (Lode) = 0.22222476 +- 6.3e-06 rad   (no Koide assumed)
+   delta* (Q=2/3 exact)  = 0.222222047073 +- 4.0e-10
+   2/9 - delta*          = 1.751e-07  = 442 sigma  -> exact 2/9 with exact Q=2/3 excluded
+   Koide m_tau from e,mu = 1776.969 MeV  (+0.43 sigma vs PDG)
+   ratios to hit         : m_mu/m_e = 206.7682827,  m_tau/m_e = 3477.37 +- 0.18
+==============================================================================
+1) EXACT IDENTITIES (any Hermitian 3x3 sqrt-mass operator X; checked numerically)
+   T1  Q = 1/3 + ||X~||^2 / (3 ||Xbar||^2)          max error 1.6e-14
+       => Q = 2/3  <=>  traceless norm = trace norm  (r = sqrt2 is this equality)
+   T2  Lode angle of the Koide spectrum at delta*    0.222222047073 (= delta*)
+   T3  Gamma = (k/2) Tr X^2 - c0 ln Tr X - c1 ln ||X~||  stationary  =>  Q = 1/3 + c1/(3 c0), delta flat
+       c0=1 c1=1 k=0.7:  Q = 0.6666666668  (theory 0.6666666667),  delta over starts 0.078..0.712
+       c0=1 c1=2 k=2.3:  Q = 0.9999999977  (theory 1.0000000000),  delta over starts 0.136..1.007
+       c0=2 c1=1 k=1.1:  Q = 0.5000000003  (theory 0.5000000000),  delta over starts 0.049..1.028
+       c0=4 c1=4 k=5.0:  Q = 0.6666666699  (theory 0.6666666667),  delta over starts 0.247..1.024
+       c0=3 c1=5 k=1.0:  Q = 0.8888888884  (theory 0.8888888889),  delta over starts 0.010..0.181
+       => r = sqrt2 exactly when the two log weights are equal (c0 = c1); delta needs a separate term
+   T4  sqrt-mass = Gram(phi, T phi, T^2 phi), T^3 = 1:  Q = 1/3 + (2/3)|<phi|T phi>|^2,  cos3delta = cos(3 arg<phi|T phi>)
+       max errors 4.4e-16, 1.2e-14  => Koide <=> three-return survival probability = 1/2, phase = return phase
+   T5  real T, real phi -> Gram eigenvalues [0.21685  1.391575 1.391575]: a degenerate pair, delta in {0, pi/3}
+==============================================================================
+2) ACTUAL H64: re-select the vacuum from the restored period action (no archived vacuum used)
+   decoder rank 18;  |grad| = 1.7e-08;  Hessian min eig = 2.4462;  |P - archived P| = 4.4e-09
+   e-type singular values (all 12 clock steps equal to 7e-16): [1.93163754 1.35166225 0.67095748]
+   reading                                          Q       r    delta   m_mu/m_e  m_tau/m_e
+   measured                                  0.666664  1.4142  0.22222    206.768     3477.4
+   sigma as sqrt-mass (Yukawa amplitude)     0.384263  0.5528  0.56970      4.058      8.288
+   sigma as mass                             0.347858  0.2952  0.64068      2.015      2.879
+   golden lower eigenvalue as sqrt-mass      0.420647  0.7238  0.54865      7.810     19.715
+   K64 Feshbach poles as sqrt-mass           0.537037  1.1055  0.42743     79.772    401.817
+   K64 Feshbach poles as mass                0.418267  0.7139  0.60642      8.932     20.045
+==============================================================================
+3) WHY IT FAILS (each item computed from the restored H64)
+   a) e source at Delta->0: sigma^2 = {5/3, (13+-sqrt105)/6}  (error 4.0e-15);  Q = 9(13-sqrt105)/64 = 0.387148
+      with rail Delta: Q(x=0) = 0.387148  ->  selected vacuum Q = 0.384263  (|x*| = 0.1151)
+      fermion-loop sign (-ln det), 21 starts: every minimum has Q in [0.3345, 0.3747] (lowest action: Q = 0.3345)
+      -> per-eigenvalue log-dets pull the spectrum toward degeneracy, Q = 1/3
+      the action has no term that weights trace and traceless sectors separately (T3 needs c0 = c1)
+   b) equal-size pair 4_3 (+) 4_5: radial logs c0 = c1 = 3 would give Q = 2/3 only if stiffness were equal;
+      H64 D on quartets = 1.732051, 2.236068 (sqrt3, sqrt5).  Radial modes give
+      D^2 stiffness : Q = 0.533333 or 0.888889   (2/3 needs ratio 1, H64 has 1.6667)
+      D stiffness   : Q = 0.591532 or 0.763665   (2/3 needs ratio 1, H64 has 1.2910)
+   c) selected-history polar return: max ||U_ret - I|| = 1.6e-14;  4-step transport ||T - I|| = 2.1e-15
+      -> no complex order-3 generation map on the amplitude sector at the vacuum
+      three-return U^4 on histories: real, eigen-angles {-120.0: 20, 0.0: 24, 120.0: 20}
+      three-return Gram of selected history P* : eigenvalues [0. 0. 3.]  (T5: pair)
+      three-return Gram of e-loaded history    : eigenvalues [0.006608 1.496696 1.496696]  (T5: pair)
+   d) hidden bridge: sum ||K_35||_F^2 = 2/9 is a squared norm; as a phase with exact Q it is 442 sigma off
+==============================================================================
+4) GATE (selected H64 vacuum, e-type eigenvalues as sqrt-masses; every other reading in section 2 also fails)
+   R1  Q = 2/3 (r = sqrt2)        : FAIL   Q = 0.384263, r = 0.5528
+   R2  phase = measured           : FAIL   delta = 0.569697 vs 0.222225
+   R3  three masses               : FAIL   m_mu/m_e = 4.058 vs 206.768; m_tau/m_e = 8.288 vs 3477.4
+   VERDICT: NOT DERIVED by the restored H64 dynamics

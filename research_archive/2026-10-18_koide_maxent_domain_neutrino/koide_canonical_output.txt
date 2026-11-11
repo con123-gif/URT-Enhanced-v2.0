@@ -1,0 +1,25 @@
+==============================================================================
+1) HOW MANY BASIS-FREE SECTORS? (number of irreducible pieces = mean of |character|^2)
+   U(3) flavour rotations acting on the 3x3 sqrt-mass operator: E|Tr U|^4 = 2.0022  -> 2 pieces (trace, traceless)
+   S3 relabelling of the 3 generations: mean chi^2 = 2.0000 -> 2 pieces (democratic, standard)
+   Z3 alone over the complex numbers: mean chi^2 = 3.0000 -> 3 pieces (but for a real sqrt-mass vector the two non-trivial ones are complex conjugates: P_w = P_wbar always)
+==============================================================================
+2) IS A PER-MODE SPLIT BASIS-FREE? (rotate generations, recompute)
+   power fraction in one traceless mode: ranges 0.0000 .. 0.0865 under flavour rotation  (not basis-free)
+   power fraction in the trace sector:  ranges 0.879441892758 .. 0.879441892758  (basis-free)
+   => for one configuration, the only basis-free data are the two sector powers; per-mode counting does not exist
+==============================================================================
+3) MAX ENTROPY ON THE ONLY BASIS-FREE DATA
+   maximum of H(p, 1-p) at p = 0.500000  ->  Q = 1/(3p) = 0.666667  (exact identity Q = 1/(3p))
+   leptons: democratic part of the sqrt-mass amplitude carries 0.5000017 +- 3.8e-06 of the total mass
+==============================================================================
+4) SAME PRINCIPLE, A STATE INSTEAD OF A CONFIGURATION (your 4:9)
+   max-entropy state on the 13-mode shell, weight of the 4-mode sector = 0.307692 = 4/13
+   a state's basis-free data are sector traces (weights by dimension); a configuration's are sector powers
+   (one weight per irreducible sector). One principle, two kinds of object: 4:9 and Koide do not conflict.
+==============================================================================
+5) TEST: THE SAME RULE APPLIED TO QUARKS (PDG masses, MeV; scheme-dependent)
+   u, c, t     Q = 0.8488   democratic fraction = 0.3927
+   d, s, b     Q = 0.7313   democratic fraction = 0.4558
+   e, mu, tau  Q = 0.6667   democratic fraction = 0.5000
+   the rule holds for leptons only; quarks need a reason it does not apply to them

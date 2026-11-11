@@ -1,0 +1,14 @@
+CKM unitarity check: 5.8e-17
+1) Can CKM misalignment move Q_u or Q_d?
+   Q_d = 0.731288; after CKM rotation 0.731288; max change over 10000 random rotations 5.6e-16
+   -> no. Q depends only on the spectrum; any rotation leaves it unchanged
+2) The attachment's joint object X_tot = X_u + V X_d V^dagger: does it sit at Q = 2/3?
+   with CKM         Q_tot = 0.8304   cross-trace Tr(X_u X_d) = 27166.1
+   aligned (V = I)  Q_tot = 0.8308   cross-trace Tr(X_u X_d) = 27215.6
+   -> 0.83, not 2/3: the data violate the condition the attachment builds on
+3) Natural joint max entropy (isospin-symmetric pair: trivial vs traceless over both operators)
+   it requires sum_s (Tr X_s)^2 (Q_s - 2/3) = 0, i.e. weighted mean Q = 2/3 (deviations of opposite sign)
+   data: Q_u - 2/3 = +0.1821, Q_d - 2/3 = +0.0646 (same sign); weighted mean Q = 0.8455
+4) The quoted 'matches'
+   Delta Q_d / Delta Q_u = 0.3548;  (Tr X_d/Tr X_u)^(3/4) = 0.2637;  sin theta_C = 0.2256
+   -> three different numbers; the attachment calls them a match
