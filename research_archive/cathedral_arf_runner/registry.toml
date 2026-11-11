@@ -487,6 +487,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q30_twirled_all_order_spectrum/q30_twirled_all_order_spectrum.py"
 timeout = 300
 
+[[check]]
+id = "research.q31_rational_similarity"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q31_rational_similarity/q31_rational_similarity.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
