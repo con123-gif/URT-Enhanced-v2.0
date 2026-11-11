@@ -388,6 +388,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q23_photon_gauge_typing/Q23_PHOTON_GAUGE_TYPING_2026_11_11.py"
 timeout = 300
 
+[[check]]
+id = "research.q3_twirled_chronology_classes"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q3_twirled_chronology_classes/Q3_TWIRLED_CHRONOLOGY_CLASSES_2026_11_11.py"
+timeout = 600
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
