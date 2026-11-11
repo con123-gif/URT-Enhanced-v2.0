@@ -22,7 +22,7 @@ commit as your result.
 
 - [x] Q11 [compute] (A) **Signed A5 covariance.** Construct the induced signed six-axis transformations from the 60 proper icosahedral rotations, transport the five A4 vacua simultaneously, and test exact invariance of the five K₂ multiset under all 60 transformations on the native source. Record exact counterexamples if covariance fails. — GPT 2026-11-10: THEOREM + OBSTRUCTION (Signed A5 covariance and fixed-Q obstruction)
 - [x] Q12 [compute] (A) **Signed axis dictionary classes.** Enumerate the 768 signed six-axis dictionaries modulo proper A5; evaluate exact five-vacuum K₂ spectra for one representative per orbit and count collisions. Keep the original fixed Q and distinguish passive joint covariance from active Q symmetry. — GPT 2026-11-10: OBSTRUCTION (Signed dictionary quotient and native K₂ collisions)
-- [ ] Q13 [repair] **Companion copies of existing intermediates.** For the three remaining missing_file scripts whose missing basename or near-name already exists in the archive — `golden_species_operators.npz` (three byte-identical copies), `run_endpoint_test.py` (at `research_archive/run_endpoint_test.py`, with other `full_library/` names at archive root) and `joint_original_h64_species_link_source.npz` (same directory as the consumer) — test whether a byte-identical companion copy at the path the consumer actually opens unblocks that script. Do not invent file contents.
+- [x] Q13 [repair] **Companion copies of existing intermediates.** For the three remaining missing_file scripts whose missing basename or near-name already exists in the archive — `golden_species_operators.npz` (three byte-identical copies), `run_endpoint_test.py` (at `research_archive/run_endpoint_test.py`, with other `full_library/` names at archive root) and `joint_original_h64_species_link_source.npz` (same directory as the consumer) — test whether a byte-identical companion copy at the path the consumer actually opens unblocks that script. Do not invent file contents. — Claude 2026-11-11: 2 of 3 unblocked by byte-identical copies; the third needs `urt_gate2_solution.npz`, written only by the Torch solver and never archived (log: "Q13: companion copies")
 
 - [x] Q14 [compute] (A) **Third cumulant collision test.** For signed dictionaries (0,2,4,6,8,10) and (0,2,5,6,9,11), calculate the five native A4 K₃ rates by the exact Q6 tilted-transfer/Poisson recursion and determine whether their multisets differ without fitted inputs.
 
@@ -42,6 +42,14 @@ commit as your result.
 - [ ] Q24 [compute] (A) **Fifth cumulant residual test.** For Q20's native non-parity dictionaries D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact joint five-vacuum K5 sign/scale invariant (K5²/r2⁵) using fixed Q6; test whether order five separates them, and if not identify a possible exact conjugacy of their tilted transfers.
 
 ## Log
+
+### 2026-11-11 02:32 UTC — Claude — Archive — Q13: companion copies unblock two scripts; the third needs an unarchived Torch output
+- Task: Q13 (my lane was empty).
+- Result: REPAIR (2 of 3) and OBSTRUCTION (1 of 3).
+- Statement: `golden_species_operators.npz` (byte-identical to three archived copies) unblocks `2026-10-17_h64_quadratic_koide_phase/urt_h64_quadratic_phase_derivation.py`; `original_h64_species_link_source.npz` (byte-identical to `joint_original_h64_species_link_source.npz`, same folder, archiving prefix) unblocks `2026-10-17_source_h64_joint_flux/joint_urt_h64_joint_holonomy_and_mass.py`, whose own checks pass. `URT_Nature_Checkpoint_2026-08-25/urt_blocked_numpy_compat.py` needs a `full_library/` with `urt_gate2_solution.npz` (written only by the Torch `urt_gate2_solver.py`, never archived) and `urt_seed_geometry_matrices.npz` (producible by `urt_seed_geometry_audit.py`); it is not restorable without inventing content.
+- Evidence: both consumers exit 0 in Claude's sandbox; companion notes beside each copy. The sweep re-executes them.
+- Dead ends: no copy was made for the third target.
+- Next step: none for Q13.
 
 ### 2026-11-11 02:26 UTC — Claude — Gate A — Q7: independent review of the Q⁶ cumulant and A5 mixing theorems (AGREE)
 - Task: Q7 (my lane was empty).
