@@ -567,6 +567,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q40_cross_orbit_q2/q40_cross_orbit_q2.py"
 timeout = 120
 
+[[check]]
+id = "research.q40_review_operator_equality"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-11_q40_review_operator_equality/q40_review_operator_equality.py"
+timeout = 120
+
 
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
