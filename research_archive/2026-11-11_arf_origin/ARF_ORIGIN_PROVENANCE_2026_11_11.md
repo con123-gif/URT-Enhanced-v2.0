@@ -81,3 +81,9 @@ dynamics, not from that survey. Status: REVIEW of historical evidence (executed)
   one of the two, and keep those within 2e-6 or 5e-7 of the frozen residue TARGETS. Its "URT attractor" cell calls
   `simulate_attractor` and `cluster_centers`, which are not defined anywhere in the notebook. (Read, not executed.)
 Consequence: confirms Con's account that the closures were found by algebra matching against measured targets.
+
+## Prior archive statement (found 2026-11-11 during the Q4 preflight; should have been cited above)
+The canonical v61 source (`2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py`, list
+`DO_NOT_RESURRECT`) already forbids "the fitted alpha_EM arithmetic as a derived physical prediction", "a single cube/Klein
+four as the A5 irrep 4" and "A4 roots and icosahedral face centres as the same Euclidean shell". The Drive findings above
+agree with and extend that October statement; they are not its first appearance.

@@ -1,0 +1,23 @@
+{
+  "v61_site_graph": {
+    "sites": 48,
+    "simple_edges": 456,
+    "slices": 6,
+    "slice_graph": "cube Q3",
+    "between_consecutive_slices": "complete K_{8,8}",
+    "Aut_C6": 12,
+    "Aut_Q3": 48,
+    "order_5_automorphisms_possible": false
+  },
+  "arrays_total": 136,
+  "arrays_joining_wilson_to_registry_geometry_or_history": [
+    "micro:conditional_neutral_tensor_sum_energies"
+  ],
+  "tensor_sum_is_Kronecker_sum_of_spectra": true,
+  "End4_gauge_geometry_split": {
+    "orthonormal_complement": true,
+    "max_mixing_under_A5": 9.879946672685909e-16
+  },
+  "history_to_registry": "Yukawa samples Ys = loaded_amplitudes[:,0], shape (4,3,3)",
+  "TrQ96^2": 32.0
+}

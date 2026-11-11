@@ -11,6 +11,9 @@ first test block). Executed in Claude's sandbox 2026-11-11; registered as `resea
 - The native action: `2026-11-07_joint_interacting_native/cathedral_constructed_joint_dynamics_2026_11_07.py`.
 - "The 7 November action contains no vertex-to-spatial-edge charged coupling": `docs/RESEARCH_STATE.md` §3.
 - Hidden-sector links, tr(P₃P_c) = tr(P₅P_c) = 1: `2026-11-11_hidden_sector_link/`.
+- v61 `DO_NOT_RESURRECT` forbids "a single cube/Klein four as the A5 irrep 4". Consistent with statement 3 below: a cube's
+  A4 singlets are rank one in each of 4₃ and 4₅; no cube is identified with an irrep here. v61's "A4 root lattice" is the
+  Lie-type root system of its Wilson stencil, a different object from the tetrahedral subgroup A4 ⊂ A5 used here.
 
 ## Statements
 1. **Parity of the hidden sector.** Central inversion permutes the 20 icosahedral faces (dodecahedral vertices) and
