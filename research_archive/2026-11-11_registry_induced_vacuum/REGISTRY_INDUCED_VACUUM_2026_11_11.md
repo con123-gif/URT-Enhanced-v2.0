@@ -19,5 +19,7 @@ c_s = 3q_s. Q4 showed the archive defines no other join of registry and lattice.
    into 18 classes (near 0, 0.42, 0.50, 0.58, 0.92, 0.996).
 Census evidence only; the lowest point found is not claimed to be the global minimum.
 
-**Next question.** Is the physical Hessian at this registry vacuum Maxwell-like (proportional to a loop-flux form)? For one
-charge at θ* it is not (residual 86–88 %, `2026-11-10_induced_photon/`).
+**Maxwell test (answered, `REGISTRY_MAXWELL_TEST_2026_11_11.py`).** The physical Hessian at the registry vacuum is not
+proportional to any loop-flux form: residual 86.3 % (triangles), 88.1 % (four-cycles), 88.0 % (both); the generalized
+coupling spectrum spans 0.078–18.1 (triangles) and 0.0024–1.06 (both). As for one charge at θ*, the v61 lattice with the
+full registry defines no photon coupling, and nothing near 137.

@@ -1,0 +1,29 @@
+{
+  "triangles": {
+    "rank_M": 480,
+    "kappa_min": 0.078206867684573,
+    "kappa_median": 0.5875251938008419,
+    "kappa_max": 18.14928271852117,
+    "kappa_HS": 3.1517282082311855,
+    "kappa_HS_per_unit_charge2": 0.010943500723024949,
+    "relative_residual": 0.8633642921670993
+  },
+  "four_cycles": {
+    "rank_M": 480,
+    "kappa_min": 0.002510792162115774,
+    "kappa_median": 0.018861393084211805,
+    "kappa_max": 1.1301662613226617,
+    "kappa_HS": 0.16553934878174972,
+    "kappa_HS_per_unit_charge2": 0.0005747894054921865,
+    "relative_residual": 0.8814854083267946
+  },
+  "triangles_and_four_cycles": {
+    "rank_M": 480,
+    "kappa_min": 0.0024336028334371804,
+    "kappa_median": 0.01807395616606751,
+    "kappa_max": 1.059531222142391,
+    "kappa_HS": 0.15834278979257327,
+    "kappa_HS_per_unit_charge2": 0.0005498013534464349,
+    "relative_residual": 0.8797267582549514
+  }
+}

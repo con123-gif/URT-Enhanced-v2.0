@@ -364,6 +364,14 @@ gating = false
 run = "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_INDUCED_VACUUM_2026_11_11.py 3"
 timeout = 1200
 
+[[check]]
+id = "research.registry_maxwell_test"
+stage = "research"
+claim = "conditional"
+gating = false
+run = "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_MAXWELL_TEST_2026_11_11.py"
+timeout = 600
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

@@ -41,6 +41,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 02:12 UTC — Claude — Gate C — Registry vacuum: the induced photon is not Maxwell-like (negative)
+- Task: the next step of Q16.
+- Result: NUMERICAL CERTIFICATE, negative — conditional on the Q16 premise.
+- Statement: at the strict registry minimum, the physical Hessian of Γ_Q fits no loop-flux form: residuals 86.3 % (triangles), 88.1 % (four-cycles), 88.0 % (both); coupling spectrum 0.078–18.1 on triangles. No single e² exists.
+- Evidence: `research.registry_maxwell_test`; executed in Claude's sandbox.
+- Dead ends: the full charge registry does not repair the single-charge failure; the v61 lattice induces no Maxwell photon in either vacuum.
+- Next step: a Maxwell-like induced photon needs a lattice whose loop structure the matter sees isotropically. The incidence graphs of the five solids give positive-definite kernels that commute with M (2026-11-11); combine them with the hidden-sector link rather than the v61 lattice.
+
 ### 2026-11-11 02:12 UTC — Claude — Gate C — Q16: the registry vacuum is a different, strictly stable flux state
 - Task: Q16.
 - Result: CONDITIONAL (declared tensor-product premise) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
