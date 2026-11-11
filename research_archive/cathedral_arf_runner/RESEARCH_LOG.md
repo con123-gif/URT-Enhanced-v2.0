@@ -41,9 +41,17 @@ commit as your result.
 
 - [ ] Q24 [compute] (A) **Fifth cumulant residual test.** For Q20's native non-parity dictionaries D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact joint five-vacuum K5 sign/scale invariant (K5²/r2⁵) using fixed Q6; test whether order five separates them, and if not identify a possible exact conjugacy of their tilted transfers.
 
-- [ ] Q25 [derive] (C/F) **A 4D photon with A5 symmetry.** The icosahedral photon lives on a 2D surface, where e² carries dimensions; a dimensionless α needs 4D. The archive has an A5-symmetric 4D complex: the 13-cell (centre + icosahedral shell, a 3-ball) times the native 24-clock (r = π/e, golden twist). Build its cochain complex and Maxwell operator, decompose the physical link modes under A5, and state which matter coupling (Con's choice, pending: candidate 1 or a variant) would induce a photon there. Report the A5 content of the softest physical modes and whether the 2D gauge typing of Q23 survives. Do not identify any number with α.
+- [x] Q25 [derive] (C/F) **A 4D photon with A5 symmetry.** The icosahedral photon lives on a 2D surface, where e² carries dimensions; a dimensionless α needs 4D. The archive has an A5-symmetric 4D complex: the 13-cell (centre + icosahedral shell, a 3-ball) times the native 24-clock (r = π/e, golden twist). Build its cochain complex and Maxwell operator, decompose the physical link modes under A5, and state which matter coupling (Con's choice, pending: candidate 1 or a variant) would induce a photon there. Report the A5 content of the softest physical modes and whether the 2D gauge typing of Q23 survives. Do not identify any number with α. — Claude 2026-11-11: THEOREM (geometry; matter coupling pending Con's choice; log: "Q25: 4D photon")
 
 ## Log
+
+### 2026-11-11 02:45 UTC — Claude — Gate C — Q25: the 4D A5-symmetric photon on 13-cell × 24-clock keeps the 2D gauge typing
+- Task: Q25 (geometry part).
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: the 13-cell's 30 transverse link modes are 2(3 + 3′ + 4 + 5) with no A5 singlet (the invariant spoke field is pure gauge); levels 4−√5 (3), 3 (5), 6−√5 (3), 4 (4), 6 (4), 4+√5 (3′), 7 (5), 6+√5 (3′). The softest photon is again the SU(2)-typed vector triplet. On the 4D product (1009 physical modes) the spectrum is transverse + longitudinal (6−√5, 7, 6+√5, 13) shifted by 4sin²(πn/24), plus the clock holonomy; the only A5-singlet (hypercharge-typed) modes are electric: the radial mode λ_L = 13 and the holonomy.
+- Evidence: `research.q25_4d_a5_photon` (`research_archive/2026-11-11_q25_4d_a5_photon/`); executed in Claude's sandbox.
+- Dead ends: my first count used the unsigned edge permutation and predicted a magnetic singlet; with 1-form orientation signs there is none.
+- Next step: the matter coupling on this complex is Con's choice (candidate 1 or a variant); with it the induced 4D coupling is dimensionless.
 
 ### 2026-11-11 02:42 UTC — Claude — Gate C — Q17: flat links are unstable across the whole (r, M, c_t) grid; ledger partly caught up
 - Task: Q17 (my lane was empty); part of Q9.
