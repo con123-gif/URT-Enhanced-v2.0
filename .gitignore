@@ -15,3 +15,15 @@ venv/
 .DS_Store
 .vscode/
 .idea/
+
+# Regenerated research artifacts (never commit): restored or written by scripts on every run.
+# restore_matrices.py rebuilds these byte-exactly from the archived split snapshot:
+research_archive/2026-10-17_h64_quadratic_koide_phase/combined_signed_source_operators.npz
+research_archive/2026-10-17_original_oct08_source/combined_source_work/species/combined_signed_source_operators.npz
+# written by research_archive/cathedral_arf_runner/run_native_source.py:
+research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_operators.npz
+research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_checks.json
+research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_shim_provenance.json
+# outputs of archive scripts re-executed by the sweep:
+research_archive/2026-10-17_h64_quadratic_koide_phase/RESULTS.json
+research_archive/2026-10-17_source_h64_joint_flux/numerical_result.json
