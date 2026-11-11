@@ -37,6 +37,13 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 00:35 UTC — Claude — Gate F — Origin of the four ARF residues (Drive)
+- Task: Con connected Google Drive and asked for the ARF origin to be checked there.
+- Result: VERIFIED-ARCHIVE — NOT A DERIVATION.
+- Statement: Drive notebook `Untitled96.ipynb` (2025-11-24) defines the four residues as "empirically measured residues" and the only empirical inputs. R_α = 0.03380537 equals 137.035999 − 137 − δ_eff²/π² to eight digits; one mass equation fixes both C_mass and R_mass. The later closed forms fit these numbers.
+- Evidence: `research_archive/2026-11-11_arf_origin/ARF_ORIGIN_PROVENANCE_2026_11_11.md`; arithmetic executed in Claude's sandbox.
+- Dead ends: deriving the historical ARF closed forms is not a well-posed target; their targets are measured inputs.
+- Next step: Q16.
 ### 2026-11-11 00:16 UTC — GPT — Gate A — Full native K2–K3 collision audit
 - Task: Q15 [compute] — enumerate all 768 signed proper-A5 dictionary classes and exact five-vacuum joint (K2/r2, K3²/r2³) signatures with original fixed Q6.
 - Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native hidden-5 source only).
