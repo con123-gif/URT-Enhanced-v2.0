@@ -45,6 +45,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 02:50 UTC — Claude — Gate C — Candidate 1 in 4D: a dynamical photon removes the golden twist; no vacuum without a covariant mass
+- Task: carry candidate 1 to the 4D complex of Q25 (conditional; Con's choice still pending).
+- Result: OBSTRUCTION for the stated construction.
+- Statement: the clock link phases are the photon's temporal components, so the uniform clock phase θ is dynamical. Γ(θ) = Σ_m log det(L₁₃ + r²(2 − 2cos(2πm/24 + θ))) has period 2π/24 and diverges like 2 log|θ − 2πk/24| where the vertex field becomes massless (L₁₃ zero mode). It is unbounded below; the golden value is not a minimum and lies 0.0438 rad from k = 9.
+- Evidence: `research.candidate1_4d_holonomy_instability`; executed in Claude's sandbox.
+- Dead ends: candidate 1 in 4D needs a gauge-covariant mass term; the native action has none (Cbridge is not covariant).
+- Next step: Con's choice. A covariant mass (or fermionic matter, whose induced action does not favour zero holonomy) would be a further declared ingredient.
+
 ### 2026-11-11 02:48 UTC — Claude — All gates — Q9: claim ledger caught up to 2026-11-11
 - Task: Q9.
 - Result: REVIEW (documentation; each row's source read).

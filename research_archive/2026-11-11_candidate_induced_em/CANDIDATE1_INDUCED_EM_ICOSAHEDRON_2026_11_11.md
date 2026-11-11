@@ -20,3 +20,12 @@ diamagnetic contact term, not proportional to M: best single coupling κ = 17.68
 
 **Consequence.** Candidate 1 in minimal form does not give a Maxwell photon or α. Variants (fermionic vertex matter, all five
 solids through a gauge-covariant bridge, a 4D completion) are further choices, not consequences.
+
+## 4D extension: the golden twist is not a vacuum (`CANDIDATE1_4D_HOLONOMY_INSTABILITY_2026_11_11.py`)
+On the 4D complex of Q25 (13-cell × 24-clock) the photon has temporal components, and the native clock link phases are those
+components, so the uniform clock phase θ is dynamical. The bosonic induced action Γ(θ) = Σ_m log det(L₁₃ + r²(2 − 2cos(2πm/24 + θ)))
+has period 2π/24 and diverges like 2 log|θ − 2πk/24| at θ = 2πk/24, where a clock mode makes the vertex field massless (L₁₃ has
+an exact zero mode). It is unbounded below; the golden value is not a minimum (Γ(0.5) < Γ(golden)) and sits 0.0438 rad from the
+singular point k = 9. So candidate 1 has no 4D vacuum without a gauge-covariant mass term, which the native action does not supply
+(Cbridge is not covariant under vertex phases). This sharpens the archived "the source-free Gaussian clock determinant does not
+select the golden phase".
