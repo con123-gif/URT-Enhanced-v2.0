@@ -37,6 +37,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 01:25 UTC — Claude — Gate A/C — d1 d0 = 0 is the flux vacuum selected by the matter
+- Task: find a parameter-free, symmetric vacuum for the induced photon. Plain vertex hopping fails: the 13-cell has 8 unstable modes at flat links and at least seven asymmetric minima (glassy; `CELL13_VACUUM_2026_11_11.py`).
+- Result: THEOREM (numerical certificate; the statement is Lieb's 1994 flux-phase theorem applied to the incidence graph) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: for each of the five Platonic solids, put a free U(1) phase on every vertex–edge and edge–face incidence. The half-filled sea energy −Tr|B(θ)| is minimised exactly at flux π through every incidence square, which is the cochain condition d1 d0 = 0. No random start goes lower; every minimiser at that energy has all square fluxes equal to π (deviation < 6×10⁻⁷); the Hessian there is positive semidefinite with null space exactly the gauge directions. Tr|D| = 24 (tetrahedron), 47.18222 (cube, octahedron), 115.47066 (dodecahedron, icosahedron).
+- Evidence: check `research.hodge_dirac_flux_vacuum`; executed in Claude's sandbox.
+- Dead ends: unit-charge vertex hopping on the icosahedron or 13-cell as the photon's matter (flat 5-sector; glassy vacuum).
+- Next step: spectrum of the Hessian on the squares−1 physical modes at the cochain vacuum; the incidence numbers are ±1, so this kernel has no free scale.
+
 ### 2026-11-11 01:00 UTC — Claude — Gate E — Induced photon kernel on the icosahedron
 - Task: first-principles α correction on the graph where 15 Tr L⁺ = 137 is exact; matter = unit-charge hopping on the 12 vertices, no inserted parameter.
 - Result: THEOREM (floating-point certificate) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
