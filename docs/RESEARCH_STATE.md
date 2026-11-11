@@ -127,6 +127,7 @@ Nothing in the archive selects this map. Gates B → C → D are this object; ga
 - **The ~40 legacy "confirmed" labels:** historical comparisons only.
 
 - **Three α assemblies coexist:** 137.0360100481 (`newtons_cathedral/arf.py`), 137.035999312 (v8 with δ_eff), 137.035999178 (Δ polynomial); 518σ, 6.4σ and 0.06σ from CODATA 2022. Successive versions add terms and approach the measured value.
+- **The 2025 chaos survey is not evidence for δ★** (2026-11-11, executed). The "universal chaos invariant" δ_chaos = 0.1523 ± 0.0005 of the Nov 2025 paper comes from a refinement step that relaxes every estimate to a hard-coded 0.15: every raw value in [0.01, 1] lands in [0.14905, 0.15245], white noise gives 0.1513, and moving the setpoint moves the "invariant". The original ARFs were fitted values rounded to 2π, 3π², π²φ, 4 (1.9 % mean error). δ⋆ and δ_cl remain frozen definitions (`research_archive/2026-11-11_arf_origin/`).
 
 ## 7. Archive health (sweep, 2026-11-10)
 

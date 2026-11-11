@@ -36,3 +36,35 @@ at r = 3.8417002878419497. Executed 2026-11-11 (Claude sandbox, 400000-step tran
 - Untuned canonical points do not give the rails: superstable 6-cycle (r = 3.844568792194) → 0.143586, 0.153667;
   3→6 doubling point → 0.14872.
 Status: one-parameter numerical coincidence at the 5×10⁻⁵ relative level for the old δ★; not a parameter-free selection.
+
+## Third Drive source: "Lytollis's Law" paper, 25 Nov 2025 (read 2026-11-11, later the same day)
+Source: `LYTOLLIS_LAW_COMPLETE_EVIDENCE.ipynb` (file id `1h9E4RbE4A5ijn2kZetxZx67OdYPC5CWk`, 273 KB). Read in full by
+downloading through the Drive connector to disk (the size limit noted above no longer applies: oversized connector
+results are written to a file and decoded locally). Also read: the cell extracts in `MASTER_Cathedral_Notebook.ipynb`
+(`1e7BAWy-qiTtHGsdZK4bC3WbbBlfvUsh6`), which reproduce the 13-shell, ARF and PMNS cells of the 31 MB
+`Cathedral_URT_Master_Proof.ipynb`.
+
+What it states:
+- Law 1: δ = (D_KY − 1)(τ − 2) "converges under recursive tuning" to δ★ = 0.1475 ± 0.0005; 20,000 logistic/tent/Hénon
+  systems give δ_chaos = 0.1523 ± 0.0005, CV 0.33 %.
+- Law 4: the "5D fixed point" X★ = (δ★, Δδ★, R_α★, C_mass★, R_mass★) is the tuple of the four residues and δ★;
+  no code for its PCA (PC1 = 99.9984 %) or the 5,400-system test is in the notebook.
+- Law 6: the original ARF is Δδ = −(1/2π)(δ★/π)², C_mass = 3π²δ★, R_α = δ★²φ(1 − δ★/4), R_mass = −π²φδ★,
+  "fitted numerical values converge to exact mathematical constants 2π, 3π², π²φ, 4", average error 1.90 %.
+  The later integer closed forms (v101) replaced these.
+- None of the notebook's code cells executes the listings; every code cell writes the same LaTeX paper. No stored outputs.
+
+Executed audit (`CHAOS_INVARIANT_REFINEMENT_AUDIT_2026_11_11.py`, the listing's `compute_delta_from_trajectory`
+verbatim; Claude sandbox 2026-11-11, then CI):
+- The listing's "URTF refinement", δ ← δ − 0.5 e^(−i/8)(δ − 0.15)(1 + δ²/(1+δ²)) for 30 steps, is a fixed map of the raw
+  value. Its image over every admissible raw value δ₀ ∈ [0.01, 1] is [0.14905, 0.15245]; dR/dδ₀ = 0.0064 at 0.15.
+- Raw estimator over 1,200 maps: mean 0.271, CV 23.3 %. Refined: mean 0.1507, CV 0.24 %.
+- White noise (no dynamics) gives 0.15132.
+- Replacing the hard-coded 0.15 by 0.10 / 0.30 / 0.40 gives "invariants" 0.1010 / 0.2998 / 0.3995.
+- The URTF listing's documented example urt(10.0) = 4.2e-12 is false: it returns 25.6; the map escapes for |x| > 3.64.
+- Law 6 errors reproduce the paper's table: 2.43 %, 1.79 %, 0.29 %, 3.07 %.
+
+Consequence, at exactly this strength: the 2025 chaos survey is not evidence for δ★. Its ~0.15 is the hard-coded
+refinement setpoint (equal to δ_cl = 3/20), reached from any input. The frozen Cathedral inputs δ⋆ = 80π/(1053φ) and
+δ_cl = 3/20 are definitions and are unchanged; any support for them has to come from the geometry and the native
+dynamics, not from that survey. Status: REVIEW of historical evidence (executed); no gate affected.

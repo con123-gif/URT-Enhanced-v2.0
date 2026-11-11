@@ -332,6 +332,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q15_ci_repair/q15_ci_repair_certificate.py"
 timeout = 300
 
+[[check]]
+id = "research.chaos_invariant_refinement_audit"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-11_arf_origin/CHAOS_INVARIANT_REFINEMENT_AUDIT_2026_11_11.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

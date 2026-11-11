@@ -35,11 +35,19 @@ commit as your result.
 
 - [ ] Q20 [compute] (A) **Native K4 residual collision test.** For D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact five-vacuum K4 with fixed Q6; determine whether fourth order separates the surviving non-parity joint K2–I3 collision. Do not fit inputs.
 
-- [ ] Q20 [derive] (C) **Photon identification on the incidence graph.** The incidence gauge field has (squares − 1) physical modes (59 on the icosahedron); 19 are ordinary link fluxes, 11 dual link fluxes. Decompose all 59 under A5, identify which combination couples to the Q96 charges, and state whether any A5-invariant kernel on it is forced. Source: `research_archive/2026-11-11_icosahedral_induced_photon/`.
+- [ ] Q23 [derive] (C) **Photon identification on the incidence graph.** (renumbered from a duplicate Q20, 2026-11-11) The incidence gauge field has (squares − 1) physical modes (59 on the icosahedron); 19 are ordinary link fluxes, 11 dual link fluxes. Decompose all 59 under A5, identify which combination couples to the Q96 charges, and state whether any A5-invariant kernel on it is forced. Source: `research_archive/2026-11-11_icosahedral_induced_photon/`.
 - [ ] Q21 [review] (C) **Independent review** of `HODGE_DIRAC_INDUCED_PHOTON_2026_11_11.md` items 1 and 3 with independent code, including an analytic (not finite-difference) Hessian.
 - [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
 
 ## Log
+
+### 2026-11-11 01:50 UTC — Claude — Gate F — The 2025 chaos-invariant survey is a refinement artifact; log timestamps corrected
+- Task: Con: "check my drive, everything is there". Read the unread Drive evidence for the ARFs and δ★ in full.
+- Result: REVIEW (executed audit of historical evidence) — no gate affected.
+- Statement: `LYTOLLIS_LAW_COMPLETE_EVIDENCE.ipynb` (25 Nov 2025 paper) measures δ = (D_KY − 1)(τ − 2) on 20,000 logistic/tent/Hénon maps and reports δ_chaos = 0.1523 ± 0.0005, CV 0.33 %. Its listing ends with a "URTF refinement" that relaxes every estimate toward a hard-coded 0.15 (= δ_cl). Executed verbatim: the refinement maps every raw value in [0.01, 1] into [0.14905, 0.15245]; the raw estimator has CV 23 %; white noise gives 0.1513; setpoints 0.10/0.30/0.40 give "invariants" 0.1010/0.2998/0.3995. The original ARF (Law 6) is Δδ = −(1/2π)(δ★/π)², C_mass = 3π²δ★, R_α = δ★²φ(1 − δ★/4), R_mass = −π²φδ★ at 1.9 % mean error, described there as fitted values rounded to 2π, 3π², π²φ, 4. The URTF example urt(10) = 4.2e-12 is false (it returns 25.6).
+- Evidence: `research.chaos_invariant_refinement_audit` (`research_archive/2026-11-11_arf_origin/CHAOS_INVARIANT_REFINEMENT_AUDIT_2026_11_11.py`, provenance note updated); executed in Claude's sandbox, CI pending.
+- Dead ends: the survey is not evidence for δ★; δ⋆ = 80π/(1053φ) and δ_cl = 3/20 stay frozen as definitions. Earlier Claude log headers on 2026-11-10/11 carried estimated times up to 1.5 h ahead of the real commits; corrected to the commit times. My duplicate Q20 is now Q23.
+- Next step: a Δ-linear photon correction needs a sector-diagonal term (the chirality W, the unique A5 intertwiner 4₃ ↔ 4₅, gives only Δ²); test the single-A4-vacuum channel, where the 4₃ and 4₅ singlets meet.
 
 ### 2026-11-11 01:16 UTC — GPT — Gate A — Q15 native CI repair regression
 - Task: Red-branch priority: repair/verify the failed gating check `research.native_signed_dictionary_k23` (run 42933514639, KeyError: 'K'); Q20 deferred.
@@ -49,7 +57,7 @@ commit as your result.
 - Dead ends: Q15's previous top-level `K` lookup was invalid; no arithmetic or physical gate altered. Q20 not attempted in this red-branch repair session.
 - Next step: Q20 [compute] — run the already committed native Q6 K4 collision script for D and E and determine whether fourth order splits the exact residual pair.
 
-### 2026-11-11 02:40 UTC — Claude — Gate A/B — Hidden-sector links of the five solids; linked vacuum is not d² = 0
+### 2026-11-11 01:13 UTC — Claude — Gate A/B — Hidden-sector links of the five solids; linked vacuum is not d² = 0
 - Task: Con: the derivation must use all five solids and the hidden sector linking them, not the icosahedron alone.
 - Result: THEOREM (exact identities, double precision) and OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
 - Statement: tetrahedral parity ∈ cube hidden sector; each inscribed cube's hidden 4 meets the dodecahedral 4₃ ⊕ 4₅ as tr(P₃P_c) = tr(P₅P_c) = 1; the five cubes give P₃SP₃ = P₅SP₅ = (5/4)P and P₃SP₅ = 0. The geometric link is Δ-blind. On the linked compound (dodecahedron + 5 cubes + 10 tetrahedra, shared vertices) d1 d0 = 0 is not the vacuum: minima lie 8.41–8.51 lower with no square at π.
@@ -57,24 +65,24 @@ commit as your result.
 - Dead ends: per-solid vacuum selection does not extend to vertex-shared linking; inclusions cannot produce the 4₃/4₅ asymmetry.
 - Next step: the asymmetry and every π in the ARFs must come from the URT dynamics, not the finite geometry (all finite spectral invariants here are algebraic). Read the original genesis code `drive_archive/2026-10-12/LCFT_URT_genesis_full.py`.
 
-### 2026-11-11 02:10 UTC — Claude — Gate C — The softest incidence-gauge mode is a single vector triplet; CI repair
-- Task: Q20 first half, plus the protocol's red-branch rule: orchestrator run 42932002146 failed on `research.native_signed_dictionary_k23` (GPT, Q15) with `KeyError: 'K'`.
+### 2026-11-11 00:56 UTC — Claude — Gate C — The softest incidence-gauge mode is a single vector triplet; CI repair
+- Task: Q23 (then numbered Q20) first half, plus the protocol's red-branch rule: orchestrator run 42932002146 failed on `research.native_signed_dictionary_k23` (GPT, Q15) with `KeyError: 'K'`.
 - Result: THEOREM (numerical certificate) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; and a one-line repair.
 - Statement: the 59 physical incidence-gauge modes of the icosahedron decompose under A5 as 3·(3) + 3·(3′) + 4·(4) + 5·(5), with no invariant. K_E levels: 3 → 0.024133, 0.394974, 0.409229; 3′ → 0.176298, 0.315704, 0.359199; 4 → 0.144289, 0.174783, 0.309343, 0.325560; 5 → 0.112648, 0.303900, 0.306162, 0.347952, 0.370447. The softest mode is one triplet in the vector irrep 3 (the irrep of the vertex coordinates), 4.7 times softer than the next mode.
 - Repair: `native_joint_k23.py` read `K`, `Z` from the Q12 namespace, where they do not exist; they live in the Q11 source that Q12 loads as `ns`. Lookup fixed; no arithmetic changed. NOT executed in Claude's sandbox (needs sympy); CI decides.
 - Compute job `induced-photon-vacuum-census` (Q19): 60 starts, none below Γ(θ*) = −148.758644894. Done.
 - Evidence: check `research.incidence_photon_a5_sectors`; compute/induced-photon-vacuum-census/status.json.
-- Next step: Q20 second half — which of these modes the Q96 charges couple to.
+- Next step: Q23 second half — which of these modes the Q96 charges couple to.
 
-### 2026-11-11 01:50 UTC — Claude — Gate C/E — Parameter-free photon kernel at the cochain vacuum
+### 2026-11-11 00:54 UTC — Claude — Gate C/E — Parameter-free photon kernel at the cochain vacuum
 - Task: compute the photon kernel around the matter-selected vacuum d1 d0 = 0 and compare with the exact 15 Tr M⁺ = 137.
 - Result: THEOREM (numerical certificates) plus a negative comparison — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
 - Statement: the sea-energy and log-det kernels are positive definite on all five solids (dual solids agree; tetrahedron exactly 1/8, 1/4, 3/8). Reduced to the icosahedron's 19 link-flux modes with the other incidence modes relaxed, K = 0.013755, 0.059279, 0.073655, 0.087843, 0.088735 on the M-levels 3−√5, 2, 3, 5, 3+√5; κ = K/M varies by a factor 1.75. 15 Tr K⁺ = 6541.40.
 - Evidence: checks `research.hodge_dirac_photon_kernel`, `research.hodge_dirac_19_mode_photon`; executed in Claude's sandbox.
 - Dead ends: the frozen reduction (not gauge invariant). No natural reading gives 137.036: 4πκ ≈ 0.21–0.37.
-- Next step: Q20.
+- Next step: Q23 (then numbered Q20).
 
-### 2026-11-11 01:25 UTC — Claude — Gate A/C — d1 d0 = 0 is the flux vacuum selected by the matter
+### 2026-11-11 00:52 UTC — Claude — Gate A/C — d1 d0 = 0 is the flux vacuum selected by the matter
 - Task: find a parameter-free, symmetric vacuum for the induced photon. Plain vertex hopping fails: the 13-cell has 8 unstable modes at flat links and at least seven asymmetric minima (glassy; `CELL13_VACUUM_2026_11_11.py`).
 - Result: THEOREM (numerical certificate; the statement is Lieb's 1994 flux-phase theorem applied to the incidence graph) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
 - Statement: for each of the five Platonic solids, put a free U(1) phase on every vertex–edge and edge–face incidence. The half-filled sea energy −Tr|B(θ)| is minimised exactly at flux π through every incidence square, which is the cochain condition d1 d0 = 0. No random start goes lower; every minimiser at that energy has all square fluxes equal to π (deviation < 6×10⁻⁷); the Hessian there is positive semidefinite with null space exactly the gauge directions. Tr|D| = 24 (tetrahedron), 47.18222 (cube, octahedron), 115.47066 (dodecahedron, icosahedron).
@@ -82,7 +90,7 @@ commit as your result.
 - Dead ends: unit-charge vertex hopping on the icosahedron or 13-cell as the photon's matter (flat 5-sector; glassy vacuum).
 - Next step: spectrum of the Hessian on the squares−1 physical modes at the cochain vacuum; the incidence numbers are ±1, so this kernel has no free scale.
 
-### 2026-11-11 01:00 UTC — Claude — Gate E — Induced photon kernel on the icosahedron
+### 2026-11-11 00:43 UTC — Claude — Gate E — Induced photon kernel on the icosahedron
 - Task: first-principles α correction on the graph where 15 Tr L⁺ = 137 is exact; matter = unit-charge hopping on the 12 vertices, no inserted parameter.
 - Result: THEOREM (floating-point certificate) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
 - Statement: Π = Hessian of −log|det H(θ)| commutes with the Maxwell form M and equals 8/5 on the two 3-sectors, 6/5 on the hidden 4₃ and 4₅, 0 on the 5. 15 Tr(M + g²Π)⁺ = 137 − 136.88 g² + O(g⁴); at g = 1 it is 87.08.
@@ -90,7 +98,7 @@ commit as your result.
 - Dead ends: no parameter-free rule here yields +0.036; the correction's sign in the propagator trace is negative and its size needs a bare coupling g that the construction does not fix.
 - Next step: the open question is now a single number: what fixes g. Candidates must be tested, not fitted.
 
-### 2026-11-11 00:45 UTC — Claude — Gate E — Induced photon coupling at θ*: no Maxwell form (negative)
+### 2026-11-11 00:31 UTC — Claude — Gate E — Induced photon coupling at θ*: no Maxwell form (negative)
 - Task: Con asked for the α correction from first principles. Rule declared before the number: κ = Hessian of −log|det H| per unit loop-flux², α⁻¹ = 4πκ, unit charge, archived v61 operator at its vacuum θ*.
 - Result: OBSTRUCTION (numerical) — CLOSED INTERNALLY for this operator.
 - Statement: the physical Hessian at θ* is not proportional to any loop-flux (Maxwell) form built from triangles, four-cycles or both: best single κ = 0.013595 (triangles) or 0.000682 (triangles + squares), residual 86–88%; mode-by-mode κ spans 0 to 0.070. 4πκ is 0.17 or 0.009. At θ = 0 the best κ is negative. The 6×2×2×2 v61 lattice therefore defines no photon coupling, and nothing near 137.
@@ -98,7 +106,7 @@ commit as your result.
 - Dead ends: reading α off the v61 link Hessian, at θ = 0 or θ*.
 - Next step: Q16 only changes the charge content, not this structure; a first-principles α needs an operator whose induced kernel is Maxwell-like. Candidate: the icosahedral/dual-dodecahedron graph, where 15·Tr L⁺ = 137 is already exact.
 
-### 2026-11-11 00:35 UTC — Claude — Gate F — Origin of the four ARF residues (Drive)
+### 2026-11-11 00:23 UTC — Claude — Gate F — Origin of the four ARF residues (Drive)
 - Task: Con connected Google Drive and asked for the ARF origin to be checked there.
 - Result: VERIFIED-ARCHIVE — NOT A DERIVATION.
 - Statement: Drive notebook `Untitled96.ipynb` (2025-11-24) defines the four residues as "empirically measured residues" and the only empirical inputs. R_α = 0.03380537 equals 137.035999 − 137 − δ_eff²/π² to eight digits; one mass equation fixes both C_mass and R_mass. The later closed forms fit these numbers.
@@ -114,7 +122,7 @@ commit as your result.
 - Next step: Q20 [compute] — calculate native K4 for the displayed residual non-parity collision pair and test separation.
 
 
-### 2026-11-11 00:20 UTC — Claude — Gate C — Induced photon action: flat links are a saddle
+### 2026-11-11 00:12 UTC — Claude — Gate C — Induced photon action: flat links are a saddle
 - Task: Con asked for the ARFs from first principles and for a better route if they are wrong. New premise against the S_λ obstruction: use the sea's own induced action, with no Maxwell term added.
 - Result: THEOREM (floating-point certificates) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
 - Statement:
@@ -190,7 +198,7 @@ commit as your result.
 - Dead ends: creating `/mnt/data` does not unblock the 11 read-input scripts; inserting the proposed mkdir without a writable `/mnt` raises `PermissionError` and would break the sweep.
 - Next step: Q6 [repair] (already queued) — for each remaining non-`/mnt/data` `missing_file` script, find whether another archived script produces the missing file.
 
-### 2026-11-10 20:30 UTC — Claude — All gates — Consolidation and multi-agent setup
+### 2026-11-10 20:22 UTC — Claude — All gates — Consolidation and multi-agent setup
 - Task: Con asked for the whole repository to be put in order, with GPT and Grok working on it alongside Claude.
 - Result: VERIFIED-ARCHIVE — Q1 and Q2 done.
 - Statement:
@@ -201,7 +209,7 @@ commit as your result.
 - Dead ends: none new. `RESEARCH_STATE.md` §3 lists the existing ones.
 - Next step: Q3 (gate A axis-ordering classes) for Claude; Q8 for GPT; Q5–Q7 for Grok.
 
-### 2026-11-10 20:10 UTC — Claude — Setup — baseline at the start of scheduled sessions
+### 2026-11-10 20:07 UTC — Claude — Setup — baseline at the start of scheduled sessions
 - Task: establish the verified baseline before automated research begins.
 - Result: VERIFIED-ARCHIVE
 - Statement:
