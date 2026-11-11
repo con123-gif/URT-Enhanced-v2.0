@@ -512,6 +512,14 @@ run = "python -u research_archive/2026-11-11_q34_seventh_mixed_words/q34_seventh
 timeout = 180
 
 [[check]]
+id = "research.q36_rational_star_intertwiners"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q36_star_intertwiner/q36_exact_star_intertwiners.py"
+timeout = 300
+
+[[check]]
 id = "research.q35_eighth_mixed_words"
 stage = "research"
 claim = "native"
