@@ -22,6 +22,11 @@ Prior work: the 59 incidence-gauge modes are 3·(3) + 3·(3′) + 4·(4) + 5·(5
    3-fold, 27.0° from the nearest 5-fold axis of the archived rotation frame. Q96 therefore breaks A5 completely, by a
    basis choice. Hypercharge has no A5-equivariant photon partner at all.
 
+5. **The bare 137 is not electromagnetic under this typing.** 15 Tr L⁺ = 45(3+√5)/4 = 58.906 (W-typed triplet) + 46.094
+   (gluon-typed 3′ and 5) + 32 (geometry-typed hidden 4₃ ⊕ 4₅). A single T₃ component, the only electromagnetic channel
+   (Y has none), carries 15/(3−√5) = 19.635. Identifying 15 Tr L⁺ with α⁻¹ therefore sums propagators of gluon-, W- and
+   geometry-typed modes, which the archive's own gauge join keeps distinct.
+
 Consequence for α: an A5-natural electromagnetic photon would require placing T₃ on a 5-, 3- or 2-fold axis (stabilisers
 C₅, C₃, C₂; three inequivalent choices, none selected by the archive) and a rule for the hypercharge part, which A5 gives
 no linear channel. No photon kernel is forced.

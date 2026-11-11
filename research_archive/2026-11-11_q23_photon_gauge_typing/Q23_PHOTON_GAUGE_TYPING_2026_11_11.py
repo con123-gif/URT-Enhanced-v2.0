@@ -18,7 +18,10 @@ Certified (exact representation theory, double precision):
   4. The archived T3 (generators96[3]) maps, through the unique intertwiner, to a direction with trivial A5 stabilizer:
      it is 13.0 deg from the nearest 2-fold, 11.9 deg from the nearest 3-fold and 27.0 deg from the nearest 5-fold axis.
      Q96 = Y + T3 therefore breaks A5 completely, by a basis choice of the archive.
-Result: THEOREM (typing) and OBSTRUCTION (the archived electric charge is not A5-natural; hypercharge has no photon partner).
+  5. By that typing 15 Tr L+ = 137 splits as 45(3+sqrt5)/4 = 58.906 (W-typed) + 46.094 (gluon-typed) + 32 (geometry-typed);
+     a single T3 component, the only electromagnetic channel, carries 15/(3-sqrt5) = 19.635.
+Result: THEOREM (typing) and OBSTRUCTION (the archived electric charge is not A5-natural; hypercharge has no photon partner;
+the bare 137 is not an electromagnetic trace under the archive's own typing).
 """
 from __future__ import annotations
 
@@ -106,7 +109,7 @@ def main() -> int:
         Vl = U[:, np.abs(w - lam) < 1e-7]; d = Vl.shape[1]
         c72 = [np.trace(Vl.T @ Pf @ Vl) for Rm, Pf in rots if abs(rotation_angle(Rm) - 72) < 1e-6]
         typ = str(d) if d != 3 else ("3" if np.allclose(c72, PHI) else "3'")
-        levels.append({"L": float(lam), "dim": d, "type": typ})
+        levels.append({"L": float(np.mean(w[np.abs(w - lam) < 1e-7])), "dim": d, "type": typ})
     out["face_levels"] = levels
     lt = [(round(l["L"], 6), l["type"]) for l in levels]
     assert lt == [(0.0, "1"), (round(3 - 5 ** 0.5, 6), "3"), (2.0, "5"), (3.0, "4"), (5.0, "4"), (round(3 + 5 ** 0.5, 6), "3'")]
@@ -142,6 +145,20 @@ def main() -> int:
         REPO / "research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_operators.npz")["Q96"])
         if (REPO / "research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents_operators.npz").is_file() else True)
     assert stab == 1 and min(near.values()) > 5
+
+    # ---- 5. the bare trace 15 Tr L+ = 137 split by the archive's own gauge typing
+    share = {"W-typed (3, L=3-sqrt5)": 0.0, "gluon-typed (3', 5)": 0.0, "geometry-typed (4_3, 4_5)": 0.0}
+    for l in levels:
+        if l["L"] < 1e-9:
+            continue
+        key = {"3": "W-typed (3, L=3-sqrt5)", "3'": "gluon-typed (3', 5)", "5": "gluon-typed (3', 5)",
+               "4": "geometry-typed (4_3, 4_5)"}[l["type"]]
+        share[key] += 15 * l["dim"] / l["L"]
+    share["single T3 component (the only electromagnetic channel)"] = 15 / (3 - 5 ** 0.5)
+    out["15TrLplus_by_gauge_type"] = share
+    assert abs(sum(v for k, v in share.items() if "single" not in k) - 137) < 1e-9
+    assert abs(share["W-typed (3, L=3-sqrt5)"] - 45 * (3 + 5 ** 0.5) / 4) < 1e-9
+    assert abs(share["geometry-typed (4_3, 4_5)"] - 32) < 1e-9
 
     print(json.dumps(out, indent=2))
     (HERE / "Q23_PHOTON_GAUGE_TYPING_2026_11_11.json").write_text(json.dumps(out, indent=2) + "\n")
