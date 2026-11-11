@@ -519,6 +519,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q35_eighth_mixed_words/q35_eighth_mixed_words.py"
 timeout = 180
 
+[[check]]
+id = "research.q32_mixed_trace_meaning"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q32_mixed_trace_meaning/q32_mixed_trace_meaning.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
