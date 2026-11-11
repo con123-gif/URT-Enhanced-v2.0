@@ -1,0 +1,25 @@
+{
+  "rebuild_matches_v61_max_abs": 0.0,
+  "archived_point": {
+    "r": 0.355508034923519,
+    "M": 0.790940592107124,
+    "c_t": 0.0625,
+    "negative": 72,
+    "positive": 409,
+    "gap": 0.8255933137797207
+  },
+  "grid_points": 120,
+  "nonsingular_points": 118,
+  "points_with_unstable_modes": 118,
+  "negative_mode_counts": [
+    18,
+    36,
+    63,
+    69,
+    72,
+    84,
+    90,
+    114
+  ]
+}
+PASS: rebuild equals v61; archived 72/409 reproduced; 118 of 118 nonsingular grid points have unstable flat links.

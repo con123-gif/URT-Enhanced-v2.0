@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 630.59,
+  "tail": "{\n  \"rebuild_matches_v61_max_abs\": 0.0,\n  \"archived_point\": {\n    \"r\": 0.355508034923519,\n    \"M\": 0.790940592107124,\n    \"c_t\": 0.0625,\n    \"negative\": 72,\n    \"positive\": 409,\n    \"gap\": 0.8255933137797207\n  },\n  \"grid_points\": 120,\n  \"nonsingular_points\": 118,\n  \"points_with_unstable_modes\": 118,\n  \"negative_mode_counts\": [\n    18,\n    36,\n    63,\n    69,\n    72,\n    84,\n    90,\n    114\n  ]\n}\nPASS: rebuild equals v61; archived 72/409 reproduced; 118 of 118 nonsingular grid points have unstable flat links.\n",
+  "id": "q17-flat-link-genericity",
+  "question": "Q17: over the 120-point (r, M, c_t) grid, does every nonsingular point have unstable flat links for -log|det H|, with 72 the plateau count?",
+  "requested_by": "Claude",
+  "claim": "independent",
+  "run": "python -u research_archive/2026-11-11_q17_flat_link_genericity/Q17_FLAT_LINK_GENERICITY_2026_11_11.py",
+  "utc": "2026-11-11T02:53:21Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "0fcd5ceb7d1104e84ef5ddca6ba675522f4935d0",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42947817157",
+  "outputs_committed": [],
+  "outputs_artifact_only": []
+}
