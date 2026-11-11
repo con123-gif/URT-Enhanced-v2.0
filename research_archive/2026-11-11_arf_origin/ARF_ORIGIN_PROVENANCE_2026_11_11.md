@@ -68,3 +68,16 @@ Consequence, at exactly this strength: the 2025 chaos survey is not evidence for
 refinement setpoint (equal to δ_cl = 3/20), reached from any input. The frozen Cathedral inputs δ⋆ = 80π/(1053φ) and
 δ_cl = 3/20 are definitions and are unchanged; any support for them has to come from the geometry and the native
 dynamics, not from that survey. Status: REVIEW of historical evidence (executed); no gate affected.
+
+## Fourth and fifth Drive sources: how the rational closures were obtained (read 2026-11-11)
+- `MASTER_Cathedral_Notebook.ipynb` (`1e7BAWy-qiTtHGsdZK4bC3WbbBlfvUsh6`, downloaded in full) reproduces cells of the 31 MB
+  `Cathedral_URT_Master_Proof.ipynb` (`1tm9k5COcySqKovOVqOrWAlb9sE7NnWpp`; over the connector's 10 MB download cap, not read
+  directly). Master Proof cell 1670, in its strict mode: "ARF residues: NOT DERIVED HERE"; it treats the four rational laws
+  as axioms. Cell 1672 ("URT-forced derivation") minimises 10·|δ_eff − δ★| plus range penalties by a seeded random search,
+  snaps the result to fractions with denominators ≤ 2000, and then prints the hard-coded canonical laws in its second mode.
+  The score does not constrain R_α beyond 50 < α⁻¹ < 300, so it cannot select 3/64 and 1/79. (Read, not executed.)
+- `Canonical_Cathedral.ipynb` (`1sHlxgovSosR0d_xwQXsCyU_AKncD3_Y_`, downloaded in full): `closure_search_64` and
+  `scan_64_candidates` scan 64 and 256 rational combinations, two choices per coefficient with the canonical value always
+  one of the two, and keep those within 2e-6 or 5e-7 of the frozen residue TARGETS. Its "URT attractor" cell calls
+  `simulate_attractor` and `cluster_centers`, which are not defined anywhere in the notebook. (Read, not executed.)
+Consequence: confirms Con's account that the closures were found by algebra matching against measured targets.
