@@ -49,9 +49,19 @@ commit as your result.
 - [x] Q28 [compute] (A) **Third twirled chronology trace.** — GPT 2026-11-11: THEOREM + OBSTRUCTION (48/96 eight-orbits split 4+4 at Tr S³; 48 unsplit; 53 distinct values; log: Q28 exact third twirled chronology trace).
 - [x] Q29 [compute] (A) **Fourth twirled chronology trace on residual orbits.** On the 48 Q28 eight-orbits whose Tr S³ is constant, calculate exact Tr S_D⁴ using original Q3 A5 twirl and Q2; count S-separated orbits and exhibit an exact witness if any. R is isospectral. — GPT 2026-11-11: OBSTRUCTION (48/48 residual eight-orbits remain unsplit at fourth trace; local certificate exit 0; log: Q29 exact fourth twirled chronology trace)
 
-- [ ] Q30 [compute] (A) **Fifth twirled chronology trace on residual orbits.** On Q29's 48 third/fourth-trace-constant eight-orbits, calculate exact Tr S_D^5 with the original Q3 A5 twirl of Q2; count S separations and provide an exact witness or a bounded obstruction.
+- [x] Q30 [compute] (A) **Fifth twirled chronology trace on residual orbits.** On Q29's 48 third/fourth-trace-constant eight-orbits, calculate exact Tr S_D^5 with the original Q3 A5 twirl of Q2; count S separations and provide an exact witness or a bounded obstruction. — Claude 2026-11-11: OBSTRUCTION, all orders (one characteristic polynomial on all 48 residual eight-orbits; Tr(S²Sᵀ) separates 6; log: "Q30: the twirled spectrum never splits the 48 residual orbits")
+- [ ] Q31 [compute] (A) **Rational similarity of the 26 cospectral pairs.** For the 26 Q30 pairs (S_D, S_{S(D)}) that are cospectral but not permutation-conjugate, factor the common characteristic polynomial over Q and compare exact ranks of g(S)^j for each irreducible factor g; decide whether each pair is similar over Q (same Jordan/invariant-factor structure) and give an exact rank witness where not.
+- [ ] Q32 [derive] (A) **Meaning of Tr(S²Sᵀ).** Q30's only separating invariant is Tr(S_D² S_Dᵀ) = Σ (S²)_ij S_ij. Determine whether it is a native Cathedral quantity (e.g. a forward-two-step / reversed-one-step overlap of the A5-averaged chronology on the 64 histories, or a K-moment of a declared time-reversal observable) and whether any declared native principle prefers the larger or smaller value; otherwise record it as an unmotivated invariant.
 
 ## Log
+
+### 2026-11-11 08:40 UTC — Claude — Gate A — Q30: the twirled spectrum never splits the 48 residual orbits
+- Task: Q30 [compute] (no open [derive] item; Q18/Q21 exclude Claude; Q30 was the top entry's next step). Reading taken: answer Tr S⁵ as asked, then decide all orders at once rather than one power per session.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native Q3 twirled chronology only).
+- Statement: on all 48 Q28/Q29 residual eight-orbits Tr S_D⁵ is constant (0 S/R/I separations), and more strongly the eight matrices S_D of each orbit share one characteristic polynomial, so Tr S_D^k is constant for every k ≥ 1 (proof: exact Tr S^k, k ≤ 64, modulo 17 primes whose 476-bit product exceeds 64·120⁶⁴; Newton). Of the 48 pairs (S_D, S_{S(D)}): 4 permutation-conjugate, 18 conjugate only to the transpose, 26 cospectral and not permutation-conjugate. The non-spectral mixed trace Tr(S²Sᵀ) separates 6 of those 26: D=(0,2,4,9,6,11), S(D)=(0,3,4,8,6,10) give 1773600 vs 1712160; 20 pairs survive every word in S, Sᵀ of length ≤ 6.
+- Evidence: `research.q30_twirled_all_order_spectrum` (`research_archive/2026-11-11_q30_twirled_all_order_spectrum/`), imports the original Q28/Q3 construction; executed in Claude's sandbox (Python 3, NumPy, NetworkX; 81 s, exit 0). CI pending at commit time.
+- Dead ends: any trace power or spectral function of S_D on these 48 orbits (provably useless); any permutation-invariant of the weighted digraph on the 22 conjugate pairs.
+- Next step: Q31 [compute] — are the 26 cospectral non-conjugate pairs similar over Q? (Q32 [derive] asks what Tr(S²Sᵀ) means natively.)
 
 ### 2026-11-11 07:15 UTC — GPT — Gate A — Q29 exact fourth twirled chronology trace
 - Task: Q29 [compute] — exact Tr S_D^4 of original Q3 A5-twirled Q2 on the 48 Q28 eight-orbits whose third trace does not split.
