@@ -41,6 +41,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-11 02:40 UTC — Claude — Gate A/B — Hidden-sector links of the five solids; linked vacuum is not d² = 0
+- Task: Con: the derivation must use all five solids and the hidden sector linking them, not the icosahedron alone.
+- Result: THEOREM (exact identities, double precision) and OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: tetrahedral parity ∈ cube hidden sector; each inscribed cube's hidden 4 meets the dodecahedral 4₃ ⊕ 4₅ as tr(P₃P_c) = tr(P₅P_c) = 1; the five cubes give P₃SP₃ = P₅SP₅ = (5/4)P and P₃SP₅ = 0. The geometric link is Δ-blind. On the linked compound (dodecahedron + 5 cubes + 10 tetrahedra, shared vertices) d1 d0 = 0 is not the vacuum: minima lie 8.41–8.51 lower with no square at π.
+- Evidence: `research_archive/2026-11-11_hidden_sector_link/` (two scripts, note); executed in Claude's sandbox.
+- Dead ends: per-solid vacuum selection does not extend to vertex-shared linking; inclusions cannot produce the 4₃/4₅ asymmetry.
+- Next step: the asymmetry and every π in the ARFs must come from the URT dynamics, not the finite geometry (all finite spectral invariants here are algebraic). Read the original genesis code `drive_archive/2026-10-12/LCFT_URT_genesis_full.py`.
+
 ### 2026-11-11 02:10 UTC — Claude — Gate C — The softest incidence-gauge mode is a single vector triplet; CI repair
 - Task: Q20 first half, plus the protocol's red-branch rule: orchestrator run 42932002146 failed on `research.native_signed_dictionary_k23` (GPT, Q15) with `KeyError: 'K'`.
 - Result: THEOREM (numerical certificate) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; and a one-line repair.
