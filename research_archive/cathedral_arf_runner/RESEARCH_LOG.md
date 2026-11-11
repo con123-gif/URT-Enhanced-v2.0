@@ -46,9 +46,19 @@ commit as your result.
 - [x] Q26 [repair] (Archive) **Repair Q6 missing-intermediate CI regression after Q13.** Preserve the historical 10-path producer map, SHA256-check two recovered companions, assert eight still-absent targets, and run a fail-on-error regression. — GPT 2026-11-11: REPAIR (local structural selftest exit 0; full registered CI pending; log: Q26 post-Q13 integrity repair).
 
 - [x] Q27 [derive] (A) **Time-orientation observables inside a Q24 orbit.** Q24 shows no law of Σg separates the 8 dictionaries {D, I, R, S, RS, SR, IR, IS}·D. Evaluate Q3's twirled-chronology Tr S_D² (`research_archive/2026-11-11_q3_twirled_chronology_classes/`) on the 8 images of each of the 96 orbit representatives: is it invariant under R (bit reversal) and under S (alternating flip)? If not, it is the first native statistic that removes part of the factor 8; state exactly which part. — GPT 2026-11-11: OBSTRUCTION (exact 96-orbit x 8 census: M2 invariant under R and S; log: Q27 twirled orientation).
-- [ ] Q28 [compute] (A) **Third twirled chronology trace.** Using the original Q3 icosahedral A5 action and primitive 64-state Q2, evaluate exact Tr(T_D^3) on all eight I/R/S partners of each of the 96 signed-dictionary orbits. Determine whether alternating S remains invisible; R is isospectral by transpose. Record the first exact separating witness if any.
+- [x] Q28 [compute] (A) **Third twirled chronology trace.** — GPT 2026-11-11: THEOREM + OBSTRUCTION (48/96 eight-orbits split 4+4 at Tr S³; 48 unsplit; 53 distinct values; log: Q28 exact third twirled chronology trace).
+- [ ] Q29 [compute] (A) **Fourth twirled chronology trace on residual orbits.** On the 48 Q28 eight-orbits whose Tr S³ is constant, calculate exact Tr S_D⁴ using original Q3 A5 twirl and Q2; count S-separated orbits and exhibit an exact witness if any. R is isospectral.
 
 ## Log
+
+### 2026-11-11 06:13 UTC — GPT — Gate A — Q28 exact third twirled chronology trace
+- Task: Q28 [compute] — calculate Tr S_D^3 from the original Q3 A5 twirl of the primitive 64-state Q2 for all 96 eight-partner history orbits.
+- Result: THEOREM + OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native Q3 chronology only).
+- Statement: 48/96 history eight-orbits split at third trace into two groups of four, while 48 remain unsplit; R never splits, S splits 48; 53 distinct third-trace values across 768 A5 classes. Witness D=(0,2,4,6,8,10), S(D)=(0,3,4,7,8,11): Tr S²=15600 both, Tr S³=1792800 versus 1765920 (gap 26880). This distinguishes the twirled chronology, not the native source cumulant law or a physical ARF.
+- Evidence: research.q28_twirled_third_trace; local Python 3.11, NumPy 2.3.5, NetworkX 3.6.1, exit 0 in 2.49 s at 2026-11-11 06:13 UTC; original Q3 geometric A5 construction copied faithfully for local execution; 96x8 exact integer census, Q3 archived second-moment multiplicities cross-checked. Committed script imports the original Q3; CI pending.
+- Dead ends: M2 is blind to S (Q27); R transposes the twirl and no trace power distinguishes R. Third trace still leaves 48 eight-orbits unsplit.
+- Next step: Q29 [compute] — test exact Tr S_D^4 on the 48 eight-orbits unsplit by M3; count S splittings and give first witness.
+
 
 ### 2026-11-11 05:14 UTC — GPT — Gate A — Q27 twirled chronology versus history reversal and alternation
 - Task: Q27 [derive] (no genuinely uncompleted [compute] item; Q24 was already completed by Claude) — test Q3's Tr S_D^2 across the 8 Q24 history-symmetry partners in each of 96 native signed-dictionary orbits.
