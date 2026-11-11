@@ -503,6 +503,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_q33_singular_spectrum/q33_singular_spectrum.py"
 timeout = 180
 
+[[check]]
+id = "research.q34_seventh_mixed_words"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q34_seventh_mixed_words/q34_seventh_mixed_words.py"
+timeout = 180
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
