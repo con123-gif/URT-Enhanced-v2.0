@@ -268,6 +268,14 @@ gating = true
 run = "python -u research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.py 0"
 timeout = 300
 
+[[check]]
+id = "research.native_signed_dictionary_k23"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_signed_dictionary_k23/native_joint_k23.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

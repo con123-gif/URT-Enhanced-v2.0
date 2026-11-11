@@ -62,6 +62,7 @@ verdict is in `summary.md` on branch `cathedral-research-state`.
   - The A5 mean of the native K₄ rates is 845671/57600 + (4271/800)√5 (**CI-verified 2026-11-10**).
   - Source: `.../2026-11-10_urt_arf_forward/new_gate/URT_Q6_CUMULANTS_AND_A5_MIXING_THEOREMS_2026_11_10.md`.
 - **Native K3 signed dictionary collision (Q14, 2026-11-10).** The Q12 non-parity K2 collision pair D0=(0,2,4,6,8,10) and D1=(0,2,5,6,9,11) is separated at order 3: the unique K2=25/24 vacuum has scale/sign-invariant K3²/r2³ = 4823127/1024000 ∓ (41811/256000)√5. Local exact certificate executed; GitHub CI pending. This does not settle the 768-orbit classification or select a physical ARF (`research_archive/2026-11-10_signed_dictionary_k3/`).
+- **Native K2–K3 signed dictionary audit (Q15, 2026-11-11).** Exact joint five-vacuum (K2/r2,K3²/r2³) signatures of the native hidden-5 source and fixed Q6 yield 96 distinct signatures among 768 proper-A5 signed dictionary classes, each of multiplicity 8. After global inversion 384 classes remain in 96 groups of four (576 non-parity collision pairs); witness D=(0,2,4,6,8,10), E=(0,2,8,10,7,4). Local exact execution; GitHub CI pending. Gate A dictionary not selected (`research_archive/2026-11-11_signed_dictionary_k23/`).
 - **24-clock holonomy.** For the 291,840-mode conditional operator, Tr K(θ)ⁿ is θ-independent for n < 24, and cos 24θ first appears at n = 24. This does **not** select the golden phase.
 
 ## 3. Proven obstructions and falsified routes — do not retry these

@@ -26,14 +26,25 @@ commit as your result.
 
 - [x] Q14 [compute] (A) **Third cumulant collision test.** For signed dictionaries (0,2,4,6,8,10) and (0,2,5,6,9,11), calculate the five native A4 K₃ rates by the exact Q6 tilted-transfer/Poisson recursion and determine whether their multisets differ without fitted inputs.
 
-- [ ] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job.
+- [x] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job. — GPT 2026-11-11: OBSTRUCTION (96 exact K2–I3 signatures; 576 residual non-parity pairs; log: Full native K2–K3 collision audit)
 
 - [ ] Q16 [derive] (C) **Full-registry induced vacuum.** With the archived Q96 charges in units of 1/3, minimise Γ_Q(θ) = −Σ_s log|det H(3q_s θ)| over the 528 links. Does a stable vacuum exist, what is its flux family, and what is the physical Hessian there? Start from `research_archive/2026-11-10_induced_photon/`.
 - [ ] Q17 [verify] (C) **(r, M, c_t) dependence.** Count negative physical modes of the −log|det H| Hessian at θ = 0 over a grid of r, M and temporal weight around the archived values. Is the flat-link instability generic or tuned?
 - [ ] Q18 [review] (C) **Independent review** of `INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.md` statements 2–4 with independent code (do not import its modules).
 - [ ] Q19 [derive] (C) After compute job `induced-photon-vacuum-census` finishes, read `compute/induced-photon-vacuum-census/` and record whether θ* survived.
 
+- [ ] Q20 [compute] (A) **Native K4 residual collision test.** For D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact five-vacuum K4 with fixed Q6; determine whether fourth order separates the surviving non-parity joint K2–I3 collision. Do not fit inputs.
+
 ## Log
+
+### 2026-11-11 00:16 UTC — GPT — Gate A — Full native K2–K3 collision audit
+- Task: Q15 [compute] — enumerate all 768 signed proper-A5 dictionary classes and exact five-vacuum joint (K2/r2, K3²/r2³) signatures with original fixed Q6.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native hidden-5 source only).
+- Statement: Exactly 96 joint signatures occur, each with multiplicity 8 among 768 proper-A5 classes. After central inversion, 384 classes form 96 groups of four; 576 non-parity collision pairs remain. Explicit collision D=(0,2,4,6,8,10), E=(0,2,8,10,7,4).
+- Evidence: research.native_signed_dictionary_k23; GPT container Python 3.11 / SymPy 1.14 / NetworkX 3.6.1, exit 0 (~32 s), 2026-11-11 00:16 UTC, with exact native Q11/Q12 reconstruction locally; ten independent finite tilted-transfer K3(25)-K3(24) checks. Committed script imports original Q11/Q12; CI verdict pending.
+- Dead ends: Third cumulant separates Q14's chosen pair but does not uniquely select a signed history dictionary. No physical ARF follows.
+- Next step: Q20 [compute] — calculate native K4 for the displayed residual non-parity collision pair and test separation.
+
 
 ### 2026-11-11 00:20 UTC — Claude — Gate C — Induced photon action: flat links are a saddle
 - Task: Con asked for the ARFs from first principles and for a better route if they are wrong. New premise against the S_λ obstruction: use the sea's own induced action, with no Maxwell term added.
