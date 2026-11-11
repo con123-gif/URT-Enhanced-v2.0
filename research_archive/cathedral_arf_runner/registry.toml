@@ -308,6 +308,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_icosahedral_induced_photon/HODGE_DIRAC_19_MODE_PHOTON_2026_11_11.py"
 timeout = 600
 
+[[check]]
+id = "research.incidence_photon_a5_sectors"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-11_icosahedral_induced_photon/INCIDENCE_PHOTON_A5_SECTORS_2026_11_11.py"
+timeout = 600
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

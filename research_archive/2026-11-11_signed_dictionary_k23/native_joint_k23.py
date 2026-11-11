@@ -12,7 +12,8 @@ q12=Path(__file__).resolve().parents[1]/'2026-11-10_signed_dictionary_classes'/'
 assert q12.is_file(),q12
 with redirect_stdout(StringIO()): ns=runpy.run_path(str(q12))
 ints,reps,actions,transform=(*(ns[k] for k in ('ints','reps','actions','transform')),)
-K,Z=ns['K'],ns['Z']
+_src=ns if 'K' in ns else ns['ns']   # K, Z are defined in the Q11 covariance source that Q12 loads into its own 'ns'
+K,Z=_src['K'],_src['Z']
 index=ns.get('history_index',ns.get('idx'))
 assert len(reps)==768 and len(actions)==60 and len(ints)==5
 scale=60

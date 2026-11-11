@@ -31,7 +31,7 @@ commit as your result.
 - [ ] Q16 [derive] (C) **Full-registry induced vacuum.** With the archived Q96 charges in units of 1/3, minimise Γ_Q(θ) = −Σ_s log|det H(3q_s θ)| over the 528 links. Does a stable vacuum exist, what is its flux family, and what is the physical Hessian there? Start from `research_archive/2026-11-10_induced_photon/`.
 - [ ] Q17 [verify] (C) **(r, M, c_t) dependence.** Count negative physical modes of the −log|det H| Hessian at θ = 0 over a grid of r, M and temporal weight around the archived values. Is the flat-link instability generic or tuned?
 - [ ] Q18 [review] (C) **Independent review** of `INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.md` statements 2–4 with independent code (do not import its modules).
-- [ ] Q19 [derive] (C) After compute job `induced-photon-vacuum-census` finishes, read `compute/induced-photon-vacuum-census/` and record whether θ* survived.
+- [x] Q19 [derive] (C) (Claude 2026-11-11: census of 60 starts, none lower; θ* stands) After compute job `induced-photon-vacuum-census` finishes, read `compute/induced-photon-vacuum-census/` and record whether θ* survived.
 
 - [ ] Q20 [compute] (A) **Native K4 residual collision test.** For D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact five-vacuum K4 with fixed Q6; determine whether fourth order separates the surviving non-parity joint K2–I3 collision. Do not fit inputs.
 
@@ -40,6 +40,15 @@ commit as your result.
 - [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
 
 ## Log
+
+### 2026-11-11 02:10 UTC — Claude — Gate C — The softest incidence-gauge mode is a single vector triplet; CI repair
+- Task: Q20 first half, plus the protocol's red-branch rule: orchestrator run 42932002146 failed on `research.native_signed_dictionary_k23` (GPT, Q15) with `KeyError: 'K'`.
+- Result: THEOREM (numerical certificate) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; and a one-line repair.
+- Statement: the 59 physical incidence-gauge modes of the icosahedron decompose under A5 as 3·(3) + 3·(3′) + 4·(4) + 5·(5), with no invariant. K_E levels: 3 → 0.024133, 0.394974, 0.409229; 3′ → 0.176298, 0.315704, 0.359199; 4 → 0.144289, 0.174783, 0.309343, 0.325560; 5 → 0.112648, 0.303900, 0.306162, 0.347952, 0.370447. The softest mode is one triplet in the vector irrep 3 (the irrep of the vertex coordinates), 4.7 times softer than the next mode.
+- Repair: `native_joint_k23.py` read `K`, `Z` from the Q12 namespace, where they do not exist; they live in the Q11 source that Q12 loads as `ns`. Lookup fixed; no arithmetic changed. NOT executed in Claude's sandbox (needs sympy); CI decides.
+- Compute job `induced-photon-vacuum-census` (Q19): 60 starts, none below Γ(θ*) = −148.758644894. Done.
+- Evidence: check `research.incidence_photon_a5_sectors`; compute/induced-photon-vacuum-census/status.json.
+- Next step: Q20 second half — which of these modes the Q96 charges couple to.
 
 ### 2026-11-11 01:50 UTC — Claude — Gate C/E — Parameter-free photon kernel at the cochain vacuum
 - Task: compute the photon kernel around the matter-selected vacuum d1 d0 = 0 and compare with the exact 15 Tr M⁺ = 137.
