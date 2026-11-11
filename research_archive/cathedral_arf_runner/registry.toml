@@ -207,11 +207,20 @@ timeout = 60
 [[check]]
 id = "research.missing_intermediates"
 stage = "research"
+# Q26: historical producer map + Q13 companion SHA256 integrity (2 restored / 8 absent).
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-10_missing_intermediates/find_missing_intermediate_producers.py"
 timeout = 60
 
+
+[[check]]
+id = "research.q6_repair_structural_regression"
+stage = "research"
+claim = "regression"
+gating = true
+run = "python research_archive/2026-11-11_q6_repair/q6_recovery_selftest.py"
+timeout = 60
 
 # ------------------------------------------------------------------ research (independent calculations)
 [[check]]

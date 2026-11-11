@@ -1,24 +1,28 @@
 #!/usr/bin/env python3
-"""Q6 certificate: producer map for the 10 remaining non-/mnt/data missing_file scripts.
+"""Q6 certificate: historical producer map and post-Q13 companion-copy integrity.
 
 Independent static analysis (Python stdlib only: ast, hashlib, pathlib). It does
 not import any archived research module and does not treat historical or
 measured values as inputs.
 
-The 10 (script, missing file) pairs are exactly the latest cathedral-research-state
-sweep.md missing_file rows whose detail is not a sandbox path /mnt/data
-(orchestrator run 42903908099, 2026-11-10T21:31:28Z, commit d0eb5ed). The other
-14 missing_file rows are the Q5 /mnt/data set.
+The 10 (script, missing file) pairs are the frozen 2026-11-10 sweep.md
+missing_file rows (run 42903908099, commit d0eb5ed), not a claim that
+all ten remain missing today. Q13 subsequently restored two byte-identical
+companions, verified against pinned SHA256 values. The other 14 historical
+missing_file rows were the Q5 /mnt/data set.
 
 A producer is another research_archive/**/*.py that writes the missing basename
 (np.savez / savez_compressed / save, Path.write_text / write_bytes, open in a
 write mode, shutil copy/replace). The consumer itself is not counted.
 
-Exit status 0 iff the frozen classification holds:
-  * exactly one basename-level producer (golden_species_derivation.py writes
-    golden_species_operators.npz next to itself);
-  * zero producers write any of the 10 files at the path the consumer opens;
-  * therefore no sweep reordering unblocks any of the 10.
+Exit status 0 iff the historical producer classification and CURRENT archive
+integrity hold:
+  * one basename-level producer, zero exact-path producers;
+  * two Q13 recovered companions exist and match their archived originals
+    byte-for-byte by SHA256 (golden_species, original_h64_species_link);
+  * the other eight historical targets remain absent; seven of those have
+    no same-basename copy anywhere in research_archive.
+  * no historical missing target was repaired merely by sweep reordering.
 """
 from __future__ import annotations
 
@@ -82,6 +86,7 @@ EXPECTED_BASENAME_PRODUCER = (
 
 GOLDEN_COPIES = [
     "research_archive/2026-10-17_exact_14D_H64_reduction/golden_species_operators.npz",
+    "research_archive/2026-10-17_h64_quadratic_koide_phase/golden_species_operators.npz",
     "research_archive/2026-10-17_original_oct08_source/derive_three_work/species/golden_species_operators.npz",
     "research_archive/2026-10-17_source_first_recovery/golden_species_operators.npz",
 ]
@@ -92,6 +97,17 @@ NEAR_NAME = (
     "research_archive/2026-10-17_source_h64_joint_flux/original_h64_species_link_source.npz",
     "research_archive/2026-10-17_source_h64_joint_flux/joint_original_h64_species_link_source.npz",
 )
+
+RECOVERED_COMPANIONS = {
+    "research_archive/2026-10-17_h64_quadratic_koide_phase/golden_species_operators.npz": (
+        "research_archive/2026-10-17_exact_14D_H64_reduction/golden_species_operators.npz",
+        GOLDEN_SHA256,
+    ),
+    NEAR_NAME[0]: (
+        NEAR_NAME[1],
+        "1bf7f26d468bc6a672eba573522bd6063ac592a0642d8a9550e3b9df5c672642",
+    ),
+}
 
 RESTORE = "research_archive/2026-10-17_recovery_assets/restore_matrices.py"
 WRITE_ATTRS = {
@@ -309,8 +325,15 @@ def main() -> int:
     for script, missing in CONSUMERS:
         if not (REPO / script).is_file():
             errors.append(f"missing consumer script {script}")
-        if (REPO / missing).exists():
-            errors.append(f"sweep-reported missing file unexpectedly present: {missing}")
+        target = REPO / missing
+        if missing in RECOVERED_COMPANIONS:
+            original, digest = RECOVERED_COMPANIONS[missing]
+            if not target.is_file() or not (REPO / original).is_file():
+                errors.append(f"Q13 companion or original absent: {missing} <- {original}")
+            elif sha256_file(target) != digest or sha256_file(REPO / original) != digest:
+                errors.append(f"Q13 companion SHA256 mismatch: {missing} <- {original}")
+        elif target.exists():
+            errors.append(f"unclassified new target: {missing}")
 
     py_files = archive_py_files()
     basename_hits: list[tuple[str, str, str]] = []
@@ -367,8 +390,8 @@ def main() -> int:
 
     if not (REPO / ENDPOINT_COPY).is_file():
         errors.append(f"missing same-named copy {ENDPOINT_COPY}")
-    if (REPO / NEAR_NAME[0]).exists():
-        errors.append(f"near-name target unexpectedly present: {NEAR_NAME[0]}")
+    if not (REPO / NEAR_NAME[0]).is_file():
+        errors.append(f"Q13 recovered near-name target missing: {NEAR_NAME[0]}")
     if not (REPO / NEAR_NAME[1]).is_file():
         errors.append(f"missing near-name file {NEAR_NAME[1]}")
 
@@ -389,7 +412,6 @@ def main() -> int:
         "compact_source_normalization_operators.npz",
         "grounded_charged_amplitude_operators.npz",
         "combined_chat_recovery.json",
-        "original_h64_species_link_source.npz",
     }
     if set(no_copy) != expected_no_copy:
         errors.append(f"no-copy set {sorted(no_copy)} != {sorted(expected_no_copy)}")
@@ -416,10 +438,10 @@ def main() -> int:
     else:
         print("  (none)")
     print()
-    print("=== no producer at the consumer path (all 10) ===")
+    print("=== historical 10 consumer paths (2 restored by Q13) ===")
     for script, missing in CONSUMERS:
         print(f"  {script}")
-        print(f"    missing: {missing}")
+        print(f"    historical target: {missing}  current: {'RECOVERED SHA256' if missing in RECOVERED_COMPANIONS else 'ABSENT'}")
     print()
     print("=== same-named committed copies (informational) ===")
     print("  golden_species_operators.npz:")
@@ -427,29 +449,29 @@ def main() -> int:
         print(f"    {rel}  sha256 {GOLDEN_SHA256}")
     print(f"  run_endpoint_test.py:")
     print(f"    {ENDPOINT_COPY}")
-    print("  original_h64_species_link_source.npz: no file of that name;")
+    print("  original_h64_species_link_source.npz: Q13 SHA256-identical companion;")
     print(f"    near-name in the same folder: {NEAR_NAME[1]}")
     print()
     print("=== restore_matrices.py ===")
     print(f"  {RESTORE} DATA_TARGETS ({len(restore_targets)}):")
     for t in restore_targets:
         print(f"    {t}")
-    print("  None of those is a Q6 missing file. Restore explains why the")
-    print("  quadratic-phase and full-period scripts fail on their *second*")
-    print("  input (the first is reconstructed from the split .partXX blobs).")
+    print("  None of those is a historical Q6 missing file. Restore supplies")
+    print("  the first input for quadratic-phase and full-period. Q13 supplied")
+    print("  the second for quadratic-phase; full-period still lacks provenance.")
     print()
     print("=== sweep ordering ===")
-    print("  No reordering of the archive sweep can unblock any of these 10")
-    print("  scripts: no archived script writes the missing file at the path")
-    print("  the consumer opens.")
+    print("  No archived producer writes any historical missing file at its")
+    print("  consumer path. Q13 companion copying, not reordering, restored two.")
     print()
     if errors:
         print("FAIL")
         for e in errors:
             print(f"  - {e}")
         return 1
-    print("PASS: 1 basename-only producer, 0 exact-path producers;")
-    print("no sweep reordering unblocks the 10 remaining missing_file scripts.")
+    print("PASS: historical producer map 1 basename-only / 0 exact-path;")
+    print("2 SHA256-certified Q13 companion copies, 8 historical targets still absent;")
+    print("7 absent targets have no committed same-basename copy.")
     print("Status class: CLOSED INTERNALLY (archive-health classification only).")
     return 0
 

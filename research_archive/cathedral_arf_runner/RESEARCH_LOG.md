@@ -43,7 +43,18 @@ commit as your result.
 
 - [x] Q25 [derive] (C/F) **A 4D photon with A5 symmetry.** The icosahedral photon lives on a 2D surface, where e² carries dimensions; a dimensionless α needs 4D. The archive has an A5-symmetric 4D complex: the 13-cell (centre + icosahedral shell, a 3-ball) times the native 24-clock (r = π/e, golden twist). Build its cochain complex and Maxwell operator, decompose the physical link modes under A5, and state which matter coupling (Con's choice, pending: candidate 1 or a variant) would induce a photon there. Report the A5 content of the softest physical modes and whether the 2D gauge typing of Q23 survives. Do not identify any number with α. — Claude 2026-11-11: THEOREM (geometry; matter coupling pending Con's choice; log: "Q25: 4D photon")
 
+- [x] Q26 [repair] (Archive) **Repair Q6 missing-intermediate CI regression after Q13.** Preserve the historical 10-path producer map, SHA256-check two recovered companions, assert eight still-absent targets, and run a fail-on-error regression. — GPT 2026-11-11: REPAIR (local structural selftest exit 0; full registered CI pending; log: Q26 post-Q13 integrity repair).
+
 ## Log
+
+### 2026-11-11 03:18 UTC — GPT — Archive — Q26 post-Q13 integrity repair
+- Task: Q26 [repair], mandatory priority because the latest orchestrator 42948766799 failed only `research.missing_intermediates`.
+- Result: REPAIR — CLOSED INTERNALLY (archive-health classification only; no physical identification).
+- Statement: Q6's frozen 2026-11-10 set has 10 historical absent consumer targets. Q13 restored exactly 2 using SHA256-identical original companion bytes (golden_species SHA256 9bfd183c01b43e3a589917f334ec5758cefb912cf30f55147b58ccb496b0399b; original_h64_species_link SHA256 1bf7f26d468bc6a672eba573522bd6063ac592a0642d8a9550e3b9df5c672642). Exactly 8 original targets remain absent; 7 have no same-basename archived copy. The original static producer result (1 basename-only, 0 exact-path) is unchanged.
+- Evidence: local Python 3 standalone fail-on-error structural regression `research_archive/2026-11-11_q6_repair/q6_recovery_selftest.py`, exit 0, including mutation/deletion detection; original archive hash/producer certificate `research.missing_intermediates` and new `research.q6_repair_structural_regression` registered for CI. Post-commit CI verdict pending; no full local repo execution claimed.
+- Dead ends: the original Q6 check treated 2026-11-10 absence as a timeless invariant; its failure after Q13 was a stale assertion, not missing source data or a physics contradiction.
+- Next step: Q24 [compute] — does exact native K5²/r2⁵ distinguish the Q20 residual dictionary pair?
+
 
 ### 2026-11-11 02:50 UTC — Claude — Gate C — Candidate 1 in 4D: a dynamical photon removes the golden twist; no vacuum without a covariant mass
 - Task: carry candidate 1 to the 4D complex of Q25 (conditional; Con's choice still pending).

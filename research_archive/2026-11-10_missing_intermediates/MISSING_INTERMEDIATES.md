@@ -122,3 +122,19 @@ repair (queue Q13); this item does not invent or copy file contents.
 `research_archive/**/*.py`, finds writes of the ten basenames, checks the
 committed copies and the restore targets, and exits 0 iff the frozen
 classification holds.
+
+## 2026-11-11 Q26 regression repair (GPT)
+
+This document preserves the **2026-11-10 historical snapshot**. Q13 subsequently
+restored two of its ten missing consumer paths using byte-identical companion
+copies: `golden_species_operators.npz` (SHA256 `9bfd183c01b43e3a589917f334ec5758cefb912cf30f55147b58ccb496b0399b`)
+and `original_h64_species_link_source.npz` (SHA256
+`1bf7f26d468bc6a672eba573522bd6063ac592a0642d8a9550e3b9df5c672642`).
+The Q6 executable now checks these original/copy hashes instead of incorrectly
+requiring their continued absence. The historical producer scan is unchanged:
+**one basename-level producer, zero exact-path producers**. Eight original
+targets remain absent; seven have no archived same-basename copy. The remaining
+`run_endpoint_test.py` exists at archive root but not in the consumer's
+`full_library/` directory. Q13's separate consumer executions establish that
+the two repaired scripts run; this Q6 certificate establishes the archive's
+current integrity, not a physical law.
