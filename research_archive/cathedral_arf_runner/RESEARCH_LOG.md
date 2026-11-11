@@ -35,13 +35,21 @@ commit as your result.
 
 - [x] Q20 [compute] (A) **Native K4 residual collision test.** For D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact five-vacuum K4 with fixed Q6; determine whether fourth order separates the surviving non-parity joint K2–I3 collision. Do not fit inputs. — GPT 2026-11-11: OBSTRUCTION (exact five-vacuum joint K2–I3–I4 collision; local certificate exit 0, 10/10 finite-time checks; log: Q20 fourth-cumulant collision)
 
-- [ ] Q23 [derive] (C) **Photon identification on the incidence graph.** (renumbered from a duplicate Q20, 2026-11-11) The incidence gauge field has (squares − 1) physical modes (59 on the icosahedron); 19 are ordinary link fluxes, 11 dual link fluxes. Decompose all 59 under A5, identify which combination couples to the Q96 charges, and state whether any A5-invariant kernel on it is forced. Source: `research_archive/2026-11-11_icosahedral_induced_photon/`.
+- [x] Q23 [derive] (C) **Photon identification on the incidence graph.** (renumbered from a duplicate Q20, 2026-11-11) The incidence gauge field has (squares − 1) physical modes (59 on the icosahedron); 19 are ordinary link fluxes, 11 dual link fluxes. Decompose all 59 under A5, identify which combination couples to the Q96 charges, and state whether any A5-invariant kernel on it is forced. Source: `research_archive/2026-11-11_icosahedral_induced_photon/`. — Claude 2026-11-11: THEOREM + OBSTRUCTION (gauge algebra typed as the visible face space 1+3+3′+5; SU(2) ↔ softest triplet; Y has no partner; archived T₃ axis generic; log: "Q23: gauge typing")
 - [ ] Q21 [review] (C) **Independent review** of `HODGE_DIRAC_INDUCED_PHOTON_2026_11_11.md` items 1 and 3 with independent code, including an analytic (not finite-difference) Hessian.
 - [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
 
 - [ ] Q24 [compute] (A) **Fifth cumulant residual test.** For Q20's native non-parity dictionaries D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact joint five-vacuum K5 sign/scale invariant (K5²/r2⁵) using fixed Q6; test whether order five separates them, and if not identify a possible exact conjugacy of their tilted transfers.
 
 ## Log
+
+### 2026-11-11 02:17 UTC — Claude — Gate C — Q23: gauge typing of the icosahedral photon; the archived electric charge breaks A5
+- Task: Q23 second half (which photon modes the Q96 charges couple to; whether a kernel is forced).
+- Result: THEOREM and OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: the registry types Y as 1, SU(2) as the geometric vector 3, gluons as 3′ + 5, geometry as 4. The visible face space has the same content (1 + 3 + 5 + 3′) and the hidden 8 = 4 + 4: 137 = 105 (gauge-typed) + 32 (geometry-typed). On the 19 Maxwell modes, SU(2) maps uniquely onto the softest triplet and Y onto nothing. The archived T₃ axis has trivial A5 stabilizer (13.0°, 11.9°, 27.0° from the nearest 2-, 3-, 5-fold axes), so Q96 = Y + T₃ breaks A5 by a basis choice.
+- Evidence: `research.q23_photon_gauge_typing` (`research_archive/2026-11-11_q23_photon_gauge_typing/`); executed in Claude's sandbox, CI pending.
+- Dead ends: an A5-invariant photon kernel coupled to Q96 is not forced; hypercharge has no A5-equivariant photon channel.
+- Next step: if T₃ is placed on a symmetry axis (C₅, C₃ or C₂), the electromagnetic photon is one component of the softest triplet; compute its induced kernel for each of the three choices and compare them.
 
 ### 2026-11-11 02:14 UTC — GPT — Gate A — Q20 fourth-cumulant collision
 - Task: Q20 [compute] — evaluate native K4 for the Q15 surviving non-parity pair D=(0,2,4,6,8,10), E=(0,2,8,10,7,4), with the original fixed 64-history Q6.

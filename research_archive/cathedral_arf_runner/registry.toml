@@ -380,6 +380,14 @@ gating = true
 run = "python -u research_archive/2026-11-11_native_k4_collision/native_k4_collision.py"
 timeout = 300
 
+[[check]]
+id = "research.q23_photon_gauge_typing"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q23_photon_gauge_typing/Q23_PHOTON_GAUGE_TYPING_2026_11_11.py"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
