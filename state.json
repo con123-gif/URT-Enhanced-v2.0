@@ -2,618 +2,663 @@
  "checks": {
   "conditional.charged_ward_2x2": {
    "claim": "synthetic",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.98
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.68
   },
   "conditional.observable_nonuniqueness": {
    "claim": "conditional",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.39
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.28
   },
   "conditional.source_moment_recurrence": {
    "claim": "conditional",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.62
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.44
   },
   "conditional.ward_13_51_random_blocks": {
    "claim": "synthetic",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.12
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.09
   },
   "geometry.all_platonic_hidden_algebra": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "geometry",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 10.63
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 6.67
   },
   "geometry.hidden_isometry_24clock_Q6": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "geometry",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.37
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.29
   },
   "history.a4_third_cumulant_rate": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 3.84
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 5.99
   },
   "history.a5_chronology_dirichlet_gap": {
    "claim": "conditional",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.5
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.52
   },
   "history.a5_symmetric_cubic_source": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 3.81
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 5.96
   },
   "history.native_24clock_fourier": {
    "claim": "conditional",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.6
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.77
   },
   "history.native_q6_fourth_cumulants": {
    "claim": "native",
-   "consecutive_pass": 21,
+   "consecutive_pass": 22,
    "detail": "",
    "first_seen_utc": "2026-11-10T20:26:37Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 9.01
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 14.76
   },
   "history.source_schur_ward_contacts": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.38
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.4
   },
   "integrity.arf_forward_manifest": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "integrity",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
+   "utc": "2026-11-11T02:47:47Z",
    "wall_s": 0.0
   },
   "integrity.h64_snapshot_sha256": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "integrity",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.04
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.05
   },
   "integrity.handover_claims": {
    "claim": "independent",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "integrity",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.22
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.26
   },
   "native.output_gate": {
    "claim": "native",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "native",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.09
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.12
   },
   "native.wilson_source": {
    "claim": "native",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "native",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 2.42
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 1.6
   },
   "research.chaos_invariant_refinement_audit": {
    "claim": "independent",
-   "consecutive_pass": 3,
+   "consecutive_pass": 4,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:02:58Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 4.53
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 2.24
   },
   "research.hidden_parity_delta_selection": {
    "claim": "native",
-   "consecutive_pass": 2,
+   "consecutive_pass": 3,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:16:30Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.67
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.4
   },
   "research.hodge_dirac_19_mode_photon": {
    "claim": "independent",
-   "consecutive_pass": 6,
+   "consecutive_pass": 7,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.51
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.3
   },
   "research.hodge_dirac_flux_vacuum": {
    "claim": "independent",
-   "consecutive_pass": 6,
+   "consecutive_pass": 7,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.7
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.41
   },
   "research.hodge_dirac_photon_kernel": {
    "claim": "independent",
-   "consecutive_pass": 6,
+   "consecutive_pass": 7,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.65
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.37
   },
   "research.icosahedral_induced_photon": {
    "claim": "independent",
-   "consecutive_pass": 6,
+   "consecutive_pass": 7,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.24
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.13
   },
   "research.incidence_photon_a5_sectors": {
    "claim": "independent",
-   "consecutive_pass": 6,
+   "consecutive_pass": 7,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 3.9
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 1.73
   },
   "research.independent_native_five_k2": {
    "claim": "independent",
-   "consecutive_pass": 17,
+   "consecutive_pass": 18,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:12:03Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 1.08
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.64
   },
   "research.induced_photon_logdet_kernel": {
    "claim": "native",
-   "consecutive_pass": 10,
+   "consecutive_pass": 11,
    "detail": "",
    "first_seen_utc": "2026-11-11T00:24:25Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 1.82
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.99
   },
   "research.induced_photon_vacuum_selection": {
    "claim": "native",
-   "consecutive_pass": 10,
+   "consecutive_pass": 11,
    "detail": "",
    "first_seen_utc": "2026-11-11T00:24:25Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 5.15
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 2.8
   },
   "research.missing_intermediates": {
    "claim": "independent",
-   "consecutive_pass": 14,
+   "consecutive_pass": 15,
    "detail": "",
    "first_seen_utc": "2026-11-10T22:28:48Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.24
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.14
   },
   "research.native_signed_dictionary_k23": {
    "claim": "native",
-   "consecutive_pass": 6,
+   "consecutive_pass": 7,
    "detail": "",
    "first_seen_utc": "2026-11-11T00:33:58Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 36.8
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 19.89
   },
   "research.native_signed_dictionary_k3": {
    "claim": "native",
-   "consecutive_pass": 11,
+   "consecutive_pass": 12,
    "detail": "",
    "first_seen_utc": "2026-11-10T23:36:31Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 17.93
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 9.53
   },
   "research.native_signed_dictionary_k4": {
    "claim": "native",
-   "consecutive_pass": 1,
+   "consecutive_pass": 2,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 23.26
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 12.41
   },
   "research.platonic_hidden_sector_link": {
    "claim": "independent",
-   "consecutive_pass": 5,
+   "consecutive_pass": 6,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:29:41Z",
    "gating": false,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.23
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.11
   },
   "research.q15_native_namespace_repair": {
    "claim": "native",
-   "consecutive_pass": 4,
+   "consecutive_pass": 5,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:48:12Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 36.74
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 19.97
+  },
+  "research.q23_photon_gauge_typing": {
+   "claim": "native",
+   "consecutive_pass": 1,
+   "detail": "",
+   "first_seen_utc": "2026-11-11T02:47:47Z",
+   "gating": true,
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
+   "stage": "research",
+   "status": "pass",
+   "tail": "",
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.39
+  },
+  "research.q3_twirled_chronology_classes": {
+   "claim": "native",
+   "consecutive_pass": 1,
+   "detail": "",
+   "first_seen_utc": "2026-11-11T02:47:47Z",
+   "gating": true,
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
+   "stage": "research",
+   "status": "pass",
+   "tail": "",
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 36.79
   },
   "research.q4_native_matter_map": {
    "claim": "native",
-   "consecutive_pass": 1,
+   "consecutive_pass": 2,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 1.62
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.9
+  },
+  "research.q7_review_q6_cumulants": {
+   "claim": "independent",
+   "consecutive_pass": 1,
+   "detail": "",
+   "first_seen_utc": "2026-11-11T02:47:47Z",
+   "gating": true,
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
+   "stage": "research",
+   "status": "pass",
+   "tail": "",
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 1.56
   },
   "research.registry_induced_vacuum": {
    "claim": "conditional",
-   "consecutive_pass": 1,
+   "consecutive_pass": 2,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": false,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 327.64
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 155.95
   },
   "research.registry_maxwell_test": {
    "claim": "conditional",
-   "consecutive_pass": 1,
+   "consecutive_pass": 2,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": false,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 5.6
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 2.96
   },
   "research.sandbox_bound_scripts": {
    "claim": "independent",
-   "consecutive_pass": 18,
+   "consecutive_pass": 19,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:03:11Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 0.1
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 0.06
   },
   "research.signed_a5_covariance": {
    "claim": "independent",
-   "consecutive_pass": 15,
+   "consecutive_pass": 16,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:31:28Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 5.89
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 3.11
   },
   "research.signed_dictionary_classes": {
    "claim": "native",
-   "consecutive_pass": 13,
+   "consecutive_pass": 14,
    "detail": "",
    "first_seen_utc": "2026-11-10T22:43:01Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 8.42
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 4.53
   },
   "research.unsigned_axis_order_k2": {
    "claim": "independent",
-   "consecutive_pass": 16,
+   "consecutive_pass": 17,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:23:20Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 55.36
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 29.54
   },
   "tests.suite": {
    "claim": "regression",
-   "consecutive_pass": 24,
+   "consecutive_pass": 25,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-11T02:28:48Z",
-   "run_id": "42944659803",
-   "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
+   "last_pass_utc": "2026-11-11T02:47:47Z",
+   "run_id": "42946094242",
+   "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
    "stage": "tests",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-11T02:28:48Z",
-   "wall_s": 7.32
+   "utc": "2026-11-11T02:47:47Z",
+   "wall_s": 7.34
   }
  },
  "created_utc": "2026-11-10T19:54:38Z",
@@ -649,10 +694,10 @@
   "claim_guard_violations": [],
   "event": "push",
   "gating_failures": [],
-  "run_id": "42944659803",
-  "sha": "7c5a4de9c42d3602bae45e72ec6d7eed5652fd82",
-  "url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42944659803",
-  "utc": "2026-11-11T02:28:48Z",
+  "run_id": "42946094242",
+  "sha": "d845f876684ef16699655893165d49f4aedf7d4b",
+  "url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/42946094242",
+  "utc": "2026-11-11T02:47:47Z",
   "verdict": "pass",
   "versions": {
    "mpmath": "1.3.0",
@@ -664,1507 +709,1507 @@
    "sympy": "1.14.0"
   }
  },
- "runs": 24,
+ "runs": 25,
  "schema": 2,
  "sweep": {
-  "last_run_utc": "2026-11-11T02:28:48Z",
+  "last_run_utc": "2026-11-11T02:47:47Z",
   "scripts": {
    "research_archive/2026-10-13_entropy_gravity/cathedral_13cell_stress_representation_2026_10_13.py": {
     "detail": "",
     "sha256": "ee17b90ce533d67c25deba698e2ebc1816075df9d5e1f9c898a7233adaff6850",
     "status": "pass",
-    "utc": "2026-11-11T02:19:33Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:33:40Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_A5_entropy_coupling_audit.py": {
     "detail": "",
     "sha256": "d261b2fe7e2642e4bc076f6f6d2d2011d02fa01d5ab9be55e2e7c4b611dec2c5",
     "status": "pass",
-    "utc": "2026-11-11T02:20:14Z",
-    "wall_s": 0.45
+    "utc": "2026-11-11T02:34:57Z",
+    "wall_s": 0.76
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_H64_dark_information_exact_audit_2026_10_13.py": {
     "detail": "",
     "sha256": "d66c6532c706fafa8ac2f14b0369cacfae37c61a2c4ed95bd1de4777ee49f612",
     "status": "pass",
-    "utc": "2026-11-11T02:21:15Z",
-    "wall_s": 0.12
+    "utc": "2026-11-11T02:34:57Z",
+    "wall_s": 0.22
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_casini_einstein_bridge_audit.py": {
     "detail": "",
     "sha256": "4f07c2d1311018053667bb6b0c897fc6087a2b4f9ad479b5784a1bfe53b5c4e7",
     "status": "pass",
-    "utc": "2026-11-11T02:21:15Z",
-    "wall_s": 0.1
+    "utc": "2026-11-11T02:34:57Z",
+    "wall_s": 0.17
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_dark_information_halo_gate_2026_10_13.py": {
     "detail": "",
     "sha256": "e5c05e42343fe8e39f2c73214ee28adbff8c042d12f2bf7b87469fc7c32d5735",
     "status": "pass",
-    "utc": "2026-11-11T02:21:16Z",
-    "wall_s": 0.29
+    "utc": "2026-11-11T02:36:56Z",
+    "wall_s": 0.46
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_diagonal_source_13cell.py": {
     "detail": "",
     "sha256": "563d3ef84939378dbfd52a2d9c33b4bef9a1cf9ff9c3a94d41701845b1677187",
     "status": "pass",
-    "utc": "2026-11-11T02:21:16Z",
-    "wall_s": 0.19
+    "utc": "2026-11-11T02:36:56Z",
+    "wall_s": 0.29
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_entropy_gravity_remaining_gates_2026_10_13.py": {
     "detail": "",
     "sha256": "891a4c36aa9f246ace3b24b8cefe25ddb6752f7c8ff9498c3f282760be5a9e3f",
     "status": "pass",
-    "utc": "2026-11-11T02:21:16Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:36:56Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_full_history_hidden_response_2026_10_13.py": {
     "detail": "",
     "sha256": "868927b9bf8ef422a82622a667471d7c9db309648a6a3805cc42166d9780a01c",
     "status": "pass",
-    "utc": "2026-11-11T02:21:16Z",
-    "wall_s": 0.19
+    "utc": "2026-11-11T02:36:57Z",
+    "wall_s": 0.29
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_gravity_bounce_calculations.py": {
     "detail": "",
     "sha256": "d21326d6ea2d326c4a89889429449225b9230d1e2990ba944482f54e9bc16c7f",
     "status": "pass",
-    "utc": "2026-11-11T02:21:16Z",
-    "wall_s": 0.19
+    "utc": "2026-11-11T02:36:57Z",
+    "wall_s": 0.28
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_icosahedral_continuum_modular_test.py": {
     "detail": "",
     "sha256": "bb55fb50cf972f9b244736776b875e8785c9f542b6cc113958d55fc37d10a008",
     "status": "pass",
-    "utc": "2026-11-11T02:22:06Z",
-    "wall_s": 0.55
+    "utc": "2026-11-11T02:38:29Z",
+    "wall_s": 1.02
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_scale_ladder_identifiability_2026_10_13.py": {
     "detail": "",
     "sha256": "f378cc00b421df9f4408372f124d3434f3180ad976b0b37f7f485dca7bbd6983",
     "status": "pass",
-    "utc": "2026-11-11T02:22:06Z",
-    "wall_s": 0.13
+    "utc": "2026-11-11T02:38:29Z",
+    "wall_s": 0.26
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_urt_multiscale_halo_kernel_2026_10_13.py": {
     "detail": "",
     "sha256": "8f711fe1fb1338fd982689aacb422b3a3e2e1430487e00278b93620531cd87b1",
     "status": "pass",
-    "utc": "2026-11-11T02:22:06Z",
-    "wall_s": 0.08
+    "utc": "2026-11-11T02:38:29Z",
+    "wall_s": 0.16
    },
    "research_archive/2026-10-14_H64_physical_gate/recovered_H64_gram_audit.py": {
     "detail": "",
     "sha256": "8f3a2cc843775276b49fe6d2cf7898cb68d4dfb6785305e622fe082b60bcab85",
     "status": "pass",
-    "utc": "2026-11-11T02:22:07Z",
-    "wall_s": 0.57
+    "utc": "2026-11-11T02:38:30Z",
+    "wall_s": 1.01
    },
    "research_archive/2026-10-14_hidden4/A5_hidden4_positive_return.py": {
     "detail": "",
     "sha256": "07cef4899f043b07521930871cb43a3777d4c55b14ee9c493b555728dd5569cd",
     "status": "pass",
-    "utc": "2026-11-11T02:22:07Z",
-    "wall_s": 0.47
+    "utc": "2026-11-11T02:38:31Z",
+    "wall_s": 0.84
    },
    "research_archive/2026-10-14_platonic_unification/first_principles_scale.py": {
     "detail": "",
     "sha256": "c74bfb4b5443d8b166eb01a197af026a4ab0acec539195ef62273f99cc83186c",
     "status": "pass",
-    "utc": "2026-11-11T02:22:07Z",
-    "wall_s": 0.23
+    "utc": "2026-11-11T02:38:32Z",
+    "wall_s": 0.39
    },
    "research_archive/2026-10-14_platonic_unification/infinite_uv_fractal_transfer.py": {
     "detail": "",
     "sha256": "a1b8c556ade832537335963cffed75ceb1791c790ca8a70499387c6a6f2f21e5",
     "status": "pass",
-    "utc": "2026-11-11T02:22:09Z",
-    "wall_s": 0.28
+    "utc": "2026-11-11T02:38:34Z",
+    "wall_s": 0.48
    },
    "research_archive/2026-10-14_platonic_unification/newton_scale_certificate.py": {
     "detail": "",
     "sha256": "b91a7fa9c45812bc189b25c860b1d5e1603b39d002a04659c7bc99a06d9dc3d0",
     "status": "pass",
-    "utc": "2026-11-11T02:22:09Z",
-    "wall_s": 0.23
+    "utc": "2026-11-11T02:38:34Z",
+    "wall_s": 0.38
    },
    "research_archive/2026-10-14_platonic_unification/newton_scale_exact_sympy_proof.py": {
     "detail": "",
     "sha256": "b4357cc8e11d013428e2d270831ffa50cd422988f3a5a6990811dfb16e990e2d",
     "status": "pass",
-    "utc": "2026-11-11T02:22:09Z",
-    "wall_s": 0.34
+    "utc": "2026-11-11T02:38:35Z",
+    "wall_s": 0.62
    },
    "research_archive/2026-10-14_platonic_unification/newton_subplanck_uv_gate.py": {
     "detail": "",
     "sha256": "d8bcfe0b08e4705a35d2027f2c5df14bfc7285f02ee6d574fb74a1486275850e",
     "status": "pass",
-    "utc": "2026-11-11T02:22:09Z",
-    "wall_s": 0.23
+    "utc": "2026-11-11T02:38:35Z",
+    "wall_s": 0.39
    },
    "research_archive/2026-10-14_platonic_unification/platonic_history_selector.py": {
     "detail": "",
     "sha256": "92fc951073e26f80ac604a5476468d65d0e05b0f2186b25ef09b2812362599bb",
     "status": "pass",
-    "utc": "2026-11-11T02:22:10Z",
-    "wall_s": 0.24
+    "utc": "2026-11-11T02:38:36Z",
+    "wall_s": 0.39
    },
    "research_archive/2026-10-14_platonic_unification/positive_transfer_observable_gate.py": {
     "detail": "",
     "sha256": "6aa2d82c8cd99a08598a93408d5aef35c46c272841c12a9d43d1b82d771c3ba9",
     "status": "pass",
-    "utc": "2026-11-11T02:22:10Z",
-    "wall_s": 0.22
+    "utc": "2026-11-11T02:38:36Z",
+    "wall_s": 0.38
    },
    "research_archive/2026-10-14_platonic_unification/test_platonic_entropy_nonlinear.py": {
     "detail": "",
     "sha256": "49c2883fcc82a80fc9b8e581fbc62bae73385f9e5fc97f753917ce6505e9bbff",
     "status": "pass",
-    "utc": "2026-11-11T02:22:11Z",
-    "wall_s": 0.22
+    "utc": "2026-11-11T02:38:38Z",
+    "wall_s": 0.38
    },
    "research_archive/2026-10-14_platonic_vortex/platonic_vortex_bridge.py": {
     "detail": "",
     "sha256": "1f40e4f1b61db9c2fd46ba437519c349515465a1173b9013035ba8b5de0cfa8d",
     "status": "pass",
-    "utc": "2026-11-11T02:22:11Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:38Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-14_recovered_H64/Cathedral_Rederivation_2026-10-08.py": {
     "detail": "",
     "sha256": "66465d1c45238eff21fe24de5d5adebaa14841ee14260c9454f7336baafaca45",
     "status": "pass",
-    "utc": "2026-11-11T02:22:11Z",
-    "wall_s": 0.36
+    "utc": "2026-11-11T02:38:38Z",
+    "wall_s": 0.72
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_125_circumcentric_audit.py": {
     "detail": "",
     "sha256": "793231f6eaeddd942cf04cd2af42bed63302c8cf8a464385d68337dc27ccab80",
     "status": "pass",
-    "utc": "2026-11-11T02:22:11Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:39Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_complex_onsager_bridge.py": {
     "detail": "",
     "sha256": "b64e341f0455a3fffa8537112831af2f7f45d33275312e65dd17fcc5008dbf4d",
     "status": "pass",
-    "utc": "2026-11-11T02:22:13Z",
-    "wall_s": 1.14
+    "utc": "2026-11-11T02:38:41Z",
+    "wall_s": 2.05
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_entanglement_spin2_exact.py": {
     "detail": "",
     "sha256": "102458d280b8157e9af474d3e804078f3a6b375448b59e4817217987bb44f69a",
     "status": "pass",
-    "utc": "2026-11-11T02:22:14Z",
-    "wall_s": 1.12
+    "utc": "2026-11-11T02:38:43Z",
+    "wall_s": 2.03
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_entropy_force_bridge.py": {
     "detail": "",
     "sha256": "57808d2bb39ba562ab5d957f61c0e868ef062878095b587fb19f057e17b13ed3",
     "status": "pass",
-    "utc": "2026-11-11T02:22:14Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:43Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_kissing_entropy.py": {
     "detail": "",
     "sha256": "27822d53ee46c6b1e8f7c30a59e82ef877f338d84d1f21fa99c9c28d35e69324",
     "status": "pass",
-    "utc": "2026-11-11T02:22:14Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:43Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_operator_audit.py": {
     "detail": "",
     "sha256": "8079b8eb97c982a9871a4a1c05df657d16ccf1aa65c78529f1530d0205b2047c",
     "status": "pass",
-    "utc": "2026-11-11T02:22:14Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:43Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_strict_64_closure.py": {
     "detail": "",
     "sha256": "81b2d4dcc41f9ed07b286cc217b8bc11fc2cce841069e35c49cf6098ad9d36c6",
     "status": "pass",
-    "utc": "2026-11-11T02:22:14Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:43Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/cathedral_unified_urt_runner.py": {
     "detail": "",
     "sha256": "d4ded05cfda3469ea2b7a97906eb778ea4152490573bd242ef5d9b4daf4db1b4",
     "status": "pass",
-    "utc": "2026-11-11T02:22:15Z",
-    "wall_s": 1.15
+    "utc": "2026-11-11T02:38:45Z",
+    "wall_s": 2.07
    },
    "research_archive/2026-10-15_icosahedral_125_DEC_H64/solar_three_body_entanglement_baseline.py": {
     "detail": "",
     "sha256": "de3e58ad53decf0aff26ebe5b092e300c517c97f6bd4dc197af59d39cc48f4ba",
     "status": "pass",
-    "utc": "2026-11-11T02:22:15Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:38:45Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-16_center4_synthesis/center4_unified_audit.py": {
     "detail": "",
     "sha256": "b48f7b7bd38f8bdd3185f4ee659cd0bfe54d5028c651e1782e09d3b87718324f",
     "status": "pass",
-    "utc": "2026-11-11T02:22:15Z",
-    "wall_s": 0.18
+    "utc": "2026-11-11T02:38:46Z",
+    "wall_s": 0.31
    },
    "research_archive/2026-10-16_hidden_flavour_bridge/koide_hidden_flavour_corrected_audit.py": {
     "detail": "",
     "sha256": "cd82b6d93c918ddd10d64911997c1fea685a194e03ae341736c6b121c8696805",
     "status": "pass",
-    "utc": "2026-11-11T02:22:15Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:46Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-16_hidden_visible_povm/hidden_visible_exact_certificate.py": {
     "detail": "",
     "sha256": "5e2d169f09f2f7323b7a368764f9d550fbdf18f4e0ecad328ad2bbcf4bca619e",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.43
+    "utc": "2026-11-11T02:38:46Z",
+    "wall_s": 0.8
    },
    "research_archive/2026-10-16_hidden_visible_povm/hidden_visible_povm_check.py": {
     "detail": "",
     "sha256": "8a6d31191b168536d5c4a04dd9b0040fdfa1760cd3a85c1febca8e189becd3ad",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:47Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-16_koide_phase/koide_circulant_invariant_gate.py": {
     "detail": "",
     "sha256": "20e4f5a0951bdff30a84dbdd87d6f80ef174f14d1eff1847e9784ea7adb89b41",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.05
+    "utc": "2026-11-11T02:38:47Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-10-16_koide_phase/koide_phase_independent_check.py": {
     "detail": "",
     "sha256": "8aee17d7273dc062a147fc45beeaec6d0054f8abdc547fd1a5162359db9e6eda",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.01
+    "utc": "2026-11-11T02:38:47Z",
+    "wall_s": 0.02
    },
    "research_archive/2026-10-16_multicell_gravity/cathedral_five_stage_audit_2026_10_16.py": {
     "detail": "",
     "sha256": "8b7649937beb7137be2624836f23069eb8e1b8d4eade0366dfd69363618e34b1",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.26
+    "utc": "2026-11-11T02:38:47Z",
+    "wall_s": 0.47
    },
    "research_archive/2026-10-16_multicell_gravity/cathedral_four_links_audit_2026_10_16.py": {
     "detail": "",
     "sha256": "013902dd46f6007ec3586055e7417af63c628d89ba4481131bf0ed62a05c428d",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.18
+    "utc": "2026-11-11T02:38:47Z",
+    "wall_s": 0.31
    },
    "research_archive/2026-10-16_multicell_gravity/cathedral_multicell_three_theorems_2026_10_16.py": {
     "detail": "",
     "sha256": "0ebc93fbef05b3400e40f26205c977cbb2fea9ff84ea213ef5aa79574d2c187c",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.08
+    "utc": "2026-11-11T02:38:48Z",
+    "wall_s": 0.13
    },
    "research_archive/2026-10-16_physics_gates/cathedral_scalar_spin2_derivative_gate.py": {
     "detail": "",
     "sha256": "1a772757391b0b8d3c3e43a7495b378482a94c8a5d3b8c7d381220f371a127f6",
     "status": "pass",
-    "utc": "2026-11-11T02:22:16Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:38:48Z",
+    "wall_s": 0.15
    },
    "research_archive/2026-10-16_sourced_gauge_hidden_berry/berry_bkm_positive_state_test.py": {
     "detail": "",
     "sha256": "83b2339724800363791769215f0219bbff5c20e7f4b646d57f9d672a464e63c3",
     "status": "pass",
-    "utc": "2026-11-11T02:22:17Z",
-    "wall_s": 0.18
+    "utc": "2026-11-11T02:38:48Z",
+    "wall_s": 0.35
    },
    "research_archive/2026-10-16_sourced_gauge_hidden_berry/hidden_berry_exact.py": {
     "detail": "",
     "sha256": "1d2ce2fb15faf29272c8f0082afbf040ad7cf85788c6c7eaae13b63cf336046e",
     "status": "pass",
-    "utc": "2026-11-11T02:22:18Z",
-    "wall_s": 1.23
+    "utc": "2026-11-11T02:38:50Z",
+    "wall_s": 2.29
    },
    "research_archive/2026-10-16_sourced_gauge_hidden_berry/sourced_maxwell_exact.py": {
     "detail": "",
     "sha256": "def988660b2a5363d4359f7f042496a617fd3e6a2975af68c3bc8e056834d1d6",
     "status": "pass",
-    "utc": "2026-11-11T02:22:18Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:38:50Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-17_exact_14D_H64_reduction/execute_exact_full64_to3.py": {
     "detail": "",
     "sha256": "b753f6c19c6737e308fea2b6ee94a3b1d8ad433d6adbe2bdc92f8ea6e9a7d1d7",
     "status": "pass",
-    "utc": "2026-11-11T02:22:18Z",
-    "wall_s": 0.19
+    "utc": "2026-11-11T02:38:51Z",
+    "wall_s": 0.3
    },
    "research_archive/2026-10-17_exact_14D_H64_reduction/native_h64_exact_14_to4.py": {
     "detail": "",
     "sha256": "058eb35c74bbc0f0fa962422e8cafe3e9ea8826ba6f5c6c52bf0ce7de19101ce",
     "status": "pass",
-    "utc": "2026-11-11T02:22:18Z",
-    "wall_s": 0.08
+    "utc": "2026-11-11T02:38:51Z",
+    "wall_s": 0.12
    },
    "research_archive/2026-10-17_exact_c3_bulk_mass/cathedral_strict_64_closure.py": {
     "detail": "",
     "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
     "status": "pass",
-    "utc": "2026-11-11T02:22:18Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:51Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-17_exact_c3_bulk_mass/exact_bulk_chiral_koide_certificate_fast.py": {
     "detail": "",
     "sha256": "56f5fe076869bf6d3523fb9bd7cf8678afa6de1a3c93afe5445efa95ff13ec23",
     "status": "pass",
-    "utc": "2026-11-11T02:22:19Z",
-    "wall_s": 0.29
+    "utc": "2026-11-11T02:38:52Z",
+    "wall_s": 0.5
    },
    "research_archive/2026-10-17_exact_c3_bulk_mass/exact_conditioned_G4_zero_triplet_certificate.py": {
     "detail": "",
     "sha256": "efe035bb21e2c82f37c90c33dc97433a81902cd2331c153e6d35a60c754c61b4",
     "status": "pass",
-    "utc": "2026-11-11T02:22:19Z",
-    "wall_s": 0.35
+    "utc": "2026-11-11T02:38:52Z",
+    "wall_s": 0.6
    },
    "research_archive/2026-10-17_exact_c3_bulk_mass/full_cone_a5_and_mass_test.py": {
     "detail": "",
     "sha256": "f8a3e9769b9f7c73c700586c0e25833245b6c607352d873a20c4a90a7abf1406",
     "status": "pass",
-    "utc": "2026-11-11T02:22:19Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:38:52Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-17_exact_c3_bulk_mass/hidden_G4_seesaw_H64_bridge_audit.py": {
     "detail": "",
     "sha256": "803f365229093011bb7d06f57b5b75e76c025684d612a735bb9514e6dce0edba",
     "status": "pass",
-    "utc": "2026-11-11T02:22:19Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:38:52Z",
+    "wall_s": 0.12
    },
    "research_archive/2026-10-17_exact_chiral_kms_berry/koide_native_chiral_berry_exact.py": {
     "detail": "",
     "sha256": "dbf079d206c0b14587dcc9fc01009ba1fe7f81472b37dcb28b04df60d88dc264",
     "status": "pass",
-    "utc": "2026-11-11T02:22:21Z",
-    "wall_s": 2.05
+    "utc": "2026-11-11T02:38:56Z",
+    "wall_s": 3.89
    },
    "research_archive/2026-10-17_full_six_triplet_photon/cathedral_strict_64_closure.py": {
     "detail": "",
     "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
     "status": "pass",
-    "utc": "2026-11-11T02:22:21Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:56Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-17_full_six_triplet_photon/native_bulk_peierls_check.py": {
     "detail": "",
     "sha256": "8746eaaec91f89fafb679b82eb5166b66d9796dc85317b3881ad846fad06b74b",
     "status": "pass",
-    "utc": "2026-11-11T02:22:21Z",
-    "wall_s": 0.08
+    "utc": "2026-11-11T02:38:56Z",
+    "wall_s": 0.14
    },
    "research_archive/2026-10-17_full_six_triplet_photon/native_chiral_selected_history.py": {
     "detail": "",
     "sha256": "b54fd5d85bc29b4fa8d0e5cb69ded2079656ba3759b3c0288ed9e221840b2415",
     "status": "pass",
-    "utc": "2026-11-11T02:22:21Z",
-    "wall_s": 0.1
+    "utc": "2026-11-11T02:38:57Z",
+    "wall_s": 0.18
    },
    "research_archive/2026-10-17_full_six_triplet_photon/six_triplet_photon_cumulant.py": {
     "detail": "",
     "sha256": "5779cc79b6901f7ea94fd0fd3fc1529a268c4651a259a6dc6c2ddd9090152f4a",
     "status": "pass",
-    "utc": "2026-11-11T02:22:21Z",
-    "wall_s": 0.1
+    "utc": "2026-11-11T02:38:57Z",
+    "wall_s": 0.18
    },
    "research_archive/2026-10-17_h64_neutral_photon/urt_h64_source_level_mass_gate.py": {
     "detail": "",
     "sha256": "884c745d792200d18351ab0865818b45d2bc1df458e52023d98e6efb89b5d9c1",
     "status": "pass",
-    "utc": "2026-11-11T02:22:21Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:57Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-17_h64_quadratic_koide_phase/urt_h64_quadratic_phase_derivation.py": {
     "detail": "research_archive/2026-10-17_h64_quadratic_koide_phase/golden_species_operators.npz",
     "sha256": "5290346ebe7c4c667f1ddca4355e4692800ca053b37b5e05fda9c1f9146438b4",
     "status": "missing_file",
     "tail": "rt_h64_quadratic_phase_derivation.py\", line 15, in <dictcomp>\n    sums={name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in fnames}\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1050, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_h64_quadratic_koide_phase/golden_species_operators.npz'\n",
-    "utc": "2026-11-11T02:22:22Z",
-    "wall_s": 0.19
+    "utc": "2026-11-11T02:38:57Z",
+    "wall_s": 0.31
    },
    "research_archive/2026-10-17_native_3d_photon_chiral/cathedral_strict_64_closure.py": {
     "detail": "",
     "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
     "status": "pass",
-    "utc": "2026-11-11T02:22:22Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:57Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-17_native_3d_photon_chiral/native_bulk_peierls_check.py": {
     "detail": "",
     "sha256": "8746eaaec91f89fafb679b82eb5166b66d9796dc85317b3881ad846fad06b74b",
     "status": "pass",
-    "utc": "2026-11-11T02:22:22Z",
-    "wall_s": 0.08
+    "utc": "2026-11-11T02:38:57Z",
+    "wall_s": 0.14
    },
    "research_archive/2026-10-17_native_3d_photon_chiral/native_chiral_selected_history.py": {
     "detail": "",
     "sha256": "b54fd5d85bc29b4fa8d0e5cb69ded2079656ba3759b3c0288ed9e221840b2415",
     "status": "pass",
-    "utc": "2026-11-11T02:22:22Z",
-    "wall_s": 0.1
+    "utc": "2026-11-11T02:38:58Z",
+    "wall_s": 0.17
    },
    "research_archive/2026-10-17_native_photon_wilson/cathedral_strict_64_closure.py": {
     "detail": "",
     "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
     "status": "pass",
-    "utc": "2026-11-11T02:22:22Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:58Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-17_native_photon_wilson/photon_wilson_on_urt_shell.py": {
     "detail": "",
     "sha256": "880e133e7cea093f0cc8c7e7dbd5e4cae59f43ddf6ba6d7bba2bd286bea3ce52",
     "status": "pass",
-    "utc": "2026-11-11T02:22:22Z",
-    "wall_s": 0.36
+    "utc": "2026-11-11T02:38:58Z",
+    "wall_s": 0.64
    },
    "research_archive/2026-10-17_original_oct08_source/canonical_nature_work/binding_audit.py": {
     "detail": "",
     "sha256": "04e79f18dcfbf42a0569938a62ab86be8e4dc12c64513d75010b7b5cee946716",
     "status": "pass",
-    "utc": "2026-11-11T02:22:23Z",
-    "wall_s": 0.22
+    "utc": "2026-11-11T02:38:59Z",
+    "wall_s": 0.36
    },
    "research_archive/2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py": {
     "detail": "",
     "sha256": "e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75",
     "status": "pass",
-    "utc": "2026-11-11T02:22:33Z",
-    "wall_s": 10.67
+    "utc": "2026-11-11T02:39:18Z",
+    "wall_s": 19.53
    },
    "research_archive/2026-10-17_original_oct08_source/combined_source_work/gauge/charged_gauge_join.py": {
     "detail": "",
     "sha256": "749fe1500b46a511fa4ab8d91a0132158799db99a14ac4b2fa150add435464b3",
     "status": "pass",
-    "utc": "2026-11-11T02:22:37Z",
-    "wall_s": 4.11
+    "utc": "2026-11-11T02:39:26Z",
+    "wall_s": 7.8
    },
    "research_archive/2026-10-17_original_oct08_source/combined_source_work/photon/correlated_long_transfer.py": {
     "detail": "research_archive/2026-10-17_original_oct08_source/joint_vacuum_work/photon/correlated_hat_k5_checks.json",
     "sha256": "e006dda807a2afdafbfd50612e861162c6ff1b3fc8666efb9fffeb4047d9a31e",
     "status": "missing_file",
     "tail": ".json').read_text())\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/joint_vacuum_work/photon/correlated_hat_k5_checks.json'\n",
-    "utc": "2026-11-11T02:22:38Z",
-    "wall_s": 0.51
+    "utc": "2026-11-11T02:39:27Z",
+    "wall_s": 0.8
    },
    "research_archive/2026-10-17_original_oct08_source/combined_source_work/species/combined_signed_source.py": {
     "detail": "research_archive/2026-10-17_original_oct08_source/flavour_work_v2/outer_history_operators.npz",
     "sha256": "9801136f61d9280430b78f3821d780a7d310807687143b001b7f2ad956c3bbf5",
     "status": "missing_file",
     "tail": "aceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/combined_source_work/species/combined_signed_source.py\", line 14, in <module>\n    o=np.load(ROOT/\"flavour_work_v2/outer_history_operators.npz\")\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/flavour_work_v2/outer_history_operators.npz'\n",
-    "utc": "2026-11-11T02:22:38Z",
-    "wall_s": 0.29
+    "utc": "2026-11-11T02:39:27Z",
+    "wall_s": 0.44
    },
    "research_archive/2026-10-17_original_oct08_source/common_action_work/matter/microscopic_source_currents.py": {
     "detail": "research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/theory_input_v5.md",
     "sha256": "a2564f6d93b428b6c2aad7b7556ee48b2c498bba7c09c4c1a47d19a93e0eead5",
     "status": "missing_file",
     "tail": "8_source/common_action_work/matter/microscopic_source_currents.py\", line 72, in sha\n    return hashlib.sha256(Path(p).read_bytes()).hexdigest()\n                          ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1050, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/theory_input_v5.md'\n",
-    "utc": "2026-11-11T02:22:39Z",
-    "wall_s": 0.85
+    "utc": "2026-11-11T02:39:29Z",
+    "wall_s": 1.54
    },
    "research_archive/2026-10-17_original_oct08_source/common_action_work/photon/translated_photon_response.py": {
     "detail": "research_archive/2026-10-17_original_oct08_source/derive_three_work/photon/a4_entropy_gaussian.py",
     "sha256": "5fd6fe37768908c676ecf74dccfc76f747657951723b10d18b4b503ccd293274",
     "status": "missing_file",
     "tail": "k (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/common_action_work/photon/translated_photon_response.py\", line 19, in <module>\n    geom=importlib.util.module_from_spec(spec);spec.loader.exec_module(geom)\n                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 936, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1073, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1130, in get_data\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/derive_three_work/photon/a4_entropy_gaussian.py'\n",
-    "utc": "2026-11-11T02:22:39Z",
-    "wall_s": 0.27
+    "utc": "2026-11-11T02:39:29Z",
+    "wall_s": 0.47
    },
    "research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/derive_a4_clifford_dirac.py": {
     "detail": "sandbox path /mnt/data/cathedral_finite_dirac_trace_audit.py",
     "sha256": "82eb6346d00b3e8a0d630e1ccdea889d402a2b140bb883ed82f279bdd55c9dfb",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/derive_a4_clifford_dirac.py\", line 8, in <module>\n    ns=runpy.run_path('/mnt/data/cathedral_finite_dirac_trace_audit.py')\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_finite_dirac_trace_audit.py'\n",
-    "utc": "2026-11-11T02:22:39Z",
-    "wall_s": 0.17
+    "utc": "2026-11-11T02:39:30Z",
+    "wall_s": 0.29
    },
    "research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/urt_dirac_selection_audit.py": {
     "detail": "sandbox path /mnt/data/derive_a4_clifford_dirac.py",
     "sha256": "2ca3a13cb94860822777ce02b83c73e3e1e20daa95d38149bb44e4b7da4494fe",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/urt_dirac_selection_audit.py\", line 9, in <module>\n    ns=runpy.run_path('/mnt/data/derive_a4_clifford_dirac.py')\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/derive_a4_clifford_dirac.py'\n",
-    "utc": "2026-11-11T02:22:39Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:39:30Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-17_original_oct08_source/common_action_work/recovery/decoded_originals/URT_full_framework/source_archive/urt_platonic_u2_holonomy.py": {
     "detail": "sandbox path /mnt/data/urt_platonic_u2_holonomy_results.json",
     "sha256": "765b07c592d868dd8642c9c8ca1e7eb7cd12b8576dcebc73c438e31c22c84249",
     "status": "missing_file",
     "tail": "decoded_originals/URT_full_framework/source_archive/urt_platonic_u2_holonomy.py\", line 125, in <module>\n    (OUT/'urt_platonic_u2_holonomy_results.json').write_text(json.dumps(result,indent=2))\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1078, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/urt_platonic_u2_holonomy_results.json'\n",
-    "utc": "2026-11-11T02:22:40Z",
-    "wall_s": 0.33
+    "utc": "2026-11-11T02:39:30Z",
+    "wall_s": 0.62
    },
    "research_archive/2026-10-17_original_oct08_source/common_action_work/review/source_action_lemma.py": {
     "detail": "",
     "sha256": "839e45efeeaa2731c82d8db4a45038175e147586a0e48835cf4b3d71d46b5f88",
     "status": "pass",
-    "utc": "2026-11-11T02:22:40Z",
-    "wall_s": 0.25
+    "utc": "2026-11-11T02:39:31Z",
+    "wall_s": 0.44
    },
    "research_archive/2026-10-17_original_oct08_source/common_action_work/review/source_response_dictionary.py": {
     "detail": "research_archive/2026-10-17_original_oct08_source/response_join_work/normalization/compact_source_normalization_operators.npz",
     "sha256": "81928fcbba7e4fa62b166aaa826a598e9041dbc34397c3fd799c728fbc88bf1e",
     "status": "missing_file",
     "tail": "raceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/common_action_work/review/source_response_dictionary.py\", line 15, in <module>\n    with np.load(INPUT,allow_pickle=False) as archive:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/response_join_work/normalization/compact_source_normalization_operators.npz'\n",
-    "utc": "2026-11-11T02:22:40Z",
-    "wall_s": 0.29
+    "utc": "2026-11-11T02:39:31Z",
+    "wall_s": 0.46
    },
    "research_archive/2026-10-17_original_oct08_source/continued_physics_work/photon/free_fock_photon.py": {
     "detail": "",
     "sha256": "f7b02a1d1cd34774940c635a2bab5752a49df5bf1ef66ad96a7216346a73dfff",
     "status": "pass",
-    "utc": "2026-11-11T02:22:43Z",
-    "wall_s": 2.53
+    "utc": "2026-11-11T02:39:35Z",
+    "wall_s": 4.04
    },
    "research_archive/2026-10-17_original_oct08_source/continued_physics_work/photon/source_dictionary.py": {
     "detail": "",
     "sha256": "5f30cd4fca553c126890ab7e0c3c22ef589ccdded774b673578094d669c21ee0",
     "status": "pass",
-    "utc": "2026-11-11T02:22:44Z",
-    "wall_s": 0.71
+    "utc": "2026-11-11T02:39:37Z",
+    "wall_s": 1.33
    },
    "research_archive/2026-10-17_original_oct08_source/derive_three_work/species/golden_species_derivation.py": {
     "detail": "research_archive/2026-10-17_original_oct08_source/flavour_work_v2/grounded_charged_amplitude_operators.npz",
     "sha256": "1b8de404389fc815f7b00ce4acb0fe5e38810c67df5ed82386d2269f11340b15",
     "status": "missing_file",
     "tail": "runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/derive_three_work/species/golden_species_derivation.py\", line 15, in <module>\n    z = np.load(ROOT / \"flavour_work_v2/grounded_charged_amplitude_operators.npz\")\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/flavour_work_v2/grounded_charged_amplitude_operators.npz'\n",
-    "utc": "2026-11-11T02:22:44Z",
-    "wall_s": 0.18
+    "utc": "2026-11-11T02:39:37Z",
+    "wall_s": 0.29
    },
    "research_archive/2026-10-17_original_oct08_source/final_join_work/matter/full_period_physical.py": {
     "detail": "research_archive/2026-10-17_original_oct08_source/combined_source_work/recovery/combined_chat_recovery.json",
     "sha256": "a6ca5279a5267bef1c13668e2407e7b5b0d1cbb1c50ea5a937394953713788b4",
     "status": "missing_file",
     "tail": "_physical.py\", line 225, in <module>\n    checks[\"provenance\"][p]=hashlib.sha256((ROOT/p).read_bytes()).hexdigest()\n                                           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1050, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/combined_source_work/recovery/combined_chat_recovery.json'\n",
-    "utc": "2026-11-11T02:22:45Z",
-    "wall_s": 0.75
+    "utc": "2026-11-11T02:39:38Z",
+    "wall_s": 1.44
    },
    "research_archive/2026-10-17_original_oct08_source/joint_vacuum_work/species/shared_species_vacuum.py": {
     "detail": "",
     "sha256": "80362428374375cc2679f53bf27d4574f32cd09c1c3d6c3ea97c1d171c92e34d",
     "status": "pass",
-    "utc": "2026-11-11T02:22:58Z",
-    "wall_s": 13.84
+    "utc": "2026-11-11T02:39:54Z",
+    "wall_s": 15.38
    },
    "research_archive/2026-10-17_original_oct08_source/joint_vacuum_work/species/verify_full64_deformations.py": {
     "detail": "",
     "sha256": "1aa48c95f5b33c1257abab871ab337737bb797d47e7d946af0762f0701b555e5",
     "status": "pass",
-    "utc": "2026-11-11T02:22:58Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:39:54Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-10-17_photon_path_resolved_chiral/cathedral_strict_64_closure.py": {
     "detail": "",
     "sha256": "865389a5fdb1be2779f41074decad375e2f3f165d0e1cf562fc0b85da6ebdfed",
     "status": "pass",
-    "utc": "2026-11-11T02:22:58Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:39:54Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-17_photon_path_resolved_chiral/gauged_chiral_face_loops.py": {
     "detail": "",
     "sha256": "d8125a18664db2d9a83b187316dc484a8b37280874dab6924a39fa480900d638",
     "status": "pass",
-    "utc": "2026-11-11T02:22:59Z",
-    "wall_s": 0.23
+    "utc": "2026-11-11T02:39:54Z",
+    "wall_s": 0.41
    },
    "research_archive/2026-10-17_photon_path_resolved_chiral/photon_wilson_on_urt_shell.py": {
     "detail": "",
     "sha256": "880e133e7cea093f0cc8c7e7dbd5e4cae59f43ddf6ba6d7bba2bd286bea3ce52",
     "status": "pass",
-    "utc": "2026-11-11T02:22:59Z",
-    "wall_s": 0.36
+    "utc": "2026-11-11T02:39:55Z",
+    "wall_s": 0.62
    },
    "research_archive/2026-10-17_photon_path_resolved_chiral/symbolic_gauged_chiral.py": {
     "detail": "",
     "sha256": "cbcfecff8c17f0fc07f26607bf5d682767a872226b06ca734f8ae61d11527c42",
     "status": "pass",
-    "utc": "2026-11-11T02:23:00Z",
-    "wall_s": 0.94
+    "utc": "2026-11-11T02:39:57Z",
+    "wall_s": 1.69
    },
    "research_archive/2026-10-17_recovery_assets/restore_matrices.py": {
     "detail": "",
     "sha256": "f185161dda0b7adf5018ad84f6092e391fe9cf1529a842bdaa43a820b3dc857d",
     "status": "pass",
-    "utc": "2026-11-11T02:23:00Z",
-    "wall_s": 0.04
+    "utc": "2026-11-11T02:39:57Z",
+    "wall_s": 0.05
    },
    "research_archive/2026-10-17_source_first_recovery/source_order_regression.py": {
     "detail": "",
     "sha256": "96718c196ebead4c9c06cd8b8305864f56d9595e7f50fa141ecf81f16a051b04",
     "status": "pass",
-    "utc": "2026-11-11T02:23:00Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:39:57Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-10-17_source_h64_joint_flux/joint_urt_h64_joint_holonomy_and_mass.py": {
     "detail": "research_archive/2026-10-17_source_h64_joint_flux/original_h64_species_link_source.npz",
     "sha256": "c9b4c0a2190234304a6c0baefc4a2103a765baa19d6462db3466467cfafdd182",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_source_h64_joint_flux/joint_urt_h64_joint_holonomy_and_mass.py\", line 18, in <module>\n    z=np.load(root/'original_h64_species_link_source.npz')\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_source_h64_joint_flux/original_h64_species_link_source.npz'\n",
-    "utc": "2026-11-11T02:23:00Z",
-    "wall_s": 0.26
+    "utc": "2026-11-11T02:39:57Z",
+    "wall_s": 0.43
    },
    "research_archive/2026-10-23_chat_recovery/kl_urt_koide_action.py": {
     "detail": "",
     "sha256": "0f8a996d7fe097772053760b667bb9c844d5c61c452999b79c0b70694ed0b502",
     "status": "pass",
-    "utc": "2026-11-11T02:23:01Z",
-    "wall_s": 0.28
+    "utc": "2026-11-11T02:39:58Z",
+    "wall_s": 0.46
    },
    "research_archive/2026-10-24_alpha_physical_gate/a4_wilson_beta4_independent.py": {
     "detail": "",
     "sha256": "53fb0235fa0033c510378da2340829f0d09c078af213decb5737865b75afb292",
     "status": "pass",
-    "utc": "2026-11-11T02:23:01Z",
-    "wall_s": 0.24
+    "utc": "2026-11-11T02:39:58Z",
+    "wall_s": 0.35
    },
    "research_archive/2026-10-24_alpha_physical_gate/alpha_bkm_isospectral_exact.py": {
     "detail": "",
     "sha256": "d833e7cea45cd614da7cf8236add05c8ab5443bce3e426dc8e80d4a9284b4c0d",
     "status": "pass",
-    "utc": "2026-11-11T02:23:01Z",
-    "wall_s": 0.17
+    "utc": "2026-11-11T02:39:58Z",
+    "wall_s": 0.28
    },
    "research_archive/2026-10-24_alpha_physical_gate/alpha_bkm_maxwell_gate.py": {
     "detail": "",
     "sha256": "ecb6ebd4e817817a625395af2c57ef6ff826363ac3aabaa38ec0656efad3c97b",
     "status": "pass",
-    "utc": "2026-11-11T02:23:01Z",
-    "wall_s": 0.23
+    "utc": "2026-11-11T02:39:59Z",
+    "wall_s": 0.38
    },
    "research_archive/2026-10-24_alpha_physical_gate/alpha_exact_fourier.py": {
     "detail": "",
     "sha256": "74b0da06ea8a656fa4ac432a5fae93d680e705ca7735f969f3e733f2472a7e92",
     "status": "pass",
-    "utc": "2026-11-11T02:23:06Z",
-    "wall_s": 4.3
+    "utc": "2026-11-11T02:40:06Z",
+    "wall_s": 7.67
    },
    "research_archive/2026-10-24_alpha_physical_gate/cathedral_native_137_exact_charge_indices.py": {
     "detail": "",
     "sha256": "fa794b1428874298f031dfbd9c8cdc8057c5678114bc07573d8ee4b0b718a086",
     "status": "pass",
-    "utc": "2026-11-11T02:23:06Z",
-    "wall_s": 0.33
+    "utc": "2026-11-11T02:40:07Z",
+    "wall_s": 0.52
    },
    "research_archive/2026-10-24_alpha_physical_gate/f5_exact_cathedral_alpha_candidate.py": {
     "detail": "",
     "sha256": "81aad069af6dc582b3a6c55b63811b9fecf2ea2110a925605b3ddb30452c7226",
     "status": "pass",
-    "utc": "2026-11-11T02:23:06Z",
-    "wall_s": 0.22
+    "utc": "2026-11-11T02:40:07Z",
+    "wall_s": 0.36
    },
    "research_archive/2026-10-24_alpha_physical_gate/gravity_gauge_fixedpoint_nofit.py": {
     "detail": "",
     "sha256": "39cca5ca40bb36c447c249d5be1c35bf9b8a18a9f2bcb3534eca537681274420",
     "status": "pass",
-    "utc": "2026-11-11T02:23:06Z",
-    "wall_s": 0.01
+    "utc": "2026-11-11T02:40:07Z",
+    "wall_s": 0.02
    },
    "research_archive/2026-10-24_alpha_physical_gate/native_hidden8_complete_11_modes_exact.py": {
     "detail": "",
     "sha256": "0063c8b907f2dd885bbc1ed0a07e59ec54fe275f572a42730164cdf86eb9961f",
     "status": "pass",
-    "utc": "2026-11-11T02:23:10Z",
-    "wall_s": 3.5
+    "utc": "2026-11-11T02:40:14Z",
+    "wall_s": 6.48
    },
    "research_archive/2026-10-24_alpha_physical_gate/native_peierls_two_sector_analytic.py": {
     "detail": "",
     "sha256": "d88005aa6bb4e1c24ce9d7cac41136bdae0f4d45509e3855a713941ff8c01e67",
     "status": "pass",
-    "utc": "2026-11-11T02:23:10Z",
-    "wall_s": 0.25
+    "utc": "2026-11-11T02:40:14Z",
+    "wall_s": 0.46
    },
    "research_archive/2026-10-24_round103_parity_selection/round103_chiral_gate.py": {
     "detail": "",
     "sha256": "3454e9d8cdae8194970cff4f7116f71659805638a6f40bc981c87aca1d42e324",
     "status": "pass",
-    "utc": "2026-11-11T02:23:10Z",
-    "wall_s": 0.21
+    "utc": "2026-11-11T02:40:15Z",
+    "wall_s": 0.4
    },
    "research_archive/2026-10-25_golay_leech_selection/cathedral_golay_leech_selection_audit.py": {
     "detail": "sandbox path /mnt/data/cathedral_golay_leech_selection_results.json",
     "sha256": "5878b151ad79a51fd7f83930ac86e912a1792515c3224cf56cad2818c384c0db",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-25_golay_leech_selection/cathedral_golay_leech_selection_audit.py\", line 158, in <module>\n    with open('/mnt/data/cathedral_golay_leech_selection_results.json','w') as f:json.dump(report,f,indent=2)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_golay_leech_selection_results.json'\n",
-    "utc": "2026-11-11T02:23:11Z",
-    "wall_s": 0.84
+    "utc": "2026-11-11T02:40:16Z",
+    "wall_s": 1.48
    },
    "research_archive/2026-10-27_to_2026-11-01/test_five_day_cathedral_archive.py": {
     "detail": "",
     "sha256": "6bb64b3746a0afb655859276e235572d307e3cabd173065829d0e3f3756ed6a3",
     "status": "pass",
-    "utc": "2026-11-11T02:23:11Z",
-    "wall_s": 0.22
+    "utc": "2026-11-11T02:40:16Z",
+    "wall_s": 0.36
    },
    "research_archive/2026-11-07_joint_interacting_native/cathedral_4d_euclidean_consistency_verify_2026_11_08.py": {
     "detail": "",
     "sha256": "371c42e7d4639e438bd54d1fa529de47ffc6b4604e86b322a40d30e6524df98c",
     "status": "pass",
-    "utc": "2026-11-11T02:23:12Z",
-    "wall_s": 0.36
+    "utc": "2026-11-11T02:40:17Z",
+    "wall_s": 0.59
    },
    "research_archive/2026-11-07_joint_interacting_native/cathedral_constructed_joint_dynamics_2026_11_07.py": {
     "detail": "",
     "sha256": "5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd",
     "status": "pass",
-    "utc": "2026-11-11T02:23:12Z",
-    "wall_s": 0.32
+    "utc": "2026-11-11T02:40:18Z",
+    "wall_s": 0.56
    },
    "research_archive/2026-11-07_joint_interacting_native/cathedral_modular_joint_interface_verify.py": {
     "detail": "",
     "sha256": "7b477e92ef0e684dd8d243e9cb24c0356bdb05ef4fef6a6cc5879869940183ad",
     "status": "pass",
-    "utc": "2026-11-11T02:23:12Z",
-    "wall_s": 0.61
+    "utc": "2026-11-11T02:40:19Z",
+    "wall_s": 0.95
    },
    "research_archive/2026-11-07_joint_interacting_native/cathedral_selection_and_refinement_verify_2026_11_08.py": {
     "detail": "",
     "sha256": "3c8c1565e3fbd0dca61b61dacd2b4dc999881922a5578dadd86b31dc0140f168",
     "status": "pass",
-    "utc": "2026-11-11T02:23:13Z",
-    "wall_s": 0.38
+    "utc": "2026-11-11T02:40:19Z",
+    "wall_s": 0.6
    },
    "research_archive/2026-11-07_joint_interacting_native/test_cathedral_constructed_joint_2026_11_07.py": {
     "detail": "",
     "sha256": "70a33beae60ec33c2c75de0c2841d317d0a141d371c01f77f0423a81100241fe",
     "status": "pass",
-    "utc": "2026-11-11T02:23:14Z",
-    "wall_s": 0.34
+    "utc": "2026-11-11T02:40:21Z",
+    "wall_s": 0.62
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_all_in_one.py": {
     "detail": "",
     "sha256": "82311ee8a708df94a9488467aef5279393a5fe85faf6d912841adbbff9eb19a3",
     "status": "pass",
-    "utc": "2026-11-11T02:23:17Z",
-    "wall_s": 2.87
+    "utc": "2026-11-11T02:40:27Z",
+    "wall_s": 6.13
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_derived_physics_step.py": {
     "detail": "",
     "sha256": "5c50705c40c31e7382c837de119f25932826b732c41ec840d1a15e7e47428a94",
     "status": "pass",
-    "utc": "2026-11-11T02:23:19Z",
-    "wall_s": 2.04
+    "utc": "2026-11-11T02:40:30Z",
+    "wall_s": 3.3
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_integrated_verification.py": {
     "detail": "",
     "sha256": "097f33d0a1470cc24eecfe63fd0e484e830235f47533cb57539d5e8a40ccfd79",
     "status": "pass",
-    "utc": "2026-11-11T02:23:19Z",
-    "wall_s": 0.25
+    "utc": "2026-11-11T02:40:30Z",
+    "wall_s": 0.4
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_spin_dynamics.py": {
     "detail": "",
     "sha256": "a95cfe06ebae2a2aef3065219964deac0fe158ae645e3c963e2dedc7a78dbf7c",
     "status": "pass",
-    "utc": "2026-11-11T02:23:21Z",
-    "wall_s": 2.06
+    "utc": "2026-11-11T02:40:35Z",
+    "wall_s": 4.74
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_spin_first_principles_audit.py": {
     "detail": "",
     "sha256": "b663471f98d383bc107cccc3593082e585092f16db9c7491c86cb5dd4a194e37",
     "status": "pass",
-    "utc": "2026-11-11T02:23:22Z",
-    "wall_s": 1.45
+    "utc": "2026-11-11T02:40:38Z",
+    "wall_s": 3.08
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_spinning_selection.py": {
     "detail": "",
     "sha256": "79149e12198245aea95112988b11c3194041102945c41e028b46a44771007ca4",
     "status": "pass",
-    "utc": "2026-11-11T02:23:23Z",
-    "wall_s": 0.3
+    "utc": "2026-11-11T02:40:39Z",
+    "wall_s": 0.52
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_spinning_test.py": {
     "detail": "",
     "sha256": "44d3927d906d662cb099b9fa1434ca057292ea05848721b51897cfa3500d5aa4",
     "status": "pass",
-    "utc": "2026-11-11T02:23:23Z",
-    "wall_s": 0.59
+    "utc": "2026-11-11T02:40:40Z",
+    "wall_s": 0.98
    },
    "research_archive/2026-11-07_spinning_whole_machine/cathedral_urt_chiral_derivation.py": {
     "detail": "",
     "sha256": "fad8b9e87553d242ad8c47968e5e9b9c41bf7f4d4e321f73836adac7254dd771",
     "status": "pass",
-    "utc": "2026-11-11T02:23:24Z",
-    "wall_s": 1.08
+    "utc": "2026-11-11T02:40:42Z",
+    "wall_s": 1.93
    },
    "research_archive/2026-11-07_spinning_whole_machine/urt_spinning_interaction_law.py": {
     "detail": "",
     "sha256": "512f7beecff344b75147a3d6fa6ed82835de8d5b021dd3a5826ce8ed343a71fe",
     "status": "pass",
-    "utc": "2026-11-11T02:23:25Z",
-    "wall_s": 0.55
+    "utc": "2026-11-11T02:40:43Z",
+    "wall_s": 0.92
    },
    "research_archive/2026-11-08_curvature_response/cathedral_24track_covariant_gap_verify.py": {
     "detail": "",
     "sha256": "905d43eeabfefb070e62c495905d24393cb2b23a16ddb6c3ed2a21da7b64f82d",
     "status": "pass",
-    "utc": "2026-11-11T02:23:25Z",
-    "wall_s": 0.45
+    "utc": "2026-11-11T02:40:43Z",
+    "wall_s": 0.75
    },
    "research_archive/2026-11-08_curvature_response/cathedral_hodge_gap.py": {
     "detail": "",
     "sha256": "df0c00353d3bc83f8d457b708776e4621a17c68d4ccff36b79dec82e4dec3389",
     "status": "pass",
-    "utc": "2026-11-11T02:23:26Z",
-    "wall_s": 0.44
+    "utc": "2026-11-11T02:40:44Z",
+    "wall_s": 0.74
    },
    "research_archive/2026-11-08_curvature_response/cathedral_response_duality_verify.py": {
     "detail": "",
     "sha256": "cc3596d113e6fea550504985b200b2e1d602e19cb1b1d501c75571423ceb8e05",
     "status": "pass",
-    "utc": "2026-11-11T02:23:26Z",
-    "wall_s": 0.24
+    "utc": "2026-11-11T02:40:45Z",
+    "wall_s": 0.42
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_4d_wick_stability_counterterm_2026_11_08.py": {
     "detail": "",
     "sha256": "f2727614677adce53e6f9237e29a08cb8f25a970ad9a8bcd93f87ce905c51910",
     "status": "pass",
-    "utc": "2026-11-11T02:23:27Z",
-    "wall_s": 0.62
+    "utc": "2026-11-11T02:40:45Z",
+    "wall_s": 0.9
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_a5_two_covariance_rg_2026_11_08.py": {
     "detail": "",
     "sha256": "c24f54e86b06910e5bfd356472497741a942ef826024558ee7e5aa925a124303",
     "status": "pass",
-    "utc": "2026-11-11T02:23:30Z",
-    "wall_s": 3.74
+    "utc": "2026-11-11T02:40:52Z",
+    "wall_s": 7.03
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_constructed_joint_dynamics_2026_11_07.py": {
     "detail": "",
     "sha256": "5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd",
     "status": "pass",
-    "utc": "2026-11-11T02:19:48Z",
-    "wall_s": 0.32
+    "utc": "2026-11-11T02:33:47Z",
+    "wall_s": 0.55
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_full50_complex_wick_2026_11_08.py": {
     "detail": "",
     "sha256": "e9d192221473b689d2891293061e99229a5c5335591b2192945a2ee53eebcd78",
     "status": "pass",
-    "utc": "2026-11-11T02:23:37Z",
-    "wall_s": 7.1
+    "utc": "2026-11-11T02:41:06Z",
+    "wall_s": 13.46
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.py": {
     "detail": "",
     "sha256": "4b0037061b0a5ee59d31e217f084850fc95ef1aced6b06c55eac607469ba1516",
     "status": "pass",
-    "utc": "2026-11-11T02:23:38Z",
-    "wall_s": 0.37
+    "utc": "2026-11-11T02:41:07Z",
+    "wall_s": 0.62
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_wick_exact_2026_11_08.py": {
     "detail": "",
     "sha256": "fcfe7ba4a39fbe02f2e3f18ef169d5ba4c8f899b3c67c1ca53d1d8211898ab0c",
     "status": "pass",
-    "utc": "2026-11-11T02:23:38Z",
-    "wall_s": 0.34
+    "utc": "2026-11-11T02:41:07Z",
+    "wall_s": 0.58
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_native_190_24clock_wick_covariance_2026_11_08.py": {
     "detail": "",
     "sha256": "8e56698b5a61d564dd1615397ec5343e4e2e8f15454ad31e04e48bdcb4f81017",
     "status": "pass",
-    "utc": "2026-11-11T02:23:39Z",
-    "wall_s": 0.33
+    "utc": "2026-11-11T02:41:08Z",
+    "wall_s": 0.56
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_native_24clock_covariance_2026_11_08.py": {
     "detail": "",
     "sha256": "c5492dd1b0f7e53987fd72416d7207553eb28846b609e8514da05243dc16f996",
     "status": "pass",
-    "utc": "2026-11-11T02:23:39Z",
-    "wall_s": 0.38
+    "utc": "2026-11-11T02:41:08Z",
+    "wall_s": 0.66
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_native_history_diffusion_2026_11_08.py": {
     "detail": "",
     "sha256": "28b8b45aac40ede9ff6d0aeec36dcd8c953f3bd7e8957d2c5f826f05dfd05e22",
     "status": "pass",
-    "utc": "2026-11-11T02:23:39Z",
-    "wall_s": 0.3
+    "utc": "2026-11-11T02:41:09Z",
+    "wall_s": 0.52
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_perturbation_stable_nonlocal_wick_2026_11_08.py": {
     "detail": "",
     "sha256": "790d1fad5e0da18c7c6505ce23215ee600221afe36dc4a33ea6c98361d9a3414",
     "status": "pass",
-    "utc": "2026-11-11T02:23:40Z",
-    "wall_s": 0.49
+    "utc": "2026-11-11T02:41:10Z",
+    "wall_s": 0.85
    },
    "research_archive/2026-11-08_native_h64_diffusion/cathedral_source_semigroup_and_4d_gaussian_2026_11_08.py": {
     "detail": "",
     "sha256": "d39a04925ee6797104cf4c63087d264bfc06f4e9c4344fa968054bf1dfb6437a",
     "status": "pass",
-    "utc": "2026-11-11T02:23:40Z",
-    "wall_s": 0.3
+    "utc": "2026-11-11T02:41:10Z",
+    "wall_s": 0.52
    },
    "research_archive/2026-11-08_native_h64_diffusion/certify_history_sixth_exact.py": {
     "detail": "",
     "sha256": "8ac9e17a788b35d9852b557b5c3f21917e389a87a12787e3d23a4202a796a31e",
     "status": "pass",
-    "utc": "2026-11-11T02:23:40Z",
-    "wall_s": 0.04
+    "utc": "2026-11-11T02:41:10Z",
+    "wall_s": 0.07
    },
    "research_archive/2026-11-08_native_h64_diffusion/verify_original_history_interface.py": {
     "detail": "",
     "sha256": "4655598c2bc548ea53a76068584a7809452b1d708285e30301387278f80801c3",
     "status": "pass",
-    "utc": "2026-11-11T02:23:40Z",
-    "wall_s": 0.33
+    "utc": "2026-11-11T02:41:11Z",
+    "wall_s": 0.55
    },
    "research_archive/2026-11-08_urt_prototype_audit/test_urt_prototype_scope_2026_11_08.py": {
     "detail": "",
     "sha256": "9b5ca811804a7a54062ffe523f2b7dd4c4d7330b8bad165e6c18cc8783146521",
     "status": "pass",
-    "utc": "2026-11-11T02:23:41Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:41:11Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-11-10_axis_order_k2/axis_order_k2.py": {
     "detail": "",
     "sha256": "15be5f3234c7ed524e47bb8f3d481854ccbb69d2068e1f378effef51af4a9129",
     "status": "pass",
-    "utc": "2026-11-11T02:22:05Z",
-    "wall_s": 30.15
+    "utc": "2026-11-11T02:38:27Z",
+    "wall_s": 57.08
    },
    "research_archive/2026-11-10_independent_native_k2/independent_native_k2.py": {
     "detail": "",
     "sha256": "f3d316ee79bf76514ce8a6611c2f914b819699d809fba2d0c53451c691bfd075",
     "status": "pass",
-    "utc": "2026-11-11T02:22:05Z",
-    "wall_s": 0.62
+    "utc": "2026-11-11T02:38:28Z",
+    "wall_s": 1.07
    },
    "research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_COUPLING_TEST_2026_11_11.py": {
     "detail": "",
     "sha256": "219fa55e5b5a10d4a4065709ccb4b5dd875517261d4eb43b764c7f263e2c0058",
     "status": "pass",
-    "utc": "2026-11-11T02:20:12Z",
-    "wall_s": 4.01
+    "utc": "2026-11-11T02:34:54Z",
+    "wall_s": 7.49
    },
    "research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_LOGDET_KERNEL_2026_11_10.py": {
     "detail": "",
     "sha256": "3ec708a13277ab3d4f91813306a484348b056abcd8230c9fca518592cb1e761f",
     "status": "pass",
-    "utc": "2026-11-11T02:20:13Z",
-    "wall_s": 1.02
+    "utc": "2026-11-11T02:34:56Z",
+    "wall_s": 1.85
    },
    "research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.py": {
     "detail": "",
     "sha256": "b3f13681760b69a2b3ef1eb08fc378f498f914919ad4a51fa57f638626ed77ad",
     "status": "pass",
-    "utc": "2026-11-11T02:21:15Z",
-    "wall_s": 61.16
+    "utc": "2026-11-11T02:36:56Z",
+    "wall_s": 118.33
    },
    "research_archive/2026-11-10_missing_intermediates/find_missing_intermediate_producers.py": {
     "detail": "",
     "sha256": "57d0f2c0e2eeb15d4234a197983323eea8d7f6c78dff6b16a929fa911f02b496",
     "status": "pass",
-    "utc": "2026-11-11T02:21:16Z",
-    "wall_s": 0.15
+    "utc": "2026-11-11T02:36:57Z",
+    "wall_s": 0.24
    },
    "research_archive/2026-11-10_sandbox_bound_scripts/classify_sandbox_bound_scripts.py": {
     "detail": "",
     "sha256": "c1b1099954bce4f9905cbe192092d45cc63a07fb56807a48604bb5c5f97ec0c0",
     "status": "pass",
-    "utc": "2026-11-11T02:22:05Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:38:28Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-11-10_signed_a5_covariance/signed_a5_covariance.py": {
     "detail": "",
     "sha256": "1a08ef941f2e661c1df2ffa22441a33ab24525d0988ef1d44943af9e5ece4011",
     "status": "pass",
-    "utc": "2026-11-11T02:21:35Z",
-    "wall_s": 3.29
+    "utc": "2026-11-11T02:37:30Z",
+    "wall_s": 5.94
    },
    "research_archive/2026-11-10_signed_dictionary_classes/signed_dictionary_classes.py": {
     "detail": "",
     "sha256": "817cca484618a812f66b353675ec36bfc11f0991bc4d1dc4bd335946d203b834",
     "status": "pass",
-    "utc": "2026-11-11T02:21:31Z",
-    "wall_s": 4.84
+    "utc": "2026-11-11T02:37:24Z",
+    "wall_s": 8.43
    },
    "research_archive/2026-11-10_signed_dictionary_k3/native_k3_collision.py": {
     "detail": "",
     "sha256": "bc4cd42799724f2589b372b9ef5cd1c71bc627af1b662b24afc2dcbebe6baf36",
     "status": "pass",
-    "utc": "2026-11-11T02:21:26Z",
-    "wall_s": 10.02
+    "utc": "2026-11-11T02:37:15Z",
+    "wall_s": 17.89
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/arf_full_five_charged_no_fit_nonuniqueness_2026_11_09.py": {
     "detail": "sandbox path /mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py",
     "sha256": "8ef6479abe8d31f71417b2f9a595362914c72ecfdaa56701580b5675a13466b7",
     "status": "missing_file",
     "tail": "uniqueness_2026_11_09.py\", line 9, in <module>\n    exec(compile(source.read_text().split('rng=np.random.default_rng(20261107)')[0], str(source),'exec'), globals())\n                 ^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py'\n",
-    "utc": "2026-11-11T02:23:41Z",
-    "wall_s": 0.21
+    "utc": "2026-11-11T02:41:12Z",
+    "wall_s": 0.33
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/arf_inter_sheet_current_pole_derivation_2026_11_09.py": {
     "detail": "sandbox path /mnt/data/cathedral_audit/cathedral_64_chiral_hybridization_2026_10_29.py",
     "sha256": "1dffdca8292638f8620b249b2a3489e36dacd6a4476ac98aec1e72782ba7de9c",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/audit/arf_inter_sheet_current_pole_derivation_2026_11_09.py\", line 8, in <module>\n    o=runpy.run_path(P+'cathedral_64_chiral_hybridization_2026_10_29.py')\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_audit/cathedral_64_chiral_hybridization_2026_10_29.py'\n",
-    "utc": "2026-11-11T02:23:41Z",
-    "wall_s": 0.28
+    "utc": "2026-11-11T02:41:12Z",
+    "wall_s": 0.47
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/cathedral_64_chiral_hybridization_2026_10_29.py": {
     "detail": "",
     "sha256": "467ae9db54abdbc1661424a069a193e4ee39b705a4de9c187d2de3ca5fe0f737",
     "status": "pass",
-    "utc": "2026-11-11T02:23:42Z",
-    "wall_s": 0.99
+    "utc": "2026-11-11T02:41:14Z",
+    "wall_s": 1.85
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/cathedral_64_history_double_gap_2026_10_29.py": {
     "detail": "",
     "sha256": "207ac80bfbb323ee918b5cb438dbdd9521831f986a45fd63a30cb967ba16a6c5",
     "status": "pass",
-    "utc": "2026-11-11T02:23:46Z",
-    "wall_s": 3.96
+    "utc": "2026-11-11T02:41:21Z",
+    "wall_s": 7.26
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/cathedral_constructed_joint_dynamics_2026_11_07.py": {
     "detail": "",
     "sha256": "5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd",
     "status": "pass",
-    "utc": "2026-11-11T02:23:46Z",
-    "wall_s": 0.31
+    "utc": "2026-11-11T02:41:22Z",
+    "wall_s": 0.54
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/first_principles_arf_source_test.py": {
     "detail": "sandbox path /mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py",
     "sha256": "a904af96693914f8308269e3ba227eb225578acd18431176e1ad9f751a1edc71",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/audit/first_principles_arf_source_test.py\", line 3, in <module>\n    with contextlib.redirect_stdout(io.StringIO()): n=runpy.run_path(p)\n                                                      ^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py'\n",
-    "utc": "2026-11-11T02:23:47Z",
-    "wall_s": 0.23
+    "utc": "2026-11-11T02:41:22Z",
+    "wall_s": 0.34
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/test_cathedral_constructed_joint_2026_11_07.py": {
     "detail": "",
     "sha256": "70a33beae60ec33c2c75de0c2841d317d0a141d371c01f77f0423a81100241fe",
     "status": "pass",
-    "utc": "2026-11-11T02:23:47Z",
-    "wall_s": 0.36
+    "utc": "2026-11-11T02:41:24Z",
+    "wall_s": 0.61
    },
    "research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_runner.py": {
     "detail": "",
     "sha256": "ba05fd5d0df4e4957089c2ce5066e86fb37359cafea7c0e104a8cfe78bcd36f9",
     "status": "pass",
-    "utc": "2026-11-11T02:23:48Z",
-    "wall_s": 0.23
+    "utc": "2026-11-11T02:41:24Z",
+    "wall_s": 0.38
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/CATHEDRAL_ARF_FOUR_CHANNELS_RECONCILIATION_2026-11-09.py": {
     "detail": "",
     "sha256": "f9b14b8f5aff1e6448009b30bac9c1d8f762eb6404a76e3f703797c15200cc3f",
     "status": "pass",
-    "utc": "2026-11-11T02:23:49Z",
-    "wall_s": 1.48
+    "utc": "2026-11-11T02:41:27Z",
+    "wall_s": 2.73
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/CATHEDRAL_ARF_FULL_K64_SPECTRAL_PROOF_2026-11-09.py": {
     "detail": "",
     "sha256": "a3f9d312807d4f98644689e2311b7aa44600d4f606ee54ef97479109338cad70",
     "status": "pass",
-    "utc": "2026-11-11T02:23:51Z",
-    "wall_s": 1.5
+    "utc": "2026-11-11T02:41:30Z",
+    "wall_s": 2.85
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py": {
     "detail": "",
     "sha256": "1b870d2c45d27ab4f5bf6138660a489eee5e85130e16b818a43dcecf122183c5",
     "status": "pass",
-    "utc": "2026-11-11T02:23:55Z",
-    "wall_s": 3.93
+    "utc": "2026-11-11T02:41:37Z",
+    "wall_s": 7.67
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_FIRST_PRINCIPLES_24_TRACK_2026-11-09.py": {
     "detail": "",
     "sha256": "4bc2974f990e022ddf2568ffb0b693e41aba460ab84548ee67939e95f7c31758",
     "status": "pass",
-    "utc": "2026-11-11T02:23:55Z",
-    "wall_s": 0.52
+    "utc": "2026-11-11T02:41:38Z",
+    "wall_s": 0.96
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_HISTORY_CLOCK_INFORMATION_CURVATURE_2026-11-09.py": {
     "detail": "sandbox path /mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py",
     "sha256": "370f76184f751af7f91136dd348e6b604c099a9e1e6747509451487f646011dc",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_HISTORY_CLOCK_INFORMATION_CURVATURE_2026-11-09.py\", line 7, in <module>\n    with contextlib.redirect_stdout(io.StringIO()): v=runpy.run_path('/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py')\n                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py'\n",
-    "utc": "2026-11-11T02:23:55Z",
-    "wall_s": 0.18
+    "utc": "2026-11-11T02:41:38Z",
+    "wall_s": 0.29
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py": {
     "detail": "sandbox path /mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py",
     "sha256": "783bfe236c51ab127e8a952310e3a5b049fe647dc039153171adac10cd6f5a7e",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py\", line 13, in <module>\n    with contextlib.redirect_stdout(io.StringIO()): m=runpy.run_path(P)\n                                                      ^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py'\n",
-    "utc": "2026-11-11T02:23:55Z",
-    "wall_s": 0.05
+    "utc": "2026-11-11T02:41:39Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_SOURCE_CLOCK_POSITIVE_TRANSFER_2026-11-09.py": {
     "detail": "sandbox path /mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py",
     "sha256": "8a8b20d95e656c9ad585ba28f4d0e888cb2aad2e22c4287b2afc58300489c083",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_SOURCE_CLOCK_POSITIVE_TRANSFER_2026-11-09.py\", line 10, in <module>\n    a=runpy.run_path('/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py')\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py'\n",
-    "utc": "2026-11-11T02:23:55Z",
-    "wall_s": 0.05
+    "utc": "2026-11-11T02:41:39Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/cathedral_audit/cathedral_64_chiral_hybridization_2026_10_29.py": {
     "detail": "",
     "sha256": "467ae9db54abdbc1661424a069a193e4ee39b705a4de9c187d2de3ca5fe0f737",
     "status": "pass",
-    "utc": "2026-11-11T02:22:08Z",
-    "wall_s": 1.04
+    "utc": "2026-11-11T02:38:33Z",
+    "wall_s": 1.87
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/cathedral_native_spatial_vacuum_audit_2026-11-09.py": {
     "detail": "sandbox path /mnt/data/cathedral_native_spatial_vacuum_audit_2026-11-09.json",
     "sha256": "efbcf9886341d41ab1651c8cc83e9aa25e8c3b1968e2e8c5d63ab62f2494d119",
     "status": "missing_file",
     "tail": "tial_vacuum_audit_2026-11-09.py\", line 116, in <module>\n    Path('/mnt/data/cathedral_native_spatial_vacuum_audit_2026-11-09.json').write_text(json.dumps(results,indent=2)+'\\n')\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1078, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_native_spatial_vacuum_audit_2026-11-09.json'\n",
-    "utc": "2026-11-11T02:23:56Z",
-    "wall_s": 0.26
+    "utc": "2026-11-11T02:41:39Z",
+    "wall_s": 0.45
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_24_CLOCK_MUST_BE_FIBRE_2026-11-09.py": {
     "detail": "",
     "sha256": "c7d37c7a8907867dedc41344d7d7d98e4ac016116507d8cc56516f3e4f3cdb76",
     "status": "pass",
-    "utc": "2026-11-11T02:24:00Z",
-    "wall_s": 4.25
+    "utc": "2026-11-11T02:41:47Z",
+    "wall_s": 8.15
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_24_CLOSED_SOURCE_RESPONSE_2026-11-09.py": {
     "detail": "",
     "sha256": "22e3b78864a8619bd5f4a6ca9f427f6154cecb1d594712af12d6e997d503f138",
     "status": "pass",
-    "utc": "2026-11-11T02:24:01Z",
-    "wall_s": 0.65
+    "utc": "2026-11-11T02:41:48Z",
+    "wall_s": 1.13
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_24_SPECTRAL_PROOF_2026-11-09.py": {
     "detail": "",
     "sha256": "7b2f143fb1aaa5885a69ed7156efc63a0776f6fb1b4aef08275afb521d29fbbb",
     "status": "pass",
-    "utc": "2026-11-11T02:24:14Z",
-    "wall_s": 13.05
+    "utc": "2026-11-11T02:42:15Z",
+    "wall_s": 26.33
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py": {
     "detail": "",
     "sha256": "1b870d2c45d27ab4f5bf6138660a489eee5e85130e16b818a43dcecf122183c5",
     "status": "pass",
-    "utc": "2026-11-11T02:24:18Z",
-    "wall_s": 4.49
+    "utc": "2026-11-11T02:42:22Z",
+    "wall_s": 7.49
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_24_CLOCK_CLOSED_RESPONSE_2026-11-09.py": {
     "detail": "",
     "sha256": "1753a23233cd3a50b6a75afd41a4965182bea3f0f6fbd8e9ba0a46e4a5b6cd52",
     "status": "pass",
-    "utc": "2026-11-11T02:24:18Z",
-    "wall_s": 0.09
+    "utc": "2026-11-11T02:42:22Z",
+    "wall_s": 0.14
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_AVERAGED_CHRONOLOGY_2026-11-09.py": {
     "detail": "",
     "sha256": "a539d6062298bcb9816e9e6fb6d246ff173ee72c43c6d13e2d03f0fb64429c59",
     "status": "pass",
-    "utc": "2026-11-11T02:24:19Z",
-    "wall_s": 0.53
+    "utc": "2026-11-11T02:42:23Z",
+    "wall_s": 0.89
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_AVERAGE_SOURCE_RESOLVENT_2026-11-09.py": {
     "detail": "",
     "sha256": "b7a3896c8a07485bf9fc1deb322ff8772dc77eb430a5ff5be47665674c720eb2",
     "status": "pass",
-    "utc": "2026-11-11T02:24:19Z",
-    "wall_s": 0.51
+    "utc": "2026-11-11T02:42:24Z",
+    "wall_s": 0.88
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_EXACT_SOURCE_ISOTYPIC_CERTIFICATE_2026-11-09.py": {
     "detail": "",
     "sha256": "1446768ea7aeef990fcd4b01da714e21584bc5a4c3bc526bb23d7bcf5e4f16e3",
     "status": "pass",
-    "utc": "2026-11-11T02:24:22Z",
-    "wall_s": 2.8
+    "utc": "2026-11-11T02:42:29Z",
+    "wall_s": 5.01
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_GAUGE_COVARIANT_CLOCK_SOURCE_2026-11-09.py": {
     "detail": "",
     "sha256": "063c960dd28a22efabb638e53dbb6b33187939a11bbfc14b96bed5b5d9eaf7e7",
     "status": "pass",
-    "utc": "2026-11-11T02:24:22Z",
-    "wall_s": 0.08
+    "utc": "2026-11-11T02:42:29Z",
+    "wall_s": 0.14
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_PAIR_WALK_FROM_SIX_BITS_2026-11-09.py": {
     "detail": "",
     "sha256": "edfb3b4573fdda83fd7e6b547df354ccda003d50a0f85590f53001b7aa5aa71b",
     "status": "pass",
-    "utc": "2026-11-11T02:24:23Z",
-    "wall_s": 0.53
+    "utc": "2026-11-11T02:42:30Z",
+    "wall_s": 0.88
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_SOURCE_POLE_INTEGER_CERTIFICATE_2026-11-09.py": {
     "detail": "",
     "sha256": "e00e22f8c7f6270786b7c0cf3d220b3bdeee258902aebd16857aee3b01140452",
     "status": "pass",
-    "utc": "2026-11-11T02:24:23Z",
-    "wall_s": 0.53
+    "utc": "2026-11-11T02:42:31Z",
+    "wall_s": 0.87
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_EXACT_SIX_BIT_MEMORY_2026-11-09.py": {
     "detail": "",
     "sha256": "ad6f7112901433abcfadf0aa9a17d9b60e15c17f2761680ca9b955050d701922",
     "status": "pass",
-    "utc": "2026-11-11T02:24:23Z",
-    "wall_s": 0.32
+    "utc": "2026-11-11T02:42:32Z",
+    "wall_s": 0.53
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_EXACT_SOURCE_WALSH_CORRELATIONS_2026-11-09.py": {
     "detail": "",
     "sha256": "e1d5e272340091293419b1ff18a098ff4e2427a07e29d6d45c35c75cb5a24694",
     "status": "pass",
-    "utc": "2026-11-11T02:24:26Z",
-    "wall_s": 2.55
+    "utc": "2026-11-11T02:42:36Z",
+    "wall_s": 4.21
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_FIRST_PRINCIPLES_24_TRACK_2026-11-09.py": {
     "detail": "",
     "sha256": "4bc2974f990e022ddf2568ffb0b693e41aba460ab84548ee67939e95f7c31758",
     "status": "pass",
-    "utc": "2026-11-11T02:24:27Z",
-    "wall_s": 0.57
+    "utc": "2026-11-11T02:42:37Z",
+    "wall_s": 0.95
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_GAUGE_CURRENT_24_WINDING_THEOREM_2026-11-09.py": {
     "detail": "",
     "sha256": "17fd9bfe50789f098a6ad1b1d6fa15975017ad7093f64f93ebe578e3ae05c3c0",
     "status": "pass",
-    "utc": "2026-11-11T02:24:27Z",
-    "wall_s": 0.04
+    "utc": "2026-11-11T02:42:37Z",
+    "wall_s": 0.07
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_HISTORY_CLOCK_INFORMATION_CURVATURE_2026-11-09.py": {
     "detail": "",
     "sha256": "3c810593f97530c5fa08d92dc1b88a8c6f174f01d2fc3df7ea1569297719eba0",
     "status": "pass",
-    "utc": "2026-11-11T02:24:32Z",
-    "wall_s": 5.0
+    "utc": "2026-11-11T02:42:46Z",
+    "wall_s": 9.68
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_NATIVE_24_PERIODIC_SOURCE_SCHUR_2026-11-09.py": {
     "detail": "",
     "sha256": "31c450b2df94806e17e390458e1cc8bb9a464e7e7d628dfdbeb78310518e0a6b",
     "status": "pass",
-    "utc": "2026-11-11T02:24:32Z",
-    "wall_s": 0.45
+    "utc": "2026-11-11T02:42:47Z",
+    "wall_s": 0.82
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py": {
     "detail": "",
     "sha256": "2436cfb7bf753058b043b416703e4712513589fddf1eef40cc0908f55b39fa82",
     "status": "pass",
-    "utc": "2026-11-11T02:24:32Z",
-    "wall_s": 0.34
+    "utc": "2026-11-11T02:42:48Z",
+    "wall_s": 0.57
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_NATIVE_HISTORY_CLOCK_KERNEL_THEOREM_2026-11-09.py": {
     "detail": "",
     "sha256": "730b497bc2f363618e86cf54aa0b3bf58d824a55c0a065d7618c4268300b6c59",
     "status": "pass",
-    "utc": "2026-11-11T02:24:33Z",
-    "wall_s": 0.32
+    "utc": "2026-11-11T02:42:48Z",
+    "wall_s": 0.54
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_SOURCE_CLOCK_POSITIVE_TRANSFER_2026-11-09.py": {
     "detail": "",
     "sha256": "a03b47dbca529c4bb0585db2908e6af1d20abfd6d3dbd8712c7ca5bfc4f61a1d",
     "status": "pass",
-    "utc": "2026-11-11T02:24:37Z",
-    "wall_s": 4.37
+    "utc": "2026-11-11T02:42:57Z",
+    "wall_s": 8.21
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_WALSH_RESPONSE_AND_CLOCK_GATE_2026-11-09.py": {
     "detail": "",
     "sha256": "7f0e07d68ae39dd3f656ff6032e74660ab83858224418f10f1d6918ca8f865b3",
     "status": "pass",
-    "utc": "2026-11-11T02:24:41Z",
-    "wall_s": 4.3
+    "utc": "2026-11-11T02:43:05Z",
+    "wall_s": 8.13
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/cathedral_constructed_joint_dynamics_2026_11_07.py": {
     "detail": "",
     "sha256": "5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd",
     "status": "pass",
-    "utc": "2026-11-11T02:24:42Z",
-    "wall_s": 0.33
+    "utc": "2026-11-11T02:43:05Z",
+    "wall_s": 0.53
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/CATHEDRAL_FIRST_PRINCIPLES_BASELINE_2026_11_10.py": {
     "detail": "",
     "sha256": "fde3462591d8011c617b2202ad516a9eb6be3aa1d660f7ee3dc251830c682458",
     "status": "pass",
-    "utc": "2026-11-11T02:24:42Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:43:05Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_24_CLOCK_HOLONOMY_POLE_EXCLUSION_2026_11_10.py": {
     "detail": "",
     "sha256": "59b8675c48347aa65b8de7e37a84fe70b4c89edada4348ee3eecff28b607790c",
     "status": "pass",
-    "utc": "2026-11-11T02:24:42Z",
-    "wall_s": 0.07
+    "utc": "2026-11-11T02:43:05Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_24x64_OVERLAP_TRACE_EXACT_CERTIFICATE_2026_11_10.py": {
     "detail": "",
     "sha256": "582edd9701f1e65fc147d12a7606ac31dff82ce82ae37ddd5eb86e4dc652d2bf",
     "status": "pass",
-    "utc": "2026-11-11T02:24:42Z",
-    "wall_s": 0.27
+    "utc": "2026-11-11T02:43:06Z",
+    "wall_s": 0.48
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A4_CUBIC_EXACT_SOURCE_THEOREM_2026_11_10.py": {
     "detail": "",
     "sha256": "6f5f0a7792f5cf3d414ebcc1c1784dba6a6b620e95adc8b7f089a00ac5accdf4",
     "status": "pass",
-    "utc": "2026-11-11T02:24:45Z",
-    "wall_s": 2.91
+    "utc": "2026-11-11T02:43:11Z",
+    "wall_s": 5.3
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A4_SCALAR_CUMULANTS_2026_11_10.py": {
     "detail": "",
     "sha256": "a43e9a37f539f4e2325c81f1ccd61f685969b13549d6d08bfc02ec5f58449ee5",
     "status": "pass",
-    "utc": "2026-11-11T02:24:46Z",
-    "wall_s": 0.5
+    "utc": "2026-11-11T02:43:12Z",
+    "wall_s": 0.91
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_CHRONOLOGY_DIRICHLET_GAP_2026_11_10.py": {
     "detail": "",
     "sha256": "c12df3da5dcd37b06f15fd1e80b5e42b4362d1ac2a36f9d00653f60a1696d4ee",
     "status": "pass",
-    "utc": "2026-11-11T02:24:46Z",
-    "wall_s": 0.3
+    "utc": "2026-11-11T02:43:13Z",
+    "wall_s": 0.54
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_DARK_ORBIT_COUPLING_2026_11_10.py": {
     "detail": "",
     "sha256": "31ae71efdc237fbdf211d5c4122cddd3c7cea03a6a091c1e158fe0c6cfcee211",
     "status": "pass",
-    "utc": "2026-11-11T02:24:49Z",
-    "wall_s": 2.98
+    "utc": "2026-11-11T02:43:18Z",
+    "wall_s": 5.4
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_MARKOV_VACUUM_K2_THEOREM_2026_11_10.py": {
     "detail": "",
     "sha256": "10f39b67659aba599583a181f54bec34b29b35e378d2cb35889b608f94e7caf2",
     "status": "pass",
-    "utc": "2026-11-11T02:22:10Z",
-    "wall_s": 0.36
+    "utc": "2026-11-11T02:38:37Z",
+    "wall_s": 0.66
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_MINIMAL_FRAME_LIFT_2026_11_10.py": {
     "detail": "",
     "sha256": "f37eb511e9192e517d3c8850b6ad801a69be1c44f51cb2b773beaffa29eadea1",
     "status": "pass",
-    "utc": "2026-11-11T02:24:50Z",
-    "wall_s": 0.63
+    "utc": "2026-11-11T02:43:19Z",
+    "wall_s": 1.15
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_NEUTRAL_SOURCE_EXACT_CUMULANTS_2026_11_10.py": {
     "detail": "",
     "sha256": "23ff48e330bd85c74ca1d8fccd0a64271305ef9eaed5cb2e22a1c0f4abdac700",
     "status": "pass",
-    "utc": "2026-11-11T02:24:52Z",
-    "wall_s": 2.69
+    "utc": "2026-11-11T02:43:24Z",
+    "wall_s": 4.79
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_QUENCHED_ANNEALED_CUMULANT_THEOREM_2026_11_10.py": {
     "detail": "",
     "sha256": "b654a2d7e713864232153df141432c34508e809e17919c37ea9319d8eac29a25",
     "status": "pass",
-    "utc": "2026-11-11T02:24:52Z",
-    "wall_s": 0.03
+    "utc": "2026-11-11T02:43:24Z",
+    "wall_s": 0.05
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_REYNOLDS_HISTORY_TRANSFER_2026_11_10.py": {
     "detail": "",
     "sha256": "f5e3ad41893e4a1ec355eca3b6183a98c11b3c0e2c5f8abfe522df46cf4241f4",
     "status": "pass",
-    "utc": "2026-11-11T02:24:53Z",
-    "wall_s": 0.59
+    "utc": "2026-11-11T02:43:25Z",
+    "wall_s": 1.02
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_SYMMETRIC_CUBIC_SOURCE_2026_11_10.py": {
     "detail": "",
     "sha256": "3462183d3beae5ea95cea6c22f28d4c2eab9dc6b73db930f0e75cf185fbc8549",
     "status": "pass",
-    "utc": "2026-11-11T02:24:56Z",
-    "wall_s": 3.3
+    "utc": "2026-11-11T02:43:31Z",
+    "wall_s": 6.01
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_TWIRLED_CHRONOLOGY_SPECTRUM_2026_11_10.py": {
     "detail": "",
     "sha256": "1c2d750cb51d3b448dd13eeb1e9f9e8c6cbd4d4ffcc03ccafb5cb7b05a95a103",
     "status": "pass",
-    "utc": "2026-11-11T02:24:57Z",
-    "wall_s": 0.49
+    "utc": "2026-11-11T02:43:32Z",
+    "wall_s": 0.88
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ANTIPODAL_C3_CLOCK_MATTER_2026_11_10.py": {
     "detail": "",
     "sha256": "7519d31594ae9aede2b85b1f3cf0e130f095c224f12c164436c710c3d5f48dab",
     "status": "pass",
-    "utc": "2026-11-11T02:25:38Z",
-    "wall_s": 41.5
+    "utc": "2026-11-11T02:44:56Z",
+    "wall_s": 84.19
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ARF_CANONICAL_RECURSION_GATE_2026_11_10.py": {
     "detail": "",
     "sha256": "178d343787525f7976ce8cefc08f47476f644d0924530be94ec8e41415cd6656",
     "status": "pass",
-    "utc": "2026-11-11T02:25:38Z",
-    "wall_s": 0.37
+    "utc": "2026-11-11T02:44:57Z",
+    "wall_s": 0.64
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_24FOLD_MONODROMY_2026_11_10.py": {
     "detail": "",
     "sha256": "e282489702b70ef1b11c849546fa26c0dd76014880f8d2bf653f96e23f7d07fb",
     "status": "pass",
-    "utc": "2026-11-11T02:25:43Z",
-    "wall_s": 4.48
+    "utc": "2026-11-11T02:45:05Z",
+    "wall_s": 8.5
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_A5_FRAME_SENSITIVITY_2026_11_10.py": {
     "detail": "",
     "sha256": "f447a1b9b6d63550c83e14de80cd16c68a441a55abd6ec008b147fae93f1866e",
     "status": "pass",
-    "utc": "2026-11-11T02:25:48Z",
-    "wall_s": 5.11
+    "utc": "2026-11-11T02:45:15Z",
+    "wall_s": 9.47
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_GOLDEN_BASEPOINT_CONJUGACY_2026_11_10.py": {
     "detail": "",
     "sha256": "de515a630c3317ef5212e441a1172adf8fc92dd0418c126c85ed328bc4e3685c",
     "status": "pass",
-    "utc": "2026-11-11T02:25:53Z",
-    "wall_s": 5.16
+    "utc": "2026-11-11T02:45:24Z",
+    "wall_s": 9.6
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_KMS_ENTROPIC_STIFFNESS_2026_11_10.py": {
     "detail": "",
     "sha256": "9dfe6d579d3e433c58d3af6b9ea33350f9fa67d334773bffc58c900ab4f64dc5",
     "status": "pass",
-    "utc": "2026-11-11T02:25:58Z",
-    "wall_s": 4.27
+    "utc": "2026-11-11T02:45:33Z",
+    "wall_s": 8.26
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_C3_SCHUR_DRESSED_CLOCK_2026_11_10.py": {
     "detail": "",
     "sha256": "275a652515a63e239c8838cd88d2deb9025127610ad2927bd03d49f755a24ea7",
     "status": "pass",
-    "utc": "2026-11-11T02:26:39Z",
-    "wall_s": 41.7
+    "utc": "2026-11-11T02:46:57Z",
+    "wall_s": 84.53
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_CANONICAL_HAAR_GREEN_KUBO_2026_11_10.py": {
     "detail": "",
     "sha256": "3130ad7d44e17f64cbe5a1a2bd7586c46fc1630373f9a787c243add9c352472c",
     "status": "pass",
-    "utc": "2026-11-11T02:26:40Z",
-    "wall_s": 0.57
+    "utc": "2026-11-11T02:46:58Z",
+    "wall_s": 0.99
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_A5_TENSOR_MATTER_BRIDGE_2026_11_10.py": {
     "detail": "",
     "sha256": "865d3b37c62addf28ac5d3d9bcbd95d5cabd5c690685767411234037e8afa304",
     "status": "pass",
-    "utc": "2026-11-11T02:26:47Z",
-    "wall_s": 6.89
+    "utc": "2026-11-11T02:47:10Z",
+    "wall_s": 12.33
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_DELAYED_RESPONSE_2026_11_10.py": {
     "detail": "",
     "sha256": "190f8aef578b8eb3edbca894f29a34dbf21ac512461bcf09457a05b4896f5fc2",
     "status": "pass",
-    "utc": "2026-11-11T02:26:47Z",
-    "wall_s": 0.25
+    "utc": "2026-11-11T02:47:11Z",
+    "wall_s": 0.47
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_FULL_RESPONSE_2026_11_10.py": {
     "detail": "",
     "sha256": "120541a13e13c4d9088e9ab3c2ada3b23006792837e41b6b5c0a8a49fd49ab7c",
     "status": "pass",
-    "utc": "2026-11-11T02:26:48Z",
-    "wall_s": 1.35
+    "utc": "2026-11-11T02:47:14Z",
+    "wall_s": 2.6
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_LOCAL_VERTEX_NO_GO_2026_11_10.py": {
     "detail": "",
     "sha256": "76b9e312ff157108efb6d36a62c1a9615cecb54208fe1bf9937eb02d149de4e6",
     "status": "pass",
-    "utc": "2026-11-11T02:26:51Z",
-    "wall_s": 2.64
+    "utc": "2026-11-11T02:47:18Z",
+    "wall_s": 4.79
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_PARITY_COMPOSITE_SCHUR_2026_11_10.py": {
     "detail": "",
     "sha256": "ae62a5bf2dd0e6a7778977e49d556fe2e0b40cd4d361550d4aa0e18962fa4835",
     "status": "pass",
-    "utc": "2026-11-11T02:26:54Z",
-    "wall_s": 3.05
+    "utc": "2026-11-11T02:47:24Z",
+    "wall_s": 5.5
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_THREE_CHANNEL_CUBIC_TENSOR_2026_11_10.py": {
     "detail": "",
     "sha256": "bbe947e12826249def02992fc5786e0ae749305a1e6b5b5e934e445488e8e4a6",
     "status": "pass",
-    "utc": "2026-11-11T02:27:01Z",
-    "wall_s": 6.64
+    "utc": "2026-11-11T02:47:36Z",
+    "wall_s": 11.92
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DUAL_PAIR_QUARTET_2026_11_10.py": {
     "detail": "",
@@ -2431,128 +2476,149 @@
     "detail": "",
     "sha256": "298ac5a9d56578ec2d0c08561ae504a2aedfa8d8af9c5217bdb5a5cee3415e0a",
     "status": "pass",
-    "utc": "2026-11-11T02:19:02Z",
-    "wall_s": 2.28
+    "utc": "2026-11-11T02:32:46Z",
+    "wall_s": 4.53
    },
    "research_archive/2026-11-11_hidden_parity/HIDDEN_PARITY_DELTA_SELECTION_2026_11_11.py": {
     "detail": "",
     "sha256": "348956f4cf61adaf180fabfbb6c8e3ef1c5f390fa7e662e5ea01e6d4070b007a",
     "status": "pass",
-    "utc": "2026-11-11T02:19:00Z",
-    "wall_s": 0.41
+    "utc": "2026-11-11T02:32:36Z",
+    "wall_s": 0.71
    },
    "research_archive/2026-11-11_hidden_sector_link/HIDDEN_SECTOR_LINK_2026_11_11.py": {
     "detail": "",
     "sha256": "70b82f178a38cb639ddc121ff218a309ef41dc6291a4db695a614a5caa0f9414",
     "status": "pass",
-    "utc": "2026-11-11T02:19:02Z",
-    "wall_s": 0.12
+    "utc": "2026-11-11T02:32:47Z",
+    "wall_s": 0.24
    },
    "research_archive/2026-11-11_hidden_sector_link/LINKED_COMPOUND_FLUX_VACUUM_2026_11_11.py": {
     "detail": "",
     "sha256": "85a581dc594402342bfaca404abfcdb5648c40a02f31732cb3574b1c216e48d0",
     "status": "pass",
-    "utc": "2026-11-11T02:19:31Z",
-    "wall_s": 7.38
+    "utc": "2026-11-11T02:33:37Z",
+    "wall_s": 13.77
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/CELL13_INDUCED_2026_11_11.py": {
     "detail": "",
     "sha256": "457650edb7de68283a8e83fd547ffef40e0ae29a66ab30964d2457a5cb292dfb",
     "status": "pass",
-    "utc": "2026-11-11T02:19:31Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:33:37Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/CELL13_VACUUM_2026_11_11.py": {
     "detail": "",
     "sha256": "ed1329f72baae733cec57bc5e8d76e8fb954b83d9e61ab06277d99df29e546d7",
     "status": "pass",
-    "utc": "2026-11-11T02:19:32Z",
-    "wall_s": 1.01
+    "utc": "2026-11-11T02:33:39Z",
+    "wall_s": 2.04
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/HODGE_DIRAC_19_MODE_PHOTON_2026_11_11.py": {
     "detail": "",
     "sha256": "4733a65d50dd3a88e1ffb2d991c0fdfbdf39dc4452a12be4ef44c5df7a8bb3ae",
     "status": "pass",
-    "utc": "2026-11-11T02:19:32Z",
-    "wall_s": 0.3
+    "utc": "2026-11-11T02:33:40Z",
+    "wall_s": 0.54
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/HODGE_DIRAC_FLUX_VACUUM_2026_11_11.py": {
     "detail": "",
     "sha256": "5a83402f8d25940ea67cf55d7c5b7f523431776eb2f9686d3b3c3beb441b4c62",
     "status": "pass",
-    "utc": "2026-11-11T02:19:33Z",
-    "wall_s": 0.49
+    "utc": "2026-11-11T02:33:41Z",
+    "wall_s": 0.96
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/HODGE_DIRAC_PHOTON_KERNEL_2026_11_11.py": {
     "detail": "",
     "sha256": "3e2e68bacb114496e8d01105ec11c7f2d37ff1ca964893073179131a82acd838",
     "status": "pass",
-    "utc": "2026-11-11T02:19:33Z",
-    "wall_s": 0.36
+    "utc": "2026-11-11T02:33:42Z",
+    "wall_s": 0.69
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/ICOSA_INDUCED_PHOTON_2026_11_11.py": {
     "detail": "",
     "sha256": "022564651bc4df306eb87ff62a93c20c09e5877a3bc64d1a2565df347a06f99b",
     "status": "pass",
-    "utc": "2026-11-11T02:19:33Z",
-    "wall_s": 0.14
+    "utc": "2026-11-11T02:33:42Z",
+    "wall_s": 0.25
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/INCIDENCE_PHOTON_A5_SECTORS_2026_11_11.py": {
     "detail": "",
     "sha256": "33fc476201b64672bdfd15a8a8b988991c348dbe8adfd2ba057e851d290fe316",
     "status": "pass",
-    "utc": "2026-11-11T02:19:35Z",
-    "wall_s": 1.77
+    "utc": "2026-11-11T02:33:46Z",
+    "wall_s": 3.98
    },
    "research_archive/2026-11-11_icosahedral_induced_photon/cell13_lib.py": {
     "detail": "",
     "sha256": "3755205102eaa6ee57807be5d4ee73af9dd449d0c34251b42e6f1898386f79a6",
     "status": "pass",
-    "utc": "2026-11-11T02:19:35Z",
-    "wall_s": 0.06
+    "utc": "2026-11-11T02:33:46Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-11-11_native_k4_collision/native_k4_collision.py": {
     "detail": "",
     "sha256": "a605663fd281cce6ce6b620cc3a0fc465378e83bdf8e6dc65ea4ed0ba8b874e4",
     "status": "pass",
-    "utc": "2026-11-11T02:19:48Z",
-    "wall_s": 12.69
+    "utc": "2026-11-11T02:34:10Z",
+    "wall_s": 23.39
    },
    "research_archive/2026-11-11_q15_ci_repair/q15_ci_repair_certificate.py": {
     "detail": "",
     "sha256": "bfb2513bff95491156390b04ffb6eaba7499c4f2940c1fbf3e714b44e54a3360",
     "status": "pass",
-    "utc": "2026-11-11T02:19:23Z",
-    "wall_s": 20.9
+    "utc": "2026-11-11T02:33:23Z",
+    "wall_s": 36.93
+   },
+   "research_archive/2026-11-11_q23_photon_gauge_typing/Q23_PHOTON_GAUGE_TYPING_2026_11_11.py": {
+    "detail": "",
+    "sha256": "f211be2f4f032e26ba01511b9d82b58651e7f436a17bef0e3fd03497651c655c",
+    "status": "pass",
+    "utc": "2026-11-11T02:29:29Z",
+    "wall_s": 0.81
+   },
+   "research_archive/2026-11-11_q3_twirled_chronology_classes/Q3_TWIRLED_CHRONOLOGY_CLASSES_2026_11_11.py": {
+    "detail": "",
+    "sha256": "4dcb5301d98dfd945c14d8db218acb18722f96ad29556dcce096b6783008b904",
+    "status": "pass",
+    "utc": "2026-11-11T02:30:31Z",
+    "wall_s": 62.1
    },
    "research_archive/2026-11-11_q4_native_matter_map/Q4_NATIVE_MATTER_MAP_2026_11_11.py": {
     "detail": "",
     "sha256": "b1089c4f8bb597a079afa9dd0cf04690f7ded90597b57ce0a8224cca5c6df849",
     "status": "pass",
-    "utc": "2026-11-11T02:16:57Z",
-    "wall_s": 1.0
+    "utc": "2026-11-11T02:30:35Z",
+    "wall_s": 1.67
+   },
+   "research_archive/2026-11-11_q7_review/Q7_REVIEW_Q6_CUMULANTS_A5_MIXING_2026_11_11.py": {
+    "detail": "",
+    "sha256": "c1072e92de6f16b56a9b94e348030457184d4d53bb26c1d313f6dbd5867e4399",
+    "status": "pass",
+    "utc": "2026-11-11T02:30:34Z",
+    "wall_s": 2.93
    },
    "research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_INDUCED_VACUUM_2026_11_11.py": {
     "detail": "",
     "sha256": "9de6feb1225a820abdafabd8523d4d197041bfb18b2877fcf46efb39bfd914a5",
     "status": "timeout",
     "tail": "",
-    "utc": "2026-11-11T02:18:57Z",
-    "wall_s": 120.1
+    "utc": "2026-11-11T02:32:35Z",
+    "wall_s": 120.07
    },
    "research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_MAXWELL_TEST_2026_11_11.py": {
     "detail": "",
     "sha256": "985cf897a06b21d68d0d742f7c38fb412f7b2cddfaab2d071bc7ca87f1120c47",
     "status": "pass",
-    "utc": "2026-11-11T02:19:00Z",
-    "wall_s": 2.98
+    "utc": "2026-11-11T02:32:42Z",
+    "wall_s": 5.71
    },
    "research_archive/2026-11-11_signed_dictionary_k23/native_joint_k23.py": {
     "detail": "",
     "sha256": "0429458064197ad7b8dad19029c6983f72964ac04b76e50e959cd91bf04536c0",
     "status": "pass",
-    "utc": "2026-11-11T02:20:08Z",
-    "wall_s": 20.44
+    "utc": "2026-11-11T02:34:47Z",
+    "wall_s": 36.84
    },
    "research_archive/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/cathedral_v116_hodge_polarization_verify.py": {
     "detail": "",
@@ -2704,6 +2770,6 @@
     "wall_s": 0.05
    }
   },
-  "targets": 287
+  "targets": 290
  }
 }
