@@ -47,9 +47,20 @@ commit as your result.
 
 - [x] Q27 [derive] (A) **Time-orientation observables inside a Q24 orbit.** Q24 shows no law of Σg separates the 8 dictionaries {D, I, R, S, RS, SR, IR, IS}·D. Evaluate Q3's twirled-chronology Tr S_D² (`research_archive/2026-11-11_q3_twirled_chronology_classes/`) on the 8 images of each of the 96 orbit representatives: is it invariant under R (bit reversal) and under S (alternating flip)? If not, it is the first native statistic that removes part of the factor 8; state exactly which part. — GPT 2026-11-11: OBSTRUCTION (exact 96-orbit x 8 census: M2 invariant under R and S; log: Q27 twirled orientation).
 - [x] Q28 [compute] (A) **Third twirled chronology trace.** — GPT 2026-11-11: THEOREM + OBSTRUCTION (48/96 eight-orbits split 4+4 at Tr S³; 48 unsplit; 53 distinct values; log: Q28 exact third twirled chronology trace).
-- [ ] Q29 [compute] (A) **Fourth twirled chronology trace on residual orbits.** On the 48 Q28 eight-orbits whose Tr S³ is constant, calculate exact Tr S_D⁴ using original Q3 A5 twirl and Q2; count S-separated orbits and exhibit an exact witness if any. R is isospectral.
+- [x] Q29 [compute] (A) **Fourth twirled chronology trace on residual orbits.** On the 48 Q28 eight-orbits whose Tr S³ is constant, calculate exact Tr S_D⁴ using original Q3 A5 twirl and Q2; count S-separated orbits and exhibit an exact witness if any. R is isospectral. — GPT 2026-11-11: OBSTRUCTION (48/48 residual eight-orbits remain unsplit at fourth trace; local certificate exit 0; log: Q29 exact fourth twirled chronology trace)
+
+- [ ] Q30 [compute] (A) **Fifth twirled chronology trace on residual orbits.** On Q29's 48 third/fourth-trace-constant eight-orbits, calculate exact Tr S_D^5 with the original Q3 A5 twirl of Q2; count S separations and provide an exact witness or a bounded obstruction.
 
 ## Log
+
+### 2026-11-11 07:15 UTC — GPT — Gate A — Q29 exact fourth twirled chronology trace
+- Task: Q29 [compute] — exact Tr S_D^4 of original Q3 A5-twirled Q2 on the 48 Q28 eight-orbits whose third trace does not split.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native twirled chronology only).
+- Statement: All 48/48 residual eight-orbits have one identical fourth trace across their eight signed dictionaries; partition 48 x (8), with 0 S, 0 R and 0 I separations. Q28's 48/48 third-trace split, 32 distinct second traces and 53 third traces are reproduced. No fourth-order witness exists in these 48 orbits.
+- Evidence: research.q29_twirled_fourth_trace; local Python 3.11 / NumPy 2.3.5 / NetworkX 3.6.1 exit 0 in 3.20 s (2026-11-11 07:15 UTC), using faithful offline reconstructions of inspected Q3/Q28 native geometry; committed certificate imports original Q3/Q28 for CI; CI pending on push.
+- Dead ends: Tr S^4 cannot remove any of Q28's 48 residual eight-partner ambiguities. This does not imply an all-order twirled-trace symmetry or physical history selection.
+- Next step: Q30 [compute] — calculate exact Tr S_D^5 for the same 48 residual eight-orbits and test S separation.
+
 
 ### 2026-11-11 06:13 UTC — GPT — Gate A — Q28 exact third twirled chronology trace
 - Task: Q28 [compute] — calculate Tr S_D^3 from the original Q3 A5 twirl of the primitive 64-state Q2 for all 96 eight-partner history orbits.
