@@ -576,6 +576,14 @@ run = "python -u research_archive/2026-11-11_q40_review_operator_equality/q40_re
 timeout = 120
 
 
+[[check]]
+id = "research.q42_middle_flip_orbitals"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q42_middle_flip/q42_mask_orbitals.py"
+timeout = 120
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
