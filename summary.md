@@ -1,6 +1,6 @@
 # Cathedral orchestrator — ✅ PASS
 
-2026-11-11T17:44:40Z · [run 43068022104](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43068022104) · `fc3f9e9` · push on `newtons-cathedral` · checkpoint #48
+2026-11-11T18:38:32Z · [run 43076251176](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43076251176) · `e9c0c9d` · push on `newtons-cathedral` · checkpoint #49
 
 ## Physical status
 
@@ -19,77 +19,78 @@
 
 | Stage | Check | Claim | Status | Passing runs | Wall |
 |---|---|---|---|---|---|
-| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 48 | 0.04s |
-| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 48 | 0.0s |
-| integrity | `integrity.handover_claims` | independent | ✅ pass | 48 | 0.18s |
-| tests | `tests.suite` | regression | ✅ pass | 48 | 7.44s |
-| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 48 | 8.64s |
-| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 48 | 0.38s |
-| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 48 | 6.27s |
-| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 48 | 5.96s |
-| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 48 | 0.53s |
-| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 48 | 0.43s |
-| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 45 | 14.76s |
-| history | `history.native_24clock_fourier` | conditional | ✅ pass | 48 | 0.75s |
-| native | `native.wilson_source` | native | ✅ pass | 48 | 0.9s |
-| native | `native.output_gate` | native | ✅ pass | 48 | 0.09s |
-| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 48 | 0.43s |
-| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 48 | 0.27s |
-| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 48 | 0.69s |
-| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 48 | 0.09s |
-| research | `research.sandbox_bound_scripts` | independent | ✅ pass | 42 | 0.07s |
-| research | `research.missing_intermediates` | independent | ✅ pass | 21 | 0.17s |
-| research | `research.q6_repair_structural_regression` | regression | ✅ pass | 21 | 0.02s |
-| research | `research.independent_native_five_k2` | independent | ✅ pass | 41 | 0.75s |
-| research | `research.unsigned_axis_order_k2` | independent | ✅ pass | 40 | 30.85s |
-| research | `research.signed_a5_covariance` | independent | ✅ pass | 39 | 3.41s |
-| research | `research.signed_dictionary_classes` | native | ✅ pass | 37 | 4.96s |
-| research | `research.native_signed_dictionary_k3` | native | ✅ pass | 35 | 10.12s |
-| research | `research.induced_photon_logdet_kernel` | native | ✅ pass | 34 | 1.15s |
-| research | `research.induced_photon_vacuum_selection` | native | ✅ pass | 34 | 3.1s |
-| research | `research.native_signed_dictionary_k23` | native | ✅ pass | 30 | 20.93s |
-| research | `research.icosahedral_induced_photon` | independent | ✅ pass | 30 | 0.14s |
-| research | `research.hodge_dirac_flux_vacuum` | independent | ✅ pass | 30 | 0.45s |
-| research | `research.hodge_dirac_photon_kernel` | independent | ✅ pass | 30 | 0.42s |
-| research | `research.hodge_dirac_19_mode_photon` | independent | ✅ pass | 30 | 0.36s |
-| research | `research.incidence_photon_a5_sectors` | independent | ✅ pass | 30 | 1.86s |
-| research | `research.platonic_hidden_sector_link` | independent | ✅ pass | 29 | 0.13s |
-| research | `research.q15_native_namespace_repair` | native | ✅ pass | 28 | 21.11s |
-| research | `research.chaos_invariant_refinement_audit` | independent | ✅ pass | 27 | 2.36s |
-| research | `research.hidden_parity_delta_selection` | native | ✅ pass | 26 | 0.46s |
-| research | `research.q4_native_matter_map` | native | ✅ pass | 25 | 0.99s |
-| research | `research.registry_induced_vacuum` | conditional | ✅ pass | 25 | 166.33s |
-| research | `research.registry_maxwell_test` | conditional | ✅ pass | 25 | 3.21s |
-| research | `research.native_signed_dictionary_k4` | native | ✅ pass | 25 | 13.26s |
-| research | `research.q23_photon_gauge_typing` | native | ✅ pass | 24 | 0.43s |
-| research | `research.q3_twirled_chronology_classes` | native | ✅ pass | 24 | 40.08s |
-| research | `research.q7_review_q6_cumulants` | independent | ✅ pass | 24 | 1.71s |
-| research | `research.candidate1_induced_em_icosahedron` | conditional | ✅ pass | 23 | 0.12s |
-| research | `research.q25_4d_a5_photon` | native | ✅ pass | 23 | 0.36s |
-| research | `research.candidate1_4d_holonomy_instability` | conditional | ✅ pass | 22 | 0.06s |
-| research | `research.q22_tetrahedron_exact_kernel` | native | ✅ pass | 20 | 0.02s |
-| research | `research.q24_history_symmetries` | native | ✅ pass | 19 | 50.84s |
-| research | `research.q27_twirled_orientation` | native | ✅ pass | 18 | 1.13s |
-| research | `research.q28_twirled_third_trace` | native | ✅ pass | 17 | 1.26s |
-| research | `research.q29_twirled_fourth_trace` | native | ✅ pass | 16 | 2.5s |
-| research | `research.q30_twirled_all_order_spectrum` | native | ✅ pass | 14 | 54.85s |
-| research | `research.q31_rational_similarity` | native | ✅ pass | 13 | 120.74s |
-| research | `research.q33_singular_spectrum` | native | ✅ pass | 12 | 21.78s |
-| research | `research.q34_seventh_mixed_words` | native | ✅ pass | 11 | 4.78s |
-| research | `research.q36_rational_star_intertwiners` | native | ✅ pass | 7 | 68.92s |
-| research | `research.q35_eighth_mixed_words` | native | ✅ pass | 10 | 9.78s |
-| research | `research.q32_mixed_trace_meaning` | native | ✅ pass | 8 | 31.04s |
-| research | `research.q37_primitive_q2_trace` | native | ✅ pass | 6 | 0.21s |
-| research | `research.q38_primitive_q2_allpairs` | native | ✅ pass | 5 | 2.1s |
-| research | `research.q39_eight_image_q2` | native | ✅ pass | 4 | 3.09s |
-| research | `research.q40_cross_orbit_q2` | independent | ✅ pass | 3 | 0.94s |
-| research | `research.q40_review_operator_equality` | independent | ✅ pass | 2 | 1.91s |
-| research | `research.q42_middle_flip_orbitals` | native | ✅ pass | 1 | 1.27s |
+| integrity | `integrity.h64_snapshot_sha256` | regression | ✅ pass | 49 | 0.04s |
+| integrity | `integrity.arf_forward_manifest` | regression | ✅ pass | 49 | 0.0s |
+| integrity | `integrity.handover_claims` | independent | ✅ pass | 49 | 0.2s |
+| tests | `tests.suite` | regression | ✅ pass | 49 | 7.84s |
+| geometry | `geometry.all_platonic_hidden_algebra` | regression | ✅ pass | 49 | 6.6s |
+| geometry | `geometry.hidden_isometry_24clock_Q6` | regression | ✅ pass | 49 | 0.25s |
+| history | `history.a4_third_cumulant_rate` | regression | ✅ pass | 49 | 6.45s |
+| history | `history.a5_symmetric_cubic_source` | regression | ✅ pass | 49 | 6.27s |
+| history | `history.a5_chronology_dirichlet_gap` | conditional | ✅ pass | 49 | 0.58s |
+| history | `history.source_schur_ward_contacts` | regression | ✅ pass | 49 | 0.44s |
+| history | `history.native_q6_fourth_cumulants` | native | ✅ pass | 46 | 15.27s |
+| history | `history.native_24clock_fourier` | conditional | ✅ pass | 49 | 0.8s |
+| native | `native.wilson_source` | native | ✅ pass | 49 | 1.61s |
+| native | `native.output_gate` | native | ✅ pass | 49 | 0.12s |
+| conditional | `conditional.source_moment_recurrence` | conditional | ✅ pass | 49 | 0.54s |
+| conditional | `conditional.observable_nonuniqueness` | conditional | ✅ pass | 49 | 0.33s |
+| conditional | `conditional.charged_ward_2x2` | synthetic | ✅ pass | 49 | 0.91s |
+| conditional | `conditional.ward_13_51_random_blocks` | synthetic | ✅ pass | 49 | 0.1s |
+| research | `research.sandbox_bound_scripts` | independent | ✅ pass | 43 | 0.11s |
+| research | `research.missing_intermediates` | independent | ✅ pass | 22 | 0.26s |
+| research | `research.q6_repair_structural_regression` | regression | ✅ pass | 22 | 0.03s |
+| research | `research.independent_native_five_k2` | independent | ✅ pass | 42 | 1.12s |
+| research | `research.unsigned_axis_order_k2` | independent | ✅ pass | 41 | 52.59s |
+| research | `research.signed_a5_covariance` | independent | ✅ pass | 40 | 5.68s |
+| research | `research.signed_dictionary_classes` | native | ✅ pass | 38 | 8.18s |
+| research | `research.native_signed_dictionary_k3` | native | ✅ pass | 36 | 17.27s |
+| research | `research.induced_photon_logdet_kernel` | native | ✅ pass | 35 | 1.95s |
+| research | `research.induced_photon_vacuum_selection` | native | ✅ pass | 35 | 5.4s |
+| research | `research.native_signed_dictionary_k23` | native | ✅ pass | 31 | 36.04s |
+| research | `research.icosahedral_induced_photon` | independent | ✅ pass | 31 | 0.24s |
+| research | `research.hodge_dirac_flux_vacuum` | independent | ✅ pass | 31 | 0.69s |
+| research | `research.hodge_dirac_photon_kernel` | independent | ✅ pass | 31 | 0.65s |
+| research | `research.hodge_dirac_19_mode_photon` | independent | ✅ pass | 31 | 0.54s |
+| research | `research.incidence_photon_a5_sectors` | independent | ✅ pass | 31 | 3.34s |
+| research | `research.platonic_hidden_sector_link` | independent | ✅ pass | 30 | 0.21s |
+| research | `research.q15_native_namespace_repair` | native | ✅ pass | 29 | 36.47s |
+| research | `research.chaos_invariant_refinement_audit` | independent | ✅ pass | 28 | 4.27s |
+| research | `research.hidden_parity_delta_selection` | native | ✅ pass | 27 | 0.69s |
+| research | `research.q4_native_matter_map` | native | ✅ pass | 26 | 1.7s |
+| research | `research.registry_induced_vacuum` | conditional | ✅ pass | 26 | 320.31s |
+| research | `research.registry_maxwell_test` | conditional | ✅ pass | 26 | 5.86s |
+| research | `research.native_signed_dictionary_k4` | native | ✅ pass | 26 | 22.35s |
+| research | `research.q23_photon_gauge_typing` | native | ✅ pass | 25 | 0.66s |
+| research | `research.q3_twirled_chronology_classes` | native | ✅ pass | 25 | 62.82s |
+| research | `research.q7_review_q6_cumulants` | independent | ✅ pass | 25 | 2.91s |
+| research | `research.candidate1_induced_em_icosahedron` | conditional | ✅ pass | 24 | 0.2s |
+| research | `research.q25_4d_a5_photon` | native | ✅ pass | 24 | 0.63s |
+| research | `research.candidate1_4d_holonomy_instability` | conditional | ✅ pass | 23 | 0.1s |
+| research | `research.q22_tetrahedron_exact_kernel` | native | ✅ pass | 21 | 0.03s |
+| research | `research.q24_history_symmetries` | native | ✅ pass | 20 | 84.79s |
+| research | `research.q27_twirled_orientation` | native | ✅ pass | 19 | 1.82s |
+| research | `research.q28_twirled_third_trace` | native | ✅ pass | 18 | 2.05s |
+| research | `research.q29_twirled_fourth_trace` | native | ✅ pass | 17 | 4.09s |
+| research | `research.q30_twirled_all_order_spectrum` | native | ✅ pass | 15 | 111.27s |
+| research | `research.q31_rational_similarity` | native | ✅ pass | 14 | 198.32s |
+| research | `research.q33_singular_spectrum` | native | ✅ pass | 13 | 40.02s |
+| research | `research.q34_seventh_mixed_words` | native | ✅ pass | 12 | 8.71s |
+| research | `research.q36_rational_star_intertwiners` | native | ✅ pass | 8 | 113.83s |
+| research | `research.q35_eighth_mixed_words` | native | ✅ pass | 11 | 18.43s |
+| research | `research.q32_mixed_trace_meaning` | native | ✅ pass | 9 | 58.3s |
+| research | `research.q37_primitive_q2_trace` | native | ✅ pass | 7 | 0.33s |
+| research | `research.q38_primitive_q2_allpairs` | native | ✅ pass | 6 | 3.47s |
+| research | `research.q39_eight_image_q2` | native | ✅ pass | 5 | 4.96s |
+| research | `research.q40_cross_orbit_q2` | independent | ✅ pass | 4 | 1.53s |
+| research | `research.q40_review_operator_equality` | independent | ✅ pass | 3 | 3.14s |
+| research | `research.q42_middle_flip_orbitals` | native | ✅ pass | 2 | 2.08s |
+| research | `research.q43_native_character_criterion` | native | ✅ pass | 1 | 2.32s |
 
 ## Archive sweep
 
-Executed at least once: **312/312** research scripts. Latest status: missing_file 22, pass 289, timeout 1.
-This run: 283 executed (missing_file 22, pass 260, timeout 1).
+Executed at least once: **313/313** research scripts. Latest status: missing_file 22, pass 290, timeout 1.
+This run: 253 executed (missing_file 18, pass 234, timeout 1).
 Regressions (passed before, failing now, same source): none.
 Recovered: none.
 
