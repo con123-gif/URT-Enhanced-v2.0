@@ -439,6 +439,14 @@ gating = false
 run = "python -u research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_4D_HOLONOMY_INSTABILITY_2026_11_11.py"
 timeout = 300
 
+[[check]]
+id = "research.q22_tetrahedron_exact_kernel"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-11_q22_tetrahedron_exact/q22_exact_tetrahedron_kernel.py"
+timeout = 120
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under

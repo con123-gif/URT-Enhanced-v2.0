@@ -37,7 +37,7 @@ commit as your result.
 
 - [x] Q23 [derive] (C) **Photon identification on the incidence graph.** (renumbered from a duplicate Q20, 2026-11-11) The incidence gauge field has (squares − 1) physical modes (59 on the icosahedron); 19 are ordinary link fluxes, 11 dual link fluxes. Decompose all 59 under A5, identify which combination couples to the Q96 charges, and state whether any A5-invariant kernel on it is forced. Source: `research_archive/2026-11-11_icosahedral_induced_photon/`. — Claude 2026-11-11: THEOREM + OBSTRUCTION (gauge algebra typed as the visible face space 1+3+3′+5; SU(2) ↔ softest triplet; Y has no partner; archived T₃ axis generic; log: "Q23: gauge typing")
 - [ ] Q21 [review] (C) **Independent review** of `HODGE_DIRAC_INDUCED_PHOTON_2026_11_11.md` items 1 and 3 with independent code, including an analytic (not finite-difference) Hessian. Reviewer must not be Claude (the work under review is Claude's).
-- [ ] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic.
+- [x] Q22 [compute] (C) **Exact tetrahedron kernel.** Prove K = 1/8 (3), 1/4 (3), 3/8 (5) for the tetrahedral incidence graph in exact arithmetic. — GPT 2026-11-11: THEOREM (exact analytic Hodge–Dirac sea-energy Hessian; spectrum and gauge kernel certified; log: "Q22 exact tetrahedron kernel")
 
 - [ ] Q24 [compute] (A) **Fifth cumulant residual test.** For Q20's native non-parity dictionaries D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact joint five-vacuum K5 sign/scale invariant (K5²/r2⁵) using fixed Q6; test whether order five separates them, and if not identify a possible exact conjugacy of their tilted transfers.
 
@@ -46,6 +46,15 @@ commit as your result.
 - [x] Q26 [repair] (Archive) **Repair Q6 missing-intermediate CI regression after Q13.** Preserve the historical 10-path producer map, SHA256-check two recovered companions, assert eight still-absent targets, and run a fail-on-error regression. — GPT 2026-11-11: REPAIR (local structural selftest exit 0; full registered CI pending; log: Q26 post-Q13 integrity repair).
 
 ## Log
+
+### 2026-11-11 04:13 UTC — GPT — Gate C — Q22 exact tetrahedron kernel
+- Task: Q22 [compute] — derive and certify the native tetrahedral Hodge–Dirac sea-energy Hessian with integer arithmetic.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For the original tetrahedral cochain B=[d0,d1^T] (6×8), BB^T=4I; the analytic 24-link phase Hessian of -Tr sqrt(B(theta)B(theta)^*) is H=W^T W/16. The exact 15×15 integer Gram A=WW^T satisfies A(A-2I)(A-4I)(A-6I)=0 and (Tr A,Tr A²,Tr A³)=(48,240,1296), giving spec(H)=0(13),1/8(3),1/4(3),3/8(5), Tr H_phys=3, Tr H_phys^-1=148/3. The 13-dimensional kernel is exactly the connected incidence graph's gauge image.
+- Evidence: research.q22_tetrahedron_exact_kernel; GPT local container Python 3.11 standard library, exit 0 in 1.39 s; executed source SHA256 c7549845507bcc989b6f0edf92b744115f61ef833ab9f216004281a2ab72e0cc; registered for CI, verdict pending. Source: research_archive/2026-11-11_q22_tetrahedron_exact/q22_exact_tetrahedron_kernel.py and companion proof.
+- Dead ends: the archived finite-difference numerical spectrum was not an exact certificate; this analytic derivation removes that limitation for tetrahedron only. No physical ARF or other-solid spectrum inferred.
+- Next step: Q24 [compute] — does exact native fixed-Q6 K5²/r2⁵ distinguish the Q20 non-parity dictionary collision?
+
 
 ### 2026-11-11 03:18 UTC — GPT — Archive — Q26 post-Q13 integrity repair
 - Task: Q26 [repair], mandatory priority because the latest orchestrator 42948766799 failed only `research.missing_intermediates`.

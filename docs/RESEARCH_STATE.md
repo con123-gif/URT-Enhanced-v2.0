@@ -38,6 +38,7 @@ verdict is in `summary.md` on branch `cathedral-research-state`.
   - (V,E,F) = (50,90,50); Hodge dimension 190; Tr D² = 720; Tr D⁴ = 3456; dim ker D = 10.
   - Icosahedral Laplacian 0(1), (5−√5)(3), 6(5), (5+√5)(3). Centred 13-cell 0(1), (6−√5)(3), 7(5), (6+√5)(3), 13(1).
   - The 20×12 face–vertex incidence has rank 12. Hidden kernel 8 = 4₃⊕4₅, with face-Laplacian eigenvalues 3 and 5.
+  - Native tetrahedral Hodge–Dirac sea-energy phase Hessian (Q22, exact analytic): on 24 incidence links the spectrum is 0(13 gauge), 1/8(3), 1/4(3), 3/8(5); the 11 physical modes have Tr H=3 and Tr H⁻¹=148/3. Certified by the integer Gram polynomial and moments, not finite differences (`research_archive/2026-11-11_q22_tetrahedron_exact/`). No other-solid or physical photon normalization claim.
   - Sources: `docs/CATHEDRAL_LITERATURE_INTEGRATION_2026-10-27.md`, `handover_claims.py`.
 - **13-cell from F₅.** The SL₂(F₅) determinant-square graph is the icosahedron, and L₁₃ has exactly the frozen spectrum (`research_archive/2026-10-24_alpha_physical_gate/F5_BINARY_ICOSAHEDRAL_EXACT_13CELL_AND_ALPHA_CANDIDATE.md`).
 - **Five-cube bridge** (existence identity). With F = P₃ + ΔP₅, F ρ_geo F† / Tr(F ρ_geo F†) = ρ⋆ exactly (`docs/LIVE_WORKING_FRONTIER.md`, 2026-10-25).
