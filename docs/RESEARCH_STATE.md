@@ -75,6 +75,7 @@ Each holds for its stated operators and hypotheses only.
   - Literal Berry/Maxwell matching does not reproduce the historical α scalar. The naive Hilbert–Schmidt match of the native Peierls Hessian leaves a 42.9% residual (`2026-10-26_137_360_dual_spectral_bridge.md`).
 - **Signed dictionaries (Q12, 2026-11-10).** For the native hidden-5 source and fixed de Bruijn Q, the 46,080 signed six-axis dictionaries form 768 free proper-A5 orbits and 384 orbits after central inversion. Joint source/vacuum covariance makes the five-vacuum K₂ multiset an A5 orbit invariant, although the active signed rotation does not commute with Q. Exactly 56 distinct spectra occur (16 of multiplicity 8 and 40 of multiplicity 16 among the 768 classes); non-parity collisions remain. This is a source-level obstruction to uniqueness, not a physical ARF result (`research_archive/2026-11-10_signed_dictionary_classes/`).
 - **Signed A5 axis covariance (Q11, 2026-11-10).** The exact native hidden-5 icosahedral face source and five A4 singlets have 60/60 joint signed-axis/vacuum covariance: 76,800 face equalities and 300 exact K₂ invariances. This is passive transport, not active A5 symmetry of fixed Q: only the identity proper rotation commutes with Q. The signed dictionary and physical chronology remain unselected (`research_archive/2026-11-10_signed_a5_covariance/`).
+- **Flat links are not a vacuum** (2026-11-11). For the archived v61 operator, θ = 0 is a saddle of the scale-free induced action −log|det H| and of the archive's sea energy: 72 negative, 409 positive physical modes. A stable flux vacuum θ* lies 99.10 lower. Archived native photon kernels at θ = 0 are not vacuum responses (`research_archive/2026-11-10_induced_photon/`).
 - **Chronology.**
   - A5 covariance plus the primitive shift does **not** select an axis-order-independent response: second moments 31440, 42480, 27120.
   - A5 averaging destroys Q's six-step Haar property.
@@ -123,6 +124,8 @@ Nothing in the archive selects this map. Gates B → C → D are this object; ga
 - **α⁻¹(0) = 137 + (17572/1215)Δ − (9/65)Δ² = 137.035999178195** (value of the polynomial). The ledger calls it an exact internal invariant. 17572/1215 is **not** derived, and the decompositions 137 = N² − E − (D−1) and 17572/1215 = N + 9/5 − 82/243 are arithmetic only.
 - **The handover's table** (sin²θ_W, mass ratios, CKM, PMNS): recorded outputs whose derivation paths and inputs are unaudited.
 - **The ~40 legacy "confirmed" labels:** historical comparisons only.
+
+- **Three α assemblies coexist:** 137.0360100481 (`newtons_cathedral/arf.py`), 137.035999312 (v8 with δ_eff), 137.035999178 (Δ polynomial); 518σ, 6.4σ and 0.06σ from CODATA 2022. Successive versions add terms and approach the measured value.
 
 ## 7. Archive health (sweep, 2026-11-10)
 

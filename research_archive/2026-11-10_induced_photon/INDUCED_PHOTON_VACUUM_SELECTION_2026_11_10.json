@@ -1,0 +1,42 @@
+{
+  "theta0": {
+    "Gamma": -49.653954495152654,
+    "grad_norm": 2.1434401083558226e-30,
+    "physical_negative_modes": 72,
+    "physical_positive_modes": 409,
+    "hessian_min": -2.9580401708443107,
+    "hessian_max": 0.3852126512175766
+  },
+  "theta_star": {
+    "Gamma": -148.7586448942202,
+    "Gamma_minus_Gamma0": -99.10469039906755,
+    "physical_grad_norm": 1.796830692476176e-15,
+    "hessian_min": 2.646861830226404e-05,
+    "hessian_max": 1.1230505636442814,
+    "physical_negative_modes": 0,
+    "gap_theta0": 0.8255933137797207,
+    "gap_theta_star": 1.8839934176400785,
+    "distinct_abs_eigenvalue_levels": 5
+  },
+  "flux_classes_over_pi": {
+    "3": {
+      "0.0000000000": 384,
+      "0.4949243559": 1536,
+      "1.0000000000": 384
+    },
+    "4": {
+      "0.0000000000": 14472,
+      "0.0101512883": 96,
+      "0.0203025766": 24,
+      "0.4949243559": 4608,
+      "0.5050756441": 4608,
+      "0.9898487117": 3264,
+      "1.0000000000": 5088
+    }
+  },
+  "eps_over_pi": 0.00507564415,
+  "eps_radians": 0.01594560637387601,
+  "flux_values_outside_family": [],
+  "census_minima_found": [],
+  "census_lower_than_theta_star": []
+}

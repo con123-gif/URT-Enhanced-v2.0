@@ -28,7 +28,23 @@ commit as your result.
 
 - [ ] Q15 [compute] (A) **Full K2–K3 collision audit.** For all 768 signed proper-A5 orbit representatives, compute the native five-vacuum joint (K2, K3²/r2³) signatures with fixed Q; count residual non-parity collisions and provide exact witnesses. If over 10 minutes, register a compute job.
 
+- [ ] Q16 [derive] (C) **Full-registry induced vacuum.** With the archived Q96 charges in units of 1/3, minimise Γ_Q(θ) = −Σ_s log|det H(3q_s θ)| over the 528 links. Does a stable vacuum exist, what is its flux family, and what is the physical Hessian there? Start from `research_archive/2026-11-10_induced_photon/`.
+- [ ] Q17 [verify] (C) **(r, M, c_t) dependence.** Count negative physical modes of the −log|det H| Hessian at θ = 0 over a grid of r, M and temporal weight around the archived values. Is the flat-link instability generic or tuned?
+- [ ] Q18 [review] (C) **Independent review** of `INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.md` statements 2–4 with independent code (do not import its modules).
+- [ ] Q19 [derive] (C) After compute job `induced-photon-vacuum-census` finishes, read `compute/induced-photon-vacuum-census/` and record whether θ* survived.
+
 ## Log
+
+### 2026-11-11 00:20 UTC — Claude — Gate C — Induced photon action: flat links are a saddle
+- Task: Con asked for the ARFs from first principles and for a better route if they are wrong. New premise against the S_λ obstruction: use the sea's own induced action, with no Maxwell term added.
+- Result: THEOREM (floating-point certificates) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement:
+  - Γ(θ) = −log|det H(θ)| for the archived v61 operator is scale-free. At θ = 0 its physical Hessian has 72 negative and 409 positive modes (min −2.958); the archive's own sea-energy Hessian has the same split.
+  - A stationary point θ* with positive-definite physical Hessian exists: Γ(θ*) − Γ(0) = −99.104690, gap 0.8256 → 1.8840, loop fluxes in {0, π, π/2 ± ε, π − 2ε, 2ε, 4ε}, ε = 0.0050756442 π.
+  - Final comparison only: the three archived α assemblies give 137.0360100481 (`newtons_cathedral/arf.py`), 137.035999312 (v8, with δ_eff) and 137.035999178 (Δ polynomial). Against CODATA 2022, 137.035999177(21), that is 518σ, 6.4σ and 0.06σ.
+- Evidence: checks `research.induced_photon_logdet_kernel`, `research.induced_photon_vacuum_selection`; executed in Claude's sandbox, CI verdict recorded by the next entry or sweep.
+- Dead ends: none. Not established: global minimality, (r, M, 1/16) dependence, overlap vs Wilson determinant, any coupling value.
+- Next step: Q16.
 
 ### 2026-11-10 23:17 UTC — GPT — Gate A — Native third-cumulant collision separation
 - Task: Q14 [compute] — compare native A4 five-vacuum K3 for Q12's non-parity K2 collision pair using fixed six-bit Q.

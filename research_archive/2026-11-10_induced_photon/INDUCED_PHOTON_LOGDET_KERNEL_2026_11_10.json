@@ -1,0 +1,37 @@
+{
+  "lattice": {
+    "sites": 48,
+    "directions": 11,
+    "links": 528,
+    "states": 192,
+    "r": 0.355508034923519,
+    "M": 0.790940592107124,
+    "spectral_gap_min_abs": 0.8255933137797269
+  },
+  "finite_difference_relative_error_max": 2.522381372559381e-07,
+  "gauge_dimension": 47,
+  "ward_norm_PiE": 7.456089570201886e-14,
+  "ward_norm_Pisea": 5.499640730298363e-15,
+  "PiE_min_eigenvalue_all": -2.9580401708443076,
+  "PiE_nullity": 47,
+  "PiE_physical_dimension": 481,
+  "PiE_negative_physical_modes": 72,
+  "PiE_positive_physical_modes": 409,
+  "PiE_physical_spectrum": {
+    "min": -2.9580401708443107,
+    "max": 0.3852126512175766,
+    "mean": -0.20311385983070437,
+    "trace": -97.6977665785688,
+    "distinct_at_1e-8": 16
+  },
+  "Pisea_physical_spectrum": {
+    "min": -1.5549714432006148,
+    "max": 0.07952658324052893,
+    "mean": -0.17013237073155651
+  },
+  "scale_test_PiE_change": 0.0,
+  "scale_test_Pisea_ratio": 2.0,
+  "best_ratio_PiE_over_Pisea": 1.5066821319779777,
+  "relative_residual_after_best_ratio": 0.1633377139171795,
+  "source_sha256": "e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75"
+}

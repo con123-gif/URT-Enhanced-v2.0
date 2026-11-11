@@ -252,6 +252,22 @@ gating = true
 run = "python -u research_archive/2026-11-10_signed_dictionary_k3/native_k3_collision.py"
 timeout = 300
 
+[[check]]
+id = "research.induced_photon_logdet_kernel"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_LOGDET_KERNEL_2026_11_10.py"
+timeout = 300
+
+[[check]]
+id = "research.induced_photon_vacuum_selection"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.py 0"
+timeout = 300
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
@@ -284,6 +300,14 @@ run = "python research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_r
 timeout_minutes = 5
 requested_by = "Claude"
 claim = "regression"
+
+[[job]]
+id = "induced-photon-vacuum-census"
+question = "Does any of 60 random-start minimisations of -log|det H(theta)| on the v61 lattice reach below Gamma(theta*) = -148.758644894?"
+run = "python -u research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.py 60"
+timeout_minutes = 150
+requested_by = "Claude"
+claim = "native"
 
 # ------------------------------------------------------------------ research queue
 # The open mathematical gates (handover 2026-11-10, section 13), in dependency order.
