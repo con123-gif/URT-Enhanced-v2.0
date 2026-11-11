@@ -1,0 +1,60 @@
+{
+  "Q6_equals_P_and_finite_inverse": true,
+  "theorem1_recursion_vs_exact_finite_time": {
+    "rademacher_bit2": {
+      "K_recursion": [
+        "1",
+        "0",
+        "-2",
+        "0",
+        "16"
+      ],
+      "agrees_with_exact_finite_time": true
+    },
+    "product_bits_0_3": {
+      "K_recursion": [
+        "5/16",
+        "3/8",
+        "31/128"
+      ],
+      "agrees_with_exact_finite_time": true
+    },
+    "popcount": {
+      "K_recursion": [
+        "9",
+        "0",
+        "-162"
+      ],
+      "agrees_with_exact_finite_time": true
+    },
+    "asymmetric": {
+      "K_recursion": [
+        "55/64",
+        "135/128",
+        "-5023/2048"
+      ],
+      "agrees_with_exact_finite_time": true
+    }
+  },
+  "theorem2_arithmetic": {
+    "mu": "71/48",
+    "Var5": "1493/5760",
+    "3Var5": "1493/1920"
+  },
+  "mixture_law": {
+    "K2_rates": [
+      "5/16",
+      "9",
+      "55/64",
+      "5/16",
+      "1"
+    ],
+    "Var_I(K2)": "57913/5120",
+    "total_cumulance_law_exact": true,
+    "second_difference_of_kappa4_mix": [
+      "173739/2560",
+      "173739/2560"
+    ],
+    "expected_6Var": "173739/2560"
+  }
+}

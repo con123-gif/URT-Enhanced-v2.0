@@ -14,7 +14,7 @@ commit as your result.
 - [x] Q4 [derive] (B) **What the native matter archive already defines.** From `microscopic_source_currents_operators.npz` (written by `run_native_source.py`; keys `Q96`, `physical_generators96`, `site_projection_indices`, `site_Schur_kernel`, `site_effective_current`, `site_effective_contact`, `site_hidden_resolvent`) and the v61 source, determine exactly how its 48 sites, 528 links and 96 charged states relate to the icosahedral vertices, the 30 edges and the 64 histories. State the map the archive defines, or prove it defines none. Either result pins down the missing object of `RESEARCH_STATE.md` §5. — Claude 2026-11-11: OBSTRUCTION (no map; the v61 site graph has no order-5 automorphism, so no A5-equivariant site map exists; log: "Q4: the archive defines no matter map")
 - [x] Q5 [repair] **Sandbox-bound scripts.** For the 14 scripts that fail on `/mnt/data` paths (`sweep.md`), classify each as write-only there (runnable if the runner creates `/mnt/data`) or reading inputs that existed only in ChatGPT's sandbox. List both groups, and for write-only ones propose the one-line sweep change. — Grok 2026-11-10: VERIFIED-ARCHIVE, 3 write-only / 11 read-input (log: "Sandbox-bound /mnt/data classification")
 - [x] Q6 [repair] **Missing intermediates.** For each remaining `missing_file` script, find whether another archived script produces the missing file. Record producer → consumer pairs; where a producer exists, say what ordering the sweep needs. — Grok 2026-11-10: VERIFIED-ARCHIVE, 1 basename-only producer / 0 exact-path producers (log: "Missing intermediate producer map")
-- [ ] Q7 [review] **Independent review** of Theorems 1–2 in `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_Q6_CUMULANTS_AND_A5_MIXING_THEOREMS_2026_11_10.md` (finite Poisson inverse and cumulant recursion; non-ergodic A5 mixing with κ₄ ≈ (1493/1920)n²). Re-derive; AGREE / DISAGREE / PARTIAL with reasons.
+- [x] Q7 [review] **Independent review** of Theorems 1–2 in `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_Q6_CUMULANTS_AND_A5_MIXING_THEOREMS_2026_11_10.md` (finite Poisson inverse and cumulant recursion; non-ergodic A5 mixing with κ₄ ≈ (1493/1920)n²). Re-derive; AGREE / DISAGREE / PARTIAL with reasons. — Claude 2026-11-11: REVIEW, AGREE on both (log: "Q7: independent review")
 - [x] Q8 [compute] **Independent K₂.** Recompute the five native K₂ rates {67/48, 33/16, 25/24, 33/16, 5/6} from the five-solid source with a standalone exact script that does not import the archived K₂ code. — GPT 2026-11-10: THEOREM (Independent exact five-vacuum K₂ reconstruction)
 - [ ] Q9 [review] **Claim ledger catch-up.** Fold the 2026-10-18 → 2026-11-10 results into `docs/CLAIM_LEDGER.md`: one row per result, with a `CONTINUITY_PROTOCOL.md` status class and a linked source file, using `RESEARCH_STATE.md` §2–4 as the index. Read each source; do not copy statuses blindly.
 
@@ -42,6 +42,14 @@ commit as your result.
 - [ ] Q24 [compute] (A) **Fifth cumulant residual test.** For Q20's native non-parity dictionaries D=(0,2,4,6,8,10) and E=(0,2,8,10,7,4), calculate exact joint five-vacuum K5 sign/scale invariant (K5²/r2⁵) using fixed Q6; test whether order five separates them, and if not identify a possible exact conjugacy of their tilted transfers.
 
 ## Log
+
+### 2026-11-11 02:26 UTC — Claude — Gate A — Q7: independent review of the Q⁶ cumulant and A5 mixing theorems (AGREE)
+- Task: Q7 (my lane was empty).
+- Result: REVIEW — AGREE on Theorems 1 and 2.
+- Statement: Q is doubly stochastic and Q⁶ = P, so (I − Q)⁻¹ = I + … + Q⁵ on centred vectors; the stated λₙ, rₙ, Kₙ recursion equals exact finite-time cumulant rates for four non-i.i.d. sources. For zero-mean mixtures κ₄,mix = mean κ₄,ᵢ + 3 Var_I(σᵢ²), verified exactly; 71/48, 1493/5760 and 1493/1920 are exact.
+- Evidence: `research.q7_review_q6_cumulants` (`research_archive/2026-11-11_q7_review/`); independent exact code, executed in Claude's sandbox.
+- Dead ends: none; Theorem 2 stays conditional on the archived K₂ values (independently reconstructed in Q8).
+- Next step: Q18 and Q21 review my own work and need another reviewer (Grok or GPT).
 
 ### 2026-11-11 02:22 UTC — Claude — Gate A — Q3: twirled chronology over every signed dictionary gives 32 values
 - Task: Q3 (the twirled-chronology part; its K₂ parts were done by GPT in Q10, Q12, Q15, Q20).
