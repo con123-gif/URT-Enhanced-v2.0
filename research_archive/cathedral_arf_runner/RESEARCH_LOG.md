@@ -16,7 +16,7 @@ commit as your result.
 - [x] Q6 [repair] **Missing intermediates.** For each remaining `missing_file` script, find whether another archived script produces the missing file. Record producer → consumer pairs; where a producer exists, say what ordering the sweep needs. — Grok 2026-11-10: VERIFIED-ARCHIVE, 1 basename-only producer / 0 exact-path producers (log: "Missing intermediate producer map")
 - [x] Q7 [review] **Independent review** of Theorems 1–2 in `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_Q6_CUMULANTS_AND_A5_MIXING_THEOREMS_2026_11_10.md` (finite Poisson inverse and cumulant recursion; non-ergodic A5 mixing with κ₄ ≈ (1493/1920)n²). Re-derive; AGREE / DISAGREE / PARTIAL with reasons. — Claude 2026-11-11: REVIEW, AGREE on both (log: "Q7: independent review")
 - [x] Q8 [compute] **Independent K₂.** Recompute the five native K₂ rates {67/48, 33/16, 25/24, 33/16, 5/6} from the five-solid source with a standalone exact script that does not import the archived K₂ code. — GPT 2026-11-10: THEOREM (Independent exact five-vacuum K₂ reconstruction)
-- [ ] Q9 [review] **Claim ledger catch-up.** Fold the 2026-10-18 → 2026-11-10 results into `docs/CLAIM_LEDGER.md`: one row per result, with a `CONTINUITY_PROTOCOL.md` status class and a linked source file, using `RESEARCH_STATE.md` §2–4 as the index. Read each source; do not copy statuses blindly. — PARTIAL (Claude 2026-11-11): rows for 2026-11-10 → 11 added; 2026-10-18 → 11-09 still to fold
+- [x] Q9 [review] **Claim ledger catch-up.** Fold the 2026-10-18 → 2026-11-10 results into `docs/CLAIM_LEDGER.md`: one row per result, with a `CONTINUITY_PROTOCOL.md` status class and a linked source file, using `RESEARCH_STATE.md` §2–4 as the index. Read each source; do not copy statuses blindly. — Claude 2026-11-11: DONE on the RESEARCH_STATE §2–4 index (33 rows, 2026-10-18 → 11-11, each source's status line read); per-file folding of large folders not attempted
 
 - [x] Q10 [compute] (A) **Unsigned axis-order K₂ spectrum.** Using the exact six-bit source and A4 projectors, enumerate one representative of each of the 12 unsigned A5 axis-order classes; compute and count the distinct five-vacuum K₂ multisets without varying source coefficients. Record exact witnesses for any collisions. — GPT 2026-11-10: OBSTRUCTION (Exact unsigned A5 axis-order spectra and fixed-endpoint sign choice)
 
@@ -44,6 +44,14 @@ commit as your result.
 - [x] Q25 [derive] (C/F) **A 4D photon with A5 symmetry.** The icosahedral photon lives on a 2D surface, where e² carries dimensions; a dimensionless α needs 4D. The archive has an A5-symmetric 4D complex: the 13-cell (centre + icosahedral shell, a 3-ball) times the native 24-clock (r = π/e, golden twist). Build its cochain complex and Maxwell operator, decompose the physical link modes under A5, and state which matter coupling (Con's choice, pending: candidate 1 or a variant) would induce a photon there. Report the A5 content of the softest physical modes and whether the 2D gauge typing of Q23 survives. Do not identify any number with α. — Claude 2026-11-11: THEOREM (geometry; matter coupling pending Con's choice; log: "Q25: 4D photon")
 
 ## Log
+
+### 2026-11-11 02:48 UTC — Claude — All gates — Q9: claim ledger caught up to 2026-11-11
+- Task: Q9.
+- Result: REVIEW (documentation; each row's source read).
+- Statement: `docs/CLAIM_LEDGER.md` gains 15 rows for 2026-10-18 → 11-09 indexed by RESEARCH_STATE §2–4, on top of the 19 rows for 2026-11-10 → 11, all with canonical status classes. Two notable statuses: the five-cube bridge identity is "claimed" in its source, but its premise is the executed 5/4 tight frame; the tested quark Yukawa dictionary is RETIRED.
+- Evidence: the ledger rows link their sources; no code.
+- Dead ends: per-file folding of the 22 notes in `2026-10-24_alpha_physical_gate/` and 35 in `2026-11-08_native_h64_diffusion/` was not attempted.
+- Next step: open items are now Q18, Q21 (non-Claude reviewer), Q22, Q24 (GPT), and Con's choice of a new ingredient for R_α.
 
 ### 2026-11-11 02:45 UTC — Claude — Gate C — Q25: the 4D A5-symmetric photon on 13-cell × 24-clock keeps the 2D gauge typing
 - Task: Q25 (geometry part).
