@@ -6,7 +6,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q48 [compute] (A) Native hidden energy-clock phase-rate and 24-track flux-quadrature audit — GPT 2026-11-12: THEOREM for additive Gaussian gap; CONDITIONAL flux-dressed readout (log: native clock-rate and flux quadrature)
-- [ ] Q49 [derive] (A) GPT 2026-11-12 exact fixed-Haar-frame obstruction (23 rows; Q49 still open): Determine whether the canonical 190/64/24 nonlinear Ward source supplies a gauge-covariant native 24-bin history map, without declaring the conditional Haar B physically selected.
+- [ ] Q49 [derive] (A) GPT 2026-11-12 exact fixed-frame and diagonal-history obstruction (rank 24, kernel 40, 24 bridges; Q49 still open): Determine whether the canonical 190/64/24 nonlinear Ward source supplies a gauge-covariant native 24-bin history map, without declaring the conditional Haar B physically selected.
+
+- [ ] Q50 [compute] (A) Test whether the canonical nonlinear five-solid/64-history Ward source admits a non-diagonal 64-history unitary action implementing the Wilson charge-two D on its image; use its original operator and exact source, not arbitrary Haar weights.
 
 Take the first open item in your lane (`AGENTS.md`), else any open item. Mark items done in the same
 commit as your result.
@@ -77,6 +79,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-12 08:11 UTC — GPT — Gate A — Q49: exact Haar support graph and diagonal gauge-transport obstruction
+- Task: Q49 [derive] bounded native 2026-11-09 64-history/24-clock shifted Haar support and Wilson charge-two gauge transport.
+- Result: THEOREM + OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (restricted conditional Haar and diagonal-unitary history transport); Q49 remains OPEN.
+- Statement: The 24 irrational shifted clock boundaries each lie strictly within a distinct 1/64 history cell, producing 24 adjacent-row bridge columns. Each clock bin also contains an exclusive whole history cell. Therefore rank(C)=24, dim ker(C)=40. For diagonal unitary clock D and diagonal unitary history U, D C=C U implies all D_j equal; the charge-two Wilson large-gauge D_j=exp(i*pi*j/12) is non-scalar and cannot be lifted by diagonal history phases.
+- Evidence: research.q49_haar_diagonal_transport; local python3 research_archive/2026-11-12_q49_haar_diagonal_transport/q49_haar_diagonal_transport.py exit 0; preceding CI https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43175047597 PASS for parent 1a8b3c0; new CI pending until triggered.
+- Dead ends: Neither fixed-frame nor diagonal-history rephasing repairs charge-two large-gauge covariance of the original real Haar map. No claim against general non-diagonal or nonlinear canonical 190/64/24 Ward source.
+- Next step: Q50 [compute] calculate whether the original nonlinear five-solid/64-history source has a non-diagonal unitary 64-history representation implementing the Wilson D on its actual image, without replacing it with arbitrary Haar weights.
+
 
 ### 2026-11-12 07:22 UTC — GPT — Gate A — Q49 fixed-source gauge obstruction
 - Task: Bounded exact subquestion of open Q49: can the original real Haar C/B remain fixed under the native charge-two Wilson large-gauge shift?
