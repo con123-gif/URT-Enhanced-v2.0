@@ -103,3 +103,40 @@ coupling with one undetermined real constant, or matter other than v61, or a cha
 Last completed: certificate passes locally (3.6 s). Next single question (Q54): compute exactly the first-order
 response ∂ₛ of the native transverse photon kernel Π to the two rotation-invariant parity-even insertions γ₅ and
 iγ₅γ₀ at flat links, to decide whether case 2 gives a non-zero Δ-linear channel at all.
+
+---
+
+## Addendum (2026-11-12, later, user-directed: "do not restrict to the repo") — WORK IN PROGRESS / argument, not a CI certificate
+
+### Theorem D (all orders, independent of v61): Δ → −Δ is a parity transformation
+Hypotheses, none specific to v61: (a) the hidden carrier is 4₃ ⊕ 4₅ with inversion C = −P₃ + P₅ (Theorem B);
+(b) Δ enters the source action as in the native one, S(v, y; Δ) = S(v, Ry; −Δ) with R = P₃ − P₅
+(`2026-11-11_hidden_parity/`, statement 5); (c) matter of any kind (v61 or not) is joined by a U(1)-neutral term
+J(y, ψ), hence of even degree in (y, ȳ); (d) J and the matter action are inversion-invariant, J(Cy, Pψ) = J(y, ψ).
+Then, since R = −C on the hidden carrier and J is even in y, J(Ry, Pψ) = J(Cy, Pψ) = J(y, ψ), so
+
+  S_total(v, y, ψ; Δ) = S_total(v, Ry, Pψ; −Δ)   exactly.
+
+Changing variables y → Ry, ψ → Pψ in the full integral: **every parity-even observable is an even function of Δ,
+non-perturbatively and to all orders in the join.** α is parity-even. So a term c₁Δ in α⁻¹ exists if and only if
+inversion symmetry is broken, explicitly (a new pseudoscalar coupling, one new constant) or spontaneously.
+
+### Spontaneous case: the order parameter is fixed, the coupling is not
+K is an A5-equivariant partial isometry 4₃ → 4₅, and each quartet has exactly one A4 singlet (4|A4 = 1 ⊕ 3), so
+K s₃ = ± s₅ for the unit A4 singlets. In an A4 vacuum with hidden amplitude (P₃ + ΔP₅)(s₃ + s₅)/√2 the unique
+pseudoscalar X = K + Kᵀ has ⟨X⟩ = ± 2Δ/(1 + Δ²) = ± 0.00497835, the sign being the choice between the two
+inversion-partner vacua (T vs T′). This number is parameter-free. The coefficient that converts ⟨X⟩ into a shift of
+α⁻¹ is a Yukawa-type constant; no symmetry of the construction fixes it, exactly as no symmetry fixes Yukawa
+couplings in the Standard Model. The only parameter-free joins are gauge (minimal) couplings; those are R-even and
+give c₁ = 0 by Theorem D.
+
+### What the 0.036 is in standard QED (final comparison only; CODATA is not an input)
+One-loop electron vacuum polarisation, spacelike, on-shell: α⁻¹(0) − α⁻¹(Q) = (2/π)∫₀¹ x(1−x) ln(1 + x(1−x)Q²/mₑ²) dx.
+This equals 137.035999177 − 137 at Q²/mₑ² = 2.04248 (Q = 1.42915 mₑ = 0.7303 MeV); muon loop +1.0×10⁻⁶, two-loop
+~6×10⁻⁵ relative. None of 2, φ², e, 9/4, π−1, 13/6, 20/9 reproduces it (misses 6×10⁻⁴ to 10⁻²). Reading: if the
+geometric integer 137 is α⁻¹ at an intrinsic scale, the residual is ordinary running and the framework must predict
+that scale in units of mₑ; t = 2.04248 is not a recognised native number. Executed in Claude's sandbox (scipy
+quadrature); not registered as a check.
+
+RESUME HERE (supersedes the earlier one): decide which reading the programme adopts — (i) c₁ = 0, α⁻¹ = 137 + O(Δ²)
+at a scale to be derived; (ii) spontaneous inversion breaking with one coupling to be derived from a new principle.
