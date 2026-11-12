@@ -726,3 +726,12 @@ status = "open"
 question = "Recover the four historical ARFs from the observables of E, with uniqueness arguments and falsification tests."
 evidence = []
 missing = "Requires A–E."
+
+# Conditional modular clock-rate and source-flux readout (2026-11-12)
+[[check]]
+id = "research.native_clock_rate_flux_quadrature"
+stage = "research"
+claim = "conditional"
+gating = false
+run = "python research_archive/2026-11-12_native_clock_rate/NATIVE_CLOCK_RATE_AND_FLUX_QUADRATURE_VERIFY.py"
+timeout = 240
