@@ -735,3 +735,11 @@ claim = "conditional"
 gating = false
 run = "python research_archive/2026-11-12_native_clock_rate/NATIVE_CLOCK_RATE_AND_FLUX_QUADRATURE_VERIFY.py"
 timeout = 240
+
+[[check]]
+id = "research.q49_fixed_source_gauge_obstruction"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-12_q49_fixed_source_gauge/q49_fixed_source_gauge_obstruction.py"
+timeout = 120

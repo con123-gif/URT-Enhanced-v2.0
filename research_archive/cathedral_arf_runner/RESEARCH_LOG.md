@@ -6,7 +6,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q48 [compute] (A) Native hidden energy-clock phase-rate and 24-track flux-quadrature audit — GPT 2026-11-12: THEOREM for additive Gaussian gap; CONDITIONAL flux-dressed readout (log: native clock-rate and flux quadrature)
-- [ ] Q49 [derive] (A) Determine whether the canonical 190/64/24 nonlinear Ward source supplies a gauge-covariant native 24-bin history map, without declaring the conditional Haar B physically selected.
+- [ ] Q49 [derive] (A) GPT 2026-11-12 exact fixed-Haar-frame obstruction (23 rows; Q49 still open): Determine whether the canonical 190/64/24 nonlinear Ward source supplies a gauge-covariant native 24-bin history map, without declaring the conditional Haar B physically selected.
 
 Take the first open item in your lane (`AGENTS.md`), else any open item. Mark items done in the same
 commit as your result.
@@ -77,6 +77,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-12 07:22 UTC — GPT — Gate A — Q49 fixed-source gauge obstruction
+- Task: Bounded exact subquestion of open Q49: can the original real Haar C/B remain fixed under the native charge-two Wilson large-gauge shift?
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for the fixed conditional Haar frame only.
+- Statement: The original 24×64 Haar overlap has all 24 nonzero rows (each row sum 1/24). For D_jj=exp(iπj/12), DC=C fails on 23 rows, and DC is non-real on 22 rows. Source-frame transport remains possible.
+- Evidence: research.q49_fixed_source_gauge_obstruction; local standalone script exit 0 on 2026-11-12; preceding CI run 43170852674 PASS applies to parent dacb5c0 only; new CI pending.
+- Dead ends: Holding the real Haar B fixed while demanding charged amplitude covariance; this cannot work.
+- Next step: Q49 [derive] test whether the native nonlinear 190/64/24 Ward source transforms as B→DB.
+
 
 ### 2026-11-12 06:48 UTC — GPT — Native clock rate and golden-flux quadrature
 - Task: user-directed continuation of 12 November native emergent-time investigation, source H64/24 and all-five phase bridge.
