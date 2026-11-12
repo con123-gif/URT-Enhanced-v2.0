@@ -715,6 +715,15 @@ gating = true
 run = "python -u research_archive/2026-11-12_q58_native_geometric_coupling/Q58_NATIVE_COUPLING_CURVATURE_VERIFY.py"
 timeout = 300
 
+# Q57 original five-solid geometric energy-shell clock test
+[[check]]
+id = "research.q57_native_clock_geometry"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q57_geometric_clock/Q57_NATIVE_CLOCK_GEOMETRY_VERIFY.py"
+timeout = 300
+
 [[gate]]
 id = "A"
 title = "Primitive selection"
