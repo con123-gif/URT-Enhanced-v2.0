@@ -724,6 +724,15 @@ gating = true
 run = "python -u research_archive/2026-11-12_q57_geometric_clock/Q57_NATIVE_CLOCK_GEOMETRY_VERIFY.py"
 timeout = 300
 
+# Q59 primitive recurrence / 64-history transfer / 24-clock: no unique conservative time generator
+[[check]]
+id = "research.q59_time_generator"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q59_time_generator/Q59_TIME_GENERATOR_CERTIFICATE.py"
+timeout = 300
+
 # Q55 original Hopf/2I charged Wilson lattice: 600-cell source, Chern flux, kinematic Ward orders
 [[check]]
 id = "research.q55_hopf_wilson_ward"
