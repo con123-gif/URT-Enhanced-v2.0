@@ -608,6 +608,14 @@ gating = true
 run = "python -u research_archive/2026-11-12_q45_zero_coset_orders/q45_zero_coset_orders.py"
 timeout = 120
 
+[[check]]
+id = "research.q46_rotation_mechanism"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q46_rotation_mechanism/q46_rotation_mechanism.py"
+timeout = 120
+
 # ------------------------------------------------------------------ compute queue
 # Long exact computations for GitHub to run around the clock (.github/workflows/cathedral-compute.yml):
 # one at a time, back to back, up to 330 minutes each; results land on the state branch under
