@@ -5,7 +5,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61.
+- [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.)
 
 - [ ] Q59 [derive] (A) Starting from the primitive URT complex recurrence and original positive H64/24 transfer, determine whether a unique antisymmetric symplectic/Berry term and conservative real-time generator follow without an added time postulate; if not, give a scoped non-uniqueness certificate. Keep all five solids and the existing hidden 4+4 source.
 
@@ -95,6 +95,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-12 — GPT — Gate B — Q60 fixed-face native H64→Hopf interface and global-charge obstruction
+- Task: Q60 [compute], first stage of the original five-solid H64 nonlinear source into the current Hopf charge ±2/±4 matter shell.
+- Result: THEOREM + SCOPED OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (fixed-frame Hilbert-space bridge, not a physical interacting charged Ward join).
+- Statement: A proper signed-coordinate rotation R=[[-1,0,0],[0,0,-1],[0,-1,0]] maps the native Nov7 20 original icosahedral face labels to the current 2I/Hopf face labels, preserving both rank-four P3/P5 projectors. Twelve equally valid signed proper frames were found, and one deterministic face permutation J explicitly certified. The four 12×64 maps M_n=T_n J U_h† satisfy ΣM_n†M_n=P8 and ΣM_n†L_nM_n=15P8. Original all-five source v50=Eglobal(e0+e3) yields ||b||²=||Mb||²=2.16678972959474 and charged kinetic 32.5018459439211. A nonzero linear map from H64 charge 2 cannot globally U(1)-intertwine output Hopf charges −2,+4,−4 simultaneously; the four-sector isometry is a fixed-frame *vector* map, not yet a charged covariant interaction.
+- Evidence: research.q60_hopf_h64_frame; independent full-five Nov7 plus 2I group local reconstruction exit 0, native CI check pending. Files: research_archive/2026-11-12_q60_hopf_h64_frame/.
+- Dead ends: treating four inequivalent Hopf charges as a single physical charge-two H64 multiplet; equating label sets without explicit frame match; extrapolating Q56 source-free limit to new Hopf geometry.
+- Next step: continue Q60 for nonlinear, charge-matched transport and joined first/second Ward identities with Schur relaxation. 
+
 
 ### 2026-11-12 — GPT — Gate B — Q55 native Hopf Wilson charged kinetic closure
 - Task: Q55 [derive], complete the 12 Nov 2I Hopf charged-carrier work into the actual self-adjoint two-sheet Wilson operator, verify first/second Ward orders and evaluate the hidden quadratic form.

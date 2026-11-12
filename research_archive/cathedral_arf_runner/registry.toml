@@ -733,6 +733,15 @@ gating = true
 run = "python -u research_archive/2026-11-12_q55_hopf_wilson/Q55_HOPF_WILSON_CHARGED_OPERATOR_VERIFY.py"
 timeout = 300
 
+# Q60 exact frame-map interface, native all-five/H64 to 2I/Hopf charged carriers
+[[check]]
+id = "research.q60_hopf_h64_frame"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q60_hopf_h64_frame/Q60_HOPF_H64_ALL_FIVE_FRAME_INTERFACE_VERIFY.py"
+timeout = 300
+
 [[gate]]
 id = "A"
 title = "Primitive selection"
