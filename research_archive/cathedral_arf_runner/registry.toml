@@ -697,6 +697,15 @@ gating = true
 run = "python -u research_archive/2026-11-12_q53_native_ward_current/Q53_NATIVE_ONSHELL_WARD_CLOCK.py"
 timeout = 300
 
+# Q56: original all-five 190/64/24 nonlinear source-free stationary clock
+[[check]]
+id = "research.q56_full_stationary_current"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q56_nonlinear_stationary/Q56_FULL_STATIONARY_CURRENT_VERIFY.py"
+timeout = 300
+
 [[gate]]
 id = "A"
 title = "Primitive selection"
