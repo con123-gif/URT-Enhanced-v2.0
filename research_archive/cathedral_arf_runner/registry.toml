@@ -767,3 +767,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-12_q50_history_gauge/q50_uniform_history_obstruction.py"
 timeout = 120
+
+[[check]]
+id = "research.q53_v61_internal_symmetry"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_gate_b_v61_internal_symmetry/gate_b_v61_internal_symmetry.py"
+timeout = 180

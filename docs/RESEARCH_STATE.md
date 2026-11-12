@@ -147,6 +147,7 @@ Known constraints on it:
 - The 24-clock cannot carry the A5 repair by itself.
 - The v61 site graph has no automorphism of order 5 (Q4): the map must act on internal (spinor or registry) indices, never by identifying lattice sites or links with Platonic cells.
 - To feed a Δ-linear α correction it must reach the photon and be odd under R = I − 2U_hP₅U_hᵀ (hidden parity, 2026-11-11).
+- It cannot be a linear A5-equivariant map (Q53, 2026-11-12): every A5 or 2I action by local covariant symmetries of the gauge-covariant v61 family is trivial, so the source enters only through A5-invariant functions times A5-neutral gauge-invariant matter operators. Every U(1)-neutral R-odd source is inversion-odd (leading order: the unique cross intertwiner X of 4₃, 4₅). An inversion-respecting join gives no Δ-linear correction to any parity-symmetric photon observable at first order; a Δ-linear term needs a parity-violating coupling with one constant not fixed by symmetry (`research_archive/2026-11-12_gate_b_v61_internal_symmetry/`).
 
 Nothing in the archive selects this map. Gates B → C → D are this object; gates E and F follow from it.
 

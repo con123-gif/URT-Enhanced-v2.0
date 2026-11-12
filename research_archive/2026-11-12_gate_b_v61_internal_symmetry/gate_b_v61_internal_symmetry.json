@@ -1,0 +1,30 @@
+{
+  "site_aut_order_divides": 146767085568,
+  "ordered_pairs_by_terms": {
+    "2": 144,
+    "1": 768
+  },
+  "return_algebra_dim": 16,
+  "K0_norm_c": "60",
+  "End_A5_hidden_dim": 4,
+  "parity_even_insertions": [
+    "g5",
+    "i g5 g0",
+    "g1",
+    "g2",
+    "g3",
+    "i g0 g1",
+    "i g0 g2",
+    "i g0 g3"
+  ],
+  "parity_odd_insertions": [
+    "1",
+    "g0",
+    "i g5 g1",
+    "i g5 g2",
+    "i g5 g3",
+    "i g1 g2",
+    "i g1 g3",
+    "i g2 g3"
+  ]
+}
