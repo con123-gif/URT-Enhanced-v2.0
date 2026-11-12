@@ -14,16 +14,7 @@
 # gating = true: a failure turns the run red (and GitHub emails you).
 # gating = false: reported in the summary only.
 #
-# A passing check NEVER closes a physical gate. See # Q52: original all-five nonlinear hidden-source span and unitary clock rigidity
-[[check]]
-id = "research.q52_native_source_unitary"
-stage = "research"
-claim = "native"
-gating = true
-run = "python -u research_archive/2026-11-12_q52_source_unitary/Q52_NATIVE_SOURCE_UNITARY_CLOCK.py"
-timeout = 300
-
-[[gate]] at the bottom.
+# A passing check NEVER closes a physical gate. See [[gate]] at the bottom.
 
 [run]
 python = "3.11"
@@ -687,6 +678,15 @@ claim = "independent"
 # status is "open" or "closed". A gate may be set to "closed" only together with
 # proof_check = "<check id>" naming a check with claim = "derivation" that passes
 # in the same run; otherwise the run fails (claim guard). Nothing else closes a gate.
+
+# Q52: original all-five nonlinear hidden-source span and unitary clock rigidity
+[[check]]
+id = "research.q52_native_source_unitary"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q52_source_unitary/Q52_NATIVE_SOURCE_UNITARY_CLOCK.py"
+timeout = 300
 
 [[gate]]
 id = "A"
