@@ -5,7 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [ ] Q53 [compute] (A) From the original nonlinear all-five 190/64/24 action, calculate the on-shell gauge-invariant charge-two Wilson link current for deterministic Eglobal-source configurations, with no Haar phase-bin dictionary. Determine whether the current has a nonzero flux-odd component and distinguish a clock response from a physical proper-time law.
+- [ ] Q56 [compute] (A) Derive the native cochain Euler–Lagrange equations with full nonlinear entropy and 64-history Schur relaxation, and determine whether any stationary 24-track winding configuration has nonzero gauge-invariant Wilson current without source forcing or fitted constants.
+
+- [x] Q53 [compute] (A) From the original nonlinear all-five 190/64/24 action, calculate the on-shell gauge-invariant charge-two Wilson link current for deterministic Eglobal-source configurations, with no Haar phase-bin dictionary. Determine whether the current has a nonzero flux-odd component and distinguish a clock response from a physical proper-time law. — GPT 2026-11-12: THEOREM (native nonlinear Schur Ward-link current, gauge and flux parity)
 
 - [x] Q48 [compute] (A) Native hidden energy-clock phase-rate and 24-track flux-quadrature audit — GPT 2026-11-12: THEOREM for additive Gaussian gap; CONDITIONAL flux-dressed readout (log: native clock-rate and flux quadrature)
 - [x] Q49 [derive] (A) Determine whether the canonical 190/64/24 nonlinear Ward source supplies a gauge-covariant native 24-bin history map, without declaring the conditional Haar B physically selected. — GPT 2026-11-12: fixed-Haar-frame OBSTRUCTION (23 rows) and diagonal-history transport OBSTRUCTION (rank 24, kernel 40, 24 bridges); Claude 2026-11-12: THEOREM + OBSTRUCTION (native y* is charge-2 covariant but confined to the rank-8 carrier im U_h; ‖DB − y*‖² ≥ ‖B(1−P₈)‖² = 87.1 % of ‖B‖² for every unitary D; the π/24 shift is not a symmetry of the full action, only D² is; log: "Q49: the native Ward source lives on the hidden carrier")
@@ -85,6 +87,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-12 — GPT — Gate A — Q53 native nonlinear Schur Wilson currents
+- Task: Q53 [compute], obtain history/current link response directly from the original 190/64/24 action, excluding the Q49-disqualified Haar B.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (source-fixed 190 cochains, native history on shell).
+- Statement: J_hist,j=2r² Im(y_(j+1)^†exp(2i theta_j)y_j) with y=(G3h3+Delta G5h5)Uh^T; J_geom,j=r² Im(z_(j+1)^†exp(i theta_j)z_j). On the all-five source Eglobal(e0+e3), native 24-winding reduction gives nonzero flux-odd history current in all modes and charge-two aliases m↔m+12, distinguished by the charge-one geometric current. No physical proper-time law.
+- Evidence: research.q53_native_onshell_ward_clock; local independently reconstructed full all-five 190/64/24 current, Schur derivative, full/reduced equality and local-gauge checks executed exit 0 for m=0,3,12,15; original-source CI pending. research_archive/2026-11-12_q53_native_ward_current/.
+- Dead ends: interpreting the Wilson phase current as physical time itself; using Haar B; calling history Schur minimisation full cochain on-shell dynamics.
+- Next step: Q56 [compute], solve the full nonlinear cochain stationary equations and test whether nonzero-current solutions survive.
+
 
 ### 2026-11-12 10:52 UTC — Claude — Gate B — Hopf charge sectors of 2I: the canonical charged carrier of the hidden quartets (checkpoint)
 - Task: user-directed by Con in chat (use the Hopf geometry). Continuity correction: the Aug–Sept Hopf/2I endpoint (`research_archive/Cathedral_Master_Index.md`) is absent from `docs/RESEARCH_STATE.md`.

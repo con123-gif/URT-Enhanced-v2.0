@@ -688,6 +688,15 @@ gating = true
 run = "python -u research_archive/2026-11-12_q52_source_unitary/Q52_NATIVE_SOURCE_UNITARY_CLOCK.py"
 timeout = 300
 
+# Q53: native 190-cochain, nonlinear 64-history Schur, 24 Wilson-link current
+[[check]]
+id = "research.q53_native_onshell_ward_clock"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q53_native_ward_current/Q53_NATIVE_ONSHELL_WARD_CLOCK.py"
+timeout = 300
+
 [[gate]]
 id = "A"
 title = "Primitive selection"
