@@ -759,3 +759,11 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q49_native_ward_history_map/q49_native_ward_history_map.py"
 timeout = 180
+
+[[check]]
+id = "research.q50_uniform_history_gauge"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-12_q50_history_gauge/q50_uniform_history_obstruction.py"
+timeout = 120
