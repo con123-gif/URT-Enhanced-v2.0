@@ -38,6 +38,16 @@ Thus the canonical modular flow agrees with *unitary time evolution under the na
 
 The 24-track Hermitian kinetic term r² L24^(2) acts identically on both hidden sectors and hence does not alter their gap of 2 in the original Gaussian history Hamiltonian Hbits⊗I24 + r² I64⊗L24^(2). This is an algebraic statement about that archived term, **not** an identification of the actual cyclic shift with modular flow.
 
+## Corollary: the KMS state is population-inverted relative to the native positive history Hamiltonian
+
+This is a necessary qualification to the thermal-time interpretation. On the hidden carrier Hhid=18P3+16P5, the frozen state satisfies
+
+rho* = exp(+eta Hhid) / Tr_hidden exp(+eta Hhid).
+
+It is therefore formally a **negative-inverse-temperature Gibbs state, beta_native = -eta**, relative to the native +Hbits energy. Equivalently, it is a positive-temperature Gibbs state of the reversed cost 18I-Hhid=2P5. Because both sectors have equal degeneracy, a positive-temperature Gibbs state of +Hhid would suppress P3, whereas rho* selects it by the exact per-state ratio Delta^{-2} > 1. No positive beta for +Hhid can reproduce rho*. A finite bounded sector can consistently support population inversion, but the full 64-history + 190-cochain apparatus has not been shown to prepare or sustain it. This is the pre-existing reversed-cost distinction in URT_NATIVE_HISTORY_CLOCK_KERNEL_THEOREM, now made explicit for thermal time.
+
+Also, although Eglobal is reconstructed from **all five solids**, the selected source input v=Eglobal a lies on its eight-dimensional collective subspace, and Plinear Eglobal a=Iico a. The finite readout therefore does **not** verify the full 190-cochain dynamical feedback.
+
 ## Theorem B: conditional native source-clock POVM *does* detect modular phase
 
 The existing phase-bin dictionary defines normalized 24×64 B (conditional expectation of 64 six-bit histories on 24 equally spaced golden-shifted bins). The existing all-five source R3,R5 defines
