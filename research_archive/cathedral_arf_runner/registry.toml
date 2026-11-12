@@ -706,6 +706,15 @@ gating = true
 run = "python -u research_archive/2026-11-12_q56_nonlinear_stationary/Q56_FULL_STATIONARY_CURRENT_VERIFY.py"
 timeout = 300
 
+# Q58: analytic Hessian-response curvature of ORIGINAL all-five native action
+[[check]]
+id = "research.q58_native_coupling_curvature"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q58_native_geometric_coupling/Q58_NATIVE_COUPLING_CURVATURE_VERIFY.py"
+timeout = 300
+
 [[gate]]
 id = "A"
 title = "Primitive selection"

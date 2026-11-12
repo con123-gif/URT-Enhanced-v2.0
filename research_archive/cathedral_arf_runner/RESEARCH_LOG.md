@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q58 [compute] (A) User-directed coupling-as-geometry application: evaluate analytic two-coordinate native Hessian curvature and connection at original nonlinear weights, compare λ=0,1,2 without physical fitting, and reconcile Q56 zero-current theorem — GPT 2026-11-12: THEOREM (native diagnostic geometry), PHYSICAL IDENTIFICATION PENDING.
+
 - [ ] Q57 [derive] (A) Determine whether the original all-five 190/64/24 action supplies a canonically invariant fixed-norm or energy manifold and a conservative real-time Hamiltonian, without adding a new constraint or dimensional scale; only then test whether URT coupling weights induce a Jacobi metric and preserve a nonzero Ward clock current.
 
 - [x] Q56 [compute] (A) Derive the native cochain Euler–Lagrange equations with full nonlinear entropy and 64-history Schur relaxation, and determine whether any stationary 24-track winding configuration has nonzero gauge-invariant Wilson current without source forcing or fitted constants. — GPT 2026-11-12: THEOREM + OBSTRUCTION (unique stationary z=0; all currents zero)
@@ -89,6 +91,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-12 — GPT — Gate A — Q58 native coupling and Hessian curvature
+- Task: user-directed application of coupling-weight/geodesic/entropy ideas to Q56 native 190/64/24 clock action.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (specified affine two-coordinate auxiliary Hessian metric only).
+- Statement: On original all-five Eglobal(e0,e3) cochain winding slice, g=Hess(S_red) has K_H(λ=0)=0; with native λ=1 at (1/2,1/2), K_H(m=0,9,12)=(0.0001406585930,0.0016662017247,0.0009730251580). At m=9, Γ^x_yy=0.3697244442. Doubling existing nonnegative nonlinear weight changes curvature, not source-free stationary current (Q56 remains). F_alpha=2x+alpha with alpha=phi^-2 is affine-conjugate to doubling and has KS entropy ln2 independent of alpha.
+- Evidence: research.q58_native_coupling_curvature; independent local all-five reconstruction analytic derivatives, action agreement and finite-difference checks exit 0; native import CI pending. Files: research_archive/2026-11-12_q58_native_geometric_coupling/.
+- Dead ends: equating auxiliary Hessian curvature with Einstein gravity; calling the diagnostic affine slice dynamically invariant; assigning a Jacobi metric without a real-time Hamiltonian or energy shell; inferring KAM stability from golden shift alone.
+- Next step: existing Q57 [derive], canonical Hamiltonian/invariant manifold gate for a physical clock.
+
 
 ### 2026-11-12 — GPT — Gate A — Q56 full nonlinear stationary-clock obstruction
 - Task: Q56 [compute] — solve all native 190-cochain Euler–Lagrange equations after exact 64-history Schur relaxation, including nonlinear entropy, and test stationary 24-track current.
