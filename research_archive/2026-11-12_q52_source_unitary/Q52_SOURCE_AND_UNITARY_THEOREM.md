@@ -1,0 +1,25 @@
+# Q52 — Native nonlinear source span and local history-unitary rigidity
+Date: 2026-11-12. Status: **THEOREM + OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING**.
+No physical proper-time law or Lorentz covariance follows.
+
+## Precise native scope
+Read the original 2026-11-07 all-five 190-cochain/64-history/24-Wilson-clock action at `research_archive/2026-11-10_urt_arf_forward/forward/cathedral_constructed_joint_dynamics_2026_11_07.py`, and the 2026-11-12 Q49/Q50 history-source and Ward obstructions. Keep all five solid harmonics `Eglobal`, the original face incidence `C`, the rank-4 `P3,P5`, source `h_s(v)=P_s(C Plinear v)^{\odot2}`, and the native partial isometry `U_h`. The interacting source is the original nonlinear one: `b(v)=U_h[h3(v)+Delta h5(v)]` (column convention). No Haar bin dictionary `B` is used.
+
+## Theorem A: all hidden source directions are attainable in linear span
+Let `e_i` be the eight coordinate columns of the all-five Eglobal frame. Form 36 deterministic `v_{ij}=Eglobal e_i` for i=j and `v_{ij}=Eglobal(e_i+e_j)` for i<j. Their native source columns `b(v_{ij})` span exactly `im(U_h)`, dimension **8**, and both quartet projections span dimension **4** each. The Hermitian source coupling therefore detects every direction on the native hidden carrier (in linear span, not a claim of arbitrary single-configuration reachability).
+
+**Exact certificate:** the original icosahedral raw coordinate columns `x,y,z,x²−y²,x²+y²−2z²,xy,xz,yz` span the same complex eight-plane as `Iico` (normalization and whitening are invertible). Form the exact face projectors `P_h=I-C(C^TC)^{-1}C^T`, `P3=P_h(5I-L_face)/2`, `P5=P_h(L_face-3I)/2` over Q(sqrt(5)), then reduce to F_1009 using `sqrt(5) -> 244`, `phi -> 627`. The source-matrix reduction has rank 8 with pivot columns **[0,1,2,3,5,6,7,8]**; individual projector blocks have rank 4+4. An 8×8 minor nonzero modulo 1009 proves a nonzero algebraic minor in characteristic zero. Since `Delta ≠0`, replacing `P3+P5` with `P3+Delta P5` does not change span. Independently, the local numerical native-source reconstruction returned eight positive singular values with smallest `0.00325702297216697`.
+
+## Theorem B: original scalar Wilson links forbid an independent track-dependent history-right unitary
+Consider any off-shell transformation `y_j -> e^{2i alpha_j} y_j W_j`, where each `W_j` is a history-space unitary and the scalar Wilson angle transforms by the original charge-two U(1) rule. The native kinetic term is `r²/2 sum_j || y_{j+1} - e^{2i theta_j} y_j ||²`, with `r=pi/e>0`. Exact covariance for **all independent off-shell history fields** requires `W_{j+1}† W_j=I` on each edge by comparing the independent nearest-neighbor bilinears. Therefore `W_j=W` is constant on the connected 24-cycle. The local source term `-Re <y_j,b(v_j)>` then forces `W b(v)=b(v)` for every allowed `v` (after the ordinary left U(1) gauge transport), so Theorem A forces `W` to act as the identity on all eight hidden directions. Any constant action on the orthogonal, source-invisible complement must also commute with `Hbits` to preserve the quadratic potential. It is **not** a new charge-two transport.
+
+A deterministic original-link counterexample uses history vectors `y_0=e_0`, `y_1=e^{2i theta}e_0`; flipping their first history coordinate only at site 1 changes the native kinetic quadratic form by `4(pi/e)^2 = 5.342822828218989...`, not zero. This confirms the algebraic restriction on the exact named Wilson kinetic.
+
+## Boundaries and relation to prior work
+This continues Q49 (the Haar B is not the native history source) and Q50 (a clock-independent right history transform cannot replace the left U(1) gauge). It **does not** exclude all conceivable nonlinear or derivative-dependent changes of variables, field-dependent matrix-valued Wilson links added by a new theory, or emergent physical clocks from integrated-out interacting cochains. This theorem is for the original action, its scalar Wilson coupling, off-shell linear unitary history actions and the original nonlinear source. No physical seconds, Lorentz lapse, proper time or H64-to-v61 charged-map derivation.
+
+## Execution and next action
+Local: `OPENBLAS_NUM_THREADS=1 python Q52_NATIVE_SOURCE_UNITARY_CLOCK.py --reconstruction /mnt/data/cathedral_native_clock_certificate.py` (independent earlier all-five reconstruction of the named operators), exit 0: source span 8; exact modular F_1009 ranks 8 and 4+4; kinetic difference 5.342822828218989. This is a local reconstructed test, not an executed fresh import from the complete native archive.
+Registered CI: `research.q52_native_source_unitary`, no `--reconstruction`, so the native archive is imported. A future CI PASS must be checked independently; it does not close a physical gate.
+
+RESUME HERE: compute a genuine on-shell gauge-invariant Ward-link current directly from the original nonlinear source and full native 190/64/24 action, without Haar B, then examine whether its odd phase response provides an intrinsic clock observable. Do not mistake its clock-phase dependence for Lorentz time dilation.
