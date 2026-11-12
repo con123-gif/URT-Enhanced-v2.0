@@ -14,6 +14,10 @@ doing anything:
 5. The latest CI verdict: `summary.md` on branch `cathedral-research-state`.
 
 ## Lanes
+**Solve, don't shelve (Con, 2026-11-12).** The Queue opens with one ACTIVE PROBLEM. Every agent works on
+it until it is solved, never shelving it behind a no-go and never duplicating another agent's attempt
+(`RESEARCH_PROTOCOL.md` §2). Lanes below apply only when no active problem is open.
+
 Several AIs work this repository on schedules. Take the first open Queue item in **your** lane; if your
 lane is empty, take any open item.
 

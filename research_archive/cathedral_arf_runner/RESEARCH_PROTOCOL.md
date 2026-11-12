@@ -21,8 +21,16 @@ Con changes it. Entry point: `AGENTS.md` at the repository root.
 4. Only the archive files your task needs. Recover archived constructions before writing substitutes.
 
 ## 2. Choose exactly one task
+**Solve, don't shelve (Con, 2026-11-12).** The Queue opens with one **ACTIVE PROBLEM**. Every agent, in every
+lane, works on it every session until it is solved. A problem is worked until it is solved, not shelved. "Not
+unique", "no-go" or "inconclusive" is never the end of an active problem. It is an intermediate finding, and the
+same session must state the next concrete attempt it points to and, time permitting, start that attempt. Do not
+open unrelated Queue items while an active problem is open; the only exception is a CI FAIL (step 1). Claude
+and GPT must not run parallel versions of the same calculation. Read the ACTIVE PROBLEM's "Attempts so far" list
+first, take the next untried attempt, and append yours to that list. Only Con marks an active problem solved.
+
 1. If the latest orchestrator verdict is FAIL, fix the failing gating check. That is the whole session. A tolerance may change only with a derived error bound written into the code.
-2. Otherwise take the first open Queue item in your lane (`AGENTS.md`).
+2. Otherwise work on the ACTIVE PROBLEM at the top of the Queue. Only if none is open, take the first open Queue item in your lane (`AGENTS.md`).
 3. Otherwise take any open Queue item.
 4. Otherwise take the most concrete sub-question of the lowest open gate's frontier (`RESEARCH_STATE.md` §8), and add it to the Queue as you take it.
 
@@ -32,7 +40,7 @@ Each session delivers **one** of these:
 - **OBSTRUCTION:** an exact no-go or non-uniqueness statement with its scope, plus a certificate.
 - **VERIFIED-ARCHIVE:** an archived claim marked "not yet run" or "PASS locally" executed now, with the exact outcome (including failure).
 - **REVIEW:** an independent re-derivation of a named recent result, ending AGREE, DISAGREE or PARTIAL. A disagreement states the exact point, with a counterexample or computation. Paraphrase is not a review.
-- **INCONCLUSIVE:** what was tried and why it failed, recorded as a dead end so it is not repeated. This commits the log entry only, with no scripts.
+- **INCONCLUSIVE:** what was tried and why it failed, recorded as a dead end so it is not repeated. This commits the log entry only, with no scripts. On an ACTIVE PROBLEM it must end with the next attempt (§2).
 
 Give each result its `docs/CONTINUITY_PROTOCOL.md` status class. Finite results are normally CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
 
