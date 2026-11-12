@@ -149,6 +149,8 @@ Known constraints on it:
 - To feed a Δ-linear α correction it must reach the photon and be odd under R = I − 2U_hP₅U_hᵀ (hidden parity, 2026-11-11).
 - It cannot be a linear A5-equivariant map (Q53, 2026-11-12): every A5 or 2I action by local covariant symmetries of the gauge-covariant v61 family is trivial, so the source enters only through A5-invariant functions times A5-neutral gauge-invariant matter operators. Every U(1)-neutral R-odd source is inversion-odd (leading order: the unique cross intertwiner X of 4₃, 4₅). An inversion-respecting join gives no Δ-linear correction to any parity-symmetric photon observable at first order; a Δ-linear term needs a parity-violating coupling with one constant not fixed by symmetry (`research_archive/2026-11-12_gate_b_v61_internal_symmetry/`).
 
+Candidate on native geometry (2026-11-12, work in progress): on the 2I Hopf shell the hidden quartets map linearly, equivariantly and with fixed normalisation to the Hopf charge ±2 and ±4 vertex sections (`research_archive/2026-11-12_hopf_charged_carrier/`; earlier Hopf/2I shell results in `research_archive/Cathedral_Master_Index.md`). Its Dirac operator, Ward orders and pole are not built.
+
 Nothing in the archive selects this map. Gates B → C → D are this object; gates E and F follow from it.
 
 ## 6. Recorded framework outputs: not derivations

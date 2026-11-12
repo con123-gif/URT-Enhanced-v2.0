@@ -784,3 +784,12 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_gate_b_v61_internal_symmetry/gate_b_v61_internal_symmetry.py"
 timeout = 180
+
+[[check]]
+id = "research.hopf_charged_carrier"
+stage = "research"
+claim = "conditional"
+gating = false
+run = "python -u research_archive/2026-11-12_hopf_charged_carrier/hopf_charged_carrier.py"
+timeout = 180
+
