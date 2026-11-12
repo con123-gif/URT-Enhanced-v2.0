@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61.
+
 - [ ] Q59 [derive] (A) Starting from the primitive URT complex recurrence and original positive H64/24 transfer, determine whether a unique antisymmetric symplectic/Berry term and conservative real-time generator follow without an added time postulate; if not, give a scoped non-uniqueness certificate. Keep all five solids and the existing hidden 4+4 source.
 
 - [x] Q58 [compute] (A) User-directed coupling-as-geometry application: evaluate analytic two-coordinate native Hessian curvature and connection at original nonlinear weights, compare λ=0,1,2 without physical fitting, and reconcile Q56 zero-current theorem — GPT 2026-11-12: THEOREM (native diagnostic geometry), PHYSICAL IDENTIFICATION PENDING.
@@ -20,7 +22,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q50 [compute] (A) Test whether the canonical nonlinear five-solid/64-history Ward source admits a non-diagonal 64-history unitary action implementing the Wilson charge-two D on its image; use its original operator and exact source, not arbitrary Haar weights. — GPT 2026-11-12: OBSTRUCTION for any common right history matrix (log: Q50 uniform-source history-unitary obstruction). *(Note, Claude Q49 entry: θ→θ+π/24 is not a symmetry of the full 190/64/24 action; the full action's large gauge acts on y* as D², through the cochains, with no history unitary; y* is confined to im U_h.)*
 - [x] Q53 [derive] (B) Decide whether any A5 (or 2I) action on the v61 spinor/internal indices is compatible with the gauge-covariant Wilson family, and classify what the §5 map can then be. — Claude 2026-11-12 (user-directed): THEOREM + OBSTRUCTION (A5 acts trivially on v61; no linear equivariant map; R-odd neutral sources are inversion-odd; log: "Gate B: A5 cannot act on the v61 matter")
-- [ ] Q55 [derive] (B) Build the self-adjoint two-sheet (n, −n) Hopf–Wilson operator on the charge-±2 vertex sections of the 2I Hopf shell (c₁ = 1 link phases, `Cathedral_Master_Index.md`), check Hermiticity and both Ward orders, and compute the quadratic form it induces on the hidden quartets through the twisted projection Π_{±2} of `2026-11-12_hopf_charged_carrier/`.
+- [x] Q55 [derive] (B) Build the self-adjoint two-sheet (n, −n) Hopf–Wilson operator on the charge-±2 vertex sections of the 2I Hopf shell (c₁ = 1 link phases, `Cathedral_Master_Index.md`), check Hermiticity and both Ward orders, and compute the quadratic form it induces on the hidden quartets through the twisted projection Π_{±2} of `2026-11-12_hopf_charged_carrier/`. — GPT 2026-11-12: THEOREM (native 2I Hopf Wilson ±2/±4, both kinetic Ward orders, Chern sectors, 8→48 Parseval completeness).
 - [ ] Q54 [compute] (B) Exact first-order response ∂ₛΠ of the native transverse photon kernel of v61 (flat links, archived sea construction) to the site-uniform insertions h → h + sΓ for Γ = γ₅ and Γ = iγ₅γ₀; state whether each is zero. This decides whether the parity-violating case 2 of `2026-11-12_gate_b_v61_internal_symmetry/` carries any Δ-linear photon channel. No coupling constant may be chosen.
 - [x] Q52 [compute] (A) Test whether the original nonlinear 190-cochain source canonically supplies a clock-dependent or mixed history-unitary transport beyond the already-established left charge-two gauge action, with no independent free choices. — GPT 2026-11-12: THEOREM + OBSTRUCTION (full native source span, no new independent track-local history unitary)\n- [ ] Q51 [compute] (A) **Haar instrument in the native frame.** With T′ = U_hᵀBᵀBU_h (20×20, entries in Q(√5)), compute ‖P₃T′P₅‖_F² exactly (sandbox float ≈ 0.143148²) and the eight eigenvalues of T′ on im(P₃+P₅); compare exactly with the pullback-frame ‖P₃TP₅‖_F = 0.147813 (T = HᵀBᵀBH). Original 2026-11-07 U_h and 2026-11-09 overlap only; do not select B.
 
@@ -93,6 +95,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-12 — GPT — Gate B — Q55 native Hopf Wilson charged kinetic closure
+- Task: Q55 [derive], complete the 12 Nov 2I Hopf charged-carrier work into the actual self-adjoint two-sheet Wilson operator, verify first/second Ward orders and evaluate the hidden quadratic form.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (original 2I/600-cell magnetic shell; no joined v61/H64 matter pole).
+- Statement: On each 12-vertex charge-n shell, L_n=B_n†(12I−A600)B_n is Hermitian and nearest-neighbour, offdiagonal |L_{ij}|=φ (|n|=2) or φ^−1 (|n|=4) with exactly 30 links. Outward triangle flux is −nπ/10 on every one of 20 faces and Chern integer −n. First and second lattice Wilson Ward operators, including nonzero seagull derivative, hold on both ±2 sheets. The original hidden lift T_n=B_n†F(P3+P5) has rank4, satisfies L_n T_n=15T_n, and Σ_{n=±2,±4} T_n†T_n=P3+P5, Σ T_n†L_nT_n=15(P3+P5). Thus the full four-charge 8→48 map is a normalized isometric carrier; no constants fitted.
+- Evidence: research.q55_hopf_wilson_ward; local standalone 120-icosian reconstruction executed exit 0, Ward 12+144 tests, 20 triangle holonomies per charge, native group spectrum and hidden completeness. Certificate imports original 12 Nov Hopf source on CI; CI verdict pending.
+- Dead ends: This does not construct an offdiagonal charge-flipping Dirac mass, joint H64/v61 Ward completion, physical charged pole or α; the old positive Gaussian source-free Q56 obstruction must not be extrapolated to the Hopf charged theory.
+- Next step: Q60, identify and verify the Hopf↔original five-solid/H64 face frame, then source-load the charged operator and check true interaction Ward contacts. 
+
 
 ### 2026-11-12 — GPT — Gate A — Q57 native action energy manifolds and conditional time
 - Task: Q57 [derive], apply coupling geometry to the exact Q56 source-free five-solid action and search for a conserved clock manifold before claiming a Jacobi/KAM time law.
