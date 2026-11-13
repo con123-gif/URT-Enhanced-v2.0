@@ -15,6 +15,8 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - **A3 (open):** with the selected (D, σ₁), compute the A5 chronology coefficient and the source weights the native Q2/Q3/H64 source assigns. Either they give (4,2,2,0), or the exact mismatch points to what is missing.
 - **A4 (open):** robustness. The maximiser must be the same for the full n-step conditioned path likelihood ∏_t over σ₁'s cycles, and with the 24-clock and U_h pulled back through the selected D.
 
+- [x] Q69 [compute] (A) Calculate the exact 24-clock character of the native Q2 reversible sigma_1 history, including the 64-state multiplicities and commutant dimension; determine whether odd clock modes survive. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (4+5×12 cycles, multiplicities 6/5/0, commutant dimension 344; log: "Q69 (A) — Native Q2 sigma_1 / 24-clock character")
+
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.)
 
 - [x] Q62 [derive] (A) On the 6 exceptional Q24 dictionary orbits where a C3 ⊂ A5 fixes the lift (β=0 on three orbits, β≡1 on three; `research_archive/2026-11-12_q61_inverse_limit_lifts/`), does the selected permutation P_σβ preserve the native H13⊕H51 split or im U_h, and does any original native operator (Q2/Q3 source, U_h, 24-clock) distinguish the β=0 orbits from the β≡1 orbits? Original operators only; no physical selection inference. — Claude 2026-11-12: OBSTRUCTION + THEOREM (no: no lift, of all 2³², preserves H13⊕H51 or im U_h on any dictionary, since Aut_S64(P13) = Stab_B6(P8) = A5×⟨I⟩ has no axis 6-cycle; no dictionary-free operator separates the families, only the lifts σ₀/σ₁; the original Q3 source prefers the C3-selected half of Q on all 48 exceptional classes and is uniquely maximised by it on 32; log: "Q62: the selected lifts miss the hidden carrier")
@@ -111,6 +113,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 02:17 UTC — GPT — Q69 (A) — Native Q2 sigma_1 / 24-clock character
+- Task: One bounded exact spectral certificate on the original Q2 reversible sigma_1 lift, as a diagnostic for ACTIVE PROBLEM A2b; no replacement of Q3 or U_h.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. The 64-history sigma_1 has cycles 4+5×12. At 24-clock frequency k, multiplicity is 6 if 6|k, 5 if k is even and 6 does not divide k, 0 if k is odd. The complex commutant dimension is exactly 344; sigma_1^12=I.
+- Evidence: `research_archive/2026-11-13_q69_native_lift_clock_spectrum/Q69_NATIVE_LIFT_CLOCK_SPECTRUM.py` standalone fail-on-error Python executed locally, exit 0; `Q69_NATIVE_LIFT_CLOCK_SPECTRUM_PASS`. Registered as `research.q69_native_lift_clock_spectrum`. CI not yet verified at entry creation.
+- Limitations: This is a finite clock-character theorem, not unique history selection or a physical ARF. Gate A remains open.
+- Next step: Can Q3 A5 covariance and the original U_h hidden carrier force the uniform-marginal bridge on these clock eigenspaces rather than the horizon-conditioned chain?
+
 
 ### 2026-11-13 00:20 UTC — Claude — Gate A — Q65: the Q64 history is the one-step and bridge answer, not the large-deviation one
 - Task: ACTIVE PROBLEM A, attempt A2 (derive the Q64 conditioned-likelihood functional; the protocol's default task). Reading taken without asking: "forced" is tested against the canonical conditionings of the original Q3 chronology K_D on the URT kinematics and on reversibility.

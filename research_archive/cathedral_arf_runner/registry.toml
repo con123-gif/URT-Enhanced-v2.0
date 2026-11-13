@@ -890,3 +890,12 @@ gating = false
 run = "python -u research_archive/2026-11-12_hopf_charged_carrier/hopf_charged_carrier.py"
 timeout = 180
 
+
+# Q69 original Q2 reversible lift / 24-clock exact spectrum
+[[check]]
+id = "research.q69_native_lift_clock_spectrum"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-13_q69_native_lift_clock_spectrum/Q69_NATIVE_LIFT_CLOCK_SPECTRUM.py"
+timeout = 60
