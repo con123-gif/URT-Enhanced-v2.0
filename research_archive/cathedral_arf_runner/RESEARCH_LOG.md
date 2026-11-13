@@ -39,7 +39,9 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q79 [compute] (A) Calculate the exact original nonlinear icosahedral hidden-source norms by all vertex-pair orbits, as a bounded prerequisite to the Q78 all-five source insertion. — GPT 2026-11-13: THEOREM; adjacent 30 pairs (8/5,8/15), all 36 other pairs zero; local exact certificate exit 0; Gate A OPEN.
 - [x] Q80 [compute] (A) Original all-five source through Q78 eight dictionaries: exact operator-level P5 annihilation and P3 rank four. — GPT 2026-11-13: THEOREM, locally executed; no physical weights (4,2,2,0) derived; Gate A OPEN. [CI repair 2026-11-13: native dual-face L, P3, P5 definitions restored from Q79; eight-dictionary certificate locally rerun, exit 0; CI pending.]
 
-- [ ] Q81 [compute] (A) Compute the exact nonzero P3 source quadratic form for original all-five Eglobal(e0+e3), including its normalisation and whether it gives any native 24-clock four-weight split; do not infer (4,2,2,0) from rank alone.
+- [x] Q81 [compute] (A) Original all-five Eglobal(e0+e3) P3 source quadratic form and normalisation — GPT 2026-11-13: EXACT RADICAL FORM + HIGH-PRECISION EVALUATION; no native four-bin clock split (see log).
+- [ ] Q83 [compute] (A) Starting from Q81 exact native source radical form, transport its P3 history response through the original 24-clock operator and compute the exact four-bin decomposition (if canonically defined); compare with the four-weight target only after calculation, no fitting.
+
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
@@ -137,6 +139,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 13:20 UTC — GPT — Gate A — Q81 exact native all-five source radical certificate
+- Task: Q81, reconstruct original November 7 all-five Eraw harmonic moments, Eglobal=Eraw(ErawᵀEraw)^−1/2, Iico and Plinear=Iico Eglobalᵀ, then evaluate the actual v50=e0+e3 nonlinear hidden source.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for the exact finite radical expression and its Gram decomposition; high-precision numerical evaluation for the norms (not a rational/exact closed scalar).
+- Exact statement: the native 8×8 all-five Gram G=ErawᵀEraw has invariant blocks (0,7),(1,6),(2,5),(3),(4); each 2×2 positive block B obeys (B+sqrt(det B)I)²=(tr B+2sqrt(det B))B. Consequently its canonical inverse square root is sqrt(tr B+2sqrt(det B))(B+sqrt(det B)I)^−1, yielding x=Iico H^−1/2 G^−1/2 Erawᵀ(e0+e3) and the exact algebraic source form ||h3||²=[(Cx)⊙²]ᵀP3[(Cx)⊙²].
+- Execution: standalone script Python/SymPy/mpmath at /mnt/data/q81/Q81_NATIVE_SOURCE.py, OPENBLAS_NUM_THREADS=1, exit 0. Printed ||h3||²≈0.032194544822365221694503455948311627 and ||h5||²≈0.0018261794348137894279051028989514859; these are high-precision evaluations, not certified rational enclosures. Exact block/Cayley-Hamilton/projector assertions passed.
+- Scope: original 50-vertex all-five source, icosahedral face incidence and native 3/5 projectors; no fitted data. The original source formula alone has no canonical 24-clock four-bin projection; no (4,2,2,0) selection and no gate closure.
+- Next question: Q83, transport this actual source through the archived 24-clock history operator and calculate four-bin weights, if the native map specifies them.
+
 
 ### 2026-11-13 12:55 UTC — Claude — Gate A — Q77: the clock prefers the forward chronology, exactly
 - Task: ACTIVE PROBLEM A, attempt A4 (Q77 [derive]): make Q73 Part 3 exact, find the clock symmetry realising RS, decide the 4+4 split exactly. Not duplicated: GPT's A3 line (Q80/Q81, P3 source form). Reading: Q73's joint-clock bridge, unchanged.
