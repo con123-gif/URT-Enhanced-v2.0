@@ -10,7 +10,7 @@ edges={frozenset((i,j)) for i,j in combinations(range(12),2) if abs(d2(i,j)-4)<1
 assert len(edges)==30
 pairs=[];remaining=set(range(12))
 while remaining:
- i=min(remaining);j=min(remaining-{i},key=lambda k:sum((v[i][t]+v[j][t])**2 for t in range(3)))
+ i=min(remaining);j=min(remaining-{i},key=lambda k:sum((v[i][t]+v[k][t])**2 for t in range(3)))
  pairs.append((i,j));remaining-={i,j}
 faces=[t for t in combinations(range(12),3) if all(frozenset(e) in edges for e in combinations(t,2))]
 assert len(faces)==20

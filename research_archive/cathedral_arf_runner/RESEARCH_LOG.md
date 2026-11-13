@@ -40,7 +40,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q80 [compute] (A) Original all-five source through Q78 eight dictionaries: exact operator-level P5 annihilation and P3 rank four. — GPT 2026-11-13: THEOREM, locally executed; no physical weights (4,2,2,0) derived; Gate A OPEN. [CI repair 2026-11-13: native dual-face L, P3, P5 definitions restored from Q79; eight-dictionary certificate locally rerun, exit 0; CI pending.]
 
 - [x] Q81 [compute] (A) Original all-five Eglobal(e0+e3) P3 source quadratic form and normalisation — GPT 2026-11-13: EXACT RADICAL FORM + HIGH-PRECISION EVALUATION; no native four-bin clock split (see log).
-- [x] Q83 [compute] (A) Native Q81 P3 carrier transported through original 24-clock Z4 quotient; exact eight-dictionary four-bin theorem (0,0,4,0) — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; six mode amplitudes open.
+- [x] Q83 [compute] (A) Native Q81 P3 carrier transported through original 24-clock Z4 quotient; exact eight-dictionary four-bin theorem (0,0,4,0) — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; six mode amplitudes open. [CI repair 2026-11-13 GPT: antipodal-pair lambda corrected from unbound j to candidate k; eight dictionaries locally rerun exit 0; next CI verdict pending.]
 - [ ] Q84 [compute] (A) Calculate six k≡2 mod4 native sigma1 24-clock Fourier energies of original Q81 radical P3 source for all eight winning dictionaries, with source-normalised weights and no fitting.
 
 
@@ -977,3 +977,12 @@ commit as your result.
 - Exact statement: on all eight original winning dictionaries, C_D^T M_{5,D}=0, rank(C_D^T M_{3,D})=4; hidden commutator energy 1296; no physical four-weight pattern established. Gate A remains OPEN.
 - Next question: Q81 — what exact P3 quadratic source response and native 24-clock decomposition follow for the original all-five Eglobal(e0+e3)?
 
+
+### 2026-11-13 — GPT Q83 CI gating repair (native antipodal-pair construction)
+
+- **Agent:** GPT. **Task:** repair latest failed gating check `research.q83_native_hidden_clock_quotient` before Q84.
+- **Cause:** `key=lambda k:sum((v[i][t]+v[j][t])**2 ...)` references `j` before assignment; the minimisation variable must be `k`.
+- **Exact certificate:** With original 12 icosahedral vertices, 20 faces, face-incidence hidden projectors P3/P5, native 64-history map and sigma1 sixth-power 24-clock quotient, all eight selected dictionaries satisfy `T H3 = -H3`, `T H5 = H5`, and P3 Z4 weights `(0,0,4,0)`; P5 weights `(4,0,0,0)`.
+- **Execution evidence:** standalone Python/SymPy script `/mnt/data/cathedral_fix/Q83_NATIVE_CLOCK_CARRIER.py` executed locally after the single-token repair; exit code 0; eight `DICT ... NATIVE_P3_Z4_CLOCK_WEIGHTS 0 0 4 0` lines and terminal `Q83_EXACT_NATIVE_CARRIER_Z4_CLOCK_PASS`. This is local PASS only; remote CI requires a new verdict.
+- **Status:** CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for the finite Q83 statement; Gate A remains OPEN. No measured inputs or ARF fitting.
+- **Next question:** Q84: what are the six exact k≡2 (mod 4) 24-clock Fourier energies of the original Q81 nonlinear P3 source, across all eight dictionaries?

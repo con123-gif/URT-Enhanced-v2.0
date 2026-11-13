@@ -1066,6 +1066,7 @@ run = "python research_archive/2026-11-13_q81_native_source/Q81_NATIVE_SOURCE.py
 timeout = 180
 
 [[check]]
+# Q83 CI repair GPT 2026-11-13: unbound antipodal lambda j -> candidate k; local exit 0; CI pending.
 id = "research.q83_native_hidden_clock_quotient"
 stage = "research"
 claim = "native"
