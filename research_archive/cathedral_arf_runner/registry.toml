@@ -776,6 +776,15 @@ gating = true
 run = "python -u research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py"
 timeout = 300
 
+# Q73 (A4 second half): bridge on the joint history x 24-clock pieces and on the U_h carrier support
+[[check]]
+id = "research.q73_joint_clock_bridge"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-13_q73_joint_clock_bridge/Q73_JOINT_CLOCK_BRIDGE_CERTIFICATE.py"
+timeout = 300
+
 # Q55 original Hopf/2I charged Wilson lattice: 600-cell source, Chern flux, kinematic Ward orders
 [[check]]
 id = "research.q55_hopf_wilson_ward"
