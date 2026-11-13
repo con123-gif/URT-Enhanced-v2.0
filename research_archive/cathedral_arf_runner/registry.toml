@@ -767,6 +767,15 @@ gating = true
 run = "python -u research_archive/2026-11-13_q65_horizon_conditioned_selection/Q65_HORIZON_SELECTION_CERTIFICATE.py"
 timeout = 300
 
+# Q72 (ACTIVE PROBLEM A, A2b): native time reversal R and the uniform invariant measure single out the bridge
+[[check]]
+id = "research.q72_time_reversal_bridge"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py"
+timeout = 300
+
 # Q55 original Hopf/2I charged Wilson lattice: 600-cell source, Chern flux, kinematic Ward orders
 [[check]]
 id = "research.q55_hopf_wilson_ward"
