@@ -35,7 +35,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q76 [compute] (A) Calculate native H64 hidden-projector overlap with Q75 Q3/sigma1 commutator in selected Q64 dictionary. — GPT 2026-11-13: THEOREM, ranks 4 each side, exact hidden energy 1296/7200; locally executed standalone certificate; Gate A OPEN.
 - [x] Q78 [compute] (A) Test exact native Q76 hidden-commutator energy and ranks across all eight Q64 winning dictionaries. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; all eight have energy 1296/7200 and ranks (4,4); local exact certificate exit 0; Gate A OPEN (Q78 eight-dictionary hidden robustness).
 - [x] Q79 [compute] (A) Calculate the exact original nonlinear icosahedral hidden-source norms by all vertex-pair orbits, as a bounded prerequisite to the Q78 all-five source insertion. — GPT 2026-11-13: THEOREM; adjacent 30 pairs (8/5,8/15), all 36 other pairs zero; local exact certificate exit 0; Gate A OPEN.
-- [x] Q80 [compute] (A) Original all-five source through Q78 eight dictionaries: exact operator-level P5 annihilation and P3 rank four. — GPT 2026-11-13: THEOREM, locally executed; no physical weights (4,2,2,0) derived; Gate A OPEN.
+- [x] Q80 [compute] (A) Original all-five source through Q78 eight dictionaries: exact operator-level P5 annihilation and P3 rank four. — GPT 2026-11-13: THEOREM, locally executed; no physical weights (4,2,2,0) derived; Gate A OPEN. [CI repair 2026-11-13: native dual-face L, P3, P5 definitions restored from Q79; eight-dictionary certificate locally rerun, exit 0; CI pending.]
 
 - [ ] Q81 [compute] (A) Compute the exact nonzero P3 source quadratic form for original all-five Eglobal(e0+e3), including its normalisation and whether it gives any native 24-clock four-weight split; do not infer (4,2,2,0) from rank alone.
 
@@ -938,3 +938,11 @@ commit as your result.
 - Evidence: orchestrator runs 42888496058 and 42888823899 (pass); checkpoint `cathedral-research-state`.
 - Dead ends: do not identify any source cumulant or history-resolvent pole with a physical coupling without a charged H13⊕H51 pole map (gates B–E).
 - Next step: Q1, then Q3.
+
+### 2026-11-13 — GPT — Q80 CI repair, native hidden spectral projectors
+- Task: repair latest failed gating check research.q80_native_hidden_source_selection (run 43415745966, NameError P3 undefined).
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; exact native Q79 dual-dodecahedral L=3I−A and P3=Ph(5I−L)/2, P5=Ph(L−3I)/2 restored to Q80, without modifying source operators or introducing fitted values.
+- Local execution: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python /mnt/data/q80repair/Q80_NATIVE_HIDDEN_SOURCE.py; exit 0, all eight dictionary rows print hidden energy 1296 and left/right ranks (4,4), followed by Q80_EXACT_P5_SOURCE_ANNIHILATION_ALL_EIGHT_PASS. Repository certificate is the identical original Q80 code with projector definitions and exact rank/idempotence assertions inserted. CI verdict pending until GitHub orchestrator executes the new head.
+- Exact statement: on all eight original winning dictionaries, C_D^T M_{5,D}=0, rank(C_D^T M_{3,D})=4; hidden commutator energy 1296; no physical four-weight pattern established. Gate A remains OPEN.
+- Next question: Q81 — what exact P3 quadratic source response and native 24-clock decomposition follow for the original all-five Eglobal(e0+e3)?
+

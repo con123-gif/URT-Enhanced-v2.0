@@ -998,6 +998,7 @@ gating = true
 run = "python research_archive/2026-11-13_cross_archive_photon_join/CROSS_ARCHIVE_PHOTON_JOIN_AUDIT.py"
 timeout = 60
 
+# Q80 repair 2026-11-13: restore exact native dual-face P3/P5 projectors; local script exit 0.
 # Q71 repair 2026-11-13: proper-rotation determinant regression, locally re-executed.
 [[check]]
 id = "research.q71_native_q3_clock"

@@ -28,6 +28,16 @@ C=zeros(20,12)
 for f,t in enumerate(faces):
  for v in t:C[f,v]=1
 Ph=eye(20)-C*(C.T*C).inv()*C.T
+# Native dual-dodecahedral graph and exact spectral projectors (Q79).
+L=zeros(20)
+for i in range(20):
+ L[i,i]=3
+ for j in range(20):
+  if i!=j and len(set(faces[i])&set(faces[j]))==2:L[i,j]=-1
+P3=Ph*(5*eye(20)-L)/2
+P5=Ph*(L-3*eye(20))/2
+assert P3*P3==P3 and P5*P5==P5 and P3*P5==zeros(20)
+assert trace(P3)==trace(P5)==4 and P3+P5==Ph
 M=zeros(64,20)
 for h in range(64):
  selected={pairs[k][(h>>k)&1] for k in range(6)}
