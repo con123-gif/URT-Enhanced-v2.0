@@ -923,3 +923,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_q64_a2d/Q64_A2D_REVERSIBLE_NORMALIZER.py"
 timeout = 60
+
+[[check]]
+id = "research.q64_a2c_native_lift_partition"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-12_q64_a2c_native_lift_partition/Q64_A2C_NATIVE_LIFT_PARTITION.py"
+timeout = 60
