@@ -15,6 +15,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - A2D (GPT 2026-11-13, recovered): Q64 rowwise likelihood equals bijection-conditioned lift probability multiplied by the dictionary-dependent probability of bijection; 768-class ordering not evaluated. `research_archive/2026-11-13_q64_a2d/`.
 - A2C (GPT 2026-11-12, recovered): Q2 reversible-lift conditional partition factorizes over 32 pairs; row-sampling independence is an extra premise, and dictionary-conditioned MAP differs from raw Q64 likelihood. `research_archive/2026-11-12_q64_a2c_native_lift_partition/`.
 - A2b (Q72, Claude 2026-11-13): **conditioning decided under stated requirements.** R is exact time reversal of the chronology (S_{R(D)} = R S_Dᵀ R, all 768 classes). Q64's one-step functional is not R-invariant (L_row∘R = L_col, differing on 640/768 classes). Within the Gibbs-conditioning family diag(r)M_D diag(c), the uniform-marginal bridge is the **unique** member preserving the invariant measure of Q2, K_D and every lift, and it is R-covariant. The n-step chains (n ≤ 30, exact) and Doob (float64) preserve it on no class. So the bridge is forced under (i) family, (iii) invariant measure, and the selection stays orbit 1 with σ₁ (Q65). A4's horizon test holds automatically for the bridge. Do not retry the row-conditioned functional as the principle. `research_archive/2026-11-13_q72_time_reversal_bridge/`.
+- A3 intermediate (Q76, GPT 2026-11-13): original H64 hidden carrier overlaps Q75's 32-rank noncommuting sector at rank four, squared-energy 1296; source weights not selected. Next test all eight winning dictionaries and nonlinear source projection.
 - **A3 (open):** with the selected (D, σ₁), compute the A5 chronology coefficient and the source weights the native Q2/Q3/H64 source assigns. Either they give (4,2,2,0), or the exact mismatch points to what is missing.
 - **A4 (open; first half done by Q72 for the bridge):** robustness. The maximiser must be the same for the full n-step conditioned path likelihood ∏_t over σ₁'s cycles, and with the 24-clock and U_h pulled back through the selected D.
 
@@ -29,6 +30,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate. — GPT 2026-11-13: THEOREM, exact native Q3 eigenvalues 1,1/3,1/6,-1/12,2/15,1/15; [K,C]=0; bridge not selected (Q71 Q3 fixed-space spectrum). [CI repair 2026-11-13: orientation determinant corrected; exact local certificate exit 0.]
 - [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
 - [x] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks. — GPT 2026-11-13: THEOREM, rank [S_D,P_sigma]=32, Frobenius²=7200; six clock-fixed modes annihilated left/right; Gate A OPEN.
+- [x] Q76 [compute] (A) Calculate native H64 hidden-projector overlap with Q75 Q3/sigma1 commutator in selected Q64 dictionary. — GPT 2026-11-13: THEOREM, ranks 4 each side, exact hidden energy 1296/7200; locally executed standalone certificate; Gate A OPEN.
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
@@ -126,6 +128,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 — GPT — Q76 native H64 hidden/noncommuting Q3 overlap
+- Task: original Q75 commutator versus native H64 U_hU_hᵀ on selected history dictionary (Gate A, A3).
+- Result: THEOREM, CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Gate A OPEN.
+- Exact: rank(P8_D[S_D,P_sigma])=rank([S_D,P_sigma]P8_D)=4; Tr(P8_D [S_D,P_sigma][S_D,P_sigma]ᵀ)=1296; total commutator squared norm 7200.
+- Evidence: original standalone local Python/SymPy/numpy/networkx reconstruction executed exit 0 at /mnt/data/cathedral_q76/q76.py, 2026-11-13, output Q76_NATIVE_HIDDEN_OVERLAP_PASS. Committed equivalent Q75-extended CI script; new CI pending.
+- Next question: check all eight winning dictionaries for orbit invariance, then project the original nonlinear h3+Delta h5 source onto the overlap.
 
 ### 2026-11-13 07:12 UTC — GPT — Gate A — Q75 full native sigma1 commutator
 - Task: Q75 original Q3 A5 twirl at Q64 selected dictionary against native Q2 reversible sigma1 clock.

@@ -1005,3 +1005,11 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-13_q75_native_q3_sigma/Q75_NATIVE_Q3_SIGMA.py"
 timeout = 180
+
+[[check]]
+id = "research.q76_native_hidden_commutator_overlap"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-13_q76_hidden_commutator/Q76_NATIVE_HIDDEN_COMMUTATOR.py"
+timeout = 180
