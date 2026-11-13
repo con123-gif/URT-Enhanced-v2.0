@@ -956,3 +956,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-12_q64_a2b_native_path/Q64_A2B_NATIVE_PATH_LIKELIHOOD.py"
 timeout = 60
+
+[[check]]
+id = "research.q64_a2_native_conditioning"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-12_q64_a2_native_conditioning/Q64_A2_NATIVE_CONDITIONING.py"
+timeout = 60

@@ -18,6 +18,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - **A3 (open):** with the selected (D, σ₁), compute the A5 chronology coefficient and the source weights the native Q2/Q3/H64 source assigns. Either they give (4,2,2,0), or the exact mismatch points to what is missing.
 - **A4 (open; first half done by Q72 for the bridge):** robustness. The maximiser must be the same for the full n-step conditioned path likelihood ∏_t over σ₁'s cycles, and with the 24-clock and U_h pulled back through the selected D.
 
+- [x] Q64 A2 [compute] (A) Native Q2-supported rowwise KL projection of Q3 chronology; recovered exact conditional theorem, no physical selection. — GPT 2026-11-13: LOCAL PASS, Gate A open.
 - [x] Q64 A2B [compute] (A) Distinguish the original Q2 natural-extension path likelihood from the Q64 A1 all-row ensemble objective. — GPT recovered 2026-11-13: SCOPED OBSTRUCTION; exact local certificate exit 0; Gate A open.
 - [x] Q68 [compute] (A) Exact native Q2 uniform-marginal polytope and passive 24-clock. — GPT 2026-11-13: SCOPED OBSTRUCTION, local certificate exit 0; Gate A open.
 - [x] Q69 [compute] (A) Calculate the exact 24-clock character of the native Q2 reversible sigma_1 history, including the 64-state multiplicities and commutant dimension; determine whether odd clock modes survive. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (4+5×12 cycles, multiplicities 6/5/0, commutant dimension 344; log: "Q69 (A) — Native Q2 sigma_1 / 24-clock character")
@@ -125,6 +126,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 — GPT — Q64 A2 recovered native conditioning theorem
+- Task: Recover the original Q64 A2 rowwise KL information projection and Q2 reversible-lift census.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Gate A remains open.
+- Statement: Restricting each positive Q3 chronology row to its two native Q2 successors, its normalized restriction is the unique rowwise KL I-projection; there are exactly 2^32 bijective successor lifts. KL minimization and independent-row maximum likelihood remain extra selection principles.
+- Evidence: `research_archive/2026-11-12_q64_a2_native_conditioning/Q64_A2_NATIVE_CONDITIONING.py` executed locally exit 0 on 2026-11-13; analytic KL proof in adjacent markdown; new CI pending.
+- Next question: Does the original all-five 24-clock produce a canonical 64-start ensemble, rather than a single-trajectory measure?
 
 ### 2026-11-13 05:10 UTC — GPT — Gate A — Q64 A2B native path likelihood (recovered)
 - Task: recover and independently rerun the uncommitted original Q2/Q64 sigma1 path-vs-ensemble certificate.
