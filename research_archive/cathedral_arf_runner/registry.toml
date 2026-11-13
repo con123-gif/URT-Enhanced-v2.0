@@ -1064,3 +1064,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q81_native_source/Q81_NATIVE_SOURCE.py"
 timeout = 180
+
+[[check]]
+id = "research.q83_native_hidden_clock_quotient"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py"
+timeout = 180

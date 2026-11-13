@@ -40,7 +40,8 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q80 [compute] (A) Original all-five source through Q78 eight dictionaries: exact operator-level P5 annihilation and P3 rank four. — GPT 2026-11-13: THEOREM, locally executed; no physical weights (4,2,2,0) derived; Gate A OPEN. [CI repair 2026-11-13: native dual-face L, P3, P5 definitions restored from Q79; eight-dictionary certificate locally rerun, exit 0; CI pending.]
 
 - [x] Q81 [compute] (A) Original all-five Eglobal(e0+e3) P3 source quadratic form and normalisation — GPT 2026-11-13: EXACT RADICAL FORM + HIGH-PRECISION EVALUATION; no native four-bin clock split (see log).
-- [ ] Q83 [compute] (A) Starting from Q81 exact native source radical form, transport its P3 history response through the original 24-clock operator and compute the exact four-bin decomposition (if canonically defined); compare with the four-weight target only after calculation, no fitting.
+- [x] Q83 [compute] (A) Native Q81 P3 carrier transported through original 24-clock Z4 quotient; exact eight-dictionary four-bin theorem (0,0,4,0) — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; six mode amplitudes open.
+- [ ] Q84 [compute] (A) Calculate six k≡2 mod4 native sigma1 24-clock Fourier energies of original Q81 radical P3 source for all eight winning dictionaries, with source-normalised weights and no fitting.
 
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
@@ -139,6 +140,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 14:17 UTC — GPT — Gate A — Q83 exact native hidden carrier 24-clock congruence
+- Task: Q83 [compute], project original H64 P3/P5 source carrier through native sigma1 24-clock across all eight winning dictionaries.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: with T=P_sigma1^6, for all eight D, T H3,D=H3,D T=−H3,D and T H5,D=H5,D T=H5,D; P3 four-bin k mod 4 trace weights (0,0,4,0), P5 (4,0,0,0). Thus any original Q81 P3 source is confined to k≡2 mod4; its individual six Fourier amplitudes remain uncomputed. No (4,2,2,0) or physical ARF derived.
+- Evidence: research.q83_native_hidden_clock_quotient; standalone SymPy at /mnt/data/q83/Q83_NATIVE_CLOCK_CARRIER.py, OPENBLAS_NUM_THREADS=1, exit 0, eight exact dictionary assertions; CI pending new commit.
+- Dead ends: the four carrier bins do not yield the historical target, and do not fix the six nonzero mode amplitudes; do not identify carrier trace weights with physical source probabilities.
+- Next step: Q84 [compute] calculate the six exact k≡2 mod4 Fourier energies of the Q81 radical P3 source under the original 24-clock and selected D, without fitting.
+
 
 ### 2026-11-13 13:20 UTC — GPT — Gate A — Q81 exact native all-five source radical certificate
 - Task: Q81, reconstruct original November 7 all-five Eraw harmonic moments, Eglobal=Eraw(ErawᵀEraw)^−1/2, Iico and Plinear=Iico Eglobalᵀ, then evaluate the actual v50=e0+e3 nonlinear hidden source.
