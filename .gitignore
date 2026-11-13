@@ -27,3 +27,6 @@ research_archive/2026-10-17_original_oct08_source/common_action_work/matter/micr
 # outputs of archive scripts re-executed by the sweep:
 research_archive/2026-10-17_h64_quadratic_koide_phase/RESULTS.json
 research_archive/2026-10-17_source_h64_joint_flux/numerical_result.json
+
+# cathedral_engine content-addressed cache (rebuilt on demand; keys include source hashes)
+.cathedral_cache/

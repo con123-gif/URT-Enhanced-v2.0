@@ -1,0 +1,12 @@
+Q89 rows (parsed from the committed certificate): ((2, 0, -1, 0, -1, 0, -2, 1, 1, 0, -1, 0, -1, 1, 1, 0, -1, -1, 1, 1), (1, -1, -1, 1, 0, 1, -1, -1, 1, 0, 1, 0, -1, 1, 0, -1, 0, -2, 2, 0), (0, 2, -1, -1, 0, -2, 0, 1, 0, 1, -1, -1, 0, 1, 0, 1, 1, 1, -1, -1))
+Q88 forbidden modes: K=(2, 10, 14, 22): rank 2 per dictionary, joint rank 3 = span of the Q89 rows
+cross-check with GPT Q90: (I + P_sigma^2) M_D P3 has the same 2-dim row space as Pi_K M_D P3 on all 8
+Q88 mode pairs: per dictionary, k in {2,22} and k in {10,14} constrain the same plane (exact over Q(sqrt3))
+Q89 family identities: r_j . (CZ)^2 = r_j . (CZ)(CXY) = r_j . (CXY)^2 = 0, j = 0,1,2 (Q(sqrt5), 9 identities)
+source family: x = Plinear(e0+e3) = a Z + b XY exactly on all 12 vertices
+a (coefficient of raw Z): 0.0708303997487601680351274
+b (coefficient of raw XY): 0.1057142521601803760506312
+Q89 direct: r_j . f = 0 exactly for the archived source, j = 0,1,2 (radical tower, no SymPy)
+tower: ['sqrt5^2 = 5', 'sqrt2^2 = 2', 'sqrt3^2 = 3', 'rho^2 = 5/2 + (1/2)*sqrt5', 'sqrt193^2 = 193', 'tau^2 = 118/5 + (8/9)*sqrt3*sqrt193', 'sqrt47^2 = 47']
+Q88_Q89_ENGINE_RECOVERY: all 71 checks passed in 2.26 s
+Q88_Q89_ENGINE_RECOVERY_PASS

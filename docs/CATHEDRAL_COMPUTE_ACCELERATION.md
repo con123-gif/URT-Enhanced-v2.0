@@ -28,3 +28,17 @@ Date: 2026-11-13. Owner direction: stop duplicating calculations, preserve resul
 - Duplicate calculations avoided and unresolved source assumptions.
 
 **Scope warning:** The current orchestrator PASS verifies registered repo checks, not Q84–Q89 local-only claims, the four ARFs, or a physical theory. The source weights (4,2,2,0) are already reported as c-independent on the selected orbit in Q82; do not confuse those A5 quartet weights with Q89's clock Fourier modes.
+
+## Implementation status (2026-11-13, Claude)
+
+Phases 1–4 are implemented in `cathedral_engine/`; see `docs/CATHEDRAL_ENGINE.md`.
+
+- Every ported operator is regression-tested against the original code (`tests/test_cathedral_engine.py`).
+- The arithmetic is exact: stdlib and numpy only, with certified radical towers.
+- Caches are content-addressed.
+- Verified results go in `research_archive/cathedral_arf_runner/evidence.jsonl`.
+- Phase 3 is done: Q88 is reconstructed and Q89 is independently confirmed (`research_archive/2026-11-13_q88_q89_engine_recovery/`).
+- Phase 4 is done: the Q90 exact energies are GPT's `2026-11-13_q90_exact_fourier/` and Claude's independent review with extensions, `2026-11-13_q90_source_clock_energies/`.
+- Speed-ups are measured, not estimated: `research_archive/2026-11-13_cathedral_engine/BENCHMARK_LOCAL.md`, and on CI in `engine.benchmark`.
+
+Resume with `python -m cathedral_engine status`.

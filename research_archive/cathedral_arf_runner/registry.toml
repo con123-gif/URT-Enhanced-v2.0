@@ -29,6 +29,7 @@ exclude = [
   "research_archive/2026-10-28_cathedral_james_yangmills/**",  # third-party material: not executed here
   "research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_INDUCED_VACUUM_2026_11_11.py",  # ~3 min: run by its [[check]] and [[job]]
   "research_archive/2026-11-11_q17_flat_link_genericity/Q17_FLAT_LINK_GENERICITY_2026_11_11.py",  # ~12 min: run by its [[check]]
+  "research_archive/2026-11-13_cathedral_engine/BENCHMARK.py",          # runs five originals (~3 min): run by its [[check]]
 ]
 per_script_timeout = 120     # seconds
 budget_minutes = 20          # per run; the cursor resumes next run
@@ -369,7 +370,7 @@ timeout = 600
 
 [[check]]
 id = "research.registry_induced_vacuum"
-stage = "research"
+stage = "research_heavy"   # moved 2026-11-13 (Claude): research stage at 27-28 of its 30 job minutes
 claim = "conditional"
 gating = false
 run = "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_INDUCED_VACUUM_2026_11_11.py 3"
@@ -449,7 +450,7 @@ timeout = 120
 
 [[check]]
 id = "research.q24_history_symmetries"
-stage = "research"
+stage = "research_heavy"   # moved 2026-11-13 (Claude): research stage at 27-28 of its 30 job minutes
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q24_history_symmetries/q24_k5_and_history_symmetries.py"
@@ -481,7 +482,7 @@ timeout = 300
 
 [[check]]
 id = "research.q30_twirled_all_order_spectrum"
-stage = "research"
+stage = "research_heavy"   # moved 2026-11-13 (Claude): research stage at 27-28 of its 30 job minutes
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q30_twirled_all_order_spectrum/q30_twirled_all_order_spectrum.py"
@@ -489,7 +490,7 @@ timeout = 300
 
 [[check]]
 id = "research.q31_rational_similarity"
-stage = "research"
+stage = "research_heavy"   # moved 2026-11-13 (Claude): research stage at 27-28 of its 30 job minutes
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q31_rational_similarity/q31_rational_similarity.py"
@@ -513,7 +514,7 @@ timeout = 180
 
 [[check]]
 id = "research.q36_rational_star_intertwiners"
-stage = "research"
+stage = "research_heavy"   # moved 2026-11-13 (Claude): research stage at 27-28 of its 30 job minutes
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q36_star_intertwiner/q36_exact_star_intertwiners.py"
@@ -1108,3 +1109,41 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py"
 timeout = 180
+
+# ------------------------------------------------------------------ engine (Claude 2026-11-13)
+# Stage split, 2026-11-13: the research stage took 27-28 min of the workflow's 30-minute stage-job limit in runs
+# 43465125597, 43477073372 and 43512220021 (sum of research wall times 1656 s in the last). Its five heaviest checks
+# now run in the parallel stage "research_heavy" (same commands, same gating); engine checks get their own stage.
+# Stages are only grouping: check history is keyed by id. See docs/CATHEDRAL_ENGINE.md.
+[[check]]
+id = "research.q88_q89_engine_recovery"
+stage = "engine"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-13_q88_q89_engine_recovery/Q88_Q89_ENGINE_RECOVERY.py"
+timeout = 300
+
+[[check]]
+id = "research.q90_source_clock_energies"
+stage = "engine"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-13_q90_source_clock_energies/Q90_SOURCE_CLOCK_ENERGIES.py"
+timeout = 300
+
+[[check]]
+id = "engine.evidence_ledger"
+stage = "engine"
+claim = "regression"
+gating = false
+run = "python -m cathedral_engine evidence"
+timeout = 120
+
+[[check]]
+id = "engine.benchmark"
+stage = "engine"
+claim = "regression"
+gating = false
+run = "python -u research_archive/2026-11-13_cathedral_engine/BENCHMARK.py --out {out}/engine_benchmark"
+outputs = ["{out}/engine_benchmark/benchmark.md", "{out}/engine_benchmark/benchmark.json"]
+timeout = 1500
