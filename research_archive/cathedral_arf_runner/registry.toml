@@ -997,3 +997,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py"
 timeout = 180
+
+[[check]]
+id = "research.q75_native_q3_sigma_commutator"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-13_q75_native_q3_sigma/Q75_NATIVE_Q3_SIGMA.py"
+timeout = 180

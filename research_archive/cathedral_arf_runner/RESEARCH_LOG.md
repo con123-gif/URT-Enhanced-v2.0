@@ -28,7 +28,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [ ] Q73 [derive] (A) A4 second half: build the uniform-marginal bridge of the original joint history⊗24-clock chronology (and, separately, of a U_h-weighted Q3 twirl) on the URT support and test whether its maximum-likelihood reversible history is still orbit 1 with σ₁, unique.
 - [x] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate. — GPT 2026-11-13: THEOREM, exact native Q3 eigenvalues 1,1/3,1/6,-1/12,2/15,1/15; [K,C]=0; bridge not selected (Q71 Q3 fixed-space spectrum). [CI repair 2026-11-13: orientation determinant corrected; exact local certificate exit 0.]
 - [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
-- [ ] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks.
+- [x] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks. — GPT 2026-11-13: THEOREM, rank [S_D,P_sigma]=32, Frobenius²=7200; six clock-fixed modes annihilated left/right; Gate A OPEN.
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
@@ -126,6 +126,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 07:12 UTC — GPT — Gate A — Q75 full native sigma1 commutator
+- Task: Q75 original Q3 A5 twirl at Q64 selected dictionary against native Q2 reversible sigma1 clock.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Gate A OPEN.
+- Statement: rank([S_D,P_sigma])=32, ||[S_D,P_sigma]||_F²=7200; [S_D,P_sigma]B=0 and Bᵀ[S_D,P_sigma]=0 for six original sigma1 cycle indicators; equivalently ||[K_D,P_sigma]||_F²=1/2.
+- Evidence: research.q75_native_q3_sigma_commutator, local Python/SymPy exact integer certificate exit 0, output Q75_NATIVE_Q3_SIGMA_COMMUTATOR_PASS; GitHub CI pending.
+- Dead ends: Q71's commuting six-dimensional fixed-space restriction does not imply full 64-state sigma1 covariance.
+- Next step: compute overlap of 32-dimensional native commutator image with original H64 hidden projector U_h U_h† at selected dictionary.
+
 
 ### 2026-11-13 06:18 UTC — GPT — Gate A — Q71 CI orientation-predicate repair
 - Task: repair the most recent failing gating check `research.q71_native_q3_clock` before taking a new Queue item.
