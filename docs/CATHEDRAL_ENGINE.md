@@ -85,20 +85,18 @@ certificate changed after it was recorded.
 
 ## Measured performance
 
-Local measurements in Claude's sandbox (2 CPUs, Python 3.13), each run in a fresh process with imports included.
-The full table is in `research_archive/2026-11-13_cathedral_engine/BENCHMARK_LOCAL.md`; CI re-measures it in the
-non-gating check `engine.benchmark`.
+Same-machine figures from GitHub Actions: check `engine.benchmark`, run 43519849068, Python 3.11, 4 CPUs. Each run
+is a fresh process with imports included, and both sides must give the same answer. Source:
+`research_archive/2026-11-13_cathedral_engine/BENCHMARK_CI.md`. Local sandbox figures, which the CI figures
+confirm, are in `BENCHMARK_LOCAL.md`.
 
 | Case | Original | Engine cold | Engine warm | Speed-up |
 |---|---|---|---|---|
-| Q64 selection over 768 classes | 8.10 s | 0.98 s | 0.52 s | ×8.3 cold, ×15.6 warm |
-| Q3 census over 46,080 dictionaries | 22.43 s | 0.53 s | 0.49 s | ×42.5 / ×45.6 (orbit reduction, same census) |
-| Q81 exact source norms | SymPy + mpmath: 13.24 s on CI | 0.60 s | 0.57 s | CI-to-local comparison only; CI measures both |
-| Q89 three exact zeros | SymPy: 17.58 s on CI | 0.65 s | 0.72 s | as above |
-| Q83 carrier clock check | SymPy: 1.08 s on CI | 0.65 s | 0.60 s | as above |
-
-The CI figures for the SymPy originals come from orchestrator run 43512220021. They are from a different machine,
-so they are not a same-machine speed-up until `engine.benchmark` reports.
+| Q64 selection over 768 classes | 14.98 s | 1.59 s | 0.69 s | ×9.4 cold, ×21.8 warm |
+| Q3 census over 46,080 dictionaries | 51.62 s | 0.64 s | 0.63 s | ×80.5 (orbit reduction, identical census) |
+| Q81 exact source norms (original: SymPy + mpmath) | 8.65 s | 1.00 s | 0.96 s | ×8.7; engine also gives closed forms |
+| Q89 three exact zeros (original: SymPy) | 11.77 s | 1.05 s | 1.01 s | ×11.2 |
+| Q83 carrier clock check (original: SymPy) | 0.85 s | 0.82 s | 0.83 s | ×1.0 (already fast) |
 
 ## Not in the engine yet (do not assume it is)
 

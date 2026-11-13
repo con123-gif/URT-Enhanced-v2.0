@@ -53,7 +53,7 @@ Objects (all original, as in Q83): icosahedron (Q83 vertex order), faces, C, Ph,
 - `Q88_Q89_ENGINE_RECOVERY.py`: 71 checks pass in 2.5 s. Q88 reconstructed exactly (per-dictionary rank 2,
   joint 3 = span of the Q89 rows; k ∈ {2,22} and {10,14} give the same plane). Q89 holds for the whole family
   x = aZ + bXY (9 Q(√5) identities) and directly for the source (zero tower element).
-- `Q90_SOURCE_CLOCK_ENERGIES.py`: 997 checks pass in 1.7 s.
+- `Q90_SOURCE_CLOCK_ENERGIES.py`: 997 checks pass in 1.7 s (1000 after the minimal-polynomial checks were added).
   ‖h3‖² = (1 + 2/√5)(539116576348 − 164287376√579)/(3·193²·16787²) = 0.03219454482236522169450345594831162652…;
   ‖h5‖² = (122294404990 + 2087425120√579)/(3²·193²·16787²) (ρ and τ cancel). E_6 = E_18 = ‖h3‖²/2 on all
   8 selected dictionaries, others 0; P5 source: E_0 = 5/8, E_12 = 3/8 of ‖h5‖². 768-class census: 5 spectra;
@@ -69,12 +69,26 @@ Objects (all original, as in Q83): icosahedron (Q83 vertex order), faces, C, Ph,
 - Local benchmark (`BENCHMARK_LOCAL.md`): Q64 8.10 → 0.98/0.52 s; Q3 census 22.43 → 0.53 s; SymPy originals
   skipped locally (CI measures them).
 
-## RESUME HERE
+## Commits and CI (2026-11-13 23:10 UTC)
 
-Last step: records written (ledger, log entry, Queue, RESEARCH_STATE, CATHEDRAL_ENGINE.md). Next: commit on a
-fresh parent, push, read the orchestrator verdict for the commit, fill in commit SHA + verdict below.
-Next command: `python -m cathedral_engine status` then Q86 [derive] (parity-history energy on orbit 1).
+Commits: `bf667f68cb84845015530f75b06b378b9c838ae3` (engine + Q88/Q89/Q90; rebased onto GPT's 1c3cf35, whose
+parallel Q90 was found on rebase, so Claude's Q90 is recorded as REVIEW + extensions) and
+`b72804154bdc488fb93fb1d43e833288c9116342` (robustness). The bf667f6 run was cancelled (superseded by the
+b728041 run, same concurrency group).
 
-Commit: `bf667f68cb84845015530f75b06b378b9c838ae3` (rebased onto GPT's 1c3cf35; GPT's parallel Q90 found on rebase →
-Claude's Q90 recorded as REVIEW + extensions). Follow-up robustness commit on top. CI: orchestrator run for the
-follow-up commit — read `summary.md` on `cathedral-research-state`; pending at the time of writing.
+CI: orchestrator run 43519849068 on b728041 = **PASS** (checkpoint #99, 23:06 UTC):
+- tests.suite pass;
+- research.q88_q89_engine_recovery 4.25 s, research.q90_source_clock_energies 2.71 s, engine.evidence_ledger and
+  engine.benchmark all pass;
+- research_heavy pass;
+- research stage 8 m 52 s (was 29 m 00 s in run 43518116104);
+- sweep: no regressions, new scripts pass.
+
+GPT's Q90 (research.q90_exact_native_fourier) passed CI in runs 43518116104 and 43519849068.
+
+## RESUME HERE (final for this session)
+
+Done: engine, Q88 reconstruction, Q89 review, Q90 review + extensions, CI PASS, same-machine benchmark
+(`BENCHMARK_CI.md`). Open: Q86 [derive] (parity-history energy, chronology coefficient c) and Q87 [compute]
+(GPT's stated next step). Next command: `python -m cathedral_engine status --lane derive`, then the Q86 computation
+described in the newest Claude log entry.
