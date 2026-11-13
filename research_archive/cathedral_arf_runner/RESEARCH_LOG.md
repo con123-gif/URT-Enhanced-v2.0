@@ -36,7 +36,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q85 [derive] (A) A3 coefficient: find a native condition fixing c in H + c·Abar on the selected D₀ (e.g. replace Q in A by the selected bridge B^J_{D₀} and require the same quartet branch projectors, or match the Q2 two-step generator to H on the hidden quartets), or prove every native condition tried leaves the one-parameter family. Weights are c-blind (Q82 2a), so c must come from pole data. — Claude 2026-11-13: OBSTRUCTION, CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (every A5×⟨C⟩-invariant chronology is c-blind; Q72 bridge loses (4,2,2,0); B^J scan finds no c; c = parity-history mass for c ≤ 48; candidate (b) untried; log: "Q85: centrally symmetric chronologies leave c free")
 - [ ] Q86 [derive] (A) A3 coefficient: on orbit 1, c is exactly the mass of the six-bit parity history w₆₃ (gap(K_c) = c, c ≤ 48; Q85). Decide whether an original operator gives w₆₃ an energy relative to H: the H64 zero-mode pair, the conditional 24-clock determinant (4r⁴⁸sin²Θ vs 2r⁴⁸[T₂₄(1+c/2r²) − cos2Θ]), Q2's action on w₆₃, or the Q85 candidate (b) two-step Ward/Schur matching. Compute c if one does; otherwise prove that none does.
 - [x] Q89 [compute] (A) Reproduce original Q81 all-five nonlinear source cancellation against three Q88 native constraint rows. — GPT 2026-11-13: VERIFIED-ARCHIVE, local exact-zero certificate exit 0; Q88 row-space still needs independent CI verification; Gate A open.
-- [ ] Q90 [compute] (A) Independently certify Q88 joint row-space basis from original selected-dictionary operators, then calculate exact unnormalised k=6,18 Fourier energies of Q81 source; test dictionary invariance without identifying clock modes with A5 quartet weights.
+- [x] Q90 [compute] (A) Independently certify Q88 joint row-space basis from original selected-dictionary operators, then calculate exact unnormalised k=6,18 Fourier energies of Q81 source; test dictionary invariance without identifying clock modes with A5 quartet weights. — GPT 2026-11-13: THEOREM, local exact certificate exit 0; joint rank 3, Gram factor 2, E6=E18=(1/2)||P3 f||², eight-dictionary invariant; CI pending; Gate A open.
 - [ ] Q87 [compute] (A) Make Q85 Part 3 rigorous: with interval enclosures (Q77 Krawczyk bounds for B^J), prove for all c > 0 that H + c·Abar_{B^J_{D₀}} never gives source weights (4,2,2,0), or find the exact c where it does.
 - [x] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate. — GPT 2026-11-13: THEOREM, exact native Q3 eigenvalues 1,1/3,1/6,-1/12,2/15,1/15; [K,C]=0; bridge not selected (Q71 Q3 fixed-space spectrum). [CI repair 2026-11-13: orientation determinant corrected; exact local certificate exit 0.]
 - [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
@@ -147,6 +147,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 22:15 UTC — GPT — Gate A — Q90 exact unnormalised source Fourier energies
+- Task: Q90 [compute]; independently reconstruct Q88 native joint row space, then calculate exact Q81 24-clock energies across eight selected dictionaries.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: rank of joint (I+P_sigma²)M_D P3 constraint rows is 3, f is in their kernel, and P3 Mᵀ M P3=2P3. Therefore E6(D)=E18(D)=1/2∑_i(P3 f)_i²≈0.01609727241118261 for each D, with all other clock energies zero. Not A5 quartet weights; Gate A open.
+- Evidence: research.q90_exact_native_fourier; GPT local container executed fail-on-error Python/SymPy script, exit 0; CI pending this commit.
+- Dead ends: no full symbolic radical expansion needed; avoid confusing normalised clock weights with physical ARFs.
+- Next step: Q87 [compute], certify nonvanishing leakage of the original C-breaking joint clock bridge for all c>0, or exhibit exact counterexample.
+
 
 ### 2026-11-13 21:29 UTC — GPT — Gate A — Q89 source exact-zero reproduction
 - Task: Reproduce previously local Q89 with original five-solid moment source and three Q88 integer constraint rows; prerequisite to Q90.

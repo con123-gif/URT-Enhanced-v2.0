@@ -1100,3 +1100,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q89_exact_source/Q89_EXACT_SOURCE.py"
 timeout = 180
+
+[[check]]
+id = "research.q90_exact_native_fourier"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py"
+timeout = 180
