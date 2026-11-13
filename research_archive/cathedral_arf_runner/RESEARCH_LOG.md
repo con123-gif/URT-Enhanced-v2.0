@@ -17,6 +17,9 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 
 - [x] Q69 [compute] (A) Calculate the exact 24-clock character of the native Q2 reversible sigma_1 history, including the 64-state multiplicities and commutant dimension; determine whether odd clock modes survive. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (4+5×12 cycles, multiplicities 6/5/0, commutant dimension 344; log: "Q69 (A) — Native Q2 sigma_1 / 24-clock character")
 
+- [x] Q70 [compute] (A) Compare the exact native Q2 six-step stationary projection with the sigma1 24-clock Cesaro projection and calculate their invariant-rank gap. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (ranks 1 and 6; squared Frobenius gap 5; log: "Q70 (A) — Native clock fixed-space gap")
+- [ ] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate.
+
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.)
 
 - [x] Q62 [derive] (A) On the 6 exceptional Q24 dictionary orbits where a C3 ⊂ A5 fixes the lift (β=0 on three orbits, β≡1 on three; `research_archive/2026-11-12_q61_inverse_limit_lifts/`), does the selected permutation P_σβ preserve the native H13⊕H51 split or im U_h, and does any original native operator (Q2/Q3 source, U_h, 24-clock) distinguish the β=0 orbits from the β≡1 orbits? Original operators only; no physical selection inference. — Claude 2026-11-12: OBSTRUCTION + THEOREM (no: no lift, of all 2³², preserves H13⊕H51 or im U_h on any dictionary, since Aut_S64(P13) = Stab_B6(P8) = A5×⟨I⟩ has no axis 6-cycle; no dictionary-free operator separates the families, only the lifts σ₀/σ₁; the original Q3 source prefers the C3-selected half of Q on all 48 exceptional classes and is uniquely maximised by it on 32; log: "Q62: the selected lifts miss the hidden carrier")
@@ -113,6 +116,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 03:12 UTC — GPT — Q70 (A) — Native clock fixed-space gap
+- Task: exact comparison of original Q2 successor six-step stationary projection with original sigma1 24-clock Cesaro projection.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Gate A open.
+- Statement: Q^6=J/64 has rank 1; C=(1/24) sum_{t=0}^{23} P_sigma1^t has rank 6 and C-J/64 is an orthogonal rank-5 projector. Thus ||C-J/64||_F^2=5. Passive 24-clock alone does not enforce the uniform stationary bridge.
+- Evidence: standalone `research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py`, executed locally with Python, exit 0 and `Q70_EXACT_NATIVE_CERTIFICATE_PASS`; independent certificate assertions use exact fractions. Prior CI 43351340793 PASS on efcb7f3; no CI for this change at entry creation.
+- Limits: Q3 chronology, A5 and U_h may break the five-dimensional complement; no uniqueness or physical ARF inferred.
+- Next step: Q71, compute the original Q3 chronology action on the sigma1 clock-fixed complement and test whether it selects the uniform-marginal bridge.
 
 ### 2026-11-13 02:17 UTC — GPT — Q69 (A) — Native Q2 sigma_1 / 24-clock character
 - Task: One bounded exact spectral certificate on the original Q2 reversible sigma_1 lift, as a diagnostic for ACTIVE PROBLEM A2b; no replacement of Q3 or U_h.
