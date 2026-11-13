@@ -915,3 +915,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q68_native_bridge/Q68_NATIVE_BRIDGE_POLYTOPE.py"
 timeout = 60
+
+[[check]]
+id = "research.q64_a2d_reversible_normalizer"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-13_q64_a2d/Q64_A2D_REVERSIBLE_NORMALIZER.py"
+timeout = 60

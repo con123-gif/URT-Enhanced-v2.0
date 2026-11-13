@@ -12,6 +12,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - A1 (Q64, Claude 2026-11-12): **candidate answer.** Maximum likelihood of a reversible history under the Q3 A5-twirled chronology conditioned on the URT successor rule, L(D,σ) = ∏_h S_D[h,σh]/(S_D[h,2h]+S_D[h,2h+1]). Unique maximiser up to A5 × ⟨I,R,S⟩: one Q24 orbit (8 classes, e.g. D=(0,2,4,6,10,9)), lift σ₁ (β≡1), no ties, margin ×4.54. It coincides with the C3 selection and with the unique orbit where σ₁ keeps the im U_h support. The unconditioned linear and raw objectives fail (other orbit / tie); do not retry them. `research_archive/2026-11-12_q64_conditioned_selection/`.
 - A2 (Q65, Claude 2026-11-13): **partial.** Conditioning K_D on n future URT-admissible steps, p_n = M[h,k]u_{n-1}(k)/u_n(h), keeps every class's lift (it is always the raw argmax) but moves the dictionary: orbit 1 for n = 1, 2; Q64 runner-up orbit 3 for n = 3..11; a non-exceptional orbit X with 16 tied lifts for n = 12..30 and in the Doob (large-deviation) limit. So A1 is **not** the large-deviation rate; do not retry the Doob/natural-extension route. A1 is exactly the one-step Bayes joint posterior, and the horizon-free uniform-marginal (Sinkhorn) bridge on the URT graph also selects orbit 1 with σ₁ uniquely (margin > 3.12). `research_archive/2026-11-13_q65_horizon_conditioned_selection/`.
 - A2b (Q68, GPT 2026-11-13): Q2 uniform-marginal kernels form [0,1]^32, including 2^32 reversible lifts. Passive 24-clock preserves this freedom; actual Q3 A5 and U_h compatibility remains untested. `research_archive/2026-11-13_q68_native_bridge/`.
+- A2D (GPT 2026-11-13, recovered): Q64 rowwise likelihood equals bijection-conditioned lift probability multiplied by the dictionary-dependent probability of bijection; 768-class ordering not evaluated. `research_archive/2026-11-13_q64_a2d/`.
 - **A2b (next, open):** decide between the two conditioning types natively: show from original operators (Q3 A5-covariance, measure preservation of Q's lifts, U_h, 24-clock) that the chronology a reversible history must be scored against is the uniform-marginal bridge of M_D, not the admissibility-conditioned chain; or exhibit an original operator that picks the other. Then rerun A4 with the bridge.
 - **A3 (open):** with the selected (D, σ₁), compute the A5 chronology coefficient and the source weights the native Q2/Q3/H64 source assigns. Either they give (4,2,2,0), or the exact mismatch points to what is missing.
 - **A4 (open):** robustness. The maximiser must be the same for the full n-step conditioned path likelihood ∏_t over σ₁'s cycles, and with the 24-clock and U_h pulled back through the selected D.
@@ -118,6 +119,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 00:15 UTC — GPT — Gate A — Q64 A2D native reversible normalizer (recovered)
+- Task: A2D exact Q2 reversible-lift normalization and Q3 symbolic weights.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional identity only; Gate A open.
+- Statement: For each row pair, bijective assignments have weights ad and bc. The rowwise Q64 likelihood L equals the bijection-conditioned probability times the dictionary-dependent bijection probability. For uniform Q2 both bijection probability and each conditional lift probability equal 2^-32.
+- Evidence: local standalone SymPy executed exit 0, recovered from uncommitted 2026-11-13 source; new CI pending.
+- Next step: evaluate the exact native Q3 768-class dictionary ordering after bijection conditioning.
 
 ### 2026-11-13 01:17 UTC — GPT — Gate A — Q68 native bridge polytope (recovered commit)
 - Task: A2b native Q2 uniform-marginal and passive 24-clock constraints on bridge selection.
