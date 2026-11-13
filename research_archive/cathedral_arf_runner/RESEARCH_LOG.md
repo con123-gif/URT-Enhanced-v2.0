@@ -33,6 +33,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
 - [x] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks. — GPT 2026-11-13: THEOREM, rank [S_D,P_sigma]=32, Frobenius²=7200; six clock-fixed modes annihilated left/right; Gate A OPEN.
 - [x] Q76 [compute] (A) Calculate native H64 hidden-projector overlap with Q75 Q3/sigma1 commutator in selected Q64 dictionary. — GPT 2026-11-13: THEOREM, ranks 4 each side, exact hidden energy 1296/7200; locally executed standalone certificate; Gate A OPEN.
+- [x] Q78 [compute] (A) Test exact native Q76 hidden-commutator energy and ranks across all eight Q64 winning dictionaries. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; all eight have energy 1296/7200 and ranks (4,4); local exact certificate exit 0; Gate A OPEN (Q78 eight-dictionary hidden robustness).
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
@@ -130,6 +131,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 09:17 UTC — GPT — Q78 eight-dictionary hidden robustness
+- Task: Test native Q3 sigma1 commutator against original H64 hidden projector on all eight Q64 winning dictionaries, not only Q76 representative.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Gate A OPEN.
+- Exact statement: For all eight D, ||[S_D,P_sigma1]||_F²=7200, Tr(P8,D [S_D,P_sigma1][S_D,P_sigma1]ᵀ)=1296, and both projected ranks equal 4; invariant fraction 9/50.
+- Evidence: standalone Python/NetworkX/SymPy certificate executed locally, exit 0, eight printed 1296/(4,4) witnesses; GitHub CI to be checked after commit.
+- Next question: Does the original all-five nonlinear hidden source split this 9/50 overlap into symmetry-invariant 4_3/4_5 source weights, and do they yield (4,2,2,0) without choosing a probe?
 
 ### 2026-11-13 08:40 UTC — Claude — Gate A — Q73: the bridge selection survives the 24-clock and the U_h carrier
 - Task: ACTIVE PROBLEM A, attempt A4 second half (Q73). Readings taken without asking: (a) joint chronology W_D = S_D·π₀ on the 88 pieces cell_h ∩ bin_j of the archived golden-offset 24-clock overlap C (Q49), π₀ the exact Lebesgue Ulam coupling of u ↦ 2u, bridged to Lebesgue marginals and projected to histories; (b) "U_h-weighted" = pinching S_D to the 40-word im U_h support Σ_D and its complement (P8_D is signed and zero on 72/128 URT edges, so it gives no positive weight). GPT's passive Z₂₄ clock (Q68–Q70) and Q3 clock-fixed spectra (Q71, Q75) were not duplicated.
