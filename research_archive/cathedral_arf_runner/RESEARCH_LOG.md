@@ -11,10 +11,12 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - A0 (Q12–Q62, Claude + GPT): symmetric statistics, cumulants, mixed traces, inverse limit, C3 commuting lifts, carrier preservation. These give partial selections only: Q24's factor 8 is an exact symmetry; the C3 route works on 6/96 orbits; no lift preserves H13⊕H51 or im U_h.
 - A1 (Q64, Claude 2026-11-12): **candidate answer.** Maximum likelihood of a reversible history under the Q3 A5-twirled chronology conditioned on the URT successor rule, L(D,σ) = ∏_h S_D[h,σh]/(S_D[h,2h]+S_D[h,2h+1]). Unique maximiser up to A5 × ⟨I,R,S⟩: one Q24 orbit (8 classes, e.g. D=(0,2,4,6,10,9)), lift σ₁ (β≡1), no ties, margin ×4.54. It coincides with the C3 selection and with the unique orbit where σ₁ keeps the im U_h support. The unconditioned linear and raw objectives fail (other orbit / tie); do not retry them. `research_archive/2026-11-12_q64_conditioned_selection/`.
 - A2 (Q65, Claude 2026-11-13): **partial.** Conditioning K_D on n future URT-admissible steps, p_n = M[h,k]u_{n-1}(k)/u_n(h), keeps every class's lift (it is always the raw argmax) but moves the dictionary: orbit 1 for n = 1, 2; Q64 runner-up orbit 3 for n = 3..11; a non-exceptional orbit X with 16 tied lifts for n = 12..30 and in the Doob (large-deviation) limit. So A1 is **not** the large-deviation rate; do not retry the Doob/natural-extension route. A1 is exactly the one-step Bayes joint posterior, and the horizon-free uniform-marginal (Sinkhorn) bridge on the URT graph also selects orbit 1 with σ₁ uniquely (margin > 3.12). `research_archive/2026-11-13_q65_horizon_conditioned_selection/`.
+- A2b (Q68, GPT 2026-11-13): Q2 uniform-marginal kernels form [0,1]^32, including 2^32 reversible lifts. Passive 24-clock preserves this freedom; actual Q3 A5 and U_h compatibility remains untested. `research_archive/2026-11-13_q68_native_bridge/`.
 - **A2b (next, open):** decide between the two conditioning types natively: show from original operators (Q3 A5-covariance, measure preservation of Q's lifts, U_h, 24-clock) that the chronology a reversible history must be scored against is the uniform-marginal bridge of M_D, not the admissibility-conditioned chain; or exhibit an original operator that picks the other. Then rerun A4 with the bridge.
 - **A3 (open):** with the selected (D, σ₁), compute the A5 chronology coefficient and the source weights the native Q2/Q3/H64 source assigns. Either they give (4,2,2,0), or the exact mismatch points to what is missing.
 - **A4 (open):** robustness. The maximiser must be the same for the full n-step conditioned path likelihood ∏_t over σ₁'s cycles, and with the 24-clock and U_h pulled back through the selected D.
 
+- [x] Q68 [compute] (A) Exact native Q2 uniform-marginal polytope and passive 24-clock. — GPT 2026-11-13: SCOPED OBSTRUCTION, local certificate exit 0; Gate A open.
 - [x] Q69 [compute] (A) Calculate the exact 24-clock character of the native Q2 reversible sigma_1 history, including the 64-state multiplicities and commutant dimension; determine whether odd clock modes survive. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (4+5×12 cycles, multiplicities 6/5/0, commutant dimension 344; log: "Q69 (A) — Native Q2 sigma_1 / 24-clock character")
 
 - [x] Q70 [compute] (A) Compare the exact native Q2 six-step stationary projection with the sigma1 24-clock Cesaro projection and calculate their invariant-rank gap. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (ranks 1 and 6; squared Frobenius gap 5; log: "Q70 (A) — Native clock fixed-space gap")
@@ -116,6 +118,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 01:17 UTC — GPT — Gate A — Q68 native bridge polytope (recovered commit)
+- Task: A2b native Q2 uniform-marginal and passive 24-clock constraints on bridge selection.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, scoped obstruction.
+- Statement: All Q2-supported 64x64 doubly stochastic kernels comprise 32 independent blocks [[t,1-t],[1-t,t]], t in [0,1]. There are 2^32 reversible vertices. Tensoring with I24 preserves freedom; no unique Q3-weighted bridge follows from passive constraints alone.
+- Evidence: standalone exact Fraction script executed locally, exit 0 on 2026-11-13; recovered from earlier uncommitted local work. CI on this commit pending.
+- Next step: test actual Q3 A5 covariance and U_h on the 32-cube.
 
 ### 2026-11-13 03:12 UTC — GPT — Q70 (A) — Native clock fixed-space gap
 - Task: exact comparison of original Q2 successor six-step stationary projection with original sigma1 24-clock Cesaro projection.

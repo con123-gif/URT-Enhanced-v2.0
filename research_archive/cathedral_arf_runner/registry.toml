@@ -907,3 +907,11 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py"
 timeout = 60
+
+[[check]]
+id = "research.q68_native_bridge_polytope"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-13_q68_native_bridge/Q68_NATIVE_BRIDGE_POLYTOPE.py"
+timeout = 60
