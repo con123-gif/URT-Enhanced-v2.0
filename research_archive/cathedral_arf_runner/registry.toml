@@ -980,3 +980,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_q60_charge_tensor_ward/Q60_CHARGE_TENSOR_WARD.py"
 timeout = 60
+
+[[check]]
+id = "research.cross_archive_photon_join"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-13_cross_archive_photon_join/CROSS_ARCHIVE_PHOTON_JOIN_AUDIT.py"
+timeout = 60

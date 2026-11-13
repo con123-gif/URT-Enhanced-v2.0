@@ -127,6 +127,13 @@ commit as your result.
 
 ## Log
 
+### 2026-11-13 — GPT — Cross-archive photon and nonlinear charged-source join
+- Task: reconcile original October 24 Coulomb/independent Wilson photon coefficient, October 28 all-five real interacting action, and November 12 Q60 four-charge interface.
+- Result: THEOREM + SCOPED REPRESENTATION OBSTRUCTION; physical ARFs and Gate B remain OPEN.
+- Statement: exact 137=32+105 static Coulomb identity and original quartic 2/9,7/32 coexist, but static Coulomb index does not determine 1PI photon K4; original real scalar history source cannot acquire continuous U(1) charge two without a specified complex representation and equivariant source map.
+- Evidence: exact SymPy cross-archive arithmetic certificate locally exit 0, 2026-11-13; provenance in accompanying report; CI pending.
+- Next question: does native hidden chiral W provide a canonical A5-equivariant complex structure compatible with the nonlinear h3+Delta h5 source and Q60 Hopf transport?
+
 ### 2026-11-13 — GPT — Q60 charge tensor typing and Ward contacts
 - Task: solve original Q60 four-charge fixed-frame mismatch at representation level, and compute exact free-sheet Ward contacts.
 - Result: CONDITIONAL THEOREM; degree obstruction resolved by source typing; physical tensor contraction and joined Ward remain OPEN.
