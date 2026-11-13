@@ -26,7 +26,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q70 [compute] (A) Compare the exact native Q2 six-step stationary projection with the sigma1 24-clock Cesaro projection and calculate their invariant-rank gap. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (ranks 1 and 6; squared Frobenius gap 5; log: "Q70 (A) — Native clock fixed-space gap")
 - [x] Q72 [derive] (A) A2b: decide natively between the admissibility-conditioned chain and the uniform-marginal bridge. — Claude 2026-11-13: THEOREM under stated requirements, CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (log: "Q72: time reversal and the invariant measure single out the bridge")
 - [ ] Q73 [derive] (A) A4 second half: build the uniform-marginal bridge of the original joint history⊗24-clock chronology (and, separately, of a U_h-weighted Q3 twirl) on the URT support and test whether its maximum-likelihood reversible history is still orbit 1 with σ₁, unique.
-- [ ] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate.
+- [x] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate. — GPT 2026-11-13: THEOREM, exact native Q3 eigenvalues 1,1/3,1/6,-1/12,2/15,1/15; [K,C]=0; bridge not selected (Q71 Q3 fixed-space spectrum).
 - [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
 - [ ] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks.
 
@@ -126,6 +126,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 — GPT — Q71 native Q3 clock-fixed spectral mixing
+- Task: first open [compute] Q71; original Q3 A5 twirl on sigma1 fixed space at Q64 selected dictionary.
+- Result: THEOREM, CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Gate A remains OPEN.
+- Exact statement: [S_D/120,C]=0; on im C, spectrum {1,1/3,1/6,-1/12,2/15,1/15}, with centered rank 5 and strict contraction factor 1/3; no uniform-marginal bridge selection follows.
+- Evidence: local SymPy/networkx/numpy standalone certificate exit 0, 2026-11-13; output Q71_NATIVE_Q3_FIXED_SPACE_CERTIFICATE_OK; CI pending.
+- Next question: compare all eight Q64 winning dictionaries and U_h-weighted Q3 source twirl for a native bridge-selection invariant.
 
 ### 2026-11-13 — GPT — Cross-archive photon and nonlinear charged-source join
 - Task: reconcile original October 24 Coulomb/independent Wilson photon coefficient, October 28 all-five real interacting action, and November 12 Q60 four-charge interface.

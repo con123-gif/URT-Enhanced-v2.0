@@ -988,3 +988,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_cross_archive_photon_join/CROSS_ARCHIVE_PHOTON_JOIN_AUDIT.py"
 timeout = 60
+
+[[check]]
+id = "research.q71_native_q3_clock"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py"
+timeout = 180
