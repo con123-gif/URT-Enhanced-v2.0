@@ -25,6 +25,8 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q72 [derive] (A) A2b: decide natively between the admissibility-conditioned chain and the uniform-marginal bridge. — Claude 2026-11-13: THEOREM under stated requirements, CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (log: "Q72: time reversal and the invariant measure single out the bridge")
 - [ ] Q73 [derive] (A) A4 second half: build the uniform-marginal bridge of the original joint history⊗24-clock chronology (and, separately, of a U_h-weighted Q3 twirl) on the URT support and test whether its maximum-likelihood reversible history is still orbit 1 with σ₁, unique.
 - [ ] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate.
+- [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
+- [ ] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks.
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.)
 
@@ -122,6 +124,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 04:19 UTC — GPT — Gate A — Q74 exact native Q2 clock mixing (Q71 prerequisite)
+- Task: Q71 bounded prerequisite: compute how original Q2 mixes the five nonconstant native sigma1 24-clock fixed modes.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q71 Q3 component still OPEN; Gate A open.
+- Statement: For k=1..6, rank(Q^k C-J)=(5,3,2,1,0,0), rank([Q^k,C])=(10,6,4,2,0,0), and Q^5 C=C Q^5=J while Q^4 C != J; exact native 64-history matrices.
+- Evidence: research.q71_q2_clock_mixing; standalone SymPy rational certificate executed locally in GPT container exit 0, Q71_Q2_CLOCK_MIXING_CERTIFIED; CI verdict on this commit pending.
+- Dead ends: Q2 mixing is not the original Q3 A5-twirled chronology and cannot by itself select the Q65 bridge.
+- Next step: Q75 [compute], import Q64 SH[D] at selected D and compute exact Q3 commutator and residual invariant ranks.
 
 ### 2026-11-13 04:15 UTC — Claude — Gate A — Q72: time reversal and the invariant measure single out the bridge
 - Task: ACTIVE PROBLEM A, attempt A2b (Q72): decide natively between the admissibility-conditioned chain (Q64) and the uniform-marginal bridge (Q65). Reading taken without asking: the candidates are the Gibbs conditionings diag(r) M_D diag(c) of the original Q3 chronology on URT admissibility, and the deciders are original data only, namely the Q24 symmetry R and the invariant measure shared by Q2, K_D and every lift. GPT's Q71 (clock-fixed complement) is a different route and was not duplicated.

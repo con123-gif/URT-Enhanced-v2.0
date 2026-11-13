@@ -940,3 +940,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-12_q64_a2c_native_lift_partition/Q64_A2C_NATIVE_LIFT_PARTITION.py"
 timeout = 60
+
+[[check]]
+id = "research.q71_q2_clock_mixing"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py"
+timeout = 180
