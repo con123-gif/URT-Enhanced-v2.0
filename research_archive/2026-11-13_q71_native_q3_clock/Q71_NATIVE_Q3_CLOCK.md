@@ -25,3 +25,7 @@ The exact six-by-six matrix (cycle order from increasing first unvisited history
 **Execution:** local sandbox `OPENBLAS_NUM_THREADS=1 python /mnt/data/cathedral_q71/q71.py` exit 0 on 2026-11-13, output `Q71_NATIVE_Q3_FIXED_SPACE_CERTIFICATE_OK`; exact script committed under this directory. New CI pending.
 
 **RESUME HERE:** Test the same Q3 clock restriction under all eight symmetry-related winning dictionaries and compare the U_h-weighted source twirl; decide whether an original-operator invariant can select the uniform-marginal bridge without adding a variational postulate.
+
+## 2026-11-13 CI repair — orientation determinant
+
+The initial GitHub gating run [43371071858](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43371071858) failed because the code evaluated `det(A > 0)` rather than `det(A) > 0` in the original icosahedral graph-automorphism orientation filter. The original failing assertion was reproduced locally. Corrected code asserts 120 graph automorphisms and exactly 60 proper rotations. The full original native Q3 exact-rational certificate was re-executed locally, exit 0, preserving its characteristic polynomial and commutator result. Physical Gate A remains open. New CI pending.

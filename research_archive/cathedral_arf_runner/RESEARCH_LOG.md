@@ -26,7 +26,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q70 [compute] (A) Compare the exact native Q2 six-step stationary projection with the sigma1 24-clock Cesaro projection and calculate their invariant-rank gap. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (ranks 1 and 6; squared Frobenius gap 5; log: "Q70 (A) — Native clock fixed-space gap")
 - [x] Q72 [derive] (A) A2b: decide natively between the admissibility-conditioned chain and the uniform-marginal bridge. — Claude 2026-11-13: THEOREM under stated requirements, CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (log: "Q72: time reversal and the invariant measure single out the bridge")
 - [ ] Q73 [derive] (A) A4 second half: build the uniform-marginal bridge of the original joint history⊗24-clock chronology (and, separately, of a U_h-weighted Q3 twirl) on the URT support and test whether its maximum-likelihood reversible history is still orbit 1 with σ₁, unique.
-- [x] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate. — GPT 2026-11-13: THEOREM, exact native Q3 eigenvalues 1,1/3,1/6,-1/12,2/15,1/15; [K,C]=0; bridge not selected (Q71 Q3 fixed-space spectrum).
+- [x] Q71 [compute] (A) Test whether original Q3 A5-twirled chronology mixes the five-dimensional sigma1 clock-fixed complement of constants, and whether the result selects a uniform-marginal bridge without an extra postulate. — GPT 2026-11-13: THEOREM, exact native Q3 eigenvalues 1,1/3,1/6,-1/12,2/15,1/15; [K,C]=0; bridge not selected (Q71 Q3 fixed-space spectrum). [CI repair 2026-11-13: orientation determinant corrected; exact local certificate exit 0.]
 - [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
 - [ ] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks.
 
@@ -126,6 +126,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 06:18 UTC — GPT — Gate A — Q71 CI orientation-predicate repair
+- Task: repair the most recent failing gating check `research.q71_native_q3_clock` before taking a new Queue item.
+- Result: VERIFIED-ARCHIVE / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Gate A OPEN.
+- Statement: prior code evaluated `det(A>0)` rather than testing `det(A)>0`; corrected 120 icosahedral graph automorphisms, exactly 60 proper rotations, and original exact Q3 clock spectrum {1,1/3,1/6,-1/12,2/15,1/15}, [K,C]=0.
+- Evidence: original broken script reproduced AssertionError `len(perms)==60` locally; corrected standalone `OPENBLAS_NUM_THREADS=1 python -u research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py` executed in local container exit 0, output `Q71_NATIVE_Q3_FIXED_SPACE_CERTIFICATE_OK`; prior CI 43371071858 FAIL; new CI pending.
+- Dead ends: Boolean determinant is not an orientation sign test.
+- Next step: test all eight Q64 winning dictionaries with native Q3 and U_h-weighted chronology; Q75 remains open.
 
 ### 2026-11-13 — GPT — Q71 native Q3 clock-fixed spectral mixing
 - Task: first open [compute] Q71; original Q3 A5 twirl on sigma1 fixed space at Q64 selected dictionary.

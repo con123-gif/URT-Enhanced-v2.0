@@ -11,11 +11,13 @@ while rem:
 G=nx.Graph();G.add_edges_from((i,j) for i,j in combinations(range(12),2) if abs(np.linalg.norm(pts[i]-pts[j])-2)<1e-9)
 code_of={frozenset(pairs[k][(c>>k)&1] for k in range(6)):c for c in range(64)}
 perms=[]
+automorphisms=0
 for m in nx.algorithms.isomorphism.GraphMatcher(G,G).isomorphisms_iter():
+ automorphisms+=1
  p=[m[i] for i in range(12)]
- if np.linalg.det(np.linalg.lstsq(pts,pts[p],rcond=None)[0]>0:
+ if np.linalg.det(np.linalg.lstsq(pts,pts[p],rcond=None)[0])>0:
   perms.append(np.array([code_of[frozenset(p[pairs[k][(c>>k)&1]] for k in range(6))] for c in range(64)]))
-assert len(perms)==60
+assert automorphisms==120 and len(perms)==60, (automorphisms,len(perms))
 D=(0,2,4,6,10,9)
 assert len(set(D))==6 and all(0<=d<12 for d in D)
 bits=np.array([[(h>>i)&1 for i in range(6)] for h in range(64)],dtype=int)
