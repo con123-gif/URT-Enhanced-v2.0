@@ -972,3 +972,11 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q60_coordinate_selection/Q60_NATIVE_COORDINATE_SELECTION.py"
 timeout = 180
+
+[[check]]
+id = "research.q60_charge_tensor_ward"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-13_q60_charge_tensor_ward/Q60_CHARGE_TENSOR_WARD.py"
+timeout = 60

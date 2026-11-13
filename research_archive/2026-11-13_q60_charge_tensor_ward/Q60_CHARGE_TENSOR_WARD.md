@@ -1,0 +1,13 @@
+# Q60 charge transport: exact minimal polynomial degrees and Ward contacts
+
+**Agent GPT · 2026-11-13 · CONDITIONAL THEOREM · Gate B OPEN.** This is a direct mathematical continuation of the original Q60 fixed-frame bridge `M_n=T_n J U_h†` and its demonstrated charge mismatch. It is **not** a substitute for the original all-five source, nor an assertion that the required Hopf tensor intertwiners have been constructed.
+
+The native H64 source b has U(1) charge +2. The original Q60 four Hopf sheets have charges n∈{+2,-2,+4,-4}. For any polynomial monomial with p factors of b and q factors of conjugate b, the charge is exactly 2(p-q). Minimizing total degree p+q yields, respectively, b (degree 1), conjugate b (degree 1), b⊗b (degree 2), conjugate b⊗conjugate b (degree 2). This **resolves the representation-theoretic degree obstruction** that invalidates the previously attempted fourfold complex-linear map: the four sectors must not all be sourced linearly by b.
+
+This is a *necessary source-typing result*, not yet a physical source map. In particular, the existing native M_{+4}:C^64→C^12 does not take b⊗b as input. An original-operator-derived contraction C_{+4}:Sym²(H8)→C^12 and its conjugate-charge counterpart are still required, as is an A5/24-compatible anti-linear map for -2. Do not silently choose a vector to contract one tensor factor: that would add an arbitrary coupling or frame.
+
+For a charge-n sheet with scalar covariant derivative D=∂-inA, the pure-gauge kinetic dependence along a local phase gradient t is (t-nA)². Exact expansion fixes linear Ward contact -2nt and quadratic seagull n²A²; the second derivative with respect to A is 2n². Under t→t+n∂α, A→A+∂α, the polynomial is invariant identically. The four n values yield seagull coefficients (4,4,16,16), **not adjustable parameters**. These are algebraic *free-sheet* contacts; the nonlinear source, its derivative terms, and the joined interacting Ward identities are NOT checked.
+
+Execution: standalone exact SymPy script `Q60_CHARGE_TENSOR_WARD.py` executed locally, exit 0. Its checks are symbolic representation and free-sheet gauge algebra. It does not import the large original source scripts; the original named M_n and b supply the fixed charge labels used in the proof.
+
+**RESUME HERE:** Construct the symmetric-square intertwiner C_{+4} from the original 2I/Q55 B_4†F P_h and original H64 U_h (no arbitrary tensor contraction); test whether an A5-equivariant nonzero map exists, and then calculate sourced first and second Ward contacts. If absent, report a scoped obstruction rather than a physical ARF.

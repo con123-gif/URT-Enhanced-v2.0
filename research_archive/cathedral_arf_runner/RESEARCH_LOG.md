@@ -30,7 +30,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q74 [compute] (A) Exact native Q2 sigma1-clock fixed-space mixing as a bounded prerequisite to Q71 Q3 test. — GPT 2026-11-13: THEOREM, local certificate exit 0; Q71 remains open.
 - [ ] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks.
 
-- [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.]
+- [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
 - [x] Q62 [derive] (A) On the 6 exceptional Q24 dictionary orbits where a C3 ⊂ A5 fixes the lift (β=0 on three orbits, β≡1 on three; `research_archive/2026-11-12_q61_inverse_limit_lifts/`), does the selected permutation P_σβ preserve the native H13⊕H51 split or im U_h, and does any original native operator (Q2/Q3 source, U_h, 24-clock) distinguish the β=0 orbits from the β≡1 orbits? Original operators only; no physical selection inference. — Claude 2026-11-12: OBSTRUCTION + THEOREM (no: no lift, of all 2³², preserves H13⊕H51 or im U_h on any dictionary, since Aut_S64(P13) = Stab_B6(P8) = A5×⟨I⟩ has no axis 6-cycle; no dictionary-free operator separates the families, only the lifts σ₀/σ₁; the original Q3 source prefers the C3-selected half of Q on all 48 exceptional classes and is uniquely maximised by it on 32; log: "Q62: the selected lifts miss the hidden carrier")
 
@@ -126,6 +126,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 — GPT — Q60 charge tensor typing and Ward contacts
+- Task: solve original Q60 four-charge fixed-frame mismatch at representation level, and compute exact free-sheet Ward contacts.
+- Result: CONDITIONAL THEOREM; degree obstruction resolved by source typing; physical tensor contraction and joined Ward remain OPEN.
+- Statement: native charge-two b requires (b, conjugate b, b⊗b, conjugate b⊗conjugate b) for Hopf charges (+2,-2,+4,-4), of minimal degrees (1,1,2,2); algebraic seagulls fixed to (4,4,16,16).
+- Evidence: standalone SymPy exact certificate executed locally, exit 0, 2026-11-13; original Q60 M_n source interface retained by reference. New CI pending.
+- Next question: derive A5-equivariant symmetric-square C_{+4}:Sym²(H8)→C12 from native Q55/2I and H64 source operators, without adding an arbitrary contraction.
 
 ### 2026-11-13 — GPT — Gate B — Q60 native coordinate hidden selection (recovered)
 - Task: exact 2I-derived face-coordinate multiplication on original 20-face hidden quartets; no synthetic stand-ins.
