@@ -1091,3 +1091,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py"
 timeout = 180
+
+# Q89 locally reproduced exact native five-solid source constraints; CI must execute independently.
+[[check]]
+id = "research.q89_exact_source_all_dictionaries"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-13_q89_exact_source/Q89_EXACT_SOURCE.py"
+timeout = 180
