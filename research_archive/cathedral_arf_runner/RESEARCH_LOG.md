@@ -34,6 +34,8 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q75 [compute] (A) With original Q64 SH[D] and selected Q65/Q72 dictionary, calculate the exact Q3 A5-twirled chronology action on the five nonconstant sigma1-clock fixed directions, including commutator and residual invariant ranks. — GPT 2026-11-13: THEOREM, rank [S_D,P_sigma]=32, Frobenius²=7200; six clock-fixed modes annihilated left/right; Gate A OPEN.
 - [x] Q76 [compute] (A) Calculate native H64 hidden-projector overlap with Q75 Q3/sigma1 commutator in selected Q64 dictionary. — GPT 2026-11-13: THEOREM, ranks 4 each side, exact hidden energy 1296/7200; locally executed standalone certificate; Gate A OPEN.
 - [x] Q78 [compute] (A) Test exact native Q76 hidden-commutator energy and ranks across all eight Q64 winning dictionaries. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; all eight have energy 1296/7200 and ranks (4,4); local exact certificate exit 0; Gate A OPEN (Q78 eight-dictionary hidden robustness).
+- [x] Q79 [compute] (A) Calculate the exact original nonlinear icosahedral hidden-source norms by all vertex-pair orbits, as a bounded prerequisite to the Q78 all-five source insertion. — GPT 2026-11-13: THEOREM; adjacent 30 pairs (8/5,8/15), all 36 other pairs zero; local exact certificate exit 0; Gate A OPEN.
+- [ ] Q80 [compute] (A) Insert the original all-five Eglobal(e0+e3) source through Plinear into Q78's eight winning dictionaries and calculate exact or certified source-resolved P3/P5 commutator weights; no synthetic probe.
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
@@ -131,6 +133,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 10:13 UTC — GPT — Gate A — Q79 native nonlinear source pair-orbit theorem
+- Task: Q79; use the original November 7 icosahedral hidden_source formula and exact native face incidence/projectors to classify all 66 vertex-pair probes.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Gate A OPEN.
+- Statement: For x=e_i+e_j, the 30 adjacent pairs give (||P3(Cx)²||²,||P5(Cx)²||²)=(8/5,8/15), while 30 other nonadjacent and 6 antipodal pairs give (0,0); all 12 singleton sources vanish. Exact source ratio 3:1 for adjacent pairs; not the target ARF pattern.
+- Evidence: research.q79_native_nonlinear_pair_source; exact SymPy standalone executed locally in /mnt/data/cathedral/Q79.py, exit 0; CI pending on new commit.
+- Dead ends: vertex-only probes are killed by Ph C=0; pair-orbit weights do not select the full all-five vacuum or the (4,2,2,0) pattern.
+- Next step: Q80 [compute], evaluate original all-five Eglobal collective source in the eight Q78 dictionaries with P3/P5 resolved commutator response.
 
 ### 2026-11-13 09:17 UTC — GPT — Q78 eight-dictionary hidden robustness
 - Task: Test native Q3 sigma1 commutator against original H64 hidden projector on all eight Q64 winning dictionaries, not only Q76 representative.
