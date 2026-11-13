@@ -794,6 +794,15 @@ gating = true
 run = "python -u research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py"
 timeout = 300
 
+# Q82 (A3): forward-minus-reverse clock bridge has period-6 bin profile; selected-dictionary Kbar quartet source weights (4,2,2,0) exactly, c-independent
+[[check]]
+id = "research.q82_oriented_source_weights"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-13_q82_oriented_source_weights/Q82_ORIENTED_SOURCE_WEIGHTS_CERTIFICATE.py"
+timeout = 300
+
 # Q55 original Hopf/2I charged Wilson lattice: 600-cell source, Chern flux, kinematic Ward orders
 [[check]]
 id = "research.q55_hopf_wilson_ward"
