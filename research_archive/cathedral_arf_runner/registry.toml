@@ -964,3 +964,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-12_q64_a2_native_conditioning/Q64_A2_NATIVE_CONDITIONING.py"
 timeout = 60
+
+[[check]]
+id = "research.q60_native_coordinate_selection"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-12_q60_coordinate_selection/Q60_NATIVE_COORDINATE_SELECTION.py"
+timeout = 180
