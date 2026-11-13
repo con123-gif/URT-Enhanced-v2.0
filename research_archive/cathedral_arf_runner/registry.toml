@@ -1147,3 +1147,11 @@ gating = false
 run = "python -u research_archive/2026-11-13_cathedral_engine/BENCHMARK.py --out {out}/engine_benchmark"
 outputs = ["{out}/engine_benchmark/benchmark.md", "{out}/engine_benchmark/benchmark.json"]
 timeout = 1500
+
+[[check]]
+id = "research.q87_coefficient_elimination"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py"
+timeout = 90
