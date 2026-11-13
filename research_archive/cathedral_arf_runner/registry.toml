@@ -1038,3 +1038,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q79_native_pair_source/Q79_NATIVE_PAIR_SOURCE.py"
 timeout = 180
+
+[[check]]
+id = "research.q80_native_hidden_source_selection"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-13_q80_native_hidden_source/Q80_NATIVE_HIDDEN_SOURCE.py"
+timeout = 180

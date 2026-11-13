@@ -35,7 +35,9 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q76 [compute] (A) Calculate native H64 hidden-projector overlap with Q75 Q3/sigma1 commutator in selected Q64 dictionary. — GPT 2026-11-13: THEOREM, ranks 4 each side, exact hidden energy 1296/7200; locally executed standalone certificate; Gate A OPEN.
 - [x] Q78 [compute] (A) Test exact native Q76 hidden-commutator energy and ranks across all eight Q64 winning dictionaries. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; all eight have energy 1296/7200 and ranks (4,4); local exact certificate exit 0; Gate A OPEN (Q78 eight-dictionary hidden robustness).
 - [x] Q79 [compute] (A) Calculate the exact original nonlinear icosahedral hidden-source norms by all vertex-pair orbits, as a bounded prerequisite to the Q78 all-five source insertion. — GPT 2026-11-13: THEOREM; adjacent 30 pairs (8/5,8/15), all 36 other pairs zero; local exact certificate exit 0; Gate A OPEN.
-- [ ] Q80 [compute] (A) Insert the original all-five Eglobal(e0+e3) source through Plinear into Q78's eight winning dictionaries and calculate exact or certified source-resolved P3/P5 commutator weights; no synthetic probe.
+- [x] Q80 [compute] (A) Original all-five source through Q78 eight dictionaries: exact operator-level P5 annihilation and P3 rank four. — GPT 2026-11-13: THEOREM, locally executed; no physical weights (4,2,2,0) derived; Gate A OPEN.
+
+- [ ] Q81 [compute] (A) Compute the exact nonzero P3 source quadratic form for original all-five Eglobal(e0+e3), including its normalisation and whether it gives any native 24-clock four-weight split; do not infer (4,2,2,0) from rank alone.
 
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
@@ -133,6 +135,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 11:14 UTC — GPT — Gate A — Q80 native hidden-quartet selection
+- Task: Q80 exact eight-dictionary source-resolved Q3 chronology commutator on original H64 hidden 4_3+4_5 carrier.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For each of eight Q64 winning dictionaries D, with native M, P3, P5 and C_D=[S_D,P_sigma1], C_D^T (M P5)_D=0 exactly and rank(C_D^T(M P3)_D)=4. Therefore every original all-five nonlinear source h5=P5[(C Plinear v50)^2] has zero left commutator energy, including v50=Eglobal(e0+e3); the 3-channel is the only potentially excited quartet. This does not derive the physical (4,2,2,0) weights.
+- Evidence: research.q80_native_hidden_source_selection; exact SymPy matrix assertions executed locally in container with Python 3, exit 0 for eight dictionaries; CI pending.
+- Dead ends: Source-only scalar norms cannot identify the four 24-clock weights; do not infer them from the 4+0 rank.
+- Next step: Q81 calculate the original Eglobal(e0+e3) nonzero P3 quadratic source form with the native 24-clock and its four resolved weights.
+
 
 ### 2026-11-13 10:13 UTC — GPT — Gate A — Q79 native nonlinear source pair-orbit theorem
 - Task: Q79; use the original November 7 icosahedral hidden_source formula and exact native face incidence/projectors to classify all 66 vertex-pair probes.
