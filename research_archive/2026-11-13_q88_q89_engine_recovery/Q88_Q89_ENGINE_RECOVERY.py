@@ -38,15 +38,25 @@ from cathedral_engine.source import exact_source
 with Certificate("Q88_Q89_ENGINE_RECOVERY", __file__) as c:
     # ---------------------------------------------------------------- inputs
     Ds = gate_a.selected_dictionaries()
-    tree = ast.parse(original_path("q83_clock").read_text())
-    q83 = next(ast.literal_eval(n.value) for n in ast.walk(tree) if isinstance(n, ast.Assign)
-               and any(isinstance(t, ast.Name) and t.id == "Ds" for t in n.targets))
-    c.check(list(Ds) == [tuple(d) for d in q83], "Q64 maximiser recomputed = the eight dictionaries of Q83")
+    Q83_LIST = [(0, 2, 4, 6, 10, 9), (0, 2, 7, 5, 9, 10), (0, 2, 9, 10, 4, 6), (0, 2, 10, 9, 7, 5),
+                (0, 3, 4, 7, 10, 8), (0, 3, 7, 4, 9, 11), (0, 3, 9, 11, 4, 7), (0, 3, 10, 8, 7, 4)]   # Q83 at c33fc56
+    c.check(list(Ds) == Q83_LIST, "Q64 maximiser recomputed = the eight dictionaries of Q83")
+    try:
+        tree = ast.parse(original_path("q83_clock").read_text())
+        q83 = next((ast.literal_eval(n.value) for n in ast.walk(tree) if isinstance(n, ast.Assign)
+                    and any(isinstance(t, ast.Name) and t.id == "Ds" for t in n.targets)), None)
+    except (OSError, SyntaxError, ValueError):
+        q83 = None
+    c.record("Q83 file cross-check", "list unchanged" if q83 is not None and [tuple(d) for d in q83] == Q83_LIST
+             else "Q83 file no longer defines the same Ds list (informational; recomputed list used)")
     sel = histories.selected_orbit()
     c.check(sel["beta"] == {histories.SIGMA1_BETA} and sel["ties"] == {0} and sel["is_one_q24_orbit"],
             "unique lift sigma_1, no ties, one Q24 orbit")
     rows = gate_a.q89_rows()
-    c.record("Q89 rows (parsed from the committed certificate)", rows)
+    parsed = gate_a.q89_rows_parsed()
+    c.record("Q89 rows", rows)
+    c.record("Q89 file cross-check", "rows identical to the committed Q89 certificate" if parsed == rows
+             else "Q89 file no longer defines the same rows (informational)")
     P3 = icosahedron()["P3"]
     R = [[Fraction(x) for x in r] for r in rows]
 

@@ -75,4 +75,6 @@ Last step: records written (ledger, log entry, Queue, RESEARCH_STATE, CATHEDRAL_
 fresh parent, push, read the orchestrator verdict for the commit, fill in commit SHA + verdict below.
 Next command: `python -m cathedral_engine status` then Q86 [derive] (parity-history energy on orbit 1).
 
-Commit: (to be filled) · CI: (to be filled)
+Commit: `bf667f68cb84845015530f75b06b378b9c838ae3` (rebased onto GPT's 1c3cf35; GPT's parallel Q90 found on rebase →
+Claude's Q90 recorded as REVIEW + extensions). Follow-up robustness commit on top. CI: orchestrator run for the
+follow-up commit — read `summary.md` on `cathedral-research-state`; pending at the time of writing.

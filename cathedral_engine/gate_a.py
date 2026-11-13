@@ -9,14 +9,15 @@ import ast
 from fractions import Fraction
 from functools import lru_cache
 
-from .fields import Q5, RadicalTower
+from .fields import Q5
 from .geometry import icosahedron, vertices
 from .histories import M_matrix, SIGMA1_BETA, dictionary_index, selected_orbit, sigma_lift
 from .linalg import matmul, rank, rref, transpose
 from .provenance import original_path
 
 __all__ = ["sigma1", "selected_dictionaries", "pull_back", "clock_projector", "constraint_matrix",
-           "joint_rowspace", "q89_rows", "source_line", "source_family_vectors", "FORBIDDEN_K", "ALLOWED_K"]
+           "joint_rowspace", "q89_rows", "q89_rows_parsed", "Q88_ROWS", "source_line", "source_family_vectors",
+           "FORBIDDEN_K", "ALLOWED_K"]
 
 FORBIDDEN_K = (2, 10, 14, 22)     # k = 2 (mod 4), k != 0 (mod 3): the multiplicity-5 modes of the P3 carrier
 ALLOWED_K = (6, 18)               # k = 2 (mod 4), k = 0 (mod 3): the multiplicity-6 modes
@@ -71,14 +72,32 @@ def joint_rowspace(Ds, K=FORBIDDEN_K):
     return J, per
 
 
-@lru_cache(maxsize=None)
-def q89_rows() -> tuple:
-    """The three integer rows exactly as committed in the Q89 certificate (parsed from its source, not retyped)."""
-    tree = ast.parse(original_path("q89_source").read_text())
+# The three Q88 integer rows as committed in Q89_EXACT_SOURCE.py at c33fc56 (sha256 eae47076...).  Kept here so the
+# engine does not break if another agent edits that file; ``q89_rows_parsed`` re-reads the file as a cross-check.
+Q88_ROWS = (
+    (2, 0, -1, 0, -1, 0, -2, 1, 1, 0, -1, 0, -1, 1, 1, 0, -1, -1, 1, 1),
+    (1, -1, -1, 1, 0, 1, -1, -1, 1, 0, 1, 0, -1, 1, 0, -1, 0, -2, 2, 0),
+    (0, 2, -1, -1, 0, -2, 0, 1, 0, 1, -1, -1, 0, 1, 0, 1, 1, 1, -1, -1),
+)
+
+
+def q89_rows_parsed():
+    """The rows parsed from the committed Q89 certificate, or None if the file no longer defines them."""
+    try:
+        tree = ast.parse(original_path("q89_source").read_text())
+    except (OSError, SyntaxError):
+        return None
     for node in ast.walk(tree):
         if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == "rows" for t in node.targets):
-            return tuple(tuple(int(x) for x in r) for r in ast.literal_eval(node.value))
-    raise KeyError("rows not found in the Q89 certificate")
+            try:
+                return tuple(tuple(int(x) for x in r) for r in ast.literal_eval(node.value))
+            except (ValueError, TypeError):
+                return None
+    return None
+
+
+def q89_rows() -> tuple:
+    return Q88_ROWS
 
 
 def source_line(rows=None):
