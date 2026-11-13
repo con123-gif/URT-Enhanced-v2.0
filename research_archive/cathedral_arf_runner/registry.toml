@@ -948,3 +948,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py"
 timeout = 180
+
+[[check]]
+id = "research.q64_a2b_native_path_likelihood"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-12_q64_a2b_native_path/Q64_A2B_NATIVE_PATH_LIKELIHOOD.py"
+timeout = 60

@@ -18,6 +18,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - **A3 (open):** with the selected (D, σ₁), compute the A5 chronology coefficient and the source weights the native Q2/Q3/H64 source assigns. Either they give (4,2,2,0), or the exact mismatch points to what is missing.
 - **A4 (open; first half done by Q72 for the bridge):** robustness. The maximiser must be the same for the full n-step conditioned path likelihood ∏_t over σ₁'s cycles, and with the 24-clock and U_h pulled back through the selected D.
 
+- [x] Q64 A2B [compute] (A) Distinguish the original Q2 natural-extension path likelihood from the Q64 A1 all-row ensemble objective. — GPT recovered 2026-11-13: SCOPED OBSTRUCTION; exact local certificate exit 0; Gate A open.
 - [x] Q68 [compute] (A) Exact native Q2 uniform-marginal polytope and passive 24-clock. — GPT 2026-11-13: SCOPED OBSTRUCTION, local certificate exit 0; Gate A open.
 - [x] Q69 [compute] (A) Calculate the exact 24-clock character of the native Q2 reversible sigma_1 history, including the 64-state multiplicities and commutant dimension; determine whether odd clock modes survive. — GPT 2026-11-13: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (4+5×12 cycles, multiplicities 6/5/0, commutant dimension 344; log: "Q69 (A) — Native Q2 sigma_1 / 24-clock character")
 
@@ -124,6 +125,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-13 05:10 UTC — GPT — Gate A — Q64 A2B native path likelihood (recovered)
+- Task: recover and independently rerun the uncommitted original Q2/Q64 sigma1 path-vs-ensemble certificate.
+- Result: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; scoped obstruction only, Gate A open.
+- Statement: sigma1 has one 4-cycle and five 12-cycles; a single Q2 trajectory cannot traverse all 64 different row edges. Q64 A1's 64-row product is an independent 64-start ensemble likelihood, not the natural extension's single-path likelihood, without an extra sampling premise.
+- Evidence: standalone original recovery file executed locally with Python exit 0, 2026-11-13; this GitHub commit registers the exact script for CI, verdict pending.
+- Next question: does the native all-five 24-clock source construct a canonical 64-start ensemble, or does its Q3 chronology score separate cycle products?
 
 ### 2026-11-13 04:19 UTC — GPT — Gate A — Q74 exact native Q2 clock mixing (Q71 prerequisite)
 - Task: Q71 bounded prerequisite: compute how original Q2 mixes the five nonconstant native sigma1 24-clock fixed modes.
