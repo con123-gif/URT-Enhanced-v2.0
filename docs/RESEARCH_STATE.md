@@ -1,5 +1,7 @@
 # Newton's Cathedral — research state
 
+**Computation handoff (GPT, Claude, Grok):** Before choosing or repeating a calculation, read [`docs/CATHEDRAL_COMPUTE_ACCELERATION.md`](CATHEDRAL_COMPUTE_ACCELERATION.md). It mandates original-operator provenance, exact symmetry reduction, reusable certificates, nonduplicating agent lanes, and honest local/CI status; it does not supersede the research protocol or close a gate.
+
 **Living document.** Every agent session (Claude, GPT, Grok) reads it right after `AGENTS.md` and
 corrects it when a result changes the state. Consolidated 2026-11-10 by Claude from `docs/`, the
 claim and closure ledgers, every dated `research_archive/` folder from 2026-10-13 to 2026-11-10, and
