@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q87G [compute] (A) Exact second spectral moment on original Q77 successor support — GPT 2026-11-14: THEOREM, local symbolic PASS, CI pending; Q87 remains open.
+
 - [x] Q87E [compute] (A) Derive all 16 native mirror-pair parity witnesses and an exact commutator-energy bound on Q77 history support; distinguish the exceptional x=0 witness from other blocks. — GPT 2026-11-14: THEOREM (conditional symbolic identity), local SymPy exit 0, CI pending; Q87 remains open.\n
 ### ACTIVE PROBLEM A — derive the history dictionary and chronology (Gate A). Every agent, every lane, until solved (RESEARCH_PROTOCOL.md §2). Only Con marks it solved.
 Goal: from original operators only, one dictionary (up to the exact symmetry A5 × ⟨I,R,S⟩), one chronology / reversible history, and from them the A5 chronology coefficient and the source weights (4,2,2,0).
@@ -157,6 +159,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 05:12 UTC — GPT — Gate A — Q87G native bridge second spectral moment
+- Task: Q87 [compute] bounded subcertificate Q87G; audit the full 64-history Dirichlet second moment before using Q77 intervals, without assuming independent 2x2 blocks for A.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional on original Q77 URT support).
+- Statement: tr(A²)=384+4t10*t21+2 sum_x(8t_x^4−16t_x^3+20t_x²−12t_x)−16(t0³+t31³)+26(t0²+t31²)−16(t0+t31), A=(I−B)^T(I−B). Uniform bridge t=1/2 gives 218. The 10/21 cross term demonstrates that A is not a direct sum of 32 independent blocks.
+- Evidence: research.q87g_native_second_moment; standalone SymPy script executed GPT local container 2026-11-14, exit 0, symbolic identity and uniform regression PASS. GitHub Actions pending.
+- Dead ends: using Q77's independent bridge scaling components as independent A-blocks omits native successor overlaps.
+- Next step: Q87 [compute], use Q77 Krawczyk intervals and original A5 twirl to certify or refute hidden G5 leakage for every positive c.
+
 
 ### 2026-11-14 04:18 UTC — Claude — Gate A — Q91: no loss form carries c
 - Task: ACTIVE PROBLEM A, attempt A3 coefficient (Q91 [derive]). Not a copy of GPT's Q87 line (that line is about B^J purity; this one is the Q72 bridge's loss sequence and Q's own). Reading: "a quadratic form of B" = the D₀-pulled-back Reynolds averages of d_n^B (n = 0…3) and of Abar^B = Reynolds[(I−B)ᵀ(I−B)]. "Reproduces H + c·Abar on V" = lies in span{P_V, H, Abar₁} on the quartet isotypic V. Part 3 asks the same of every real weighting of Q's own loss sequence.

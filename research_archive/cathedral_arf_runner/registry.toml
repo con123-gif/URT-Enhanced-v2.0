@@ -1212,3 +1212,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87f_native_trace/Q87F_NATIVE_DIRICHLET_TRACE.py"
 timeout = 180
+
+[[check]]
+id = "research.q87g_native_second_moment"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q87g_second_moment/Q87G_NATIVE_SECOND_MOMENT.py"
+timeout = 180
