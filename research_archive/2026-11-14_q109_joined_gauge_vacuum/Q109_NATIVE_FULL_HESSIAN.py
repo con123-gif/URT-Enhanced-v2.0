@@ -103,8 +103,19 @@ assert np.linalg.norm(inc.T@v)<1e-9
 assert abs(gamma(.3*v)-gamma(-.3*v))<1e-6
 obj=lambda t:gamma(t*v)-g0
 assert obj(.01)<0
-fit=minimize_scalar(obj,bracket=(.3,.5,.8),method='brent',options={'xtol':1e-8})
-assert fit.success and fit.x>0 and fit.fun<-1
-print('Nonzero one-line broken-field extremum amplitude',fit.x,'DeltaGamma',fit.fun,flush=True)
+# Bracketing (0.3,0.5,0.8) is NOT guaranteed to surround a minimum:
+# an earlier original-native CI run raised ValueError before checking physics.
+# A positive nonzero descent is sufficient for the scoped instability result;
+# bounded minimization is robust to different eigenvector orientations.
+fit=minimize_scalar(obj,bounds=(0.,1.5),method='bounded',
+                    options={'xatol':1e-8,'maxiter':200})
+assert fit.success and fit.x>1e-8 and fit.fun<-1
+# Check whether the line minimizer is interior before using the word extremum.
+interior=(fit.x>1e-5 and fit.x<1.5-1e-5)
+if interior:
+    diff=(obj(fit.x+1e-4)-obj(fit.x-1e-4))/(2e-4)
+    assert abs(diff)<.1,('line derivative',diff)
+print('Nonzero one-line bounded descent amplitude',fit.x,'DeltaGamma',fit.fun,
+      'interior_stationary',interior,flush=True)
 print('Q109 CONDITIONAL JOINED 528 GAUGE DETERMINANT: PASS')
 print('Still missing unique relative kinetic normalization + stable full-spatial vacuum + continuum physical source.')
