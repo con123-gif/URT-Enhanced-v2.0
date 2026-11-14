@@ -1180,3 +1180,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87c_bridge_singular/Q87C_BRIDGE_SINGULAR.py"
 timeout = 60
+
+[[check]]
+id = "research.q87d_native_parity_commutator"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q87d_native_parity_commutator/Q87D_NATIVE_PARITY_COMMUTATOR.py"
+timeout = 120
