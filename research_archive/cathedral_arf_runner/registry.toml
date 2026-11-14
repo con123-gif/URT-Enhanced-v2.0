@@ -1268,3 +1268,19 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q96_original_arf_action/Q96_ORIGINAL_SOURCE_CHEBYSHEV.py"
 timeout = 90
+
+[[check]]
+id = "research.q97_face_locality_exact"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q97_source_locality/Q97_LOCAL_SOURCE_UNIQUENESS.py"
+timeout = 120
+
+[[check]]
+id = "research.q97_five_solid_locality"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q97_source_locality/Q97_ALL_FIVE_LOCALITY_RANK.py"
+timeout = 90
