@@ -70,7 +70,6 @@ for a in range(30):
    for d0 in range(30):
     if d0 in (a,b,c) or not A[c,d0]:continue
     for e in range(30):
-     if e in (a,b,c,d0) and False:continue
      if e in (a,b,c,d0) or not A[d0,e] or not A[e,a]:continue
      v=[a,b,c,d0,e]
      if any(A[v[k],v[(k+2)%5]] for k in range(5)):continue
@@ -120,7 +119,7 @@ for a,site in enumerate(v61.SITES):
     b=v61.SITE_INDEX[v61.periodic_shift(site,step)]
     inc[11*a+k,a]=1;inc[11*a+k,b]-=1
 grad=inc@omega
-for charge in (-1.,-1/3,0.,2/3,1.):
+for charge in (-1.,-2/3,-1/3,0.,1/3,2/3,1.):
     t=.19;Ht=hw(t*charge*grad)
     G=np.diag(np.exp(1j*t*charge*np.repeat(omega,4)))
     assert np.linalg.norm(Ht-G@H0@G.conj().T)<1e-10
@@ -131,6 +130,6 @@ for charge in (-1.,-1/3,0.,2/3,1.):
     Hp=hw(eps*charge*grad);Hm=hw(-eps*charge*grad)
     assert np.linalg.norm((Hp-Hm)/(2*eps)-D1)<1e-6
     assert np.linalg.norm((Hp+Hm-2*H0)/eps**2-D2)<1e-5
-print('Real v61 192x192 Wilson 528 links, 5 actual charge sectors: both Ward orders PASS')
+print('Real v61 192x192 Wilson 528 links, 7 actual charge sectors: both Ward orders PASS')
 print('Model conditional; physical Maxwell stiffness/Yukawa poles/ARFs OPEN')
 print('Q105 native broken-charge/Wilson: PASS')
