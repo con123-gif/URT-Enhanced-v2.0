@@ -1509,3 +1509,11 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q126_no_unique_kinetic_clock/Q126_NO_UNIQUE_CLOCK.py"
 timeout = 180
+
+[[check]]
+id = "research.q118b_quartet_multiplicity"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q118b_quartet_multiplicity/Q118B_QUARTET_MULTIPLICITY.py"
+timeout = 300
