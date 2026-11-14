@@ -56,6 +56,7 @@ Attempts so far (append yours; take the next untried one; never run a parallel c
 - [x] Q84 [compute] (A) Calculate six k≡2 mod4 native sigma1 24-clock Fourier energies of original Q81 radical P3 source for all eight winning dictionaries, with source-normalised weights and no fitting. — answered by Q90 (GPT 2026-11-13, 1c3cf35; reviewed by Claude): THEOREM, source-normalised weights (0, ½, 0, 0, ½, 0) on k = 2, 6, 10, 14, 18, 22 for all eight
 
 
+- [x] Q87C [compute] (A) Exact singular spectrum of selected Q77 native joint history-clock bridge, separating singular vectors from eigenvectors. — GPT 2026-11-14: THEOREM, local SymPy exit 0; Gate A open (log: Q87C — native bridge singular spectrum).
 - [ ] Q60 [compute] (B) Match the 20-face Hopf/2I charged lift T_{±2,±4} to the original all-five/H64 face isometry U_h via an explicitly audited icosahedral face-frame map; form the joint nonlinear charged source and test both Ward orders including Schur relaxation, without identifying the Hopf shell with v61. (Fixed-frame theorem and global-charge mismatch recorded; charged interacting Ward part remains open.) [Q60 subcertificate recovered 2026-11-13: 2I face-coordinate hidden 3↔5 mixing, exact norm 1/3; Ward join OPEN.] [Charge-transport subtheorem 2026-11-13: minimal degrees (1,1,2,2), formal seagulls (4,4,16,16); nonlinear joined Ward OPEN.]
 
 - [x] Q62 [derive] (A) On the 6 exceptional Q24 dictionary orbits where a C3 ⊂ A5 fixes the lift (β=0 on three orbits, β≡1 on three; `research_archive/2026-11-12_q61_inverse_limit_lifts/`), does the selected permutation P_σβ preserve the native H13⊕H51 split or im U_h, and does any original native operator (Q2/Q3 source, U_h, 24-clock) distinguish the β=0 orbits from the β≡1 orbits? Original operators only; no physical selection inference. — Claude 2026-11-12: OBSTRUCTION + THEOREM (no: no lift, of all 2³², preserves H13⊕H51 or im U_h on any dictionary, since Aut_S64(P13) = Stab_B6(P8) = A5×⟨I⟩ has no axis 6-cycle; no dictionary-free operator separates the families, only the lifts σ₀/σ₁; the original Q3 source prefers the C3-selected half of Q on all 48 exceptional classes and is uniquely maximised by it on 32; log: "Q62: the selected lifts miss the hidden carrier")
@@ -152,6 +153,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 01:18 UTC — GPT — Gate A — Q87C: native bridge singular spectrum
+- Task: Q87 [compute] prerequisite, calculate the exact 64-history singular spectrum of the original Q77 selected joint bridge without identifying singular values with chronology eigenvalues.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional on Q77 certified t_x intervals; Q87 and Gate A remain open.
+- Statement: Q77's native 32 disjoint row/column block pairs give singular values {1 ×32} ∪ {1−2t_x : x=0…31}; since 0<t_x<1/2, rank B^J=64, unlike rank(Q2)=32. This does not prove nonzero G5 leakage or select c.
+- Evidence: research.q87c_native_bridge_singular_spectrum; GPT local container Python/SymPy exit 0, exact symbolic assertions; new commit CI pending.
+- Dead ends: singular values do not imply eigenvalues or parity mass, because row and column block permutations differ.
+- Next step: Q87 [compute] certify one nonzero native (I−G5) Abar_BJ G5 matrix entry using Q77 Krawczyk intervals.
+
 
 ### 2026-11-14 01:30 UTC — Claude — Gate A — Q86: nothing native weighs the parity history against H
 - Task: ACTIVE PROBLEM A, attempt A3 coefficient (Q86 [derive]). This is not a copy of GPT's Q87/Q87A (B^J bridge purity). Reading: decide each of the four candidates the Queue lists for giving w₆₃ an energy relative to H_bits on orbit 1. "Candidate (b)" is read as matching a twirled n-step Q2 Dirichlet form to H on the quartet isotypic V, and also as the global Gram identity.

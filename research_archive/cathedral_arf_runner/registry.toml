@@ -1172,3 +1172,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py"
 timeout = 60
+
+[[check]]
+id = "research.q87c_native_bridge_singular_spectrum"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q87c_bridge_singular/Q87C_BRIDGE_SINGULAR.py"
+timeout = 60
