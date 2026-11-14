@@ -5,6 +5,10 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q99 [compute] (A) Exact parity rigidity for original Q77 successor transfer — GPT 2026-11-14: THEOREM, local Fraction/SymPy certificate exit 0, CI pending; Q87 and Gate A open. `research_archive/2026-11-14_q99_parity_rigidity/`.
+- [ ] Q100 [compute] (A) Compute original A5-twirled selected Q77 bridge hidden G5 off-diagonal entry with rigorous Q77 intervals; decide whether parity variance survives twirling.
+
+
 - [x] Q98 [compute] (A/F) Recover missing Nov 11 symmetry-breaking/frustration and hidden quasicrystal bridge from earlier conversations and Library; verify actual icosahedral W, φ-weighted kissing centre and winding ε, build explicit revisable chiral candidate without fitting — GPT 2026-11-14: exact + conditional, local certificate PASS, CI pending; physical ARFs not derived. `research_archive/2026-11-14_symmetry_breaking_recovery/`.
 
 - [x] Q97 [compute] (A/B) Classify all A5-equivariant quadratic maps from vertices that are local to original icosahedral face; project into hidden 4+4 and verify actual full-five 50-vertex portal — GPT 2026-11-14: exact theorem and independent 50-vertex numeric PASS locally; physical ARFs remain open; CI pending. `research_archive/2026-11-14_q97_source_locality/`.
@@ -178,6 +182,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 07:17 UTC — GPT — Gate A — Q99 native parity rigidity
+- Task: bounded exact rigidity test for Q87 on original 64-history Q77 successor support.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Gate A OPEN.
+- Statement: For A=(I-B)^T(I-B), parity w_j=(-1)^popcount(j), V=||Aw-<w,Aw>w/64||²/64 vanishes iff all 32 successor weights t_x coincide. Proof by binary-parent induction on exact z_j=2[(1-t_(j mod 32))+(1-t_floor(j/2))(1-2t_floor(j/2))].
+- Evidence: `research.q99_native_parity_rigidity`; standalone Python Fraction/SymPy local exit 0, 99 dense 64x64 checks; CI pending.
+- Limits: no A5 twirl, no physical ARF, no gate closure.
+- Next step: certify A5-twirled G5 leakage for selected Q77 nonuniform bridge using rigorous intervals (Q100).
+
 
 ### 2026-11-14 05:12 UTC — GPT — Gate A — Q87G native bridge second spectral moment
 - Task: Q87 [compute] bounded subcertificate Q87G; audit the full 64-history Dirichlet second moment before using Q77 intervals, without assuming independent 2x2 blocks for A.

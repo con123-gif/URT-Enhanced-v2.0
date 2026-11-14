@@ -1292,3 +1292,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_symmetry_breaking_recovery/ASYMMETRY_NATIVE_CERTIFICATE.py"
 timeout = 120
+
+[[check]]
+id = "research.q99_native_parity_rigidity"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q99_parity_rigidity/Q99_PARITY_RIGIDITY.py"
+timeout = 90
