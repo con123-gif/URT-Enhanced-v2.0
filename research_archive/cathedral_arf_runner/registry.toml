@@ -1228,3 +1228,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q93_primitive_clock_response/Q93_NATIVE_MARKOV_CLOCK_TRACE.py"
 timeout = 90
+
+[[check]]
+id = "research.q94_native_hidden_clock"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q94_hidden_clock/Q94_NATIVE_HIDDEN_PROJECTED_CLOCK.py"
+timeout = 120
