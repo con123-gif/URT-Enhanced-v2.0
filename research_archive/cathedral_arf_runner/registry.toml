@@ -1428,3 +1428,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q114_hidden_distance/Q114_NATIVE_HIDDEN_PROJECTOR.py"
 timeout = 90
+
+[[check]]
+id = "research.q115_native_a5_four_pole_source"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q115_a5_four_pole_source/Q115_A5_FOUR_POLE_SOURCE.py"
+timeout = 180

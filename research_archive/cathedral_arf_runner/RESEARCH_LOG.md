@@ -6,7 +6,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q114 [compute] (A) Exact native icosahedral hidden P5 dual-distance kernel — GPT 2026-11-14: THEOREM, local SymPy exit 0, CI pending; Gate A remains open. `research_archive/2026-11-14_q114_hidden_distance/`.
-- [ ] Q115 [compute] (A) Substitute Q114 exact distance kernel into original Q112 U_h/P5 and independently cross-certify Q77 selected A5-twirled offblock witness.
+- [x] Q115 [compute] (A/F) Substitute Q114 exact distance P5 into genuine Q112 G5, compute actual 64-history A5 irreps (8·1+4·4+8·5), and reduce selected golden 24-clock source to at most four poles via explicit 4×4 native multiplicity resolvent; no old ARF weights — GPT 2026-11-14: independent original graph/count/projection local exact PASS; original Q112 native 4×4 GitHub certificate COMMITTED, CI pending; physical ARFs OPEN. `research_archive/2026-11-14_q115_a5_four_pole_source/`.
 
 
 - [x] Q113 [compute] (A/F) Given Q112 native G5 mixing, derive actual selected Q77 A5 quartet source spectral measure, exact first two moments and positive mixed-source variance for ALL c>0; original 64×64 residues checked at c=0.01,0.1,1,2; no old (4,2,2,0) weights or fitted ARFs. GPT 2026-11-14: certificate committed, CI PENDING; complete rational resolvent and physical ARFs remain OPEN. `research_archive/2026-11-14_q113_mixed_hidden_spectral/`.
@@ -1392,3 +1392,10 @@ commit as your result.
 
 ### 2026-11-14 — GPT — Gate A/F — Q113 strict native source spectral variance from Q112 leakage
 - Derived exactly: for P=G5 rank4, Q=I-P, original Hbits P=16P, actual Q77 selected A5-twirled clock A, K(c)=Hbits+cA, the normalized source spectral measure nu_c=(1/4)Tr[P delta(K(c)-lambda)] has m1=16+c Tr(PAP)/4 and Var(nu_c)=c²[(Tr((PAP)²)/4−(Tr(PAP)/4)²)+||QAP||²_F/4]. Q112 certified nonzero entry of QAP with rigorous lower ℓ>0, so Var≥c²ℓ²/4>0 for ALL c>0, independent of historical source weights. Direct 64×64 eigenspectral source-residue check c=0.01,0.1,1,2 registered, CI PENDING. No unique c, 4D photon or physical ARFs inferred. `research_archive/2026-11-14_q113_mixed_hidden_spectral/`.
+
+### 2026-11-14 — GPT — Gate A/F — Q115 four-pole native clock source and 64-history A5 type
+- Task: complete Q115 cross-certification with Q114 rational P5 dual-distance kernel and Q112 source, then extract actual selected A5-twirled H64 source energies and residues without historic weights or experimental targets.
+- Result: THEOREM: exact icosahedral graph automorphism history character (id,C2,C3,C5A,B)=(64,16,4,4,4) gives H64=8·1⊕4·4⊕8·5, no 3 or 3prime in THIS six-antipodal-choice history action. Source projector P=G5 is one 4; Hbits and Abar commute with genuine A5, so its normalized source spectral measure is supported only on 16-dimensional four-isotypic block and has AT MOST FOUR 4-fold-degenerate poles. Schur PAP=aP exactly, Q113 within-source variance exactly zero; Var ν_c=c²||QAP||²_F/4>0 for all c>0 by Q112 rigorous native offblock bound. Explicit 4×4 source-residue block Lanczos, native original Q112/Q114 exact crosscheck and c=.1,1,2 spectral weights registered.
+- Evidence: independent local enumerations original networkx 12-icosahedron 120 automorphisms (60 rotations) and original exact 20×20 dual-distance P5 PASS in Python; GitHub actual Q112 Krawczyk / 64 action / 4×4 code registered with CI PENDING, not claimed native PASS. Q113 native original full orchestrator PASS run 43587473087, within-scatter 6.66e−16; no physical ARF.
+- Limitations: c and physical 190+64+24→charged/Wilson source selection remain open; H64 history representation not silently identified with physical H13⊕H51.
+- Next: from primitive full 190+64+24 transfer select c and the relevant physical gauge-current observable, then calculate the photon residue and compare to observations only after output law exists.
