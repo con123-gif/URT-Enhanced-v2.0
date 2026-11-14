@@ -1149,6 +1149,14 @@ run = "python -u research_archive/2026-11-14_q91_bridge_loss_sequence/Q91_BRIDGE
 timeout = 300
 
 [[check]]
+id = "research.q92_clock_overlap_reading"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-14_q92_clock_overlap_reading/Q92_CLOCK_OVERLAP_READING.py"
+timeout = 300
+
+[[check]]
 id = "engine.evidence_ledger"
 stage = "engine"
 claim = "regression"
