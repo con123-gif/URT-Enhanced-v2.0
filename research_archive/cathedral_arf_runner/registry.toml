@@ -1324,3 +1324,11 @@ claim = "conditional"
 gating = true
 run = "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python research_archive/2026-11-14_q102_born_chiral_arf/Q102_BORN_CHIRAL_ARF.py"
 timeout = 180
+
+[[check]]
+id = "research.q103_alltime_spectral_counting"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py"
+timeout = 180
