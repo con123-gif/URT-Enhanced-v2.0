@@ -1300,3 +1300,19 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q99_parity_rigidity/Q99_PARITY_RIGIDITY.py"
 timeout = 90
+
+[[check]]
+id = "research.q101_moving_arf"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-14_q101_moving_arf/MOVING_ARF_DERIVATION.py"
+timeout = 120
+
+[[check]]
+id = "research.q101_magnetic_factor"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-14_q101_moving_arf/MAGNETIC_ARF_FACTOR_CERTIFICATE.py"
+timeout = 120
