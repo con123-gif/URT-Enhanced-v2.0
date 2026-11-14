@@ -6,15 +6,15 @@
 
 The exact 12-vertex icosahedral graph has six antipodal vertex pairs; a 64-history state chooses one endpoint from each pair. All 120 graph automorphisms were independently enumerated in a local Python/networkx test. The 60 proper rotations are exactly: identity (1 element), half-turns (15), third-turns (20), fifth-turns (24). The number of fixed 64-history configurations is respectively
 
-    χ_H(1)=64, χ_H(C2)=16, χ_H(C3)=4, χ_H(C5A)=χ_H(C5B)=4.
+    χ_H(1)=64, χ_H(C2)=0, χ_H(C3)=4, χ_H(C5A)=χ_H(C5B)=4.
 
 The A5 irreducible characters (1,3,3',4,5) imply by orthogonality the **exact representation decomposition for this 64-history action**
 
-    **H_64 ≅ 8·1 ⊕ 0·3 ⊕ 0·3' ⊕ 4·4 ⊕ 8·5**.
+    **H_64 ≅ 4·1 ⊕ 4·3 ⊕ 4·3' ⊕ 4·4 ⊕ 4·5**.
 
-Proof: m_1=(64+15·16+20·4+24·4)/60=8; m_4=(4·64+20·4−24·4)/60=4; m_5=(5·64+15·16−20·4)/60=8. For m_3 and m_3', χ(2)=-1, χ(3)=0 and the characters at the two order-5 classes are conjugate (φ and 1−φ), whose sum is one; each class has 12 elements with four fixed histories. Hence m_3=m_3'=(3·64−15·16+12·4)/60=0. Dimension: 8+16+40=64. Local original icosahedral automorphism enumeration and independent exact Q114 20-face distance projector P5 both PASSED.
+Proof: m_1=(64+15·0+20·4+24·4)/60=4; m_4=(4·64+20·4−24·4)/60=4; m_5=(5·64+15·0−20·4)/60=4. For m_3 and m_3', χ(2)=-1, χ(3)=0 and the characters at the two order-5 classes are conjugate (φ and 1−φ), whose sum is one; each class has 12 elements with four fixed histories. Hence m_3=m_3'=(3·64−15·0+12·4)/60=4. Dimension: 4+12+12+16+20=64. Local original icosahedral automorphism enumeration and independent exact Q114 20-face distance projector P5 both PASSED.
 
-This statement concerns the **six-antipodal-choice history A5 representation**, NOT any generic A5 representation of the separate 13/51 physical carrier. In particular it would be wrong to infer that the original H13 has no triplets: the two are not yet proven identical A5 modules.
+This statement concerns the **six-antipodal-choice history A5 representation**, NOT any generic A5 representation of the separate 13/51 physical carrier. This native history representation DOES contain triplets. It is not thereby identified with the separate H13⊕H51 physical carrier.
 
 ## Q112/Q114 independent bridge crosscheck
 
@@ -47,7 +47,7 @@ using Q112's rigorous nonzero offblock witness. Consequently there are at least 
 
 ## Explicit original 4×4 source resolvent, not a fitted polynomial
 
-The certificate constructs central A5 projectors by exact character averaging on the original 60 history permutations: P1 rank 8, P4 rank16, P5 rank40, P1+P4+P5=I. It verifies P⊂P4, Abar/Hbits invariance, and PAP=aP. Then it performs a four-column **A5-equivariant block Lanczos** iteration using K(c) and original P. Every inner block is forced to be a scalar multiple of I4 (Schur), producing an actual symmetric **4×4 multiplicity matrix M4(c)**. It checks numerically on original data:
+The certificate constructs central A5 projectors by exact character averaging on the original 60 history permutations: P1 rank 4, P4 rank16, P5 rank20, P3⊕P3prime rank24, P1+P4+P5+(P3⊕P3prime)=I. It verifies P⊂P4, Abar/Hbits invariance, and PAP=aP. Then it performs a four-column **A5-equivariant block Lanczos** iteration using K(c) and original P. Every inner block is forced to be a scalar multiple of I4 (Schur), producing an actual symmetric **4×4 multiplicity matrix M4(c)**. It checks numerically on original data:
 
     K(c) Q = Q [M4(c)⊗I4],
     Q Qᵀ = P4,
@@ -62,3 +62,8 @@ The four possible pole energies are spec M4(c); their **native nonnegative resid
 A complete *original conditional* source-channel resolvent is now 4×4 rather than 64×64, but the primitive full moving Cathedral 190-cochain/50-vertex/24-clock positive transfer has NOT uniquely selected the clock strength c, the real-spacetime joined gauge action, the physical ARF observables or the relation between this history A5 representation and the separate physical H13⊕H51 carrier. This does NOT derive any physical alpha, mass, charge or mixing angle. Q111's seven-unit topological Berry bundle and native Wilson fractional charges also remain unjoined with this history module.
 
 **Next mathematical decision:** derive the actual c and physical current-source observable from the primitive positive transfer, calculate the small 4×4 Schur resolvent and simultaneously use the genuine broken-charge Q106/v61 action. Do not reverse-engineer historic ARFs.
+
+
+## CI #129 correction (GPT, 2026-11-14)
+
+The first registered Q115 native execution **FAILED** on the character census, returning `Counter({(5,4):24,(3,4):20,(2,0):15,(1,64):1})`. The earlier local icosahedron enumeration incorrectly assigned 16 fixed histories to involutions. Using the actual Q112 original permutation census, the exact character inner products give multiplicity **4 for each** of 1, 3, 3prime, 4, 5. In particular the triplets are present, and the rank of the 5-isotypic projector is 20, not 40. The 4-isotypic dimension remains 16, so the four-pole upper bound is not changed by this correction. Corrected the original certificate's census and projectors, including a rank-24 complementary triplet projector. Local standalone exact Fraction character arithmetic exited zero; the full Q112/Q115 chain requires GitHub CI and must not be reported as PASS until that run completes. Gate A and physical ARFs remain open.

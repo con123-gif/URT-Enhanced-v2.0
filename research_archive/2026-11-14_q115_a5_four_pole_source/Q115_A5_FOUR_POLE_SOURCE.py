@@ -49,14 +49,16 @@ def order(p):
         ans=lcm(ans,length)
     return ans
 count=Counter((order(p),int(np.sum(p==np.arange(64)))) for p in perms)
-assert count==Counter({(1,64):1,(2,16):15,(3,4):20,(5,4):24}),count
-m1=(64+15*16+20*4+24*4)//60
-m3=(3*64-15*16+12*4)//60
+assert count==Counter({(1,64):1,(2,0):15,(3,4):20,(5,4):24}),count
+# The original Q112 permutation action fixes NO histories under a half-turn.
+# The 5A and 5B character sums for 3/3prime equal one.
+m1=(64+15*0+20*4+24*4)//60
+m3=(3*64-15*0+12*4)//60
 m4=(4*64+20*4-24*4)//60
-m5=(5*64+15*16-20*4)//60
-assert (m1,m3,m4,m5)==(8,0,4,8)
-assert 8+16+40==64
-print('EXACT original 64-history A5 reps: 8·1 + 4·4 + 8·5, no 3 or 3prime',flush=True)
+m5=(5*64+15*0-20*4)//60
+assert (m1,m3,m4,m5)==(4,4,4,4)
+assert 4*(1+3+3+4+5)==64
+print('EXACT original 64-history A5 reps: 4·1 + 4·3 + 4·3prime + 4·4 + 4·5',flush=True)
 
 # Construct A5 central projectors directly from original 60 history permutations.
 idc=np.arange(64)
@@ -68,11 +70,14 @@ for perm in perms:
     Pi1+=E/60.
     Pi4+=(4/60.)*{1:4,2:0,3:1,5:-1}[k]*E
     Pi5+=(5/60.)*{1:5,2:1,3:-1,5:0}[k]*E
-for P,rank in ((Pi1,8),(Pi4,16),(Pi5,40)):
+for P,rank in ((Pi1,4),(Pi4,16),(Pi5,20)):
     assert np.linalg.norm(P-P.T)<2e-12
     assert np.linalg.norm(P@P-P)<3e-11
     assert np.linalg.matrix_rank(P,tol=1e-8)==rank
-assert np.linalg.norm(Pi1+Pi4+Pi5-np.eye(64))<3e-11
+Pi33=np.eye(64)-Pi1-Pi4-Pi5
+assert np.linalg.norm(Pi33@Pi33-Pi33)<3e-11
+assert np.linalg.matrix_rank(Pi33,tol=1e-8)==24
+assert np.linalg.norm(Pi1+Pi4+Pi5+Pi33-np.eye(64))<3e-11
 
 P=np.array(q['G5'],float);A=np.array(q['Abar'],float)
 assert np.linalg.norm(Pi4@P-P)<1e-10

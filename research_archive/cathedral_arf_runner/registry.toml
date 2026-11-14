@@ -1431,6 +1431,7 @@ timeout = 90
 
 [[check]]
 id = "research.q115_native_a5_four_pole_source"
+# CI #129: native half-turn fixed count 0 (not 16); corrected A5 projector ranks, pending rerun.
 stage = "research"
 claim = "conditional"
 gating = true
