@@ -1,6 +1,6 @@
 # Archive sweep — latest status per script
 
-388/388 scripts executed at least once. Sorted: failing first, then by path.
+389/389 scripts executed at least once. Sorted: failing first, then by path.
 
 | Status | Script | Detail | Wall | Last run |
 |---|---|---|---|---|
@@ -24,11 +24,11 @@
 | missing_file | `research_archive/2026-11-10_urt_arf_forward/aux_tests/cathedral_native_spatial_vacuum_audit_2026-11-09.py` | sandbox path /mnt/data/cathedral_native_spatial_vacuum_audit_2026-11-09.json | 0.26s | 2026-11-14T08:31:23Z |
 | missing_file | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ORIGINAL_190X64_DIAGONAL_CHARGE_AND_FIVE_SOLID_SECTORS_2026_11_10.py` | sandbox path /mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py | 0.1s | 2026-11-14T08:22:40Z |
 | missing_file | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_TRANSFER_ITERATES_KMS_TEST_2026_11_10.py` | sandbox path /mnt/data/urt_arf_forward_2026_11_09/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py | 0.05s | 2026-11-14T08:23:21Z |
-| timeout | `research_archive/2026-11-11_q31_rational_similarity/q31_rational_similarity.py` |  | 120.11s | 2026-11-14T08:13:16Z |
+| timeout | `research_archive/2026-11-11_q31_rational_similarity/q31_rational_similarity.py` |  | 120.11s | 2026-11-14T08:38:40Z |
 | missing_file | `research_archive/2026-11-12_hopf_time_and_axis_order/hopf_time_and_axis_order.py` | research_archive/2026-11-12_hopf_time_and_axis_order/research_archive/2026-11-12_hopf_charged_carrier/hopf_charged_carrier.py | 0.05s | 2026-11-14T08:25:59Z |
 | missing_file | `research_archive/Cathedral_v129_Universe_Fallout_2026-09-12/cathedral_v129_universe_fallout_verify.py` | sandbox path /mnt/data/Cathedral_v129_Universe_Fallout_Symbiotic_Theorem_results.json | 0.05s | 2026-11-14T08:23:27Z |
 | missing_file | `research_archive/URT_Nature_Checkpoint_2026-08-25/urt_blocked_numpy_compat.py` | research_archive/URT_Nature_Checkpoint_2026-08-25/full_library/run_endpoint_test.py | 0.25s | 2026-11-14T08:23:27Z |
-| pass | `research_archive/2026-10-13_entropy_gravity/cathedral_13cell_stress_representation_2026_10_13.py` |  | 0.06s | 2026-11-14T08:18:34Z |
+| pass | `research_archive/2026-10-13_entropy_gravity/cathedral_13cell_stress_representation_2026_10_13.py` |  | 0.11s | 2026-11-14T08:46:23Z |
 | pass | `research_archive/2026-10-13_entropy_gravity/cathedral_A5_entropy_coupling_audit.py` |  | 0.4s | 2026-11-14T08:23:25Z |
 | pass | `research_archive/2026-10-13_entropy_gravity/cathedral_H64_dark_information_exact_audit_2026_10_13.py` |  | 0.11s | 2026-11-14T08:23:26Z |
 | pass | `research_archive/2026-10-13_entropy_gravity/cathedral_casini_einstein_bridge_audit.py` |  | 0.09s | 2026-11-14T08:23:26Z |
@@ -210,18 +210,18 @@
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ANTIPODAL_C3_CLOCK_MATTER_2026_11_10.py` |  | 40.11s | 2026-11-14T08:33:12Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ARF_CANONICAL_RECURSION_GATE_2026_11_10.py` |  | 0.35s | 2026-11-14T08:33:12Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_24FOLD_MONODROMY_2026_11_10.py` |  | 4.31s | 2026-11-14T08:34:22Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_A5_FRAME_SENSITIVITY_2026_11_10.py` |  | 8.04s | 2026-11-14T08:10:30Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_GOLDEN_BASEPOINT_CONJUGACY_2026_11_10.py` |  | 8.1s | 2026-11-14T08:10:38Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_KMS_ENTROPIC_STIFFNESS_2026_11_10.py` |  | 4.12s | 2026-11-14T08:17:53Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_C3_SCHUR_DRESSED_CLOCK_2026_11_10.py` |  | 39.97s | 2026-11-14T08:18:33Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_CANONICAL_HAAR_GREEN_KUBO_2026_11_10.py` |  | 0.54s | 2026-11-14T08:18:34Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_A5_TENSOR_MATTER_BRIDGE_2026_11_10.py` |  | 6.54s | 2026-11-14T08:20:05Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_DELAYED_RESPONSE_2026_11_10.py` |  | 0.25s | 2026-11-14T08:20:05Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_FULL_RESPONSE_2026_11_10.py` |  | 1.28s | 2026-11-14T08:20:06Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_LOCAL_VERTEX_NO_GO_2026_11_10.py` |  | 2.57s | 2026-11-14T08:20:09Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_PARITY_COMPOSITE_SCHUR_2026_11_10.py` |  | 2.93s | 2026-11-14T08:20:12Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_THREE_CHANNEL_CUBIC_TENSOR_2026_11_10.py` |  | 6.32s | 2026-11-14T08:20:18Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DUAL_PAIR_QUARTET_2026_11_10.py` |  | 33.07s | 2026-11-14T08:21:53Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_A5_FRAME_SENSITIVITY_2026_11_10.py` |  | 9.55s | 2026-11-14T08:35:49Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_GOLDEN_BASEPOINT_CONJUGACY_2026_11_10.py` |  | 9.73s | 2026-11-14T08:35:58Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_KMS_ENTROPIC_STIFFNESS_2026_11_10.py` |  | 8.04s | 2026-11-14T08:44:59Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_C3_SCHUR_DRESSED_CLOCK_2026_11_10.py` |  | 84.72s | 2026-11-14T08:46:23Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_CANONICAL_HAAR_GREEN_KUBO_2026_11_10.py` |  | 0.95s | 2026-11-14T08:46:24Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_A5_TENSOR_MATTER_BRIDGE_2026_11_10.py` |  | 12.44s | 2026-11-14T08:49:19Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_DELAYED_RESPONSE_2026_11_10.py` |  | 0.44s | 2026-11-14T08:49:19Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_FULL_RESPONSE_2026_11_10.py` |  | 2.5s | 2026-11-14T08:49:22Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_LOCAL_VERTEX_NO_GO_2026_11_10.py` |  | 4.82s | 2026-11-14T08:49:27Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_PARITY_COMPOSITE_SCHUR_2026_11_10.py` |  | 5.56s | 2026-11-14T08:49:32Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_THREE_CHANNEL_CUBIC_TENSOR_2026_11_10.py` |  | 12.18s | 2026-11-14T08:49:44Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DUAL_PAIR_QUARTET_2026_11_10.py` |  | 70.8s | 2026-11-14T08:52:53Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_EXACT_A4_THIRD_CUMULANT_RATE_2026_11_10.py` |  | 3.22s | 2026-11-14T08:22:17Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_EXACT_NEUTRAL_FOURTH_CUMULANT_2026_11_10.py` |  | 5.93s | 2026-11-14T08:22:22Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_FACE_EDGE_QUARTET_PAIRING_2026_11_10.py` |  | 1.51s | 2026-11-14T08:22:26Z |
@@ -257,8 +257,8 @@
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_UNIQUE_MINIMAL_PAIR_COUPLING_2026_11_10.py` |  | 0.54s | 2026-11-14T08:23:22Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_WINDING_WARD_CLOCK_2026_11_10.py` |  | 0.91s | 2026-11-14T08:23:23Z |
 | pass | `research_archive/2026-11-11_arf_origin/CHAOS_INVARIANT_REFINEMENT_AUDIT_2026_11_11.py` |  | 2.21s | 2026-11-14T08:24:53Z |
-| pass | `research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_4D_HOLONOMY_INSTABILITY_2026_11_11.py` |  | 0.06s | 2026-11-14T08:20:18Z |
-| pass | `research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_INDUCED_EM_ICOSAHEDRON_2026_11_11.py` |  | 0.11s | 2026-11-14T08:20:18Z |
+| pass | `research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_4D_HOLONOMY_INSTABILITY_2026_11_11.py` |  | 0.1s | 2026-11-14T08:49:44Z |
+| pass | `research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_INDUCED_EM_ICOSAHEDRON_2026_11_11.py` |  | 0.21s | 2026-11-14T08:49:45Z |
 | pass | `research_archive/2026-11-11_hidden_parity/HIDDEN_PARITY_DELTA_SELECTION_2026_11_11.py` |  | 0.39s | 2026-11-14T08:23:24Z |
 | pass | `research_archive/2026-11-11_hidden_sector_link/HIDDEN_SECTOR_LINK_2026_11_11.py` |  | 0.11s | 2026-11-14T08:24:53Z |
 | pass | `research_archive/2026-11-11_hidden_sector_link/LINKED_COMPOUND_FLUX_VACUUM_2026_11_11.py` |  | 7.09s | 2026-11-14T08:25:20Z |
@@ -272,23 +272,23 @@
 | pass | `research_archive/2026-11-11_icosahedral_induced_photon/cell13_lib.py` |  | 0.05s | 2026-11-14T08:25:25Z |
 | pass | `research_archive/2026-11-11_native_k4_collision/native_k4_collision.py` |  | 12.14s | 2026-11-14T08:25:37Z |
 | pass | `research_archive/2026-11-11_q15_ci_repair/q15_ci_repair_certificate.py` |  | 19.71s | 2026-11-14T08:25:13Z |
-| pass | `research_archive/2026-11-11_q22_tetrahedron_exact/q22_exact_tetrahedron_kernel.py` |  | 0.02s | 2026-11-14T08:20:18Z |
+| pass | `research_archive/2026-11-11_q22_tetrahedron_exact/q22_exact_tetrahedron_kernel.py` |  | 0.03s | 2026-11-14T08:49:45Z |
 | pass | `research_archive/2026-11-11_q23_photon_gauge_typing/Q23_PHOTON_GAUGE_TYPING_2026_11_11.py` |  | 0.38s | 2026-11-14T08:23:26Z |
-| pass | `research_archive/2026-11-11_q24_history_symmetries/native_source_nosympy.py` |  | 0.5s | 2026-11-14T08:20:19Z |
-| pass | `research_archive/2026-11-11_q24_history_symmetries/q24_k5_and_history_symmetries.py` |  | 46.34s | 2026-11-14T08:21:16Z |
-| pass | `research_archive/2026-11-11_q25_4d_a5_photon/Q25_4D_A5_PHOTON_2026_11_11.py` |  | 0.33s | 2026-11-14T08:21:17Z |
-| pass | `research_archive/2026-11-11_q27_twirled_orientation/q27_twirled_orientation.py` |  | 1.05s | 2026-11-14T08:19:58Z |
-| pass | `research_archive/2026-11-11_q28_twirled_third_trace/q28_twirled_third_trace.py` |  | 1.16s | 2026-11-14T08:19:57Z |
-| pass | `research_archive/2026-11-11_q29_twirled_fourth_trace/q29_twirled_fourth_trace.py` |  | 2.3s | 2026-11-14T08:19:56Z |
-| pass | `research_archive/2026-11-11_q30_twirled_all_order_spectrum/q30_twirled_all_order_spectrum.py` |  | 65.62s | 2026-11-14T08:14:48Z |
+| pass | `research_archive/2026-11-11_q24_history_symmetries/native_source_nosympy.py` |  | 0.96s | 2026-11-14T08:49:46Z |
+| pass | `research_archive/2026-11-11_q24_history_symmetries/q24_k5_and_history_symmetries.py` |  | 89.28s | 2026-11-14T08:51:36Z |
+| pass | `research_archive/2026-11-11_q25_4d_a5_photon/Q25_4D_A5_PHOTON_2026_11_11.py` |  | 0.61s | 2026-11-14T08:51:37Z |
+| pass | `research_archive/2026-11-11_q27_twirled_orientation/q27_twirled_orientation.py` |  | 1.81s | 2026-11-14T08:49:06Z |
+| pass | `research_archive/2026-11-11_q28_twirled_third_trace/q28_twirled_third_trace.py` |  | 2.02s | 2026-11-14T08:49:05Z |
+| pass | `research_archive/2026-11-11_q29_twirled_fourth_trace/q29_twirled_fourth_trace.py` |  | 4.04s | 2026-11-14T08:49:02Z |
+| pass | `research_archive/2026-11-11_q30_twirled_all_order_spectrum/q30_twirled_all_order_spectrum.py` |  | 95.61s | 2026-11-14T08:40:47Z |
 | pass | `research_archive/2026-11-11_q32_mixed_trace_meaning/q32_mixed_trace_meaning.py` |  | 29.21s | 2026-11-14T08:24:44Z |
-| pass | `research_archive/2026-11-11_q33_singular_spectrum/q33_singular_spectrum.py` |  | 34.6s | 2026-11-14T08:11:16Z |
+| pass | `research_archive/2026-11-11_q33_singular_spectrum/q33_singular_spectrum.py` |  | 38.46s | 2026-11-14T08:36:40Z |
 | pass | `research_archive/2026-11-11_q34_seventh_mixed_words/q34_seventh_mixed_words.py` |  | 4.45s | 2026-11-14T08:31:10Z |
 | pass | `research_archive/2026-11-11_q35_eighth_mixed_words/q35_eighth_mixed_words.py` |  | 9.09s | 2026-11-14T08:30:40Z |
-| pass | `research_archive/2026-11-11_q36_star_intertwiner/q36_exact_star_intertwiners.py` |  | 58.82s | 2026-11-14T08:19:33Z |
+| pass | `research_archive/2026-11-11_q36_star_intertwiner/q36_exact_star_intertwiners.py` |  | 115.55s | 2026-11-14T08:48:20Z |
 | pass | `research_archive/2026-11-11_q37_primitive_chronology/q37_primitive_q2_trace.py` |  | 0.19s | 2026-11-14T08:33:14Z |
 | pass | `research_archive/2026-11-11_q38_primitive_q2_allpairs/q38_primitive_q2_allpairs.py` |  | 1.95s | 2026-11-14T08:27:39Z |
-| pass | `research_archive/2026-11-11_q39_eight_image_q2/q39_eight_image_q2.py` |  | 2.91s | 2026-11-14T08:21:20Z |
+| pass | `research_archive/2026-11-11_q39_eight_image_q2/q39_eight_image_q2.py` |  | 4.99s | 2026-11-14T08:51:42Z |
 | pass | `research_archive/2026-11-11_q3_twirled_chronology_classes/Q3_TWIRLED_CHRONOLOGY_CLASSES_2026_11_11.py` |  | 36.55s | 2026-11-14T08:24:05Z |
 | pass | `research_archive/2026-11-11_q40_cross_orbit_q2/q40_cross_orbit_q2.py` |  | 0.87s | 2026-11-14T08:34:17Z |
 | pass | `research_archive/2026-11-11_q40_review_operator_equality/q40_review_operator_equality.py` |  | 1.79s | 2026-11-14T08:27:36Z |
@@ -296,7 +296,7 @@
 | pass | `research_archive/2026-11-11_q43_character_criterion/q43_character_certificate.py` |  | 1.29s | 2026-11-14T08:24:46Z |
 | pass | `research_archive/2026-11-11_q44_middle_flip_symmetry/q44_middle_flip_symmetry.py` |  | 1.18s | 2026-11-14T08:22:24Z |
 | pass | `research_archive/2026-11-11_q4_native_matter_map/Q4_NATIVE_MATTER_MAP_2026_11_11.py` |  | 0.89s | 2026-11-14T08:24:47Z |
-| pass | `research_archive/2026-11-11_q6_repair/q6_recovery_selftest.py` |  | 0.02s | 2026-11-14T08:21:20Z |
+| pass | `research_archive/2026-11-11_q6_repair/q6_recovery_selftest.py` |  | 0.03s | 2026-11-14T08:51:43Z |
 | pass | `research_archive/2026-11-11_q7_review/Q7_REVIEW_Q6_CUMULANTS_A5_MIXING_2026_11_11.py` |  | 1.54s | 2026-11-14T08:24:48Z |
 | pass | `research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_MAXWELL_TEST_2026_11_11.py` |  | 2.89s | 2026-11-14T08:24:51Z |
 | pass | `research_archive/2026-11-11_signed_dictionary_k23/native_joint_k23.py` |  | 19.51s | 2026-11-14T08:25:59Z |
@@ -307,12 +307,12 @@
 | pass | `research_archive/2026-11-12_q45_zero_coset_orders/q45_zero_coset_orders.py` |  | 4.65s | 2026-11-14T08:32:16Z |
 | pass | `research_archive/2026-11-12_q46_rotation_mechanism/q46_rotation_mechanism.py` |  | 1.7s | 2026-11-14T08:22:13Z |
 | pass | `research_archive/2026-11-12_q49_fixed_source_gauge/q49_fixed_source_gauge_obstruction.py` |  | 1.44s | 2026-11-14T08:28:54Z |
-| pass | `research_archive/2026-11-12_q49_haar_diagonal_transport/q49_haar_diagonal_transport.py` |  | 0.61s | 2026-11-14T08:21:54Z |
-| pass | `research_archive/2026-11-12_q49_native_ward_history_map/q49_native_ward_history_map.py` |  | 2.65s | 2026-11-14T08:10:41Z |
+| pass | `research_archive/2026-11-12_q49_haar_diagonal_transport/q49_haar_diagonal_transport.py` |  | 1.16s | 2026-11-14T08:52:54Z |
+| pass | `research_archive/2026-11-12_q49_native_ward_history_map/q49_native_ward_history_map.py` |  | 3.17s | 2026-11-14T08:36:01Z |
 | pass | `research_archive/2026-11-12_q50_history_gauge/q50_uniform_history_obstruction.py` |  | 0.49s | 2026-11-14T08:29:50Z |
 | pass | `research_archive/2026-11-12_q52_source_unitary/Q52_NATIVE_SOURCE_UNITARY_CLOCK.py` |  | 0.33s | 2026-11-14T08:29:46Z |
 | pass | `research_archive/2026-11-12_q53_native_ward_current/Q53_NATIVE_ONSHELL_WARD_CLOCK.py` |  | 0.37s | 2026-11-14T08:25:59Z |
-| pass | `research_archive/2026-11-12_q55_hopf_wilson/Q55_HOPF_WILSON_CHARGED_OPERATOR_VERIFY.py` |  | 0.71s | 2026-11-14T08:14:49Z |
+| pass | `research_archive/2026-11-12_q55_hopf_wilson/Q55_HOPF_WILSON_CHARGED_OPERATOR_VERIFY.py` |  | 0.98s | 2026-11-14T08:40:48Z |
 | pass | `research_archive/2026-11-12_q56_nonlinear_stationary/Q56_FULL_STATIONARY_CURRENT_VERIFY.py` |  | 0.37s | 2026-11-14T08:26:19Z |
 | pass | `research_archive/2026-11-12_q57_geometric_clock/Q57_NATIVE_CLOCK_GEOMETRY_VERIFY.py` |  | 0.34s | 2026-11-14T08:22:23Z |
 | pass | `research_archive/2026-11-12_q58_native_geometric_coupling/Q58_NATIVE_COUPLING_CURVATURE_VERIFY.py` |  | 0.33s | 2026-11-14T08:22:23Z |
@@ -320,7 +320,7 @@
 | pass | `research_archive/2026-11-12_q60_coordinate_selection/Q60_NATIVE_COORDINATE_SELECTION.py` |  | 14.11s | 2026-11-14T08:34:12Z |
 | pass | `research_archive/2026-11-12_q60_hopf_h64_frame/Q60_HOPF_H64_ALL_FIVE_FRAME_INTERFACE_VERIFY.py` |  | 0.68s | 2026-11-14T08:31:28Z |
 | pass | `research_archive/2026-11-12_q61_inverse_limit_lifts/Q61_INVERSE_LIMIT_LIFTS_CERTIFICATE.py` |  | 9.58s | 2026-11-14T08:22:49Z |
-| pass | `research_archive/2026-11-12_q62_lift_carrier/Q62_LIFT_CARRIER_CERTIFICATE.py` |  | 54.02s | 2026-11-14T08:15:43Z |
+| pass | `research_archive/2026-11-12_q62_lift_carrier/Q62_LIFT_CARRIER_CERTIFICATE.py` |  | 68.57s | 2026-11-14T08:41:57Z |
 | pass | `research_archive/2026-11-12_q64_a2_native_conditioning/Q64_A2_NATIVE_CONDITIONING.py` |  | 0.01s | 2026-11-14T08:34:12Z |
 | pass | `research_archive/2026-11-12_q64_a2b_native_path/Q64_A2B_NATIVE_PATH_LIKELIHOOD.py` |  | 0.01s | 2026-11-14T08:34:12Z |
 | pass | `research_archive/2026-11-12_q64_a2c_native_lift_partition/Q64_A2C_NATIVE_LIFT_PARTITION.py` |  | 0.18s | 2026-11-14T08:27:49Z |
@@ -328,49 +328,50 @@
 | pass | `research_archive/2026-11-13_cross_archive_photon_join/CROSS_ARCHIVE_PHOTON_JOIN_AUDIT.py` |  | 0.25s | 2026-11-14T08:34:12Z |
 | pass | `research_archive/2026-11-13_q60_charge_tensor_ward/Q60_CHARGE_TENSOR_WARD.py` |  | 0.2s | 2026-11-14T08:34:12Z |
 | pass | `research_archive/2026-11-13_q64_a2d/Q64_A2D_REVERSIBLE_NORMALIZER.py` |  | 0.19s | 2026-11-14T08:27:50Z |
-| pass | `research_archive/2026-11-13_q65_horizon_conditioned_selection/Q65_HORIZON_SELECTION_CERTIFICATE.py` |  | 20.54s | 2026-11-14T08:13:43Z |
+| pass | `research_archive/2026-11-13_q65_horizon_conditioned_selection/Q65_HORIZON_SELECTION_CERTIFICATE.py` |  | 24.09s | 2026-11-14T08:39:12Z |
 | pass | `research_archive/2026-11-13_q68_native_bridge/Q68_NATIVE_BRIDGE_POLYTOPE.py` |  | 0.25s | 2026-11-14T08:27:50Z |
-| pass | `research_archive/2026-11-13_q69_native_lift_clock_spectrum/Q69_NATIVE_LIFT_CLOCK_SPECTRUM.py` |  | 0.01s | 2026-11-14T08:21:54Z |
-| pass | `research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py` |  | 0.51s | 2026-11-14T08:14:49Z |
-| pass | `research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py` |  | 0.53s | 2026-11-14T08:19:33Z |
-| pass | `research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py` |  | 1.05s | 2026-11-14T08:21:55Z |
-| pass | `research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py` |  | 16.72s | 2026-11-14T08:22:12Z |
-| pass | `research_archive/2026-11-13_q73_joint_clock_bridge/Q73_JOINT_CLOCK_BRIDGE_CERTIFICATE.py` |  | 10.79s | 2026-11-14T08:20:30Z |
+| pass | `research_archive/2026-11-13_q69_native_lift_clock_spectrum/Q69_NATIVE_LIFT_CLOCK_SPECTRUM.py` |  | 0.01s | 2026-11-14T08:52:54Z |
+| pass | `research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py` |  | 0.67s | 2026-11-14T08:40:49Z |
+| pass | `research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py` |  | 0.99s | 2026-11-14T08:48:21Z |
+| pass | `research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py` |  | 2.03s | 2026-11-14T08:52:57Z |
+| pass | `research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py` |  | 31.22s | 2026-11-14T08:53:28Z |
+| pass | `research_archive/2026-11-13_q73_joint_clock_bridge/Q73_JOINT_CLOCK_BRIDGE_CERTIFICATE.py` |  | 20.54s | 2026-11-14T08:50:06Z |
 | pass | `research_archive/2026-11-13_q75_native_q3_sigma/Q75_NATIVE_Q3_SIGMA.py` |  | 0.42s | 2026-11-14T08:31:05Z |
 | pass | `research_archive/2026-11-13_q76_hidden_commutator/Q76_NATIVE_HIDDEN_COMMUTATOR.py` |  | 0.71s | 2026-11-14T08:29:11Z |
-| pass | `research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py` |  | 36.3s | 2026-11-14T08:17:33Z |
-| pass | `research_archive/2026-11-13_q78_eight_dictionary_hidden/Q78_EIGHT_DICTIONARY_HIDDEN.py` |  | 2.94s | 2026-11-14T08:13:21Z |
-| pass | `research_archive/2026-11-13_q79_native_pair_source/Q79_NATIVE_PAIR_SOURCE.py` |  | 0.51s | 2026-11-14T08:21:17Z |
+| pass | `research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py` |  | 69.81s | 2026-11-14T08:44:19Z |
+| pass | `research_archive/2026-11-13_q78_eight_dictionary_hidden/Q78_EIGHT_DICTIONARY_HIDDEN.py` |  | 3.5s | 2026-11-14T08:38:46Z |
+| pass | `research_archive/2026-11-13_q79_native_pair_source/Q79_NATIVE_PAIR_SOURCE.py` |  | 0.97s | 2026-11-14T08:51:37Z |
 | pass | `research_archive/2026-11-13_q80_native_hidden_source/Q80_NATIVE_HIDDEN_SOURCE.py` |  | 2.2s | 2026-11-14T08:25:39Z |
 | pass | `research_archive/2026-11-13_q81_native_source/Q81_NATIVE_SOURCE.py` |  | 7.0s | 2026-11-14T08:28:35Z |
 | pass | `research_archive/2026-11-13_q82_oriented_source_weights/Q82_ORIENTED_SOURCE_WEIGHTS_CERTIFICATE.py` |  | 16.76s | 2026-11-14T08:28:52Z |
-| pass | `research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py` |  | 0.93s | 2026-11-14T08:13:22Z |
-| pass | `research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py` |  | 17.24s | 2026-11-14T08:16:57Z |
-| pass | `research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py` |  | 0.22s | 2026-11-14T08:16:40Z |
+| pass | `research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py` |  | 1.11s | 2026-11-14T08:38:47Z |
+| pass | `research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py` |  | 32.46s | 2026-11-14T08:43:09Z |
+| pass | `research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py` |  | 0.4s | 2026-11-14T08:42:37Z |
 | pass | `research_archive/2026-11-13_q88_q89_engine_recovery/Q88_Q89_ENGINE_RECOVERY.py` |  | 2.22s | 2026-11-14T08:31:02Z |
 | pass | `research_archive/2026-11-13_q89_exact_source/Q89_EXACT_SOURCE.py` |  | 9.49s | 2026-11-14T08:27:33Z |
-| pass | `research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py` |  | 15.94s | 2026-11-14T08:17:49Z |
+| pass | `research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py` |  | 31.69s | 2026-11-14T08:44:51Z |
 | pass | `research_archive/2026-11-13_q90_source_clock_energies/Q90_SOURCE_CLOCK_ENERGIES.py` |  | 1.86s | 2026-11-14T08:31:04Z |
 | pass | `research_archive/2026-11-14_q101_moving_arf/MAGNETIC_ARF_FACTOR_CERTIFICATE.py` |  | 19.38s | 2026-11-14T08:33:39Z |
 | pass | `research_archive/2026-11-14_q101_moving_arf/MOVING_ARF_DERIVATION.py` |  | 18.88s | 2026-11-14T08:33:58Z |
 | pass | `research_archive/2026-11-14_q102_born_chiral_arf/Q102_BORN_CHIRAL_ARF.py` |  | 19.17s | 2026-11-14T08:26:18Z |
-| pass | `research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py` |  | 19.02s | 2026-11-14T08:16:39Z |
+| pass | `research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py` |  | 38.82s | 2026-11-14T08:42:36Z |
 | pass | `research_archive/2026-11-14_q86_parity_history_energy/Q86_PARITY_HISTORY_ENERGY.py` |  | 19.72s | 2026-11-14T08:31:00Z |
-| pass | `research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py` |  | 0.29s | 2026-11-14T08:19:56Z |
+| pass | `research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py` |  | 0.53s | 2026-11-14T08:49:03Z |
 | pass | `research_archive/2026-11-14_q87c_bridge_singular/Q87C_BRIDGE_SINGULAR.py` |  | 0.82s | 2026-11-14T08:23:05Z |
-| pass | `research_archive/2026-11-14_q87d_native_parity_commutator/Q87D_NATIVE_PARITY_COMMUTATOR.py` |  | 0.27s | 2026-11-14T08:20:30Z |
-| pass | `research_archive/2026-11-14_q87e_parity_energy/Q87E_PARITY_ENERGY.py` |  | 1.27s | 2026-11-14T08:13:18Z |
+| pass | `research_archive/2026-11-14_q87d_native_parity_commutator/Q87D_NATIVE_PARITY_COMMUTATOR.py` |  | 0.49s | 2026-11-14T08:50:07Z |
+| pass | `research_archive/2026-11-14_q87e_parity_energy/Q87E_PARITY_ENERGY.py` |  | 1.47s | 2026-11-14T08:38:43Z |
 | pass | `research_archive/2026-11-14_q87f_native_trace/Q87F_NATIVE_DIRICHLET_TRACE.py` |  | 0.28s | 2026-11-14T08:28:27Z |
 | pass | `research_archive/2026-11-14_q87g_second_moment/Q87G_NATIVE_SECOND_MOMENT.py` |  | 0.49s | 2026-11-14T08:32:16Z |
-| pass | `research_archive/2026-11-14_q91_bridge_loss_sequence/Q91_BRIDGE_LOSS_SEQUENCE.py` |  | 20.48s | 2026-11-14T08:19:54Z |
+| pass | `research_archive/2026-11-14_q91_bridge_loss_sequence/Q91_BRIDGE_LOSS_SEQUENCE.py` |  | 37.1s | 2026-11-14T08:48:58Z |
+| pass | `research_archive/2026-11-14_q92_clock_overlap_reading/Q92_CLOCK_OVERLAP_READING.py` |  | 35.1s | 2026-11-14T08:35:39Z |
 | pass | `research_archive/2026-11-14_q93_primitive_clock_response/Q93_NATIVE_MARKOV_CLOCK_TRACE.py` |  | 0.02s | 2026-11-14T08:33:12Z |
 | pass | `research_archive/2026-11-14_q94_hidden_clock/Q94_NATIVE_HIDDEN_PROJECTED_CLOCK.py` |  | 1.42s | 2026-11-14T08:33:13Z |
 | pass | `research_archive/2026-11-14_q95_full_five_source/Q95_ALL_FIVE_NUMERICAL_CHECK.py` |  | 0.06s | 2026-11-14T08:33:14Z |
 | pass | `research_archive/2026-11-14_q95_full_five_source/Q95_SOURCE_CARRIER_EXACT.py` |  | 5.76s | 2026-11-14T08:33:19Z |
 | pass | `research_archive/2026-11-14_q96_original_arf_action/Q96_ORIGINAL_ACTION_REPLACEMENT_AUDIT.py` |  | 0.05s | 2026-11-14T08:22:12Z |
 | pass | `research_archive/2026-11-14_q96_original_arf_action/Q96_ORIGINAL_SOURCE_CHEBYSHEV.py` |  | 0.03s | 2026-11-14T08:22:12Z |
-| pass | `research_archive/2026-11-14_q97_source_locality/Q97_ALL_FIVE_LOCALITY_RANK.py` |  | 0.26s | 2026-11-14T08:13:16Z |
-| pass | `research_archive/2026-11-14_q97_source_locality/Q97_LOCAL_SOURCE_UNIQUENESS.py` |  | 0.92s | 2026-11-14T08:13:17Z |
+| pass | `research_archive/2026-11-14_q97_source_locality/Q97_ALL_FIVE_LOCALITY_RANK.py` |  | 0.29s | 2026-11-14T08:38:40Z |
+| pass | `research_archive/2026-11-14_q97_source_locality/Q97_LOCAL_SOURCE_UNIQUENESS.py` |  | 1.04s | 2026-11-14T08:38:41Z |
 | pass | `research_archive/2026-11-14_q99_parity_rigidity/Q99_PARITY_RIGIDITY.py` |  | 1.22s | 2026-11-14T08:23:25Z |
 | pass | `research_archive/2026-11-14_symmetry_breaking_recovery/ASYMMETRY_NATIVE_CERTIFICATE.py` |  | 4.86s | 2026-11-14T08:32:24Z |
 | pass | `research_archive/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/cathedral_v116_hodge_polarization_verify.py` |  | 0.16s | 2026-11-14T08:23:27Z |
