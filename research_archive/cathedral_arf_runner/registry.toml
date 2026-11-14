@@ -1284,3 +1284,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q97_source_locality/Q97_ALL_FIVE_LOCALITY_RANK.py"
 timeout = 90
+
+[[check]]
+id = "research.q98_recovered_asymmetry"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_symmetry_breaking_recovery/ASYMMETRY_NATIVE_CERTIFICATE.py"
+timeout = 120

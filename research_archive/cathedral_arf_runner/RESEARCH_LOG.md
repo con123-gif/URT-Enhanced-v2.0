@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q98 [compute] (A/F) Recover missing Nov 11 symmetry-breaking/frustration and hidden quasicrystal bridge from earlier conversations and Library; verify actual icosahedral W, φ-weighted kissing centre and winding ε, build explicit revisable chiral candidate without fitting — GPT 2026-11-14: exact + conditional, local certificate PASS, CI pending; physical ARFs not derived. `research_archive/2026-11-14_symmetry_breaking_recovery/`.
+
 - [x] Q97 [compute] (A/B) Classify all A5-equivariant quadratic maps from vertices that are local to original icosahedral face; project into hidden 4+4 and verify actual full-five 50-vertex portal — GPT 2026-11-14: exact theorem and independent 50-vertex numeric PASS locally; physical ARFs remain open; CI pending. `research_archive/2026-11-14_q97_source_locality/`.
 
 - [x] Q96 [compute] (A/F) Resolve model mismatch between Q93–Q95 Gaussian history residual and actual original Hbits+r²L24; derive closed Chebyshev original all-five source trace — GPT 2026-11-14: exact parity-nullity witness and five spectral sample checks, local PASS; CI pending; physical ARFs OPEN. `research_archive/2026-11-14_q96_original_arf_action/`.
@@ -1221,3 +1223,10 @@ commit as your result.
 - Evidence: local exact SymPy Q97 source classifier and independent actual-50-vertex NumPy checker exited 0. Registered research.q97_face_locality_exact and research.q97_five_solid_locality; CI pending.
 - Scope: conditional on face locality, leaves source amplitude and unique charged Wilson spatial current normalisation open; no physical ARF solved; prior unital face multiplication and semigroup second-response results credited.
 - Next question: can a native charged spatial current map between v61 Wilson and H64 be derived without choosing a new source amplitude? Any answer must preserve first/second Ward contact and full 190+64+24 action.
+
+### 2026-11-14 — GPT — Gate A/F — Q98 recovery of forgotten Nov 11 symmetry-breaking work
+- Task: User reports symmetry-breaking and dynamic URT revision was lost between conversations and GitHub, preceding the invalid frozen-original approach in Q93–Q97.
+- Result: VERIFIED RECOVERY + EXACT THEOREM + CONDITIONAL NEW DYNAMICS; physical ARFs OPEN. Original November 11 Library coupling-selector and emergent-time reports were explicitly marked NOT on GitHub and are now copied verbatim into the research archive. Later Nov 11 user correction says mismatch/asymmetry, not selecting histories or couplings. Exact icosahedral AFM 72 ground states; 13th φ centre 60. Exact epsilon=π/(3φ^12)=24*(2π/φ²)-(18π+π/3). Signed hidden W²=-15Ph, parity odd. Conditional Hε=4Ph+P5-P3+ε iW/√15 generates odd expectation -0.003252140177... while ±ε isospectral. This is NOT a physical matter-antimatter asymmetry or solved ARF.
+- Evidence: local 4096-state enumeration, exact SymPy W/projector/parity identities and numerical Gibbs eigenproblem PASS; GitHub check research.q98_recovered_asymmetry registered, CI pending. Work was missing from repository search for the Nov 11 mismatch phrase and recovered from personal conversation and Library.
+- Continuity: Do not start new derivation by assuming old URT Hbits/action is fundamental. Source originals remain historically valid scoped models, now revisable. The later user correction supersedes the earlier coupling-selector interpretation. Missing former file names CATHEDRAL_HIDDEN_QUASICRYSTAL_BRIDGE_2026-11-11.md/python not found as original, bridge formula contained in recovered Library document.
+- Next step: derive the cross-quartet parity-odd generator and orientation selection from the entire moving 190+64+24 D6/H3 charged dynamics rather than adding epsilon chi by postulate. No fitted values; no old ARF target equations.
