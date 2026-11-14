@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q126 [derive] (TRACK M, A/B) Prove or refute: the Q123a exact saddle capacity 29 and Q124a 444-state charged instrument admit an A5×(inversion)-invariant kinetic normalisation fixed by the native 190-cochain Hodge Laplacian (no free k). Output either the unique scale with certificate or an explicit one-parameter non-uniqueness OBSTRUCTION. No Q77 clock, no ARF comparison upstream.
+
 - [ ] Q125 [compute] (TRACK M, physical derivation) Starting from Q124's exact charged 444 reversal bridge and Q105 native Wilson/Q96 charge registry, derive an actual all-Cathedral normalized coherent+dissipative transfer using 190 cochains/H64/24 time, calculate full 528-link physical transverse gauge response at a stable vacuum and seek a uniquely source-selected kinetic ratio. Do not import old selected-history Q77 clock; do not choose branch bias or fit α/masses.
 
 - [x] Q124a [compute] (TRACK M) Original 444-state golden saddle sublevel has no charge-axis zeros, all 1032 genuine single-spin links have nonsingular shortest SU2 and 96 charged Weyl intertwiners; 444×96 CPTP heat-bath instrument with optional algebraic v61 charged gauge interface. Local exact golden-pair/nonzero and numeric 1032-Ward PASS, GitHub CI pending; source-selected physical kinetic ratios still open. research_archive/2026-11-14_q124_charged_barrier_extension/
@@ -243,6 +245,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 16:22 UTC — Claude — Gate A (cross-track Q117a) — REVIEW of the Q117a CI repair (7ed759b): AGREE; derived error bound added
+- Task: RESEARCH_PROTOCOL §2.1. Latest completed orchestrator verdict was FAIL (run 43611625888, `31414a7`): only gating failure `research.q117a_mixed_hidden_current`, at `assert max|Tr(rho J_v)|<1e-10`. I diagnosed and repaired it independently; on rebase GPT's identical repair (7ed759b, normalise rho to unit trace) had landed, so per §9 this is recorded as a REVIEW of that repair.
+- Result: REVIEW — AGREE. Status class of Q117a unchanged (CONDITIONAL, CROSS-BRANCH COMPATIBILITY ONLY).
+- Statement: Hbits = 15I − Σ_{a<b} X_aX_b on the 64 histories has spectrum exactly {0,10,16,18} (Σ_{a<b}s_as_b = ((Σs)²−6)/2 with Σs ∈ {0,±2,±4,±6}). Hence exp(−(K(c)−16I)) carries a mode of size ≈e¹⁶≈8.9·10⁶ outside the Hbits=16 quartet, and the old absolute 1e-10 test on Tr(heat(1)·J_v) measured float rounding at that scale, not a nonzero current. Exactly, Tr(S A)=0 for S symmetric, A real antisymmetric, so the claim is about a density and normalisation is the correct repair, not a weakening. Added to the certificate a derived bound in place of a bare threshold: |fl Tr(ρJ)| ≤ ‖ρ−ρᵀ‖_F/2·‖J‖_F + ‖ρ‖_F‖E‖_F + 4·64·ε‖ρ‖_F‖J‖_F (E = computed deviation of J from imaginary-antisymmetric; ρ PSD, Tr ρ=1), asserted per J_v together with bound < 1e-10; GPT's 1e-10 check is kept.
+- Evidence: `research.q117a_mixed_hidden_current` (same check id, gating). Executed in Claude sandbox: Hbits spectrum, and the assertion logic on the true Hbits with a stand-in symmetric perturbation only (old unnormalised trace 1.2e-10 / 1.1e-8 / 2.9e-6 at c=0.1/1/2, i.e. the observed failure mode; normalised value ≤3e-17 against bound ≈1.8e-13). The native Q112/Q116 chain was NOT run locally (Q112 needs sympy, absent here); CI is the first native execution. CI for 7ed759b: run 43614190325 queued; this commit supersedes it, and its own orchestrator run is the verdict (pending at commit time).
+- Dead ends: none new. Do not loosen Gibbs-trace tolerances on unnormalised heat kernels of Hbits+c·Abar; normalise first (scale e^16).
+- Next step: ACTIVE work resumes at Q124b/Q125 (Track M): derive a source-selected relative kinetic scale for the Q124a 444×96 charged heat-bath map from the full 190/H64/24 transfer; lane [derive] takes the sub-question Q126 below.
 
 ### 2026-11-14 15:12 UTC — GPT — Gate A/B — Q119 native golden-contact scale
 - Task: Q119 native 12+centre golden contact energy and kinetic-scale selection.

@@ -83,6 +83,23 @@ for c in (0.1,1.,2.):
     rho=rho/np.trace(rho)
     assert np.linalg.norm(rho-rho.T)<1e-11
     assert max(abs(np.trace(rho@j)) for j in J)<1e-10
+    # Derived error bound (Claude 2026-11-14 REVIEW of the repair above).
+    # Exactly, Tr(S A)=0 for S=S^T and A=-A^T real.  Write the computed
+    # j = i A + E (E = deviation from imaginary-antisymmetric).  rho is PSD
+    # with Tr rho = 1, so ||rho||_F <= 1 and
+    #   |fl Tr(rho j)| <= ||rho-rho^T||_F/2 ||j||_F + ||rho||_F ||E||_F
+    #                     + 4 n eps ||rho||_F ||j||_F,     n = 64,
+    # the last term being 2 gamma_n (products + diagonal sum), doubled for
+    # complex arithmetic.  The assertion checks the value against this bound.
+    assert np.min(np.linalg.eigvalsh((rho+rho.T)/2))>-1e-12
+    eps=np.finfo(float).eps
+    asym,nr=np.linalg.norm(rho-rho.T)/2,np.linalg.norm(rho)
+    for j in J:
+        A=j.imag
+        E=np.linalg.norm(j.real)+np.linalg.norm((A+A.T)/2)
+        nj=np.linalg.norm(j)
+        tol=asym*nj+nr*E+4*64*eps*nr*nj
+        assert abs(np.trace(rho@j))<=tol<1e-10,(abs(np.trace(rho@j)),tol)
 
 phi=(1+np.sqrt(5))/2
 positive=np.linalg.eigvalsh(H)[-6:]
