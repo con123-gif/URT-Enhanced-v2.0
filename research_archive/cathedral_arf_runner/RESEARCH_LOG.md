@@ -6,10 +6,11 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q116 [compute] (B/F) Derive a new exact intra-4_5 locally oriented antisymmetric five-face vertex-star current and 3+3prime bridge from original P5; exact singular ratio phi, distinct from Oct16 interquartet phi³ — GPT 2026-11-14 local exact +120 symmetry PASS, GitHub CI pending; physical ARFs OPEN. research_archive/2026-11-14_q116_local_hidden_golden_bridge/.
+- [ ] Q118 [derive] (A) The Q115 four-isotypic block (rank 16) lies on the two Z3-orbits of 20 histories, each carrying 2·4. In an exact basis adapted to these two orbits and the complement involution h↦63−h, compute the 4×4 multiplicity matrices of Hbits and the selected Q77 Abar. Decide whether the observed residue concentration (≈0.99993 on one pole at c=0.1, 1, 2) is forced by an exact symmetry or Schur relation, or is a numerical accident of the clock. Original operators only.
 - [ ] Q117 [compute] (B/C) Carry Q116 current through the actual full-five 50->8->12 hidden portal, Q115 four-pole 24-clock source, and Q106 charged native Wilson, derive the physical current coupling rather than add coefficient.
 
 - [x] Q114 [compute] (A) Exact native icosahedral hidden P5 dual-distance kernel — GPT 2026-11-14: THEOREM, local SymPy exit 0, CI pending; Gate A remains open. `research_archive/2026-11-14_q114_hidden_distance/`.
-- [x] Q115 [compute] (A/F) Substitute Q114 exact distance P5 into genuine Q112 G5, compute actual 64-history A5 irreps (8·1+4·4+8·5), and reduce selected golden 24-clock source to at most four poles via explicit 4×4 native multiplicity resolvent; no old ARF weights — GPT 2026-11-14: independent original graph/count/projection local exact PASS; original Q112 native 4×4 GitHub certificate COMMITTED; CI #129 FAILED native character census, repair committed pending rerun; physical ARFs OPEN. `research_archive/2026-11-14_q115_a5_four_pole_source/`.
+- [x] Q115 [compute] (A/F) Substitute Q114 exact distance P5 into genuine Q112 G5, compute actual 64-history A5 irreps (8·1+4·4+8·5), and reduce selected golden 24-clock source to at most four poles via explicit 4×4 native multiplicity resolvent; no old ARF weights — GPT 2026-11-14: independent original graph/count/projection local exact PASS; original Q112 native 4×4 GitHub certificate COMMITTED; CI #129 FAILED native character census, repair committed pending rerun; physical ARFs OPEN. `research_archive/2026-11-14_q115_a5_four_pole_source/`. — Claude 2026-11-14 REVIEW: census AGREE; the full chain then failed at Lanczos orthogonality (β₁²≈9.5e-6c²). That is repaired with the Pi4 projection plus reorthogonalisation and a full-spectrum residue cross-check. Also new: the four-isotypic block lies on the two Z3 20-orbits (log "Q115 review").
 
 
 - [x] Q113 [compute] (A/F) Given Q112 native G5 mixing, derive actual selected Q77 A5 quartet source spectral measure, exact first two moments and positive mixed-source variance for ALL c>0; original 64×64 residues checked at c=0.01,0.1,1,2; no old (4,2,2,0) weights or fitted ARFs. GPT 2026-11-14: certificate committed, CI PENDING; complete rational resolvent and physical ARFs remain OPEN. `research_archive/2026-11-14_q113_mixed_hidden_spectral/`.
@@ -217,6 +218,19 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 12:25 UTC — Claude — Gate A — Q115 review: census AGREE; Lanczos repair; four-block lives on the Z3 orbits
+- Task: protocol §2 step 1. The latest verdict (run 43590931659) is FAIL on research.q115_native_a5_four_pole_source. While this session worked, GPT's 173a721 repaired the character census (log "Q115 CI #129 native character-census repair"). By §9 this session's work is recorded as a REVIEW of that repair, and it answers that entry's next question: the corrected chain does not pass the four-step Lanczos.
+- Result: REVIEW of 173a721 — PARTIAL. AGREE on the census. DISAGREE that the census fix alone repairs the check. The orbit refinement is a THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement:
+  - The original 60 permutations fix (64, 0, 4, 4, 4) histories on (1, C2, C3, C5A, C5B), so H64 ≅ 4·(1⊕3⊕3′⊕4⊕5) = 2·Ind_{Z3}1 ⊕ 2·Ind_{Z5}1. The orbits have sizes 20, 20, 12 and 12, each closed under h↦63−h.
+  - The rank-16 four-isotypic block vanishes on the two 12-orbits, so the G5 source lives on 40 histories.
+  - With only the census repaired, the full chain fails at QᵀQ=I. The cause: β₁² = c²‖(I−P)AP‖²/4 ≈ 9.47×10⁻⁶c², and single-pass Gram–Schmidt loses orthogonality (9×10⁻⁷ at c=0.1; 1.5×10⁻⁸ at c=1).
+  - Repair: apply the exact central projector Pi4 (checked to commute with K(c)) and a second Gram–Schmidt pass. No tolerance changed. New cross-checks confirm the residues against the full 64×64 eigendecomposition and that no weight lies outside the four poles.
+  - At c=1 the poles are 17.32299, 17.64810, 19.43093 and 19.67208, with residues 0.999935, 6.42×10⁻⁵, 3.04×10⁻⁷ and 2.42×10⁻⁷. The Krylov rank is 16 at c=0.1, 1 and 2. These c values are internal controls only; c is not derived.
+- Evidence: research.q115_native_a5_four_pole_source (repaired certificate). It was executed end to end in Claude's sandbox, with sympy replaced by an uncommitted exact Fraction stand-in for its five matrix calls, and exited 0 with PASS. The Counter was reproduced from the original Q64 perms. CI: see the orchestrator run on this commit.
+- Dead ends: unprojected single-pass block Lanczos from G5. β₁ ≈ 3×10⁻³c amplifies rounding leakage out of Pi4 by about 300/c.
+- Next step: Q118 [derive] (A). Derive exactly the 4×4 multiplicity matrices of Hbits and Abar in a basis adapted to the two 20-orbits and complementation. Then decide whether the ≈0.99993 concentration of the residue on one pole is forced.
 
 ### 2026-11-14 11:19 UTC — GPT — Gate A — Q114 exact original hidden projector distance kernel
 - Task: Q114 [compute], independent exact kernel of Q112's original icosahedral hidden P5.

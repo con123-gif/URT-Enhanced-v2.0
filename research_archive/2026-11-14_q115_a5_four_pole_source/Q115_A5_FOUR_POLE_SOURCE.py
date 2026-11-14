@@ -49,35 +49,48 @@ def order(p):
         ans=lcm(ans,length)
     return ans
 count=Counter((order(p),int(np.sum(p==np.arange(64)))) for p in perms)
+# 2026-11-14 Claude repair: half-turns fix NO history (an edge-midpoint
+# half-turn sends two antipodal pairs v -> -v, flipping those choices).
+# The original assertion (2,16) was never executed; CI run 43590931659
+# returned exactly this Counter.
 assert count==Counter({(1,64):1,(2,0):15,(3,4):20,(5,4):24}),count
-# The original Q112 permutation action fixes NO histories under a half-turn.
-# The 5A and 5B character sums for 3/3prime equal one.
-m1=(64+15*0+20*4+24*4)//60
-m3=(3*64-15*0+12*4)//60
-m4=(4*64+20*4-24*4)//60
-m5=(5*64+15*0-20*4)//60
-assert (m1,m3,m4,m5)==(4,4,4,4)
-assert 4*(1+3+3+4+5)==64
-print('EXACT original 64-history A5 reps: 4·1 + 4·3 + 4·3prime + 4·4 + 4·5',flush=True)
+# chi_H on (1, 15 C2, 20 C3, 12 C5A, 12 C5B) = (64,0,4,4,4); A5 characters
+# 1:(1,1,1,1,1) 3:(3,-1,0,phi,1-phi) 3':(3,-1,0,1-phi,phi) 4:(4,0,1,-1,-1)
+# 5:(5,1,-1,0,0). chi_H is equal on C5A and C5B, so phi cancels exactly.
+num={'1':64+0+20*4+24*4,'3':3*64-0+0+12*4*1,'4':4*64+0+20*4-24*4,'5':5*64+0-20*4}
+assert all(v%60==0 for v in num.values())
+m={k:v//60 for k,v in num.items()}
+assert (m['1'],m['3'],m['4'],m['5'])==(4,4,4,4)   # m3 = m3' = 4
+assert 4*1+4*3+4*3+4*4+4*5==64
+# orbit structure: 2 orbits of size 20 (stabiliser Z3), 2 of size 12 (Z5)
+seen=set();orbs=[]
+for h in range(64):
+    if h in seen:continue
+    o=frozenset(int(p[h]) for p in perms);seen|=o;orbs.append(o)
+assert sorted(len(o) for o in orbs)==[12,12,20,20]
+print('EXACT original 64-history A5 reps: 4·(1+3+3prime+4+5) = 2·Ind_Z3 1 + 2·Ind_Z5 1',flush=True)
 
 # Construct A5 central projectors directly from original 60 history permutations.
 idc=np.arange(64)
-Pi1=np.zeros((64,64));Pi4=np.zeros((64,64));Pi5=np.zeros((64,64))
+Pi1=np.zeros((64,64));Pi33=np.zeros((64,64));Pi4=np.zeros((64,64));Pi5=np.zeros((64,64))
 for perm in perms:
     k=order(perm)
     E=np.zeros((64,64))
     E[perm,idc]=1
     Pi1+=E/60.
+    Pi33+=(3/60.)*{1:6,2:-2,3:0,5:1}[k]*E   # chi_3+chi_3'
     Pi4+=(4/60.)*{1:4,2:0,3:1,5:-1}[k]*E
     Pi5+=(5/60.)*{1:5,2:1,3:-1,5:0}[k]*E
-for P,rank in ((Pi1,4),(Pi4,16),(Pi5,20)):
-    assert np.linalg.norm(P-P.T)<2e-12
-    assert np.linalg.norm(P@P-P)<3e-11
-    assert np.linalg.matrix_rank(P,tol=1e-8)==rank
-Pi33=np.eye(64)-Pi1-Pi4-Pi5
-assert np.linalg.norm(Pi33@Pi33-Pi33)<3e-11
-assert np.linalg.matrix_rank(Pi33,tol=1e-8)==24
-assert np.linalg.norm(Pi1+Pi4+Pi5+Pi33-np.eye(64))<3e-11
+for Pr,rank in ((Pi1,4),(Pi33,24),(Pi4,16),(Pi5,20)):
+    assert np.linalg.norm(Pr-Pr.T)<2e-12
+    assert np.linalg.norm(Pr@Pr-Pr)<3e-11
+    assert np.linalg.matrix_rank(Pr,tol=1e-8)==rank
+assert np.linalg.norm(Pi1+Pi33+Pi4+Pi5-np.eye(64))<3e-11
+# Ind_Z5 1 contains no 4: the four-isotypic block lives on the 40 histories
+# of the two 20-orbits only.
+twelve=sorted(set().union(*[o for o in orbs if len(o)==12]))
+assert np.max(np.abs(Pi4[twelve,:]))<1e-12
+print('four-isotypic rank 16 supported on the two 20-orbits (40 histories)',flush=True)
 
 P=np.array(q['G5'],float);A=np.array(q['Abar'],float)
 assert np.linalg.norm(Pi4@P-P)<1e-10
@@ -107,6 +120,7 @@ print('A5-Schur pure-source PAP=aP; exact mixed source c^2 variance coefficient'
 # Each E_j has four columns carrying the SAME internal A5 irrep.
 def reduce_c(c):
     K=Hbits+c*A
+    assert np.linalg.norm(K@Pi4-Pi4@K)<1e-12
     ev,E=np.linalg.eigh(P)
     first=E[:,ev>.5]
     assert first.shape==(64,4)
@@ -119,6 +133,18 @@ def reduce_c(c):
             a=float(np.trace(b)/4)
             assert np.linalg.norm(b-a*eye4)<1e-7
             W-=a*old
+        # Second Gram-Schmidt pass (2026-11-14 Claude repair). The first
+        # Lanczos off-diagonal is beta_1^2 = c^2*mix/4 ~ 1e-5 c^2, so single-pass
+        # classical Gram-Schmidt loses orthogonality (measured 1.5e-8 at c=1,
+        # 9e-7 at c=0.1) and the Q^T Q = I assertion failed. Reorthogonalising
+        # changes no tolerance: it only removes rounding components along
+        # earlier blocks. M4 below is computed directly from traces of K.
+        # K commutes with the exact central projector Pi4 (checked below), so
+        # Pi4 W = W in exact arithmetic; applying it strips rounding leakage
+        # that 1/sqrt(beta^2) would otherwise amplify.
+        W=Pi4@W
+        for old in blocks:
+            W-=old@(old.T@W)
         if j<3:
             gram=W.T@W
             n=float(np.trace(gram)/4)
@@ -142,6 +168,13 @@ def reduce_c(c):
     # Not all full 64 spectra occur in G5: only these FOUR 4-fold energies.
     for e in lam:
         assert sum(np.abs(full-e)<2e-8)>=4
+    # Independent cross-check (2026-11-14 Claude): the source measure from the
+    # full 64x64 eigendecomposition carries the same four residues.
+    fv,FU=np.linalg.eigh(K)
+    wfull=np.sum((FU.T@first)**2,axis=1)/4
+    for e,wj in zip(lam,weights):
+        assert abs(wfull[np.abs(fv-e)<1e-7].sum()-wj)<1e-9
+    assert abs(wfull[np.min(np.abs(fv[:,None]-lam[None,:]),axis=1)>1e-7].sum())<1e-12
     return lam,weights,var
 for c in (0.1,1.0,2.0):
     lam,w,var=reduce_c(c)

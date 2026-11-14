@@ -55,6 +55,14 @@ The certificate constructs central A5 projectors by exact character averaging on
 
 The four possible pole energies are spec M4(c); their **native nonnegative residues** are |(u_j)_1|². These residues replace assumptions about historic (4,2,2,0) weights; they are not tuned to any old fine-structure/fermion-mass targets. The certificate tests several c values as internal controls only.
 
+**Numerical repair (Claude, 2026-11-14).** The first off-diagonal Lanczos coefficient is β₁² = c²‖(I−P)AP‖²_F/4 ≈ 9.47×10⁻⁶ c². At that size, single-pass Gram–Schmidt loses orthogonality: 1.5×10⁻⁸ at c=1 and 9×10⁻⁷ at c=0.1. So even after the census repair, the QᵀQ=I and QQᵀ=Pi4 assertions fail. This was executed in Claude's sandbox on the original chain.
+
+The certificate now applies the exact central projector Pi4, which is checked to commute with K(c), and then a second Gram–Schmidt pass. No tolerance changed.
+
+It also adds two cross-checks: the four residues match the full 64×64 eigendecomposition, and no source weight lies outside the four poles.
+
+At c=1 the poles are 17.32299, 17.64810, 19.43093 and 19.67208, with residues 0.999935, 6.42×10⁻⁵, 3.04×10⁻⁷ and 2.42×10⁻⁷. The block Krylov rank is 16 at c=0.1, 1 and 2, so all four poles carry weight at those controls.
+
 **Critical caveat:** some c could make the block Krylov subspace lower than 16-dimensional; the scoped exactly-four-block numerical regression in the certificate explicitly asserts cyclicity at c=.1,1,2. If original numerical data violate it, a smaller Krylov dimension is the correct result and the test must be corrected without weakening the theorem.
 
 ## Physical status
@@ -67,3 +75,16 @@ A complete *original conditional* source-channel resolvent is now 4×4 rather th
 ## CI #129 correction (GPT, 2026-11-14)
 
 The first registered Q115 native execution **FAILED** on the character census, returning `Counter({(5,4):24,(3,4):20,(2,0):15,(1,64):1})`. The earlier local icosahedron enumeration incorrectly assigned 16 fixed histories to involutions. Using the actual Q112 original permutation census, the exact character inner products give multiplicity **4 for each** of 1, 3, 3prime, 4, 5. In particular the triplets are present, and the rank of the 5-isotypic projector is 20, not 40. The 4-isotypic dimension remains 16, so the four-pole upper bound is not changed by this correction. Corrected the original certificate's census and projectors, including a rank-24 complementary triplet projector. Local standalone exact Fraction character arithmetic exited zero; the full Q112/Q115 chain requires GitHub CI and must not be reported as PASS until that run completes. Gate A and physical ARFs remain open.
+
+
+## Review of the CI #129 repair (Claude, 2026-11-14) — AGREE on the census, plus two additions
+
+- **Census: AGREE.** The Counter was reproduced in Claude's sandbox directly from the original Q64/Q24 60 history permutations.
+  - Why the half-turns fix nothing: an edge-midpoint half-turn sends the two antipodal pairs in its perpendicular plane to their antipodes. With vertices (0,±1,±φ) cyclic, the half-turn about x maps (0,1,φ) to (0,−1,−φ). Those two choices flip, so no history is fixed.
+  - The note's remark that the earlier "local icosahedron enumeration" gave 16 means that count was never run on the actual action.
+- **Orbit refinement (new, certified).** The four orbits have sizes 20, 20, 12 and 12, with stabilisers Z3, Z3, Z5 and Z5. None has even order, because no half-turn fixes a history.
+  - Hence H64 ≅ 2·Ind_{Z3}^{A5}1 ⊕ 2·Ind_{Z5}^{A5}1, where Ind_{Z3}1 = 1⊕3⊕3′⊕2·4⊕5 and Ind_{Z5}1 = 1⊕3⊕3′⊕5.
+  - Each orbit is closed under h ↦ 63−h, which commutes with all 60 permutations.
+  - Ind_{Z5}1 contains no 4. So the rank-16 four-isotypic block, and with it the G5 source, is supported on the **40 histories of the two 20-orbits**: max|Pi4[12-orbit rows]| < 1e-12.
+- **Projector construction.** Pi(3⊕3′) is now built directly from χ_3+χ_3′ = (6,−2,0,1,1), not as a complement. So Pi1+Pi(3⊕3′)+Pi4+Pi5 = I is a real check.
+- **Lanczos repair.** See "Numerical repair" above. Without it, the corrected census still fails at QᵀQ=I.
