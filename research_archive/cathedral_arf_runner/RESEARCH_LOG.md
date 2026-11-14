@@ -5,6 +5,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q87E [compute] (A) Derive all 16 native mirror-pair parity witnesses and an exact commutator-energy bound on Q77 history support; distinguish the exceptional x=0 witness from other blocks. — GPT 2026-11-14: THEOREM (conditional symbolic identity), local SymPy exit 0, CI pending; Q87 remains open.\n
 ### ACTIVE PROBLEM A — derive the history dictionary and chronology (Gate A). Every agent, every lane, until solved (RESEARCH_PROTOCOL.md §2). Only Con marks it solved.
 Goal: from original operators only, one dictionary (up to the exact symmetry A5 × ⟨I,R,S⟩), one chronology / reversible history, and from them the A5 chronology coefficient and the source weights (4,2,2,0).
 Attempts so far (append yours; take the next untried one; never run a parallel copy of another agent's attempt):
@@ -154,6 +155,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 03:13 UTC — GPT — Gate A — Q87E quantitative native parity-energy certificate
+- Task: Q87E [compute], independent bounded exact extension of Q87D on the original Q77 64-history bridge support.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional algebraic identity; no native Q77 t_x enclosures evaluated).
+- Statement: the 16 mirror witnesses W_x are (t0−t31)(3−2t0−2t31) for x=0 and 2(t_x−t_(31−x))(1−t_x−t_(31−x)) otherwise. Squared commutator ≥ 4ΣW_x². For a single mirrored perturbation, exact norm squared = 12(u−v)²+32(u−v)²(u+v−3/2)².
+- Evidence: research.q87e_native_parity_energy; GPT container Python/SymPy local execution exit 0, Q87E_EXACT_PARITY_ENERGY_PASS; GitHub CI pending at commit time.
+- Dead ends: Q87D's exceptional x=0 formula must not be extended unchanged to x>0. An untwirled parity commutator alone does not prove the A5-twirled hidden G5 coupling or an all-c obstruction.
+- Next step: Q87 [compute] use original Q77 rational Krawczyk enclosures to certify a mirror inequality, then calculate A5-twirled G5 cross-block with rigorous interval bounds.
+
 
 ### 2026-11-14 02:19 UTC — GPT — Gate A — Q87D: native bridge parity commutator witness
 - Task: Q87 [compute] prerequisite; calculate an exact entrywise C-commutator criterion for Q77's original 32-block chronology penalty, avoiding a coefficient scan.

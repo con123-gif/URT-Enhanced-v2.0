@@ -1188,3 +1188,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87d_native_parity_commutator/Q87D_NATIVE_PARITY_COMMUTATOR.py"
 timeout = 120
+
+[[check]]
+id = "research.q87e_native_parity_energy"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q87e_parity_energy/Q87E_PARITY_ENERGY.py"
+timeout = 90
