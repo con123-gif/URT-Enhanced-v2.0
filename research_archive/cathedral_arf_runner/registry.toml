@@ -1141,6 +1141,14 @@ run = "python -u research_archive/2026-11-14_q86_parity_history_energy/Q86_PARIT
 timeout = 300
 
 [[check]]
+id = "research.q91_bridge_loss_sequence"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-14_q91_bridge_loss_sequence/Q91_BRIDGE_LOSS_SEQUENCE.py"
+timeout = 300
+
+[[check]]
 id = "engine.evidence_ledger"
 stage = "engine"
 claim = "regression"
