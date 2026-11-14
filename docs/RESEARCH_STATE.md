@@ -14,6 +14,8 @@ explicit correction win. Every statement below holds **for the stated operators 
 
 ---
 
+**Q120 TRACK M exact activation barrier (2026-11-14).** The real 12-outer plus independent centre-spin golden frustration Hamiltonian has 60 minima in opposite 30+30 branches and exact first gap sqrt5-1 (Q119). Every legal single-contact reversal must traverse M=0 (edge energy >=-10); a five-flip path saturates, so **minimum barrier B=2(sqrt5-1)**, twice the first gap. Exactly 444 sublevel configurations at H<=-10 form one connected 13-spin graph (60 minima, 240 M=2 intermediates, 144 M=0 saddles); all 8192 states checked with exact SymPy comparisons. At finite unbiased temperature inversion forces zero net orientation, and no transition timescale has been derived. Scoped contact theorem within full five-Platonic 190/H64 structure; old Q77 history excluded. Local PASS, GitHub CI pending. research_archive/2026-11-14_q120_moving_reversal_barrier/
+
 ## Current research-track boundary — user correction (2026-11-14)
 
 **NEW MOVING ASYMMETRY-FIRST TRACK:** Nov11 12+centre kissing mismatch, phi-induced frustration and spontaneously selected couplings; Q98/Q101/Q102/Q103 are direct work. Q105–Q111 model charged/gauge additions with explicitly conditional intertwiners or kinetic choices; Q116 is a separate exact native hidden-current geometry available for investigation, but does not itself select moving dynamics. The original five Platonic 190-cochain geometry, D6→H3, H13⊕H51, hidden 4_3/4_5, 24 ordering and Golay/Leech remain in scope—not permission to import their old selected HISTORY **dynamical law** as a premise. No fitted historical ARFs.

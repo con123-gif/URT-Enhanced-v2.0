@@ -1469,3 +1469,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q119_native_scale/Q119_NATIVE_SCALE_CERTIFICATE.py"
 timeout = 120
+
+[[check]]
+id = "research.q120_moving_reversal_barrier"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-14_q120_moving_reversal_barrier/Q120_GOLDEN_TUNNEL_BARRIER.py"
+timeout = 180
