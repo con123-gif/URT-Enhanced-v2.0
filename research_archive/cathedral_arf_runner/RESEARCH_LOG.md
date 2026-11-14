@@ -156,6 +156,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-14 04:15 UTC — GPT — Gate A — Q87F native bridge trace and Gram determinant
+- Task: Q87 [compute], bounded original-Q77 global Dirichlet/Gram invariant; Q87 remains open.
+- Result: THEOREM (conditional on Q77 support and 0<t_x<1/2) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Tr[(I−B)^T(I−B)]=64−2(t0+t31)+2Σ_x[t_x²+(1−t_x)²], strictly between 94 and 128; det(B^TB)=Π_x(2t_x−1)²>0. Neither c nor hidden coupling is fixed.
+- Evidence: research.q87f_native_bridge_trace; GPT local SymPy script exit 0 at 2026-11-14 04:15 UTC; CI pending.
+- Dead ends: global trace and full-rank alone cannot imply A5-twirled hidden G5 leakage.
+- Next step: Q87 [compute] original Q77 Krawczyk intervals + native A5 twirl to certify nonzero (I−G5) Abar_B G5 for every c>0.
+
+
 ### 2026-11-14 03:13 UTC — GPT — Gate A — Q87E quantitative native parity-energy certificate
 - Task: Q87E [compute], independent bounded exact extension of Q87D on the original Q77 64-history bridge support.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional algebraic identity; no native Q77 t_x enclosures evaluated).

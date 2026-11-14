@@ -1196,3 +1196,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87e_parity_energy/Q87E_PARITY_ENERGY.py"
 timeout = 90
+
+[[check]]
+id = "research.q87f_native_bridge_trace"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q87f_native_trace/Q87F_NATIVE_DIRICHLET_TRACE.py"
+timeout = 180
