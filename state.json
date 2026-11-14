@@ -2,1818 +2,1833 @@
  "checks": {
   "conditional.charged_ward_2x2": {
    "claim": "synthetic",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.49
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.59
   },
   "conditional.observable_nonuniqueness": {
    "claim": "conditional",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.2
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.29
   },
   "conditional.source_moment_recurrence": {
    "claim": "conditional",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.32
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.4
   },
   "conditional.ward_13_51_random_blocks": {
    "claim": "synthetic",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "conditional",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.06
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.08
   },
   "engine.benchmark": {
    "claim": "regression",
-   "consecutive_pass": 5,
+   "consecutive_pass": 6,
    "detail": "",
    "first_seen_utc": "2026-11-13T23:06:37Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "engine",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 78.81
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 96.48
   },
   "engine.evidence_ledger": {
    "claim": "regression",
-   "consecutive_pass": 5,
+   "consecutive_pass": 6,
    "detail": "",
    "first_seen_utc": "2026-11-13T23:06:37Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "engine",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
+   "utc": "2026-11-14T00:55:51Z",
    "wall_s": 0.05
   },
   "geometry.all_platonic_hidden_algebra": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "geometry",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 5.27
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 5.7
   },
   "geometry.hidden_isometry_24clock_Q6": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "geometry",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.22
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.26
   },
   "history.a4_third_cumulant_rate": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 4.77
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 6.12
   },
   "history.a5_chronology_dirichlet_gap": {
    "claim": "conditional",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.4
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.49
   },
   "history.a5_symmetric_cubic_source": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 4.73
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 5.14
   },
   "history.native_24clock_fourier": {
    "claim": "conditional",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.6
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.72
   },
   "history.native_q6_fourth_cumulants": {
    "claim": "native",
-   "consecutive_pass": 100,
+   "consecutive_pass": 101,
    "detail": "",
    "first_seen_utc": "2026-11-10T20:26:37Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 11.59
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 12.84
   },
   "history.source_schur_ward_contacts": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "history",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.32
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.36
   },
   "integrity.arf_forward_manifest": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "integrity",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
+   "utc": "2026-11-14T00:55:51Z",
    "wall_s": 0.0
   },
   "integrity.h64_snapshot_sha256": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "integrity",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.05
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.04
   },
   "integrity.handover_claims": {
    "claim": "independent",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "integrity",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.23
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.24
   },
   "native.output_gate": {
    "claim": "native",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "native",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.12
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.11
   },
   "native.wilson_source": {
    "claim": "native",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "native",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.9
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.33
   },
   "research.candidate1_4d_holonomy_instability": {
    "claim": "conditional",
-   "consecutive_pass": 77,
+   "consecutive_pass": 78,
    "detail": "",
    "first_seen_utc": "2026-11-11T03:13:24Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.07
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.08
   },
   "research.candidate1_induced_em_icosahedron": {
    "claim": "conditional",
-   "consecutive_pass": 78,
+   "consecutive_pass": 79,
    "detail": "",
    "first_seen_utc": "2026-11-11T03:02:16Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.13
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.16
   },
   "research.chaos_invariant_refinement_audit": {
    "claim": "independent",
-   "consecutive_pass": 82,
+   "consecutive_pass": 83,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:02:58Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 2.5
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 3.34
   },
   "research.cross_archive_photon_join": {
    "claim": "conditional",
-   "consecutive_pass": 25,
+   "consecutive_pass": 26,
    "detail": "",
    "first_seen_utc": "2026-11-13T05:24:13Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.28
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.35
   },
   "research.hidden_parity_delta_selection": {
    "claim": "native",
-   "consecutive_pass": 81,
+   "consecutive_pass": 82,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:16:30Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.5
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.53
   },
   "research.hodge_dirac_19_mode_photon": {
    "claim": "independent",
-   "consecutive_pass": 85,
+   "consecutive_pass": 86,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.38
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.41
   },
   "research.hodge_dirac_flux_vacuum": {
    "claim": "independent",
-   "consecutive_pass": 85,
+   "consecutive_pass": 86,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.47
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.53
   },
   "research.hodge_dirac_photon_kernel": {
    "claim": "independent",
-   "consecutive_pass": 85,
+   "consecutive_pass": 86,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.46
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.49
   },
   "research.hopf_charged_carrier": {
    "claim": "conditional",
-   "consecutive_pass": 41,
+   "consecutive_pass": 42,
    "detail": "",
    "first_seen_utc": "2026-11-12T11:09:46Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.47
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.62
   },
   "research.icosahedral_induced_photon": {
    "claim": "independent",
-   "consecutive_pass": 85,
+   "consecutive_pass": 86,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.15
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.18
   },
   "research.incidence_photon_a5_sectors": {
    "claim": "independent",
-   "consecutive_pass": 85,
+   "consecutive_pass": 86,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:16:35Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.93
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.59
   },
   "research.independent_native_five_k2": {
    "claim": "independent",
-   "consecutive_pass": 96,
+   "consecutive_pass": 97,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:12:03Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.72
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.84
   },
   "research.induced_photon_logdet_kernel": {
    "claim": "native",
-   "consecutive_pass": 89,
+   "consecutive_pass": 90,
    "detail": "",
    "first_seen_utc": "2026-11-11T00:24:25Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.08
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.57
   },
   "research.induced_photon_vacuum_selection": {
    "claim": "native",
-   "consecutive_pass": 89,
+   "consecutive_pass": 90,
    "detail": "",
    "first_seen_utc": "2026-11-11T00:24:25Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 3.0
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 4.32
   },
   "research.missing_intermediates": {
    "claim": "independent",
-   "consecutive_pass": 76,
+   "consecutive_pass": 77,
    "detail": "",
    "first_seen_utc": "2026-11-10T22:28:48Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.18
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.22
   },
   "research.native_clock_rate_flux_quadrature": {
    "claim": "conditional",
-   "consecutive_pass": 47,
+   "consecutive_pass": 48,
    "detail": "",
    "first_seen_utc": "2026-11-12T07:11:51Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 5.02
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 5.4
   },
   "research.native_signed_dictionary_k23": {
    "claim": "native",
-   "consecutive_pass": 85,
+   "consecutive_pass": 86,
    "detail": "",
    "first_seen_utc": "2026-11-11T00:33:58Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 21.9
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 28.09
   },
   "research.native_signed_dictionary_k3": {
    "claim": "native",
-   "consecutive_pass": 90,
+   "consecutive_pass": 91,
    "detail": "",
    "first_seen_utc": "2026-11-10T23:36:31Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 10.32
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 13.81
   },
   "research.native_signed_dictionary_k4": {
    "claim": "native",
-   "consecutive_pass": 80,
+   "consecutive_pass": 81,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 13.85
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 17.92
   },
   "research.platonic_hidden_sector_link": {
    "claim": "independent",
-   "consecutive_pass": 84,
+   "consecutive_pass": 85,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:29:41Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.13
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.16
   },
   "research.q15_native_namespace_repair": {
    "claim": "native",
-   "consecutive_pass": 83,
+   "consecutive_pass": 84,
    "detail": "",
    "first_seen_utc": "2026-11-11T01:48:12Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 21.86
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 27.99
   },
   "research.q22_tetrahedron_exact_kernel": {
    "claim": "native",
-   "consecutive_pass": 75,
+   "consecutive_pass": 76,
    "detail": "",
    "first_seen_utc": "2026-11-11T04:28:40Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
+   "utc": "2026-11-14T00:55:51Z",
    "wall_s": 0.02
   },
   "research.q23_photon_gauge_typing": {
    "claim": "native",
-   "consecutive_pass": 79,
+   "consecutive_pass": 80,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:47:47Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.49
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.52
   },
   "research.q24_history_symmetries": {
    "claim": "native",
-   "consecutive_pass": 74,
+   "consecutive_pass": 75,
    "detail": "",
    "first_seen_utc": "2026-11-11T04:48:05Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research_heavy",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 50.96
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 88.31
   },
   "research.q25_4d_a5_photon": {
    "claim": "native",
-   "consecutive_pass": 78,
+   "consecutive_pass": 79,
    "detail": "",
    "first_seen_utc": "2026-11-11T03:02:16Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.42
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.49
   },
   "research.q27_twirled_orientation": {
    "claim": "native",
-   "consecutive_pass": 73,
+   "consecutive_pass": 74,
    "detail": "",
    "first_seen_utc": "2026-11-11T05:34:34Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.22
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.41
   },
   "research.q28_twirled_third_trace": {
    "claim": "native",
-   "consecutive_pass": 72,
+   "consecutive_pass": 73,
    "detail": "",
    "first_seen_utc": "2026-11-11T06:27:37Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.33
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.61
   },
   "research.q29_twirled_fourth_trace": {
    "claim": "native",
-   "consecutive_pass": 71,
+   "consecutive_pass": 72,
    "detail": "",
    "first_seen_utc": "2026-11-11T07:32:28Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 2.59
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 3.18
   },
   "research.q30_twirled_all_order_spectrum": {
    "claim": "native",
-   "consecutive_pass": 69,
+   "consecutive_pass": 70,
    "detail": "",
    "first_seen_utc": "2026-11-11T08:32:02Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research_heavy",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 56.75
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 96.14
   },
   "research.q31_rational_similarity": {
    "claim": "native",
-   "consecutive_pass": 68,
+   "consecutive_pass": 69,
    "detail": "",
    "first_seen_utc": "2026-11-11T08:47:43Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research_heavy",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 123.82
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 193.49
   },
   "research.q32_mixed_trace_meaning": {
    "claim": "native",
-   "consecutive_pass": 63,
+   "consecutive_pass": 64,
    "detail": "",
    "first_seen_utc": "2026-11-11T12:43:01Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 32.35
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 45.11
   },
   "research.q33_singular_spectrum": {
    "claim": "native",
-   "consecutive_pass": 67,
+   "consecutive_pass": 68,
    "detail": "",
    "first_seen_utc": "2026-11-11T09:37:07Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 22.83
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 30.85
   },
   "research.q34_seventh_mixed_words": {
    "claim": "native",
-   "consecutive_pass": 66,
+   "consecutive_pass": 67,
    "detail": "",
    "first_seen_utc": "2026-11-11T10:34:43Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 5.15
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 6.76
   },
   "research.q35_eighth_mixed_words": {
    "claim": "native",
-   "consecutive_pass": 65,
+   "consecutive_pass": 66,
    "detail": "",
    "first_seen_utc": "2026-11-11T11:36:36Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 10.41
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 14.24
   },
   "research.q36_rational_star_intertwiners": {
    "claim": "native",
-   "consecutive_pass": 62,
+   "consecutive_pass": 63,
    "detail": "",
    "first_seen_utc": "2026-11-11T13:02:36Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research_heavy",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 82.83
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 114.04
   },
   "research.q37_primitive_q2_trace": {
    "claim": "native",
-   "consecutive_pass": 61,
+   "consecutive_pass": 62,
    "detail": "",
    "first_seen_utc": "2026-11-11T13:39:50Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.22
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.26
   },
   "research.q38_primitive_q2_allpairs": {
    "claim": "native",
-   "consecutive_pass": 60,
+   "consecutive_pass": 61,
    "detail": "",
    "first_seen_utc": "2026-11-11T14:34:56Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 2.21
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.68
   },
   "research.q39_eight_image_q2": {
    "claim": "native",
-   "consecutive_pass": 59,
+   "consecutive_pass": 60,
    "detail": "",
    "first_seen_utc": "2026-11-11T15:38:17Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 3.24
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 3.87
   },
   "research.q3_twirled_chronology_classes": {
    "claim": "native",
-   "consecutive_pass": 79,
+   "consecutive_pass": 80,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:47:47Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 39.97
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 49.95
   },
   "research.q40_cross_orbit_q2": {
    "claim": "independent",
-   "consecutive_pass": 58,
+   "consecutive_pass": 59,
    "detail": "",
    "first_seen_utc": "2026-11-11T16:35:04Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.02
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.17
   },
   "research.q40_review_operator_equality": {
    "claim": "independent",
-   "consecutive_pass": 57,
+   "consecutive_pass": 58,
    "detail": "",
    "first_seen_utc": "2026-11-11T16:56:27Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 2.02
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.44
   },
   "research.q42_middle_flip_orbitals": {
    "claim": "native",
-   "consecutive_pass": 56,
+   "consecutive_pass": 57,
    "detail": "",
    "first_seen_utc": "2026-11-11T17:44:40Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.31
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.63
   },
   "research.q43_native_character_criterion": {
    "claim": "native",
-   "consecutive_pass": 55,
+   "consecutive_pass": 56,
    "detail": "",
    "first_seen_utc": "2026-11-11T18:38:32Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.41
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.77
   },
   "research.q44_middle_flip_symmetry": {
    "claim": "native",
-   "consecutive_pass": 54,
+   "consecutive_pass": 55,
    "detail": "",
    "first_seen_utc": "2026-11-11T21:33:43Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.28
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.63
   },
   "research.q45_zero_coset_orders": {
    "claim": "native",
-   "consecutive_pass": 52,
+   "consecutive_pass": 53,
    "detail": "",
    "first_seen_utc": "2026-11-12T00:38:55Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 5.14
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 6.53
   },
   "research.q46_rotation_mechanism": {
    "claim": "native",
-   "consecutive_pass": 50,
+   "consecutive_pass": 51,
    "detail": "",
    "first_seen_utc": "2026-11-12T04:35:54Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.91
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.38
   },
   "research.q49_fixed_source_gauge_obstruction": {
    "claim": "conditional",
-   "consecutive_pass": 46,
+   "consecutive_pass": 47,
    "detail": "",
    "first_seen_utc": "2026-11-12T07:44:15Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.58
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.91
   },
   "research.q49_haar_diagonal_transport": {
    "claim": "conditional",
-   "consecutive_pass": 45,
+   "consecutive_pass": 46,
    "detail": "",
    "first_seen_utc": "2026-11-12T08:32:07Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.68
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.84
   },
   "research.q49_native_ward_history_map": {
    "claim": "native",
-   "consecutive_pass": 44,
+   "consecutive_pass": 45,
    "detail": "",
    "first_seen_utc": "2026-11-12T08:54:06Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.79
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.42
   },
   "research.q4_native_matter_map": {
    "claim": "native",
-   "consecutive_pass": 80,
+   "consecutive_pass": 81,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.06
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.37
   },
   "research.q50_uniform_history_gauge": {
    "claim": "native",
-   "consecutive_pass": 43,
+   "consecutive_pass": 44,
    "detail": "",
    "first_seen_utc": "2026-11-12T09:38:23Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.55
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.67
   },
   "research.q52_native_source_unitary": {
    "claim": "native",
-   "consecutive_pass": 41,
+   "consecutive_pass": 42,
    "detail": "",
    "first_seen_utc": "2026-11-12T11:09:46Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.38
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.44
   },
   "research.q53_native_onshell_ward_clock": {
    "claim": "native",
-   "consecutive_pass": 40,
+   "consecutive_pass": 41,
    "detail": "",
    "first_seen_utc": "2026-11-12T11:28:44Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.42
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.49
   },
   "research.q53_v61_internal_symmetry": {
    "claim": "native",
-   "consecutive_pass": 42,
+   "consecutive_pass": 43,
    "detail": "",
    "first_seen_utc": "2026-11-12T10:47:39Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 4.15
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 5.42
   },
   "research.q55_hopf_wilson_ward": {
    "claim": "native",
-   "consecutive_pass": 38,
+   "consecutive_pass": 39,
    "detail": "",
    "first_seen_utc": "2026-11-12T12:32:41Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.47
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.62
   },
   "research.q56_full_stationary_current": {
    "claim": "native",
-   "consecutive_pass": 40,
+   "consecutive_pass": 41,
    "detail": "",
    "first_seen_utc": "2026-11-12T11:28:44Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.43
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.5
   },
   "research.q57_native_clock_geometry": {
    "claim": "native",
-   "consecutive_pass": 39,
+   "consecutive_pass": 40,
    "detail": "",
    "first_seen_utc": "2026-11-12T11:47:49Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.39
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.45
   },
   "research.q58_native_coupling_curvature": {
    "claim": "native",
-   "consecutive_pass": 39,
+   "consecutive_pass": 40,
    "detail": "",
    "first_seen_utc": "2026-11-12T11:47:49Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.4
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.44
   },
   "research.q59_time_generator": {
    "claim": "native",
-   "consecutive_pass": 37,
+   "consecutive_pass": 38,
    "detail": "",
    "first_seen_utc": "2026-11-12T12:51:53Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.5
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.62
   },
   "research.q60_charge_tensor_ward": {
    "claim": "conditional",
-   "consecutive_pass": 25,
+   "consecutive_pass": 26,
    "detail": "",
    "first_seen_utc": "2026-11-13T05:24:13Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.22
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.27
   },
   "research.q60_hopf_h64_frame": {
    "claim": "native",
-   "consecutive_pass": 37,
+   "consecutive_pass": 38,
    "detail": "",
    "first_seen_utc": "2026-11-12T12:51:53Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.79
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.97
   },
   "research.q60_native_coordinate_selection": {
    "claim": "native",
-   "consecutive_pass": 25,
+   "consecutive_pass": 26,
    "detail": "",
    "first_seen_utc": "2026-11-13T05:24:13Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 16.0
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 18.27
   },
   "research.q61_inverse_limit_lifts": {
    "claim": "native",
-   "consecutive_pass": 35,
+   "consecutive_pass": 36,
    "detail": "",
    "first_seen_utc": "2026-11-12T16:40:49Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 10.43
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 16.32
   },
   "research.q62_lift_carrier": {
    "claim": "native",
-   "consecutive_pass": 34,
+   "consecutive_pass": 35,
    "detail": "",
    "first_seen_utc": "2026-11-12T20:51:47Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 37.41
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 50.75
   },
   "research.q64_a2_native_conditioning": {
    "claim": "conditional",
-   "consecutive_pass": 25,
+   "consecutive_pass": 26,
    "detail": "",
    "first_seen_utc": "2026-11-13T05:24:13Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.01
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.02
   },
   "research.q64_a2b_native_path_likelihood": {
    "claim": "native",
-   "consecutive_pass": 25,
+   "consecutive_pass": 26,
    "detail": "",
    "first_seen_utc": "2026-11-13T05:24:13Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
+   "utc": "2026-11-14T00:55:51Z",
    "wall_s": 0.02
   },
   "research.q64_a2c_native_lift_partition": {
    "claim": "conditional",
-   "consecutive_pass": 27,
+   "consecutive_pass": 28,
    "detail": "",
    "first_seen_utc": "2026-11-13T04:39:11Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.22
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.26
   },
   "research.q64_a2d_reversible_normalizer": {
    "claim": "conditional",
-   "consecutive_pass": 27,
+   "consecutive_pass": 28,
    "detail": "",
    "first_seen_utc": "2026-11-13T04:39:11Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.23
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.26
   },
   "research.q64_conditioned_selection": {
    "claim": "conditional",
-   "consecutive_pass": 32,
+   "consecutive_pass": 33,
    "detail": "",
    "first_seen_utc": "2026-11-12T21:34:55Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 11.32
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 14.81
   },
   "research.q65_horizon_selection": {
    "claim": "conditional",
-   "consecutive_pass": 31,
+   "consecutive_pass": 32,
    "detail": "",
    "first_seen_utc": "2026-11-13T00:36:47Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 14.26
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 18.77
   },
   "research.q68_native_bridge_polytope": {
    "claim": "native",
-   "consecutive_pass": 27,
+   "consecutive_pass": 28,
    "detail": "",
    "first_seen_utc": "2026-11-13T04:39:11Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.29
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.4
   },
   "research.q69_native_lift_clock_spectrum": {
    "claim": "native",
-   "consecutive_pass": 29,
+   "consecutive_pass": 30,
    "detail": "",
    "first_seen_utc": "2026-11-13T02:45:41Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
+   "utc": "2026-11-14T00:55:51Z",
    "wall_s": 0.01
   },
   "research.q6_repair_structural_regression": {
    "claim": "regression",
-   "consecutive_pass": 76,
+   "consecutive_pass": 77,
    "detail": "",
    "first_seen_utc": "2026-11-11T03:30:58Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.02
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.03
   },
   "research.q70_native_clock_fixed_space": {
    "claim": "native",
-   "consecutive_pass": 28,
+   "consecutive_pass": 29,
    "detail": "",
    "first_seen_utc": "2026-11-13T04:14:31Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.37
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.53
   },
   "research.q71_native_q3_clock": {
    "claim": "native",
-   "consecutive_pass": 23,
+   "consecutive_pass": 24,
    "detail": "",
    "first_seen_utc": "2026-11-13T05:44:14Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.62
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.78
   },
   "research.q71_q2_clock_mixing": {
    "claim": "native",
-   "consecutive_pass": 26,
+   "consecutive_pass": 27,
    "detail": "",
    "first_seen_utc": "2026-11-13T04:58:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.24
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.53
   },
   "research.q72_time_reversal_bridge": {
    "claim": "conditional",
-   "consecutive_pass": 26,
+   "consecutive_pass": 27,
    "detail": "",
    "first_seen_utc": "2026-11-13T04:58:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 18.61
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 24.28
   },
   "research.q73_joint_clock_bridge": {
    "claim": "conditional",
-   "consecutive_pass": 20,
+   "consecutive_pass": 21,
    "detail": "",
    "first_seen_utc": "2026-11-13T09:06:52Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 12.31
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 15.67
   },
   "research.q75_native_q3_sigma_commutator": {
    "claim": "native",
-   "consecutive_pass": 22,
+   "consecutive_pass": 23,
    "detail": "",
    "first_seen_utc": "2026-11-13T07:35:00Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.5
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.59
   },
   "research.q76_native_hidden_commutator_overlap": {
    "claim": "native",
-   "consecutive_pass": 21,
+   "consecutive_pass": 22,
    "detail": "",
    "first_seen_utc": "2026-11-13T08:45:29Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.85
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.01
   },
   "research.q77_exact_clock_split": {
    "claim": "conditional",
-   "consecutive_pass": 14,
+   "consecutive_pass": 15,
    "detail": "",
    "first_seen_utc": "2026-11-13T12:57:13Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 40.15
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 52.65
   },
   "research.q78_eight_dictionary_hidden": {
    "claim": "native",
-   "consecutive_pass": 19,
+   "consecutive_pass": 20,
    "detail": "",
    "first_seen_utc": "2026-11-13T09:37:44Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 2.06
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.63
   },
   "research.q79_native_nonlinear_pair_source": {
    "claim": "native",
-   "consecutive_pass": 17,
+   "consecutive_pass": 18,
    "detail": "",
    "first_seen_utc": "2026-11-13T10:40:36Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.57
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.71
   },
   "research.q7_review_q6_cumulants": {
    "claim": "independent",
-   "consecutive_pass": 79,
+   "consecutive_pass": 80,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:47:47Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.67
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.32
   },
   "research.q80_native_hidden_source_selection": {
    "claim": "native",
-   "consecutive_pass": 15,
+   "consecutive_pass": 16,
    "detail": "",
    "first_seen_utc": "2026-11-13T11:42:48Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 2.49
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 3.21
   },
   "research.q81_native_all_five_source_radical": {
    "claim": "native",
-   "consecutive_pass": 13,
+   "consecutive_pass": 14,
    "detail": "",
    "first_seen_utc": "2026-11-13T13:44:18Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 7.58
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 8.39
   },
   "research.q82_oriented_source_weights": {
    "claim": "conditional",
-   "consecutive_pass": 10,
+   "consecutive_pass": 11,
    "detail": "",
    "first_seen_utc": "2026-11-13T17:08:07Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 18.48
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 25.01
   },
   "research.q83_native_hidden_clock_quotient": {
    "claim": "native",
-   "consecutive_pass": 11,
+   "consecutive_pass": 12,
    "detail": "",
    "first_seen_utc": "2026-11-13T14:42:19Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.66
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.84
   },
   "research.q85_chronology_coefficient": {
    "claim": "conditional",
-   "consecutive_pass": 8,
+   "consecutive_pass": 9,
    "detail": "",
    "first_seen_utc": "2026-11-13T20:38:23Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 18.78
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 25.63
+  },
+  "research.q86_parity_history_energy": {
+   "claim": "native",
+   "consecutive_pass": 1,
+   "detail": "",
+   "first_seen_utc": "2026-11-14T00:55:51Z",
+   "gating": true,
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
+   "stage": "engine",
+   "status": "pass",
+   "tail": "",
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 29.28
   },
   "research.q87_coefficient_elimination": {
    "claim": "conditional",
-   "consecutive_pass": 3,
+   "consecutive_pass": 4,
    "detail": "",
    "first_seen_utc": "2026-11-13T23:49:23Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
+   "utc": "2026-11-14T00:55:51Z",
    "wall_s": 0.31
   },
   "research.q87b_native_bridge_parity_rayleigh": {
    "claim": "conditional",
-   "consecutive_pass": 1,
+   "consecutive_pass": 2,
    "detail": "",
    "first_seen_utc": "2026-11-14T00:37:03Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.33
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.4
   },
   "research.q88_q89_engine_recovery": {
    "claim": "independent",
-   "consecutive_pass": 5,
+   "consecutive_pass": 6,
    "detail": "",
    "first_seen_utc": "2026-11-13T23:06:37Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "engine",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 3.24
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 4.13
   },
   "research.q89_exact_source_all_dictionaries": {
    "claim": "native",
-   "consecutive_pass": 7,
+   "consecutive_pass": 8,
    "detail": "",
    "first_seen_utc": "2026-11-13T22:05:09Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 10.57
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 11.78
   },
   "research.q90_exact_native_fourier": {
    "claim": "native",
-   "consecutive_pass": 6,
+   "consecutive_pass": 7,
    "detail": "",
    "first_seen_utc": "2026-11-13T22:47:11Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 17.59
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 19.58
   },
   "research.q90_source_clock_energies": {
    "claim": "independent",
-   "consecutive_pass": 5,
+   "consecutive_pass": 6,
    "detail": "",
    "first_seen_utc": "2026-11-13T23:06:37Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "engine",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 2.13
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 2.66
   },
   "research.registry_induced_vacuum": {
    "claim": "conditional",
-   "consecutive_pass": 80,
+   "consecutive_pass": 81,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research_heavy",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 1.22
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 1.91
   },
   "research.registry_maxwell_test": {
    "claim": "conditional",
-   "consecutive_pass": 80,
+   "consecutive_pass": 81,
    "detail": "",
    "first_seen_utc": "2026-11-11T02:28:48Z",
    "gating": false,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 3.5
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 4.68
   },
   "research.sandbox_bound_scripts": {
    "claim": "independent",
-   "consecutive_pass": 97,
+   "consecutive_pass": 98,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:03:11Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 0.08
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 0.09
   },
   "research.signed_a5_covariance": {
    "claim": "independent",
-   "consecutive_pass": 94,
+   "consecutive_pass": 95,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:31:28Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 3.45
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 4.49
   },
   "research.signed_dictionary_classes": {
    "claim": "native",
-   "consecutive_pass": 92,
+   "consecutive_pass": 93,
    "detail": "",
    "first_seen_utc": "2026-11-10T22:43:01Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 5.03
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 6.52
   },
   "research.unsigned_axis_order_k2": {
    "claim": "independent",
-   "consecutive_pass": 95,
+   "consecutive_pass": 96,
    "detail": "",
    "first_seen_utc": "2026-11-10T21:23:20Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "research",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 31.97
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 42.79
   },
   "tests.suite": {
    "claim": "regression",
-   "consecutive_pass": 103,
+   "consecutive_pass": 104,
    "detail": "",
    "first_seen_utc": "2026-11-10T19:54:38Z",
    "gating": true,
-   "last_pass_utc": "2026-11-14T00:37:03Z",
-   "run_id": "43533270207",
-   "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
+   "last_pass_utc": "2026-11-14T00:55:51Z",
+   "run_id": "43533656332",
+   "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
    "stage": "tests",
    "status": "pass",
    "tail": "",
-   "utc": "2026-11-14T00:37:03Z",
-   "wall_s": 18.04
+   "utc": "2026-11-14T00:55:51Z",
+   "wall_s": 16.51
   }
  },
  "created_utc": "2026-11-10T19:54:38Z",
@@ -1849,10 +1864,10 @@
   "claim_guard_violations": [],
   "event": "push",
   "gating_failures": [],
-  "run_id": "43533270207",
-  "sha": "e7626a57bc0774cd10c7acaf179e38fb30f49f80",
-  "url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43533270207",
-  "utc": "2026-11-14T00:37:03Z",
+  "run_id": "43533656332",
+  "sha": "f778a40becf461ec008dc9f781856534be94d1b2",
+  "url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43533656332",
+  "utc": "2026-11-14T00:55:51Z",
   "verdict": "pass",
   "versions": {
    "mpmath": "1.3.0",
@@ -1864,17 +1879,17 @@
    "sympy": "1.14.0"
   }
  },
- "runs": 103,
+ "runs": 104,
  "schema": 2,
  "sweep": {
-  "last_run_utc": "2026-11-14T00:37:03Z",
+  "last_run_utc": "2026-11-14T00:55:51Z",
   "scripts": {
    "research_archive/2026-10-13_entropy_gravity/cathedral_13cell_stress_representation_2026_10_13.py": {
     "detail": "",
     "sha256": "ee17b90ce533d67c25deba698e2ebc1816075df9d5e1f9c898a7233adaff6850",
     "status": "pass",
-    "utc": "2026-11-14T00:19:08Z",
-    "wall_s": 0.1
+    "utc": "2026-11-14T00:51:34Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-10-13_entropy_gravity/cathedral_A5_entropy_coupling_audit.py": {
     "detail": "",
@@ -2857,8 +2872,8 @@
     "detail": "",
     "sha256": "311ad2bede019f5eb75c382017bd0bafd94991dbb2c106fe77b0c1f543e852f8",
     "status": "pass",
-    "utc": "2026-11-13T23:56:14Z",
-    "wall_s": 0.23
+    "utc": "2026-11-14T00:39:37Z",
+    "wall_s": 0.22
    },
    "research_archive/2026-11-10_sandbox_bound_scripts/classify_sandbox_bound_scripts.py": {
     "detail": "",
@@ -2908,87 +2923,87 @@
     "detail": "",
     "sha256": "467ae9db54abdbc1661424a069a193e4ee39b705a4de9c187d2de3ca5fe0f737",
     "status": "pass",
-    "utc": "2026-11-13T23:54:53Z",
-    "wall_s": 1.5
+    "utc": "2026-11-14T00:38:17Z",
+    "wall_s": 1.42
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/cathedral_64_history_double_gap_2026_10_29.py": {
     "detail": "",
     "sha256": "207ac80bfbb323ee918b5cb438dbdd9521831f986a45fd63a30cb967ba16a6c5",
     "status": "pass",
-    "utc": "2026-11-13T23:55:06Z",
-    "wall_s": 5.27
+    "utc": "2026-11-14T00:38:30Z",
+    "wall_s": 5.15
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/cathedral_constructed_joint_dynamics_2026_11_07.py": {
     "detail": "",
     "sha256": "5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd",
     "status": "pass",
-    "utc": "2026-11-13T23:55:06Z",
-    "wall_s": 0.47
+    "utc": "2026-11-14T00:38:30Z",
+    "wall_s": 0.43
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/first_principles_arf_source_test.py": {
     "detail": "sandbox path /mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py",
     "sha256": "a904af96693914f8308269e3ba227eb225578acd18431176e1ad9f751a1edc71",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/audit/first_principles_arf_source_test.py\", line 3, in <module>\n    with contextlib.redirect_stdout(io.StringIO()): n=runpy.run_path(p)\n                                                      ^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py'\n",
-    "utc": "2026-11-13T23:55:06Z",
-    "wall_s": 0.36
+    "utc": "2026-11-14T00:38:31Z",
+    "wall_s": 0.29
    },
    "research_archive/2026-11-10_urt_arf_forward/audit/test_cathedral_constructed_joint_2026_11_07.py": {
     "detail": "",
     "sha256": "70a33beae60ec33c2c75de0c2841d317d0a141d371c01f77f0423a81100241fe",
     "status": "pass",
-    "utc": "2026-11-13T23:55:08Z",
-    "wall_s": 0.48
+    "utc": "2026-11-14T00:38:32Z",
+    "wall_s": 0.47
    },
    "research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_runner.py": {
     "detail": "",
     "sha256": "ba05fd5d0df4e4957089c2ce5066e86fb37359cafea7c0e104a8cfe78bcd36f9",
     "status": "pass",
-    "utc": "2026-11-13T23:55:08Z",
+    "utc": "2026-11-14T00:38:32Z",
     "wall_s": 0.31
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/CATHEDRAL_ARF_FOUR_CHANNELS_RECONCILIATION_2026-11-09.py": {
     "detail": "",
     "sha256": "f9b14b8f5aff1e6448009b30bac9c1d8f762eb6404a76e3f703797c15200cc3f",
     "status": "pass",
-    "utc": "2026-11-13T23:55:10Z",
+    "utc": "2026-11-14T00:38:34Z",
     "wall_s": 2.19
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/CATHEDRAL_ARF_FULL_K64_SPECTRAL_PROOF_2026-11-09.py": {
     "detail": "",
     "sha256": "a3f9d312807d4f98644689e2311b7aa44600d4f606ee54ef97479109338cad70",
     "status": "pass",
-    "utc": "2026-11-13T23:55:12Z",
-    "wall_s": 2.33
+    "utc": "2026-11-14T00:38:36Z",
+    "wall_s": 2.14
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py": {
     "detail": "",
     "sha256": "1b870d2c45d27ab4f5bf6138660a489eee5e85130e16b818a43dcecf122183c5",
     "status": "pass",
-    "utc": "2026-11-13T23:55:17Z",
-    "wall_s": 4.86
+    "utc": "2026-11-14T00:38:41Z",
+    "wall_s": 4.83
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_FIRST_PRINCIPLES_24_TRACK_2026-11-09.py": {
     "detail": "",
     "sha256": "4bc2974f990e022ddf2568ffb0b693e41aba460ab84548ee67939e95f7c31758",
     "status": "pass",
-    "utc": "2026-11-13T23:55:18Z",
-    "wall_s": 0.76
+    "utc": "2026-11-14T00:38:42Z",
+    "wall_s": 0.71
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_HISTORY_CLOCK_INFORMATION_CURVATURE_2026-11-09.py": {
     "detail": "sandbox path /mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py",
     "sha256": "370f76184f751af7f91136dd348e6b604c099a9e1e6747509451487f646011dc",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_HISTORY_CLOCK_INFORMATION_CURVATURE_2026-11-09.py\", line 7, in <module>\n    with contextlib.redirect_stdout(io.StringIO()): v=runpy.run_path('/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py')\n                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py'\n",
-    "utc": "2026-11-13T23:55:18Z",
-    "wall_s": 0.28
+    "utc": "2026-11-14T00:38:42Z",
+    "wall_s": 0.26
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py": {
     "detail": "sandbox path /mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py",
     "sha256": "783bfe236c51ab127e8a952310e3a5b049fe647dc039153171adac10cd6f5a7e",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py\", line 13, in <module>\n    with contextlib.redirect_stdout(io.StringIO()): m=runpy.run_path(P)\n                                                      ^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py'\n",
-    "utc": "2026-11-13T23:55:18Z",
+    "utc": "2026-11-14T00:38:42Z",
     "wall_s": 0.08
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_SOURCE_CLOCK_POSITIVE_TRANSFER_2026-11-09.py": {
@@ -2996,8 +3011,8 @@
     "sha256": "8a8b20d95e656c9ad585ba28f4d0e888cb2aad2e22c4287b2afc58300489c083",
     "status": "missing_file",
     "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-10_urt_arf_forward/aux_tests/URT_SOURCE_CLOCK_POSITIVE_TRANSFER_2026-11-09.py\", line 10, in <module>\n    a=runpy.run_path('/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py')\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 290, in run_path\n  File \"<frozen runpy>\", line 254, in _get_code_from_file\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py'\n",
-    "utc": "2026-11-13T23:55:18Z",
-    "wall_s": 0.08
+    "utc": "2026-11-14T00:38:42Z",
+    "wall_s": 0.07
    },
    "research_archive/2026-11-10_urt_arf_forward/aux_tests/cathedral_audit/cathedral_64_chiral_hybridization_2026_10_29.py": {
     "detail": "",
@@ -3011,211 +3026,211 @@
     "sha256": "efbcf9886341d41ab1651c8cc83e9aa25e8c3b1968e2e8c5d63ab62f2494d119",
     "status": "missing_file",
     "tail": "tial_vacuum_audit_2026-11-09.py\", line 116, in <module>\n    Path('/mnt/data/cathedral_native_spatial_vacuum_audit_2026-11-09.json').write_text(json.dumps(results,indent=2)+'\\n')\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1078, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_native_spatial_vacuum_audit_2026-11-09.json'\n",
-    "utc": "2026-11-13T23:55:19Z",
-    "wall_s": 0.37
+    "utc": "2026-11-14T00:38:43Z",
+    "wall_s": 0.41
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_24_CLOCK_MUST_BE_FIBRE_2026-11-09.py": {
     "detail": "",
     "sha256": "c7d37c7a8907867dedc41344d7d7d98e4ac016116507d8cc56516f3e4f3cdb76",
     "status": "pass",
-    "utc": "2026-11-13T23:55:24Z",
-    "wall_s": 5.19
+    "utc": "2026-11-14T00:38:48Z",
+    "wall_s": 5.17
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_24_CLOSED_SOURCE_RESPONSE_2026-11-09.py": {
     "detail": "",
     "sha256": "22e3b78864a8619bd5f4a6ca9f427f6154cecb1d594712af12d6e997d503f138",
     "status": "pass",
-    "utc": "2026-11-13T23:55:26Z",
-    "wall_s": 0.9
+    "utc": "2026-11-14T00:38:49Z",
+    "wall_s": 0.87
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_24_SPECTRAL_PROOF_2026-11-09.py": {
     "detail": "",
     "sha256": "7b2f143fb1aaa5885a69ed7156efc63a0776f6fb1b4aef08275afb521d29fbbb",
     "status": "pass",
-    "utc": "2026-11-13T23:55:44Z",
-    "wall_s": 17.62
+    "utc": "2026-11-14T00:39:07Z",
+    "wall_s": 17.04
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_64_HISTORY_24_CLOCK_EXACT_COUPLING_2026-11-09.py": {
     "detail": "",
     "sha256": "1b870d2c45d27ab4f5bf6138660a489eee5e85130e16b818a43dcecf122183c5",
     "status": "pass",
-    "utc": "2026-11-13T23:55:49Z",
-    "wall_s": 4.85
+    "utc": "2026-11-14T00:39:12Z",
+    "wall_s": 4.77
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_24_CLOCK_CLOSED_RESPONSE_2026-11-09.py": {
     "detail": "",
     "sha256": "1753a23233cd3a50b6a75afd41a4965182bea3f0f6fbd8e9ba0a46e4a5b6cd52",
     "status": "pass",
-    "utc": "2026-11-13T23:55:49Z",
-    "wall_s": 0.12
+    "utc": "2026-11-14T00:39:12Z",
+    "wall_s": 0.11
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_AVERAGED_CHRONOLOGY_2026-11-09.py": {
     "detail": "",
     "sha256": "a539d6062298bcb9816e9e6fb6d246ff173ee72c43c6d13e2d03f0fb64429c59",
     "status": "pass",
-    "utc": "2026-11-13T23:55:50Z",
-    "wall_s": 0.73
+    "utc": "2026-11-14T00:39:13Z",
+    "wall_s": 0.7
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_AVERAGE_SOURCE_RESOLVENT_2026-11-09.py": {
     "detail": "",
     "sha256": "b7a3896c8a07485bf9fc1deb322ff8772dc77eb430a5ff5be47665674c720eb2",
     "status": "pass",
-    "utc": "2026-11-13T23:55:51Z",
-    "wall_s": 0.7
+    "utc": "2026-11-14T00:39:14Z",
+    "wall_s": 0.67
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_EXACT_SOURCE_ISOTYPIC_CERTIFICATE_2026-11-09.py": {
     "detail": "",
     "sha256": "1446768ea7aeef990fcd4b01da714e21584bc5a4c3bc526bb23d7bcf5e4f16e3",
     "status": "pass",
-    "utc": "2026-11-13T23:55:55Z",
-    "wall_s": 3.92
+    "utc": "2026-11-14T00:39:18Z",
+    "wall_s": 3.84
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_GAUGE_COVARIANT_CLOCK_SOURCE_2026-11-09.py": {
     "detail": "",
     "sha256": "063c960dd28a22efabb638e53dbb6b33187939a11bbfc14b96bed5b5d9eaf7e7",
     "status": "pass",
-    "utc": "2026-11-13T23:55:55Z",
-    "wall_s": 0.11
+    "utc": "2026-11-14T00:39:18Z",
+    "wall_s": 0.1
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_PAIR_WALK_FROM_SIX_BITS_2026-11-09.py": {
     "detail": "",
     "sha256": "edfb3b4573fdda83fd7e6b547df354ccda003d50a0f85590f53001b7aa5aa71b",
     "status": "pass",
-    "utc": "2026-11-13T23:55:55Z",
-    "wall_s": 0.69
+    "utc": "2026-11-14T00:39:18Z",
+    "wall_s": 0.68
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_A5_SOURCE_POLE_INTEGER_CERTIFICATE_2026-11-09.py": {
     "detail": "",
     "sha256": "e00e22f8c7f6270786b7c0cf3d220b3bdeee258902aebd16857aee3b01140452",
     "status": "pass",
-    "utc": "2026-11-13T23:55:56Z",
-    "wall_s": 0.69
+    "utc": "2026-11-14T00:39:19Z",
+    "wall_s": 0.72
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_EXACT_SIX_BIT_MEMORY_2026-11-09.py": {
     "detail": "",
     "sha256": "ad6f7112901433abcfadf0aa9a17d9b60e15c17f2761680ca9b955050d701922",
     "status": "pass",
-    "utc": "2026-11-13T23:55:56Z",
-    "wall_s": 0.43
+    "utc": "2026-11-14T00:39:19Z",
+    "wall_s": 0.44
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_EXACT_SOURCE_WALSH_CORRELATIONS_2026-11-09.py": {
     "detail": "",
     "sha256": "e1d5e272340091293419b1ff18a098ff4e2427a07e29d6d45c35c75cb5a24694",
     "status": "pass",
-    "utc": "2026-11-13T23:56:00Z",
-    "wall_s": 3.38
+    "utc": "2026-11-14T00:39:23Z",
+    "wall_s": 3.41
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_FIRST_PRINCIPLES_24_TRACK_2026-11-09.py": {
     "detail": "",
     "sha256": "4bc2974f990e022ddf2568ffb0b693e41aba460ab84548ee67939e95f7c31758",
     "status": "pass",
-    "utc": "2026-11-13T23:56:01Z",
-    "wall_s": 0.77
+    "utc": "2026-11-14T00:39:24Z",
+    "wall_s": 0.78
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_GAUGE_CURRENT_24_WINDING_THEOREM_2026-11-09.py": {
     "detail": "",
     "sha256": "17fd9bfe50789f098a6ad1b1d6fa15975017ad7093f64f93ebe578e3ae05c3c0",
     "status": "pass",
-    "utc": "2026-11-13T23:56:01Z",
-    "wall_s": 0.05
+    "utc": "2026-11-14T00:39:24Z",
+    "wall_s": 0.06
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_HISTORY_CLOCK_INFORMATION_CURVATURE_2026-11-09.py": {
     "detail": "",
     "sha256": "3c810593f97530c5fa08d92dc1b88a8c6f174f01d2fc3df7ea1569297719eba0",
     "status": "pass",
-    "utc": "2026-11-13T23:56:07Z",
-    "wall_s": 5.95
+    "utc": "2026-11-14T00:39:30Z",
+    "wall_s": 6.05
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_NATIVE_24_PERIODIC_SOURCE_SCHUR_2026-11-09.py": {
     "detail": "",
     "sha256": "31c450b2df94806e17e390458e1cc8bb9a464e7e7d628dfdbeb78310518e0a6b",
     "status": "pass",
-    "utc": "2026-11-13T23:56:07Z",
+    "utc": "2026-11-14T00:39:30Z",
     "wall_s": 0.63
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py": {
     "detail": "",
     "sha256": "2436cfb7bf753058b043b416703e4712513589fddf1eef40cc0908f55b39fa82",
     "status": "pass",
-    "utc": "2026-11-13T23:56:08Z",
-    "wall_s": 0.45
+    "utc": "2026-11-14T00:39:31Z",
+    "wall_s": 0.51
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_NATIVE_HISTORY_CLOCK_KERNEL_THEOREM_2026-11-09.py": {
     "detail": "",
     "sha256": "730b497bc2f363618e86cf54aa0b3bf58d824a55c0a065d7618c4268300b6c59",
     "status": "pass",
-    "utc": "2026-11-13T23:56:08Z",
-    "wall_s": 0.44
+    "utc": "2026-11-14T00:39:31Z",
+    "wall_s": 0.45
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_SOURCE_CLOCK_POSITIVE_TRANSFER_2026-11-09.py": {
     "detail": "",
     "sha256": "a03b47dbca529c4bb0585db2908e6af1d20abfd6d3dbd8712c7ca5bfc4f61a1d",
     "status": "pass",
-    "utc": "2026-11-13T23:56:13Z",
+    "utc": "2026-11-14T00:39:37Z",
     "wall_s": 5.23
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/URT_WALSH_RESPONSE_AND_CLOCK_GATE_2026-11-09.py": {
     "detail": "",
     "sha256": "7f0e07d68ae39dd3f656ff6032e74660ab83858224418f10f1d6918ca8f865b3",
     "status": "pass",
-    "utc": "2026-11-13T23:56:19Z",
-    "wall_s": 5.23
+    "utc": "2026-11-14T00:39:42Z",
+    "wall_s": 5.25
    },
    "research_archive/2026-11-10_urt_arf_forward/forward/cathedral_constructed_joint_dynamics_2026_11_07.py": {
     "detail": "",
     "sha256": "5577557613a77796a38f8be7f2615feb4714a8494259f5b253cbcaae60f72fcd",
     "status": "pass",
-    "utc": "2026-11-13T23:56:19Z",
-    "wall_s": 0.45
+    "utc": "2026-11-14T00:39:42Z",
+    "wall_s": 0.42
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/CATHEDRAL_FIRST_PRINCIPLES_BASELINE_2026_11_10.py": {
     "detail": "",
     "sha256": "fde3462591d8011c617b2202ad516a9eb6be3aa1d660f7ee3dc251830c682458",
     "status": "pass",
-    "utc": "2026-11-13T23:56:19Z",
-    "wall_s": 0.08
+    "utc": "2026-11-14T00:39:43Z",
+    "wall_s": 0.07
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_24_CLOCK_HOLONOMY_POLE_EXCLUSION_2026_11_10.py": {
     "detail": "",
     "sha256": "59b8675c48347aa65b8de7e37a84fe70b4c89edada4348ee3eecff28b607790c",
     "status": "pass",
-    "utc": "2026-11-13T23:56:19Z",
+    "utc": "2026-11-14T00:39:43Z",
     "wall_s": 0.09
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_24x64_OVERLAP_TRACE_EXACT_CERTIFICATE_2026_11_10.py": {
     "detail": "",
     "sha256": "582edd9701f1e65fc147d12a7606ac31dff82ce82ae37ddd5eb86e4dc652d2bf",
     "status": "pass",
-    "utc": "2026-11-13T23:56:20Z",
-    "wall_s": 0.4
+    "utc": "2026-11-14T00:39:43Z",
+    "wall_s": 0.38
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A4_CUBIC_EXACT_SOURCE_THEOREM_2026_11_10.py": {
     "detail": "",
     "sha256": "6f5f0a7792f5cf3d414ebcc1c1784dba6a6b620e95adc8b7f089a00ac5accdf4",
     "status": "pass",
-    "utc": "2026-11-13T23:56:24Z",
-    "wall_s": 4.19
+    "utc": "2026-11-14T00:39:47Z",
+    "wall_s": 4.11
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A4_SCALAR_CUMULANTS_2026_11_10.py": {
     "detail": "",
     "sha256": "a43e9a37f539f4e2325c81f1ccd61f685969b13549d6d08bfc02ec5f58449ee5",
     "status": "pass",
-    "utc": "2026-11-13T23:56:25Z",
-    "wall_s": 0.75
+    "utc": "2026-11-14T00:39:48Z",
+    "wall_s": 0.71
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_CHRONOLOGY_DIRICHLET_GAP_2026_11_10.py": {
     "detail": "",
     "sha256": "c12df3da5dcd37b06f15fd1e80b5e42b4362d1ac2a36f9d00653f60a1696d4ee",
     "status": "pass",
-    "utc": "2026-11-13T23:56:25Z",
-    "wall_s": 0.47
+    "utc": "2026-11-14T00:39:48Z",
+    "wall_s": 0.44
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_DARK_ORBIT_COUPLING_2026_11_10.py": {
     "detail": "",
     "sha256": "31ae71efdc237fbdf211d5c4122cddd3c7cea03a6a091c1e158fe0c6cfcee211",
     "status": "pass",
-    "utc": "2026-11-13T23:56:36Z",
-    "wall_s": 4.17
+    "utc": "2026-11-14T00:39:59Z",
+    "wall_s": 4.1
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_MARKOV_VACUUM_K2_THEOREM_2026_11_10.py": {
     "detail": "",
@@ -3228,324 +3243,324 @@
     "detail": "",
     "sha256": "f37eb511e9192e517d3c8850b6ad801a69be1c44f51cb2b773beaffa29eadea1",
     "status": "pass",
-    "utc": "2026-11-13T23:56:37Z",
-    "wall_s": 0.89
+    "utc": "2026-11-14T00:40:00Z",
+    "wall_s": 0.87
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_NEUTRAL_SOURCE_EXACT_CUMULANTS_2026_11_10.py": {
     "detail": "",
     "sha256": "23ff48e330bd85c74ca1d8fccd0a64271305ef9eaed5cb2e22a1c0f4abdac700",
     "status": "pass",
-    "utc": "2026-11-13T23:56:41Z",
-    "wall_s": 3.69
+    "utc": "2026-11-14T00:40:04Z",
+    "wall_s": 3.7
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_QUENCHED_ANNEALED_CUMULANT_THEOREM_2026_11_10.py": {
     "detail": "",
     "sha256": "b654a2d7e713864232153df141432c34508e809e17919c37ea9319d8eac29a25",
     "status": "pass",
-    "utc": "2026-11-13T23:56:41Z",
+    "utc": "2026-11-14T00:40:04Z",
     "wall_s": 0.04
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_REYNOLDS_HISTORY_TRANSFER_2026_11_10.py": {
     "detail": "",
     "sha256": "f5e3ad41893e4a1ec355eca3b6183a98c11b3c0e2c5f8abfe522df46cf4241f4",
     "status": "pass",
-    "utc": "2026-11-13T23:56:42Z",
-    "wall_s": 0.86
+    "utc": "2026-11-14T00:40:05Z",
+    "wall_s": 0.81
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_SYMMETRIC_CUBIC_SOURCE_2026_11_10.py": {
     "detail": "",
     "sha256": "3462183d3beae5ea95cea6c22f28d4c2eab9dc6b73db930f0e75cf185fbc8549",
     "status": "pass",
-    "utc": "2026-11-13T23:56:46Z",
-    "wall_s": 4.75
+    "utc": "2026-11-14T00:40:09Z",
+    "wall_s": 4.66
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_A5_TWIRLED_CHRONOLOGY_SPECTRUM_2026_11_10.py": {
     "detail": "",
     "sha256": "1c2d750cb51d3b448dd13eeb1e9f9e8c6cbd4d4ffcc03ccafb5cb7b05a95a103",
     "status": "pass",
-    "utc": "2026-11-13T23:56:47Z",
-    "wall_s": 0.73
+    "utc": "2026-11-14T00:40:10Z",
+    "wall_s": 0.7
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ANTIPODAL_C3_CLOCK_MATTER_2026_11_10.py": {
     "detail": "",
     "sha256": "7519d31594ae9aede2b85b1f3cf0e130f095c224f12c164436c710c3d5f48dab",
     "status": "pass",
-    "utc": "2026-11-13T23:57:40Z",
-    "wall_s": 53.36
+    "utc": "2026-11-14T00:41:03Z",
+    "wall_s": 53.08
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ARF_CANONICAL_RECURSION_GATE_2026_11_10.py": {
     "detail": "",
     "sha256": "178d343787525f7976ce8cefc08f47476f644d0924530be94ec8e41415cd6656",
     "status": "pass",
-    "utc": "2026-11-13T23:57:41Z",
-    "wall_s": 0.6
+    "utc": "2026-11-14T00:41:04Z",
+    "wall_s": 0.49
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_24FOLD_MONODROMY_2026_11_10.py": {
     "detail": "",
     "sha256": "e282489702b70ef1b11c849546fa26c0dd76014880f8d2bf653f96e23f7d07fb",
     "status": "pass",
-    "utc": "2026-11-13T23:58:13Z",
-    "wall_s": 5.42
+    "utc": "2026-11-14T00:41:35Z",
+    "wall_s": 5.47
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_A5_FRAME_SENSITIVITY_2026_11_10.py": {
     "detail": "",
     "sha256": "f447a1b9b6d63550c83e14de80cd16c68a441a55abd6ec008b147fae93f1866e",
     "status": "pass",
-    "utc": "2026-11-13T23:58:19Z",
-    "wall_s": 6.19
+    "utc": "2026-11-14T00:41:42Z",
+    "wall_s": 6.25
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_GOLDEN_BASEPOINT_CONJUGACY_2026_11_10.py": {
     "detail": "",
     "sha256": "de515a630c3317ef5212e441a1172adf8fc92dd0418c126c85ed328bc4e3685c",
     "status": "pass",
-    "utc": "2026-11-13T23:58:26Z",
-    "wall_s": 6.25
+    "utc": "2026-11-14T00:41:48Z",
+    "wall_s": 6.18
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_KMS_ENTROPIC_STIFFNESS_2026_11_10.py": {
     "detail": "",
     "sha256": "9dfe6d579d3e433c58d3af6b9ea33350f9fa67d334773bffc58c900ab4f64dc5",
     "status": "pass",
-    "utc": "2026-11-14T00:05:25Z",
-    "wall_s": 5.2
+    "utc": "2026-11-14T00:48:49Z",
+    "wall_s": 5.12
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_C3_SCHUR_DRESSED_CLOCK_2026_11_10.py": {
     "detail": "",
     "sha256": "275a652515a63e239c8838cd88d2deb9025127610ad2927bd03d49f755a24ea7",
     "status": "pass",
-    "utc": "2026-11-14T00:06:18Z",
-    "wall_s": 53.23
+    "utc": "2026-11-14T00:49:42Z",
+    "wall_s": 53.85
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_CANONICAL_HAAR_GREEN_KUBO_2026_11_10.py": {
     "detail": "",
     "sha256": "3130ad7d44e17f64cbe5a1a2bd7586c46fc1630373f9a787c243add9c352472c",
     "status": "pass",
-    "utc": "2026-11-14T00:06:19Z",
-    "wall_s": 0.8
+    "utc": "2026-11-14T00:49:43Z",
+    "wall_s": 0.74
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_A5_TENSOR_MATTER_BRIDGE_2026_11_10.py": {
     "detail": "",
     "sha256": "865d3b37c62addf28ac5d3d9bcbd95d5cabd5c690685767411234037e8afa304",
     "status": "pass",
-    "utc": "2026-11-14T00:19:01Z",
-    "wall_s": 11.36
+    "utc": "2026-11-14T00:51:32Z",
+    "wall_s": 9.35
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_DELAYED_RESPONSE_2026_11_10.py": {
     "detail": "",
     "sha256": "190f8aef578b8eb3edbca894f29a34dbf21ac512461bcf09457a05b4896f5fc2",
     "status": "pass",
-    "utc": "2026-11-14T00:19:02Z",
-    "wall_s": 0.41
+    "utc": "2026-11-14T00:51:32Z",
+    "wall_s": 0.35
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_FULL_RESPONSE_2026_11_10.py": {
     "detail": "",
     "sha256": "120541a13e13c4d9088e9ab3c2ada3b23006792837e41b6b5c0a8a49fd49ab7c",
     "status": "pass",
-    "utc": "2026-11-14T00:19:04Z",
-    "wall_s": 2.24
+    "utc": "2026-11-14T00:51:34Z",
+    "wall_s": 1.77
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_LOCAL_VERTEX_NO_GO_2026_11_10.py": {
     "detail": "",
     "sha256": "76b9e312ff157108efb6d36a62c1a9615cecb54208fe1bf9937eb02d149de4e6",
     "status": "pass",
-    "utc": "2026-11-14T00:19:08Z",
-    "wall_s": 4.42
+    "utc": "2026-11-14T00:51:38Z",
+    "wall_s": 3.65
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_PARITY_COMPOSITE_SCHUR_2026_11_10.py": {
     "detail": "",
     "sha256": "ae62a5bf2dd0e6a7778977e49d556fe2e0b40cd4d361550d4aa0e18962fa4835",
     "status": "pass",
-    "utc": "2026-11-14T00:19:13Z",
-    "wall_s": 4.98
+    "utc": "2026-11-14T00:51:42Z",
+    "wall_s": 4.12
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_THREE_CHANNEL_CUBIC_TENSOR_2026_11_10.py": {
     "detail": "",
     "sha256": "bbe947e12826249def02992fc5786e0ae749305a1e6b5b5e934e445488e8e4a6",
     "status": "pass",
-    "utc": "2026-11-14T00:19:24Z",
-    "wall_s": 10.9
+    "utc": "2026-11-14T00:51:51Z",
+    "wall_s": 9.05
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DUAL_PAIR_QUARTET_2026_11_10.py": {
     "detail": "",
     "sha256": "b50c84f3a2eaa83ba0ebfe9c123a3f985a6cd27b85117255b7da33d7392fff5c",
     "status": "pass",
-    "utc": "2026-11-14T00:22:13Z",
-    "wall_s": 61.03
+    "utc": "2026-11-14T00:54:02Z",
+    "wall_s": 42.43
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_EXACT_A4_THIRD_CUMULANT_RATE_2026_11_10.py": {
     "detail": "",
     "sha256": "68df0bcfe7ce2a467236004268148846db3b68e34a8d6295e934efe98b511a58",
     "status": "pass",
-    "utc": "2026-11-14T00:22:55Z",
-    "wall_s": 5.59
+    "utc": "2026-11-14T00:54:37Z",
+    "wall_s": 4.7
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_EXACT_NEUTRAL_FOURTH_CUMULANT_2026_11_10.py": {
     "detail": "",
     "sha256": "50317d2b86c706f9515b57ba97e3a7c57f6e862974a99cb4e63c5fcf024e2aa5",
     "status": "pass",
-    "utc": "2026-11-14T00:23:05Z",
-    "wall_s": 10.15
+    "utc": "2026-11-14T00:54:45Z",
+    "wall_s": 8.64
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_FACE_EDGE_QUARTET_PAIRING_2026_11_10.py": {
     "detail": "",
     "sha256": "f0b060d8e7d5ea1d4083f47ae00d6442834d7e29cd4085b178c4d00597bb3df3",
     "status": "pass",
-    "utc": "2026-11-14T00:23:11Z",
-    "wall_s": 2.69
+    "utc": "2026-11-14T00:54:50Z",
+    "wall_s": 2.18
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_FIVE_SOLID_STUECKELBERG_WARD_SCREENING_2026_11_10.py": {
     "detail": "",
     "sha256": "519abcbaebe0b0d0e5f9aeb7789dab17b95172e21dfd8b4c3d5d18652a065710",
     "status": "pass",
-    "utc": "2026-11-14T00:23:11Z",
-    "wall_s": 0.85
+    "utc": "2026-11-14T00:54:51Z",
+    "wall_s": 0.72
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_FIXED_FRAME_A5_GREEN_KUBO_2026_11_10.py": {
     "detail": "",
     "sha256": "ddbc613965fb029acfaf1c4229a1ed94c3314a61cc0ca983eb3dab106127d434",
     "status": "pass",
-    "utc": "2026-11-14T00:23:12Z",
-    "wall_s": 0.78
+    "utc": "2026-11-14T00:54:52Z",
+    "wall_s": 0.69
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H13_A5_CHARGE_TWO_PAIRING_CERTIFICATE_2026_11_10.py": {
     "detail": "",
     "sha256": "4b543f47c3d1e8e5b36c807bf1e70bc120fd8a93039db589a8f7e60a8a02c423",
     "status": "pass",
-    "utc": "2026-11-14T00:23:13Z",
-    "wall_s": 0.48
+    "utc": "2026-11-14T00:54:52Z",
+    "wall_s": 0.43
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H64_A5_CHRONOLOGY_MULTIPLICITIES_2026_11_10.py": {
     "detail": "",
     "sha256": "485f3bbed406cade33e3b4c8bf1fdff64b302efaa2d558c1e850b9100f057882",
     "status": "pass",
-    "utc": "2026-11-14T00:23:13Z",
-    "wall_s": 0.59
+    "utc": "2026-11-14T00:54:53Z",
+    "wall_s": 0.51
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H64_RESONANT_PAIR_CHRONOLOGY_2026_11_10.py": {
     "detail": "",
     "sha256": "15a309e5b81832f56fc11d2008a8ec9c6949f68fdf40c00ebe10d9dbf357858a",
     "status": "pass",
-    "utc": "2026-11-14T00:23:14Z",
-    "wall_s": 1.03
+    "utc": "2026-11-14T00:54:54Z",
+    "wall_s": 0.86
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_H64_ZERO_MODE_HOLONOMY_2026_11_10.py": {
     "detail": "",
     "sha256": "073910b3342b79acdce70b329b12be72bf7f5a9a274a430593027325cf1dfc7d",
     "status": "pass",
-    "utc": "2026-11-14T00:23:15Z",
-    "wall_s": 0.5
+    "utc": "2026-11-14T00:54:54Z",
+    "wall_s": 0.42
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_HAAR_CLOCK_POLAR_KMS_BRIDGE_2026_11_10.py": {
     "detail": "",
     "sha256": "45aec5d312624706721e185855fac9265307d87ef56b61b5b54df465698a0e71",
     "status": "pass",
-    "utc": "2026-11-14T00:23:22Z",
-    "wall_s": 7.12
+    "utc": "2026-11-14T00:54:59Z",
+    "wall_s": 5.08
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_KMS_POSITIVE_TRANSFER_CLOCK_GATE_2026_11_10.py": {
     "detail": "",
     "sha256": "a15f777bce5fec15220e574b756143df5e018936d076462edffafb0cbf40e28f",
     "status": "pass",
-    "utc": "2026-11-14T00:23:23Z",
-    "wall_s": 0.9
+    "utc": "2026-11-14T00:55:00Z",
+    "wall_s": 0.81
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_MINIMAL_PAIR_POSITIVE_TRANSFER_2026_11_10.py": {
     "detail": "",
     "sha256": "a1bd5ca353e4509ef489328a3b30de747f828d8f90f34acec0f81974aed45cb1",
     "status": "pass",
-    "utc": "2026-11-14T00:23:24Z",
-    "wall_s": 0.92
+    "utc": "2026-11-14T00:55:01Z",
+    "wall_s": 0.81
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_64X24_CHARGED_MATTER_WARD_2026_11_10.py": {
     "detail": "",
     "sha256": "80d99d13b6a21fd6d76f5a40d19b93918e59306036e4aca49d78bfb3965a72a0",
     "status": "pass",
-    "utc": "2026-11-14T00:23:24Z",
-    "wall_s": 0.09
+    "utc": "2026-11-14T00:55:01Z",
+    "wall_s": 0.08
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_CLOCK_A5_NO_GO_2026_11_10.py": {
     "detail": "",
     "sha256": "62b2a2ffac8a5de409d2403aa3a7bf4547bcd91e447e62182f182f6c64d7d8b5",
     "status": "pass",
-    "utc": "2026-11-14T00:23:24Z",
-    "wall_s": 0.1
+    "utc": "2026-11-14T00:55:01Z",
+    "wall_s": 0.09
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_GOLDEN_HOLONOMY_STATIONARITY_2026_11_10.py": {
     "detail": "",
     "sha256": "67f3fbcb260deba0916d40126004275ba7f2c2ed07670a8304fdce0c71366cbd",
     "status": "pass",
-    "utc": "2026-11-14T00:23:24Z",
-    "wall_s": 0.06
+    "utc": "2026-11-14T00:55:01Z",
+    "wall_s": 0.05
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_POLAR_BERRY_CURRENT_2026_11_10.py": {
     "detail": "",
     "sha256": "d55c26d52246e0590c2c9e0aee039b1b965a7f6dc63c4d41863ef75df38fd501",
     "status": "pass",
-    "utc": "2026-11-14T00:23:31Z",
-    "wall_s": 7.1
+    "utc": "2026-11-14T00:55:06Z",
+    "wall_s": 5.08
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_Q6_TILTED_TRANSFER_ALL_CUMULANTS_2026_11_10.py": {
     "detail": "",
     "sha256": "917c8297f9cd58d3f4342a449dc2e35dd7d82703b03b4b42030fb63141f8901b",
     "status": "pass",
-    "utc": "2026-11-14T00:23:31Z",
-    "wall_s": 0.15
+    "utc": "2026-11-14T00:55:06Z",
+    "wall_s": 0.14
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NATIVE_SOURCE_24CLOCK_FOURIER_VERIFY_2026_11_10.py": {
     "detail": "",
     "sha256": "401331f34bf4bc4f758de4487bc0998228c475c2c4bb4436ec31260b0f4d2d55",
     "status": "pass",
-    "utc": "2026-11-14T00:23:32Z",
-    "wall_s": 0.69
+    "utc": "2026-11-14T00:55:07Z",
+    "wall_s": 0.57
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NEUTRAL_HIDDEN_SOURCE_CUMULANT_2026_11_10.py": {
     "detail": "",
     "sha256": "1777c23a305d114c1324da2e07ffcaafb7a9bee21c2412ca8c84825b03afd68d",
     "status": "pass",
-    "utc": "2026-11-14T00:23:32Z",
-    "wall_s": 0.36
+    "utc": "2026-11-14T00:55:07Z",
+    "wall_s": 0.33
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NEUTRAL_ORTHOGONAL_CUBIC_2026_11_10.py": {
     "detail": "",
     "sha256": "81cac4e9a4b805a4a78420c4db96873541da9ae37479c378f9f715aad4a20c12",
     "status": "pass",
-    "utc": "2026-11-14T00:23:33Z",
-    "wall_s": 0.8
+    "utc": "2026-11-14T00:55:08Z",
+    "wall_s": 0.66
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_NO_FIT_GAUGE_STIFFNESS_UNDERDETERMINATION_2026_11_10.py": {
     "detail": "",
     "sha256": "3f8215524e3039d1d3ee95137836403e2a7ad996a70467766a3e42ef0844519b",
     "status": "pass",
-    "utc": "2026-11-14T00:23:34Z",
-    "wall_s": 0.48
+    "utc": "2026-11-14T00:55:08Z",
+    "wall_s": 0.43
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_ORIGINAL_190X64_DIAGONAL_CHARGE_AND_FIVE_SOLID_SECTORS_2026_11_10.py": {
     "detail": "sandbox path /mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py",
     "sha256": "310f5e9d83f6dd8240032c194202dac2e4723cb106b18446f515542e61b151eb",
     "status": "missing_file",
     "tail": "rward/new_gate/URT_ORIGINAL_190X64_DIAGONAL_CHARGE_AND_FIVE_SOLID_SECTORS_2026_11_10.py\", line 15, in <module>\n    src=p.read_text();marker='rng=np.random.default_rng(20261107)'\n        ^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/cathedral_audit/cathedral_constructed_joint_dynamics_2026_11_07.py'\n",
-    "utc": "2026-11-14T00:23:34Z",
-    "wall_s": 0.13
+    "utc": "2026-11-14T00:55:08Z",
+    "wall_s": 0.08
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_POLAR_A4_TWO_ARF_FACTORS_2026_11_10.py": {
     "detail": "",
     "sha256": "22fb5ebeec57c59e9127a3e0415c92f462413ba41b91bc8ff299c3519cf256b6",
     "status": "pass",
-    "utc": "2026-11-14T00:24:02Z",
-    "wall_s": 11.4
+    "utc": "2026-11-14T00:55:31Z",
+    "wall_s": 8.61
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_POLAR_GOLDEN_PHASE_SPECIFICITY_TEST_2026_11_10.py": {
     "detail": "",
     "sha256": "526289672ee420463218555b3466ecfd21b702401b5d44fd1941f3889a7dc7d5",
     "status": "pass",
-    "utc": "2026-11-14T00:24:09Z",
-    "wall_s": 7.19
+    "utc": "2026-11-14T00:55:36Z",
+    "wall_s": 5.09
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_POLAR_MINIMUM_DISTURBANCE_COVARIANCE_2026_11_10.py": {
     "detail": "",
     "sha256": "6ffe9148072047b95490ad375913c1760d02cf16309363e0a1963f906c19e147",
     "status": "pass",
-    "utc": "2026-11-14T00:24:16Z",
-    "wall_s": 7.13
+    "utc": "2026-11-14T00:55:41Z",
+    "wall_s": 5.07
    },
    "research_archive/2026-11-10_urt_arf_forward/new_gate/URT_POLAR_PHASE_WILSON_HOLONOMY_2026_11_10.py": {
     "detail": "",
@@ -3636,15 +3651,15 @@
     "detail": "",
     "sha256": "d5dfb2d2bbc56ac9cdd60ac6a32db21eda1faa8fa027cf5fc328abec30feeb69",
     "status": "pass",
-    "utc": "2026-11-14T00:19:24Z",
-    "wall_s": 0.09
+    "utc": "2026-11-14T00:51:51Z",
+    "wall_s": 0.08
    },
    "research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_INDUCED_EM_ICOSAHEDRON_2026_11_11.py": {
     "detail": "",
     "sha256": "5d57a5c3b5c723e5f328311427c56dc22b494c504553bbfde03485b99937d107",
     "status": "pass",
-    "utc": "2026-11-14T00:19:25Z",
-    "wall_s": 0.2
+    "utc": "2026-11-14T00:51:51Z",
+    "wall_s": 0.16
    },
    "research_archive/2026-11-11_hidden_parity/HIDDEN_PARITY_DELTA_SELECTION_2026_11_11.py": {
     "detail": "",
@@ -3741,8 +3756,8 @@
     "detail": "",
     "sha256": "c7549845507bcc989b6f0edf92b744115f61ef833ab9f216004281a2ab72e0cc",
     "status": "pass",
-    "utc": "2026-11-14T00:19:25Z",
-    "wall_s": 0.03
+    "utc": "2026-11-14T00:51:51Z",
+    "wall_s": 0.02
    },
    "research_archive/2026-11-11_q23_photon_gauge_typing/Q23_PHOTON_GAUGE_TYPING_2026_11_11.py": {
     "detail": "",
@@ -3755,57 +3770,57 @@
     "detail": "",
     "sha256": "27ada4b6c848bdf6fcd20a98a95c3efb8f7fd06079ad5b0a800993db35b082d9",
     "status": "pass",
-    "utc": "2026-11-14T00:19:25Z",
-    "wall_s": 0.86
+    "utc": "2026-11-14T00:51:52Z",
+    "wall_s": 0.72
    },
    "research_archive/2026-11-11_q24_history_symmetries/q24_k5_and_history_symmetries.py": {
     "detail": "",
     "sha256": "7b1970a38cdf55b94fc5a7eb6358710f0d07d8acc155905006e39bcfd9f5419e",
     "status": "pass",
-    "utc": "2026-11-14T00:21:06Z",
-    "wall_s": 81.51
+    "utc": "2026-11-14T00:53:14Z",
+    "wall_s": 67.05
    },
    "research_archive/2026-11-11_q25_4d_a5_photon/Q25_4D_A5_PHOTON_2026_11_11.py": {
     "detail": "",
     "sha256": "8ce055314655db55a9e421697aa99a81310f31320b1f61eb37b65f24bb2b5374",
     "status": "pass",
-    "utc": "2026-11-14T00:21:07Z",
-    "wall_s": 0.6
+    "utc": "2026-11-14T00:53:15Z",
+    "wall_s": 0.53
    },
    "research_archive/2026-11-11_q27_twirled_orientation/q27_twirled_orientation.py": {
     "detail": "",
     "sha256": "154fe5a468fc31a753258396faa8ac91943e0ebbc9983cb64c05a70f83c65e89",
     "status": "pass",
-    "utc": "2026-11-14T00:18:50Z",
+    "utc": "2026-11-14T00:51:22Z",
     "wall_s": 1.63
    },
    "research_archive/2026-11-11_q28_twirled_third_trace/q28_twirled_third_trace.py": {
     "detail": "",
     "sha256": "787afa766bfdece5c2b056a368a238dbd6a58ac200ca861ca5b770263054894f",
     "status": "pass",
-    "utc": "2026-11-14T00:18:48Z",
-    "wall_s": 1.97
+    "utc": "2026-11-14T00:51:21Z",
+    "wall_s": 1.8
    },
    "research_archive/2026-11-11_q29_twirled_fourth_trace/q29_twirled_fourth_trace.py": {
     "detail": "",
     "sha256": "cebeae541ae6289b48222f8c3849110b5c37204dae3a9720bf33928ae7d4f748",
     "status": "pass",
-    "utc": "2026-11-14T00:08:02Z",
-    "wall_s": 3.25
+    "utc": "2026-11-14T00:51:18Z",
+    "wall_s": 3.54
    },
    "research_archive/2026-11-11_q30_twirled_all_order_spectrum/q30_twirled_all_order_spectrum.py": {
     "detail": "",
     "sha256": "2d416d97c5ee4188f637326198175eb58b135708b0cfcd3571fa91440c55e57a",
     "status": "pass",
-    "utc": "2026-11-14T00:02:49Z",
-    "wall_s": 87.02
+    "utc": "2026-11-14T00:46:12Z",
+    "wall_s": 87.37
    },
    "research_archive/2026-11-11_q31_rational_similarity/q31_rational_similarity.py": {
     "detail": "",
     "sha256": "e6ab245e3cb5d99201f1da66ec257598705ffad04af6e05c0cca7b9e75d1c488",
     "status": "timeout",
     "tail": "",
-    "utc": "2026-11-14T00:01:00Z",
+    "utc": "2026-11-14T00:44:22Z",
     "wall_s": 120.11
    },
    "research_archive/2026-11-11_q32_mixed_trace_meaning/q32_mixed_trace_meaning.py": {
@@ -3819,15 +3834,15 @@
     "detail": "",
     "sha256": "34524c19d80937209cf6e94959aabe8b253cba2458cd1ef96759b1f55814a301",
     "status": "pass",
-    "utc": "2026-11-13T23:58:59Z",
-    "wall_s": 31.35
+    "utc": "2026-11-14T00:42:22Z",
+    "wall_s": 31.7
    },
    "research_archive/2026-11-11_q34_seventh_mixed_words/q34_seventh_mixed_words.py": {
     "detail": "",
     "sha256": "3d721f17a5a9d1811b158f0c48b34ce468a73c8a345ca30aed812bfda1e8edb9",
     "status": "pass",
-    "utc": "2026-11-13T23:55:00Z",
-    "wall_s": 6.89
+    "utc": "2026-11-14T00:38:25Z",
+    "wall_s": 7.07
    },
    "research_archive/2026-11-11_q35_eighth_mixed_words/q35_eighth_mixed_words.py": {
     "detail": "",
@@ -3840,15 +3855,15 @@
     "detail": "",
     "sha256": "a80051239f78ae10e06b454c07d23bba4d2ab44bc62a4a03dafc830b4003c7e1",
     "status": "pass",
-    "utc": "2026-11-14T00:07:57Z",
-    "wall_s": 98.81
+    "utc": "2026-11-14T00:51:14Z",
+    "wall_s": 90.89
    },
    "research_archive/2026-11-11_q37_primitive_chronology/q37_primitive_q2_trace.py": {
     "detail": "",
     "sha256": "ee39b1cc1396ee72a9264eaf112fbf127688cd57b06b2210fc3ba098c309d8ae",
     "status": "pass",
-    "utc": "2026-11-13T23:57:41Z",
-    "wall_s": 0.29
+    "utc": "2026-11-14T00:41:04Z",
+    "wall_s": 0.27
    },
    "research_archive/2026-11-11_q38_primitive_q2_allpairs/q38_primitive_q2_allpairs.py": {
     "detail": "",
@@ -3861,8 +3876,8 @@
     "detail": "",
     "sha256": "1ab61cf882dd51e16e6cac158198818b991393bb636f44c984a9d1fb02341f19",
     "status": "pass",
-    "utc": "2026-11-14T00:21:12Z",
-    "wall_s": 4.76
+    "utc": "2026-11-14T00:53:20Z",
+    "wall_s": 4.38
    },
    "research_archive/2026-11-11_q3_twirled_chronology_classes/Q3_TWIRLED_CHRONOLOGY_CLASSES_2026_11_11.py": {
     "detail": "",
@@ -3875,8 +3890,8 @@
     "detail": "",
     "sha256": "2cda011775a83d3eaa4329ac915ab49552b2bf4d019cce373687d6fac1ab6825",
     "status": "pass",
-    "utc": "2026-11-13T23:58:08Z",
-    "wall_s": 1.2
+    "utc": "2026-11-14T00:41:30Z",
+    "wall_s": 1.37
    },
    "research_archive/2026-11-11_q40_review_operator_equality/q40_review_operator_equality.py": {
     "detail": "",
@@ -3903,8 +3918,8 @@
     "detail": "",
     "sha256": "6d70c2cb1b7e06ab921df51335c494b664dc2ad47ac2ba9867a23eb856c9baff",
     "status": "pass",
-    "utc": "2026-11-14T00:23:08Z",
-    "wall_s": 1.99
+    "utc": "2026-11-14T00:54:48Z",
+    "wall_s": 1.87
    },
    "research_archive/2026-11-11_q4_native_matter_map/Q4_NATIVE_MATTER_MAP_2026_11_11.py": {
     "detail": "",
@@ -3917,7 +3932,7 @@
     "detail": "",
     "sha256": "5001aa481ae8843131dae51ee3f475dc22f657a6aba3ab6120d34cdb3386e07b",
     "status": "pass",
-    "utc": "2026-11-14T00:21:12Z",
+    "utc": "2026-11-14T00:53:20Z",
     "wall_s": 0.03
    },
    "research_archive/2026-11-11_q7_review/Q7_REVIEW_Q6_CUMULANTS_A5_MIXING_2026_11_11.py": {
@@ -3974,22 +3989,22 @@
     "detail": "",
     "sha256": "50bbe74f755392e724e5730d72abe17123db3a19d77301895ac659c789efb6c0",
     "status": "pass",
-    "utc": "2026-11-13T23:58:07Z",
-    "wall_s": 5.49
+    "utc": "2026-11-14T00:41:28Z",
+    "wall_s": 5.47
    },
    "research_archive/2026-11-12_q45_zero_coset_orders/q45_zero_coset_orders.py": {
     "detail": "",
     "sha256": "4acc569238da3e136b05c16e75f307d3645c5d08b10060e936203ce89e58ecaa",
     "status": "pass",
-    "utc": "2026-11-13T23:56:32Z",
-    "wall_s": 6.6
+    "utc": "2026-11-14T00:39:55Z",
+    "wall_s": 6.81
    },
    "research_archive/2026-11-12_q46_rotation_mechanism/q46_rotation_mechanism.py": {
     "detail": "",
     "sha256": "46a8629f7b08756697e8424f76d531567f41965f6cc1cc56c39f945269cfd69c",
     "status": "pass",
-    "utc": "2026-11-14T00:22:49Z",
-    "wall_s": 2.91
+    "utc": "2026-11-14T00:54:32Z",
+    "wall_s": 2.67
    },
    "research_archive/2026-11-12_q49_fixed_source_gauge/q49_fixed_source_gauge_obstruction.py": {
     "detail": "",
@@ -4002,15 +4017,15 @@
     "detail": "",
     "sha256": "6639b4795c50977e59b7d580228869f0b257fd067d48866b5027ef430f1a1d66",
     "status": "pass",
-    "utc": "2026-11-14T00:22:14Z",
-    "wall_s": 1.03
+    "utc": "2026-11-14T00:54:03Z",
+    "wall_s": 0.84
    },
    "research_archive/2026-11-12_q49_native_ward_history_map/q49_native_ward_history_map.py": {
     "detail": "",
     "sha256": "3f523944a7363f3e48057d2aa84db6273400dbe875bc2687b9693cbdd243dd9e",
     "status": "pass",
-    "utc": "2026-11-13T23:58:28Z",
-    "wall_s": 2.41
+    "utc": "2026-11-14T00:41:50Z",
+    "wall_s": 2.4
    },
    "research_archive/2026-11-12_q50_history_gauge/q50_uniform_history_obstruction.py": {
     "detail": "",
@@ -4037,7 +4052,7 @@
     "detail": "",
     "sha256": "73fa349bcfb4a4347da484548d6fe3f9c15a198a8d5b76809d207a79862c590a",
     "status": "pass",
-    "utc": "2026-11-14T00:02:49Z",
+    "utc": "2026-11-14T00:46:13Z",
     "wall_s": 0.64
    },
    "research_archive/2026-11-12_q56_nonlinear_stationary/Q56_FULL_STATIONARY_CURRENT_VERIFY.py": {
@@ -4051,63 +4066,63 @@
     "detail": "",
     "sha256": "432c2eb7726399ddf6e5036e4d89a79a06544e4643ac3d5f8b9a37c29d7fb3b0",
     "status": "pass",
-    "utc": "2026-11-14T00:23:05Z",
-    "wall_s": 0.54
+    "utc": "2026-11-14T00:54:46Z",
+    "wall_s": 0.48
    },
    "research_archive/2026-11-12_q58_native_geometric_coupling/Q58_NATIVE_COUPLING_CURVATURE_VERIFY.py": {
     "detail": "",
     "sha256": "41c6375f90b11dab4a49ceb93e53121ac18f5883dd5f0118d47712b2d8996b8f",
     "status": "pass",
-    "utc": "2026-11-14T00:23:06Z",
-    "wall_s": 0.52
+    "utc": "2026-11-14T00:54:46Z",
+    "wall_s": 0.47
    },
    "research_archive/2026-11-12_q59_time_generator/Q59_TIME_GENERATOR_CERTIFICATE.py": {
     "detail": "",
     "sha256": "b05af06ba48e0327a2e5910f8adc8018f9bc5d2dc32a59cc561cce2b8ea4f6a0",
     "status": "pass",
-    "utc": "2026-11-13T23:55:25Z",
-    "wall_s": 0.67
+    "utc": "2026-11-14T00:38:49Z",
+    "wall_s": 0.64
    },
    "research_archive/2026-11-12_q60_coordinate_selection/Q60_NATIVE_COORDINATE_SELECTION.py": {
     "detail": "",
     "sha256": "febf2d573b240a7238a38290d530302a176c26cb326e1fa04f0343a3f9e640e8",
     "status": "pass",
-    "utc": "2026-11-13T23:58:00Z",
-    "wall_s": 19.15
+    "utc": "2026-11-14T00:41:22Z",
+    "wall_s": 18.42
    },
    "research_archive/2026-11-12_q60_hopf_h64_frame/Q60_HOPF_H64_ALL_FIVE_FRAME_INTERFACE_VERIFY.py": {
     "detail": "",
     "sha256": "74af3109c338460df6a5adf80b0ab2db7ead23dd3011a523c7902ba695c3e4fc",
     "status": "pass",
-    "utc": "2026-11-13T23:55:27Z",
-    "wall_s": 1.01
+    "utc": "2026-11-14T00:38:50Z",
+    "wall_s": 0.99
    },
    "research_archive/2026-11-12_q61_inverse_limit_lifts/Q61_INVERSE_LIMIT_LIFTS_CERTIFICATE.py": {
     "detail": "",
     "sha256": "c033ae0130a45b329102f587d24abb90765eebe8a87b022387fd0674d214a38a",
     "status": "pass",
-    "utc": "2026-11-14T00:23:50Z",
-    "wall_s": 16.74
+    "utc": "2026-11-14T00:55:22Z",
+    "wall_s": 13.72
    },
    "research_archive/2026-11-12_q62_lift_carrier/Q62_LIFT_CARRIER_CERTIFICATE.py": {
     "detail": "",
     "sha256": "60652f30a1473f6f80c8b09dcfc9fd391137225693617f23d7f5d531aec6caf1",
     "status": "pass",
-    "utc": "2026-11-14T00:03:41Z",
-    "wall_s": 51.1
+    "utc": "2026-11-14T00:47:04Z",
+    "wall_s": 51.45
    },
    "research_archive/2026-11-12_q64_a2_native_conditioning/Q64_A2_NATIVE_CONDITIONING.py": {
     "detail": "",
     "sha256": "7d2209d00453bad0873bb7d5d4ab37f44ad28a2aaa6a8078d5b80f6fe68550c9",
     "status": "pass",
-    "utc": "2026-11-13T23:58:00Z",
+    "utc": "2026-11-14T00:41:22Z",
     "wall_s": 0.02
    },
    "research_archive/2026-11-12_q64_a2b_native_path/Q64_A2B_NATIVE_PATH_LIKELIHOOD.py": {
     "detail": "",
     "sha256": "8b7c5c51f7acfedbaf6b19edadd045f7bd74251f76b10c3b79c8db860b07940a",
     "status": "pass",
-    "utc": "2026-11-13T23:58:00Z",
+    "utc": "2026-11-14T00:41:22Z",
     "wall_s": 0.02
    },
    "research_archive/2026-11-12_q64_a2c_native_lift_partition/Q64_A2C_NATIVE_LIFT_PARTITION.py": {
@@ -4128,15 +4143,15 @@
     "detail": "",
     "sha256": "478283d819800d3082e689f26680b0aec9a2dac3c630197ca9772286a697baed",
     "status": "pass",
-    "utc": "2026-11-13T23:58:01Z",
-    "wall_s": 0.4
+    "utc": "2026-11-14T00:41:23Z",
+    "wall_s": 0.39
    },
    "research_archive/2026-11-13_q60_charge_tensor_ward/Q60_CHARGE_TENSOR_WARD.py": {
     "detail": "",
     "sha256": "f7de3196fb99ecc8f294b4e148e7fedbcaaabfec5a02086be61b7c9333c8ceb5",
     "status": "pass",
-    "utc": "2026-11-13T23:58:01Z",
-    "wall_s": 0.31
+    "utc": "2026-11-14T00:41:23Z",
+    "wall_s": 0.3
    },
    "research_archive/2026-11-13_q64_a2d/Q64_A2D_REVERSIBLE_NORMALIZER.py": {
     "detail": "",
@@ -4149,8 +4164,8 @@
     "detail": "",
     "sha256": "408ba59c6e3ab7a6d2b5344b59acef31f66b4a17759d2ba84ada0760fe886b1b",
     "status": "pass",
-    "utc": "2026-11-14T00:01:22Z",
-    "wall_s": 18.63
+    "utc": "2026-11-14T00:44:45Z",
+    "wall_s": 18.82
    },
    "research_archive/2026-11-13_q68_native_bridge/Q68_NATIVE_BRIDGE_POLYTOPE.py": {
     "detail": "",
@@ -4163,50 +4178,50 @@
     "detail": "",
     "sha256": "4a5da5b0ebab566b1d158316cc2f159a3fd53cd05f0ac22f3455a72c43ebdb62",
     "status": "pass",
-    "utc": "2026-11-14T00:22:14Z",
+    "utc": "2026-11-14T00:54:03Z",
     "wall_s": 0.01
    },
    "research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py": {
     "detail": "",
     "sha256": "b0cb02d001f80ac23bfc55a7305610f5d00a1c523f50fbf9cd688a76d29bfc7b",
     "status": "pass",
-    "utc": "2026-11-14T00:02:50Z",
-    "wall_s": 0.49
+    "utc": "2026-11-14T00:46:13Z",
+    "wall_s": 0.52
    },
    "research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py": {
     "detail": "",
     "sha256": "3551a2ed46e7dd021d6555b033932e8132ccb48721ea7b930666682410274638",
     "status": "pass",
-    "utc": "2026-11-14T00:07:58Z",
-    "wall_s": 0.87
+    "utc": "2026-11-14T00:51:15Z",
+    "wall_s": 0.84
    },
    "research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py": {
     "detail": "",
     "sha256": "39e1f68cd215e149cc7f9272e6deafe908c3b3632bf011f30e214dba404104eb",
     "status": "pass",
-    "utc": "2026-11-14T00:22:16Z",
-    "wall_s": 1.85
+    "utc": "2026-11-14T00:54:05Z",
+    "wall_s": 1.61
    },
    "research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py": {
     "detail": "",
     "sha256": "8cff7b8949e8d18322dcc72acb9c85d1f418720a6303e338137da0010ddb1306",
     "status": "pass",
-    "utc": "2026-11-14T00:22:46Z",
-    "wall_s": 30.0
+    "utc": "2026-11-14T00:54:29Z",
+    "wall_s": 24.46
    },
    "research_archive/2026-11-13_q73_joint_clock_bridge/Q73_JOINT_CLOCK_BRIDGE_CERTIFICATE.py": {
     "detail": "",
     "sha256": "204ec48bc2ec1b61383156abceb95da43f933a8c38957898595efd2444735b2e",
     "status": "pass",
-    "utc": "2026-11-14T00:19:45Z",
-    "wall_s": 19.07
+    "utc": "2026-11-14T00:52:07Z",
+    "wall_s": 15.63
    },
    "research_archive/2026-11-13_q75_native_q3_sigma/Q75_NATIVE_Q3_SIGMA.py": {
     "detail": "",
     "sha256": "b30af3f4314060b3c7560e409c1bb9e9c15dca8c1869e2720e5e3332e152388c",
     "status": "pass",
-    "utc": "2026-11-13T23:54:53Z",
-    "wall_s": 0.68
+    "utc": "2026-11-14T00:38:18Z",
+    "wall_s": 0.61
    },
    "research_archive/2026-11-13_q76_hidden_commutator/Q76_NATIVE_HIDDEN_COMMUTATOR.py": {
     "detail": "",
@@ -4219,22 +4234,22 @@
     "detail": "",
     "sha256": "0f9fad922c17a3cffbc26f920fb231e613274b7454647a44c86700c88fcb8768",
     "status": "pass",
-    "utc": "2026-11-14T00:05:00Z",
-    "wall_s": 52.63
+    "utc": "2026-11-14T00:48:24Z",
+    "wall_s": 52.82
    },
    "research_archive/2026-11-13_q78_eight_dictionary_hidden/Q78_EIGHT_DICTIONARY_HIDDEN.py": {
     "detail": "",
     "sha256": "d31347ebae9ff57aa16d1a5027cc723fc9c4524c954c52cb1efd6691a7e505d1",
     "status": "pass",
-    "utc": "2026-11-14T00:01:02Z",
-    "wall_s": 2.76
+    "utc": "2026-11-14T00:44:25Z",
+    "wall_s": 2.87
    },
    "research_archive/2026-11-13_q79_native_pair_source/Q79_NATIVE_PAIR_SOURCE.py": {
     "detail": "",
     "sha256": "b07e71ab0f984f5ea989d9fa7c385a72cd6735e56a4f1f88346c9d77079e0297",
     "status": "pass",
-    "utc": "2026-11-14T00:21:07Z",
-    "wall_s": 0.87
+    "utc": "2026-11-14T00:53:16Z",
+    "wall_s": 0.71
    },
    "research_archive/2026-11-13_q80_native_hidden_source/Q80_NATIVE_HIDDEN_SOURCE.py": {
     "detail": "",
@@ -4261,29 +4276,29 @@
     "detail": "",
     "sha256": "b532b9b0714bb8553ea8d43404331afdb67c28dbb3e76816b9b3b4cc07995d12",
     "status": "pass",
-    "utc": "2026-11-14T00:01:03Z",
+    "utc": "2026-11-14T00:44:26Z",
     "wall_s": 0.89
    },
    "research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py": {
     "detail": "",
     "sha256": "5dd76545fd510da1675988c3301087fa1e823cc0715d7910ef0c0a05e90ed517",
     "status": "pass",
-    "utc": "2026-11-14T00:04:07Z",
-    "wall_s": 25.7
+    "utc": "2026-11-14T00:47:31Z",
+    "wall_s": 26.03
    },
    "research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py": {
     "detail": "",
     "sha256": "e941521e14952272c120ff95b3affdf718ba7e3a4cab5cb32d4959db99bcd34f",
     "status": "pass",
-    "utc": "2026-11-14T00:03:41Z",
+    "utc": "2026-11-14T00:47:05Z",
     "wall_s": 0.35
    },
    "research_archive/2026-11-13_q88_q89_engine_recovery/Q88_Q89_ENGINE_RECOVERY.py": {
     "detail": "",
     "sha256": "726bbf95ffebc54546ff9403b49021ec6dc86ecff023b66fdd7be93f0012d57b",
     "status": "pass",
-    "utc": "2026-11-13T23:54:48Z",
-    "wall_s": 4.2
+    "utc": "2026-11-14T00:38:13Z",
+    "wall_s": 3.29
    },
    "research_archive/2026-11-13_q89_exact_source/Q89_EXACT_SOURCE.py": {
     "detail": "",
@@ -4296,22 +4311,29 @@
     "detail": "",
     "sha256": "878ebbb471f50dc4c374c32d63c804f6bee29e0c5593344a820999600cad4d1a",
     "status": "pass",
-    "utc": "2026-11-14T00:05:19Z",
-    "wall_s": 19.59
+    "utc": "2026-11-14T00:48:44Z",
+    "wall_s": 19.83
    },
    "research_archive/2026-11-13_q90_source_clock_energies/Q90_SOURCE_CLOCK_ENERGIES.py": {
     "detail": "",
     "sha256": "d5c39460cbd4f1a8637fa20618440033458a466fdd8e3b6f60acbc312bb8a158",
     "status": "pass",
-    "utc": "2026-11-13T23:54:51Z",
+    "utc": "2026-11-14T00:38:16Z",
     "wall_s": 2.72
+   },
+   "research_archive/2026-11-14_q86_parity_history_energy/Q86_PARITY_HISTORY_ENERGY.py": {
+    "detail": "",
+    "sha256": "fde38a8776ce135935d0594a842ffa2956c976ab1c7e38c2cf440ed42a387268",
+    "status": "pass",
+    "utc": "2026-11-14T00:38:10Z",
+    "wall_s": 30.66
    },
    "research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py": {
     "detail": "",
     "sha256": "9d086fdd206d99fe72f9299f1a0dbc230ebd665708b6436249c58da03e8d62d5",
     "status": "pass",
-    "utc": "2026-11-14T00:18:46Z",
-    "wall_s": 0.68
+    "utc": "2026-11-14T00:51:19Z",
+    "wall_s": 0.41
    },
    "research_archive/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/cathedral_v116_hodge_polarization_verify.py": {
     "detail": "",
@@ -4463,6 +4485,6 @@
     "wall_s": 0.08
    }
   },
-  "targets": 367
+  "targets": 368
  }
 }
