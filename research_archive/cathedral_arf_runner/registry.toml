@@ -1252,3 +1252,19 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q95_full_five_source/Q95_ALL_FIVE_NUMERICAL_CHECK.py"
 timeout = 90
+
+[[check]]
+id = "research.q96_original_action_mismatch"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q96_original_arf_action/Q96_ORIGINAL_ACTION_REPLACEMENT_AUDIT.py"
+timeout = 90
+
+[[check]]
+id = "research.q96_original_source_chebyshev"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-14_q96_original_arf_action/Q96_ORIGINAL_SOURCE_CHEBYSHEV.py"
+timeout = 90
