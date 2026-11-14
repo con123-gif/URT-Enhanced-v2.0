@@ -1,4 +1,6 @@
-# Q117a — The actual four-pole golden clock feeds the oriented hidden current
+# Q117a — ARCHIVED CROSS-BRANCH COMPATIBILITY ONLY: historical selected clock × hidden current
+
+**CORRECTION, 14 November 2026 (user-directed): THIS DOES NOT DERIVE A BRIDGE TO THE NEW MOVING-FRUSTRATION THEORY.** Combining the Q77/Q112/Q115 selected-history clock with Q116 hidden-current geometry is an EXTRA MODEL PREMISE, not a result of the Nov11 12+centre/phi asymmetry. Treat all conclusions strictly inside that imposed hybrid; never cite them as progress on the new moving coupling law or its physical ARFs. Keep the calculation as an independently testable cross-branch experiment, not a required stage of the new direction. See `docs/RESEARCH_TRACK_BOUNDARIES_2026-11-14.md`.
 
 14 November 2026. **Exact conditional history current theorem**, with native-source GitHub test pending. No measured values or historical four ARF equations were used.
 
