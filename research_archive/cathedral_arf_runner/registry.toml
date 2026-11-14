@@ -1364,3 +1364,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q106_exact_berry_wilson/Q106_JOINED_NATIVE_WILSON.py"
 timeout = 240
+
+[[check]]
+id = "research.q107_chern_berry_wilson"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q107_berry_topological_photon/Q107_BERRY_CHERN_AND_MAXWELL.py"
+timeout = 180
