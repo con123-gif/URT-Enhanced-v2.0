@@ -1453,3 +1453,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q118_complement_spectrum/Q118_NATIVE_COMPLEMENT_SPECTRUM.py"
 timeout = 120
+
+[[check]]
+id = "research.q117a_mixed_hidden_current"
+stage = "research_heavy"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q117_mixed_current_response/Q117A_NATIVE_MIXED_CURRENT_RESPONSE.py"
+timeout = 300
