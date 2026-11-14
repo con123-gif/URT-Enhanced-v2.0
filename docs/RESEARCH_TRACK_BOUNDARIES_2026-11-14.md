@@ -34,6 +34,10 @@ Therefore **Q117a must never be counted as an advance, prerequisite, or proof fo
 
 Derive a native map with explicit domain/codomain, from stated URT/geometry primitives, respecting A5 covariance and charge, positive/CP transfer, normalization and both relevant gauge Ward identities. Test it with exact or independently executed native operators. No reverse fitting to an old ARF, no arbitrary equal-weight Kronecker coupling, and no identification of the 30 moving configurations with v61's 48 sites. If a bridge cannot be proved, keep the mathematics **separate** and label cross-track hypotheses as conditional.
 
+## Restored advanced frontier (user correction 2026-11-14)
+
+Q120's 13-contact barrier was a lower-level supporting calculation and must not erase Q101–Q111 moving charged/gauge progress. Lead independent Track M work is Q122: orientation-dependent signed current through actual moving source, positive unique kinetic selection and original full-Cathedral charged Wilson coupling. Q121 is supporting local kinetics. Old Q77 history remains separate; Q117a is cross-track only. See docs/RESTORED_TRACK_M_FRONTIER_2026-11-14.md.
+
 ## Current work assignment
 
 **Q119 [compute] Track M first**: construct the moving asymmetry-first transfer directly and test its normalization, generated direction/current and irreducible dynamics. **Q118 [derive] is Track H**, separate. **Q117 [compute] is Track M**, with Q117a quarantined as Track X. This separation does not claim any gate closed or resolve the historical ACTIVE PROBLEM A; the separate older research may continue but its results are not silently imported into M.

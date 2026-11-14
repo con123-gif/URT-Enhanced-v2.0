@@ -5,9 +5,13 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+**USER-DIRECTED FRONTIER RESTORATION (2026-11-14):** Q120 was a regression in research priority. The NEW Track M already reached original whole-five/190/H64 moving signed current (Q101), exact Born all-time/24 statistics (Q102–Q103), moving charged SU2 seven-level band (Q105–Q106), Berry ±7 and gauge Fisher (Q107–Q108), and CONDITIONAL original Wilson 528-link gauge response/vacuum/bundle (Q109–Q111). Lead is Q122, not Q120 or selected-history Q77. Read docs/RESTORED_TRACK_M_FRONTIER_2026-11-14.md before new work.
+
+- [ ] Q122 [compute] (TRACK M LEAD, A/B/C/D) Derive asymmetry-first *handedness and complex current source* on the two 30-state moving branches using actual Q101–Q108 native operators, test unbiased 60-state inversion averaging, then attempt primitive kinetic normalization and charge-preserving full-190/H64-to-v61 coupling WITHOUT importing Q77 selected-history clock or fitting historical ARFs. Original Q105–Q111 advancement must not be discarded.
+
 - [x] Q120 [compute] (TRACK M, A/B) Exact 12+ACTIVE-centre golden frustration reversal barrier B=2(sqrt5-1), twice first gap, shortest 5 flips; all 444 threshold states connected. Local 8192-state exact SymPy PASS; GitHub native CI pending; physical time/ARFs OPEN. research_archive/2026-11-14_q120_moving_reversal_barrier/
 
-- [ ] Q121 [compute] (TRACK M, A/B) Derive independent positive local 13-contact transition and its exact activation-normalized reversal response. Test whether native whole-five 190/H64 source fixes the time/kinetic prefactor without importing Q77 history clock.
+- [ ] Q121 [compute] (TRACK M SUPPORTING LOCAL, A/B) Derive independent 13-contact positive flip transition/rate as supporting local kinetics only; NOT lead frontier, which is already Q105–Q111. Keep full-five 190/H64 and exclude Q77 history clock.
 
 **RESEARCH-TRACK BOUNDARY (Con correction, 2026-11-14):** NEW MOVING ASYMMETRY FIRST (Q98/Q101 onward) is scientifically separate from LEGACY Q77 SELECTED-HISTORY/CLOCK (Q112/Q115/Q118). Q117a was an **unjustified cross-track assumption**, not a derivation of either track from the other. Preserve both, NEVER use Q115 poles, Hbits+c Abar, or its time generator as required inputs to new moving dynamics. See `docs/RESEARCH_TRACK_BOUNDARIES_2026-11-14.md`. New moving-specific computation: Q119 below.
 
@@ -1465,3 +1469,6 @@ commit as your result.
 
 ### 2026-11-14 GPT — TRACK M Q120 original 13-contact reversal, NO historical history generator
 - Exact local Hamiltonian H=Σ_edge s_i s_j+φ c Σ_i s_i with c active, all 8192 true 13-contact flips. 60 minimum states (30+30), Eg=-8-2sqrt5, Q119 gap sqrt5-1. Every local orientation reversal crosses M=0 where E>=-10. Explicit 5-flip path [(-6,4,-1),(-8,2,-1),(-10,0,-1),(-10,0,1),(-8,-2,1),(-6,-4,1)] saturates. Exact barrier B=2(sqrt5-1). Exactly 444 states at H<=-10, all single-flip connected; global inversion enforces zero unbiased equilibrium orientation. No attempt time selected, no physical ARF, no import of Q77/Q115. Standalone exact 8192-state certificate local PASS, GitHub research.q120_moving_reversal_barrier pending; Q121 independently derive kinetic normalization in full Cathedral.
+
+### 2026-11-14 — GPT — user correction: restore actual NEW moving asymmetry-frontier beyond Q120
+- Recovered direct original Nov11/Library source and archived GitHub Q98/Q101–Q111. Q120 five-flip activation is a correct LOCAL contact observation but not a replacement for advanced whole-five hidden signed moving Born charge SU2/Berry/gauge Wilson computations. Q122 lead task now tests original 30+30 current orientation/cancellation and uniquely normalized physical coupling, not old selected-history four-pole transfer. Preserve mathematical conditional status, avoid Q77/Hbits+c Abar and no old ARF fitting. Complete ledger docs/RESTORED_TRACK_M_FRONTIER_2026-11-14.md.
