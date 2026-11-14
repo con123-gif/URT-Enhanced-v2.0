@@ -1396,3 +1396,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_TWO_DIMENSIONAL_DESCENT.py"
 timeout = 300
+
+[[check]]
+id = "research.q111_charge_bundle_period"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q111_global_charge_bundle/Q111_GLOBAL_CHARGE_BUNDLE_PERIOD.py"
+timeout = 180
