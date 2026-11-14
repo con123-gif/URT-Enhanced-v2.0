@@ -1306,7 +1306,7 @@ id = "research.q101_moving_arf"
 stage = "research"
 claim = "conditional"
 gating = true
-run = "OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-14_q101_moving_arf/MOVING_ARF_DERIVATION.py"
+run = "python research_archive/2026-11-14_q101_moving_arf/MOVING_ARF_DERIVATION.py"
 timeout = 120
 
 [[check]]
@@ -1314,7 +1314,7 @@ id = "research.q101_magnetic_factor"
 stage = "research"
 claim = "conditional"
 gating = true
-run = "OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-14_q101_moving_arf/MAGNETIC_ARF_FACTOR_CERTIFICATE.py"
+run = "python research_archive/2026-11-14_q101_moving_arf/MAGNETIC_ARF_FACTOR_CERTIFICATE.py"
 timeout = 120
 
 [[check]]
@@ -1322,7 +1322,7 @@ id = "research.q102_born_current"
 stage = "research"
 claim = "conditional"
 gating = true
-run = "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python research_archive/2026-11-14_q102_born_chiral_arf/Q102_BORN_CHIRAL_ARF.py"
+run = "python research_archive/2026-11-14_q102_born_chiral_arf/Q102_BORN_CHIRAL_ARF.py"
 timeout = 180
 
 [[check]]
@@ -1330,5 +1330,5 @@ id = "research.q103_alltime_spectral_counting"
 stage = "research"
 claim = "conditional"
 gating = true
-run = "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py"
+run = "python research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py"
 timeout = 180
