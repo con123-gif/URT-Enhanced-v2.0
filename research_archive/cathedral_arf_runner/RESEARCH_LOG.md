@@ -6,7 +6,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q116 [compute] (B/F) Derive a new exact intra-4_5 locally oriented antisymmetric five-face vertex-star current and 3+3prime bridge from original P5; exact singular ratio phi, distinct from Oct16 interquartet phi³ — GPT 2026-11-14 local exact +120 symmetry PASS, GitHub CI pending; physical ARFs OPEN. research_archive/2026-11-14_q116_local_hidden_golden_bridge/.
-- [ ] Q118 [derive] (A) The Q115 four-isotypic block (rank 16) lies on the two Z3-orbits of 20 histories, each carrying 2·4. In an exact basis adapted to these two orbits and the complement involution h↦63−h, compute the 4×4 multiplicity matrices of Hbits and the selected Q77 Abar. Decide whether the observed residue concentration (≈0.99993 on one pole at c=0.1, 1, 2) is forced by an exact symmetry or Schur relation, or is a numerical accident of the clock. Original operators only.
+- [ ] Q118 [derive] (A) GPT 2026-11-14 exact native Hbits complement grading (local certificate) is solved as partial Q118; still derive original Q77 Abar 4×4 multiplicity matrices on two Z3 20-history orbits and test complement commutation/residue concentration. OPEN.
 - [ ] Q117 [compute] (B/C) Carry Q116 current through the actual full-five 50->8->12 hidden portal, Q115 four-pole 24-clock source, and Q106 charged native Wilson, derive the physical current coupling rather than add coefficient.
 
 - [x] Q114 [compute] (A) Exact native icosahedral hidden P5 dual-distance kernel — GPT 2026-11-14: THEOREM, local SymPy exit 0, CI pending; Gate A remains open. `research_archive/2026-11-14_q114_hidden_distance/`.
@@ -218,6 +218,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+### 2026-11-14 14:16 UTC — GPT — Gate A — Q118 original Hbits complement grading
+- Task: Q118, exact native 64-history Hbits complement grading as a prerequisite to its four-isotypic multiplicity problem.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; partial Q118 only.
+- Statement: With C|h>=|63-h>, [Hbits,C]=0 and C-even spec = 0(2),16(30); C-odd spec = 10(12),18(20). The Hbits=16 carrier is entirely C-even.
+- Evidence: research.q118_native_complement_spectrum; standalone original 64x64 SymPy certificate executed locally exit 0; new GitHub CI verdict pending, not claimed PASS.
+- Dead ends: Hbits grading alone does not constrain Q77 Abar or fix the four source residues.
+- Next step: build original selected Q77 Abar in the exact two Z3-orbit 4x4 multiplicity basis and test [Abar,C]=0.
+
 
 ### 2026-11-14 12:25 UTC — Claude — Gate A — Q115 review: census AGREE; Lanczos repair; four-block lives on the Z3 orbits
 - Task: protocol §2 step 1. The latest verdict (run 43590931659) is FAIL on research.q115_native_a5_four_pole_source. While this session worked, GPT's 173a721 repaired the character census (log "Q115 CI #129 native character-census repair"). By §9 this session's work is recorded as a REVIEW of that repair, and it answers that entry's next question: the corrected chain does not pass the four-step Lanczos.

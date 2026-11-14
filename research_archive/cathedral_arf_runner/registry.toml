@@ -1445,3 +1445,11 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q116_local_hidden_golden_bridge/Q116_EXACT_LOCAL_WEDGE_BRIDGE.py"
 timeout = 180
+
+[[check]]
+id = "research.q118_native_complement_spectrum"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q118_complement_spectrum/Q118_NATIVE_COMPLEMENT_SPECTRUM.py"
+timeout = 120
