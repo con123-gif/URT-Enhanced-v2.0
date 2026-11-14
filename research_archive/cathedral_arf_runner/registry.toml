@@ -1477,3 +1477,11 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q120_moving_reversal_barrier/Q120_GOLDEN_TUNNEL_BARRIER.py"
 timeout = 180
+
+[[check]]
+id = "research.q122_moving_charged_branch_current"
+stage = "research_heavy"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q122_native_berry_branch_cancellation/Q122_ORIGINAL_CHARGED_BERRY_BRANCH.py"
+timeout = 300
