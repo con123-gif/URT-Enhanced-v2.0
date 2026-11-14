@@ -1436,3 +1436,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q115_a5_four_pole_source/Q115_A5_FOUR_POLE_SOURCE.py"
 timeout = 180
+
+[[check]]
+id = "research.q116_local_wedge_golden_bridge"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-14_q116_local_hidden_golden_bridge/Q116_EXACT_LOCAL_WEDGE_BRIDGE.py"
+timeout = 180

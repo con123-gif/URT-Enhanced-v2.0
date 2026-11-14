@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q116 [compute] (B/F) Derive a new exact intra-4_5 locally oriented antisymmetric five-face vertex-star current and 3+3prime bridge from original P5; exact singular ratio phi, distinct from Oct16 interquartet phi³ — GPT 2026-11-14 local exact +120 symmetry PASS, GitHub CI pending; physical ARFs OPEN. research_archive/2026-11-14_q116_local_hidden_golden_bridge/.
+- [ ] Q117 [compute] (B/C) Carry Q116 current through the actual full-five 50->8->12 hidden portal, Q115 four-pole 24-clock source, and Q106 charged native Wilson, derive the physical current coupling rather than add coefficient.
+
 - [x] Q114 [compute] (A) Exact native icosahedral hidden P5 dual-distance kernel — GPT 2026-11-14: THEOREM, local SymPy exit 0, CI pending; Gate A remains open. `research_archive/2026-11-14_q114_hidden_distance/`.
 - [x] Q115 [compute] (A/F) Substitute Q114 exact distance P5 into genuine Q112 G5, compute actual 64-history A5 irreps (8·1+4·4+8·5), and reduce selected golden 24-clock source to at most four poles via explicit 4×4 native multiplicity resolvent; no old ARF weights — GPT 2026-11-14: independent original graph/count/projection local exact PASS; original Q112 native 4×4 GitHub certificate COMMITTED, CI pending; physical ARFs OPEN. `research_archive/2026-11-14_q115_a5_four_pole_source/`.
 
@@ -1399,3 +1402,8 @@ commit as your result.
 - Evidence: independent local enumerations original networkx 12-icosahedron 120 automorphisms (60 rotations) and original exact 20×20 dual-distance P5 PASS in Python; GitHub actual Q112 Krawczyk / 64 action / 4×4 code registered with CI PENDING, not claimed native PASS. Q113 native original full orchestrator PASS run 43587473087, within-scatter 6.66e−16; no physical ARF.
 - Limitations: c and physical 190+64+24→charged/Wilson source selection remain open; H64 history representation not silently identified with physical H13⊕H51.
 - Next: from primitive full 190+64+24 transfer select c and the relevant physical gauge-current observable, then calculate the photon residue and compare to observations only after output law exists.
+
+### 2026-11-14 — GPT — Gate B — Q116 new exact intraquartet local golden triplet current
+- New original-icosahedron oriented five-face vertex-star B_v gives J_v(u,w)=u^tB_vw, u,w in hidden P5 4_5, antisymmetric and strictly local. Exact basis-free 12x12 Gram −1/2 Tr(P5 B_v P5 B_w)=(5I−Aico)P_(3+3prime)/9. Rank six with triplet eigenvalues (5±sqrt5)/9 and singular ratio exactly phi; 120 proper/improper graph automorphisms checked exactly. DIFFERENT from archived Oct16 inter-4_3/4_5 unsigned incidence current with phi³ singular ratio; previous general 4 tensor4 and antisym six degrees credited. No empirical fitting, no old four ARF target.
+- Evidence: original golden 12 verts/30 edges/20 faces, original exact rational P5 from 20x12 face incidence and dual, exact SymPy/rational Gram, all 120 determinant parity tests local Python PASS. Registered research.q116_local_wedge_golden_bridge, GitHub CI pending. Finite geometry only; all-five/64/24/Wilson physical action still open.
+- Next: Q117 source-first coupled signed current through five-solid portal and original Q115/Q106 transfer without arbitrary coefficient.
