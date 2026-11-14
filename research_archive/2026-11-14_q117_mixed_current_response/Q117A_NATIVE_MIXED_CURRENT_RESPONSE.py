@@ -77,7 +77,11 @@ for c in (0.1,1.,2.):
         assert factor>0
         if t==0.: assert np.max(abs(corr-H/2))<1e-9
         print("c=",c,"t=",t,"scalar factor=",factor,flush=True)
+    # Physical expectation uses the NORMALIZED Gibbs state.  The old
+    # unnormalized heat can have trace ~e^16 and accumulates roundoff.
     rho=heat(1.)
+    rho=rho/np.trace(rho)
+    assert np.linalg.norm(rho-rho.T)<1e-11
     assert max(abs(np.trace(rho@j)) for j in J)<1e-10
 
 phi=(1+np.sqrt(5))/2
