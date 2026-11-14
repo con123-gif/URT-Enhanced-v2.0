@@ -1131,6 +1131,15 @@ gating = true
 run = "python -u research_archive/2026-11-13_q90_source_clock_energies/Q90_SOURCE_CLOCK_ENERGIES.py"
 timeout = 300
 
+# Q86 (Claude 2026-11-14): parity-history energy; H_bits = 60 Reynolds[Q^T(I-Q^TQ)Q]; tau symmetry of the 7 Nov action
+[[check]]
+id = "research.q86_parity_history_energy"
+stage = "engine"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-14_q86_parity_history_energy/Q86_PARITY_HISTORY_ENERGY.py"
+timeout = 300
+
 [[check]]
 id = "engine.evidence_ledger"
 stage = "engine"
