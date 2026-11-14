@@ -7,7 +7,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 **RESEARCH-TRACK BOUNDARY (Con correction, 2026-11-14):** NEW MOVING ASYMMETRY FIRST (Q98/Q101 onward) is scientifically separate from LEGACY Q77 SELECTED-HISTORY/CLOCK (Q112/Q115/Q118). Q117a was an **unjustified cross-track assumption**, not a derivation of either track from the other. Preserve both, NEVER use Q115 poles, Hbits+c Abar, or its time generator as required inputs to new moving dynamics. See `docs/RESEARCH_TRACK_BOUNDARIES_2026-11-14.md`. New moving-specific computation: Q119 below.
 
-- [ ] Q119 [compute] (MOVING ASYMMETRY TRACK, A/B) From the genuine Nov11 12+centre golden mismatch and full-five 190/H64 source derive the *independent* moving Hamiltonian/positive transfer and its physically normalized charged current. Do NOT import Q77 golden-clock dictionary, Hbits+c Abar, Q115 four-pole residues, or old ARF equations. Prove covariance, asymmetry selection and current Ward identities from the moving dynamics themselves; first derive a unique kinetic scale or document exactly what remains free.
+- [ ] Q119 [compute] (MOVING ASYMMETRY TRACK, A/B) Derive independent moving Hamiltonian/positive transfer and normalized charged current from 12+centre golden mismatch and full-five 190/H64. GPT 2026-11-14 original contact-scale certificate: 60 ground states, exact gap sqrt(5)-1; rescaling leaves selection unchanged. Unique kinetic scale NOT derived. Next: determine whether original full-five Hodge/URT time normalization fixes this freedom. No Q77 selected history.
 
 - [x] Q116 [compute] (B/F) Derive a new exact intra-4_5 locally oriented antisymmetric five-face vertex-star current and 3+3prime bridge from original P5; exact singular ratio phi, distinct from Oct16 interquartet phi³ — GPT 2026-11-14 local exact +120 symmetry PASS, GitHub CI pending; physical ARFs OPEN. research_archive/2026-11-14_q116_local_hidden_golden_bridge/.
 - [ ] Q118 [derive] (A) GPT 2026-11-14 exact native Hbits complement grading (local certificate) is solved as partial Q118; still derive original Q77 Abar 4×4 multiplicity matrices on two Z3 20-history orbits and test complement commutation/residue concentration. OPEN.
@@ -223,6 +223,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 15:12 UTC — GPT — Gate A/B — Q119 native golden-contact scale
+- Task: Q119 native 12+centre golden contact energy and kinetic-scale selection.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (restricted contact-only scope).
+- Statement: 60 exact minimizers E=-6, |M|=4; first excitation gap sqrt(5)-1. Positive rescaling a leaves minimizers invariant but multiplies the gap by a; contact selection alone cannot fix a kinetic scale.
+- Evidence: research.q119_native_contact_scale; standalone local SymPy certificate exit 0 on all 4096 original icosa spin states. CI pending until orchestrator runs.
+- Dead ends: interpreting dimensionless contact energy as independently normalized physical Hamiltonian.
+- Next step: test whether original 190-cochain Hodge action and primitive URT recurrence supply a unique time/action coefficient, without importing Q77.
+
 ### 2026-11-14 14:16 UTC — GPT — Gate A — Q118 original Hbits complement grading
 - Task: Q118, exact native 64-history Hbits complement grading as a prerequisite to its four-isotypic multiplicity problem.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; partial Q118 only.

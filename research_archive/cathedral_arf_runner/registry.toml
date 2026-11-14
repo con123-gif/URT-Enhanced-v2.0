@@ -1461,3 +1461,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q117_mixed_current_response/Q117A_NATIVE_MIXED_CURRENT_RESPONSE.py"
 timeout = 300
+
+[[check]]
+id = "research.q119_native_contact_scale"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q119_native_scale/Q119_NATIVE_SCALE_CERTIFICATE.py"
+timeout = 120
