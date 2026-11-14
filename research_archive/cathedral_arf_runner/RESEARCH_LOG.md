@@ -5,7 +5,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [ ] Q113 [compute] (A/F) Given Q112 native G5 mixing, compute the actual selected Q77 A5 quartet multiplicity-space resolvent and mixed source residues for all positive c, without old (4,2,2,0) weights or fitted ARFs.
+- [x] Q113 [compute] (A/F) Given Q112 native G5 mixing, derive actual selected Q77 A5 quartet source spectral measure, exact first two moments and positive mixed-source variance for ALL c>0; original 64×64 residues checked at c=0.01,0.1,1,2; no old (4,2,2,0) weights or fitted ARFs. GPT 2026-11-14: certificate committed, CI PENDING; complete rational resolvent and physical ARFs remain OPEN. `research_archive/2026-11-14_q113_mixed_hidden_spectral/`.
 
 - [x] Q112 [compute] (A) Rigorous original Q77 golden 24-clock selected history bridge G5 offblock against actual icosahedral hidden U_h/P5 and A5 twirl; exact rational witness plus Q77 interval bound, coefficient-independent purity test — GPT 2026-11-14: certificate COMMITTED, **CI PENDING, no unexecuted PASS claimed**. research_archive/2026-11-14_q112_native_hidden_clock_leak/.
 
@@ -1376,3 +1376,6 @@ commit as your result.
 ### 2026-11-14 — GPT — Q109 native orchestrator bracket-repair after confirmed FAIL
 - Prior native run 43584011831 had 120/121 research checks passing, including Q101-Q108 original-native. The only research failure Q109 was a SciPy ValueError: manually specified bracket=(0.3,0.5,0.8) did NOT satisfy f(0.5)<f(0.3),f(0.8); NO Q109 Hessian mathematical assertion had failed at that point. This is test harness construction, not falsification.
 - Corrected Q109 one-dimensional descent to finite bounds 0..1.5 with analytic nonzero-descent threshold, and checks line-stationarity only at an interior point with finite difference. Original H64, 190, Q96, v61 and full 528 Hessian code unchanged. Full CI re-execution pending; no stable full 481-dimensional vacuum claim.
+
+### 2026-11-14 — GPT — Gate A/F — Q113 strict native source spectral variance from Q112 leakage
+- Derived exactly: for P=G5 rank4, Q=I-P, original Hbits P=16P, actual Q77 selected A5-twirled clock A, K(c)=Hbits+cA, the normalized source spectral measure nu_c=(1/4)Tr[P delta(K(c)-lambda)] has m1=16+c Tr(PAP)/4 and Var(nu_c)=c²[(Tr((PAP)²)/4−(Tr(PAP)/4)²)+||QAP||²_F/4]. Q112 certified nonzero entry of QAP with rigorous lower ℓ>0, so Var≥c²ℓ²/4>0 for ALL c>0, independent of historical source weights. Direct 64×64 eigenspectral source-residue check c=0.01,0.1,1,2 registered, CI PENDING. No unique c, 4D photon or physical ARFs inferred. `research_archive/2026-11-14_q113_mixed_hidden_spectral/`.

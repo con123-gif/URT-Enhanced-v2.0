@@ -1412,3 +1412,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q112_native_hidden_clock_leak/Q112_NATIVE_G5_CLOCK_LEAK.py"
 timeout = 300
+
+[[check]]
+id = "research.q113_native_mixed_spectral_variance"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q113_mixed_hidden_spectral/Q113_NATIVE_MIXED_SPECTRAL_VARIANCE.py"
+timeout = 180
