@@ -1404,3 +1404,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q111_global_charge_bundle/Q111_GLOBAL_CHARGE_BUNDLE_PERIOD.py"
 timeout = 180
+
+[[check]]
+id = "research.q112_clock_g5_leak"
+stage = "research_heavy"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q112_native_hidden_clock_leak/Q112_NATIVE_G5_CLOCK_LEAK.py"
+timeout = 300

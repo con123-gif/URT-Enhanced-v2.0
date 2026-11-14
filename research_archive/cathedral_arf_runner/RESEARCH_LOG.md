@@ -5,6 +5,10 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q113 [compute] (A/F) Given Q112 native G5 mixing, compute the actual selected Q77 A5 quartet multiplicity-space resolvent and mixed source residues for all positive c, without old (4,2,2,0) weights or fitted ARFs.
+
+- [x] Q112 [compute] (A) Rigorous original Q77 golden 24-clock selected history bridge G5 offblock against actual icosahedral hidden U_h/P5 and A5 twirl; exact rational witness plus Q77 interval bound, coefficient-independent purity test — GPT 2026-11-14: certificate COMMITTED, **CI PENDING, no unexecuted PASS claimed**. research_archive/2026-11-14_q112_native_hidden_clock_leak/.
+
 - [x] Q111 [compute] (B/C/D/F) From Q107 exact native Chern7 and Q96 fractional charges prove global SU2 frame obstruction, exhibit explicit U3/Z3-compatible clutching, and repair Q110 scalar Wilson compact period with actual original 192 source and 30-state charged determinant test — GPT 2026-11-14: exact bundle theorem + native phase-period certificate, local PASS, GitHub CI pending, physical ARFs OPEN. `research_archive/2026-11-14_q111_global_charge_bundle/`.
 
 - [x] Q110 [derive] (C/F) Prove compactness forces a nonzero gauge-equivalence-class global vacuum from Q109 native joined Gaussian Hessian with 84 negative transverse modes, test full 528 nonlinear descent and ± charge conjugation — GPT 2026-11-14: **conditional exact existence theorem**, full 528 optimiser −522.54 not converged; original v61 CI PENDING, physical ARFs OPEN. `research_archive/2026-11-14_q110_spatial_vacuum_existence/`.
@@ -46,6 +50,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q87G [compute] (A) Exact second spectral moment on original Q77 successor support — GPT 2026-11-14: THEOREM, local symbolic PASS, CI pending; Q87 remains open.
 
 - [x] Q87E [compute] (A) Derive all 16 native mirror-pair parity witnesses and an exact commutator-energy bound on Q77 history support; distinguish the exceptional x=0 witness from other blocks. — GPT 2026-11-14: THEOREM (conditional symbolic identity), local SymPy exit 0, CI pending; Q87 remains open.\n
+- A6 (Q112, GPT 2026-11-14): the original Q77 32-block Krawczyk t_x and actual Q82 hidden G5/A5 reduce the previously unproved offblock to one Fraction witness with certified 48 epsilon error bound. Script committed, CI pending. If nonzero, old G5-pure source fails for every positive coefficient and the true mixed quartet-resolvent is next (Q113).
+
 ### ACTIVE PROBLEM A — derive the history dictionary and chronology (Gate A). Every agent, every lane, until solved (RESEARCH_PROTOCOL.md §2). Only Con marks it solved.
 Goal: from original operators only, derive the native dictionary (up to exact symmetries), chronology/reversible history, and its natural generator, source coupling and response. The historical `H+c·Abar`, `c`, and weights `(4,2,2,0)` are comparative candidate outputs, NOT imposed goals. If a different native law emerges, pursue that law.
 Attempts so far (append yours; take the next untried one; never run a parallel copy of another agent's attempt):
@@ -1360,3 +1366,9 @@ commit as your result.
 - Critical Q110 corrigendum: original scalar-link Wilson e^{iqA} includes q in thirds; its natural guaranteed gauge link period is 6π, NOT 2π unless an actual non-Abelian center quotient is built. Original 192 Wilson changes under single-link 2π at q=1/3, returns under 6π. Q106 30 weak+30 singlet bands require exactly half the Q96 multiplicity on each; properly weighted Gaussian Γ(2π e_l)-Γ(0)=+240.682085697801, Γ(6π e_l)-Γ(0)~3e-11 locally. Q110 compactness/existence proof remains valid on corrected (R/6πZ)^528, and Q109 local Hessian unaffected. No inferred actual photon alpha/mass.
 - Evidence: Original Q101 all-five/190/H64, Q106 exact Q(sqrt5) matrix polynomial, Q107 exact Chern7 re-executed in local container; U3 clutching/exact q fractions/192 v61 period and full shifted logdet original-interface local reference PASS. CI research.q111_charge_bundle_period imports true native original v61 on GitHub; pending.
 - Next: build one **globally consistent** normalized 190+64+24→charged-moving/v61 instrument with spatial U1 and color center, derive stable gauge vacuum and physical 4D pole, not a postulated Maxwell coefficient. Do not revert to the historical ARF formulas.
+
+### 2026-11-14 — GPT — Gate A/F — Q112 selected-clock original G5 witness certificate
+- Task: execute an open original-operator selection issue instead of extending conditional Maxwell analogues. Determine rigorously whether Q77 selected 24-clock dynamics mixes the genuine hidden G5 source after original A5 averaging.
+- Status: NEW RATIONAL-INTERVAL ORIGINAL-NATIVE CERTIFICATE COMMITTED, NOT YET EXECUTED ON CI. The certificate runs full Q77 rigorous 88-piece source, rebuilds true Q82 U_h P5 U_h transpose and actual 60 A5 permutations. Evaluates one offblock using Fraction exact arithmetic and certified bound less than 48 epsilon. If this proves a nonzero entry, the former pure G5 branch cannot be invariant under H_bits+c Abar_clock for any c>0. No observed input or historic ARF target.
+- Evidence: research.q112_clock_g5_leak in registry, pending GitHub native verdict. Do not mark this newly composed script passed before it executes.
+- Next: Q113 compute actual mixed quartet multiplicity resolvent; require native PASS first, then derive dynamical coefficient or replace original kinetics rather than fitting source weights.
