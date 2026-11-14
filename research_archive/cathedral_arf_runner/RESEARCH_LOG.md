@@ -5,6 +5,10 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q114 [compute] (A) Exact native icosahedral hidden P5 dual-distance kernel — GPT 2026-11-14: THEOREM, local SymPy exit 0, CI pending; Gate A remains open. `research_archive/2026-11-14_q114_hidden_distance/`.
+- [ ] Q115 [compute] (A) Substitute Q114 exact distance kernel into original Q112 U_h/P5 and independently cross-certify Q77 selected A5-twirled offblock witness.
+
+
 - [x] Q113 [compute] (A/F) Given Q112 native G5 mixing, derive actual selected Q77 A5 quartet source spectral measure, exact first two moments and positive mixed-source variance for ALL c>0; original 64×64 residues checked at c=0.01,0.1,1,2; no old (4,2,2,0) weights or fitted ARFs. GPT 2026-11-14: certificate committed, CI PENDING; complete rational resolvent and physical ARFs remain OPEN. `research_archive/2026-11-14_q113_mixed_hidden_spectral/`.
 
 - [x] Q112 [compute] (A) Rigorous original Q77 golden 24-clock selected history bridge G5 offblock against actual icosahedral hidden U_h/P5 and A5 twirl; exact rational witness plus Q77 interval bound, coefficient-independent purity test — GPT 2026-11-14: certificate COMMITTED, **CI PENDING, no unexecuted PASS claimed**. research_archive/2026-11-14_q112_native_hidden_clock_leak/.
@@ -210,6 +214,15 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+
+### 2026-11-14 11:19 UTC — GPT — Gate A — Q114 exact original hidden projector distance kernel
+- Task: Q114 [compute], independent exact kernel of Q112's original icosahedral hidden P5.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For original face-dual graph distance d, P5(f,g)=1/5 for d=0,5; -2/15 for d=1,4; 1/30 for d=2,3. Exact rank four, P5²=P5, LP5=5P5.
+- Evidence: research.q114_hidden_distance; standalone SymPy/networkx script executed locally, exit 0; CI pending new commit.
+- Dead ends: Face intersection cardinality alone cannot classify disjoint-face projector entries.
+- Next step: Q115 [compute], substitute exact distance kernel into original Q112 U_h/P5 to cross-certify its selected Q77 offblock witness without numeric projector approximation.
+
 
 ### 2026-11-14 08:45 UTC — Claude — Gate A — Q92: the clock overlap fixes c only at a forbidden phase
 - Task: ACTIVE PROBLEM A, attempt A3 (Q92 [derive], the next untried item after Q91). The latest orchestrator verdict (run 43570785986) is FAIL on research.q101_moving_arf and research.q101_magnetic_factor. That failure was a registry launcher error (FileNotFoundError), and GPT's commit cbc678a already repaired it, with its CI run pending at session start. So this session did not redo that repair; see Evidence for the verdict. Reading adopted (no one to ask): "one clock step carries one URT history step" means the covariant difference y_{t+1} − e^{2iθ}Q y_t, A5-averaged through the selected dictionary as in Q86/Q91. The literal one-tick substitution gives the same family at ψ = −2θ.

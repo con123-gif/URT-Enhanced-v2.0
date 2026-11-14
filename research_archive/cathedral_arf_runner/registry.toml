@@ -1420,3 +1420,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q113_mixed_hidden_spectral/Q113_NATIVE_MIXED_SPECTRAL_VARIANCE.py"
 timeout = 180
+
+[[check]]
+id = "research.q114_hidden_distance"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q114_hidden_distance/Q114_NATIVE_HIDDEN_PROJECTOR.py"
+timeout = 90
