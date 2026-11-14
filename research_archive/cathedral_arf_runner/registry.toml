@@ -1493,3 +1493,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q123_golden_persistence/Q123_GOLDEN_SADDLE_CAPACITY.py"
 timeout = 180
+
+[[check]]
+id = "research.q124_native_charged_barrier"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q124_charged_barrier_extension/Q124_NATIVE_CHARGED_BARRIER.py"
+timeout = 180
