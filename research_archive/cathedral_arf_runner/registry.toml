@@ -1372,3 +1372,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q107_berry_topological_photon/Q107_BERRY_CHERN_AND_MAXWELL.py"
 timeout = 180
+
+[[check]]
+id = "research.q108_native_born_fisher"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q108_born_fisher_photon/Q108_BORN_FISHER_GAUGE.py"
+timeout = 180
