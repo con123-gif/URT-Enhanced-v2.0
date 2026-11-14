@@ -1340,3 +1340,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py"
 timeout = 180
+
+[[check]]
+id = "research.q105_broken_charged_wilson"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q105_broken_charged_wilson/Q105_MOVING_CHARGED_WARD.py"
+timeout = 180

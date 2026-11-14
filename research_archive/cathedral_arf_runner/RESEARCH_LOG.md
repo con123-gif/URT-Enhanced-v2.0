@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q105 [compute] (B/D/F) Connect 11-Nov moving source to native charged16/96 by spontaneous weak axis and exact shortest SU2/Berry transport, test BOTH Ward orders on true 192 Wilson 528 links — GPT 2026-11-14: local moving 480 PASS, actual v61 GitHub CI PENDING, physical ARFs still OPEN. `research_archive/2026-11-14_q105_broken_charged_wilson/`.
+
 - [x] Q103 [compute] (A/F) From Q102 original five-solid/H64 moving graph derive **exact all-time** current purely from native spectral trace, and an **exact 24-observation fluctuation law** from its Born quantum transition, with no real Markov affinity; local exact/numerical tests — GPT 2026-11-14 THEOREM conditional physics, local PASS, CI pending, physical ARFs OPEN. `research_archive/2026-11-14_q103_exact_alltime_arf/`.
 
 - [x] Q102 [compute] (A/F) From Q101's genuine all-five/H64 moving frustrated B derive positive quantum-born transition current with NO real directional Markov-affinity postulate, compute exact 3-/5-fold interference harmonics and check unique closed path counts — GPT 2026-11-14: THEOREM conditional Peierls/Born, local exact plus numerical certificates PASS, CI pending; physical ARFs open. `research_archive/2026-11-14_q102_born_chiral_arf/`.
@@ -1297,3 +1299,8 @@ commit as your result.
 - Result: VERIFIED CI RUNNER COMMAND ERROR. Q101 research.q101_moving_arf and research.q101_magnetic_factor were ERROR, not algebraic FAIL: FileNotFoundError attempting to execute `OPENBLAS_NUM_THREADS=1` as command in `registry.toml` (runner does not launch via shell). Corrected the four Q101/102/103 `run` fields to call `python` directly. The orchestrator already sets OPENBLAS_NUM_THREADS=1/OMP_NUM_THREADS=1/MKL_NUM_THREADS=1 in job environment, so no mathematical input or script changed.
 - Evidence: GitHub research-stage job 132378193929 raw log for run https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43570785986. Local 2026-11-14 Q101/102/103 certificates executed PASS; new GitHub full-run verdict pending on repair commit.
 - Next: inspect actual GitHub CI Q101/102/103 checks and repair any substantive script errors without calling errors proofs.
+
+### 2026-11-14 — GPT — Gate B/D — Q105 moving broken charge to native v61 Wilson
+- Result: finite charge-transport theorem, conditional microscopic kinetic rule, physical ARFs remain open. Original Q101 all-five/190/50/H64 source gives n_s=(φ/4)Σs_i v_i, unit for 60 minima; moving d=(1−√5)/4. 16 Weyl Q_s=Y+n_s·W gives original electric spectrum, TrQ16²=16/3/TrQ96²=32. Shortest SU2 U_ab=(1+S_aS_b)/√(2(1+d)) has charged intertwiner Q_a U16=U16 Q_b on every 60 edge. Exact triangle/pentagon Berry formulas aligned to original B. 480 moving charged operator both Ward contacts PASSED local. Check executes archived original v61 192×192 Wilson across all 528 links, all five charges, both Ward orders; native result CI PENDING. Full 30×192×16 action kinetic join and Maxwell/Higgs selection not uniquely fixed, no physical ARF derived.
+- Evidence: local exact SymPy and native 50/190/H64 Q101 re-execution, all edge/plaquette checks, 480 finite Ward. GitHub check research.q105_broken_charged_wilson registered; CI pending.
+- Resume: inspect native CI, then compute true source-loaded Wilson sea Hessian using vacuum-selected charge, seeking unique Maxwell kinetic coefficient without fitted values.
