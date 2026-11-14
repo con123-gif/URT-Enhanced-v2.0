@@ -1155,3 +1155,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py"
 timeout = 90
+
+[[check]]
+id = "research.q87b_native_bridge_parity_rayleigh"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py"
+timeout = 60
