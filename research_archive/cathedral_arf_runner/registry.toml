@@ -1380,3 +1380,19 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q108_born_fisher_photon/Q108_BORN_FISHER_GAUGE.py"
 timeout = 180
+
+[[check]]
+id = "research.q109_full_joined_gauge"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_NATIVE_FULL_HESSIAN.py"
+timeout = 270
+
+[[check]]
+id = "research.q109_2d_descent"
+stage = "research_heavy"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_TWO_DIMENSIONAL_DESCENT.py"
+timeout = 300
