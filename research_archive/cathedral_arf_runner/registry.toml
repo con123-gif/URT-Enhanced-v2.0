@@ -1485,3 +1485,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q122_native_berry_branch_cancellation/Q122_ORIGINAL_CHARGED_BERRY_BRANCH.py"
 timeout = 300
+
+[[check]]
+id = "research.q123_golden_saddle_capacity"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-14_q123_golden_persistence/Q123_GOLDEN_SADDLE_CAPACITY.py"
+timeout = 180
