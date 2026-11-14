@@ -1220,3 +1220,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87g_second_moment/Q87G_NATIVE_SECOND_MOMENT.py"
 timeout = 180
+
+[[check]]
+id = "research.q93_primitive_clock_trace"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q93_primitive_clock_response/Q93_NATIVE_MARKOV_CLOCK_TRACE.py"
+timeout = 90
