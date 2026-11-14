@@ -1236,3 +1236,19 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q94_hidden_clock/Q94_NATIVE_HIDDEN_PROJECTED_CLOCK.py"
 timeout = 120
+
+[[check]]
+id = "research.q95_source_carrier_exact"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q95_full_five_source/Q95_SOURCE_CARRIER_EXACT.py"
+timeout = 120
+
+[[check]]
+id = "research.q95_full_five_numeric"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-14_q95_full_five_source/Q95_ALL_FIVE_NUMERICAL_CHECK.py"
+timeout = 90
