@@ -30,6 +30,7 @@ lane is empty, take any open item.
 If two agents finish the same task, the later one records its work as an independent **REVIEW** of the earlier.
 
 ## Rules that are never relaxed
+- **ARF form freedom — Con, 2026-11-14:** Derive the physical laws afresh from the primitive full Cathedral/URT construction. The existing four ARF equations, polynomial shapes, coefficients, pole residues, and even their count are **not** fixed targets. Do not reverse-engineer them or select a chronology, source, coupling, or normalisation because it reproduces an old ARF. Derive the operator and gauge-invariant observable first; compare old ARFs only afterward. A different result replaces, not fails to reproduce, a historical candidate. See `docs/ARF_FIRST_PRINCIPLES_CORRECTION_2026-11-14.md`.
 - No fitted constants and no measured physical values as inputs. Historical ARF values only as a final comparison.
 - No random or synthetic matrices standing in for a named Cathedral operator.
 - Never set a gate to `closed`. Never edit sha-pinned archive files, `.github/workflows/`, or `RESEARCH_PROTOCOL.md`.

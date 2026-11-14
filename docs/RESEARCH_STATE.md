@@ -163,6 +163,8 @@ Nothing in the archive selects this map. Gates B → C → D are this object; ga
 
 ## 6. Recorded framework outputs: not derivations
 
+**Method correction (Con, 2026-11-14): ARF form freedom.** The four existing ARFs are historical candidate formulas, not equations to derive by construction. Their number, functional forms, numerical coefficients, residues and predicted values may all change. The required derivation is native URT/full-Cathedral dynamics → specified physical operator → symmetry/normalisation and charged source → gauge-invariant observable → falsifiable prediction, with experimental and historical comparisons only at the end. Likewise the older `H + c·Abar` chronology form and `(4,2,2,0)` weight pattern are conditional outputs to test, **not required answers**. A native derivation yielding a different generator, weights, or observables supersedes them. See `docs/ARF_FIRST_PRINCIPLES_CORRECTION_2026-11-14.md`. No physical gate is closed by this directive.
+
 - **α⁻¹(0) = 137 + (17572/1215)Δ − (9/65)Δ² = 137.035999178195** (value of the polynomial). The ledger calls it an exact internal invariant. 17572/1215 is **not** derived, and the decompositions 137 = N² − E − (D−1) and 17572/1215 = N + 9/5 − 82/243 are arithmetic only.
 - **The handover's table** (sin²θ_W, mass ratios, CKM, PMNS): recorded outputs whose derivation paths and inputs are unaudited.
 - **The ~40 legacy "confirmed" labels:** historical comparisons only.
@@ -183,12 +185,12 @@ Nothing in the archive selects this map. Gates B → C → D are this object; ga
 
 | Gate | | Frontier |
 |---|---|---|
-| A | Primitive selection | Derive the six-bit history dictionary (axis ordering and signs), the chronology coefficient and the source weights (4,2,2,0) from the URT recurrence |
+| A | Primitive selection | Derive the native history dictionary, chronology and source response from URT. Test conditional coefficients/weights, but do not impose `H+c·Abar` or `(4,2,2,0)` |
 | B | Charged operator | The §5 map, H64 ↔ v61 Wilson / Q96 |
 | C | Gauge selection | Photon projector and normalisation from that map; currently `unselected` |
 | D | Ward completion | Both Ward orders on the joined operator, not just on each side |
 | E | Physical observables | Pole residues and couplings without fitted values; six admissible observables exist today |
-| F | Four ARFs | From E, with uniqueness and falsification tests |
+| F | First-principles laws (historical four ARFs as comparisons) | Derive whatever equations E requires, with uniqueness, scale definition and falsification tests; no obligation to retain old ARF formulas or the number four |
 
 ## 9. Documents and their status
 
