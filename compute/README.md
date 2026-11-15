@@ -5,6 +5,7 @@ Large outputs stay in the run's artifact (90 days).
 
 | Job | Status | Wall (s) | Finished | Requested by | Question |
 |---|---|---|---|---|---|
+| `q151-resume-native-528-physical-vacuum` | pass | 34.87 | 2026-11-15T13:06:13Z | GPT | Does warm-starting from the exact Q150 original v61 528-field converge to full stationary physical gauge background? Use |
 | `q150-native-full-528-physical-vacuum` | pass | 83.39 | 2026-11-15T12:48:31Z | GPT | Does original Q109/Q110 same-action 528-link full gauge minimization reach a genuine 481D stationary background? Report  |
 | `selftest-compute-queue-1` | pass | 0.19 | 2026-11-10T20:23:19Z | Claude | Self-test 1/2: does the compute queue run a job and record it on the state branch? |
 | `selftest-compute-queue-2` | pass | 0.45 | 2026-11-10T20:24:23Z | Claude | Self-test 2/2: did the first job's run dispatch this one by itself? |

@@ -1,0 +1,37 @@
+{
+  "continuum_limit_derived": false,
+  "evaluations": 121,
+  "final": {
+    "corrected_flux_nonzero": 3216,
+    "corrected_flux_rms": 0.553342789379101,
+    "delta_gamma": -7389.662520593294,
+    "full_gradient_norm": 0.000517246721460616,
+    "stationary_numeric": false,
+    "ward_residual": 1.6957591840503638e-12
+  },
+  "initial": {
+    "corrected_flux_nonzero": 3216,
+    "corrected_flux_rms": 0.553349245254123,
+    "delta_gamma": -7389.66246102273,
+    "full_gradient_norm": 0.05694848122123943,
+    "stationary_numeric": false,
+    "ward_residual": 1.3894239997268628e-12
+  },
+  "iterations": 114,
+  "model_premise": "conditional equal-unit moving/spatial Gaussian determinant",
+  "note": "6x2x2x2 finite-volume geometry alone cannot provide a q->0 continuum photon pole",
+  "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "optimizer_success": true,
+  "physical_alpha_derived": false,
+  "physical_maxwell_photon_derived": false,
+  "primitive_URT_relative_kinetic_scale_derived": false,
+  "seed_commit": "add2ab4396a1f2c92a590606fb9685052a07cd46",
+  "seed_sha256": "408a918a1e02af8125a2fcde59d0b4f19dc7f79c8e518e731209387f24946d12",
+  "source": "original native Q109/Q110 v61, 48-sites,528-links,6pi U1",
+  "stationary_candidate": false,
+  "transverse_hessian": {
+    "performed": false,
+    "positive_transverse_verified": false
+  },
+  "v61_sha256": "e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75"
+}
