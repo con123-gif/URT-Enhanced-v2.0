@@ -1704,3 +1704,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-15_q161e_native_hidden_rank/Q161E_NATIVE_HIDDEN_RANK.py"
 timeout = 120
+
+[[check]]
+id = "research.q161f_clock_hidden_rank"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-15_q161f_clock_hidden_rank/Q161F_CLOCK_HIDDEN_RANK.py"
+timeout = 120
