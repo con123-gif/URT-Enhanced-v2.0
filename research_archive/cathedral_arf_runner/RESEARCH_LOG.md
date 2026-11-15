@@ -5,13 +5,16 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [ ] Q159b [compute] (PHYSICAL CI RECOVERY): q159 first inner job asserted incorrectly on absolute Hermiticity at NS5 (near-native-matter gap 8.811e−5). Correct scale-aware relative Hermiticity check <1e−8; independent local NS5 relative defect 2.99e−13, full original 48 block matching original run PASS; rerun full NS2–6 native and persist. research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_SCALING_AND_GAP_THEOREM.md.
+- [ ] Q160 [derive/compute] (NATURE PHYSICS NEXT): From FULL five-Platonic 190 cochains/H64/24 and primitive URT πφe positive transfer, derive a physical causal or KMS time/charged-matter functional, including original v61 r/M and relative moving/spatial kinetic normalization WITHOUT FITTING. It must preserve full native Q96/192/528 Ward identities, address Q159b proven lack of uniform Gaussian inverse gap under spatial NS→∞ and permit stable continuum long-wavelength photon residue. A conditional regulator guessed from Δ is not a first-principles derivation; prove the transfer map or label assumptions.
 
 
-- [ ] Q159 [compute] (PHYSICAL CONTINUUM GATE): Exact native Q106/v61 4×4 Bloch charged polarization reproduces all 48 original 528 Hess Fourier blocks rel<2.5e−13; scans original NS2..6 spatial first-q instability and exact original mu=-2 singlet continuum zero-gap theorem by Q(sqrt3) inequalities. Independent LOCAL PASS, true unmodified native GitHub CI PENDING. research_archive/2026-11-15_q159_native_continuum_photon/.
+- [x] Q159b [compute] (PHYSICAL CI RECOVERY): q159 first inner job asserted incorrectly on absolute Hermiticity at NS5 (near-native-matter gap 8.811e−5). Correct scale-aware relative Hermiticity check <1e−8; independent local NS5 relative defect 2.99e−13, full original 48 block matching original run PASS; original-source GitHub inner CI PASS run 43725777424, full NS2–6 native JSON persisted. research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_SCALING_AND_GAP_THEOREM.md.
 
 
-- [ ] Q158 [compute] (PHYSICAL source-to-vacuum): Compare original Q157b 48 momentum unstable sectors with physical Q152 3216 q=1/3 Wilson holonomy Fourier decomposition, Q149 native correct face order. Locally exact original-binary power ratio 568.6353/901.8069=63.0551% in 24 unstable sectors; native original-source confirmation pending. Also test time-frequency eigen-spectrum flattening at nonzero spatial π and its finite-lattice UV limitation. research_archive/2026-11-15_q158_native_flux_order_match/.
+- [x] Q159 [compute] (PHYSICAL CONTINUUM GATE): Exact native Q106/v61 4×4 Bloch charged polarization reproduces all 48 original 528 Hess Fourier blocks rel<2.5e−13; scans original NS2..6 spatial first-q instability and exact original mu=-2 singlet continuum zero-gap theorem by Q(sqrt3) inequalities. Independent LOCAL PASS; first original inner CI failed numerical tolerance, corrected Q159b inner CI PASS and persisted. research_archive/2026-11-15_q159_native_continuum_photon/.
+
+
+- [x] Q158 [compute] (PHYSICAL source-to-vacuum): Compare original Q157b 48 momentum unstable sectors with physical Q152 3216 q=1/3 Wilson holonomy Fourier decomposition, Q149 native correct face order. Locally exact original-binary power ratio 568.6353/901.8069=63.0551% in 24 unstable sectors; native original-source CI PASS/persisted 63.0551% and time-frequency flattening. Also test time-frequency eigen-spectrum flattening at nonzero spatial π and its finite-lattice UV limitation. research_archive/2026-11-15_q158_native_flux_order_match/.
 
 - [x] Q157b [compute] original-native 48 Fourier momentum-block JSON+NPZ persisted successfully, CI PASS; physically 84 negative modes only at spatial π, no 11 uniform instabilities; source bin Q157b.
 
@@ -326,6 +329,13 @@ commit as your result.
 - Native GitHub computation q155b-native-translation-corrected-block-order PASS (job run 43721855998) using Q149 original native face block order and Q152 pinned 528-vector; state branch persisted full JSON.
 - Reproduced local gauge-invariant flux RMS .553342787214, and primitive translations t .7693684652, x .7820644190, y .7991028430, z .7630839607; all 3216 2-cell holonomies changed under all four one-step shifts. The old Q155 native RMS was wrongly indexed and is superseded.
 - Q154 native original action showed strong momentum mixing .7515–.8361; so cannot infer a physical Maxwell photon from finite diagonal Fourier response. Next physical test is continuum/translation-restoring phase and primitive URT action choice, not more abstract graph moments.
+
+
+### 2026-11-15 — GPT — Q159b original-natively proved continuum gap crossing and multi-volume instability
+- Result: Q159b GitHub compute run 43725777424, original Q106+v61 source, full 48 Fourier blocks agree with independently native Q157b 528-Hessian to relative2.4409965653e−13. The new 4x4 Bloch current/seagull computation removes the cubic 528-Hessian bottleneck for larger spatial volumes.
+- Actual NS2..6: first spatial q=π,2π/3,π/2,2π/5,π/3 with 4,6,4,4,1 negative modes; q=0 all positive. Original shifted-fermion gap NS5 min8.8113e−5.
+- Theorem within inherited original Gaussian model: moving sing μ=−2 (mult10); at p=(π/6,s,s,s), E²(0)=.6816043198<4<E²(π/2)=4.9855612829 exactly in Q(sqrt3), so some real s* has E(s*)=2 and the original inverse has no uniform gap as NS→∞. This is NOT a no-go for whole Cathedral; primitive physical time/kinetic normalization remains missing.
+- Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
 ### 2026-11-15 — GPT — Q152 transverse physical-vacuum Hessian
