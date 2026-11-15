@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 124.5,
+  "tail": "746.6696590417996\nNonzero one-line bounded descent amplitude 0.7272212035311078 DeltaGamma -228.48814072998357 interior_stationary True\nQ109 CONDITIONAL JOINED 528 GAUGE DETERMINANT: PASS\nStill missing unique relative kinetic normalization + stable full-spatial vacuum + continuum physical source.\nOne-line extremum still has full physical gradient norm 769.7444142238497\nTwo-dimensional physical descent [0.83892543 0.22327491] DeltaGamma -324.00958026808803 projected-gradient 1.2201640123821571e-05 optimizer-success False\nQ109 2D DESCENT: PASS; no 481D stationary-vacuum claim\nQ153 original 528 native candidate, action -7389.6625205942255 gradient 5.122355378782224e-06 Ward 1.7061790668781347e-12 input SHA1 ad746e6f14a5332e8d3b84fb8a2cd46eff65e258\nQ153 direct native gradient Hessian columns 1 / 481\nQ153 direct native gradient Hessian columns 25 / 481\nQ153 direct native gradient Hessian columns 50 / 481\nQ153 direct native gradient Hessian columns 75 / 481\nQ153 direct native gradient Hessian columns 100 / 481\nQ153 direct native gradient Hessian columns 125 / 481\nQ153 direct native gradient Hessian columns 150 / 481\nQ153 direct native gradient Hessian columns 175 / 481\nQ153 direct native gradient Hessian columns 200 / 481\nQ153 direct native gradient Hessian columns 225 / 481\nQ153 direct native gradient Hessian columns 250 / 481\nQ153 direct native gradient Hessian columns 275 / 481\nQ153 direct native gradient Hessian columns 300 / 481\nQ153 direct native gradient Hessian columns 325 / 481\nQ153 direct native gradient Hessian columns 350 / 481\nQ153 direct native gradient Hessian columns 375 / 481\nQ153 direct native gradient Hessian columns 400 / 481\nQ153 direct native gradient Hessian columns 425 / 481\nQ153 direct native gradient Hessian columns 450 / 481\nQ153 direct native gradient Hessian columns 475 / 481\nQ153 all 481 projected finite-volume native eigenvalues 481 positive 0 negative; min 1.0776023355019433\nQ153 RESULT {\"Hessian_derivative_step\": 0.0001, \"action_change\": -7389.6625205942255, \"all_481_numerically_positive\": true, \"cholesky_positive\": true, \"continuum_photon_pole_derived\": false, \"full_gradient_norm\": 5.122355378782224e-06, \"half_step_selected_column_relative_errors\": [1.4942052835286028e-09, 1.1251690471300705e-09, 2.591777690481995e-09, 3.443777088024903e-09, 3.9897960116074235e-09, 3.758621269357522e-09, 1.5503983155183655e-09, 5.362215470873009e-09, 1.1943875047376073e-09, 1.320977389045627e-09, 1.2032732882039052e-09, 1.123215994318333e-09], \"hessian_antisym_fro_relative\": 7.807530470546508e-09, \"hessian_eigen_first_12\": [1.0776023355019433, 1.2604500341503448, 1.5229891972477407, 1.9696172857758354, 2.1503836187755088, 2.255299619026315, 2.3754722567006143, 2.45946320410015, 3.0678523208241306, 3.8837345602108484, 4.474128526973477, 4.901633619819477], \"hessian_eigen_last_6\": [1303.019842769353, 1321.6305451632938, 1345.8723687568865, 1355.1615457096834, 1382.890894642811, 2291.8878346919273], \"hessian_negative_count\": 0, \"hessian_positive_count\": 481, \"hessian_symmetric_eigen_min\": 1.0776023355019433, \"max_half_step_selected_column_rel_error\": 5.362215470873009e-09, \"model_status\": \"conditional equal-moving/spatial kinetic input, not URT-selected physical theory\", \"native_v61_sha256\": \"e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75\", \"physical_alpha_derived\": false, \"physical_projector_dimensions\": {\"flat_wilson\": 4, \"gauge\": 47, \"link\": 528, \"local_curvature\": 477, \"transverse\": 481}, \"primitive_URT_relative_kinetic_normalization_derived\": false, \"q152_npy_blob_git_sha1\": \"ad746e6f14a5332e8d3b84fb8a2cd46eff65e258\", \"q152_state_commit\": \"8941bd77ef73d7962fb540b9f753cad427548fdc\", \"rigorous_hessian_interval_certificate\": false, \"source\": \"native original Q109 Gaussian charged v61/Q106 moving Wilson; unchanged\", \"stability_verified_numerically\": true, \"ward_gradient_residual\": 1.7061790668781347e-12}\nQ153 NO physical photon/alpha unless 4D continuum pole and normalization are separately derived.\n",
+  "id": "q153-full-native-481-transverse-stability",
+  "question": "Is the actual numerically stationary Q152 528-link original-v61 vacuum stable in ALL 481 physical directions (477 local flux + 4 torons), as shown by full native Hessian eigenspectrum and Cholesky, not just six Ritz modes?",
+  "requested_by": "GPT",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-15_q153_full_physical_stability/Q153_FULL_NATIVE_TRANSVERSE_HESSIAN.py --output-dir {out}",
+  "utc": "2026-11-15T13:25:59Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "d4884a57e6e3190be03442a6cadb7da1138c8db2",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43718745350",
+  "outputs_committed": [
+    {
+      "path": "Q153_PROGRESS_HESSIAN.npz",
+      "bytes": 1771060,
+      "sha256": "163745b80c3e2cc3c486b6c3b1df57dfbb6244bcf7565be0e41a0cb1b77efa30"
+    },
+    {
+      "path": "Q153_RESULT.json",
+      "bytes": 2165,
+      "sha256": "5eb12bff9b2855fdf90baafb6202e821df71e235f9c01e07a5858bfba587ec52"
+    },
+    {
+      "path": "Q153_full_physical_hessian.npy",
+      "bytes": 1851016,
+      "sha256": "96c36c2aab00b04e05c8b843ed6809fad230da3071683928ee45015df846083c"
+    }
+  ],
+  "outputs_artifact_only": []
+}

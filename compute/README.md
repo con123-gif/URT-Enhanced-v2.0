@@ -5,6 +5,7 @@ Large outputs stay in the run's artifact (90 days).
 
 | Job | Status | Wall (s) | Finished | Requested by | Question |
 |---|---|---|---|---|---|
+| `q153-full-native-481-transverse-stability` | pass | 124.5 | 2026-11-15T13:25:59Z | GPT | Is the actual numerically stationary Q152 528-link original-v61 vacuum stable in ALL 481 physical directions (477 local  |
 | `q152-native-physical-hessian-and-newton` | pass | 223.54 | 2026-11-15T13:14:00Z | GPT | At actual saved native Q151 528-field, is its complete 481D gauge-transverse curvature locally stable or are there genui |
 | `q151-resume-native-528-physical-vacuum` | pass | 34.87 | 2026-11-15T13:06:13Z | GPT | Does warm-starting from the exact Q150 original v61 528-field converge to full stationary physical gauge background? Use |
 | `q150-native-full-528-physical-vacuum` | pass | 83.39 | 2026-11-15T12:48:31Z | GPT | Does original Q109/Q110 same-action 528-link full gauge minimization reach a genuine 481D stationary background? Report  |
