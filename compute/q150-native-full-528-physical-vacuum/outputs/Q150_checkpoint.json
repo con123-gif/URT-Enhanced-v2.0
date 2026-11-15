@@ -1,0 +1,10 @@
+{
+  "delta_gamma": -7389.6623528273485,
+  "evaluations": 482,
+  "gradient_norm": 0.1327265698830869,
+  "iteration": 441,
+  "local_flux_nonzero": 3216,
+  "local_flux_rms": 0.45849446766969204,
+  "stationary_numeric": false,
+  "ward_residual": 1.4742504051920042e-12
+}

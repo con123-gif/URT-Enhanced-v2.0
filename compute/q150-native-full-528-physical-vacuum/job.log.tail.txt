@@ -1,0 +1,82 @@
+degree-seven native quaternionic polynomial annihilator: EXACT PASS
+exact 60-complex-dim spinor traces and factor multiplicities: Matrix([[4, 4, 8, 12]])
+Charge bands coincide by quaternionic time reversal (Kramers).
+For s=sqrt(2-2sqrt5/5), Hweak=s*X and
+det(xI-Xweak)= [x(x-sqrt5)]^2
+  *[x^2+phi^2*x+3(sqrt5-3)/8]^4
+  *[x^3-x^2-(3+sqrt5)x+(5+sqrt5)/4]^6
+Q106 EXACT CHARGED BERRY BAND CERTIFICATE: PASS
+Ground state theorem: phi-centre gives 60, 30+30; robust 1<t<3: PASS
+All five 190-cochain Hodge-Dirac Tr D²=720, Tr D⁴=3456: PASS
+Full H64 source isometry and native 18/16 hidden energies: EXACT PASS
+Moving chiral source: every minimal edge exactly ±8/√15, skew and zero divergence: EXACT PASS
+Ground network 30+30 rectified icosahedron; charpoly λ^12(λ²+5)^4(λ²+8)^5: EXACT PASS
+Spontaneous triplet contact spectrum: 1/2, (15±√5)/20 for ALL 60: PASS
+golden epsilon 0.0032521976748036952 per-track delta 0.000135508236450153976
+CONDITIONAL 24-step signed current: 0.00325219765489755466
+CONDITIONAL 24-step entropy production: 8.81399137604988185e-07
+Exact resolvent of iB: 12/z + 8z/(z²-5) + 10z/(z²-8)
+Unitary 24-return trace: 12 + 8cos(√5 ε) + 10cos(2√2 ε)
+PHYSICAL ARF STATUS: OPEN; no photon/fermion source-to-current identification
+MOVING CATHEDRAL ARF CANDIDATE CERTIFICATE: PASS
+Original all-five 190-cochain / 50-vertex / H64 source matches Q106: PASS
+Original v61 SHA256: e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75
+FULL 528 native physical spectrum: 397 positive, 84 negative, 47 gauge null; Ward 5.770888391913606e-11
+Extreme Hessian eigenvalues -2456.453162596667 23326.261452632807
+Physical closed-plaquette induced contact+current K 1746.6696095963002
+Independent all-charge logdet FD epsilon 0.0002 curvature 1746.6707504354417
+Independent all-charge logdet FD epsilon 0.0004 curvature 1746.6696590417996
+Nonzero one-line bounded descent amplitude 0.7272212035311078 DeltaGamma -228.48814072998357 interior_stationary True
+Q109 CONDITIONAL JOINED 528 GAUGE DETERMINANT: PASS
+Still missing unique relative kinetic normalization + stable full-spatial vacuum + continuum physical source.
+One-line extremum still has full physical gradient norm 769.7444142238497
+Two-dimensional physical descent [0.83892543 0.22327491] DeltaGamma -324.00958026808803 projected-gradient 1.2201640123821571e-05 optimizer-success False
+Q109 2D DESCENT: PASS; no 481D stationary-vacuum claim
+NATIVE Q109/Q110 original 2D seed: {'delta_gamma': -324.00958026808803, 'gradient_norm': 227.01899621923448, 'ward_residual': 1.894790563972708e-12, 'local_flux_rms': 0.024920343482347805, 'local_flux_nonzero': 1882, 'stationary_numeric': False}
+Q150 iteration 1 action -331.71437806420727 gradient 191.59415161645398 flux 0.02494213036056556
+Q150 iteration 11 action -381.0164375187305 gradient 32.76561837261122 flux 0.02733800560932027
+Q150 iteration 21 action -397.3936939428968 gradient 18.400689314329217 flux 0.02816209182935775
+Q150 iteration 31 action -401.527773922513 gradient 439.62655633031545 flux 0.033525891458824876
+Q150 iteration 41 action -683.9290868737153 gradient 1565.078561014091 flux 0.06352296194145785
+Q150 iteration 51 action -1136.7358059851686 gradient 412.23227655572623 flux 0.07316281067487927
+Q150 iteration 61 action -2919.426824925962 gradient 1193.2746448518528 flux 0.19382569715066575
+Q150 iteration 71 action -4097.948025826452 gradient 393.85914486420825 flux 0.20871836271128663
+Q150 iteration 81 action -4990.771268953598 gradient 351.37016426672574 flux 0.25646911459509025
+Q150 iteration 91 action -5162.512712872645 gradient 100.77544235343649 flux 0.28358313813916897
+Q150 iteration 101 action -5370.219923988305 gradient 240.4371751276169 flux 0.32553123990215305
+Q150 iteration 111 action -6139.992767722695 gradient 564.154131318303 flux 0.3450640866137847
+Q150 iteration 121 action -6551.9768840908655 gradient 164.8695633478878 flux 0.3499946255895883
+Q150 iteration 131 action -6647.724197806208 gradient 156.9527672518235 flux 0.3563156283092424
+Q150 iteration 141 action -6697.786769355793 gradient 70.99562278813718 flux 0.3738995633581908
+Q150 iteration 151 action -6836.707730802853 gradient 155.65802122826832 flux 0.38392043358352246
+Q150 iteration 161 action -6932.84847865114 gradient 44.92513834653787 flux 0.3950261010401631
+Q150 iteration 171 action -6984.375809241348 gradient 47.8156167935847 flux 0.4046229129381068
+Q150 iteration 181 action -7026.576859109249 gradient 56.466376803504126 flux 0.41158516152425173
+Q150 iteration 191 action -7070.546646999894 gradient 58.337957811655436 flux 0.41922480047597144
+Q150 iteration 201 action -7119.088446789101 gradient 45.02105814140282 flux 0.42589996411645725
+Q150 iteration 211 action -7149.337637784658 gradient 42.19002775988741 flux 0.43142507108730876
+Q150 iteration 221 action -7182.524418134271 gradient 61.451644124843156 flux 0.43746582337346085
+Q150 iteration 231 action -7259.056726969633 gradient 78.71460587856524 flux 0.44988410846593757
+Q150 iteration 241 action -7364.755260932026 gradient 60.87171390333728 flux 0.4595806632410473
+Q150 iteration 251 action -7376.732726157788 gradient 13.679495925637715 flux 0.46162890412062363
+Q150 iteration 261 action -7380.90292489127 gradient 13.292256959787213 flux 0.4628479302929596
+Q150 iteration 271 action -7382.552020892268 gradient 16.206713324050366 flux 0.4613567872867473
+Q150 iteration 281 action -7384.092891620268 gradient 10.112120801130386 flux 0.4605299107735237
+Q150 iteration 291 action -7385.748170129751 gradient 6.698396984840614 flux 0.4602771705456627
+Q150 iteration 301 action -7386.474935044913 gradient 8.299182293692889 flux 0.45999338889106955
+Q150 iteration 311 action -7386.808012912166 gradient 3.677961455509177 flux 0.45963878975707556
+Q150 iteration 321 action -7387.0608967045555 gradient 4.5236384118472746 flux 0.45902865116611113
+Q150 iteration 331 action -7387.363314347836 gradient 4.517230164678109 flux 0.45829260467328425
+Q150 iteration 341 action -7387.771954715223 gradient 5.460596197522837 flux 0.4576939566887371
+Q150 iteration 351 action -7388.264398180763 gradient 4.496818295137862 flux 0.4572779003195072
+Q150 iteration 361 action -7388.685565278865 gradient 7.257981011933432 flux 0.45741821458481263
+Q150 iteration 371 action -7389.197967298125 gradient 4.991057895024298 flux 0.45810121567234346
+Q150 iteration 381 action -7389.513415377442 gradient 2.6858412212920157 flux 0.45867245895585
+Q150 iteration 391 action -7389.594175770617 gradient 1.945107719036417 flux 0.45867130989294697
+Q150 iteration 401 action -7389.643487724912 gradient 1.0487817497310719 flux 0.45846478807759533
+Q150 iteration 411 action -7389.6575073935965 gradient 0.8044706495288018 flux 0.4584138849432112
+Q150 iteration 421 action -7389.660707453353 gradient 0.2658106325578599 flux 0.458451525951554
+Q150 iteration 431 action -7389.662004808342 gradient 0.19360669305509343 flux 0.45849248871487186
+Q150 iteration 441 action -7389.6623528273485 gradient 0.1327265698830869 flux 0.45849446766969204
+Q150 RESULT {"action": "Q109 original equal-unit-moving/spatial Gaussian determinant (conditional)", "continuum_photon_verified": false, "domain": "native 48-site,528-link,6pi-periodic Wilson lattice", "evaluations": 491, "final": {"delta_gamma": -7389.66246102273, "gradient_norm": 0.05694848122190085, "local_flux_nonzero": 3216, "local_flux_rms": 0.45849363591874776, "stationary_numeric": false, "ward_residual": 1.5780961440165536e-12}, "initial": {"delta_gamma": -324.00958026808803, "gradient_norm": 227.01899621923448, "local_flux_nonzero": 1882, "local_flux_rms": 0.024920343482347805, "stationary_numeric": false, "ward_residual": 1.894790563972708e-12}, "iterations": 450, "native_v61_sha256": "e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75", "optimizer_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT", "optimizer_success": false, "physical_alpha_derived": false, "stable_transverse_hessian_verified": false, "stationary_candidate": false}
+NOT CONVERGED: saved the best native candidate; no stable vacuum claimed

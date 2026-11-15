@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 83.39,
+  "tail": "9562278813718 flux 0.3738995633581908\nQ150 iteration 151 action -6836.707730802853 gradient 155.65802122826832 flux 0.38392043358352246\nQ150 iteration 161 action -6932.84847865114 gradient 44.92513834653787 flux 0.3950261010401631\nQ150 iteration 171 action -6984.375809241348 gradient 47.8156167935847 flux 0.4046229129381068\nQ150 iteration 181 action -7026.576859109249 gradient 56.466376803504126 flux 0.41158516152425173\nQ150 iteration 191 action -7070.546646999894 gradient 58.337957811655436 flux 0.41922480047597144\nQ150 iteration 201 action -7119.088446789101 gradient 45.02105814140282 flux 0.42589996411645725\nQ150 iteration 211 action -7149.337637784658 gradient 42.19002775988741 flux 0.43142507108730876\nQ150 iteration 221 action -7182.524418134271 gradient 61.451644124843156 flux 0.43746582337346085\nQ150 iteration 231 action -7259.056726969633 gradient 78.71460587856524 flux 0.44988410846593757\nQ150 iteration 241 action -7364.755260932026 gradient 60.87171390333728 flux 0.4595806632410473\nQ150 iteration 251 action -7376.732726157788 gradient 13.679495925637715 flux 0.46162890412062363\nQ150 iteration 261 action -7380.90292489127 gradient 13.292256959787213 flux 0.4628479302929596\nQ150 iteration 271 action -7382.552020892268 gradient 16.206713324050366 flux 0.4613567872867473\nQ150 iteration 281 action -7384.092891620268 gradient 10.112120801130386 flux 0.4605299107735237\nQ150 iteration 291 action -7385.748170129751 gradient 6.698396984840614 flux 0.4602771705456627\nQ150 iteration 301 action -7386.474935044913 gradient 8.299182293692889 flux 0.45999338889106955\nQ150 iteration 311 action -7386.808012912166 gradient 3.677961455509177 flux 0.45963878975707556\nQ150 iteration 321 action -7387.0608967045555 gradient 4.5236384118472746 flux 0.45902865116611113\nQ150 iteration 331 action -7387.363314347836 gradient 4.517230164678109 flux 0.45829260467328425\nQ150 iteration 341 action -7387.771954715223 gradient 5.460596197522837 flux 0.4576939566887371\nQ150 iteration 351 action -7388.264398180763 gradient 4.496818295137862 flux 0.4572779003195072\nQ150 iteration 361 action -7388.685565278865 gradient 7.257981011933432 flux 0.45741821458481263\nQ150 iteration 371 action -7389.197967298125 gradient 4.991057895024298 flux 0.45810121567234346\nQ150 iteration 381 action -7389.513415377442 gradient 2.6858412212920157 flux 0.45867245895585\nQ150 iteration 391 action -7389.594175770617 gradient 1.945107719036417 flux 0.45867130989294697\nQ150 iteration 401 action -7389.643487724912 gradient 1.0487817497310719 flux 0.45846478807759533\nQ150 iteration 411 action -7389.6575073935965 gradient 0.8044706495288018 flux 0.4584138849432112\nQ150 iteration 421 action -7389.660707453353 gradient 0.2658106325578599 flux 0.458451525951554\nQ150 iteration 431 action -7389.662004808342 gradient 0.19360669305509343 flux 0.45849248871487186\nQ150 iteration 441 action -7389.6623528273485 gradient 0.1327265698830869 flux 0.45849446766969204\nQ150 RESULT {\"action\": \"Q109 original equal-unit-moving/spatial Gaussian determinant (conditional)\", \"continuum_photon_verified\": false, \"domain\": \"native 48-site,528-link,6pi-periodic Wilson lattice\", \"evaluations\": 491, \"final\": {\"delta_gamma\": -7389.66246102273, \"gradient_norm\": 0.05694848122190085, \"local_flux_nonzero\": 3216, \"local_flux_rms\": 0.45849363591874776, \"stationary_numeric\": false, \"ward_residual\": 1.5780961440165536e-12}, \"initial\": {\"delta_gamma\": -324.00958026808803, \"gradient_norm\": 227.01899621923448, \"local_flux_nonzero\": 1882, \"local_flux_rms\": 0.024920343482347805, \"stationary_numeric\": false, \"ward_residual\": 1.894790563972708e-12}, \"iterations\": 450, \"native_v61_sha256\": \"e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75\", \"optimizer_message\": \"STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\", \"optimizer_success\": false, \"physical_alpha_derived\": false, \"stable_transverse_hessian_verified\": false, \"stationary_candidate\": false}\nNOT CONVERGED: saved the best native candidate; no stable vacuum claimed\n",
+  "id": "q150-native-full-528-physical-vacuum",
+  "question": "Does original Q109/Q110 same-action 528-link full gauge minimization reach a genuine 481D stationary background? Report full Ward gradient and nonzero native 2-cell flux, not only action descent.",
+  "requested_by": "GPT",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-15_q150_native_physical_vacuum/Q150_FULL_NATIVE_GAUGE_VACUUM_SEARCH.py --output-dir {out} --maxiter 450",
+  "utc": "2026-11-15T12:48:31Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "85e813fdfe44b5c22a69bce6973aef8922f1ad94",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43715542715",
+  "outputs_committed": [
+    {
+      "path": "Q150_RESULT.json",
+      "bytes": 1050,
+      "sha256": "5b8478183e737db6669f20c35cab6dae0363185e7da107bb681b9dec107cd6a5"
+    },
+    {
+      "path": "Q150_best_native_gauge_angles.npy",
+      "bytes": 4352,
+      "sha256": "408a918a1e02af8125a2fcde59d0b4f19dc7f79c8e518e731209387f24946d12"
+    },
+    {
+      "path": "Q150_checkpoint.json",
+      "bytes": 267,
+      "sha256": "a98483d14c9f0a0975b67a15e34df6ad853a63c966f98e28966d7ab869087cc1"
+    },
+    {
+      "path": "Q150_checkpoint.npy",
+      "bytes": 4352,
+      "sha256": "369831eb00ed8e1b47c2b2c7881826e48f081799b75656084f37b3ec58657335"
+    }
+  ],
+  "outputs_artifact_only": []
+}

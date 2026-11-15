@@ -1,0 +1,29 @@
+{
+  "action": "Q109 original equal-unit-moving/spatial Gaussian determinant (conditional)",
+  "continuum_photon_verified": false,
+  "domain": "native 48-site,528-link,6pi-periodic Wilson lattice",
+  "evaluations": 491,
+  "final": {
+    "delta_gamma": -7389.66246102273,
+    "gradient_norm": 0.05694848122190085,
+    "local_flux_nonzero": 3216,
+    "local_flux_rms": 0.45849363591874776,
+    "stationary_numeric": false,
+    "ward_residual": 1.5780961440165536e-12
+  },
+  "initial": {
+    "delta_gamma": -324.00958026808803,
+    "gradient_norm": 227.01899621923448,
+    "local_flux_nonzero": 1882,
+    "local_flux_rms": 0.024920343482347805,
+    "stationary_numeric": false,
+    "ward_residual": 1.894790563972708e-12
+  },
+  "iterations": 450,
+  "native_v61_sha256": "e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75",
+  "optimizer_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "optimizer_success": false,
+  "physical_alpha_derived": false,
+  "stable_transverse_hessian_verified": false,
+  "stationary_candidate": false
+}
