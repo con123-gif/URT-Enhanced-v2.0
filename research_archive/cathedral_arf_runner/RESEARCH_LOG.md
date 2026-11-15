@@ -5,6 +5,11 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q158 [compute] (PHYSICAL source-to-vacuum): Compare original Q157b 48 momentum unstable sectors with physical Q152 3216 q=1/3 Wilson holonomy Fourier decomposition, Q149 native correct face order. Locally exact original-binary power ratio 568.6353/901.8069=63.0551% in 24 unstable sectors; native original-source confirmation pending. Also test time-frequency eigen-spectrum flattening at nonzero spatial π and its finite-lattice UV limitation. research_archive/2026-11-15_q158_native_flux_order_match/.
+
+- [x] Q157b [compute] original-native 48 Fourier momentum-block JSON+NPZ persisted successfully, CI PASS; physically 84 negative modes only at spatial π, no 11 uniform instabilities; source bin Q157b.
+
+
 - [ ] Q157b [compute] (PHYSICS DATA PRESERVATION): Re-run Q157 original native 528→48 momentum spectral decomposition with registered output-dir to persist all 48 11×11 block spectra, not just job log. Q157 original-native PASS: all 84 negative finite-spatial-π Nyquist modes, zero uniform-k negative; 24 unstable sectors. Need full JSON to compare with Q152 gauge-invariant flux momentum and to audit temporal dispersion. research_archive/2026-11-15_q157_native_4d_instability_momenta/Q157_NATIVE_FINITE_MOMENTUM_THEOREM.md.
 
 - [x] Q157 [compute] (NATIVE PHYSICS, 43723169735 PASS): Fourier-decomposed original 528 Hess into 48 blocks with full spectrum error3.5e−10: 84 negative in 24 sectors (each n_t has spatial single π ×4 each and triple π×2). All 11 uniform modes positive, BUT spatial box only 2³; no continuum photon.

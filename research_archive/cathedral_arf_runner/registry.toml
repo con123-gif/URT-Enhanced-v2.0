@@ -635,6 +635,14 @@ timeout = 120
 
 # Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
 [[job]]
+id = "q158-native-physical-flux-instability-overlap"
+question = "Does nonlinear gauge-invariant Q152 physical Wilson flux order populate the same 24 four-dimensional momentum sectors where the original Q109 symmetric vacuum had 84 negative modes? Also quantify temporal dispersion of original 48 Fourier Hessian blocks."
+run = "python -u research_archive/2026-11-15_q158_native_flux_order_match/Q158_NATIVE_FLUX_UNSTABLE_OVERLAP.py --output-dir {out}"
+timeout_minutes = 60
+requested_by = "GPT"
+claim = "conditional"
+
+[[job]]
 id = "q157b-native-4d-photon-instability-persist"
 question = "Persist and independently re-execute all 48 native Q157 Fourier 11-link gauge-Hessian blocks and spectra to reproduce the 84 nonzero-spatial-momentum negative modes and zero uniform instability."
 run = "python -u research_archive/2026-11-15_q157_native_4d_instability_momenta/Q157_4D_NATIVE_GAUGE_INSTABILITY.py --output-dir {out}"
