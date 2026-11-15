@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 29.68,
+  "tail": "354417\nIndependent all-charge logdet FD epsilon 0.0004 curvature 1746.6696590417996\nNonzero one-line bounded descent amplitude 0.7272212035311078 DeltaGamma -228.48814072998357 interior_stationary True\nQ109 CONDITIONAL JOINED 528 GAUGE DETERMINANT: PASS\nStill missing unique relative kinetic normalization + stable full-spatial vacuum + continuum physical source.\nQ157 native 4D original action Hessian translation residuals [1.7508131177698733e-14, 4.8142429365734755e-15, 4.135008804918443e-15, 3.9034630976204626e-15]\nQ157 genuine unstable momentum (0, 0, 0, 1) negative 4 lambda_min -2456.4531625966147\nQ157 genuine unstable momentum (0, 0, 1, 0) negative 4 lambda_min -2456.453162596611\nQ157 genuine unstable momentum (0, 1, 0, 0) negative 4 lambda_min -2456.4531625966133\nQ157 genuine unstable momentum (0, 1, 1, 1) negative 2 lambda_min -559.8624094376388\nQ157 genuine unstable momentum (1, 0, 0, 1) negative 4 lambda_min -2456.4531625966147\nQ157 genuine unstable momentum (1, 0, 1, 0) negative 4 lambda_min -2456.453162596618\nQ157 genuine unstable momentum (1, 1, 0, 0) negative 4 lambda_min -2456.4531625966215\nQ157 genuine unstable momentum (1, 1, 1, 1) negative 2 lambda_min -559.8624094376389\nQ157 genuine unstable momentum (2, 0, 0, 1) negative 4 lambda_min -2456.453162596618\nQ157 genuine unstable momentum (2, 0, 1, 0) negative 4 lambda_min -2456.453162596618\nQ157 genuine unstable momentum (2, 1, 0, 0) negative 4 lambda_min -2456.4531625966215\nQ157 genuine unstable momentum (2, 1, 1, 1) negative 2 lambda_min -559.8624094376388\nQ157 genuine unstable momentum (3, 0, 0, 1) negative 4 lambda_min -2456.453162596619\nQ157 genuine unstable momentum (3, 0, 1, 0) negative 4 lambda_min -2456.45316259661\nQ157 genuine unstable momentum (3, 1, 0, 0) negative 4 lambda_min -2456.4531625966124\nQ157 genuine unstable momentum (3, 1, 1, 1) negative 2 lambda_min -559.8624094376383\nQ157 genuine unstable momentum (4, 0, 0, 1) negative 4 lambda_min -2456.4531625966197\nQ157 genuine unstable momentum (4, 0, 1, 0) negative 4 lambda_min -2456.4531625966183\nQ157 genuine unstable momentum (4, 1, 0, 0) negative 4 lambda_min -2456.453162596621\nQ157 genuine unstable momentum (4, 1, 1, 1) negative 2 lambda_min -559.8624094376388\nQ157 genuine unstable momentum (5, 0, 0, 1) negative 4 lambda_min -2456.453162596616\nQ157 genuine unstable momentum (5, 0, 1, 0) negative 4 lambda_min -2456.4531625966188\nQ157 genuine unstable momentum (5, 1, 0, 0) negative 4 lambda_min -2456.4531625966224\nQ157 genuine unstable momentum (5, 1, 1, 1) negative 2 lambda_min -559.862409437639\nQ157 RESULT {\"Q152_Q153_48_translation_orbit_of_degenerate_stable_minima\": true, \"all_four_original_translation_covariance_errors\": [1.7508131177698733e-14, 4.8142429365734755e-15, 4.135008804918443e-15, 3.9034630976204626e-15], \"alpha_derived\": false, \"computed_mode_count\": 48, \"full_translationally_invariant_action_confirmed_by_Q156\": true, \"max_full_vs_fourier_eigen_difference\": 3.5015546018257737e-10, \"mean_lattice_q_squared_of_84_instabilities\": 7.142857142857143, \"most_negative_lambda\": -2456.4531625966747, \"most_unstable_mode\": [5, 1, 0, 0], \"nonzero_momentum_negative_mode_count\": 84, \"number_of_unstable_momentum_sectors\": 24, \"original_528_Hessian_inertia\": {\"gauge_zero\": 47, \"negative\": 84, \"positive\": 397}, \"physical_photon_derived\": false, \"physical_status\": \"conditional finite 4D action, NOT massless observed photon\", \"primitive_full_Cathedral_action_unique\": false, \"source\": \"original native five-Platonic Q101/Q106 + v61 Q109 charged Gaussian Hessian\", \"vacuum_phase_and_continuum_relevance\": \"unstable wavevectors determine finite flux ordering; no long-wavelength continuum extrapolation\", \"zero_momentum_inertia\": {\"eleven_eigenvalues\": [105.42679432386876, 105.42679432386895, 105.42679432386916, 126.27362104238193, 414.48534349218045, 414.48534349218073, 414.48534349218096, 1006.8767289997525, 1006.8767289997531, 1006.8767289997554, 6275.337406675784], \"negative\": 0, \"positive\": 11, \"zero\": 0}}\n",
+  "id": "q157b-native-4d-photon-instability-persist",
+  "question": "Persist and independently re-execute all 48 native Q157 Fourier 11-link gauge-Hessian blocks and spectra to reproduce the 84 nonzero-spatial-momentum negative modes and zero uniform instability.",
+  "requested_by": "GPT",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-15_q157_native_4d_instability_momenta/Q157_4D_NATIVE_GAUGE_INSTABILITY.py --output-dir {out}",
+  "utc": "2026-11-15T14:19:07Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "2c4f8add02c1a9653f6efa9bc8026877a5453466",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43723583605",
+  "outputs_committed": [
+    {
+      "path": "Q157_ORIGINAL_4D_HESSIAN_FOURIER_BLOCKS.npz",
+      "bytes": 36916,
+      "sha256": "4a4e1762178e6b8f7b7372f38eaa15db999394892aa50f2222de86f18115d766"
+    },
+    {
+      "path": "Q157_RESULT.json",
+      "bytes": 40307,
+      "sha256": "38970819c970561d93800a51c64f56c7fe708e1e9be0d9d18420a8542df69df4"
+    }
+  ],
+  "outputs_artifact_only": []
+}

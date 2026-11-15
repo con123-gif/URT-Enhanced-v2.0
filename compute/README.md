@@ -5,6 +5,7 @@ Large outputs stay in the run's artifact (90 days).
 
 | Job | Status | Wall (s) | Finished | Requested by | Question |
 |---|---|---|---|---|---|
+| `q157b-native-4d-photon-instability-persist` | pass | 29.68 | 2026-11-15T14:19:07Z | GPT | Persist and independently re-execute all 48 native Q157 Fourier 11-link gauge-Hessian blocks and spectra to reproduce th |
 | `q157-native-4d-photon-instability-momentum` | pass | 30.54 | 2026-11-15T14:14:30Z | GPT | Which 4D lattice momenta carry the original Q109 84 unstable physical gauge directions at symmetric A=0? Reconstruct all |
 | `q156-native-48-translation-orbit-test` | pass | 33.49 | 2026-11-15T14:09:45Z | GPT | Is translation breaking in the actual Q152 finite charged Wilson vacuum spontaneous or explicit? Check ALL 48 translated |
 | `q155b-native-translation-corrected-block-order` | pass | 0.46 | 2026-11-15T13:59:55Z | GPT | Verify gauge-invariant Q152 physical flux translation breaking on ORIGINAL Q149 face BLOCK ordering: 2640 squares per 48 |
