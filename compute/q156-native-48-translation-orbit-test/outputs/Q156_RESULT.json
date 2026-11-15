@@ -1,0 +1,653 @@
+{
+  "conditional_model": "equal relative moving/spatial kinetic weights, not primitive-selected",
+  "configuration_count": 48,
+  "continuum_Lorentz_or_translation_restoration_derived": false,
+  "finite_classical_discrete_degenerate_backgrounds": true,
+  "flux_orbit_gauge_inequivalent_count": 48,
+  "full_orbit_local_numerical_stability_conditional_on_q153_positive_hessian": true,
+  "massless_physical_photon_derived": false,
+  "max_nontrivial_flux_orbit_distance": 0.8409862485591078,
+  "max_translated_gauge_ward_residual": 2.188089683564662e-12,
+  "max_translation_action_residual": 8.731149137020111e-11,
+  "max_translation_gradient_covariance_residual": 4.497708697688557e-11,
+  "min_nontrivial_gauge_invariant_flux_orbit_distance": 0.6861231055356041,
+  "native_4d_shape": [
+    6,
+    2,
+    2,
+    2
+  ],
+  "original_base_action_change": -7389.6625205942255,
+  "original_stationary_gradient_norm": 5.122355378782224e-06,
+  "physical_translation_symmetry_of_original_conditional_action_verified_numerically": true,
+  "records": [
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.0,
+      "gradient_covariance_norm": 0.0,
+      "shift": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ward_residual": 1.7061790668781347e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7630839607184755,
+      "gradient_covariance_norm": 2.777882316973131e-11,
+      "shift": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "ward_residual": 1.704931691873015e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7991028430361655,
+      "gradient_covariance_norm": 2.4200364534941154e-11,
+      "shift": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "ward_residual": 1.6225784588895241e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7661682695860931,
+      "gradient_covariance_norm": 2.051323844873928e-11,
+      "shift": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "ward_residual": 1.522607667508301e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7820644190456472,
+      "gradient_covariance_norm": 2.1622918133350132e-11,
+      "shift": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "ward_residual": 1.3008352770372047e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.76824255297065,
+      "gradient_covariance_norm": 2.7694526204490456e-11,
+      "shift": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "ward_residual": 1.6254870470749834e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7065103299074067,
+      "gradient_covariance_norm": 3.407632283755069e-11,
+      "shift": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "ward_residual": 1.8184717715876922e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.8409862485591078,
+      "gradient_covariance_norm": 2.7155478742531072e-11,
+      "shift": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "ward_residual": 1.730662864155479e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7693684652056176,
+      "gradient_covariance_norm": 2.235038633625832e-11,
+      "shift": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "ward_residual": 1.561149937893099e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.794886231837467,
+      "gradient_covariance_norm": 2.6790894592209243e-11,
+      "shift": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "ward_residual": 1.6103074749613093e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.75959094623623,
+      "gradient_covariance_norm": 1.9855508067394587e-11,
+      "shift": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "ward_residual": 1.8964343295401653e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7207587880002734,
+      "gradient_covariance_norm": 2.3828082222133047e-11,
+      "shift": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "ward_residual": 1.6482119770706365e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7913524036749526,
+      "gradient_covariance_norm": 3.0614807598941766e-11,
+      "shift": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "ward_residual": 1.5405903969776745e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7489792219774273,
+      "gradient_covariance_norm": 2.5746877921142648e-11,
+      "shift": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "ward_residual": 1.7184076026846603e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.6861231055356041,
+      "gradient_covariance_norm": 2.3698083167603373e-11,
+      "shift": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "ward_residual": 1.6545701859566759e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7371133778909644,
+      "gradient_covariance_norm": 2.3392249543250776e-11,
+      "shift": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "ward_residual": 1.2759095834461701e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7603883828685509,
+      "gradient_covariance_norm": 2.0086555369258376e-11,
+      "shift": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "ward_residual": 1.5113823927407665e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7524846421924646,
+      "gradient_covariance_norm": 2.64054076027662e-11,
+      "shift": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "ward_residual": 1.5216740740902116e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7654432695560325,
+      "gradient_covariance_norm": 2.183210488623024e-11,
+      "shift": [
+        2,
+        0,
+        1,
+        0
+      ],
+      "ward_residual": 1.4047488952277e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.746247137219587,
+      "gradient_covariance_norm": 2.1416496435125422e-11,
+      "shift": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "ward_residual": 1.7399400470425573e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7490041633575133,
+      "gradient_covariance_norm": 2.08218689358411e-11,
+      "shift": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "ward_residual": 1.338244621609257e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7357977026334644,
+      "gradient_covariance_norm": 2.9872666348724596e-11,
+      "shift": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "ward_residual": 1.2092161200048101e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7623725971272015,
+      "gradient_covariance_norm": 3.180237538942956e-11,
+      "shift": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "ward_residual": 1.284816951658758e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7711665782896177,
+      "gradient_covariance_norm": 2.2832926082077784e-11,
+      "shift": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "ward_residual": 1.6124870639947534e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7537796325315713,
+      "gradient_covariance_norm": 3.046851610545364e-11,
+      "shift": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "ward_residual": 1.5244893531520547e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7656141004226436,
+      "gradient_covariance_norm": 2.3642248647455143e-11,
+      "shift": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "ward_residual": 1.588898867863943e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7525348104920819,
+      "gradient_covariance_norm": 2.521495375912128e-11,
+      "shift": [
+        3,
+        0,
+        1,
+        0
+      ],
+      "ward_residual": 1.611311532790138e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7519122039130319,
+      "gradient_covariance_norm": 2.6453231189514553e-11,
+      "shift": [
+        3,
+        0,
+        1,
+        1
+      ],
+      "ward_residual": 1.5359669602190453e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7473803056138915,
+      "gradient_covariance_norm": 2.4909062434090636e-11,
+      "shift": [
+        3,
+        1,
+        0,
+        0
+      ],
+      "ward_residual": 1.437213482813362e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7376936822908068,
+      "gradient_covariance_norm": 2.565788301351398e-11,
+      "shift": [
+        3,
+        1,
+        0,
+        1
+      ],
+      "ward_residual": 1.623237793651876e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7556298319184441,
+      "gradient_covariance_norm": 2.2931730635035344e-11,
+      "shift": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "ward_residual": 1.4706383795077833e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7546926940407743,
+      "gradient_covariance_norm": 2.629592226599642e-11,
+      "shift": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "ward_residual": 1.4575713403520483e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7603883828685509,
+      "gradient_covariance_norm": 2.765060891877202e-11,
+      "shift": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "ward_residual": 1.6051536833512661e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7524846421924642,
+      "gradient_covariance_norm": 2.0702962488226287e-11,
+      "shift": [
+        4,
+        0,
+        0,
+        1
+      ],
+      "ward_residual": 2.188089683564662e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7654432695560325,
+      "gradient_covariance_norm": 4.497708697688557e-11,
+      "shift": [
+        4,
+        0,
+        1,
+        0
+      ],
+      "ward_residual": 1.3870142847691543e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7462471372195872,
+      "gradient_covariance_norm": 2.359387857200887e-11,
+      "shift": [
+        4,
+        0,
+        1,
+        1
+      ],
+      "ward_residual": 1.6007526602068505e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 5.820766091346741e-11,
+      "gauge_invariant_flux_difference_rms": 0.7490041633575135,
+      "gradient_covariance_norm": 3.133801588177143e-11,
+      "shift": [
+        4,
+        1,
+        0,
+        0
+      ],
+      "ward_residual": 1.2754336113519846e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7357977026334642,
+      "gradient_covariance_norm": 3.088783476244715e-11,
+      "shift": [
+        4,
+        1,
+        0,
+        1
+      ],
+      "ward_residual": 1.428441925178503e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7623725971272014,
+      "gradient_covariance_norm": 3.74584276039731e-11,
+      "shift": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "ward_residual": 1.640892052905186e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7711665782896173,
+      "gradient_covariance_norm": 2.9242902896097536e-11,
+      "shift": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "ward_residual": 1.3340958093806542e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7693684652056177,
+      "gradient_covariance_norm": 2.778143560223265e-11,
+      "shift": [
+        5,
+        0,
+        0,
+        0
+      ],
+      "ward_residual": 1.9609953983022364e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.794886231837467,
+      "gradient_covariance_norm": 2.1796350129229453e-11,
+      "shift": [
+        5,
+        0,
+        0,
+        1
+      ],
+      "ward_residual": 1.4600094623762598e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7595909462362304,
+      "gradient_covariance_norm": 2.2812167629067266e-11,
+      "shift": [
+        5,
+        0,
+        1,
+        0
+      ],
+      "ward_residual": 1.3789867974453447e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 8.731149137020111e-11,
+      "gauge_invariant_flux_difference_rms": 0.7207587880002737,
+      "gradient_covariance_norm": 2.9219508958753096e-11,
+      "shift": [
+        5,
+        0,
+        1,
+        1
+      ],
+      "ward_residual": 1.271649891765872e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7913524036749524,
+      "gradient_covariance_norm": 2.243264028929083e-11,
+      "shift": [
+        5,
+        1,
+        0,
+        0
+      ],
+      "ward_residual": 1.591828985821311e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.7489792219774274,
+      "gradient_covariance_norm": 2.2946193933053215e-11,
+      "shift": [
+        5,
+        1,
+        0,
+        1
+      ],
+      "ward_residual": 1.4903023767936755e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 0.0,
+      "gauge_invariant_flux_difference_rms": 0.6861231055356046,
+      "gradient_covariance_norm": 2.1917868297227934e-11,
+      "shift": [
+        5,
+        1,
+        1,
+        0
+      ],
+      "ward_residual": 1.844748590041231e-12,
+      "wilson_covariance_residual": 0.0
+    },
+    {
+      "action_difference": 2.9103830456733704e-11,
+      "gauge_invariant_flux_difference_rms": 0.7371133778909645,
+      "gradient_covariance_norm": 2.293610675988454e-11,
+      "shift": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "ward_residual": 1.743680486786868e-12,
+      "wilson_covariance_residual": 0.0
+    }
+  ],
+  "seed_blob_git_sha1": "ad746e6f14a5332e8d3b84fb8a2cd46eff65e258",
+  "seed_state_commit": "8941bd77ef73d7962fb540b9f753cad427548fdc",
+  "source": "native ORIGINAL Q101/Q106 all-five moving + original v61 Q109 528-link Gaussian action",
+  "thermodynamic_spontaneous_symmetry_breaking_proven": false
+}

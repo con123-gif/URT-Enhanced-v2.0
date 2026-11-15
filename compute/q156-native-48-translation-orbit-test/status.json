@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 33.49,
+  "tail": "ep entropy production: 8.81399137604988185e-07\nExact resolvent of iB: 12/z + 8z/(z\u00b2-5) + 10z/(z\u00b2-8)\nUnitary 24-return trace: 12 + 8cos(\u221a5 \u03b5) + 10cos(2\u221a2 \u03b5)\nPHYSICAL ARF STATUS: OPEN; no photon/fermion source-to-current identification\nMOVING CATHEDRAL ARF CANDIDATE CERTIFICATE: PASS\nOriginal all-five 190-cochain / 50-vertex / H64 source matches Q106: PASS\nOriginal v61 SHA256: e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75\nFULL 528 native physical spectrum: 397 positive, 84 negative, 47 gauge null; Ward 5.770888391913606e-11\nExtreme Hessian eigenvalues -2456.453162596667 23326.261452632807\nPhysical closed-plaquette induced contact+current K 1746.6696095963002\nIndependent all-charge logdet FD epsilon 0.0002 curvature 1746.6707504354417\nIndependent all-charge logdet FD epsilon 0.0004 curvature 1746.6696590417996\nNonzero one-line bounded descent amplitude 0.7272212035311078 DeltaGamma -228.48814072998357 interior_stationary True\nQ109 CONDITIONAL JOINED 528 GAUGE DETERMINANT: PASS\nStill missing unique relative kinetic normalization + stable full-spatial vacuum + continuum physical source.\nOne-line extremum still has full physical gradient norm 769.7444142238497\nTwo-dimensional physical descent [0.83892543 0.22327491] DeltaGamma -324.00958026808803 projected-gradient 1.2201640123821571e-05 optimizer-success False\nQ109 2D DESCENT: PASS; no 481D stationary-vacuum claim\nNATIVE ORIGINAL v61 SOURCE /home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py\nQ149 native elementary faces Counter({'square': 2640, 'triangle': 576})\nQ149 EXACT curvature rank 477 gauge rank 47 flat Wilson modes 4\nQ149 conditional Q109 locally curved negative modes >=80\nQ149 physical consequence: actual local flux instability at symmetric vacuum; global torons alone insufficient\nQ149 NATIVE FINITE GAUGE CURVATURE CERTIFICATE: PASS\nQ156 native translations 8 /48; diff 2.9103830456733704e-11 grad covariance 2.7155478742531072e-11 Wilson flux delta 0.8409862485591078\nQ156 native translations 16 /48; diff 5.820766091346741e-11 grad covariance 2.3392249543250776e-11 Wilson flux delta 0.7371133778909644\nQ156 native translations 24 /48; diff 0.0 grad covariance 2.2832926082077784e-11 Wilson flux delta 0.7711665782896177\nQ156 native translations 32 /48; diff 2.9103830456733704e-11 grad covariance 2.629592226599642e-11 Wilson flux delta 0.7546926940407743\nQ156 native translations 40 /48; diff 0.0 grad covariance 2.9242902896097536e-11 Wilson flux delta 0.7711665782896173\nQ156 native translations 48 /48; diff 2.9103830456733704e-11 grad covariance 2.293610675988454e-11 Wilson flux delta 0.7371133778909645\nQ156 RESULT {\"conditional_model\": \"equal relative moving/spatial kinetic weights, not primitive-selected\", \"configuration_count\": 48, \"continuum_Lorentz_or_translation_restoration_derived\": false, \"finite_classical_discrete_degenerate_backgrounds\": true, \"flux_orbit_gauge_inequivalent_count\": 48, \"full_orbit_local_numerical_stability_conditional_on_q153_positive_hessian\": true, \"massless_physical_photon_derived\": false, \"max_nontrivial_flux_orbit_distance\": 0.8409862485591078, \"max_translated_gauge_ward_residual\": 2.188089683564662e-12, \"max_translation_action_residual\": 8.731149137020111e-11, \"max_translation_gradient_covariance_residual\": 4.497708697688557e-11, \"min_nontrivial_gauge_invariant_flux_orbit_distance\": 0.6861231055356041, \"native_4d_shape\": [6, 2, 2, 2], \"original_base_action_change\": -7389.6625205942255, \"original_stationary_gradient_norm\": 5.122355378782224e-06, \"physical_translation_symmetry_of_original_conditional_action_verified_numerically\": true, \"seed_blob_git_sha1\": \"ad746e6f14a5332e8d3b84fb8a2cd46eff65e258\", \"seed_state_commit\": \"8941bd77ef73d7962fb540b9f753cad427548fdc\", \"source\": \"native ORIGINAL Q101/Q106 all-five moving + original v61 Q109 528-link Gaussian action\", \"thermodynamic_spontaneous_symmetry_breaking_proven\": false}\n",
+  "id": "q156-native-48-translation-orbit-test",
+  "question": "Is translation breaking in the actual Q152 finite charged Wilson vacuum spontaneous or explicit? Check ALL 48 translated original-v61 Q109 action values and 528 gradients, Ward and gauge-invariant 3216 original face holonomies.",
+  "requested_by": "GPT",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-15_q156_native_translation_orbit/Q156_ORIGINAL_NATIVE_TRANSLATION_ORBIT.py --output-dir {out}",
+  "utc": "2026-11-15T14:09:45Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "a68f2496a811312b3b10fde2cdd2064616d5bc92",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43722722931",
+  "outputs_committed": [
+    {
+      "path": "Q156_RESULT.json",
+      "bytes": 17371,
+      "sha256": "de04bac689bc9af167c90736041df6fe2b1912543900b2de840609972af8501b"
+    }
+  ],
+  "outputs_artifact_only": []
+}
