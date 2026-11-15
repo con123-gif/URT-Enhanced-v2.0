@@ -5,6 +5,11 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q157 [compute] (PHYSICS): Actual original Q109 528×528 Hess at translation-symmetric A=0 has 84 negative physical modes; compute full 48 momentum 11-link Fourier block decomposition, exact Ward null direction and full 528 eigen reconstruction. Determine whether flux-crystal instability is strictly finite wavevector, vs uniform. Q156 48 degenerate stable nonuniform vacua CI PASS. research_archive/2026-11-15_q157_native_4d_instability_momenta/.
+
+- [x] Q156 [compute] (PHYSICS) Original-v61 native CI 43722722931 verifies all 48 translated actual Q152 vacua action invariance max8.731e−11, 528-gradient covariance max4.498e−11, gauge-inequivalent 47 partners flux dist .686–.841; with Q153 stable Hessian, exactly 48 degenerate finite classical vacuum backgrounds under discrete translations. No continuum/photon derived.
+
+
 - [ ] Q156 [compute] (PHYSICAL ENDGAME): Test whether original v61 Q109 charged action and 528 gradient are covariant under all 48 lattice translations at the actual Q152 528-field; verify 48 gauge-inequivalent Wilson flux patterns and distinguish explicit vs spontaneous finite-vacuum translation breaking. LOCAL original-binary flux orbit complete (min .68612,max .84099), native source action pending. research_archive/2026-11-15_q156_native_translation_orbit/.
 
 
