@@ -12,7 +12,11 @@ from itertools import product
 import numpy as np
 
 ROOT=Path(__file__).resolve().parents[2]
-out=Path('/tmp/q157_4d_native_physics')
+import argparse
+p=argparse.ArgumentParser()
+p.add_argument('--output-dir',default='/tmp/q157_4d_native_physics')
+args=p.parse_args()
+out=Path(args.output_dir)
 out.mkdir(parents=True,exist_ok=True)
 r=runpy.run_path(str(ROOT/'research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_NATIVE_FULL_HESSIAN.py'))
 H=np.asarray(r['Hess'],float)

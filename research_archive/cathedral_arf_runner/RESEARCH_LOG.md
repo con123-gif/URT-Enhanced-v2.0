@@ -5,6 +5,11 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q157b [compute] (PHYSICS DATA PRESERVATION): Re-run Q157 original native 528→48 momentum spectral decomposition with registered output-dir to persist all 48 11×11 block spectra, not just job log. Q157 original-native PASS: all 84 negative finite-spatial-π Nyquist modes, zero uniform-k negative; 24 unstable sectors. Need full JSON to compare with Q152 gauge-invariant flux momentum and to audit temporal dispersion. research_archive/2026-11-15_q157_native_4d_instability_momenta/Q157_NATIVE_FINITE_MOMENTUM_THEOREM.md.
+
+- [x] Q157 [compute] (NATIVE PHYSICS, 43723169735 PASS): Fourier-decomposed original 528 Hess into 48 blocks with full spectrum error3.5e−10: 84 negative in 24 sectors (each n_t has spatial single π ×4 each and triple π×2). All 11 uniform modes positive, BUT spatial box only 2³; no continuum photon.
+
+
 - [ ] Q157 [compute] (PHYSICS): Actual original Q109 528×528 Hess at translation-symmetric A=0 has 84 negative physical modes; compute full 48 momentum 11-link Fourier block decomposition, exact Ward null direction and full 528 eigen reconstruction. Determine whether flux-crystal instability is strictly finite wavevector, vs uniform. Q156 48 degenerate stable nonuniform vacua CI PASS. research_archive/2026-11-15_q157_native_4d_instability_momenta/.
 
 - [x] Q156 [compute] (PHYSICS) Original-v61 native CI 43722722931 verifies all 48 translated actual Q152 vacua action invariance max8.731e−11, 528-gradient covariance max4.498e−11, gauge-inequivalent 47 partners flux dist .686–.841; with Q153 stable Hessian, exactly 48 degenerate finite classical vacuum backgrounds under discrete translations. No continuum/photon derived.
