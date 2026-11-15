@@ -5,6 +5,7 @@ Large outputs stay in the run's artifact (90 days).
 
 | Job | Status | Wall (s) | Finished | Requested by | Question |
 |---|---|---|---|---|---|
+| `q159b-native-continuum-relative-hermiticity` | pass | 35.2 | 2026-11-15T14:43:14Z | GPT | Rerun Q159 exact original 48 native Fourier block match, exact Q(sqrt3) shifted-fermion gap crossing, and original uncha |
 | `q159-native-original-wilson-continuum-polarization` | assertion_failed | 19.66 | 2026-11-15T14:39:52Z | GPT | Can original Q106/v61 4x4 Bloch current/seagull reproduce all 48 native 528-link Hessian Fourier blocks, then test uncha |
 | `q158-native-physical-flux-instability-overlap` | pass | 1.02 | 2026-11-15T14:24:55Z | GPT | Does nonlinear gauge-invariant Q152 physical Wilson flux order populate the same 24 four-dimensional momentum sectors wh |
 | `q157b-native-4d-photon-instability-persist` | pass | 29.68 | 2026-11-15T14:19:07Z | GPT | Persist and independently re-execute all 48 native Q157 Fourier 11-link gauge-Hessian blocks and spectra to reproduce th |

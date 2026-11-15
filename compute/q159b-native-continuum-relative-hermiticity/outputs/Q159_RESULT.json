@@ -1,0 +1,453 @@
+{
+  "E0_squared_exact": "65231614751782493997893221961/62500000000000000000000000000 - 52264851973219*sqrt(3)/250000000000000",
+  "E0_squared_numeric": 0.6816043197577927,
+  "E1_squared_exact": "1275583512663433*sqrt(3)/4000000000000000 + 4433217419612924286673535345489/1000000000000000000000000000000",
+  "E1_squared_numeric": 4.985561282920486,
+  "complete_original_528_Hessian_relative_block_error": 2.440996565317777e-13,
+  "exact_gap_crossing_proved_by_IVT": true,
+  "exact_gap_proof": "native sing mu=-2 (mult10); E(pi/6,0,0,0)^2 < 4 < E(pi/6,pi/2,pi/2,pi/2)^2",
+  "large_lattice_physical_nonuniform_vacua_recomputed": false,
+  "mode_records": [
+    {
+      "all_eigenvalues": [
+        105.42679432387955,
+        105.42679432387962,
+        105.42679432388468,
+        126.27362104237466,
+        414.4853434921838,
+        414.4853434921841,
+        414.48534349218846,
+        1006.8767289997504,
+        1006.8767289997523,
+        1006.876728999754,
+        6275.337406674382
+      ],
+      "minimum_original_matter_gap": 0.009033391735901888,
+      "mode": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "negative_physical_modes": 0,
+      "sites": 48,
+      "smallest_eigenvalue": 105.42679432387955,
+      "spatial_linear_size": 2,
+      "spatial_q": 0.0,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -2456.4531625965674,
+        -2456.453162596561,
+        -1445.9246240172479,
+        -300.3357079030011,
+        1.5063186782015024e-12,
+        37.564367445565175,
+        37.56436744556529,
+        37.56436744556572,
+        37.564367445566624,
+        107.26050742176864,
+        107.26050742176882
+      ],
+      "minimum_original_matter_gap": 0.009033391735901888,
+      "mode": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 4,
+      "sites": 48,
+      "smallest_eigenvalue": -2456.4531625965674,
+      "spatial_linear_size": 2,
+      "spatial_q": 3.141592653589793,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -2456.4531625965974,
+        -2456.453162596592,
+        -1445.9246240172415,
+        -300.33570790300246,
+        1.0515713273150036e-12,
+        37.564367445564855,
+        37.56436744556542,
+        37.56436744556649,
+        37.564367445566646,
+        107.2605074217682,
+        107.2605074217691
+      ],
+      "minimum_original_matter_gap": 0.009033391735901888,
+      "mode": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 4,
+      "sites": 48,
+      "smallest_eigenvalue": -2456.4531625965974,
+      "spatial_linear_size": 2,
+      "spatial_q": 3.141592653589793,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        259.6459799015486,
+        609.0760988031388,
+        609.0760988031407,
+        609.0760988031518,
+        2742.3122176326942,
+        6138.196918923839,
+        6138.196918924254,
+        6138.196918924564,
+        15609.8387426072,
+        15609.838742608583,
+        15609.838742609998
+      ],
+      "minimum_original_matter_gap": 0.0020583615159791564,
+      "mode": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "negative_physical_modes": 0,
+      "sites": 162,
+      "smallest_eigenvalue": 259.6459799015486,
+      "spatial_linear_size": 3,
+      "spatial_q": 0.0,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -1129.1326935572142,
+        -331.6064310729427,
+        -331.6064310729234,
+        -208.0759415597008,
+        -63.23414852158377,
+        -25.600448815943093,
+        2.099431739566171e-13,
+        9.835727665189932,
+        9.835727665193344,
+        479.42212935282413,
+        479.42212935284846
+      ],
+      "minimum_original_matter_gap": 0.0020583615159791564,
+      "mode": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 6,
+      "sites": 162,
+      "smallest_eigenvalue": -1129.1326935572142,
+      "spatial_linear_size": 3,
+      "spatial_q": 2.0943951023931953,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -209.10556899767383,
+        3.385244569708609e-11,
+        23.307997020978164,
+        23.307997020986242,
+        65.4013021718234,
+        6110.572082915507,
+        7047.472215764252,
+        12833.562748647344,
+        12833.562748648426,
+        48198.80275134212,
+        48198.80275134313
+      ],
+      "minimum_original_matter_gap": 0.0020583615159791564,
+      "mode": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 1,
+      "sites": 162,
+      "smallest_eigenvalue": -209.10556899767383,
+      "spatial_linear_size": 3,
+      "spatial_q": 2.0943951023931953,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        679.2855065958406,
+        771.2675177250733,
+        771.2675177250824,
+        1319.9354710972955,
+        1463.8050359279684,
+        2187.2272199547083,
+        2187.227219954726,
+        3020.452349634344,
+        24786.81770687693,
+        24786.817706877115,
+        56774.24040388679
+      ],
+      "minimum_original_matter_gap": 0.004149286474994767,
+      "mode": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "negative_physical_modes": 0,
+      "sites": 384,
+      "smallest_eigenvalue": 679.2855065958406,
+      "spatial_linear_size": 4,
+      "spatial_q": 0.0,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -2094.9043676358233,
+        -1473.3082514237876,
+        -388.43270872097634,
+        -72.18270154916031,
+        -1.5341723089694827e-12,
+        8.359739964571531,
+        62.224622471809965,
+        196.9418937896585,
+        337.80045848882133,
+        363.8495643615035,
+        534.8172206575117
+      ],
+      "minimum_original_matter_gap": 0.004149286474994767,
+      "mode": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 4,
+      "sites": 384,
+      "smallest_eigenvalue": -2094.9043676358233,
+      "spatial_linear_size": 4,
+      "spatial_q": 1.5707963267948966,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -2034.7911704105898,
+        -1841.0988955144248,
+        -481.68558272434666,
+        -31.481159528763893,
+        -1.7585215985786826e-12,
+        10.027538738997064,
+        16.719672002701294,
+        154.68844720132657,
+        302.05569031691573,
+        351.98586295554674,
+        470.96174026486403
+      ],
+      "minimum_original_matter_gap": 0.004149286474994767,
+      "mode": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 4,
+      "sites": 384,
+      "smallest_eigenvalue": -2034.7911704105898,
+      "spatial_linear_size": 4,
+      "spatial_q": 1.5707963267948966,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        710.6659131448711,
+        7796.8222402758365,
+        15612.76147392062,
+        15612.761473934217,
+        47584.246063122344,
+        5817154.702437587,
+        5817154.702444225,
+        14122505.765154252,
+        25655595.421273403,
+        25655595.42130112,
+        236195348.40618345
+      ],
+      "minimum_original_matter_gap": 8.811318138768337e-05,
+      "mode": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "negative_physical_modes": 0,
+      "sites": 750,
+      "smallest_eigenvalue": 710.6659131448711,
+      "spatial_linear_size": 5,
+      "spatial_q": 0.0,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -19067.664295751205,
+        -2437.739941814855,
+        -1956.4527771129074,
+        -501.39534673696534,
+        -4.245644526440113e-11,
+        832.2747886163369,
+        3180.837029517891,
+        5281.830194883532,
+        5507.630910126827,
+        30676.84102113395,
+        86414.50915425224
+      ],
+      "minimum_original_matter_gap": 8.811318138768337e-05,
+      "mode": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 4,
+      "sites": 750,
+      "smallest_eigenvalue": -19067.664295751205,
+      "spatial_linear_size": 5,
+      "spatial_q": 1.2566370614359172,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -36028.07858177898,
+        -1696.8362275915972,
+        -1659.125804372548,
+        -819.8309436516876,
+        3.6265309975673764e-11,
+        795.8390813513879,
+        1946.1871773571781,
+        5003.4569096079895,
+        7084.999279806517,
+        29875.419410031107,
+        115666.7879001978
+      ],
+      "minimum_original_matter_gap": 8.811318138768337e-05,
+      "mode": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 4,
+      "sites": 750,
+      "smallest_eigenvalue": -36028.07858177898,
+      "spatial_linear_size": 5,
+      "spatial_q": 1.2566370614359172,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        356.5284349555901,
+        356.5284349557142,
+        356.5284349557525,
+        464.79479262853397,
+        6763.379662431944,
+        8302.126453983596,
+        8302.126453983683,
+        8302.126453983932,
+        44259.98090912592,
+        44259.980909126345,
+        44259.98090912652
+      ],
+      "minimum_original_matter_gap": 0.0020583615159791564,
+      "mode": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "negative_physical_modes": 0,
+      "sites": 1296,
+      "smallest_eigenvalue": 356.5284349555901,
+      "spatial_linear_size": 6,
+      "spatial_q": 0.0,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -140.06341586651388,
+        2.002432080674461e-12,
+        14.713594581200951,
+        86.1349680647081,
+        86.13496806472293,
+        210.52837768491867,
+        1378.1738920050313,
+        1378.1738920050457,
+        1395.500649959909,
+        13641.55949086369,
+        13641.559490863736
+      ],
+      "minimum_original_matter_gap": 0.0020583615159791564,
+      "mode": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 1,
+      "sites": 1296,
+      "smallest_eigenvalue": -140.06341586651388,
+      "spatial_linear_size": 6,
+      "spatial_q": 1.0471975511965976,
+      "temporal_size": 6
+    },
+    {
+      "all_eigenvalues": [
+        -140.06341586651956,
+        -7.303686124025896e-12,
+        14.713594581204461,
+        86.13496806470934,
+        86.13496806472685,
+        210.5283776849135,
+        1378.173892005025,
+        1378.1738920050577,
+        1395.5006499599056,
+        13641.559490863869,
+        13641.559490863925
+      ],
+      "minimum_original_matter_gap": 0.0020583615159791564,
+      "mode": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "negative_physical_modes": 1,
+      "sites": 1296,
+      "smallest_eigenvalue": -140.06341586651956,
+      "spatial_linear_size": 6,
+      "spatial_q": 1.0471975511965976,
+      "temporal_size": 6
+    }
+  ],
+  "model_status": "original Q109 Gaussian action with inherited Wilson constants and conditional equal moving/spatial kinetic, NOT primitive URT nature",
+  "negative_mode_first_spatial_q_sectors": [
+    4,
+    6,
+    4,
+    4,
+    1
+  ],
+  "no_uniform_inverse_bound_for_current_conditional_gaussian_action": true,
+  "original_48_site_minimum_shifted_fermion_gap": 0.009033391735901888,
+  "physical_massless_photon_derived": false,
+  "same_Wilson_definitions_spatial_sizes": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "source": "original native v61 R_EXACT/M_EXACT, gamma, directions, native Q106 30-state charged/moving and original Q157b Fourier response",
+  "uniform_matter_resolvent_gap_under_spatial_refinement": false,
+  "unique_URT_time_or_relative_kinetic_selection_derived": false
+}
