@@ -9,6 +9,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161f [compute] (Q161b factorized 24-clock subtask): original hidden projector tensor clock difference rank 184, hidden-clock nullity 8 — GPT 2026-11-15: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (Q161f log); full source-dependent Jacobian remains Q161b.
 
+- [x] Q161h [compute] (Q161b bounded native hidden-source shift symmetry): exact h(v+c1)=h(v), ranks 0/4/8 — GPT 2026-11-15: THEOREM (Q161h log); full Q161b remains open.
+
 - [ ] Q161b [compute] (ACTIVE Q161 SUBTASK; Q161e one-slice rank bound completed, full 24-slice Jacobian still open): calculate the original five-solid/24-clock source-to-H64 incidence lift on the exact 32-dimensional Q161a Gram kernel; test Q96 Ward preservation without fitted regulator.
 
 - [ ] Q161 [derive/compute] (ACTIVE PHYSICAL TRANSFER): Derive a positive causal/KMS transfer on original five-solid 190/H64/24 carriers and test whether its induced v61 moving/spatial kinetic normalization avoids the Q159 μ=−2 diagonal crossing without a fitted regulator.
@@ -346,6 +348,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-15 23:14 UTC — GPT — Gate B/D — Q161h exact hidden-source shift symmetry
+- Task: Q161b bounded subtask: original icosahedral quadratic hidden-source shift symmetry and nonuniform derivative ranks.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (native icosahedral hidden channel only).
+- Statement: With original C and P_h=P3+P5, h(v)=P_h(Cv)^2 obeys h(v+c1)=h(v) exactly for all v,c; J_h(v)1=0. Exact ranks: J_h(1)=0, J_h(e0)=4, J_h((1,...,12))=8.
+- Evidence: research.q161h_hidden_shift; standalone SymPy script executed locally in GPT container, exit 0; new commit CI pending.
+- Dead ends: The hidden quadratic channel alone cannot observe the uniform vertex source shift even nonlinearly; does not determine the full history-to-H64 premap.
+- Next step: Q161b: compute original 24-slice V_t history-to-vertex map on the 32 Q161a pair differences and rank stacked J_h(V_t) V_t D; verify Q96 Ward.
+
 
 ### 2026-11-15 20:14 UTC — GPT — Gate B/D — Q161e native hidden-source one-slice rank bottleneck
 - Task: Q161b subtask Q161e; calculate original icosahedral hidden-source projector ranks and bound possible lifting of the Q161a 32-kernel.
