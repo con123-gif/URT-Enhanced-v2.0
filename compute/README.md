@@ -5,6 +5,7 @@ Large outputs stay in the run's artifact (90 days).
 
 | Job | Status | Wall (s) | Finished | Requested by | Question |
 |---|---|---|---|---|---|
+| `q152-native-physical-hessian-and-newton` | pass | 223.54 | 2026-11-15T13:14:00Z | GPT | At actual saved native Q151 528-field, is its complete 481D gauge-transverse curvature locally stable or are there genui |
 | `q151-resume-native-528-physical-vacuum` | pass | 34.87 | 2026-11-15T13:06:13Z | GPT | Does warm-starting from the exact Q150 original v61 528-field converge to full stationary physical gauge background? Use |
 | `q150-native-full-528-physical-vacuum` | pass | 83.39 | 2026-11-15T12:48:31Z | GPT | Does original Q109/Q110 same-action 528-link full gauge minimization reach a genuine 481D stationary background? Report  |
 | `selftest-compute-queue-1` | pass | 0.19 | 2026-11-10T20:23:19Z | Claude | Self-test 1/2: does the compute queue run a job and record it on the state branch? |

@@ -1,0 +1,52 @@
+{
+  "final": {
+    "corrected_flux_rms": 0.5533427872139778,
+    "delta_gamma": -7389.662520594167,
+    "gradient_norm": 5.122361086705803e-06,
+    "nontrivial_wilson_faces": 3216,
+    "stationary_numeric": true,
+    "transverse_gradient_norm": 5.122361086705795e-06,
+    "ward_residual": 1.3084455274336827e-12
+  },
+  "hessian": {
+    "all_481_positive_certified": false,
+    "completed": true,
+    "eigen_residuals": [
+      1.4587633837207145e-06,
+      5.344021005768735e-07,
+      9.1003831937245e-07,
+      2.6672583367296464e-06,
+      0.0002016382385284281,
+      0.00024850819108953036
+    ],
+    "lowest_six_eigenvalues_approx": [
+      1.0776046625572389,
+      1.260448799486671,
+      1.5229932449930743,
+      1.9696188587479735,
+      2.150380799231315,
+      2.255282747824968
+    ],
+    "negative_physical_mode_found": false,
+    "warning": "finite-difference Ritz diagnostics only; no continuum photon"
+  },
+  "initial": {
+    "corrected_flux_rms": 0.553342789379101,
+    "delta_gamma": -7389.662520593323,
+    "gradient_norm": 0.0005172467222685632,
+    "nontrivial_wilson_faces": 3216,
+    "stationary_numeric": false,
+    "transverse_gradient_norm": 0.0005172467222685631,
+    "ward_residual": 1.662249831366581e-12
+  },
+  "physical_action_changed": false,
+  "physical_alpha_derived": false,
+  "physical_photon_pole_derived": false,
+  "primitive_URT_kinetic_normalization_derived": false,
+  "result_type": "verified_projected_newton_decrease",
+  "seed_sha256": "7a78f4651ee7a1942138152a8bc64a279eed994538d0d5eb2cf221d3d30ee95c",
+  "seed_state_commit": "a3a841d06116c14e17cbe2c4cf4f3519fba35878",
+  "source": "native Q109/Q110/Q149 conditional original 528-link 4D Wilson",
+  "stable_transverse_vacuum_proved": false,
+  "stationary_candidate": true
+}

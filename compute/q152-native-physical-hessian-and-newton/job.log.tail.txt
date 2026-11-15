@@ -1,0 +1,43 @@
+degree-seven native quaternionic polynomial annihilator: EXACT PASS
+exact 60-complex-dim spinor traces and factor multiplicities: Matrix([[4, 4, 8, 12]])
+Charge bands coincide by quaternionic time reversal (Kramers).
+For s=sqrt(2-2sqrt5/5), Hweak=s*X and
+det(xI-Xweak)= [x(x-sqrt5)]^2
+  *[x^2+phi^2*x+3(sqrt5-3)/8]^4
+  *[x^3-x^2-(3+sqrt5)x+(5+sqrt5)/4]^6
+Q106 EXACT CHARGED BERRY BAND CERTIFICATE: PASS
+Ground state theorem: phi-centre gives 60, 30+30; robust 1<t<3: PASS
+All five 190-cochain Hodge-Dirac Tr D²=720, Tr D⁴=3456: PASS
+Full H64 source isometry and native 18/16 hidden energies: EXACT PASS
+Moving chiral source: every minimal edge exactly ±8/√15, skew and zero divergence: EXACT PASS
+Ground network 30+30 rectified icosahedron; charpoly λ^12(λ²+5)^4(λ²+8)^5: EXACT PASS
+Spontaneous triplet contact spectrum: 1/2, (15±√5)/20 for ALL 60: PASS
+golden epsilon 0.0032521976748036952 per-track delta 0.000135508236450153976
+CONDITIONAL 24-step signed current: 0.00325219765489755466
+CONDITIONAL 24-step entropy production: 8.81399137604988185e-07
+Exact resolvent of iB: 12/z + 8z/(z²-5) + 10z/(z²-8)
+Unitary 24-return trace: 12 + 8cos(√5 ε) + 10cos(2√2 ε)
+PHYSICAL ARF STATUS: OPEN; no photon/fermion source-to-current identification
+MOVING CATHEDRAL ARF CANDIDATE CERTIFICATE: PASS
+Original all-five 190-cochain / 50-vertex / H64 source matches Q106: PASS
+Original v61 SHA256: e6bd037ffd706150dd9fe8eeeca8908a7c1a88c71a21f589b7eb05ce93128d75
+FULL 528 native physical spectrum: 397 positive, 84 negative, 47 gauge null; Ward 5.770888391913606e-11
+Extreme Hessian eigenvalues -2456.453162596667 23326.261452632807
+Physical closed-plaquette induced contact+current K 1746.6696095963002
+Independent all-charge logdet FD epsilon 0.0002 curvature 1746.6707504354417
+Independent all-charge logdet FD epsilon 0.0004 curvature 1746.6696590417996
+Nonzero one-line bounded descent amplitude 0.7272212035311078 DeltaGamma -228.48814072998357 interior_stationary True
+Q109 CONDITIONAL JOINED 528 GAUGE DETERMINANT: PASS
+Still missing unique relative kinetic normalization + stable full-spatial vacuum + continuum physical source.
+One-line extremum still has full physical gradient norm 769.7444142238497
+Two-dimensional physical descent [0.83892543 0.22327491] DeltaGamma -324.00958026808803 projected-gradient 1.2201640123821571e-05 optimizer-success False
+Q109 2D DESCENT: PASS; no 481D stationary-vacuum claim
+NATIVE ORIGINAL v61 SOURCE /home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py
+Q149 native elementary faces Counter({'square': 2640, 'triangle': 576})
+Q149 EXACT curvature rank 477 gauge rank 47 flat Wilson modes 4
+Q149 conditional Q109 locally curved negative modes >=80
+Q149 physical consequence: actual local flux instability at symmetric vacuum; global torons alone insufficient
+Q149 NATIVE FINITE GAUGE CURVATURE CERTIFICATE: PASS
+Q152 reproducible true original Q151 seed {'delta_gamma': -7389.662520593323, 'gradient_norm': 0.0005172467222685632, 'ward_residual': 1.662249831366581e-12, 'transverse_gradient_norm': 0.0005172467222685631, 'corrected_flux_rms': 0.553342789379101, 'nontrivial_wilson_faces': 3216, 'stationary_numeric': False}
+Q152 true native 481D lowest Ritz eigenvalues [1.07760466 1.2604488  1.52299324 1.96961886 2.1503808  2.25528275] residuals [1.4587633837207145e-06, 5.344021005768735e-07, 9.1003831937245e-07, 2.6672583367296464e-06, 0.0002016382385284281, 0.00024850819108953036]
+Q152 RESULT {"final": {"corrected_flux_rms": 0.5533427872139778, "delta_gamma": -7389.662520594167, "gradient_norm": 5.122361086705803e-06, "nontrivial_wilson_faces": 3216, "stationary_numeric": true, "transverse_gradient_norm": 5.122361086705795e-06, "ward_residual": 1.3084455274336827e-12}, "hessian": {"all_481_positive_certified": false, "completed": true, "eigen_residuals": [1.4587633837207145e-06, 5.344021005768735e-07, 9.1003831937245e-07, 2.6672583367296464e-06, 0.0002016382385284281, 0.00024850819108953036], "lowest_six_eigenvalues_approx": [1.0776046625572389, 1.260448799486671, 1.5229932449930743, 1.9696188587479735, 2.150380799231315, 2.255282747824968], "negative_physical_mode_found": false, "warning": "finite-difference Ritz diagnostics only; no continuum photon"}, "initial": {"corrected_flux_rms": 0.553342789379101, "delta_gamma": -7389.662520593323, "gradient_norm": 0.0005172467222685632, "nontrivial_wilson_faces": 3216, "stationary_numeric": false, "transverse_gradient_norm": 0.0005172467222685631, "ward_residual": 1.662249831366581e-12}, "physical_action_changed": false, "physical_alpha_derived": false, "physical_photon_pole_derived": false, "primitive_URT_kinetic_normalization_derived": false, "result_type": "verified_projected_newton_decrease", "seed_sha256": "7a78f4651ee7a1942138152a8bc64a279eed994538d0d5eb2cf221d3d30ee95c", "seed_state_commit": "a3a841d06116c14e17cbe2c4cf4f3519fba35878", "source": "native Q109/Q110/Q149 conditional original 528-link 4D Wilson", "stable_transverse_vacuum_proved": false, "stationary_candidate": true}
