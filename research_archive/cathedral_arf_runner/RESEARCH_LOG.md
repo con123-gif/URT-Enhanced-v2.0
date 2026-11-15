@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q156 [compute] (PHYSICAL ENDGAME): Test whether original v61 Q109 charged action and 528 gradient are covariant under all 48 lattice translations at the actual Q152 528-field; verify 48 gauge-inequivalent Wilson flux patterns and distinguish explicit vs spontaneous finite-vacuum translation breaking. LOCAL original-binary flux orbit complete (min .68612,max .84099), native source action pending. research_archive/2026-11-15_q156_native_translation_orbit/.
+
+
 - [x] Q155b [compute] (PHYSICS ORIGINAL SOURCE CORRIGENDUM) First Q155 native script passed with WRONG site×face reshape; native Q149 lists 2640 squares first,576 triangles next, not interleaved. Corrected and independently matched local original-binary site-wise Wilson RMS time.7693684652/x.7820644190/y.7991028430/z.7630839607; rerun native q155b: original-source compute PASS, q155b results persisted in cathedral-research-state. Same Q152 pinned vacuum, no physical action changed.
 
 
