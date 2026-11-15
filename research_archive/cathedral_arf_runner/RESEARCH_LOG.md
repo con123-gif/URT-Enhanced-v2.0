@@ -5,7 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [ ] Q161b [compute] (ACTIVE Q161 SUBTASK): calculate the original five-solid/24-clock source-to-H64 incidence lift on the exact 32-dimensional Q161a Gram kernel; test Q96 Ward preservation without fitted regulator.
+- [x] Q161e [compute] (Q161b bounded native-source subtask): exact original hidden projector ranks 4+4 and one-slice 32-kernel rank bottleneck — GPT 2026-11-15: OBSTRUCTION (Q161e log); 24-slice physical lift remains Q161b.
+
+- [ ] Q161b [compute] (ACTIVE Q161 SUBTASK; Q161e one-slice rank bound completed, full 24-slice Jacobian still open): calculate the original five-solid/24-clock source-to-H64 incidence lift on the exact 32-dimensional Q161a Gram kernel; test Q96 Ward preservation without fitted regulator.
 
 - [ ] Q161 [derive/compute] (ACTIVE PHYSICAL TRANSFER): Derive a positive causal/KMS transfer on original five-solid 190/H64/24 carriers and test whether its induced v61 moving/spatial kinetic normalization avoids the Q159 μ=−2 diagonal crossing without a fitted regulator.
 
@@ -342,6 +344,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-15 20:14 UTC — GPT — Gate B/D — Q161e native hidden-source one-slice rank bottleneck
+- Task: Q161b subtask Q161e; calculate original icosahedral hidden-source projector ranks and bound possible lifting of the Q161a 32-kernel.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (one-source-slice scope only).
+- Statement: Original face incidence rank 12; hidden P3,P5 mutually orthogonal rank 4 each. Every derivative of original quadratic hidden_source has rank <=8, so any single-slice 32-kernel coupling leaves nullity >=24; >=4 independent source slices necessary, not sufficient.
+- Evidence: research.q161e_native_hidden_rank; executed locally in container with SymPy exact rational arithmetic, exit 0; GitHub CI pending at commit time.
+- Dead ends: one hidden-source time slice cannot by itself inject the 32D kernel; clock replication alone does not establish independent slices.
+- Next step: Compute rank of the actual 24-slice original source-to-H64 Jacobian on the 32 difference vectors and test Q96 Ward covariance.
+
 
 ### 2026-11-15 16:17 UTC — GPT — Q161a — exact native 64-history Gram transfer spectrum
 - Task: Q161 [derive/compute] active physical transfer; calculate full spectrum of existing original six-bit Q/P positive transfer before attempting physical H64/24 lift.

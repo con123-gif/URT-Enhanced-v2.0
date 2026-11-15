@@ -1696,3 +1696,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-15_q161_native_gram_spectrum/Q161_NATIVE_64_TRANSFER_SPECTRUM.py"
 timeout = 120
+
+[[check]]
+id = "research.q161e_native_hidden_rank"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-15_q161e_native_hidden_rank/Q161E_NATIVE_HIDDEN_RANK.py"
+timeout = 120
