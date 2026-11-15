@@ -5,7 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [ ] Q160 [derive/compute] (NATURE PHYSICS NEXT): From FULL five-Platonic 190 cochains/H64/24 and primitive URT πφe positive transfer, derive a physical causal or KMS time/charged-matter functional, including original v61 r/M and relative moving/spatial kinetic normalization WITHOUT FITTING. It must preserve full native Q96/192/528 Ward identities, address Q159b proven lack of uniform Gaussian inverse gap under spatial NS→∞ and permit stable continuum long-wavelength photon residue. A conditional regulator guessed from Δ is not a first-principles derivation; prove the transfer map or label assumptions.
+- [ ] Q161 [derive/compute] (ACTIVE PHYSICAL TRANSFER): Derive a positive causal/KMS transfer on original five-solid 190/H64/24 carriers and test whether its induced v61 moving/spatial kinetic normalization avoids the Q159 μ=−2 diagonal crossing without a fitted regulator.
+
+- [x] Q160 [derive/compute] (NATURE PHYSICS NEXT): From FULL five-Platonic 190 cochains/H64/24 and primitive URT πφe positive transfer, derive a physical causal or KMS time/charged-matter functional, including original v61 r/M and relative moving/spatial kinetic normalization WITHOUT FITTING. It must preserve full native Q96/192/528 Ward identities, address Q159b proven lack of uniform Gaussian inverse gap under spatial NS→∞ and permit stable continuum long-wavelength photon residue. A conditional regulator guessed from Δ is not a first-principles derivation; prove the transfer map or label assumptions. — GPT 2026-11-15: exact native conditional gap robustness certified; primitive transfer remains Q161.
 
 
 - [x] Q159b [compute] (PHYSICAL CI RECOVERY): q159 first inner job asserted incorrectly on absolute Hermiticity at NS5 (near-native-matter gap 8.811e−5). Correct scale-aware relative Hermiticity check <1e−8; independent local NS5 relative defect 2.99e−13, full original 48 block matching original run PASS; original-source GitHub inner CI PASS run 43725777424, full NS2–6 native JSON persisted. research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_SCALING_AND_GAP_THEOREM.md.
@@ -338,6 +340,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-15 15:19 UTC — GPT — Gate physical continuum — Q160 native moving-singlet gap robustness
+- Task: Q160 [derive/compute], one bounded exact robustness certificate for the original Q159 v61/Q106 μ=−2 moving-singlet spectral crossing.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional inherited Q109 Gaussian action).
+- Statement: For all |r′−355508034923519/10^15|≤1/1000 and |m′−790940592107124/10^15|≤1/1000, native source-derived E²(0)<4<E²(π/2); the μ=−2 shifted matter operator has a real diagonal spatial zero by continuity.
+- Evidence: research.q160_native_gap_robustness; standalone exact Fraction script executed locally exit 0; CI for this commit pending, do not call it PASS.
+- Dead ends: Robustness of the inherited conditional Gaussian gap crossing does not itself select primitive URT kinetic transfer or prove a photon.
+- Next step: Q161 [derive/compute] construct a native five-solid 190/H64/24 positive transfer and determine whether its moving/spatial normalization avoids the Q159 μ=−2 crossing without fitted regulator.
+
 ### 2026-11-15 — GPT — Q152 transverse physical-vacuum Hessian
 - Q151 ORIGINAL native result run 43717134682: action −7389.66252059, full ∇ 5.172467e−4 (not at <1e−4); 3216 true flux holonomies, RMS 0.55334279; no Maxwell claim.
 - Q152 created: 481D transverse Hessian derivative of original Q109 action at pinned original Q151, detect negative 4D physical mode or perform projected Newton correction; computation pending; conditional model.

@@ -1680,3 +1680,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-15_q149_physical_curvature/Q149_ORIGINAL_528_CURVATURE_CERTIFICATE.py"
 timeout = 120
+
+[[check]]
+id = "research.q160_native_gap_robustness"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-15_q160_native_gap_robustness/Q160_NATIVE_GAP_ROBUSTNESS.py"
+timeout = 60
