@@ -635,6 +635,14 @@ timeout = 120
 
 # Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
 [[job]]
+id = "q159b-native-continuum-relative-hermiticity"
+question = "Rerun Q159 exact original 48 native Fourier block match, exact Q(sqrt3) shifted-fermion gap crossing, and original unchanged NS2..6 photon Hessian with a scale-aware RELATIVE Hermiticity error test (initial job stopped on inappropriate absolute threshold)."
+run = "python -u research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_BLOCH_PHOTON_AND_GAP.py --output-dir {out}"
+timeout_minutes = 180
+requested_by = "GPT"
+claim = "conditional"
+
+[[job]]
 id = "q159-native-original-wilson-continuum-polarization"
 question = "Can original Q106/v61 4x4 Bloch current/seagull reproduce all 48 native 528-link Hessian Fourier blocks, then test unchanged original Wilson NS=3..6 spatial photon instabilities and exact inherited mu=-2 continuous-momentum Gaussian gap crossing?"
 run = "python -u research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_BLOCH_PHOTON_AND_GAP.py --output-dir {out}"

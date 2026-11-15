@@ -111,7 +111,11 @@ def response(shape,n):
  # Current V convention maps momentum k to -k relative to Q157's Fourier
  # link basis: conjugation restores identical complex 11x11 blocks.
  polarization=(16/volume*polarization).conj()
- assert np.linalg.norm(polarization-polarization.conj().T)<1e-6
+ # Near the real native mu=-2 moving/Wilson gap zero, absolute roundoff
+ # scales with ||Pi||. Gauge/physical Hermiticity is a RELATIVE invariant.
+ defect=float(np.linalg.norm(polarization-polarization.conj().T,'fro')/
+       max(1.,np.linalg.norm(polarization,'fro')))
+ assert defect<1e-8,('Hessian non-Hermitian RELATIVELY',shape,n,defect,min_gap)
  return (polarization+polarization.conj().T)/2,min_gap
 
 # Native original Q157b matrix blocks frozen (independently native CI verified).

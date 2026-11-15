@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q159b [compute] (PHYSICAL CI RECOVERY): q159 first inner job asserted incorrectly on absolute Hermiticity at NS5 (near-native-matter gap 8.811e−5). Correct scale-aware relative Hermiticity check <1e−8; independent local NS5 relative defect 2.99e−13, full original 48 block matching original run PASS; rerun full NS2–6 native and persist. research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_SCALING_AND_GAP_THEOREM.md.
+
+
 - [ ] Q159 [compute] (PHYSICAL CONTINUUM GATE): Exact native Q106/v61 4×4 Bloch charged polarization reproduces all 48 original 528 Hess Fourier blocks rel<2.5e−13; scans original NS2..6 spatial first-q instability and exact original mu=-2 singlet continuum zero-gap theorem by Q(sqrt3) inequalities. Independent LOCAL PASS, true unmodified native GitHub CI PENDING. research_archive/2026-11-15_q159_native_continuum_photon/.
 
 
