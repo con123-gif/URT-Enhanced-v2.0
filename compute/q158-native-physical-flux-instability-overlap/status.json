@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 1.02,
+  "tail": "NATIVE ORIGINAL v61 SOURCE /home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py\nQ149 native elementary faces Counter({'square': 2640, 'triangle': 576})\nQ149 EXACT curvature rank 477 gauge rank 47 flat Wilson modes 4\nQ149 conditional Q109 locally curved negative modes >=80\nQ149 physical consequence: actual local flux instability at symmetric vacuum; global torons alone insufficient\nQ149 NATIVE FINITE GAUGE CURVATURE CERTIFICATE: PASS\nQ158 RESULT {\"all_original_nonzero_spatial_momenta_are_pi_nyquist\": true, \"continuum_photon_derived\": false, \"fraction_of_nonuniform_nonlinear_flux_order_in_linear_unstable_momenta\": 0.6305510903002277, \"interpretation\": \"finite-lattice linear instability sectors carry majority of nonlinear gauge-invariant ordered flux power; no continuum photon derived\", \"linear_negative_modes\": 84, \"linear_unstable_momentum_sectors\": 24, \"max_temporal_eigenvalue_change_at_fixed_nonzero_spatial_momentum\": 1.0913936421275139e-11, \"max_temporal_eigenvalue_change_at_zero_spatial_momentum\": 22319.38472363303, \"model_choice\": \"conditional equal moving/spatial Q109 Gaussian determinant\", \"native_q_min_one_third_flux_rms\": 0.5533427872139777, \"nonuniform_flux_power\": 901.8069058016085, \"parseval_total_4d_flux_power\": 3216.0, \"primitive_urt_kinetics_derived\": false, \"q152_original_gauge_blob\": \"ad746e6f14a5332e8d3b84fb8a2cd46eff65e258\", \"q157b_original_spectrum_blob\": \"791a249c51791f54968d461400180e6c73956936\", \"source\": \"original unmodified native Q149/Q152 Wilson holonomies, Q157b original-v61 48-block charged Hessian\", \"unstable_sector_flux_power\": 568.635327693479, \"zero_momentum_flux_power\": 2314.1930941983915}\n",
+  "id": "q158-native-physical-flux-instability-overlap",
+  "question": "Does nonlinear gauge-invariant Q152 physical Wilson flux order populate the same 24 four-dimensional momentum sectors where the original Q109 symmetric vacuum had 84 negative modes? Also quantify temporal dispersion of original 48 Fourier Hessian blocks.",
+  "requested_by": "GPT",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-15_q158_native_flux_order_match/Q158_NATIVE_FLUX_UNSTABLE_OVERLAP.py --output-dir {out}",
+  "utc": "2026-11-15T14:24:55Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "03f254d844823db4072f74755ae0c88728570e8b",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43724161912",
+  "outputs_committed": [
+    {
+      "path": "Q158_RESULT.json",
+      "bytes": 11057,
+      "sha256": "aa84236dd9942fbf7a9268ffccd6244411f36b6ec87f4df6b9decf9384d30719"
+    }
+  ],
+  "outputs_artifact_only": []
+}

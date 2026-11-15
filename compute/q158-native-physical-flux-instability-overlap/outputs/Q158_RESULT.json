@@ -1,0 +1,550 @@
+{
+  "all_original_nonzero_spatial_momenta_are_pi_nyquist": true,
+  "continuum_photon_derived": false,
+  "fraction_of_nonuniform_nonlinear_flux_order_in_linear_unstable_momenta": 0.6305510903002277,
+  "interpretation": "finite-lattice linear instability sectors carry majority of nonlinear gauge-invariant ordered flux power; no continuum photon derived",
+  "linear_negative_modes": 84,
+  "linear_unstable_momentum_sectors": 24,
+  "max_temporal_eigenvalue_change_at_fixed_nonzero_spatial_momentum": 1.0913936421275139e-11,
+  "max_temporal_eigenvalue_change_at_zero_spatial_momentum": 22319.38472363303,
+  "model_choice": "conditional equal moving/spatial Q109 Gaussian determinant",
+  "modes": [
+    {
+      "flux_power": 2314.1930941983915,
+      "momentum_index": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_squared_lattice": 0.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 20.231701319283435,
+      "momentum_index": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "q_squared_lattice": 4.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 6.897577237475801,
+      "momentum_index": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "q_squared_lattice": 4.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 9.960325202918218,
+      "momentum_index": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "q_squared_lattice": 8.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 10.116206126148407,
+      "momentum_index": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "q_squared_lattice": 4.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 8.625227119411196,
+      "momentum_index": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "q_squared_lattice": 8.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 17.406165911934835,
+      "momentum_index": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "q_squared_lattice": 8.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 49.11303822292607,
+      "momentum_index": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "q_squared_lattice": 12.0,
+      "unstable_negative_mode_count": 2
+    },
+    {
+      "flux_power": 12.135331350661708,
+      "momentum_index": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "q_squared_lattice": 0.9999999999999998,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 27.063532939059513,
+      "momentum_index": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "q_squared_lattice": 5.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 9.657665053949678,
+      "momentum_index": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "q_squared_lattice": 5.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 12.606664079652404,
+      "momentum_index": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "q_squared_lattice": 9.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 20.551750532356355,
+      "momentum_index": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "q_squared_lattice": 5.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 10.038229992115696,
+      "momentum_index": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "q_squared_lattice": 9.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 25.82959917040411,
+      "momentum_index": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "q_squared_lattice": 9.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 34.43784777470011,
+      "momentum_index": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "q_squared_lattice": 13.0,
+      "unstable_negative_mode_count": 2
+    },
+    {
+      "flux_power": 11.931828126861564,
+      "momentum_index": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "q_squared_lattice": 2.9999999999999996,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 27.26510585284657,
+      "momentum_index": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "q_squared_lattice": 7.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 29.645153483188064,
+      "momentum_index": [
+        2,
+        0,
+        1,
+        0
+      ],
+      "q_squared_lattice": 7.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 16.451739795249274,
+      "momentum_index": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "q_squared_lattice": 11.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 25.92668480951774,
+      "momentum_index": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "q_squared_lattice": 7.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 15.625993708586192,
+      "momentum_index": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "q_squared_lattice": 11.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 22.51589173957257,
+      "momentum_index": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "q_squared_lattice": 11.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 21.073436249780595,
+      "momentum_index": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "q_squared_lattice": 15.0,
+      "unstable_negative_mode_count": 2
+    },
+    {
+      "flux_power": 7.5467329188426895,
+      "momentum_index": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "q_squared_lattice": 4.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 21.524067302539226,
+      "momentum_index": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "q_squared_lattice": 8.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 46.140510104519144,
+      "momentum_index": [
+        3,
+        0,
+        1,
+        0
+      ],
+      "q_squared_lattice": 8.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 14.980574204869821,
+      "momentum_index": [
+        3,
+        0,
+        1,
+        1
+      ],
+      "q_squared_lattice": 12.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 28.915774973111372,
+      "momentum_index": [
+        3,
+        1,
+        0,
+        0
+      ],
+      "q_squared_lattice": 8.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 9.757355281077068,
+      "momentum_index": [
+        3,
+        1,
+        0,
+        1
+      ],
+      "q_squared_lattice": 12.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 15.31724196140715,
+      "momentum_index": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "q_squared_lattice": 12.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 15.454199631990425,
+      "momentum_index": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "q_squared_lattice": 16.0,
+      "unstable_negative_mode_count": 2
+    },
+    {
+      "flux_power": 10.957505590090221,
+      "momentum_index": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "q_squared_lattice": 3.0000000000000004,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 24.72875280185832,
+      "momentum_index": [
+        4,
+        0,
+        0,
+        1
+      ],
+      "q_squared_lattice": 7.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 30.08630845494837,
+      "momentum_index": [
+        4,
+        0,
+        1,
+        0
+      ],
+      "q_squared_lattice": 7.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 14.819811844076774,
+      "momentum_index": [
+        4,
+        0,
+        1,
+        1
+      ],
+      "q_squared_lattice": 11.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 19.99965740704751,
+      "momentum_index": [
+        4,
+        1,
+        0,
+        0
+      ],
+      "q_squared_lattice": 7.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 13.629035813510606,
+      "momentum_index": [
+        4,
+        1,
+        0,
+        1
+      ],
+      "q_squared_lattice": 11.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 18.192308765761258,
+      "momentum_index": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "q_squared_lattice": 11.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 19.787727745393347,
+      "momentum_index": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "q_squared_lattice": 15.0,
+      "unstable_negative_mode_count": 2
+    },
+    {
+      "flux_power": 11.79691653305681,
+      "momentum_index": [
+        5,
+        0,
+        0,
+        0
+      ],
+      "q_squared_lattice": 0.9999999999999998,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 23.387954934781234,
+      "momentum_index": [
+        5,
+        0,
+        0,
+        1
+      ],
+      "q_squared_lattice": 5.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 7.7957371991935975,
+      "momentum_index": [
+        5,
+        0,
+        1,
+        0
+      ],
+      "q_squared_lattice": 5.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 12.449106019772785,
+      "momentum_index": [
+        5,
+        0,
+        1,
+        1
+      ],
+      "q_squared_lattice": 9.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 15.16224395963438,
+      "momentum_index": [
+        5,
+        1,
+        0,
+        0
+      ],
+      "q_squared_lattice": 5.0,
+      "unstable_negative_mode_count": 4
+    },
+    {
+      "flux_power": 11.482771995431126,
+      "momentum_index": [
+        5,
+        1,
+        0,
+        1
+      ],
+      "q_squared_lattice": 9.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 29.115220982865974,
+      "momentum_index": [
+        5,
+        1,
+        1,
+        0
+      ],
+      "q_squared_lattice": 9.0,
+      "unstable_negative_mode_count": 0
+    },
+    {
+      "flux_power": 33.672693577229936,
+      "momentum_index": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "q_squared_lattice": 13.0,
+      "unstable_negative_mode_count": 2
+    }
+  ],
+  "native_q_min_one_third_flux_rms": 0.5533427872139777,
+  "nonuniform_flux_power": 901.8069058016085,
+  "parseval_total_4d_flux_power": 3216.0,
+  "primitive_urt_kinetics_derived": false,
+  "q152_original_gauge_blob": "ad746e6f14a5332e8d3b84fb8a2cd46eff65e258",
+  "q157b_original_spectrum_blob": "791a249c51791f54968d461400180e6c73956936",
+  "source": "original unmodified native Q149/Q152 Wilson holonomies, Q157b original-v61 48-block charged Hessian",
+  "unstable_sector_flux_power": 568.635327693479,
+  "zero_momentum_flux_power": 2314.1930941983915
+}
