@@ -1517,3 +1517,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q118b_quartet_multiplicity/Q118B_QUARTET_MULTIPLICITY.py"
 timeout = 300
+
+[[check]]
+id = "research.q104_clock_transport"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-15_q104_clock_transport/Q104_CLOCK_TRANSPORT.py"
+timeout = 300

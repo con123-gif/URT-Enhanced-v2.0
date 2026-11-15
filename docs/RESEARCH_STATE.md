@@ -162,6 +162,7 @@ Each holds for its stated operators and hypotheses only.
   - The A5 vacuum mixture is non-ergodic: κ₄ ≈ (1493/1920)n².
   - The source-free Gaussian clock determinant does not select the golden phase.
   - The source-loaded 24-clock has nonzero derivative at golden compensation: a failed exact-locking route.
+  - **Q104 (2026-11-15, Claude): the clock covariant difference y_{t+1} − e^{2iθ}T y_t is not fixed by gauge covariance (small or large), the Q56 vacuum or 24-periodicity.** All three hold for every linear T. T = I (original), Q (Q92), P_σ₁ and B_D₀ give four different history laws on V, all with weights (4,2,2,0); the URT segment (1−λ)Q+λP_σ₁ gives parity mass r²(1+2λcosψ+λ²). Do not use these three requirements to select T (`research_archive/2026-11-15_q104_clock_transport/`).
 - **Matter.**
   - The tested physical Yukawa dictionary on the original H64 quark sources **fails**: second and third generations come out nearly degenerate, with wrong mixing (`2026-10-18_joint_quark_vacuum/`).
   - Exact Koide δ = 2/9 together with exact Q = 2/3 is rejected at 442σ.
