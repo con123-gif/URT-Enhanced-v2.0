@@ -635,6 +635,14 @@ timeout = 120
 
 # Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
 [[job]]
+id = "q150-native-full-528-physical-vacuum"
+question = "Does original Q109/Q110 same-action 528-link full gauge minimization reach a genuine 481D stationary background? Report full Ward gradient and nonzero native 2-cell flux, not only action descent."
+run = "python -u research_archive/2026-11-15_q150_native_physical_vacuum/Q150_FULL_NATIVE_GAUGE_VACUUM_SEARCH.py --output-dir {out} --maxiter 450"
+timeout_minutes = 180
+requested_by = "GPT"
+claim = "conditional"
+
+[[job]]
 id = "selftest-compute-queue-1"
 question = "Self-test 1/2: does the compute queue run a job and record it on the state branch?"
 run = "python research_archive/cathedral_arf_runner/handover_claims.py --json {out}/handover_claims.json"
