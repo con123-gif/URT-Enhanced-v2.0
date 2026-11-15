@@ -5,7 +5,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [ ] Q155b [compute] (PHYSICS ORIGINAL SOURCE CORRIGENDUM) First Q155 native script passed with WRONG site×face reshape; native Q149 lists 2640 squares first,576 triangles next, not interleaved. Corrected and independently matched local original-binary site-wise Wilson RMS time.7693684652/x.7820644190/y.7991028430/z.7630839607; rerun native q155b, no premature CI success. Same Q152 pinned vacuum, no physical action changed.
+- [x] Q155b [compute] (PHYSICS ORIGINAL SOURCE CORRIGENDUM) First Q155 native script passed with WRONG site×face reshape; native Q149 lists 2640 squares first,576 triangles next, not interleaved. Corrected and independently matched local original-binary site-wise Wilson RMS time.7693684652/x.7820644190/y.7991028430/z.7630839607; rerun native q155b: original-source compute PASS, q155b results persisted in cathedral-research-state. Same Q152 pinned vacuum, no physical action changed.
 
 
 - [ ] Q155 [compute] (ACTIVE PHYSICAL TRACK M): Re-execute actual Q152 pinned binary against original Q149 v61 3216 face Wilson holonomies; test if native gauge-invariant local flux breaks each primitive 4D translation. Local original-binary geometry PASS (RMS time0.76937,x0.78206,y0.79910,z0.76308); native GitHub source pending. research_archive/2026-11-15_q155_native_flux_translation/.
@@ -296,6 +296,12 @@ commit as your result.
 - Actual Q152 compute state passed native run: strict 528 gradient norm 5.1223610867e−6 <1e−4; Ward 1.308e−12; ΔΓ−7389.662520594167; all 3216 corrected Wilson holonomies nontrivial. Six positive Ritz modes are not a complete stability certificate.
 - NEW Q153 direct full-Hessian calculation registered using exact SHA-pinned Q152 field and unchanged original v61/Q109 481D physical quotient; output pending. Not a photon or primitive kinetic selection.
 - Next: if all 481 finite eigenvalues positive, large-volume source-normalized 4D photon and nonfitted dynamics; if negative, native physical saddle escape.
+
+
+### 2026-11-15 — GPT — Q155b original-source corrected translation physics CLOSED NUMERICALLY
+- Native GitHub computation q155b-native-translation-corrected-block-order PASS (job run 43721855998) using Q149 original native face block order and Q152 pinned 528-vector; state branch persisted full JSON.
+- Reproduced local gauge-invariant flux RMS .553342787214, and primitive translations t .7693684652, x .7820644190, y .7991028430, z .7630839607; all 3216 2-cell holonomies changed under all four one-step shifts. The old Q155 native RMS was wrongly indexed and is superseded.
+- Q154 native original action showed strong momentum mixing .7515–.8361; so cannot infer a physical Maxwell photon from finite diagonal Fourier response. Next physical test is continuum/translation-restoring phase and primitive URT action choice, not more abstract graph moments.
 
 ## Log
 ### 2026-11-15 — GPT — Q152 transverse physical-vacuum Hessian
