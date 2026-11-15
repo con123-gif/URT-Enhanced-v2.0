@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q154 [compute] (PHYSICAL TRACK M): Using true Q152 stable 528-field, compute native original Q109 charged effective Hessian matrix elements of exact link-integrated transverse electromagnetic Fourier modes at 10 lattice momenta; compare to exact Maxwell curl and quantify mixing. No fitted α/no old Q77. Source geometry exact Ward tested locally; native job PENDING. research_archive/2026-11-15_q154_physical_photon_response/.
+
+
 - [ ] Q153 [compute] (ACTIVE Track M PHYSiCS): Exact pinned Q152 true stationarity (5.122e−6 norm) now passed; compute complete numerical 481×481 original v61 Q109 full gauge-transverse Hessian, eigenvalue count/Cholesky, gauge Ward and half-step errors. Includes 477 curvature +4 torons. Use original action, not synthetic matrices; conditional normalization, continuum photon, gravity OPEN. research_archive/2026-11-15_q153_full_physical_stability/.
 
 

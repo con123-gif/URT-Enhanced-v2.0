@@ -635,6 +635,14 @@ timeout = 120
 
 # Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
 [[job]]
+id = "q154-native-charged-photon-response"
+question = "At numerically stable Q152 flux vacuum, does native original-v61 charged action produce Maxwell-like 4D transverse electromagnetic response, correct Ward link gradients and weak momentum mixing?"
+run = "python -u research_archive/2026-11-15_q154_physical_photon_response/Q154_NATIVE_PHOTON_RESPONSE.py"
+timeout_minutes = 180
+requested_by = "GPT"
+claim = "conditional"
+
+[[job]]
 id = "q153-full-native-481-transverse-stability"
 question = "Is the actual numerically stationary Q152 528-link original-v61 vacuum stable in ALL 481 physical directions (477 local flux + 4 torons), as shown by full native Hessian eigenspectrum and Cholesky, not just six Ritz modes?"
 run = "python -u research_archive/2026-11-15_q153_full_physical_stability/Q153_FULL_NATIVE_TRANSVERSE_HESSIAN.py --output-dir {out}"
