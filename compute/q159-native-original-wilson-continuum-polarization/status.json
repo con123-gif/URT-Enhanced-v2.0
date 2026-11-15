@@ -1,0 +1,26 @@
+{
+  "status": "assertion_failed",
+  "detail": "",
+  "returncode": 1,
+  "wall_s": 19.66,
+  "tail": "degree-seven native quaternionic polynomial annihilator: EXACT PASS\nexact 60-complex-dim spinor traces and factor multiplicities: Matrix([[4, 4, 8, 12]])\nCharge bands coincide by quaternionic time reversal (Kramers).\nFor s=sqrt(2-2sqrt5/5), Hweak=s*X and\ndet(xI-Xweak)= [x(x-sqrt5)]^2\n  *[x^2+phi^2*x+3(sqrt5-3)/8]^4\n  *[x^3-x^2-(3+sqrt5)x+(5+sqrt5)/4]^6\nQ106 EXACT CHARGED BERRY BAND CERTIFICATE: PASS\nQ159 ORIGINAL v61 all48 11x11 polarization BLOCK MATCH: relative max 2.440996565317777e-13\nQ159 EXACT IVT GAP CROSSING: E(pi/6,0,0,0)^2<4< E(pi/6,pi/2,pi/2,pi/2)^2, native moving singlet mu=-2 mult10\nQ159 larger-original-Wilson 2 (0, 0, 0, 0) gap 0.009033391735901888 negative 0 smallest 105.42679432387955\nQ159 larger-original-Wilson 2 (0, 1, 0, 0) gap 0.009033391735901888 negative 4 smallest -2456.4531625965674\nQ159 larger-original-Wilson 2 (1, 1, 0, 0) gap 0.009033391735901888 negative 4 smallest -2456.4531625965974\nQ159 larger-original-Wilson 3 (0, 0, 0, 0) gap 0.0020583615159791564 negative 0 smallest 259.6459799015486\nQ159 larger-original-Wilson 3 (0, 1, 0, 0) gap 0.0020583615159791564 negative 6 smallest -1129.1326935572142\nQ159 larger-original-Wilson 3 (1, 1, 0, 0) gap 0.0020583615159791564 negative 1 smallest -209.10556899767383\nQ159 larger-original-Wilson 4 (0, 0, 0, 0) gap 0.004149286474994767 negative 0 smallest 679.2855065958406\nQ159 larger-original-Wilson 4 (0, 1, 0, 0) gap 0.004149286474994767 negative 4 smallest -2094.9043676358233\nQ159 larger-original-Wilson 4 (1, 1, 0, 0) gap 0.004149286474994767 negative 4 smallest -2034.7911704105898\nTraceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_BLOCH_PHOTON_AND_GAP.py\", line 160, in <module>\n    K,gap=response(shape,n)\n          ^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_BLOCH_PHOTON_AND_GAP.py\", line 114, in response\n    assert np.linalg.norm(polarization-polarization.conj().T)<1e-6\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "id": "q159-native-original-wilson-continuum-polarization",
+  "question": "Can original Q106/v61 4x4 Bloch current/seagull reproduce all 48 native 528-link Hessian Fourier blocks, then test unchanged original Wilson NS=3..6 spatial photon instabilities and exact inherited mu=-2 continuous-momentum Gaussian gap crossing?",
+  "requested_by": "GPT",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_BLOCH_PHOTON_AND_GAP.py --output-dir {out}",
+  "utc": "2026-11-15T14:39:52Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "4367acf7a026f9016eefc861c8c8f534c34e4ab7",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43725499766",
+  "outputs_committed": [],
+  "outputs_artifact_only": []
+}
