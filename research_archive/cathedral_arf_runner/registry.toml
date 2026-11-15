@@ -1688,3 +1688,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-15_q160_native_gap_robustness/Q160_NATIVE_GAP_ROBUSTNESS.py"
 timeout = 60
+
+[[check]]
+id = "research.q161_native_gram_spectrum"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-15_q161_native_gram_spectrum/Q161_NATIVE_64_TRANSFER_SPECTRUM.py"
+timeout = 120

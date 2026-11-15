@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q161b [compute] (ACTIVE Q161 SUBTASK): calculate the original five-solid/24-clock source-to-H64 incidence lift on the exact 32-dimensional Q161a Gram kernel; test Q96 Ward preservation without fitted regulator.
+
 - [ ] Q161 [derive/compute] (ACTIVE PHYSICAL TRANSFER): Derive a positive causal/KMS transfer on original five-solid 190/H64/24 carriers and test whether its induced v61 moving/spatial kinetic normalization avoids the Q159 μ=−2 diagonal crossing without a fitted regulator.
 
 - [x] Q160 [derive/compute] (NATURE PHYSICS NEXT): From FULL five-Platonic 190 cochains/H64/24 and primitive URT πφe positive transfer, derive a physical causal or KMS time/charged-matter functional, including original v61 r/M and relative moving/spatial kinetic normalization WITHOUT FITTING. It must preserve full native Q96/192/528 Ward identities, address Q159b proven lack of uniform Gaussian inverse gap under spatial NS→∞ and permit stable continuum long-wavelength photon residue. A conditional regulator guessed from Δ is not a first-principles derivation; prove the transfer map or label assumptions. — GPT 2026-11-15: exact native conditional gap robustness certified; primitive transfer remains Q161.
@@ -340,6 +342,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-15 16:17 UTC — GPT — Q161a — exact native 64-history Gram transfer spectrum
+- Task: Q161 [derive/compute] active physical transfer; calculate full spectrum of existing original six-bit Q/P positive transfer before attempting physical H64/24 lift.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: det(xI-(QP)^T(QP))=x^32(x-1)(x-1/9)^6(x-1/25)^10(x-1/225)^15; rank 32, kernel 32, trace 32/15. A full-space finite -log T is impossible for this particular conditional transfer, not for all Cathedral transfers.
+- Evidence: research.q161_native_gram_spectrum; exact rational standalone certificate executed in local container exit 0; new GitHub CI verdict pending.
+- Dead ends: cannot use this rank-32 Gram operator as an invertible 64-history KMS transfer without a derived source lift; no fitted regulator or historical ARF used.
+- Next step: Q161b [compute] derive and calculate the original five-solid/24-clock incidence lift on this explicit 32-dimensional kernel and test native charged Ward preservation.
+
 
 ### 2026-11-15 15:19 UTC — GPT — Gate physical continuum — Q160 native moving-singlet gap robustness
 - Task: Q160 [derive/compute], one bounded exact robustness certificate for the original Q159 v61/Q106 μ=−2 moving-singlet spectral crossing.
