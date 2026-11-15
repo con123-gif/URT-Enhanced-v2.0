@@ -1527,6 +1527,14 @@ run = "python -u research_archive/2026-11-15_q104_clock_transport/Q104_CLOCK_TRA
 timeout = 300
 
 [[check]]
+id = "research.q127_unitary_connection"
+stage = "research"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-15_q127_unitary_connection/Q127_UNITARY_CONNECTION.py"
+timeout = 300
+
+[[check]]
 id = "research.q125_native_hidden_charged"
 stage = "research_heavy"
 claim = "conditional"
