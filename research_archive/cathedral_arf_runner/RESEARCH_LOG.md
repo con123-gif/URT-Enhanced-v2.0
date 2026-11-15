@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q153 [compute] (ACTIVE Track M PHYSiCS): Exact pinned Q152 true stationarity (5.122e−6 norm) now passed; compute complete numerical 481×481 original v61 Q109 full gauge-transverse Hessian, eigenvalue count/Cholesky, gauge Ward and half-step errors. Includes 477 curvature +4 torons. Use original action, not synthetic matrices; conditional normalization, continuum photon, gravity OPEN. research_archive/2026-11-15_q153_full_physical_stability/.
+
+
 - [ ] Q152 [compute] (ACTIVE physical vacuum gate): on pinned original Q151 near-stationary 528-field, compute matrix-free 481D gauge-transverse Hessian lowest modes and verify negative physical curvature or perform projected Newton correction. Source Q109/Q110/v61/Q149, no fitted physics. Run 43717134682 established ΔΓ=−7389.66252059, gradient 5.172e−4 and true Wilson flux RMS 0.55334. See research_archive/2026-11-15_q152_native_physical_hessian/.
 
 
@@ -276,6 +279,12 @@ commit as your result.
 - [x] Q46 [derive] (A) **Mechanism behind the Q45 total criterion.** For an exceptional order o (e.g. (0,1,2,3,4,5), where T_o ∋ 01|23|45), the A5-stabiliser of the corresponding axis syntheme is an A4 permuting the three axis pairs that carry Q2 digit pairs (2k,2k+1). Prove or refute that S_{o,s} = S_{o,s⊕12} on the zero V-coset follows from this A4 (e.g. an A4-orbital identity for the 128 Q2 edges grouped by digit pair), so that the zero coset is derived rather than read off. Use the original Q3/Q28 operators only; no physical selection inference. — Claude 2026-11-12: THEOREM (sharper: the C3 = A4 ∩ A4′ realising the digit rotation i→i+2 forces the identity; zero coset derived = census; log: "Q46: the zero coset comes from one rotation")
 
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
+
+
+### 2026-11-15 — GPT — Q152 result recovered and Q153 all-mode native finite-gauge stability started
+- Actual Q152 compute state passed native run: strict 528 gradient norm 5.1223610867e−6 <1e−4; Ward 1.308e−12; ΔΓ−7389.662520594167; all 3216 corrected Wilson holonomies nontrivial. Six positive Ritz modes are not a complete stability certificate.
+- NEW Q153 direct full-Hessian calculation registered using exact SHA-pinned Q152 field and unchanged original v61/Q109 481D physical quotient; output pending. Not a photon or primitive kinetic selection.
+- Next: if all 481 finite eigenvalues positive, large-volume source-normalized 4D photon and nonfitted dynamics; if negative, native physical saddle escape.
 
 ## Log
 ### 2026-11-15 — GPT — Q152 transverse physical-vacuum Hessian

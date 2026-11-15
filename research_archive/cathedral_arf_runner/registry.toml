@@ -635,6 +635,14 @@ timeout = 120
 
 # Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
 [[job]]
+id = "q153-full-native-481-transverse-stability"
+question = "Is the actual numerically stationary Q152 528-link original-v61 vacuum stable in ALL 481 physical directions (477 local flux + 4 torons), as shown by full native Hessian eigenspectrum and Cholesky, not just six Ritz modes?"
+run = "python -u research_archive/2026-11-15_q153_full_physical_stability/Q153_FULL_NATIVE_TRANSVERSE_HESSIAN.py --output-dir {out}"
+timeout_minutes = 180
+requested_by = "GPT"
+claim = "conditional"
+
+[[job]]
 id = "q152-native-physical-hessian-and-newton"
 question = "At actual saved native Q151 528-field, is its complete 481D gauge-transverse curvature locally stable or are there genuine physical negative modes? Compute lowest Hessian eigenvalues and a verified Newton/negative-mode action step."
 run = "python -u research_archive/2026-11-15_q152_native_physical_hessian/Q152_PHYSICAL_HESSIAN_AND_NEWTON.py --output-dir {out}"
