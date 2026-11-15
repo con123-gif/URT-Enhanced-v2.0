@@ -31,7 +31,13 @@ assert tuple(w['shape'])==(6,2,2,2) and len(sites)==48
 # Q149 source constructs 67 original face types per site, in site-major order.
 phases=np.asarray([sum(A[l]*sign for l,sign in row.items()) for row in w['rows']])
 assert phases.size==48*67
-U=np.exp(1j*phases.reshape(48,67)/3)
+# IMPORTANT ORIGINAL Q149 ROW ORDER:
+# ALL 48*55 squares (site-major), THEN ALL 48*12 triangles (site-major).
+# A direct reshape(48,67) silently mixes faces belonging to DIFFERENT sites!
+# This site-specific concatenation matches independently constructed loops.
+by_site=np.concatenate((phases[:2640].reshape(48,55),
+                        phases[2640:].reshape(48,12)),axis=1)
+U=np.exp(1j*by_site/3)
 flux=float(np.sqrt(np.mean(np.abs(U-1)**2)))
 assert abs(flux-0.5533427872139778)<1e-9,flux
 records={}
@@ -46,10 +52,16 @@ for a,name in enumerate(('time','x','y','z')):
  records[name]=data
  assert data['rms_distance']>1e-3
  print('Q155 gauge-invariant primitive translation',name,data,flush=True)
+expected_rms=(0.7693684652056179,0.7820644190456477,
+              0.7991028430361657,0.7630839607184754)
+for name,expected in zip(('time','x','y','z'),expected_rms):
+ assert abs(records[name]['rms_distance']-expected)<1e-8,(name,records[name],expected)
+print('Q155b original face block ordering matches independent site-major assembly',flush=True)
 result={'source':'original native Q149 3216 Wilson 2-cell loops at Q152 numeric stable field',
  'native_q152_state_commit':PIN,'native_q152_git_blob':BLOB,
  'corrected_q_min_one_third_flux_rms':flux,
  'flux_per_site_shape':[48,67],
+ 'q149_native_face_block_order':'48*55 squares first; 48*12 triangles second',
  'translation_distances':records,
  'all_four_primitive_lattice_translations_broken_in_local_Wilson_flux':True,
  'gauge_independent':True,

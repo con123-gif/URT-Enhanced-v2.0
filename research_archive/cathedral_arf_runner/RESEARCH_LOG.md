@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q155b [compute] (PHYSICS ORIGINAL SOURCE CORRIGENDUM) First Q155 native script passed with WRONG site×face reshape; native Q149 lists 2640 squares first,576 triangles next, not interleaved. Corrected and independently matched local original-binary site-wise Wilson RMS time.7693684652/x.7820644190/y.7991028430/z.7630839607; rerun native q155b, no premature CI success. Same Q152 pinned vacuum, no physical action changed.
+
+
 - [ ] Q155 [compute] (ACTIVE PHYSICAL TRACK M): Re-execute actual Q152 pinned binary against original Q149 v61 3216 face Wilson holonomies; test if native gauge-invariant local flux breaks each primitive 4D translation. Local original-binary geometry PASS (RMS time0.76937,x0.78206,y0.79910,z0.76308); native GitHub source pending. research_archive/2026-11-15_q155_native_flux_translation/.
 
 - [x] Q154 [compute] Native Q109 v61 finite-k transverse EM response 10 original Fourier fields: CI run43720862967 completed. Gauge exact, 481D source Hessian positive but Fourier mixing 0.7515–0.8361, no justified diagonal Maxwell photon; original JSON recovered from state log. See research_archive/2026-11-15_q155_native_flux_translation/.
