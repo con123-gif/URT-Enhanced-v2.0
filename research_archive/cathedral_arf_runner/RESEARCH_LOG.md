@@ -5,6 +5,10 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q145 [compute] (TRACK M recovered conditional) From Q125a exact native Tr(Hch^2) and Q142 parity nullity≥3456 derive rank≤39168 and Tr(Hch^4)≥(6266290176+2491416576√5)/17. Previous ZIP lost; NEW independent conditional arithmetic local PASS 2026-11-15, CI pending. See research_archive/2026-11-15_q146_context_recovery/.
+
+- [x] Q146 [compute] (TRACK M original UNWEIGHTED graph) Reconstruct native five-cell 444 graph quotient and polynomial t^5−2t^4−22t^3+33t^2+28t−18, with A R=R Q, recheck Q139–Q143 structural facts. Old ZIP lost; NEW local certificate PASS 2026-11-15; source-weighted Q144b remains OPEN, CI pending. See research_archive/2026-11-15_q146_context_recovery/.
+
 **LATEST TRACK M CONTINUITY (15 NOV, Q144; DO NOT RESET TO Q125a):** The previous conversation had progressed through Q139 centre superselection, Q140 outer graph, Q141 conditional heat-bath spectral moments, Q142 >=3456 charged zero modes and Q143 444-shell refinement before Git DNS broke. Their original files were NOT committed; source summaries are recovered but MUST NOT be cited as newly CI-executed. Q144a independently rebuilt the original 444 graph and solved its *unweighted* equitable quotient 5 (10 with centre/flip type). Q144b is ACTIVE source-weighted Q125a 720-link charged SU2/Q96 Wilson spectral reduction. See research_archive/2026-11-15_q144_shell_equitable_recovery/Q144_EQUITABLE_RECOVERY.md.
 
 - [ ] Q144b [compute] (TRACK M ACTIVE Q125b) Construct ORIGINAL Q125a Q(sqrt5) signed/weighted 444-state coherent J (720 nonzero, 312 zero), refine A5-invariant centre/parity/shell quotient respecting two phi^2-related amplitudes and charge Ward SU2/Q96 transport. Derive genuine charged spectral reduction and real v61 528-link gauge Hessian at stable vacuum without invented kinetics or old Q77. Q144a unweighted quotient alone is insufficient.
@@ -260,6 +264,13 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+### 2026-11-15 — GPT — Track M Q145/Q146 conversation continuity rescue
+- Task: Recover uncommitted Q139–Q146 exact results from previous isolated ChatGPT sandboxes; independently execute original golden 8192/444/1032 state graph.
+- Result: VERIFIED-ARCHIVE reconstruction / CLOSED INTERNALLY, PHYSICAL IDENTIFICATION PENDING for finite graph; Q145 is conditional on Q125a source definition/second moment.
+- Statement: Q140 Tr A_outer^2=1920, Tr A_outer^4=19440 and 480 C4; Q141 conditional Tr G=-1032, Tr G^2=3042 and λ2(-G)≤12/37; Q142 nullity≥3456; Q145 Tr Hch^4≥(6266290176+2491416576√5)/17; Q146 unweighted five-cell quotient polynomial t^5−2t^4−22t^3+33t^2+28t−18.
+- Evidence: research.q139_q146_context_recovery; re-executed local Python exit 0; CI pending. Original Q139–Q146 lost scripts/ZIPs not recovered as bytes.
+- Next step: Q144b / Q145b: actual 720 weighted Q101 edges + 96 charged transport, true fourth moment/exact rank and original 192/528 Wilson gauge photon response. No physical ARF claimed.
+
 
 ### 2026-11-15 04:15 UTC — Claude — Gate A — Q127: the unitary connection does not select σ₁
 - Task: ACTIVE PROBLEM A, attempt A3, Queue Q127 [derive] (my lane; the top log entry's "Next step"). The latest orchestrator verdict was PASS (run 43669582732, `715f2de`), so no repair was due. Readings adopted, with nobody to ask: "connection" means T unitary with URT support (T[h,k] ≠ 0 only for k ∈ succ h); "trivial holonomy" means T²⁴ = I; "A5 averaging singles out" means the largest commutant in ρ_D(A5), the only lift-level A5 condition, since no lift commutes with all of ρ_D(A5) (Q61). Compatibility with Q was read two ways: (S) T ≥ 0 (doubly stochastic) and (B) |T|² = Q (Born).

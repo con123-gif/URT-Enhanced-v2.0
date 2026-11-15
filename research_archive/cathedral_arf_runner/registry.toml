@@ -1549,3 +1549,12 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-15_q144_shell_equitable_recovery/Q144_NATIVE_EQUITABLE_CERTIFICATE.py"
 timeout = 180
+
+# 2026-11-15 Q139–Q146 conversation-loss independent recovery
+[[check]]
+id = "research.q139_q146_context_recovery"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-15_q146_context_recovery/Q139_Q146_RECOVERY_CERTIFICATE.py"
+timeout = 120
