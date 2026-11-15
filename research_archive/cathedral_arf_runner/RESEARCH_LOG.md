@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q152 [compute] (ACTIVE physical vacuum gate): on pinned original Q151 near-stationary 528-field, compute matrix-free 481D gauge-transverse Hessian lowest modes and verify negative physical curvature or perform projected Newton correction. Source Q109/Q110/v61/Q149, no fitted physics. Run 43717134682 established ΔΓ=−7389.66252059, gradient 5.172e−4 and true Wilson flux RMS 0.55334. See research_archive/2026-11-15_q152_native_physical_hessian/.
+
+
 - [ ] Q151 [compute] (ACTIVE Track M native physics) Resume Q150 real native saved 528-vector (state branch, SHA256 pinned), continue full Q109 conditional determinant until true stationarity, remeasure 3216 2-cell holonomies with corrected q=1/3 Wilson modulus, and approximate 481D transverse stability iff stationary. Model premise remains conditional; no primitive URT time or physical alpha. Evidence: Q150 CI run 43715542715, Q151 code in research_archive/2026-11-15_q151_physical_vacuum_continuation/.
 
 
@@ -275,6 +278,10 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+### 2026-11-15 — GPT — Q152 transverse physical-vacuum Hessian
+- Q151 ORIGINAL native result run 43717134682: action −7389.66252059, full ∇ 5.172467e−4 (not at <1e−4); 3216 true flux holonomies, RMS 0.55334279; no Maxwell claim.
+- Q152 created: 481D transverse Hessian derivative of original Q109 action at pinned original Q151, detect negative 4D physical mode or perform projected Newton correction; computation pending; conditional model.
+
 ### 2026-11-15 — GPT — Q151 original v61 nonzero-flux vacuum continuation
 - Task: Read ACTUAL completed Q150 compute state (run 43715542715) rather than assume queued. Result ΔΓ=−7389.6624610, full norm gradient 0.0569485, Ward residual 1.58e−12, 450 iterations, not stationary; original numerical seed SHA256 pinned.
 - Result: Q151 real original model continuation job registered, correcting physical 6π holonomy flux and gating 481D stability on full 528D gradient convergence. Computational result pending; not physical photon or derived α.
