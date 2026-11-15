@@ -1541,3 +1541,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-15_q125_native_hidden_charged_join/Q125_NATIVE_WEDGE_CHARGED_COUPLING.py"
 timeout = 300
+
+[[check]]
+id = "research.q144_shell_equitable_recovery"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-15_q144_shell_equitable_recovery/Q144_NATIVE_EQUITABLE_CERTIFICATE.py"
+timeout = 180
