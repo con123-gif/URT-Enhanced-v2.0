@@ -7,7 +7,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161e [compute] (Q161b bounded native-source subtask): exact original hidden projector ranks 4+4 and one-slice 32-kernel rank bottleneck — GPT 2026-11-15: OBSTRUCTION (Q161e log); 24-slice physical lift remains Q161b.
 
-- [x] Q161f [compute] (Q161b factorized 24-clock subtask): original hidden projector tensor clock difference rank 184, hidden-clock nullity 8 — GPT 2026-11-15: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (Q161f log); full source-dependent Jacobian remains Q161b.\n\n- [ ] Q161b [compute] (ACTIVE Q161 SUBTASK; Q161e one-slice rank bound completed, full 24-slice Jacobian still open): calculate the original five-solid/24-clock source-to-H64 incidence lift on the exact 32-dimensional Q161a Gram kernel; test Q96 Ward preservation without fitted regulator.
+- [x] Q161f [compute] (Q161b factorized 24-clock subtask): original hidden projector tensor clock difference rank 184, hidden-clock nullity 8 — GPT 2026-11-15: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (Q161f log); full source-dependent Jacobian remains Q161b.
+
+- [ ] Q161b [compute] (ACTIVE Q161 SUBTASK; Q161e one-slice rank bound completed, full 24-slice Jacobian still open): calculate the original five-solid/24-clock source-to-H64 incidence lift on the exact 32-dimensional Q161a Gram kernel; test Q96 Ward preservation without fitted regulator.
 
 - [ ] Q161 [derive/compute] (ACTIVE PHYSICAL TRANSFER): Derive a positive causal/KMS transfer on original five-solid 190/H64/24 carriers and test whether its induced v61 moving/spatial kinetic normalization avoids the Q159 μ=−2 diagonal crossing without a fitted regulator.
 
