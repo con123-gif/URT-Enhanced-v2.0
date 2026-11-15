@@ -1558,3 +1558,12 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-15_q146_context_recovery/Q139_Q146_RECOVERY_CERTIFICATE.py"
 timeout = 120
+
+# 2026-11-15 reconstructed Q147 conditional source-weight moment
+[[check]]
+id = "research.q147_weighted_link_recovery"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-15_q147_weighted_link_recovery/Q147_WEIGHTED_LINK_FOURTH_CERTIFICATE.py"
+timeout = 60

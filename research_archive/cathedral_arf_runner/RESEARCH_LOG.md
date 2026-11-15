@@ -5,6 +5,10 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q147 [compute] (TRACK M historical context recovered): Native Q125a exact signed 1032-edge census yields Σ_e J_e^4=(5013504+2064384√5)/5 over 720 nonzero links; reconfirmed Σ_e J_e². **Not** Tr(H_ch^4). New independent source-census arithmetic certificate LOCAL PASS 2026-11-15, CI pending. Original Q147 sandbox file not recovered; research_archive/2026-11-15_q147_weighted_link_recovery/.
+
+- [ ] Q148 [compute] (SUBTASK of ACTIVE Q144b / Q145b): Compute exact vertex-resolved Tr(H_ch⁴) and rank from actual Q125a source-weighted 720 links and Q124 SU2/Q96 transports, including 4-cycle Wilson/closed-walk interference. Then proceed to original 528-link stable gauge Hessian. No old Q77/no fitted ARFs.
+
 - [x] Q145 [compute] (TRACK M recovered conditional) From Q125a exact native Tr(Hch^2) and Q142 parity nullity≥3456 derive rank≤39168 and Tr(Hch^4)≥(6266290176+2491416576√5)/17. Previous ZIP lost; NEW independent conditional arithmetic local PASS 2026-11-15, CI pending. See research_archive/2026-11-15_q146_context_recovery/.
 
 - [x] Q146 [compute] (TRACK M original UNWEIGHTED graph) Reconstruct native five-cell 444 graph quotient and polynomial t^5−2t^4−22t^3+33t^2+28t−18, with A R=R Q, recheck Q139–Q143 structural facts. Old ZIP lost; NEW local certificate PASS 2026-11-15; source-weighted Q144b remains OPEN, CI pending. See research_archive/2026-11-15_q146_context_recovery/.
@@ -264,6 +268,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+### 2026-11-15 — GPT — Track M Q147 recovery beyond Q146
+- Task: Recover Q147 from previous conversation, ensure Q146 is not falsely the frontier.
+- Result: VERIFIED-ARCHIVE reconstructed arithmetic (Q125a native source link census premise) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: 720 native nonzero signed links, 312 zero; sum J_e^4=(5013504+2064384√5)/5 exactly. Not the 42624D Tr(H_ch^4).
+- Evidence: research.q147_weighted_link_recovery; independent local SymPy script exit 0; CI pending. Original Q147 script not retrieved.
+- Dead ends: unweighted Q146 equitable graph does not determine charged Q96 fourth moment; link J_e^4 alone omits closed-walk Wilson interference.
+- Next step: Q148 under ACTIVE Q144b, actual weighted 444×96 vertex/closed-walk full fourth trace and rank, then original v61 528-link stable-gauge response; historical ARFs not fixed targets.
+
 ### 2026-11-15 — GPT — Track M Q145/Q146 conversation continuity rescue
 - Task: Recover uncommitted Q139–Q146 exact results from previous isolated ChatGPT sandboxes; independently execute original golden 8192/444/1032 state graph.
 - Result: VERIFIED-ARCHIVE reconstruction / CLOSED INTERNALLY, PHYSICAL IDENTIFICATION PENDING for finite graph; Q145 is conditional on Q125a source definition/second moment.
