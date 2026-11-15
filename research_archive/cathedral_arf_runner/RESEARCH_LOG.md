@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q151 [compute] (ACTIVE Track M native physics) Resume Q150 real native saved 528-vector (state branch, SHA256 pinned), continue full Q109 conditional determinant until true stationarity, remeasure 3216 2-cell holonomies with corrected q=1/3 Wilson modulus, and approximate 481D transverse stability iff stationary. Model premise remains conditional; no primitive URT time or physical alpha. Evidence: Q150 CI run 43715542715, Q151 code in research_archive/2026-11-15_q151_physical_vacuum_continuation/.
+
+
 - [x] Q149 [compute] (ACTIVE Track M physical-gauge priority) Original v61 528-link four-dimensional curvature operator: native 2640 parallelograms + 576 time-spatial triangles give exact curl rank 477 with 47 gauge and 4 global flat Wilson modes. With Q109 separately native-CI 84 negative Hessian eigenmodes, dim(negative∩local-curvature)≥80; symmetric vacuum has genuine local-flux instability, not merely global toron variation. New local exact integer certificate PASS (native geometry transcribed), GitHub original-v61 CI pending. research_archive/2026-11-15_q149_physical_curvature/.
 
 - [ ] Q150 [compute] (ACTIVE Track M physical Q125b/Q144b) Locate/verify a stationary 481D gauge-quotient vacuum in the ORIGINAL v61/Q109 same-action finite 528-link Gaussian model (use Q110 full analytic gradient and 6π fractional-charge domain), project its Hessian to 477 curvature and 4 flat Wilson modes, test transverse photon dispersion/normalized source; derive kinetic weights from primitive URT instead of fitting. Do not mistake an un-converged descent or historical ARFs for nature.
@@ -272,6 +275,11 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+### 2026-11-15 — GPT — Q151 original v61 nonzero-flux vacuum continuation
+- Task: Read ACTUAL completed Q150 compute state (run 43715542715) rather than assume queued. Result ΔΓ=−7389.6624610, full norm gradient 0.0569485, Ward residual 1.58e−12, 450 iterations, not stationary; original numerical seed SHA256 pinned.
+- Result: Q151 real original model continuation job registered, correcting physical 6π holonomy flux and gating 481D stability on full 528D gradient convergence. Computational result pending; not physical photon or derived α.
+- Next: independently run Q151 and verify numeric stationarity; then continuum transverse photon and primitive kinetic selection. No Q77 or old fitted ARFs.
+
 ### 2026-11-15 — GPT — Track M Q150 direct physical native gauge-vacuum compute
 - Task: Convert Q149 local-flux instability into original Q109/Q110 FULL 528-link stationary-vacuum search, not another graph moment.
 - Result: INCONCLUSIVE (native long-run registered, not yet executed), physical identification OPEN.

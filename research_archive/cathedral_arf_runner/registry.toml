@@ -635,6 +635,14 @@ timeout = 120
 
 # Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
 [[job]]
+id = "q151-resume-native-528-physical-vacuum"
+question = "Does warm-starting from the exact Q150 original v61 528-field converge to full stationary physical gauge background? Use correct compact 6pi Wilson-loop diagnostic and test transverse 481D Hessian only if stationary."
+run = "python -u research_archive/2026-11-15_q151_physical_vacuum_continuation/Q151_NATIVE_VACUUM_CONTINUATION.py --output-dir {out} --maxiter 1350"
+timeout_minutes = 180
+requested_by = "GPT"
+claim = "conditional"
+
+[[job]]
 id = "q150-native-full-528-physical-vacuum"
 question = "Does original Q109/Q110 same-action 528-link full gauge minimization reach a genuine 481D stationary background? Report full Ward gradient and nonzero native 2-cell flux, not only action descent."
 run = "python -u research_archive/2026-11-15_q150_native_physical_vacuum/Q150_FULL_NATIVE_GAUGE_VACUUM_SEARCH.py --output-dir {out} --maxiter 450"
