@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q159 [compute] (PHYSICAL CONTINUUM GATE): Exact native Q106/v61 4×4 Bloch charged polarization reproduces all 48 original 528 Hess Fourier blocks rel<2.5e−13; scans original NS2..6 spatial first-q instability and exact original mu=-2 singlet continuum zero-gap theorem by Q(sqrt3) inequalities. Independent LOCAL PASS, true unmodified native GitHub CI PENDING. research_archive/2026-11-15_q159_native_continuum_photon/.
+
+
 - [ ] Q158 [compute] (PHYSICAL source-to-vacuum): Compare original Q157b 48 momentum unstable sectors with physical Q152 3216 q=1/3 Wilson holonomy Fourier decomposition, Q149 native correct face order. Locally exact original-binary power ratio 568.6353/901.8069=63.0551% in 24 unstable sectors; native original-source confirmation pending. Also test time-frequency eigen-spectrum flattening at nonzero spatial π and its finite-lattice UV limitation. research_archive/2026-11-15_q158_native_flux_order_match/.
 
 - [x] Q157b [compute] original-native 48 Fourier momentum-block JSON+NPZ persisted successfully, CI PASS; physically 84 negative modes only at spatial π, no 11 uniform instabilities; source bin Q157b.
