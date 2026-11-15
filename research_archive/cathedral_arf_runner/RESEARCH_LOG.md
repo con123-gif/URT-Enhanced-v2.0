@@ -5,6 +5,10 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q149 [compute] (ACTIVE Track M physical-gauge priority) Original v61 528-link four-dimensional curvature operator: native 2640 parallelograms + 576 time-spatial triangles give exact curl rank 477 with 47 gauge and 4 global flat Wilson modes. With Q109 separately native-CI 84 negative Hessian eigenmodes, dim(negative∩local-curvature)≥80; symmetric vacuum has genuine local-flux instability, not merely global toron variation. New local exact integer certificate PASS (native geometry transcribed), GitHub original-v61 CI pending. research_archive/2026-11-15_q149_physical_curvature/.
+
+- [ ] Q150 [compute] (ACTIVE Track M physical Q125b/Q144b) Locate/verify a stationary 481D gauge-quotient vacuum in the ORIGINAL v61/Q109 same-action finite 528-link Gaussian model (use Q110 full analytic gradient and 6π fractional-charge domain), project its Hessian to 477 curvature and 4 flat Wilson modes, test transverse photon dispersion/normalized source; derive kinetic weights from primitive URT instead of fitting. Do not mistake an un-converged descent or historical ARFs for nature.
+
 - [x] Q147 [compute] (TRACK M historical context recovered): Native Q125a exact signed 1032-edge census yields Σ_e J_e^4=(5013504+2064384√5)/5 over 720 nonzero links; reconfirmed Σ_e J_e². **Not** Tr(H_ch^4). New independent source-census arithmetic certificate LOCAL PASS 2026-11-15, CI pending. Original Q147 sandbox file not recovered; research_archive/2026-11-15_q147_weighted_link_recovery/.
 
 - [ ] Q148 [compute] (SUBTASK of ACTIVE Q144b / Q145b): Compute exact vertex-resolved Tr(H_ch⁴) and rank from actual Q125a source-weighted 720 links and Q124 SU2/Q96 transports, including 4-cycle Wilson/closed-walk interference. Then proceed to original 528-link stable gauge Hessian. No old Q77/no fitted ARFs.
@@ -268,6 +272,14 @@ commit as your result.
 - [ ] Q47 [derive] (A) **No zero coset without the rotation.** For the six non-exceptional orders (no g ∈ A5 acts through o as the digit rotation i→i+2; Q46 L1), prove without a 64-mask census that c(o,s) ≠ c(o,s⊕12) for every s — e.g. exhibit one A5 orbital, or one ⟨h⟩-orbital union for a C3/C5 of A5, whose Q2 edge count changes under D → D⊕20 for every D — and, if possible, derive the minima 168 and 192. Original Q3/Q28 operators only; no physical selection inference.
 
 ## Log
+### 2026-11-15 — GPT — Track M physical-gauge Q149 original-v61 local flux instability
+- Task: Prioritize a physical electromagnetic vacuum constraint over repeated Q148 spectral graph moments. Compute native 528-link curvature/cohomology and test Q109 nonflat gauge instability.
+- Result: THEOREM (conditional on the already separately CI-verified Q109 84-negative eigenvalue action) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Original v61 48 sites, 528 links, 2640 commuting 2-cells + 576 native temporal-spatial triangles have real curl rank 477, with gauge rank47 and 4 independent flat Wilson forms. Intersecting Q109's 84-negative subspace with the 477D curvature subspace gives >=80 independent locally curved negative directions; hence actual flux-bearing downhill fields at A=0.
+- Evidence: research.q149_original_528_flux; new integer/GF2 geometry script executed locally with explicitly transcribed native geometry exit 0, native-v61 import GitHub CI pending. Q109 source-native native CI previously PASS at checkpoint #148; exact user-visible 4D photon still OPEN.
+- Dead ends: four constant/global Wilson holonomies alone cannot cure an 84-dimensional negative subspace; standalone graph moments do not locate a physical photon vacuum.
+- Next step: Q150 = stationary full 481D native gauge quotient plus positivity/4D transverse dispersion, on action derivable from primitive full-Cathedral transfer. Never fit old ARF equations.
+
 ### 2026-11-15 — GPT — Track M Q147 recovery beyond Q146
 - Task: Recover Q147 from previous conversation, ensure Q146 is not falsely the frontier.
 - Result: VERIFIED-ARCHIVE reconstructed arithmetic (Q125a native source link census premise) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.

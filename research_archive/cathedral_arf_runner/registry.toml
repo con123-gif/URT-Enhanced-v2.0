@@ -1567,3 +1567,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-15_q147_weighted_link_recovery/Q147_WEIGHTED_LINK_FOURTH_CERTIFICATE.py"
 timeout = 60
+
+# 2026-11-15 actual 4D native Wilson finite gauge curvature and flux instability
+[[check]]
+id = "research.q149_original_528_flux"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-15_q149_physical_curvature/Q149_ORIGINAL_528_CURVATURE_CERTIFICATE.py"
+timeout = 120
