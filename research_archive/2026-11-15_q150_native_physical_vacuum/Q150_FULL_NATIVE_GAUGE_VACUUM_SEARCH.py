@@ -64,11 +64,16 @@ def wrap(x):
 def diagnostics(x):
     val,grad=action_grad(x)
     c=curvature(x)
+    # q_min=1/3. The physical compact plaquette holonomy is exp(i*c/3).
+    # sin(c/3) is WRONG as a vacuum monitor: it vanishes at c=3*pi,
+    # although the holonomy there is -1, not the trivial +1.
+    # |exp(i*c/3)-1| = 2*|sin(c/6)| is exactly 6*pi periodic.
+    holonomy_distance=2*np.abs(np.sin(c/6))
     return dict(delta_gamma=float(val-gamma0),
                 gradient_norm=float(np.linalg.norm(grad)),
                 ward_residual=float(np.linalg.norm(inc.T@grad)),
-                local_flux_rms=float(np.linalg.norm(np.sin(c/3))/math.sqrt(len(c))),
-                local_flux_nonzero=int(np.sum(np.abs(np.sin(c/3))>1e-6)),
+                local_flux_rms=float(np.linalg.norm(holonomy_distance)/math.sqrt(len(c))),
+                local_flux_nonzero=int(np.sum(holonomy_distance>1e-6)),
                 stationary_numeric=bool(np.linalg.norm(grad)<1e-4 and
                                         np.linalg.norm(inc.T@grad)<1e-6))
 initial=diagnostics(A)

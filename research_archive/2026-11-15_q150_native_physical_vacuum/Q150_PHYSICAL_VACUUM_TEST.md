@@ -30,3 +30,16 @@ Registered as long-running compute-queue job \`q150-native-full-528-physical-vac
 ## Next physical criterion
 
 Use returned candidate only if its gradient is genuinely small. Then re-evaluate native full 481D transverse stability, compute 4D long-wavelength Wilson/plaquette correlator and source-normalized photon pole on the same candidate, and test its independence from finite-lattice boundaries. Finally derive (or falsify) the kinetic normalisation and 24-time law from primitive π, φ, e full-Cathedral dynamics. All unresolved premises must remain explicit.
+
+## Q150a physics correction — holonomy monitor (2026-11-15)
+
+**Found and corrected a physically material error in Q150's diagnostic.** Its original local-flux monitor used `sin(c/3)` for the minimal charge `q=1/3`, where `c` is the oriented 2-cell link sum. This is **not** a faithful test for trivial Wilson holonomy: at `c=3π`, `exp(i c/3)=-1` is nontrivial while `sin(c/3)=0` incorrectly reports zero flux. The correct compact, gauge-invariant, `6π`-periodic distance from identity is
+
+```
+U_face = exp(i c/3)
+d_face = |U_face - 1| = 2 |sin(c/6)|.
+flux_rms = sqrt(mean(d_face**2)).
+nonzero_flux_faces = count(d_face > 1e-6).
+```
+
+For exact test cases: `c=0` gives `d=0`, `c=3π` gives `d=2`, `c=6π` gives `d=0`. The formula is invariant under `c→c+6πk` and under face-orientation reversal `c→−c`. This is an **exact algebraic physical-observable correction**, not an optimizer convergence claim. Q150 objective/gradient and the underlying action are unchanged. Any earlier Q150 flux reports from the sine monitor are not reliable evidence of trivial Wilson flux; recompute them with the corrected monitor. No photon or physical alpha derived.
