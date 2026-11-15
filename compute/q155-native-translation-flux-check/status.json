@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 0.47,
+  "tail": "NATIVE ORIGINAL v61 SOURCE /home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-10-17_original_oct08_source/canonical_sources/Cathedral/Newton_Cathedral_Full_v61.py\nQ149 native elementary faces Counter({'square': 2640, 'triangle': 576})\nQ149 EXACT curvature rank 477 gauge rank 47 flat Wilson modes 4\nQ149 conditional Q109 locally curved negative modes >=80\nQ149 physical consequence: actual local flux instability at symmetric vacuum; global torons alone insufficient\nQ149 NATIVE FINITE GAUGE CURVATURE CERTIFICATE: PASS\nQ155 gauge-invariant primitive translation time {'mean_distance': 0.6002262726500156, 'rms_distance': 0.7553642426376561, 'max_distance': 1.9994632753506751, 'fraction_changed_over_1e-6': 1.0}\nQ155 gauge-invariant primitive translation x {'mean_distance': 0.5874287702923043, 'rms_distance': 0.7405032937498357, 'max_distance': 1.9995867329425936, 'fraction_changed_over_1e-6': 1.0}\nQ155 gauge-invariant primitive translation y {'mean_distance': 0.5894926345401844, 'rms_distance': 0.7420824097301859, 'max_distance': 1.991692452331362, 'fraction_changed_over_1e-6': 1.0}\nQ155 gauge-invariant primitive translation z {'mean_distance': 0.5887700066141942, 'rms_distance': 0.7431821183269045, 'max_distance': 1.990663076389289, 'fraction_changed_over_1e-6': 1.0}\nQ155 RESULT {\"all_four_primitive_lattice_translations_broken_in_local_Wilson_flux\": true, \"continuum_translation_or_Lorentz_restoration_untested\": true, \"corrected_q_min_one_third_flux_rms\": 0.5533427872139777, \"flux_per_site_shape\": [48, 67], \"gauge_independent\": true, \"global_or_combined_symmetries_not_tested\": true, \"model_premise\": \"conditional equal kinetic Q109 Gaussian determinant\", \"native_q152_git_blob\": \"ad746e6f14a5332e8d3b84fb8a2cd46eff65e258\", \"native_q152_state_commit\": \"8941bd77ef73d7962fb540b9f753cad427548fdc\", \"physical_massless_photon_derived\": false, \"source\": \"original native Q149 3216 Wilson 2-cell loops at Q152 numeric stable field\", \"translation_distances\": {\"time\": {\"fraction_changed_over_1e-6\": 1.0, \"max_distance\": 1.9994632753506751, \"mean_distance\": 0.6002262726500156, \"rms_distance\": 0.7553642426376561}, \"x\": {\"fraction_changed_over_1e-6\": 1.0, \"max_distance\": 1.9995867329425936, \"mean_distance\": 0.5874287702923043, \"rms_distance\": 0.7405032937498357}, \"y\": {\"fraction_changed_over_1e-6\": 1.0, \"max_distance\": 1.991692452331362, \"mean_distance\": 0.5894926345401844, \"rms_distance\": 0.7420824097301859}, \"z\": {\"fraction_changed_over_1e-6\": 1.0, \"max_distance\": 1.990663076389289, \"mean_distance\": 0.5887700066141942, \"rms_distance\": 0.7431821183269045}}}\n",
+  "id": "q155-native-translation-flux-check",
+  "question": "Does actual original-v61 Q152 stable charged gauge vacuum break primitive 4D translations in gauge-INVARIANT local Wilson 2-cell holonomies, explaining Q154 momentum mixing?",
+  "requested_by": "GPT",
+  "claim": "conditional",
+  "run": "python -u research_archive/2026-11-15_q155_native_flux_translation/Q155_ORIGINAL_NATIVE_TRANSLATION_AUDIT.py --output-dir {out}",
+  "utc": "2026-11-15T13:57:20Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "27dbb57b72e04cb2e0dd7ce1ca3d045f77d50a91",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43721641514",
+  "outputs_committed": [
+    {
+      "path": "Q155_RESULT.json",
+      "bytes": 1462,
+      "sha256": "7bda41e7e5d308932ba69df53e5db81c811fcf7eb731d1767fe24d859cb42997"
+    }
+  ],
+  "outputs_artifact_only": []
+}

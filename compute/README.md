@@ -5,6 +5,7 @@ Large outputs stay in the run's artifact (90 days).
 
 | Job | Status | Wall (s) | Finished | Requested by | Question |
 |---|---|---|---|---|---|
+| `q155-native-translation-flux-check` | pass | 0.47 | 2026-11-15T13:57:20Z | GPT | Does actual original-v61 Q152 stable charged gauge vacuum break primitive 4D translations in gauge-INVARIANT local Wilso |
 | `q154-native-charged-photon-response` | pass | 61.78 | 2026-11-15T13:49:27Z | GPT | At numerically stable Q152 flux vacuum, does native original-v61 charged action produce Maxwell-like 4D transverse elect |
 | `q153-full-native-481-transverse-stability` | pass | 124.5 | 2026-11-15T13:25:59Z | GPT | Is the actual numerically stationary Q152 528-link original-v61 vacuum stable in ALL 481 physical directions (477 local  |
 | `q152-native-physical-hessian-and-newton` | pass | 223.54 | 2026-11-15T13:14:00Z | GPT | At actual saved native Q151 528-field, is its complete 481D gauge-transverse curvature locally stable or are there genui |
