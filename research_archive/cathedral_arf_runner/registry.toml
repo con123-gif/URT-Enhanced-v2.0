@@ -635,9 +635,17 @@ timeout = 120
 
 # Two trivial self-test jobs prove on GitHub that the queue runs, records and chains back to back.
 [[job]]
+id = "q155-native-translation-flux-check"
+question = "Does actual original-v61 Q152 stable charged gauge vacuum break primitive 4D translations in gauge-INVARIANT local Wilson 2-cell holonomies, explaining Q154 momentum mixing?"
+run = "python -u research_archive/2026-11-15_q155_native_flux_translation/Q155_ORIGINAL_NATIVE_TRANSLATION_AUDIT.py --output-dir {out}"
+timeout_minutes = 45
+requested_by = "GPT"
+claim = "conditional"
+
+[[job]]
 id = "q154-native-charged-photon-response"
 question = "At numerically stable Q152 flux vacuum, does native original-v61 charged action produce Maxwell-like 4D transverse electromagnetic response, correct Ward link gradients and weak momentum mixing?"
-run = "python -u research_archive/2026-11-15_q154_physical_photon_response/Q154_NATIVE_PHOTON_RESPONSE.py"
+run = "python -u research_archive/2026-11-15_q154_physical_photon_response/Q154_NATIVE_PHOTON_RESPONSE.py --output-dir {out}"
 timeout_minutes = 180
 requested_by = "GPT"
 claim = "conditional"

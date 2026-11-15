@@ -5,6 +5,11 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q155 [compute] (ACTIVE PHYSICAL TRACK M): Re-execute actual Q152 pinned binary against original Q149 v61 3216 face Wilson holonomies; test if native gauge-invariant local flux breaks each primitive 4D translation. Local original-binary geometry PASS (RMS time0.76937,x0.78206,y0.79910,z0.76308); native GitHub source pending. research_archive/2026-11-15_q155_native_flux_translation/.
+
+- [x] Q154 [compute] Native Q109 v61 finite-k transverse EM response 10 original Fourier fields: CI run43720862967 completed. Gauge exact, 481D source Hessian positive but Fourier mixing 0.7515–0.8361, no justified diagonal Maxwell photon; original JSON recovered from state log. See research_archive/2026-11-15_q155_native_flux_translation/.
+
+
 - [ ] Q154 [compute] (PHYSICAL TRACK M): Using true Q152 stable 528-field, compute native original Q109 charged effective Hessian matrix elements of exact link-integrated transverse electromagnetic Fourier modes at 10 lattice momenta; compare to exact Maxwell curl and quantify mixing. No fitted α/no old Q77. Source geometry exact Ward tested locally; native job PENDING. research_archive/2026-11-15_q154_physical_photon_response/.
 
 

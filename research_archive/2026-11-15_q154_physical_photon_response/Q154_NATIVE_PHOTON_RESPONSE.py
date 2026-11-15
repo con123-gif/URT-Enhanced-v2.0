@@ -10,7 +10,10 @@ from scipy.linalg import null_space,eigh
 from scipy.sparse import csr_matrix
 
 ROOT=Path(__file__).resolve().parents[2]
-out=Path('/tmp/q154_native_photon_response');out.mkdir(parents=True,exist_ok=True)
+import argparse
+parser=argparse.ArgumentParser()
+parser.add_argument('--output-dir',default='/tmp/q154_native_photon_response')
+out=Path(parser.parse_args().output_dir);out.mkdir(parents=True,exist_ok=True)
 PIN='8941bd77ef73d7962fb540b9f753cad427548fdc'
 BLOB='ad746e6f14a5332e8d3b84fb8a2cd46eff65e258'
 url='https://raw.githubusercontent.com/con123-gif/URT-Enhanced-v2.0/'+PIN+'/compute/q152-native-physical-hessian-and-newton/outputs/Q152_best_native_gauge_angles.npy'
