@@ -1525,3 +1525,11 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-15_q104_clock_transport/Q104_CLOCK_TRANSPORT.py"
 timeout = 300
+
+[[check]]
+id = "research.q125_native_hidden_charged"
+stage = "research_heavy"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-15_q125_native_hidden_charged_join/Q125_NATIVE_WEDGE_CHARGED_COUPLING.py"
+timeout = 300
