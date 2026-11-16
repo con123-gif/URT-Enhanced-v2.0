@@ -9,7 +9,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161k [compute] (Q161b bounded original hidden-source stacked background rank): twelve native vertex-local Jacobians stack to rank 11, with uniform common kernel — GPT 2026-11-16: THEOREM (Q161k log); full 24-slice lift still open.
 
-- [ ] Q161l [compute] (Q161b next frontier): recover native 24-slice H64-to-vertex incidence; test its rank on 32 Q161a pair differences and Q96 Ward.
+- [x] Q161l [compute] (Q161b bounded six-axis native QP conjugacy test): stacked ranks 32,48,56,60,62,63, surviving Walsh parity — GPT 2026-11-16: THEOREM (Q161l log); actual 24-slice source map still open.
+- [ ] Q161m [compute] (Q161b native physical source frontier): locate the original five-solid/24-clock H64-to-vertex incidence, calculate its action on Walsh parity and verify Q96 Ward.
 
 
 - [x] Q161e [compute] (Q161b bounded native-source subtask): exact original hidden projector ranks 4+4 and one-slice 32-kernel rank bottleneck — GPT 2026-11-15: OBSTRUCTION (Q161e log); 24-slice physical lift remains Q161b.
@@ -357,6 +358,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 04:16 UTC — GPT — Q161b — Q161l exact six-axis native QP orientation certificate
+- Task: Q161l [compute], bounded exact Q161a original dyadic Q and 15-pair-flip P across six bit-axis conjugacies.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: The six stacked native QP conjugacy prefix ranks are 32,48,56,60,62,63; common kernel of all six is exactly span of the Walsh global parity character (-1)^popcount(x).
+- Evidence: research.q161l_axis_orbit; standalone Python fractions.Fraction exact certificate executed locally 2026-11-16, exit 0; GitHub CI pending new commit.
+- Dead ends: axis conjugation is not the recovered physical 24-slice five-solid H64-to-vertex incidence; no Q96 Ward conclusion follows.
+- Next step: Q161m [compute] locate archived original five-solid/24-clock H64-to-vertex incidence and compute its exact action on the surviving Walsh parity direction, including Q96 Ward check.
+
 
 ### 2026-11-16 02:17 UTC — GPT — Q161b — Q161k exact stacked native source-background injectivity
 - Task: Q161k [compute], bounded original icosahedral hidden-source multi-background derivative calculation.
