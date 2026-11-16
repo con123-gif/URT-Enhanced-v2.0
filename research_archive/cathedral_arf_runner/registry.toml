@@ -1816,3 +1816,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161x_axis_geometry/Q161X_AXIS_GEOMETRY.py"
 timeout = 120
+
+[[check]]
+id = "research.q161y_axis_orbit"
+stage = "research_a"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-16_q161y_axis_orbit/Q161Y_AXIS_ORBIT.py"
+timeout = 120

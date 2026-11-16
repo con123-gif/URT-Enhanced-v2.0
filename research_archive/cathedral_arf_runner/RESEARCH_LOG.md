@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161y [compute] (Q161o bounded native A5 face-axis orbit) — GPT 2026-11-16: THEOREM; ten triples form 2-(6,3,2), A5 orbit 10/stabilizer 6; full physical source open.
+- [ ] Q161z [compute] (Q161o PHYSICAL SOURCE): extract original full five-solid/190-cochain/24-clock H64-to-history tensor; test A5 covariance and bit-0-odd Walsh rank before Q96 Ward generators.
+
 - [x] Q161w [compute] (Q161o bounded original axis-subset rank census) — GPT 2026-11-16: THEOREM; all four-axis subsets injective; physical Q161o remains open.
 - [x] Q161x [compute] (Q161o bounded geometry) — GPT 2026-11-16: THEOREM, rank 20 iff three axes support an original icosahedral face; otherwise rank 18; physical Q161o open.
 
@@ -375,6 +378,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 22:16 UTC — GPT — Gate B/D — Q161y original icosahedral axis-orbit certificate
+- Task: Q161o bounded original-geometry selection test; determine whether Q161x's ten injective face-axis triples admit an A5-invariant single choice.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: The ten original face-axis triples form a 2-(6,3,2) design; the 60 native proper rotations act transitively with stabilizer order 6. Therefore no single injective triple is invariant under unbroken A5.
+- Evidence: research.q161y_axis_orbit; standalone Q161Y_AXIS_ORBIT.py executed locally, exit 0, Python/SymPy/NetworkX; CI for this commit pending.
+- Dead ends: A canonical single three-axis readout cannot be selected using the unbroken icosahedral rotation action alone; a covariant ten-component source remains possible.
+- Next step: Q161z [compute] extract the actual full five-solid/190-cochain/24-clock H64-to-history source tensor and test whether its ten-triple components transform covariantly, then compute its bit-0-odd Walsh rank before Q96 Ward tests.
+
 ### 2026-11-16 19:19 UTC — GPT — CI #177 research-stage cancellation repair
 - Task: CI FAIL priority; repair 155 missing research check results from cancelled 30-minute research matrix stage before Q161x.
 - Result: INCONCLUSIVE — OPEN (CI infrastructure repair, not a physical result).
