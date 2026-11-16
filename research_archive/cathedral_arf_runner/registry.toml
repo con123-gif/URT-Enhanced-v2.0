@@ -1784,3 +1784,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161t_native_face_source/Q161T_NATIVE_FACE_SOURCE.py"
 timeout = 120
+
+[[check]]
+id = "research.q161u_native_face_gram"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-16_q161u_native_face_gram/Q161U_FACE_GRAM.py"
+timeout = 120

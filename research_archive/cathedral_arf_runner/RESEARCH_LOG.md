@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161u [compute] (Q161o native face Gram exact spectrum) — GPT 2026-11-16: THEOREM; see Q161u log, full physical Q161o remains open.
+
+
 - [x] Q161t [compute] (Q161o bounded original icosahedral face-incidence parity response) — GPT 2026-11-16: THEOREM, rank 10; full physical source and Ward remain Q161o.
 
 - [x] Q161r [compute] (Q161o bounded native P/Q parity-source criterion): exact bit-0 reflection iff annihilation, 32 independent lifting characters — GPT 2026-11-16: THEOREM (Q161r log); original physical source and Q96 Ward remain Q161o.
@@ -367,6 +370,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 16:21 UTC — GPT — Gate Q161o — Q161u exact native face Gram
+- Task: Q161u bounded original Q161t face-to-history parity response spectrum.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Exactly ten faces incident on antipodal bit-0 pair survive QP diag(w63) M; active Gram determinant 548864/50682163238525390625 and characteristic polynomial (25λ−2)^4(225λ−268)(225λ−8)(50625λ²−1350λ+4)^2/50682163238525390625. Rank 10, ten-dimensional inactive kernel.
+- Evidence: research.q161u_native_face_gram; executed locally in GPT container python, exit 0; CI verdict pending.
+- Dead ends: This icosahedral source alone does not identify physical full five-solid/24-clock amplitudes or Q96 Ward.
+- Next step: Q161o: recover pinned 190-cochain/24-clock H64 source amplitudes on the ten active faces and test full Q96 Ward.
+
 
 ### 2026-11-16 15:21 UTC — GPT — Gate A/B — Q161t native face-source parity capacity
 - Task: Q161o bounded original icosahedral 64-history × 20-face incidence source response.
