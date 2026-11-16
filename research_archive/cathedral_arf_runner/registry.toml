@@ -1760,3 +1760,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161n_parity_source/Q161N_PARITY_SOURCE.py"
 timeout = 120
+
+[[check]]
+id = "research.q161p_full_kernel_upstream"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-16_q161p_full_kernel_upstream/Q161P_UPSTREAM_KERNEL.py"
+timeout = 120

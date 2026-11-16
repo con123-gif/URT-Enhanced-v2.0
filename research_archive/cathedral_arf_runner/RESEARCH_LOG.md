@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161p [compute] (Q161o bounded conditional full Q161a-kernel D0 capacity): exact rank 32, minimum singular value 1/15 — GPT 2026-11-16: THEOREM (Q161p log); physical incidence and Ward remain Q161o.
+
 - [x] Q161m [compute] (bounded upstream Q/P parity diagnostic) — GPT 2026-11-16: THEOREM (Q161n log); original physical incidence still open.
 - [ ] Q161o [compute] (Q161b physical source) recover original five-solid/24-clock H64-to-vertex incidence, test its bit-0 Walsh component before Q and full Q96 Ward.
 
@@ -360,6 +362,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 07:19 UTC — GPT — Gate B/D — Q161p full history-kernel upstream capacity
+- Task: Q161o bounded conditional original Q161a Q/P source-capacity subcalculation on all 32 kernel vectors.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: QPD0 restricted to ker(QP) has rank 32 and nullity 0; squared singular spectrum 1(1), 1/9(6), 1/25(10), 1/225(15); minimum singular value 1/15.
+- Evidence: research.q161p_full_kernel_upstream; standalone exact Fraction certificate executed locally, exit 0; CI pending.
+- Dead ends: D0 is conditional, not a recovered physical five-solid/24-clock H64 incidence; no Q96 Ward verification or physical gate closure.
+- Next step: Q161o [compute] recover original 50-vertex/24-clock-to-H64 incidence, project onto Q161a kernel before Q, and test joined Q96 Ward identities.
+
 
 ### 2026-11-16 06:16 UTC — GPT — Gate B/D — Q161n original Q/P parity-source selection
 - Task: Q161m bounded upstream test using original Q161l Q/P; one-bit Walsh-character source diagnostic.
