@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161t [compute] (Q161o bounded original icosahedral face-incidence parity response) — GPT 2026-11-16: THEOREM, rank 10; full physical source and Ward remain Q161o.
+
 - [x] Q161r [compute] (Q161o bounded native P/Q parity-source criterion): exact bit-0 reflection iff annihilation, 32 independent lifting characters — GPT 2026-11-16: THEOREM (Q161r log); original physical source and Q96 Ward remain Q161o.
 - [ ] Q161o [compute] (PHYSICAL INCIDENCE NEXT): recover actual five-solid/24-clock H64-to-history source amplitude; evaluate its bit-0-odd Walsh projection and all Q96 Ward generators using Q161r criterion.
 
@@ -365,6 +367,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 15:21 UTC — GPT — Gate A/B — Q161t native face-source parity capacity
+- Task: Q161o bounded original icosahedral 64-history × 20-face incidence source response.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: rank M=20, M^T w63=0, rank((I-X0)M/2)=rank([QP(w63⊙M_j)]_j)=10; exactly ten face-amplitude directions lift parity under the stated multiplicative injection, ten cannot.
+- Evidence: research.q161t_native_face_source; executed locally in container Python/SymPy, exit 0; CI pending at commit creation.
+- Dead ends: additive M amplitudes do not excite w63; a multiplicative response is only conditional until native H64 source is identified.
+- Next step: Q161o — extract native five-solid/24-clock H64 source tensor, project onto the rank-10 face-active image, and test all Q96 Ward generators.
+
 
 ### 2026-11-16 11:20 UTC — GPT — Gate Q161o — Q161r native parity-source selection
 - Task: Q161o bounded native Q161a P/Q source-character response; classify every diagonal history source that can lift global Walsh parity.

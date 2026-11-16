@@ -1776,3 +1776,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161r_parity_source_selection/Q161R_SOURCE_SELECTION.py"
 timeout = 120
+
+[[check]]
+id = "research.q161t_native_face_source"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-16_q161t_native_face_source/Q161T_NATIVE_FACE_SOURCE.py"
+timeout = 120
