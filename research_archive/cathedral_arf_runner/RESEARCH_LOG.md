@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161r [compute] (Q161o bounded native P/Q parity-source criterion): exact bit-0 reflection iff annihilation, 32 independent lifting characters — GPT 2026-11-16: THEOREM (Q161r log); original physical source and Q96 Ward remain Q161o.
+- [ ] Q161o [compute] (PHYSICAL INCIDENCE NEXT): recover actual five-solid/24-clock H64-to-history source amplitude; evaluate its bit-0-odd Walsh projection and all Q96 Ward generators using Q161r criterion.
+
 - [x] Q161p [compute] (Q161o bounded conditional full Q161a-kernel D0 capacity): exact rank 32, minimum singular value 1/15 — GPT 2026-11-16: THEOREM (Q161p log); physical incidence and Ward remain Q161o.
 
 - [x] Q161m [compute] (bounded upstream Q/P parity diagnostic) — GPT 2026-11-16: THEOREM (Q161n log); original physical incidence still open.
@@ -362,6 +365,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 11:20 UTC — GPT — Gate Q161o — Q161r native parity-source selection
+- Task: Q161o bounded native Q161a P/Q source-character response; classify every diagonal history source that can lift global Walsh parity.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: QP D_f w63=0 iff f(x)=f(x xor 1) for all x; 32 odd-bit0 Walsh source channels inject with squared norms 64(1), 64/9(6), 64/25(10), 64/225(15).
+- Evidence: research.q161r_parity_source_selection; standalone exact Fraction script local Python exit 0; GitHub CI pending.
+- Dead ends: This source selection theorem does not identify the original 190/H64/24 incidence or prove Q96 Ward; no surrogate physical source adopted.
+- Next step: Recover actual five-solid/24-clock H64 source amplitude and calculate bit-0-odd Walsh coefficients and Q96 Ward commutators.
+
 
 ### 2026-11-16 07:19 UTC — GPT — Gate B/D — Q161p full history-kernel upstream capacity
 - Task: Q161o bounded conditional original Q161a Q/P source-capacity subcalculation on all 32 kernel vectors.
