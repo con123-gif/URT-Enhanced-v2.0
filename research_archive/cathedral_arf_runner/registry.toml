@@ -1720,3 +1720,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-15_q161h_hidden_shift/Q161H_HIDDEN_SHIFT_CERTIFICATE.py"
 timeout = 120
+
+[[check]]
+id = "research.q161i_hidden_second_order"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-16_q161i_hidden_second_order/Q161I_HESSIAN_SPAN.py"
+timeout = 120

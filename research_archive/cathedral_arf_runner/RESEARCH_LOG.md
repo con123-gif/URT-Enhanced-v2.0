@@ -9,6 +9,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161f [compute] (Q161b factorized 24-clock subtask): original hidden projector tensor clock difference rank 184, hidden-clock nullity 8 — GPT 2026-11-15: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (Q161f log); full source-dependent Jacobian remains Q161b.
 
+- [x] Q161i [compute] (Q161b bounded native second-order source): 30 edge-mixed hidden Hessian columns span rank 8=4+4, while 12 diagonal columns vanish — GPT 2026-11-16: THEOREM (Q161i log); full Q161b remains open.
+
 - [x] Q161h [compute] (Q161b bounded native hidden-source shift symmetry): exact h(v+c1)=h(v), ranks 0/4/8 — GPT 2026-11-15: THEOREM (Q161h log); full Q161b remains open.
 
 - [ ] Q161b [compute] (ACTIVE Q161 SUBTASK; Q161e one-slice rank bound completed, full 24-slice Jacobian still open): calculate the original five-solid/24-clock source-to-H64 incidence lift on the exact 32-dimensional Q161a Gram kernel; test Q96 Ward preservation without fitted regulator.
@@ -348,6 +350,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 00:18 UTC — GPT — Gate B/D — Q161i native hidden-source second-order span
+- Task: Q161b bounded original-operator subtask: determine whether the Q161g uniform-input zero Jacobian hides nonzero second-order channels.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For h(v)=Ph((Cv)∘(Cv)) on native icosahedral C, D²h[e_i,e_i]=0; the 30 edge-mixed Hessian columns span all 8 hidden directions, split rank 4 in P3 and rank 4 in P5. Uniform-source first derivative still vanishes.
+- Evidence: research.q161i_hidden_second_order; local GPT container python certificate exit 0, 2026-11-16; CI verdict pending at commit time.
+- Dead ends: second-order reachability alone does not establish first-order 32-kernel lift or Q96 Ward.
+- Next step: Q161b — calculate actual original 24-slice history→vertex bilinear/linearized coupling restricted to Q161a 32-kernel and test Q96 Ward.
+
+
 
 ### 2026-11-15 23:14 UTC — GPT — Gate B/D — Q161h exact hidden-source shift symmetry
 - Task: Q161b bounded subtask: original icosahedral quadratic hidden-source shift symmetry and nonuniform derivative ranks.
