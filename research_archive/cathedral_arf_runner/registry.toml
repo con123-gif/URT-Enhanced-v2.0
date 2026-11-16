@@ -1752,3 +1752,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161l_axis_orbit/Q161L_AXIS_ORBIT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161n_parity_source"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-16_q161n_parity_source/Q161N_PARITY_SOURCE.py"
+timeout = 120

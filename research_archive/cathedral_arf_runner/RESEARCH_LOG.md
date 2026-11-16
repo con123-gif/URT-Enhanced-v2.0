@@ -5,12 +5,14 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161m [compute] (bounded upstream Q/P parity diagnostic) — GPT 2026-11-16: THEOREM (Q161n log); original physical incidence still open.
+- [ ] Q161o [compute] (Q161b physical source) recover original five-solid/24-clock H64-to-vertex incidence, test its bit-0 Walsh component before Q and full Q96 Ward.
+
 - [x] Q161j [compute] (Q161b bounded two-vertex source-orbit rank test): exact original hidden Jacobian ranks 6/7/8 over 30/30/6 vertex pairs — GPT 2026-11-16: THEOREM (Q161j log); full Q161b remains open.
 
 - [x] Q161k [compute] (Q161b bounded original hidden-source stacked background rank): twelve native vertex-local Jacobians stack to rank 11, with uniform common kernel — GPT 2026-11-16: THEOREM (Q161k log); full 24-slice lift still open.
 
 - [x] Q161l [compute] (Q161b bounded six-axis native QP conjugacy test): stacked ranks 32,48,56,60,62,63, surviving Walsh parity — GPT 2026-11-16: THEOREM (Q161l log); actual 24-slice source map still open.
-- [ ] Q161m [compute] (Q161b native physical source frontier): locate the original five-solid/24-clock H64-to-vertex incidence, calculate its action on Walsh parity and verify Q96 Ward.
 
 
 - [x] Q161e [compute] (Q161b bounded native-source subtask): exact original hidden projector ranks 4+4 and one-slice 32-kernel rank bottleneck — GPT 2026-11-15: OBSTRUCTION (Q161e log); 24-slice physical lift remains Q161b.
@@ -358,6 +360,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 06:16 UTC — GPT — Gate B/D — Q161n original Q/P parity-source selection
+- Task: Q161m bounded upstream test using original Q161l Q/P; one-bit Walsh-character source diagnostic.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: QP w63=0, but ||QP D0 w63||²=64/9 exactly, while ||QP Dj w63||²=0 for j=1..5. D0 is a conditional diagnostic, not a physically derived five-solid source.
+- Evidence: research.q161n_parity_source; standalone Fraction certificate executed locally, exit 0; CI pending.
+- Dead ends: downstream-only maps remain unable to lift w63; a scalar Q96 commute is not full Ward verification.
+- Next step: Q161o [compute] extract actual five-solid/24-clock H64-to-vertex source and test its bit-0 Walsh component and Q96 Ward.
+
 
 ### 2026-11-16 04:16 UTC — GPT — Q161b — Q161l exact six-axis native QP orientation certificate
 - Task: Q161l [compute], bounded exact Q161a original dyadic Q and 15-pair-flip P across six bit-axis conjugacies.
