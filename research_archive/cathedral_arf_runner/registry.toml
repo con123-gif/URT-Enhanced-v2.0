@@ -1800,3 +1800,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161v_six_axis_face/Q161V_SIX_AXIS.py"
 timeout = 120
+
+[[check]]
+id = "research.q161w_axis_subsets"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-16_q161w_axis_subsets/Q161W_AXIS_SUBSETS.py"
+timeout = 120

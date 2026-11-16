@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161w [compute] (Q161o bounded original axis-subset rank census) — GPT 2026-11-16: THEOREM; all four-axis subsets injective; physical Q161o remains open.
+- [ ] Q161x [compute] (Q161o bounded geometry) classify the ten rank-20 three-axis subsets intrinsically from original antipodal-pair geometry; no physical closure.
+
 - [x] Q161v [compute] (Q161o bounded six-axis original face parity readout): rank 20 stacked; GPT 2026-11-16 THEOREM, physical source open.
 
 - [x] Q161u [compute] (Q161o native face Gram exact spectrum) — GPT 2026-11-16: THEOREM; see Q161u log, full physical Q161o remains open.
@@ -372,6 +375,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 18:12 UTC — GPT — Gate A/B — Q161w exact native axis-subset ranks
+- Task: Q161o bounded native face-history parity response; enumerate every subset of the six original antipodal-axis Q_i readouts.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: R_i=Q_i P diag(w_63) M has stacked rank distributions k=1:{10:6}, k=2:{16:15}, k=3:{18:10,20:10}, k=4:{20:15}, k=5:{20:6}, k=6:{20:1}; all four-axis subsets are injective, no two-axis subset is.
+- Evidence: research.q161w_axis_subsets; standalone SymPy script executed locally exit 0, exact assertions; CI verdict pending on this commit.
+- Dead ends: None; rank sufficiency is conditional on the specified Q161a readouts, not physical source identification.
+- Next step: Q161x [compute] characterize the ten injective three-axis subsets by intrinsic antipodal-pair geometry; physical Q161o and Q96 Ward remain open.
+
 
 ### 2026-11-16 17:20 UTC — GPT — Gate Q161o — Q161v six-axis native face parity completeness
 - Task: Q161o bounded original icosahedral face-to-history incidence under six native Q161a axis readouts.
