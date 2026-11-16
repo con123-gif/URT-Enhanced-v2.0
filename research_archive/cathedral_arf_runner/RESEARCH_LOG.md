@@ -5,6 +5,11 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161j [compute] (Q161b bounded two-vertex source-orbit rank test): exact original hidden Jacobian ranks 6/7/8 over 30/30/6 vertex pairs — GPT 2026-11-16: THEOREM (Q161j log); full Q161b remains open.
+
+- [ ] Q161k [compute] (Q161b next source-coupling frontier): recover native 24-slice history-to-vertex incidence and test its action on Q161a 32 pair differences with Q96 Ward preservation.
+
+
 - [x] Q161e [compute] (Q161b bounded native-source subtask): exact original hidden projector ranks 4+4 and one-slice 32-kernel rank bottleneck — GPT 2026-11-15: OBSTRUCTION (Q161e log); 24-slice physical lift remains Q161b.
 
 - [x] Q161f [compute] (Q161b factorized 24-clock subtask): original hidden projector tensor clock difference rank 184, hidden-clock nullity 8 — GPT 2026-11-15: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (Q161f log); full source-dependent Jacobian remains Q161b.
@@ -350,6 +355,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 01:13 UTC — GPT — Q161b — Q161j exact native two-vertex hidden-source rank strata
+- Task: Q161j [compute], bounded Q161b subtask: original icosahedral P3/P5 quadratic source Jacobian on all 66 two-vertex configurations.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For v=e_i+e_j, 30 edges have rank J=6, 30 nonedges rank J=7, six nonedges rank J=8; all have separate ranks rank(P3J)=rank(P5J)=4. Thus each irrep's full rank does not guarantee their joint rank.
+- Evidence: research.q161j_two_vertex_hidden; executed locally in GPT container with exact SymPy arithmetic, exit 0, asserted full 66-pair histogram; CI pending this commit.
+- Dead ends: single-source rank alone cannot establish Q161a 32-kernel lift or Q96 Ward; source-dependent 24-slice map still missing.
+- Next step: Q161k [compute]: identify the original 24-slice history-to-vertex incidence and test whether it reaches rank-eight two-vertex strata on the 32 pair differences, preserving Q96 Ward.
+
 
 ### 2026-11-16 00:18 UTC — GPT — Gate B/D — Q161i native hidden-source second-order span
 - Task: Q161b bounded original-operator subtask: determine whether the Q161g uniform-input zero Jacobian hides nonzero second-order channels.

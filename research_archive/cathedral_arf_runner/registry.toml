@@ -1728,3 +1728,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161i_hidden_second_order/Q161I_HESSIAN_SPAN.py"
 timeout = 120
+
+[[check]]
+id = "research.q161j_two_vertex_hidden"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-16_q161j_two_vertex_hidden/Q161J_TWO_VERTEX_JACOBIAN.py"
+timeout = 120
