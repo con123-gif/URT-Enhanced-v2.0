@@ -7,7 +7,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161j [compute] (Q161b bounded two-vertex source-orbit rank test): exact original hidden Jacobian ranks 6/7/8 over 30/30/6 vertex pairs — GPT 2026-11-16: THEOREM (Q161j log); full Q161b remains open.
 
-- [ ] Q161k [compute] (Q161b next source-coupling frontier): recover native 24-slice history-to-vertex incidence and test its action on Q161a 32 pair differences with Q96 Ward preservation.
+- [x] Q161k [compute] (Q161b bounded original hidden-source stacked background rank): twelve native vertex-local Jacobians stack to rank 11, with uniform common kernel — GPT 2026-11-16: THEOREM (Q161k log); full 24-slice lift still open.
+
+- [ ] Q161l [compute] (Q161b next frontier): recover native 24-slice H64-to-vertex incidence; test its rank on 32 Q161a pair differences and Q96 Ward.
 
 
 - [x] Q161e [compute] (Q161b bounded native-source subtask): exact original hidden projector ranks 4+4 and one-slice 32-kernel rank bottleneck — GPT 2026-11-15: OBSTRUCTION (Q161e log); 24-slice physical lift remains Q161b.
@@ -355,6 +357,14 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 02:17 UTC — GPT — Q161b — Q161k exact stacked native source-background injectivity
+- Task: Q161k [compute], bounded original icosahedral hidden-source multi-background derivative calculation.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Native J_k=2 P_h diag(C e_k) C at 12 vertex-local backgrounds has rank 4 each; ordered prefix stack ranks [4,7,10,11,11,11,11,11,11,11,11,11], and all-source common kernel exactly span(1_12). Four chosen backgrounds detect the entire 11D nonuniform vertex quotient.
+- Evidence: research.q161k_native_stacked_sources; standalone SymPy exact certificate executed GPT container exit 0. CI verdict pending new commit.
+- Dead ends: the stack is not the missing original 24-slice H64 history-to-vertex incidence and does not prove 32-kernel lifting or Q96 Ward.
+- Next step: Q161l [compute]: recover native H64-to-vertex 24-slice incidence, evaluate on 32 Q161a pair differences and test Q96 Ward.
 
 ### 2026-11-16 01:13 UTC — GPT — Q161b — Q161j exact native two-vertex hidden-source rank strata
 - Task: Q161j [compute], bounded Q161b subtask: original icosahedral P3/P5 quadratic source Jacobian on all 66 two-vertex configurations.

@@ -1736,3 +1736,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161j_two_vertex_hidden/Q161J_TWO_VERTEX_JACOBIAN.py"
 timeout = 120
+
+[[check]]
+id = "research.q161k_native_stacked_sources"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-16_q161k_native_stacked_sources/Q161K_NATIVE_STACK.py"
+timeout = 120
