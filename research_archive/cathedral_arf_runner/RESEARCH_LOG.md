@@ -6,7 +6,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161w [compute] (Q161o bounded original axis-subset rank census) — GPT 2026-11-16: THEOREM; all four-axis subsets injective; physical Q161o remains open.
-- [ ] Q161x [compute] (Q161o bounded geometry) classify the ten rank-20 three-axis subsets intrinsically from original antipodal-pair geometry; no physical closure.
+- [x] Q161x [compute] (Q161o bounded geometry) — GPT 2026-11-16: THEOREM, rank 20 iff three axes support an original icosahedral face; otherwise rank 18; physical Q161o open.
 
 - [x] Q161v [compute] (Q161o bounded six-axis original face parity readout): rank 20 stacked; GPT 2026-11-16 THEOREM, physical source open.
 
@@ -1878,3 +1878,6 @@ commit as your result.
 
 ### 2026-11-15 — GPT Q161f: factorized original hidden/24-clock difference rank (CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING)
 Original Q161e face-vertex C, P3/P5 and 24-track cyclic forward difference D24: exact ranks 12, 4+4 and 23. Therefore rank((P3+P5) tensor D24)=184, nullity 296 on 20x24 face-clock carrier; on 8x24 hidden-clock carrier nullity 8 (constant clock modes). This is only the specified factorized difference channel, NOT the missing full source-dependent five-solid/H64 24-slice Jacobian; no Q96 Ward claim or physical gate closure. GPT executed standalone SymPy/Scipy certificate locally, exit 0. Source: research_archive/2026-11-15_q161f_clock_hidden_rank/Q161F_CLOCK_HIDDEN_RANK.py. Next question: what is the original source-dependent 24-slice Jacobian's rank on Q161a's 32 pair differences, and does it obey Q96 Ward identities?
+
+### 2026-11-16 — Q161x — GPT — THEOREM
+Status: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original icosahedral antipodal-pair face geometry yields ten axis triples supporting faces. Exact Q161w Q_i P diag(w63) M stacks have rank 20 iff the chosen triple is a face-axis support; all other triples rank 18. Complementary triples have opposite ranks. Evidence: standalone SymPy Q161X_AXIS_GEOMETRY.py executed locally, exit 0; all 20 cases asserted. No measured or fitted inputs; no physical gate closed. Next: does the original full five-solid/190-cochain/24-clock H64 source select one of ten geometrically active triples and preserve all Q96 Ward generators?
