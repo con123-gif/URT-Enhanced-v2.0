@@ -199,7 +199,7 @@ timeout = 300
 
 [[check]]
 id = "research.sandbox_bound_scripts"
-stage = "research"
+stage = "research_a"
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-10_sandbox_bound_scripts/classify_sandbox_bound_scripts.py"
@@ -207,7 +207,7 @@ timeout = 60
 
 [[check]]
 id = "research.missing_intermediates"
-stage = "research"
+stage = "research_b"
 # Q26: historical producer map + Q13 companion SHA256 integrity (2 restored / 8 absent).
 claim = "independent"
 gating = true
@@ -217,7 +217,7 @@ timeout = 60
 
 [[check]]
 id = "research.q6_repair_structural_regression"
-stage = "research"
+stage = "research_c"
 claim = "regression"
 gating = true
 run = "python research_archive/2026-11-11_q6_repair/q6_recovery_selftest.py"
@@ -226,7 +226,7 @@ timeout = 60
 # ------------------------------------------------------------------ research (independent calculations)
 [[check]]
 id = "research.independent_native_five_k2"
-stage = "research"
+stage = "research_d"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-10_independent_native_k2/independent_native_k2.py"
@@ -234,7 +234,7 @@ timeout = 300
 
 [[check]]
 id = "research.unsigned_axis_order_k2"
-stage = "research"
+stage = "research_a"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-10_axis_order_k2/axis_order_k2.py"
@@ -242,7 +242,7 @@ timeout = 300
 
 [[check]]
 id = "research.signed_a5_covariance"
-stage = "research"
+stage = "research_b"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-10_signed_a5_covariance/signed_a5_covariance.py"
@@ -250,7 +250,7 @@ timeout = 300
 
 [[check]]
 id = "research.signed_dictionary_classes"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-10_signed_dictionary_classes/signed_dictionary_classes.py"
@@ -258,7 +258,7 @@ timeout = 300
 
 [[check]]
 id = "research.native_signed_dictionary_k3"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-10_signed_dictionary_k3/native_k3_collision.py"
@@ -266,7 +266,7 @@ timeout = 300
 
 [[check]]
 id = "research.induced_photon_logdet_kernel"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_LOGDET_KERNEL_2026_11_10.py"
@@ -274,7 +274,7 @@ timeout = 300
 
 [[check]]
 id = "research.induced_photon_vacuum_selection"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-10_induced_photon/INDUCED_PHOTON_VACUUM_SELECTION_2026_11_10.py 0"
@@ -282,7 +282,7 @@ timeout = 300
 
 [[check]]
 id = "research.native_signed_dictionary_k23"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_signed_dictionary_k23/native_joint_k23.py"
@@ -290,7 +290,7 @@ timeout = 300
 
 [[check]]
 id = "research.icosahedral_induced_photon"
-stage = "research"
+stage = "research_d"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_icosahedral_induced_photon/ICOSA_INDUCED_PHOTON_2026_11_11.py"
@@ -298,7 +298,7 @@ timeout = 300
 
 [[check]]
 id = "research.hodge_dirac_flux_vacuum"
-stage = "research"
+stage = "research_a"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_icosahedral_induced_photon/HODGE_DIRAC_FLUX_VACUUM_2026_11_11.py 3"
@@ -306,7 +306,7 @@ timeout = 300
 
 [[check]]
 id = "research.hodge_dirac_photon_kernel"
-stage = "research"
+stage = "research_b"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_icosahedral_induced_photon/HODGE_DIRAC_PHOTON_KERNEL_2026_11_11.py"
@@ -314,7 +314,7 @@ timeout = 600
 
 [[check]]
 id = "research.hodge_dirac_19_mode_photon"
-stage = "research"
+stage = "research_c"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_icosahedral_induced_photon/HODGE_DIRAC_19_MODE_PHOTON_2026_11_11.py"
@@ -322,7 +322,7 @@ timeout = 600
 
 [[check]]
 id = "research.incidence_photon_a5_sectors"
-stage = "research"
+stage = "research_d"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_icosahedral_induced_photon/INCIDENCE_PHOTON_A5_SECTORS_2026_11_11.py"
@@ -330,7 +330,7 @@ timeout = 600
 
 [[check]]
 id = "research.platonic_hidden_sector_link"
-stage = "research"
+stage = "research_a"
 claim = "independent"
 gating = false
 run = "python -u research_archive/2026-11-11_hidden_sector_link/HIDDEN_SECTOR_LINK_2026_11_11.py"
@@ -338,7 +338,7 @@ timeout = 300
 
 [[check]]
 id = "research.q15_native_namespace_repair"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q15_ci_repair/q15_ci_repair_certificate.py"
@@ -346,7 +346,7 @@ timeout = 300
 
 [[check]]
 id = "research.chaos_invariant_refinement_audit"
-stage = "research"
+stage = "research_c"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_arf_origin/CHAOS_INVARIANT_REFINEMENT_AUDIT_2026_11_11.py"
@@ -354,7 +354,7 @@ timeout = 300
 
 [[check]]
 id = "research.hidden_parity_delta_selection"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_hidden_parity/HIDDEN_PARITY_DELTA_SELECTION_2026_11_11.py"
@@ -362,7 +362,7 @@ timeout = 300
 
 [[check]]
 id = "research.q4_native_matter_map"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q4_native_matter_map/Q4_NATIVE_MATTER_MAP_2026_11_11.py"
@@ -378,7 +378,7 @@ timeout = 1200
 
 [[check]]
 id = "research.registry_maxwell_test"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = false
 run = "python -u research_archive/2026-11-11_registry_induced_vacuum/REGISTRY_MAXWELL_TEST_2026_11_11.py"
@@ -386,7 +386,7 @@ timeout = 600
 
 [[check]]
 id = "research.native_signed_dictionary_k4"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_native_k4_collision/native_k4_collision.py"
@@ -394,7 +394,7 @@ timeout = 300
 
 [[check]]
 id = "research.q23_photon_gauge_typing"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q23_photon_gauge_typing/Q23_PHOTON_GAUGE_TYPING_2026_11_11.py"
@@ -402,7 +402,7 @@ timeout = 300
 
 [[check]]
 id = "research.q3_twirled_chronology_classes"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q3_twirled_chronology_classes/Q3_TWIRLED_CHRONOLOGY_CLASSES_2026_11_11.py"
@@ -410,7 +410,7 @@ timeout = 600
 
 [[check]]
 id = "research.q7_review_q6_cumulants"
-stage = "research"
+stage = "research_b"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_q7_review/Q7_REVIEW_Q6_CUMULANTS_A5_MIXING_2026_11_11.py"
@@ -418,7 +418,7 @@ timeout = 300
 
 [[check]]
 id = "research.candidate1_induced_em_icosahedron"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = false
 run = "python -u research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_INDUCED_EM_ICOSAHEDRON_2026_11_11.py"
@@ -426,7 +426,7 @@ timeout = 300
 
 [[check]]
 id = "research.q25_4d_a5_photon"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q25_4d_a5_photon/Q25_4D_A5_PHOTON_2026_11_11.py"
@@ -434,7 +434,7 @@ timeout = 300
 
 [[check]]
 id = "research.candidate1_4d_holonomy_instability"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = false
 run = "python -u research_archive/2026-11-11_candidate_induced_em/CANDIDATE1_4D_HOLONOMY_INSTABILITY_2026_11_11.py"
@@ -442,7 +442,7 @@ timeout = 300
 
 [[check]]
 id = "research.q22_tetrahedron_exact_kernel"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q22_tetrahedron_exact/q22_exact_tetrahedron_kernel.py"
@@ -458,7 +458,7 @@ timeout = 300
 
 [[check]]
 id = "research.q27_twirled_orientation"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q27_twirled_orientation/q27_twirled_orientation.py"
@@ -466,7 +466,7 @@ timeout = 120
 
 [[check]]
 id = "research.q28_twirled_third_trace"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q28_twirled_third_trace/q28_twirled_third_trace.py"
@@ -474,7 +474,7 @@ timeout = 180
 
 [[check]]
 id = "research.q29_twirled_fourth_trace"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q29_twirled_fourth_trace/q29_twirled_fourth_trace.py"
@@ -498,7 +498,7 @@ timeout = 300
 
 [[check]]
 id = "research.q33_singular_spectrum"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q33_singular_spectrum/q33_singular_spectrum.py"
@@ -506,7 +506,7 @@ timeout = 180
 
 [[check]]
 id = "research.q34_seventh_mixed_words"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q34_seventh_mixed_words/q34_seventh_mixed_words.py"
@@ -522,7 +522,7 @@ timeout = 300
 
 [[check]]
 id = "research.q35_eighth_mixed_words"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q35_eighth_mixed_words/q35_eighth_mixed_words.py"
@@ -530,7 +530,7 @@ timeout = 180
 
 [[check]]
 id = "research.q32_mixed_trace_meaning"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q32_mixed_trace_meaning/q32_mixed_trace_meaning.py"
@@ -538,7 +538,7 @@ timeout = 300
 
 [[check]]
 id = "research.q37_primitive_q2_trace"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q37_primitive_chronology/q37_primitive_q2_trace.py"
@@ -546,7 +546,7 @@ timeout = 120
 
 [[check]]
 id = "research.q38_primitive_q2_allpairs"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q38_primitive_q2_allpairs/q38_primitive_q2_allpairs.py"
@@ -554,7 +554,7 @@ timeout = 120
 
 [[check]]
 id = "research.q39_eight_image_q2"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q39_eight_image_q2/q39_eight_image_q2.py"
@@ -562,7 +562,7 @@ timeout = 120
 
 [[check]]
 id = "research.q40_cross_orbit_q2"
-stage = "research"
+stage = "research_a"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_q40_cross_orbit_q2/q40_cross_orbit_q2.py"
@@ -570,7 +570,7 @@ timeout = 120
 
 [[check]]
 id = "research.q40_review_operator_equality"
-stage = "research"
+stage = "research_b"
 claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-11_q40_review_operator_equality/q40_review_operator_equality.py"
@@ -579,7 +579,7 @@ timeout = 120
 
 [[check]]
 id = "research.q42_middle_flip_orbitals"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q42_middle_flip/q42_mask_orbitals.py"
@@ -587,7 +587,7 @@ timeout = 120
 
 [[check]]
 id = "research.q43_native_character_criterion"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q43_character_criterion/q43_character_certificate.py"
@@ -595,7 +595,7 @@ timeout = 120
 
 [[check]]
 id = "research.q44_middle_flip_symmetry"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-11_q44_middle_flip_symmetry/q44_middle_flip_symmetry.py"
@@ -603,7 +603,7 @@ timeout = 120
 
 [[check]]
 id = "research.q45_zero_coset_orders"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q45_zero_coset_orders/q45_zero_coset_orders.py"
@@ -611,7 +611,7 @@ timeout = 120
 
 [[check]]
 id = "research.q46_rotation_mechanism"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q46_rotation_mechanism/q46_rotation_mechanism.py"
@@ -787,7 +787,7 @@ claim = "independent"
 # Q52: original all-five nonlinear hidden-source span and unitary clock rigidity
 [[check]]
 id = "research.q52_native_source_unitary"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q52_source_unitary/Q52_NATIVE_SOURCE_UNITARY_CLOCK.py"
@@ -796,7 +796,7 @@ timeout = 300
 # Q53: native 190-cochain, nonlinear 64-history Schur, 24 Wilson-link current
 [[check]]
 id = "research.q53_native_onshell_ward_clock"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q53_native_ward_current/Q53_NATIVE_ONSHELL_WARD_CLOCK.py"
@@ -805,7 +805,7 @@ timeout = 300
 # Q56: original all-five 190/64/24 nonlinear source-free stationary clock
 [[check]]
 id = "research.q56_full_stationary_current"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q56_nonlinear_stationary/Q56_FULL_STATIONARY_CURRENT_VERIFY.py"
@@ -814,7 +814,7 @@ timeout = 300
 # Q58: analytic Hessian-response curvature of ORIGINAL all-five native action
 [[check]]
 id = "research.q58_native_coupling_curvature"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q58_native_geometric_coupling/Q58_NATIVE_COUPLING_CURVATURE_VERIFY.py"
@@ -823,7 +823,7 @@ timeout = 300
 # Q57 original five-solid geometric energy-shell clock test
 [[check]]
 id = "research.q57_native_clock_geometry"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q57_geometric_clock/Q57_NATIVE_CLOCK_GEOMETRY_VERIFY.py"
@@ -832,7 +832,7 @@ timeout = 300
 # Q59 primitive recurrence / 64-history transfer / 24-clock: no unique conservative time generator
 [[check]]
 id = "research.q59_time_generator"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q59_time_generator/Q59_TIME_GENERATOR_CERTIFICATE.py"
@@ -841,7 +841,7 @@ timeout = 300
 # Q61 inverse-limit completion vs the 2^32 history lifts; A5 x <I,R,S>-invariant lift census
 [[check]]
 id = "research.q61_inverse_limit_lifts"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q61_inverse_limit_lifts/Q61_INVERSE_LIMIT_LIFTS_CERTIFICATE.py"
@@ -849,7 +849,7 @@ timeout = 300
 
 [[check]]
 id = "research.q62_lift_carrier"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q62_lift_carrier/Q62_LIFT_CARRIER_CERTIFICATE.py"
@@ -857,7 +857,7 @@ timeout = 300
 
 [[check]]
 id = "research.q64_conditioned_selection"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-12_q64_conditioned_selection/Q64_CONDITIONED_SELECTION_CERTIFICATE.py"
@@ -866,7 +866,7 @@ timeout = 300
 # Q65 (ACTIVE PROBLEM A, attempt A2): horizon-n / Doob / one-step Bayes / uniform-marginal bridge conditionings of the Q3 chronology
 [[check]]
 id = "research.q65_horizon_selection"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-13_q65_horizon_conditioned_selection/Q65_HORIZON_SELECTION_CERTIFICATE.py"
@@ -875,7 +875,7 @@ timeout = 300
 # Q72 (ACTIVE PROBLEM A, A2b): native time reversal R and the uniform invariant measure single out the bridge
 [[check]]
 id = "research.q72_time_reversal_bridge"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py"
@@ -884,7 +884,7 @@ timeout = 300
 # Q73 (A4 second half): bridge on the joint history x 24-clock pieces and on the U_h carrier support
 [[check]]
 id = "research.q73_joint_clock_bridge"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-13_q73_joint_clock_bridge/Q73_JOINT_CLOCK_BRIDGE_CERTIFICATE.py"
@@ -893,7 +893,7 @@ timeout = 300
 # Q77 (A4): Q73 Part 3 exact (Krawczyk enclosures, all 768 classes); the 4+4 split is S_D0 vs its time reverse
 [[check]]
 id = "research.q77_exact_clock_split"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py"
@@ -902,7 +902,7 @@ timeout = 300
 # Q82 (A3): forward-minus-reverse clock bridge has period-6 bin profile; selected-dictionary Kbar quartet source weights (4,2,2,0) exactly, c-independent
 [[check]]
 id = "research.q82_oriented_source_weights"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-13_q82_oriented_source_weights/Q82_ORIENTED_SOURCE_WEIGHTS_CERTIFICATE.py"
@@ -911,7 +911,7 @@ timeout = 300
 # Q85 chronology coefficient: c-blindness for every A5 x <C>-invariant penalty; c = parity-history mass
 [[check]]
 id = "research.q85_chronology_coefficient"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py"
@@ -920,7 +920,7 @@ timeout = 300
 # Q55 original Hopf/2I charged Wilson lattice: 600-cell source, Chern flux, kinematic Ward orders
 [[check]]
 id = "research.q55_hopf_wilson_ward"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q55_hopf_wilson/Q55_HOPF_WILSON_CHARGED_OPERATOR_VERIFY.py"
@@ -929,7 +929,7 @@ timeout = 300
 # Q60 exact frame-map interface, native all-five/H64 to 2I/Hopf charged carriers
 [[check]]
 id = "research.q60_hopf_h64_frame"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q60_hopf_h64_frame/Q60_HOPF_H64_ALL_FIVE_FRAME_INTERFACE_VERIFY.py"
@@ -986,7 +986,7 @@ missing = "Requires A–E."
 # Conditional modular clock-rate and source-flux readout (2026-11-12)
 [[check]]
 id = "research.native_clock_rate_flux_quadrature"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = false
 run = "python research_archive/2026-11-12_native_clock_rate/NATIVE_CLOCK_RATE_AND_FLUX_QUADRATURE_VERIFY.py"
@@ -994,7 +994,7 @@ timeout = 240
 
 [[check]]
 id = "research.q49_fixed_source_gauge_obstruction"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-12_q49_fixed_source_gauge/q49_fixed_source_gauge_obstruction.py"
@@ -1002,7 +1002,7 @@ timeout = 120
 
 [[check]]
 id = "research.q49_haar_diagonal_transport"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-12_q49_haar_diagonal_transport/q49_haar_diagonal_transport.py"
@@ -1010,7 +1010,7 @@ timeout = 120
 
 [[check]]
 id = "research.q49_native_ward_history_map"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q49_native_ward_history_map/q49_native_ward_history_map.py"
@@ -1018,7 +1018,7 @@ timeout = 180
 
 [[check]]
 id = "research.q50_uniform_history_gauge"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-12_q50_history_gauge/q50_uniform_history_obstruction.py"
@@ -1026,7 +1026,7 @@ timeout = 120
 
 [[check]]
 id = "research.q53_v61_internal_symmetry"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_gate_b_v61_internal_symmetry/gate_b_v61_internal_symmetry.py"
@@ -1034,7 +1034,7 @@ timeout = 180
 
 [[check]]
 id = "research.hopf_charged_carrier"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = false
 run = "python -u research_archive/2026-11-12_hopf_charged_carrier/hopf_charged_carrier.py"
@@ -1044,7 +1044,7 @@ timeout = 180
 # Q69 original Q2 reversible lift / 24-clock exact spectrum
 [[check]]
 id = "research.q69_native_lift_clock_spectrum"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-13_q69_native_lift_clock_spectrum/Q69_NATIVE_LIFT_CLOCK_SPECTRUM.py"
@@ -1052,7 +1052,7 @@ timeout = 60
 
 [[check]]
 id = "research.q70_native_clock_fixed_space"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py"
@@ -1060,7 +1060,7 @@ timeout = 60
 
 [[check]]
 id = "research.q68_native_bridge_polytope"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q68_native_bridge/Q68_NATIVE_BRIDGE_POLYTOPE.py"
@@ -1068,7 +1068,7 @@ timeout = 60
 
 [[check]]
 id = "research.q64_a2d_reversible_normalizer"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_q64_a2d/Q64_A2D_REVERSIBLE_NORMALIZER.py"
@@ -1076,7 +1076,7 @@ timeout = 60
 
 [[check]]
 id = "research.q64_a2c_native_lift_partition"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-12_q64_a2c_native_lift_partition/Q64_A2C_NATIVE_LIFT_PARTITION.py"
@@ -1084,7 +1084,7 @@ timeout = 60
 
 [[check]]
 id = "research.q71_q2_clock_mixing"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py"
@@ -1092,7 +1092,7 @@ timeout = 180
 
 [[check]]
 id = "research.q64_a2b_native_path_likelihood"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-12_q64_a2b_native_path/Q64_A2B_NATIVE_PATH_LIKELIHOOD.py"
@@ -1100,7 +1100,7 @@ timeout = 60
 
 [[check]]
 id = "research.q64_a2_native_conditioning"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-12_q64_a2_native_conditioning/Q64_A2_NATIVE_CONDITIONING.py"
@@ -1108,7 +1108,7 @@ timeout = 60
 
 [[check]]
 id = "research.q60_native_coordinate_selection"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-12_q60_coordinate_selection/Q60_NATIVE_COORDINATE_SELECTION.py"
@@ -1116,7 +1116,7 @@ timeout = 180
 
 [[check]]
 id = "research.q60_charge_tensor_ward"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_q60_charge_tensor_ward/Q60_CHARGE_TENSOR_WARD.py"
@@ -1124,7 +1124,7 @@ timeout = 60
 
 [[check]]
 id = "research.cross_archive_photon_join"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_cross_archive_photon_join/CROSS_ARCHIVE_PHOTON_JOIN_AUDIT.py"
@@ -1134,7 +1134,7 @@ timeout = 60
 # Q71 repair 2026-11-13: proper-rotation determinant regression, locally re-executed.
 [[check]]
 id = "research.q71_native_q3_clock"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py"
@@ -1142,7 +1142,7 @@ timeout = 180
 
 [[check]]
 id = "research.q75_native_q3_sigma_commutator"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-13_q75_native_q3_sigma/Q75_NATIVE_Q3_SIGMA.py"
@@ -1150,7 +1150,7 @@ timeout = 180
 
 [[check]]
 id = "research.q76_native_hidden_commutator_overlap"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-13_q76_hidden_commutator/Q76_NATIVE_HIDDEN_COMMUTATOR.py"
@@ -1158,7 +1158,7 @@ timeout = 180
 
 [[check]]
 id = "research.q78_eight_dictionary_hidden"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q78_eight_dictionary_hidden/Q78_EIGHT_DICTIONARY_HIDDEN.py"
@@ -1166,7 +1166,7 @@ timeout = 180
 
 [[check]]
 id = "research.q79_native_nonlinear_pair_source"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q79_native_pair_source/Q79_NATIVE_PAIR_SOURCE.py"
@@ -1174,7 +1174,7 @@ timeout = 180
 
 [[check]]
 id = "research.q80_native_hidden_source_selection"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q80_native_hidden_source/Q80_NATIVE_HIDDEN_SOURCE.py"
@@ -1182,7 +1182,7 @@ timeout = 180
 
 [[check]]
 id = "research.q81_native_all_five_source_radical"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q81_native_source/Q81_NATIVE_SOURCE.py"
@@ -1191,7 +1191,7 @@ timeout = 180
 [[check]]
 # Q83 CI repair GPT 2026-11-13: unbound antipodal lambda j -> candidate k; local exit 0; CI pending.
 id = "research.q83_native_hidden_clock_quotient"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py"
@@ -1200,7 +1200,7 @@ timeout = 180
 # Q89 locally reproduced exact native five-solid source constraints; CI must execute independently.
 [[check]]
 id = "research.q89_exact_source_all_dictionaries"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q89_exact_source/Q89_EXACT_SOURCE.py"
@@ -1208,7 +1208,7 @@ timeout = 180
 
 [[check]]
 id = "research.q90_exact_native_fourier"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py"
@@ -1246,7 +1246,7 @@ timeout = 300
 
 [[check]]
 id = "research.q91_bridge_loss_sequence"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-14_q91_bridge_loss_sequence/Q91_BRIDGE_LOSS_SEQUENCE.py"
@@ -1254,7 +1254,7 @@ timeout = 300
 
 [[check]]
 id = "research.q92_clock_overlap_reading"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-14_q92_clock_overlap_reading/Q92_CLOCK_OVERLAP_READING.py"
@@ -1279,7 +1279,7 @@ timeout = 1500
 
 [[check]]
 id = "research.q87_coefficient_elimination"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py"
@@ -1287,7 +1287,7 @@ timeout = 90
 
 [[check]]
 id = "research.q87b_native_bridge_parity_rayleigh"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py"
@@ -1295,7 +1295,7 @@ timeout = 60
 
 [[check]]
 id = "research.q87c_native_bridge_singular_spectrum"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87c_bridge_singular/Q87C_BRIDGE_SINGULAR.py"
@@ -1303,7 +1303,7 @@ timeout = 60
 
 [[check]]
 id = "research.q87d_native_parity_commutator"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87d_native_parity_commutator/Q87D_NATIVE_PARITY_COMMUTATOR.py"
@@ -1311,7 +1311,7 @@ timeout = 120
 
 [[check]]
 id = "research.q87e_native_parity_energy"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87e_parity_energy/Q87E_PARITY_ENERGY.py"
@@ -1319,7 +1319,7 @@ timeout = 90
 
 [[check]]
 id = "research.q87f_native_bridge_trace"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87f_native_trace/Q87F_NATIVE_DIRICHLET_TRACE.py"
@@ -1327,7 +1327,7 @@ timeout = 180
 
 [[check]]
 id = "research.q87g_native_second_moment"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q87g_second_moment/Q87G_NATIVE_SECOND_MOMENT.py"
@@ -1335,7 +1335,7 @@ timeout = 180
 
 [[check]]
 id = "research.q93_primitive_clock_trace"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q93_primitive_clock_response/Q93_NATIVE_MARKOV_CLOCK_TRACE.py"
@@ -1343,7 +1343,7 @@ timeout = 90
 
 [[check]]
 id = "research.q94_native_hidden_clock"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q94_hidden_clock/Q94_NATIVE_HIDDEN_PROJECTED_CLOCK.py"
@@ -1351,7 +1351,7 @@ timeout = 120
 
 [[check]]
 id = "research.q95_source_carrier_exact"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q95_full_five_source/Q95_SOURCE_CARRIER_EXACT.py"
@@ -1359,7 +1359,7 @@ timeout = 120
 
 [[check]]
 id = "research.q95_full_five_numeric"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q95_full_five_source/Q95_ALL_FIVE_NUMERICAL_CHECK.py"
@@ -1367,7 +1367,7 @@ timeout = 90
 
 [[check]]
 id = "research.q96_original_action_mismatch"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q96_original_arf_action/Q96_ORIGINAL_ACTION_REPLACEMENT_AUDIT.py"
@@ -1375,7 +1375,7 @@ timeout = 90
 
 [[check]]
 id = "research.q96_original_source_chebyshev"
-stage = "research"
+stage = "research_c"
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q96_original_arf_action/Q96_ORIGINAL_SOURCE_CHEBYSHEV.py"
@@ -1383,7 +1383,7 @@ timeout = 90
 
 [[check]]
 id = "research.q97_face_locality_exact"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q97_source_locality/Q97_LOCAL_SOURCE_UNIQUENESS.py"
@@ -1391,7 +1391,7 @@ timeout = 120
 
 [[check]]
 id = "research.q97_five_solid_locality"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q97_source_locality/Q97_ALL_FIVE_LOCALITY_RANK.py"
@@ -1399,7 +1399,7 @@ timeout = 90
 
 [[check]]
 id = "research.q98_recovered_asymmetry"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_symmetry_breaking_recovery/ASYMMETRY_NATIVE_CERTIFICATE.py"
@@ -1407,7 +1407,7 @@ timeout = 120
 
 [[check]]
 id = "research.q99_native_parity_rigidity"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q99_parity_rigidity/Q99_PARITY_RIGIDITY.py"
@@ -1415,7 +1415,7 @@ timeout = 90
 
 [[check]]
 id = "research.q101_moving_arf"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q101_moving_arf/MOVING_ARF_DERIVATION.py"
@@ -1423,7 +1423,7 @@ timeout = 120
 
 [[check]]
 id = "research.q101_magnetic_factor"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q101_moving_arf/MAGNETIC_ARF_FACTOR_CERTIFICATE.py"
@@ -1431,7 +1431,7 @@ timeout = 120
 
 [[check]]
 id = "research.q102_born_current"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q102_born_chiral_arf/Q102_BORN_CHIRAL_ARF.py"
@@ -1439,7 +1439,7 @@ timeout = 180
 
 [[check]]
 id = "research.q103_alltime_spectral_counting"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py"
@@ -1447,7 +1447,7 @@ timeout = 180
 
 [[check]]
 id = "research.q105_broken_charged_wilson"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q105_broken_charged_wilson/Q105_MOVING_CHARGED_WARD.py"
@@ -1455,7 +1455,7 @@ timeout = 180
 
 [[check]]
 id = "research.q106_exact_charged_berry"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q106_exact_berry_wilson/Q106_EXACT_BERRY_SPECTRUM.py"
@@ -1463,7 +1463,7 @@ timeout = 180
 
 [[check]]
 id = "research.q106_joined_native_wilson"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q106_exact_berry_wilson/Q106_JOINED_NATIVE_WILSON.py"
@@ -1471,7 +1471,7 @@ timeout = 240
 
 [[check]]
 id = "research.q107_chern_berry_wilson"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q107_berry_topological_photon/Q107_BERRY_CHERN_AND_MAXWELL.py"
@@ -1479,7 +1479,7 @@ timeout = 180
 
 [[check]]
 id = "research.q108_native_born_fisher"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q108_born_fisher_photon/Q108_BORN_FISHER_GAUGE.py"
@@ -1487,7 +1487,7 @@ timeout = 180
 
 [[check]]
 id = "research.q109_full_joined_gauge"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_NATIVE_FULL_HESSIAN.py"
@@ -1503,7 +1503,7 @@ timeout = 300
 
 [[check]]
 id = "research.q111_charge_bundle_period"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q111_global_charge_bundle/Q111_GLOBAL_CHARGE_BUNDLE_PERIOD.py"
@@ -1519,7 +1519,7 @@ timeout = 300
 
 [[check]]
 id = "research.q113_native_mixed_spectral_variance"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q113_mixed_hidden_spectral/Q113_NATIVE_MIXED_SPECTRAL_VARIANCE.py"
@@ -1527,7 +1527,7 @@ timeout = 180
 
 [[check]]
 id = "research.q114_hidden_distance"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q114_hidden_distance/Q114_NATIVE_HIDDEN_PROJECTOR.py"
@@ -1536,7 +1536,7 @@ timeout = 90
 [[check]]
 id = "research.q115_native_a5_four_pole_source"
 # CI #129: native half-turn fixed count 0 (not 16); corrected A5 projector ranks, pending rerun.
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q115_a5_four_pole_source/Q115_A5_FOUR_POLE_SOURCE.py"
@@ -1544,7 +1544,7 @@ timeout = 180
 
 [[check]]
 id = "research.q116_local_wedge_golden_bridge"
-stage = "research"
+stage = "research_b"
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q116_local_hidden_golden_bridge/Q116_EXACT_LOCAL_WEDGE_BRIDGE.py"
@@ -1552,7 +1552,7 @@ timeout = 180
 
 [[check]]
 id = "research.q118_native_complement_spectrum"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q118_complement_spectrum/Q118_NATIVE_COMPLEMENT_SPECTRUM.py"
@@ -1568,7 +1568,7 @@ timeout = 300
 
 [[check]]
 id = "research.q119_native_contact_scale"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q119_native_scale/Q119_NATIVE_SCALE_CERTIFICATE.py"
@@ -1576,7 +1576,7 @@ timeout = 120
 
 [[check]]
 id = "research.q120_moving_reversal_barrier"
-stage = "research"
+stage = "research_a"
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q120_moving_reversal_barrier/Q120_GOLDEN_TUNNEL_BARRIER.py"
@@ -1592,7 +1592,7 @@ timeout = 300
 
 [[check]]
 id = "research.q123_golden_saddle_capacity"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q123_golden_persistence/Q123_GOLDEN_SADDLE_CAPACITY.py"
@@ -1600,7 +1600,7 @@ timeout = 180
 
 [[check]]
 id = "research.q124_native_charged_barrier"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-14_q124_charged_barrier_extension/Q124_NATIVE_CHARGED_BARRIER.py"
@@ -1608,7 +1608,7 @@ timeout = 180
 
 [[check]]
 id = "research.q126_kinetic_clock_no_go"
-stage = "research"
+stage = "research_d"
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-14_q126_no_unique_kinetic_clock/Q126_NO_UNIQUE_CLOCK.py"
@@ -1616,7 +1616,7 @@ timeout = 180
 
 [[check]]
 id = "research.q118b_quartet_multiplicity"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-14_q118b_quartet_multiplicity/Q118B_QUARTET_MULTIPLICITY.py"
@@ -1624,7 +1624,7 @@ timeout = 300
 
 [[check]]
 id = "research.q104_clock_transport"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-15_q104_clock_transport/Q104_CLOCK_TRANSPORT.py"
@@ -1632,7 +1632,7 @@ timeout = 300
 
 [[check]]
 id = "research.q127_unitary_connection"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-15_q127_unitary_connection/Q127_UNITARY_CONNECTION.py"
@@ -1648,7 +1648,7 @@ timeout = 300
 
 [[check]]
 id = "research.q144_shell_equitable_recovery"
-stage = "research"
+stage = "research_d"
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-15_q144_shell_equitable_recovery/Q144_NATIVE_EQUITABLE_CERTIFICATE.py"
@@ -1657,7 +1657,7 @@ timeout = 180
 # 2026-11-15 Q139–Q146 conversation-loss independent recovery
 [[check]]
 id = "research.q139_q146_context_recovery"
-stage = "research"
+stage = "research_a"
 claim = "independent"
 gating = true
 run = "python research_archive/2026-11-15_q146_context_recovery/Q139_Q146_RECOVERY_CERTIFICATE.py"
@@ -1666,7 +1666,7 @@ timeout = 120
 # 2026-11-15 reconstructed Q147 conditional source-weight moment
 [[check]]
 id = "research.q147_weighted_link_recovery"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-15_q147_weighted_link_recovery/Q147_WEIGHTED_LINK_FOURTH_CERTIFICATE.py"
@@ -1675,7 +1675,7 @@ timeout = 60
 # 2026-11-15 actual 4D native Wilson finite gauge curvature and flux instability
 [[check]]
 id = "research.q149_original_528_flux"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-15_q149_physical_curvature/Q149_ORIGINAL_528_CURVATURE_CERTIFICATE.py"
@@ -1683,7 +1683,7 @@ timeout = 120
 
 [[check]]
 id = "research.q160_native_gap_robustness"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-15_q160_native_gap_robustness/Q160_NATIVE_GAP_ROBUSTNESS.py"
@@ -1691,7 +1691,7 @@ timeout = 60
 
 [[check]]
 id = "research.q161_native_gram_spectrum"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-15_q161_native_gram_spectrum/Q161_NATIVE_64_TRANSFER_SPECTRUM.py"
@@ -1699,7 +1699,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161e_native_hidden_rank"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-15_q161e_native_hidden_rank/Q161E_NATIVE_HIDDEN_RANK.py"
@@ -1707,7 +1707,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161f_clock_hidden_rank"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-15_q161f_clock_hidden_rank/Q161F_CLOCK_HIDDEN_RANK.py"
@@ -1715,7 +1715,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161h_hidden_shift"
-stage = "research"
+stage = "research_d"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-15_q161h_hidden_shift/Q161H_HIDDEN_SHIFT_CERTIFICATE.py"
@@ -1723,7 +1723,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161i_hidden_second_order"
-stage = "research"
+stage = "research_a"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161i_hidden_second_order/Q161I_HESSIAN_SPAN.py"
@@ -1731,7 +1731,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161j_two_vertex_hidden"
-stage = "research"
+stage = "research_b"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161j_two_vertex_hidden/Q161J_TWO_VERTEX_JACOBIAN.py"
@@ -1739,7 +1739,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161k_native_stacked_sources"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161k_native_stacked_sources/Q161K_NATIVE_STACK.py"
@@ -1747,7 +1747,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161l_axis_orbit"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161l_axis_orbit/Q161L_AXIS_ORBIT.py"
@@ -1755,7 +1755,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161n_parity_source"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161n_parity_source/Q161N_PARITY_SOURCE.py"
@@ -1763,7 +1763,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161p_full_kernel_upstream"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161p_full_kernel_upstream/Q161P_UPSTREAM_KERNEL.py"
@@ -1771,7 +1771,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161r_parity_source_selection"
-stage = "research"
+stage = "research_c"
 claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161r_parity_source_selection/Q161R_SOURCE_SELECTION.py"
@@ -1779,7 +1779,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161t_native_face_source"
-stage = "research"
+stage = "research_d"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161t_native_face_source/Q161T_NATIVE_FACE_SOURCE.py"
@@ -1787,7 +1787,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161u_native_face_gram"
-stage = "research"
+stage = "research_a"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161u_native_face_gram/Q161U_FACE_GRAM.py"
@@ -1795,7 +1795,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161v_six_axis_face"
-stage = "research"
+stage = "research_b"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161v_six_axis_face/Q161V_SIX_AXIS.py"
@@ -1803,7 +1803,7 @@ timeout = 120
 
 [[check]]
 id = "research.q161w_axis_subsets"
-stage = "research"
+stage = "research_c"
 claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161w_axis_subsets/Q161W_AXIS_SUBSETS.py"

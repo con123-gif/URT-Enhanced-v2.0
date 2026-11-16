@@ -375,6 +375,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+### 2026-11-16 19:19 UTC — GPT — CI #177 research-stage cancellation repair
+- Task: CI FAIL priority; repair 155 missing research check results from cancelled 30-minute research matrix stage before Q161x.
+- Result: INCONCLUSIVE — OPEN (CI infrastructure repair, not a physical result).
+- Statement: The 155 unchanged registered research checks are partitioned into four matrix stages with exact counts (39,39,39,38); no check, assertion, gate, or original Cathedral operator is altered.
+- Evidence: run https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/43926774545 research stage cancelled after 30m18s; other stages succeeded. Connector-side exact registry partition count audit completed. Local certificate execution unavailable (GitHub DNS failure); new CI verdict pending.
+- Dead ends: rerunning all 155 checks in one 30-minute research stage is insufficient; do not misclassify cancelled/no_result checks as mathematical counterexamples.
+- Next step: inspect first partitioned CI verdict; repair any actual assertion failure, then resume Q161x native antipodal-axis geometry.
+
+
 
 ### 2026-11-16 18:12 UTC — GPT — Gate A/B — Q161w exact native axis-subset ranks
 - Task: Q161o bounded native face-history parity response; enumerate every subset of the six original antipodal-axis Q_i readouts.
