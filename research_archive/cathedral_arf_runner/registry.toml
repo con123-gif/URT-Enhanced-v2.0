@@ -1792,3 +1792,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-16_q161u_native_face_gram/Q161U_FACE_GRAM.py"
 timeout = 120
+
+[[check]]
+id = "research.q161v_six_axis_face"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-16_q161v_six_axis_face/Q161V_SIX_AXIS.py"
+timeout = 120

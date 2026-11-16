@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161v [compute] (Q161o bounded six-axis original face parity readout): rank 20 stacked; GPT 2026-11-16 THEOREM, physical source open.
+
 - [x] Q161u [compute] (Q161o native face Gram exact spectrum) — GPT 2026-11-16: THEOREM; see Q161u log, full physical Q161o remains open.
 
 
@@ -370,6 +372,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-16 17:20 UTC — GPT — Gate Q161o — Q161v six-axis native face parity completeness
+- Task: Q161o bounded original icosahedral face-to-history incidence under six native Q161a axis readouts.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: rank M=20; each Q_i P diag(w_63) M has rank 10; their six-axis stack has rank 20 and nullity 0; among twenty three-axis subsets ten have rank 20 and ten rank 18.
+- Evidence: research.q161v_six_axis_face; standalone exact SymPy script executed in GPT local container, exit 0; new CI verdict pending.
+- Dead ends: single-axis face readout has a ten-dimensional kernel; stacked conditional readouts do not identify the physical five-solid/24-clock source.
+- Next step: Q161o — recover native 190-cochain/H64/24 source axis amplitudes and verify full Q96 generator commutators before identifying the stacked map as physical.
+
 
 ### 2026-11-16 16:21 UTC — GPT — Gate Q161o — Q161u exact native face Gram
 - Task: Q161u bounded original Q161t face-to-history parity response spectrum.
