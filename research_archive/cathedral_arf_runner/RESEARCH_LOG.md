@@ -6,7 +6,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161ax [compute] (Q161ad bounded native 30-ground Q101 face covariance) — GPT 2026-11-17: THEOREM exact Σ1=0, Tr Σ=416/25; full physical Q161ad remains OPEN.
-- [ ] Q161ay [compute] (Q161ax NEXT): project exact original face covariance onto six-history and fourteen-null channels, test Q96 Ward compatibility.
+- [x] Q161ay [compute] (Q161ax NEXT): exact six-history covariance and 14-null-channel projection — GPT 2026-11-17: THEOREM, 11 excited invisible directions; Q96 Ward physical coupling remains OPEN.
+- [ ] Q161az [compute] (Q161ay NEXT): construct original Q96 charged source coupling on 11 excited invisible covariance directions; test Ward generators with native 24-clock transport.
 
 - [x] Q161as [compute] (Q161ad bounded native six-readout canonical lift edge energy) — GPT 2026-11-17: THEOREM, Tᵀ(3I−A)T=(16875/64)(I−J/6); 14D physical source and Q96 Ward remain OPEN.
 
@@ -400,6 +401,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 21:12 UTC — GPT — Gate B/D — Q161ay native six-history and invisible face covariance
+- Task: Q161ay original Q101 thirty-ground face covariance projected by native Q161ac six-axis history readout.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: BΣBᵀ=(47104/6328125)(I₆−J₆/6), rank 5; Tr(ΠΣ)=368/75; Tr((I−Π)Σ)=176/15; rank((I−Π)Σ(I−Π))=11 in the 14D null space.
+- Evidence: research.q161ay_native_face_covariance; standalone SymPy executed locally exit 0 on 2026-11-17; previous CI checkpoint #205 PASS, new commit CI pending.
+- Dead ends: Projection alone does not establish Q96 Ward covariance or a physical five-solid/H64/24-clock source; no such identification claimed.
+- Next step: Q161az [compute] build native Q96 charged coupling on the 11 excited invisible covariance directions and test Ward commutators with original 24-clock transport.
+
 
 ### 2026-11-17 20:10 UTC — GPT — Gate B/D — Q161ax exact original Q101 face-source orbit covariance
 - Task: Q161ad bounded native 30-ground face-source second-moment certificate (Q161ax).
