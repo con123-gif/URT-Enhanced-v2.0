@@ -396,6 +396,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Q161 graded NONZERO-FLUX finite vacuum (new construction)
+- Task: Resolve the 72 unstable finite gauge modes of the NEW original Q101/Q125 444×Q96/v61 graded action by solving its own nonlinear determinant, not importing Q152's old ungraded vacuum.
+- Result: THEOREM/NUMERICAL CERTIFICATE — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; continuum physics OPEN.
+- Statement: An explicit 11-link uniform background A=(3π/4×3; −π/4,π/2,π/2,5π/4,π/2,5π/4,5π/4,2π) carries 576 nontrivial triangular fluxes each 3π/2. Q96 3:9 charge multiplicity and exact band-isospectral gradients make it stationary (local gradient 7.65e−11). The ORIGINAL graded finite determinant lowers action by 2,950,228.7979; its full 48×11 native current+seagull Hessian has inertia (481+,0−,47 Ward zeros), min physical eigen 0.0333570 and max Ward relative residual 5.90e−16. Four independent direct 192×192 finite differences confirm at <6e−8 relative error. This finite conditional result removes A=0 instability without regulator or fitted physical data; does not prove photon pole, continuum, physical α, GR/SM or unique H64/24 kinetic law.
+- Evidence: research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_GRADED_NONZERO_FLUX_NATIVE_CERT.py and report; local executed original-formula independent calculations, source-native GitHub CI PENDING.
+- Next step: the same graded nonzero-flux branch at NS=3–6; measure physical transverse photon pole/anisotropy and derive primitive 190/H64/24 kinetic scale without fitting.
+
+
 ### 2026-11-17 — GPT — Q161ad — original Q125 full graded Hessian audit
 - Task: Recheck 48 native v61/Q125 Fourier sectors of new graded conditional determinant.
 - Result: REVIEW / CLOSED INTERNALLY — PHYSICAL IDENTIFICATION PENDING; nature gate OPEN.
