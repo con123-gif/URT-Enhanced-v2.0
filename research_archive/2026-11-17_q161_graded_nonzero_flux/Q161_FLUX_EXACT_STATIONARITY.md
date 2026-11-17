@@ -26,3 +26,15 @@ The original `Q161_GRADED_NONZERO_FLUX_NATIVE_CERT.py` references `k` in `mu2=(k
 
 ## RESUME HERE
 Run the registered native `research.q161_graded_nonzero_flux_native` after this correction. Once (and only once) 481-mode finite result is verified, compute low-momentum photon polarization around this nonzero-flux stationary vacuum for multiple NS using the native 11-link Wilson current and Q125 Q96 mass spectrum, keeping the triangle flux invariant. Determine actual \(Z_t,Z_s\) and \(c_{\rm eff}\) without enforcing isotropy or fitting a regulator. Original ungraded Q152 is not a premise.
+
+## 2026-11-17 further exact upgrade: larger-volume and signed-flux pair
+
+The phase involution extends beyond the 48-site (6\times2^3) box to **every** even spatial side (N_s=2n\) and every antiperiodic temporal length (N_t=6m\), for the same 11 geometric displacement types and the same Astar. On fermion momenta (p_0=\pi(2t+1)/N_t\), (p_i=2\pi n_i/N_s\), set
+\[
+t'=N_t/6-t-1\pmod{N_t},\qquad n_i'=N_s/2-n_i\pmod{N_s}.
+\]
+Then (p_0+p_0'=\pi/3\pmod{2\pi}\) and (p_i+p_i'=\pi\pmod{2\pi}\). Thus for each of the 11 link directions (d_j\), the Wilson phases of charge 1 and 1/3 satisfy (\theta_1(p)+\theta_{1/3}(p')=0\pmod{2\pi}\), as do the two charge-2/3 phases. Hence the Q96 charge multiplicity cancellation of the graded determinant **persists on the full even-volume sequence**. The same involution maps the continuous Brillouin torus to itself; an appropriately defined thermodynamic momentum integral is also stationary. **No Hessian positivity or physical Lorentz invariance follows from stationarity.**
+
+The 12 oriented temporal/spatial triangle classes each carry exactly (3\pi/2\), giving (W_{\rm tri}(Astar)=e^{i(1/3)(3\pi/2)}=i\), while the charge-conjugate background gives (-i\). These configurations are **not gauge-equivalent** because their local minimal-charge Wilson loops differ. Equal (+q/-q\) Q96 multiplicities imply (\Gamma(A)=\Gamma(-A)\), so the two stationary orientations have exactly equal action. This is a **conditional finite gauge-flux doublet**, not established spontaneous CP breaking or baryogenesis.
+
+Independent certificate uses only exact Fraction arithmetic: test volumes ((N_t,N_s)=(6,2),(6,4),(6,6),(12,2),(12,4),(12,6),(18,4),(24,8)\); 409,728 phase congruences and all 12 triangle types passed in the model sandbox. Stored in `Q161_FLUX_EXACT_STATIONARITY.py`. The registered native graded 481-mode CI is separately pending; do not mark it PASS until it executes.

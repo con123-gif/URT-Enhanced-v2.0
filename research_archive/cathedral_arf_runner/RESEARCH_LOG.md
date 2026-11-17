@@ -396,6 +396,11 @@ commit as your result.
 
 ## Log
 
+## 2026-11-17 — GPT Q161 all-volume exact flux theorem
+- Proved exact charge-sector phase involution for all (NT divisible by6, NS even), original 11 directions, fixed Astar. 409,728 rational identity checks on 8 extended lattices; all 12 triangle fluxes 3π/2. Equal-action gauge-inequivalent pair ±Astar has Wilson_q=1/3 = ±i. Stationarity survives the large-volume lattice sequence **conditional on fixed candidate Astar**; stability and photon/GR/SM remain OPEN.
+- Evidence: research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_FLUX_EXACT_STATIONARITY.py, expanded executable. Local PASS. Registered CI will run next orchestrator. This follow-on checkpoint preserves a new theorem found after the previous repair commit.
+
+
 ## 2026-11-17 — GPT Q161 native nonzero-flux continuation (THEOREM + CI REPAIR)
 - Exact all-11-link /48-momentum phase-conjugation theorem at Astar: 1056/1056 rational congruences; charge-1 vs 1/3 gradients cancel using Q96 3:9 multiplicity, q=2/3 self cancels. Works for any nonnegative internal squared masses; proves stationarity of this finite spectral action, not stability. Local standalone certificate exited 0.
 - GitHub prior source-native 481-mode CI FAILED (run 44095436434). Root code bug: undefined k in mu2; repaired using the already frozen k_KMS=Delta/(1+Delta²). No fitted coefficient, no Hessian signs modified. New CI PENDING. Exact stationarity does not establish 481 positive physical modes by itself.
