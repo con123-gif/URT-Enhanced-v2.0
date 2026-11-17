@@ -6,6 +6,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161y [compute] (Q161o bounded native A5 face-axis orbit) — GPT 2026-11-16: THEOREM; ten triples form 2-(6,3,2), A5 orbit 10/stabilizer 6; full physical source open.
+- [ ] Q161ab [compute] (Q161o NEXT): recover original H64/24-clock-to-20-face source projection and calculate its six-axis sum-zero Gram component and Q96 Ward commutators.
+- [x] Q161aa [compute] (Q161z native uniform-face six-readout Gram) — GPT 2026-11-17: THEOREM; exact eigenvalues 32/45, 64/225 (x5); physical source remains open.
 - [ ] Q161z [compute] (Q161o PHYSICAL SOURCE): GPT 2026-11-17 completed bounded native face-uniform incidence subcase (rank-six readouts); full five-solid/190-cochain/24-clock H64 tensor, A5 covariance and Q96 Ward remain OPEN.
 
 - [x] Q161w [compute] (Q161o bounded original axis-subset rank census) — GPT 2026-11-16: THEOREM; all four-axis subsets injective; physical Q161o remains open.
@@ -378,6 +380,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 01:17 UTC — GPT — Q161aa exact native face-readout Gram spectrum
+- Task: Q161z/Q161o [compute], one bounded original face-source six-channel Gram calculation.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: R^T R=(64/225)I_6+(16/225)J_6, eigenvalues 32/45 (x1), 64/225 (x5), determinant (32/45)(64/225)^5; pairwise cosine 1/5.
+- Evidence: research.q161aa_face_readout_gram; original Q161z script imported and exact standalone SymPy assertions executed locally, exit 0; new CI pending.
+- Dead ends: uniform icosahedral face amplitude does not supply missing full five-solid/190/H64/24 physical tensor or Q96 Ward intertwiner.
+- Next step: Q161ab [compute] recover original H64/24-clock to 20-face source projection and test whether its six-axis sum-zero component and Q96 Ward commutators vanish.
+
 
 ### 2026-11-17 00:16 UTC — GPT — Q161z native face-uniform source subcase
 - Task: Q161z [compute], one bounded original icosahedral incidence source calculation.
