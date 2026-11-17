@@ -1872,3 +1872,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-17_q161al_edge_hidden_hodge/Q161AL_EDGE_HIDDEN.py"
 timeout = 120
+
+[[check]]
+id = "research.q161am_joint_face_edge"
+stage = "research_c"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_q161am_joint_face_edge/Q161AM_JOINT_RECONSTRUCTION.py"
+timeout = 120

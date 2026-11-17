@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161am [compute] (Q161ad bounded original edge-Hodge/history joint observability) — GPT 2026-11-17: THEOREM rank([D;B])=20 and exact left inverse; full physical Q161ad and Ward OPEN.
+
+
 - [x] Q161al [compute] (Q161ad bounded original face-edge Hodge eight-mode visibility) — GPT 2026-11-17: THEOREM, rank(DH)=8, Gram 3(x4),5(x4); physical H64 source and Ward OPEN.
 
 - [x] Q161af [compute] (Q161ad bounded native face-source observable projector) — GPT 2026-11-17: THEOREM exact rank-six projector and native Moore–Penrose reconstruction; full physical Q161ad OPEN.
@@ -1951,3 +1954,8 @@ Status: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original icosahedra
 - Result: THEOREM; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Native outward-oriented 30-edge × 20-face boundary D and original dual adjacency A satisfy DᵀD=3I−A, rank D=19, ker D=span(1). For Q161aj eight-mode hidden projector H, rank(DH)=8; hidden Gram eigenvalues 3×4 and 5×4 (plus 0×12). The eight modes invisible to face/vertex diagnostics are geometrically observable at original oriented edges; no physical source or Ward inference.
 - Evidence: GPT standalone exact SymPy Q161AL_EDGE_HIDDEN.py executed locally, exit 0, output Q161al EXACT PASS. CI after commit not yet known.
 - Next concrete question: does the original five-solid/H64/24-clock physical source actually induce DH on the eight modes and preserve all Q96 Ward generators?
+
+### 2026-11-17 — GPT — Q161am native joint edge/history reconstruction
+- Result: THEOREM; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original Q161al oriented edge D and Q161af P/Q readout B satisfy rank([D;B])=20, B1=(16/45)1_6. Exact left inverse L⁺Dᵀ−1 bᵀ B L⁺Dᵀ/(bᵀb) for edge data plus 1 bᵀ/(bᵀb) for history data, with L⁺=(DᵀD+11ᵀ/20)⁻¹−11ᵀ/20. This recovers all 20 face amplitudes *if both native diagnostics are physically supplied*; no full-Cathedral source or Q96 Ward inference.
+- Evidence: GPT standalone local SymPy `python Q161AM_JOINT_RECONSTRUCTION.py`, exit 0, exact 20×20 identity asserted; CI pending. No gate closed.
+- Next concrete question: does the primitive five-solid/190/H64/24 source Jacobian induce both readouts and preserve Q96 Ward generators?
