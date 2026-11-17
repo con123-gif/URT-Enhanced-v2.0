@@ -1840,3 +1840,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-17_q161aa_face_readout_gram/Q161AA_FACE_GRAM.py"
 timeout = 120
+
+[[check]]
+id = "research.q161ac_face_source_channel"
+stage = "research_c"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_q161ac_face_source_channel/Q161AC_FACE_SOURCE_CHANNEL.py"
+timeout = 120

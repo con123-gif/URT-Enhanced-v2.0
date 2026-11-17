@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ac [compute] (Q161ab bounded native face-source six-channel diagnostic) — GPT 2026-11-17: THEOREM rank 6, nullity 14, exact Gram; full H64 physical source open.
+- [ ] Q161ad [compute] (Q161ab NEXT) extract full five-solid/190-cochain/H64/24-clock 20-face amplitude and evaluate B, then Q96 Ward generators.
+
 - [x] Q161y [compute] (Q161o bounded native A5 face-axis orbit) — GPT 2026-11-16: THEOREM; ten triples form 2-(6,3,2), A5 orbit 10/stabilizer 6; full physical source open.
 - [ ] Q161ab [compute] (Q161o NEXT): recover original H64/24-clock-to-20-face source projection and calculate its six-axis sum-zero Gram component and Q96 Ward commutators.
 - [x] Q161aa [compute] (Q161z native uniform-face six-readout Gram) — GPT 2026-11-17: THEOREM; exact eigenvalues 32/45, 64/225 (x5); physical source remains open.
@@ -380,6 +383,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 02:16 UTC — GPT — Q161ac native 20-face source-channel sensitivity
+- Task: Q161ab [compute], bounded native icosahedral source-to-six-axis diagnostic (not the full H64 tensor).
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: B_ij=<Q_i P D M 1,Q_i P D M_j> has entries 0 or 8/225, rank 6, nullity 14; BB^T=(128/16875)I+(256/50625)J, eigenvalues 128/3375 and 128/16875 (x5).
+- Evidence: research.q161ac_face_source_channel, standalone exact Python/SymPy executed locally exit 0; GitHub CI pending at commit time.
+- Dead ends: six scalar responses alone cannot recover all 20 face-source amplitudes (14D kernel); physical five-solid/H64/24 source not yet extracted.
+- Next step: Q161ad [compute] extract the original full-Cathedral source amplitude on 20 faces and evaluate B against it, then Q96 Ward generators.
+
 
 ### 2026-11-17 01:17 UTC — GPT — Q161aa exact native face-readout Gram spectrum
 - Task: Q161z/Q161o [compute], one bounded original face-source six-channel Gram calculation.
