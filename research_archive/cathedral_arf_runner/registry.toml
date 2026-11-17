@@ -2031,3 +2031,12 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-17_q161_full_ew_source_covariance/Q161_FULL_EW_SOURCE_HOPF_COVARIANCE_CERT.py"
 timeout = 420
+
+[[check]]
+id = "research.q161_exact_hidden4_yukawa_isometry"
+stage = "research_b"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_exact_hidden4_yukawa_isometry/Q161_EXACT_HIDDEN4_TO_YUKAWA_PHYSICS_CERT.py {out}/Q161_HIDDEN4_YUKAWA_RESULT.json"
+outputs = ["{out}/Q161_HIDDEN4_YUKAWA_RESULT.json"]
+timeout = 180
