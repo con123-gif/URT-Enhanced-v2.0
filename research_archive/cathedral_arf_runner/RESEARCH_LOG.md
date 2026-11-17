@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161al [compute] (Q161ad bounded original face-edge Hodge eight-mode visibility) — GPT 2026-11-17: THEOREM, rank(DH)=8, Gram 3(x4),5(x4); physical H64 source and Ward OPEN.
+
 - [x] Q161af [compute] (Q161ad bounded native face-source observable projector) — GPT 2026-11-17: THEOREM exact rank-six projector and native Moore–Penrose reconstruction; full physical Q161ad OPEN.
 
 - [x] Q161ae [compute] (Q161ad bounded native dual-face spectral diagnostic) — GPT 2026-11-17: THEOREM exact A-spectrum, 1+5 observed and 14 invisible; full Q161ad remains open.
@@ -1944,3 +1946,8 @@ Status: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original icosahedra
 - Result: THEOREM; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original golden icosahedral 20-face dual adjacency A and six-bit incidence M with P/Q parity readout B satisfy Pi=A(A+2I)(A²-5I)(3A-8I)/60=Bᵀ(BBᵀ)⁻¹B. Exact Pi²=Pi=Piᵀ, rank Pi=6, rank(I-Pi)=14, B(I-Pi)=0. The observable part of any face source f is reconstructed from Bf by Bᵀ(BBᵀ)⁻¹Bf, without a fitted regularizer.
 - Evidence: GPT standalone Python/SymPy certificate executed locally, exit 0, output Q161af EXACT PASS; source/proof at research_archive/2026-11-17_q161af_native_face_projector/. CI verdict pending. No physical gate closed.
 - Next concrete question: extract original full five-solid/H64/24-clock 20-face source f and test whether its 14D invisible component is physically active under all Q96 Ward generators.
+
+### 2026-11-17 — GPT — Q161al original icosahedral edge-Hodge recovery of eight invisible face modes
+- Result: THEOREM; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Native outward-oriented 30-edge × 20-face boundary D and original dual adjacency A satisfy DᵀD=3I−A, rank D=19, ker D=span(1). For Q161aj eight-mode hidden projector H, rank(DH)=8; hidden Gram eigenvalues 3×4 and 5×4 (plus 0×12). The eight modes invisible to face/vertex diagnostics are geometrically observable at original oriented edges; no physical source or Ward inference.
+- Evidence: GPT standalone exact SymPy Q161AL_EDGE_HIDDEN.py executed locally, exit 0, output Q161al EXACT PASS. CI after commit not yet known.
+- Next concrete question: does the original five-solid/H64/24-clock physical source actually induce DH on the eight modes and preserve all Q96 Ward generators?
