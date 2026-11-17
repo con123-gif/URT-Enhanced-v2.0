@@ -2015,3 +2015,11 @@ claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-17_q161_direct_face_vertex_generation/Q161_DIRECT_FACE_VERTEX_GENERATION_CERT.py"
 timeout = 240
+
+[[check]]
+id = "research.q161_q96_hopf_three_generation_vertex"
+stage = "research_c"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_q96_three_generation_hopf_source/Q161_Q96_SOURCE_THREE_GENERATION_WARD_CERT.py"
+timeout = 420

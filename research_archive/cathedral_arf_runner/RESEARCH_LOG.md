@@ -398,6 +398,10 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Original full 444/Q96 EM Ward for source-derived three-generation Hopf chiral vertex
+- Extends exact source-generated FULL-RANK 3x3 Y_s=Plo diag(C^T(C Pl s)^2) Phi (three distinct golden singulars) to genuine original Q125 444-history Q96 charge structure. Build no-fit native SU2 eigenline Hopf 8x8 V_x from S_x, match 3 colored weak doublets+one lepton doublet to 8 RH singlets. Exact local QL_x V_x=V_x QR_x verified 444/444 with max ~4.32e-16; native transported Berry V_x†U_L,xy V_y diagonal unitary on all 1032 links, all 720 wedge-current active verified, offdiag ~5.18e-16. Explicit 96x96 three-gen+conjugate M_x Hermitian EM commutator zero, checked 6 examples; factor identity extends all. Original source-weighted graph variation >0 (~105319.14). Local independent original-formula run PASS; source-native GitHub CI registered at research_archive/2026-11-17_q161_q96_three_generation_hopf_source/. Does NOT prove SU2xU1 Higgs breaking or physical Yukawa/masses. Next derive actual charged action and time/normalization from H64/24.
+
+
 ### 2026-11-17 — GPT — Q161 direct native nonlinear face-source FULL RANK three-chiral channel
 - Solved rank-two limitation of simple occupancy source without inserting KMS coupling: actual Q101 f_s=(C Pl s)^2, return a_s=C^T f_s, proposed chiral multiplication Y_s=Plo diag(a_s) Phi. Exact SymPy singular-squared 3x3 polynomial (125x-169)(15625x²-13375x+961)/1953125; singulars .2813776741, .8813776741, 1.1627553483; exact relation smallest+middle=largest. All 30 native E=-6,M=+4 ground words identical spectra (A5 orbit); no free coefficients, full rank three. Declaration of a_s as Yukawa is NOT from physical H64/24/Q96 charged action, hence physical Yukawa and particle masses remain OPEN. Local executable PASS; CI registered at research_archive/2026-11-17_q161_direct_face_vertex_generation/. Work next on actual charged microscopic source-to-matter vertex, not observational backfit.
 
