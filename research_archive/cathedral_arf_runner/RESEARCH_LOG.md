@@ -398,6 +398,10 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Q161 direct native nonlinear face-source FULL RANK three-chiral channel
+- Solved rank-two limitation of simple occupancy source without inserting KMS coupling: actual Q101 f_s=(C Pl s)^2, return a_s=C^T f_s, proposed chiral multiplication Y_s=Plo diag(a_s) Phi. Exact SymPy singular-squared 3x3 polynomial (125x-169)(15625x²-13375x+961)/1953125; singulars .2813776741, .8813776741, 1.1627553483; exact relation smallest+middle=largest. All 30 native E=-6,M=+4 ground words identical spectra (A5 orbit); no free coefficients, full rank three. Declaration of a_s as Yukawa is NOT from physical H64/24/Q96 charged action, hence physical Yukawa and particle masses remain OPEN. Local executable PASS; CI registered at research_archive/2026-11-17_q161_direct_face_vertex_generation/. Work next on actual charged microscopic source-to-matter vertex, not observational backfit.
+
+
 ### 2026-11-17 — GPT — Actual Q101 frustrated source breaks golden 3+3prime generation degeneracy
 - THEOREM: original genuine face-hidden Kgen=C^T(P3⊙P5)C; use real native Q101 M=+4 E=-6 ground-state contact occupancy N_s. For ALL 30 ground words, occupied G_s=N_s Kgen N_s has exact charpoly x²(90x²−51x+1)(90x²−39x+1)(180x²−60x+1)/1458000, six distinct nonzero eigenvalues (range .017595468 to .546328897). Cross-irreducible triplet bridge Y=Plo N_s Phi obeys exact (Y†Y)²=(1/20)Y†Y and Tr(Y†Y)=1/10; singulars 1/√20,1/√20,0, rank2. Independent complete 30-state numerical orbit. Local script executed; source certificate registered at research_archive/2026-11-17_q161_source_selected_generation/. This is a leading-source selection theorem, NOT physical Yukawa/mass spectra; H64/24/Q96 charged action remains its next test.
 

@@ -2007,3 +2007,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-17_q161_source_selected_generation/Q161_SOURCE_SELECTED_GENERATION_CERT.py"
 timeout = 240
+
+[[check]]
+id = "research.q161_direct_face_vertex_generation"
+stage = "research_c"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_direct_face_vertex_generation/Q161_DIRECT_FACE_VERTEX_GENERATION_CERT.py"
+timeout = 240
