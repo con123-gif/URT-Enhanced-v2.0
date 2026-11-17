@@ -398,6 +398,11 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Q161 NEW 11→4 gauge bridge & unimodular tetrad
+- Result: Exact native 11-link gamma linearization gives Dirac tetrad e=[[1,-1/2,-1/2,-1/2],[0,1,0,0],[0,0,1,0],[0,0,0,1]], det e=1. Four-spacetime-1-form line-integral map E(k) obeys E(ik)=1-exp(-i Dk) EXACT. At new original Q125 graded curved stationary Ns4/Ns6 branches, Schur eliminate the seven extra original link polarizations to obtain 4×4 gauge-covariant response (one longitudinal Ward zero, 3 positive Euclidean transverse on k≠0). Independent local original-formula NS4,NS6 finite check: identical k0=pi/3 Pi_yy=276.864989,278.320406 (0.523% drift). This is not c_eff=1 or a continuum pole.
+- Local scripts and full results in sandbox; source-native CI certificate added to research_archive/2026-11-17_q161_four_one_form/ ; CI pending. Next: photon k² residues versus NS, NT; treat toron stiffness separately. Whole 190/H64/24 premise unaltered.
+
+
 ### 2026-11-17 — GPT — Q161 384-site graded curved-gauge continuation
 - Compute same native Q125/v61 graded determinant on NS4, NS6, not old Q109/Q152. Exact all-even stationary Astar is unstable at NS4 and NS6. Descent + Newton finds two positive-Hessian stationary NS4 solutions. All 384 Fourier blocks at EACH yield (3841+,0-,383 gauge). Curved branch min eigen .133513805, nonzero flux; lower action flat branch min .004906921. Direct finite determinant first-spatial-mode FD agrees 3.464e-7. Independent original-formula LOCAL execution; source-native registered CI PENDING. Full NS6 physical Hessian and continuum still open.
 - Files: research_archive/2026-11-17_q161_ns4_curved_vacuum/ ; preserve 190/H64/24 provenance and no-fitted-observable rule.

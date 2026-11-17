@@ -1981,3 +1981,12 @@ gating = true
 run = "python -u research_archive/2026-11-17_q161_ns4_curved_vacuum/Q161_NS4_CURVED_GRADED_NATIVE.py {out}/Q161_NS4_RESULT.json"
 outputs = ["{out}/Q161_NS4_RESULT.json"]
 timeout = 600
+
+[[check]]
+id = "research.q161_graded_four_one_form_photon"
+stage = "research_b"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_four_one_form/Q161_FOUR_ONE_FORM_NATIVE_CERT.py {out}/Q161_FOUR_ONE_FORM_RESULT.json"
+outputs = ["{out}/Q161_FOUR_ONE_FORM_RESULT.json"]
+timeout = 420
