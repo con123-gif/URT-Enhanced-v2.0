@@ -2023,3 +2023,11 @@ claim = "native"
 gating = true
 run = "python -u research_archive/2026-11-17_q161_q96_three_generation_hopf_source/Q161_Q96_SOURCE_THREE_GENERATION_WARD_CERT.py"
 timeout = 420
+
+[[check]]
+id = "research.q161_full_ew_hopf_yukawa_covariance"
+stage = "research_c"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_full_ew_source_covariance/Q161_FULL_EW_SOURCE_HOPF_COVARIANCE_CERT.py"
+timeout = 420

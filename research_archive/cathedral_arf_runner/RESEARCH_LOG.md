@@ -398,6 +398,10 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Full SU2_L x U1_Y Hopf/Yukawa covariance on original Q125/Q96 source-derived 3 generations
+- Original Q96 Y_L=(1/6 x3,-1/2), Y_R=(2/3 x3,-1/3 x3,-1,0) FORCE Higgs doublet +1/2 and conjugate -1/2 for all RH-LH charge matches. Original Hopf spin eigenline Phi_x from Q125 S_x plus tildePhi=iσ2Phi* gives 8x8 V_x. Exact algebra V(G Phi)=G_L V(Phi) G_R† for all SU2xU1; tested all 444 original states against three noncommuting SU2 rotations and U1 phases, maximum residual ~6.44e-16. Original full-rank Y_s=Plo diag(C^T(C Pl s)^2) Phi_generation factors as 3×3 generation matrix and inherits same 24×24 source-fermion gauge covariance; tested 5 source states. Native original local Q96 electric Ward and 1032 Berry links from preceding commit, unchanged. Local independent original-formula code executed; GitHub source-native CI registered at research_archive/2026-11-17_q161_full_ew_source_covariance/. KINEMATIC electroweak Yukawa consistency only, not dynamically selected Higgs/VEV/absolute masses, primitive H64/24 kinetic gauge action OPEN.
+
+
 ### 2026-11-17 — GPT — Original full 444/Q96 EM Ward for source-derived three-generation Hopf chiral vertex
 - Extends exact source-generated FULL-RANK 3x3 Y_s=Plo diag(C^T(C Pl s)^2) Phi (three distinct golden singulars) to genuine original Q125 444-history Q96 charge structure. Build no-fit native SU2 eigenline Hopf 8x8 V_x from S_x, match 3 colored weak doublets+one lepton doublet to 8 RH singlets. Exact local QL_x V_x=V_x QR_x verified 444/444 with max ~4.32e-16; native transported Berry V_x†U_L,xy V_y diagonal unitary on all 1032 links, all 720 wedge-current active verified, offdiag ~5.18e-16. Explicit 96x96 three-gen+conjugate M_x Hermitian EM commutator zero, checked 6 examples; factor identity extends all. Original source-weighted graph variation >0 (~105319.14). Local independent original-formula run PASS; source-native GitHub CI registered at research_archive/2026-11-17_q161_q96_three_generation_hopf_source/. Does NOT prove SU2xU1 Higgs breaking or physical Yukawa/masses. Next derive actual charged action and time/normalization from H64/24.
 
