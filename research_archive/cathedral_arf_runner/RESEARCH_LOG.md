@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161as [compute] (Q161ad bounded native six-readout canonical lift edge energy) — GPT 2026-11-17: THEOREM, Tᵀ(3I−A)T=(16875/64)(I−J/6); 14D physical source and Q96 Ward remain OPEN.
+
 - [x] Q161an [compute] (Q161 evidence recovery, golden frustration + history + charge Ward) — GPT 2026-11-17: EXACT finite barrier capacity 29 and Fibonacci defects; conditional 444 NESS and baryon Ward archived; physical Q161ad OPEN.
 
 
@@ -395,6 +397,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 16:13 UTC — GPT — Gate B/D — Q161as native edge-energy of canonical six-readout lift
+- Task: Q161ad bounded original Q161z/Q161ac face readout and Q161al native face-edge Hodge Gram.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For B native 6×20 and L=DᵀD=3I−A, T=Bᵀ(BBᵀ)⁻¹ obeys BT=I₆ and TᵀLT=(16875/64)(I₆−J₆/6), spectrum 0(1),16875/64(5). Π=TB commutes with L; 14 face modes remain invisible.
+- Evidence: research.q161as_native_edge_energy; standalone local Python/SymPy exit 0; CI for this new check pending at writing. No physical gate closed.
+- Dead ends: The six-channel data alone cannot fix the 14D ker B or prove physical source activation.
+- Next step: Extract full five-solid/190/H64/24-clock source f and evaluate its ker B component and Q96 Ward commutators.
+
 
 ## 2026-11-17 — GPT Q161 all-volume exact flux theorem
 - Proved exact charge-sector phase involution for all (NT divisible by6, NS even), original 11 directions, fixed Astar. 409,728 rational identity checks on 8 extended lattices; all 12 triangle fluxes 3π/2. Equal-action gauge-inequivalent pair ±Astar has Wilson_q=1/3 = ±i. Stationarity survives the large-volume lattice sequence **conditional on fixed candidate Astar**; stability and photon/GR/SM remain OPEN.

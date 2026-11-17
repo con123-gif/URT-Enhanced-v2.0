@@ -1964,3 +1964,11 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_FLUX_EXACT_STATIONARITY.py"
 timeout = 60
+
+[[check]]
+id = "research.q161as_native_edge_energy"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-17_q161as_native_edge_energy/Q161AS_EDGE_ENERGY.py"
+timeout = 180
