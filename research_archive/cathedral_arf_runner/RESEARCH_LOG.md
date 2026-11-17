@@ -396,6 +396,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Q161ad — original Q125 full graded Hessian audit
+- Task: Recheck 48 native v61/Q125 Fourier sectors of new graded conditional determinant.
+- Result: REVIEW / CLOSED INTERNALLY — PHYSICAL IDENTIFICATION PENDING; nature gate OPEN.
+- Statement: Local reconstruction 409+/72-/47 gauge zeros; negative spectrum by spatial sector [3,2,2,1,2,1,1,0] in every temporal slice; max Ward defect 4.54e-16 after correcting failed temporal Fourier conjugation; four direct determinant finite-difference checks agree ~1e-7. Source-native original-file rerun registered with CI pending.
+- Evidence: research_archive/2026-11-17_q161_graded_48_original/Q161_GRADED_48_ORIGINAL_SOURCE_CERT.py (new native CI pending), research_archive/2026-11-17_q161_graded_48_original/Q161_GRADED_48_PHYSICS_AUDIT.md; reproducible local bundle delivered to user.
+- Next: Continue Q161ad OPEN; test graded original determinant around Q152 nonuniform vacuum and original Q96 Ward, without inserting fitted regulators.
+
+
 ### 2026-11-17 — GPT — Q161ad / Part 23 purported final theory audit
 - Task: User Part23 claim of complete 50→8→12 portal, 528 graded Hessian, 12 masses and Einstein equations.
 - Result: REVIEW (DISAGREE on physical completion); exact internal Q101/Q125 independent 1032-link recovery and rank obstruction CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; all physical gates remain OPEN.

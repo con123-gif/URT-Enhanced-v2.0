@@ -1938,3 +1938,12 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-17_q161_step23_full_theory_audit/Q161_STEP23_NATIVE_PORTAL_AND_HESSIAN_AUDIT.py"
 timeout = 240
+
+[[check]]
+id = "research.q161_native_graded48"
+stage = "research_a"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_graded_48_original/Q161_GRADED_48_ORIGINAL_SOURCE_CERT.py {out}/q161_graded48.json"
+outputs = ["{out}/q161_graded48.json"]
+timeout = 300
