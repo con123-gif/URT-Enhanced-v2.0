@@ -1999,3 +1999,11 @@ gating = true
 run = "python -u research_archive/2026-11-17_q161_thermodynamic_photon/Q161_THERMODYNAMIC_PHOTON_NATIVE_CERT.py {out}/Q161_THERMODYNAMIC_PHOTON_RESULT.json"
 outputs = ["{out}/Q161_THERMODYNAMIC_PHOTON_RESULT.json"]
 timeout = 600
+
+[[check]]
+id = "research.q161_source_selected_generation"
+stage = "research_c"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_source_selected_generation/Q161_SOURCE_SELECTED_GENERATION_CERT.py"
+timeout = 240

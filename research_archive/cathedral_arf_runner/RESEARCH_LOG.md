@@ -398,6 +398,10 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Actual Q101 frustrated source breaks golden 3+3prime generation degeneracy
+- THEOREM: original genuine face-hidden Kgen=C^T(P3⊙P5)C; use real native Q101 M=+4 E=-6 ground-state contact occupancy N_s. For ALL 30 ground words, occupied G_s=N_s Kgen N_s has exact charpoly x²(90x²−51x+1)(90x²−39x+1)(180x²−60x+1)/1458000, six distinct nonzero eigenvalues (range .017595468 to .546328897). Cross-irreducible triplet bridge Y=Plo N_s Phi obeys exact (Y†Y)²=(1/20)Y†Y and Tr(Y†Y)=1/10; singulars 1/√20,1/√20,0, rank2. Independent complete 30-state numerical orbit. Local script executed; source certificate registered at research_archive/2026-11-17_q161_source_selected_generation/. This is a leading-source selection theorem, NOT physical Yukawa/mass spectra; H64/24/Q96 charged action remains its next test.
+
+
 ### 2026-11-17 GPT — Q161 thermodynamic 4D gauge mass theorem and source-native Maxwell k²
 - Exact Q125/v61 flat 4-connection shift A→A+D a equals p→p+qa inside ORIGINAL Wilson; full BZ integral invariant ⇒ zero thermodynamic four-vector constant mass Hessian for arbitrary flux. Original bare flat Wilson no zeros across BZ (0<M<1,r>0) ⇒ analytic local response. Original 888 Q125 squared chiral masses numerically 43 spectral groups, full uncompressed Hessian agrees ~1e-16. Source-native physical four-component 4+7 Schur Zt=570.885/627.791/639.232, Zs=1462.465/1817.822/1897.556 at 12^4/18^4/20^4; positive, anisotropic. Local original-formula run completed; source-native CI registered at research_archive/2026-11-17_q161_thermodynamic_photon/. No physical c or alpha fitted or claimed.
 
