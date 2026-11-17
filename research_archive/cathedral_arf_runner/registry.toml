@@ -2040,3 +2040,11 @@ gating = true
 run = "python -u research_archive/2026-11-17_q161_exact_hidden4_yukawa_isometry/Q161_EXACT_HIDDEN4_TO_YUKAWA_PHYSICS_CERT.py {out}/Q161_HIDDEN4_YUKAWA_RESULT.json"
 outputs = ["{out}/Q161_HIDDEN4_YUKAWA_RESULT.json"]
 timeout = 180
+
+[[check]]
+id = "research.q161ax_face_orbit_covariance"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-17_q161ax_face_orbit_covariance/Q161AX_FACE_ORBIT_COVARIANCE_CERT.py"
+timeout = 240

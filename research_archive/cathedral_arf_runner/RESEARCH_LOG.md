@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ax [compute] (Q161ad bounded native 30-ground Q101 face covariance) — GPT 2026-11-17: THEOREM exact Σ1=0, Tr Σ=416/25; full physical Q161ad remains OPEN.
+- [ ] Q161ay [compute] (Q161ax NEXT): project exact original face covariance onto six-history and fourteen-null channels, test Q96 Ward compatibility.
+
 - [x] Q161as [compute] (Q161ad bounded native six-readout canonical lift edge energy) — GPT 2026-11-17: THEOREM, Tᵀ(3I−A)T=(16875/64)(I−J/6); 14D physical source and Q96 Ward remain OPEN.
 
 - [x] Q161an [compute] (Q161 evidence recovery, golden frustration + history + charge Ward) — GPT 2026-11-17: EXACT finite barrier capacity 29 and Fibonacci defects; conditional 444 NESS and baryon Ward archived; physical Q161ad OPEN.
@@ -397,6 +400,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 20:10 UTC — GPT — Gate B/D — Q161ax exact original Q101 face-source orbit covariance
+- Task: Q161ad bounded native 30-ground face-source second-moment certificate (Q161ax).
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For f_s=(C P_l s)^{⊙2} on the 30 original frustrated icosahedral words, μ=(3/5)1_20, Σ1_20=0, Σ=Σᵀ, Tr Σ=416/25 exactly, E||f||²=596/25.
+- Evidence: research.q161ax_face_orbit_covariance; standalone SymPy executed locally exit 0 on 2026-11-17; CI verdict pending at commit time; earlier checkpoint #204 PASS is not this check.
+- Dead ends: Direct symbolic covariance eigenvalue decomposition exceeded local time limit; no eigenvalue or physical source claim made.
+- Next step: Q161ay [compute] compute original six-history and fourteen-null-channel covariance projections, then assess Q96 Ward compatibility.
+
 
 ### 2026-11-17 — GPT — Q161 native hidden 4 + vertex 5 complete 9D Yukawa source isometry
 - New exact THEOREM: using original Q101 downstream 20 triangular faces, outward oriented edge-circulation O_f and Q101 hidden Hodge projectors, the face→3x3 flavor map T has T†T=(3/2)P4_3. Original diagonal-vertex map S has S†S=(3/20)P5vertex; exact orthogonality S†T=0. Hence normalized √(20/3)S ⊕ √(2/3)T is a full 9-dimensional isometric identification (A5 5⊕4=3⊗3prime). Original signed W/√15 routes second hidden 4_5 to same Yukawa4 with Gram 3/2 P4_5. Local SymPy exact 20 face row+12 cross terms and full numeric A5/30-ground run passed; source norms squared Y5 276/125, Y43 48/5, Y45 16/5 and Y43⊥Y45. Original five-only mass ratios .31925 and .7580 fail charged lepton values; full 4+5 selection is structurally available, dynamic weights and physical masses not yet derived. Original full five-solid/H64/24 provenance intact. Independent CI registered: research_archive/2026-11-17_q161_exact_hidden4_yukawa_isometry/. Next derive relative 5/4_3/4_5 transfer amplitudes and up/down selection without fit.
