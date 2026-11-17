@@ -1,3 +1,5 @@
+**Q161 SPIRAL/FRUSTRATION/URT CONVERSATION RECOVERY (2026-11-17):** Exact Fibonacci angular closure and 444-state saddle capacity 29 (conditional heat-bath prefactor 29/15) now have reproducible certificates in `research_archive/2026-11-17_spiral_frustration_urt_recovery/`. Q101/Q125 centre-graded NESS yields a candidate geometric orientation bias, while original 1032 Q96 links preserve assigned baryon charge: no derived baryogenesis or eta_B. Golden pitch does not fix pi/e and the 81-normalised rails are not uniquely selected; Q161 physical 190/H64/24-to-charge Ward and v61 continuum gap remain OPEN. Local executed; new GitHub CI pending.
+
 **Q150a PHYSICAL OBSERVABLE CORRECTION (2026-11-15):** Original Q150 local flux diagnostic sin(c/3) gave false zero at nontrivial minimal-charge holonomy exp(i c/3)=-1 (c=3π). Corrected to exact compact gauge-invariant Wilson distance |exp(i c/3)-1|=2|sin(c/6)|, 6π periodic, zero iff trivial holonomy; optimizer/action unchanged. Previous flux monitor output must be recomputed. See Q150_PHYSICAL_VACUUM_TEST.md. CI pending.
 # Newton's Cathedral — research state
 

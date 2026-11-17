@@ -1880,3 +1880,45 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-17_q161am_joint_face_edge/Q161AM_JOINT_RECONSTRUCTION.py"
 timeout = 120
+
+# 2026-11-17 conversation-recovered spiral/frustration/URT proof audit
+
+[[check]]
+id = "research.urt_fibonacci_closure_recovered"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-17_spiral_frustration_urt_recovery/FIBONACCI_CLOSURE_CERTIFICATE.py"
+timeout = 150
+
+[[check]]
+id = "research.frustration_capacity_recovered"
+stage = "research_b"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_444_physical_reversal.py"
+timeout = 150
+
+[[check]]
+id = "research.frustration_baryon_ward_recovered"
+stage = "research_c"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_frustration_asymmetry_physical_test_2026_11_17.py"
+timeout = 150
+
+[[check]]
+id = "research.urt_parity_history_recovered"
+stage = "research_d"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_urt_parity_history_test_2026_11_17.py"
+timeout = 150
+
+[[check]]
+id = "research.frustration_collective_ness_recovered"
+stage = "research_a"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_10orbit_coupled_current.py"
+timeout = 150

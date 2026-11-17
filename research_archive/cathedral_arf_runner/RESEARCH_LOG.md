@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161an [compute] (Q161 evidence recovery, golden frustration + history + charge Ward) — GPT 2026-11-17: EXACT finite barrier capacity 29 and Fibonacci defects; conditional 444 NESS and baryon Ward archived; physical Q161ad OPEN.
+
+
 - [x] Q161am [compute] (Q161ad bounded original edge-Hodge/history joint observability) — GPT 2026-11-17: THEOREM rank([D;B])=20 and exact left inverse; full physical Q161ad and Ward OPEN.
 
 
@@ -392,6 +395,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 12:00 UTC — GPT — Q161an — spiral/frustration/URT conversation recovery and physical charge audit
+- Task: Recover and execute unsaved 2026-11-17 full-Cathedral source, golden frustration, 64-history, entropy and charged-transport calculations without resetting existing Q161.
+- Result: THEOREM for finite golden closure and rational 29/15 saddle prefactor; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Remaining driven NESS and spiral-to-rail constructions CONDITIONAL.
+- Statement: F_n phi^-2-F_(n-2)=(-1)^n phi^-n; 444-state barrier graph has 72 saddle pairs, 60 with k=4, 12 with k=5; heat-bath effective capacity 29 and asymptotic gap (29/15)e^{-2(sqrt5-1)beta}; all 1032 Q96 charge-transport links commute with the assigned baryon charge; thus the proposed numerical 6.18844e-10 composite is not a derived baryon-to-photon observable.
+- Evidence: research_archive/2026-11-17_spiral_frustration_urt_recovery/RECOVERY_INDEX.md and registered research.*_recovered tests. Prior scripts executed in GPT local container; new GitHub CI verdict pending.
+- Dead ends: Golden angular winding does not fix pi/e radial pitch; 81-dimensional trace realization does not uniquely select rails; thermal KMS chirality averages to zero.
+- Next step: Q161ad extract actual 190/H64/24 source-to-face amplitude and Q96 Ward generators before deriving charged asymmetry, physical transfer/time and continuum photon.
+
+
 
 ### 2026-11-17 03:16 UTC — GPT — Gate Q161 — native dual-face spectral selection
 - Task: Q161ae bounded original-operator subcertificate supporting open Q161ad.
