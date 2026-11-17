@@ -6,7 +6,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161y [compute] (Q161o bounded native A5 face-axis orbit) — GPT 2026-11-16: THEOREM; ten triples form 2-(6,3,2), A5 orbit 10/stabilizer 6; full physical source open.
-- [ ] Q161z [compute] (Q161o PHYSICAL SOURCE): extract original full five-solid/190-cochain/24-clock H64-to-history tensor; test A5 covariance and bit-0-odd Walsh rank before Q96 Ward generators.
+- [ ] Q161z [compute] (Q161o PHYSICAL SOURCE): GPT 2026-11-17 completed bounded native face-uniform incidence subcase (rank-six readouts); full five-solid/190-cochain/24-clock H64 tensor, A5 covariance and Q96 Ward remain OPEN.
 
 - [x] Q161w [compute] (Q161o bounded original axis-subset rank census) — GPT 2026-11-16: THEOREM; all four-axis subsets injective; physical Q161o remains open.
 - [x] Q161x [compute] (Q161o bounded geometry) — GPT 2026-11-16: THEOREM, rank 20 iff three axes support an original icosahedral face; otherwise rank 18; physical Q161o open.
@@ -378,6 +378,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 00:16 UTC — GPT — Q161z native face-uniform source subcase
+- Task: Q161z [compute], one bounded original icosahedral incidence source calculation.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Original 20-face incidence gives uniform-source histogram {0:12,1:20,4:20,5:12}; six Q_i P parity-twisted readouts each have norm squared 16/45, zero sum, and joint rank 6.
+- Evidence: research.q161z_uniform_face_source; standalone exact SymPy certificate executed locally, exit 0; CI verdict pending for this commit.
+- Dead ends: face-uniform amplitude is a bounded native-geometry subcase, not the unextracted full five-solid/190/H64/24 physical source; no Q96 Ward inference.
+- Next step: derive the native 190-cochain/H64/24-clock source tensor and its A5-invariant face projection, then test Q96 Ward preservation.
+
+
 
 ### 2026-11-16 22:16 UTC — GPT — Gate B/D — Q161y original icosahedral axis-orbit certificate
 - Task: Q161o bounded original-geometry selection test; determine whether Q161x's ten injective face-axis triples admit an A5-invariant single choice.

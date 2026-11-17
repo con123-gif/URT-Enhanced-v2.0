@@ -1824,3 +1824,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-16_q161y_axis_orbit/Q161Y_AXIS_ORBIT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161z_uniform_face_source"
+stage = "research_a"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_q161z_uniform_face_source/Q161Z_UNIFORM_FACE_SOURCE.py"
+timeout = 120
