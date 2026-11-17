@@ -396,6 +396,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Q161ad / Part 23 purported final theory audit
+- Task: User Part23 claim of complete 50→8→12 portal, 528 graded Hessian, 12 masses and Einstein equations.
+- Result: REVIEW (DISAGREE on physical completion); exact internal Q101/Q125 independent 1032-link recovery and rank obstruction CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; all physical gates remain OPEN.
+- Statement: Proposed K has rank12 and cannot factor through eight; original rank8 Q101 Pl exactly reproduces 480 j1 + 240 j2 +312 zero Q125 currents, while claimed K changes all 720 active magnitudes. Submitted synthetic 11-direction Hessian uses non-native shifts/3 duplicate endpoints and imposed two-mode sign changes in every spatial-nonzero sector, contradicting native Q157 momentum-sector signature despite matching total84. Submitted masses use measured inputs and neutrino masses evaluate ~1000x smaller than claims. Native Q125 charge intertwining supplies exact conditional [h(A),H_ch]=0; squared grading holds, but graded 528-link determinant Hessian still uncomputed.
+- Evidence: independent local executable `research_archive/2026-11-17_q161_step23_full_theory_audit/Q161_STEP23_NATIVE_PORTAL_AND_HESSIAN_AUDIT.py`; check research.q161_step23_completion_audit; original native Q125 and Q157 path comparison; GitHub CI pending.
+- Next step: Preserve Q161ad OPEN. Use exact graded Hessian formula (1/2)Tr[X^-1 X_i X^-1 X_j-X^-1 X_ij], X=h_v61(qA)^2+k_KMS²H_ch², with original 444x96 spectral measure and true v61 current/seagull in all 48 momentum blocks.
+
+
 ### 2026-11-17 — GPT — Q161ad / Part 21 exact grading and v61 review
 - Task: Independent strict audit of user Step 7/8 and native charged/continuum assumptions.
 - Result: REVIEW (PARTIAL) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for native finite ranks, hidden identities, and spin grading; PHYSICAL GATE OPEN.
