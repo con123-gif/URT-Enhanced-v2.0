@@ -1848,3 +1848,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-17_q161ac_face_source_channel/Q161AC_FACE_SOURCE_CHANNEL.py"
 timeout = 120
+
+[[check]]
+id = "research.q161ae_face_dual_spectrum"
+stage = "research_d"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_q161ae_face_dual_spectrum/Q161AE_FACE_KERNEL.py"
+timeout = 120

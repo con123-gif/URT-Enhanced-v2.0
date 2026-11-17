@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ae [compute] (Q161ad bounded native dual-face spectral diagnostic) — GPT 2026-11-17: THEOREM exact A-spectrum, 1+5 observed and 14 invisible; full Q161ad remains open.
+
 - [x] Q161ac [compute] (Q161ab bounded native face-source six-channel diagnostic) — GPT 2026-11-17: THEOREM rank 6, nullity 14, exact Gram; full H64 physical source open.
 - [ ] Q161ad [compute] (Q161ab NEXT) extract full five-solid/190-cochain/H64/24-clock 20-face amplitude and evaluate B, then Q96 Ward generators.
 
@@ -383,6 +385,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 03:16 UTC — GPT — Gate Q161 — native dual-face spectral selection
+- Task: Q161ae bounded original-operator subcertificate supporting open Q161ad.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Original icosahedral face dual adjacency A has spectrum 3(1),1(5),0(4),-2(4),±sqrt(5)(3 each). Q161ac native diagnostic B satisfies B(A-3I)(A-I)=0, [B^T B,A]=0; rank 6 detects exactly the 3⊕1 eigenspaces and annihilates the 14D 0⊕(-2)⊕(±sqrt5) eigenspaces.
+- Evidence: research.q161ae_face_dual_spectrum; standalone exact SymPy source-transcription executed in GPT local container, exit 0; new GitHub CI pending at commit time, not PASS.
+- Dead ends: None; the 14D diagnostic kernel is geometrically identified, not removed by this calculation.
+- Next step: Q161ad — extract actual original 190/H64/24-clock 20-face amplitude and evaluate its A=3 and A=1 projections; check all Q96 Ward generators.
+
 
 ### 2026-11-17 02:16 UTC — GPT — Q161ac native 20-face source-channel sensitivity
 - Task: Q161ab [compute], bounded native icosahedral source-to-six-axis diagnostic (not the full H64 tensor).
