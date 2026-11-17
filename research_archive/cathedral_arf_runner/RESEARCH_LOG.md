@@ -5,10 +5,12 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161af [compute] (Q161ad bounded native face-source observable projector) — GPT 2026-11-17: THEOREM exact rank-six projector and native Moore–Penrose reconstruction; full physical Q161ad OPEN.
+
 - [x] Q161ae [compute] (Q161ad bounded native dual-face spectral diagnostic) — GPT 2026-11-17: THEOREM exact A-spectrum, 1+5 observed and 14 invisible; full Q161ad remains open.
 
 - [x] Q161ac [compute] (Q161ab bounded native face-source six-channel diagnostic) — GPT 2026-11-17: THEOREM rank 6, nullity 14, exact Gram; full H64 physical source open.
-- [ ] Q161ad [compute] (Q161ab NEXT) extract full five-solid/190-cochain/H64/24-clock 20-face amplitude and evaluate B, then Q96 Ward generators.
+- [ ] Q161ad [compute] (Q161ab NEXT; Q161af projector now available; test 14D invisible component and Q96 Ward) extract full five-solid/190-cochain/H64/24-clock 20-face amplitude and evaluate B, then Q96 Ward generators.
 
 - [x] Q161y [compute] (Q161o bounded native A5 face-axis orbit) — GPT 2026-11-16: THEOREM; ten triples form 2-(6,3,2), A5 orbit 10/stabilizer 6; full physical source open.
 - [ ] Q161ab [compute] (Q161o NEXT): recover original H64/24-clock-to-20-face source projection and calculate its six-axis sum-zero Gram component and Q96 Ward commutators.
@@ -1937,3 +1939,8 @@ Original Q161e face-vertex C, P3/P5 and 24-track cyclic forward difference D24: 
 
 ### 2026-11-16 — Q161x — GPT — THEOREM
 Status: CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original icosahedral antipodal-pair face geometry yields ten axis triples supporting faces. Exact Q161w Q_i P diag(w63) M stacks have rank 20 iff the chosen triple is a face-axis support; all other triples rank 18. Complementary triples have opposite ranks. Evidence: standalone SymPy Q161X_AXIS_GEOMETRY.py executed locally, exit 0; all 20 cases asserted. No measured or fitted inputs; no physical gate closed. Next: does the original full five-solid/190-cochain/24-clock H64 source select one of ten geometrically active triples and preserve all Q96 Ward generators?
+
+### 2026-11-17 — GPT — Q161af exact native face-source projector
+- Result: THEOREM; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original golden icosahedral 20-face dual adjacency A and six-bit incidence M with P/Q parity readout B satisfy Pi=A(A+2I)(A²-5I)(3A-8I)/60=Bᵀ(BBᵀ)⁻¹B. Exact Pi²=Pi=Piᵀ, rank Pi=6, rank(I-Pi)=14, B(I-Pi)=0. The observable part of any face source f is reconstructed from Bf by Bᵀ(BBᵀ)⁻¹Bf, without a fitted regularizer.
+- Evidence: GPT standalone Python/SymPy certificate executed locally, exit 0, output Q161af EXACT PASS; source/proof at research_archive/2026-11-17_q161af_native_face_projector/. CI verdict pending. No physical gate closed.
+- Next concrete question: extract original full five-solid/H64/24-clock 20-face source f and test whether its 14D invisible component is physically active under all Q96 Ward generators.

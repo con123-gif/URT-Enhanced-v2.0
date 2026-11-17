@@ -1856,3 +1856,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-17_q161ae_face_dual_spectrum/Q161AE_FACE_KERNEL.py"
 timeout = 120
+
+[[check]]
+id = "research.q161af_native_face_projector"
+stage = "research_a"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-17_q161af_native_face_projector/Q161AF_PROJECTOR.py"
+timeout = 120
