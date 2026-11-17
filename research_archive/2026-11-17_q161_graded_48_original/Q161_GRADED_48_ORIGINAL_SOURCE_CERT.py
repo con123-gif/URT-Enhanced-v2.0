@@ -36,7 +36,7 @@ assert sum(abs(er)<1e-8)==112 and sum(abs(el)<1e-8)==84
 print("Q125 original 444-sector charged spectra",len(er),len(el),flush=True)
 D=np.array(v.DIRECTIONS,int); sites=list(v.SITES); ind=dict(v.SITE_INDEX)
 shape=np.array(v.LATTICE_SHAPE)
-assert D.tolist()==[(0,1,0,0),(0,0,1,0),(0,0,0,1)]+[(1,*bits) for bits in product((0,-1),repeat=3)]
+assert D.tolist()==[list(x) for x in ([(0,1,0,0),(0,0,1,0),(0,0,0,1)]+[(1,*bits) for bits in product((0,-1),repeat=3)])]
 I4=np.eye(4,dtype=complex)
 gams,g5=v.gamma_matrices()
 r=float(v.R_EXACT)
