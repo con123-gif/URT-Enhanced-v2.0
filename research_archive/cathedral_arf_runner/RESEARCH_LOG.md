@@ -398,6 +398,10 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 GPT — Q161 thermodynamic 4D gauge mass theorem and source-native Maxwell k²
+- Exact Q125/v61 flat 4-connection shift A→A+D a equals p→p+qa inside ORIGINAL Wilson; full BZ integral invariant ⇒ zero thermodynamic four-vector constant mass Hessian for arbitrary flux. Original bare flat Wilson no zeros across BZ (0<M<1,r>0) ⇒ analytic local response. Original 888 Q125 squared chiral masses numerically 43 spectral groups, full uncompressed Hessian agrees ~1e-16. Source-native physical four-component 4+7 Schur Zt=570.885/627.791/639.232, Zs=1462.465/1817.822/1897.556 at 12^4/18^4/20^4; positive, anisotropic. Local original-formula run completed; source-native CI registered at research_archive/2026-11-17_q161_thermodynamic_photon/. No physical c or alpha fitted or claimed.
+
+
 ### 2026-11-17 — GPT — Q161 NEW 11→4 gauge bridge & unimodular tetrad
 - Result: Exact native 11-link gamma linearization gives Dirac tetrad e=[[1,-1/2,-1/2,-1/2],[0,1,0,0],[0,0,1,0],[0,0,0,1]], det e=1. Four-spacetime-1-form line-integral map E(k) obeys E(ik)=1-exp(-i Dk) EXACT. At new original Q125 graded curved stationary Ns4/Ns6 branches, Schur eliminate the seven extra original link polarizations to obtain 4×4 gauge-covariant response (one longitudinal Ward zero, 3 positive Euclidean transverse on k≠0). Independent local original-formula NS4,NS6 finite check: identical k0=pi/3 Pi_yy=276.864989,278.320406 (0.523% drift). This is not c_eff=1 or a continuum pole.
 - Local scripts and full results in sandbox; source-native CI certificate added to research_archive/2026-11-17_q161_four_one_form/ ; CI pending. Next: photon k² residues versus NS, NT; treat toron stiffness separately. Whole 190/H64/24 premise unaltered.

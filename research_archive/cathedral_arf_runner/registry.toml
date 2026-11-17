@@ -1990,3 +1990,12 @@ gating = true
 run = "python -u research_archive/2026-11-17_q161_four_one_form/Q161_FOUR_ONE_FORM_NATIVE_CERT.py {out}/Q161_FOUR_ONE_FORM_RESULT.json"
 outputs = ["{out}/Q161_FOUR_ONE_FORM_RESULT.json"]
 timeout = 420
+
+[[check]]
+id = "research.q161_thermodynamic_photon_native"
+stage = "research_a"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_thermodynamic_photon/Q161_THERMODYNAMIC_PHOTON_NATIVE_CERT.py {out}/Q161_THERMODYNAMIC_PHOTON_RESULT.json"
+outputs = ["{out}/Q161_THERMODYNAMIC_PHOTON_RESULT.json"]
+timeout = 600
