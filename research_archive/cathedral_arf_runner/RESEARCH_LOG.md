@@ -396,6 +396,12 @@ commit as your result.
 
 ## Log
 
+## 2026-11-17 — GPT Q161 native nonzero-flux continuation (THEOREM + CI REPAIR)
+- Exact all-11-link /48-momentum phase-conjugation theorem at Astar: 1056/1056 rational congruences; charge-1 vs 1/3 gradients cancel using Q96 3:9 multiplicity, q=2/3 self cancels. Works for any nonnegative internal squared masses; proves stationarity of this finite spectral action, not stability. Local standalone certificate exited 0.
+- GitHub prior source-native 481-mode CI FAILED (run 44095436434). Root code bug: undefined k in mu2; repaired using the already frozen k_KMS=Delta/(1+Delta²). No fitted coefficient, no Hessian signs modified. New CI PENDING. Exact stationarity does not establish 481 positive physical modes by itself.
+- Resume: Verify registered native result first; then larger-volume photon residue and time/spatial kinetic ratio around NEW Astar, not retired ungraded Q152. Preserve Q161ad full H64/24 physical source frontier.
+
+
 ### 2026-11-17 — GPT — Q161 graded NONZERO-FLUX finite vacuum (new construction)
 - Task: Resolve the 72 unstable finite gauge modes of the NEW original Q101/Q125 444×Q96/v61 graded action by solving its own nonlinear determinant, not importing Q152's old ungraded vacuum.
 - Result: THEOREM/NUMERICAL CERTIFICATE — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; continuum physics OPEN.

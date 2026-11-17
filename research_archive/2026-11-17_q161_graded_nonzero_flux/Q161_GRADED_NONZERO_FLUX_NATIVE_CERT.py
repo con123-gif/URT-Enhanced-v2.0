@@ -67,7 +67,10 @@ cl,cr=charge_mult("L"),charge_mult("R")
 assert cl==cr==Counter({0:6,3:3,-3:3,2:9,-2:9,1:9,-1:9})
 charges={j/3:c for j,c in cl.items() if j}
 assert abs(sum(c*q*q for q,c in charges.items())-16)<1e-10
-mu2=(k*np.r_[er,el])**2
+# Fix: source-native KMS transfer scale, NOT a free/unbound k symbol.
+k_KMS=float(v.DELTA)/(1.0+float(v.DELTA)**2)
+assert 0.0 < k_KMS < 0.01
+mu2=(k_KMS*np.r_[er,el])**2
 M=float(v.M_EXACT)
 ferm=np.array([(np.pi*(2*t+1)/6,*[np.pi*a for a in b])
                for t in range(6) for b in product((0,1),repeat=3)])

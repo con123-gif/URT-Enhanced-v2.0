@@ -1956,3 +1956,11 @@ gating = true
 run = "python research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_GRADED_NONZERO_FLUX_NATIVE_CERT.py {out}/Q161_GRADED_NONZERO_FLUX_RESULT.json"
 outputs = ["{out}/Q161_GRADED_NONZERO_FLUX_RESULT.json"]
 timeout = 600
+
+[[check]]
+id = "research.q161_flux_exact_stationarity"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_FLUX_EXACT_STATIONARITY.py"
+timeout = 60
