@@ -398,6 +398,11 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Q161 384-site graded curved-gauge continuation
+- Compute same native Q125/v61 graded determinant on NS4, NS6, not old Q109/Q152. Exact all-even stationary Astar is unstable at NS4 and NS6. Descent + Newton finds two positive-Hessian stationary NS4 solutions. All 384 Fourier blocks at EACH yield (3841+,0-,383 gauge). Curved branch min eigen .133513805, nonzero flux; lower action flat branch min .004906921. Direct finite determinant first-spatial-mode FD agrees 3.464e-7. Independent original-formula LOCAL execution; source-native registered CI PENDING. Full NS6 physical Hessian and continuum still open.
+- Files: research_archive/2026-11-17_q161_ns4_curved_vacuum/ ; preserve 190/H64/24 provenance and no-fitted-observable rule.
+
+
 ### 2026-11-17 16:13 UTC — GPT — Gate B/D — Q161as native edge-energy of canonical six-readout lift
 - Task: Q161ad bounded original Q161z/Q161ac face readout and Q161al native face-edge Hodge Gram.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.

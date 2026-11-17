@@ -1972,3 +1972,12 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-17_q161as_native_edge_energy/Q161AS_EDGE_ENERGY.py"
 timeout = 180
+
+[[check]]
+id = "research.q161_ns4_curved_native"
+stage = "research_b"
+claim = "native"
+gating = true
+run = "python -u research_archive/2026-11-17_q161_ns4_curved_vacuum/Q161_NS4_CURVED_GRADED_NATIVE.py {out}/Q161_NS4_RESULT.json"
+outputs = ["{out}/Q161_NS4_RESULT.json"]
+timeout = 600
