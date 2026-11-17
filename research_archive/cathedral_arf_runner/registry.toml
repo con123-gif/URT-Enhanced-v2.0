@@ -2056,3 +2056,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-17_q161ay_native_face_channel_covariance/Q161AY_NATIVE_FACE_COVARIANCE_CERT.py"
 timeout = 240
+
+[[check]]
+id = "research.q161az_dual_face_covariance"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-17_q161az_dual_adjacency_covariance/Q161AZ_CERT.py"
+timeout = 240
