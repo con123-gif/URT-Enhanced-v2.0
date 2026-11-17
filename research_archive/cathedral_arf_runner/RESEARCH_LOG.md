@@ -396,6 +396,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-17 — GPT — Q161ad / Part 21 exact grading and v61 review
+- Task: Independent strict audit of user Step 7/8 and native charged/continuum assumptions.
+- Result: REVIEW (PARTIAL) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for native finite ranks, hidden identities, and spin grading; PHYSICAL GATE OPEN.
+- Statement: Exact integer W, 137 dual trace, 444 Q125a parity and rank332/null112, exact mod-2 rank477 and 4 v61 torons confirmed. Native v61 temporal offsets are binomial 1/3/3/1, not the proposed 1/6/1; raw monochromatic f=(Cs)^2 differs on all 720 active original-source edges from Q101-projected f=(C P_linear s)^2. Anticommutator {Gamma_s,H_ch}=0 alone does not imply zero graded mixed term without [h_v61,H_ch]=0; old additive Q159b Hessian formula does not compute new graded photon response.
+- Evidence: locally executed Python certificate `research_archive/2026-11-17_q161_part21_audit/Q161_PART21_GRADED_PHYSICS_AUDIT_2026_11_17.py`; CI PENDING at push.
+- Next step: Keep Q161ad open. Check original Q96 charge-connected [h_v61(A),H_ch(A)] to first order in all 528 gauge variables; then derive NEW graded current/seagull and test native gauge Hessian.
+
+
 ### 2026-11-17 12:00 UTC — GPT — Q161an — spiral/frustration/URT conversation recovery and physical charge audit
 - Task: Recover and execute unsaved 2026-11-17 full-Cathedral source, golden frustration, 64-history, entropy and charged-transport calculations without resetting existing Q161.
 - Result: THEOREM for finite golden closure and rational 29/15 saddle prefactor; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Remaining driven NESS and spiral-to-rail constructions CONDITIONAL.

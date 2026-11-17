@@ -1922,3 +1922,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_10orbit_coupled_current.py"
 timeout = 150
+
+[[check]]
+id = "research.q161_part21_native_grading_audit"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-17_q161_part21_audit/Q161_PART21_GRADED_PHYSICS_AUDIT_2026_11_17.py"
+timeout = 240
