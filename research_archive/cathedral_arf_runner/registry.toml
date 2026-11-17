@@ -2064,3 +2064,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-17_q161az_dual_adjacency_covariance/Q161AZ_CERT.py"
 timeout = 240
+
+[[check]]
+id = "research.q161ba_dual_face_spectral_weights"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-17_q161ba_dual_face_spectral_weights/Q161BA_CERT.py"
+timeout = 180

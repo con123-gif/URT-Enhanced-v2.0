@@ -8,6 +8,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161ax [compute] (Q161ad bounded native 30-ground Q101 face covariance) — GPT 2026-11-17: THEOREM exact Σ1=0, Tr Σ=416/25; full physical Q161ad remains OPEN.
 - [x] Q161ay [compute] (Q161ax NEXT): exact six-history covariance and 14-null-channel projection — GPT 2026-11-17: THEOREM, 11 excited invisible directions; Q96 Ward physical coupling remains OPEN.
 - [ ] Q161az [compute] (Q161ay NEXT): Q101 dual-face covariance commutation exact subcase GPT 2026-11-17; original Q96 charged source coupling on 11 excited invisible directions and native 24-clock Ward test STILL OPEN.
+- [x] Q161ba [compute] (Q161az native dual-face spectral decomposition) — GPT 2026-11-17: THEOREM exact six sector traces; physical Q96/H64/24 Ward still OPEN.
 
 - [x] Q161as [compute] (Q161ad bounded native six-readout canonical lift edge energy) — GPT 2026-11-17: THEOREM, Tᵀ(3I−A)T=(16875/64)(I−J/6); 14D physical source and Q96 Ward remain OPEN.
 
@@ -401,6 +402,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-17 23:12 UTC — GPT — Gate B/D — Q161ba native dual-face covariance spectral weights
+- Task: Q161ba bounded Q161az spectral-sector certificate using original Q101 face sources and dual adjacency.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Tr(P_lambda Sigma) at lambda=(3,-2,1,sqrt5,-sqrt5,0) equals (0,32/15,368/75,16/5,0,32/5), exactly; the -sqrt5 native 3D sector is dark.
+- Evidence: research.q161ba_dual_face_spectral_weights; standalone Q(sqrt5) rational-pair and SymPy 6x6 Vandermonde executed locally exit 0; CI on this commit pending.
+- Dead ends: Exact sector decomposition alone does not supply the Q96 charged source or 24-clock Ward intertwiner.
+- Next step: Q161az [compute] extract original Q96/H64/24-clock charged coupling on the four excited sectors and test each native Ward commutator.
+
+
 
 ### 2026-11-17 22:14 UTC — GPT — Q161az — original dual-face source covariance intertwiner
 - Task: Q161az bounded exact source-native subcase: test whether the Q101 30-ground nonlinear face covariance respects original 20-face dual adjacency before attempting charged 24-clock coupling.
