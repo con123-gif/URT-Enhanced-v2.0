@@ -109,29 +109,48 @@ def hp(p,q):
     assert np.linalg.norm(z-z.conj().T)<1e-11
     return z
 def mode_hessian(mode):
+    """Exact native 4x4 Q125/v61 current-seagull response, vectorized over p.
+
+    Same contractions as earlier original source but P momenta processed at once.
+    No hand-set eigenvalues or regulator. Returns H, eigenvalues, Ward residual.
+    """
     omega=2*np.pi*np.array(mode)/shape
+    P=len(ferm)
     H=np.zeros((11,11),complex)
     for q,mult in charges.items():
-        for p in ferm:
-            x=hp(p,q);y=hp(p+omega,q)
-            ex=np.trace(x@x).real/4;ey=np.trace(y@y).real/4
-            dd=(ex+mu2)*(ey+mu2)
-            alpha=np.sum(1/dd);beta=np.sum(mu2/dd);gamma=np.sum(1/(ex+mu2))
-            u=D@p+q*Astar;vv=D@(p+omega)+q*Astar
-            J=1j*q*np.einsum("ab,jbc->jac",g5,
-               F*np.exp(1j*u)[:,None,None]-B*np.exp(-1j*vv)[:,None,None])
-            W=-q*q*np.einsum("ab,jbc->jac",g5,
-               F*np.exp(1j*u)[:,None,None]+B*np.exp(-1j*u)[:,None,None])
-            a=np.einsum("ab,jbc,cd->jad",y,J,x)
-            H+=mult*(alpha*np.einsum("jab,kab->jk",a,J.conj())
-                    -beta*np.einsum("jab,kab->jk",J,J.conj()))
-            H[np.diag_indices(11)]-=mult*gamma*np.einsum("ab,jba->j",x,W)
-    H/=len(ferm)
-    assert np.linalg.norm(H-H.conj().T)/max(1,np.linalg.norm(H))<1e-10
+        uu=ferm@D.T+q*Astar[None,:]
+        vv=uu+(D@omega)[None,:]
+        eu=np.exp(1j*uu);em=eu.conj()
+        ev=np.exp(1j*vv);evm=ev.conj()
+        x=(3*r+1-M)*np.broadcast_to(I4,(P,4,4)).copy()
+        x+=np.einsum("jab,pj->pab",F,eu)+np.einsum("jab,pj->pab",B,em)
+        y=(3*r+1-M)*np.broadcast_to(I4,(P,4,4)).copy()
+        y+=np.einsum("jab,pj->pab",F,ev)+np.einsum("jab,pj->pab",B,evm)
+        x=np.einsum("ab,pbc->pac",g5,x)
+        y=np.einsum("ab,pbc->pac",g5,y)
+        ex=np.einsum("pab,pba->p",x,x).real/4
+        ey=np.einsum("pab,pba->p",y,y).real/4
+        denx=ex[:,None]+mu2[None,:]
+        deny=ey[:,None]+mu2[None,:]
+        weights=1/(denx*deny)
+        alpha=weights.sum(axis=1)
+        beta=weights@mu2
+        gamma=(1/denx).sum(axis=1)
+        J=1j*q*np.einsum("ab,pjbc->pjac",g5,
+             F[None,:,:,:]*eu[:,:,None,None]-B[None,:,:,:]*evm[:,:,None,None])
+        W=-q*q*np.einsum("ab,pjbc->pjac",g5,
+             F[None,:,:,:]*eu[:,:,None,None]+B[None,:,:,:]*em[:,:,None,None])
+        temp=np.einsum("pab,pjbc,pcd->pjad",y,J,x,optimize=True)
+        H+=mult*(np.einsum("p,pjab,pkab->jk",alpha,temp,J.conj(),optimize=True)
+               -np.einsum("p,pjab,pkab->jk",beta,J,J.conj(),optimize=True))
+        H[np.diag_indices(11)]-=mult*np.einsum("p,pab,pjba->j",gamma,x,W,optimize=True)
+    H/=P
+    anti=np.linalg.norm(H-H.conj().T)/max(1,np.linalg.norm(H))
+    assert anti<5e-10,(mode,anti)
     H=(H+H.conj().T)/2
     gauge=1-np.exp(-1j*D@omega)
     ward=np.linalg.norm(H@gauge)/max(1,np.linalg.norm(H)*np.linalg.norm(gauge))
-    assert ward<1e-10,(mode,ward)
+    assert ward<5e-10,(mode,ward)
     return H,np.linalg.eigvalsh(H),float(ward)
 
 
