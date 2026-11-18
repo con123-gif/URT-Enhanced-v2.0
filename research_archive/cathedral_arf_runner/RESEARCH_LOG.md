@@ -5,6 +5,13 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+## 2026-11-18 — GPT Q161bm — THEOREM / CLOSED INTERNALLY; PHYSICAL IDENTIFICATION PENDING
+
+Native Q101 30-ground nonlinear face covariance transported through actual 30-edge oriented face boundary D: exact Tr(D Sigma D^T)=1232/25−16√5/5 and Tr[(D Sigma D^T)^2]=1759232/9375−512√5/25, with D^TD=3I−A_dual. Independent standalone local exact SymPy certificate exit 0; original Q161bl geometry reused and full 4096 sign words checked. This is an edge-channel certificate, not a derived H64/24 seam or Q96 Ward closure. NEXT: determine original H64 edge-to-clock coupling and calculate Q96 charged Ward intertwining.
+
+- [x] Q161bm [compute] (Q161bg bounded native edge-covariance transport) — GPT 2026-11-18: exact edge covariance moments certified; physical Q161bg remains OPEN.
+
+
 ## 2026-11-18 — GPT Q161bl — THEOREM / CLOSED INTERNALLY; PHYSICAL IDENTIFICATION PENDING
 
 Original Q101 nonlinear face-source covariance: exact dual dodecahedral distance resolves the three disjoint-face covariance classes. d=3: 16/375 (120 ordered); d=4: 4/375−4√5/75 (60); d=5: −16/125 (20). Native 12-vertex/20-face C, original Pl, all 30 original frustrated histories, exact SymPy Q(√5), dual BFS. Local standalone fail-on-error certificate exit 0 (2026-11-18). Files: research_archive/2026-11-18_q161bl_dual_face_distance/Q161BL_CERT.py and Q161BL_THEOREM.md. This does not supply source-derived H64/24 seam or Q96 Ward; Q161bg remains open. NEXT: calculate H64 transport of these dual-distance eigenspaces and charged Q96 Ward intertwining.
