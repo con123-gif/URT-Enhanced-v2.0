@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-18 18:18 UTC — GPT — Q161bs native 24-clock irrational holonomy
+- Task: Q161bs bounded original 190/64/24 clock holonomy obstruction to bare Golay-coordinate identification.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: 24/phi²=36−12√5 irrational; for nonzero rational q, exp(2πiq24/phi²) has infinite order; no periodic gauge or pure finite-order Golay permutation supplies native holonomy.
+- Evidence: research.q161bs_native_clock_holonomy; standalone exact SymPy in GPT local container exit 0; preceding CI #226 PASS, new CI pending.
+- Dead ends: bare Golay 24-coordinate permutation cannot implement the original temporal clock holonomy; a separately derived phase-decorated map remains possible. No original H64-to-clock J or Q96 Ward residual claimed.
+- Next step: Q161bt extract actual original H64/190-to-24 source-dependent J with native U(1) twist; calculate antipodal/reversal and Q96 charged Ward intertwining.
+
+
 ### 2026-11-18 17:15 UTC — GPT — Q161br native edge/24-clock reversal diagnostic
 - Task: Q161br bounded original Q101 oriented-edge and native 24-track shift/reversal subcase; H64 source map still sought.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
@@ -18,7 +27,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161bp [compute] (Q161bo NEXT; bounded native antipodal integral-class diagnostic): GPT 2026-11-18 exact antipodal even/odd Smith and spectra; original H64/24/Q96 transport remains OPEN.
 - [x] Q161bq [compute] (Q161bp NEXT; bounded native edge-parity subcase): GPT 2026-11-18 THEOREM ED=DP; image 9+10 and cycles 6+5; H64/24/Q96 physical transport remains OPEN.
 - [x] Q161br [compute] (Q161bq NEXT): GPT 2026-11-18 bounded exact native edge/24-track reversal diagnostic; original H64 J and Q96 Ward remain OPEN.
-- [ ] Q161bs [compute] (Q161br NEXT): extract actual original H64/190-to-24 source J, calculate antipodal/reversal intertwiner and Q96 charged Ward residual.
+- [x] Q161bs [compute] (Q161br NEXT): GPT 2026-11-18 exact original 24-clock irrational-holonomy subcase; full J remains OPEN (see Q161bs log).
+- [ ] Q161bt [compute] (Q161bs NEXT): extract actual original H64/190-to-24 source-dependent J with native U(1) twist, calculate antipodal/reversal intertwiner and Q96 charged Ward residual.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 

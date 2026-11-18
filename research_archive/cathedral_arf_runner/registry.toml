@@ -2186,3 +2186,11 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-18_q161br_edge_clock_reversal/Q161BR_CERT.py"
 timeout = 180
+
+[[check]]
+id = "research.q161bs_native_clock_holonomy"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-18_q161bs_native_clock_holonomy/Q161BS_CERT.py"
+timeout = 90
