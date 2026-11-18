@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-18 22:14 UTC — GPT — Q161bw native Q104 history spectrum
+- Task: bounded exact original sigma1 and native 24-clock cycle spectral certificate (subcase of source-dependent J request).
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: sigma1 characteristic (x^12-1)^5(x^4-1), minimal x^12-1; six invariant history modes. Conditional sigma1 tensor S24 characteristic (x^24-1)^64 and minimal x^24-1.
+- Evidence: research.q161bw_native_sigma_spectrum; standalone local SymPy integer-orbit certificate exit 0; preceding orchestrator #229 PASS; new CI pending.
+- Limitation: Does NOT derive original 190/H64-to-24 J or Q96 Ward; physical gates remain open.
+- Next question: locate native non-product source-defined J and compute J Q96-(oplus_q T_q)J exactly.
+
+
 ### 2026-11-18 21:12 UTC — GPT — Q161bv native history-clock charged kernel
 - Task: Q161bv bounded original Q104 sigma1 64-history x 24-clock with Q96 rational-charge test.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional product coupling).
@@ -46,7 +55,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161br [compute] (Q161bq NEXT): GPT 2026-11-18 bounded exact native edge/24-track reversal diagnostic; original H64 J and Q96 Ward remain OPEN.
 - [x] Q161bs [compute] (Q161br NEXT): GPT 2026-11-18 exact original 24-clock irrational-holonomy subcase; full J remains OPEN (see Q161bs log).
 - [x] Q161bt [compute] (bounded Q161bu rational-charge spectral subcase): GPT 2026-11-18 exact conditional clock separation; physical H64/190/24/Q96 seam OPEN.
-- [x] Q161bv [compute] (bounded original Q104 sigma1/24/Q96 charged-kernel subcase) — GPT 2026-11-18: exact native 1536-state determinant/ranks; source-derived J and Ward remain OPEN.\n- [ ] Q161bw [compute]: recover original source-defined 190/H64-to-24 J; compute Q96 charged Ward residual without assumed product coupling.
+- [x] Q161bv [compute] (bounded original Q104 sigma1/24/Q96 charged-kernel subcase) — GPT 2026-11-18: exact native 1536-state determinant/ranks; source-derived J and Ward remain OPEN.\n- [x] Q161bw [compute] (bounded native Q104 spectral subcase): GPT 2026-11-18 exact sigma1 and sigma1×S24 characteristic/minimal polynomials; source-dependent J remains OPEN.
+- [ ] Q161bx [compute]: recover original source-defined 190/H64-to-24 J and compute Q96 charged Ward residual without assumed product coupling.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 
