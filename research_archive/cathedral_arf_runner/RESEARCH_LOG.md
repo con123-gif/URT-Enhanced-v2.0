@@ -5,6 +5,14 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-18 21:12 UTC — GPT — Q161bv native history-clock charged kernel
+- Task: Q161bv bounded original Q104 sigma1 64-history x 24-clock with Q96 rational-charge test.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional product coupling).
+- Statement: sigma1 has cycle lengths 12x5 and 4x1; joint clock-history map has 64 cycles of length 24; det D_q=(1-exp(2*pi*i*24*q/phi^2))^64; rank 1472/nullity 64 at q=0, rank 1536/nullity 0 for six nonzero Q96 charge values.
+- Evidence: research.q161bv_native_history_clock_charge; standalone exact SymPy + 1536-state integer orbit script executed GPT local container exit 0; preceding CI #228 PASS; new CI pending.
+- Dead ends: Conditional tensor-product clock-charge rule does NOT recover original source-dependent 190/H64-to-24 J or physical Q96 Ward.
+- Next step: Q161bw extract actual source-defined 190/H64-to-24 J and compute J Q96 - (oplus_q T_q)J exactly.
+
 ### 2026-11-18 20:13 UTC — GPT — Q161bu original charged clock spectral separation
 - Task: Q161bt bounded native 24-clock charge twist.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional embedding).
@@ -38,7 +46,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161br [compute] (Q161bq NEXT): GPT 2026-11-18 bounded exact native edge/24-track reversal diagnostic; original H64 J and Q96 Ward remain OPEN.
 - [x] Q161bs [compute] (Q161br NEXT): GPT 2026-11-18 exact original 24-clock irrational-holonomy subcase; full J remains OPEN (see Q161bs log).
 - [x] Q161bt [compute] (bounded Q161bu rational-charge spectral subcase): GPT 2026-11-18 exact conditional clock separation; physical H64/190/24/Q96 seam OPEN.
-- [ ] Q161bv [compute]: recover actual source-dependent H64/190-to-24 J and compute exact Q96 Ward residual.
+- [x] Q161bv [compute] (bounded original Q104 sigma1/24/Q96 charged-kernel subcase) — GPT 2026-11-18: exact native 1536-state determinant/ranks; source-derived J and Ward remain OPEN.\n- [ ] Q161bw [compute]: recover original source-defined 190/H64-to-24 J; compute Q96 charged Ward residual without assumed product coupling.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 

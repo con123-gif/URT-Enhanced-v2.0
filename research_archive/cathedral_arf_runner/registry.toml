@@ -2202,3 +2202,11 @@ claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bu_clock_charge_spectral/Q161BU_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161bv_native_history_clock_charge"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bv_native_history_clock_charge/Q161BV_CERT.py"
+timeout = 90
