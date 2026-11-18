@@ -5,6 +5,12 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+## 2026-11-18 — GPT Q161bl — THEOREM / CLOSED INTERNALLY; PHYSICAL IDENTIFICATION PENDING
+
+Original Q101 nonlinear face-source covariance: exact dual dodecahedral distance resolves the three disjoint-face covariance classes. d=3: 16/375 (120 ordered); d=4: 4/375−4√5/75 (60); d=5: −16/125 (20). Native 12-vertex/20-face C, original Pl, all 30 original frustrated histories, exact SymPy Q(√5), dual BFS. Local standalone fail-on-error certificate exit 0 (2026-11-18). Files: research_archive/2026-11-18_q161bl_dual_face_distance/Q161BL_CERT.py and Q161BL_THEOREM.md. This does not supply source-derived H64/24 seam or Q96 Ward; Q161bg remains open. NEXT: calculate H64 transport of these dual-distance eigenspaces and charged Q96 Ward intertwining.
+
+- [x] Q161bl [compute] (Q161bk NEXT): GPT 2026-11-18 THEOREM exact native dual-face distance d=3/4/5 covariance classes; Q161bg source-derived H64/24/Q96 seam remains OPEN.
+
 - [x] Q161bj [compute] (Q161bg bounded original Q101 nonlinear face-intensity ensemble mean) — GPT 2026-11-18: THEOREM exact mean (3/5)1_20 over all 30 native frustrated words; source-dependent H64/Q96/24 seam remains OPEN.
 
 - [x] Q161bi [compute] (Q161bg bounded original total-face-flux seam test) — GPT 2026-11-18: THEOREM total quadratic face flux exactly 12 on all 30 original Q101 ground histories; scalar-only seam nonselection; Q161bg remains OPEN. CI repair 2026-11-18: exact entrywise SymPy normalization fixes false structural-equality assertion; mathematical claim unchanged.

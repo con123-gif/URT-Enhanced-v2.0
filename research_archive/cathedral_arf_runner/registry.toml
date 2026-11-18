@@ -2129,3 +2129,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bj_face_intensity_mean/Q161BJ_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161bl_native_dual_face_distance"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bl_dual_face_distance/Q161BL_CERT.py"
+timeout = 120
