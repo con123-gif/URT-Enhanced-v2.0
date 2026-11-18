@@ -2194,3 +2194,11 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-18_q161bs_native_clock_holonomy/Q161BS_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161bu_native_charge_clock_separation"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bu_clock_charge_spectral/Q161BU_CERT.py"
+timeout = 90

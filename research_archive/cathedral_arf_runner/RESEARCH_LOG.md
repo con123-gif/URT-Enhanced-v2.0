@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-18 20:13 UTC — GPT — Q161bu original charged clock spectral separation
+- Task: Q161bt bounded native 24-clock charge twist.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional embedding).
+- Statement: T_q=exp(2πiq/φ²)S_24 has charpoly z^24−exp(2πi24q/φ²); distinct rational charges have disjoint spectra, all 21 Q96-label pairs certified; R T_q R=T_(−q)^−1.
+- Evidence: research.q161bu_native_charge_clock_separation; exact SymPy local exit 0; preceding CI #227 PASS; new CI pending.
+- Dead ends: Not a recovered H64/190 source-dependent seam; physical Ward not derived.
+- Next step: Q161bv extract actual H64/190-to-24 J and calculate J Q96−(⊕_q T_q)J exactly.
+
+
 ### 2026-11-18 18:18 UTC — GPT — Q161bs native 24-clock irrational holonomy
 - Task: Q161bs bounded original 190/64/24 clock holonomy obstruction to bare Golay-coordinate identification.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
@@ -28,7 +37,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161bq [compute] (Q161bp NEXT; bounded native edge-parity subcase): GPT 2026-11-18 THEOREM ED=DP; image 9+10 and cycles 6+5; H64/24/Q96 physical transport remains OPEN.
 - [x] Q161br [compute] (Q161bq NEXT): GPT 2026-11-18 bounded exact native edge/24-track reversal diagnostic; original H64 J and Q96 Ward remain OPEN.
 - [x] Q161bs [compute] (Q161br NEXT): GPT 2026-11-18 exact original 24-clock irrational-holonomy subcase; full J remains OPEN (see Q161bs log).
-- [ ] Q161bt [compute] (Q161bs NEXT): extract actual original H64/190-to-24 source-dependent J with native U(1) twist, calculate antipodal/reversal intertwiner and Q96 charged Ward residual.
+- [x] Q161bt [compute] (bounded Q161bu rational-charge spectral subcase): GPT 2026-11-18 exact conditional clock separation; physical H64/190/24/Q96 seam OPEN.
+- [ ] Q161bv [compute]: recover actual source-dependent H64/190-to-24 J and compute exact Q96 Ward residual.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 
