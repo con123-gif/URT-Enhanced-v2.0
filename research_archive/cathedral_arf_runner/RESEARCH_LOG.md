@@ -6,7 +6,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161bb [compute] (Q161az exact native covariance purity) — GPT 2026-11-18: THEOREM Tr Sigma²=183808/9375, exact sector-scalar eigenvalues and rank 16; physical Ward remains OPEN.
-- [ ] Q161bc [compute] (Q161bb NEXT): compute Q96 Ward commutators on rank-16 covariance support under original 24-clock transport.
+- [x] Q161bc [compute] (Q161bb NEXT): native Q101 covariance × 24-clock exact moment subcase — GPT 2026-11-18 THEOREM; charged Q96 Ward remains OPEN.
+- [ ] Q161bd [compute] (Q161bc NEXT): extract original Q96/H64 charged generator and source-dependent 24-clock transport; calculate exact Ward commutator.
 
 - [x] Q161ax [compute] (Q161ad bounded native 30-ground Q101 face covariance) — GPT 2026-11-17: THEOREM exact Σ1=0, Tr Σ=416/25; full physical Q161ad remains OPEN.
 - [x] Q161ay [compute] (Q161ax NEXT): exact six-history covariance and 14-null-channel projection — GPT 2026-11-17: THEOREM, 11 excited invisible directions; Q96 Ward physical coupling remains OPEN.
@@ -405,6 +406,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-18 02:18 UTC — GPT — Q161bc — original Q101 covariance × 24-clock exact moments
+- Task: Q161bc; compute one bounded native covariance-clock certificate before any charged Ward claim.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: K=Sigma_Q101 tensor (D24^T D24) has rank 368, nullity 112, Tr K=19968/25 and Tr K²=8822784/3125 exactly; Sigma uses all 30 original Q101 frustrated ground states.
+- Evidence: research.q161bc_native_clock_covariance; independent full-original-geometry Python/Fraction/SymPy script executed locally, exit 0; new CI verdict PENDING (do not infer PASS).
+- Dead ends: this factorized kinematic clock cannot by itself establish any Q96 charged Ward commutator or source-dependent H64 transport.
+- Next step: Q161bd [compute], construct actual Q96/H64 charged generator on source-dependent 24-clock carrier and compute its first nonzero Ward commutator exactly.
+
 
 ### 2026-11-18 00:18 UTC — GPT — Gate D — Q161bb native covariance purity
 - Task: Q161az bounded exact original Q101 covariance scalar-sector test.

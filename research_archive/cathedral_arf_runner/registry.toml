@@ -2080,3 +2080,12 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bb_native_covariance_purity/Q161BB_CERT.py"
 timeout = 180
+
+
+[[check]]
+id = "research.q161bc_native_clock_covariance"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bc_native_clock_covariance/Q161BC_CERT.py"
+timeout = 180
