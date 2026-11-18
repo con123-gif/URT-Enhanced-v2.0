@@ -5,10 +5,20 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-18 17:15 UTC — GPT — Q161br native edge/24-clock reversal diagnostic
+- Task: Q161br bounded original Q101 oriented-edge and native 24-track shift/reversal subcase; H64 source map still sought.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: ED=DP, RSR=S^-1, R(S-S^-1)R=-(S-S^-1), rank(D tensor (S-S^-1))=418 and nullity=62; reflection eigenspaces 13+11.
+- Evidence: research.q161br_native_edge_clock_reversal; standalone SymPy locally exit 0; preceding CI #225 PASS, new CI pending.
+- Dead ends: No archived H64-to-clock source J was established; factorized D tensor A is only a diagnostic, not a physical transport; Q96 Ward untested.
+- Next step: Q161bs extract actual H64/190-to-24 source J, calculate its antipodal/reversal intertwiner and Q96 charged Ward residual.
+
+
 - [x] Q161bo [compute] (Q161bg bounded native integral dual-face Hodge subcase): GPT 2026-11-18 exact Smith invariants 1×14,2,12,60×3,0; physical H64/24/Q96 seam remains OPEN.
 - [x] Q161bp [compute] (Q161bo NEXT; bounded native antipodal integral-class diagnostic): GPT 2026-11-18 exact antipodal even/odd Smith and spectra; original H64/24/Q96 transport remains OPEN.
 - [x] Q161bq [compute] (Q161bp NEXT; bounded native edge-parity subcase): GPT 2026-11-18 THEOREM ED=DP; image 9+10 and cycles 6+5; H64/24/Q96 physical transport remains OPEN.
-- [ ] Q161br [compute] (Q161bq NEXT): extract original H64 edge-to-24-clock transport J from archived five-solid/190 operator; compute parity intertwiner and Q96 charged Ward residual.
+- [x] Q161br [compute] (Q161bq NEXT): GPT 2026-11-18 bounded exact native edge/24-track reversal diagnostic; original H64 J and Q96 Ward remain OPEN.
+- [ ] Q161bs [compute] (Q161br NEXT): extract actual original H64/190-to-24 source J, calculate antipodal/reversal intertwiner and Q96 charged Ward residual.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 

@@ -2178,3 +2178,11 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-18_q161bq_edge_parity/Q161BQ_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161br_native_edge_clock_reversal"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-18_q161br_edge_clock_reversal/Q161BR_CERT.py"
+timeout = 180
