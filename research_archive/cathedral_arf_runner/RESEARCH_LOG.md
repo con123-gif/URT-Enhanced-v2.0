@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
+
+
 ## 2026-11-18 — GPT Q161bm — THEOREM / CLOSED INTERNALLY; PHYSICAL IDENTIFICATION PENDING
 
 Native Q101 30-ground nonlinear face covariance transported through actual 30-edge oriented face boundary D: exact Tr(D Sigma D^T)=1232/25−16√5/5 and Tr[(D Sigma D^T)^2]=1759232/9375−512√5/25, with D^TD=3I−A_dual. Independent standalone local exact SymPy certificate exit 0; original Q161bl geometry reused and full 4096 sign words checked. This is an edge-channel certificate, not a derived H64/24 seam or Q96 Ward closure. NEXT: determine original H64 edge-to-clock coupling and calculate Q96 charged Ward intertwining.
@@ -436,6 +439,14 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+### 2026-11-18 13:14 UTC — GPT — Gate B/D — Q161bn native edge-covariance kernel
+- Task: Q161bg bounded native Q101 face-to-edge covariance kernel before H64/24 charged Ward transport.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: rank X=16, rank D=19, rank(DX)=16; edge covariance nullity 14=11 native edge cycles+3 source-invisible edge directions.
+- Evidence: research.q161bn_native_edge_kernel; independent local standalone exact SymPy exit 0; prior CI run 44301882555 PASS; new CI pending.
+- Dead ends: rank information alone does not define H64 edge-to-clock transport or a physical seam.
+- Next step: recover the original H64 edge-to-clock coupling and calculate its action on the 11+3 edge null directions and Q96 Ward commutator.
+
 
 ### 2026-11-18 09:10 UTC — GPT — Gate B/D — Q161bj exact native nonlinear face-intensity mean
 - Task: Q161bg bounded first-moment test on the original Q101 20-face source.

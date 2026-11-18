@@ -2145,3 +2145,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bm_edge_covariance/Q161BM_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161bn_native_edge_kernel"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bn_edge_kernel/Q161BN_CERT.py"
+timeout = 180
