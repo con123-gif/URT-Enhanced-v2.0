@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161bb [compute] (Q161az exact native covariance purity) — GPT 2026-11-18: THEOREM Tr Sigma²=183808/9375, exact sector-scalar eigenvalues and rank 16; physical Ward remains OPEN.
+- [ ] Q161bc [compute] (Q161bb NEXT): compute Q96 Ward commutators on rank-16 covariance support under original 24-clock transport.
+
 - [x] Q161ax [compute] (Q161ad bounded native 30-ground Q101 face covariance) — GPT 2026-11-17: THEOREM exact Σ1=0, Tr Σ=416/25; full physical Q161ad remains OPEN.
 - [x] Q161ay [compute] (Q161ax NEXT): exact six-history covariance and 14-null-channel projection — GPT 2026-11-17: THEOREM, 11 excited invisible directions; Q96 Ward physical coupling remains OPEN.
 - [ ] Q161az [compute] (Q161ay NEXT): Q101 dual-face covariance commutation exact subcase GPT 2026-11-17; original Q96 charged source coupling on 11 excited invisible directions and native 24-clock Ward test STILL OPEN.
@@ -402,6 +405,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-18 00:18 UTC — GPT — Gate D — Q161bb native covariance purity
+- Task: Q161az bounded exact original Q101 covariance scalar-sector test.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Tr(Sigma^2)=183808/9375; equality in all six native A-sector Cauchy bounds implies Sigma sector eigenvalues (0,8/15,368/375,16/15,0,8/5), multiplicities (1,4,5,3,3,4), rank 16.
+- Evidence: research.q161bb_native_covariance_purity; equivalent original-operator Fraction certificate executed locally exit 0; repository CI pending after commit. No physical gate closed.
+- Dead ends: No charged Q96 intertwiner follows from covariance centrality alone.
+- Next step: Q161bc [compute] calculate original Q96 charged vertex Ward commutators on rank-16 covariance support with native 24-clock transport.
+
 
 ### 2026-11-17 23:12 UTC — GPT — Gate B/D — Q161ba native dual-face covariance spectral weights
 - Task: Q161ba bounded Q161az spectral-sector certificate using original Q101 face sources and dual adjacency.

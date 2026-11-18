@@ -2072,3 +2072,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-17_q161ba_dual_face_spectral_weights/Q161BA_CERT.py"
 timeout = 180
+
+[[check]]
+id = "research.q161bb_native_covariance_purity"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bb_native_covariance_purity/Q161BB_CERT.py"
+timeout = 180
