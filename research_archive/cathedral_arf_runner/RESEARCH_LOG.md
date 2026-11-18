@@ -6,11 +6,20 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161bo [compute] (Q161bg bounded native integral dual-face Hodge subcase): GPT 2026-11-18 exact Smith invariants 1×14,2,12,60×3,0; physical H64/24/Q96 seam remains OPEN.
-- [ ] Q161bp [compute] (Q161bo NEXT): identify native H64 edge-to-24-clock action on the integral dual-face classes and test Q96 charged Ward intertwining.
+- [x] Q161bp [compute] (Q161bo NEXT; bounded native antipodal integral-class diagnostic): GPT 2026-11-18 exact antipodal even/odd Smith and spectra; original H64/24/Q96 transport remains OPEN.
+- [ ] Q161bq [compute] (Q161bp NEXT): recover the original H64/24 edge transport; test whether it respects native antipodal face parity and calculate Q96 Ward intertwining.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 
 
+
+### 2026-11-18 15:18 UTC — GPT — Q161bp native antipodal integral Hodge
+- Task: Q161bp bounded original Q101 30-edge/20-face Hodge parity decomposition toward H64/24 transport.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Under native antipodal face pairing, L=DᵀD restricts integrally to M+ and M− with Smith diagonals (1×5,2,10×3,0) and (1×5,2,6×3,12); characteristic polynomials λ(λ−2)^5(λ−5)^4 and (λ−3)^4(λ²−6λ+4)^3. Odd determinant 5184. Parity lattices have index 2^10; no direct critical-group decomposition claimed.
+- Evidence: research.q161bp_native_antipodal_hodge; standalone exact SymPy executed in GPT local container, exit 0; CI pending new commit.
+- Dead ends: Native H64 edge-to-24 transport has not been extracted; no seam or Q96 physical Ward claim.
+- Next step: Q161bq recover original H64/24 edge transport and test native antipodal parity then Q96 Ward commutator.
 
 ### 2026-11-18 14:10 UTC — GPT — Q161bo native integral dual-face Hodge
 - Task: Q161bg bounded exact integral structure of original Q101 dual-face/edge Hodge operator.

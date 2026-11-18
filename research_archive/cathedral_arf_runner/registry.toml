@@ -2161,3 +2161,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bo_dual_integral_hodge/Q161BO_SNF.py"
 timeout = 90
+
+[[check]]
+id = "research.q161bp_native_antipodal_hodge"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bp_antipodal_hodge/Q161BP_CERT.py"
+timeout = 120
