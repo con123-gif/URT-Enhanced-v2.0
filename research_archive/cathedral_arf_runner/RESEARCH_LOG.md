@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161be [compute] (Q161bd bounded native Q96 charge × 24-clock grading) — GPT 2026-11-18: CONDITIONAL exact rank 1932, nullity 372, traces 1536 and 2816; original source-dependent Ward remains OPEN.
+
 - [x] Q161bb [compute] (Q161az exact native covariance purity) — GPT 2026-11-18: THEOREM Tr Sigma²=183808/9375, exact sector-scalar eigenvalues and rank 16; physical Ward remains OPEN.
 - [x] Q161bc [compute] (Q161bb NEXT): native Q101 covariance × 24-clock exact moment subcase — GPT 2026-11-18 THEOREM; charged Q96 Ward remains OPEN.
 - [ ] Q161bd [compute] (Q161bc NEXT): extract original Q96/H64 charged generator and source-dependent 24-clock transport; calculate exact Ward commutator.
@@ -406,6 +408,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-18 03:15 UTC — GPT — Gate D — Q161be original Q96 charge × 24-clock exact grading
+- Task: Bounded Q161bd subcase: use original Q96 charged species multiplicities and native 24-cycle, without asserting a joined physical transport.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (conditional factorized diagnostic only).
+- Statement: For K=Q96²⊗(D24ᵀD24), original Q96 electric-charge multiplicities give Tr Q96²=32, Tr Q96⁴=176/9; hence rank K=1932, nullity=372, Tr K=1536 and Tr K²=2816. The factorization is a declared diagnostic, not a derived source-dependent transport or a Ward completion.
+- Evidence: research.q161be_q96_clock_charge; standalone exact fractions Python 3 executed locally, exit 0 on 2026-11-18; previous CI checkpoint #211 PASS at 02:40 UTC; new commit CI verdict pending.
+- Dead ends: The factorized charge-clock calculation cannot establish the actual Q96/H64 source-dependent Ward intertwiner.
+- Next step: Q161bd remains open: extract the actual Q125/Q96 source-dependent charged link map, and calculate [Q96, transported M] for a native nonconstant source on an original 24-clock path.
+
 
 ### 2026-11-18 02:18 UTC — GPT — Q161bc — original Q101 covariance × 24-clock exact moments
 - Task: Q161bc; compute one bounded native covariance-clock certificate before any charged Ward claim.
