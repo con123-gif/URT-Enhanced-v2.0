@@ -2113,3 +2113,11 @@ claim = "conditional"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bg_q96_seam_nonselection/Q161BG_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161bi_native_face_flux_seam"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bi_native_face_flux_seam/Q161BI_CERT.py"
+timeout = 120

@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161bi [compute] (Q161bg bounded original total-face-flux seam test) — GPT 2026-11-18: THEOREM total quadratic face flux exactly 12 on all 30 original Q101 ground histories; scalar-only seam nonselection; Q161bg remains OPEN.
+
 - [x] Q161bf [compute] (Q161bd bounded Q96 charge-holonomy clock subcase) — GPT 2026-11-18: THEOREM conditional exact rank 2280, nullity 24; Q161bd still OPEN.
 - [x] Q161bh [compute] (Q161bg bounded native Q96 electric Ward seam nonselection) — GPT 2026-11-18: THEOREM two distinct Ward-compatible 24-clock holonomies, ranks 2208 and 2304; source-selected Q161bg OPEN.\n- [ ] Q161bg [compute] (Q161bf NEXT): derive native five-solid/H64/Q101 source-determined 24-clock seam link and test Q96 Ward intertwining without an assumed flux.
 
@@ -419,6 +421,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-18 07:10 UTC — GPT — Gate B/D — Q161bi original Q101 scalar face-flux seam test
+- Task: Q161bi, bounded Q161bg native total-face-flux test.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING (scalar-only).
+- Statement: Original 20×12 face incidence C obeys CᵀC=5I+2A_ico; all 30 original Q101 ground words x have ||C P_l x||²=12. Hence h_x=F(||C P_l x||²) is history-independent for any F; no unique 24-clock seam follows.
+- Evidence: research.q161bi_native_face_flux_seam; local Python 3/SymPy certificate exit 0, all 4096 words enumerated; GitHub CI pending at commit time.
+- Dead ends: invariant total scalar flux cannot select a history-dependent seam; oriented face components are not excluded.
+- Next step: Q161bg — test oriented native face-source transport through original H64 for a nonconstant Q96 Ward-intertwining 24-clock link.
+
 
 ### 2026-11-18 04:16 UTC — GPT — Gate D — Q161bf conditional Q96 24-clock holonomy
 - Task: Q161bd bounded exact Q96 charged clock holonomy subcase; original Q101/H64 Ward join remains open.
