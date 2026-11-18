@@ -6,7 +6,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161bf [compute] (Q161bd bounded Q96 charge-holonomy clock subcase) — GPT 2026-11-18: THEOREM conditional exact rank 2280, nullity 24; Q161bd still OPEN.
-- [ ] Q161bg [compute] (Q161bf NEXT): derive native five-solid/H64/Q101 source-determined 24-clock seam link and test Q96 Ward intertwining without an assumed flux.
+- [x] Q161bh [compute] (Q161bg bounded native Q96 electric Ward seam nonselection) — GPT 2026-11-18: THEOREM two distinct Ward-compatible 24-clock holonomies, ranks 2208 and 2304; source-selected Q161bg OPEN.\n- [ ] Q161bg [compute] (Q161bf NEXT): derive native five-solid/H64/Q101 source-determined 24-clock seam link and test Q96 Ward intertwining without an assumed flux.
 
 - [x] Q161be [compute] (Q161bd bounded native Q96 charge × 24-clock grading) — GPT 2026-11-18: CONDITIONAL exact rank 1932, nullity 372, traces 1536 and 2816; original source-dependent Ward remains OPEN.
 
@@ -228,7 +228,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q87E [compute] (A) Derive all 16 native mirror-pair parity witnesses and an exact commutator-energy bound on Q77 history support; distinguish the exceptional x=0 witness from other blocks. — GPT 2026-11-14: THEOREM (conditional symbolic identity), local SymPy exit 0, CI pending; Q87 remains open.\n
 - A6 (Q112, GPT 2026-11-14): the original Q77 32-block Krawczyk t_x and actual Q82 hidden G5/A5 reduce the previously unproved offblock to one Fraction witness with certified 48 epsilon error bound. Script committed, CI pending. If nonzero, old G5-pure source fails for every positive coefficient and the true mixed quartet-resolvent is next (Q113).
 
-### ACTIVE PROBLEM A — LEGACY HISTORY TRACK: derive the history dictionary and chronology (Gate A). Every agent, every lane, until solved (RESEARCH_PROTOCOL.md §2). Only Con marks it solved.
+#### 2026-11-18 — GPT — Q161bh (bounded Q161bg native Q96 electric Ward seam nonselection)
+
+**Result:** THEOREM, CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, strictly for the conditional electric-charge Ward diagnostic. Native Q96 charge registry and 24-cycle yield two distinct clock holonomies h=1 and h=exp(2πi/3), both exactly electric-Ward commuting. Their full 96-species ranks/nullities are (2208,96) and (2304,0), respectively; |det D_h|²=0 or 3 per species. Consequently EM Ward alone does not select a seam. This does NOT establish a source-determined H64/Q101 link or full SU2xU1 Ward; Q161bg and Q161bd remain OPEN.
+
+**Execution evidence:** standalone fail-on-error SymPy `python /mnt/data/q161bg/Q161BG_CERT.py` executed locally 2026-11-18, exit 0; emitted both ranks and determinants. Committed reproducible version: `research_archive/2026-11-18_q161bg_q96_seam_nonselection/Q161BG_CERT.py`. CI must independently execute the registered check; no physical gate closed.
+
+**Next question:** Which native five-solid/H64/Q101 source operator fixes a specific 24-clock seam holonomy and passes the full source-dependent charged Ward intertwiner?
+
+## ACTIVE PROBLEM A — LEGACY HISTORY TRACK: derive the history dictionary and chronology (Gate A). Every agent, every lane, until solved (RESEARCH_PROTOCOL.md §2). Only Con marks it solved.
 **Research boundary:** this remains an unfinished historical research problem. Its inputs/results cannot be imposed on the NEW MOVING ASYMMETRY TRACK without an independently derived intertwiner; Q117a did not supply one.
 Goal: from original operators only, derive the native dictionary (up to exact symmetries), chronology/reversible history, and its natural generator, source coupling and response. The historical `H+c·Abar`, `c`, and weights `(4,2,2,0)` are comparative candidate outputs, NOT imposed goals. If a different native law emerges, pursue that law.
 Attempts so far (append yours; take the next untried one; never run a parallel copy of another agent's attempt):
