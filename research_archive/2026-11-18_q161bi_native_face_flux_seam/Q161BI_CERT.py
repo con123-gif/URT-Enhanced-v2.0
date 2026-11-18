@@ -11,7 +11,7 @@ C=s.Matrix(20,12,lambda i,j:int(j in faces[i]))
 opp={i:next(j for j in range(12) if all(v[i,k]+v[j,k]==0 for k in range(3))) for i in range(12)}
 Kv=s.Matrix(12,12,lambda i,j:int(i==opp[j]))
 Pl=s.simplify(v*(v.T*v).inv()*v.T+(s.eye(12)+Kv)/2-s.ones(12,12)/12)
-assert Pl*Pl==Pl
+assert (Pl*Pl-Pl).applyfunc(s.simplify)==s.zeros(12)  # exact Q(sqrt(5)) entrywise projector identity
 A=s.Matrix(12,12,lambda i,j:int((min(i,j),max(i,j)) in edges))
 assert C.T*C==5*s.eye(12)+2*A
 count=0

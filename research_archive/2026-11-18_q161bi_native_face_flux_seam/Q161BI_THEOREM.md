@@ -11,3 +11,7 @@ Construct the original 12 golden icosahedral vertices, 30 edges, 20 faces and fa
 **Execution:** Python 3 + SymPy, `python research_archive/2026-11-18_q161bi_native_face_flux_seam/Q161BI_CERT.py`, local exit 0, 2026-11-18. CI verdict must be checked after commit.
 
 **Next question:** Does the oriented face-source vector through the original H64 coupling induce a nonconstant 24-clock link satisfying all Q96 Ward generators?
+
+
+## 2026-11-18 CI repair
+The CI failure arose at `assert Pl*Pl==Pl`: unsimplified SymPy radical expressions are structurally unequal despite being algebraically identical. The corrected certificate asserts exact entrywise reduction `(Pl*Pl-Pl).applyfunc(s.simplify)==s.zeros(12)`. Locally executed with exit 0; no theorem hypothesis or face-source operator changed.

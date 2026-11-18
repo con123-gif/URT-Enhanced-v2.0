@@ -5,7 +5,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
-- [x] Q161bi [compute] (Q161bg bounded original total-face-flux seam test) — GPT 2026-11-18: THEOREM total quadratic face flux exactly 12 on all 30 original Q101 ground histories; scalar-only seam nonselection; Q161bg remains OPEN.
+- [x] Q161bi [compute] (Q161bg bounded original total-face-flux seam test) — GPT 2026-11-18: THEOREM total quadratic face flux exactly 12 on all 30 original Q101 ground histories; scalar-only seam nonselection; Q161bg remains OPEN. CI repair 2026-11-18: exact entrywise SymPy normalization fixes false structural-equality assertion; mathematical claim unchanged.
 
 - [x] Q161bf [compute] (Q161bd bounded Q96 charge-holonomy clock subcase) — GPT 2026-11-18: THEOREM conditional exact rank 2280, nullity 24; Q161bd still OPEN.
 - [x] Q161bh [compute] (Q161bg bounded native Q96 electric Ward seam nonselection) — GPT 2026-11-18: THEOREM two distinct Ward-compatible 24-clock holonomies, ranks 2208 and 2304; source-selected Q161bg OPEN.\n- [ ] Q161bg [compute] (Q161bf NEXT): derive native five-solid/H64/Q101 source-determined 24-clock seam link and test Q96 Ward intertwining without an assumed flux.
@@ -421,6 +421,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-18 08:18 UTC — GPT — Gate B — Q161bi native exact projector CI repair
+- Task: Repair latest failed gating check research.q161bi_native_face_flux_seam before any new compute item.
+- Result: VERIFIED-ARCHIVE — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: The original Q101 icosahedral rank-eight projector satisfies (Pl²−Pl)_{ij}=0 in Q(sqrt(5)) for all 144 entries; exact structural comparison of unsimplified SymPy expressions is not a mathematical equality test. The original 30-ground face-flux identity remains 12 per ground word.
+- Evidence: local python -u /mnt/data/cathedral/Q161BI_CERT.py exits 0 after replacing the single assert with (Pl*Pl-Pl).applyfunc(s.simplify)==s.zeros(12). Previous CI run https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/44256996340 FAIL; repair CI awaiting new commit.
+- Dead ends: Direct SymPy Matrix.__eq__ compares unnormalized radical expressions and falsely rejects the projector; no tolerance introduced.
+- Next step: After new CI verdict, derive the original oriented H64 face-source to Q96 24-clock seam and calculate charged Ward intertwining (Q161bg).
+
 
 ### 2026-11-18 07:10 UTC — GPT — Gate B/D — Q161bi original Q101 scalar face-flux seam test
 - Task: Q161bi, bounded Q161bg native total-face-flux test.
