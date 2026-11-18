@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161bj [compute] (Q161bg bounded original Q101 nonlinear face-intensity ensemble mean) — GPT 2026-11-18: THEOREM exact mean (3/5)1_20 over all 30 native frustrated words; source-dependent H64/Q96/24 seam remains OPEN.
+
 - [x] Q161bi [compute] (Q161bg bounded original total-face-flux seam test) — GPT 2026-11-18: THEOREM total quadratic face flux exactly 12 on all 30 original Q101 ground histories; scalar-only seam nonselection; Q161bg remains OPEN. CI repair 2026-11-18: exact entrywise SymPy normalization fixes false structural-equality assertion; mathematical claim unchanged.
 
 - [x] Q161bf [compute] (Q161bd bounded Q96 charge-holonomy clock subcase) — GPT 2026-11-18: THEOREM conditional exact rank 2280, nullity 24; Q161bd still OPEN.
@@ -421,6 +423,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-18 09:10 UTC — GPT — Gate B/D — Q161bj exact native nonlinear face-intensity mean
+- Task: Q161bg bounded first-moment test on the original Q101 20-face source.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For all 30 original frustrated ground words x, sum_f (C P_l x)_f²=12 and (1/30)sum_x (C P_l x)⊙(C P_l x)=(3/5)1_20 exactly.
+- Evidence: research.q161bj_native_face_intensity_mean; standalone SymPy certificate executed locally exit 0; new CI verdict pending.
+- Dead ends: ensemble-averaged face intensity is uniform and cannot itself select an oriented seam.
+- Next step: calculate H64 transport of centered individual f_x−(3/5)1_20 and exact Q96 charged Ward intertwining on native 24-clock.
+
 
 ### 2026-11-18 08:18 UTC — GPT — Gate B — Q161bi native exact projector CI repair
 - Task: Repair latest failed gating check research.q161bi_native_face_flux_seam before any new compute item.

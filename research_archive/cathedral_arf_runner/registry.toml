@@ -2121,3 +2121,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bi_native_face_flux_seam/Q161BI_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161bj_native_face_intensity_mean"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bj_face_intensity_mean/Q161BJ_CERT.py"
+timeout = 120
