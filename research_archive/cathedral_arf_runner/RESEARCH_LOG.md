@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161bf [compute] (Q161bd bounded Q96 charge-holonomy clock subcase) — GPT 2026-11-18: THEOREM conditional exact rank 2280, nullity 24; Q161bd still OPEN.
+- [ ] Q161bg [compute] (Q161bf NEXT): derive native five-solid/H64/Q101 source-determined 24-clock seam link and test Q96 Ward intertwining without an assumed flux.
+
 - [x] Q161be [compute] (Q161bd bounded native Q96 charge × 24-clock grading) — GPT 2026-11-18: CONDITIONAL exact rank 1932, nullity 372, traces 1536 and 2816; original source-dependent Ward remains OPEN.
 
 - [x] Q161bb [compute] (Q161az exact native covariance purity) — GPT 2026-11-18: THEOREM Tr Sigma²=183808/9375, exact sector-scalar eigenvalues and rank 16; physical Ward remains OPEN.
@@ -408,6 +411,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-18 04:16 UTC — GPT — Gate D — Q161bf conditional Q96 24-clock holonomy
+- Task: Q161bd bounded exact Q96 charged clock holonomy subcase; original Q101/H64 Ward join remains open.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional flux convention.
+- Statement: For the original Q96 72 fractional and 24 integral charge entries, the 24-cycle seam-twisted forward difference with h_q=exp(2πiq) has det D_q=1-h_q; 72 sectors have |det|²=3, 24 have det 0; total rank 2280 and nullity 24.
+- Evidence: research.q161bf_q96_twisted_clock; standalone SymPy executed in local container exit 0; CI pending on commit.
+- Dead ends: The holonomy is a declared unit-flux choice, not a primitive source-derived Q96 Ward intertwiner; no physical gate closed.
+- Next step: Q161bg [compute] derive the actual Q101/H64/24 seam link from primitive source and test Q96 charge Ward intertwining without selecting flux by hand.
+
 
 ### 2026-11-18 03:15 UTC — GPT — Gate D — Q161be original Q96 charge × 24-clock exact grading
 - Task: Bounded Q161bd subcase: use original Q96 charged species multiplicities and native 24-cycle, without asserting a joined physical transport.
