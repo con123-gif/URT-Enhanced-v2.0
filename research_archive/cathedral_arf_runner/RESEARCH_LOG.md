@@ -5,8 +5,20 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161bo [compute] (Q161bg bounded native integral dual-face Hodge subcase): GPT 2026-11-18 exact Smith invariants 1×14,2,12,60×3,0; physical H64/24/Q96 seam remains OPEN.
+- [ ] Q161bp [compute] (Q161bo NEXT): identify native H64 edge-to-24-clock action on the integral dual-face classes and test Q96 charged Ward intertwining.
+
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 
+
+
+### 2026-11-18 14:10 UTC — GPT — Q161bo native integral dual-face Hodge
+- Task: Q161bg bounded exact integral structure of original Q101 dual-face/edge Hodge operator.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Smith(DᵀD)=diag(1×14,2,12,60,60,60,0); critical group Z/2⊕Z/12⊕(Z/60)^3 and spanning-tree cofactor 5184000.
+- Evidence: research.q161bo_native_dual_integral_hodge; standalone SymPy executed in GPT local container, exit 0; CI pending after commit.
+- Dead ends: a full Q101 covariance commutator script exceeded local execution time; no claim made from it.
+- Next step: Q161bp identify original H64 edge-to-clock action on these classes and calculate Q96 Ward intertwining.
 
 ## 2026-11-18 — GPT Q161bm — THEOREM / CLOSED INTERNALLY; PHYSICAL IDENTIFICATION PENDING
 

@@ -2153,3 +2153,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bn_edge_kernel/Q161BN_CERT.py"
 timeout = 180
+
+[[check]]
+id = "research.q161bo_native_dual_integral_hodge"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bo_dual_integral_hodge/Q161BO_SNF.py"
+timeout = 90
