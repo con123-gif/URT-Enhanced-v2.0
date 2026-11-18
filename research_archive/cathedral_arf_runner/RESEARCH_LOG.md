@@ -7,11 +7,20 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161bo [compute] (Q161bg bounded native integral dual-face Hodge subcase): GPT 2026-11-18 exact Smith invariants 1×14,2,12,60×3,0; physical H64/24/Q96 seam remains OPEN.
 - [x] Q161bp [compute] (Q161bo NEXT; bounded native antipodal integral-class diagnostic): GPT 2026-11-18 exact antipodal even/odd Smith and spectra; original H64/24/Q96 transport remains OPEN.
-- [ ] Q161bq [compute] (Q161bp NEXT): recover the original H64/24 edge transport; test whether it respects native antipodal face parity and calculate Q96 Ward intertwining.
+- [x] Q161bq [compute] (Q161bp NEXT; bounded native edge-parity subcase): GPT 2026-11-18 THEOREM ED=DP; image 9+10 and cycles 6+5; H64/24/Q96 physical transport remains OPEN.
+- [ ] Q161br [compute] (Q161bq NEXT): extract original H64 edge-to-24-clock transport J from archived five-solid/190 operator; compute parity intertwiner and Q96 charged Ward residual.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 
 
+
+### 2026-11-18 16:11 UTC — GPT — Q161bq native Q101 edge antipodal intertwiner
+- Task: Q161bq bounded exact original Q101 edge-to-face parity transport; no substitute H64 clock map introduced.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For original oriented D and native antipodal face P, induced signed edge involution E satisfies ED=DP, E²=I and tr(E)=0. Edge parity dimensions 15+15, image(D) parity ranks 9+10, ker(Dᵀ) cycle parity dimensions 6+5.
+- Evidence: research.q161bq_native_edge_parity; standalone SymPy executed locally, exit 0, output Q161bq exact PASS (15 15 9 10 6 5); new CI pending.
+- Dead ends: No original H64/24 edge-to-clock map identified, so neither seam nor Q96 Ward completion is claimed.
+- Next step: Q161br locate archived original H64 edge-to-clock J and compute its exact parity and Q96 Ward intertwining.
 
 ### 2026-11-18 15:18 UTC — GPT — Q161bp native antipodal integral Hodge
 - Task: Q161bp bounded original Q101 30-edge/20-face Hodge parity decomposition toward H64/24 transport.

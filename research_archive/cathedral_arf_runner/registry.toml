@@ -2169,3 +2169,12 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bp_antipodal_hodge/Q161BP_CERT.py"
 timeout = 120
+
+# Q161bq original Q101 signed antipodal edge parity, no synthetic H64/clock map.
+[[check]]
+id = "research.q161bq_native_edge_parity"
+stage = "research_a"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-18_q161bq_edge_parity/Q161BQ_CERT.py"
+timeout = 120
