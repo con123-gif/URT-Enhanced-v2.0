@@ -2290,3 +2290,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-19_q161cf_source_subset_ranks/Q161CF_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161ci_native_cube_octa_dual"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-19_q161ci_cube_octa_dual/Q161CI_CERT.py"
+timeout = 120

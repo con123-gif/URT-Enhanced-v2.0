@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ci [compute] (Q161by bounded native cube+octahedron source dual) — GPT 2026-11-19 THEOREM: exact Gram spectrum and left inverse, charged Ward OPEN.
+
+
 - [x] Q161cf [compute] (Q161by bounded original five-solid source subset ranks) — GPT 2026-11-19 THEOREM: 31 exact subset ranks; native Q96 Ward OPEN.
 
 - [x] Q161ce [compute] (Q161by bounded five-solid source deletion) — GPT 2026-11-19 THEOREM: native block ranks 3,6,5,8,8; all single-solid deletions rank 8; charged J/Ward OPEN.
@@ -16,6 +19,14 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161cb [compute] (Q161by bounded native five-solid source Gram) — GPT 2026-11-19 exact 50×8 Gram spectrum; Q161by charged Ward OPEN.
 
 - [x] Q161ca [compute] (Q161by bounded native 190-to-history source kernel) — GPT 2026-11-19: exact ten-harmonic source decoupling, original charged 24-clock Ward still OPEN.
+
+### 2026-11-19 16:16 UTC — GPT — Q161ci native cube+octahedron exact source dual
+- Task: Q161by bounded exact native 14×8 cube+octahedron restriction and its reconstruction conditioning.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161by OPEN.
+- Statement: E_COᵀE_CO=diag((14/3)I3,2I2,(16/9)I3); determinant 44957696/19683, rank 8, squared spectral condition number 21/8, exact left inverse.
+- Evidence: standalone SymPy certificate executed GPT local container 2026-11-19 exit 0, output Q161ci EXACT PASS; new CI pending.
+- Limitation: source reconstruction only, not Q96/H64/24 Ward or physical law. All gates OPEN.
+- Next question: recover native Q96 vertex-charge insertion and compute (I−P)Q96 E exactly.
 
 ### 2026-11-19 01:14 UTC — GPT — Q161by original 190×24 twisted-clock kinetic certificate
 - Task: bounded exact source-native 190×24 kinetic determinant identity; original charged J still unlocated.
