@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cb [compute] (Q161by bounded native five-solid source Gram) — GPT 2026-11-19 exact 50×8 Gram spectrum; Q161by charged Ward OPEN.
+
 - [x] Q161ca [compute] (Q161by bounded native 190-to-history source kernel) — GPT 2026-11-19: exact ten-harmonic source decoupling, original charged 24-clock Ward still OPEN.
 
 ### 2026-11-19 01:14 UTC — GPT — Q161by original 190×24 twisted-clock kinetic certificate
@@ -539,6 +541,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-19 08:15 UTC — GPT — Q161cb exact five-solid source Gram
+- Task: Q161by bounded original Q161ca 50-to-8 source normalization, without substituting synthetic matrices.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Native G=E^T E has diagonal (50/3)x3,(94/15)x2,(104/15)x3 and three paired offdiagonals 4sqrt(6)/9; charpoly (lambda-94/15)^2(lambda^2-118lambda/5+3088/27)^3; rank(E)=8.
+- Evidence: research.q161cb_native_source_gram; standalone SymPy local container 2026-11-19, exit 0, Q161cb EXACT PASS; preceding orchestrator #236 PASS; new CI pending.
+- Dead ends: Gram normalization alone does not select original H64/190-to-24 charged transport or Q96 Ward.
+- Next step: identify Q96 generator acting on native eight source columns from original H64 and calculate its commutator with source-defined J. Q161by and physical gates OPEN.
+
 
 ### 2026-11-19 07:14 UTC — GPT — Q161ca native harmonic-source decoupling
 - Task: Q161by bounded original 190->50->8->12 source kernel, not an assumed clock product.

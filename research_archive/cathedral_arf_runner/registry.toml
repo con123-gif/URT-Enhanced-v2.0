@@ -2250,3 +2250,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-19_q161ca_native_harmonic_source_kernel/Q161CA_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161cb_native_source_gram"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-19_q161cb_native_source_gram/Q161CB_CERT.py"
+timeout = 120
