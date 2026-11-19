@@ -5,10 +5,20 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cn [compute] (Q161cl bounded original Q96 symmetric Majorana selection) — GPT 2026-11-19 THEOREM: neutral symmetric kernel dimension 6 complex; Q161cl source B OPEN.
+
 - [x] Q161cm [compute] (Q161cl bounded original Q96 charged chiral Ward kernel) — GPT 2026-11-19 THEOREM: rank 396, complex nullity 180; source-to-charge B remains OPEN.
 
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-19 22:15 UTC — GPT — Q161cn native Q96 Majorana charge selection
+- Task: Q161cl bounded exact Q96 right-singlet charge-selection subcase; native source embedding B still OPEN.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: In original 24 right-singlet Q96 charge registry, the symmetric Majorana Ward operator has rank 294 and kernel dimension 6 complex, supported only on three neutral singlets.
+- Evidence: research.q161cn_native_q96_majorana; standalone stdlib Fraction script executed GPT local container 2026-11-19 exit 0; preceding orchestrator #246 PASS; new CI pending.
+- Dead ends: Charge-only selection cannot determine a mass or supply 50-to-96 source embedding; Q161cl/Q161by remain OPEN.
+- Next step: recover original Q125 source-to-Q96 B and compute (I-P)B†Q96BE on native 50x8 E.
 
 ### 2026-11-19 21:15 UTC — GPT — Q161cm original Q96 charged chiral Ward kernel
 - Task: Q161cl bounded exact original Q96 charge-space selection subcase; 50-to-96 source insertion remains open.
