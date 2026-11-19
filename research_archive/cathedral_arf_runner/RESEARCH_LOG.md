@@ -5,6 +5,17 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cj [compute] (Q161by bounded native five-solid scalar-block-charge commutant) — GPT 2026-11-19 THEOREM: ten cross-blocks nonzero; original Q96 Ward OPEN.
+
+### 2026-11-19 18:11 UTC — GPT — Q161cj five-solid scalar-charge commutant
+- Task: Q161by bounded exact native source projector compatibility with solid-constant scalar charges.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161by OPEN.
+- Statement: Every one of ten native 50×8 source-projector cross-solid blocks is nonzero; [diag(q_i I_{n_i}),P]=0 iff all five q_i are equal.
+- Evidence: research.q161cj_native_source_charge_commutant; standalone exact SymPy reconstruction executed GPT local container 2026-11-19 exit 0; new CI pending.
+- Dead ends: scalar-block charge is not original non-scalar Q96 and does not establish the 190/H64/24 Ward residual.
+- Next step: recover actual Q96 native source insertion and calculate (I-P)Q96 E; leave physical gates OPEN.
+
+
 - [x] Q161ci [compute] (Q161by bounded native cube+octahedron source dual) — GPT 2026-11-19 THEOREM: exact Gram spectrum and left inverse, charged Ward OPEN.
 
 
