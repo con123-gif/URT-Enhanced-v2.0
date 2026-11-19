@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ca [compute] (Q161by bounded native 190-to-history source kernel) — GPT 2026-11-19: exact ten-harmonic source decoupling, original charged 24-clock Ward still OPEN.
+
 ### 2026-11-19 01:14 UTC — GPT — Q161by original 190×24 twisted-clock kinetic certificate
 - Task: bounded exact source-native 190×24 kinetic determinant identity; original charged J still unlocated.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161by remains OPEN.
@@ -537,6 +539,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-19 07:14 UTC — GPT — Q161ca native harmonic-source decoupling
+- Task: Q161by bounded original 190->50->8->12 source kernel, not an assumed clock product.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161by remains OPEN.
+- Statement: The native five-solid harmonic-moment Eraw has exact rank 8 and annihilates all five solid-wise vertex constants; the original nonlinear hidden source is invariant under all ten 190D Hodge harmonic directions (five vertex and five face constants), at every amplitude.
+- Evidence: research.q161ca_native_harmonic_source_kernel; standalone exact SymPy locally executed exit 0; CI on new commit pending.
+- Dead ends: Source decoupling does not identify a charged H64-to-24 transport or prove physical Ward closure.
+- Next step: recover the source-defined charged 190/H64/24 action's Q96 insertion and compute its exact Ward commutator.
+
 
 ### 2026-11-19 06:14 UTC — GPT — Q161bz original five-solid kernel
 - Task: Q161by bounded original 190D kinetic kernel certificate.

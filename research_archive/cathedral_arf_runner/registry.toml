@@ -2242,3 +2242,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-19_q161bz_native_190_kernel/Q161BZ_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161ca_native_harmonic_source_kernel"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-19_q161ca_native_harmonic_source_kernel/Q161CA_CERT.py"
+timeout = 120
