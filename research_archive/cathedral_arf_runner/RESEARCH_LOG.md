@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ce [compute] (Q161by bounded five-solid source deletion) — GPT 2026-11-19 THEOREM: native block ranks 3,6,5,8,8; all single-solid deletions rank 8; charged J/Ward OPEN.
+
 - [x] Q161cd [compute] (Q161by bounded five-solid source-projector leverage) — GPT 2026-11-19 THEOREM: exact per-solid source leverage; charged J/Ward OPEN.
 
 - [x] Q161cc [compute] (Q161by bounded native 50×8 Schur coupling) — GPT 2026-11-19 THEOREM: rank-three linear/quadrupole mixing and exact canonical dual; charged J/Ward OPEN.
@@ -545,6 +547,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-19 12:12 UTC — GPT — Q161ce five-solid source deletion resilience
+- Task: Q161by bounded original 50×8 source resilience to removal of one solid.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Exact individual source ranks [3,6,5,8,8] for tetrahedron/cube/octahedron/dodecahedron/icosahedron; deleting any one solid leaves source rank 8.
+- Evidence: research.q161ce_native_source_deletion; GPT local standalone SymPy execution exit 0 (original-source equivalent); committed version awaiting CI verdict.
+- Dead ends: Algebraic source reconstruction is not a physical removal of a solid and does not supply the native Q96 charge action or H64/24 charged J.
+- Next step: Q161by compute (I−E(EᵀE)⁻¹Eᵀ)Q96 E using the recovered native 50-vertex charge generator; physical gates remain OPEN.
+
 
 ### 2026-11-19 11:18 UTC — GPT — Q161cd native five-solid source leverage
 - Task: Q161by bounded original 50×8 source projector and five-solid block leverage.
