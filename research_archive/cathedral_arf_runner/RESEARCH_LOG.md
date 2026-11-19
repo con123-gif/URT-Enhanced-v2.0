@@ -5,8 +5,18 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cm [compute] (Q161cl bounded original Q96 charged chiral Ward kernel) — GPT 2026-11-19 THEOREM: rank 396, complex nullity 180; source-to-charge B remains OPEN.
+
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-19 21:15 UTC — GPT — Q161cm original Q96 charged chiral Ward kernel
+- Task: Q161cl bounded exact original Q96 charge-space selection subcase; 50-to-96 source insertion remains open.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161cl and Q161by OPEN.
+- Statement: Original Q96 charges on 3-generation 24L/24R have multiplicities (9,9,3,3). Exact chiral Ward map rank 396, complex nullity 180; Hermitian odd 48x48 mass space has real dimension 360, with original Q96 conjugate block constrained.
+- Evidence: research.q161cm_native_q96_chiral_ward; standalone Python fractions certificate executed GPT local container 2026-11-19 exit 0, Q161cm EXACT PASS; CI pending.
+- Dead ends: A 96x96 charge operator cannot act on native 50x8 source E without a separately derived embedding; no synthetic 50-to-96 map introduced.
+- Next step: extract native Q125/Q96 source-to-charge B and calculate (I-P)B†Q96BE using original E; H64/24 physical Ward remains OPEN.
 
 ### 2026-11-19 19:19 UTC — GPT — Q161ck native antipodal inversion defect
 - Task: Q161by bounded exact native five-solid inversion/odd-even source Gram subcase.
