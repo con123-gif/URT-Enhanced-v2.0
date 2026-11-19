@@ -2266,3 +2266,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-19_q161cc_native_source_schur/Q161CC_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161cd_native_five_solid_leverage"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-19_q161cd_five_solid_leverage/Q161CD_CERT.py"
+timeout = 120

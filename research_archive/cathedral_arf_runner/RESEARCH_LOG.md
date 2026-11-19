@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cd [compute] (Q161by bounded five-solid source-projector leverage) — GPT 2026-11-19 THEOREM: exact per-solid source leverage; charged J/Ward OPEN.
+
 - [x] Q161cc [compute] (Q161by bounded native 50×8 Schur coupling) — GPT 2026-11-19 THEOREM: rank-three linear/quadrupole mixing and exact canonical dual; charged J/Ward OPEN.
 
 - [x] Q161cb [compute] (Q161by bounded native five-solid source Gram) — GPT 2026-11-19 exact 50×8 Gram spectrum; Q161by charged Ward OPEN.
@@ -543,6 +545,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-19 11:18 UTC — GPT — Q161cd native five-solid source leverage
+- Task: Q161by bounded original 50×8 source projector and five-solid block leverage.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161by OPEN.
+- Statement: P=E(EᵀE)⁻¹Eᵀ has rank 8; five source block traces 549/965, 1218/965, 45447/45355, 29293/9071, 87879/45355, summing to 8.
+- Evidence: research.q161cd_native_five_solid_leverage; standalone independent exact SymPy reconstruction executed GPT local container exit 0; import-based native certificate committed for CI. Previous CI #238 PASS, new CI pending.
+- Dead ends: leverage fractions do not define native Q96 charges or 190/H64-to-24 charged transport.
+- Next step: recover native Q96 charge generator on the original 50 vertices and calculate (I-P)Q96 E, followed by the H64/24 Ward residual. All physical gates OPEN.
+
 
 ### 2026-11-19 09:18 UTC — GPT — Q161cc native five-solid source Schur coupling
 - Task: Q161by bounded next native 50×8 source coupling calculation; original charged J still open.
