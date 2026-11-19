@@ -2306,3 +2306,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-19_q161cj_five_solid_charge_commutant/Q161CJ_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161ck_native_antipodal_defect"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-19_q161ck_native_antipodal_defect/Q161CK_CERT.py"
+timeout = 120

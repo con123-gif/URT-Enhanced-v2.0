@@ -5,6 +5,18 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
+- [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-19 19:19 UTC — GPT — Q161ck native antipodal inversion defect
+- Task: Q161by bounded exact native five-solid inversion/odd-even source Gram subcase.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161by OPEN.
+- Statement: Four centrally symmetric solids contribute 46 vertices with zero odd-even source Gram and linear Gram (46/3)I3. The tetrahedron alone contributes full five-solid odd-even block M of rank 3, with MMᵀ=(32/27)I3.
+- Evidence: research.q161ck_native_antipodal_defect; standalone original-Q161cb SymPy reconstruction executed GPT local container 2026-11-19 exit 0; CI pending.
+- Dead ends: Exact geometric inversion defect is not an original Q96 charged action or a physical matter asymmetry.
+- Next step: recover Q96 source insertion and calculate (I-P)Q96 E exactly; physical gates remain OPEN.
+
+
 - [x] Q161cj [compute] (Q161by bounded native five-solid scalar-block-charge commutant) — GPT 2026-11-19 THEOREM: ten cross-blocks nonzero; original Q96 Ward OPEN.
 
 ### 2026-11-19 18:11 UTC — GPT — Q161cj five-solid scalar-charge commutant
