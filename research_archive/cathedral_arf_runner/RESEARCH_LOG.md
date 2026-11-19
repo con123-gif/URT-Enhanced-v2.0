@@ -75,7 +75,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161bt [compute] (bounded Q161bu rational-charge spectral subcase): GPT 2026-11-18 exact conditional clock separation; physical H64/190/24/Q96 seam OPEN.
 - [x] Q161bv [compute] (bounded original Q104 sigma1/24/Q96 charged-kernel subcase) — GPT 2026-11-18: exact native 1536-state determinant/ranks; source-derived J and Ward remain OPEN.\n- [x] Q161bw [compute] (bounded native Q104 spectral subcase): GPT 2026-11-18 exact sigma1 and sigma1×S24 characteristic/minimal polynomials; source-dependent J remains OPEN.
 - [x] Q161bx [compute] (bounded native Q104 charged-intertwiner obstruction) — GPT 2026-11-19: exact Hom dimensions 64 neutral / 0 for six nonzero Q96 charges; source-defined 190/H64 J and physical Ward remain OPEN.
-- [ ] Q161by [compute]: recover original source-defined 190/H64-to-24 J including possible charge cocycle and compute exact Q96 charged Ward residual without assumed product coupling. GPT 2026-11-19 exact 190×24 kinetic determinant subcase completed; J/Ward remains OPEN.
+- [ ] Q161by [compute]: recover original source-defined 190/H64-to-24 J including possible charge cocycle and compute exact Q96 charged Ward residual without assumed product coupling. GPT 2026-11-19 exact 190×24 kinetic determinant subcase completed; J/Ward remains OPEN. GPT 2026-11-19 Q161bz exact native K kernel subcase completed; charged J/Ward remains OPEN.
+- [x] Q161bz [compute] (Q161by bounded native kernel subcase) — GPT 2026-11-19 THEOREM: rank K=188, nullity 2; charged J/Ward remains OPEN.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 
@@ -536,6 +537,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-19 06:14 UTC — GPT — Q161bz original five-solid kernel
+- Task: Q161by bounded original 190D kinetic kernel certificate.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161by OPEN.
+- Statement: For native K=D190²+Cbridge, K is PSD, rank 188, nullity 2. Golden 24-clock free Hessian strictly positive.
+- Evidence: research.q161bz_native_190_kernel; standalone Python/SymPy executed locally exit 0, all five exact cellular ranks; original source bridge formula checked. Full 190x190 rank not directly executed; follows analytically from original Gram form. Preceding CI #234 PASS; new CI pending.
+- Dead ends: Does not identify source-defined charged J or Q96 Ward residual.
+- Next step: Construct native 190/H64-to-24 charged J and calculate exact Q96 Ward residual without assumed product coupling.
+
 ### 2026-11-18 13:14 UTC — GPT — Gate B/D — Q161bn native edge-covariance kernel
 - Task: Q161bg bounded native Q101 face-to-edge covariance kernel before H64/24 charged Ward transport.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.

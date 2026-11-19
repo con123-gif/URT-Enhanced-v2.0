@@ -2234,3 +2234,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-19_q161by_native_190_clock/Q161BY_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161bz_native_190_kernel"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-19_q161bz_native_190_kernel/Q161BZ_CERT.py"
+timeout = 120
