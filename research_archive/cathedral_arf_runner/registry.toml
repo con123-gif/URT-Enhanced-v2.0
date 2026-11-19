@@ -2218,3 +2218,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bw_native_sigma_spectrum/Q161BW_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161bx_native_charged_intertwiner"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-18_q161bx_native_charged_intertwiner/Q161BX_CERT.py"
+timeout = 90

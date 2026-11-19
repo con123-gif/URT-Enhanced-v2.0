@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-19 00:14 UTC — GPT — Q161bx native charged intertwiner obstruction
+- Task: Q161bx bounded original Q104 64-history to URT 24-clock direct charged intertwiner test.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For native Q104 P=sigma1 and T_q=exp(2*pi*i*q/phi^2)S24, dim_C{J:JP=T_q J}=64 at q=0, and 0 at each of six nonzero rational Q96 charges.
+- Evidence: research.q161bx_native_charged_intertwiner; standalone exact SymPy/stdlib script executed GPT local container 2026-11-19, exit 0; preceding orchestrator #231 PASS; new CI pending.
+- Dead ends: Direct unmodified history-to-twisted-clock linear intertwiner cannot carry nonzero Q96 charges; does not exclude source-dependent phase-decorated H64/190 transport.
+- Next step: Q161by recover original 190/H64 source-dependent charged J with compensating cocycle if present, calculate Q96 Ward residual. Physical gates remain open.
+
+
 ### 2026-11-18 22:14 UTC — GPT — Q161bw native Q104 history spectrum
 - Task: bounded exact original sigma1 and native 24-clock cycle spectral certificate (subcase of source-dependent J request).
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
@@ -56,7 +65,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161bs [compute] (Q161br NEXT): GPT 2026-11-18 exact original 24-clock irrational-holonomy subcase; full J remains OPEN (see Q161bs log).
 - [x] Q161bt [compute] (bounded Q161bu rational-charge spectral subcase): GPT 2026-11-18 exact conditional clock separation; physical H64/190/24/Q96 seam OPEN.
 - [x] Q161bv [compute] (bounded original Q104 sigma1/24/Q96 charged-kernel subcase) — GPT 2026-11-18: exact native 1536-state determinant/ranks; source-derived J and Ward remain OPEN.\n- [x] Q161bw [compute] (bounded native Q104 spectral subcase): GPT 2026-11-18 exact sigma1 and sigma1×S24 characteristic/minimal polynomials; source-dependent J remains OPEN.
-- [ ] Q161bx [compute]: recover original source-defined 190/H64-to-24 J and compute Q96 charged Ward residual without assumed product coupling.
+- [x] Q161bx [compute] (bounded native Q104 charged-intertwiner obstruction) — GPT 2026-11-19: exact Hom dimensions 64 neutral / 0 for six nonzero Q96 charges; source-defined 190/H64 J and physical Ward remain OPEN.
+- [ ] Q161by [compute]: recover original source-defined 190/H64-to-24 J including possible charge cocycle and compute exact Q96 charged Ward residual without assumed product coupling.
 
 - [x] Q161bn [compute] (Q161bg bounded native edge-source kernel): GPT 2026-11-18 exact rank16/nullity14; Q161bg H64/24/Q96 physical Ward OPEN.
 
