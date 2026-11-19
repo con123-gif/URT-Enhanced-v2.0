@@ -2282,3 +2282,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-19_q161ce_source_deletion/Q161CE_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161cf_native_source_subset_ranks"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-19_q161cf_source_subset_ranks/Q161CF_CERT.py"
+timeout = 120

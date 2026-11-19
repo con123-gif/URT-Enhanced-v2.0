@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cf [compute] (Q161by bounded original five-solid source subset ranks) — GPT 2026-11-19 THEOREM: 31 exact subset ranks; native Q96 Ward OPEN.
+
 - [x] Q161ce [compute] (Q161by bounded five-solid source deletion) — GPT 2026-11-19 THEOREM: native block ranks 3,6,5,8,8; all single-solid deletions rank 8; charged J/Ward OPEN.
 
 - [x] Q161cd [compute] (Q161by bounded five-solid source-projector leverage) — GPT 2026-11-19 THEOREM: exact per-solid source leverage; charged J/Ward OPEN.
@@ -547,6 +549,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-19 13:14 UTC — GPT — Q161cf exact five-solid source subset ranks
+- Task: Q161by bounded original Q161ce source subset-support classification over all 31 nonempty subsets.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; charged Q161by remains OPEN.
+- Statement: Single-solid ranks (3,6,5,8,8); pair ranks TC=6 and all other nine pairs=8; every triple, quadruple and quintuple rank 8. T+O alone spans all eight original harmonic channels.
+- Evidence: research.q161cf_native_source_subset_ranks; standalone local Python/SymPy exit 0, all 31 exact Gram ranks asserted; preceding orchestrator #240 PASS at 2026-11-19T12:33:02Z; new commit CI pending.
+- Dead ends: No physical H64/24 charged transport or Q96 Ward residual follows from source span alone.
+- Next step: Q161by compute (I-P)Q96 E using the *actual* Q96 charge insertion on original 50 vertex coordinates; no invented diagonal charge operator.
+
 
 ### 2026-11-19 12:12 UTC — GPT — Q161ce five-solid source deletion resilience
 - Task: Q161by bounded original 50×8 source resilience to removal of one solid.
