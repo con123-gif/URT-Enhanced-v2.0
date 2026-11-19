@@ -2330,3 +2330,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-19_q161cn_q96_majorana/Q161CN_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161co_native_q96_symmetric"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-19_q161co_q96_symmetric/Q161CO_CERT.py"
+timeout = 120

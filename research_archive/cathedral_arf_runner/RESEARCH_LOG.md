@@ -5,12 +5,22 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161co [compute] (Q161cl bounded full original Q96 symmetric charge-selection calculation) — GPT 2026-11-19 THEOREM: complex nullity 762, rank 3894; source B OPEN.
+
 - [x] Q161cn [compute] (Q161cl bounded original Q96 symmetric Majorana selection) — GPT 2026-11-19 THEOREM: neutral symmetric kernel dimension 6 complex; Q161cl source B OPEN.
 
 - [x] Q161cm [compute] (Q161cl bounded original Q96 charged chiral Ward kernel) — GPT 2026-11-19 THEOREM: rank 396, complex nullity 180; source-to-charge B remains OPEN.
 
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-19 23:18 UTC — GPT — Q161co full Q96 symmetric charge selection
+- Task: Q161cl bounded original Q96 conjugate-sector neutral symmetric bilinear calculation; native source embedding B remains OPEN.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: For the original 96 charge labels (three generations, LH/RH and conjugate), the symmetric charge Ward map has complex nullity 762 and rank 3894 on 4656 coordinates.
+- Evidence: research.q161co_native_q96_symmetric; standalone stdlib Fraction certificate executed GPT local container 2026-11-19, exit 0; preceding orchestrator #248 PASS; new CI pending.
+- Dead ends: Charge-neutral bilinear dimension alone neither selects a mass nor defines original 50→96 embedding B.
+- Next step: identify canonical Q125/Q101 source-to-charge B and compute (I-P)B†Q96BE with native 50x8 E; Q161cl/Q161by OPEN.
 
 ### 2026-11-19 22:15 UTC — GPT — Q161cn native Q96 Majorana charge selection
 - Task: Q161cl bounded exact Q96 right-singlet charge-selection subcase; native source embedding B still OPEN.
