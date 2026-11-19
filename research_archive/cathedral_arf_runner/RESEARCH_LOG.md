@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cc [compute] (Q161by bounded native 50×8 Schur coupling) — GPT 2026-11-19 THEOREM: rank-three linear/quadrupole mixing and exact canonical dual; charged J/Ward OPEN.
+
 - [x] Q161cb [compute] (Q161by bounded native five-solid source Gram) — GPT 2026-11-19 exact 50×8 Gram spectrum; Q161by charged Ward OPEN.
 
 - [x] Q161ca [compute] (Q161by bounded native 190-to-history source kernel) — GPT 2026-11-19: exact ten-harmonic source decoupling, original charged 24-clock Ward still OPEN.
@@ -541,6 +543,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-19 09:18 UTC — GPT — Q161cc native five-solid source Schur coupling
+- Task: Q161by bounded next native 50×8 source coupling calculation; original charged J still open.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Native linear/quadrupole source Gram cross-block B has rank 3, Schur complement diag(94/15 ×2,1544/225 ×3), and three equal canonical squared correlations 2/195. Native canonical dual (EᵀE)⁻¹Eᵀ exactly reconstructs all eight source coefficients.
+- Evidence: research.q161cc_native_source_schur; GPT local standalone SymPy script exit 0; preceding orchestrator #311 success; new CI pending.
+- Dead ends: Orthogonal 3⊕5 source channels are not justified by the original five-solid moment Gram; no physical Q96 charged transport derived.
+- Next step: Q161by recover Q96 charge insertion on the eight canonical dual source channels and calculate its intertwining with the source-defined H64/24 transport.
+
+
 
 ### 2026-11-19 08:15 UTC — GPT — Q161cb exact five-solid source Gram
 - Task: Q161by bounded original Q161ca 50-to-8 source normalization, without substituting synthetic matrices.
