@@ -2226,3 +2226,11 @@ claim = "independent"
 gating = true
 run = "python -u research_archive/2026-11-18_q161bx_native_charged_intertwiner/Q161BX_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161by_native_190_clock_determinant"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python -u research_archive/2026-11-19_q161by_native_190_clock/Q161BY_CERT.py"
+timeout = 90
