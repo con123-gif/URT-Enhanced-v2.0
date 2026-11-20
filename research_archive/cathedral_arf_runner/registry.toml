@@ -2378,3 +2378,20 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161ct_native_cubic/Q161CT_CERT.py"
 timeout = 120
+
+
+[[check]]
+id = "research.q161cu_five_platonic_hopf_fluid"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cu_five_hopf_fluid/Q161CU_FIVE_PLATONIC_HOPF_NS_CERT.py"
+timeout = 120
+
+[[check]]
+id = "research.q161cv_source_axis_urt_flow"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cu_five_hopf_fluid/Q161CV_SOURCE_ALIGNED_URT_FLOW.py"
+timeout = 60
