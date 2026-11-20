@@ -5,7 +5,17 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [ ] Q161cz [compute] (Q161cl) derive original Q101 face-square mixed-source derivative into Q125/Q96 and calculate exact charge-Ward residual.
+
 - [x] Q161cw [compute] (whole-five native Hodge -> 8-mode kinetic spectrum) — GPT 2026-11-20 THEOREM (finite): exact 3+3+2 and nonzero kinetic parity birth; physical Q96/clock OPEN.
+
+### 2026-11-20 08:14 UTC — GPT — Q161cy original five-solid odd/even susceptibility
+- Task: Q161cl bounded native Q161cw dynamic source subcase, exact steady and integrated odd-to-even response.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; charged embedding and physical gates OPEN.
+- Statement: In each native Q161cw x/yz, y/xz, z/xy pair, det K=200192/135-4096sqrt(5)/15>0; stationary susceptibility (K^-1)_{even,odd}=-(16sqrt(6)/9)/det K !=0 and integrated unit-odd initial response (K^-1 G)_{even,odd}= (4sqrt(6)/9)[(176-32sqrt(5))/3-200/3]/det K !=0.
+- Evidence: research.q161cy_native_five_solid_response; standalone SymPy local exit 0; CI pending.
+- Dead ends: This is a kinetic response of the native 50-vertex source, not a Q96 charge map or physical force law.
+- Next step: derive the Q101 face-square-to-Q125/Q96 charged derivative for the mixed source and calculate its Ward residual without selecting a new coupling.
 
 ### 2026-11-20 — GPT — Q161cw full-five finite one-rule kinetic theorem
 - Task: User asked to derive whether the complete Platonic system itself supplies the mathematics for dynamics and physical existence, without fitting or reducing to the 13-cell. Existing Q101, v116, Q60 and Q161cb/ck/ct recovered before this calculation.
@@ -32,7 +42,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161cq [compute] (Q161cl bounded native vertex-level source leverage) — GPT 2026-11-20 THEOREM: seven solid-local exact leverage classes; source-to-Q96 B OPEN.
 - [x] Q161cs [compute] (Q161cl native Q125/Q96 Hopf curvature) — GPT 2026-11-20 THEOREM; source B_x OPEN.
 - [x] Q161cx [compute] (Q161cl bounded original Q101 ground-source frame) — GPT 2026-11-20 THEOREM: 60 unit source axes form exact tight frame 20 I3; Q96 embedding OPEN.
-- [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+- [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E; Q161cy finite-source response completed, charged embedding remains OPEN.
 
 ### 2026-11-20 06:10 UTC — GPT — Q161ct native five-solid odd cubic moment
 - Task: Q161cl bounded exact original Q161ca/Q161cb 50-vertex source cubic, testing inversion-breaking channel before Q96 insertion.

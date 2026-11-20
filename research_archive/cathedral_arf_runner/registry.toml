@@ -2412,3 +2412,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161cw_five_solid_kinetic/Q161CW_NATIVE_EXACT_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161cy_native_five_solid_response"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cy_native_response/Q161CY_CERT.py"
+timeout = 60
