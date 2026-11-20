@@ -111,3 +111,54 @@ print('A4 4->1+3 derivative',singlet,triplet,'A4 comm',comm,'nonA4 defect',nonA4
 print('classC survival weight t1 t2',p1[last].sum(),p2[last].sum())
 print('Shannon H at t0,t1,t2,t3',H0,H1,H2,H3)
 print('STATUS conditional Euclidean gradient and norm conditioning; Q96 Ward/physical clock OPEN')
+
+
+# Whole-Cathedral component ablation: rebuild BOTH native Gram and
+# actual edge Laplacian for each subset. Fixed original 60 Q101 source
+# remains the same, and no alternate fit/selection potential is supplied.
+from scipy.linalg import eigh
+from scipy.spatial.distance import cdist
+shells=d.get('solids',d.get('sets'))
+local_h=d.get('moments',d.get('h'))
+unit=d['unit']
+assert shells is not None and local_h is not None
+K_s={};G_s={}
+for name,pts in shells.items():
+ xyz=unit(pts);w=local_h(xyz)
+ G_s[name]=w.T@w
+ dd=cdist(xyz,xyz)
+ length=dd[np.triu_indices(len(xyz),1)].min()
+ k=np.zeros((8,8))
+ for i,j in combinations(range(len(xyz)),2):
+  if abs(dd[i,j]-length)<1e-8:
+   diff=w[i]-w[j];k+=np.outer(diff,diff)
+ K_s[name]=k
+assert len(K_s)==5
+all5=list(K_s)
+without_tetra=[name for name in all5 if not name.startswith('tetra')]
+ico_dodeca=[name for name in all5 if name.startswith('ico') or name.startswith('dodeca')]
+assert len(without_tetra)==4 and len(ico_dodeca)==2
+def subset_rate_variance(names):
+ GG=sum(G_s[n] for n in names);KK=sum(K_s[n] for n in names)
+ ew,Q=eigh(GG)
+ assert ew.min()>1e-8
+ Gi=(Q/np.sqrt(ew))@Q.T
+ ksub=Gi@KK@Gi
+ rr=[]
+ for _,s,_ in ground:
+  z=Iico.T@s;dz=-ksub@z;x=Iico@z;dx=Iico@dz
+  f=(C@x)**2;df=2*(C@x)*(C@dx)
+  u=P3@f+Delta*P5@f
+  du=P3@df+Delta*P5@df
+  rr.append(2*u@du/(u@u))
+ return float(np.var(rr))
+v_pair=subset_rate_variance(ico_dodeca)
+v_four=subset_rate_variance(without_tetra)
+v_five=subset_rate_variance(all5)
+assert v_pair<1e-24
+assert abs(v_four-0.15248159401299013)<1e-9
+assert abs(v_five-var)<1e-10
+print('Q162h ablation original ico+dodeca / four without tetra / all five:',
+      v_pair,v_four,v_five)
+print('Q162h ABlation PASS: rate selection comes from symmetry mismatch;'
+      ' tetra supplies odd-even parity but is not the ONLY selector')
