@@ -2491,3 +2491,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q162h_frustration_entropy/Q162H_GEOMETRIC_FRUSTRATION_ENTROPY_CERT.py"
 timeout = 240
+
+
+[[check]]
+id = "research.q162i_native_tetra_cubic_inversion"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162h_frustration_entropy/Q162I_NATIVE_ODD_TETRA_SELECTION_CERT.py"
+timeout = 180
