@@ -5,6 +5,11 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-20 — GPT — Q162e CI ground-record unpack repair
+- Failure investigated from actual GitHub Actions run 44718191950, research stage job 136228464836: Q162E line86 ValueError expected 3 tuple fields, original Q162D ground entries have exactly 2 (mask, spins). This is a code interface failure, not a numerical falsification.
+- Corrected Q162E by deriving magnetization M=int(sum(spins)) for each native ground entry, preserving every original spin/state, source, operator and test threshold. Commit 6b5b78a. The corrected 3-field local interface is also what new Q162h/i native entropy/parity tests consume. Original local independent versions executed and passed; new GitHub CI verdict after fix not yet confirmed.
+- No physical gate closed; on next run verify all research Q162e/h/i checks and repair any subsequent native errors.
+
 ### 2026-11-20 — GPT — Q162i native tetra odd-sign control
 - From original 60 phi-frustration ground histories and original full-five tetrahedron cubic T_xyz=4/(3sqrt3), axes m_s=(sum s_i v_i)/(4/phi), the source-odd invariant O_s=(8/sqrt3)m_xm_ym_z takes precisely {-1/sqrt3 ×24,0 ×12,+1/sqrt3 ×24}. The existing face-square hidden u_s(t) and Euclidean geometric gradient satisfy u_{-s}(t)=u_s(t) identically; all conditioned norm-weights remain inversion-paired and <O>_t=0 for any t. This separates genuine geometric inversion-odd channel from a REAL physical sign/population selection not yet present. Original-formula finite enumeration passed locally, source Q162I_NATIVE_ODD_TETRA_SELECTION_CERT.py registered in CI; Q96 CP/charge Ward still OPEN.
 - Original Q162h controlled ablation also now in its source certificate and theorem: fully rewhitened original icosa+dodeca source yields Var(r)=~0, four without tetra .152481594, all five .359024311. Tetra gives true parity odd-even harmonic mixing, but is NOT the only cause of initial conditional entropy selection.
