@@ -126,7 +126,16 @@ assert S.simplify(p.subs(z,lm))==0
 assert S.simplify(p.subs(z,lp))==0
 assert S.simplify(l0-S.Rational(404,15)/S.Rational(94,15))==0
 assert 0<float(lm)<float(lp)<float(l0)
+# A pure x source creates a yz (opposite parity) source under the
+# UNIT-EDGE Galerkin gradient flow G da/dt=-K a. It is ZERO if the
+# tetrahedral parity coupling is absent, and also vanishes for a
+# tetra-only scalar Laplacian K=4G. Both symmetry mismatch and the
+# distinct kinetic rates of other solids are essential in this model.
+detG=Godd*Geven-g*g
+parity_birth=S.simplify(g*(Kodd-4*Godd)/detG)
+assert S.simplify(parity_birth+S.sqrt(6)*(6+8*s5)/193)==0
 print("Q161cw EXACT PASS: original five 50/90/50, 190 cochains")
 print("Q161cw EXACT K_oe K_oe^T=(512/27)I3; common A4 rotations 12")
 print("Q161cw eigenvalues (3,3,2):",float(lm),float(lp),float(l0))
+print("Q161cw pure-x -> yz kinetic birth:",parity_birth,float(parity_birth))
 print("STATUS: finite source kinetic theorem; physical law identification OPEN")
