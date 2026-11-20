@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cr [compute] (Q161cl native Q125/Q96 exact symbolic Hopf Ward) — GPT 2026-11-20 THEOREM; source embedding B_x OPEN.
+
 - [x] Q161cp [compute] (Q161cl bounded original Q96 hypercharge anomaly certificate) — GPT 2026-11-20 THEOREM: all four local anomaly sums zero exactly; source B OPEN.
 
 - [x] Q161co [compute] (Q161cl bounded full original Q96 symmetric charge-selection calculation) — GPT 2026-11-19 THEOREM: complex nullity 762, rank 3894; source B OPEN.
@@ -16,6 +18,14 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
 - [x] Q161cq [compute] (Q161cl bounded native vertex-level source leverage) — GPT 2026-11-20 THEOREM: seven solid-local exact leverage classes; source-to-Q96 B OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-20 04:16 UTC — GPT — Q161cr symbolic Q125/Q96 Hopf Ward
+- Task: Q161cl bounded native Q125/Q96 local charge insertion, exact symbolic upgrade of earlier 444-history numerical Ward.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161cl/Q161by OPEN.
+- Statement: For original Q125 Hopf spinors with d=|u|²+|v|², Q_L V=d V Q_R and V†V=d I8. At d=1, original Q96 chiral and conjugate three-generation mass vertices commute with Q96 electric charge for any charge-blind generation source.
+- Evidence: research.q161cr_q125_symbolic_charge; standalone SymPy exact script GPT local container 2026-11-20 exit 0; preceding CI #252 PASS; new CI pending.
+- Dead ends: A vertex-local exact Ward is not a 50→96 B_x; source pullback and H64/24 Ward remain OPEN.
+- Next step: recover native Q101/Q125 50→96 B_x and compute (I−P)B_x†Q96B_xE exactly.
 
 ### 2026-11-20 03:16 UTC — GPT — Q161cq native vertex leverage certificate
 - Task: Q161cl bounded native Q161ca/Q161cb 50×8 five-solid vertex leverage, recovering previously uncommitted exact certificate.

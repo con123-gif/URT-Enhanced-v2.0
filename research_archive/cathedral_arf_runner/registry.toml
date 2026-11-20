@@ -2354,3 +2354,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161cq_vertex_leverage/Q161CQ_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161cr_q125_symbolic_charge"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cr_q125_symbolic_charge/Q161CR_CERT.py"
+timeout = 60
