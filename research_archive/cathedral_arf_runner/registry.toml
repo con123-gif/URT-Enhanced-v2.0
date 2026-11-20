@@ -2370,3 +2370,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161cs_q125_q96_hopf_curvature/Q161CS_CERT.py"
 timeout = 60
+
+[[check]]
+id = "research.q161ct_native_five_solid_cubic"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161ct_native_cubic/Q161CT_CERT.py"
+timeout = 120

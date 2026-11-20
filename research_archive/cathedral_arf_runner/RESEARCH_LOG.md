@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ct [compute] (Q161cl bounded native five-solid cubic source tensor) — GPT 2026-11-20 THEOREM: six xyz entries 4sqrt(3)/9; Q96 source embedding OPEN.
+
 - [x] Q161cr [compute] (Q161cl native Q125/Q96 exact symbolic Hopf Ward) — GPT 2026-11-20 THEOREM; source embedding B_x OPEN.
 
 - [x] Q161cp [compute] (Q161cl bounded original Q96 hypercharge anomaly certificate) — GPT 2026-11-20 THEOREM: all four local anomaly sums zero exactly; source B OPEN.
@@ -19,6 +21,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161cq [compute] (Q161cl bounded native vertex-level source leverage) — GPT 2026-11-20 THEOREM: seven solid-local exact leverage classes; source-to-Q96 B OPEN.
 - [x] Q161cs [compute] (Q161cl native Q125/Q96 Hopf curvature) — GPT 2026-11-20 THEOREM; source B_x OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-20 06:10 UTC — GPT — Q161ct native five-solid odd cubic moment
+- Task: Q161cl bounded exact original Q161ca/Q161cb 50-vertex source cubic, testing inversion-breaking channel before Q96 insertion.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161cl/Q161by OPEN.
+- Statement: Native third-order linear-harmonic tensor T_ijk has exactly six nonzero xyz permutations, each 4*sqrt(3)/9; other 21 vanish. Four antipodal solids contribute zero; tetrahedron contributes all six.
+- Evidence: research.q161ct_native_five_solid_cubic; standalone SymPy executed GPT local container 2026-11-20 exit 0; new CI pending.
+- Dead ends: Geometric cubic asymmetry alone is not Q96 charge insertion or physical baryogenesis.
+- Next step: extract original Q101/Q125 source-vertex derivative into Q96 at a native history and test its exact charge-Ward leakage.
+
 
 ### 2026-11-20 05:14 UTC — GPT — Q161cs native Q125/Q96 weighted Hopf curvature
 - Task: Q161cl bounded native Q125 local charged bundle curvature, following Q161cr.
