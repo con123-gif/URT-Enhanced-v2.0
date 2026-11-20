@@ -112,3 +112,34 @@ hence d ln||Q||²=2 d ln||u||² at those points for any infinitesimal real hidde
 This is immediate by phase counting, and it is verified in the exact certificate. It does NOT establish covariance under independently varying face phases because Ph fails to commute with local U1 multiplication.
 
 Executed original-face exact certificate: Q162F_EXACT_HIDDEN_TRIPLE_IDENTITY_CERT.py, registered for native CI, local independent SymPy coefficient-by-coefficient verification exit 0. Full local real-source numerical gradient tests: residuals below 3e-15. The stronger result is a nonlinear eigenvector / stationary quartic-ratio identity, NOT a physical quantum field theory.
+
+
+## Q162g — independently selected H64 source density, not the frozen master state
+
+The 60 original ground words also furnish an exact finite ensemble, independent of the chosen gradient dynamics. Sum the rank-one native sources over the whole complete A5 orbit with equal weights. Using the irreducible real A5 quartets, Schur's lemma, and the known common norm per ground configuration gives
+
+    SUM_ground h3_s h3_s^T = 96 P3,
+    SUM_ground h5_s h5_s^T = 32 P5,
+    SUM_ground h3_s h5_s^T = 0.
+
+The mixed sum vanishes by the inversion symmetry of the COMPLETE ground ensemble (opposite parity of the hidden 4_3/4_5 sectors). All 60 matrices were independently recomputed numerically from the original vertices/face incidence and the exact coefficients were established by the group-orbit and trace argument.
+
+For u_s=h3_s+Delta h5_s, its unnormalised covariance is 96P3+32Delta²P5, and the *ACTUAL* 64-history covariance of b_s=Uh u_s has the same eight nonzero eigenvalues because Uh is isometric. Its trace-one induced density is exactly
+
+    rho_ground = [P3+(Delta²/3)P5] / [4(1+Delta²/3)].
+
+This is a mathematically well-defined rank-eight density on the original 64 carrier (the remaining 56 eigenvalues are zero). It differs from the previously frozen master rho_star, which was [P3+Delta²P5]/[4(1+Delta²)]:
+- p5(ground)=Delta²/(3+Delta²)=2.065351088200122e-6;
+- p5(frozen)=Delta²/(1+Delta²)=6.196027670655383e-6.
+
+For the reversed-cost hidden Hamiltonian H_cost=18I−H8, which has eigenvalue 0 on P3 and 2 on P5, rho_ground is an EXACT finite Gibbs density with dimensionless beta_ground=−ln Delta+(ln3)/2=6.545104131075357. The earlier frozen KMS convention has eta_Delta=−ln Delta=5.995797986741303. This is a definite mathematically derived source-vs-assumed-KMS distinction, not a physical measurement or a reason to retune either number.
+
+The quadratic charge-four source gives its own complete 60-state frames:
+
+    SUM_ground (P3Q_s)(P3Q_s)^T = (512/25)*(Delta²/3)*P3;
+    SUM_ground (P5Q_s)(P5Q_s)^T = (128/25)*(1−Delta²/3)^2*P5;
+    mixed frame SUM_ground (P3Q_s)(P5Q_s)^T = 0.
+
+The exact coefficients follow from each four-dimensional irrep's trace and the established per-state norm; the complete original 60-state local matrix reconstruction checks every equality. No vacuum or observed quantum operator has been selected.
+
+Source executable: Q162G_NATIVE_GROUND_ENSEMBLE_KMS_CERT.py; original-formula local reconstruction exited 0, new CI registered. NEXT: derive physical source-population weights dynamically from URT and actual charged Q96 transport, rather than assume the equal prior ensemble or silently identify rho_ground=rho_star.
