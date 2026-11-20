@@ -14,7 +14,16 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161cm [compute] (Q161cl bounded original Q96 charged chiral Ward kernel) — GPT 2026-11-19 THEOREM: rank 396, complex nullity 180; source-to-charge B remains OPEN.
 
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
+- [x] Q161cq [compute] (Q161cl bounded native vertex-level source leverage) — GPT 2026-11-20 THEOREM: seven solid-local exact leverage classes; source-to-Q96 B OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-20 03:16 UTC — GPT — Q161cq native vertex leverage certificate
+- Task: Q161cl bounded native Q161ca/Q161cb 50×8 five-solid vertex leverage, recovering previously uncommitted exact certificate.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161cl/Q161by OPEN.
+- Statement: P=E(EᵀE)⁻¹Eᵀ has seven solid-local leverage classes; tetra 549/3860×4; cube 549/3860×4 and 669/3860×4; octa 15149/90710×6; dodeca 549/3860×4, 89219/544260×12, 669/3860×4; icosa 29293/181420×12. Exact trace 8.
+- Evidence: research.q161cq_native_vertex_leverage_classes; standalone SymPy executed GPT local container 2026-11-20 exit 0; preceding orchestrator #250 PASS; new CI pending.
+- Dead ends: Within-solid uniformity fails on cube/dodecahedron. Geometric leverage is not Q96 charge embedding.
+- Next step: recover Q101/Q125 original 50→96 B_x and calculate (I−P)B_x†Q96B_xE exactly; all physical gates OPEN.
 
 ### 2026-11-20 01:17 UTC — GPT — Q161cp Q96 exact hypercharge anomaly certificate
 - Task: Q161cl bounded original Q96 3-generation chiral hypercharge consistency test.

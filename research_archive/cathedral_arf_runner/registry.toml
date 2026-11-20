@@ -2346,3 +2346,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161cp_q96_anomaly/Q161CP_Q96_ANOMALY.py"
 timeout = 60
+
+[[check]]
+id = "research.q161cq_native_vertex_leverage_classes"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cq_vertex_leverage/Q161CQ_CERT.py"
+timeout = 120
