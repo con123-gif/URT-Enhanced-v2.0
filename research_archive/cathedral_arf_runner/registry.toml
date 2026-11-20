@@ -2500,3 +2500,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q162h_frustration_entropy/Q162I_NATIVE_ODD_TETRA_SELECTION_CERT.py"
 timeout = 180
+
+[[check]]
+id = "research.q161db_native_face_jacobian"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161db_face_jacobian/Q161DB_CERT.py"
+timeout = 180

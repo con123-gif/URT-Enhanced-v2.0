@@ -5,6 +5,16 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-20 12:13 UTC — GPT — Gate Q161cl — Q161db native face-square full-rank differential
+- Task: bounded Q161cz continuation, exact Q101 nonlinear face-square source Jacobian over all native frustrated ground words.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: With L=C(P3+P5), DF_s=2diag(Ls)L has rank exactly 8 for each of the 60 native E=-6, |M|=4 ground words. Therefore ker DF_s=ker(P3+P5), dimension 4. Each rank lower bound is an exact nonzero Q(sqrt(5)) 8x8 minor; numerical pivoting only selects candidate rows.
+- Evidence: research.q161db_native_face_jacobian; standalone SymPy/SciPy local execution exit 0 in 6.62 s on 2026-11-20; prior orchestrator checkpoint #266 PASS at 11:20:18Z; new CI pending.
+- Scope: Native Q101 nonlinear source only. H64/24-to-Q96 embedding and charged Ward leakage remain open; no gate closed.
+- Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
+
+- [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db established source Jacobian rank 8.
+
 ### 2026-11-20 — GPT — Q162e CI ground-record unpack repair
 - Failure investigated from actual GitHub Actions run 44718191950, research stage job 136228464836: Q162E line86 ValueError expected 3 tuple fields, original Q162D ground entries have exactly 2 (mask, spins). This is a code interface failure, not a numerical falsification.
 - Corrected Q162E by deriving magnetization M=int(sum(spins)) for each native ground entry, preserving every original spin/state, source, operator and test threshold. Commit 6b5b78a. The corrected 3-field local interface is also what new Q162h/i native entropy/parity tests consume. Original local independent versions executed and passed; new GitHub CI verdict after fix not yet confirmed.
