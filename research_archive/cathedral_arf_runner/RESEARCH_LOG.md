@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-20 19:16 UTC — GPT — Gate Q161cl — Q161dg Q96/24 pseudo-determinant
+- Task: Q161da [compute] bounded exact charge-clock spectral normalization substep.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
+- Statement: For declared K=diag(q_i²)⊗L24, pdet(K)=576^84(4/81)^828=2^2160/3^3144; rank=1932, nullity=372; exact 23x23 cycle cofactor=24.
+- Evidence: research.q161dg_q96_clock_pseudodeterminant; standalone Python exact-integer/Fraction certificate executed locally 2026-11-20 exit 0; previous CI #272 success; new commit CI pending.
+- Dead ends: This conditional tensor invariant does not construct B_x or establish charge Ward identities.
+- Next step: Q161da [compute] recover typed native H64/24/Q125-to-Q96 B_x and evaluate (I-P_E)B_x†Q96B_xE exactly.
+
+
 ### 2026-11-20 14:16 UTC — GPT — Gate Q161cl — Q161dd exact Q96/24 Green trace
 - Task: Q161da [compute] bounded native Q96/24-clock spectral Green substep; B_x not supplied.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
@@ -33,6 +42,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
 - [x] Q161df [compute] (Q161cl) original Q96/24 charge-clock resistance profile and Kirchhoff index — GPT 2026-11-20 THEOREM (internal): 479550; Q161da OPEN.
+- [x] Q161dg [compute] (Q161cl) exact Q96/24 charged-clock pseudodeterminant — GPT 2026-11-20 THEOREM (internal): pdet K=2^2160/3^3144; Q161da OPEN.
 - [x] Q161de [compute] (Q161cl) exact native Q96/24 antipodal Green and resistance — GPT 2026-11-20 THEOREM (internal): -40171/96, 2502; Q161da OPEN.
 - [x] Q161dd [compute] (Q161cl) exact Q96/24-clock Green trace — GPT 2026-11-20 THEOREM (internal): Tr K^+=79925/4; Q161da remains OPEN.
 
