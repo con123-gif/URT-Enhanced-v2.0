@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-20 13:12 UTC — GPT — Gate Q161cl — Q161dc native Q96/24-clock charge spectral factorization
+- Task: Q161da [compute] bounded necessary spectral substep for the original charged clock, without inventing B_x.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da remains OPEN.
+- Statement: For native Q96 squared-charge registry and native 24-cycle L, chi_K=x^288[(4/9)^24 P24(9x/4)]^36[(1/9)^24 P24(9x)]^36[P24(x)]^12, where P24=x(x-4)(x-3)^2(x-2)^2(x-1)^2(x²-4x+1)^2(x²-4x+2)^2(x⁴-8x³+20x²-16x+1)^2. Rank=1932, nullity=372, Tr K=1536, Tr K²=2816.
+- Evidence: research.q161dc_q96_clock_spectrum; standalone local SymPy execution exit 0 on 2026-11-20; latest completed GitHub Actions run 44741899352 success; new CI pending.
+- Scope: Native Q96 and 24-clock conditional tensor only; not a physical H64/Q125 source-to-Q96 B_x or Ward closure.
+- Next step: Q161da [compute] recover typed original B_x and evaluate (I-P_E)B_x†Q96B_xE exactly.
+
+
 ### 2026-11-20 12:13 UTC — GPT — Gate Q161cl — Q161db native face-square full-rank differential
 - Task: bounded Q161cz continuation, exact Q101 nonlinear face-square source Jacobian over all native frustrated ground words.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
@@ -13,7 +22,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Scope: Native Q101 nonlinear source only. H64/24-to-Q96 embedding and charged Ward leakage remain open; no gate closed.
 - Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
 
-- [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db established source Jacobian rank 8.
+- [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source and Q161dc exact Q96/24-clock spectrum established, but B_x remains unconstructed.
 
 ### 2026-11-20 — GPT — Q162e CI ground-record unpack repair
 - Failure investigated from actual GitHub Actions run 44718191950, research stage job 136228464836: Q162E line86 ValueError expected 3 tuple fields, original Q162D ground entries have exactly 2 (mask, spins). This is a code interface failure, not a numerical falsification.

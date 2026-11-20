@@ -2517,3 +2517,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q162j_physics_baseline/Q162J_ESTABLISHED_PHYSICS_BENCHMARK.py"
 timeout = 90
+
+[[check]]
+id = "research.q161dc_q96_clock_spectrum"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161dc_q96_clock_spectrum/Q161DC_CERT.py"
+timeout = 90
