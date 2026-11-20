@@ -32,6 +32,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
 
 - [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
+- [x] Q161df [compute] (Q161cl) original Q96/24 charge-clock resistance profile and Kirchhoff index — GPT 2026-11-20 THEOREM (internal): 479550; Q161da OPEN.
 - [x] Q161de [compute] (Q161cl) exact native Q96/24 antipodal Green and resistance — GPT 2026-11-20 THEOREM (internal): -40171/96, 2502; Q161da OPEN.
 - [x] Q161dd [compute] (Q161cl) exact Q96/24-clock Green trace — GPT 2026-11-20 THEOREM (internal): Tr K^+=79925/4; Q161da remains OPEN.
 
@@ -761,6 +762,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-20 17:11 UTC — GPT — Gate Q161cl — Q161df exact Q96/24-clock resistance
+- Task: Q161da [compute] bounded original Q96/24-clock invariant, with B_x still unconstructed.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
+- Statement: For original Q96 squared-charge multiplicities 36 at 4/9, 36 at 1/9, 12 at 1 and 12 neutral, the declared Q96/24 tensor has R(d)=417d(24-d)/24, charge-traced Kirchhoff index 479550 and R(6)=3753/2.
+- Evidence: research.q161df_q96_clock_kirchhoff; standalone Python Fraction certificate executed locally 2026-11-20, exit 0; latest completed CI before commit run 44761890959 SUCCESS; new CI pending verification.
+- Dead ends: No native source-to-Q96 B_x established by this calculation.
+- Next step: Q161da [compute] recover original H64/24/Q125-to-Q96 B_x and evaluate (I-P_E)B_x†Q96B_xE exactly.
+
 
 ### 2026-11-20 15:16 UTC — GPT — Gate Q161cl — Q161de exact Q96/24 antipodal Green response
 - Task: Q161da [compute] bounded exact native Q96/24-clock off-diagonal Green substep, without inventing the missing B_x.

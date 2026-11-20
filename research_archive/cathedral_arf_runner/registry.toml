@@ -2541,3 +2541,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161de_q96_antipodal_green/Q161DE_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161df_q96_clock_kirchhoff"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-20_q161df_q96_clock_kirchhoff/Q161DF_CERT.py"
+timeout = 90
