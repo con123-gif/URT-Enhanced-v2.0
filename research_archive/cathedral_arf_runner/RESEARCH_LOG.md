@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-20 14:16 UTC — GPT — Gate Q161cl — Q161dd exact Q96/24 Green trace
+- Task: Q161da [compute] bounded native Q96/24-clock spectral Green substep; B_x not supplied.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
+- Statement: For the original Q96 squared-charge registry and 24-cycle K=diag(q²)⊗L24, Tr K^+=417×575/12=79925/4 exactly.
+- Evidence: research.q161dd_q96_clock_green_trace; standalone local SymPy script exit 0, 2026-11-20; CI pending.
+- Scope: Declared original charge/clock tensor, not the missing native H64/Q125 source-to-Q96 embedding.
+- Next step: Q161da [compute] recover native B_x and calculate (I-P_E)B_x†Q96B_xE exactly.
+
+
 ### 2026-11-20 13:12 UTC — GPT — Gate Q161cl — Q161dc native Q96/24-clock charge spectral factorization
 - Task: Q161da [compute] bounded necessary spectral substep for the original charged clock, without inventing B_x.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da remains OPEN.
@@ -23,6 +32,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
 
 - [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source and Q161dc exact Q96/24-clock spectrum established, but B_x remains unconstructed.
+- [x] Q161dd [compute] (Q161cl) exact Q96/24-clock Green trace — GPT 2026-11-20 THEOREM (internal): Tr K^+=79925/4; Q161da remains OPEN.
 
 ### 2026-11-20 — GPT — Q162e CI ground-record unpack repair
 - Failure investigated from actual GitHub Actions run 44718191950, research stage job 136228464836: Q162E line86 ValueError expected 3 tuple fields, original Q162D ground entries have exactly 2 (mask, spins). This is a code interface failure, not a numerical falsification.

@@ -2525,3 +2525,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161dc_q96_clock_spectrum/Q161DC_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161dd_q96_clock_green_trace"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161dd_q96_clock_green/Q161DD_CERT.py"
+timeout = 90
