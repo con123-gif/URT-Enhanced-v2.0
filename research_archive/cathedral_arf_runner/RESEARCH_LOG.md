@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-20 22:10 UTC — GPT — Gate Q161cl — Q161dj exact Q96/24 fourth moment
+- Task: Q161da [compute] bounded spectral consistency substep for the declared original charge-clock tensor.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
+- Statement: For K=diag(q_i²)⊗L24, Tr(L24^4)=1680, sum_i q_i^8=9776/729 and Tr(K^4)=5474560/243 exactly.
+- Evidence: research.q161dj_q96_clock_fourth_moment; standalone Python exact-integer/Fraction certificate executed locally exit 0 on 2026-11-20; previous orchestrator #274 success; new CI pending.
+- Dead ends: Conditional charge-clock spectral moment does not construct B_x or prove charge Ward leakage vanishes.
+- Next step: Q161da [compute] recover typed original H64/24/Q125-to-Q96 B_x and evaluate (I-P_E)B_x†Q96B_xE exactly.
+
+
 ### 2026-11-20 19:16 UTC — GPT — Gate Q161cl — Q161dg Q96/24 pseudo-determinant
 - Task: Q161da [compute] bounded exact charge-clock spectral normalization substep.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
@@ -42,6 +51,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
 - [x] Q161df [compute] (Q161cl) original Q96/24 charge-clock resistance profile and Kirchhoff index — GPT 2026-11-20 THEOREM (internal): 479550; Q161da OPEN.
+- [x] Q161dj [compute] (Q161cl) original Q96/24 charge-clock fourth moment — GPT 2026-11-20 THEOREM (internal): Tr K^4=5474560/243; Q161da OPEN.
 - [x] Q161dg [compute] (Q161cl) exact Q96/24 charged-clock pseudodeterminant — GPT 2026-11-20 THEOREM (internal): pdet K=2^2160/3^3144; Q161da OPEN.
 - [x] Q161de [compute] (Q161cl) exact native Q96/24 antipodal Green and resistance — GPT 2026-11-20 THEOREM (internal): -40171/96, 2502; Q161da OPEN.
 - [x] Q161dd [compute] (Q161cl) exact Q96/24-clock Green trace — GPT 2026-11-20 THEOREM (internal): Tr K^+=79925/4; Q161da remains OPEN.

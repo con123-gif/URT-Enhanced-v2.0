@@ -2557,3 +2557,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-20_q161dg_q96_clock_pseudodeterminant/Q161DG_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161dj_q96_clock_fourth_moment"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-20_q161dj_q96_clock_fourth_moment/Q161DJ_CERT.py"
+timeout = 90
