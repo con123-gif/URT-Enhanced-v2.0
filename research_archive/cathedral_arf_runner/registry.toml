@@ -2473,3 +2473,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q162d_h64_charge_doubling/Q162F_EXACT_HIDDEN_TRIPLE_IDENTITY_CERT.py"
 timeout = 180
+
+
+[[check]]
+id = "research.q162g_original_ground_state_h64_density"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162d_h64_charge_doubling/Q162G_NATIVE_GROUND_ENSEMBLE_KMS_CERT.py"
+timeout = 180
