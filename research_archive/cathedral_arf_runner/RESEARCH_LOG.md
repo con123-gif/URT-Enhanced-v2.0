@@ -5,6 +5,17 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cw [compute] (whole-five native Hodge -> 8-mode kinetic spectrum) — GPT 2026-11-20 THEOREM (finite): exact 3+3+2 and nonzero kinetic parity birth; physical Q96/clock OPEN.
+
+### 2026-11-20 — GPT — Q161cw full-five finite one-rule kinetic theorem
+- Task: User asked to derive whether the complete Platonic system itself supplies the mathematics for dynamics and physical existence, without fitting or reducing to the 13-cell. Existing Q101, v116, Q60 and Q161cb/ck/ct recovered before this calculation.
+- Result: THEOREM on the original exact 50x8 degree-1+2 source and standard unit-edge Dirichlet energy; CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. No physics gate closed.
+- Source: all five ORIGINAL Platonic vertex/edge incidence complexes, V/E/F=(50,90,50), D190; gradient and coexact dimensions 45+45 (H1=0). For G=EᵀE and K=Eᵀ(d0ᵀd0)E, exact common A4 symmetry, K_oe K_oeᵀ=(512/27)I3. The tetrahedron alone supplies the offdiagonal odd-even Gram/K coupling; the other four cancel by antipodal pairing.
+- Exact projected kinetic spectrum: lambda±=[3476-312sqrt5 ±4sqrt(30951+3396sqrt5)]/965 (each multiplicity3), and 202/47 (multiplicity2). Numerical eigenvalues 2.06532099246945, 3.69291069876384, 4.29787234042553. K positive definite. Under declared metric gradient flow G dot(a)=-K a, U=aᵀKa/2 monotonically decreases. Pure original x source produces yz derivative -sqrt6(6+8sqrt5)/193=-0.303185197187111, dynamically requiring both tetrahedral parity defect and distinct kinetic scales from other solids.
+- Evidence: local original-hull 190-incidence numerical verification + standalone exact Fraction Q(phi) local eigen/Gram verification and SymPy generalised characteristic proof executed 2026-11-20 exit 0. Source cert Q161CW_NATIVE_EXACT_CERT.py committed and registered, CI pending. Detailed proof Q161CW_THEOREM.md. Two supplementary local scripts remain /mnt/data/cathedral_qphi_exact_modes.py and /mnt/data/cathedral_whole5_incidence_kinetic.py.
+- Limitations: the original Q101 degree-1+2 harmonic chart and unweighted nearest-edge quadratic action are declared canonical *model conventions*, not uniquely implied physical time, Yukawas, charges or masses. Existing Q161cl 50->96 charged insertion still OPEN, not replaced by this 8-mode result.
+- RESUME HERE: form original Q101 x(t)=I_ico a(t), f=(Cx(t))², h3=P3 f/h5=P5 f; apply the native H64 isometry Uh and Q60 four-charge Hopf map; evaluate 24-clock source dependence and Q96 Ward, not just representation dimension.
+
 - [x] Q161ct [compute] (Q161cl bounded native five-solid cubic source tensor) — GPT 2026-11-20 THEOREM: six xyz entries 4sqrt(3)/9; Q96 source embedding OPEN.
 
 - [x] Q161cr [compute] (Q161cl native Q125/Q96 exact symbolic Hopf Ward) — GPT 2026-11-20 THEOREM; source embedding B_x OPEN.
