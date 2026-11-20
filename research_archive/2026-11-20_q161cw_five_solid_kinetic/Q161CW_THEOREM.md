@@ -46,4 +46,4 @@ Executed locally:
 
 Recovered precedence: v116 Hopf/circulation, Q60 original all-five/H64-to-Hopf isometry, original Q101 harmonic map, Q161cb exact 50x8 Gram, Q161ck tetra parity defect, Q161ct cubic odd source. These antecedents are retained and not relabelled as new.
 
-**RESUME HERE:** Feed the derived geometric flow a(t) into the genuine original nonlinear Q101 operator x(t)=I_ico a(t), f(t)=(C x(t)) squared pointwise, and h3=P3 f,h5=P5 f; transport via the actual Q60 H64 Hopf map. Check the source-dependent 24-clock and Q96 charged Ward relation. Neither this finite kinetic rule nor a shared eight-dimensional carrier alone determines the physical coupling.
+**RESUME HERE:** Feed the derived geometric flow a(t) into the genuine original nonlinear Q101 operator x(t)=I_ico G^(1/2) a(t), f(t)=(C x(t)) squared pointwise, and h3=P3 f,h5=P5 f; transport via the actual Q60 H64 Hopf map. Check the source-dependent 24-clock and Q96 charged Ward relation. Neither this finite kinetic rule nor a shared eight-dimensional carrier alone determines the physical coupling.
