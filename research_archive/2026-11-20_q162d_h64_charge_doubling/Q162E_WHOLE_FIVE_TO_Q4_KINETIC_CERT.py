@@ -15,7 +15,7 @@ root=Path(__file__).resolve().parent
 d=runpy.run_path(str(root/'Q162D_NATIVE_Q4_H64_CLOCK_CERT.py'))
 phi=d['phi'];Delta=d['Delta']
 C=d['C'];P3=d['P3'];P5=d['P5'];Ph=d['Ph']
-Uh=d['Uh'];original_v=d['v'];ground=d['ground'];Pl=d['Pl']
+Uh=d['Uh'];original_v=d['v'];ground=[(mask,s,int(np.sum(s))) for mask,s in d['ground']];Pl=d['Pl']
 pairs=list(itertools.product((-1,1),repeat=2))
 solids={
  'tetrahedron':[(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)],
