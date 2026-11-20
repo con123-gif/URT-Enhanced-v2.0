@@ -2446,3 +2446,30 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q162b_golden_sphere/Q162C_GOLDEN_QUANTUM_HARMONIC_TRANSFER.py"
 timeout = 120
+
+
+[[check]]
+id = "research.q162d_native_h64_charge_four"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162d_h64_charge_doubling/Q162D_NATIVE_Q4_H64_CLOCK_CERT.py"
+timeout = 180
+
+
+[[check]]
+id = "research.q162e_five_solid_dynamic_three_classes"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162d_h64_charge_doubling/Q162E_WHOLE_FIVE_TO_Q4_KINETIC_CERT.py"
+timeout = 180
+
+
+[[check]]
+id = "research.q162f_hidden_cubic_120_identity"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162d_h64_charge_doubling/Q162F_EXACT_HIDDEN_TRIPLE_IDENTITY_CERT.py"
+timeout = 180
