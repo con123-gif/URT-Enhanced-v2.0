@@ -2482,3 +2482,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q162d_h64_charge_doubling/Q162G_NATIVE_GROUND_ENSEMBLE_KMS_CERT.py"
 timeout = 180
+
+
+[[check]]
+id = "research.q162h_native_frustration_entropy_selection"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162h_frustration_entropy/Q162H_GEOMETRIC_FRUSTRATION_ENTROPY_CERT.py"
+timeout = 240
