@@ -82,3 +82,33 @@ The earlier full-five relative-rotation operator A=G^(1/2) D(R) G^(-1/2), where 
 Q162D_NATIVE_Q4_H64_CLOCK_CERT.py: independent reconstructed original Q101 20-face and H64 operators, exact SymPy Q(sqrt5) one-orbit proof, all 60 numeric states, true 24 golden Fourier susceptibility and explicit local gauge defect. Locally executed exit 0. Q162E_WHOLE_FIVE_TO_Q4_KINETIC_CERT.py: full-five 50-vertex native edge graph, actual source derivative across all 60, six A4 orbits, three kinetic rates and numerical finite-difference crosscheck. Independent local original-formula run /mnt/data/Q162E_WHOLE_FIVE_DYNAMIC_Q4.py exit0. Both source certificates registered in CI; independent GitHub verdict pending.
 
 RESUME: derive a true locally covariant face-H64-24-to-original Q96 charge insertion with the original Q125 charged transport; transport the quadratic source with native face Wilson links, compute first and second joined Ward contacts, and test 24-clock physical species selection. No mass ratios, Planck lengths, cosmological scale factors, or ARF forms are inserted or implied.
+
+
+## Q162f — exact hidden-sector triple eigenvector identity (new algebraic result)
+
+There is a more fundamental identity than the norm and three derivative rates. For each of the native 60 frustrated ground words, take h3=P3 f, h5=P5 f, and form the real TWO-DIMENSIONAL family u(z)=h3+z h5 with ARBITRARY real z (not just the fixed Delta). Define Q(u)=Ph[u pointwise u]. Exact Q(sqrt5) symbolic arithmetic on the original representative and the original A5 orbit/inversion prove all 20 components of the **cubic eigenvector identity**
+    
+    Ph[u pointwise Q(u)] = (||u||²/120) u       (real source family, every z).
+    
+Taking its inner product with u gives automatically
+
+    ||Q(u)||²=||u||^4/120.
+
+The coefficient 1/120 is exactly calculated from the original face algebra, not an imposed normalization. It equals the reciprocal order of the binary icosahedral group, but no group-theoretic identity establishing *why* the equality is 120 has been proved. The theorem is specific to the original two-dimensional source lines and their 60 A5-related images, NOT a universal identity for every vector in the hidden eight.
+
+Differentiating the cubic identity along ANY infinitesimal real hidden variation v at one such source point gives
+
+    d||Q||²(v)=4<Ph(u pointwise Q),v>
+               =(4/120)||u||²<u,v>
+               =d(||u||⁴/120)(v),
+
+hence d ln||Q||²=2 d ln||u||² at those points for any infinitesimal real hidden perturbation. This PROVES the observed rate doubling in Q162e is not numerical coincidence and does not rely on any special chosen gradient flow. The THREE rate classes still depend on the stated Q161cw whole-five gradient direction.
+
+**Gauge-covariance detail:** The displayed u*Q triple is the REAL-source identity. Under global U1 phase u_complex=e^(2iα)u, the correct gauge-covariant continuation is
+
+    Ph[conjugate(u_complex) pointwise Q(u_complex)]
+       = (||u_complex||²/120) u_complex.
+
+This is immediate by phase counting, and it is verified in the exact certificate. It does NOT establish covariance under independently varying face phases because Ph fails to commute with local U1 multiplication.
+
+Executed original-face exact certificate: Q162F_EXACT_HIDDEN_TRIPLE_IDENTITY_CERT.py, registered for native CI, local independent SymPy coefficient-by-coefficient verification exit 0. Full local real-source numerical gradient tests: residuals below 3e-15. The stronger result is a nonlinear eigenvector / stationary quartic-ratio identity, NOT a physical quantum field theory.
