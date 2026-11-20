@@ -12,7 +12,7 @@ import contextlib,io,runpy,math
 import numpy as np
 import networkx as nx
 from scipy.linalg import expm
-source=Path(__file__).resolve().parent.parent.parent/(
+source=Path(__file__).resolve().parent.parent/(
  '2026-11-20_q162d_h64_charge_doubling/Q162E_WHOLE_FIVE_TO_Q4_KINETIC_CERT.py')
 with contextlib.redirect_stdout(io.StringIO()):
  d=runpy.run_path(str(source))
