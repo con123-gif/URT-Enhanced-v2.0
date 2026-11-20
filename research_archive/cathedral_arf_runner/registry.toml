@@ -2420,3 +2420,29 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161cy_native_response/Q161CY_CERT.py"
 timeout = 60
+
+[[check]]
+id = "research.q162a_original_chaos_to_five"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162a_urt_chaos_dual/Q162A_ORIGINAL_CHAOS_TO_FIVE_CERT.py"
+timeout = 360
+
+
+[[check]]
+id = "research.q162b_native_platonic_golden_sphere"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162b_golden_sphere/Q162B_GOLDEN_PLATONIC_SPHERE_CERT.py"
+timeout = 120
+
+
+[[check]]
+id = "research.q162c_native_golden_quantum_transfer"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162b_golden_sphere/Q162C_GOLDEN_QUANTUM_HARMONIC_TRANSFER.py"
+timeout = 120
