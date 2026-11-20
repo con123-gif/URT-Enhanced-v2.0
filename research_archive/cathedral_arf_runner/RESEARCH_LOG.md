@@ -31,7 +31,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Scope: Native Q101 nonlinear source only. H64/24-to-Q96 embedding and charged Ward leakage remain open; no gate closed.
 - Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
 
-- [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source and Q161dc exact Q96/24-clock spectrum established, but B_x remains unconstructed.
+- [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
+- [x] Q161de [compute] (Q161cl) exact native Q96/24 antipodal Green and resistance — GPT 2026-11-20 THEOREM (internal): -40171/96, 2502; Q161da OPEN.
 - [x] Q161dd [compute] (Q161cl) exact Q96/24-clock Green trace — GPT 2026-11-20 THEOREM (internal): Tr K^+=79925/4; Q161da remains OPEN.
 
 ### 2026-11-20 — GPT — Q162e CI ground-record unpack repair
@@ -760,6 +761,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-20 15:16 UTC — GPT — Gate Q161cl — Q161de exact Q96/24 antipodal Green response
+- Task: Q161da [compute] bounded exact native Q96/24-clock off-diagonal Green substep, without inventing the missing B_x.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da remains OPEN.
+- Statement: Original Q96 charge-square multiplicities 36 at 4/9, 36 at 1/9, 12 at 1, 12 at 0 and original 24-cycle zero-mean Green kernel give G(0)=575/288, G(12)=-289/288; charge-traced antipodal Green=-40171/96, antipodal resistance=2502 exactly.
+- Evidence: research.q161de_q96_antipodal_green; local standalone Fraction certificate executed 2026-11-20 exit 0; CI pending after commit.
+- Scope: Original charge-clock conditional tensor only; no source-dependent H64/Q125-to-Q96 B_x or physical Ward claim.
+- Dead ends: Q96/clock invariants alone do not determine B_x.
+- Next step: Recover explicit native B_x and compute (I-P_E)B_x†Q96 B_x E exactly.
+
 
 ### 2026-11-20 07:18 UTC — GPT — Q161cx exact native Q101 ground-source frame
 - Task: Q161cl bounded original frustrated-source normalization before Q96 source insertion.
