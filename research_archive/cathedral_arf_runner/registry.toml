@@ -2338,3 +2338,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-19_q161co_q96_symmetric/Q161CO_CERT.py"
 timeout = 120
+
+[[check]]
+id = "research.q161cp_q96_hypercharge_anomaly"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cp_q96_anomaly/Q161CP_Q96_ANOMALY.py"
+timeout = 60

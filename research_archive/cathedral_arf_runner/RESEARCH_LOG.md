@@ -5,6 +5,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161cp [compute] (Q161cl bounded original Q96 hypercharge anomaly certificate) — GPT 2026-11-20 THEOREM: all four local anomaly sums zero exactly; source B OPEN.
+
 - [x] Q161co [compute] (Q161cl bounded full original Q96 symmetric charge-selection calculation) — GPT 2026-11-19 THEOREM: complex nullity 762, rank 3894; source B OPEN.
 
 - [x] Q161cn [compute] (Q161cl bounded original Q96 symmetric Majorana selection) — GPT 2026-11-19 THEOREM: neutral symmetric kernel dimension 6 complex; Q161cl source B OPEN.
@@ -13,6 +15,14 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-20 01:17 UTC — GPT — Q161cp Q96 exact hypercharge anomaly certificate
+- Task: Q161cl bounded original Q96 3-generation chiral hypercharge consistency test.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Original Q96 charges yield exact zero U(1)_Y³, gravitational-U(1)_Y, SU(2)²-U(1)_Y and SU(3)²-U(1)_Y anomalies per generation; twelve SU(2) doublets satisfy even parity.
+- Evidence: research.q161cp_q96_hypercharge_anomaly; standalone Python Fraction script executed GPT local container 2026-11-20 exit 0; preceding CI #249 PASS; new CI pending.
+- Dead ends: Charge registry consistency alone does not construct native source B or charged Ward residual.
+- Next step: recover original Q101/Q125 B_x and calculate (I-P)B_x†Q96B_xE; Q161cl/Q161by OPEN.
 
 ### 2026-11-19 23:18 UTC — GPT — Q161co full Q96 symmetric charge selection
 - Task: Q161cl bounded original Q96 conjugate-sector neutral symmetric bilinear calculation; native source embedding B remains OPEN.
