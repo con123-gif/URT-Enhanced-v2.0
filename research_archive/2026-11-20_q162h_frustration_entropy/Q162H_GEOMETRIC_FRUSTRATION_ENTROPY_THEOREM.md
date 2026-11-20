@@ -120,3 +120,28 @@ The icosa+dodeca pair is A5-symmetric on the original source harmonics, so it ca
 The total rate variance is NOT a sum of each individual variances: the Gram whitening, source evolution and interference among solid contributions are coupled. These numbers cannot be treated as physical entropy production constants. The three response classes are A4-orbit geometry, not empirical generations.
 
 The exact native companion script Q162H_GEOMETRIC_FRUSTRATION_ENTROPY_CERT.py now includes these genuine ablation checks. Independent local original-formula ablation: /mnt/data/q162h_solid_ablation.py, exit 0, including the 2.5e−29 zero and two nonzero variances.
+
+
+## Native inversion-odd cubic channel Q162i: real asymmetry, no selected sign yet
+
+The actual original tetrahedron's four unit-radius directions t_v have the only nonzero full-five cubic third moment T_xyz=4/(3sqrt3), six permutations. The original 60 golden frustration ground states s have native source axes
+
+    m_s = (sum_i s_i v_i) / ||sum_i s_i v_i||,
+    ||sum_i s_i v_i|| = 4/phi.
+
+The purely original cubic odd observable is
+
+    O_s = sum_(v in tetra) (t_v dot m_s)^3
+        = (8/sqrt3) m_x m_y m_z.
+
+Direct enumeration of the actual 60 original ground words gives ONLY three exact levels:
+
+    O_s=−1/sqrt3 (24 histories); O_s=0 (12); O_s=+1/sqrt3 (24).
+
+Under original complete spin inversion s->-s, O changes sign. In contrast, the existing Q101 hidden face-square source u_s(t)=P3 (Cx_s(t))² + Delta P5 (Cx_s(t))² is even because the native source kinetic is linear x_-s(t)=−x_s(t). Hence w_-s(t)=w_s(t) for every model time t, and the exact full equal-prior conditioned ensemble has
+
+    <O>_t = sum_s p_s(t) O_s = 0 for all t.
+
+This is a *constructive separation*: original tetrahedral geometry really has an intrinsic signed parity-odd channel, while the original symmetric frustration source and its presently chosen entropy weighting **cannot select the sign**. Even the visible 1⊕3 splitting and three-class rate hierarchy do not amount to a matter/antimatter population preference. Derive actual charge/CP-sensitive URT transport or dynamical spontaneous orientation selection from original H64/24/Q96, rather than inserting an unproved asymmetry source coefficient.
+
+Original face/vertex local finite enumeration and exact inversion-cancellation theorem: Q162I_NATIVE_ODD_TETRA_SELECTION_CERT.py, independently executed via /mnt/data/Q162I_NATIVE_ODD_TETRA_SELECTION_CERT.py exit 0. New CI registered separately; physical interpretation remains OPEN.
