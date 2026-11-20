@@ -101,3 +101,22 @@ The first-order singlet/triplet split also contributes to mixing/entropy at high
 Source/native reproducible certificate: Q162H_GEOMETRIC_FRUSTRATION_ENTROPY_CERT.py (this folder), run via python at repo root. Independently run local reproduction at /mnt/data/Q162H_GEOMETRIC_FRUSTRATION_ENTROPY_CERT.py, exit 0 (using the equivalent original local Q162E reconstruction); registered CI pending verdict. No James Yang–Mills work included.
 
 **RESUME:** Incorporate the actual original H64 24-clock transfer and native Q96 charged Wilson transport into the source amplitude evolution, test its CP/inversion selection and whether physical entropy production (including environment) obeys a fluctuation/second-law identity; retain source probability selection as a declared test, never a fitted observable.
+
+
+## Controlled native-solid ablation: which mismatch is responsible?
+
+To avoid conflating the *tetrahedral inversion defect* with the *entire cause of entropy selection*, a direct ablation repeats the ORIGINAL calculation after recomputing BOTH the vertex Gram G_subset and edge Dirichlet K_subset of each native subcollection, whitening them afresh, while holding fixed the genuine original frustrated 60-word input ensemble and Q101 hidden face source.
+
+All tests run with actual original unit-radius vertices and actual graph edges. The instantaneous conditioned survival-rate variance is:
+
+| Native solid collection | Var(r_s) |
+| --- | ---: |
+| Icosahedron + dodecahedron only | 2.5e−29 (zero to numerical precision) |
+| Cube + octahedron + dodecahedron + icosahedron (NO tetrahedron) | 0.15248159401299013 |
+| **All five Platonic solids** | **0.3590243108722678** |
+
+The icosa+dodeca pair is A5-symmetric on the original source harmonics, so it cannot split the original 60 A5-related ground-word response rates. Their numerical zero is consistent with this representation argument. The cube+octa addition breaks this large symmetry to the common A4 and already produces an entropy-selection rate variance. Therefore **the tetrahedron is not the only possible source of asymmetry in rates**. The tetrahedron's special and mathematically separate role is introducing ORIGINAL odd/even harmonic parity mixing, absent from the other 46 antipodally paired vertices. All five together change the magnitude and pattern of the selection.
+
+The total rate variance is NOT a sum of each individual variances: the Gram whitening, source evolution and interference among solid contributions are coupled. These numbers cannot be treated as physical entropy production constants. The three response classes are A4-orbit geometry, not empirical generations.
+
+The exact native companion script Q162H_GEOMETRIC_FRUSTRATION_ENTROPY_CERT.py now includes these genuine ablation checks. Independent local original-formula ablation: /mnt/data/q162h_solid_ablation.py, exit 0, including the 2.5e−29 zero and two nonzero variances.
