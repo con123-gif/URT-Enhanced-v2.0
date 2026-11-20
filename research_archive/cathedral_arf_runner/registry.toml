@@ -2508,3 +2508,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161db_face_jacobian/Q161DB_CERT.py"
 timeout = 180
+
+
+[[check]]
+id = "research.q162j_established_physics_baseline"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q162j_physics_baseline/Q162J_ESTABLISHED_PHYSICS_BENCHMARK.py"
+timeout = 90
