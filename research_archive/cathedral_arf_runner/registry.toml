@@ -2362,3 +2362,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161cr_q125_symbolic_charge/Q161CR_CERT.py"
 timeout = 60
+
+[[check]]
+id = "research.q161cs_q125_q96_hopf_curvature"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cs_q125_q96_hopf_curvature/Q161CS_CERT.py"
+timeout = 60

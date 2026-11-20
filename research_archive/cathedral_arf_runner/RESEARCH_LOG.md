@@ -17,7 +17,16 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
 - [x] Q161cq [compute] (Q161cl bounded native vertex-level source leverage) — GPT 2026-11-20 THEOREM: seven solid-local exact leverage classes; source-to-Q96 B OPEN.
+- [x] Q161cs [compute] (Q161cl native Q125/Q96 Hopf curvature) — GPT 2026-11-20 THEOREM; source B_x OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
+
+### 2026-11-20 05:14 UTC — GPT — Q161cs native Q125/Q96 weighted Hopf curvature
+- Task: Q161cl bounded native Q125 local charged bundle curvature, following Q161cr.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161cl/Q161by OPEN.
+- Statement: For original Q125 Hopf projectors and four Q96 charged doublets, Tr(Q_L [∂z P, ∂zbar P]^{⊕4})=-4/(1+z zbar)^2, with weighted Chern magnitude 4.
+- Evidence: research.q161cs_q125_q96_hopf_curvature; standalone SymPy certificate executed locally 2026-11-20, exit 0; CI pending.
+- Dead ends: Local Hopf curvature does not supply the missing 50→96 B_x or establish a physical gauge field.
+- Next step: recover the native Q101/Q125 50→96 source embedding B_x and evaluate (I-P_E)B_x†Q96B_xE exactly.
 
 ### 2026-11-20 04:16 UTC — GPT — Q161cr symbolic Q125/Q96 Hopf Ward
 - Task: Q161cl bounded native Q125/Q96 local charge insertion, exact symbolic upgrade of earlier 444-history numerical Ward.
