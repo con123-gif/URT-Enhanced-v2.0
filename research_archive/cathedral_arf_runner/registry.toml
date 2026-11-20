@@ -2395,3 +2395,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-20_q161cu_five_hopf_fluid/Q161CV_SOURCE_ALIGNED_URT_FLOW.py"
 timeout = 60
+
+[[check]]
+id = "research.q161cx_native_ground_frame"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-20_q161cx_native_ground_frame/Q161CX_CERT.py"
+timeout = 120

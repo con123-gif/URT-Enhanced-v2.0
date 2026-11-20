@@ -20,6 +20,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161ck [compute] (Q161by native five-solid inversion-defect subcase) — GPT 2026-11-19 THEOREM: 46 antipodal vertices give zero odd-even Gram; tetrahedron supplies rank-three coupling; Q96 Ward OPEN.
 - [x] Q161cq [compute] (Q161cl bounded native vertex-level source leverage) — GPT 2026-11-20 THEOREM: seven solid-local exact leverage classes; source-to-Q96 B OPEN.
 - [x] Q161cs [compute] (Q161cl native Q125/Q96 Hopf curvature) — GPT 2026-11-20 THEOREM; source B_x OPEN.
+- [x] Q161cx [compute] (Q161cl bounded original Q101 ground-source frame) — GPT 2026-11-20 THEOREM: 60 unit source axes form exact tight frame 20 I3; Q96 embedding OPEN.
 - [ ] Q161cl [compute] (Q161by) recover original Q96 action on source and calculate (I-P)Q96 E.
 
 ### 2026-11-20 06:10 UTC — GPT — Q161ct native five-solid odd cubic moment
@@ -671,6 +672,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-20 07:18 UTC — GPT — Q161cx exact native Q101 ground-source frame
+- Task: Q161cl bounded original frustrated-source normalization before Q96 source insertion.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161cl/Q161by OPEN.
+- Statement: For all 60 native Q101 E=-6, |M|=4 ground spin words, source axes a_s=sum_i s_i v_i have norm squared 24-8sqrt(5), first moment zero and second moment (480-160sqrt(5)) I3; normalized frame operator 20 I3.
+- Evidence: research.q161cx_native_ground_frame; standalone SymPy executed in GPT local container 2026-11-20, exit 0; CI pending.
+- Dead ends: An exact source-axis tight frame does not determine a 50-to-96 charged embedding or close a physical Ward gate.
+- Next step: construct a native Q101/Q125-to-Q96 B_x from original Y_x and V_x, and calculate (I-P_E)B_x† Q96 B_x E exactly.
+
+
 
 ### 2026-11-19 13:14 UTC — GPT — Q161cf exact five-solid source subset ranks
 - Task: Q161by bounded original Q161ce source subset-support classification over all 31 nonempty subsets.
