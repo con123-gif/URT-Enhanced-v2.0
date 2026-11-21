@@ -2758,3 +2758,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_covariant_action/URT_ZPE_COVARIANT_CONSTRAINT_CERT.py"
 timeout = 90
+
+# Standalone URT-ZPE: finite-speed Gaussian quantum seam and real source work
+[[check]]
+id = "research.urt_zpe_quantum_seam_dynamics"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_quantum_dynamics/URT_ZPE_QUANTUM_SEAM_DYNAMICS_CERT.py"
+timeout = 120
