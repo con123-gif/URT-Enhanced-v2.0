@@ -2811,3 +2811,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_autonomous_rotor/URT_AUTONOMOUS_ROTOR_GAUSSIAN_FLOW.py"
 timeout = 120
+
+# Independent URT-ZPE 95% horizon coefficient versus same-state Gaussian entropy audit
+[[check]]
+id = "research.urt_zpe_95percent_same_state_audit"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_entropy_audit/URT_ENTROPY_95PERCENT_SAME_STATE_CERT.py"
+timeout = 120
