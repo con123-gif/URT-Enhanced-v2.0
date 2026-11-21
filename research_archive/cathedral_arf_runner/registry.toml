@@ -2785,3 +2785,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_primitive_amplifier/URT_PRIMITIVE_BOGOLIUBOV_CERT.py"
 timeout = 90
+
+# URT: onsite gauge-invariant quantum squeeze with native 3D magnetic signal and conjugate idler
+[[check]]
+id = "research.urt_local_conjugate_pump"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_local_pump/URT_LOCAL_CONJUGATE_PUMP_CERT.py"
+timeout = 120
