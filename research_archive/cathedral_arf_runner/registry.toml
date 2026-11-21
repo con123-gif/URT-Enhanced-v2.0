@@ -2696,3 +2696,12 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_LANCZOS_INDEPENDENT.py"
 timeout = 90
+
+# User-selected standalone URT ZPE theory: boundary joining energy and shared-state entropy
+[[check]]
+id = "research.urt_zpe_interface_common_vacuum"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_interface/URT_ZPE_INTERFACE_CERT.py"
+timeout = 120

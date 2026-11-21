@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — standalone URT vacuum interface and coherent theory core
+- Task: Explicit user priority: complete as much of URT ZPE theory as mathematically supportable; do not divert into Cathedral, ARF or RH. Extend unchanged prime-exponent golden-flux oscillator to the microscopic energy/entropy interface.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; direct joint-vacuum energy–entropy bounds, and positive interface thermodynamic limit, without fitted parameter.
+- Statement: For even NxN golden magnetic lattice N>=4, cut into two width-N/2 slabs; true seam B>=0 has Tr B=2N, and L_t=L0+tB obeys gI<=L_t<=8I, g=1-cos(F/4). Exact Δe_N=Tr√L1−Tr√L0=1/2∫Tr B L_t^-1/2 dt obeys N/√8<=Δe_N<=N/√g. The *same* Gaussian ground-state entropy satisfies c_low N<=S_A/kB<=C_area N where c_low=1/[128(√(1+8/g)+1)^2]>0 and C_area is prior explicit upper coefficient. Hence c_low√g Δe_N<=S_A/kB<=C_area√8 Δe_N. Infinite seam σ(F)=1/2∫⟨b,L_t∞^-1/2 b⟩dt>0 exists and |Δe_N−Nσ|<=4/√8[(1−q)^-2+(1−q)^-3], q=1−g/8. This is an exact boundary-vacuum response, not cosmological pressure.
+- Evidence: research.urt_zpe_interface_common_vacuum; standalone SciPy/NumPy executed in local container with exit 0, sizes N=4,6,8,10,12 both sector signs, finite difference checks of derivative, entropy/energy inequality. GitHub CI PENDING. Full report, theory status and output in research_archive/2026-11-21_urt_zpe_interface/.
+- Limitations: Golden reciprocity extension, canonical quantum mechanics, dimensional omega0, actual physical vacuum, metric response, dark energy are not yet derived from primitive URT. No fitting, no entropy tax, no 95.6% comparison.
+- Next step: derive a physically selected metric dependence of the same L and omega0 to calculate a conserved covariant vacuum stress tensor; no unrelated theory branch or target value.
+
+
 ### 2026-11-21 10:22 UTC — GPT — Standalone prime-URT ZPE — strict positive infinite-volume flux difference
 - Task: User-directed standalone continuation of finite magnetic oscillator and connected-lattice Gaussian ZPE area-law track; prove infinite-volume reciprocity-sector energy difference is nonzero and determine its sign. Separate from Cathedral Q161da and ARFs.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; conditional on previously declared golden-angle uniform magnetic flux and canonical complex oscillator quantization.
