@@ -2749,3 +2749,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_three_layer_refinement/URT_ZPE_REFINEMENT_CERT.py"
 timeout = 120
+
+# Standalone URT-ZPE: covariant auxiliary carrier density and creation stress
+[[check]]
+id = "research.urt_zpe_covariant_constraint_action"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_covariant_action/URT_ZPE_COVARIANT_CONSTRAINT_CERT.py"
+timeout = 90

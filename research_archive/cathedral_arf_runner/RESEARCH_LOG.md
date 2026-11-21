@@ -793,6 +793,13 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — URT–ZPE covariant density action and exact creation pressure
+- Task: Continue standalone URT ZPE from commit 489d3d7; construct a covariant stress action and source accounting from the unchanged 3D magnetic bulk energy rho=K n^(4/3), without inserting a pressure coefficient or modifying the magnetic links.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; action conditional on an explicitly extra constant proper magnetic frequency floor Omega. Diffeomorphism-invariant S=integral sqrt(-g)[-K n^(4/3)+lambda(n-nstar)] with n=sqrt(-g(J,J))/sqrt(-g), nstar=(Omega/(c sqrt(g3)))^3, yields n=nstar, lambda=4K nstar^(1/3)/3, T_bare=(rho+p)uu+p g (p=rho/3), T_constraint=-(4rho/3)(g+uu) and T_total=-rho g. From covariant current in FRW Gamma=3H, exchange Q=4H rho exactly, constraint zero-density negative pressure pays local continuum creation work; total stress conserved.
+- Evidence: research.urt_zpe_covariant_constraint_action, standalone SymPy/NumPy symbolic+golden-flux checker executed in local container on 2026-11-21 exit 0; CI pending. New files research_archive/2026-11-21_urt_zpe_covariant_action/. Does NOT derive Omega, real reservoir microdynamics, Planck scale, Einstein action or observed Lambda; on-shell effective action is formally cosmological constant.
+- Next step: derive or reject the frequency-floor physical principle from primitive URT coupled microscopic dynamics, and construct an explicit unitary carrier-birth energy reservoir that pays the native 3-layer sheet+seam costs.
+
+
 ### 2026-11-21 — GPT interactive — URT–ZPE constructive three-layer refinement (standalone)
 - Task: Continue verified 3D prime-magnetic ZPE theory at 9e3fc93, construct carrier-growth operator using unchanged native magnetic links and account for preparation energy and native seam work; standalone, not Cathedral or RH.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original cube n^3 expands through three exact new-sheet joins with sum of seam counts n²+n(n+1)+(n+1)²=3n²+3n+1=ΔM. Along each seam path g2 I ≤ L_t ≤12 I and each bond is original magnetic link; sheet + seam energies give precisely full cube energy increment; ΔM/√12 ≤ W_seams/(ℏ c/ell) ≤ ΔM/√g2. Exact surface remainder |Tr√L_n −n³u3| ≤ [12√12 q/(1−q)²]n², q=1−3g2/24; consequently cost/new site → (ℏ c/ell)u3 for m=ceil((π/e)n).
