@@ -1,0 +1,15 @@
+EXACT for d spatial dimensions: E=k*M^(1+1/d)*V^(-1/d)
+P_mech=rho/d; mu=(1+1/d)*E/M; P_co_growth=P_mech-mu*M/V=-rho
+Note: P_co_growth is an effective derivative along site creation, not necessarily physical gravitational stress
+eps=-1 N= 6 E/M=1.7238958509 growth_deriv=1.8068945767 co_growth_P/rho=-1.04814602
+eps=-1 N= 8 E/M=1.7743646624 growth_deriv=1.8392531345 co_growth_P/rho=-1.03656998
+eps=-1 N=10 E/M=1.8042442362 growth_deriv=1.8573634784 co_growth_P/rho=-1.02944127
+eps=-1 N=12 E/M=1.8239977270 growth_deriv=1.8688920245 co_growth_P/rho=-1.02461313
+eps=-1 N=14 E/M=1.8380259825 growth_deriv=1.8768734593 co_growth_P/rho=-1.02113543
+eps=+1 N= 6 E/M=1.7352647122 growth_deriv=1.8164186235 co_growth_P/rho=-1.04676745
+eps=+1 N= 8 E/M=1.7848336684 growth_deriv=1.8485651834 co_growth_P/rho=-1.03570726
+eps=+1 N=10 E/M=1.8142155552 growth_deriv=1.8664500207 co_growth_P/rho=-1.02879176
+eps=+1 N=12 E/M=1.8336538181 growth_deriv=1.8778316882 co_growth_P/rho=-1.02409281
+eps=+1 N=14 E/M=1.8474649899 growth_deriv=1.8857113118 co_growth_P/rho=-1.02070206
+PASS: exact continuum thermodynamic identity, native flux graph growth trends
+CONDITIONAL: carrier creation with constant proper spacing is an extra physical hypothesis

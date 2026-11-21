@@ -1,0 +1,14 @@
+N=2 eps=-1 E0=4.99283620148 S/kB=1.43878600743 rho2D=1.24820905037 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.390167830
+N=2 eps=+1 E0=5.20381080705 S/kB=0.54293352750 rho2D=1.30095270176 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.399946665
+N=4 eps=-1 E0=25.92235909655 S/kB=0.69983092188 rho2D=1.62014744353 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.371491597
+N=4 eps=+1 E0=26.14115717108 S/kB=0.43352568363 rho2D=1.63382232319 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.374869604
+N=6 eps=-1 E0=62.06025063082 S/kB=0.77495450541 rho2D=1.72389585086 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.367128832
+N=6 eps=+1 E0=62.46952964085 S/kB=0.53855387738 rho2D=1.73526471225 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.370366361
+N=8 eps=-1 E0=113.55933839577 S/kB=0.94167785979 rho2D=1.77436466243 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.365343160
+N=8 eps=+1 E0=114.22935477554 S/kB=0.67104234242 rho2D=1.78483366837 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.368356282
+N=10 eps=-1 E0=180.42442361793 S/kB=1.12897823114 rho2D=1.80424423618 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.364281717
+N=10 eps=+1 E0=181.42155552136 S/kB=0.80803507395 rho2D=1.81421555521 px/rho=0.500000000000 py/rho=0.500000000000 anis_px/rho=0.367171185
+PASS: same golden-flux Hamiltonian, static homogeneous metric stresses, exact p_x+p_y=rho, w_2D=1/2
+PASS: URT shell length scaling E~a^-1, rho~a^-3, entanglement entropy invariant at fixed N
+PASS: anisotropic Feynman-Hellmann stresses, local gauge invariance, original N=2 spectrum
+LIMIT: quantization and metric interpretation are extra hypotheses; no derived 3+1D GR or dark energy.

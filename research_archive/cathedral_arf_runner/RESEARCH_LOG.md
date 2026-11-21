@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — standalone prime-URT ZPE geometric stress and carrier-growth first law
+- Task: User-directed continuation of unchanged prime-URT ZPE magnetic oscillator and Gaussian entropy/interface work; derive metric response and possible negative-pressure mechanism without fitting, unrelated Cathedral ARFs excluded.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional on original prime-flux lattice/CCR and explicit homogeneous static 2D metric; second theorem exact conditional carrier-creation thermodynamics.
+- Statement: For K_g=Lx/ellx²+Ly/elly² with original actual-degree flux graph and E=ℏc Tr√K_g, physical proper area V=N²ellxelly, P_i=(ℏc/V)Tr(K_g^-1/2 Li/elli²)>0, P_x+P_y=ρ, P_iso=ρ/2. Under simultaneous physical dilation a: E→a^-1E, ρ→a^-3ρ, site entanglement entropy invariant at fixed N. If N sites grow at constant microscopic spacing, bulk E=k M^(3/2)V^(-1/2), M=N²; exact first law dE=-(ρ/2)dV+(3E/(2M))dM implies co-growth effective -dE/dV=-ρ. This is a chemical/site-creation derivative NOT yet conserved gravitational stress or dark-energy proof; no fitted scale, no physical 3D embedding.
+- Evidence: research.urt_zpe_metric_pressure; research.urt_zpe_carrier_creation_thermodynamics; executable NumPy/SciPy N=2,4,6,8,10 both flux sectors and SymPy arbitrary-d identity plus same native graph growth N=4..14; both executed local container exit 0. GitHub Actions CI pending. Files research_archive/2026-11-21_urt_zpe_metric_response/.
+- Dead ends: stretching the same fixed carrier set gives positive pressure, so cannot itself yield dark-energy-like negative pressure; treating co-growth derivative as mechanical stress would ignore chemical source. Preserve spectral/entropy results; no prior Hamiltonian changed.
+- Next step: construct an actual URT-compatible quantum isometry to add a gapped two-layer boundary shell, calculate its ground-state energy/entanglement change from the *same* bonds, and derive physical energy source/conservation without an assumed dark-energy value.
+
+
 ### 2026-11-21 — GPT interactive — standalone URT vacuum interface and coherent theory core
 - Task: Explicit user priority: complete as much of URT ZPE theory as mathematically supportable; do not divert into Cathedral, ARF or RH. Extend unchanged prime-exponent golden-flux oscillator to the microscopic energy/entropy interface.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; direct joint-vacuum energy–entropy bounds, and positive interface thermodynamic limit, without fitted parameter.

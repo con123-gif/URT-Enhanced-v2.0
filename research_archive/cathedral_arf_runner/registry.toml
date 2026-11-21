@@ -2705,3 +2705,21 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_interface/URT_ZPE_INTERFACE_CERT.py"
 timeout = 120
+
+# Standalone prime-URT golden-flux Gaussian vacuum: physical-length stress test
+[[check]]
+id = "research.urt_zpe_metric_pressure"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_metric_response/URT_ZPE_METRIC_RESPONSE_CERT.py"
+timeout = 180
+
+# Standalone URT ZPE microscopic carrier production thermodynamic identity
+[[check]]
+id = "research.urt_zpe_carrier_creation_thermodynamics"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_metric_response/URT_CARRIER_CREATION_THERMODYNAMICS_CERT.py"
+timeout = 180
