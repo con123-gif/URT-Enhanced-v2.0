@@ -2880,3 +2880,12 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_orientation/orientation.py"
 timeout = 120
+
+# Standalone URT ZPE combined-force EFT entropy accounting (conditional GR/QFT comparison)
+[[check]]
+id = "research.urt_zpe_force_vacuum_accounting"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_force_vacuum/cert.py"
+timeout = 60

@@ -793,6 +793,13 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — combined-force vacuum accounting, not another boundary fit
+- Task: user asks to investigate other fundamental forces in standalone entropy-ZPE branch.
+- Result: REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Standard covariant effective action constant term rho_0 independent of curvature coefficient B. For B R_scalar term in de Sitter, δ(1/G)=16pi B, Wald S_B=4pi B A, T S_B/V=6B/R²=-rho_B when same term placed on source side; cannot count induced gravity as a second positive vacuum component. Free Maxwell anomaly rho_gamma=31 hbar H^4/(480pi²c³), ratio to de Sitter density=31(H t_P)^2/(180pi), benchmark 5.74e-124. EW tree Higgs vacuum magnitude and QCD characteristic scale exceed benchmark by 54 and 43 orders respectively; no cancellation derived. Normalized matter entropy invariant under constant Hamiltonian shift on fixed background while covariant constant shifts gravitate. No fitted coefficient, no identification of original 95% with any one force.
+- Evidence: research.urt_zpe_force_vacuum_accounting, SymPy local exact identities and numerical benchmarks exit 0. research_archive/2026-11-21_urt_zpe_force_vacuum/. Latest completed CI checkpoint296 failed on prior registry launch (already corrected by 52da374; new run pending). New CI not confirmed.
+- Next: derive actual joint covariant URT gauge-matter effective action and distinguish its constant and curvature terms; no further percentage chasing.
+
+
 ### 2026-11-21 — GPT interactive — flux-aligned horizon and orientation-independent mixed commutator
 - Task: preserve entropy track after 52da374, compare physically motivated flux-axis cut to prior coordinate-axis cut, same L and midpoint lapse, no fitted orientation or flux.
 - Result: THEOREM for native fixed-flux graph / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. For unit b, sum over twelve mixed two-step neighbors |[L,[L,D_b]]_ij|²=32 sin²(f/2) exactly, independent of horizon normal. Thus full residual norm >=sqrt(8)|1-exp(if)|/(96 sqrt12); same lower bound for infinite midpoint half-space by deep magnetic translations. n12 flux-aligned eta +1.019560715788/-0.883688360385 vs axis +1.220365987171/-1.117680758913. Positive near-unit ratio is cancellation Drel/S=.561815446235 vs logZ/S=.542254730447, not thermal matching. No universal scalar closure or physical orientation selection.
