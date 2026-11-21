@@ -2827,7 +2827,7 @@ id = "research.urt_zpe_horizon_redshift_ledger"
 stage = "research"
 claim = "conditional"
 gating = true
-run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_BOUNDARY_ENERGY_CERT.py"
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_BOUNDARY_ENERGY_CERT.py"
 timeout = 120
 
 [[check]]
@@ -2835,7 +2835,7 @@ id = "research.urt_zpe_horizon_redshift_boost"
 stage = "research"
 claim = "conditional"
 gating = true
-run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_BOOST_CERT.py"
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_BOOST_CERT.py"
 timeout = 180
 
 [[check]]
@@ -2843,7 +2843,7 @@ id = "research.urt_zpe_horizon_redshift_strip"
 stage = "research"
 claim = "independent"
 gating = true
-run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_STRIP_CHECK.py"
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_STRIP_CHECK.py"
 timeout = 240
 
 # Standalone URT entropy: central-strip redshift/thermal accounting
@@ -2852,5 +2852,22 @@ id = "research.urt_zpe_horizon_central_thermal"
 stage = "research"
 claim = "conditional"
 gating = true
-run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_limit/central_thermal.py"
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_limit/central_thermal.py"
+timeout = 120
+
+# Native URT-ZPE horizon stationarity and exact Gaussian modular reconstruction
+[[check]]
+id = "research.urt_zpe_boost_stationarity"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_boost_stationarity/check.py"
+timeout = 120
+
+[[check]]
+id = "research.urt_zpe_exact_modular_operator"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_boost_stationarity/modular.py"
 timeout = 120
