@@ -2573,3 +2573,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-21_q161do_native_jacobian_norm/Q161DO_CERT.py"
 timeout = 180
+
+# Prime-lattice URT extension: declared connection, nonzero holonomy, infinite gap proof in report
+[[check]]
+id = "research.prime_urt_magnetic_gap"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_prime_magnetic_gap/urt_prime_magnetic_gap_2026_11_21.py"
+timeout = 120

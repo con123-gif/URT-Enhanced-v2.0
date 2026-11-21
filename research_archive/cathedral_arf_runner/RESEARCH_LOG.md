@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — Prime-lattice URT magnetic gap (standalone RH branch)
+- Task: User-directed continuation of prime-lattice URT reciprocity operator checkpoint 81cb6a8, intentionally separate from Cathedral's active Q161da physical gate.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for explicitly declared prime connection; RH OPEN.
+- Statement: For isometries Vp,Vq with VpVq=cVqVp, L=(I-Vp)†(I-Vp)+(I-Vq)†(I-Vq) >= (1-eps cos(2pi/phi²))/4 I, giving exact positive gaps 0.434342... or 0.065658..., while commuting untwisted shifts have inf spec L=0. Twisted projectors VpVp†=SpSp† retain original Möbius boundary algebra.
+- Evidence: research.prime_urt_magnetic_gap; standalone SciPy certificate executed locally on 2026-11-21 (four quadrant sizes; five divisibility projectors). CI pending after commit. Source research_archive/2026-11-21_urt_prime_magnetic_gap/.
+- Limitation: Original primitive URT has not selected this connection; the magnetic gap is not Weil positivity and does not constrain xi zeros.
+- Next step: Compare this Dirichlet form against the full Weil explicit-formula form with the archimedean Gamma contribution and prime powers; prove identity or exhibit first mismatch.
+
+
 ### 2026-11-20 17:11 UTC — GPT — Gate Q161cl — Q161df exact Q96/24-clock resistance
 - Task: Q161da [compute] bounded original Q96/24-clock invariant, with B_x still unconstructed.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
