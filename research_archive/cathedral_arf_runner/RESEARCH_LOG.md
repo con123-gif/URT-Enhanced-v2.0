@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 10:22 UTC — GPT — Standalone prime-URT ZPE — strict positive infinite-volume flux difference
+- Task: User-directed standalone continuation of finite magnetic oscillator and connected-lattice Gaussian ZPE area-law track; prove infinite-volume reciprocity-sector energy difference is nonzero and determine its sign. Separate from Cathedral Q161da and ARFs.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; conditional on previously declared golden-angle uniform magnetic flux and canonical complex oscillator quantization.
+- Statement: The infinite bulk normalized trace u_eps=tau_0(sqrt(4I-A_F)) obeys u_+-u_->0.0022111312451 exactly as a rationally certified lower bound. Proof: closed four-step magnetic walks give tau A^4=28+8cosF, Jacobi coefficients b1²=4, b2²=3+2cosF; 3-node Radau (endpoint 1/2 from true plus-sector plaquette gap) lower-bounds u+, 3-node Gauss upper-bounds u-; rigorous rational pi/sqrt5/trigonometric/root intervals show Radau>1.924, Gauss<1.923. Independent infinite Krylov quadrature n=12 estimates delta=0.00827785286373 with numerical bracketing [0.008277852862396,0.008277852880200]. One unchanged Hamiltonian, no fit, no finite-size extrapolation.
+- Evidence: research.urt_zpe_bulk_strict_sign_exact (stdlib Fraction/int sqrt; rigorous inequality), research.urt_zpe_bulk_lanczos_independent (independent SciPy Harper Lanczos); both executed locally, exit 0; GitHub CI PENDING. Archive research_archive/2026-11-21_urt_zpe_infinite_flux/.
+- Limitations: Golden-angle projective phase extension, canonical quantization and physical omega0 not uniquely derived from primitive URT; no absolute physical vacuum energy, dark energy, G, entropy scale or cosmological observables.
+- Next step: derive boundary excess E0(N)-N²u and mechanical/entropic surface response using the same graph and same Gaussian vacuum; no horizon count, target fitting or Cathedral operator.
+
+
 ### 2026-11-21 10:08 UTC — GPT — Standalone URT ZPE — uniform gap, Gaussian area law, bulk vacuum limit
 - Task: Explicit user-selected continuation of prime-URT magnetic 4-site ZPE/entropy joint vacuum. Do not switch to an unrelated research programme.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for the declared uniform-flux magnetic graph and *assumed* Gaussian quantisation. No fitting or cosmological target.

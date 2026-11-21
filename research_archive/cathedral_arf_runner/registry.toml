@@ -2679,3 +2679,20 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_lattice_area_law/URT_ZPE_FLUX_MOMENT_CERT.py"
 timeout = 90
+
+# Standalone prime-URT: rigorous infinite-volume magnetic ZPE sector ordering
+[[check]]
+id = "research.urt_zpe_bulk_strict_sign_exact"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_SIGN_EXACT_CERT.py"
+timeout = 90
+
+[[check]]
+id = "research.urt_zpe_bulk_lanczos_independent"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_LANCZOS_INDEPENDENT.py"
+timeout = 90
