@@ -2645,3 +2645,20 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_mismatch_reaudit/URT_ZPE_MISMATCH_CERT_2026-11-21.py"
 timeout = 90
+
+# User-directed standalone prime-URT ZPE, separate from Cathedral ARF/gates
+[[check]]
+id = "research.urt_zpe_gaussian_joint_vacuum"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_gaussian_joint/URT_JOINT_ZPE_ENTROPY_CERT.py"
+timeout = 90
+
+[[check]]
+id = "research.urt_zpe_gaussian_joint_independent"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_gaussian_joint/independent_gaussian_check.py"
+timeout = 90

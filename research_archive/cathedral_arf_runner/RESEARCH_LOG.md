@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 09:34 UTC — GPT — Standalone URT ZPE — one-vacuum Gaussian energy/entropy
+- Task: Explicit user-selected standalone prime-URT ZPE, not Cathedral Q161da, ARFs, or alternate field program; preserve finite magnetic loop and address previous entropy/ZPE mixing and gauge-dependence errors.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING **conditional** on locally quantised charged harmonic oscillators on four-site prime magnetic graph.
+- Statement: For L=2I-A(eps e^-iθ), θ=2π/φ², one Gaussian ground state yields E0/(ℏω0)=Tr√L and physical site-partition entropy S_A/kB=2[h(ν+)+h(ν−)], ν±=√eig((L^1/2)_AA (L^-1/2)_AA)/2. The entropy is exactly invariant under vertex phase gauge because site rotation is local. Exact energy monotone in 0<F<π. Golden sectors E+ =5.20381080705, E- =4.99283620148; S+ =0.54293352750 and S- =1.43878600743 nats for site cut {0,1}|{2,3}. No fitted constants or imported unrelated entropy; original ΔE0=0.210974605569 confirmed.
+- Evidence: research.urt_zpe_gaussian_joint_vacuum, research.urt_zpe_gaussian_joint_independent; mpmath 75 digit spectral projector and independent SciPy covariance both executed locally with exit 0 on 2026-11-21; CI pending. Source research_archive/2026-11-21_urt_zpe_gaussian_joint/.
+- Limitations: canonical quantization, local charged oscillator field and ω0 are assumed, not derived from primitive URT. Physical horizon entropy and gravity not identified. Does not revise Cathedral gates or active Queue.
+- Next step: extend the same gauged oscillator and entropy calculation to finite connected prime-lattice volumes; derive area-law bounds and vacuum energy jointly without a horizon count/target.
+
+
 ### 2026-11-21 — GPT interactive — exact re-audit of 95.6157% URT ZPE/de Sitter coefficient
 - Task: User requested identify why coefficient is not 100%, suspect assistant's mathematical/model mistake.
 - Result: VERIFIED original numerical ratio 0.95615737316656 (no arithmetic error); CORRECTION model ID mismatch: ZPE difference d=0.210974605569 of independently declared finite 4-state magnetic oscillator was divided by entropy s=1.386374857427 of distinct 8-state URT master rho, without physical carrier/field identification. No reason for ratio to equal 1. The original master rho and block magnetic H commute (trivially, scalar blocks) but rho is NOT the Gibbs state of H at URT beta=11.9915959; Gibbs entropy =0.10756033221, not 1.38637485743. First flux-sensitive mixed moment Tr(rho H^4)=70+2(1-Delta²)/(1+Delta²)cos(2pi/phi²), lower mixed moments 2,6,20. Original finite loop ZPE and rho entropy independently retained.
