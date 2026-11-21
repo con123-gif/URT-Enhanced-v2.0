@@ -2776,3 +2776,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_battery/URT_ZPE_BATTERY_CERT.py"
 timeout = 90
+
+# Standalone primitive URT alpha*pi/e canonical two-mode signal-idler quantum dilation
+[[check]]
+id = "research.urt_primitive_bogoliubov_gain"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_primitive_amplifier/URT_PRIMITIVE_BOGOLIUBOV_CERT.py"
+timeout = 90
