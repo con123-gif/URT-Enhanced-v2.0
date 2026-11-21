@@ -1,0 +1,11 @@
+3D full three-plane cyclic prime flux, theta= 2.399963229728653
+exact closed four-step return count: Counter({0: 66, 1: 12, -1: 12})
+n= 2 eps=+1 E/site=1.648134555250 Pfrac=[0.333333333333, 0.333333333333, 0.333333333333] S/cut=0.114845930907 joinE/cut=0.694363706973 min_eigen=0.868072748 shell_add_W/cut=0.694363706973 shell_entropy/cut=0.114845930907
+n= 2 eps=-1 E/site=1.619040002678 Pfrac=[0.333333333333, 0.333333333333, 0.333333333333] S/cut=0.275314172115 joinE/cut=0.741661904615 min_eigen=0.101070416 shell_add_W/cut=0.741661904615 shell_entropy/cut=0.275314172115
+n= 4 eps=+1 E/site=2.045432821882 Pfrac=[0.333333333333, 0.333333333333, 0.333333333333] S/cut=0.04763388427 joinE/cut=0.495730140532 min_eigen=1.235410978 shell_add_W/cut=0.534961298657 shell_entropy/cut=0.057244892036
+n= 4 eps=-1 E/site=2.037237385916 Pfrac=[0.333333333333, 0.333333333333, 0.333333333333] S/cut=0.067712396812 joinE/cut=0.50767826452 min_eigen=0.547070485 shell_add_W/cut=0.542371448495 shell_entropy/cut=0.082549466370
+n= 6 eps=+1 E/site=2.166314213826 Pfrac=[0.333333333333, 0.333333333333, 0.333333333333] S/cut=0.040573226794 joinE/cut=0.474096680905 min_eigen=1.335746136 shell_add_W/cut=0.510053150054 shell_entropy/cut=0.049161787754
+n= 6 eps=-1 E/site=2.159540265369 Pfrac=[0.333333333333, 0.333333333333, 0.333333333333] S/cut=0.054180981256 joinE/cut=0.479628804144 min_eigen=0.622925808 shell_add_W/cut=0.515486021814 shell_entropy/cut=0.069473147288
+PASS: exact flux moment, positive gap, cubic cyclic stress, 3D same-vacuum entropy/edge bounds,
+      shell-creation adiabatic gap/work, site-gauge invariance, finite-difference stress, exact sourced first law
+PHYSICAL STATUS: conditional, no primitive derivation of CCR, source law, scale or GR vacuum.

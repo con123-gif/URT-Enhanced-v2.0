@@ -2723,3 +2723,20 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_metric_response/URT_CARRIER_CREATION_THERMODYNAMICS_CERT.py"
 timeout = 180
+
+# User-directed standalone URT ZPE completion: three-dimensional flux, shell attachment, full source test
+[[check]]
+id = "research.urt_zpe_complete_3d_cube_and_shell"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_complete_3d/URT_3D_VACUUM_CERT.py"
+timeout = 240
+
+[[check]]
+id = "research.urt_zpe_creation_fluid_symbolic"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_complete_3d/URT_FLUID_CLOSURE_SYMBOLIC_CERT.py"
+timeout = 120

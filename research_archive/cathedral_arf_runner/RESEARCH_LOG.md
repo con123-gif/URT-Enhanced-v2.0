@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 11:05 UTC — GPT — Standalone URT ZPE — complete conditional three-dimensional mathematical theory
+- Task: User explicitly requested a finished URT ZPE theory rather than an unending sequence of separate calculations; preserve the original prime-flux oscillator and extend its energy/entropy dynamics to 3 spatial dimensions, adiabatic shell attachment, and precise cosmological source closure.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for explicitly declared cyclic 3-plane golden-flux oscillator and optional carrier creation. A complete conditional microscopic and sourced-fluid mathematical model, NOT a zero-parameter physical theory of observed dark energy.
+- Statement: Exact 3D cyclic flux links Ux=exp(if z), Uy=exp(if x), Uz=exp(if y) yield magnetic plane holonomies exp(if), N-independent L>=3/2[1-cos(F/4)]I, exact tau(A^4)=66+24cosF and tau(L^4)=2658+24cosF; one Gaussian state has E0=ℏc Tr√K, strict 3D S_A=Theta(N²) and positive N² shell joining work along a gapped path. Cyclic symmetry gives P_x=P_y=P_z=ρ/3 at equal lengths. With bulk E=K M^(4/3)V^(-1/3), derived P=ρ/3, μ=4E/(3M), and sourced continuity dotρ+4Hρ=(4/3)ρΓ; therefore w_eff=1/3−4Γ/(9H) and w_eff=-1 iff Γ=3H for H>0.
+- Evidence: research.urt_zpe_complete_3d_cube_and_shell, research.urt_zpe_creation_fluid_symbolic; native finite graph and independent symbolic SymPy checks executed in local Python container exit 0, N=2,4,6 and both reciprocity sectors, local output archived; new GitHub CI pending. Paper, certificates and outputs at research_archive/2026-11-21_urt_zpe_complete_3d/.
+- Physical limitations: 3-direction cyclic flux is explicitly declared rather than uniquely inferred from primitive prime reciprocity; canonical quantum field, length ℓ, sourced carrier-production rate Γ, external energy reservoir, renormalized vacuum reference and covariant gravitational action remain independent; no fitted constants or claims that the actual universe is solved. The 2D rigorous bulk sign result is not falsely promoted to 3D.
+- Next exact frontier only if demanded: derive Γ=3H and energy supply from primitive URT; a new independent axiom is needed to identify observed Λ. Do not replace the existing magnetic operator or reopen the unrelated Cathedral Queue.
+
+
 ### 2026-11-21 — GPT interactive — standalone prime-URT ZPE geometric stress and carrier-growth first law
 - Task: User-directed continuation of unchanged prime-URT ZPE magnetic oscillator and Gaussian entropy/interface work; derive metric response and possible negative-pressure mechanism without fitting, unrelated Cathedral ARFs excluded.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional on original prime-flux lattice/CCR and explicit homogeneous static 2D metric; second theorem exact conditional carrier-creation thermodynamics.
