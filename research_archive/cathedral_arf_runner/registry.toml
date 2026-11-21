@@ -2591,3 +2591,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_prime_vacuum_bridge/prime_urt_vacuum_bridge_2026_11_21.py"
 timeout = 120
+
+# Prime-lattice reversible group completion and positive-cone zeta trace obstruction
+[[check]]
+id = "research.prime_urt_group_completion"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_prime_group_completion/prime_urt_group_completion_2026_11_21.py"
+timeout = 90

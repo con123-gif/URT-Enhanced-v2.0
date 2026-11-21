@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — reversible prime URT group completion and boundary
+- Task: Continue standalone URT arithmetic-to-quantum investigation; fix unitarity versus Möbius sieve tension without changing the Cathedral Q161da active queue.
+- Result: THEOREM — exact algebra for declared projective prime lift; RH/physical ZPE OPEN.
+- Statement: N_{>0} multiplicative group completion is Q_{>0}; the prime-translation unitaries on ell2(Q+) satisfy UpUq=cUqUp, ordered Weyl monomials have the explicit associative two-cocycle sigma((a,b),(c,d))=c^{-bc}. Reversible unitary shifts kill boundary projections I-UpUp†; compression to positive valuations restores the Möbius sieve. The diagonal log-r Hamiltonian on ell2(Q+) has no trace-class Gibbs factor at any complex exponent, unlike its integer positive-cone zeta trace.
+- Evidence: research.prime_urt_group_completion; pure Python signed-coordinate and 31,250 cocycle checks executed locally, exit 0, GitHub CI pending. Source research_archive/2026-11-21_urt_prime_group_completion/.
+- Scope: Mathematical group completion standard, selected flux conditional; neither canonical physical CCR nor vacuum energy density, RH, xi determinant established.
+- Next step: preserve positive-cone zeta trace and magnetic holonomy in a single mathematically specified representation, then test exact Weil positivity / completed xi determinant instead of generic magnetic positivity.
+
+
 ### 2026-11-21 — GPT interactive — Prime-lattice URT conditional vacuum quantum bridge
 - Task: User-directed non-Cathedral prime arithmetic → physical ZPE check, extending the earlier declared magnetic gap; distinct from active Q161da.
 - Result: THEOREM on declared magnetic graph / CONDITIONAL quantum embedding; RH and physical vacuum origin OPEN.
