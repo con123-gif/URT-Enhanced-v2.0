@@ -2627,3 +2627,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_prime_pair_information/PRIME_PAIR_INFORMATION_CERT.py"
 timeout = 90
+
+# Exact review: 95.6157% ZPE-horizon mismatch is unproved cross-state identification
+[[check]]
+id = "research.urt_zpe_95percent_reaudit"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_coefficient_reaudit/URT_ZPE_95PERCENT_REAUDIT.py"
+timeout = 120

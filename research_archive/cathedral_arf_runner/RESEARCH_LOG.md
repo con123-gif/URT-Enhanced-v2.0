@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — exact source of URT ZPE 95.6157% mismatch
+- Task: User requested re-derivation of why conditional horizon/ZPE coefficient misses 100%, checking for an assistant modelling error.
+- Result: REVIEW / CORRECTION — original numerical ratio 2πd/s*=0.956157373166563 is arithmetically correct, but treating four-site oscillator ZPE contrast and independent eight-state KMS entropy as one horizon carrier was UNJUSTIFIED; 100% is not mathematically required.
+- Statement: H8=L2,+⊕L2,- has eight distinct eigenvalues and cannot have rho*=(I4⊕Δ²I4)/[4(1+Δ²)] as Gibbs state for any β. At primitive β=-2lnΔ, S_Gibbs(H8)=0.1075603322, not S(rho*)=1.3863748574. Yet [rho*,H8]=0, and exact stationary moments are Tr rho* H8^r=(2,6,20) for r=1..3, Tr rho* H8^4=70+2(1-Δ²)/(1+Δ²)cos(2π/φ²). The 95.6% comparison additionally assumes κ=ω0R/c=1, horizon entropy/carrier count and the relative ZPE contrast as gravitational energy; R cancels, so no entropy rescaling fixes it.
+- Evidence: research.urt_zpe_95percent_reaudit; local SymPy + 65-digit mpmath re-derivation run exit 0 on 2026-11-21; GitHub CI pending. Files research_archive/2026-11-21_urt_zpe_coefficient_reaudit/.
+- Scope: Finite magnetic spectral results and 8-state URT master state each retained. No full physical vacuum, gravity/dark energy or RH claim established.
+- Next: Derive a common URT carrier Hilbert-space embedding, a **single** vacuum/reduced state and its physical Hamiltonian/stress tensor before comparing coefficients; do not fit κ or an entropy correction.
+
+
 ### 2026-11-21 — GPT interactive — prime-URT ground-state information audit and ZPE correction
 - Task: Test claim that noncommuting prime transfers force inter-carrier mutual information exactly closing a 0.0607823155 nats/carrier deficit; audit the earlier natural von Mangoldt trace.
 - Result: THEOREM for declared operator + CORRECTION to prior physical interpretation; PHYSICAL ID OPEN.
