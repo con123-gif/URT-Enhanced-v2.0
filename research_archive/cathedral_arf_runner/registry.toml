@@ -2740,3 +2740,12 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_complete_3d/URT_FLUID_CLOSURE_SYMBOLIC_CERT.py"
 timeout = 120
+
+# Standalone prime-URT 3D ZPE constructive native layer-growth theorem
+[[check]]
+id = "research.urt_zpe_three_layer_refinement"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_three_layer_refinement/URT_ZPE_REFINEMENT_CERT.py"
+timeout = 120
