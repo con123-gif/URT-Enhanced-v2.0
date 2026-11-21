@@ -2565,3 +2565,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-20_q161dj_q96_clock_fourth_moment/Q161DJ_CERT.py"
 timeout = 90
+
+[[check]]
+id = "research.q161do_native_face_jacobian_norm"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-21_q161do_native_jacobian_norm/Q161DO_CERT.py"
+timeout = 180

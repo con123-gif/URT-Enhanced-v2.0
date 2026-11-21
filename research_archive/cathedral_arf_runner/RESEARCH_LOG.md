@@ -5,6 +5,15 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+### 2026-11-21 03:18 UTC — GPT — Gate Q161cl — Q161do native face-square Jacobian norm
+- Task: Q161da [compute] bounded original Q101 nonlinear source differential certificate.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
+- Statement: For all 60 original E=-6, |M|=4 ground words, J_s=2 diag(C(P3+P5)s) C(P3+P5) obeys Tr(J_s^T J_s)=72+72 sqrt(5)/5 exactly; sum over ground words =4320+864 sqrt(5).
+- Evidence: research.q161do_native_face_jacobian_norm; standalone SymPy local container exit 0 on 2026-11-21; prior CI checkpoint #276 PASS, new CI pending.
+- Dead ends: This original Q101 source invariant does not supply the missing charged H64/24/Q125-to-Q96 embedding.
+- Next step: Q161da [compute] construct original typed B_x and evaluate (I-P_E) B_x† Q96 B_x E exactly.
+
+
 ### 2026-11-20 22:10 UTC — GPT — Gate Q161cl — Q161dj exact Q96/24 fourth moment
 - Task: Q161da [compute] bounded spectral consistency substep for the declared original charge-clock tensor.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
@@ -49,7 +58,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Scope: Native Q101 nonlinear source only. H64/24-to-Q96 embedding and charged Ward leakage remain open; no gate closed.
 - Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
 
-- [ ] Q161da [compute] (Q161cl) construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
+- [ ] Q161da [compute] (Q161cl) Q161do original Q101 Jacobian norm certified (all 60); construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
+- [x] Q161do [compute] (Q161cl) native Q101 face-square Jacobian norm — GPT 2026-11-21 THEOREM (internal): 72+72sqrt(5)/5 on all 60 ground words; Q161da OPEN.
 - [x] Q161df [compute] (Q161cl) original Q96/24 charge-clock resistance profile and Kirchhoff index — GPT 2026-11-20 THEOREM (internal): 479550; Q161da OPEN.
 - [x] Q161dj [compute] (Q161cl) original Q96/24 charge-clock fourth moment — GPT 2026-11-20 THEOREM (internal): Tr K^4=5474560/243; Q161da OPEN.
 - [x] Q161dg [compute] (Q161cl) exact Q96/24 charged-clock pseudodeterminant — GPT 2026-11-20 THEOREM (internal): pdet K=2^2160/3^3144; Q161da OPEN.
