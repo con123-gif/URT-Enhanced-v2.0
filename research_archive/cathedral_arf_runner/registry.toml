@@ -2582,3 +2582,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_prime_magnetic_gap/urt_prime_magnetic_gap_2026_11_21.py"
 timeout = 120
+
+# Conditional prime-lattice URT complex-oscillator embedding; NOT an established vacuum law
+[[check]]
+id = "research.prime_urt_vacuum_bridge"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_prime_vacuum_bridge/prime_urt_vacuum_bridge_2026_11_21.py"
+timeout = 120

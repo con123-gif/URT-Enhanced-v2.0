@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — Prime-lattice URT conditional vacuum quantum bridge
+- Task: User-directed non-Cathedral prime arithmetic → physical ZPE check, extending the earlier declared magnetic gap; distinct from active Q161da.
+- Result: THEOREM on declared magnetic graph / CONDITIONAL quantum embedding; RH and physical vacuum origin OPEN.
+- Statement: chi_A=lambda^4-4lambda^2+2-z-z^-1; for a complex canonically quantised oscillator on its 4-state plaquette E0/(hbar omega0)=2[(1+sqrt2)cos(F/8)+sin(F/8)], yielding arithmetic-sector relative energy 0.210974605569 in assumed units, covariance variance ratio 1.904349456316. Bulk fourth moment 28+8Re(z); vacuum energy per site limit exists; flux does not define physical hbar, omega0, energy density, nor classical zeta determinant. Noncommuting prime lifts cannot be a multiplicative homomorphism for ordinary N.
+- Evidence: research.prime_urt_vacuum_bridge; local NumPy/SymPy certificate passed, all 4 volume sizes and 4-step loop enumeration; GitHub CI pending. Proof at research_archive/2026-11-21_urt_prime_vacuum_bridge/.
+- Dead ends: a single real scalar cancels imaginary magnetic links; require extra two-component charged quantum field. Dimensionless arithmetic data cannot by itself determine physical energy units.
+- Next step: derive physical locality, CCR and scale or a direct Weil-form identity from primitive URT rather than choosing quantisation or fitting a vacuum constant.
+
+
 ### 2026-11-21 — GPT interactive — Prime-lattice URT magnetic gap (standalone RH branch)
 - Task: User-directed continuation of prime-lattice URT reciprocity operator checkpoint 81cb6a8, intentionally separate from Cathedral's active Q161da physical gate.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for explicitly declared prime connection; RH OPEN.
