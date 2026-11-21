@@ -2929,3 +2929,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_collective_metric_trace/virial.py"
 timeout = 60
+
+[[check]]
+id = "research.q161_hidden_complex_chiral_bridge"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-21_q161_hidden_complex_chiral_bridge/cert.py"
+timeout = 120

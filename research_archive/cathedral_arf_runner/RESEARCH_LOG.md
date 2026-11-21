@@ -59,6 +59,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
 
 - [ ] Q161da [compute] (Q161cl) Q161do original Q101 Jacobian norm certified (all 60); construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
+- [ ] Q161dp [derive] (Q161cl) derive native H64/24/Q125 joined kinetic action for the real neutral operator source from Q161da complex-structure bridge; distinguish it from one-particle charged state and retain Berry transport.
 - [x] Q161do [compute] (Q161cl) native Q101 face-square Jacobian norm — GPT 2026-11-21 THEOREM (internal): 72+72sqrt(5)/5 on all 60 ground words; Q161da OPEN.
 - [x] Q161df [compute] (Q161cl) original Q96/24 charge-clock resistance profile and Kirchhoff index — GPT 2026-11-20 THEOREM (internal): 479550; Q161da OPEN.
 - [x] Q161dj [compute] (Q161cl) original Q96/24 charge-clock fourth moment — GPT 2026-11-20 THEOREM (internal): Tr K^4=5474560/243; Q161da OPEN.
@@ -792,6 +793,13 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-21 — GPT interactive — Q161da real hidden complex structure to neutral chiral vertex
+- Task: Q161da independent constructive attempt, not another standalone spectrum moment. User authorizes initiative across full project. Original Q161 T and Q101 W plus Q162d H64 isometry and Q124/Q125 Hopf charge.
+- Result: THEOREM (conditional real source typing) — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. A=sqrt(2/3)T(P3-i J P5), J=W/sqrt15, gives A J=i A, A^dagger A=P_h-iJ, real rank8 and complex rank4. All eight real H64 hidden modes are retained as four complex generation channels, no adjustable angle. Lift to real-linear Hermitian charge-neutral interaction M96_x=diag(M48,conj M48)/sqrt32, M48=Y tensor R_x+Y^dagger tensor R_x^dagger. HS norm preserved; [Q96_x,M96_x]=0. Native 444 histories Ward residual 1.533e-16, Gram residual 2.693e-15, all 1032 link Berry offdiagonal 5.869e-16; 24 time-slice isometry. LOCAL standalone original-formula NumPy/SciPy certificate executed exit0; research.q161_hidden_complex_chiral_bridge; new CI pending, prior f722e56 checkpoint298 PASS.
+- Scope: real neutral operator source, NOT one-particle charged B_x, not physical Yukawa normalization or full clock dynamics. Q161da remains open; no SU3 or CP claim. research_archive/2026-11-21_q161_hidden_complex_chiral_bridge/.
+- Next: derive neutral operator source typing and joined kinetic action from primitive H64/Q125/24 including Berry factors, or derive a distinct charged state embedding. Avoid more standalone spectral moments.
+
 
 ### 2026-11-21 — GPT interactive — native whole-vacuum metric trace and interacting acceleration criterion
 - THEOREM / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original native magnetic vacuum fixed number/frozen flux p=rho/3. New exact flux derivative with external fixed proper-B path Theta/rho=2f E_f/E; both sectors n12 results .003736659474/.002925851677, path w=.332087780175/.332358049441 (source work not included). For ANY positive K=a^-2 L+M with fixed proper positive mass matrix, Theta/rho=Tr(K^-1/2 M)/Tr sqrt(K) in [0,1]; cannot accelerate. Canonical stationary scalar dilation virial gives rho+3p=(4<K>-2<U>)/V and necessary <U-q grad U>>2<G>, so positive homogeneous quadratic and quartic terms with zero baseline cannot drive acceleration in that class. Not the full joint SM/gravity Hamiltonian. No fitted coefficients.
