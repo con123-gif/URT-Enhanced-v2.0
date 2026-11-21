@@ -2600,3 +2600,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_prime_group_completion/prime_urt_group_completion_2026_11_21.py"
 timeout = 90
+
+# Conditional arithmetic-URT prime magnetic loop → finite relative one-loop vacuum term
+[[check]]
+id = "research.prime_urt_zpe_gravity_bridge"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_cosmological_bridge/zpe_cosmological_term_certificate.py"
+timeout = 120

@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — Prime-URT ZPE-to-gravity conditional theorem
+- Task: User-directed mathematical physics, not engineering or RH; standalone prime/URT flux to vacuum effective action. Independent of the active Cathedral Q161da frontier.
+- Result: THEOREM for declared flux-matrix and postulated relativistic complex field; PHYSICAL IDENTIFICATION PENDING / cosmological interpretation OPEN.
+- Statement: Four-state L(z)=2I-A(z) has chi=x^4-8x^3+20x^2-16x+2-z-z^-1 and equal +,- traces L^r for r<=3; first difference ΔTr L^4=16cos(2pi/phi²). Thus 3+1D one-loop relative vacuum energy is UV-finite: Δu/(hbar c mu^4)=ΔTr[L²ln L]/(32pi²)=0.0012418277635745989098..., with covariant zeroth-derivative stress ΔT=-Δu*g if mu spacetime-constant. If mu varies as a_FRW^-1, w=+1/3 instead. Conditional URT length ratio gives Δu_{n+1}/Δu_n=(e/pi)^4.
+- Evidence: research.prime_urt_zpe_gravity_bridge; SymPy exact spectral polynomial and traces plus mpmath 60-digit cutoff/independent quadratures executed in local container (exit 0). GitHub Actions pending. Report/code research_archive/2026-11-21_urt_zpe_cosmological_bridge/.
+- Limitations: Complex Lorentz field, CCR, physical inverse-length mu, metric and G are assumed, not derived by URT. No dark-energy value, unique flux selection or RH proved. Sector vacuum comparison presumes common bare counterterms.
+- Next step: derive a physical metric/scale law and field representation from primitive URT; check whether fixed-mu w=-1 or scale-tracking w=+1/3 is selected without fitting.
+
+
 ### 2026-11-21 — GPT interactive — reversible prime URT group completion and boundary
 - Task: Continue standalone URT arithmetic-to-quantum investigation; fix unitarity versus Möbius sieve tension without changing the Cathedral Q161da active queue.
 - Result: THEOREM — exact algebra for declared projective prime lift; RH/physical ZPE OPEN.
