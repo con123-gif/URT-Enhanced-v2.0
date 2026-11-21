@@ -793,6 +793,10 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — whole-system cosmological entropy response
+- REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Flat FLRW GR gives whole effective source E=T0 S_H, g=dlnS_H/dlna=2 epsilon, q=g/2−1, w=g/3−1. Dynamical signed horizon T_H S/E=(1−3w)/4, T_H dS=−dE+W dV. Original conditional eta=.956157 compares to total density if R=c/H, not isolated dark energy. Planck benchmark only: rho_total=7.66895e−10 J/m³, rho_L=5.25252e−10, eta*rho_total=7.33272e−10, g0=.945368. Not independent prediction, need microscopic joint-state entropy dynamics. Local SymPy/Python executed exit 0. research.urt_whole_cosmological_entropy; CI pending. research_archive/2026-11-21_urt_whole_cosmological_system/.
+
+
 ### 2026-11-21 — GPT interactive — combined SM vacuum determinant and cancellation diagnostic
 - Task: compute conventional combined vacuum benchmark after 43289d7, no fitted correction.
 - Result: REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Representative fixed masses, Landau gauge MSbar one-loop determinant at tree minimum: V_tree=-118596339.96286048, V_1(v)=27928857.86128229, net partial -90667482.10157819 GeV^4. Signed quartic supertrace=-7768257279.221887 GeV^4; explicit log derivative +24596531.94903025 GeV^4. Partial contribution is negative and 3.54e54 times observed benchmark in magnitude. NOT full interacting QCD or quantum gravity; additive vacuum term and matching remain open. No fit.
