@@ -793,6 +793,12 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — native whole-vacuum metric trace and interacting acceleration criterion
+- THEOREM / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original native magnetic vacuum fixed number/frozen flux p=rho/3. New exact flux derivative with external fixed proper-B path Theta/rho=2f E_f/E; both sectors n12 results .003736659474/.002925851677, path w=.332087780175/.332358049441 (source work not included). For ANY positive K=a^-2 L+M with fixed proper positive mass matrix, Theta/rho=Tr(K^-1/2 M)/Tr sqrt(K) in [0,1]; cannot accelerate. Canonical stationary scalar dilation virial gives rho+3p=(4<K>-2<U>)/V and necessary <U-q grad U>>2<G>, so positive homogeneous quadratic and quartic terms with zero baseline cannot drive acceleration in that class. Not the full joint SM/gravity Hamiltonian. No fitted coefficients.
+- Local cert.py --full passed all native sizes 2,4,6,8,10,12 and both fluxes; virial.py exact SymPy algebra passed. Prior CI f722e56 checkpoint298 PASS, new CI pending. research_archive/2026-11-21_urt_collective_metric_trace/.
+- Next derive native joint interacting potential/constraint and stress, not insert arbitrary vacuum shift.
+
+
 ### 2026-11-21 — GPT interactive — whole-system trace and self-consistent curvature entropy dynamics
 - REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Total FLRW conservation gives g=dln S/dln a=4−Theta/rho. Euler-only conformal anomaly yields y−beta y²=m+r+L, y=H², beta=A G/pi. With L=0, nonnegative dust/radiation and lower branch, g>=3(1−beta y)/(1−2beta y)>3, so no acceleration. Free minimal-SM census A=1991/720, formal vacuum H tP=1.06587323, present benchmark beta H0²=1.2206354e−122. Not actual full interacting SM, no URT action/constant derived; next nonconformal joint stress trace via metric response. Local SymPy/Python cert executed exit 0. CI pending. research_archive/2026-11-21_urt_whole_trace_dynamics/.
 
