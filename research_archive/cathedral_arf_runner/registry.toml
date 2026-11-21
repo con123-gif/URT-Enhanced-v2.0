@@ -2820,3 +2820,28 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_entropy_audit/URT_ENTROPY_95PERCENT_SAME_STATE_CERT.py"
 timeout = 120
+
+# Native URT-ZPE boundary energy and de Sitter lapse comparison (standalone)
+[[check]]
+id = "research.urt_zpe_horizon_redshift_ledger"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_BOUNDARY_ENERGY_CERT.py"
+timeout = 120
+
+[[check]]
+id = "research.urt_zpe_horizon_redshift_boost"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_BOOST_CERT.py"
+timeout = 180
+
+[[check]]
+id = "research.urt_zpe_horizon_redshift_strip"
+stage = "research"
+claim = "independent"
+gating = true
+run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_STRIP_CHECK.py"
+timeout = 240
