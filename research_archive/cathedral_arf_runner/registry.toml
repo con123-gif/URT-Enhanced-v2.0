@@ -2845,3 +2845,12 @@ claim = "independent"
 gating = true
 run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_STRIP_CHECK.py"
 timeout = 240
+
+# Standalone URT entropy: central-strip redshift/thermal accounting
+[[check]]
+id = "research.urt_zpe_horizon_central_thermal"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_limit/central_thermal.py"
+timeout = 120

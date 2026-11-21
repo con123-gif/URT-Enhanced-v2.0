@@ -793,6 +793,11 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — deep redshifted central strip and thermal-reference accounting
+- Standalone entropy path after bbfb2d50; native irrational flux unchanged. Central transverse diagonal-trace decomposition at nx=12,16,24,40,64,96 with independent nz and Fourier quadrature. At depth96 core4 ratios +1.173070646/-1.048413913, not proven infinite limit. Plus non-monotonic across sizes; no exact closure claimed. Gibbs reference identities S_tau=2pi X_tau+logZ and Drel=2pi Xrho+logZ-Srho show even exact thermal matching does not yield Eexc=TS. At depth96 excess splits +.25578142-.08271078 and -. sector +.14271140-.09429749. De Sitter geometric E_MS=TS is distinct from excitation enthalpy/reference; T dS=-dE_MS+rho dV along dS solution radii. No fitted correction.
+- Executed original native strip at all sizes, quick stable-form certificate exit 0, full CI pending. Core density estimates not independent local relative entropies. research_archive/2026-11-21_urt_zpe_horizon_limit/. Open: controlled infinite limit and physical gravitational reference.
+
+
 ### 2026-11-21 — GPT interactive — URT-ZPE same-vacuum entropy and redshifted horizon excitation
 - Task: Continue entropy mechanism after a56bf66, without fitting frustration or modifying 9e3fc93 magnetic graph; derive physical boundary energy and compare with same-state entropy.
 - Result: THEOREM for declared model/conditional horizon identification; numerical finite-size investigation. Exact join ledger W_join=X_A+X_B+Tr(B L^(-1/2))/2 with X_A relative to the decoupled subsystem ground. Static de Sitter lapse sin(x/R) ~ x/R dictates an explicit midpoint-lattice weighted H_R, D site distances, L_w weighted native edges, X_R=Tr(D W_A+L_w V_A)/2−Tr sqrt(D^1/2 L_w D^1/2) >=0. Shifted Gibbs relative entropy Drel=2pi X_R+ln Z_exc−S_A/kB implies 2pi X_R/(S_A/kB)−1=(Drel−ln Z_exc)/(S_A/kB). If horizon area identifies sigma=S_A/(kB*cut bonds) and actual redshifted excitation with gravity, ell²=4sigma ellP² and rho=3chi hbar c/(4sigma ellP²R²), chi=X_R/cut bonds. This recovers old scaling but a new same-state energy reference, not old relative sector d2. Native N=12 cube ratio +1.220365987/-1.117680759; independent infinite-y Fourier strip width24, 12-point quadrature +1.177987468/-1.069288464. No proof of limiting equality, no observed data used.
