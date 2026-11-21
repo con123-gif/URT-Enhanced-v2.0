@@ -2609,3 +2609,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_cosmological_bridge/zpe_cosmological_term_certificate.py"
 timeout = 120
+
+# Conditional entropy-horizon ZPE: frustration versus per-carrier mutual information
+[[check]]
+id = "research.urt_entropy_frustration_test"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_entropy_frustration/FRUSTRATION_CORRELATION_CERT.py"
+timeout = 90

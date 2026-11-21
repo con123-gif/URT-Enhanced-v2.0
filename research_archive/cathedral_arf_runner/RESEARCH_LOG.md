@@ -793,6 +793,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — entropy-scale ZPE and frustration/mutual-information test
+- Task: User hypothesis: is the 4.384% de Sitter coefficient deficit due to frustration? Finish uncommitted entropy-as-scale derivation.
+- Result: THEOREM (conditional) / exact obstruction: local Δ-entropy increases s and reduces closure ratio by 0.00005552, versus required +0.04384263. A correlated joint state instead gives ratio 2πd/(s*-I_N/N), requiring I_N/N=0.0607823155254 nats/carrier for exact closure at κ=1, **not** a prediction. Hidden-tag-only total correlation is ≤H2(p)=0.0000804963073 and therefore insufficient by factor 755.
+- Evidence: research.urt_entropy_frustration_test; high-precision standard URT values, density factorisation and entropy identities executed locally (2026-11-21); CI pending. Source research_archive/2026-11-21_urt_entropy_frustration/.
+- Limitation: the carrier-to-horizon map, canonical quantization, energy additivity, frequency κ=1 and gravitating vacuum are additional assumptions; magnetic frustration is already present in d. No dark-energy proof.
+- Next step: calculate the joint multi-carrier density state and relative entropy directly from native interacting URT transfer (including visible sector) and calculate its ZPE together with entropy without inserting the required correlation.
+
+
 ### 2026-11-21 — GPT interactive — Prime-URT ZPE-to-gravity conditional theorem
 - Task: User-directed mathematical physics, not engineering or RH; standalone prime/URT flux to vacuum effective action. Independent of the active Cathedral Q161da frontier.
 - Result: THEOREM for declared flux-matrix and postulated relativistic complex field; PHYSICAL IDENTIFICATION PENDING / cosmological interpretation OPEN.
