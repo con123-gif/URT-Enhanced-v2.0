@@ -793,6 +793,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — prime-URT ground-state information audit and ZPE correction
+- Task: Test claim that noncommuting prime transfers force inter-carrier mutual information exactly closing a 0.0607823155 nats/carrier deficit; audit the earlier natural von Mangoldt trace.
+- Result: THEOREM for declared operator + CORRECTION to prior physical interpretation; PHYSICAL ID OPEN.
+- Statement: For 4-state compressed L4=4I-A(c), ground |psi>=(1,e^{if/4},e^{-if/4},e^{-if/2})/2, and fixed prime-qubit I/2=H2((1+cos(|f|/4))/2) = 0.296315557... or 0.049319041... . Vertex phase conjugation preserves flux and spectrum but makes state product in fixed qubit split (I=0); diagonal prime-divisibility observables have I=0 even before conjugation. The previous L2=2I-A oscillator is NOT compression of the infinite magnetic gap operator: corrected relative response d4=0.0044723808, reducing conditional horizon ratio from 0.956157 to 0.020269. Corrected forced entropy deficit 1.358274... nats/carrier is even larger than ln2, and old 0.060782 target is superseded. Canonical von Mangoldt weighted gap mean tends to 0.3421711098, not old 0.001211 tax.
+- Evidence: research.prime_urt_pair_information; executable NumPy/SymPy/mpmath certificate ran locally, exit 0, checked ground vectors, Schmidt values, graph gauge loop, Gibbs trace, and dimensional mismatch. GitHub CI pending. Source research_archive/2026-11-21_urt_prime_pair_information/.
+- Next step: derive gauge-invariant full carrier subalgebras and interacting Gibbs/KMS state from primitive URT; entropy and collective vacuum energy must be calculated with one Hamiltonian, no target fitting.
+
+
 ### 2026-11-21 — GPT interactive — entropy-scale ZPE and frustration/mutual-information test
 - Task: User hypothesis: is the 4.384% de Sitter coefficient deficit due to frustration? Finish uncommitted entropy-as-scale derivation.
 - Result: THEOREM (conditional) / exact obstruction: local Δ-entropy increases s and reduces closure ratio by 0.00005552, versus required +0.04384263. A correlated joint state instead gives ratio 2πd/(s*-I_N/N), requiring I_N/N=0.0607823155254 nats/carrier for exact closure at κ=1, **not** a prediction. Hidden-tag-only total correlation is ≤H2(p)=0.0000804963073 and therefore insufficient by factor 755.

@@ -2618,3 +2618,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_entropy_frustration/FRUSTRATION_CORRELATION_CERT.py"
 timeout = 90
+
+# Prime-URT arithmetic 4-state ground state and gauge-invariant information audit
+[[check]]
+id = "research.prime_urt_pair_information"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_prime_pair_information/PRIME_PAIR_INFORMATION_CERT.py"
+timeout = 90
