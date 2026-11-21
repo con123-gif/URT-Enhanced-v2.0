@@ -793,6 +793,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — exact bounded-below quantum battery for URT native sheet birth/join
+- Task: Continue standalone ZPE frontier: previous native real-time Gaussian seam work requires a physical source; construct an explicit energy-conserving unitary enlarged Hilbert/battery operation including active-sheet ground-state preparation and the native joining work.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional on nonlocal ground-channel switch and an assumed work battery. For E1−E0=Delta>0 and battery H_B=E on L²(R_+), unitary U swaps channel |0,E> at E>=Delta with |1,E−Delta> and leaves |0,E<Delta> fixed: U†=U, U²=I, [U,H_free]=0. Continuous normalized wavefunction psi0(E)=sqrt(2 beta) exp[-beta(E−Delta)] 1_{E>=Delta} maps to psi1(E)=sqrt(2beta)exp(-beta E), battery expectation drops exactly Delta while native vacuum gains Delta. Native 2x2x2→2x2x3: sector + prep=5.203810807053, join=2.525829908325, total=7.729640715378; sector − prep=4.992836201484, join=2.733064836786, total=7.725901038271 (ℏc/ell).
+- Evidence: research.urt_zpe_quantum_battery_converter; local container standard SymPy exact integration + NumPy/SciPy native graph reconstruction executed exit 0 2026-11-21; GitHub CI pending. New directory research_archive/2026-11-21_urt_zpe_battery/.
+- Scope: global engineered unitary, inactive Hilbert embedding and battery are not derived from primitive URT; not local nor unique, does not select rate/scale/GR. Physical mechanism still OPEN.
+- Next step: replace global switch by local prime-URT generator and derive intrinsic energy-source state, clock and proper frequency threshold; compare with native seam work.
+
+
 ### 2026-11-21 — GPT interactive — real-time native URT-ZPE seam quantum work
 - Task: Extend existing golden-flux 3D gapped layer joining (489d3d7) from static vacuum energy to finite-time exact Gaussian Schrödinger dynamics, with source-work accounting and bounded ground-state path geometry; standalone ZPE not RH/Cathedral.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional on native 3D oscillator Hamiltonian and externally driven seam λ. For original seam B>=0 with B²=2B, Tr B=2A, all monotone quantum ramps from the disconnected vacuum satisfy Wdrive = Efinal−Einitial ≥ E0(L1)−E0(L0) ≥ A/√12 (units ℏc/ell); nonadiabatic heating is nonnegative. Gaussian FS susceptibility g_λλ=(1/4)Tr[(W^-1 W')²] ≤ A/(4g2²), W=√(L0+λB). Original native (2,2,2)->(2,2,3) z-sheet has static joins +2.525829908325/-2.733064836786 and T=1,3,10 finite-time work +[2.912972966331,2.578396332149,2.533768551728], −[4.775467898824,3.527342127257,3.042212124869]. All supplied work accounted by explicit control energy.

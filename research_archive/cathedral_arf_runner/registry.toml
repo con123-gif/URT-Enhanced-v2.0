@@ -2767,3 +2767,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_quantum_dynamics/URT_ZPE_QUANTUM_SEAM_DYNAMICS_CERT.py"
 timeout = 120
+
+# Standalone URT-ZPE exact positive-battery ground-channel converter and native source ledger
+[[check]]
+id = "research.urt_zpe_quantum_battery_converter"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_battery/URT_ZPE_BATTERY_CERT.py"
+timeout = 90
