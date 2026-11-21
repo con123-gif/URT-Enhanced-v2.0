@@ -2871,3 +2871,12 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_boost_stationarity/modular.py"
 timeout = 120
+
+# Standalone URT native horizon orientation, mixed two-step plaquette identity
+[[check]]
+id = "research.urt_zpe_horizon_orientation"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-21_urt_zpe_horizon_orientation/orientation.py"
+timeout = 120

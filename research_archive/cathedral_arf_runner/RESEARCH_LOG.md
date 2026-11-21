@@ -793,6 +793,13 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — flux-aligned horizon and orientation-independent mixed commutator
+- Task: preserve entropy track after 52da374, compare physically motivated flux-axis cut to prior coordinate-axis cut, same L and midpoint lapse, no fitted orientation or flux.
+- Result: THEOREM for native fixed-flux graph / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. For unit b, sum over twelve mixed two-step neighbors |[L,[L,D_b]]_ij|²=32 sin²(f/2) exactly, independent of horizon normal. Thus full residual norm >=sqrt(8)|1-exp(if)|/(96 sqrt12); same lower bound for infinite midpoint half-space by deep magnetic translations. n12 flux-aligned eta +1.019560715788/-0.883688360385 vs axis +1.220365987171/-1.117680758913. Positive near-unit ratio is cancellation Drel/S=.561815446235 vs logZ/S=.542254730447, not thermal matching. No universal scalar closure or physical orientation selection.
+- Evidence: research.urt_zpe_horizon_orientation; native local Python/NumPy/SciPy --full 20 cases exit 0, both sectors n4,6,8,10,12. An initial full-row finite-cube test failed at n4 due to outer degree; exact mixed-row test corrected. GitHub full CI pending. research_archive/2026-11-21_urt_zpe_horizon_orientation/.
+- Next: derive covariant gravitational generator/reference, test continuum and angular/spherical response; do not tune sector/normal for eta=1.
+
+
 ### 2026-11-21 — GPT interactive — native horizon stationarity and modular operator; CI launch repair
 - Standalone entropy path after 871d8bc. THEOREM / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Under the native fixed-flux infinite planar midpoint lapse, R=QM−DP is the compression of (1/2)V[W,[W,D]]. Exact plaquette |[L,[L,D]]_ij|=2|sin(f/2)|, hence nonzero stationarity residual at infinite size, with rigorous norm lower bound 2|sin(f/2)|/(96 sqrt12). Finite n10 local norm +.039541864119/−.022263795215; entropy-preserving canonical gate has negative energy derivative equal minus local norm. Exact modular position and momentum matrices from same Q,P, not fitted, satisfy QA_q=A_pP. n4,6 local modular checks pass. Conditional GR fixed-Lambda matter first law gives delta S_gen/kB=delta<K_A−2pi H_R>, not absolute E_exc=TS.
 - Evidence: research.urt_zpe_boost_stationarity and research.urt_zpe_exact_modular_operator; native container Python execution both exit 0, output in research_archive/2026-11-21_urt_zpe_boost_stationarity/. Latest completed CI bbfb2d5 checkpoint295 FAIL on FileNotFoundError before horizon scripts run; fixed four registry commands by adding executable env, locally tested the subprocess command format. No changed physical model/tolerances. New CI pending.
