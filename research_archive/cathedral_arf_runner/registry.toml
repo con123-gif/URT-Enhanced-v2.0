@@ -2662,3 +2662,20 @@ claim = "independent"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_gaussian_joint/independent_gaussian_check.py"
 timeout = 90
+
+# User-directed standalone prime-URT ZPE: connected lattice (no unrelated operator)
+[[check]]
+id = "research.urt_zpe_lattice_area_law"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_lattice_area_law/URT_ZPE_LATTICE_AREA_CERT.py"
+timeout = 180
+
+[[check]]
+id = "research.urt_zpe_exact_flux_moment"
+stage = "research"
+claim = "independent"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_lattice_area_law/URT_ZPE_FLUX_MOMENT_CERT.py"
+timeout = 90

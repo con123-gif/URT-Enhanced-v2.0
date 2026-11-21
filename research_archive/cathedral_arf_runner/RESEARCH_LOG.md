@@ -793,6 +793,15 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 10:08 UTC — GPT — Standalone URT ZPE — uniform gap, Gaussian area law, bulk vacuum limit
+- Task: Explicit user-selected continuation of prime-URT magnetic 4-site ZPE/entropy joint vacuum. Do not switch to an unrelated research programme.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for the declared uniform-flux magnetic graph and *assumed* Gaussian quantisation. No fitting or cosmological target.
+- Statement: Connected N×N prime-exponent magnetic graph with every plaquette flux c=eps exp(-i 2π/φ²), true boundary degree laplacian L_N, exactly recovers L_2=2I-A. Summing local plaquette inequalities proves L_N>=g(F)I, g=1-cos(F/4), for all N>=2. One oscillator vacuum yields E0/(ℏω0)=Tr√L_N and gauge-invariant half-cut entropy S_A<= C(F) k_B N, C(F)=2√8 g^-1/2 q(1+q)/(1-q)^4, q=1-g/8. Bulk exists with Tr√L_N = N² τ∞√L∞ + O(N); explicit boundary error bound 8√8 q(2-q)/(1-q)^2 N. Uniform fourth moment τ∞ L∞^4=668+8cosF.
+- Evidence: local container Python/SciPy fail-on-error N=2..12 both sectors, plus supplemental N=14,16,20; exact symbolic SymPy 4-cycle and 36 length-4 closed return paths; research.urt_zpe_lattice_area_law, research.urt_zpe_exact_flux_moment; GitHub CI pending. Archive: research_archive/2026-11-21_urt_zpe_lattice_area_law/.
+- Limitations: canonical oscillator field and physical ω0 remain inputs; uniform magnetic extension is a declared candidate not uniquely selected by primitive URT; area law is two-dimensional cut, NOT a cosmological horizon or proof of dark energy. Keep unrelated active Queue unchanged by explicit user-directed separate research focus.
+- Next step: derive signed infinite-volume sector difference of τ∞√L via flux-sensitive heat trace, and prove a nonzero response without numerical fitting.
+
+
 ### 2026-11-21 09:34 UTC — GPT — Standalone URT ZPE — one-vacuum Gaussian energy/entropy
 - Task: Explicit user-selected standalone prime-URT ZPE, not Cathedral Q161da, ARFs, or alternate field program; preserve finite magnetic loop and address previous entropy/ZPE mixing and gauge-dependence errors.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING **conditional** on locally quantised charged harmonic oscillators on four-site prime magnetic graph.
