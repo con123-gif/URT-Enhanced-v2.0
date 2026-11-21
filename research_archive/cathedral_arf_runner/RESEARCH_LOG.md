@@ -793,6 +793,13 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — exact re-audit of 95.6157% URT ZPE/de Sitter coefficient
+- Task: User requested identify why coefficient is not 100%, suspect assistant's mathematical/model mistake.
+- Result: VERIFIED original numerical ratio 0.95615737316656 (no arithmetic error); CORRECTION model ID mismatch: ZPE difference d=0.210974605569 of independently declared finite 4-state magnetic oscillator was divided by entropy s=1.386374857427 of distinct 8-state URT master rho, without physical carrier/field identification. No reason for ratio to equal 1. The original master rho and block magnetic H commute (trivially, scalar blocks) but rho is NOT the Gibbs state of H at URT beta=11.9915959; Gibbs entropy =0.10756033221, not 1.38637485743. First flux-sensitive mixed moment Tr(rho H^4)=70+2(1-Delta²)/(1+Delta²)cos(2pi/phi²), lower mixed moments 2,6,20. Original finite loop ZPE and rho entropy independently retained.
+- Evidence: local SymPy/mpmath exact-first standalone certificate PASS; research.urt_zpe_mismatch_reaudit; report and certificate in research_archive/2026-11-21_urt_zpe_mismatch_reaudit/; CI pending.
+- Physical gate: derive common URT state Hamiltonian, carrier-to-horizon entropy map, physical scale and covariant pressure; do not fit 0.060782 target or discard valid isolated spectra.
+
+
 ### 2026-11-21 — GPT interactive — exact source of URT ZPE 95.6157% mismatch
 - Task: User requested re-derivation of why conditional horizon/ZPE coefficient misses 100%, checking for an assistant modelling error.
 - Result: REVIEW / CORRECTION — original numerical ratio 2πd/s*=0.956157373166563 is arithmetically correct, but treating four-site oscillator ZPE contrast and independent eight-state KMS entropy as one horizon carrier was UNJUSTIFIED; 100% is not mathematically required.

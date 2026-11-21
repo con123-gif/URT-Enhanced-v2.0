@@ -2636,3 +2636,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_coefficient_reaudit/URT_ZPE_95PERCENT_REAUDIT.py"
 timeout = 120
+
+# Exact audit: finite prime-loop ZPE and master-state entropy use different Hamiltonians
+[[check]]
+id = "research.urt_zpe_mismatch_reaudit"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_zpe_mismatch_reaudit/URT_ZPE_MISMATCH_CERT_2026-11-21.py"
+timeout = 90
