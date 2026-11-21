@@ -2905,3 +2905,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_whole_cosmological_system/calc.py"
 timeout = 60
+
+[[check]]
+id = "research.urt_whole_trace_dynamics"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_whole_trace_dynamics/cert.py"
+timeout = 60
