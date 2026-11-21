@@ -2889,3 +2889,11 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_zpe_force_vacuum/cert.py"
 timeout = 60
+
+[[check]]
+id = "research.urt_combined_vacuum_one_loop_benchmark"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_combined_vacuum_one_loop/calc.py"
+timeout = 60

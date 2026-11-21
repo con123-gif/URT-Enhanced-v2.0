@@ -793,6 +793,13 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — combined SM vacuum determinant and cancellation diagnostic
+- Task: compute conventional combined vacuum benchmark after 43289d7, no fitted correction.
+- Result: REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Representative fixed masses, Landau gauge MSbar one-loop determinant at tree minimum: V_tree=-118596339.96286048, V_1(v)=27928857.86128229, net partial -90667482.10157819 GeV^4. Signed quartic supertrace=-7768257279.221887 GeV^4; explicit log derivative +24596531.94903025 GeV^4. Partial contribution is negative and 3.54e54 times observed benchmark in magnitude. NOT full interacting QCD or quantum gravity; additive vacuum term and matching remain open. No fit.
+- Evidence: research.urt_combined_vacuum_one_loop_benchmark; local Python exit 0, research_archive/2026-11-21_urt_combined_vacuum_one_loop/. CI pending.
+- Next: derive genuinely combined URT action and gravitational vacuum reference, not tune benchmark sum.
+
+
 ### 2026-11-21 — GPT interactive — combined-force vacuum accounting, not another boundary fit
 - Task: user asks to investigate other fundamental forces in standalone entropy-ZPE branch.
 - Result: REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Standard covariant effective action constant term rho_0 independent of curvature coefficient B. For B R_scalar term in de Sitter, δ(1/G)=16pi B, Wald S_B=4pi B A, T S_B/V=6B/R²=-rho_B when same term placed on source side; cannot count induced gravity as a second positive vacuum component. Free Maxwell anomaly rho_gamma=31 hbar H^4/(480pi²c³), ratio to de Sitter density=31(H t_P)^2/(180pi), benchmark 5.74e-124. EW tree Higgs vacuum magnitude and QCD characteristic scale exceed benchmark by 54 and 43 orders respectively; no cancellation derived. Normalized matter entropy invariant under constant Hamiltonian shift on fixed background while covariant constant shifts gravitate. No fitted coefficient, no identification of original 95% with any one force.
