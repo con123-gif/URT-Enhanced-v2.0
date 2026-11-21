@@ -2794,3 +2794,20 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-21_urt_local_pump/URT_LOCAL_CONJUGATE_PUMP_CERT.py"
 timeout = 120
+
+# URT-ZPE: autonomous onsite rotor, original native graph and a Gaussian-rotor energy exchange regression
+[[check]]
+id = "research.urt_autonomous_local_rotor"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_autonomous_rotor/URT_AUTONOMOUS_LOCAL_ROTOR_CERT.py"
+timeout = 120
+
+[[check]]
+id = "research.urt_autonomous_rotor_gaussian_flow"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-21_urt_autonomous_rotor/URT_AUTONOMOUS_ROTOR_GAUSSIAN_FLOW.py"
+timeout = 120

@@ -793,6 +793,14 @@ commit as your result.
 
 ## Log
 
+### 2026-11-21 — GPT interactive — positive autonomous local URT golden-flux rotor pump
+- Task: Replace the external local squeeze gate (d805986) by an explicit positive-energy time-independent local pump and demonstrate actual dynamical energy exchange on original magnetic graph.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING, conditional new rotor field chi_x and any 0<g²<g2(F). H=1/2(Ps²+Pi²+Qs Ks Qs+Qi Ki Qi)+Ps Achi Qi+Pi Achi Qs+sum Pchi²/(2I), with Ks=R(L_F), Ki=R(L_F*) and Achi=g diag(sin chi,-sin chi), completes squares exactly to a positive semibounded Hamiltonian >=(g2-g²)(Qs²+Qi²)/2+sum Pchi²/(2I). Original local U1 gauge covariance preserved. At demo g=sqrt(g2)/2, native 2x2x3 Schur min +0.961750616207 and −0.149209964073; certified floors +0.130994395958, −0.012854071979. Independent native 2x2 sheet Gaussian covariance coupled to classical rotor backreaction has conserved total energies +12.407621614107, −11.985672402968, with rotor energy 2→1.411151260375 (+) and 2→1.978346273658 (−), at t6.
+- Evidence: research.urt_autonomous_local_rotor and research.urt_autonomous_rotor_gaussian_flow, original native link checker and Gaussian-rotor mean-field solver executed locally container exit0 on 2026-11-21; CI pending. research_archive/2026-11-21_urt_autonomous_rotor/.
+- Limitation: rotor is additional field; inertia/coupling/state and squeeze rate not derived by primitive URT; mean-field flow is not full quantum rotor. Native carrier birth, positive transfer into new layer and GR still open.
+- Next: derive source rotor state/rate from primitive URT and test full quantum local energy supply to actual native shell activation and joining.
+
+
 ### 2026-11-21 — GPT interactive — URT onsite conjugate-flux pump with full two-polarization work
 - Task: Resolve nonlocal idler-mode matching in primitive URT Bogoliubov source proposal, preserve unchanged 3D golden-flux oscillator and local U1 gauge covariance, and use correct two-real-oscillator complex-site normalization.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; conditional bosonic-gain interpretation and controlled onsite squeeze. Native signal K_s=R(L_F), idler K_i=R(L_F*)=C K_s C with C=diag(I,-I), automatically equal-frequency. Site-local canonical generator G=Q_s^T C P_i+P_s^T C Q_i yields Q_s'=alpha Q_s+s C Q_i, P_s'=alpha P_s-s C P_i and idler reciprocal; alpha=pi/e,s=sqrt(alpha²−1). Exact real symplectic identity and local U1 gauge invariance for arbitrary site phases. Full physical two-real-coordinate per complex site Gaussian energy boost is E_s'=cosh(2r)E_sheet and total pump work 4[(pi/e)²−1]E_sheet, coefficient 1.342822828219; + native sheet E=5.203810807053 pulse=6.987795945444; − sheet E=4.992836201484 pulse=6.704494428911. Corrects factor-of-two toy single-pair convention in 87e1504 for original full charged field; does not modify existing 3D energies.
