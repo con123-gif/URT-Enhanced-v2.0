@@ -129,4 +129,8 @@ The companion cert.py (NumPy, no external data inputs) independently reconstruct
 - 430ad32: research_archive/2026-11-22_urt_cosmic_movement_physics/
 - 0c86f1d: research_archive/2026-11-22_urt_motion_entropy_feedback/
 
+
+## 8. Physical root-cause correction (22 Nov 2026)
+After the precharged actuator and same-state redshift test, a further **exact native diagnostic** identified two reasons the current model cannot be claimed to generate gravity. The two-cycle SU(1,1) fresh-idler *signal marginal is thermal and passive*: its ergotropy under cyclic signal-only unitaries is zero, and its entropy and occupation do not depend on the golden phase. The earlier pump-energy expenditure was **assigned**, not transferred through a real quantum pump→actuator channel. The original 3D magnetic Gaussian stiffness has a positive sector-dependent spectral gap g3>0, so its static Green function decays exponentially (rigorous bound q^d/g3 with q=1−g3/12); it does not produce a 1/r gravitational field or spin-2 mode. The nonzero native plaquette double commutator also obstructs identifying the chosen midpoint-lapse operator with universal geometric boost modular flow. This is a no-go only for the **existing free Gaussian lattice and stated actuator**, not for all potential π–φ–e physical completions. See `research_archive/2026-11-22_urt_physical_root_causes/PHYSICAL_FAILURE_ROOT_CAUSES.md`.
+
 **Final status: consolidated physical research theory with reproducible exact microscopic results and a falsifiable *conditional* cosmology; not yet a complete zero-parameter theory of nature.**
