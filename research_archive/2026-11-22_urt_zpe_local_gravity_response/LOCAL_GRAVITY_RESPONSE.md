@@ -1,0 +1,37 @@
+# Local URT vacuum energy fluctuations, gravitational scalar exchange and lapse response
+22 November 2026. Standalone URT–ZPE. Parent 361a452. CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for the specified finite magnetic quantum oscillator and local lapse coupling. Scalar instantaneous gravity is an additional explicitly restricted diagnostic, not the derived Einstein stress or complete physical interaction.
+
+## Continuity and target
+Previous 3506660 derived homogeneous diagonal volume/shear response. Subsequent carrier-preserving graph shape relaxation addresses static shear in the relaxed rectangular family. 361a452 gives free-density equilibrium criterion and native scale/phase bounds. These do not determine local gravity or the collective scale-dependent energy. Here calculate the connected local energy covariance and nonuniform lapse response of the actual same native Gaussian vacuum; then evaluate the leading instantaneous scalar Poisson interaction directly, without a fitted coefficient. No RH or Cathedral ARFs.
+
+## Native local energy
+Use open N^3 cube, M=N^3, same cyclic phases f=-theta or pi-theta, theta=2pi/phi². In dimensionless canonical units let D be the complex oriented edge incidence with rows (1,-U); L=D†D, W=sqrt L, V=W^-1. Let A_{ie}=|D_{ei}|², the unsigned site-edge incidence. R is realification, two canonical real degrees per site. In real canonical variables the total H=(p^T p+q^T R(L)q)/2, E0=Tr W. Assign half of each edge to its endpoint:
+h_i=(p^T R(P_i)p+q^T R(K_i)q)/2, P_i=|i><i|, K_i=D†diag(A_i/2)D.
+Thus sum h_i=H exactly. Edge sharing is explicitly the stated local lapse discretization, not a proof that primitive URT uniquely selects gravitational localization.
+
+Define C_ij=Re <(h_i-<h_i>)(h_j-<h_j>)> in the Gaussian ground. Positivity follows as v^T C v=variance(sum v_i h_i)>=0 for real v. C 1=0 follows because H|0>=E0|0>, not because of an arbitrary subtraction of the gravitational mean. In real canonical Wightman covariance O=(1/2)[R(V),iI;-iI,R(W)], Wick gives C_ij=(1/2)Re Tr(B_i O B_j O^T) with B_i=diag(R(K_i),R(P_i)). Reduction to complex blocks gives
+C_ij=(1/4)Re Tr(K_i V K_j V+P_i W P_j W-K_i P_j-P_i K_j).
+Equivalently, with elementwise squares of magnitudes,
+C=(|W|²+(1/4) A |D V D†|² A^T-A A^T)/4.
+The negative cross term is crucial; dropping it fails the total-energy variance sum rule.
+
+## Scalar gravity diagnostic, no homogeneous background claim
+Restore c,hbar,ell, G as separately assumed physical constants, ellP²=hbar G/c³. Let L0 be the neutral free-boundary graph Poisson operator (same edges, all connection phases zero). Consider a prescribed instantaneous scalar potential Φ_i/c²=phi_i, zero mean, coupled to connected local energy δh_i^phys=(hbar c/ell)(h_i-<h_i>). Its static quadratic field energy is c^4 ell/(8pi G) phi^T L0 phi. Minimizing the quadratic scalar potential functional with linear source term phi^T δh gives the attractive exchange -2pi G/(c^4 ell) δh^T L0^+ δh. The quantum expectation of this symmetric quadratic form is well-defined in the native vacuum. Equivalently it is the formal first-order expectation of a prescribed instantaneous density-density Hamiltonian, with symmetrized products. This is NOT obtained by integrating out all constrained components of the relativistic metric. In particular relativistic pressure, momentum flux, dynamic graviton exchange, homogeneous curvature and possible contact terms are omitted. The neutral finite inverse omits its constant mode; this calculation cannot explain the homogeneous mean source.
+
+Divide E0 plus the first-order exchange expectation by M ell³:
+rho_scalar(ell)=(hbar c/ell^4)[u-b(ellP/ell)²],
+u=Tr W/M, b=(2pi/M)Tr(L0^+ C)>0 in the tested native cubes.
+Both coefficients follow from the same vacuum state, without cosmological measurements. b is nonnegative in all volumes by positivity. This perturbative diagnostic breaks the original bare scale law once the independently defined G is supplied. The formal stationary point is ell²=(3b/2u)ellP²; rho_scalar>0 there, second derivative is -8 hbar c u/ell^6 <0. It is a maximum of this truncated expression, not a stable vacuum. At that point the correction is 2/3 of the bare energy, so a small-coupling expansion is not controlled. Do not extrapolate to strong gravity or a sub-Planck cutoff; do not claim a universal no-go for gravity. An unregulated negative quartic scalar exchange must not be treated as a bounded full nonperturbative Hamiltonian.
+
+## Exact local-clock response
+Independent of the preceding scalar exchange approximation, introduce the same finite canonical lapse coupling H[N]=sum_i N_i h_i, positive N_i. This is the static fixed spatial geometry lapse discretization, not a generally covariant full metric action. For real v and N_i=1+s v_i, define P_v=sum v_i P_i,K_v=sum v_i K_i. In the eigenbasis of L with w_m=sqrt(lambda_m), let
+T_v,mn=(K_v)_mn/sqrt(w_m w_n)-sqrt(w_m w_n)(P_v)_mn.
+The connected local-energy Euclidean correlator of h_v=sum v_i h_i is (1/4) sum_mn |T_v,mn|² exp[-(w_m+w_n)|tau|]. This follows from oscillator pair creation matrix elements / Wick and the same two-real-oscillator normalization; cross-check at equal time via the previous energy covariance expression. A uniform v makes T vanish, consistently with exact conservation of total H. In the quadratic Euclidean effective action, the second-order coefficient for |s~(nu)|² (no prefactor 1/2) is -R_v(nu), where
+R_v(nu)=(1/4) sum_mn |T_v,mn|² (w_m+w_n)/[(w_m+w_n)²+nu²].
+The factor follows by integrating the even correlator, then applying the -1/2 connected cumulant in -ln Z. R_v(nu)>=0, strictly for any v with nonzero pair matrix elements, and decreases with |nu|. The static E(s)=Tr sqrt(P[N]^1/2 K[N] P[N]^1/2) with P[N]=diag(N), K[N]=D†diag(A^T N/2)D; its expansion coefficient at s² equals -R_v(0). This fills an actual spatially varying lapse-response block missing from homogeneous volume and diagonal shear work. It supplies energy-density matrix elements for later constrained gravity; it does not by itself supply the local tensor Ward identity, off-diagonal spatial metric response or the physical absolute vacuum normalization.
+
+## Executed verification
+Actual container /mnt/data/urt_gravity_interaction/cert.py, command set -o pipefail; OPENBLAS_NUM_THREADS=1 python cert.py | tee LOCAL_TEST_OUTPUT.txt, exit 0. Eight N=2,4,6,8 native covariance/exchange cases, both flux signs; direct realified Wick comparison at N=2. Eight further lapse tests with deterministic v_i proportional to cos(pi(x+1/2)/N), positive N and independent finite differences of ground energy; largest absolute discrepancy 2.001e-7. Exact local output archived. At N=8 u+=2.2249903849, b+=.3754319588; u-=2.2188114578,b-=.3677854955. No infinite-volume extrapolation of b claimed. Previous CI observed full PASS 3506660 checkpoint303; new CI pending. No change to existing Cathedral gates.
+
+## RESUME HERE
+This is genuine local vacuum response and a scalar interaction estimate, not a finished theory of dark energy. The missing calculation is to derive the dynamical, constrained metric and connection sector (including energy current and spatial stress matrix elements), then integrate the complete interaction rather than treating the scalar density-density estimate as full GR. The equilibrium criterion remains rho_total'(n*)=0, rho_total''(n*)>0, with independently fixed absolute energy. No fitted cosmological term or invented stabilizing power is introduced.
