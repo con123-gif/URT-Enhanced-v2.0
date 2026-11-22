@@ -1,0 +1,9 @@
+N=2 f=-2.39996323 E/M=1.648134555250 shear static/M=0.423077748518 shear kinetic/M=0.012355955089 volume kinetic/M=0.341346396033 ratio=27.626063187
+N=2 f=+0.74162942 E/M=1.619040002678 shear static/M=0.406906983750 shear kinetic/M=0.015677312804 volume kinetic/M=0.451821762569 ratio=28.820102541
+N=4 f=-2.39996323 E/M=2.045432821882 shear static/M=0.578110038141 shear kinetic/M=0.006786671311 volume kinetic/M=0.266099890151 ratio=39.209190772
+N=4 f=+0.74162942 E/M=2.037237385916 shear static/M=0.573500418873 shear kinetic/M=0.008087657858 volume kinetic/M=0.277506291132 ratio=34.312318350
+N=6 f=-2.39996323 E/M=2.166314213826 shear static/M=0.624307357322 shear kinetic/M=0.005782398794 volume kinetic/M=0.248360615923 ratio=42.951139273
+N=6 f=+0.74162942 E/M=2.159540265369 shear static/M=0.620345635027 shear kinetic/M=0.006741054870 volume kinetic/M=0.256466169053 ratio=38.045405950
+N=8 f=-2.39996323 E/M=2.224990384876 shear static/M=0.647421391501 shear kinetic/M=0.005302869121 volume kinetic/M=0.240362385051 ratio=45.326856006
+N=8 f=+0.74162942 E/M=2.218811457827 shear static/M=0.643603751756 shear kinetic/M=0.006171248102 volume kinetic/M=0.247198343108 ratio=40.056458438
+PASS: native shear stability, cyclic degeneracy, finite differences and independent frequency integrals
