@@ -2953,3 +2953,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_dynamical_action/cert.py"
 timeout = 120
+
+[[check]]
+id = "research.urt_zpe_metric_kernel"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=2 python research_archive/2026-11-22_urt_zpe_metric_kernel/cert.py"
+timeout = 120

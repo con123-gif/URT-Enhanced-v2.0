@@ -1,0 +1,24 @@
+N=2 f=-2.399963230 E0/site=1.648134555250 kappa/site=0.341346396033 gap=0.931704217106 kappa/E0=0.207110757399
+  nu=0.5 exact kernel/site=0.082062047397 monodromy/site=0.082062027780 relerr=2.391e-07
+  nu=2.0 exact kernel/site=0.872539899445 monodromy/site=0.872538975432 relerr=1.059e-06
+N=2 f=+0.741629424 E0/site=1.619040002678 kappa/site=0.451821762569 gap=0.317915737149 kappa/E0=0.279067695561
+  nu=0.5 exact kernel/site=0.092630686946 monodromy/site=0.092630638790 relerr=5.199e-07
+  nu=2.0 exact kernel/site=0.813740196518 monodromy/site=0.813739487184 relerr=8.717e-07
+N=4 f=-2.399963230 E0/site=2.045432821882 kappa/site=0.266099890151 gap=1.111490431071 kappa/E0=0.130094661289
+  nu=0.5 exact kernel/site=0.065041717094 monodromy/site=0.065041707748 relerr=1.437e-07
+  nu=2.0 exact kernel/site=0.795571290815 monodromy/site=0.795570497291 relerr=9.974e-07
+N=4 f=+0.741629424 E0/site=2.037237385916 kappa/site=0.277506291132 gap=0.739642133272 kappa/E0=0.136216963743
+  nu=0.5 exact kernel/site=0.067208432423 monodromy/site=0.067208419714 relerr=1.891e-07
+  nu=2.0 exact kernel/site=0.788495327391 monodromy/site=0.788494591841 relerr=9.329e-07
+N=8 f=-2.399963230 E0/site=2.224990384876 kappa/site=0.240362385051 gap=1.165311769591 kappa/E0=0.108028505060
+N=8 f=+0.741629424 E0/site=2.218811457827 kappa/site=0.247198343108 gap=0.811900370303 kappa/E0=0.111410251752
+N=12 f=-2.399963230 E0/site=2.282535754235 kappa/site=0.232902301031 gap=1.170569345262 kappa/E0=0.102036649634
+N=12 f=+0.741629424 E0/site=2.276890568623 kappa/site=0.238656417674 gap=0.816712949567 kappa/E0=0.104816815073
+PASS native spectrum, exact positive kernel, eight continuum-time determinant comparisons, conformal cancellation
+PULSE f=-2.399963230 tau=0.25 absorbed/site/amp^2=8.12914605872 Born=8.12913935961 relerr=8.241e-07
+PULSE f=-2.399963230 tau=0.5 absorbed/site/amp^2=2.20863069875 Born=2.20862876353 relerr=8.762e-07
+PULSE f=-2.399963230 tau=1 absorbed/site/amp^2=0.0431237865909 Born=0.0431237450526 relerr=9.632e-07
+PULSE f=+0.741629424 tau=0.25 absorbed/site/amp^2=8.17892835773 Born=8.17892161569 relerr=8.243e-07
+PULSE f=+0.741629424 tau=0.5 absorbed/site/amp^2=1.88850832446 Born=1.88850665488 relerr=8.841e-07
+PULSE f=+0.741629424 tau=1 absorbed/site/amp^2=0.176267578695 Born=0.176267421924 relerr=8.894e-07
+PASS six real-time metric-pulse excitation tests and conformal control
