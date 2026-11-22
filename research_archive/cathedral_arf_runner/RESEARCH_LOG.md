@@ -794,6 +794,13 @@ commit as your result.
 
 ## Log
 
+
+### 2026-11-22 — GPT interactive — entropy/redshift physical discriminator vs DESI DR2
+- REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Exact same-state coefficient map eta=2pi chi/sigma and c_HDE=sqrt(eta) for CONDITIONAL future-event-horizon choice: finite core2 c+=1.083084,c-=1.023918. September 2026 external HDE posterior c=1.011(+.076/-.072); both inside marginal 1sigma, not a URT fit or joint likelihood. Apparent horizon rho fraction eta>1 requires negative residual matter if finite coefficients used; future horizon yields accelerated HDE but is not selected by native entropy. Derive exact local CPL slope wa=+sqrt(Omega0) Omega_m0 (1+2sqrt(Omega0)/c)/(3c)>0: opposite sign to some DESI evolving-DE central values (wa<0). At Omega_m0=.270, (w0,wa,q0) plus (-.859239,+.183011,-.440867), minus (-.889628,+.200433,-.474143). H(z=1)/H_LCDM=1.070188/1.061530. Absolute H0 undetermined. These are CONDITIONAL finite-coefficient diagnostics, not cosmological parameter-free physical closure.
+- Evidence: research.urt_zpe_physical_discriminant; local standalone Python SciPy executed exit0, four flux/matter benchmarks; previous CI checkpoint308 PASS d47dff9; new CI pending. research_archive/2026-11-22_urt_zpe_physical_discriminant/.
+- NEXT: identify horizon selection and independently certify thermodynamic continuum coefficient before observational joint test. No ARFs, no fitted constants.
+
+
 ### 2026-11-22 — GPT interactive — local URT energy covariance and scalar gravity response
 - THEOREM / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Original cubic oscillator, split edge energy by halves; connected covariance C=(|W|²+A|D V D†|²A^T/4-AA^T)/4, positive, C1=0. Declared instantaneous scalar Poisson exchange on connected fluctuations gives rho=(hbar c/ell^4)[u-b(ellP/ell)²], b=2pi Tr(L0^+ C)/M. N8 b+=.3754319588/b-=.3677854955. Formal extremum ell²=3b ellP²/(2u) is a maximum outside controlled weak coupling, not physical cutoff. NOT complete relativistic gravitational interaction. Independently exact nonuniform canonical lapse response R_v(nu)=sum |T_v,mn|²(w_m+w_n)/[4((w_m+w_n)²+nu²)], with T_v the native pair energy matrix. Uniform lapse T=0; negative quadratic effective coefficient -R_v. 
 - Evidence: research.urt_zpe_local_gravity_response; actual local container OPENBLAS_NUM_THREADS=1 python /mnt/data/urt_gravity_interaction/cert.py exit 0 with pipefail; eight native covariance cases and eight independent lapse-Hessian checks. research_archive/2026-11-22_urt_zpe_local_gravity_response/. Previous observed full CI PASS 3506660 #303; new remote pending.
