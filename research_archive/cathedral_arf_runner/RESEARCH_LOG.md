@@ -795,6 +795,12 @@ commit as your result.
 ## Log
 
 
+### 2026-11-22 — GPT interactive — coherent golden-phase interference vs entropy-generating fresh-idler movement
+- THEOREM / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING for prior native 87e15048 one-idler SU(1,1) dilation. Original alpha=pi/e and theta=2pi/phi² give x=alpha cos theta=−.8521973793 (elliptic), so coherent reuse of the same idler has exact N_n=(alpha²−1)sin²(n arccos x)/(1−x²) <=1.22627909397, reduced entropy <=1.53161968723 kB; not monotonic. Moreover reused idler gives (M²)11=q²+(alpha²−1), so fails literal scalar q² mean recursion. Fresh uncorrelated idler each step **does** preserve <a_n>=q^n<a_0>, but N_n=alpha^(2n)−1 and exact pump supply Delta E=2 hbar omega (alpha²−1)alpha^(2n). Six previously original native sheet/seam budgets require 1.315–1.435 E_sheet, one pump cycle .6714 insufficient, two cycles 1.5682 nominally enough; actual coupling not derived. This is a real physical entropy/energy distinction, not a full gravity closure.
+- Evidence: research.urt_motion_entropy_feedback, local standalone Python exit0, 512 powers max error 4.284e−13, 22 Nov 2026. Prior CI checkpoint 310 PASS 6352b09; new remote CI pending. Archive research_archive/2026-11-22_urt_motion_entropy_feedback/.
+- NEXT: actual energy-conserving pump→fresh native sheet/seam physical coupling with two cycles and reservoir accounting; no new cosmological cutoff or ARF.
+
+
 ### 2026-11-22 — GPT interactive — minimal URT physical clock/horizon non-identifiability
 - OBSTRUCTION scoped to q=(pi/e) exp(i 2pi/phi²) plus conditional horizon entropy/redshift, not universal no-go. Exact golden-angle irrational nonclosure; entropy grows (pi/e)² per step if radius maps to |q|. Same trajectory admits constant-interval exponential expansion or expanding-interval power-law expansion with different horizon relations; rescaling clock changes H0 without changing q or sigma. Naively R_A proportional a yields entropy-growth exponent 2 and q_dec=0 (coasting). Future event horizon is an extra physical future condition, not implied by q; micro cell entropy scaling does not choose a cosmic epoch. Therefore the two requested physical identifications cannot be claimed solved from current primitive alone; need clock/causal law, not more ARFs.
 - Evidence: research.urt_minimal_clock_horizon; pure standard-library script executed locally exit0, 22 Nov 2026, prior CI checkpoint310 PASS 6352b09; new CI pending. Archive research_archive/2026-11-22_urt_minimal_clock_horizon/.

@@ -3017,3 +3017,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_minimal_clock_horizon/cert.py"
 timeout = 120
+
+[[check]]
+id = "research.urt_motion_entropy_feedback"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_motion_entropy_feedback/cert.py"
+timeout = 120
