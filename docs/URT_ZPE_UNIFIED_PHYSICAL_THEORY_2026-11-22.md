@@ -1,3 +1,5 @@
+> **Physical-closure audit, 22 November 2026:** This document is a historical integrated **conditional** synthesis, not a verified fundamental unification. See [URT–ZPE non-circularity audit](URT_ZPE_NONCIRCULAR_AUDIT_2026-11-22.md) for the six repeated model-identification errors and the mismatch between single-pair and fully charged quantum-pump normalizations. Preserve the mathematical results, but do not use the cosmological predictions as derivations from primitive URT.
+
 # URT–ZPE: One Integrated Physical Theory
 22 November 2026. Standalone URT–ZPE. **Consolidated working physical theory — NOT a finished proof of nature.** No Cathedral ARFs, fitted numbers, target corrections or borrowed resonator effects.
 
