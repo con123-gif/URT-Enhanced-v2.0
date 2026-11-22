@@ -3081,3 +3081,19 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-22_q161dt_native_berry_orientation/Q161DT_NATIVE_BERRY_ORIENTATION.py"
 timeout = 120
+
+[[check]]
+id = "research.urt_zpe_native_local_quantum_seam"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/cert.py"
+timeout = 120
+
+[[check]]
+id = "research.urt_zpe_thermal_energy_transfer"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/jc_test.py"
+timeout = 120
