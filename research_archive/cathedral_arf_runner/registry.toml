@@ -2977,3 +2977,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_consolidated_metric/cert.py"
 timeout = 120
+
+[[check]]
+id = "research.urt_zpe_shape_relaxation"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_shape_relaxation/cert.py"
+timeout = 180

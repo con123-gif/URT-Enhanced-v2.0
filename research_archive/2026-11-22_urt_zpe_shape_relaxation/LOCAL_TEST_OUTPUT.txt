@@ -1,0 +1,7 @@
+N=4 sites=64 flux=-2.399963230 E_cube/M=2.0454328219 E_relaxed/M=1.9869723955 E_frozen/M=2.6066415086 Ecut/M=1.6481345552 seams=[48, 40] relaxation_gain/M=0.6196691131 shape_residual/M=-0.0584604264
+N=8 sites=512 flux=-2.399963230 E_cube/M=2.2249903849 E_relaxed/M=2.1967854995 E_frozen/M=2.8536401777 Ecut/M=2.0454328219 seams=[192, 160] relaxation_gain/M=0.6568546782 shape_residual/M=-0.0282048854
+N=12 sites=1728 flux=-2.399963230 E_cube/M=2.2825357542 E_relaxed/M=2.2639045843 E_frozen/M=2.9334778555 Ecut/M=2.1663142138 seams=[432, 360] relaxation_gain/M=0.6695732712 shape_residual/M=-0.0186311700
+N=4 sites=64 flux=+0.741629424 E_cube/M=2.0372373859 E_relaxed/M=1.9771460847 E_frozen/M=2.5954911480 Ecut/M=1.6190400027 seams=[48, 40] relaxation_gain/M=0.6183450633 shape_residual/M=-0.0600913012
+N=8 sites=512 flux=+0.741629424 E_cube/M=2.2188114578 E_relaxed/M=2.1903681350 E_frozen/M=2.8455400698 Ecut/M=2.0372373859 seams=[192, 160] relaxation_gain/M=0.6551719348 shape_residual/M=-0.0284433228
+N=12 sites=1728 flux=+0.741629424 E_cube/M=2.2768905686 E_relaxed/M=2.2581096100 E_frozen/M=2.9260741016 Ecut/M=2.1595402654 seams=[432, 360] relaxation_gain/M=0.6679644916 shape_residual/M=-0.0187809586
+PASS: same carrier number, exact common block gauge, positive seam interpolation, monotone block strain relaxation, reversible work bounds, lower relaxed energy
