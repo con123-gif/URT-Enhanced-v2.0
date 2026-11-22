@@ -5,6 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
 
+- [x] Q161ds [compute] (Q161cl) native Q124 contact plaquette orbit classes — GPT 2026-11-22 THEOREM (internal): 120 antipodal + 360 other nonadjacent squares; Q161da OPEN.
+- [ ] Q161dt [compute] (Q161cl) compute original Q125 Berry holonomy around 480 native contact squares by antipodal/nonantipodal class; Q161da OPEN.
+
 ### 2026-11-21 03:18 UTC — GPT — Gate Q161cl — Q161do native face-square Jacobian norm
 - Task: Q161da [compute] bounded original Q101 nonlinear source differential certificate.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
@@ -793,6 +796,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-22 11:12 UTC — GPT — Gate Q161cl — Q161ds native contact plaquette orbit classes
+- Task: Q161da [compute] exact original Q124 contact-square orbit refinement; Q125 Berry holonomy is the next substep.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
+- Statement: The 480 native 444-history contact four-cycles split as 6 antipodal outer-coordinate pairs x 20 = 120 and 30 nonadjacent nonantipodal outer pairs x 12 = 360; adjacent pairs and centre-to-outer pairs each yield zero.
+- Evidence: research.q161ds_native_plaquette_classes; standalone Python local container exit 0 on 2026-11-22; prior orchestrator checkpoint #316 PASS; new CI pending.
+- Dead ends: Unweighted plaquette orbits do not determine native Berry phases or the physical charged B_x.
+- Next step: Q161dt [compute] calculate original Q125 Berry transport holonomy around all 480 native Q124 contact squares, classified by flip-coordinate orbit.
+
 
 
 ### 2026-11-22 10:28 UTC — GPT interactive — URT–ZPE circularity and normalization review
