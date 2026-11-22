@@ -3073,3 +3073,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-22_q161ds_native_plaquette_classes/Q161DS_NATIVE_PLAQUETTE_CLASSES.py"
 timeout = 120
+
+[[check]]
+id = "research.q161dt_native_berry_orientation"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-22_q161dt_native_berry_orientation/Q161DT_NATIVE_BERRY_ORIENTATION.py"
+timeout = 120

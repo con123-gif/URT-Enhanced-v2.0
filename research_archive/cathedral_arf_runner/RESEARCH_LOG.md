@@ -6,7 +6,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 ## Queue
 
 - [x] Q161ds [compute] (Q161cl) native Q124 contact plaquette orbit classes — GPT 2026-11-22 THEOREM (internal): 120 antipodal + 360 other nonadjacent squares; Q161da OPEN.
-- [ ] Q161dt [compute] (Q161cl) compute original Q125 Berry holonomy around 480 native contact squares by antipodal/nonantipodal class; Q161da OPEN.
+- [x] Q161dt [compute] (Q161cl) exact native Berry orientation determinant split — GPT 2026-11-22 THEOREM: 120 zero antipodal, 360 nonzero nonantipodal; holonomy remains OPEN.
+- [ ] Q161du [compute] (Q161cl) compute ordered Q125 SU(2) four-link holonomies on all 480 squares, classify eigenphases and antipodal spinor signs; Q161da OPEN.
 
 ### 2026-11-21 03:18 UTC — GPT — Gate Q161cl — Q161do native face-square Jacobian norm
 - Task: Q161da [compute] bounded original Q101 nonlinear source differential certificate.
@@ -796,6 +797,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-22 12:14 UTC — GPT — Gate Q161cl — Q161dt native Q125 Berry orientation determinant
+- Task: Q161dt native Q124/Q125 contact-square Berry orientation precursor.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; physical Q161da OPEN.
+- Statement: Exactly 120 antipodal contact squares have det(W,V_a,V_b)=0 in Q(phi), while all 360 nonantipodal squares have nonzero determinant; no SU(2) holonomy conclusion.
+- Evidence: research.q161dt_native_berry_orientation; standalone Python local execution exit 0; previous CI checkpoint #318 PASS; new CI pending.
+- Dead ends: Coplanarity is not an evaluation of the ordered SU(2) Berry product, and cannot alone determine a phase.
+- Next step: Q161du compute original Q125 ordered four-link SU(2) holonomy and eigenphase classes on all 480 squares.
+
 
 ### 2026-11-22 11:12 UTC — GPT — Gate Q161cl — Q161ds native contact plaquette orbit classes
 - Task: Q161da [compute] exact original Q124 contact-square orbit refinement; Q125 Berry holonomy is the next substep.
