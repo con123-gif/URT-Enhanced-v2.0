@@ -3041,3 +3041,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_integrated_physical_theory/cert.py"
 timeout = 120
+
+[[check]]
+id = "research.urt_same_state_energy_entropy"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_same_state_energy_entropy/cert.py"
+timeout = 120
