@@ -1,0 +1,9 @@
+exact enclosed bulk gaps: [1.047955167665721,1.047955167665721] [0.102832575834556,0.102832575834556]
+plus Radau [2.392666158341575,2.392666158342572] Gauss [2.394402632755606,2.394402632755661] minus Radau [2.376400847517941,2.376400847524846] Gauss [2.390589811260306,2.390589811260337]
+CERTIFIED 3D bulk ZPE difference: 0.002076347081237701 < delta < 0.018001785237719257
+PASS exact rational bounds; no numerical approximation determines proof
+N=2 Eplus=13.185076441997 Eminus=12.952320021427 reversible release=0.232756420571 release/site=0.029094552571 sudden work=1.599775283791 excess above final ground=1.832531704362
+N=4 Eplus=130.907700600456 Eminus=130.383192698646 reversible release=0.524507901810 release/site=0.008195435966 sudden work=9.489022365261 excess above final ground=10.013530267071
+N=6 Eplus=467.923870186364 Eminus=466.460697319721 reversible release=1.463172866643 release/site=0.006773948457 sudden work=29.710465287886 excess above final ground=31.173638154529
+N=8 Eplus=1139.195077056507 Eminus=1136.031466407322 reversible release=3.163610649186 release/site=0.006178927049 sudden work=67.917199909014 excess above final ground=71.080810558199
+PASS native finite diagnostics: reversible energy difference and gapped phase path
