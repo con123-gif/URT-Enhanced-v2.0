@@ -2937,3 +2937,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-21_q161_hidden_complex_chiral_bridge/cert.py"
 timeout = 120
+
+[[check]]
+id = "research.urt_zpe_audit_rectangular_cocycle"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_publication_audit/cert.py"
+timeout = 60
