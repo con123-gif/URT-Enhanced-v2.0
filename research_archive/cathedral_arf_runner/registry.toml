@@ -3009,3 +3009,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_physical_discriminant/cert.py"
 timeout = 120
+
+[[check]]
+id = "research.urt_minimal_clock_horizon"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_minimal_clock_horizon/cert.py"
+timeout = 120

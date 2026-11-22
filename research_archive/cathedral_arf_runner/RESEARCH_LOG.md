@@ -795,6 +795,12 @@ commit as your result.
 ## Log
 
 
+### 2026-11-22 — GPT interactive — minimal URT physical clock/horizon non-identifiability
+- OBSTRUCTION scoped to q=(pi/e) exp(i 2pi/phi²) plus conditional horizon entropy/redshift, not universal no-go. Exact golden-angle irrational nonclosure; entropy grows (pi/e)² per step if radius maps to |q|. Same trajectory admits constant-interval exponential expansion or expanding-interval power-law expansion with different horizon relations; rescaling clock changes H0 without changing q or sigma. Naively R_A proportional a yields entropy-growth exponent 2 and q_dec=0 (coasting). Future event horizon is an extra physical future condition, not implied by q; micro cell entropy scaling does not choose a cosmic epoch. Therefore the two requested physical identifications cannot be claimed solved from current primitive alone; need clock/causal law, not more ARFs.
+- Evidence: research.urt_minimal_clock_horizon; pure standard-library script executed locally exit0, 22 Nov 2026, prior CI checkpoint310 PASS 6352b09; new CI pending. Archive research_archive/2026-11-22_urt_minimal_clock_horizon/.
+- NEXT: derive *one* physical time/horizon identification, if primitive dynamics supplies it; otherwise preserve open status without arbitrary constants.
+
+
 ### 2026-11-22 — GPT interactive — entropy/redshift physical discriminator vs DESI DR2
 - REVIEW / CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING. Exact same-state coefficient map eta=2pi chi/sigma and c_HDE=sqrt(eta) for CONDITIONAL future-event-horizon choice: finite core2 c+=1.083084,c-=1.023918. September 2026 external HDE posterior c=1.011(+.076/-.072); both inside marginal 1sigma, not a URT fit or joint likelihood. Apparent horizon rho fraction eta>1 requires negative residual matter if finite coefficients used; future horizon yields accelerated HDE but is not selected by native entropy. Derive exact local CPL slope wa=+sqrt(Omega0) Omega_m0 (1+2sqrt(Omega0)/c)/(3c)>0: opposite sign to some DESI evolving-DE central values (wa<0). At Omega_m0=.270, (w0,wa,q0) plus (-.859239,+.183011,-.440867), minus (-.889628,+.200433,-.474143). H(z=1)/H_LCDM=1.070188/1.061530. Absolute H0 undetermined. These are CONDITIONAL finite-coefficient diagnostics, not cosmological parameter-free physical closure.
 - Evidence: research.urt_zpe_physical_discriminant; local standalone Python SciPy executed exit0, four flux/matter benchmarks; previous CI checkpoint308 PASS d47dff9; new CI pending. research_archive/2026-11-22_urt_zpe_physical_discriminant/.
