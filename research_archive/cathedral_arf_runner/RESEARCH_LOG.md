@@ -58,7 +58,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Scope: Native Q101 nonlinear source only. H64/24-to-Q96 embedding and charged Ward leakage remain open; no gate closed.
 - Next step: Q161da [compute] recover original B_x into Q96 and evaluate (I-P_E) B_x^† Q96 B_x E exactly.
 
-- [ ] Q161da [compute] (Q161cl) Q161do original Q101 Jacobian norm certified (all 60); construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
+- [ ] Q161da [compute] (Q161cl) Q161dq charge-sector nonselection certified; Q161do original Q101 Jacobian norm certified (all 60); construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
 - [ ] Q161dp [derive] (Q161cl) derive native H64/24/Q125 joined kinetic action for the real neutral operator source from Q161da complex-structure bridge; distinguish it from one-particle charged state and retain Berry transport.
 - [x] Q161do [compute] (Q161cl) native Q101 face-square Jacobian norm — GPT 2026-11-21 THEOREM (internal): 72+72sqrt(5)/5 on all 60 ground words; Q161da OPEN.
 - [x] Q161df [compute] (Q161cl) original Q96/24 charge-clock resistance profile and Kirchhoff index — GPT 2026-11-20 THEOREM (internal): 479550; Q161da OPEN.
@@ -793,6 +793,16 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-22 09:11 UTC — GPT — Gate Q161cl — Q161dq native Q96 charged-embedding nonuniqueness
+- Task: Q161da [compute], bounded original Q124/Q96 electric-charge spectral and embedding-selection certificate.
+- Result: OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da remains OPEN.
+- Statement: Native Q96 charge multiplicities are (+2/3:18,-2/3:18,+1/3:18,-1/3:18,+1:6,-1:6,0:12). Two orthogonal rank-4 complex isometries into the +2/3 eigenspace both have exact zero electric Ward leakage, so Ward plus isometry alone does not select the physical H64-to-Q96 B_x.
+- Evidence: research.q161dq_native_q96_charge_embedding; original Q124 444 histories reconstructed; standalone local NumPy/Fraction exit 0 on 2026-11-22, max local spectrum residual 4.44e-16; prior CI summary checkpoint #310 PASS, new commit CI pending.
+- Dead ends: Electric-charge compatibility alone has at least two inequivalent charged embeddings; neither is the dynamically derived original one-particle map.
+- Next step: Q161da [compute] use original H64/24 kinetic operator and Q125 1032 Berry links to test which charge-sector injections intertwine transport.
+
+
 
 
 ### 2026-11-22 — GPT interactive — coherent golden-phase interference vs entropy-generating fresh-idler movement

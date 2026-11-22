@@ -3025,3 +3025,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_motion_entropy_feedback/cert.py"
 timeout = 120
+
+[[check]]
+id = "research.q161dq_native_q96_charge_embedding"
+stage = "research"
+claim = "native"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_q161dq_native_q96_charge_embedding/Q161DQ_NATIVE_Q96_CHARGE_EMBEDDING_NONUNIQUENESS_CERT.py"
+timeout = 120
