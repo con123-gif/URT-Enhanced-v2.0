@@ -3,6 +3,13 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-23 — GPT — Q163 USER-DIRECTED PLATONIC TORUS + GOLDEN URT PROGRAMME
+- Task: Add user's Platonic-solid→torus and phi/pi/e hypothesis to the persistent programme, preserving all five native cochains and prior Hopf/spiral/circulation work.
+- Status: OPEN / UNVERIFIED PHYSICAL IDENTIFICATION; research-task registration only, NOT an executed theorem or CI PASS.
+- Mathematical baselines: cube C4^3 periodic cubical torus (64 vertices; Laplacian {2j : binomial(6,j)}); phi^2=phi+1 constrains continuous three-angle golden flow to T^2; original URT radial pi/e and angular 2pi/phi^2 recurrence retained. These baselines require native intertwiners before any physical identification.
+- Evidence/provenance: `research_archive/2026-11-23_platonic_torus_phi_urt/Q163_PLATONIC_TORUS_PHI_RESEARCH_PROGRAM.md`; Q161cu, Q162a/b, 2026-11-17 spiral recovery and 2026-11-23 five-solid circulation/Hopf join. No new Q163 code run or CI claimed.
+- Next: When active Q161 gate permits, construct original-operator toroidal chain map and compute actual twisted five-solid spectral/flux/entropy response; Q161 charged-sector queue remains active.
+
 ### 2026-11-23 — GPT — USER-DIRECTED FIVE-SOLID CIRCULATION FEEDBACK
 - Task: Direct user instruction to integrate full all-five dynamics; do not replace Q161 active gate.
 - Result: THEOREM (for the declared additional quartic) / CLOSED INTERNALLY, PHYSICAL IDENTIFICATION PENDING; local incision/gradient test and original 190/64/24 native registered CI passed.
@@ -90,6 +97,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [ ] Q161da [compute] (Q161cl) Q161dq charge-sector nonselection certified; Q161do original Q101 Jacobian norm certified (all 60); construct native H64/24/Q125-to-Q96 B_x and calculate charge Ward leakage; Q161db rank-8 source, Q161dc spectrum, Q161dd trace, Q161de antipodal Green response established, but B_x remains unconstructed.
 - [ ] Q161dp [derive] (Q161cl) derive native H64/24/Q125 joined kinetic action for the real neutral operator source from Q161da complex-structure bridge; distinguish it from one-particle charged state and retain Berry transport.
+- [ ] Q163 [derive] (Q161cl; deferred, user-directed 2026-11-23) recover all-five native Platonic face-loop torus construction, derive chain/symmetry/URT/24-clock map and compute twisted spectral benchmark vs C4^3; no H64/DNA dimension conflation; see `research_archive/2026-11-23_platonic_torus_phi_urt/Q163_PLATONIC_TORUS_PHI_RESEARCH_PROGRAM.md`.
 - [x] Q161do [compute] (Q161cl) native Q101 face-square Jacobian norm — GPT 2026-11-21 THEOREM (internal): 72+72sqrt(5)/5 on all 60 ground words; Q161da OPEN.
 - [x] Q161df [compute] (Q161cl) original Q96/24 charge-clock resistance profile and Kirchhoff index — GPT 2026-11-20 THEOREM (internal): 479550; Q161da OPEN.
 - [x] Q161dj [compute] (Q161cl) original Q96/24 charge-clock fourth moment — GPT 2026-11-20 THEOREM (internal): Tr K^4=5474560/243; Q161da OPEN.
