@@ -3148,3 +3148,12 @@ claim = "conditional"
 gating = true
 run = "python research_archive/2026-11-23_hopf_urt_native_join/HOPF_NATIVE_JOIN_CERT.py"
 timeout = 150
+
+# Native K4 gravity causal spin-2 and horizon-identity obstruction
+[[check]]
+id = "research.native_k4_gravity_spin2_horizon_obstruction"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-23_native_gravity_spin2_horizon/NATIVE_GRAVITY_SPIN2_HORIZON_CERT.py"
+timeout = 30

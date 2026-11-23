@@ -3,6 +3,15 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-23 — Gravity/fluids bot — native K4 causal spin-2 and horizon obstruction
+- Task: Audit the current `newtons_cathedral/gravity.py` weak/singularity-gravity, Lorentzian and horizon claims using its original K4 operator, without a scalar-to-metric identification.
+- Result: OBSTRUCTION within the declared operator; physical gravity remains OPEN. The result does not alter the all-five 190/H64/24 Hopf/circulation Hamiltonian.
+- Statement: The declared quadratic spectrum is (1.0217594391139355, 4.021759439113936, 4.021759439113936, 6.021759439113936), so it has zero massless modes. Its time-kinetic inertia is (4,0,0), and its spatial principal-symbol rank is zero; Fourier time signs do not produce a (1,3) coframe or causal spin-2 propagation.
+- Horizon audit: the declared curvature analogue is the constant 69.65467706618028. The inserted Hawking/Bekenstein formulas satisfy T dS/dM=1 identically for arbitrary positive G,M; the existing finite-difference test has predetermined relative error 5e-7 and therefore does not derive horizon thermodynamics.
+- Evidence: `research_archive/2026-11-23_native_gravity_spin2_horizon/NATIVE_GRAVITY_SPIN2_HORIZON_CERT.py`; standalone native-formula preflight exit 0. Registered native CI check pending.
+- Scope: no no-go for a future typed 13-cell/190/H64/24 tensor completion; no fitted constants, random matrices, redshift claim or gate closure.
+- Next: construct the typed symmetric-tensor source/response map and require a two-polarization massless TT kernel, conserved-stress Ward nullspace, positive constrained energy and causal spatial cone before defining lapse/redshift.
+
 ### 2026-11-23 — GPT — Q163 USER-DIRECTED PLATONIC TORUS + GOLDEN URT PROGRAMME
 - Task: Add user's Platonic-solid→torus and phi/pi/e hypothesis to the persistent programme, preserving all five native cochains and prior Hopf/spiral/circulation work.
 - Status: OPEN / UNVERIFIED PHYSICAL IDENTIFICATION; research-task registration only, NOT an executed theorem or CI PASS.
