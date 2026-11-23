@@ -3122,3 +3122,11 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-23_q161ek_native_holonomy/Q161EK_NATIVE_HOLONOMY.py"
 timeout = 120
+
+[[check]]
+id = "research.q161el_inversion_q96"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-23_q161el_inversion_q96/Q161EL_INVERSION_Q96.py"
+timeout = 120

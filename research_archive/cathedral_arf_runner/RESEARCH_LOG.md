@@ -4,13 +4,22 @@ The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.m
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
+- [ ] Q161eo [compute] (Q161cl) test original H64/24/Q96 source-current-weighted gauge-invariant inversion-odd charged plaquette observable; Q161da OPEN.
 - [x] Q161eg [compute] (Q161cl) exact original Q124/Q125 four-history signed volume minors — GPT 2026-11-23 THEOREM (internal); Q161du OPEN.
 
 - [x] Q161ds [compute] (Q161cl) native Q124 contact plaquette orbit classes — GPT 2026-11-22 THEOREM (internal): 120 antipodal + 360 other nonadjacent squares; Q161da OPEN.
 - [x] Q161dt [compute] (Q161cl) exact native Berry orientation determinant split — GPT 2026-11-22 THEOREM: 120 zero antipodal, 360 nonzero nonantipodal; holonomy remains OPEN.
 - [x] Q161ei [compute] (Q161cl) normalized native Q124 Pauli four-history product — GPT 2026-11-23 THEOREM (internal); Q161du OPEN.
-- [x] Q161ej [compute] (Q161cl) native Q125 SU(2) Berry holonomy trace-square vs Q161ei Pauli product — GPT 2026-11-23 THEOREM (Q161ek log); Q96 lift remains OPEN.\n- [ ] Q161el [compute] (Q161cl) calculate original Q96 charge-block lift and inversion parity of all 360 non-antipodal Q125 four-link holonomies; Q161da OPEN.
+- [x] Q161ej [compute] (Q161cl) native Q125 SU(2) Berry holonomy trace-square vs Q161ei Pauli product — GPT 2026-11-23 THEOREM (Q161ek log); Q96 lift remains OPEN.\n- [x] Q161el [compute] (Q161cl) native Q125 inversion and standard Q96 weak-spin lift on 480 squares — GPT 2026-11-23 THEOREM (internal); physical H64/Q96 embedding OPEN.
 - [ ] Q161du [compute] (Q161cl) compute ordered Q125 SU(2) four-link holonomies on all 480 squares, classify eigenphases and antipodal spinor signs; Q161da OPEN.
+
+### 2026-11-23 11:11 UTC — GPT — Q161el native inversion/Q96 weak-spin lift recovery
+- Task: Q161el [compute] exact native Q124/Q125 inversion and standard Q96 weak-spin lift.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da OPEN.
+- Statement: Exactly 444 accepted masks and 480 native squares; full 13-bit inversion freely pairs the squares into 240 pairs and preserves every ordered Q125 Gram matrix. The original Pauli link and standard 48-block Q96 weak-spin lift are inversion-even by algebraic substitution.
+- Evidence: standalone Python certificate executed locally exit 0 on 2026-11-23; registered as research.q161el_inversion_q96; CI after commit pending.
+- Scope: no native H64-to-Q96 physical embedding, no selected charged CP observable, no physical gate closure.
+- Next question: Can original Q125 source-current-weighted Q96 transport produce a gauge-invariant inversion-odd plaquette expectation without inserted sign selection?
 
 ### 2026-11-21 03:18 UTC — GPT — Gate Q161cl — Q161do native face-square Jacobian norm
 - Task: Q161da [compute] bounded original Q101 nonlinear source differential certificate.
