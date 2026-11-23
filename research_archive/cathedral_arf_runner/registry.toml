@@ -3166,3 +3166,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-23_native_hidden_stress_interface/NATIVE_HIDDEN_STRESS_INTERFACE_CERT.py"
 timeout = 30
+
+# Native weak fixed-Noether-charge background-selection obstruction
+[[check]]
+id = "research.native_weak_charge_background_obstruction"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-23_native_weak_charge_background/NATIVE_WEAK_CHARGE_BACKGROUND_CERT.py"
+timeout = 30

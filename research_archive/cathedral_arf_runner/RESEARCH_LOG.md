@@ -3,6 +3,15 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-23 — Gravity/fluids bot — native weak fixed-charge background-selection obstruction
+- Task: Continue beyond the zero-background stress obstruction by asking whether the unchanged five-Platonic 190/H64/24 U(1) Noether charge dynamically selects a nonzero weak-field stress/vortex background.
+- Result: EXACT/NUMERIC OBSTRUCTION within the quadratic fixed-charge selector; nonlinear coexact/singularity backgrounds remain OPEN.
+- Statement: The incidence-defined exact-edge space has dimension 45 = sum(V-1) and lies exactly in the 47-dimensional geometric Hessian kernel (operator residual 0). The golden clock selects charge-one mode m=9 with multiplier 0.0025584063752810988, but leaves at least all 45 internal gauge directions degenerate.
+- Comparison: geometric exact-edge E/Q=0.0012792031876405494 is below the cheapest history-only charge-two E/Q=0.002557181284463583. A normalized representative has Q=1, E=0.0012792031876408692 and relative-equilibrium residual 8.582012105104663e-15.
+- Physical readout: vertices/STF, face field, P3/P5 hidden source, coexact circulation, Hopf current and history forcing are all zero; maximum density rate is 8.920929710109287e-16. This is a pure phase/gauge orbit, not redshift, gravity or entropy production.
+- Evidence: `research_archive/2026-11-23_native_weak_charge_background/NATIVE_WEAK_CHARGE_BACKGROUND_CERT.py`; local exact/numeric preflight exit 0. Registered native CI check pending.
+- Next: quotient the 45 exact-edge directions by the native incidence projector, then compute the gauge-reduced all-five Hopf/circulation m=9 Hessian and test its lowest physical mode for hidden-source Jacobian, STF Ward/TT content, positivity and a causal spatial symbol.
+
 ### 2026-11-23 — Gravity/fluids bot — exact hidden-source to 13-cell stress obstruction
 - Task: Test the first typed interface requested after the K4 audit: whether the unchanged five-Platonic 190/H64/24 hidden source canonically drives the existing 13-cell scalar/vector/STF stress sector.
 - Result: EXACT OBSTRUCTION at the symmetric vacuum; nonlinear/strong-field response remains OPEN. The native hidden source is nonempty, spanning rank 4 in P3, rank 4 in P5, and rank 8 jointly across all 1,275 symmetric vertex monomials.
