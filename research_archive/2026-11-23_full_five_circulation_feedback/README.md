@@ -1,6 +1,6 @@
 # Full five-solid circulation-to-hidden feedback experiment — 23 November 2026
 
-**Status:** work-in-progress until native GitHub CI executes; source-level coupling is a CONSTRUCTIVE CONDITIONAL MODEL, not a uniquely selected URT fundamental action. User-directed full-Cathedral integration, separate from open Q161 charged-source tasks.
+**Status:** native full-model CI passed; source-level coupling is a CONSTRUCTIVE CONDITIONAL MODEL, not a uniquely selected URT fundamental action. User-directed full-Cathedral integration, separate from open Q161 charged-source tasks.
 
 ## Existing native inputs and what changed
 
@@ -13,6 +13,10 @@ acts on all five solids. The original action is *preserved*; no named matrix is 
 At each clock site and solid, the exact real-gradient increments are
 `Gv = z_v (|c|² W^T)` and `Ge = (n_face c)b2^T`.
 Therefore `b1 Ge^T = 0`, so the added current is divergence-free; the term is invariant under exact edge shifts and clock-local charge-one U(1). Conserved energy and Noether charge follow from the original canonical Hamiltonian symplectic evolution, assuming the added model action. The key new mechanism is coexact edge circulation → **all-five vertex amplitudes** → original nonlinear face source → hidden 4+4 / H64 dynamics, with feedback to vertices through original source. This links the formerly independent sectors **within this constructed action**.
+
+## Native CI verified outcome
+
+Native check `research.full_five_circulation_feedback` **PASS** in [orchestrator run 45182845680](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45182845680) research stage on commit 4790dda (23 Nov 2026). Starting with the ORIGINAL 190/64/24 model, 24-clock random deterministic seeded state, face-curl interaction energies by solid: tetra 0.11193523076154904; cube 0.23863675588939873; octa 0.3025829517583614; dodeca 0.5723785764854317; icosa 0.6482730050039903. Total new circulation energy 1.8738065198987313 vs original model energy 450.3315602310471. Vertex feedback gradient norm 0.7522633368222831; edge feedback gradient norm 0.817043109211078; after 5 declared midpoint steps of size 0.002, original H64 history state difference 1.327505530835441e-05 and original P3/P5 hidden-source difference 0.003857208677625837 relative to unchanged original dynamics. Instantaneous full Hamiltonian energy derivative 0; Noether charge derivative 2.19824e-14. Both are model-units, not measured data or physical proof. No fitted parameters. The coefficient 1 and nonrelativistic time law remain original/model choices.
 
 ## Pre-CI standalone verification
 
@@ -30,4 +34,4 @@ The coefficient one is a declaration. This adds face-curl / nonlinear circulatio
 
 ## RESUME HERE
 
-Check the new native CI verdict. On success: compare source-selected frustration and parity-odd channel with whole-five vortex feedback over longer bounded-time trajectories; measure actual circulation and hidden energy transfer and isolate no-tetra, no-cube, no-octa, no-dodeca, no-icosa ablations. Do not replace original source operators, and do not treat model selection as established physics.
+Native check passed at the named run. Next: compare source-selected frustration and parity-odd channel with whole-five vortex feedback over longer bounded-time trajectories; measure actual circulation and hidden energy transfer and isolate no-tetra, no-cube, no-octa, no-dodeca, no-icosa ablations. Do not replace original source operators, and do not treat model selection as established physics.

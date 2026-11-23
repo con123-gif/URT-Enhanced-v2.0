@@ -5,9 +5,9 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ### 2026-11-23 — GPT — USER-DIRECTED FIVE-SOLID CIRCULATION FEEDBACK
 - Task: Direct user instruction to integrate full all-five dynamics; do not replace Q161 active gate.
-- Result: WORK IN PROGRESS / CONDITIONAL CONSTRUCTION; local incidence/gradient check executed, original native CI not yet confirmed.
+- Result: THEOREM (for the declared additional quartic) / CLOSED INTERNALLY, PHYSICAL IDENTIFICATION PENDING; local incision/gradient test and original 190/64/24 native registered CI passed.
 - Statement: Exact positive face-curl × local vertex-density quartic on all five original cochain blocks gives a coexact, clock-gauge-covariant vertex–edge feedback. The existing full 190/64/24 Hamiltonian and hidden source are unchanged except for the added interaction; nonzero native H64 response is a CI test, not yet a claimed result.
-- Evidence: `research_archive/2026-11-23_full_five_circulation_feedback/FIVE_SOLID_FEEDBACK_CERT.py`; local actual Platonic incidence/gradient test successful; new CI research.full_five_circulation_feedback pending.
+- Evidence: `research_archive/2026-11-23_full_five_circulation_feedback/FIVE_SOLID_FEEDBACK_CERT.py`; exact original native operators verified on GitHub research stage [run 45182845680](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45182845680), PASS; added energy 1.8738065199, hidden source change 0.00385720868, H64 state change 1.32750553e-5, dE/dt=0, dQ/dt=2.2e-14.
 - Next step: Inspect native CI and repair any actual failure; then quantify all-five frustration/parity and fluid/charged extensions in same action.
 
 ## Queue
