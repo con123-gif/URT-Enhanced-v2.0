@@ -3097,3 +3097,11 @@ claim = "conditional"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/jc_test.py"
 timeout = 120
+
+[[check]]
+id = "research.q161eg_native_plaquette_volume"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-23_q161eg_native_plaquette_volume/Q161EG_NATIVE_PLAQUETTE_VOLUME.py"
+timeout = 120

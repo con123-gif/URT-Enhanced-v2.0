@@ -4,6 +4,7 @@ The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.m
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 ## Queue
+- [x] Q161eg [compute] (Q161cl) exact original Q124/Q125 four-history signed volume minors — GPT 2026-11-23 THEOREM (internal); Q161du OPEN.
 
 - [x] Q161ds [compute] (Q161cl) native Q124 contact plaquette orbit classes — GPT 2026-11-22 THEOREM (internal): 120 antipodal + 360 other nonadjacent squares; Q161da OPEN.
 - [x] Q161dt [compute] (Q161cl) exact native Berry orientation determinant split — GPT 2026-11-22 THEOREM: 120 zero antipodal, 360 nonzero nonantipodal; holonomy remains OPEN.
@@ -797,6 +798,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-23 02:16 UTC — GPT — Gate Q161cl — Q161eg exact native plaquette 3-volume
+- Task: Q161du [compute] bounded original Q124/Q125 four-history rank and signed volume precursor to full ordered SU(2) holonomy.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161du and Q161da remain OPEN.
+- Statement: All four ordered 3x3 history-vector minors coincide on each native square; among 480 squares their values are 0 (120), +16(phi-1) (120), -16(phi-1) (120), +32 (60), -32 (60). Thus 120 rank-2 and 360 rank-3 squares.
+- Evidence: research.q161eg_native_plaquette_volume; standalone exact Z[phi] Python executed locally exit 0, 2026-11-23; prior CI #327 PASS; new CI pending.
+- Dead ends: This oriented volume invariant is not the ordered Q125 SU(2) Wilson holonomy and does not establish Q96 charge selection.
+- Next step: Q161du [compute] calculate native four-link SU(2) holonomies with original Q125 current and Q96 charged transport, not additional uncharged moments.
+
 
 
 ### 2026-11-22 13:09 UTC — GPT interactive — original native bond quantum channel and source energy exchange
