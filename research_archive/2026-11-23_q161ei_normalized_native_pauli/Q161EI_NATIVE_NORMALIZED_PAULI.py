@@ -2,6 +2,7 @@
 """Q161eg: exact native Q124/Q125 four-history volume minors in Z[phi]."""
 from itertools import combinations, product
 from collections import Counter
+Z=(0,0)  # exact zero in Z[phi]; required by antipodal native-vertex test
 def add(x,y): return (x[0]+y[0],x[1]+y[1])
 def neg(x): return (-x[0],-x[1])
 def mul(x,y): return (x[0]*y[0]+x[1]*y[1],x[0]*y[1]+x[1]*y[0]+x[1]*y[1])
