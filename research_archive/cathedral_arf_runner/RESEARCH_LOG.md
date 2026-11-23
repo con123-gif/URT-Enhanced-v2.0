@@ -3,6 +3,15 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-23 — Gravity/fluids bot — exact hidden-source to 13-cell stress obstruction
+- Task: Test the first typed interface requested after the K4 audit: whether the unchanged five-Platonic 190/H64/24 hidden source canonically drives the existing 13-cell scalar/vector/STF stress sector.
+- Result: EXACT OBSTRUCTION at the symmetric vacuum; nonlinear/strong-field response remains OPEN. The native hidden source is nonempty, spanning rank 4 in P3, rank 4 in P5, and rank 8 jointly across all 1,275 symmetric vertex monomials.
+- Statement: Exact rational reconstruction gives C^T P3 = C^T P5 = 0. The direct 12-vertex readout C^T(h3 + Delta h5) has rank 0 and operator norm 1.5416386909428235e-14; scalar-1, vector-3, STF-5, and residual-3 projections all have rank 0.
+- Energy: the positive native source occupation begins at fourth order in vertex amplitude. A deterministic native basis direction has coefficient 0.010773558566759347 and exact t^4 scaling at t = 0.5, 1, 2, so the hidden source contributes zero quadratic weak-field Hessian at z=0.
+- Evidence: `research_archive/2026-11-23_native_hidden_stress_interface/NATIVE_HIDDEN_STRESS_INTERFACE_CERT.py`; standalone exact/numeric preflight exit 0. Registered native CI check pending.
+- Scope: no scalar-to-metric identification, fitted portal, fake matrix, redshift, Lorentzian cone, horizon or thermodynamic claim; not a no-go for a dynamically selected nonzero native background.
+- Next: freeze a nonzero background selected only by existing native stationary or circulation/Hopf dynamics, differentiate the full reduced energy there, and test the induced 13-cell STF Hessian for Ward nullspace, two TT massless modes, positivity and a causal spatial symbol.
+
 ### 2026-11-23 — Gravity/fluids bot — native K4 causal spin-2 and horizon obstruction
 - Task: Audit the current `newtons_cathedral/gravity.py` weak/singularity-gravity, Lorentzian and horizon claims using its original K4 operator, without a scalar-to-metric identification.
 - Result: OBSTRUCTION within the declared operator; physical gravity remains OPEN. The result does not alter the all-five 190/H64/24 Hopf/circulation Hamiltonian.

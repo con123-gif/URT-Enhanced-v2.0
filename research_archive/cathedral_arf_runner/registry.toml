@@ -3157,3 +3157,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-23_native_gravity_spin2_horizon/NATIVE_GRAVITY_SPIN2_HORIZON_CERT.py"
 timeout = 30
+
+# Exact native hidden-source to 13-cell stress-interface obstruction
+[[check]]
+id = "research.native_hidden_source_13cell_stress_obstruction"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-23_native_hidden_stress_interface/NATIVE_HIDDEN_STRESS_INTERFACE_CERT.py"
+timeout = 30
