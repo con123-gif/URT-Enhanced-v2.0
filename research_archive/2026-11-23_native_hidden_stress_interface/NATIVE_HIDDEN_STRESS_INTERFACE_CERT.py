@@ -11,6 +11,7 @@ cells (with the clock scalar giving the thirteenth cell).
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 import runpy
 import sys
@@ -52,7 +53,7 @@ def orthogonal_projector(columns: np.ndarray) -> np.ndarray:
 
 
 def main() -> None:
-    native = runpy.run_path(str(ARCHIVE))
+    # The archived native constructor opens auxiliary paths relative to the\n    # repository root. CI executes research checks from their script folder.\n    # Preserve the archive unchanged and restore cwd after construction.\n    old_cwd = Path.cwd()\n    try:\n        os.chdir(ROOT)\n        native = runpy.run_path(str(ARCHIVE))\n    finally:\n        os.chdir(old_cwd)
     engine = NativeURTEngine(native)
 
     # Reconstruct the hidden projectors exactly from the native integer
