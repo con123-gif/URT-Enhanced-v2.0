@@ -9,7 +9,7 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - [x] Q161ds [compute] (Q161cl) native Q124 contact plaquette orbit classes — GPT 2026-11-22 THEOREM (internal): 120 antipodal + 360 other nonadjacent squares; Q161da OPEN.
 - [x] Q161dt [compute] (Q161cl) exact native Berry orientation determinant split — GPT 2026-11-22 THEOREM: 120 zero antipodal, 360 nonzero nonantipodal; holonomy remains OPEN.
 - [x] Q161ei [compute] (Q161cl) normalized native Q124 Pauli four-history product — GPT 2026-11-23 THEOREM (internal); Q161du OPEN.
-- [ ] Q161ej [compute] (Q161cl) compare original Q125 ordered four-link U_xy SU(2) holonomy with Q161ei native Pauli product and Q96 charged lift; Q161da OPEN.
+- [x] Q161ej [compute] (Q161cl) native Q125 SU(2) Berry holonomy trace-square vs Q161ei Pauli product — GPT 2026-11-23 THEOREM (Q161ek log); Q96 lift remains OPEN.\n- [ ] Q161el [compute] (Q161cl) calculate original Q96 charge-block lift and inversion parity of all 360 non-antipodal Q125 four-link holonomies; Q161da OPEN.
 - [ ] Q161du [compute] (Q161cl) compute ordered Q125 SU(2) four-link holonomies on all 480 squares, classify eigenphases and antipodal spinor signs; Q161da OPEN.
 
 ### 2026-11-21 03:18 UTC — GPT — Gate Q161cl — Q161do native face-square Jacobian norm
@@ -800,6 +800,15 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+### 2026-11-23 07:19 UTC — GPT — Gate Q161cl — Q161ek native Q125 SU2 Berry holonomy
+- Task: Q161ej [compute], exact native Q125 four-link holonomy trace-square across all 480 squares.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da and Q161du OPEN.
+- Statement: 444 original contact states yield 480 squares, five exact Gram classes 120,120,120,60,60 and three dihedral holonomy cos²θ classes of multiplicity 120,240,120; 120 have cos²θ=1 and 360 have cos²θ≠1. The two nontrivial cos²θ values are exact algebraic functions of the original golden Gram entries (certificate).
+- Evidence: research.q161ek_native_holonomy; local standalone Python/SymPy exit 0 on 2026-11-23; preceding CI #331 success; new CI pending.
+- Dead ends: Q161ei Pauli four-point products are not Q125 link-normalized Berry holonomies; the geometric SU2 trace does not yet select Q96 charge orientation or physical CP.
+- Next step: Q161el [compute] construct original Q96 charge-block lift of the four Q125 links on all 360 non-antipodal squares and determine exact inversion parity of the charged holonomy.
+
+
 ### 2026-11-23 04:18 UTC — GPT — Gate Q161cl — Q161ei normalized native four-history SU(2) product
 - Task: Q161du bounded native Q124 Pauli normalization necessary substep; original Q125 edge holonomy still OPEN.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
