@@ -3,6 +3,13 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-23 — GPT — USER-DIRECTED FIVE-SOLID CIRCULATION FEEDBACK
+- Task: Direct user instruction to integrate full all-five dynamics; do not replace Q161 active gate.
+- Result: WORK IN PROGRESS / CONDITIONAL CONSTRUCTION; local incidence/gradient check executed, original native CI not yet confirmed.
+- Statement: Exact positive face-curl × local vertex-density quartic on all five original cochain blocks gives a coexact, clock-gauge-covariant vertex–edge feedback. The existing full 190/64/24 Hamiltonian and hidden source are unchanged except for the added interaction; nonzero native H64 response is a CI test, not yet a claimed result.
+- Evidence: `research_archive/2026-11-23_full_five_circulation_feedback/FIVE_SOLID_FEEDBACK_CERT.py`; local actual Platonic incidence/gradient test successful; new CI research.full_five_circulation_feedback pending.
+- Next step: Inspect native CI and repair any actual failure; then quantify all-five frustration/parity and fluid/charged extensions in same action.
+
 ## Queue
 - [ ] Q161eo [compute] (Q161cl) test original H64/24/Q96 source-current-weighted gauge-invariant inversion-odd charged plaquette observable; Q161da OPEN.
 - [x] Q161eg [compute] (Q161cl) exact original Q124/Q125 four-history signed volume minors — GPT 2026-11-23 THEOREM (internal); Q161du OPEN.

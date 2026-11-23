@@ -14,7 +14,17 @@
 # gating = true: a failure turns the run red (and GitHub emails you).
 # gating = false: reported in the summary only.
 #
-# A passing check NEVER closes a physical gate. See [[gate]] at the bottom.
+# A passing check NEVER closes a physical gate. See 
+# User-directed all-five circulation/H64 feedback, 2026-11-23
+[[check]]
+id = "research.full_five_circulation_feedback"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-23_full_five_circulation_feedback/FIVE_SOLID_FEEDBACK_CERT.py"
+timeout = 240
+
+[[gate]] at the bottom.
 
 [run]
 python = "3.11"
