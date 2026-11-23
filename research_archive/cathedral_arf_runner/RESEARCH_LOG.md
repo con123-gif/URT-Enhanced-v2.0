@@ -8,6 +8,8 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
 - [x] Q161ds [compute] (Q161cl) native Q124 contact plaquette orbit classes — GPT 2026-11-22 THEOREM (internal): 120 antipodal + 360 other nonadjacent squares; Q161da OPEN.
 - [x] Q161dt [compute] (Q161cl) exact native Berry orientation determinant split — GPT 2026-11-22 THEOREM: 120 zero antipodal, 360 nonzero nonantipodal; holonomy remains OPEN.
+- [x] Q161ei [compute] (Q161cl) normalized native Q124 Pauli four-history product — GPT 2026-11-23 THEOREM (internal); Q161du OPEN.
+- [ ] Q161ej [compute] (Q161cl) compare original Q125 ordered four-link U_xy SU(2) holonomy with Q161ei native Pauli product and Q96 charged lift; Q161da OPEN.
 - [ ] Q161du [compute] (Q161cl) compute ordered Q125 SU(2) four-link holonomies on all 480 squares, classify eigenphases and antipodal spinor signs; Q161da OPEN.
 
 ### 2026-11-21 03:18 UTC — GPT — Gate Q161cl — Q161do native face-square Jacobian norm
@@ -798,6 +800,14 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+### 2026-11-23 04:18 UTC — GPT — Gate Q161cl — Q161ei normalized native four-history SU(2) product
+- Task: Q161du bounded native Q124 Pauli normalization necessary substep; original Q125 edge holonomy still OPEN.
+- Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: Across 480 native squares, normalized ordered four-history Pauli SU(2) half-traces have (h²,sign h) classes (1,+)×120, ((16047−3789phi)/18605,+)×120, (5/6−phi/4,−)×240; all 120 antipodal products equal +I.
+- Evidence: research.q161ei_normalized_native_pauli; standalone exact Python executed locally exit 0 on 2026-11-23; previous CI #329 PASS, new CI pending.
+- Dead ends: Pauli product is NOT proven equal to original four-link Q125 Berry transport or Q96 charged holonomy.
+- Next step: Q161ej [compute] compare original Q125 U_xy four-link products across 480 native squares with Q161ei and test Q96 spinor signs.
+
 
 ### 2026-11-23 02:16 UTC — GPT — Gate Q161cl — Q161eg exact native plaquette 3-volume
 - Task: Q161du [compute] bounded original Q124/Q125 four-history rank and signed volume precursor to full ordered SU(2) holonomy.

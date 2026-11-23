@@ -3105,3 +3105,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-23_q161eg_native_plaquette_volume/Q161EG_NATIVE_PLAQUETTE_VOLUME.py"
 timeout = 120
+
+
+[[check]]
+id = "research.q161ei_normalized_native_pauli"
+stage = "research"
+claim = "native"
+gating = true
+run = "python research_archive/2026-11-23_q161ei_normalized_native_pauli/Q161EI_NATIVE_NORMALIZED_PAULI.py"
+timeout = 120
