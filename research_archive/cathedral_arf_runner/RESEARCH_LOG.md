@@ -3,6 +3,15 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-23 — Gravity/fluids bot — gauge-reduced Hopf/circulation face-harmonic obstruction
+- Task: Quotient the 45 exact-edge directions and test the unchanged all-five 190/H64/24 projective Hopf plus circulation operator for a physical weak-gravity background.
+- Result: EXACT/NUMERIC OBSTRUCTION within the vacuum quadratic selector; nonlinear fixed-flux response remains OPEN.
+- Statement: The canonical incidence quotient reduces 190 to 145 dimensions. The joined operator is Hermitian and positive semidefinite, with gauge-annihilation residual 2.63e-15, no negative modes, one reduced zero mode, and first positive gap 0.33098582379443636.
+- Zero mode: unit support lies entirely in faces; every Platonic face block is constant with equal norm 1/sqrt(5). At unit native Noether charge the golden clock selects m=9 and E=0.0012792031876408911, while the relative-equilibrium residual is 1.08e-14.
+- Physical readout: hidden P3/P5 source, Hopf current curl, circulation energy and H64 forcing are zero to tolerance. The first stress-bearing vertex excitation is gapped; its face-field/P3/P5 norms are 0.8435435562/0.03554723246/0.09065387801 and its icosahedral STF fraction is 0.6096368338. This is not a massless spin-2, redshift or horizon result.
+- Evidence: `research_archive/2026-11-23_gauge_reduced_hopf_circulation_gravity/GAUGE_REDUCED_HOPF_CIRCULATION_GRAVITY_CERT.py`; standalone native-operator preflight exit 0.
+- Next: compute the face-harmonic Poisson derivative and its nonlinear coupling to the first gapped vertex/STF mode; if it is a conserved flux/Casimir, test fixed-flux sectors rather than deleting it.
+
 ### 2026-11-23 — Gravity/fluids bot — native weak fixed-charge background-selection obstruction
 - Task: Continue beyond the zero-background stress obstruction by asking whether the unchanged five-Platonic 190/H64/24 U(1) Noether charge dynamically selects a nonzero weak-field stress/vortex background.
 - Result: EXACT/NUMERIC OBSTRUCTION within the quadratic fixed-charge selector; nonlinear coexact/singularity backgrounds remain OPEN.

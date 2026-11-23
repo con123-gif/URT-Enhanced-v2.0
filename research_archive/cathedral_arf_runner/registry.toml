@@ -3175,3 +3175,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-23_native_weak_charge_background/NATIVE_WEAK_CHARGE_BACKGROUND_CERT.py"
 timeout = 30
+
+# Gauge-reduced all-five Hopf/circulation face-harmonic obstruction
+[[check]]
+id = "research.gauge_reduced_hopf_circulation_face_harmonic"
+stage = "research"
+claim = "native"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-23_gauge_reduced_hopf_circulation_gravity/GAUGE_REDUCED_HOPF_CIRCULATION_GRAVITY_CERT.py"
+timeout = 30
