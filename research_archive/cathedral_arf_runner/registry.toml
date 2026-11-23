@@ -3139,3 +3139,12 @@ claim = "native"
 gating = true
 run = "python research_archive/2026-11-23_q161el_inversion_q96/Q161EL_INVERSION_Q96.py"
 timeout = 120
+
+# Original five-solid projective URT Hopf magnetic replacement in full H64
+[[check]]
+id = "research.full_five_projective_hopf_join"
+stage = "research"
+claim = "conditional"
+gating = true
+run = "python research_archive/2026-11-23_hopf_urt_native_join/HOPF_NATIVE_JOIN_CERT.py"
+timeout = 150

@@ -10,6 +10,13 @@ is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 - Evidence: `research_archive/2026-11-23_full_five_circulation_feedback/FIVE_SOLID_FEEDBACK_CERT.py`; exact original native operators verified on GitHub research stage [run 45182845680](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45182845680), PASS; added energy 1.8738065199, hidden source change 0.00385720868, H64 state change 1.32750553e-5, dE/dt=0, dQ/dt=2.2e-14.
 - Next step: Inspect native CI and repair any actual failure; then quantify all-five frustration/parity and fluid/charged extensions in same action.
 
+### 2026-11-23 — GPT — User full-Cathedral projective URT/Hopf join
+- Task: Join Q161cu original five-solid Hopf/Berry projective q background with the ALREADY joined original 190/64/24 circulation-H64 action.
+- Result: CONDITIONAL SOURCE-NATIVE CONSTRUCTION, CI pending. Uses projective q and full original geometries to replace (not double) free vertex gradient by magnetic Hopf gradient.
+- Statement: For all five original solids, defined nonzero magnetic edge currents and face flux total 2π; coupled source/H64 changes and conservation assertions are registered in original-operator cert, not asserted until executed.
+- Evidence: research_archive/2026-11-23_hopf_urt_native_join/HOPF_NATIVE_JOIN_CERT.py, check research.full_five_projective_hopf_join awaiting CI.
+- Next: Resolve CI test; then native Q96/v61 and actual 3D fluid/metric interfaces without fabricated parameters.
+
 ## Queue
 - [ ] Q161eo [compute] (Q161cl) test original H64/24/Q96 source-current-weighted gauge-invariant inversion-odd charged plaquette observable; Q161da OPEN.
 - [x] Q161eg [compute] (Q161cl) exact original Q124/Q125 four-history signed volume minors — GPT 2026-11-23 THEOREM (internal); Q161du OPEN.
