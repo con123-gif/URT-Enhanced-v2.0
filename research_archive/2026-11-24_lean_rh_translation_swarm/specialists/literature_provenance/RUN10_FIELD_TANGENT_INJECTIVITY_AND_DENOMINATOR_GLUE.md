@@ -1,0 +1,85 @@
+# RUN10 — Field tangent injectivity and denominator-clearing gluing
+2026-11-24. SOURCE-MATCHED / PARTIAL. Pin leanprover-community/riemann-hypothesis 40e56bab026552e089d7afcfeff08d2defb9c005; latest returned upstream commit 1da818b50f1e18808db2792b9dc735bda8cb84d8 (unchanged from RUN9). Read AGENTS, state/continuity, research log/protocol, CI summary (16:27 UTC, unrelated physics PASS), SWARM_PROTOCOL, HANDOFF_QUEUE, EXPANSION_15_LANES, RUN9 and all fourteen peer lane latest handoffs (including kernel RUN10 cache discrepancy; no claim of independent kernel check). Peer lanes' tasks do not duplicate this field tangent and chart gluing argument. Blueprint not reread this run; source bodies are the evidence. No physics changes.
+
+## 1. Field-level tangent injectivity, not an assumed perfect pairing
+All D paths below relative to src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/. Source D/CmpFormEqZeroOfTangent.lean L84–134, GlobalTheory.LieInjField.eq_of_tanVal_eq. Hypotheses: CrystallineSmoothLift HC, AbelianHodgeDeRham HH, field K, B over Spec K with group object, abelian scheme and smooth relative dimension g, two dual-number points v,w reducing to the identity, equality of their evaluations on EVERY crystalline form f. Conclusion v=w.
+
+Write L=Lie(B), F=Form(B), C=ClosedForm(B), c:F→C the comparison, P:L→F* evaluation. L has a basis of cardinal g (the explicit internal LieField.exists_isLieBasis_field; further producer KeyPow.exists_isLieBasis). HH implies all global forms closed, and global forms finite projective with stalk rank g; at the closed point of the field this gives dim C=g. Thus dim L*=dim C=g. c is surjective by L26–45: lift the de Rham class of a closed form through the crystalline comparison; injectivity of the structure-sheaf comparison places its lift in F1; exact filtration range expresses this lift as a crystalline form; injectivity of the closed-form class map identifies its comparison with the prescribed form. This repeats the algebra of RUN9, not a new independent result.
+
+The evaluation P is linear by tangent addition and epsilon scaling (L75–79). Since ker c is contained in ker P.flip (the already recorded vanishing of evaluation on forms with zero comparison), the quotient universal property defines
+    T:C→L*,   T(c(f))(u)=P(u)(f).
+c is surjective, so this defines all T, not merely its restriction to a subspace. If T(ω)=0, choose f with c(f)=ω. Then evaluation of f on every identity tangent is zero. The geometric theorem cmpForm_eq_zero_of_tangent (L47–73; detailed below) gives c(f)=0. Thus T injective. Equal finite dimensions over K imply surjectivity. In particular every functional on L occurs as T(c(f)). The hypothesis on v,w says every such functional annihilates v−w; duals separate vectors in a finite-dimensional vector space, hence v=w. This proves the field-level injectivity used at D/ExistsTangentVectorFunctionalGlobalFormsAbelianS.lean L205, without invoking the global arbitrary-ring tangent realization from RUN9. No circularity inferred at this source level; kernel direct-edge evidence still needed. Do not replace the equal-dimension step with an arbitrary-ring argument.
+
+## 2. Actual geometric ingredient: identity tangents detect comparison via all field extensions
+D/CmpFormEqZeroOfTangent L47–73: let f evaluate to zero on every identity tangent. Choose a Lie basis y over K. For EVERY field extension ring hom σ:K→L, take the group pullback B_L with its abelian-scheme and smooth-relative-dimension properties and compatible divided-power IsMor m. For any dual-number point u over L (not necessarily an identity tangent), set a=epsScale(0)∘u, and b=a⁻¹u. Reduction of b is identity, since a reduces to the same point as u. Then u=ab; evaluation of a is zero by epsScale linearity, evaluation of b zero by base-changed Lie basis, and evaluation of u zero by the all-point additivity lemma. Thus the comparison is zero by the field-extension vanishing criterion. The quantification over ALL L and ALL dual-number points is essential to this proof route; do not silently substitute K-rational points.
+
+Four exact wrapper→body chains, none an axiom declaration:
+- ExistsLieBasisSmoothCommGroupSchemeFieldStatement L17–18 → LieField.exists_isLieBasis_field (same name without Statement L22–24) → KeyPow.exists_isLieBasis. Last body still open.
+- CrystallineFormTangentValueMulAbelianSchemeStatement L17–18 → TanAdd.tanVal_mul_all (same name without Statement L20–65). This is the stronger all-point additivity, not merely tangent multiplication. Smooth relative dimension doubles on A×A. HC/HH yield AllPrim through AbelianPrim.abelianDeRham_free and T.abelianDeRhamFree_of_crystalline_comparison. For multiplication μ and projections π_i, the class of μ*f−π₁*f−π₂*f vanishes by primitivity. The closed-form class map on A×A is injective by HH, so its comparison vanishes; evaluation of the difference on the paired dual-number point (a,b) vanishes by the internal form-value theorem (which allows arbitrary points). Naturality with μ and π_i gives additivity. Preserve product abelian-scheme and smoothness proof, compatible IsMor maps, comparison and class-map identities, and vanishing theorem. This is not additivity of every differential on an arbitrary group.
+- PullbackFormVanishesTangentsOfLieBasisStatement L17–18 → LieDual.tanVal_pullForm_eq_zero_of_lieBasis (same name without Statement L86–96). Base-changed basis y'_i exists via exists_isLieBasis_baseChange, with matching point maps. Natural evaluation (L30–70) follows from compatible dual-number thickenings and Form.ev_sq; its second coordinate is σ of the original value. All y'_i evaluate to zero. Every identity tangent is the product of scaled basis elements by IsLieBasis; epsScale multiplies evaluations by coefficients, and tangent multiplication adds them. Empty product evaluates to zero (L72–84). Preserve smoothness, commutative group structure, pullback and IsMor, even though the final formula looks like linear algebra.
+- CmpFormEqZeroOfPullbackVanishingStatement L17–18 → PtVanish.cmpForm_eq_zero_of_tanVal (same name without Statement L181–184). Its actual affine supplier connForm_eq_zero L145–179 works on each affine open U with coordinate K-algebra A smooth, hence reduced, and Ω=A-relative-to-K differentials. For every prime p of A and A-linear functional l:Ω→κ(p), construct the ring map A→κ(p)[ε]/ε² given by x↦x mod p + ε l(dx) using nbdMap∘diagSec (L31–46, L159–162). The pullback universal property lifts the corresponding point to X_{κ(p)}. The assumed all-point vanishing plus tanVal_pull_eq and snd_val_affine_eq gives l(connForm)=0. The internal residual-functional separation theorem now gives connForm=0; cmpForm is zero by equality on all affine opens. Preserve smoothness/reducedness, projectivity/finite generation required by the residual-functional separation supplier (not yet expanded), field-extension quantifiers, affine locality and compatibility of crystalline evaluation. No claim that an arbitrary module over a nonreduced ring has residue-field separation.
+
+## 3. Denominator clearing is a finite-cover gluing theorem, not unscaled lifting
+D/IsTangentIffTanS L145–158 GlobalTheory.LieAway.tan_away_lift: R commutative, group scheme G over Spec R, every G_s smooth, chosen r with a chart of G_r, dual-number point y over R[1/r] mapping to G and reducing to identity (TanS). There exist N∈ℕ and global identity tangent w such that res_r(w)=r^N y (scalar multiplication here is epsilon scaling, not arbitrary group exponentiation). The proof first obtains finite chart cover s, prepends r (Fin.cons), proves the new ideal span is still the unit ideal, takes the r-chart at index zero and other original charts at successor indices, then calls Chart.tan_extend.
+
+Actual supplier: src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/PairCompat.lean L57–100, namespace ReciprocityTheory.ChartRestriction.G.Chart. Import route from IsTangentIffTanS: PushRProdPtsResP → IsGrpPullbackFactor → ExistsAwayNotMem → PairCompat. Write t=s_{k0}, R_i=R[1/s_i], and R_ij=R_i[1/s_j], with the canonical maps qL,qR. Finite index set, span(s_i)=R, chart on each G_i, smoothness of all G_s, given identity tangent y0 over R_{k0}.
+1. By local chart tanS_away_lift for every i find N_i and tangent z_i on R_i agreeing with t^{N_i}y0 on R_{i,k0}. Let N1=max_i N_i. Replace each z_i by t^{N1−N_i}z_i. Compatibility with y0 now uses the same exponent N1.
+2. For each pair (i,j) both rescaled tangents agree after localizing R_ij further at t (pair_compat L28–54). This uses the universal maps between iterated localizations; equality of the two maps from R[1/t] is by away_ext, not an identification of potentially unequal rings. Local chart tanS_away_uniq then gives M_ij so their difference is killed by t^{M_ij}. On the distinguished chart separately find M0 comparing z'_{k0} with t^{N1} y0; qL=qR there by localization universal property.
+3. Take M2=max(M0,max_{i,j}M_ij). Scale every z'_i by t^{M2}. All pair overlaps now agree (scale_pow_mono); identities are preserved by scaling. Apply glue_tan' for the unit-ideal cover to obtain a global tangent v. Its restriction at k0 is t^{M2+N1}y0. This establishes the stated exponent and does NOT require t a nonzerodivisor. The local affine chart lift/uniqueness and global gluing theorem are explicitly pending child proofs. Pair handling uses n² ordered overlaps in the original proof; no claim of linear-time improvement.
+
+Application D/ExistsTangentVectorFunctionalGlobalFormsAbelianS L223–261: choose r outside ker σ for σ:R→K field, using local smooth chart/Lie basis. Then σ(r)^N≠0, even if r is a zerodivisor in R. The lift of σ to R[1/r] transports the equality of points, and scalar naturality transports t^N. The resulting scaled residue basis spans because these factors are invertible IN K, not in R. Thus RUN9's residue realization is justified at this additional layer. Do not confuse existence of a scaled lift over R with existence of the original unscaled lift.
+
+## 4. Audit ledger and executable checks
+Source-level classification: four explicit theorem wrappers above; native internal bodies (field injectivity, field-vanishing, all-point additivity, basis transport, chart gluing); proposition-valued inputs HC/HH (not global axiom claims); standard imported linear algebra / localization / sheaf facts remain dependencies. No new premises added to the Lean statements. No historical attribution check claimed, no kernel execution, no URT performance benchmark. Request authenticated direct-role edges for GlobalTheory.LieInjField.eq_of_tanVal_eq, GlobalTheory.PtVanish.cmpForm_eq_zero_of_tanVal, GlobalTheory.LieAway.tan_away_lift and ReciprocityTheory.ChartRestriction.G.Chart.tan_extend. Source-level reachability only; root reachability unknown for these nodes.
+
+Executed connector JS: all 12 pinned blob SHAs matched; 71 initial exact line checks matched, eight wrapper anchors initially off by one (expected 18/19 rather than actual 17/18), all eight corrected and rerun successfully. Total 79 correct anchors; the initial indexing failure is recorded rather than represented as a proof failure. Upstream comparison: original field injectivity L84–134 moved into ExistsTangentVectorFunctionalGlobalFormsAbelianS L446–496 (51/51 exact lines, old file 404). Original caller L188–206 matches new L639–657 (19/19); IsTangentIffTanS L145–158 matches new L190–203 (14/14); PairCompat L57–100 matches new L96–139 (44/44). Total 128/128 selected lines. Not full revision equivalence.
+
+Reproduce hash and representative anchor checks from upstream git checkout:
+```python
+import subprocess
+pin="40e56bab026552e089d7afcfeff08d2defb9c005"
+head="1da818b50f1e18808db2792b9dc735bda8cb84d8"
+D="src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/"
+B="src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/ToroidalCompactification/"
+rows=[
+(D+"CmpFormEqZeroOfTangent","b2e4688e18af43d34a23874d245ee7c66b0e8230",[(47,"cmpForm_eq_zero_of_tangent"),(84,"eq_of_tanVal_eq"),(109,"liftQ"),(120,"cmpForm_eq_zero_of_tangent"),(133,"forall_dual_apply_eq_zero_iff")]),
+(D+"IsTangentIffTanS","9781cf9a02bf3a96e72ecba8ca1728d8002d55f0",[(145,"tan_away_lift"),(151,"Fin.cons"),(158,"Chart.tan_extend")]),
+(B+"PairCompat","7577e2f7d56194cfe043c0fa3a6d4c06752b129d",[(28,"pair_compat"),(57,"tan_extend"),(68,"Finset.univ.sup N"),(79,"pair_compat"),(88,"max M₀"),(98,"glue_tan'"),(99,"M₂ + N₁")]),
+(D+"ExistsTangentVectorFunctionalGlobalFormsAbelianS","8b520290720c379350a27efc6171eb0cab0a658f",[(205,"LieInjField.eq_of_tanVal_eq"),(243,"LieAway.tan_away_lift"),(245,"pow_ne_zero")]),
+(D+"CmpFormEqZeroOfPullbackVanishing","9d644eaffc0f556171b7b9563a46fa0def3ad54b",[(31,"nbdMap"),(145,"connForm_eq_zero"),(156,"eq_zero_of_forall_residueField_functional"),(181,"cmpForm_eq_zero_of_tanVal")]),
+(D+"PullbackFormVanishesTangentsOfLieBasis","59738e2303f645025adbe294350c236324b01a53",[(86,"tanVal_pullForm_eq_zero_of_lieBasis"),(88,"exists_isLieBasis_baseChange")]),
+(D+"CrystallineFormTangentValueMulAbelianScheme","b19f2def6b4da7117ca25f1f790616b02b3b537e",[(20,"tanVal_mul_all"),(30,"AllPrim"),(55,"formValueOnTangentVector")]),
+(D+"ExistsLieBasisSmoothCommGroupSchemeField","31c736e3bf4e98027cf5048e4e7cd66aec735f06",[(24,"KeyPow.exists_isLieBasis")]),
+(D+"ExistsLieBasisSmoothCommGroupSchemeFieldStatement","f849f5d05779d0f2404172d9a26a51c0e193dbe5",[(17,"GlobalTheory.T.exists_lieBasis"),(18,"LieField.exists_isLieBasis_field")]),
+(D+"CrystallineFormTangentValueMulAbelianSchemeStatement","5abdb28f96fc0adf9731f4641d56176f3bcb1d1e",[(17,"GlobalTheory.T.crystallineForm"),(18,"TanAdd.tanVal_mul_all")]),
+(D+"PullbackFormVanishesTangentsOfLieBasisStatement","64305bf2a9120b540eb5a59ec75b3b604d7d7336",[(17,"GlobalTheory.T.pullbackForm"),(18,"LieDual.tanVal_pullForm_eq_zero_of_lieBasis")]),
+(D+"CmpFormEqZeroOfPullbackVanishingStatement","512eee18536b2bf42d3f22350e38dcde75a2fd7a",[(17,"GlobalTheory.T.cmpForm"),(18,"PtVanish.cmpForm_eq_zero_of_tanVal")])]
+def git(*a):return subprocess.check_output(["git",*a]).decode()
+def read(ref,p,h):
+ spec=ref+":"+p+".lean"
+ assert git("rev-parse",spec).strip()==h
+ return git("show",spec).splitlines()
+old=[]
+for p,h,anchors in rows:
+ ls=read(pin,p,h);old.append(ls)
+ for i,s in anchors:assert s in ls[i-1],(p,i)
+new=read(head,rows[3][0],"0610edb6e4bb7564e19ef9d9da168bc35b880f00")
+assert old[0][83:134]==new[445:496]
+assert old[3][187:206]==new[638:657]
+assert old[1][144:158]==read(head,rows[1][0],"4c2da535ddbb7afcbb7fe2035d57bf2a5678ff03")[189:203]
+assert old[2][56:100]==read(head,rows[2][0],"cacd2db1ace6c7ea1614561eba692b4761f071ac")[95:139]
+print("source hash/anchor subset and 128 aligned lines checked")
+```
+Python replay not run here; equivalent anchor/hash and alignment checks executed in connector JS. Finite algebra regression JS actually executed: 722 square bilinear-form matrices over F2,F3,F5, 12456 point-separation assertions, 42924 localization annihilation assertions over Z/m (2≤m≤50), total 56102. Two illustrative negative controls checked (t-torsion and rectangular pairing; not geometric counterexamples). Reproducible:
+```js
+const assert=(x)=>{if(!x)throw Error("regression")};let mat=0,sep=0,loc=0,neg=0;
+const gcd=(a,b)=>b?gcd(b,a%b):a, mod=(x,n)=>((x%n)+n)%n;
+for(const p of [2,3,5]){const v=Array.from({length:p*p},(_,i)=>[i%p,Math.floor(i/p)]);const ev=(a,b,c,d,x,y)=>mod(y[0]*(a*x[0]+b*x[1])+y[1]*(c*x[0]+d*x[1]),p);for(const [a,b] of v)for(const [c,d] of v){const l=v.filter(x=>v.every(y=>ev(a,b,c,d,x,y)===0));const rr=v.filter(y=>v.every(x=>ev(a,b,c,d,x,y)===0));const det=mod(a*d-b*c,p);assert((l.length===1)===(det!==0)&&(rr.length===1)===(det!==0));mat++;if(det)for(const x of v){assert(v.some(y=>ev(a,b,c,d,x,y)!==0)===(x[0]!==0||x[1]!==0));sep++}}}
+for(let m=2;m<=50;m++)for(let t=0;t<m;t++){let q=m;while(gcd(q,t)>1)q/=gcd(q,t);for(let x=0;x<m;x++){let z=x;let found=false;for(let k=0;k<=m;k++){if(z===0){found=true;break}z=mod(z*t,m)}assert(found===(x%q===0));loc++}}
+assert(2%4!==0&&mod(2*2,4)===0);neg++;
+assert([[0,0],[0,1]].every(x=>x[0]===0));neg++;
+console.log({mat,sep,loc,neg,total:mat+sep+loc});
+```
+Interpretation: localizing Z/4 at 2 makes 2 vanish without 2=0 beforehand. For rectangular pairing K×K²→K, (x,y)↦xy₁, the induced map K→(K²)* is injective but not surjective; the second coordinate is invisible. Equal dimension is not decorative. The tests illustrate algebra only, not the geometric source claims or proof of RH.
+
+RESUME HERE: follow PairCompat import ScalePowMono to locate and reconstruct actual tanS_away_lift, tanS_away_uniq and glue_tan' producers; in the field branch reconstruct EqZeroOfForallResidueFieldFunctionalStatement and its actual body, preserving smoothness/reducedness/finite projectivity; then HC/HH global suppliers and system realization. Do not repeat field duality or finite-cover exponent argument. HANDOFF TO integration, editor, audit, kernel, dependencies, geometry. Project OPEN.
