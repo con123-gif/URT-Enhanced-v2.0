@@ -1,0 +1,105 @@
+{
+  "status": "Executed internal source-graph scheduling benchmark, not proof correctness or URT-specific speedup",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sourceBlob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+  "actual": {
+    "nodes": 179,
+    "edges": 291,
+    "comparisons": 180,
+    "baselineNodeChecks": 16110,
+    "baselineEdgeChecks": 49236,
+    "linearNodeChecks": 179,
+    "linearEdgeChecks": 582,
+    "readyTransitions": 179,
+    "baselineTotalChecks": 65346,
+    "linearTotalChecks": 761,
+    "checkReduction": 0.9883542986563829,
+    "unitCostCriticalDepth": 9,
+    "criticalCandidates": [
+      {
+        "name": "UpperTheory.LiteratureTheorems.zelevinsky_polynomial_ring_of_literature",
+        "depth": 2,
+        "downstream": 8,
+        "fanout": 5
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.grothendieck_ring_polynomial_of_literature",
+        "depth": 1,
+        "downstream": 9,
+        "fanout": 1
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.segment_representation_of_literature",
+        "depth": 1,
+        "downstream": 9,
+        "fanout": 1
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.published_results_eigen",
+        "depth": 9,
+        "downstream": 1,
+        "fanout": 0
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.literature_nonexistence",
+        "depth": 8,
+        "downstream": 2,
+        "fanout": 1
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.literature_automorphy",
+        "depth": 7,
+        "downstream": 3,
+        "fanout": 1
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.hecke_l_adic_character_above_of_literature",
+        "depth": 6,
+        "downstream": 4,
+        "fanout": 2
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.hecke_l_adic_character_crystalline_of_literature",
+        "depth": 5,
+        "downstream": 5,
+        "fanout": 1
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature",
+        "depth": 4,
+        "downstream": 6,
+        "fanout": 2
+      },
+      {
+        "name": "UpperTheory.LiteratureTheorems.depth_zero_induction_of_literature",
+        "depth": 3,
+        "downstream": 7,
+        "fanout": 2
+      }
+    ]
+  },
+  "tests": {
+    "diamond": true,
+    "checkpointResume": true,
+    "invalidOperationsRejected": 4,
+    "syntheticChain": {
+      "nodes": 2000,
+      "edges": 1999,
+      "baselineTotalChecks": 4001999,
+      "linearTotalChecks": 5998,
+      "checkReduction": 0.9985012490008118
+    }
+  },
+  "poolSetMicrotest": {
+    "fields": 2000,
+    "oldComparisons": 1999000,
+    "newMembershipLookups": 2000
+  },
+  "notes": [
+    "Each pending node initialized once, each dependency examined at initialization and once at completion; O(V+E) graph operations for the event-driven scheduler, O(V+E) storage. Longest path by two DAG passes gives a unit-cost critical path, not time estimate. Cycle fails closed; need SCC condensation for actual recursive kernel graph.",
+    "Baseline intentionally scans pending nodes after each completion; not a comparison to optimized conventional Kahn scheduling, which is the same linear algorithm. No evidence of unique URT advantage.",
+    "Source graph contains only internal references of nine selected record roots; imported external prerequisites must be separately audited before an agent marks a theorem translated.",
+    "The full-pool Set change is source-patched; its membership behavior tested separately, full runner not re-executed here. Active GitHub job continues on its existing commit; new code applies on next run."
+  ],
+  "resume": "Use readyEngine in integration with immutable declaration IDs, independently audited completion checkpoints, and true elaborated dependencies. Do not advance dependents based solely on source-match or a bot claiming completion. Batch all ready tasks among 15 lanes; use critical path and measured costs to prioritize, preserve every obligation."
+}

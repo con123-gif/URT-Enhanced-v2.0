@@ -1,18 +1,18 @@
 function poolFile(source, module) {
  const lines=source.split(/\r?\n/), groups=[],pool=[],index=new Map();
- let active=null,scopeVersion=0,fields=0,skipped=0;
+ let active=null,scopeVersion=0,fields=0,skipped=0,fieldSeen=new Set();
  // Deliberately limited to single-line theorem declarations with an explicit binder
  // and record-style where. Stop at the next nonindented command.
  const hdr=/^(?:theorem|lemma)\s+(\S+)\s+(\(.+\))\s*:\s*(.+)\s+where\s*$/u;
  for(let i=0;i<lines.length;i++){
   const l=lines[i],h=l.match(hdr);
-  if(h){active={name:h[1],binder:h[2],type:h[3],header:l,line:i+1,scopeVersion,fields:[]};groups.push(active);continue;}
+  if(h){active={name:h[1],binder:h[2],type:h[3],header:l,line:i+1,scopeVersion,fields:[]};groups.push(active);fieldSeen=new Set();continue;}
   if(l.trim() && !/^\s/.test(l)){active=null; if(/^(namespace|section|end|open|variable|include|omit|set_option|local|attribute)\b/.test(l))scopeVersion++;continue;}
   if(!active||!l.trim())continue;
   const m=l.match(/^  ([^\s]+) := (.+)$/u);
   if(!m){skipped++;active=null;continue;}
   const [,field,rhs]=m;
-  if(active.fields.some(f=>f.field===field)){skipped++;active=null;continue;}
+  if(fieldSeen.has(field)){skipped++;active=null;continue;}fieldSeen.add(field);
   // Exact lexical pool, scoped to a module, binder string and command-context epoch.
   // Neither equality of elaborated proof terms nor equality of field types is inferred.
   const key=JSON.stringify([active.scopeVersion,active.binder,rhs]);
