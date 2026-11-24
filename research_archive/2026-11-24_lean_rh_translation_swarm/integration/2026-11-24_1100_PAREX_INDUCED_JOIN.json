@@ -1,0 +1,551 @@
+{
+  "schema": "RH source-obligation join 2026-11-24 1100",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "upstream_head_observed": "cb4dc6e23a6187db392c96664295415c55b6b01e",
+  "source_ledger": {
+    "types": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/RecTTransport.lean",
+      "631f12febe08029e0d1d11139a704a6aaab367fb"
+    ],
+    "par": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CentralUnit.lean",
+      "457b406cc2652f723ff98927964e50d2a0f9a21b"
+    ],
+    "ind": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/IsSemisimpleInducedParam.lean",
+      "d3412a05a3986e499bf640fe1eae54fea6ec6b55"
+    ],
+    "good": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/GoodMap.lean",
+      "1223776d8052ec8c0e7fba84b94780fda55a60f2"
+    ]
+  },
+  "root": "goodMap.use",
+  "parents": [
+    "2026-11-24_0900_RECT_FIELD_PROOF_GRAPH.json",
+    "2026-11-24_1000_PARUNIQ_CYCLIC_PROOF.mjs"
+  ],
+  "peer_chapters": [
+    "math/2026-11-24_depth_zero_frobenius_parameter_proof.md",
+    "math/2026-11-24_finite_character_induced_parameter_proof.md",
+    "specialists/proof_editor/2026-11-24_1056_INTEGRATED_MANUSCRIPT.md"
+  ],
+  "exact_interfaces": {
+    "IndEx": "def IndEx : Prop :=\n  ∀ (E Ω : Type) [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] (A : ValuationSubring Ω)\n    (w : HeightOneSpectrum (𝓞 E)) (h : IsPlaceOver A w) (φ : Weil h), deg φ = 1 → ∀ n : ℕ, 0 < n → ∀ η : ℤ → (Ine (F := E) A →* ℂˣ),\n    IsOpen ((η 0).ker : Set (Ine (F := E) A)) →\n    (∀ (j : ℤ) (t t' : Ine (F := E) A), ineIncl h t' = φ * ineIncl h t * φ⁻¹ → η j t' = η (j + 1) t) →\n    (∀ j j' : ℤ, η j = η j' ↔ (n : ℤ) ∣ j - j') → ∀ c : ℂ, c ≠ 0 →\n    ∃ V : WD h, IsIrrWD V ∧ V.lpDim = n ∧ (V.eig φ).prod = c ∧\n      (∀ t : Ine (F := E) A, V.inePol (t : G E Ω) = ∏ j ∈ Finset.range n, (X - C ((η j t : ℂˣ) : ℂ))) ∧\n      ((∀ (j : ℤ) (t : Ine (F := E) A), Formalism.MainNotions.BlochKatoReduction.IsWild A (t : G E Ω) → η j t = 1) → IsTameWD V)",
+    "ParEx": "def ParEx : Prop := ∀ (E Ω : Type) [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] (A : ValuationSubring Ω)\n    (w : HeightOneSpectrum (𝓞 E)) (h : IsPlaceOver A w) (a : Weil h →* (w.adicCompletion E)ˣ) (ha : IsLocalArtin h a) (g : ℕ) [Fact g.Prime] (i : ℚ_[g] ≃+* w.adicCompletion E), Continuous i → ∀ y : IrrGL (w.adicCompletion E), y.IsCusp → DZ y → ∃ V : WD h, Par a y V",
+    "TypeAt": "def TypeAt (x : IrrGL (w.adicCompletion E)) (V : WD h) : Prop :=\n  ∀ (g : ℕ) [Fact g.Prime] (i : ℚ_[g] ≃+* w.adicCompletion E), Continuous i → ∀ n : ℕ, 0 < n →\n    ∀ (D : Ext h g n) (R : Ine (F := E) A →* D.Kˣ), D.Res R → ∀ θ : D.Kˣ →* ℂˣ, GlobalTheory.Published.IsRegularChar g n θ →\n    ∀ τ : FDRep ℂ (Gn g n), IsCusp τ.character → Names g n θ τ → ∀ σ : IrrRep (GL (Fin n) (w.adicCompletion E)), cls σ = x →\n      GlobalTheory.SerSys.TameGen.Inflates (σ.ρ.comp (GeneralLinearGroup.map i.toRingHom)) τ → V.mono0 ∧ InFor g n R θ V",
+    "Par": "structure Par (a : Weil h →* (w.adicCompletion E)ˣ) (y : IrrGL (w.adicCompletion E)) (V : WD h) : Prop where\n  irr : IsIrrWD V\n  dim : V.lpDim = y.1\n  tame : IsTameWD V\n  central : ∀ ω, HasCentralChar y.rep ω → ∀ σ, (V.eig σ).prod = (ω (a σ) : ℂ)\n  type : TypeAt y V"
+  },
+  "nodes": [
+    {
+      "id": "goodMap.use",
+      "source": "good",
+      "anchors": [
+        {
+          "text": "obtain ⟨V₀, p⟩ := parEx E Ω A w h a ha g i hi y₀ c₀ hfix",
+          "line": 141
+        },
+        {
+          "text": "obtain ⟨V, p⟩ := parEx E Ω A w h a ha g i hi y c d",
+          "line": 159
+        }
+      ],
+      "needs": [
+        "parEx"
+      ],
+      "ports": [
+        "chosen Par witness for depth-zero cuspidal representative",
+        "Par witness for original depth-zero input"
+      ],
+      "explanation": "Both calls consume guarded existence, not unrestricted LLC.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "parEx",
+      "source": "par",
+      "anchors": [
+        {
+          "text": "theorem parEx : ParEx := by",
+          "line": 39
+        },
+        {
+          "text": "refine ⟨V, hVirr, hVdim, hVtame ?_, ?_, ?_⟩",
+          "line": 128
+        }
+      ],
+      "needs": [
+        "orbit",
+        "indEx",
+        "wild",
+        "centralEquality",
+        "universalType"
+      ],
+      "ports": [
+        "irr",
+        "dim",
+        "tame",
+        "central",
+        "type"
+      ],
+      "explanation": "One witness V meets all five fields.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "orbit",
+      "source": "par",
+      "anchors": [
+        {
+          "text": "have hn : 0 < n := hpos hy",
+          "line": 47
+        },
+        {
+          "text": "obtain ⟨φ, hφ⟩ := deg_surjective (h := h) 1",
+          "line": 48
+        },
+        {
+          "text": "obtain ⟨hτc, hτu⟩ := typeEx",
+          "line": 50
+        },
+        {
+          "text": "obtain ⟨D⟩ := extEx",
+          "line": 52
+        },
+        {
+          "text": "obtain ⟨⟨R, hR⟩, hRs⟩ := resEx",
+          "line": 53
+        },
+        {
+          "text": "obtain ⟨hNex, hNuniq, -, hNtr⟩ := nameLaws",
+          "line": 76
+        },
+        {
+          "text": "have hopen : IsOpen",
+          "line": 89
+        },
+        {
+          "text": "have hshift :",
+          "line": 94
+        },
+        {
+          "text": "have hinj :",
+          "line": 102
+        }
+      ],
+      "needs": [
+        "clBasic",
+        "degree_surjectivity",
+        "TypeEx",
+        "ExtEx",
+        "ResEx",
+        "NameLaws",
+        "finite_field_period"
+      ],
+      "ports": [
+        "deg φ = 1",
+        "n > 0",
+        "open ker η₀",
+        "η_j(φtφ⁻¹)=η_(j+1)(t)",
+        "η_j=η_j' iff n divides j-j'",
+        "c=ω(aφ) ≠ 0"
+      ],
+      "explanation": "Regular finite-field orbit pulled back by surjective R; modulo n handles negative integer indices.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "indEx",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "theorem UpperTheory.Zero.LLC.indEx :",
+          "line": 316
+        },
+        {
+          "text": "let e := perEquiv n hn hb",
+          "line": 323
+        },
+        {
+          "text": "let a0 : WDRep h (per n b) :=",
+          "line": 326
+        },
+        {
+          "text": "N := 0",
+          "line": 328
+        },
+        {
+          "text": "let a := a0.transport e",
+          "line": 333
+        }
+      ],
+      "needs": [
+        "periodicSpace",
+        "action",
+        "smooth",
+        "semisimple",
+        "irreducible",
+        "detPoly",
+        "wildConditional"
+      ],
+      "ports": [
+        "IsIrrWD V",
+        "V.lpDim=n",
+        "(V.eig φ).prod=c",
+        "∀ t, inertia polynomial",
+        "wild character triviality → IsTameWD V"
+      ],
+      "explanation": "Same V in every output; tameness conditional.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "periodicSpace",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "perEquiv n hn hb",
+          "line": 71
+        },
+        {
+          "text": "per_add_mul hb",
+          "line": 61
+        }
+      ],
+      "needs": [
+        "complex_nonzero_integer_powers"
+      ],
+      "ports": [
+        "V_b ≃ C^n"
+      ],
+      "explanation": "b=(-1)^(n-1)c≠0; f(j+n)=bf(j).",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "action",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "private theorem tau_mul",
+          "line": 196
+        },
+        {
+          "text": "private theorem eta_cj",
+          "line": 172
+        },
+        {
+          "text": "private theorem act_mem",
+          "line": 216
+        },
+        {
+          "text": "private def rho0",
+          "line": 225
+        },
+        {
+          "text": "map_mul' σ σ' := LinearMap.ext",
+          "line": 234
+        }
+      ],
+      "needs": [
+        "weil_degree_decomposition",
+        "orbit_covariance"
+      ],
+      "ports": [
+        "representation of Weil on V_b"
+      ],
+      "explanation": "τ(σσ')=φ^(-deg σ')τ(σ)φ^(deg σ')τ(σ'); covariance proves multiplication.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "smooth",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "private theorem isSmooth_inducedParam",
+          "line": 262
+        },
+        {
+          "text": "h0.preimage (continuous_cj φ j)",
+          "line": 271
+        },
+        {
+          "text": "isOpen_iInter_of_finite",
+          "line": 273
+        }
+      ],
+      "needs": [
+        "continuous_conjugation",
+        "finite_intersection"
+      ],
+      "ports": [
+        "smooth representation"
+      ],
+      "explanation": "Intersect n open kernels; periodicity fixes all coordinates.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "semisimple",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "private theorem isSemisimple_inducedParam",
+          "line": 290
+        },
+        {
+          "text": "compactSpace_Ine",
+          "line": 292
+        },
+        {
+          "text": "Subgroup.quotient_finite_of_isOpen",
+          "line": 295
+        },
+        {
+          "text": "isSemisimple_of_pow_eq",
+          "line": 76
+        }
+      ],
+      "needs": [
+        "smooth",
+        "compact_inertia",
+        "finite_quotient",
+        "separable_scalar_power"
+      ],
+      "ports": [
+        "∀ σ, ρ(σ) semisimple"
+      ],
+      "explanation": "For σ degree d, some m>0 gives ρ(σ)^(nm)=b^(dm)I; scalar nonzero.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "irreducible",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "have hχ :",
+          "line": 358
+        },
+        {
+          "text": "refine single_mem χ hχ",
+          "line": 371
+        },
+        {
+          "text": "refine eq_top_iff.2",
+          "line": 374
+        }
+      ],
+      "needs": [
+        "support_decreasing_single_mem",
+        "character_period_exact"
+      ],
+      "ports": [
+        "irreducible"
+      ],
+      "explanation": "Distinct inertia characters separate coordinates; shifts generate all basis vectors.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "detPoly",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "det_shift hn hb",
+          "line": 384
+        },
+        {
+          "text": "charpoly_diagEnd",
+          "line": 390
+        },
+        {
+          "text": "Fin.prod_univ_eq_prod_range",
+          "line": 391
+        }
+      ],
+      "needs": [
+        "periodicSpace",
+        "action",
+        "determinant_characteristic_polynomial"
+      ],
+      "ports": [
+        "det ρ(φ)=c",
+        "∀ t, χpol ρ(t)=∏(X-η_j(t))"
+      ],
+      "explanation": "Cyclic shift closing coefficient contributes sign (-1)^(n-1); inertia diagonal.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "wildConditional",
+      "source": "ind",
+      "anchors": [
+        {
+          "text": "fun hw =>",
+          "line": 346
+        },
+        {
+          "text": "rw [rho_ine, hw j t hσ]",
+          "line": 398
+        }
+      ],
+      "needs": [
+        "action",
+        "transport_equivalence"
+      ],
+      "ports": [
+        "wild character triviality → IsTameWD V"
+      ],
+      "explanation": "All diagonal entries one for wild elements.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "wild",
+      "source": "par",
+      "anchors": [
+        {
+          "text": "hVtame ?_",
+          "line": 128
+        },
+        {
+          "text": "hT.wild t ht",
+          "line": 130
+        }
+      ],
+      "needs": [
+        "indEx",
+        "ResEx"
+      ],
+      "ports": [
+        "IsTameWD V"
+      ],
+      "explanation": "TameSys.wild proves antecedent of IndEx implication.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "centralEquality",
+      "source": "par",
+      "anchors": [
+        {
+          "text": "have hNC := nameCentral",
+          "line": 133
+        },
+        {
+          "text": "obtain ⟨u, hu1, hu2⟩ := resBase",
+          "line": 141
+        },
+        {
+          "text": "smul_left_injective ℂ hv key",
+          "line": 155
+        },
+        {
+          "text": "have hδeq : δ = ω.comp a",
+          "line": 161
+        },
+        {
+          "text": "apply hδu φ δ (ω.comp a) hφ",
+          "line": 162
+        }
+      ],
+      "needs": [
+        "indEx",
+        "NameCentral",
+        "ResBase",
+        "WDBasic",
+        "clBasic",
+        "TypeEx"
+      ],
+      "ports": [
+        "∀ ω', HasCentralChar y.rep ω' → ∀ σ, (V.eig σ).prod=ω'(aσ)"
+      ],
+      "explanation": "Nonzero inflation map permits cancellation; determinant characters match on inertia and degree-one φ; WDBasic extends to all Weil elements.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    },
+    {
+      "id": "universalType",
+      "source": "par",
+      "anchors": [
+        {
+          "text": "intro g' _ i' hi' n' hn' D' R' hR' θ' hθ'r τ' hτ' hN' σ' hσ' hinfl'",
+          "line": 177
+        },
+        {
+          "text": "isoUniq _ g g' i i' hi hi'",
+          "line": 178
+        },
+        {
+          "text": "have hchar := hτu",
+          "line": 184
+        },
+        {
+          "text": "obtain ⟨e, he⟩ := resIndep",
+          "line": 187
+        },
+        {
+          "text": "obtain ⟨j, -, hj⟩ := hNuniq",
+          "line": 189
+        },
+        {
+          "text": "have hI := (tameUniq",
+          "line": 190
+        },
+        {
+          "text": "refine ⟨(hirr hVirr).1, fun t => ?_⟩",
+          "line": 192
+        }
+      ],
+      "needs": [
+        "indEx",
+        "IsoUniq",
+        "TypeEx",
+        "ResIndep",
+        "NameLaws",
+        "TameUniq",
+        "WDBasic"
+      ],
+      "ports": [
+        "∀ admissible g',i',n',D',R',θ',τ',σ', mono0 ∧ InFor"
+      ],
+      "explanation": "Match field, rank and finite type; residue isomorphism transports name, Frobenius shift preserves polynomial. All universally quantified witnesses retained.",
+      "status": "SOURCE-MATCHED; kernel replay and deeper premises OPEN"
+    }
+  ],
+  "frontier": [
+    "ExtEx",
+    "IsoUniq",
+    "NameCentral",
+    "NameLaws",
+    "ResBase",
+    "ResEx",
+    "ResIndep",
+    "TameUniq",
+    "TypeEx",
+    "WDBasic",
+    "character_period_exact",
+    "clBasic",
+    "compact_inertia",
+    "complex_nonzero_integer_powers",
+    "continuous_conjugation",
+    "degree_surjectivity",
+    "determinant_characteristic_polynomial",
+    "finite_field_period",
+    "finite_intersection",
+    "finite_quotient",
+    "orbit_covariance",
+    "separable_scalar_power",
+    "support_decreasing_single_mem",
+    "transport_equivalence",
+    "weil_degree_decomposition"
+  ],
+  "limitations": "Source anchors and selected dependency graph, not elaborated proof dependencies. No axiom/trust closure. Peer proofs are conditional; no independent proof of all imports.",
+  "execution": {
+    "runtime": "functions V8, 2026-11-24",
+    "nodes": 14,
+    "edges": 51,
+    "frontier": 25,
+    "anchors": 54,
+    "interfaces": 4,
+    "negative_controls_rejected": 6,
+    "source_blob_matches": 4,
+    "failed_attempts": [
+      "Initial fetch schema corrected.",
+      "ParEx.lean 404; actual producer CentralUnit.lean.",
+      "First anchor test rejected wrong map_mul syntax; corrected to actual source map_mul' σ σ'.",
+      "Three compute status paths returned 404: rh-stream-closure-retry-20261124, rh-native-lean-fixture-v2-20261124, rh-full-source-obligation-pool-20261124. No verdict inferred."
+    ]
+  },
+  "resume_here": "Integrate distinct ParDual producer and its universal TypeAt transport into the GoodMap dual field; preserve source-matched uniqueness and existence. Recheck full-export status; coordinate ExtEx/ResEx with math lane.",
+  "handoff_to": "proof editor, math, dependencies, audit, structure, all specialists"
+}
