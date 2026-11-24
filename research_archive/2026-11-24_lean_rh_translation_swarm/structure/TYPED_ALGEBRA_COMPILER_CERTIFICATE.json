@@ -1,0 +1,156 @@
+{
+  "status": "Executed real upstream exporter guard-message fixtures; challenge corpus job registered, not yet executed",
+  "source": {
+    "repo": "leanprover/lean4export",
+    "ref": "v4.33.0",
+    "path": "Test.lean",
+    "blob": "bd74231cbce3e3d4e31206b481da7aa1ee329145"
+  },
+  "fixtureBlocks": 14,
+  "total": {
+    "records": 186,
+    "raw": 8973,
+    "algebra": 4106,
+    "expr": 121,
+    "decl": 10,
+    "edges": 164
+  },
+  "negativeControls": 4,
+  "tupleSchema": {
+    "str": [
+      "pre",
+      "str"
+    ],
+    "num": [
+      "pre",
+      "i"
+    ],
+    "const": [
+      "name",
+      "us"
+    ],
+    "app": [
+      "fn",
+      "arg"
+    ],
+    "lam": [
+      "name",
+      "type",
+      "body",
+      "binderInfo"
+    ],
+    "forallE": [
+      "name",
+      "type",
+      "body",
+      "binderInfo"
+    ],
+    "letE": [
+      "name",
+      "type",
+      "value",
+      "body",
+      "nondep"
+    ],
+    "proj": [
+      "typeName",
+      "idx",
+      "struct"
+    ],
+    "mdata": [
+      "expr",
+      "data"
+    ],
+    "axiom": [
+      "name",
+      "levelParams",
+      "type",
+      "isUnsafe"
+    ],
+    "def": [
+      "name",
+      "levelParams",
+      "type",
+      "value",
+      "hints",
+      "safety",
+      "all"
+    ],
+    "opaque": [
+      "name",
+      "levelParams",
+      "type",
+      "value",
+      "isUnsafe",
+      "all"
+    ],
+    "thm": [
+      "name",
+      "levelParams",
+      "type",
+      "value",
+      "all"
+    ],
+    "quot": [
+      "name",
+      "levelParams",
+      "type",
+      "kind"
+    ],
+    "inductive": [
+      "types",
+      "ctors",
+      "recs"
+    ],
+    "type": [
+      "name",
+      "levelParams",
+      "type",
+      "numParams",
+      "numIndices",
+      "all",
+      "ctors",
+      "numNested",
+      "isRec",
+      "isUnsafe",
+      "isReflexive"
+    ],
+    "ctor": [
+      "name",
+      "levelParams",
+      "type",
+      "induct",
+      "cidx",
+      "numParams",
+      "numFields",
+      "isUnsafe"
+    ],
+    "rec": [
+      "name",
+      "levelParams",
+      "type",
+      "all",
+      "numParams",
+      "numIndices",
+      "numMotives",
+      "numMinors",
+      "rules",
+      "k",
+      "isUnsafe"
+    ],
+    "rule": [
+      "ctor",
+      "nfields",
+      "rhs"
+    ]
+  },
+  "method": "Lossless tagged tuples for all documented 3.1.0 name, universe, expression and declaration variants including inductive groups and recursor rules; exact JSON roundtrip, reject unknown schema and unsafe numeric payloads. URT bounded read R_v=(s_tag + q sum child R)/(1+|q|*arity), where seed has unit norm and q is original pi/e golden angle. Induction gives |R_v|<=1. Expressions processed once with topological IDs, O(V+E) graph operations and O(V) score storage. Score is intentionally not an identity or a logical proof.",
+  "limits": [
+    "Guard-message fixtures retrieved and executed in JS V8; not locally running Lean.",
+    "Challenge job downloads actual archive and preserves all records in compressed typed algebra; not actual solution proof.",
+    "Challenge streaming CLI and zstd artifact IO not executed in this turn.",
+    "Full solution reader will require packed or disk-backed scores and integration with existing stream extraction. Avoid duplicated 61GB parsing where possible.",
+    "Exact declaration schemas retain type/value and universe references; actual challenge runner validates expression order and roundtrip, not full declaration well-typedness."
+  ],
+  "resume": "Check existing solution-export retry and this challenge job. If challenge passes, use compiler as a stage inside actual solution extraction; audit declaration/type-reference closure and use URT readout only to prioritize structurally related obligations."
+}
