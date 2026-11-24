@@ -1,0 +1,343 @@
+galois_rows RUN6 / covolume_premises RUN2 — validation log
+Run: 2026-11-24 10:29 GMT (Europe/London), box; nice + OMP_NUM_THREADS=1.
+Upstream checkout: fresh clone of leanprover-community/riemann-hypothesis at 40e56bab026552e089d7afcfeff08d2defb9c005 (deleted after run).
+Command: nice env OMP_NUM_THREADS=1 python3 RUN6_replay_checks.py <checkout> RUN6_replay_checks.tsv 27
+The tsv (135 file:line tokens) is embedded at the end of this log; extract it to RUN6_replay_checks.tsv to replay.
+Census expectation 27 was set from the first (observed) run, not predicted in advance.
+Mathlib 0df444a Mathlib/AlgebraicGeometry/IdealSheaf/Functorial.lean: git blob c2ba4d50739f437a7cf0fca6e93dae96bb3c3c5f; line 39-40: 'def comap (I : Y.IdealSheafData) (f : X ⟶ Y) : X.IdealSheafData := (pullback.fst f I.subschemeι).ker' (read from a raw download, not via replay).
+Not run: no Lean/lake build of repo code; no Mathlib compilation. Nothing here says PASS/compiled.
+
+=== replay output ===
+HEAD 40e56bab026552e089d7afcfeff08d2defb9c005 OK
+ok 0d3a6da0c9eb Development/WeilBound/CoreStatements/ResolutionCharZero/PlugResW.lean:8
+ok 5549ce969477 Development/WeilBound/CoreStatements/ResolutionCharZero/PlugPrincW.lean:8
+ok 0a4a96c01e7a Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean:19
+ok 0a4a96c01e7a Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean:26
+ok 0a4a96c01e7a Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean:68
+ok 0a4a96c01e7a Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean:87
+ok 0a4a96c01e7a Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean:89
+ok cfae58bf7658 Development/WeilBound/CoreStatements/ResolutionCharZero/FromRes.lean:44
+ok cfae58bf7658 Development/WeilBound/CoreStatements/ResolutionCharZero/FromRes.lean:46
+ok cfae58bf7658 Development/WeilBound/CoreStatements/ResolutionCharZero/FromRes.lean:65
+ok 48526681ed86 Development/AutomorphicSpectrum/Proofs/GeometryProofs/CoordsStatementStatement.lean:7
+ok c5d2ca9597c4 Development/AutomorphicSpectrum/PublishedTheorems/PublishedGlobalResults/PrincipalizationOfPrincipalisation.lean:37
+ok c5d2ca9597c4 Development/AutomorphicSpectrum/PublishedTheorems/PublishedGlobalResults/PrincipalizationOfPrincipalisation.lean:50
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:12
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:19
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:24
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:28
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:45
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:52
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:56
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:66
+ok 1fb40a6fac9b ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean:70
+ok 0b80b6fd4446 ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean:6
+ok 0b80b6fd4446 ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean:10
+ok 0b80b6fd4446 ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean:12
+ok 0b80b6fd4446 ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean:15
+ok 0b80b6fd4446 ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean:17
+ok 0b80b6fd4446 ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean:21
+ok 7323a084a287 Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean:17
+ok 7323a084a287 Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean:22
+ok 7323a084a287 Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean:53
+ok 7323a084a287 Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean:55
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:13
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:20
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:35
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:79
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:91
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:96
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:124
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:126
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:132
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:133
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:140
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:146
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:150
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:175
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:213
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:221
+ok 24e45a949a6d Development/ResolutionOfSingularities/Statements.lean:260
+ok d07dd68f35e9 Development/ResolutionOfSingularities/HasSimpleNormalCrossingsOfInStrictNormalCrossing.lean:15
+ok d07dd68f35e9 Development/ResolutionOfSingularities/HasSimpleNormalCrossingsOfInStrictNormalCrossing.lean:16
+ok d07dd68f35e9 Development/ResolutionOfSingularities/HasSimpleNormalCrossingsOfInStrictNormalCrossing.lean:102
+ok 032259293145 Development/ResolutionOfSingularities/EmbeddedResolution/HironakaTheorem.lean:69
+ok d14cfaff7aba Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean:40
+ok c9c972597441 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean:31
+ok c9c972597441 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean:39
+ok c9c972597441 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean:59
+ok c9c972597441 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean:61
+ok 75a6796a93e8 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/WeakOfAtt.lean:47
+ok 23b7a0560607 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:47
+ok 01c499108485 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:33
+ok 01c499108485 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:34
+ok 01c499108485 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:31
+ok 8a57b35c343e Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/PublishedHypothesesFromPatching.lean:99
+ok 8a57b35c343e Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/PublishedHypothesesFromPatching.lean:100
+ok 7f9fd373e349 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TPCohC.lean:23
+ok 902824ac9b89 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean:103
+ok 902824ac9b89 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean:127
+ok d1144d25c89f Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RankTwoPatching/GaloisRepExistsTotallyRealGL2.lean:60
+ok aa398c7e5d20 Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/InertiaLeRangeOfUnramified.lean:18
+ok 95aeefe8ba6b Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean:7
+ok 95aeefe8ba6b Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean:35
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:781
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:521
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:522
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:531
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:532
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:533
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:534
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:249
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:250
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:239
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:240
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:489
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:490
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:501
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:502
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:517
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:518
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:401
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:402
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:395
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:396
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:453
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:454
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:417
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:418
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:497
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:498
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:441
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:442
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:409
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:410
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:237
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:238
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:407
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:408
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:475
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:476
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:447
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:448
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:469
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:470
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:451
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:452
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:255
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:256
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:325
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:326
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:347
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:348
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:503
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:504
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:467
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:468
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:253
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:254
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:381
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:382
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:405
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:406
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:403
+ok a13ba1f8c38d Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:404
+ok 2ce7981ea0c7 Development/WeilBound/CoreStatements/ResolutionCharZero/PlugResK.lean:7
+ok 2ce7981ea0c7 Development/WeilBound/CoreStatements/ResolutionCharZero/PlugResK.lean:8
+ok wrapper toroidal_compactification_of_literature line 521: no O.<field> in body (1 line(s))
+ok wrapper vol_ge_of_literature line 531: no O.<field> in body (1 line(s))
+ok wrapper vol_nef_of_literature line 533: no O.<field> in body (1 line(s))
+ok wrapper ar_calc_of_literature line 249: no O.<field> in body (1 line(s))
+ok wrapper abelian_de_rham_of_literature line 239: no O.<field> in body (1 line(s))
+ok wrapper ray_class_field_st_of_literature line 489: no O.<field> in body (1 line(s))
+ok wrapper semistable_reduction_st_of_literature line 501: no O.<field> in body (1 line(s))
+ok wrapper strong_approx_su_of_literature line 517: no O.<field> in body (1 line(s))
+ok wrapper green_series_st_of_literature line 401: no O.<field> in body (1 line(s))
+ok wrapper good_chern_weil_of_literature line 395: no O.<field> in body (1 line(s))
+ok wrapper landherr_st_of_literature line 453: no O.<field> in body (1 line(s))
+ok wrapper hasse_norm_st_of_literature line 417: no O.<field> in body (1 line(s))
+ok wrapper semi_abelian_hom_extension_of_literature line 497: no O.<field> in body (1 line(s))
+ok wrapper induced_simple_lowest_alcove_of_literature line 441: no O.<field> in body (1 line(s))
+ok wrapper principal_polarisation_one_section_of_literature line 409: no O.<field> in body (1 line(s))
+ok wrapper ab_mul_n_st_of_literature line 237: no O.<field> in body (1 line(s))
+ok wrapper grothendieck_messing_of_literature line 407: no O.<field> in body (1 line(s))
+ok wrapper prismatic_dieudonne_hodge_of_literature line 475: no O.<field> in body (1 line(s))
+ok wrapper kawamata_viehweg_of_literature line 447: no O.<field> in body (1 line(s))
+ok wrapper nef_numerics_of_literature line 469: no O.<field> in body (1 line(s))
+ok wrapper l2_extension_log_canonical_of_literature line 451: no O.<field> in body (1 line(s))
+ok wrapper arith_hilbert_samuel_of_literature line 255: no O.<field> in body (1 line(s))
+ok wrapper chow_form_exists_of_literature line 325: no O.<field> in body (1 line(s))
+ok wrapper cycle_heights_of_literature line 347: no O.<field> in body (1 line(s))
+ok wrapper serre_holomorphic_sections_of_literature line 503: no O.<field> in body (1 line(s))
+ok wrapper nadel_vanishing_and_non_klt_divisor_of_literature line 467: no O.<field> in body (1 line(s))
+ok wrapper principalisation_of_literature line 253: no O.<field> in body (1 line(s))
+ok wrapper formal_algebraisation_of_literature line 381: no O.<field> in body (1 line(s))
+ok wrapper grothendieck_deformation_of_literature line 405: no O.<field> in body (1 line(s))
+ok wrapper abelian_lifting_of_literature line 403: no O.<field> in body (1 line(s))
+CENSUS .aut.gal projections: 27
+   Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/CompatReal.lean:231
+   Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/ExistenceOfGaloisRepresentationsOfHyp.lean:50
+   Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/IntK.lean:27
+   Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/CompatiblePolarizationOfLink.lean:33
+   Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/EventuallyNotMem.lean:109
+   Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/ExistsPrimeNotMem.lean:107
+   Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/CrystallineBaseChange/Imports.lean:22
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/WeightInfinitesimalCharacters/LevelKU.lean:72
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SemisimpleLevels/LevelKO.lean:106
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SemisimpleLevels/LevelPS.lean:64
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AutNewform2A.lean:21
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BirthSphOfUnrW.lean:62
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/EndsRankThreeOfLocal.lean:27
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobOfProps.lean:42
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/GuWrap.lean:21
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/GuWrap.lean:24
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/JPTwA.lean:28
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean:49
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KeepLevel.lean:37
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/RRFree.lean:111
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean:127
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnitaryThreeInputsOfLiterature.lean:30
+   Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GaloisFromTraceFormula/OfLitN.lean:9
+   Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/PurityTempered/Temper.lean:22
+   Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AdmissibleResidues/CharpolyConjugation/Wold.lean:66
+   Development/AutomorphicArithmetic/ThetaCorrespondence/CuspidalSupport/CsdMonoOddLitN.lean:13
+   Development/AutomorphicArithmetic/ThetaCorrespondence/CuspidalSupport/CsdMonoOddLitN.lean:16
+checks ok=167 bad=0
+rc=0
+
+=== RUN6_replay_checks.tsv ===
+Development/WeilBound/CoreStatements/ResolutionCharZero/PlugResW.lean	8	resW_of_functorialResolution FunctorialResolution.functorialResolutionCharZero.{0}
+Development/WeilBound/CoreStatements/ResolutionCharZero/PlugPrincW.lean	8	princW_of_functorialPrincipalization FunctorialResolution.functorialPrincipalizationCharZero.{0}
+Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean	19	def ResW : Prop :=
+Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean	26	def PrincW : Prop :=
+Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean	68	theorem resK_of_weak (H₁ : ResW) (H₂ : PrincW) : ResKStatement := by
+Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean	87	obtain ⟨hDim, hC⟩ := GlobalTheory.T.coords_statement
+Development/WeilBound/CoreStatements/ResolutionCharZero/WeakPair.lean	89	obtain ⟨r, j, hj, e⟩ := exists_closed_in_prod
+Development/WeilBound/CoreStatements/ResolutionCharZero/FromRes.lean	44	theorem resW_of_functorialResolution (H : FunctorialResolutionCharZero.{0}) : ResW := by
+Development/WeilBound/CoreStatements/ResolutionCharZero/FromRes.lean	46	obtain ⟨R, hR, -, -⟩ := H
+Development/WeilBound/CoreStatements/ResolutionCharZero/FromRes.lean	65	theorem princW_of_functorialPrincipalization (H : FunctorialPrincipalizationCharZero.{0}) : PrincW := by
+Development/AutomorphicSpectrum/Proofs/GeometryProofs/CoordsStatementStatement.lean	7	theorem _root_.GlobalTheory.T.coords_statement : ReciprocityTheory.ChartRestriction.G.Geo.ResK.CoordsStatement := by
+Development/AutomorphicSpectrum/PublishedTheorems/PublishedGlobalResults/PrincipalizationOfPrincipalisation.lean	37	theorem exists_closed_in_prod
+Development/AutomorphicSpectrum/PublishedTheorems/PublishedGlobalResults/PrincipalizationOfPrincipalisation.lean	50	theorem dense_compl_of_snc
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	12	def preRed {X X' : Scheme.{0}} (f : X' ⟶ X) (T : Set X) (hT : IsClosed T) : X'.IdealSheafData :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	19	def IsCoords {Y : Scheme.{0}} (g : Y ⟶ Sp K) (V : Y.Opens) {D : ℕ} (z : Fin D → Γ(Y, V)) : Prop :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	24	def HasSncCoords {Y : Scheme.{0}} (g : Y ⟶ Sp K) (D : ℕ) (T : Set Y) : Prop :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	28	{y | y ∈ (V j : Y.Opens) ∧ ∃ i : Fin D, (i : ℕ) < k ∧ y ∉ Y.basicOpen (z i)}
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	45	def CoordsStatement : Prop :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	52	def IsResInput {X : Scheme.{0}} (M : ℕ) (i : X ⟶ PSpace K M) (U : X.Opens) (D : ℕ) : Prop :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	56	def IsResWithCoords {X X' : Scheme.{0}} (g : X ⟶ Sp K) (U : X.Opens) (D : ℕ) (f : X' ⟶ X) : Prop :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	66	def ResKStatement : Prop :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/BirationalGeometry/BlowupProjections/BlowupProjStatement.lean	70	IsClosedImmersion j ∧ f ≫ i = j ≫ pullback.fst _ _ ∧ IsResWithCoords (i ≫ PSpace.str K M) U D f
+ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean	6	def EffCartier {X : Scheme.{u}} (I : X.IdealSheafData) : Prop :=
+ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean	10	def Blowup {X X' : Scheme.{u}} (π : X' ⟶ X) (I : X.IdealSheafData) : Prop :=
+ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean	12	∀ (W : Scheme.{u}) (g : W ⟶ X), EffCartier (I.comap g) → ∃! h : W ⟶ X', h ≫ π = g
+ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean	15	Ideal.span (Set.range x) = IsLocalRing.maximalIdeal R ∧ (n : WithBot ℕ∞) = ringKrullDim R
+ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean	17	def Snc {Y : Scheme.{u}} (D : Y.IdealSheafData) : Prop :=
+ReciprocityTheory/AnalyticForms/RegularLocalRings/FinalTheorems.lean	21	D.ideal U = Ideal.span {∏ i ∈ J, f i}
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean	17	inductive IsBlowupSeq {X : Scheme.{0}} : ∀ {X' : Scheme.{0}}, (X' ⟶ X) → Prop
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean	22	IsBlowupSeq s → FinalTheorems.Blowup π J → IsBlowupSeq (π ≫ s)
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean	53	def ResolutionCharZero : Prop :=
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean	55	QuasiCompact g → IsSeparated g → IsReduced X →
+Development/ResolutionOfSingularities/Statements.lean	13	def IsBlowup {X X' : Scheme.{u}} (π : X' ⟶ X) (I : X.IdealSheafData) : Prop :=
+Development/ResolutionOfSingularities/Statements.lean	20	def IsStrictNormalCrossingsAt {Y : Scheme.{u}} (D : Y.IdealSheafData) (y : Y) : Prop :=
+Development/ResolutionOfSingularities/Statements.lean	35	structure BlowupSequence (X : Scheme.{u}) : Type (u + 1) where
+Development/ResolutionOfSingularities/Statements.lean	79	def CentersOver (s : BlowupSequence X) (S : Set X) : Prop :=
+Development/ResolutionOfSingularities/Statements.lean	91	def IsPullbackSequence {X X' : Scheme.{u}} (φ : X' ⟶ X) (s' : BlowupSequence X') (s : BlowupSequence X) : Prop :=
+Development/ResolutionOfSingularities/Statements.lean	96	r s'.length = s.length ∧
+Development/ResolutionOfSingularities/Statements.lean	124	[LocallyOfFiniteType f] [QuasiCompact f] [IsReduced X], BlowupSequence X
+Development/ResolutionOfSingularities/Statements.lean	126	def IsResolutionRuleCharZero (R : ResolutionRuleCharZero.{u}) : Prop :=
+Development/ResolutionOfSingularities/Statements.lean	132	(R k X f).CentersOver ((nonSmoothLocus f : TopologicalSpace.Closeds X) : Set X) ∧
+Development/ResolutionOfSingularities/Statements.lean	133	IsStrictNormalCrossings (reducedPreimage (R k X f).topMap (nonSmoothLocus f))
+Development/ResolutionOfSingularities/Statements.lean	140	(φ : X' ⟶ X) (r : ℕ) [SmoothOfRelativeDimension r φ],
+Development/ResolutionOfSingularities/Statements.lean	146	(K : Type u) [Field K] [CharZero K] [Algebra k K] [IsReduced (fieldBaseChange f K)],
+Development/ResolutionOfSingularities/Statements.lean	150	def FunctorialResolutionCharZero : Prop :=
+Development/ResolutionOfSingularities/Statements.lean	175	def HasSimpleNormalCrossingsAt {X : Scheme.{u}} {k : Type u} [Field k] (p : X ⟶ Spec (CommRingCat.of k))
+Development/ResolutionOfSingularities/Statements.lean	213	(∀ i, i < s.length → Smooth ((s.center i).subschemeι ≫ s.structMap i ≫ p)) ∧
+Development/ResolutionOfSingularities/Statements.lean	221	I.comap s.topMap = s.exceptionalProduct s.length ∧
+Development/ResolutionOfSingularities/Statements.lean	260	def FunctorialPrincipalizationCharZero : Prop :=
+Development/ResolutionOfSingularities/HasSimpleNormalCrossingsOfInStrictNormalCrossing.lean	15	theorem functorialResolutionCharZero : FunctorialResolutionCharZero.{u} := by
+Development/ResolutionOfSingularities/HasSimpleNormalCrossingsOfInStrictNormalCrossing.lean	16	obtain ⟨R, h1, h2, h3⟩ := EmbeddedResolution.strongResolutionOfSingularitiesCharZero.{u}
+Development/ResolutionOfSingularities/HasSimpleNormalCrossingsOfInStrictNormalCrossing.lean	102	theorem functorialPrincipalizationCharZero : FunctorialPrincipalizationCharZero.{u} :=
+Development/ResolutionOfSingularities/EmbeddedResolution/HironakaTheorem.lean	69	theorem strongResolutionOfSingularitiesCharZero :
+Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean	40	theorem resolutionCharZero_of_top (h : TopRes) : GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero := by
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean	31	structure LiteratureAutomorphyHypothesis : Prop where
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean	39	gal : _root_.UpperTheory.V.Z.Win.RowT
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean	59	structure LiteratureRankNHypothesis : Prop where
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean	61	aut : _root_.GlobalTheory.Mem.LiteralAutomorphy.LiteratureAutomorphyHypothesis
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/WeakOfAtt.lean	47	def RowT : Prop := UpperTheory.GalStar.Row0b fun h rc => IsRecT h rc
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean	47	gal := gal
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean	33	theorem UpperTheory.V.v_window_of_literal_automorphy_n (hN : _root_.GlobalTheory.Mem.LiteralAutomorphy.LiteratureRankNHypothesis) : VWin :=
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean	34	_root_.UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd hN
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean	31	_root_.UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt (_root_.UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt hN UpperTheory.V.Z.Tf.SR.descWeak)
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/PublishedHypothesesFromPatching.lean	99	{ litN := hN, cohC := _root_.UpperTheory.V.Af.clozelCohC_alt hN,
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/PublishedHypothesesFromPatching.lean	100	galR := _root_.UpperTheory.Gal.SV.galois_rep_exists_totally_real_rank_two_of_base_change hN
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TPCohC.lean	23	obtain ⟨Ξ', hΞ'⟩ := lit.aut.coh E a ha π hreg
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean	103	theorem galois_rep_exists_totally_real_rank_two_of_base_change
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean	127	obtain ⟨r, wt, HT, hr⟩ := _root_.UpperTheory.Gal.SV.rowOf' litN.aut.gal ↥Q.K Ω l ι a ha P χ' hregP hχ'
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RankTwoPatching/GaloisRepExistsTotallyRealGL2.lean	60	theorem rowOf' (h : RowT) : RowT := h
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/InertiaLeRangeOfUnramified.lean	18	obtain ⟨art, ha⟩ := N.aut.art F Ω
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean	7	structure PublishedHodgeBundleTheorems : Prop where
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean	35	q18 : GlobalTheory.Published.FormalAlgebraisation
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	781	theorem UpperTheory.LiteratureTheorems.published_results_arithmetic (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.CovTop.PublishedHodgeBundleTheorems where
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	521	theorem UpperTheory.LiteratureTheorems.toroidal_compactification_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	522	GlobalTheory.toroidalCompactification_holds
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	531	theorem UpperTheory.LiteratureTheorems.vol_ge_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	532	GlobalTheory.VolBr.volGe_of_hilbertSamuel (_root_.UpperTheory.LiteratureTheorems.arith_hilbert_samuel_of_literature O) (_root_.UpperTheory.LiteratureTheorems.ar_calc_of_literature O) (_root_.UpperTheory.LiteratureTheorems.nef_numerics_of_literature O)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	533	theorem UpperTheory.LiteratureTheorems.vol_nef_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	534	GlobalTheory.Published.ArithHilbertSamuel.volNef (_root_.UpperTheory.LiteratureTheorems.arith_hilbert_samuel_of_literature O)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	249	theorem UpperTheory.LiteratureTheorems.ar_calc_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	250	GlobalTheory.ArithmeticHeightTower.ArakelovDirectHeights.arCalc_direct PositivityTheory.Tls2.Pl.poincareLelong PositivityTheory.ResPlug.FromRes.resK
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	239	theorem UpperTheory.LiteratureTheorems.abelian_de_rham_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	240	PositivityTheory.DualRT.abelianDeRham
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	489	theorem UpperTheory.LiteratureTheorems.ray_class_field_st_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	490	PositivityTheory.Stage1.PM.rayClassFieldSt
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	501	theorem UpperTheory.LiteratureTheorems.semistable_reduction_st_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	502	GlobalTheory.SS.semistableReductionSt
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	517	theorem UpperTheory.LiteratureTheorems.strong_approx_su_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	518	GlobalTheory.StrongApproxSUProof.strongApproxSU
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	401	theorem UpperTheory.LiteratureTheorems.green_series_st_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	402	PositivityTheory.Prw.greenSeriesSt_of PositivityTheory.Stage1.PM.greenCuspidal
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	395	theorem UpperTheory.LiteratureTheorems.good_chern_weil_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	396	GlobalTheory.GoodMetric.goodChernWeil
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	453	theorem UpperTheory.LiteratureTheorems.landherr_st_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	454	(GlobalTheory.QNorm.landherr_and_landherrSt).2
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	417	theorem UpperTheory.LiteratureTheorems.hasse_norm_st_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	418	GlobalTheory.QNorm.hasseNormSt
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	497	theorem UpperTheory.LiteratureTheorems.semi_abelian_hom_extension_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	498	GlobalTheory.semiAbelianHomExtension_holds
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	441	theorem UpperTheory.LiteratureTheorems.induced_simple_lowest_alcove_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	442	GlobalTheory.Alc.inducedSimpleLowestAlcove
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	409	theorem UpperTheory.LiteratureTheorems.principal_polarisation_one_section_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	410	GlobalTheory.AbLaw.principalPolarisation_unique_section
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	237	theorem UpperTheory.LiteratureTheorems.ab_mul_n_st_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	238	GlobalTheory.abMulN_holds
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	407	theorem UpperTheory.LiteratureTheorems.grothendieck_messing_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	408	GlobalTheory.Published.GrothendieckDeformation.grothendieckMessing (_root_.UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature O)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	475	theorem UpperTheory.LiteratureTheorems.prismatic_dieudonne_hodge_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	476	UpperTheory.Lit.prismaticDieudonneHodge
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	447	theorem UpperTheory.LiteratureTheorems.kawamata_viehweg_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	448	GlobalTheory.KVFromPair.kawamataViehweg_of_nadelVanishingPair (GlobalTheory.nefNumerics_outright) (And.left (NadelVanishingSeparation.NSI.nadelVanishingAndNonKltDivisor))
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	469	theorem UpperTheory.LiteratureTheorems.nef_numerics_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	470	GlobalTheory.nefNumerics_outright
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	451	theorem UpperTheory.LiteratureTheorems.l2_extension_log_canonical_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	452	GlobalTheory.l2ExtensionLogCanonical'
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	255	theorem UpperTheory.LiteratureTheorems.arith_hilbert_samuel_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	256	GlobalTheory.arithHilbertSamuel_of_principalisation (_root_.UpperTheory.LiteratureTheorems.principalisation_of_literature O)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	325	theorem UpperTheory.LiteratureTheorems.chow_form_exists_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	326	GlobalTheory.Published.chowFormExists_holds
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	347	theorem UpperTheory.LiteratureTheorems.cycle_heights_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	348	GlobalTheory.ArithmeticHeightTower.ArakelovDirectHeights.cycleHeights_direct PositivityTheory.Tls2.Pl.poincareLelong PositivityTheory.ResPlug.FromRes.resK
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	503	theorem UpperTheory.LiteratureTheorems.serre_holomorphic_sections_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	504	GlobalTheory.Published.serreHolomorphicSections_holds
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	467	theorem UpperTheory.LiteratureTheorems.nadel_vanishing_and_non_klt_divisor_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	468	NadelVanishingSeparation.NSI.nadelVanishingAndNonKltDivisor
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	253	theorem UpperTheory.LiteratureTheorems.principalisation_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	254	PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisation_closed
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	381	theorem UpperTheory.LiteratureTheorems.formal_algebraisation_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	382	PositivityTheory.FormalThickening.formalAlgebraisation
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	405	theorem UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	406	GlobalTheory.Published.grothendieckDeformation_of_lifting (_root_.UpperTheory.LiteratureTheorems.abelian_de_rham_of_literature O) (_root_.UpperTheory.LiteratureTheorems.abelian_lifting_of_literature O)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	403	theorem UpperTheory.LiteratureTheorems.abelian_lifting_of_literature (O :
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	404	GlobalTheory.abelianScheme_hom_lifting_nilpotent_dividedPowers
+Development/WeilBound/CoreStatements/ResolutionCharZero/PlugResK.lean	7	theorem resK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKStatement :=
+Development/WeilBound/CoreStatements/ResolutionCharZero/PlugResK.lean	8	PositivityTheory.ResPlug.resK_of_weak resW princW
