@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 1496.69,
+  "tail": "dexed 55363644800 bytes 961147074 expressions\nindexed 55363710336 bytes 961148245 expressions\nindexed 55363775872 bytes 961149398 expressions\nindexed 55652330880 bytes 966049407 expressions\nindexed 55652396416 bytes 966050588 expressions\nindexed 55652461952 bytes 966051749 expressions\nindexed 55939313024 bytes 970963965 expressions\nindexed 55939378560 bytes 970965139 expressions\nindexed 55939444096 bytes 970966230 expressions\nindexed 56225377664 bytes 975866415 expressions\nindexed 56225443200 bytes 975867532 expressions\nindexed 56225508736 bytes 975868678 expressions\nindexed 56510983552 bytes 980784512 expressions\nindexed 56511049088 bytes 980785602 expressions\nindexed 56796982656 bytes 985706256 expressions\nindexed 56797048192 bytes 985707417 expressions\nindexed 56797113728 bytes 985708470 expressions\nindexed 57082719616 bytes 990624171 expressions\nindexed 57082785152 bytes 990625233 expressions\nindexed 57082850688 bytes 990626322 expressions\nindexed 57371180096 bytes 995522351 expressions\nindexed 57371245632 bytes 995523432 expressions\nindexed 57371311168 bytes 995524502 expressions\nindexed 57658489920 bytes 1000421465 expressions\nindexed 57658555456 bytes 1000422519 expressions\nindexed 57658620992 bytes 1000423497 expressions\nindexed 57658686528 bytes 1000424566 expressions\nindexed 57957137472 bytes 1005333614 expressions\nindexed 57957203008 bytes 1005334711 expressions\nindexed 57957268544 bytes 1005335680 expressions\nindexed 58255129664 bytes 1010257951 expressions\nindexed 58255195200 bytes 1010258932 expressions\nindexed 58255260736 bytes 1010259962 expressions\nindexed 58553384000 bytes 1015167405 expressions\nindexed 58553449536 bytes 1015168507 expressions\nindexed 58553515072 bytes 1015169628 expressions\nindexed 58850393152 bytes 1020081191 expressions\nindexed 58850458688 bytes 1020082258 expressions\nindexed 58850524224 bytes 1020083279 expressions\nindexed 59148975168 bytes 1025004942 expressions\nindexed 59149040704 bytes 1025006052 expressions\nindexed 59149106240 bytes 1025007154 expressions\nindexed 59446377536 bytes 1029942772 expressions\nindexed 59446443072 bytes 1029943878 expressions\nindexed 59446508608 bytes 1029944981 expressions\nindexed 59743059008 bytes 1034888425 expressions\nindexed 59743124544 bytes 1034889537 expressions\nindexed 59743190080 bytes 1034890593 expressions\nindexed 60039937088 bytes 1039833655 expressions\nindexed 60040002624 bytes 1039834772 expressions\nindexed 60040068160 bytes 1039835884 expressions\nindexed 60335766592 bytes 1044767602 expressions\nindexed 60335832128 bytes 1044768754 expressions\nindexed 60335897664 bytes 1044769895 expressions\nindexed 60631399488 bytes 1049695916 expressions\nindexed 60631465024 bytes 1049697056 expressions\nindexed 60631530560 bytes 1049698166 expressions\nindexed 60927818816 bytes 1054629449 expressions\nindexed 60927884352 bytes 1054630556 expressions\nindexed 60927949888 bytes 1054631672 expressions\nindexed 61225221184 bytes 1059557067 expressions\nindexed 61225286720 bytes 1059558016 expressions\nindexed 61225352256 bytes 1059559081 expressions\nindexed 61225417792 bytes 1059560190 expressions\nindexed 61523934272 bytes 1064470714 expressions\nindexed 61523999808 bytes 1064471806 expressions\nindexed 61524065344 bytes 1064472877 expressions\nauthenticated archive solution.ndjson.zst 5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e bytes 61570595788 expressions 1065214335 declarations 1484733 global missing hard 0 metadata-only 5 target {\"id\":6019714,\"nameParts\":[\"Formalism\",\"FourierDecayAlt\",\"P\",\"CutBP\",\"block_growth_bound_of_compact_coef\"],\"exported\":false,\"occurrences\":1,\"witnesses\":[{\"kind\":\"mutualBlock\",\"source\":6019703,\"sourceNameParts\":[\"Formalism\",\"FourierDecayAlt\",\"P\",\"CutBP\",\"block_growth_bound_of_compact_coefCpt\"]}]} begin hard-reference closure\n{\"file\":\"solution.ndjson.zst\",\"projectionMs\":5949,\"summary\":{\"recursorRuleRhs\":0,\"requests\":18,\"found\":18,\"typeEdges\":370,\"valueEdges\":1866,\"structuralEdges\":5,\"expressionReads\":37002},\"unresolved\":[]}\n",
+  "id": "rh-next-root-roles-20261124",
+  "question": "Extract ten previously root-linked exact Lean declarations and eight specialist probes from the authenticated RH archive; preserve inductive package structure and recursor rule RHS separately. Not kernel recheck.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_next_root_roles.mjs --out {out}",
+  "utc": "2026-11-24T20:39:27Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "63102da2488b52ab2f89e484e71a975547ad4118",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45478579968",
+  "outputs_committed": [
+    {
+      "path": "challenge_missing_metadata_owners.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "challenge_next_root_roles.json",
+      "bytes": 6563,
+      "sha256": "f1ea0b9af9bcfb802ca4a8be3d38ae8a3b08738eea037456ac9d2db706a4ee58"
+    },
+    {
+      "path": "challenge_reference_census.json",
+      "bytes": 1029,
+      "sha256": "073432fd5fe5cf8c505acf87bcace4168d4f07f92fdb2ce65734850ef9d18a20"
+    },
+    {
+      "path": "solution_missing_metadata_owners.jsonl",
+      "bytes": 1030,
+      "sha256": "3949471b200c52908996d8596011b33afe1eae36dd64dbfaee9ec8fbe72cf677"
+    },
+    {
+      "path": "solution_next_root_roles.json",
+      "bytes": 712593,
+      "sha256": "beef81685baec5816525e9fe23974ba1541acc10beec0648140a156f62f83831"
+    },
+    {
+      "path": "solution_reference_census.json",
+      "bytes": 3690,
+      "sha256": "4f509f592fbcd0b9746c0824e47a48c0a4fe97c07d761919429dfb4c71def82a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

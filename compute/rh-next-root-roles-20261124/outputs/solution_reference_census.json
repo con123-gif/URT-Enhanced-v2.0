@@ -1,0 +1,181 @@
+{
+  "archive": "solution.ndjson.zst",
+  "digest": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "bytes": 61570595788,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "indexedExpressions": 1065214335,
+  "indexedDeclarations": 1484733,
+  "status": "GLOBAL_EXPORT_REFERENCE_CENSUS_NOT_ROOT_CLOSURE",
+  "occurrences": {
+    "constant": 2131429,
+    "projection": 65718,
+    "literal": 27492,
+    "structural": 81574,
+    "mutualBlock": 1460442
+  },
+  "missingByKind": {
+    "constant": 0,
+    "projection": 0,
+    "literal": 0,
+    "structural": 0,
+    "mutualBlock": 5
+  },
+  "missingNames": 5,
+  "metadataOnlyMissing": 5,
+  "hardMissing": 0,
+  "indexPayloadBytes": 225705984,
+  "target": {
+    "id": 6019714,
+    "nameParts": [
+      "Formalism",
+      "FourierDecayAlt",
+      "P",
+      "CutBP",
+      "block_growth_bound_of_compact_coef"
+    ],
+    "exported": false,
+    "occurrences": 1,
+    "witnesses": [
+      {
+        "kind": "mutualBlock",
+        "source": 6019703,
+        "sourceNameParts": [
+          "Formalism",
+          "FourierDecayAlt",
+          "P",
+          "CutBP",
+          "block_growth_bound_of_compact_coefCpt"
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 6017785,
+      "nameParts": [
+        "Formalism",
+        "FourierDecayAlt",
+        "P",
+        "CutBP",
+        "low_level_gram"
+      ],
+      "witnesses": [
+        {
+          "kind": "mutualBlock",
+          "source": 6017784,
+          "sourceNameParts": [
+            "Formalism",
+            "FourierDecayAlt",
+            "P",
+            "CutBP",
+            "low_level_gramCpt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6017786,
+      "nameParts": [
+        "Formalism",
+        "FourierDecayAlt",
+        "P",
+        "CutBP",
+        "glFibre"
+      ],
+      "witnesses": [
+        {
+          "kind": "mutualBlock",
+          "source": 6017811,
+          "sourceNameParts": [
+            "Formalism",
+            "FourierDecayAlt",
+            "P",
+            "CutBP",
+            "glFibreCpt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6017886,
+      "nameParts": [
+        "Formalism",
+        "FourierDecayAlt",
+        "P",
+        "CutBP",
+        "low_level_fibre"
+      ],
+      "witnesses": [
+        {
+          "kind": "mutualBlock",
+          "source": 6017885,
+          "sourceNameParts": [
+            "Formalism",
+            "FourierDecayAlt",
+            "P",
+            "CutBP",
+            "low_level_fibreCpt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6018281,
+      "nameParts": [
+        "Formalism",
+        "FourierDecayAlt",
+        "P",
+        "CutBP",
+        "germ_data_low_levels"
+      ],
+      "witnesses": [
+        {
+          "kind": "mutualBlock",
+          "source": 6018280,
+          "sourceNameParts": [
+            "Formalism",
+            "FourierDecayAlt",
+            "P",
+            "CutBP",
+            "germ_data_low_levelsCpt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6019714,
+      "nameParts": [
+        "Formalism",
+        "FourierDecayAlt",
+        "P",
+        "CutBP",
+        "block_growth_bound_of_compact_coef"
+      ],
+      "witnesses": [
+        {
+          "kind": "mutualBlock",
+          "source": 6019703,
+          "sourceNameParts": [
+            "Formalism",
+            "FourierDecayAlt",
+            "P",
+            "CutBP",
+            "block_growth_bound_of_compact_coefCpt"
+          ]
+        }
+      ]
+    }
+  ]
+}

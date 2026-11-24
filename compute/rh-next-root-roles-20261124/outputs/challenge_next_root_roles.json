@@ -1,0 +1,232 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "file": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 6112241,
+  "root": 326835,
+  "indexedDeclarations": 53722,
+  "projectionMs": 31,
+  "maxRssKiB": 261164,
+  "summary": {
+    "recursorRuleRhs": 0,
+    "requests": 18,
+    "found": 0,
+    "typeEdges": 0,
+    "valueEdges": 0,
+    "structuralEdges": 0,
+    "expressionReads": 0
+  },
+  "reports": [
+    {
+      "request": {
+        "name": "UpperTheory.TP.K.tLiftK",
+        "id": 14065049,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+          "role": "value",
+          "witness": 1065212053
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+        "id": 14009158,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+          "role": "value",
+          "witness": 1065212052
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+        "id": 13125898,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.vwin_of_row",
+          "role": "value",
+          "witness": 997980685
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.BaseChangeIdentities.baseChangeN",
+        "id": 8352348,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.vwin_of_row",
+          "role": "value",
+          "witness": 677083986
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+        "id": 8026888,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "role": "value",
+          "witness": 893073824
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+        "id": 11298207,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "role": "value",
+          "witness": 893073879
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.type",
+        "id": 11307204,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.recTExists",
+          "role": "value",
+          "witness": 893652253
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.extDepth",
+        "id": 11306966,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.recTExists",
+          "role": "value",
+          "witness": 893651816
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements",
+        "id": 550020,
+        "kind": "inductive",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.mk",
+          "role": "type",
+          "witness": 12992045
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.EveryCharacter",
+        "id": 326947,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "role": "type",
+          "witness": 6497236
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CentralExponent.exists_cong_subset",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CentralExponent.isOpen_cong",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.SmGL.isSmoothChar_deltaHalf",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.SmGL.nabs_eq_one",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GroundTheory.Automorphic.Parabolic.conj_mem_unipotentRadical",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GroundTheory.Automorphic.Parabolic.leviProj_inv_mul_mem",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.logDeriv_local",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.poleData",
+        "origin": "peer_exact_name_probe_not_root_bound"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    }
+  ]
+}
