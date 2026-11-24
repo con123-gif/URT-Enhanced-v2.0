@@ -3328,3 +3328,12 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-native-cycle-rc1-20261124"
+question = "On the separately pinned Lean v4.37.0-rc1, compare imported cached axiom reports with the newly public fresh collector (extension lookup disabled) for the previously native-tested synthetic inductive cycle; not RH validation."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_native_cycle_rc1.sh --out {out}"
+timeout_minutes = 30
+requested_by = "GPT"
+claim = "independent"
