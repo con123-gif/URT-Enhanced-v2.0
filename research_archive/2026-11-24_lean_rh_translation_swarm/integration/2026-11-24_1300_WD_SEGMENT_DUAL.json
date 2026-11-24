@@ -1,0 +1,447 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "upstreamHeadObserved": "e26756e547b281cbf137eb7e0f16cccb738f3f84",
+  "ledger": {
+    "producer": {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WeilDeligneParamDualListSumAbsTwistSpecial.lean",
+      "sha": "100b1d664c23cb540975d0b48b5205ac20c68ae1",
+      "anchors": [
+        {
+          "anchor": "theorem iso_sum_dual",
+          "line": 18
+        },
+        {
+          "anchor": "theorem iso_tensor_dual",
+          "line": 23
+        },
+        {
+          "anchor": "theorem qPow_neg'",
+          "line": 42
+        },
+        {
+          "anchor": "theorem iso_tw_dual",
+          "line": 45
+        },
+        {
+          "anchor": "theorem shiftEnd_single",
+          "line": 53
+        },
+        {
+          "anchor": "theorem spEig_rev",
+          "line": 60
+        },
+        {
+          "anchor": "theorem diagEnd_single",
+          "line": 69
+        },
+        {
+          "anchor": "def spDualMap",
+          "line": 75
+        },
+        {
+          "anchor": "theorem spDualMap_injective",
+          "line": 83
+        },
+        {
+          "anchor": "theorem iso_sp_dual",
+          "line": 94
+        },
+        {
+          "anchor": "theorem lpDual_lpZero",
+          "line": 120
+        },
+        {
+          "anchor": "theorem lpDual_lpSum",
+          "line": 125
+        },
+        {
+          "anchor": "theorem lpDual_sumList",
+          "line": 133
+        },
+        {
+          "anchor": "theorem lpDual_lpTw",
+          "line": 140
+        },
+        {
+          "anchor": "theorem lpDual_lpChar_lpSp",
+          "line": 146
+        },
+        {
+          "anchor": "theorem lpDual_sum_tw_sp",
+          "line": 156
+        },
+        {
+          "anchor": "(-1 : ℂ) ^ (i : ℕ) * f (Pi.single i.rev 1)",
+          "line": 76
+        },
+        {
+          "anchor": "WDRep.dual_N",
+          "line": 103
+        },
+        {
+          "anchor": "WD.sound ((iso_tensor_dual",
+          "line": 151
+        }
+      ]
+    },
+    "wrapper": {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WeilDeligneParamDualListSumAbsTwistSpecialStatement.lean",
+      "sha": "071a8602e24eb36f7cc67b3b9686c61340e7d7dd",
+      "anchors": [
+        {
+          "anchor": "theorem _root_.GlobalTheory.T.weilDeligneParam_dual_listSum_absTwist_special",
+          "line": 11
+        },
+        {
+          "anchor": "GlobalTheory.WDDual.lpDual_sum_tw_sp",
+          "line": 12
+        }
+      ]
+    },
+    "consumer": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDual.lean",
+      "sha": "d73720859f5c9237ec612be0ce3ba0c727e20835",
+      "anchors": [
+        {
+          "anchor": "private theorem summand_dual",
+          "line": 17
+        },
+        {
+          "anchor": "(hg : GoodCusp Δ.first) (hd : SegDual Δ Δ')",
+          "line": 18
+        },
+        {
+          "anchor": "have e1 := H.dual",
+          "line": 27
+        },
+        {
+          "anchor": "H.nu _ Δ.isCusp_first",
+          "line": 29
+        },
+        {
+          "anchor": "rw [e1, hl, hP, hT, hT, WD.lpTw_add]",
+          "line": 31
+        },
+        {
+          "anchor": "private theorem map_summand_dual",
+          "line": 35
+        },
+        {
+          "anchor": "theorem UpperTheory.Zero.LLC.extDual",
+          "line": 47
+        },
+        {
+          "anchor": "Pr.exh",
+          "line": 51
+        },
+        {
+          "anchor": "Pr.dual",
+          "line": 54
+        },
+        {
+          "anchor": "goodSeg",
+          "line": 55
+        },
+        {
+          "anchor": "congrArg sumList",
+          "line": 57
+        }
+      ]
+    },
+    "definition": {
+      "path": "src/Development/AbelianVarietyTheory/PublishedTheorems/AutomorphicForms₂/LocalLanglandsGL.lean",
+      "sha": "0e3abe539c00d0b51ab3c34976e97e17a34abad7",
+      "anchors": [
+        {
+          "anchor": "def sumList (l : List (WD h)) : WD h := l.foldr WD.lpSum (WD.lpZero h)",
+          "line": 21
+        }
+      ]
+    }
+  },
+  "root": "ext",
+  "nodes": [
+    {
+      "id": "ext",
+      "file": "consumer",
+      "anchor": "theorem UpperTheory.Zero.LLC.extDual",
+      "deps": [
+        "map",
+        "wrapper"
+      ],
+      "guard": "ExtDual full ambient prefix; CuspT, extension law, good source, contragredient equivalence",
+      "frontier": [
+        "Pr.exh",
+        "Pr.dual",
+        "goodSeg",
+        "IsL"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "map",
+      "file": "consumer",
+      "anchor": "private theorem map_summand_dual",
+      "deps": [
+        "segment"
+      ],
+      "guard": "all first terms GoodCusp; List.Forall₂ SegDual",
+      "frontier": [],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "segment",
+      "file": "consumer",
+      "anchor": "private theorem summand_dual",
+      "deps": [
+        "wrapper"
+      ],
+      "guard": "CuspT; GoodCusp Δ.first; SegDual Δ Δ'",
+      "frontier": [
+        "clBasic",
+        "CuspT.dual",
+        "CuspT.nu",
+        "WD.lpTw_add"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "wrapper",
+      "file": "wrapper",
+      "anchor": "theorem _root_.GlobalTheory.T.weilDeligneParam_dual_listSum_absTwist_special",
+      "deps": [
+        "triple"
+      ],
+      "guard": "E Ω fields, NumberField E, Algebra, IsAlgClosure, A valuation subring, w height-one spectrum, h place-over",
+      "frontier": [],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "triple",
+      "file": "producer",
+      "anchor": "theorem lpDual_sum_tw_sp",
+      "deps": [
+        "list",
+        "twclass",
+        "spclass"
+      ],
+      "guard": "same ambient prefix; all lists, real s, natural n including zero",
+      "frontier": [],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "list",
+      "file": "producer",
+      "anchor": "theorem lpDual_sumList",
+      "deps": [
+        "zero",
+        "sumclass"
+      ],
+      "guard": "finite list of WD classes",
+      "frontier": [],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "zero",
+      "file": "producer",
+      "anchor": "theorem lpDual_lpZero",
+      "deps": [],
+      "guard": "zero WD class",
+      "frontier": [
+        "WD.sound",
+        "LinearEquiv.ofFinrankEq",
+        "Subspace.dual_finrank_eq"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "sumclass",
+      "file": "producer",
+      "anchor": "theorem lpDual_lpSum",
+      "deps": [
+        "sumiso"
+      ],
+      "guard": "two WD classes",
+      "frontier": [
+        "WD.ind",
+        "WD.sound",
+        "WD.lpSum_mk",
+        "WD.lpDual_mk"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "sumiso",
+      "file": "producer",
+      "anchor": "theorem iso_sum_dual",
+      "deps": [],
+      "guard": "finite-dimensional complex WD representations",
+      "frontier": [
+        "Module.dualProdDualEquivDual"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "twclass",
+      "file": "producer",
+      "anchor": "theorem lpDual_lpTw",
+      "deps": [
+        "twiso"
+      ],
+      "guard": "WD class and real twist",
+      "frontier": [
+        "WD.ind",
+        "WD.sound"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "twiso",
+      "file": "producer",
+      "anchor": "theorem iso_tw_dual",
+      "deps": [
+        "qneg"
+      ],
+      "guard": "WDRep and real s",
+      "frontier": [
+        "WDRep.dual_ρ",
+        "WDRep.twist_ρ",
+        "unrChar_apply",
+        "inv_zpow'"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "qneg",
+      "file": "producer",
+      "anchor": "theorem qPow_neg'",
+      "deps": [],
+      "guard": "real s",
+      "frontier": [
+        "qPow_add",
+        "qPow_zero"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "spclass",
+      "file": "producer",
+      "anchor": "theorem lpDual_lpChar_lpSp",
+      "deps": [
+        "tensoriso",
+        "spiso"
+      ],
+      "guard": "WD class and natural n",
+      "frontier": [
+        "WD.ind",
+        "WD.sound",
+        "WDRep.Iso.tensor"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "tensoriso",
+      "file": "producer",
+      "anchor": "theorem iso_tensor_dual",
+      "deps": [],
+      "guard": "two finite-dimensional complex WD representations",
+      "frontier": [
+        "TensorProduct.dualDistribEquiv",
+        "TensorProduct.induction_on"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "spiso",
+      "file": "producer",
+      "anchor": "theorem iso_sp_dual",
+      "deps": [
+        "injective",
+        "shift",
+        "rev",
+        "diag"
+      ],
+      "guard": "n natural; no positivity of n required",
+      "frontier": [
+        "LinearMap.linearEquivOfInjective",
+        "Subspace.dual_finrank_eq",
+        "WDRep.sp_ρ",
+        "WDRep.sp_N",
+        "WDRep.dual_N"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "injective",
+      "file": "producer",
+      "anchor": "theorem spDualMap_injective",
+      "deps": [
+        "mapdef"
+      ],
+      "guard": "natural n",
+      "frontier": [
+        "LinearMap.pi_ext",
+        "Fin.rev_rev"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "mapdef",
+      "file": "producer",
+      "anchor": "def spDualMap",
+      "deps": [],
+      "guard": "dual of Fin n → ℂ",
+      "frontier": [],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "shift",
+      "file": "producer",
+      "anchor": "theorem shiftEnd_single",
+      "deps": [],
+      "guard": "j : Fin n",
+      "frontier": [
+        "shiftEnd_apply"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "rev",
+      "file": "producer",
+      "anchor": "theorem spEig_rev",
+      "deps": [
+        "qneg"
+      ],
+      "guard": "i : Fin n",
+      "frontier": [
+        "WDRep.spEig",
+        "Fin.val_rev"
+      ],
+      "status": "SOURCE-MATCHED"
+    },
+    {
+      "id": "diag",
+      "file": "producer",
+      "anchor": "theorem diagEnd_single",
+      "deps": [],
+      "guard": "c : Fin n → ℂ, j : Fin n",
+      "frontier": [
+        "diagEnd_apply"
+      ],
+      "status": "SOURCE-MATCHED"
+    }
+  ],
+  "result": {
+    "sourceBlobs": 4,
+    "anchors": 33,
+    "nodes": 20,
+    "edges": 21,
+    "monodromy": 528,
+    "diagonal": 2640,
+    "normalization": 561,
+    "negativeControls": 3
+  },
+  "scope": "selected source obligations; not kernel closure",
+  "review": "pending",
+  "resume": "Trace GoodSeg and Pr.dual producers; preserve guards."
+}
