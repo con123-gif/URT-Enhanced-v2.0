@@ -1,0 +1,70 @@
+{
+  "status": "Executed SCC and event-driven scheduling tests; actual selected source graph and large constructed graph. Not kernel validation or actual mathematical completion.",
+  "source": {
+    "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "blob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+    "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean"
+  },
+  "actual": {
+    "nodes": 179,
+    "edgeOccurrences": 291,
+    "components": 179,
+    "uniqueComponentEdges": 291,
+    "condensationEdgeReads": 1164,
+    "scheduling": {
+      "edgeReads": 582,
+      "completed": 179,
+      "blocked": 0
+    },
+    "topInvalidation": [
+      {
+        "component": 71,
+        "name": "UpperTheory.LiteratureTheorems.global_artin_reciprocity_of_literature",
+        "affected": 12
+      },
+      {
+        "component": 139,
+        "name": "UpperTheory.LiteratureTheorems.bernstein_zelevinsky_finiteness_of_literature",
+        "affected": 12
+      },
+      {
+        "component": 141,
+        "name": "UpperTheory.LiteratureTheorems.grothendieck_ring_polynomial_of_literature",
+        "affected": 12
+      },
+      {
+        "component": 142,
+        "name": "UpperTheory.LiteratureTheorems.segment_representation_of_literature",
+        "affected": 12
+      },
+      {
+        "component": 69,
+        "name": "UpperTheory.LiteratureTheorems.geometric_restriction_of_literature",
+        "affected": 11
+      }
+    ]
+  },
+  "tests": {
+    "cycles": true,
+    "duplicatesPreserved": true,
+    "boundaryBlocks": true,
+    "checkpoint": true,
+    "invalidation": true,
+    "rejects": 3,
+    "large": {
+      "nodes": 100000,
+      "edges": 109999,
+      "components": 90000,
+      "condensationEdgeReads": 439996,
+      "schedulingEdgeReads": 179998
+    }
+  },
+  "notes": [
+    "Actual selected graph includes only internal source references, not external proof dependencies. Completion in benchmark is simulated, never evidence of proof.",
+    "Condensation O(V+E) graph operations; retain every original edge occurrence and node, group strongly connected components as audit units. A component can only be committed complete after independent evidence covers all its members.",
+    "Ready counters touch component edges once at initialisation and once at completion. Invalidate only reverse-reachable units when an upstream proof changes; not global rescan. Unknown endpoints explicitly block until an audited checkpoint discharges them.",
+    "No URT-specific speed claim; exact graph reduction is the currently established acceleration mechanism. Future mixed expression/constant graph can contain recursive types; use this on bounded named subgraphs, or packed-array implementation for entire export, not naive JS objects for hundreds of millions of expressions.",
+    "Retry full-export run 45349329680 is still in progress as checked this session. No final status. Do not interrupt or claim export success."
+  ],
+  "resume": "When full export completes, map actual declaration roots and expression references, preserve structural edges separately, feed manageable named dependency groups to SCC scheduler. Integrate audited checkpoints and invalidation; do not treat simulated order as finished proof."
+}
