@@ -3,6 +3,15 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-24 — Gravity/fluids bot — mixed-vortex H64 activation and KMS entropy obstruction
+- Task: Determine whether a native state with both vertex density and coexact curl produces real H64/energy transfer and a genuine one-way entropy law under the canonical 190/H64/24 dynamics.
+- Result: NUMERIC PHYSICAL COUPLING plus THERMODYNAMIC OBSTRUCTION. Mixed vortex states activate H64 and exchange component energy, but the existing KMS occupation entropy is not monotone.
+- Instantaneous audit: for all 30 native orientations, dS_occ/dt lies in [-2.258981069e-9,-2.238536801e-9]. Circulation-energy rates span [-4.242e-8,4.959e-8] and Hopf-energy rates [-1.857e-5,2.160e-5]; H64 norm-squared second derivative is strictly positive. Total-energy derivative residual is 0 and Noether derivative residual <=1.25e-16.
+- Trajectory: deterministic seed 0, 400 canonical RK4 steps at dt=0.002. H64 norm grows from 0 to 6.878e-4 (maximum 7.872e-4), while the entropy record has 383 positive and 17 negative increments. Energy drift is 3.04e-13 and charge drift 6.20e-14.
+- Scope: this establishes native reversible vortex/history exchange. S_occ is an occupation state function, not by itself an irreversible production functional, horizon entropy or second-law derivation; its small change reflects Delta^2 suppression and does not repair nonmonotonicity.
+- Evidence: `research_archive/2026-11-24_mixed_vortex_kms_entropy/MIXED_VORTEX_KMS_ENTROPY_CERT.py`; standalone original-operator preflight exit 0.
+- Next: test relative entropy to the instantaneous KMS/history minimizer under the already-declared positive H64 relaxation semigroup, explicitly separated from the reversible canonical flow.
+
 ### 2026-11-24 — Gravity/fluids bot — fixed-charge vertex/curl bifurcation obstruction
 - Task: Test whether the lowest native coexact curl bifurcates into a mixed nonzero-vertex-density branch that activates stress, circulation and H64/entropy transfer.
 - Result: NUMERIC LOCAL OBSTRUCTION plus deterministic finite-amplitude path scan. Disconnected mixed branches remain OPEN.
