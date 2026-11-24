@@ -1,0 +1,9 @@
+'CathedralAxiomCycle.Witness' depends on axioms: [CathedralAxiomCycle.guardProp]
+'CathedralAxiomCycle.Witness.plain' does not depend on any axioms
+'CathedralAxiomCycle.Witness.guarded' depends on axioms: [CathedralAxiomCycle.guardProp]
+'CathedralAxiomCycleDownstream.aliasPlain' depends on axioms: [CathedralAxiomCycle.guardProp]
+'CathedralAxiomCycleDownstream.consume' depends on axioms: [CathedralAxiomCycle.guardProp]
+'CathedralAxiomCycleDownstream.guardTag' depends on axioms: [CathedralAxiomCycle.guardProp]
+'CathedralAxiomCycleDownstream.cleanTag' does not depend on any axioms
+'CathedralAxiomCycleThird.aliasAgain' depends on axioms: [CathedralAxiomCycle.guardProp]
+'CathedralAxiomCycleThird.viaConsumer' depends on axioms: [CathedralAxiomCycle.guardProp]

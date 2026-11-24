@@ -1,0 +1,433 @@
+{
+  "status": "NATIVE_DOWNSTREAM_ROLE_EXPERIMENT_NOT_RH_RECHECK",
+  "rows": [
+    {
+      "root": "CathedralAxiomCycle.Witness",
+      "kind": "inductive",
+      "typeDirect": [],
+      "valueDirect": [],
+      "typeAxioms": [],
+      "valueAxioms": [],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinLocal": null,
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycle.Witness",
+            "CathedralAxiomCycle.Witness.guarded",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "CathedralAxiomCycle.Witness.plain",
+      "kind": "constructor",
+      "typeDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ]
+        ]
+      ],
+      "valueDirect": [],
+      "typeAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "valueAxioms": [],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [],
+      "builtinLocal": null,
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycle.Witness.plain",
+            "CathedralAxiomCycle.Witness",
+            "CathedralAxiomCycle.Witness.guarded",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "CathedralAxiomCycle.Witness.guarded",
+      "kind": "constructor",
+      "typeDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "guardProp"
+          ]
+        ],
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ]
+        ]
+      ],
+      "valueDirect": [],
+      "typeAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "valueAxioms": [],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinLocal": null,
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycle.Witness.guarded",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "CathedralAxiomCycleDownstream.aliasPlain",
+      "kind": "definition",
+      "typeDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ]
+        ]
+      ],
+      "valueDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ],
+          [
+            "s",
+            "plain"
+          ]
+        ]
+      ],
+      "typeAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "valueAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinLocal": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycleDownstream.aliasPlain",
+            "CathedralAxiomCycle.Witness",
+            "CathedralAxiomCycle.Witness.guarded",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "CathedralAxiomCycleDownstream.consume",
+      "kind": "definition",
+      "typeDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Nat"
+          ]
+        ]
+      ],
+      "valueDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ]
+        ],
+        [
+          [
+            "s",
+            "OfNat"
+          ],
+          [
+            "s",
+            "ofNat"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Nat"
+          ]
+        ],
+        [
+          [
+            "s",
+            "instOfNatNat"
+          ]
+        ]
+      ],
+      "typeAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "valueAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinLocal": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycleDownstream.consume",
+            "CathedralAxiomCycle.Witness",
+            "CathedralAxiomCycle.Witness.guarded",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "CathedralAxiomCycleDownstream.guardTag",
+      "kind": "definition",
+      "typeDirect": [],
+      "valueDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "guardProp"
+          ]
+        ]
+      ],
+      "typeAxioms": [],
+      "valueAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinLocal": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycleDownstream.guardTag",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "CathedralAxiomCycleDownstream.cleanTag",
+      "kind": "definition",
+      "typeDirect": [],
+      "valueDirect": [
+        [
+          [
+            "s",
+            "True"
+          ]
+        ]
+      ],
+      "typeAxioms": [],
+      "valueAxioms": [],
+      "coreAxioms": [],
+      "builtinImported": [],
+      "builtinLocal": [],
+      "coreAxiomPaths": []
+    },
+    {
+      "root": "CathedralAxiomCycleThird.aliasAgain",
+      "kind": "definition",
+      "typeDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ]
+        ]
+      ],
+      "valueDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycleDownstream"
+          ],
+          [
+            "s",
+            "aliasPlain"
+          ]
+        ]
+      ],
+      "typeAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "valueAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinLocal": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycleThird.aliasAgain",
+            "CathedralAxiomCycle.Witness",
+            "CathedralAxiomCycle.Witness.guarded",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "CathedralAxiomCycleThird.viaConsumer",
+      "kind": "definition",
+      "typeDirect": [
+        [
+          [
+            "s",
+            "Nat"
+          ]
+        ]
+      ],
+      "valueDirect": [
+        [
+          [
+            "s",
+            "CathedralAxiomCycleDownstream"
+          ],
+          [
+            "s",
+            "consume"
+          ]
+        ],
+        [
+          [
+            "s",
+            "CathedralAxiomCycle"
+          ],
+          [
+            "s",
+            "Witness"
+          ],
+          [
+            "s",
+            "plain"
+          ]
+        ]
+      ],
+      "typeAxioms": [],
+      "valueAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxioms": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinImported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "builtinLocal": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "coreAxiomPaths": [
+        {
+          "name": "CathedralAxiomCycle.guardProp",
+          "path": [
+            "CathedralAxiomCycleThird.viaConsumer",
+            "CathedralAxiomCycleDownstream.consume",
+            "CathedralAxiomCycle.Witness",
+            "CathedralAxiomCycle.Witness.guarded",
+            "CathedralAxiomCycle.guardProp"
+          ]
+        }
+      ]
+    }
+  ],
+  "guardOmissions": [
+    "CathedralAxiomCycle.Witness.plain"
+  ],
+  "aliasCombinedMasks": true
+}

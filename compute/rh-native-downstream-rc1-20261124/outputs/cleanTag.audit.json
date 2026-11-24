@@ -1,0 +1,19 @@
+{
+  "nodes": 3,
+  "coreEdges": 3,
+  "allEdges": 5,
+  "builtin": [],
+  "core": {
+    "visited": 3,
+    "axioms": [],
+    "missing": [],
+    "bodyMissing": []
+  },
+  "full": {
+    "visited": 3,
+    "axioms": [],
+    "missing": [],
+    "bodyMissing": []
+  },
+  "agreement": true
+}

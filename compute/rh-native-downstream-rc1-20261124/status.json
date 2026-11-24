@@ -1,0 +1,182 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 23.29,
+  "tail": "  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current\n                                 Dload  Upload  Total   Spent   Left   Speed\n\r  0      0   0      0   0      0      0      0                              0\r  0      0   0      0   0      0      0      0                              0\r  0      0   0      0   0      0      0      0                              0\n\r  0      0   0      0   0      0      0      0                              0\r 52 629.1M  52 329.3M   0      0 263.7M      0   00:02   00:01   00:01 329.3M\r 91 629.1M  91 578.5M   0      0 257.3M      0   00:02   00:02         289.4M\r100 629.1M 100 629.1M   0      0 255.9M      0   00:02   00:02         289.4M\r100 629.1M 100 629.1M   0      0 255.9M      0   00:02   00:02         289.4M\r100 629.1M 100 629.1M   0      0 255.9M      0   00:02   00:02         289.4M\nlean-4.37.0-rc1-linux.tar.zst: OK\nLean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)\nLean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)\n{\"guardOmissions\": [\"CathedralAxiomCycle.Witness.plain\"], \"aliasCombinedMasks\": true, \"roots\": 9}\n",
+  "id": "rh-native-downstream-rc1-20261124",
+  "question": "Can actual well-typed downstream Lean declarations reveal or mask the imported constructor axiom-cache undercount? Compare exact type/value roles and constructor-inclusive graph with public reports across two module boundaries; not RH verification.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_native_downstream_rc1.sh --out {out}",
+  "utc": "2026-11-24T18:12:33Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "c251ffa4df2f5995271852c05585554960cc56d0",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45456786809",
+  "outputs_committed": [
+    {
+      "path": "AxiomCycleBase.lean",
+      "bytes": 267,
+      "sha256": "d9680e02fc8a03f9dcc2fb3ded590fde55048a0e5b591378fe310909d7a02974"
+    },
+    {
+      "path": "AxiomCycleDownstream.lean",
+      "bytes": 563,
+      "sha256": "359e91b118153eede538e76ccbbc7fb39440f42274fdf426f6f871c386492401"
+    },
+    {
+      "path": "AxiomCycleDownstreamImport.lean",
+      "bytes": 484,
+      "sha256": "c5084b3bb68cb9231d747b96d7315fc4985be2f412bf8804b1d67c5a1f43e46c"
+    },
+    {
+      "path": "AxiomCycleThird.lean",
+      "bytes": 382,
+      "sha256": "d1f16703cf92fef0d8a93e268ea160744d950253802e1992094952a9c7e4e1b6"
+    },
+    {
+      "path": "DownstreamGraphDriver.lean",
+      "bytes": 7507,
+      "sha256": "9c64f3a7c6a8acbf57e70f0d8759dc18ac5eba0ae29213f5de7f033651299e77"
+    },
+    {
+      "path": "Witness.audit.json",
+      "bytes": 777,
+      "sha256": "79577ccb1120854a6d778dc85578abd3303d486639d99e798baf67599697af4b"
+    },
+    {
+      "path": "Witness.jsonl",
+      "bytes": 2780,
+      "sha256": "00b4214284994aae41d6455c3119ff4c9c6e597b2c434afe8f74b610f69e0867"
+    },
+    {
+      "path": "aliasAgain.audit.json",
+      "bytes": 876,
+      "sha256": "c86ad80ac83f30de88f40a0d38562349d7b49773d5f3df0cde79902bcdfd89fc"
+    },
+    {
+      "path": "aliasAgain.jsonl",
+      "bytes": 4215,
+      "sha256": "2f1d1a504a08d0eb62a1b7ab120e1475a90d0651819304dc1d8bbe9ca95a0d01"
+    },
+    {
+      "path": "aliasPlain.audit.json",
+      "bytes": 885,
+      "sha256": "cd46f58e5505d7d183ef4f20af7606318d220a16dec0ffcd79ca20fdd9140515"
+    },
+    {
+      "path": "aliasPlain.jsonl",
+      "bytes": 3517,
+      "sha256": "9ce5bcce437429fc3fc60dabf0edb09fd4892203ec74990df2a27848a9744968"
+    },
+    {
+      "path": "base.log",
+      "bytes": 197,
+      "sha256": "5a61a3a86cf257defcdcfd5b7c03e2351993817b3bc1ba579d40875b4c42de37"
+    },
+    {
+      "path": "cleanTag.audit.json",
+      "bytes": 278,
+      "sha256": "7cabd285a3799d32129d0d4abadb9c2363f9b7eadc1ab36aa85d0edff8695109"
+    },
+    {
+      "path": "cleanTag.jsonl",
+      "bytes": 1866,
+      "sha256": "304f1959acbbfeee89d2d94c5e6c0dd20050c9c0b2a7fe2d5d91ae791296354e"
+    },
+    {
+      "path": "consume.audit.json",
+      "bytes": 884,
+      "sha256": "b2771ef78978dc520b83463942ef3498021dab67e4fc8a4da90fe9ec85f18475"
+    },
+    {
+      "path": "consume.jsonl",
+      "bytes": 7460,
+      "sha256": "f7b71df9d28a2acadd22b6c2bebad3d092152761426ada17d1c5544597709375"
+    },
+    {
+      "path": "downstream_local.log",
+      "bytes": 348,
+      "sha256": "b64d8452b27c94cda3efc1bc9bc6956593e17dddaba5aaa6c6a0346214abe331"
+    },
+    {
+      "path": "downstream_result.json",
+      "bytes": 9195,
+      "sha256": "b86a1acc2c251ca2c9ed7045db4ee03b07984435b947aa784b4e0eaacc2b0a8e"
+    },
+    {
+      "path": "driver.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "guardTag.audit.json",
+      "bytes": 701,
+      "sha256": "95130f3e02278dae5cff337cc22a16f3ef60268ecb298264feb73259b0fa1f9f"
+    },
+    {
+      "path": "guardTag.jsonl",
+      "bytes": 1420,
+      "sha256": "3887d7908cf28a252dc8c0201d91a10ff62503abc267a0fe6fd9668f116e6afd"
+    },
+    {
+      "path": "guarded.audit.json",
+      "bytes": 695,
+      "sha256": "aca01d81078cddbbdcf919c9cf676b17e171710761ff4200f6efd3c85d295c2b"
+    },
+    {
+      "path": "guarded.jsonl",
+      "bytes": 2796,
+      "sha256": "58adbbfe8c8b371bd9430a8a05ed0899dd9e4b0f3f8694684f5028d1d922a718"
+    },
+    {
+      "path": "imported.log",
+      "bytes": 763,
+      "sha256": "6e333a45781b1bb2b681708bf4b9125d8522d4e40d3557729ad2c5f7f9bc4018"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 110,
+      "sha256": "91cb3661433be8a70db28be8ac1889777bc65ed26eafa0e835f229b4e0e4baae"
+    },
+    {
+      "path": "plain.audit.json",
+      "bytes": 833,
+      "sha256": "f4e3846e9db21ef0f0f349900c6549ebe5dd771ba4c2ebdbd068bac783fb2f22"
+    },
+    {
+      "path": "plain.jsonl",
+      "bytes": 2747,
+      "sha256": "18abf8240d610702b09f90799f1caf38c2e27798564c12b0628aad7fc10409a3"
+    },
+    {
+      "path": "release_sha256.txt",
+      "bytes": 34,
+      "sha256": "ba0892d2cd99a605d5253bf7bf7bef27d758486813929646acde488c01e7d033"
+    },
+    {
+      "path": "third_local.log",
+      "bytes": 179,
+      "sha256": "12f874683b221f22ecc7b50271a875cef2e57612faeaffec33b8ad5e9f43d22b"
+    },
+    {
+      "path": "viaConsumer.audit.json",
+      "bytes": 984,
+      "sha256": "f61eaed41f068100da890a010d36dad6795c78a2bb2b2ab17fc9dbb684192776"
+    },
+    {
+      "path": "viaConsumer.jsonl",
+      "bytes": 8190,
+      "sha256": "51a360ed665851eb6c9a3680e6963c6e9e7e8439c93ce698a71d50a141875fad"
+    }
+  ],
+  "outputs_artifact_only": []
+}

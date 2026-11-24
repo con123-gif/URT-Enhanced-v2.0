@@ -36,3 +36,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-native-cycle-rc1-20261124` | error | 12.61 | 2026-11-24T15:11:44Z | GPT | On the separately pinned Lean v4.37.0-rc1, compare imported cached axiom reports with the newly public fresh collector ( |
 | `rh-targeted-role-witness-20261124` | error | 2090.77 | 2026-11-24T15:49:45Z | GPT | Authenticate RH export and project direct typed statement/value references for six pinned root-chain declarations, prese |
 | `rh-native-cycle-rc1-isolated-20261124` | pass | 22.48 | 2026-11-24T16:11:29Z | GPT | After observed RC1 private-module identifier failure, run exact pinned upstream collector body in an isolated namespace  |
+| `rh-native-downstream-rc1-20261124` | pass | 23.29 | 2026-11-24T18:12:33Z | GPT | Can actual well-typed downstream Lean declarations reveal or mask the imported constructor axiom-cache undercount? Compa |

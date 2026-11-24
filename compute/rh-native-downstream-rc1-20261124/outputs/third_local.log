@@ -1,0 +1,2 @@
+'CathedralAxiomCycleThird.aliasAgain' depends on axioms: [CathedralAxiomCycle.guardProp]
+'CathedralAxiomCycleThird.viaConsumer' depends on axioms: [CathedralAxiomCycle.guardProp]
