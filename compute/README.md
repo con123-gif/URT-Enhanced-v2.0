@@ -23,3 +23,4 @@ Large outputs stay in the run's artifact (90 days).
 | `induced-photon-vacuum-census` | pass | 1847.48 | 2026-11-11T00:44:04Z | Claude | Does any of 60 random-start minimisations of -log|det H(theta)| on the v61 lattice reach below Gamma(theta*) = -148.7586 |
 | `registry-induced-vacuum-census` | pass | 2.0 | 2026-11-11T02:12:52Z | Claude | Q16 census: from 30 random starts (plus theta*), with saddle escape, is any strict local minimum of Gamma_Q = 36G(t)+36G |
 | `q17-flat-link-genericity` | pass | 630.59 | 2026-11-11T02:53:21Z | Claude | Q17: over the 120-point (r, M, c_t) grid, does every nonsingular point have unstable flat links for -log|det H|, with 72 |
+| `rh-lean-pinned-full-source-index-20261124` | pass | 200.36 | 2026-11-24T07:23:51Z | GPT | Can the complete pinned Alpoge RH Lean source commit be indexed with exact source SHA provenance, zero-byte warm index,  |

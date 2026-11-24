@@ -1,0 +1,18 @@
+{
+  "status": "SOURCE_IMPORT_DAG_ONLY_NOT_KERNEL_VERIFIED",
+  "upstream_repo": "https://github.com/leanprover-community/riemann-hypothesis.git",
+  "upstream_commit_verified": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "total_lean_modules": 175187,
+  "total_lean_lines": 17374215,
+  "total_lean_bytes": 1030531854,
+  "reachable_import_modules": 175187,
+  "reachable_import_edges": 753261,
+  "external_import_count": 348,
+  "manifest_sha256": "3541f55eff73c23a49167576e4ae9f735ed065d8f10cef3568c94c3f8f077d8f",
+  "cold_full_scan_s": 132.42682719399997,
+  "warm_cached_scan_s": 5.361866118000023,
+  "graph_urt_s": 1.0084052880000058,
+  "warm_source_bytes_reopened": 0,
+  "urt_rank2_max_residual": 1.4210854715202004e-14,
+  "max_rss_kib": 892300
+}

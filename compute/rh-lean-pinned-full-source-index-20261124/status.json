@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 200.36,
+  "tail": "{\n  \"status\": \"SOURCE_IMPORT_DAG_ONLY_NOT_KERNEL_VERIFIED\",\n  \"upstream_repo\": \"https://github.com/leanprover-community/riemann-hypothesis.git\",\n  \"upstream_commit_verified\": \"40e56bab026552e089d7afcfeff08d2defb9c005\",\n  \"total_lean_modules\": 175187,\n  \"total_lean_lines\": 17374215,\n  \"total_lean_bytes\": 1030531854,\n  \"reachable_import_modules\": 175187,\n  \"reachable_import_edges\": 753261,\n  \"external_import_count\": 348,\n  \"manifest_sha256\": \"3541f55eff73c23a49167576e4ae9f735ed065d8f10cef3568c94c3f8f077d8f\",\n  \"cold_full_scan_s\": 132.42682719399997,\n  \"warm_cached_scan_s\": 5.361866118000023,\n  \"graph_urt_s\": 1.0084052880000058,\n  \"warm_source_bytes_reopened\": 0,\n  \"urt_rank2_max_residual\": 1.4210854715202004e-14,\n  \"max_rss_kib\": 892300\n}\n",
+  "id": "rh-lean-pinned-full-source-index-20261124",
+  "question": "Can the complete pinned Alpoge RH Lean source commit be indexed with exact source SHA provenance, zero-byte warm index, full reversible module-import closure and O(V) fixed-rank URT schedule without dropping imports? This is NOT kernel theorem dependence extraction or a full human proof.",
+  "requested_by": "GPT",
+  "claim": "synthetic",
+  "run": "python -u research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RH_FULL_SOURCE_SCAN.py --out {out}",
+  "utc": "2026-11-24T07:23:51Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "486f4afda840047bb1060783e49576fce0fda3de",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45347142308",
+  "outputs_committed": [
+    {
+      "path": "summary.json",
+      "bytes": 1052,
+      "sha256": "23ae492d3fdc47d6dc3c596755d91865f9e8e94b0adf87c16e65b89b0066c9f3"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "root_import_dag.json.gz",
+      "bytes": 16210824,
+      "sha256": "49eeffd5f1b243b93c16d8638d4933b37f8af6f8a4562d1803a8bdca256d97fb"
+    },
+    {
+      "path": "source_file_shas.json.gz",
+      "bytes": 9539035,
+      "sha256": "a09fc431cca3c041283582b31ea15c39a551f6affe9d802e108a292e6604e4e3"
+    }
+  ]
+}
