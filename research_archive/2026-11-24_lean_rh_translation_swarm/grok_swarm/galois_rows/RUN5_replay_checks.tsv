@@ -1,0 +1,87 @@
+Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean	8	every_character_of_literature_of_vWin ⟨h, UpperTheory.Zero.LLC.recTExists, h⟩ (UpperTheory.One.vwin_of_row h)
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean	5	UpperTheory.One.Join.automorphic_window_of_inputs (UpperTheory.LiteratureTheorems.OpenImageCondition.mk h) UpperTheory.BaseChangeIdentities.baseChangeN h
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TemperedProductOfSquareIntegrable.lean	208	galoisRepOfPolarizedPairLit : _root_.UpperTheory.V.Z.Win.RowT
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean	47	gal := gal
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LitAut.lean	39	gal : _root_.UpperTheory.V.Z.Win.RowT
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	216	caraianiLocalGlobalDual : _root_.UpperTheory.One.M.Row
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	218	galoisRepOfPolarizedPairLit : _root_.UpperTheory.One.M.Row
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	286	O.galoisRepOfPolarizedPairLit
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	460	O.caraianiLocalGlobalDual)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	618	car := O.caraianiLocalGlobalDual
+Development/AutomorphicArithmetic/Foundations/UnitarySphericalFixing/SatakeParameters/RecT.lean	6	def UpperTheory.One.M.Row : Prop := UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/WeakOfAtt.lean	47	def RowT : Prop := UpperTheory.GalStar.Row0b fun h rc => IsRecT h rc
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean	16	∃ (g : ℕ) (_ : Fact g.Prime) (i : ℚ_[g] ≃+* w.adicCompletion E), Continuous i ∧ (n = 1 ∨ 16 * n ^ 2 < g)
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean	31	tame0 : IsQpBig w y.lpDim → TmW y → Sqf y → y.mono0 → x.mono0 ∧ ∀ g : ↥(Weil h), deg g = 0 → x.charPol g = y.charPol g
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean	33	theorem Away.big {x y : WD h} (k : Away x y) : AwayB x y := ⟨k.dim, k.tor, fun q => k.tame0 q.isQp⟩
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean	48	nice : ∀ σ, π.IsLocComp w σ → ∀ rc, Rc h rc → ((IsQpBig w a ∧ TmW (rc (algNorm σ)) ∧ Sqf (rc (algNorm σ))) ∨ Tor (rc (algNorm σ))) → (rc (algNorm σ)).mono0 →
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean	81	have n := j.nice σ hσ rc hrc (g.imp (fun q => ⟨q.1.isQp, q.2⟩) id) m
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean	84	theorem Row0.row0b (H : Row0 Rc) : Row0b Rc
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/OfStar.lean	22	theorem star_guard {y : WD h} (k : NcW y) : (IsQpBig w y.lpDim ∧ TmW y ∧ UpperTheory.GalStar.Sqf y) ∨ Tor y := by
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/OfStar.lean	30	exact Or.inr (tor_of_ncW (if_neg hs) k)
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/OfStar.lean	40	· exact a.tame0 q t s k.2.1
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/OfStar.lean	44	⟨a.dim, fun u => a.tor (tor_of_unr u) (WD.unr_mono0 _ u), fun k => (away_nice a k).2, fun k => (away_nice a k).1⟩
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConj.lean	27	def NcW (y : WD h) : Prop := TmW y ∧ y.mono0 ∧ SqW y
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/Transported.lean	12	if ∃ p : ℕ, p.Prime ∧ w ∈ placesOver E p ∧ (placesOver E p).ncard = Module.finrank ℚ E ∧ (n = 1 ∨ 16 * n ^ 2 < p) then 2 else 1
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/PowEqOneOfRoots.lean	51	theorem tor_of_ncW {y : WD h} (ht : thr w y.lpDim = 1) (k : NcW y) : UpperTheory.GalStar.Tor y := by
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SOfStar.lean	36	aw_of_away (H.away w hl A h rc hrc σ hσ)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SOfStar.lean	39	(k.nice σ hσ rc hrc (_root_.UpperTheory.GalS.star_guard'_alt hrc n) n.2.1).1
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SOfStar.lean	50	(_root_.UpperTheory.GalS.star_guard'_alt hrc n) n.2.1).2.2.2
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SOfStar.lean	51	exact ⟨b.dim, fun _ => (away_nice b n).1, fun _ _ => (away_nice b n).2⟩
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SOfStar.lean	53	(_ : GlobalTheory.Published.LanglandsExhaustionGL) (H : _root_.UpperTheory.One.M.Row) : _root_.UpperTheory.GalS.PairUAlt := _root_.UpperTheory.GalS.pairU_of_star_alt H
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/GuPolG.lean	28	rc hrc (Or.inr g1) g2
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/GuPolG.lean	31	rc hrc (Or.inr g.1) g.2
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean	77	(Or.inr g.1) g.2
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVPatch.lean	82	(Or.inr g.1) g.2
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/CompatTOf.lean	184	(Or.inr hg.1) hg.2
+Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/PolarizedLinkage/CompatTOf.lean	190	(Or.inr g1) g2
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RankTwoPatching/GaloisRankTwoAutomorphyOfPatching.lean	153	(Or.inr g.1) g.2
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RankTwoPatching/GaloisRankTwoAutomorphyOfPatching.lean	158	(Or.inr g.1) g.2
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RankTwoPatching/FrobOfProps.lean	43	obtain ⟨a1, a2, a3, a4⟩ := Ha.nice σ hσ rc hrc h1 h2
+Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RankTwoPatching/GaloisRankTwoAutomorphyOfPatching.lean	42	obtain ⟨a1, a2, a3, a4⟩ := Ha.nice σ hσ rc hrc h1 h2
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean	16	theorem topCovolSlim2_use_alt_alt : GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero → GlobalTheory.CompanionTheory.Hypotheses₂.PrincipalisationCharZero → GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv → PositivityTheory.MbHsUse.HSUse → ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement → HT.FarguesExact → GR.ZarhinStatement → Pub.NefRR → GlobalTheory.Published.SiegelToroidalIntegral → GlobalTheory.Published.ToroidalForFanKS → GlobalTheory.Published.SemiAbelianLieSeminegative → GlobalTheory.Published.PointSeparationPair → GlobalTheory.Published.ArDegree → _root_.GlobalTheory.CovTop.PublishedHodgeBundleTheorems → GlobalTheory.Published.GrothendieckDeformation → _root_.GlobalTheory.CovTop.CovolumeBoundOfX :=
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean	17	fun h₁ h₂ hPL hU hBig hFar hZar hRR hS hK hN hSep hDeg hP hGD =>
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean	18	have hX : GlobalTheory.CovTop.HypothesesX := ⟨hK, hN, GlobalTheory.GreenBridge.green_of_regular GlobalTheory.greenRegularCharacters_holds, hSep, _root_.FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula hP⟩
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean	20	have hH : GlobalTheory.CovHt.HypothesesH := ⟨hS, hF, GlobalTheory.Published.toroidalCharts_of_siegel_of_forFan hS hF, hDeg⟩
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean	22	(PositivityTheory.HtPt.Ah.deep_slim_use h₁ h₂ hPL hU hBig hFar hZar hRR)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean	60	def CovolumeBoundOfX : Prop := Closed FamHyp fun Fm CH =>
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean	61	∃ C0 : ℝ, 0 ≤ C0 ∧ _root_.GlobalTheory.CovTop.EventuallyAtAllPoints Fm fun _ _ _ p => ∀ C, C0 ≤ C → (p.S false).L3 (p.N C CH)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean	69	theorem every_character_of_theta_integrals_local_matching
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean	65	hL3 := _root_.GlobalTheory.Glob.CovolRow.linked_bundles_l3_of_open_alt
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	812	(_root_.SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt (_root_.UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature O)
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean	812	PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean	39	theorem topCovolG_alt_alt
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean	16	theorem covolX_of_lift_bounds_and_coreLe
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean	27	refine ⟨C1 + C2 + 1, by linarith, max x0 x1, fun x hx hle ι p hp C hC i => ?_⟩
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean	33	have main := lcv_le p i (ex.symm ▸ hx') h1 h2 (by rw [ex, ee]; exact hs) (g i) (r i) (c i) (b i) (l i) (s i) (k i) (w i)
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean	53	def ResolutionCharZero : Prop :=
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean	60	theorem Resolution.conclusion_of_smooth
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/NotSubsetOfDenseCompl.lean	57	def PrincipalisationCharZero : Prop :=
+Development/AutomorphicSpectrum/PublishedTheorems/Metrics₂/PoincareLelongInv.lean	9	def PoincareLelongInv : Prop :=
+Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/SmallGeneratedCountUpperOfUse.lean	12	def HSUse : Prop :=
+Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean	372	def HSUse : Prop :=
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/MoriwakiSt.lean	29	def MoriwakiBigStatement : Prop :=
+Development/AutomorphicSpectrum/PublishedTheorems/Algebra₂/FarguesExact.lean	10	def FarguesExact : Prop :=
+Development/AutomorphicSpectrum/PublishedTheorems/Algebra₂/ZarhinStatement.lean	21	def ZarhinStatement : Prop :=
+Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/NefRR.lean	8	def NefRR : Prop :=
+Development/AbelianVarietyTheory/PublishedTheorems/AutomorphicForms₂/SiegelToroidalIntegral.lean	145	def SiegelToroidalIntegral : Prop :=
+Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/ToroidalCompactificationBis.lean	45	def ToroidalForFanKS : Prop :=
+Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/InterNumDetNonposSplitTorus.lean	23	def SemiAbelianLieSeminegative : Prop :=
+Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/PointSeparationPair.lean	15	def PointSeparationPair : Prop :=
+Development/AbelianVarietyTheory/PublishedTheorems/AutomorphicForms₂/ArBirational.lean	25	def ArDegree : Prop := ArBirational ∧ ChernDegree
+Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean	7	structure PublishedHodgeBundleTheorems : Prop where
+Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/GrothendieckDeformation.lean	12	def GrothendieckDeformation : Prop :=
+Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZero.lean	7	resolutionCharZero_of_top FunctorialResolution.functorialResolutionCharZero.{0}
+Development/WeilBound/CoreStatements/ResolutionCharZero/PrincipalisationCharZeroClosed.lean	8	principalisationCharZero_of_boundary PositivityTheory.ResPlug.GBnd.gBoundary
+Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/PoincareLelongInv.lean	19	theorem poincareLelongInv : GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv :=
+Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean	13	theorem hsUse_outright : HSUse :=
+Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean	9	theorem moriwakiBig_outright : ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement :=
+Development/AutomorphicArithmetic/ThetaCorrespondence/PrismaticDieudonne/PrismaticDieudonneHodge.lean	28	PositivityTheory.Tls2.Jfarg.farguesExact_of_hodge prismaticDieudonneHodge
+Development/WeilBound/CoreStatements/HodgeTatePoints/ZarTop.lean	7	PositivityTheory.PrwZar.zarhinStatement_of_dual_cube hD GlobalTheory.SpreadingModels.cubeTheorem_holds
+Development/WeilBound/CoreStatements/TemperedRepresentationTheory/NefDivisors/NefRR.lean	14	theorem nefRR : GlobalTheory.CompanionTheory.Ar.Pub.NefRR := by
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/SiegelToroidalIntegralHolds.lean	15	GlobalTheory.T.siegelIntegralToroidal_of_polarisedChartsForFan GlobalTheory.T.siegelToroidalCompactification_polarisedCharts
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/ToroidalCompactificationFanLogKodairaSpencerIso.lean	9	GlobalTheory.T.toroidalFanKodairaSpencer_of_rigidBoundaryCharts GlobalTheory.T.rigidBoundaryChartsForFan_unitaryDatum
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/SemiAbelianLieSeminegativeBis.lean	22	theorem semiAbelianLieSeminegative : GlobalTheory.Published.SemiAbelianLieSeminegative := by
+Development/WeilBound/CoreStatements/AutomorphicKernels/NadelVanishing/TopPointSep.lean	7	GlobalTheory.pointSeparationPair_of_principalisation PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisation_closed
+Development/WeilBound/CoreStatements/AbelianHeightsDuality/PublishedTheoremStatements/BridgesGeo.lean	17	GlobalTheory.T.projectionFormulaAndChernDegree_of_heightProjection h₁ h₂
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/GrothendieckDeformationOfLifting.lean	12	⟨GrothendieckMessing.canonical_of_abelianDeRham P hκ hπ hI, L R I κ hκ R₀ π hπ hI⟩
+Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean	9	theorem deep_slim_use
