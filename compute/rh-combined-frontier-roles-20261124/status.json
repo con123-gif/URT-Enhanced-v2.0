@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 1815.01,
+  "tail": "1360 expressions\nindexed 54789250752 bytes 951342541 expressions\nindexed 55076429504 bytes 956246910 expressions\nindexed 55076495040 bytes 956248057 expressions\nindexed 55076560576 bytes 956249207 expressions\nindexed 55363673792 bytes 961147592 expressions\nindexed 55363739328 bytes 961148764 expressions\nindexed 55652294336 bytes 966048744 expressions\nindexed 55652359872 bytes 966049929 expressions\nindexed 55652425408 bytes 966051102 expressions\nindexed 55939276480 bytes 970963301 expressions\nindexed 55939342016 bytes 970964484 expressions\nindexed 55939407552 bytes 970965662 expressions\nindexed 56225341120 bytes 975865775 expressions\nindexed 56225406656 bytes 975866898 expressions\nindexed 56225472192 bytes 975868042 expressions\nindexed 56510983552 bytes 980784512 expressions\nindexed 56511049088 bytes 980785602 expressions\nindexed 56796982656 bytes 985706256 expressions\nindexed 56797048192 bytes 985707417 expressions\nindexed 56797113728 bytes 985708470 expressions\nindexed 57082719616 bytes 990624171 expressions\nindexed 57082785152 bytes 990625233 expressions\nindexed 57082850688 bytes 990626322 expressions\nindexed 57371143552 bytes 995521719 expressions\nindexed 57371209088 bytes 995522823 expressions\nindexed 57371274624 bytes 995523926 expressions\nindexed 57658518912 bytes 1000421903 expressions\nindexed 57658584448 bytes 1000422991 expressions\nindexed 57658649984 bytes 1000423951 expressions\nindexed 57957166464 bytes 1005334099 expressions\nindexed 57957232000 bytes 1005335122 expressions\nindexed 57957297536 bytes 1005336127 expressions\nindexed 58255093120 bytes 1010257363 expressions\nindexed 58255158656 bytes 1010258345 expressions\nindexed 58255224192 bytes 1010259341 expressions\nindexed 58553347456 bytes 1015166793 expressions\nindexed 58553412992 bytes 1015167898 expressions\nindexed 58553478528 bytes 1015169005 expressions\nindexed 58850356608 bytes 1020080575 expressions\nindexed 58850422144 bytes 1020081678 expressions\nindexed 58850487680 bytes 1020082737 expressions\nindexed 59149033152 bytes 1025005924 expressions\nindexed 59149098688 bytes 1025007023 expressions\nindexed 59446369984 bytes 1029942645 expressions\nindexed 59446435520 bytes 1029943751 expressions\nindexed 59446501056 bytes 1029944852 expressions\nindexed 59743051456 bytes 1034888294 expressions\nindexed 59743116992 bytes 1034889408 expressions\nindexed 59743182528 bytes 1034890465 expressions\nindexed 60039900544 bytes 1039833030 expressions\nindexed 60039966080 bytes 1039834150 expressions\nindexed 60040031616 bytes 1039835264 expressions\nindexed 60335759040 bytes 1044767469 expressions\nindexed 60335824576 bytes 1044768621 expressions\nindexed 60335890112 bytes 1044769762 expressions\nindexed 60631391936 bytes 1049695785 expressions\nindexed 60631457472 bytes 1049696924 expressions\nindexed 60631523008 bytes 1049698036 expressions\nindexed 60927811264 bytes 1054629317 expressions\nindexed 60927876800 bytes 1054630428 expressions\nindexed 60927942336 bytes 1054631543 expressions\nindexed 61225279168 bytes 1059557891 expressions\nindexed 61225344704 bytes 1059558957 expressions\nindexed 61225410240 bytes 1059560061 expressions\nindexed 61523926720 bytes 1064470583 expressions\nindexed 61523992256 bytes 1064471681 expressions\nindexed 61524057792 bytes 1064472747 expressions\nauthenticated archive solution.ndjson.zst 5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e bytes 61570595788 expressions 1065214335 declarations 1484733 global missing hard 0 metadata-only 5 target {\"id\":6019714,\"nameParts\":[\"Formalism\",\"FourierDecayAlt\",\"P\",\"CutBP\",\"block_growth_bound_of_compact_coef\"],\"exported\":false,\"occurrences\":1,\"witnesses\":[{\"kind\":\"mutualBlock\",\"source\":6019703,\"sourceNameParts\":[\"Formalism\",\"FourierDecayAlt\",\"P\",\"CutBP\",\"block_growth_bound_of_compact_coefCpt\"]}]} begin hard-reference closure\n{\"file\":\"solution.ndjson.zst\",\"projectionMs\":65810,\"summary\":{\"requests\":47,\"found\":47,\"typeEdges\":3044,\"valueEdges\":10157,\"structuralEdges\":2,\"expressionReads\":409097},\"unresolved\":[]}\n",
+  "id": "rh-combined-frontier-roles-20261124",
+  "question": "Authenticate original RH export once and extract exact direct type/value witnesses for seven source-bound targets, 34 known specialist manifest rows and six exact-name probes; separate constructor structural edges and mutual metadata. Not a kernel recheck.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_combined_frontier_roles.mjs --out {out}",
+  "utc": "2026-11-24T18:46:16Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "79b0d6581d926291326248eb68ce58741f49f1ff",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45457486389",
+  "outputs_committed": [
+    {
+      "path": "challenge_frontier_roles.json",
+      "bytes": 19163,
+      "sha256": "85a27649a14d9bba9225e91a1da846b9badaab8b375b2526bf6a7c8a6b7e8a05"
+    },
+    {
+      "path": "challenge_missing_metadata_owners.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "challenge_reference_census.json",
+      "bytes": 1029,
+      "sha256": "073432fd5fe5cf8c505acf87bcace4168d4f07f92fdb2ce65734850ef9d18a20"
+    },
+    {
+      "path": "solution_frontier_roles.json",
+      "bytes": 4218336,
+      "sha256": "9d9f461a5afebec9f020e2349a8bc359fcfdcbd7fe3e667b92c6b64a95660ad6"
+    },
+    {
+      "path": "solution_missing_metadata_owners.jsonl",
+      "bytes": 1030,
+      "sha256": "3949471b200c52908996d8596011b33afe1eae36dd64dbfaee9ec8fbe72cf677"
+    },
+    {
+      "path": "solution_reference_census.json",
+      "bytes": 3690,
+      "sha256": "4f509f592fbcd0b9746c0824e47a48c0a4fe97c07d761919429dfb4c71def82a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

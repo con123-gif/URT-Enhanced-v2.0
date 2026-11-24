@@ -1,0 +1,625 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "file": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 6112241,
+  "root": 326835,
+  "indexedDeclarations": 53722,
+  "projectionMs": 27,
+  "maxRssKiB": 271920,
+  "summary": {
+    "requests": 47,
+    "found": 0,
+    "typeEdges": 0,
+    "valueEdges": 0,
+    "structuralEdges": 0,
+    "expressionReads": 0
+  },
+  "reports": [
+    {
+      "request": {
+        "name": "Formalism.VW.rh_of_right",
+        "id": 341050,
+        "kind": "thm",
+        "origin": "seven_frontier",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+          "blob": "3604637147a33e72248faddd775ea750e7846ead",
+          "header": "theorem Formalism.VW.rh_of_right"
+        },
+        "incoming": {
+          "owner": "Formalism.VW.rh_of_every",
+          "witness": 6497238
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "DirichletCharacter.LFunction_modOne_eq",
+        "id": 341183,
+        "kind": "thm",
+        "origin": "seven_frontier",
+        "source": {
+          "repository": "leanprover-community/mathlib4",
+          "rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+          "path": "Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+          "blob": "9ccc38f52d669a88285a904e59dbb562ade5aba5",
+          "header": "@[simp] lemma LFunction_modOne_eq"
+        },
+        "incoming": {
+          "owner": "Formalism.VW.rh_of_every",
+          "witness": 6497276
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+        "id": 14065050,
+        "kind": "thm",
+        "origin": "seven_frontier",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "blob": "f769999ac5e49241993e5efbf81e4d2cded18acd",
+          "header": "theorem galoisLocalGlobalStrong_recParameter"
+        },
+        "incoming": {
+          "owner": "UpperTheory.FinalTheorems.everyCharacter",
+          "witness": 1065212056
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+        "id": 11298208,
+        "kind": "thm",
+        "origin": "seven_frontier",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "blob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+          "header": "theorem UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+        },
+        "incoming": {
+          "owner": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "witness": 997980691
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.recTExists",
+        "id": 11307205,
+        "kind": "thm",
+        "origin": "seven_frontier",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "blob": "268786576f96cb5a2cea5fab2da4cf4f291c1116",
+          "header": "theorem UpperTheory.Zero.LLC.recTExists"
+        },
+        "incoming": {
+          "owner": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "witness": 901833048
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.One.vwin_of_row",
+        "id": 13125899,
+        "kind": "thm",
+        "origin": "seven_frontier",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "blob": "4cba179acd45ac08d3cad21f51c9b9d62715a9a4",
+          "header": "theorem UpperTheory.One.vwin_of_row"
+        },
+        "incoming": {
+          "owner": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "witness": 997980696
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.mk",
+        "id": 550021,
+        "kind": "ctor",
+        "origin": "seven_frontier",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "blob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+          "header": "structure UpperTheory.LiteratureTheorems.OpenLiteratureStatements : Prop where"
+        },
+        "incoming": {
+          "owner": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "witness": 12992050
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.SiegelWeilFormula.Avac.iwaQ_of'",
+        "id": 8981975,
+        "kind": "thm",
+        "type": 721071981,
+        "value": 721077114,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.SiegelWeilFormula.Avac.iwaQ_of'_k",
+        "id": 14034132,
+        "kind": "thm",
+        "type": 1064108806,
+        "value": 1064113892,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.SiegelWeilFormula.Avac.vacK_of",
+        "id": 8953756,
+        "kind": "thm",
+        "type": 719345210,
+        "value": 719345276,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.SiegelWeilFormula.Avac.vac_K'",
+        "id": 8953455,
+        "kind": "thm",
+        "type": 719330417,
+        "value": 719332516,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.SiegelWeilFormula.Avac.vac_res'",
+        "id": 8953738,
+        "kind": "thm",
+        "type": 719344087,
+        "value": 719345204,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CompanionTheory.UnitFrame.normSq_eq_of_unit_frames",
+        "id": 8953593,
+        "kind": "thm",
+        "type": 719334572,
+        "value": 719339157,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.Mem.PsiTie.psiPPTie_of_levOf",
+        "id": 6375344,
+        "kind": "thm",
+        "type": 482469303,
+        "value": 482473989,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.T.psiLevelPairCompatible_of_columnLevels",
+        "id": 6375353,
+        "kind": "thm",
+        "type": 482469303,
+        "value": 482473990,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.Mem.R3.Grp.grp_levels_exist",
+        "id": 6375493,
+        "kind": "thm",
+        "type": 482488644,
+        "value": 482497057,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.Mem.R3.pins_card_index_ranks",
+        "id": 4997285,
+        "kind": "thm",
+        "type": 369503821,
+        "value": 369505607,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.MemLoc.frob_laws",
+        "id": 2367057,
+        "kind": "thm",
+        "type": 146721290,
+        "value": 146724857,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.iteratedDeriv_laplace",
+        "id": 868949,
+        "kind": "thm",
+        "type": 27135065,
+        "value": 27135383,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.iteratedDeriv_laplace_hasDerivAt",
+        "id": 868943,
+        "kind": "thm",
+        "type": 27133262,
+        "value": 27135043,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.landau_coeff",
+        "id": 868955,
+        "kind": "thm",
+        "type": 27135405,
+        "value": 27136665,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.eq_zero_of_forall_residueField_functional",
+        "id": 11189057,
+        "kind": "thm",
+        "type": 883466002,
+        "value": 883467093,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.PtVanish.connForm_eq_zero",
+        "id": 11189127,
+        "kind": "thm",
+        "type": 883478321,
+        "value": 883487623,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "ReciprocityTheory.ChartRestriction.G.Chart.tan_lift",
+        "id": 3987187,
+        "kind": "thm",
+        "type": 279772183,
+        "value": 279775949,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "ReciprocityTheory.ChartRestriction.G.Chart.tan_uniq",
+        "id": 3986738,
+        "kind": "thm",
+        "type": 279727724,
+        "value": 279731467,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "ReciprocityTheory.ChartRestriction.G.Chart.glue_tan",
+        "id": 3987404,
+        "kind": "thm",
+        "type": 279800089,
+        "value": 279808282,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.T.complex_section_finite_combination",
+        "id": 9615658,
+        "kind": "thm",
+        "type": 769100270,
+        "value": 769111315,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CompanionTheory.VanDescent.vanish_descent",
+        "id": 9615598,
+        "kind": "thm",
+        "type": 769100270,
+        "value": 769111314,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CompanionTheory.Ar.ClosedPt.exists_residue_eval",
+        "id": 9615438,
+        "kind": "thm",
+        "type": 769089428,
+        "value": 769095537,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CompanionTheory.Arith.DedekindDescent.linIndep_descent",
+        "id": 9615504,
+        "kind": "thm",
+        "type": 769096953,
+        "value": 769099883,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Formalism.MainNotions.LinkG_at",
+        "id": 869799,
+        "kind": "def",
+        "type": 27224548,
+        "value": 27224774,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Formalism.MainNotions.LinkG",
+        "id": 869816,
+        "kind": "def",
+        "type": 17831024,
+        "value": 27224802,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Formalism.L2.GlobalTheoryTheory.Loss.loss_bound_at",
+        "id": 1076940,
+        "kind": "thm",
+        "type": 41251314,
+        "value": 41255196,
+        "origin": "authenticated_manifest_RUN12"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.divTied3_read",
+        "id": 6078879,
+        "kind": "thm",
+        "type": 458452916,
+        "value": 458455888,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.T.divisionCompatible_at_readIdentifications",
+        "id": 6078946,
+        "kind": "thm",
+        "type": 458452916,
+        "value": 458455889,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.poleData_abstract",
+        "id": 868460,
+        "kind": "thm",
+        "type": 27052341,
+        "value": 27058371,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.landau_cauchy",
+        "id": 869149,
+        "kind": "thm",
+        "type": 27162294,
+        "value": 27163272,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.landau_pole_asym",
+        "id": 869232,
+        "kind": "thm",
+        "type": 27164513,
+        "value": 27168267,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.Xj7N.norm_small_le",
+        "id": 9616555,
+        "kind": "thm",
+        "type": 769193561,
+        "value": 769198767,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.Xj7N.local_unit_map_surjective",
+        "id": 9613757,
+        "kind": "thm",
+        "type": 769150835,
+        "value": 769154759,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "ModelDimension.cusp_form_extension_vanishing",
+        "id": 9616232,
+        "kind": "thm",
+        "type": 769162544,
+        "value": 769164447,
+        "origin": "authenticated_manifest_RUN11"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.RgGu.NR.signature",
+        "kind": "thm",
+        "origin": "integration_RUN11_source_candidate",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/PosMkIff.lean",
+          "blob": "dc54f7d3f4921d7add75e4938a994af9900d19b1",
+          "header": "theorem signature : Signature"
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.RgGu.NR.BoundB.bound_main",
+        "kind": "thm",
+        "origin": "integration_RUN11_source_candidate",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/BoundB.lean",
+          "blob": "35e0cd0ce0af5c0c7abb7be0351d14743a2f5321",
+          "header": "theorem bound_main : Bound k"
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.RgGu.NR.boundB",
+        "kind": "thm",
+        "origin": "integration_RUN11_source_candidate",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/BoundB.lean",
+          "blob": "35e0cd0ce0af5c0c7abb7be0351d14743a2f5321",
+          "header": "theorem boundB"
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "PositivityTheory.RgGu.NR.Sig.lim_form",
+        "kind": "thm",
+        "origin": "integration_RUN11_source_candidate",
+        "source": {
+          "repository": "leanprover-community/riemann-hypothesis",
+          "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+          "path": "src/Development/WeilBound/RepresentationTheoryGL/GenericUnitaryGL/ComplementarySeries/PosMkIff.lean",
+          "blob": "dc54f7d3f4921d7add75e4938a994af9900d19b1",
+          "header": "theorem lim_form"
+        }
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.CharacterBalanceMoves.one_char",
+        "kind": "thm",
+        "origin": "audit_RUN11_exact_name_request"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.ch_core",
+        "kind": "thm",
+        "origin": "audit_RUN11_exact_name_request"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    }
+  ]
+}

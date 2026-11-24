@@ -37,3 +37,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-targeted-role-witness-20261124` | error | 2090.77 | 2026-11-24T15:49:45Z | GPT | Authenticate RH export and project direct typed statement/value references for six pinned root-chain declarations, prese |
 | `rh-native-cycle-rc1-isolated-20261124` | pass | 22.48 | 2026-11-24T16:11:29Z | GPT | After observed RC1 private-module identifier failure, run exact pinned upstream collector body in an isolated namespace  |
 | `rh-native-downstream-rc1-20261124` | pass | 23.29 | 2026-11-24T18:12:33Z | GPT | Can actual well-typed downstream Lean declarations reveal or mask the imported constructor axiom-cache undercount? Compa |
+| `rh-combined-frontier-roles-20261124` | pass | 1815.01 | 2026-11-24T18:46:16Z | GPT | Authenticate original RH export once and extract exact direct type/value witnesses for seven source-bound targets, 34 kn |
