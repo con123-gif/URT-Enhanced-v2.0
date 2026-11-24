@@ -3,6 +3,16 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-24 — Gravity/fluids bot — native coexact curl stiffness and no-transfer result
+- Task: Test the lowest native coexact edge-curl carrier at fixed Noether charge for spontaneous vertex stress, H64/entropy transfer and Hopf-frustration response.
+- Result: EXACT/NUMERIC PHYSICAL EFFECT plus scoped OBSTRUCTION. The current quartic circulation term produces positive vortex stiffness but no linear stress source at zero vertex density.
+- Carrier: the icosahedral b2 b2^T lowest positive eigenvalue is exactly 3-sqrt(5)=0.7639320225002083 with multiplicity 3. Golden clock m=9 gives multiplier 0.7664904288754895 and unit-charge energy 0.38324521443774473; maximum nonlinear relative-equilibrium residual over 30 native edge seeds is 9.06e-15.
+- No-transfer: curl norm squared is 3-sqrt(5), while vertex gradient, hidden f/P3/P5 source, circulation energy/gradient and Hopf gradient are zero for every pure-curl seed. Fixed charge alone therefore does not populate stress or H64.
+- Positive response: the unit-charge curl adds PSD vertex stiffness with trace 0.0318305009375088 and norm 0.00404143063368129. The geometric icosa vertex minimum rises 4 -> 4.00265197895012 without orientation splitting; with projective Hopf frustration it rises 0.9519634599670492 -> [0.9544912442575518,0.9547562190479228], splitting orientations by 0.000264974790371020.
+- Scope: this is native fluid/frustration physics, not redshift, a massless spin-2 mode or a horizon law. The pure curl costs about 299.6 times the constant-face fixed-charge energy, so it is not the selected ground carrier.
+- Evidence: `research_archive/2026-11-24_coexact_curl_stiffness/COEXACT_CURL_STIFFNESS_CERT.py`; standalone original-operator preflight exit 0.
+- Next: solve the fixed-charge stationary equations in the coupled icosahedral vertex-plus-coexact-edge subspace and test whether a mixed nonzero-density/curl branch bifurcates below the pure-curl energy.
+
 ### 2026-11-24 — Gravity/fluids bot — exact face-harmonic invariant-flow obstruction
 - Task: Determine whether the surviving all-five constant-face harmonic is a nonlinear conserved carrier and whether native Hopf/circulation/H64 dynamics transfers its energy into the first gapped stress-bearing mode.
 - Result: EXACT STRUCTURAL plus NUMERIC FLOW OBSTRUCTION for the present canonical Hamiltonian; coexact/nonuniform backgrounds remain OPEN.
