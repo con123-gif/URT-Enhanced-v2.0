@@ -1,0 +1,43 @@
+{
+  "status": "error",
+  "detail": "Node.js v24.22.3",
+  "returncode": 1,
+  "wall_s": 1605.13,
+  "tail": "xpressions 330000000 declarations 414743 forward insertions 30 block transitions 5036\nreachable expressions 340000000 declarations 429642 forward insertions 30 block transitions 5189\nreachable expressions 350000000 declarations 449253 forward insertions 33 block transitions 5341\nreachable expressions 360000000 declarations 463758 forward insertions 33 block transitions 5494\nreachable expressions 370000000 declarations 481824 forward insertions 35 block transitions 5646\nreachable expressions 380000000 declarations 498993 forward insertions 38 block transitions 5799\nreachable expressions 390000000 declarations 516447 forward insertions 39 block transitions 5952\nreachable expressions 400000000 declarations 534185 forward insertions 39 block transitions 6104\nreachable expressions 410000000 declarations 551671 forward insertions 44 block transitions 6257\nreachable expressions 420000000 declarations 566678 forward insertions 44 block transitions 6409\nreachable expressions 430000000 declarations 581780 forward insertions 44 block transitions 6562\nreachable expressions 440000000 declarations 595771 forward insertions 44 block transitions 6715\nreachable expressions 450000000 declarations 609702 forward insertions 44 block transitions 6867\nreachable expressions 460000000 declarations 619336 forward insertions 46 block transitions 7020\nreachable expressions 470000000 declarations 629570 forward insertions 46 block transitions 7172\nreachable expressions 480000000 declarations 641591 forward insertions 46 block transitions 7325\nreachable expressions 490000000 declarations 651556 forward insertions 48 block transitions 7477\nreachable expressions 500000000 declarations 666721 forward insertions 49 block transitions 7630\nreachable expressions 510000000 declarations 676884 forward insertions 49 block transitions 7783\nreachable expressions 520000000 declarations 679452 forward insertions 49 block transitions 7935\nreachable expressions 530000000 declarations 679617 forward insertions 49 block transitions 8088\nreachable expressions 540000000 declarations 681614 forward insertions 49 block transitions 8240\nreachable expressions 550000000 declarations 695666 forward insertions 49 block transitions 8393\nreachable expressions 560000000 declarations 708492 forward insertions 49 block transitions 8546\nreachable expressions 570000000 declarations 718805 forward insertions 51 block transitions 8698\nreachable expressions 580000000 declarations 721777 forward insertions 53 block transitions 8851\nreachable expressions 590000000 declarations 736325 forward insertions 53 block transitions 9003\nreachable expressions 600000000 declarations 748913 forward insertions 54 block transitions 9156\nreachable expressions 610000000 declarations 766354 forward insertions 56 block transitions 9309\nfile:///tmp/rh-locality-ueAlyl/retry.mjs:57\n const ok=(v,m)=>{if(!v)throw Error(m)};\n                              ^\n\nError: missing decl 6019714\n    at ok (file:///tmp/rh-locality-ueAlyl/retry.mjs:57:31)\n    at traverse (file:///tmp/rh-locality-ueAlyl/retry.mjs:93:53)\n    at runArchive (file:///tmp/rh-locality-ueAlyl/retry.mjs:227:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///tmp/rh-locality-ueAlyl/retry.mjs:255:40\n\nNode.js v24.22.3\nfile:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_locality_frontier_retry.mjs:159\n  if(child.status!==0)throw Error('retry failed '+child.status+' '+child.signal);\n                            ^\n\nError: retry failed 1 null\n    at file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_locality_frontier_retry.mjs:159:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.22.3\n",
+  "id": "rh-locality-frontier-retry-20261124",
+  "question": "Retry timed-out checksum-pinned solution reference closure with highest-expression-ID bitmap frontier, eager declaration closure, and explicit phase/progress logs. Challenge and solution digest checks unchanged; not kernel replay or proof completion.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_locality_frontier_retry.mjs --out {out}",
+  "utc": "2026-11-24T13:42:14Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "88b205e6a0ba12fafbf8d60794c1d6be524d3d04",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45401413615",
+  "outputs_committed": [
+    {
+      "path": "challenge_declarations.jsonl.zst",
+      "bytes": 1290866,
+      "sha256": "bf991bf4be047802d60a49661aeba5689caeb3da6c56cd360a3db449223133d2"
+    },
+    {
+      "path": "challenge_summary.json",
+      "bytes": 1504,
+      "sha256": "d916507cf9bd841f044393410e70c6cdb5d3a3b1fa03546fab66abaf0ff4af1e"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "reachable_declarations.jsonl",
+      "bytes": 112297892,
+      "sha256": "737164f95a7dc18b29b05a6c5e104120cd4feb4c7f1ba765c4d8368e76a97cf4"
+    }
+  ]
+}
