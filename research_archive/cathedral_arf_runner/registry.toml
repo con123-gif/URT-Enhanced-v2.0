@@ -3337,3 +3337,12 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 30
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-targeted-role-witness-20261124"
+question = "Authenticate RH export and project direct typed statement/value references for six pinned root-chain declarations, preserving exact expression witnesses; do not repeat mixed graph closure or claim kernel replay."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_targeted_role_witness.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
