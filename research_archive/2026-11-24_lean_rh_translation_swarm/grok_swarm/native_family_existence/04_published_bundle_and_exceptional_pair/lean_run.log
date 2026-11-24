@@ -1,0 +1,6 @@
+# 2026-11-24 09:55 GMT  Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+# cmd: OMP_NUM_THREADS=1 nice lean ExceptionalPairCaseSkeleton.lean
+'NFE4.third_clause' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NFE4.first_clause' does not depend on any axioms
+exit=0
+sha256 2513368d78d74f80f686c31fb4aba6525e3467b4a992f8338a2cfa445b87f5cf  ExceptionalPairCaseSkeleton.lean

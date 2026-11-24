@@ -1,0 +1,188 @@
+# 2026-11-24 09:56 GMT cmd: OMP_NUM_THREADS=1 nice python3 lit_closure.py <wrapper file in rh_orig>
+declarations parsed: 196; reachable from every_character_of_literature_of_vWin: 195; unresolved refs: []
+reachable declarations whose body uses a field of O: ['carU_local_global_of_literature', 'literature_automorphy', 'local_langlands_recT_exists_of_literature', 'pair_u_of_literature']
+  carU_local_global_of_literature (line 459): ['O.caraianiLocalGlobalDual']
+  literature_automorphy (line 609): ['O.caraianiLocalGlobalDual']
+  local_langlands_recT_exists_of_literature (line 283): ['O.localLanglandsExists']
+  pair_u_of_literature (line 285): ['O.galoisRepOfPolarizedPairLit']
+reachable declarations typed GlobalTheory.Published.*: 155
+leaves (no wrapper refs) and their producers:
+  L 237 ab_mul_n_st_of_literature : GlobalTheory.Published.AbMulNSt  <=  GlobalTheory.abMulN_holds
+  L 239 abelian_de_rham_of_literature : GlobalTheory.Published.AbelianDeRham  <=  PositivityTheory.DualRT.abelianDeRham
+  L 403 abelian_lifting_of_literature : GlobalTheory.Published.AbelianLifting  <=  GlobalTheory.abelianScheme_hom_lifting_nilpotent_dividedPowers
+  L 249 ar_calc_of_literature : GlobalTheory.Published.ArCalc  <=  GlobalTheory.ArithmeticHeightTower.ArakelovDirectHeights.arCalc_direct, PositivityTheory.ResPlug.FromRes.resK, PositivityTheory.Tls2.Pl.poincareLelong
+  L 251 ar_degree_of_literature : GlobalTheory.Published.ArDegree  <=  GlobalTheory.ArithmeticHeightTower.ArakelovDirectHeights.cycleHeights_direct, GlobalTheory.Published.CycleHeights.heightProjection, PositivityTheory.Prw.arDegree_of, PositivityTheory.ResPlug.FromRes.resK, PositivityTheor
+  L 257 automorphic_forms_finite_gl_of_literature : GlobalTheory.Published.AutomorphicFormsFiniteGL  <=  CuspFormAutomorphicBounds.automorphicFormsFiniteGL
+  L 259 base_change_isobaric : GlobalTheory.Published.BaseChangeIsobaricTransfer  <=  UpperTheory.BaseChangeIdentities.baseChangeN
+  L 263 bernstein_unitary_product_irreducible_of_literature : GlobalTheory.Published.BernsteinUnitaryProductIrreducible  <=  PositivityTheory.RgUd.All.bernsteinUnitaryProductIrreducible
+  L 265 bernstein_zelevinsky_finiteness_of_literature : GlobalTheory.Published.BernsteinZelevinskyFiniteness  <=  PositivityTheory.Prw.bernsteinZelevinskyFiniteness_holds
+  L 267 bhatt_scholze_integral_of_literature : GlobalTheory.Published.BhattScholzeIntegral  <=  GlobalTheory.BSP.bhattScholzeIntegral
+  L 271 bloch_kato_local_of_literature : GlobalTheory.Published.BlochKatoLocal  <=  UpperTheory.Lit.blochKatoLocal
+  L 273 borel_casselman_of_literature : GlobalTheory.Published.BorelCasselman  <=  PositivityTheory.Stage1.PM.borelCasselman
+  L 275 brauer_degree_zero_of_literature : GlobalTheory.Published.BrauerDegreeZero  <=  GlobalTheory.BrauerZero.brauerDegreeZero
+  L 321 casselman_wallach_of_literature : GlobalTheory.Published.CasselmanWallach  <=  PositivityTheory.CWB.casselmanWallach
+  L 559 cheb_of_literature : GlobalTheory.TwSys.Cheb  <=  GlobalTheory.Published.cheb_holds
+  L 323 chebotarev_degree_one_of_literature : GlobalTheory.Published.ChebotarevDegreeOne  <=  GlobalTheory.Published.chebotarevDegreeOne'
+  L 295 chevalley_units_of_literature : GlobalTheory.Published.ChevalleyUnits  <=  GlobalTheory.Published.chevalleyUnits'
+  L 325 chow_form_exists_of_literature : GlobalTheory.Published.ChowFormExists  <=  GlobalTheory.Published.chowFormExists_holds
+  L 327 clozel_cohomological_of_literature : GlobalTheory.Published.ClozelCohomological  <=  PositivityTheory.Rg.Cz.clozelCohomological
+  L 329 clozel_purity_of_literature : GlobalTheory.Published.ClozelPurity  <=  PositivityTheory.Lit1.ClozelPurity.clozelPurity
+  L 277 cm_curve_good_outside_prime_st_of_literature : GlobalTheory.Published.CMCurveGoodOutsidePrimeSt  <=  GlobalTheory.Published.cmCurveGoodOutsidePrime
+  L 331 complex_multiplication_j_st_of_literature : GlobalTheory.Published.ComplexMultiplicationJSt  <=  GlobalTheory.CompanionTheory.Published.complexMultiplicationJ
+  L 333 cusp_bounded_of_literature : GlobalTheory.Published.CuspBounded  <=  PositivityTheory.Stage1.PM.cuspBounded
+  L 335 cusp_decay_bound_of_literature : GlobalTheory.Published.CuspDecayBound  <=  GlobalTheory.CuspGeo.cuspDecayBound
+  L 337 cusp_decay_sobolev_of_literature : GlobalTheory.Published.CuspDecaySobolev  <=  PositivityTheory.Stage1.PM.cuspDecaySobolev
+  L 287 cusp_forms_bounded_gl_of_literature : GlobalTheory.Published.CuspFormsBoundedGL  <=  UpperTheory.V.Af.cuspSpectrumGL.2.2
+  L 339 cusp_rapid_decay_of_literature : GlobalTheory.Published.CuspRapidDecay  <=  GlobalTheory.RapidDecay.cuspRapidDecay
+  L 341 cusp_trace_class_of_literature : GlobalTheory.Published.CuspTraceClass  <=  PositivityTheory.Prw.cuspTraceClass_of, PositivityTheory.Prw.dixmierMalliavinFactorisation_holds
+  L 343 cuspidal_mirabolic_of_literature : GlobalTheory.Published.CuspidalMirabolic  <=  GlobalTheory.cuspidalMirabolic_holds
+  L 457 cuspidal_multiplicity_one_of_literature : GlobalTheory.Published.CuspidalMultiplicityOne  <=  PositivityTheory.jumpWindows.cuspidalMultiplicityOne
+  L 345 cuspidal_spectrum_gl_of_literature : GlobalTheory.Published.CuspidalSpectrumGL  <=  RfCs.cuspidalSpectrumGL
+  L 347 cycle_heights_of_literature : GlobalTheory.Published.CycleHeights  <=  GlobalTheory.ArithmeticHeightTower.ArakelovDirectHeights.cycleHeights_direct, PositivityTheory.ResPlug.FromRes.resK, PositivityTheory.Tls2.Pl.poincareLelong
+  L 241 de_rham_pot_semistable_of_literature : GlobalTheory.Published.DeRhamPotSemistable  <=  GlobalTheory.deRham_potentiallySemistable
+  L 229 deligne_ribet_of_literature : GlobalTheory.Published.DeligneRibet  <=  PositivityTheory.PfDR.deligneRibet_holds
+  L 349 depth_zero_jacquet_injective_of_literature : GlobalTheory.Published.DepthZeroJacquetInjective  <=  GlobalTheory.DepthZeroJac.depthZeroJacquetInjective
+  L 351 depth_zero_support_of_literature : GlobalTheory.Published.DepthZeroSupport  <=  GlobalTheory.SmGL.depthZeroSupport
+  L 353 discrete_series_classification_of_literature : GlobalTheory.Published.DiscreteSeriesClassification  <=  CompanionTheory.RgExh.discreteSeriesClassification
+  L 357 discrete_series_cover_exists_of_literature : GlobalTheory.Published.DiscreteSeriesCoverExists  <=  CompanionTheory.RgDs.B.discreteSeriesCoverExists
+  L 355 discrete_series_cover_of_literature : GlobalTheory.Published.DiscreteSeriesCover  <=  CompanionTheory.RgExh.discreteSeriesCover
+  L 359 discrete_series_exists_of_literature : GlobalTheory.Published.DiscreteSeriesExists  <=  CompanionTheory.RgDs.B.discreteSeriesExists
+  L 361 discrete_series_hermitian_unique_of_literature : GlobalTheory.Published.DiscreteSeriesHermitianUnique  <=  PositivityTheory.Prw.discreteSeriesHermitianUnique_holds
+  L 363 discrete_series_lowest_k_type_of_literature : GlobalTheory.Published.DiscreteSeriesLowestKType  <=  PositivityTheory.Prw.discreteSeriesLowestKType_holds
+  L 365 discrete_series_upq_exists_of_literature : GlobalTheory.Published.DiscreteSeriesUpqExists  <=  CompanionTheory.RgDs.B.discreteSeriesUpqExists
+  L 367 dixmier_malliavin_factorisation_of_literature : GlobalTheory.Published.DixmierMalliavinFactorisation  <=  GlobalTheory.dixmierMalliavinFactorisation_fromLibrary
+  L 545 dual_abelian_scheme_of_literature : GlobalTheory.Published.DualAbelianScheme  <=  GlobalTheory.dualAbelianScheme
+  L 561 eis_bl_of_literature : GlobalTheory.ThK.Dbl.EisBL  <=  PositivityTheory.RgEis.Hd.eisBL
+  L 221 ellipticMainTheoremCM' : GlobalTheory.Published.EllipticMainTheoremCM  <=  PositivityTheory.Prw.ellipticMainTheoremCM_holds
+  L 279 ess_square_integrable_segments_of_literature : GlobalTheory.Published.EssSquareIntegrableSegments  <=  PositivityTheory.Exh.essSquareIntegrableSegments_of_seg, PositivityTheory.RgGu.segmentRepresentation
+  L 549 fargues_exact_of_literature : GlobalTheory.CompanionTheory.Ar.HT.FarguesExact  <=  UpperTheory.Lit.farguesExact
+  L 373 flath_tensor_product_of_literature : GlobalTheory.Published.FlathTensorProduct  <=  CompanionTheory.Rg.Fl.B.flathTensorProduct
+  L 379 fontaine_bcris_of_literature : GlobalTheory.Published.FontaineBcris  <=  GlobalTheory.MemLoc.fontaineBcris
+  L 381 formal_algebraisation_of_literature : GlobalTheory.Published.FormalAlgebraisation  <=  PositivityTheory.FormalThickening.formalAlgebraisation
+  L 383 formal_degree_compact_dual_of_literature : GlobalTheory.Published.FormalDegreeCompactDual  <=  PositivityTheory.RgFd.B.formalDegreeCompactDual
+  L 391 generic_unitary_dual_gl_of_literature : GlobalTheory.Published.GenericUnitaryDualGL  <=  PositivityTheory.Gud.Fin.genericUnitaryDualGL_holds
+  L 293 generic_unlinked_gl_of_literature : GlobalTheory.Published.GenericUnlinkedGL  <=  GlobalTheory.RgGu.genericUnlinkedGL_of_segRep2, PositivityTheory.RgGu.segmentRepresentation
+  L 393 geometric_restriction_filtration_of_literature : GlobalTheory.Published.GeometricLemmaFiltration  <=  GlobalTheory.geometricLemmaFiltration_holds
+  L 297 geometric_restriction_of_literature : GlobalTheory.Published.GeometricLemma  <=  GlobalTheory.CompanionTheory.GeoLink.geometricLemma
+  L 385 gk_globalisation_of_literature : GlobalTheory.Published.GKGlobalisation  <=  GlobalTheory.gkGlobalisation_holds
+  L 387 gl_howe_duality_of_literature : GlobalTheory.Published.GLHoweDuality  <=  PositivityTheory.Stage1.PM.gLHoweDuality
+  L 243 global_artin_reciprocity_of_literature : GlobalTheory.Published.GlobalArtinReciprocity  <=  GlobalTheory.globalArtinReciprocity_holds
+  L 567 global_euler_char_of_literature : ReciprocityTheory.Gal.GlobalEulerChar  <=  PositivityTheory.Lit1.GEN.globalEulerChar_full
+  L 569 global_finiteness_of_literature : ReciprocityTheory.Gal.GlobalFiniteness  <=  PositivityTheory.Lit1.GF.globalFiniteness
+  L 395 good_chern_weil_of_literature : GlobalTheory.Published.GoodChernWeil  <=  GlobalTheory.GoodMetric.goodChernWeil
+  L 397 green_cuspidal_of_literature : GlobalTheory.Published.GreenCuspidal  <=  PositivityTheory.Stage1.PM.greenCuspidal
+  L 399 green_regular_characters_of_literature : GlobalTheory.Published.GreenRegularCharacters  <=  PositivityTheory.Stage1.PM.greenRegularCharacters
+  L 401 green_series_st_of_literature : GlobalTheory.Published.GreenSeriesSt  <=  PositivityTheory.Prw.greenSeriesSt_of, PositivityTheory.Stage1.PM.greenCuspidal
+  L 299 grothendieck_ring_polynomial_of_literature : GlobalTheory.Published.GrothendieckRingPolynomial  <=  PositivityTheory.Groth.grothendieckRingPolynomial_of_seg, PositivityTheory.RgGu.segmentRepresentation
+  L 411 harish_chandra_analyticity_of_literature : GlobalTheory.Published.HarishChandraAnalyticity  <=  GlobalTheory.CompanionTheory.Hypotheses₂.harishChandra_analyticity_density
+  L 413 harish_chandra_finite_of_literature : GlobalTheory.Published.HarishChandraFinite  <=  PositivityTheory.RgHf.harishChandraFinite
+  L 415 harish_chandra_modules_of_literature : GlobalTheory.Published.HarishChandraModules  <=  PositivityTheory.Stage1.PM.harishChandraModules
+  L 417 hasse_norm_st_of_literature : GlobalTheory.Published.HasseNormSt  <=  GlobalTheory.QNorm.hasseNormSt
+  L 223 heckeTateFunctionalEquation' : GlobalTheory.Published.HeckeTateFunctionalEquation  <=  GlobalTheory.Top.heckeTateFE
+  L 245 hecke_l_adic_character_de_rham_of_literature : GlobalTheory.Published.HeckeLAdicCharacterDeRham  <=  UpperTheory.Lit.heckeLAdicCharacterDeRham
+  L 419 hecke_l_adic_character_of_literature : GlobalTheory.Published.HeckeLAdicCharacter  <=  PositivityTheory.Stage1.PM.heckeLAdicCharacter
+  L 427 hecke_l_entire_and_nonzero_at_one_of_literature : GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne  <=  PositivityTheory.Stage1.PM.heckeLEntireAndNonzeroAtOne
+  L 429 hecke_l_partial_continuation_of_literature : GlobalTheory.Published.HeckeLPartialContinuation  <=  PositivityTheory.Stage1.PM.heckeLPartialContinuation
+  L 431 hermitian_hasse_principle_of_literature : GlobalTheory.Published.HermitianHassePrinciple  <=  PositivityTheory.Stage1.PM.hermitianHassePrinciple
+  L 433 hermitian_local_global_of_literature : GlobalTheory.Published.HermitianLocalGlobal  <=  PositivityTheory.Stage1.PM.hermitianLocalGlobal
+  L 225 hilbertClassFieldJ' : GlobalTheory.Published.HilbertClassFieldJ  <=  GlobalTheory.Laid.hcfj_holds
+  L 435 holomorphic_discrete_series_of_literature : GlobalTheory.Published.HolomorphicDiscreteSeries  <=  GlobalTheory.HolDS.holomorphicDiscreteSeries_holds
+  L 437 howe_duality_real_of_literature : GlobalTheory.Published.HoweDualityReal  <=  GlobalTheory.howeDualityReal_holds
+  L 235 ht_card_of_literature : GlobalTheory.HeightCounting.HtCard  <=  GlobalTheory.HtCardProof.htCard
+  L 439 ideal_invariants_one_orbit_st_of_literature : GlobalTheory.Published.IdealInvariantsOneOrbitSt  <=  PositivityTheory.Prw.idealInvariantsOneOrbitSt_holds
+  L 441 induced_simple_lowest_alcove_of_literature : GlobalTheory.Published.InducedSimpleLowestAlcove  <=  GlobalTheory.Alc.inducedSimpleLowestAlcove
+  L 315 irreducible_admissible_gl_of_literature : GlobalTheory.Published.IrreducibleAdmissibleGL  <=  PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top
+  L 443 jacquet_shalika_of_literature : GlobalTheory.Published.JacquetShalika  <=  PositivityTheory.AdelicQuotientData.jacquetShalika
+  L 289 jacquet_shalika_rigidity_of_literature : GlobalTheory.Published.JacquetShalikaRigidity  <=  PositivityTheory.AdelicQuotientData.jacquetShalikaRigidity
+  L 445 k_finite_vectors_unitary_of_literature : GlobalTheory.Published.KFiniteVectorsUnitary  <=  GlobalTheory.KFinLinkPort.kFiniteVectors_irreducibleUnitary_unitaryGroupPQ
+  L 447 kawamata_viehweg_of_literature : GlobalTheory.Published.KawamataViehweg  <=  And.left, GlobalTheory.KVFromPair.kawamataViehweg_of_nadelVanishingPair, GlobalTheory.nefNumerics_outright, NadelVanishingSeparation.NSI.nadelVanishingAndNonKltDivisor
+  L 449 kudla_splitting_split_unitary_of_literature : GlobalTheory.Published.KudlaSplittingSplitUnitary  <=  GlobalTheory.kudlaSplittingSplitUnitary
+  L 451 l2_extension_log_canonical_of_literature : GlobalTheory.Published.L2ExtensionLogCanonical  <=  GlobalTheory.l2ExtensionLogCanonical'
+  L 453 landherr_st_of_literature : GlobalTheory.Published.LandherrSt  <=  GlobalTheory.QNorm.landherr_and_landherrSt
+  L 307 langlands_exhaustion_gl_of_literature : GlobalTheory.Published.LanglandsExhaustionGL  <=  PositivityTheory.Exh.langlandsExhaustionGL_of_seg, PositivityTheory.RgGu.segmentRepresentation
+  L 309 langlands_multisegments_of_literature : GlobalTheory.Published.LanglandsMultisegments  <=  PositivityTheory.Exh.langlandsMultisegments_of_seg, PositivityTheory.RgGu.segmentRepresentation
+  L 455 linnik_of_literature : GlobalTheory.Published.Linnik  <=  UpperTheory.Lit.linnik
+  L 571 localEulerChar_alt_alt : ReciprocityTheory.Gal.LocalEulerChar  <=  GlobalTheory.Laid.loceuler_holds
+  L 281 local_converse_gl_of_literature : GlobalTheory.Published.LocalConverseGL  <=  DiscreteGroups.sglob.LConv.localConverseGL
+  L 583 local_euler_char_k_of_literature : Formalism.GaloisCohomology.LocalEulerCharK  <=  CompanionTheory.LocalTateOrthogonality.Gcoh.top_euler
+  L 585 local_finiteness_k_of_literature : Formalism.GaloisCohomology.LocalFinitenessK  <=  CompanionTheory.LocalTateOrthogonality.Gcoh.top_locfin
+  L 573 local_finiteness_of_literature : ReciprocityTheory.Gal.LocalFiniteness  <=  GlobalTheory.Laid.locfin_holds
+  L 283 local_langlands_recT_exists_of_literature : _root_.UpperTheory.Zero.LLC.RecTExists  <=  O.localLanglandsExists
+  L 587 local_tate_duality_k_of_literature : Formalism.GaloisCohomology.LocalTateDualityK  <=  CompanionTheory.LocalTateOrthogonality.Gcoh.top_tate
+  L 575 local_tate_duality_of_literature : ReciprocityTheory.Gal.LocalTateDuality  <=  GlobalTheory.LocalDualityAll.localTateDuality
+  L 219 logDerivOne : GlobalTheory.Mem.An.LogDerOne  <=  GlobalTheory.LogDerOneProof.logDerOne_holds
+  L 463 metaplectic_representation_of_literature : GlobalTheory.Published.MetaplecticRepresentation  <=  GlobalTheory.metaplecticRepresentation_holds
+  L 465 moy_prasad_jacquet_iso_of_literature : GlobalTheory.Published.MoyPrasadJacquetIso  <=  PositivityTheory.Prw.moyPrasadJacquetIso_holds
+  L 467 nadel_vanishing_and_non_klt_divisor_of_literature : GlobalTheory.Published.NadelVanishingAndNonKltDivisor  <=  NadelVanishingSeparation.NSI.nadelVanishingAndNonKltDivisor
+  L 469 nef_numerics_of_literature : GlobalTheory.Published.NefNumerics  <=  GlobalTheory.nefNumerics_outright
+  L 551 nef_rr_of_literature : GlobalTheory.CompanionTheory.Ar.Pub.NefRR  <=  PositivityTheory.Tls2.Nef.nefRR
+  L 227 partial_zeta_functional_equation_of_literature : GlobalTheory.Published.PartialZetaFunctionalEquation  <=  PositivityTheory.Prw.partialZetaFunctionalEquation_holds
+  L 553 poincare_lelong_inv_of_literature : GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv  <=  PositivityTheory.Tls2.Pl.poincareLelongInv
+  L 471 point_separation_pair_of_literature : GlobalTheory.Published.PointSeparationPair  <=  NadelVanishingSeparation.NSI.pointSeparationPair
+  L 473 poitou_tate_normalised_of_literature : GlobalTheory.Published.PoitouTateNormalised  <=  PositivityTheory.Lit1.PTN.poitouTateNormalised_holds
+  L 409 principal_polarisation_one_section_of_literature : GlobalTheory.Published.principalPolarisationOneSection  <=  GlobalTheory.AbLaw.principalPolarisation_unique_section
+  L 555 principalisation_char_zero_of_literature : GlobalTheory.CompanionTheory.Hypotheses₂.PrincipalisationCharZero  <=  PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisationCharZero_closed
+  L 253 principalisation_of_literature : GlobalTheory.Published.Principalisation  <=  PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisation_closed
+  L 475 prismatic_dieudonne_hodge_of_literature : GlobalTheory.Published.PrismaticDieudonneHodge  <=  UpperTheory.Lit.prismaticDieudonneHodge
+  L 477 quadratic_class_field_theory_of_literature : GlobalTheory.Published.QuadraticClassFieldTheory  <=  PositivityTheory.Stage1.PM.quadraticClassFieldTheory
+  L 479 radford_shuffle_polynomial_of_literature : GlobalTheory.Published.RadfordShufflePolynomial  <=  PositivityTheory.Stage1.PM.radfordShufflePolynomial
+  L 489 ray_class_field_st_of_literature : GlobalTheory.Published.RayClassFieldSt  <=  PositivityTheory.Stage1.PM.rayClassFieldSt
+  L 491 real_metaplectic_representation_of_literature : GlobalTheory.Published.RealMetaplecticRepresentation  <=  PositivityTheory.Stage1.PM.realMetaplecticRepresentation
+  L 557 resolution_char_zero_of_literature : GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero  <=  PositivityTheory.Resplug.ResolutionBlowup.resolutionCharZero
+  L 495 schur_orthogonality_square_integrable_of_literature : GlobalTheory.Published.SchurOrthogonalitySquareIntegrable  <=  PositivityTheory.Stage1.PM.schurOrthogonalitySquareIntegrable
+  L 301 segment_representation_of_literature : GlobalTheory.Published.SegmentRepresentation  <=  PositivityTheory.RgGu.segmentRepresentation
+  L 497 semi_abelian_hom_extension_of_literature : GlobalTheory.Published.SemiAbelianHomExtension  <=  GlobalTheory.semiAbelianHomExtension_holds
+  L 499 semi_abelian_lie_seminegative_of_literature : GlobalTheory.Published.SemiAbelianLieSeminegative  <=  GlobalTheory.Nef.semiAbelianLieSeminegative
+  L 501 semistable_reduction_st_of_literature : GlobalTheory.Published.SemistableReductionSt  <=  GlobalTheory.SS.semistableReductionSt
+  L 503 serre_holomorphic_sections_of_literature : GlobalTheory.Published.SerreHolomorphicSections  <=  GlobalTheory.Published.serreHolomorphicSections_holds
+  L 581 siegelWeilU_unitary_convergent_of_literature : HeckeCharacterZeroLocus.SiegelWeilU.SiegelWeilUnitaryConvergent  <=  GlobalTheory.CompanionTheory.SW.siegelWeilUnitaryConvergent
+  L 369 siegel_eisenstein_continuation_of_literature : GlobalTheory.Published.SiegelEisensteinContinuation  <=  PositivityTheory.RgEis.Sp.Hd.siegelEisensteinContinuation
+  L 505 siegel_eisenstein_simple_pole : GlobalTheory.Published.UnusedSlot72  <=  
+  L 507 siegel_set_unitary_of_literature : GlobalTheory.Published.SiegelSetUnitary  <=  UpperTheory.Lit.siegelSetUnitary_of_core
+  L 509 siegel_toroidal_integral_of_literature : GlobalTheory.Published.SiegelToroidalIntegral  <=  GlobalTheory.siegelToroidalIntegral_holds
+  L 563 siegel_weil_std_of_literature : GlobalTheory.ThK.Dbl.SiegelWeilStd  <=  PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd
+  L 481 siegel_weil_unitary_convergent_of_literature : GlobalTheory.Published.SiegelWeilUnitaryConvergent  <=  UpperTheory.Lit.Sw47.convergent
+  L 511 siegel_weil_unitary_schrodinger_of_literature : GlobalTheory.Published.SiegelWeilUnitarySchrodinger  <=  PositivityTheory.SiegelWeilCoefficients.field
+  L 311 standard_cosocle_gl_of_literature : GlobalTheory.Published.StandardCosocleGL  <=  PositivityTheory.Exh.standardCosocleGL_of_seg, PositivityTheory.RgGu.segmentRepresentation
+  L 317 standard_functors_finite_length_of_literature : GlobalTheory.Published.StandardFunctorsFiniteLength  <=  PositivityTheory.Tls2.BZGL.standardFunctorsFiniteLength_top
+  L 515 stone_von_neumann_of_literature : GlobalTheory.Published.StoneVonNeumann  <=  PositivityTheory.Stage1.PM.stoneVonNeumann
+  L 517 strong_approx_su_of_literature : GlobalTheory.Published.StrongApproxSU  <=  GlobalTheory.StrongApproxSUProof.strongApproxSU
+  L 519 theta_rational_invariance_of_literature : GlobalTheory.Published.ThetaRationalInvariance  <=  PositivityTheory.Stage1.PM.thetaRationalInvariance
+  L 521 toroidal_compactification_of_literature : GlobalTheory.Published.ToroidalCompactification  <=  GlobalTheory.toroidalCompactification_holds
+  L 523 toroidal_for_fan_ks_of_literature : GlobalTheory.Published.ToroidalForFanKS  <=  GlobalTheory.TorKSField.toroidalForFanKS
+  L 525 totally_disjoint_product_irreducible_of_literature : GlobalTheory.Published.TotallyDisjointProductIrreducible  <=  GlobalTheory.geometricLemma_of_filtration, PositivityTheory.Geo.geometricLemmaFiltration, PositivityTheory.Groth.grothendieckRingPolynomial_of_seg, PositivityTheory.Prw.bernsteinZelevinskyFiniteness_holds, PositivityTheo
+  L 375 unitary_irreducible_admissible_of_literature : GlobalTheory.Published.UnitaryIrreducibleAdmissible  <=  CompanionTheory.Rg.Fl.B.unitaryIrreducibleAdmissible
+  L 529 unramified_doubling_gl_of_literature : GlobalTheory.Published.UnramifiedDoublingGL  <=  GlobalTheory.UnramDoublingProof.unramifiedDoublingGL
+  L 579 unramified_orthogonality_of_literature : ReciprocityTheory.Gal.UnramifiedOrthogonality  <=  GlobalTheory.unramifiedOrthogonality_holds
+  L 535 weber_ray_field_st_of_literature : GlobalTheory.Published.WeberRayFieldSt  <=  PositivityTheory.Prw.weberRayFieldSt_holds
+  L 537 weil_representation_exists_of_literature : GlobalTheory.Published.WeilRepresentationExists  <=  UpperTheory.Lit.weilRepresentationExists_pair
+  L 539 weil_representation_unitary_pair_of_literature : GlobalTheory.Published.WeilRepresentationUnitaryPair  <=  GlobalTheory.weilRepresentationUnitaryPair
+  L 541 weil_siegel_formula_unitary_of_literature : GlobalTheory.Published.WeilSiegelFormulaUnitary  <=  UpperTheory.Lit.Sw47.weilUnitary
+  L 483 weil_theta_convergence_of_literature : GlobalTheory.Published.WeilThetaConvergence  <=  UpperTheory.Lit.weilThetaConvergence
+  L 543 weyl_branching_of_literature : GlobalTheory.Published.WeylBranching  <=  PositivityTheory.Stage1.PM.weylBranching
+exit=0
+# cmd: OMP_NUM_THREADS=1 nice python3 locate_producers.py /workspace/rh_orig lit_closure.json
+producer constants: 201; located: 196; unresolved: 5
+located in a PublishedTheorems/ directory: 14
+  PUB CuspFormAutomorphicBounds.automorphicFormsFiniteGL  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/FiniteGLInvariants/AffineLieInvariants/Imports.lean:6
+  PUB GlobalTheory.Published.ArithHilbertSamuel.volNef  ->  rh_orig/src/Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/SmallSecTensTriv.lean:89
+  PUB GlobalTheory.Published.CycleHeights.heightProjection  ->  rh_orig/src/Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/ResidueDegreeOfIsClosedImmersion.lean:153
+  PUB GlobalTheory.Published.GlobalArtinReciprocity.rayCharacterArtin  ->  rh_orig/src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ExistsIdealsPrimeToEqSpan.lean:388
+  PUB GlobalTheory.Published.GrothendieckDeformation.grothendieckMessing  ->  rh_orig/src/Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/GrothendieckDeformation.lean:22
+  PUB GlobalTheory.nefNumerics_outright  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/NefNumerics/NefRiemannRoch/NefLineBundleNumericalTheoremsProof.lean:11
+  PUB PositivityTheory.AdelicQuotientData.jacquetShalika  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/JacquetShalikaRigidity.lean:15
+  PUB PositivityTheory.AdelicQuotientData.jacquetShalikaRigidity  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/JacquetShalikaRigidity.lean:13
+  PUB PositivityTheory.CWB.casselmanWallach  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/CasselmanWallach/FinalB.lean:8
+  PUB PositivityTheory.Lit1.ClozelPurity.clozelPurity  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/ClozelPurity/Bridge.lean:6
+  PUB PositivityTheory.Lit1.GEN.globalEulerChar_full  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/GlobalEulerCharOfLemmaX.lean:13
+  PUB PositivityTheory.Lit1.GF.globalFiniteness  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalFiniteness/GlobalFiniteness.lean:10
+  PUB PositivityTheory.Lit1.PTN.poitouTateNormalised_holds  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/PoitouTateDuality/PoitouTateNineTerm/PoitouTateNormalisedHolds.lean:18
+  PUB PositivityTheory.jumpWindows.cuspidalMultiplicityOne  ->  rh_orig/src/Development/WeilBound/CoreStatements/PublishedTheorems/SmoothVectorEstimates/CuspidalMultiplicityOne.lean:7
+located files by top-level area: {'src/Development': 185, 'src/CompanionTheory': 11}
+unresolved (not located by this source-level method):
+   And.left
+   O.caraianiLocalGlobalDual
+   O.galoisRepOfPolarizedPairLit
+   O.localLanglandsExists
+   UpperTheory.V.Af.cuspSpectrumGL.2.2
+exit=0

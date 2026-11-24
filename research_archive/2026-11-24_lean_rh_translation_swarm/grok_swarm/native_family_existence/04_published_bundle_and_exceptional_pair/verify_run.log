@@ -1,0 +1,21 @@
+# 2026-11-24 09:58 GMT cmd: OMP_NUM_THREADS=1 nice python3 verify_t8_t1_sources.py /workspace/rh_up /workspace/rh_orig  (rh_up = fresh blobless clone of leanprover-community/riemann-hypothesis; rh_orig = homeowmorphism/riemann-hypothesis-original @4e8bb36)
+ok   dbd5db70bc11 src/Main.lean (1 tokens)
+ok   6a542d7ce969 src/Supplements/Kernels/MainTheorems.lean (2 tokens)
+ok   ee340012ab19 src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean (2 tokens)
+ok   f769999ac5e4 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean (1 tokens)
+ok   268786576f96 src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean (1 tokens)
+ok   a13ba1f8c38d src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean (8 tokens)
+ok   5924cc493c56 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExceptionalDirichletZeroUniqueZeroFreeRegion.lean (10 tokens)
+ok   9aec34984e50 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExceptionalDirichletZeroUniqueZeroFreeRegionStatement.lean (1 tokens)
+ok   23e05538f049 src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ZerosDisc.lean (4 tokens)
+ok   6ad3eec0c418 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/OrderNeTop.lean (2 tokens)
+ok   641a2e37fb8f src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ZeroFreePrincipal.lean (3 tokens)
+ok   94ffe758e349 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LFunctionConjEqZero.lean (2 tokens)
+ok   1fd99e9ae53a src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOneStatement.lean (1 tokens)
+ok   b4446a9f3089 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZerosStatement.lean (1 tokens)
+tree: pin src files=175187 checkout src files=175188 only_in_pin=[] only_in_checkout=['src/Challenge.lean'] differing=0
+ok   comparator.json (checkout HEAD 4e8bb36faa8c, blob e989bcf90ff0) permitted_axioms token
+scan: files with top-level `axiom` decl = 0; files containing sorry/admit = 1: ['src/Challenge.lean']
+files=14 tokens=40 failures=0
+exit=0
+sha256 f8e7338c37b6a9d860d9d0f7b4e6788d2e70141fa02f71d53268e654569d5e55  verify_t8_t1_sources.py
