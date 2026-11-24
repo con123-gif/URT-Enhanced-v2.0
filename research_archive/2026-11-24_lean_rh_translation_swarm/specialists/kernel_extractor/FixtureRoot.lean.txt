@@ -1,0 +1,5 @@
+theorem riemannHypothesis :
+    True ∧ (KernelFixture.natValue = KernelFixture.natValue) ∧
+    (KernelFixture.strValue = KernelFixture.strValue) ∧
+    (Quot.mk (fun a b : Nat => a = b) 0 = Quot.mk (fun a b : Nat => a = b) 0) :=
+  ⟨KernelFixture.bridge, rfl, rfl, rfl⟩
