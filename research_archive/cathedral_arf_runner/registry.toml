@@ -3184,3 +3184,12 @@ claim = "native"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-23_gauge_reduced_hopf_circulation_gravity/GAUGE_REDUCED_HOPF_CIRCULATION_GRAVITY_CERT.py"
 timeout = 30
+
+# Exact face-harmonic invariant-flow and no-transfer obstruction
+[[check]]
+id = "research.face_harmonic_invariant_flow_obstruction"
+stage = "research"
+claim = "native"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-24_face_harmonic_invariant_flow/FACE_HARMONIC_INVARIANT_FLOW_CERT.py"
+timeout = 30

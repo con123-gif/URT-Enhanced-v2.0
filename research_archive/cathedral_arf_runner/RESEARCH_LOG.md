@@ -3,6 +3,16 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-24 — Gravity/fluids bot — exact face-harmonic invariant-flow obstruction
+- Task: Determine whether the surviving all-five constant-face harmonic is a nonlinear conserved carrier and whether native Hopf/circulation/H64 dynamics transfers its energy into the first gapped stress-bearing mode.
+- Result: EXACT STRUCTURAL plus NUMERIC FLOW OBSTRUCTION for the present canonical Hamiltonian; coexact/nonuniform backgrounds remain OPEN.
+- Statement: The equal-block face harmonic is annihilated by the joined Hessian (9.64e-16 residual), hidden f/P3/P5 sources, Hopf gradient and circulation gradient. For z_j=a_j h+z_perp,j the full energy separates as E_h[a]+E_perp[z_perp,y], with da/dt=-i r^2 L1 a and conserved sum |a_j|^2.
+- Mixed test: with two clock harmonics, the first stress mode (gap 0.33098582379443636) and nonzero H64 history, mixed-energy residual is 4.09e-16; nonharmonic/history gradient residuals are 3.94e-16/0.
+- Flow test: after 120 native RK4 steps (dt=0.001), subtracting the independently evolved harmonic leaves stress/history trajectories unchanged to 2.52e-16/0 and harmonic modal-norm drift is exactly 0 at printed precision.
+- Scope: this is an invariant linear sector, not a nontrivial symplectic Casimir and not redshift, spin-2 propagation or horizon thermodynamics. The constant-face ground carrier cannot source weak gravity or vortex/entropy transfer in the current action.
+- Evidence: `research_archive/2026-11-24_face_harmonic_invariant_flow/FACE_HARMONIC_INVARIANT_FLOW_CERT.py`; standalone original-operator preflight exit 0.
+- Next: construct the lowest native coexact edge-curl stationary state at fixed Noether charge and test its nonlinear stress/H64 transfer, because that carrier is visible to circulation and hidden-source operators.
+
 ### 2026-11-23 — Gravity/fluids bot — gauge-reduced Hopf/circulation face-harmonic obstruction
 - Task: Quotient the 45 exact-edge directions and test the unchanged all-five 190/H64/24 projective Hopf plus circulation operator for a physical weak-gravity background.
 - Result: EXACT/NUMERIC OBSTRUCTION within the vacuum quadratic selector; nonlinear fixed-flux response remains OPEN.
