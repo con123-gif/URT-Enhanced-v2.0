@@ -1,0 +1,6 @@
+module
+import AxiomCycleBase
+
+#print axioms CathedralAxiomCycle.Witness
+#print axioms CathedralAxiomCycle.Witness.plain
+#print axioms CathedralAxiomCycle.Witness.guarded
