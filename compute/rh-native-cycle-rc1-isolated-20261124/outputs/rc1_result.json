@@ -1,0 +1,83 @@
+{
+  "status": "NATIVE_SYNTHETIC_ISOLATED_UPSTREAM_COLLECTOR_COPY_NOT_RH_RECHECK",
+  "rows": [
+    {
+      "cached": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "fresh": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "root": "CathedralAxiomCycle.Witness"
+    },
+    {
+      "cached": [],
+      "fresh": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "root": "CathedralAxiomCycle.Witness.plain"
+    },
+    {
+      "cached": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "fresh": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "root": "CathedralAxiomCycle.Witness.guarded"
+    }
+  ],
+  "cache_disagreements": [
+    "CathedralAxiomCycle.Witness.plain"
+  ],
+  "shared_orders": [
+    {
+      "axioms": [
+        [
+          "CathedralAxiomCycle.guardProp"
+        ],
+        [],
+        [
+          "CathedralAxiomCycle.guardProp"
+        ]
+      ],
+      "roots": [
+        "CathedralAxiomCycle.Witness",
+        "CathedralAxiomCycle.Witness.plain",
+        "CathedralAxiomCycle.Witness.guarded"
+      ]
+    },
+    {
+      "axioms": [
+        [
+          "CathedralAxiomCycle.guardProp"
+        ],
+        [
+          "CathedralAxiomCycle.guardProp"
+        ],
+        [
+          "CathedralAxiomCycle.guardProp"
+        ]
+      ],
+      "roots": [
+        "CathedralAxiomCycle.Witness.plain",
+        "CathedralAxiomCycle.Witness",
+        "CathedralAxiomCycle.Witness.guarded"
+      ]
+    },
+    {
+      "axioms": [
+        [
+          "CathedralAxiomCycle.guardProp"
+        ],
+        [],
+        []
+      ],
+      "roots": [
+        "CathedralAxiomCycle.Witness.guarded",
+        "CathedralAxiomCycle.Witness",
+        "CathedralAxiomCycle.Witness.plain"
+      ]
+    }
+  ]
+}

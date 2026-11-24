@@ -1,0 +1,6 @@
+CYCLE_RESULT {"cached":["CathedralAxiomCycle.guardProp"],"fresh":["CathedralAxiomCycle.guardProp"],"root":"CathedralAxiomCycle.Witness"}
+CYCLE_RESULT {"cached":[],"fresh":["CathedralAxiomCycle.guardProp"],"root":"CathedralAxiomCycle.Witness.plain"}
+CYCLE_RESULT {"cached":["CathedralAxiomCycle.guardProp"],"fresh":["CathedralAxiomCycle.guardProp"],"root":"CathedralAxiomCycle.Witness.guarded"}
+CYCLE_SHARED {"axioms":[["CathedralAxiomCycle.guardProp"],[],["CathedralAxiomCycle.guardProp"]],"roots":["CathedralAxiomCycle.Witness","CathedralAxiomCycle.Witness.plain","CathedralAxiomCycle.Witness.guarded"]}
+CYCLE_SHARED {"axioms":[["CathedralAxiomCycle.guardProp"],["CathedralAxiomCycle.guardProp"],["CathedralAxiomCycle.guardProp"]],"roots":["CathedralAxiomCycle.Witness.plain","CathedralAxiomCycle.Witness","CathedralAxiomCycle.Witness.guarded"]}
+CYCLE_SHARED {"axioms":[["CathedralAxiomCycle.guardProp"],[],[]],"roots":["CathedralAxiomCycle.Witness.guarded","CathedralAxiomCycle.Witness","CathedralAxiomCycle.Witness.plain"]}
