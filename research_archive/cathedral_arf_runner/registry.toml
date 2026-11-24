@@ -3373,3 +3373,11 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-next-root-roles-20261124"
+question = "Extract ten previously root-linked exact Lean declarations and eight specialist probes from the authenticated RH archive; preserve inductive package structure and recursor rule RHS separately. Not kernel recheck."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_next_root_roles.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
