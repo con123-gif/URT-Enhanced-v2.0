@@ -1,0 +1,415 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "upstreamHeadObserved": "5f2c8594adf1f48032d37583118512cd7bbf3afa",
+  "sourceLedger": {
+    "transport": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/RecTTransport.lean",
+      "631f12febe08029e0d1d11139a704a6aaab367fb"
+    ],
+    "dual": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ParDual.lean",
+      "3942f8ac24a4c1edb65a1302b40a51b62dd0c482"
+    ],
+    "cusp": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean",
+      "3c2550dd844817d87bf5eacae0fb1498df8603b0"
+    ],
+    "ext": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDual.lean",
+      "d73720859f5c9237ec612be0ce3ba0c727e20835"
+    ],
+    "root": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+      "268786576f96cb5a2cea5fab2da4cf4f291c1116"
+    ],
+    "wd": [
+      "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/WDBasic.lean",
+      "374976f95060e0e4c703e394160e64d384f168c2"
+    ]
+  },
+  "root": "root",
+  "scope": "selected source obligations, not elaborated kernel closure",
+  "nodes": [
+    {
+      "id": "root",
+      "file": "root",
+      "anchor": "dual := UpperTheory.Zero.LLC.extDual",
+      "deps": [
+        "extension"
+      ],
+      "frontier": [
+        "artEx",
+        "cuspEx",
+        "exists_isLExt"
+      ],
+      "guard": "RecTExists record construction",
+      "status": "SOURCE-MATCHED",
+      "line": 41
+    },
+    {
+      "id": "extension",
+      "file": "ext",
+      "anchor": "theorem UpperTheory.Zero.LLC.extDual",
+      "deps": [
+        "list"
+      ],
+      "frontier": [
+        "Pr.exh",
+        "Pr.dual",
+        "goodSeg",
+        "IsLExt",
+        "weilDeligneParam_dual_listSum_absTwist_special"
+      ],
+      "guard": "Good(cls π), contragredient equivalence",
+      "status": "SOURCE-MATCHED",
+      "line": 47
+    },
+    {
+      "id": "list",
+      "file": "ext",
+      "anchor": "private theorem map_summand_dual",
+      "deps": [
+        "summand"
+      ],
+      "frontier": [
+        "List.Forall₂ SegDual"
+      ],
+      "guard": "GoodCusp for every first segment term; paired lists",
+      "status": "SOURCE-MATCHED",
+      "line": 35
+    },
+    {
+      "id": "summand",
+      "file": "ext",
+      "anchor": "private theorem summand_dual",
+      "deps": [
+        "cusp.field"
+      ],
+      "frontier": [
+        "clBasic",
+        "CuspT.nu",
+        "weilDeligneParam_dual_listSum_absTwist_special",
+        "WD.lpTw_add"
+      ],
+      "guard": "GoodCusp first; SegDual",
+      "status": "SOURCE-MATCHED",
+      "line": 17
+    },
+    {
+      "id": "cusp.field",
+      "file": "cusp",
+      "anchor": "exact H.dual hx hg hd",
+      "deps": [
+        "cusp.good"
+      ],
+      "frontier": [
+        "clBasic",
+        "GoodCusp preservation",
+        "rg"
+      ],
+      "guard": "both cuspidal; source GoodCusp; DualCl",
+      "status": "SOURCE-MATCHED",
+      "line": 221
+    },
+    {
+      "id": "cusp.good",
+      "file": "cusp",
+      "anchor": "private theorem Gm.dual",
+      "deps": [
+        "par"
+      ],
+      "frontier": [
+        "good_cases",
+        "parOne",
+        "clBasic",
+        "Gm.one",
+        "Gm.tw",
+        "Gm.par",
+        "parUniq",
+        "wDBasic",
+        "twist_congr"
+      ],
+      "guard": "Gm, cusp, GoodCusp, DualCl",
+      "status": "SOURCE-MATCHED",
+      "line": 107
+    },
+    {
+      "id": "par",
+      "file": "dual",
+      "anchor": "theorem UpperTheory.Zero.LLC.parDual",
+      "deps": [
+        "inflation",
+        "regular",
+        "names",
+        "finite.cusp"
+      ],
+      "frontier": [
+        "wDBasic",
+        "clBasic",
+        "IrrRep.cl_eq_iff",
+        "source TypeAt"
+      ],
+      "guard": "full ParDual prefix, cusp, DZ, DualCl, Par",
+      "status": "SOURCE-MATCHED",
+      "line": 345
+    },
+    {
+      "id": "inflation",
+      "file": "dual",
+      "anchor": "private theorem inflates_dual",
+      "deps": [
+        "average"
+      ],
+      "frontier": [
+        "DzIso.redKO_surjective",
+        "DzIso.toKO_surjective",
+        "DzIso.ker_redKO",
+        "DepthZeroJac.isCompact_KOne",
+        "contra_apply"
+      ],
+      "guard": "continuous local identification, contra equivalence, finite inflation",
+      "status": "SOURCE-MATCHED",
+      "line": 295
+    },
+    {
+      "id": "average",
+      "file": "dual",
+      "anchor": "private theorem exists_dual_map",
+      "deps": [],
+      "frontier": [
+        "isCompl_fixed_twKer",
+        "LinearMap.trace_eq_contract_apply",
+        "LinearMap.trace_mul_cycle",
+        "Fintype.sum_equiv"
+      ],
+      "guard": "smooth π; finite Γ, finite-dimensional W; surjective q, compact H, both kernel conditions, invariant B≠0",
+      "status": "SOURCE-MATCHED",
+      "line": 13
+    },
+    {
+      "id": "regular",
+      "file": "dual",
+      "anchor": "private theorem isRegularChar_inv",
+      "deps": [],
+      "frontier": [
+        "inv_injective"
+      ],
+      "guard": "regular θ",
+      "status": "SOURCE-MATCHED",
+      "line": 280
+    },
+    {
+      "id": "names",
+      "file": "dual",
+      "anchor": "private theorem names_dual",
+      "deps": [
+        "inverse.root",
+        "inverse.irred"
+      ],
+      "frontier": [
+        "FDRep.char_dual"
+      ],
+      "guard": "Names g n θ τ",
+      "status": "SOURCE-MATCHED",
+      "line": 272
+    },
+    {
+      "id": "finite.cusp",
+      "file": "dual",
+      "anchor": "private theorem isCusp_dual",
+      "deps": [
+        "rad.inverse"
+      ],
+      "frontier": [
+        "FDRep.simple_iff_char_is_norm_one",
+        "FDRep.char_dual",
+        "Equiv.sum_comp"
+      ],
+      "guard": "IsCusp τ.character",
+      "status": "SOURCE-MATCHED",
+      "line": 245
+    },
+    {
+      "id": "rad.inverse",
+      "file": "dual",
+      "anchor": "private theorem rad_inv",
+      "deps": [
+        "rad.support"
+      ],
+      "frontier": [],
+      "guard": "a+b=n; parabolic identity blocks",
+      "status": "SOURCE-MATCHED",
+      "line": 216
+    },
+    {
+      "id": "rad.support",
+      "file": "dual",
+      "anchor": "private theorem rad_iff",
+      "deps": [],
+      "frontier": [],
+      "guard": "a+b=n",
+      "status": "SOURCE-MATCHED",
+      "line": 156
+    },
+    {
+      "id": "inverse.root",
+      "file": "dual",
+      "anchor": "private theorem aeval_charpoly_inv",
+      "deps": [
+        "inverse.poly"
+      ],
+      "frontier": [
+        "eval₂_reverse_eq_zero_iff"
+      ],
+      "guard": "invertible y; unit root z",
+      "status": "SOURCE-MATCHED",
+      "line": 144
+    },
+    {
+      "id": "inverse.irred",
+      "file": "dual",
+      "anchor": "private theorem irreducible_charpoly_inv",
+      "deps": [
+        "inverse.poly",
+        "reverse.irred"
+      ],
+      "frontier": [
+        "Matrix.isUnit_iff_isUnit_det"
+      ],
+      "guard": "irreducible original charpoly",
+      "status": "SOURCE-MATCHED",
+      "line": 132
+    },
+    {
+      "id": "inverse.poly",
+      "file": "dual",
+      "anchor": "private theorem charpoly_inv_mul",
+      "deps": [],
+      "frontier": [
+        "Matrix.det_mul",
+        "RingHom.map_det",
+        "Matrix.det_neg",
+        "Matrix.reverse_charpoly"
+      ],
+      "guard": "invertible matrix over ZMod g",
+      "status": "SOURCE-MATCHED",
+      "line": 118
+    },
+    {
+      "id": "reverse.irred",
+      "file": "dual",
+      "anchor": "private theorem irreducible_reverse",
+      "deps": [],
+      "frontier": [
+        "reverse_natDegree",
+        "reverse_mul_of_domain",
+        "reflect_reflect"
+      ],
+      "guard": "irreducible polynomial with nonzero constant term",
+      "status": "SOURCE-MATCHED",
+      "line": 99
+    }
+  ],
+  "clauses": {
+    "transport": [
+      "def ParDual : Prop :=",
+      "y.IsCusp → DZ y → DualCl y y' → ∀ V : WD h, Par a y V → Par a y' V.lpDual",
+      "def TypeAt",
+      "D.Res R",
+      "Names g n θ τ",
+      "V.mono0 ∧ InFor g n R θ V",
+      "def GoodMap : Prop :=",
+      "dual : ∀ x y, x.IsCusp → y.IsCusp → GoodCusp x",
+      "Good (cls π) → Nonempty (π'.ρ.Equiv (contra π.ρ))"
+    ],
+    "dual": [
+      "(hq : Function.Surjective q)",
+      "(hH : IsCompact (H : Set G))",
+      "(h1 : ∀ k, q k = 1 → ι k ∈ H)",
+      "(h2 : ∀ x ∈ H, ∃ k, ι k = x ∧ q k = 1)",
+      "(hB : B ≠ 0)",
+      "isCompl_fixed_twKer hπ hH",
+      "let T : Module.End ℂ W := ∑ γ : Γ, ρ γ * P * ρ γ⁻¹",
+      "(Fintype.card Γ : ℂ) * f w0",
+      "Equiv.mulLeft (q k)⁻¹",
+      "reverse_mul_of_domain",
+      "Matrix.det_mul",
+      "have hsq : Y * Y = 0",
+      "FDRep.simple_iff_char_is_norm_one",
+      "Equiv.sum_comp",
+      "ParameterDuality.inflates_dual",
+      "hV.type g i hi n hn D R hR θ⁻¹",
+      "ParameterDuality.isRegularChar_inv hθ",
+      "ParameterDuality.isCusp_dual hτ",
+      "ParameterDuality.names_dual hN",
+      "hTame hV.tame",
+      "hV.central ω₀ hω₀ σ",
+      "intro g _ i hi n hn D R hR θ hθ τ hτ hN σ hσ hinf",
+      "hPol t ((Finset.range n).val.map"
+    ],
+    "cusp": [
+      "have D := parDual",
+      "have U := (parUniq",
+      "good_cases hc hg",
+      "rw [ey, H.tw",
+      "χ⁻¹.comp a = (χ.comp a)⁻¹",
+      "obtain ⟨r₀, H1, H2, H3⟩ := goodMap",
+      "have hg' : GoodCusp y",
+      "rw [rg y hg', rg x hg]"
+    ],
+    "ext": [
+      "have e1 := H.dual",
+      "WD.lpTw_add",
+      "List.Forall₂ SegDual",
+      "induction hF",
+      "Pr.exh",
+      "Pr.dual",
+      "goodSeg",
+      "congrArg sumList"
+    ],
+    "root": [
+      "dual := UpperTheory.Zero.LLC.extDual",
+      "have hcusp",
+      "UpperTheory.Zero.LLC.cuspEx"
+    ],
+    "wd": [
+      "private theorem irr_dual"
+    ]
+  },
+  "controls": [
+    [
+      "dual",
+      "(hB : B ≠ 0)"
+    ],
+    [
+      "dual",
+      "hV.type g i hi n hn D R hR θ⁻¹"
+    ],
+    [
+      "transport",
+      "Good (cls π) → Nonempty (π'.ρ.Equiv (contra π.ρ))"
+    ],
+    [
+      "cusp",
+      "have U := (parUniq"
+    ],
+    [
+      "ext",
+      "List.Forall₂ SegDual"
+    ]
+  ],
+  "result": {
+    "anchors": 70,
+    "edges": 18,
+    "nodes": 18,
+    "frontier": 46,
+    "rejected": 5,
+    "poly": 9330,
+    "avg": 484,
+    "eqv": 8712,
+    "half": 100
+  },
+  "openTrust": "unresolved imported theorem and axiom dependencies; frontier names not kernel IDs",
+  "review": "independent review of this duality chapter pending",
+  "resume": "Trace the producer of weilDeligneParam_dual_listSum_absTwist_special and its monodromy/segment normalization."
+}
