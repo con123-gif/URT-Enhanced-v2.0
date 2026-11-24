@@ -1,3 +1,4 @@
+// Speed revision, 2026-11-24. V8 measured certificate: {"fixtureBlocks":14,"records":186,"negativeControls":5,"exactFixtureOutputsMatch":true,"constructedGraph":{"nodes":1000000,"edges":1999998,"trialsMs":[{"old":4753,"new":3979,"noURT":3147},{"new":3860,"old":4404,"noURT":2944},{"old":4604,"new":3971,"noURT":2933}],"oldMedianMs":4604,"newMedianMs":3971,"noURTMedianMs":2944,"exactScoreSummaryMatch":true},"streamPatch":"batch output hash and await only backpressure; Node stream path not executed in V8; no full corpus result","limitations":"constructed graph excludes download/decompression/JSON input parsing/compression/output; timing is same-isolate only, no whole-proof extrapolation"}
 // Scope/URT fusion, 2026-11-24. Executed pinned exporter guard fixtures and shared DAG; see fused-selftest.
 // Executed V8 result (fixtures blob 2dc39052baf191b475aa0b85fbe53eb2f7452b47): {"fixtureBlocks":14,"records":186,"expressions":121,"edges":164,"declarations":10,"closedRoots":16,"open":82,"negativeControls":5,"large":{"expressions":100000,"edges":199998,"scopeBytes":524288,"scoreBytes":2097152,"exactEquationsCompared":100000,"expandedTreeNodes":"2^100000-1 (not expanded)"},"exactEquationExamples":["E0(C) [len(C)>=0] := Sort(U1)","E1(C) [len(C)>=1] := C[0]","E2(C) [len(C)>=1] := Lambda(N2,default,E1(C), t => E1(push(t,C)))","E3(C) [len(C)>=0] := Lambda(N1,implicit,E0(C), t => E2(push(t,C)))","E0(C) [len(C)>=0] := Const(N2,[])","E1(C) [len(C)>=0] := Const(N3,[])","E2(C) [len(C)>=1] := C[0]","E3(C) [len(C)>=0] := Let(N1,E0(C),E1(C),false, t => E2(push(t,C)))","E0(C) [len(C)>=1] := C[0]","E1(C) [len(C)>=1] := Project(N1,1,E0(C))","E0(C) [len(C)>=0] := NatLiteral(100000000000000023456789)","E0(C) [len(C)>=0] := Sort(U1)","E1(C) [len(C)>=0] := Const(N1,[])","E2(C) [len(C)>=0] := Pi(N4,default,E1(C), t => E1(push(t,C)))","E3(C) [len(C)>=0] := Sort(U2)","E4(C) [len(C)>=0] := Pi(N8,default,E1(C), t => E3(push(t,C)))"],"conclusion":"same exact scoped algebra with or without URT; one pass, no recursive expansion; URT advantage not established"}
 const S={"str":["pre","str"],"num":["pre","i"],"const":["name","us"],"app":["fn","arg"],"lam":["name","type","body","binderInfo"],"forallE":["name","type","body","binderInfo"],"letE":["name","type","value","body","nondep"],"proj":["typeName","idx","struct"],"mdata":["expr","data"],"axiom":["name","levelParams","type","isUnsafe"],"def":["name","levelParams","type","value","hints","safety","all"],"opaque":["name","levelParams","type","value","isUnsafe","all"],"thm":["name","levelParams","type","value","all"],"quot":["name","levelParams","type","kind"],"inductive":["types","ctors","recs"],"type":["name","levelParams","type","numParams","numIndices","all","ctors","numNested","isRec","isUnsafe","isReflexive"],"ctor":["name","levelParams","type","induct","cidx","numParams","numFields","isUnsafe"],"rec":["name","levelParams","type","all","numParams","numIndices","numMotives","numMinors","rules","k","isUnsafe"],"rule":["ctor","nfields","rhs"]};
@@ -60,15 +61,23 @@ function readEngine(){
  function read(id){if(!Number.isSafeInteger(id)||id<0||id>=n)throw Error("invalid expression edge "+id+" at "+n);const p=pages[Math.floor(id/block)],j=2*(id%block);return [p[j],p[j+1]]}
  function append(a){
   if(a[0]!=="E"||a[1]!==n)throw Error("nonsequential expression");
-  const type=EXPR[a[2]],v=a[3];let children=[];
-  if(type==="app")children=v;
-  if(type==="lam"||type==="forallE")children=[v[1],v[2]];
-  if(type==="letE")children=[v[1],v[2],v[3]];
-  if(type==="proj")children=[v[2]];
-  if(type==="mdata")children=[v[0]];
+  const type=EXPR[a[2]],v=a[3];let arity=0,offset=0;
+  switch(type){
+   case "app":arity=2;break;
+   case "lam":case "forallE":arity=2;offset=1;break;
+   case "letE":arity=3;offset=1;break;
+   case "proj":arity=1;offset=2;break;
+   case "mdata":arity=1;break;
+  }
   let r=tags[a[2]][0],s=tags[a[2]][1],cr=0,ci=0;
-  for(const id of children){const [x,y]=read(id);cr+=x;ci+=y;edges++}
-  const denom=1+k*children.length;
+  // Avoid temporary child arrays and pairs; preserve the identical recurrence.
+  for(let j=0;j<arity;j++){
+   const id=v[offset+j];
+   if(!Number.isSafeInteger(id)||id<0||id>=n)throw Error("invalid expression edge "+id+" at "+n);
+   const p=pages[Math.floor(id/block)],i=2*(id%block);
+   cr+=p[i];ci+=p[i+1];edges++;
+  }
+  const denom=1+k*arity;
   r=(r+qr*cr-qi*ci)/denom;s=(s+qr*ci+qi*cr)/denom;
   const norm=Math.hypot(r,s);if(!Number.isFinite(norm)||norm>1+1e-12)throw Error("URT norm exceeded");
   maxNorm=Math.max(maxNorm,norm);
@@ -216,8 +225,9 @@ if(args[0]==='fused-selftest'){
  // Optional artifact output is compressed on the fly; never store the raw archive.
  const z=spawn('zstd',['-q','-3','-o',path.join(out,'challenge_typed_algebra.jsonl.zst')],{stdio:['pipe','inherit','inherit']});
  const zEnd=once(z,'close');let pending=[],len=0;
- async function flush(){if(!len)return;const b=pending.join('');pending=[];len=0;if(!z.stdin.write(b))await once(z.stdin,'drain')}
- async function line(b){
+ // Hash and write the exact same UTF-8 output in batches. Only await actual backpressure.
+ function flush(){if(!len)return null;const b=pending.join('');pending=[];len=0;algebraSha.update(b);return z.stdin.write(b)?null:once(z.stdin,'drain')}
+ function line(b){
   const obj=JSON.parse(b.toString('utf8'));scalarSafety(obj);
   const a=convert(obj);
   if(!equal(obj,restore(a)))throw Error('roundtrip failed '+lines);
@@ -225,17 +235,17 @@ if(args[0]==='fused-selftest'){
   else if(a[0]==='M')throw Error('unexpected metadata');
   reader.append(a,obj);
   const s=JSON.stringify(a)+'\n';
-  counts[a[0]]=(counts[a[0]]||0)+1;lines++;raw+=b.length+1;compact+=Buffer.byteLength(s);algebraSha.update(s);
-  pending.push(s);len+=s.length;if(len>=1048576)await flush();
+  counts[a[0]]=(counts[a[0]]||0)+1;lines++;raw+=b.length+1;compact+=Buffer.byteLength(s);
+  pending.push(s);len+=s.length;return len>=1048576?flush():null;
  }
  try{
   for await(const chunk of child.stdout){
    bytes+=chunk.length;sha.update(chunk);
    const b=carry.length?Buffer.concat([carry,chunk]):chunk;let start=0,j;
-   while((j=b.indexOf(10,start))>=0){await line(b.subarray(start,j));start=j+1}
+   while((j=b.indexOf(10,start))>=0){const wait=line(b.subarray(start,j));if(wait)await wait;start=j+1}
    carry=b.subarray(start);
   }
-  if(carry.length)await line(carry);
+  if(carry.length){const wait=line(carry);if(wait)await wait}
   const [code]=await end;if(code!==0)throw Error('download or decompress failed');
   if(bytes!==BYTES||sha.digest('hex')!==HASH)throw Error('challenge checksum/length mismatch');
   await flush();z.stdin.end();const [zc]=await zEnd;if(zc!==0)throw Error('algebra compression failed');
