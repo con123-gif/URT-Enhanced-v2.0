@@ -1,0 +1,26 @@
+{
+  "status": "error",
+  "detail": "Node.js v24.22.3",
+  "returncode": 1,
+  "wall_s": 8.4,
+  "tail": "{\"selftest\":{\"fixture\":{\"expressions\":9,\"declarations\":8,\"edges\":42},\"negativeControls\":2,\"sharedChain\":{\"expressions\":100001,\"declarations\":1,\"edges\":200001}}}\nindexed 65536 bytes 825 expressions\nindexed 131072 bytes 1684 expressions\nindexed 270442176 bytes 4681675 expressions\nindexed 270507712 bytes 4682987 expressions\nindexed 270573248 bytes 4684308 expressions\nfile:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:1\nfunction fail(msg){throw Error(msg)}\n                         ^\n\nError: export byte/hash mismatch 350862311 bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9\n    at fail (file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:1:26)\n    at runArchive (file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:194:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:229:2\n\nNode.js v24.22.3\n",
+  "id": "rh-verified-export-stream-closure-20261124",
+  "question": "Can the checksum-pinned actual RH export be streamed without storing its 61.57 GB raw file, and its explicit expression/declaration reference closure for riemannHypothesis extracted after a real challenge-archive smoke test? Not a kernel recheck or complete human translation.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs --out {out}",
+  "utc": "2026-11-24T07:33:09Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "60f7c62f3e484bdce858949fec0a87ca60a4ce7c",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45348756372",
+  "outputs_committed": [],
+  "outputs_artifact_only": []
+}

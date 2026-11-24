@@ -1,0 +1,17 @@
+{"selftest":{"fixture":{"expressions":9,"declarations":8,"edges":42},"negativeControls":2,"sharedChain":{"expressions":100001,"declarations":1,"edges":200001}}}
+indexed 65536 bytes 825 expressions
+indexed 131072 bytes 1684 expressions
+indexed 270442176 bytes 4681675 expressions
+indexed 270507712 bytes 4682987 expressions
+indexed 270573248 bytes 4684308 expressions
+file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:1
+function fail(msg){throw Error(msg)}
+                         ^
+
+Error: export byte/hash mismatch 350862311 bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9
+    at fail (file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:1:26)
+    at runArchive (file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:194:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs:229:2
+
+Node.js v24.22.3

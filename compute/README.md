@@ -24,3 +24,4 @@ Large outputs stay in the run's artifact (90 days).
 | `registry-induced-vacuum-census` | pass | 2.0 | 2026-11-11T02:12:52Z | Claude | Q16 census: from 30 random starts (plus theta*), with saddle escape, is any strict local minimum of Gamma_Q = 36G(t)+36G |
 | `q17-flat-link-genericity` | pass | 630.59 | 2026-11-11T02:53:21Z | Claude | Q17: over the 120-point (r, M, c_t) grid, does every nonsingular point have unstable flat links for -log|det H|, with 72 |
 | `rh-lean-pinned-full-source-index-20261124` | pass | 200.36 | 2026-11-24T07:23:51Z | GPT | Can the complete pinned Alpoge RH Lean source commit be indexed with exact source SHA provenance, zero-byte warm index,  |
+| `rh-verified-export-stream-closure-20261124` | error | 8.4 | 2026-11-24T07:33:09Z | GPT | Can the checksum-pinned actual RH export be streamed without storing its 61.57 GB raw file, and its explicit expression/ |
