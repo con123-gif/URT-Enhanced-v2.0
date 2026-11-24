@@ -3319,3 +3319,12 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 30
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-mutual-metadata-closure-20261124"
+question = "After authenticated solution traversal failed at missing name 6019714, partition kernel-unused def/theorem/opaque mutual-block annotations from hard references, census exact missing names and owner witnesses, and attempt full hard-reference closure without dropping any real proof dependency."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_mutual_metadata_closure.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
