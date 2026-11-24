@@ -1,0 +1,82 @@
+{
+  "fixtures": 14,
+  "expressions": 121,
+  "childEdges": 164,
+  "openExpressions": 82,
+  "declarations": 10,
+  "renderedRoots": 16,
+  "negativeControls": [
+    "Error: bad expression ref 0",
+    "Error: open declaration type",
+    "Error: expansion budget exceeded; use shared equations"
+  ],
+  "large": {
+    "expressions": 100000,
+    "edges": 199998,
+    "equations": 100000
+  },
+  "examples": [
+    {
+      "fixture": 7,
+      "name": "Nat",
+      "kind": "inductive",
+      "type": "Sort U1"
+    },
+    {
+      "fixture": 7,
+      "name": "Nat.zero",
+      "kind": "constructor",
+      "type": "Nat"
+    },
+    {
+      "fixture": 7,
+      "name": "Nat.succ",
+      "kind": "constructor",
+      "type": "Π (v0 : Nat), Nat"
+    },
+    {
+      "fixture": 7,
+      "name": "Nat.rec",
+      "kind": "recursor",
+      "type": "Π {v0 : Π (v1 : Nat), Sort U2}, Π (v2 : (v0 Nat.zero)), Π (v3 : Π (v4 : Nat), Π (v5 : (v0 v4)), (v0 (Nat.succ v4))), Π (v6 : Nat), (v0 v6)"
+    },
+    {
+      "fixture": 11,
+      "name": "id",
+      "kind": "def",
+      "type": "Π {v0 : Sort U1}, Π (v1 : v0), v0",
+      "value": "λ {v0 : Sort U1}, λ (v1 : v0), v1"
+    },
+    {
+      "fixture": 12,
+      "name": "List",
+      "kind": "inductive",
+      "type": "Π (v0 : Sort U2), Sort U2"
+    },
+    {
+      "fixture": 12,
+      "name": "List.nil",
+      "kind": "constructor",
+      "type": "Π {v0 : Sort U2}, (List.{U1} v0)"
+    },
+    {
+      "fixture": 12,
+      "name": "List.cons",
+      "kind": "constructor",
+      "type": "Π {v0 : Sort U2}, Π (v1 : v0), Π (v2 : (List.{U1} v0)), (List.{U1} v0)"
+    },
+    {
+      "fixture": 12,
+      "name": "List.rec",
+      "kind": "recursor",
+      "type": "Π {v0 : Sort U2}, Π {v1 : Π (v2 : (List.{U1} v0)), Sort U3}, Π (v3 : (v1 (List.nil.{U1} v0))), Π (v4 : Π (v5 : v0), Π (v6 : (List.{U1} v0)), Π (v7 : (v1 v6)), (v1 (((List.cons.{U1} v0) v5) v6))), Π (v8 : (List.{U1} v0)), (v1 v8)"
+    },
+    {
+      "fixture": 13,
+      "name": "Lean.opaqueId",
+      "kind": "opaque",
+      "type": "Π {v0 : Sort U1}, Π (v1 : v0), v0",
+      "value": "λ {v0 : Sort U1}, λ (v1 : v0), v1"
+    }
+  ]
+}
