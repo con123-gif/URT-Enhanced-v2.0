@@ -1,0 +1,654 @@
+{
+  "schema": "RH selected source application obligation multigraph v1",
+  "upstream_repo": "leanprover-community/riemann-hypothesis",
+  "upstream_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "upstream_head_observed": "d27f71347abceb76cd37dc8a5fccbe556ec2be90",
+  "date": "2026-11-24",
+  "status": "OPEN — not a kernel graph or complete human proof",
+  "root": "root",
+  "semantics": "Ports are explicit selected applications, not elaborated dependencies. Null producer means bound or unmapped expression, not an axiom. Exact source is authoritative; descriptive type labels are not elaborated. Distinct ports remain even when producer shared. Unexpanded lists nonexhaustive; unknown kernel dependencies retained as open. No URT speed claim.",
+  "nodes": {
+    "root": {
+      "declaration": "riemannHypothesis",
+      "source": {
+        "path": "src/Main.lean",
+        "lines": [
+          4,
+          4
+        ],
+        "text": "theorem riemannHypothesis : RiemannHypothesis := rhOfAll"
+      },
+      "scope": [],
+      "ports": [
+        {
+          "name": "proof",
+          "type": "RiemannHypothesis",
+          "term": "rhOfAll",
+          "producer": "rh"
+        }
+      ],
+      "unexpanded": [
+        "Mathlib definition and elaborated graph"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "rh": {
+      "declaration": "rhOfAll",
+      "source": {
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "lines": [
+          9,
+          9
+        ],
+        "text": "theorem rhOfAll : RiemannHypothesis := Formalism.VW.rh_of_every allChi"
+      },
+      "scope": [],
+      "ports": [
+        {
+          "name": "nonvanishing",
+          "type": "EveryCharacter",
+          "term": "allChi",
+          "producer": "allChi"
+        },
+        {
+          "name": "apply",
+          "type": "EveryCharacter → RiemannHypothesis",
+          "term": "Formalism.VW.rh_of_every",
+          "producer": "reflect"
+        }
+      ],
+      "unexpanded": [],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "allChi": {
+      "declaration": "allChi",
+      "source": {
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "lines": [
+          7,
+          7
+        ],
+        "text": "theorem allChi : UpperTheory.EveryCharacter := UpperTheory.FinalTheorems.everyCharacter"
+      },
+      "scope": [],
+      "ports": [
+        {
+          "name": "proof",
+          "type": "EveryCharacter",
+          "term": "UpperTheory.FinalTheorems.everyCharacter",
+          "producer": "final"
+        }
+      ],
+      "unexpanded": [],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "reflect": {
+      "declaration": "Formalism.VW.rh_of_every",
+      "source": {
+        "path": "src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+        "lines": [
+          29,
+          32
+        ],
+        "text": "theorem Formalism.VW.rh_of_every (h : UpperTheory.EveryCharacter) : RiemannHypothesis :=\n  Formalism.VW.rh_of_right fun s hs hs1 => by\n    have := h 1 (1 : DirichletCharacter ℂ 1) s hs (Or.inr hs1)\n    rwa [LFunction_modOne_eq] at this"
+      },
+      "scope": [
+        "h : UpperTheory.EveryCharacter"
+      ],
+      "ports": [
+        {
+          "name": "criterion",
+          "type": "right-half zeta nonvanishing → RH",
+          "term": "Formalism.VW.rh_of_right",
+          "producer": "right"
+        }
+      ],
+      "unexpanded": [
+        "LFunction_modOne_eq, NeZero 1, specialization h 1 1 s hs (Or.inr hs1)"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "right": {
+      "declaration": "Formalism.VW.rh_of_right",
+      "source": {
+        "path": "src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+        "lines": [
+          5,
+          62
+        ],
+        "text": "theorem Formalism.VW.rh_of_right (hz : ∀ s : ℂ, 1 / 2 < s.re → s ≠ 1 → riemannZeta s ≠ 0) : RiemannHypothesis := by\n  unfold RiemannHypothesis\n  intro s hs htriv hs1\n  rcases lt_trichotomy s.re (1 / 2) with hlt | heq | hgt\n  · exfalso\n    have hpi : (Real.pi : ℂ) ≠ 0 := by exact_mod_cast Real.pi_ne_zero\n    have hs0 : s ≠ 0 := by\n      rintro rfl\n      rw [riemannZeta_zero] at hs\n      norm_num at hs\n    have ht : 1 / 2 < (1 - s).re := by\n      rw [Complex.sub_re, Complex.one_re]\n      linarith\n    have h1 : (1 - s) ≠ 1 := by\n      intro h\n      apply hs0\n      linear_combination -h\n    have hnat : ∀ n : ℕ, (1 - s) ≠ -(n : ℂ) := by\n      intro n h\n      have hr := congrArg Complex.re h\n      rw [Complex.sub_re, Complex.one_re, Complex.neg_re, Complex.natCast_re] at hr\n      have : (0 : ℝ) ≤ n := n.cast_nonneg\n      linarith\n    have key := riemannZeta_one_sub hnat h1\n    rw [sub_sub_cancel, hs] at key\n    have hz' := hz (1 - s) ht h1\n    have h2pi : (2 : ℂ) * (2 * (Real.pi : ℂ)) ^ (-(1 - s)) ≠ 0 :=\n      mul_ne_zero two_ne_zero (Complex.cpow_ne_zero_iff.2 (Or.inl (mul_ne_zero two_ne_zero hpi)))\n    have hG : Complex.Gamma (1 - s) ≠ 0 := Complex.Gamma_ne_zero_of_re_pos (by linarith)\n    have hcos : Complex.cos ((Real.pi : ℂ) * (1 - s) / 2) ≠ 0 := by\n      rw [Ne, Complex.cos_eq_zero_iff]\n      rintro ⟨k, hk⟩\n      have h3 : ((1 - s) - (2 * (k : ℂ) + 1)) * (Real.pi : ℂ) = 0 := by\n        linear_combination 2 * hk\n      rcases mul_eq_zero.1 h3 with h | h\n      · have hsk : s = -2 * (k : ℂ) := by linear_combination -h\n        have hre : s.re = -2 * (k : ℝ) := by\n          rw [hsk, Complex.mul_re]\n          simp\n        rcases lt_trichotomy k 0 with hk0 | hk0 | hk0\n        · have : (k : ℝ) ≤ -1 := by exact_mod_cast (show k ≤ -1 by omega)\n          linarith\n        · apply hs0\n          rw [hsk, hk0]\n          simp\n        · apply htriv\n          refine ⟨(k - 1).toNat, ?_⟩\n          have hnk : ((k - 1).toNat : ℤ) = k - 1 := Int.toNat_of_nonneg (by omega)\n          have h' : (((k - 1).toNat : ℕ) : ℂ) = (k : ℂ) - 1 := by\n            have := congrArg (fun m : ℤ => (m : ℂ)) hnk\n            push_cast at this\n            exact this\n          rw [hsk, h']\n          ring\n      · exact hpi h\n    exact (mul_ne_zero (mul_ne_zero (mul_ne_zero h2pi hG) hcos) hz') key.symm\n  · exact heq\n  · exact absurd hs (hz s hgt hs1)"
+      },
+      "scope": [
+        "hz : ∀ s : ℂ, 1 / 2 < s.re → s ≠ 1 → riemannZeta s ≠ 0"
+      ],
+      "ports": [],
+      "unexpanded": [
+        "Mathlib functional equation, zeta(0), Gamma, cosine, arithmetic/cast/tactic dependencies"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "final": {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "lines": [
+          10,
+          11
+        ],
+        "text": "theorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter :=\n  UpperTheory.FinalTheorems.everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      },
+      "scope": [],
+      "ports": [
+        {
+          "name": "row",
+          "type": "Row0b recT",
+          "term": "galoisLocalGlobalStrong_recParameter",
+          "producer": "row"
+        },
+        {
+          "name": "apply",
+          "type": "Row0b → EveryCharacter",
+          "term": "everyCharacter_of_row",
+          "producer": "ofRow"
+        }
+      ],
+      "unexpanded": [],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "row": {
+      "declaration": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+        "lines": [
+          6,
+          6
+        ],
+        "text": "theorem galoisLocalGlobalStrong_recParameter : UpperTheory.GalStar.Row0b recT := galoisRepresentations_of_thetaLift UpperTheory.TP.K.tLiftK"
+      },
+      "scope": [],
+      "ports": [],
+      "unexpanded": [
+        "galoisRepresentations_of_thetaLift, tLiftK, recT definitional equality"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "ofRow": {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "lines": [
+          7,
+          8
+        ],
+        "text": "theorem UpperTheory.FinalTheorems.everyCharacter_of_row (h : UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc) : UpperTheory.EveryCharacter :=\n  UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin ⟨h, UpperTheory.Zero.LLC.recTExists, h⟩ (UpperTheory.One.vwin_of_row h)"
+      },
+      "scope": [
+        "h : UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc"
+      ],
+      "ports": [
+        {
+          "name": "O",
+          "type": "OpenLiteratureStatements",
+          "term": "⟨h, UpperTheory.Zero.LLC.recTExists, h⟩",
+          "producer": "recT"
+        },
+        {
+          "name": "hV",
+          "type": "VWin",
+          "term": "UpperTheory.One.vwin_of_row h",
+          "producer": "vwin"
+        },
+        {
+          "name": "apply",
+          "type": "OpenLiteratureStatements → VWin → EveryCharacter",
+          "term": "every_character_of_literature_of_vWin",
+          "producer": "lit"
+        }
+      ],
+      "unexpanded": [
+        "recT supplies only middle record component, both occurrences of bound h retained"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "recT": {
+      "declaration": "UpperTheory.Zero.LLC.recTExists",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+        "lines": [
+          20,
+          66
+        ],
+        "text": "theorem UpperTheory.Zero.LLC.recTExists :\n    UpperTheory.Zero.LLC.RecTExists := by\n  intro E Ω _ _ _ _ _ A w h\n  obtain ⟨a, ha, -⟩ := UpperTheory.Zero.LLC.artEx E Ω A w h\n  obtain ⟨r, hr⟩ := UpperTheory.Zero.LLC.cuspEx E Ω A w h a ha\n  obtain ⟨⟨rc, hrc⟩, hcu⟩ :=\n    GlobalTheory.LocLanglands.exists_isLExt UpperTheory.Zero.LLC.Pr.exh UpperTheory.Zero.LLC.Pr.multi E Ω A w h r\n  have hcusp : ∀ x : IrrGL (HeightOneSpectrum.adicCompletion E w), x.IsCusp → rc x = r x :=\n    hcu rc hrc\n  have hD := UpperTheory.Zero.LLC.extDim E Ω A w h a ha r rc hr hrc\n  have hT := UpperTheory.Zero.LLC.extTw E Ω A w h a ha r rc hr hrc\n  refine ⟨rc, a, ha, ?_⟩\n  refine\n    { dim := fun x => (hD x).1.1\n      one := fun χ hχ => (hcusp _ (IrrGL.isCusp_ofChar χ hχ)).trans (hr.one χ hχ)\n      langlands := ?_\n      cusp := ?_\n      nu := hT.1\n      absCentral := fun x ω hω σ => ((hD x).2 ω hω σ).1\n      twist := ?_\n      central := fun x ω hg hω σ => ((hD x).2 ω hω σ).2 hg\n      dual := UpperTheory.Zero.LLC.extDual E Ω A w h a ha r rc hr hrc\n      inj := UpperTheory.Zero.LLC.extInj E Ω A w h a ha r rc hr hrc\n      depth := fun x hg hx => UpperTheory.Zero.LLC.extDepth E Ω A w h a ha r rc hr hrc x hg hx\n      type := ?_ }\n  · intro l x hl\n    rw [hrc l x hl]\n    unfold GlobalTheory.LocLanglands.segSum\n    congr 1\n    refine List.map_congr_left ?_\n    intro Δ _\n    rw [hcusp _ Δ.isCusp_first]\n  · intro x hx\n    rw [hcusp x hx]\n    exact hr.irr x hx\n  · intro x χ hχ hg\n    rw [hcusp _ (IrrGL.isCusp_ofChar χ hχ), hr.one χ hχ]\n    exact hT.2 x χ hχ hg\n  · refine (UpperTheory.Zero.LLC.typeIff E Ω A w h rc).2 ?_\n    intro x\n    unfold UpperTheory.Zero.LLC.TypeAt\n    intro g _ i hi n hn D R hR θ hθ τ hτ hN σ hσ hinf\n    have hx : x.IsCusp := by\n      subst hσ\n      exact IrrGL.isCusp_of.2 ⟨hn, DiscreteGroups.sglob.DzLc.isCuspidal_of_inflates i hi τ hτ σ hinf⟩\n    rw [hcusp x hx]\n    exact hr.type x hx g i hi n hn D R hR θ hθ τ hτ hN σ hσ hinf"
+      },
+      "scope": [],
+      "ports": [],
+      "unexpanded": [
+        "artEx, cuspEx, exists_isLExt with Pr.exh and Pr.multi, extDim, extTw, extDual, extInj, extDepth, typeIff; all 12 record fields and 4 tactic branches retained in source"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "vwin": {
+      "declaration": "UpperTheory.One.vwin_of_row",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+        "lines": [
+          4,
+          5
+        ],
+        "text": "theorem UpperTheory.One.vwin_of_row (h : UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc) : UpperTheory.Top.VWin :=\n  UpperTheory.One.Join.automorphic_window_of_inputs (UpperTheory.LiteratureTheorems.OpenImageCondition.mk h) UpperTheory.BaseChangeIdentities.baseChangeN h"
+      },
+      "scope": [
+        "h : UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc"
+      ],
+      "ports": [],
+      "unexpanded": [
+        "automorphic_window_of_inputs, OpenImageCondition.mk h, baseChangeN, h"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "lit": {
+      "declaration": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+        "lines": [
+          810,
+          813
+        ],
+        "text": "theorem UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) (hV : UpperTheory.Top.VWin) : UpperTheory.EveryCharacter :=\n  _root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching (_root_.UpperTheory.LiteratureTheorems.published_results_eigen O) (_root_.UpperTheory.LiteratureTheorems.published_results_first O) (_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).1 (_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).2\n    (_root_.SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt (_root_.UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature O) (_root_.UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature O) (_root_.UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature O) PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright (_root_.UpperTheory.LiteratureTheorems.fargues_exact_of_literature O) (_root_.UpperTheory.LiteratureTheorems.zarhin_statement O) (_root_.UpperTheory.LiteratureTheorems.nef_rr_of_literature O) (_root_.UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature O) (_root_.UpperTheory.LiteratureTheorems.toroidal_for_fan_ks_of_literature O) (_root_.UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literature O) (_root_.UpperTheory.LiteratureTheorems.point_separation_pair_of_literature O) (_root_.UpperTheory.LiteratureTheorems.ar_degree_of_literature O) (_root_.UpperTheory.LiteratureTheorems.published_results_arithmetic O) (_root_.UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature O))\n    (_root_.UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature O) hV"
+      },
+      "scope": [
+        "O : OpenLiteratureStatements",
+        "hV : UpperTheory.Top.VWin"
+      ],
+      "ports": [
+        {
+          "name": "apply",
+          "type": "seven-input theorem",
+          "term": "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "producer": "adapter"
+        },
+        {
+          "name": "P",
+          "type": "_root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.published_results_eigen O)",
+          "producer": null
+        },
+        {
+          "name": "F",
+          "type": "_root_.GlobalTheory.FunPr.ThetaLocalInputs",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.published_results_first O)",
+          "producer": null
+        },
+        {
+          "name": "hA",
+          "type": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).1",
+          "producer": null
+        },
+        {
+          "name": "hM",
+          "type": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).2",
+          "producer": null
+        },
+        {
+          "name": "hX",
+          "type": "_root_.GlobalTheory.CovTop.CovolumeBoundOfX",
+          "term": "(_root_.SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt (_root_.UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature O) (_root_.UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature O) (_root_.UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature O) PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright (_root_.UpperTheory.LiteratureTheorems.fargues_exact_of_literature O) (_root_.UpperTheory.LiteratureTheorems.zarhin_statement O) (_root_.UpperTheory.LiteratureTheorems.nef_rr_of_literature O) (_root_.UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature O) (_root_.UpperTheory.LiteratureTheorems.toroidal_for_fan_ks_of_literature O) (_root_.UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literature O) (_root_.UpperTheory.LiteratureTheorems.point_separation_pair_of_literature O) (_root_.UpperTheory.LiteratureTheorems.ar_degree_of_literature O) (_root_.UpperTheory.LiteratureTheorems.published_results_arithmetic O) (_root_.UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature O))",
+          "producer": "covol"
+        },
+        {
+          "name": "hL",
+          "type": "_root_.UpperTheory.Zero.LLC.RecTExists",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature O)",
+          "producer": null
+        },
+        {
+          "name": "hV",
+          "type": "VWin",
+          "term": "hV",
+          "producer": null
+        }
+      ],
+      "unexpanded": [
+        "all seven producers/ports; hV locally bound; two theta projections distinct"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "covol": {
+      "declaration": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+        "lines": [
+          16,
+          22
+        ],
+        "text": "theorem topCovolSlim2_use_alt_alt : GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero → GlobalTheory.CompanionTheory.Hypotheses₂.PrincipalisationCharZero → GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv → PositivityTheory.MbHsUse.HSUse → ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement → HT.FarguesExact → GR.ZarhinStatement → Pub.NefRR → GlobalTheory.Published.SiegelToroidalIntegral → GlobalTheory.Published.ToroidalForFanKS → GlobalTheory.Published.SemiAbelianLieSeminegative → GlobalTheory.Published.PointSeparationPair → GlobalTheory.Published.ArDegree → _root_.GlobalTheory.CovTop.PublishedHodgeBundleTheorems → GlobalTheory.Published.GrothendieckDeformation → _root_.GlobalTheory.CovTop.CovolumeBoundOfX :=\n  fun h₁ h₂ hPL hU hBig hFar hZar hRR hS hK hN hSep hDeg hP hGD =>\n    have hX : GlobalTheory.CovTop.HypothesesX := ⟨hK, hN, GlobalTheory.GreenBridge.green_of_regular GlobalTheory.greenRegularCharacters_holds, hSep, _root_.FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula hP⟩\n    have hF := PositivityTheory.Prw.toroidalChartsForFan_of hK\n    have hH : GlobalTheory.CovHt.HypothesesH := ⟨hS, hF, GlobalTheory.Published.toroidalCharts_of_siegel_of_forFan hS hF, hDeg⟩\n    _root_.SelfIntersectionVolumeEstimates.topCovolG_alt_alt ⟨_root_.ChowFormHeightComparison₂.chow_form_height_comparison, _root_.PositivityTheory.Xj7N.small_sections_injective (GlobalTheory.CompanionTheory.Ar.Rec.exists_nonvanishing_of_toroidal hH.sieg hX.ks)⟩ hX hP hH hGD ⟨hP.q6, hP.q8, hP.q13, hP.q7, hP.q10, GlobalTheory.Published.chowFormIntExists_holds, ChowFormCompatibility.chow_form_hyperplane_section, hP.q12⟩\n      (PositivityTheory.HtPt.Ah.deep_slim_use h₁ h₂ hPL hU hBig hFar hZar hRR)"
+      },
+      "scope": [
+        "GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero",
+        "GlobalTheory.CompanionTheory.Hypotheses₂.PrincipalisationCharZero",
+        "GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv",
+        "PositivityTheory.MbHsUse.HSUse",
+        "ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement",
+        "HT.FarguesExact",
+        "GR.ZarhinStatement",
+        "Pub.NefRR",
+        "GlobalTheory.Published.SiegelToroidalIntegral",
+        "GlobalTheory.Published.ToroidalForFanKS",
+        "GlobalTheory.Published.SemiAbelianLieSeminegative",
+        "GlobalTheory.Published.PointSeparationPair",
+        "GlobalTheory.Published.ArDegree",
+        "_root_.GlobalTheory.CovTop.PublishedHodgeBundleTheorems",
+        "GlobalTheory.Published.GrothendieckDeformation"
+      ],
+      "ports": [
+        {
+          "name": "arg1",
+          "type": "GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg2",
+          "type": "GlobalTheory.CompanionTheory.Hypotheses₂.PrincipalisationCharZero",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg3",
+          "type": "GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg4",
+          "type": "PositivityTheory.MbHsUse.HSUse",
+          "term": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg5",
+          "type": "ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement",
+          "term": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg6",
+          "type": "HT.FarguesExact",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.fargues_exact_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg7",
+          "type": "GR.ZarhinStatement",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.zarhin_statement O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg8",
+          "type": "Pub.NefRR",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.nef_rr_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg9",
+          "type": "GlobalTheory.Published.SiegelToroidalIntegral",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg10",
+          "type": "GlobalTheory.Published.ToroidalForFanKS",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.toroidal_for_fan_ks_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg11",
+          "type": "GlobalTheory.Published.SemiAbelianLieSeminegative",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg12",
+          "type": "GlobalTheory.Published.PointSeparationPair",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.point_separation_pair_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg13",
+          "type": "GlobalTheory.Published.ArDegree",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.ar_degree_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg14",
+          "type": "_root_.GlobalTheory.CovTop.PublishedHodgeBundleTheorems",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.published_results_arithmetic O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        },
+        {
+          "name": "arg15",
+          "type": "GlobalTheory.Published.GrothendieckDeformation",
+          "term": "(_root_.UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature O)",
+          "producer": null,
+          "term_scope": "caller lit, O"
+        }
+      ],
+      "unexpanded": [
+        "15 argument producers, hX, hH, deep_slim_use, topCovolG_alt_alt"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "adapter": {
+      "declaration": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+        "lines": [
+          69,
+          73
+        ],
+        "text": "theorem every_character_of_theta_integrals_local_matching (P : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses) (F : _root_.GlobalTheory.FunPr.ThetaLocalInputs) (hA : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree)\n    (hM : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching) (hX : _root_.GlobalTheory.CovTop.CovolumeBoundOfX) (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (hV : VWin) :\n    UpperTheory.EveryCharacter :=\n  _root_.UpperTheory.Top.every_character_of_green_v_win (GlobalTheory.GreenBridge.green_of_regular P.greenRegularCharacters) hV\n    (_root_.UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound P F hA hM hX hL fun cDep => _root_.UpperTheory.N.boundAtTwoThree_linked_of_recT P.nLink (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL cDep))"
+      },
+      "scope": [
+        "P : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses",
+        "F : _root_.GlobalTheory.FunPr.ThetaLocalInputs",
+        "hA : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree",
+        "hM : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching",
+        "hX : _root_.GlobalTheory.CovTop.CovolumeBoundOfX",
+        "hL : _root_.UpperTheory.Zero.LLC.RecTExists",
+        "hV : VWin"
+      ],
+      "ports": [
+        {
+          "name": "green",
+          "type": "Green",
+          "term": "green_of_regular P.greenRegularCharacters",
+          "producer": null
+        },
+        {
+          "name": "bundle",
+          "type": "Nonempty HypsAlt",
+          "term": "nonempty_hyps_definite_side_of_closed_bound P F hA hM hX hL (fun cDep => ...)",
+          "producer": "hyps"
+        },
+        {
+          "name": "apply",
+          "type": "Green → VWin → Nonempty HypsAlt → EveryCharacter",
+          "term": "every_character_of_green_v_win",
+          "producer": "plug"
+        }
+      ],
+      "unexpanded": [
+        "linked bound at every real cDep; P.nLink, hL"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "hyps": {
+      "declaration": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+        "lines": [
+          44,
+          68
+        ],
+        "text": "theorem nonempty_hyps_definite_side_of_closed_bound : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses → _root_.GlobalTheory.FunPr.ThetaLocalInputs → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching → _root_.GlobalTheory.CovTop.CovolumeBoundOfX → ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists), (∀ cDep : ℝ, _root_.GlobalTheory.Fc.RL.LinkedAt (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL cDep) (fun Q L => _root_.GlobalTheory.Fc.R1.SlotNormCondition Q L fun 𝒞 => Formalism.MainNotions.Closed 𝒞 fun Fm _ => _root_.GlobalTheory.NLink.BoundAtTwoThreeFamilyFonAlt Fm)) → Nonempty (_root_.GlobalTheory.Fc.HypsAlt S0.NL _root_.GlobalTheory.Fc.DefiniteSideCondition) := by\n  intro P F hA hM hX hL hN\n  have C := P.litN\n  have hS : GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup.FunctionalsSeparate :=\n    _root_.UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil F GlobalTheory.Hk3.howeUnram_holds P.siegelWeilUnitaryConvergent\n  have hRat : S0.RowRat := GlobalTheory.Mem.LiteralAutomorphy.rowRatW_of_rowTest (_root_.GlobalTheory.T.test_vector_assembly_holds F.siegelSetUnitary F.howeDualityReal\n    P.greenCuspidal F C.join C.fe hA hM hS)\n  have hFit : _root_.GlobalTheory.BigTop.Fun.ConstantFunctionFits @GlobalTheory.BigTop.Fun.Fld := _root_.GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt F C.join C.fe hA hM hS (_root_.GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses' P).2\n  obtain ⟨CF1, hCF1⟩ := _root_.GlobalTheory.Mem.LiteralAutomorphy.evaluation_grid_of_join F.howeDualityReal hM F C.join C.fe hA\n    (_root_.GlobalTheory.WeilConv.twisted_weil_representation_convergence F.siegelSetUnitary F) (_root_.GlobalTheory.T.twisted_local_factors_match F.howeDualityReal F hA hM)\n    (_root_.GlobalTheory.T.twisted_square_theta_integrals_eq F hA hM) hS\n  obtain ⟨CF0, hCF0⟩ := _root_.GlobalTheory.Fc.StageOne.rowFun_at_gridA_alt P.discreteSeriesCover P.harishChandraModules P.cuspRapidDecay P.casselmanWallach\n    P.rayClassFieldSt hFit\n  have hEv : EvLgG (GridA (max CF0 CF1)) := hCF1 _ (le_max_right _ _)\n  have hOpen1 : _root_.GlobalTheory.Fc.S0.OpenParameterStatements (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL (max CF0 CF1)) := _root_.GlobalTheory.T.open0_of_unitary_group_hypotheses P hL (max CF0 CF1)\n  have hMono := _root_.GlobalTheory.Glob.open_and_linked_of_stronger_extension_alt hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithList hL (max CF0 CF1))\n    (_root_.GlobalTheory.Mem.LiteralAutomorphy.extensionWithAtProperty hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithOrigin hL (max CF0 CF1)) (GridA (max CF0 CF1))) SExt.none (geoCl anyGeometry)\n    (fun _ _ _ _ _ _ _ _ _ _ _ _ _ x => ⟨x.1.1⟩)\n  have hOpenA := hMono.2 hOpen1\n  have hFun := hCF0 (max CF0 CF1) (le_max_left _ _) hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithOrigin hL (max CF0 CF1)) SExt.none (geoCl anyGeometry)\n    (fun _ _ _ _ _ _ _ _ _ _ _ _ _ x => ⟨x.1⟩) hOpenA\n  have hL3 := _root_.GlobalTheory.Glob.CovolRow.linked_bundles_l3_of_open_alt P.discreteSeriesCover P.harishChandraModules P.cuspRapidDecay\n    P.casselmanWallach P.rayClassFieldSt hX hL (_root_.GlobalTheory.Mem.LiteralAutomorphy.extensionWithAtProperty hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithOrigin hL (max CF0 CF1)) (GridA (max CF0 CF1)))\n    SExt.none (geoCl anyGeometry) (fun _ _ _ _ _ _ _ _ _ _ _ _ _ x => ⟨x.1.1.1⟩) hOpenA\n  exact _root_.GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt P hRat hL (max CF0 CF1) (GridA (max CF0 CF1)) hEv (hN (max CF0 CF1)) hFun hL3"
+      },
+      "scope": [
+        "P,F,hA,hM,hX,hL as above",
+        "hN : dependent forall cDep (exact source)"
+      ],
+      "ports": [],
+      "unexpanded": [
+        "StageU, synchronized max(CF0,CF1), stronger-extension transport, hFun and hL3; producers not discharged"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "plug": {
+      "declaration": "UpperTheory.Top.every_character_of_green_v_win",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+        "lines": [
+          16,
+          18
+        ],
+        "text": "theorem UpperTheory.Top.every_character_of_green_v_win (hG : GlobalTheory.GLq.Green) (hV : UpperTheory.Top.VWin)\n    (h : Nonempty (_root_.GlobalTheory.Fc.HypsAlt (fun 𝒞 => Closed 𝒞 fun Fm _ => LinkN Fm) _root_.GlobalTheory.Fc.DefiniteSideCondition)) : UpperTheory.EveryCharacter :=\n  UpperTheory.Top.imprimitive (_root_.UpperTheory.Top.zero_free_all_of_green_v_win hG hV h)"
+      },
+      "scope": [
+        "hG",
+        "hV",
+        "h : Nonempty HypsAlt (exact source)"
+      ],
+      "ports": [
+        {
+          "name": "primitive",
+          "type": "ZeroFreeAll",
+          "term": "zero_free_all_of_green_v_win hG hV h",
+          "producer": "zero"
+        },
+        {
+          "name": "transfer",
+          "type": "ZeroFreeAll → EveryCharacter",
+          "term": "UpperTheory.Top.imprimitive",
+          "producer": null
+        }
+      ],
+      "unexpanded": [
+        "imprimitive proof and Euler factors"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    },
+    "zero": {
+      "declaration": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "source": {
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+        "lines": [
+          12,
+          15
+        ],
+        "text": "theorem UpperTheory.Top.zero_free_all_of_green_v_win (hG : GlobalTheory.GLq.Green) (hV : UpperTheory.Top.VWin)\n    (h : Nonempty (_root_.GlobalTheory.Fc.HypsAlt (fun 𝒞 => Closed 𝒞 fun Fm _ => LinkN Fm) _root_.GlobalTheory.Fc.DefiniteSideCondition)) : Formalism.HC.ZeroFreeAll :=\n  h.elim fun h => UpperTheory.Top.zeroFreeAll_of_topG (la := 3 / 2) (by norm_num)\n    (_root_.GlobalTheory.Fc.forall_goal_of_shape_of_hyps _ _ _ _ (_root_.UpperTheory.Top.shape_closed_link_n_of_green hG) trivial trivial h) fun ψ => UpperTheory.Top.supplyChi ψ (hV ψ)"
+      },
+      "scope": [
+        "hG",
+        "hV",
+        "h : Nonempty HypsAlt (exact source)"
+      ],
+      "ports": [],
+      "unexpanded": [
+        "zeroFreeAll_of_topG la=3/2; shape, supplyChi, full producer proofs"
+      ],
+      "status": "SOURCE_MATCHED_INTERFACE_ONLY"
+    }
+  },
+  "every_character_definition": {
+    "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+    "lines": [
+      13,
+      14
+    ],
+    "text": "def UpperTheory.EveryCharacter : Prop :=\n  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ), 1 / 2 < s.re → (χ ≠ 1 ∨ s ≠ 1) → DirichletCharacter.LFunction χ s ≠ 0"
+  },
+  "recT_record_fields": [
+    "dim",
+    "one",
+    "langlands",
+    "cusp",
+    "nu",
+    "absCentral",
+    "twist",
+    "central",
+    "dual",
+    "inj",
+    "depth",
+    "type"
+  ],
+  "coverage": {
+    "fetched_pinned_modules": 13,
+    "root_reachable_selected_nodes": 16,
+    "explicit_ports": 38,
+    "adapter_slots": 7,
+    "covolume_slots": 15,
+    "recT_fields": 12,
+    "full_source_inventory_modules": 175187,
+    "import_edges": 753261,
+    "reachable_kernel_denominator": null,
+    "full_translation_percentage": null
+  },
+  "tests": {
+    "runtime": "V8 connector execution against actual pinned source",
+    "checks": "balanced top-level application parsing, ordered 7 arguments and 7 declared binder types, distinct theta projections, 15 covolume inputs/domains, 12 RecT fields, root reachability and acyclicity, exact exception disjunction",
+    "negative_controls_rejected": 4,
+    "negative_controls": [
+      "delete hV",
+      "duplicate theta .1 instead of .2",
+      "replace actual adapter with everyE₂",
+      "replace covolume by RecT producer"
+    ],
+    "replay": "At pinned checkout compare each nodes.*.source.text to inclusive line range of git show pin:path. Split lit body on whitespace at parenthesis depth 0; check 8 tokens incl head and both distinct .1/.2. Split nested covolume application similarly; verify 16 tokens incl head and 15 arrow domains. Compare types to adapter lines 69–71. Check field labels at RecT lines 33–44. Traverse producer edges from root, checking no cycle or missing node. No local Lean elaboration or independent Git blob hashing."
+  },
+  "failed_attempts": [
+    "wrong VwinOfRow path 404, corrected by MainConclusion import",
+    "initial RecT field regex failed to allow whitespace after opening brace; corrected and rerun on actual source",
+    "public export job failed byte length check despite exact hash; retry already registered, status file 404 at check; pool status also 404"
+  ],
+  "prior_ci": "Cathedral checkpoint 353 PASS, run 45347447866, 2026-11-24 07:43 UTC; unrelated to RH validation",
+  "index": {
+    "master_manuscript": "specialists/proof_editor/2026-11-24_0756_INTEGRATED_MANUSCRIPT.md (12 selected peer chapters, incomplete)",
+    "prior_integration": [
+      "END_OF_DAY_MANUSCRIPT_SPINE.md",
+      "WHOLE_PROOF_COVERAGE_AND_EXPORT_RUN.md"
+    ],
+    "peer_checkpoints": [
+      "dependencies/RUN1_PINNED_TREE_INVENTORY.md",
+      "structure/CONTEXT_ALGEBRA_READER.md",
+      "math/2026-11-24_every_character_adapter_derivation.md",
+      "audit/2026-11-24_pinned_reflection_audit.mjs",
+      "specialists/galois_representations/RUN1_ROW_BRIDGE.md",
+      "specialists/character_boxes/RUN1_CONNECTED_WINDOW_WITNESS.md",
+      "specialists/kernel_extractor/RUN1_RESUME.md",
+      "specialists/landau_criterion/RUN1_LANDAU_CRITERION_RECONSTRUCTION.md",
+      "specialists/literature_provenance/RUN1_EXTERNAL_ASSUMPTION_LEDGER.md",
+      "specialists/on_acceleration/RUN1_RESUME.md",
+      "specialists/positivity_geometry/RUN1_SELF_INTERSECTION_VOLUME.md",
+      "specialists/prime_window/RUN1_WINDOW_RECONSTRUCTION.md",
+      "specialists/theta_lifts/RUN1_THETA_TO_CHARACTER_BRIDGE.md"
+    ]
+  },
+  "independent_review": "Audit lane source-checked reflection; this graph is independently source-matched against peer adapter chapter, not independently kernel-checked. No closure of imported producers claimed.",
+  "resume_here": "Expand RecTExists record field types and artEx/cuspEx/exists_isLExt producers; keep all 12 slots, then link peer chapter by pin+declaration. Inspect existing export retry rather than duplicate it.",
+  "handoff_to": "Galois, literature, kernel, editor, audit and integration"
+}
