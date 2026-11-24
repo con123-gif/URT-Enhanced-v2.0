@@ -3381,3 +3381,11 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-literature-theta-frontier-20261124"
+question = "Extract exact root-linked literature, theta, local Langlands, generated proof and recursor frontier plus one owner-bound audit probe, preserving roles; not kernel recheck."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_literature_theta_frontier.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
