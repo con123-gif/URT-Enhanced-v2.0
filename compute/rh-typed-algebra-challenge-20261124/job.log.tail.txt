@@ -1,0 +1,59 @@
+{
+  "status": "LOSSLESS_SCOPED_EXPORT_RECORD_ALGEBRA_NOT_KERNEL_CHECK",
+  "archive": "challenge.ndjson.zst",
+  "inputSha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "algebraSha256": "b008f9b28bbb2a78c78dc9bd5ad6f9a6600ce56a7db4592248a1291a773abefa",
+  "bytes": 350862311,
+  "algebraUncompressedBytes": 221887146,
+  "records": 6495712,
+  "counts": {
+    "M": 1,
+    "N": 329321,
+    "U": 2457,
+    "E": 6112241,
+    "D": 51692
+  },
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "expressions": 6112241,
+  "expressionChildEdges": 11956205,
+  "maxNorm": 1.0000000000000002,
+  "scoreSum": [
+    59471.166808813825,
+    1058886.3840623004
+  ],
+  "scoreBytes": 98566144,
+  "q": [
+    -0.8521973792797618,
+    0.7806826075963609
+  ],
+  "declared": 53722,
+  "scope": {
+    "openExpressions": 5751193,
+    "maxRequiredBinders": 144,
+    "closedRootChecks": 105499,
+    "nameRefs": 1577262,
+    "levelRefs": 242208,
+    "scopeBytes": 24641536
+  },
+  "harmonic": true,
+  "maxRssKiB": 340316,
+  "limits": [
+    "challenge only, not the solution archive",
+    "roundtrip semantic JSON equality, not raw byte equality",
+    "constructor-level URT score not injective and not a proof check",
+    "expression/name/universe reference ordering, declaration roots and binder closure checked in the streaming pass; not independent kernel type checking",
+    "scores held in chunked memory; full-scale disk-backed reader not yet executed"
+  ]
+}

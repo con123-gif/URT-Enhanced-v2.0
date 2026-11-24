@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 25.51,
+  "tail": "{\n  \"status\": \"LOSSLESS_SCOPED_EXPORT_RECORD_ALGEBRA_NOT_KERNEL_CHECK\",\n  \"archive\": \"challenge.ndjson.zst\",\n  \"inputSha256\": \"bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9\",\n  \"algebraSha256\": \"b008f9b28bbb2a78c78dc9bd5ad6f9a6600ce56a7db4592248a1291a773abefa\",\n  \"bytes\": 350862311,\n  \"algebraUncompressedBytes\": 221887146,\n  \"records\": 6495712,\n  \"counts\": {\n    \"M\": 1,\n    \"N\": 329321,\n    \"U\": 2457,\n    \"E\": 6112241,\n    \"D\": 51692\n  },\n  \"meta\": {\n    \"exporter\": {\n      \"name\": \"lean4export\",\n      \"version\": \"3.1.0\"\n    },\n    \"format\": {\n      \"version\": \"3.1.0\"\n    },\n    \"lean\": {\n      \"githash\": \"819816b2e0a3bf405af45ae5c7af2491d8f5bee6\",\n      \"version\": \"4.33.1\"\n    }\n  },\n  \"expressions\": 6112241,\n  \"expressionChildEdges\": 11956205,\n  \"maxNorm\": 1.0000000000000002,\n  \"scoreSum\": [\n    59471.166808813825,\n    1058886.3840623004\n  ],\n  \"scoreBytes\": 98566144,\n  \"q\": [\n    -0.8521973792797618,\n    0.7806826075963609\n  ],\n  \"declared\": 53722,\n  \"scope\": {\n    \"openExpressions\": 5751193,\n    \"maxRequiredBinders\": 144,\n    \"closedRootChecks\": 105499,\n    \"nameRefs\": 1577262,\n    \"levelRefs\": 242208,\n    \"scopeBytes\": 24641536\n  },\n  \"harmonic\": true,\n  \"maxRssKiB\": 340316,\n  \"limits\": [\n    \"challenge only, not the solution archive\",\n    \"roundtrip semantic JSON equality, not raw byte equality\",\n    \"constructor-level URT score not injective and not a proof check\",\n    \"expression/name/universe reference ordering, declaration roots and binder closure checked in the streaming pass; not independent kernel type checking\",\n    \"scores held in chunked memory; full-scale disk-backed reader not yet executed\"\n  ]\n}\n",
+  "id": "rh-typed-algebra-challenge-20261124",
+  "question": "Can every actual checksum-pinned challenge export record be converted reversibly to typed constructor algebra and expression structure read in one topological URT pass? Not solution proof validation.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_typed_algebra_compiler.mjs --out {out}",
+  "utc": "2026-11-24T13:01:13Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "6871a68e493c407833de07490a9dead4463335c1",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45398939518",
+  "outputs_committed": [
+    {
+      "path": "summary.json",
+      "bytes": 1660,
+      "sha256": "17f24f60153760b07426ecf4cfa1f923588c361e54e6e77f776fbc117dc93f29"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "challenge_typed_algebra.jsonl.zst",
+      "bytes": 53013429,
+      "sha256": "c3b70f9dd12c83001b6812379710b5508c93b9642c61ffe0080aca52aea6caa5"
+    }
+  ]
+}
