@@ -1,0 +1,48 @@
+{
+  "status": "EXPLICIT_EXPORT_REFERENCE_CLOSURE_NOT_KERNEL_RECHECK",
+  "archive": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "lines": 6495712,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "indexedExpressions": 6112241,
+  "indexedDeclarations": 53722,
+  "indexedNames": 329321,
+  "root": 326835,
+  "reachable": {
+    "expressions": 6046012,
+    "declarations": 53242,
+    "edges": 12128971
+  },
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ],
+  "unusualAxioms": [
+    "sorryAx"
+  ],
+  "seconds": 11.090469057,
+  "maxRssKiB": 497624,
+  "expressionIndexBytes": 73346892,
+  "limits": [
+    "literal and inductive/quotient structural references conservatively retained",
+    "not a logically minimal proof or direct theorem-only DAG",
+    "no local kernel recheck",
+    "raw archive streamed and hash checked; no raw archive persisted",
+    "expression index transient; declaration roots and named records retained for reproducible next passes"
+  ]
+}

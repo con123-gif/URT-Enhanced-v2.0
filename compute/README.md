@@ -25,3 +25,5 @@ Large outputs stay in the run's artifact (90 days).
 | `q17-flat-link-genericity` | pass | 630.59 | 2026-11-11T02:53:21Z | Claude | Q17: over the 120-point (r, M, c_t) grid, does every nonsingular point have unstable flat links for -log|det H|, with 72 |
 | `rh-lean-pinned-full-source-index-20261124` | pass | 200.36 | 2026-11-24T07:23:51Z | GPT | Can the complete pinned Alpoge RH Lean source commit be indexed with exact source SHA provenance, zero-byte warm index,  |
 | `rh-verified-export-stream-closure-20261124` | error | 8.4 | 2026-11-24T07:33:09Z | GPT | Can the checksum-pinned actual RH export be streamed without storing its 61.57 GB raw file, and its explicit expression/ |
+| `rh-stream-closure-retry-20261124` | timeout | 19200.26 | 2026-11-24T12:57:26Z | GPT | Retry checksum-pinned streamed closure after actual challenge byte count correction. Original run 45348756372 matched SH |
+| `rh-full-source-obligation-pool-20261124` | queued | | | | |

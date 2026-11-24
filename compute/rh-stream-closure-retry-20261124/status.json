@@ -1,0 +1,43 @@
+{
+  "status": "timeout",
+  "detail": "",
+  "returncode": -9,
+  "wall_s": 19200.26,
+  "tail": "926786271 expressions\nindexed 53358559232 bytes 926787908 expressions\nindexed 53644467904 bytes 931689436 expressions\nindexed 53644533440 bytes 931690544 expressions\nindexed 53644598976 bytes 931691639 expressions\nindexed 53930491904 bytes 936587747 expressions\nindexed 53930532544 bytes 936588475 expressions\nindexed 53930598080 bytes 936589602 expressions\nindexed 54214893248 bytes 941515798 expressions\nindexed 54214958784 bytes 941516944 expressions\nindexed 54215024320 bytes 941518089 expressions\nindexed 54502530752 bytes 946427277 expressions\nindexed 54502596288 bytes 946428360 expressions\nindexed 54502661824 bytes 946429336 expressions\nindexed 54789119680 bytes 951340192 expressions\nindexed 54789185216 bytes 951341360 expressions\nindexed 54789250752 bytes 951342541 expressions\nindexed 55076429504 bytes 956246910 expressions\nindexed 55076495040 bytes 956248057 expressions\nindexed 55076560576 bytes 956249207 expressions\nindexed 55363673792 bytes 961147592 expressions\nindexed 55363739328 bytes 961148764 expressions\nindexed 55652294336 bytes 966048744 expressions\nindexed 55652359872 bytes 966049929 expressions\nindexed 55652425408 bytes 966051102 expressions\nindexed 55939276480 bytes 970963301 expressions\nindexed 55939342016 bytes 970964484 expressions\nindexed 55939407552 bytes 970965662 expressions\nindexed 56225341120 bytes 975865775 expressions\nindexed 56225406656 bytes 975866898 expressions\nindexed 56225472192 bytes 975868042 expressions\nindexed 56510971904 bytes 980784312 expressions\nindexed 56511037440 bytes 980785397 expressions\nindexed 56797011648 bytes 985706777 expressions\nindexed 56797077184 bytes 985707883 expressions\nindexed 56797142720 bytes 985708995 expressions\nindexed 57082748608 bytes 990624602 expressions\nindexed 57082839040 bytes 990626106 expressions\nindexed 57371172544 bytes 995522228 expressions\nindexed 57371238080 bytes 995523303 expressions\nindexed 57371303616 bytes 995524416 expressions\nindexed 57658547904 bytes 1000422392 expressions\nindexed 57658613440 bytes 1000423407 expressions\nindexed 57658678976 bytes 1000424438 expressions\nindexed 57957129920 bytes 1005333495 expressions\nindexed 57957195456 bytes 1005334587 expressions\nindexed 57957260992 bytes 1005335551 expressions\nindexed 58255122112 bytes 1010257848 expressions\nindexed 58255187648 bytes 1010258803 expressions\nindexed 58255253184 bytes 1010259832 expressions\nindexed 58553376448 bytes 1015167283 expressions\nindexed 58553441984 bytes 1015168381 expressions\nindexed 58553507520 bytes 1015169499 expressions\nindexed 58850385600 bytes 1020081065 expressions\nindexed 58850451136 bytes 1020082135 expressions\nindexed 58850516672 bytes 1020083171 expressions\nindexed 59149033152 bytes 1025005924 expressions\nindexed 59149098688 bytes 1025007023 expressions\nindexed 59446369984 bytes 1029942645 expressions\nindexed 59446435520 bytes 1029943751 expressions\nindexed 59446501056 bytes 1029944852 expressions\nindexed 59743051456 bytes 1034888294 expressions\nindexed 59743116992 bytes 1034889408 expressions\nindexed 59743182528 bytes 1034890465 expressions\nindexed 60039929536 bytes 1039833525 expressions\nindexed 60039995072 bytes 1039834643 expressions\nindexed 60040060608 bytes 1039835759 expressions\nindexed 60335759040 bytes 1044767469 expressions\nindexed 60335824576 bytes 1044768621 expressions\nindexed 60335915008 bytes 1044770190 expressions\nindexed 60631391936 bytes 1049695785 expressions\nindexed 60631416832 bytes 1049696218 expressions\nindexed 60631482368 bytes 1049697355 expressions\nindexed 60631547904 bytes 1049698465 expressions\nindexed 60927770624 bytes 1054628613 expressions\nindexed 60927836160 bytes 1054629728 expressions\nindexed 60927901696 bytes 1054630855 expressions\nindexed 61225279168 bytes 1059557891 expressions\nindexed 61225344704 bytes 1059558957 expressions\nindexed 61225410240 bytes 1059560061 expressions\nindexed 61523926720 bytes 1064470583 expressions\nindexed 61523992256 bytes 1064471681 expressions\nindexed 61524057792 bytes 1064472747 expressions\n",
+  "id": "rh-stream-closure-retry-20261124",
+  "question": "Retry checksum-pinned streamed closure after actual challenge byte count correction. Original run 45348756372 matched SHA256 exactly but expected length differed by 659 bytes.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs --out {out}",
+  "utc": "2026-11-24T12:57:26Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "564d5f8f74a517c7a150411f9c42ef8dcf3a5e39",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45349329680",
+  "outputs_committed": [
+    {
+      "path": "challenge_declarations.jsonl.zst",
+      "bytes": 1250076,
+      "sha256": "785b40c8643f771b6262e8a1f1905d57240ae48ea5e79266d58b61b8337feb87"
+    },
+    {
+      "path": "challenge_summary.json",
+      "bytes": 1281,
+      "sha256": "3cc80a8b6754f30e412c440f047c0dd16e48fabe232559165eb59cc8a72ee074"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "reachable_declarations.jsonl",
+      "bytes": 84971920,
+      "sha256": "94e78ab55162a7137935cb429d8ca32ad2ec8a6ddb4d5e06ea0b395d1b0bf057"
+    }
+  ]
+}
