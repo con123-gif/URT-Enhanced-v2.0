@@ -1,0 +1,332 @@
+ytes 823369675 expressions
+indexed 47369141312 bytes 823370743 expressions
+indexed 47654157376 bytes 828290201 expressions
+indexed 47654222912 bytes 828291258 expressions
+indexed 47654288448 bytes 828292417 expressions
+indexed 47938845760 bytes 833213706 expressions
+indexed 47938911296 bytes 833214830 expressions
+indexed 47938976832 bytes 833215989 expressions
+indexed 48224058432 bytes 838140493 expressions
+indexed 48224123968 bytes 838141575 expressions
+indexed 48224189504 bytes 838142646 expressions
+indexed 48508615744 bytes 843075562 expressions
+indexed 48508681280 bytes 843076722 expressions
+indexed 48508746816 bytes 843077894 expressions
+indexed 48793041984 bytes 848021490 expressions
+indexed 48793107520 bytes 848022661 expressions
+indexed 48793173056 bytes 848023812 expressions
+indexed 49077337152 bytes 852953552 expressions
+indexed 49077402688 bytes 852954729 expressions
+indexed 49077468224 bytes 852955894 expressions
+indexed 49362680896 bytes 857890949 expressions
+indexed 49362746432 bytes 857892145 expressions
+indexed 49647238208 bytes 862829972 expressions
+indexed 49647303744 bytes 862831149 expressions
+indexed 49931992128 bytes 867761222 expressions
+indexed 49932057664 bytes 867762363 expressions
+indexed 49932123200 bytes 867763397 expressions
+indexed 50215959616 bytes 872694925 expressions
+indexed 50216025152 bytes 872696110 expressions
+indexed 50216090688 bytes 872697297 expressions
+indexed 50498944064 bytes 877652150 expressions
+indexed 50499009600 bytes 877653169 expressions
+indexed 50499075136 bytes 877654221 expressions
+indexed 50785205312 bytes 882560745 expressions
+indexed 50785270848 bytes 882561774 expressions
+indexed 50785336384 bytes 882562913 expressions
+indexed 51072187456 bytes 887508357 expressions
+indexed 51072252992 bytes 887509472 expressions
+indexed 51072318528 bytes 887510605 expressions
+indexed 51357465664 bytes 892435602 expressions
+indexed 51357531200 bytes 892436708 expressions
+indexed 51357596736 bytes 892437839 expressions
+indexed 51643399232 bytes 897347611 expressions
+indexed 51643464768 bytes 897348699 expressions
+indexed 51643530304 bytes 897349723 expressions
+indexed 51931692096 bytes 902211435 expressions
+indexed 51931757632 bytes 902212616 expressions
+indexed 52216904768 bytes 907127415 expressions
+indexed 52216970304 bytes 907128536 expressions
+indexed 52502445120 bytes 912025249 expressions
+indexed 52502510656 bytes 912026421 expressions
+indexed 52502576192 bytes 912027502 expressions
+indexed 52787133504 bytes 916949995 expressions
+indexed 52787199040 bytes 916950989 expressions
+indexed 53072870464 bytes 921867242 expressions
+indexed 53072936000 bytes 921868337 expressions
+indexed 53073001536 bytes 921869500 expressions
+indexed 53358410816 bytes 926785232 expressions
+indexed 53358476352 bytes 926786408 expressions
+indexed 53358541888 bytes 926787594 expressions
+indexed 53644475456 bytes 931689571 expressions
+indexed 53644540992 bytes 931690663 expressions
+indexed 53644606528 bytes 931691770 expressions
+indexed 53930474560 bytes 936587434 expressions
+indexed 53930540096 bytes 936588611 expressions
+indexed 53930605632 bytes 936589740 expressions
+indexed 54214900800 bytes 941515929 expressions
+indexed 54214966336 bytes 941517075 expressions
+indexed 54215031872 bytes 941518221 expressions
+indexed 54502538304 bytes 946427402 expressions
+indexed 54502603840 bytes 946428494 expressions
+indexed 54502669376 bytes 946429467 expressions
+indexed 54789127232 bytes 951340327 expressions
+indexed 54789192768 bytes 951341496 expressions
+indexed 54789258304 bytes 951342675 expressions
+indexed 55076437056 bytes 956247042 expressions
+indexed 55076502592 bytes 956248179 expressions
+indexed 55076568128 bytes 956249339 expressions
+indexed 55363681344 bytes 961147727 expressions
+indexed 55363746880 bytes 961148899 expressions
+indexed 55652301888 bytes 966048880 expressions
+indexed 55652367424 bytes 966050066 expressions
+indexed 55652432960 bytes 966051238 expressions
+indexed 55939284032 bytes 970963439 expressions
+indexed 55939349568 bytes 970964617 expressions
+indexed 55939415104 bytes 970965773 expressions
+indexed 56225348672 bytes 975865903 expressions
+indexed 56225414208 bytes 975867029 expressions
+indexed 56225479744 bytes 975868171 expressions
+indexed 56510954560 bytes 980784025 expressions
+indexed 56511020096 bytes 980785120 expressions
+indexed 56511085632 bytes 980786198 expressions
+indexed 56797011648 bytes 985706777 expressions
+indexed 56797077184 bytes 985707883 expressions
+indexed 56797142720 bytes 985708995 expressions
+indexed 57082748608 bytes 990624602 expressions
+indexed 57082814144 bytes 990625697 expressions
+indexed 57082879680 bytes 990626845 expressions
+indexed 57371172544 bytes 995522228 expressions
+indexed 57371238080 bytes 995523303 expressions
+indexed 57371303616 bytes 995524416 expressions
+indexed 57658547904 bytes 1000422392 expressions
+indexed 57658613440 bytes 1000423407 expressions
+indexed 57658678976 bytes 1000424438 expressions
+indexed 57957129920 bytes 1005333495 expressions
+indexed 57957195456 bytes 1005334587 expressions
+indexed 57957260992 bytes 1005335551 expressions
+indexed 58255122112 bytes 1010257848 expressions
+indexed 58255187648 bytes 1010258803 expressions
+indexed 58255253184 bytes 1010259832 expressions
+indexed 58553376448 bytes 1015167283 expressions
+indexed 58553441984 bytes 1015168381 expressions
+indexed 58553507520 bytes 1015169499 expressions
+indexed 58850385600 bytes 1020081065 expressions
+indexed 58850451136 bytes 1020082135 expressions
+indexed 58850516672 bytes 1020083171 expressions
+indexed 59149033152 bytes 1025005924 expressions
+indexed 59149098688 bytes 1025007023 expressions
+indexed 59446369984 bytes 1029942645 expressions
+indexed 59446435520 bytes 1029943751 expressions
+indexed 59446501056 bytes 1029944852 expressions
+indexed 59743051456 bytes 1034888294 expressions
+indexed 59743116992 bytes 1034889408 expressions
+indexed 59743182528 bytes 1034890465 expressions
+indexed 60039929536 bytes 1039833525 expressions
+indexed 60039995072 bytes 1039834643 expressions
+indexed 60040060608 bytes 1039835759 expressions
+indexed 60335759040 bytes 1044767469 expressions
+indexed 60335824576 bytes 1044768621 expressions
+indexed 60335890112 bytes 1044769762 expressions
+indexed 60631391936 bytes 1049695785 expressions
+indexed 60631457472 bytes 1049696924 expressions
+indexed 60631523008 bytes 1049698036 expressions
+indexed 60927811264 bytes 1054629317 expressions
+indexed 60927876800 bytes 1054630428 expressions
+indexed 60927942336 bytes 1054631543 expressions
+indexed 61225279168 bytes 1059557891 expressions
+indexed 61225344704 bytes 1059558957 expressions
+indexed 61225410240 bytes 1059560061 expressions
+indexed 61523926720 bytes 1064470583 expressions
+indexed 61523992256 bytes 1064471681 expressions
+indexed 61524057792 bytes 1064472747 expressions
+authenticated archive solution.ndjson.zst 5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e bytes 61570595788 expressions 1065214335 declarations 1484733 global missing hard 0 metadata-only 5 target {"id":6019714,"nameParts":["Formalism","FourierDecayAlt","P","CutBP","block_growth_bound_of_compact_coef"],"exported":false,"occurrences":1,"witnesses":[{"kind":"mutualBlock","source":6019703,"sourceNameParts":["Formalism","FourierDecayAlt","P","CutBP","block_growth_bound_of_compact_coefCpt"]}]} begin hard-reference closure
+reachable expressions 10000000 declarations 14490 forward insertions 0 block transitions 153
+reachable expressions 20000000 declarations 26643 forward insertions 0 block transitions 306
+reachable expressions 30000000 declarations 38335 forward insertions 0 block transitions 458
+reachable expressions 40000000 declarations 52306 forward insertions 0 block transitions 611
+reachable expressions 50000000 declarations 70874 forward insertions 4 block transitions 764
+reachable expressions 60000000 declarations 93479 forward insertions 7 block transitions 916
+reachable expressions 70000000 declarations 109031 forward insertions 10 block transitions 1069
+reachable expressions 80000000 declarations 122262 forward insertions 10 block transitions 1221
+reachable expressions 90000000 declarations 134028 forward insertions 10 block transitions 1374
+reachable expressions 100000000 declarations 145159 forward insertions 10 block transitions 1527
+reachable expressions 110000000 declarations 154630 forward insertions 10 block transitions 1679
+reachable expressions 120000000 declarations 165822 forward insertions 10 block transitions 1832
+reachable expressions 130000000 declarations 178784 forward insertions 14 block transitions 1984
+reachable expressions 140000000 declarations 192442 forward insertions 14 block transitions 2137
+reachable expressions 150000000 declarations 202238 forward insertions 14 block transitions 2289
+reachable expressions 160000000 declarations 212774 forward insertions 14 block transitions 2442
+reachable expressions 170000000 declarations 229428 forward insertions 14 block transitions 2595
+reachable expressions 180000000 declarations 243247 forward insertions 20 block transitions 2747
+reachable expressions 190000000 declarations 255885 forward insertions 20 block transitions 2900
+reachable expressions 200000000 declarations 261818 forward insertions 20 block transitions 3052
+reachable expressions 210000000 declarations 268907 forward insertions 20 block transitions 3205
+reachable expressions 220000000 declarations 278584 forward insertions 20 block transitions 3358
+reachable expressions 230000000 declarations 286029 forward insertions 22 block transitions 3510
+reachable expressions 240000000 declarations 298059 forward insertions 22 block transitions 3663
+reachable expressions 250000000 declarations 313151 forward insertions 22 block transitions 3815
+reachable expressions 260000000 declarations 325545 forward insertions 22 block transitions 3968
+reachable expressions 270000000 declarations 337995 forward insertions 22 block transitions 4121
+reachable expressions 280000000 declarations 347193 forward insertions 22 block transitions 4273
+reachable expressions 290000000 declarations 362465 forward insertions 22 block transitions 4426
+reachable expressions 300000000 declarations 374179 forward insertions 24 block transitions 4578
+reachable expressions 310000000 declarations 385570 forward insertions 24 block transitions 4731
+reachable expressions 320000000 declarations 395521 forward insertions 24 block transitions 4883
+reachable expressions 330000000 declarations 414743 forward insertions 30 block transitions 5036
+reachable expressions 340000000 declarations 429642 forward insertions 30 block transitions 5189
+reachable expressions 350000000 declarations 449253 forward insertions 33 block transitions 5341
+reachable expressions 360000000 declarations 463758 forward insertions 33 block transitions 5494
+reachable expressions 370000000 declarations 481824 forward insertions 35 block transitions 5646
+reachable expressions 380000000 declarations 498993 forward insertions 38 block transitions 5799
+reachable expressions 390000000 declarations 516447 forward insertions 39 block transitions 5952
+reachable expressions 400000000 declarations 534185 forward insertions 39 block transitions 6104
+reachable expressions 410000000 declarations 551671 forward insertions 44 block transitions 6257
+reachable expressions 420000000 declarations 566678 forward insertions 44 block transitions 6409
+reachable expressions 430000000 declarations 581780 forward insertions 44 block transitions 6562
+reachable expressions 440000000 declarations 595771 forward insertions 44 block transitions 6715
+reachable expressions 450000000 declarations 609702 forward insertions 44 block transitions 6867
+reachable expressions 460000000 declarations 619336 forward insertions 46 block transitions 7020
+reachable expressions 470000000 declarations 629570 forward insertions 46 block transitions 7172
+reachable expressions 480000000 declarations 641591 forward insertions 46 block transitions 7325
+reachable expressions 490000000 declarations 651556 forward insertions 48 block transitions 7477
+reachable expressions 500000000 declarations 666721 forward insertions 49 block transitions 7630
+reachable expressions 510000000 declarations 676884 forward insertions 49 block transitions 7783
+reachable expressions 520000000 declarations 679452 forward insertions 49 block transitions 7935
+reachable expressions 530000000 declarations 679617 forward insertions 49 block transitions 8088
+reachable expressions 540000000 declarations 681614 forward insertions 49 block transitions 8240
+reachable expressions 550000000 declarations 695666 forward insertions 49 block transitions 8393
+reachable expressions 560000000 declarations 708492 forward insertions 49 block transitions 8546
+reachable expressions 570000000 declarations 718805 forward insertions 51 block transitions 8698
+reachable expressions 580000000 declarations 721777 forward insertions 53 block transitions 8851
+reachable expressions 590000000 declarations 736325 forward insertions 53 block transitions 9003
+reachable expressions 600000000 declarations 748913 forward insertions 54 block transitions 9156
+reachable expressions 610000000 declarations 766354 forward insertions 56 block transitions 9309
+reachable expressions 620000000 declarations 786369 forward insertions 56 block transitions 9461
+reachable expressions 630000000 declarations 803112 forward insertions 56 block transitions 9614
+reachable expressions 640000000 declarations 820885 forward insertions 59 block transitions 9766
+reachable expressions 650000000 declarations 834198 forward insertions 64 block transitions 9919
+reachable expressions 660000000 declarations 852246 forward insertions 64 block transitions 10071
+reachable expressions 670000000 declarations 870370 forward insertions 64 block transitions 10224
+reachable expressions 680000000 declarations 882222 forward insertions 64 block transitions 10377
+reachable expressions 690000000 declarations 897664 forward insertions 68 block transitions 10529
+reachable expressions 700000000 declarations 902679 forward insertions 69 block transitions 10682
+reachable expressions 710000000 declarations 911272 forward insertions 69 block transitions 10834
+reachable expressions 720000000 declarations 925836 forward insertions 69 block transitions 10987
+reachable expressions 730000000 declarations 941833 forward insertions 71 block transitions 11140
+reachable expressions 740000000 declarations 956667 forward insertions 71 block transitions 11292
+reachable expressions 750000000 declarations 968209 forward insertions 71 block transitions 11445
+reachable expressions 760000000 declarations 978588 forward insertions 71 block transitions 11597
+reachable expressions 770000000 declarations 989865 forward insertions 73 block transitions 11750
+reachable expressions 780000000 declarations 999555 forward insertions 73 block transitions 11903
+reachable expressions 790000000 declarations 1011269 forward insertions 73 block transitions 12055
+reachable expressions 800000000 declarations 1019436 forward insertions 75 block transitions 12208
+reachable expressions 810000000 declarations 1027272 forward insertions 75 block transitions 12360
+reachable expressions 820000000 declarations 1036524 forward insertions 75 block transitions 12513
+reachable expressions 830000000 declarations 1044668 forward insertions 75 block transitions 12665
+reachable expressions 840000000 declarations 1053451 forward insertions 75 block transitions 12818
+reachable expressions 850000000 declarations 1065604 forward insertions 75 block transitions 12971
+reachable expressions 860000000 declarations 1076455 forward insertions 77 block transitions 13123
+reachable expressions 870000000 declarations 1091329 forward insertions 77 block transitions 13276
+reachable expressions 880000000 declarations 1111830 forward insertions 77 block transitions 13428
+reachable expressions 890000000 declarations 1126447 forward insertions 77 block transitions 13581
+reachable expressions 900000000 declarations 1138874 forward insertions 81 block transitions 13734
+reachable expressions 910000000 declarations 1155258 forward insertions 81 block transitions 13886
+reachable expressions 920000000 declarations 1173490 forward insertions 81 block transitions 14039
+reachable expressions 930000000 declarations 1189403 forward insertions 82 block transitions 14191
+reachable expressions 940000000 declarations 1204160 forward insertions 85 block transitions 14344
+reachable expressions 950000000 declarations 1217506 forward insertions 85 block transitions 14497
+reachable expressions 960000000 declarations 1239391 forward insertions 85 block transitions 14649
+reachable expressions 970000000 declarations 1256175 forward insertions 87 block transitions 14802
+reachable expressions 980000000 declarations 1271200 forward insertions 89 block transitions 14954
+reachable expressions 990000000 declarations 1291929 forward insertions 96 block transitions 15107
+reachable expressions 1000000000 declarations 1312588 forward insertions 96 block transitions 15259
+reachable expressions 1010000000 declarations 1328332 forward insertions 96 block transitions 15412
+reachable expressions 1020000000 declarations 1346276 forward insertions 96 block transitions 15565
+reachable expressions 1030000000 declarations 1363872 forward insertions 96 block transitions 15717
+reachable expressions 1040000000 declarations 1386845 forward insertions 101 block transitions 15870
+reachable expressions 1050000000 declarations 1420921 forward insertions 148 block transitions 16022
+reachable expressions 1060000000 declarations 1455992 forward insertions 148 block transitions 16175
+{
+  "status": "EXPLICIT_EXPORT_REFERENCE_AND_INDUCTIVE_PACKAGE_CLOSURE_NOT_KERNEL_RECHECK",
+  "mutualMetadataOwnersWithAbsentMembers": 5,
+  "globalReferenceCensus": {
+    "hardMissing": 0,
+    "metadataOnlyMissing": 5,
+    "target": {
+      "id": 6019714,
+      "nameParts": [
+        "Formalism",
+        "FourierDecayAlt",
+        "P",
+        "CutBP",
+        "block_growth_bound_of_compact_coef"
+      ],
+      "exported": false,
+      "occurrences": 1,
+      "witnesses": [
+        {
+          "kind": "mutualBlock",
+          "source": 6019703,
+          "sourceNameParts": [
+            "Formalism",
+            "FourierDecayAlt",
+            "P",
+            "CutBP",
+            "block_growth_bound_of_compact_coefCpt"
+          ]
+        }
+      ]
+    }
+  },
+  "archive": "solution.ndjson.zst",
+  "digest": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "bytes": 61570595788,
+  "lines": 1080769508,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "indexedExpressions": 1065214335,
+  "indexedDeclarations": 1484733,
+  "indexedNames": 14065150,
+  "root": 14065054,
+  "reachable": {
+    "expressions": 1065212063,
+    "declarations": 1484705,
+    "edges": 2133543711,
+    "locality": {
+      "forwardInsertions": 187,
+      "blockTransitions65536": 16254,
+      "peakPending": 14579959,
+      "peakDeclQueue": 28,
+      "expressionBitsetBytes": 270598808,
+      "declarationSeenBytes": 1769472
+    }
+  },
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "unusualAxioms": [],
+  "seconds": 1276.687362649,
+  "maxRssKiB": 2875140,
+  "expressionIndexBytes": 12782572020,
+  "limits": [
+    "literal and inductive/quotient structural references conservatively retained; def/thm/opaque mutualBlock metadata preserved separately, not a kernel reference",
+    "not a logically minimal proof or direct theorem-only DAG",
+    "no local kernel recheck",
+    "raw archive streamed and hash checked; no raw archive persisted",
+    "expression index transient; declaration roots and named records retained for reproducible next passes"
+  ]
+}

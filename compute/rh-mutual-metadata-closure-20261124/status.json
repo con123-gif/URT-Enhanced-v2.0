@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 1287.79,
+  "tail": "ransitions 13581\nreachable expressions 900000000 declarations 1138874 forward insertions 81 block transitions 13734\nreachable expressions 910000000 declarations 1155258 forward insertions 81 block transitions 13886\nreachable expressions 920000000 declarations 1173490 forward insertions 81 block transitions 14039\nreachable expressions 930000000 declarations 1189403 forward insertions 82 block transitions 14191\nreachable expressions 940000000 declarations 1204160 forward insertions 85 block transitions 14344\nreachable expressions 950000000 declarations 1217506 forward insertions 85 block transitions 14497\nreachable expressions 960000000 declarations 1239391 forward insertions 85 block transitions 14649\nreachable expressions 970000000 declarations 1256175 forward insertions 87 block transitions 14802\nreachable expressions 980000000 declarations 1271200 forward insertions 89 block transitions 14954\nreachable expressions 990000000 declarations 1291929 forward insertions 96 block transitions 15107\nreachable expressions 1000000000 declarations 1312588 forward insertions 96 block transitions 15259\nreachable expressions 1010000000 declarations 1328332 forward insertions 96 block transitions 15412\nreachable expressions 1020000000 declarations 1346276 forward insertions 96 block transitions 15565\nreachable expressions 1030000000 declarations 1363872 forward insertions 96 block transitions 15717\nreachable expressions 1040000000 declarations 1386845 forward insertions 101 block transitions 15870\nreachable expressions 1050000000 declarations 1420921 forward insertions 148 block transitions 16022\nreachable expressions 1060000000 declarations 1455992 forward insertions 148 block transitions 16175\n{\n  \"status\": \"EXPLICIT_EXPORT_REFERENCE_AND_INDUCTIVE_PACKAGE_CLOSURE_NOT_KERNEL_RECHECK\",\n  \"mutualMetadataOwnersWithAbsentMembers\": 5,\n  \"globalReferenceCensus\": {\n    \"hardMissing\": 0,\n    \"metadataOnlyMissing\": 5,\n    \"target\": {\n      \"id\": 6019714,\n      \"nameParts\": [\n        \"Formalism\",\n        \"FourierDecayAlt\",\n        \"P\",\n        \"CutBP\",\n        \"block_growth_bound_of_compact_coef\"\n      ],\n      \"exported\": false,\n      \"occurrences\": 1,\n      \"witnesses\": [\n        {\n          \"kind\": \"mutualBlock\",\n          \"source\": 6019703,\n          \"sourceNameParts\": [\n            \"Formalism\",\n            \"FourierDecayAlt\",\n            \"P\",\n            \"CutBP\",\n            \"block_growth_bound_of_compact_coefCpt\"\n          ]\n        }\n      ]\n    }\n  },\n  \"archive\": \"solution.ndjson.zst\",\n  \"digest\": \"5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e\",\n  \"bytes\": 61570595788,\n  \"lines\": 1080769508,\n  \"meta\": {\n    \"exporter\": {\n      \"name\": \"lean4export\",\n      \"version\": \"3.1.0\"\n    },\n    \"format\": {\n      \"version\": \"3.1.0\"\n    },\n    \"lean\": {\n      \"githash\": \"819816b2e0a3bf405af45ae5c7af2491d8f5bee6\",\n      \"version\": \"4.33.1\"\n    }\n  },\n  \"indexedExpressions\": 1065214335,\n  \"indexedDeclarations\": 1484733,\n  \"indexedNames\": 14065150,\n  \"root\": 14065054,\n  \"reachable\": {\n    \"expressions\": 1065212063,\n    \"declarations\": 1484705,\n    \"edges\": 2133543711,\n    \"locality\": {\n      \"forwardInsertions\": 187,\n      \"blockTransitions65536\": 16254,\n      \"peakPending\": 14579959,\n      \"peakDeclQueue\": 28,\n      \"expressionBitsetBytes\": 270598808,\n      \"declarationSeenBytes\": 1769472\n    }\n  },\n  \"axioms\": [\n    \"Classical.choice\",\n    \"Quot.sound\",\n    \"propext\"\n  ],\n  \"unusualAxioms\": [],\n  \"seconds\": 1276.687362649,\n  \"maxRssKiB\": 2875140,\n  \"expressionIndexBytes\": 12782572020,\n  \"limits\": [\n    \"literal and inductive/quotient structural references conservatively retained; def/thm/opaque mutualBlock metadata preserved separately, not a kernel reference\",\n    \"not a logically minimal proof or direct theorem-only DAG\",\n    \"no local kernel recheck\",\n    \"raw archive streamed and hash checked; no raw archive persisted\",\n    \"expression index transient; declaration roots and named records retained for reproducible next passes\"\n  ]\n}\n",
+  "id": "rh-mutual-metadata-closure-20261124",
+  "question": "After authenticated solution traversal failed at missing name 6019714, partition kernel-unused def/theorem/opaque mutual-block annotations from hard references, census exact missing names and owner witnesses, and attempt full hard-reference closure without dropping any real proof dependency.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_mutual_metadata_closure.mjs --out {out}",
+  "utc": "2026-11-24T14:38:49Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "968720f55f6503e28ff4526260cb1e8b0526b983",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45412286798",
+  "outputs_committed": [
+    {
+      "path": "challenge_declarations.jsonl.zst",
+      "bytes": 1356147,
+      "sha256": "0cf670099286ae98715f17a659c3db76257ea31373ecbbbca6e3ea2d6fdc2b26"
+    },
+    {
+      "path": "challenge_missing_metadata_owners.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "challenge_reference_census.json",
+      "bytes": 1029,
+      "sha256": "073432fd5fe5cf8c505acf87bcace4168d4f07f92fdb2ce65734850ef9d18a20"
+    },
+    {
+      "path": "challenge_summary.json",
+      "bytes": 1884,
+      "sha256": "af3f5dbc3805ffb9a1ccb033f67d02e7ca3ed8ed427b34657342ebdf350fc3ca"
+    },
+    {
+      "path": "solution_missing_metadata_owners.jsonl",
+      "bytes": 1030,
+      "sha256": "3949471b200c52908996d8596011b33afe1eae36dd64dbfaee9ec8fbe72cf677"
+    },
+    {
+      "path": "solution_reference_census.json",
+      "bytes": 3690,
+      "sha256": "4f509f592fbcd0b9746c0824e47a48c0a4fe97c07d761919429dfb4c71def82a"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 2289,
+      "sha256": "312098b6f84eccc9aa222272c363e621c4c846709352685695503cda7d24a335"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "reachable_declarations.jsonl.zst",
+      "bytes": 38823812,
+      "sha256": "45d4b2d1c1456b92474163c6a6f8db69db35ec9d50feb531283f16a0eb9fe7cf"
+    }
+  ]
+}

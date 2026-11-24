@@ -1,0 +1,83 @@
+{
+  "status": "EXPLICIT_EXPORT_REFERENCE_AND_INDUCTIVE_PACKAGE_CLOSURE_NOT_KERNEL_RECHECK",
+  "mutualMetadataOwnersWithAbsentMembers": 5,
+  "globalReferenceCensus": {
+    "hardMissing": 0,
+    "metadataOnlyMissing": 5,
+    "target": {
+      "id": 6019714,
+      "nameParts": [
+        "Formalism",
+        "FourierDecayAlt",
+        "P",
+        "CutBP",
+        "block_growth_bound_of_compact_coef"
+      ],
+      "exported": false,
+      "occurrences": 1,
+      "witnesses": [
+        {
+          "kind": "mutualBlock",
+          "source": 6019703,
+          "sourceNameParts": [
+            "Formalism",
+            "FourierDecayAlt",
+            "P",
+            "CutBP",
+            "block_growth_bound_of_compact_coefCpt"
+          ]
+        }
+      ]
+    }
+  },
+  "archive": "solution.ndjson.zst",
+  "digest": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "bytes": 61570595788,
+  "lines": 1080769508,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "indexedExpressions": 1065214335,
+  "indexedDeclarations": 1484733,
+  "indexedNames": 14065150,
+  "root": 14065054,
+  "reachable": {
+    "expressions": 1065212063,
+    "declarations": 1484705,
+    "edges": 2133543711,
+    "locality": {
+      "forwardInsertions": 187,
+      "blockTransitions65536": 16254,
+      "peakPending": 14579959,
+      "peakDeclQueue": 28,
+      "expressionBitsetBytes": 270598808,
+      "declarationSeenBytes": 1769472
+    }
+  },
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "unusualAxioms": [],
+  "seconds": 1276.687362649,
+  "maxRssKiB": 2875140,
+  "expressionIndexBytes": 12782572020,
+  "limits": [
+    "literal and inductive/quotient structural references conservatively retained; def/thm/opaque mutualBlock metadata preserved separately, not a kernel reference",
+    "not a logically minimal proof or direct theorem-only DAG",
+    "no local kernel recheck",
+    "raw archive streamed and hash checked; no raw archive persisted",
+    "expression index transient; declaration roots and named records retained for reproducible next passes"
+  ]
+}
