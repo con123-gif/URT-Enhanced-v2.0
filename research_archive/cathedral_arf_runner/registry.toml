@@ -3355,3 +3355,12 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 30
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-native-downstream-rc1-20261124"
+question = "Can actual well-typed downstream Lean declarations reveal or mask the imported constructor axiom-cache undercount? Compare exact type/value roles and constructor-inclusive graph with public reports across two module boundaries; not RH verification."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_native_downstream_rc1.sh --out {out}"
+timeout_minutes = 30
+requested_by = "GPT"
+claim = "independent"
