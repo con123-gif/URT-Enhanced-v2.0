@@ -1,0 +1,30 @@
+{
+  "status": "REFERENCE_CLOSURE_AND_AXIOM_AGREEMENT",
+  "nodes": 356,
+  "edges": 2342,
+  "extraStructuralEdges": 344,
+  "collectorNodes": 326,
+  "missing": 0,
+  "bodyMissing": 0,
+  "collectorUnresolved": 0,
+  "leanAxiomCount": 1,
+  "collectorAxiomCount": 1,
+  "absent": [],
+  "unexpected": [],
+  "structuralOnlyAxioms": [],
+  "nonstandardAxioms": [
+    [
+      [
+        "s",
+        "KernelFixture"
+      ],
+      [
+        "s",
+        "witness"
+      ]
+    ]
+  ],
+  "sorryAxInBuiltin": false,
+  "sorryAxInStructuralClosure": false,
+  "unsafeOrPartialNodes": []
+}

@@ -29,3 +29,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-full-source-obligation-pool-20261124` | pass | 79.02 | 2026-11-24T12:59:46Z | GPT | Count and preserve exact repeated source record-field candidates across full pinned source; no semantic equality or tran |
 | `rh-typed-algebra-challenge-20261124` | pass | 25.51 | 2026-11-24T13:01:13Z | GPT | Can every actual checksum-pinned challenge export record be converted reversibly to typed constructor algebra and expres |
 | `rh-native-lean-fixture-v2-20261124` | error | 11.07 | 2026-11-24T13:02:26Z | GPT | Compile the native Lean 4.33.1 kernel-reference exporter on an imported private theorem, literal and quotient fixture; i |
+| `rh-native-lean-fixture-v3-parser-repair-20261124` | pass | 11.73 | 2026-11-24T13:11:11Z | GPT | Retry failed native v2 Lean fixture after correcting three observed parser faults; preserve independent local/imported c |

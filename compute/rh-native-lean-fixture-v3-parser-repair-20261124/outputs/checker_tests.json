@@ -1,0 +1,18 @@
+{
+  "passed": 13,
+  "tests": [
+    "cyclic closure and axiom equality",
+    "projection and group edges retained",
+    "unusual axiom exposed",
+    "missing boundary",
+    "axiom disagreement",
+    "hidden theorem body",
+    "omitted endpoint",
+    "missing footer",
+    "sorryAx exposure",
+    "literal implicit references retained",
+    "literal omitted despite flag",
+    "quotient package retained",
+    "quotient member omitted"
+  ]
+}

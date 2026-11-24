@@ -1,0 +1,3 @@
+'CathedralAxiomCycle.Witness' depends on axioms: [guardProp]
+'CathedralAxiomCycle.Witness.plain' depends on axioms: [guardProp]
+'CathedralAxiomCycle.Witness.guarded' depends on axioms: [guardProp]
