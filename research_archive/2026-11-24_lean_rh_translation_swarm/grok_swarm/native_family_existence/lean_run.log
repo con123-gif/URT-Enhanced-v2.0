@@ -1,0 +1,8 @@
+2026-11-24T09:29:23Z
+'NFE.pick_isSel' depends on axioms: [Classical.choice]
+'NFE.classSel_shape' depends on axioms: [Classical.choice]
+'NFE.FIx_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NFE.glue_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0
+452c4d03dc04421fd594d3db3df957dd74bea5cf6671e3e5eeea06deaf7d6f79  NativeFamilyMechanismAbstract.lean
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
