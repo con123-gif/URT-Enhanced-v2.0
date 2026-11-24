@@ -3364,3 +3364,12 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 30
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-combined-frontier-roles-20261124"
+question = "Authenticate original RH export once and extract exact direct type/value witnesses for seven source-bound targets, 34 known specialist manifest rows and six exact-name probes; separate constructor structural edges and mutual metadata. Not a kernel recheck."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_combined_frontier_roles.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
