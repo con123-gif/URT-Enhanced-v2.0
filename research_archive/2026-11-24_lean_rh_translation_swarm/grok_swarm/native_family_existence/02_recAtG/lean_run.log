@@ -1,0 +1,5 @@
+# 2026-11-24 09:38 GMT  Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+# cmd: OMP_NUM_THREADS=1 nice lean RecAtGMechanismAbstract.lean
+[1, 2, 24, 48, 5760, 11520, 2903040, 5806080, 1393459200]
+exit=0
+sha256 39154faf402a0a7944c027c2c9f5feb83737dea9717e409302a4530f9f17509d  RecAtGMechanismAbstract.lean
