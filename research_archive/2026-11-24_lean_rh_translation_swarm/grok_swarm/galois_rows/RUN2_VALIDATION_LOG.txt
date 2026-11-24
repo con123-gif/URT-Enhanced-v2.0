@@ -1,0 +1,97 @@
+# galois_rows RUN 2 validation log (real outputs, 2026-11-24 GMT)
+
+## 1. nice lean +leanprover/lean4:v4.33.1 SolvableLiftSchema.lean; echo exit=$?
+'GrokSolvableLift.fixes_all_of_trace_vanishing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrokSolvableLift.exists_moving_nonzero_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrokSolvableLift.solvable_ascent' does not depend on any axioms
+'GrokSolvableLift.norm_transport' does not depend on any axioms
+exit=0
+
+## 2. python3 replay_run2_checks.py /workspace/rh_up
+OK  blob 0919be0c src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/FrobeniusCharpolyOfUnlinkedUnramifiedSupport.lean
+OK  text theorem exists_sph_lift_of_toral : UpperTheory.Gal.ToralGalois.Inq →
+OK  text ξ j * absPow (w.adicCompletion E) (-((((1 : ℝ) - n) / 2 : ℝ) : ℂ))
+OK  text GlobalTheory.T.weaklyAttached_toral_of_cm_lift hI Ω E l ι n hn π χ hπ r hr w A h ξ₀ hξ₀ a 
+OK  text GlobalTheory.T.exists_isPlaceOver_finiteExtension_of_isPlaceOver E M Ω A w h
+OK  text GlobalTheory.T.unramified_comp_norm_of_killed_inertia_fixing Ω E M A w u h h' n ξ₀ a ha hk
+OK  text GlobalTheory.T.frobenius_charpoly_eq_satake_of_place_above hI Ω E M l n hn π χ hπ A w u h 
+OK  text (satWD h' n B).charPol g' = ∏ j, (X - C ((ξ j (a g₀) : ℂˣ) : ℂ))
+OK  blob bad76ae6 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/WeaklyAttachedToralOfCmLift.lean
+OK  text theorem exists_cm_lift_fix_charKer : UpperTheory.Gal.ToralGalois.Inq →
+OK  text GlobalTheory.T.exists_open_galoisSubgroup_trace_ne_zero Ω E l n hn r hr.1
+OK  text GlobalTheory.T.exists_solvable_cm_extension_split_place Ω E A w h N₀ hN₀o
+OK  text GlobalTheory.T.exists_cuspidal_charLift_of_solvable_cmExtension hI Ω E M₀ l ι n hn π χ hπ 
+OK  text GlobalTheory.T.exists_open_subgroup_weilElement_characterKernel Ω M₀ v₀ A h₀ n
+OK  text GlobalTheory.T.exists_solvable_cm_extension_abelianCompletion Ω M₀ A v₀ h₀ hfixR₀ V hVo hV
+OK  text GlobalTheory.T.cuspRep_characterSupportLift_trans_tower E M₀ M₁ n π π₀ P hl₀ hl₁
+OK  text GlobalTheory.T.localArtin_comp_norm_compat E M₀ Ω A w v₀ h h₀ a a₀ ha ha₀ t t₀
+OK  blob a57bfc29 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/FrobeniusCharpolyEqSatakeOfPlaceAbove.lean
+OK  text theorem hasSat_charPol_above : UpperTheory.Gal.ToralGalois.Inq →
+OK  text GlobalTheory.RoadU.TwistSupp.supp_nu_chars
+OK  text have hsupT := hcl.2 w u σ T hσ hT ξ0 hξ0 hsupσ
+OK  text GlobalTheory.RoadU.window hI E l n hn π χ hsc wt hwt w σ hσ ξ hξ hsup hun
+OK  text GlobalTheory.RoadU.unlinked_chars_comp_normU E M w u n ((wt : ℝ) / 2) ξ hξ hwin
+OK  text GlobalTheory.SphUnr.hasSat_of_unlinked_unr hI M n hn P u T hT
+OK  text GlobalTheory.SatChar.satWD_charPol_chars
+OK  text GlobalTheory.ArtinNormU.localArtin_normU E M Ω A w u h h' a a' ha ha' g₀ g' hgg
+OK  blob 144a33f1 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/ExistsCuspidalCharLiftOfSolvableCmExtension.lean
+OK  text induction d using Nat.strong_induction_on with
+OK  text GlobalTheory.T.exists_characterSupportBaseChangeLift_degreeOne K M h1 a ha π
+OK  text GlobalTheory.SolvUp.exists_normal_prime_index (M ≃ₐ[K] M)
+OK  text let K₁ := IntermediateField.fixedField H
+OK  text have hmove : ∃ g : G K Ω, (∃ x : K₁, g (algebraMap K₁ Ω x) ≠ algebraMap K₁ Ω x) ∧ (r g).va
+OK  text GlobalTheory.T.trace_eq_zero_off_subgroup_of_selfTwist Ω K K₁ hp₁ l ι a π r hr η hη hst g 
+OK  text obtain ⟨P₁, hP₁⟩ := hI.ac K K₁ hp₁ a ha π hnotw
+OK  text have hc₁ : CharLift π P₁ := hI.chl K K₁ hp₁ a ha π P₁ hP₁
+OK  text GlobalTheory.T.polarizedPair_baseChange_polarized_same_weight GlobalTheory.automorphicForm
+OK  text let N₁ : Subgroup (G K₁ Ω) := N.comap (AlgEquiv.restrictScalarsHom K)
+OK  blob 57031e80 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/PAdicSplitting/PToTor.lean
+OK  text UpperTheory.Gal.InertialTypesAlt.SuppBC → UpperTheory.Gal.NearKilling.UnrField → UpperTheo
+OK  text obtain ⟨hq, hsp⟩ := split_of_padic w p i hi
+OK  text y.1 ∣ N.factorial
+OK  text GlobalTheory.CuspRep.UnrSat.eventually_hasSatGL_locRep
+OK  text obtain ⟨Xf, hXT, hXw, -⟩ := hUnr E Ω w hsp _ hf _ hSfin
+OK  text obtain ⟨P, χ', hPL, hPs, hPr⟩ := hLift E Ω l n hn π χ hs _ (fun u hu => not_not.1 hu) Xf h
+OK  text obtain ⟨g, hg1, -⟩ := hIne E Xf.K Ω A w w' h h' hXfix art art' hart hart'
+OK  text have hCh := hChars Xf.K Ω A w' h' n σ' ξ hξ hTS
+OK  blob a9ca7e5e src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/PAdicSplitting/InfLifts.lean
+OK  text def RecChars : Prop :=
+OK  text (GlobalTheory.RoadU.Unlinked (chars ξ hξ) → PlainTor (algNorm T)) ∧
+OK  blob 90390f83 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/PAdicSplitting/LocalGlobalCompatAtIwahoriFixedOfUnlinked.lean
+OK  text toTor UpperTheory.Gal.InertialTypesAlt.suppBC_outright UpperTheory.Gal.UnramifiedFromSplit
+OK  blob 8b43b079 src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/CyclicStrongAtCusp.lean
+OK  text def CharLift {K M : Type}
+OK  text IsLift π P ∧ ∀ (v : HeightOneSpectrum (𝓞 K)) (u : HeightOneSpectrum (𝓞 M)) [u.asIdeal.Lies
+OK  blob afe7d6c0 src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/RegPolOfRepOf.lean
+OK  text IsGalois K M ∧ IsSolvable (M ≃ₐ[K] M) ∧
+OK  text ∀ g : G K Ω, ∃ (x : G M Ω) (n : G K Ω), n ∈ N ∧ g = AlgEquiv.restrictScalarsHom K x * n
+OK  blob 22fa0bc1 src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisGeometry₂/ArthurClozelStrongTC.lean
+OK  text (∀ η : HChar K, IsNormChar M η → ¬ SelfTw (CG.mk π).HasSat η) → ∃ P : CuspSub M a, GalCut.
+OK  blob 04b178c9 src/Development/AutomorphicArithmetic/AutomorphicVarieties/PublishedTheorems/CyclicBaseChangeC.lean
+OK  text ∀ᶠ v : HeightOneSpectrum (𝓞 F) in Filter.cofinite, η.UnrAt v ∧ ∃ B, sat v B ∧ B.map (· * η
+OK  blob 022fc6b3 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/TraceEqZeroOffSubgroupOfSelfTwistStatement.lean
+OK  text UpperTheory.V.Published.SelfTw (CG.mk π).HasSat η → ∀ g : G K Ω, (∃ x : M, g (algebraMap M
+OK  blob 4d9e0009 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlaceStatement.lean
+OK  text SolvDisj M N ∧ (∀ g ∈ Dec (F := E) A, ∀ x : M, g (algebraMap M Ω x) = algebraMap M Ω x)
+OK  blob 4c6f90f5 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletionStatement.lean
+OK  text commutator (Dec (F := E) A) ≤ V →
+OK  text SolvDisj M N ∧ ∀ g : Dec (F := E) A, (∀ x : M, (g : G E Ω) (algebraMap M Ω x) = algebraMap
+OK  blob 01914381 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsOpenSubgroupWeilElementCharacterKernelStatement.lean
+OK  text ∀ t : Ine (F := E) A, ∀ x ∈ V, (x : G E Ω) = t → ∀ j, ξ j (a (ineIncl h t)) = 1
+OK  blob 1dc488bd src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedCompNormOfKilledInertiaFixingStatement.lean
+OK  text Valued.v (x : u.adicCompletion M) = 1 → ξ j (GlobalTheory.BCChar.normU w u x) = 1
+OK  blob c154d1c3 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/LocalArtinCompNormCompat.lean
+OK  text a g = GlobalTheory.BCChar.normU v v' (a' g')
+OK  blob 9764da01 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsOpenGaloisSubgroupTraceNeZeroStatement.lean
+OK  text ∃ N : Subgroup (G K Ω), IsOpen (N : Set (G K Ω)) ∧ ∀ n ∈ N, (r n).val.trace ≠ 0
+OK  blob caa76e30 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsCharacterSupportBaseChangeLiftDegreeOneStatement.lean
+OK  text Module.finrank K M = 1 → ∀ (a : ℕ), 1 ≤ a → ∀ π : CuspSub K a, ∃ P : CuspSub M a, CharLift
+OK  blob 5ede3474 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CuspRepCharacterSupportLiftTransTowerStatement.lean
+OK  text CharLift π P → CharLift P Q → CharLift π Q
+OK  blob be62eb81 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/RegularSemisimpleFibres/NumberField.lean
+OK  text ∀ f : ℕ, normV w = g ^ f → (∀ s, HasSupport τ.ρ s → ∀ y ∈ s, y.1 ∣ f) →
+OK  text UpperTheory.Zero.LLC.DZ x ∧ ∃ s, HasSupport x.rep s ∧ GlobalTheory.RoadU.Unlinked s ∧
+OK  blob 322b2962 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/CharpolyFromTrace/UnlinkedOfType.lean
+OK  text ∀ w' : HeightOneSpectrum (𝓞 X.K), IsPlaceOver A w' → normV w' = normV w ^ f) ∧
+checks ok=85 bad=0
+exit=0
