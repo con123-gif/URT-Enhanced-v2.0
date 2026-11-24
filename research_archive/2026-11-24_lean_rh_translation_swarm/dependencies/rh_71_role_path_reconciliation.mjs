@@ -1,0 +1,61 @@
+/* DEPENDENCIES 2026-11-24 22:12 UTC — VERIFIED EXPORT RECONCILIATION / PARTIAL.
+Source pin 40e56bab026552e089d7afcfeff08d2defb9c005, upstream main 9282d3a102c4aff0e6026746db2a8990f5d9cddd unchanged, not adopted. Working base e55b6e2bca0f61a975c7e6bf75d646d2235a1541; previous producer 18548366e56847bf4db06ae11b950ad1aeb2c316. Read swarm protocol, handoff, AGENTS, state/log/protocol, continuity, CI #398, integration 22:00, editor 21:56, kernel, acceleration, audit, structure, math, theta/Galois/literature checkpoints. No physics edits. Blueprint not reopened.
+Actual authenticated 71-target job PASS https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45489010764, 71/71, 601 type, 1912 value, 31 structural slots including one RHS, 36183 type/value expression reads, projection 6526 ms, wall 1114.84 s, max RSS 2351096 KiB. All four original Git blobs fetched by exact SHA; semantic validation executed in V8; Node CLI byte-hash replay not run here.
+{"checks":92617,"negative":5,"owners":142,"identities":4074,"counts":{"type":4048,"value":14011,"package":37,"rhs":4},"previous":{"observed":706,"expanded":93},"mixed":{"observed":1309,"expanded":93},"expression":{"observed":1299,"expanded":92},"valueConstant":{"observed":1263,"expanded":92},"targets":34,"peer":[{"query":"SplitFlip.isEmbedding_val_GL","candidates":[{"id":661662,"name":"GlobalTheory.SplitFlip.isEmbedding_val_GL","expanded":false,"root":false}]},{"query":"isCompact_KO","candidates":[]},{"query":"Model.secondCountable_and_t2_local_field","candidates":[]},{"query":"CentralExponent.exists_cong_subset","candidates":[{"id":2114194,"name":"GlobalTheory.CentralExponent.exists_cong_subset","expanded":true,"root":false}]},{"query":"AStep.holCoef_pf","candidates":[]},{"query":"holPhi","candidates":[]},{"query":"stab_diag","candidates":[]},{"query":"stab_row","candidates":[]},{"query":"det_row","candidates":[]},{"query":"weight_factor_dilation","candidates":[]},{"query":"weight_factor_det_one","candidates":[]},{"query":"decW_pf","candidates":[]},{"query":"character_w1_trace_exp","candidates":[]},{"query":"fcCont","candidates":[]},{"query":"Holtb.holT","candidates":[]},{"query":"Holtb.holomorphic_average_uniform","candidates":[]}],"special":[{"id":326948,"name":"UpperTheory.EveryCharacter._proof_1","mixed":4,"expression":4,"value":4,"direct":14},{"id":550025,"name":"UpperTheory.LiteratureTheorems.OpenLiteratureStatements.rec","mixed":7,"expression":null,"value":null,"direct":11},{"id":856978,"name":"Deduction.CharacterBalanceMoves.triv","mixed":null,"expression":null,"value":null,"direct":318}]}
+The generated EveryCharacter._proof_1 is a value-constant reachable theorem; the literature recursor is package-reachable only in the observed partial projection, not absent or dispensable. Its computation RHS has four direct reference records, not a theorem body. Audit triv is expanded but not root-connected in this partial graph. Pinned EveryCharacter source blob 6ac769568b67f85f33565ba3e1eef7b91f53c55f; contains forall N [NeZero N], chi, s with Re(s)>1/2 and (chi != 1 or s != 1), nonvanishing. No claim of pretty-printed generated lemma type; all source hypotheses retained. Peer suffix queries are diagnostic only, not identity proofs for unmatched names.
+The four-report mixed graph is O(R+E+V) expected work and space with hash maps, BFS queues and a fixed number of requested suffix/path probes, plus output-sensitive path materialization. No new empirical full-corpus scaling or URT advantage. No independent kernel recheck or complete human proof.
+Replay: node rh_71_role_path_reconciliation.mjs solution_direct_roles.json solution_frontier_roles.json solution_next_root_roles.json solution_literature_theta_frontier.json > reconciled.json
+RESUME HERE: use emitted targets (exact IDs with witnessed value paths) to extract next theorem producers from sealed solution index; combine with exact-name probes requested by integration/editor only after source qualification, never classify unmatched names unreachable. HANDOFF TO kernel, literature, theta, integration, editor, Galois, audit, acceleration. Project OPEN.
+*/
+function reconcile(docs){
+ const pin="40e56bab026552e089d7afcfeff08d2defb9c005",root=14065054,n=1065214335;
+ let checks=0;const ck=(p,m)=>{if(!p)throw Error(m);checks++},key=JSON.stringify;
+ const identities=new Map(),byName=new Map(),owners=new Map(),adj=new Map(),incoming=new Map();
+ const counts={type:0,value:0,package:0,rhs:0};
+ function ident(id,parts,kind){ck(Number.isSafeInteger(id)&&id>=0&&Array.isArray(parts)&&parts.length>0&&parts.every(p=>typeof p==="string"||Number.isSafeInteger(p))&&typeof kind==="string","identity");let k=key(parts),v=key([parts,kind]);ck(!identities.has(id)||identities.get(id).v===v,"identity collision");ck(!byName.has(k)||byName.get(k)===id,"tag collision");identities.set(id,{v,parts,kind});byName.set(k,id)}
+ const label=id=>identities.get(id).parts.join(".");
+ function edge(e){adj.get(e.owner).push(e);if(!incoming.has(e.target))incoming.set(e.target,[]);incoming.get(e.target).push(e);counts[e.role]++}
+ for(let i=0;i<4;i++){
+  let d=docs[i];ck(d.digest==="5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e"&&d.bytes===61570595788&&d.n===n&&d.root===root&&d.indexedDeclarations===1484733&&d.reports.length===[6,47,18,71][i],"archive identity");if(i)ck(d.pin===pin,"pin");
+  let t=0,v=0,s=0,reads=0,rhs=0;
+  for(const r of d.reports){
+   const q=r.request??r.source;
+   ck(r.status==="EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK"&&!owners.has(r.id),"owner status/duplicate");ident(r.id,q.name.split("."),r.kind);ck(q.id===undefined||q.id===r.id,"requested ID");ck(q.kind===undefined||q.kind===r.kind,"requested kind");owners.set(r.id,{r,i});adj.set(r.id,[]);
+   ck(r.type&&(["thm","def","opaque"].includes(r.kind)?!!r.value:r.value===null),"value shape");
+   function role(z,role,slot){
+    ck(Number.isSafeInteger(z.expressionRoot)&&z.expressionRoot>=0&&z.expressionRoot<n,"expression root");let sum=0;const seen=new Set();
+    for(const e of z.references){ident(e.target,e.nameParts,e.targetKind);let k=key([e.kind,e.target]);ck(!seen.has(k)&&["explicit_const","projection_carrier","literal_primitive"].includes(e.kind),"reference identity");seen.add(k);ck(Number.isSafeInteger(e.witnessExpression)&&e.witnessExpression>=0&&e.witnessExpression<=z.expressionRoot&&Number.isSafeInteger(e.distinctExpressionRecords)&&e.distinctExpressionRecords>0,"witness/count");sum+=e.distinctExpressionRecords;edge({owner:r.id,target:e.target,role,kind:e.kind,witness:e.witnessExpression,expressionRoot:z.expressionRoot,...(slot===undefined?{}:{slot})})}
+    ck(sum===z.referenceOccurrences,"reference census");return z.references.length
+   }
+   t+=role(r.type,"type");reads+=r.type.expressionsRead;
+   if(r.value){v+=role(r.value,"value");reads+=r.value.expressionsRead}
+   if(r.encodedRootsAndStructuralEdges){ck(r.encodedRootsAndStructuralEdges[0]===r.type.expressionRoot+1,"type encoded seed");if(r.value)ck(r.encodedRootsAndStructuralEdges[1]===r.value.expressionRoot+1,"value encoded seed");else ck(r.encodedRootsAndStructuralEdges.length===1+(r.structural??[]).length,"all structural slots retained")}
+   for(const e of r.structural??[]){s++;ck(e.encoded===r.encodedRootsAndStructuralEdges[e.edgeIndex],"structural slot");if(e.encoded<0){ident(e.target,e.nameParts,e.kind);ck(e.encoded===-e.target-1,"structural target");edge({owner:r.id,target:e.target,role:"package",kind:"package_member",slot:e.edgeIndex,encoded:e.encoded})}else{ck(r.kind==="rec"&&e.kind==="recursor_rule_rhs"&&e.expression.expressionRoot+1===e.encoded,"recursor RHS");rhs++;role(e.expression,"rhs",e.edgeIndex)}}
+  }
+  if(i>=2)ck(t===d.summary.typeEdges&&v===d.summary.valueEdges&&s===d.summary.structuralEdges&&reads===d.summary.expressionReads&&rhs===d.summary.recursorRuleRhs,"report totals")
+ }
+ function walk(allow){let prev=new Map([[root,null]]),q=[root];for(let j=0;j<q.length;j++)for(const e of adj.get(q[j])??[])if(allow(e)&&!prev.has(e.target)){prev.set(e.target,e);q.push(e.target)}return prev}
+ const all=walk(()=>true),expr=walk(e=>e.role!=="package"),proof=walk(e=>e.role==="value"&&e.kind==="explicit_const"),before=walk(e=>owners.get(e.owner).i<3);
+ const describe=e=>({...e,ownerName:label(e.owner),targetName:label(e.target)});
+ function path(id,walk){if(!walk.has(id))return null;let out=[];while(id!==root){let e=walk.get(id);out.push(describe(e));id=e.owner}return out.reverse()}
+ const last=docs[3].reports;
+ for(const r of last){const q=r.request;ck(q.id===r.id&&q.kind===r.kind,"71 manifest ID");for(const a of q.incomingWitnesses){const es=adj.get(a.ownerId);ck(owners.get(a.ownerId)?.i<3&&label(a.ownerId)===a.owner&&es.some(e=>e.target===r.id&&(a.role==="structural"?e.role==="package"&&e.slot===a.edgeIndex&&e.encoded===a.encoded:e.role===a.role&&e.kind===a.kind&&e.witness===a.witness)),"incoming witness");if(q.origin==="authenticated_root_path_frontier")ck(before.has(a.ownerId)&&before.has(r.id),"prior root path")}ck(q.origin==="authenticated_root_path_frontier"?all.has(r.id):q.origin==="authenticated_owner_path_not_root_bound","origin")}
+ const special=[326948,550025,856978].map(id=>({id,name:label(id),mixedPath:path(id,all),expressionPath:path(id,expr),valueConstantPath:path(id,proof),direct:adj.get(id).map(describe),metadata:owners.get(id).r.mutualBlock}));
+ ck(special[0].valueConstantPath!==null&&special[1].mixedPath!==null&&special[1].expressionPath===null&&special[2].mixedPath===null,"special boundary");ck(special[1].direct.filter(x=>x.role==="rhs").length===4,"recursor RHS references");
+ const requested=["SplitFlip.isEmbedding_val_GL","isCompact_KO","Model.secondCountable_and_t2_local_field","CentralExponent.exists_cong_subset","AStep.holCoef_pf","holPhi","stab_diag","stab_row","det_row","weight_factor_dilation","weight_factor_det_one","decW_pf","character_w1_trace_exp","fcCont","Holtb.holT","Holtb.holomorphic_average_uniform"];
+ const peer=requested.map(query=>({query,candidates:[...identities.keys()].filter(id=>label(id)===query||label(id).endsWith("."+query)).map(id=>({id,name:label(id),expanded:owners.has(id),mixedPath:path(id,all),incoming:(incoming.get(id)??[]).map(describe)}))}));
+ // A bounded next manifest of theorem producers on already authenticated root paths, not merely source-name matches.
+ const targets=[];
+ for(const id of all.keys()){if(owners.has(id))continue;const z=identities.get(id),p=proof.get(id);if(z.kind!=="thm"||!p||!/^UpperTheory\.(LiteratureTheorems|TP|Gal)\./.test(label(id)))continue;const e=describe(p);targets.push({name:label(id),id,kind:z.kind,origin:"authenticated_root_path_frontier",incoming:{owner:e.ownerName,ownerId:e.owner,role:e.role,kind:e.kind,witness:e.witness},path:path(id,proof)});}
+ ck(new Set(targets.map(x=>x.id)).size===targets.length&&targets.length>0,"next target identities");
+ const size=w=>({observed:w.size,expanded:[...w.keys()].filter(id=>owners.has(id)).length});
+ return {checks,owners:owners.size,identities:identities.size,counts,previous:size(before),mixed:size(all),expression:size(expr),valueConstant:size(proof),special,peer,targets};
+}
+import fs from "node:fs";
+import crypto from "node:crypto";
+const shas=["64b935e4ef309f6c555912a377012c7708eda510","d49fbcc22a2382039986b09ff91dd11af2ef2e7b","d04e0fb24160d3ee1be54cd50082f59526864d4e","d823c364f446f5066dbbc61f7e9cf9c891fcbdb2"];
+const paths=process.argv.slice(2);if(paths.length!==4)throw Error("four exact report files required");
+const docs=paths.map((p,i)=>{const b=fs.readFileSync(p);if(crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex")!==shas[i])throw Error("input blob mismatch "+p);return JSON.parse(b.toString("utf8"))});
+const result=reconcile(docs);let negative=0;
+for(const [obj,k,bad] of [[docs[3],"digest","bad"],[docs[3].reports[0],"id",-1],[docs[3].reports.find(r=>r.id===550025).structural[2],"encoded",1],[docs[3].reports[0].request.incomingWitnesses[0],"witness",-1],[docs[3].reports.find(r=>r.id===326948).value.references[0],"witnessExpression",-1]]){const orig=obj[k];obj[k]=bad;let reject=false;try{reconcile(docs)}catch(e){reject=true}obj[k]=orig;if(!reject)throw Error("negative failed "+k);negative++}
+console.log(JSON.stringify({...result,negative},null,2));
