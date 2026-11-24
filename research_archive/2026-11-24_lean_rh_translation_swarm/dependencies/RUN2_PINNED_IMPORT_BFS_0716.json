@@ -1,0 +1,229 @@
+{
+  "status": "PARTIAL: actual source import graph; not a kernel proof-term DAG",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "root": "Main",
+  "sourcePaths": "src/<module with dots replaced by slash>.lean",
+  "scope": "BFS source imports, one fetch per discovered local module; external modules not expanded. Header scanner supports standard line-oriented imports, nested comments, module/prelude and modifiers; not Lean parser; completeness not asserted.",
+  "reads": 16,
+  "success": 16,
+  "sourceCharacters": 37764,
+  "edges": 52,
+  "discoveredLocal": 49,
+  "frontier": [
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.SplittingFieldIsoQuadratic",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.KstarRam",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PlacesQ",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Places",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.WeightInfinitesimalCharacters.OneCharU",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.DiscreteSeriesCoefficientsCuspidal",
+    "Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDualCrystalOfHyp",
+    "Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineSmoothLiftOfRelations",
+    "Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodComparisonHolds",
+    "Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsSideExtra",
+    "Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.SerreTate",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TemperedProductOfSquareIntegrable",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LitAut",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.WindowBoundOfLiteratureLevel",
+    "Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.BaseChangeIsobaricNOf",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.WeakOfAtt",
+    "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FillPre",
+    "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FrameMatching.HeckeEigenvalueFiniteness.FrameEx",
+    "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.NarrowSwap",
+    "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.TLiftK",
+    "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GaloisRepresentationsOfThetaLift",
+    "Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter",
+    "Formalism.GammaFactorNonvanishing.RhOfRight",
+    "Development.AutomorphicArithmetic.CharacterBoxes.HalfPlane",
+    "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.EveryCharacterOfLiteratureOfVWin",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow",
+    "Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists",
+    "Development.AutomorphicArithmetic.CharacterBoxes.RiemannHypothesisOfEveryCharacter",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicCases.AutomorphyUnramifiedCoefficients",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedTwoCoboundaries",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.KisinCrTrivial",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK",
+    "Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNormalised"
+  ],
+  "externalModules": [
+    "Mathlib"
+  ],
+  "failures": {},
+  "checks": {
+    "root": true,
+    "all": true,
+    "critical": true,
+    "mainTheorems": true,
+    "unique": true,
+    "frontier": true,
+    "edgeClosure": true,
+    "noUnknown": true
+  },
+  "elapsedMs": 3318,
+  "records": {
+    "Main": {
+      "sha": "dbd5db70bc11b35f18fa5751216ab335321e7bfc",
+      "imports": [
+        "Statements",
+        "Supplements.Kernels.MainTheoremsAll"
+      ],
+      "unknown": [],
+      "sourceCharacters": 433
+    },
+    "Statements": {
+      "sha": "1cd1bce93344065936b2b392b23306254e0785ef",
+      "imports": [
+        "Mathlib"
+      ],
+      "unknown": [],
+      "sourceCharacters": 704
+    },
+    "Supplements.Kernels.MainTheoremsAll": {
+      "sha": "dfba1103254494332179b9c893fabe94ac6a45a1",
+      "imports": [
+        "Supplements.Kernels.MainTheoremsCritical",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.CorGKOf"
+      ],
+      "unknown": [],
+      "sourceCharacters": 136
+    },
+    "Supplements.Kernels.MainTheoremsCritical": {
+      "sha": "34d133d368c93518bf52927bada45b00ec5fe982",
+      "imports": [
+        "Supplements.Kernels.MainTheorems",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.ClassNumberThree",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.LenEqZeroIff",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.OnePoint"
+      ],
+      "unknown": [],
+      "sourceCharacters": 319
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.CorGKOf": {
+      "sha": "e5b4584a4e65b1f3ade5c3cd5d3a8a8056dd1e4d",
+      "imports": [
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.ClassNumberThree",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TopMainZj",
+        "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.DefiniteNHolds",
+        "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc"
+      ],
+      "unknown": [],
+      "sourceCharacters": 2441
+    },
+    "Supplements.Kernels.MainTheorems": {
+      "sha": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+      "imports": [
+        "Formalism.GammaFactorNonvanishing.CritLine",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip",
+        "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion"
+      ],
+      "unknown": [],
+      "sourceCharacters": 720
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.ClassNumberThree": {
+      "sha": "41f30455fbae05b658425510ba46195c840f6d02",
+      "imports": [
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.KatoUse",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.SplittingFieldIsoQuadratic",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.KstarRam",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PlacesQ",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Places"
+      ],
+      "unknown": [],
+      "sourceCharacters": 6005
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.LenEqZeroIff": {
+      "sha": "162ebbd6b1c6c265f8daaa0284876dfb5cda0148",
+      "imports": [
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.ClassNumberThree"
+      ],
+      "unknown": [],
+      "sourceCharacters": 4842
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.SmallClassNumbers.OnePoint": {
+      "sha": "fdff74fe7680cdb5cdd56c521eb47922f5327467",
+      "imports": [
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.WeightInfinitesimalCharacters.OneCharU"
+      ],
+      "unknown": [],
+      "sourceCharacters": 2924
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TopMainZj": {
+      "sha": "23b7a05606074da30e6f8eb3b3821e877a968d3e",
+      "imports": [
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.DiscreteSeriesCoefficientsCuspidal",
+        "Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDualCrystalOfHyp",
+        "Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineSmoothLiftOfRelations",
+        "Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodComparisonHolds",
+        "Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsSideExtra",
+        "Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.SerreTate",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TemperedProductOfSquareIntegrable",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LitAut",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.WindowBoundOfLiteratureLevel",
+        "Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.BaseChangeIsobaricNOf",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.WeakOfAtt"
+      ],
+      "unknown": [],
+      "sourceCharacters": 6599
+    },
+    "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.DefiniteNHolds": {
+      "sha": "a24134a3b69976294aaf3b126c5b8fff83dd67de",
+      "imports": [
+        "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FillPre",
+        "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FrameMatching.HeckeEigenvalueFiniteness.FrameEx",
+        "Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.NarrowSwap"
+      ],
+      "unknown": [],
+      "sourceCharacters": 487
+    },
+    "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc": {
+      "sha": "f769999ac5e49241993e5efbf81e4d2cded18acd",
+      "imports": [
+        "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.TLiftK",
+        "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GaloisRepresentationsOfThetaLift"
+      ],
+      "unknown": [],
+      "sourceCharacters": 433
+    },
+    "Formalism.GammaFactorNonvanishing.CritLine": {
+      "sha": "95fa4da5c50119db164aa93944d106f22fdb576d",
+      "imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter",
+        "Formalism.GammaFactorNonvanishing.RhOfRight"
+      ],
+      "unknown": [],
+      "sourceCharacters": 1771
+    },
+    "Development.AutomorphicArithmetic.CharacterBoxes.ClaimStrip": {
+      "sha": "60b3e96d81c2cb7d821d14c978b38bd9fd0d97f8",
+      "imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.HalfPlane"
+      ],
+      "unknown": [],
+      "sourceCharacters": 5010
+    },
+    "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion": {
+      "sha": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+      "imports": [
+        "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.EveryCharacterOfLiteratureOfVWin",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow",
+        "Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists",
+        "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc",
+        "Development.AutomorphicArithmetic.CharacterBoxes.RiemannHypothesisOfEveryCharacter"
+      ],
+      "unknown": [],
+      "sourceCharacters": 1209
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.KatoUse": {
+      "sha": "f4c048cb3bf45f91461b536bae82636a22467ed3",
+      "imports": [
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicCases.AutomorphyUnramifiedCoefficients",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedTwoCoboundaries",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.KisinCrTrivial",
+        "Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK",
+        "Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNormalised"
+      ],
+      "unknown": [],
+      "sourceCharacters": 3731
+    }
+  },
+  "resume": "Continue BFS from frontier, merging by module and pin; preserve failures; run native Lean import and expression dependency extraction to validate. Avoid interpreting module imports as necessary proof dependencies."
+}
