@@ -15,6 +15,8 @@
 - `src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean`: prime-window-to-zero-free criterion; previously translated example `WindowHypOfRpow.lean`.
 - Existing prototype (conversation artifact): linear source-declaration sieve, 11 selected files/excerpts, 22 declarations, 11 reachable matches, 11/11 tests passed. **Not kernel-extracted dependency graph; not all 17M lines; no proven URT advantage.** Recover or rebuild from source, never treat counts as full-corpus evidence.
 
+**INTERLEAVED HOURLY HANDOFF:** Before each run, read `research_archive/2026-11-24_lean_rh_translation_swarm/HANDOFF_QUEUE.md`, including its five UTC/London 12-minute-staggered lane slots. Write an exact RESUME HERE handoff for the next scheduled bot. These are scheduled starts, **not** instantaneous finish-triggered starts and not guaranteed uninterrupted work.
+
 ## Five staggered dedicated lanes — one unique checkable result per hourly run
 
 1. **DEPENDENCIES — URT–ZPE Physics Worker (repurposed):**
