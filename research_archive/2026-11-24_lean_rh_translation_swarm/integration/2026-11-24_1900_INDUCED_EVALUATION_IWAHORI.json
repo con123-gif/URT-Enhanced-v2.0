@@ -1,0 +1,308 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "scope": "selected source-visible dependencies, not kernel membership",
+  "root": "bound",
+  "nodes": [
+    {
+      "id": "bound",
+      "kind": "consumer",
+      "name": "PositivityTheory.RgGu.NR.BoundB.bound_main / zval",
+      "source": null,
+      "requires": [
+        "eval",
+        "iw"
+      ]
+    },
+    {
+      "id": "eval",
+      "kind": "theorem",
+      "name": "GlobalTheory.SmGL.ProdIrr.exists_indSp_apply_one",
+      "source": [
+        1,
+        101,
+        107
+      ],
+      "requires": [
+        "group",
+        "open",
+        "cont",
+        "twist"
+      ]
+    },
+    {
+      "id": "group",
+      "kind": "theorem",
+      "name": "GlobalTheory.SmGL.ProdIrr.exists_mem_ind_apply_one",
+      "source": [
+        1,
+        16,
+        72
+      ],
+      "requires": [
+        "smooth"
+      ]
+    },
+    {
+      "id": "open",
+      "kind": "theorem",
+      "name": "exists_openSubgroup_GL",
+      "source": [
+        1,
+        95,
+        99
+      ],
+      "requires": [
+        "cong"
+      ]
+    },
+    {
+      "id": "cont",
+      "kind": "theorem",
+      "name": "continuous_leviProj",
+      "source": [
+        1,
+        82,
+        93
+      ],
+      "requires": [
+        "top"
+      ]
+    },
+    {
+      "id": "twist",
+      "kind": "open imports",
+      "name": "isSmooth_comp, isSmooth_twist, isSmoothChar_deltaHalf",
+      "source": null,
+      "requires": []
+    },
+    {
+      "id": "smooth",
+      "kind": "open imports",
+      "name": "mem_nhds_subtype, mem_smoothPart_of_nhds",
+      "source": null,
+      "requires": []
+    },
+    {
+      "id": "cong",
+      "kind": "open imports",
+      "name": "CentralExponent.exists_cong_subset, isOpen_cong",
+      "source": null,
+      "requires": []
+    },
+    {
+      "id": "top",
+      "kind": "open imports",
+      "name": "Units.continuous_iff, continuous_matrix, leviProj_apply",
+      "source": null,
+      "requires": []
+    },
+    {
+      "id": "iw",
+      "kind": "theorem",
+      "name": "GroundTheory.Automorphic.Parabolic.congruenceSubgroup_iwahoriFactorization'",
+      "source": [
+        0,
+        371,
+        376
+      ],
+      "requires": [
+        "sym",
+        "iw0"
+      ]
+    },
+    {
+      "id": "sym",
+      "kind": "theorem",
+      "name": "iwahoriFactorization_symm",
+      "source": [
+        0,
+        357,
+        365
+      ],
+      "requires": []
+    },
+    {
+      "id": "iw0",
+      "kind": "theorem",
+      "name": "congruenceSubgroup_iwahoriFactorization",
+      "source": [
+        0,
+        336,
+        344
+      ],
+      "requires": [
+        "factor",
+        "diag",
+        "elimK",
+        "leviK"
+      ]
+    },
+    {
+      "id": "factor",
+      "kind": "theorem",
+      "name": "iwahoriFactorization_of_elim",
+      "source": [
+        0,
+        165,
+        199
+      ],
+      "requires": [
+        "tri",
+        "parab"
+      ]
+    },
+    {
+      "id": "tri",
+      "kind": "theorem",
+      "name": "exists_mul_mem_blockUpper",
+      "source": [
+        0,
+        110,
+        158
+      ],
+      "requires": [
+        "elim"
+      ]
+    },
+    {
+      "id": "elim",
+      "kind": "construction",
+      "name": "elimKey, elimCol, elimGL, elimGL_mem_blockUpper_dual",
+      "source": [
+        0,
+        17,
+        108
+      ],
+      "requires": []
+    },
+    {
+      "id": "diag",
+      "kind": "theorem",
+      "name": "diag_ne_zero_of_mem_congruenceSubgroup",
+      "source": [
+        0,
+        241,
+        244
+      ],
+      "requires": [
+        "congDef"
+      ]
+    },
+    {
+      "id": "elimK",
+      "kind": "theorem",
+      "name": "elimGL_mem_congruenceSubgroup",
+      "source": [
+        0,
+        246,
+        270
+      ],
+      "requires": [
+        "elim",
+        "diag",
+        "memK"
+      ]
+    },
+    {
+      "id": "leviK",
+      "kind": "theorem",
+      "name": "leviProj_mem_congruenceSubgroup",
+      "source": [
+        0,
+        272,
+        289
+      ],
+      "requires": [
+        "memK",
+        "parab"
+      ]
+    },
+    {
+      "id": "memK",
+      "kind": "theorem",
+      "name": "mem_congruenceSubgroup_of_le",
+      "source": [
+        0,
+        218,
+        233
+      ],
+      "requires": [
+        "congDef"
+      ]
+    },
+    {
+      "id": "congDef",
+      "kind": "open imports",
+      "name": "GLnLocal.mem_congruenceSubgroup_iff, mem_integralGL_iff, congruenceSubgroup_one_le_iwahori, valuation_uniformizer_lt_one",
+      "source": null,
+      "requires": []
+    },
+    {
+      "id": "parab",
+      "kind": "open imports",
+      "name": "leviProj_inv_mul_mem, conj_mem_unipotentRadical, levi_le_blockUpper, blockUpper/Levi definitions",
+      "source": null,
+      "requires": []
+    }
+  ],
+  "sourceLedger": [
+    {
+      "path": "src/GroundTheory/AutomorphicForms/IwahoriFactorization.lean",
+      "blob": "7b63eb58c228ab2851279433bb608180269619d1",
+      "anchors": [
+        "def elimKey",
+        "def elimCol",
+        "theorem elimCol_mul_elimCol",
+        "theorem elimCol_mul_apply",
+        "def elimGL",
+        "theorem elimGL_mem_blockUpper_dual",
+        "theorem exists_mul_mem_blockUpper",
+        "induction s using Finset.induction_on_max_value",
+        "div_mul_cancel₀",
+        "hz j hjs a hja",
+        "theorem iwahoriFactorization_of_elim",
+        "(hlevi",
+        "(hlevi'",
+        "set m₁",
+        "set m₂",
+        "refine ⟨p *",
+        "conj_mem_unipotentRadical",
+        "theorem mem_congruenceSubgroup_of_le",
+        "theorem diag_ne_zero_of_mem_congruenceSubgroup",
+        "theorem valuation_elimCol_le",
+        "theorem elimGL_mem_congruenceSubgroup",
+        "theorem leviProj_mem_congruenceSubgroup",
+        "theorem congruenceSubgroup_iwahoriFactorization",
+        "theorem iwahoriFactorization_symm",
+        "theorem congruenceSubgroup_iwahoriFactorization'"
+      ]
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsIrreducibleSecondFactorOfIrreducibleProduct.lean",
+      "blob": "486fdd6e3b310f838b3ead5aa9509c71e47ace25",
+      "anchors": [
+        "theorem exists_mem_ind_apply_one",
+        "theorem continuous_leviProj",
+        "theorem exists_openSubgroup_GL",
+        "theorem exists_indSp_apply_one",
+        "∃ f : IndSp",
+        "exists_mem_ind_apply_one exists_openSubgroup_GL",
+        "isSmooth_comp (isSmooth_twist",
+        "exact ⟨f, h1",
+        "c' * c⁻¹",
+        "mem_smoothPart_of_nhds",
+        "hF0 _ hx",
+        "GlobalTheory.CentralExponent.exists_cong_subset"
+      ]
+    }
+  ],
+  "executed": {
+    "matrixCases": 20241,
+    "pivots": 115092,
+    "factorizations": 60723,
+    "groupCases": 62,
+    "groupEquivariance": 936,
+    "groupSmoothness": 936,
+    "negative": 3
+  }
+}
