@@ -40,3 +40,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-combined-frontier-roles-20261124` | pass | 1815.01 | 2026-11-24T18:46:16Z | GPT | Authenticate original RH export once and extract exact direct type/value witnesses for seven source-bound targets, 34 kn |
 | `rh-next-root-roles-20261124` | pass | 1496.69 | 2026-11-24T20:39:27Z | GPT | Extract ten previously root-linked exact Lean declarations and eight specialist probes from the authenticated RH archive |
 | `rh-literature-theta-frontier-20261124` | pass | 1114.84 | 2026-11-24T21:33:23Z | GPT | Extract exact root-linked literature, theta, local Langlands, generated proof and recursor frontier plus one owner-bound |
+| `rh-34-producer-frontier-20261124` | pass | 1065.55 | 2026-11-24T23:31:55Z | GPT | Authenticate the RH export and extract exact direct statement/body witnesses for the 34 newly root-connected theorem pro |

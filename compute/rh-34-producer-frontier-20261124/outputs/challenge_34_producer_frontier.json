@@ -1,0 +1,2958 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "file": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 6112241,
+  "root": 326835,
+  "indexedDeclarations": 53722,
+  "projectionMs": 22,
+  "maxRssKiB": 278220,
+  "summary": {
+    "recursorRuleRhs": 0,
+    "requests": 34,
+    "found": 0,
+    "typeEdges": 0,
+    "valueEdges": 0,
+    "structuralEdges": 0,
+    "expressionReads": 0
+  },
+  "reports": [
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature",
+        "id": 8477096,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 685292527
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 8477096,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 685292527,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature",
+        "id": 11274889,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 891403535
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 11274889,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 891403535,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.ar_degree_of_literature",
+        "id": 11148669,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073876
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 11148669,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073876,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.ar_degree_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.point_separation_pair_of_literature",
+        "id": 11134501,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073873
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 11134501,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073873,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.point_separation_pair_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literature",
+        "id": 11090272,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073870
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 11090272,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073870,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.toroidal_for_fan_ks_of_literature",
+        "id": 11080156,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073867
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 11080156,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073867,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.toroidal_for_fan_ks_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature",
+        "id": 10951735,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073864
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 10951735,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073864,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.nef_rr_of_literature",
+        "id": 10575871,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073861
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 10575871,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073861,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.nef_rr_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.zarhin_statement",
+        "id": 10575034,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073858
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 10575034,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073858,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.zarhin_statement"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.fargues_exact_of_literature",
+        "id": 10523616,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073855
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 10523616,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073855,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.fargues_exact_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature",
+        "id": 10419805,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073848
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 10419805,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073848,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature",
+        "id": 10383261,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073845
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 10383261,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073845,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature",
+        "id": 10381888,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073842
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 10381888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073842,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature",
+        "id": 9013533,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073833
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 9013533,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073833,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.published_results_first",
+        "id": 8797770,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073828
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 8797770,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073828,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.published_results_first"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.published_results_eigen",
+        "id": 8728574,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "ownerId": 11298208,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073825
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 11298208,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980691,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          },
+          {
+            "owner": 11298208,
+            "target": 8728574,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073825,
+            "expressionRoot": 893073889,
+            "ownerName": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "targetName": "UpperTheory.LiteratureTheorems.published_results_eigen"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLiftK._proof_1",
+        "id": 13125906,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.TP.TLiftK",
+          "ownerId": 13125905,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980830
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212052,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+          },
+          {
+            "owner": 14009158,
+            "target": 13125905,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1000528341,
+            "expressionRoot": 1062644804,
+            "ownerName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "targetName": "UpperTheory.TP.TLiftK"
+          },
+          {
+            "owner": 13125905,
+            "target": 13125906,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980830,
+            "expressionRoot": 997984088,
+            "ownerName": "UpperTheory.TP.TLiftK",
+            "targetName": "UpperTheory.TP.TLiftK._proof_1"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLiftK._proof_3",
+        "id": 13125938,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.TP.TLiftK",
+          "ownerId": 13125905,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980846
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212052,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+          },
+          {
+            "owner": 14009158,
+            "target": 13125905,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1000528341,
+            "expressionRoot": 1062644804,
+            "ownerName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "targetName": "UpperTheory.TP.TLiftK"
+          },
+          {
+            "owner": 13125905,
+            "target": 13125938,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980846,
+            "expressionRoot": 997984088,
+            "ownerName": "UpperTheory.TP.TLiftK",
+            "targetName": "UpperTheory.TP.TLiftK._proof_3"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLiftK._proof_2",
+        "id": 13125937,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.TP.TLiftK",
+          "ownerId": 13125905,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980839
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212052,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+          },
+          {
+            "owner": 14009158,
+            "target": 13125905,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1000528341,
+            "expressionRoot": 1062644804,
+            "ownerName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "targetName": "UpperTheory.TP.TLiftK"
+          },
+          {
+            "owner": 13125905,
+            "target": 13125937,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980839,
+            "expressionRoot": 997984088,
+            "ownerName": "UpperTheory.TP.TLiftK",
+            "targetName": "UpperTheory.TP.TLiftK._proof_2"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLiftK._proof_4",
+        "id": 13125939,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.TP.TLiftK",
+          "ownerId": 13125905,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997983762
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212052,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+          },
+          {
+            "owner": 14009158,
+            "target": 13125905,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1000528341,
+            "expressionRoot": 1062644804,
+            "ownerName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "targetName": "UpperTheory.TP.TLiftK"
+          },
+          {
+            "owner": 13125905,
+            "target": 13125939,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997983762,
+            "expressionRoot": 997984088,
+            "ownerName": "UpperTheory.TP.TLiftK",
+            "targetName": "UpperTheory.TP.TLiftK._proof_4"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.tools_holds_k",
+        "id": 14065047,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.TP.tLift_holds_k",
+          "ownerId": 14065048,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1065212048
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14065049,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212053,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.TP.K.tLiftK"
+          },
+          {
+            "owner": 14065049,
+            "target": 14065048,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212051,
+            "expressionRoot": 1065212051,
+            "ownerName": "UpperTheory.TP.K.tLiftK",
+            "targetName": "UpperTheory.TP.tLift_holds_k"
+          },
+          {
+            "owner": 14065048,
+            "target": 14065047,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212048,
+            "expressionRoot": 1065212050,
+            "ownerName": "UpperTheory.TP.tLift_holds_k",
+            "targetName": "UpperTheory.TP.tools_holds_k"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.tLift_of_tools_k",
+        "id": 14019846,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.TP.tLift_holds_k",
+          "ownerId": 14065048,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1065212047
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14065049,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212053,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.TP.K.tLiftK"
+          },
+          {
+            "owner": 14065049,
+            "target": 14065048,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212051,
+            "expressionRoot": 1065212051,
+            "ownerName": "UpperTheory.TP.K.tLiftK",
+            "targetName": "UpperTheory.TP.tLift_holds_k"
+          },
+          {
+            "owner": 14065048,
+            "target": 14019846,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212047,
+            "expressionRoot": 1065212050,
+            "ownerName": "UpperTheory.TP.tLift_holds_k",
+            "targetName": "UpperTheory.TP.tLift_of_tools_k"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.weight_one_geometric_realization",
+        "id": 14009156,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+          "ownerId": 14009157,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1062644798
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212052,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+          },
+          {
+            "owner": 14009158,
+            "target": 14009157,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1062644801,
+            "expressionRoot": 1062644804,
+            "ownerName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "targetName": "UpperTheory.Gal.Int.Geo.geoOne_holds"
+          },
+          {
+            "owner": 14009157,
+            "target": 14009156,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1062644798,
+            "expressionRoot": 1062644799,
+            "ownerName": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+            "targetName": "UpperTheory.Gal.Int.Geo.weight_one_geometric_realization"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.geometric_realization_of_weight_one",
+        "id": 13967295,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+          "ownerId": 14009157,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1062644797
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212052,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+          },
+          {
+            "owner": 14009158,
+            "target": 14009157,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1062644801,
+            "expressionRoot": 1062644804,
+            "ownerName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "targetName": "UpperTheory.Gal.Int.Geo.geoOne_holds"
+          },
+          {
+            "owner": 14009157,
+            "target": 13967295,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1062644797,
+            "expressionRoot": 1062644799,
+            "ownerName": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+            "targetName": "UpperTheory.Gal.Int.Geo.geometric_realization_of_weight_one"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.galoisLocalGlobal_of_geometry_lift",
+        "id": 13235288,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift",
+          "ownerId": 13235289,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1004086667
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 14065050,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212056,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+          },
+          {
+            "owner": 14065050,
+            "target": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212052,
+            "expressionRoot": 1065212054,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+            "targetName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+          },
+          {
+            "owner": 14009158,
+            "target": 13235289,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1062644800,
+            "expressionRoot": 1062644804,
+            "ownerName": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift"
+          },
+          {
+            "owner": 13235289,
+            "target": 13235288,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1004086667,
+            "expressionRoot": 1004086672,
+            "ownerName": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift",
+            "targetName": "UpperTheory.Gal.Int.galoisLocalGlobal_of_geometry_lift"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.hecke_tate_functional_equation_of_open",
+        "id": 13125896,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980667
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13125896,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980667,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.hecke_tate_functional_equation_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.partial_zeta_functional_equation_of_open",
+        "id": 13125895,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980664
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13125895,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980664,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.partial_zeta_functional_equation_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.siegel_klingen_deligne_ribet_of_open",
+        "id": 13125894,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980661
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13125894,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980661,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.siegel_klingen_deligne_ribet_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.hilbert_class_field_j_of_open",
+        "id": 13125892,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980658
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13125892,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980658,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.hilbert_class_field_j_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.elliptic_main_theorem_cm_of_open",
+        "id": 13125891,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980655
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13125891,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980655,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.elliptic_main_theorem_cm_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.dual_abelian_scheme_of_open",
+        "id": 13096374,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980644
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13096374,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980644,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.dual_abelian_scheme_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.abelian_de_rham_of_open",
+        "id": 13096369,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 995913394
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13096369,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 995913394,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.abelian_de_rham_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.grothendieck_deformation_of_open",
+        "id": 13096371,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "ownerId": 13125897,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980639
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13125897,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature"
+          },
+          {
+            "owner": 13125897,
+            "target": 13096371,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980639,
+            "expressionRoot": 997980670,
+            "ownerName": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+            "targetName": "UpperTheory.LiteratureTheorems.grothendieck_deformation_of_open"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.galois_cohomology_from_literature",
+        "id": 13096367,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+          "ownerId": 13096368,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 995913380
+        },
+        "path": [
+          {
+            "owner": 14065054,
+            "target": 14065053,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212062,
+            "expressionRoot": 1065212062,
+            "ownerName": "riemannHypothesis",
+            "targetName": "rhOfAll"
+          },
+          {
+            "owner": 14065053,
+            "target": 14065052,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212060,
+            "expressionRoot": 1065212061,
+            "ownerName": "rhOfAll",
+            "targetName": "allChi"
+          },
+          {
+            "owner": 14065052,
+            "target": 14065051,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212058,
+            "expressionRoot": 1065212058,
+            "ownerName": "allChi",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter"
+          },
+          {
+            "owner": 14065051,
+            "target": 13125901,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212055,
+            "expressionRoot": 1065212057,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter",
+            "targetName": "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          },
+          {
+            "owner": 13125901,
+            "target": 13125899,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980696,
+            "expressionRoot": 997980699,
+            "ownerName": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+            "targetName": "UpperTheory.One.vwin_of_row"
+          },
+          {
+            "owner": 13125899,
+            "target": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980685,
+            "expressionRoot": 997980689,
+            "ownerName": "UpperTheory.One.vwin_of_row",
+            "targetName": "UpperTheory.One.Join.automorphic_window_of_inputs"
+          },
+          {
+            "owner": 13125898,
+            "target": 13096368,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980674,
+            "expressionRoot": 997980683,
+            "ownerName": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "targetName": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm"
+          },
+          {
+            "owner": 13096368,
+            "target": 13096367,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 995913380,
+            "expressionRoot": 995913388,
+            "ownerName": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+            "targetName": "UpperTheory.LiteratureTheorems.galois_cohomology_from_literature"
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    }
+  ]
+}
