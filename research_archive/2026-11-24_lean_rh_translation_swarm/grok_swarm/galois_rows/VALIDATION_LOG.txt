@@ -1,0 +1,92 @@
+# galois_rows validation log (real outputs, 2026-11-24 GMT)
+
+## 1. lean_output.txt — nice lean +leanprover/lean4:v4.33.1 GaloisRowsSchema.lean; echo exit=$?
+'GrokGaloisRows.Away.big' does not depend on any axioms
+'GrokGaloisRows.nice_big' does not depend on any axioms
+'GrokGaloisRows.row_mono' does not depend on any axioms
+'GrokGaloisRows.awayB_not_away' does not depend on any axioms
+'GrokGaloisRows.charPol_of_ine' does not depend on any axioms
+'GrokGaloisRows.dim_of_ine' does not depend on any axioms
+exit=0
+
+## 2. replay_output.txt — python3 replay_source_checks.py /workspace/rh_up (blob:none clone of leanprover-community/riemann-hypothesis)
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean
+OK  text theorem galoisLocalGlobalStrong_recParameter : UpperTheory.GalStar.Row0b recT := galoisRep
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean
+OK  text def recT : UpperTheory.GalStar.RecNotion := fun h rc => UpperTheory.Zero.LLC.IsRecT h rc
+OK  text UpperTheory.Gal.Int.Row.galoisLocalGlobal_of_localGlobalCompatibility h (UpperTheory.Gal.T
+OK  text UpperTheory.GalStar.Row0.row0b recT (galoisLocalGlobal_of_geometry_lift geo up)
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjAlt.lean
+OK  text tame0 : IsQp w → TmW y → Sqf y → y.mono0 → x.mono0 ∧ ∀ g : ↥(Weil h), deg g = 0 → x.charPo
+OK  text nice : ∀ σ, π.IsLocComp w σ → ∀ rc, Rc h rc → ((IsQp w ∧ TmW (rc (algNorm σ)) ∧ Sqf (rc (a
+OK  text (CG.mk π).IsRegAlg → GlobalTheory.ContraPair.PolarizedPair π χ →
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean
+OK  text ∃ (g : ℕ) (_ : Fact g.Prime) (i : ℚ_[g] ≃+* w.adicCompletion E), Continuous i ∧ (n = 1 ∨ 1
+OK  text tame0 : IsQpBig w y.lpDim → TmW y → Sqf y → y.mono0 → x.mono0 ∧ ∀ g : ↥(Weil h), deg g = 0
+OK  text theorem Away.big {x y : WD h} (k : Away x y) : AwayB x y := ⟨k.dim, k.tor, fun q => k.tame
+OK  text ((IsQpBig w a ∧ TmW (rc (algNorm σ)) ∧ Sqf (rc (algNorm σ))) ∨ Tor (rc (algNorm σ)))
+OK  text exact ⟨r, wt, HT, k.big Rc⟩
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/InertCharpoly/GaloisLocalGlobalOfLocalGlobalCompatibility.lean
+OK  text H E Ω l ι n hn π χ hI r hW w σ hσ hf (Or.inr ⟨q, g⟩)
+OK  text obtain ⟨t, e⟩ := exists_eq_zpow_mul deg_frob g
+OK  text have hI : InScope .all l π χ := ⟨hr, hp, trivial⟩
+OK  text galoisLocalGlobal_of_placeClassCompatibility C H1 (localGlobalAtPlaceClass_of_localGlobal 
+OK  text theorem galois_realisation_of_rank_two (C : CoreAll) (H1 : R1) (H2 : LocalGlobalCompatibil
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/GaloisCompatUnlinkedSupportOfSpherical.lean
+OK  text theorem inq_holds : Inq := ⟨UpperTheory.Gal.Int.Inp.inp_holds, UpperTheory.Gal.GamX.charLi
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/GaloisCompatUnlinkedSupportOfSpherical.lean
+OK  text GlobalTheory.RoadU.exists_sph_lift_of_toral hI
+OK  text GlobalTheory.DRDescent.deRham_descends
+OK  text GlobalTheory.JumpsDescend.jumps_descend
+OK  text GlobalTheory.RoadU.toralAbove_of_holds hI (hC.2 .crys) (hC.2 .phi)
+OK  text GlobalTheory.RoadU.UnlinkedChars.rc_unlinked_chars
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/PAdicSplitting/LocalGlobalCompatAtIwahoriFixedOfUnlinked.lean
+OK  text r2g mixedOf toTor_holds drDesc UpperTheory.Zero.LLC.recTExists
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/PAdicSplitting/R2g.lean
+OK  text MixedOf → ToTor → DRDesc → UpperTheory.Zero.LLC.RecTExists → GlobalTheory.DeRhamOfPlainTor
+OK  text rcases hcase with hpt | ⟨hQ, hap⟩
+OK  text GlobalTheory.AboveL.wdOf_restricts
+OK  text GlobalTheory.AboveLRes.isPstAt_of_resTo
+OK  blob src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/PAdicSplitting/LocalGlobalCompatAtIwahoriFixedPlaces.lean
+OK  text (PlainTor (algNorm σ) ∨ (IsQg w ∧ Apart (algNorm σ))) →
+OK  blob src/Development/AbelianVarietyTheory/Statements/EllipticCurveLevels/IsQg.lean
+OK  text π.IsLocComp w σ → PlainTor (algNorm σ) →
+OK  text def Top : Prop := R1 ∧ R2
+OK  blob src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/IsWeight.lean
+OK  text Continuous r ∧ UpperTheory.V.Af.AttC ι r π
+OK  text | .all => True
+OK  blob src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/CyclicStrongAtCusp.lean
+OK  text def PlainTor (x : IrrGL k) : Prop := ∃ s, HasSupport x.rep s ∧ (∀ y ∈ s, y.1 = 1) ∧ Unlink
+OK  text def CoreAll : Prop := Ex .all ∧ ∀ c, SphericalLevelCondition .all c
+checks ok=48 bad=0
+exit=0
+
+## 3. bfs_import_closure.py (source; run from inside the clone: python3 bfs_import_closure.py <Module.Name>; prints '<files fetched> <frontier size>' per BFS level; writes sources under /workspace/rhsrc/all)
+```python
+import subprocess,sys,re,os
+P='40e56bab026552e089d7afcfeff08d2defb9c005'
+oid={}
+for line in open('/workspace/rh_tree.txt'):
+    meta,path=line.rstrip('\n').split('\t');oid[path]=meta.split()[2]
+def mod2path(m): return 'src/'+m.replace('.','/')+'.lean'
+roots=sys.argv[1:]
+seen=set();front=[mod2path(r) for r in roots];texts={}
+os.makedirs('/workspace/rhsrc/all',exist_ok=True)
+while front:
+    need=[oid[p] for p in front if p in oid]
+    # bulk fetch
+    for i in range(0,len(need),2000):
+        subprocess.run(['git','-c','fetch.negotiationAlgorithm=noop','fetch','-q','--no-tags','--no-write-fetch-head','--filter=blob:none','origin']+need[i:i+2000],stderr=subprocess.DEVNULL)
+    nxt=[]
+    for p in front:
+        if p in seen or p not in oid: continue
+        seen.add(p)
+        t=subprocess.run(['git','cat-file','blob',oid[p]],capture_output=True,text=True).stdout
+        dst='/workspace/rhsrc/all/'+p; os.makedirs(os.path.dirname(dst),exist_ok=True); open(dst,'w').write(t)
+        for m in re.findall(r'^import\s+(\S+)',t,re.M):
+            q=mod2path(m)
+            if q in oid and q not in seen: nxt.append(q)
+    front=list(dict.fromkeys(nxt))
+    print(len(seen),len(front),flush=True)
+```
+Final line from RowSrc run: 66168 0   (from GaloisLocalGlobalOfLocalGlobalCompatibility run: 7142 0)
