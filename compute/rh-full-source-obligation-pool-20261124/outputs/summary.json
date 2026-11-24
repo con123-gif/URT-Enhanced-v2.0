@@ -1,0 +1,27 @@
+{
+  "status": "SOURCE_TEXT_CANDIDATES_NOT_SEMANTIC_EQUIVALENCE",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "modules": 175187,
+  "bytes": 1030531854,
+  "recordGroups": 318,
+  "fields": 979,
+  "distinctScopedProducers": 883,
+  "duplicates": 96,
+  "unsupportedBoundaries": 242,
+  "modulesWithRepeatedProducers": 19,
+  "roundtrippedFields": 979,
+  "frequencyHistogram": {
+    "1": 815,
+    "2": 46,
+    "3": 21,
+    "9": 1
+  },
+  "seconds": 8.147475080000003,
+  "maxRssKiB": 153960,
+  "limits": [
+    "one-line record-field candidates only; unsupported syntax not translated",
+    "exact textual pooling within module and binder/command epoch; not elaborated equality",
+    "all occurrence locations retained",
+    "no URT-specific speedup or actual human translation time measured"
+  ]
+}

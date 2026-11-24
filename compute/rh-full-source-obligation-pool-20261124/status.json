@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 79.02,
+  "tail": "{\"scopeIsolation\":true,\"roundtrip\":true,\"unsupportedContinuationBoundary\":true}\n{\n  \"status\": \"SOURCE_TEXT_CANDIDATES_NOT_SEMANTIC_EQUIVALENCE\",\n  \"pin\": \"40e56bab026552e089d7afcfeff08d2defb9c005\",\n  \"modules\": 175187,\n  \"bytes\": 1030531854,\n  \"recordGroups\": 318,\n  \"fields\": 979,\n  \"distinctScopedProducers\": 883,\n  \"duplicates\": 96,\n  \"unsupportedBoundaries\": 242,\n  \"modulesWithRepeatedProducers\": 19,\n  \"roundtrippedFields\": 979,\n  \"frequencyHistogram\": {\n    \"1\": 815,\n    \"2\": 46,\n    \"3\": 21,\n    \"9\": 1\n  },\n  \"seconds\": 8.147475080000003,\n  \"maxRssKiB\": 153960,\n  \"limits\": [\n    \"one-line record-field candidates only; unsupported syntax not translated\",\n    \"exact textual pooling within module and binder/command epoch; not elaborated equality\",\n    \"all occurrence locations retained\",\n    \"no URT-specific speedup or actual human translation time measured\"\n  ]\n}\n",
+  "id": "rh-full-source-obligation-pool-20261124",
+  "question": "Count and preserve exact repeated source record-field candidates across full pinned source; no semantic equality or translation-speed claim.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_full_scoped_pool.mjs --out {out}",
+  "utc": "2026-11-24T12:59:46Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "c8b061b689b7d9682a41a87b8aae78c0afa3ff4a",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45398571099",
+  "outputs_committed": [
+    {
+      "path": "record_pool.jsonl.zst",
+      "bytes": 47619,
+      "sha256": "2870752bc68d87f3893620c4e89302231dcce00fa0f61036e090e975e5c18db9"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 797,
+      "sha256": "649613b689b927cc5aec31eca26835c6c6a31672a5332ab559cd348424175c65"
+    }
+  ],
+  "outputs_artifact_only": []
+}
