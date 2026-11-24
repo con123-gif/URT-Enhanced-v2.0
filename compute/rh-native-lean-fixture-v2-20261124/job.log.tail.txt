@@ -1,0 +1,15 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+
+  0      0   0      0   0      0      0      0                              0
+ 58 543.9M  58 318.6M   0      0 304.4M      0   00:01   00:01         318.6M
+100 543.9M 100 543.9M   0      0 322.4M      0   00:01   00:01         318.6M
+100 543.9M 100 543.9M   0      0 322.4M      0   00:01   00:01         318.6M
+100 543.9M 100 543.9M   0      0 322.4M      0   00:01   00:01         318.6M
+lean-4.33.1-linux.tar.zst: OK
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)

@@ -28,4 +28,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-stream-closure-retry-20261124` | timeout | 19200.26 | 2026-11-24T12:57:26Z | GPT | Retry checksum-pinned streamed closure after actual challenge byte count correction. Original run 45348756372 matched SH |
 | `rh-full-source-obligation-pool-20261124` | pass | 79.02 | 2026-11-24T12:59:46Z | GPT | Count and preserve exact repeated source record-field candidates across full pinned source; no semantic equality or tran |
 | `rh-typed-algebra-challenge-20261124` | pass | 25.51 | 2026-11-24T13:01:13Z | GPT | Can every actual checksum-pinned challenge export record be converted reversibly to typed constructor algebra and expres |
-| `rh-native-lean-fixture-v2-20261124` | queued | | | | |
+| `rh-native-lean-fixture-v2-20261124` | error | 11.07 | 2026-11-24T13:02:26Z | GPT | Compile the native Lean 4.33.1 kernel-reference exporter on an imported private theorem, literal and quotient fixture; i |
