@@ -201,7 +201,7 @@ function diskIO(fd){
 // Official exporter input only: JSON.parse does not detect duplicate object keys.
 function* recordsFrom(fd,hash,maxLine=64*1024*1024){
  const b=Buffer.allocUnsafe(1024*1024);let fragments=[],bytes=0;
- const decoder=new TextDecoder("utf-8",{fatal:true});
+ const decoder=new TextDecoder("utf-8",{fatal:true,ignoreBOM:true});
  function add(v){bytes+=v.length;if(bytes>maxLine)throw Error("record exceeds configured limit");if(v.length)fragments.push(Buffer.from(v))}
  function finish(){if(!bytes)throw Error("empty NDJSON record");const x=JSON.parse(decoder.decode(Buffer.concat(fragments,bytes)));fragments=[];bytes=0;return x}
  for(;;){const n=fs.readSync(fd,b,0,b.length,null);if(!n)break;hash.update(b.subarray(0,n));let start=0;
@@ -214,7 +214,7 @@ function main(){
  const [mode,input,output,expected]=process.argv.slice(2);
  if(mode==="--self-test"){
   const rows=fs.readFileSync(input,"utf8").trim().split(/\r?\n/).map(JSON.parse);
-  console.log(JSON.stringify(tests(rows,digest,s=>new TextEncoder().encode(s),a=>new TextDecoder("utf-8",{fatal:true}).decode(a)),null,2));return;
+  console.log(JSON.stringify(tests(rows,digest,s=>new TextEncoder().encode(s),a=>new TextDecoder("utf-8",{fatal:true,ignoreBOM:true}).decode(a)),null,2));return;
  }
  if(mode!=="--scan"||!input||!output||!expected||!(/^[a-f0-9]{64}$/).test(expected))throw Error("usage: node fingerprint_export_disk.mjs --scan INPUT.ndjson|- OUTPUT.ndjson EXPECTED_DECOMPRESSED_SHA256");
  const scratch=fs.mkdtempSync(path.join(process.env.RH_SCRATCH||os.tmpdir(),"rh-fp-"));
@@ -225,7 +225,7 @@ function main(){
   const emit=(record)=>{const a=Buffer.from(JSON.stringify(record)+"\n");out.writeAt(offset,a);offset=safe(offset+a.length)};
   emit({header:{schema:"cathedral-export-content-v1-stream",expectedDecompressedSHA256:expected,scope:"serialized content only; source identity and closure separate"}});
   const open=name=>{const fd=fs.openSync(path.join(scratch,name),"wx+");fds.push(fd);return diskIO(fd)};
-  const s=makeStores(open,v=>new TextEncoder().encode(v),a=>new TextDecoder("utf-8",{fatal:true}).decode(a),declaration=>emit({declaration}));
+  const s=makeStores(open,v=>new TextEncoder().encode(v),a=>new TextDecoder("utf-8",{fatal:true,ignoreBOM:true}).decode(a),declaration=>emit({declaration}));
   inFd=input==="-"?0:fs.openSync(input,"r");const hash=createHash("sha256");
   const result=fingerprints(recordsFrom(inFd,hash),digest,s);s.seal();const actual=hash.digest("hex");
   if(actual!==expected)throw Error("decompressed input digest mismatch");
