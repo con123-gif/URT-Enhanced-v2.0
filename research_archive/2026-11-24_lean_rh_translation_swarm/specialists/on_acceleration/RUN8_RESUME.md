@@ -1,0 +1,29 @@
+# RUN8 — spillable frontier, reused graph buffers (2026-11-24)
+
+RESULT PARTIAL: actual Node v22.16.0 native disk-backed regression and matched synthetic scheduling tests. No full RH closure, no change to mathematical premises. Read SWARM_PROTOCOL, HANDOFF_QUEUE, EXPANSION_15_LANES, latest lane notes, AGENTS, state/protocol/log/continuity. Pin remains leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005. Upstream head 9875ed9904be9d8967f578bd91121d0eafba4ba3, 14:03:08Z, docs merge (not adopted).
+
+## Actual peer evidence and blocker
+State branch compute/rh-stream-closure-retry-20261124/status.json still timeout (19200.26s); no complete solution closure. Prior verified challenge hash bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9, 350862311 bytes, 6046012 expr / 53242 decl / 12128971 edges. It intentionally reaches sorryAx. Dependency exporter blob bffe89b20ff5e297d921443492e918933c8e0d92. No local network: curl to math.mit.edu failed DNS. Actual challenge replay remains unrun by this lane. Native kernel peer fixture v3 now PASS, https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45400647276, state status 11.73s, fixture_graph.jsonl SHA256 3fbc768867c89b7802dae4489de5c080b6716bf540b75afab2d0a680d7c1e19c; synthetic Lean fixture, not RH. Kernel lane owns validation, dependency lane owns export. No duplicate full-export job.
+
+## Implementation
+spill_frontier.mjs is a drop-in signed reference traversal, same 12-byte expression records as peer exporter. A single temporary file stores backward-linked variable-size stack pages, one disk head per active block; LRU eviction caps total resident queued references, not process RAM. On every pop, reload the newest disk page only after the newer in-memory tail is drained. Reload may evict another tail. Mark at enqueue, expand exactly once, count all nonzero references including duplicate edges, preserve cycles. All modes preserve the same closure. The reusableReader reuses evicted 12-byte-record buffers, so allocations <= maxBlocks; return values copied. Missing refs, invalid IDs, short reads, invalid limits fail closed. Scratch directory removed on success or caught error; not crash-resumable. OS page cache, JS array capacity, sparse seen bitsets and block metadata excluded from frontier payload bound. A fixed page length P and fixed-width IDs give expected O(V+E) graph operations; I/O copying O(P*(V+E)) worst case with P variable; each insertion or successful removal can trigger at most O(P) evictions/copy work under the fixed page and budget model. No general locality guarantee and no O(N) arbitrary proof-search claim. Typed-edge decoder and mathematical premise validation unchanged.
+
+## Executed certificate
+Node v22.16.0 Linux. Local tested Git blob IDs engine 9e83e8d48192e38344c1ce6d2818bc7085f9d9e3, certificate 32ac8f447eadec0a117de60c73a5eeb5a13873dc. 1215 checks passed; 1192 of 1200 mixed cyclic randomized graph/schedule/budget trials spilled, with exact independent FIFO oracle reachable set and edge multiplicities, five error/cleanup tests and ten reader tests. All 24 exploratory native process trials (3 shapes x 4 modes x 2 budgets) passed; 12 additional fresh process trials (cross x 4 modes x 3 repeats) passed. 262144 expr nodes, one decl. Every benchmark visited bitmap SHA256 2d864c0b789a43214eee8524d3182075125e5ca2cd527f3582ec87ffd94076bc. 8 reader blocks of 1024 records, 98304 bytes, exactly 8 allocations per trial. App-cache cold, OS cache not flushed. Query-only timings, no index build or actual translation timing. Median 3 cross repeats at 4096 resident refs, 256 refs/page:
+| mode | ms | maxRSS KiB | peak pending | peak resident refs | expr block reads | spill pages | spill file bytes |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| stack |307.615|51412|2|2|131200|0|0|
+| descending |175.250|52192|131072|4096|256|3655|552244|
+| golden |167.835|53668|6013|4096|8210|84|24840|
+| periodic |185.860|53436|21938|4096|7081|673|116244|
+
+Descending reduces peak *resident pending reference count* by 32x relative to its full 131072 pending entries, not total RAM. Application read calls fall 512.5x relative to stack; median runtime 1.76x faster. Golden narrowly wins this constrained cross run (1.04x over descending); not a general URT advantage, no pi/e factor in phase-only comparison. On exploratory spread at 4096 budget stack 119.9ms vs descending 229.1, golden 206.7, periodic 226.0; chain 96.4,89.6,96.1,95.6ms respectively. No uniform winner. Reuse+spilling tradeoffs not isolated against the previous nonspill implementation; compare within run only. No proof translation throughput measured. Cold/warm source index benchmarks remain RUN2/full scan; no new cold/warm source results.
+
+Reproduce from lane:
+  node spill_certificate.mjs
+  node spill_certificate.mjs prepare /tmp/rh8-data
+  for s in cross chain spread; do for m in stack descending golden periodic; do for b in 4096 262144; do node spill_certificate.mjs bench /tmp/rh8-data "$s" "$m" "$b"; done; done; done
+  for m in stack descending golden periodic; do for i in 1 2 3; do node spill_certificate.mjs bench /tmp/rh8-data cross "$m" 4096; done; done
+
+## RESUME HERE
+Use the peer exporter's checksum-verified challenge scan to retain one sealed expr.bin + decl map, then run baseline stack and spill modes over the same graph, compare exact visited expression/decl bitmaps, edge counts and axioms against challenge summary, separately time scan/traverse/output and cold/warm cache with native memory and I/O metrics. Do not start another full solution extraction before verified challenge measurements; coordinate with dependency/integration on preserving authenticated index. Continue only in acceleration lane. HANDOFF TO dependencies, kernel extractor, integration, structure, audit. Project OPEN.
