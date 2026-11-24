@@ -1,3 +1,5 @@
+// Scope/URT fusion, 2026-11-24. Executed pinned exporter guard fixtures and shared DAG; see fused-selftest.
+// Executed V8 result (fixtures blob 2dc39052baf191b475aa0b85fbe53eb2f7452b47): {"fixtureBlocks":14,"records":186,"expressions":121,"edges":164,"declarations":10,"closedRoots":16,"open":82,"negativeControls":5,"large":{"expressions":100000,"edges":199998,"scopeBytes":524288,"scoreBytes":2097152,"exactEquationsCompared":100000,"expandedTreeNodes":"2^100000-1 (not expanded)"},"exactEquationExamples":["E0(C) [len(C)>=0] := Sort(U1)","E1(C) [len(C)>=1] := C[0]","E2(C) [len(C)>=1] := Lambda(N2,default,E1(C), t => E1(push(t,C)))","E3(C) [len(C)>=0] := Lambda(N1,implicit,E0(C), t => E2(push(t,C)))","E0(C) [len(C)>=0] := Const(N2,[])","E1(C) [len(C)>=0] := Const(N3,[])","E2(C) [len(C)>=1] := C[0]","E3(C) [len(C)>=0] := Let(N1,E0(C),E1(C),false, t => E2(push(t,C)))","E0(C) [len(C)>=1] := C[0]","E1(C) [len(C)>=1] := Project(N1,1,E0(C))","E0(C) [len(C)>=0] := NatLiteral(100000000000000023456789)","E0(C) [len(C)>=0] := Sort(U1)","E1(C) [len(C)>=0] := Const(N1,[])","E2(C) [len(C)>=0] := Pi(N4,default,E1(C), t => E1(push(t,C)))","E3(C) [len(C)>=0] := Sort(U2)","E4(C) [len(C)>=0] := Pi(N8,default,E1(C), t => E3(push(t,C)))"],"conclusion":"same exact scoped algebra with or without URT; one pass, no recursive expansion; URT advantage not established"}
 const S={"str":["pre","str"],"num":["pre","i"],"const":["name","us"],"app":["fn","arg"],"lam":["name","type","body","binderInfo"],"forallE":["name","type","body","binderInfo"],"letE":["name","type","value","body","nondep"],"proj":["typeName","idx","struct"],"mdata":["expr","data"],"axiom":["name","levelParams","type","isUnsafe"],"def":["name","levelParams","type","value","hints","safety","all"],"opaque":["name","levelParams","type","value","isUnsafe","all"],"thm":["name","levelParams","type","value","all"],"quot":["name","levelParams","type","kind"],"inductive":["types","ctors","recs"],"type":["name","levelParams","type","numParams","numIndices","all","ctors","numNested","isRec","isUnsafe","isReflexive"],"ctor":["name","levelParams","type","induct","cidx","numParams","numFields","isUnsafe"],"rec":["name","levelParams","type","all","numParams","numIndices","numMotives","numMinors","rules","k","isUnsafe"],"rule":["ctor","nfields","rhs"]};
 const NAME=["str","num"],LEVEL=["succ","max","imax","param"],EXPR=["bvar","sort","const","app","lam","forallE","letE","proj","natVal","strVal","mdata"],DECL=["axiom","def","opaque","thm","quot","inductive"];
 function pack(o,fields){
@@ -77,31 +79,117 @@ function readEngine(){
  return {append,read,summary:()=>({expressions:n,expressionChildEdges:edges,maxNorm,scoreSum:checksum,scoreBytes:pages.length*block*16,q:[qr,qi]})};
 }
 
-function checkRecords(records){
- const r=readEngine(),counts={},names=1,unused=names;
- let nameNext=1,levelNext=1,raw=0,compact=0;
+// Fused, scope-aware constructor algebra. Each expression is a context-parametric
+// equation E_i(C), not a closed theorem. URT scores are presentation metadata only.
+function scopedEngine({harmonic=true}={}){
+ const reader=harmonic?readEngine():null, block=1<<17, pages=[];
  const declared=new Set();
- function id(i,n,label){if(!Number.isSafeInteger(i)||i<0||i>=n)throw Error("invalid "+label+" "+i)}
- function name(i){id(i,nameNext,"name")}
- function lev(i){id(i,levelNext,"level")}
- function ex(i){id(i,r.summary().expressions,"expr")}
- function d(m){name(m.name);if(declared.has(m.name))throw Error("duplicate declaration");declared.add(m.name);m.levelParams.forEach(name);ex(m.type);if(Object.hasOwn(m,"value"))ex(m.value);for(const a of m.all||[])name(a);for(const a of m.ctors||[])name(a);if(Object.hasOwn(m,"induct"))name(m.induct);for(const a of m.rules||[]){name(a.ctor);ex(a.rhs)}}
+ let nameNext=1,levelNext=1,n=0,edges=0,open=0,maxDepth=0,rootChecks=0,nameRefs=0,levelRefs=0;
+ const id=(i,lim,label)=>{if(!Number.isSafeInteger(i)||i<0||i>=lim)throw Error("invalid "+label+" "+i);return i};
+ const name=i=>{nameRefs++;return id(i,nameNext,"name")};
+ const lev=i=>{levelRefs++;return id(i,levelNext,"level")};
+ function depth(i){id(i,n,"expression");return pages[Math.floor(i/block)][i%block]}
+ function child(i){edges++;return depth(i)}
+ function closed(i,label){rootChecks++;if(depth(i)!==0)throw Error("open "+label+" "+i)}
+ function d(m){
+  name(m.name);if(declared.has(m.name))throw Error("duplicate declaration");declared.add(m.name);
+  m.levelParams.forEach(name);closed(m.type,"declaration type");
+  if(Object.hasOwn(m,"value"))closed(m.value,"declaration value");
+  for(const a of m.all||[])name(a);for(const a of m.ctors||[])name(a);
+  if(Object.hasOwn(m,"induct"))name(m.induct);
+  for(const a of m.rules||[]){name(a.ctor);closed(a.rhs,"rule rhs")}
+ }
+ // Output notation is explicit de Bruijn context, not inferred ordinary algebra.
+ function equation(a){
+  const k=EXPR[a[2]],v=a[3],E=(i,C="C")=>"E"+i+"("+C+")";let rhs;
+  switch(k){
+   case "bvar":rhs="C["+v+"]";break;
+   case "sort":rhs="Sort(U"+v+")";break;
+   case "const":rhs="Const(N"+v[0]+",["+v[1].map(i=>"U"+i).join(",")+"])";break;
+   case "app":rhs="Apply("+E(v[0])+","+E(v[1])+")";break;
+   case "lam":case "forallE":rhs=(k==="lam"?"Lambda":"Pi")+"(N"+v[0]+","+v[3]+","+E(v[1])+", t => "+E(v[2],"push(t,C)")+")";break;
+   case "letE":rhs="Let(N"+v[0]+","+E(v[1])+","+E(v[2])+","+v[4]+", t => "+E(v[3],"push(t,C)")+")";break;
+   case "proj":rhs="Project(N"+v[0]+","+v[1]+","+E(v[2])+")";break;
+   case "mdata":rhs="Metadata("+JSON.stringify(v[1])+","+E(v[0])+")";break;
+   case "natVal":rhs="NatLiteral("+v+")";break;
+   case "strVal":rhs="StringLiteral("+JSON.stringify(v)+")";break;
+   default:throw Error("unknown expression");
+  }
+  return "E"+a[1]+"(C) [len(C)>="+depth(a[1])+"] := "+rhs;
+ }
+ function append(a,obj){
+  if(a[0]==="N"){if(a[1]!==nameNext)throw Error("name order");name(a[3][0]);nameNext++;return}
+  if(a[0]==="U"){if(a[1]!==levelNext)throw Error("level order");if(a[2]===3)name(a[3]);else if(a[2]===0)lev(a[3]);else a[3].forEach(lev);levelNext++;return}
+  if(a[0]==="D"){
+   const k=DECL[a[1]];
+   if(k==="inductive")for(const g of [obj.inductive.types,obj.inductive.ctors,obj.inductive.recs])g.forEach(d);else d(obj[k]);
+   return;
+  }
+  if(a[0]!=="E")return;
+  if(a[1]!==n)throw Error("expression order");
+  const k=EXPR[a[2]],v=a[3];let need=0;
+  switch(k){
+   case "bvar":if(!Number.isSafeInteger(v)||v<0||v>=4294967295)throw Error("unsupported binder depth");need=v+1;break;
+   case "sort":lev(v);break;
+   case "const":name(v[0]);v[1].forEach(lev);break;
+   case "app":need=Math.max(child(v[0]),child(v[1]));break;
+   case "lam":case "forallE":name(v[0]);need=Math.max(child(v[1]),Math.max(0,child(v[2])-1));break;
+   case "letE":name(v[0]);need=Math.max(child(v[1]),child(v[2]),Math.max(0,child(v[3])-1));break;
+   case "proj":name(v[0]);need=child(v[2]);break;
+   case "mdata":need=child(v[0]);break;
+   case "natVal":case "strVal":break;
+   default:throw Error("unknown expression");
+  }
+  if(n%block===0)pages.push(new Uint32Array(block));pages[Math.floor(n/block)][n%block]=need;
+  if(need>0)open++;maxDepth=Math.max(maxDepth,need);n++;
+  if(reader)reader.append(a);
+ }
+ function summary(){
+  const urt=reader?reader.summary():{expressions:n,expressionChildEdges:edges};
+  if(urt.expressions!==n||urt.expressionChildEdges!==edges)throw Error("scope/harmonic graph mismatch");
+  return {...urt,declared:declared.size,scope:{openExpressions:open,maxRequiredBinders:maxDepth,closedRootChecks:rootChecks,nameRefs,levelRefs,scopeBytes:pages.length*block*4},harmonic};
+ }
+ return {append,equation,depth,summary};
+}
+
+function checkRecords(records,{harmonic=true,emitEquations=false}={}){
+ const r=scopedEngine({harmonic}),counts={};let raw=0,compact=0,equations=[];
  for(const obj of records){
   scalarSafety(obj);const a=convert(obj);if(!equal(obj,restore(a)))throw Error("roundtrip");
   raw+=JSON.stringify(obj).length;compact+=JSON.stringify(a).length;
   counts[a[0]]=(counts[a[0]]||0)+1;
-  if(a[0]==="N"){if(a[1]!==nameNext)throw Error("name order");name(a[3][0]);nameNext++}
-  if(a[0]==="U"){if(a[1]!==levelNext)throw Error("level order");if(a[2]===3)name(a[3]);else if(a[2]===0)lev(a[3]);else a[3].forEach(lev);levelNext++}
-  if(a[0]==="E"){
-   const k=EXPR[a[2]],v=a[3];
-   if(k==="sort")lev(v);
-   if(k==="const"){name(v[0]);v[1].forEach(lev)}
-   if(["lam","forallE","letE","proj"].includes(k))name(v[0]);
-   r.append(a);
-  }
-  if(a[0]==="D"){const k=DECL[a[1]];if(k==="inductive"){for(const group of [obj.inductive.types,obj.inductive.ctors,obj.inductive.recs])group.forEach(d)}else d(obj[k]);}
+  r.append(a,obj);
+  if(emitEquations&&a[0]==="E")equations.push(r.equation(a));
  }
- return {counts,rawCharacters:raw,algebraCharacters:compact,declared:declared.size,...r.summary()};
+ return {counts,rawCharacters:raw,algebraCharacters:compact,...r.summary(),...(emitEquations?{equations}:{})};
+}
+
+function fusedSelftest(blocks){
+ let records=0,expressions=0,edges=0,declarations=0,closedRoots=0,open=0;
+ const exactEquationExamples=[];
+ for(const b of blocks){
+  const h=checkRecords(b,{harmonic:true,emitEquations:true}),plain=checkRecords(b,{harmonic:false,emitEquations:true});
+  if(!equal(h.equations,plain.equations)||!equal(h.scope,plain.scope)||h.declared!==plain.declared)throw Error("URT changed exact output");
+  records+=b.length;expressions+=h.expressions;edges+=h.expressionChildEdges;declarations+=h.declared;closedRoots+=h.scope.closedRootChecks;open+=h.scope.openExpressions;
+  if(exactEquationExamples.length<16)exactEquationExamples.push(...h.equations.slice(0,16-exactEquationExamples.length));
+ }
+ const bad=[
+  [{ie:0,bvar:0},{in:1,str:{pre:0,str:"bad"}},{thm:{name:1,levelParams:[],type:0,value:0,all:[1]}}],
+  [{ie:0,app:{fn:0,arg:0}}],
+  [{ie:0,sort:2}],
+  [{ie:0,const:{name:1,us:[]}}],
+  [{ie:0,bvar:4294967295}]
+ ];
+ let rejected=0;for(const b of bad){try{checkRecords(b)}catch(e){rejected++}}
+ if(rejected!==bad.length)throw Error("negative control accepted");
+ const N=100000, r=scopedEngine(),p=scopedEngine({harmonic:false});
+ for(let i=0;i<N;i++){
+  const obj=i?{ie:i,app:{fn:i-1,arg:i-1}}:{ie:0,bvar:0},a=convert(obj);
+  r.append(a,obj);p.append(a,obj);
+  if(r.depth(i)!==1||r.equation(a)!==p.equation(a))throw Error("shared graph mismatch");
+ }
+ const h=r.summary(),plain=p.summary();if(h.expressionChildEdges!==2*(N-1)||!equal(h.scope,plain.scope))throw Error("shared graph counts");
+ return {fixtureBlocks:blocks.length,records,expressions,edges,declarations,closedRoots,open,negativeControls:rejected,large:{expressions:N,edges:h.expressionChildEdges,scopeBytes:h.scope.scopeBytes,scoreBytes:h.scoreBytes,exactEquationsCompared:N,expandedTreeNodes:"2^100000-1 (not expanded)"},exactEquationExamples,conclusion:"same exact scoped algebra with or without URT; one pass, no recursive expansion; URT advantage not established"};
 }
 
 
@@ -114,13 +202,15 @@ import readline from 'node:readline';
 const HASH='bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9';
 const BYTES=350862311;
 const args=process.argv.slice(2);
-if(args[0]==='fixtures'){
+if(args[0]==='fused-selftest'){
+ console.log(JSON.stringify(fusedSelftest(JSON.parse(fs.readFileSync(args[1],'utf8'))),null,2));
+}else if(args[0]==='fixtures'){
  const b=JSON.parse(fs.readFileSync(args[1],'utf8'));
- console.log(JSON.stringify(b.map(checkRecords),null,2));
+ console.log(JSON.stringify(b.map(x=>checkRecords(x)),null,2));
 }else{
  const i=args.indexOf('--out');if(i<0||!args[i+1])throw Error('missing --out');
  const out=path.resolve(args[i+1]);fs.mkdirSync(out,{recursive:true});
- const reader=readEngine(),counts={},sha=crypto.createHash('sha256'),algebraSha=crypto.createHash('sha256');
+ const reader=scopedEngine({harmonic:!args.includes('--no-urt')}),counts={},sha=crypto.createHash('sha256'),algebraSha=crypto.createHash('sha256');
  const child=spawn('bash',['-o','pipefail','-c','curl --fail --location --silent --show-error "$1" | zstd -dc --long=30','rh','https://math.mit.edu/~drew/grh/challenge.ndjson.zst'],{stdio:['ignore','pipe','inherit']});
  const end=once(child,'close');let bytes=0,raw=0,compact=0,lines=0,carry=Buffer.alloc(0),meta=null;
  // Optional artifact output is compressed on the fly; never store the raw archive.
@@ -133,7 +223,7 @@ if(args[0]==='fixtures'){
   if(!equal(obj,restore(a)))throw Error('roundtrip failed '+lines);
   if(lines===0){meta=obj.meta;if(meta?.format?.version!=='3.1.0')throw Error('format mismatch')}
   else if(a[0]==='M')throw Error('unexpected metadata');
-  if(a[0]==='E')reader.append(a);
+  reader.append(a,obj);
   const s=JSON.stringify(a)+'\n';
   counts[a[0]]=(counts[a[0]]||0)+1;lines++;raw+=b.length+1;compact+=Buffer.byteLength(s);algebraSha.update(s);
   pending.push(s);len+=s.length;if(len>=1048576)await flush();
@@ -149,7 +239,7 @@ if(args[0]==='fixtures'){
   const [code]=await end;if(code!==0)throw Error('download or decompress failed');
   if(bytes!==BYTES||sha.digest('hex')!==HASH)throw Error('challenge checksum/length mismatch');
   await flush();z.stdin.end();const [zc]=await zEnd;if(zc!==0)throw Error('algebra compression failed');
-  const summary={status:'LOSSLESS_EXPORT_RECORD_ALGEBRA_NOT_KERNEL_CHECK',archive:'challenge.ndjson.zst',inputSha256:HASH,algebraSha256:algebraSha.digest('hex'),bytes,algebraUncompressedBytes:compact,records:lines,counts,meta,...reader.summary(),maxRssKiB:process.resourceUsage().maxRSS,limits:['challenge only, not the solution archive','roundtrip semantic JSON equality, not raw byte equality','constructor-level URT score not injective and not a proof check','expression references topologically checked; not independent declaration/type checking','scores held in chunked memory; full-scale disk-backed reader not yet executed']};
+  const summary={status:'LOSSLESS_SCOPED_EXPORT_RECORD_ALGEBRA_NOT_KERNEL_CHECK',archive:'challenge.ndjson.zst',inputSha256:HASH,algebraSha256:algebraSha.digest('hex'),bytes,algebraUncompressedBytes:compact,records:lines,counts,meta,...reader.summary(),maxRssKiB:process.resourceUsage().maxRSS,limits:['challenge only, not the solution archive','roundtrip semantic JSON equality, not raw byte equality','constructor-level URT score not injective and not a proof check','expression/name/universe reference ordering, declaration roots and binder closure checked in the streaming pass; not independent kernel type checking','scores held in chunked memory; full-scale disk-backed reader not yet executed']};
   fs.writeFileSync(path.join(out,'summary.json'),JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));
  }catch(e){child.kill();z.kill();throw e}
 }
