@@ -3,12 +3,21 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-24 — Gravity/fluids bot — H64 Markov theorem and golden-clock probability obstruction
+- Task: Determine whether the already-declared native history/clock operators supply a probability-preserving generator and genuine relative-entropy law.
+- Result: THEOREM plus THERMODYNAMIC OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: -Hbits is exactly the reversible pair-flip Markov generator on two irreducible 32-history parity components, with spectrum 0(2),10(12),16(30),18(20), and contracts relative entropy to the parity-uniform law. The original charge-two 24-clock has gauge-invariant holonomy exp(2pi i 48/phi²) != 1, so the full H64/24 semigroup is a complex amplitude contraction, not a stochastic evolution.
+- Measured obstruction: at t=0.1 a native clock delta evolves with imaginary norm 0.1453588214, minimum real part -0.00676494665, and total sum 0.7836552139; tensoring the valid history chain leaves the same mass failure.
+- Evidence: `research.native_h64_clock_markov_obstruction`; standalone original-operator preflight exit 0; CI pending.
+- Dead ends: The quadratic H64/24 energy gap cannot be relabelled KMS relative entropy. A diagonal gauge cannot remove the nontrivial cycle holonomy, and the existing 8-state KMS occupations are not the stationary distribution of the 64-history chain.
+- Next: audit the original hidden transfer T=P3+Delta²P5 and B=P3+Delta P5 for an already-declared trace-preserving channel; do not introduce a reset or Doob normalization merely to obtain entropy contraction.
+
 ### 2026-11-24 — Gravity/fluids bot — native H64 relaxation Lyapunov theorem
 - Task: Separate the already-declared positive H64 relaxation from reversible canonical flow and test whether it supplies a genuine entropy-production law.
 - Result: THEOREM plus THERMODYNAMIC OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
 - Statement: At fixed native 190-coordinate geometry/source, A=Hbits+r²L24^(2) is positive on all 1536 history modes with lambda_min=0.010228725137850388. The exact gap F=1/2<y-y_star,A(y-y_star)> obeys dF/dt=-||A(y-y_star)||² and F(t)<=exp(-0.020457450275700777 t)F(0). Across 30 mixed-vortex orientations the initial gap is [5.274856794e-7,5.285145738e-7] and the effective decay rate is [36.0203097958,36.0203097961].
 - Obstruction: The native KMS occupation entropy depends only on z and is exactly constant during fixed-z history relaxation. Thus the certificate proves irreversible H64 energy relaxation, not relative entropy, horizon thermodynamics, redshift, area entropy, or Lorentzian spin-2 response.
-- Evidence: `research.native_h64_relaxation_lyapunov`; standalone original-operator preflight exit 0; full-energy gap residual 1.21e-16; entropy change 0; CI pending.
+- Evidence: `research.native_h64_relaxation_lyapunov`; standalone original-operator preflight exit 0; full-energy gap residual 1.21e-16; entropy change 0; CI run 45330152281 PASS.
 - Dead ends: Relabelling the quadratic amplitude gap as entropy would invent a probability interpretation not present in the native construction.
 - Next: Search the existing transfer/KMS construction for an explicitly declared positive probability-preserving generator on the eight occupation states; if present, test KMS relative-entropy contractivity without fitting a rate.
 

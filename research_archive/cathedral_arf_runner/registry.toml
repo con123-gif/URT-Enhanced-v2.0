@@ -3226,3 +3226,12 @@ claim = "native"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-24_h64_relaxation_lyapunov/H64_RELAXATION_LYAPUNOV_CERT.py"
 timeout = 30
+
+# Native H64 Markov theorem and charge-two golden-clock stochastic obstruction
+[[check]]
+id = "research.native_h64_clock_markov_obstruction"
+stage = "research"
+claim = "native"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-24_h64_clock_markov_obstruction/H64_CLOCK_MARKOV_OBSTRUCTION_CERT.py"
+timeout = 30
