@@ -1,0 +1,104 @@
+# galois_rows RUN 3 validation log (real outputs, 2026-11-24 GMT)
+
+## 1. nice lean +leanprover/lean4:v4.33.1 RUN3_CmPrescribedCompletionSchema.lean; echo exit=$?
+'GrokCmPrescribed.solvDisj_of_cover' does not depend on any axioms
+'GrokCmPrescribed.fix_iff_mem_of_separating' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrokCmPrescribed.dec_eq_transport' depends on axioms: [propext]
+'GrokCmPrescribed.seg_len_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0
+sha256 5e9f705c710314b4bec161e5d251167a28d5a7b8ed078eeb5c83c35b08980e07
+
+## 2. python3 RUN3_replay_checks.py /workspace/rh_up
+OK  blob 788132cf src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletion.lean
+OK  text theorem exists_cm_solvDisj_dec_eq : ∀ (Ω : Type) [Field Ω] (E : Type) [Field E] [NumberFie
+OK  text (∀ g ∈ Dec (F := maximalRealSubfield E) A, ∀ x : E, g (algebraMap E Ω x) = algebraMap E Ω 
+OK  text SolvDisj M N ∧ ∀ g : Dec (F := E) A, (∀ x : M, (g : G E Ω) (algebraMap M Ω x) = algebraMap
+OK  text theorem resHom_injective : Function.Injective (resHom (F := F) (E := E) A)
+OK  text theorem resHom_surjective : Function.Surjective (resHom (F := F) (E := E) A)
+OK  text theorem commutator_le_map (V : Subgroup (Dec (F := E) A)) (hc : commutator (Dec (F := E) A
+OK  text GlobalTheory.T.exists_cmField_lift_disjoint_of_real_solvable Ω E v N hNo
+OK  text GlobalTheory.T.exists_abelian_totallyReal_ext_prescribedCompletion Ω (maximalRealSubfield 
+OK  text isSolvable_of_comm fun a b => hab.toIsMulCommutative.is_comm.comm a b
+OK  text rw [hM (g : G E Ω), ← mem_map_iff (F := maximalRealSubfield E) A V g, ← hdecF, Intermediat
+OK  blob 4c6f90f5 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionAbelianCompletionStatement.lean
+OK  text theorem _root_.GlobalTheory.T.exists_solvable_cm_extension_abelianCompletion
+OK  text first | exact @GlobalTheory.AboveL.exists_cm_solvDisj_dec_eq
+OK  blob 0e627042 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlace.lean
+OK  text theorem exists_cm_solvable_split : ∀ (Ω : Type) [Field Ω] (E : Type) [Field E] [NumberFiel
+OK  text SolvDisj M N ∧ (∀ g ∈ Dec (F := E) A, ∀ x : M, g (algebraMap M Ω x) = algebraMap M Ω x) ∧ 
+OK  text theorem mem_dec_congr {K K' Ω : Type}
+OK  text asIdeal := w.asIdeal.comap (algebraMap (𝓞 F) (𝓞 E))
+OK  text let V : Subgroup (Dec (F := F) A) := K.fixingSubgroup.subgroupOf (Dec (F := F) A)
+OK  text rw [IsGalois.card_aut_eq_finrank, Algebra.IsQuadraticExtension.finrank_eq_two F E]; exact 
+OK  text have hcomm : commutator (Dec (F := F) A) ≤ V := by
+OK  text GlobalTheory.T.exists_abelian_totallyReal_ext_prescribedCompletion Ω F A v hv V hVo hcomm 
+OK  text obtain ⟨T, hvT, hlift⟩ := GlobalTheory.T.exists_cmField_lift_disjoint_of_real_solvable Ω E
+OK  blob 4d9e0009 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsSolvableCmExtensionSplitPlaceStatement.lean
+OK  text theorem _root_.GlobalTheory.T.exists_solvable_cm_extension_split_place
+OK  text first | exact @GlobalTheory.AboveL.exists_cm_solvable_split
+OK  blob 5303f735 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsCmFieldLiftDisjointOfRealSolvable.lean
+OK  text theorem GlobalTheory.KLift.exists_cm_lift :
+OK  text ∃ T : Finset (HeightOneSpectrum (𝓞 (maximalRealSubfield E))), v ∉ T ∧ ∀ F₁ : IntermediateF
+OK  text (∀ g : G E Ω, (∀ x : M, g (algebraMap M Ω x) = algebraMap M Ω x) ↔ ∀ z ∈ F₁, g z = z) ∧ ∀ 
+OK  text GlobalTheory.T.finite_decompositionGroups_cover_openQuotient Ω (maximalRealSubfield E) v
+OK  text let M : IntermediateField E Ω := IntermediateField.adjoin E (F₁ : Set Ω)
+OK  text (GlobalTheory.T.cm_subfields_compositum_closed Ω E).2.2 M (F₁ : Set Ω)
+OK  text exact solvable_of_solvable_injective hinj
+OK  text hT (AlgEquiv.restrictScalarsHom (maximalRealSubfield E) g)
+OK  blob 7e93ec1f src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsCmFieldLiftDisjointOfRealSolvableStatement.lean
+OK  text first | exact @GlobalTheory.KLift.exists_cm_lift
+OK  blob 74824e74 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsAbelianTotallyRealExtPrescribedCompletion.lean
+OK  text theorem loc_char :
+OK  text theorem gal_char :
+OK  text theorem one_char (Ω : Type)
+OK  text theorem exists_abelian_real_field :
+OK  text ∃ F₁ : IntermediateField F Ω, FiniteDimensional F F₁ ∧ IsAbelianGalois F F₁ ∧ (∀ φ : F₁ →+
+OK  text obtain ⟨art, ha⟩ := GlobalTheory.globalArtinReciprocity_holds F Ω
+OK  text obtain ⟨a, haL⟩ := GlobalTheory.localArtinExists_holds F Ω A v h
+OK  text GlobalTheory.DelEps.Twist.exists_hchar_prescribed F (insert v T)
+OK  text obtain ⟨τ, hτ⟩ := GlobalTheory.ConjWD.exists_weil_eq_on (h := h) g.2 L
+OK  text GlobalTheory.HilbertFromArtin.art_sign_eq ha j c hc
+OK  text rw [ha.dec u A' hA']
+OK  text CommGroup.exists_apply_ne_one_of_hasEnoughRootsOfUnity (Dec (F := F) A ⧸ V) ℂ hq
+OK  text obtain ⟨L, hLf, hLa, hL⟩ := GlobalTheory.RayFromArtin.exists_field φ ho
+OK  blob 0c35a56c src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsAbelianTotallyRealExtPrescribedCompletionStatement.lean
+OK  text first | exact @GlobalTheory.AbStep.exists_abelian_real_field
+OK  blob 840f45a0 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteDecompositionGroupsCoverOpenQuotient.lean
+OK  text ∃ T : Finset (HeightOneSpectrum (𝓞 F)), v ∉ T ∧ ∀ g : G F Ω, ∃ u ∈ T, ∃ A' : ValuationSubr
+OK  text GlobalTheory.Published.cheb_holds F Ω U.toSubgroup U.isOpen U.isNormal' g {v}
+OK  text isCompact_univ.elim_finite_subcover
+OK  blob 0a81780d src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteDecompositionGroupsCoverOpenQuotientStatement.lean
+OK  text first | exact @GlobalTheory.DecCover.main
+OK  blob c385108b src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/CmSubfieldsCompositumClosedStatement.lean
+OK  text ∀ (M : IntermediateField E Ω) [NumberField M] (S : Set Ω), (∀ x ∈ S, ∀ φ : Ω →+* ℂ, (φ x).
+OK  blob 649f9a3d src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHcharPrescribedTrivial.lean
+OK  text theorem exists_hchar_prescribed (k : Type) [Field k] [NumberField k] (S : Finset (HeightOn
+OK  text ∃ η : HChar k, (∃ n : ℕ, 0 < n ∧ η.OrderDvd n) ∧ (∀ u : InfinitePlace k, η.locInf u = 1) ∧
+OK  text obtain ⟨T, hST, hT⟩ := GlobalTheory.ChevalleySUnits.exists_places k S m hm0
+OK  text GlobalTheory.exists_unitary_char_of_open_subgroup_and_hom (Ideles k)
+OK  text have hxz : x = Units.mk0 z hz0 ^ m
+OK  blob 5ee15c31 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/LocalComponentsOfSmoothCharacters.lean
+OK  text theorem hasSat_of_unlinked_unr : UpperTheory.Gal.ToralGalois.Inq → ∀ (E : Type) [Field E] 
+OK  text (∀ j (x : (w.adicCompletion E)ˣ), Valued.v (x : w.adicCompletion E) = 1 → ξ j x = 1) →
+OK  text ∀ ϖ : (w.adicCompletion E)ˣ, Valued.v (ϖ : w.adicCompletion E) = WithZero.exp (-1 : ℤ) →
+OK  text (CG.mk π).HasSat w (Finset.univ.val.map fun j => ξ j ϖ)
+OK  text obtain ⟨t, hU⟩ := exists_isUnitarisable_twist hn π w σ hσ
+OK  text have hg : IsGeneric σ.ρ := Generic.isGeneric_of_isLocComp E n π w σ hσ
+OK  text rw [hc, TwistSupp.unlinked_map_nu]
+OK  text equiv_prodIrr_chars hI.gen _ (isSmooth_twist σ.smooth hχ.detChar)
+OK  text theorem equiv_prodIrr_chars (hGU : GlobalTheory.Published.GenericUnitaryDualGL)
+OK  text obtain ⟨h, δ, Δ, s, hL, -, -, hd, ⟨φ⟩⟩ := hGU.exists_prod hs hi hu hg
+OK  text GlobalTheory.geometricLemma_of_filtration GlobalTheory.Laid.bzfin_holds GlobalTheory.geome
+OK  text GlobalTheory.CompanionTheory.Hypotheses₂.TD.hasSupport_unique hG GlobalTheory.Laid.bzfin_h
+OK  text exact hun _ h1 _ h0 rfl
+OK  text theorem hasSatGL_of_equiv_prodIrr
+OK  text GlobalTheory.GenSph.isSpherical_prodIrr_uc (fun i => ζ i ϖ) hd'
+OK  text GlobalTheory.LFun.SatCompare.hasSatGL_of_hasSatakeGL
+OK  text obtain ⟨π₀, t, hu, he⟩ := CG.exists_isUnitary_twist_absPow (CG.mk π) ha
+OK  text GlobalTheory.ResW.isUnitarisable_of_isLocComp_cusp E a π₀ ha ((CG.isUnitary_mk π₀).1 hu) w
+OK  text exact GlobalTheory.HeightCounting.Blocks.hasSatGL_locRep hσ hS
+OK  text first | (exact @GlobalTheory.SphUnr.hasSat_of_unlinked_unr)
+OK  blob a57bfc29 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/ToralDeRham/FrobeniusCharpolyEqSatakeOfPlaceAbove.lean
+OK  text GlobalTheory.SphUnr.hasSat_of_unlinked_unr hI M n hn P u T hT (fun j => (ξ0 j).comp (Globa
+checks ok=91 bad=0
+exit=0
