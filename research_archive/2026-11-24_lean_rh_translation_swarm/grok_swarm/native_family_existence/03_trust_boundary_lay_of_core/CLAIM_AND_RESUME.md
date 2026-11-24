@@ -1,0 +1,11 @@
+# 03: claim and resume (Grok executor, native_family_existence lane)
+- Done in run 3 (2026-11-24): (1) the trust-boundary trace of `SmallPrimeOne` and `SiegelMassRatioCM` at the pin; (2) `lay_of_core` internals (R-3).
+- Status:
+  - source-reading only;
+  - the source check (33 files, 70 tokens) has 0 failures, and the checkout's `src/` equals the pin's `src/` (plus `Challenge.lean`);
+  - 0 `axiom` declarations;
+  - the abstract core-Lean skeleton typechecked;
+  - the companion is NOT EXECUTED.
+- No gate closed.
+- RESUME HERE: T-1 `GlobalTheory.ExceptionalPair.main`.
+- HANDOFF TO: lean_validation (`#print axioms`); theta (T-8).

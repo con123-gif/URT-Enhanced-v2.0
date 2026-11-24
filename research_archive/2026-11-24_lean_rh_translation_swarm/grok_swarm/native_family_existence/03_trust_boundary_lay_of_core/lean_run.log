@@ -1,0 +1,6 @@
+# 2026-11-24 09:46 GMT  Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+# cmd: OMP_NUM_THREADS=1 nice lean LayOfCoreMechanismAbstract.lean
+'NFE3.exps_distinct' depends on axioms: [propext, Quot.sound]
+'NFE3.prime_to_part_bound' depends on axioms: [propext, Quot.sound]
+exit=0
+sha256 f59aaa4dbbeba325dbe20d924a7c706322773ff5061f1ff5508b2509beaabe4c  LayOfCoreMechanismAbstract.lean
