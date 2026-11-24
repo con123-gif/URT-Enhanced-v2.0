@@ -1,0 +1,181 @@
+# 2026-11-24 10:18 GMT cmd: OMP_NUM_THREADS=1 python3 build_closure.py Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DirichletLZerosEqPrimitiveCharacterZerosStatement Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsDirichletLFunctionZeroGapNearOneStatement Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsLeNormLFunctionOne Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsNormDerivLFunctionLe Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LFunctionConjEqZero Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegReLogDerivPrincipalLFunctionLe Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormOneSubConjMul Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OrderNeTop Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ZeroFreePrincipal  Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsFactorOrder Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormSubOneMulRiemannZetaLe Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TsumOneDivRpowLe Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableAtMellinSummatory Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LFunctionEqTsumOfOneLt
+# modules to build: 29
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TsumOneDivRpowLe (19s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableAtMellinSummatory (19s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtMellinSummatory.lean:59:14: warning: `MeasureTheory.setIntegral_eq_of_subset_of_forall_diff_eq_zero` has been deprecated: Use `MeasureTheory.setIntegral_eq_of_subset_of_forall_sdiff_eq_zero` instead
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LFunctionEqTsumOfOneLt (20s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsFactorOrder (11s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ZetaEqSubIntegralFract (10s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormSubOneMulRiemannZetaLe (13s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegSumLogDerivNonneg (10s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivativeBound (11s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsLeNormLFunctionOne (9s)
+ok   Formalism.LandauZeroFreeBounds.Statement (7s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsNormDerivLFunctionLe (9s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableAtFractInt (6s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtFractInt.lean:88:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtFractInt.lean:89:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtFractInt.lean:90:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtFractInt.lean:87:81: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtFractInt.lean:88:4: warning: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.ZetaFractionalIntegral.zeta_eq_sub_integral_fract <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtFractInt.lean:89:4: warning: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.ZetaFractionalIntegral.zeta_eq_sub_integral_fract <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtFractInt.lean:90:4: warning: Unused tactic linter: `(intros;
+  exact _root_.GlobalTheory.ZetaFractionalIntegral.zeta_eq_sub_integral_fract ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormOneSubConjMul (12s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormOneSubConjMul.lean:15:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormOneSubConjMul.lean:16:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormOneSubConjMul.lean:17:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormOneSubConjMul.lean:15:4: warning: Unused tactic linter: `(intros;
+  apply _root_.GlobalTheory.FactorOrderExistence.exists_factor_order <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormOneSubConjMul.lean:16:4: warning: Unused tactic linter: `(intros;
+  apply @_root_.GlobalTheory.FactorOrderExistence.exists_factor_order <;>
+    first
+    | assumption
+    | infer_instance)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormOneSubConjMul.lean:17:4: warning: Unused tactic linter: `(intros; exact _root_.GlobalTheory.FactorOrderExistence.exists_factor_order ..)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ok   Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula (6s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivRiemannZetaLocalZeroSum (10s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivDirichletLFunctionLocalZeroSum (11s)
+ok   Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions (9s)
+ok   Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ZerosDisc (9s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivDirichletLFunctionLocalZeroSumStatement (10s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivDirichletLFunctionLocalZeroSumStatement.lean:7:64: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivDirichletLFunctionLocalZeroSumStatement.lean:7:117: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivDirichletLFunctionLocalZeroSumStatement.lean:7:64: warning: Unused tactic linter: `exact GlobalTheory.LLocal.logDeriv_LFunction_local` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivDirichletLFunctionLocalZeroSumStatement.lean:7:117: warning: Unused tactic linter: `(intros; apply GlobalTheory.LLocal.logDeriv_LFunction_local <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivRiemannZetaLocalZeroSumStatement (10s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivRiemannZetaLocalZeroSumStatement.lean:7:69: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivRiemannZetaLocalZeroSumStatement.lean:7:127: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivRiemannZetaLocalZeroSumStatement.lean:7:69: warning: Unused tactic linter: `exact GlobalTheory.ZetaLocal.logDeriv_riemannZeta_local` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivRiemannZetaLocalZeroSumStatement.lean:7:127: warning: Unused tactic linter: `(intros; apply GlobalTheory.ZetaLocal.logDeriv_riemannZeta_local <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DirichletLZerosEqPrimitiveCharacterZeros (16s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZeros.lean:17:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZeros.lean:52:6: warning: `Differentiable.finset_prod` has been deprecated: Use `Differentiable.finsetProd` instead
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegReLogDerivPrincipalLFunctionLe (16s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ZeroFreePrincipal (29s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ZeroFreePrincipal.lean:135:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ZeroFreePrincipal.lean:260:17: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DirichletLZerosEqPrimitiveCharacterZerosStatement (15s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZerosStatement.lean:9:70: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZerosStatement.lean:9:129: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZerosStatement.lean:9:70: warning: Unused tactic linter: `exact GlobalTheory.Lin.zeros_eq_zeros_primitiveCharacter` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZerosStatement.lean:9:129: warning: Unused tactic linter: `(intros; apply GlobalTheory.Lin.zeros_eq_zeros_primitiveCharacter <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegReLogDerivPrincipalLFunctionLeStatement (14s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NegReLogDerivPrincipalLFunctionLeStatement.lean:7:69: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NegReLogDerivPrincipalLFunctionLeStatement.lean:7:127: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NegReLogDerivPrincipalLFunctionLeStatement.lean:7:69: warning: Unused tactic linter: `exact GlobalTheory.PrincipalLogDeriv.neg_re_logDeriv_le` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NegReLogDerivPrincipalLFunctionLeStatement.lean:7:127: warning: Unused tactic linter: `(intros; apply GlobalTheory.PrincipalLogDeriv.neg_re_logDeriv_le <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LFunctionConjEqZero (19s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OrderNeTop (21s)
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsDirichletLFunctionZeroGapNearOne (17s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOne.lean:43:72: warning: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOne.lean:86:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOne.lean:93:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ok   Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsDirichletLFunctionZeroGapNearOneStatement (15s)
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOneStatement.lean:9:58: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOneStatement.lean:9:105: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOneStatement.lean:9:58: warning: Unused tactic linter: `exact GlobalTheory.ZeroGapNearOne.exists_gap` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/workspace/rh_orig/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOneStatement.lean:9:105: warning: Unused tactic linter: `(intros; apply GlobalTheory.ZeroGapNearOne.exists_gap <;> assumption)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+# built=29 failed=0
+exit=0

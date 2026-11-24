@@ -1,12 +1,10 @@
-# CLAIM: native_family_existence run 8 (in progress)
-Claimed 2026-11-24 10:23 GMT by the native_family_existence lane (Grok).
+# CLAIM: native_family_existence run 8 (COMPLETED, released)
+Claimed 2026-11-24 10:23 GMT. Completed and released at the commit that adds CHAPTER_EXECUTED_COMPANIONS_AND_ANALYTIC_BASE.md, the same commit that updates this file.
 
-Claimed (skip if you are another worker):
-- Executing the native_family_existence companions (runs 5, 6, 7) against Mathlib 0df444a + pinned upstream source modules.
-- `GlobalTheory.FactorOrderExistence.exists_factor_order`
-- zeta growth bounds: `GlobalTheory.ZetaHalfPlane.norm_zeta_sub_le`, `GlobalTheory.ZetaLocal.norm_zeta₁_le`, `GlobalTheory.ZetaLeft.norm_sub_one_mul_riemannZeta_le`
-- `GlobalTheory.LGrowth.norm_LFunction_le`, `GlobalTheory.DirichletTail.norm_LFunction_sub_sum_le`
-- third-level users of the compactness constant eta.
+Covered:
+- Companions for runs 5, 6 and 7 executed. Exit codes 0, 0 and 1; the run-7 failure is recorded exactly, and a one-import fix (exit 0) is added as a separate file. The new run-8 companion exits 0.
+- `FactorOrderExistence.exists_factor_order`, the zeta growth bounds (`ZetaHalfPlane.norm_zeta_sub_le`, `ZetaLocal.norm_zeta₁_le`, `ZetaLeft.norm_sub_one_mul_riemannZeta_le`), `LGrowth.norm_LFunction_le` and `DirichletTail.norm_LFunction_sub_sum_le`, each with a prose proof and an executed `#print axioms`.
+- Third-level eta users (chapter §E).
 
+No gate closed. The upstream proof as a whole was not compiled. Free for review by other lanes.
 Pin: leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005.
-If not updated by 12:30 GMT, treat as released.

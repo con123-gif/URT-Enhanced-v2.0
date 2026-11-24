@@ -1,0 +1,226 @@
+# 2026-11-24 10:25 GMT cmd: ./run_companions.sh comp/RH_LandauPageCompanion.lean comp/RH_ZeroFreeCompanion.lean comp/RH_Run7Companion.lean comp/RH_Run8Companion.lean comp/RH_Run7Companion_fixed.lean   (first four = files exactly as committed in 05_/06_/07_ plus new 08_ companion; last = run-8 one-import fix)
+=== RH_LandauPageCompanion.lean  sha256=f9483a27ebfe2e5f  start 10:25:21 GMT
+GlobalTheory.RealZeroNearOne.exists_bound : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+      χ ≠ 1 →
+        ∀ (σ : ℝ),
+          1 < σ →
+            σ ≤ 2 →
+              ∀ (T : Finset ℝ),
+                (∀ β ∈ T, 2 / 3 ≤ β ∧ LFunction χ ↑β = 0) →
+                  -(deriv (LFunction χ) ↑σ / LFunction χ ↑σ).re ≤
+                    C * Real.log (2 * ↑q) - ∑ β ∈ T, ↑(analyticOrderNatAt (LFunction χ) ↑β) / (σ - β)
+GlobalTheory.TwoRealCharacters.neg_sum_logDeriv_nonneg : ∀ (q : ℕ) [inst : NeZero q] (χ ψ : DirichletCharacter ℂ q)
+  (σ : ℝ),
+  χ ^ 2 = 1 →
+    ψ ^ 2 = 1 →
+      1 < σ →
+        0 ≤
+          -((deriv (LFunction 1) ↑σ / LFunction 1 ↑σ).re + (deriv (LFunction χ) ↑σ / LFunction χ ↑σ).re +
+                (deriv (LFunction ψ) ↑σ / LFunction ψ ↑σ).re +
+              (deriv (LFunction (χ * ψ)) ↑σ / LFunction (χ * ψ) ↑σ).re)
+GlobalTheory.T.neg_re_logDeriv_principalLFunction_le : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (σ t : ℝ),
+      1 < σ →
+        σ ≤ 2 →
+          -(deriv (LFunction 1) (↑σ + ↑t * I) / LFunction 1 (↑σ + ↑t * I)).re ≤
+            (1 / (↑σ + ↑t * I - 1)).re + C * Real.log (↑q * (|t| + 2))
+GlobalTheory.T.logDeriv_dirichletLFunction_local_zero_sum : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+      χ ≠ 1 →
+        ∀ (t : ℝ) (s : ℂ),
+          ‖s - (3 / 2 + ↑t * I)‖ ≤ 2 / 3 →
+            LFunction χ s ≠ 0 →
+              {w | ‖w - (3 / 2 + ↑t * I)‖ ≤ 5 / 6 ∧ LFunction χ w = 0}.Finite ∧
+                ‖deriv (LFunction χ) s / LFunction χ s -
+                      ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w - (3 / 2 + ↑t * I)‖ ≤ 5 / 6 ∧ LFunction χ w = 0}),
+                        ↑(analyticOrderNatAt (LFunction χ) w) / (s - w)‖ ≤
+                  C * Real.log (↑q * (|t| + 2))
+GlobalTheory.LOneLower.exists_le_norm_LFunction_one : ∃ c,
+  0 < c ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q), χ ≠ 1 → χ ^ 2 = 1 → c / ↑q ^ (3 / 2) ≤ ‖LFunction χ 1‖
+GlobalTheory.DirichletDeriv.exists_norm_deriv_LFunction_le : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+      χ ≠ 1 → ∀ (σ : ℝ), 1 - 1 / Real.log (3 * ↑q) ≤ σ → σ ≤ 1 → ‖deriv (LFunction χ) ↑σ‖ ≤ C * Real.log (3 * ↑q) ^ 2
+'GlobalTheory.RealZeroNearOne.main' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.ZeroGapNearOne.exists_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+--- exit=0 RH_LandauPageCompanion.lean
+=== RH_ZeroFreeCompanion.lean  sha256=98597ed3b2a924e8  start 10:25:27 GMT
+GlobalTheory.ZeroFreeComplex.inv_le_log : ∃ K,
+  0 < K ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q) (δ γ : ℝ),
+      χ ≠ 1 →
+        LFunction χ (↑(1 - δ) + ↑γ * I) = 0 →
+          χ ^ 2 ≠ 1 ∨ γ ≠ 0 → 0 < δ → δ ≤ 1 / 21 → 1 / δ ≤ K * Real.log (↑q * (|γ| + 2))
+@GlobalTheory.ZeroFreeComplex.LFunction_conj_eq_zero : ∀ {d : ℕ} [inst : NeZero d] {χ : DirichletCharacter ℂ d},
+  χ ≠ 1 → χ ^ 2 = 1 → ∀ {s : ℂ}, LFunction χ s = 0 → LFunction χ ((starRingEnd ℂ) s) = 0
+GlobalTheory.logDerivativeThreeFourOne.three_four_one : ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q)
+  (σ t : ℝ),
+  1 < σ →
+    0 ≤
+      -(3 * (deriv (LFunction 1) ↑σ / LFunction 1 ↑σ).re +
+            4 * (deriv (LFunction χ) (↑σ + ↑t * I) / LFunction χ (↑σ + ↑t * I)).re +
+          (deriv (LFunction (χ ^ 2)) (↑σ + 2 * ↑t * I) / LFunction (χ ^ 2) (↑σ + 2 * ↑t * I)).re)
+GlobalTheory.ZetaLocal.logDeriv_riemannZeta_local : ∃ C,
+  0 < C ∧
+    ∀ (t : ℝ) (s : ℂ),
+      ‖s - (3 / 2 + ↑t * I)‖ ≤ 2 / 3 →
+        s ≠ 1 →
+          riemannZeta s ≠ 0 →
+            {w | ‖w - (3 / 2 + ↑t * I)‖ ≤ 5 / 6 ∧ w ≠ 1 ∧ riemannZeta w = 0}.Finite ∧
+              ‖deriv riemannZeta s / riemannZeta s + 1 / (s - 1) -
+                    ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w - (3 / 2 + ↑t * I)‖ ≤ 5 / 6 ∧ w ≠ 1 ∧ riemannZeta w = 0}),
+                      ↑(analyticOrderNatAt riemannZeta w) / (s - w)‖ ≤
+                C * Real.log (|t| + 2)
+'GlobalTheory.ZeroFreeComplex.zero_free_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.ZeroFreePrincipal.zero_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.Lin.zeros_eq_zeros_primitiveCharacter' depends on axioms: [propext, Classical.choice, Quot.sound]
+--- exit=0 RH_ZeroFreeCompanion.lean
+=== RH_Run7Companion.lean  sha256=65986cf73642bc58  start 10:25:33 GMT
+GlobalTheory.LogDerivZeros.main : ∀ (r R : ℝ),
+  0 < r →
+    r < R →
+      R < 1 →
+        ∃ C,
+          0 < C ∧
+            ∀ (f : ℂ → ℂ) (M : ℝ),
+              AnalyticOnNhd ℂ f (Metric.closedBall 0 1) →
+                f 0 ≠ 0 →
+                  (∀ z ∈ Metric.closedBall 0 1, ‖f z‖ ≤ M) →
+                    ({w | ‖w‖ ≤ R ∧ f w = 0}.Finite ∧
+                        ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w‖ ≤ R ∧ f w = 0}), ↑(analyticOrderNatAt f w) ≤
+                          C * (1 + Real.log (M / ‖f 0‖))) ∧
+                      ∀ (z : ℂ),
+                        ‖z‖ ≤ r →
+                          f z ≠ 0 →
+                            ‖deriv f z / f z -
+                                  ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w‖ ≤ R ∧ f w = 0}), ↑(analyticOrderNatAt f w) / (z - w)‖ ≤
+                              C * (1 + Real.log (M / ‖f 0‖))
+comp/RH_Run7Companion.lean:16:8: error(lean.unknownIdentifier): Unknown identifier `GlobalTheory.LLocal.logDeriv_LFunction_local`
+GlobalTheory.ZetaLocal.logDeriv_riemannZeta_local : ∃ C,
+  0 < C ∧
+    ∀ (t : ℝ) (s : ℂ),
+      ‖s - (3 / 2 + ↑t * Complex.I)‖ ≤ 2 / 3 →
+        s ≠ 1 →
+          riemannZeta s ≠ 0 →
+            {w | ‖w - (3 / 2 + ↑t * Complex.I)‖ ≤ 5 / 6 ∧ w ≠ 1 ∧ riemannZeta w = 0}.Finite ∧
+              ‖deriv riemannZeta s / riemannZeta s + 1 / (s - 1) -
+                    ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w - (3 / 2 + ↑t * Complex.I)‖ ≤ 5 / 6 ∧ w ≠ 1 ∧ riemannZeta w = 0}),
+                      ↑(analyticOrderNatAt riemannZeta w) / (s - w)‖ ≤
+                C * Real.log (|t| + 2)
+GlobalTheory.PrincipalLogDeriv.neg_re_logDeriv_le : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (σ t : ℝ),
+      1 < σ →
+        σ ≤ 2 →
+          -(deriv (DirichletCharacter.LFunction 1) (↑σ + ↑t * Complex.I) /
+                  DirichletCharacter.LFunction 1 (↑σ + ↑t * Complex.I)).re ≤
+            (1 / (↑σ + ↑t * Complex.I - 1)).re + C * Real.log (↑q * (|t| + 2))
+@GlobalTheory.DirichletDeriv.norm_LFunction_le : ∀ {q : ℕ} [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+  χ ≠ 1 →
+    ∀ {s : ℂ},
+      1 - 2 / Real.log (3 * ↑q) ≤ s.re →
+        1 / 20 ≤ s.re → ‖s‖ ≤ 2 → ‖DirichletCharacter.LFunction χ s‖ ≤ 84 * Real.exp 2 * Real.log (3 * ↑q)
+GlobalTheory.DirichletDeriv.exists_norm_deriv_LFunction_le : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+      χ ≠ 1 →
+        ∀ (σ : ℝ),
+          1 - 1 / Real.log (3 * ↑q) ≤ σ →
+            σ ≤ 1 → ‖deriv (DirichletCharacter.LFunction χ) ↑σ‖ ≤ C * Real.log (3 * ↑q) ^ 2
+@GlobalTheory.LOneLower.inv_le_norm_LFunction_one : ∀ {q : ℕ} [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+  χ ≠ 1 → χ ^ 2 = 1 → 1 / (36 * ↑q) ≤ ‖DirichletCharacter.LFunction χ 1‖
+GlobalTheory.ZeroFreePrincipal.zero_free : ∃ c,
+  0 < c ∧
+    ∀ (q : ℕ) [inst : NeZero q] (s : ℂ),
+      s ≠ 1 → DirichletCharacter.LFunction 1 s = 0 → s.re < 1 - c / Real.log (↑q * (|s.im| + 2))
+'GlobalTheory.LOneLower.inv_le_norm_LFunction_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.DirichletDeriv.exists_norm_deriv_LFunction_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+--- exit=1 RH_Run7Companion.lean
+=== RH_Run8Companion.lean  sha256=e7e35105293ab533  start 10:25:38 GMT
+'GlobalTheory.FactorOrderExistence.exists_factor_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.ZetaHalfPlane.norm_zeta_sub_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.ZetaLocal.norm_zeta₁_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.ZetaLocal.logDeriv_riemannZeta_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.ZetaLeft.norm_sub_one_mul_riemannZeta_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.LLower.norm_LFunction_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.LGrowth.norm_LFunction_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.DirichletTail.norm_LFunction_sub_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+--- exit=0 RH_Run8Companion.lean
+=== RH_Run7Companion_fixed.lean  sha256=51866ee3005fcafa  start 10:25:42 GMT
+GlobalTheory.LogDerivZeros.main : ∀ (r R : ℝ),
+  0 < r →
+    r < R →
+      R < 1 →
+        ∃ C,
+          0 < C ∧
+            ∀ (f : ℂ → ℂ) (M : ℝ),
+              AnalyticOnNhd ℂ f (Metric.closedBall 0 1) →
+                f 0 ≠ 0 →
+                  (∀ z ∈ Metric.closedBall 0 1, ‖f z‖ ≤ M) →
+                    ({w | ‖w‖ ≤ R ∧ f w = 0}.Finite ∧
+                        ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w‖ ≤ R ∧ f w = 0}), ↑(analyticOrderNatAt f w) ≤
+                          C * (1 + Real.log (M / ‖f 0‖))) ∧
+                      ∀ (z : ℂ),
+                        ‖z‖ ≤ r →
+                          f z ≠ 0 →
+                            ‖deriv f z / f z -
+                                  ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w‖ ≤ R ∧ f w = 0}), ↑(analyticOrderNatAt f w) / (z - w)‖ ≤
+                              C * (1 + Real.log (M / ‖f 0‖))
+GlobalTheory.LLocal.logDeriv_LFunction_local : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+      χ ≠ 1 →
+        ∀ (t : ℝ) (s : ℂ),
+          ‖s - (3 / 2 + ↑t * Complex.I)‖ ≤ 2 / 3 →
+            DirichletCharacter.LFunction χ s ≠ 0 →
+              {w | ‖w - (3 / 2 + ↑t * Complex.I)‖ ≤ 5 / 6 ∧ DirichletCharacter.LFunction χ w = 0}.Finite ∧
+                ‖deriv (DirichletCharacter.LFunction χ) s / DirichletCharacter.LFunction χ s -
+                      ∑ᶠ (w : ℂ) (_ :
+                        w ∈ {w | ‖w - (3 / 2 + ↑t * Complex.I)‖ ≤ 5 / 6 ∧ DirichletCharacter.LFunction χ w = 0}),
+                        ↑(analyticOrderNatAt (DirichletCharacter.LFunction χ) w) / (s - w)‖ ≤
+                  C * Real.log (↑q * (|t| + 2))
+GlobalTheory.ZetaLocal.logDeriv_riemannZeta_local : ∃ C,
+  0 < C ∧
+    ∀ (t : ℝ) (s : ℂ),
+      ‖s - (3 / 2 + ↑t * Complex.I)‖ ≤ 2 / 3 →
+        s ≠ 1 →
+          riemannZeta s ≠ 0 →
+            {w | ‖w - (3 / 2 + ↑t * Complex.I)‖ ≤ 5 / 6 ∧ w ≠ 1 ∧ riemannZeta w = 0}.Finite ∧
+              ‖deriv riemannZeta s / riemannZeta s + 1 / (s - 1) -
+                    ∑ᶠ (w : ℂ) (_ : w ∈ {w | ‖w - (3 / 2 + ↑t * Complex.I)‖ ≤ 5 / 6 ∧ w ≠ 1 ∧ riemannZeta w = 0}),
+                      ↑(analyticOrderNatAt riemannZeta w) / (s - w)‖ ≤
+                C * Real.log (|t| + 2)
+GlobalTheory.PrincipalLogDeriv.neg_re_logDeriv_le : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (σ t : ℝ),
+      1 < σ →
+        σ ≤ 2 →
+          -(deriv (DirichletCharacter.LFunction 1) (↑σ + ↑t * Complex.I) /
+                  DirichletCharacter.LFunction 1 (↑σ + ↑t * Complex.I)).re ≤
+            (1 / (↑σ + ↑t * Complex.I - 1)).re + C * Real.log (↑q * (|t| + 2))
+@GlobalTheory.DirichletDeriv.norm_LFunction_le : ∀ {q : ℕ} [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+  χ ≠ 1 →
+    ∀ {s : ℂ},
+      1 - 2 / Real.log (3 * ↑q) ≤ s.re →
+        1 / 20 ≤ s.re → ‖s‖ ≤ 2 → ‖DirichletCharacter.LFunction χ s‖ ≤ 84 * Real.exp 2 * Real.log (3 * ↑q)
+GlobalTheory.DirichletDeriv.exists_norm_deriv_LFunction_le : ∃ C,
+  0 < C ∧
+    ∀ (q : ℕ) [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+      χ ≠ 1 →
+        ∀ (σ : ℝ),
+          1 - 1 / Real.log (3 * ↑q) ≤ σ →
+            σ ≤ 1 → ‖deriv (DirichletCharacter.LFunction χ) ↑σ‖ ≤ C * Real.log (3 * ↑q) ^ 2
+@GlobalTheory.LOneLower.inv_le_norm_LFunction_one : ∀ {q : ℕ} [inst : NeZero q] (χ : DirichletCharacter ℂ q),
+  χ ≠ 1 → χ ^ 2 = 1 → 1 / (36 * ↑q) ≤ ‖DirichletCharacter.LFunction χ 1‖
+GlobalTheory.ZeroFreePrincipal.zero_free : ∃ c,
+  0 < c ∧
+    ∀ (q : ℕ) [inst : NeZero q] (s : ℂ),
+      s ≠ 1 → DirichletCharacter.LFunction 1 s = 0 → s.re < 1 - c / Real.log (↑q * (|s.im| + 2))
+'GlobalTheory.LOneLower.inv_le_norm_LFunction_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.DirichletDeriv.exists_norm_deriv_LFunction_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+--- exit=0 RH_Run7Companion_fixed.lean
