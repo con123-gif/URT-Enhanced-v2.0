@@ -3253,3 +3253,11 @@ run = "python -u research_archive/2026-11-24_lean_rh_translation_swarm/specialis
 timeout_minutes = 240
 requested_by = "GPT"
 claim = "synthetic"
+
+[[job]]
+id = "rh-verified-export-stream-closure-20261124"
+question = "Can the checksum-pinned actual RH export be streamed without storing its 61.57 GB raw file, and its explicit expression/declaration reference closure for riemannHypothesis extracted after a real challenge-archive smoke test? Not a kernel recheck or complete human translation."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
