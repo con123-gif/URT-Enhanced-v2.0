@@ -1,0 +1,26 @@
+{
+  "pins": [
+    "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "343b1de38bbe4c5c66f1c1c0afd7c34e8645acdf"
+  ],
+  "complete": false,
+  "counts": [
+    {
+      "files": 44877,
+      "uniqueBlobs": 44877,
+      "bytes": 231467948,
+      "truncated": true
+    },
+    {
+      "files": 43850,
+      "uniqueBlobs": 43849,
+      "bytes": 875332317,
+      "truncated": true
+    }
+  ],
+  "observedReusableUniqueBlobs": 0,
+  "observedSamePathSameBlob": 0,
+  "observedSamePathChangedBlob": 11690,
+  "scope": "partial truncated Git metadata only; not an import or kernel graph; overlap lower bound; no full corpus benchmark",
+  "resume": "Use git ls-tree -r -z <pinned commit> -- src on networked host for full manifests; parse each blob SHA only once and resolve imports per revision."
+}
