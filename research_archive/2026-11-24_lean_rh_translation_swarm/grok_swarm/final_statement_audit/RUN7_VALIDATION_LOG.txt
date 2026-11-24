@@ -1,0 +1,95 @@
+final_statement_audit RUN7 validation log
+Run: 2026-11-24 10:38 GMT (Europe/London), box; nice + OMP_NUM_THREADS=1.
+Upstream: fresh clone of leanprover-community/riemann-hypothesis, HEAD 40e56bab026552e089d7afcfeff08d2defb9c005 (deleted after run).
+Blob ids: Main.lean dbd5db70bc11b35f18fa5751216ab335321e7bfc; Statements.lean 1cd1bce93344065936b2b392b23306254e0785ef; Supplements/Kernels/MainTheorems.lean 6a542d7ce969a791fd12ce575f587e6bc29044bf; Formalism/GammaFactorNonvanishing/RhOfRight.lean 3604637147a33e72248faddd775ea750e7846ead; CritLine.lean 95fa4da5c50119db164aa93944d106f22fdb576d
+Mathlib package: /workspace/rh_green_lean/.lake/packages/mathlib, git HEAD 0df444a360eaa60ab8c11dca51a86af692955474 (used read-only, prebuilt oleans); Mathlib/NumberTheory/LSeries/RiemannZeta.lean blob 3c92195fce20df7fda41cfd823b3266f83cf3070, def RiemannHypothesis at :185-186, root namespace.
+lake-manifest.json package revisions: upstream and local package set identical (diff of sorted (name,rev) lists: 1 unique line).
+
+=== companion compile ===
+Command: nice env OMP_NUM_THREADS=1 LEAN_PATH=<packages/*/.lake/build/lib/lean> lean +leanprover/lean4:v4.33.1 RUN7_FinalStatementCompanion.lean
+sha256 4e82b03c44eb23f2a4835e5e2add6e2118909daa47b00f629ea14f25e2dcbb37  RUN7_FinalStatementCompanion.lean
+RiemannHypothesis resolves to RiemannHypothesis, declared in module Mathlib.NumberTheory.LSeries.RiemannZeta
+riemannZeta resolves to riemannZeta, declared in module Mathlib.NumberTheory.LSeries.RiemannZeta
+def RiemannHypothesis : Prop :=
+∀ (s : ℂ), riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → s ≠ 1 → s.re = 1 / 2
+'Formalism.VW.rh_of_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Formalism.VW.rh_of_every' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m6.784s
+user	0m3.891s
+sys	0m2.623s
+exit=0
+
+=== source scans (rg over src/, pinned checkout) ===
+declarations named RiemannHypothesis / *.RiemannHypothesis (def|abbrev|theorem|lemma|structure|class|inductive|opaque|axiom|instance): 0
+src/Mathlib directory: absent; files starting with 'prelude': 0
+skipKernelTC|debug.skip in *.lean / lakefile: 0
+implemented_by|@[extern|ofReduceBool|native_decide|trustCompiler|unsafeCast|@[csimp: 0 hits (the broader pattern also matched names containing 'Kernel'/'replay'; inspected, only CutCptCopy.lean addDecl and OwnStruct.lean Kernel.isDefEq are meta-code)
+global (non-local/scoped) notation/macro/syntax/elab declarations: 26
+Formalism/EllipticTorsion/EllipticTorsionProofs/Change.lean:66:macro "change_aux_intm" : tactic => `(tactic| (repeat (first
+Formalism/PeriodIntegrals/UnitaryGroupMassFormula/GaussianUniqueness/MulMApply.lean:12:macro "lvo" : tactic => `(tactic| (intro a b c h1 h2; (try dsimp only at h1 h2 ⊢)
+Formalism/LocalToGlobal/IndefiniteForms/IndefiniteTree/FunctionalLowerBoundOfConditionsNumeric.lean:231:macro "pos_tac" : tactic =>
+Formalism/LocalToGlobal/IndefiniteForms/IndefiniteTree/FunctionalLowerBoundOfConditionsNumeric.lean:234:macro "onele_tac" : tactic =>
+Formalism/HermitianCurvature/HermitianCurvatureProofs/RttUpperRelationsFromDescent.lean:30:macro "distrib_module" : tactic =>
+Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean:7:macro "fIwasawa_omega" : tactic =>
+Formalism/PeriodIntegrals/UnitaryGroupMassFormula/DensityLemma/PFibreBoundV.lean:175:macro "nbt" : tactic => `(tactic| (simp only [unipotentBlockMatrix, Matrix.of_apply];
+Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean:87:elab "cpt_copy_thms" : command => do
+Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean:53:elab "kcopy " t:term : tactic => withMainContext do
+Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean:60:elab "#kcopy_probe " t:term " : " ty:term : command => Command.runTermElabM fun _ => do
+Formalism/LocalToGlobal/IndefiniteReal/HeckeNonvanishing/Imports.lean:5:elab "kexactB " e:term : tactic => withMainContext do
+Formalism/LocalToGlobal/TorsionIntegrality/TorsionTranslationPowers/NonsingularJetNorms/NonsingularNorm.lean:70:macro "integ" : tactic =>
+Development/EtaleCohomology/EtaleSheaves/ChasePf.lean:105:macro "meq" : tactic => `(tactic| first
+Formalism/SharpRestriction/Divisibility/LocalNonemptiness/SubsingletonRankIndicatorIff.lean:276:macro "exists_prescribed_local_data" : tactic => `(tactic| (intros; first 
+Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ShuffleCup1FormulaPositiveDegree.lean:29:macro "fin_order'" : tactic =>
+Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Cup1CoboundaryMemBoundaries.lean:96:macro "fin_order" : tactic =>
+Development/WeilBound/CoreStatements/HodgeTatePoints/CcBase.lean:42:macro "ztac" : tactic => `(tactic| repeat' (first
+Development/WeilBound/CoreStatements/HodgeTatePoints/CcBase.lean:81:macro "evs" " at " h:ident : tactic => `(tactic| simp (disch := ztac) only [FGLaw.add, ev_mul', ev_one
+Development/WeilBound/CoreStatements/HodgeTatePoints/CbBase.lean:34:macro "zz" : tactic => `(tactic| repeat' with_reducible first
+Development/WeilBound/CoreStatements/HodgeTatePoints/CbBase.lean:81:macro "evs" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic|
+Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/CechPairings/FaceMapCompSuccAboveCastSucc.lean:227:macro "fin_tac" : tactic => `(tacti
+Development/AbelianVarietyTheory/Definitions/GaloisGeometry/NegOnePowBoundaryTermsCancel.lean:114:macro "fin_index_simp" : tactic => `(tactic| (
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/DiscreteValuationRings/ExistsRosatiGen.lean:34:macro "secTac" : tactic => `(tactic| (simp [Sum.forall, Fin.forall_fin
+ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/Theta1.lean:25:macro "ones" : tactic => `(tactic| (repeat (first | erw [map_one] | erw [one_zpow] | 
+Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RigidFrameSymmetricRatioSeries.lean:49:macro "jet_tac" : tactic => `(tactic| (
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsProperOfFiniteType.lean:30:macro "lbt" : tactic => `(tactic| (repeat (first | assumption | apply pull_isLB)))
+local/scoped notation-type lines: 1856
+set_option name counts:
+  57556 maxHeartbeats
+  11203 autoImplicit
+   7478 maxSynthPendingDepth
+   7381 synthInstance.maxHeartbeats
+   1879 backward.isDefEq.respectTransparency
+    874 linter.unusedSectionVars
+    503 linter.unusedVariables
+    272 linter.unusedSimpArgs
+    181 genSizeOfSpec
+    179 genInjectivity
+    122 linter.style.haveILetI
+     87 backward.isDefEq.respectTransparency.types
+     51 synthInstance.maxSize
+     46 linter.dupNamespace
+     40 linter.overlappingInstances
+     38 linter.all
+     37 allowUnsafeReducibility
+     34 maxRecDepth
+     34 linter.deprecated
+     33 backward.defeqAttrib.useBackward
+     31 hygiene
+     23 linter.style.longLine
+     12 linter.unusedTactic
+     12 linter.unreachableTactic
+      9 pp.fullNames
+      9 linter.unnecessarySeqFocus
+      7 quotPrecheck
+      3 smartUnfolding
+      1 warn.classDefReducibility
+      1 linter.unnecessarySimpa
+      1 linter.auxLemma
+      1 genSizeOf
+      1 Elab.async
+
+=== import closure (regex over import lines; repo modules only) ===
+Main: 175187 repo modules (= all .lean files under src/); includes CutCptCopy, OwnStruct, BuildAid.D1, HeckeNonvanishing.Imports
+Formalism.GammaFactorNonvanishing.CritLine: 14301; Development...CharacterBoxes.EveryCharacter: 14299; RhOfRight: 1 (Mathlib only); Statements: 1 (Mathlib only)
+
+NOT RUN: lake build of the repo; 'import Main; example : RiemannHypothesis := riemannHypothesis'; #print axioms riemannHypothesis.
