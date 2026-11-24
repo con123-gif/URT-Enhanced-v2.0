@@ -3217,3 +3217,12 @@ claim = "native"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-24_mixed_vortex_kms_entropy/MIXED_VORTEX_KMS_ENTROPY_CERT.py"
 timeout = 30
+
+# Exact native H64 positive-semigroup energy Lyapunov law; KMS entropy obstruction
+[[check]]
+id = "research.native_h64_relaxation_lyapunov"
+stage = "research"
+claim = "native"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-24_h64_relaxation_lyapunov/H64_RELAXATION_LYAPUNOV_CERT.py"
+timeout = 30

@@ -3,6 +3,15 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-24 — Gravity/fluids bot — native H64 relaxation Lyapunov theorem
+- Task: Separate the already-declared positive H64 relaxation from reversible canonical flow and test whether it supplies a genuine entropy-production law.
+- Result: THEOREM plus THERMODYNAMIC OBSTRUCTION — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING.
+- Statement: At fixed native 190-coordinate geometry/source, A=Hbits+r²L24^(2) is positive on all 1536 history modes with lambda_min=0.010228725137850388. The exact gap F=1/2<y-y_star,A(y-y_star)> obeys dF/dt=-||A(y-y_star)||² and F(t)<=exp(-0.020457450275700777 t)F(0). Across 30 mixed-vortex orientations the initial gap is [5.274856794e-7,5.285145738e-7] and the effective decay rate is [36.0203097958,36.0203097961].
+- Obstruction: The native KMS occupation entropy depends only on z and is exactly constant during fixed-z history relaxation. Thus the certificate proves irreversible H64 energy relaxation, not relative entropy, horizon thermodynamics, redshift, area entropy, or Lorentzian spin-2 response.
+- Evidence: `research.native_h64_relaxation_lyapunov`; standalone original-operator preflight exit 0; full-energy gap residual 1.21e-16; entropy change 0; CI pending.
+- Dead ends: Relabelling the quadratic amplitude gap as entropy would invent a probability interpretation not present in the native construction.
+- Next: Search the existing transfer/KMS construction for an explicitly declared positive probability-preserving generator on the eight occupation states; if present, test KMS relative-entropy contractivity without fitting a rate.
+
 ### 2026-11-24 — Gravity/fluids bot — mixed-vortex H64 activation and KMS entropy obstruction
 - Task: Determine whether a native state with both vertex density and coexact curl produces real H64/energy transfer and a genuine one-way entropy law under the canonical 190/H64/24 dynamics.
 - Result: NUMERIC PHYSICAL COUPLING plus THERMODYNAMIC OBSTRUCTION. Mixed vortex states activate H64 and exchange component energy, but the existing KMS occupation entropy is not monotone.
