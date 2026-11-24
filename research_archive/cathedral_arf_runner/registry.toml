@@ -3310,3 +3310,12 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-native-cycle-witness-20261124"
+question = "Extract explicit reference witness paths for each synthetic inductive-cycle member after actual imported axiom-cache discrepancy in Lean 4.33.1; not RH validation."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_native_cycle_witness.sh --out {out}"
+timeout_minutes = 30
+requested_by = "GPT"
+claim = "independent"

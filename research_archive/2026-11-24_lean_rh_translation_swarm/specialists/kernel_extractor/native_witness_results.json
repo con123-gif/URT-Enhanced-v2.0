@@ -1,0 +1,73 @@
+{
+  "nodes": 356,
+  "coreEdges": 1998,
+  "allEdges": 2342,
+  "builtin": [
+    "KernelFixture.witness"
+  ],
+  "core": {
+    "visited": 326,
+    "axioms": [
+      {
+        "name": "KernelFixture.witness",
+        "path": [
+          "riemannHypothesis",
+          "KernelFixture.bridge",
+          "_private.KernelFixture.0.KernelFixture.hidden",
+          "KernelFixture.witness"
+        ]
+      }
+    ],
+    "missing": [],
+    "bodyMissing": []
+  },
+  "full": {
+    "visited": 356,
+    "axioms": [
+      {
+        "name": "KernelFixture.witness",
+        "path": [
+          "riemannHypothesis",
+          "KernelFixture.bridge",
+          "_private.KernelFixture.0.KernelFixture.hidden",
+          "KernelFixture.witness"
+        ]
+      }
+    ],
+    "missing": [],
+    "bodyMissing": []
+  },
+  "agreement": true,
+  "cycle": [
+    {
+      "name": "CathedralAxiomCycle.Witness",
+      "local": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "imported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "omitted": []
+    },
+    {
+      "name": "CathedralAxiomCycle.Witness.plain",
+      "local": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "imported": [],
+      "omitted": [
+        "CathedralAxiomCycle.guardProp"
+      ]
+    },
+    {
+      "name": "CathedralAxiomCycle.Witness.guarded",
+      "local": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "imported": [
+        "CathedralAxiomCycle.guardProp"
+      ],
+      "omitted": []
+    }
+  ]
+}
