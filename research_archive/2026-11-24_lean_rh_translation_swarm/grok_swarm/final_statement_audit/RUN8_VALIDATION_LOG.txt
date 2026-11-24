@@ -1,0 +1,130 @@
+final_statement_audit RUN8 validation log
+Run: 2026-11-24 10:47 GMT (Europe/London), box; nice + OMP_NUM_THREADS=1.
+Upstream: fresh clone at 40e56bab026552e089d7afcfeff08d2defb9c005 (deleted after run).
+blob 9b24933f9b7a3a2820b948a20f387cfdb3067611  src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean
+blob b01c16dd9aeaeb3cca175a82974c8b014e830bf0  src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutMainCpt.lean
+blob 388acb2e0d01f4e82a7b2f0d0c9d821c5aa02a32  src/Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean
+blob 0d9e6da34836c7790b98c899a72836d63e63ce3f  src/Formalism/LocalToGlobal/IndefiniteReal/HeckeNonvanishing/Imports.lean
+blob e29bf840ddd71faecd715cde3855fda9452fbde1  src/BuildAid/D1.lean
+blob 1f4527985636bacdcabe44e1f3d76fbe1d1b3d49  src/CompanionTheory/AutomorphicTheory/CompactTopologicalForms/FinalS.lean
+blob fe6c6e02b80b8320275c28dce73b4f9cef39a5fb  src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGIs.lean
+blob 2dd08271cc2b972c047456ffb542057acc04005a  src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FramesTildeGammaValues.lean
+Lean: lean +leanprover/lean4:v4.33.1, core Lean only (LEAN_PATH = read-only /workspace/rh_green_lean/.lake/packages/*/.lake/build/lib/lean; no Mathlib import in these files).
+
+=== RUN8_MetaToolsPositive.lean  sha256 972fc063c086b1202203fa5f40955417dd91cdbc6e6b1044590e0509f1e8b157
+RUN8_MetaToolsPositive.lean:65:61: warning: `String.mk` has been deprecated: Use `String.ofList` instead
+RUN8_MetaToolsPositive.lean:167:0: warning: Definition `Formalism.Toy.helper` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+copied 2 declarations
+def Formalism.Toy.helperCpt : Formalism.FourierDecayAlt.KB.SizeStdCpt → Formalism.FourierDecayAlt.KB.SizeStdCpt :=
+fun h => h
+theorem Formalism.FourierDecayAlt.P.CutBP.thmBpAt_main4Cpt : Formalism.FourierDecayAlt.KB.SizeStdCpt →
+  Formalism.FourierDecayAlt.KB.SizeStdCpt :=
+fun h => Formalism.Toy.helperCpt h
+'Formalism.FourierDecayAlt.P.CutBP.thmBpAt_main4Cpt' does not depend on any axioms
+def Formalism.Toy.s' : Formalism.Toy.S :=
+Formalism.Toy.s
+'Formalism.Toy.s'' does not depend on any axioms
+kcopy_probe: 0 refused: []
+nameDenyListExt state after BuildAid.D1 line: ["CompanionTheory", "Lake", "Lean", "Internal", "Tactic"]
+  opaque constant: Formalism.FourierDecayAlt.P.CptCopy.go
+  opaque constant: Formalism.L2.Fam.KCopy.copyAt
+constants added in this file: 66; axioms: 0; opaque: 2; unsafe: 0
+9 constants reached; generated *Cpt constants used: #[Formalism.FourierDecayAlt.P.CutBP.thmBpAt_main4Cpt, Formalism.Toy.helperCpt]
+
+real	0m1.331s
+user	0m1.064s
+sys	0m0.352s
+exit=0
+
+=== RUN8_MetaToolsNegative.lean  sha256 ff24802c0bb4a8580d8a70e602106cf17c2638dcefa5da0fb5ead2e3cd92792d
+RUN8_MetaToolsNegative.lean:65:61: warning: `String.mk` has been deprecated: Use `String.ofList` instead
+copied 1 declarations
+RUN8_MetaToolsNegative.lean:170:0: error: (kernel) declaration type mismatch, 'Formalism.FourierDecayAlt.P.CutBP.thmBpAt_main4Cpt' has type
+  True
+but it is expected to have type
+  Formalism.FourierDecayAlt.KB.SizeStdCpt
+Formalism.FourierDecayAlt.P.CutBP.thmBpAt_main4Cpt : Formalism.FourierDecayAlt.KB.SizeStdCpt
+RUN8_MetaToolsNegative.lean:175:8: error: (kernel) declaration type mismatch, 'Formalism.Toy.bad' has type
+  1 = 1
+but it is expected to have type
+  1 = 2
+'Formalism.Toy.bad' depends on axioms: [Formalism.Toy.bad]
+
+real	0m1.322s
+user	0m0.921s
+sys	0m0.478s
+exit=1
+
+Negative file: exit=1 is the EXPECTED outcome (kernel rejections are the test).
+
+=== source scans (rg over src/) ===
+API-pattern hits (addDecl|addAndCompile|compileDecl|axiomDecl|mkAxiom|opaqueDecl|Declaration.|modifyEnv|setEnv|Environment.|ConstantInfo|registerEnvExtension|initialize|implemented_by|setImplementedBy|addExtern|unsafe|partial def|run_cmd|run_tac|run_elab|run_meta|#eval|evalExpr|@[command_elab|@[term_elab|@[tactic|elab_rules|elab "|macro_rules): 46 lines
+BuildAid/D4.lean:4:run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env "PositivityTheory"
+BuildAid/D1.lean:4:run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env "CompanionTheory"
+BuildAid/D3.lean:4:run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env "GlobalTheory"
+BuildAid/D2.lean:4:run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env "CrystallineSemistableComparison"
+BuildAid/D5.lean:4:run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env "UpperTheory"
+Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean:38:def proposals (ci : ConstantInfo) : Array Name :=
+Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean:41:partial def go (env : Environment) (n : Name) (st : NameSet × NameSet × Array Name) : NameSet × NameSet × Array Name :=
+Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean:78:      addDecl (.defnDecl { d with name := n', type := subst tainted d.type, value := subst tainted d.value })
+Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean:82:      addDecl (.thmDecl { t with name := n', type := subst tainted t.type, value := subst tainted t.value })
+Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean:87:elab "cpt_copy_thms" : command => do
+Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean:18:partial def copyAt (probe : Bool) (e tgt : Expr) (path : String) (fuel : Nat) : StateT (Array String) MetaM Expr := do
+Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean:53:elab "kcopy " t:term : tactic => withMainContext do
+Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean:60:elab "#kcopy_probe " t:term " : " ty:term : command => Command.runTermElabM fun _ => do
+Formalism/LocalToGlobal/IndefiniteReal/HeckeNonvanishing/Imports.lean:5:elab "kexactB " e:term : tactic => withMainContext do
+Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicLatticeSmulMemOfAgreeAwayFromPlace.lean:70:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_ro
+Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicLatticeSmulMemOfAgreeAwayFromPlace.lean:71:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _roo
+Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedWeierstrassCurveTransformCoefficientsW.lean:20:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); ex
+Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedWeierstrassCurveTransformCoefficientsW.lean:21:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); ex
+Development/AbelianVarietyTheory/Proofs/SatakeParameters/ValuationRingModel.lean:206:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.AlgC
+Development/AbelianVarietyTheory/Proofs/SatakeParameters/ValuationRingModel.lean:207:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.AlgCl
+Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexTwoBlockParahoricConjTorusDiagElement.lean:22:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact
+Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexTwoBlockParahoricConjTorusDiagElement.lean:23:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact
+Development/AbelianVarietyTheory/Proofs/FlagMeasures/PowLePowRatio.lean:153:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.InnerSumZeroS
+Development/AbelianVarietyTheory/Proofs/FlagMeasures/PowLePowRatio.lean:154:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.InnerSumZeroSp
+Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGIs.lean:81:  run_tac do
+Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsExtTwistedPlaces.lean:60:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheo
+Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsExtTwistedPlaces.lean:61:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheor
+Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetMatrixSandwichLinearMap.lean:14:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.D
+Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetMatrixSandwichLinearMap.lean:15:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.De
+Development/AbelianVarietyTheory/Proofs/FlagMeasures/BasedFlagPairLatticeContainment.lean:131:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTh
+Development/AbelianVarietyTheory/Proofs/FlagMeasures/BasedFlagPairLatticeContainment.lean:132:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalThe
+Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsBoundAbsLocalLatticeCompletionEntries.lean:12:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); e
+Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsBoundAbsLocalLatticeCompletionEntries.lean:13:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); e
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatchedDiffsInvariantSubspace.lean:31:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheo
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatchedDiffsInvariantSubspace.lean:32:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheor
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/BoundedPowerSeriesEvaluationDivisibility.lean:24:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/BoundedPowerSeriesEvaluationDivisibility.lean:25:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/FramesTildeGammaValues.lean:70:  run_tac do
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsJetExtensionSquareZero.lean:22:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheor
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsJetExtensionSquareZero.lean:23:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean:38:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean:39:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.G
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean:61:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean:62:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.G
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsRootMapMinpolyIffExistsRingHomExtension.lean:10:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root
+Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsRootMapMinpolyIffExistsRingHomExtension.lean:11:  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_
+
+zero-hit patterns: axiomDecl mkAxiom AxiomVal axiomInfo opaqueDecl OpaqueVal quotDecl mutualDefnDecl addDeclCore addDeclWithoutChecking Environment.addDecl Kernel.Environment addAndCompile compileDecl setImplementedBy/implementedByAttr DefinitionSafety/.unsafe/safety:= ReducibilityHints replaceConst/setEnv unsafe sorryAx ofReduceBool; declarations axiom/opaque/unsafe: 0; partial: 2; implemented_by/@[extern]: 0; sorry/admit: 0
+defnDecl: 1 (CutCptCopy.lean:78); thmDecl: 1 (CutCptCopy.lean:82); 'instance : Inhabited'/nonempty_of_inhabited lines: 25; set_option Elab.async false: 1 (Decomp.lean:167); @[positivity: 1 (EvalFrameOrd.lean:7); allowUnsafeReducibility files: 33
+cpt_copy_thms invocations: 1 (CutMainCpt.lean:945); importers of CutCptCopy: CutMainCpt only; importers of CutMainCpt: CptCopy2 only; importers of CptCopy2: CompactTopologicalForms/FinalS.lean; importers of FinalS: CompactTopologicalForms/FinalC.lean
+Cpt-suffixed identifiers referenced repo-wide: 241; not textually declared: 76, of which the only lower-case theorem-style generated name used is block_growth_bound_of_compact_coefCpt (FinalS.lean:61); densityCpt is a section name; the rest are hypothesis/field/binder names (e.g. hCpt, UnitsCpt) - heuristic regex, disclosed.
+
+=== import closures (regex over import lines) ===
+Main: 175187 modules; Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion (everyCharacter): 175174; CutCptCopy: 1658; CutMainCpt: 1661
+membership per tool (count in Main closure / everyCharacter closure):
+CutCptCopy 1/1; CutMainCpt 1/1; OwnStruct 1/1; kcopy users 3/3; #kcopy_probe users 0/0; kexactB def 1/1; kexactB users 49/49; BuildAid D1-D5 5/5; EvalFrameOrd 1/1; run_tac users 16/16
+CutCptCopy (defines cpt_copy_thms): Formalism.HermitianCurvature.HermitianCurvatureProofs.CutCptCopy
+CutMainCpt (runs cpt_copy_thms): Formalism.HermitianCurvature.HermitianCurvatureProofs.CutMainCpt
+OwnStruct (defines kcopy/#kcopy_probe): Formalism.LocalToGlobal.NumberFieldFamilies.OwnStruct
+kcopy users: Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsKeptChoiceUpperLattice, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsRe, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermRe
+#kcopy_probe users: 
+HeckeNonvanishing.Imports (defines kexactB): Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports
+kexactB users: Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ECure, Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodPartEq, Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesOfLifts, Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OmPinsTr, Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PlaceModelImp, Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RealIoX, Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ValTransOfEq, Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WeakCharInertPartRealAdelicDataTransport, Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLevelIffTwistedClass, Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelsExt, Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftSetupOverExtendedDataIntegralFormsEq, Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RatCopyIff, Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TieMove, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChainComparisonTransferOtherLaterStages, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnParamsInstanceData, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteFormsReadingResetBaseEnlargement, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicRowsDivisionOverReplacedLaterStages, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormalisedReadingTransportedNewTwist, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReadingInMovedRowData, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRowsOfHeqData, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSelectedRealization, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinXSpectralRedivisionFullChoices, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormGroupsModelsActionsMeasuresBasesCharacterise, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Lb1OfRestagingBound, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftTieOfPk, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsCompatibleOtherLaterStagesOfSameChoices, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultREqReL, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParameterOfDiscreteSeriesRay, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodFactorisationScalarReferenceTupleEqOne, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadUpdSKeep, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealDatumPrerequisitesUpdateModels, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReferenceTupleWeilDatumVectorPolynomialMapEnlarg, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesAtOfExpRelation, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesAtThetaTwist, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SetupLGood, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpectralRedivisionTermEquivKeepsTermData, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardReadingTransportAndExtensionTrans, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaLiftAtReferenceTupleOverEnlargedBase, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedArgsColumnHeq, Development.AbelianVarietyTheory.Proofs.TwistedOperators.TrJetOfTrFlip, Development.AbelianVarietyTheory.Proofs.TwistedOperators.TransferBottom, Development.AbelianVarietyTheory.Proofs.TwistedOperators.TransferFlip, Development.AbelianVarietyTheory.Proofs.TwistedOperators.TwoLeMOf, Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsRowsKCColPins, Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsSelectionPairLocalLanglands, Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.MtAdL, Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ParameterOfDiscreteSeriesRay, Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SeriesAtOfExpRelation, Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SeriesAtThetaTwist
+BuildAid D1-D5 (run_cmd modifyEnv): BuildAid.D1, BuildAid.D2, BuildAid.D3, BuildAid.D4, BuildAid.D5
+EvalFrameOrd (@[positivity] ext): Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
+run_tac users: Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsBoundAbsLocalLatticeCompletionEntries, Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedPowerSeriesEvaluationDivisibility, Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsJetExtensionSquareZero, Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesTildeGammaValues, Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRootMapMinpolyIffExistsRingHomExtension, Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalizationPreservesRingPullbackSquare, Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedDiffsInvariantSubspace, Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasedFlagPairLatticeContainment, Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetMatrixSandwichLinearMap, Development.AbelianVarietyTheory.Proofs.FlagMeasures.PowLePowRatio, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExtTwistedPlaces, Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGIs, Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdelicLatticeSmulMemOfAgreeAwayFromPlace, Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedWeierstrassCurveTransformCoefficientsW, Development.AbelianVarietyTheory.Proofs.SatakeParameters.ValuationRingModel, Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexTwoBlockParahoricConjTorusDiagElement
+NOT RUN: lake build of upstream; #print axioms riemannHypothesis; dependency walk of riemannHypothesis for generated constants; lean4checker.
