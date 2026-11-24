@@ -1,0 +1,136 @@
+# galois_rows RUN 4 validation log (real outputs, 2026-11-24 GMT)
+
+## 1. nice lean +leanprover/lean4:v4.33.1 RUN4_ChevalleyHcharSchema.lean; echo exit=$?
+'GrokChevalleyHchar.dvd_fact' depends on axioms: [propext, Quot.sound]
+'GrokChevalleyHchar.geom_identity' depends on axioms: [propext, Quot.sound]
+'GrokChevalleyHchar.frob_cover' does not depend on any axioms
+exit=0
+sha256 6a648422560081e71408de4d64a17b34f810bbe94c5ef79fbd5f2b2964934987
+
+## 2. nice python3 RUN4_replay_checks.py /workspace/rh_up4   (full checkout at the pin)
+OK  worktree HEAD == PIN (40e56bab0265)
+OK  blob 9b99d747 src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsKummerField.lean
+OK  text theorem exists_kummer_field (E F Ω : Type)
+OK  text theorem exists_integral_mul {E : Type}
+OK  text theorem core (E : Type) [Field E] [NumberField E] (Γ : Subgroup Eˣ) [Group.FG Γ]
+OK  text GlobalTheory.Published.chebotarevDegreeOne' K (AlgebraicClosure E) L τ MainNotions hSKfin
+OK  text GlobalTheory.frob_fixes_root_of_one_mod K (AlgebraicClosure E) M ζK hζK (v τ) hMv (B τ) (h
+OK  text exact hdesc (AlgebraicClosure E) ζ hζ (x : E) w hwK hw
+OK  text induction m using Nat.recOnPosPrimePosCoprime with
+OK  text theorem exists_places (E : Type) [Field E] [NumberField E] (S : Finset (HeightOneSpectrum 
+OK  text ∀ x : Eˣ, (∀ v, v ∉ S → v.valuation E (x : E) = 1) → (∀ t ∈ T, t.valuation E ((x : E) - 1)
+OK  text haveI := GlobalTheory.QNorm.sUnits_fg E S
+OK  blob c413cc4a src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsPowDescentCyclotomic.lean
+OK  text theorem geom_sum_valuation {l : ℕ} (hl : l.Prime) {t : ℕ} (ht1 : 1 < t)
+OK  text theorem exists_aut {E K : Type}
+OK  text ∃ τ : K ≃ₐ[E] K, τ ζ = ζ ^ (g ^ (Module.finrank ℚ E).factorial)
+OK  text theorem descent {E K : Type}
+OK  text have hgeom : ∀ m : ℕ, (k + 1) ^ m = (∑ i ∈ Finset.range m, (k + 1) ^ i) * k + 1
+OK  text theorem exists_pow_descent_cyclotomic :
+OK  text set m := (Module.finrank ℚ E).factorial with hm
+OK  text refine ⟨l ^ (r + s), pow_pos hl.pos _, pow_dvd_pow _ (by omega), ?_⟩
+OK  text Int.two_pow_sub_pow'
+OK  blob ab8b7973 src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsFrobFixesRootOfOneModPlace.lean
+OK  text theorem frob_fixes_root_of_one_mod (F Ω : Type)
+OK  blob 649f9a3d src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsHcharPrescribedTrivial.lean
+OK  text theorem exists_hchar_prescribed (k : Type)
+OK  text obtain ⟨T, hST, hT⟩ := GlobalTheory.ChevalleySUnits.exists_places k S m hm0
+OK  text let U : Subgroup (Ideles k) := GlobalTheory.LevelChars.levSub k T 1 ⊓ ⨅ w : S, (θ w).ker.c
+OK  text GlobalTheory.exists_unitary_char_of_open_subgroup_and_hom (Ideles k)
+OK  text simpa using Complex.norm_eq_one_of_pow_eq_one h2 hm0.ne'
+OK  text have hxz : x = Units.mk0 z hz0 ^ m
+OK  text GlobalTheory.Mem.FinOrder.finite_order_of_inf_eq_one k η
+OK  blob 6331c58b src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsUnitaryCharOfOpenSubgroupAndHom.lean
+OK  text (∀ y, α y ∈ U → a y = ψ (α y)) → ∃ χ : G →* ℂˣ, Continuous χ
+OK  blob 6fee3811 src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/SUnitsNumberFieldFg.lean
+OK  text theorem _root_.GlobalTheory.QNorm.sUnits_fg :
+OK  blob a699116e src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ChevalleyUnits.lean
+OK  text theorem GlobalTheory.Published.chevalleyUnits' : GlobalTheory.Published.ChevalleyUnits := 
+OK  text GlobalTheory.Published.chebotarevDegreeOne' K Ω L g S hS
+OK  blob d13d74f3 src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ChevalleyUnits.lean
+OK  text def ChevalleyUnits : Prop :=
+OK  blob 2c257044 src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ChebotarevDegreeOne.lean
+OK  text theorem chebotarevDegreeOne' : ChebotarevDegreeOne := by
+OK  text GlobalTheory.T.exists_cyclotomic_crossing_field_deciding_frobenius F Ω L g' m hm hdvd hirr
+OK  text theorem cheb_holds : GlobalTheory.TwSys.Cheb :=
+OK  text chebotarevDegreeOne_iff_cheb.1 chebotarevDegreeOne'
+OK  blob fa35e626 src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ChebotarevDegreeOneIffCheb.lean
+OK  text def ChebotarevDegreeOne : Prop :=
+OK  text theorem chebotarevDegreeOne_iff_cheb : ChebotarevDegreeOne ↔ GlobalTheory.TwSys.Cheb := by
+OK  blob 9b0f53df src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GlobalArtinReciprocityHolds.lean
+OK  text theorem GlobalTheory.globalArtinReciprocity_holds : GlobalTheory.Published.GlobalArtinReci
+OK  blob 120a99a5 src/CompanionTheory/AutomorphicTheory/PlaceSeparation/IsOpenQuotientMapArt0.lean
+OK  text namespace CompanionTheory.FamInh
+OK  text theorem globalArtin : GlobalTheory.Published.GlobalArtinReciprocity := fun E Ω _ _ _ _ _ =
+OK  text ⟨(art0 E Ω)⁻¹, isGlobalArtin_inv⟩
+OK  blob 92aa3388 src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalArtinExistsHolds.lean
+OK  text theorem localArtinExists_holds : LocalArtinExists := by
+OK  text obtain ⟨art, hart⟩ := globalArtinReciprocity_holds E Ω
+OK  text T.exists_inverse_localArtin_weilGroup_hom E Ω A w h art hart
+OK  blob f61d2878 src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/LocalArtinExists.lean
+OK  text def LocalArtinExists : Prop :=
+OK  blob d86eaa2d src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemConnectedComponentOfOneOfPos.lean
+OK  text theorem exists_field {B : Type} [CommGroup B] (φ : G K Ω →* B) (ho : IsOpen (φ.ker : Set (
+OK  blob 2b7321fa src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/HilbertClassFieldOfGlobalArtinReciprocity.lean
+OK  text theorem art_sign_eq (ha : IsGlobalArtin art) (j : Ω →+* ℂ) (c : G E Ω)
+OK  blob cee677dc src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/WeilDeligneRelUnique.lean
+OK  text theorem exists_weil_eq_on {g : G E Ω} (hg : g ∈ Dec (F := E) A) (L : IntermediateField E Ω
+OK  blob a2f8772a src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/Chl.lean
+OK  text structure Inq : Prop extends UpperTheory.Gal.Int.Inp.Inp where
+OK  text chl : ∀ (K M : Type)
+OK  blob e01a86b5 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalGaloisCompatibility/GaloisCompatUnlinkedSupportOfSpherical.lean
+OK  text theorem inq_holds : Inq := ⟨UpperTheory.Gal.Int.Inp.inp_holds, UpperTheory.Gal.GamX.charLi
+OK  blob f400e69e src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/OfInputs.lean
+OK  text structure Inp : Prop where
+OK  text gen : GlobalTheory.Published.GenericUnitaryDualGL
+OK  text ac : GlobalTheory.Published.ArthurClozelStrongTC
+OK  blob 39070d3b src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/InputsOf.lean
+OK  text theorem js : GlobalTheory.Published.JacquetShalikaRigidity := PositivityTheory.AdelicQuoti
+OK  text theorem gk : GlobalTheory.Published.GelfandKazhdanDual := UpperTheory.Gal.AbelianGaloisNor
+OK  text theorem adm : GlobalTheory.Published.IrreducibleAdmissibleGL := UpperTheory.Zero.LLC.Pr.ad
+OK  text theorem len : GlobalTheory.Published.StandardFunctorsFiniteLength := PositivityTheory.Tls2
+OK  text theorem exh : GlobalTheory.Published.LanglandsExhaustionGL := UpperTheory.Zero.LLC.Pr.exh
+OK  text theorem zel : GlobalTheory.Published.ZelevinskyPolynomialRing := UpperTheory.Zero.LLC.Pr.z
+OK  text theorem gen : GlobalTheory.Published.GenericUnitaryDualGL := PositivityTheory.Gud.Fin.gene
+OK  text theorem ac : GlobalTheory.Published.ArthurClozelStrongTC := UpperTheory.Gal.AbelianGaloisN
+OK  text theorem inp_holds : Inp := ⟨js, gk, adm, len, exh, zel, gen, ac, hk, alg, pst⟩
+OK  blob 8f176341 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineInputs/Crys.lean
+OK  text theorem pst : GlobalTheory.Published.DeRhamPotSemistable := GlobalTheory.deRham_potentiall
+OK  text theorem alg : GlobalTheory.Published.AlgebraicCharacterWD :=
+OK  text theorem hk : GlobalTheory.Published.HeckeLAdicCharacterAbove :=
+OK  text theorem crys : GlobalTheory.Published.HeckeLAdicCharacterCrystalline := by
+OK  blob 6ce34399 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LiftFactorization/FirstQuadraticSquareHolds.lean
+OK  text theorem gk_holds : GlobalTheory.Published.GelfandKazhdanDual :=
+OK  text theorem strongTC_holds : GlobalTheory.Published.ArthurClozelStrongTC := strongOf liftUnr r
+OK  blob 425ed559 src/Development/WeilBound/CoreStatements/AutomorphicKernels/UnitaryDualGL/GenericUnitaryDual/GenericUnitaryDualGLHolds.lean
+OK  text theorem genericUnitaryDualGL_holds : GlobalTheory.Published.GenericUnitaryDualGL := by
+OK  blob 0c3c1489 src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/MixedUnlinkedExponents/CharLiftPrimeHolds.lean
+OK  text theorem charLiftPrime_holds : CharLiftPrime := charLiftPrime_of charSupp_holds
+OK  blob dad600e3 src/Development/WeilBound/CoreStatements/PublishedTheorems/JacquetShalikaRigidity/JacquetShalikaRigidity.lean
+OK  text theorem jacquetShalikaRigidity : GlobalTheory.Published.JacquetShalikaRigidity := rigid rs
+OK  blob ea3ed51c src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/Multi.lean
+OK  text theorem exh : GlobalTheory.Published.LanglandsExhaustionGL := PositivityTheory.Exh.langlan
+OK  text theorem adm : GlobalTheory.Published.IrreducibleAdmissibleGL := PositivityTheory.Tls2.BZGL
+OK  text theorem zel : GlobalTheory.Published.ZelevinskyPolynomialRing :=
+OK  blob 5f165146 src/Development/WeilBound/CoreStatements/TemperedRepresentationTheory/BernsteinZelevinskyGL/TopStd.lean
+OK  text theorem standardFunctorsFiniteLength_top : GlobalTheory.Published.StandardFunctorsFiniteLe
+OK  blob 3d22aaf1 src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BzfinHolds.lean
+OK  text theorem bzfin_holds : GlobalTheory.Published.BernsteinZelevinskyFiniteness := by
+OK  blob 690f5a0b src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GeometricLemmaFiltrationHolds.lean
+OK  text theorem geometricLemmaFiltration_holds : GlobalTheory.Published.GeometricLemmaFiltration :
+OK  blob 840f45a0 src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteDecompositionGroupsCoverOpenQuotient.lean
+OK  text GlobalTheory.Published.cheb_holds F Ω U.toSubgroup U.isOpen U.isNormal' g {v}
+scanned .lean files: 175187
+OK  scan axiom declaration: 0 occurrences
+OK  scan sorry: 0 occurrences
+OK  scan admit: 0 occurrences
+OK  scan native_decide: 0 occurrences
+OK  scan ofReduceBool: 0 occurrences
+OK  scan implemented_by/extern: 0 occurrences
+OK  scan unsafe: 0 occurrences
+OK  scan skipKernelTC: 0 occurrences
+OK  scan axiomDecl/AxiomVal: 0 occurrences
+addDecl sites: [('src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean', 'defnDecl'), ('src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean', 'thmDecl')]
+OK  every addDecl site adds only defnDecl/thmDecl
+checks ok=122 bad=0
+exit=0
