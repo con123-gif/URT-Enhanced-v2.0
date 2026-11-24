@@ -1,0 +1,13 @@
+# 2026-11-24 10:08 GMT cmd: OMP_NUM_THREADS=1 nice python3 verify_t1c_t1b_t1e_sources.py /workspace/rh_up /workspace/rh_orig  (rh_up = blobless clone of leanprover-community/riemann-hypothesis; rh_orig = homeowmorphism/riemann-hypothesis-original @4e8bb36)
+ok   94ffe758e349 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LFunctionConjEqZero.lean (12 tokens)
+ok   dac787d143eb src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivativeBound.lean (2 tokens)
+ok   641a2e37fb8f src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ZeroFreePrincipal.lean (14 tokens)
+ok   3510998d8dcd src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivRiemannZetaLocalZeroSum.lean (2 tokens)
+ok   c2178cd4ea2f src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZeros.lean (5 tokens)
+ok   b4446a9f3089 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DirichletLZerosEqPrimitiveCharacterZerosStatement.lean (2 tokens)
+tree: pin src files=175187 checkout src files=175188 only_in_pin=[] only_in_checkout=['src/Challenge.lean'] differing=0
+ok   comparator.json (checkout HEAD 4e8bb36faa8c, blob e989bcf90ff0) permitted_axioms token
+scan: files with top-level `axiom` decl = 0; files containing sorry/admit = 1: ['src/Challenge.lean']
+files=6 tokens=38 failures=0
+exit=0
+sha256 acdc84400c12c79bb96c432eed3dd06d39276a90556b90c1b2f40dcb3bb01cfb  verify_t1c_t1b_t1e_sources.py

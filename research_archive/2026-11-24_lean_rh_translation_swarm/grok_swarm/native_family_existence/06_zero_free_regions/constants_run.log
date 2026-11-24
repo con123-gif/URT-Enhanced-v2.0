@@ -1,0 +1,21 @@
+# 2026-11-24 10:07 GMT cmd: OMP_NUM_THREADS=1 nice python3 constants_check.py
+ok   delta<=1/21 => sigma=1+8delta<=2
+ok   delta<=1/21 => zero in disc |w-(3/2+i gamma)|<=5/6 (1/2+delta<=5/6)
+ok   Re 1/(sigma-1) = 1/(8 delta) and Re 1/(9 delta) at gamma: coefficient 4/9 - 3/8 = 5/72
+ok   case chi^2 != 1: 72/5*(3 C0 + 6 C1) <= 300 (C0 + C1)  [3*72/5, 6*72/5 <= 300]
+ok   small subcase disc: (1/2+1/21)^2 + 81/2*(1/21)^2 <= 25/36
+ok   small subcase: 2/27 bound needs 243 delta^2 >= 2(81 delta^2+gamma^2) <=> 81 delta^2 >= 2 gamma^2  [243-162=81]
+ok   small subcase: 2*(2/27) - 1/8 = 5/216
+ok   small subcase: 216/5 <= 300
+ok   large subcase: 8d/(64d^2+4g^2) <= 4/(81 d) <=> 392 d^2 <= 16 g^2; holds when g^2 > 81/2 d^2 (16*81/2=648>=392)
+ok   large subcase: 3/8 - 4/9 + 4/81 = -13/648
+ok   large subcase: 648/13*5 <= 300 and 648/13*4 <= 300
+ok   zero_free_region: c<=1/42, L>1/2 => c/L < 1/21
+ok   K>=5 => delta=1/(2K)<=1/10
+ok   K>=5 => c1/L <= 1/140 (L>=1)
+ok   1/140 <= 1/3 so beta >= 2/3
+ok   3/(sigma-1) = 3L/delta = 6KL
+ok   final: 7K(1/(2K)+1/(28K)) = 15/4 < 4
+ok   3+4x+(x^2-y^2) = 2(1+x)^2 >= 0 at 168 exact rational unit-circle points
+RESULT: all checks ok
+exit=0

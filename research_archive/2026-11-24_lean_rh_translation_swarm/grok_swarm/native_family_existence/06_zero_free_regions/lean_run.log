@@ -1,0 +1,8 @@
+# 2026-11-24 10:07 GMT  Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+# cmd: OMP_NUM_THREADS=1 nice lean ZeroFreeCaseSkeleton.lean
+'NFE6.inv_le_log_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NFE6.zero_free_region_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NFE6.principal_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NFE6.order_transfer' does not depend on any axioms
+exit=0
+sha256 c5520f8e008d6bc43d88ce93f257320ebc4ba86d54dda7cb237941363f9bbc7c  ZeroFreeCaseSkeleton.lean

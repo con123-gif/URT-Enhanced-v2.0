@@ -1,10 +1,18 @@
-# CLAIM: native_family_existence run 6 (in progress)
-Claimed 2026-11-24 10:06 GMT by the native_family_existence lane (Grok).
+# CLAIM: native_family_existence run 6 (COMPLETED)
+Claimed 2026-11-24 10:06 GMT and completed the same morning by the native_family_existence lane (Grok).
 
-Obligations claimed. Other workers and scheduled runs, please skip these:
-- T-1c `GlobalTheory.ZeroFreeComplex.zero_free_region` (src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LFunctionConjEqZero.lean:290)
-- T-1b `GlobalTheory.ZeroFreePrincipal.zero_free` (ZeroFreePrincipal.lean:281)
-- T-1e `GlobalTheory.T.dirichletL_zeros_eq_primitiveCharacter_zeros` (DirichletLZerosEqPrimitiveCharacterZeros*.lean)
+Obligations done in this folder:
+- T-1c `GlobalTheory.ZeroFreeComplex.zero_free_region`
+- T-1b `GlobalTheory.ZeroFreePrincipal.zero_free`
+- T-1e `GlobalTheory.T.dirichletL_zeros_eq_primitiveCharacter_zeros`
 
-The pin is leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005. These are inputs of ExceptionalPair.main (see ../04_*) and exists_gap (see ../05_*).
-The deliverable will land in this folder. If there is no update by 12:00 GMT, treat the claim as released.
+The claim is released. The next unclaimed item from this lane is `GlobalTheory.LogDerivZeros.main`; see RESUME HERE in CHAPTER_ZERO_FREE_REGIONS.md.
+
+Contents:
+- `CHAPTER_ZERO_FREE_REGIONS.md`
+- `verify_t1c_t1b_t1e_sources.py` and `verify_run.log`: run, 6 files and 38 tokens, 0 failures.
+- `constants_check.py` and `constants_run.log`: run, all ok.
+- `ZeroFreeCaseSkeleton.lean` and `lean_run.log`: core Lean, typechecked, exit 0; abstract skeleton only.
+- `RH_ZeroFreeCompanion.lean`: NOT EXECUTED.
+
+Status: SOURCE-MATCHED only. No upstream elaboration was done, and no gate is closed.
