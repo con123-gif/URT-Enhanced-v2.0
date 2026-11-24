@@ -1,0 +1,7 @@
+# 2026-11-24 10:02 GMT  Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+# cmd: OMP_NUM_THREADS=1 nice lean LandauPageCaseSkeleton.lean
+'NFE5.landau_page_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NFE5.sixteen_ninths_gt_five_quarters' does not depend on any axioms
+'NFE5.zero_gap_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0
+sha256 6d2f4d5fffaf29cb0a0b7a24f4c73798be1ea2e5ffd8b0b46ed23c0c7164a321  LandauPageCaseSkeleton.lean

@@ -1,0 +1,16 @@
+# 2026-11-24 10:02 GMT cmd: OMP_NUM_THREADS=1 nice python3 verify_t1a_t1d_sources.py /workspace/rh_up /workspace/rh_orig  (rh_up = blobless clone of leanprover-community/riemann-hypothesis; rh_orig = homeowmorphism/riemann-hypothesis-original @4e8bb36)
+ok   6ad3eec0c418 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/OrderNeTop.lean (12 tokens)
+ok   104f752f2bf9 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NegSumLogDerivNonneg.lean (4 tokens)
+ok   ed24d289e7cb src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivDirichletLFunctionLocalZeroSumStatement.lean (2 tokens)
+ok   362dbb2082ee src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivDirichletLFunctionLocalZeroSum.lean (1 tokens)
+ok   c41119f4a0b7 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NegReLogDerivPrincipalLFunctionLeStatement.lean (2 tokens)
+ok   e0685b697e54 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOne.lean (9 tokens)
+ok   1fd99e9ae53a src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOneStatement.lean (1 tokens)
+ok   f26827ac22d1 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsLeNormLFunctionOne.lean (3 tokens)
+ok   06666ac839f7 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsNormDerivLFunctionLe.lean (2 tokens)
+tree: pin src files=175187 checkout src files=175188 only_in_pin=[] only_in_checkout=['src/Challenge.lean'] differing=0
+ok   comparator.json (checkout HEAD 4e8bb36faa8c, blob e989bcf90ff0) permitted_axioms token
+scan: files with top-level `axiom` decl = 0; files containing sorry/admit = 1: ['src/Challenge.lean']
+files=9 tokens=37 failures=0
+exit=0
+sha256 11a3aff0ce6544c458dd5b617c37e126aa5c2ecc326b38685968061887430a02  verify_t1a_t1d_sources.py
