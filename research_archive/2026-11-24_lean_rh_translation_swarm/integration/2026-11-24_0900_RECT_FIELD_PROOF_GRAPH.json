@@ -1,0 +1,439 @@
+{
+  "schema": "RH RecTExists source-obligation extension v1",
+  "date": "2026-11-24",
+  "upstream_repo": "leanprover-community/riemann-hypothesis",
+  "upstream_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "upstream_head_observed": "64970dc64f26807fe87a1d50514bf9bec905058f",
+  "prior_graph": "2026-11-24_0800_TYPED_ROOT_OBLIGATION_GRAPH.json#nodes.recT",
+  "status": "PARTIAL — source-matched conditional derivation; full proof and trust closure OPEN",
+  "scope_exact": "def IsRecT (rc : IrrGL (w.adicCompletion E) → WD h) : Prop := ∃ a ha, LawsT (h := h) a ha rc\n\ndef RecTExists : Prop :=\n  ∀ (E Ω : Type) [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] (A : ValuationSubring Ω)\n    (w : HeightOneSpectrum (𝓞 E)) (h : IsPlaceOver A w), ∃ rc, IsRecT h rc",
+  "source_nodes": {
+    "root": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 67,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "laws": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 117,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "transport": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/RecTTransport.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 329,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "art": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ArtEx.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 16,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "cusp": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 271,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "extend": {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LanglandsExtensionUniqueOnCuspidal.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 59,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "multi": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/Multi.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 22,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "dim": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDim.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 79,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "tw": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RcTwOfSegments.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 60,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "dual": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDual.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 58,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "inj": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtInj.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 74,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "depth": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDepth.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 35,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    },
+    "type": {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/TypeIff.lean",
+      "source_sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "lines": 60,
+      "status": "SOURCE_MATCHED; not kernel checked"
+    }
+  },
+  "record_fields": [
+    {
+      "name": "dim",
+      "exact": "dim : ∀ x, (rc x).lpDim = x.1",
+      "producer": "dim",
+      "root_application_anchor": "(hD x).1.1",
+      "human_derivation": "Use multisegment exhaustion; each cuspidal support parameter has the correct dimension. Characteristic polynomials multiply over segment terms, and monic degree adds to rank.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "one",
+      "exact": "one : ∀ χ hχ, rc (.ofChar χ hχ) = WD.lpOfChar h (χ.comp a) (ha.smooth hχ)",
+      "producer": "cusp",
+      "root_application_anchor": "(hcusp _ (IrrGL.isCusp_ofChar χ hχ)).trans (hr.one χ hχ)",
+      "human_derivation": "A rank-one smooth character is cuspidal, hence the extension equals the original cuspidal map, which sends it to its Artin pullback.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "langlands",
+      "exact": "langlands : ∀ (l : List (Segment (w.adicCompletion E))) (x : IrrGL (w.adicCompletion E)),\n    IsL (l : Multiset (Segment (w.adicCompletion E))) x.rep → rc x = segSum rc l",
+      "producer": "extend",
+      "root_application_anchor": "rw [hrc l x hl]",
+      "human_derivation": "The chosen extension sums r on segments. Each first term is cuspidal, so replace r by rc pointwise in the list map; the same sum is segSum rc l.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "cusp",
+      "exact": "cusp : ∀ x, x.IsCusp → IsIrrWD (rc x)",
+      "producer": "cusp",
+      "root_application_anchor": "exact hr.irr x hx",
+      "human_derivation": "On a cuspidal x, rc x = r x, and the original cusp map has irreducible WD value.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "nu",
+      "exact": "nu : ∀ x (s : ℝ), rc (x.nu s) = (rc x).lpTw s",
+      "producer": "tw",
+      "root_application_anchor": "nu := hT.1",
+      "human_derivation": "Twisting by real absolute powers is compatible with classification and each segment; applies without Good.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "absCentral",
+      "exact": "absCentral : ∀ (x : IrrGL (w.adicCompletion E)) ω, HasCentralChar x.rep ω →\n    ∀ σ, ‖((rc x).eig σ).prod‖ = ‖(ω (a σ) : ℂ)‖",
+      "producer": "dim",
+      "root_application_anchor": "((hD x).2 ω hω σ).1",
+      "human_derivation": "Product of eigenvalues factors over cuspidal support; norm is multiplicative and cusp absolute central law is unconditional on GoodCusp.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "twist",
+      "exact": "twist : ∀ x χ hχ, Good x → rc (x.tw χ hχ) = (rc x).lpChar (rc (.ofChar χ hχ))",
+      "producer": "tw",
+      "root_application_anchor": "exact hT.2 x χ hχ hg",
+      "human_derivation": "Rewrite rank-one rc to the Artin character parameter. Good implies every segment first term is GoodCusp, allowing arbitrary smooth character twist there.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "central",
+      "exact": "central : ∀ (x : IrrGL (w.adicCompletion E)) ω, Good x → HasCentralChar x.rep ω →\n    ∀ σ, ((rc x).eig σ).prod = (ω (a σ) : ℂ)",
+      "producer": "dim",
+      "root_application_anchor": "((hD x).2 ω hω σ).2 hg",
+      "human_derivation": "Use uniqueness of support to transfer Good to each cuspidal support entry; multiply exact central character equalities, not merely absolute values.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "dual",
+      "exact": "dual : ∀ (n : ℕ) (π π' : IrrRep (GL (Fin n) (w.adicCompletion E))), Good (cls π) →\n    Nonempty (π'.ρ.Equiv (contra π.ρ)) → rc (cls π') = (rc (cls π)).lpDual",
+      "producer": "dual",
+      "root_application_anchor": "UpperTheory.Zero.LLC.extDual",
+      "human_derivation": "Dual classification pairs segments; first term shifts by len-1, then contragredient reverses twists. The midpoint correction cancels and dual commutes with sum.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "inj",
+      "exact": "inj : ∀ x y, Good y → rc x = rc y → x = y",
+      "producer": "inj",
+      "root_application_anchor": "UpperTheory.Zero.LLC.extInj",
+      "human_derivation": "Unique WD special decomposition recovers pairs of midpoint-twisted irreducible parameter and len-1. With good target y, use cusp injectivity and positive segment length to recover each matching segment; pull back permutation, then multisegment uniqueness.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "depth",
+      "exact": "depth : ∀ x, Good x → GlobalTheory.PRep.fixed x.rep (GlobalTheory.SplitWeil.KOne (w.adicCompletion E) (Fin x.1)) ≠ ⊥ → IsTameWD (rc x)",
+      "producer": "depth",
+      "root_application_anchor": "UpperTheory.Zero.LLC.extDepth",
+      "human_derivation": "DepthZeroSupport transfers KOne-fixed nonzero condition to all support terms; Good gives good cusp parameters. Wild characteristic polynomials are (X-1)^rank on each and multiply to the same power at total rank.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    },
+    {
+      "name": "type",
+      "exact": "type : TypeLaw h rc",
+      "producer": "type",
+      "root_application_anchor": "UpperTheory.Zero.LLC.typeIff",
+      "human_derivation": "Inflation of the finite cuspidal type implies the GL class is cuspidal; replace rc by r and apply hr.type. typeIff translates auxiliary extension/inertia reduction formulation to TypeLaw with all quantifiers.",
+      "status": "SOURCE_MATCHED; deeper named premises OPEN"
+    }
+  ],
+  "obligation_tree": {
+    "root": "UpperTheory.Zero.LLC.recTExists",
+    "witnesses": [
+      {
+        "id": "a",
+        "source": "art",
+        "statement": "Unique local Artin map a: Weil h →* completion units; existence used, uniqueness proof retained in source evidence.",
+        "open": [
+          "GlobalTheory.localArtinExists_holds",
+          "GlobalTheory.globalArtinReciprocity_holds",
+          "GlobalTheory.ArtinLocalInj.artin_localIdele_injective",
+          "GlobalTheory.Published.chevalleyUnits'"
+        ]
+      },
+      {
+        "id": "r",
+        "source": "cusp",
+        "requires": [
+          "a",
+          "ha"
+        ],
+        "statement": "CuspT map r constructed by GoodCusp split; outside good class use (J rank).lpTw(e x).",
+        "open": [
+          "goodMap",
+          "expo",
+          "junkEx",
+          "parUniq",
+          "parOne",
+          "twTame",
+          "tameArt",
+          "clBasic",
+          "wDBasic",
+          "DiscreteGroups.sglob.DzType.lDepth"
+        ],
+        "guard_warning": "Not an unrestricted LLC bijection. Bad branch is deliberately a junk parameter, with separation from good target shown through junkEx, not silently removed."
+      },
+      {
+        "id": "rc",
+        "source": "extend",
+        "requires": [
+          "r",
+          "Pr.exh",
+          "Pr.multi"
+        ],
+        "statement": "Choose a multisegment by exhaustion, map segment parameters and sum. Classification uniqueness gives multiset equality, hence list permutation and sum invariance; singleton cuspidal segment length one proves agreement on cuspidal classes.",
+        "open": [
+          "PositivityTheory.Exh.langlandsExhaustionGL_holds",
+          "PositivityTheory.Exh.langlandsMultisegments_holds",
+          "GlobalTheory.WeilDeligne.charPol_lpTw_lpChar_lpSp",
+          "single_spec",
+          "WD.lpSum_zero"
+        ]
+      }
+    ],
+    "fields": [
+      "dim",
+      "one",
+      "langlands",
+      "cusp",
+      "nu",
+      "absCentral",
+      "twist",
+      "central",
+      "dual",
+      "inj",
+      "depth",
+      "type"
+    ],
+    "unresolved_producers": {
+      "dim": [
+        "Pr.zel",
+        "Pr.bz",
+        "goodSeg",
+        "hasSupport_msupp_of_isL",
+        "WD.charPol_natDegree",
+        "GlobalTheory.T.centralCharacter_eq_prod_supercuspidalSupport"
+      ],
+      "tw": [
+        "GlobalTheory.T.weil_deligne_sum_twist_compat",
+        "GlobalTheory.T.isLanglandsClassification_twist_multisegment",
+        "goodSeg"
+      ],
+      "dual": [
+        "Pr.dual",
+        "GlobalTheory.T.weilDeligneParam_dual_listSum_absTwist_special",
+        "goodSeg"
+      ],
+      "inj": [
+        "GlobalTheory.T.perm_of_weilDeligne_special_decomposition_eq",
+        "LExtInj.lpTw_injective",
+        "LExtInj.eq_of_isL",
+        "Pr.multi",
+        "goodSeg"
+      ],
+      "depth": [
+        "Pr.dzs",
+        "GlobalTheory.T.isTameWeilDeligne_iff_wild_charpoly",
+        "extDim",
+        "goodSeg"
+      ],
+      "type": [
+        "resEx",
+        "DiscreteGroups.sglob.DzType.ine_lift",
+        "exists_int_approx_compl",
+        "val_artin_ine",
+        "red_ne_zero_of_approx",
+        "restrict_mem_ine",
+        "DiscreteGroups.sglob.DzLc.isCuspidal_of_inflates"
+      ]
+    }
+  },
+  "critical_distinctions": [
+    "GoodCusp is rank one OR a smooth twist of a class with nonzero KOne-fixed vectors at a completion continuously isomorphic to Q_p. Good means existence of a support all of whose terms satisfy GoodCusp. Neither is universal.",
+    "inj requires Good y only, not Good x and not no guard. Exact central and arbitrary character twist require Good x; absolute central and real-power twist do not. The type condition is a separate universally quantified implication, not an unconditional tameness statement.",
+    "The theorem provides a total map with conditional laws, not full unguarded local Langlands correspondence, nor a proof of surjectivity. Do not interpret Published names as validated historical citations."
+  ],
+  "type_law_exact": "def TypeLaw (rc : IrrGL (w.adicCompletion E) → WD h) : Prop :=\n  ∀ (E' : Type) [Field E'] [NumberField E'] [Algebra E E'] [Algebra E' Ω] [IsScalarTower E E' Ω] [IsAlgClosure E' Ω]\n    (g : ℕ) [Fact g.Prime] (w' : HeightOneSpectrum (𝓞 E')) (h' : IsPlaceOver A w'),\n    ∀ (i : ℚ_[g] ≃+* w.adicCompletion E), Continuous i →\n    ∀ n : ℕ, 0 < n → ((g : ℕ) : 𝓞 E') ∉ w'.asIdeal ^ 2 → normV w' = g ^ n →\n    ∀ a' : Weil h' →* (w'.adicCompletion E')ˣ, IsLocalArtin h' a' →\n    ∀ (K : Type) [Field K] [Algebra (ZMod g) K] (red : 𝓞 E' →+* K), Function.Surjective red →\n      RingHom.ker red = w'.asIdeal →\n    ∀ θ : Kˣ →* ℂˣ, GlobalTheory.Published.IsRegularChar g n θ →\n    ∀ τ : FDRep ℂ (Gn g n), IsCusp τ.character →\n      (∀ y : Gn g n, Irreducible (y : Mt g n).charpoly → ∀ z : Kˣ, aeval (z : K) (y : Mt g n).charpoly = 0 →\n        τ.character y = (-1) ^ (n - 1) * ∑ j ∈ Finset.range n, ((θ (z ^ g ^ j) : ℂˣ) : ℂ)) →\n    ∀ σ : GlobalTheory.SmGL.IrrRep (GL (Fin n) (w.adicCompletion E)),\n      GlobalTheory.SerSys.TameGen.Inflates (σ.ρ.comp (Matrix.GeneralLinearGroup.map i.toRingHom)) τ →\n      (rc (cls σ)).mono0 ∧\n      ∀ (t : Ine (F := E') A) (x : 𝓞 E') (z : Kˣ), red x = z →\n        Valued.v ((a' (ineIncl h' t) : w'.adicCompletion E') - algebraMap E' (w'.adicCompletion E') (x : E')) < 1 →\n        (rc (cls σ)).inePol (AlgEquiv.restrictScalars E (t : G E' Ω)) =\n          ∏ j ∈ Finset.range n, (X - C ((θ (z ^ g ^ j) : ℂˣ) : ℂ))",
+  "good_definitions_exact": "def GoodCusp (y : IrrGL k) : Prop :=\n  y.1 = 1 ∨ ((∃ (g : ℕ) (_ : Fact g.Prime) (i : ℚ_[g] ≃+* k), Continuous i) ∧\n    ∃ (y₀ : IrrGL k) (χ : kˣ →* ℂˣ) (hχ : IsSmoothChar χ), GlobalTheory.PRep.fixed y₀.rep (GlobalTheory.SplitWeil.KOne k (Fin y₀.1)) ≠ ⊥ ∧ y = y₀.tw χ hχ)\n\ndef Good (x : IrrGL k) : Prop := ∃ s, HasSupport x.rep s ∧ ∀ y ∈ s, GoodCusp y",
+  "tests": {
+    "executed": "V8 JS in this run; fetched all 13 pinned modules; exact ordered field extraction and 12 producer anchors, 19 guard/dependency anchors; 5/5 deliberately altered sources rejected. Not Lean elaboration.",
+    "field_count": 12,
+    "negative_controls_rejected": 5,
+    "guard_checks": 19,
+    "method": "Extract /^  (\\w+) : /gm between structure LawsT and def IsRecT; compare ordered fields; check root anchors and each guard literally; mutate each listed string individually.",
+    "guard_anchors": [
+      [
+        "laws",
+        "twist : ∀ x χ hχ, Good x →"
+      ],
+      [
+        "laws",
+        "central : ∀ (x : IrrGL (w.adicCompletion E)) ω, Good x →"
+      ],
+      [
+        "laws",
+        "inj : ∀ x y, Good y → rc x = rc y → x = y"
+      ],
+      [
+        "laws",
+        "dual : ∀ (n : ℕ) (π π' : IrrRep (GL (Fin n) (w.adicCompletion E))), Good (cls π) →"
+      ],
+      [
+        "laws",
+        "depth : ∀ x, Good x →"
+      ],
+      [
+        "laws",
+        "absCentral : ∀ (x : IrrGL (w.adicCompletion E)) ω, HasCentralChar x.rep ω →"
+      ],
+      [
+        "cusp",
+        "if GoodCusp x then r₀ x else (J x.1).lpTw (e x)"
+      ],
+      [
+        "cusp",
+        "(hJ _ hx2).2.2.2 hq"
+      ],
+      [
+        "extend",
+        "sumList_perm"
+      ],
+      [
+        "extend",
+        "single_spec hx"
+      ],
+      [
+        "art",
+        "ha.glob art hart σ"
+      ],
+      [
+        "dim",
+        "Polynomial.natDegree_multiset_prod_of_monic"
+      ],
+      [
+        "dim",
+        "prod_roots_prod_of_monic"
+      ],
+      [
+        "tw",
+        "rc_tw_of_segments"
+      ],
+      [
+        "dual",
+        "map_summand_dual"
+      ],
+      [
+        "inj",
+        "perm_of_weilDeligne_special_decomposition_eq"
+      ],
+      [
+        "depth",
+        "isTameWeilDeligne_iff_wild_charpoly"
+      ],
+      [
+        "type",
+        "restrict_mem_ine"
+      ],
+      [
+        "root",
+        "DiscreteGroups.sglob.DzLc.isCuspidal_of_inflates"
+      ]
+    ],
+    "negative_controls": [
+      [
+        "laws",
+        "Good y → rc x",
+        "Good x → rc x"
+      ],
+      [
+        "laws",
+        "Good x → HasCentralChar",
+        "HasCentralChar"
+      ],
+      [
+        "cusp",
+        "if GoodCusp x then r₀ x else (J x.1).lpTw (e x)",
+        "r₀ x"
+      ],
+      [
+        "root",
+        "exact hr.irr x hx",
+        "exact hr.irr x"
+      ],
+      [
+        "laws",
+        "  type : TypeLaw h rc",
+        "  discarded : TypeLaw h rc"
+      ]
+    ]
+  },
+  "peer_checkpoint": "Read all latest available specialist handoff tails at Cathedral snapshot 1cb5008a458cf6e5d7f5a625d4f3dc1c8380540f, including proof editor 0856 manuscript, geometry, Galois, theta, analytic, literature, audit, dependency, structure and acceleration. This local LLC record expansion is distinct from the Galois CoreAll/Row0b next step.",
+  "index": {
+    "current_manuscript": "../specialists/proof_editor/2026-11-24_0856_INTEGRATED_MANUSCRIPT.md",
+    "previous_root_graph": "2026-11-24_0800_TYPED_ROOT_OBLIGATION_GRAPH.json",
+    "full_export_status": "WHOLE_PROOF_COVERAGE_AND_EXPORT_RUN.md",
+    "new_chapter": "This file; record field proof table and witness tree."
+  },
+  "coverage": {
+    "previous_selected_root_interfaces": 16,
+    "record_fields_expanded": 12,
+    "source_modules_this_run": 13,
+    "reachable_kernel_denominator": null,
+    "full_translation_percentage": null
+  },
+  "failed_attempts": [
+    "Branch fetch_file peer reads returned 404; recovered same paths through raw URLs at fresh Cathedral snapshot.",
+    "Original stream compute status error, exit 1, 8.4s, length mismatch 350862311 vs advertised; structure lane already registered retry, do not duplicate. Native fixture v2 status unavailable (404), not interpreted as failure or success. No local Lean execution."
+  ],
+  "prior_CI": "Cathedral orchestrator #356 PASS at 2026-11-24 08:41:49 UTC; https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45355061872; unrelated to new RH kernel verification.",
+  "resume_here": "Expand goodMap and junkEx specifically into exact hypothesis trees and audit the junk/good separation used in CuspEx.inj; link guarded local correspondence to Galois Row0b only using actual source call. Check retry export status and source-matched chapter joins; no full closure claim.",
+  "handoff_to": "Galois, literature, editor, audit, dependencies, integration"
+}
