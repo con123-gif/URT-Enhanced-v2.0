@@ -3302,3 +3302,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 30
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-locality-frontier-retry-20261124"
+question = "Retry timed-out checksum-pinned solution reference closure with highest-expression-ID bitmap frontier, eager declaration closure, and explicit phase/progress logs. Challenge and solution digest checks unchanged; not kernel replay or proof completion."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_locality_frontier_retry.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
