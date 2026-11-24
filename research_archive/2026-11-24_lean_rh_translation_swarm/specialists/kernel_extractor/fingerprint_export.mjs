@@ -135,4 +135,4 @@ function regression(actual, digest){
 const args=process.argv.slice(2);
 if(!args.length)throw Error('usage: node fingerprint_export.mjs [--self-test] example.ndjson');
 if(args[0]==='--self-test')console.log(JSON.stringify(regression(fs.readFileSync(args[1],'utf8'),digest),null,2));
-else console.log(JSON.stringify(fingerprints(fs.readFileSync(args[0],'utf8').trim().split(/\\r?\\n/).map(JSON.parse),digest),null,2));
+else console.log(JSON.stringify(fingerprints(fs.readFileSync(args[0],'utf8').trim().split(/\r?\n/).map(JSON.parse),digest),null,2));
