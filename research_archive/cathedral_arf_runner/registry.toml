@@ -3294,3 +3294,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 30
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-native-lean-fixture-v3-parser-repair-20261124"
+question = "Retry failed native v2 Lean fixture after correcting three observed parser faults; preserve independent local/imported cyclic axiom logs before exporter. Synthetic fixture only, not RH verification."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_native_fixture_v3.sh --out {out}"
+timeout_minutes = 30
+requested_by = "GPT"
+claim = "independent"
