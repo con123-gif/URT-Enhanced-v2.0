@@ -33,3 +33,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-locality-frontier-retry-20261124` | error | 1605.13 | 2026-11-24T13:42:14Z | GPT | Retry timed-out checksum-pinned solution reference closure with highest-expression-ID bitmap frontier, eager declaration |
 | `rh-native-cycle-witness-20261124` | pass | 14.51 | 2026-11-24T14:11:19Z | GPT | Extract explicit reference witness paths for each synthetic inductive-cycle member after actual imported axiom-cache dis |
 | `rh-mutual-metadata-closure-20261124` | pass | 1287.79 | 2026-11-24T14:38:49Z | GPT | After authenticated solution traversal failed at missing name 6019714, partition kernel-unused def/theorem/opaque mutual |
+| `rh-native-cycle-rc1-20261124` | error | 12.61 | 2026-11-24T15:11:44Z | GPT | On the separately pinned Lean v4.37.0-rc1, compare imported cached axiom reports with the newly public fresh collector ( |
