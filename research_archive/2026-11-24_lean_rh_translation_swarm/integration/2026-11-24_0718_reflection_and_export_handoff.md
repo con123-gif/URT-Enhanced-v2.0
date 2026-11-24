@@ -1,0 +1,23 @@
+# Reflection and nonvanishing junction — manual continuation
+
+Status: SOURCE-MATCHED, not locally elaborated. Original upstream revision 40e56bab026552e089d7afcfeff08d2defb9c005.
+
+## Exact source-matched reconstruction
+- src/Main.lean (blob dbd5db70bc11b35f18fa5751216ab335321e7bfc): riemannHypothesis uses rhOfAll.
+- src/Supplements/Kernels/MainTheorems.lean (6a542d7ce969a791fd12ce575f587e6bc29044bf): rhOfAll uses Formalism.VW.rh_of_every allChi; allChi uses UpperTheory.FinalTheorems.everyCharacter.
+- src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean (6ac769568b67f85f33565ba3e1eef7b91f53c55f): all positive moduli N, all characters chi and all complex s with Re(s)>1/2, except chi=1 AND s=1, have nonzero L(chi,s).
+- src/Formalism/GammaFactorNonvanishing/CritLine.lean (95fa4da5c50119db164aa93944d106f22fdb576d): specialize to the modulus-one character, identify its L-function with zeta. For primitive chi and 0<Re(s)<1, a left-half zero would give a zero of the completed L-function (gamma factor nonzero); the functional equation transfers it to inverse chi at 1-s, violating EveryCharacter. A right-half zero violates EveryCharacter directly. Inverse character remains primitive; s and 1-s are nonzero; neither relevant point is the excluded pole.
+- src/Formalism/GammaFactorNonvanishing/RhOfRight.lean (3604637147a33e72248faddd775ea750e7846ead): for any nontrivial zeta zero s unequal to 1, rule out s=0 using zeta(0)=-1/2. Right-half nonvanishing excludes Re(s)>1/2. If Re(s)<1/2 put t=1-s; Re(t)>1/2, t!=1, t is not a nonpositive integer. The functional equation zeta(1-t)=2(2pi)^(-t) Gamma(t) cos(pi*t/2) zeta(t) then contradicts zeta(s)=0: all factors nonzero, including cosine since cosine zero forces s=-2k for integer k, with k<0 impossible by Re(s)<1/2, k=0 excluded, k>0 trivial zero excluded. Thus Re(s)=1/2.
+
+## Upstream junction
+MainConclusion.lean (ee340012ab19713a8acfecf8adc6a331cbc2f1a4): the row theorem supplies the tuple of literature inputs (h, recTExists, h) and the window vwin_of_row h. VwinOfRow.lean (4cba179acd45ac08d3cad21f51c9b9d62715a9a4) constructs the window from OpenImageCondition.mk h and baseChangeN h. RowSrc.lean (f769999ac5e49241993e5efbf81e4d2cded18acd) gets the row from galoisRepresentations_of_thetaLift tLiftK.
+EveryCharacterOfLiteratureOfVWin.lean (a13ba1f8c38d4dbf2ddd809fbf9610a007936c24; source fetch counted 815 split lines, 208 import statements): final theorem calls every_character_of_theta_integrals_local_matching with seven explicit arguments: published_results_eigen O, published_results_first O, both projections of theta_integrals_agree_and_local_matching_of_literature O, topCovolSlim2_use_alt_alt (15 explicit inputs), local_langlands_gl_recT_exists_of_literature O, hV. Preserve both projections even when sharing their producer. This is a source-level interface map, not the complete kernel dependency graph.
+
+## Avoid duplicate full compilation
+Public independent verification report https://math.mit.edu/~drew/grh/ updated 2026-11-24 03:30 UTC reports 175187 compiled modules; full export 61570595788 bytes, SHA256 prefix 5ea74b91 suffix 244e; con-leche accepted 1468418 declarations; standard axiom set propext, Classical.choice, Quot.sound. Lean community confirmation https://leanprover-community.github.io/blog/posts/riemann-hypothesis/. Distinguish external proof verification from our translation verification. Existing verified export or precompiled environment is preferred to rebuilding all modules for dependency extraction. Public repo README https://github.com/leanprover-community/riemann-hypothesis describes cache and original commit. Exact export availability and checksum must be checked, not assumed.
+
+## Tests and limitations
+Actual connector fetches of the listed original files succeeded; source-level count executed. Local shell has neither Lean nor Lake and no GitHub DNS; no local kernel check, no full export transfer or URT full-corpus benchmark performed. Prior reported exporter commit could not be identified by commit search. Do not treat that report as current verified persistence.
+
+RESUME HERE (dependencies): locate the verified export or pinned precompiled original cache; obtain exact exporter artifact from prior lane; test its compilation or implement streaming export parser on actual format and extract root-reachable declarations in O(V+E) after expression-DAG reference indexing. Do not assume import counts are kernel-edge counts.
+HANDOFF TO (math): unpack every_character_of_theta_integrals_local_matching with all seven exact input types, and the prime-window argument; preserve both shared theta projections and arithmetic obligations. No physics assumptions or new axioms.
