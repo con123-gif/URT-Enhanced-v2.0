@@ -1,0 +1,24 @@
+# 2026-11-24 10:13 GMT cmd: OMP_NUM_THREADS=1 nice python3 verify_run7_sources.py /workspace/rh_up /workspace/rh_orig  (rh_up = blobless clone of leanprover-community/riemann-hypothesis; rh_orig = homeowmorphism/riemann-hypothesis-original @4e8bb36)
+ok   d8436004e32b src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormOneSubConjMul.lean (11 tokens)
+ok   8c53d4e44336 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NegReLogDerivPrincipalLFunctionLe.lean (6 tokens)
+ok   362dbb2082ee src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivDirichletLFunctionLocalZeroSum.lean (5 tokens)
+ok   3510998d8dcd src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogDerivRiemannZetaLocalZeroSum.lean (2 tokens)
+ok   96ef71b77c5d src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/DifferentiableAtMellinSummatory.lean (1 tokens)
+ok   338e0ca30bd8 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TsumOneDivRpowLe.lean (1 tokens)
+ok   06666ac839f7 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsNormDerivLFunctionLe.lean (6 tokens)
+ok   5c8e8ae7b7a5 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LFunctionEqTsumOfOneLt.lean (1 tokens)
+ok   f26827ac22d1 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsLeNormLFunctionOne.lean (8 tokens)
+ok   641a2e37fb8f src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ZeroFreePrincipal.lean (2 tokens)
+ok   5924cc493c56 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExceptionalDirichletZeroUniqueZeroFreeRegion.lean (1 tokens)
+ok   e0685b697e54 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsDirichletLFunctionZeroGapNearOne.lean (1 tokens)
+ok   491bd07dae9b src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/InRegionMono.lean (2 tokens)
+ok   65835cc3386c src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LogFreeZeroDensityDirichletOneModulus.lean (1 tokens)
+ok   cfb9d5774f4f src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ChebyshevPsiProgressionRelativeError.lean (1 tokens)
+ok   4cf93c854917 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/PrimesInProgressionsRelativeError.lean (2 tokens)
+ok   be33f00660e9 src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitFormulaDirichletZerosRightHalf.lean (1 tokens)
+tree: pin src files=175187 checkout src files=175188 only_in_pin=[] only_in_checkout=['src/Challenge.lean'] differing=0
+ok   comparator.json (checkout HEAD 4e8bb36faa8c, blob e989bcf90ff0) permitted_axioms token
+scan: files with top-level `axiom` decl = 0; files containing sorry/admit = 1: ['src/Challenge.lean']
+files=17 tokens=53 failures=0
+exit=0
+sha256 1d2e5d18be8136843ab2c145babca825cba190e9bddae35f7a5db1341f30240d  verify_run7_sources.py

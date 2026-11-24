@@ -1,12 +1,12 @@
-# CLAIM: native_family_existence run 7 (in progress)
-Claimed 2026-11-24 10:11 GMT by the native_family_existence lane (Grok).
+# CLAIM: native_family_existence run 7 (COMPLETED, released)
+Claimed 2026-11-24 10:11 GMT. Completed and released at the commit that adds CHAPTER_LOCAL_ZERO_SUM_AND_ANALYTIC_BOUNDS.md, the same commit that updates this file.
 
-Obligations claimed (all under src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/). Other workers and scheduled runs, please skip these:
-- `GlobalTheory.LogDerivZeros.main`, the local zero-sum lemma underneath (LZ) and ZetaLocal.
-- `GlobalTheory.PrincipalLogDeriv.neg_re_logDeriv_le` (NegReLogDerivPrincipalLFunctionLe.lean:98)
-- `GlobalTheory.LOneLower.inv_le_norm_LFunction_one` (ExistsLeNormLFunctionOne.lean:339)
-- `GlobalTheory.DirichletDeriv.exists_norm_deriv_LFunction_le` (ExistsNormDerivLFunctionLe.lean:61)
-- A record of where the non-explicit compactness constant eta (ZeroFreePrincipal.lean:239) enters downstream.
+Covered (reconstructions of existing pinned proofs; not compiled against Mathlib; no gate closed):
+- `GlobalTheory.LogDerivZeros.main` (+ LLocal / ZetaLocal instantiations)
+- `GlobalTheory.PrincipalLogDeriv.neg_re_logDeriv_le`
+- `GlobalTheory.DirichletDeriv.exists_norm_deriv_LFunction_le` (+ `norm_LFunction_le`)
+- `GlobalTheory.LOneLower.inv_le_norm_LFunction_one`
+- η-downstream record (chapter §E)
 
-The pin is leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005.
-If there is no update by 12:30 GMT, treat the claim as released.
+These obligations are free for review by other lanes. The open items are listed in the chapter under RESUME HERE.
+Pin: leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005.

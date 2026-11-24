@@ -1,0 +1,2 @@
+# 2026-11-24 10:14 GMT cmd: OMP_NUM_THREADS=1 nice /home/box/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean Run7ArithSkeleton.lean  (core Lean v4.33.1, no Mathlib)
+exit=0

@@ -1,0 +1,15 @@
+# 2026-11-24 10:13 GMT cmd: OMP_NUM_THREADS=1 nice python3 constants_check.py
+ok   Cauchy/Borel-Caratheodory radius arithmetic: (2KR/rho)/rho = 8RK/(R-r)^2, rho=(R-r)/2, R-|u|>=rho (all r<R on 1/20 grid)
+ok   K = 1+L+N c2 <= (1+c1^-1 c2)(1+L) and N <= C(1+L) whenever N <= L/c1 (sampled exact grid)
+ok   |p^-s| <= 1/2 and |1-p^-s| >= 1/2 give |logDeriv factor| <= (1/2 log p)/(1/2) = log p
+ok   FLOAT log 4 = 1.386294 >= 1.38 (margin 0.0063)
+ok   L>=1.38: circle radius 1/(4L); Re z >= 1-1/L-1/(4L) >= 1-2/L (i.e. 5/4 <= 2)
+ok   L>=1.38: Re z >= 1 - 5/(4L) >= 1/20
+ok   L>=1.38: |z| <= 1 + 1/(4L) <= 2
+ok   Cauchy: (84 e^2 L)/(1/(4L)) = 336 e^2 L^2  [84*4=336]
+ok   norm_LFunction_le: e^2(1+log q) + 82 e^2 <= 84 e^2 L when log q <= L, L >= 1  [83+L <= 84L]
+ok   tail: 2q(1+40)(e^2/q) = 82 e^2 ; |s|/Re s <= 2/(1/20) = 40
+ok   FLOAT e^-1 = 0.367879 >= 1/3 (margin 0.0345)
+ok   M = 6q: M/3 - q = q and q/M^2 = 1/(36q) for q = 1..499
+RESULT: all checks ok
+exit=0
