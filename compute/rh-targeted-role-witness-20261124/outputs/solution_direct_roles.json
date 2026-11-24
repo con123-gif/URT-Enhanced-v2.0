@@ -1,0 +1,1507 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "file": "solution.ndjson.zst",
+  "digest": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "bytes": 61570595788,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 1065214335,
+  "root": 14065054,
+  "indexedDeclarations": 1484733,
+  "projectionMs": 733,
+  "maxRssKiB": 2245208,
+  "reports": [
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Main.lean",
+        "blob": "dbd5db70bc11b35f18fa5751216ab335321e7bfc",
+        "line": 4,
+        "name": "riemannHypothesis",
+        "expectedValueNames": [
+          "rhOfAll"
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 14065054,
+      "kind": "thm",
+      "type": {
+        "expressionRoot": 6490658,
+        "expressionsRead": 1,
+        "childEdges": 0,
+        "referenceOccurrences": 1,
+        "peakPending": 1,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 326825,
+            "nameParts": [
+              "RiemannHypothesis"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6490658,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 1065212062,
+        "expressionsRead": 1,
+        "childEdges": 0,
+        "referenceOccurrences": 1,
+        "peakPending": 1,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 14065053,
+            "nameParts": [
+              "rhOfAll"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 1065212062,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "missingExpected": [],
+      "mutualBlock": [
+        {
+          "id": 14065054,
+          "nameParts": [
+            "riemannHypothesis"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "blob": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+        "line": 9,
+        "name": "rhOfAll",
+        "expectedValueNames": [
+          "Formalism.VW.rh_of_every",
+          "allChi"
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 14065053,
+      "kind": "thm",
+      "type": {
+        "expressionRoot": 6490658,
+        "expressionsRead": 1,
+        "childEdges": 0,
+        "referenceOccurrences": 1,
+        "peakPending": 1,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 326825,
+            "nameParts": [
+              "RiemannHypothesis"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6490658,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 1065212061,
+        "expressionsRead": 3,
+        "childEdges": 2,
+        "referenceOccurrences": 2,
+        "peakPending": 2,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 14065052,
+            "nameParts": [
+              "allChi"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 1065212060,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 341189,
+            "nameParts": [
+              "Formalism",
+              "VW",
+              "rh_of_every"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 1065212059,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "missingExpected": [],
+      "mutualBlock": [
+        {
+          "id": 14065053,
+          "nameParts": [
+            "rhOfAll"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "blob": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+        "line": 7,
+        "name": "allChi",
+        "expectedValueNames": [
+          "UpperTheory.FinalTheorems.everyCharacter"
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 14065052,
+      "kind": "thm",
+      "type": {
+        "expressionRoot": 6497236,
+        "expressionsRead": 1,
+        "childEdges": 0,
+        "referenceOccurrences": 1,
+        "peakPending": 1,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 326947,
+            "nameParts": [
+              "UpperTheory",
+              "EveryCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6497236,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 1065212058,
+        "expressionsRead": 1,
+        "childEdges": 0,
+        "referenceOccurrences": 1,
+        "peakPending": 1,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 14065051,
+            "nameParts": [
+              "UpperTheory",
+              "FinalTheorems",
+              "everyCharacter"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 1065212058,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "missingExpected": [],
+      "mutualBlock": [
+        {
+          "id": 14065052,
+          "nameParts": [
+            "allChi"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+        "line": 10,
+        "name": "UpperTheory.FinalTheorems.everyCharacter",
+        "expectedValueNames": [
+          "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 14065051,
+      "kind": "thm",
+      "type": {
+        "expressionRoot": 6497236,
+        "expressionsRead": 1,
+        "childEdges": 0,
+        "referenceOccurrences": 1,
+        "peakPending": 1,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 326947,
+            "nameParts": [
+              "UpperTheory",
+              "EveryCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6497236,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 1065212057,
+        "expressionsRead": 3,
+        "childEdges": 2,
+        "referenceOccurrences": 2,
+        "peakPending": 2,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 14065050,
+            "nameParts": [
+              "UpperTheory",
+              "Gal",
+              "Int",
+              "galoisLocalGlobalStrong_recParameter"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 1065212056,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 13125901,
+            "nameParts": [
+              "UpperTheory",
+              "FinalTheorems",
+              "everyCharacter_of_row"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 1065212055,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "missingExpected": [],
+      "mutualBlock": [
+        {
+          "id": 14065051,
+          "nameParts": [
+            "UpperTheory",
+            "FinalTheorems",
+            "everyCharacter"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+        "line": 7,
+        "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "expectedValueNames": [
+          "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "UpperTheory.Zero.LLC.recTExists",
+          "UpperTheory.One.vwin_of_row"
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 13125901,
+      "kind": "thm",
+      "type": {
+        "expressionRoot": 997980690,
+        "expressionsRead": 161,
+        "childEdges": 244,
+        "referenceOccurrences": 27,
+        "peakPending": 14,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 326947,
+            "nameParts": [
+              "UpperTheory",
+              "EveryCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6497236,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 549935,
+            "nameParts": [
+              "UpperTheory",
+              "Zero",
+              "LLC",
+              "IsRecT"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 12992007,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 421532,
+            "nameParts": [
+              "GlobalTheory",
+              "WeilDeligne",
+              "WD"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609135,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 417477,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers",
+              "instIsFractionRing"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 8609106,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 386786,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers",
+              "instAlgebra_1"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609102,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 417457,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers",
+              "instIsDedekindDomain"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 8609095,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385914,
+            "nameParts": [
+              "NumberField",
+              "instCommRingRingOfIntegers"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609075,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385909,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609071,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 418944,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum",
+              "adicCompletion",
+              "instUniformSpace"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609124,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 395120,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum",
+              "adicCompletion"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609088,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 54573,
+            "nameParts": [
+              "UniformSpace",
+              "toTopologicalSpace"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 677773,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 418684,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum",
+              "adicCompletion",
+              "instField"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609113,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 387338,
+            "nameParts": [
+              "GlobalTheory",
+              "LocGL",
+              "IrrGL"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609087,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 386800,
+            "nameParts": [
+              "Formalism",
+              "ConjugateSelfDual",
+              "IsPlaceOver"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609079,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385674,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609070,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385664,
+            "nameParts": [
+              "ValuationSubring"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609067,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385652,
+            "nameParts": [
+              "UpperTheory",
+              "GalStar",
+              "RecNotion",
+              "_proof_1"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 8609060,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4099,
+            "nameParts": [
+              "Field",
+              "toCommRing"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 1244768,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 341243,
+            "nameParts": [
+              "IsAlgClosure"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609052,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4101,
+            "nameParts": [
+              "Field",
+              "toSemifield"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315578,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4098,
+            "nameParts": [
+              "Semifield",
+              "toDivisionSemiring"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315576,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4074,
+            "nameParts": [
+              "DivisionSemiring",
+              "toSemiring"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315574,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4083,
+            "nameParts": [
+              "Semifield",
+              "toCommSemiring"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 1246540,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 85935,
+            "nameParts": [
+              "Algebra"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 5945860,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 3820,
+            "nameParts": [
+              "Field"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 216818,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 341190,
+            "nameParts": [
+              "NumberField"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609044,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 421714,
+            "nameParts": [
+              "UpperTheory",
+              "GalStar",
+              "Row0b"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 12992006,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 997980699,
+        "expressionsRead": 170,
+        "childEdges": 256,
+        "referenceOccurrences": 30,
+        "peakPending": 14,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 13125899,
+            "nameParts": [
+              "UpperTheory",
+              "One",
+              "vwin_of_row"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 997980696,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 11307205,
+            "nameParts": [
+              "UpperTheory",
+              "Zero",
+              "LLC",
+              "recTExists"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 901833048,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 550021,
+            "nameParts": [
+              "UpperTheory",
+              "LiteratureTheorems",
+              "OpenLiteratureStatements",
+              "mk"
+            ],
+            "targetKind": "ctor",
+            "witnessExpression": 12992050,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 11298208,
+            "nameParts": [
+              "UpperTheory",
+              "LiteratureTheorems",
+              "every_character_of_literature_of_vWin"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 997980691,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 549935,
+            "nameParts": [
+              "UpperTheory",
+              "Zero",
+              "LLC",
+              "IsRecT"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 12992007,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 421532,
+            "nameParts": [
+              "GlobalTheory",
+              "WeilDeligne",
+              "WD"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609135,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 417477,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers",
+              "instIsFractionRing"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 8609106,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 386786,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers",
+              "instAlgebra_1"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609102,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 417457,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers",
+              "instIsDedekindDomain"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 8609095,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385914,
+            "nameParts": [
+              "NumberField",
+              "instCommRingRingOfIntegers"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609075,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385909,
+            "nameParts": [
+              "NumberField",
+              "RingOfIntegers"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609071,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 418944,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum",
+              "adicCompletion",
+              "instUniformSpace"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609124,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 395120,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum",
+              "adicCompletion"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609088,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 54573,
+            "nameParts": [
+              "UniformSpace",
+              "toTopologicalSpace"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 677773,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 418684,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum",
+              "adicCompletion",
+              "instField"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609113,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 387338,
+            "nameParts": [
+              "GlobalTheory",
+              "LocGL",
+              "IrrGL"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609087,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 386800,
+            "nameParts": [
+              "Formalism",
+              "ConjugateSelfDual",
+              "IsPlaceOver"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 8609079,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385674,
+            "nameParts": [
+              "IsDedekindDomain",
+              "HeightOneSpectrum"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609070,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385664,
+            "nameParts": [
+              "ValuationSubring"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609067,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 385652,
+            "nameParts": [
+              "UpperTheory",
+              "GalStar",
+              "RecNotion",
+              "_proof_1"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 8609060,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4099,
+            "nameParts": [
+              "Field",
+              "toCommRing"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 1244768,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 341243,
+            "nameParts": [
+              "IsAlgClosure"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609052,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4101,
+            "nameParts": [
+              "Field",
+              "toSemifield"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315578,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4098,
+            "nameParts": [
+              "Semifield",
+              "toDivisionSemiring"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315576,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4074,
+            "nameParts": [
+              "DivisionSemiring",
+              "toSemiring"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315574,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4083,
+            "nameParts": [
+              "Semifield",
+              "toCommSemiring"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 1246540,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 85935,
+            "nameParts": [
+              "Algebra"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 5945860,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 3820,
+            "nameParts": [
+              "Field"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 216818,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 341190,
+            "nameParts": [
+              "NumberField"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 8609044,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 421714,
+            "nameParts": [
+              "UpperTheory",
+              "GalStar",
+              "Row0b"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 12992006,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "missingExpected": [],
+      "mutualBlock": [
+        {
+          "id": 13125901,
+          "nameParts": [
+            "UpperTheory",
+            "FinalTheorems",
+            "everyCharacter_of_row"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+        "blob": "95fa4da5c50119db164aa93944d106f22fdb576d",
+        "line": 26,
+        "name": "Formalism.VW.rh_of_every",
+        "expectedValueNames": [
+          "Formalism.VW.rh_of_right",
+          "LFunction_modOne_eq"
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 341189,
+      "kind": "thm",
+      "type": {
+        "expressionRoot": 6497237,
+        "expressionsRead": 3,
+        "childEdges": 2,
+        "referenceOccurrences": 2,
+        "peakPending": 2,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 326825,
+            "nameParts": [
+              "RiemannHypothesis"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6490658,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326947,
+            "nameParts": [
+              "UpperTheory",
+              "EveryCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6497236,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 6497286,
+        "expressionsRead": 166,
+        "childEdges": 237,
+        "referenceOccurrences": 42,
+        "peakPending": 18,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 62743,
+            "nameParts": [
+              "Complex",
+              "instField"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 762263,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4101,
+            "nameParts": [
+              "Field",
+              "toSemifield"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315578,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 27596,
+            "nameParts": [
+              "Semifield",
+              "toCommGroupWithZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 563908,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 20423,
+            "nameParts": [
+              "CommGroupWithZero",
+              "toCommMonoidWithZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 569486,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "literal_primitive",
+            "target": 61,
+            "nameParts": [
+              "Nat"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 1061,
+            "distinctExpressionRecords": 3
+          },
+          {
+            "kind": "explicit_const",
+            "target": 169,
+            "nameParts": [
+              "instOfNatNat"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 927,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 61,
+            "nameParts": [
+              "Nat"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 316,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 80,
+            "nameParts": [
+              "OfNat",
+              "ofNat"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 924,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326877,
+            "nameParts": [
+              "ZMod",
+              "commRing"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6047499,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326845,
+            "nameParts": [
+              "ZMod"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6046520,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 28557,
+            "nameParts": [
+              "CommRing",
+              "toCommMonoid"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 2265840,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 327019,
+            "nameParts": [
+              "MulChar",
+              "hasOne"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6102682,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326939,
+            "nameParts": [
+              "DirichletCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6102640,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 1939,
+            "nameParts": [
+              "One",
+              "toOfNat1"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 89942,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 341183,
+            "nameParts": [
+              "DirichletCharacter",
+              "LFunction_modOne_eq"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 6497276,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 28998,
+            "nameParts": [
+              "Complex",
+              "instZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 318612,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 82,
+            "nameParts": [
+              "Zero",
+              "toOfNat0"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 89971,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 2086,
+            "nameParts": [
+              "Ne"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 11995,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326824,
+            "nameParts": [
+              "riemannZeta"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6045936,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4770,
+            "nameParts": [
+              "Nat",
+              "instNeZeroSucc"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 44331,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 328658,
+            "nameParts": [
+              "DirichletCharacter",
+              "LFunction"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6102695,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 646,
+            "nameParts": [
+              "congrArg"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 5737,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 2655,
+            "nameParts": [
+              "Eq",
+              "mp"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 15076,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 30044,
+            "nameParts": [
+              "Complex",
+              "instOne"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 330648,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 268,
+            "nameParts": [
+              "Or",
+              "inr"
+            ],
+            "targetKind": "ctor",
+            "witnessExpression": 1207,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 28826,
+            "nameParts": [
+              "Complex",
+              "re"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 317324,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4764,
+            "nameParts": [
+              "Nat",
+              "instAtLeastTwoHAddOfNat"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 44329,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 30042,
+            "nameParts": [
+              "Real",
+              "instNatCast"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 330572,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 22498,
+            "nameParts": [
+              "Real"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 238331,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4689,
+            "nameParts": [
+              "instOfNatAtLeastTwo"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 664647,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 28695,
+            "nameParts": [
+              "Real",
+              "instOne"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315980,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 47999,
+            "nameParts": [
+              "Real",
+              "instDivInvMonoid"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 558934,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4668,
+            "nameParts": [
+              "DivInvMonoid",
+              "toDiv"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 559162,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 1636,
+            "nameParts": [
+              "instHDiv"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 7664,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 1630,
+            "nameParts": [
+              "HDiv",
+              "hDiv"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 7660,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 37205,
+            "nameParts": [
+              "Real",
+              "instLT"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 433844,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 111,
+            "nameParts": [
+              "LT",
+              "lt"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 585,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 22503,
+            "nameParts": [
+              "Complex"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 238344,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 341050,
+            "nameParts": [
+              "Formalism",
+              "VW",
+              "rh_of_right"
+            ],
+            "targetKind": "thm",
+            "witnessExpression": 6497238,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326947,
+            "nameParts": [
+              "UpperTheory",
+              "EveryCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6497236,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "missingExpected": [
+        "LFunction_modOne_eq"
+      ],
+      "mutualBlock": [
+        {
+          "id": 341189,
+          "nameParts": [
+            "Formalism",
+            "VW",
+            "rh_of_every"
+          ]
+        }
+      ]
+    }
+  ]
+}

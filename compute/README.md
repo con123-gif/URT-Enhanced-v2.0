@@ -34,3 +34,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-native-cycle-witness-20261124` | pass | 14.51 | 2026-11-24T14:11:19Z | GPT | Extract explicit reference witness paths for each synthetic inductive-cycle member after actual imported axiom-cache dis |
 | `rh-mutual-metadata-closure-20261124` | pass | 1287.79 | 2026-11-24T14:38:49Z | GPT | After authenticated solution traversal failed at missing name 6019714, partition kernel-unused def/theorem/opaque mutual |
 | `rh-native-cycle-rc1-20261124` | error | 12.61 | 2026-11-24T15:11:44Z | GPT | On the separately pinned Lean v4.37.0-rc1, compare imported cached axiom reports with the newly public fresh collector ( |
+| `rh-targeted-role-witness-20261124` | error | 2090.77 | 2026-11-24T15:49:45Z | GPT | Authenticate RH export and project direct typed statement/value references for six pinned root-chain declarations, prese |

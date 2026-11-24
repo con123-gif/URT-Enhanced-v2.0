@@ -1,0 +1,291 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "file": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 6112241,
+  "root": 326835,
+  "indexedDeclarations": 53722,
+  "projectionMs": 21,
+  "maxRssKiB": 310284,
+  "reports": [
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Main.lean",
+        "blob": "dbd5db70bc11b35f18fa5751216ab335321e7bfc",
+        "line": 4,
+        "name": "riemannHypothesis",
+        "expectedValueNames": [
+          "rhOfAll"
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 326835,
+      "kind": "thm",
+      "type": {
+        "expressionRoot": 6045960,
+        "expressionsRead": 1,
+        "childEdges": 0,
+        "referenceOccurrences": 1,
+        "peakPending": 1,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 326825,
+            "nameParts": [
+              "RiemannHypothesis"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6045960,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 6046011,
+        "expressionsRead": 68,
+        "childEdges": 96,
+        "referenceOccurrences": 25,
+        "peakPending": 6,
+        "references": [
+          {
+            "kind": "literal_primitive",
+            "target": 61,
+            "nameParts": [
+              "Nat"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 68862,
+            "distinctExpressionRecords": 5
+          },
+          {
+            "kind": "explicit_const",
+            "target": 169,
+            "nameParts": [
+              "instOfNatNat"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 927,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 61,
+            "nameParts": [
+              "Nat"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 316,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 80,
+            "nameParts": [
+              "OfNat",
+              "ofNat"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 924,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "literal_primitive",
+            "target": 1902,
+            "nameParts": [
+              "Char",
+              "ofNat"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6046007,
+            "distinctExpressionRecords": 5
+          },
+          {
+            "kind": "literal_primitive",
+            "target": 1909,
+            "nameParts": [
+              "String",
+              "ofList"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6046007,
+            "distinctExpressionRecords": 5
+          },
+          {
+            "kind": "explicit_const",
+            "target": 1689,
+            "nameParts": [
+              "Lean",
+              "Name",
+              "anonymous"
+            ],
+            "targetKind": "ctor",
+            "witnessExpression": 7923,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 1690,
+            "nameParts": [
+              "Lean",
+              "Name",
+              "str"
+            ],
+            "targetKind": "ctor",
+            "witnessExpression": 7925,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 1691,
+            "nameParts": [
+              "Lean",
+              "Name",
+              "num"
+            ],
+            "targetKind": "ctor",
+            "witnessExpression": 7932,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 512,
+            "nameParts": [
+              "Bool",
+              "false"
+            ],
+            "targetKind": "ctor",
+            "witnessExpression": 2185,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326825,
+            "nameParts": [
+              "RiemannHypothesis"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6045960,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 1688,
+            "nameParts": [
+              "Lean",
+              "Name"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 7917,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326834,
+            "nameParts": [
+              "sorryAx"
+            ],
+            "targetKind": "axiom",
+            "witnessExpression": 6045961,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "missingExpected": [
+        "rhOfAll"
+      ],
+      "mutualBlock": [
+        {
+          "id": 326835,
+          "nameParts": [
+            "riemannHypothesis"
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "blob": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+        "line": 9,
+        "name": "rhOfAll",
+        "expectedValueNames": [
+          "Formalism.VW.rh_of_every",
+          "allChi"
+        ]
+      },
+      "status": "NOT_EXPORTED"
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "blob": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+        "line": 7,
+        "name": "allChi",
+        "expectedValueNames": [
+          "UpperTheory.FinalTheorems.everyCharacter"
+        ]
+      },
+      "status": "NOT_EXPORTED"
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+        "line": 10,
+        "name": "UpperTheory.FinalTheorems.everyCharacter",
+        "expectedValueNames": [
+          "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+        ]
+      },
+      "status": "NOT_EXPORTED"
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+        "line": 7,
+        "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "expectedValueNames": [
+          "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "UpperTheory.Zero.LLC.recTExists",
+          "UpperTheory.One.vwin_of_row"
+        ]
+      },
+      "status": "NOT_EXPORTED"
+    },
+    {
+      "source": {
+        "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "path": "src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+        "blob": "95fa4da5c50119db164aa93944d106f22fdb576d",
+        "line": 26,
+        "name": "Formalism.VW.rh_of_every",
+        "expectedValueNames": [
+          "Formalism.VW.rh_of_right",
+          "LFunction_modOne_eq"
+        ]
+      },
+      "status": "NOT_EXPORTED"
+    }
+  ]
+}
