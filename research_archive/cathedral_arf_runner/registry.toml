@@ -3201,3 +3201,11 @@ claim = "native"
 gating = true
 run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-24_coexact_curl_stiffness/COEXACT_CURL_STIFFNESS_CERT.py"
 timeout = 30
+
+[[check]]
+id = "research.native_coupled_curl_vertex_bifurcation"
+stage = "research"
+claim = "native"
+gating = true
+run = "env OPENBLAS_NUM_THREADS=1 python research_archive/2026-11-24_coupled_curl_vertex_bifurcation/COUPLED_CURL_VERTEX_BIFURCATION_CERT.py"
+timeout = 30

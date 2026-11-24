@@ -3,6 +3,15 @@
 The continuity record for every agent session. Rules are in `RESEARCH_PROTOCOL.md`; the entry point
 is `AGENTS.md`; the current state is `docs/RESEARCH_STATE.md`.
 
+### 2026-11-24 — Gravity/fluids bot — fixed-charge vertex/curl bifurcation obstruction
+- Task: Test whether the lowest native coexact curl bifurcates into a mixed nonzero-vertex-density branch that activates stress, circulation and H64/entropy transfer.
+- Result: NUMERIC LOCAL OBSTRUCTION plus deterministic finite-amplitude path scan. Disconnected mixed branches remain OPEN.
+- Constrained operator: over all 30 native oriented-edge seeds, the fixed-charge transverse vertex margin is strictly positive, [0.1905592217573432,0.1908241965477182]. Hence no continuous stress-bearing vertex/curl branch bifurcates from the pure curl.
+- Finite-amplitude check: 65 angles on each least-stiff coupled path, with H64 exactly relaxed and total Q=||z||^2+2||y||^2 rescaled to 1. All 30 minima occur at angle index 0; the first nonzero angle 0.02454369260617026 raises energy by [5.738378657e-5,5.746353197e-5]. Maximum charge residual is 2.22e-15.
+- Full-space scope: the same pure curl is a saddle toward the decoupled constant-face carrier (margin -0.7639320225002083) and H64 carrier (margin -1.5227521326131281, clock mode 18). Those lower-energy sectors have zero linear coupling to the zero-density curl, so they do not create spontaneous vortex-to-stress transfer.
+- Evidence: `research_archive/2026-11-24_coupled_curl_vertex_bifurcation/COUPLED_CURL_VERTEX_BIFURCATION_CERT.py`; standalone original-operator preflight exit 0.
+- Next: deterministic constrained continuation over the full complex 3-curl plus 12-vertex icosahedral subspace, seeded at finite vertex amplitude, to search for disconnected stationary branches.
+
 ### 2026-11-24 — Gravity/fluids bot — native coexact curl stiffness and no-transfer result
 - Task: Test the lowest native coexact edge-curl carrier at fixed Noether charge for spontaneous vertex stress, H64/entropy transfer and Hopf-frustration response.
 - Result: EXACT/NUMERIC PHYSICAL EFFECT plus scoped OBSTRUCTION. The current quartic circulation term produces positive vortex stiffness but no linear stress source at zero vertex density.
