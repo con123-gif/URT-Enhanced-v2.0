@@ -1,0 +1,87 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 14.51,
+  "tail": "  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current\n                                 Dload  Upload  Total   Spent   Left   Speed\n\r  0      0   0      0   0      0      0      0                              0\r  0      0   0      0   0      0      0      0                              0\r  0      0   0      0   0      0      0      0                              0\n\r  0      0   0      0   0      0      0      0                              0\r 23 543.9M  23 126.8M   0      0 123.6M      0   00:04   00:01   00:03 126.8M\r 44 543.9M  44 241.4M   0      0 119.2M      0   00:04   00:02   00:02 120.7M\r 73 543.9M  73 400.0M   0      0 131.8M      0   00:04   00:03   00:01 132.9M\r100 543.9M 100 543.9M   0      0 142.8M      0   00:03   00:03         132.9M\r100 543.9M 100 543.9M   0      0 142.8M      0   00:03   00:03         132.9M\r100 543.9M 100 543.9M   0      0 142.8M      0   00:03   00:03         132.9M\nlean-4.33.1-linux.tar.zst: OK\nLean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)\n",
+  "id": "rh-native-cycle-witness-20261124",
+  "question": "Extract explicit reference witness paths for each synthetic inductive-cycle member after actual imported axiom-cache discrepancy in Lean 4.33.1; not RH validation.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_native_cycle_witness.sh --out {out}",
+  "utc": "2026-11-24T14:11:19Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "1dcb00df4415e582ae86635c87aa94a1e2d12814",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45411137925",
+  "outputs_committed": [
+    {
+      "path": "cycle_driver.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cycle_imported.log",
+      "bytes": 236,
+      "sha256": "6d58833bc9d191921baf9743170d3c2f5365279ed9653ad9c8787f45abb2d357"
+    },
+    {
+      "path": "cycle_local.log",
+      "bytes": 197,
+      "sha256": "5a61a3a86cf257defcdcfd5b7c03e2351993817b3bc1ba579d40875b4c42de37"
+    },
+    {
+      "path": "cycle_witness_result.json",
+      "bytes": 1515,
+      "sha256": "fd365cb721afe896b0c0f6793cd16ca71b364171f5be92f35641d5188b43744a"
+    },
+    {
+      "path": "guarded.audit.json",
+      "bytes": 695,
+      "sha256": "aca01d81078cddbbdcf919c9cf676b17e171710761ff4200f6efd3c85d295c2b"
+    },
+    {
+      "path": "guarded.jsonl",
+      "bytes": 2796,
+      "sha256": "58adbbfe8c8b371bd9430a8a05ed0899dd9e4b0f3f8694684f5028d1d922a718"
+    },
+    {
+      "path": "inductive.audit.json",
+      "bytes": 777,
+      "sha256": "79577ccb1120854a6d778dc85578abd3303d486639d99e798baf67599697af4b"
+    },
+    {
+      "path": "inductive.jsonl",
+      "bytes": 2780,
+      "sha256": "00b4214284994aae41d6455c3119ff4c9c6e597b2c434afe8f74b610f69e0867"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "plain.audit.json",
+      "bytes": 833,
+      "sha256": "f4e3846e9db21ef0f0f349900c6549ebe5dd771ba4c2ebdbd068bac783fb2f22"
+    },
+    {
+      "path": "plain.jsonl",
+      "bytes": 2747,
+      "sha256": "18abf8240d610702b09f90799f1caf38c2e27798564c12b0628aad7fc10409a3"
+    },
+    {
+      "path": "release_sha256.txt",
+      "bytes": 30,
+      "sha256": "5ef0bfb65788d3d7f91b5992b9726d10aef3f6251140ffed292b9258de1318c0"
+    }
+  ],
+  "outputs_artifact_only": []
+}

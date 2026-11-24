@@ -1,0 +1,39 @@
+{
+  "nodes": 4,
+  "coreEdges": 5,
+  "allEdges": 6,
+  "builtin": [],
+  "core": {
+    "visited": 4,
+    "axioms": [
+      {
+        "name": "CathedralAxiomCycle.guardProp",
+        "path": [
+          "CathedralAxiomCycle.Witness.plain",
+          "CathedralAxiomCycle.Witness",
+          "CathedralAxiomCycle.Witness.guarded",
+          "CathedralAxiomCycle.guardProp"
+        ]
+      }
+    ],
+    "missing": [],
+    "bodyMissing": []
+  },
+  "full": {
+    "visited": 4,
+    "axioms": [
+      {
+        "name": "CathedralAxiomCycle.guardProp",
+        "path": [
+          "CathedralAxiomCycle.Witness.plain",
+          "CathedralAxiomCycle.Witness",
+          "CathedralAxiomCycle.Witness.guarded",
+          "CathedralAxiomCycle.guardProp"
+        ]
+      }
+    ],
+    "missing": [],
+    "bodyMissing": []
+  },
+  "agreement": false
+}

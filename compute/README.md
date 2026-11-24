@@ -31,3 +31,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-native-lean-fixture-v2-20261124` | error | 11.07 | 2026-11-24T13:02:26Z | GPT | Compile the native Lean 4.33.1 kernel-reference exporter on an imported private theorem, literal and quotient fixture; i |
 | `rh-native-lean-fixture-v3-parser-repair-20261124` | pass | 11.73 | 2026-11-24T13:11:11Z | GPT | Retry failed native v2 Lean fixture after correcting three observed parser faults; preserve independent local/imported c |
 | `rh-locality-frontier-retry-20261124` | error | 1605.13 | 2026-11-24T13:42:14Z | GPT | Retry timed-out checksum-pinned solution reference closure with highest-expression-ID bitmap frontier, eager declaration |
+| `rh-native-cycle-witness-20261124` | pass | 14.51 | 2026-11-24T14:11:19Z | GPT | Extract explicit reference witness paths for each synthetic inductive-cycle member after actual imported axiom-cache dis |
