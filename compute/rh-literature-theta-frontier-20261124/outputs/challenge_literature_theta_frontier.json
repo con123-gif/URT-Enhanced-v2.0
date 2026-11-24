@@ -1,0 +1,2132 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "file": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 6112241,
+  "root": 326835,
+  "indexedDeclarations": 53722,
+  "projectionMs": 29,
+  "maxRssKiB": 281604,
+  "summary": {
+    "recursorRuleRhs": 0,
+    "requests": 71,
+    "found": 1,
+    "typeEdges": 10,
+    "valueEdges": 16,
+    "structuralEdges": 0,
+    "expressionReads": 87
+  },
+  "reports": [
+    {
+      "request": {
+        "name": "UpperTheory.TP.tLift_holds_k",
+        "id": 14065048,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.TP.K.tLiftK",
+          "ownerId": 14065049,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1065212051
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.TP.K.tLiftK",
+            "ownerId": 14065049,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1065212051
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+        "id": 14009157,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+          "ownerId": 14009158,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1062644801
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "ownerId": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1062644801
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift",
+        "id": 13235289,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+          "ownerId": 14009158,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1062644800
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "ownerId": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1062644800
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLiftK",
+        "id": 13125905,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+          "ownerId": 14009158,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 1000528341
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+            "ownerId": 14009158,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 1000528341
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+        "id": 13125897,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "ownerId": 13125898,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980678
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "ownerId": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980678
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+        "id": 13096368,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "ownerId": 13125898,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 997980674
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "ownerId": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 997980674
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.V.Z.Win.RowT",
+        "id": 11307286,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "ownerId": 13125898,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893652341
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "ownerId": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893652341
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.OpenImageCondition",
+        "id": 11307287,
+        "kind": "inductive",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "ownerId": 13125898,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893652342
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.One.Join.automorphic_window_of_inputs",
+            "ownerId": 13125898,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893652342
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.HeckeLevelFrameExistence.candFin",
+        "id": 8352347,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.BaseChangeIdentities.baseChangeN",
+          "ownerId": 8352348,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 677083983
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.BaseChangeIdentities.baseChangeN",
+            "ownerId": 8352348,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 677083983
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.BaseChangeIdentities.baseChangeN_of",
+        "id": 8349692,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.BaseChangeIdentities.baseChangeN",
+          "ownerId": 8352348,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 677083982
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.BaseChangeIdentities.baseChangeN",
+            "ownerId": 8352348,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 677083982
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.Mem.Top.Bl.parametersOfDependence",
+        "id": 1571814,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 471448676
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 471448676
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.nLink",
+        "id": 7587637,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 657233342
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 657233342
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.N.boundAtTwoThree_linked_of_recT",
+        "id": 8026883,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 657234199
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 657234199
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+        "id": 8026822,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 657234192
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 657234192
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.greenRegularCharacters",
+        "id": 1551045,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 471449753
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 471449753
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.GreenBridge.green_of_regular",
+        "id": 1551004,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 471449752
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 471449752
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Top.every_character_of_green_v_win",
+        "id": 1550746,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 657234187
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 657234187
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Top.VWin",
+        "id": 551631,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 80597571
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 80597571
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.RecTExists",
+        "id": 550010,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 12992044
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 12992044
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CovTop.CovolumeBoundOfX",
+        "id": 792461,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 471595887
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 471595887
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching",
+        "id": 679666,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 120701144
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 120701144
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree",
+        "id": 679647,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 120701143
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 120701143
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.FunPr.ThetaLocalInputs",
+        "id": 678408,
+        "kind": "inductive",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 17642256
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 17642256
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses",
+        "id": 670194,
+        "kind": "inductive",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "ownerId": 8026888,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 17300403
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+            "ownerId": 8026888,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 17300403
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.formal_algebraisation_of_literature",
+        "id": 11298206,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073819
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073819
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.principalisation_of_literature",
+        "id": 11188026,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 883324021
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 883324021
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.nadel_vanishing_and_non_klt_divisor_of_literature",
+        "id": 11284967,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073815
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073815
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.serre_holomorphic_sections_of_literature",
+        "id": 11284966,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073812
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073812
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.cycle_heights_of_literature",
+        "id": 11284965,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073809
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073809
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.chow_form_exists_of_literature",
+        "id": 11284964,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073806
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073806
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.arith_hilbert_samuel_of_literature",
+        "id": 11188027,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 883324033
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 883324033
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.l2_extension_log_canonical_of_literature",
+        "id": 11284939,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073802
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073802
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.nef_numerics_of_literature",
+        "id": 11188029,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 883324039
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 883324039
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.kawamata_viehweg_of_literature",
+        "id": 11276513,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073798
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073798
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.prismatic_dieudonne_hodge_of_literature",
+        "id": 11274891,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073795
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073795
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.grothendieck_messing_of_literature",
+        "id": 11274890,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073792
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073792
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.ab_mul_n_st_of_literature",
+        "id": 11243348,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073789
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073789
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.principal_polarisation_one_section_of_literature",
+        "id": 11243347,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073786
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073786
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.induced_simple_lowest_alcove_of_literature",
+        "id": 11243345,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073783
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073783
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.semi_abelian_hom_extension_of_literature",
+        "id": 11243344,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073780
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073780
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.hasse_norm_st_of_literature",
+        "id": 11243343,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073777
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073777
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.landherr_st_of_literature",
+        "id": 11243342,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073774
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073774
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.good_chern_weil_of_literature",
+        "id": 11243341,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073771
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073771
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.green_series_st_of_literature",
+        "id": 8728855,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 707740887
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 707740887
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.strong_approx_su_of_literature",
+        "id": 8559847,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 703725935
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 703725935
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.semistable_reduction_st_of_literature",
+        "id": 11225740,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073766
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073766
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.ray_class_field_st_of_literature",
+        "id": 8521556,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 695668735
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 695668735
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.abelian_de_rham_of_literature",
+        "id": 11225739,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 891403526
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 891403526
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.ar_calc_of_literature",
+        "id": 11188028,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 883324036
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 883324036
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.vol_nef_of_literature",
+        "id": 11188039,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073760
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073760
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.vol_ge_of_literature",
+        "id": 11188030,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073757
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073757
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.toroidal_compactification_of_literature",
+        "id": 11148737,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893073754
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893073754
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.CovTop.PublishedHodgeBundleTheorems.mk",
+        "id": 9038705,
+        "kind": "ctor",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+          "ownerId": 11298207,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 724118235
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+            "ownerId": 11298207,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 724118235
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT",
+        "id": 11298209,
+        "kind": "inductive",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.CuspT.type",
+          "ownerId": 11307204,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893074170
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.CuspT.type",
+            "ownerId": 11307204,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893074170
+          },
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893074170
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.WeilDeligne.WD",
+        "id": 421532,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.CuspT.type",
+          "ownerId": 11307204,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 8609135
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.CuspT.type",
+            "ownerId": 11307204,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 8609135
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.LocGL.IrrGL",
+        "id": 387338,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.CuspT.type",
+          "ownerId": 11307204,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 8609087
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.CuspT.type",
+            "ownerId": 11307204,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 8609087
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.LocLanglands.IsLocalArtin",
+        "id": 545496,
+        "kind": "inductive",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.CuspT.type",
+          "ownerId": 11307204,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 12850433
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.CuspT.type",
+            "ownerId": 11307204,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 12850433
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "GlobalTheory.WeilDeligne.Weil",
+        "id": 419556,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.CuspT.type",
+          "ownerId": 11307204,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 11611005
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.CuspT.type",
+            "ownerId": 11307204,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 11611005
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.dim",
+        "id": 11303551,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893473707
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893473707
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.depth",
+        "id": 11306963,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893633522
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893633522
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Pr.dzs",
+        "id": 6187254,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 466376890
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 466376890
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.DZ",
+        "id": 6187266,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 466363290
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 466363290
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.goodSeg",
+        "id": 6921387,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 562834711
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 562834711
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.GoodCusp",
+        "id": 548452,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 12958046
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 12958046
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Good",
+        "id": 548468,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 12988606
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 12988606
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.extDim",
+        "id": 11303687,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 893631863
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 893631863
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.InFor._proof_1",
+        "id": 6921466,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.Zero.LLC.extDepth",
+          "ownerId": 11306966,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 562463326
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.Zero.LLC.extDepth",
+            "ownerId": 11306966,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 562463326
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.rec",
+        "id": 550025,
+        "kind": "rec",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements",
+          "ownerId": 550020,
+          "role": "structural",
+          "kind": "package_member",
+          "edgeIndex": 5,
+          "encoded": -550026
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements",
+            "ownerId": 550020,
+            "role": "structural",
+            "kind": "package_member",
+            "edgeIndex": 5,
+            "encoded": -550026
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "DirichletCharacter.LFunction",
+        "id": 328658,
+        "kind": "def",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.EveryCharacter",
+          "ownerId": 326947,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 6102695
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.EveryCharacter",
+            "ownerId": 326947,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 6102695
+          }
+        ]
+      },
+      "status": "EXPORTED_DIRECT_ROLE_REFERENCES_NOT_KERNEL_RECHECK",
+      "id": 328660,
+      "kind": "def",
+      "encodedRootsAndStructuralEdges": [
+        6102764,
+        6102787
+      ],
+      "type": {
+        "expressionRoot": 6102763,
+        "expressionsRead": 30,
+        "childEdges": 36,
+        "referenceOccurrences": 10,
+        "peakPending": 7,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 22503,
+            "nameParts": [
+              "Complex"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 238344,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 62743,
+            "nameParts": [
+              "Complex",
+              "instField"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 762263,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4101,
+            "nameParts": [
+              "Field",
+              "toSemifield"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315578,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 27596,
+            "nameParts": [
+              "Semifield",
+              "toCommGroupWithZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 563908,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 20423,
+            "nameParts": [
+              "CommGroupWithZero",
+              "toCommMonoidWithZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 569486,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326944,
+            "nameParts": [
+              "DirichletCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6102757,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 10541,
+            "nameParts": [
+              "Nat",
+              "instMulZeroClass"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 89593,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 3972,
+            "nameParts": [
+              "MulZeroClass",
+              "toZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 89597,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4698,
+            "nameParts": [
+              "NeZero"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 36586,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 61,
+            "nameParts": [
+              "Nat"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 316,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "value": {
+        "expressionRoot": 6102786,
+        "expressionsRead": 57,
+        "childEdges": 74,
+        "referenceOccurrences": 16,
+        "peakPending": 11,
+        "references": [
+          {
+            "kind": "explicit_const",
+            "target": 62743,
+            "nameParts": [
+              "Complex",
+              "instField"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 762263,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4101,
+            "nameParts": [
+              "Field",
+              "toSemifield"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 315578,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 27596,
+            "nameParts": [
+              "Semifield",
+              "toCommGroupWithZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 563908,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 20423,
+            "nameParts": [
+              "CommGroupWithZero",
+              "toCommMonoidWithZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 569486,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326882,
+            "nameParts": [
+              "ZMod",
+              "commRing"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6047616,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326850,
+            "nameParts": [
+              "ZMod"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6046637,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 28557,
+            "nameParts": [
+              "CommRing",
+              "toCommMonoid"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 2265840,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 328615,
+            "nameParts": [
+              "MulChar",
+              "instFunLike"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6102772,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 326944,
+            "nameParts": [
+              "DirichletCharacter"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6102757,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 7484,
+            "nameParts": [
+              "DFunLike",
+              "coe"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 345546,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 328393,
+            "nameParts": [
+              "ZMod",
+              "LFunction"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 6102764,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 22503,
+            "nameParts": [
+              "Complex"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 238344,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 10541,
+            "nameParts": [
+              "Nat",
+              "instMulZeroClass"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 89593,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 3972,
+            "nameParts": [
+              "MulZeroClass",
+              "toZero"
+            ],
+            "targetKind": "def",
+            "witnessExpression": 89597,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 4698,
+            "nameParts": [
+              "NeZero"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 36586,
+            "distinctExpressionRecords": 1
+          },
+          {
+            "kind": "explicit_const",
+            "target": 61,
+            "nameParts": [
+              "Nat"
+            ],
+            "targetKind": "inductive",
+            "witnessExpression": 316,
+            "distinctExpressionRecords": 1
+          }
+        ]
+      },
+      "structural": [],
+      "mutualBlock": [
+        {
+          "id": 328660,
+          "nameParts": [
+            "DirichletCharacter",
+            "LFunction"
+          ],
+          "exported": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "name": "UpperTheory.EveryCharacter._proof_1",
+        "id": 326948,
+        "kind": "thm",
+        "origin": "authenticated_root_path_frontier",
+        "incoming": {
+          "owner": "UpperTheory.EveryCharacter",
+          "ownerId": 326947,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 6102670
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "UpperTheory.EveryCharacter",
+            "ownerId": 326947,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 6102670
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "Deduction.CharacterBalanceMoves.triv",
+        "id": 856978,
+        "kind": "thm",
+        "origin": "authenticated_owner_path_not_root_bound",
+        "incoming": {
+          "owner": "Deduction.CharacterBalanceMoves.one_char",
+          "ownerId": 856985,
+          "role": "value",
+          "kind": "explicit_const",
+          "witness": 26464300
+        },
+        "incomingWitnesses": [
+          {
+            "owner": "Deduction.CharacterBalanceMoves.one_char",
+            "ownerId": 856985,
+            "role": "value",
+            "kind": "explicit_const",
+            "witness": 26464300
+          }
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    }
+  ]
+}

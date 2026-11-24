@@ -1,0 +1,47 @@
+{
+  "archive": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "indexedExpressions": 6112241,
+  "indexedDeclarations": 53722,
+  "status": "GLOBAL_EXPORT_REFERENCE_CENSUS_NOT_ROOT_CLOSURE",
+  "occurrences": {
+    "constant": 136992,
+    "projection": 2651,
+    "literal": 274,
+    "structural": 10149,
+    "mutualBlock": 50715
+  },
+  "missingByKind": {
+    "constant": 0,
+    "projection": 0,
+    "literal": 0,
+    "structural": 0,
+    "mutualBlock": 0
+  },
+  "missingNames": 0,
+  "metadataOnlyMissing": 0,
+  "hardMissing": 0,
+  "indexPayloadBytes": 6553600,
+  "target": {
+    "id": 6019714,
+    "nameParts": null,
+    "exported": false,
+    "occurrences": 0,
+    "witnesses": []
+  },
+  "rows": []
+}
