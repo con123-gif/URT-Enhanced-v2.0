@@ -1,0 +1,514 @@
+{
+  "status": "Executed algebraic size-bound replay and URT path readout on genuine selected source graph; not full proof translation",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sourceBlob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+  "algebra": {
+    "nodes": [
+      {
+        "id": "aE/(xb)",
+        "c": "2",
+        "e": [
+          0,
+          0,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "0<=aE<=2xb"
+      },
+      {
+        "id": "x/m",
+        "c": "1",
+        "e": [
+          4,
+          8,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "m>=x^(1/2-eps)>0"
+      },
+      {
+        "id": "xm/k",
+        "c": "1",
+        "e": [
+          0,
+          0,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "k>=xm>0"
+      },
+      {
+        "id": "n/nT",
+        "c": "2",
+        "e": [
+          0,
+          1,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "nT>=n*x^(-eps/8)/2"
+      },
+      {
+        "id": "m",
+        "c": "1",
+        "e": [
+          4,
+          4,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "m<=x^(1/2+eps/2)"
+      },
+      {
+        "id": "delta",
+        "c": "1",
+        "e": [
+          0,
+          0,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "nT2/n<=1"
+      },
+      {
+        "id": "k/n^2",
+        "c": "1",
+        "e": [
+          4,
+          -8,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "k<=n^2*x^(1/2-eps)"
+      },
+      {
+        "id": "1/delta",
+        "c": "1",
+        "e": [
+          0,
+          8,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "delta=nT2/n>=x^(-eps)>0"
+      },
+      {
+        "id": "x^eps",
+        "c": "1",
+        "e": [
+          0,
+          8,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "exact"
+      },
+      {
+        "id": "x^(2eps)",
+        "c": "1",
+        "e": [
+          0,
+          16,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "exact"
+      },
+      {
+        "id": "P",
+        "c": "1",
+        "e": [
+          0,
+          0,
+          8
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "P=x^(C eps)"
+      },
+      {
+        "id": "2",
+        "c": "2",
+        "e": [
+          0,
+          0,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "exact"
+      },
+      {
+        "id": "4X",
+        "c": "4",
+        "e": [
+          4,
+          8,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "X=x^(1/2+eps)"
+      },
+      {
+        "id": "4/x",
+        "c": "2",
+        "e": [
+          0,
+          0,
+          0
+        ],
+        "rule": "premise",
+        "parents": [],
+        "reason": "x>=3 implies 4/x<=2"
+      },
+      {
+        "id": "B1/Q",
+        "c": "2",
+        "e": [
+          4,
+          8,
+          0
+        ],
+        "rule": "multiply",
+        "parents": [
+          "aE/(xb)",
+          "x/m"
+        ],
+        "reason": "nonnegative factors"
+      },
+      {
+        "id": "B2/Q",
+        "c": "2",
+        "e": [
+          0,
+          0,
+          0
+        ],
+        "rule": "multiply",
+        "parents": [
+          "aE/(xb)",
+          "xm/k"
+        ],
+        "reason": "nonnegative factors"
+      },
+      {
+        "id": "B3/Q",
+        "c": "4",
+        "e": [
+          4,
+          13,
+          0
+        ],
+        "rule": "multiply",
+        "parents": [
+          "2",
+          "n/nT",
+          "m",
+          "x^eps"
+        ],
+        "reason": "nonnegative factors"
+      },
+      {
+        "id": "B4/Q",
+        "c": "2",
+        "e": [
+          4,
+          9,
+          0
+        ],
+        "rule": "multiply",
+        "parents": [
+          "delta",
+          "n/nT",
+          "k/n^2",
+          "x^(2eps)"
+        ],
+        "reason": "nonnegative factors"
+      },
+      {
+        "id": "B/Q",
+        "c": "10",
+        "e": [
+          4,
+          13,
+          0
+        ],
+        "rule": "sum/common upper exponent",
+        "parents": [
+          "B1/Q",
+          "B2/Q",
+          "B3/Q",
+          "B4/Q"
+        ],
+        "reason": "x>=1, eps>0, C>=0"
+      },
+      {
+        "id": "Err/Q",
+        "c": "10",
+        "e": [
+          4,
+          13,
+          8
+        ],
+        "rule": "multiply",
+        "parents": [
+          "P",
+          "B/Q"
+        ],
+        "reason": "nonnegative factors"
+      },
+      {
+        "id": "2Err/Q",
+        "c": "20",
+        "e": [
+          4,
+          13,
+          8
+        ],
+        "rule": "multiply",
+        "parents": [
+          "2",
+          "Err/Q"
+        ],
+        "reason": "nonnegative factors"
+      },
+      {
+        "id": "2Err/Q+4/x",
+        "c": "22",
+        "e": [
+          4,
+          13,
+          8
+        ],
+        "rule": "sum/common upper exponent",
+        "parents": [
+          "2Err/Q",
+          "4/x"
+        ],
+        "reason": "x>=1, eps>0, C>=0"
+      },
+      {
+        "id": "correction",
+        "c": "22",
+        "e": [
+          4,
+          21,
+          8
+        ],
+        "rule": "multiply",
+        "parents": [
+          "1/delta",
+          "2Err/Q+4/x"
+        ],
+        "reason": "nonnegative factors"
+      },
+      {
+        "id": "Gx",
+        "c": "26",
+        "e": [
+          4,
+          21,
+          8
+        ],
+        "rule": "sum/common upper exponent",
+        "parents": [
+          "4X",
+          "correction"
+        ],
+        "reason": "x>=1, eps>0, C>=0"
+      },
+      {
+        "id": "final",
+        "c": "1",
+        "e": [
+          4,
+          24,
+          8
+        ],
+        "rule": "absorb",
+        "parents": [
+          "Gx"
+        ],
+        "reason": "26<=x^(3eps/8)"
+      }
+    ],
+    "result": {
+      "coefficient": "1",
+      "exponentEighths": [
+        4,
+        24,
+        8
+      ]
+    },
+    "theorem": "Gx <= x^(1/2+(C+3)*eps)",
+    "entryInequality": "Q*(delta/2)*(Gx-4X)<=Err+2Q/x, Q>0, delta>0; divide by Q*delta/2 to get Gx<=4X+(2Err/Q+4/x)/delta",
+    "source": "proposition_size_bound, original normalized four terms, no assumptions removed"
+  },
+  "urt": {
+    "q": [
+      -0.8521973792797618,
+      0.7806826075963609
+    ],
+    "visits": 179,
+    "edges": 291,
+    "naiveVisits": 623,
+    "exactPathOccurrences": "623",
+    "maxError": 0,
+    "maxPolynomialError": 3.972054645195637e-14,
+    "roots": [
+      {
+        "id": "UpperTheory.LiteratureTheorems.literature_local",
+        "coefficients": [
+          "1",
+          "19",
+          "14",
+          "2"
+        ],
+        "pathOccurrences": "36",
+        "urt": [
+          -11.678391378294513,
+          -1.34512788054769
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.literature_automorphy",
+        "coefficients": [
+          "1",
+          "15",
+          "10",
+          "4",
+          "15",
+          "5",
+          "2"
+        ],
+        "pathOccurrences": "52",
+        "urt": [
+          -25.749162660033697,
+          -2.287538261372483
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.literature_cohomology",
+        "coefficients": [
+          "1",
+          "12",
+          "5"
+        ],
+        "pathOccurrences": "18",
+        "urt": [
+          -8.642493354117939,
+          2.7152345687272366
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.literature_nonexistence",
+        "coefficients": [
+          "1",
+          "5",
+          "51",
+          "30",
+          "6",
+          "15",
+          "5",
+          "2"
+        ],
+        "pathOccurrences": "115",
+        "urt": [
+          40.79573110054379,
+          -39.05075275635417
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.published_results_analytic",
+        "coefficients": [
+          "1",
+          "12",
+          "4"
+        ],
+        "pathOccurrences": "17",
+        "urt": [
+          -8.75926839356578,
+          4.045825913213055
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.published_results_local",
+        "coefficients": [
+          "1",
+          "7"
+        ],
+        "pathOccurrences": "8",
+        "urt": [
+          -4.965381654958333,
+          5.464778253174526
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.published_results_eigen",
+        "coefficients": [
+          "1",
+          "60",
+          "45",
+          "80",
+          "50",
+          "13",
+          "17",
+          "5",
+          "2"
+        ],
+        "pathOccurrences": "273",
+        "urt": [
+          -45.84564589968441,
+          84.13228511429317
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.published_results_first",
+        "coefficients": [
+          "1",
+          "53",
+          "9",
+          "2"
+        ],
+        "pathOccurrences": "65",
+        "urt": [
+          -41.23697747104565,
+          31.851037500157688
+        ]
+      },
+      {
+        "id": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+        "coefficients": [
+          "1",
+          "28",
+          "6",
+          "4"
+        ],
+        "pathOccurrences": "39",
+        "urt": [
+          -18.4038598316439,
+          18.775927741629026
+        ]
+      }
+    ],
+    "limits": "Complex q is a noninjective readout, not proof validity or exact identity. Exact source and all edges remain authoritative. Polynomial replay is for small graph audit; q scalar pass O(V+E); polynomial coefficient propagation has extra depth cost."
+  },
+  "notes": [
+    "Algebra encodes exact symbolic upper-bound rules, not fitted exponents. All input premises, source identities and positivity conditions still required.",
+    "The size-bound algebra is manually compiled from original Lean source and existing source-matched chapter; not an automatic Lean-to-algebra compiler. The proof of the compiler rules uses monotonicity of x^p at x>=1 and nonnegative arithmetic.",
+    "The source graph is a limited lexical reference graph, not full elaborated terms. URT q is the existing fixed pi/e + golden-angle complex recurrence. Scalar memoized traversal gives O(V+E) graph operations; arbitrary exact polynomials cost more. Equality of URT signatures cannot justify merging proof obligations.",
+    "For general Lean, represent dependent types, binders, application, inductive eliminators, equality, quantifiers and proof terms as typed term DAG; preserve exact de Bruijn indices and type/universe context. Translate arithmetic islands using verified semiring or ordered-field rules. Use Lean kernel to certify replacement expressions. Do not reduce arbitrary proof to scalar arithmetic."
+  ],
+  "resume": "Compile elaborated Expr nodes into lossless typed term algebra after full export, retain every type/body reference and binders. Identify arithmetic/inequality islands, use explicit sound rule certificates and audit external theorem premises. Use URT only as reading/scheduling signal unless equivalence independently proved."
+}
