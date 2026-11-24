@@ -3389,3 +3389,11 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-34-producer-frontier-20261124"
+question = "Authenticate the RH export and extract exact direct statement/body witnesses for the 34 newly root-connected theorem producers, including four generated TLiftK proofs. Preserve all roles, IDs, structural edges and metadata; not kernel replay."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_34_producer_frontier.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
