@@ -3346,3 +3346,12 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-native-cycle-rc1-isolated-20261124"
+question = "After observed RC1 private-module identifier failure, run exact pinned upstream collector body in an isolated namespace with fresh and shared-state root orders; compare actual public cached reports. Synthetic fixture, not RH verification."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_native_cycle_rc1_isolated.sh --out {out}"
+timeout_minutes = 30
+requested_by = "GPT"
+claim = "independent"
