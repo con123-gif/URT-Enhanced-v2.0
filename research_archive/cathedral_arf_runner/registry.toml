@@ -3261,3 +3261,19 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-stream-closure-retry-20261124"
+question = "Retry checksum-pinned streamed closure after actual challenge byte count correction. Original run 45348756372 matched SHA256 exactly but expected length differed by 659 bytes."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_stream_export_closure.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
+
+[[job]]
+id = "rh-full-source-obligation-pool-20261124"
+question = "Count and preserve exact repeated source record-field candidates across full pinned source; no semantic equality or translation-speed claim."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_full_scoped_pool.mjs --out {out}"
+timeout_minutes = 240
+requested_by = "GPT"
+claim = "independent"

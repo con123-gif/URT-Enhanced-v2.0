@@ -226,6 +226,6 @@ else{
  const i=args.indexOf('--out');if(i<0||!args[i+1])fail('use --out DIR');
  const out=path.resolve(args[i+1]);fs.mkdirSync(out,{recursive:true});
  console.log(JSON.stringify({selftest:selftest()}));
- await runArchive('challenge.ndjson.zst',CHALLENGE_HASH,350862970,out,true);
+ await runArchive('challenge.ndjson.zst',CHALLENGE_HASH,350862311,out,true);
  if(!args.includes('--challenge-only'))await runArchive('solution.ndjson.zst',HASH,61570595788,out);
 }
