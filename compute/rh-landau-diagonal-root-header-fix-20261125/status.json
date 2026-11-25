@@ -1,0 +1,222 @@
+{
+  "status": "error",
+  "detail": "'Deduction.rh32_right_of_window' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]",
+  "returncode": 1,
+  "wall_s": 252.4,
+  "tail": "GchiGrowth 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow 0\nRHProofTermPrune 0\nRHRecursiveReductionFixed 0\nRHRecursiveReductionAutoV3 0\nRH32SingletonPoleData 1\nRH32SingletonPoleData.lean:175:4: error: Type mismatch: After simplification, term\n  h\n has type\n  Measurable (re \u2218 Gchi 1 \u2218 Real.exp)\nbut is expected to have type\n  Measurable fun u => G (Real.exp u)\nRH32SingletonPoleData.lean:249:4: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nRH32SingletonPoleData.lean:250:4: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nRH32SingletonPoleData.lean:251:4: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nRH32SingletonPoleData.lean:248:48: warning: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nRH32SingletonPoleData.lean:249:4: warning: Unused tactic linter: `(rh_auto_frontier 2; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nRH32SingletonPoleData.lean:250:4: warning: Unused tactic linter: `(rh_auto 2; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nRH32SingletonPoleData.lean:251:4: warning: Unused tactic linter: `exact rh32_right_of_windowU h\u03b8 h\u03b81 h\u03b4 hw` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nMISSING poleData\nROOT_SCAN root=poleData visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0\nMISSING lemmaL\nROOT_SCAN root=lemmaL visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0\nMISSING rh32_principal_pole_data\nROOT_SCAN root=rh32_principal_pole_data visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0\nMISSING rh32_right_of_window\nROOT_SCAN root=rh32_right_of_window visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0\nRH32SingletonPoleData.lean:257:0: error: not a visible theorem\n'Deduction.poleData' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Deduction.poleData_char' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Deduction.rh32_principal_pole_data' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Deduction.rh32_right_of_window' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n\n",
+  "id": "rh-landau-diagonal-root-header-fix-20261125",
+  "question": "Retry exact RUN32/RUN33 analytic closure after actual CI header parser failure on commented Python import; retain original pinned proof candidates, native scans, pruning and axiom checks. Conditional only.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/run_diagonal_root_native_v2.sh --out {out}",
+  "utc": "2026-11-25T16:26:10Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "0051cd440aea30dedfbe1ee1ab5443985f831f20",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45652878741",
+  "outputs_committed": [
+    {
+      "path": "candidate_blob.txt",
+      "bytes": 41,
+      "sha256": "bae69a15f02983766cd4c8632248306d1b2907cc2e99e990e344a72fcd68ff93"
+    },
+    {
+      "path": "compile_000_CharFamily.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_001_LandauZeroFreeCriterion.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_002_LogDerivLocal.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_003_LFunctionConj.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_004_CharFamilyLFunctionNeZeroOfOneLeRe.log",
+      "bytes": 434,
+      "sha256": "d7481925e86f065de72be200ad3e0e0ac1177a1c0ec161f984f589bf0ba5d084"
+    },
+    {
+      "path": "compile_005_MellinRamp.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_006_mellinGchiOfNeOne.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_007_mellinGchiModOne.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_008_measurableGchi.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_009_GchiGrowth.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_010_GchiConj.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_011_poleData.log",
+      "bytes": 696,
+      "sha256": "678cd3fdc4a75932ad5eea5b1ed5c95e8e1c08801ddf709b79286d44e5d78289"
+    },
+    {
+      "path": "compile_012_LandauCauchy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_013_LandauPoleAsym.log",
+      "bytes": 397,
+      "sha256": "e5dc5b26af41542d6cb88c8f7ada03a4a7e5e2528fb5f5dfbf3704963c00ac66"
+    },
+    {
+      "path": "compile_014_kernelIntegral.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_015_landauTails.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_016_LandauKernelMax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_017_landauWindowIneq.log",
+      "bytes": 574,
+      "sha256": "fde4eeebb1c0228ef7ceba2b49acbcdb40173d7f9921792d6391e7ef382c9683"
+    },
+    {
+      "path": "compile_018_LandauPoleReLe.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_019_IteratedDerivLaplace.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_020_LandauCoeff.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_021_LandauFinite.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_022_LandauNearest.log",
+      "bytes": 350,
+      "sha256": "e978ff53ec034309c1fc5e72772725f4e6ded09a619bc2cc100ee552d9103480"
+    },
+    {
+      "path": "compile_023_LandauDichotomy.log",
+      "bytes": 1375,
+      "sha256": "7ab66a476522931d57e08f0877f3a96fe90e93f7a2e473a14dfdcd452be9ff37"
+    },
+    {
+      "path": "compile_024_LandauGrowthContra.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_025_landauWindow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_026_WindowHypUOfWindowHyp.log",
+      "bytes": 404,
+      "sha256": "592c20a8fb135576feff2b56eb529199130bc2bad57ec62c2922b3cc094063ec"
+    },
+    {
+      "path": "compile_027_lemmaL.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_028_WindowHypOfRpow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_029_RHProofTermPrune.log",
+      "bytes": 491,
+      "sha256": "345110d43a273db20d45e099991685e83aaddb8fda5dd225129265df26601a9a"
+    },
+    {
+      "path": "compile_030_RHRecursiveReductionFixed.log",
+      "bytes": 560,
+      "sha256": "f7a065d17a3783cb720d0ee0dc82da24ff12da4ad16afc460dc502c7c74e1b71"
+    },
+    {
+      "path": "compile_031_RHRecursiveReductionAutoV3.log",
+      "bytes": 638,
+      "sha256": "4feb28c02814d70bddb2d315e99461a3a914666177d863035c86c472d689c1da"
+    },
+    {
+      "path": "compile_032_RH32SingletonPoleData.log",
+      "bytes": 2289,
+      "sha256": "0491787872b1782eb136c6b8c5f4d0c4fae166575bc7b821c5425803e8b8207d"
+    },
+    {
+      "path": "import_dag.json",
+      "bytes": 17955,
+      "sha256": "095868605f00d0da5e54e88a01a898fc54c954a23fb3aa4f53a2ffb126ede9b1"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 10998,
+      "sha256": "7a15ff6e6f8020f30d8a0a2e7f01c8e23b8b143eaf3d2e9666d099bdd3e1857e"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    }
+  ],
+  "outputs_artifact_only": []
+}

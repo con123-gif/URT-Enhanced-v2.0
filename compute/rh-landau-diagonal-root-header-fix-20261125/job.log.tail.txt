@@ -1,0 +1,243 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+
+  0      0   0      0   0      0      0      0                              0
+ 44 543.9M  44 240.0M   0      0 201.3M      0   00:02   00:01   00:01 235.2M
+ 69 543.9M  69 380.0M   0      0 173.3M      0   00:03   00:02   00:01 188.1M
+ 91 543.9M  91 500.0M   0      0 156.5M      0   00:03   00:03         165.4M
+100 543.9M 100 543.9M   0      0 161.4M      0   00:03   00:03         165.4M
+100 543.9M 100 543.9M   0      0 161.4M      0   00:03   00:03         165.4M
+100 543.9M 100 543.9M   0      0 161.4M      0   00:03   00:03         165.4M
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+From https://github.com/leanprover-community/mathlib4
+ * branch            0df444a360eaa60ab8c11dca51a86af692955474 -> FETCH_HEAD
+HEAD is now at 0df444a chore: bump toolchain to v4.33.1
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision 'b7eb3304aeae834b12dda98993a37f6a41f6f0bb'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision '5f4d51b81cbd3f6b32b156bfad9056621a040404'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision '16f02aa7642864af59f1ff0e384a015994db9118'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision '4be2e3d5087eeb272cf5a8853b8f9dd025ef5957'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision '3448c0bcc5ce01b2d1546e483ec3620e32df3d0e'
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision '92c15be17b7caf78c2ad767ec40f89052d908d81'
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision '4488d40d070b9700d4d5a6aa342f0d40c31b2a2d'
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision '6130a47896ce867c6a4a55373441e59e565bad0f'
+✔ [2/26] Built Cache.Cli (335ms)
+✔ [5/26] Built Cache.Lean (442ms)
+✔ [6/26] Built Cache.Cli:c.o (221ms)
+✔ [7/26] Built Cache.Lean:c.o (223ms)
+✔ [8/26] Built Cache.Infra (515ms)
+✔ [9/26] Built Cache.Infra:c.o (247ms)
+✔ [10/26] Built Batteries.Tactic.OpenPrivate (1.0s)
+✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (1.4s)
+✔ [12/26] Built Cache.IO (1.5s)
+✔ [13/26] Built Cache.Hashing (759ms)
+✔ [14/26] Built Cache.Hashing:c.o (483ms)
+✔ [15/26] Built Cache.IO:c.o (1.9s)
+✔ [16/26] Built Cache.Requests (2.2s)
+✔ [17/26] Built Cache.Marker (558ms)
+✔ [18/26] Built Cache.Marker:c.o (192ms)
+✔ [19/26] Built Cache.Query (755ms)
+✔ [20/26] Built Cache.Query:c.o (482ms)
+✔ [21/26] Built Cache.Warning (857ms)
+✔ [22/26] Built Cache.Warning:c.o (294ms)
+✔ [23/26] Built Cache.Requests:c.o (3.2s)
+✔ [24/26] Built Cache.Main (1.3s)
+✔ [25/26] Built Cache.Main:c.o (1.0s)
+✔ [26/26] Built cache:exe (755ms)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 8690 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/8690 = 0%, 90 KB/s], Decompressed: 0
+Downloaded: 73 file(s) [attempted 73/8690 = 0%, 319 KB/s], Decompressed: 15
+Downloaded: 159 file(s) [attempted 159/8690 = 1%, 1752 KB/s], Decompressed: 31
+Downloaded: 264 file(s) [attempted 264/8690 = 3%, 369 KB/s], Decompressed: 76
+Downloaded: 383 file(s) [attempted 383/8690 = 4%, 818 KB/s], Decompressed: 76
+Downloaded: 491 file(s) [attempted 491/8690 = 5%, 3099 KB/s], Decompressed: 76
+Downloaded: 604 file(s) [attempted 604/8690 = 6%, 484 KB/s], Decompressed: 76
+Downloaded: 718 file(s) [attempted 718/8690 = 8%, 715 KB/s], Decompressed: 76
+Downloaded: 831 file(s) [attempted 831/8690 = 9%, 258 KB/s], Decompressed: 215
+Downloaded: 949 file(s) [attempted 949/8690 = 10%, 1178 KB/s], Decompressed: 215
+Downloaded: 1055 file(s) [attempted 1055/8690 = 12%, 556 KB/s], Decompressed: 215
+Downloaded: 1164 file(s) [attempted 1164/8690 = 13%, 1510 KB/s], Decompressed: 215
+Downloaded: 1273 file(s) [attempted 1273/8690 = 14%, 1441 KB/s], Decompressed: 215
+Downloaded: 1373 file(s) [attempted 1373/8690 = 15%, 5410 KB/s], Decompressed: 215
+Downloaded: 1485 file(s) [attempted 1485/8690 = 17%, 517 KB/s], Decompressed: 215
+Downloaded: 1586 file(s) [attempted 1586/8690 = 18%, 3084 KB/s], Decompressed: 215
+Downloaded: 1692 file(s) [attempted 1692/8690 = 19%, 947 KB/s], Decompressed: 215
+Downloaded: 1810 file(s) [attempted 1810/8690 = 20%, 532 KB/s], Decompressed: 215
+Downloaded: 1914 file(s) [attempted 1914/8690 = 22%, 753 KB/s], Decompressed: 215
+Downloaded: 2025 file(s) [attempted 2025/8690 = 23%, 137 KB/s], Decompressed: 215
+Downloaded: 2132 file(s) [attempted 2132/8690 = 24%, 345 KB/s], Decompressed: 215
+Downloaded: 2236 file(s) [attempted 2236/8690 = 25%, 1471 KB/s], Decompressed: 215
+Downloaded: 2320 file(s) [attempted 2320/8690 = 26%, 754 KB/s], Decompressed: 215
+Downloaded: 2385 file(s) [attempted 2385/8690 = 27%, 79 KB/s], Decompressed: 215
+Downloaded: 2481 file(s) [attempted 2481/8690 = 28%, 555 KB/s], Decompressed: 215
+Downloaded: 2535 file(s) [attempted 2535/8690 = 29%, 9110 KB/s], Decompressed: 751
+Downloaded: 2582 file(s) [attempted 2582/8690 = 29%, 1420 KB/s], Decompressed: 751
+Downloaded: 2668 file(s) [attempted 2668/8690 = 30%, 135 KB/s], Decompressed: 751
+Downloaded: 2720 file(s) [attempted 2720/8690 = 31%, 4299 KB/s], Decompressed: 751
+Downloaded: 2811 file(s) [attempted 2811/8690 = 32%, 343 KB/s], Decompressed: 751
+Downloaded: 2823 file(s) [attempted 2823/8690 = 32%, 728 KB/s], Decompressed: 751
+Downloaded: 2911 file(s) [attempted 2911/8690 = 33%, 648 KB/s], Decompressed: 751
+Downloaded: 3008 file(s) [attempted 3008/8690 = 34%, 253 KB/s], Decompressed: 751
+Downloaded: 3103 file(s) [attempted 3103/8690 = 35%, 214 KB/s], Decompressed: 751
+Downloaded: 3197 file(s) [attempted 3197/8690 = 36%, 1027 KB/s], Decompressed: 751
+Downloaded: 3265 file(s) [attempted 3265/8690 = 37%, 754 KB/s], Decompressed: 751
+Downloaded: 3363 file(s) [attempted 3363/8690 = 38%, 2144 KB/s], Decompressed: 751
+Downloaded: 3454 file(s) [attempted 3454/8690 = 39%, 3875 KB/s], Decompressed: 751
+Downloaded: 3498 file(s) [attempted 3498/8690 = 40%, 347 KB/s], Decompressed: 751
+Downloaded: 3581 file(s) [attempted 3581/8690 = 41%, 443 KB/s], Decompressed: 751
+Downloaded: 3671 file(s) [attempted 3671/8690 = 42%, 1700 KB/s], Decompressed: 751
+Downloaded: 3765 file(s) [attempted 3765/8690 = 43%, 1358 KB/s], Decompressed: 751
+Downloaded: 3845 file(s) [attempted 3845/8690 = 44%, 782 KB/s], Decompressed: 751
+Downloaded: 3896 file(s) [attempted 3896/8690 = 44%, 2342 KB/s], Decompressed: 751
+Downloaded: 3940 file(s) [attempted 3940/8690 = 45%, 1504 KB/s], Decompressed: 751
+Downloaded: 4023 file(s) [attempted 4023/8690 = 46%, 504 KB/s], Decompressed: 751
+Downloaded: 4096 file(s) [attempted 4096/8690 = 47%, 1628 KB/s], Decompressed: 751
+Downloaded: 4176 file(s) [attempted 4176/8690 = 48%, 2847 KB/s], Decompressed: 751
+Downloaded: 4236 file(s) [attempted 4236/8690 = 48%, 556 KB/s], Decompressed: 751
+Downloaded: 4271 file(s) [attempted 4271/8690 = 49%, 1822 KB/s], Decompressed: 751
+Downloaded: 4358 file(s) [attempted 4358/8690 = 50%, 79 KB/s], Decompressed: 751
+Downloaded: 4406 file(s) [attempted 4406/8690 = 50%, 134 KB/s], Decompressed: 751
+Downloaded: 4469 file(s) [attempted 4469/8690 = 51%, 1643 KB/s], Decompressed: 751
+Downloaded: 4538 file(s) [attempted 4538/8690 = 52%, 436 KB/s], Decompressed: 751
+Downloaded: 4585 file(s) [attempted 4585/8690 = 52%, 2323 KB/s], Decompressed: 751
+Downloaded: 4632 file(s) [attempted 4632/8690 = 53%, 2198 KB/s], Decompressed: 751
+Downloaded: 4721 file(s) [attempted 4721/8690 = 54%, 71 KB/s], Decompressed: 751
+Downloaded: 4817 file(s) [attempted 4817/8690 = 55%, 151 KB/s], Decompressed: 751
+Downloaded: 4917 file(s) [attempted 4917/8690 = 56%, 298 KB/s], Decompressed: 751
+Downloaded: 4984 file(s) [attempted 4984/8690 = 57%, 7521 KB/s], Decompressed: 751
+Downloaded: 5079 file(s) [attempted 5079/8690 = 58%, 4194 KB/s], Decompressed: 751
+Downloaded: 5128 file(s) [attempted 5128/8690 = 59%, 14 KB/s], Decompressed: 751
+Downloaded: 5210 file(s) [attempted 5210/8690 = 59%, 141 KB/s], Decompressed: 751
+Downloaded: 5286 file(s) [attempted 5286/8690 = 60%, 1476 KB/s], Decompressed: 751
+Downloaded: 5376 file(s) [attempted 5376/8690 = 61%, 3174 KB/s], Decompressed: 751
+Downloaded: 5477 file(s) [attempted 5477/8690 = 63%, 3859 KB/s], Decompressed: 751
+Downloaded: 5581 file(s) [attempted 5581/8690 = 64%, 2000 KB/s], Decompressed: 751
+Downloaded: 5681 file(s) [attempted 5681/8690 = 65%, 499 KB/s], Decompressed: 751
+Downloaded: 5781 file(s) [attempted 5781/8690 = 66%, 333 KB/s], Decompressed: 751
+Downloaded: 5893 file(s) [attempted 5893/8690 = 67%, 204 KB/s], Decompressed: 751
+Downloaded: 6001 file(s) [attempted 6001/8690 = 69%, 3909 KB/s], Decompressed: 751
+Downloaded: 6103 file(s) [attempted 6103/8690 = 70%, 113 KB/s], Decompressed: 751
+Downloaded: 6207 file(s) [attempted 6207/8690 = 71%, 1356 KB/s], Decompressed: 751
+Downloaded: 6307 file(s) [attempted 6307/8690 = 72%, 183 KB/s], Decompressed: 751
+Downloaded: 6405 file(s) [attempted 6405/8690 = 73%, 707 KB/s], Decompressed: 751
+Downloaded: 6467 file(s) [attempted 6467/8690 = 74%, 1262 KB/s], Decompressed: 751
+Downloaded: 6564 file(s) [attempted 6564/8690 = 75%, 285 KB/s], Decompressed: 751
+Downloaded: 6660 file(s) [attempted 6660/8690 = 76%, 601 KB/s], Decompressed: 751
+Downloaded: 6767 file(s) [attempted 6767/8690 = 77%, 1153 KB/s], Decompressed: 751
+Downloaded: 6867 file(s) [attempted 6867/8690 = 79%, 1659 KB/s], Decompressed: 751
+Downloaded: 6971 file(s) [attempted 6971/8690 = 80%, 1735 KB/s], Decompressed: 751
+Downloaded: 7074 file(s) [attempted 7074/8690 = 81%, 119 KB/s], Decompressed: 751
+Downloaded: 7178 file(s) [attempted 7178/8690 = 82%, 1218 KB/s], Decompressed: 751
+Downloaded: 7280 file(s) [attempted 7280/8690 = 83%, 2476 KB/s], Decompressed: 751
+Downloaded: 7371 file(s) [attempted 7371/8690 = 84%, 2690 KB/s], Decompressed: 2535
+Downloaded: 7422 file(s) [attempted 7422/8690 = 85%, 64 KB/s], Decompressed: 2535
+Downloaded: 7518 file(s) [attempted 7518/8690 = 86%, 476 KB/s], Decompressed: 2535
+Downloaded: 7574 file(s) [attempted 7574/8690 = 87%, 315 KB/s], Decompressed: 2535
+Downloaded: 7667 file(s) [attempted 7667/8690 = 88%, 71 KB/s], Decompressed: 2535
+Downloaded: 7765 file(s) [attempted 7765/8690 = 89%, 4644 KB/s], Decompressed: 2535
+Downloaded: 7865 file(s) [attempted 7865/8690 = 90%, 514 KB/s], Decompressed: 2535
+Downloaded: 7974 file(s) [attempted 7974/8690 = 91%, 6224 KB/s], Decompressed: 2535
+Downloaded: 8027 file(s) [attempted 8027/8690 = 92%, 447 KB/s], Decompressed: 2535
+Downloaded: 8111 file(s) [attempted 8111/8690 = 93%, 882 KB/s], Decompressed: 2535
+Downloaded: 8174 file(s) [attempted 8174/8690 = 94%, 2026 KB/s], Decompressed: 2535
+Downloaded: 8248 file(s) [attempted 8248/8690 = 94%, 55 KB/s], Decompressed: 2535
+Downloaded: 8333 file(s) [attempted 8333/8690 = 95%, 763 KB/s], Decompressed: 2535
+Downloaded: 8346 file(s) [attempted 8346/8690 = 96%, 916 KB/s], Decompressed: 2535
+Downloaded: 8416 file(s) [attempted 8416/8690 = 96%, 61 KB/s], Decompressed: 2535
+Downloaded: 8478 file(s) [attempted 8478/8690 = 97%, 65 KB/s], Decompressed: 2535
+Downloaded: 8528 file(s) [attempted 8528/8690 = 98%, 522 KB/s], Decompressed: 2535
+Downloaded: 8619 file(s) [attempted 8619/8690 = 99%, 633 KB/s], Decompressed: 2535
+Downloaded: 8688 file(s) [attempted 8688/8690 = 99%, 435 KB/s], Decompressed: 2535
+Downloaded: 8690 file(s) [attempted 8690/8690 = 100%, 435 KB/s], Decompressed: 2535
+Decompressed 8690 file(s)
+Already decompressed 8690 file(s)
+Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL 0
+Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow 0
+RHProofTermPrune 0
+RHRecursiveReductionFixed 0
+RHRecursiveReductionAutoV3 0
+RH32SingletonPoleData 1
+RH32SingletonPoleData.lean:175:4: error: Type mismatch: After simplification, term
+  h
+ has type
+  Measurable (re ∘ Gchi 1 ∘ Real.exp)
+but is expected to have type
+  Measurable fun u => G (Real.exp u)
+RH32SingletonPoleData.lean:249:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:250:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:251:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:248:48: warning: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:249:4: warning: Unused tactic linter: `(rh_auto_frontier 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:250:4: warning: Unused tactic linter: `(rh_auto 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:251:4: warning: Unused tactic linter: `exact rh32_right_of_windowU hθ hθ1 hδ hw` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MISSING poleData
+ROOT_SCAN root=poleData visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+MISSING lemmaL
+ROOT_SCAN root=lemmaL visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+MISSING rh32_principal_pole_data
+ROOT_SCAN root=rh32_principal_pole_data visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+MISSING rh32_right_of_window
+ROOT_SCAN root=rh32_right_of_window visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+RH32SingletonPoleData.lean:257:0: error: not a visible theorem
+'Deduction.poleData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.poleData_char' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh32_principal_pole_data' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Deduction.rh32_right_of_window' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+

@@ -1,0 +1,40 @@
+RH32SingletonPoleData.lean:175:4: error: Type mismatch: After simplification, term
+  h
+ has type
+  Measurable (re ∘ Gchi 1 ∘ Real.exp)
+but is expected to have type
+  Measurable fun u => G (Real.exp u)
+RH32SingletonPoleData.lean:249:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:250:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:251:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:248:48: warning: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:249:4: warning: Unused tactic linter: `(rh_auto_frontier 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:250:4: warning: Unused tactic linter: `(rh_auto 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:251:4: warning: Unused tactic linter: `exact rh32_right_of_windowU hθ hθ1 hδ hw` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MISSING poleData
+ROOT_SCAN root=poleData visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+MISSING lemmaL
+ROOT_SCAN root=lemmaL visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+MISSING rh32_principal_pole_data
+ROOT_SCAN root=rh32_principal_pole_data visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+MISSING rh32_right_of_window
+ROOT_SCAN root=rh32_right_of_window visited=1 values=0 noValue=0 axioms=0 missing=1 pending=0
+RH32SingletonPoleData.lean:257:0: error: not a visible theorem
+'Deduction.poleData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.poleData_char' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh32_principal_pole_data' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Deduction.rh32_right_of_window' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

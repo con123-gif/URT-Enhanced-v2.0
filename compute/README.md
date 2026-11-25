@@ -53,3 +53,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-proof-term-prune-native-20261125` | pass | 77.94 | 2026-11-25T08:31:42Z | GPT | Native kernel-check proof-term pruning of unused and dependent binders, verify original-statement bridges and negative c |
 | `rh-recursive-reduction-strip-root-20261125` | pass | 98.87 | 2026-11-25T08:35:21Z | GPT | Native check of V3 automatic reduction after V2 unreachable tactic lint failure; verify V1 and actual root plus reduced  |
 | `rh-landau-diagonal-root-20261125` | error | 72.54 | 2026-11-25T15:25:58Z | GPT | Pinned actual analytic import DAG: replay singleton pole data, direct log-window bridge and diagonal-window conditional  |
+| `rh-landau-diagonal-root-header-fix-20261125` | error | 252.4 | 2026-11-25T16:26:10Z | GPT | Retry exact RUN32/RUN33 analytic closure after actual CI header parser failure on commented Python import; retain origin |

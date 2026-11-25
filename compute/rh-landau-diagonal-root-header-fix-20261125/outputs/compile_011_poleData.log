@@ -1,0 +1,14 @@
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean:152:15: warning: This simp argument is unused:
+  Function.update_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [g, hw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean:373:8: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
