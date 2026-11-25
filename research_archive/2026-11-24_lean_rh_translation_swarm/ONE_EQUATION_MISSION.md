@@ -1,3 +1,39 @@
+# Binding update — unify before expanding (25 November 2026)
+
+User-approved instruction for ALL 15 RH research lanes. This is an extension of the critical-frontier convergence and verification-first instructions below, not a new independent RH project. Keep all lane assignments, existing schedules, pinned source, protected workflows, and ten-page correctness requirement unchanged.
+
+## Shared method: invariant → cancellation → weakest sufficient consumer → verification
+
+1. **Unify first.** Before expanding another proof tree, compare the actual upstream theorem bodies, same-host parameters, definitions, symmetries and measure normalizations with the other lanes' latest results. Identify common suppliers, exact transport identities and equivalent representations. Use one source/context-keyed ledger. Do not infer equivalence merely from resemblance.
+2. **Cancel before taking norms or separate upper bounds.** Preserve signed errors, common logarithms, Fourier projections, shared scalar factors and cohomological symmetries. Try exact cancellation, quotienting by actual invariance, telescoping, and joint budgets at the native consumer. Keep every necessary positivity, finiteness and quantifier guard. Do not assume a cancellation that has not been derived.
+3. **Preserve the same witness.** Arithmetic, geometry, entropy and local gain must refer to the identical host, coefficient/character family, translation, fibre, and parameter choices wherever the source requires them. A separate existential witness in each branch is not a joint witness. Uniform averages over a target translation group must use the target measure, not uniform averages over a covering set with unequal fibres.
+4. **Reduce backwards and recursively.** Find the weakest sufficient interface actually consumed by the root-reachable proof. If a signed average suffices, do not demand unnecessary pointwise bounds; if the original consumer requires exact equality, do not replace it by an estimate. Propagate a verified simplification through all affected consumers using incremental reverse edges; retain original fallback until replacement is checked. URT pi/e and golden-angle ordering remains a candidate-search heuristic, never an axiom. Compare against conventional ordering using measured evidence.
+5. **Verify in parallel, integrate once.** Prioritize proof of the outstanding premises and native replay, actual caller substitution and transitive axiom audit. Mark conditional human derivations and uncompiled certificates precisely. Use the pinned existing runner and preserve failures. Put compact usable proof blocks into HUMAN_PROOF_ONE_EQUATION.md through editor/integration; avoid separate duplicate manuscripts. No progress claim based only on report length or number of commits.
+
+## Immediate shared unification frontier
+
+Use the actual source-derived reduction in integration/2026-11-25_INTERACTIVE_QUOTIENT_JOINT_LOSS.md (commit 0810c534f5b8e5fb367c0a63aa44a90d688c28fd). For one fixed host define q=4 log(1+x^cHH)/(1-delBar), c=(1+q)cSl1, F(v)=log |W(v)|+ASK(v)-Ga(v)+c IO(v), and K as in that note. Coverage tr:U0→H gives a nonempty fibre for each u in A0. IdentU makes ASK-Main constant on the fibre. With all retained native assumptions, the existing Ga_bound5 and weighted_mean_lower_bound_le imply the quotient-averaged bound
+
+    J = (1/|A0|) sum_{u in A0} min_{v:tr(v)=u} F(v)
+    mean_{u in A0} gapA(u) <= K+J.
+
+The actual ChCore.CharacterBalanceMoves.core Fourier consumer needs only that uniform translation mean. A section choosing one complete representative per fibre, or weights 1/(|A0|*|tr^-1(u)|), gives a sufficient bound; never minimize distinct terms at different representatives. The principal four-mode/height-shift bridge then gives, under its retained hypotheses,
+
+    G(x) <= 2(K+J)/(Q*d) + 4/(x*d) + 1 + 3*x^(1/2+eps).
+
+This is a human source-matched conditional reduction, NOT a verified bound on J or an RH proof. Do not repeatedly derive this downstream equation. Work upstream on the actual simultaneous same-host suppliers and prove the required joint budget at the existing scale across the complete native windows. Retain other consumers of exact mass or pointwise loss. Reuse arithmetic's unified trivial-character vanishing in 1fe24ac8 and 72a8ecc2, subject to independent audit/native verification; do not mistake vanishing of CountZ/CountIV for closure of CountI/II/V/Vs or the entire VWinAt(1,401) supplier.
+
+### Parallel lane coordination
+
+- Arithmetic/Galois/character/theta/literature: locate actual VWinAt(1,401) full-length quantitative suppliers and common character, trace, class-group and rank invariants; use the same host and uniform quantifiers. Prove or authenticate them, not merely reformulate their target.
+- Geometry/structure/entropy/local-gain: trace the producer of LossBounds/D.Losses on the actual ChainTied fibres, examine common rank/count/volume and loss normalization, derive a direct joint estimate of J (or the sufficient section-weighted mean) without independent choices. Continue the signed mass slack and exact Haar/Tamagawa routes wherever their native consumers require them. Never assume existence of the common invariant.
+- Dependency/URT/O(N)/kernel/audit: find actual shared suppliers and root-reachable consumers, prioritize high-impact prepared work for native replay, test every proposed measure change and cancellation with exact negative controls, preserve context keys and original fallbacks. No unsupported speedup or kernel closure.
+- Integration/human editor: coordinate one live proof and one frontier ledger, resolve incompatible witnesses, merge only source-matched and clearly status-labelled results, retain exact source and certificate provenance. Keep the final human proof at most ten pages including necessary references, without hiding unresolved assumptions.
+
+Each lane's next result must state the invariant or exact cancellation identified, the original consumer and assumptions, the proposed reduced interface, what was actually proved or checked, the remaining premise and one exact next action. Report genuine root-reachable closure only with matching evidence. If no unification is valid, record the precise obstruction and pursue the nearest actual supplier instead. Continue all existing schedules unchanged.
+
+---
+
 # Binding acceleration update — critical-frontier convergence (25 November 2026)
 
 User-approved priority: speed up the existing pinned RH human reconstruction, not launch an independent proof or sacrifice the ten-page correctness requirement. This update governs every lane's next run; retain all earlier research and validation requirements. Do not change frozen source, protected workflows, schedules or physics gates.
