@@ -3456,3 +3456,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-recursive-reduction-fixed-native-20261125"
+question = "Re-run both repaired recursive Lean reducers after observed V1 parsing/lint and V2 elaboration/registration failures; require all 14 named local test theorems and no nonstandard axioms. Not full RH verification."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_fixed_native.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
