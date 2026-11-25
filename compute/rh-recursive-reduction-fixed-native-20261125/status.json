@@ -1,0 +1,62 @@
+{
+  "status": "error",
+  "detail": "  file: /home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean",
+  "returncode": 1,
+  "wall_s": 73.57,
+  "tail": "2 KB/s], Decompressed: 451\rDownloaded: 4718 file(s) [attempted 4718/8690 = 54%, 1718 KB/s], Decompressed: 451\rDownloaded: 4823 file(s) [attempted 4823/8690 = 55%, 205 KB/s], Decompressed: 1482\rDownloaded: 4928 file(s) [attempted 4928/8690 = 56%, 151 KB/s], Decompressed: 1482\rDownloaded: 5034 file(s) [attempted 5034/8690 = 57%, 277 KB/s], Decompressed: 1482\rDownloaded: 5136 file(s) [attempted 5136/8690 = 59%, 287 KB/s], Decompressed: 1482\rDownloaded: 5245 file(s) [attempted 5245/8690 = 60%, 1498 KB/s], Decompressed: 1482\rDownloaded: 5349 file(s) [attempted 5349/8690 = 61%, 867 KB/s], Decompressed: 1482\rDownloaded: 5456 file(s) [attempted 5456/8690 = 62%, 4203 KB/s], Decompressed: 1482\rDownloaded: 5562 file(s) [attempted 5562/8690 = 64%, 649 KB/s], Decompressed: 1482\rDownloaded: 5669 file(s) [attempted 5669/8690 = 65%, 503 KB/s], Decompressed: 1482\rDownloaded: 5778 file(s) [attempted 5778/8690 = 66%, 2415 KB/s], Decompressed: 1482\rDownloaded: 5884 file(s) [attempted 5884/8690 = 67%, 491 KB/s], Decompressed: 1482\rDownloaded: 5978 file(s) [attempted 5978/8690 = 68%, 67 KB/s], Decompressed: 1482\rDownloaded: 6081 file(s) [attempted 6081/8690 = 69%, 152 KB/s], Decompressed: 1482\rDownloaded: 6193 file(s) [attempted 6193/8690 = 71%, 851 KB/s], Decompressed: 1482\rDownloaded: 6304 file(s) [attempted 6304/8690 = 72%, 455 KB/s], Decompressed: 1482\rDownloaded: 6406 file(s) [attempted 6406/8690 = 73%, 636 KB/s], Decompressed: 1482\rDownloaded: 6525 file(s) [attempted 6525/8690 = 75%, 180 KB/s], Decompressed: 1482\rDownloaded: 6577 file(s) [attempted 6577/8690 = 75%, 1248 KB/s], Decompressed: 1482\rDownloaded: 6659 file(s) [attempted 6659/8690 = 76%, 3577 KB/s], Decompressed: 1482\rDownloaded: 6761 file(s) [attempted 6761/8690 = 77%, 1252 KB/s], Decompressed: 1482\rDownloaded: 6865 file(s) [attempted 6865/8690 = 78%, 167 KB/s], Decompressed: 1482\rDownloaded: 6971 file(s) [attempted 6971/8690 = 80%, 165 KB/s], Decompressed: 1482\rDownloaded: 7076 file(s) [attempted 7076/8690 = 81%, 1293 KB/s], Decompressed: 1482\rDownloaded: 7182 file(s) [attempted 7182/8690 = 82%, 7387 KB/s], Decompressed: 1482\rDownloaded: 7289 file(s) [attempted 7289/8690 = 83%, 1955 KB/s], Decompressed: 1482\rDownloaded: 7393 file(s) [attempted 7393/8690 = 85%, 142 KB/s], Decompressed: 1482\rDownloaded: 7460 file(s) [attempted 7460/8690 = 85%, 3611 KB/s], Decompressed: 1482\rDownloaded: 7511 file(s) [attempted 7511/8690 = 86%, 5338 KB/s], Decompressed: 1482\rDownloaded: 7591 file(s) [attempted 7591/8690 = 87%, 2038 KB/s], Decompressed: 1482\rDownloaded: 7667 file(s) [attempted 7667/8690 = 88%, 261 KB/s], Decompressed: 1482\rDownloaded: 7767 file(s) [attempted 7767/8690 = 89%, 1691 KB/s], Decompressed: 1482\rDownloaded: 7882 file(s) [attempted 7882/8690 = 90%, 123 KB/s], Decompressed: 1482\rDownloaded: 7942 file(s) [attempted 7942/8690 = 91%, 317 KB/s], Decompressed: 1482\rDownloaded: 7993 file(s) [attempted 7993/8690 = 91%, 2407 KB/s], Decompressed: 1482\rDownloaded: 8038 file(s) [attempted 8038/8690 = 92%, 59 KB/s], Decompressed: 1482\rDownloaded: 8082 file(s) [attempted 8082/8690 = 93%, 1626 KB/s], Decompressed: 1482\rDownloaded: 8175 file(s) [attempted 8175/8690 = 94%, 70 KB/s], Decompressed: 1482\rDownloaded: 8272 file(s) [attempted 8272/8690 = 95%, 507 KB/s], Decompressed: 1482\rDownloaded: 8334 file(s) [attempted 8334/8690 = 95%, 345 KB/s], Decompressed: 1482\rDownloaded: 8436 file(s) [attempted 8436/8690 = 97%, 253 KB/s], Decompressed: 1482\rDownloaded: 8534 file(s) [attempted 8534/8690 = 98%, 129 KB/s], Decompressed: 1482\rDownloaded: 8629 file(s) [attempted 8629/8690 = 99%, 383 KB/s], Decompressed: 1482\rDownloaded: 8689 file(s) [attempted 8689/8690 = 99%, 2069 KB/s], Decompressed: 1482\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 2069 KB/s], Decompressed: 1482\nDecompressed 8690 file(s)\nAlready decompressed 8690 file(s)\nno such file or directory (error code: 4294967294)\n  file: /home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean\n",
+  "id": "rh-recursive-reduction-fixed-native-20261125",
+  "question": "Re-run both repaired recursive Lean reducers after observed V1 parsing/lint and V2 elaboration/registration failures; require all 14 named local test theorems and no nonstandard axioms. Not full RH verification.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_fixed_native.sh --out {out}",
+  "utc": "2026-11-25T08:23:38Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "d54c3102e918bee7b2d7b086f9892c1f275259be",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45575595306",
+  "outputs_committed": [
+    {
+      "path": "RHRecursiveReductionAutoFixed.lean",
+      "bytes": 6706,
+      "sha256": "7374741f01c344b00036a6dd1e676fedf495aa22e82f1703f1b2ad81aa7285b8"
+    },
+    {
+      "path": "RHRecursiveReductionFixed.lean",
+      "bytes": 6882,
+      "sha256": "a93a09dae102fa62ed201035ec8c903b0af5f33983de0df000089006c6fc919e"
+    },
+    {
+      "path": "lean_check.log",
+      "bytes": 163,
+      "sha256": "d301b532a1012e425bf1ee50d5d91910c0786ef997aeaf4645319b52c6b4acb5"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 10037,
+      "sha256": "8cb042f2342265dad544478461f9de579a2b48088f580f82aa2758b9f9da6007"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    }
+  ],
+  "outputs_artifact_only": []
+}
