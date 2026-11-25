@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 77.94,
+  "tail": " 4284/8690 = 49%, 2349 KB/s], Decompressed: 169\rDownloaded: 4427 file(s) [attempted 4427/8690 = 50%, 267 KB/s], Decompressed: 820\rDownloaded: 4571 file(s) [attempted 4571/8690 = 52%, 591 KB/s], Decompressed: 820\rDownloaded: 4713 file(s) [attempted 4713/8690 = 54%, 454 KB/s], Decompressed: 820\rDownloaded: 4851 file(s) [attempted 4851/8690 = 55%, 3110 KB/s], Decompressed: 820\rDownloaded: 4962 file(s) [attempted 4962/8690 = 57%, 1496 KB/s], Decompressed: 820\rDownloaded: 5108 file(s) [attempted 5108/8690 = 58%, 499 KB/s], Decompressed: 820\rDownloaded: 5255 file(s) [attempted 5255/8690 = 60%, 180 KB/s], Decompressed: 820\rDownloaded: 5403 file(s) [attempted 5403/8690 = 62%, 926 KB/s], Decompressed: 820\rDownloaded: 5544 file(s) [attempted 5544/8690 = 63%, 2104 KB/s], Decompressed: 820\rDownloaded: 5693 file(s) [attempted 5693/8690 = 65%, 617 KB/s], Decompressed: 820\rDownloaded: 5843 file(s) [attempted 5843/8690 = 67%, 16795 KB/s], Decompressed: 820\rDownloaded: 5990 file(s) [attempted 5990/8690 = 68%, 377 KB/s], Decompressed: 820\rDownloaded: 6127 file(s) [attempted 6127/8690 = 70%, 416 KB/s], Decompressed: 820\rDownloaded: 6272 file(s) [attempted 6272/8690 = 72%, 350 KB/s], Decompressed: 820\rDownloaded: 6416 file(s) [attempted 6416/8690 = 73%, 2289 KB/s], Decompressed: 820\rDownloaded: 6553 file(s) [attempted 6553/8690 = 75%, 446 KB/s], Decompressed: 820\rDownloaded: 6696 file(s) [attempted 6696/8690 = 77%, 6216 KB/s], Decompressed: 820\rDownloaded: 6800 file(s) [attempted 6800/8690 = 78%, 7951 KB/s], Decompressed: 820\rDownloaded: 6877 file(s) [attempted 6877/8690 = 79%, 98 KB/s], Decompressed: 820\rDownloaded: 6986 file(s) [attempted 6986/8690 = 80%, 1846 KB/s], Decompressed: 820\rDownloaded: 7117 file(s) [attempted 7117/8690 = 81%, 1457 KB/s], Decompressed: 820\rDownloaded: 7270 file(s) [attempted 7270/8690 = 83%, 5099 KB/s], Decompressed: 820\rDownloaded: 7421 file(s) [attempted 7421/8690 = 85%, 1830 KB/s], Decompressed: 820\rDownloaded: 7559 file(s) [attempted 7559/8690 = 86%, 5780 KB/s], Decompressed: 820\rDownloaded: 7698 file(s) [attempted 7698/8690 = 88%, 2282 KB/s], Decompressed: 820\rDownloaded: 7828 file(s) [attempted 7828/8690 = 90%, 5243 KB/s], Decompressed: 820\rDownloaded: 7974 file(s) [attempted 7974/8690 = 91%, 442 KB/s], Decompressed: 820\rDownloaded: 8116 file(s) [attempted 8116/8690 = 93%, 330 KB/s], Decompressed: 820\rDownloaded: 8260 file(s) [attempted 8260/8690 = 95%, 879 KB/s], Decompressed: 820\rDownloaded: 8391 file(s) [attempted 8391/8690 = 96%, 1146 KB/s], Decompressed: 820\rDownloaded: 8545 file(s) [attempted 8545/8690 = 98%, 1731 KB/s], Decompressed: 820\rDownloaded: 8683 file(s) [attempted 8683/8690 = 99%, 1967 KB/s], Decompressed: 820\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 1967 KB/s], Decompressed: 820\nDecompressed 8690 file(s)\nAlready decompressed 8690 file(s)\n  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current\n                                 Dload  Upload  Total   Spent   Left   Speed\n\r  0      0   0      0   0      0      0      0                              0\r100   2459 100   2459   0      0  31300      0                              0\r100   2459 100   2459   0      0  31272      0                              0\r100   2459 100   2459   0      0  31249      0                              0\nPRUNED RHPruneUnused: 4 -> 2 binders; original bridge checked\nPRUNED RHPruneDependent: 3 -> 2 binders; original bridge checked\nNO_BINDER_REDUCTION RHPruneNoDrop\nROOT_SCAN root=RHPruneUnusedReduced visited=1 values=1 noValue=0 axioms=0 missing=0 pending=0\n'RHPruneUnusedReduced' does not depend on any axioms\n'RHPruneUnusedReduced.original' does not depend on any axioms\n'RHPruneDependentReduced' does not depend on any axioms\n'RHPruneDependentReduced.original' does not depend on any axioms\nNO_BINDER_REDUCTION Formalism.VW.rh_of_right\nAXIOM propext\nAXIOM Quot.sound\nAXIOM Classical.choice\nROOT_SCAN root=Formalism.VW.rh_of_right visited=2000 values=1642 noValue=358 axioms=3 missing=0 pending=324\n",
+  "id": "rh-proof-term-prune-native-20261125",
+  "question": "Native kernel-check proof-term pruning of unused and dependent binders, verify original-statement bridges and negative control, then scan actual pinned RhOfRight theorem dependencies. Bounded scan, not full RH verification.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_proof_term_prune_native.sh --out {out}",
+  "utc": "2026-11-25T08:31:42Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "0619653b93630fb9f01b5849647326041ec611cc",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45576756833",
+  "outputs_committed": [
+    {
+      "path": "RHProofTermPrune.lean",
+      "bytes": 6646,
+      "sha256": "4ea12c40220e8f4fde411a59b51bdafe8b9ba09c67aabad7a4c2f0696b0a19ff"
+    },
+    {
+      "path": "RHProofTermPruneActual.lean",
+      "bytes": 9195,
+      "sha256": "d8cb7da52f400fce442b6ec9c475d1a333293a3c193d40b021d21925514575a2"
+    },
+    {
+      "path": "RhOfRight.lean",
+      "bytes": 2459,
+      "sha256": "7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7784,
+      "sha256": "bf8958b09fa1f15f02cd81155facdd983968b7d5ec8243d6cc6627c6be9a7de3"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    },
+    {
+      "path": "prune_actual.log",
+      "bytes": 698,
+      "sha256": "2044e82044b5dece2e8eecf0eb56860c61b49d6546777c15fca018395771557a"
+    },
+    {
+      "path": "prune_core.log",
+      "bytes": 491,
+      "sha256": "345110d43a273db20d45e099991685e83aaddb8fda5dd225129265df26601a9a"
+    },
+    {
+      "path": "result.json",
+      "bytes": 385,
+      "sha256": "e384689bade74b1e64b060904ff7df0477c971ad134a536f86f827880023ba2c"
+    }
+  ],
+  "outputs_artifact_only": []
+}

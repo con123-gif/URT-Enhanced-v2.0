@@ -1,0 +1,13 @@
+PRUNED RHPruneUnused: 4 -> 2 binders; original bridge checked
+PRUNED RHPruneDependent: 3 -> 2 binders; original bridge checked
+NO_BINDER_REDUCTION RHPruneNoDrop
+ROOT_SCAN root=RHPruneUnusedReduced visited=1 values=1 noValue=0 axioms=0 missing=0 pending=0
+'RHPruneUnusedReduced' does not depend on any axioms
+'RHPruneUnusedReduced.original' does not depend on any axioms
+'RHPruneDependentReduced' does not depend on any axioms
+'RHPruneDependentReduced.original' does not depend on any axioms
+NO_BINDER_REDUCTION Formalism.VW.rh_of_right
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Formalism.VW.rh_of_right visited=2000 values=1642 noValue=358 axioms=3 missing=0 pending=324
