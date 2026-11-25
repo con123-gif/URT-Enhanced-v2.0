@@ -37,18 +37,24 @@ where aE is the native scale a. Indeed ChTop identifies the arithmetic gap with 
 
 Now average over A0. A finite character summed over a subgroup is zero unless it is trivial on that subgroup, when the sum is the subgroup order (multiply the sum by a nontrivial character value to prove the zero case). Since every s∈T2 lies in A0, this gives the exact identity
     mean_u Th(u,t) = (bd/2) sum_{χ trivial on A0} χ(e1(t)) GPsi(χ,a(t)/b).
-Native ChCore.one_char and sum_vv use the host character estimates and Shares condition to bound the remaining sum below, after summing over t, by
-    r [G(x) - SigA(x) - 4 x^(1/2+ε)].
-SigA is the sum of the magnitudes of the unkept characters trivial on A0. The native GmA=Level.Gm and the principal singleton identification are essential for this substitution. This lower estimate uses the source's derivative-integral and shift bounds; it is not obtained from orthogonality alone.
+**Principal-character reduction.** The native index of A0 in H equals the level order o=1, so A0=H. By surjectivity of the Artin map, primitive reading is injective (PrimInj.prim_inj); since KEPT={1}, only the trivial additive character is retained. The annihilator of A0 in the dual of E0×H therefore consists of exactly the four characters χ_ab(i,j,h)=(-1)^(ai+bj), a,b in {0,1}. On e1(t) their values are (-1)^a, independent of t. Thus no weighted kept-character case or Shares estimate is needed in this particular consumer.
 
-Combining the pointwise upper bound, exact subgroup average and this character lower bound yields the single central inequality
-    (Qd/2) [G(x)-SigA(x)-4 x^(1/2+ε)] <= x^(5ε) B + 2Q/x.
+Write g_ab(y)=Re GPsi(χ_ab,y), with g_00=G by prim_read and Gz_eq. Define the signed correction J(x)=g_01(x)-g_10(x)-g_11(x). The average above, summed over t and j, becomes exactly
 
-We can check the exponent directly in ordinary algebra. The source size windows give aE<=2xb, r>=n*x^(-ε/8)/2, d>=x^(-ε), x^(1/2-ε)<=m<=x^(1/2+ε/2), xm<=k<=n²*x^(1/2-ε). Divide by Qd/2. The first B term contributes at most 4x^(1/2+2ε)+4x^ε; the second at most 8x^(1/2+21ε/8); the last at most 4x^(1/2+9ε/8). Multiplying each by x^(5ε), adding the 4x^(1/2+ε) shift and 4/(xd) cost, and using x>=1, gives
-    G(x)-SigA(x) <= 28 x^(1/2+61ε/8).
-For each fixed ε>0, enlarge the eventual threshold until x^(3ε/8)>=28; this proves G−SigA<=x^(1/2+8ε). This direct coarse calculation uses a slightly larger harmless eventual threshold than the native proposition_size_bound (which uses 26). No new asymptotic hypothesis is needed.
+    (Qd/2) * mean_{t in TT} [G(y_t)+J(y_t)] <= Err+2Q/x,
+    y_t=a(t)/b.
 
-The source sigA_le supplies SigA<=4o x^(1/2+ε)=4x^(1/2+ε), since the principal cyclic level has o=1. Therefore G<=5x^(1/2+8ε)<=x^(1/2+9ε) once x^ε>=5. This is [E].
+To replace y_t by x, use the native derivative-integral lemma with |y_t-x|<=1. For the trivial mode its absolute error is <=Cd; for each nontrivial mode it is <=log(x+1)+Cd+|ell(χ_ab)| (ChCore.move). The proof of SigALe bounds each of the three nontrivial primitive ramps by x^(1/2+ε); the corresponding derivative-at-one bound is <=C log x by EAtH.bdL and prim_read. Therefore
+
+    G(x)+J(x) <= 2Err/(Qd)+4/(xd)+R_shift(x),
+    R_shift(x)=4Cd+3log(x+1)+3C log x,
+    |J(x)|<=3 x^(1/2+ε).
+
+This is the exact signed four-mode compression followed by an elementary upper bound. In particular it needs no general one_char/sum_vv branch, kept-character weights, Ko, M or Shares premise at this consumer. The original host construction, its other consumers, ThinScales, CostWindows, ramified primitive values, compatibility and actual geometry are retained. A signed bound on -J can replace the last absolute-value estimate if later justified; it is not assumed here.
+
+The native size windows give aE<=2xb, r>=n*x^(-ε/8)/2, d>=x^(-ε), x^(1/2-ε)<=m<=x^(1/2+ε/2), xm<=k<=n²*x^(1/2-ε). Divide B by Qd/2: the first term contributes at most 4x^(1/2+2ε)+4x^ε; the second at most 8x^(1/2+21ε/8); the last at most 4x^(1/2+9ε/8). Hence 2B/(Qd)<=20x^(1/2+21ε/8). With Err=x^(5ε)B the signed inequality proves [E] by absorbing its fixed constants at a sufficiently large threshold. With the three-budget Err<=400M³ x^(2ε)B derived below it proves even G(x)<=x^(1/2+5ε) eventually: for fixed ε choose x large enough that R_shift<=x^(1/2+ε), and absorb 8000M³+8 into x^(3ε/8). This is an ordinary mathematical specialization of the existing proof, not a new independent RH route.
+
+Source anchors: CardPsiA.lean 4fe4ded735dd1ba55db3a01fc181ad794a2c4a0a; PrimInj.lean 5720fe0139394b6e9d8c688b36ae2d6f5af10478; PrimRead.lean 3960cf3e7d166f6664405a0d5fcb995924621ffb; charsA.lean 7d6a3faa3f6dcc1923a65473d848d8da0601e7a2; SigALe.lean e9c80e2017ec149ac559bc20c184b9264b9ec0c2; ChCore.lean 878f5077bc382426c7da988e5a375b85deeaa7de. Exact source definitions and proof bodies inspected; new principal-specific replacement not compiled. The already verified conditional half-strip endpoint does not verify this replacement.
 
 Window quantifiers: the actual topDesWin produces FamilyClassConnected for la=3/2; eFamC_of_cls supplies EAtH eventually for each member; tiedCore_of_chainTied supplies CoreAtH from ChainTied; windowInequality_of_artinInputs takes the maximum of the eventual thresholds. The native HasWindows.mono chooses Y beyond that maximum and any specified Y0. Thus the estimates hold at every x in the same complete window, not at isolated points or with ε or the window exponent varying across x. The original source requires only eventual thresholds, so the slightly larger threshold used above is legitimate.
 
@@ -107,9 +113,7 @@ Use the original eleven premises and ErrWindows, not a new geometry. Let E=ErrTe
 
 The sum, including log|W|, LoP and M_0, is at most 375M³Z²E, hence
     ErrX5at <= 400M³ x^(2epsilon) E <= 400M³ x^(2epsilon) B.
-This is a direct algebraic bound under the original premises; BNBoundsU supplies E<=B. The geometric branch now hands one scalar to the Fourier branch, without carrying each individual error term. The arithmetic in §2 gives 2B/(Qd)<=20 x^(1/2+21epsilon/8); thus substitution into the native thick Fourier inequality and SigA<=4x^(1/2+epsilon) yields
-    G(x) <= (8000M³+12) x^(1/2+37epsilon/8).
-Choose the eventual threshold with x^(3epsilon/8)>=8000M³+12. The same conditional construction therefore yields G(x)<=x^(1/2+5epsilon), implying the canonical native equation [E] with 9epsilon. No change to the window quantifiers, no new premise, no claim of closing the upstream existence proofs. For the ten-page proof, this three-budget derivation can replace the longer expansion after independent audit; the original native estimate remains valid.
+This is a direct algebraic bound under the original premises; BNBoundsU supplies E<=B. The geometric branch now hands one scalar to the Fourier branch, without carrying each individual error term. The arithmetic in §2 gives 2B/(Qd)<=20 x^(1/2+21epsilon/8); substitute the principal signed four-mode identity there, absorb the logarithmic shift error and use |J|<=3x^(1/2+epsilon). Thus eventually G(x)<=(8000M³+8)x^(1/2+37epsilon/8). Choose the eventual threshold with x^(3epsilon/8)>=8000M³+8. The same conditional construction therefore yields G(x)<=x^(1/2+5epsilon), implying the canonical native equation [E] with 9epsilon. No change to the window quantifiers, no new premise, no claim of closing the upstream existence proofs. For the ten-page proof, this three-budget derivation can replace the longer expansion after independent audit; the original native estimate remains valid.
 
 Source: ErrorFormsWeakWindowsFalse.lean 1d1d179d111b5aa668893327264648558f30fdb6; QuotientSlopeBoundsWith.lean f9f34a9147750e215a6b2f206eb6f9889aa726b6; MeanBoundSecondForm.lean e4332fd8680d2b2f82e0a1e44a276453e03e2109; CoreGm.lean 3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d. Source definitions checked. This is human algebra, not a native-compiled replacement or an independently proved RH bound.
 
