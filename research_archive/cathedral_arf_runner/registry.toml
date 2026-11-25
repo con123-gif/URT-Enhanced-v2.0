@@ -3512,3 +3512,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/la
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-landau-diagonal-root-abs-fix-20261125"
+question = "Replay actual CI 45663493094 failure with seven absolute-value parser fixes in the pinned ephemeral direct-log-window overlay; preserve strict axiom, scan and bridge checks. Conditional RH interface only."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_diagonal_root_native_abs_fix.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
