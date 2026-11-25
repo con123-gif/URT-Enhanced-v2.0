@@ -97,6 +97,22 @@ Consequently
       [4log(1+X)*(K_3+M_0+b)+(etaBar+4sqrt(eBar))*X*b]/(1-delBar).
 This is exactly ErrX5at (not a new substitute bound). Its size estimate is supplied by the native errX5at_le with ErrWindows and LargeX; its application to gapA uses the actual ASK/Main identification and BNBoundsU. The displayed algebra proves the local implication once these inequalities and the entropy premise are established. It does not establish the existence of their simultaneous geometric witnesses.
 
+### Bottom-up compression: three budgets become one
+
+Use the original eleven premises and ErrWindows, not a new geometry. Let E=ErrText=r*a*(1+m²/k)+m*(B0+Nc), Z=x^epsilon, M=max(1,K,cHH,eK). For eD=2,eL=0, the native nonnegative constants satisfy eDiv<=2 and eLoss=0. All fixed constants precede the window threshold. The size windows give A<=2ra, m<=x, m/k<=1, b<=a, k*b'<=a, Xpp<=a, L,La<=2Z, log x<=Z, log k<=M Z, E>=ra>=a>=b>=1 and log|W|<=k<=a.
+
+- **Division/count:** AP<=4MZE, E_D<=3MZ²E, m*cE*B0<=ME and P_-<=4MZE, hence K_0<=12MZ²E.
+- **Slope/loss:** LoP<=ME since mb<=xb<=a. M_0<=7M²ZE (four terms bounded by M²E,4M²ZE,ME,E). P_++P_-<=6MZE, C_0<=ME, V<=7M²ZE, so K_3<=14M²ZE and K_3+M_0+b<=22M²ZE.
+- **Entropy:** (1-delBar)^(-1)<=2, log(1+x^cHH)<=2MZ and the separate trace term is <=MZra by ErrWindows. The entropy contribution is <=352M³Z²E+2MZE.
+
+The sum, including log|W|, LoP and M_0, is at most 375M³Z²E, hence
+    ErrX5at <= 400M³ x^(2epsilon) E <= 400M³ x^(2epsilon) B.
+This is a direct algebraic bound under the original premises; BNBoundsU supplies E<=B. The geometric branch now hands one scalar to the Fourier branch, without carrying each individual error term. The arithmetic in §2 gives 2B/(Qd)<=20 x^(1/2+21epsilon/8); thus substitution into the native thick Fourier inequality and SigA<=4x^(1/2+epsilon) yields
+    G(x) <= (8000M³+12) x^(1/2+37epsilon/8).
+Choose the eventual threshold with x^(3epsilon/8)>=8000M³+12. The same conditional construction therefore yields G(x)<=x^(1/2+5epsilon), implying the canonical native equation [E] with 9epsilon. No change to the window quantifiers, no new premise, no claim of closing the upstream existence proofs. For the ten-page proof, this three-budget derivation can replace the longer expansion after independent audit; the original native estimate remains valid.
+
+Source: ErrorFormsWeakWindowsFalse.lean 1d1d179d111b5aa668893327264648558f30fdb6; QuotientSlopeBoundsWith.lean f9f34a9147750e215a6b2f206eb6f9889aa726b6; MeanBoundSecondForm.lean e4332fd8680d2b2f82e0a1e44a276453e03e2109; CoreGm.lean 3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d. Source definitions checked. This is human algebra, not a native-compiled replacement or an independently proved RH bound.
+
 ## 5. Arithmetic and automorphic construction: precise source-derived assembly
 
 The host existence input is VWinAt(1,401), not a prime-window statement. It supplies uniform full-length Galois-cohomology bounds VVle for every sufficiently large interval selected by the native quantifiers, for all degrees below floor(x^401) and every eligible field. The prime-pair construction pairEx, followed by winPairs, supplyOfAdmOf and supplyChi, places the cohomological bounds on hosts with the actual ranks, prime pair and character estimates. For modulus one the auxiliary nonprincipal characters remain in the proof of the host estimate. The source supplyChi returns HostExW with window exponent 3/2; 401 is the distinct cohomological cutoff.
