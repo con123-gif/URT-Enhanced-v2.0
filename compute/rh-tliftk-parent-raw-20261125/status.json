@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 1792.13,
+  "tail": ":560935,\"headRecord\":13430270,\"args\":[13181193,21182845,997983810]}]},{\"target\":13125906,\"paths\":\"1\",\"witnesses\":[{\"record\":997980830,\"paths\":\"1\"}],\"applications\":[{\"record\":997983810,\"paths\":\"1\",\"head\":13125906,\"headRecord\":997980830,\"args\":[16312,16311,16316]}]}]},{\"slot\":1,\"id\":997983822,\"uses\":[{\"target\":13125937,\"paths\":\"1\",\"witnesses\":[{\"record\":997980839,\"paths\":\"1\"}],\"applications\":[{\"record\":997983815,\"paths\":\"1\",\"head\":13125937,\"headRecord\":997980839,\"args\":[16312,16311,16316]}]},{\"target\":13125938,\"paths\":\"1\",\"witnesses\":[{\"record\":997980846,\"paths\":\"1\"}],\"applications\":[{\"record\":997983821,\"paths\":\"1\",\"head\":13125938,\"headRecord\":997980846,\"args\":[16312,16311,16316]}]}]},{\"slot\":2,\"id\":997983829,\"uses\":[{\"target\":13125906,\"paths\":\"1\",\"witnesses\":[{\"record\":997980830,\"paths\":\"1\"}],\"applications\":[{\"record\":997983810,\"paths\":\"1\",\"head\":13125906,\"headRecord\":997980830,\"args\":[16312,16311,16316]}]}]},{\"slot\":3,\"id\":997983841,\"uses\":[{\"target\":560935,\"paths\":\"1\",\"witnesses\":[{\"record\":13430270,\"paths\":\"1\"}],\"applications\":[{\"record\":997983811,\"paths\":\"1\",\"head\":560935,\"headRecord\":13430270,\"args\":[13181193,21182845,997983810]}]},{\"target\":13125906,\"paths\":\"1\",\"witnesses\":[{\"record\":997980830,\"paths\":\"1\"}],\"applications\":[{\"record\":997983810,\"paths\":\"1\",\"head\":13125906,\"headRecord\":997980830,\"args\":[16312,16311,16316]}]},{\"target\":13125937,\"paths\":\"2\",\"witnesses\":[{\"record\":997980839,\"paths\":\"2\"}],\"applications\":[{\"record\":997983815,\"paths\":\"2\",\"head\":13125937,\"headRecord\":997980839,\"args\":[16312,16311,16316]}]},{\"target\":13125938,\"paths\":\"2\",\"witnesses\":[{\"record\":997980846,\"paths\":\"2\"}],\"applications\":[{\"record\":997983821,\"paths\":\"2\",\"head\":13125938,\"headRecord\":997980846,\"args\":[16312,16311,16316]}]}]},{\"slot\":4,\"id\":997983862,\"uses\":[{\"target\":560935,\"paths\":\"7\",\"witnesses\":[{\"record\":13430270,\"paths\":\"7\"}],\"applications\":[{\"record\":997983811,\"paths\":\"7\",\"head\":560935,\"headRecord\":13430270,\"args\":[13181193,21182845,997983810]}]},{\"target\":13125906,\"paths\":\"7\",\"witnesses\":[{\"record\":997980830,\"paths\":\"7\"}],\"applications\":[{\"record\":997983810,\"paths\":\"7\",\"head\":13125906,\"headRecord\":997980830,\"args\":[16312,16311,16316]}]},{\"target\":13125937,\"paths\":\"4\",\"witnesses\":[{\"record\":997980839,\"paths\":\"4\"}],\"applications\":[{\"record\":997983815,\"paths\":\"4\",\"head\":13125937,\"headRecord\":997980839,\"args\":[16312,16311,16316]}]},{\"target\":13125938,\"paths\":\"4\",\"witnesses\":[{\"record\":997980846,\"paths\":\"4\"}],\"applications\":[{\"record\":997983821,\"paths\":\"4\",\"head\":13125938,\"headRecord\":997980846,\"args\":[16312,16311,16316]}]},{\"target\":13125939,\"paths\":\"1\",\"witnesses\":[{\"record\":997983762,\"paths\":\"1\"}],\"applications\":[{\"record\":997983861,\"paths\":\"1\",\"head\":13125939,\"headRecord\":997983762,\"args\":[16312,16311,16316]}]}]},{\"slot\":5,\"id\":997983900,\"uses\":[{\"target\":260882,\"paths\":\"1\",\"witnesses\":[{\"record\":8738392,\"paths\":\"1\"}],\"applications\":[{\"record\":997983899,\"paths\":\"1\",\"head\":260882,\"headRecord\":8738392,\"args\":[13181193,997983811,85432262,997983870,997983898]}]},{\"target\":560935,\"paths\":\"15\",\"witnesses\":[{\"record\":13430270,\"paths\":\"15\"}],\"applications\":[{\"record\":997983811,\"paths\":\"15\",\"head\":560935,\"headRecord\":13430270,\"args\":[13181193,21182845,997983810]}]},{\"target\":13125906,\"paths\":\"15\",\"witnesses\":[{\"record\":997980830,\"paths\":\"15\"}],\"applications\":[{\"record\":997983810,\"paths\":\"15\",\"head\":13125906,\"headRecord\":997980830,\"args\":[16312,16311,16316]}]},{\"target\":13125937,\"paths\":\"10\",\"witnesses\":[{\"record\":997980839,\"paths\":\"10\"}],\"applications\":[{\"record\":997983815,\"paths\":\"10\",\"head\":13125937,\"headRecord\":997980839,\"args\":[16312,16311,16316]}]},{\"target\":13125938,\"paths\":\"10\",\"witnesses\":[{\"record\":997980846,\"paths\":\"10\"}],\"applications\":[{\"record\":997983821,\"paths\":\"10\",\"head\":13125938,\"headRecord\":997980846,\"args\":[16312,16311,16316]}]}]},{\"slot\":6,\"id\":232,\"uses\":[]},{\"slot\":7,\"id\":3416,\"uses\":[]}]}],\"spool\":{\"bytes\":61570595788,\"rawBytes\":57516228569,\"stored\":10510106738,\"frames\":6847,\"stop\":\"MAX_ROOT_REACHED\",\"cap\":10737418240}}\n",
+  "id": "rh-tliftk-parent-raw-20261125",
+  "question": "Extract the exact TLiftK parent type and value expression roots from the authenticated archive; preserve ordered maximal ResEtaPow application arguments and all auxiliary proof occurrence counts, not a kernel replay.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run22_tliftk_parent_applications.mjs --out {out}",
+  "utc": "2026-11-25T04:38:52Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "967021e2e1dea4c0f6358d558440e1052042093e",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45544702034",
+  "outputs_committed": [
+    {
+      "path": "tliftk_parent_raw.json",
+      "bytes": 866799,
+      "sha256": "2dac695ddf0786e7d42ce9f819ca0b657dcc28290044a340eac54cc0919c6b9a"
+    }
+  ],
+  "outputs_artifact_only": []
+}
