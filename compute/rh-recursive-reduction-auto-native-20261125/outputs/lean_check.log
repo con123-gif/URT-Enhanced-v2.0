@@ -1,0 +1,19 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:21:49: error: Cannot lift nested action `← inferType h` over a binder.
+This error usually happens when you are trying to lift a method nested in a `fun`, `let`, or `match`-alternative, and it can often be fixed by adding a missing `do`.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:144:2: error: Unknown attribute `[rh_reduction_rule]`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:151:2: error: Unknown attribute `[rh_reduction_rule]`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:161:2: error: Tactic `RHReductionAuto.rhAuto` has not been implemented
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:164:2: error: Tactic `RHReductionAuto.rhAuto` has not been implemented
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:167:12: error: Tactic `RHReductionAuto.rhAuto` has not been implemented
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:170:25: error: Variable name `P` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _P
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'RHReductionAuto.rank_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReductionAuto.scalar_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReductionAuto.auto_rank' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHReductionAuto.auto_factor' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHReductionAuto.auto_local_chain' depends on axioms: [sorryAx]
+'RHReductionAuto.reject_unproved' does not depend on any axioms

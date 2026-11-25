@@ -47,3 +47,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-tliftk-parent-raw-20261125` | pass | 1792.13 | 2026-11-25T04:38:52Z | GPT | Extract the exact TLiftK parent type and value expression roots from the authenticated archive; preserve ordered maximal |
 | `rh-arithmetic-frontier-20261125` | pass | 1812.37 | 2026-11-25T05:42:10Z | GPT | Project 100 root-linked arithmetic suppliers and six separately manifest-authenticated peer requests, preserving signed  |
 | `rh-recursive-reduction-native-20261125` | error | 114.21 | 2026-11-25T08:16:02Z | GPT | Kernel-check the recursive reduction tactic and seven source-matched local replacement/test theorems in the exact pinned |
+| `rh-recursive-reduction-auto-native-20261125` | error | 98.85 | 2026-11-25T08:18:25Z | GPT | Compile V2 automatic recursive proof reduction with registered and library premise search, cycle rejection, decreasing f |

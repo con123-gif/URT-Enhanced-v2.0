@@ -1,0 +1,57 @@
+{
+  "status": "error",
+  "detail": "'RHReductionAuto.reject_unproved' does not depend on any axioms",
+  "returncode": 1,
+  "wall_s": 98.85,
+  "tail": "KB/s], Decompressed: 416\rDownloaded: 4027 file(s) [attempted 4027/8690 = 46%, 2538 KB/s], Decompressed: 416\rDownloaded: 4242 file(s) [attempted 4242/8690 = 48%, 5358 KB/s], Decompressed: 416\rDownloaded: 4465 file(s) [attempted 4465/8690 = 51%, 1585 KB/s], Decompressed: 416\rDownloaded: 4732 file(s) [attempted 4732/8690 = 54%, 227 KB/s], Decompressed: 416\rDownloaded: 5012 file(s) [attempted 5012/8690 = 57%, 5470 KB/s], Decompressed: 416\rDownloaded: 5261 file(s) [attempted 5261/8690 = 60%, 1860 KB/s], Decompressed: 416\rDownloaded: 5477 file(s) [attempted 5477/8690 = 63%, 583 KB/s], Decompressed: 416\rDownloaded: 5738 file(s) [attempted 5738/8690 = 66%, 3335 KB/s], Decompressed: 416\rDownloaded: 6000 file(s) [attempted 6000/8690 = 69%, 1132 KB/s], Decompressed: 416\rDownloaded: 6239 file(s) [attempted 6239/8690 = 71%, 6402 KB/s], Decompressed: 416\rDownloaded: 6481 file(s) [attempted 6481/8690 = 74%, 4710 KB/s], Decompressed: 416\rDownloaded: 6710 file(s) [attempted 6710/8690 = 77%, 469 KB/s], Decompressed: 416\rDownloaded: 6963 file(s) [attempted 6963/8690 = 80%, 1113 KB/s], Decompressed: 416\rDownloaded: 7116 file(s) [attempted 7116/8690 = 81%, 2693 KB/s], Decompressed: 416\rDownloaded: 7411 file(s) [attempted 7411/8690 = 85%, 181 KB/s], Decompressed: 416\rDownloaded: 7671 file(s) [attempted 7671/8690 = 88%, 7598 KB/s], Decompressed: 416\rDownloaded: 7835 file(s) [attempted 7835/8690 = 90%, 334 KB/s], Decompressed: 416\rDownloaded: 8029 file(s) [attempted 8029/8690 = 92%, 3443 KB/s], Decompressed: 416\rDownloaded: 8291 file(s) [attempted 8291/8690 = 95%, 2027 KB/s], Decompressed: 416\rDownloaded: 8550 file(s) [attempted 8550/8690 = 98%, 6773 KB/s], Decompressed: 416\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 2488 KB/s], Decompressed: 416\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 2488 KB/s], Decompressed: 416\nDecompressed 8690 file(s)\nAlready decompressed 8690 file(s)\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:21:49: error: Cannot lift nested action `\u2190 inferType h` over a binder.\nThis error usually happens when you are trying to lift a method nested in a `fun`, `let`, or `match`-alternative, and it can often be fixed by adding a missing `do`.\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:144:2: error: Unknown attribute `[rh_reduction_rule]`\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:151:2: error: Unknown attribute `[rh_reduction_rule]`\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:161:2: error: Tactic `RHReductionAuto.rhAuto` has not been implemented\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:164:2: error: Tactic `RHReductionAuto.rhAuto` has not been implemented\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:167:12: error: Tactic `RHReductionAuto.rhAuto` has not been implemented\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAuto.lean:170:25: error: Variable name `P` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _P\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'RHReductionAuto.rank_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReductionAuto.scalar_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReductionAuto.auto_rank' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'RHReductionAuto.auto_factor' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'RHReductionAuto.auto_local_chain' depends on axioms: [sorryAx]\n'RHReductionAuto.reject_unproved' does not depend on any axioms\n",
+  "id": "rh-recursive-reduction-auto-native-20261125",
+  "question": "Compile V2 automatic recursive proof reduction with registered and library premise search, cycle rejection, decreasing frontier, rank/algebra/negative tests and axiom ledger under pinned Lean and Mathlib. Not full RH verification.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_auto_native.sh --out {out}",
+  "utc": "2026-11-25T08:18:25Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "b251734ce7221be640385b2d88ba6d00f1c893b9",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45574731368",
+  "outputs_committed": [
+    {
+      "path": "RHRecursiveReductionAuto.lean",
+      "bytes": 6473,
+      "sha256": "7ddcf7455998c5a47ddd01a9fb0ea80d5ca3ed5a97e56ebe53cfd1449c11160f"
+    },
+    {
+      "path": "lean_check.log",
+      "bytes": 2094,
+      "sha256": "0191f621d3674ca50e1774582389c7f30d2a8514faf04190f71f3b95cd53e045"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 5666,
+      "sha256": "8618830581f3104116235faaa70681afb5e7a0235a2639f1844e8a5fdba54ccf"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    }
+  ],
+  "outputs_artifact_only": []
+}
