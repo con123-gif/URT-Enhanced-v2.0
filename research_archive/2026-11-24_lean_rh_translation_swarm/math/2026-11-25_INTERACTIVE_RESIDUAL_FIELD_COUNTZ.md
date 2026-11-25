@@ -1,0 +1,32 @@
+# Principal trivial-character vanishing: one residual-field argument for CountZ and CountIV
+25 November 2026. SOURCE-MATCHED HUMAN DERIVATION; native Lean replay not available. RH OPEN.
+
+Pin 40e56bab026552e089d7afcfeff08d2defb9c005. Mission cd0a176134d46b5b624896e56843a24915c14477. Previous RUN36 audit 746b39e79dca4e7c27beaf7e3227c670d49f1b7a and RUN37 490330a62ee7e9ec1772a179448eb2ae9ec1e0e2 handle exceptional 3,7. This note supplies a uniform elementary class-number argument for the distinct ordinary-prime CountZ consumer, with the same normalization, without assuming the class number of the full cyclotomic field is prime to l.
+
+## One lemma
+Let l be odd prime, e positive, M the native divisible discrete l-primary QO with scalar action alpha=cyc^(-e). Let S be the native ShaU imposing local coboundaries on all finite inertia and on decomposition at l. Let F be the fixed field of ker(cyc^(-e) mod l). If l does not divide h(F), then S=0. In particular this holds for every odd l when l-1 divides 2e, with no parity assumption, and for l=3,7 at every positive e.
+
+Proof: fix c in S[l]. Divisibility lifts c to a cocycle z taking values in M[l] by subtracting a global coboundary. Fix inertia I at l. Then z(i)=(alpha(i)-1)m for a single m in M. The cyclotomic image of I is all Z_l^*: the polynomial Phi_{l^n}(1+X) is Eisenstein at l (mod l it is X^{l^{n-1}(l-1)}, constant l), so Q_l(zeta_{l^n}) is totally ramified of full degree, at every n. Surjectivity on the inverse limit follows from compactness. Consequently for each g choose i in I with alpha(i)=alpha(g). Hence l*(alpha(g)-1)m=l*z(i)=0. The global coboundary correction z0=z-dm still takes values in M[l] and vanishes on I.
+
+Set H=G_F. The restricted z0|H is a continuous homomorphism because the residual scalar action is trivial there. Away from l, cyclotomic inertia action on full M is trivial and the original local coboundary is zero. Above l, z0 vanishes on the conjugates of H intersect I by the cocycle identity z0(gng^-1)=alpha(g)z0(n) for n in H. At real infinite places it vanishes because the local group has order 2 and the target has odd-primary torsion. Thus unramified class field theory factors z0|H through Cl(F), and l prime to h(F) forces zero. F is finite abelian, with degree dividing l-1; hence inflation-restriction or finite-group averaging shows z0 is a coboundary: for A=sum_{u in Gal(F/Q)} z0(u), d*z0(g)=A-gA, d=[F:Q] invertible on M[l]. Thus S[l]=0. Compactness of G_Q and discreteness of M imply every continuous cocycle has finite image killed by some l^k. Therefore S=0.
+
+## Elementary class-number bound: all quadratic residual twists
+When l-1 divides 2e the image of the residual character has order at most 2. F=Q or the unique quadratic subfield of Q(zeta_l), namely Q(sqrt((-1)^((l-1)/2)*l)), of absolute discriminant l (standard quadratic Gauss-sum identification). For the quadratic case Minkowski gives an integral ideal representative of each ideal class with norm <=sqrt(l)/2 (real) or <=2sqrt(l)/pi (imaginary), in both cases <=sqrt(l). Write n=floor(sqrt(l)). In a quadratic field the number of integral ideals of a given norm k is <=tau(k)<=k: for each rational prime power p^a, split gives a+1 possibilities, inert at most one, ramified one; multiply. Thus
+    h(F) <= n(n+1)/2 <= (l+sqrt(l))/2 < l.
+This establishes l prime to h(F) without any uniform cyclotomic class-number estimate. Q has class number 1. For l=3,7 at all weights use the existing RUN36 Minkowski class-number-one proof for Q(zeta_l), or run the same normalization on the full cyclotomic field. No need to assume a full cyclotomic class-group assertion for general l. The argument also covers e odd in the residual-order-two case, though native PropZ asks only for even e.
+
+## Actual caller
+Counts.lean defines PropZ by 5<=l, 2<=e, Even e, l-1|2e => Chr.V l e 1=0. The above supplies this human mathematical premise using native ShaU interpretation (and its length definition). CountZ.lean theorem countZ takes PropZ, chooses C=0, proves even e from PsiEven for psi=1, then V'_le_V transfers the vanishing to Vlen. Keep these native guards and finite-length implications at the actual caller; retain all other CountI/II/III/V/Vs and plus/minus suppliers. Cases.lean splits ordinary l outside Bchi into CaseI, CaseZ, CaseII, CaseIII. This is not a proof of the quantitative CaseI or II bounds. The prior principal exceptional reduction remains unchanged. No claim of a new theorem in the literature or an upstream axiom being removed; existing source proof of PropZ has not been located (code search returned no hits). This is a compact alternate human reconstruction, not an independently checked replacement of the original Lean root.
+
+## Source ledger
+Relative to src/Development/AutomorphicArithmetic/AutomorphicVarieties:
+HeightAndVanishing/Counts.lean 0d9f87aacf2d53abe43d894c1d822f071599ee57 (PropZ).
+HeightAndVanishing/CountZ.lean 5601df23547fac2586abcd3717f6ae7c468e8b03 (countZ).
+HeightAndVanishing/Cases.lean eaa06b3c40b9fd0ba585e0ee18ae3e551be465ba (actual split).
+HeightAndVanishing/FinalLe.lean a5962f0dfe251e6b4db935e87d7c15aacf279d2e (sumIn; do not silently replace generic caller).
+Native QO, torsion and local-condition definitions source-linked in RUN36 audit; this session did not independently replay their Lean bodies. AGENTS, mission, swarm/handoff, manuscript and excerpts of continuity/research state and CI reviewed. Existing CI summary 31f782fe6a89e744005a7537fb1f26117586fdb4 is unrelated to this new derivation.
+
+## Evidence and handoff
+Executed exact integer sanity check locally (Python): for p in range(3,10001,2), assert isqrt(p)*(isqrt(p)+1)//2 < p. 4,999 odd integers passed; this checks arithmetic only, not the general proof or native Lean. General bound is proved above. lean/lake unavailable on local PATH. No timing or URT advantage claimed. No kernel-checked dependency retired.
+RESUME HERE: locate the original PropZ supplier and its exact Chr.V length definition; replay the uniform residual-field lemma against native torsion/cyclotomic/shaFam definitions, then substitute via the original countZ consumer and compare axiom/dependency scans. Preserve original fallback and do not claim root closure.
+HANDOFF TO: mathematics, Galois, audit, integration, human editor. Condense the class-field argument into the existing manuscript only after audit; no duplicate manuscript.
