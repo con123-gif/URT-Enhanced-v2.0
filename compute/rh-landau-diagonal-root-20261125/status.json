@@ -1,0 +1,52 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: unhandled import import sympy as S",
+  "returncode": 1,
+  "wall_s": 72.54,
+  "tail": "16\rDownloaded: 5698 file(s) [attempted 5698/8690 = 65%, 753 KB/s], Decompressed: 3216\rDownloaded: 5765 file(s) [attempted 5765/8690 = 66%, 1584 KB/s], Decompressed: 3216\rDownloaded: 5842 file(s) [attempted 5842/8690 = 67%, 1524 KB/s], Decompressed: 3216\rDownloaded: 5895 file(s) [attempted 5895/8690 = 67%, 3163 KB/s], Decompressed: 3216\rDownloaded: 5984 file(s) [attempted 5984/8690 = 68%, 391 KB/s], Decompressed: 3216\rDownloaded: 6048 file(s) [attempted 6048/8690 = 69%, 96 KB/s], Decompressed: 3216\rDownloaded: 6108 file(s) [attempted 6108/8690 = 70%, 1688 KB/s], Decompressed: 3216\rDownloaded: 6168 file(s) [attempted 6168/8690 = 70%, 553 KB/s], Decompressed: 3216\rDownloaded: 6217 file(s) [attempted 6217/8690 = 71%, 207 KB/s], Decompressed: 3216\rDownloaded: 6276 file(s) [attempted 6276/8690 = 72%, 323 KB/s], Decompressed: 3216\rDownloaded: 6361 file(s) [attempted 6361/8690 = 73%, 2241 KB/s], Decompressed: 3216\rDownloaded: 6439 file(s) [attempted 6439/8690 = 74%, 95 KB/s], Decompressed: 3216\rDownloaded: 6505 file(s) [attempted 6505/8690 = 74%, 740 KB/s], Decompressed: 3216\rDownloaded: 6575 file(s) [attempted 6575/8690 = 75%, 251 KB/s], Decompressed: 3216\rDownloaded: 6650 file(s) [attempted 6650/8690 = 76%, 238 KB/s], Decompressed: 3216\rDownloaded: 6723 file(s) [attempted 6723/8690 = 77%, 869 KB/s], Decompressed: 3216\rDownloaded: 6796 file(s) [attempted 6796/8690 = 78%, 577 KB/s], Decompressed: 3216\rDownloaded: 6869 file(s) [attempted 6869/8690 = 79%, 3753 KB/s], Decompressed: 3216\rDownloaded: 6945 file(s) [attempted 6945/8690 = 79%, 94 KB/s], Decompressed: 3216\rDownloaded: 7014 file(s) [attempted 7014/8690 = 80%, 2816 KB/s], Decompressed: 3216\rDownloaded: 7093 file(s) [attempted 7093/8690 = 81%, 3208 KB/s], Decompressed: 3216\rDownloaded: 7149 file(s) [attempted 7149/8690 = 82%, 812 KB/s], Decompressed: 3216\rDownloaded: 7229 file(s) [attempted 7229/8690 = 83%, 680 KB/s], Decompressed: 3216\rDownloaded: 7299 file(s) [attempted 7299/8690 = 83%, 731 KB/s], Decompressed: 3216\rDownloaded: 7344 file(s) [attempted 7344/8690 = 84%, 1969 KB/s], Decompressed: 3216\rDownloaded: 7435 file(s) [attempted 7435/8690 = 85%, 1754 KB/s], Decompressed: 3216\rDownloaded: 7511 file(s) [attempted 7511/8690 = 86%, 331 KB/s], Decompressed: 3216\rDownloaded: 7585 file(s) [attempted 7585/8690 = 87%, 942 KB/s], Decompressed: 3216\rDownloaded: 7656 file(s) [attempted 7656/8690 = 88%, 209 KB/s], Decompressed: 3216\rDownloaded: 7734 file(s) [attempted 7734/8690 = 88%, 430 KB/s], Decompressed: 3216\rDownloaded: 7807 file(s) [attempted 7807/8690 = 89%, 395 KB/s], Decompressed: 3216\rDownloaded: 7858 file(s) [attempted 7858/8690 = 90%, 364 KB/s], Decompressed: 3216\rDownloaded: 7907 file(s) [attempted 7907/8690 = 90%, 1601 KB/s], Decompressed: 3216\rDownloaded: 7986 file(s) [attempted 7986/8690 = 91%, 55 KB/s], Decompressed: 3216\rDownloaded: 8069 file(s) [attempted 8069/8690 = 92%, 57 KB/s], Decompressed: 3216\rDownloaded: 8121 file(s) [attempted 8121/8690 = 93%, 143 KB/s], Decompressed: 3216\rDownloaded: 8192 file(s) [attempted 8192/8690 = 94%, 279 KB/s], Decompressed: 3216\rDownloaded: 8274 file(s) [attempted 8274/8690 = 95%, 181 KB/s], Decompressed: 3216\rDownloaded: 8337 file(s) [attempted 8337/8690 = 95%, 211 KB/s], Decompressed: 3216\rDownloaded: 8410 file(s) [attempted 8410/8690 = 96%, 353 KB/s], Decompressed: 3216\rDownloaded: 8483 file(s) [attempted 8483/8690 = 97%, 605 KB/s], Decompressed: 3216\rDownloaded: 8558 file(s) [attempted 8558/8690 = 98%, 85 KB/s], Decompressed: 3216\rDownloaded: 8634 file(s) [attempted 8634/8690 = 99%, 1674 KB/s], Decompressed: 3216\rDownloaded: 8689 file(s) [attempted 8689/8690 = 99%, 549 KB/s], Decompressed: 3216\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 549 KB/s], Decompressed: 3216\nDecompressed 8690 file(s)\nAlready decompressed 8690 file(s)\nTraceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 44, in visit\n  File \"<stdin>\", line 42, in visit\nRuntimeError: unhandled import import sympy as S\n",
+  "id": "rh-landau-diagonal-root-20261125",
+  "question": "Pinned actual analytic import DAG: replay singleton pole data, direct log-window bridge and diagonal-window conditional RH root with native scans, pruning and axiom checks; no Main import and no claim of proving the arithmetic premise.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/run_diagonal_root_native.sh --out {out}",
+  "utc": "2026-11-25T15:25:58Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "6ee9b256fba8992a41d35c683c8057cf135ba0ad",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45644721766",
+  "outputs_committed": [
+    {
+      "path": "candidate_blob.txt",
+      "bytes": 41,
+      "sha256": "bae69a15f02983766cd4c8632248306d1b2907cc2e99e990e344a72fcd68ff93"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 12762,
+      "sha256": "6b07b687f91e77ca9e816e99fcbbe1ace3aeca2be64ad7fceff17bdb40bc7e02"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    }
+  ],
+  "outputs_artifact_only": []
+}
