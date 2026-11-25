@@ -3480,3 +3480,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-recursive-reduction-strip-root-20261125"
+question = "Native check of V3 automatic reduction after V2 unreachable tactic lint failure; verify V1 and actual root plus reduced open critical half-strip adapter using Mathlib nonvanishing for Re>=1. Reject unresolved proof and report axioms. Not proof of RH."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_strip_root.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
