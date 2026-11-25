@@ -1,0 +1,61 @@
+RH33DirectLogWindow.lean:138:36: warning: Variable name `hK` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hK
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RH33DirectLogWindow.lean:156:35: error: unexpected token '|*'; expected '|' or '|ₘ'
+RH33DirectLogWindow.lean:154:48: error: unsolved goals
+f : ℝ → ℝ
+θ δ C : ℝ
+hδ : 0 < δ
+h : ∀ (Y₀ : ℝ), ∃ Y, Y₀ ≤ Y ∧ ∀ y ∈ Icc Y (Y ^ (1 + δ)), f y ≤ C * y ^ θ
+η : ℝ
+hη : 0 < η
+U₀ : ℝ
+B : ℝ := max U₀ (max 1 (4 * |C|))
+⊢ ∃ U,
+    U₀ ≤ U ∧
+      ∃ R,
+        IntegrableOn (fun u => R u * Real.exp (-θ * u)) (Icc U ((1 + δ) * U)) volume ∧
+          (∀ u ∈ Icc U ((1 + δ) * U), 0 ≤ R u ∧ (fun u => f (Real.exp u)) u ≤ R u) ∧
+            ∫ (u : ℝ) in Icc U ((1 + δ) * U), R u * Real.exp (-θ * u) ≤ Real.exp (η * U)
+RH33DirectLogWindow.lean:217:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH33DirectLogWindow.lean:218:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH33DirectLogWindow.lean:219:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH33DirectLogWindow.lean:216:54: warning: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH33DirectLogWindow.lean:217:12: warning: Unused tactic linter: `(rh_auto_frontier 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH33DirectLogWindow.lean:218:12: warning: Unused tactic linter: `(rh_auto 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH33DirectLogWindow.lean:219:12: warning: Unused tactic linter: `exact rh33_direct_windowU G hδ h` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.zeroFree_of_rpow_window visited=2000 values=1581 noValue=419 axioms=3 missing=0 pending=248
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.rh33_original_interface visited=2000 values=1585 noValue=415 axioms=3 missing=0 pending=151
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.rh33_principal_interface visited=2000 values=1642 noValue=358 axioms=3 missing=0 pending=379
+PRUNED Deduction.rh33_direct_windowU: 9 -> 6 binders; original bridge checked
+RH33DirectLogWindow.lean:226:0: warning: declaration uses `sorry`
+'Deduction.zeroFree_of_rpow_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh33_direct_windowU' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Deduction.rh33_original_interface' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Deduction.rh33_principal_interface' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

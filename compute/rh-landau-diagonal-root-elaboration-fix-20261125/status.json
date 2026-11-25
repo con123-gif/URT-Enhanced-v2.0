@@ -1,0 +1,237 @@
+{
+  "status": "error",
+  "detail": "'Deduction.rh33_principal_interface' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]",
+  "returncode": 1,
+  "wall_s": 217.06,
+  "tail": "ms.LandauFinite 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow 0\nRHProofTermPrune 0\nRHRecursiveReductionFixed 0\nRHRecursiveReductionAutoV3 0\nRH32SingletonPoleData 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow 0\nRH33DirectLogWindow 1\nRH33DirectLogWindow.lean:138:36: warning: Variable name `hK` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hK\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nRH33DirectLogWindow.lean:156:35: error: unexpected token '|*'; expected '|' or '|\u2098'\nRH33DirectLogWindow.lean:154:48: error: unsolved goals\nf : \u211d \u2192 \u211d\n\u03b8 \u03b4 C : \u211d\nh\u03b4 : 0 < \u03b4\nh : \u2200 (Y\u2080 : \u211d), \u2203 Y, Y\u2080 \u2264 Y \u2227 \u2200 y \u2208 Icc Y (Y ^ (1 + \u03b4)), f y \u2264 C * y ^ \u03b8\n\u03b7 : \u211d\nh\u03b7 : 0 < \u03b7\nU\u2080 : \u211d\nB : \u211d := max U\u2080 (max 1 (4 * |C|))\n\u22a2 \u2203 U,\n    U\u2080 \u2264 U \u2227\n      \u2203 R,\n        IntegrableOn (fun u => R u * Real.exp (-\u03b8 * u)) (Icc U ((1 + \u03b4) * U)) volume \u2227\n          (\u2200 u \u2208 Icc U ((1 + \u03b4) * U), 0 \u2264 R u \u2227 (fun u => f (Real.exp u)) u \u2264 R u) \u2227\n            \u222b (u : \u211d) in Icc U ((1 + \u03b4) * U), R u * Real.exp (-\u03b8 * u) \u2264 Real.exp (\u03b7 * U)\nRH33DirectLogWindow.lean:217:12: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nRH33DirectLogWindow.lean:218:12: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nRH33DirectLogWindow.lean:219:12: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nRH33DirectLogWindow.lean:216:54: warning: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nRH33DirectLogWindow.lean:217:12: warning: Unused tactic linter: `(rh_auto_frontier 2; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nRH33DirectLogWindow.lean:218:12: warning: Unused tactic linter: `(rh_auto 2; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nRH33DirectLogWindow.lean:219:12: warning: Unused tactic linter: `exact rh33_direct_windowU G h\u03b4 h` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nAXIOM propext\nAXIOM Quot.sound\nAXIOM Classical.choice\nROOT_SCAN root=Deduction.zeroFree_of_rpow_window visited=2000 values=1581 noValue=419 axioms=3 missing=0 pending=248\nAXIOM propext\nAXIOM Quot.sound\nAXIOM Classical.choice\nROOT_SCAN root=Deduction.rh33_original_interface visited=2000 values=1585 noValue=415 axioms=3 missing=0 pending=151\nAXIOM propext\nAXIOM Quot.sound\nAXIOM Classical.choice\nROOT_SCAN root=Deduction.rh33_principal_interface visited=2000 values=1642 noValue=358 axioms=3 missing=0 pending=379\nPRUNED Deduction.rh33_direct_windowU: 9 -> 6 binders; original bridge checked\nRH33DirectLogWindow.lean:226:0: warning: declaration uses `sorry`\n'Deduction.zeroFree_of_rpow_window' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Deduction.rh33_direct_windowU' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Deduction.rh33_original_interface' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Deduction.rh33_principal_interface' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n\n",
+  "id": "rh-landau-diagonal-root-elaboration-fix-20261125",
+  "question": "Replay the peer repaired singleton measurable-function equality, qualify audit scan/prune names, verify exact bounded scan evidence and any generated bridge axioms. Conditional diagonal-window root only; no RH proof.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/run_diagonal_root_native_v3.sh --out {out}",
+  "utc": "2026-11-25T17:23:38Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "1d03f8047f1180a3a8651745ca8168ab903506e7",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45663493094",
+  "outputs_committed": [
+    {
+      "path": "actual_overlay_blobs.txt",
+      "bytes": 123,
+      "sha256": "2fc60e4b0422e979d8728407ccce87c9e0d4e661bcb612b1a199a1cd254024d7"
+    },
+    {
+      "path": "candidate_blob.txt",
+      "bytes": 41,
+      "sha256": "bae69a15f02983766cd4c8632248306d1b2907cc2e99e990e344a72fcd68ff93"
+    },
+    {
+      "path": "compile_000_CharFamily.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_001_LandauZeroFreeCriterion.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_002_LogDerivLocal.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_003_LFunctionConj.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_004_CharFamilyLFunctionNeZeroOfOneLeRe.log",
+      "bytes": 434,
+      "sha256": "d7481925e86f065de72be200ad3e0e0ac1177a1c0ec161f984f589bf0ba5d084"
+    },
+    {
+      "path": "compile_005_MellinRamp.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_006_mellinGchiOfNeOne.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_007_mellinGchiModOne.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_008_measurableGchi.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_009_GchiGrowth.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_010_GchiConj.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_011_poleData.log",
+      "bytes": 696,
+      "sha256": "678cd3fdc4a75932ad5eea5b1ed5c95e8e1c08801ddf709b79286d44e5d78289"
+    },
+    {
+      "path": "compile_012_LandauCauchy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_013_LandauPoleAsym.log",
+      "bytes": 397,
+      "sha256": "e5dc5b26af41542d6cb88c8f7ada03a4a7e5e2528fb5f5dfbf3704963c00ac66"
+    },
+    {
+      "path": "compile_014_kernelIntegral.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_015_landauTails.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_016_LandauKernelMax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_017_landauWindowIneq.log",
+      "bytes": 574,
+      "sha256": "fde4eeebb1c0228ef7ceba2b49acbcdb40173d7f9921792d6391e7ef382c9683"
+    },
+    {
+      "path": "compile_018_LandauPoleReLe.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_019_IteratedDerivLaplace.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_020_LandauCoeff.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_021_LandauFinite.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_022_LandauNearest.log",
+      "bytes": 350,
+      "sha256": "e978ff53ec034309c1fc5e72772725f4e6ded09a619bc2cc100ee552d9103480"
+    },
+    {
+      "path": "compile_023_LandauDichotomy.log",
+      "bytes": 1375,
+      "sha256": "7ab66a476522931d57e08f0877f3a96fe90e93f7a2e473a14dfdcd452be9ff37"
+    },
+    {
+      "path": "compile_024_LandauGrowthContra.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_025_landauWindow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_026_WindowHypUOfWindowHyp.log",
+      "bytes": 404,
+      "sha256": "592c20a8fb135576feff2b56eb529199130bc2bad57ec62c2922b3cc094063ec"
+    },
+    {
+      "path": "compile_027_lemmaL.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_028_WindowHypOfRpow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_029_RHProofTermPrune.log",
+      "bytes": 491,
+      "sha256": "345110d43a273db20d45e099991685e83aaddb8fda5dd225129265df26601a9a"
+    },
+    {
+      "path": "compile_030_RHRecursiveReductionFixed.log",
+      "bytes": 560,
+      "sha256": "f7a065d17a3783cb720d0ee0dc82da24ff12da4ad16afc460dc502c7c74e1b71"
+    },
+    {
+      "path": "compile_031_RHRecursiveReductionAutoV3.log",
+      "bytes": 638,
+      "sha256": "4feb28c02814d70bddb2d315e99461a3a914666177d863035c86c472d689c1da"
+    },
+    {
+      "path": "compile_032_RH32SingletonPoleData.log",
+      "bytes": 2256,
+      "sha256": "364fa4d76076e095b4463d5527cab29ef16dba447cb9072fe3a27a3aae191a8a"
+    },
+    {
+      "path": "compile_033_ZeroFreeOfRpowWindow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_034_RH33DirectLogWindow.log",
+      "bytes": 3259,
+      "sha256": "e20335b30b284da90bf20cc882096b416f5d6325681edeac5cbf5d9b31661727"
+    },
+    {
+      "path": "import_dag.json",
+      "bytes": 17955,
+      "sha256": "580d707204ade24cf1c4aeda0dac0537dde11f6951ddcdc29da05515a23fcf77"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 9626,
+      "sha256": "38fbcbac4bef34d7c7d190e3ced606deedeb80444eb55d0dfbd759a45b607aab"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    }
+  ],
+  "outputs_artifact_only": []
+}

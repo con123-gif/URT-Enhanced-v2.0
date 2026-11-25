@@ -1,0 +1,42 @@
+RH32SingletonPoleData.lean:312:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:313:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:314:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH32SingletonPoleData.lean:311:48: warning: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:312:4: warning: Unused tactic linter: `(rh_auto_frontier 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:313:4: warning: Unused tactic linter: `(rh_auto 2; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH32SingletonPoleData.lean:314:4: warning: Unused tactic linter: `exact rh32_right_of_windowU hθ hθ1 hδ hw` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.poleData visited=2000 values=1571 noValue=429 axioms=3 missing=0 pending=522
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.lemmaL visited=2000 values=1594 noValue=406 axioms=3 missing=0 pending=121
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.rh32_principal_pole_data visited=2000 values=1588 noValue=412 axioms=3 missing=0 pending=253
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.rh32_right_of_window visited=2000 values=1642 noValue=358 axioms=3 missing=0 pending=386
+NO_BINDER_REDUCTION Deduction.rh32_right_of_window
+'Deduction.poleData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.poleData_char' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh32_principal_pole_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh32_right_of_window' depends on axioms: [propext, Classical.choice, Quot.sound]
