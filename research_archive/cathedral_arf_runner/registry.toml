@@ -3424,3 +3424,11 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-tliftk-parent-raw-20261125"
+question = "Extract the exact TLiftK parent type and value expression roots from the authenticated archive; preserve ordered maximal ResEtaPow application arguments and all auxiliary proof occurrence counts, not a kernel replay."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run22_tliftk_parent_applications.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
