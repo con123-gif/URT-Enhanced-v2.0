@@ -1,0 +1,280 @@
+{
+  "snapshot": "1a1774dfebf43007c2ad00e9b0d8f3c2b89a18cd",
+  "mission_blob": "cd0a176134d46b5b624896e56843a24915c14477",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "4.33.1",
+  "lean_commit": "819816b2e0a3",
+  "nodes": {
+    "RHProofTermPrune": {
+      "path": "specialists/kernel_extractor/RHProofTermPrune.lean",
+      "blob": "f6d3e7f6047a7895ecf183be3fb54c203f4fc46a",
+      "imports": [
+        "Lean"
+      ],
+      "context": "engine",
+      "state": "BASELINE_PREVIOUSLY_CHECKED"
+    },
+    "RHRecursiveReductionFixed": {
+      "path": "specialists/kernel_extractor/RHRecursiveReductionFixed.lean",
+      "blob": "976c28572f11ffb00e1ae730555e938eeb564cb7",
+      "imports": [
+        "Mathlib"
+      ],
+      "context": "engine",
+      "state": "BASELINE_PREVIOUSLY_CHECKED"
+    },
+    "RHRecursiveReductionAutoV3": {
+      "path": "specialists/kernel_extractor/RHRecursiveReductionAutoV3.lean",
+      "blob": "a113dc56ea987abac3bf29eb480782140b82ab4a",
+      "imports": [
+        "Mathlib",
+        "Lean.LibrarySuggestions.Basic"
+      ],
+      "context": "engine",
+      "state": "BASELINE_PREVIOUSLY_CHECKED"
+    },
+    "RHSelectedRecordDivisionBudget": {
+      "path": "specialists/kernel_extractor/RHSelectedRecordDivisionBudget.lean",
+      "blob": "245f73aaca57278fb8cba7726a08dc353e61f55c",
+      "imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.DesWin",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "divinN_at, actual selected record and HypVWide",
+      "state": "PREPARED"
+    },
+    "RHPrincipalNativeWindow": {
+      "path": "specialists/kernel_extractor/RHPrincipalNativeWindow.lean",
+      "blob": "c258bec00bd1fca7a2a42df88a62350d835af6b3",
+      "imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG",
+        "Formalism.GammaFactorNonvanishing.RhOfRight",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "principal cyclic level and same TopG native window",
+      "state": "PREPARED"
+    },
+    "RHWideHostWindowTransport": {
+      "path": "specialists/kernel_extractor/RHWideHostWindowTransport.lean",
+      "blob": "31efce9c74ce3e8802475810d82662ea927355b6",
+      "imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.SupplyChi",
+        "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TopShape",
+        "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ShapeOf",
+        "RHSelectedRecordDivisionBudget",
+        "RHPrincipalNativeWindow",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "wide same host q,d,Y and supplyChi",
+      "state": "PREPARED"
+    },
+    "RHPrincipalUnitPage400": {
+      "path": "specialists/kernel_extractor/RHPrincipalUnitPage400.lean",
+      "blob": "3d32c7efea215291658e4b22f531c5c596e2cfc1",
+      "imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.SupplyChi",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "principal unit page 400 from 401",
+      "state": "PREPARED"
+    },
+    "RHPrincipalDirectWindow400": {
+      "path": "specialists/kernel_extractor/RHPrincipalDirectWindow400.lean",
+      "blob": "25a16cf6533e461bae3a463fbd78c65f86acca34",
+      "imports": [
+        "RHWideHostWindowTransport",
+        "RHPrincipalUnitPage400"
+      ],
+      "context": "VWinDirect400 principal same host W to W^(3/2)",
+      "state": "PREPARED"
+    },
+    "RHBatchCM34": {
+      "path": "specialists/positivity_geometry/2026-11-25_RUN34_CMTypeHostSupply.lean",
+      "blob": "67db694f5a79bb8d9b8f19015377df00ecc466ab",
+      "imports": [
+        "Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "H,E,F,phi0,s,cmType,eTau: same host FactEmb",
+      "state": "PREPARED"
+    },
+    "RHBatchSpectral33": {
+      "path": "specialists/on_acceleration/RUN33_SPECTRAL_BUDGET.lean",
+      "blob": "66ca59126b9028f1f336b1759ef3420f15002746",
+      "imports": [
+        "Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.RowsInputPOfTermsFiniteSig",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "rowsDomAtP_of: D, local M/delta, L, words, flags, reps, varpi,nc,alpha, eligibility",
+      "state": "PREPARED"
+    },
+    "RHBatchSphere33": {
+      "path": "specialists/theta_lifts/RUN33_EXACT_SPHERE_BLOCK_CANCELLATION.lean",
+      "blob": "60eaecde2c9c01d472cda6018892a76d5e3e8648",
+      "imports": [
+        "Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagExplicitConstantLeExpNegHalf",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "constantBound T3: E,p,q,f, block, CM/rank premises",
+      "state": "PREPARED"
+    },
+    "RHBatchCount32": {
+      "path": "specialists/on_acceleration/RUN32_DENSITY_FREE_COUNT.lean",
+      "blob": "90434bdbdb5b4b9c15a41534b4ab431ca784ebd4",
+      "imports": [
+        "Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.DualFamilyCounting.FormulaCOf",
+        "Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.TheoremSClosedP",
+        "RHProofTermPrune",
+        "RHRecursiveReductionFixed",
+        "RHRecursiveReductionAutoV3"
+      ],
+      "context": "formulaExplicit_of and rowFormAllP_of: D,u,u',F0,what2,Z, rational pair",
+      "state": "PREPARED"
+    }
+  },
+  "roots": [
+    "RHSelectedRecordDivisionBudget",
+    "RHPrincipalNativeWindow",
+    "RHWideHostWindowTransport",
+    "RHPrincipalUnitPage400",
+    "RHPrincipalDirectWindow400",
+    "RHBatchCM34",
+    "RHBatchSpectral33",
+    "RHBatchSphere33",
+    "RHBatchCount32"
+  ],
+  "order": [
+    "RHProofTermPrune",
+    "RHRecursiveReductionFixed",
+    "RHRecursiveReductionAutoV3",
+    "RHSelectedRecordDivisionBudget",
+    "RHPrincipalNativeWindow",
+    "RHPrincipalUnitPage400",
+    "RHBatchCM34",
+    "RHBatchSpectral33",
+    "RHBatchSphere33",
+    "RHBatchCount32",
+    "RHWideHostWindowTransport",
+    "RHPrincipalDirectWindow400"
+  ],
+  "reverse": {
+    "Lean": [
+      "RHProofTermPrune"
+    ],
+    "Mathlib": [
+      "RHRecursiveReductionFixed",
+      "RHRecursiveReductionAutoV3"
+    ],
+    "Lean.LibrarySuggestions.Basic": [
+      "RHRecursiveReductionAutoV3"
+    ],
+    "Development.AutomorphicArithmetic.CharacterBoxes.DesWin": [
+      "RHSelectedRecordDivisionBudget"
+    ],
+    "RHProofTermPrune": [
+      "RHSelectedRecordDivisionBudget",
+      "RHPrincipalNativeWindow",
+      "RHWideHostWindowTransport",
+      "RHPrincipalUnitPage400",
+      "RHBatchCM34",
+      "RHBatchSpectral33",
+      "RHBatchSphere33",
+      "RHBatchCount32"
+    ],
+    "RHRecursiveReductionFixed": [
+      "RHSelectedRecordDivisionBudget",
+      "RHPrincipalNativeWindow",
+      "RHWideHostWindowTransport",
+      "RHPrincipalUnitPage400",
+      "RHBatchCM34",
+      "RHBatchSpectral33",
+      "RHBatchSphere33",
+      "RHBatchCount32"
+    ],
+    "RHRecursiveReductionAutoV3": [
+      "RHSelectedRecordDivisionBudget",
+      "RHPrincipalNativeWindow",
+      "RHWideHostWindowTransport",
+      "RHPrincipalUnitPage400",
+      "RHBatchCM34",
+      "RHBatchSpectral33",
+      "RHBatchSphere33",
+      "RHBatchCount32"
+    ],
+    "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG": [
+      "RHPrincipalNativeWindow"
+    ],
+    "Formalism.GammaFactorNonvanishing.RhOfRight": [
+      "RHPrincipalNativeWindow"
+    ],
+    "Development.AutomorphicArithmetic.CharacterBoxes.SupplyChi": [
+      "RHWideHostWindowTransport",
+      "RHPrincipalUnitPage400"
+    ],
+    "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TopShape": [
+      "RHWideHostWindowTransport"
+    ],
+    "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ShapeOf": [
+      "RHWideHostWindowTransport"
+    ],
+    "RHSelectedRecordDivisionBudget": [
+      "RHWideHostWindowTransport"
+    ],
+    "RHPrincipalNativeWindow": [
+      "RHWideHostWindowTransport"
+    ],
+    "RHWideHostWindowTransport": [
+      "RHPrincipalDirectWindow400"
+    ],
+    "RHPrincipalUnitPage400": [
+      "RHPrincipalDirectWindow400"
+    ],
+    "Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed": [
+      "RHBatchCM34"
+    ],
+    "Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.RowsInputPOfTermsFiniteSig": [
+      "RHBatchSpectral33"
+    ],
+    "Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagExplicitConstantLeExpNegHalf": [
+      "RHBatchSphere33"
+    ],
+    "Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.DualFamilyCounting.FormulaCOf": [
+      "RHBatchCount32"
+    ],
+    "Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.TheoremSClosedP": [
+      "RHBatchCount32"
+    ]
+  },
+  "metrics": {
+    "checks": 90,
+    "files": 12,
+    "candidates": 9,
+    "direct_nodes": 26,
+    "shared_edges": 44,
+    "independent_edges": 106,
+    "independent_visits": 90,
+    "missed_direct_nodes": 0
+  },
+  "scope": "literal direct imports of retrieved files; external import nodes are boundaries; not elaborated dependencies or a complete root graph",
+  "remaining": [
+    "actual same-host VWinAt(1,401) supplier or checked VWinDirect400 bridge",
+    "uniform arithmetic length, rank/count/local-weight, entropy and local-gain suppliers",
+    "mass normalization and exact FiberCntC",
+    "all new native and caller replays"
+  ]
+}
