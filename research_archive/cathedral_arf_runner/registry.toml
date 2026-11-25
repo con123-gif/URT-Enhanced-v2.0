@@ -3432,3 +3432,11 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-arithmetic-frontier-20261125"
+question = "Project 100 root-linked arithmetic suppliers and six separately manifest-authenticated peer requests, preserving signed roots and every dependency role. Not a kernel recheck."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_arithmetic_frontier.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
