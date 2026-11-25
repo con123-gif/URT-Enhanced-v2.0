@@ -3448,3 +3448,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-recursive-reduction-auto-native-20261125"
+question = "Compile V2 automatic recursive proof reduction with registered and library premise search, cycle rejection, decreasing frontier, rank/algebra/negative tests and axiom ledger under pinned Lean and Mathlib. Not full RH verification."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_auto_native.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
