@@ -4,11 +4,11 @@ import Development.AutomorphicArithmetic.MeanSquareBounds.PairExists
 import Development.AutomorphicArithmetic.MeanSquareBounds.Kappa4Loglog
 import Development.AutomorphicArithmetic.MeanSquareBounds.IndDrop
 
-open Finset Formalism.HermitianLattices.ZeroFreeRegionGL2 Formalism.HermitianLattices.Ext.LogarithmicIntegralBounds
-
 import RHProofTermPrune
 import RHRecursiveReductionFixed
 import RHRecursiveReductionAutoV3
+
+open Finset Formalism.HermitianLattices.ZeroFreeRegionGL2 Formalism.HermitianLattices.Ext.LogarithmicIntegralBounds
 
 /-!
 RUN31 — lane 13 STRUCTURE, 25 November 2026. SOURCE-MATCHED human
@@ -91,6 +91,9 @@ with axioms propext, Classical.choice, Quot.sound and 324 pending
 in bounded root scan. New declaration not kernel checked or queued;
 no new axiom evidence. Source copy below renames private helpers
 and changes only pair_exists call and its now unnecessary bounds.
+Post-write static inspection caught an import-order error (imports
+must precede open); corrected in a follow-up repair commit, not a
+second mathematical result. Still no native compile claim.
 
 RESUME HERE: compile this actual pairEx replacement with pinned
 toolchain and engine imports, inspect scan/prune/axiom output,
