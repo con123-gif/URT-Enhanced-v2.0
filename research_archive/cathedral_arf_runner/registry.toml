@@ -3472,3 +3472,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-proof-term-prune-native-20261125"
+question = "Native kernel-check proof-term pruning of unused and dependent binders, verify original-statement bridges and negative control, then scan actual pinned RhOfRight theorem dependencies. Bounded scan, not full RH verification."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_proof_term_prune_native.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
