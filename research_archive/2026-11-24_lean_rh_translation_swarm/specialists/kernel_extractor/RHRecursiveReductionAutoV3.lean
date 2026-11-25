@@ -176,15 +176,13 @@ theorem frontier_rank {V W : Type*} [AddCommGroup V]
     Module.finrank ℂ (LinearMap.range f) ≤ D := by
   rh_auto_frontier 4
 
--- A direct native control of the frontier mode, independent of the rank example:
--- after applying a rule, the unsolved premise must still be available to a
--- following tactic.  Use a hypothesis deliberately hidden in a definition.
-def FrontierProbe (P : Prop) : Prop := P
-theorem frontier_probe (P : Prop) (hp : FrontierProbe P) : P := by
-  change P at hp
-  rh_auto 1
+-- Negative control: partial reduction must not admit an arbitrary proposition.
+theorem frontier_reject (_P : Prop) : True := by
+  fail_if_success
+    have : _P := by rh_auto_frontier 2
+  trivial
 
-#print axioms frontier_probe
+#print axioms frontier_reject
 #print axioms frontier_rank
 #print axioms rank_upper
 #print axioms scalar_budget
