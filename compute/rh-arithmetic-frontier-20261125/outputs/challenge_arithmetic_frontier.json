@@ -1,0 +1,1310 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "file": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 6112241,
+  "root": 326835,
+  "indexedDeclarations": 53722,
+  "projectionMs": 22,
+  "maxRssKiB": 276564,
+  "summary": {
+    "recursorRuleRhs": 0,
+    "requests": 106,
+    "found": 0,
+    "typeEdges": 0,
+    "valueEdges": 0,
+    "structuralEdges": 0,
+    "expressionReads": 0,
+    "rhsExpressionReads": 0,
+    "rhsReferenceEdges": 0
+  },
+  "reports": [
+    {
+      "request": {
+        "id": 13126693,
+        "name": "GlobalTheory.RoadU.CoreAll",
+        "kind": "def",
+        "type": 4,
+        "value": 997992539,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126695,
+        "name": "GlobalTheory.DeRhamOfPlainTorus.R1",
+        "kind": "def",
+        "type": 4,
+        "value": 997992843,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126715,
+        "name": "UpperTheory.Gal.ToralGalois.R2.LocalGlobalCompatAtIwahoriFixedPlaces",
+        "kind": "def",
+        "type": 4,
+        "value": 997993348,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13129109,
+        "name": "UpperTheory.Gal.Int.Row.galoisLocalGlobal_of_placeClassCompatibility",
+        "kind": "thm",
+        "type": 998135304,
+        "value": 998137886,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13129136,
+        "name": "UpperTheory.Gal.Int.Row.localGlobalAtPlaceClass_of_localGlobal",
+        "kind": "thm",
+        "type": 998137890,
+        "value": 998137947,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13137883,
+        "name": "GalTw.GlobalTheory.DeRhamOfPlainTorus.galoisCompat_unlinkedSupport_of_spherical",
+        "kind": "thm",
+        "type": 998584064,
+        "value": 998585687,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13138225,
+        "name": "UpperTheory.Gal.Int.Inp.inp_holds",
+        "kind": "thm",
+        "type": 998137997,
+        "value": 998589033,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13140145,
+        "name": "UpperTheory.Gal.ToralGalois.inq_holds",
+        "kind": "thm",
+        "type": 998138429,
+        "value": 998638808,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13140217,
+        "name": "UpperTheory.Gal.ToralGalois.R2.r2g",
+        "kind": "thm",
+        "type": 998641036,
+        "value": 998682631,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13140390,
+        "name": "UpperTheory.Gal.ToralGalois.R2.mixedOf",
+        "kind": "thm",
+        "type": 998641029,
+        "value": 998695223,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13172280,
+        "name": "UpperTheory.Gal.ToralGalois.R2.toTor_holds",
+        "kind": "thm",
+        "type": 998641030,
+        "value": 1000089203,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13172281,
+        "name": "UpperTheory.Gal.ToralGalois.R2.drDesc",
+        "kind": "thm",
+        "type": 998641031,
+        "value": 1000095251,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13175057,
+        "name": "UpperTheory.Gal.Int.Inp.coreAll_of_core_inp",
+        "kind": "thm",
+        "type": 1000227400,
+        "value": 1000227510,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13172633,
+        "name": "GlobalTheory.RoadU.Core",
+        "kind": "def",
+        "type": 4,
+        "value": 1000098485,
+        "mode": "mixed",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 11303668,
+        "name": "GlobalTheory.T.centralCharacter_eq_prod_supercuspidalSupport",
+        "kind": "thm",
+        "type": 893473984,
+        "value": 893477014,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 11305707,
+        "name": "GlobalTheory.T.weilDeligneParam_dual_listSum_absTwist_special",
+        "kind": "thm",
+        "type": 893583686,
+        "value": 893583738,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 11306734,
+        "name": "GlobalTheory.T.perm_of_weilDeligne_special_decomposition_eq",
+        "kind": "thm",
+        "type": 893619230,
+        "value": 893624049,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 11306962,
+        "name": "GlobalTheory.T.isTameWeilDeligne_iff_wild_charpoly",
+        "kind": "thm",
+        "type": 893631245,
+        "value": 893631595,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 2374959,
+        "name": "GlobalTheory.T.twisted_local_factors_match",
+        "kind": "thm",
+        "type": 124829131,
+        "value": 147474710,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 2374960,
+        "name": "GlobalTheory.T.twisted_square_theta_integrals_eq",
+        "kind": "thm",
+        "type": 129182346,
+        "value": 147474711,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 2840536,
+        "name": "GlobalTheory.T.test_vector_assembly_holds",
+        "kind": "thm",
+        "type": 181848994,
+        "value": 181849100,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 4880927,
+        "name": "GlobalTheory.T.dual_class_cuspidal",
+        "kind": "thm",
+        "type": 352992329,
+        "value": 352995651,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 6231278,
+        "name": "GlobalTheory.T.open0_of_unitary_group_hypotheses",
+        "kind": "thm",
+        "type": 471448683,
+        "value": 471449875,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126073,
+        "name": "GlobalTheory.RoadWGeo.LacWtAt",
+        "kind": "def",
+        "type": 997984804,
+        "value": 997984839,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126088,
+        "name": "GlobalTheory.RoadWGeo.ESAt",
+        "kind": "def",
+        "type": 893681821,
+        "value": 997984925,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 14009155,
+        "name": "GlobalTheory.T.lefschetz_fixedPoint_finite_etale_correspondence",
+        "kind": "thm",
+        "type": 1062640959,
+        "value": 1062644794,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 1550567,
+        "name": "GlobalTheory.T.primesInProgressions_relativeError",
+        "kind": "thm",
+        "type": 79229695,
+        "value": 80570988,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8259763,
+        "name": "GlobalTheory.T.spherical_one_of_local_algebra",
+        "kind": "thm",
+        "type": 671614404,
+        "value": 671614407,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8260224,
+        "name": "GlobalTheory.T.spectral_trace_of_model_algebra",
+        "kind": "thm",
+        "type": 671639777,
+        "value": 671650862,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8260425,
+        "name": "GlobalTheory.T.unitary_model_holds",
+        "kind": "thm",
+        "type": 671639775,
+        "value": 671664679,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8285241,
+        "name": "GlobalTheory.T.inf_fixedVectors_adelicLevel_ne_bot_of_localLevel",
+        "kind": "thm",
+        "type": 672920943,
+        "value": 672924264,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8285321,
+        "name": "GlobalTheory.T.localComponent_levelFixedVectors_ne_bot",
+        "kind": "thm",
+        "type": 672924403,
+        "value": 672943488,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8285437,
+        "name": "GlobalTheory.T.heckeOperator_testFamily_preserves_level_forms",
+        "kind": "thm",
+        "type": 672947049,
+        "value": 672947232,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8286881,
+        "name": "GlobalTheory.T.unitaryAutForms_weight_level_finite_sum_fixed_vectors",
+        "kind": "thm",
+        "type": 673002849,
+        "value": 673012169,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8286969,
+        "name": "GlobalTheory.T.exists_unique_admissible_localComponent_definiteUnitary",
+        "kind": "thm",
+        "type": 673012352,
+        "value": 673026209,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8287152,
+        "name": "GlobalTheory.T.traceOnInvariantSubmodule_iSup_eq_sum",
+        "kind": "thm",
+        "type": 673034266,
+        "value": 673035458,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8287984,
+        "name": "GlobalTheory.T.exists_invariant_positive_petersson_form",
+        "kind": "thm",
+        "type": 673061295,
+        "value": 673068009,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8295351,
+        "name": "GlobalTheory.T.heckeTrace_weightForms_eq_dim_mul_rationalClasses",
+        "kind": "thm",
+        "type": 673386400,
+        "value": 673386945,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8303595,
+        "name": "GlobalTheory.T.twistedOrbitalIntegral_product_eq_finprod",
+        "kind": "thm",
+        "type": 673986564,
+        "value": 673995375,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 8305730,
+        "name": "GlobalTheory.T.trace_hecke_levelVectors_eq_dim_mul_local_traces",
+        "kind": "thm",
+        "type": 674169365,
+        "value": 674179026,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 10486446,
+        "name": "GlobalTheory.T.prismaticDieudonneHodge_of_hodgeTateDatum",
+        "kind": "thm",
+        "type": 827777563,
+        "value": 827814239,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 10489865,
+        "name": "GlobalTheory.T.pDivisibleGroup_datum_of_connected_dual_connected",
+        "kind": "thm",
+        "type": 828104640,
+        "value": 828106168,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 10523387,
+        "name": "GlobalTheory.T.window_lift_to_fontaineAinf_matrices",
+        "kind": "thm",
+        "type": 828108375,
+        "value": 830030015,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 11496046,
+        "name": "GlobalTheory.RoadU.satWD",
+        "kind": "def",
+        "type": 901998185,
+        "value": 901998221,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126098,
+        "name": "UpperTheory.Gal.Int.Div.HTRichEx",
+        "kind": "def",
+        "type": 997984934,
+        "value": 997985055,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126140,
+        "name": "UpperTheory.Gal.Int.Div.JumpsOcc._proof_2",
+        "kind": "thm",
+        "type": 997985243,
+        "value": 12498598,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126145,
+        "name": "UpperTheory.Gal.Int.Div.JumpsOcc._proof_3",
+        "kind": "thm",
+        "type": 1025074,
+        "value": 44334,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126155,
+        "name": "UpperTheory.Gal.Int.Div.PhiPol._proof_1",
+        "kind": "thm",
+        "type": 7683673,
+        "value": 7683776,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 12421135,
+        "name": "UpperTheory.Gal.Desc.desc",
+        "kind": "thm",
+        "type": 957188117,
+        "value": 957388877,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126071,
+        "name": "GlobalTheory.RoadWGeo.Lacunary",
+        "kind": "def",
+        "type": 44404404,
+        "value": 997984750,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126072,
+        "name": "GlobalTheory.RoadWGeo.wtJumps",
+        "kind": "def",
+        "type": 997984752,
+        "value": 997984760,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13126154,
+        "name": "UpperTheory.Gal.Int.Div.PhiPol",
+        "kind": "def",
+        "type": 1000095635,
+        "value": 1002624707,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13181969,
+        "name": "UpperTheory.Gal.TP.Sub.contLeft_holds",
+        "kind": "thm",
+        "type": 1000426423,
+        "value": 1000441585,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13182142,
+        "name": "UpperTheory.Gal.TP.Sub.charEx",
+        "kind": "thm",
+        "type": 1000426420,
+        "value": 1000442610,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13183137,
+        "name": "UpperTheory.Gal.TP.Sub.sSLeft_holds",
+        "kind": "thm",
+        "type": 1000426424,
+        "value": 1000480590,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13184847,
+        "name": "UpperTheory.Gal.Int.Core.toCore",
+        "kind": "thm",
+        "type": 1000525960,
+        "value": 1000525971,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13190267,
+        "name": "UpperTheory.Gal.TP.twoUpOK_of_k",
+        "kind": "thm",
+        "type": 1000735783,
+        "value": 1000735792,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13190325,
+        "name": "UpperTheory.Gal.ClosedPhiFromClosedTrace.congPhi_of_closedTr",
+        "kind": "thm",
+        "type": 1000736493,
+        "value": 1000738967,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13205040,
+        "name": "UpperTheory.Gal.ClosedPhiFromClosedTrace.ClosedTr_holds",
+        "kind": "thm",
+        "type": 1000736490,
+        "value": 1002413087,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13205057,
+        "name": "UpperTheory.Gal.ClosedPhiFromClosedTrace.powTr_holds",
+        "kind": "thm",
+        "type": 1000736491,
+        "value": 1002413952,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13205875,
+        "name": "UpperTheory.Gal.Lim.limWU4_of",
+        "kind": "thm",
+        "type": 1002566990,
+        "value": 1002624486,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208116,
+        "name": "UpperTheory.Gal.Int.Div.IsDivRep",
+        "kind": "def",
+        "type": 1002624551,
+        "value": 1002624622,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208127,
+        "name": "UpperTheory.Gal.crystallineComparison.GenericMul",
+        "kind": "def",
+        "type": 1002624624,
+        "value": 1002624640,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208146,
+        "name": "UpperTheory.Gal.Int.Div.DivAll",
+        "kind": "def",
+        "type": 4,
+        "value": 1002624977,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208157,
+        "name": "UpperTheory.Gal.Int.Div.CplMem",
+        "kind": "def",
+        "type": 4,
+        "value": 1002625027,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208158,
+        "name": "UpperTheory.Gal.Int.Div.CplMem._proof_1",
+        "kind": "thm",
+        "type": 9759796,
+        "value": 9759811,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208159,
+        "name": "UpperTheory.Gal.Int.Div.CplMem._proof_2",
+        "kind": "thm",
+        "type": 9837936,
+        "value": 9837981,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208160,
+        "name": "UpperTheory.Gal.Int.Div.cpl",
+        "kind": "def",
+        "type": 660816071,
+        "value": 1002624982,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208174,
+        "name": "UpperTheory.Gal.Int.Div.SameK",
+        "kind": "def",
+        "type": 997984183,
+        "value": 997984194,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208175,
+        "name": "UpperTheory.Gal.Int.Div.SameOr",
+        "kind": "def",
+        "type": 4,
+        "value": 1002625057,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208182,
+        "name": "UpperTheory.Gal.Int.Div.SatConj",
+        "kind": "def",
+        "type": 4,
+        "value": 1002625078,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208189,
+        "name": "UpperTheory.Gal.Int.Div.TyConj",
+        "kind": "def",
+        "type": 4,
+        "value": 1002625109,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208196,
+        "name": "UpperTheory.Gal.Int.Div.LacConj",
+        "kind": "def",
+        "type": 4,
+        "value": 1002625180,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208204,
+        "name": "UpperTheory.Gal.Int.Div.GapLac",
+        "kind": "def",
+        "type": 4,
+        "value": 1002625188,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208205,
+        "name": "UpperTheory.Gal.Int.Div.DGenMul",
+        "kind": "def",
+        "type": 4,
+        "value": 1002625198,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208214,
+        "name": "GlobalTheory.RoadWGeo.card_wtJumps",
+        "kind": "thm",
+        "type": 1002625249,
+        "value": 1002625296,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208215,
+        "name": "GlobalTheory.RoadWGeo.wtJumps_val",
+        "kind": "thm",
+        "type": 1002625302,
+        "value": 1002625408,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208258,
+        "name": "UpperTheory.Gal.Int.Div.PhiPol.phiAt",
+        "kind": "thm",
+        "type": 1002625899,
+        "value": 1002626050,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13208599,
+        "name": "UpperTheory.Gal.Int.Div.divAll_of",
+        "kind": "thm",
+        "type": 1002639658,
+        "value": 1002642385,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13209428,
+        "name": "UpperTheory.Gal.Int.Div.detEx_holds",
+        "kind": "thm",
+        "type": 1002639641,
+        "value": 1002672223,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13209572,
+        "name": "UpperTheory.Gal.Int.Div.denseUs_of",
+        "kind": "thm",
+        "type": 1002672377,
+        "value": 1002676015,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13209681,
+        "name": "UpperTheory.Gal.Int.Div.detFrob_of",
+        "kind": "thm",
+        "type": 1002672378,
+        "value": 1002677062,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13209774,
+        "name": "UpperTheory.Gal.Int.Div.divDet_holds",
+        "kind": "thm",
+        "type": 1002639642,
+        "value": 1002677067,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13212047,
+        "name": "UpperTheory.Gal.Int.Div.inFacts_of",
+        "kind": "thm",
+        "type": 1002773294,
+        "value": 1002787227,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13212158,
+        "name": "UpperTheory.Gal.Int.Div.locConj_of",
+        "kind": "thm",
+        "type": 1002768185,
+        "value": 1002789752,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13212435,
+        "name": "UpperTheory.Gal.Int.Div.jumpCard_of",
+        "kind": "thm",
+        "type": 1002773296,
+        "value": 1002800064,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13212561,
+        "name": "UpperTheory.Gal.Int.Div.subLoc_holds",
+        "kind": "thm",
+        "type": 1002639649,
+        "value": 1002800075,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13212599,
+        "name": "UpperTheory.Gal.Int.Div.algGen_of",
+        "kind": "thm",
+        "type": 1002768187,
+        "value": 1002801942,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13212621,
+        "name": "UpperTheory.Gal.Int.Div.phiSeed_holds",
+        "kind": "thm",
+        "type": 1002639643,
+        "value": 1002801950,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13219498,
+        "name": "UpperTheory.Gal.Int.Div.divOne_holds",
+        "kind": "thm",
+        "type": 1002639644,
+        "value": 1003188348,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13219499,
+        "name": "UpperTheory.Gal.Int.Div.divUniq_of",
+        "kind": "thm",
+        "type": 1003188349,
+        "value": 1003190544,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13219621,
+        "name": "UpperTheory.Gal.Int.Div.isoMove_of",
+        "kind": "thm",
+        "type": 1002639646,
+        "value": 1003193067,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13219684,
+        "name": "UpperTheory.Gal.Int.Div.frobSeed_of",
+        "kind": "thm",
+        "type": 1003193160,
+        "value": 1003194078,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13219820,
+        "name": "UpperTheory.Gal.Int.Div.genPin_of",
+        "kind": "thm",
+        "type": 1003193156,
+        "value": 1003197872,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13219845,
+        "name": "UpperTheory.Gal.Int.Div.jumpSeed_of",
+        "kind": "thm",
+        "type": 1003197946,
+        "value": 1003200138,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13219994,
+        "name": "UpperTheory.Gal.Int.Div.coverIn_of",
+        "kind": "thm",
+        "type": 1003197940,
+        "value": 1003202765,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13220102,
+        "name": "UpperTheory.Gal.Int.Div.sSBlock_of",
+        "kind": "thm",
+        "type": 1003197941,
+        "value": 1003205689,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13220353,
+        "name": "UpperTheory.Gal.Int.Div.LocIso",
+        "kind": "def",
+        "type": 4,
+        "value": 1003211722,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13220363,
+        "name": "UpperTheory.Gal.Int.Div.satConj_of.match_1_1",
+        "kind": "def",
+        "type": 1002433532,
+        "value": 1002434814,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13220639,
+        "name": "UpperTheory.Gal.Int.Div.lacConj_of.match_1_1",
+        "kind": "def",
+        "type": 1003231747,
+        "value": 1003231950,
+        "mode": "value",
+        "origin": "authenticated_role_frontier"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13173638,
+        "name": "GlobalTheory.CMBasePatch.main",
+        "kind": "thm",
+        "type": 1000142518,
+        "value": 1000143233,
+        "mode": "manifest_only",
+        "origin": "authenticated_manifest_only"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13056733,
+        "name": "GlobalTheory.IndexTwoExt.main",
+        "kind": "thm",
+        "type": 994140442,
+        "value": 994150153,
+        "mode": "manifest_only",
+        "origin": "authenticated_manifest_only"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13056965,
+        "name": "GlobalTheory.IndexTwoPatch.main",
+        "kind": "thm",
+        "type": 994183607,
+        "value": 994188890,
+        "mode": "manifest_only",
+        "origin": "authenticated_manifest_only"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13173398,
+        "name": "GlobalTheory.SatSysPatch.patch",
+        "kind": "thm",
+        "type": 1000135764,
+        "value": 1000140322,
+        "mode": "manifest_only",
+        "origin": "authenticated_manifest_only"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13056908,
+        "name": "GlobalTheory.T.exists_extension_rep_index_two_of_trace_invariant",
+        "kind": "thm",
+        "type": 994140442,
+        "value": 994150154,
+        "mode": "manifest_only",
+        "origin": "authenticated_manifest_only"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "id": 13173967,
+        "name": "UpperTheory.Gal.Int.Inp.ex_all_of_good",
+        "kind": "thm",
+        "type": 1000151086,
+        "value": 1000159074,
+        "mode": "manifest_only",
+        "origin": "authenticated_manifest_only"
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    }
+  ]
+}
