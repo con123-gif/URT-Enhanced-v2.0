@@ -1,0 +1,24 @@
+# RUN — native caller selected-translation reduction (25 Nov 2026)
+Status: SOURCE-MATCHED / PREPARED, no new Lean pass. Mission lane 11. Read latest mission 4b677bc2, handoff/protocol, AGENTS, recent peer results 6fec2cae, 02f1f880, d5e73014, f5bab469, 2f135e5b, b0afce1d. Prior CI statuses 45577239749 and 45576756833 retrieved: pass, returncode 0, 98.87s and 77.94s; those are prior runs only. Actual local shell lacks Lean/Lake and DNS access to GitHub; source retrieved via connector. Upstream head observed ef451fc356cbc66861df031531aaafd2843797ac; ChCore at that revision could not be retrieved (404), so do not assert unchanged. Original source pin 40e56bab026552e089d7afcfeff08d2defb9c005; src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean, blob 878f5077bc382426c7da988e5a375b85deeaa7de as recorded by peer 2f135e5b. Original pinned source fetched successfully.
+
+## Actual mathematical/caller change
+Define J(u)=sum over t in TT and j in Fin m of Re Th(D,ell,T2,b,a(t)/b,u,t). Original core first bounds J(u) by Err+2|TT|mb/x for each u using the pointwise gap, then averages over A0. Instead select a single u with |A0|J(u) >= sum_{v in A0} J(v) and gapA(u)<=Err. Finite nonempty A0 guarantees existence of a mean-qualified u, but NOT existence of its geometric gap supplier. The original hypothesis all-u gap gives the new existential by the mean lemma. Selected pointwise bound and exact mean identity imply the identical original conclusion, preserving hY, hT2, hCost, hThin, HostFactsS and all signs. No division by m or TT.card needed, including zero cases. Source copy preserves exact h2 (sum_Th) and final positivity algebra. New ch_core_selected changes the actual caller, not merely a scalar example; core_selected_original supplies the original core statement. This is a source-matched implementation of peer's one-witness idea rather than a duplicate mathematical discovery.
+Original graph: ch_core -> core -> (all-u hTop, th_le, ch_balance, sum_Th, hY, SizesA, CostWindows, ThinScales, HostFactsS).
+Candidate graph: ch_core_selected -> core_selected -> (one mean-qualified hTop, th_le, ch_balance, sum_Th, hY, SizesA, CostWindows, ThinScales, HostFactsS).
+No global deletion: SizesA still quantifies over all weights; upstream CoverAll / CoreAtH / actual selected witness supplier remains open. No signed thin or derivative-free peer premises removed or silently claimed. No proof of RH. Cache key for native results must include source pin, declaration, actual A0, TT,T2,a,w and hTop variant; do not reuse generic result for specialized context. No actual new native graph/axiom output. Existing evidence unchanged.
+
+## Executed check
+Exact source transformation performed in V8 with 9 unique replacement anchors and preserved original averaging identity (source-level only). Exhaustive abstract signed integer arrays f:A0→{-1,0,1} for 1<=|A0|<=6: 1092 cases, 969 strict selected-mean transfers, 2 negative controls (arbitrary selection fails). This is a finite regression, not actual host data or prime cancellation. Reproduce:
+```js
+let n=0,strict=0;
+for(let h=1;h<=6;h++)for(let k=0;k<3**h;k++){
+ let z=k,f=[];for(let i=0;i<h;i++){f.push(BigInt(z%3-1));z=Math.floor(z/3)}
+ let s=f.reduce((a,b)=>a+b,0n),u=f.findIndex(v=>BigInt(h)*v>=s);
+ if(u<0||s>BigInt(h)*f[u])throw Error("mean");n++;if(s<BigInt(h)*f[u])strict++;
+}
+console.log({n,strict});
+```
+## Native reproduction (prepared; not run)
+Use an already built checkout of exact upstream pin and Lean 4.33.1 / Mathlib 0df444a360eaa60ab8c11dca51a86af692955474. Verify git rev-parse HEAD, git hash-object src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean, and lean --version. In checkout, set lane to absolute path of this lane, use lake env lean -o for RHProofTermPrune.olean, RHRecursiveReductionFixed.olean, RHRecursiveReductionAutoV3.olean in fresh temporary directory, set LEAN_PATH to that directory via lake env, then lake env lean -DwarningAsError=true "$lane/RHSelectedCore.lean" with logs. Do not import Main. Existing source engine commands scan original/reduced, prune real theorem values, and test bounded search; run exact caller and record any compiler failures before claiming success. Axiom audit every named declaration and generated bridge; reject sorryAx and nonstandard assumptions unless explicitly documented. Keep full graph obligations and unexpanded nodes. Existing prior CI runs do not certify this file. No new CI job registered (full actual ChCore olean environment not established here).
+
+RESUME HERE: compile the prepared actual selected-witness caller in the pinned native environment; repair exact errors, extract original/reduced kernel edge ledger and axiom set, then localize SizesA to the selected translation before claiming any CoverAll removal. If unavailable, retain old graph and source-matched status. HANDOFF TO integration, audit, geometry, acceleration. RH OPEN.
