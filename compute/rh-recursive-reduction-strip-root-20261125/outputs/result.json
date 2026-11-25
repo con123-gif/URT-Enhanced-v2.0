@@ -1,0 +1,91 @@
+{
+  "status": "LOCAL_LEAN_REDUCTION_CERTIFICATES_CHECKED_NOT_RH",
+  "axioms": {
+    "frontier_reject": [],
+    "frontier_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "rank_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scalar_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "auto_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "auto_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "auto_local_chain": [
+      "propext"
+    ],
+    "reject_unproved": []
+  },
+  "v1_axioms": {
+    "signed_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "level_rank_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "three_count_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "budget_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "recursive_chain": [
+      "propext"
+    ],
+    "backtrack_test": [
+      "propext"
+    ],
+    "rank_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "root_axioms": {
+    "RHActualRoot.strip_nonvanishing_to_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RHActualRoot.reduced_strip_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Formalism.VW.rh_of_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RHActualRoot.reduced_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "root_status": "CONDITIONAL_NONVANISHING_TO_RH_ONLY"
+}

@@ -1,0 +1,7 @@
+'RHReduction.signed_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReduction.level_rank_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReduction.three_count_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReduction.budget_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReduction.recursive_chain' depends on axioms: [propext]
+'RHReduction.backtrack_test' depends on axioms: [propext]
+'RHReduction.rank_test' depends on axioms: [propext, Classical.choice, Quot.sound]

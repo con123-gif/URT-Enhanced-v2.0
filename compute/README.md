@@ -51,3 +51,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-recursive-reduction-fixed-native-20261125` | error | 73.57 | 2026-11-25T08:23:38Z | GPT | Re-run both repaired recursive Lean reducers after observed V1 parsing/lint and V2 elaboration/registration failures; re |
 | `rh-recursive-reduction-actual-root-20261125` | error | 100.52 | 2026-11-25T08:26:20Z | GPT | Correct obsolete filenames in earlier regression runner; compile fixed V1, exact pinned native RhOfRight source plus rec |
 | `rh-proof-term-prune-native-20261125` | pass | 77.94 | 2026-11-25T08:31:42Z | GPT | Native kernel-check proof-term pruning of unused and dependent binders, verify original-statement bridges and negative c |
+| `rh-recursive-reduction-strip-root-20261125` | pass | 98.87 | 2026-11-25T08:35:21Z | GPT | Native check of V3 automatic reduction after V2 unreachable tactic lint failure; verify V1 and actual root plus reduced  |
