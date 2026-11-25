@@ -3406,3 +3406,12 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-post34-frontier-20261125"
+question = "Extract exact new direct value-linked UpperTheory and selected typeclass suppliers from the authenticated 34-producer frontier; preserve type/value/structural roles and exact witnesses, not kernel replay."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_post34_frontier.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
