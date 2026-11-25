@@ -3504,3 +3504,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/la
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-landau-diagonal-root-elaboration-fix-20261125"
+question = "Replay the peer repaired singleton measurable-function equality, qualify audit scan/prune names, verify exact bounded scan evidence and any generated bridge axioms. Conditional diagonal-window root only; no RH proof."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/run_diagonal_root_native_v3.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
