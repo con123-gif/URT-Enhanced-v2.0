@@ -1,0 +1,82 @@
+{
+  "status": "error",
+  "detail": "'RHReductionAuto.reject_unproved' does not depend on any axioms",
+  "returncode": 1,
+  "wall_s": 100.52,
+  "tail": "056 KB/s], Decompressed: 2369\rDownloaded: 7297 file(s) [attempted 7297/8690 = 83%, 275 KB/s], Decompressed: 2369\rDownloaded: 7354 file(s) [attempted 7354/8690 = 84%, 259 KB/s], Decompressed: 2369\rDownloaded: 7448 file(s) [attempted 7448/8690 = 85%, 884 KB/s], Decompressed: 2369\rDownloaded: 7501 file(s) [attempted 7501/8690 = 86%, 879 KB/s], Decompressed: 2369\rDownloaded: 7592 file(s) [attempted 7592/8690 = 87%, 244 KB/s], Decompressed: 2369\rDownloaded: 7698 file(s) [attempted 7698/8690 = 88%, 1358 KB/s], Decompressed: 2369\rDownloaded: 7803 file(s) [attempted 7803/8690 = 89%, 318 KB/s], Decompressed: 2369\rDownloaded: 7921 file(s) [attempted 7921/8690 = 91%, 410 KB/s], Decompressed: 2369\rDownloaded: 8023 file(s) [attempted 8023/8690 = 92%, 525 KB/s], Decompressed: 2369\rDownloaded: 8134 file(s) [attempted 8134/8690 = 93%, 1281 KB/s], Decompressed: 2369\rDownloaded: 8250 file(s) [attempted 8250/8690 = 94%, 1857 KB/s], Decompressed: 2369\rDownloaded: 8363 file(s) [attempted 8363/8690 = 96%, 315 KB/s], Decompressed: 2369\rDownloaded: 8479 file(s) [attempted 8479/8690 = 97%, 1455 KB/s], Decompressed: 2369\rDownloaded: 8593 file(s) [attempted 8593/8690 = 98%, 1354 KB/s], Decompressed: 2369\rDownloaded: 8689 file(s) [attempted 8689/8690 = 99%, 1531 KB/s], Decompressed: 2369\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 1531 KB/s], Decompressed: 2369\nDecompressed 8690 file(s)\nAlready decompressed 8690 file(s)\n'RHReduction.signed_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.level_rank_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.three_count_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.budget_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.recursive_chain' depends on axioms: [propext]\n'RHReduction.backtrack_test' depends on axioms: [propext]\n'RHReduction.rank_test' depends on axioms: [propext, Classical.choice, Quot.sound]\n  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current\n                                 Dload  Upload  Total   Spent   Left   Speed\n\r  0      0   0      0   0      0      0      0                              0\r100   2459 100   2459   0      0  16508      0                              0\r100   2459 100   2459   0      0  16500      0                              0\r100   2459 100   2459   0      0  16493      0                              0\n'RHReduction.signed_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.level_rank_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.three_count_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.budget_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReduction.recursive_chain' depends on axioms: [propext]\n'RHReduction.backtrack_test' depends on axioms: [propext]\n'RHReduction.rank_test' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Formalism.VW.rh_of_right' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHActualRoot.reduced_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/RHRecursiveReductionAutoFixed.lean:178:12: error: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n'RHReductionAuto.frontier_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReductionAuto.rank_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReductionAuto.scalar_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReductionAuto.auto_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReductionAuto.auto_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RHReductionAuto.auto_local_chain' depends on axioms: [propext]\n'RHReductionAuto.reject_unproved' does not depend on any axioms\n",
+  "id": "rh-recursive-reduction-actual-root-20261125",
+  "question": "Correct obsolete filenames in earlier regression runner; compile fixed V1, exact pinned native RhOfRight source plus recursive root bridge, and fixed V2; check exact named axioms, not full RH proof. Do not import upstream Main theorem as a shortcut.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_actual_root.sh --out {out}",
+  "utc": "2026-11-25T08:26:20Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "965c049ae7e751ef9579329454bc87d09b089425",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45575789413",
+  "outputs_committed": [
+    {
+      "path": "RHActualRoot.lean",
+      "bytes": 9619,
+      "sha256": "0588eebb3b7fc19833b510af0b0ea62773520cec769080ba593b338578b216ff"
+    },
+    {
+      "path": "RHRecursiveReductionAutoFixed.lean",
+      "bytes": 6706,
+      "sha256": "7374741f01c344b00036a6dd1e676fedf495aa22e82f1703f1b2ad81aa7285b8"
+    },
+    {
+      "path": "RHRecursiveReductionFixed.lean",
+      "bytes": 6882,
+      "sha256": "a93a09dae102fa62ed201035ec8c903b0af5f33983de0df000089006c6fc919e"
+    },
+    {
+      "path": "RhOfRight.lean",
+      "bytes": 2459,
+      "sha256": "7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5"
+    },
+    {
+      "path": "lean_actual_root.log",
+      "bytes": 733,
+      "sha256": "462ac9f3fda07922cc5b302bd6ec45915473295a1a93719a8376341963048b91"
+    },
+    {
+      "path": "lean_check.log",
+      "bytes": 812,
+      "sha256": "93e0343d17faccfe6d8ef804c69102498563003fd55053c426d4f99090e15e77"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_v1_check.log",
+      "bytes": 560,
+      "sha256": "f7a065d17a3783cb720d0ee0dc82da24ff12da4ad16afc460dc502c7c74e1b71"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 10847,
+      "sha256": "94940d48db9c8b5678f40d65a4a31585f712bf3caef19b3b4299d94d76d415f4"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    }
+  ],
+  "outputs_artifact_only": []
+}

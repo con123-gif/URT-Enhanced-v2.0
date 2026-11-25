@@ -49,3 +49,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-recursive-reduction-native-20261125` | error | 114.21 | 2026-11-25T08:16:02Z | GPT | Kernel-check the recursive reduction tactic and seven source-matched local replacement/test theorems in the exact pinned |
 | `rh-recursive-reduction-auto-native-20261125` | error | 98.85 | 2026-11-25T08:18:25Z | GPT | Compile V2 automatic recursive proof reduction with registered and library premise search, cycle rejection, decreasing f |
 | `rh-recursive-reduction-fixed-native-20261125` | error | 73.57 | 2026-11-25T08:23:38Z | GPT | Re-run both repaired recursive Lean reducers after observed V1 parsing/lint and V2 elaboration/registration failures; re |
+| `rh-recursive-reduction-actual-root-20261125` | error | 100.52 | 2026-11-25T08:26:20Z | GPT | Correct obsolete filenames in earlier regression runner; compile fixed V1, exact pinned native RhOfRight source plus rec |
