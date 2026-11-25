@@ -3464,3 +3464,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-recursive-reduction-actual-root-20261125"
+question = "Correct obsolete filenames in earlier regression runner; compile fixed V1, exact pinned native RhOfRight source plus recursive root bridge, and fixed V2; check exact named axioms, not full RH proof. Do not import upstream Main theorem as a shortcut."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_actual_root.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
