@@ -3440,3 +3440,11 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-recursive-reduction-native-20261125"
+question = "Kernel-check the recursive reduction tactic and seven source-matched local replacement/test theorems in the exact pinned Lean 4.33.1 and Mathlib environment; check the negative control and print axioms, without claiming full RH validation."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_recursive_reduction_native.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
