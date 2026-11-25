@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 2251.17,
+  "tail": "{\"bytes\":1000013824,\"stored\":194157963,\"stop\":null}\n{\"bytes\":2000027648,\"stored\":382442198,\"stop\":null}\n{\"bytes\":3000041472,\"stored\":571143563,\"stop\":null}\n{\"bytes\":4000055296,\"stored\":759327062,\"stop\":null}\n{\"bytes\":5000003584,\"stored\":947503495,\"stop\":null}\n{\"bytes\":6000017408,\"stored\":1136046718,\"stop\":null}\n{\"bytes\":7000031232,\"stored\":1318912691,\"stop\":null}\n{\"bytes\":8000045056,\"stored\":1502018912,\"stop\":null}\n{\"bytes\":9000058880,\"stored\":1684803472,\"stop\":null}\n{\"bytes\":10000007168,\"stored\":1867649117,\"stop\":null}\n{\"bytes\":11000061632,\"stored\":2048821474,\"stop\":null}\n{\"bytes\":12000034816,\"stored\":2230141942,\"stop\":null}\n{\"bytes\":13000060288,\"stored\":2412882970,\"stop\":null}\n{\"bytes\":14000037568,\"stored\":2594741241,\"stop\":null}\n{\"bytes\":15000010752,\"stored\":2777441499,\"stop\":null}\n{\"bytes\":16000024576,\"stored\":2961255451,\"stop\":null}\n{\"bytes\":17000038400,\"stored\":3144359965,\"stop\":null}\n{\"bytes\":18000052224,\"stored\":3327032188,\"stop\":null}\n{\"bytes\":19000000512,\"stored\":3511378057,\"stop\":null}\n{\"bytes\":20000054976,\"stored\":3694048106,\"stop\":null}\n{\"bytes\":21000003264,\"stored\":3874422497,\"stop\":null}\n{\"bytes\":22000041984,\"stored\":4055133350,\"stop\":null}\n{\"bytes\":23000055808,\"stored\":4238439844,\"stop\":null}\n{\"bytes\":24000004096,\"stored\":4420753447,\"stop\":null}\n{\"bytes\":25000058560,\"stored\":4602148133,\"stop\":null}\n{\"bytes\":26000006848,\"stored\":4784904328,\"stop\":null}\n{\"bytes\":27000045568,\"stored\":4966695002,\"stop\":null}\n{\"bytes\":28000034496,\"stored\":5148102215,\"stop\":null}\n{\"bytes\":29000007680,\"stored\":5326626205,\"stop\":null}\n{\"bytes\":30000021504,\"stored\":5507405068,\"stop\":null}\n{\"bytes\":31000035328,\"stored\":5686235828,\"stop\":null}\n{\"bytes\":32000024256,\"stored\":5867579301,\"stop\":null}\n{\"bytes\":33000062976,\"stored\":6048842590,\"stop\":null}\n{\"bytes\":34000011264,\"stored\":6228237509,\"stop\":null}\n{\"bytes\":35000025088,\"stored\":6408034262,\"stop\":null}\n{\"bytes\":36000014016,\"stored\":6587676563,\"stop\":null}\n{\"bytes\":37000052736,\"stored\":6768205196,\"stop\":null}\n{\"bytes\":38000041664,\"stored\":6951143350,\"stop\":null}\n{\"bytes\":39000055488,\"stored\":7133479094,\"stop\":null}\n{\"bytes\":40000032768,\"stored\":7314575216,\"stop\":null}\n{\"bytes\":41000042496,\"stored\":7496064161,\"stop\":null}\n{\"bytes\":42000056320,\"stored\":7678792246,\"stop\":null}\n{\"bytes\":43000004608,\"stored\":7861054327,\"stop\":null}\n{\"bytes\":44000018432,\"stored\":8045254175,\"stop\":null}\n{\"bytes\":45000032256,\"stored\":8227675957,\"stop\":null}\n{\"bytes\":46000021184,\"stored\":8411164365,\"stop\":null}\n{\"bytes\":47000059904,\"stored\":8594327086,\"stop\":null}\n{\"bytes\":48000008192,\"stored\":8776334508,\"stop\":null}\n{\"bytes\":49000022016,\"stored\":8957463572,\"stop\":null}\n{\"bytes\":50000010944,\"stored\":9140329530,\"stop\":null}\n{\"bytes\":51000053760,\"stored\":9321441211,\"stop\":null}\n{\"bytes\":52000063488,\"stored\":9503011569,\"stop\":null}\n{\"bytes\":53000011776,\"stored\":9684478982,\"stop\":null}\n{\"bytes\":54000025600,\"stored\":9866627411,\"stop\":null}\n{\"bytes\":55000039424,\"stored\":10048925414,\"stop\":null}\n{\"bytes\":56000028352,\"stored\":10233174097,\"stop\":null}\n{\"bytes\":57000001536,\"stored\":10415227848,\"stop\":null}\n{\"bytes\":58000015360,\"stored\":10510351673,\"stop\":\"MAX_ROOT_REACHED\"}\n{\"bytes\":59000004288,\"stored\":10510351673,\"stop\":\"MAX_ROOT_REACHED\"}\n{\"bytes\":60000043008,\"stored\":10510351673,\"stop\":\"MAX_ROOT_REACHED\"}\n{\"bytes\":61000056832,\"stored\":10510351673,\"stop\":\"MAX_ROOT_REACHED\"}\n{\"partial\":false,\"roots\":14,\"scope\":14,\"uniqueNodes\":256,\"checks\":969,\"spool\":{\"bytes\":61570595788,\"rawBytes\":57517604821,\"stored\":10510351673,\"frames\":6854,\"stop\":\"MAX_ROOT_REACHED\",\"cap\":10737418240}}\n",
+  "id": "rh-bounded-raw-scope-20261125",
+  "question": "Use one authenticated archive stream and a disk-capped compressed raw spool to extract 14 selected expression roots, preserve raw witnesses and independently check de Bruijn scope; explicitly mark late proof roots unresolved if storage prevents full extraction. Not kernel replay.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "node research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run18_bounded_raw_scope.mjs --out {out}",
+  "utc": "2026-11-25T00:49:19Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "d543273638409f84ce6cdd222eb1c8e18da916cb",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45516076429",
+  "outputs_committed": [
+    {
+      "path": "selected_raw_scope.json",
+      "bytes": 284121,
+      "sha256": "47db485f1c648d3d1a39de78ad69ff62583b433fc2d3793241b7d96532fd95b1"
+    }
+  ],
+  "outputs_artifact_only": []
+}
