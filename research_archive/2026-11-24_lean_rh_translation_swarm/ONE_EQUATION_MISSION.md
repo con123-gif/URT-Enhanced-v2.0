@@ -1,3 +1,24 @@
+# USER CLARIFICATION — human-readable proof and one equation (25 Nov 2026)
+
+**This section takes precedence over every earlier objective below.** The user has clarified: "The objective is human readable proof and one equation." The primary deliverable is a faithful, concise human reconstruction of the existing pinned Lean argument, organized around one decisive mathematical inequality and its derivation. It is NOT a search for an independent solution to RH, and the prime-only Vaughan/Type II route is no longer the primary mission. Keep its results, but pause independent detours unless they demonstrably shorten an actual pinned proof branch.
+
+## Canonical equation: use the source's own mathematics first
+At modulus one the natural candidate is the native centered von Mangoldt ramp:
+    G(x) = sum_{n<=x} Lambda(n)(x/n-1) - x log x + (1+gamma)x
+    G(x) <= x^(1/2+epsilon)
+on arbitrarily distant fixed-power windows, with every positive epsilon (or an equivalent small-epsilon quantifier and fixed exponent rescaling). The precise window form, constants and signs must be derived from the source. Do not assert the displayed estimate is independently established. Source: DedekindLFunctions/CharFamily.lean (definition G); PrimitiveCosets/CoreGm.lean (core_gm); PrimitiveCosets/WindowInequalityOfArtinInputs.lean (window transfer); CharacterBoxes/ZeroFreeAllOfTopG.lean; Formalism/GammaFactorNonvanishing/CritLine.lean (modulus-one endpoint). Before adopting this equation as final, verify the native singleton Level.cyc specialization, Gm equality, window and Landau pole hypotheses. The previous prime-only outer-shell inequality is an alternative candidate, not an obligation to invent a new proof.
+
+## Required deliverable and method
+1. Maintain ONE living human-readable manuscript. Begin with the equation, explain every symbol, derive it from the actual source theorem bodies, and show how it yields RH via the native Landau argument and functional equation. Use ordinary mathematics, not Lean notation, for the main narrative.
+2. Work backwards from Main.riemannHypothesis (at pin 40e56bab026552e089d7afcfeff08d2defb9c005). Specialize to modulus one and preserve every auxiliary hypothesis used by the actual proof. Reconstruct existing suppliers before attempting new ones. Each lane returns human derivations of its assigned source-dependent blocks, not a new research problem merely equivalent to RH.
+3. Give each major lemma an actual source anchor, exact statement, ordinary mathematical derivation, and status. Standard published results may be invoked with precise verified statements; obscure or novel major results require explanations/proofs. If the supplied Lean corpus has an unexpanded dependency, inaccessible body, unverified axiom, or genuine gap, explicitly label it; distinguish unknown reconstruction from unknown upstream truth. No independent proof of RH is required just to translate a verified argument; no claimed verification of the upstream root without full evidence.
+4. Use recursive reduction, algebra, symmetry, proof-term pruning and verified Lean bridges only to make that human derivation shorter without changing its logic. Prioritize source-body reconstruction and composing verified lemmas into the manuscript over new sufficient criteria, synthetic tests, general tooling, or ever-growing lists of possible reductions. One equation is the organizing result, NOT permission to omit its derivation or bundle open assumptions into a fake proof.
+5. Editor/integration own the single live manuscript, a dependency-indexed appendix, and a short list of the genuinely missing derivations. All other lanes send directly usable proof blocks to them with no duplicate exposition. Kernel/audit authenticate the original root and all reductions where possible. No further page-volume targets, invented completion percentages, or guarantees of success. Keep the original and alternate research archives intact.
+
+This is a priority correction, not a change to the frozen upstream source or a declaration that RH is proved. All scheduled RH lanes already read this mission; external agents must fetch it separately.
+
+---
+
 # ONE EQUATION — user-directed RH simplification mission
 25 November 2026. Status OPEN. This is the current priority for all 15 RH lanes; it supersedes earlier manuscript-volume targets and the expired 24 Nov deadline, not the source provenance/audit rules. No requirement to use URT; original algorithm may be tested against conventional methods only where useful. No Cathedral physics.
 
