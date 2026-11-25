@@ -3496,3 +3496,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/la
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-landau-diagonal-root-header-fix-20261125"
+question = "Retry exact RUN32/RUN33 analytic closure after actual CI header parser failure on commented Python import; retain original pinned proof candidates, native scans, pruning and axiom checks. Conditional only."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/run_diagonal_root_native_v2.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
