@@ -1,0 +1,92 @@
+{
+  "primes": 4203,
+  "prime_powers": 4285,
+  "quadratic_pair": [
+    3,
+    23
+  ],
+  "exact_checks": 5772139,
+  "negative_controls": 2,
+  "bench": [
+    {
+      "T": 64,
+      "rows": 4282,
+      "direct_cold_ms": 18.929027,
+      "direct_warm_ms": 17.0989395,
+      "reduced_cold_ms": 0.430277,
+      "reduced_warm_ms": 0.42573,
+      "direct_samples_ms": [
+        18.929027,
+        16.737671,
+        17.460208,
+        15.917798,
+        16.459233,
+        17.625646,
+        18.624509
+      ],
+      "reduced_samples_ms": [
+        0.430277,
+        1.019443,
+        0.57857,
+        0.400642,
+        0.363396,
+        0.417748,
+        0.433712
+      ]
+    },
+    {
+      "T": 256,
+      "rows": 4282,
+      "direct_cold_ms": 62.610877,
+      "direct_warm_ms": 66.2684775,
+      "reduced_cold_ms": 0.434633,
+      "reduced_warm_ms": 0.4913335,
+      "direct_samples_ms": [
+        62.610877,
+        71.385073,
+        66.279554,
+        65.389035,
+        67.728464,
+        66.257401,
+        66.213716
+      ],
+      "reduced_samples_ms": [
+        0.434633,
+        0.546302,
+        0.67826,
+        0.524799,
+        0.457868,
+        0.441975,
+        0.409867
+      ]
+    },
+    {
+      "T": 1024,
+      "rows": 4282,
+      "direct_cold_ms": 265.215034,
+      "direct_warm_ms": 265.859261,
+      "reduced_cold_ms": 0.711547,
+      "reduced_warm_ms": 0.7792245,
+      "direct_samples_ms": [
+        265.215034,
+        245.703707,
+        247.839233,
+        257.109915,
+        274.608607,
+        303.543436,
+        296.84077
+      ],
+      "reduced_samples_ms": [
+        0.711547,
+        0.751137,
+        0.947033,
+        0.807312,
+        0.590113,
+        0.671927,
+        0.917158
+      ]
+    }
+  ],
+  "peak_rss_kib": 96656,
+  "scope": "genuine primes and quadratic coefficients; controlled heights, not native geometry; cold=first in-process call"
+}
