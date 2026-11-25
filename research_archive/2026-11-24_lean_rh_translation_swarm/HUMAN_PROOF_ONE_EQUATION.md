@@ -62,14 +62,50 @@ The native Landau window lemma says: a real measurable g(u)=G(exp u) of growth O
 
 Choose any hypothetical zero ρ with Re ρ>1/2, less than 1 (nonvanishing for Re s>=1 is standard). Take ε<min(ε0,(Re ρ-1/2)/9), and choose θ=1/2+9ε<Re ρ. With U=log Y, [E] gives g(u)<=exp(θu) on [U,3U/2]. Use R=exp(θu); its weighted integral is U/2<=exp(ηU) for sufficiently large U. Thus the native lemma forces Re ρ<=θ, a contradiction. This is exactly the mechanism of formB -> zeroFree_of_rpow_window -> lemmaL. Reflection in the functional equation sends an off-line nontrivial zero with Re<1/2 to one with Re>1/2. Hence all nontrivial zeros have real part 1/2. This last reflection is the previously native-compiled conditional rh_of_right / reduced_strip_root adapter.
 
-## 4. Remaining derivations (not new conjectures by default)
+## 4. The geometric inequality: explicit human derivation
 
-The pointwise geometry in §2 is proved in the source by a chain of eleven hypotheses: positivity/HidaSetting; division-height bound; exponent comparison; compensated-height comparison; count lower, upper and spread; two ambient slopes; two quotient slopes; signed arithmetic losses; entropy inequality; height budget; and frame parameters. The elementary combination is reconstructed in math/EXACT_CANCELLATION_NORMAL_FORM_2026-11-24.md and math/2026-11-25_uf_phi_envelope.md. Insert their ordinary-mathematical proof next, retaining the original Count5/ErrX5at rather than unverified replacements. Then trace the actual producer of each hypothesis:
-- Host / prime selection: supplyChi -> supplyOfAdmOf -> winPairs and pairEx, with VWinAt(1,401). Explain the original mean-square/character boxes and uniform full-length arithmetic supply; do not replace them with a conjectural bound.
-- Actual TopG and family construction: TopShape.shape_closed_link_n_of_green -> topDesWin -> hE and hgl/closed family inputs. classSel, recS, kitS and exists_famP_of_kits have existing human derivations; incorporate those with their actual parameter and same-witness quantifiers. Explain DIV, rank/count, height, slope, entropy and local losses on that exact branch.
-- Upstream Galois/literature/theta/Green suppliers: MainConclusion.everyCharacter_of_row passes the actual row, recTExists and vwin_of_row into every_character_of_literature_of_vWin. That theorem passes two published-results packages, both theta matching projections, covolume theorem package, recT and VWin. Expand the actual source bodies and check their mathematical inputs/axioms. The fact that a theorem has a Lean proof body is not, by itself, an independent audit of its imported dependencies. No missing reconstruction is evidence of a flaw in the source unless an actual defect is shown.
+Fix one translation and its finite nonempty word fibre W. Averages below use the positive native weights d_i, normalized to sum one. Write A=sum_t a(t), B_1=sum_t a(t)(log a(t)-1-gamma+LpL), R=sum_j mean_rho log w_jrho, q=log(pi/v), and P=cCount*(La+m²La/k). In the notation of the source,
 
-These are remaining reconstruction and provenance tasks, not an instruction to independently solve the prime shell or Type II. The candidate selected-point, signed-budget and other reductions are archived; introduce only after their original-statement bridges and full dependencies are justified. Preserve the source's exact logical argument. Editor/integration maintain this file; do not replace it with a parallel unrelated manuscript.
+    Main=m B_1-A R,  SDiv=m B_1-m A q,
+    Lam5=R-m q+m lg-P.
+
+Substitution cancels the two common logarithmic terms exactly:
+    SDiv-A Lam5+m A lg=Main+A P.
+
+Put t_i=log T_i, E_i=Ee_i, h_i=h(i), s=mean(muN_i-h_i), uF=max_i(muMaxN_i-h_i)-s>=0. Let P_+=cSlope*r*a*La, P_-=P_+*(1+m/k), C_0=cSl1*m*B0, E_0=m*A*lg, E_D=EDiv and Lo_i=Lo5(i). The original local hypotheses are the following (every indexed statement holds on the same word fibre):
+    muCC+h_i-Fo <= SDiv-A t_i+E_D;
+    |E_i-E_0|<=m*cE*B0;
+    |(h_i+A t_i)-(h_j+A t_j)|<=cH*(r*a*La+m*B0);
+    Lam5<=t_i<=cCount*m*L, |t_i-t_j|<=cCount*log k;
+    -P_-<=muM_i, muMaxM_i<=P_+;
+    muM_i+Ga+Fo-E_i-Lo_i<=muN_i<=muMaxN_i,
+    muMaxN_i<=muMaxM_i+Ga+Fo-E_i+C_0.
+The native loss is Lo_i=cSl1*IO+cSl1*r*m*(a/k+b')*t_i+cSl1*Xpp+1. The division error is E_D=cDiv*r*a*La+cDiv*m*(B0+Nc)*x^(eDiv*epsilon). The geometric source uses La (not L) in P.
+
+Subtract the division inequality from the lower quotient-slope inequality and average. The lower count, exponent comparison and exact cancellation yield
+    Ga-Main <= s-muCC+K_0+mean(Lo),
+where K_0=A P+E_D+m*cE*B0+P_-. Independently set V=2m*cE*B0+cH*(r*a*La+m*B0)+A*cCount*log k. The three comparison bounds show that (-E_i-h_i)-(-E_j-h_j)<=V. Subtract the lower quotient bound at j from the upper one at i. Averaging j and maximizing i cancels Ga+Fo and gives
+    uF<=K_3+mean(Lo),  K_3=P_++P_-+C_0+V.
+
+The native entropy inequality (SlopeIneq) states
+    s-muCC <= log|W|+
+       [4uF log(1+HH/uF)+(eta+4sqrt(e))*HH]/(1-del).
+Here 0<=del<=delBar<1, 0<=eta<=etaBar, 0<=e<=eBar<=1/4, and 0<HH<=X*b with X=x^cHH, together with s-muMinCC<=HH. For u>0, log z<=log(1+X)+z/(1+X)-1 applied to z=1+HH/u gives u log(1+HH/u)<=u log(1+X)+b X/(1+X). Since X/(1+X)<=log(1+X), the bound is <=(u+b)log(1+X), and the zero case follows by continuity. Use u=uF and the bound K_3+mean(Lo). The native losses ASK-Ga<=LoP and IO<=LoP, and the count upper bound, give
+    mean(Lo)<=M_0:=cSl1*LoP+cSl1*r*m*(a/k+b')*cCount*m*L+cSl1*Xpp+1.
+Consequently
+    ASK-Main<=K_0+log|W|+LoP+M_0+
+      [4log(1+X)*(K_3+M_0+b)+(etaBar+4sqrt(eBar))*X*b]/(1-delBar).
+This is exactly ErrX5at (not a new substitute bound). Its size estimate is supplied by the native errX5at_le with ErrWindows and LargeX; its application to gapA uses the actual ASK/Main identification and BNBoundsU. The displayed algebra proves the local implication once these inequalities and the entropy premise are established. It does not establish the existence of their simultaneous geometric witnesses.
+
+## 5. Arithmetic and automorphic construction: precise source-derived assembly
+
+The host existence input is VWinAt(1,401), not a prime-window statement. It supplies uniform full-length Galois-cohomology bounds VVle for every sufficiently large interval selected by the native quantifiers, for all degrees below floor(x^401) and every eligible field. The prime-pair construction pairEx, followed by winPairs, supplyOfAdmOf and supplyChi, places the cohomological bounds on hosts with the actual ranks, prime pair and character estimates. For modulus one the auxiliary nonprincipal characters remain in the proof of the host estimate. The source supplyChi returns HostExW with window exponent 3/2; 401 is the distinct cohomological cutoff.
+
+For the geometric family, the original construction starts with a common large base condition by intersecting the existence and row slots. The resulting class consists of objects with the prescribed automorphic data and row property. At every admissible scale, HostWW chooses the host, ranks and weight tables first. An injective word code is chosen next; ObjCP supplies an actual object for every translation of the same host. The word code, common tables and the arithmetic From conditions prove the ties needed for Kit; the gluing lemma constructs a family on the windows, using a fixed fallback only below the threshold. Thus all subsequent pointwise estimates concern one and the same family. Combining the eventual constants uses minima of epsilon thresholds, maxima of scalar thresholds and the pointwise maximum of transport bounds. The proof never takes an intersection of independently chosen sparse windows.
+
+The actual TopShape call builds the design-existence package via designExists_of_tuSize_aux4n_litThin, then uses topDesWin to combine the closed division, height, rank, irreducibility, gain, slope and global loss suppliers on that class. The required small-share loss is the original joint discriminant estimate applied to each record with outer index Unit; it yields ASK-Ga<=(3 max(C,0)+13)Q and IO<=Q on the native size windows. This explains the local LossBounds input without inventing an independent RH estimate. See the native proof reconstruction of loss_setting_family and selected_point_loss for exact PtH, LinkG_at, ParTie and prime-class hypotheses; the selected-point Lean candidate has not yet been compiled and is not substituted here.
+
+The preceding assembly describes the actual proof bodies, but its foundational input is the upstream construction of compatible automorphic objects and row bounds. The precise remaining trust boundary is not [E] itself: it is the derivation of VWinAt(1,401) and the simultaneous geometric, entropy and local gain conditions from the original Galois/representation/theta/height suppliers, and authentication of the transitive proof dependencies. In particular, a local conditional inequality or the fact that a declaration has a proof body cannot replace these derivations.
 
 ## Source ledger (all at the pin above)
 Paths relative to src/:
@@ -84,4 +120,4 @@ Paths relative to src/:
 - Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean 2ed00ad3aa862f3e522686557fb8f559b17fc002; lemmaL.lean 6c37aebd05121b6d68e3532d8529f0ce8357386f; landauWindow.lean 7915058f10b33a52652290cd887cbccdc00e676a; poleData.lean.
 - Formalism/GammaFactorNonvanishing/CritLine.lean 95fa4da5c50119db164aa93944d106f22fdb576d; RhOfRight.lean 3604637147a33e72248faddd775ea750e7846ead.
 
-Native verification: earlier run 45577239749 verified conditional half-strip adapter, not [E] or Main. This manuscript is human/source-matched only; no new Lean run. No synthetic tests claimed. Original dependency and axiom evidence retained. RESUME: integrate §4 pointwise geometry from existing normal form and actual producer proof, then compose source-based family and arithmetic inputs.
+Native verification: earlier run 45577239749 verified conditional half-strip adapter, not [E] or Main. This manuscript is human/source-matched only; no new Lean run. No synthetic tests claimed. Original dependency and axiom evidence retained. RESUME: close the upstream input derivations in §5, especially the actual full-length VWin and geometric row/entropy suppliers; audit Main's transitive axioms. The 10-page complete proof is NOT yet delivered.
