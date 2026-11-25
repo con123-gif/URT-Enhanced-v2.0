@@ -1,0 +1,42 @@
+# Global determinant cancellation: same-rank volume comparison without Euler-factor computation
+25 Nov 2026. RH OPEN. HUMAN SOURCE-MATCHED derivation, not kernel checked. Mission 60892061; upstream pin 40e56bab026552e089d7afcfeff08d2defb9c005. Uses geometry RUN33 0e1b92ab and native CM indexing fdb0ad7a. This is a shorter route for their remaining normalization comparison, not a claim of new general mathematics or of closing RH. It proves the measure comparison in ordinary mathematics assuming the native-to-classical topological group identifications and standard Tamagawa theorem. The earlier transport blocks require independent checking.
+
+## One mathematical block
+Write E/F for the same CM host, n>0, H=W.gram nonsingular Hermitian, and U_H for its unitary group. The native CMData.cmUnram implies E/F unramified at finite places: at a ramified prime conjugation would act trivially on the residue field, contrary to the theta-t witness in IsCMUnram. The self-dual lattice L is locally self-dual: finite generators allow the dual constraints to be expressed as a finite intersection of preimages of O_E, and flat localization/completion preserves those kernels/intersections.
+
+Put S={Y in M_n(E): Y*=-Y}. Multiplication X -> HX gives an F-linear isomorphism Lie(U_H) -> S. Fix one F-rational nonzero top form beta on S for every H and extend its pullback at the identity by left translation to a rational invariant gauge form omega_H on U_H. No global rational isometry between different signatures is asserted.
+
+At each finite place v, there is a lattice isometry A_v from (L_v,H) to the standard self-dual lattice with form J_v=I. For inert unramified v, a nondegenerate residue Hermitian form has a vector of nonzero self-pairing: otherwise polarization with every residue scalar forces every pairing to vanish by nondegeneracy of the residue trace, including characteristic 2. Lift to a unit norm vector up to a unit in O_F; the norm map on units of an unramified quadratic extension is onto (residue norm and successive trace lifts). Rescale to norm one, split orthogonally, repeat. At split v the Hermitian lattice is a pair of dual free lattices; choose dual bases. At infinite v choose A_v with H=A_v* J_v A_v, J_v=diag(I_P,-I_Q), using the actual native signature frame. These A_v may be entirely different at different places.
+
+For all v, A_v* J_v A_v=H, and the Lie isomorphism c_v(X)=A_v X A_v^{-1} satisfies
+    H X = A_v* [J_v c_v(X)] A_v.
+The congruence map C_A:Y -> A* Y A on S has determinant over F_v
+    det(C_A)=N_{E_v/F_v}(det A)^n.
+Indeed after extension to a splitting field the anti-Hermitian space is isomorphic to all n-by-n matrices on one factor, and C_A becomes left multiplication by the transpose of the other factor and right multiplication by the first. Each contributes the nth power of its determinant. This works for split and nonsplit v; it also proves the determinant identity in the residue-characteristic-two case since the local field is characteristic zero. Therefore
+    |det(C_A)|_v = |det H / det J_v|_v^n = |det H|_v^n.
+The determinant of H belongs to F^*. With gauge measures from beta and compatible local additive measures,
+    |omega_H|_v = |det H|_v^n c_v^* |omega_{J_v}|_v.
+At finite v the reference |omega_I|_v gives the same mass to the standard lattice stabilizer for every W of rank n. No finite unitary-group order or individual Euler factor needs evaluation.
+
+At real v the native IsOmegaLeb measure is transported by X -> J_v X to the compact Lie algebra: the complexified map multiplies rows by signs and has absolute complex determinant 1, hence preserves the ambient product Lebesgue measure; uniqueness follows by positivity and Haar uniqueness. The native CDHaar.trick supplies the same exponential-ball density constant for cd(P,Q) and cd(n,0); smooth invariant Haar densities are determined by their value at identity, so the ratio of cd(P,Q) to the gauge |omega_{J_v}|_v is the same as cd(n,0) to |omega_I|_v. This uses the exponential chart at identity only. Permutations of coordinate labels do not change the absolute measure. No real-group isomorphism between U(P,Q) and U(n) is claimed.
+
+Using the finite-lattice and real-place identifications in RUN33 and fdb0ad7a, IsVolMeas is exactly the product Haar measure mu_H with finite stabilizers mass 1 and the prescribed real cd(P,Q) factors. Compare with the reference product-normalized mu_I. The rational gauge forms have identical relative global normalization because
+    PRODUCT over all v |det H|_v^n = 1
+by the number-field product formula. Only finitely many finite factors differ from one. The discriminant and the convergence factors used in Tamagawa normalization are the same for H and I: both groups have dimension n^2 and the same character module (determinant norm-one torus). More intrinsically they are inner forms and their determinant tori are identical; any standard regularization must be applied consistently on both. Thus there is one common C(F,E,n)>0 with tau_H=C mu_H and tau_I=C mu_I as measures, where tau denotes the Tamagawa measure, not its total mass.
+
+The unitary groups U_H and U_I are inner forms of one another. Over an algebraic closure both become GL_n; the descent involutions differ by conjugation by the Gram matrix, an inner automorphism, and the determinant torus has identical descent. Kottwitz, Tamagawa numbers, Ann. of Math. 127 (1988), 629–646, DOI 10.2307/2007007 (https://annals.math.princeton.edu/1988/127-3/p05), gives equality of Tamagawa numbers for inner forms of connected reductive groups over number fields. See also explicit formulation in Kaletha, stfclg.pdf, Corollary B.0.5, https://www.math.uni-bonn.de/people/kaletha/stfclg.pdf. Hence, with the same C,
+    mu_H(U_H(F)\\U_H(A_F)) = mu_I(U_I(F)\\U_I(A_F)).
+The same argument for W0 of rank n proves native VolSigIndep once the source-to-classical dictionary is authenticated. Rank zero is trivial and can be handled separately. Quotient mass agrees with the Haar mass of a measurable fundamental domain by the defining integration formula for the discrete rational subgroup. Invoking VolTie and vol_eq_of_indep gives D.vol W = D.vol W0.
+
+## Consequence and limitations
+This replaces explicit local density/Euler-factor comparison in RUN33 by one rational determinant identity and one product-formula cancellation, retaining the same actual measure and same host. It does not replace VolTie, independent class items or Siegel mass ratios, UnitSplit or all arithmetic/entropy suppliers. If standard positive class mass and telescoping ratio are separately justified, the manuscript's signed normalization defect delta is exactly zero, which implies -2L<=delta<=m. Otherwise do not claim delta=0. The proof does not rely on a new numerical bound, a heuristic, or RH. Native topology, quotient/fundamental-domain conventions, CM indexing and Lean formalization/axiom audit are still pending. No Lean kernel run performed here. The use of the existing standard published theorem is explicit, not an unproved new axiom.
+
+## Source anchors (retrieved from exact pin)
+- Formalism/LocalRingCardinality/DataCD.lean 449d5479b4d8ec9baeaebd3459f95232094ae222: lieU, IsOmegaLeb, OmegaDensity, CDHaar.
+- Formalism/LocalRingCardinality/DataSpaces.lean f1d2da346f8996c2527724b50fd6409dc8ab937b: CMData, HSpace.
+- Formalism/HermitianLattices/StatementLat.lean 4f84ca3c8738dca6ffab6b32fdf4ee309fed05c4: dual, IsUnimodular.
+- Formalism/HermitianLattices/StatementMass.lean 33a3ea93298eff7969409462ddfc1ed22f173939: IsCMUnram, SiegelMassRatio.
+- Formalism/SharpRestriction/GlobalSchurBounds/StandardLattice.lean cb758a6c5f78e610b8f946d4b733d07902b15f5d: L0c, IsVolMeas, VolTie.
+- Formalism/LocalToGlobal/GlobalTheory/GL5/PNamed.lean fcfd96e6e8385ec5e1de13f41d5706803d565c5d: VolSigIndep, vol_eq_of_indep, vol_eq_mass_of_indep, volRatioTrue_of_indep.
+
+RESUME HERE: independently audit determinant base change, finite self-dual local isometry and the rational-gauge product formula normalization; authenticate existing native group/Haar transport and CM indexing, then integrate into the actual VolSigIndep consumer. Use existing CI for candidate caller bridges; report the exact remaining Lean frontier rather than claiming a new kernel pass. HANDOFF TO geometry, integration, literature, editor and audit.
