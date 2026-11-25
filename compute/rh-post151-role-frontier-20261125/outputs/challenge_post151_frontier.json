@@ -1,0 +1,6761 @@
+{
+  "status": "AUTHENTICATED_EXPORT_DIRECT_ROLE_WITNESSES_NOT_KERNEL_RECHECK",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "file": "challenge.ndjson.zst",
+  "digest": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+  "bytes": 350862311,
+  "meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "version": "4.33.1"
+    }
+  },
+  "n": 6112241,
+  "root": 326835,
+  "indexedDeclarations": 53722,
+  "projectionMs": 25,
+  "maxRssKiB": 265692,
+  "summary": {
+    "recursorRuleRhs": 0,
+    "requests": 300,
+    "found": 0,
+    "typeEdges": 0,
+    "valueEdges": 0,
+    "structuralEdges": 0,
+    "expressionReads": 0,
+    "rhsExpressionReads": 0,
+    "rhsReferenceEdges": 0
+  },
+  "reports": [
+    {
+      "request": {
+        "name": "UpperTheory.GalStar.RecNotion._proof_1",
+        "id": 385652,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalStar.Row0b",
+        "id": 421714,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.TypeLaw",
+        "id": 544957,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.TypeLaw._proof_1",
+        "id": 544958,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          8
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.LawsT",
+        "id": 549919,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          9
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.LawsT.mk",
+        "id": 549928,
+        "kind": "ctor",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          10
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.IsRecT",
+        "id": 549935,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          11
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.One.M.Row",
+        "id": 549946,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Top.VWinAt",
+        "id": 550386,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          16,
+          17
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Top.VWin._proof_1",
+        "id": 551632,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          16,
+          18
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalS.PairUAlt",
+        "id": 552996,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          14,
+          19
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalS.CuspUAlt",
+        "id": 553310,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          14,
+          20
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalS.CarUAlt",
+        "id": 576584,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          14,
+          21
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Top.imprimitive",
+        "id": 854015,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          22,
+          23,
+          24
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+        "id": 1550745,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          22,
+          23,
+          25
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil",
+        "id": 1987325,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          22,
+          26,
+          27
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.Sw47.convergent",
+        "id": 2587804,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          28,
+          29
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.Sw47.weilUnitary",
+        "id": 2688571,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          30,
+          31,
+          32
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Pr.exh",
+        "id": 4893030,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          33
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Pr.multi",
+        "id": 4896475,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          34
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Pr.bz",
+        "id": 4897801,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          35,
+          36
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Pr.zel",
+        "id": 4901783,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          37,
+          38,
+          39
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.clBasic",
+        "id": 6187458,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          37,
+          38,
+          40
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalS.bridgeStar_alt",
+        "id": 6446629,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          14,
+          41
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalS.carU_of_finite_gl_recT",
+        "id": 6446735,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          42,
+          43
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.BaseChangeIdentities.definiteN_of",
+        "id": 6502177,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          44,
+          45
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.InFor",
+        "id": 6921465,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          46
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Ext",
+        "id": 6921467,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          47
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Ext.K",
+        "id": 6921477,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          48
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Ext.fK",
+        "id": 6921478,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          49
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Ext.Res",
+        "id": 6921486,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          50
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Names",
+        "id": 6921500,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          51
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.Ext.aK",
+        "id": 6921507,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          52
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.TypeAt",
+        "id": 6921517,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          53
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.artEx",
+        "id": 6921567,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          54
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.typeIff",
+        "id": 6927314,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          55
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.N.at23_family_alt",
+        "id": 7580947,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          22,
+          56,
+          57
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.N.boundAtTwoThree_n_linked",
+        "id": 8026869,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          22,
+          56,
+          58
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.gelfand_kazhdan_dual_of_literature",
+        "id": 8068690,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          14,
+          59
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements.localLanglandsExists",
+        "id": 8068714,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          60,
+          61,
+          62
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.pair_u_of_literature",
+        "id": 8077488,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          14,
+          63
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.HeckeLevelFrameExistence.frameEx_of_fin",
+        "id": 8284925,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          65,
+          66,
+          67
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.BaseChangeIdentities.uSide",
+        "id": 8305743,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          65,
+          66,
+          68
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.BaseChangeIdentities.FrameWordIdentity.frameBound",
+        "id": 8327801,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          65,
+          66,
+          69
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.BaseChangeIdentities.GelfandReading.frameRead",
+        "id": 8349691,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          65,
+          66,
+          70
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.HeckeLevelFrameExistence.CF.candFin_of",
+        "id": 8350971,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          65,
+          71,
+          72
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.base_change_isobaric",
+        "id": 8352349,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          44,
+          73
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.bhatt_scholze_integral_of_literature",
+        "id": 8376834,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          74,
+          75
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.hecke_l_adic_character_de_rham_of_literature",
+        "id": 8402649,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          76,
+          77
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.algebraic_character_wd_of_literature",
+        "id": 8474994,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          78,
+          79
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.segment_representation_of_literature",
+        "id": 8476559,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          60,
+          80,
+          81
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.grothendieck_ring_polynomial_of_literature",
+        "id": 8476560,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          60,
+          80,
+          82
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.hecke_l_adic_character_crystalline_of_literature",
+        "id": 8477097,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          76,
+          83
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.totally_disjoint_product_irreducible_of_literature",
+        "id": 8497071,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          84,
+          85
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.carU_local_global_of_literature",
+        "id": 8497770,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          42,
+          86
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.clozel_purity_of_literature",
+        "id": 8497833,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          87,
+          88
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.flath_tensor_product_of_literature",
+        "id": 8577354,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          30,
+          89,
+          90
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.unitary_irreducible_admissible_of_literature",
+        "id": 8577356,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          30,
+          89,
+          91
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.literature_local",
+        "id": 8618586,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          92,
+          93
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.literature_automorphy",
+        "id": 8618588,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          92,
+          94
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.greenbergWiles",
+        "id": 8685312,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          95,
+          96,
+          97,
+          98,
+          99
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.local_finiteness_k_of_literature",
+        "id": 8685495,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          74,
+          100
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.local_tate_duality_k_of_literature",
+        "id": 8685496,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          74,
+          101
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.local_euler_char_k_of_literature",
+        "id": 8685497,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          74,
+          102
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.blochKatoLocal",
+        "id": 8695377,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          95,
+          96,
+          97,
+          103,
+          104
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.bloch_kato_local_of_literature",
+        "id": 8695378,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          74,
+          105
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.literature_cohomology",
+        "id": 8695379,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          92,
+          106
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.heckeTateFunctionalEquation'",
+        "id": 8728562,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          92,
+          107
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.join_out_of_literature",
+        "id": 8728563,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          92,
+          108
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.ht_card_of_literature",
+        "id": 8728569,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          109,
+          110
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.fontaine_bcris_of_literature",
+        "id": 8728571,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          13,
+          74,
+          111
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.linnik",
+        "id": 8728950,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          30,
+          112,
+          113
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.Rallis.RallisIPProof.rallis_of_dm",
+        "id": 8730999,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          30,
+          114,
+          115
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.weil_theta_convergence_of_literature",
+        "id": 8731973,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          30,
+          114,
+          116
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.weilRepresentationExists_pair",
+        "id": 8797768,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          30,
+          117,
+          118
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.prismaticDieudonneHodge",
+        "id": 10523534,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          12,
+          119,
+          120,
+          121
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.cuspEx",
+        "id": 11301631,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          122
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.absCentral",
+        "id": 11303685,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          35,
+          123
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.central",
+        "id": 11303686,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          35,
+          124
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.extTw",
+        "id": 11304133,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          125
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.one",
+        "id": 11304200,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          126
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.irr",
+        "id": 11304201,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          127
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.extDual",
+        "id": 11305743,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          128
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.extInj",
+        "id": 11306735,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          129
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.OpenImageCondition.mk",
+        "id": 11307288,
+        "kind": "ctor",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          130
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.V.Af.algSat",
+        "id": 11308202,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          134,
+          135
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.mem_iSup_automorphicReps_of_invariant_form",
+        "id": 11797618,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          139,
+          140
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Desc.descOffT",
+        "id": 12421136,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          142,
+          143
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.V.v_window_of_literal_automorphy_n",
+        "id": 13096310,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          95,
+          96,
+          144
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.One.Join.local_inputs_from_literature",
+        "id": 13096334,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          95,
+          96,
+          145
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.One.Join.automorphic_inputs_from_literature",
+        "id": 13096354,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          95,
+          96,
+          146
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Lit.serreTateGoodReduction",
+        "id": 13125890,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          95,
+          147,
+          148
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.recT",
+        "id": 13125903,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          149
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.W.GoodK",
+        "id": 13125916,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          150,
+          151
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.cj",
+        "id": 13125927,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          150,
+          152
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsLiftWt",
+        "id": 13125946,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          154
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.CompAt",
+        "id": 13125947,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          156
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.LocPair",
+        "id": 13125954,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          157
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.LocPair._proof_1",
+        "id": 13125955,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          159
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.LocPair._proof_2",
+        "id": 13125956,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          160
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.LocPair._proof_3",
+        "id": 13125957,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          161
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsLift",
+        "id": 13125968,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          150,
+          162
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsLift.mk",
+        "id": 13125975,
+        "kind": "ctor",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          164
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.PhiK._proof_1",
+        "id": 13125980,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          134,
+          165
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.OneK",
+        "id": 13126012,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          134,
+          166
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.VBase",
+        "id": 13126117,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          134,
+          167
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.CrysAt",
+        "id": 13126127,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          134,
+          168
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.JumpsOcc",
+        "id": 13126138,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          134,
+          169
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.PhiKilled",
+        "id": 13126156,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          134,
+          170
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalStar.Row0.row0b",
+        "id": 13126384,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          171
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Row.galoisLocalGlobal_of_localGlobalCompatibility",
+        "id": 13129148,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          172,
+          173
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.ToralGalois.galoisCompat_unlinkedSupport_of_spherical",
+        "id": 13140146,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          172,
+          174
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.ToralGalois.R2.localGlobalCompatAtIwahoriFixed_of_unlinked",
+        "id": 13172409,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          172,
+          175
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Inp.coreAll_of_core",
+        "id": 13175074,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          142,
+          176
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Core.toCoreK",
+        "id": 13190268,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          142,
+          177
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.ClosedPhiFromClosedTrace.congPhi_holds",
+        "id": 13205113,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          142,
+          178
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Lim.limFinOdd_of",
+        "id": 13208114,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          142,
+          179
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.seedFinOdd_of",
+        "id": 13208305,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          181
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.divAll_holds",
+        "id": 13220131,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          182
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.cplMem_of",
+        "id": 13220132,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          183
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.sameOr_of",
+        "id": 13220312,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          184
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.satConj_of",
+        "id": 13220362,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          185
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.locIso_of",
+        "id": 13220464,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          186
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.tyConj_of",
+        "id": 13220567,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          187
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.lacConj_of",
+        "id": 13220638,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          188
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.gapLac_of",
+        "id": 13220799,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          189
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Div.dGenMul_of",
+        "id": 13220865,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          180,
+          190
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Cong.WtLacEx",
+        "id": 13220973,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          191,
+          192
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Cong.CongUWG.congUW4",
+        "id": 13220983,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          191,
+          193
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Cong.congFinG_of_ex",
+        "id": 13232502,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          191,
+          194
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Wt.top_of",
+        "id": 13232621,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          195,
+          196
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Wt.famEx_holds",
+        "id": 13234664,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          195,
+          197
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Wt.famProj_holds",
+        "id": 13234803,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          195,
+          198
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Wt.famWt_holds",
+        "id": 13235286,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          195,
+          199
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.LocalSmoothExtension.altTr._proof_1",
+        "id": 13235451,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          201,
+          202,
+          203
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.LocalSmoothExtension.HolomorphicLefschetzFormula._proof_1",
+        "id": 13235453,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          201,
+          202,
+          204
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.Steps",
+        "id": 13239138,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          206,
+          207
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.KSAll",
+        "id": 13240667,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          206,
+          208
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.KSAll.mk",
+        "id": 13240668,
+        "kind": "ctor",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          210
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.PlanEx",
+        "id": 13240731,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          206,
+          211
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.geoOne_of",
+        "id": 13240913,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          206,
+          212
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.packEx_of",
+        "id": 13241087,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          206,
+          213
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.steps_of",
+        "id": 13506429,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          214,
+          215
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Seam.crysStep_holds",
+        "id": 13632187,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          214,
+          216
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.jumpStep_holds",
+        "id": 13680695,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          214,
+          217
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Ru.crystallineComparison.phiStep",
+        "id": 13697717,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          214,
+          218
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.CovMain.stdEx_holds",
+        "id": 13842995,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          219
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.G3.kSEx_holds",
+        "id": 13855300,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          220
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.G3.kSNice_holds",
+        "id": 13855992,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          221
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.FiniteEtaleModels.ksGood_holds",
+        "id": 13865846,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          222
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.CovMain.ksCong_holds",
+        "id": 13866964,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          223
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.LocalSmoothExtension.ksHodge_of_geo",
+        "id": 13910439,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          224
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.FixZ.FixK_holds",
+        "id": 13934240,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          209,
+          225
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.Pl.exists_unitaryGroupDatum_of_vector_exponent_spectral",
+        "id": 13947156,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          226,
+          227
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.Pl.vecEx_holds",
+        "id": 13950776,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          226,
+          228
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.Pl.expOf_holds",
+        "id": 13951178,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          226,
+          229
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Gal.Int.Geo.Pl.specTop_holds",
+        "id": 13967293,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          200,
+          205,
+          226,
+          230
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLift_k._proof_1",
+        "id": 14009160,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          232
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLift_k._proof_2",
+        "id": 14009161,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          233
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLift_k._proof_3",
+        "id": 14009162,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          234
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLift_k._proof_4",
+        "id": 14009163,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          235
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k",
+        "id": 14009311,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          236
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.mk",
+        "id": 14009312,
+        "kind": "ctor",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          237,
+          238
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLift._proof_1",
+        "id": 14009333,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          239
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gInf",
+        "id": 14009339,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          240
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff",
+        "id": 14009347,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          241
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff._proof_1",
+        "id": 14009348,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          243
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff._proof_2",
+        "id": 14009349,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          245
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff._proof_3",
+        "id": 14009350,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          246
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff._proof_4",
+        "id": 14009351,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          247
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff._proof_5",
+        "id": 14009352,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          248
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff._proof_6",
+        "id": 14009353,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          249
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gOff._proof_7",
+        "id": 14009358,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          250
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsBr",
+        "id": 14009362,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          251
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BrEx",
+        "id": 14009371,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          252
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.HgtFst_k",
+        "id": 14009378,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          253
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Datum_k",
+        "id": 14009387,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          254
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Datum_k._proof_1",
+        "id": 14009388,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          255
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Datum._proof_1",
+        "id": 14009390,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          256
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.SameType",
+        "id": 14009391,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          257
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.HasType",
+        "id": 14009405,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          258
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RealPair_k",
+        "id": 14009412,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          259
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Rallis_k",
+        "id": 14009419,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          260
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Rallis_k._proof_1",
+        "id": 14009420,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          261
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsFin",
+        "id": 14009421,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          262
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.lift",
+        "id": 14009430,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          263
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.NonVan_k",
+        "id": 14009438,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          264
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.LiftAut_k",
+        "id": 14009445,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          265
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.LiftAut_k._proof_1",
+        "id": 14009446,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          266
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.ProjEx",
+        "id": 14009453,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          267
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.ReadLift_k",
+        "id": 14009460,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          268
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.ReadLift_k._proof_1",
+        "id": 14009461,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          269
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.tLift_of_k._proof_1_1",
+        "id": 14009469,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          270
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.pairEx",
+        "id": 14009476,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          271
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.tLift_of_k._proof_1_2",
+        "id": 14009477,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          163,
+          272
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.cpt",
+        "id": 14009962,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          273
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.stab2",
+        "id": 14010315,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          274,
+          275
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.PP",
+        "id": 14010422,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          276
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.act1",
+        "id": 14010423,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          277
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.act2",
+        "id": 14010468,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          278
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsBr.inf",
+        "id": 14010651,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          279
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.tprodNe",
+        "id": 14011453,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          280
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.fockOf_k",
+        "id": 14011586,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          281
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_1",
+        "id": 14011642,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          282
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_2",
+        "id": 14011660,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          283
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_3",
+        "id": 14011662,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          284
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.joint",
+        "id": 14011665,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          285
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.formEx",
+        "id": 14011833,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          286
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.embBij",
+        "id": 14011901,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          287
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.jointNe",
+        "id": 14011951,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          288
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._simp_1_4",
+        "id": 14011957,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          289
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_5",
+        "id": 14011958,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          290
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_6",
+        "id": 14011960,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          291
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_7",
+        "id": 14011962,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          292
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_8",
+        "id": 14011969,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          293
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_9",
+        "id": 14011971,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          294
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.realPair_k._proof_1_10",
+        "id": 14011973,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          295
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.exists_act2_equivariant_nablaSq_map_hitting_joint",
+        "id": 14011975,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          296
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.RP.exists_act1_equivariant_nablaSq_map_hitting_joint",
+        "id": 14012107,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          153,
+          297
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsFn",
+        "id": 14012193,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          298
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.mc",
+        "id": 14012194,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          299
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.gAt",
+        "id": 14012210,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          300
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IntAll",
+        "id": 14012223,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          158,
+          301
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Decomp_k",
+        "id": 14012231,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          302
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsBump",
+        "id": 14012240,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          303
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BumpAny_k",
+        "id": 14012248,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          304
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tail_k",
+        "id": 14012270,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          305
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.AbsNe",
+        "id": 14012279,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          306
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.SchurStep_k",
+        "id": 14012289,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          307
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsBr.rat",
+        "id": 14012296,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          308
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.matrix_coefficient_bounded_by_value_at_one",
+        "id": 14012398,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          309
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.IsBr.fin",
+        "id": 14012453,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          310
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.exists_finite_places_integral_mem_nhds_one",
+        "id": 14012506,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          311
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.exists_finite_unramified_outside_of_isHecke",
+        "id": 14012620,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          312
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.nonVan_k._simp_1_2",
+        "id": 14012692,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          313
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.nonVan_k._simp_1_3",
+        "id": 14012693,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          314
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.unitaryLocalGroup_le_offPlaces_empty",
+        "id": 14012712,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          315
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.nonVan_k._proof_1_4",
+        "id": 14012773,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          316
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.haarMeasure_triple_product_decomposition",
+        "id": 14012779,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          317
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.unitaryAdelic_mem_of_localGroups_near_one",
+        "id": 14012876,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          242,
+          318
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.polSch",
+        "id": 14013106,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          274,
+          319
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.basic",
+        "id": 14013107,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          274,
+          320
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.dbl",
+        "id": 14013108,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          321
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.boxSec",
+        "id": 14013109,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          274,
+          322
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.swFull",
+        "id": 14013111,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          274,
+          323
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.lift.eq_1",
+        "id": 14013223,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          274,
+          324
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.eM",
+        "id": 14013954,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          326
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.sg",
+        "id": 14013956,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          327
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData",
+        "id": 14013970,
+        "kind": "inductive",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          328
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.exists_weilLatticeDatum",
+        "id": 14015576,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          329
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.acts",
+        "id": 14015655,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          330
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.small",
+        "id": 14015656,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          331
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.ϖ_mem",
+        "id": 14015657,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          332
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.ϖ_ne",
+        "id": 14015670,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          333
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.smul_mem",
+        "id": 14015671,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          334
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.mul_mem",
+        "id": 14015776,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          335
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.bumpAny_k._proof_1_1",
+        "id": 14015778,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          336
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.x_mem",
+        "id": 14015784,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          337
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.act",
+        "id": 14015866,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          338
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.bumpAny_k._abel_1_3",
+        "id": 14015867,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          339
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.gram",
+        "id": 14015946,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          340
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.exists_separating_of_not_mem_lattice_coset",
+        "id": 14016175,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          341
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.r_mem",
+        "id": 14016555,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          342
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.bumpAny_k._abel_1_4",
+        "id": 14016556,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          343
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.bumpAny_k._abel_1_5",
+        "id": 14016557,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          344
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.right",
+        "id": 14016558,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          345
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.unit",
+        "id": 14016559,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          346
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.at_mem",
+        "id": 14016560,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          347
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.one_mem",
+        "id": 14016570,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          348
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.BA.LatData.nbhd",
+        "id": 14016571,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          325,
+          349
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.Tools_k.vacFix",
+        "id": 14016639,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          350
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.datum_k._simp_1_1",
+        "id": 14016878,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          351
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.datum_k._simp_1_4",
+        "id": 14016879,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          244,
+          352
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.tail_k._simp_1_1",
+        "id": 14017125,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          353,
+          354
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.tail_k._simp_1_4",
+        "id": 14017126,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          353,
+          355
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.tail_k._simp_1_6",
+        "id": 14017127,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          353,
+          356
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.absNe.match_1_1",
+        "id": 14017312,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          357,
+          358
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.absNe._simp_1_3",
+        "id": 14017313,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          357,
+          359
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.absNe._simp_1_4",
+        "id": 14017314,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          357,
+          360
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.absNe._simp_1_5",
+        "id": 14017315,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          357,
+          361
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.thetaLift_linear_in_schwartz",
+        "id": 14018033,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          362
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.thetaLift_weil_translate_equivariant",
+        "id": 14018485,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          363
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.aut_lift_k",
+        "id": 14018928,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          364
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.polStab_k",
+        "id": 14019344,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          231,
+          365
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.AbsIso",
+        "id": 14019505,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          366
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.real_part_k",
+        "id": 14019537,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          367
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.split_part_k",
+        "id": 14019657,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          155,
+          368
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.absIso._simp_1_1",
+        "id": 14019726,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          369,
+          370
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.absIso._simp_1_4",
+        "id": 14019727,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          369,
+          371
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.absIso._simp_1_7",
+        "id": 14019728,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          138,
+          369,
+          372
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.exists_linW_k",
+        "id": 14064447,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          237,
+          373,
+          374
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.split_formula_k",
+        "id": 14064649,
+        "kind": "thm",
+        "origin": "authenticated_role_frontier",
+        "classification": "value_explicit",
+        "finalRole": "value",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          237,
+          373,
+          375
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.GoodSeg",
+        "id": 6921378,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "other_explicit_expression",
+        "finalRole": "type",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          37,
+          38,
+          376
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.ExtDim",
+        "id": 11303514,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "other_explicit_expression",
+        "finalRole": "type",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          35,
+          377
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.ExtDepth",
+        "id": 11306865,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "other_explicit_expression",
+        "finalRole": "type",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          37,
+          378
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.GalStar.Row0",
+        "id": 13126182,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "other_explicit_expression",
+        "finalRole": "type",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          132,
+          133,
+          141,
+          379
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.TP.TLift_k",
+        "id": 14009159,
+        "kind": "def",
+        "origin": "authenticated_role_frontier",
+        "classification": "other_explicit_expression",
+        "finalRole": "type",
+        "finalKind": "explicit_const",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          131,
+          136,
+          137,
+          380
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.mk",
+        "id": 11298210,
+        "kind": "ctor",
+        "origin": "authenticated_role_frontier",
+        "classification": "package_required",
+        "finalRole": "package",
+        "finalKind": "package_member",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          381,
+          382
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.Zero.LLC.CuspT.rec",
+        "id": 11298219,
+        "kind": "rec",
+        "origin": "authenticated_role_frontier",
+        "classification": "package_required",
+        "finalRole": "package",
+        "finalKind": "package_member",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          381,
+          383
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    },
+    {
+      "request": {
+        "name": "UpperTheory.LiteratureTheorems.OpenImageCondition.rec",
+        "id": 11307289,
+        "kind": "rec",
+        "origin": "authenticated_role_frontier",
+        "classification": "package_required",
+        "finalRole": "package",
+        "finalKind": "package_member",
+        "pathIndices": [
+          0,
+          1,
+          2,
+          3,
+          64,
+          95,
+          384,
+          385
+        ]
+      },
+      "status": "NOT_EXPORTED_BY_EXACT_NAME"
+    }
+  ]
+}

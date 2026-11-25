@@ -43,3 +43,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-34-producer-frontier-20261124` | pass | 1065.55 | 2026-11-24T23:31:55Z | GPT | Authenticate the RH export and extract exact direct statement/body witnesses for the 34 newly root-connected theorem pro |
 | `rh-bounded-raw-scope-20261125` | pass | 2251.17 | 2026-11-25T00:49:19Z | GPT | Use one authenticated archive stream and a disk-capped compressed raw spool to extract 14 selected expression roots, pre |
 | `rh-post34-frontier-20261125` | pass | 1353.36 | 2026-11-25T01:12:49Z | GPT | Extract exact new direct value-linked UpperTheory and selected typeclass suppliers from the authenticated 34-producer fr |
+| `rh-post151-role-frontier-20261125` | pass | 3306.62 | 2026-11-25T04:06:56Z | GPT | Extract all 300 disjoint observed UpperTheory frontier declarations from the pinned authenticated RH export; retain stat |
