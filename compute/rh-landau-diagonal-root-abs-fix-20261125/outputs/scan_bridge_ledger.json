@@ -1,0 +1,119 @@
+{
+  "scans": [
+    {
+      "module": "RH32SingletonPoleData",
+      "root": "Deduction.poleData",
+      "visited": 2000,
+      "values": 1571,
+      "noValue": 429,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 522
+    },
+    {
+      "module": "RH32SingletonPoleData",
+      "root": "Deduction.lemmaL",
+      "visited": 2000,
+      "values": 1594,
+      "noValue": 406,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 121
+    },
+    {
+      "module": "RH32SingletonPoleData",
+      "root": "Deduction.rh32_principal_pole_data",
+      "visited": 2000,
+      "values": 1588,
+      "noValue": 412,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 253
+    },
+    {
+      "module": "RH32SingletonPoleData",
+      "root": "Deduction.rh32_right_of_window",
+      "visited": 2000,
+      "values": 1642,
+      "noValue": 358,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 386
+    },
+    {
+      "module": "RH33DirectLogWindow",
+      "root": "Deduction.zeroFree_of_rpow_window",
+      "visited": 2000,
+      "values": 1581,
+      "noValue": 419,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 248
+    },
+    {
+      "module": "RH33DirectLogWindow",
+      "root": "Deduction.rh33_original_interface",
+      "visited": 2000,
+      "values": 1585,
+      "noValue": 415,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 151
+    },
+    {
+      "module": "RH33DirectLogWindow",
+      "root": "Deduction.rh33_principal_interface",
+      "visited": 2000,
+      "values": 1642,
+      "noValue": 358,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 379
+    },
+    {
+      "module": "RH33DiagonalRoot",
+      "root": "Deduction.zeroFree_of_rpow_window",
+      "visited": 2000,
+      "values": 1581,
+      "noValue": 419,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 248
+    },
+    {
+      "module": "RH33DiagonalRoot",
+      "root": "Deduction.rh33_rh_of_diagonal",
+      "visited": 2000,
+      "values": 1636,
+      "noValue": 364,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 291
+    },
+    {
+      "module": "RH33DiagonalRoot",
+      "root": "Deduction.rh33_original_root_bridge",
+      "visited": 2000,
+      "values": 1663,
+      "noValue": 337,
+      "axioms": 3,
+      "missing": 0,
+      "pending": 199
+    }
+  ],
+  "prunes": [
+    {
+      "root": "Deduction.rh32_right_of_window",
+      "status": "NO_BINDER_REDUCTION"
+    },
+    {
+      "root": "Deduction.rh33_direct_windowU",
+      "status": "NO_BINDER_REDUCTION"
+    },
+    {
+      "root": "Deduction.rh33_rh_of_diagonal",
+      "status": "NO_BINDER_REDUCTION"
+    }
+  ],
+  "scope": "bounded; pending nodes retained, not complete Main graph"
+}

@@ -55,3 +55,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-landau-diagonal-root-20261125` | error | 72.54 | 2026-11-25T15:25:58Z | GPT | Pinned actual analytic import DAG: replay singleton pole data, direct log-window bridge and diagonal-window conditional  |
 | `rh-landau-diagonal-root-header-fix-20261125` | error | 252.4 | 2026-11-25T16:26:10Z | GPT | Retry exact RUN32/RUN33 analytic closure after actual CI header parser failure on commented Python import; retain origin |
 | `rh-landau-diagonal-root-elaboration-fix-20261125` | error | 217.06 | 2026-11-25T17:23:38Z | GPT | Replay the peer repaired singleton measurable-function equality, qualify audit scan/prune names, verify exact bounded sc |
+| `rh-landau-diagonal-root-abs-fix-20261125` | pass | 277.66 | 2026-11-25T18:07:41Z | GPT | Replay actual CI 45663493094 failure with seven absolute-value parser fixes in the pinned ephemeral direct-log-window ov |

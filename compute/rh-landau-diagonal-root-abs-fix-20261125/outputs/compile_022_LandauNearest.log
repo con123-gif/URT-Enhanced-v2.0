@@ -1,0 +1,2 @@
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean:57:87: warning: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean:96:19: warning: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead

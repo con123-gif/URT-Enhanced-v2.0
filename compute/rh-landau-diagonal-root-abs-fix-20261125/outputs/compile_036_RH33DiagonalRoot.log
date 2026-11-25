@@ -1,0 +1,39 @@
+RH33DiagonalRoot.lean:172:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH33DiagonalRoot.lean:173:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH33DiagonalRoot.lean:174:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+RH33DiagonalRoot.lean:171:75: warning: Unused tactic linter: `done` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH33DiagonalRoot.lean:172:4: warning: Unused tactic linter: `(rh_auto_frontier 3; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH33DiagonalRoot.lean:173:4: warning: Unused tactic linter: `(rh_auto 3; done)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RH33DiagonalRoot.lean:174:4: warning: Unused tactic linter: `exact Formalism.VW.rh_of_right (rh33_right_of_diagonal h)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.zeroFree_of_rpow_window visited=2000 values=1581 noValue=419 axioms=3 missing=0 pending=248
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.rh33_rh_of_diagonal visited=2000 values=1636 noValue=364 axioms=3 missing=0 pending=291
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Deduction.rh33_original_root_bridge visited=2000 values=1663 noValue=337 axioms=3 missing=0 pending=199
+NO_BINDER_REDUCTION Deduction.rh33_rh_of_diagonal
+'Deduction.rh33_diagonal_of_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh33_fixed_window_of_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh33_right_of_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh33_rh_of_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.rh33_original_root_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]

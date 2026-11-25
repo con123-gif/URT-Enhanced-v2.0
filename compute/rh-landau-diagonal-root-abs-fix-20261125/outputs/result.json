@@ -1,0 +1,64 @@
+{
+  "status": "CONDITIONAL_DIAGONAL_WINDOW_TO_RH_ONLY",
+  "axioms": {
+    "Deduction.rh32_principal_pole_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Deduction.rh33_diagonal_of_original": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Deduction.rh33_fixed_window_of_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Deduction.rh33_original_root_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Deduction.rh33_principal_interface": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Deduction.rh33_rh_of_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Deduction.rh33_right_of_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Deduction.zeroFree_of_rpow_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scan_lines": [
+    "PRUNED RHPruneUnused: 4 -> 2 binders; original bridge checked",
+    "PRUNED RHPruneDependent: 3 -> 2 binders; original bridge checked",
+    "NO_BINDER_REDUCTION RHPruneNoDrop",
+    "ROOT_SCAN root=RHPruneUnusedReduced visited=1 values=1 noValue=0 axioms=0 missing=0 pending=0",
+    "ROOT_SCAN root=Deduction.poleData visited=2000 values=1571 noValue=429 axioms=3 missing=0 pending=522",
+    "ROOT_SCAN root=Deduction.lemmaL visited=2000 values=1594 noValue=406 axioms=3 missing=0 pending=121",
+    "ROOT_SCAN root=Deduction.rh32_principal_pole_data visited=2000 values=1588 noValue=412 axioms=3 missing=0 pending=253",
+    "ROOT_SCAN root=Deduction.rh32_right_of_window visited=2000 values=1642 noValue=358 axioms=3 missing=0 pending=386",
+    "NO_BINDER_REDUCTION Deduction.rh32_right_of_window",
+    "ROOT_SCAN root=Deduction.zeroFree_of_rpow_window visited=2000 values=1581 noValue=419 axioms=3 missing=0 pending=248",
+    "ROOT_SCAN root=Deduction.rh33_original_interface visited=2000 values=1585 noValue=415 axioms=3 missing=0 pending=151",
+    "ROOT_SCAN root=Deduction.rh33_principal_interface visited=2000 values=1642 noValue=358 axioms=3 missing=0 pending=379",
+    "NO_BINDER_REDUCTION Deduction.rh33_direct_windowU",
+    "ROOT_SCAN root=Deduction.zeroFree_of_rpow_window visited=2000 values=1581 noValue=419 axioms=3 missing=0 pending=248",
+    "ROOT_SCAN root=Deduction.rh33_rh_of_diagonal visited=2000 values=1636 noValue=364 axioms=3 missing=0 pending=291",
+    "ROOT_SCAN root=Deduction.rh33_original_root_bridge visited=2000 values=1663 noValue=337 axioms=3 missing=0 pending=199",
+    "NO_BINDER_REDUCTION Deduction.rh33_rh_of_diagonal"
+  ]
+}

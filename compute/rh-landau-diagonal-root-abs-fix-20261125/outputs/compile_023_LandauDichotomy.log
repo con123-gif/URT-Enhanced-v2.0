@@ -1,0 +1,20 @@
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:51:6: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:76:51: warning: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:25:5: warning: Variable name `hle` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hle
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:25:44: warning: Variable name `hθσ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hθσ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

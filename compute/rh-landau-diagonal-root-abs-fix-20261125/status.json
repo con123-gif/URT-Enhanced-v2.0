@@ -1,0 +1,257 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 277.66,
+  "tail": "[attempted 7816/8690 = 89%, 871 KB/s], Decompressed: 1923\rDownloaded: 7910 file(s) [attempted 7910/8690 = 91%, 571 KB/s], Decompressed: 1923\rDownloaded: 7925 file(s) [attempted 7925/8690 = 91%, 144 KB/s], Decompressed: 1923\rDownloaded: 8009 file(s) [attempted 8009/8690 = 92%, 76 KB/s], Decompressed: 1923\rDownloaded: 8100 file(s) [attempted 8100/8690 = 93%, 3485 KB/s], Decompressed: 1923\rDownloaded: 8181 file(s) [attempted 8181/8690 = 94%, 1090 KB/s], Decompressed: 1923\rDownloaded: 8268 file(s) [attempted 8268/8690 = 95%, 576 KB/s], Decompressed: 1923\rDownloaded: 8373 file(s) [attempted 8373/8690 = 96%, 360 KB/s], Decompressed: 1923\rDownloaded: 8474 file(s) [attempted 8474/8690 = 97%, 4914 KB/s], Decompressed: 1923\rDownloaded: 8576 file(s) [attempted 8576/8690 = 98%, 255 KB/s], Decompressed: 1923\rDownloaded: 8629 file(s) [attempted 8629/8690 = 99%, 192 KB/s], Decompressed: 1923\rDownloaded: 8685 file(s) [attempted 8685/8690 = 99%, 168 KB/s], Decompressed: 1923\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 332 KB/s], Decompressed: 1923\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 332 KB/s], Decompressed: 1923\nDecompressed 8690 file(s)\nAlready decompressed 8690 file(s)\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.CharFamily 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow 0\nRHProofTermPrune 0\nRHRecursiveReductionFixed 0\nRHRecursiveReductionAutoV3 0\nRH32SingletonPoleData 0\nDevelopment.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow 0\nRH33DirectLogWindow 0\nFormalism.GammaFactorNonvanishing.RhOfRight 0\nRH33DiagonalRoot 0\nConditional diagonal analytic bridge checked; arithmetic premise not proved.\n",
+  "id": "rh-landau-diagonal-root-abs-fix-20261125",
+  "question": "Replay actual CI 45663493094 failure with seven absolute-value parser fixes in the pinned ephemeral direct-log-window overlay; preserve strict axiom, scan and bridge checks. Conditional RH interface only.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_diagonal_root_native_abs_fix.sh --out {out}",
+  "utc": "2026-11-25T18:07:41Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "f41c3be3d8ef2c727333f09ceb42b76bb503bb53",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45670987597",
+  "outputs_committed": [
+    {
+      "path": "actual_overlay_blobs.txt",
+      "bytes": 123,
+      "sha256": "75ff4fbfe998ec69380d3cb108adaaead871b5289bec74e21b4d611fb4c66285"
+    },
+    {
+      "path": "candidate_blob.txt",
+      "bytes": 41,
+      "sha256": "bae69a15f02983766cd4c8632248306d1b2907cc2e99e990e344a72fcd68ff93"
+    },
+    {
+      "path": "compile_000_CharFamily.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_001_LandauZeroFreeCriterion.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_002_LogDerivLocal.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_003_LFunctionConj.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_004_CharFamilyLFunctionNeZeroOfOneLeRe.log",
+      "bytes": 434,
+      "sha256": "d7481925e86f065de72be200ad3e0e0ac1177a1c0ec161f984f589bf0ba5d084"
+    },
+    {
+      "path": "compile_005_MellinRamp.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_006_mellinGchiOfNeOne.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_007_mellinGchiModOne.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_008_measurableGchi.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_009_GchiGrowth.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_010_GchiConj.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_011_poleData.log",
+      "bytes": 696,
+      "sha256": "678cd3fdc4a75932ad5eea5b1ed5c95e8e1c08801ddf709b79286d44e5d78289"
+    },
+    {
+      "path": "compile_012_LandauCauchy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_013_LandauPoleAsym.log",
+      "bytes": 397,
+      "sha256": "e5dc5b26af41542d6cb88c8f7ada03a4a7e5e2528fb5f5dfbf3704963c00ac66"
+    },
+    {
+      "path": "compile_014_kernelIntegral.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_015_landauTails.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_016_LandauKernelMax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_017_landauWindowIneq.log",
+      "bytes": 574,
+      "sha256": "fde4eeebb1c0228ef7ceba2b49acbcdb40173d7f9921792d6391e7ef382c9683"
+    },
+    {
+      "path": "compile_018_LandauPoleReLe.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_019_IteratedDerivLaplace.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_020_LandauCoeff.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_021_LandauFinite.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_022_LandauNearest.log",
+      "bytes": 350,
+      "sha256": "e978ff53ec034309c1fc5e72772725f4e6ded09a619bc2cc100ee552d9103480"
+    },
+    {
+      "path": "compile_023_LandauDichotomy.log",
+      "bytes": 1375,
+      "sha256": "7ab66a476522931d57e08f0877f3a96fe90e93f7a2e473a14dfdcd452be9ff37"
+    },
+    {
+      "path": "compile_024_LandauGrowthContra.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_025_landauWindow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_026_WindowHypUOfWindowHyp.log",
+      "bytes": 404,
+      "sha256": "592c20a8fb135576feff2b56eb529199130bc2bad57ec62c2922b3cc094063ec"
+    },
+    {
+      "path": "compile_027_lemmaL.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_028_WindowHypOfRpow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_029_RHProofTermPrune.log",
+      "bytes": 491,
+      "sha256": "345110d43a273db20d45e099991685e83aaddb8fda5dd225129265df26601a9a"
+    },
+    {
+      "path": "compile_030_RHRecursiveReductionFixed.log",
+      "bytes": 560,
+      "sha256": "f7a065d17a3783cb720d0ee0dc82da24ff12da4ad16afc460dc502c7c74e1b71"
+    },
+    {
+      "path": "compile_031_RHRecursiveReductionAutoV3.log",
+      "bytes": 638,
+      "sha256": "4feb28c02814d70bddb2d315e99461a3a914666177d863035c86c472d689c1da"
+    },
+    {
+      "path": "compile_032_RH32SingletonPoleData.log",
+      "bytes": 2256,
+      "sha256": "364fa4d76076e095b4463d5527cab29ef16dba447cb9072fe3a27a3aae191a8a"
+    },
+    {
+      "path": "compile_033_ZeroFreeOfRpowWindow.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_034_RH33DirectLogWindow.log",
+      "bytes": 2458,
+      "sha256": "7cbe3bd843541a19fde3689ba8f68983faf079cc532d4878bf01ea97f7cd0811"
+    },
+    {
+      "path": "compile_035_RhOfRight.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compile_036_RH33DiagonalRoot.log",
+      "bytes": 2222,
+      "sha256": "52c12f9d18e08d7b29e0a3644127904d77c8add9107367521e81b36a3f5c3013"
+    },
+    {
+      "path": "import_dag.json",
+      "bytes": 17955,
+      "sha256": "9252a80c4094145869e93fd6d1eca4aad36eef018a0efb30b353f831c1a5aceb"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 10014,
+      "sha256": "47af7bf592e167292f248def157ccfb0e7f17d11b79775d5e42fe4b686521522"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    },
+    {
+      "path": "result.json",
+      "bytes": 2659,
+      "sha256": "0f1b3a7043f7380a9f305e987960b36443afadf7dadbdd5e7fc9e01e30dc2d40"
+    },
+    {
+      "path": "scan_bridge_ledger.json",
+      "bytes": 2667,
+      "sha256": "bfc96285b20dcf1398c3354ad55c737b08bf69e130f4185cad053a4afa1c38c2"
+    }
+  ],
+  "outputs_artifact_only": []
+}
