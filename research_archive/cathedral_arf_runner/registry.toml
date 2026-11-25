@@ -3397,3 +3397,12 @@ run = "node research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/r
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-bounded-raw-scope-20261125"
+question = "Use one authenticated archive stream and a disk-capped compressed raw spool to extract 14 selected expression roots, preserve raw witnesses and independently check de Bruijn scope; explicitly mark late proof roots unresolved if storage prevents full extraction. Not kernel replay."
+run = "node research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run18_bounded_raw_scope.mjs --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
