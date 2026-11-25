@@ -1,3 +1,31 @@
+# Binding resource update — compiled dependency graph accelerator (25 November 2026)
+
+User approved proceeding with the external graph as an acceleration aid for the existing pinned reconstruction, not a replacement proof. All 15 lanes continue the existing shared frontier, ten-page cap and verification rules. Dependency/kernel/acceleration lanes coordinate one ingestion, not 15 downloads. Other lanes use the resulting candidate supplier map when available, without waiting.
+
+## External evidence and provenance
+
+- Original X visualizer: https://bosnadev.com/lab/riemann/app (not accessible in this session). Prefer the independently published declaration-level dataset at https://proofsandreasons.io/rh-graph.html .
+- Direct RH-only dataset: https://photos.proofsandreasons.io/alp-graph/rh/alp-declaration-graph-used-by-rh.json.gz (57 MB compressed, 450 MB expanded). Published SHA256: 82c88d25d909a1399c754b87ce298e1939ab0908aeb4766fdac8a57387c71dc5 . Reported 806982 reachable declarations, 8197610 links, 256458 other declarations outside this RH-only projection, 943 structural clusters. These are external reported counts, not our executed results.
+- Build provenance: https://proofsandreasons.io/rh-oleans.html reports source archive SHA256 9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc, Lean 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Mathlib 0df444a360eaa60ab8c11dca51a86af692955474. These toolchain pins agree with ours; authenticate archive equivalence against upstream mirror 40e56bab026552e089d7afcfeff08d2defb9c005 and source/owner records before accepting matches. Source hash agreement and graph hash alone do not establish semantic equivalence.
+- Graph folds generated helpers into owner declarations, excludes Lean/core/Mathlib edges, and distinguishes uses_in_signature and uses_in_body but not actual instantiated context or proof-term role. Preserve our native KernelGraphExport_v3 and role/fingerprint ledgers as controlling evidence. Never retire a native obligation on external absence. Cluster membership, centrality and language-model surprise are only navigation hints.
+
+## Next executable step (one shared ingestion)
+
+In a network-enabled compute environment, outside tracked Git files:
+
+```sh
+set -eu
+curl --fail --location --retry 3 -o rh-used.json.gz https://photos.proofsandreasons.io/alp-graph/rh/alp-declaration-graph-used-by-rh.json.gz
+printf '%s  %s\n' 82c88d25d909a1399c754b87ce298e1939ab0908aeb4766fdac8a57387c71dc5 rh-used.json.gz | sha256sum -c -
+gzip -t rh-used.json.gz
+```
+
+Use a streaming parser or compact integer CSR storage (do not materialize millions of Python edge objects unnecessarily). Read the published meta and nodes schema; require unique id, declaration name/file/line identity, valid references, separate signature/body edges, unique root riemannHypothesis and root reachability. Record actual counts per edge role and overlap separately; compare the publisher's link definition before interpreting a count mismatch. Compute root closure, shortest depth, reverse fan-in and SCC condensation if necessary in O(V+E) after ingest. Do not claim exact descendant counts or proof search are linear. Export a compact shortlist for the existing frontier (zeroFreeAll_of_topG, shape_closed_link_n_of_green, formB, zeroFree_of_rpow_window, goal_of_shape_of_hyps, VWinAt producers and same-host joint-loss suppliers). Resolve full names and source paths against native pinned blobs; suffix collisions remain unresolved. Include candidate IDs, source path/line, signature/body roles, depth, direct consumer count, and unmatched records. Do not import the binary or external proof as a new theorem. Compare with our native expanded-owner ledger, log missing roles as gaps, and prioritize actual caller substitution and native replay. Restrict URT ranking to admissible ready candidates; compare identical inputs with ordinary fan-in/critical-path ordering.
+
+Status: SOURCE IDENTIFIED / DOWNLOAD BLOCKED. Current session attempted curl and received DNS resolution failure; web reader cannot parse application/gzip. No bytes ingested, graph counts not independently recomputed, no proof obligation closed. Next action: checksum-verified download from a network-enabled existing runner/worker; preserve existing workflows and registry policy. If unavailable, use native exporter and the public graph as a read-only locator. Do not block the ongoing mathematics. No schedule changes.
+
+---
+
 # Binding update — unify before expanding (25 November 2026)
 
 User-approved instruction for ALL 15 RH research lanes. This is an extension of the critical-frontier convergence and verification-first instructions below, not a new independent RH project. Keep all lane assignments, existing schedules, pinned source, protected workflows, and ten-page correctness requirement unchanged.
