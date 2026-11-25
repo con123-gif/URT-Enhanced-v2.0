@@ -2,6 +2,8 @@
 Living human-readable reconstruction, 25 November 2026. Pin: leanprover-community/riemann-hypothesis @ 40e56bab026552e089d7afcfeff08d2defb9c005.
 **Status: incomplete reconstruction, not an independently verified proof of RH.** The source-derived final equation, analytic implication and central finite averaging calculation are given here. The upstream arithmetic/geometric construction of the hypotheses remains to be fully translated and authenticated. No independent Type II research is required for this task.
 
+**Editorial constraint:** final proof must fit within ten normally formatted pages, including essential references and proof appendices. This working Markdown draft has not been paginated or completed. Detailed machine audit material stays in the repository; essential mathematical steps must remain in the readable proof.
+
 ## The equation
 
 Write Λ(n)=log p when n=p^j for a prime p and integer j>=1, and zero otherwise. Let γ denote Euler's constant. The central statement of the pinned proof, specialized to modulus one, is
