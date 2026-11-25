@@ -3488,3 +3488,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-landau-diagonal-root-20261125"
+question = "Pinned actual analytic import DAG: replay singleton pole data, direct log-window bridge and diagonal-window conditional RH root with native scans, pruning and axiom checks; no Main import and no claim of proving the arithmetic premise."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/run_diagonal_root_native.sh --out {out}"
+timeout_minutes = 120
+requested_by = "GPT"
+claim = "independent"
