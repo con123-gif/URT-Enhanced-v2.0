@@ -484,3 +484,24 @@ inverse, then derive the actual p^(4δ) radius at FrameTheorem/LongGap
 and connect the normalized balanced-row length bound to TwistForRows.
 Continue outstanding A/B primitives without repeating their already
 integrated support/mass suppliers. No worker schedule or protected change.
+
+## Continued after 34b26ecb — actual quantitative radius and long-gap input
+
+Derived the connected radius lemma in COMPACT_CRYSTALLINE_RADIUS.md:
+normalize B0 over the FIXED coefficient field, integral cyclotomic
+coefficient recursion, factorial denominator j+v_p(j!), convergent
+power-series evaluation at z^(p^l)/p² under 3e≤p^l, and exact identification
+by z-adic separation without assuming the remainders decay. Then two
+common clearings p^(2δ) and the identity
+p^(4δ)x=(p^(4δ)I−N_−N_+)x+N_−(N_+x)
+give the precise natural-residue span with eA≤p^lδ. Same matrices
+supply FrameTheorem's form differences and the earlier audited LongGap
+coefficient/projection correction. The quantitative input is now
+human-derived from listed chart/ring suppliers, not left as an unnamed
+radius assumption. Independent review is still pending. No new finite
+diagnostics, native run or proof-completion claim.
+
+RESUME HERE: normalized RowBalanced length and final Ribet payment
+with the exact scalar/mirror/tame witnesses; separately audit the new
+radius recursion and fixed-field normalization. No re-derivation of
+already audited cup algebra, sparse cut or global star endgame.
