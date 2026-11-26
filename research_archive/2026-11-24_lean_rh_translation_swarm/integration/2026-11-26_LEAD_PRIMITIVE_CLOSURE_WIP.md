@@ -1211,3 +1211,46 @@ and the exact finite translation average. Character RUN61 describes
 the Schur step but retains those upstream facts. Check literature and
 existing notes before reconstructing them. C triangle/odd-Sha and B
 Rallis test-space/frontier still need independent completion/audit.
+
+### 26 November — theta space and exact vacuum-expansion constant
+
+Published finite cocycle as a0c673a1b369c89f508eee658771e9a5595e373c,
+receiving success=true after rebasing workers7229fc7e and154f74d8.
+Read both full bodies; Kummer audit agrees with our NEGATIVE transfer
+sign and corrects kernel worker RUN29 prose, not native Lean. Integrated
+its exact three-term/local-condition scope. Chart RUN61 extends/reviews
+our earlier coordinate notes; retained actual Kummer chart and Amax
+foundations. Independently opened Benois author PDF and viewed printed
+p6: Theorem1.1.8(iii) indeed allows ANY CLOSED subgroup; at Qp its
+fixed C_p field is completion of algebraic fixed field. Applied only
+after the source identifies the chart fixer with the increasing union.
+No new theorem about arbitrary abstract group homomorphisms inferred.
+
+Avoided redoing existing Wiener sampling: structure RUN54 has the
+full difference-set overlap proof and definite period convergence.
+It retains the bounded global theta functional itself. The separate
+theta-space dimension/irreducibility was not supplied (rg checked).
+New COMPACT_THETA_SPACE_AND_VACUUM_EXPANSION.md derives it explicitly:
+native B=H+Q, H/pi has Riemann form E; integral polarization basis;
+standard D-periodic equations; full convergent Fourier basis indexed
+mu modulo D. Positive Im Omega gives normal convergence, dimension
+h0=det D, relative index h0². Clock/shift dual translations span every
+elementary matrix. Rank-one trace gives exact Schur average with h0,
+not h0². Apply to actual delta-scaled Fock lattice and SAME global
+theta model. Product-formula commutators/self-dual finite character give
+delta y integral; NL# subset L; T=L#/NL# has cardinal N^(2fn).
+VacuumExpansion multiplier is natural h0 and cardinal for delta=M is
+M^(4fn), matching the fixed p-unit frame caller. Main integrated this
+supplier and adjusted live OPEN ledger, preserving global-model/CM/
+jet/safety/Rallis/odd-Sha/triangle/audit needs. No full human RH proof.
+
+Checks: source/normalization/Fourier derivation and git diff --check.
+No new Lean or scalar execution; no claim of independent audit for
+these lead derivations. Protected workflows/guards remain unchanged.
+RESUME HERE: publish this checkpoint. Remaining actual theta global
+model is ThetaFunctional.exists_isThetaFunctional and its Poisson/
+duality normalization; reuse already supplied Wiener sampling.
+In parallel scheduled C workers own actual chart existence, triangle
+and odd-Sha; B retains precise Rallis and local supplier audit.
+Do not repeat the now explicit finite group law, general frame,
+theta dimension/Schur average or conditional analytic endgame.
