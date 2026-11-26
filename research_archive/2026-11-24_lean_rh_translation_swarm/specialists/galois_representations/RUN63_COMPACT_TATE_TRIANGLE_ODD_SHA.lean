@@ -165,8 +165,9 @@ factors have orders ≥2. To see these points detect all nu,
 induct on the ell-power killing x. If ell^k x=0 and all
 evaluations vanish, apply induction to Mx (ell divides M);
 then Mx=0. On G_F the action on M-torsion is trivial, because
-cyc mod ell² is trivial there and the prime-to-ell factor of M
-is a unit. Restriction of x is therefore a homomorphism killed
+G_F fixes mu_M, so cyc mod ell^(2+v_ell(N)) is trivial
+there; the prime-to-ell factor of M is a unit. (Using only
+ell² would not suffice when ell divides N.) Restriction of x is therefore a homomorphism killed
 by M, unramified off ell, and detected by the chosen generators.
 It vanishes on G_F, and the coset representatives complete
 the argument. This recovers the actual detector at every nu.
