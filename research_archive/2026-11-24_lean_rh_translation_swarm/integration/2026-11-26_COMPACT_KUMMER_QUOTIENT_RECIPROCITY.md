@@ -24,6 +24,30 @@ Conversely assume F totally complex. J/H is finite (the preceding generation equ
 
 This is precisely Xi's needed direction and also its converse. No counting estimate or restriction to prime m. The standard CFT input used is reciprocity plus existence/character correspondence for open finite-index idele quotients with principal ideles in the kernel; no new theorem about Selmer groups is assumed. For m=1 the quotient and characters are trivial. This argument uses total complexity only here and in the realization below, not for the vanishing implication of the native theorem.
 
+### Established-theorem applicability checked at integration
+
+The primary statements were opened in Milne, *Class Field Theory*,
+version 4.03, V Theorems 5.3 and 5.5, printed p. 179, and VII Appendix A
+Theorem A.3, printed p. 226:
+<https://www.jmilne.org/math/CourseNotes/CFT.pdf>. For the finite-idele
+quotient here, multiply H by all archimedean components to obtain an open
+finite-index subgroup of the full ideles containing the diagonal F^*.
+Its quotient is exactly J/H. F is totally complex, so this introduces
+no real sign condition. The existence theorem and reciprocity identify
+its finite characters with the required Galois characters; Kummer applies
+since mu_m is contained in F and m>0. Local mth powers are open of finite
+index in each characteristic-zero completion, so openness is checked,
+not inferred from abstract finite index. Outside S, m is a unit and the
+tame valuation formula applies. The full source definitions and the
+corestriction/trivialization sign were read at integration. This checks
+the stated standard-theorem replacement and its guards; independent
+audit of the complete combined Selmer caller remains pending. The source
+itself proves existence later from Kummer counting; the human replacement
+uses this independently established published theorem, not that later
+native proof as a circular input. Inverting the local Artin convention
+changes every character evaluation by the same sign and leaves the
+annihilator and principal decomposition unchanged.
+
 ## 2. Conjugation factors and necessity (native n and L)
 Fix reps r_delta of D. The original auxiliary primes v_i split completely in F: outside N inertia lies in U and the selected Frobenius lies in U, so the whole decomposition group lies in U. The lifted family w_{i,delta} is exactly the primes over them, with chosen places r_delta^{-1} A_i, Frobenius r_delta^{-1} phi_i r_delta, and inertia generator r_delta^{-1} gamma_i r_delta. In particular all pairs index distinct primes, with the same residue norm. Set chi(delta)=cyclotomic action mod m of r_delta (well defined and a unit). Write ord for additive valuation with uniformizer +1, i.e. minus native valuation.log.
 

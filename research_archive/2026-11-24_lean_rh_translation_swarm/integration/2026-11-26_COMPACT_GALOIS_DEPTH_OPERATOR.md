@@ -137,13 +137,15 @@ the number of summands in (1).
 
 ## 4. Lift the scalar operator to the actual Kisin point
 
-First justify the field of values at **every** level. Use the frame basis
-\(n_j\), so \(A_{\inf}\mathcal N=\sum_jA_{\inf}n_j\),
-\(\tau^h(A_{\inf}\otimes T)\subset A_{\inf}\mathcal N\), and
-\(E^h\varphi\mathcal N\subset\mathcal N\). The last inclusion
+First justify the field of values at **every** level. Distinguish
+\(N_0=\texttt{kisinModule}\), \(M=\texttt{kisinAinf}\), and
+\(\mathcal N=\texttt{kisinLoc}\). Use the finite frame basis
+\(n_j\) of \(N_0\), so \(M=\sum_jA_{\inf}n_j\),
+\(\tau^h(A_{\inf}\otimes T)\subset M\), and
+\(E^h\varphi N_0\subset N_0\). The last inclusion
 implies that \(\varphi^a n_j\) has invariant-form values in
 \(\mathcal K_0\): multiply it by the nonzero scalar
-\(\prod_{b<a}(\varphi^bE)^h\in S\) to put it in \(\mathcal N\).
+\(\prod_{b<a}(\varphi^bE)^h\in S\) to put it in \(N_0\).
 For \(x\in\mathcal N\), choose nonzero \(r\in A_{\inf}\) with
 \(r\varphi^{-a}x\in A_{\inf}\otimes T\), and write
 \(\tau^h r\varphi^{-a}x=\sum_jt_jn_j\). After applying

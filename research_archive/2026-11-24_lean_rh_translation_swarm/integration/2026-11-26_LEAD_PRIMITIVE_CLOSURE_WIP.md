@@ -724,3 +724,42 @@ RESUME HERE: audit Taylor, valuation/zero-average and retraction
 contracts together, then complete the safety/Ext cup bridge and integrate
 the three exponent branches under their same third-side hypotheses.
 A/B and global reciprocity/comparison suppliers remain separate.
+
+
+### 26 November — same-caller integration and frame/localization correction
+
+Depth checkpoint 3e2dbd91dbac40711045cfc08f3b55cc66f1dac7 was published
+and fetched back. During self-review corrected a notation error in its
+all-level value-field proof: M=kisinAinf=A_inf N0 has a finite frame,
+N0=kisinModule, whereas N=kisinLoc is localized. The argument clears
+r phi^-a x into the integral lattice and expands tau^h times that vector
+in M. The finite-height relation belongs to N0. It never asserts the
+localized N has a finite A_inf basis. The main proof already says frame
+basis and is unchanged mathematically by this notation repair.
+
+Read full latest peers 6328abd9, 46483cc0, 3392d9c7, 12c745a4,
+29eb0e94, 38418a9b, and actual RootLemma/ElementaryDivisors bodies.
+Integrated their connected proofs at callers in the main manuscript:
+A full root multiplicity lemma -> flag count/deep factors -> exact
+Hecke pairing/index composition; B splitting/circle normalization and
+Fischer decay -> existing Schur/Bessel chain; C one block lattice and
+unique congruence witness -> exact comparison period. No separate
+optimal witnesses combined. Retained marked hY/HeckeSizes, B absolute
+unfolding/Siegel-Weil, and comparison size/detection obligations.
+
+For Kummer peer 6328abd9 checked Milne CFT V.5.3/V.5.5 and VII.A.3
+in primary text. Full-idele lift of H is open finite index and contains
+principal ideles; F totally complex removes real sign conditions;
+mu_m subset F, m>0 and m|N check Kummer/tame guards. Appended this
+precise established-theorem bridge to the existing note and integrated
+the simultaneous corestriction/trivialization formula in the manuscript.
+Whole caller independent audit still pending. No native closure claim.
+
+Latest primitive state receipt re-read: status error, six named B/C
+probes standard axioms, A module timeout 124, all_requested_checks_ok
+=false. No new Lean or redundant finite diagnostic, no protected edits.
+RESUME HERE: audit the new Hodge/rank/depth chain with the corrected
+N0/M/N distinction. Continue actual marked hY and level/covariance
+suppliers, B sharp absolute unfolding and one-vector Siegel-Weil, and
+C safety/Ext plus comparison size/detection. Do not repeat supplied
+root lemma, flag volume, tame multiplier or scalar Ribet payment.
