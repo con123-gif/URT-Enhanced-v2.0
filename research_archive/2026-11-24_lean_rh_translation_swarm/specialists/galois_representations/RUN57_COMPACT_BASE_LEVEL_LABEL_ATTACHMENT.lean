@@ -1,0 +1,256 @@
+import New.Selmer.BaseLevelOfLabel
+import Mathlib.Tactic
+
+/-!
+RUN57 — exact base-level integrality and local label attachment.
+26 November 2026. Galois arithmetic lane. SOURCE-MATCHED HUMAN derivation;
+native probes prepared, NOT compiled. No new root kernel obligation closed.
+Compact pin lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207,
+grh-compact/src; Lean 4.35.0 / Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679.
+Credit Alpöge, Sernau, Anthropic collaborators and Claude.
+Mission blob 3ea3bdf5c928af39e24a6837eafa3dee9bd409bb,
+manuscript d185408f9b17703c84b1584444bfde1f65d57e74.
+Resume RUN56 a099cd79264134ce54eecbd751d55551882a1b7e.
+Peer 1300ab28 (theta level Fourier index), a23edb6f (B conjugated
+minors), 05e90181 (dual datum), 2fc26b53 (comparison scalar guard);
+distinct from this C supplier. Retain 727c85e5 label-specific cut.
+
+Source ledger, paths relative to compact src:
+ New/Selmer/BaseLevelOfLabel.lean 3b0eff13f173100f929210c4004753e9f091d8df:
+  exists_baseLevel, all three components
+ Lib/Adelic/CuspForms/BaseLevel.lean 8f40270007336cd115be6036dd944cebeb101787:
+  BaseLevel, ellIntegralForms, formsOfLevel, Eigensystem
+ Lib/LocalGL/Green/LabelIdempotents.lean 15901cb83be961651cb7d38dee539d839dd9d91a:
+  labelChar_mul_det, tupleIdem, isCentralProj_tupleIdem
+ New/Trace/LabelRigidity.lean 029e19bd0d69fc081a6edb9feb2702260134e0d1:
+  Data.hasParahoricType_chosenGLRep
+ Lib/GaloisRep/LocalGlobal/ParahoricTypeLabel.lean 5317c6e02feaf83b33758db27d31fc311dba5735:
+  HasParahoricType, HasProductLabel, HasParahoricType.hasProductLabel
+ Lib/LocalGL/Shintani/ShintaniLifting.lean 75109cd7c4197cf66140c1f2c4c542153a5a0d30:
+  sum_evalGL_prod_eq_zero_iff
+ Lib/GaloisRep/LocalGlobal/LabelCompatibility.lean ebab5c28368e0178e180ee25fa13934dfa01bcdd:
+  Attached.isLabelledAt
+ New/Selmer/LabelledColumns.lean 3f0ed49bf089805f3269d5161130526dfcf1a038:
+  isLabelledColumn_of_hasProductLabel, IsLabelledColumn.twist_avatar
+ New/Selmer/DenominatorBound.lean 5889d96fe1a6ad7926e0df09a7d183232f91c534:
+  choose _ B sp j co using exists_baseLevel hc hq.1;
+  subsequent cp, xi, ribet_columns callback and integral-form payment.
+
+1. One level space and one fixed idempotent, not separate levels per
+eigensystem. Use the native O, apt label c, chosen auxiliary Q and ell.
+Let G=O.ChosenGL r, e=tupleIdem r c, H=D.chosenGroupOrder.
+On the supported local level representation W let p=rho(e); the
+central idempotent gives p^2=p. The native injection j from O.FormV
+to W comes from the level character and reduction identity and
+satisfies j-form(p)=(tupleProj O c y).toSmoothForm. Choose Y to be
+the image in the ambient forms of ker(p-1) in W. Since p is
+idempotent, im(p)=ker(p-1): p(pv)=pv; if pv=v then v is in im(p).
+If T commutes with the supported Kf translations, it preserves
+the character level and commutes with rho(e) by linearity of the
+finite group-algebra sum, hence preserves this SAME Y. Off-level
+maximal compact fixes the embedded projected forms by the native
+level splitting; therefore the image of tupleProj lies in
+B.formsOfLevel ![]. The level is open by isOpen_levelOf. The
+stabilizer divisibility comes from Data.card_classAut_dvd_chosenGroupOrder,
+with the rank guard supplied by h.card_le. These are not inferred from
+an arbitrary projection. This constructs the first component sp of
+exists_baseLevel and the needed BaseLevel structure.
+
+2. Exact coefficient payment before any norms. Write e=sum_g e_g g
+and u_g for the finite-order determinant-character factor in the
+native chosenGLRep formula; L_g is its lifted right translation.
+The actual coefficient identity is
+
+  H (tupleProj O c)y = (H/|G|) sum_g (|G| e_g) u_g L_g y.
+
+H/|G| is an integer by Data.card_GL_dvd_chosenGroupOrder, using the
+actual apt rank and HasLogBound guards. For the central projection e,
+IsCentralProj.isChar (Lib/LocalGL/Green/MackeyFormula.lean) says
+g -> |G| e_g is a genuine finite group character. Each character
+value is a sum of roots of unity, hence integral at the selected
+embedding iota_ell. The factor u_g has finite order so is a unit.
+The lifted translation L_g preserves integralAbove because it is
+in the indicated compact local level, including the ell-place
+condition checked in the native formula. Thus each summand, with
+the integer H/|G|, belongs to ellIntegralForms whenever y does.
+Closure under finite sums proves the EXACT component j:
+H * tupleProj sends integral forms into integral forms. No triangle
+inequality loss proportional to |G|, and no assertion that tupleProj
+alone preserves integrality. Negative example over Z_2: on Z_2^2
+the swap-average (I+swap)/2 sends (1,0) to (1/2,1/2). Multiplication
+by 2 is necessary for this projection. This is a conceptual control,
+not a computation on the native level.
+
+3. Parahoric labels via one cyclic representation, before separate
+root estimates. At a chosen split place let P0 be the parabolic in
+GL_n(k), G0=GL_n(k), Levi blocks of sizes r,t_l. In the cyclic
+G0-representation generated by the native local vector, let
+lambda_P be the product of the Green label character of block 0
+and determinant characters of the other blocks, inflated to P0.
+The source sum_evalGL_prod_eq_zero_iff is the finite-dimensional
+character-theoretic identity
+
+  e_{Ind_P0^G0 lambda_P} v=0 iff
+  e_{lambda_P} rho(y)v=0 for all y in G0,
+
+where e_chi here denotes the unnormalised conjugate-character sum,
+not necessarily an idempotent. Indeed a central character sum acts
+by a nonzero scalar on an irreducible exactly when the character
+multiplicity is positive (Schur orthogonality). On the cyclic span,
+killing v is equivalent to killing that whole span. Frobenius
+reciprocity equates the multiplicity pairing with the restricted
+representation, and every summand in both pairings is a
+nonnegative integer. Consequently either sum vanishes on the
+entire cyclic span exactly when the other does. This proves the
+zero equivalence used by the native source; no cancellation
+between inequivalent constituents and no assumption that the
+induced character is irreducible. The finite cyclic representation
+is the quotient of the regular representation by the kernel of
+the orbit map, as in ShintaniLifting.
+
+For the native parahoric transformation law, multiply the local
+block-0 Green character by the determinant twist psi:
+Xi_c(x) psi(det x) = Xi_a(x), a=c.scaleRoots(charName T psi).
+In the conjugate-character sum for the new label, the unitary
+determinant factors from the transformation law cancel exactly:
+conj(psi(det x))*psi(det x)=1, likewise for every other block.
+The block projection P0 -> GL_r(k) is surjective (block diagonal
+extension), with equal fiber sizes. The remaining sum is a
+nonzero scalar multiple of the original block-0 label sum
+transported by the injective L. Nonzero follows because the tuple
+projection fixes a nonzero native eigenform; if any individual
+factor killed its vector, the commuting tensor product would
+kill it. Thus the induced label sum cannot vanish.
+
+Keep the apt conditions: c monic squarefree, c(0) nonzero; scaling
+by a unit preserves these; the characters chi_l are distinct and
+their named roots are not roots of a. This proves separability
+of a times the product of the DISTINCT linear factors, not of
+the polynomial with powers t_l. The block partition gives
+r+sum_l t_l=n by counting fibers. These are precisely the four
+components of HasProductLabel. At a chosen place there is one
+other character 1 and the apt condition excludes its root;
+the normalization shifts the label roots by the native
+determinant character, as in hasProductLabel and twist_avatar.
+At Q the two distinct determinant characters 1 and psi_w^{-1}
+are used instead. Do not infer the latter from the chosen-place
+condition. Keep the actual apart and auxiliary guards.
+
+4. Same eigensystem attachment at all allowed auxiliary levels.
+Fix ANY finite K and u:K->FinPlace off badPlaces, and ANY
+x in B.Eigensystem u. Its witness is a nonzero form in the
+isotypic part intersected with B.formsOfLevel u, so use its
+attached representation (not a newly selected unrelated
+representation). BaseLevel.Isotypic.isEigenform and
+attached_galRep give the native eigenform and attachment.
+By the level condition it is spherical outside the chosen
+places, ell, placesAboveG, Q and range u (with conjugate
+closures as in the actual statement). Apply step 3 at each
+chosen place; then Attached.isLabelledAt gives finite type,
+the actual weight jumps and annihilation by
+  c_scaled * product_l (X-charName(T,chi_l))^t_l.
+Multiplicities retained here; at a chosen place the extra
+factor has exponent card n-card r=O.rankDiff.
+isLabelledColumn_of_hasProductLabel assembles the conjugate
+and spherical clauses. Its subsequent twist_avatar by the
+native inverse O-character shifts the jumps by the weight
+and scales the roots, giving exactly the normalized R in
+exists_baseLevel. The quadratic Q-inertia clause is RUN56's
+finite-order argument with the same R. This discharges the
+human level-to-label adapter, conditional on the underlying
+standard local-global compatibility (including cyclic base
+change and the spherical attachment) and exact native apt
+and level facts; it is not a new proof of those deep inputs.
+In particular no assertion of unramifiedness at ell or of
+separability of the full polynomial with repeated string roots.
+
+Actual consumer: DenominatorBound chooses B,sp,j,co ONCE.
+sp embeds the selected eigenforms at every admissible enlarged
+level; co supplies BOTH normalized column and quadratic
+inertia hypotheses to ribet_columns, and continuous columns
+supply integral charpoly coefficients cp by lattice existence.
+j gives the first factor H in the integral diagonal-operator
+application; the native diagonal result and pairing use the
+other factors, preserving H^3. Do not divide out H or replace
+co by an individual level dependent twist.
+
+Source-role graph (not kernel extraction):
+ DenominatorBound -> exists_baseLevel -> [fixed-point Y, integral payment,
+  parahoric type -> induced character reciprocity -> HasProductLabel
+  -> Attached.isLabelledAt -> normalized column, quadratic Q inertia].
+Reduced human graph: im=Fix and commutation shared by all levels;
+single exact H-payment and single cyclic-character argument;
+same B, same chosen labels and native normalized attachment feed all
+consumers. Original source graph and all unexpanded obligations
+retained; no globally deleted kernel nodes. Context key: compact pin,
+ell,O,c,theta,Q, H, actual supported level, finite K,u avoiding badPlaces,
+same x and same attached R. Keep cyclic base change/spherical
+attachment, stabilizer divisibility, balanced-row and reciprocity
+to isotropy suppliers explicitly open for the independent human audit.
+
+Execution: inspected the above nine full/partial native source files,
+the current mission, prior checkpoint, manuscript and recent peers;
+no local lean or lake in PATH. No native scan/prune/reduce/auto/frontier
+execution on compact bodies. Shared targeted receipt
+23de197bd48f404ca2074c69676de289c4f7934e shows ten existing native
+theorems and four scalar certificates (run 45799225653) with only
+propext, Classical.choice, Quot.sound. Primitive replay status
+a56e2d3afb99ed8275e81fd63c8494306e57c43f (run 45803534769) is error,
+even though wrapper jobs succeeded. Neither covers this certificate.
+No synthetic calculation claimed. No protected files changed.
+
+RESUME HERE: independently audit steps 1-4 at the actual B,sp,j,co
+caller, then expand DenominatorBound's generic normalizer avoiding
+all non-string eigensystems, including the finite-polynomial
+nonvanishing and exact integral coefficient bound cp. Reuse the
+existing shared compact runner for native caller/axiom probes, with
+separate compact cache; no duplicate CI job. Preserve unresolved
+local-global suppliers and the actual balanced-row budget. Human
+reconstruction incomplete; external formal certification separate.
+HANDOFF TO: integration, audit, shared native verification.
+-/
+
+namespace GaloisRun57
+
+-- Prepared executable algebraic fragments. Not a native replay.
+theorem idempotent_image_fixed {R M : Type*} [Semiring R]
+    [AddCommMonoid M] [Module R M] (p : M →ₗ[R] M)
+    (hp : ∀ v, p (p v) = p v) (v : M) :
+    (∃ w, p w = v) ↔ p v = v := by
+  constructor
+  · rintro ⟨w, rfl⟩
+    exact hp w
+  · intro h
+    exact ⟨v, h⟩
+
+theorem commuting_preserves_fixed {R M : Type*} [Semiring R]
+    [AddCommMonoid M] [Module R M] (p T : M →ₗ[R] M)
+    (h : ∀ v, p (T v) = T (p v)) {v : M} (hv : p v = v) :
+    p (T v) = T v := by
+  rw [h, hv]
+
+theorem coefficient_payment {R I : Type*} [CommRing R] [Fintype I]
+    (H t n : R) (c u y : I → R) (h : H = t * n) :
+    H * (∑ i, c i * u i * y i) =
+      ∑ i, t * (n * c i) * u i * y i := by
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro i hi
+  rw [h]
+  ring
+
+end GaloisRun57
+
+#check exists_baseLevel
+#check HasParahoricType.hasProductLabel
+#check Attached.isLabelledAt
+#check sum_evalGL_prod_eq_zero_iff
+#check IsCentralProj.isChar
+#check isLabelledColumn_of_hasProductLabel
+#check IsLabelledColumn.twist_avatar
+#print axioms GaloisRun57.idempotent_image_fixed
+#print axioms GaloisRun57.commuting_preserves_fixed
+#print axioms GaloisRun57.coefficient_payment
+#print axioms exists_baseLevel
+#print axioms HasParahoricType.hasProductLabel
+#print axioms Attached.isLabelledAt
