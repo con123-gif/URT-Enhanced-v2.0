@@ -240,3 +240,35 @@ plus the actual Galois row guards c7a92f2d and matching witness
 b0ec37d0. These recent C proof bodies have not yet been independently
 audited by this lead session; read them and the actual source before
 retiring any C dependency. Keep the common row/twist witnesses.
+
+Seventh connected result after a6e9cc7ff4c29eb43f52a4cd350ed40ffa6c5842:
+2026-11-26_COMPACT_ROW_SCALAR_AND_COMMON_TWISTS.md fills the scalar-order
+clause explicitly retained in Galois RUN51/RUN54. All required ell-power
+images of the same inertial scalar have residue order >4r0+2, including
+the rank-one branch. The simple source-scale bound is
+j(4r0+2)<=14m^11<64m^22=2^(s+6), with p=2 or 5 different from ell.
+Reuse RUN51 integral matrix span and RUN54 primitive separation; no
+duplicate new claim for those arguments. The other scalar, a Frobenius
+power, remains distinct. The inertia-killing exponent is a q-adic unit,
+not asserted to be an ell-adic unit.
+
+The note follows RowsExist's actual avatar, shifted jumps and same
+eigensystem into ONE HasRow representation serving EVERY later tame
+twist and attached lift. Main section 8 now uses it at the balanced-row
+and determinant caller. Attachment/local compatibility, spherical theta
+Hecke and apt/parahoric form inputs remain explicit. No new native
+execution or independently audited row replacement. Exact local/source
+read and git diff checks only; existing scalar certificate unchanged.
+
+Latest observed orchestrator checkpoint #520: run 45823692434, d05b7f4,
+2026-11-26T13:12:42Z. Its scalar result is for that earlier tree; it is
+not verification of this row note or full RH. Acceleration 1a365375
+authenticates six partial native checks and PREPARES an A-only retry;
+no new A execution inferred.
+
+RESUME HERE: actual comparison forms and Rallis pairing suppliers at
+RowVolume/ComparisonForms, or Kisin cut/cokernel and deep-point lifting
+behind the crystalline bounds. Do not redo optional aggregate Selmer,
+primitive span/orbit, Kolyvagin local transition, or scalar endgame.
+Audit the new scalar-order argument and one-row/all-twist quantifiers
+independently; preserve all existing source and native evidence.
