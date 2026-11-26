@@ -1122,3 +1122,64 @@ C rank correction is binding: the original BlochKato.finrank_eq needs only open 
 The common CM witness and normalized Chowla–Selberg period derivation are integrated from character RUN60: one torsion representative for every finite set of labels, one finite-adele cluster parameter, one global p-adic unit w, and exact area identity A_sigma |sigma w|^2=(2pi^2/sqrt(d)) exp(ell). This gives |t|^2=bigOmega^-1 at the actual ConjugateGenerator with the SAME conjugate generator used in the semilinear Weil argument. Keep the classical limit formula normalization, section transport, frame and compact-shift suppliers, pending independent audit.
 
 Live remaining primitive corrections: B absolute unfolding and uniformity are HUMAN-DERIVED conditional on native tail, box-separation, rational approximation and group inputs; the full-cut quantitative exponent, one-vector Siegel–Weil and Rallis inputs remain OPEN. C open-image rank scope and Hodge jump/filter dictionary independently audited; quantitative safety/Ext, triangle, uniform odd-Sha and comparison suppliers still OPEN. A CM simultaneous torsion and period now HUMAN-DERIVED under its stated inputs, independent audit pending; single-stage local Hecke and archimedean short-height remain OPEN. No native root obligation retired. Actual partial CI receipt remains six native theorem checks with standard axioms and one timeout, not full replay. See appendix for exact source and peer pins, proofs, retained hypotheses and RESUME HERE.
+
+### Editor RUN62 — full-cut quantitative bound and exact change of weight (26 November)
+
+Human source-matched derivation, independent audit pending. Fills the quantitative exponent and weight-change steps retained in integration RUN61 (49e4380d); does not derive the local peak/decay or boxed separation suppliers from scratch. Compact source lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207, Lean 4.35.0, Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679; credit Alpöge, Sernau, Anthropic collaborators and Claude. Mission blob 9f4a2272265e847b3a46422b02d4b37e976bee10.
+
+**B, actual full-cut error.** Let n=ϱ+1, k=rank X0, r=k+2n−1, f=#infinite places, b≥2, ν=unipCovolume, and I_v be the native Bessel coordinate set. Keep the SAME A_v,m_v chosen by IsCutPair.exists_majorant for both full and cut W. Its bounds are
+  W_t norm ≤ A_v, and if W_full(z)≠W_cut(z), then W_t norm ≤ b^(−3r³ f) A_v(z) for BOTH t;
+  A_v(z)≤m_v{g:InCut(zg,b)}, and m_v(G) ∫ A_v d(besselQuotMeasure)≤b^(2r³)|I_v|.
+The factor f in the pointwise penalty is essential. If both product vectors at y and γ⁻¹y have identical local full and cut coordinates at every place, the kernel difference is zero. Otherwise at least one of the 2f factors incurs the SAME penalty for both sides. By the exact norm of the rank-one tensor kernel and the triangle inequality only AFTER this zero/nonzero split,
+  ||K_full(γ,y)−K_cut(γ,y)|| ≤ 2 b^(−3r³f) ∏_v A_v(y_v)A_v((γ⁻¹y)_v).
+No assertion of 2f penalties is justified.
+
+Use the already integrated weighted packing argument with V=top: each frame consists of n complex r-vectors at f places, so D=dim_R V≤2rnf; use the native bound b^(6n²D). Nonnegative Tonelli and the unipotent cutoff disintegration give
+  Σ_(d,γ) ∫ β_c(y)β_d(γ⁻¹y) ∏_v A_v(y_v)A_v((γ⁻¹y)_v)
+   ≤ ν b^(6n²D) ∏_v [m_v(G)∫ A_v]
+   ≤ ν b^(12n³rf+2r³f+2kf).
+The final term is card BesselCoord=∏_v|I_v|≤b^(2kf), not its square. Multiplying by the pointwise penalty gives the explicit full-cut bound 2ν b^[(-r³+12n³r+2k)f].
+
+The arithmetic slack follows from the native size guards k≥1000(2n)^9, n≥1: they imply k≥1, k+1≤r≤2k, and 24n³+4≤3k (since (2n)^9≥n³). Thus r³−k³≥3k²≥(24n³+4)k≥12n³r+2k+2. Since f≥1 and b≥2, 2b^(−2f)≤1/2. Consequently
+  Σ_(d,γ) ∫ β_c(y)β_d(γ⁻¹y)||K_full−K_cut|| ≤ (ν/2)b^(−k³f).
+This is EXACTLY the numerical conclusion of AmplitudeSums.amplitudeAbs_lt_top_and_cut_le, for arbitrary T and fixed c,s. The same envelope gives absolute convergence separately for either Side. This supplies the human exposition of the full-cut exponent conditional on the retained local-tail and packing suppliers, not a native root dependency deletion.
+
+**B, weight change at the actual consumer.** On X×Y with X=T∩termsOver(c,s,c'), use counting×Haar measure and the native stable action of Δ=classUnip(c)×classUnip(c') sending (γ,y) to (uγv⁻¹,uy). Every group element preserves this measure (permutation×left Haar). The kernel, including each Side and hence their difference, is invariant by the native character-triviality at the class unipotent subgroups. Put β=β_c(y)β_c'(γ⁻¹y), and take any measurable nonnegative φ with Σ_(a∈Δ) φ(a·p)=1 as in the source. The two class partitions show the same for β. For any nonnegative invariant measurable F, Tonelli and the measure-preserving substitution q=a·p give
+  ∫φ F = Σ_a ∫φ(p)β(a·p)F(p) = ∫β(q)F(q)Σ_a φ(a⁻¹·q) = ∫β F.
+No choice of orbit representatives, freeness of the action, or finite stabilizers is required. Apply to the norm of the full kernel and the norm of the difference. The quantitative bound and absolute convergence therefore transfer to φ BEFORE complex rearrangement. Apply the same partition identity to integrable real/imaginary positive/negative parts coordinatewise to transfer the vector integral and obtain the source HasSum; absolute integrability over counting×Haar gives integrability of each summand. This supplies hasSum_amplitudeSum_change_of_weight with its exact cut error.
+
+**B, the identity block and normalization.** In the Bessel subgroup and reduction s=1 the native eq_and_mem_classUnip_of_besselS implies c=c' and γ∈classUnip(c); if c≠c' the set is empty. For c=c' choose φ(γ,y)=1_(γ=1)β_c(y). For each γ in classUnip, the equation uγv⁻¹=1 fixes v=uγ, leaving exactly one class partition over u; thus φ has sum one. The weighted sum has only the identity term. At each infinite place the matrix G=(∫W_i conjugate(W_j)) is well-defined by the retained L² norm; unitary covariance, quotient-Haar invariance and phase cancellation give G commuting with the native irreducible representation. Its scalar commutant forces G=λ I, while tr G=|I_v| gives λ=1 since I_v is nonempty. This is BesselSystem.orthonormal, with the full W, not the cut W. At the identity, unipotent disintegration (β integral ν) and the finite product of Gram entries yield amplitudeSum(besselS,c,1,c')_(i,j)=ν if c=c' and i=j, zero otherwise. Exact input to the already integrated Poincaré rank argument; neither ν² nor a coordinate count belongs here.
+
+**Source and evidence ledger.** Actual bodies: New/Filling/AmplitudeSums.lean 832e25af346bbbbdabdbec205b0e7f833170e0a1 (amplitudeAbs_lt_top_and_cut_le, hasSum_amplitudeSum_change_of_weight, amplitudeSum_besselS_one); New/Filling/BoxPartition.lean 53f11966247a892d94cf688e8b366e887a92f641 (tsum_classCutoff_box_le); New/Filling/BesselSystem.lean 847e2869ed2c189c30f6efef85e7c1c1f2451058 (IsCutPair.exists_majorant); New/Filling/Setup.lean 622e7ebe5c04b7ae87652e460762da7fb2e40727 (size guards and BesselCoord); New/Filling/LatticeChart.lean 5c87f908fd39bf1c6b11ffe37af9dd5f764c782c (enorm_besselKernel); New/RealPlace/BesselOrthonormal.lean 7d412ab10f96adecb5ede2bfa386efc89916ec9c; New/RealPlace/BesselCut.lean c9e66fa71ab3aff125e672b9fc93caac9f03fa5d (actual local peak-to-majorant construction still to reconstruct). Context key: compact pin, S.IsAdmissible, Side, same A_v,m_v, arbitrary T,c,s and actual Δ/cutoffs. Graph edges: local majorant + boxed packing + kernel norm + size guard -> absolute/full-cut bound -> exact weight change -> identity amplitude + general unfolding -> Poincaré Gram/energy -> B. No original/reduced graph changes, no axiom removal, no RH root import. No native Lean/lake/elan on local PATH; old-pin engines not executed on compact. Re-read actual workflow job conclusions 45799225653 and 45803534769 and primitive receipt d07359dc70c3f9f28e4858c835e5fa5424b6f539: six native checks with standard three axioms, one JetExponentBound build timeout 124, full_RH_replay=false. No new native PASS. Independent audit and exact caller-level verification remain pending.
+
+Prepared scalar certificate (extract this Lean block and replay in compact environment; not executed here):
+
+```lean
+import New.Filling.AmplitudeSums
+import Mathlib.Tactic
+
+namespace RHProofEditorCutBudget
+
+theorem cubic_slack (n k r : ℝ) (hn : 0 ≤ n) (hk : 1 ≤ k)
+    (hrlo : k + 1 ≤ r) (hrhi : r ≤ 2 * k)
+    (hguard : 24 * n^3 + 4 ≤ 3 * k) :
+    k^3 + 12 * n^3 * r + 2 * k + 2 ≤ r^3 := by
+  have hkn : 0 ≤ k := by linarith
+  have hgap : k^3 + 3 * k^2 ≤ r^3 := by
+    calc
+      k^3 + 3 * k^2 ≤ (k + 1)^3 := by nlinarith
+      _ ≤ r^3 := by gcongr
+  have hp := mul_le_mul_of_nonneg_left hrhi (show 0 ≤ 12 * n^3 by positivity)
+  have hm := mul_le_mul_of_nonneg_right hguard hkn
+  nlinarith only [hgap, hp, hm, hk]
+
+#print axioms cubic_slack
+#check Filling.amplitudeAbs_lt_top_and_cut_le
+#check Filling.hasSum_amplitudeSum_change_of_weight
+#check Filling.amplitudeSum_besselS_one
+#print axioms Filling.amplitudeAbs_lt_top_and_cut_le
+
+end RHProofEditorCutBudget
+```
+
+RESUME HERE — editor RUN62: the full-cut exponent, exact weight-change and identity block above are human-derived with the stated suppliers. Next derive actual BesselCut.HasPeakAt.exists_cut_isCutPair majorant (local peak lower bound, normalization and compact-ball minorization), and BoxPartition triangular separation at its exact frame integral identities. B still requires exact one-vector Siegel–Weil and Rallis applicability and remaining group bridges. A single-stage Hecke/chain-height and C safety/Ext, triangle, odd-Sha and comparison suppliers remain OPEN; preserve all earlier audits and the common witness. HANDOFF TO integration, positivity, independent audit and shared compact native replay. Human reconstruction incomplete.
