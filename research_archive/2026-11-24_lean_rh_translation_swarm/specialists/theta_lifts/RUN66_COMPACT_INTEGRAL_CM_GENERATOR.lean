@@ -53,7 +53,8 @@ and define
  R_1(w)=|iota u_y(w)| h'(w+y)/h'(w).
 These are positive. Both ratios are bounded above: for f=theta
 or sigma, f^(2k) is a degree-2k section and its twist by y is
-again a section, since 2k*y lies in 2k times the dual lattice.
+again a section, since 2k*y lies in the original dual lattice
+(equivalently y lies in the dual for the degree-2k form).
 Pullback along a is a degree-2kq section (use the actual
 comp_mul_mem_sections). Every section lies in the finite complex
 span of the monomial sections, so its p-adic value divided by
