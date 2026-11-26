@@ -807,3 +807,54 @@ ten guards. Continue SemilinearWeilLaw self-duality -> unit
 factorization -> vacuum projection/multiplier at the actual common
 jet/comparison caller, then single-stage theta transfer and B absolute
 unfolding. C Hodge/rank/depth audit and safety/Ext remain explicit.
+
+
+### 26 November — finite semilinear Weil comparison, exact scalar
+
+Marked-orbit checkpoint 403556a7cf74a3ac65edb8fb2b34b0d48a877580
+was published and fetched back. New appendix
+COMPACT_SEMILINEAR_WEIL_COMPARISON.md supplies the finite Weil
+comparison retained by structure RUN60. Read exact SemilinearWeilLaw,
+FiniteMultiplier, PairDefs, Projections, finite vacuum and named-data
+bodies; source blobs recorded in the appendix.
+
+The unrestricted character identity plus self-duality gives
+z in O iff eta z in O, eta=b bar(b). A single inverse-uniformizer
+test at each place forces eta in O^*, hence b inverse=bar(b)/eta.
+Choose a in O^*, norm eta, with a=1 on the conjugate-disjoint naming
+set: b at nonsplit places, and the values 1 and eta on an oriented
+split pair, with the R side first.
+Then u=b/a is norm one. Finite averaging proves the actual vacuum
+line and gives the same gamma for L vacuum. Its coefficient functional
+after omega(u)^-1 L is gamma sigma(ell(-)). The normalized coefficient
+m(g)=1/bar(Delta(g)) and Delta(g)bar(Delta(g))=positive INTEGER
+give sigma(m)/m=sigma(Delta)/Delta, with no loss of phase.
+Heisenberg covariance extends to all finite vectors. The exact
+Schroedinger formula and a=1 on R give sigma(S_y box)=S_(ay)box,
+so the named Schwartz formula uses the same L,u,gamma and all data.
+No continuity of sigma and no rescaling L/gamma is assumed.
+
+Retained upstream inputs: actual additive-character self-duality,
+finite Weil construction/splitting character and its normalized
+vacuum coefficient, plus RUN60's CM/frame/period/compact shift
+suppliers. These are not silently declared reconstructed by the
+comparison argument. The new argument awaits independent audit.
+Main manuscript updated at its actual CM jet/comparison caller.
+
+Read full latest Galois b7b304a3 and integrated its strict row-modulus
+bridge to the already supplied full scalar payment: first bound
+b0 <= r budget <= D.r budget < floor(D.r budget)+1, THEN invoke
+ribet_first_order. Do not repeat the existing Ribet constants.
+
+Checks: git diff --check; source pin and exact formulas inspected.
+No Lean/lake/elan or native compilation, no additional scalar test.
+State summary run 45875143009 at 3e2dbd9 is an older repository
+regression receipt, not verification of these human derivations.
+Primitive RUN29 remains an A-module timeout plus six named probes,
+not overall PASS. Protected source/workflows unchanged; RH incomplete.
+
+RESUME HERE: audit eta unit, split orientation, conjugate in m(g)
+and R-supported phase together with the peer span/jet identity.
+Next actual finite Weil coefficient (saturating-lattice index and
+splitting character normalization), or A single-stage theta transfer;
+continue B absolute unfolding and C safety/Ext/comparison suppliers.
