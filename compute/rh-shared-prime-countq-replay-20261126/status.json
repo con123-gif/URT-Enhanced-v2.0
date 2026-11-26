@@ -1,0 +1,72 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: unhandled import: import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology\u2082.PoitouTateNineTermTransgressionZeroApply",
+  "returncode": 1,
+  "wall_s": 133.27,
+  "tail": " 84%, 24 KB/s], Decompressed: 711\rDownloaded: 7417 file(s) [attempted 7417/8690 = 85%, 219 KB/s], Decompressed: 711\rDownloaded: 7520 file(s) [attempted 7520/8690 = 86%, 963 KB/s], Decompressed: 711\rDownloaded: 7624 file(s) [attempted 7624/8690 = 87%, 3075 KB/s], Decompressed: 711\rDownloaded: 7733 file(s) [attempted 7733/8690 = 88%, 563 KB/s], Decompressed: 711\rDownloaded: 7788 file(s) [attempted 7788/8690 = 89%, 210 KB/s], Decompressed: 711\rDownloaded: 7872 file(s) [attempted 7872/8690 = 90%, 774 KB/s], Decompressed: 711\rDownloaded: 7939 file(s) [attempted 7939/8690 = 91%, 765 KB/s], Decompressed: 711\rDownloaded: 8037 file(s) [attempted 8037/8690 = 92%, 2012 KB/s], Decompressed: 711\rDownloaded: 8148 file(s) [attempted 8148/8690 = 93%, 815 KB/s], Decompressed: 711\rDownloaded: 8250 file(s) [attempted 8250/8690 = 94%, 1644 KB/s], Decompressed: 711\rDownloaded: 8345 file(s) [attempted 8345/8690 = 96%, 2901 KB/s], Decompressed: 711\rDownloaded: 8466 file(s) [attempted 8466/8690 = 97%, 761 KB/s], Decompressed: 711\rDownloaded: 8569 file(s) [attempted 8569/8690 = 98%, 2298 KB/s], Decompressed: 711\rDownloaded: 8683 file(s) [attempted 8683/8690 = 99%, 538 KB/s], Decompressed: 711\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 538 KB/s], Decompressed: 711\nDecompressed 8690 file(s)\nAlready decompressed 8690 file(s)\nTraceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 221, in <module>\n    if __name__==\"__main__\": raise SystemExit(main())\n                                              ^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 156, in main\n    build_original([m for k in prime_names for m in header(paths[k].read_text()) if m not in local])\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 123, in build_original\n    for m in targets: visit(m)\n                      ^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 86, in visit\n    for d in deps: visit(d)\n                   ^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 86, in visit\n    for d in deps: visit(d)\n                   ^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 86, in visit\n    for d in deps: visit(d)\n                   ^^^^^^^^\n  [Previous line repeated 3 more times]\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 85, in visit\n    visiting.add(m); b=f.read_bytes(); deps=header(b.decode())\n                                            ^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 54, in header\n    require(not re.match(r\"(?:(?:public|private|meta)\\s+)*import\\b\",t),\"unhandled import: \"+t)\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py\", line 36, in require\n    if not ok: raise RuntimeError(why)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: unhandled import: import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology\u2082.PoitouTateNineTermTransgressionZeroApply\n",
+  "id": "rh-shared-prime-countq-replay-20261126",
+  "question": "One pinned native replay batch: prime descent at actual cofinal Sha caller first, then CountQ/CountK alternatives with shared original module cache, isolated even caller overlay, scans/prunes/axioms and partial evidence. Conditional only, not RH proof.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_shared_replay25.sh --out {out}",
+  "utc": "2026-11-26T07:16:43Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "03b9179d78aa6f963bd9f77d8b8d9112e3f934e1",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45773743341",
+  "outputs_committed": [
+    {
+      "path": "engine_RHProofTermPrune.log",
+      "bytes": 491,
+      "sha256": "345110d43a273db20d45e099991685e83aaddb8fda5dd225129265df26601a9a"
+    },
+    {
+      "path": "engine_RHRecursiveReductionAutoV3.log",
+      "bytes": 638,
+      "sha256": "4feb28c02814d70bddb2d315e99461a3a914666177d863035c86c472d689c1da"
+    },
+    {
+      "path": "engine_RHRecursiveReductionFixed.log",
+      "bytes": 560,
+      "sha256": "f7a065d17a3783cb720d0ee0dc82da24ff12da4ad16afc460dc502c7c74e1b71"
+    },
+    {
+      "path": "lean_release_sha256.txt",
+      "bytes": 92,
+      "sha256": "8a0bfe9ee7e088720b3434298f7c39d1e65b96f98e37f4549ba3367caa9c7e19"
+    },
+    {
+      "path": "lean_version.txt",
+      "bytes": 106,
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "path": "ledger.json",
+      "bytes": 3021,
+      "sha256": "a0a0c249483a396c5b6a6df5e166219104c90f1cb6d1dca2519ba331e1ede3b8"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 9579,
+      "sha256": "ada0f1184b604c49f2b99adadfa51855370cbc6d3138756fb686b92f3d5ccebf"
+    },
+    {
+      "path": "mathlib_pin.txt",
+      "bytes": 41,
+      "sha256": "7cf32a824e26133738b30903ed97bc24def8e93db8039483d6bdf7fce7a0efee"
+    },
+    {
+      "path": "rh_pin.txt",
+      "bytes": 41,
+      "sha256": "874c246ae0276d2085ebcaf2a5fba3bc1ebf95deb67c61bbe8cb8ac7efd07cd0"
+    }
+  ],
+  "outputs_artifact_only": []
+}

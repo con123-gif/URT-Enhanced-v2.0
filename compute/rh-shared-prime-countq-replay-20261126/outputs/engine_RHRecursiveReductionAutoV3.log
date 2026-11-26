@@ -1,0 +1,8 @@
+'RHReductionAuto.frontier_reject' does not depend on any axioms
+'RHReductionAuto.frontier_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReductionAuto.rank_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReductionAuto.scalar_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReductionAuto.auto_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReductionAuto.auto_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHReductionAuto.auto_local_chain' depends on axioms: [propext]
+'RHReductionAuto.reject_unproved' does not depend on any axioms

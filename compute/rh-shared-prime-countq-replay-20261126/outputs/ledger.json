@@ -1,0 +1,114 @@
+[
+  {
+    "unit": "engine_RHProofTermPrune",
+    "source_blob": "f6d3e7f6047a7895ecf183be3fb54c203f4fc46a",
+    "returncode": 0,
+    "seconds": 1.3732557570000097,
+    "status": "CHECKED_LOCAL",
+    "axioms": {
+      "RHPruneUnusedReduced": [],
+      "RHPruneUnusedReduced.original": [],
+      "RHPruneDependentReduced": [],
+      "RHPruneDependentReduced.original": []
+    },
+    "missing_audits": [],
+    "nonstandard_axioms": {},
+    "missing_scans": [],
+    "scans": [
+      "PRUNED RHPruneUnused: 4 -> 2 binders; original bridge checked",
+      "PRUNED RHPruneDependent: 3 -> 2 binders; original bridge checked",
+      "NO_BINDER_REDUCTION RHPruneNoDrop",
+      "ROOT_SCAN root=RHPruneUnusedReduced visited=1 values=1 noValue=0 axioms=0 missing=0 pending=0"
+    ],
+    "log": "engine_RHProofTermPrune.log"
+  },
+  {
+    "unit": "engine_RHRecursiveReductionFixed",
+    "source_blob": "976c28572f11ffb00e1ae730555e938eeb564cb7",
+    "returncode": 0,
+    "seconds": 5.523209690000016,
+    "status": "CHECKED_LOCAL",
+    "axioms": {
+      "RHReduction.signed_factor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReduction.level_rank_upper": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReduction.three_count_transfer": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReduction.budget_transfer": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReduction.recursive_chain": [
+        "propext"
+      ],
+      "RHReduction.backtrack_test": [
+        "propext"
+      ],
+      "RHReduction.rank_test": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "missing_audits": [],
+    "nonstandard_axioms": {},
+    "missing_scans": [],
+    "scans": [],
+    "log": "engine_RHRecursiveReductionFixed.log"
+  },
+  {
+    "unit": "engine_RHRecursiveReductionAutoV3",
+    "source_blob": "a113dc56ea987abac3bf29eb480782140b82ab4a",
+    "returncode": 0,
+    "seconds": 5.329476332999974,
+    "status": "CHECKED_LOCAL",
+    "axioms": {
+      "RHReductionAuto.frontier_reject": [],
+      "RHReductionAuto.frontier_rank": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReductionAuto.rank_upper": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReductionAuto.scalar_budget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReductionAuto.auto_rank": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReductionAuto.auto_factor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHReductionAuto.auto_local_chain": [
+        "propext"
+      ],
+      "RHReductionAuto.reject_unproved": []
+    },
+    "missing_audits": [],
+    "nonstandard_axioms": {},
+    "missing_scans": [],
+    "scans": [],
+    "log": "engine_RHRecursiveReductionAutoV3.log"
+  }
+]
