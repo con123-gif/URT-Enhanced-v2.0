@@ -576,3 +576,44 @@ construction, with chart and Fontaine rings distinguished. The frame,
 radius and final Ribet implications are now explicitly reconstructed,
 with their own prior source assumptions and pending independent audit.
 Other A/B frontiers and the standard verification limits remain.
+
+## Continued after c9759dfb — fixed coefficients and filtered chart maps
+
+New COMPACT_CHART_FIXED_COEFFICIENTS.md discharges the actual
+KummerChart.dvd_extendToBPlus and exists_witt_coeff_of_isChartOf.
+Checked Fontaine's original Exposé II §1.5.7 at its open-subgroup
+hypothesis, and identified the SOURCE BdR by quotient isomorphisms,
+without conflating B_max with divided-power B_cris. A fixed-coefficient
+Newton iteration with a lifted derivative inverse preserves S_B and
+approximates each local field coefficient. This proves all finite
+linear-form depth tests under coordinate maps. A common z-order,
+constant terms and reflection of units through integral extensions
+then prove the exact fixed-fraction/Witt coefficient statement.
+Integrated these at actual CrystallinePeriodMatrix caller before basis.
+
+Also checked Exposé III Theorem 3.8 strictness in the primary paper.
+It applies to continuous local Galois representations. It is NOT a
+blanket substitute for native HodgeFrame on abstract admissible modules:
+some automatic-continuity proofs themselves use HodgeFrame. Flagged
+that potential circular replacement rather than asserting closure.
+The native Hodge-frame supplier at that generality remains visible.
+No new native execution, diagnostics, or independent audit claim.
+
+RESUME HERE: native HodgeFrame's stable-kernel/minimal-determinant
+argument, with continuity kept independent if invoking external
+Theorem 3.8. The exact ring-map, basis, radius, local-defect and final
+Ribet implications already derived must be reused, not reformulated.
+A marked Hecke and B real/Siegel-Weil primitives remain separately
+assigned to the existing workers. Do not declare complete human RH.
+
+Review overlap: literature 198752ed arrived during drafting. Its fixed
+linear-form/Newton and initial-period assemblies agree with the matching
+parts here; classify that overlap as independent AGREE, not novel.
+Its fixed-fraction lemma was explicitly retained and is supplied by our
+common-z-order/integral-unit-reflection proof. Checked actual DeRhamValues:
+valueField(a) also contains S_B, so retain b_jl in the finite expansion
+of each common-denominator coefficient. Our section 6 supplies the exact
+formula and the relation/Hodge transport at the actual retraction caller;
+flags that omission in the peer shorthand rather than dropping the field
+hypothesis. Same operators, denominator canceled only in B_dR. Native
+Hodge-frame/continuity remains a distinct prerequisite, no blanket closure.
