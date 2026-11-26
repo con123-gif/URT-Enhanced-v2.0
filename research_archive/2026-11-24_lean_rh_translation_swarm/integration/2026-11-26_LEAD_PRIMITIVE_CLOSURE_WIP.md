@@ -968,3 +968,56 @@ do not list their construction as unattempted. Audit upstream
 actual peak/decay, pointwise classSize/pairInvariant and one-vector
 Siegel-Weil; continue A chain-height/single-stage theta transfer
 and C safety/Ext/global comparison. Human RH remains incomplete.
+
+
+### 26 November — exact classical one-vector supplier under review
+
+Continuing after a122a57d. Continuity search found that pairInvariant,
+thin/thick classSize, normalized majorant, packet mass cancellation and
+finite Gaussian/ideal-zeta estimates already have human derivations.
+Do not rederive them. Their independent audit and actual suppliers remain.
+New connected task: match Weil 1965 section 52 Theorem 5, pp. 76-77,
+directly to OneVector.classSum_norm_eq at the fixed compact pin, without
+requiring the full abstract Feichtinger/zero-term construction as a new
+human premise of this one-vector consumer. Retrieved original French
+PDF (87 pages) and inspected printed pp. 41, 76, 77 visually; parsed
+sections 41-43,51-52. Primary URL:
+https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/5988-11511_2006_Article_BF02391774.pdf
+PDF SHA256: 7032fe6053fbd7236c4b2aeb933b5d7f744925b83d5904b92b518e3f68cc0476
+No translated or tertiary account is used as mathematical evidence.
+
+The exact hypotheses include unitary type I2 (epsilon=1/2), source
+module rank one, target rank k>2, normalized Haar probability, and a
+finite local place with full-rank null orbit nonempty and transitive
+unitary action. At a split place the null pair must have BOTH nonzero
+components, for example (e1,e2*), not (e1,0). Positive definite target
+is anisotropic, so quotient compactness and absolute convergence hold.
+
+RESUME HERE: finish the explicit global self-dual measure comparison,
+show native scalar-parameter covolume is |disc E|^(-1/4), and derive
+the exact class-weighted one-vector Fourier integral. Check every
+caller before replacing its classical theorem premise. No new native
+Lean/scalar execution or full-proof closure.
+
+Classical one-vector bridge completed as a HUMAN-DERIVED, source-matched
+application of precisely stated Weil 1965 theorem; independent audit
+pending. New appendix COMPACT_CLASSICAL_ONE_VECTOR_BRIDGE.md proves
+the full input match, full-rank split null pair, integral trace-one
+annihilator including dyadic places, c=D_E^(-1/4) scalar covolume,
+exact Gaussian Fourier integral, L1 outer finite integral before
+Fubini/DCT, and cancellation of the SAME level index in normalized
+weighted class sums. Integrated at MassRatio and FiniteSystem callers
+in main. The general abstract Siegel-Weil theorem retains its other
+callers; no global deletion or finite Weil/adapted-vacuum proof inferred.
+
+Corrected live B frontier: thin/thick classSize and pairInvariant already
+have lead derivations; positivity RUN56 independently checked native
+thick support and packet arithmetic. Their remaining mathematical audit
+is separate. No need to reconstruct them again. The normalized Bessel
+majorant and absolute/full-cut bound also have derivations and review.
+
+RESUME HERE: publish this one-vector checkpoint, then read actual
+Rallis/comparison test-space caller and latest peer body before selecting
+a new obligation. Main and new appendix retain all remaining A/C
+frontiers and same witness requirements. Actual execution: source and
+primary-paper reads plus git diff checks, no new Lean or scalar script.
