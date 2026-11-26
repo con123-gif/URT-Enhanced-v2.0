@@ -3536,3 +3536,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-targeted-replay-20261126"
+question = "Memory-limited compact verification fallback: replay two standalone peer certificates and build only three named source modules with shared Mathlib cache and per-theorem axiom checks. Do not build Main or override the full-build resource guard; retain partial results and distinguish native checks from human caller proof."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN28_COMPACT_TARGETED.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
