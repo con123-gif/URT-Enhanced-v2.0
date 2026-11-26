@@ -1021,3 +1021,64 @@ Rallis/comparison test-space caller and latest peer body before selecting
 a new obligation. Main and new appendix retain all remaining A/C
 frontiers and same witness requirements. Actual execution: source and
 primary-paper reads plus git diff checks, no new Lean or scalar script.
+
+
+### 26 November — new A transfer/C height peers and one audit correction
+
+One-vector checkpoint published b57f1fd045febf9329561bc58a1583eddb17d451.
+Read latest peer bodies 57550c80 (kernel RUN37 single-stage Hecke transfer)
+and 5c2a8c47 (dependencies RUN61 comparison height and determinant).
+Their full native caller bodies are under review; prepared probes unrun.
+
+Substantive independent source audit found a necessary correction in
+RUN61 section 4: eta=conj sigma^(-1) conj sigma(zeta) DOES give
+sigma<eta,zeta>=Q_sigma(zeta), but generally NOT Q_sigma(eta)=Q_sigma(zeta).
+The correct identity is Q_(conj sigma conj)(eta)=Q_sigma(zeta).
+LevelForms.norm_map_inner_le explicitly uses these TWO automorphisms.
+Apply the all-automorphism comparison bound to gl eta at sigma^c, and
+to the tested projection of gl zeta at sigma. This repairs the written
+determinant argument without changing gl or the original conclusion.
+Exact negative control: alpha=cuberoot(2)>0, zeta=1+alpha, sigma(alpha)=
+omega alpha, sigma(omega)=omega, omega primitive cube root. Then
+eta=1+omega^2 alpha, |sigma eta|²=(1+alpha)², whereas
+|sigma zeta|²=1-alpha+alpha²; difference 3alpha>0. The source has the
+correct two-automorphism inequality. Peer file retained, correction
+will be integrated in a distinct audit note and main.
+
+A next connected question: derive the Schur OPERATOR clause of
+MemberKernels.norm_jet_le_of_isAdmissibleComb from existing RUN58/59
+scalar Gaussian estimate, then exists_chain_eq_sum and the lifted
+height at LocalStatement.weylNormSq_Bmu_le. Scalar Schur estimate:
+rho^lambda<=lambda! exp(lambda(u+1/L)+rho exp(-u-1/L)); sum rho<=
+exp(u)(2L+2)R gives (L+1)exp(-1/L)R<=LR. Thus the exact w is
+half sum(lambda/L + log(lambda!) + lambda*u), with L=a+1.
+Full derivation and explicit native-scale error allowance not yet saved.
+No new Lean or scalar execution. RESUME HERE: finish this A chain-height
+proof using row-dependent excess (large only in first row), rather than
+charging b once per row. Preserve the positive rational normalization.
+
+A chain-height derivation completed in COMPACT_THETA_CHAIN_HEIGHT.md:
+scalar-to-Schur operator constant from singular values and factorial
+exponential bound; actual joint-invariant tensor/class expansion;
+integral Gram-plus-approximation label injection/count; high-column
+branching denominator and exact N scalar; finite prime-power identity;
+explicit original-budget bound b+185mfb logb<=fa(logb)^3. Shared class
+count also covers comparison levels K(g²), rank<=2n_m, without asserting
+K(gN)<=K(g²). The scalar CM/semilinear/Gaussian peer inputs retain their
+audits. Full native caller formula now written, not a new scalar optimum.
+
+Integrated kernel RUN37 transfer and dependency RUN61 arch height in
+main. New COMPACT_COMPARISON_CONJUGATE_AUDIT.md corrects RUN61's false
+same-sigma norm assertion with sigma^c, preserving every witness and
+constant. Source itself is correct; this is independent human audit of
+the peer argument, not a source defect. Includes exact cube-root negative
+control and corrected eigenvalue/determinant proof. RUN61 numerical
+height bounds have not all been independently audited by this lead.
+
+RESUME HERE: publish this checkpoint, then inspect the actual
+LiftVolumeHeight.norm_det_compressedGramOp_padic_le Auerbach coordinate
+witness, including integral dual basis, at the same L/gl. Broader C
+safety/triangle/odd-Sha and Rallis/group inputs and independent audits
+remain. Do not repeat now written A height or classical B one-vector
+proof. Actual checks: source reads and git diff --check only; no new
+Lean/scalar execution or full-proof certification.
