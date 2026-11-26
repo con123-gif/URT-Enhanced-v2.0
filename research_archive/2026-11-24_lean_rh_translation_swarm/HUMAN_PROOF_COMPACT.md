@@ -99,7 +99,7 @@ At the last path the forms are chains of algebraic theta kernels on definite gro
 
 There is one useful general finite-sum transport in GridFirstColumns.endPeriod_mem. Let S(z,j,g,w) be a predicate on each intermediate vector, true of the two initial forms and preserved by each endKernel step. Suppose every final pair satisfying S has |σ(M v'^T B v)|≤R. Covariance of Λ cancels the edge-character factors of the end kernels under changes of level representatives, so the class integrals become finite sums over the native standard classes, with no additional twist-dependent denominator. Expand the tidy functional as ≤Q^n point evaluations. Each chain is a sum over its intermediate classes; the common final class is counted once. Each coefficient has norm ≤1 under σ, since it is zero or a root of unity. Therefore endPeriod is a sum of at most Q^n prod_(z=0,1) prod_(j<m+1-z) #StdClasses(endLevel(v,z,j)) terms each satisfying |σ(M term)|≤R. This is exactly the nsmul assertion of endPeriod_mem, with n the tidy order, not row rank. For ultrametric σ and R=1, the number of summands is irrelevant: every finite sum of valuation-ring elements is integral. For a complex automorphism, the triangle inequality multiplies R by the displayed number of terms. These are two applications of the SAME expansion, not two unrelated spanning families.
 
-The uniform denominator theorem applies the ultrametric version with a scaled Weyl gauge at step j, namely w↦weylGauge(w multiplied by ν^j)≤1, and the branching correction determined by the determinant exponents L_tau. The actual integer N is of the form prod_tau (gProd^b1 N1)^(m |L_tau|) times ν^(2m). The source obtains ν from the uniform vacuum/raising and weight bounds, not by clearing the denominators of finitely many chosen twists after the fact. The term count makes no contribution to N. In the archimedean version the trivial twist and the square-root Weyl norm are used with growth G^j, G=exp(x^99 b²); the same expansion and class-count bounds give exp(x^200 b²) sqrt(B_false B_true) for the end period. The proof of the precise uniform ν, the local Weyl transition inequality, and the final numerical bound log N≤x^99 b² still require a detailed human derivation; these are real source obligations, not consequences of tidiness alone.
+The uniform denominator theorem applies the ultrametric version with a scaled Weyl gauge at step j, namely w↦weylGauge(w multiplied by ν^j)≤1, and the branching correction determined by the determinant exponents L_tau. The actual integer N is of the form prod_tau (gProd^b1 N1)^(m |L_tau|) times ν^(2m). The source obtains ν from the uniform vacuum/raising and weight bounds, not by clearing the denominators of finitely many chosen twists after the fact. The term count makes no contribution to N. In the archimedean version the trivial twist and the square-root Weyl norm are used with growth G^j, G=exp(x^99 b²); the same expansion and class-count bounds give exp(x^200 b²) sqrt(B_false B_true) for the end period. The explicit sufficient ν and the logarithmic budget are derived in §6g below from the native vacuum, jet, and branching interfaces; their underlying proof obligations remain separately identified.
 
 Finally choose a short spanning set in the grid-level source, using its standard algebraic-form equivalence. Pair the endpoint lift with delta forms at each class and integral test vector; the dual-pairing matrix identifies these scalar pairings with its coordinates. The period route gives the same expression for all twists. With the common integer denominator N, the one scalar on the original row includes c(1), so multiplying its twisted lift by c(v)/c(1) precisely clears the route denominator c(v). The remaining period factor is β/β (zero or one), after an associated unit is extracted as in crude_rows; no assumption that a period β is nonzero is made. The coordinate identity in crude_rows then gives integrality for p coprime to the twist level norm. The untwisted coordinate bound follows using the same test pairing at complex conjugates σ, and the complex end-period bound; the source dual Weyl norm and hook-number estimates convert it to squared norm ≤exp(x1²b²). Since r is surjective and the common row scaling is nonzero, the scaled images of the short set span the principal rows. This is the supplier of the completion in §4, conditional on the still unexpanded local quantitative and duality lemmas. No RH premise.
 
@@ -503,6 +503,78 @@ import New.Selmer.FitTwistsExist
 #print axioms exists_isFitFamily
 ```
 These commands audit the upstream interfaces, not independent Lean formalizations of the prose. No old-pin engine or external RH conclusion is imported as a proof shortcut.
+
+## 6g. Explicit common denominator, B frequency sum and signed height repayment (editor RUN53)
+
+Mission blob 23f64d503b7d64bb13b9667156b499021038d742; compact source pin unchanged. The following is a source-matched human derivation, conditional on the explicitly named native suppliers, not a newly kernel-verified proof. The compact native environment is not available here; the older 4.33 engine is not used as evidence for 4.35.
+
+**C: one denominator chosen before all twists, primes and periods.** In the context of Data.exists_mul_endPeriod_mem_embValRing, write A=gProd^b1, R=2 n_m, B=b1 r^4, f=numInfPlaces(E), d=P.d. A sufficient explicit positive integer (not a claim to have extracted the elaborated metavariable) is
+  ν = A^(2 f R²) (A d)^B.
+For each twist put q=ϑ.levelNorm. The actual grid modulus contains qA. The Fourier vacuum supplier smul_vacuumDatum_mem_standardData, applied to the indicator datum at each edge with ranks i,j, places the datum multiplied by A^(2 f i j) in standardData A, at every p coprime to q. The jet supplier mem_raises_of_dvd says that a further (A d)^L clears the raising map when L is the number of boxes and the scale c is p-integral; here c=1. The ranks are at most R and L<=B, so the required integer divides ν. These bounds are simultaneous for both chains and every edge. The precise remaining Fourier vacuum and jet integrality proofs are the named native suppliers, not deduced from tidiness. In particular no assumption that p is coprime to A, d or N1 has been added.
+
+Linearity now gives a direct induction on the chain: if ν^j times the current vector has Weyl gauge <=1, apply the raising map for the ν-scaled datum to this vector. The output is ν^(j+1) times the next vector with Weyl gauge <=1. The hypothesis at j=0 is precisely the two initial integral gauges of the native theorem. Thus after m steps BOTH vectors have integral gauges after scaling by ν^m. The pairing is bilinear and costs ν^(2m), not ν raised to the number of terms in the period.
+
+For the branching correction, use the integer pairing matrix and the signed determinant weights L_tau supplied by exists_branching_pairing, with |L_tau|<=B+ceil(20b). Write t for the grid modulus generator and u=tα, so flipScalar=bar(u)/u. We have qA/t integral, t integral, N1 α integral, α^(-1) integral. Therefore
+  q A N1 flipScalar = (qA/t) overline(t N1 α) α^(-1)
+is integral at all finite places. Its conjugate similarly clears the inverse flipScalar. At p coprime to q, division by q costs nothing in the valuation ring, hence A N1 clears both signs under each weight embedding. Applying the branching covariance to the two gauged vectors (using the inverse group element, and flipScalar^(-m) on the rank-one block) gives the signed factor prod_tau flipScalar^(m L_tau) in the original pairing. The integer matrix pairs the integral gauged coordinates integrally. The resulting sufficient multiplier is
+  M = prod_tau (A N1)^(m |L_tau|),    N = M ν^(2m).
+Each summand in endPeriod_mem after multiplying by N lies in the valuation ring: the coefficient is zero or a root of unity, and each summand uses the two scaled vectors and the above branching correction. Closure under finite sums gives the stated integrality, even for arbitrary tidy order n. No number-of-terms factor and no additional choice of p enters N.
+
+**Explicit logarithmic budget.** Put u=log x, v=log b. The actual data scale gives log v<=u/100 and u>=10^14 P.c, with P.c>=64. The following deliberately loose bounds suffice: m<=x, r<=x^6, R<=x^6, f<=x^12, b1<=8b, log gProd<=2v^11<=x, log N1<=35u<=x, log d<=x. Indeed use the native m,r,n_m,f,b1 bounds in Magnitudes, s<=32u, N1=3^c 2^s N0 and N0,d<=c. The upper bound on f follows from e^c x^11 v^(1/5)<=x^12. The huge lower bound on u absorbs the fixed rank constants. Consequently log A<=8bx, B<=8b x^24, |L_tau|<=29b x^24 (ceil20b<=21b), log(A N1)<=9bx and log(A d)<=9bx. Before taking any norm of a sum, we have the exact product formula
+  log N = m sum_tau |L_tau| log(A N1) + 2m log ν.
+Substitution yields log ν<=88 b² x^25, log M<=261 b² x^38, hence log N<=437 b² x^38<=x^99 b² (x>=2). This supplies the numerical budget with the original constant and the original prime guard, without inferring uniformity from finitely many chosen twists.
+
+The actual consumer Data.crude_rows applies N to the common grid-to-row surjection r. Its displayed delta identity, with an arbitrary integer η, pairs the scaled row against the integer dual matrix: the pairing equals η (β/β) (N endPeriod), and β/β is zero or one. The row scalar is t c(1) η N / card(WeylIndex), with t associated to β/β as in the source. The remaining integer dual pairing/saturation and short-basis inputs must still be retained. In particular a proof of this denominator does not alone prove crude_rows. Its actual next consumer heightLe_volume_rows extends the SAME independent family by the crude rows and applies one_determinant at the prime-to-level guard of the fit family. Do not replace those witnesses by independent families.
+
+**B: integrate the positivity-geometry frequency argument.** Peer fa58872b6013d7fe620f205324e570120b383c8a, with actual sum_frequencies_le body checked in GlobalSieve. For nonzero y integral outside T, let r_v=|σ_v(y)|, J_y be the index numerator, d_y>=1 its denominator index. The product formula gives sqrt(J_y)<=prod_v r_v. The rank-one subspace V_y=span(1,y) has discriminant D(V_y)<=d_y prod_v(1+r_v²): its preimage coefficient ideal has index at most d_y (locally the integral-first-coordinate condition and max(0,-ord(y)) account for its denominator), then apply the primitive lattice discriminant bound. Put a_v=|c_v|^(-1)<=|x_v|<=B, with B>=1 as in the theorem. Cancel the undamped factor of dampedPower against sqrt(J_y)^k BEFORE estimating the remainder. For each v,
+  min(1,a_v/r_v)^6 <= (1000 B²/(1+r_v²))³
+by the cases r_v<=B and r_v>=B. Since d_y^6>=d_y³, the summand is at most prod_v(|x_v|^k (1000 B²)^3) D(V_y)^(-3).
+
+For clarity the peer's summability proof uses the separated Euclidean lattice of dimension 2fk: nonzero vectors in the dyadic shell j>=0 number at most 5^(2fk) 2^(2fkj), so sum ||v||^(-2f(k+1))<=5^(2f(k+1)). The native Siegel lemma chooses an ordered s-tuple of independent lattice vectors with (prod||X_i||)^(2f)<=(8fs rd)^(fs) D(V), with the orthogonal kernel equal to V; this selection is injective. Sum the nonnegative product over tuples to obtain sum_V D(V)^(-k-1)<=(200fk rd)^(fs(k+1)). For k=2,s=1 this is (400f rd)^(3f). The map y to span(1,y) is injective. Thus the sum_frequencies_le bound follows with the native b>=1000, b>=400f. The partial-product map for prefix words is injective, so extending nonnegative sums to the Cartesian product yields the head factorization; the denominator is one on the nonzero finite head. The discriminant, lattice and Siegel inputs remain explicit. The precise b-power arithmetic at BOTH frequency invocations, then the energy inequality, still require reconstruction. No claim that this bounds the whole filling operator independently of these steps.
+
+**C: integrate the audited signed repayment without losing the main height.** Peer bf254a7be5a95ce8c1f61092d72189e63ff8f639. At cutoff T>=ceil(x1), keep the exact J-U=2 sum_(l<T) F_l log l. The paired witness of height 3B0+J-U for (Q/||W||)^2/Nclass^3 combines with height B0-J for ||W0||² and 2X for Q^(-2), yielding 4B0+2X-U<=6B0-U, X=x^999<=B0. The actual inverse ratio is Nclass³ levelNorm^(n-1) times ||W0||²/(Nclass³||W||²); the factor is integral at all relevant primes (levelNorm is a unit, Nclass need not be). Thus one retains the signed bound rather than applying absolute values to U or J. There are k/2 rank-one factors and 5m ramified factors, all squared, and the conductor powers are units. The exact repayment is k(6B0-U)+10mX. In the audited determinant comparison use the correct orientation
+  λ1/λθ = (det Kθ/det K1) (Γθ/Γ1)^(-D).
+The same comparison A cancels. The resulting height is at most D(3rB0+10mX+k(6B0-U))<=D k(log b B0-U), with the native size guards. Summing over j and substituting m k B0=budget and m k U=mainHeight recovers the sign required by C. This integrates the peer's audit rather than claiming a new independent proof of the row/Hecke suppliers.
+
+**Odd-Sha Fourier bridge added to §6f.** Peer 898feb421fd56c395062659dbdad89fa3f055db4: with commutator B(g)=cgc^(-1)g^(-1), character U=cyc^e ψ, use zψ(g)=sum_t U(s_t)x(s_t B(g)s_t^(-1)) for lifts of units mod N. The representative choice cancels because cyc(B(g))=1 and the conjugation factor of x is cyc(h)^(-e) for h in the cyclotomic kernel. The commutator identity yields the component cocycle and the retained local vanishing conditions. On H_E, Fourier summation gives sum_ψ zψ(g)=φ(N)x(B(g))=-2φ(N)x(g). When the odd components vanish, the even ones are invariant under conjugation by c; subtracting the two Fourier sums gives 4φ(N)x=0 without division by 2 or φ(N). In weight zero the unramified class-field identification gives Hom(Cl(E),O/l^ν), with O-length at most v_O(h_E). Use the peer's actual Artin/Kummer reciprocity premises for the descent in §6f, not a generic reciprocity assertion. Small-prime ray-class generator count, common fit witnesses and the local row suppliers remain explicitly open for this manuscript.
+
+**Source ledger and replay.** Compact pin as above; New/Exchange/CrudeRows.lean e84f4b0e67ed7dbfd727f8ec2dbf05a8d1e5440c; GridModuli.lean fcd137da01a82d43834ba2ac248a6049a5d569e8; CrudeModularData.lean 2be49b2690280e070d21691f8a569fc81e113b2b; GridMove.lean c1cb8b1e2cf780d03ae869204320c3f255cc02; GridFirstColumns.lean 3d2d63c9376d4b34605486faadd48ef399c39afa; New/Rows/LineArithmetic.lean f6235933aecfcf1a1c82be94b4ad3edbe5057794; New/Curve/IntegralVacuum.lean c34fe7625b03009fbd5954ea00209b425ca603b1; ConjugatesOfJets.lean 8b841d76bb938d8a18fd4341aa832a20b13dd9e0; New/Seesaw/PairTensorData.lean ade3783be65d0ac72f29b46220354147ffdca110; Lib/SiegelWeil/RallisInner/SharpData.lean ea9f665a9a89411f1353d098ff2e0a4e59a719f5; New/Data/WeilDataOfE.lean 8baa0621fbd228428a1226da1a8e98aa1251740d; AdmissibleData.lean 04208a5044bb7cf6464ef142a14d939148bed834; Magnitudes.lean 306fe7e22378322422d11b1f8415fcdac75ffd6e; New/Endgame/LongForms.lean 9eff36cf003ac398fbd24361e80e95a03d0b0e05; New/Filling/GlobalSieve.lean 0ad01a3eec4c5dcd2a51bb1d9773f7834970e372. B geometry and repayment source ledgers are in the pinned peer commits above. Original and reduced graph artifacts and axiom evidence untouched: this is an exposition/reduction at the source interfaces, not an elaborated dependency deletion.
+
+Prepared shared compact replay snippet (unexecuted; does not import the RH conclusion):
+
+```lean
+import New.Endgame.LongForms
+#check Data.exists_mul_endPeriod_mem_embValRing
+#check Data.crude_rows
+#print axioms Data.exists_mul_endPeriod_mem_embValRing
+#print axioms Data.crude_rows
+#print axioms Data.heightLe_volume_rows
+
+theorem editor_crude_log_budget (x b lm ln m : ℝ)
+    (hx : 0 ≤ x) (hm : m ≤ x) (hn : 0 ≤ ln)
+    (hM : lm ≤ 261 * b^2 * x^38)
+    (hN : ln ≤ 88 * b^2 * x^25)
+    (hp : x^26 ≤ x^38)
+    (ha : 437 * b^2 * x^38 ≤ x^99 * b^2) :
+    lm + 2*m*ln ≤ x^99 * b^2 := by
+  calc
+    lm + 2*m*ln ≤ 261*b^2*x^38 + 2*x*ln := by
+      have h := mul_le_mul_of_nonneg_right hm hn
+      linarith
+    _ ≤ 261*b^2*x^38 + 2*x*(88*b^2*x^25) := by
+      have h := mul_le_mul_of_nonneg_left hN (mul_nonneg (by norm_num : (0:ℝ) ≤ 2) hx)
+      linarith
+    _ = 261*b^2*x^38 + 176*b^2*x^26 := by ring
+    _ ≤ 437*b^2*x^38 := by
+      have h := mul_le_mul_of_nonneg_left hp (by positivity : 0 ≤ 176*b^2)
+      linarith
+    _ ≤ x^99*b^2 := ha
+#print axioms editor_crude_log_budget
+```
+
+Executed local exact integer checks: 2*8+8*9=88, 29*9=261, 261+2*88=437, 437<=2^61; all four true. These check only the constants, not the native proof. No local Lean/Lake binary. Observed CI: run 45796824465 pending, 45795940056 cancelled, 45794078905 in progress; 45791704588 orchestrator success is not evidence of this certificate. No new native PASS and zero certified root deletions.
+
+RESUME HERE (editor 09:57): replay the above on shared compact runner; derive the local dual pairing/saturation and short-basis inputs of crude_rows from their native bodies, then complete both frequency exponent substitutions and energy bound, preserving shared witnesses. The signed repayment and Fourier projection are now integrated; obtain the remaining small-prime ray-class and fit-family proof, not another equivalent restatement of the prime bound. HANDOFF TO integration, positivity geometry, theta, mathematics, audit and kernel extractor.
 
 ## 7. Exact current frontier and source ledger
 
