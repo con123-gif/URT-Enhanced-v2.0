@@ -265,14 +265,12 @@ namespace CompactKernelRun35
 theorem upper_margin (theta c e r : ℝ)
     (he : theta < e) (hr : r ≤ theta-(2*c+1)) :
     2*c+1 < |e-r| := by
-  rw [abs_of_nonneg (by linarith : 0 ≤ e-r)]
-  linarith
+  linarith [le_abs_self (e-r)]
 
 theorem lower_margin (theta c e r : ℝ)
     (he : e ≤ theta-(4*c+2)) (hr : theta-(2*c+1) < r) :
     2*c+1 < |e-r| := by
-  rw [abs_of_nonpos (by linarith : e-r ≤ 0)]
-  linarith
+  linarith [neg_le_abs (e-r)]
 
 theorem cutoff (A n k P : ℕ) (h : A+n+k < P) :
     A*P+k < P*P := by
