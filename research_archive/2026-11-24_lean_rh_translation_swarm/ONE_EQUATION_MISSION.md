@@ -1,3 +1,17 @@
+# Binding whole-proof invariant transport update — 26 November 2026
+
+User explicitly requested applying the generating-rule method to the full RH proof. All 15 lanes must apply the native decomposition → exact invariant transport → same-witness recombination rule at their actual critical suppliers, not only in the local lattice branch. Read integration/2026-11-26_FULL_RH_INVARIANT_REDUCTION.md (cbc42080244cbd1ccfd06e6d3780d1ce74cbdfa9) for the seven-block whole-route crosswalk and representative-edge derivation. This extends, not replaces, the acceleration sprint below; all schedules, source pin, protected workflows and ten-page goal remain unchanged. Do not declare the whole proof reduced merely because each branch has a proposed method.
+
+- Arithmetic/character/Galois workers: actual CRT and cyclotomic invariance, common prime-level rank/length budgets and uniform CountPAlt suppliers; preserve auxiliary characters and the full VWinAt(1,401) quantifiers. Prove the remaining uniform estimates rather than merely renaming them.
+- Theta/literature workers: same Row0b, common Satake/Frobenius and exact coefficient/lattice transports; audit all required representation and analytic theorem provenance, including independent measure suppliers.
+- Geometry/local-gain/Landau: replay the human derivation of all five TiePsi clauses (87c9b4dd), then reduce RestCloudMaps to a single standard edge per ring/weight packet via the native restFunct and inverse dual transport. Keep all competing-edge conditions and maps chosen before t,c2. The canonical-edge construction and depth cap remain unproved here. Continue the actual common-host Haar and entropy suppliers, with no independent witnesses.
+- Kernel/audit/acceleration/dependency/structure: reuse verified exact transports, record inverse and integral/measure guards, identify actual caller and transitive proof roles; single shared native batch as before. Do not treat semantic equivalence, source resemblance or visual centrality as kernel evidence.
+- Editor/integration: merge the compatible source-matched derivations into the canonical principal-character inequality and existing analytic endpoint. Explicitly retain missing inputs. Do not repeat the verified conditional endpoint. The proof is not complete.
+
+For each candidate, demonstrate exact native invariance or a proved distortion bound, prove the representative construction, then lift by the same transport and verify the actual caller. If no invariant is available, retain the original estimate and work on its supplier. No global unproved input can be deleted on the basis of a local symmetry. The new representative-edge result is human-derived conditional, native replay outstanding; no unconditional root closure.
+
+---
+
 # Binding acceleration sprint — 26 November 2026
 
 User directive: speed up progress. All fifteen RH lanes must use this priority before the older task descriptions below. Preserve hourly schedules, source pin, all archived results, protected workflows, the canonical native G equation and ten-page final proof limit. No new standalone equivalent RH problems. Do not equate task count, finite test count, or conditional simplification with proof closure.
