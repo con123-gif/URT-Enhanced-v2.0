@@ -1254,3 +1254,53 @@ In parallel scheduled C workers own actual chart existence, triangle
 and odd-Sha; B retains precise Rallis and local supplier audit.
 Do not repeat the now explicit finite group law, general frame,
 theta dimension/Schur average or conditional analytic endgame.
+
+### 26 November — global theta functional, then complete peer join
+
+Published theta-space/exact expansion and current audits at
+10d4fd45804d5eb316adcf81ab550e692136fda6, success=true, after
+rebasing editor1090f031, integration41dc5daf and geometryaa47d592.
+Read their complete new bodies and editor diff before latest integration.
+
+New COMPACT_GLOBAL_THETA_FUNCTIONAL.md closes the retained global
+functional existence, pairing and absolute Poisson identity from
+the ACTUAL vacuum model and rational lattice. Reuses RUN54 sampling
+to construct bounded invariant ell_w BEFORE theta. All ell_w zero
+would kill a Fourier series with constant coefficient e0=1. Normalize
+a nonzero one by positive I. Vacuum convolution gives Pe(v)=v0 e;
+this proves invariant-form uniqueness directly in the L1 Banach model,
+without a Hilbert-completion/Stone–von Neumann shortcut. Pairing is
+therefore exactly normalized, and its Fourier coefficients have
+absolute summability from the FIRST sampling estimate. This proves
+the actual Poisson sum and scalar uniqueness without circular
+convergence. The same normalized source theta satisfies them.
+Included actual trace/codifferent rational annihilator calculation,
+retaining ordinary local additive duality/compact Fourier theorem.
+Real Gaussian/vacuum Haar/data and global pair coherence/Rallis,
+CM/jet and arithmetic suppliers retain their own needs.
+
+Integrated41dc5daf constructive restricted adic basis and its exact
+retraction/divisibility clause, plus independent chart/exact-image
+audit of editor1090f031. The earlier live OPEN construction wording
+was updated: actual chart and topological basis are now human-derived
+and specifically audited as stated, while Witt/tilt/Amax foundations
+and full quantitative frame safety retain their separate obligations.
+Integratedaa47d592 split unipotent order by actual entrywise lift,
+|Sbar|=|Hbar|unipOrder, level-label dictionary and finite minorant/
+one-vector test-space audit. Distinct Haar normalization remains,
+and the peer does not independently audit our classical theorem's
+character/covolume bridge. Main keeps these scopes explicit.
+
+Re-read actual primitive status from refreshed state: RUN29 still
+overall error, six named checks succeeded, module_1 timeout124,
+full_RH_replay=false. No new Lean/scalar execution, no extra build
+or protected workflow change. git diff --check for the new docs.
+
+RESUME HERE: publish this checkpoint. Next material foundations
+are the ACTUAL global WeilData/CM/theta-product jet suppliers and
+Rallis/peak/decay/Haar or quantitative arithmetic safety/triangle/
+odd-Sha audit at their consumers. Do not repeat global theta
+normalization, theta dimension, general frame, finite cocycle,
+or scalar determinant/Ribet endgame. Full human proof remains
+incomplete and needs independent mathematical audit before final
+ten-page compression. No count/percentage or completion claim.
