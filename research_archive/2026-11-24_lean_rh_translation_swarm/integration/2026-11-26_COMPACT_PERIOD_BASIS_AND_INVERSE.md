@@ -296,6 +296,72 @@ determinant contraction using an established theorem with all hypotheses
 checked. It still uses the chart's stated Weierstrass and coordinate
 properties.
 
+## 7. Exact division from approximation (the actual retained criterion)
+
+The prime-to-p approximation criterion in the setting has the following
+short proof for A0=W(O_C^flat); it is now derived here. Let a,c be
+nonunits, p∤δ, and suppose that for every m there is x_m with
+
+    y−δx_m∈(a,c)^m.
+
+First, multiplication by δ is injective modulo p^n for every n.
+At n=1, reduce to the domain O_C^flat, where δ mod p is nonzero.
+For the induction, p|δb implies p|b; divide b by p and use
+p-torsion-freeness to reduce the exponent. Consequently δb∈p^n A0
+implies b∈p^n A0, with no assertion that δ is a unit.
+
+It follows that δA0 is p-adically closed. Indeed, if y=δb_n mod p^n,
+then b_n−b_m∈p^m A0 for n≥m by the preceding injectivity. The
+b_n converge in p-complete A0 to b, and p-adic separation gives
+y=δb. This justifies the closure rather than assuming that every
+principal ideal of a non-Noetherian period ring is closed.
+
+For each fixed n, both a and c belong to the radical of (p^n,δ).
+If δ is a unit there is nothing to prove. Otherwise reduce modulo p:
+O_C^flat is a rank-one valuation domain, δ mod p is nonzero, and
+the reductions of a,c are nonunits. A sufficiently large power of
+each is divisible by δ mod p (zero reductions are immediate).
+Hence a^u,c^v∈(p,δ) for some positive u,v; raising to the n-th power
+puts a^(un),c^(vn) in (p^n,δ). Every monomial of degree un+vn−1
+in a,c contains one of these powers. Thus
+
+    (a,c)^(un+vn−1) ⊂ (p^n,δ).
+
+The assumed approximation at that finite depth gives y∈(p^n,δ).
+As n was arbitrary, p-adic closedness of δA0 now gives δ|y.
+This proves ThetaKernel.dvd_of_approx with EXACTLY its hypotheses,
+including zero-divisors in the auxiliary quotient; no Noetherianity
+or comparison between unproved topologies is used. For section 4 take
+a=p,c=ξ and the SAME δ from lQ=δg.
+
+## 8. The ideal comparison used by the contraction limit
+
+Here is also the needed proof of A0∩p^n A=(p,ξ)^n A0, given the
+actual presentation A=A_max and its computed residue ring
+
+    A/pA=(A0/(p,ξ))[X],        pX=ξ in A.
+
+The residue presentation is AmaxStructure.exists_reduction_mod_p;
+p is a non-zero-divisor in A. Multiplication by the polynomial X
+is injective on (A0/(p,ξ))[X] over ANY coefficient ring. Induction
+using p-torsion-freeness shows that Xb∈p^n A implies b∈p^n A.
+This is the source's monic-polynomial regularity argument, and does
+not require the coefficient ring A0/(p,ξ) to be reduced or a field.
+
+Suppose a∈A0 maps into p^(n+1) A. Apply θ_A:A→O_C: θ(a) is
+divisible by p^(n+1). Surjectivity of θ:A0→O_C gives c∈A0 with
+θ(a)=p^(n+1)θ(c); its kernel criterion gives
+
+    a=p^(n+1)c+ξb,       b∈A0.
+
+In A, ξb=pXb lies in p^(n+1) A. Cancel the non-zero-divisor p;
+regularity of X modulo p^n gives b∈p^n A. Induction yields
+b∈(p,ξ)^n A0, and hence a∈(p,ξ)^(n+1) A0. The reverse inclusion
+holds because both p and ξ=pX lie in pA. This proves the claimed
+equality at every n, including n=0, so section 2's Cauchy and limit
+arguments use an established comparison rather than an implicit
+change of completion.
+
 ## Caller, provenance and remaining boundary
 
 Combining sections 1–5 with ce3f88d1, the determinant selection and
@@ -334,6 +400,7 @@ of this human proof. RUN29's six native probes and timeout retain their
 earlier scope; no new verification result is claimed here.
 
 RESUME HERE: audit the use of (8) in section 5, the Frobenius
-conjugation in (4)–(5), and section 6's Ax application; then derive
-the actual p^(4δ) radius supplier at FrameTheorem/LongGap.
+conjugation in (4)–(5), section 6's Ax application, and sections 7–8's exact ideal arguments.
+The quantitative radius is now derived in the companion radius appendix;
+continue the initial crystalline period/coordinate construction.
 Do not redo the finite cup algebra or global analytic endgame.

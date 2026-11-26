@@ -557,3 +557,22 @@ audit and its explicitly listed ring/initial-period prerequisites.
 Next inspect initial CrystallinePeriodMatrix and normalized division,
 with exact standard-theorem bridges where available. Do not repeat the
 now-derived quotient identity, coefficient collection or global endgame.
+
+## Continued after a5106634 — exact ideal/closure inputs
+
+Derived two retained ring steps in the existing period-basis appendix:
+(1) prime-to-p principal ideals in A_inf are p-adically closed because
+multiplication by delta is injective mod p^n; rank-one valuation makes
+approximation in (a,c)^m imply membership in every (p^n,delta), hence
+actual delta division. (2) the exact comparison
+A_inf intersect p^n A_max=(p,xi)^n follows by induction from
+A_max/p=(A_inf/(p,xi))[X], monic X regularity and theta surjectivity.
+No Noetherian or reduced-residue assumption. Integrated both at the
+actual basis/contraction consumer. Independent audit pending; no
+new native execution or finite diagnostic.
+
+RESUME HERE: initial period-matrix and coordinate-extension/division
+construction, with chart and Fontaine rings distinguished. The frame,
+radius and final Ribet implications are now explicitly reconstructed,
+with their own prior source assumptions and pending independent audit.
+Other A/B frontiers and the standard verification limits remain.
