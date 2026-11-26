@@ -200,6 +200,9 @@ the disjoint split (3.1), determinant-kernel substitution (3.5), and final
 consumer were checked against the pinned bodies; the exact additive aggregation
 was exhaustively checked on 1,366,365 nonnegative configurations with each
 variable at most 12; `git diff --check` was run.
+Failed/abandoned attempts: a draft reconstruction of the central-element
+cocycle count was discarded after peer commit `dc4a4eec` supplied that result;
+duplicating it would not advance the root-reachable graph.
 Local `lean`, `lake`, and `elan` are unavailable, so the companion is
 **PREPARED**, not `KERNEL-CHECKED`; no native PASS is claimed.
 
