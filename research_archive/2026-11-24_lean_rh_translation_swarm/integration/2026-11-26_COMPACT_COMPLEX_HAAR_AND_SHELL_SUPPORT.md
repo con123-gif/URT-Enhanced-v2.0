@@ -416,9 +416,9 @@ The connected human path is:
       -> the native Bessel-system caller.
 
 Sections 1-2 expand the Haar supplier; sections 3-5 expand its
-previously unproved head/back-substitution geometry. Still retain
-the capped pivot recursion and weighted selfNorm integration at
-LocalTheorem, Bessel majorant construction/boxed-frame separation,
+previously unproved head/back-substitution geometry. The capped pivot recursion and weighted selfNorm integration are now
+expanded in 2026-11-26_COMPACT_WEIGHTED_TOWER_ENERGY.md at their
+complex caller. Still retain Bessel majorant construction/boxed-frame separation,
 and the global pointwise classSize and linkPairing suppliers. They
 are separate obligations. This note is not an audit of all these
 predecessors or of the entire B root. The matrix-Jacobian block
@@ -429,7 +429,7 @@ Its extra shell and matrix-size exponent certificates are integer
 polynomial checks, not tests of Haar measures, matrix geometry, or RH.
 No native Lean run is claimed.
 
-RESUME HERE: audit the capped LocalTheorem recurrence and weighted
-selfNorm integral with the exact heads; next connect the remaining
+RESUME HERE: audit the companion capped recurrence and weighted
+selfNorm derivation with the exact heads; next connect the remaining
 pointwise classSize and LinkPairing primitive lifts to BlockBound.
 Do not repeat the gauge inverse moment, cone mass or shell scalar sum.

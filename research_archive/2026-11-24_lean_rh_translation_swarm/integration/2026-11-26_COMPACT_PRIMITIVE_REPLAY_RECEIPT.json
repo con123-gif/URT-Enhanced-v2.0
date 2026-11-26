@@ -1,0 +1,135 @@
+{
+  "scope": "authentication of committed partial native replay only",
+  "source_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "state_commit": "c7c80a98dabf1f67e715df1ff9db2bf72fad09fc",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45803534769",
+  "overall_task_passed": false,
+  "authenticated_outputs": [
+    {
+      "path": "checkout.log",
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "sha256": "24eac7a8dfe4fd73404ce020fc302ef6598fd14bdcfba5695b47c7f0249957e4"
+    },
+    {
+      "path": "extract.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "sha256": "f57becc3cb36842a669c6d92a04b0a04052b01c993ef8c333e86206bac76d3db"
+    },
+    {
+      "path": "module_0.log",
+      "sha256": "ab2f25bc03c0837351e4607a68f040d22e83597d10e46722dd06b38522cbf071"
+    },
+    {
+      "path": "module_0_build.log",
+      "sha256": "c45c7c455aafb3a007c17829a1e2a566f1a52cb1486dcc5d6bc6dc9c2521284f"
+    },
+    {
+      "path": "module_1_build.log",
+      "sha256": "35727425b4878c1ff11db5324b9ff44ebcb5409fd40e0ca3814540b8c369c6d9"
+    },
+    {
+      "path": "module_2.log",
+      "sha256": "5c72c5f884fe7576e4c601d049fb6416d4e450c5eb97ea8231fda205c71a1c94"
+    },
+    {
+      "path": "module_2_build.log",
+      "sha256": "d6537502e475313d92eab6f4544fed87c60c1b321b5924c165f5b29d40950a6e"
+    },
+    {
+      "path": "pins.json",
+      "sha256": "fdef4704f20b6e148ddb7b889459cf1b1910c279828a93a828149b10ea30fa73"
+    },
+    {
+      "path": "remote.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "sha256": "3971a4da40f670323cfb32452d050fe90e852ede41f5f28673a48915801b0019"
+    },
+    {
+      "path": "targeted_results.json",
+      "sha256": "7eb0e843fb9717e609eefecc09342f184fc3c6d5c2443151c8e4f50edbe1c6a4"
+    },
+    {
+      "path": "version.log",
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "successful_native_checks": [
+    {
+      "theorem": "IsPencil.length_le_of_unseen_class",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "tilting",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "IsPencil.length_le_of_drop_ties",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Filling.energy_fixingSet_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Filling.sum_le_of_positive_type",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Filling.Fits.exists_translate_finrank_comap_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "timed_out_build": {
+    "module": "New.Columns.JetExponentBound",
+    "returncode": 124,
+    "seconds": 2700.11,
+    "log": "module_1_build.log",
+    "probe_executed": false,
+    "meaning": "bounded timeout; no theorem or human-proof verdict"
+  },
+  "new_Lean_execution": false,
+  "human_reconstruction_verified": false,
+  "full_RH_replay": false
+}

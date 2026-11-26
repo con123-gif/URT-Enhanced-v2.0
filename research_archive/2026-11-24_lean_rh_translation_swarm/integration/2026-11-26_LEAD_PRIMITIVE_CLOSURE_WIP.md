@@ -123,3 +123,29 @@ recursion; expand their exact dependencies at the shell caller, then
 advance the pointwise primitive lifts/classSize branch. Preserve the
 Haar normalization and support arguments at this checkpoint before
 continuing.
+
+
+Second connected result after saved commit 117456993214a4fc94d2fcc140d00ffea7aaf513:
+2026-11-26_COMPACT_WEIGHTED_TOWER_ENERGY.md expands kernel admissibility,
+three weight moments, capped pivot, the descending selfNorm invariant,
+globalConst^3, exact head-covariance cancellation and two-gauge positions
+at the native complex shell caller. Main section 8 updated. New human
+proofs pending independent mathematical audit; no native replacement replay.
+
+Verification correction from current receipts: remote.origin.fetch tracks
+only newtons-cathedral, so explicitly fetch the research-state branch
+with a refspec rather than assuming a multi-branch fetch updates its
+tracking ref. Current state c7c80a98 includes primitive task
+45803534769: overall ERROR, six native B/C theorem probes succeeded
+with the three standard axioms, A JetExponentBound build timed out
+(2700.11s, exit124), no A probe. Executed new receipt authenticator:
+all sixteen outputs have exact bytes/SHA256, all six probes match
+module logs, source and Mathlib pins match. No fresh Lean execution.
+Saved JSON and reproducible script inside integration/.
+RUN30 f4015a87 audits central count with native f and B=-f transport;
+main C now retains its corrected corestriction sign and exact guards.
+
+RESUME HERE: reconstruct LinkPairing's primitive integral lifts and
+minor/discriminant costs at pairInvariant_mul_le. Search existing
+peer notes first to avoid repeating a completed supplier. Keep
+Haar/tower arguments at this checkpoint before proceeding.
