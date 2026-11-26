@@ -318,3 +318,27 @@ RESUME HERE: crystalline Kisin cut/cokernel, deep-point lifting and
 Frobenius walk at ExponentTheorems/LongGap; independently audit
 the row, Rallis and line derivations. Preserve period-vanishing/
 carrier and local theta inputs at comparison consumers.
+
+Tenth connected result after ea9e77997de4c29d47191a693875b8c801c25b0e:
+2026-11-26_COMPACT_UNRAMIFIED_KISIN_COKERNEL.md reconstructs the actual
+unramified annihilator p^s E^t and its initial points. The least-common
+z-power/Frobenius estimate and factorial valuation bound produce all
+monomials in p^s E^t modulo p^(s+t+1); the explicit Nakayama step
+removes the modulus. The integral frame and weighted Galois derivative
+are stated precisely as foundational inputs. No extra rank or
+coefficient-ring ramification factor is introduced.
+
+The same note constructs points of the exact raisedAtE exponents,
+and derives additive cost composition for finite depth steps while
+preserving both the old point-exponent and Galois-depth systems.
+The zero step is separate, no division by zero. The actual third-side
+weights and few-low caller guards are checked. This supplies earlier
+retained primitive exposition, not all crystalline branches.
+Source blobs and whitespace checked; no new Lean execution or
+independent mathematical audit. Main section 8 integrated.
+
+RESUME HERE: Frobenius cut walk and four safe-pair conditions in
+LongGap/CupProductBound; then sparse-thick/two-size cut constructions.
+Check latest peer 02cf3869 tame local-global cost before duplicating
+it, and 98cc1e90 Bessel peak/graph and 20cc89bf glued comparison.
+Retain all earlier geometry, row, Rallis and line audit boundaries.
