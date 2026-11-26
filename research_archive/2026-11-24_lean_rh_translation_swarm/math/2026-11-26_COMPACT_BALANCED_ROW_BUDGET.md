@@ -82,7 +82,7 @@ For `a | ell^M`, split the set in the record as
 
 \[
  S_0=S_\ell\sqcup S_g,\qquad
- S_\ell=\{v:v\mid\ell\},quad
+ S_\ell=\{v:v\mid\ell\},\quad
  S_g=\operatorname{placesAboveG}(D)\setminus S_\ell.        \tag{3.1}
 \]
 
