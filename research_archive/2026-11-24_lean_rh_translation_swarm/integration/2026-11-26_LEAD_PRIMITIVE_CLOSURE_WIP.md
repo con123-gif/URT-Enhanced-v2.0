@@ -538,3 +538,22 @@ row and primitive reciprocity applicability. A next caller is
 hasType_twisted_hecke and marked class-representative intertwining;
 B uses latest one-vector/absolute unfolding and distinct band suppliers.
 Keep the shared native runner and all hypotheses; do not redo endgame.
+
+## Continued after 452515bd — exact quotient LTE supplier
+
+Closed the explicit cyclotomic quotient input retained by our radius:
+COMPACT_CYCLOTOMIC_QUOTIENT_LTE.md proves the source lifting-the-exponent
+lemma by binomial expansion and unit lifting in ANY surjective quotient
+of A_inf with the actual hypothesis. No nonunit cancellation; p=2 and
+zero-divisors included. In A_inf/(z mu), mu²=p mu tau u verifies the
+hypothesis; lifting the resulting equality gives exactly
+ tau E(p^v_p(n)+beta z)=alpha([epsilon]^n−1).
+Updated the actual radius and manuscript consumer. The beta z term
+and all original costs retained. No numerical diagnostic or native run.
+
+RESUME HERE: the connected C period/frame/radius/local-defect/Ribet
+chain is now expanded through these actual suppliers, pending independent
+audit and its explicitly listed ring/initial-period prerequisites.
+Next inspect initial CrystallinePeriodMatrix and normalized division,
+with exact standard-theorem bridges where available. Do not repeat the
+now-derived quotient identity, coefficient collection or global endgame.

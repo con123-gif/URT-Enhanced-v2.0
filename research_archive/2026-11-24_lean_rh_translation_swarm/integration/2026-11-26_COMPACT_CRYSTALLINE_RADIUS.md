@@ -48,9 +48,11 @@ needed here is, for every n≥1 with v=v_p(n),
     τ E(p^v+βz)=α([ε]^n−1),  α,β∈A0.                 (R3)
 
 This is the exact `exists_tau_mul_E_eq_mul_epsTilt_pow_sub` of
-PeriodMatrixBasis. It follows there from its stated quotient-ring
-lifting-the-exponent lemma, not from division by [ε]^n−1 in A0.
-The construction of the chart and these foundational ring facts remain
+PeriodMatrixBasis. Its integral quotient-ring proof is now supplied in
+[the cyclotomic quotient appendix](2026-11-26_COMPACT_CYCLOTOMIC_QUOTIENT_LTE.md):
+apply binomial expansion in A0/(zμ), where μ² is divisible by pμτ,
+then lift the resulting equality. No division by [ε]^n−1 in A0 occurs.
+The construction of the chart and other foundational ring facts remain
 their own source dependencies.
 
 ## 2. Normalize once at z=0 and control the Galois difference
