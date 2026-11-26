@@ -763,3 +763,47 @@ N0/M/N distinction. Continue actual marked hY and level/covariance
 suppliers, B sharp absolute unfolding and one-vector Siegel-Weil, and
 C safety/Ext plus comparison size/detection. Do not repeat supplied
 root lemma, flag volume, tame multiplier or scalar Ribet payment.
+
+
+### 26 November — actual marked orbit and every HeckeSizes guard
+
+Same-caller checkpoint 8e256416415819b65da01a2384c91fcd85837fec
+was published; fetched new workers a599aa5c and 622fbfec and read
+their complete arguments. The theta worker independently completed
+the class-label/hY argument being examined here. Retained that
+contribution rather than publishing a duplicate. Checked its incoming
+transpose label, split-supported level comparison, and exact Hook
+convention: only heights below rank enter Schur, with determinant
+exponent zero at stage zero. No full-height determinant is omitted.
+
+New appendix COMPACT_MARKED_ORBIT_AND_SIZES.md completes the actual
+MarkedPrimeType specialization: O=dN, power-of-two m divides N,
+one top orbit over l and conjugate, alternating maps, full local
+Frobenius congruence including fractions, residue cardinality p^(dN),
+and A_l=aN/2. The served-order input is explicitly expanded by
+factoring the odd integer power at the 2^s conductor, s=22 log2(m).
+Every one of the ten HeckeSizes guards is checked at its actual
+arguments kappa=x^-14,y=x^40,z=128 A_l log(b)/(mp). The strict
+degree guard uses m>=2log(b); the large-power guard keeps
+r log(p)<log(m)+log(p), not a loose bound inside P^(3r).
+The conclusion feeds the same marked operator and integral columns
+at the arbitrary modulus used by the existing uniform index proof.
+
+Integrated this proof and theta RUN63 into the main manuscript;
+removed the now-stale OPEN hY/size wording, retaining independent
+audits and the upstream class/cyclotomic/root/count/depth suppliers.
+Also integrated structure RUN60's finite generator, same CM cluster
+parameter, rank-one extraction of the unrestricted central character
+identity, and well-defined semilinear span map. Retained the actual
+CM/frame/period/compact-shift and finite Weil suppliers.
+
+Status HUMAN DERIVED / source matched, independent audit pending.
+No new Lean/lake or redundant scalar diagnostic. No full RH claim,
+no protected edits, no worker schedule changes. Primitive RUN29
+remains six successful named probes plus an A module timeout.
+
+RESUME HERE: independently audit the new marked orbit and all
+ten guards. Continue SemilinearWeilLaw self-duality -> unit
+factorization -> vacuum projection/multiplier at the actual common
+jet/comparison caller, then single-stage theta transfer and B absolute
+unfolding. C Hodge/rank/depth audit and safety/Ext remain explicit.
