@@ -1,0 +1,112 @@
+⚠ [9047/9118] Replayed Lib.General.LinearAlgebra.Base
+warning: src/Lib/General/LinearAlgebra/Base.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+ℹ [9050/9118] Replayed Lib.General.NumberTheory.Embeddings
+info: src/Lib/General/NumberTheory/Embeddings.lean:12:8: Try these:
+  [apply] [grind .] for pattern: [@star (RingHom #3 `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+  [apply] [grind
+    =>] for pattern: [IsTotallyComplex #3 #2, @star (RingHom _ `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+⚠ [9051/9118] Replayed Lib.General.Algebra.AdicRingHomExt
+warning: src/Lib/General/Algebra/AdicRingHomExt.lean:137:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9059/9118] Replayed Lib.Adelic.Adeles.AdeleTopology
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:13:18: `multiplicity_eq_one_of_not_finiteMultiplicity` does not have the `[simp]` attribute
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:31:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:121:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9064/9118] Replayed Lib.Adelic.Hecke.HeckeBasic
+warning: src/Lib/Adelic/Hecke/HeckeBasic.lean:66:73: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9065/9118] Replayed Lib.General.LinearAlgebra.ValuedMatrix
+warning: src/Lib/General/LinearAlgebra/ValuedMatrix.lean:73:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9068/9118] Built Lib.General.Algebra.SuccessiveApprox (5.4s)
+⚠ [9070/9118] Replayed Lib.Adelic.QuotientMeasure.Packing
+warning: src/Lib/Adelic/QuotientMeasure/Packing.lean:110:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9071/9118] Built Lib.Weil.DualPair.Kronecker (12s)
+⚠ [9080/9118] Replayed Lib.ClassField.HeckeL.EulerProduct
+warning: src/Lib/ClassField/HeckeL/EulerProduct.lean:281:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9081/9118] Replayed Lib.General.LinearAlgebra.ColumnLattices
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:17: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9083/9118] Replayed Lib.Adelic.QuotientMeasure.Unimodular
+info: src/Lib/Adelic/QuotientMeasure/Unimodular.lean:145:65: Try this:
+  [apply] field_simp
+✔ [9084/9118] Built Lib.Weil.GaussSum.LocalHomUnit (9.0s)
+⚠ [9085/9118] Built Lib.Adelic.Hecke.ClassMean (17s)
+warning: src/Lib/Adelic/Hecke/ClassMean.lean:69:58: This simp argument is unused:
+  Set.subset_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [card_preimage, filter_eq_self.2, ← mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9086/9118] Built Lib.General.NumberTheory.QuadFieldSplitting (12s)
+⚠ [9087/9118] Replayed Lib.PadicHodge.PeriodRings.CpIntegers
+warning: src/Lib/PadicHodge/PeriodRings/CpIntegers.lean:102:41: `Isometry.lipschitz` has been deprecated: Use `Isometry.lipschitzWith` instead
+⚠ [9090/9118] Replayed Lib.General.Groups.ArtinDefs
+warning: src/Lib/General/Groups/ArtinDefs.lean:42:39: `nhds_basis_clopen` has been deprecated: Use `nhds_basis_isClopen` instead
+
+Note: The updated constant has a different type:
+  ∀ {X : Type u_1} [inst : TopologicalSpace X] [ZeroDimensionalSpace X] (x : X),
+    (nhds x).HasBasis (fun s ↦ IsClopen s ∧ x ∈ s) _root_.id
+instead of
+  ∀ {X : Type u_1} [inst : TopologicalSpace X] [ZeroDimensionalSpace X] (x : X),
+    (nhds x).HasBasis (fun s ↦ x ∈ s ∧ IsClopen s) _root_.id
+✔ [9092/9118] Built Lib.General.Measure.HaarModulus (13s)
+✔ [9093/9118] Built Lib.Adelic.Unitary.SpaceGram (4.0s)
+✔ [9094/9118] Built Lib.Adelic.Adeles.AdelicAbs (5.5s)
+✔ [9095/9118] Built Lib.General.Groups.CompactMean (6.3s)
+✔ [9097/9118] Built Lib.Analytic.Landau.PolarLandau (17s)
+✔ [9099/9118] Built Lib.PadicHodge.PeriodRings.Ainf (15s)
+✔ [9100/9118] Built Lib.General.Algebra.GeneralisedIndex (5.2s)
+⚠ [9102/9118] Built Lib.Weil.Construction.GaussSumSign (6.1s)
+warning: src/Lib/Weil/Construction/GaussSumSign.lean:18:40: `IsIntegral.exists_int_iff_exists_rat` has been deprecated: Use `IsIntegral.mem_range_ratCast_iff` instead
+✔ [9103/9118] Built Lib.PadicHodge.PeriodRings.ThetaKernel (21s)
+✔ [9105/9118] Built Lib.General.Algebra.InertResidue (11s)
+⚠ [9106/9118] Built Lib.Adelic.Unitary.CongruenceLevel (40s)
+warning: src/Lib/Adelic/Unitary/CongruenceLevel.lean:51:55: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9108/9118] Built Lib.Adelic.Adeles.AdelicModulus (9.6s)
+warning: src/Lib/Adelic/Adeles/AdelicModulus.lean:21:59: This simp argument is unused:
+  toAdd_unzero_eq_log
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [FinitePlace.norm_def, WithZeroMulInt.toNNReal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9109/9118] Replayed Lib.ClassField.Places.PadicDecomposition
+info: src/Lib/ClassField/Places/PadicDecomposition.lean:56:67: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/ClassField/Places/PadicDecomposition.lean:108:79: `Topology.IsInducing.topologicalGroup` has been deprecated: Use `Topology.IsInducing.isTopologicalGroup` instead
+✔ [9110/9118] Built Lib.PadicHodge.PeriodRings.AmaxStructure (40s)
+✔ [9111/9118] Built Lib.Weil.Unramified.HeckeGL (30s)
+✔ [9112/9118] Built Lib.PadicHodge.PeriodRings.BdRPlus (12s)
+✔ [9113/9118] Built Lib.Weil.Unramified.SphericalHecke (38s)
+⚠ [9114/9118] Built Lib.PadicHodge.PeriodRings.BdR (31s)
+warning: src/Lib/PadicHodge/PeriodRings/BdR.lean:131:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9115/9118] Built Lib.PadicHodge.Crystalline.Defs (8.3s)
+✔ [9116/9118] Built Lib.GaloisRep.Main.LocalEmbedding (4.5s)
+✔ [9117/9118] Built Lib.CM.Genus.QuadraticZeta (8.6s)
+✔ [9118/9118] Built New.Heights.Heights (7.6s)
+Build completed successfully (9118 jobs).

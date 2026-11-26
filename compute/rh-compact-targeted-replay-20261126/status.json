@@ -1,0 +1,122 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 912.12,
+  "tail": "",
+  "id": "rh-compact-targeted-replay-20261126",
+  "question": "Memory-limited compact verification fallback: replay two standalone peer certificates and build only three named source modules with shared Mathlib cache and per-theorem axiom checks. Do not build Main or override the full-build resource guard; retain partial results and distinguish native checks from human caller proof.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN28_COMPACT_TARGETED.py --out {out}",
+  "utc": "2026-11-26T10:28:55Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "4c55b565a0583f08b6c87de5ae3ddfa8d3a9747a",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45799225653",
+  "outputs_committed": [
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "e7f8db4776fbbd6e51b6b1009adebe2325e1baee5d14be57668b74fc282e7a7b"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7757,
+      "sha256": "90cf6a6a1d723790f02330c83bd7ee6ee592ccfff09048cd121b2a65d39b9064"
+    },
+    {
+      "path": "module_0.log",
+      "bytes": 186,
+      "sha256": "c56f7521050c65faf90b23dd9921e9903d6f03d85929194b8531bd58dc93c7d3"
+    },
+    {
+      "path": "module_0_build.log",
+      "bytes": 10267,
+      "sha256": "a289e9b325962c0169ecfc1b3e2b0e80e7eaff3755fea8291940c96c8c620a3e"
+    },
+    {
+      "path": "module_1.log",
+      "bytes": 374,
+      "sha256": "e74ab8d2fe585e149a2e82a68fe426797d509cfc94177f0f0aee086782f9a2fe"
+    },
+    {
+      "path": "module_1_build.log",
+      "bytes": 1617,
+      "sha256": "5c0ba3e1a7570fe7091602c4b482bc75172ace80ca44b226cfaca79be2d4357a"
+    },
+    {
+      "path": "module_2.log",
+      "bytes": 225,
+      "sha256": "b6ac62e571aa9646ba17930753856acf04cbd1765f17ca885318dad796c8f937"
+    },
+    {
+      "path": "module_2_build.log",
+      "bytes": 7672,
+      "sha256": "a9c404c1ff63b5b015753bb7a16284dc8979eccecb5c029393f57d074a0b2914"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 458,
+      "sha256": "8e4f62ffd743a328998109550b30163c72b3ff795ed4822c035ac05d46b0d14d"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 125,
+      "sha256": "b0ff666eb12eb356129ed0cf6108e75e7133202e74b63379b0b0a4f20540cd0f"
+    },
+    {
+      "path": "ribet_prefix.log",
+      "bytes": 619,
+      "sha256": "e58a842a723ae9576aff4d5435f0aac6e51e2383e28984bff1588bccb900dd5d"
+    },
+    {
+      "path": "root_gauss_scalar.log",
+      "bytes": 208,
+      "sha256": "2bf21d76a80023024543ea1c32525116897ba1be07c6e2f9b78e00b45b6232f1"
+    },
+    {
+      "path": "targeted_results.json",
+      "bytes": 4040,
+      "sha256": "32e5fe2c81e99ef92ea5bb0be32db9d216be98208bebb9ba33ba857a61544b12"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

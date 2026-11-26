@@ -1,0 +1,148 @@
+⚠ [9047/9114] Built Lib.General.LinearAlgebra.Base (4.7s)
+warning: src/Lib/General/LinearAlgebra/Base.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [9048/9114] Built Lib.ClassField.Places.GaloisDefs (6.4s)
+✔ [9049/9114] Built Lib.General.LinearAlgebra.SubmersionZero (4.4s)
+✔ [9050/9114] Built Lib.ClassField.GaloisCohomology.ContinuousCocycles (16s)
+⚠ [9051/9114] Built Lib.General.Algebra.AdicRingHomExt (8.3s)
+warning: src/Lib/General/Algebra/AdicRingHomExt.lean:137:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9052/9114] Built Lib.General.Analysis.OstrowskiTaussky (12s)
+✔ [9053/9114] Built Lib.General.Groups.ValuationPair (15s)
+✔ [9054/9114] Built Lib.General.LinearAlgebra.PartialDerivComm (16s)
+✔ [9055/9114] Built Lib.Adelic.Adeles.CoprimeValuation (17s)
+✔ [9056/9114] Built Lib.General.LinearAlgebra.CommonEigenvectors (10s)
+✔ [9057/9114] Built Lib.General.Analysis.ZpowSum (18s)
+✔ [9058/9114] Built Lib.ClassField.GaloisCohomology.CyclicClass (6.9s)
+✔ [9059/9114] Built Lib.Weil.Construction.SubmoduleNormedSpace (4.3s)
+⚠ [9060/9114] Built Lib.General.LinearAlgebra.ValuedMatrix (6.3s)
+warning: src/Lib/General/LinearAlgebra/ValuedMatrix.lean:73:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9061/9114] Built Lib.General.LinearAlgebra.ExtendColumns (7.6s)
+⚠ [9062/9114] Built Lib.Adelic.Hecke.HeckeBasic (6.9s)
+warning: src/Lib/Adelic/Hecke/HeckeBasic.lean:66:73: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9063/9114] Built Lib.General.Measure.SubgroupIntegral (6.4s)
+✔ [9064/9114] Built Lib.PadicHodge.Crystalline.NonUnitalUnits (6.4s)
+ℹ [9065/9114] Built Lib.General.NumberTheory.Embeddings (4.9s)
+info: src/Lib/General/NumberTheory/Embeddings.lean:12:8: Try these:
+  [apply] [grind .] for pattern: [@star (RingHom #3 `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+  [apply] [grind
+    =>] for pattern: [IsTotallyComplex #3 #2, @star (RingHom _ `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+⚠ [9066/9114] Built Lib.Adelic.Adeles.AdeleTopology (11s)
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:13:18: `multiplicity_eq_one_of_not_finiteMultiplicity` does not have the `[simp]` attribute
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:31:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:121:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9067/9114] Built Lib.General.Algebra.RingActions (9.8s)
+✔ [9068/9114] Built Lib.ClassField.Places.LocalDefs (4.5s)
+✔ [9069/9114] Built Lib.General.LinearAlgebra.AdelicRingDefs (7.6s)
+✔ [9070/9114] Built Lib.DiscreteSeries.CuspKernel.CircleMean (21s)
+✔ [9071/9114] Built Lib.General.NumberTheory.QuadField (9.5s)
+⚠ [9072/9114] Built Lib.Adelic.QuotientMeasure.Packing (15s)
+warning: src/Lib/Adelic/QuotientMeasure/Packing.lean:110:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9073/9114] Built Lib.Adelic.Adeles.AdditiveCharDefs (6.4s)
+✔ [9074/9114] Built Lib.Adelic.Adeles.AdeleIdempotent (5.6s)
+✔ [9075/9114] Built Lib.General.Groups.RatModInt (5.0s)
+✔ [9076/9114] Built Lib.ClassField.Places.ProfiniteGalois (9.5s)
+✔ [9077/9114] Built Lib.Adelic.QuotientMeasure.PeriodicMean (5.9s)
+⚠ [9078/9114] Built Lib.General.LinearAlgebra.ColumnLattices (17s)
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:17: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9079/9114] Built Lib.Adelic.QuotientMeasure.Unimodular (12s)
+info: src/Lib/Adelic/QuotientMeasure/Unimodular.lean:145:65: Try this:
+  [apply] field_simp
+✔ [9080/9114] Built Lib.Adelic.Unitary.SpaceDefs (17s)
+⚠ [9081/9114] Built Lib.ClassField.HeckeL.EulerProduct (21s)
+warning: src/Lib/ClassField/HeckeL/EulerProduct.lean:281:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9082/9114] Built Lib.GaloisRep.Hilbert90.TameDescent (25s)
+⚠ [9083/9114] Built Lib.PadicHodge.PeriodRings.CpIntegers (11s)
+warning: src/Lib/PadicHodge/PeriodRings/CpIntegers.lean:102:41: `Isometry.lipschitz` has been deprecated: Use `Isometry.lipschitzWith` instead
+✔ [9084/9114] Built Lib.ClassField.GaloisCohomology.DiscreteUnits (31s)
+✔ [9085/9114] Built Lib.ClassField.Places.CyclotomicCharacter (12s)
+✔ [9086/9114] Built Lib.General.Analysis.FundamentalDomain (21s)
+⚠ [9087/9114] Built Lib.Adelic.Witt.FrameAction (31s)
+warning: src/Lib/Adelic/Witt/FrameAction.lean:131:95: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9088/9114] Built Lib.General.Groups.ArtinDefs (13s)
+warning: src/Lib/General/Groups/ArtinDefs.lean:42:39: `nhds_basis_clopen` has been deprecated: Use `nhds_basis_isClopen` instead
+
+Note: The updated constant has a different type:
+  ∀ {X : Type u_1} [inst : TopologicalSpace X] [ZeroDimensionalSpace X] (x : X),
+    (nhds x).HasBasis (fun s ↦ IsClopen s ∧ x ∈ s) _root_.id
+instead of
+  ∀ {X : Type u_1} [inst : TopologicalSpace X] [ZeroDimensionalSpace X] (x : X),
+    (nhds x).HasBasis (fun s ↦ x ∈ s ∧ IsClopen s) _root_.id
+✔ [9089/9114] Built Lib.Adelic.Adeles.LocalComponents (21s)
+✔ [9090/9114] Built Lib.ClassField.HeckeCharacter.CharacterDefs (6.3s)
+✔ [9091/9114] Built Lib.ClassField.GaloisCohomology.CupProduct (12s)
+⚠ [9092/9114] Built Lib.Adelic.Adeles.IdeleHilbert90 (31s)
+warning: src/Lib/Adelic/Adeles/IdeleHilbert90.lean:177:60: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9093/9114] Built Lib.ClassField.Places.Places (11s)
+⚠ [9094/9114] Built Lib.Adelic.Cartan.ProjectiveModules (35s)
+warning: src/Lib/Adelic/Cartan/ProjectiveModules.lean:67:27: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/Adelic/Cartan/ProjectiveModules.lean:105:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9095/9114] Built Lib.Adelic.Adeles.RationalPoints (11s)
+✔ [9096/9114] Built Lib.General.Algebra.FittingDuality (29s)
+ℹ [9097/9114] Built Lib.ClassField.GreenbergWiles.ExtendCharacter (36s)
+info: src/Lib/ClassField/GreenbergWiles/ExtendCharacter.lean:33:75: Try this:
+  [apply] ring_nf!
+  
+  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.
+    
+  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9098/9114] Built Lib.ClassField.Places.LocalFrobenius (10s)
+⚠ [9099/9114] Built Lib.ClassField.Places.AdeleNorm (15s)
+warning: src/Lib/ClassField/Places/AdeleNorm.lean:106:4: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9100/9114] Built Lib.ClassField.Places.LocalExtension (10s)
+✔ [9101/9114] Built Lib.ClassField.HeckeCharacter.CharacterLevels (8.5s)
+✔ [9102/9114] Built Lib.General.NumberTheory.StableLattice (32s)
+✔ [9103/9114] Built Lib.ClassField.Places.UnramifiedCharacters (7.0s)
+✔ [9104/9114] Built Lib.ClassField.GaloisCohomology.SylowReduction (20s)
+⚠ [9105/9114] Built Lib.ClassField.Places.PadicDecomposition (21s)
+info: src/Lib/ClassField/Places/PadicDecomposition.lean:56:67: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/ClassField/Places/PadicDecomposition.lean:108:79: `Topology.IsInducing.topologicalGroup` has been deprecated: Use `Topology.IsInducing.isTopologicalGroup` instead
+✔ [9106/9114] Built Lib.ClassField.Places.TameInertia (14s)
+✔ [9107/9114] Built Lib.ClassField.Places.FrobeniusOnRoots (6.8s)
+✔ [9108/9114] Built Lib.ClassField.GaloisCohomology.CyclicNorm (38s)
+✔ [9109/9114] Built Lib.ClassField.Places.DecompositionLocal (19s)
+✔ [9110/9114] Built Lib.ClassField.LocalDuality.RealPlaceSymbols (25s)
+⚠ [9111/9114] Built Lib.ClassField.Local.ArtinMapAtPlace (24s)
+warning: src/Lib/ClassField/Local/ArtinMapAtPlace.lean:272:50: This simp argument is unused:
+  exp_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [-inv_exp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9112/9114] Built Lib.ClassField.Places.SelmerDefs (4.5s)
+✔ [9113/9114] Built Lib.General.NumberTheory.Valuation (7.3s)
+✔ [9114/9114] Built New.Selmer.RootsOfUnityPoints (37s)
+Build completed successfully (9114 jobs).

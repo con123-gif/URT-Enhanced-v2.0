@@ -1,0 +1,177 @@
+{
+  "scope": "native named module checks and peer scalar certificates only",
+  "full_RH_replay": false,
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 1.37,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 5.68,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.01,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.0,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 0.82,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.26,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 67.98,
+      "log": "mathlib_cache.log"
+    },
+    "root_gauss_scalar": {
+      "returncode": 0,
+      "seconds": 5.18,
+      "log": "root_gauss_scalar.log",
+      "axioms": {
+        "CompactCharacterBoxes50.telescoping_gain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CompactCharacterBoxes50.budget_contradiction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "source_blob": "c8c5116e2abb5b0f603615a8bc7643dc3afeee33"
+    },
+    "ribet_prefix": {
+      "returncode": 0,
+      "seconds": 4.77,
+      "log": "ribet_prefix.log",
+      "axioms": {
+        "CompactRibetRun50.prefix_replace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CompactRibetRun50.scalar_prefix_replace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "source_blob": "d8cd385affc445917999dee57f1d2a3bb816c021"
+    },
+    "module_0_build": {
+      "returncode": 0,
+      "seconds": 567.28,
+      "log": "module_0_build.log"
+    },
+    "module_0": {
+      "returncode": 0,
+      "seconds": 4.73,
+      "log": "module_0.log",
+      "axioms": {
+        "exists_root_of_unity_eval_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "exists_roots_of_unity_ellVal_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "module": "New.Selmer.RootsOfUnityPoints"
+    },
+    "module_1_build": {
+      "returncode": 0,
+      "seconds": 10.24,
+      "log": "module_1_build.log"
+    },
+    "module_1": {
+      "returncode": 0,
+      "seconds": 4.72,
+      "log": "module_1.log",
+      "axioms": {
+        "IndexDvd.comap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IndexDvd.trans": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IndexDvd.map": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IndexDvd.sup": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "HasType.prod": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "module": "New.Core.ModuleIndex"
+    },
+    "module_2_build": {
+      "returncode": 0,
+      "seconds": 218.29,
+      "log": "module_2_build.log"
+    },
+    "module_2": {
+      "returncode": 0,
+      "seconds": 4.88,
+      "log": "module_2.log",
+      "axioms": {
+        "HeightLe.mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "HeightLe.pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "HeightLe.nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "module": "New.Heights.Heights"
+    }
+  },
+  "all_requested_checks_ok": true
+}

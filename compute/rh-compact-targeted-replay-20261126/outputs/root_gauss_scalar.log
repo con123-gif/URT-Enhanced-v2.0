@@ -1,0 +1,2 @@
+'CompactCharacterBoxes50.telescoping_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompactCharacterBoxes50.budget_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]

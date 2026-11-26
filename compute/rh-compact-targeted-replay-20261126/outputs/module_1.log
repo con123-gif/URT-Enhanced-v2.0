@@ -1,0 +1,5 @@
+'IndexDvd.comap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexDvd.trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexDvd.map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexDvd.sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HasType.prod' depends on axioms: [propext, Classical.choice, Quot.sound]

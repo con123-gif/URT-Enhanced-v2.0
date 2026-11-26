@@ -1,0 +1,10 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "source_blobs": {
+    "New.Selmer.RootsOfUnityPoints": "7c07be15e6c410124a9bc5ecb470e7750ac67074",
+    "New.Core.ModuleIndex": "214cc116f97852925f444db42bfa36cf563af508",
+    "New.Heights.Heights": "a18a99e1f76a6e963113cae8f906ddc99814f518"
+  }
+}

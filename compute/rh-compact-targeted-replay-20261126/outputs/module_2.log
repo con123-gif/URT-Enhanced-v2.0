@@ -1,0 +1,3 @@
+'HeightLe.mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HeightLe.pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HeightLe.nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
