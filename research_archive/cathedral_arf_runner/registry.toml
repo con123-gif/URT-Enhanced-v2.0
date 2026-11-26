@@ -3528,3 +3528,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/ke
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-union-graph-20261126"
+question = "Measure actual runner capacity, then if sufficient build exact compact RH source once and export union of Main, star and A/B/C proof-term roles with per-root axiom audit; independently probe compact binder pruning. Not a human proof or caller substitution."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
