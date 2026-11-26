@@ -1,8 +1,9 @@
 # The quantitative crystalline radius at the long-gap caller
 
 26 November 2026. SOURCE-MATCHED HUMAN DERIVATION / independent audit
-pending. This supplies the previously retained quantitative part of
-FrameTheorem, not a new RH endgame. Source and credit: Levent Alpöge,
+pending. Corrected after independent audit eec17037: abstract height H=2a
+is distinct from the radius normalization parameter b=a. This supplies
+the previously retained quantitative part of FrameTheorem, not a new RH endgame. Source and credit: Levent Alpöge,
 Luke Sernau, Anthropic collaborators and Claude; compact
 `lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207`, Lean 4.35.0,
 Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`.
@@ -213,14 +214,16 @@ there. The two clearings occur once each and are independent of rank.
 
 ## 6. Actual FrameTheorem and LongGap substitutions
 
-Use the very same Z,Z' obtained from the period frame. In
-FrameTheorem put b=h=jumpBound and use its common frame vectors
-ν_l(y)=Σ y_j φ^l n_j. Its evaluation formula is
+Use the very same Z,Z' obtained from the period frame. Let
+ a=jumpBound, H=2a be the abstract period height, and choose
+ b=a in (R1). In particular Z'Z=E^H I; do NOT identify H with a.
+The common frame vectors satisfy τ^a n_j=s(Qe_j), and
+ν_l(y)=Σ y_j φ^l n_j. Their evaluation formula is
 
-    E_l^h μ(ν_l(y))=a_μ φ^l Z·y,
+    E_l^a μ(ν_l(y))=a_μ φ^l Z·y,
 
 where a_μ is the row of basis values times the same period matrix.
-Equation (R1) cancels E_l^h exactly and gives
+Equation (R1), with b=a, cancels E_l^a exactly and gives
 
     μ(ν_l(y))=a_μ C V y.                              (R16)
 

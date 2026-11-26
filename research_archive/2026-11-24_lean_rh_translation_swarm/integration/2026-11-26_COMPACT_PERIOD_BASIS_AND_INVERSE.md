@@ -29,8 +29,14 @@ height h has the four fields of `IsPeriodMatrix`:
 1. UW=(Eτ)^h I for some W over B;
 2. φU=vUF with v∈A0^×, F over S_B, and F invertible over B;
 3. for every g fixing Λ and θ(z), there is ρ over A0 with ρ(gU)=U;
-4. for every S-linear f:A0→A0 and every y with Uy=E^h x, x∈A0^d,
-   one has U f̂(y)=E^h w with w∈B^d.
+4. for every S-linear f:A0→A0 and every y∈B^d, if Uy=E^h x
+   for some x∈B^d, then U f̂(y)=E^h w for some w∈B^d.
+
+Correction from independent audit eec17037: field 4 is quantified over
+ALL B-valued x and y. The basis proof below only uses its restriction
+to integral x∈A0^d, but that restriction is not the full definition.
+The initial-period construction must, and now does, supply the stronger
+field via its Hodge linear-form tests.
 
 Here f̂ is the actual extension to B. It preserves A and commutes with
 S_B multiplication. Retain those extension properties, including their
@@ -166,19 +172,29 @@ Apply U and cancel E^h. S-independence gives λ_i(a_j)=0 for every
 i,j; separation by the coordinates gives a_j=0. Hence the x_j are
 A0-independent in A0^d and their number is ≤d.
 
-The exact complete-local algebra lemma free_finite_of_rank_le applies:
-over the complete base S at the maximal ideal (p,z), a separated
-module of bounded rank with the two regularity properties above is
-finite free. Its proof constructs an adic basis with S-linear coordinates
-from a basis modulo (p,z), using regularity to extend the coordinate
-maps continuously. The coordinates make its vectors linearly independent;
-the rank bound makes the index set finite. Approximate any module vector
-to successive ideal powers in that finite family; the coefficients converge
-in S. Separatedness makes the resulting finite linear combination equal
-to the original vector. This also explains why completeness of P is not
-an unstated premise. The adic-coordinate extension lemma used here is
-the one in AmaxStructure, not an invocation of Nakayama for an a priori
-non-finite module.
+The exact complete-local algebra lemma free_finite_of_rank_le applies.
+Independent audit eec17037 supplies a direct proof for this actual
+nonzero-p chart, which we integrate here. Put I=(p,z). If p x∈I^n P,
+n≥1, write p x=p u+z^n w with u∈I^(n−1)P. Modulo p, regularity of
+z forces w=p w'; cancel p to get x∈I^(n−1)P. Thus
+(I^nP:p)=I^(n−1)P. This proves that the homogeneous map
+(P/IP)^(n+1)→I^nP/I^(n+1)P, (v_i)↦Σ p^i z^(n−i)v_i, is an
+isomorphism: surjectivity is immediate; for injectivity reduce modulo
+p to put v_0 in IP, subtract its term and divide by p using the
+colon identity, then induct on n.
+
+Lift a residue-field basis of P/IP arbitrarily into P. Every finite
+family of these lifts is S-independent: a nonzero relation has a
+least I-order among its coefficients, since S is separated; its
+nonzero initial forms would give a relation among the residue basis
+in the homogeneous isomorphism just proved (and the corresponding
+one for S), a contradiction. Rank P≤d therefore makes the residue
+basis finite. For x∈P approximate successively modulo I^nP by this
+finite family, correcting coefficients in I^n S at step n. The
+coefficients converge in complete S. The resulting finite combination
+equals x because P is separated. This proves finite freeness without
+assuming completeness of P or using Nakayama before finite generation.
+It suffices for the actual chart; no p=0 branch is claimed here.
 
 Choose ≤d generators x_j forming that basis, with witnesses y_j, and
 pad by zeros to obtain d columns Q,Z. Then UZ=E^h Q and Q generates P.
@@ -369,7 +385,12 @@ minimal-support arguments in editor RUN59, and section 6's chart coefficient
 approximation supplies all fields of IsPeriodMatrix.exists_frame.
 Use these SAME Q,L,Z,Z',B in FrameTheorem, then literature RUN58's
 integral span and coordinate retraction, then the LongGap/CupProductBound
-proofs already audited in 57db85ec. This proves the displayed supplier
+proofs already audited in 57db85ec. At that actual consumer, distinguish
+period height H=2a from jump bound a: QL=τ^(2a)I and Z'Z=E^(2a)I,
+while τ^a n_j=s(Qe_j). The coordinate test extracts E_m^(2a), and
+the radius normalization parameter is a. Audit eec17037 corrects the
+earlier mixed notation; it does not change this appendix's generic
+height h. This proves the displayed supplier
 implications. It does not prove the retained initial existence of U,
 Ax's established theorem itself, the BdR radius estimates or every
 Fontaine ring lemma listed in the setting. These are distinct nodes,

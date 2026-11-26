@@ -617,3 +617,39 @@ formula and the relation/Hodge transport at the actual retraction caller;
 flags that omission in the peer shorthand rather than dropping the field
 hypothesis. Same operators, denominator canceled only in B_dR. Native
 Hodge-frame/continuity remains a distinct prerequisite, no blanket closure.
+
+## Resumed after 5dab175c — native Hodge frame and independent audit corrections
+
+Latest independent audit eec17037 agrees with our basis/contraction,
+prime-to-p division, ideal comparison, Ax coefficient quantifiers and
+inverse. It supplies a direct homogeneous/colon proof of finite
+freeness, integrated into the basis appendix. It catches two human
+interface errors, now corrected: full hat_stable quantifies over all
+B_plus x,y (the basis uses only its integral restriction); actual
+FrameTheorem period height is H=2a, not a=jumpBound. Thus QL=tau^(2a),
+Z'Z=E^(2a), tau^a n_j=s(Qe_j), test E_m^(2a), radius parameter b=a.
+Corrected our radius caller and the manuscript's older mixed paragraph.
+Historical peer RUN58 is retained; audit and corrected consumers govern.
+
+New COMPACT_HODGE_FRAME_WITHOUT_CONTINUITY.md derives the stable-kernel
+and minimal-determinant Hodge argument directly. A minimal-support
+vector of a diagonal Galois-stable C_p subspace is normalized integral;
+Tate scalar vanishing removes unequal weights and fixed-near-identity
+places the others in Qpbar. Such vectors span by support elimination.
+For AY=P diag(t^k), minimize ord(det P). If Pbar singular, its kernel
+uses weights MINUS k_i; its normalized algebraic vector gives an
+integral SL column replacement commuting with diag(t^k), and division
+of that column by t decreases the determinant order. Contradiction.
+This supplies the actual general Hodge frame BEFORE automatic
+continuity, so the earlier potential circle is avoided. It feeds
+all four initial-period fields and the existing same-frame chain.
+
+Primary Fontaine §1.5.7 re-read with open-subgroup scope for scalar
+Tate invariants; no fresh native run or unnecessary finite diagnostic.
+The new Hodge proof is a source-matched human derivation awaiting
+independent audit, not covered by older eec17037. Human RH incomplete.
+
+RESUME HERE: independent review of new Hodge minus sign, filter and
+column update; continue actual reciprocity/isotropy and comparison
+primitives, while existing A/B workers retain marked Hecke and
+quadric/Siegel-Weil tasks. Preserve same Q,Z and H=2a at every caller.

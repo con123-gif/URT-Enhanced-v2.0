@@ -259,10 +259,15 @@ continuity. The native period-matrix theorem is stated for an admissible
 representation; some source proofs of automatic continuity themselves
 use HodgeFrame. A replacement that invokes those proofs to justify
 Theorem 3.8 and then uses Theorem 3.8 to justify HodgeFrame would be
-circular. Accordingly this note discharges the fixed-coefficient and
-coordinate-divisibility suppliers outright, and the remaining matrix
-assembly conditional on its precisely stated Hodge-frame/basis inputs.
-It does not mark the whole initial-period or crystalline chain closed.
+circular. The direct native Hodge-frame argument is now supplied in
+[the Hodge-frame appendix](2026-11-26_COMPACT_HODGE_FRAME_WITHOUT_CONTINUITY.md).
+It uses Tate's scalar invariants before any automatic continuity:
+a stable residue kernel has a normalized integral algebraic vector of
+one weight, whose column update decreases the determinant order.
+This supplies the precisely stated Hodge-frame input to section 5
+without making the circular external-theorem substitution warned
+against above. The new human derivation still awaits independent
+audit; no whole crystalline or RH closure is asserted.
 
 Source ledger, paths relative to compact src:
 
