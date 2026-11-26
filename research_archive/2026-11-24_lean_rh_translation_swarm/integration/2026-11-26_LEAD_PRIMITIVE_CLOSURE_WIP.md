@@ -653,3 +653,39 @@ RESUME HERE: independent review of new Hodge minus sign, filter and
 column update; continue actual reciprocity/isotropy and comparison
 primitives, while existing A/B workers retain marked Hecke and
 quadric/Siegel-Weil tasks. Preserve same Q,Z and H=2a at every caller.
+
+
+### 26 November — actual max-ring rank and direct local Tate caller
+
+Hodge checkpoint 9db13f38a968c3f34c93aa8b6a6b325e1cf1ce49 was published
+and fetched back. The direct local duality calculation already exists in
+literature RUN55 / 77a7f2fc, and Kummer c0a35b56 has an independent
+consistency audit in the balanced-row primitive audit. Do not claim either
+as a fresh discovery or repeat their finite diagnostics.
+
+New appendix COMPACT_MAX_PERIOD_COCYCLES_AND_LOCAL_DUALITY.md fills the
+actual rank prerequisite: identify the p-adic AdjoinRoot completion with
+Colmez's A_max restricted series; use the already bridged BdR fixed field
+on t_source/log[epsilon] to identify the localization, including p=2.
+Read Colmez primary III.2/Proposition III.3.1 and Milne ADT primary
+I.2.3/I.2.8. Tensor the MAX-ring fundamental sequence and let E be the
+preimage of D_fixed plus the invariant de Rham quotient. The two exact
+sequences give dim Z_f(V)=dim V+dim t by cancelling dim D_fixed.
+Filtered scalar invariant lifting counts negative jumps. Hodge-frame
+continuity for the extension by the rational cocycle plus compactness
+gives one integral denominator; finite evaluation coordinates prove
+finite freeness and division of the period primitive proves saturation.
+This gives the actual dual reduction-order product required by RUN55,
+then its exact index divisibility at RowBalanced with the same pairings.
+Manuscript updated at the actual local-duality paragraph and live checklist.
+
+Status: human derived / exact external theorem bridge, independent audit
+pending. No new Lean, finite diagnostic, full replay or compact graph.
+RUN29 still has six successful named probes and a build timeout, not an
+overall primitive PASS. No protected edits or worker schedule changes.
+
+RESUME HERE: audit the coupled Hodge/max-ring/rank proof and the two
+exact-sequence kernels. Continue sparse-thick/two-size and few-low-jumps
+cut/cokernel suppliers at New/Lift/ExponentTheorems rather than redoing
+local Tate cancellation or scalar Ribet payment. Preserve pending A/B
+marked Hecke, absolute unfolding and comparison-period obligations.
