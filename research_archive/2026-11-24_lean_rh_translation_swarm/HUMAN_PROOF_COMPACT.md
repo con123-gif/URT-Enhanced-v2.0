@@ -634,6 +634,109 @@ import New.Seesaw.GoodDatumExists
 
 RESUME HERE (integration 26 Nov): math and Galois lanes independently audit the corrected projective-lift proof, OLD-tie relaxed module and uniform J0 cap above; next reconstruct the actual isotropic-cardinality/reciprocity argument of length_le_of_unseen_class, the sharp Fitting polynomial supplier, and the crystalline/local exponent suppliers. Theta lane complete explicit neighbor-matrix integrality and stage support. Editor incorporate the corrections in the concise final C/A modules, not as new assumptions. Kernel lane replay peers on the shared compact runner only. HANDOFF TO math, Galois, character boxes, theta, formal audit, editor and kernel. Human reconstruction remains incomplete; external formal certification distinct.
 
+
+## 6i. Primitive closure: mirror polarization, sharp Fitting determinant and B orbital-to-band chain (editor 26 Nov)
+
+Compact pin lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207. Latest mission 3ea3bdf5c928af39e24a6837eafa3dee9bd409bb. This section supplies two actual intermediate arguments of C and integrates the compatible B and C peer derivations against the unified determinant witness. Retain all preceding source ledgers and open prerequisites. Not a native replay.
+
+### C: the mirror cardinal estimate follows by one bilinear polarization
+
+Actual source: New/Selmer/LinePointPowers.lean, blob 654567bac00341a29102ee3b83266bda10ab22a9, card_le_torsion_of_isotropic (19–53). Write M=(O/I)^n. Use its normal subgroup H in U, stable under the involution c, with rho acting trivially on U, all [g,gamma] in H, z,cz in U, rho(gamma)=s I_n=rho(c gamma)^(-1), chi(gamma)=chi(c gamma)=1, y(gamma)=0, and s−1,s+1 units. Keep the exact equivariance hW, full O-linear matrix span of rho(G), and separation of w by x_w on U. The x_w are additive Q/Z-valued functionals, not O-linear maps into Q/Z.
+
+Fix w, abbreviate x=x_w. On U, x and y are additive in the group argument. Conjugation by k sends y(d) to rho(k)y(d), and x(d)(m) to x(d)(chi(k)rho(k)^(-1)m). Define Q(u,t)=x(u)(t y(u))−x(cu)(t y(cu)). The native hq is Q(zb,t)=0 for every b∈H and t∈O. Taking Q(zbd,t)−Q(zb,t)−Q(zd,t)+Q(z,t) yields, for every b,d∈H,
+  A(t)+B(t)=C(t)+D(t),
+where A=x(b)(t y(d)), B=x(d)(t y(b)), C=x(cb)(t y(cd)), D=x(cd)(t y(cb)).
+All four are additive functions of t. Replace b by gamma b gamma^(-1), still in H, and replace t by st. The scalar laws above give
+  A(t)+B(s²t)=C(s²t)+D(t).
+Subtract BEFORE making any cardinal estimate:
+  (B−C)((s²−1)t)=0.
+Since s²−1=(s−1)(s+1) is a unit, B=C and hence A=D, over any such O, without dividing in Q/Z.
+
+Choose tau=[g0,gamma]∈H for the unit coordinate of y(g0); y(tau)=(1−s)y(g0) has the same unit-coordinate property. Set d=k tau k^(-1). The isolated cross identity A=D gives the native intermediate C:
+  x(b)(t rho(k)y(tau)) = x(c tau)(chi(c k)t rho(c k)^(-1)y(cb)).
+Set b=c tau. Compare k with kg at the actual scalar pair rho(g)=alpha I_n, rho(cg)^(-1)=alpha' I_n. The left changes by substituting alpha t; the right by chi(cg)alpha' t. Their difference proves x(c tau) annihilates every (alpha−chi(cg)alpha')t rho(c k)^(-1)y(tau), since chi(c k) is a unit (a group character). The O-span of these vectors before the scalar difference is ALL M: the matrices rho(c k)^(-1) range over rho(G), and the full matrix span together with one unit entry in y(tau) produces each coordinate vector using a single-entry matrix. Thus x(c tau) descends to M/delta M, delta=alpha−chi(cg)alpha'.
+
+If x_w(c tau)=x_v(c tau), the cross identity and the same matrix-span argument show equality of x_w(b),x_v(b) for every b∈H. For a∈U, the commutator [a,gamma]=a(gamma a^(-1)gamma^(-1)) lies in H; covariance makes its functional equal to x(a)((1−s^(-1))·). The factor 1−s^(-1) is a unit, so the functionals agree on all U. The native separation hypothesis gives w=v. Consequently the map w↦x_w(c tau) is an injection into Hom(M/delta M,Q/Z). Finite Pontryagin duality and the kernel-image cardinal identity for multiplication by delta give
+  |W| ≤ |M/delta M| = |ker(delta:M→M)|.
+This proves the exact native mirror lemma, conditional only on its stated hypotheses, not on a further mirror-rank bound. The proof uses the group action convention [g,h]=ghg^(-1)h^(-1); no assumption that y is globally additive.
+
+### C: fixed relation indices and the simultaneous tame multiplier (audited caller)
+
+Use math/2026-11-26_COMPACT_SPLIT_RECIPROCITY_ISOTROPY.md at 389bee29 with the corrections in audit/2026-11-26_COMPACT_RECIPROCITY_TAME_PAIR_AUDIT.md at 4d94ebdc (blob da786c8fbf1843aa4cf8b083ccd412e0b0432418). The finite index set and locally constant pi are fixed BEFORE the relation family n; the representatives' Frobenii are in U. Do not identify this index set with G/U or choose a new extension after n. Equality of indices gives the native equality of actions on roots of fixed units (hN), and the chosen Frobenii represent pi(g) for g∈U (hκ). In the reciprocity covariance construction use a SUM of the three indicator-coordinate terms, even when indices coincide. For new primes subtract the sum of the correction cocycles, which kills the new tame values; tame detection promotes this to full inertia vanishing. The remaining annihilation gives sum_j n(pi(phi_j))(x(delta_j))=0 for every admissible finite new-prime family.
+
+For the Greenberg–Wiles cardinal clause, write Y0,Y1 for old/relaxed groups, E for tame evaluation into M^iota, A for its image annihilator, d=|iota|, m0=|M|, s0=|S|+|InfinitePlace K| and P for the native product of local-condition cardinalities. Then |A||E(Y1)|=m0^d, and Y0 embeds in ker E, so |A||Y1|≥|Y0|m0^d. The native card_mul_pow_le with HasFewCocycles gives |Y1|m0^s0≤m0^(d+1)P. Cancel m0^d>0 to obtain |Y0|m0^s0≤|A|m0 P. Do not replace s0 by |S|+r2 outside totally complex K; do not claim ker E=Y0 is necessary.
+
+For the actual unseen-class caller choose one admissible split prime whose Frobenius phi and conjugate give the prescribed two locally constant expressions at zh and c(zh). The no-shrinking hypothesis provides ONE relaxed cocycle x' realizing the simultaneous old Frobenius values at the auxiliary gamma and (c gamma)^(-1). The tame-generator comparison applies to the PRODUCT-valued map on inertia tau↦(x'((c tau)^(-1)),x'(tau)), killed by the same ell^(M+1), and supplies ONE natural k with
+  k x'(delta)=y(phi),  k x'((c delta)^(-1))=−y(c phi).
+The inverse sign uses the cocycle law and trivial action on U. Apply the relation to the single cocycle t·(k·x'); the conjugate Frobenius is c phi, not its inverse. This yields x_w(phi)(t y(phi))−x_w(c phi)(t y(c phi))=0 and hence hq at zh. No division by k and no O-linearity of a Q/Z-valued functional. Feed this into the mirror proof just given and then into the native balanced local-length comparison in IsPencil.length_le_of_unseen_class. The native Kummer compatibility/Artin reciprocity and balanced local-length suppliers still remain: the mirror calculation does not prove those.
+
+### C: one polynomial, sharp at a point, controls the full twist family
+
+Actual source: New/Selmer/LinePointPowers.lean, exists_sharp_fitting_poly; New/Selmer/Corepresentable.lean, exists_corepresenting_coords (267 onward, blob 3e401695d96b8ea826d60dadf0174d366f85d37c). Let Lambda=O[X_j], m=ell^M, and use the finite coordinate presentation of the polynomial twist. Briefly, choose an open subgroup U acting trivially on all the coefficient modules in question (the common neighborhood W from local constancy of rho mod m and the character exponents). For any cocycle, its restriction to U is additive and unramified off the prescribed finite set. For any additive scalar character from the m-torsion coefficient module into Z/m, the resulting restricted character belongs to a fixed finite unramified character group of U; take the common kernel of that group, then its finite-index normal core V in G. This is independent of the specialization and the coefficient module. Scalar characters separate m-torsion elements (equivalently use Q/Z duality), so every such cocycle vanishes on V, and the cocycle law makes it determined by its values on representatives of G/V. The relations in the finite free coordinate module encode the cocycle, inertia and imposed linear equations, plus m times every coordinate. Conversely satisfying those relations defines a locally constant cocycle on the finite quotient. This is the finite-coordinate mechanism of exists_corepresenting_coords; the finiteness of unramified Z/m cocycles is the retained arithmetic input. In the actual native theorem use the given common W and module-specific trivial-action premise, rather than claim every polynomial representation on every module is trivial on U.
+
+Let R⊂Lambda^d be the relation submodule. At the chosen point y0 over DVR O let R0 be its specialized image in O^d; it contains m O^d with m≠0 (char zero), hence is a free rank-d lattice. Choose a basis of R0 and lift each basis row to R (if required, lift the finite linear combination of relation rows; constant O-coefficients already lie in Lambda). Put these rows into a polynomial square matrix A(X), and F=det A(X). At y0, Smith normal form shows that the length of the simultaneous kernel of its rows acting on (O/(m))^d is v(det A(y0)): the elementary divisors all divide m, so the kernel lengths are exactly their valuations. Since those rows span R0, this is the actual Selmer length at y0.
+
+For every specialization Lambda→O' (the SAME coefficient extension and tuple), the full relation kernel injects into the kernel of the specialized A. If its determinant vanishes, the bound by its infinite valuation is automatic. Otherwise each Smith diagonal factor d_i of A has kernel length on O'/(m) at most v(d_i); in the nonzero m case this is min(v(m),v(d_i)), and if m maps to zero the nonzero determinant gives kernel zero. Thus
+  length Selmer(y) ≤ v(det A(y)), with equality at y0.
+The same F is used at every point; no independent basis selection after specialization. This reconstructs the sharp-polynomial supplier used twice in the fit-twist construction of §6h. The remaining issue is the actual class-field finite-character theorem and the local drop-ties/row bounds, not sharpness of the determinant. No global root edge deleted.
+
+### B: integrated chain from orbital transport to real band estimates
+
+Incorporate the actual source-linked peer proofs, rather than assume generic PSD is enough. For the common finite sieve and real Bessel Gram use integration/2026-11-26_COMPACT_COHERENT_LINK_ENERGY.md (e3228b19), FINITE_ORBITAL_TRANSPORT (3b50a390), SIEGEL_QUADRIC_MASS (99802a3d), and specialists/positivity_geometry/compact/RUN53_REAL_BAND_SCHUR.lean (fc278308). The last three integrate in the following order.
+
+1. Phase transport: the two principal-level admissibility conditions split into Ax∈K0 and Bξ∈K0 because Bξ=P(delta)^(-1)(Ax)k. On each nonzero phase the class cutoff sums equal one. The unipotent character law cancels the phases before integration; absolute amplitude summability and big-cell uniqueness justify Fubini. The native result is correlation_fin · correlation_inf = headDensity·M(C)·cosetAmplitude_T. The local section g(x)=x+u h(v,x)−β^(-1)(v+σu)h(u,x) sends e to z on its norm quadric, with β=h(u,e), v=e−z, σ=h(v,e) on the quadric and σ+barσ=h(v,v). Expansion using h(u,u)=0 proves unitarity. This permits one common small translation for all representatives. The disjoint H0 cosets times their distinct finite coordinate labels give a lower bound for EVERY orbit representative's nonnegative packet integral, so it survives the infimum defining energy. The exact Haar identity is massRatio=measureH(C)·#(Z/C)·M(C)^2·D0, D0=|Sbar|·unipOrder, by |Sbar|=|Hbar|·unipOrder and measureH(C)=1/|Hbar|. The finite orbital point injection remains the native group-intersection condition.
+2. Quantitative quadric: use the native classSum_norm_eq (convergent-range Siegel–Weil, precise one-vector Gaussian, Fourier coefficient and finite test). Orthogonality converts compact character integrals to congruence slabs, and the off-place Gaussian mass is bounded by the ideal-zeta factor ζ_R(μ)≤1+2^(−n). Choose strict slack r0=(1+b^−6)/(1+2^−n)>1. For the fixed finite step test, dominated convergence over increasing compact frequency groups and τ near t gives the uniform Fourier-slab comparison. For any sufficiently small L and c above the actual quadric integral choose the congruence modulus AFTER L,c, apply the continuous fibre disintegration with its Jacobian and let c decrease to the integral. Native md(π)=N^−f and the real Gaussian coefficient cancel to give exactly #Classes·siegelConst·G_t, G_t=(prod_v(|Φ_v(t)|²−N²))^(k−1). Thus weighted count S satisfies S vol(L)≤(1+b^−6)#Classes·siegelConst·G_t times the restricted quadric integral. This is the actual FiniteSystem.siegel_sum_le_lintegral_quadric; its general Siegel–Weil, local self-dual measure, Weil shear and disintegration premises are not replaced by a heuristic density.
+3. Top Gram contraction, sieve and tail: contract the single PSD real matrix with the finite vector correlation, integrate the nonnegative quadratic form, and use the H-fibre infimum. Group blocks by their common top t, use a cofinal finite Cartesian power for prefixes, a common finite place set T and a common additive L for each finite family. The packet bound in (1)-(2) yields the actual sum_blocks_le_topKernel. The real normalization ρ_p times finite headDensity cancels each prefix by the product formula to r0 sqrt(G_t), where this r0=c_G^(f/2)/d_c·prod l_va^(k−1+2(rho−a)) (distinct from the slack in (2)). Consequently packetConst·C_n/r0²≤(1+b^−9)d deg ν². The sieve factors and deg cancel, giving linkEnergy≤(1+b^−4)b^(−6kq)dν². The native crude-energy inequality, with τ^44 d1≤d and q≤f, then gives exactly energy_fixingSet≤(1−b^−4)(1+9b^−4)d b^(−6kq). If all selected places occur the link set is empty and the missing-link guard uses levelPrime(0)≥b^10. These are the same filling datum and Bessel family as in §6d. The remaining crude pair-weight and amplitude-summability suppliers are not inferred from the numerical slack.
+4. Real band interface: peer RUN53 supplies bottom Schur estimate from the native shell majorant, and the bounded-head frequency estimate with its original damping b^(2000 n^9)u^(−(k−n^7))min(1,u^−1)^6, multiplied by the native head weights and Θ. The top kernel is the Gram of the actual continuous normalized sieveVector; its quadratic form is a squared norm, with no coordinate-count multiplier. Retain the shell majorant, minor support/unequal-head argument, two local Fourier inequalities and full floor-law descent. This makes explicit the final local band dependencies of B, not a proof of those dependencies.
+
+### Short remaining primitive ledger (not a new conjunction substituted for the root)
+
+A: exact stage support, marked elementary divisors/Schur-jet and neighbour integrality, then local branching/index to the SAME good datum.
+B: actual real shell cap, both LocalTheorem Fourier modulus bounds, joint-law floor descent, gauge support and absolute amplitude convergence, CrudeEnergy pair weight from BlockBound; verify the cited Siegel–Weil specialization with the native normalization and convergence hypotheses.
+C: fixed-index/root detection and Kummer-character compatibility with principal-idele reciprocity; HasFewCocycles/Greenberg–Wiles local conditions; actual balanced/crystalline local lengths, dual pairing/short row and comparison construction. The finite mirror cardinal step and sharp determinant step above no longer require an unexplained intermediate lemma in the human exposition. Their arithmetic inputs remain open. No new native root obligations retired.
+
+### Audit and reproducible certificate
+
+Native source anchors additionally retrieved this run: Lib/ClassField/GreenbergWiles/SplitPrimeReciprocity.lean fbfa4f703035c833491594169f2089c01fda3d03; New/Selmer/TiltingLemma.lean 62784266136a2936dd6f8d662b79fa051d28c470; New/Filling/Moments.lean ec2cb964ede0d5eeae41a077dc6dbfface9c0444; FiniteSystem.lean 1c169e04852f767f1d1a0140448d902c16dd04e7; New/RealPlace/BandLimits.lean 20ff4e65c2599fc8b752dbb93673ed65053e2216; Lib/SiegelWeil/OneVector/OneVector.lean d9f90a7b5170a98542f261fa08b05aee695a6bff. Other exact peer source hashes are in the linked artifacts. Context key: compact pin, fixed D, O/I, H,U,z,gamma, scalar pair, coefficient family and local guards; B uses fixed S,Z,T,A, same real Gram. Original source graphs and axiom evidence retained. Candidate reduced human chain: C → fit twists → unseen class → {fixed split relations, paired tame comparison, mirror polarization, balanced length}; fit twists → {common coordinate presentation, sharp determinant, local tie cost, root selection}. B → coherent link → {phase transport, disjoint packet, quantitative quadric, real bands, crude energy}. No deletion from elaborated graphs.
+
+Exact integer regression actually executed in JS: for each modulus 2..13, s,a,b,c in Z/m put d=a+b−c, and test a+s²b=s²c+d; if gcd(s²−1,m)=1, assert b=c and a=d. 89,270 configurations, 31,208 satisfying both relations, 4,436 with the unit guard (zero violations); 22,928 satisfying relations with nonunit guard and b≠c (negative controls). This checks only the scalar isolation identity, not the Galois realization.
+
+Prepared standalone Lean candidate (extract this fenced block; native not executed):
+```lean
+import New.Selmer.LinePointPowers
+namespace CompactEditorMirror
+theorem isolate_cross {R A : Type*} [CommRing R] [AddCommGroup A]
+    (a b c d : R →+ A) (s : R) (hs : IsUnit (s*s-1))
+    (h1 : ∀ t, a t + b t = c t + d t)
+    (h2 : ∀ t, a t + b (s*s*t) = c (s*s*t) + d t) : b = c := by
+  have diff (t : R) : b ((s*s-1)*t) = c ((s*s-1)*t) := by
+    rw [sub_mul, one_mul, map_sub, map_sub]
+    have hh : b (s*s*t) + c t = c (s*s*t) + b t := by
+      apply add_left_cancel (a := a t)
+      calc
+        a t + (b (s*s*t) + c t) = (a t + b (s*s*t)) + c t := by abel
+        _ = (c (s*s*t) + d t) + c t := by rw [h2 t]
+        _ = c (s*s*t) + (c t + d t) := by abel
+        _ = c (s*s*t) + (a t + b t) := by rw [← h1 t]
+        _ = a t + (c (s*s*t) + b t) := by abel
+    exact (sub_eq_sub_iff_add_eq_add).2 hh
+  ext t
+  obtain ⟨u, hu⟩ := hs
+  simpa [← hu, ← mul_assoc] using diff ((↑u⁻¹ : R)*t)
+#print axioms isolate_cross
+#check card_le_torsion_of_isotropic
+#check exists_sharp_fitting_poly
+#check exists_corepresenting_coords
+#print axioms card_le_torsion_of_isotropic
+#print axioms exists_sharp_fitting_poly
+end CompactEditorMirror
+```
+
+No local lean/lake found. The older 4.33 native reduction engine is not a valid substitute for compact 4.35 replay. Independently fetched actual compact RUN28 45799225653 all three jobs success and targeted_results.json blob 23de197bd48f404ca2074c69676de289c4f7934e; scope named modules and peer scalars, full_RH_replay=false. Neither this candidate nor this human derivation is part of that PASS. Do not import Main for new checks. Preserve protected workflows and use shared bounded replay.
+
+RESUME HERE (editor 10:56): audit the new mirror polarization and sharp determinant argument at their native consumers; next integrate the exact Kummer-character and Artin reciprocity two directions and balanced local lengths, plus A marked elementary divisors and B shell/Fourier suppliers. Retain original/reduced graphs, all unresolved premises and exact witnesses. HANDOFF TO math, Galois, character boxes, theta, positivity geometry, integration, formal audit and shared kernel runner. Human reconstruction remains incomplete.
+
+
 ## 7. Exact current frontier and source ledger
 
 This manuscript has reconstructed the scalar cancellation, the abstract greedy spanning lemma, the common-family selection and the reciprocal height assembly. The analytic implication is now derived in §§6a–b from star and DataExist with explicit classical cited inputs; independent audit remains. DataExist now has a full candidate human derivation in §6c using the classical Siegel–Walfisz theorem; independent audit remains. The connected A/B/C assemblies are expanded in §6d; the deep supplier arguments listed there still need complete human derivations and transitive reference checks. The B finite determinant and Poisson recurrence have been integrated, and C now includes exact completion, route composition and the common finite-sum end-period expansion; their local supplier hypotheses are kept. The external proof certification is separate from our manuscript's completeness. No claim of ten-page completion, mathematical novelty of the native argument, measured runtime improvement, or new formal proof.
