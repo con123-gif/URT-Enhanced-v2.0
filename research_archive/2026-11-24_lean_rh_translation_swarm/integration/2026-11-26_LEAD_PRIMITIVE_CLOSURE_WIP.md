@@ -1171,3 +1171,43 @@ theta-space/theta-product integrality, Rallis test space or arithmetic
 odd-Sha/triangle supplier, checking existing peers before new derivation.
 The original pointwise fit-family assembly already exists; do not start
 another optional aggregate detour. RH reconstruction remains incomplete.
+
+### 26 November — exact finite Weil cocycle supplier
+
+Published tight-frame/current C integration successfully as
+3e2a10fd3a2037e8bdf208a94cb73ec3b4cef321. Then inspected actual
+FrameSections and ConjugatesOfJets consumers; the chosen M, cardinal
+M^(4fr), torsion denominator and weight embeddings agree. Do not
+rederive moving-vacuum bound: rg found structure RUN59 already supplies
+it under the constructed semilinear map.
+
+Continued next genuine primitive from structure RUN61: finite cocycle
+in ThetaFunctional. Read complete native GaussSumSign, ThetaFunctional,
+FiniteMultiplier/Vacuum/Heisenberg, WeilOperators and exact data/local
+component/finite residue declarations. New COMPACT_FINITE_WEIL_COCYCLE.md
+derives the quotient, not just its expected phase: compact-open M with
+sx,gsy,x+y integral; M0=M intersect Lambda²; gamma=bar(c0)h(y,x).
+Integral representative changes cancel by the SAME two unitary matrices.
+Exact coset masses give c conj(Delta(s)) Delta(gs)=Delta(g) sum F.
+Killability ts^-1 integral =>tQ=0 gives integral normalization and split
+positivity. Only after normalization use projective unitarity and radical
+subgroup. Split adjustment needs just u=pi^a I, no extra Smith theorem.
+
+Fixed places: explicit primitive28-root i,omega prove odd residue and
+r² norm, r=3 mod4; local unramified norm via finite field/Hensel supplies
+norm−1 unit. Four orbits give S=1+4Z integral, reality by conjugating
+permutation, and native inert multiplier (-r)^d forces +1 sign. This
+supplies actual finAction composition, retaining the data construction,
+archimedean action and global theta/Poisson suppliers. Main integrates
+the law at the finite coefficient and semilinear caller. No unproved
+blanket metaplectic splitting assertion or URT assumption.
+
+Validation source mathematics and git diff --check only; native runner
+receipt unchanged, no new kernel checks or full reconstruction audit.
+RESUME HERE: publish this checkpoint. Next actual finite/global bridge
+is ThetaFunctional.exists_isThetaFunctional -> FockThetaFunctions.
+exists_entireTheta_eq, especially theta-space irreducibility/dimension
+and the exact finite translation average. Character RUN61 describes
+the Schur step but retains those upstream facts. Check literature and
+existing notes before reconstructing them. C triangle/odd-Sha and B
+Rallis test-space/frontier still need independent completion/audit.
