@@ -1,6 +1,6 @@
 # Archive sweep — latest status per script
 
-753/753 scripts executed at least once. Sorted: failing first, then by path.
+754/754 scripts executed at least once. Sorted: failing first, then by path.
 
 | Status | Script | Detail | Wall | Last run |
 |---|---|---|---|---|
@@ -27,50 +27,51 @@
 | timeout | `research_archive/2026-11-11_q31_rational_similarity/q31_rational_similarity.py` |  | 120.03s | 2026-11-26T07:13:46Z |
 | missing_file | `research_archive/2026-11-12_hopf_time_and_axis_order/hopf_time_and_axis_order.py` | research_archive/2026-11-12_hopf_time_and_axis_order/research_archive/2026-11-12_hopf_charged_carrier/hopf_charged_carrier.py | 0.07s | 2026-11-26T06:45:09Z |
 | timeout | `research_archive/2026-11-15_q152_native_physical_hessian/Q152_PHYSICAL_HESSIAN_AND_NEWTON.py` |  | 120.08s | 2026-11-26T07:20:53Z |
-| timeout | `research_archive/2026-11-15_q153_full_physical_stability/Q153_FULL_NATIVE_TRANSVERSE_HESSIAN.py` |  | 120.02s | 2026-11-26T06:27:39Z |
-| assertion_failed | `research_archive/2026-11-16_ci_research_partition/CI_PARTITION_CERT.py` | [67, 46, 46, 41] | 0.06s | 2026-11-26T06:27:39Z |
+| timeout | `research_archive/2026-11-15_q153_full_physical_stability/Q153_FULL_NATIVE_TRANSVERSE_HESSIAN.py` |  | 120.02s | 2026-11-26T07:42:27Z |
+| assertion_failed | `research_archive/2026-11-16_ci_research_partition/CI_PARTITION_CERT.py` | [67, 46, 46, 41] | 0.06s | 2026-11-26T07:42:27Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_300_reconcile.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:42:48Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_arithmetic_frontier.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:33:54Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_arithmetic_reconcile.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:39:52Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_core_route_frontier.py` | IndexError: list index out of range | 0.04s | 2026-11-26T06:19:49Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_core_route_frontier.py` | IndexError: list index out of range | 0.04s | 2026-11-26T07:34:36Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN2_replay_checks.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:20:55Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN3_replay_checks.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:20:55Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN4_replay_checks.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:28:07Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN4_replay_checks.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:42:55Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN5_replay_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-26T06:41:58Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN6_replay_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-26T06:41:58Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/replay_source_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-26T06:58:53Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/02_recAtG/verify_recatg_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:20:56Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/03_trust_boundary_lay_of_core/verify_trust_and_laycore.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:20:56Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/lit_closure.py` | IndexError: list index out of range | 0.02s | 2026-11-26T06:28:28Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/locate_producers.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:28:28Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/verify_t8_t1_sources.py` | IndexError: list index out of range | 0.02s | 2026-11-26T06:28:28Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/05_landau_page_and_zero_gap/verify_t1a_t1d_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:28:28Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/06_zero_free_regions/verify_t1c_t1b_t1e_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:28:28Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/07_local_zero_sum_and_analytic_bounds/verify_run7_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T06:28:28Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/lit_closure.py` | IndexError: list index out of range | 0.02s | 2026-11-26T07:43:16Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/locate_producers.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:43:16Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/verify_t8_t1_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:43:16Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/05_landau_page_and_zero_gap/verify_t1a_t1d_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:43:16Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/06_zero_free_regions/verify_t1c_t1b_t1e_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:43:16Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/07_local_zero_sum_and_analytic_bounds/verify_run7_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-26T07:43:16Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/08_executed_companions_and_analytic_base/build_closure.py` | /workspace/rh_green_lean/.lake/packages | 0.02s | 2026-11-26T06:41:58Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/08_executed_companions_and_analytic_base/verify_run8_sources.py` | IndexError: list index out of range | 0.02s | 2026-11-26T06:41:58Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/09_exceptional_pair_build_and_positivity/verify_run9_sources.py` | IndexError: list index out of range | 0.02s | 2026-11-26T06:58:53Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/verify_native_family_sources.py` | verify_native_family_sources.py: error: the following arguments are required: --source-root | 0.03s | 2026-11-26T06:58:57Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_direct_restriction_prune.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.02s | 2026-11-26T06:36:04Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelf_input_weakening.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.05s | 2026-11-26T07:25:12Z |
-| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_rank2_direct_safe_prune.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.07s | 2026-11-26T06:25:34Z |
+| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_rank2_direct_safe_prune.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.04s | 2026-11-26T07:40:22Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_sign_killsmu.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream/src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/TorsionOrderFrobenius/QuadMu.lean | 0.22s | 2026-11-26T06:43:44Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_dyadic_theta_drawdown.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.02s | 2026-11-26T06:34:33Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_every_character_adapter.py` | verify_every_character_adapter.py: error: select --source-root, --report, or --self-test | 0.02s | 2026-11-26T06:42:12Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_hypsalt_constructor.py` | verify_hypsalt_constructor.py: error: select --source-root, --report, or --self-test | 0.03s | 2026-11-26T06:25:35Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_hypsalt_constructor.py` | verify_hypsalt_constructor.py: error: select --source-root, --report, or --self-test | 0.03s | 2026-11-26T07:40:23Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_log_gap_no_go.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-26T07:25:31Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_positive_mean_square_terminal.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.05s | 2026-11-26T06:50:35Z |
-| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_prime_shell_equivalence.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-26T06:28:28Z |
+| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_prime_shell_equivalence.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-26T07:43:16Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_prime_terminal_reduction.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-26T07:07:42Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_supply_of_admissible_hosts.py` | verify_supply_of_admissible_hosts.py: error: select at least one check | 0.03s | 2026-11-26T06:58:53Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_topg_vwin_bridge.py` | verify_topg_vwin_bridge.py: error: choose --self-test, --report, or --source-root | 0.04s | 2026-11-26T07:20:56Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py` | RUN25_SHARED_REPLAY.py: error: the following arguments are required: --source, --mathlib, --out, --build | 0.05s | 2026-11-26T07:29:03Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run25_shell_landau_boundary.py` | run25_shell_landau_boundary.py: error: the following arguments are required: root | 0.03s | 2026-11-26T06:40:56Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/CATHEDRAL_URT_RH_SPEED_2026_11_24.py` | CATHEDRAL_URT_RH_SPEED_2026_11_24.py: error: the following arguments are required: src | 0.03s | 2026-11-26T06:50:36Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RUN42_MODEL_LENGTH_LOCAL_PRUNE.py` | RUN42_MODEL_LENGTH_LOCAL_PRUNE.py: error: the following arguments are required: source, out | 0.03s | 2026-11-26T06:53:40Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RUN49_SHARED_NATIVE_BATCH.py` | RUN49_SHARED_NATIVE_BATCH.py: error: the following arguments are required: --source, --mathlib, --out | 0.04s | 2026-11-26T07:09:55Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/build_csr.py` | TypeError: build() missing 3 required positional arguments: 'src', 'dst', and 'expected' | 0.04s | 2026-11-26T06:56:38Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/compact_run20.py` | ValueError: not enough values to unpack (expected 4, got 0) | 0.05s | 2026-11-26T07:05:44Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/durable_roles.py` | usage: durable_roles.py test | ingest DB JSON GIT_BLOB_SHA [before|after] | 0.05s | 2026-11-26T06:22:23Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/durable_roles.py` | usage: durable_roles.py test | ingest DB JSON GIT_BLOB_SHA [before|after] | 0.05s | 2026-11-26T07:37:10Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/frontier_join_run19.py` | IndexError: list index out of range | 0.05s | 2026-11-26T07:17:15Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/git_context_cache.py` | git_context_cache.py: error: the following arguments are required: repo, revision, cache, --environment, --out | 0.04s | 2026-11-26T06:55:58Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/manifest_index_run19.py` | TypeError: main() missing 2 required positional arguments: 'p' and 'db' | 0.05s | 2026-11-26T07:17:15Z |
@@ -78,10 +79,10 @@
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run22_reuse.py` | ValueError: need db and request JSON array | 0.04s | 2026-11-26T06:42:48Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run23_batch.py` | TypeError: main() missing 4 required positional arguments: 'p', 'req', 'db', and 'out' | 0.16s | 2026-11-26T06:33:54Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run24_receipt.py` | TypeError: main() missing 2 required positional arguments: 'p' and 'dest' | 0.03s | 2026-11-26T06:39:52Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run25_paths.py` | IndexError: list index out of range | 0.05s | 2026-11-26T06:19:49Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run25_paths.py` | IndexError: list index out of range | 0.07s | 2026-11-26T07:34:36Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run34_batch.py` | run34_batch.py: error: the following arguments are required: --swarm, --out | 0.04s | 2026-11-26T07:01:47Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/staged_run21.py` | ValueError: not enough values to unpack (expected at least 2, got 0) | 0.05s | 2026-11-26T06:53:01Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/stream_reverse.py` | ValueError: --db and --out required | 0.19s | 2026-11-26T06:18:53Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/stream_reverse.py` | ValueError: --db and --out required | 0.05s | 2026-11-26T07:33:40Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/2026-11-25_0424_native_300_benchmark.py` | IndexError: list index out of range | 0.05s | 2026-11-26T06:56:34Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/2026-11-25_0524_bare_kahn_benchmark.py` | IndexError: list index out of range | 0.05s | 2026-11-26T06:56:28Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/2026-11-25_0624_root_dominators.py` | IndexError: list index out of range | 0.05s | 2026-11-26T06:58:53Z |
@@ -198,7 +199,7 @@
 | pass | `research_archive/2026-11-08_curvature_response/cathedral_response_duality_verify.py` |  | 0.35s | 2026-11-26T06:56:59Z |
 | pass | `research_archive/2026-11-08_native_h64_diffusion/cathedral_4d_wick_stability_counterterm_2026_11_08.py` |  | 0.76s | 2026-11-26T06:56:59Z |
 | pass | `research_archive/2026-11-08_native_h64_diffusion/cathedral_a5_two_covariance_rg_2026_11_08.py` |  | 5.89s | 2026-11-26T06:57:06Z |
-| pass | `research_archive/2026-11-08_native_h64_diffusion/cathedral_constructed_joint_dynamics_2026_11_07.py` |  | 0.52s | 2026-11-26T06:25:36Z |
+| pass | `research_archive/2026-11-08_native_h64_diffusion/cathedral_constructed_joint_dynamics_2026_11_07.py` |  | 0.54s | 2026-11-26T07:40:24Z |
 | pass | `research_archive/2026-11-08_native_h64_diffusion/cathedral_full50_complex_wick_2026_11_08.py` |  | 11.62s | 2026-11-26T06:57:18Z |
 | pass | `research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_4d_subtracted_response_2026_11_08.py` |  | 0.53s | 2026-11-26T06:57:18Z |
 | pass | `research_archive/2026-11-08_native_h64_diffusion/cathedral_hidden_wick_exact_2026_11_08.py` |  | 0.55s | 2026-11-26T06:57:19Z |
@@ -271,9 +272,9 @@
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_24FOLD_MONODROMY_2026_11_10.py` |  | 7.19s | 2026-11-26T07:06:24Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_A5_FRAME_SENSITIVITY_2026_11_10.py` |  | 7.96s | 2026-11-26T07:07:34Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_GOLDEN_BASEPOINT_CONJUGACY_2026_11_10.py` |  | 7.96s | 2026-11-26T07:07:42Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_KMS_ENTROPIC_STIFFNESS_2026_11_10.py` |  | 8.02s | 2026-11-26T06:19:01Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_C3_SCHUR_DRESSED_CLOCK_2026_11_10.py` |  | 83.94s | 2026-11-26T06:24:29Z |
-| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_CANONICAL_HAAR_GREEN_KUBO_2026_11_10.py` |  | 0.98s | 2026-11-26T06:24:30Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_BERRY_KMS_ENTROPIC_STIFFNESS_2026_11_10.py` |  | 8.29s | 2026-11-26T07:33:48Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_C3_SCHUR_DRESSED_CLOCK_2026_11_10.py` |  | 84.19s | 2026-11-26T07:39:17Z |
+| pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_CANONICAL_HAAR_GREEN_KUBO_2026_11_10.py` |  | 1.03s | 2026-11-26T07:39:18Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_A5_TENSOR_MATTER_BRIDGE_2026_11_10.py` |  | 7.83s | 2026-11-26T06:34:33Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_DELAYED_RESPONSE_2026_11_10.py` |  | 0.32s | 2026-11-26T06:34:33Z |
 | pass | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_DARK_FULL_RESPONSE_2026_11_10.py` |  | 1.67s | 2026-11-26T06:34:35Z |
@@ -344,7 +345,7 @@
 | pass | `research_archive/2026-11-11_q33_singular_spectrum/q33_singular_spectrum.py` |  | 33.96s | 2026-11-26T07:08:18Z |
 | pass | `research_archive/2026-11-11_q34_seventh_mixed_words/q34_seventh_mixed_words.py` |  | 6.08s | 2026-11-26T07:00:00Z |
 | pass | `research_archive/2026-11-11_q35_eighth_mixed_words/q35_eighth_mixed_words.py` |  | 11.91s | 2026-11-26T06:57:35Z |
-| pass | `research_archive/2026-11-11_q36_star_intertwiner/q36_exact_star_intertwiners.py` |  | 118.86s | 2026-11-26T06:30:37Z |
+| pass | `research_archive/2026-11-11_q36_star_intertwiner/q36_exact_star_intertwiners.py` |  | 117.19s | 2026-11-26T07:45:23Z |
 | pass | `research_archive/2026-11-11_q37_primitive_chronology/q37_primitive_q2_trace.py` |  | 0.28s | 2026-11-26T07:03:54Z |
 | pass | `research_archive/2026-11-11_q38_primitive_q2_allpairs/q38_primitive_q2_allpairs.py` |  | 2.33s | 2026-11-26T06:49:36Z |
 | pass | `research_archive/2026-11-11_q39_eight_image_q2/q39_eight_image_q2.py` |  | 3.47s | 2026-11-26T06:36:22Z |
@@ -391,29 +392,29 @@
 | pass | `research_archive/2026-11-13_q68_native_bridge/Q68_NATIVE_BRIDGE_POLYTOPE.py` |  | 0.4s | 2026-11-26T06:50:36Z |
 | pass | `research_archive/2026-11-13_q69_native_lift_clock_spectrum/Q69_NATIVE_LIFT_CLOCK_SPECTRUM.py` |  | 0.01s | 2026-11-26T06:37:07Z |
 | pass | `research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py` |  | 0.66s | 2026-11-26T07:23:16Z |
-| pass | `research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py` |  | 1.04s | 2026-11-26T06:30:38Z |
+| pass | `research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py` |  | 1.0s | 2026-11-26T07:45:24Z |
 | pass | `research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py` |  | 1.3s | 2026-11-26T06:37:09Z |
 | pass | `research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py` |  | 20.48s | 2026-11-26T06:37:30Z |
 | pass | `research_archive/2026-11-13_q73_joint_clock_bridge/Q73_JOINT_CLOCK_BRIDGE_CERTIFICATE.py` |  | 13.54s | 2026-11-26T06:35:06Z |
 | pass | `research_archive/2026-11-13_q75_native_q3_sigma/Q75_NATIVE_Q3_SIGMA.py` |  | 0.65s | 2026-11-26T06:59:54Z |
 | pass | `research_archive/2026-11-13_q76_hidden_commutator/Q76_NATIVE_HIDDEN_COMMUTATOR.py` |  | 1.13s | 2026-11-26T06:54:21Z |
-| pass | `research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py` |  | 69.28s | 2026-11-26T06:18:18Z |
+| pass | `research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py` |  | 69.83s | 2026-11-26T07:33:04Z |
 | pass | `research_archive/2026-11-13_q78_eight_dictionary_hidden/Q78_EIGHT_DICTIONARY_HIDDEN.py` |  | 3.63s | 2026-11-26T07:21:10Z |
 | pass | `research_archive/2026-11-13_q79_native_pair_source/Q79_NATIVE_PAIR_SOURCE.py` |  | 0.65s | 2026-11-26T06:36:04Z |
 | pass | `research_archive/2026-11-13_q80_native_hidden_source/Q80_NATIVE_HIDDEN_SOURCE.py` |  | 2.79s | 2026-11-26T06:44:44Z |
 | pass | `research_archive/2026-11-13_q81_native_source/Q81_NATIVE_SOURCE.py` |  | 11.38s | 2026-11-26T06:53:14Z |
 | pass | `research_archive/2026-11-13_q82_oriented_source_weights/Q82_ORIENTED_SOURCE_WEIGHTS_CERTIFICATE.py` |  | 24.93s | 2026-11-26T06:53:40Z |
 | pass | `research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py` |  | 1.2s | 2026-11-26T07:21:11Z |
-| pass | `research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py` |  | 32.1s | 2026-11-26T06:17:09Z |
+| pass | `research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py` |  | 32.24s | 2026-11-26T07:31:55Z |
 | pass | `research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py` |  | 0.42s | 2026-11-26T07:26:39Z |
 | pass | `research_archive/2026-11-13_q88_q89_engine_recovery/Q88_Q89_ENGINE_RECOVERY.py` |  | 3.57s | 2026-11-26T06:59:49Z |
 | pass | `research_archive/2026-11-13_q89_exact_source/Q89_EXACT_SOURCE.py` |  | 11.99s | 2026-11-26T06:49:30Z |
-| pass | `research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py` |  | 30.28s | 2026-11-26T06:18:52Z |
+| pass | `research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py` |  | 30.57s | 2026-11-26T07:33:38Z |
 | pass | `research_archive/2026-11-13_q90_source_clock_energies/Q90_SOURCE_CLOCK_ENERGIES.py` |  | 3.03s | 2026-11-26T06:59:52Z |
 | pass | `research_archive/2026-11-14_q101_moving_arf/MAGNETIC_ARF_FACTOR_CERTIFICATE.py` |  | 31.87s | 2026-11-26T07:05:12Z |
 | pass | `research_archive/2026-11-14_q101_moving_arf/MOVING_ARF_DERIVATION.py` |  | 31.31s | 2026-11-26T07:05:44Z |
 | pass | `research_archive/2026-11-14_q102_born_chiral_arf/Q102_BORN_CHIRAL_ARF.py` |  | 24.45s | 2026-11-26T06:45:35Z |
-| pass | `research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py` |  | 38.23s | 2026-11-26T06:14:58Z |
+| pass | `research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py` |  | 39.31s | 2026-11-26T07:29:42Z |
 | pass | `research_archive/2026-11-14_q105_broken_charged_wilson/Q105_MOVING_CHARGED_WARD.py` |  | 32.49s | 2026-11-26T06:38:29Z |
 | pass | `research_archive/2026-11-14_q106_exact_berry_wilson/Q106_EXACT_BERRY_SPECTRUM.py` |  | 4.56s | 2026-11-26T07:27:34Z |
 | pass | `research_archive/2026-11-14_q106_exact_berry_wilson/Q106_JOINED_NATIVE_WILSON.py` |  | 42.6s | 2026-11-26T07:28:16Z |
@@ -422,22 +423,22 @@
 | pass | `research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_NATIVE_FULL_HESSIAN.py` |  | 29.38s | 2026-11-26T06:47:37Z |
 | pass | `research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_TWO_DIMENSIONAL_DESCENT.py` |  | 42.61s | 2026-11-26T06:58:52Z |
 | pass | `research_archive/2026-11-14_q110_spatial_vacuum_existence/Q110_FULL_528_EXPLORATORY_DESCENT.py` |  | 46.68s | 2026-11-26T06:59:44Z |
-| pass | `research_archive/2026-11-14_q111_global_charge_bundle/Q111_GLOBAL_CHARGE_BUNDLE_PERIOD.py` |  | 47.3s | 2026-11-26T06:19:49Z |
+| pass | `research_archive/2026-11-14_q111_global_charge_bundle/Q111_GLOBAL_CHARGE_BUNDLE_PERIOD.py` |  | 46.85s | 2026-11-26T07:34:36Z |
 | pass | `research_archive/2026-11-14_q112_native_hidden_clock_leak/Q112_NATIVE_G5_CLOCK_LEAK.py` |  | 44.12s | 2026-11-26T06:46:20Z |
 | pass | `research_archive/2026-11-14_q113_mixed_hidden_spectral/Q113_NATIVE_MIXED_SPECTRAL_VARIANCE.py` |  | 43.75s | 2026-11-26T06:47:06Z |
 | pass | `research_archive/2026-11-14_q114_hidden_distance/Q114_NATIVE_HIDDEN_PROJECTOR.py` |  | 0.43s | 2026-11-26T07:03:54Z |
-| pass | `research_archive/2026-11-14_q115_a5_four_pole_source/Q115_A5_FOUR_POLE_SOURCE.py` |  | 69.98s | 2026-11-26T06:22:22Z |
-| pass | `research_archive/2026-11-14_q115_a5_four_pole_source/Q115_CI129_CHARACTER_CERTIFICATE.py` |  | 0.02s | 2026-11-26T06:19:49Z |
+| pass | `research_archive/2026-11-14_q115_a5_four_pole_source/Q115_A5_FOUR_POLE_SOURCE.py` |  | 70.47s | 2026-11-26T07:37:09Z |
+| pass | `research_archive/2026-11-14_q115_a5_four_pole_source/Q115_CI129_CHARACTER_CERTIFICATE.py` |  | 0.02s | 2026-11-26T07:34:36Z |
 | pass | `research_archive/2026-11-14_q116_local_hidden_golden_bridge/Q116_EXACT_LOCAL_WEDGE_BRIDGE.py` |  | 1.85s | 2026-11-26T06:49:18Z |
-| pass | `research_archive/2026-11-14_q117_mixed_current_response/Q117A_NATIVE_MIXED_CURRENT_RESPONSE.py` |  | 72.37s | 2026-11-26T06:16:12Z |
+| pass | `research_archive/2026-11-14_q117_mixed_current_response/Q117A_NATIVE_MIXED_CURRENT_RESPONSE.py` |  | 73.13s | 2026-11-26T07:30:57Z |
 | pass | `research_archive/2026-11-14_q118_complement_spectrum/Q118_NATIVE_COMPLEMENT_SPECTRUM.py` |  | 0.89s | 2026-11-26T06:49:04Z |
-| pass | `research_archive/2026-11-14_q118b_quartet_multiplicity/Q118B_QUARTET_MULTIPLICITY.py` |  | 70.64s | 2026-11-26T06:21:08Z |
+| pass | `research_archive/2026-11-14_q118b_quartet_multiplicity/Q118B_QUARTET_MULTIPLICITY.py` |  | 71.1s | 2026-11-26T07:35:55Z |
 | pass | `research_archive/2026-11-14_q119_native_scale/Q119_NATIVE_SCALE_CERTIFICATE.py` |  | 0.85s | 2026-11-26T07:26:40Z |
 | pass | `research_archive/2026-11-14_q120_moving_reversal_barrier/Q120_GOLDEN_TUNNEL_BARRIER.py` |  | 0.66s | 2026-11-26T06:40:28Z |
 | pass | `research_archive/2026-11-14_q122_native_berry_branch_cancellation/Q122_ORIGINAL_CHARGED_BERRY_BRANCH.py` |  | 24.02s | 2026-11-26T06:40:52Z |
 | pass | `research_archive/2026-11-14_q123_golden_persistence/Q123_GOLDEN_SADDLE_CAPACITY.py` |  | 0.57s | 2026-11-26T06:56:28Z |
-| pass | `research_archive/2026-11-14_q124_charged_barrier_extension/Q124_NATIVE_CHARGED_BARRIER.py` |  | 0.69s | 2026-11-26T06:14:58Z |
-| pass | `research_archive/2026-11-14_q126_no_unique_kinetic_clock/Q126_NO_UNIQUE_CLOCK.py` |  | 0.41s | 2026-11-26T06:14:59Z |
+| pass | `research_archive/2026-11-14_q124_charged_barrier_extension/Q124_NATIVE_CHARGED_BARRIER.py` |  | 0.72s | 2026-11-26T07:29:43Z |
+| pass | `research_archive/2026-11-14_q126_no_unique_kinetic_clock/Q126_NO_UNIQUE_CLOCK.py` |  | 0.46s | 2026-11-26T07:29:43Z |
 | pass | `research_archive/2026-11-14_q86_parity_history_energy/Q86_PARITY_HISTORY_ENERGY.py` |  | 29.49s | 2026-11-26T06:58:05Z |
 | pass | `research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py` |  | 0.38s | 2026-11-26T06:34:22Z |
 | pass | `research_archive/2026-11-14_q87c_bridge_singular/Q87C_BRIDGE_SINGULAR.py` |  | 1.06s | 2026-11-26T06:40:09Z |
@@ -457,10 +458,10 @@
 | pass | `research_archive/2026-11-14_q97_source_locality/Q97_LOCAL_SOURCE_UNIQUENESS.py` |  | 1.07s | 2026-11-26T07:13:57Z |
 | pass | `research_archive/2026-11-14_q99_parity_rigidity/Q99_PARITY_RIGIDITY.py` |  | 1.49s | 2026-11-26T06:41:12Z |
 | pass | `research_archive/2026-11-14_symmetry_breaking_recovery/ASYMMETRY_NATIVE_CERTIFICATE.py` |  | 8.07s | 2026-11-26T07:02:29Z |
-| pass | `research_archive/2026-11-15_q104_clock_transport/Q104_CLOCK_TRANSPORT.py` |  | 53.79s | 2026-11-26T06:25:33Z |
+| pass | `research_archive/2026-11-15_q104_clock_transport/Q104_CLOCK_TRANSPORT.py` |  | 54.04s | 2026-11-26T07:40:21Z |
 | pass | `research_archive/2026-11-15_q125_native_hidden_charged_join/Q125_NATIVE_WEDGE_CHARGED_COUPLING.py` |  | 32.97s | 2026-11-26T06:51:09Z |
 | pass | `research_archive/2026-11-15_q127_unitary_connection/Q127_UNITARY_CONNECTION.py` |  | 3.9s | 2026-11-26T06:55:15Z |
-| pass | `research_archive/2026-11-15_q144_shell_equitable_recovery/Q144_NATIVE_EQUITABLE_CERTIFICATE.py` |  | 0.07s | 2026-11-26T06:21:08Z |
+| pass | `research_archive/2026-11-15_q144_shell_equitable_recovery/Q144_NATIVE_EQUITABLE_CERTIFICATE.py` |  | 0.07s | 2026-11-26T07:35:55Z |
 | pass | `research_archive/2026-11-15_q146_context_recovery/Q139_Q146_RECOVERY_CERTIFICATE.py` |  | 0.34s | 2026-11-26T06:57:36Z |
 | pass | `research_archive/2026-11-15_q147_weighted_link_recovery/Q147_WEIGHTED_LINK_FOURTH_CERTIFICATE.py` |  | 0.31s | 2026-11-26T07:01:03Z |
 | pass | `research_archive/2026-11-15_q149_physical_curvature/Q149_ORIGINAL_528_CURVATURE_CERTIFICATE.py` |  | 0.19s | 2026-11-26T06:38:45Z |
@@ -471,15 +472,15 @@
 | pass | `research_archive/2026-11-15_q155_native_flux_translation/Q155_ORIGINAL_NATIVE_TRANSLATION_AUDIT.py` |  | 0.38s | 2026-11-26T07:08:19Z |
 | pass | `research_archive/2026-11-15_q156_native_translation_orbit/Q156_ORIGINAL_NATIVE_TRANSLATION_ORBIT.py` |  | 47.76s | 2026-11-26T07:09:07Z |
 | pass | `research_archive/2026-11-15_q157_native_4d_instability_momenta/Q157_4D_NATIVE_GAUGE_INSTABILITY.py` |  | 46.23s | 2026-11-26T07:10:42Z |
-| pass | `research_archive/2026-11-15_q158_native_flux_order_match/Q158_NATIVE_FLUX_UNSTABLE_OVERLAP.py` |  | 0.63s | 2026-11-26T06:22:22Z |
+| pass | `research_archive/2026-11-15_q158_native_flux_order_match/Q158_NATIVE_FLUX_UNSTABLE_OVERLAP.py` |  | 0.48s | 2026-11-26T07:37:10Z |
 | pass | `research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_BLOCH_PHOTON_AND_GAP.py` |  | 35.16s | 2026-11-26T06:43:31Z |
 | pass | `research_archive/2026-11-15_q160_native_gap_robustness/Q160_NATIVE_GAP_ROBUSTNESS.py` |  | 0.02s | 2026-11-26T07:13:47Z |
 | pass | `research_archive/2026-11-15_q161_native_gram_spectrum/Q161_NATIVE_64_TRANSFER_SPECTRUM.py` |  | 1.44s | 2026-11-26T06:36:18Z |
 | pass | `research_archive/2026-11-15_q161e_native_hidden_rank/Q161E_NATIVE_HIDDEN_RANK.py` |  | 0.72s | 2026-11-26T07:18:47Z |
-| pass | `research_archive/2026-11-15_q161f_clock_hidden_rank/Q161F_CLOCK_HIDDEN_RANK.py` |  | 0.79s | 2026-11-26T06:30:39Z |
+| pass | `research_archive/2026-11-15_q161f_clock_hidden_rank/Q161F_CLOCK_HIDDEN_RANK.py` |  | 0.75s | 2026-11-26T07:45:24Z |
 | pass | `research_archive/2026-11-15_q161h_hidden_shift/Q161H_HIDDEN_SHIFT_CERTIFICATE.py` |  | 0.55s | 2026-11-26T06:39:51Z |
 | pass | `research_archive/2026-11-16_q161i_hidden_second_order/Q161I_HESSIAN_SPAN.py` |  | 0.81s | 2026-11-26T07:01:47Z |
-| pass | `research_archive/2026-11-16_q161j_two_vertex_hidden/Q161J_TWO_VERTEX_JACOBIAN.py` |  | 2.81s | 2026-11-26T06:18:21Z |
+| pass | `research_archive/2026-11-16_q161j_two_vertex_hidden/Q161J_TWO_VERTEX_JACOBIAN.py` |  | 2.9s | 2026-11-26T07:33:08Z |
 | pass | `research_archive/2026-11-16_q161k_native_stacked_sources/Q161K_NATIVE_STACK.py` |  | 1.16s | 2026-11-26T06:41:04Z |
 | pass | `research_archive/2026-11-16_q161l_axis_orbit/Q161L_AXIS_ORBIT.py` |  | 28.22s | 2026-11-26T07:27:29Z |
 | pass | `research_archive/2026-11-16_q161n_parity_source/Q161N_PARITY_SOURCE.py` |  | 0.14s | 2026-11-26T06:43:31Z |
@@ -492,18 +493,18 @@
 | pass | `research_archive/2026-11-16_q161x_axis_geometry/Q161X_AXIS_GEOMETRY.py` |  | 9.7s | 2026-11-26T06:54:30Z |
 | pass | `research_archive/2026-11-16_q161y_axis_orbit/Q161Y_AXIS_ORBIT.py` |  | 1.7s | 2026-11-26T07:21:01Z |
 | pass | `research_archive/2026-11-17_q161_direct_face_vertex_generation/Q161_DIRECT_FACE_VERTEX_GENERATION_CERT.py` |  | 11.57s | 2026-11-26T07:15:52Z |
-| pass | `research_archive/2026-11-17_q161_exact_hidden4_yukawa_isometry/Q161_EXACT_HIDDEN4_TO_YUKAWA_PHYSICS_CERT.py` |  | 2.74s | 2026-11-26T06:21:12Z |
+| pass | `research_archive/2026-11-17_q161_exact_hidden4_yukawa_isometry/Q161_EXACT_HIDDEN4_TO_YUKAWA_PHYSICS_CERT.py` |  | 2.77s | 2026-11-26T07:35:59Z |
 | pass | `research_archive/2026-11-17_q161_four_one_form/Q161_FOUR_ONE_FORM_NATIVE_CERT.py` |  | 40.56s | 2026-11-26T07:24:04Z |
 | pass | `research_archive/2026-11-17_q161_full_ew_source_covariance/Q161_FULL_EW_SOURCE_HOPF_COVARIANCE_CERT.py` |  | 38.86s | 2026-11-26T07:16:35Z |
-| pass | `research_archive/2026-11-17_q161_graded_48_original/Q161_GRADED_48_ORIGINAL_SOURCE_CERT.py` |  | 41.98s | 2026-11-26T06:23:04Z |
-| pass | `research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_FLUX_EXACT_STATIONARITY.py` |  | 12.48s | 2026-11-26T06:30:53Z |
-| pass | `research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_GRADED_NONZERO_FLUX_NATIVE_CERT.py` |  | 27.13s | 2026-11-26T06:32:10Z |
+| pass | `research_archive/2026-11-17_q161_graded_48_original/Q161_GRADED_48_ORIGINAL_SOURCE_CERT.py` |  | 42.09s | 2026-11-26T07:37:52Z |
+| pass | `research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_FLUX_EXACT_STATIONARITY.py` |  | 12.35s | 2026-11-26T07:45:39Z |
+| pass | `research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_GRADED_NONZERO_FLUX_NATIVE_CERT.py` |  | 43.14s | 2026-11-26T07:46:22Z |
 | pass | `research_archive/2026-11-17_q161_ns4_curved_vacuum/Q161_NS4_CURVED_GRADED_NATIVE.py` |  | 67.96s | 2026-11-26T07:25:12Z |
-| pass | `research_archive/2026-11-17_q161_part21_audit/Q161_PART21_GRADED_PHYSICS_AUDIT_2026_11_17.py` |  | 0.33s | 2026-11-26T06:23:05Z |
+| pass | `research_archive/2026-11-17_q161_part21_audit/Q161_PART21_GRADED_PHYSICS_AUDIT_2026_11_17.py` |  | 0.33s | 2026-11-26T07:37:52Z |
 | pass | `research_archive/2026-11-17_q161_q96_three_generation_hopf_source/Q161_Q96_SOURCE_THREE_GENERATION_WARD_CERT.py` |  | 39.0s | 2026-11-26T07:17:14Z |
 | pass | `research_archive/2026-11-17_q161_source_selected_generation/Q161_SOURCE_SELECTED_GENERATION_CERT.py` |  | 2.03s | 2026-11-26T06:49:16Z |
 | pass | `research_archive/2026-11-17_q161_step23_full_theory_audit/Q161_STEP23_NATIVE_PORTAL_AND_HESSIAN_AUDIT.py` |  | 0.15s | 2026-11-26T06:42:48Z |
-| pass | `research_archive/2026-11-17_q161_thermodynamic_photon/Q161_THERMODYNAMIC_PHOTON_NATIVE_CERT.py` |  | 69.02s | 2026-11-26T06:33:19Z |
+| pass | `research_archive/2026-11-17_q161_thermodynamic_photon/Q161_THERMODYNAMIC_PHOTON_NATIVE_CERT.py` |  | 99.35s | 2026-11-26T07:48:01Z |
 | pass | `research_archive/2026-11-17_q161aa_face_readout_gram/Q161AA_FACE_GRAM.py` |  | 2.28s | 2026-11-26T07:21:38Z |
 | pass | `research_archive/2026-11-17_q161ac_face_source_channel/Q161AC_FACE_SOURCE_CHANNEL.py` |  | 1.58s | 2026-11-26T06:41:03Z |
 | pass | `research_archive/2026-11-17_q161ae_face_dual_spectrum/Q161AE_FACE_KERNEL.py` |  | 18.04s | 2026-11-26T06:56:16Z |
@@ -526,7 +527,7 @@
 | pass | `research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_graded_kinetic_audit_2026_11_17.py` |  | 2.03s | 2026-11-26T07:07:25Z |
 | pass | `research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_urt_parity_history_test_2026_11_17.py` |  | 0.62s | 2026-11-26T07:07:26Z |
 | pass | `research_archive/2026-11-18_q161bb_native_covariance_purity/Q161BB_CERT.py` |  | 0.82s | 2026-11-26T07:23:17Z |
-| pass | `research_archive/2026-11-18_q161bc_native_clock_covariance/Q161BC_CERT.py` |  | 0.84s | 2026-11-26T06:30:39Z |
+| pass | `research_archive/2026-11-18_q161bc_native_clock_covariance/Q161BC_CERT.py` |  | 0.82s | 2026-11-26T07:45:25Z |
 | pass | `research_archive/2026-11-18_q161be_q96_clock_charge/Q161BE_CERT.py` |  | 0.02s | 2026-11-26T06:53:00Z |
 | pass | `research_archive/2026-11-18_q161bf_twisted_q96_clock/Q161BF_CERT.py` |  | 1.65s | 2026-11-26T07:18:48Z |
 | pass | `research_archive/2026-11-18_q161bg_q96_seam_nonselection/Q161BG_CERT.py` |  | 0.52s | 2026-11-26T06:45:10Z |
@@ -550,27 +551,27 @@
 | pass | `research_archive/2026-11-19_q161cb_native_source_gram/Q161CB_CERT.py` |  | 5.19s | 2026-11-26T07:25:17Z |
 | pass | `research_archive/2026-11-19_q161cc_native_source_schur/Q161CC_CERT.py` |  | 12.32s | 2026-11-26T06:36:17Z |
 | pass | `research_archive/2026-11-19_q161cd_five_solid_leverage/Q161CD_CERT.py` |  | 6.17s | 2026-11-26T07:02:21Z |
-| pass | `research_archive/2026-11-19_q161ce_source_deletion/Q161CE_CERT.py` |  | 19.62s | 2026-11-26T06:16:37Z |
+| pass | `research_archive/2026-11-19_q161ce_source_deletion/Q161CE_CERT.py` |  | 19.92s | 2026-11-26T07:31:22Z |
 | pass | `research_archive/2026-11-19_q161cf_source_subset_ranks/Q161CF_CERT.py` |  | 26.62s | 2026-11-26T06:37:56Z |
 | pass | `research_archive/2026-11-19_q161ci_cube_octa_dual/Q161CI_CERT.py` |  | 0.37s | 2026-11-26T07:18:49Z |
 | pass | `research_archive/2026-11-19_q161cj_five_solid_charge_commutant/Q161CJ_CERT.py` |  | 6.49s | 2026-11-26T06:33:26Z |
 | pass | `research_archive/2026-11-19_q161ck_native_antipodal_defect/Q161CK_CERT.py` |  | 8.48s | 2026-11-26T06:51:19Z |
 | pass | `research_archive/2026-11-19_q161cm_q96_chiral_ward/Q161CM_CERT.py` |  | 0.02s | 2026-11-26T07:13:48Z |
-| pass | `research_archive/2026-11-19_q161cn_q96_majorana/Q161CN_CERT.py` |  | 0.02s | 2026-11-26T06:18:52Z |
+| pass | `research_archive/2026-11-19_q161cn_q96_majorana/Q161CN_CERT.py` |  | 0.02s | 2026-11-26T07:33:38Z |
 | pass | `research_archive/2026-11-19_q161co_q96_symmetric/Q161CO_CERT.py` |  | 0.03s | 2026-11-26T07:10:42Z |
 | pass | `research_archive/2026-11-20_native_one_transfer/Q161CT_ONE_TRANSFER_NATIVE_CERT.py` |  | 32.11s | 2026-11-26T07:04:28Z |
-| pass | `research_archive/2026-11-20_q161cp_q96_anomaly/Q161CP_Q96_ANOMALY.py` |  | 0.02s | 2026-11-26T06:27:39Z |
+| pass | `research_archive/2026-11-20_q161cp_q96_anomaly/Q161CP_Q96_ANOMALY.py` |  | 0.02s | 2026-11-26T07:42:27Z |
 | pass | `research_archive/2026-11-20_q161cq_vertex_leverage/Q161CQ_CERT.py` |  | 2.19s | 2026-11-26T06:49:14Z |
-| pass | `research_archive/2026-11-20_q161cr_q125_symbolic_charge/Q161CR_CERT.py` |  | 0.37s | 2026-11-26T06:27:39Z |
+| pass | `research_archive/2026-11-20_q161cr_q125_symbolic_charge/Q161CR_CERT.py` |  | 0.38s | 2026-11-26T07:42:27Z |
 | pass | `research_archive/2026-11-20_q161cs_q125_q96_hopf_curvature/Q161CS_CERT.py` |  | 0.69s | 2026-11-26T06:47:07Z |
-| pass | `research_archive/2026-11-20_q161ct_native_cubic/Q161CT_CERT.py` |  | 0.78s | 2026-11-26T06:21:09Z |
+| pass | `research_archive/2026-11-20_q161ct_native_cubic/Q161CT_CERT.py` |  | 0.77s | 2026-11-26T07:35:56Z |
 | pass | `research_archive/2026-11-20_q161cu_five_hopf_fluid/Q161CU_FIVE_PLATONIC_HOPF_NS_CERT.py` |  | 1.03s | 2026-11-26T06:47:38Z |
 | pass | `research_archive/2026-11-20_q161cu_five_hopf_fluid/Q161CV_SOURCE_ALIGNED_URT_FLOW.py` |  | 0.38s | 2026-11-26T06:47:38Z |
-| pass | `research_archive/2026-11-20_q161cw_five_solid_kinetic/Q161CW_NATIVE_EXACT_CERT.py` |  | 0.65s | 2026-11-26T06:18:52Z |
-| pass | `research_archive/2026-11-20_q161cx_native_ground_frame/Q161CX_CERT.py` |  | 0.91s | 2026-11-26T06:18:53Z |
+| pass | `research_archive/2026-11-20_q161cw_five_solid_kinetic/Q161CW_NATIVE_EXACT_CERT.py` |  | 0.68s | 2026-11-26T07:33:39Z |
+| pass | `research_archive/2026-11-20_q161cx_native_ground_frame/Q161CX_CERT.py` |  | 0.95s | 2026-11-26T07:33:40Z |
 | pass | `research_archive/2026-11-20_q161cy_native_response/Q161CY_CERT.py` |  | 0.57s | 2026-11-26T06:37:08Z |
 | pass | `research_archive/2026-11-20_q161db_face_jacobian/Q161DB_CERT.py` |  | 5.45s | 2026-11-26T06:41:01Z |
-| pass | `research_archive/2026-11-20_q161dc_q96_clock_spectrum/Q161DC_CERT.py` |  | 0.57s | 2026-11-26T06:19:02Z |
+| pass | `research_archive/2026-11-20_q161dc_q96_clock_spectrum/Q161DC_CERT.py` |  | 0.59s | 2026-11-26T07:33:49Z |
 | pass | `research_archive/2026-11-20_q161dd_q96_clock_green/Q161DD_CERT.py` |  | 0.34s | 2026-11-26T06:42:48Z |
 | pass | `research_archive/2026-11-20_q161de_q96_antipodal_green/Q161DE_CERT.py` |  | 0.02s | 2026-11-26T06:57:23Z |
 | pass | `research_archive/2026-11-20_q161df_q96_clock_kirchhoff/Q161DF_CERT.py` |  | 0.02s | 2026-11-26T07:23:17Z |
@@ -580,7 +581,7 @@
 | pass | `research_archive/2026-11-20_q162b_golden_sphere/Q162B_GOLDEN_PLATONIC_SPHERE_CERT.py` |  | 0.42s | 2026-11-26T07:23:19Z |
 | pass | `research_archive/2026-11-20_q162b_golden_sphere/Q162C_GOLDEN_QUANTUM_HARMONIC_TRANSFER.py` |  | 0.36s | 2026-11-26T07:23:19Z |
 | pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162D_NATIVE_Q4_H64_CLOCK_CERT.py` |  | 2.58s | 2026-11-26T06:55:42Z |
-| pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162E_WHOLE_FIVE_TO_Q4_KINETIC_CERT.py` |  | 3.25s | 2026-11-26T06:25:39Z |
+| pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162E_WHOLE_FIVE_TO_Q4_KINETIC_CERT.py` |  | 3.27s | 2026-11-26T07:40:27Z |
 | pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162F_EXACT_HIDDEN_TRIPLE_IDENTITY_CERT.py` |  | 2.71s | 2026-11-26T06:55:44Z |
 | pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162G_NATIVE_GROUND_ENSEMBLE_KMS_CERT.py` |  | 2.55s | 2026-11-26T06:55:47Z |
 | pass | `research_archive/2026-11-20_q162h_frustration_entropy/Q162H_GEOMETRIC_FRUSTRATION_ENTROPY_CERT.py` |  | 3.32s | 2026-11-26T07:13:52Z |
@@ -593,44 +594,44 @@
 | pass | `research_archive/2026-11-21_urt_collective_metric_trace/cert.py` |  | 0.7s | 2026-11-26T06:49:38Z |
 | pass | `research_archive/2026-11-21_urt_collective_metric_trace/virial.py` |  | 0.32s | 2026-11-26T06:49:39Z |
 | pass | `research_archive/2026-11-21_urt_combined_vacuum_one_loop/calc.py` |  | 0.01s | 2026-11-26T07:20:53Z |
-| pass | `research_archive/2026-11-21_urt_entropy_frustration/FRUSTRATION_CORRELATION_CERT.py` |  | 0.04s | 2026-11-26T06:27:39Z |
+| pass | `research_archive/2026-11-21_urt_entropy_frustration/FRUSTRATION_CORRELATION_CERT.py` |  | 0.04s | 2026-11-26T07:42:27Z |
 | pass | `research_archive/2026-11-21_urt_local_pump/URT_LOCAL_CONJUGATE_PUMP_CERT.py` |  | 0.26s | 2026-11-26T06:51:11Z |
 | pass | `research_archive/2026-11-21_urt_prime_group_completion/prime_urt_group_completion_2026_11_21.py` |  | 0.03s | 2026-11-26T06:46:21Z |
-| pass | `research_archive/2026-11-21_urt_prime_magnetic_gap/urt_prime_magnetic_gap_2026_11_21.py` |  | 1.56s | 2026-11-26T06:19:57Z |
+| pass | `research_archive/2026-11-21_urt_prime_magnetic_gap/urt_prime_magnetic_gap_2026_11_21.py` |  | 1.59s | 2026-11-26T07:34:43Z |
 | pass | `research_archive/2026-11-21_urt_prime_pair_information/PRIME_PAIR_INFORMATION_CERT.py` |  | 0.37s | 2026-11-26T06:49:02Z |
 | pass | `research_archive/2026-11-21_urt_prime_reciprocity/urt_prime_reciprocity_coupling.py` |  | 0.15s | 2026-11-26T07:13:48Z |
-| pass | `research_archive/2026-11-21_urt_prime_vacuum_bridge/prime_urt_vacuum_bridge_2026_11_21.py` |  | 0.78s | 2026-11-26T06:19:57Z |
-| pass | `research_archive/2026-11-21_urt_primitive_amplifier/URT_PRIMITIVE_BOGOLIUBOV_CERT.py` |  | 0.68s | 2026-11-26T06:25:33Z |
+| pass | `research_archive/2026-11-21_urt_prime_vacuum_bridge/prime_urt_vacuum_bridge_2026_11_21.py` |  | 0.82s | 2026-11-26T07:34:44Z |
+| pass | `research_archive/2026-11-21_urt_primitive_amplifier/URT_PRIMITIVE_BOGOLIUBOV_CERT.py` |  | 0.71s | 2026-11-26T07:40:21Z |
 | pass | `research_archive/2026-11-21_urt_whole_cosmological_system/calc.py` |  | 0.53s | 2026-11-26T07:20:53Z |
 | pass | `research_archive/2026-11-21_urt_whole_trace_dynamics/cert.py` |  | 0.61s | 2026-11-26T07:20:54Z |
-| pass | `research_archive/2026-11-21_urt_zpe_battery/URT_ZPE_BATTERY_CERT.py` |  | 0.68s | 2026-11-26T06:25:34Z |
+| pass | `research_archive/2026-11-21_urt_zpe_battery/URT_ZPE_BATTERY_CERT.py` |  | 0.71s | 2026-11-26T07:40:22Z |
 | pass | `research_archive/2026-11-21_urt_zpe_boost_stationarity/check.py` |  | 4.63s | 2026-11-26T07:02:05Z |
 | pass | `research_archive/2026-11-21_urt_zpe_boost_stationarity/modular.py` |  | 0.3s | 2026-11-26T07:02:05Z |
 | pass | `research_archive/2026-11-21_urt_zpe_coefficient_reaudit/URT_ZPE_95PERCENT_REAUDIT.py` |  | 0.35s | 2026-11-26T06:49:03Z |
 | pass | `research_archive/2026-11-21_urt_zpe_complete_3d/URT_3D_VACUUM_CERT.py` |  | 0.46s | 2026-11-26T06:42:12Z |
 | pass | `research_archive/2026-11-21_urt_zpe_complete_3d/URT_FLUID_CLOSURE_SYMBOLIC_CERT.py` |  | 0.37s | 2026-11-26T06:42:12Z |
 | pass | `research_archive/2026-11-21_urt_zpe_cosmological_bridge/zpe_cosmological_term_certificate.py` |  | 0.59s | 2026-11-26T07:08:19Z |
-| pass | `research_archive/2026-11-21_urt_zpe_covariant_action/URT_ZPE_COVARIANT_CONSTRAINT_CERT.py` |  | 0.54s | 2026-11-26T06:25:35Z |
+| pass | `research_archive/2026-11-21_urt_zpe_covariant_action/URT_ZPE_COVARIANT_CONSTRAINT_CERT.py` |  | 0.55s | 2026-11-26T07:40:23Z |
 | pass | `research_archive/2026-11-21_urt_zpe_entropy_audit/URT_ENTROPY_95PERCENT_SAME_STATE_CERT.py` |  | 0.59s | 2026-11-26T07:16:35Z |
 | pass | `research_archive/2026-11-21_urt_zpe_force_vacuum/cert.py` |  | 0.5s | 2026-11-26T07:20:54Z |
 | pass | `research_archive/2026-11-21_urt_zpe_gaussian_joint/URT_JOINT_ZPE_ENTROPY_CERT.py` |  | 0.07s | 2026-11-26T06:34:41Z |
 | pass | `research_archive/2026-11-21_urt_zpe_gaussian_joint/independent_gaussian_check.py` |  | 0.2s | 2026-11-26T06:34:42Z |
 | pass | `research_archive/2026-11-21_urt_zpe_horizon_limit/central_thermal.py` |  | 1.98s | 2026-11-26T06:46:23Z |
 | pass | `research_archive/2026-11-21_urt_zpe_horizon_orientation/orientation.py` |  | 0.86s | 2026-11-26T07:02:06Z |
-| pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_BOUNDARY_ENERGY_CERT.py` |  | 4.82s | 2026-11-26T06:27:47Z |
-| pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_BOOST_CERT.py` |  | 19.9s | 2026-11-26T06:28:07Z |
-| pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_STRIP_CHECK.py` |  | 8.59s | 2026-11-26T06:28:37Z |
+| pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_BOUNDARY_ENERGY_CERT.py` |  | 4.86s | 2026-11-26T07:42:35Z |
+| pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_BOOST_CERT.py` |  | 19.78s | 2026-11-26T07:42:55Z |
+| pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_STRIP_CHECK.py` |  | 8.5s | 2026-11-26T07:43:24Z |
 | pass | `research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_LANCZOS_INDEPENDENT.py` |  | 0.29s | 2026-11-26T07:17:39Z |
 | pass | `research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_SIGN_EXACT_CERT.py` |  | 1.03s | 2026-11-26T07:17:40Z |
 | pass | `research_archive/2026-11-21_urt_zpe_interface/URT_ZPE_INTERFACE_CERT.py` |  | 0.44s | 2026-11-26T07:17:40Z |
 | pass | `research_archive/2026-11-21_urt_zpe_lattice_area_law/URT_ZPE_FLUX_MOMENT_CERT.py` |  | 0.3s | 2026-11-26T06:54:53Z |
 | pass | `research_archive/2026-11-21_urt_zpe_lattice_area_law/URT_ZPE_LATTICE_AREA_CERT.py` |  | 0.29s | 2026-11-26T06:54:53Z |
-| pass | `research_archive/2026-11-21_urt_zpe_metric_response/URT_CARRIER_CREATION_THERMODYNAMICS_CERT.py` |  | 0.81s | 2026-11-26T06:28:38Z |
-| pass | `research_archive/2026-11-21_urt_zpe_metric_response/URT_ZPE_METRIC_RESPONSE_CERT.py` |  | 0.4s | 2026-11-26T06:28:38Z |
+| pass | `research_archive/2026-11-21_urt_zpe_metric_response/URT_CARRIER_CREATION_THERMODYNAMICS_CERT.py` |  | 0.81s | 2026-11-26T07:43:25Z |
+| pass | `research_archive/2026-11-21_urt_zpe_metric_response/URT_ZPE_METRIC_RESPONSE_CERT.py` |  | 0.4s | 2026-11-26T07:43:26Z |
 | pass | `research_archive/2026-11-21_urt_zpe_mismatch_reaudit/URT_ZPE_MISMATCH_CERT_2026-11-21.py` |  | 0.57s | 2026-11-26T07:20:55Z |
-| pass | `research_archive/2026-11-21_urt_zpe_quantum_dynamics/URT_ZPE_QUANTUM_SEAM_DYNAMICS_CERT.py` |  | 0.33s | 2026-11-26T06:25:35Z |
+| pass | `research_archive/2026-11-21_urt_zpe_quantum_dynamics/URT_ZPE_QUANTUM_SEAM_DYNAMICS_CERT.py` |  | 0.34s | 2026-11-26T07:40:23Z |
 | pass | `research_archive/2026-11-21_urt_zpe_three_layer_refinement/URT_ZPE_REFINEMENT_CERT.py` |  | 0.16s | 2026-11-26T07:13:48Z |
-| pass | `research_archive/2026-11-22_q161dq_native_q96_charge_embedding/Q161DQ_NATIVE_Q96_CHARGE_EMBEDDING_NONUNIQUENESS_CERT.py` |  | 0.23s | 2026-11-26T06:21:09Z |
+| pass | `research_archive/2026-11-22_q161dq_native_q96_charge_embedding/Q161DQ_NATIVE_Q96_CHARGE_EMBEDDING_NONUNIQUENESS_CERT.py` |  | 0.23s | 2026-11-26T07:35:56Z |
 | pass | `research_archive/2026-11-22_q161ds_native_plaquette_classes/Q161DS_NATIVE_PLAQUETTE_CLASSES.py` |  | 0.05s | 2026-11-26T06:38:29Z |
 | pass | `research_archive/2026-11-22_q161dt_native_berry_orientation/Q161DT_NATIVE_BERRY_ORIENTATION.py` |  | 0.06s | 2026-11-26T06:51:11Z |
 | pass | `research_archive/2026-11-22_urt_autonomous_join_energy_modular/cert.py` |  | 0.71s | 2026-11-26T06:59:46Z |
@@ -645,19 +646,19 @@
 | pass | `research_archive/2026-11-22_urt_zpe_entropy_normalized_dynamics/cert.py` |  | 0.58s | 2026-11-26T07:13:48Z |
 | pass | `research_archive/2026-11-22_urt_zpe_holonomy_reaction/cert.py` |  | 0.15s | 2026-11-26T06:57:00Z |
 | pass | `research_archive/2026-11-22_urt_zpe_idler_spectator_obstruction/cert.py` |  | 0.01s | 2026-11-26T06:49:03Z |
-| pass | `research_archive/2026-11-22_urt_zpe_local_gravity_response/cert.py` |  | 2.89s | 2026-11-26T06:19:52Z |
+| pass | `research_archive/2026-11-22_urt_zpe_local_gravity_response/cert.py` |  | 2.85s | 2026-11-26T07:34:39Z |
 | pass | `research_archive/2026-11-22_urt_zpe_local_spatial_stress/cert.py` |  | 0.37s | 2026-11-26T06:57:00Z |
 | pass | `research_archive/2026-11-22_urt_zpe_metric_kernel/cert.py` |  | 3.27s | 2026-11-26T06:39:58Z |
-| pass | `research_archive/2026-11-22_urt_zpe_native_commutator/cert.py` |  | 0.11s | 2026-11-26T06:30:40Z |
+| pass | `research_archive/2026-11-22_urt_zpe_native_commutator/cert.py` |  | 0.11s | 2026-11-26T07:45:25Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_connection_response/cert.py` |  | 0.16s | 2026-11-26T06:57:00Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_energy_current/cert.py` |  | 0.5s | 2026-11-26T06:42:48Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/cert.py` |  | 0.2s | 2026-11-26T07:09:55Z |
-| pass | `research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/independent_jc_four_seam_bound.py` |  | 0.01s | 2026-11-26T06:19:52Z |
+| pass | `research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/independent_jc_four_seam_bound.py` |  | 0.01s | 2026-11-26T07:34:39Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/jc_test.py` |  | 0.51s | 2026-11-26T07:09:55Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_local_seam_spectral_leakage/cert.py` |  | 0.13s | 2026-11-26T07:25:12Z |
-| pass | `research_archive/2026-11-22_urt_zpe_native_scale_phase/cert.py` |  | 2.87s | 2026-11-26T06:19:55Z |
+| pass | `research_archive/2026-11-22_urt_zpe_native_scale_phase/cert.py` |  | 2.87s | 2026-11-26T07:34:42Z |
 | pass | `research_archive/2026-11-22_urt_zpe_physical_discriminant/cert.py` |  | 0.34s | 2026-11-26T06:39:52Z |
-| pass | `research_archive/2026-11-22_urt_zpe_publication_audit/cert.py` |  | 0.59s | 2026-11-26T06:24:30Z |
+| pass | `research_archive/2026-11-22_urt_zpe_publication_audit/cert.py` |  | 0.6s | 2026-11-26T07:39:18Z |
 | pass | `research_archive/2026-11-22_urt_zpe_redshift_cosmology/cert.py` |  | 0.49s | 2026-11-26T07:13:49Z |
 | pass | `research_archive/2026-11-22_urt_zpe_shape_relaxation/cert.py` |  | 13.89s | 2026-11-26T07:07:05Z |
 | pass | `research_archive/2026-11-23_full_five_circulation_feedback/FIVE_SOLID_FEEDBACK_CERT.py` |  | 0.38s | 2026-11-26T06:41:57Z |
@@ -669,26 +670,26 @@
 | pass | `research_archive/2026-11-23_q161eg_native_plaquette_volume/Q161EG_NATIVE_PLAQUETTE_VOLUME.py` |  | 0.07s | 2026-11-26T07:03:56Z |
 | pass | `research_archive/2026-11-23_q161ei_normalized_native_pauli/Q161EI_NATIVE_NORMALIZED_PAULI.py` |  | 0.11s | 2026-11-26T06:51:11Z |
 | pass | `research_archive/2026-11-23_q161ek_native_holonomy/Q161EK_NATIVE_HOLONOMY.py` |  | 5.63s | 2026-11-26T07:21:07Z |
-| pass | `research_archive/2026-11-23_q161el_inversion_q96/Q161EL_INVERSION_Q96.py` |  | 0.1s | 2026-11-26T06:27:39Z |
+| pass | `research_archive/2026-11-23_q161el_inversion_q96/Q161EL_INVERSION_Q96.py` |  | 0.1s | 2026-11-26T07:42:27Z |
 | pass | `research_archive/2026-11-24_coexact_curl_stiffness/COEXACT_CURL_STIFFNESS_CERT.py` |  | 0.51s | 2026-11-26T06:52:19Z |
-| pass | `research_archive/2026-11-24_coupled_curl_vertex_bifurcation/COUPLED_CURL_VERTEX_BIFURCATION_CERT.py` |  | 5.48s | 2026-11-26T06:16:17Z |
-| pass | `research_archive/2026-11-24_face_harmonic_invariant_flow/FACE_HARMONIC_INVARIANT_FLOW_CERT.py` |  | 2.33s | 2026-11-26T06:27:42Z |
-| pass | `research_archive/2026-11-24_h64_clock_markov_obstruction/H64_CLOCK_MARKOV_OBSTRUCTION_CERT.py` |  | 0.53s | 2026-11-26T06:14:59Z |
+| pass | `research_archive/2026-11-24_coupled_curl_vertex_bifurcation/COUPLED_CURL_VERTEX_BIFURCATION_CERT.py` |  | 5.53s | 2026-11-26T07:31:02Z |
+| pass | `research_archive/2026-11-24_face_harmonic_invariant_flow/FACE_HARMONIC_INVARIANT_FLOW_CERT.py` |  | 2.38s | 2026-11-26T07:42:30Z |
+| pass | `research_archive/2026-11-24_h64_clock_markov_obstruction/H64_CLOCK_MARKOV_OBSTRUCTION_CERT.py` |  | 0.55s | 2026-11-26T07:29:44Z |
 | pass | `research_archive/2026-11-24_h64_relaxation_lyapunov/H64_RELAXATION_LYAPUNOV_CERT.py` |  | 0.66s | 2026-11-26T07:05:13Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/audit/verify_run40_tame_scalar.py` |  | 0.51s | 2026-11-26T06:56:51Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_disk_typed_projection.py` |  | 3.46s | 2026-11-26T07:15:55Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/LEAVES_I_PN_scripts_bundle.py` |  | 0.01s | 2026-11-26T06:41:58Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN2_green_exact_checks.py` |  | 1.02s | 2026-11-26T07:20:56Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN3_generators_bundle.py` |  | 0.01s | 2026-11-26T06:28:07Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN3_green_exact_checks.py` |  | 20.98s | 2026-11-26T06:28:28Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN4_scripts_bundle.py` |  | 0.01s | 2026-11-26T06:28:28Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN3_generators_bundle.py` |  | 0.01s | 2026-11-26T07:42:55Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN3_green_exact_checks.py` |  | 20.71s | 2026-11-26T07:43:16Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN4_scripts_bundle.py` |  | 0.01s | 2026-11-26T07:43:16Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN5_scripts_bundle.py` |  | 0.01s | 2026-11-26T06:41:58Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN6_scripts_bundle.py` |  | 0.01s | 2026-11-26T06:41:58Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN7_scripts_bundle.py` |  | 0.01s | 2026-11-26T06:58:53Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN8_scripts_bundle.py` |  | 0.01s | 2026-11-26T07:15:56Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/green_exact_checks.py` |  | 4.02s | 2026-11-26T06:58:57Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/06_zero_free_regions/constants_check.py` |  | 0.02s | 2026-11-26T06:28:28Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/07_local_zero_sum_and_analytic_bounds/constants_check.py` |  | 0.05s | 2026-11-26T06:28:28Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/06_zero_free_regions/constants_check.py` |  | 0.02s | 2026-11-26T07:43:16Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/07_local_zero_sum_and_analytic_bounds/constants_check.py` |  | 0.05s | 2026-11-26T07:43:16Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/08_executed_companions_and_analytic_base/clos.py` |  | 0.01s | 2026-11-26T06:41:58Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/08_executed_companions_and_analytic_base/constants_check.py` |  | 0.03s | 2026-11-26T06:41:58Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/09_exceptional_pair_build_and_positivity/constants_check.py` |  | 0.03s | 2026-11-26T06:58:53Z |
@@ -696,7 +697,7 @@
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_admrnalt_rank2_safe_elimination.py` |  | 0.01s | 2026-11-26T06:33:20Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_change_level_injective_unit_lifting.py` |  | 0.04s | 2026-11-26T06:57:36Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_conductor_change_level.py` |  | 1.08s | 2026-11-26T06:45:11Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_conductor_dvd_from_factorization.py` |  | 0.09s | 2026-11-26T06:27:40Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_conductor_dvd_from_factorization.py` |  | 0.1s | 2026-11-26T07:42:28Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_conductor_product_lcm_bound.py` |  | 0.13s | 2026-11-26T07:04:28Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_conductor_zpow_inverse.py` |  | 4.08s | 2026-11-26T06:58:10Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_aut_twist_invariance.py` |  | 0.02s | 2026-11-26T07:03:54Z |
@@ -707,25 +708,25 @@
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelaway_twist_support.py` |  | 0.03s | 2026-11-26T07:20:56Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_potcrys_premise_weakening.py` |  | 0.02s | 2026-11-26T07:06:51Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countv_arith.py` |  | 3.49s | 2026-11-26T06:40:56Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_ext_iff_units_map_provenance.py` |  | 0.19s | 2026-11-26T06:18:18Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_ext_iff_units_map_provenance.py` |  | 0.2s | 2026-11-26T07:33:05Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_gcd_crt.py` |  | 0.11s | 2026-11-26T07:20:56Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_kernel_criterion.py` |  | 0.06s | 2026-11-26T07:25:12Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_monotonicity.py` |  | 0.07s | 2026-11-26T07:25:12Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_ind_drop_conductor_descent.py` |  | 0.09s | 2026-11-26T07:03:56Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_ind_unique_primitive_character_uniqueness.py` |  | 0.73s | 2026-11-26T06:53:15Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_large_sieve_far_pair_loss.py` |  | 1.05s | 2026-11-26T06:30:41Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_mem_conductor_set_iff.py` |  | 0.06s | 2026-11-26T06:30:41Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_large_sieve_far_pair_loss.py` |  | 1.03s | 2026-11-26T07:45:26Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_mem_conductor_set_iff.py` |  | 0.06s | 2026-11-26T07:45:27Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_mulchar_unit_equivalence.py` |  | 0.04s | 2026-11-26T06:41:58Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_numberu3u_max_exponent.py` |  | 0.07s | 2026-11-26T06:27:40Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_numberu3u_max_exponent.py` |  | 0.07s | 2026-11-26T07:42:28Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_open_kernel_potcrys.py` |  | 0.03s | 2026-11-26T06:56:51Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_outer_shell_l2_resolvent.py` |  | 2.31s | 2026-11-26T06:34:52Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_pair_ex_assembly.py` |  | 0.02s | 2026-11-26T06:42:48Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_pair_exists_witness.py` |  | 0.02s | 2026-11-26T07:13:49Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_pair_share_nested_density.py` |  | 0.19s | 2026-11-26T06:18:21Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_pair_share_nested_density.py` |  | 0.19s | 2026-11-26T07:33:08Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_prime_node_reverse_transfer.py` |  | 0.52s | 2026-11-26T06:54:14Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_rootsum_factor_sharpness.py` |  | 0.03s | 2026-11-26T06:54:30Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_stage1_bad_goodq_share.py` |  | 0.04s | 2026-11-26T06:37:08Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_stage2_bad_goodd_share.py` |  | 0.21s | 2026-11-26T06:27:40Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_stage2_bad_goodd_share.py` |  | 0.21s | 2026-11-26T07:42:28Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_twist_prim_jacobi_conductor.py` |  | 0.05s | 2026-11-26T07:17:41Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_uf_phi_envelope.py` |  | 1.06s | 2026-11-26T07:15:40Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RH_FULL_SOURCE_SCAN.py` |  | 0.04s | 2026-11-26T07:15:40Z |
@@ -734,7 +735,7 @@
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/csr_builder_certificate.py` |  | 0.25s | 2026-11-26T06:56:38Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/disk_csr.py` |  | 0.52s | 2026-11-26T07:15:56Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run27_dyadic.py` |  | 3.38s | 2026-11-26T06:52:22Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run31_twosided.py` |  | 8.62s | 2026-11-26T06:24:39Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run31_twosided.py` |  | 8.39s | 2026-11-26T07:39:27Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_port_schedule.py` |  | 1.22s | 2026-11-26T07:20:58Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_scc_schedule.py` |  | 0.42s | 2026-11-26T06:58:57Z |
 | pass | `research_archive/2026-11-24_mixed_vortex_kms_entropy/MIXED_VORTEX_KMS_ENTROPY_CERT.py` |  | 2.77s | 2026-11-26T06:42:51Z |
