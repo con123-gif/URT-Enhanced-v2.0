@@ -149,3 +149,22 @@ RESUME HERE: reconstruct LinkPairing's primitive integral lifts and
 minor/discriminant costs at pairInvariant_mul_le. Search existing
 peer notes first to avoid repeating a completed supplier. Keep
 Haar/tower arguments at this checkpoint before proceeding.
+
+
+Third connected result after d0f9a5362635071e92384f01de86a455b80d5187:
+2026-11-26_COMPACT_LINK_DISCRIMINANT_PRIMITIVES.md. It reconstructs
+Gram Liouville, an explicit block determinant proof of the indefinite
+complement identity, arbitrary-basis integral link lifts with BOTH
+xRows quotient divisors and saturation, exact N cancellation,
+orthogonal flag splitting with actual correction columns, the
+small z-quotient lower bound, finite-fixer CRT/Eichler/character
+induction, same-class common-link split, and nonzero cross determinant/
+principal-g integrality. This gives the actual pairInvariant_mul_le
+chain as a HUMAN SOURCE-MATCHED derivation pending independent audit.
+Main section 8 B integrated. No native replacement replay.
+
+RESUME HERE: complete the separate pointwise classSize estimate at
+BlockBound using its real open-cell contraction and actual cut error.
+Then connect the Bessel-majorant/boxed-frame suppliers and independent
+audits. Do not repeat the now-written local shell/tower or primitive
+link-lift/index arguments. Source authentication now covers 37 blobs.

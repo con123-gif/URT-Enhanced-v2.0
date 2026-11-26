@@ -13,6 +13,8 @@ from pathlib import Path
 
 PIN = "72fead102f663d5c7a407964a13dc0cf9d977207"
 SOURCES = {
+    "New/Filling/CrudeBoundDefs.lean": "0ba0d2532b14c414b9032466b79e10d4d60c3d18",
+    "Lib/General/LinearAlgebra/AdelicRingDefs.lean": "868168201f51f7fce6ea57bf492629294dbac8f8",
     "New/Filling/GramLiouville.lean": "e0e55155b72a00bb6c11d618bf1961e52a4e696c",
     "New/Filling/NearTerms.lean": "bd8a969f8d1bda48ca0468c28a8a62bc78e280ce",
     "New/Filling/BlockBound.lean": "6c68e80e3b1ea2b7983696716305493a37f2b1fd",
