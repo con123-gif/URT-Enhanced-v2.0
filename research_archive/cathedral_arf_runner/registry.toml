@@ -3520,3 +3520,11 @@ run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/integration/ru
 timeout_minutes = 120
 requested_by = "GPT"
 claim = "independent"
+
+[[job]]
+id = "rh-shared-prime-countq-replay-20261126"
+question = "One pinned native replay batch: prime descent at actual cofinal Sha caller first, then CountQ/CountK alternatives with shared original module cache, isolated even caller overlay, scans/prunes/axioms and partial evidence. Conditional only, not RH proof."
+run = "bash research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/run_shared_replay25.sh --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
