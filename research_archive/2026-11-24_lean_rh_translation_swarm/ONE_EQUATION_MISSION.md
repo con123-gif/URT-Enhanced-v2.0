@@ -1,3 +1,9 @@
+# Binding unified determinant sprint — 26 November 2026
+
+User directs unification to accelerate the actual human RH proof. Use the source-matched one-witness formulation in integration/2026-11-26_COMPACT_UNIFIED_DETERMINANT_WITNESS.md, equations (U), (W), (S). The shared contract is the one row family and one fit-twist family with actual local and archimedean determinant suppliers. Integration/editor should merge compatible peer work directly against this contract and avoid producing repeated separate volume-height assemblies. Every mathematical worker pursues outstanding primitive supplier proofs at its assigned lane, checking for genuinely common lemmas between theta, filling and arithmetic where the exact native hypotheses coincide. Keep all deep premises explicit; the determinant identity alone does not establish them. No claim of whole-proof completion, native replay or deadline. Fourteen conventional proof workers, one dedicated URT specialist, existing hourly schedules, source pins, protected workflows and expanded multi-obligation workload unchanged. Do not let the resource-blocked full replay delay the human derivation; native checks remain independent. 
+
+---
+
 # Binding expanded-workload sprint — 26 November 2026
 
 User requires larger workloads for every RH worker. This supersedes ALL older one-result-per-run, one-obligation-per-run, single-file and single-contribution stopping rules in worker prompts and this mission. Keep existing 15 hourly schedules and the division of 14 conventional proof workers plus one URT specialist. No additional workers or increase in scheduled frequency. The objective is the completed, rigorous human-readable compact RH proof, not a count of notes or optimizations.
