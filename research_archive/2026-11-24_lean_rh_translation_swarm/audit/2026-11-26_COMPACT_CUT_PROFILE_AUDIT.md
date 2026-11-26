@@ -130,7 +130,6 @@ namespace CutProfileAudit
 theorem safety (u v s D R A : ℤ) (hD : -u + s + A ≤ D)
     (hR : -v - A ≤ R) (hA : 0 ≤ A) :
     0 < u + v + 1 - s + D + min (-v) R := by
-  rw [lt_min_iff] at * <;> try omega
   rcases le_total (-v) R with h | h
   · rw [min_eq_left h]; omega
   · rw [min_eq_right h]; omega
