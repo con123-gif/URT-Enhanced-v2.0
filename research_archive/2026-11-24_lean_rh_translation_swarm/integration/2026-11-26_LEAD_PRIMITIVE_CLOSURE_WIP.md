@@ -272,3 +272,27 @@ behind the crystalline bounds. Do not redo optional aggregate Selmer,
 primitive span/orbit, Kolyvagin local transition, or scalar endgame.
 Audit the new scalar-order argument and one-row/all-twist quantifiers
 independently; preserve all existing source and native evidence.
+
+Eighth connected result after 15ea39694b5731248274e037bcd33e05cf9be5c8:
+2026-11-26_COMPACT_RALLIS_CUTOFF_AND_CONVERGENCE.md expands the two
+Rallis inputs retained by dependency RUN55: actual local dual datum
+with the self-dual annihilator argument, and a common integrable
+majorant for doubling/unfolding. It also calculates the exact finite
+mass and gramFactor at CharacterLiftNorm/TriangleArrows. The residue
+matrix cardinal belongs to rallisTerm, not gramFactor twice.
+The same twist-independent edge scalar supplies one common Hecke
+operator, using RUN51 rather than repeating its cancellation.
+
+Actual source bodies and seven blob identities checked; standard
+convergent Siegel--Weil with its operator-norm/theta majorant, moderate
+height, local Weil covariance and edge convolution remain explicit
+inputs. This is not an independent proof of the full Siegel--Weil
+theorem. Audit P6/P7 covariance, common seminorm and Gram normalization.
+No new native execution or mathematical audit claimed. Main section 8
+now calls this derivation at the comparison and row-volume consumers.
+
+RESUME HERE: lineMultiplier_integral_and_small and its fixed common
+denominator; actual carrier/near-max and period-vanishing guards; or
+the Kisin cut/cokernel/deep-point lifting crystalline primitives.
+Reuse dependency RUN51/52/55, the row note, existing Kolyvagin audits
+and A/B derivations. Do not repeat conditional global assembly.
