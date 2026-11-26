@@ -7,9 +7,9 @@ Lean 4.35.0, Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`.
 
 Actual consumer: `New/RealPlace/BandLimits.hasBandLimits_of_isCutBessel` uses
 the two local Fourier-modulus bounds, the floor descent and the shell estimate
-on ONE Level and its gauges. This note expands those analytic steps. It does
-not establish existence of the geometric gauges or replace their fibre,
-centering and support estimates by an arbitrary measure.
+on ONE Level and its gauges. This note expands those analytic steps;
+sections 5–6 construct the source's complex gauge from its actual level.
+Its fibre, centering and support estimates retain that same measure.
 
 ## 1. Exact complex Fourier normalization
 
@@ -64,8 +64,8 @@ gives exactly the native quadric-fibre bound. The gauge field `fib` bounds
 this mass by Lambda^[99n(j+6)]. For floorVolume the same argument uses the
 product coordinate box and `volume_le`, with the same sufficient bound.
 These are the proofs of `hasFibreBound_floorQuadric` and `_floorVolume`
-from the EXACT gauge hypotheses. The constructor of those gauge fields
-for the complex geometry is still a separate obligation.
+from the EXACT gauge hypotheses. Sections 5–6 below provide the concrete
+inverse-volume and cone-mass fields for the native complex geometry.
 
 For clarity, the floor-amplitude theorem that consumes (19) is as follows.
 Let t belong to H_b, t^(-1)q0 belong to N_<b, and q0 x have matrix size J.
@@ -282,7 +282,7 @@ with an integrable left side. Equation (32), with the SAME appended c
 in both heads, is the actual `Gauge.integral_floorForm_succ` used by
 the sieve. Independent appended parameters would not give this identity.
 
-## Scope and caller integration
+## Inputs retained in sections 1–4
 
 The source-specific local Fourier deductions (25)-(26) still depend on
 the exact centering/support and inverse-weight geometry of a gauge.
@@ -372,15 +372,83 @@ It reconstructs `exists_orthonormal_ker_lintegral_le` and the `com`
 constructor with their exact source constants. No new asymptotic
 estimate or fitted parameter is used.
 
-This closes that inverse-volume field at its native interface as a
-human derivation, pending independent audit/replay. Other gauge fields,
-the shell cap, Haar normalization and the complete pointwise geometric
-estimates remain separate dependencies. In particular the proof of
+This supplies that inverse-volume field at its native interface as a
+human derivation, pending independent audit/replay. Section 6 supplies
+the other numerical gauge fields. The shell cap, Haar normalization and
+complete pointwise geometric estimates remain separate dependencies.
+In particular the proof of
 (33) does not by itself establish finite integral of formMajorant
 required by (31); that still uses the shell argument.
 
+## 6. Cone mass from the actual flat chart; all complex gauge fields
+
+The remaining substantive field of the complex gauge is its hyperbolic
+cone bound `fib`. It can be proved directly with the exact source measure,
+without guessing a coarea normalization. In `Place.lean`, quadricMeasure(T,0)
+is the image of dt dw d(beta) under the chart of ONE EXTRA hyperbolic
+plane together with T. Thus when T is t hyperbolic planes, w has 2t
+complex coordinates. This extra plane is essential to the dimension count.
+
+At C, tau=1/2 and the skew measure is the image of ordinary real
+Lebesgue measure under a->ia. For t0!=0 the chart is
+
+    ((t0,w),a) -> (t0[-h(w,w)/(2|t0|^2)+ia], t0, w),
+                     dt0 dw da.                     (34a)
+
+Here h(w,w) is real. If all image coordinates have modulus <=R, then
+|t0|<=R and |a| |t0|<=R. Consequently
+
+    |t0| <= 2R/sqrt(1+a^2),  |w_i|<=R.
+
+The exceptional set t0=0 is null for dt0. For each a the source
+parameter set is therefore contained in the displayed complex discs.
+Tonelli, their ordinary areas, and integral_R da/(1+a^2)=pi give
+
+    quadricMeasure(T,0){all coordinates <=R}
+       <= integral_R [4pi R^2/(1+a^2)](pi R^2)^(2t)da
+       =4pi^(2t+2) R^(4t+2).                        (35)
+
+This uses the chart's dt0 dw da itself; no unstated hypersurface
+density or extra factor of 2 enters.
+
+For the complex gauge m=0, the native `fib` quantifier is 0<=t<=rho=n-1.
+Put R=L^j. Since L>=4, (35) is at most
+
+    L^[2n+1+(4n-2)j] <= L^[198n(j+1)]
+                       =Lambda^[99n(j+1)].          (36)
+
+The exponent difference is (194n+2)j+196n-1>=0 for n>=1,j>=0.
+This proves exactly the required field, including t=0.
+
+The remaining fields of `RealPlaceSizes.gauge` are elementary for
+B_j={z:|z|<=L^j}, Lambda=L^2:
+
+- Products have size i+j. A sum of at most r+1 terms has size i+1,
+  since r+1<=L. Negation and conjugation preserve size; 0 and 1 have
+  every nonnegative size. The Gram matrix and inverse have size 1.
+- B_j is compact, Lambda>=2 and finite, c=pi^2>=1, and the complex level has m=0.
+  The explicit complex hyperbolic basis has entries of norm <=1;
+  g=1 and tau/skewUnit=-i also have size 1.
+- The box has operator norm <=rho<=L, hence entries of size 1; the
+  level's radius-1/4 ball lies in the coordinate size-1 box.
+- md(u)=|u|^2<=Lambda^j for u in B_j. The area of B_j is
+  pi L^(2j)<=Lambda^(j+1).
+- The cone field is (36), and the inverse-volume field is the SAME
+  phi and integral (33) of section 5.
+
+These verify all fields of the native Gauge record on the given complex
+level for EVERY L>=rho. The choices O and phi are made for each fixed
+triple (x,y,v) in the order required by the record; no dependence on the
+subsequent test variable u is introduced. This gives a human construction
+of `RealPlaceSizes.gauge`, subject to independent audit/replay.
+
+It does not establish the separate Haar-ratio theorem for complexLevel,
+the shell cap and summation, Bessel majorant construction, or the
+pointwise classSize/pairInvariant bounds. Those still have their actual
+source witnesses and normalization requirements.
+
 No native Lean execution of this note has been performed. The scalar
-fibre and inverse-moment exponent comparisons and nine source hashes can be checked by
+fibre, inverse-moment and cone exponent comparisons and source hashes can be checked by
 `verify_compact_lattice_convergence.py`; its scope is arithmetic and
 source bytes only. The authenticated historical RUN28 receipt (nineteen
 files, six negative controls) is separate evidence, not a replay here.
@@ -388,6 +456,6 @@ files, six negative controls) is separate evidence, not a replay here.
 RESUME HERE: independently audit the common pushforward law (29)-(31)
 against the actual LocalTheorem.integral_succ_floor_eq body and the
 two uses of the SAME phi in section 5 against ComplexGauge.gauge.com.
-Supply the remaining gauge cone-mass and shell cap, and then the
+Audit the flat-chart cone normalization (34a)–(36) and complete the shell cap, then the
 actual pointwise classSize/pairInvariant estimates. Preserve c=pi^2,
 the half power in floorModulus, all support guards and common measures.

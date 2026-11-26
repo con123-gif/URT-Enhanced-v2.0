@@ -53,8 +53,8 @@ The next connected derivation is
 `2026-11-26_COMPACT_FOURIER_AND_JOINT_LAW_DESCENT.md`: exact complex Fourier
 normalization, native fibre-bound integration, floor and Heisenberg
 estimates, the two local modulus consumers, and the joint-law descent.
-The updated scalar/source certificate executed locally: four inequalities
-(22,33,4,4 coefficients), twenty-three authenticated blobs. Historical RUN28
+The updated scalar/source certificate executed locally: five inequalities
+(22,33,4,4,4 coefficients), twenty-four authenticated blobs. Historical RUN28
 receipt audit also executed: nineteen authenticated files and six negative
 controls. Full graph run 45781154005 was resource-blocked; primitive output
 still absent at the checked state revision. No new Lean execution claimed.
@@ -63,6 +63,11 @@ Latest peers integrated without declaring closure: 40e57948 stage support,
 5b79a6d9 signed jets/collisions, c0a35b56 Kummer/corestriction algebra,
 15bb1dae convergence, dc4a4eec projective cocycle count/devissage candidate,
 04c29781 with fixes through 95f154b6 balanced-row budget candidate.
+IMPORTANT: apply subsequent independent audit d064b084 to that candidate.
+The active manuscript now uses actual Z1 local cocycles, distinct scalar
+inertia gamma_0 and external tame gamma_w, the separate scalar g, and the
+independent local-unit hypothesis on m_v. Its beta contains one determinant
+per place plus the scalar mirror term; the two external costs are at gamma_w.
 The complex gauge `com` supplier now has an explicit human proof in the
 second note §5: one fixed (s+1)-dimensional kernel, the SAME phi=36/||O*u||²
 for both volume requirements, and a finite polar integral with the exact
@@ -74,7 +79,14 @@ User scope correction confirmed: RH only. All subsequent modifications and
 records are within the RH research directory; no physics work, gate changes,
 worker-schedule changes, new worker or protected workflow modification.
 
-Next mathematical question: obtain the remaining complex gauge cone-mass
-normalization and shell cap at ComplexGauge/ComplexShells, or the actual
-LinkPairing primitive lift/minor suppliers. Do not repeat the determinant,
-the outer pair summation, or the now reconstructed inverse-moment proof.
+Next connected result completed after that checkpoint: the actual flat-chart
+cone mass is bounded by 4pi^(2t+2)R^(4t+2), with the extra hyperbolic plane
+and skew Lebesgue normalization explicit. This proves the source `fib`
+field; with the inverse moment and elementary disk-size fields, the full
+numerical complex gauge has a human construction (second note §6), pending
+independent audit/native replay. No remaining cone bound is silently assumed.
+
+Next mathematical question: prove the shell cap and summation at
+ComplexShells and audit the separate Haar-ratio supplier, or derive the
+actual LinkPairing primitive lift/minor suppliers. Do not repeat the
+determinant, outer pair summation, inverse moment or cone calculation.

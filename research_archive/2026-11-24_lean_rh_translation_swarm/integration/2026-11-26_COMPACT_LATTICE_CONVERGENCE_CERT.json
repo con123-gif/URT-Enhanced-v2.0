@@ -537,6 +537,45 @@
           "coefficient": 192
         }
       ]
+    },
+    {
+      "name": "complex_gauge_cone_mass_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 195
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": 196
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 196
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            1
+          ],
+          "coefficient": 194
+        }
+      ]
     }
   ],
   "authenticated_sources": [
@@ -631,6 +670,10 @@
     {
       "path": "Lib/DiscreteSeries/Bruhat/BigCell.lean",
       "git_blob": "da06dcfda1a1401b8ad51f94649da9b760907a87"
+    },
+    {
+      "path": "Lib/General/Measure/Place.lean",
+      "git_blob": "300ee7d1e3e3d7b1d2ec8538b7f6feb365c70975"
     }
   ],
   "guard_negative_controls_detected": true

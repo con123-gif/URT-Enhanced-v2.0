@@ -36,6 +36,7 @@ SOURCES = {
     "New/RealPlace/ComplexGauge.lean": "86c2d26bfaf34292de7d1e79c1634b020b26c1f3",
     "Lib/DiscreteSeries/Bruhat/ComplexPlace.lean": "74d2fd4581e30ba76a2c6dbd7604848bf7e6f3d0",
     "Lib/DiscreteSeries/Bruhat/BigCell.lean": "da06dcfda1a1401b8ad51f94649da9b760907a87",
+    "Lib/General/Measure/Place.lean": "300ee7d1e3e3d7b1d2ec8538b7f6feb365c70975",
 }
 
 
@@ -109,10 +110,12 @@ def main():
     amplitude = r**3-k**3-12*r*n**3-2*k-1
     fourier = 1000000*n**3 - 99*n*(60*n**2+12) - 99*n*(99*n**2+12)
     inverse_moment = 198*n*(s+1) - (148+2*s+9*n+6*n*s)
+    cone = 198*n*(s+1) - (2*n+1+(4*n-2)*s)
     certificates = [lattice.nonnegative_certificate("class_discriminant_exponent"),
                     amplitude.nonnegative_certificate("full_to_cut_exponent"),
                     fourier.nonnegative_certificate("character_floor_fibre_exponent"),
-                    inverse_moment.nonnegative_certificate("complex_gauge_inverse_moment_exponent")]
+                    inverse_moment.nonnegative_certificate("complex_gauge_inverse_moment_exponent"),
+                    cone.nonnegative_certificate("complex_gauge_cone_mass_exponent")]
     # Check the expansion arithmetic against independent direct integer formulas.
     for nn, vv, ss in [(1, 0, 0), (2, 3, 1), (7, 11, 5), (100001, 23, 1000)]:
         kk = 512000*nn**9+vv
@@ -124,6 +127,7 @@ def main():
             1000000*nn**3-99*nn*(60*nn**2+12)-99*nn*(99*nn**2+12))
         assert inverse_moment.value(nn-1, vv, ss) == (
             198*nn*(ss+1)-(148+2*ss+9*nn+6*nn*ss))
+        assert cone.value(nn-1, vv, ss) == 198*nn*(ss+1)-(2*nn+1+(4*nn-2)*ss)
     # Negative controls: the guards are necessary for these proposed estimates.
     assert 250*1-1000-60000*1 < 0
     assert 2**3-1**3-12*2-2*1-1 < 0
