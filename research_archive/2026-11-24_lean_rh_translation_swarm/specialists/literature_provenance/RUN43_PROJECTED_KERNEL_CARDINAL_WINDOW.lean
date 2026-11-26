@@ -31,7 +31,7 @@ that actual K-theory comparison is now authenticated.
 Source pin 40e56bab026552e089d7afcfeff08d2defb9c005; Lean 4.33.1, Mathlib 0df444a360eaa60ab8c11dca51a86af692955474.
 Mission f8b4b837301f8cf43d673be4979f04c4e4b415a4 (mandatory engine);
 AGENTS 8db0201d, SWARM, HANDOFF bbc46df7, EXPANSION consulted; peer
-24e7f2d1 set-map grade restriction and latest 6e70b2a0 audit inspected.
+24e7f2d1 set-map grade restriction diff inspected; 6e70b2a0 audit commit indexed.
 Native CardRed.lean 687dc64db008616c2c378cf471f7d233db5ff9ec;
 Reduction 1cfb92c81ec5c4ed77aac5a7cce457add1e55721;
 Bridge c995485ab93aa56e1eabbdd1900429075fb4c65b;
@@ -58,6 +58,8 @@ Authenticate the projected cohomology comparison on the actual host;
 do not treat abstract weakening as a closed RH obligation.
 HANDOFF TO kernel, audit, integration and Galois.
 -/
+
+open GlobalTheory.TateLimit
 
 theorem UpperTheory.V.K.cardRedProjected43 :
     ∀ (l : ℕ) [Fact l.Prime] (K : Type) [AddCommGroup K] [Module ℤ_[l] K] (X : Type) [AddCommGroup X] [Module ℤ_[l] X] [Finite X] (W : Type) [AddCommGroup W] [Module ℤ_[l] W] (p : K →ₗ[ℤ_[l]] X) (h : K →ₗ[ℤ_[l]] W) (c : ℕ), Finite (LinearMap.range h) → Function.Surjective p → (∀ x, h x = 0 → (l : ℤ_[l]) ^ c • p x = 0) → Nat.card X ≤ Nat.card (X ⧸ lpow l X 1) ^ c * Nat.card (LinearMap.range h) := by
