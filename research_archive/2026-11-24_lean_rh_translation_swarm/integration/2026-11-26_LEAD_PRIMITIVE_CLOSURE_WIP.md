@@ -1126,3 +1126,48 @@ representations, threshold floor(r rowBudget)+1, and same twist powers.
 Follow its existing Ribet/safety/odd-Sha peers rather than redoing
 scalar payment. Separate Rallis Schwartz/data applicability and finite
 Weil cocycle remain genuine upstream obligations. Human RH incomplete.
+
+### 26 November — prescribed-length tight frame and current C peer
+
+Published p-adic coordinates at ffb85d3e5a50d014075701be92bf78c708909b88.
+Fetched and rebased b025feef, preserving its full common frame/vacuum/
+local-jet derivation. Read all 315 lines. Its next missing frame primitive
+was not supplied by previous integration notes (rg checked), so derived
+it in COMPACT_GENERAL_TIGHT_FRAME.md rather than repeating common-twist
+assembly, which already exists in 86f773b9 and row-scalar notes.
+
+New exact construction: N=l^(a+1)M_l, cyclotomic differentiation plus
+Q(X)|Q(X^l) gives V_l|M_l and D(A_l−1)M_l=NV_l. Quadratic permutation
+ny²+y mod N gives z,e and t=1−epsilon+nz with t bar t=nNe and
+N|epsilon^N t. The explicit l-block has exact constant
+C_l=N+M_l[1+2n(z+lM_l e)], integral in the actual alpha lattice.
+Its summed C is prime to N, so a concrete nonnegative coin witness
+combines it with the N-frame to ANY m>=(dN)^6(R+1), multiplicities>=R.
+At the fixed p one vector works at ALL weight embeddings: either 1
+or u_(p,0,1,0), D u=−tV_p. This uses the retained actual CM period
+identity. Local transfer takes frame length M² with M=p(dN)^6+1,
+so its expansion cardinal is a p-unit. Main includes the actual
+caller substitution and preserves theta-space/CM/jet prerequisites.
+
+Read full Galois e2a2fb87 and native BlockFittingBound/RibetFirstOrder
+consumer. Integrated block lattice, exact semiprime matrix-unit argument,
+trace-ideal transport, annihilator-to-cocycle injection and Smith-form
+B0 with STRICT b0<v(p0) before the first-order coefficient paragraph.
+The old coefficient paragraph now points to the already published
+452515bd final sufficient budget, rather than listing that cost as
+unattempted. Trace/triangle/odd-Sha and full arithmetic audit remain.
+Read theta 11b88ad1/RUN64 full body: concurrent independent calculation
+agrees with raw A-chain exponent/cancellation. It is not an independent
+audit of our new Schur/class/branch proofs, and not a native replay.
+
+Validation: source reads and git diff --check; no new Lean/scalar run.
+RUN29 partial failure and bounded-runner guards unchanged. No workflow,
+source-pin, scheduled-worker or physical-research changes.
+
+RESUME HERE: publish this checkpoint, then audit the EXACT general frame
+against both FrameSections and norm_jetSeries_le, especially period and
+weight embeddings. Continue the genuine retained finite Weil law,
+theta-space/theta-product integrality, Rallis test space or arithmetic
+odd-Sha/triangle supplier, checking existing peers before new derivation.
+The original pointwise fit-family assembly already exists; do not start
+another optional aggregate detour. RH reconstruction remains incomplete.
