@@ -13,6 +13,11 @@ from pathlib import Path
 
 PIN = "72fead102f663d5c7a407964a13dc0cf9d977207"
 SOURCES = {
+    "Lib/DiscreteSeries/Bessel/BesselNormInvariance.lean": "4a8bb25ae2f12edd76ae32897846460fbac4be09",
+    "Lib/Adelic/Adeles/AdditiveCharDefs.lean": "728f522d61a606eb68ec5ed337cf1dbc2c515463",
+    "Lib/Adelic/Adeles/RationalPoints.lean": "aebdd974ccdf94b1d9b9ea4ead153261ee1717cd",
+    "Lib/DiscreteSeries/Bessel/RealMeasures.lean": "4978795502441b9137a2caf7234b7b0beef8db34",
+    "Lib/General/Analysis/ZpowSum.lean": "f9ea2609ce9a92ddfda2afe48f28d1437257808f",
     "Lib/General/LinearAlgebra/HuaIntegral.lean": "d62ceebe4b3b49aae6bc6eb3d247280abbbd8a37",
     "Lib/General/Analysis/OstrowskiTaussky.lean": "9f49846bb185855398ab25b33211b61a680aed77",
     "New/RealPlace/FrameNorm.lean": "06a65cfd754f2688b899d08320f627fdea415db0",
@@ -137,20 +142,27 @@ def main():
     cone = 198*n*(s+1) - (2*n+1+(4*n-2)*s)
     shell = 10**9*n**4 - (108900000*n**4+3000000*n**3+9999*n+3)
     matrix_size = 99*n-(20*n-1)
+    open_cell = 100000*n**4-(94284*n**4+162*n)
+    class_floor = 2*k**3-46*(n-1)*k-(k+1)*(8*n**3+120*n**2+2*n)
     # Thin-class estimates use the actual Filling guard varrho>=100000.
     n_box = 100001+u
     k_box = 512000*n_box**9+v
     thin_lower = 103*k_box-576*n_box**2-33*n_box
     thin_top = (7*n_box-136)*k_box-576*n_box**3-33*n_box**2+480*n_box
+    mass_budget = 4*k_box-5*(n_box+1+18*n_box**3*(100000*n_box**4)
+                           +120*n_box**2*(100000*n_box**4))
     certificates = [lattice.nonnegative_certificate("class_discriminant_exponent"),
                     amplitude.nonnegative_certificate("full_to_cut_exponent"),
                     fourier.nonnegative_certificate("character_floor_fibre_exponent"),
                     inverse_moment.nonnegative_certificate("complex_gauge_inverse_moment_exponent"),
                     cone.nonnegative_certificate("complex_gauge_cone_mass_exponent"),
                     shell.nonnegative_certificate("complex_shell_sum_exponent"),
-                    matrix_size.nonnegative_certificate("shell_back_substitution_matrix_exponent")]
+                    matrix_size.nonnegative_certificate("shell_back_substitution_matrix_exponent"),
+                    open_cell.nonnegative_certificate("open_cell_native_mass_exponent"),
+                    class_floor.nonnegative_certificate("top_class_size_cutoff_floor_exponent")]
     for name, poly in (("thin_class_non_top_kernel_exponent", thin_lower),
-                       ("thin_class_top_kernel_exponent", thin_top)):
+                       ("thin_class_top_kernel_exponent", thin_top),
+                       ("global_cell_mass_packet_exponent", mass_budget)):
         cert = poly.nonnegative_certificate(name)
         cert["substitution"] = "n=100001+u, k=512000*n^9+v, u,v,s>=0"
         certificates.append(cert)
@@ -169,11 +181,17 @@ def main():
         assert shell.value(nn-1, vv, ss) == (
             10**9*nn**4-(108900000*nn**4+3000000*nn**3+9999*nn+3))
         assert matrix_size.value(nn-1, vv, ss) == 99*nn-(20*nn-1)
+        assert open_cell.value(nn-1, vv, ss) == 100000*nn**4-(94284*nn**4+162*nn)
+        assert class_floor.value(nn-1, vv, ss) == (
+            2*kk**3-46*(nn-1)*kk-(kk+1)*(8*nn**3+120*nn**2+2*nn))
         nn_box = 100000+nn
         kk_box = 512000*nn_box**9+vv
         assert thin_lower.value(nn-1, vv, ss) == 103*kk_box-576*nn_box**2-33*nn_box
         assert thin_top.value(nn-1, vv, ss) == (
             (7*nn_box-136)*kk_box-576*nn_box**3-33*nn_box**2+480*nn_box)
+        assert mass_budget.value(nn-1, vv, ss) == (
+            4*kk_box-5*(nn_box+1+18*nn_box**3*(100000*nn_box**4)
+                       +120*nn_box**2*(100000*nn_box**4)))
     # Negative controls: the guards are necessary for these proposed estimates.
     assert 250*1-1000-60000*1 < 0
     assert 2**3-1**3-12*2-2*1-1 < 0

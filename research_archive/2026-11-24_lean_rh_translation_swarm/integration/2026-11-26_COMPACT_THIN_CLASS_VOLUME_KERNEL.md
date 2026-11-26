@@ -330,8 +330,10 @@ same-class, cutoff and finite-place index witnesses.
 BlockBound splits terms according to termDiscNorm>N^f D.
 For that thick region j=n, it needs the joint open-cell
 mean-square Bessel contraction and its cellMass budget.
-Sections 1-5 do not prove that distinct branch or the
-peak-existence theorem underlying the Bessel system.
+That distinct branch is now expanded in
+2026-11-26_COMPACT_OPEN_CELL_CONTRACTION.md. Neither note
+proves the separate peak-existence theorem underlying the
+Bessel system.
 The same-Z alignment, cutoff quotient law and boxed-frame
 proofs cited above retain their recorded independent-audit
 requirements. No native replacement replay has been run.
@@ -340,8 +342,8 @@ Source anchors are VolumeKernel, ThinClasses, SchurTest,
 BoxPartition, Setup and Lib/General/LinearAlgebra/HuaIntegral,
 Lib/General/Analysis/OstrowskiTaussky at the compact pin.
 
-RESUME HERE: reconstruct BesselSystem.open_cell from the
-explicit Gram-section Sobolev estimate and common compact
-tube; then prove its exact cellMass/classSize comparison.
+RESUME HERE: independently audit the companion
+BesselSystem.open_cell and cellMass/classSize derivation,
+then advance the retained peak/B-system and packet suppliers.
 Do not repeat this thin kernel, the shell/tower or the
 global link determinant.

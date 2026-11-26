@@ -648,6 +648,524 @@
       ]
     },
     {
+      "name": "open_cell_native_mass_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 5554
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 22702
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 34296
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 22864
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 5716
+        }
+      ]
+    },
+    {
+      "name": "top_class_size_cutoff_floor_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 268435455933439870
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": 1572863999870
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": 3072000
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": 2
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 7247757311241215734
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": 28311551999688
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            2,
+            0
+          ],
+          "coefficient": 27648000
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 94220845052092415856
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            1,
+            0
+          ],
+          "coefficient": 240648191999856
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            2,
+            0
+          ],
+          "coefficient": 110592000
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 785173708787990527992
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            1,
+            0
+          ],
+          "coefficient": 1283457023999992
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            2,
+            0
+          ],
+          "coefficient": 258048000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 4711042252775503872000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            1,
+            0
+          ],
+          "coefficient": 4812963840000000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            2,
+            0
+          ],
+          "coefficient": 387072000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": 21670794362845145088000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            1,
+            0
+          ],
+          "coefficient": 13476298752000000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            2,
+            0
+          ],
+          "coefficient": 387072000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            0,
+            0
+          ],
+          "coefficient": 79459579330524647424000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            1,
+            0
+          ],
+          "coefficient": 29198647296000000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            2,
+            0
+          ],
+          "coefficient": 258048000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            0,
+            0
+          ],
+          "coefficient": 238378737991654379520000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            1,
+            0
+          ],
+          "coefficient": 50054823936000000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            2,
+            0
+          ],
+          "coefficient": 110592000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": 595946844979186940928000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            1,
+            0
+          ],
+          "coefficient": 68825382912000000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            2,
+            0
+          ],
+          "coefficient": 27648000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            0,
+            0
+          ],
+          "coefficient": 1258110006067195497472000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            1,
+            0
+          ],
+          "coefficient": 76472647680000000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            2,
+            0
+          ],
+          "coefficient": 3072000
+        },
+        {
+          "powers_u_v_s": [
+            10,
+            0,
+            0
+          ],
+          "coefficient": 2264598010920959029248000
+        },
+        {
+          "powers_u_v_s": [
+            10,
+            1,
+            0
+          ],
+          "coefficient": 68825382912000000
+        },
+        {
+          "powers_u_v_s": [
+            11,
+            0,
+            0
+          ],
+          "coefficient": 3499833289605119889408000
+        },
+        {
+          "powers_u_v_s": [
+            11,
+            1,
+            0
+          ],
+          "coefficient": 50054823936000000
+        },
+        {
+          "powers_u_v_s": [
+            12,
+            0,
+            0
+          ],
+          "coefficient": 4666444386140159995904000
+        },
+        {
+          "powers_u_v_s": [
+            12,
+            1,
+            0
+          ],
+          "coefficient": 29198647296000000
+        },
+        {
+          "powers_u_v_s": [
+            13,
+            0,
+            0
+          ],
+          "coefficient": 5384358907084800000000000
+        },
+        {
+          "powers_u_v_s": [
+            13,
+            1,
+            0
+          ],
+          "coefficient": 13476298752000000
+        },
+        {
+          "powers_u_v_s": [
+            14,
+            0,
+            0
+          ],
+          "coefficient": 5384358907084800000000000
+        },
+        {
+          "powers_u_v_s": [
+            14,
+            1,
+            0
+          ],
+          "coefficient": 4812963840000000
+        },
+        {
+          "powers_u_v_s": [
+            15,
+            0,
+            0
+          ],
+          "coefficient": 4666444386140160000000000
+        },
+        {
+          "powers_u_v_s": [
+            15,
+            1,
+            0
+          ],
+          "coefficient": 1283457024000000
+        },
+        {
+          "powers_u_v_s": [
+            16,
+            0,
+            0
+          ],
+          "coefficient": 3499833289605120000000000
+        },
+        {
+          "powers_u_v_s": [
+            16,
+            1,
+            0
+          ],
+          "coefficient": 240648192000000
+        },
+        {
+          "powers_u_v_s": [
+            17,
+            0,
+            0
+          ],
+          "coefficient": 2264598010920960000000000
+        },
+        {
+          "powers_u_v_s": [
+            17,
+            1,
+            0
+          ],
+          "coefficient": 28311552000000
+        },
+        {
+          "powers_u_v_s": [
+            18,
+            0,
+            0
+          ],
+          "coefficient": 1258110006067200000000000
+        },
+        {
+          "powers_u_v_s": [
+            18,
+            1,
+            0
+          ],
+          "coefficient": 1572864000000
+        },
+        {
+          "powers_u_v_s": [
+            19,
+            0,
+            0
+          ],
+          "coefficient": 595946844979200000000000
+        },
+        {
+          "powers_u_v_s": [
+            20,
+            0,
+            0
+          ],
+          "coefficient": 238378737991680000000000
+        },
+        {
+          "powers_u_v_s": [
+            21,
+            0,
+            0
+          ],
+          "coefficient": 79459579330560000000000
+        },
+        {
+          "powers_u_v_s": [
+            22,
+            0,
+            0
+          ],
+          "coefficient": 21670794362880000000000
+        },
+        {
+          "powers_u_v_s": [
+            23,
+            0,
+            0
+          ],
+          "coefficient": 4711042252800000000000
+        },
+        {
+          "powers_u_v_s": [
+            24,
+            0,
+            0
+          ],
+          "coefficient": 785173708800000000000
+        },
+        {
+          "powers_u_v_s": [
+            25,
+            0,
+            0
+          ],
+          "coefficient": 94220845056000000000
+        },
+        {
+          "powers_u_v_s": [
+            26,
+            0,
+            0
+          ],
+          "coefficient": 7247757312000000000
+        },
+        {
+          "powers_u_v_s": [
+            27,
+            0,
+            0
+          ],
+          "coefficient": 268435456000000000
+        }
+      ]
+    },
+    {
       "name": "thin_class_non_top_kernel_exponent",
       "domain": "u,v,s >= 0",
       "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
@@ -854,9 +1372,125 @@
         }
       ],
       "substitution": "n=100001+u, k=512000*n^9+v, u,v,s>=0"
+    },
+    {
+      "name": "global_cell_mass_packet_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 2048184326472849029090384303457021847239543132547990
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": 4
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 184334746053098941774520172151710756945195431995
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 7373316109592953545090422582477108584728000
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 172042322146548980610904417217857032000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 2580609026265487354654523043048000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": 25805832205592909418909048000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            0,
+            0
+          ],
+          "coefficient": 172037161005309649032000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            0,
+            0
+          ],
+          "coefficient": 737294745664728000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": 1843218432000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            0,
+            0
+          ],
+          "coefficient": 2048000
+        }
+      ],
+      "substitution": "n=100001+u, k=512000*n^9+v, u,v,s>=0"
     }
   ],
   "authenticated_sources": [
+    {
+      "path": "Lib/DiscreteSeries/Bessel/BesselNormInvariance.lean",
+      "git_blob": "4a8bb25ae2f12edd76ae32897846460fbac4be09"
+    },
+    {
+      "path": "Lib/Adelic/Adeles/AdditiveCharDefs.lean",
+      "git_blob": "728f522d61a606eb68ec5ed337cf1dbc2c515463"
+    },
+    {
+      "path": "Lib/Adelic/Adeles/RationalPoints.lean",
+      "git_blob": "aebdd974ccdf94b1d9b9ea4ead153261ee1717cd"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Bessel/RealMeasures.lean",
+      "git_blob": "4978795502441b9137a2caf7234b7b0beef8db34"
+    },
+    {
+      "path": "Lib/General/Analysis/ZpowSum.lean",
+      "git_blob": "f9ea2609ce9a92ddfda2afe48f28d1437257808f"
+    },
     {
       "path": "Lib/General/LinearAlgebra/HuaIntegral.lean",
       "git_blob": "d62ceebe4b3b49aae6bc6eb3d247280abbbd8a37"

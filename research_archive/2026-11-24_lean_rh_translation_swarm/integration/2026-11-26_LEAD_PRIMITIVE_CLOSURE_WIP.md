@@ -213,3 +213,30 @@ and its common compact tube, then the exact IsNear.le_classSize_and_cellMass_le
 comparison. The thin branch is now written; do not repeat it.
 Keep kernel existence, phi, probability t and support A common to the
 actual integrand, not merely to marginal frame distributions.
+
+
+Sixth connected result after saved d05b7f48041531bae057d56291f64889d0316efb:
+2026-11-26_COMPACT_OPEN_CELL_CONTRACTION.md constructs the actual
+joint probability t, compact A, finite measure n, support inclusion
+and native cellMass bound. It gives an explicit derivative-chain
+Sobolev estimate and compact tube, plus inverse-section B0 block.
+Auxiliary tube larger than the source's selected one, with sufficient
+sharper Sobolev estimate keeping the ORIGINAL cellMass contract;
+the same W,gamma,formal degree and all global witnesses are retained.
+Sections 5-6 derive the global packet/cellMass comparison, cutoff
+floor and thick amplitude consumer. Together with preceding thin
+note, pointwise classSize now has a full human derivation at the
+native caller, pending independent mathematical audit.
+
+Executed exact scalar certificate: twelve inequalities with coefficient
+counts 22,33,4,4,4,5,2,5,58,11,13,11; 52 authenticated source blobs.
+No native Lean replacement replay or independent human audit claimed.
+
+RESUME HERE: audit new local/global geometry at actual consumers;
+advance the remaining peak/Bessel-system and packet/Siegel inputs.
+In parallel integrate latest C audits 6880d1d1 (crystalline graph
+to dual defect) and 650d9426 (complete odd-Sha descent/budget),
+plus the actual Galois row guards c7a92f2d and matching witness
+b0ec37d0. These recent C proof bodies have not yet been independently
+audited by this lead session; read them and the actual source before
+retiring any C dependency. Keep the common row/twist witnesses.
