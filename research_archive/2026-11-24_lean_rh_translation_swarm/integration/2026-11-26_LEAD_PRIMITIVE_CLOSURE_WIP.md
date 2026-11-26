@@ -443,3 +443,44 @@ coefficients and positive constants (center, full guard, E bound,
 kappa bound). Universal r>=3 arithmetic only; not a new native run
 or aggregate change to the earlier twelve B scalar certificates.
 The reproduction code is in the tame tensor/caller note.
+
+## 26 November — resumed actual period-basis supplier
+
+Starting checkout 4dcf2dd6. Read the subsequent worker contributions,
+including independent audit 57db85ec of our walk/cup proof; it agrees
+with the ordered bilinear identities and supplies the exact global
+continuity and prime-to-p restriction argument. The sparse/two-size
+and common lift-ideal steps formerly listed above are now reconstructed
+by literature RUN56/57 and audited in 90fa02c0/1b2053e9; do not redo them.
+Editor RUN59 integrates these. ce3f88d1 reconstructs the period-frame
+Frobenius determinant, retaining basis contraction and the final inverse.
+
+New connected derivation:
+`2026-11-26_COMPACT_PERIOD_BASIS_AND_INVERSE.md` supplies uniform
+denominator bounds, the complete contraction limit, its actual
+Frobenius test family, finite freeness/rank, prime-to-p divisibility,
+the last inverse Z', and the chart coefficient approximation by an
+exactly applicable Ax theorem. Integrated into active §8 C immediately
+before the unramified Kisin consumer. Same matrices and tests throughout.
+Initial period-matrix and Fontaine ring/chart prerequisites and quantitative
+radius are explicitly retained. Independent audit of the new derivation
+is pending; no new Lean result or completed RH claim.
+
+Actually executed: ordered symbolic inverse identity and contraction
+error identity, both zero residual; source blobs authenticated from the
+pinned checkout. Opened Ax's original 1970 paper main theorem and §3,
+checked henselian characteristic-zero applicability to the increasing
+union of the chart's finite local fields. These are applicability/algebra
+checks, not a machine verification of the p-adic proof.
+
+Read state f392283a, summary checkpoint #532/run45860605986 green for
+registered checks. Primitive target receipt still has six native probes,
+standard three axioms, A build timeout124, all_requested_checks_ok=false.
+No A retry result was present in this fetched state. Do not call that
+receipt or whole human reconstruction verified.
+
+RESUME HERE: audit the new period-basis Frobenius/contraction and
+inverse, then derive the actual p^(4δ) radius at FrameTheorem/LongGap
+and connect the normalized balanced-row length bound to TwistForRows.
+Continue outstanding A/B primitives without repeating their already
+integrated support/mass suppliers. No worker schedule or protected change.
