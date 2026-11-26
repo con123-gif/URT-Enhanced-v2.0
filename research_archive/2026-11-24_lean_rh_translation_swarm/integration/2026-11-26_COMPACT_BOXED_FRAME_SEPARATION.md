@@ -204,9 +204,10 @@ law of t in U0 H, a common compact support A and a finite
 measure n with mass at most cellMass. A product of those
 laws gives the tensor contraction before selecting one t.
 Marginal distributions of frame coordinates cannot replace
-that joint law. The quantitative Sobolev/Gram-section tube
-supplier and the thin frameVolume kernel remain explicit
-at their actual callers.
+that joint law. The quantitative Sobolev/Gram-section tube remains essential
+at the thick caller. The thin frameVolume kernel and its full
+Schur/classSize consumer are now expanded in the companion
+2026-11-26_COMPACT_THIN_CLASS_VOLUME_KERNEL.md, pending audit.
 
 Source paths used: Setup, NearTerms, BoxPartition, FrameNorm,
 AmplitudeSums, SchurTest, ThinClasses and OpenCellBound.
@@ -216,7 +217,7 @@ certificate authenticates bytes and exponent comparisons
 only; no RH or human-proof verification is inferred.
 
 RESUME HERE: complete the actual open-cell Bessel contraction
-and cellMass/classSize comparison, and the thin frameVolume
-kernel/Schur integral. Preserve the same probability laws,
+and cellMass/classSize comparison. Audit the companion thin
+frameVolume kernel/Schur proof instead of repeating it. Preserve the same probability laws,
 free-level class labels, all frame scaling and strict
 all-conjugate <1 bounds.

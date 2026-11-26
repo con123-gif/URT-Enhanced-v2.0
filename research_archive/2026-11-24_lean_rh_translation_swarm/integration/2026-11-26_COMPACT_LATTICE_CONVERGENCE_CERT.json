@@ -4,7 +4,7 @@
   "native_Lean_replay": false,
   "human_geometry_independently_audited": false,
   "RH_proof_verified": false,
-  "substitution": "n=1+u, k=512000*n^9+v, u,v,s>=0",
+  "substitution": "n=1+u, k=512000*n^9+v, u,v,s>=0 unless a certificate overrides it",
   "certificates": [
     {
       "name": "class_discriminant_exponent",
@@ -646,9 +646,225 @@
           "coefficient": 79
         }
       ]
+    },
+    {
+      "name": "thin_class_non_top_kernel_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 52740746429854029890448024478029842985001702334235391
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": 103
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 4746619712489737792762394579076895099699559422815
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 189862889870690804802447758685488949098495424
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 4430089796084824597144476257898829824000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 66450682434448024476922374644736000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": 664500179342686817901044736000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            0,
+            0
+          ],
+          "coefficient": 4429956896048951629824000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            0,
+            0
+          ],
+          "coefficient": 18985339701098496000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": 47462874624000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            0,
+            0
+          ],
+          "coefficient": 52736000
+        }
+      ],
+      "substitution": "n=100001+u, k=512000*n^9+v, u,v,s>=0"
+    },
+    {
+      "name": "thin_class_top_kernel_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 358366203345712327703473294557895380967969203305002551871
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": 699871
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 35836958347659062990209184735915869429273624656950686
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": 7
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 1612678335768139891235249294878738854295081726239
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 43005161211364251546070252950391597780991424
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 752597418822071315715528864759979008000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": 9031254194736715895822123329536000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            0,
+            0
+          ],
+          "coefficient": 75261161341684306324503552000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            0,
+            0
+          ],
+          "coefficient": 430067834507671523328000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": 1612769586734592000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            0,
+            0
+          ],
+          "coefficient": 3583966208000
+        },
+        {
+          "powers_u_v_s": [
+            10,
+            0,
+            0
+          ],
+          "coefficient": 3584000
+        }
+      ],
+      "substitution": "n=100001+u, k=512000*n^9+v, u,v,s>=0"
     }
   ],
   "authenticated_sources": [
+    {
+      "path": "Lib/General/LinearAlgebra/HuaIntegral.lean",
+      "git_blob": "d62ceebe4b3b49aae6bc6eb3d247280abbbd8a37"
+    },
+    {
+      "path": "Lib/General/Analysis/OstrowskiTaussky.lean",
+      "git_blob": "9f49846bb185855398ab25b33211b61a680aed77"
+    },
     {
       "path": "New/RealPlace/FrameNorm.lean",
       "git_blob": "06a65cfd754f2688b899d08320f627fdea415db0"

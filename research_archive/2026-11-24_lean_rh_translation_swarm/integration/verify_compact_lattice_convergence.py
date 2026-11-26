@@ -13,6 +13,8 @@ from pathlib import Path
 
 PIN = "72fead102f663d5c7a407964a13dc0cf9d977207"
 SOURCES = {
+    "Lib/General/LinearAlgebra/HuaIntegral.lean": "d62ceebe4b3b49aae6bc6eb3d247280abbbd8a37",
+    "Lib/General/Analysis/OstrowskiTaussky.lean": "9f49846bb185855398ab25b33211b61a680aed77",
     "New/RealPlace/FrameNorm.lean": "06a65cfd754f2688b899d08320f627fdea415db0",
     "New/Filling/SchurTest.lean": "bcb1fd28783bdeb4d0e3c7d83559d0ef99cecdea",
     "New/Filling/ThinClasses.lean": "6ae40a38e407331b9954067c833c34a62277b2e5",
@@ -135,6 +137,11 @@ def main():
     cone = 198*n*(s+1) - (2*n+1+(4*n-2)*s)
     shell = 10**9*n**4 - (108900000*n**4+3000000*n**3+9999*n+3)
     matrix_size = 99*n-(20*n-1)
+    # Thin-class estimates use the actual Filling guard varrho>=100000.
+    n_box = 100001+u
+    k_box = 512000*n_box**9+v
+    thin_lower = 103*k_box-576*n_box**2-33*n_box
+    thin_top = (7*n_box-136)*k_box-576*n_box**3-33*n_box**2+480*n_box
     certificates = [lattice.nonnegative_certificate("class_discriminant_exponent"),
                     amplitude.nonnegative_certificate("full_to_cut_exponent"),
                     fourier.nonnegative_certificate("character_floor_fibre_exponent"),
@@ -142,6 +149,11 @@ def main():
                     cone.nonnegative_certificate("complex_gauge_cone_mass_exponent"),
                     shell.nonnegative_certificate("complex_shell_sum_exponent"),
                     matrix_size.nonnegative_certificate("shell_back_substitution_matrix_exponent")]
+    for name, poly in (("thin_class_non_top_kernel_exponent", thin_lower),
+                       ("thin_class_top_kernel_exponent", thin_top)):
+        cert = poly.nonnegative_certificate(name)
+        cert["substitution"] = "n=100001+u, k=512000*n^9+v, u,v,s>=0"
+        certificates.append(cert)
     # Check the expansion arithmetic against independent direct integer formulas.
     for nn, vv, ss in [(1, 0, 0), (2, 3, 1), (7, 11, 5), (100001, 23, 1000)]:
         kk = 512000*nn**9+vv
@@ -157,6 +169,11 @@ def main():
         assert shell.value(nn-1, vv, ss) == (
             10**9*nn**4-(108900000*nn**4+3000000*nn**3+9999*nn+3))
         assert matrix_size.value(nn-1, vv, ss) == 99*nn-(20*nn-1)
+        nn_box = 100000+nn
+        kk_box = 512000*nn_box**9+vv
+        assert thin_lower.value(nn-1, vv, ss) == 103*kk_box-576*nn_box**2-33*nn_box
+        assert thin_top.value(nn-1, vv, ss) == (
+            (7*nn_box-136)*kk_box-576*nn_box**3-33*nn_box**2+480*nn_box)
     # Negative controls: the guards are necessary for these proposed estimates.
     assert 250*1-1000-60000*1 < 0
     assert 2**3-1**3-12*2-2*1-1 < 0
@@ -170,7 +187,7 @@ def main():
     result = {"scope": "exact scalar inequalities and optional pinned source byte checks",
               "source_commit": PIN, "native_Lean_replay": False,
               "human_geometry_independently_audited": False, "RH_proof_verified": False,
-              "substitution": "n=1+u, k=512000*n^9+v, u,v,s>=0",
+              "substitution": "n=1+u, k=512000*n^9+v, u,v,s>=0 unless a certificate overrides it",
               "certificates": certificates, "authenticated_sources": authenticated,
               "guard_negative_controls_detected": True}
     if args.out:

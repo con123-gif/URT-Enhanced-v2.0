@@ -193,3 +193,23 @@ kernel/Hua integral at SchurTest/ThinClasses. Read actual OpenCellBound,
 CellNeighbourhood/SobolevCell and VolumeKernel, preserving the joint
 random shift and actual support. Do not treat new link/frame/tower
 notes or native Moments axiom check as independent human proof audit.
+
+
+Fifth connected result after saved 12323721132ce760c366dc4c0aa6abb91ecac036:
+2026-11-26_COMPACT_THIN_CLASS_VOLUME_KERNEL.md. Explicit common K(A),
+full frame-volume determinant and projection positivity calculation,
+row-wise Hua beta bound with normalization, ALL k+1 middle-row colours,
+actual integral translates and disjoint shifted polydiscs, weighted
+frame-fibre count, exact Schur sum and thin classSize consumer.
+The native N and frame-scale factors are retained and cancelled before
+using sufficient size guards. Geometry still pending independent audit.
+Executed two more exact universal exponent certificates: 11 and 13
+nonnegative coefficients; total nine certificates and 47 source blobs.
+No new Lean execution, no whole B/RH claim. Main section 8 B integrated.
+
+RESUME HERE: the thick classSize branch remains: reconstruct
+BesselSystem.open_cell from SobolevCell.lintegral_gramSection_integral_le
+and its common compact tube, then the exact IsNear.le_classSize_and_cellMass_le
+comparison. The thin branch is now written; do not repeat it.
+Keep kernel existence, phi, probability t and support A common to the
+actual integrand, not merely to marginal frame distributions.
