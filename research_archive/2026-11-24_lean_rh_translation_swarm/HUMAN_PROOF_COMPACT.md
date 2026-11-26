@@ -97,6 +97,35 @@ Here the eventual threshold may depend on P and epsilon. All scales and their ex
 
 The native analytic criterion uses the polar Laplace transform of R_M(exp v) and its residue at s, given by (sum_xi [ord_s Ltilde(xi)-ord_s Ltilde(xi chi_d)])/[phi(M)s(1-s)]. It selects a prime d in the specified unit class whose quadratic twists do not vanish at the relevant ordinate, then applies its Landau lemma. At modulus q lift to N0=18480 q and class N0/2-1; for a hypothetical zero with Re rho>1/2 choose epsilon=(min(Re rho,1)-1/2)/51, so 0<epsilon<1/100 and 1/2+8epsilon<Re rho. This leads to New.grh and, at modulus 1, the functional equation gives RH. The compact analytic suppliers (polar identity, nonvanishing twist, good second scale, Landau and DataExist) are not independently fully derived here; they are explicit required modules for the editor and analytic lane. Do not claim our earlier old-pin conditional Landau replay verifies these compact declarations.
 
+## 6a. Direct second-scale elimination by the classical fixed-modulus prime number theorem (interactive)
+
+This is a human-proof shortcut replacing the special high-moment selection of the second scale, not a new RH criterion. Keep P=(N0,d,...) FIXED while x grows, as in exists_data. We use the unconditional classical prime number theorem for each fixed progression (e.g. Davenport, Multiplicative Number Theory, ch. 20; Montgomery–Vaughan, Multiplicative Number Theory I, ch. 11; explicit form in A. Strömbergsson, analytic number theory notes, Thm 15.1, https://www2.math.uu.se/~ast10761/analtalt08/www_notes.pdf). For fixed modulus Q and unit residue class a it gives psi(y;Q,a)=y/phi(Q)+O_Q(y exp(-c_Q sqrt(log y))) for some c_Q>0. A possible exceptional real zero beta_Q<1 contributes O_Q(y^beta_Q), absorbed in this estimate for fixed Q. No RH/GRH hypothesis and no uniformity in growing moduli is required. The theorem is a conventional external cited result for the human proof; this shortcut has not been replayed in compact Lean.
+
+Fix either M=N0 or M=1 and put Q=Md, coprime M,d. Let lambda_M(n) denote the actual weighted Mangoldt function of PrimeError, and A_M(y)=sum_{n<=y}lambda_M(n). Split into the reduced classes mod Q. The nonzero character chi_d sums to zero over units modulo d; CRT gives sum_{a mod Q, (a,Q)=1, a=1 mod M}(1-chi_d(a))=phi(d). The nonunit terms occur only at powers of the finitely many primes dividing Q and contribute O_Q(log y) (and M divisors are excluded by the class condition). Thus the fixed-modulus theorem yields A_M(y)=y/phi(M)+E_M(y), with |E_M(y)|<=C y exp(-c sqrt(log y)) for y>=2; enlarge C on [1,2]. All constants may depend on the fixed P. The same c can be used for M=1,N0 by taking their minimum.
+
+The exact ramp sum is
+  sum_{n<=y}lambda_M(n)(1/n-1/y)=integral_1^y A_M(v)/v² dv.
+This follows by integrating each summand over v>=n (lambda_M(1)=0). Therefore the ramp minus log y/phi(M) tends to K_M=integral_1^infty E_M(v)/v² dv. Identify this constant, rather than silently choose a new normalization. For real s>1, by absolute convergence and the character Euler products used in native PrimeError,
+  F_M(s)=sum_{n>=1}lambda_M(n)n^-s
+        = [1/(s-1)+sum_xi(logDeriv(entireL(quadTwist xi d))(s)-logDeriv(entireL(xi))(s))]/phi(M)
+        = s/[phi(M)(s-1)]+logDerivMean(d,M,s).
+Partial summation also gives
+  F_M(s)=s integral_1^infty A_M(v)v^(-s-1)dv
+        = s/[phi(M)(s-1)]+s integral_1^infty E_M(v)v^(-s-1)dv.
+Subtract the same singular term and take s down to 1. Dominated convergence follows from the integrable exponential-square-root bound; entireL for the principal character is regularized by (s-1), and every relevant entireL is nonzero at 1 (native PolarLandau.entireL_ne_zero). Hence K_M=Re logDerivMean(d,M,1), the exact native normalization. In particular
+  R_M(y)= -integral_y^infty E_M(v)/v² dv,
+  |R_M(y)|<= 2 C (sqrt(log y)/c+1/c²) exp(-c sqrt(log y)),
+using u=sqrt(log v), dv/v=2u du. This proves the claimed error without any unknown constant offset.
+
+Now use the ORIGINAL D supplied by exists_data, NOT D' with logX1 replaced. It has log x1=x^(epsilon/6), log b=x^epsilon, #tops/#thick<=log b=x^epsilon, m>=sqrt x. Apply star and the exact remainder_eq to this D:
+  R_N0(x)<= f(log b)^5/(m #thick)+R_N0(x1)-(#tops/#thick)R_1(x1)
+         <= phi(N0) x^(6epsilon-1/2)+(1+x^epsilon) O_P((1+x^(epsilon/12)) exp(-c x^(epsilon/12))).
+For every fixed epsilon>0, the final term is O_P,epsilon(x^-A) for every fixed A>0 (x^(epsilon/12)/log x tends to infinity). Take A=1, absorb the fixed phi(N0) and error into x^(2epsilon), and recover exactly the native eventual bound R_N0(x)<=x^(8epsilon-1/2).
+
+This removes the need, in the human proof, to reconstruct IsPolar.eventually_moment_le, IsPolar.exists_window_sub_mul_le, the special D' scale substitution, or its quantitative moment machinery. It does NOT remove the polar Mellin identity for the final Landau criterion, the zero-density/nonvanishing quadratic-twist theorem, DataExist, or A/B/C. The classical fixed-modulus theorem is unconditional and does not depend on the RH being proved. The order of quantifiers is essential: fix P before x→∞, including d; do not apply this argument if d or N0 is allowed to grow with x. The peer RUN50 fixed-modulus reduction (284991cdd00955a2c72a6421a0ae5bc25eba1b20) is compatible; the peer linear-log window (3e627c9ba1a8367044293f16015bde7e656ba0da) is a fallback rather than needed for this human route. No claim of a new general PNT theorem.
+
+Source anchors compact pin: New/Endgame/PrimeError.lean 63eb3d79d95ad815878e623b96f237240058c8e2; New/Endgame/OneSidedCriterion.lean 93f9a2f5e8cde2438a3cbf030ba823c9613d0ba3; Lib/Analytic/Landau/PolarLandau.lean 6b80c9062a74ecadcd9c51f9459cb3c71ac2ded9; Lib/Analytic/QuadraticTwist/ZeroFreeTwist.lean 1d873bd3fef2c4ba301ce38e0469cc1817e6aa11; original New/Main and DataExist as above. Standard PNT source checked via public theorem text. No native replay, no whole proof closure. For editor: use this short subsection in place of the special second-scale paragraph in final manuscript; preserve original path as formal fallback. Landau and prime-window workers should proceed to actual residue/zero-density and remaining data arguments, not further optimize the second-scale window.
+
 ## 7. Exact current frontier and source ledger
 
 This manuscript has reconstructed the scalar cancellation, the abstract greedy spanning lemma, the common-family selection and the reciprocal height assembly. The actual A/B/C suppliers and the data/analytic modules still need concise human derivations and transitive reference checks. The external proof certification is separate from our manuscript's completeness. No claim of ten-page completion, mathematical novelty of the native argument, measured runtime improvement, or new formal proof.
