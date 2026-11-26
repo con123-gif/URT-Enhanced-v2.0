@@ -369,3 +369,31 @@ RESUME HERE: SparseThickLetters/TwoSizes point-profile construction
 and FewLowJumps length. Read the latest peer Bessel peak/graph,
 glued comparison and Galois tame-descent proofs before integrating,
 then independent audit of all newly added human replacements.
+
+Twelfth connected result after 248ac90ffbebd880fc50e0ecd41858646ad01902:
+2026-11-26_COMPACT_FEW_LOW_JUMPS_LENGTH.md reconstructs the quantitative
+FewLowJumps supplier and both zero-defect cases at ExponentTheorems.
+The primitive relation uses f0 times KERNEL jump multiplicity, with
+one integral coefficient 1. Zero-cost E raising and E0^(p^l)=E_l mod p
+turn it into the finite-generator/annihilator length bound.
+
+Actual two profiles have colength <=(2a+1)n_i+3(W+1)r_prev+6a n_prev.
+The finite intersection and permutation of letters give the original
+11-sum budget. Embedding partition and residue-degree conversion give
+the exact normalized O-length, without a free number-of-letters factor
+or an H1 substitution. The two zero branches use explicit all-letter
+cut profiles and one second-side Frobenius shift where needed.
+Underlying leading-form/frame/retraction inputs and independent audit
+remain; no new Lean execution or full crystalline/RH closure.
+
+Latest authenticated state header: checkpoint #522 at 1cc7162,
+run 45829950124, 2026-11-26T13:50:41Z. No new primitive replay receipt:
+RUN29 remains six native checks plus A timeout. No success inferred
+for these new human notes. Recent peers: 129d788f reconstructs tame
+Kisin descent; 77a7f2fc direct Tate-duality defect transfer. Read those
+bodies before duplicating their results.
+
+RESUME HERE: SparseThickLetters actual cut-window/long-gap profiles,
+including the sparse and two-size consumers; audit the now connected
+cokernel -> points -> walk -> cup -> few-low length chain. Integrate
+recent peak/glue/Galois/tame/Tate-duality peers with exact hypotheses.
