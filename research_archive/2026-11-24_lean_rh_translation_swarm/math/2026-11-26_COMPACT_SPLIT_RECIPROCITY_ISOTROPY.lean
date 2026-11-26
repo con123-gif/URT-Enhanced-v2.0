@@ -1,7 +1,5 @@
 import New.Selmer.TiltingLemma
 
-namespace CompactSplitReciprocityAudit
-
 /-!
 Source-interface certificate for the split-prime reciprocity to mirror-isotropy
 reconstruction.  Compact source pin:
@@ -39,4 +37,3 @@ theorem two_place_isotropy {A : Type*} [AddCommGroup A]
 #print axioms IsPencil.length_le_of_unseen_class
 
 end CompactSplitReciprocityAudit
-
