@@ -1,0 +1,2234 @@
+{
+  "status": "SOURCE_MATCHED_TEXT_MODULES_NOT_KERNEL_EQUIVALENCE",
+  "source": {
+    "repo": "leanprover-community/riemann-hypothesis",
+    "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+    "blob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24"
+  },
+  "inputPoolBlob": "601f5f3c6016a6cfca10a085c3656aeb0e422d29",
+  "stats": {
+    "sourceApplications": 212,
+    "distinctProducerTexts": 156,
+    "exactSupportModules": 23,
+    "sharedModules": 14,
+    "sharedProducers": 40,
+    "sharedApplications": 96,
+    "moduleReferences": 34,
+    "reconstructedFields": 212,
+    "allNineCommon": false
+  },
+  "groups": [
+    "literature_local",
+    "literature_automorphy",
+    "literature_cohomology",
+    "literature_nonexistence",
+    "published_results_analytic",
+    "published_results_local",
+    "published_results_eigen",
+    "published_results_first",
+    "published_results_arithmetic"
+  ],
+  "modules": [
+    {
+      "module": 0,
+      "support": [
+        "published_results_analytic",
+        "published_results_eigen",
+        "published_results_first"
+      ],
+      "producers": [
+        {
+          "id": 52,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.weil_representation_unitary_pair_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "weil",
+              "line": 646
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "weilRepresentationUnitaryPair",
+              "line": 704
+            },
+            {
+              "group": "published_results_first",
+              "field": "weilRepresentationUnitaryPair",
+              "line": 774
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.discrete_series_exists_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "ds",
+              "line": 647
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "discreteSeriesExists",
+              "line": 705
+            },
+            {
+              "group": "published_results_first",
+              "field": "discreteSeriesExists",
+              "line": 771
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cusp_trace_class_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "trc",
+              "line": 650
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "cuspTraceClass",
+              "line": 710
+            },
+            {
+              "group": "published_results_first",
+              "field": "cuspTraceClass",
+              "line": 736
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.dixmier_malliavin_factorisation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "dm",
+              "line": 651
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "dixmierMalliavinFactorisation",
+              "line": 711
+            },
+            {
+              "group": "published_results_first",
+              "field": "dixmierMalliavinFactorisation",
+              "line": 746
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.flath_factorisation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "flath",
+              "line": 652
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "flathFactorisation",
+              "line": 712
+            },
+            {
+              "group": "published_results_first",
+              "field": "flathFactorisation",
+              "line": 737
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.weil_siegel_formula_unitary_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "sw",
+              "line": 653
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "weilSiegelFormulaUnitary",
+              "line": 676
+            },
+            {
+              "group": "published_results_first",
+              "field": "weilSiegelFormulaUnitary",
+              "line": 738
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.doubling_method O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "dbl",
+              "line": 654
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "doublingMethod",
+              "line": 678
+            },
+            {
+              "group": "published_results_first",
+              "field": "doublingMethod",
+              "line": 740
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.unramified_doubling_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "udbl",
+              "line": 655
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "unramifiedDoublingGL",
+              "line": 679
+            },
+            {
+              "group": "published_results_first",
+              "field": "unramifiedDoublingGL",
+              "line": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 1,
+      "support": [
+        "literature_local",
+        "published_results_eigen",
+        "published_results_first"
+      ],
+      "producers": [
+        {
+          "id": 0,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.bernstein_zelevinsky_finiteness_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "bz",
+              "line": 590
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "bernsteinZelevinskyFiniteness",
+              "line": 680
+            },
+            {
+              "group": "published_results_first",
+              "field": "bernsteinZelevinskyFiniteness",
+              "line": 735
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.bernstein_unitary_product_irreducible_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "bern",
+              "line": 591
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "bernsteinUnitaryProductIrreducible",
+              "line": 682
+            },
+            {
+              "group": "published_results_first",
+              "field": "bernsteinUnitaryProductIrreducible",
+              "line": 733
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.zelevinsky_polynomial_ring_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "zel",
+              "line": 593
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "zelevinskyPolynomialRing",
+              "line": 695
+            },
+            {
+              "group": "published_results_first",
+              "field": "zelevinskyPolynomialRing",
+              "line": 734
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 2,
+      "support": [
+        "literature_automorphy",
+        "published_results_eigen",
+        "published_results_first"
+      ],
+      "producers": [
+        {
+          "id": 19,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cusp_rapid_decay_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "decay",
+              "line": 610
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "cuspRapidDecay",
+              "line": 675
+            },
+            {
+              "group": "published_results_first",
+              "field": "cuspRapidDecay",
+              "line": 773
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.harish_chandra_finite_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "hc",
+              "line": 611
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "harishChandraFinite",
+              "line": 693
+            },
+            {
+              "group": "published_results_first",
+              "field": "harishChandraFinite",
+              "line": 772
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 3,
+      "support": [
+        "literature_automorphy",
+        "published_results_eigen",
+        "published_results_arithmetic"
+      ],
+      "producers": [
+        {
+          "id": 31,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.ray_class_field_st_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "ray",
+              "line": 622
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "rayClassFieldSt",
+              "line": 696
+            },
+            {
+              "group": "published_results_arithmetic",
+              "field": "p8",
+              "line": 787
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 4,
+      "support": [
+        "literature_automorphy",
+        "published_results_local",
+        "published_results_eigen"
+      ],
+      "producers": [
+        {
+          "id": 30,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.global_artin_reciprocity_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "art",
+              "line": 621
+            },
+            {
+              "group": "published_results_local",
+              "field": "artin",
+              "line": 660
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "globalArtinReciprocity",
+              "line": 690
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 5,
+      "support": [
+        "published_results_eigen",
+        "published_results_first",
+        "published_results_arithmetic"
+      ],
+      "producers": [
+        {
+          "id": 86,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.strong_approx_su_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "strongApproxSU",
+              "line": 707
+            },
+            {
+              "group": "published_results_first",
+              "field": "strongApproxSU",
+              "line": 755
+            },
+            {
+              "group": "published_results_arithmetic",
+              "field": "p13",
+              "line": 789
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 6,
+      "support": [
+        "published_results_eigen",
+        "published_results_first"
+      ],
+      "producers": [
+        {
+          "id": 73,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.formal_degree_compact_dual_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "formalDegreeCompactDual",
+              "line": 681
+            },
+            {
+              "group": "published_results_first",
+              "field": "formalDegreeCompactDual",
+              "line": 768
+            }
+          ]
+        },
+        {
+          "id": 83,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.discrete_series_cover_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "discreteSeriesCover",
+              "line": 701
+            },
+            {
+              "group": "published_results_first",
+              "field": "discreteSeriesCover",
+              "line": 763
+            }
+          ]
+        },
+        {
+          "id": 84,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.harish_chandra_modules_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "harishChandraModules",
+              "line": 702
+            },
+            {
+              "group": "published_results_first",
+              "field": "harishChandraModules",
+              "line": 762
+            }
+          ]
+        },
+        {
+          "id": 85,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.casselman_wallach_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "casselmanWallach",
+              "line": 703
+            },
+            {
+              "group": "published_results_first",
+              "field": "casselmanWallach",
+              "line": 777
+            }
+          ]
+        },
+        {
+          "id": 90,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.discrete_series_cover_exists_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "discreteSeriesCoverExists",
+              "line": 715
+            },
+            {
+              "group": "published_results_first",
+              "field": "discreteSeriesCoverExists",
+              "line": 775
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.schur_orthogonality_square_integrable_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "schurOrthogonalitySquareIntegrable",
+              "line": 719
+            },
+            {
+              "group": "published_results_first",
+              "field": "schurOrthogonalitySquareIntegrable",
+              "line": 747
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 7,
+      "support": [
+        "literature_automorphy",
+        "published_results_eigen"
+      ],
+      "producers": [
+        {
+          "id": 21,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.automorphic_forms_finite_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "fin",
+              "line": 612
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "automorphicFormsFiniteGL",
+              "line": 687
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.jacquet_shalika_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "js",
+              "line": 613
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "jacquetShalika",
+              "line": 686
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.clozel_cohomological_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "coh",
+              "line": 620
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "clozelCohomological",
+              "line": 667
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hecke_l_adic_character_above_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "chA",
+              "line": 623
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "heckeLAdicCharacterAbove",
+              "line": 674
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.de_rham_pot_semistable_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "berger",
+              "line": 625
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "deRhamPotSemistable",
+              "line": 692
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 8,
+      "support": [
+        "literature_cohomology",
+        "published_results_local"
+      ],
+      "producers": [
+        {
+          "id": 43,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.local_finiteness_k_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "lfK",
+              "line": 635
+            },
+            {
+              "group": "published_results_local",
+              "field": "fin",
+              "line": 664
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.local_tate_duality_k_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "ltK",
+              "line": 636
+            },
+            {
+              "group": "published_results_local",
+              "field": "tate",
+              "line": 662
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.local_euler_char_k_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "leK",
+              "line": 637
+            },
+            {
+              "group": "published_results_local",
+              "field": "euler",
+              "line": 663
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.bloch_kato_local_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "bk",
+              "line": 638
+            },
+            {
+              "group": "published_results_local",
+              "field": "bk",
+              "line": 661
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 9,
+      "support": [
+        "literature_cohomology",
+        "published_results_eigen"
+      ],
+      "producers": [
+        {
+          "id": 36,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.local_finiteness_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "lf",
+              "line": 628
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "localFiniteness",
+              "line": 724
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.local_tate_duality_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "lt",
+              "line": 629
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "localTateDuality",
+              "line": 725
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.localEulerChar_alt_alt O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "le",
+              "line": 630
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "localEulerChar",
+              "line": 726
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 10,
+      "support": [
+        "literature_local",
+        "published_results_eigen"
+      ],
+      "producers": [
+        {
+          "id": 12,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.standard_cosocle_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "cos",
+              "line": 602
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "standardCosocleGL",
+              "line": 699
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.green_regular_characters_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "green",
+              "line": 608
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "greenRegularCharacters",
+              "line": 694
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 11,
+      "support": [
+        "published_results_analytic",
+        "published_results_eigen"
+      ],
+      "producers": [
+        {
+          "id": 54,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.harish_chandra_analyticity_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "ana",
+              "line": 648
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "harishChandraAnalyticity",
+              "line": 709
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.discrete_series_classification_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "dsc",
+              "line": 649
+            },
+            {
+              "group": "published_results_eigen",
+              "field": "discreteSeriesClassification",
+              "line": 706
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 12,
+      "support": [
+        "published_results_analytic",
+        "published_results_first"
+      ],
+      "producers": [
+        {
+          "id": 62,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hecke_l_partial_continuation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "hl",
+              "line": 656
+            },
+            {
+              "group": "published_results_first",
+              "field": "heckeLPartialContinuation",
+              "line": 748
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 13,
+      "support": [
+        "published_results_first",
+        "published_results_arithmetic"
+      ],
+      "producers": [
+        {
+          "id": 99,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.green_series_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "greenSeriesSt",
+              "line": 728
+            },
+            {
+              "group": "published_results_arithmetic",
+              "field": "p14",
+              "line": 790
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 14,
+      "support": [
+        "published_results_first"
+      ],
+      "producers": [
+        {
+          "id": 100,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.linnik_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "linnik",
+              "line": 729
+            }
+          ]
+        },
+        {
+          "id": 101,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.complex_multiplication_j_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "complexMultiplicationJSt",
+              "line": 730
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cuspidal_mirabolic_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "cuspidalMirabolic",
+              "line": 731
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.weyl_branching_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "weylBranching",
+              "line": 732
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.rallis_inner_product_convergent_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "rallisInnerProductConvergent",
+              "line": 739
+            }
+          ]
+        },
+        {
+          "id": 105,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hermitian_local_global_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "hermitianLocalGlobal",
+              "line": 742
+            }
+          ]
+        },
+        {
+          "id": 106,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.quadratic_class_field_theory_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "quadraticClassFieldTheory",
+              "line": 743
+            }
+          ]
+        },
+        {
+          "id": 107,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.borel_casselman_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "borelCasselman",
+              "line": 744
+            }
+          ]
+        },
+        {
+          "id": 108,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.radford_shuffle_polynomial_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "radfordShufflePolynomial",
+              "line": 745
+            }
+          ]
+        },
+        {
+          "id": 109,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.logDerivOne O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "logDerOne",
+              "line": 749
+            }
+          ]
+        },
+        {
+          "id": 110,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.k_finite_vectors_unitary_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "kFiniteVectorsUnitary",
+              "line": 750
+            }
+          ]
+        },
+        {
+          "id": 111,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.discrete_series_lowest_k_type_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "discreteSeriesLowestKType",
+              "line": 751
+            }
+          ]
+        },
+        {
+          "id": 112,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.holomorphic_discrete_series_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "holomorphicDiscreteSeries",
+              "line": 752
+            }
+          ]
+        },
+        {
+          "id": 113,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.gk_globalisation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "gKGlobalisation",
+              "line": 753
+            }
+          ]
+        },
+        {
+          "id": 114,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cusp_bounded_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "cuspBounded",
+              "line": 754
+            }
+          ]
+        },
+        {
+          "id": 115,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hecke_l_entire_and_nonzero_at_one_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "heckeLEntireAndNonzeroAtOne",
+              "line": 756
+            }
+          ]
+        },
+        {
+          "id": 116,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.real_metaplectic_representation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "realMetaplecticRepresentation",
+              "line": 757
+            }
+          ]
+        },
+        {
+          "id": 117,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cusp_decay_bound_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "cuspDecayBound",
+              "line": 758
+            }
+          ]
+        },
+        {
+          "id": 118,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.gl_howe_duality_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "gLHoweDuality",
+              "line": 759
+            }
+          ]
+        },
+        {
+          "id": 119,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.kudla_splitting_split_unitary_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "kudlaSplittingSplitUnitary",
+              "line": 760
+            }
+          ]
+        },
+        {
+          "id": 120,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.metaplectic_representation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "metaplecticRepresentation",
+              "line": 761
+            }
+          ]
+        },
+        {
+          "id": 121,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.ideal_invariants_one_orbit_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "idealInvariantsOneOrbitSt",
+              "line": 764
+            }
+          ]
+        },
+        {
+          "id": 122,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hermitian_hasse_principle_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "hermitianHassePrinciple",
+              "line": 765
+            }
+          ]
+        },
+        {
+          "id": 123,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.stone_von_neumann_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "stoneVonNeumann",
+              "line": 766
+            }
+          ]
+        },
+        {
+          "id": 124,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.discrete_series_upq_exists_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "discreteSeriesUpqExists",
+              "line": 767
+            }
+          ]
+        },
+        {
+          "id": 125,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.theta_rational_invariance_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "thetaRationalInvariance",
+              "line": 769
+            }
+          ]
+        },
+        {
+          "id": 126,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.discrete_series_hermitian_unique_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "discreteSeriesHermitianUnique",
+              "line": 770
+            }
+          ]
+        },
+        {
+          "id": 127,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cusp_decay_sobolev_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "cuspDecaySobolev",
+              "line": 776
+            }
+          ]
+        },
+        {
+          "id": 128,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.howe_duality_real_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "howeDualityReal",
+              "line": 778
+            }
+          ]
+        },
+        {
+          "id": 129,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.siegel_set_unitary_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "siegelSetUnitary",
+              "line": 779
+            }
+          ]
+        },
+        {
+          "id": 130,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.weil_representation_exists_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_first",
+              "field": "weilRepresentationExists",
+              "line": 780
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 15,
+      "support": [
+        "published_results_eigen"
+      ],
+      "producers": [
+        {
+          "id": 66,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.green_cuspidal_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "greenCuspidal",
+              "line": 668
+            }
+          ]
+        },
+        {
+          "id": 67,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hecke_l_adic_character_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "heckeLAdicCharacter",
+              "line": 669
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.chebotarev_degree_one_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "chebotarevDegreeOne",
+              "line": 670
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cusp_u_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "galoisRepOfPolarizedCuspidal",
+              "line": 671
+            }
+          ]
+        },
+        {
+          "id": 70,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.base_change_definite_unitary_group_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "baseChangeDefiniteUnitary",
+              "line": 672
+            }
+          ]
+        },
+        {
+          "id": 71,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.bhatt_scholze_crystalline_lattices_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "bhattScholzeCrystallineLattices",
+              "line": 673
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.siegel_weil_unitary_convergent_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "siegelWeilUnitaryConvergent",
+              "line": 677
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.geometric_restriction_filtration_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "geometricLemmaFiltration",
+              "line": 683
+            }
+          ]
+        },
+        {
+          "id": 75,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.unlinked_product_irreducible_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "unlinkedProductIrreducible",
+              "line": 684
+            }
+          ]
+        },
+        {
+          "id": 76,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.depth_zero_jacquet_injective_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "depthZeroJacquetInjective",
+              "line": 685
+            }
+          ]
+        },
+        {
+          "id": 77,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.carU_above_l_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "localGlobalAboveL",
+              "line": 688
+            }
+          ]
+        },
+        {
+          "id": 78,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.regular_algebraic_purity_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "regularAlgebraicPurity",
+              "line": 689
+            }
+          ]
+        },
+        {
+          "id": 79,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hecke_l_adic_parameter_above_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "heckeLAdicParameterAbove",
+              "line": 691
+            }
+          ]
+        },
+        {
+          "id": 80,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.ray_character_artin_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "rayCharacterArtin",
+              "line": 697
+            }
+          ]
+        },
+        {
+          "id": 81,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.generic_unitary_dual_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "genericUnitaryDualGL",
+              "line": 698
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cheb_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "cheb",
+              "line": 700
+            }
+          ]
+        },
+        {
+          "id": 87,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.siegelWeilU_unitary_convergent_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "siegelWeilUnitaryConvergent2",
+              "line": 708
+            }
+          ]
+        },
+        {
+          "id": 88,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cm_curve_good_outside_prime_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "cMCurveGoodOutsidePrimeSt",
+              "line": 713
+            }
+          ]
+        },
+        {
+          "id": 89,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.weber_ray_field_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "weberRayFieldSt",
+              "line": 714
+            }
+          ]
+        },
+        {
+          "id": 91,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.siegel_weil_unitary_schrodinger_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "siegelWeilUnitarySchrodinger",
+              "line": 716
+            }
+          ]
+        },
+        {
+          "id": 92,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.siegel_eisenstein_continuation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "siegelEisensteinContinuation",
+              "line": 717
+            }
+          ]
+        },
+        {
+          "id": 93,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.siegel_eisenstein_simple_pole O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "siegelEisensteinSimplePole",
+              "line": 718
+            }
+          ]
+        },
+        {
+          "id": 95,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.literature_nonexistence O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "litN",
+              "line": 720
+            }
+          ]
+        },
+        {
+          "id": 96,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.published_results_analytic O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "toHypothesesX",
+              "line": 721
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.published_results_local O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "nLink",
+              "line": 722
+            }
+          ]
+        },
+        {
+          "id": 98,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.depth_zero_support_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_eigen",
+              "field": "depthZeroSupport'",
+              "line": 723
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 16,
+      "support": [
+        "published_results_arithmetic"
+      ],
+      "producers": [
+        {
+          "id": 131,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.toroidal_compactification_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p1",
+              "line": 782
+            }
+          ]
+        },
+        {
+          "id": 132,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.vol_ge_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p2",
+              "line": 783
+            }
+          ]
+        },
+        {
+          "id": 133,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.vol_nef_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p3",
+              "line": 784
+            }
+          ]
+        },
+        {
+          "id": 134,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.ar_calc_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p4",
+              "line": 785
+            }
+          ]
+        },
+        {
+          "id": 135,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.abelian_de_rham_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p5",
+              "line": 786
+            }
+          ]
+        },
+        {
+          "id": 136,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.semistable_reduction_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p12",
+              "line": 788
+            }
+          ]
+        },
+        {
+          "id": 137,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.good_chern_weil_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p16",
+              "line": 791
+            }
+          ]
+        },
+        {
+          "id": 138,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.landherr_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p19",
+              "line": 792
+            }
+          ]
+        },
+        {
+          "id": 139,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.hasse_norm_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p20",
+              "line": 793
+            }
+          ]
+        },
+        {
+          "id": 140,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.semi_abelian_hom_extension_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p22",
+              "line": 794
+            }
+          ]
+        },
+        {
+          "id": 141,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.induced_simple_lowest_alcove_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p23",
+              "line": 795
+            }
+          ]
+        },
+        {
+          "id": 142,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.principal_polarisation_one_section_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p25",
+              "line": 796
+            }
+          ]
+        },
+        {
+          "id": 143,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.ab_mul_n_st_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "p26",
+              "line": 797
+            }
+          ]
+        },
+        {
+          "id": 144,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.grothendieck_messing_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q1",
+              "line": 798
+            }
+          ]
+        },
+        {
+          "id": 145,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.prismatic_dieudonne_hodge_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q4",
+              "line": 799
+            }
+          ]
+        },
+        {
+          "id": 146,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.kawamata_viehweg_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q6",
+              "line": 800
+            }
+          ]
+        },
+        {
+          "id": 147,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.nef_numerics_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q7",
+              "line": 801
+            }
+          ]
+        },
+        {
+          "id": 148,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.l2_extension_log_canonical_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q8",
+              "line": 802
+            }
+          ]
+        },
+        {
+          "id": 149,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.arith_hilbert_samuel_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q9",
+              "line": 803
+            }
+          ]
+        },
+        {
+          "id": 150,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.chow_form_exists_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q10",
+              "line": 804
+            }
+          ]
+        },
+        {
+          "id": 151,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cycle_heights_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q11",
+              "line": 805
+            }
+          ]
+        },
+        {
+          "id": 152,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.serre_holomorphic_sections_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q13",
+              "line": 806
+            }
+          ]
+        },
+        {
+          "id": 153,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.nadel_vanishing_and_non_klt_divisor_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q15",
+              "line": 807
+            }
+          ]
+        },
+        {
+          "id": 154,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.principalisation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q16",
+              "line": 808
+            }
+          ]
+        },
+        {
+          "id": 155,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.formal_algebraisation_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_arithmetic",
+              "field": "q18",
+              "line": 809
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 17,
+      "support": [
+        "literature_local"
+      ],
+      "producers": [
+        {
+          "id": 2,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.geometric_restriction_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "geo",
+              "line": 592
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.totally_disjoint_product_irreducible_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "disj",
+              "line": 594
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.moy_prasad_jacquet_iso_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "mp",
+              "line": 595
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.tempered_product_of_square_integrable_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "temp",
+              "line": 596
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.ess_square_integrable_segments_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "seg",
+              "line": 597
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.square_integrable_segment_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "sq",
+              "line": 598
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.generic_unlinked_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "gen",
+              "line": 599
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.langlands_multisegments_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "multi",
+              "line": 600
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.langlands_exhaustion_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "exh",
+              "line": 601
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.local_langlands_recT_exists_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "llc",
+              "line": 603
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.local_converse_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "conv",
+              "line": 604
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.depth_zero_induction_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "dzi",
+              "line": 605
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.brauer_degree_zero_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "brauer",
+              "line": 606
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.chevalley_units_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_local",
+              "field": "chev",
+              "line": 607
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 18,
+      "support": [
+        "literature_automorphy"
+      ],
+      "producers": [
+        {
+          "id": 23,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.cuspidal_spectrum_gl_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "cusp",
+              "line": 614
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.base_change_isobaric O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "bc",
+              "line": 615
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.gelfand_kazhdan_dual_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "gk",
+              "line": 616
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.pair_u_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "gal",
+              "line": 617
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "rhs": "O.caraianiLocalGlobalDual",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "car",
+              "line": 618
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.clozel_purity_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "pur",
+              "line": 619
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.algebraic_character_wd_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_automorphy",
+              "field": "chW",
+              "line": 624
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 19,
+      "support": [
+        "literature_cohomology"
+      ],
+      "producers": [
+        {
+          "id": 35,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.poitou_tate_normalised_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "pt",
+              "line": 627
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.global_finiteness_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "gf",
+              "line": 631
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.global_euler_char_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "ge",
+              "line": 632
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.unramified_orthogonality_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "uo",
+              "line": 633
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.greenberg_wiles_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_cohomology",
+              "field": "gw",
+              "line": 634
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 20,
+      "support": [
+        "literature_nonexistence"
+      ],
+      "producers": [
+        {
+          "id": 47,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.literature_local O)",
+          "uses": [
+            {
+              "group": "literature_nonexistence",
+              "field": "loc",
+              "line": 640
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.literature_automorphy O)",
+          "uses": [
+            {
+              "group": "literature_nonexistence",
+              "field": "aut",
+              "line": 641
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.literature_cohomology O)",
+          "uses": [
+            {
+              "group": "literature_nonexistence",
+              "field": "coh",
+              "line": 642
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.join_out_of_literature O)",
+          "uses": [
+            {
+              "group": "literature_nonexistence",
+              "field": "join",
+              "line": 643
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.heckeTateFunctionalEquation' O)",
+          "uses": [
+            {
+              "group": "literature_nonexistence",
+              "field": "fe",
+              "line": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 21,
+      "support": [
+        "published_results_local"
+      ],
+      "producers": [
+        {
+          "id": 64,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.fontaine_bcris_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_local",
+              "field": "font",
+              "line": 659
+            }
+          ]
+        },
+        {
+          "id": 65,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.bhatt_scholze_integral_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_local",
+              "field": "bs",
+              "line": 665
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": 22,
+      "support": [
+        "published_results_analytic"
+      ],
+      "producers": [
+        {
+          "id": 63,
+          "rhs": "(_root_.UpperTheory.LiteratureTheorems.ht_card_of_literature O)",
+          "uses": [
+            {
+              "group": "published_results_analytic",
+              "field": "ht",
+              "line": 657
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
