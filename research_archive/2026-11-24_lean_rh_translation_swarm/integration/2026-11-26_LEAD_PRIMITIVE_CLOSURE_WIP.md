@@ -342,3 +342,30 @@ LongGap/CupProductBound; then sparse-thick/two-size cut constructions.
 Check latest peer 02cf3869 tame local-global cost before duplicating
 it, and 98cc1e90 Bessel peak/graph and 20cc89bf glued comparison.
 Retain all earlier geometry, row, Rallis and line audit boundaries.
+
+Eleventh connected result after d043ac34631e5aac489c94cda523a138b09e38f0:
+2026-11-26_COMPACT_KISIN_WALK_AND_CUP_COCHAIN.md reconstructs the
+actual cup-product coboundary and finite nearest-cut transport.
+The cochain E has the native correction term and exact sign; its
+inhomogeneous differential is the desired scaled cup minus safety 1,
+and its Frobenius difference is safety 3 minus safety 2 and 4.
+Artin--Schreier--Witt plus the explicit near-one argument gives a
+continuous finite coefficient cochain, with prime-to-p corestriction.
+
+The same cut points give U_P and phi U_all=U_none. The SAME leading
+predicate chooses the middle point W. Full HasDeepPoint indices and
+strict inequalities are recorded; exponent addition/third Tate shift
+gives all four safety clauses, preserving the frobExponent 0/1
+difference. Sparse-thick/two-size quantitative profile construction
+and FewLowJumps length remain. Foundational Hodge/ASW inputs retained.
+
+Executed verify_compact_cup_cochain.py: two universal free-bilinear
+polynomial identities have residual zero; two negative controls
+rejected. Certificate JSON records no Kisin/continuity/profile/Lean
+or independent-audit verification. Source five blobs authenticated
+and main section 8 uses this actual caller derivation.
+
+RESUME HERE: SparseThickLetters/TwoSizes point-profile construction
+and FewLowJumps length. Read the latest peer Bessel peak/graph,
+glued comparison and Galois tame-descent proofs before integrating,
+then independent audit of all newly added human replacements.

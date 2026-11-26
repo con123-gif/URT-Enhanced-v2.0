@@ -1,0 +1,19 @@
+{
+  "pin": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "sympy": "1.14.0",
+  "method": "exact free-bilinear polynomial expansion",
+  "universal_identities": {
+    "W4_cup_differential_residual": "0",
+    "W5_frobenius_residual": "0"
+  },
+  "negative_controls_rejected": {
+    "omitted_E_correction": true,
+    "reversed_phi_v_equation": true
+  },
+  "scope": "Algebra of W4/W5 only, under the stated cocycle/equivariance rules.",
+  "Kisin_or_period_ring_inputs_verified": false,
+  "continuity_or_cut_profiles_verified": false,
+  "independent_human_audit": false,
+  "native_Lean_execution": false,
+  "RH_proof_verified": false
+}
