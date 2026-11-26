@@ -259,14 +259,15 @@ the cocycle inverse formula, and the anticyclotomic character relation turn
 the two terms into
 
 \[
-x_w(zh)\bigl(t,y(zh)\bigr)
--x_w(c(zh))\bigl(t,y(c(zh))\bigr)=0.                        \tag{7.2}
+x_w(zh)\bigl(t\mathbin{\bullet}y(zh)\bigr)
+-x_w(c(zh))\bigl(t\mathbin{\bullet}y(c(zh))\bigr)=0.       \tag{7.2}
 \]
 
 Therefore
 
 \[
-x_w(zh)(t,y(zh))=x_w(c(zh))(t,y(c(zh))),                   \tag{7.3}
+x_w(zh)(t\mathbin{\bullet}y(zh))
+=x_w(c(zh))(t\mathbin{\bullet}y(c(zh))),                  \tag{7.3}
 \]
 
 which is precisely the `hq` coset-isotropy hypothesis of
