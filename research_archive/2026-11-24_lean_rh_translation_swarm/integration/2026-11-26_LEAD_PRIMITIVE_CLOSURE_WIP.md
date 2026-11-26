@@ -296,3 +296,25 @@ denominator; actual carrier/near-max and period-vanishing guards; or
 the Kisin cut/cokernel/deep-point lifting crystalline primitives.
 Reuse dependency RUN51/52/55, the row note, existing Kolyvagin audits
 and A/B derivations. Do not repeat conditional global assembly.
+
+Ninth connected result after e7c5557f59d1f24fe79ce1666addf11c3a886307:
+2026-11-26_COMPACT_COMPARISON_LINE_DENOMINATOR.md reconstructs the
+actual LineArithmetic supplier. One beta_j=M_K^2 c2 H c0 conj(c1)
+epsilon serves every member, tame twist, permitted prime and embedding.
+The negation phase cancels before all-conjugate norms; its original
+modulus alone is not used. Two stabilizer factors clear two class
+sums. Polynomial homogeneity/one Schur denominator are transported
+with the same short matrix, not chosen independently at coordinates.
+
+Explicit sufficient budget: log(square-root norm)<=10^5 m f b log b,
+while D.r B0/(m f b log b)>=log(b)^2/4>2*10^5. This follows from
+the original data and d0<=600mfb, not a finite sample. The actual
+comparison map receives the same line scalar. Uniform CM theta-jet,
+integral Schur, rational covariance and short-basis/class bounds
+remain inputs. No new native execution, independent audit or C
+closure claimed. Main section 8 integrated directly.
+
+RESUME HERE: crystalline Kisin cut/cokernel, deep-point lifting and
+Frobenius walk at ExponentTheorems/LongGap; independently audit
+the row, Rallis and line derivations. Preserve period-vanishing/
+carrier and local theta inputs at comparison consumers.
