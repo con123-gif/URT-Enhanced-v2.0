@@ -1,3 +1,22 @@
+# Binding expanded-workload sprint — 26 November 2026
+
+User requires larger workloads for every RH worker. This supersedes ALL older one-result-per-run, one-obligation-per-run, single-file and single-contribution stopping rules in worker prompts and this mission. Keep existing 15 hourly schedules and the division of 14 conventional proof workers plus one URT specialist. No additional workers or increase in scheduled frequency. The objective is the completed, rigorous human-readable compact RH proof, not a count of notes or optimizations.
+
+## Workload per run
+
+- Start with the latest compact manuscript and lane checkpoints. Select an actual root-relevant dependency chain, not an isolated small algebra exercise. Aim to complete 3–5 substantive connected mathematical obligations per run, or one substantial complete theorem with all its immediate supporting steps and actual consumer. These are throughput targets, not a quota that permits inventing proofs. Work on as many additional ready obligations as the execution budget permits.
+- Do not stop after the first small success. Immediately integrate it into its caller, inspect the next dependency, and continue. If one obligation is blocked, record the precise missing premise and move to another ready obligation within the assigned lane; avoid repeated failed attempts or redundant exposition.
+- Mathematical lanes: translate entire connected lemma clusters from the pinned compact source, keeping hypotheses, quantifiers, actual witnesses, normalization, and proofs. Use original sufficient constants. Focus on closing A/B/C and data/analytic chains. Do not optimize already sufficient estimates unless it removes a genuine proof dependency.
+- Verification lanes: batch multiple ready certificates in one shared native replay job when resources permit; audit every changed caller and dependency; record exact failures individually. The O(N) lane optimizes actual shared computation, not conjectural proof-search complexity. Do not simulate a PASS or bypass required checks.
+- Integration and editor: each run merge all compatible newly completed blocks from the available peer commits, resolve overlapping notation and assumptions, and advance the single human manuscript across multiple sections. Keep the real remaining gaps explicit. Do not merely produce another status report.
+- Sole URT specialist: pursue several actual proof-relevant candidates per run, compare with conventional arguments, and transfer only independently justified useful results. No URT premises in the final proof. The fourteen other lanes do not wait for it.
+
+## Execution and logging
+
+Use the remaining available runtime and tool budget on useful mathematics rather than stopping at an arbitrary one-result limit. Group completed steps into a coherent batch, save checkpoints before resource exhaustion, and follow existing repository rules for writes, protected workflows, source pins and audit. One permitted commit may contain multiple substantive contributions; no requirement to make separate commits. Avoid conflicting edits to the main manuscript. Keep the full source ledger, brief proof summaries and exact RESUME HERE for unfinished work. Track completed source-matched human derivations, audited caller substitutions, and remaining essential dependencies separately. No invented completion percentage, no guaranteed deadline, no claim of increased platform compute quota. Preserve the original archive and all prior results. Report what was actually accomplished rather than the desired workload.
+
+---
+
 # Binding allocation amendment — 26 November 2026
 
 User requests one dedicated URT worker. Exactly ONE existing lane, RH URT Compression Bot, is the exception to the proof-only exclusion of URT below. It investigates whether the original URT method can accelerate or simplify the actual compact RH proof, using ordinary mathematical validation, source-matched premises, exact dependency preservation and controlled comparisons against conventional methods. Keep its research in structure/ or its own specialist directory. Send only independently checkable useful results to integration; no unproved URT assumptions enter the proof. No unrelated physics research or generic compression detours. Stop unproductive experiments and seek actual proof-relevant improvements.
