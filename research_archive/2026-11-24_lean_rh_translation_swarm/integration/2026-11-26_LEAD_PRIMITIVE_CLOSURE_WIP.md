@@ -168,3 +168,28 @@ BlockBound using its real open-cell contraction and actual cut error.
 Then connect the Bessel-majorant/boxed-frame suppliers and independent
 audits. Do not repeat the now-written local shell/tower or primitive
 link-lift/index arguments. Source authentication now covers 37 blobs.
+
+
+Fourth connected result after saved ff7d1262355bdcdf0ac00561f687a93f50dd47ee:
+2026-11-26_COMPACT_BOXED_FRAME_SEPARATION.md proves the strict
+all-conjugate integer separation, definite-middle rigidity, raw-scale
+recovery with an unbounded unipotent but bounded uY, actual-subspace
+packing and equal-frame weighted fibre count. Integrates the new
+b18678e2 majorant constructor at the existing convergence caller,
+without repeating its peak normalization. Both are human derivations
+pending independent audit. Main B and companion frontiers reconciled.
+Local source-byte certificate now authenticates 45 blobs; seven scalar
+certificates unchanged. No new native Lean execution.
+
+Current checkout before this checkpoint: fb6ac5c3, including fce4be62
+and fb6ac5c3 cyclotomic-triangle peers (not independently audited here).
+Also c22bb6a0 marked theta repair and 36a56d6c null-frame/Schur jets
+remain assigned to A/audit/editor; their proof bodies must be reviewed
+before declaring the corresponding human roots complete.
+
+RESUME HERE: B pointwise classSize still needs the actual open-cell
+mean-square contraction and cellMass budget, and the thin frameVolume
+kernel/Hua integral at SchurTest/ThinClasses. Read actual OpenCellBound,
+CellNeighbourhood/SobolevCell and VolumeKernel, preserving the joint
+random shift and actual support. Do not treat new link/frame/tower
+notes or native Moments axiom check as independent human proof audit.

@@ -13,6 +13,15 @@ from pathlib import Path
 
 PIN = "72fead102f663d5c7a407964a13dc0cf9d977207"
 SOURCES = {
+    "New/RealPlace/FrameNorm.lean": "06a65cfd754f2688b899d08320f627fdea415db0",
+    "New/Filling/SchurTest.lean": "bcb1fd28783bdeb4d0e3c7d83559d0ef99cecdea",
+    "New/Filling/ThinClasses.lean": "6ae40a38e407331b9954067c833c34a62277b2e5",
+    "New/RealPlace/OpenCellBound.lean": "054e3375d3ef6c96633ab3c2e44b38df52a94755",
+    "New/RealPlace/BesselCut.lean": "c9e66fa71ab3aff125e672b9fc93caac9f03fa5d",
+    "New/Filling/FillingData.lean": "0ef8b0dfe13173b16bd0a8820a4924f10124e278",
+    "New/DiscreteSeries/BesselExistence.lean": "d24e51a59e3048dfa5279c6e39055f4c2cea38ad",
+    "New/Filling/BesselSystem.lean": "847e2869ed2c189c30f6efef85e7c1c1f2451058",
+
     "New/Filling/CrudeBoundDefs.lean": "0ba0d2532b14c414b9032466b79e10d4d60c3d18",
     "Lib/General/LinearAlgebra/AdelicRingDefs.lean": "868168201f51f7fce6ea57bf492629294dbac8f8",
     "New/Filling/GramLiouville.lean": "e0e55155b72a00bb6c11d618bf1961e52a4e696c",

@@ -418,9 +418,10 @@ The connected human path is:
 Sections 1-2 expand the Haar supplier; sections 3-5 expand its
 previously unproved head/back-substitution geometry. The capped pivot recursion and weighted selfNorm integration are now
 expanded in 2026-11-26_COMPACT_WEIGHTED_TOWER_ENERGY.md at their
-complex caller. Still retain Bessel majorant construction/boxed-frame separation,
-and the global pointwise classSize and linkPairing suppliers. They
-are separate obligations. This note is not an audit of all these
+complex caller. Subsequent companion notes expand link lifts,
+pairInvariant and boxed-frame separation; peer b18678e2 supplies
+the majorant constructor. Still retain the separate pointwise
+classSize, peak/graph and open-cell/volume-kernel suppliers. This note is not an audit of all these
 predecessors or of the entire B root. The matrix-Jacobian block
 calculation and its actual caller require independent audit.
 
@@ -431,5 +432,5 @@ No native Lean run is claimed.
 
 RESUME HERE: audit the companion capped recurrence and weighted
 selfNorm derivation with the exact heads; next connect the remaining
-pointwise classSize and LinkPairing primitive lifts to BlockBound.
+pointwise classSize open-cell/volume-kernel suppliers to BlockBound.
 Do not repeat the gauge inverse moment, cone mass or shell scalar sum.

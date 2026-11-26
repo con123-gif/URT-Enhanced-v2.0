@@ -650,6 +650,38 @@
   ],
   "authenticated_sources": [
     {
+      "path": "New/RealPlace/FrameNorm.lean",
+      "git_blob": "06a65cfd754f2688b899d08320f627fdea415db0"
+    },
+    {
+      "path": "New/Filling/SchurTest.lean",
+      "git_blob": "bcb1fd28783bdeb4d0e3c7d83559d0ef99cecdea"
+    },
+    {
+      "path": "New/Filling/ThinClasses.lean",
+      "git_blob": "6ae40a38e407331b9954067c833c34a62277b2e5"
+    },
+    {
+      "path": "New/RealPlace/OpenCellBound.lean",
+      "git_blob": "054e3375d3ef6c96633ab3c2e44b38df52a94755"
+    },
+    {
+      "path": "New/RealPlace/BesselCut.lean",
+      "git_blob": "c9e66fa71ab3aff125e672b9fc93caac9f03fa5d"
+    },
+    {
+      "path": "New/Filling/FillingData.lean",
+      "git_blob": "0ef8b0dfe13173b16bd0a8820a4924f10124e278"
+    },
+    {
+      "path": "New/DiscreteSeries/BesselExistence.lean",
+      "git_blob": "d24e51a59e3048dfa5279c6e39055f4c2cea38ad"
+    },
+    {
+      "path": "New/Filling/BesselSystem.lean",
+      "git_blob": "847e2869ed2c189c30f6efef85e7c1c1f2451058"
+    },
+    {
       "path": "New/Filling/CrudeBoundDefs.lean",
       "git_blob": "0ba0d2532b14c414b9032466b79e10d4d60c3d18"
     },

@@ -353,13 +353,15 @@ existing exact certificate. These human calculations still require
 independent audit and a native replay of their replacement lemmas.
 No such replay is reported.
 
-The remaining B frontier includes the actual global pointwise
-classSize/pairInvariant and primitive link-lift estimates, Bessel
-majorants/boxed-frame suppliers and audit of all retained band and
-orbital consumers. A and C retain their separate arithmetic and
+The primitive link-lift/pairInvariant chain is now expanded in
+2026-11-26_COMPACT_LINK_DISCRIMINANT_PRIMITIVES.md, and boxed-frame
+separation in 2026-11-26_COMPACT_BOXED_FRAME_SEPARATION.md. The
+remaining B frontier includes pointwise classSize, peak/graph and
+open-cell/volume-kernel suppliers, plus independent audit of the
+retained band and orbital consumers. A and C retain their separate arithmetic and
 theta obligations. This is not an RH completion claim.
 
 RESUME HERE: audit the shift covariance cancellation (T13) and
 descending residual-measure invariant (T8) at the native
-lintegral_positions_le caller; then reconstruct the primitive
-link-lift/minor suppliers of LinkPairing, not this shell sum again.
+lintegral_positions_le caller; then advance the actual classSize
+open-cell/volume-kernel suppliers, not this shell sum again.
