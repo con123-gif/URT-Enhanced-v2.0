@@ -442,9 +442,12 @@ triple (x,y,v) in the order required by the record; no dependence on the
 subsequent test variable u is introduced. This gives a human construction
 of `RealPlaceSizes.gauge`, subject to independent audit/replay.
 
-It does not establish the separate Haar-ratio theorem for complexLevel,
-the shell cap and summation, Bessel majorant construction, or the
-pointwise classSize/pairInvariant bounds. Those still have their actual
+The separate Haar ratio and head/back-substitution shell support are now
+expanded in 2026-11-26_COMPACT_COMPLEX_HAAR_AND_SHELL_SUPPORT.md, and peer
+2e075352 supplies the shell sum. These results supply finite majorant
+integral at the joint-law caller, subject to their retained capped-pivot
+and weighted selfNorm predecessors. Bessel majorant construction and the
+pointwise classSize/pairInvariant bounds still require their actual
 source witnesses and normalization requirements.
 
 No native Lean execution of this note has been performed. The scalar
@@ -456,6 +459,7 @@ files, six negative controls) is separate evidence, not a replay here.
 RESUME HERE: independently audit the common pushforward law (29)-(31)
 against the actual LocalTheorem.integral_succ_floor_eq body and the
 two uses of the SAME phi in section 5 against ComplexGauge.gauge.com.
-Audit the flat-chart cone normalization (34a)–(36) and complete the shell cap, then the
-actual pointwise classSize/pairInvariant estimates. Preserve c=pi^2,
+Audit the flat-chart cone normalization (34a)–(36) and the companion Haar
+and shell-support derivations; then complete the capped pivot/selfNorm
+predecessors and actual pointwise classSize/pairInvariant estimates. Preserve c=pi^2,
 the half power in floorModulus, all support guards and common measures.

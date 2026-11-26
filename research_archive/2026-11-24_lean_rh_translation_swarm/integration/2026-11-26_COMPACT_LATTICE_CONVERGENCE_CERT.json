@@ -576,6 +576,76 @@
           "coefficient": 194
         }
       ]
+    },
+    {
+      "name": "complex_shell_sum_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 888089998
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 3555390001
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 5337600000
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 3561400000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 891100000
+        }
+      ]
+    },
+    {
+      "name": "shell_back_substitution_matrix_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 80
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 79
+        }
+      ]
     }
   ],
   "authenticated_sources": [
@@ -674,6 +744,50 @@
     {
       "path": "Lib/General/Measure/Place.lean",
       "git_blob": "300ee7d1e3e3d7b1d2ec8538b7f6feb365c70975"
+    },
+    {
+      "path": "New/RealPlace/Size.lean",
+      "git_blob": "3b57ba677471f6d26fceca1a7990eaac9bffa3db"
+    },
+    {
+      "path": "New/RealPlace/GramSectionBounds.lean",
+      "git_blob": "5044a4a899b36f1f42d538968eeb0c733c181a2d"
+    },
+    {
+      "path": "New/RealPlace/GramSection.lean",
+      "git_blob": "ec493dc810dfa20dece008342e16316f60e48dd8"
+    },
+    {
+      "path": "New/RealPlace/CellNeighbourhood.lean",
+      "git_blob": "6930631979c8d744667e5e3f832e35cf8477e8c6"
+    },
+    {
+      "path": "New/RealPlace/SobolevCell.lean",
+      "git_blob": "e17e4a553395ce74293990336836cafe0b60d519"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Bessel/UnipotentCoords.lean",
+      "git_blob": "4dbc16d9e327b2b9667b1bb7982e497d5fb6ef78"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Bruhat/ComplexFloorMeasure.lean",
+      "git_blob": "d91b5cc6f018256da1d1c7869bd1ef88bdf0f775"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Haar/CompactDualMeasure.lean",
+      "git_blob": "f635acc5ac6f4c029eaa652374087216a1dccb6a"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Haar/HaarColumnChart.lean",
+      "git_blob": "74de856ef0fac9b9ce703a27c09f760642c4a75d"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Haar/SphereFibreIntegral.lean",
+      "git_blob": "ebabe442d9a5a231b59774a75b94d5ef05972c82"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Bruhat/FloorGroups.lean",
+      "git_blob": "ec03810781f335ba1c19f6b818b015f6d4014bac"
     }
   ],
   "guard_negative_controls_detected": true

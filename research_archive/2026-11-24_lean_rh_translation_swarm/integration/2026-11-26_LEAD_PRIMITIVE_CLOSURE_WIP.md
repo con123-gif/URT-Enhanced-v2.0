@@ -90,3 +90,36 @@ Next mathematical question: prove the shell cap and summation at
 ComplexShells and audit the separate Haar-ratio supplier, or derive the
 actual LinkPairing primitive lift/minor suppliers. Do not repeat the
 determinant, outer pair summation, inverse moment or cone calculation.
+
+
+## Resumed lead integration after the user's stopping correction
+
+Starting current checkpoint bb09b6c2, RH only. Read peers 2e075352
+(shell cap/sum), 40f4331a (offset cocycle; body audit still pending),
+0807db85 (uniform small-prime detectors; body audit still pending).
+No scheduled or additional worker changed.
+
+New connected human derivation:
+2026-11-26_COMPACT_COMPLEX_HAAR_AND_SHELL_SUPPORT.md. It derives the
+Gram-section logarithmic Jacobian with explicit K, the compact one-column
+normalization, the SAME-fibre Bruhat/Haar comparison 0<lambda<infinity,
+a lambda<=1, quotient law, head-minor bounds and twice-descending
+unipotent substitution. This supplies the shell's missing support cap;
+peer RUN54 supplies the remaining scalar sum. Integrated at manuscript
+section 8 B and the Fourier/descent integrability caller. Retain the
+capped pivot recursion and weighted selfNorm bound, pointwise classSize/
+linkPairing and majorant/boxed-frame suppliers. The new geometry remains
+HUMAN SOURCE-MATCHED / independent audit and native replay outstanding.
+
+Executed local exact certificate: seven scalar inequalities with coefficient
+counts 22,33,4,4,4,5,2; thirty-five exact compact source Git blobs.
+No native Lean execution and no whole-proof claim. Current state summary
+last seen baa34ce9: orchestrator 45811716055 passed at dc4a4eec; the
+primitive replay still has no published compute result. Historical
+RUN28 authenticated receipt is separate.
+
+RESUME HERE: read LocalTheorem selfNorm/inverse-weight and capped pivot
+recursion; expand their exact dependencies at the shell caller, then
+advance the pointwise primitive lifts/classSize branch. Preserve the
+Haar normalization and support arguments at this checkpoint before
+continuing.

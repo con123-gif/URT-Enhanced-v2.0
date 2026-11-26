@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact scalar certificates and optional source authentication.
 
-These certificates prove the two polynomial inequalities used by the human
+These certificates prove the polynomial inequalities used by the human
 geometric derivation on their full domain. They do not verify lattice geometry,
 integration arguments, caller substitution, or RH. No Lean replay is performed.
 """
@@ -37,6 +37,17 @@ SOURCES = {
     "Lib/DiscreteSeries/Bruhat/ComplexPlace.lean": "74d2fd4581e30ba76a2c6dbd7604848bf7e6f3d0",
     "Lib/DiscreteSeries/Bruhat/BigCell.lean": "da06dcfda1a1401b8ad51f94649da9b760907a87",
     "Lib/General/Measure/Place.lean": "300ee7d1e3e3d7b1d2ec8538b7f6feb365c70975",
+    "New/RealPlace/Size.lean": "3b57ba677471f6d26fceca1a7990eaac9bffa3db",
+    "New/RealPlace/GramSectionBounds.lean": "5044a4a899b36f1f42d538968eeb0c733c181a2d",
+    "New/RealPlace/GramSection.lean": "ec493dc810dfa20dece008342e16316f60e48dd8",
+    "New/RealPlace/CellNeighbourhood.lean": "6930631979c8d744667e5e3f832e35cf8477e8c6",
+    "New/RealPlace/SobolevCell.lean": "e17e4a553395ce74293990336836cafe0b60d519",
+    "Lib/DiscreteSeries/Bessel/UnipotentCoords.lean": "4dbc16d9e327b2b9667b1bb7982e497d5fb6ef78",
+    "Lib/DiscreteSeries/Bruhat/ComplexFloorMeasure.lean": "d91b5cc6f018256da1d1c7869bd1ef88bdf0f775",
+    "Lib/DiscreteSeries/Haar/CompactDualMeasure.lean": "f635acc5ac6f4c029eaa652374087216a1dccb6a",
+    "Lib/DiscreteSeries/Haar/HaarColumnChart.lean": "74de856ef0fac9b9ce703a27c09f760642c4a75d",
+    "Lib/DiscreteSeries/Haar/SphereFibreIntegral.lean": "ebabe442d9a5a231b59774a75b94d5ef05972c82",
+    "Lib/DiscreteSeries/Bruhat/FloorGroups.lean": "ec03810781f335ba1c19f6b818b015f6d4014bac",
 }
 
 
@@ -111,11 +122,15 @@ def main():
     fourier = 1000000*n**3 - 99*n*(60*n**2+12) - 99*n*(99*n**2+12)
     inverse_moment = 198*n*(s+1) - (148+2*s+9*n+6*n*s)
     cone = 198*n*(s+1) - (2*n+1+(4*n-2)*s)
+    shell = 10**9*n**4 - (108900000*n**4+3000000*n**3+9999*n+3)
+    matrix_size = 99*n-(20*n-1)
     certificates = [lattice.nonnegative_certificate("class_discriminant_exponent"),
                     amplitude.nonnegative_certificate("full_to_cut_exponent"),
                     fourier.nonnegative_certificate("character_floor_fibre_exponent"),
                     inverse_moment.nonnegative_certificate("complex_gauge_inverse_moment_exponent"),
-                    cone.nonnegative_certificate("complex_gauge_cone_mass_exponent")]
+                    cone.nonnegative_certificate("complex_gauge_cone_mass_exponent"),
+                    shell.nonnegative_certificate("complex_shell_sum_exponent"),
+                    matrix_size.nonnegative_certificate("shell_back_substitution_matrix_exponent")]
     # Check the expansion arithmetic against independent direct integer formulas.
     for nn, vv, ss in [(1, 0, 0), (2, 3, 1), (7, 11, 5), (100001, 23, 1000)]:
         kk = 512000*nn**9+vv
@@ -128,6 +143,9 @@ def main():
         assert inverse_moment.value(nn-1, vv, ss) == (
             198*nn*(ss+1)-(148+2*ss+9*nn+6*nn*ss))
         assert cone.value(nn-1, vv, ss) == 198*nn*(ss+1)-(2*nn+1+(4*nn-2)*ss)
+        assert shell.value(nn-1, vv, ss) == (
+            10**9*nn**4-(108900000*nn**4+3000000*nn**3+9999*nn+3))
+        assert matrix_size.value(nn-1, vv, ss) == 99*nn-(20*nn-1)
     # Negative controls: the guards are necessary for these proposed estimates.
     assert 250*1-1000-60000*1 < 0
     assert 2**3-1**3-12*2-2*1-1 < 0
