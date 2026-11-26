@@ -505,3 +505,36 @@ RESUME HERE: normalized RowBalanced length and final Ribet payment
 with the exact scalar/mirror/tame witnesses; separately audit the new
 radius recursion and fixed-field normalization. No re-derivation of
 already audited cup algebra, sparse cut or global star endgame.
+
+## Continued after f301858e — final Ribet collection and A suppliers
+
+Read actual RibetElement, RibetFirstOrder, TateTwistSteps,
+Corepresentable, AptTupleDefs, Magnitudes and OddShaBound. New note
+COMPACT_RIBET_FINAL_BUDGET.md supplies the previously retained
+ribet_columns final coefficient collection at its exact caller.
+Same eventual ring, selected pi, scalar gamma, triangle, row/string
+moduli and pointwise Selmer bound. Both detector |s| costs retained;
+h=0 handled without division; strict b0<m0 established BEFORE
+first-order conclusion. All costs including chosenGroupOrder³ fit
+the ORIGINAL H^27(c+v_ell(X))+4f loss budget. Independently audited
+RowBalanced normalized estimate already exists in d064b084; no need
+to rediscover or describe it as an unattempted calculation.
+
+Integrated compatible A peers 76a10b40 uniform ordered index and
+rational projection assembly, and 6c88e267 concrete level residue
+support/phase, admissible cut, mirabolic covariance and exact
+branching-scalar cancellation. Their retained individual marked
+Hecke and level-Fourier suppliers remain visible. No whole A claim.
+
+Re-read fresh primitive results at state ecba27b4: still six successful
+native probes and A build timeout124, all_requested_checks_ok=false.
+No new retry result. Lean/lake/elan remain absent on local PATH.
+No unneeded finite diagnostics or new native claim.
+
+RESUME HERE: independent audit of the new final Ribet collection,
+especially row/string moduli and auxiliary inertia costs; next exact
+C supplier is initial crystalline period construction / remaining
+row and primitive reciprocity applicability. A next caller is
+hasType_twisted_hecke and marked class-representative intertwining;
+B uses latest one-vector/absolute unfolding and distinct band suppliers.
+Keep the shared native runner and all hypotheses; do not redo endgame.
