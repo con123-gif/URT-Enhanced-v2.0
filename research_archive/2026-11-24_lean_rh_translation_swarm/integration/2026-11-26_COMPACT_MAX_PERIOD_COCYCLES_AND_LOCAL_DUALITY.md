@@ -1,7 +1,9 @@
 # Actual max-period cocycles: rank, integral reduction and local duality
 
 26 November 2026. Human derivation and exact external-theorem bridge;
-independent mathematical audit pending. No new Lean execution or claim of RH
+Independently reviewed in audit RUN61 / d482b835, with the open-image
+scope repair incorporated below; broader C audit remains pending.
+No new Lean execution or claim of RH
 completion. This fills the period-ring and integral-rank prerequisites of the
 direct Tate argument already supplied in literature RUN55; that argument is
 credited below, not claimed as new.
@@ -71,10 +73,10 @@ The statement, maps and definitions were read in that text. Reversing the
 first component gives precisely the native \(\varphi-1\) convention.
 No equality \(B_{\max}=B_{\mathrm{cris}}\) is asserted or needed below.
 
-## 2. Continuity precedes use of continuous cohomology
+## 2. Open-image descent; continuity only where it is required
 
-Let \(j:\Gamma\to G_{\mathbb Q_p}\) be the actual open embedding, and
-identify \(\Gamma\) with \(G_K\) for a finite local field \(K\). Let \(T\)
+For the rank theorem let \(j:\Gamma\to G_{\mathbb Q_p}\) have OPEN IMAGE
+\(H=G_K\), with no topology or injectivity assumed on \(\Gamma\). Let \(T\)
 be finite free over \(\mathbb Z_p\), set \(V=T[1/p]\), and suppose its
 algebraic action is potentially \(B\)-admissible as in the source.
 
@@ -82,14 +84,20 @@ The preceding [Hodge-frame derivation](2026-11-26_COMPACT_HODGE_FRAME_WITHOUT_CO
 uses scalar Tate invariants and the minimal determinant, before any continuity
 assumption on the matrix action. For completeness, passing from a potentially
 fixed basis to a full de Rham basis is finite Galois descent: choose a normal
-open subgroup \(G_{K_1}\) fixing a period basis; its de Rham invariant space
+subgroup \(j^{-1}(G_{K_1})\), with \(G_{K_1}\) normal open in \(G_K\),
+fixing a period basis; its de Rham invariant space
 has dimension \(d=\dim_{\mathbb Q_p}V\) over \(K_1\), since
 \(B_{\mathrm{dR}}^{G_{K_1}}=K_1\). The finite group
 \(\operatorname{Gal}(K_1/K)\) acts semilinearly on it. Finite semilinear
 descent gives a \(K\)-basis of full invariants. The Hodge-frame argument
 then supplies the filtered frame in native `exists_hodge_basis`.
+The kernel of j fixes the scalar period ring and that basis, hence V.
+Thus descent is over the finite quotient G_K/G_(K1), even when j is
+not injective. No compactness of the original abstract Gamma is used.
 
-The same argument applies to an extension by any rational period cocycle
+At the actual finite-duality consumer, j IS an open embedding and
+Gamma is identified with G_K with its profinite topology. Here the
+same argument applies to an extension by any rational period cocycle
 \(c\): if \(c(g)=g y-y\) in \(B\otimes V\), the vectors \(V\oplus0\)
 and \((-y,1)\) give potential admissibility of
 \(\widetilde\rho(g)=\left(\begin{smallmatrix}\rho(g)&c(g)\\0&1\end{smallmatrix}\right)\).
@@ -101,9 +109,10 @@ extension lattice. In a Hodge--Tate frame on an open subgroup,
 \]
 The right side is continuous at the identity and equals the identity there.
 The representation law gives continuity everywhere, hence continuity of
-\(c\). Compactness of \(G_K\) makes its image bounded in \(V\), so some
-\(p^r c\) takes values in \(T\). This supplies both continuity and the
-uniform integral denominator used below without a continuity circle.
+\(c\). This supplies the continuity required for finite local Tate
+duality without a continuity circle. The general rank theorem's
+integral denominator will instead be proved directly below, without
+assuming Gamma is compact or topological.
 
 ## 3. Cocycle rank by cancellation of one invariant space
 
@@ -116,7 +125,7 @@ F:V_B\longrightarrow V_B\oplus Q,\quad
 y\longmapsto((\varphi-1)y,\bar y),\qquad \ker F=V.          \tag{4}
 \]
 Both maps commute with the Galois action. Let
-\(D=V_B^{G_K}\), \(t=Q^{G_K}\), and
+\(D=V_B^{\Gamma}\), \(t=Q^{\Gamma}\), and
 \(\mathcal E=F^{-1}(D\oplus t)\). Then
 \[
 0\to V\to\mathcal E\to D\oplus t\to0,
@@ -127,7 +136,8 @@ Both maps commute with the Galois action. Let
 The second equality is exact: membership in \(\mathcal E\) says
 \(F(g y-y)=0\) for every \(g\), which by (4) is exactly
 \(g y-y\in V\). Conversely every rational native crystalline cocycle has
-such a primitive \(y\). Section 2 supplies its continuity.
+such a primitive \(y\). No continuity is needed for these algebraic
+exact sequences. Section 2 supplies it at the finite-duality caller.
 
 Here all dimensions in (5) are finite. The full filtered Hodge frame sends
 the semilinear action to scalar Galois action, and sends the integral
@@ -149,16 +159,34 @@ cancels \(\dim D\) and proves
 This is a proof for the source max ring. It does not infer (6) from a
 dimension theorem for a differently defined cohomology group.
 
+Here is audit RUN61's direct integral-denominator bridge at the
+original open-image generality. The class of y in Q is invariant.
+Scalar filtration lifting through the full filtered frame N supplies
+a fixed representative y0=N^(-1)a, with a in K^d, of that class.
+Write x=y-y0 in (B_dR^+) tensor T. In an integral basis of T put
+X_i=theta(x_i). Then apply theta to c(g)=g x-x BEFORE taking norms:
+\[
+ c_i(g)=\sum_j\rho(g)_{ij}\,j(g)(X_j)-X_i,\qquad
+ |c_i(g)|_p\le\max_j|X_j|_p .                            \tag{6a}
+\]
+Every rho(g)_ij is in Z_p and scalar Galois is isometric. There
+are finitely many X_j, so choose one integer r>=0 with p^r at
+least their maximum. Then p^r c(g) is in T for EVERY g in Gamma.
+Rank zero is immediate. This proves exactly the all-group denominator
+required by the rank theorem, without importing an open-embedding
+or compactness hypothesis. It is consistent with the narrower
+continuity proof above, but does not rely on it.
+
 The integral module is precisely
 \(Z_f(T)=Z_f(V)\cap\{c:c(g)\in T\text{ for every }g\}\).
 In the finite dimensional function space \(Z_f(V)\), finitely many value
 coordinates separate points: intersect coordinate kernels until the
 dimension can no longer fall. Evaluation embeds \(Z_f(T)\) into a finite
 power of \(T\), so it is finite free over \(\mathbb Z_p\).
-Section 2 shows \(\mathbb Q_pZ_f(T)=Z_f(V)\), so its rank is (6).
+Equation (6a) shows \(\mathbb Q_pZ_f(T)=Z_f(V)\), so its rank is (6).
 Moreover
 \[
-Z_f(T)\cap p^m\operatorname{Map}(G_K,T)=p^mZ_f(T):           \tag{7}
+Z_f(T)\cap p^m\operatorname{Map}(\Gamma,T)=p^mZ_f(T):           \tag{7}
 \]
 divide the period primitive by \(p^m\) and retain the integral function.
 These are the finite generation and saturation needed at the reduction
@@ -177,6 +205,8 @@ Credit: [literature RUN55](../specialists/literature_provenance/RUN55_COMPACT_TA
 §1, already derives the following finite group argument. Equations (1)--(7)
 above now supply its native rank/period prerequisites.
 
+Here retain the actual open-embedding and continuous finite-action
+hypotheses, which were not required in the algebraic rank argument.
 Let \(T'=T^\vee(1)\) with the actual perfect equivariant
 \(\mathbb Z_p\)-pairing, \(M=T/p^mT\), and
 \(M'=T'/p^mT'\). The primitive-root identification gives
@@ -238,16 +268,19 @@ two-size, few-low-jumps or tame cokernel exponent on its own.
 
 ## Audit boundary and resume
 
-The new bridge is the actual max-ring identification, noncircular
+Audit RUN61 agrees with the max-ring identification, noncircular
 continuity, finite exact-sequence rank proof, integral freeness and
-saturation. It makes the earlier direct finite Tate proof applicable at
-the actual caller. Independent audit must check these bridges together
-with the preceding Hodge-frame note. The standard theorems above were
+saturation, after restoring open-image generality by (6a). It also
+checks the Hodge inverse-row jump sign and fixed-coefficient bridge.
+This makes the earlier direct finite Tate proof applicable at the
+actual caller. The broader quantitative local and global proof still
+requires independent audit. The standard theorems above were
 opened and their precise statements checked; no new native replay or
 finite diagnostic was run. The recorded RUN28/RUN29 evidence is unchanged.
 
-RESUME HERE: audit (1)--(7), especially filtered-frame descent and uniform
-denominators. Continue the actual exponent suppliers at
-`New/Lift/ExponentTheorems.lean` and the sparse-thick/two-size cut
-cokernels; the finite Tate index and scalar Ribet collection need not be
-derived again. All A/B primitives and common global witnesses remain.
+RESUME HERE: apply the audited OPEN-IMAGE residue bound (6a) at every
+general rank caller, retaining open embedding only for finite duality.
+Continue the actual chart construction, quantitative local safety and
+reciprocity-to-isotropy suppliers; the finite Tate index, existing cut
+recursion and scalar Ribet collection need not be derived again.
+All A/B primitives and common global witnesses remain.

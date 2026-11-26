@@ -1,7 +1,8 @@
 # The Hodge frame before automatic continuity
 
-26 November 2026. SOURCE-MATCHED HUMAN DERIVATION; independent audit of
-this new derivation pending. This supplies the remaining Hodge-frame
+26 November 2026. SOURCE-MATCHED HUMAN DERIVATION; independently
+reviewed in RUN61 / d482b835, with its inverse-row clarification below.
+This supplies the remaining Hodge-frame
 input of CrystallinePeriodMatrix using the native argument. It does not
 invoke a comparison theorem whose continuity hypothesis is proved later
 using this same frame.
@@ -157,14 +158,17 @@ under j is an OPEN subgroup, so nhds_G(1)≤j_*top. We obtain Y
 fixed by every γ and hence with entries in the actual finite
 local fixed field K. The same is true for its inverse.
 
-After residue, columns of P are the Hodge–Tate basis: the preceding
-identity says their weights are χ^(−k_i). With the source convention
-the jumps are k_i (a cyclotomic inverse power χ^(−e) has jump e).
-Tate's unequal-weight vanishing shows that the multiplicity of any
-jump u is exactly #{i:k_i=u}; equal-weight coefficients are
-algebraic by the zero-weight assertion. This is the native
-hasJumps_of_rows dictionary, not an extra sign convention imported
-from an external use of the phrase Hodge–Tate weight.
+Audit RUN61 makes the native dual-functional dictionary explicit.
+Put R=theta(P). Its inverse rows f_i satisfy
+f_i(N(g)v)=chi(g)^(-k_i) g(f_i(v)) on the rational lattice basis.
+For a weight-u functional sum_i c_i f_i, comparison gives
+c_i=chi(g)^(k_i-u) g(c_i). Tate forces c_i=0 for k_i!=u;
+otherwise c_i is algebraic. Conversely equal-weight algebraic
+combinations satisfy the required relation on a common open subgroup.
+Thus the multiplicity of u is #{i:k_i=u} OVER Qpbar, not a claimed
+C_p-dimension of all eventually invariant functions. The native
+hasJumps_of_rows uses these inverse rows; no replacement by the
+columns of R or opposite sign is made.
 
 Every φ^n M is again an invariant basis since φ commutes with
 Galois action and fixes the Z_p representation matrices. Apply
@@ -232,6 +236,11 @@ execution. Native RUN29 still records six successful theorem probes and
 one A build timeout, not verification of this new human proof. The
 independent audit eec17037 covers the older basis/height/interface
 arguments; it does NOT independently audit sections 2–5 of this note.
+Subsequent independent audit RUN61 / d482b835 now agrees with
+sections 2–5 and supplies the explicit inverse-row dictionary above,
+checking the ORIGINAL filter, minus sign on the kernel, determinant
+drop and every Frobenius translate. This is a mathematical source
+audit, not a new Lean replay. Broader chart and C dependencies remain.
 All broader A/B, arithmetic reciprocity and comparison inputs remain
 distinct dependencies. No claim of complete human RH.
 

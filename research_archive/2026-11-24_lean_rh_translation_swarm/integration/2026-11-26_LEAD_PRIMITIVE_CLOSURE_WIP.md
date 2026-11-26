@@ -858,3 +858,76 @@ and R-supported phase together with the peer span/jet identity.
 Next actual finite Weil coefficient (saturating-lattice index and
 splitting character normalization), or A single-stage theta transfer;
 continue B absolute unfolding and C safety/Ext/comparison suppliers.
+
+
+### 26 November — short spanning columns and independent rank scope repair
+
+Finite Weil checkpoint 2ce507a254186b7c1453674eb2b9f1bc72fc1693
+was published and fetched back. Read full subsequent workers
+4aee920f (common CM torsion/period), 2bd8f96d (fixed ratios and
+invariant basis), 3e861230 (sharp/uniform B unfolding) and
+d482b835 (independent Hodge/rank audit). Integrated their actual
+caller arguments and retained prerequisites into the manuscript.
+
+New COMPACT_SHORT_SPANNING_COLUMNS.md supplies the actual short
+spanning set at span_isShort_eq_top -> span_short_ramifiedColumns
+-> short_forms. Read ChainValuation, MassBasic, FirstMinimum,
+ClassReps, Schur Gram/evaluation and exact consumers. Checked
+primary Miller--Stephens-Davidowitz arXiv:1802.05708 Theorem 3.2
+at printed page 8: Euclidean covering radius times shortest dual
+vector <= D/(2pi)+3sqrt(D)/pi <= D^2 for D>=2. Trace dual of
+the actual Hermitian unimodular lattice is arch(2 different^-1 L),
+so its shortest dual is >=2/N; the half-trace factor is retained.
+Three times the covering-radius bound gives short E-bases with
+R=6N(fn)^2. These are not asserted integral O_E bases.
+
+Determinant twists use det Y_(c^e), not (det Y_c)^e; this clears
+all integral exponents without height proportional to |e|. Root-
+of-unity evaluation vectors span by polynomial independence;
+integral Schur coefficients clear the p-adic gauges at every prime.
+SVD in the actual Gram norm gives squared size R^(4nf+6boxes)
+<=R^(6M). Actual f central differences cost 4^f, absorbed by
+fa(log b)^3 using explicit data scales. This supplies short spanning
+columns, not yet the separate norm bound of their lifted chain.
+
+IMPORTANT AUDIT CORRECTION: our previous compactness argument for
+an integral cocycle denominator was valid at the local-duality
+open-embedding caller, but did not by itself match the native
+rank theorem for an abstract group with merely open image.
+Incorporated RUN61's stronger direct proof in the max-period note
+and main: lift the invariant de Rham quotient class to fixed y0,
+write x=y-y0 integral in BdRPlus, apply theta to gx-x, and bound
+all cocycle coordinates by the finite maximum of theta(x_i).
+Integral rho and isometric scalar Galois give one p-power for
+EVERY g, with no compactness/topology hypothesis on Gamma.
+Kernel(j) fixes the potential period basis, so finite descent works
+on the open image even when j is noninjective. Kept continuity
+only where finite local Tate duality actually requires it.
+
+RUN61 independently agrees with the noncircular Hodge determinant
+argument, exact fixed-ratio bridge, max ring/sign interface and
+finite local Tate transfer, subject to this scope repair. Added its
+explicit inverse-ROW jump dictionary and preserved Qpbar dimension.
+Old eec17037 never audited the new Hodge proof; RUN61 now does.
+Broader C/chart/exponent/global hypotheses remain explicit.
+
+Main also integrates: one common CM finite torsion witness and
+compact cluster parameter, exact class-mean Chowla--Selberg period;
+B Tonelli from actual amplitudeAbs, phase factorization, one compact
+gauge/tube neighborhood, and top-floor absolute Fubini from the
+uniform kernel bound. Their retained CM/frame/first-limit,
+amplitude-tail/group/Siegel-Weil suppliers are not declared proved
+by these assemblies. Independent audit of new A/B/CM work pending.
+
+Verification: primary theorem and actual source inspected;
+git diff --check, no native Lean/lake or new scalar diagnostics.
+RUN29 primitive receipt remains error with six successful named
+probes and A module timeout. No workflow/resource-guard changes.
+The human RH proof is still incomplete.
+
+RESUME HERE: audit the new short spanning theorem (trace factor 2,
+powered-adele determinant and Gram exponent); continue the lifted
+chain height/single-stage theta transfer. For B expand the actual
+absolute-amplitude tail majorant and rational boxed-count injection;
+for C audit reciprocity-to-isotropy at unseen-class/RowBalanced,
+retaining chart construction, local safety and global comparison.
