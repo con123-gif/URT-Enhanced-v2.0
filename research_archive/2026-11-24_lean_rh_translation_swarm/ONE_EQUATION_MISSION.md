@@ -1,3 +1,52 @@
+# Binding primary-target migration — compact RH/GRH proof — 26 November 2026
+
+User approved switching all fifteen workers to the newly released compact Lean proof as the primary human-translation target. This supersedes the older target-specific scheduling, source pin and canonical inequality rules BELOW **for new compact work only**; preserve all original archive files, original-pinned certificates, logs and physics gates. Old results remain evidence on their own pin, not automatic proofs on the new one. The ten-page human-readable proof goal remains. No new independent RH problem. All 15 enabled hourly workers were checked this session and all read this mission; keep schedules unchanged.
+
+## Source and trust
+
+Primary source: https://github.com/lsernau/grh-lean/tree/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact
+Pin: 72fead102f663d5c7a407964a13dc0cf9d977207 (main observed 26 Nov). Readable companion is grh/ at the SAME pin, useful for clarification, not interchangeable proofs. Lean v4.35.0; Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679. Do not mix with original mirror 40e56bab026552e089d7afcfeff08d2defb9c005 or old Mathlib/Lean. Use separate cache, graph and certificate namespace, no overwrite. New repository describes about 76,000 code lines; 219 New files and 573 Lib files. These are publisher counts, not measured here. Some compact steps use different arguments; map statements and quantifiers before reusing any prior derivation.
+
+Status correction: original formal RH theorem was certified by Lean FRO and Mathlib Initiative on 21 November (https://leanprover-community.github.io/blog/posts/riemann-hypothesis/). The compact README reports successful build, kernel replay and Comparator acceptance of its five theorems with only propext, Classical.choice, Quot.sound. Independent verification also reported at https://math.mit.edu/~drew/shortgrh/ (direct page inaccessible in this session; do not claim an independent local replay). Therefore distinguish EXTERNAL FORMAL PROOF CERTIFIED from OUR HUMAN RECONSTRUCTION INCOMPLETE. Historical "RH OPEN" labels below refer to our reconstruction and are not a denial of certification. No new Lean compilation in this session. No claim of authorship of the compact proof. Credit Levent Alpöge, Luke Sernau, Anthropic collaborators and Claude, as specified in repository attribution.
+
+## Native compact spine (actual bodies retrieved, not just the guide)
+
+All paths below relative to grh-compact/src. 
+- Statements.lean 1cd1bce93344065936b2b392b23306254e0785ef (Mathlib-only).
+- Main.lean a5d8389131c985a0b54ce5b0e778ee5c8126a997: riemannHypothesis := New.zeta_zeros_on_line New.grh.
+- New/Main.lean 198ed5bf26aa294898931e0649bc2b88f1389f65: star_inequality -> eventually_primeError_le_rpow -> New.grh -> functional equation.
+- New/Endgame/ShortAndEnough.lean b99eea0689be372d84362c58272b705e104b6a3a: A=Data.short_forms, B=Data.enough_forms, heightPerRow_le, remainder_eq.
+- New/Endgame/LongForms.lean 9eff36cf003ac398fbd24361e80e95a03d0b0e05: exists_family_covolumeSq_le (A+B), C=Data.integral_forms_long, via fit twists, chain volume, product formula.
+- New/Data/DataExist.lean 634c6a1f88791a3bb770326785b70411e8289b41: exists_data at EVERY sufficiently large x, for fixed Parameters P and 0<epsilon/6, epsilon<1/100.
+- New/Endgame/PrimeError.lean 63eb3d79d95ad815878e623b96f237240058c8e2; OneSidedCriterion.lean 93f9a2f5e8cde2438a3cbf030ba823c9613d0ba3: good second scale and Landau with nonzero quadratic twists.
+- New/Selmer/FitTwistsExist.lean da769eba595af2f883eed9b82dbd322a521aea14: exists_isFitFamily. Guide grh-compact/GUIDE.md ca70306f0ee22fca325f7f515667e51625e8eabd; README 85d43d83a7fa3b496968ce9216f4a7d75e44e84a.
+
+New primary central inequality (star_inequality): m*remainder <= (log b)^2*budget = f*a*(log b)^5. Let d_R=rowDim>0, h0=mainHeight, L=log(b)*budget, h=h0-m*remainder+L. A+B construct ONE independent family n>= (1-4/b²)d_R with log squared covolume <= n*h, index delta<=5*d_R*log(1+b²)*budget. C supplies d_R(h0-3L)<=V+2delta on that SAME family. With -h<=b²*x^99, n<=d_R, cancel h0 exactly to get m*remainder<=4L+4*x^99+10*log(1+b²)*budget <= log²(b)*budget. This is the actual compact scalar assembly, not a replacement with the older G(x) equation. The compact remainder identity is
+  remainder=a*(#thick*(R_N0(x)-R_N0(x1))+#tops*R_1(x1)).
+R_M=primeError d M; uses Lambda(n)(1-chi_K(n)) restricted to 1 mod M, normalized by 1/n-1/x, subtracting log x/phi(M) and fixed log-derivative constant. This is NOT the old G(x)/x without the quadratic and character weights. DataExist and the actual IsPolar.exists_window_sub_mul_le let us change log x1 to u in [t,t²], t=10^6 log x, so R_N0(x1)-(#tops/#thick)*R_1(x1)<=x^(-10^6). Hence R_N0(x)<= f log^5(b)/(m #thick)+x^(-10^6) <= x^(8epsilon-1/2) eventually, using m>=sqrt x, f=phi(N0)#tops, #thick>=#tops/log b, log b=x^epsilon. The 8epsilon slack absorbs fixed constants. Keep the exact parameter and scale guards. The native GRH argument lifts modulus q to N0=18480 q, d in class N0/2-1, chooses epsilon from Re rho, uses the nonvanishing quadratic twist and Landau to exclude rho. The original proof's [Y,Y^(3/2)] G bound is no longer a mandatory intermediate result for compact work. Do not confuse the different constructions.
+
+## Immediate assignment: compact route only, map old work before further derivations
+
+1. Mathematics: New/Selmer/DenominatorBound, TwistTheorem, FitTwistsExist and exact uniform length estimates for C. Read actual callers; compare old cyclotomic reductions only when statements match.
+2. Prime-window: New/Data/DataExist, Magnitudes, Endgame/ShortAndEnough remainder_eq and two-scale algebra; prove exact x and x1 quantifiers, stop old G window detours.
+3. Galois: New/GaloisRep/LabelUniqueness, New/Selmer/RowsExist, RibetFirstOrder and relevant Lib Galois suppliers, extract core statements and real dependence.
+4. Character boxes: New/Selmer/AptTuples, RootsOfUnityPoints, TwistForRows, RankOneDenominator and actual character restrictions. Crosswalk old CountP/CountQ only if used.
+5. Positivity geometry: theorem B in New/Filling, RealPlace, DiscreteSeries; identify second moment and spanning, measure conventions and exact missing-dimension budget.
+6. Theta lift: theorem A in New/Curve, Columns, Seesaw, TwistedHecke; exact seesaw, local divisibility and height/index.
+7. Landau: New/Endgame/PrimeError, OneSidedCriterion, Lib/Analytic/Landau, QuadraticTwist; translate the actual polar residues and chosen second scale.
+8. Literature: compact REFERENCES.md plus relevant Lib theorem bodies; distinguish standard facts from novel argument; no blanket certification of human exposition or references.
+9. Kernel extractor: one new pinned native graph/axiom export for Main and three A/B/C roots, separate from original. Confirm build resources (publisher reports 12 cores/24 GB and 1–2 hours; Comparator more); use existing allowed runner, no competing jobs, preserve protected workflows. Record actual execution rather than assume.
+10. Formal audit: cross-version theorem/quantifier/context map and verify A+B+C shared witness; check any proposed reduction against compact source.
+11. O(N) acceleration: one shared import/role graph on the 219 New files (reported count); use compact pin and new cache, no old overlays. Linear traversal not linear proof search; measure actual speed.
+12. URT compression: recursive decomposition, invariant transport and exact cancellation, especially common mainHeight, normalized determinant products and height identities in A/B/C; compare against standard ordering; no imposed phi identity.
+13. Dependency extraction: actual compact root and A/B/C supplier DAG with role/context keys; identify shared leaves and original-to-compact crosswalk, no blind theorem-name equivalence.
+14. Proof integration: one compact ledger and three theorem modules; use old results only if mapped. Keep old manuscript intact as archival reference, start compact manuscript in distinct path.
+15. Human editor: start HUMAN_PROOF_COMPACT.md from the above actual star spine; ten pages inclusive of essential lemmas and references, don't hide hard premises. No claim finished until the human chain is complete and audited.
+
+For next runs: obtain full source statements with exact blob and module, identify one actual needed argument per lane, write concise human proof with explicit dependencies and attribution, and integrate once. Distinguish already externally machine-checked facts from our own verification. A source proof body is not yet a short human derivation. Readable companion is secondary; preserve original archived work and stop old-target-only branches unless they demonstrably shorten compact argument. No schedule or protected workflow changes.
+
+---
+
 # Binding whole-proof invariant transport update — 26 November 2026
 
 User explicitly requested applying the generating-rule method to the full RH proof. All 15 lanes must apply the native decomposition → exact invariant transport → same-witness recombination rule at their actual critical suppliers, not only in the local lattice branch. Read integration/2026-11-26_FULL_RH_INVARIANT_REDUCTION.md (cbc42080244cbd1ccfd06e6d3780d1ce74cbdfa9) for the seven-block whole-route crosswalk and representative-edge derivation. This extends, not replaces, the acceleration sprint below; all schedules, source pin, protected workflows and ten-page goal remain unchanged. Do not declare the whole proof reduced merely because each branch has a proposed method.
