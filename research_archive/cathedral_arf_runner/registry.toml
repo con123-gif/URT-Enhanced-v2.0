@@ -3554,3 +3554,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+[[check]]
+id = "research.rh_compact_lattice_convergence_scalars"
+stage = "research"
+claim = "independent"
+gating = false
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_compact_lattice_convergence.py"
+timeout = 60

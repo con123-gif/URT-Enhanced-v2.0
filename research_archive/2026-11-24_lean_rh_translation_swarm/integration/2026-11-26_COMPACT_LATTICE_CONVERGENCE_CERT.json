@@ -1,0 +1,523 @@
+{
+  "scope": "exact scalar inequalities and optional pinned source byte checks",
+  "source_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "native_Lean_replay": false,
+  "human_geometry_independently_audited": false,
+  "RH_proof_verified": false,
+  "substitution": "n=1+u, k=512000*n^9+v, u,v,s>=0",
+  "certificates": [
+    {
+      "name": "class_discriminant_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 127939000
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": 127427999
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": 250
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            1,
+            1
+          ],
+          "coefficient": 249
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 1151940000
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            1
+          ],
+          "coefficient": 1147332000
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 4608000000
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            1
+          ],
+          "coefficient": 4589568000
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 10752000000
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            1
+          ],
+          "coefficient": 10708992000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 16128000000
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            1
+          ],
+          "coefficient": 16063488000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": 16128000000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            0,
+            1
+          ],
+          "coefficient": 16063488000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            0,
+            0
+          ],
+          "coefficient": 10752000000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            0,
+            1
+          ],
+          "coefficient": 10708992000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            0,
+            0
+          ],
+          "coefficient": 4608000000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            0,
+            1
+          ],
+          "coefficient": 4589568000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": 1152000000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            0,
+            1
+          ],
+          "coefficient": 1147392000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            0,
+            0
+          ],
+          "coefficient": 128000000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            0,
+            1
+          ],
+          "coefficient": 127488000
+        }
+      ]
+    },
+    {
+      "name": "full_to_cut_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 786426367988
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": 3071989
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": 3
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 15728577023946
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": 33791976
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            2,
+            0
+          ],
+          "coefficient": 6
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 148635322367904
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            1,
+            0
+          ],
+          "coefficient": 165887976
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 882375671807924
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            1,
+            0
+          ],
+          "coefficient": 479231988
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": 3689936704511976
+        },
+        {
+          "powers_u_v_s": [
+            4,
+            1,
+            0
+          ],
+          "coefficient": 903168000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": 11551109704704000
+        },
+        {
+          "powers_u_v_s": [
+            5,
+            1,
+            0
+          ],
+          "coefficient": 1161216000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            0,
+            0
+          ],
+          "coefficient": 28075618314240000
+        },
+        {
+          "powers_u_v_s": [
+            6,
+            1,
+            0
+          ],
+          "coefficient": 1032192000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            0,
+            0
+          ],
+          "coefficient": 54226055706624000
+        },
+        {
+          "powers_u_v_s": [
+            7,
+            1,
+            0
+          ],
+          "coefficient": 626688000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": 84467513092608000
+        },
+        {
+          "powers_u_v_s": [
+            8,
+            1,
+            0
+          ],
+          "coefficient": 248832000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            0,
+            0
+          ],
+          "coefficient": 107061705677312000
+        },
+        {
+          "powers_u_v_s": [
+            9,
+            1,
+            0
+          ],
+          "coefficient": 58368000
+        },
+        {
+          "powers_u_v_s": [
+            10,
+            0,
+            0
+          ],
+          "coefficient": 110885338791936000
+        },
+        {
+          "powers_u_v_s": [
+            10,
+            1,
+            0
+          ],
+          "coefficient": 6144000
+        },
+        {
+          "powers_u_v_s": [
+            11,
+            0,
+            0
+          ],
+          "coefficient": 93852794812416000
+        },
+        {
+          "powers_u_v_s": [
+            12,
+            0,
+            0
+          ],
+          "coefficient": 64654147577856000
+        },
+        {
+          "powers_u_v_s": [
+            13,
+            0,
+            0
+          ],
+          "coefficient": 35936796672000000
+        },
+        {
+          "powers_u_v_s": [
+            14,
+            0,
+            0
+          ],
+          "coefficient": 15882780672000000
+        },
+        {
+          "powers_u_v_s": [
+            15,
+            0,
+            0
+          ],
+          "coefficient": 5454692352000000
+        },
+        {
+          "powers_u_v_s": [
+            16,
+            0,
+            0
+          ],
+          "coefficient": 1403781120000000
+        },
+        {
+          "powers_u_v_s": [
+            17,
+            0,
+            0
+          ],
+          "coefficient": 254803968000000
+        },
+        {
+          "powers_u_v_s": [
+            18,
+            0,
+            0
+          ],
+          "coefficient": 29097984000000
+        },
+        {
+          "powers_u_v_s": [
+            19,
+            0,
+            0
+          ],
+          "coefficient": 1572864000000
+        }
+      ]
+    }
+  ],
+  "authenticated_sources": [
+    {
+      "path": "New/Filling/GramLiouville.lean",
+      "git_blob": "e0e55155b72a00bb6c11d618bf1961e52a4e696c"
+    },
+    {
+      "path": "New/Filling/NearTerms.lean",
+      "git_blob": "bd8a969f8d1bda48ca0468c28a8a62bc78e280ce"
+    },
+    {
+      "path": "New/Filling/BlockBound.lean",
+      "git_blob": "6c68e80e3b1ea2b7983696716305493a37f2b1fd"
+    },
+    {
+      "path": "New/Filling/AmplitudeSums.lean",
+      "git_blob": "832e25af346bbbbdabdbec205b0e7f833170e0a1"
+    },
+    {
+      "path": "New/Filling/BoxPartition.lean",
+      "git_blob": "53f11966247a892d94cf688e8b366e887a92f641"
+    },
+    {
+      "path": "New/Filling/StableCells.lean",
+      "git_blob": "236a41919b3697e1e30c4be840140f6452642599"
+    },
+    {
+      "path": "New/Filling/Setup.lean",
+      "git_blob": "622e7ebe5c04b7ae87652e460762da7fb2e40727"
+    },
+    {
+      "path": "New/Filling/LatticeChart.lean",
+      "git_blob": "5c87f908fd39bf1c6b11ffe37af9dd5f764c782c"
+    },
+    {
+      "path": "New/Filling/LinkPairing.lean",
+      "git_blob": "a802533ca5a385d6f44c3254f1a4d600b28fc416"
+    },
+    {
+      "path": "New/RealPlace/VolumeKernel.lean",
+      "git_blob": "fc115f79a99192fc8ea0e72c2caa0bf2546b5cf0"
+    },
+    {
+      "path": "Lib/Adelic/QuotientMeasure/Packing.lean",
+      "git_blob": "498aaa596eb8176d0ee865c61f94e8391a478f7a"
+    },
+    {
+      "path": "Lib/Adelic/Reduction/MinkowskiSecond.lean",
+      "git_blob": "cc0f8a639dfe23caf2ca91b348a09628e60f814e"
+    },
+    {
+      "path": "Lib/General/Algebra/LatticeComplement.lean",
+      "git_blob": "2af8405ff10f2d3fd924d048627b67397f0c5960"
+    },
+    {
+      "path": "Lib/Adelic/Hecke/ClassMean.lean",
+      "git_blob": "b9d642228711dcfb20687f0b2579fa8ff99838f3"
+    }
+  ],
+  "guard_negative_controls_detected": true
+}

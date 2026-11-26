@@ -923,6 +923,13 @@ commit as your result.
 - Q159 first inner job failed an absolute floating-point Hermiticity check at NS5 despite rel defect3e−13; corrected relative test Q159b passed and saved full JSON. No physical photon α claimed; proceed Q160 from primitive all-five/H64/24 positive transfer, not historical ARF fitting.
 
 ## Log
+
+### 2026-11-26 11:26 UTC — GPT lead — RH geometric primitive reconstruction
+- Task: User-directed compact RH reconstruction; actual B lattice/saturation/convergence suppliers, preserving the shared A/B/C witness. Source pin 72fead102f663d5c7a407964a13dc0cf9d977207.
+- Result: SOURCE-MATCHED HUMAN DERIVATION / REVIEW — HUMAN RECONSTRUCTION OPEN. Derived the actual saturation divisor through the common-link displacement and finite saturated-lattice quotient; primitive Gram-index inequality; Minkowski/packing subspace discriminant sum and marked-row class average. Integrated at manuscript §8. Convergence/cutoff aggregation independently agrees with peer 15bb1dae under the retained native majorant/frame-count hypotheses.
+- Evidence: integration/2026-11-26_COMPACT_LATTICE_SATURATION_AND_CONVERGENCE.md; local verify_compact_lattice_convergence.py exited 0, two unbounded-domain coefficient certificates (22 and 33 terms), fourteen authenticated source blobs. Existing RUN53_ACTUAL_REPLAY_RECEIPT.mjs actually executed against state-branch outputs: 19 authenticated files, ten native and four peer checks, six negative controls; scope remains historical RUN28 only, not a new Lean run. Registered scalar check; CI pending.
+- Limitations: No native verification or independent human audit of the new geometric arguments; retain actual Bessel majorant/boxed-frame suppliers, pointwise classSize/pairInvariant and local Fourier/shell/descent primitives. A and C remain open; no physical gate or protected workflow changed.
+- Next step: actual local Fourier-modulus and joint-law descent at New.RealPlace.LocalTheorem, rather than another global determinant assembly.
 ### 2026-11-23 07:19 UTC — GPT — Gate Q161cl — Q161ek native Q125 SU2 Berry holonomy
 - Task: Q161ej [compute], exact native Q125 four-link holonomy trace-square across all 480 squares.
 - Result: THEOREM — CLOSED INTERNALLY / PHYSICAL IDENTIFICATION PENDING; Q161da and Q161du OPEN.

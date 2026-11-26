@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""Exact scalar certificates and optional source authentication.
+
+These certificates prove the two polynomial inequalities used by the human
+geometric derivation on their full domain. They do not verify lattice geometry,
+integration arguments, caller substitution, or RH. No Lean replay is performed.
+"""
+import argparse
+from collections import defaultdict
+import hashlib
+import json
+from pathlib import Path
+
+PIN = "72fead102f663d5c7a407964a13dc0cf9d977207"
+SOURCES = {
+    "New/Filling/GramLiouville.lean": "e0e55155b72a00bb6c11d618bf1961e52a4e696c",
+    "New/Filling/NearTerms.lean": "bd8a969f8d1bda48ca0468c28a8a62bc78e280ce",
+    "New/Filling/BlockBound.lean": "6c68e80e3b1ea2b7983696716305493a37f2b1fd",
+    "New/Filling/AmplitudeSums.lean": "832e25af346bbbbdabdbec205b0e7f833170e0a1",
+    "New/Filling/BoxPartition.lean": "53f11966247a892d94cf688e8b366e887a92f641",
+    "New/Filling/StableCells.lean": "236a41919b3697e1e30c4be840140f6452642599",
+    "New/Filling/Setup.lean": "622e7ebe5c04b7ae87652e460762da7fb2e40727",
+    "New/Filling/LatticeChart.lean": "5c87f908fd39bf1c6b11ffe37af9dd5f764c782c",
+    "New/Filling/LinkPairing.lean": "a802533ca5a385d6f44c3254f1a4d600b28fc416",
+    "New/RealPlace/VolumeKernel.lean": "fc115f79a99192fc8ea0e72c2caa0bf2546b5cf0",
+    "Lib/Adelic/QuotientMeasure/Packing.lean": "498aaa596eb8176d0ee865c61f94e8391a478f7a",
+    "Lib/Adelic/Reduction/MinkowskiSecond.lean": "cc0f8a639dfe23caf2ca91b348a09628e60f814e",
+    "Lib/General/Algebra/LatticeComplement.lean": "2af8405ff10f2d3fd924d048627b67397f0c5960",
+    "Lib/Adelic/Hecke/ClassMean.lean": "b9d642228711dcfb20687f0b2579fa8ff99838f3",
+}
+
+
+class Polynomial:
+    """Integer polynomials in (u,v,s), with explicit coefficient expansion."""
+    def __init__(self, value=0):
+        self.terms = {k: v for k, v in value.items() if v} if isinstance(value, dict) else (
+            {(0, 0, 0): value} if value else {})
+
+    @staticmethod
+    def coerce(value):
+        return value if isinstance(value, Polynomial) else Polynomial(value)
+
+    def __add__(self, other):
+        out = defaultdict(int, self.terms)
+        for k, v in self.coerce(other).terms.items():
+            out[k] += v
+        return Polynomial(dict(out))
+
+    __radd__ = __add__
+
+    def __neg__(self):
+        return Polynomial({k: -v for k, v in self.terms.items()})
+
+    def __sub__(self, other):
+        return self + (-self.coerce(other))
+
+    def __rsub__(self, other):
+        return self.coerce(other) + (-self)
+
+    def __mul__(self, other):
+        out = defaultdict(int)
+        for a, x in self.terms.items():
+            for b, y in self.coerce(other).terms.items():
+                out[tuple(i+j for i, j in zip(a, b))] += x*y
+        return Polynomial(dict(out))
+
+    __rmul__ = __mul__
+
+    def __pow__(self, exponent):
+        assert isinstance(exponent, int) and exponent >= 0
+        out = Polynomial(1)
+        for _ in range(exponent):
+            out = out*self
+        return out
+
+    def value(self, u, v, s):
+        return sum(c*u**a*v**b*s**d for (a, b, d), c in self.terms.items())
+
+    def nonnegative_certificate(self, name):
+        assert self.terms and all(c >= 0 for c in self.terms.values()), name
+        return {"name": name, "domain": "u,v,s >= 0", "coefficient_method":
+                "exact integer polynomial expansion; every coefficient nonnegative",
+                "terms": [{"powers_u_v_s": list(k), "coefficient": c}
+                          for k, c in sorted(self.terms.items())]}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--source-root", type=Path,
+                    help="Pinned grh-compact/src; optional, no network or build")
+    ap.add_argument("--out", type=Path)
+    args = ap.parse_args()
+    u, v, s = (Polynomial({tuple(int(i == j) for i in range(3)): 1}) for j in range(3))
+    n = 1+u
+    k = 512000*n**9+v
+    r = k+2*n-1
+    # Exactly 1000 times the difference in equation (9).
+    lattice = 250*k*(s+1)-1000-60000*n*(s+1)-(k+1)*s
+    # Exactly the remaining exponent in equation (17), less the claimed 1.
+    amplitude = r**3-k**3-12*r*n**3-2*k-1
+    certificates = [lattice.nonnegative_certificate("class_discriminant_exponent"),
+                    amplitude.nonnegative_certificate("full_to_cut_exponent")]
+    # Check the expansion arithmetic against independent direct integer formulas.
+    for nn, vv, ss in [(1, 0, 0), (2, 3, 1), (7, 11, 5), (100001, 23, 1000)]:
+        kk = 512000*nn**9+vv
+        rr = kk+2*nn-1
+        assert lattice.value(nn-1, vv, ss) == (
+            250*kk*(ss+1)-1000-60000*nn*(ss+1)-(kk+1)*ss)
+        assert amplitude.value(nn-1, vv, ss) == rr**3-kk**3-12*rr*nn**3-2*kk-1
+    # Negative controls: the guards are necessary for these proposed estimates.
+    assert 250*1-1000-60000*1 < 0
+    assert 2**3-1**3-12*2-2*1-1 < 0
+    authenticated = []
+    if args.source_root:
+        for name, expected in SOURCES.items():
+            data = (args.source_root/name).read_bytes()
+            actual = hashlib.sha1(b"blob "+str(len(data)).encode()+b"\0"+data).hexdigest()
+            assert actual == expected, (name, actual, expected)
+            authenticated.append({"path": name, "git_blob": actual})
+    result = {"scope": "exact scalar inequalities and optional pinned source byte checks",
+              "source_commit": PIN, "native_Lean_replay": False,
+              "human_geometry_independently_audited": False, "RH_proof_verified": False,
+              "substitution": "n=1+u, k=512000*n^9+v, u,v,s>=0",
+              "certificates": certificates, "authenticated_sources": authenticated,
+              "guard_negative_controls_detected": True}
+    if args.out:
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(json.dumps(result, indent=2)+"\n")
+    print(json.dumps({"scalar_certificates": len(certificates),
+                      "nonnegative_coefficients": [len(x["terms"]) for x in certificates],
+                      "authenticated_sources": len(authenticated),
+                      "scope": result["scope"], "native_Lean_replay": False}))
+
+
+if __name__ == "__main__":
+    main()
