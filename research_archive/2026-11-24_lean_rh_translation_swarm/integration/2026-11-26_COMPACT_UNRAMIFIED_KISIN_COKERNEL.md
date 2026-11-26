@@ -9,6 +9,13 @@ Pin lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207,
 grh-compact/src, Lean 4.35.0, Mathlib
 56a005855ea17e0b0958f73ec801ae140b0a1679.
 
+Independent partial audit: 129d788fbbd30b331faaf99d14e4429e622c101b,
+audit/2026-11-26_COMPACT_TAME_COKERNEL_DESCENT.lean, section 5,
+checks and agrees with the scalar arguments (K4)-(K8), including
+q=0, A=max(a,m), and the common-modulus Nakayama discipline.
+It does not independently replay the frame/depth/coordinate
+suppliers or certify this whole human derivation.
+
 | Actual source | Role | Blob |
 |---|---|---|
 | New/Lift/CokernelKillers.lean | lift ideals, factorial descent, unramified annihilator | ba8a479cecd29393b86e3f320991c20baf108487 |

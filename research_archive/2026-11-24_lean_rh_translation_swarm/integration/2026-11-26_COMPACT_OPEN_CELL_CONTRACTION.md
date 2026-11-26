@@ -6,6 +6,17 @@ and collaborators, lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207,
 grh-compact/src/, Lean 4.35.0, Mathlib
 56a005855ea17e0b0958f73ec801ae140b0a1679.
 
+Active-route update: positivity RUN56, commit
+5a7952de01b6d1cbd1798cbd640edd41ba4ffd56, independently reconstructs
+the native support cancellation with T=R^5, using the ORIGINAL
+Sobolev exponent 2000n^2. The manuscript now uses that shorter route.
+The enlarged-tube/sharper-Sobolev construction below remains a
+supporting alternative, not a required active premise. RUN56 also
+independently audits the exact global packet cancellation O11/O12
+and supplies the native leading-minor cutoff floor. Its audit
+retains the packet premise and the Haar/tube/Schur inputs; it does
+not certify this entire note or all of B.
+
 This proves the existential interface BesselSystem.open_cell. It uses
 the SAME gamma, full Bessel function, formal degree, Haar and quotient
 measures as the caller. We choose a larger auxiliary compact tube and

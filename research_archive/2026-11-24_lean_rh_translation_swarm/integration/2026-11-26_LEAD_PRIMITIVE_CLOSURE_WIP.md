@@ -397,3 +397,49 @@ RESUME HERE: SparseThickLetters actual cut-window/long-gap profiles,
 including the sparse and two-size consumers; audit the now connected
 cokernel -> points -> walk -> cup -> few-low length chain. Integrate
 recent peak/glue/Galois/tame/Tate-duality peers with exact hypotheses.
+
+Thirteenth connected result after 6f9e2ef0cfa75280adc324644daa261eab4fa684:
+2026-11-26_COMPACT_TAME_TENSOR_AND_CALLER.md supplies the retained
+tensor polynomial and actual tame caller guard/payment. Multiplication
+by xy in the monic quotient tensor algebra gives the degree product;
+Tate dual at inverse inertia uses the SAME polynomial, with no
+unit-constant-term assumption. At p=g_i the original data yield
+b1>=D.r^18, center<=2b1, exact guard<=3b1<24b<b^10<=p, and the
+original loss pays 2E for row AND string (xi=D.t). This retains
+129d788f's actual tame Kisin descent and common correction.
+
+Integrated latest peers at actual callers: 5a7952de independently
+audits packet cancellation and supplies the smaller native T=R^5
+support via exact section-column cancellation. The active B proof
+now uses original Sobolev 2000n^2; larger T=R^18 and sharper 500n^2
+route retained only as an alternative. Native leading minor cutoff
+also removes the separate Hadamard premise from the active path.
+No whole B audit or proof of packet premise claimed.
+
+129d788f independently checks unramified K4-K8 arithmetic/common
+modulus, not the whole integral-Hodge chain; recorded on that note.
+77a7f2fc gives direct finite Tate duality/Euler cocycle defect transfer
+with correct orientation. This lead opened the exact Milne/Bellaiche
+primary PDFs and checked named theorem statements/hypotheses.
+Integral saturation remains source-proved, not inferred from rational
+dimension. 20cc89bf gives actual twist-independent glued lattice and
+unique finite normalization. 98cc1e90 peak/graph and 02cf3869 actual
+operator-annihilator/base-change descent integrated with retained
+deep local/archimedean prerequisites.
+
+No new Lean execution or independent audit of all human replacements.
+The cochain exact algebra check and earlier scalar certificates retain
+their stated scopes; native RUN29 receipt still partial.
+
+RESUME HERE: actual SparseThickLetters cut-window and long-gap point
+profiles for small-prime/two-size cases, including all chart guards.
+Then audit C's connected local estimates against the same global
+row/twist determinants. A index/evaluation and B Gaussian/near-one/
+packet/Siegel mass prerequisites remain; do not declare whole RH.
+
+Executed additional exact scalar check for the tame caller:
+four polynomials after D.r=3+u have 19,19,17,7 nonnegative
+coefficients and positive constants (center, full guard, E bound,
+kappa bound). Universal r>=3 arithmetic only; not a new native run
+or aggregate change to the earlier twelve B scalar certificates.
+The reproduction code is in the tame tensor/caller note.
