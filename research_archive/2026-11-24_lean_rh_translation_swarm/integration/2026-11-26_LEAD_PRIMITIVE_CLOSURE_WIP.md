@@ -931,3 +931,40 @@ chain height/single-stage theta transfer. For B expand the actual
 absolute-amplitude tail majorant and rational boxed-count injection;
 for C audit reciprocity-to-isotropy at unseen-class/RowBalanced,
 retaining chart construction, local safety and global comparison.
+
+
+### 26 November — review existing majorant, finish absolute cut-error composition
+
+Short-column/audit checkpoint 8bf73512f19cfc983d134182174e761b73797dc9
+was published and fetched back; subsequent integration 49e4380d
+preserves those changes and adds the amplitude/rank/CM caller note.
+Read that entire note and the actual BesselCut, HasPeakAt,
+IsCutPair, AmplitudeSums and TailBounds/RegularRepL2 bodies.
+
+The retained majorant already has a full worker derivation in
+Landau RUN54 / b18678e2, and tail integral in RUN58 / 133ff5b3.
+Do not duplicate it. New COMPACT_MAJORANT_TO_CORRELATION_AUDIT.md
+reviews the finite comparison Phi<=mu(O_y), the SAME normalized
+mass/majorant and peak cancellation, all local exponents, and
+the integration with weighted boxed-frame packing. The actual
+guards give deg J C^2<=b^(99r^2) and normalized mass budget
+|I|b^(2r^3). The mismatch factor is b^(-3r^3 f).
+
+Composed at AmplitudeSums, Tonelli gives the finite absolute
+bound with exponent 12frn^3+2fr^3. Product-coordinate bound
+and one mismatching tensor factor give the EXACT full-cut
+allowance (nu/2)b^(-k^3 f), including factor 2 and zero-mass
+case. Checked the last inequality symbolically: r<=2k,
+k>=16n^3, k>=3 give gap >=3k^2/2-2k>=1.
+No finite simulation or extra normalization. Integrated in main
+at RUN61's actual sharp correlation and top-floor caller.
+
+Status source-level mathematical REVIEW/AGREE conditional on
+the named actual peak/decay/Haar and geometry inputs; no new
+native PASS or assertion that all B primitives are certified.
+No protected edits. git diff --check before publication.
+RESUME HERE: use the now written majorant and weighted separation,
+do not list their construction as unattempted. Audit upstream
+actual peak/decay, pointwise classSize/pairInvariant and one-vector
+Siegel-Weil; continue A chain-height/single-stage theta transfer
+and C safety/Ext/global comparison. Human RH remains incomplete.
