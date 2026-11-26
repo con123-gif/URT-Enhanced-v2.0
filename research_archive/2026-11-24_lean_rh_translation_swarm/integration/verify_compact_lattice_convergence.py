@@ -27,6 +27,15 @@ SOURCES = {
     "Lib/Adelic/Reduction/MinkowskiSecond.lean": "cc0f8a639dfe23caf2ca91b348a09628e60f814e",
     "Lib/General/Algebra/LatticeComplement.lean": "2af8405ff10f2d3fd924d048627b67397f0c5960",
     "Lib/Adelic/Hecke/ClassMean.lean": "b9d642228711dcfb20687f0b2579fa8ff99838f3",
+    "New/RealPlace/FlatCharts.lean": "cc98bd4c6c1bf499ec8298a4476f0715e9c3b2f4",
+    "New/RealPlace/FloorKernels.lean": "594b1553ed02ba5c074180fb32d0f5215918ad52",
+    "New/RealPlace/WeightPlancherel.lean": "65619443ca5867bf45af038448a16dc1262103fd",
+    "New/RealPlace/LocalTheorem.lean": "671350f97491467f09b80eafa0df13685dd8ddc6",
+    "New/RealPlace/LevelGauge.lean": "05b4a710e4192b2f3d289a8e52161a6d12a2866e",
+    "New/RealPlace/ComplexShells.lean": "351cfdf7fa54238f79b1b950c3532feef1f74f53",
+    "New/RealPlace/ComplexGauge.lean": "86c2d26bfaf34292de7d1e79c1634b020b26c1f3",
+    "Lib/DiscreteSeries/Bruhat/ComplexPlace.lean": "74d2fd4581e30ba76a2c6dbd7604848bf7e6f3d0",
+    "Lib/DiscreteSeries/Bruhat/BigCell.lean": "da06dcfda1a1401b8ad51f94649da9b760907a87",
 }
 
 
@@ -98,8 +107,12 @@ def main():
     lattice = 250*k*(s+1)-1000-60000*n*(s+1)-(k+1)*s
     # Exactly the remaining exponent in equation (17), less the claimed 1.
     amplitude = r**3-k**3-12*r*n**3-2*k-1
+    fourier = 1000000*n**3 - 99*n*(60*n**2+12) - 99*n*(99*n**2+12)
+    inverse_moment = 198*n*(s+1) - (148+2*s+9*n+6*n*s)
     certificates = [lattice.nonnegative_certificate("class_discriminant_exponent"),
-                    amplitude.nonnegative_certificate("full_to_cut_exponent")]
+                    amplitude.nonnegative_certificate("full_to_cut_exponent"),
+                    fourier.nonnegative_certificate("character_floor_fibre_exponent"),
+                    inverse_moment.nonnegative_certificate("complex_gauge_inverse_moment_exponent")]
     # Check the expansion arithmetic against independent direct integer formulas.
     for nn, vv, ss in [(1, 0, 0), (2, 3, 1), (7, 11, 5), (100001, 23, 1000)]:
         kk = 512000*nn**9+vv
@@ -107,6 +120,10 @@ def main():
         assert lattice.value(nn-1, vv, ss) == (
             250*kk*(ss+1)-1000-60000*nn*(ss+1)-(kk+1)*ss)
         assert amplitude.value(nn-1, vv, ss) == rr**3-kk**3-12*rr*nn**3-2*kk-1
+        assert fourier.value(nn-1, vv, ss) == (
+            1000000*nn**3-99*nn*(60*nn**2+12)-99*nn*(99*nn**2+12))
+        assert inverse_moment.value(nn-1, vv, ss) == (
+            198*nn*(ss+1)-(148+2*ss+9*nn+6*nn*ss))
     # Negative controls: the guards are necessary for these proposed estimates.
     assert 250*1-1000-60000*1 < 0
     assert 2**3-1**3-12*2-2*1-1 < 0

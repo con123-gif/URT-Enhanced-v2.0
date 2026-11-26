@@ -10,7 +10,8 @@ Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`.
 It continues `6bdfdba6` (weighted count) and `0a45200e` (congruence-fibre
 injectivity), rather than repeating the global determinant argument.
 
-Throughout, use the SAME native filling datum S. Put R=O_hat_E, f=[E:Q]/2,
+Throughout, assume the native CMType E and StablyUnram E hypotheses and
+use the SAME native filling datum S. Put R=O_hat_E, f=[E:Q]/2,
 n=rho+1, k=dim X0, r=k+2n-1, b>=1000, and tau=b^(kf/4). All indices are
 cardinalities of the specified finite additive quotients. The native generalized
 index of a nonzero rational a is |Norm_(E/Q)(a)|; it is not its square root.
@@ -252,6 +253,12 @@ A(y)=prod_v A_v(y_v) and M=prod_v m_v(G),
 
     sum_(c',gamma) beta_c'(gamma^(-1)y) A(gamma^(-1)y)
         <= b^(12frn^3) M.                            (15)
+
+If any m_v(G)=0, its pointwise bound in (13) makes A_v identically zero,
+so the kernel and all these integrals are zero. Otherwise every local mass
+is positive and finite; (13) then makes each quotient integral of A_v
+finite. The products below therefore do not cancel an expression 0 times
+infinity.
 
 The original product cutoff integrates an invariant function with factor
 nu=unipCovolume, so integrating beta_c(y)A(y) times (15) gives

@@ -459,6 +459,84 @@
           "coefficient": 1572864000000
         }
       ]
+    },
+    {
+      "name": "character_floor_fibre_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 981883
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 2950401
+        },
+        {
+          "powers_u_v_s": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": 2952777
+        },
+        {
+          "powers_u_v_s": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": 984259
+        }
+      ]
+    },
+    {
+      "name": "complex_gauge_inverse_moment_exponent",
+      "domain": "u,v,s >= 0",
+      "coefficient_method": "exact integer polynomial expansion; every coefficient nonnegative",
+      "terms": [
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": 41
+        },
+        {
+          "powers_u_v_s": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": 190
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": 189
+        },
+        {
+          "powers_u_v_s": [
+            1,
+            0,
+            1
+          ],
+          "coefficient": 192
+        }
+      ]
     }
   ],
   "authenticated_sources": [
@@ -517,6 +595,42 @@
     {
       "path": "Lib/Adelic/Hecke/ClassMean.lean",
       "git_blob": "b9d642228711dcfb20687f0b2579fa8ff99838f3"
+    },
+    {
+      "path": "New/RealPlace/FlatCharts.lean",
+      "git_blob": "cc98bd4c6c1bf499ec8298a4476f0715e9c3b2f4"
+    },
+    {
+      "path": "New/RealPlace/FloorKernels.lean",
+      "git_blob": "594b1553ed02ba5c074180fb32d0f5215918ad52"
+    },
+    {
+      "path": "New/RealPlace/WeightPlancherel.lean",
+      "git_blob": "65619443ca5867bf45af038448a16dc1262103fd"
+    },
+    {
+      "path": "New/RealPlace/LocalTheorem.lean",
+      "git_blob": "671350f97491467f09b80eafa0df13685dd8ddc6"
+    },
+    {
+      "path": "New/RealPlace/LevelGauge.lean",
+      "git_blob": "05b4a710e4192b2f3d289a8e52161a6d12a2866e"
+    },
+    {
+      "path": "New/RealPlace/ComplexShells.lean",
+      "git_blob": "351cfdf7fa54238f79b1b950c3532feef1f74f53"
+    },
+    {
+      "path": "New/RealPlace/ComplexGauge.lean",
+      "git_blob": "86c2d26bfaf34292de7d1e79c1634b020b26c1f3"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Bruhat/ComplexPlace.lean",
+      "git_blob": "74d2fd4581e30ba76a2c6dbd7604848bf7e6f3d0"
+    },
+    {
+      "path": "Lib/DiscreteSeries/Bruhat/BigCell.lean",
+      "git_blob": "da06dcfda1a1401b8ad51f94649da9b760907a87"
     }
   ],
   "guard_negative_controls_detected": true
