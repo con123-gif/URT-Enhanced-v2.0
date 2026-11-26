@@ -689,3 +689,38 @@ exact-sequence kernels. Continue sparse-thick/two-size and few-low-jumps
 cut/cokernel suppliers at New/Lift/ExponentTheorems rather than redoing
 local Tate cancellation or scalar Ribet payment. Preserve pending A/B
 marked Hecke, absolute unfolding and comparison-period obligations.
+
+
+### 26 November — nonzero and zero Galois depth steps
+
+Rank/local Tate checkpoint c3b2fad4d91dcbe4edf5bb15bf067d1d2283f610
+was published and fetched back. Read the existing cut/profile audit and
+RUN57 ramified recursion before proceeding; that recursion was already
+integrated at main paragraph C: integrate independently audited lift-ideal
+recursion. Do not duplicate it or retain the obsolete OPEN wording.
+
+New COMPACT_GALOIS_DEPTH_OPERATOR.md derives the actual one-step
+operators previously retained by the existing finite cost composition.
+Weierstrass P(z)=GE and distinct fractional valuations in P'(theta z)
+give the chart different bound. Taylor and gz=eps^(p^a)z give the
+precise theta(G)*theta(omega0-1) identity; theta(G) need not be a unit.
+Strict LTE, including p=2 and negative n, gives the d+3a+v_p(n) cost
+and the scalar upsilon. At n=0 a finite p^(d+3a)-term rotation average
+is invariant mod E_a by the primitive-root geometric sum. No n=0
+division or implicit nonzero-depth formula.
+
+The same frame Galois divisibility and coordinate retraction give
+B=p^cost I-r(upsilon(g-1)/delta), with kernel correction for EVERY
+old profile. A separating-coordinate zero relation derives the actual
+valueField(a) membership at all Frobenius levels, retaining finite-height
+E factors. Fixed-coefficient transport preserves scalar congruences;
+first-order value-field difference raises depth n to n+1. The zero
+average handles depth zero separately. Integrated at the actual cut
+operator caller; finite compositions, cut counts and Ribet costs reused.
+
+Status HUMAN DERIVED / audit pending, not a new native theorem.
+No Lean or finite diagnostic run, no graph/axiom or protected changes.
+RESUME HERE: audit Taylor, valuation/zero-average and retraction
+contracts together, then complete the safety/Ext cup bridge and integrate
+the three exponent branches under their same third-side hypotheses.
+A/B and global reciprocity/comparison suppliers remain separate.
