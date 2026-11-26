@@ -1,0 +1,107 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: Some targeted checks failed or were not reached; inspect partial evidence",
+  "returncode": 1,
+  "wall_s": 5147.99,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN29_COMPACT_PRIMITIVES.py\", line 19, in <module>\n    replay.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN28_COMPACT_TARGETED.py\", line 132, in main\n    require(state[\"all_requested_checks_ok\"],\"Some targeted checks failed or were not reached; inspect partial evidence\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Some targeted checks failed or were not reached; inspect partial evidence\n",
+  "id": "rh-compact-primitives-replay-20261126",
+  "question": "Use successful RUN28 bounded two-thread replay to compile actual primitive A/B/C modules and check named axioms at jet exponent, coherent energy, and unseen-class interfaces; report partial failures separately. Not full RH or proof of human replacements.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN29_COMPACT_PRIMITIVES.py --out {out}",
+  "utc": "2026-11-26T12:07:04Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "2ba4fee750f6f5cbd30f2db9e6b44bf3931ca84c",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45803534769",
+  "outputs_committed": [
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "24eac7a8dfe4fd73404ce020fc302ef6598fd14bdcfba5695b47c7f0249957e4"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 9882,
+      "sha256": "f57becc3cb36842a669c6d92a04b0a04052b01c993ef8c333e86206bac76d3db"
+    },
+    {
+      "path": "module_0.log",
+      "bytes": 258,
+      "sha256": "ab2f25bc03c0837351e4607a68f040d22e83597d10e46722dd06b38522cbf071"
+    },
+    {
+      "path": "module_0_build.log",
+      "bytes": 15132,
+      "sha256": "c45c7c455aafb3a007c17829a1e2a566f1a52cb1486dcc5d6bc6dc9c2521284f"
+    },
+    {
+      "path": "module_1_build.log",
+      "bytes": 59500,
+      "sha256": "35727425b4878c1ff11db5324b9ff44ebcb5409fd40e0ca3814540b8c369c6d9"
+    },
+    {
+      "path": "module_2.log",
+      "bytes": 290,
+      "sha256": "5c72c5f884fe7576e4c601d049fb6416d4e450c5eb97ea8231fda205c71a1c94"
+    },
+    {
+      "path": "module_2_build.log",
+      "bytes": 58636,
+      "sha256": "d6537502e475313d92eab6f4544fed87c60c1b321b5924c165f5b29d40950a6e"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 460,
+      "sha256": "fdef4704f20b6e148ddb7b889459cf1b1910c279828a93a828149b10ea30fa73"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 125,
+      "sha256": "3971a4da40f670323cfb32452d050fe90e852ede41f5f28673a48915801b0019"
+    },
+    {
+      "path": "targeted_results.json",
+      "bytes": 2445,
+      "sha256": "7eb0e843fb9717e609eefecc09342f184fc3c6d5c2443151c8e4f50edbe1c6a4"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

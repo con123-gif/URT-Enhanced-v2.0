@@ -1,0 +1,110 @@
+{
+  "scope": "native named module checks and peer scalar certificates only",
+  "full_RH_replay": false,
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 3.13,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 5.63,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 0.77,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.26,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 69.13,
+      "log": "mathlib_cache.log"
+    },
+    "module_0_build": {
+      "returncode": 0,
+      "seconds": 1051.08,
+      "log": "module_0_build.log"
+    },
+    "module_0": {
+      "returncode": 0,
+      "seconds": 4.62,
+      "log": "module_0.log",
+      "axioms": {
+        "IsPencil.length_le_of_unseen_class": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "tilting": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IsPencil.length_le_of_drop_ties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "module": "New.Selmer.TiltingLemma"
+    },
+    "module_1_build": {
+      "returncode": 124,
+      "seconds": 2700.11,
+      "log": "module_1_build.log"
+    },
+    "module_2_build": {
+      "returncode": 0,
+      "seconds": 1291.02,
+      "log": "module_2_build.log"
+    },
+    "module_2": {
+      "returncode": 0,
+      "seconds": 4.88,
+      "log": "module_2.log",
+      "axioms": {
+        "Filling.energy_fixingSet_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.sum_le_of_positive_type": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.Fits.exists_translate_finrank_comap_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "module": "New.Filling.Moments"
+    }
+  },
+  "all_requested_checks_ok": false
+}

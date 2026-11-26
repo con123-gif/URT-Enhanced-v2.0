@@ -59,3 +59,4 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-shared-prime-countq-replay-20261126` | error | 133.27 | 2026-11-26T07:16:43Z | GPT | One pinned native replay batch: prime descent at actual cofinal Sha caller first, then CountQ/CountK alternatives with s |
 | `rh-compact-union-graph-20261126` | error | 0.04 | 2026-11-26T08:12:49Z | GPT | Measure actual runner capacity, then if sufficient build exact compact RH source once and export union of Main, star and |
 | `rh-compact-targeted-replay-20261126` | pass | 912.12 | 2026-11-26T10:28:55Z | GPT | Memory-limited compact verification fallback: replay two standalone peer certificates and build only three named source  |
+| `rh-compact-primitives-replay-20261126` | error | 5147.99 | 2026-11-26T12:07:04Z | GPT | Use successful RUN28 bounded two-thread replay to compile actual primitive A/B/C modules and check named axioms at jet e |

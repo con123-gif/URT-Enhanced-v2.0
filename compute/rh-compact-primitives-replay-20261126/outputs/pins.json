@@ -1,0 +1,10 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "source_blobs": {
+    "New.Selmer.TiltingLemma": "62784266136a2936dd6f8d662b79fa051d28c470",
+    "New.Columns.JetExponentBound": "bedef08c7c1707f74e9afce0c8008b88ba37dc8a",
+    "New.Filling.Moments": "ec2cb964ede0d5eeae41a077dc6dbfface9c0444"
+  }
+}
