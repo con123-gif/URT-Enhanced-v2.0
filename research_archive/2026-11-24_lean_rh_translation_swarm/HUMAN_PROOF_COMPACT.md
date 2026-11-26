@@ -1,0 +1,115 @@
+# RH from the compact proof: human reconstruction
+26 November 2026 — first working manuscript, INCOMPLETE. This is a translation of the externally machine-checked compact RH/GRH proof, not an independent proof or a completed ten-page paper. Credit Levent Alpöge, Luke Sernau, Anthropic collaborators and Claude per the compact repository. Primary pin lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207, grh-compact, Lean 4.35.0, Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679. Original long-archive manuscript retained separately. Mission blob 3731f12ed73e738313fd7f93a30759d9086141e9.
+
+The following gives the exact compact scalar argument and translates the central mechanisms of A/B/C, with the deep native input theorems explicitly separated. A proof body in the source is not by itself our human proof of it. No compact Lean build performed in this session.
+
+## 1. The central inequality
+
+Fix Parameters P and admissible Data D as in the compact source. Write x,x1,b,a for scales, m for number of lifts, k for column rank, f for the number of archimedean places, and d_R=dim_C(rows)>0. Distinguish d_R from the quadratic-field prime d. Let
+  B = f a (log b)^3,
+  L = (log b) B,
+  H = m k dirCost,
+  R = remainder.
+Use the exact source definitions of mainHeight, mainAsk and remainder. The central theorem is
+  [star] m R <= (log b)^2 B.
+It is proved by comparing upper and lower volume bounds for the SAME independent family of rows, at the SAME D and all the required embeddings/twists. No independent optimization of either bound.
+
+## 2. Theorem A: short forms — normalization and height arithmetic
+
+Let T be the actual finite set of non-split primes plus the level prime N. For a prime l put g_l=floor(allowedLoss(l) - 1_{non-split}(l) gain(l)), zero off T. A single rational number q=prod_{l in T} l^{g_l}>0 satisfies log q=sum g_l log l and |q|_l=l^{-g_l}. This simultaneously controls the size at infinity and the local divisibility at all primes; there is no independent local choice of q. For the native projected Poincare maps P_s, put B_s=q P_s. These are exactly the maps chosen in Data.short_forms.
+
+The source's height computation has a separate simple cancellation. Write wbar=mean log(nominalWeight), G=log(gProd rootDisc/(2pi)), and ell=chowlaSelbergConst. The definition of mainAsk is a(log a-1-ell-wbar). The source jet-size formula and Stirling give
+  jetSize(a)-mainAsk <= a(wbar+G)+1+(log a)/2.
+The level-prime choice gives
+  log N >= m(wbar+G) - G -(15/2)log b.
+The exact heightPerRow identity is
+  heightPerRow = H-mR + #tops [m(jetSize(a)-mainAsk)-a log N].
+Substitute both inequalities BEFORE bounding terms. The common m a(wbar+G) cancels. Hence
+  heightPerRow <= H-mR + #tops [m(1+(log a)/2)+a(G+(15/2)log b)]
+              <= H-mR+B,
+where the last inequality is the native HasLogBound scale estimate.
+
+The deep remaining A inputs are the native seesaw identity, spanning by short ramified columns, the norm estimate of the composite lift, the uniform local index-divisibility supplier exists_indexDvd_Bmu_divisible, and sum_allowedLoss_mul_log_le, together with their precise prime/twist and scale guards. Given these, rational normalization and summing the local index bounds give the native A output:
+- a spanning set S of integral ramified columns, such that ||Theta_1 B_s phi||_sigma^2 <= exp(h), h=H-mR+L, for all phi in S, s and sigma;
+- any finite row family in the images of integral ramified columns under B_s for s in t has IndexLe at most |t| dim(columns) B.
+The local bound supplies the needed integer exponent because -g_l=ceil(1_{non-split} gain-allowedLoss), strictly below that quantity plus 1. All twist-coprimality conditions in IndexLe remain. This paragraph is the native A assembly, not yet a human derivation of its deep inputs.
+
+## 3. Theorem B: enough forms — direct rank-deficit proof of the greedy lemma
+
+Here is a compact human derivation of the actual abstract exists_few_translates from New/Heights/OneDeterminant. Let V,W be the finite-dimensional column and row spaces, v=dim V>0, d_R=dim W>0, and let B_s:V->W satisfy IsSpread(B,eta), eta=b^{-2}>0: for every subspace F of W, some s satisfies
+  dim B_s^{-1}(F) <= [(1+dim F/d_R)/2+eta]v.
+The native filling theorem gives exactly this property on the full column space using its ramifying operator; its maps have the same ranges as the projected Poincare maps on ramified columns (surjectivity onto ramified columns must be kept). Nonzero scalar normalization q does not change those ranges.
+
+For a selected set t let F_t=sum_{s in t} range B_s and r=d_R-dim F_t. By rank-nullity for V -> W/F_t, if r>4eta d_R there exists s whose new dimension g satisfies
+  g >= v(r/(2d_R)-eta)>0.
+Thus s was not already selected and r drops to r-g. Define a nonnegative potential
+  P(r)=5 d_R log(1+r/(eta d_R)).
+For r>4eta d_R,
+  P(r)-P(r-g) >= 5 d_R g/(eta d_R+r)
+                >= v * 5(r/2-eta d_R)/(r+eta d_R) >= v.
+The first inequality is log(1-u)<=-u applied to u=g/(r+eta d_R)<1. The last follows from 3r/2>=6eta d_R. Start at r=d_R, and select such s until r<=4eta d_R; termination follows because r is a nonnegative integer strictly decreasing. If the starting r already meets the threshold choose t empty. Telescoping proves
+  |t| v <= 5 d_R log(1+eta^{-1}),
+  dim F_t >= (1-4eta)d_R.
+No basis or translate multiplicity is counted twice. This is an elementary human proof of the native constant 5 and deficit 4, not a new asymptotic estimate. For W=0 the native abstract lemma is immediate with empty t; actual B uses positive d_R.
+
+The actual missing B supplier is Data.ramifiedColumns_fill_rows, whose body invokes Fits.exists_translate_finrank_comap_le, Petersson second moment, central projection, bad_share_le and ramifyingOp_finrank_comap_and_short. Its positivity proof also gives finrank_rows_ne_zero. Translate these actual named inputs rather than assume that the Poincare family spans or is a tight frame without the native error. FillingTheorem.lean is already retrieved; its deeper moment and local rank proofs still require human reconstruction.
+
+## 4. A and B use one family; Theorem C uses one reciprocal identity
+
+Since S spans the ramified columns, Y=union_{s in t} B_s(S) spans F_t. Choose an independent basis y of F_t from Y. Let n=|y|. Then (1-4/b²)d_R<=n<=d_R. A applies to this SAME y and t, giving some delta<=5 d_R log(1+b²)B with IndexLe(y,delta). For each sigma Hadamard's Gram determinant inequality gives covolumeSq(Theta_1 y)_sigma<=exp(n h), since every squared norm is <=exp(h). Thus take V=n h. This is the full finite-dimensional A+B assembly; it does not assume a full basis or use a different family for the lower bound.
+
+C starts with ANY independent such y, IndexLe(y,delta), and all-conjugate squared-covolume bound exp(V). The source picks ONE fit-twist family theta indexed by p-adic embeddings. For its nonzero chain volumes z(theta) and z(1), the two source height estimates are
+  HeightLe(V+2delta+d_R b, z(theta)/z(1)),
+  HeightLe(2d_R(2L-H), z(1)^2/z(theta)^2).
+They are not conventional nonnegative heights: native HeightLe allows signed upper budgets for embedding-dependent families. Its product rule holds by multiplying the same auxiliary numbers, adding archimedean exponents and adding finite-prime bounds. The product formula gives HeightLe(c,1) => c>=0. For the latter, the archimedean and p-adic bounds for the auxiliary nonzero number A imply the corresponding bounds for log absolute norm divided by the field degree, via all conjugate embeddings; sum the logarithmic rational product formula over a sufficiently large prime cutoff. The needed algebraicity of A and extension-of-embedding facts are from the actual HeightLe.nonneg body and remain referenced prerequisites.
+
+Square the first ratio and multiply by the second ratio pointwise on the SAME theta:
+  (z(theta)/z(1))^2 [z(1)^2/z(theta)^2]=1.
+Therefore
+  0 <= 2(V+2delta+d_R b)+2d_R(2L-H),
+so V+2delta >= d_R(H-2L-b) >= d_R(H-3L), since b<=L by the retained size estimates. This proves the exact C scalar consequence from those two height inputs, with no absolute-value expansion of the reciprocal ratios.
+
+The first height estimate uses a completion of y to a full basis by crude rows, the actual OneDeterminant theorem and the index matrices at conjugate p-adic embeddings. The Gram determinant identity det(Mbar G M^T)=det(Mbar)det(G)det(M) explains the two index contributions; the auxiliary rows cost d_R b in the source. Need reconstruct crude_rows, their size and integral pairing/denominator guards. The second height estimate uses the exact chain factorization z(v)=|c(v)|^{d_R} prod_j liftVolume(v,j), the fit family, and the individual lift ratio estimate HeightLe(d_R k[(log b)B0-dirCost],lambda_j(1)/lambda_j(theta)). Here m k B0=B. Sum over m lifts and square to obtain 2d_R(L-H); the constant ratio contributes at most 2d_R L. This gives the stated second bound. The deep remaining C suppliers are exists_isFitFamily (Selmer and Galois), volume_iota_eq_prod_liftVolume, heightLe_liftVolume_ratio (comparison operator, Hecke values, integral and archimedean determinant bounds), and the completion cost. They must be supplied for the identical D and theta; no independent optimizations. Actual source bodies of the immediate C estimates were read, but no native replay or full human reconstruction of these deep suppliers.
+
+## 5. The common main term cancels
+
+Use the crude bound |H|+m|R|<=b² x^99 from native abs_mainHeight_add_remainder_le and L>=0, hence -h<=b² x^99. Apply C to the y of §4 and V=n h:
+  d_R(H-3L)<= n h +2delta
+    = d_R h+(d_R-n)(-h)+2delta
+    <= d_R[h+4x^99+10 log(1+b²)B].
+The missing dimension term uses 0<=d_R-n<=4d_R/b²; signs matter if h is negative. Divide by d_R>0 and substitute h=H-mR+L. H cancels:
+  mR <= 4L+4x^99+10log(1+b²)B <= (log b)^2 B.
+Last inequality is native HasLogBound, not an arbitrary numerical assumption. This is the exact compact star_inequality. No conditional deep input has been deleted.
+
+## 6. From star to RH: keep the compact route, not the old G window
+
+For the compact R_M(x)=primeError(d,M,x), lambda_M(n)=Lambda(n)(1-chi_d(n)) when n=1 mod M and zero otherwise. R_M(x)=sum_{n<=x}lambda_M(n)(1/n-1/x)-log x/phi(M)-Re logDerivMean(d,M,1). The actual prime-sum identity is
+  R=a[#thick(R_N0(x)-R_N0(x1))+#tops R_1(x1)].
+Each top translation contributes all thick places when the class condition holds, none otherwise. The main log x/log x1 and Chowla-Selberg constants cancel by the actual nominal-weight average and f=phi(N0)#tops. See remainder_eq. This is not the old G(x)/x.
+
+For fixed P and 0<epsilon<1/100, exists_data gives D at every sufficiently large x with log b=x^epsilon, log x1=x^(epsilon/6), (10^6 log x)^2<=log x1, #thick>=#tops/log b and m>=sqrt x. Let t=10^6 log x. The actual IsPolar.exists_window_sub_mul_le supplies u in [t,t²] with
+  R_N0(exp u) - (#tops/#thick) R_1(exp u)<=exp(-t)
+because the ratio is nonnegative and at most exp(t). The native D' changes only logX1 to u and proves its scale condition, preserving the other data. Apply star on D':
+  R_N0(x)<= f(log b)^5/(m #thick)+x^(-10^6)
+          <= phi(N0) x^(6epsilon-1/2)+x^(-10^6)
+          <= x^(8epsilon-1/2) eventually.
+Here the eventual threshold may depend on P and epsilon. All scales and their existence are retained; no intersection of sparse windows is taken.
+
+The native analytic criterion uses the polar Laplace transform of R_M(exp v) and its residue at s, given by (sum_xi [ord_s Ltilde(xi)-ord_s Ltilde(xi chi_d)])/[phi(M)s(1-s)]. It selects a prime d in the specified unit class whose quadratic twists do not vanish at the relevant ordinate, then applies its Landau lemma. At modulus q lift to N0=18480 q and class N0/2-1; for a hypothetical zero with Re rho>1/2 choose epsilon=(min(Re rho,1)-1/2)/51, so 0<epsilon<1/100 and 1/2+8epsilon<Re rho. This leads to New.grh and, at modulus 1, the functional equation gives RH. The compact analytic suppliers (polar identity, nonvanishing twist, good second scale, Landau and DataExist) are not independently fully derived here; they are explicit required modules for the editor and analytic lane. Do not claim our earlier old-pin conditional Landau replay verifies these compact declarations.
+
+## 7. Exact current frontier and source ledger
+
+This manuscript has reconstructed the scalar cancellation, the abstract greedy spanning lemma, the common-family selection and the reciprocal height assembly. The actual A/B/C suppliers and the data/analytic modules still need concise human derivations and transitive reference checks. The external proof certification is separate from our manuscript's completeness. No claim of ten-page completion, mathematical novelty of the native argument, measured runtime improvement, or new formal proof.
+
+Sources at compact pin, relative to grh-compact/src:
+- New/Main.lean 198ed5bf26aa294898931e0649bc2b88f1389f65; Main.lean a5d8389131c985a0b54ce5b0e778ee5c8126a997.
+- New/Endgame/ShortAndEnough.lean b99eea0689be372d84362c58272b705e104b6a3a.
+- New/Endgame/LongForms.lean 9eff36cf003ac398fbd24361e80e95a03d0b0e05.
+- New/Heights/Heights.lean a18a99e1f76a6e963113cae8f906ddc99814f518.
+- New/Heights/OneDeterminant.lean 329f004f845b9e2becc896419c8594e82dfef0a6.
+- New/Filling/FillingTheorem.lean 801448ae9b895babd0d69dc4f7967d86eb006e76; New/Filling/Moments.lean ec2cb964ede0d5eeae41a077dc6dbfface9c0444.
+- New/Columns/LocalStatement.lean 9d5bd0d698b0db2850cbd306d8d400d7e99a3547.
+- New/Rows/RowVolume.lean 925de9c592b40763516e70ddeae48b4ad1a35b88; New/Rows/LiftVolumeHeight.lean 87938141d4103b485fd5a7125721798f65f973f1.
+- New/Data/DataExist.lean 634c6a1f88791a3bb770326785b70411e8289b41; New/Endgame/PrimeError.lean 63eb3d79d95ad815878e623b96f237240058c8e2; OneSidedCriterion.lean 93f9a2f5e8cde2438a3cbf030ba823c9613d0ba3 (retrieved in preceding migration turn).
+- New/Selmer/FitTwistsExist.lean da769eba595af2f883eed9b82dbd322a521aea14 (preceding migration).
+RESUME: editor/integration use this as compact primary manuscript; next translate actual spread supplier Fits.exists_translate_finrank_comap_le and A local loss/index and C fit-family/height suppliers in parallel. Preserve old manuscript and exact source contexts. Avoid treating A/B/C as unexplained axioms in the final ten-page proof. No new compilation or numerical surrogate run.
