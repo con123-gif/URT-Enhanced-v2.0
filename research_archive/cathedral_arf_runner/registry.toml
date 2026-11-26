@@ -3545,3 +3545,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-primitives-replay-20261126"
+question = "Use successful RUN28 bounded two-thread replay to compile actual primitive A/B/C modules and check named axioms at jet exponent, coherent energy, and unseen-class interfaces; report partial failures separately. Not full RH or proof of human replacements."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN29_COMPACT_PRIMITIVES.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT"
+claim = "independent"
