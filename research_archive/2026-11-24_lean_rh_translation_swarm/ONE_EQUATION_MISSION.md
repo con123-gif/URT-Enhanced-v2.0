@@ -1,3 +1,11 @@
+# Binding allocation amendment — 26 November 2026
+
+User requests one dedicated URT worker. Exactly ONE existing lane, RH URT Compression Bot, is the exception to the proof-only exclusion of URT below. It investigates whether the original URT method can accelerate or simplify the actual compact RH proof, using ordinary mathematical validation, source-matched premises, exact dependency preservation and controlled comparisons against conventional methods. Keep its research in structure/ or its own specialist directory. Send only independently checkable useful results to integration; no unproved URT assumptions enter the proof. No unrelated physics research or generic compression detours. Stop unproductive experiments and seek actual proof-relevant improvements.
+
+The other FOURTEEN lanes remain exclusively focused on completing the human-readable compact RH proof by established mathematics; they must not wait for the URT worker. Preserve all fifteen existing hourly schedules, compact source pin, original archives, verification gates, and single manuscript. This amendment overrides only the conflicting lane assignment and URT exclusion for that one worker; every other proof-only instruction remains binding.
+
+---
+
 # Binding proof-only priority — 26 November 2026
 
 User direction: "Forget the urt its the proof I want". The sole deliverable is a rigorous, human-readable reconstruction of RH from the compact Lean proof, correctly attributed. This overrides all older directions to develop, apply, benchmark or advertise URT, harmonic scaling, generic compression systems, or new physical/mathematical theories. Use ordinary established mathematical methods and the actual source argument. Do not change the Cathedral/URT physics project, delete its files, or erase historical research; it is simply out of scope for RH.
