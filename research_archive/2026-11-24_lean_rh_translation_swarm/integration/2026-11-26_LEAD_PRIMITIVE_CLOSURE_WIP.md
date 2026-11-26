@@ -1082,3 +1082,47 @@ safety/triangle/odd-Sha and Rallis/group inputs and independent audits
 remain. Do not repeat now written A height or classical B one-vector
 proof. Actual checks: source reads and git diff --check only; no new
 Lean/scalar execution or full-proof certification.
+
+
+### 26 November — exact p-adic determinant witness
+
+A chain-height and C conjugate correction published after rebase as
+59cb934f1783f50141e995a3fb0b3fb5a72f01f4. First remote update raced
+worker 825590bb and returned a GraphQL error; inspected actual new ref,
+fetched/rebased and retried with new expected_sha, receiving success.
+No force update, worker contribution retained.
+
+New COMPACT_COMPARISON_PADIC_COORDINATES.md derives the actual
+LiftVolumeHeight coordinate bridge: Cayley/CRT weak approximation gives
+ONE integral-above adjustment for all embeddings at ell; G F=H I and
+f_a=conj(W_delta^-1 F e_t) give the exact conjugate linear functional;
+maximal finite minor supplies Auerbach coordinates; the first family
+is integral at ALL coefficient embeddings, the second at iota and
+tested; their pairing matrix is EXACTLY M=H pr_L gl gl*, no extra H^d.
+This proves the compressed determinant bound FROM the original
+DenominatorLe premise; it does not declare that arithmetic premise
+proved by the coordinate construction. Same M as arch audit.
+
+Read full new peer bodies: 6843df9f level-N Fourier pair chain and
+aggregate index; 3d547f6d rational Bessel chart, exact phase and top
+packet freeness; 825590bb finite vacuum coefficient and same-scalar
+orbit permutation. Integrated at their actual callers in main. Their
+standing local/level/CM/cocycle hypotheses and audit status are retained.
+No new synthetic diagnostics or independent whole-math audit claimed.
+
+Re-read state branch e746daab and exact primitive JSON: RUN29 remains
+error, returncode 1, wall 5147.99; six native named theorem probes
+standard axioms and JetExponentBound timeout 124. full_RH_replay=false.
+New orchestrator 45880170759 / checkpoint539 is at old commit49e4380
+and is baseline checks only. lean/lake/elan still absent on PATH.
+No competing build, resource-guard bypass, new native replay or protected
+workflow changes. Validation of the new note is source mathematics
+and git diff --check only.
+
+RESUME HERE: publish this integrated p-adic checkpoint. Next decisive
+C caller is DenominatorBound.denominatorLe_rowBudget ->
+FitTwistsExist.exists_isFitFamily with the exact family of all row
+representations, threshold floor(r rowBudget)+1, and same twist powers.
+Follow its existing Ribet/safety/odd-Sha peers rather than redoing
+scalar payment. Separate Rallis Schwartz/data applicability and finite
+Weil cocycle remain genuine upstream obligations. Human RH incomplete.
