@@ -1,0 +1,7 @@
+{
+  "effective_memory_bytes": 16759427072,
+  "effective_cpus": 4,
+  "temporary_free_bytes": 92718592000,
+  "publisher_recommendation": "12 cores, 24 GB; 1–2 h after cache",
+  "guard": "12 cores and 24e9 bytes memory, unless explicitly overridden for a capable external runner"
+}

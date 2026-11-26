@@ -1,0 +1,37 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: RESOURCE_BLOCKED: runner below publisher build recommendation",
+  "returncode": 1,
+  "wall_s": 0.04,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 194, in <module>\n    if __name__==\"__main__\": main()\n                             ^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 156, in main\n    require(cpu>=12 and mem>=24_000_000_000,\"RESOURCE_BLOCKED: runner below publisher build recommendation\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: RESOURCE_BLOCKED: runner below publisher build recommendation\n",
+  "id": "rh-compact-union-graph-20261126",
+  "question": "Measure actual runner capacity, then if sufficient build exact compact RH source once and export union of Main, star and A/B/C proof-term roles with per-root axiom audit; independently probe compact binder pruning. Not a human proof or caller substitution.",
+  "requested_by": "GPT",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py --out {out}",
+  "utc": "2026-11-26T08:12:49Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "de382b26a4d297d71d7b26e995e8de52503a7e15",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45781154005",
+  "outputs_committed": [
+    {
+      "path": "CompactGraph.lean",
+      "bytes": 7773,
+      "sha256": "f3e79e7ecc50ee950b259edb2f61cafdc6527c6d3377f87bc12da652ff2fabb0"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 281,
+      "sha256": "26661a8296699b5d15ba88854bf00356b1957f29554290602fa97c3fced3cf47"
+    }
+  ],
+  "outputs_artifact_only": []
+}
