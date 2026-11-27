@@ -1,0 +1,4 @@
+C2_ALGEBRA_ENV_ABSENCE_PASS
+'c2_lift_inverse_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_lift_one_empty_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_standard_column_empty' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,21 @@
+{
+  "membership": {
+    "exchange_theorem": 1,
+    "c2_standard_exchange_uniform": 2,
+    "exchange_of_partners": 1,
+    "exists_equalRankThetaRatio_value": 1,
+    "run78_equalRankThetaRatio_value": 2,
+    "RHCharacterBoxes77.exchange_of_standard_pairs": 2
+  },
+  "guards": {
+    "new_root_present": true,
+    "general_exchange_reachable_from_original": true,
+    "general_exchange_absent_from_standard_interface": true,
+    "old_equal_rank_absent_from_standard_interface": true,
+    "original_exchange_absent_from_standard_interface": true,
+    "checked_equal_rank_reachable": true,
+    "checked_standard_helper_reachable": true
+  },
+  "all_guards_pass": true,
+  "full_RH_replay": false
+}

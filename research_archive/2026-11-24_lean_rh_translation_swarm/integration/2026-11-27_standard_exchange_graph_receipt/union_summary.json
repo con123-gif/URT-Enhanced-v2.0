@@ -1,0 +1,29 @@
+{
+  "roots": [
+    "exchange_theorem",
+    "c2_standard_exchange_uniform"
+  ],
+  "nodes": 118229,
+  "edges": 3796760,
+  "missing": 0,
+  "mask_histogram": {
+    "3": 118030,
+    "1": 161,
+    "2": 38
+  },
+  "per_root": {
+    "exchange_theorem": {
+      "exit": 0,
+      "nodes": 118191,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "c2_standard_exchange_uniform": {
+      "exit": 0,
+      "nodes": 118068,
+      "missing": 0,
+      "log": "audit-1.json"
+    }
+  },
+  "naive_repeated_nodes": 236259
+}

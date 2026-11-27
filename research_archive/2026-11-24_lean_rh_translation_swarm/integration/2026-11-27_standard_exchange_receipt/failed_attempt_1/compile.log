@@ -1,0 +1,116 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_standard_exchange_1/C2StandardExchange.lean:38:41: error: don't know how to synthesize placeholder for argument `hn`
+context:
+E : Type
+inst✝⁵ : Field E
+inst✝⁴ : CMType E
+inst✝³ : WeilData E
+n a b : Type
+inst✝² : Fintype n
+inst✝¹ : Fintype a
+inst✝ : Fintype b
+s : n → ℤˣ
+t : a → ℤˣ
+t' : b → ℤˣ
+W : Space E n s
+V : Space E a t
+V' : Space E b t'
+σ : b ⊕ a ≃ n
+hs : negCount s = negCount t + negCount t'
+e : ℕ
+he : Fintype.card a = Fintype.card b + 2 * e
+hn : 2 * negCount s + 2 ≤ Fintype.card n
+μ : NumberField.InfinitePlace E → ℤ
+hμ : ∀ (v : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * μ v + 2 * ↑(negCount s)
+v : fockSpace (realSigns E (homSigns t' s))
+hv : IsRapidDatum v
+z : fockSpace (realSigns E (homSigns (hypSigns Unit ⊕ᵥ s) (hypSigns Unit ⊕ᵥ s)))
+hz : IsRapidDatum z
+C₀ : ℝ
+hC₀ : C₀ ≠ 0
+H₀ : ∀ (𝔠 : SplitTameChar E μ), equalRankThetaRatio (hypSum Unit W) 𝔠 z = C₀
+⊢ 2 ∣ Fintype.card n
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_standard_exchange_1/C2StandardExchange.lean:38:38: error: don't know how to synthesize placeholder for argument `hs`
+context:
+E : Type
+inst✝⁵ : Field E
+inst✝⁴ : CMType E
+inst✝³ : WeilData E
+n a b : Type
+inst✝² : Fintype n
+inst✝¹ : Fintype a
+inst✝ : Fintype b
+s : n → ℤˣ
+t : a → ℤˣ
+t' : b → ℤˣ
+W : Space E n s
+V : Space E a t
+V' : Space E b t'
+σ : b ⊕ a ≃ n
+hs : negCount s = negCount t + negCount t'
+e : ℕ
+he : Fintype.card a = Fintype.card b + 2 * e
+hn : 2 * negCount s + 2 ≤ Fintype.card n
+μ : NumberField.InfinitePlace E → ℤ
+hμ : ∀ (v : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * μ v + 2 * ↑(negCount s)
+v : fockSpace (realSigns E (homSigns t' s))
+hv : IsRapidDatum v
+z : fockSpace (realSigns E (homSigns (hypSigns Unit ⊕ᵥ s) (hypSigns Unit ⊕ᵥ s)))
+hz : IsRapidDatum z
+C₀ : ℝ
+hC₀ : C₀ ≠ 0
+H₀ : ∀ (𝔠 : SplitTameChar E μ), equalRankThetaRatio (hypSum Unit W) 𝔠 z = C₀
+⊢ 1 + negCount s = Fintype.card Unit + negCount t + negCount t'
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_standard_exchange_1/C2StandardExchange.lean:36:69: error: don't know how to synthesize placeholder for argument `hm`
+context:
+E : Type
+inst✝⁵ : Field E
+inst✝⁴ : CMType E
+inst✝³ : WeilData E
+n a b : Type
+inst✝² : Fintype n
+inst✝¹ : Fintype a
+inst✝ : Fintype b
+s : n → ℤˣ
+t : a → ℤˣ
+t' : b → ℤˣ
+W : Space E n s
+V : Space E a t
+V' : Space E b t'
+σ : b ⊕ a ≃ n
+hs : negCount s = negCount t + negCount t'
+e : ℕ
+he : Fintype.card a = Fintype.card b + 2 * e
+hn : 2 * negCount s + 2 ≤ Fintype.card n
+μ : NumberField.InfinitePlace E → ℤ
+hμ : ∀ (v : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * μ v + 2 * ↑(negCount s)
+v : fockSpace (realSigns E (homSigns t' s))
+hv : IsRapidDatum v
+⊢ ∀ (v : NumberField.InfinitePlace E), ↑(Fintype.card n / 2 - negCount s) ≤ μ v
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_standard_exchange_1/C2StandardExchange.lean:36:66: error: don't know how to synthesize placeholder for argument `hk`
+context:
+E : Type
+inst✝⁵ : Field E
+inst✝⁴ : CMType E
+inst✝³ : WeilData E
+n a b : Type
+inst✝² : Fintype n
+inst✝¹ : Fintype a
+inst✝ : Fintype b
+s : n → ℤˣ
+t : a → ℤˣ
+t' : b → ℤˣ
+W : Space E n s
+V : Space E a t
+V' : Space E b t'
+σ : b ⊕ a ≃ n
+hs : negCount s = negCount t + negCount t'
+e : ℕ
+he : Fintype.card a = Fintype.card b + 2 * e
+hn : 2 * negCount s + 2 ≤ Fintype.card n
+μ : NumberField.InfinitePlace E → ℤ
+hμ : ∀ (v : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * μ v + 2 * ↑(negCount s)
+v : fockSpace (realSigns E (homSigns t' s))
+hv : IsRapidDatum v
+⊢ Fintype.card n = 2 * (Fintype.card n / 2 - negCount s) + 2 * negCount s
+'c2_standard_exchange_uniform' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_standard_exchange_1/C2StandardExchange.lean:66:0: error: Standard interface misses a checked supplier

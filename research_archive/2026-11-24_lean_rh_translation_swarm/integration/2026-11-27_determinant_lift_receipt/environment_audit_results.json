@@ -1,0 +1,34 @@
+{
+  "returncode": 0,
+  "seconds": 78.27,
+  "log": "environment_audit.log",
+  "axioms": {
+    "c2_lift_inverse_determinant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "c2_lift_one_empty_columns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "c2_standard_column_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_audit_ok": true,
+  "forbidden_targets_absent_from_entire_checked_environment": true,
+  "source_blob": "5a1f392c881737bf0bc8bf427c42fad9d5472787",
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_4/EnvironmentAudit.lean"
+  ],
+  "new_Lean_execution": true,
+  "new_proof_declarations_added": false,
+  "full_RH_replay": false,
+  "all_checks_pass": true
+}

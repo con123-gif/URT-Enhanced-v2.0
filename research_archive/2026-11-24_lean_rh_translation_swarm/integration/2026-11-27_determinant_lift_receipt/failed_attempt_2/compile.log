@@ -1,0 +1,30 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_2/C2DeterminantLift.lean:28:6: error: Type mismatch: After simplification, term
+  congrArg Matrix.det hcast
+ has type
+  (M₀.map ⇑SemilocalField.O.subtype).det = M.det
+but is expected to have type
+  ↑M₀.det = M.det
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_2/C2DeterminantLift.lean:32:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (Matrix.det ?M)
+in the target expression
+  (χ (M₀.map ⇑π).det)⁻¹ = invOnUnits χ' M.det
+
+case pos
+F R n : Type
+inst✝³ : SemilocalField F
+inst✝² : CommRing R
+inst✝¹ : Fintype n
+π : ↥SemilocalField.O →+* R
+inst✝ : IsLocalHom π
+χ : MulChar R ℂ
+χ' : MulChar F ℂ
+hχ : ∀ (u : ↥SemilocalField.O), IsUnit u → χ' ↑u = χ (π u)
+M : Matrix n n F
+hM : IsIntMatrix SemilocalField.O M
+h_entries : ∀ (i j : n), M i j ∈ SemilocalField.O
+M₀ : Matrix n n ↥SemilocalField.O := Matrix.of fun i j ↦ ⟨M i j, ⋯⟩
+hcast : M₀.map ⇑SemilocalField.O.subtype = M
+hdet : ↑M₀.det = M.det
+⊢ (χ (M₀.map ⇑π).det)⁻¹ = invOnUnits χ' M.det
+'c2_lift_inverse_determinant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_DETERMINANT_LIFT: original general exchange and determinant consumer absent directly

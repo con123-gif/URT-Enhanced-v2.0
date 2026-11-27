@@ -1,0 +1,42 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_1/C2DeterminantLift.lean:27:6: error: Type mismatch: After simplification, term
+  congrArg Matrix.det hcast
+ has type
+  (M₀.map ⇑SemilocalField.O.subtype).det = M.det
+but is expected to have type
+  ↑M₀.det = M.det
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_1/C2DeterminantLift.lean:29:6: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_1/C2DeterminantLift.lean:29:18: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_1/C2DeterminantLift.lean:30:4: error: 'change' tactic failed, pattern
+  (χ (M₀.map ⇑π).det)⁻¹ = invOnUnits χ' M.det
+is not definitionally equal to target
+  (if h : ∀ (i j : n), M i j ∈ SemilocalField.O then (χ (Matrix.of fun x1 x2 ↦ π ⟨M x1 x2, ⋯⟩).det)⁻¹ else 0) =
+    invOnUnits χ' M.det
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_1/C2DeterminantLift.lean:42:2: error: unsolved goals
+case neg
+F R n : Type
+inst✝³ : SemilocalField F
+inst✝² : CommRing R
+inst✝¹ : Fintype n
+π : ↥SemilocalField.O →+* R
+inst✝ : IsLocalHom π
+χ : MulChar R ℂ
+χ' : MulChar F ℂ
+hχ : ∀ (u : ↥SemilocalField.O), IsUnit u → χ' ↑u = χ (π u)
+M : Matrix n n F
+hM : ¬IsIntMatrix SemilocalField.O M
+⊢ ∀ (h : ∀ (i j : n), M i j ∈ SemilocalField.O), χ (Matrix.of fun x1 x2 ↦ π ⟨M x1 x2, ⋯⟩).det = 0
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_1/C2DeterminantLift.lean:29:6: warning: This simp argument is unused:
+  dif_pos hM
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [liftIntegralFn, mk'_apply, stdColDatum, Matrix.one_mul, if_pos hM]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'c2_lift_inverse_determinant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_DETERMINANT_LIFT: original general exchange and determinant consumer absent directly

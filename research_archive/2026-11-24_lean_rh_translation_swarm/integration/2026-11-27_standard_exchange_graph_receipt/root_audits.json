@@ -1,0 +1,14 @@
+{
+  "exchange_theorem": {
+    "exit": 0,
+    "nodes": 118191,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "c2_standard_exchange_uniform": {
+    "exit": 0,
+    "nodes": 118068,
+    "missing": 0,
+    "log": "audit-1.json"
+  }
+}

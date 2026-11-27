@@ -1,0 +1,14 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_3/C2DeterminantLift.lean:30:10: error: Type mismatch: After simplification, term
+  RingHom.map_det SemilocalField.O.subtype M₀
+ has type
+  @Eq F (SemilocalField.O.subtype M₀.det) (M₀.map ⇑SemilocalField.O.subtype).det
+but is expected to have type
+  @Eq F (↑M₀.det) (M₀.map ⇑SemilocalField.O.subtype).det
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_lift_3/C2DeterminantLift.lean:43:22: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'c2_lift_inverse_determinant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_lift_one_empty_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_standard_column_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_DETERMINANT_LIFT: original general exchange and determinant consumer absent directly
