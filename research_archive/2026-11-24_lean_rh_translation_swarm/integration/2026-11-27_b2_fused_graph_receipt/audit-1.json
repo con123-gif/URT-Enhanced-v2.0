@@ -1,0 +1,19 @@
+{
+  "status": "REFERENCE_CLOSURE_AND_AXIOM_AGREEMENT",
+  "nodes": 81898,
+  "edges": 2288323,
+  "extraStructuralEdges": 96359,
+  "collectorNodes": 81898,
+  "missing": 0,
+  "bodyMissing": 0,
+  "collectorUnresolved": 0,
+  "leanAxiomCount": 3,
+  "collectorAxiomCount": 3,
+  "absent": [],
+  "unexpected": [],
+  "structuralOnlyAxioms": [],
+  "nonstandardAxioms": [],
+  "sorryAxInBuiltin": false,
+  "sorryAxInStructuralClosure": false,
+  "unsafeOrPartialNodes": []
+}

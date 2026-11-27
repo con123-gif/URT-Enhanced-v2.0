@@ -1,0 +1,85 @@
+{
+  "roots": [
+    "Filling.sum_pairWeight_le",
+    "Filling.b2_fused_sum_pairWeight_le",
+    "Filling.energy_le_of_level_pairs",
+    "Filling.b2_fused_energy_le_of_level_pairs",
+    "Filling.energy_le_of_linkEnergy_le",
+    "Filling.b2_fused_energy_le_of_linkEnergy_le",
+    "Filling.tsum_invPowWeight_le_of_codim_le",
+    "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le"
+  ],
+  "nodes": 94382,
+  "edges": 2857836,
+  "missing": 0,
+  "mask_histogram": {
+    "255": 78124,
+    "63": 3730,
+    "85": 17,
+    "21": 19,
+    "61": 1,
+    "42": 22,
+    "170": 22,
+    "60": 12224,
+    "20": 22,
+    "40": 22,
+    "16": 23,
+    "48": 133,
+    "32": 23
+  },
+  "per_root": {
+    "Filling.sum_pairWeight_le": {
+      "exit": 0,
+      "nodes": 81891,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "Filling.b2_fused_sum_pairWeight_le": {
+      "exit": 0,
+      "nodes": 81898,
+      "missing": 0,
+      "log": "audit-1.json"
+    },
+    "Filling.energy_le_of_level_pairs": {
+      "exit": 0,
+      "nodes": 94137,
+      "missing": 0,
+      "log": "audit-2.json"
+    },
+    "Filling.b2_fused_energy_le_of_level_pairs": {
+      "exit": 0,
+      "nodes": 94145,
+      "missing": 0,
+      "log": "audit-3.json"
+    },
+    "Filling.energy_le_of_linkEnergy_le": {
+      "exit": 0,
+      "nodes": 94293,
+      "missing": 0,
+      "log": "audit-4.json"
+    },
+    "Filling.b2_fused_energy_le_of_linkEnergy_le": {
+      "exit": 0,
+      "nodes": 94301,
+      "missing": 0,
+      "log": "audit-5.json"
+    },
+    "Filling.tsum_invPowWeight_le_of_codim_le": {
+      "exit": 0,
+      "nodes": 78141,
+      "missing": 0,
+      "log": "audit-6.json"
+    },
+    "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le": {
+      "exit": 0,
+      "nodes": 78146,
+      "missing": 0,
+      "log": "audit-7.json"
+    }
+  },
+  "naive_repeated_nodes": 696952,
+  "scope": "eight local fused count/pair/energy frontiers; not the full RH frontier",
+  "full_RH_replay": false,
+  "constructor_inclusive_caller_guards_pass": true,
+  "root_obligation_completion_percentage": null
+}

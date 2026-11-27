@@ -42,6 +42,8 @@ def main():
                    help="Actual Actions status.json inventory, needed by the original C2 propagation receipt")
     p.add_argument("--compact-root", type=Path)
     p.add_argument("--lean-bin", type=Path)
+    p.add_argument("--native-exporter-dir", type=Path,
+                   help="Inspect checked private objects with an authenticated compiled exporter")
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--prepare-only", action="store_true")
     p.add_argument("--seconds", type=int, default=1800)
@@ -123,10 +125,33 @@ def main():
     (out / "environment.log").write_text(setup)
     env.update(json.loads(setup.strip().splitlines()[-1]))
     env["LEAN_PATH"] = str(directory) + os.pathsep + env["LEAN_PATH"]
-    run = native.step([str(args.lean_bin.resolve() / "lean"), "--tstack=400000", "-j", "2", target],
-                      root, env, out / "compile.log", args.seconds)
-    run.update(native.audit(out / "compile.log", ROOTS))
-    native.dump(out / "graph_execution.json", {**run, "new_Lean_execution": True, "full_RH_replay": False})
+    if args.native_exporter_dir:
+        from prepare_native_graph_exporter import validated_executable
+        binary, build = validated_executable(args.native_exporter_dir)
+        run = native.step([binary, args.lean_bin.resolve().parent, module_name,
+                           out / "c2_callers_graph.jsonl", *ROOTS],
+                          root, env, out / "compile.log", args.seconds)
+        axioms = {}
+        graph_path = out / "c2_callers_graph.jsonl"
+        if run["returncode"] == 0 and graph_path.is_file():
+            with graph_path.open() as stream:
+                header = json.loads(stream.readline())
+            for row in header.get("root_axioms", []):
+                name = ".".join(str(x[1]) for x in row["root"])
+                axioms[name] = [".".join(str(x[1]) for x in ax)
+                                for ax in row["lean_collect_axioms"]]
+        run.update(axioms=axioms,
+                   axiom_audit_ok=set(axioms) == set(ROOTS) and all(
+                       set(axes) <= {"propext", "Classical.choice", "Quot.sound"}
+                       for axes in axioms.values()),
+                   native_exporter_build=build,
+                   native_graph_execution=True, new_Lean_execution=False)
+    else:
+        run = native.step([str(args.lean_bin.resolve() / "lean"), "--tstack=400000", "-j", "2", target],
+                          root, env, out / "compile.log", args.seconds)
+        run.update(native.audit(out / "compile.log", ROOTS))
+        run.update(native_graph_execution=False, new_Lean_execution=True)
+    native.dump(out / "graph_execution.json", {**run, "full_RH_replay": False})
     native.require(run["returncode"] == 0 and run["axiom_audit_ok"] is True,
                    "C2 graph compiler or axiom audit failed; retain exact log")
     graph.audit_union(out / "c2_callers_graph.jsonl", out, out)

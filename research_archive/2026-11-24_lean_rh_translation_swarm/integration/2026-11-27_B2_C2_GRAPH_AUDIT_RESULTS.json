@@ -1,0 +1,93 @@
+{
+  "frontiers": [
+    {
+      "frontier": "B2",
+      "roots": 8,
+      "nodes": 94382,
+      "edges": 2857836,
+      "missing": 0,
+      "all_root_verifiers_pass": true,
+      "all_caller_guards_pass": true,
+      "root_node_deltas": [
+        {
+          "original": "Filling.sum_pairWeight_le",
+          "replacement": "Filling.b2_fused_sum_pairWeight_le",
+          "original_nodes": 81891,
+          "replacement_nodes": 81898,
+          "delta": 7
+        },
+        {
+          "original": "Filling.energy_le_of_level_pairs",
+          "replacement": "Filling.b2_fused_energy_le_of_level_pairs",
+          "original_nodes": 94137,
+          "replacement_nodes": 94145,
+          "delta": 8
+        },
+        {
+          "original": "Filling.energy_le_of_linkEnergy_le",
+          "replacement": "Filling.b2_fused_energy_le_of_linkEnergy_le",
+          "original_nodes": 94293,
+          "replacement_nodes": 94301,
+          "delta": 8
+        },
+        {
+          "original": "Filling.tsum_invPowWeight_le_of_codim_le",
+          "replacement": "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le",
+          "original_nodes": 78141,
+          "replacement_nodes": 78146,
+          "delta": 5
+        }
+      ]
+    },
+    {
+      "frontier": "C2",
+      "roots": 10,
+      "nodes": 119274,
+      "edges": 3862637,
+      "missing": 0,
+      "all_root_verifiers_pass": true,
+      "all_caller_guards_pass": true,
+      "root_node_deltas": [
+        {
+          "original": "exists_equalRankThetaRatio_value",
+          "replacement": "run78_equalRankThetaRatio_value",
+          "original_nodes": 118062,
+          "replacement_nodes": 118062,
+          "delta": 0
+        },
+        {
+          "original": "exchange_theorem",
+          "replacement": "run79_exchange_theorem",
+          "original_nodes": 118191,
+          "replacement_nodes": 118207,
+          "delta": 16
+        },
+        {
+          "original": "explicit_matching",
+          "replacement": "run79_explicit_matching",
+          "original_nodes": 119067,
+          "replacement_nodes": 119083,
+          "delta": 16
+        },
+        {
+          "original": "stdClassSum_det_modKernel_eq",
+          "replacement": "run79_stdClassSum_det_modKernel_eq",
+          "original_nodes": 119088,
+          "replacement_nodes": 119101,
+          "delta": 13
+        },
+        {
+          "original": "stdClassSum_carrierXi_eq_carrierForm",
+          "replacement": "run79_stdClassSum_carrierXi_eq_carrierForm",
+          "original_nodes": 119213,
+          "replacement_nodes": 119226,
+          "delta": 13
+        }
+      ]
+    }
+  ],
+  "scope": "complete local frontiers only; not all RH roots",
+  "all_checks_pass": true,
+  "global_dependency_reduction_claim": false,
+  "full_RH_replay": false
+}

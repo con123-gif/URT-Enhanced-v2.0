@@ -3652,3 +3652,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT active continuous work, user directive 2026-11-27"
 claim = "independent"
+
+# Saved evidence consistency only: does not rerun Lean or close an RH premise.
+[[check]]
+id = "research.rh_b2_c2_saved_frontier_receipts"
+stage = "research"
+claim = "regression"
+run = "python research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_saved_b2_c2_frontiers.py"
+gating = true
+timeout = 60

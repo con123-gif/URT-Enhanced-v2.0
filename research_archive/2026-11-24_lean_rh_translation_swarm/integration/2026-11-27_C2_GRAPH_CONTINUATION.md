@@ -43,3 +43,23 @@ receipt, and regenerated the same combined source with the current runner.
 Next: inspect c2_native_graph/graph_execution.json and c2_graph_summary.json
 under the existing rh_native_work_logs; when complete, audit the ten roots
 and commit the precise verdict with source and graph hashes.
+
+## Completed local graph audits
+
+Both saved B2/C2 local graph audits now pass all independent reference/axiom
+checks and transitive caller guards; see 2026-11-27_B2_C2_GRAPH_AUDIT.md.
+The C2 interpreter export contains 119,274 nodes and 3,862,637 edges,
+with zero missing references. The separate native compatibility run is
+not yet accepted. RESUME HERE supersedes the earlier pending-graph step:
+finish the exact full-record comparison, then resume the live mathematical
+suppliers without rerunning the accepted compiler declarations.
+
+## Final compatibility result
+
+The full native/interpreted comparison PASSED: all 119,274 records and
+raw graph bytes match exactly, SHA256
+531283d9520b938399b9b973d932506ac9cf18379e50592ec74afc051e55a11e.
+Both modes passed all ten independent root verifiers and thirteen caller
+guards. This supersedes the earlier pending-compatibility statement.
+RESUME HERE: continue the unresolved mathematical suppliers in the live
+ledger; do not rerun this closed local audit. Full RH remains OPEN.

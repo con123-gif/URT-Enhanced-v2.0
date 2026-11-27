@@ -1,0 +1,59 @@
+{
+  "roots": [
+    "Filling.sum_pairWeight_le",
+    "Filling.b2_fused_sum_pairWeight_le",
+    "Filling.energy_le_of_level_pairs",
+    "Filling.b2_fused_energy_le_of_level_pairs",
+    "Filling.energy_le_of_linkEnergy_le",
+    "Filling.b2_fused_energy_le_of_linkEnergy_le",
+    "Filling.tsum_invPowWeight_le_of_codim_le",
+    "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le"
+  ],
+  "membership": {
+    "Filling.sum_pairWeight_le": 21,
+    "Filling.b2_fused_sum_pairWeight_le": 42,
+    "Filling.energy_le_of_level_pairs": 20,
+    "Filling.b2_fused_energy_le_of_level_pairs": 40,
+    "Filling.energy_le_of_linkEnergy_le": 16,
+    "Filling.b2_fused_energy_le_of_linkEnergy_le": 32,
+    "Filling.tsum_invPowWeight_le_of_codim_le": 85,
+    "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le": 170,
+    "Filling.b2_fused_outer_frameValueIndex_dvd": 42,
+    "Filling.b2_fused_inner_frameValueIndex_dvd": 42,
+    "Filling.energy_le_of_level_lt": 16,
+    "Filling.b2_fused_energy_le_of_level_lt": 32,
+    "RHB2Fusion.skew_correction_mul": 170,
+    "Filling.IsLabelledTerm.eq_of_frameImage_eq": 85,
+    "Filling.RHPositivityRun78.canonical_label_frame_unique": 170,
+    "Filling.RHPositivityRun78.labelled_frame_unique": 170
+  },
+  "optional_old_active_suppliers": {
+    "Filling.b2_active_outer_frameValueIndex_dvd": 0,
+    "Filling.b2_active_outer_count": 0,
+    "Filling.b2_active_inner_frameValueIndex_dvd": 0,
+    "Filling.b2_active_sum_pairWeight_le": 0,
+    "Filling.b2_active_energy_le_of_level_pairs": 0,
+    "Filling.b2_active_energy_le_of_level_lt": 0,
+    "Filling.b2_active_energy_le_of_linkEnergy_le": 0
+  },
+  "guards": {
+    "old_pair_absent_from_all_new_roots": true,
+    "old_level_energy_absent_from_new_energy_roots": true,
+    "old_full_energy_absent_from_new_full_energy": true,
+    "old_lower_level_absent_from_new_full_energy": true,
+    "new_pair_reachable_from_new_energy_roots": true,
+    "new_lower_level_reachable_from_new_full_energy": true,
+    "outer_bridge_reachable_from_all_new_roots": true,
+    "inner_bridge_reachable_from_all_new_roots": true,
+    "old_count_absent_from_all_fused_roots": true,
+    "new_count_reachable_from_all_fused_callers": true,
+    "skew_helper_reachable_from_all_fused_roots": true,
+    "unfused_active_suppliers_absent_from_all_fused_roots": true,
+    "old_label_uniqueness_absent_from_all_fused_roots": true,
+    "new_label_uniqueness_reachable_from_all_fused_roots": true,
+    "new_canonical_uniqueness_reachable_from_all_fused_roots": true
+  },
+  "all_guards_pass": true,
+  "constructor_inclusive": true,
+  "full_RH_replay": false
+}

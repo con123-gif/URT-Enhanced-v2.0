@@ -1,0 +1,62 @@
+{
+  "exists_equalRankThetaRatio_value": {
+    "exit": 0,
+    "nodes": 118062,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "run78_equalRankThetaRatio_value": {
+    "exit": 0,
+    "nodes": 118062,
+    "missing": 0,
+    "log": "audit-1.json"
+  },
+  "exchange_theorem": {
+    "exit": 0,
+    "nodes": 118191,
+    "missing": 0,
+    "log": "audit-2.json"
+  },
+  "run79_exchange_theorem": {
+    "exit": 0,
+    "nodes": 118207,
+    "missing": 0,
+    "log": "audit-3.json"
+  },
+  "explicit_matching": {
+    "exit": 0,
+    "nodes": 119067,
+    "missing": 0,
+    "log": "audit-4.json"
+  },
+  "run79_explicit_matching": {
+    "exit": 0,
+    "nodes": 119083,
+    "missing": 0,
+    "log": "audit-5.json"
+  },
+  "stdClassSum_det_modKernel_eq": {
+    "exit": 0,
+    "nodes": 119088,
+    "missing": 0,
+    "log": "audit-6.json"
+  },
+  "run79_stdClassSum_det_modKernel_eq": {
+    "exit": 0,
+    "nodes": 119101,
+    "missing": 0,
+    "log": "audit-7.json"
+  },
+  "stdClassSum_carrierXi_eq_carrierForm": {
+    "exit": 0,
+    "nodes": 119213,
+    "missing": 0,
+    "log": "audit-8.json"
+  },
+  "run79_stdClassSum_carrierXi_eq_carrierForm": {
+    "exit": 0,
+    "nodes": 119226,
+    "missing": 0,
+    "log": "audit-9.json"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "roots": [
+    "exists_equalRankThetaRatio_value",
+    "run78_equalRankThetaRatio_value",
+    "exchange_theorem",
+    "run79_exchange_theorem",
+    "explicit_matching",
+    "run79_explicit_matching",
+    "stdClassSum_det_modKernel_eq",
+    "run79_stdClassSum_det_modKernel_eq",
+    "stdClassSum_carrierXi_eq_carrierForm",
+    "run79_stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "scope": "ten local C2 caller frontiers; not the full RH graph",
+  "source_blob": "d50f626f5b262188ed5b686a04b39cb55f4acefb",
+  "checked_modules": [
+    {
+      "name": "C2Combined",
+      "artifacts": [
+        {
+          "name": "C2Combined.olean",
+          "bytes": 11035576,
+          "sha256": "9ee60a0ff16a5f1fd6756906e050081de2b0f7afba39334b0534e436b4f46df3"
+        }
+      ]
+    }
+  ],
+  "new_Lean_execution": false,
+  "full_RH_replay": false,
+  "constructor_inclusive_guards_pass": false
+}

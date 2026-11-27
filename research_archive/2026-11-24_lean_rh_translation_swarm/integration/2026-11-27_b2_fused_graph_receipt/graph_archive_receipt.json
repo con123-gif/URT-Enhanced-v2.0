@@ -1,0 +1,8 @@
+{
+  "raw_sha256": "912867f64de833937b485856c47be15f261b23e542b004ba6ecebb025edb44b6",
+  "raw_bytes": 199215965,
+  "archive_bytes": 26628692,
+  "archive_sha256": "c03ad14ebc1570c2d9fc7ee20c10718e5564d28b2dba1c1180801725d6e84a40",
+  "archive": "local_b2_graph.jsonl.gz",
+  "decompressed_hash_verified": true
+}

@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "record_order_ignored": true,
+    "missing_footer_rejected": true,
+    "duplicate_node_rejected": true,
+    "data_after_footer_rejected": true,
+    "changed_record_detected": true
+  },
+  "all_checks_pass": true,
+  "source": "actual Nat.le_refl interpreted graph with deliberately corrupted copies",
+  "full_RH_replay": false
+}

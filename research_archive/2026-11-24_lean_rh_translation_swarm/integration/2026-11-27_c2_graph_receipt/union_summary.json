@@ -1,0 +1,99 @@
+{
+  "roots": [
+    "exists_equalRankThetaRatio_value",
+    "run78_equalRankThetaRatio_value",
+    "exchange_theorem",
+    "run79_exchange_theorem",
+    "explicit_matching",
+    "run79_explicit_matching",
+    "stdClassSum_det_modKernel_eq",
+    "run79_stdClassSum_det_modKernel_eq",
+    "stdClassSum_carrierXi_eq_carrierForm",
+    "run79_stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "nodes": 119274,
+  "edges": 3862637,
+  "missing": 0,
+  "mask_histogram": {
+    "1023": 118030,
+    "1021": 16,
+    "341": 16,
+    "682": 31,
+    "1002": 1,
+    "1020": 117,
+    "340": 12,
+    "680": 12,
+    "1008": 867,
+    "336": 9,
+    "672": 9,
+    "960": 14,
+    "320": 6,
+    "640": 4,
+    "768": 120,
+    "256": 5,
+    "512": 5
+  },
+  "per_root": {
+    "exists_equalRankThetaRatio_value": {
+      "exit": 0,
+      "nodes": 118062,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "run78_equalRankThetaRatio_value": {
+      "exit": 0,
+      "nodes": 118062,
+      "missing": 0,
+      "log": "audit-1.json"
+    },
+    "exchange_theorem": {
+      "exit": 0,
+      "nodes": 118191,
+      "missing": 0,
+      "log": "audit-2.json"
+    },
+    "run79_exchange_theorem": {
+      "exit": 0,
+      "nodes": 118207,
+      "missing": 0,
+      "log": "audit-3.json"
+    },
+    "explicit_matching": {
+      "exit": 0,
+      "nodes": 119067,
+      "missing": 0,
+      "log": "audit-4.json"
+    },
+    "run79_explicit_matching": {
+      "exit": 0,
+      "nodes": 119083,
+      "missing": 0,
+      "log": "audit-5.json"
+    },
+    "stdClassSum_det_modKernel_eq": {
+      "exit": 0,
+      "nodes": 119088,
+      "missing": 0,
+      "log": "audit-6.json"
+    },
+    "run79_stdClassSum_det_modKernel_eq": {
+      "exit": 0,
+      "nodes": 119101,
+      "missing": 0,
+      "log": "audit-7.json"
+    },
+    "stdClassSum_carrierXi_eq_carrierForm": {
+      "exit": 0,
+      "nodes": 119213,
+      "missing": 0,
+      "log": "audit-8.json"
+    },
+    "run79_stdClassSum_carrierXi_eq_carrierForm": {
+      "exit": 0,
+      "nodes": 119226,
+      "missing": 0,
+      "log": "audit-9.json"
+    }
+  },
+  "naive_repeated_nodes": 1187300
+}

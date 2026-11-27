@@ -1,0 +1,46 @@
+{
+  "roots": [
+    "exists_equalRankThetaRatio_value",
+    "run78_equalRankThetaRatio_value",
+    "exchange_theorem",
+    "run79_exchange_theorem",
+    "explicit_matching",
+    "run79_explicit_matching",
+    "stdClassSum_det_modKernel_eq",
+    "run79_stdClassSum_det_modKernel_eq",
+    "stdClassSum_carrierXi_eq_carrierForm",
+    "run79_stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "membership": {
+    "exists_equalRankThetaRatio_value": 341,
+    "run78_equalRankThetaRatio_value": 682,
+    "exchange_theorem": 340,
+    "run79_exchange_theorem": 680,
+    "explicit_matching": 336,
+    "run79_explicit_matching": 672,
+    "stdClassSum_det_modKernel_eq": 320,
+    "run79_stdClassSum_det_modKernel_eq": 640,
+    "stdClassSum_carrierXi_eq_carrierForm": 256,
+    "run79_stdClassSum_carrierXi_eq_carrierForm": 512,
+    "RHCharacterBoxes77.exchange_of_standard_pairs": 682,
+    "exchange_of_partners": 1021
+  },
+  "guards": {
+    "old_stage_0_absent_from_new_descendants": true,
+    "new_stage_0_reachable_from_new_descendants": true,
+    "old_stage_1_absent_from_new_descendants": true,
+    "new_stage_1_reachable_from_new_descendants": true,
+    "old_stage_2_absent_from_new_descendants": true,
+    "new_stage_2_reachable_from_new_descendants": true,
+    "old_stage_3_absent_from_new_descendants": true,
+    "new_stage_3_reachable_from_new_descendants": true,
+    "old_stage_4_absent_from_new_descendants": true,
+    "new_stage_4_reachable_from_new_descendants": true,
+    "standard_pair_helper_reachable_from_all_new_roots": true,
+    "general_exchange_absent_from_new_equal_rank_root": true,
+    "general_outer_exchange_deliberately_retained": true
+  },
+  "all_guards_pass": true,
+  "constructor_inclusive": true,
+  "full_RH_replay": false
+}
