@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-27T23:22:15.346354+00:00",
+  "source": "https://mathoverflow.net/questions/309485/an-eigenvalue-of-certain-family-of-matrices",
+  "scope": "For every natural n, the exact source (n+1)-square complex matrix has eigenvalue zero if and only if n>0. Negative lower binomial indices are represented by an explicit i<=j guard.",
+  "zero_case": "M0=[3], proved nonzero determinant/eigenvalue exclusion; no boundary-only disproof.",
+  "positive_case": "Odd n uses Lampe proposed nonzero LEFT vector; even positive n uses MTyson proposed nonzero RIGHT vector. Both identities proved for all n via classical finite binomial identities, not finite screens.",
+  "mathematical_and_source_review": "PASS",
+  "prior_review": "Bounded primary review found no exact prior settlement; historical priority is not guaranteed. Source vector proposals credited to Lampe and MTyson.",
+  "primary_prior_audit_fork_commit": "28d719f834510d08814e9afe9a119e92ee03a269",
+  "proof_sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+  "statement_sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+  "whole_kernel_pass": true,
+  "official_proof_acceptance": false,
+  "attribution": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6; exact serving variant not exposed)."
+}
