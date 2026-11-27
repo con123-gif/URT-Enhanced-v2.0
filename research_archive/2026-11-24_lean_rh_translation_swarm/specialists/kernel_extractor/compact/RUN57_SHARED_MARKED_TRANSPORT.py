@@ -51,6 +51,7 @@ A2 receipts are independent. All root obligations and original graphs
 retained. HANDOFF TO integration, acceleration, theta, prime, audit.
 RH/star OPEN.
 """
+import hashlib
 import json
 import pathlib
 import sys
@@ -275,6 +276,32 @@ def stage2_run(step,cwd,env,out,deadline):
     finally:
         save()
 
+def preserve_source_cache(base_step, cwd, env, out, build_result, build_argv):
+    """Retain the original compiled objects before either overlay changes source.
+
+    This is build-cache provenance only; it cannot make a failed replacement pass.
+    """
+    archive = out / "native_a1_a2_original_oleans.tar.zst"
+    packed = base_step(["tar", "--zstd", "-cf", archive, "-C", cwd,
+                        ".lake/build/lib/lean"], cwd, env,
+                       out / "native_cache_archive.log", 180)
+    manifest = {
+        "compact": native.PIN, "mathlib": native.MATHLIB,
+        "lean_release_sha256": native.RELEASE,
+        "source_build_argv": list(map(str, build_argv)),
+        "source_build_complete": build_result["returncode"] == 0,
+        "source_build_result": build_result,
+        "source_is_original_before_A1_A2_overlay": True,
+        "archive": archive.name, "archive_result": packed,
+        "proof_receipt": False, "full_RH_replay": False,
+    }
+    if packed["returncode"] == 0:
+        with archive.open("rb") as stream:
+            manifest["sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
+        manifest["bytes"] = archive.stat().st_size
+    native.dump(out / "native_cache_manifest.json", manifest)
+
+
 def main():
     check_blob(A2_FILE,A2_BLOB)
     base_step=native.step
@@ -288,6 +315,7 @@ def main():
         if log.name=="module_0_build.log":
             result=base_step(argv,cwd,env,log,5400)
             if result["returncode"]==0:
+                preserve_source_cache(base_step,cwd,env,log.parent,result,argv)
                 a1_ok=a1_run(base_step,cwd,env,log.parent)
             else:
                 native.dump(log.parent/"a1_transport.json",{
