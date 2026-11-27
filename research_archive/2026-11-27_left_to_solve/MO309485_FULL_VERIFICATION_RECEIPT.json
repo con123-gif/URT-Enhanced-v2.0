@@ -1,0 +1,23 @@
+{
+  "independently_checked_at_utc": "2026-11-27T23:22:10.026322+00:00",
+  "run_id": 46081719328,
+  "job_id": 140781984295,
+  "head": "d01ca49691faa1f98be914317cc9156cb4fda9d9",
+  "artifact_id": 15236463459,
+  "zip_sha256": "7cc9fbffe450e41fb145cccea70d608644d865894322c711f0c69a8db8417a24",
+  "artifact_digest_verified": true,
+  "actual_selected_exit": 0,
+  "all_error_forms": 0,
+  "six_selected_axiom_lists": "exactly propext, Classical.choice, Quot.sound",
+  "final_theorem": "OMA.solution",
+  "source_sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+  "proof_sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+  "probe_sha256": "6b21dbe4e8f86b6c75a867b26addf29392d80cdf5505c3bcf0ddbaf86ae17579",
+  "immutable_public_probe_exact_local": true,
+  "entire_canonical_statement_and_proof_embedded": true,
+  "whole_source_certificate_pass": true,
+  "official_statement_checker": "accepted in initial run46079615097; source unchanged",
+  "official_contribution_submitted": false,
+  "official_full_proof_accepted": false,
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by Codex/GPT-6; exact serving variant not exposed. Lampe odd LEFT/MTyson even RIGHT proposals, classical binomial identities explicitly credited. Bounded prior gate is not a worldwide novelty guarantee."
+}
