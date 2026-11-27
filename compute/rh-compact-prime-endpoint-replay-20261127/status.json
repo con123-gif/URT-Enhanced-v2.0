@@ -1,0 +1,122 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: At least one conditional endpoint stage failed",
+  "returncode": 1,
+  "wall_s": 1925.91,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN91_QUEUE_ENDPOINT.py\", line 205, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN91_QUEUE_ENDPOINT.py\", line 198, in main\n    require(state[\"all_requested_checks_ok\"], \"At least one conditional endpoint stage failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: At least one conditional endpoint stage failed\n",
+  "id": "rh-compact-prime-endpoint-replay-20261127",
+  "question": "In one pinned official Lean workspace, actually replay the existing RUN88 analytic endpoint with RUN89 negative control, independently check RUN90 lightweight exact remainder/data adapter, and check RUN91 principal-class bridge using both compiled modules. Preserve independent stage receipts and exact axioms; no A/B/C or Main build, no claim of star, PNT tail, original-definition bridge or RH closure.",
+  "requested_by": "GPT prime-window lane; user continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN91_QUEUE_ENDPOINT.py --out {out}",
+  "utc": "2026-11-27T23:55:40Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "f66148d270ab023f25b8b24f694cb3187e9c1b70",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46081903735",
+  "outputs_committed": [
+    {
+      "path": "adapter.log",
+      "bytes": 1011,
+      "sha256": "ae22f1a38f08b5b83931f150796d594136481720390d9e2a4af415867c80f672"
+    },
+    {
+      "path": "adapter_build.log",
+      "bytes": 34018,
+      "sha256": "7b5a1b52bc25634fdfa871c5a42ff133f74a242da1fae2f55e86d07f3d96ff24"
+    },
+    {
+      "path": "analytic/OriginalAnalytic.lean",
+      "bytes": 193,
+      "sha256": "fa40cddbe2f28d148d9def1ac51d63cf7d702c6b2e7ffb64d33e508edc1bb01d"
+    },
+    {
+      "path": "analytic/Run88Endpoint.lean",
+      "bytes": 19957,
+      "sha256": "910ba9e6396185a4d193066604b2c702863ec16651f500ba8a9d1b6b47805c09"
+    },
+    {
+      "path": "analytic/build.log",
+      "bytes": 2936,
+      "sha256": "c5f6155d861fffcdff0cbd90cd92e4c92241e00a192d3e94da1b6a339ed1458e"
+    },
+    {
+      "path": "analytic/endpoint.log",
+      "bytes": 4393,
+      "sha256": "b1aa115659f1e216fb125c29f53530167d51f9b5347cc38531e2462f57b1e0ee"
+    },
+    {
+      "path": "analytic/endpoint_receipt.json",
+      "bytes": 3362,
+      "sha256": "e4f9148d2a21ae77392deb0f7b7097f49b8c9943d91f269f9a72f65cfb3a4f73"
+    },
+    {
+      "path": "analytic/originals.log",
+      "bytes": 344,
+      "sha256": "18560d3fa4b2d5249d14db3728aa93b8196f97615a376fbe0ec67176975da6e3"
+    },
+    {
+      "path": "analytic_runner.log",
+      "bytes": 826,
+      "sha256": "fe3166cc61753c17c4e6bdbb9983e1cae2c7a6d25eb57377cddee00238009a07"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "5027fa31dad22695437466ca16e2240661ca6ca788960d40d5fa2e617b8773ee"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 9203,
+      "sha256": "2f105d3889097f960884e2c8e570eca1b374e06442f927deb267fd302d24dbe2"
+    },
+    {
+      "path": "modules/Run90Adapter.lean",
+      "bytes": 11937,
+      "sha256": "c26f9c4c51231d3a9bb2aa210102b45fa4f15c861df66f586d7913a46adcd4b7"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "run91_receipt.json",
+      "bytes": 4492,
+      "sha256": "3b24d1cbb9d68ccee944a8f051a1f43e5dc040a4b72419180559346d00412f6f"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

@@ -1,0 +1,75 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:168:13: error: Type mismatch
+  add_le_add_left hLd ?m.821
+has type
+  ((1 - t) * Real.log a + t * Real.log b - Real.log x) / ↑(φ M) + ?m.821 ≤
+    ((1 - t) * a + t * b - x) / x / ↑(φ M) + ?m.821
+but is expected to have type
+  (1 - t) * primeError d M a + t * primeError d M b + ((1 - t) * Real.log a + t * Real.log b - Real.log x) / ↑(φ M) ≤
+    (1 - t) * primeError d M a + t * primeError d M b + ((1 - t) * a + t * b - x) / x / ↑(φ M)
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:184:18: error(lean.unknownIdentifier): Unknown constant `Real.tendsto_rpow_atTop`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:182:31: error: unsolved goals
+M : ℕ
+inst✝ : NeZero M
+ε : ℝ
+he : 0 < ε
+he' : ε < 1 / 100
+K : ℕ
+⊢ ∀ᶠ (x : ℝ) in Filter.atTop,
+    ∃ A k a b t U V,
+      K ≤ k ∧
+        a = ↑k ^ 4 ∧
+          b = ↑(k + 1) ^ 4 ∧
+            0 < a ∧
+              0 < b ∧
+                0 < x ∧
+                  a ≤ ↑A ∧
+                    b ≤ ↑A ∧
+                      x ≤ ↑A ∧
+                        0 ≤ t ∧
+                          t ≤ 1 ∧
+                            1 / x = (1 - t) / a + t / b ∧
+                              a ^ (8 * (ε / 2) + 2⁻¹ - 1) ≤ U ∧
+                                b ^ (8 * (ε / 2) + 2⁻¹ - 1) ≤ U ∧
+                                  ((1 - t) * a + t * b - x) / x / ↑(φ M) ≤ V ∧ U + V ≤ x ^ (8 * ε + 2⁻¹ - 1)
+'RHPrimeWindow87.quartic_cover' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:367:4: error: Ambiguous term
+  LFunction
+Possible interpretations:
+  ZMod.LFunction (⇑1) ρ : ℂ
+  
+  DirichletCharacter.LFunction 1 ρ : ℂ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:370:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:372:14: error: Ambiguous term
+  LFunction
+Possible interpretations:
+  ZMod.LFunction (⇑χ) ρ : ℂ
+  
+  DirichletCharacter.LFunction χ ρ : ℂ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:379:39: error: (kernel) application type mismatch
+  eq_false_of_decide (eagerReduce (Eq.refl Bool.false))
+argument has type
+  Bool.false = Bool.false
+but function has type
+  Decidable.decide (18480 = 0) = Bool.false → (18480 = 0) = False
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:381:43: error: Type mismatch: After simplification, term
+  hd
+ has type
+  @Eq (ZMod 18480) (↑↑d) (9240 - 1)
+but is expected to have type
+  @Eq (ZMod 18480) (↑↑d) 9239
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:386:8: warning: declaration uses `sorry`
+'RHPrimeWindow84.hinge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow84.log_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow84.primeError_chord' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow87.quartic_cover' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow88.eventual_from_endpoint_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow88.principal_right_from_endpoint_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow88.zeta_line_from_endpoint_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:404:0: error: RUN88 unexpected axiom RHPrimeWindow84.primeError_chord: [propext, sorryAx, Classical.choice, Quot.sound]

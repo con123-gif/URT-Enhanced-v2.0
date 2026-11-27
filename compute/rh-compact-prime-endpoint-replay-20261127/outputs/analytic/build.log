@@ -1,0 +1,39 @@
+⚠ [9047/9065] Built Statements (4.2s)
+warning: src/Statements.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9048/9065] Built Lib.General.LinearAlgebra.Base (5.5s)
+warning: src/Lib/General/LinearAlgebra/Base.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [9049/9065] Built Lib.General.Analysis.OstrowskiTaussky (11s)
+✔ [9050/9065] Built Lib.Adelic.Adeles.CoprimeValuation (16s)
+✔ [9051/9065] Built Lib.General.NumberTheory.ProcyclicImage (6.0s)
+ℹ [9052/9065] Built Lib.General.NumberTheory.Embeddings (4.4s)
+info: src/Lib/General/NumberTheory/Embeddings.lean:12:8: Try these:
+  [apply] [grind .] for pattern: [@star (RingHom #3 `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+  [apply] [grind
+    =>] for pattern: [IsTotallyComplex #3 #2, @star (RingHom _ `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+✔ [9053/9065] Built Lib.General.Analysis.ZpowSum (16s)
+✔ [9054/9065] Built Lib.General.NumberTheory.QuadField (9.1s)
+ℹ [9055/9065] Built Lib.General.NumberTheory.ClassNumberBound (20s)
+info: src/Lib/General/NumberTheory/ClassNumberBound.lean:23:83: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9056/9065] Built Lib.General.NumberTheory.QuadFieldSplitting (11s)
+✔ [9057/9065] Built Lib.General.Algebra.SumOverUnits (3.7s)
+✔ [9058/9065] Built Lib.General.NumberTheory.ZeroSymmetry (5.9s)
+✔ [9059/9065] Built Lib.Analytic.Landau.PolarLandau (15s)
+✔ [9060/9065] Built Lib.Analytic.PolyaVinogradov.PolyaVinogradov (17s)
+✔ [9061/9065] Built New.Endgame.PrimeError (21s)
+✔ [9062/9065] Built Lib.Analytic.DirichletTheta.MellinTheta (12s)
+✔ [9063/9065] Built Lib.Analytic.Primes.AuxiliaryPrimes (30s)
+⚠ [9064/9065] Built Lib.Analytic.QuadraticTwist.ZeroFreeTwist (16s)
+warning: src/Lib/Analytic/QuadraticTwist/ZeroFreeTwist.lean:67:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/Analytic/QuadraticTwist/ZeroFreeTwist.lean:80:30: `Nat.sq_mul_squarefree` has been deprecated: Use `exists_sq_mul_squarefree` instead, which binds the witnesses in the order in which they appear.
+warning: src/Lib/Analytic/QuadraticTwist/ZeroFreeTwist.lean:126:70: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9065/9065] Built New.Endgame.OneSidedCriterion (15s)
+Build completed successfully (9065 jobs).

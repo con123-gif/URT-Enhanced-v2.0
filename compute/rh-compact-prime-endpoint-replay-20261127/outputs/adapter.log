@@ -1,0 +1,9 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:163:92: error: unexpected token '_'; expected ':='
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:157:12: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership ℕ (Set ℝ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'Data.run90Remainder_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow90.pointwise_good_data' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow90.endpoint_from_good_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:206:0: error: RUN90 unexpected axiom RHPrimeWindow90.pointwise_good_data: [propext, sorryAx, Classical.choice, Quot.sound]
