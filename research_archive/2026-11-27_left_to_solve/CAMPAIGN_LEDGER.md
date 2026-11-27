@@ -85,3 +85,10 @@ of a genuinely unsolved problem. No novelty or campaign credit is claimed for th
 
 No background execution beyond real scheduled bot runs or observed workflows is
 promised. Current work proceeds within each available session budget.
+
+## Round 12 checkpoint, 27 November 2026, 14:29 UTC
+
+- Official live rules, catalogue and solved-feed read succeeded ([46016125981](https://github.com/con123-gif/open-math-agents/actions/runs/46016125981)); no owner entry found in solved feed. Confirmed campaign count remains **0/20**. PR7223 and PR7275 still open and unmerged; no new proof PR. Do not confuse pending statement submissions with proof acceptance.
+- A399155 strengthened: exact excess identity 2(F-G)=(q1-p)+sum_{i>=2}(qi-2) proves equality iff n is prime or n=4. All 199999 integers 2..200000 checked in Python. Same problem ID, no additional Lean verification; see ROUND_12_EQUALITY_AND_LIVE_RECONCILIATION.md.
+- Mimic approved statement now visible, no matching proof PR found; live brief read. One claim request returned HTTP409 in [46016258667](https://github.com/con123-gif/open-math-agents/actions/runs/46016258667). No lease, no note, no submission; do not retry blindly. Full informal proof plan preserved. No new official notes this run.
+- A401895 reduction PR7177 still open; author credits con123-gif for endpoint and modulo11 contributions. Not an accepted solution. Check exact step availability if merged. No other workers changed.
