@@ -14,6 +14,7 @@ Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679.
 | Fused B2 count, pair bound and energy chain | 8 | 94,382 | 2,857,836 | 0 |
 | C2 equal-rank, exchange, matching and two Carrier callers | 10 | 119,274 | 3,862,637 | 0 |
 | New restricted determinant route and Carrier transport | 4 | 119,299 | 3,865,789 | 0 |
+| Preferred direct determinant line and Carrier transport | 4 | 119,266 | 3,862,429 | 0 |
 
 These counts include Mathlib and structural dependencies. The frontiers
 overlap; adding their counts is not a count of distinct declarations or
@@ -76,6 +77,12 @@ though those graph bytes match. The genuine core pair and genuine full
 C2 pair both pass. The earlier five graph-structure controls remain
 preserved separately. The saved-evidence checker also requires the engine
 receipts and their exact hashes before accepting a cross-mode claim.
+
+## Preferred direct determinant line
+
+The newer direct-line kernel proof and all three exact caller transports passed. Its complete four-root graph passed all four unchanged independent Node verifiers and all 52 guards, with zero missing references and standard axioms only. The determinant closure falls from 119,078 to 118,952; the Carrier closure grows from 119,250 to 119,262. Thus the determinant saves 126 declarations relative to the previous restricted proof and 136 relative to the native original, while the Carrier retains its complement branch. The current/general root sets differ between audit rows: do not compare union totals as a global proof-size reduction.
+
+The real_matching membership mask is 13: present at the old determinant and both Carrier roots, absent at the new determinant. All new polynomial/action/continuous-line suppliers are reached. Native Fischer polarisation and finite exchange remain. Native inspection took 219.84 s; this is not a fresh theorem compilation or speed benchmark. [Preferred mathematical derivation and all kernel receipts](2026-11-27_DIRECT_DETERMINANT_LINE.md); [complete graph certificates](2026-11-27_direct_determinant_graph_receipt/).
 
 ## Evidence and limits
 

@@ -1,6 +1,8 @@
-# Determinant class sum — local kernel PASS
+# First restricted determinant attachment — accepted receipt
 
-27 November 2026. The complete original statement of stdClassSum_det_modKernel_eq has now passed actual Lean 4.35.0 kernel compilation through the restricted standard/finite determinant route. **Both complete original statements have passed local kernel compilation and the four-root dependency audit. Reciprocal height and RH remain OPEN.**
+27 November 2026. The preferred implementation has since advanced to the [direct determinant line and complete dependency audit](../2026-11-27_DIRECT_DETERMINANT_LINE.md). This folder preserves the first accepted restricted attachment and its exact prior failures.
+
+The complete original statement of stdClassSum_det_modKernel_eq has now passed actual Lean 4.35.0 kernel compilation through the restricted standard/finite determinant route. **Both complete original statements have passed local kernel compilation and the four-root dependency audit. Reciprocal height and RH remain OPEN.**
 
 Fix the original field, positive even rank \(m\) and weight tuple \(c\). One real \(C\), chosen before the entire admissible modulus/character family, gives
 \[

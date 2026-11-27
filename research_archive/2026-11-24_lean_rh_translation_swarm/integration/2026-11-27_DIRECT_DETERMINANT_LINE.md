@@ -1,6 +1,6 @@
-# Direct determinant line — local kernel PASS
+# Direct determinant line — kernel and full local graph PASS
 
-27 November 2026. All new proof files below passed actual normal Lean 4.35.0 kernel execution, with propext, Classical.choice and Quot.sound only. Both complete original determinant and Carrier statements are unchanged. The new four-root dependency audit is prepared next; no new transitive-deletion claim is accepted yet. Reciprocal height, human assembly and RH remain OPEN.
+27 November 2026. All new proof files below passed actual normal Lean 4.35.0 kernel execution, with propext, Classical.choice and Quot.sound only. Both complete original determinant and Carrier statements are unchanged. The four-root constructor-inclusive audit also passed: all four independent verifiers and all 52 supplier guards, with zero missing references. General real_matching is absent transitively from the new determinant path and retained in the Carrier complement. Reciprocal height, human assembly and RH remain OPEN.
 
 For the definite square polynomial D=product_tau det(X_tau)^card(iota_tau), the exact native real Weil action gives the covariance
     M(P(u^T X)) = product_tau det(u_tau)^card(iota_tau) * M(P).
@@ -24,7 +24,9 @@ The empty stacked determinant is exactly D, and the matched empty polynomial is 
 
 This formal implementation continues the human fixed-line idea already archived in character-box RUN66. Its native proof retains Fischer polarisation; it does not claim to formalize RUN66's alternative compact-average/polar-decomposition derivation or remove the Fischer supplier itself. The critical integral-measure human construction is already in RUN65. Do not duplicate it.
 
-Next: execute the four current/direct determinant and Carrier roots with the exact 52-guard roster in C2_DIRECT_DETERMINANT_GRAPH.json. Require real_matching and the older canonical matching absent from the new determinant path; require the Carrier complement to retain its original general matching. Complete reachability must confirm this before counting a reduction.
+The [complete four-root graph](2026-11-27_direct_determinant_graph_receipt/) has 119,266 union declarations and 3,862,429 edges. The determinant closure falls from 119,078 to 118,952 (126 fewer); the Carrier closure grows from 119,250 to 119,262 (12 more). The current determinant has 136 fewer declarations than the earlier audited native original. These are local unchanged-statement counts, not a global RH reduction. The native export took 219.84 s. All 52 guards and reconstructed axiom closures passed.
+
+Next: replay [C2_VALUE_FAMILY_TRANSPORT.lean](C2_VALUE_FAMILY_TRANSPORT.lean) against the original ValueFamilies, TwistForRows and FitTwistsExist modules. This prepared source preserves their complete types and changes only each intended supplier. It retains the original C1 row, period-ring, denominator and finite-prime budget inputs; it is distinct from RUN84's budget split. It has not been compiled. Reuse the queued C1 original build and retained cache, rather than repeat its source closure.
 
 The graph's optional archive-before-audit storage path was checked on the existing Nat.le_refl stream: unchanged independent Node verifier passed for both plain and archived/random-access inputs, and all four output files were byte-identical. This is byte-preserving transport, not a new Lean proof. [Exact control](2026-11-27_compressed_graph_control/).
 

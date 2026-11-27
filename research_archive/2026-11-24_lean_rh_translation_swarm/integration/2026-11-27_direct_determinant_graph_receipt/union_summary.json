@@ -1,0 +1,47 @@
+{
+  "roots": [
+    "c2_stdClassSum_det_modKernel_eq",
+    "c2_direct_stdClassSum_det_modKernel_eq",
+    "c2_stdClassSum_carrierXi_eq_carrierForm",
+    "c2_direct_stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "nodes": 119266,
+  "edges": 3862429,
+  "missing": 0,
+  "mask_histogram": {
+    "15": 118937,
+    "13": 138,
+    "5": 3,
+    "10": 15,
+    "12": 171,
+    "4": 1,
+    "8": 1
+  },
+  "per_root": {
+    "c2_stdClassSum_det_modKernel_eq": {
+      "exit": 0,
+      "nodes": 119078,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "c2_direct_stdClassSum_det_modKernel_eq": {
+      "exit": 0,
+      "nodes": 118952,
+      "missing": 0,
+      "log": "audit-1.json"
+    },
+    "c2_stdClassSum_carrierXi_eq_carrierForm": {
+      "exit": 0,
+      "nodes": 119250,
+      "missing": 0,
+      "log": "audit-2.json"
+    },
+    "c2_direct_stdClassSum_carrierXi_eq_carrierForm": {
+      "exit": 0,
+      "nodes": 119262,
+      "missing": 0,
+      "log": "audit-3.json"
+    }
+  },
+  "naive_repeated_nodes": 476542
+}

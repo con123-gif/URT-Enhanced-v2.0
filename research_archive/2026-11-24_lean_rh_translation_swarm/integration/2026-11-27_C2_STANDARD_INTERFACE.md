@@ -1,6 +1,6 @@
 # C2: a checked uniform standard-pair interface
 
-27 November 2026. **The restricted route now reaches the complete original determinant class-sum statement and its Carrier consumer.** Both kernel replays and their complete four-root dependency audit passed. RH and root C2 remain OPEN.
+27 November 2026. **The preferred route now includes the checked direct determinant line.** It reaches both complete original determinant/Carrier statements and passes all 52 guards of the complete four-root audit. General real matching is absent from the determinant path and retained in the Carrier complement. [Current derivation and evidence](2026-11-27_DIRECT_DETERMINANT_LINE.md). RH and root C2 remain OPEN. The component interface evidence below is retained.
 
 With the original rank, sign, weight and rapidness conditions, one common
 real C and one rapid datum x work for every semilocal tame character:
