@@ -1,0 +1,73 @@
+{
+  "problem": "mo-309485",
+  "first": {
+    "run": 46080477123,
+    "commit": "f03ef1642639669448d92ffe13d589e5fdbe024a",
+    "artifact": 15236881692,
+    "zip_sha256": "39c85f8c2b642cf0ae3cca653ea0437c46596ce1c118b60af138893487317d9f",
+    "zip_digest_matched": true,
+    "actual_full_exit": 1,
+    "all_error_count": 5,
+    "errors": [
+      [
+        "344",
+        "47",
+        "elaboration function for `Mathlib.Tactic.subscriptTerm` has not been implemented"
+      ],
+      [
+        "471",
+        "4",
+        "unsolved goals"
+      ],
+      [
+        "503",
+        "4",
+        "unsolved goals"
+      ],
+      [
+        "529",
+        "47",
+        "Type mismatch"
+      ],
+      [
+        "588",
+        "17",
+        "elaboration function for `Mathlib.Tactic.subscriptTerm` has not been implemented"
+      ]
+    ],
+    "whole_pass": false,
+    "old_candidate_preserved": true,
+    "odd_repair": "Enable the actual Matrix notation scope; previous left-kernel theorem type failed before its body elaborated. No substantive mathematical change.",
+    "immutable_public_local_snapshot_exact": true,
+    "probe_sha256": "046dd94c1c7e64013ca3548ca55bb01829e69278e4643e0b7bbdff5f5fe83f51",
+    "job": 140778020968
+  },
+  "second": {
+    "independent_review_at_utc": "2026-11-27T23:17:29.461122+00:00",
+    "run": 46081224138,
+    "job": 140780405028,
+    "head": "061aeb04a291a8b7f976f4cd844583ba08a99237",
+    "artifact": 15237203166,
+    "zip_sha256": "b5a8d8fde367ea45de1d6dbe3af3f0eec1d20b0b41ef93b0303338f47df0283c",
+    "digest_matched": true,
+    "actual_exit": 1,
+    "all_error_markers": [
+      "CampaignProbe.lean:348:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern",
+      "CampaignProbe.lean:474:31: error(lean.unknownIdentifier): Unknown constant `Nat.choose_zero`",
+      "CampaignProbe.lean:472:4: error: unsolved goals",
+      "CampaignProbe.lean:507:32: error(lean.unknownIdentifier): Unknown constant `Nat.choose_zero`",
+      "CampaignProbe.lean:507:6: error: Type mismatch: After simplification, term",
+      "CampaignProbe.lean:597:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+    ],
+    "error_marker_count": 6,
+    "binomial_A_B_C": "all standard3 only",
+    "whole_pass": false,
+    "official_submission": null
+  },
+  "first_exact_log": "CampaignProbe.lean:37:8: warning: declaration uses `sorry`\nCampaignProbe.lean:344:47: error: elaboration function for `Mathlib.Tactic.subscriptTerm` has not been implemented\n  ᵥ\nCampaignProbe.lean:359:8: warning: declaration uses `sorry`\nCampaignProbe.lean:359:29: warning: Variable name `hn` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hn\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nCampaignProbe.lean:471:4: error: unsolved goals\ncase pos\nm i : ℕ\nhm : Odd m\nhi : i < m\nhcut :\n  ∑ j ∈ Finset.range m, (-1) ^ j * ↑((2 * m - 1 - i).choose j) * ↑((m + m - j).choose m) =\n    (if 2 * m - 1 - i ≤ m then ↑((m + m - (2 * m - 1 - i)).choose (m - (2 * m - 1 - i))) else 0) -\n      (-1) ^ m * ↑((2 * m - 1 - i).choose m)\nhs : (-1) ^ m = -1\nh : i = m - 1\nhe : 2 * m - 1 - i = m\n⊢ (if 2 * m ≤ m + (m - 1) + 1 then ↑((m + m - (2 * m - 1 - (m - 1))).choose (m - (2 * m - 1 - (m - 1)))) else 0) = 1\nCampaignProbe.lean:472:12: warning: This simp argument is unused:\n  he\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nCampaignProbe.lean:503:4: error: unsolved goals\ncase pos\nm i : ℕ\nhm : Odd m\nhi : i < m\nhs : (-1) ^ m = -1\nhs0 : (-1) ^ (m - 1) = 1\nhcut :\n  ∑ j ∈ Finset.range (m - i), (-1) ^ j * ↑((2 * m - 1 - i).choose j) * ↑((m + (m - i) - j).choose m) =\n    (if 2 * m - 1 - i ≤ m then ↑((m + (m - i) - (2 * m - 1 - i)).choose (m - (2 * m - 1 - i))) else 0) -\n      (-1) ^ (m - i) * ↑((2 * m - 1 - i).choose (m - i))\nhsprod : (-1) ^ i * (-1) ^ (m - i) = -1\nh : i = m - 1\nhe : 2 * m - 1 - i = m\n⊢ (if 2 * m ≤ m + (m - 1) + 1 then ↑((m + (m - (m - 1)) - (2 * m - 1 - (m - 1))).choose (m - (2 * m - 1 - (m - 1))))\n    else 0) =\n    1\nCampaignProbe.lean:529:47: error: Type mismatch\n  sum_shift m i (Decidable.byContradiction fun a => raw_second_sum._proof_1_14 m i hi a) ?m.713\nhas type\n  (∑ j ∈ Finset.range m, if i ≤ j then ?m.713 (j - i) else 0) = ∑ k ∈ Finset.range (m - i), ?m.713 k\nbut is expected to have type\n  (∑ j ∈ Finset.range m,\n      if i ≤ j then\n        (-1) ^ i * ((-1) ^ (j - i) * ↑((2 * m - 1 - i).choose (j - i)) * ↑((m + (m - i) - (j - i)).choose m))\n      else 0) =\n    ∑ k ∈ Finset.range (m - i), (-1) ^ i * ((-1) ^ k * ↑((2 * m - 1 - i).choose k) * ↑((m + (m - i) - k).choose m))\nCampaignProbe.lean:504:12: warning: This simp argument is unused:\n  he\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h, hs0]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nCampaignProbe.lean:588:17: error: elaboration function for `Mathlib.Tactic.subscriptTerm` has not been implemented\n  ᵥ\nCampaignProbe.lean:606:8: warning: declaration uses `sorry`\nCampaignProbe.lean:606:29: warning: Variable name `hn` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hn\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'OMA.MO309485.OddKernel.det_eq_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'OMA.MO309485.EvenKernel.det_eq_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'OMA.solution' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+  "second_exact_log": "CampaignProbe.lean:37:8: warning: declaration uses `sorry`\nCampaignProbe.lean:348:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ∑ i, ?f ↑i\nin the target expression\n  ∑ i, oddVector n ↑i * entry n ↑i ↑j = 0\n\nn : ℕ\nhn : Odd n\nj : Fin (n + 1)\n⊢ ∑ i, oddVector n ↑i * entry n ↑i ↑j = 0\nCampaignProbe.lean:474:31: error(lean.unknownIdentifier): Unknown constant `Nat.choose_zero`\nCampaignProbe.lean:472:4: error: unsolved goals\ncase pos\nm i : ℕ\nhm : Odd m\nhi : i < m\nhcut :\n  ∑ j ∈ Finset.range m, (-1) ^ j * ↑((2 * m - 1 - i).choose j) * ↑((m + m - j).choose m) =\n    (if 2 * m - 1 - i ≤ m then ↑((m + m - (2 * m - 1 - i)).choose (m - (2 * m - 1 - i))) else 0) -\n      (-1) ^ m * ↑((2 * m - 1 - i).choose m)\nhs : (-1) ^ m = -1\nh : i = m - 1\nhe : 2 * m - 1 - i = m\n⊢ ↑((m + m - m).choose 0) = 1\nCampaignProbe.lean:474:48: warning: This simp argument is unused:\n  Nat.cast_one\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Nat.sub_self, Nat.choose_zero]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nCampaignProbe.lean:507:32: error(lean.unknownIdentifier): Unknown constant `Nat.choose_zero`\nCampaignProbe.lean:507:6: error: Type mismatch: After simplification, term\n  hs0\n has type\n  (-1) ^ (m - 1) = 1\nbut is expected to have type\n  (-1) ^ (m - 1) * ↑((m + (m - (m - 1)) - m).choose 0) = 1\nCampaignProbe.lean:597:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ∑ i, ?f ↑i\nin the target expression\n  ∑ j, entry n ↑i ↑j * vector (n + 1) ↑j = 0\n\nn : ℕ\nhn : Even n\ni : Fin (n + 1)\n⊢ ∑ j, entry n ↑i ↑j * vector (n + 1) ↑j = 0\n'OMA.MO309485.Binomial.sum_A' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OMA.MO309485.Binomial.sum_B' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OMA.MO309485.Binomial.sum_C' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OMA.MO309485.OddKernel.det_eq_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'OMA.MO309485.EvenKernel.det_eq_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'OMA.solution' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+  "third_pass_receipt": "MO309485_FULL_VERIFICATION_RECEIPT.json",
+  "first_snapshot": "https://github.com/con123-gif/open-math-agents/blob/f03ef1642639669448d92ffe13d589e5fdbe024a/campaign/ProbeMO309485FullFirst.lean",
+  "second_snapshot": "https://github.com/con123-gif/open-math-agents/blob/061aeb04a291a8b7f976f4cd844583ba08a99237/campaign/ProbeMO309485FullSecond.lean",
+  "status": "First and second failed snapshots retained honestly; exact unchanged source/mathematics ultimately passed in Third."
+}
