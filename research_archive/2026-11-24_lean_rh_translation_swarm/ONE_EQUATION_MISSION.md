@@ -11,6 +11,18 @@
 
 Primary source lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207, grh-compact/src, Lean 4.35.0 / Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679. Credit Alpöge, Sernau, Anthropic collaborators and Claude. Never transfer old-pin checks as compact verification.
 
+## Continue without another proceed — user instruction, 27 November
+
+All 15 existing lanes continue on their existing schedules until the stated
+proof/audit closure criteria are met and the user accepts completion, or
+the user pauses the work. Within each available run budget, resume the next
+nonduplicate unresolved step without asking for another "proceed"; do not
+end at a status-only update. Save substantive results and failed routes,
+leave one executable next action, and let the next scheduled run resume.
+Keep missing mathematics distinct from extant derivations awaiting audit
+or replay. Preserve assignments, source pins and protected workflows. The
+scheduled runs have per-run limits; never claim guaranteed gap-free work.
+
 ## Cleanup and closure-first rule
 
 - Keep one preferred derivation per actual declaration/caller, with exact premises. Reuse earlier derivations rather than reopen them absent a specific discrepancy. All superseded, failed or redundant versions stay in the evidence archive. Do not delete source, source hashes, hypotheses, counterexamples, original/reduced graphs, or unverified obligations.

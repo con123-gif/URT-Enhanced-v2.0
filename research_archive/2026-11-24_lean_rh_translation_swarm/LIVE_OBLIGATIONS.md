@@ -10,7 +10,7 @@
 | A2 | ShortAndEnough; actual short-column span, integral vacuum/null cone, theta–Hecke pairing and lift norm | Existing RUN63 numerical suppliers and marked gauge; attach to same datum. Prove single-stage pairing and integral frame existence. | Theta / acceleration |
 | A3 | CM formal-height / chosen-level normalization | RUN75 b892a87c published Kronecker bridge; RUN76 82672996 relative different norm. Retain primitive CM formal-group and exact frame inputs. | Literature / acceleration |
 | B1 | SharpData / SiegelWeil / Rallis absolute and finite cutoff | Integration notes COMPACT_SIEGEL_WEIL_NATIVE_BRIDGE, COMPACT_CLEAN_GRAPH_AUDIT, COMPACT_DOUBLING_PHASE_AND_GRAPH_PAIRING, COMPACT_DUAL_DATUM_PROJECTOR_AUDIT; RUN76 c8d08359 independent cutoff audit. Audit common vacuum/majorant and exact model/Haar assumptions, replay. | Positivity / literature / audit |
-| B2 | AmplitudeSums / CrudeEnergy / LinkPairing / BlockBound | Lift, quotient lower bound, marked common-link inclusion and pointwise pair are connected at their actual callers by the audit below, under named primitive inputs. Validate the finite-fixer primitive and replacements; next audit the marked packing/divisibility and weighted counts at BlockBound, then their energy consumer. | URT / Landau / geometry |
+| B2 | AmplitudeSums / CrudeEnergy / LinkPairing / BlockBound | Lift, quotient lower bound, marked common-link inclusion and pointwise pair are connected by the caller audit below. Counting constructions also exist in RUN73/74/75 and the 26-November notes. Replay their prepared certificates in the single B2 batch below, validate primitive inputs, and connect replacements at the actual BlockBound/energy consumers. | URT / Landau / geometry |
 | B3 | Moments / GlobalSieve / FiniteSystem | Retain real/finite shell, frequency, head bounds, one-vector and local energy suppliers; use RUN51 finite Fourier and existing majorant-to-correlation work. Prove missing actual quantitative suppliers, not just positivity. | Landau / positivity |
 | B4 | FillingTheorem: Fits.exists_translate_finrank_comap_le | Connect B1–B3 to actual ramified column maps, moment and rank bounds, positive row dimension; native named theorem has been checked on original source, not shortened replacement. | Integration / editor |
 | C1 | FitTwistsExist / Selmer; crystalline and integral frame foundations | RUN75 2f004f32 determinant contradiction and frame construction conditional; use RUN66 radius/span and filtered coefficient caller. Remaining integral basis contraction, chart/adic approximation, odd-Sha and actual fit witness. | Galois / mathematics |
@@ -18,7 +18,7 @@
 | C3 | RibetElement / balanced rows and arithmetic budget | 452515bd final Ribet budget, existing coefficient audit, triangle/cocycle and signed depth/cut/profile guards. Connect suppliers to actual m-fold twist, do not recompute final budget. | Galois / mathematics / editor |
 | D1 | DataExist.exists_data | Human derivation §6c independently audited in 39478bf0 (uniform Siegel–Walfisz, all record fields and quantifiers). Replay full witness and exact caller; no missing D1 human derivation identified. | Prime / audit |
 | E1 | PrimeError / OneSidedCriterion / PolarLandau / ZeroFreeTwist | Human analytic implication §§6a–b reviewed by editor in [signed-residue audit](specialists/proof_editor/2026-11-27_D1_E1_SIGNED_RESIDUE_CALLER_AUDIT.lean), including fixed-modulus PNT, normalization, density, signed residues and Landau. Conditional on star; native replay remains. Do not reopen without specific discrepancy. | Prime / Landau / literature |
-| V1 | Native compact replacement verification | Six original named declarations checked; JetExponentBound build timed out 124; full_RH_replay=false. Prioritize cached shared runner, caller bridges and original-statement/axiom checks before more scalar certificates. | Kernel / dependency / audit |
+| V1 | Native compact replacement verification | Six original named declarations checked; JetExponentBound build timed out 124; full_RH_replay=false. New B2 batch prepared for eight existing helper proofs and six separate original caller axiom probes; actual replacements remain unchecked. Use its receipt before duplicate builds; then caller bridges. | Kernel / dependency / audit |
 | V2 | Integration and full dependency frontier | Compute constructor-inclusive reachable obligations on compact pin; deduplicate by source declaration, caller and exact premises; reconcile latest peer results into one spine. No percentage until denominator. | Integration / editor / dependency |
 
 ## Preferred B2 chain (do not repeat derivations)
@@ -30,6 +30,16 @@
 5. [Exact saturated link discriminant](integration/2026-11-27_INTERACTIVE_EXACT_LINK_DISCRIMINANT.md): direct human derivation of the actual lift/Jacobi upper bound, with candidate equality for the full integral lift lattice. Use its <= consequence at exists_link_split_le_classGauge; independent primitive audit and native replacement replay remain pending.
    [Caller audit](integration/2026-11-27_INTERACTIVE_LINK_PAIR_CALLER_AUDIT.md), (A)–(H), connects that <= consequence to the existing 26-November primitive note sections 4–7 and RUN80 e5803774. It rederives the marked common-link inclusion, the two splits, the quotient bound and the pair consumer under the retained finite-fixer, positive Gram, class-chart and congruence inputs. Those human derivations already exist; next validate their primitive/replay frontier and the actual BlockBound packing/counting. The stronger full-lattice equality is not required by the pair caller. No full B2 or kernel closure.
 6. Finite class averaging: editor 80f4ff6e. Symmetric energy half-factor: Landau b495c708. Geometric level aggregation: audit 446c68f9. Candidate reductions under retained premises. Audit and combine at the actual energy consumers; do not multiply purported improvements from different variants without proof.
+
+Counting supplier evidence already exists: geometry RUN73 29129d5a (integral
+skew correction), RUN74 ff5c7bc2 (saturation/index divisibility), RUN75
+c3a3b7e3 (middle-row projector and short-column annihilation), and
+integration 6bdfdba6 plus COMPACT_LATTICE_SATURATION_AND_CONVERGENCE (weighted
+count and class sum). The [B2 replay batch](integration/2026-11-27_CONTINUATION_AND_B2_NATIVE_REPLAY.md)
+registers one job, `rh-compact-b2-human-replay-20261127`; at registration
+only its local input preflight had run. Even success checks helper proofs
+and original declarations separately, not the full human assembly or a
+replacement at its caller. Keep these validation obligations explicit.
 
 ## Evidence and status
 

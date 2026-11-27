@@ -3562,3 +3562,11 @@ claim = "independent"
 gating = false
 run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_compact_lattice_convergence.py"
 timeout = 60
+
+[[job]]
+id = "rh-compact-b2-human-replay-20261127"
+question = "In one pinned BlockBound workspace, compile eight existing RUN73/74/75 geometric-fibre, saturation and middle-alignment helper proofs; check six original caller axiom reports separately and reject an omitted-projector-guard control. Preserve partial errors. This does not replay the full human assembly or a caller replacement and does not prove RH."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py --out {out}"
+timeout_minutes = 180
+requested_by = "GPT, user continuous-work directive 2026-11-27"
+claim = "independent"
