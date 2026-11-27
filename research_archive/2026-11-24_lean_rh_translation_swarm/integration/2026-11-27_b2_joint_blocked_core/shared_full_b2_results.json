@@ -1,0 +1,67 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "scope": "seven prerequisite proofs, checked transport controls, eleven joint B2 declarations and eight local graph roots",
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "human_assembly_verified": false,
+  "graph_executed": false,
+  "all_requested_checks_ok": false,
+  "joint_labelled_source": {
+    "source": "specialists/positivity_geometry/compact/RUN80_LabelFused.lean",
+    "source_blob": "d4ed493ddfced479b3be029bb554493c0c39accd"
+  },
+  "joint_fusion_checked": false,
+  "core_transport_controls_pass": false,
+  "primary_callers_checked": true,
+  "primary_receipt": {
+    "returncode": 0,
+    "seconds": 58.06,
+    "log": "active_b2_energy.log",
+    "axioms": {
+      "Filling.b2_active_outer_frameValueIndex_dvd": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Filling.b2_active_outer_count": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Filling.b2_active_inner_frameValueIndex_dvd": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Filling.b2_active_sum_pairWeight_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Filling.b2_active_energy_le_of_level_pairs": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Filling.b2_active_energy_le_of_level_lt": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Filling.b2_active_energy_le_of_linkEnergy_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "all_caller_guards_observed": true
+  },
+  "core_transport_driver": {
+    "returncode": 1,
+    "seconds": 1.77,
+    "log": "transport_core_driver.log"
+  },
+  "failure": "Core transport compatibility controls failed"
+}

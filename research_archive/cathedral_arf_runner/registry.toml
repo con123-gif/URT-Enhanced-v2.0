@@ -3627,3 +3627,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 20
 requested_by = "GPT active continuous work, user directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-lean435-transport-core-lift-20261127"
+question = "Core-only retry with the documented Command.liftCoreM around normal checked addDecl. Require a valid retarget accepted with no axioms and the deliberately wrong proof rejected by the kernel-specific declaration type mismatch, retaining both logs. No GRH checkout, Mathlib download or source build; no B2, C2 or RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_lean435_transport_controls.py --out {out}"
+timeout_minutes = 20
+requested_by = "GPT active continuous work, user directive 2026-11-27"
+claim = "independent"

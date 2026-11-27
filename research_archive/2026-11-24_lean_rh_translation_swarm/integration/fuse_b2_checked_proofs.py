@@ -28,7 +28,7 @@ LABEL_NAMES = ["Filling.RHPositivityRun78.canonical_label_frame_unique",
 LABEL_GUARD = "RUN80_LABEL_FUSED: both local supplier guards accepted"
 LAYOUT_OLD = """    Lean.addDecl (.thmDecl { name := replacement, levelParams := info.levelParams,
                             type := info.type, value := proof })"""
-LAYOUT_NEW = """    Lean.addDecl (.thmDecl {
+LAYOUT_NEW = """    Lean.Elab.Command.liftCoreM <| Lean.addDecl (.thmDecl {
       name := replacement
       levelParams := info.levelParams
       type := info.type
@@ -139,7 +139,7 @@ run_cmd do
       | _ => none
     -- Lean.addDecl invokes the ordinary kernel checker. Do not replace this
     -- with Environment.add/unchecked insertion or enable skipKernelTC.
-    Lean.addDecl (.thmDecl {
+    Lean.Elab.Command.liftCoreM <| Lean.addDecl (.thmDecl {
       name := replacement
       levelParams := info.levelParams
       type := info.type
@@ -207,7 +207,7 @@ run_cmd do
     if labelled:
         manifest["peer_labelled_source"] = {"source": LABEL_SOURCE, "source_blob": LABEL_BLOB}
         manifest["label_source_layout_adapter"] = {"old": LAYOUT_OLD, "new": LAYOUT_NEW,
-            "reason": "The first native core test exposed a one-column record continuation error"}
+            "reason": "Native controls require correctly aligned records and explicit CoreM-to-CommandElabM lifting"}
     native.dump(out / "fused_b2_input.json", manifest)
     return target, manifest
 

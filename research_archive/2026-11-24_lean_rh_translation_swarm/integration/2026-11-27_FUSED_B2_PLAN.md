@@ -113,3 +113,11 @@ The repaired local six-root graph reached 36307 complete JSON records but
 timed out at 3600.14 s, with a truncated last row and no footer. Its 67383296
 byte stream has SHA256 e21f600b09b86c60eee69b43392386f660bafb99cbd77360ab5f63507a4bebe3.
 It is incomplete and unaccepted; no caller graph or root obligation closes.
+
+The quick shared control (46021695131) then exposed a CoreM/CommandElabM
+type mismatch in both inputs. Neither outcome was a kernel result. The
+documented Lean.Elab.Command.liftCoreM is now explicit around addDecl,
+including the derived peer input. The negative control requires the exact
+kernel text "declaration type mismatch", verified in Lean/Message.lean.
+Derived fused source 46f4fe6655495d3d6a49ff2199f827fef30e7020: prepared only.
+Run the cheap core-only retry before any further full shared build.
