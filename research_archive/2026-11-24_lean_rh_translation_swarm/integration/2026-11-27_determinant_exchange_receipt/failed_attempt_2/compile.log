@@ -1,0 +1,18 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_2/C2DeterminantExchange.lean:49:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_2/C2DeterminantExchange.lean:51:61: error: Application type mismatch: The argument
+  u
+has type
+  LocProd 𝔠.S
+but is expected to have type
+  ↥SemilocalField.O
+in the application
+  π u
+'c2_determinant_exchange' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_2/C2DeterminantExchange.lean:76:0: error: Finite determinant exchange misses a checked supplier

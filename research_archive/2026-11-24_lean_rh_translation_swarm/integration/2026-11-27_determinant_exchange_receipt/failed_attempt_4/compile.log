@@ -1,0 +1,93 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_4/C2DeterminantExchange.lean:49:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_4/C2DeterminantExchange.lean:57:6: error: Tactic `rfl` failed: The left-hand side
+  (localChar 𝔠.S (AutChar.baseChange 𝔠.ν) 0) ↑u
+is not definitionally equal to the right-hand side
+  ∏ i ∈ ⋯.toFinset.attach, (ψ ↑((Set.equivOfEq o) i)) ((modulusResidue 𝔪 ⋯) (π u))
+
+E n : Type
+inst✝³ : Field E
+inst✝² : CMType E
+inst✝¹ : WeilData E
+inst✝ : Fintype n
+e : ℕ
+he : Fintype.card n = 2 * e
+hn : 2 ≤ Fintype.card n
+μ : NumberField.InfinitePlace E → ℤ
+hμ : ∀ (q : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * μ q
+v : fockSpace (realSigns E (homSigns 1 1))
+hv : IsRapidDatum v
+C : ℝ
+x : fockSpace (realSigns E (homSigns 1 1))
+hx : IsRapidDatum x
+H :
+  ∀ (𝔠 : SplitTameChar E μ),
+    have γ := rankTwist 𝔠.ν⁻¹ n;
+    ∃ c,
+      c ≠ 0 ∧
+        ‖c‖ ^ 2 = C * lValueProdInt 𝔠 ↑e ∧
+          ∀ (z : Matrix Empty n ((i : ↥𝔠.S) → LocField ↑i)),
+            IsIntMatrix SemilocalField.O z →
+              ∀ (g : G E 1),
+                thetaIntegral (stdSpace E n) (stdSpace E n) γ 1
+                    (localDatum (stdSpace E n) (stdSpace E n) x (stdRowDatum (Equiv.emptySum Empty n) 𝔠.χ z) ⋯) g =
+                  c *
+                    ∫ (h : G E 1),
+                      pairTheta (stdSpace E Empty) (stdSpace E n) γ γ
+                        (localDatum (stdSpace E Empty) (stdSpace E n) v (stdColDatum 𝔠.χ z) ⋯)
+                        (h, g) ∂(stdSpace E Empty).quotMeasure
+𝔪 : Modulus E
+ν : AutChar E
+χ : MulChar 𝔪.ResRing ℂ
+x✝ : IsTameFor 𝔪 ν μ χ
+h : Nonempty ↑𝔪.places
+ψ : (w : FinPlace E) → MulChar (ResField w) ℂ
+a₁ : ν.HasWeight μ ψ
+a₂ : ∀ (w : FinPlace E), ψ w ≠ 1 ↔ w ∈ 𝔪.places
+a₃ : χ = 𝔪.charOfTamePart ψ
+o : ↑⋯.toFinset = 𝔪.places
+hpos : ∀ (q : NumberField.InfinitePlace E), 0 < μ q
+𝔠 : SplitTameChar E μ :=
+  { ν := ν, ψ := ψ, hasWeight := a₁, S := ⋯.toFinset, nonempty := ⋯, star_notMem := ⋯, ne_one_iff := ⋯,
+    weight_pos := hpos }
+c : ℂ
+hc : c ≠ 0
+Hc :
+  ‖c‖ ^ 2 = C * lValueProdInt 𝔠 ↑e ∧
+    ∀ (z : Matrix Empty n ((i : ↥𝔠.S) → LocField ↑i)),
+      IsIntMatrix SemilocalField.O z →
+        ∀ (g : G E 1),
+          thetaIntegral (stdSpace E n) (stdSpace E n) (rankTwist 𝔠.ν⁻¹ n) 1
+              (localDatum (stdSpace E n) (stdSpace E n) x (stdRowDatum (Equiv.emptySum Empty n) 𝔠.χ z) ⋯) g =
+            c *
+              ∫ (h : G E 1),
+                pairTheta (stdSpace E Empty) (stdSpace E n) (rankTwist 𝔠.ν⁻¹ n) (rankTwist 𝔠.ν⁻¹ n)
+                  (localDatum (stdSpace E Empty) (stdSpace E n) v (stdColDatum 𝔠.χ z) ⋯)
+                  (h, g) ∂(stdSpace E Empty).quotMeasure
+disjoint_star✝ : 𝔪.places.IsConjDisjoint
+m : ∀ (x : 𝔸f E), (evalPlaces 𝔠.S) x ∈ SemilocalField.O ↔ idem 𝔪.places * x ∈ Ô E
+left✝¹ : Continuous ⇑(evalPlaces 𝔠.S)
+ρ : LocProd 𝔠.S →+ 𝔸f E
+left✝ : Continuous ⇑ρ
+k : ∀ (y : LocProd 𝔠.S), (evalPlaces 𝔠.S) (ρ y) = y
+k' : ∀ (x : 𝔸f E), ρ ((evalPlaces 𝔠.S) x) = idem 𝔪.places * x
+π : ↥SemilocalField.O →+* 𝔪.ResRing :=
+  (((evalPlaces 𝔠.S).restrict (Ô E) SemilocalField.O ⋯).liftOfRightInverse (fun x ↦ ⟨(↑ρ).1 ↑x, ⋯⟩) ⋯) ⟨𝔪.reduction, ⋯⟩
+hres : ∀ (i : ↥⋯.toFinset) (u : ↥SemilocalField.O), (modulusResidue 𝔪 ⋯) (π u) = (residueAt i) u
+this : IsLocalHom π :=
+  {
+    map_nonunit := fun u hu ↦
+      isUnit_iff_residueAt_ne_zero.mpr fun x ↦
+        hres x u ▸ IsUnit.ne_zero (IsUnit.map (modulusResidue 𝔪 (Eq.le o x.property)) hu) }
+u : ↥SemilocalField.O
+hu : IsUnit u
+⊢ (localChar 𝔠.S (AutChar.baseChange 𝔠.ν) 0) ↑u =
+    ∏ i ∈ ⋯.toFinset.attach, (ψ ↑((Set.equivOfEq o) i)) ((modulusResidue 𝔪 ⋯) (π u))
+'c2_determinant_exchange' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_DETERMINANT_EXCHANGE: checked standard and finite datum suppliers consumed

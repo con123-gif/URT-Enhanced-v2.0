@@ -1,0 +1,4 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_1/C2DeterminantExchange.lean:40:9: error: Tactic `rcases` failed: `right✝ : ∀ (x : 𝔸f E),
+  w✝ ((evalPlaces 𝔠.S) x) = idem 𝔪.places * x` is not an inductive datatype
+'c2_determinant_exchange' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_1/C2DeterminantExchange.lean:76:0: error: Finite determinant exchange misses a checked supplier

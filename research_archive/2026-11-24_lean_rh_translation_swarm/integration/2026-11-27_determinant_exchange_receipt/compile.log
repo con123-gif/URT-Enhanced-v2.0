@@ -1,0 +1,10 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_5/C2DeterminantExchange.lean:49:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'c2_determinant_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_DETERMINANT_EXCHANGE: checked standard and finite datum suppliers consumed

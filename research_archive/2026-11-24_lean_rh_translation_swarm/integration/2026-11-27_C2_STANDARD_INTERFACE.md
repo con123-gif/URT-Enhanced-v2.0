@@ -64,8 +64,25 @@ Exact [algebra source](C2_DETERMINANT_LIFT.lean),
 [receipt and environment audit](2026-11-27_determinant_lift_receipt/),
 and all three failed prior attempts are preserved.
 
-Next: construct the modulus-specific character and reduction map to join
-these two checked interfaces, then reuse the native real_matching
-specialization and exact rank-zero Haar normalization at the class sum.
+The modulus attachment is now checked too. It constructs the actual
+SplitTameChar, the original integral reduction map and its local-hom
+instance, proves character compatibility on units, and identifies both
+finite lifts with the required standard data. The common C and rapid x
+remain outside the entire modulus/character family. For every admissible
+member it supplies c≠0, |c|²=C·lValueProd, and the determinant-only theta
+identity, with all measure factors retained.
+
+Actual compilation: exit 0, 109.21 s, standard axioms only and all four
+checked standard/data suppliers consumed. Source
+`acefc3125d97bd02906c555c35e46722d6a31a6b`; module SHA256
+`494ee044f3c5656e6eb95f2c7ed343ec047ea37be692d1daac95f136242e95a6`.
+The [source](C2_DETERMINANT_EXCHANGE.lean) and
+[exact replay evidence](2026-11-27_determinant_exchange_receipt/)
+retain the four preceding failed attempts as failures.
+Its separate complete dependency graph check is in progress; no
+transitive graph acceptance is inferred from the compiler alone.
+
+Next: attach the native real_matching specialization and exact rank-zero
+Haar normalization at the original determinant class-sum statement.
 No arbitrary-partner extension is needed by this restricted supplier,
 but the actual consumer attachment still requires its own proof and audit.

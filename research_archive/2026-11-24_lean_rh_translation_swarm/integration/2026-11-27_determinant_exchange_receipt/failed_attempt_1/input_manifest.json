@@ -1,0 +1,67 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "9ed9251ba2fd552ea02bc14483dc3c7a7338f90c",
+  "checked_input_module": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035576,
+        "sha256": "9ee60a0ff16a5f1fd6756906e050081de2b0f7afba39334b0534e436b4f46df3"
+      }
+    ]
+  },
+  "checked_interface_dependencies": [
+    {
+      "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+      "module": {
+        "name": "C2StandardExchange",
+        "artifacts": [
+          {
+            "name": "C2StandardExchange.olean",
+            "bytes": 640504,
+            "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+      "module": {
+        "name": "C2DeterminantLift",
+        "artifacts": [
+          {
+            "name": "C2DeterminantLift.olean",
+            "bytes": 186912,
+            "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Finite modulus determinant-only exchange; final real matching and determinant class sum remain open",
+  "theorems": [
+    "c2_determinant_exchange"
+  ],
+  "full_RH_replay": false,
+  "native_source_build_performed": false,
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000",
+    "-Dpp.fullNames=true",
+    "-Ddebug.skipKernelTC=false",
+    "-j",
+    "2",
+    "-R",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_1",
+    "-o",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_1/C2DeterminantExchange.olean",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_exchange_1/C2DeterminantExchange.lean"
+  ]
+}
