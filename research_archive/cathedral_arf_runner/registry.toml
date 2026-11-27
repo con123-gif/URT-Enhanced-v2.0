@@ -3635,3 +3635,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 20
 requested_by = "GPT active continuous work, user directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-a1-a2-transport-20261127"
+question = "One shared original LocalStatement build: check the changed A1 marked-Hecke leaf, transport three exact existing caller proof terms through normal Lean kernel addDecl with exact direct-edge and axiom guards, then reuse the same workspace for the existing A2 RUN79 overlay and, if stage1 succeeds within budget, RUN81 stage2. Preserve separate logs and all unresolved obligations. No Main import or full RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN57_SHARED_MARKED_TRANSPORT.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT, user continuous-work directive 2026-11-27; shared A1/A2 coordination"
+claim = "independent"
