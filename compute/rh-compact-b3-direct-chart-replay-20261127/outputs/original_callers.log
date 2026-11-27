@@ -1,0 +1,3 @@
+'Gauge.lintegral_floorWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_selfNorm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_positions_le' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,10 @@
+{"new_helper_theorems": 8, "original_caller_axiom_probes": 3, "negative_control_rejected": true, "caller_replacements_checked": false, "human_assembly_verified": false, "full_RH_replay": false}
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN87_SHARED_B3_REPLAY.py", line 154, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN87_SHARED_B3_REPLAY.py", line 142, in main
+    native.require(state["all_requested_checks_ok"],
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: B3 replay incomplete; inspect actual receipts

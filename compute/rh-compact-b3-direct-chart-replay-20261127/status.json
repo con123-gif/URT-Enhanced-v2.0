@@ -1,0 +1,152 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: B3 replay incomplete; inspect actual receipts",
+  "returncode": 1,
+  "wall_s": 1039.99,
+  "tail": "{\"new_helper_theorems\": 8, \"original_caller_axiom_probes\": 3, \"negative_control_rejected\": true, \"caller_replacements_checked\": false, \"human_assembly_verified\": false, \"full_RH_replay\": false}\nTraceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN87_SHARED_B3_REPLAY.py\", line 154, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN87_SHARED_B3_REPLAY.py\", line 142, in main\n    native.require(state[\"all_requested_checks_ok\"],\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: B3 replay incomplete; inspect actual receipts\n",
+  "id": "rh-compact-b3-direct-chart-replay-20261127",
+  "question": "Replay the immutable RUN85 direct-chart/selfNorm/positions candidate through RUN86 in one shared pinned B3 workspace; build LocalTheorem and StandardLevel once, require complete original/replacement statements, standard axiom reports, all six constructor-inclusive root verifiers and 13 guards, retaining actual compiler and graph evidence. No Main, complete B3 assembly or RH claim.",
+  "requested_by": "GPT Landau lane; user continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN87_SHARED_B3_REPLAY.py --out {out}",
+  "utc": "2026-11-27T23:22:33Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "015633a555e2e98806b1b55b3b742892b7aeff24",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46080383664",
+  "outputs_committed": [
+    {
+      "path": "b2_build.log",
+      "bytes": 14575,
+      "sha256": "19487bd2b2c5ed72ad02bc0bca6f902240007ee6dc15610b2778eaf5c0c1c687"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 1893,
+      "sha256": "f2d561ba799e6158610d6306a942f17123bee804c0b94ab679a39be4e81823d1"
+    },
+    {
+      "path": "b3/RHRun85.lean",
+      "bytes": 34768,
+      "sha256": "c04ddd15092bdd20c9f250aa392325c4ec8c5f4a419ee6220f850a74e4274e49"
+    },
+    {
+      "path": "b3/RHRun85Graph.lean",
+      "bytes": 8229,
+      "sha256": "6701d930fba3fa9f0351e0df6f194bfff39c18abcd231d23d0f38b294cfc6c03"
+    },
+    {
+      "path": "b3/compile.log",
+      "bytes": 5148,
+      "sha256": "97a2df28ff8b3a0bc47159946abb86db745f09bbac62b52608060199d8df4d07"
+    },
+    {
+      "path": "b3/run86_receipt.json",
+      "bytes": 2712,
+      "sha256": "592cd2f5e5239a6cd0b034a3bbd46229eb623a356c537500f70eb1e55d4a39db"
+    },
+    {
+      "path": "b3_driver.log",
+      "bytes": 991,
+      "sha256": "e2fba601f70b5179863c48485c2bffcacf99fbfa58659b4cfadf974dba93293c"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "95671c5d94410d109a27681b2557f934b0ebf0b7690615cc794636be43d3e916"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 761,
+      "sha256": "fe0f78cf9623e34724b3f810ce0f5395e3e07ed5b003236346fbaffe3e4c3576"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 10706,
+      "sha256": "e2b085b3790cca0e90fe7423d66c124e1323a858d712af9e59809809d9e1f401"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "96a0f9aec4bc71feff88c16068f2b759778e0a2e9ee12f64e1718c3f81f084c0"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 271,
+      "sha256": "942ce5edbd7c56b9d82db75544357a6e970065c912cbc851f6b85ee857c46da8"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 854,
+      "sha256": "656dc43f9ddbbe074da5fdbfbf3bb7338e3b070b54e72d11dea84997dcefaf33"
+    },
+    {
+      "path": "preflight/RHRun85.lean",
+      "bytes": 34768,
+      "sha256": "c04ddd15092bdd20c9f250aa392325c4ec8c5f4a419ee6220f850a74e4274e49"
+    },
+    {
+      "path": "preflight/RHRun85Graph.lean",
+      "bytes": 8229,
+      "sha256": "6701d930fba3fa9f0351e0df6f194bfff39c18abcd231d23d0f38b294cfc6c03"
+    },
+    {
+      "path": "preflight/run86_receipt.json",
+      "bytes": 977,
+      "sha256": "93dec65d4678b97405bf9e32402653a556f565982abdda61372713a6278f5799"
+    },
+    {
+      "path": "preflight.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "ee68dd2f7c21a51b8d130b08c4ca0960c7a59a403fc76e0ce1ac99d47ae8e170"
+    },
+    {
+      "path": "run87_shared_receipt.json",
+      "bytes": 4557,
+      "sha256": "a54991996f474d31d59efe25576424ac34327dd6350d6d495ce6f33c4816fc81"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

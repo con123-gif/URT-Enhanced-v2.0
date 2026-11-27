@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN86_DIRECT_CHART_REPLAY.py", line 174, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN86_DIRECT_CHART_REPLAY.py", line 142, in main
+    native.require(receipt["returncode"] == 0 and receipt["axiom_audit_ok"] and receipt["transport_guards"] and obj.is_file(), "RUN85 compile/type/axiom check failed")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: RUN85 compile/type/axiom check failed

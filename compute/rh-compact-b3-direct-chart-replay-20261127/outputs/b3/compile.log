@@ -1,0 +1,65 @@
+'Gauge.directFloorChart_of_com' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_floorWeight_le_directChart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_floorWeight_le_directChart_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_floorWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Gauge.lintegral_mul_invWeight_le {A ι : Type} [CommRing A] [StarRing A] [TopologicalSpace A]
+  [MeasureTheory.MeasureSpace A] [P : Place A] {𝔰 : Shape} [Fintype ι] {m j : ℕ} {T : 𝔰.Form A} [IsHermUnit T.splitGram]
+  {F : Level ι T m} (Γ : Gauge F) {x : ↥T.G} {p : ℕ → Aˣ} {b : ℕ} {Φ : ↥T.G → ℝ≥0∞} {ρ : MeasureTheory.Measure ↥T.G}
+  [MeasureTheory.SFinite ρ] (hj : j ≤ 𝔰.ϱ) (hp : Size.IsHead j p) (o : x ∈ F.positions) (n : j ≤ b)
+  (k : (Shape.Form.unitriGroup b).FixesLeft Φ ∧ ∀ (g : ↥T.G), ¬F.IsNear b g → Φ g = 0) (l : Measurable Φ) :
+  ∫⁻ (g : ↥T.G), Φ g * F.invWeight j x (weylElem j p * g) ∂ascConv Place.heisenbergMeasure j ∗ₘ ρ ≤
+    (∏ a ∈ Finset.range j, F.floorModulus a (p a)⁻¹) * Γ.globalConst * ∫⁻ (g : ↥T.G), Φ g ∂ρ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/b3/RHRun85.lean:506:89: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/b3/RHRun85.lean:457:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/b3/RHRun85.lean:474:54: warning: This simp argument is unused:
+  Φ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [upperPairing, descConv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/b3/RHRun85.lean:515:6: error: (kernel) unknown constant 'Gauge.lintegral_selfNorm_le_from_floor'
+IsValuationPair.hermite.{u_1, u_2, u_3} {A : Type u_3} {n : Type u_1} {k : Type u_2} [CommRing A] {R : Subring A}
+  [Fintype n] [Fintype k] (val : IsValuationPair R) (ι : k ↪ n) (y : Matrix n k A) (wt : k → ℕ := 0) :
+  ∃ U ∈ intGL n R, ∃ D, D.BlockTriangular wt ∧ y = (↑U).submatrix id ⇑ι * D ∧ (↑U⁻¹).submatrix (⇑ι) id * y = D
+IsValuationPair.exists_mul_clear_cols.{u_1, u_2, u_3} {A : Type u_1} {n : Type u_2} {k : Type u_3} [CommRing A]
+  {R : Subring A} [Fintype n] [Fintype k] (val : IsValuationPair R) (M : Matrix k n A) (ι : k ↪ n) :
+  ∃ V ∈ intGL n R, ∀ (a : k), ∀ j ∉ Set.range ⇑ι, (M * ↑V) a j = 0
+IntegralPlace.IsStdLevel.gauge {ι : Type} {𝔰 : Shape} [Fintype ι] {m : ℕ} {A : Type} [SemilocalField A] [StarRing A]
+  [P : IntegralPlace A] {T : 𝔰.Form A} [IsHermUnit T.splitGram] {F : Level ι T (m + 1)} [h : IntegralPlace.IsStdLevel F]
+  (α : Aˣ := 1) (hα : ↑α ∈ IntegralPlace.R := by simp) (sα : Star.star ↑α = ↑α := by simp [*] <;> ring) : Gauge F
+Gauge.lintegral_floorWeight_le {A ι : Type} [CommRing A] [StarRing A] [TopologicalSpace A]
+  [MeasureTheory.MeasureSpace A] [P : Place A] {𝔰 : Shape} [Fintype ι] {m j : ℕ} {T : 𝔰.Form A} [IsHermUnit T.splitGram]
+  {F : Level ι T m} (Γ : Gauge F) (hj : j ≤ 𝔰.ϱ) (g : ↥T.G) (y : ↥T.G) :
+  F.IsNear j g →
+    ∫⁻ (ν : ↥T.G),
+        (Gauge.positionsOfSize F Γ).indicator (F.floorWeight j g) (g⁻¹ * (ν * y)) ∂ascConv Place.heisenbergMeasure j ≤
+      ∏ l ∈ Finset.range j, Γ.floorConst l
+'RHRun84.pair_clear' depends on axioms: [propext, Quot.sound]
+'RHRun84.pair_det' depends on axioms: [propext, Quot.sound]
+'Gauge.lintegral_selfNorm_le_from_floor' does not depend on any axioms
+'Gauge.lintegral_selfNorm_le_from_floor_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Gauge.lintegral_selfNorm_le_from_floor_bridge,
+ Quot.sound]
+'Gauge.lintegral_selfNorm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+RUN85_SELF: original complete statement and direct replacement guards
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/b3/RHRun85.lean:541:0: error: (kernel) unknown constant 'Gauge.lintegral_selfNorm_le_from_floor'
+RUN85_POSITIONS: original complete statement, all selfNorm occurrences retargeted
+'Gauge.lintegral_selfNorm_le_via_directChart' depends on axioms: [propext,
+ Classical.choice,
+ Gauge.lintegral_selfNorm_le_via_directChart,
+ Quot.sound]
+'Gauge.lintegral_positions_le_via_directChart' depends on axioms: [propext,
+ Classical.choice,
+ Gauge.lintegral_selfNorm_le_via_directChart,
+ Quot.sound]
+'Gauge.lintegral_positions_le' depends on axioms: [propext, Classical.choice, Quot.sound]
