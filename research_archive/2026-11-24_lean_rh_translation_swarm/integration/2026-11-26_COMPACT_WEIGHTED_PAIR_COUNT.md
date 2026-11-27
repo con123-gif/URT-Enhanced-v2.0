@@ -45,3 +45,48 @@ This is the exact required native constant, independent of the number of classes
 The native tsum_invPowWeight_le_of_codim_le uses §1 with c=M*g*det(Y Y*) and primitive basis of V, where Y=paddedLeading and M=q0^(n^4), followed by a second colouring of upper-frame entries modulo c. Its required fibre count one is a strong assertion: after an integral class-unipotent correction to align the middle rows, the upper-frame discrepancy X is removed by the native skew matrix σ=M[det(Y*)T-det(Y)T*-(Pα)*T], with α=(xRows(Y.adjugate^T))^T and T=Xα. This depends on the native shared-vector smallness and vanishing of X adj(Y) in the later columns, and the exact level/j congruence hypotheses. We have not independently reconstructed this entire geometric injection; it must be retained, along with the lattice discriminant estimate sum_latticeDisc_inv_le (uses sublatticeDisc, primitive bases and the class integral). The complete abstract weighted count and final pair-weight summation above are new human derivations; they do not establish these suppliers. No claim of full B closure, exact native replay or completion of the human RH proof.
 
 Sources compact pin: New/RealPlace/VolumeKernel.lean fc115f79a99192fc8ea0e72c2caa0bf2546b5cf0; New/Filling/BlockBound.lean 6c68e80e3b1ea2b7983696716305493a37f2b1fd; BoxPartition.lean 53f11966247a892d94cf688e8b366e887a92f641; CrudeBoundDefs.lean 0ba0d2532b14c414b9032466b79e10d4d60c3d18; CrudeEnergy.lean da67bf862a4c5e72ab6a81a7dfb462545cd8833f; Setup.lean 622e7ebe5c04b7ae87652e460762da7fb2e40727. Peer fc278308 covers bottom Schur and real band damping with shell/geometry suppliers still open. Preserve all native hypotheses and proof dependencies.
+
+## 4. 27 November — reconcile the actual inner divisor and its index convention
+
+The human geometric construction retained in §2 is supplied by
+[RUN74, §§1–3](../specialists/positivity_geometry/compact/RUN74_SATURATION_PAIR_DIVISIBILITY.lean).
+Use that existing proof rather than repeat its scalar pairing identities.
+The exact inner interface is now extracted as
+[`Filling.b2_active_inner_frameValueIndex_dvd`](B2_ACTIVE_CALLER_REPLACEMENT.lean):
+for y=(c',γ'), a rational γ, T=commonLink(γ,γ'), and
+CongruentTerms(c,c',γ,γ'), set
+L=T∩ker(frameMiddle(γ)^*). Then
+
+    frameValueIndex(c,termElem(c,y),g,L) | saturationIndex(termElem(c,y)).
+
+This local interface has no separate labelled-term, IsNearRep or HasLevel
+argument. The enclosing weighted count retains its level and near-term
+assumptions. Both class-position witnesses in the inner congruence use c'=y.1;
+the right class carried by the outer labelled q is not silently substituted
+for c'. Its outer divisor is evaluated at q's own termElem. The support map
+is an overcount, not a class-uniqueness assertion.
+
+The index convention matters. AdelicRingDefs defines submoduleIndex(A,B)
+as the additive relative index [B:A∩B], with value 0 when infinite; the pinned
+Mathlib GroupTheory/Index definition uses Nat.card. Thus, if the saturation
+index is 0, the displayed divisibility is automatic. In the nonzero case
+Sat/A is finite and RUN74's exact map gives
+
+    M/(M∩gB) ↪ gF(Sat)/gB ≅ F(Sat)/B,
+
+where the last quotient is an image of Sat/A. Its order therefore divides
+the saturation index. This explains why the local divisor can omit the
+level-based nonzero-index supplier. It does not remove that supplier from
+the outer divisor, inverse-weight count or surrounding energy estimate.
+The source's primitive bases, class Gram transport, principal-level
+congruence and positive X0 difference-vector argument are retained.
+
+Native evidence is precise and partial: run 45994173721 accepted this inner
+theorem with only propext, Classical.choice and Quot.sound, but the complete
+file exited 1 on an outer lambda-layout error. See
+[actual compiler log](https://github.com/con123-gif/URT-Enhanced-v2.0/blob/cathedral-research-state/compute/rh-compact-b2-callers-replay-20261127/outputs/active_b2_callers.log),
+blob acf075f047d1b374d2ef5379d39b7742470b15a4. The repaired pair/energy run
+45998845682 is pending. Eight generic helper proofs from RUN73/74/75 passed
+the separate earlier batch; they are not a native proof of the complete
+weighted count. The prepared skew/count caller patch is tested separately.
+Full B2, the complete human assembly and RH remain OPEN.
