@@ -1,0 +1,17 @@
+{
+  "run_id": 46076524016,
+  "job_id": 140765412897,
+  "commit": "d0c78fe59ba23949bb42d286319f7aa519b80e9d",
+  "artifact_id": 15236015244,
+  "zip_sha256": "3fb86dc09a5110f7df70c723f93ff2bd80101cc8e5bf0827b902776f66110032",
+  "selected_probe": "ProbeA369096FullSecond.lean",
+  "actual_exit": 0,
+  "errors": [],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "other_probe_mo430643_is_separate_failure": true,
+  "official_acceptance": false
+}
