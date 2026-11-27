@@ -1,0 +1,1289 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:44:4: error: Type mismatch: After simplification, term
+  IsTameFor.mul (IsTameFor.inv hα) (WeilData.hasWeight_upsilonU1_pow (Fintype.card n / 2))
+ has type
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))
+    ((-fun τ ↦ -↑(Fintype.card (ι τ))) + fun x ↦ ↑(Fintype.card n) / 2) χ⁻¹
+but is expected to have type
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (fun τ ↦ ↑(Fintype.card (ι τ)) + ↑(Fintype.card n) / 2)
+    χ⁻¹
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:66:24: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  α.HasWeight ?m.895 ?m.902
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:66:7: error: unsolved goals
+E n : Type
+inst✝⁴ : Field E
+inst✝³ : CMType E
+inst✝² : WeilData E
+inst✝¹ : Fintype n
+he : Even (Fintype.card n)
+hn : 2 ≤ Fintype.card n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+Q₀ : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+κ : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 → ℂ
+hκ :
+  ∀ (v : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1)
+    (ℓ : GInf E (blockSigns (Equiv.sumEmpty n Empty)) → PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 →L[ℂ] ℂ)
+    (ℓ' : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ →ₗ[ℂ] ℂ),
+    (∀ (g : GInf E (blockSigns (Equiv.sumEmpty n Empty))) (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)) × GInf E 1)
+        (w : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1),
+        (ℓ g) (((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) - ↑(Fintype.card (ι τ))) 0) x) w) = (ℓ (g * x.1)) w) →
+      (∀ (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)))
+          (Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ),
+          ((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) - ↑(Fintype.card (ι τ))) 0) (1, x))
+                ((polyVector
+                    (realSigns E
+                      (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                  Q₀) =
+              (polyVector
+                  (realSigns E
+                    (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                Q →
+            (ℓ x) v = ℓ' Q) →
+        ∀ (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v * (ℓ 1) ((posFockVector (Equiv.sumEmpty n Empty)) (stackedDetProd (Equiv.emptySum Empty n) η)) =
+            ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
+hd : Fintype.card n = 2 * (Fintype.card n / 2)
+hμ : ∀ (q : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * (↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2))
+C : ℝ
+x : fockSpace (realSigns E (homSigns 1 1))
+left✝¹ : IsRapidDatum x
+H :
+  ∀ (𝔪 : Modulus E) (ν : AutChar E) (χ : MulChar 𝔪.ResRing ℂ),
+    IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2)) χ →
+      have γ := rankTwist ν⁻¹ n;
+      ∃ c,
+        c ≠ 0 ∧
+          ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+            ∀ (g : G E 1),
+              thetaIntegral (stdSpace E n) (stdSpace E n) γ 1
+                  (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x) g =
+                c *
+                  ∫ (h : G E 1),
+                    pairTheta (stdSpace E Empty) (stdSpace E n) γ γ
+                      (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+                      (h, g) ∂(stdSpace E Empty).quotMeasure
+𝔪 : Modulus E
+α : AutChar E
+χ : MulChar 𝔪.ResRing ℂ
+hα : IsTameFor 𝔪 α (fun τ ↦ -↑(Fintype.card (ι τ))) χ
+ht :
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (fun τ ↦ ↑(Fintype.card (ι τ)) + ↑(Fintype.card n / 2))
+    χ⁻¹
+c : ℂ
+left✝ : c ≠ 0
+q : ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+hP : IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+β : AutChar E
+g : G E 1
+L : G E 1 → 𝒮 ((stdSpace E n).hom (stdSpace E n)) →L[ℂ] ℂ
+hc :
+  ∀ (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x)
+        g =
+      c *
+        ∫ (h : G E 1),
+          pairTheta (stdSpace E Empty) (stdSpace E n) α α
+            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+            (h, g) ∂(stdSpace E Empty).quotMeasure
+hv :
+  ∀ (u : GInf E 1),
+    ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, u))
+        ((polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+          ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))
+            (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))) =
+      (polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+        ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η))
+hL :
+  ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n))) (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+⊢ ∀ (g_1 a : GInf E (blockSigns (Equiv.sumEmpty n Empty))) (b : GInf E 1)
+    (w : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1),
+    (L (g * (g_1, 1)) ∘SL
+          ((stdSpace E n).hom (stdSpace E n)).integrated.flip
+            (((((stdSpace E n).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn ((fun A ↦ (χ⁻¹ A.det)⁻¹) ∘ vecToMat)))
+              ((stdSpace E n).hom (stdSpace E n)).vacElem))
+        (((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (a, b)) w) =
+      (L (g * (g_1 * a, 1)) ∘SL
+          ((stdSpace E n).hom (stdSpace E n)).integrated.flip
+            (((((stdSpace E n).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn ((fun A ↦ (χ⁻¹ A.det)⁻¹) ∘ vecToMat)))
+              ((stdSpace E n).hom (stdSpace E n)).vacElem))
+        w
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:64:39: error: `grind` failed
+case grind.1.1.1.1
+E n : Type
+inst : Field E
+inst_1 : CMType E
+inst_2 : WeilData E
+inst_3 : Fintype n
+he : Even (Fintype.card n)
+hn : 2 ≤ Fintype.card n
+ι : NumberField.InfinitePlace E → Type
+inst_4 : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+Q₀ : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+κ : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 → ℂ
+hκ :
+  ∀ (v : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1)
+    (ℓ : GInf E (blockSigns (Equiv.sumEmpty n Empty)) → PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 →L[ℂ] ℂ)
+    (ℓ' : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ →ₗ[ℂ] ℂ),
+    (∀ (g : GInf E (blockSigns (Equiv.sumEmpty n Empty))) (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)) × GInf E 1)
+        (w : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1),
+        (ℓ g) (((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) - ↑(Fintype.card (ι τ))) 0) x) w) = (ℓ (g * x.1)) w) →
+      (∀ (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)))
+          (Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ),
+          ((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) - ↑(Fintype.card (ι τ))) 0) (1, x))
+                ((polyVector
+                    (realSigns E
+                      (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                  Q₀) =
+              (polyVector
+                  (realSigns E
+                    (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                Q →
+            (ℓ x) v = ℓ' Q) →
+        ∀ (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v * (ℓ 1) ((posFockVector (Equiv.sumEmpty n Empty)) (stackedDetProd (Equiv.emptySum Empty n) η)) =
+            ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
+hd : Fintype.card n = 2 * (Fintype.card n / 2)
+hμ : ∀ (q : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * (↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2))
+C : ℝ
+x : fockSpace (realSigns E (homSigns 1 1))
+left : IsRapidDatum x
+H :
+  ∀ (𝔪 : Modulus E) (ν : AutChar E) (χ : MulChar 𝔪.ResRing ℂ),
+    IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2)) χ →
+      have γ := rankTwist ν⁻¹ n;
+      ∃ c,
+        c ≠ 0 ∧
+          ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+            ∀ (g : G E 1),
+              thetaIntegral (stdSpace E n) (stdSpace E n) γ 1
+                  (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x) g =
+                c *
+                  ∫ (h : G E 1),
+                    pairTheta (stdSpace E Empty) (stdSpace E n) γ γ
+                      (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+                      (h, g) ∂(stdSpace E Empty).quotMeasure
+𝔪 : Modulus E
+α : AutChar E
+χ : MulChar 𝔪.ResRing ℂ
+hα : IsTameFor 𝔪 α (fun τ ↦ -↑(Fintype.card (ι τ))) χ
+ht :
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (fun τ ↦ ↑(Fintype.card (ι τ)) + ↑(Fintype.card n / 2))
+    χ⁻¹
+c : ℂ
+left_1 : c ≠ 0
+q : ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+hP : IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+β : AutChar E
+g : G E 1
+L : G E 1 → 𝒮 ((stdSpace E n).hom (stdSpace E n)) →L[ℂ] ℂ
+hc :
+  ∀ (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x)
+        g =
+      c *
+        ∫ (h : G E 1),
+          pairTheta (stdSpace E Empty) (stdSpace E n) α α
+            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+            (h, g) ∂(stdSpace E Empty).quotMeasure
+hv :
+  ∀ (u : GInf E 1),
+    ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, u))
+        ((polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+          ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))
+            (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))) =
+      (polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+        ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η))
+hL :
+  ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n))) (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+x1 : Matrix n Empty 𝔪.ResRing
+x2 : 1 x1 ≠ 0
+a : (Matrix n n (NumberField.RingOfIntegers E ⧸ 𝔪.ideal))ˣ
+left_2 : a ∈ intGL n ⊤
+right : x1 = (↑a).submatrix id (⇑(Equiv.emptySum Empty n) ∘ Sum.inl)
+h_1 : ∀ (a : Matrix Empty n (NumberField.RingOfIntegers E ⧸ 𝔪.ideal)), ¬a * x1 = 1
+fst : GInf E 1
+snd : Gf E n
+h_2 : (fst, snd) = g
+val : ↥(unitary (𝔸 E)) →ₜ* Circle
+property :
+  val ∈
+    charsTrivialOnRat E
+      (Subtype
+        (Membership.mem
+          (unitary
+            ((NumberField.InfinitePlace E → ℂ) × IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+      Subtype.val
+h_3 : ⟨val, ⋯⟩ = β
+val_1 : ↥(unitary (𝔸 E)) →ₜ* Circle
+property_1 :
+  val_1 ∈
+    charsTrivialOnRat E
+      (Subtype
+        (Membership.mem
+          (unitary
+            ((NumberField.InfinitePlace E → ℂ) × IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+      Subtype.val
+h_4 : ⟨val_1, ⋯⟩ = α
+h_5 :
+  (fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) = fun p ↦
+    pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2
+w : ℂ
+left_3 : ¬w = 0
+left_4 : ‖w‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+right_2 :
+  ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+    thetaIntegral (stdSpace E n) (stdSpace E n) (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n) 1
+        (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+      w *
+        ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+          pairTheta (stdSpace E Empty) (stdSpace E n) (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+            (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+            (h,
+              g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+            (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+left_5 : Even (Fintype.card n / 2)
+right_3 : Fintype.card n / 2 % 2 = 0
+h_8 :
+  (fun i ↦ instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix 1))) = fun i ↦
+    instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)))
+h_9 : 2 = Fintype.card n / 2
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] Even (Fintype.card n)
+    [prop] 2 ≤ Fintype.card n
+    [prop] ∀
+          (v :
+            Heisenberg.IsVacuum.Model (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2))
+          (ℓ :
+            (NumberField.InfinitePlace E →
+                Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) →
+              Heisenberg.IsVacuum.Model
+                  (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+                ℂ)
+          (ℓ' : AddMonoidAlgebra ℂ (NumberField.InfinitePlace E × n × Empty →₀ ℕ) →ₗ[ℂ] ℂ)
+          (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v *
+                (ℓ 1)
+                  (((polyVector fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) ∘ₗ
+                      (MvPolynomial.rename
+                          (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)))).toLinearMap)
+                    (stackedDetProd (Equiv.emptySum Empty n) η)) =
+              ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η) ∨
+            (∃ x,
+                ¬∀ (Q : AddMonoidAlgebra ℂ (NumberField.InfinitePlace E × n × Empty →₀ ℕ)),
+                    ((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) + -1 * ↑(Fintype.card (ι τ))) 0) (1, x))
+                          ((polyVector fun p ↦
+                              pairSign 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                                ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty Empty Empty).symm) p.2)
+                            Q₀) =
+                        (polyVector fun p ↦
+                            pairSign 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                              ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty Empty Empty).symm) p.2)
+                          Q →
+                      (ℓ x) v = ℓ' Q) ∨
+              ∃ g,
+                ¬∀
+                    (x :
+                      (NumberField.InfinitePlace E →
+                          Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) ×
+                        (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))))
+                    (w :
+                      Heisenberg.IsVacuum.Model
+                        (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)),
+                    (ℓ g) (((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) + -1 * ↑(Fintype.card (ι τ))) 0) x) w) =
+                      (ℓ (g * x.1)) w
+    [prop] Fintype.card n = 2 * (Fintype.card n / 2)
+    [prop] ↑(Fintype.card n) % 2 + -1 ≤ 0
+    [prop] -1 * (↑(Fintype.card n) % 2) ≤ 0
+    [prop] -1 * ↑(Fintype.card n) + 2 * (↑(Fintype.card n) / 2) + ↑(Fintype.card n) % 2 = 0
+    [prop] ∀ (q : NumberField.InfinitePlace E),
+          ↑(Fintype.card n) + -2 * ↑(Fintype.card (ι q)) + -2 * (↑(Fintype.card n) / 2) ≤ 0
+    [prop] IsRapidDatum x
+    [prop] ∀ (𝔪 : Modulus E)
+          (ν :
+            Subtype
+              (Membership.mem
+                (charsTrivialOnRat E
+                  (Subtype
+                    (Membership.mem
+                      (unitary
+                        ((NumberField.InfinitePlace E → ℂ) ×
+                          IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+                  Subtype.val)))
+          (χ : MulChar (NumberField.RingOfIntegers E ⧸ 𝔪.ideal) ℂ),
+          IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2) χ →
+            ∃ c,
+              ¬c = 0 ∧
+                ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+                  ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+                    thetaIntegral (stdSpace E n) (stdSpace E n) (rankTwist ν⁻¹ n) 1
+                        (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x) g =
+                      c *
+                        ∫ (h :
+                          (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                          pairTheta (stdSpace E Empty) (stdSpace E n) (rankTwist ν⁻¹ n) (rankTwist ν⁻¹ n)
+                            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1
+                              ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                            (h,
+                              g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                            (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] IsTameFor 𝔪 α (fun τ ↦ -1 * ↑(Fintype.card (ι τ))) χ
+    [prop] IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))
+          (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2) χ⁻¹
+    [prop] ¬c = 0
+    [prop] ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+    [prop] IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+    [prop] ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+          thetaIntegral (stdSpace E n) (stdSpace E n) α 1
+              (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+            c *
+              ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                pairTheta (stdSpace E Empty) (stdSpace E n) α α
+                  (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                  (h,
+                    g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                  (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] ∀ (u : NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))),
+          ((realPairWeil (fun τ ↦ -1 * ↑(Fintype.card (ι τ))) 0) (1, u))
+              ((polyVector fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)
+                ((MvPolynomial.rename (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))))
+                  (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))) =
+            (polyVector fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)
+              ((MvPolynomial.rename (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))))
+                (stackedDetProd (Equiv.emptySum Empty n) η))
+    [prop] ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n)))
+          (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+          thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+    [prop] ¬1 x1 = 0
+    [prop] a ∈ intGL n ⊤
+    [prop] x1 = (↑a).submatrix id (⇑(Equiv.emptySum Empty n) ∘ Sum.inl)
+    [prop] ∀ (a : Matrix Empty n (NumberField.RingOfIntegers E ⧸ 𝔪.ideal)), ¬a * x1 = 1
+    [prop] Even (Fintype.card n) = (Fintype.card n % 2 = 0)
+    [prop] Even (2 * (Fintype.card n / 2)) = (Even 2 ∨ Even (Fintype.card n / 2))
+    [prop] IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))
+            (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2) χ⁻¹ →
+          ∃ c,
+            ¬c = 0 ∧
+              ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2) ∧
+                ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+                  thetaIntegral (stdSpace E n) (stdSpace E n)
+                      (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n) 1
+                      (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+                    c *
+                      ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                        pairTheta (stdSpace E Empty) (stdSpace E n)
+                          (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                          (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                          (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                          (h,
+                            g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                          (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] ↑β ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑1 ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑(WeilData.upsilonU1 ^ (Fintype.card n / 2)) ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑WeilData.upsilonU1 ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑α⁻¹ ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑α ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] Even (Fintype.card n / 2) = (Fintype.card n / 2 % 2 = 0)
+    [prop] ↑(Fintype.card n) / 2 % 2 + -1 ≤ 0
+    [prop] -1 * (↑(Fintype.card n) / 2 % 2) ≤ 0
+    [prop] -1 * (↑(Fintype.card n) / 2) + 2 * (↑(Fintype.card n) / 2 / 2) + ↑(Fintype.card n) / 2 % 2 = 0
+    [prop] Even 2
+    [prop] ↑(Fintype.card n % 2) = ↑(Fintype.card n)
+    [prop] ↑(Fintype.card n / 2 % 2) = ↑(Fintype.card n / 2)
+    [prop] (fst, snd) = g
+    [prop] val ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ⟨val, ⋯⟩ = β
+    [prop] val_1 ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ⟨val_1, ⋯⟩ = α
+    [prop] (fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) = fun p ↦
+          pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2
+    [prop] ¬w = 0
+    [prop] ‖w‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+    [prop] ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+          thetaIntegral (stdSpace E n) (stdSpace E n) (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+              1 (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+            w *
+              ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                pairTheta (stdSpace E Empty) (stdSpace E n)
+                  (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                  (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                  (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                  (h,
+                    g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                  (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] ↑(rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n) ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] Even (Fintype.card n / 2)
+    [prop] Fintype.card n / 2 % 2 = 0
+    [prop] (fun i ↦ instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix 1))) = fun i ↦
+          instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)))
+    [prop] 2 = Fintype.card n / 2
+  [eqc] True propositions
+    [prop] IsEmpty Empty
+    [prop] NumberField E
+    [prop] SecondCountableTopology (NumberField.InfinitePlace E × n × n → ℂ)
+    [prop] BorelSpace (NumberField.InfinitePlace E × n × n → ℂ)
+    [prop] (fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) = fun p ↦
+          pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2
+    [prop] Even (Fintype.card n)
+    [prop] IsTopologicalAddGroup (NumberField.InfinitePlace E × n × n → ℂ)
+    [prop] IsRapidDatum x
+    [prop] ↑(Fintype.card n) % 2 + -1 ≤ 0
+    [prop] ↑(Fintype.card n) / 2 % 2 + -1 ≤ 0
+    [prop] -1 * (↑(Fintype.card n) % 2) ≤ 0
+    [prop] -1 * (↑(Fintype.card n) / 2 % 2) ≤ 0
+    [prop] 2 ≤ Fintype.card n
+    [prop] a ∈ intGL n ⊤
+    [prop] val ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] val_1 ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑α ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑β ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑α⁻¹ ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑1 ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑WeilData.upsilonU1 ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑(WeilData.upsilonU1 ^ (Fintype.card n / 2)) ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2).IsVacuum
+          (realMeasure (NumberField.InfinitePlace E × n × n)) realVac
+    [prop] IsTameFor 𝔪 α (fun τ ↦ -1 * ↑(Fintype.card (ι τ))) χ
+    [prop] IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))
+          (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2) χ⁻¹
+    [prop] IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+    [prop] ∀ (q : NumberField.InfinitePlace E),
+          ↑(Fintype.card n) + -2 * ↑(Fintype.card (ι q)) + -2 * (↑(Fintype.card n) / 2) ≤ 0
+    [prop] ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+          thetaIntegral (stdSpace E n) (stdSpace E n) α 1
+              (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+            c *
+              ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                pairTheta (stdSpace E Empty) (stdSpace E n) α α
+                  (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                  (h,
+                    g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                  (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] ∀ (a : Matrix Empty n (NumberField.RingOfIntegers E ⧸ 𝔪.ideal)), ¬a * x1 = 1
+    [prop] ∀ (𝔪 : Modulus E)
+          (ν :
+            Subtype
+              (Membership.mem
+                (charsTrivialOnRat E
+                  (Subtype
+                    (Membership.mem
+                      (unitary
+                        ((NumberField.InfinitePlace E → ℂ) ×
+                          IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+                  Subtype.val)))
+          (χ : MulChar (NumberField.RingOfIntegers E ⧸ 𝔪.ideal) ℂ),
+          IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2) χ →
+            ∃ c,
+              ¬c = 0 ∧
+                ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+                  ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+                    thetaIntegral (stdSpace E n) (stdSpace E n) (rankTwist ν⁻¹ n) 1
+                        (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x) g =
+                      c *
+                        ∫ (h :
+                          (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                          pairTheta (stdSpace E Empty) (stdSpace E n) (rankTwist ν⁻¹ n) (rankTwist ν⁻¹ n)
+                            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1
+                              ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                            (h,
+                              g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                            (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n)))
+          (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+          thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+    [prop] ∀
+          (v :
+            Heisenberg.IsVacuum.Model (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2))
+          (ℓ :
+            (NumberField.InfinitePlace E →
+                Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) →
+              Heisenberg.IsVacuum.Model
+                  (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+                ℂ)
+          (ℓ' : AddMonoidAlgebra ℂ (NumberField.InfinitePlace E × n × Empty →₀ ℕ) →ₗ[ℂ] ℂ)
+          (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v *
+                (ℓ 1)
+                  (((polyVector fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) ∘ₗ
+                      (MvPolynomial.rename
+                          (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)))).toLinearMap)
+                    (stackedDetProd (Equiv.emptySum Empty n) η)) =
+              ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η) ∨
+            (∃ x,
+                ¬∀ (Q : AddMonoidAlgebra ℂ (NumberField.InfinitePlace E × n × Empty →₀ ℕ)),
+                    ((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) + -1 * ↑(Fintype.card (ι τ))) 0) (1, x))
+                          ((polyVector fun p ↦
+                              pairSign 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                                ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty Empty Empty).symm) p.2)
+                            Q₀) =
+                        (polyVector fun p ↦
+                            pairSign 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                              ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty Empty Empty).symm) p.2)
+                          Q →
+                      (ℓ x) v = ℓ' Q) ∨
+              ∃ g,
+                ¬∀
+                    (x :
+                      (NumberField.InfinitePlace E →
+                          Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) ×
+                        (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))))
+                    (w :
+                      Heisenberg.IsVacuum.Model
+                        (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)),
+                    (ℓ g) (((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) + -1 * ↑(Fintype.card (ι τ))) 0) x) w) =
+                      (ℓ (g * x.1)) w
+    [prop] ∀ (u : NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))),
+          ((realPairWeil (fun τ ↦ -1 * ↑(Fintype.card (ι τ))) 0) (1, u))
+              ((polyVector fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)
+                ((MvPolynomial.rename (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))))
+                  (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))) =
+            (polyVector fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)
+              ((MvPolynomial.rename (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))))
+                (stackedDetProd (Equiv.emptySum Empty n) η))
+    [prop] ∃ c,
+          ¬c = 0 ∧
+            ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2) ∧
+              ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+                thetaIntegral (stdSpace E n) (stdSpace E n)
+                    (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n) 1
+                    (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+                  c *
+                    ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                      pairTheta (stdSpace E Empty) (stdSpace E n)
+                        (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                        (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                        (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                        (h,
+                          g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                        (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] Even 2 ∨ Even (Fintype.card n / 2)
+    [prop] Even (Fintype.card n) = (Fintype.card n % 2 = 0)
+    [prop] Even (2 * (Fintype.card n / 2)) = (Even 2 ∨ Even (Fintype.card n / 2))
+    [prop] 2 = Fintype.card n / 2
+    [prop] Fintype.card n % 2 = 0
+    [prop] Even 2
+    [prop] Even (Fintype.card n / 2)
+    [prop] Even (2 * (Fintype.card n / 2))
+    [prop] ↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ↑(rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n) ∈
+          charsTrivialOnRat E
+            (Subtype
+              (Membership.mem
+                (unitary
+                  ((NumberField.InfinitePlace E → ℂ) ×
+                    IsDedekindDomain.FiniteAdeleRing (NumberField.RingOfIntegers E) E))))
+            Subtype.val
+    [prop] ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+          thetaIntegral (stdSpace E n) (stdSpace E n) (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+              1 (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+            w *
+              ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                pairTheta (stdSpace E Empty) (stdSpace E n)
+                  (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                  (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                  (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                  (h,
+                    g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                  (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))
+            (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2) χ⁻¹ →
+          ∃ c,
+            ¬c = 0 ∧
+              ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2) ∧
+                ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+                  thetaIntegral (stdSpace E n) (stdSpace E n)
+                      (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n) 1
+                      (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+                    c *
+                      ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                        pairTheta (stdSpace E Empty) (stdSpace E n)
+                          (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                          (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                          (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                          (h,
+                            g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                          (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+    [prop] Even (Fintype.card n / 2) = (Fintype.card n / 2 % 2 = 0)
+    [prop] Fintype.card n / 2 % 2 = 0
+  [eqc] False propositions
+    [prop] c = 0
+    [prop] 1 x1 = 0
+    [prop] w = 0
+  [eqc] Equivalence classes
+    [eqc] {α, ⟨val_1, ⋯⟩, ⟨↑α, ⋯⟩}
+    [eqc] {η, fun τ x ↦ η τ x}
+    [eqc] {β, ⟨val, ⋯⟩, ⟨↑β, ⋯⟩}
+    [eqc] {g, (fst, snd), (g.1, g.2)}
+    [eqc] {x1, (↑a).submatrix id (⇑(Equiv.emptySum Empty n) ∘ Sum.inl)}
+    [eqc] {fst, g.1}
+      [eqc] {(g.1, g.2).1}
+    [eqc] {snd, g.2}
+      [eqc] {(g.1, g.2).2}
+    [eqc] {val, ↑β}
+      [eqc] {↑⟨↑β, ⋯⟩}
+    [eqc] {val_1, ↑α}
+      [eqc] {↑⟨↑α, ⋯⟩}
+    [eqc] {Fintype.card n, 2 * (Fintype.card n / 2)}
+    [eqc] {α⁻¹, ⟨↑α⁻¹, ⋯⟩}
+    [eqc] {0, Fintype.card n % 2, Fintype.card n / 2 % 2}
+    [eqc] {2, Fintype.card n / 2}
+    [eqc] {1, ⟨↑1, ⋯⟩}
+    [eqc] {realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2,
+        realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2}
+    [eqc] {Membership.mem (U (signMatrix 1)), fun x ↦ x ∈ U (signMatrix 1)}
+    [eqc] {⟨↑WeilData.upsilonU1, ⋯⟩, WeilData.upsilonU1}
+    [eqc] {⟨↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)), ⋯⟩, α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)}
+    [eqc] {⟨↑(WeilData.upsilonU1 ^ (Fintype.card n / 2)), ⋯⟩, WeilData.upsilonU1 ^ (Fintype.card n / 2)}
+    [eqc] {C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2),
+        ‖c‖ ^ 2,
+        ‖w‖ ^ 2}
+    [eqc] {fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2,
+        fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2}
+    [eqc] {(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹,
+        ⟨↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹, ⋯⟩}
+    [eqc] {⟨↑(rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n), ⋯⟩,
+        rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n}
+    [eqc] {fun i ↦ instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix 1)),
+        fun i ↦ instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)))}
+    [eqc] others
+      [eqc] {↑(Fintype.card n), ↑(2 * (Fintype.card n / 2))}
+      [eqc] {↑0,
+          0,
+          -1 * ↑(Fintype.card n) + 2 * (↑(Fintype.card n) / 2) + ↑(Fintype.card n) % 2,
+          -1 * (↑(Fintype.card n) / 2) + 2 * (↑(Fintype.card n) / 2 / 2) + ↑(Fintype.card n) / 2 % 2,
+          ↑(Fintype.card n % 2),
+          ↑(Fintype.card n / 2 % 2)}
+      [eqc] {↑2, ↑(Fintype.card n / 2)}
+      [eqc] {↑α⁻¹, ↑⟨↑α⁻¹, ⋯⟩}
+      [eqc] {↑1, ↑⟨↑1, ⋯⟩}
+      [eqc] {↑⟨↑WeilData.upsilonU1, ⋯⟩, ↑WeilData.upsilonU1}
+      [eqc] {↑⟨↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)), ⋯⟩,
+          ↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))}
+      [eqc] {↑⟨↑(WeilData.upsilonU1 ^ (Fintype.card n / 2)), ⋯⟩, ↑(WeilData.upsilonU1 ^ (Fintype.card n / 2))}
+      [eqc] {↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹,
+          ↑⟨↑(α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹, ⋯⟩}
+      [eqc] {↑⟨↑(rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n), ⋯⟩,
+          ↑(rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)}
+      [eqc] {↑(Fintype.card n), ↑(Fintype.card n % 2), ↑(Fintype.card n / 2), ↑(Fintype.card n / 2 % 2)}
+  [cases] Case analyses
+    [cases] [1/1]: g
+      [cases] source: Initial goal
+    [cases] [1/1]: β
+      [cases] source: Initial goal
+    [cases] [1/1]: α
+      [cases] source: Initial goal
+    [cases] [1/2]: (fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) = fun p ↦
+          pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2
+      [cases] source: Initial goal
+    [cases] [1/1]: ∃ c,
+          ¬c = 0 ∧
+            ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2) ∧
+              ∀ (g : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E n),
+                thetaIntegral (stdSpace E n) (stdSpace E n)
+                    (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n) 1
+                    (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x) g =
+                  c *
+                    ∫ (h : (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) × Gf E Empty),
+                      pairTheta (stdSpace E Empty) (stdSpace E n)
+                        (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                        (rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹ n)
+                        (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector fun p ↦ pairSign 1 1 1 p.2) Q₀))
+                        (h,
+                          g) ∂MeasureTheory.MeasureSpace.volume.withDensity
+                        (Classical.epsilon (IsCutoff MeasureTheory.Measure.count))
+      [cases] source: E-matching `H`
+    [cases] [1/2]: Even (Fintype.card n / 2) = (Fintype.card n / 2 % 2 = 0)
+      [cases] source: E-matching `Nat.even_iff`
+    [cases] [1/2]: (fun i ↦ instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix 1))) = fun i ↦
+          instMulOneClassSubtypeMemSubgroup_lib (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)))
+      [cases] source: Initial goal
+    [cases] [1/2]: 2 = Fintype.card n / 2
+      [cases] source: Model-based theory combination at argument #2 of
+            Even (Fintype.card n / 2)
+          and
+            Even 2
+  [ematch] E-matching patterns
+    [thm] Int.even_iff: [@Even `[ℤ] `[Int.instAdd] #0]
+    [thm] Nat.even_iff: [@Even `[ℕ] `[instAddNat] #0]
+    [thm] Set.subset_def: [@LE.le _ _ #1 #0]
+    [thm] Int.even_coe_nat: [@Even `[ℤ] `[Int.instAdd] (@NatCast.natCast `[ℤ] `[instNatCastInt] #0)]
+    [thm] Nat.even_mul: [@Even `[ℕ] `[instAddNat] (@HMul.hMul `[ℕ] `[ℕ] `[ℕ] `[instHMul] #1 #0)]
+    [thm] Int.even_mul: [@Even `[ℤ] `[Int.instAdd] (@HMul.hMul `[ℤ] `[ℤ] `[ℤ] `[instHMul] #1 #0)]
+    [thm] Nat.even_add: [@Even `[ℕ] `[instAddNat] (@HAdd.hAdd `[ℕ] `[ℕ] `[ℕ] `[instHAdd] #1 #0)]
+    [thm] ZMod.natCast_mod: [@NatCast.natCast _ _ (@HMod.hMod `[ℕ] `[ℕ] `[ℕ] `[instHMod] #1 #0)]
+    [thm] H: [@IsTameFor `[E] `[inst] `[inst_1] #3 #2 `[fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2] #1]
+    [thm] Inclusion.IntervalDyadicReal.mem_iff_mem_map: [@Membership.mem `[ℝ] `[Inclusion.Interval
+           Dyadic] `[Inclusion.instMembershipOfToSet] #0 #1]
+    [thm] Multiset.mem_add: [@Membership.mem #3 _ _ (@HAdd.hAdd _ _ _ _ #1 #0) #2]
+    [thm] Subtype.property: [@Subtype.val #2 #1 #0]
+    [thm] Nat.even_pow: [@Even `[ℕ] `[instAddNat] (@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #1 #0)]
+    [thm] Int.even_pow: [@Even `[ℤ] `[Int.instAdd] (@HPow.hPow `[ℤ] `[ℕ] `[ℤ] `[instHPow] #1 #0)]
+    [thm] Nat.pow_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] Nat.div_pow_of_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] Multiset.notMem_zero: [@Membership.mem #1 _ _ (@OfNat.ofNat _ `[0] _) #0]
+    [thm] Set.Icc.mk_zero: [@Subtype.mk #5 _ (@OfNat.ofNat _ `[0] _) #0]
+    [thm] Set.Icc.mk_one: [@Subtype.mk #5 _ (@OfNat.ofNat _ `[1] _) #0]
+    [thm] Set.Ico.mk_zero: [@Subtype.mk #6 _ (@OfNat.ofNat _ `[0] _) #0]
+    [thm] Set.Ioc.mk_one: [@Subtype.mk #6 _ (@OfNat.ofNat _ `[1] _) #0]
+    [thm] Even.zero: [@Even #1 _ (@OfNat.ofNat _ `[0] _)]
+    [thm] Ideal.one_eq_top: [@OfNat.ofNat (Submodule #1 _ #0 _ _) `[1] _]
+    [thm] norm_nonneg: [@LE.le `[ℝ] `[Real.instLE] `[0] (@Norm.norm #2 _ #0)]
+    [thm] EReal.add_eq_top_iff: [@HAdd.hAdd `[EReal] `[EReal] `[EReal] `[instHAdd] #1 #0,
+         @Top.top `[EReal] `[instTopEReal]]
+    [thm] top_unique: [@LE.le #4 _ (@Top.top _ _) #1]
+    [thm] top_unique: [@Lean.Grind.eqBwdPattern #4 #1 (@Top.top _ _)]
+    [thm] hc: [@thetaIntegral `[E] `[inst] `[inst_1] `[inst_2] `[n] `[n] `[inst_3] `[inst_3] `[1] `[1] `[stdSpace E
+           n] `[stdSpace E n] `[α] `[1] `[modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x] #0]
+    [thm] hc: [@thetaIntegral `[E] `[inst] `[inst_1] `[inst_2] `[n] `[n] `[inst_3] `[inst_3] `[1] `[1] `[stdSpace E
+           n] `[stdSpace E n] `[α] `[1] `[modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x] #0]
+    [thm] Sum.elim_map: [@Sum.elim #9 #6 #7 (@Function.comp _ #8 _ #3 #4) (@Function.comp _ #5 _ #1 #2) #0]
+    [thm] natCast_apply_eq_smul: [@DFunLike.coe #7 #6 _ #5 (@NatCast.natCast _ #4 #1) #0]
+    [thm] natCast_apply_eq_const: [@DFunLike.coe #8 #7 _ #5 (@NatCast.natCast _ #4 #1) #0]
+    [thm] pow_apply: [@DFunLike.coe #9 #8 _ #6 (@HPow.hPow _ #10 _ _ #2 #1) #0]
+    [thm] _root_.neg_apply: [@DFunLike.coe #8 #7 _ #5 (@Neg.neg _ #3 #1) #0]
+    [thm] inv_apply: [@DFunLike.coe #8 #7 _ #5 (@Inv.inv _ #3 #1) #0]
+    [thm] div_apply: [@DFunLike.coe #9 #8 _ #6 (@HDiv.hDiv _ _ _ _ #2 #1) #0]
+    [thm] pow_apply_eq_iterate: [@DFunLike.coe #8 #7 _ #6 (@HPow.hPow _ `[ℕ] _ _ #2 #1) #0]
+    [thm] mul_apply_eq_comp: [@DFunLike.coe #7 #6 _ #5 (@HMul.hMul _ _ _ _ #2 #1) #0]
+    [thm] _root_.add_apply: [@DFunLike.coe #9 #8 _ #6 (@HAdd.hAdd _ _ _ _ #2 #1) #0]
+    [thm] _root_.mul_apply: [@DFunLike.coe #9 #8 _ #6 (@HMul.hMul _ _ _ _ #2 #1) #0]
+    [thm] one_apply_eq_self: [@DFunLike.coe #5 #4 _ #3 (@OfNat.ofNat _ `[1] _) #0]
+    [thm] _root_.zero_apply: [@DFunLike.coe #7 #6 _ #4 (@OfNat.ofNat _ `[0] _) #0]
+    [thm] _root_.one_apply: [@DFunLike.coe #7 #6 _ #4 (@OfNat.ofNat _ `[1] _) #0]
+    [thm] map_zpow: [@DFunLike.coe #7 #9 _ #6 #2 (@HPow.hPow _ `[ℤ] _ _ #1 #0)]
+    [thm] map_pow: [@DFunLike.coe #7 #9 _ #6 #2 (@HPow.hPow _ `[ℕ] _ _ #1 #0)]
+    [thm] map_div: [@DFunLike.coe #7 #9 _ #6 #2 (@HDiv.hDiv _ _ _ _ #1 #0)]
+    [thm] map_neg: [@DFunLike.coe #6 #8 _ #5 #1 (@Neg.neg _ _ #0)]
+    [thm] map_inv: [@DFunLike.coe #6 #8 _ #5 #1 (@Inv.inv _ _ #0)]
+    [thm] map_add: [@DFunLike.coe #7 #9 _ #4 #2 (@HAdd.hAdd _ _ _ _ #1 #0)]
+    [thm] map_mul: [@DFunLike.coe #7 #9 _ #4 #2 (@HMul.hMul _ _ _ _ #1 #0)]
+    [thm] map_zero: [@DFunLike.coe #5 #7 _ #2 #0 (@OfNat.ofNat _ `[0] _)]
+    [thm] map_one: [@DFunLike.coe #5 #7 _ #2 #0 (@OfNat.ofNat _ `[1] _)]
+    [thm] Equiv.symm_apply_apply: [@DFunLike.coe (Equiv #2 #3) _ _ _ (@Equiv.symm _ _ #1) (@DFunLike.coe (Equiv _ _) _ _ _ #1 #0)]
+    [thm] Equiv.apply_symm_apply: [@DFunLike.coe (Equiv #3 #2) _ _ _ #1 (@DFunLike.coe (Equiv _ _) _ _ _ (@Equiv.symm _ _ #1) #0)]
+    [thm] Equiv.symm_symm: [@Equiv.symm #1 #2 (@Equiv.symm _ _ #0)]
+    [thm] Finsupp.zero_apply: [@DFunLike.coe (Finsupp #3 #2 #1) _ _ _ (@OfNat.ofNat (Finsupp _ _ _) `[0] _) #0]
+    [thm] Prod.map_snd: [@Prod.snd #5 #3 (@Prod.map #6 _ #4 _ #2 #1 #0)]
+    [thm] Prod.map_fst: [@Prod.fst #5 #3 (@Prod.map #6 _ #4 _ #2 #1 #0)]
+    [thm] Prod.map_map: [@Prod.map #10 #6 #8 #5 (@Function.comp _ #9 _ #2 #4) (@Function.comp _ #7 _ #1 #3) #0]
+    [thm] Prod.map_map: [@Prod.map #9 #6 #7 #5 #2 #1 (@Prod.map #10 _ #8 _ #4 #3 #0)]
+    [thm] id.eq_1: [@id #1 #0]
+    [thm] Sum.elim_inl: [@Sum.elim #5 #3 #4 #2 #1 (@Sum.inl _ _ #0)]
+    [thm] hv: [@DFunLike.coe `[Heisenberg.IsVacuum.Model
+             (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+           Heisenberg.IsVacuum.Model
+             (realHeis fun p ↦
+               pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                 p.2)] `[Heisenberg.IsVacuum.Model
+           (realHeis fun p ↦
+             pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+               p.2)] `[fun x ↦
+           Heisenberg.IsVacuum.Model
+             (realHeis fun p ↦
+               pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                 p.2)] `[ContinuousLinearMap.funLike] (@DFunLike.coe `[(NumberField.InfinitePlace E →
+                Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) ×
+              (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) →*
+            Heisenberg.IsVacuum.Model
+                (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+              Heisenberg.IsVacuum.Model
+                (realHeis fun p ↦
+                  pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                    p.2)] `[(NumberField.InfinitePlace E →
+              Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) ×
+            (NumberField.InfinitePlace E →
+              Subtype
+                (Membership.mem
+                  (U
+                    (signMatrix
+                      1))))] `[fun x ↦
+            Heisenberg.IsVacuum.Model
+                (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+              Heisenberg.IsVacuum.Model
+                (realHeis fun p ↦
+                  pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                    p.2)] `[MonoidHom.instFunLike] `[realPairWeil (fun τ ↦ -1 * ↑(Fintype.card (ι τ)))
+            0] (@Prod.mk `[NumberField.InfinitePlace E →
+             Subtype
+               (Membership.mem
+                 (U
+                   (signMatrix
+                     ((1 ⊕ᵥ -1) ∘
+                       ⇑(Equiv.sumEmpty n
+                             Empty).symm))))] `[NumberField.InfinitePlace E →
+             Subtype
+               (Membership.mem
+                 (U
+                   (signMatrix
+                     1)))] `[1] #0)) `[(polyVector fun p ↦
+             pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)
+           ((MvPolynomial.rename (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))))
+             (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))]]
+    [thm] hv: [@DFunLike.coe `[(NumberField.InfinitePlace E →
+               Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) ×
+             (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))) →*
+           Heisenberg.IsVacuum.Model
+               (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+             Heisenberg.IsVacuum.Model
+               (realHeis fun p ↦
+                 pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                   p.2)] `[(NumberField.InfinitePlace E →
+             Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) ×
+           (NumberField.InfinitePlace E →
+             Subtype
+               (Membership.mem
+                 (U
+                   (signMatrix
+                     1))))] `[fun x ↦
+           Heisenberg.IsVacuum.Model
+               (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+             Heisenberg.IsVacuum.Model
+               (realHeis fun p ↦
+                 pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                   p.2)] `[MonoidHom.instFunLike] `[realPairWeil (fun τ ↦ -1 * ↑(Fintype.card (ι τ)))
+           0] (@Prod.mk `[NumberField.InfinitePlace E →
+            Subtype
+              (Membership.mem
+                (U
+                  (signMatrix
+                    ((1 ⊕ᵥ -1) ∘
+                      ⇑(Equiv.sumEmpty n
+                            Empty).symm))))] `[NumberField.InfinitePlace E →
+            Subtype (Membership.mem (U (signMatrix 1)))] `[1] #0)]
+    [thm] hv: [@Prod.mk `[NumberField.InfinitePlace E →
+           Subtype
+             (Membership.mem
+               (U
+                 (signMatrix
+                   ((1 ⊕ᵥ -1) ∘
+                     ⇑(Equiv.sumEmpty n
+                           Empty).symm))))] `[NumberField.InfinitePlace E →
+           Subtype (Membership.mem (U (signMatrix 1)))] `[1] #0]
+    [thm] hL: [@thetaIntegral `[E] `[inst] `[inst_1] `[inst_2] `[n] `[n] `[inst_3] `[inst_3] `[1] `[1] `[stdSpace E
+           n] `[stdSpace E n] `[α] `[1] #1 #0]
+    [thm] hL: [@DFunLike.coe `[𝒮 ((stdSpace E n).hom (stdSpace E n)) →L[ℂ]
+           ℂ] `[𝒮 ((stdSpace E n).hom (stdSpace E n))] `[fun x ↦ ℂ] `[ContinuousLinearMap.funLike] (L #0) #1]
+    [thm] hL: [@thetaIntegral `[E] `[inst] `[inst_1] `[inst_2] `[n] `[n] `[inst_3] `[inst_3] `[1] `[1] `[stdSpace E
+           n] `[stdSpace E n] `[α] `[1] #1 #0]
+    [thm] invFirstRows_mul_firstCols: [@Matrix.submatrix #5 #4 _ _ #7 (@Units.val _ _ (@Inv.inv (Units _ _) _ #0)) (@Function.comp _ (Sum _ #6) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #1) (@Sum.inl _ _)) (@id _)]
+    [thm] h_1: [@HMul.hMul `[Matrix Empty n
+           (NumberField.RingOfIntegers E ⧸
+             𝔪.ideal)] `[Matrix n Empty
+           (NumberField.RingOfIntegers E ⧸
+             𝔪.ideal)] `[Matrix Empty Empty
+           (NumberField.RingOfIntegers E ⧸ 𝔪.ideal)] `[Matrix.instHMulOfFintypeOfMulOfAddCommMonoid] #0 `[x1]]
+    [thm] right_2: [@thetaIntegral `[E] `[inst] `[inst_1] `[inst_2] `[n] `[n] `[inst_3] `[inst_3] `[1] `[1] `[stdSpace E
+           n] `[stdSpace E
+           n] `[rankTwist (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2))⁻¹
+           n] `[1] `[modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x] #0]
+  [cutsat] Assignment satisfying linear constraints
+    [assign] Fintype.card n := 4
+  [linarith] Linarith
+    [linarith] Linarith assignment for `ℝ`
+      [assign] C := 2
+      [assign] ‖c‖ := 3
+      [assign] 「‖c‖ ^ 2」 := 0
+      [assign] lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2) := 5
+      [assign] ‖w‖ := 7
+      [assign] 「‖w‖ ^ 2」 := 0
+    [linarith] Linarith assignment for `NumberField.InfinitePlace E → ℤ`
+      [assign] fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n) / 2 := 2
+      [assign] fun τ ↦ -1 * ↑(Fintype.card (ι τ)) := 3
+  [ring] Rings
+    [ring] Ring `ℤ`
+      [basis] Basis
+        [_] ↑(Fintype.card n) + -1 * (↑(Fintype.card n) % 2) + -2 * (↑(Fintype.card n) / 2) = 0
+        [_] ↑(Fintype.card n) / 2 + -1 * (↑(Fintype.card n) / 2 % 2) + -2 * (↑(Fintype.card n) / 2 / 2) = 0
+    [ring] Ring `Lean.Grind.Ring.OfSemiring.Q ℕ`
+      [basis] Basis
+        [_] ↑(Fintype.card n / 2) + -2 = 0
+    [ring] Ring `ℝ`
+      [basis] Basis
+        [_] ‖c‖ ^ 2 +
+                -1 * (C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)) =
+              0
+        [_] C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2) +
+                -1 * ‖w‖ ^ 2 =
+              0
+[grind] Issues
+  [issue] failed to create E-match local theorem for
+        ∀
+          (v :
+            Heisenberg.IsVacuum.Model (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2))
+          (ℓ :
+            (NumberField.InfinitePlace E →
+                Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) →
+              Heisenberg.IsVacuum.Model
+                  (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) →L[ℂ]
+                ℂ)
+          (ℓ' : AddMonoidAlgebra ℂ (NumberField.InfinitePlace E × n × Empty →₀ ℕ) →ₗ[ℂ] ℂ)
+          (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v *
+                (ℓ 1)
+                  (((polyVector fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2) ∘ₗ
+                      (MvPolynomial.rename
+                          (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)))).toLinearMap)
+                    (stackedDetProd (Equiv.emptySum Empty n) η)) =
+              ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η) ∨
+            (∃ x,
+                ¬∀ (Q : AddMonoidAlgebra ℂ (NumberField.InfinitePlace E × n × Empty →₀ ℕ)),
+                    ((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) + -1 * ↑(Fintype.card (ι τ))) 0) (1, x))
+                          ((polyVector fun p ↦
+                              pairSign 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                                ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty Empty Empty).symm) p.2)
+                            Q₀) =
+                        (polyVector fun p ↦
+                            pairSign 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm)
+                              ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty Empty Empty).symm) p.2)
+                          Q →
+                      (ℓ x) v = ℓ' Q) ∨
+              ∃ g,
+                ¬∀
+                    (x :
+                      (NumberField.InfinitePlace E →
+                          Subtype (Membership.mem (U (signMatrix ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm))))) ×
+                        (NumberField.InfinitePlace E → Subtype (Membership.mem (U (signMatrix 1)))))
+                    (w :
+                      Heisenberg.IsVacuum.Model
+                        (realHeis fun p ↦ pairSign 1 1 ((1 ⊕ᵥ -1) ∘ ⇑(Equiv.sumEmpty n Empty).symm) p.2)),
+                    (ℓ g) (((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) + -1 * ↑(Fintype.card (ι τ))) 0) x) w) =
+                      (ℓ (g * x.1)) w
+  [issue] failed to create E-match local theorem for
+        ∀ (q : NumberField.InfinitePlace E),
+          ↑(Fintype.card n) + -2 * ↑(Fintype.card (ι q)) + -2 * (↑(Fintype.card n) / 2) ≤ 0
+  [issue] type has a `Preorder` and is a `Semiring`, but is not an ordered ring, failed to synthesize
+        Lean.Grind.OrderedRing (NumberField.InfinitePlace E → ℤ)
+[grind] Diagnostics
+  [ematch] E-matching Diagnostics
+    [thm] Theorem Instance Count
+      [thm] Subtype.property ↦ 9
+      [thm] Nat.even_iff ↦ 3
+      [thm] ZMod.natCast_mod ↦ 2
+      [thm] H ↦ 1
+      [thm] Nat.even_mul ↦ 1
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:68:46: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  α.HasWeight ?m.896 ?m.900
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:68:9: error: unsolved goals
+E n : Type
+inst✝⁴ : Field E
+inst✝³ : CMType E
+inst✝² : WeilData E
+inst✝¹ : Fintype n
+he : Even (Fintype.card n)
+hn : 2 ≤ Fintype.card n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+Q₀ : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+κ : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 → ℂ
+hκ :
+  ∀ (v : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1)
+    (ℓ : GInf E (blockSigns (Equiv.sumEmpty n Empty)) → PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 →L[ℂ] ℂ)
+    (ℓ' : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ →ₗ[ℂ] ℂ),
+    (∀ (g : GInf E (blockSigns (Equiv.sumEmpty n Empty))) (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)) × GInf E 1)
+        (w : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1),
+        (ℓ g) (((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) - ↑(Fintype.card (ι τ))) 0) x) w) = (ℓ (g * x.1)) w) →
+      (∀ (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)))
+          (Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ),
+          ((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) - ↑(Fintype.card (ι τ))) 0) (1, x))
+                ((polyVector
+                    (realSigns E
+                      (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                  Q₀) =
+              (polyVector
+                  (realSigns E
+                    (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                Q →
+            (ℓ x) v = ℓ' Q) →
+        ∀ (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v * (ℓ 1) ((posFockVector (Equiv.sumEmpty n Empty)) (stackedDetProd (Equiv.emptySum Empty n) η)) =
+            ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
+hd : Fintype.card n = 2 * (Fintype.card n / 2)
+hμ : ∀ (q : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * (↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2))
+C : ℝ
+x✝ : fockSpace (realSigns E (homSigns 1 1))
+left✝¹ : IsRapidDatum x✝
+H :
+  ∀ (𝔪 : Modulus E) (ν : AutChar E) (χ : MulChar 𝔪.ResRing ℂ),
+    IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2)) χ →
+      have γ := rankTwist ν⁻¹ n;
+      ∃ c,
+        c ≠ 0 ∧
+          ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+            ∀ (g : G E 1),
+              thetaIntegral (stdSpace E n) (stdSpace E n) γ 1
+                  (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x✝) g =
+                c *
+                  ∫ (h : G E 1),
+                    pairTheta (stdSpace E Empty) (stdSpace E n) γ γ
+                      (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+                      (h, g) ∂(stdSpace E Empty).quotMeasure
+𝔪 : Modulus E
+α : AutChar E
+χ : MulChar 𝔪.ResRing ℂ
+hα : IsTameFor 𝔪 α (fun τ ↦ -↑(Fintype.card (ι τ))) χ
+ht :
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (fun τ ↦ ↑(Fintype.card (ι τ)) + ↑(Fintype.card n / 2))
+    χ⁻¹
+c : ℂ
+left✝ : c ≠ 0
+q : ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+hP : IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+β : AutChar E
+g : G E 1
+L : G E 1 → 𝒮 ((stdSpace E n).hom (stdSpace E n)) →L[ℂ] ℂ
+hc :
+  ∀ (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1
+        (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ⁻¹ A.det)⁻¹) x✝) g =
+      c *
+        ∫ (h : G E 1),
+          pairTheta (stdSpace E Empty) (stdSpace E n) α α
+            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+            (h, g) ∂(stdSpace E Empty).quotMeasure
+hv :
+  ∀ (u : GInf E 1),
+    ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, u))
+        ((polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+          ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))
+            (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))) =
+      (polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+        ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η))
+hL :
+  ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n))) (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+x : GInf E (blockSigns (Equiv.sumEmpty n Empty))
+Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+h :
+  ((realPairWeil (fun τ ↦ ↑(Fintype.card Empty) - ↑(Fintype.card (ι τ))) 0) (1, x))
+      ((polyVector
+          (realSigns E (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+        Q₀) =
+    (polyVector
+        (realSigns E (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+      Q
+⊢ ∫ (h : G E 1),
+        pairTheta (stdSpace E Empty) (stdSpace E n) α α
+          ((((stdSpace E Empty).hom (stdSpace E n)).integrated ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+            (((((stdSpace E Empty).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn 1))
+              ((stdSpace E Empty).hom (stdSpace E n)).vacElem))
+          (h, g * (x, 1)) ∂(stdSpace E Empty).quotMeasure =
+      ∫ (x : G E 1),
+        pairTheta (stdSpace E Empty) (stdSpace E n) α α
+          ((((stdSpace E Empty).hom (stdSpace E n)).integrated ((polyVector (realSigns E (homSigns 1 1))) Q))
+            (((((stdSpace E Empty).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn 1))
+              ((stdSpace E Empty).hom (stdSpace E n)).vacElem))
+          (x, g) ∂(stdSpace E Empty).quotMeasure ∨
+    c = 0
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:71:6: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (4000000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:66:16: warning: This simp argument is unused:
+  ← hL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← pairWeil_integrated _ _ α 1, thetaIntegral_pairWeil, mul_assoc]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:66:53: warning: This simp argument is unused:
+  thetaIntegral_pairWeil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← hL, ← pairWeil_integrated _ _ α 1, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:66:77: warning: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← hL, ← pairWeil_integrated _ _ α 1, thetaIntegral_pairWeil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:68:39: warning: This simp argument is unused:
+  ← h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [modKernel, modDatum, ← pairWeil_integrated_right α α, ← pairTheta_mul]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_2/C2DeterminantClassSum.lean:68:77: warning: This simp argument is unused:
+  ← pairTheta_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [modKernel, modDatum, ← h, ← pairWeil_integrated_right α α]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] field_simp [measureReal_univ_ne_zero]
+'c2_empty_matching' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_stdClassSum_det_modKernel_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_DETERMINANT_CLASS_SUM: original complete statement preserved; general target absent directly

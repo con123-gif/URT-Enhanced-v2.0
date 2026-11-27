@@ -1,0 +1,103 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:23:15: error(lean.unknownIdentifier): Unknown identifier `upsilonU1`
+
+Note: It is not possible to treat `upsilonU1` as an implicitly bound variable here because the `autoImplicit` option is set to `Bool.false`.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:34:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 1
+where
+ a := ↑(Fintype.card n) / 2
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:43:31: error(lean.unknownIdentifier): Unknown identifier `upsilonU1`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:45:28: error(lean.unknownIdentifier): Unknown identifier `hasWeight_upsilonU1_pow`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:49:36: error: Ambiguous term
+  funext_iff
+Possible interpretations:
+  _root_.funext_iff : ?m.473 = ?m.474 ↔ ∀ (x : ?m.471), ?m.473 x = ?m.474 x
+  
+  MvPolynomial.funext_iff : ?m.476 = ?m.477 ↔
+    ∀ (x : ?m.475 → ?m.471), (MvPolynomial.eval x) ?m.476 = (MvPolynomial.eval x) ?m.477
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:49:48: error: Ambiguous term
+  prod_empty
+Possible interpretations:
+  Fintype.prod_empty : ∀ (f : ?m.471 → ?m.472), ∏ x, f x = 1
+  
+  Finset.prod_empty : ∏ x ∈ ∅, ?m.473 x = 1
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:49:4: error: Type mismatch: After simplification, term
+  partner_block (Equiv.emptySum Empty n) χ⁻¹ 1
+ has type
+  @IsPartner 𝔪.ResRing n Empty n (Ideal.Quotient.commRing 𝔪.ideal) inst✝¹ ⊤ (Equiv.emptySum Empty n) χ⁻¹
+    (fun x ↦ χ (∑ σ, Equiv.Perm.sign σ • ∏ i, x (σ i) i)) fun y ↦ ∏ x, χ (y ((Equiv.emptySum Empty n) (Sum.inl x)) x)
+but is expected to have type
+  @IsPartner 𝔪.ResRing n Empty n (Ideal.Quotient.commRing 𝔪.ideal) inst✝¹ ⊤ (Equiv.emptySum Empty n) χ⁻¹
+    (fun A ↦ χ (∑ σ, Equiv.Perm.sign σ • ∏ i, A (σ i) i)) 1
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:55:9: error(lean.unknownIdentifier): Unknown identifier `isAutomorphic_const`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:58:4: error: 'change' tactic failed, pattern
+  ∀ (f : ?m.620) (g : ?m.641 f),
+    thetaIntegral (?m.652 f g) (?m.653 f g) (?m.654 f g) (?m.655 f g) (?m.656 f g) (?m.657 f g) = ?m.658 f g
+is not definitionally equal to target
+  ∀ (φ : 𝒮 ((stdSpace E n).hom (stdSpace E n))) (h : G E 1),
+    ∫ (g : G E 1), (((pairWeil (stdSpace E n) (stdSpace E n) α 1) (h, g)) φ) 0 * ?m.580 g ∂(stdSpace E n).quotMeasure =
+      (L h) φ
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:87:2: error(lean.unknownIdentifier): Unknown constant `name_boxIndicator`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:94:20: error(lean.unknownIdentifier): Unknown identifier `upsilonU1`
+
+Note: It is not possible to treat `upsilonU1` as an implicitly bound variable here because the `autoImplicit` option is set to `Bool.false`.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:95:21: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:96:19: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:96:7: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:95:8: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:93:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:93:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  CMType E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:94:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:94:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  NumberField E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:93:48: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:93:48: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  CMType E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:93:34: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Norm ℕ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:98:19: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Field E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:99:40: error: Application type mismatch: The argument
+  x✝
+has type
+  @NumberField.InfinitePlace E ?m.213
+but is expected to have type
+  @NumberField.InfinitePlace E (?m.209 he)
+in the application
+  c x✝
+'c2_empty_matching' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:108:14: error(lean.unknownIdentifier): Unknown constant `c2_stdClassSum_det_modKernel_eq`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:111:32: error(lean.unknownIdentifier): Unknown constant `c2_stdClassSum_det_modKernel_eq`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_1/C2DeterminantClassSum.lean:116:44: error(lean.unknownIdentifier): Unknown constant `c2_stdClassSum_det_modKernel_eq`
