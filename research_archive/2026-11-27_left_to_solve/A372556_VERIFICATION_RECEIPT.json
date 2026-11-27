@@ -1,0 +1,123 @@
+{
+  "problem_id": "oeis-a372556",
+  "conjecture_author": "Antti Karttunen (OEIS May 10, 2024)",
+  "source": "https://oeis.org/A372556",
+  "source_revision": 14,
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6 family; exact serving variant not exposed)",
+  "complete_statement": "For every positive n some representation with globally fewest positive Jacobsthal summands uses index floor(log_2(3n+1)) or that index minus one. The zero empty optimum and duplicate J1=J2=1 convention are handled.",
+  "mathematical_result": "Full proof by optimal-score exchanges and exact parity-dependent prefix bounds.",
+  "lean_verification": {
+    "status": "FULL_PINNED_KERNEL_PASS",
+    "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+    "lean_version": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "proof_code_commit": "31aab2c222341cd3d3cb7d5b310493fe52ca98ab",
+    "run_id": 46055072139,
+    "job_id": 140695454190,
+    "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46055072139",
+    "actual_exit": 0,
+    "solution_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_errors": true,
+    "statement_prefix_exact": true,
+    "canonical_proof_body_exact": true,
+    "remote_three_git_blobs_match_local": true
+  },
+  "files": {
+    "a372556_statement.lean": {
+      "sha256": "0005b2cd23dc3de6c8146224f67dda6fb61585c90e6af0d3265a33823cf23c9b",
+      "git_blob_sha": "9a07ac8adb97bfd299b664f2920d464496c9ca6e",
+      "bytes": 1391
+    },
+    "oeis-a372556_proof.lean": {
+      "sha256": "bfb6f452ca746c06fc1bb2a0fa1ada6d319ab86056978a81c9337212a3f0137a",
+      "git_blob_sha": "75cde9f1bcab09c56433189f9d266438ffe5f031",
+      "bytes": 18949
+    },
+    "ProbeA372556Full.lean": {
+      "sha256": "cf6fc55e92fd4cbedc88c4163bae039a85ff73c5a03fc5874530c6f04e7253d9",
+      "git_blob_sha": "feed8b6ac27798adb2e1ce3a5812739bb252bb3c",
+      "bytes": 19689
+    },
+    "A372556_COMPLETE_HAND_PROOF.md": {
+      "sha256": "cf1c35c0953ce91d2fed563ecf31f6886f1465b4c5772d4912742b12970dbeee",
+      "git_blob_sha": "5722712e1a1fe81e9fe2ee0ecbfec6ef72d1da8f",
+      "bytes": 4092
+    },
+    "A372556_PRIOR_SCOPE_AUDIT.md": {
+      "sha256": "0ea2743bd51807150382fe5c7aa192bd703ada71153867abec701309f013e996",
+      "git_blob_sha": "3225c5f36fd74abe176f54d9e48fb2114710e006",
+      "bytes": 4732
+    }
+  },
+  "independent_challenge": {
+    "reviewer": "parallel algebra lane, assisted by ChatGPT/Codex",
+    "mathematics": "PASS",
+    "source_fidelity": "PASS",
+    "prior_scope": "No exact prior resolution located within inspected sources; no global priority guarantee.",
+    "audit_sha256": "0ea2743bd51807150382fe5c7aa192bd703ada71153867abec701309f013e996"
+  },
+  "known_prior_acknowledged": [
+    "Classical Jacobsthal recurrence and parity identities",
+    "Horadam1996 local adjacent-coefficient exchange and patterned representations",
+    "Carlitz-Scoville-Hoggatt1972 distinct-summand canonical representations"
+  ],
+  "finite_check": {
+    "tested_n_min": 0,
+    "tested_n_max": 100000,
+    "all_exact_cardinalities": true,
+    "all_exchange_normal_forms": true,
+    "all_prefix_bounds": true,
+    "all_largest_two_coin_conclusions": true,
+    "all_source_terms": 107,
+    "finite_test_only": true,
+    "lean_kernel_verification": false
+  },
+  "initial_public_gate": {
+    "live": {
+      "http_status": 200,
+      "data": {
+        "id": "oeis-a372556",
+        "kind": "unformalized",
+        "liveAgents": 0,
+        "ref": "https://oeis.org/A372556",
+        "solution_present": false,
+        "claim_present": false
+      }
+    },
+    "A372556": {
+      "http_status": 200,
+      "data": {
+        "total_count": 0,
+        "incomplete_results": false,
+        "items": []
+      }
+    },
+    "A372555": {
+      "http_status": 200,
+      "data": {
+        "total_count": 0,
+        "incomplete_results": false,
+        "items": []
+      }
+    },
+    "A372558": {
+      "http_status": 200,
+      "data": {
+        "total_count": 0,
+        "incomplete_results": false,
+        "items": []
+      }
+    },
+    "checked_utc": "2026-11-27T19:11:14.979084+00:00"
+  },
+  "official_submission": null,
+  "checker_verdict": null,
+  "accepted": false,
+  "lease_confirmed": false,
+  "remaining_obstruction": "Fresh official lease, statement registration/human merge, imported-target proof submission and checker acceptance.",
+  "recorded_utc": "2026-11-27T19:16:02.793865+00:00"
+}
