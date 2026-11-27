@@ -30,8 +30,14 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
           (1 : Matrix n Empty 𝔪.ResRing → ℂ)
           (matchedPoly (ι := ι) (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
           x g ∂(stdSpace E Empty).quotMeasure := by
-  choose Q₀ κ hκ using real_matching (E := E) (Equiv.sumEmpty Empty Empty)
+  have hj : blockSigns (Equiv.sumEmpty n Empty) = (1 : n → ℤˣ) := by funext i; rfl
+  have hf : blockSigns (Equiv.sumEmpty Empty Empty) = (1 : Empty → ℤˣ) := by
+    funext i
+    cases i
+  have hreal := real_matching (E := E) (Equiv.sumEmpty Empty Empty)
     (Equiv.sumEmpty n Empty) (Equiv.emptySum Empty n) (ι := ι) rfl
+  simp only [posFockVector, hj, hf, Fintype.card_empty, Nat.cast_zero, zero_sub] at hreal
+  choose Q₀ κ hκ using hreal
   have hd : card n = 2 * (card n / 2) := by rcases he with ⟨k, hk⟩; omega
   have hμ : ∀ q : NumberField.InfinitePlace E,
       (card n : ℤ) ≤ 2 * ((card (ι q) : ℤ) + (card n / 2 : ℕ)) := by
@@ -46,7 +52,7 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
       (fun τ ↦ (card (ι τ) : ℤ) + (card n / 2 : ℕ)) χ⁻¹ := by
     simpa only [Pi.neg_def, Pi.add_def, neg_neg] using
       hα.inv.mul (hasWeight_upsilonU1_pow (card n / 2))
-  obtain ⟨c, _, q, hc⟩ := H 𝔪 _ _ ht
+  obtain ⟨c, hc₀, q, hc⟩ := H 𝔪 _ _ ht
   simp only [MulChar.inv_apply_eq_inv', inv_inv] at hc
   have hP : IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det)
       (1 : Matrix n Empty 𝔪.ResRing → ℂ) := by
@@ -58,7 +64,7 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
       (pairThetaKer (stdSpace E n) (stdSpace E n) α 1).swap.exists_clm_lift
         (isAutomorphic_const _ 1).mem_rapidFunctions,
       realPairWeil_stackedDetProd (Equiv.sumEmpty n Empty) (Equiv.emptySum Empty n) rfl η 1
-    simp [rankTwist, Space.lift, ↓mul_inv, -Prod.forall] at hc hL hv
+    simp [rankTwist, Space.lift, ↓mul_inv, hj, hf, -Prod.forall] at hc hL hv
     change ∀ f g, thetaIntegral .. = _ at hL
     specialize hκ x
       ((L · ∘L .flip (integrated _) _) ∘ (g * ⟨·, 1⟩))
@@ -68,9 +74,26 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
           (isRapid_modKernel (stdSpace E Empty) (stdSpace E n) α α
             hα.1 (fun y _ ↦ ⟨0, by ext i; cases i⟩) _ g).integrable
             (by fun_prop [modKernel])]⟩, by simp⟩)
-      (by simp [← hL, ← pairWeil_integrated _ _ α 1, thetaIntegral_pairWeil, mul_assoc])
+      (by
+        intro g' ⟨a, b⟩ w
+        change (L (g * (g', 1)))
+            (integrated _ (realPairWeil (fun τ ↦ -(card (ι τ) : ℤ)) 0 (a, b) w) _) =
+          (L (g * (g' * a, 1))) (integrated _ w _)
+        rw [← hL, ← hL, ← pairWeil_integrated (stdSpace E n) (stdSpace E n) α 1,
+          thetaIntegral_pairWeil]
+        simp [mul_assoc])
       (fun x Q h ↦ (hL .. ▸ hc _).trans
-        (by simp [modKernel, modDatum, ← h, ← pairWeil_integrated_right α α, ← pairTheta_mul])) η
+        (by
+          change c * _ = c * _
+          congr 1
+          apply integral_congr_ae
+          filter_upwards [] with h₀
+          simp only [modKernel, modDatum]
+          rw [← h, ← pairWeil_integrated_right α α, ← pairTheta_mul] <;> simp)) η
+    simp only [Function.comp_apply, ContinuousLinearMap.comp_apply,
+      ContinuousLinearMap.flip_apply, LinearMap.comp_apply, LinearMap.smul_apply,
+      smul_eq_mul, mul_one] at hκ
+    set_option maxHeartbeats 1000000 in
     erw [← hL, thetaIntegral, integral_quotMeasure_eq_classSum
       (f := modKernelI (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) _ g)
       (pairThetaKer ..).swap.theta_rat_mul

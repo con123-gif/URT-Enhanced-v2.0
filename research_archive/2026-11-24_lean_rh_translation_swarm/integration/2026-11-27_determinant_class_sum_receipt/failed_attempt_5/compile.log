@@ -1,0 +1,311 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:45:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:72:7: error: unsolved goals
+E n : Type
+inst✝⁴ : Field E
+inst✝³ : CMType E
+inst✝² : WeilData E
+inst✝¹ : Fintype n
+he : Even (Fintype.card n)
+hn : 2 ≤ Fintype.card n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+Q₀ : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+κ : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 → ℂ
+hκ :
+  ∀ (v : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1)
+    (ℓ : GInf E (blockSigns (Equiv.sumEmpty n Empty)) → PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 →L[ℂ] ℂ)
+    (ℓ' : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ →ₗ[ℂ] ℂ),
+    (∀ (g : GInf E (blockSigns (Equiv.sumEmpty n Empty))) (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)) × GInf E 1)
+        (w : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1),
+        (ℓ g) (((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) x) w) = (ℓ (g * x.1)) w) →
+      (∀ (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)))
+          (Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ),
+          ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, x))
+                ((polyVector
+                    (realSigns E
+                      (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                  Q₀) =
+              (polyVector
+                  (realSigns E
+                    (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                Q →
+            (ℓ x) v = ℓ' Q) →
+        ∀ (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v * (ℓ 1) ((posFockVector (Equiv.sumEmpty n Empty)) (stackedDetProd (Equiv.emptySum Empty n) η)) =
+            ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
+hd : Fintype.card n = 2 * (Fintype.card n / 2)
+hμ : ∀ (q : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * (↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2))
+C : ℝ
+x : fockSpace (realSigns E (homSigns 1 1))
+left✝ : IsRapidDatum x
+H :
+  ∀ (𝔪 : Modulus E) (ν : AutChar E) (χ : MulChar 𝔪.ResRing ℂ),
+    IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2)) χ →
+      have γ := rankTwist ν⁻¹ n;
+      ∃ c,
+        c ≠ 0 ∧
+          ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+            ∀ (g : G E 1),
+              thetaIntegral (stdSpace E n) (stdSpace E n) γ 1
+                  (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x) g =
+                c *
+                  ∫ (h : G E 1),
+                    pairTheta (stdSpace E Empty) (stdSpace E n) γ γ
+                      (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+                      (h, g) ∂(stdSpace E Empty).quotMeasure
+𝔪 : Modulus E
+α : AutChar E
+χ : MulChar 𝔪.ResRing ℂ
+hα : IsTameFor 𝔪 α (fun τ ↦ -↑(Fintype.card (ι τ))) χ
+this : α.HasWeight (fun τ ↦ -↑(Fintype.card (ι τ))) ⋯.choose := (Exists.choose_spec hα.right).left
+ht :
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (fun τ ↦ ↑(Fintype.card (ι τ)) + ↑(Fintype.card n / 2))
+    χ⁻¹
+c : ℂ
+hc₀ : c ≠ 0
+q : ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+hP : IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+β : AutChar E
+g : G E 1
+L : G E 1 → 𝒮 ((stdSpace E n).hom (stdSpace E n)) →L[ℂ] ℂ
+hc :
+  ∀ (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) x) g =
+      c *
+        ∫ (h : G E 1),
+          pairTheta (stdSpace E Empty) (stdSpace E n) α α
+            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+            (h, g) ∂(stdSpace E Empty).quotMeasure
+hv :
+  ∀ (u : GInf E 1),
+    ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, u))
+        ((polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+          ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))
+            (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))) =
+      (polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+        ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η))
+hL :
+  ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n))) (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+⊢ ∀ (g_1 a : GInf E (blockSigns (Equiv.sumEmpty n Empty))) (b : GInf E 1)
+    (w : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1),
+    (L (g * (g_1, 1)) ∘SL
+          ((stdSpace E n).hom (stdSpace E n)).integrated.flip
+            (((((stdSpace E n).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn ((fun A ↦ χ A.det) ∘ vecToMat)))
+              ((stdSpace E n).hom (stdSpace E n)).vacElem))
+        (((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (a, b)) w) =
+      (L (g * (g_1 * a, 1)) ∘SL
+          ((stdSpace E n).hom (stdSpace E n)).integrated.flip
+            (((((stdSpace E n).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn ((fun A ↦ χ A.det) ∘ vecToMat)))
+              ((stdSpace E n).hom (stdSpace E n)).vacElem))
+        w
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:77:9: error: unsolved goals
+E n : Type
+inst✝⁴ : Field E
+inst✝³ : CMType E
+inst✝² : WeilData E
+inst✝¹ : Fintype n
+he : Even (Fintype.card n)
+hn : 2 ≤ Fintype.card n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+Q₀ : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+κ : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 → ℂ
+hκ :
+  ∀ (v : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1)
+    (ℓ : GInf E (blockSigns (Equiv.sumEmpty n Empty)) → PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1 →L[ℂ] ℂ)
+    (ℓ' : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ →ₗ[ℂ] ℂ),
+    (∀ (g : GInf E (blockSigns (Equiv.sumEmpty n Empty))) (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)) × GInf E 1)
+        (w : PairFock E (blockSigns (Equiv.sumEmpty n Empty)) 1),
+        (ℓ g) (((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) x) w) = (ℓ (g * x.1)) w) →
+      (∀ (x : GInf E (blockSigns (Equiv.sumEmpty n Empty)))
+          (Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ),
+          ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, x))
+                ((polyVector
+                    (realSigns E
+                      (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                  Q₀) =
+              (polyVector
+                  (realSigns E
+                    (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+                Q →
+            (ℓ x) v = ℓ' Q) →
+        ∀ (η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ),
+          κ v * (ℓ 1) ((posFockVector (Equiv.sumEmpty n Empty)) (stackedDetProd (Equiv.emptySum Empty n) η)) =
+            ℓ' (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
+hd : Fintype.card n = 2 * (Fintype.card n / 2)
+hμ : ∀ (q : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * (↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2))
+C : ℝ
+x✝ : fockSpace (realSigns E (homSigns 1 1))
+left✝ : IsRapidDatum x✝
+H :
+  ∀ (𝔪 : Modulus E) (ν : AutChar E) (χ : MulChar 𝔪.ResRing ℂ),
+    IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2)) χ →
+      have γ := rankTwist ν⁻¹ n;
+      ∃ c,
+        c ≠ 0 ∧
+          ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+            ∀ (g : G E 1),
+              thetaIntegral (stdSpace E n) (stdSpace E n) γ 1
+                  (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x✝) g =
+                c *
+                  ∫ (h : G E 1),
+                    pairTheta (stdSpace E Empty) (stdSpace E n) γ γ
+                      (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+                      (h, g) ∂(stdSpace E Empty).quotMeasure
+𝔪 : Modulus E
+α : AutChar E
+χ : MulChar 𝔪.ResRing ℂ
+hα : IsTameFor 𝔪 α (fun τ ↦ -↑(Fintype.card (ι τ))) χ
+this : α.HasWeight (fun τ ↦ -↑(Fintype.card (ι τ))) ⋯.choose := (Exists.choose_spec hα.right).left
+ht :
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (fun τ ↦ ↑(Fintype.card (ι τ)) + ↑(Fintype.card n / 2))
+    χ⁻¹
+c : ℂ
+hc₀ : c ≠ 0
+q : ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+hP : IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+β : AutChar E
+g : G E 1
+L : G E 1 → 𝒮 ((stdSpace E n).hom (stdSpace E n)) →L[ℂ] ℂ
+hc :
+  ∀ (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) x✝) g =
+      c *
+        ∫ (h : G E 1),
+          pairTheta (stdSpace E Empty) (stdSpace E n) α α
+            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+            (h, g) ∂(stdSpace E Empty).quotMeasure
+hv :
+  ∀ (u : GInf E 1),
+    ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, u))
+        ((polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+          ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))
+            (stackedDetProd (Equiv.emptySum Empty n) fun τ x ↦ η τ x))) =
+      (polyVector (realSigns E (homSigns (blockSigns (Equiv.sumEmpty n Empty)) 1)))
+        ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η))
+hL :
+  ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n))) (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+x : GInf E (blockSigns (Equiv.sumEmpty n Empty))
+Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+h :
+  ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, x))
+      ((polyVector
+          (realSigns E (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+        Q₀) =
+    (polyVector
+        (realSigns E (homSigns (blockSigns (Equiv.sumEmpty Empty Empty)) (blockSigns (Equiv.sumEmpty n Empty)))))
+      Q
+⊢ ∫ (h : G E 1),
+      pairTheta (stdSpace E Empty) (stdSpace E n) α α
+        ((((stdSpace E Empty).hom (stdSpace E n)).integrated ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+          (((((stdSpace E Empty).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn 1))
+            ((stdSpace E Empty).hom (stdSpace E n)).vacElem))
+        (h, g * (x, 1)) ∂(stdSpace E Empty).quotMeasure =
+    ∫ (x : G E 1),
+      pairTheta (stdSpace E Empty) (stdSpace E n) α α
+        ((((stdSpace E Empty).hom (stdSpace E n)).integrated ((polyVector (realSigns E (homSigns 1 1))) Q))
+          (((((stdSpace E Empty).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn 1))
+            ((stdSpace E Empty).hom (stdSpace E n)).vacElem))
+        (x, g) ∂(stdSpace E Empty).quotMeasure
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:81:6: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (4000000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:69:10: warning: This simp argument is unused:
+  (isRapid_modKernel (stdSpace E Empty) (stdSpace E n) α α hα.1 (fun y _ ↦ ⟨0, by ext i; cases i⟩) _ g).integrable
+        (by fun_prop [modKernel])
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [integral_add, map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:73:40: warning: This simp argument is unused:
+  ContinuousLinearMap.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_apply, ContinuousLinearMap.flip_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:74:10: warning: This simp argument is unused:
+  ContinuousLinearMap.flip_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_apply, ContinuousLinearMap.comp_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:75:14: warning: This simp argument is unused:
+  ← hL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← pairWeil_integrated _ _ α 1, thetaIntegral_pairWeil, mul_assoc]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:75:20: warning: This simp argument is unused:
+  ← pairWeil_integrated _ _ α 1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← hL, thetaIntegral_pairWeil, mul_assoc]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:75:51: warning: This simp argument is unused:
+  thetaIntegral_pairWeil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← hL, ← pairWeil_integrated _ _ α 1, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:75:75: warning: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← hL, ← pairWeil_integrated _ _ α 1, thetaIntegral_pairWeil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:77:39: warning: This simp argument is unused:
+  ← h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [modKernel, modDatum, ← pairWeil_integrated_right α α, ← pairTheta_mul, hc₀]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:77:44: warning: This simp argument is unused:
+  ← pairWeil_integrated_right α α
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [modKernel, modDatum, ← h, ← pairTheta_mul, hc₀]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_5/C2DeterminantClassSum.lean:78:10: warning: This simp argument is unused:
+  ← pairTheta_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [modKernel, modDatum, ← h, ← pairWeil_integrated_right α α, hc₀]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] field_simp [measureReal_univ_ne_zero]
+'c2_empty_matching' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_stdClassSum_det_modKernel_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_DETERMINANT_CLASS_SUM: original complete statement preserved; general target absent directly
