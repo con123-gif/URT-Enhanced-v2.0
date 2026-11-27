@@ -1,0 +1,72 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+  "checked_input_module": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035576,
+        "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+      }
+    ]
+  },
+  "checked_interface_dependencies": [],
+  "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+  "theorems": [
+    "c2_real_matching_standard",
+    "c2_real_determinant_invariant"
+  ],
+  "full_RH_replay": false,
+  "native_source_build_performed": false,
+  "argv": [
+    "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000",
+    "-Dpp.fullNames=true",
+    "-Ddebug.skipKernelTC=false",
+    "-j",
+    "2",
+    "-R",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2RealMatchingStandard",
+    "-o",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2RealMatchingStandard/C2RealMatchingStandard.olean",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2RealMatchingStandard/C2RealMatchingStandard.lean"
+  ],
+  "compiler": {
+    "returncode": 0,
+    "seconds": 3.72,
+    "log": "compile.log",
+    "axioms": {
+      "c2_real_matching_standard": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "c2_real_determinant_invariant": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "direct_supplier_guards_observed": true
+  },
+  "new_Lean_execution": true,
+  "all_requested_checks_ok": true,
+  "compiled_module": {
+    "name": "C2RealMatchingStandard",
+    "artifacts": [
+      {
+        "name": "C2RealMatchingStandard.olean",
+        "bytes": 236832,
+        "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+      }
+    ]
+  }
+}

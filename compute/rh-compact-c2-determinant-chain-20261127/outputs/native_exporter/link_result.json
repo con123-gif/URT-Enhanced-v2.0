@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "seconds": 2.27,
+  "log": "link.log",
+  "argv": [
+    "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/leanc",
+    "-O3",
+    "-o",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/native_graph",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/NativeGraph.c"
+  ]
+}

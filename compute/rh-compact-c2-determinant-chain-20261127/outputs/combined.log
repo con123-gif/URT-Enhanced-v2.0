@@ -1,0 +1,3 @@
+{"step": "environment", "state": "started"}
+{"step": "six_C2_declarations", "state": "started"}
+{"all_six_declarations_checked": true, "full_RH_replay": false}

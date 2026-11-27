@@ -1,0 +1,2 @@
+{"phase": "C2DeterminantCarrierTransport", "theorems": ["c2_stdClassSum_carrierXi_eq_carrierForm"], "state": "started"}
+{"theorems": ["c2_stdClassSum_carrierXi_eq_carrierForm"], "all_named_theorems_checked": true, "full_RH_replay": false}

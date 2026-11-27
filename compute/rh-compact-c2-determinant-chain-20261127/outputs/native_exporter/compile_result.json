@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "seconds": 0.97,
+  "log": "compile.log",
+  "argv": [
+    "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+    "-R",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter",
+    "-o",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/NativeGraph.olean",
+    "-c",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/NativeGraph.c",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/NativeGraph.lean"
+  ]
+}

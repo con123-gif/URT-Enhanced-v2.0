@@ -1,0 +1,2 @@
+{"phase": "C2RealMatchingStandard", "theorems": ["c2_real_matching_standard", "c2_real_determinant_invariant"], "state": "started"}
+{"theorems": ["c2_real_matching_standard", "c2_real_determinant_invariant"], "all_named_theorems_checked": true, "full_RH_replay": false}

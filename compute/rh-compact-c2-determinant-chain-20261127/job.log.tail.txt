@@ -1,0 +1,23 @@
+{"step": "download", "state": "started"}
+{"step": "download", "returncode": 0, "seconds": 1.77, "log": "download.log"}
+{"step": "extract", "state": "started"}
+{"step": "extract", "returncode": 0, "seconds": 5.73, "log": "extract.log"}
+{"step": "version", "state": "started"}
+{"step": "version", "returncode": 0, "seconds": 0.07, "log": "version.log"}
+{"step": "init", "state": "started"}
+{"step": "init", "returncode": 0, "seconds": 0.16, "log": "init.log"}
+{"step": "remote", "state": "started"}
+{"step": "remote", "returncode": 0, "seconds": 0.16, "log": "remote.log"}
+{"step": "fetch", "state": "started"}
+{"step": "fetch", "returncode": 0, "seconds": 1.87, "log": "fetch.log"}
+{"step": "checkout", "state": "started"}
+{"step": "checkout", "returncode": 0, "seconds": 0.21, "log": "checkout.log"}
+{"step": "mathlib_cache", "state": "started"}
+{"step": "mathlib_cache", "returncode": 0, "seconds": 65.08, "log": "mathlib_cache.log"}
+{"step": "b2_build", "state": "started"}
+{"step": "b2_build", "returncode": 0, "seconds": 2489.81, "log": "b2_build.log"}
+{"step": "original_callers", "state": "started"}
+{"step": "original_callers", "returncode": 0, "seconds": 3.92, "log": "original_callers.log"}
+{"step": "negative_missing_projector_guard", "state": "started"}
+{"step": "negative_missing_projector_guard", "returncode": 1, "seconds": 2.32, "log": "negative_missing_projector_guard.log"}
+{"all_requested_checks_ok": true, "new_interface_declarations": 10, "complete_original_statements": 2, "complete_graph_roots": 4, "full_RH_replay": false}

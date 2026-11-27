@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "seconds": 0.42,
+  "log": "core_native.log",
+  "argv": [
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/native_graph",
+    "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux",
+    "Lean",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/core_native.jsonl",
+    "Nat.le_refl"
+  ]
+}

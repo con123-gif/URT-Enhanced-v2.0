@@ -1,0 +1,6 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/native_exporter/NativeGraph.lean
+{"phase": "compile", "state": "started"}
+{"phase": "link", "state": "started"}
+{"phase": "core_native", "state": "started"}
+{"phase": "core_interpreted", "state": "started"}
+{"native_exporter_ready": true, "core_equivalence": {"record_sets_equal": true, "headers_equal": true, "footers_equal": true, "native_nodes": 11, "independent_verifier_passed_both": true, "all_checks_pass": true, "execution_modes_valid": true, "execution_modes": {"interpreted": "interpreted", "native": "native"}, "scope": "Nat.le_refl compatibility only; no B2/C2/RH proof claim", "full_RH_replay": false}, "full_RH_replay": false}

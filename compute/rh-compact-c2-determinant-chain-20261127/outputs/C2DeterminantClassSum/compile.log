@@ -1,0 +1,19 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantClassSum/C2DeterminantClassSum.lean:44:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantClassSum/C2DeterminantClassSum.lean:102:69: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantClassSum/C2DeterminantClassSum.lean:102:69: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Try this:
+  [apply] field_simp [measureReal_univ_ne_zero]
+'c2_empty_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_stdClassSum_det_modKernel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_DETERMINANT_CLASS_SUM: original complete statement preserved; general target absent directly
