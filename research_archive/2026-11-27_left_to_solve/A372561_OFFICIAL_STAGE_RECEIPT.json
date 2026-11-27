@@ -1,0 +1,133 @@
+{
+  "problem_id": "oeis-a372561",
+  "stage": "OFFICIAL_STATEMENT_SUBMITTED",
+  "official_statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12868",
+  "official_pr_number": 12868,
+  "official_pr_state_at_observation": "open",
+  "statement_review_merge": "PENDING",
+  "official_proof_pr": null,
+  "official_proof_checker_verdict": null,
+  "accepted_full_proof": false,
+  "full_proof_status": "FULL_EXACT_STATEMENT_PINNED_KERNEL_PASS; imported-target check awaits statement merge",
+  "current_active_lease_count_for_this_lane": 0,
+  "lease_claim": {
+    "http_status": 200,
+    "assignment_received": true,
+    "problem": "oeis-a372561",
+    "agent": "codex-jacobsthal-a372561",
+    "degraded": null,
+    "role": "lead",
+    "othersWorking": 0,
+    "team": [],
+    "teamNotes": [],
+    "checked_utc": "2026-11-27T21:59:51.297356+00:00"
+  },
+  "PLAN": {
+    "http_status": 200,
+    "id": 53080,
+    "ok": true,
+    "role": null,
+    "team": [],
+    "notes": [],
+    "last_note": null,
+    "checked_utc": "2026-11-27T22:00:12.631077+00:00"
+  },
+  "last_prepublication_heartbeat": {
+    "http_status": 200,
+    "ok": true,
+    "role": "lead",
+    "team": [],
+    "last_note": 53080,
+    "checked_utc": "2026-11-27T22:00:19.426558+00:00"
+  },
+  "DONE": {
+    "http_status": 200,
+    "id": 53197,
+    "ok": true,
+    "checked_utc": "2026-11-27T22:01:30.680053+00:00"
+  },
+  "release_submitted": {
+    "http_status": 200,
+    "id": null,
+    "ok": true,
+    "checked_utc": "2026-11-27T22:01:37.030292+00:00"
+  },
+  "statement": {
+    "repository": "con123-gif/open-math-agents",
+    "branch": "oma-statement-oeis-a372561-20261127",
+    "head_commit": "efbd9f9492896f557c49bd4d6db36bc5ba1682ea",
+    "base_ref": "main",
+    "files_changed": 1,
+    "only_file": "statements/oeis-a372561.lean",
+    "added_lines": 50,
+    "deleted_lines": 0,
+    "git_blob_sha": "804c4fae0501a67e1182b334649e2fb8ada54d01",
+    "sha256": "e8d07240ef7dfc7bd66715a40be89324d6d09cc0f37983d25d68b6efb674553e",
+    "official_changed_file_readback_exact": true
+  },
+  "proof": {
+    "sha256": "5fd42b789d7b470f52f528a652c5a4a83d6f2e1a180945c7da41a4352bd477a3",
+    "git_blob_sha": "804b4309f0c329665ede7e6a272658740f8c44ae",
+    "bytes": 35825
+  },
+  "kernel_verification": {
+    "status": "FULL_PINNED_KERNEL_PASS",
+    "verification_kind": "Standalone complete exact-statement probe; canonical imported-target stage awaits official statement merge.",
+    "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+    "lean_version": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "proof_code_commit": "4898031a49f380285d311de875fc5d15c3e79589",
+    "run_id": 46061923315,
+    "job_id": 140717982673,
+    "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46061923315",
+    "actual_exit": 0,
+    "solution_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_errors": true,
+    "statement_prefix_exact": true,
+    "canonical_proof_body_exact": true,
+    "remote_three_git_blobs_match_local": true,
+    "official_checker_acceptance": false
+  },
+  "source_gate": {
+    "source": "https://oeis.org/A372561",
+    "current_revision": 15,
+    "source_http_status": 200,
+    "source_sha256": "28c30cd84d1d7977bc4d8b6eba157b28acc23fa9cc6e330e617f3f07a568e587",
+    "exact_scope": "For the raw A372560 array grid(n,k) and global minimum Jacobsthal-summand cost A372555, every n>=2,k>=1 with n+k=14 has cost7, every n>=2,k>=1 with n+k=31 has cost9, and cost(grid(n,k))=cost(grid(k,n)) for all n,k>1. All three source conjectures are retained; the displayed greedy A265745 array is explicitly distinguished.",
+    "live_http_status": 200,
+    "live_before_claim": {
+      "id": "oeis-a372561",
+      "kind": "unformalized",
+      "liveAgents": 0,
+      "solution": null,
+      "decl": "",
+      "ref": "https://oeis.org/A372561"
+    },
+    "gate_checked_utc": "2026-11-27T21:58:40.947273+00:00",
+    "preclaim_all_state_PR_count": 0,
+    "incomplete_results": false,
+    "main_statement_absent": true,
+    "latest100_REST_before_publication_matches": 0
+  },
+  "independent_review": {
+    "reviewers": "Separate number-theory and algebra AI-agent lanes, plus root mathematical challenge; no human-review claim.",
+    "mathematics": "PASS",
+    "source_fidelity_all_three_clauses": "PASS",
+    "finite_packet": "Independent exact minimum-coin oracle through49237 checked42 E2 cores and24 required E1 cores; supplementary finite evidence only.",
+    "prior_scope": "No exact earlier target resolution located in inspected current source, all15 OEIS histories, related primary dossiers, public Lean code, and bounded literature searches. No worldwide priority guarantee.",
+    "number_review_sha256": "62eee207d1d62859560a3e9257c68d1bdf1700469fbae4df3fe1fdc21ce4a038",
+    "algebra_review_sha256": "e0eb71b7896b954f83de2f2a5e5e2da16178be6b0750767b6286698813dd60ae"
+  },
+  "known_prior_acknowledged": [
+    "Classical Jacobsthal recurrence and parity identities",
+    "Ordinary digit-sum carry inequalities and base4 arithmetic",
+    "Known finite reduced-Collatz trajectory of27; no general Collatz conjecture is assumed or claimed"
+  ],
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6 family; exact serving variant not exposed)",
+  "next_action": "After statement review/merge, verify the unchanged canonical proof against the merged imported target, obtain a fresh proof-stage lease and submit through the official checker. No current proof acceptance inferred.",
+  "recorded_utc": "2026-11-27T22:02:10.138339+00:00"
+}
