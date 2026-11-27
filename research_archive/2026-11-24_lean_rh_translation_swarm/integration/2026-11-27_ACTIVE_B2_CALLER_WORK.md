@@ -11,7 +11,7 @@ and the repaired skew/count module passed separately in 60.18 s, all with
 standard axioms. [Exact shared receipts](2026-11-27_b2_shared_receipt/README.md).
 The graph rejected the old collector assumption about projection carriers.
 The strict Lean-4.35-compatible collector is prepared; use the already checked
-local module and cache for the retry. Do not launch another cold B2 build.
+local module and cache for the retry. The next shared job combines the new joint fusion and its graph; avoid a separate baseline-only rebuild.
 
 ## Exact scope
 

@@ -15,12 +15,15 @@ import sys
 import run_active_b2_energy as energy
 from replay_full_b2_built import FULL_GUARD
 import run_compact_b2_native_replay as native
+import fuse_b2_checked_proofs as fusion
 
 
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--preflight", action="store_true")
+    p.add_argument("--labelled-fusion", action="store_true",
+                   help="Check core transport controls, the joint eleven-declaration fusion, and eight graph roots")
     args = p.parse_args()
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -31,6 +34,12 @@ def main():
               "new_Lean_execution": False, "full_RH_replay": False,
               "human_assembly_verified": False, "graph_executed": False,
               "all_requested_checks_ok": False}
+    if args.labelled_fusion:
+        raw = (native.SWARM / fusion.LABEL_SOURCE).read_bytes()
+        native.require(native.git_blob(raw) == fusion.LABEL_BLOB, "Changed joint labelled candidate")
+        status.update(scope="seven prerequisite proofs, checked transport controls, eleven joint B2 declarations and eight local graph roots",
+                      joint_labelled_source={"source": fusion.LABEL_SOURCE, "source_blob": fusion.LABEL_BLOB},
+                      joint_fusion_checked=False, core_transport_controls_pass=False)
     module = None
 
     def save():
@@ -73,9 +82,34 @@ def main():
         if leaf == "missing_projector_guard.lean" and module is not None:
             lean = shutil.which("lean", path=env["PATH"])
             native.require(lean is not None, "Pinned Lean binary missing before graph")
+            graph_args = []
+            if args.labelled_fusion:
+                core = base([sys.executable, energy.HERE / "test_checked_retarget_kernel.py",
+                             "--lean", lean, "--out", out / "transport_core", "--seconds", "120"],
+                            cwd, env, out / "transport_core_driver.log", 300)
+                status["core_transport_driver"] = core
+                core_receipt = out / "transport_core/compatibility_results.json"
+                status["core_transport_controls_pass"] = (core["returncode"] == 0 and
+                    core_receipt.is_file() and json.loads(core_receipt.read_text())["all_checks_pass"] is True)
+                save()
+                native.require(status["core_transport_controls_pass"], "Core transport compatibility controls failed")
+                fused = base([sys.executable, energy.HERE / "fuse_b2_checked_proofs.py",
+                              "--compact-root", cwd, "--lean-bin", Path(lean).parent,
+                              "--module-dir", out, "--out", out / "fused", "--labelled"],
+                             cwd, env, out / "fused_driver.log", 2700)
+                status["joint_fusion_driver"] = fused
+                receipt = out / "fused/fused_b2_results.json"
+                if receipt.is_file():
+                    status["joint_fusion_receipt"] = json.loads(receipt.read_text())
+                status["joint_fusion_checked"] = (fused["returncode"] == 0 and
+                    status.get("joint_fusion_receipt", {}).get("fused_chain_checked") is True and
+                    status.get("joint_fusion_receipt", {}).get("labelled_supplier_guards_observed") is True)
+                save()
+                native.require(status["joint_fusion_checked"], "Joint labelled B2 fusion failed; preserve exact log")
+                graph_args = ["--fused-module-dir", out / "fused"]
             graph = base([sys.executable, energy.HERE / "audit_active_b2_graph.py",
                           "--compact-root", cwd, "--lean-bin", Path(lean).parent,
-                          "--module-dir", out, "--out", out / "graph"],
+                          "--module-dir", out, "--out", out / "graph", *graph_args],
                          cwd, env, out / "graph_driver.log", 1800)
             status.update(graph_executed=True, graph_receipt=graph)
             if graph["returncode"] == 0:
@@ -100,6 +134,9 @@ def main():
         status["all_requested_checks_ok"] = (result["all_requested_checks_ok"] is True and
             status.get("primary_callers_checked") is True and status["graph_executed"] and
             status["graph_receipt"]["returncode"] == 0)
+        if args.labelled_fusion:
+            status["all_requested_checks_ok"] = (status["all_requested_checks_ok"] and
+                status["core_transport_controls_pass"] and status["joint_fusion_checked"])
         save()
         native.require(status["all_requested_checks_ok"], "Full B2/graph checks incomplete; inspect individual receipts")
         print(json.dumps(status))

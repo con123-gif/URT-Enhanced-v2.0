@@ -67,5 +67,26 @@ The eight-root audit now additionally requires both label bridges reachable
 from every new count/pair/energy root and the old label-uniqueness supplier
 absent there. The old nine-declaration preparation remains a recorded base
 input; do not compile both variants or duplicate the geometric derivation.
-Run the preferred joint variant after core transport compatibility and the
-current graph audit. Preserve the first actual error if it fails.
+Run the preferred joint variant after core transport compatibility. Its
+own eight-root audit is required; the earlier six-root local attempt is
+retained independently. Preserve the first actual error if it fails.
+
+## One coordinated shared execution
+
+The local repaired six-root process has run for over thirty minutes without
+finishing. The identical earlier count took 60.18 s on the shared host and
+timed out locally at 1800.14 s. Use one serialized shared job for the first
+native joint fusion and its complete eight-root audit:
+`rh-compact-b2-labelled-fusion-graph-20261127`, after the active C2 job.
+This is a combined new-target replay, not another baseline-only batch.
+The previous shared temporary workspace has already been removed.
+
+`run_full_b2_shared_graph.py --labelled-fusion` uses one official-source
+bootstrap, compiles the seven prerequisite proofs into their checked object,
+runs both core transport controls, then the eleven-declaration joint source,
+then its eight-root graph before cleanup. Its preflight authenticated the
+three baseline fragments and the peer joint source; Python syntax checks
+passed. No native joint result follows from those preparation checks.
+Both core controls, all eleven axiom/type/supplier reports and all eight
+independent graph projections must pass. Retain each partial receipt and
+all original failures. Do not duplicate this coordinated build.

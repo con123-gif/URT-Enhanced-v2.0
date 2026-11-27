@@ -3611,3 +3611,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT active continuous work, user directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-b2-labelled-fusion-graph-20261127"
+question = "After the existing C2 job, use one pinned official-source workspace for the first joint B2 native fusion: compile its seven prerequisite proofs once, check normal-kernel proof-transport controls, compile the authenticated eleven-declaration RUN80 labelled/skew count-to-full-energy candidate, and verify all eight constructor-inclusive original/new count/pair/energy frontiers. Require exact statements, standard axioms, all supplier/old-target guards and independent verifier receipts. Preserve partial failures and cache; no Main or full RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py --labelled-fusion --out {out}"
+timeout_minutes = 180
+requested_by = "GPT active continuous work, user directive 2026-11-27"
+claim = "independent"
