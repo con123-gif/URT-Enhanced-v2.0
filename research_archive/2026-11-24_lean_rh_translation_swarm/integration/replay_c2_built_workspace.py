@@ -49,6 +49,9 @@ def main():
     p.add_argument("--build", action="store_true")
     p.add_argument("--carrier", action="store_true",
                    help="Propagate the checked equal-rank replacement through all four RUN79 callers")
+    p.add_argument("--candidate-seconds", type=int, default=1200)
+    p.add_argument("--propagation-seconds", type=int, default=1200)
+    p.add_argument("--original-seconds", type=int, default=600)
     args = p.parse_args()
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -66,8 +69,24 @@ def main():
                 "new_Lean_execution": False, "full_RH_replay": False}
     adapter = ("info.value? |", "info.value? (allowOpaque := true) |")
     native.require(raw.decode().count(adapter[0]) == 1, "Changed C2 theorem-body accessor")
-    adapted = raw.decode().replace(*adapter, 1).encode()
+    adapted_text = raw.decode().replace(*adapter, 1)
+    repairs = [
+        {"old": "  have P := isPartner_stdRowDatum_stdColDatum σ ha\n",
+         "new": "  have P := isPartner_stdRowDatum_stdColDatum σ (χ := 𝔠.χ) ha\n",
+         "reason": "The actual first native error leaves the finite character implicit"},
+        {"old": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) _\n",
+         "new": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) (rankTwist 𝔠.ν⁻¹ n)\n",
+         "reason": "Select the same rank-twisted character required by the final theta integral"},
+        {"old": "  simp only [stdRowDatum] at K this\n",
+         "new": "  simp (config := { failIfUnchanged := false }) only [stdRowDatum] at K this\n",
+         "reason": "The actual second native error is an already normalized, unchanged simp target"},
+    ]
+    for repair in repairs:
+        native.require(adapted_text.count(repair["old"]) == 1, "Changed C2 repair anchor")
+        adapted_text = adapted_text.replace(repair["old"], repair["new"], 1)
+    adapted = adapted_text.encode()
     manifest.update(adapter={"old": adapter[0], "new": adapter[1]},
+                    native_repairs=repairs,
                     replay_source_blob=native.git_blob(adapted))
     propagation = None
     if args.carrier:
@@ -129,10 +148,18 @@ def main():
         native.require(build["returncode"] == 0, "C2 source build failed; preserve partial log")
     native.require((root / ".lake/build/lib/lean/New/Exchange/EqualRankValue.olean").is_file(),
                    "EqualRankValue not built; use the shared capable workspace after B2")
+    setup = subprocess.check_output(["lake", "env", "python3", "-c",
+            "import os,json; print(json.dumps({k:os.environ[k] for k in "
+            "['LEAN_PATH','LEAN_SRC_PATH','LEAN_SYSROOT','LD_LIBRARY_PATH','PATH'] if k in os.environ}))"],
+            cwd=root, env=env, text=True, timeout=300)
+    (out / "environment.log").write_text(setup)
+    env.update(json.loads(setup.strip().splitlines()[-1]))
+    env["LEAN_PATH"] = str(out) + os.pathsep + env["LEAN_PATH"]
+    lean = str(args.lean_bin.resolve() / "lean")
     candidate = out / "C2Caller.lean"
     candidate.write_bytes(adapted)
-    probe = step("c2_candidate", ["lake", "env", "lean", *options, "-R", out,
-                                 "-o", out / "C2Caller.olean", candidate], 1200)
+    probe = step("c2_candidate", [lean, *options, "-j", "2", "-R", out,
+                                 "-o", out / "C2Caller.olean", candidate], args.candidate_seconds)
     probe.update(native.audit(out / "c2_candidate.log", NAMES))
     probe["caller_guard_observed"] = GUARD in (out / "c2_candidate.log").read_text()
     state["new_Lean_execution"] = True
@@ -151,11 +178,10 @@ def main():
     if args.carrier and base_good:
         native.require((root / ".lake/build/lib/lean/New/Rows/Carrier.olean").is_file(),
                        "Carrier is not built; use the same capable workspace with --carrier --build")
-        env["LEAN_PATH"] = str(out) + os.pathsep + env.get("LEAN_PATH", "")
         path = out / "C2Propagation.lean"
         path.write_bytes(propagation)
-        propagated = step("c2_propagated_callers", ["lake", "env", "lean", *options,
-                          "-R", out, "-o", out / "C2Propagation.olean", path], 1200)
+        propagated = step("c2_propagated_callers", [lean, *options, "-j", "2",
+                          "-R", out, "-o", out / "C2Propagation.olean", path], args.propagation_seconds)
         propagated.update(native.audit(out / "c2_propagated_callers.log", PROPAGATION_NAMES))
         log = (out / "c2_propagated_callers.log").read_text()
         propagated["all_four_guards_observed"] = all(
@@ -164,13 +190,20 @@ def main():
         propagated_good = (propagated["returncode"] == 0 and propagated["axiom_audit_ok"] is True
                            and propagated["all_four_guards_observed"] is True)
         state["carrier_propagation_checked"] = propagated_good
+        if propagated_good:
+            state["propagated_module"] = {"name": "C2Propagation", "artifacts": []}
+            for obj in sorted(out.glob("C2Propagation.olean*")):
+                with obj.open("rb") as stream:
+                    state["propagated_module"]["artifacts"].append({"name": obj.name,
+                        "bytes": obj.stat().st_size,
+                        "sha256": hashlib.file_digest(stream, "sha256").hexdigest()})
         native.dump(result_path, state)
     original = out / "C2OriginalProbes.lean"
     originals = ORIGINALS + (PROPAGATION_ORIGINALS if args.carrier else [])
     imported = "New.Rows.Carrier" if args.carrier else "New.Exchange.EqualRankValue"
     original.write_text("import " + imported + "\n" +
                         "\n".join("#print axioms " + n for n in originals) + "\n")
-    check = step("c2_originals", ["lake", "env", "lean", *options, original], 600)
+    check = step("c2_originals", [lean, *options, "-j", "2", original], args.original_seconds)
     check.update(native.audit(out / "c2_originals.log", originals))
     state.update(caller_replacement_checked=base_good,
                  all_requested_checks_ok=base_good and propagated_good and check["returncode"] == 0

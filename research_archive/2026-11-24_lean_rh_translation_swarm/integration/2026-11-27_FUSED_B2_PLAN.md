@@ -90,3 +90,26 @@ passed. No native joint result follows from those preparation checks.
 Both core controls, all eleven axiom/type/supplier reports and all eight
 independent graph projections must pass. Retain each partial receipt and
 all original failures. Do not duplicate this coordinated build.
+
+## Actual control result and layout repair
+
+The longer local core attempt completed with parser errors, not a successful
+transport: positive exit 1 after 570.67 s; intended negative exit 1 after
+389.62 s. Both declaration records put the continuation one column before
+their first field. The negative input therefore did NOT test kernel
+rejection. Its original logs and false receipt are retained.
+
+Use canonical multiline theorem records with one field per line in both
+controls and in the fused transport. The original RUN80 source stays pinned
+and unchanged; the derived input records that single exact layout adapter.
+The full transport suffix still matches the repaired base exactly. New
+derived source 48bd6327fee6cf096e57b5ef828cefab357007c7: preflight only.
+First run the corrected core controls on the shared host WITHOUT a GRH
+checkout or source build; require both actual outcomes before another
+combined shared replay. The older in-flight source commit contains the
+known layout error; retain its result independently.
+
+The repaired local six-root graph reached 36307 complete JSON records but
+timed out at 3600.14 s, with a truncated last row and no footer. Its 67383296
+byte stream has SHA256 e21f600b09b86c60eee69b43392386f660bafb99cbd77360ab5f63507a4bebe3.
+It is incomplete and unaccepted; no caller graph or root obligation closes.

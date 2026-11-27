@@ -26,8 +26,12 @@ run_cmd do
       if name == ``retargetSourceSupplier then some (.const ``retargetNewSupplier levels)
       else none
     | _ => none
-  Lean.addDecl (.thmDecl { name := `retargetNewCaller, levelParams := info.levelParams,
-                          type := info.type, value := proof })
+  Lean.addDecl (.thmDecl {
+    name := `retargetNewCaller
+    levelParams := info.levelParams
+    type := info.type
+    value := proof
+  })
   let some value := (← Lean.getConstInfo `retargetNewCaller).value? (allowOpaque := true) |
     Lean.throwError "Missing checked proof"
   let dependencies := value.getUsedConstants
@@ -44,8 +48,12 @@ set_option debug.skipKernelTC false
 set_option Elab.async false
 run_cmd do
   -- The ordinary checker must reject a proof of True offered as False.
-  Lean.addDecl (.thmDecl { name := `retargetInvalidTheorem, levelParams := [],
-                          type := .const ``False [], value := .const ``True.intro [] })
+  Lean.addDecl (.thmDecl {
+    name := `retargetInvalidTheorem
+    levelParams := []
+    type := .const ``False []
+    value := .const ``True.intro []
+  })
 """
 
 

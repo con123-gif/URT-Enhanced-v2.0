@@ -68,9 +68,13 @@ def main():
         native.require(all(set(axes) <= {"propext", "Classical.choice", "Quot.sound"}
                            for axes in step["axioms"].values()), "Unexpected C2 axiom")
     base = receipt["compiled_module"]
-    check_object(directory, base, "C2Caller")
+    combined = receipt.get("compiled_together") is True
+    check_object(directory, base, "C2Combined" if combined else "C2Caller")
     propagated = receipt.get("propagated_module")
-    if propagated is None:
+    if combined:
+        native.require(native.git_blob((directory / "C2Combined.lean").read_bytes())
+                       == receipt["combined_source_blob"], "Changed combined C2 source")
+    elif propagated is None:
         native.require(args.artifact_receipt is not None, "Provide authenticated Actions object inventory")
         artifact = json.loads(args.artifact_receipt.read_text())
         native.require(artifact["id"] == "rh-compact-c2-carrier-replay-20261127",
@@ -79,21 +83,23 @@ def main():
         selected = [item for item in entries if item["path"].startswith("c2/C2Propagation.olean")]
         propagated = {"name": "C2Propagation", "artifacts": [
             {**item, "name": Path(item["path"]).name} for item in selected]}
-    check_object(directory, propagated, "C2Propagation")
+    if not combined:
+        check_object(directory, propagated, "C2Propagation")
     spec = importlib.util.spec_from_file_location("c2_union_export", native.KERNEL / "RUN26_COMPACT_GRAPH.py")
     graph = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(graph)
     graph.ROOTS = ROOTS
     exporter = graph.driver()
     native.require(exporter.count("import Main\n") == 1, "Changed exporter import anchor")
-    source = exporter.replace("import Main\n", "import C2Propagation\nset_option pp.fullNames true\n", 1)
+    module_name = "C2Combined" if combined else "C2Propagation"
+    source = exporter.replace("import Main\n", "import " + module_name + "\nset_option pp.fullNames true\n", 1)
     source = adapt_exporter_435(source)
     target = out / "C2CallersGraph.lean"
     target.write_text(source)
     manifest = {"compact": native.PIN, "mathlib": native.MATHLIB, "roots": ROOTS,
                 "scope": "ten local C2 caller frontiers; not the full RH graph",
                 "source_blob": native.git_blob(target.read_bytes()),
-                "checked_modules": [base, propagated], "new_Lean_execution": False,
+                "checked_modules": [base] if combined else [base, propagated], "new_Lean_execution": False,
                 "full_RH_replay": False, "constructor_inclusive_guards_pass": False}
     native.dump(out / "graph_input_manifest.json", manifest)
     if args.prepare_only:

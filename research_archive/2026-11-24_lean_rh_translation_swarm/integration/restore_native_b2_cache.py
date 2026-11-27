@@ -28,6 +28,9 @@ def main():
     p.add_argument("--artifact-sha256", required=True)
     p.add_argument("--compact-root", required=True, type=Path)
     p.add_argument("--out", required=True, type=Path)
+    p.add_argument("--required-module", default="New.Filling.CrudeEnergy",
+                   choices=["New.Filling.CrudeEnergy", "New.Rows.Carrier"],
+                   help="Authenticate a completed B2 or C2 native import cache")
     args = p.parse_args()
     root, out = args.compact_root.resolve(), args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -50,7 +53,9 @@ def main():
                        "Wrong archive source pins")
         native.require(manifest["lean_release_sha256"] == native.RELEASE,
                        "Wrong archive Lean release")
-        native.require(manifest["archive"] == "native_b2_oleans.tar.zst" and
+        expected_archive = ("native_c2_oleans.tar.zst" if args.required_module == "New.Rows.Carrier"
+                            else "native_b2_oleans.tar.zst")
+        native.require(manifest["archive"] == expected_archive and
                        manifest["archive_result"]["returncode"] == 0,
                        "Native cache was not archived successfully")
         native.require(manifest["proof_receipt"] is False,
@@ -94,9 +99,10 @@ def main():
                 proc.wait()
     native.require(count > 0, "Native cache archive is empty")
     modules = {name: (stage / (name.replace(".", "/") + ".olean")).is_file()
-               for name in ["New.Filling.BlockBound", "New.Filling.CrudeEnergy"]}
+               for name in ["New.Filling.BlockBound", "New.Filling.CrudeEnergy",
+                            "New.Exchange.EqualRankValue", "New.Rows.Carrier"]}
     if manifest["source_build_complete"]:
-        native.require(modules["New.Filling.CrudeEnergy"],
+        native.require(modules[args.required_module],
                        "Complete cache manifest is missing its target module")
     target = build / "lib/lean"
     native.require(not target.is_symlink(), "Destination native cache is a symlink")
@@ -114,6 +120,7 @@ def main():
     result = {"compact": native.PIN, "mathlib": native.MATHLIB,
               "artifact_sha256": args.artifact_sha256, "inner_sha256": manifest["sha256"],
               "source_build_complete": manifest["source_build_complete"],
+              "required_module": args.required_module,
               "modules_available": modules,
               "restored_files": count, "restored_bytes": total,
               "previous_cache": str(backup) if backup is not None else None,

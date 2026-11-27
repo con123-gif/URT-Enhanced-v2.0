@@ -58,3 +58,28 @@ and per-stage receipts; repair the first failure, preserving exact output.
 The local cache lacks EqualRankValue and Carrier; do not cold-build it here
 or duplicate the coordinated shared build. No C2 execution is inferred
 from the B2 results, a preparation preflight or workflow success.
+
+## First native result and exact repair
+
+Run 46012543617: Carrier source build PASS (1836.62 s), seven original
+axiom probes PASS; candidate ERROR (11.49 s). The first error is an
+uninferred finite character; the flip character remains a metavariable;
+a later simp reports no change. Four outward consumers were not attempted.
+Error placeholders reported sorryAx and were rejected. Candidate log
+8471e129f834dd9781dd5d4e82d656558ce27cc1; result
+26b0f9ac971867c43370eb8841d7e65fd65914a4; status
+e168f3d80ae457b416fab2f5d17f99554d6349a9. Preserve all failures.
+
+The derived repair explicitly supplies the same finite character 𝔠.χ and
+the same rankTwist 𝔠.ν⁻¹ n required by the goal, and permits an unchanged
+result only for optional stdRowDatum normalization. Kernel, exact-type,
+dependency and axiom guards remain required. Peer/upstream input unchanged.
+Repaired source 21ec55dc7b491859ec4880179cbabaaac420924f: preflight only.
+
+Reuse completed C2 cache artifact 15206556705 in an isolated worktree.
+ZIP SHA256 a2c8295259e0cb43d2670c57a02da689e2c4341deb74c91cc527dfe295f6f6be;
+inner SHA256 5622158479c94f4a54132b477ad8e9aed7914c56f5aaacb7d82e3f132390869f.
+The next attempt assembles repaired base and unchanged RUN79 in separate
+sections in ONE Lean process: six proofs, five original type/edge guards,
+seven original probes. No source rebuild or repeated imports. Require its
+actual whole-file receipt before the ten-root graph.

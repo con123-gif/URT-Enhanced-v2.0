@@ -3619,3 +3619,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT active continuous work, user directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-lean435-transport-controls-20261127"
+question = "Without a GRH checkout, Mathlib download or source build, verify the official pinned Lean 4.35 release and run the corrected proof-transport controls. Require the valid retargeted theorem accepted with no axioms and the deliberately ill-typed theorem rejected by the kernel, not by a parser error. Preserve both exact inputs, logs and outcomes. This is core compatibility only, not B2, C2 or RH verification."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_lean435_transport_controls.py --out {out}"
+timeout_minutes = 20
+requested_by = "GPT active continuous work, user directive 2026-11-27"
+claim = "independent"

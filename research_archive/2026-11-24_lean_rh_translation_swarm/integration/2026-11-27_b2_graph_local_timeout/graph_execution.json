@@ -1,0 +1,9 @@
+{
+  "returncode": 124,
+  "seconds": 3600.14,
+  "log": "local_b2_graph.log",
+  "axioms": {},
+  "axiom_audit_ok": false,
+  "new_Lean_execution": true,
+  "full_RH_replay": false
+}

@@ -1,0 +1,20 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "artifact_sha256": "a2c8295259e0cb43d2670c57a02da689e2c4341deb74c91cc527dfe295f6f6be",
+  "inner_sha256": "5622158479c94f4a54132b477ad8e9aed7914c56f5aaacb7d82e3f132390869f",
+  "source_build_complete": true,
+  "required_module": "New.Rows.Carrier",
+  "modules_available": {
+    "New.Filling.BlockBound": false,
+    "New.Filling.CrudeEnergy": false,
+    "New.Exchange.EqualRankValue": true,
+    "New.Rows.Carrier": true
+  },
+  "restored_files": 1320,
+  "restored_bytes": 601447620,
+  "previous_cache": null,
+  "new_Lean_execution": false,
+  "proof_receipt": false,
+  "full_RH_replay": false
+}

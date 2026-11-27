@@ -1,0 +1,265 @@
+{
+  "scope": "incomplete local six-root graph, NOT accepted",
+  "compiler_returncode": 124,
+  "compiler_seconds": 3600.14,
+  "complete_json_records": 36307,
+  "has_footer": false,
+  "truncated_final_line_bytes": 379,
+  "last_complete_node": [
+    [
+      "s",
+      "ContinuousLinearMap"
+    ],
+    [
+      "s",
+      "map_add"
+    ]
+  ],
+  "stream_bytes": 67383296,
+  "stream_sha256": "e21f600b09b86c60eee69b43392386f660bafb99cbd77360ab5f63507a4bebe3",
+  "root_axioms_observed_in_header": [
+    {
+      "lean_collect_axioms": [
+        [
+          [
+            "s",
+            "propext"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Classical"
+          ],
+          [
+            "s",
+            "choice"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Quot"
+          ],
+          [
+            "s",
+            "sound"
+          ]
+        ]
+      ],
+      "root": [
+        [
+          "s",
+          "Filling"
+        ],
+        [
+          "s",
+          "sum_pairWeight_le"
+        ]
+      ]
+    },
+    {
+      "lean_collect_axioms": [
+        [
+          [
+            "s",
+            "propext"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Classical"
+          ],
+          [
+            "s",
+            "choice"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Quot"
+          ],
+          [
+            "s",
+            "sound"
+          ]
+        ]
+      ],
+      "root": [
+        [
+          "s",
+          "Filling"
+        ],
+        [
+          "s",
+          "b2_active_sum_pairWeight_le"
+        ]
+      ]
+    },
+    {
+      "lean_collect_axioms": [
+        [
+          [
+            "s",
+            "propext"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Classical"
+          ],
+          [
+            "s",
+            "choice"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Quot"
+          ],
+          [
+            "s",
+            "sound"
+          ]
+        ]
+      ],
+      "root": [
+        [
+          "s",
+          "Filling"
+        ],
+        [
+          "s",
+          "energy_le_of_level_pairs"
+        ]
+      ]
+    },
+    {
+      "lean_collect_axioms": [
+        [
+          [
+            "s",
+            "propext"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Classical"
+          ],
+          [
+            "s",
+            "choice"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Quot"
+          ],
+          [
+            "s",
+            "sound"
+          ]
+        ]
+      ],
+      "root": [
+        [
+          "s",
+          "Filling"
+        ],
+        [
+          "s",
+          "b2_active_energy_le_of_level_pairs"
+        ]
+      ]
+    },
+    {
+      "lean_collect_axioms": [
+        [
+          [
+            "s",
+            "propext"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Classical"
+          ],
+          [
+            "s",
+            "choice"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Quot"
+          ],
+          [
+            "s",
+            "sound"
+          ]
+        ]
+      ],
+      "root": [
+        [
+          "s",
+          "Filling"
+        ],
+        [
+          "s",
+          "energy_le_of_linkEnergy_le"
+        ]
+      ]
+    },
+    {
+      "lean_collect_axioms": [
+        [
+          [
+            "s",
+            "propext"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Classical"
+          ],
+          [
+            "s",
+            "choice"
+          ]
+        ],
+        [
+          [
+            "s",
+            "Quot"
+          ],
+          [
+            "s",
+            "sound"
+          ]
+        ]
+      ],
+      "root": [
+        [
+          "s",
+          "Filling"
+        ],
+        [
+          "s",
+          "b2_active_energy_le_of_linkEnergy_le"
+        ]
+      ]
+    }
+  ],
+  "generated_source_blob": "0d7a169b087a23bf6c0139904086ca187c643648",
+  "full_RH_replay": false,
+  "graph_accepted": false
+}

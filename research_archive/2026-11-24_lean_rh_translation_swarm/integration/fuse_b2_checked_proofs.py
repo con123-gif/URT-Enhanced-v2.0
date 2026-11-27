@@ -26,6 +26,14 @@ LABEL_BLOB = "d4ed493ddfced479b3be029bb554493c0c39accd"
 LABEL_NAMES = ["Filling.RHPositivityRun78.canonical_label_frame_unique",
                "Filling.RHPositivityRun78.labelled_frame_unique"]
 LABEL_GUARD = "RUN80_LABEL_FUSED: both local supplier guards accepted"
+LAYOUT_OLD = """    Lean.addDecl (.thmDecl { name := replacement, levelParams := info.levelParams,
+                            type := info.type, value := proof })"""
+LAYOUT_NEW = """    Lean.addDecl (.thmDecl {
+      name := replacement
+      levelParams := info.levelParams
+      type := info.type
+      value := proof
+    })"""
 
 
 def prepare(root, module_dir, out, labelled=False):
@@ -131,8 +139,12 @@ run_cmd do
       | _ => none
     -- Lean.addDecl invokes the ordinary kernel checker. Do not replace this
     -- with Environment.add/unchecked insertion or enable skipKernelTC.
-    Lean.addDecl (.thmDecl { name := replacement, levelParams := info.levelParams,
-                            type := info.type, value := proof })
+    Lean.addDecl (.thmDecl {
+      name := replacement
+      levelParams := info.levelParams
+      type := info.type
+      value := proof
+    })
     let some value := (← Lean.getConstInfo replacement).value? (allowOpaque := true) |
       Lean.throwError "Missing newly checked proof value"
     let dependencies := value.getUsedConstants
@@ -168,6 +180,8 @@ run_cmd do
         raw_label = (native.SWARM / LABEL_SOURCE).read_bytes()
         native.require(native.git_blob(raw_label) == LABEL_BLOB, "Changed peer labelled fusion")
         label_text = raw_label.decode()
+        native.require(label_text.count(LAYOUT_OLD) == 1, "Changed peer theorem-record layout")
+        label_text = label_text.replace(LAYOUT_OLD, LAYOUT_NEW, 1)
         suffix = "set_option Elab.async false in\nrun_cmd do\n"
         native.require(text.count(suffix) == label_text.count(suffix) == 1,
                        "Changed checked-transport boundary")
@@ -192,6 +206,8 @@ run_cmd do
                 "recursive_graph_checked": False, "full_RH_replay": False}
     if labelled:
         manifest["peer_labelled_source"] = {"source": LABEL_SOURCE, "source_blob": LABEL_BLOB}
+        manifest["label_source_layout_adapter"] = {"old": LAYOUT_OLD, "new": LAYOUT_NEW,
+            "reason": "The first native core test exposed a one-column record continuation error"}
     native.dump(out / "fused_b2_input.json", manifest)
     return target, manifest
 
