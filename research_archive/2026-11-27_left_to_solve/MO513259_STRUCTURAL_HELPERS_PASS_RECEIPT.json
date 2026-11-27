@@ -1,0 +1,140 @@
+{
+  "scope": "Four complete structural helpers for the independently challenged informal MO513259 proof. The full graph certificate remains unfinished; no official acceptance or counted solve.",
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; Mathlib prior code acknowledged where adapted.",
+  "recorded_utc": "2026-11-27T21:09:10.854496+00:00",
+  "all_four_observed_exit_zero": true,
+  "all_four_only_standard_axioms": true,
+  "receipts": {
+    "BlockSchur_PASS_RECEIPT.json": {
+      "scope": "Complete block-Schur algebra helper only; not a full MO513259 proof or official acceptance.",
+      "run_id": 46065841749,
+      "job_id": 140730812144,
+      "code_commit": "b614b1c376f3797a54605247ae8cd84c1b42e7f9",
+      "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+      "canonical_helper_sha256": "d16d1d7efade2620478d8199d35cb8bc466fa391b9b6e0884c5228549a9b709c",
+      "combined_probe_sha256": "6b69ab70bc1c2c7380d9743d6b9febc6445f0f92052a006ea6bfa2638020ad11",
+      "remote_probe_git_blob": "01542949e7dd10d40fee942db313c6ab9ee5404a",
+      "immutable_probe_byte_exact": true,
+      "theorem": "OMA.MO513259.BlockSchur.block_reduction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "compiler_errors": false,
+      "observed_exit": 0,
+      "exit_evidence": {
+        "artifact_id": 15231380214,
+        "artifact_zip_sha256": "652bd81659b4e58879611efd7edc233c225523bdad618488e4c776b1ef5542c1",
+        "digest_matches_GitHub": true,
+        "exit_file": "ProbeMO513259BlockSchurThird.lean.exit",
+        "exit_contents": "0\n"
+      },
+      "full_graph_certificate": false,
+      "official_acceptance": false,
+      "counted_solve": false
+    },
+    "LowerUnipotent_PASS_RECEIPT.json": {
+      "scope": "Complete lower-unipotent factorization and shear reachability helper; not a full graph proof.",
+      "run_id": 46066757009,
+      "job_id": 140733815035,
+      "code_commit": "2a634d6c1da758b72e84e98c66313f7f8207da45",
+      "canonical_helper_sha256": "c6d70f4d04e03173a0451088555aa5c23e35e31d83f0a9b183c09c7690771dda",
+      "probe_sha256": "e20bca9a8a59ca29bf4bc3ace3c7d6ef8b59585c9e4f5aed1a5a79e560c7be37",
+      "immutable_probe_byte_exact": true,
+      "remote_probe_git_blob": "efb7db02efc5c9c1521d3cd9ee89653cd5528a15",
+      "observed_exit": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "compiler_errors": false,
+      "artifact_id": 15231351708,
+      "artifact_zip_sha256": "c8f114523352483b9862346a4909176e2c33d95cfa9572dd0c65656e4d17b594",
+      "digest_matches_GitHub": true,
+      "exit_file": "ProbeMO513259LowerUnipotentSecond.lean.exit",
+      "exit_contents": "0\n",
+      "theorems": [
+        "OMA.MO513259.LowerUnipotent.unipotent_factorization",
+        "OMA.MO513259.LowerUnipotent.transvection_double_shear",
+        "OMA.MO513259.LowerUnipotent.unipotent_congruence_preserves"
+      ],
+      "full_graph_certificate": false,
+      "official_acceptance": false,
+      "counted_solve": false
+    },
+    "LowerUnipotentReverse_PASS_RECEIPT.json": {
+      "scope": "Reverse shear closure helper only; not a full graph theorem.",
+      "run_id": 46067667170,
+      "job_id": 140736813257,
+      "code_commit": "07a01dbbfdf05e1cebf63548621b8d9b5ea66c02",
+      "canonical_helper_sha256": "3dcbe0072132a0587a24b1371a699e15ad2fa2725c032a72b0e8cf782be60188",
+      "probe_sha256": "0eee223eca95e87f8cb8e3e39046d07f6c45e77680e945dbb104041b6d1c7db9",
+      "immutable_probe_byte_exact": true,
+      "remote_probe_git_blob": "ded29234f3275d09a8f1d3037ab6b6c33db17920",
+      "observed_exit": 0,
+      "exit_evidence": "Actual job log at2026-11-27T21:04:35.8529215Z explicitly prints PROBE_EXIT hermite/ProbeMO513259LowerUnipotentReverseFirst.lean 0; unrelated PermanentBlocksSecond fails separately.",
+      "theorem": "OMA.MO513259.LowerUnipotent.unipotent_congruence_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "compiler_errors": false,
+      "full_graph_certificate": false,
+      "official_acceptance": false,
+      "counted_solve": false
+    },
+    "PermanentBlocks_PASS_RECEIPT.json": {
+      "scope": "Complete generic permanent block/reindex helper only, not the full graph conjecture.",
+      "run_id": 46068043719,
+      "job_id": 140738018862,
+      "code_commit": "ae684ad60c8646b04a97c83ae379e9e027adc305",
+      "canonical_helper_sha256": "68ddd0ee3e36e2435c040969300d139fd405542af320ae4c353b124586f31ed6",
+      "probe_sha256": "ac21e700baa143cedcf10cfc18240ee149c6a62f00aff9fe2140a198ce1920b3",
+      "immutable_helper_and_probe_exact": true,
+      "remote_helper_git_blob": "2897b056b05e11edb4e49522e271640fd5002811",
+      "remote_probe_git_blob": "f2a3bc263bdd85e83e937de7ba94c0b49ea51f3d",
+      "observed_exit": 0,
+      "exit_evidence": "Actual job log21:07:42.5431408Z explicitly prints PROBE_EXIT hermite/ProbeMO513259PermanentBlocksThird.lean 0.",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "compiler_errors": false,
+      "theorems": [
+        "OMA.MO513259.PermanentBlocks.permanent_submatrix_equiv_self",
+        "OMA.MO513259.PermanentBlocks.permanent_fromBlocks_zero\u2082\u2081",
+        "OMA.MO513259.PermanentBlocks.permanent_block_diagonal"
+      ],
+      "prior_code_acknowledged": "Adapted signless versions of Mathlib determinant proofs; original Apache copyright/authors retained.",
+      "full_graph_certificate": false,
+      "official_acceptance": false,
+      "counted_solve": false
+    }
+  },
+  "frozen_sources": {
+    "BlockSchurElimination.lean": {
+      "sha256": "d16d1d7efade2620478d8199d35cb8bc466fa391b9b6e0884c5228549a9b709c",
+      "local_path": "combinatorics_work/mo513259/BlockSchurElimination.lean"
+    },
+    "LowerUnipotentFactorization.lean": {
+      "sha256": "c6d70f4d04e03173a0451088555aa5c23e35e31d83f0a9b183c09c7690771dda",
+      "local_path": "combinatorics_work/mo513259/LowerUnipotentFactorization.lean"
+    },
+    "LowerUnipotentReverse.lean": {
+      "sha256": "3dcbe0072132a0587a24b1371a699e15ad2fa2725c032a72b0e8cf782be60188",
+      "local_path": "combinatorics_work/mo513259/LowerUnipotentReverse.lean"
+    },
+    "PermanentBlocks.lean": {
+      "sha256": "68ddd0ee3e36e2435c040969300d139fd405542af320ae4c353b124586f31ed6",
+      "local_path": "combinatorics_work/mo513259/PermanentBlocks.lean"
+    }
+  },
+  "shared_ref_mutations_by_this_lane": false,
+  "leases_held": 0,
+  "official_acceptance": false,
+  "counted_new_solve": false
+}
