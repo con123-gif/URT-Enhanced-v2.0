@@ -1,0 +1,21 @@
+{
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "scope": "core-only proof retargeting compatibility",
+  "B2_replayed": false,
+  "full_RH_replay": false,
+  "cases": {
+    "checked_retarget": {
+      "returncode": 0,
+      "seconds": 0.72,
+      "log": "checked_retarget.log",
+      "source_sha256": "b5abad461e02d77876874962725c4442aa97fb3eeef8000ee57e9f651220ebe8"
+    },
+    "reject_ill_typed_proof": {
+      "returncode": 1,
+      "seconds": 0.67,
+      "log": "reject_ill_typed_proof.log",
+      "source_sha256": "563f87c5659a0a164fa69125eb8c0c1f9414a79fa23e2e62b88a02a44c280d2b"
+    }
+  },
+  "all_checks_pass": true
+}

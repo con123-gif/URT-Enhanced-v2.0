@@ -1,0 +1,123 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "original_count_source_blob": "6c68e80e3b1ea2b7983696716305493a37f2b1fd",
+  "parts": [
+    {
+      "source": "integration/B2_ACTIVE_CALLER_REPLACEMENT.lean",
+      "source_blob": "3ac61ea5bcd38a9d003cf125689bf2b4a58b9c9a"
+    },
+    {
+      "source": "integration/B2_ACTIVE_ENERGY_REPLACEMENT.lean",
+      "source_blob": "e8ef74cafecd49e361b7b147c3970953e30a7f6d"
+    },
+    {
+      "source": "integration/B2_ACTIVE_FULL_ENERGY_EXTENSION.lean",
+      "source_blob": "50b71ffbea844b75e27c35a96ec4c6504b2b13f8"
+    }
+  ],
+  "peer_patch": {
+    "source": "audit/2026-11-27_B2_NATIVE_RECEIPT_AND_SKEW_CALLER_PATCH.py",
+    "source_blob": "4c942de0145e223298b3441b6c814a23ae946434"
+  },
+  "adapter": {
+    "old": "(by simpa only [neg_mul] using s)",
+    "new": "(by simpa only [Matrix.neg_mul] using s)",
+    "reason": "rectangular matrix multiplication needs the matrix negation lemma"
+  },
+  "source_blob": "46f4fe6655495d3d6a49ff2199f827fef30e7020",
+  "checked_input_module": {
+    "name": "active_b2_energy",
+    "artifacts": [
+      {
+        "name": "active_b2_energy.olean",
+        "bytes": 16860568,
+        "sha256": "d902a769aaf0ee2c2d3031246e20297aa0ce1e14790d32bdd39e053da6726049"
+      }
+    ]
+  },
+  "substitutions": [
+    [
+      "Filling.tsum_invPowWeight_le_of_codim_le",
+      "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le"
+    ],
+    [
+      "Filling.b2_active_outer_frameValueIndex_dvd",
+      "Filling.b2_fused_outer_frameValueIndex_dvd"
+    ],
+    [
+      "Filling.b2_active_outer_count",
+      "Filling.b2_fused_outer_count"
+    ],
+    [
+      "Filling.b2_active_inner_frameValueIndex_dvd",
+      "Filling.b2_fused_inner_frameValueIndex_dvd"
+    ],
+    [
+      "Filling.b2_active_sum_pairWeight_le",
+      "Filling.b2_fused_sum_pairWeight_le"
+    ],
+    [
+      "Filling.b2_active_energy_le_of_level_pairs",
+      "Filling.b2_fused_energy_le_of_level_pairs"
+    ],
+    [
+      "Filling.b2_active_energy_le_of_level_lt",
+      "Filling.b2_fused_energy_le_of_level_lt"
+    ],
+    [
+      "Filling.b2_active_energy_le_of_linkEnergy_le",
+      "Filling.b2_fused_energy_le_of_linkEnergy_le"
+    ]
+  ],
+  "theorems": [
+    "Filling.RHPositivityRun78.canonical_label_frame_unique",
+    "Filling.RHPositivityRun78.labelled_frame_unique",
+    "RHB2Fusion.skew_correction_mul",
+    "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le",
+    "Filling.b2_fused_outer_frameValueIndex_dvd",
+    "Filling.b2_fused_outer_count",
+    "Filling.b2_fused_inner_frameValueIndex_dvd",
+    "Filling.b2_fused_sum_pairWeight_le",
+    "Filling.b2_fused_energy_le_of_level_pairs",
+    "Filling.b2_fused_energy_le_of_level_lt",
+    "Filling.b2_fused_energy_le_of_linkEnergy_le"
+  ],
+  "original_statement_comparisons": [
+    [
+      "Filling.tsum_invPowWeight_le_of_codim_le",
+      "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le"
+    ],
+    [
+      "Filling.sum_pairWeight_le",
+      "Filling.b2_fused_sum_pairWeight_le"
+    ],
+    [
+      "Filling.energy_le_of_level_pairs",
+      "Filling.b2_fused_energy_le_of_level_pairs"
+    ],
+    [
+      "Filling.energy_le_of_level_lt",
+      "Filling.b2_fused_energy_le_of_level_lt"
+    ],
+    [
+      "Filling.energy_le_of_linkEnergy_le",
+      "Filling.b2_fused_energy_le_of_linkEnergy_le"
+    ]
+  ],
+  "method": "reuse checked proof expressions; normal Lean.addDecl kernel checks",
+  "preferred_labelled_variant": true,
+  "new_Lean_execution": false,
+  "fused_chain_checked": false,
+  "recursive_graph_checked": false,
+  "full_RH_replay": false,
+  "peer_labelled_source": {
+    "source": "specialists/positivity_geometry/compact/RUN80_LabelFused.lean",
+    "source_blob": "d4ed493ddfced479b3be029bb554493c0c39accd"
+  },
+  "label_source_layout_adapter": {
+    "old": "    Lean.addDecl (.thmDecl { name := replacement, levelParams := info.levelParams,\n                            type := info.type, value := proof })",
+    "new": "    Lean.Elab.Command.liftCoreM <| Lean.addDecl (.thmDecl {\n      name := replacement\n      levelParams := info.levelParams\n      type := info.type\n      value := proof\n    })",
+    "reason": "Native controls require correctly aligned records and explicit CoreM-to-CommandElabM lifting"
+  }
+}

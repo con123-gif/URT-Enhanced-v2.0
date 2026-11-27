@@ -1,0 +1,51 @@
+{
+  "returncode": 0,
+  "seconds": 43.85,
+  "log": "local_b2_graph.log",
+  "axioms": {
+    "Filling.sum_pairWeight_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.b2_fused_sum_pairWeight_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.energy_le_of_level_pairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.b2_fused_energy_le_of_level_pairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.energy_le_of_linkEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.b2_fused_energy_le_of_linkEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.tsum_invPowWeight_le_of_codim_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_audit_ok": true,
+  "new_Lean_execution": true,
+  "native_graph_execution": false,
+  "full_RH_replay": false
+}

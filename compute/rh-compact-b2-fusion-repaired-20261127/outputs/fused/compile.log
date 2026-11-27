@@ -1,0 +1,33 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/fused/active_b2_fused.lean:142:48: warning: This simp argument is unused:
+  Matrix.mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.smul_mul, h, hv, Matrix.one_mul, smul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/fused/active_b2_fused.lean:143:22: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.smul_mul, Matrix.mul_assoc, h, hv, Matrix.one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/fused/active_b2_fused.lean:252:73: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/fused/active_b2_fused.lean:252:73: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RUN80_LABEL_FUSED: both local supplier guards accepted
+'Filling.RHPositivityRun78.canonical_label_frame_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.RHPositivityRun78.labelled_frame_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+B2_FUSED: five original statement types match; checked proof retargeting and direct supplier guards passed
+'RHB2Fusion.skew_correction_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_tsum_invPowWeight_le_of_codim_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_outer_frameValueIndex_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_outer_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_inner_frameValueIndex_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_sum_pairWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_energy_le_of_level_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_energy_le_of_level_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_fused_energy_le_of_linkEnergy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
