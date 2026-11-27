@@ -1,0 +1,38 @@
+{
+  "status": "FULL_KERNEL_PASS_AND_OFFICIAL_STATEMENT_CHECK_PASS_NOT_OFFICIAL_ACCEPTANCE",
+  "date": "2026-11-27",
+  "problem": "mo-487180",
+  "run_id": 46059785808,
+  "job_id": 140710978095,
+  "commit": "ff813d6ae9d3ebbd9cdb3e75dcde15c2dbba7759",
+  "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "full_probe_sha256": "040af921de73c4dd419eb278977b88fe9139278173bf1edef83c8a4a7c57e3f7",
+  "statement_sha256": "2c79943cd0b21231259ede1dbb7d77fa2b7dfc04f11f91dc63da7a4d62fe1767",
+  "proof_sha256": "a9c6f620faaacba7a6b37547e3d52ceb4d0be33ce1532be78b8661f83b75a64e",
+  "theorem": "OMA.disproof",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "statement_checker": {
+    "verdict": "accepted",
+    "errors": [],
+    "reason": "the statement compiles; it now needs a human review of the translation"
+  },
+  "official_submission": null,
+  "official_acceptance": false,
+  "actual_main_uploads": {
+    "statement_commit": "2656e92d6c5aa25c7c935e42de5c87182c226f13",
+    "proof_commit": "8ac7d6949a7c982cdf6138c27974dca2450cdf68",
+    "statement_git_blob": "4d1ed3a5095885562d3dee4d83d926906e4d6393",
+    "proof_git_blob": "14c5c9b08c2e0a51dcc78818686e64c2a1b5fcf7",
+    "both_fetched_byte_equal": true
+  },
+  "full_disproof_sorryAx": false,
+  "statement_skeleton_has_expected_single_hole": true,
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; BPP and standard prior floor inequalities acknowledged; root/runtime/algebra independent challengers.",
+  "originality": "No exhaustive first-priority claim; bounded complete source/prior review found no earlier exact resolution."
+}
