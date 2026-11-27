@@ -1,0 +1,113 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "4be058901f7072efd82b3711281fae7b913f1712",
+  "checked_proof_module": {
+    "name": "C2SingleWitnessCombined",
+    "artifacts": [
+      {
+        "name": "C2SingleWitnessCombined.olean",
+        "bytes": 476200,
+        "sha256": "ae82aa7e6a07c38bb3cd1db1b35f43451b5f4d8e36f75ddf278ff7f7ac782c98"
+      }
+    ]
+  },
+  "original_inputs": [
+    {
+      "module": "Lib.Analytic.Landau.PolarLandau",
+      "source_blob": "6b80c9062a74ecadcd9c51f9459cb3c71ac2ded9",
+      "sha256": "ca02cad1b768ae3d6426ef0b7a37b21b0f9d16bf4d9643b0b8028031c92143c3"
+    },
+    {
+      "module": "Lib.General.Algebra.SuccessiveApprox",
+      "source_blob": "1bcb1c8715abfd85113cc5a689fa53efeb9398ac",
+      "sha256": "1736a45087564acb3f5b4c2845a110f9d0c8dfcdcc579473faeed875333b3067"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.Ainf",
+      "source_blob": "d8c081552c611132f69033129f9a37dbd167484a",
+      "sha256": "f99d9fb622cae0b86358460444e7851dcd21b8ce5d80b06624d870f080838e0b"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.ThetaKernel",
+      "source_blob": "ab5766dd9ea95412ad15247cef74b9b701250797",
+      "sha256": "1d912d232f45a4ad4dbcc3939109a98348a46814171a843d5600679d151cd937"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.AmaxStructure",
+      "source_blob": "1be9736d2c48bece6dd038c72d14b6f807cff9df",
+      "sha256": "b587c90fab1ef5c9a64934f76ae265ebfbaf354bf9ab36c6e735ddd9937d7fc3"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.BdRPlus",
+      "source_blob": "f828ee87f4914572d457b364b38c6c6b0fbc8372",
+      "sha256": "450da0b8172274cf624cb53fa68d96e85aaf5eb449d589f686f4091ad4de06a9"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.BdR",
+      "source_blob": "326d41233ac7638a50194f3ade22350c9b038ad5",
+      "sha256": "8a066f74b7bb255eae4a283a84b774a383054e6b25a8b88ff0ed4766ce17872a"
+    },
+    {
+      "module": "Lib.PadicHodge.Crystalline.Defs",
+      "source_blob": "10e3aee76b3ee7c372209e2d477814754bb09749",
+      "sha256": "6d8b1859c2795f83bbb84b4ba7a719e2469d9d9060c0c1074928d8c136d8effd"
+    },
+    {
+      "module": "Lib.GaloisRep.Main.LocalEmbedding",
+      "source_blob": "4caac7c43d1dbc0f233b5c5ffce44110b5dadc68",
+      "sha256": "a7cdf43d89ec0132d40b6328aa6485c462edc0a05ba3e2f1d33c91665e61b3d1"
+    },
+    {
+      "module": "Lib.CM.Genus.QuadraticZeta",
+      "source_blob": "51f575a20ca3dc4831d287d2f14f597586b96fff",
+      "sha256": "e8775490e4f45301b2d3fcb5c631f8a5d2999f2a3f38ba6677ce2865dc1b2a34"
+    },
+    {
+      "module": "New.Heights.Heights",
+      "source_blob": "a18a99e1f76a6e963113cae8f906ddc99814f518",
+      "sha256": "f510968665c41082ffb391a4566ea1e6e694800ebebf289171878a519d38a4b8"
+    }
+  ],
+  "roots": [
+    "HeightLe.nonneg",
+    "c2_heightLe_nonneg_arch",
+    "c2_heightLe_reciprocal_budget",
+    "c2_heightLe_single_witness_budget"
+  ],
+  "pairs": [
+    {
+      "original": "HeightLe.nonneg",
+      "candidate": "c2_heightLe_nonneg_arch",
+      "required": [
+        "c2_isAlgebraic_of_arch",
+        "exists_ringEquiv_extend",
+        "log_product_formula"
+      ],
+      "forbidden": [
+        "isAlgebraic_of_padic"
+      ]
+    },
+    {
+      "original": "c2_heightLe_reciprocal_budget",
+      "candidate": "c2_heightLe_single_witness_budget",
+      "required": [
+        "c2_heightLe_nonneg_arch",
+        "c2_isAlgebraic_of_arch",
+        "c2_heightLe_of_sq",
+        "c2_norm_map_le_exp_half",
+        "HeightLe.mul",
+        "log_product_formula",
+        "exists_ringEquiv_extend"
+      ],
+      "forbidden": [
+        "HeightLe.nonneg",
+        "isAlgebraic_of_padic"
+      ]
+    }
+  ],
+  "temporary_graph_storage": "memory file descriptors",
+  "unchanged_independent_validator": "2e431301970196a6b786d004fb16a4320a25fe8e",
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}

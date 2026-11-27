@@ -1,6 +1,6 @@
 # The common witness: native junction
 
-27 November 2026. The algebraicity step, global-root rule and joined product-formula file have complete local kernel receipts. The full transitive audit is running separately. Full C2 and RH remain OPEN. This formalizes the junction of the existing 26-November unified witness; it is not a new derivation of the A/B/C suppliers.
+27 November 2026. The algebraicity step, global-root rule and joined product-formula file have complete local kernel receipts. The full four-root transitive audit has also passed, all 19 guards and all four independent verifiers, with zero missing references. Full C2 and RH remain OPEN. This formalizes the junction of the existing 26-November unified witness; it is not a new derivation of the A/B/C suppliers.
 
 Let y be the SAME nonzero family at every prime-adic isomorphism. Assume the actual native statements HeightLe(a,y) and HeightLe(2b,y^(-2)), with signed real a,b. Unpack their nonzero global witnesses H,K, all-automorphism bounds alpha,beta and prime bounds e_p,f_p. Choose S in C with S²=K, before choosing any embedding, and put W=HS. Then W is nonzero and
 
@@ -20,3 +20,5 @@ The locally checked c2_heightLe_nonneg_arch has the complete original HeightLe.n
 For the actual rows, substitute the SAME common-basis determinant, completion factor, comparison Gram determinants, Hecke-value ratios and one actual fit family from 2026-11-26_COMPACT_UNIFIED_DETERMINANT_WITNESS.md. That substitution and its deep comparison, Selmer, integral-frame and filling suppliers still require their own native and human verification. The eight actual comparison-to-height transports are prepared separately; do not equate a generic junction pass with their acceptance.
 
 Native sources: C2_ARCHIMEDEAN_ALGEBRAICITY.lean, C2_SIGNED_HEIGHT_ROOT.lean, C2_SINGLE_WITNESS_PRODUCT_FORMULA.lean. assemble_c2_single_witness.py records their exact input hashes and produces the one-file combined replay source. Source assembly is not mathematical acceptance. Failed and accepted local receipts are kept separately.
+
+The complete graph has 61,527 union declarations and 1,538,221 edges. The original product-formula closure decreases from 61,445 to 60,726 declarations; the reciprocal-budget closure decreases from 61,478 to 60,750. Both old algebraicity/nonnegativity routes are absent from the new routes. See 2026-11-27_single_witness_graph_receipt/README.md for exact per-root logs, masks and scope. These are local dependency counts including Mathlib; they are not source lines or a whole-RH reduction.

@@ -1,0 +1,8 @@
+{
+  "raw_bytes": 110895363,
+  "raw_sha256": "d041f8484a754f5552fd7a3a7a5b8a23080d5c6976394c07ae68c589239b631e",
+  "gzip_bytes": 8405317,
+  "gzip_sha256": "6d819dcf046397bfb57116310ce18d50aed01ce8eafea6c35d9d542ded733190",
+  "archive": "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_single_witness_graph_1/single_witness_graph.jsonl.gz",
+  "exact_decompression_verified": true
+}

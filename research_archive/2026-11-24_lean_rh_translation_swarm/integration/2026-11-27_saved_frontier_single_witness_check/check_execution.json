@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python",
+    "research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_saved_b2_c2_frontiers.py"
+  ],
+  "exit_code": 0,
+  "source_blob": "c504d530e8201873822a1e9f396639160cb5154f",
+  "new_Lean_execution": false,
+  "full_RH_replay": false,
+  "scope": "Seven saved graph inventories and actual rejected height receipt; metadata regression only"
+}

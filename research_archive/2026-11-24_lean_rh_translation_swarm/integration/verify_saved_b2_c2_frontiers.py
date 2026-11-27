@@ -230,9 +230,61 @@ def main():
     require(shared_archive["raw_sha256"] == local_archive["raw_sha256"] ==
             "0d9ca13046d943ebe21783a4c7919b04670dc63136f90e92662e08a8a9922caa",
             "Fresh-source dependency stream differs from the accepted local stream")
+    junction_modules = [
+        checked_interface_receipt("2026-11-27_signed_height_root_receipt/pass_3",
+                                  "signed_height_root_results.json", "C2_SIGNED_HEIGHT_ROOT.lean"),
+        checked_interface_receipt("2026-11-27_single_witness_receipt", "single_witness_results.json",
+                                  "C2_SINGLE_WITNESS_COMBINED.lean"),
+    ]
+    junction = read("2026-11-27_single_witness_receipt", "single_witness_results.json")
+    require(len(junction["theorems"]) == 8 and junction["original_modules_compiled_here"] == 0
+            and junction["original_modules_reused"] == 11
+            and junction["native_source_build_performed_here"] is False,
+            "Joined height proof has an incomplete roster or mislabelled source reuse")
+    composition = read("2026-11-27_single_witness_receipt", "source_composition.json")
+    require(composition["combined_source_blob"] == junction["source_blob"],
+            "Joined height composition names a different checked source")
+    for item in composition["inputs"]:
+        raw = (HERE / item["source"]).read_bytes()
+        require(hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
+                == item["source_blob"] and hashlib.sha256(raw).hexdigest() == item["sha256"],
+                "Changed mathematical source body in the joined height proof")
+    height_rejected = False
+    try:
+        checked_interface_receipt("2026-11-27_signed_height_root_receipt/attempt_2",
+                                  "signed_height_root_results.json", "C2_SIGNED_HEIGHT_ROOT.lean")
+    except RuntimeError as exc:
+        height_rejected = str(exc) == "Unaccepted interface compiler receipt"
+    failed_height = read("2026-11-27_signed_height_root_receipt/attempt_2", "signed_height_root_results.json")
+    require(height_rejected and failed_height["compiler"]["returncode"] == 1
+            and failed_height["compiler"]["direct_supplier_guards_observed"] is True
+            and any("sorryAx" in axes for axes in failed_height["compiler"]["axioms"].values()),
+            "Rejected height proof was accepted or its actual failure was lost")
+    height_graph = "2026-11-27_single_witness_graph_receipt"
+    inventories.append(checked_interface_graph(height_graph, 61527, 1538221, 19))
+    height_membership = read(height_graph, "supplier_reachability.json")["membership"]
+    require(height_membership["HeightLe.nonneg"] == height_membership["isAlgebraic_of_padic"] == 5
+            and height_membership["c2_isAlgebraic_of_arch"] == 10
+            and height_membership["c2_heightLe_of_sq"] == 12,
+            "Joined height graph lost exact old-path absence or global-root reachability")
+    memory_folder = "2026-11-27_memory_graph_control"
+    memory_control = read(memory_folder, "memory_io_control_results.json")
+    raw = (HERE / "memory_graph_io.py").read_bytes()
+    require(memory_control["all_requested_checks_ok"] is True
+            and memory_control["same_as_recorded_native_core_bytes"] is True
+            and memory_control["memory_io_source_blob"] ==
+                hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest(),
+            "Changed graph-storage adapter or incomplete exact core control")
+    for filename in memory_control["plain_and_memory_audits_byte_identical"]:
+        require((HERE / memory_folder / "plain" / filename).read_bytes() ==
+                (HERE / memory_folder / "memory" / filename).read_bytes(),
+                "Plain and memory-backed core audit records differ")
     print(json.dumps({"saved_receipts_consistent": True, "inventories": inventories,
                       "direct_compiler_modules": direct_modules, "actual_failed_receipt_rejected": rejected,
                       "independent_shared_chain_checked": True,
+                      "signed_height_modules": junction_modules,
+                      "actual_height_failure_rejected": height_rejected,
+                      "single_witness_transitive_graph_checked": True,
                       "new_Lean_execution": False, "full_RH_replay": False,
                       "scope": "saved evidence consistency; not a fresh proof or graph extraction"}))
 

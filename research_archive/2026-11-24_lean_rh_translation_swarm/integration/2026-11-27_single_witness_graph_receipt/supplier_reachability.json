@@ -1,0 +1,37 @@
+{
+  "membership": {
+    "HeightLe.nonneg": 5,
+    "c2_heightLe_nonneg_arch": 10,
+    "c2_heightLe_reciprocal_budget": 4,
+    "c2_heightLe_single_witness_budget": 8,
+    "c2_isAlgebraic_of_arch": 10,
+    "exists_ringEquiv_extend": 15,
+    "log_product_formula": 15,
+    "isAlgebraic_of_padic": 5,
+    "c2_heightLe_of_sq": 12,
+    "c2_norm_map_le_exp_half": 12,
+    "HeightLe.mul": 12
+  },
+  "guards": {
+    "c2_heightLe_nonneg_arch:original_reaches_itself": true,
+    "c2_heightLe_nonneg_arch:candidate_reaches_itself": true,
+    "c2_heightLe_nonneg_arch:original_absent": true,
+    "c2_heightLe_nonneg_arch:required:c2_isAlgebraic_of_arch": true,
+    "c2_heightLe_nonneg_arch:required:exists_ringEquiv_extend": true,
+    "c2_heightLe_nonneg_arch:required:log_product_formula": true,
+    "c2_heightLe_nonneg_arch:forbidden:isAlgebraic_of_padic": true,
+    "c2_heightLe_single_witness_budget:original_reaches_itself": true,
+    "c2_heightLe_single_witness_budget:candidate_reaches_itself": true,
+    "c2_heightLe_single_witness_budget:original_absent": true,
+    "c2_heightLe_single_witness_budget:required:c2_heightLe_nonneg_arch": true,
+    "c2_heightLe_single_witness_budget:required:c2_isAlgebraic_of_arch": true,
+    "c2_heightLe_single_witness_budget:required:c2_heightLe_of_sq": true,
+    "c2_heightLe_single_witness_budget:required:c2_norm_map_le_exp_half": true,
+    "c2_heightLe_single_witness_budget:required:HeightLe.mul": true,
+    "c2_heightLe_single_witness_budget:required:log_product_formula": true,
+    "c2_heightLe_single_witness_budget:required:exists_ringEquiv_extend": true,
+    "c2_heightLe_single_witness_budget:forbidden:HeightLe.nonneg": true,
+    "c2_heightLe_single_witness_budget:forbidden:isAlgebraic_of_padic": true
+  },
+  "all_guards_pass": true
+}

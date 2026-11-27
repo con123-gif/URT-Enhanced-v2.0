@@ -114,3 +114,11 @@ For C2, reconcile the already-written unified determinant witness with
 same Data, fit-twist family, integrality, testedness and signed budgets.
 The graph audits do not supply those remaining estimates.
 
+
+## Single-witness signed height junction
+
+The generic common-witness junction has now passed one complete native file, exact statement guards and its full four-root constructor-inclusive graph. [Mathematical scope](2026-11-27_COMMON_WITNESS_KERNEL_JUNCTION.md), [compiler receipt](2026-11-27_single_witness_receipt/README.md), [full graph receipt](2026-11-27_single_witness_graph_receipt/README.md). Source 4be058901f7072efd82b3711281fae7b913f1712; compiler exit 0 in 101.08 seconds; all eight named reports use the standard three axioms. All three guards passed, preserving the complete original HeightLe.nonneg statement and the same signed reciprocal-budget statement.
+
+The native export exited 0 in 154.17 seconds; all four unchanged independent Node verifiers and all 19 supplier guards passed. Union 61,527 nodes / 1,538,221 edges / zero missing references. Original/new product-formula closures: 61,445 / 60,726; original/new reciprocal-budget closures: 61,478 / 60,750. The old HeightLe.nonneg and isAlgebraic_of_padic have mask 5, absent from both new routes; the new archimedean supplier has mask 10. All required global-root, rational product-formula and field-extension suppliers remain. Exact raw stream SHA256 d041f8484a754f5552fd7a3a7a5b8a23080d5c6976394c07ae68c589239b631e. The raw 110,895,363 bytes were compressed/decompression-verified; temporary memory storage passed a separate byte-identical core control and the full audit with the unchanged inspector/validator.
+
+This is a local mathematical junction and dependency reduction, not source lines, a full-RH reduction, runtime improvement or independent-host replay. The actual ComparisonForms/LiftVolumeHeight and LongForms callers are prepared; those deep inputs remain open. The earlier actual rejected root run, including sorryAx reports despite a printed guard, is retained and explicitly rejected by the saved-evidence checker. That checker now covers seven saved graph inventories and both new accepted modules; it performs no new Lean execution.

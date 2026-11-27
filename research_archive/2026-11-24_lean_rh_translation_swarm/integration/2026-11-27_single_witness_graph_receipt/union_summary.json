@@ -1,0 +1,47 @@
+{
+  "roots": [
+    "HeightLe.nonneg",
+    "c2_heightLe_nonneg_arch",
+    "c2_heightLe_reciprocal_budget",
+    "c2_heightLe_single_witness_budget"
+  ],
+  "nodes": 61527,
+  "edges": 1538221,
+  "missing": 0,
+  "mask_histogram": {
+    "15": 60670,
+    "5": 775,
+    "10": 47,
+    "14": 9,
+    "12": 22,
+    "4": 2,
+    "8": 2
+  },
+  "per_root": {
+    "HeightLe.nonneg": {
+      "exit": 0,
+      "nodes": 61445,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "c2_heightLe_nonneg_arch": {
+      "exit": 0,
+      "nodes": 60726,
+      "missing": 0,
+      "log": "audit-1.json"
+    },
+    "c2_heightLe_reciprocal_budget": {
+      "exit": 0,
+      "nodes": 61478,
+      "missing": 0,
+      "log": "audit-2.json"
+    },
+    "c2_heightLe_single_witness_budget": {
+      "exit": 0,
+      "nodes": 60750,
+      "missing": 0,
+      "log": "audit-3.json"
+    }
+  },
+  "naive_repeated_nodes": 244399
+}
