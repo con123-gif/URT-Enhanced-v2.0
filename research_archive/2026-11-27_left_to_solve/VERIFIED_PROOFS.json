@@ -806,8 +806,11 @@
       "statement_merged": false,
       "public_statement_commit": "190230af76d65cac95a2c11a181497c631f30789",
       "public_proof_commit": "5b6a5427194ea13a19ec67deba06279978654cdb",
-      "remaining_obstruction": "Complete exact-target certificate publicly uploaded and byte-readback verified. Fresh final gates and actual valid lease, official statement registration/merge, imported-target proof check and full official submission/acceptance remain. Claim service has repeatedlyHTTP500 on earlier targets.",
-      "prior_credit": "Charles R.GreathouseIV/source; classical Chebyshev estimates and finite partial summation; Mathlib authors; independent root/runtime/algebra challenges."
+      "remaining_obstruction": "Full certificate and unabridged supporting proof/audits publicly archived. Exact one-file statement branch ready; no valid lease returned by service, so officialPR cannot be opened under protocol. Await supported recovery, actual registration merge, imported-target check and full official acceptance.",
+      "prior_credit": "Charles R.GreathouseIV/source; classical Chebyshev estimates and finite partial summation; Mathlib authors; independent root/runtime/algebra challenges.",
+      "prepared_statement_branch": "oma-a181674-statement-46063152958",
+      "prepared_statement_commit": "5f55e31378468b5418fa770e8d13be6203280107",
+      "claim_result": "One documentedGETnext after fresh20:27 gates returnedHTTP500/empty, noassignment/token/heartbeat/PLAN/PR. Server-side creation unknown; all further local calls stopped."
     }
   ],
   "continuing_beyond_minimum": true,
@@ -829,7 +832,7 @@
   ],
   "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T20:28:46.762Z",
+  "record_updated_utc": "2026-11-27T20:30:16.852Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Direct and secure Actions supported claimsHTTP500/empty. New secure batch46056962879/job140701706473 withheldMO319325beforeclaimdueforeign10756, attemptedMO487192once500thenstopped. Zero new assignment tokens.",
   "official_full_proof_checker_acceptances": 4,
