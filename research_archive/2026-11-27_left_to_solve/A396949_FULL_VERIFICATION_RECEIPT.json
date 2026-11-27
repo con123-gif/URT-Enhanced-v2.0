@@ -1,0 +1,75 @@
+{
+  "problem": "oeis-a396949",
+  "result": "disproof of exact cubic-logarithm counting conjecture",
+  "status": "full standalone exact pinned kernel PASS; official contribution not yet submitted",
+  "run": "https://github.com/con123-gif/open-math-agents/actions/runs/46056761830",
+  "job": 140701030167,
+  "commit": "54cfd8730a56fbb0a251642a27b8f85ae2206c00",
+  "checked_public_file": "campaign/ProbeA396949Third.lean",
+  "kernel_report_time": "2026-11-27T19:28:04Z",
+  "theorem": "OMA.disproof",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "errors": [],
+  "toolchain": "Lean4.33.1",
+  "formal_conjectures_pin": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "statement_official_checker": {
+    "run": 46055611825,
+    "job": 140697239992,
+    "verdict": "accepted",
+    "errors": []
+  },
+  "byte_comparison": {
+    "statement_exact_probe_prefix": true,
+    "full_proof_body_exact_probe_body": true
+  },
+  "source_audit": "Actual current OEIS revision30 plus all30 revisions/discussions read. Only catalogue conjecture is full Theta(log^3) count; fixed support is not assumed. Related A036878 single-prime family is prior and credited.",
+  "prior_audit": "Bounded primary exact/structural web searches, actual TrureTuring repository code search and global Lean exact-ID code search found no prior settlement. No universal priority claim.",
+  "independent_math_challenge": "PASS; separate algebra agent full-file source/math review",
+  "finite_edge_checks": {
+    "witnesses": 6273,
+    "primes": [
+      13,
+      17,
+      23,
+      31
+    ],
+    "role": "edge checks only; not basis of infinite theorem"
+  },
+  "official_submission": null,
+  "official_acceptance": false,
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6; exact serving variant not exposed)",
+  "files": [
+    {
+      "path": "number_work/oeis-a396949.statement.lean",
+      "sha256": "e0ba6fb55c3ab8edc50932808b455176144ec061cc901167590a88db3c400a4f"
+    },
+    {
+      "path": "number_work/oeis-a396949.proof.lean",
+      "sha256": "9a677ec8361842ce6b888e443868cbe54f593d5fc954896c511dff0377da6a26"
+    },
+    {
+      "path": "number_work/ProbeA396949.lean",
+      "sha256": "3cd6e15feb032035f0ef181907ef4b2432ab5094b9661b1503fe5ff58a52aa21"
+    },
+    {
+      "path": "number_work/A396949_DISPROOF.md",
+      "sha256": "897aecf0ccb36492b6c8ccd7635b1dbfee06de27fe28d7eaa67ee49c0b2457cb"
+    },
+    {
+      "path": "number_work/A396949_EXACT_CHECKS.py",
+      "sha256": "e4d77ad07ae43dd1b34c956dff20cfd6e75ad49a4eab77b8b7070bba53fff136"
+    },
+    {
+      "path": "number_work/A396949_EXACT_CHECKS.json",
+      "sha256": "ab8e618fcd8429585e1447ec0975a0e1c09566026118be0a9bb1ad7bfac88a87"
+    },
+    {
+      "path": "number_work/A396949_THIRD_FULL_KERNEL_PASS.log",
+      "sha256": "bf123e758c4c7659a0c15b2212ea6ec39bfbe42050292ee111e919410c736373"
+    }
+  ]
+}
