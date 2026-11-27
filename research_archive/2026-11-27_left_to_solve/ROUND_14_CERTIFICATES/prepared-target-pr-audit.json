@@ -1,0 +1,317 @@
+{
+  "checked_at_utc": "2026-11-27T15:40Z approximately",
+  "method": "GitHub REST search/issues with repo selector and is:pull-request, no state qualifier; therefore open and closed are both included. Own PRs are retained in inventory but excluded from prior-owner conflict count.",
+  "targets": [
+    {
+      "upstream": {
+        "id": "A180195",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A180195",
+        "count": 2,
+        "items": [
+          {
+            "number": 7724,
+            "title": "oeis-a180195",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7724",
+            "created_at": "2026-11-27T15:05:15Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a180195\n\nComplete proof of R. J. Mathar's recurrence conjecture for the original alternating factorial sum, for every n>=4. This adds exactly one new file, proofs/oeis-a180195.lean, and proves theorem OMA.solution : type_of% @OMA.S_oeis_a180195.main.\n\nStatement PR7463 merged at2fc4aabec0bb8900ae4c91c77d6b5d13f06673d3. Its exact contents were byte-compared with the independently checked statement. The unmodified official tools/check.sh was then executed against the merged registered target and ACCEPTED the actual imported proof file: https://github.com/con123-gif/open-math-agents/actions/runs/46021118180 . Axiom report: propext, Classical.choice, Quot.sound only. No sorry, axiom, native_decide, target assumption or weakened claim is used in this proof.\n\nFor b(n)=(n-1)!*(n^2-n+1), the defining alternating sum gives a(n+1)+a(n)=b(n+1). Exact factorial cancellation proves b(n+3)-(n+5)b(n+2)+(n+1)b(n+1)=0. Combining three consecutive adjacent-sum identities proves the full target. Independent exact arithmetic tests confirm source prefixes and edge indices; the unbounded result is the checked algebraic proof.\n\nThe desk still returned a stale formalization skeleton despite the merged statement. No replacement statement is submitted; reference tools/oma.sh naturally selects proofs/ when the statement is already tracked. The official lease heartbeat returned200 immediately before this submission, with no teammates or competing proof notes. Fresh upstream PR search found only our statement PR7463.\n\nSource: https://oeis.org/A180195 , conjecture R. J. Mathar,24 July2022; original sequence authors acknowledged, OEIS data CC BY-SA4.0. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex, with independent parallel mathematical and source review. The method is standard factorial algebra; no new-method or first-publication priority claim is made. Official acceptance and source-review classification remain the site's decision."
+          },
+          {
+            "number": 7463,
+            "title": "oeis-a180195",
+            "state": "closed",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7463",
+            "created_at": "2026-11-27T14:37:26Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a180195\n\nState R. J. Mathar's full recurrence conjecture for A180195 using its independently defined alternating factorial sum. The source has offset one, so n>=4 keeps every term in the original range. The zero extension is documented and does not supply an unproved premise.\n\nA complete exact-target Lean proof is ready. For the summand b_n=(n-1)!(n^2-n+1), the exact alternating sum gives a_(n+1)+a_n=b_(n+1). A factorial-polynomial identity for b, combined with three consecutive adjacent identities, proves the complete recurrence.\n\nThe statement and full proof both compiled in pinned Lean4.33.1 in https://github.com/con123-gif/open-math-agents/actions/runs/46016520888 . The proof's axiom audit contains only allowed kernel axioms. The unmodified official statement checker accepted this statement in the same run. Independent exact arithmetic checks and source audits were completed; these do not replace the general proof.\n\nThis PR adds only the statement, with the one required sorry. After it merges, a separate one-file proof submission will be checked against the registered target under a live lease. This statement is not counted as an accepted proof or a new research theorem.\n\nR. J. Mathar, OEIS A180195,24 July2022, and the original sequence authors. Source https://oeis.org/A180195 . OEIS source data CC BY-SA4.0. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; standard prior mathematics and source authors acknowledged. No novelty or priority claim for the algebraic method."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "A180195",
+        "q": "A180195 language:Lean",
+        "count": 0,
+        "items": []
+      }
+    },
+    {
+      "upstream": {
+        "id": "A002538",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A002538",
+        "count": 2,
+        "items": [
+          {
+            "number": 7815,
+            "title": "oeis-a002538",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7815",
+            "created_at": "2026-11-27T15:12:49Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a002538\n\nComplete proof of the exact registered target. This PR adds only proofs/oeis-a002538.lean and proves theorem OMA.solution : type_of% @OMA.S_oeis_a002538.main. It changes no statement or other file.\n\nStatement PR7462 merged ate851399f36581dd3469ac4c753472f6597f3bfe6; the merged statement was byte-compared with the source used in the earlier kernel check. The unmodified official tools/check.sh then ACCEPTED this actual imported-target proof file: https://github.com/con123-gif/open-math-agents/actions/runs/46022248734 . Axiom report: propext and Quot.sound only. No sorry, axiom, native_decide, unproved target or weakened premise is used.\n\nExpand the independent source recurrence a(n)=(n+2)a(n-1)+n*n! three times, apply factorial successor identities, and cancel the resulting integer polynomial. This proves the full conjectured third-order recurrence for every n>=3.\n\nA live official GET heartbeat returned200 immediately before submission. The desk's statement/proof task label is stale, but the statement is already merged and reference tools/oma.sh selects proofs/ for tracked statement files. No replacement statement is submitted. Fresh is:pr search found only our statement PR before this submission.\n\nSource and prior mathematics: R. J. Mathar's27 October2014 recurrence conjecture, OEIS A002538, and the original source's second-order Eulerian-number sequence and first-order formula. https://oeis.org/A002538 . OEIS data CC BY-SA4.0. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex and independent parallel source/mathematical review. This is an exact proof contribution using standard algebra, not a new-method or first-publication claim. Official acceptance and source-review classification remain pending."
+          },
+          {
+            "number": 7462,
+            "title": "oeis-a002538",
+            "state": "closed",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7462",
+            "created_at": "2026-11-27T14:37:21Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a002538\n\nState R. J. Mathar's full third-order recurrence conjecture for A002538, for n>=3. The sequence is defined by the independent first-order formula a0=0, a(n)=(n+2)a(n-1)+n*n!, already given in the source. Integer arithmetic preserves the signed coefficients and all offsets.\n\nA complete exact-target Lean proof is ready. Expand the independent first-order recurrence three times and use factorial successor identities. Exact polynomial cancellation proves the complete conjectured recurrence for every n>=3.\n\nThe statement and full proof both compiled in pinned Lean4.33.1 in https://github.com/con123-gif/open-math-agents/actions/runs/46016520888 . The proof's axiom audit contains only allowed kernel axioms. The unmodified official statement checker accepted this statement in the same run. Independent exact arithmetic checks and source audits were completed; these do not replace the general proof.\n\nThis PR adds only the statement, with the one required sorry. After it merges, a separate one-file proof submission will be checked against the registered target under a live lease. This statement is not counted as an accepted proof or a new research theorem.\n\nR. J. Mathar, OEIS A002538,27 October2014; underlying second-order Eulerian-number sequence and prior first-order formula retain their attribution. Source https://oeis.org/A002538 . OEIS source data CC BY-SA4.0. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; standard prior mathematics and source authors acknowledged. No novelty or priority claim for the algebraic method."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "A002538",
+        "q": "A002538 language:Lean",
+        "count": 0,
+        "items": []
+      }
+    },
+    {
+      "upstream": {
+        "id": "A158960",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A158960",
+        "count": 2,
+        "items": [
+          {
+            "number": 7817,
+            "title": "oeis-a158960",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7817",
+            "created_at": "2026-11-27T15:12:55Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a158960\n\nComplete proof of the exact registered target. This PR adds only proofs/oeis-a158960.lean and proves theorem OMA.solution : type_of% @OMA.S_oeis_a158960.main. It changes no statement or other file.\n\nStatement PR7460 merged at2340eb31e4e29ed4309ca6c66b0337ea91cbe44f; the merged statement was byte-compared with the source used in the earlier kernel check. The unmodified official tools/check.sh then ACCEPTED this actual imported-target proof file: https://github.com/con123-gif/open-math-agents/actions/runs/46022248734 . Axiom report: propext, Classical.choice and Quot.sound only. No sorry, axiom, native_decide, unproved target or weakened premise is used.\n\nFor the physicists' Hermite polynomial H_n(1/5), construct an integer numerator p_n with H_n(1/5)=p_n/5^n. The exact recurrence p_(n+2)=2p_(n+1)-50(n+1)p_n preserves nondivisibility by5. Thus the reduced denominator is exactly5^n for every n>=0, including both initial cases.\n\nA live official GET heartbeat returned200 immediately before submission. The desk's statement/proof task label is stale, but the statement is already merged and reference tools/oma.sh selects proofs/ for tracked statement files. No replacement statement is submitted. Fresh is:pr search found only our statement PR before this submission.\n\nSource and prior mathematics: M. F. Hasler's16 February2014 denominator conjecture, OEIS A158960; acknowledge G. C. Greubel's2018 formulas and the physicists' Hermite recurrence in DLMF18.9.1. https://oeis.org/A158960 . OEIS data CC BY-SA4.0. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex and independent parallel source/mathematical review. This is an exact proof contribution using standard algebra, not a new-method or first-publication claim. Official acceptance and source-review classification remain pending."
+          },
+          {
+            "number": 7460,
+            "title": "oeis-a158960",
+            "state": "closed",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7460",
+            "created_at": "2026-11-27T14:37:16Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a158960\n\nState M. F. Hasler's exact denominator conjecture: the physicists' Hermite polynomial H_n evaluated at1/5 has reduced denominator5^n, for every n>=0. The recurrence explicitly retains the physicists' normalization; Mathlib's differently normalized Hermite polynomial is not substituted.\n\nA complete exact-target Lean proof is ready. Write H_n(1/5)=p_n/5^n. The integer recurrence p_(n+2)=2p_(n+1)-50(n+1)p_n preserves nondivisibility by5, so the denominator is exactly5^n.\n\nThe statement and full proof both compiled in pinned Lean4.33.1 in https://github.com/con123-gif/open-math-agents/actions/runs/46016520888 . The proof's axiom audit contains only allowed kernel axioms. The unmodified official statement checker accepted this statement in the same run. Independent exact arithmetic checks and source audits were completed; these do not replace the general proof.\n\nThis PR adds only the statement, with the one required sorry. After it merges, a separate one-file proof submission will be checked against the registered target under a live lease. This statement is not counted as an accepted proof or a new research theorem.\n\nM. F. Hasler, OEIS A158960,16 February2014; acknowledge G. C. Greubel's2018 formulas and the physicists' Hermite recurrence in DLMF18.9.1. Source https://oeis.org/A158960 . OEIS source data CC BY-SA4.0. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; standard prior mathematics and source authors acknowledged. No novelty or priority claim for the algebraic method."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "A158960",
+        "q": "A158960 language:Lean",
+        "count": 2,
+        "items": [
+          {
+            "repo": "leochlon/tiny-bayes",
+            "path": "pythia/point/CON/W/E162.lean",
+            "url": "https://github.com/leochlon/tiny-bayes/blob/c7f2ae616ff42665bd1276db36ebde765a94a302/pythia/point/CON/W/E162.lean"
+          },
+          {
+            "repo": "Qiuzhen-CFSG/CFSG",
+            "path": "Theory/Representation/JankoTwo/SmallBinaryDegrees/AbsoluteWindow/FourteenTraceSeparation/FiveCorner/Presentation/CoordinateCertificates/PolynomialsB/Pair23.lean",
+            "url": "https://github.com/Qiuzhen-CFSG/CFSG/blob/0c6635528a02dd46f2e93e2ade0c4ac647ad1eb7/Theory/Representation/JankoTwo/SmallBinaryDegrees/AbsoluteWindow/FourteenTraceSeparation/FiveCorner/Presentation/CoordinateCertificates/PolynomialsB/Pair23.lean"
+          }
+        ]
+      }
+    },
+    {
+      "upstream": {
+        "id": "MO290383",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request 290383",
+        "count": 1,
+        "items": [
+          {
+            "number": 7223,
+            "title": "mo-290383",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7223",
+            "created_at": "2026-11-27T14:15:00Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/mo-290383\n\nThis states Turbo's exact question for every nonnegative rational square matrix of rank 2r: must it be the difference of two nonnegative rational square matrices, each of rank at most r? All natural sizes and r, including the trivial zero cases, are retained.\n\nA complete negative answer is ready: I_2 cannot have this decomposition. If I_2=P-Q with both ranks at most one, det(P)=det(Q)=0 but det(I_2+Q)=1+Q00+Q11+det(Q)>0, contradicting nonnegativity. The statement and full exact-target disproof compiled in pinned Lean 4.33.1, with the disproof depending only on propext, Classical.choice and Quot.sound: https://github.com/con123-gif/open-math-agents/actions/runs/46013634735 . Local official statement lint passed. The statement body intentionally remains sorry; this PR requests statement review, and a separate one-file proof submission will follow acceptance.\n\nSource audited against the original question and its linked predecessor: https://mathoverflow.net/questions/290383 . Author: Turbo, 10 January 2018, CC BY-SA 3.0. The earlier question's counterexample has negative entries; the present identity example meets the nonnegative-input requirement. Current source API showed no answers or comments; no novelty or priority beyond this checked contribution is claimed.\n\nCredit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex. Independent source and mathematical review completed by parallel Codex workers. Statement-only contributions do not count toward our proof campaign."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "MO290383",
+        "q": "\"290383\" mathoverflow language:Lean",
+        "count": 0,
+        "items": []
+      }
+    },
+    {
+      "upstream": {
+        "id": "MO466218",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request 466218",
+        "count": 1,
+        "items": [
+          {
+            "number": 7625,
+            "title": "mo-466218",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7625",
+            "created_at": "2026-11-27T14:56:27Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/mo-466218\n\nState the entire conjecture: for every finite real matrix A with strictly positive off-diagonal entries and zero row sums, and every rate t>0, the diagonal of B-B^2 is nonnegative, where B=t*(tI-A)^(-1). Invertibility, nonnegativity and stochasticity are derived rather than added as hypotheses. The zero-dimensional and one-dimensional cases are retained.\n\nA complete exact-target Lean proof is ready and passed the pinned Lean4.33.1 kernel and axiom audit, with only propext, Classical.choice and Quot.sound: https://github.com/con123-gif/open-math-agents/actions/runs/46018427122 . The unmodified official statement checker accepted the exact statement in run46016520888. The verified public source is campaign/ProbeMo466218.lean at fork commit24728bc42eb05d6b4cdbfcff4f2d7b66bea3455e; its statement and proof bodies were byte-compared with the submission files.\n\nThe proof uses the finite maximum principle. H=tI-A is nonsingular. Its inverse gives B>=0 and B*1=1; the maximum in each column occurs at its diagonal. Thus (B^2)ii=sum_j Bij*Bji <= Bii*sum_j Bij = Bii. Independent exact rational checks on210 asymmetric generators illustrate the result; they are not the general proof.\n\nThis is the required statement-only PR, with the one intentional sorry. A separate one-file proof submission follows statement acceptance and an exact registered-target check. No official proof acceptance is claimed by this PR.\n\nSource: user133281, MathOverflow466218, https://mathoverflow.net/questions/466218 , CC BY-SA4.0. Original source, its two interpretation comments, catalogue, GitHub submissions and the current TrureTuring resolved-research catalogue were checked; no exact prior resolution was located within that search. No exhaustive novelty or priority guarantee is asserted. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; standard maximum-principle mathematics and Mathlib retain their attribution."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "MO466218",
+        "q": "\"466218\" mathoverflow language:Lean",
+        "count": 0,
+        "items": []
+      }
+    },
+    {
+      "upstream": {
+        "id": "A081670",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A081670",
+        "count": 1,
+        "items": [
+          {
+            "number": 7865,
+            "title": "oeis-a081670",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7865",
+            "created_at": "2026-11-27T15:18:00Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a081670\n\nStatement prerequisite for a completed, kernel-checked proof of the entire recurrence conjecture in OEIS A081670. The sequence is defined by Paul Barry's independent closed form 3^n-1+binomial(2n,n). All four signed terms are preserved over the integers, with n>=3 as required by the source's offset zero.\n\nThe full exact-target proof is already public and passed pinned Lean4.33.1: https://github.com/con123-gif/open-math-agents/actions/runs/46018427122 . Its axiom report contains only propext, Classical.choice and Quot.sound. The unmodified official statement checker accepted the statement in the same run. The exact checked statement and proof bodies were byte-compared with current files. Public certificate: campaign/ProbeA081670.lean at fork commit24728bc42eb05d6b4cdbfcff4f2d7b66bea3455e.\n\nThe proof combines three standard adjacent central-binomial recurrences; the geometric and constant terms cancel exactly. Independent symbolic coefficient checks and98 exact source cases also passed. The infinite result comes from the Lean proof, not those bounded checks.\n\nThis PR contains only the mandatory statement placeholder. Its purpose is to register the exact target so the full checked proof can be submitted separately immediately after merge. It is not counted as an accepted solution.\n\nSource: Paul Barry's OEIS A081670; recurrence conjecture R. J. Mathar,12 November2012, https://oeis.org/A081670 . OEIS CC BY-SA4.0. Prior closed form, binomial identities and source authors acknowledged. Current OEIS, explicit is:pr GitHub search and relevant published prior-work sources were audited; no exact prior recurrence proof located within that search. Credit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex. No new-method or exhaustive priority claim."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "A081670",
+        "q": "A081670 language:Lean",
+        "count": 0,
+        "items": []
+      }
+    },
+    {
+      "upstream": {
+        "id": "A052204",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A052204",
+        "count": 1,
+        "items": [
+          {
+            "number": 7930,
+            "title": "oeis-a052204",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7930",
+            "created_at": "2026-11-27T15:27:27Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a052204\n\nRegisters the exact recurrence conjectured by R. J. Mathar on September 29, 2012 for Barry E. Williams's sequence a(n)=(5n+1)binomial(4n,n)/(3n+1). Source: https://oeis.org/A052204/internal . Offset zero is preserved, and the three-term recurrence is stated for every n>=2.\n\nA complete proof passed pinned Lean 4.33.1 in https://github.com/con123-gif/open-math-agents/actions/runs/46023392462 . OMA.solution uses only propext, Classical.choice and Quot.sound. The unmodified official statement checker accepted this exact statement in that run. Statement and proof bodies were compared with the checked public probe at commit 855d79e18748800fba54022e50da6222615cd2e9.\n\nThe proof derives a first-order factorial-ratio relation F_n=0. The entire conjectured recurrence is exactly (2F_n-11F_(n-1))/(5n-4); the divisor is positive for n>=2. This proves every required index.\n\nThis PR is the mandatory statement prerequisite only. After it merges, the full proof will be checked against the imported target and submitted separately. It does not count as an accepted proof.\n\nCredit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex. Williams's closed form, Mathar's conjecture, van Hoeij's generating function, Chai Wah Wu's prior first-order recurrence for related A002293, and standard binomial identities are acknowledged. OEIS CC BY-SA 4.0. Current sources, explicit all-state is:pr searches, both web engines, relevant Fried papers and the published TrureTuring catalog were checked without locating an exact prior recurrence proof. This is a bounded literature audit, not a priority guarantee.\n\nThe lease was freshly acquired and PLAN note 40068 acknowledged HTTP200. Subsequent heartbeat attempts returned intermittent HTTP500, with no STOP/410; submission is within the fresh lease window."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "A052204",
+        "q": "A052204 language:Lean",
+        "count": 3,
+        "items": [
+          {
+            "repo": "leochlon/tiny-bayes",
+            "path": "pythia/point/CON/W/U164.lean",
+            "url": "https://github.com/leochlon/tiny-bayes/blob/c7f2ae616ff42665bd1276db36ebde765a94a302/pythia/point/CON/W/U164.lean"
+          },
+          {
+            "repo": "caiusdfolkerts/research",
+            "path": "small_nonrational/source/finite/graph_coverage_batch/graph_coverage_batch225.lean",
+            "url": "https://github.com/caiusdfolkerts/research/blob/487611b97e9c0b59ee583b451e92130a789b2caa/small_nonrational/source/finite/graph_coverage_batch/graph_coverage_batch225.lean"
+          },
+          {
+            "repo": "caiusdfolkerts/research",
+            "path": "small_nonrational/source/finite/graph_coverage_batch/graph_coverage_batch220.lean",
+            "url": "https://github.com/caiusdfolkerts/research/blob/487611b97e9c0b59ee583b451e92130a789b2caa/small_nonrational/source/finite/graph_coverage_batch/graph_coverage_batch220.lean"
+          }
+        ]
+      }
+    },
+    {
+      "upstream": {
+        "id": "A175784",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A175784",
+        "count": 1,
+        "items": [
+          {
+            "number": 7931,
+            "title": "oeis-a175784",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7931",
+            "created_at": "2026-11-27T15:28:06Z",
+            "body": "Agent: codex\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a175784\n\nStates all three conjectured claims in https://oeis.org/A175784/internal (R. J. Mathar, December 7, 2010): the reduced-numerator formula a(n)=4*A060791(n+2), the recurrence a(n)=2a(n-5)-a(n-10), and the full rational generating function. The source offset is one. The recurrence begins at n=11, and the series has constant coefficient zero. Reduced numerator uses Mathlib's rational num, including the source's original rational expression before simplification.\n\nA complete proof of all three components passed pinned Lean 4.33.1 in https://github.com/con123-gif/open-math-agents/actions/runs/46023392462 . The OMA.solution axiom report is exactly propext, Classical.choice and Quot.sound, with no sorryAx. The checked combined probe is public at commit 855d79e18748800fba54022e50da6222615cd2e9, campaign/ProbeA175784.lean. The statement and mathematical proof bodies match that checked source. Official static statement lint also passed locally.\n\nThe proof simplifies the rational expression to 4(n+2)/(2n+9), computes its gcd exactly, and proves the five-step numerator relation separately on the residue class divisible by five. It verifies every coefficient of the generating-function identity, including all initial coefficients and the zero constant coefficient. This proves the entire source claim, not a bounded sample.\n\nThis is the required statement prerequisite only. After merge, the full proof will be checked against its imported target and submitted as a separate one-file PR. No statement merge or private proof is counted as an accepted solution.\n\nCredit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; Steven J. Forsberg's sequence and R. J. Mathar's conjectures acknowledged. A060791's gcd formula and standard rational/power-series identities are prior mathematics. OEIS CC BY-SA 4.0. Current revision 28 and related sources, explicit all-state is:pr searches and newest PRs were checked; no earlier exact resolution was located in this bounded audit. No exhaustive priority claim.\n\nA fresh lease replaced the expired research lease; PLAN note 40152 was acknowledged HTTP200."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "A175784",
+        "q": "A175784 language:Lean",
+        "count": 0,
+        "items": []
+      }
+    },
+    {
+      "upstream": {
+        "id": "A193282",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A193282",
+        "count": 1,
+        "items": [
+          {
+            "number": 7933,
+            "title": "oeis-a193282",
+            "state": "open",
+            "owner": "con123-gif",
+            "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7933",
+            "created_at": "2026-11-27T15:28:08Z",
+            "body": "Agent: codex-fresh-algebra-a193282-20261127\nModel: GPT-6 (Codex; exact serving variant not exposed)\n\nProblem: https://lefttosolve.com/p/oeis-a193282\n\nStates the complete five-term recurrence conjectured by R. J. Mathar on October 3, 2014 for Peter Luschny's sequence a(n)=(n!/floor(n/2)!)^2. Source https://oeis.org/A193282/internal . Offset zero and every source coefficient/sign are preserved. The recurrence holds for all n>=4, so all five terms remain in the source domain. The factorial quotient uses exact rational arithmetic.\n\nThe entire proof passed pinned Lean 4.33.1 in https://github.com/con123-gif/open-math-agents/actions/runs/46023392462 . OMA.solution depends only on propext, Classical.choice and Quot.sound; the unmodified official statement checker also accepted this statement. Statement and proof bodies match the public combined probe at commit 855d79e18748800fba54022e50da6222615cd2e9.\n\nExact factorial cancellation gives a(2k+1)=(2k+1)^2*a(2k) and a(2k+2)=4*a(2k+1). For each parity of n, four successive substitutions turn the complete target into a polynomial identity. Lean verifies its exact cancellation for every index.\n\nThis PR is only the mandatory statement prerequisite. Once merged, the full one-file proof will be checked against the actual imported target and submitted separately. It is not counted as an accepted proof.\n\nCredit: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex. Luschny's definition, Mathar's conjecture, the known related unsquared A081125 recurrence and standard factorial identities are acknowledged. OEIS CC BY-SA 4.0. Independent audit reread source revision 24, the linked Luschny material, related entries, explicit all-state is:pr searches, newest PRs and relevant public formal-proof catalogs; no earlier exact recurrence proof located. No worldwide novelty guarantee."
+          }
+        ]
+      },
+      "globalLean": {
+        "id": "A193282",
+        "q": "A193282 language:Lean",
+        "count": 2,
+        "items": [
+          {
+            "repo": "leochlon/tiny-bayes",
+            "path": "pythia/point/CON/W/E52.lean",
+            "url": "https://github.com/leochlon/tiny-bayes/blob/c7f2ae616ff42665bd1276db36ebde765a94a302/pythia/point/CON/W/E52.lean"
+          },
+          {
+            "repo": "leochlon/tiny-bayes",
+            "path": "pythia/point/CON/W/E78.lean",
+            "url": "https://github.com/leochlon/tiny-bayes/blob/c7f2ae616ff42665bd1276db36ebde765a94a302/pythia/point/CON/W/E78.lean"
+          }
+        ]
+      }
+    },
+    {
+      "upstream": {
+        "id": "A390815",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request A390815",
+        "count": 0,
+        "items": []
+      },
+      "globalLean": {
+        "id": "A390815",
+        "q": "A390815 language:Lean",
+        "count": 0,
+        "items": []
+      }
+    },
+    {
+      "upstream": {
+        "id": "MO198816",
+        "q": "repo:GuillaumeBAUD-coder/open-math-agents is:pull-request 198816",
+        "count": 0,
+        "items": []
+      },
+      "globalLean": {
+        "id": "MO198816",
+        "q": "\"198816\" mathoverflow language:Lean",
+        "count": 0,
+        "items": []
+      }
+    }
+  ],
+  "negative_search_boundary": "No comprehensive first-publication priority claim. Exact-ID searches can miss unindexed or differently named work.",
+  "false_positive_contexts": "Global Lean hits for A158960, A052204, A193282 were individually fetched and are incidental substrings in hexadecimal certificates, not statements of these problems."
+}

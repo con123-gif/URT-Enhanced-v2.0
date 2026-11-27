@@ -1,100 +1,76 @@
 # Left to Solve campaign ledger
 
-Owner: Cornelius Lytollis (@con123-gif), assisted by ChatGPT (Codex, GPT-6; exact serving variant not exposed).
-Date: 27 November 2026. Status: WORK IN PROGRESS; no completion claim.
+Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex, GPT-6 (exact serving variant not exposed). Updated 27 November 2026, approximately 15:49 UTC. This is a progress record, not a completion or priority claim.
 
-## Confirmed total
+## Confirmed count
 
-**0 / 20 accepted distinct proof or disproof submissions confirmed for this owner.**
-No new proof PR submitted in this interactive session as of this checkpoint.
-Two statement-only PRs are pending: [7223](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7223) and [7275](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7275).
-Statements, research notes, reductions, and other contributors' results do not count.
-The live public solved feed was retrieved and filtered for `con123-gif`: no entries.
-The hourly Left to Solve bot remains enabled on its existing schedule; RH workers
-and their schedules are unchanged. Independent lanes must check this record and
-live desk/team notes before claiming the same target.
+**0 / 20 distinct problems with a confirmed merged and publicly credited full proof.**
 
-## Existing official contributions and current verdicts
+**3 full proof PRs submitted, all 3 accepted by the actual upstream Lean checker.** Their public verdict/merge stage remains pending at the latest reads. A kernel-accepted checker payload is recorded separately from a merged, credited acceptance. Statements, notes, reductions, known prior results and private kernel certificates do not enter the minimum twenty.
 
-| Problem | Exact task | Official record | Current evidence | Counts |
+Nine candidate open-problem results have complete proofs/disproofs that passed the pinned Lean kernel, including those three submissions. Six await completion of their statement-to-proof pipeline. A tenth complete kernel certificate, A390815, is conservatively excluded from the genuine-new count after the final crossreference audit found prior mathematics. The current matrix counterexample MO198816 is additional exact mathematics, still awaiting its Lean result. A058128 was detected as prior solved before any claim or submission and is excluded.
+
+## Full proof submissions
+
+| Problem and exact claim | Complete proof | Actual upstream verification | Official proof PR | Merge / public credit |
 |---|---|---|---|---|
-| opg-inequality-for-square-summable-complex-series | State Retkes's inequality for square-summable complex sequences, with positive input indexing | [PR 6725](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/6725) | Closed after rejection and supersession. REJECTED by lint: theorem binders must be inside the statement after the colon; also another statement is now on main. Previously published 2013 proof is acknowledged. | No |
-| oeis-a401895 | For all natural n > 3, n times its decimal reversal has more than one distinct digit | [desk note 33408 / workflow](https://github.com/con123-gif/open-math-agents/actions/runs/46008655704) | Research note acknowledged; partial carry certificate, no full Lean proof | No |
-| opg-distribution-and-upper-bound-of-mimic-numbers | Exact histogram recursion and classification of first hitting times for radix M >= 2, 0 < D <= M | [PR 6800](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/6800) | ACCEPTED STATEMENT, authored by @rleshner, merged 1814ed2772d3e98896bbf8e1aba95342c6658b79 | No; third party, statement only |
+| A180195: for n>=4, a(n)-(n+1)a(n-1)-4a(n-2)+(n-2)a(n-3)=0, with the original alternating-factorial sum | Adjacent alternating-sum identities, factorial cancellation, exact linear combination | [46021728128](https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46021728128), job140582771733: `accepted - kernel accepted; axioms within propext, Classical.choice, Quot.sound`, 15:10:30 UTC | [7724](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7724), author con123-gif, commit782c927b240edd30b0930bc47412501d0c1e8a5d | Pending; statement7463 already merged |
+| A002538: for n>=3, a(n)-2(n+2)a(n-1)+(n^2+4n+1)a(n-2)-n(n-1)a(n-3)=0, defined independently by a(0)=0 and a(n)=(n+2)a(n-1)+n*n! | Three source-recurrence expansions followed by exact integer algebra | [46022873588](https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46022873588), job140586706057: kernel accepted with permitted axioms, 15:18:27 UTC | [7815](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7815), author con123-gif, commit789fd49f4b4df2cc510c84bc76a9e4f4817d82f4 | Pending; statement7462 already merged |
+| A158960: the physicists' Hermite polynomial H_n(1/5) has reduced denominator 5^n for every n>=0 | Integer numerator recurrence p(n+2)=2p(n+1)-50(n+1)p(n), preserving 5 nondivisibility | [46022888332](https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46022888332), job140586756527: kernel accepted with permitted axioms, 15:25:48 UTC | [7817](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7817), author con123-gif, commitf7c47131afe2c9b3c693fcc8102b50780cf6881d | Pending; statement7460 already merged |
 
-## Active substantive work
+All three proofs also passed the unmodified official checker against the actual imported, merged statements before submission. Those statement sources were compared with the checked targets. Each proof PR adds exactly one proof file and changes no theorem statement. Full source statements and clean certificates are preserved under [ROUND_14_CERTIFICATES](ROUND_14_CERTIFICATES/).
 
-| Problem | Exact mathematics | Result | Verification | Submission / obstruction |
+## Complete kernel-checked results awaiting proof submission
+
+The `.statement.lean` file in the certificate directory contains the full exact quantifiers, definitions, coefficients and generating-function identities for each row. The adjacent `.proof.lean` file is the complete certificate. Combined probes contain a placeholder only in the registered target; the solution/disproof's printed axiom list contains no sorryAx.
+
+| Problem / exact source task | Mathematical proof or disproof | Executed verification | Statement prerequisite | Remaining step / acceptance |
 |---|---|---|---|---|
-| mo-290383 | For every nonnegative rational n by n matrix M of rank 2r, do nonnegative P,Q of rank at most r exist with M=P-Q? | Complete disproof by M=I_2. Ranks at most one force det P=det Q=0; P=I+Q implies det P=1+Q00+Q11+det Q>0. | Combined exact statement and disproof compiled in pinned Lean4.33.1; OMA.disproof axioms only propext, Classical.choice, Quot.sound. Run46013634735. Unmodified official statement checker accepted run46014099792. Independent source and mathematical review completed. | Statement PR7223 pending; full proof must follow merge as a separate one-file submission. Source Turbo, MO290383, Jan10 2018, CC BY-SA3.0. No accepted proof yet. |
-| oeis-a399155 | For every n>=2, greatest-prime-factor subtraction reaches zero in no more steps than smallest-prime-factor subtraction. | Complete informal proof and Lean candidate: first smallest-factor subtraction leaves even n-p, so F(n)=1+(n-p)/2. Each greatest-factor subtraction is at least two and avoids one, so G(n)<=1+(n-q)/2<=F(n). | Unmodified official statement checker accepted run46014099792. Full main proof compiled in pinned Lean4.33.1 in run46014383078, with OMA.solution axioms only propext/Classical.choice/Quot.sound; exact unchanged-target file check follows statement merge. Two independent mathematical reviews and exact checks n=2..10000 passed. | Statement PR7275 pending. Source Jaylen Dilkhush, Aug2026, OEIS updated Nov26. Additional source empirical claim now also has an informal finite-fiber proof: for composite n>=100, 20(F(n)-G(n))>=n+12. Thus each positive level k has n<=max(99,20k-12). Additional claim is not yet Lean checked and is the same problem ID. |
-| oeis-a134799 | b0=1/3; b(next)=(3/2)b(1-b^2). Show den(b_n)=3*3^((3^n-1)/2) for every n. | Complete independent proof, now Lean checked. p/3^e with 3 not dividing p gives the next reduced denominator exponent 3e-1; e0=1. | Unmodified official checker ACCEPTED run46014099792, kernel axioms only propext/Classical.choice/Quot.sound. Exact proof on fork commit3927ee38a23713fbf28f87f6d5c9ba824cd82aea. | Competing proof PR7148 appeared before our submission (created14:07:51Z). Our proof is withheld to avoid a duplicate; official DONE note36407 acknowledged and lease released. No campaign credit. Statement author @senamakel acknowledged. |
-| oeis-a401895 | Remaining Round10 candidates have length L=33k, k>=7, endpoints7/8, n*rev(n)=6(10^(2L)-1)/9. | Independently replayed prior certificate, then proved k mod9 in {0,2,5,8}; first remaining possible length264. Also derived S^2=66L mod81 for digit sum S. | Python exact certificates executed. n=rev(n) mod9 yields allowed product residues {0,9,36,63} mod81. C_L=66L+27L(L-1) mod81 gives L mod27 in {0,3,12,21}. The centered identity independently checked on99999 inputs. | Partial only; infinite cases remain open; no new Lean or accepted solution. |
+| MO290383: can every nonnegative rational rank-2r matrix be P-Q with P,Q nonnegative of rank<=r? | Disproof M=I_2: rank<=1 forces detP=detQ=0, whereas P=I+Q gives detP=1+Q00+Q11+detQ>0 | Full disproof passed [46013634735](https://github.com/con123-gif/open-math-agents/actions/runs/46013634735), permitted axioms only | [7223](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7223), actual statement checker accepted | Await merge, fresh proof lease, imported check and separate proof PR |
+| MO466218: positive offdiagonal finite generator A, row sums0, t>0 and B=t(tI-A)^(-1) imply diagonal(B-B^2)>=0 | Maximum principle proves inverse existence, B>=0, row sums1 and column maxima at the diagonal; then (B^2)ii<=Bii | Full proof passed [46018427122](https://github.com/con123-gif/open-math-agents/actions/runs/46018427122), standard3 axioms only | [7625](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7625), checker accepted | Await merge and full imported-target proof submission |
+| A081670: complete Mathar recurrence for a(n)=3^n-1+binomial(2n,n), all n>=3 | Three adjacent central-binomial identities; exact cancellation of geometric and constant terms | Full proof passed [46018427122](https://github.com/con123-gif/open-math-agents/actions/runs/46018427122), standard3 only | [7865](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7865); upstream statement accepted in run46023666250 | Await merge and full imported-target proof submission |
+| A052204: complete three-term Mathar recurrence for (5n+1)binomial(4n,n)/(3n+1), all n>=2 | First-order factorial relation F_n; entire target=(2F_n-11F_(n-1))/(5n-4) | Full proof and unmodified statement checker passed [46023392462](https://github.com/con123-gif/open-math-agents/actions/runs/46023392462), standard3 only | [7930](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7930) | Await merge and full imported-target proof submission |
+| A175784: all three source claims: reduced-numerator formula, five-step recurrence and full rational generating function, with offset1 | Exact gcd formula; residue-five invariant; every generating-function coefficient, including all initial cases | Full proof passed [46023392462](https://github.com/con123-gif/open-math-agents/actions/runs/46023392462), standard3 only | [7931](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7931); upstream statement accepted run46025177936 | Await merge and full imported-target proof submission |
+| A193282: full five-term recurrence for (n!/floor(n/2)!)^2, all n>=4 | Published unsquared parity identities, squared and substituted four times; two polynomial cancellations | Full proof and official statement checker passed [46023392462](https://github.com/con123-gif/open-math-agents/actions/runs/46023392462), standard3 only | [7933](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7933) | Await merge and full imported-target proof submission |
+| A390815 — PRIOR CHARACTERIZATION FOUND; EXCLUDED from genuine-new count: all nontrivial reduced denominators n!/sigma(n) are prime; n>=4 and sigma(n) not dividing n! imply n square | Factorial packing reduces to prime powers; every composite <=2n divides n! for n>=6; odd geometric exponent excluded; n1..5 checked exactly | Complete353-line proof passed [46025483748](https://github.com/con123-gif/open-math-agents/actions/runs/46025483748), standard3 only; statement checked in46023392462 | [8102](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8102), commit65315dc78d3c31ab62051c35bc8d23d0f777a764 | Await merge and full imported-target proof submission as independent formalization; do not count as a newly solved open problem |
 
-### Current interactive lanes — avoid duplicate claims
+## Exact matrix counterexample in verification
 
-- MO290383: source/statement/proof complete, PR7223 pending; formalization lease being released after submission.
-- A399155: statement PR7275 pending; proof verification and stronger finite-level theorem in progress; formalization lease being released after submission.
-- MO466218: scout has a live formalization lease and a complete informal maximum-principle argument for diagonal(B-B^2)>=0, B=lambda(lambda I-A)^(-1), where A has positive offdiagonal entries and zero row sums. Exact statement/Lean work in progress; not verified or submitted.
-- A023365: number-theory lane holds a formalization lease and has a complete informal proof plus Lean candidate for a fresh Newton-denominator conjecture, den(b_n)=2^(3^n), b0=1/2, b(next)=b(3/2-b^2). Complete informal odd-numerator invariant; official PLAN note36574; exact Lean checks pending, no proof acceptance.
-- Do not race already submitted A134799 (PR7148) or A119936 (PR7231).
+MO198816 asks whether an irreducible, diagonally dominant, column stochastic real P and every positive probability vector w satisfy rho(P-P1w^T)<1. The source has zero answers/comments at retrieval. We constructed a13x13 strictly positive matrix satisfying strict dominance by BOTH row and column conventions, and an exact positive rational probability w. An explicit nonzero rational-complex eigenvector gives lambda=3151/3200+(7/40)i and |lambda|^2-1=2401/10240000>0. This is a complete finite exact counterexample mathematically, not just a numerical spectral computation.
 
-## Infrastructure and source integrity
+Three independent executions of the pure-Fraction certificate passed all identities. The exact source statement was accepted by the unmodified checker, but the first complete Lean disproof failed elaboration in [46027025297](https://github.com/con123-gif/open-math-agents/actions/runs/46027025297), commitf1dfa02df8a872baaa6045cb340c235668962bd7. A smaller exact rational witness is checking independently at commit075013c3e21e1f21427f5cf178eb18b512f5e998 because the first numeric certificate is slow. The failures concern Fin equality simplification, an untyped matrix lambda, doccomments before scoped options, and bridge elaboration; repairs are being prepared. No Lean success or official PR is claimed yet. One interactive scout lease is held; coordinate before any claim. Derivation, witness JSON and executable certificate are preserved in the Round14 directory. Related rank-one instability literature is acknowledged; no new general perturbation method or exhaustive priority claim.
 
-Read live join.txt, reference tools/oma.sh, tools/lint.py and tools/check.sh.
-Public reads and the official curl desk route work in this environment. Python
-urllib returned HTTP 403; it was not used for desk mutations. A curl claim attempt
-for A037250 returned HTTP 409 already_solved, with no lease issued; no duplicate PR.
+## Prior work and exclusions
 
-An isolated fork verifier is now running on branch `oma-campaign-20261127`.
-[Warm-up run 46012323274](https://github.com/con123-gif/open-math-agents/actions/runs/46012323274)
-completed successfully, downloading the official environment; it checked no theorem.
-Pin: formal-conjectures 9097e2f90e66d2f6244209cb1c07f7120d17ec53,
-Lean 4.33.1, Mathlib 0df444a360eaa60ab8c11dca51a86af692955474.
-Do not mistake infrastructure success for proof acceptance.
+- Proper GitHub search syntax is `repo:GuillaumeBAUD-coder/open-math-agents is:pull-request ID` with NO `state:all` qualifier. Search defaults to open+closed; `state:all` silently yielded false zero results. Independently reran all ten prepared target IDs plus MO198816 correctly: every returned PR belonged to con123-gif; no external prior PR found. Full JSON receipt has lease lines removed. Bounded external Lean/catalog audits also completed; absence of hits is not proof of priority.
+- A390815: final crossreference audit found A325436's unqualified prior characterization of inputs with sigma(n) not dividing n!, and A023194's Gabe Cunningham2005 square argument. Together they imply both A390815 assertions. A390815 history also records Yufeng Liu's earlier 27 November public proof announcement linking https://github.com/wray-lee/oeis-conjectures-lean , which contains Proofs/A390815.lean for both assertions. The standalone independent proof is valid, but the problem has a prior public formalization; exclude from the twenty. Statement PR8102 body was corrected to disclose this before acceptance.
+- A058128 was found already proved by Bonnie9981/Project-Discovery, commit17bf7ab04e3762bff7801e28e7d95103579839f0, lean/Discovery/CxBatch1.lean, theorem a058128_weak_psp. Existing statement PRs3181/3231 also precede our work. No lease/PR was taken; exclude from genuine-new count. Independent112-line candidate remains unverified backup only.
+- A399155 main bound and positive-fiber finiteness have prior published mathematics and a prior TrureTuring formal proof. Our independently checked proof/extensions and statement7275 are known-result verification, excluded from the genuine-open target. Earlier archive optimism is superseded by this correction.
+- A023365 is already settled in related OEIS A376867, including Chai Wah Wu's2024 formula; no submission. A372991, A383702 and radical-prime families also have prior public proofs. A134799, A191993 and A052183 have other contributors' preceding proof PRs; no duplicate proof submitted.
+- PR6725 was a rejected, superseded statement; PR6800 is a third-party mimic statement. Neither counts. Note33408 and A401895 rounds remain partial research, not solutions. The new hourly Round13 proves an infinite branch survives the old necessary prefix tests; do not expect that same frontier to empty merely by increasing its depth.
 
-The odd-length carry-free theorem in Round 10 has prior literature:
-Ezerman, Meyer and Sole, *On Polynomial Pairs of Integers*,
-Journal of Integer Sequences 18 (2015), Article 15.3.5, Proposition 14.
-The independent lane recovered https://cs.uwaterloo.ca/journals/JIS/VOL18/Ezerman/eze3.pdf.
-Its general carry-free Conjecture 11 would imply the remaining decimal question,
-but it is not a theorem in that paper. Do not claim the odd-length argument novel.
+## Worker allocation and live coordination
 
-## Duplicate and source-resolution exclusions
+On the user's explicit27 November instruction, four active RH automations were reassigned to Left to Solve. The original RH prompts/schedules are preserved in [RH_FOUR_BOT_REALLOCATION_BACKUP.json](RH_FOUR_BOT_REALLOCATION_BACKUP.json). All four updates returned success; schedules were preserved. Other RH workers were not modified. There are now five scheduled Left to Solve workers, including the existing campaign bot.
 
-Skipped known pending/accepted proof targets A010845 (6442), A037250 (6655),
-A051960 (6444), A057015 (7050), A126674 (6675), A155559 (6999),
-A158623 (7108), A341254 (6795/6818), MSE4452078 (6640),
-MO184507 (6605), MO204379 (6364), and other targets identified by lanes.
-Source audits found MO151738 and MO247291 answered in source comments/answers;
-MO291544 has the determinant-lemma solution in comments; OEIS A195507 was
-resolved in 2011. A low-scoring answer or absent accepted answer is not evidence
-of a genuinely unsolved problem. No novelty or campaign credit is claimed for these.
+| New lane | Automation ID | Former assignment | Hourly minute |
+|---|---|---|---|
+| Proof submission and independent audit |6a8d28f427dc8191bf84eedbedbbb091|RH Formal Proof Audit|48|
+| Number theory |Automation_2fe7f6d540288191bda0795b87d1cbe6|RH Dependency Extraction|12|
+| Algebra and recurrences |6a84a2b8aae481918ede3d15a5d14a17|RH Mathematics Translator|36|
+| Matrices and combinatorics |6b05350b72508191ab727cf378b9f638|RH Positivity Geometry|52|
+| Original campaign worker |6b098003b0ec8191946156658922cab5|Left to Solve|24|
 
-## RESUME HERE
+Owner cap remains5 leases across the fleet, one per worker. Most submitted formalization leases are already released/inactive. A390815 fresh lease was released submitted with HTTP200 after DONE note41023; MO198816 scout lease is active. Recheck live notes/roles before every claim and do not duplicate interactive owners. Expired tokens were stopped; never reuse them.
 
-1. Monitor statement PR7223 and PR7275. Once each merges, obtain a proof lease,
-   run the exact one-file proof through the unmodified checker, submit it and
-   monitor its actual upstream verdict. A compiled statement is not an accepted proof.
-2. Read exact pinned proof output for A399155, repair genuine Lean errors and
-   rerun. Preserve the full source claim and exact definitions.
-3. Continue source-faithful MO466218 and A023365 lanes without duplicate claims.
-4. Preserve/publish the A401895 review only as partial research, with its primary
-   2015 literature attribution. Do not count it as a solved problem.
-5. Update this ledger with actual proof PR, verdict, merge and public credit.
+The official desk intermittently returned500. Using supported HTTP1.1 with User-Agent Codex-math-campaign recovered actual200 responses; this was not a bypass of410/STOP or a rate limit. A390815 fresh claim, heartbeat and PLAN40875 were all acknowledged200 before PR8102. Record actual response outcomes; a500 response may follow a committed mutation, so `not_active` is handled as inactive without inventing the final release reason. Tokens stay private and out of this archive.
 
-No background execution beyond real scheduled bot runs or observed workflows is
-promised. Current work proceeds within each available session budget.
+## Resume here
 
-## Round 12 checkpoint, 27 November 2026, 14:29 UTC
+1. Check actual verdict comments/merges and public credit for proof7724/7815/7817. Record confirmed genuine-open acceptances only after merge/classification review; repair legitimate failures.
+2. On each actual statement merge, coordinate ONE fresh proof lease, compare the merged target, run the unmodified imported-target checker, and submit its complete proof as one new file. Do not let a stale desk `formalize` label cause a duplicate statement: reference tools/oma.sh chooses proof when the statement exists.
+3. Read the MO198816 full probe outputs; repair real elaboration failures and use the smaller exact witness if needed. Then submit statement followed by actual imported disproof under official rules.
+4. Continue new eligible complete problems in parallel, with proper all-state dedup and primary literature checks. Do not let A401895 or an infrastructure fault block other mathematics.
+5. Preserve every substantial proof and its actual verification receipt; rebase on current newtons-cathedral before updates and keep concurrent RH/archive edits.
 
-- Official live rules, catalogue and solved-feed read succeeded ([46016125981](https://github.com/con123-gif/open-math-agents/actions/runs/46016125981)); no owner entry found in solved feed. Confirmed campaign count remains **0/20**. PR7223 and PR7275 still open and unmerged; no new proof PR. Do not confuse pending statement submissions with proof acceptance.
-- A399155 strengthened: exact excess identity 2(F-G)=(q1-p)+sum_{i>=2}(qi-2) proves equality iff n is prime or n=4. All 199999 integers 2..200000 checked in Python. Same problem ID, no additional Lean verification; see ROUND_12_EQUALITY_AND_LIVE_RECONCILIATION.md.
-- Mimic approved statement now visible, no matching proof PR found; live brief read. One claim request returned HTTP409 in [46016258667](https://github.com/con123-gif/open-math-agents/actions/runs/46016258667). No lease, no note, no submission; do not retry blindly. Full informal proof plan preserved. No new official notes this run.
-- A401895 reduction PR7177 still open; author credits con123-gif for endpoint and modulo11 contributions. Not an accepted solution. Check exact step availability if merged. No other workers changed.
-
-
-## Round 13 reconciliation (27 November 2026)
-
-- Direct upstream PR reads confirm three full exact-target proof PRs by con123-gif: [A180195 #7724](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7724), [A002538 #7815](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7815), [A158960 #7817](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7817). All open/unmerged when inspected. Their separately submitted statements merged, and each proof PR documents the exact-target checker acceptance. These are interactive campaign submissions; no duplicate submitted by hourly worker. Count remains 0/20 confirmed accepted from these PRs, 3 proof PRs pending. Statement PRs #7865 (A081670), #7625 (MO466218), #7223, #7275 still open. A399155 is known mathematics per updated PR body; do not count as genuinely new.
-- A401895 H3: exact infinite surviving prefix branch, alpha=777/1000, beta=858000/999999, alpha*beta=2/3, with 9*777*858=6*(10^6-1). All-depth proof establishes that the necessary prefix tree used for fives cannot simply be exhausted for sixes. 300 independent exact checks passed; no Lean proof or closure. See ROUND_13_INFINITE_PREFIX_OBSTRUCTION_AND_PROOF_SUBMISSIONS.md. No new claim, note or PR by this session. Read-only workflow committed at fork 0366bd0952eea63fcd1b7df9d3faa0bdab828a35; its execution not confirmed; fresh official live catalogue and solved-feed unavailable directly. Do not infer acceptance from workflow commit alone. No other workers changed.
+Exact verification environment: formal-conjectures9097e2f90e66d2f6244209cb1c07f7120d17ec53, Lean4.33.1, Mathlib0df444a360eaa60ab8c11dca51a86af692955474. Isolated verifier branch con123-gif/open-math-agents:oma-campaign-20261127. No local-RH runtime, workflow or schedule was used for these checks.

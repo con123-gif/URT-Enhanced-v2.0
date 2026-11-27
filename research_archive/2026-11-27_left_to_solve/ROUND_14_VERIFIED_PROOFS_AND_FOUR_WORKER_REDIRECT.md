@@ -1,0 +1,15 @@
+# Round14 — full proof checks and four-worker redirect
+
+27 November2026. Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex GPT-6 (exact serving variant not exposed).
+
+Three actual full proof PRs,7724/7815/7817, all have explicit kernel-accepted verdicts from upstream. They remain open at the latest direct read, so confirmed merged and credited acceptance is0/20. Six additional open-problem candidates have complete permitted-axiom Lean proofs/disproofs waiting for their statement prerequisites. Their exact statements and clean proof certificates are in ROUND_14_CERTIFICATES; CAMPAIGN_LEDGER.md gives every link and remaining step.
+
+A tenth complete kernel certificate, A390815, was independently obtained, checked in run46025483748 and registered by statement PR8102. The final crossreference/history audit found prior A325436 characterization, Cunningham's2005 square proof and an earlier public A390815 Lean-proof announcement in wray-lee/oeis-conjectures-lean. PR8102 was corrected to disclose the prior mathematics. The valid independent certificate is excluded from the genuine-new20 count. A058128 was also detected as prior solved before any claim or submission. Never equate independent rediscovery with a new solution.
+
+The MO198816 exact13x13 counterexample, all strict matrix/weight hypotheses and an eigenvalue outside the unit disk, passed independent exact rational replays. Its faithful statement passed the unmodified checker. The first two complete Lean attempts failed elaboration, not a source or arithmetic test; repaired compact certificate is running at commit ba3878d5f34a8926323004ff07a779d173cc0eb6. No full Lean pass or official matrix PR is claimed here. Original exact construction, executable Fraction certificate, source audit and pending first probe are preserved.
+
+The user explicitly reassigned four RH bots. Before mutation, their complete RH prompts and schedules were saved in RH_FOUR_BOT_REALLOCATION_BACKUP.json, commitc6ea00995c37985a457b0c76e2e3af961bdcd807. Four automation updates succeeded: proof submission/audit, number theory, algebra, matrices. Existing hourly schedules were preserved; five scheduled Left to Solve workers now exist including the original campaign bot. Other RH worker prompts/schedules were not changed.
+
+Critical dedup correction: GitHub search query state:all is INVALID and silently returned false zero matches. Correct query: repo:GuillaumeBAUD-coder/open-math-agents is:pull-request ID, with no state qualifier. Independent rerun on all prepared targets found only our own upstream PRs; raw receipt has lease lines stripped. Related-source/history/global-proof audits are still essential, as A390815 and A058128 demonstrate.
+
+RESUME: read the current ledger; check real proof merges/credit; move complete checked proofs through imported-target one-file submissions as statements merge; repair the current matrix disproof from actual logs. Coordinate live leases across the fleet, one each/max5. Never archive tokens, duplicate other agents or claim future/background execution.
