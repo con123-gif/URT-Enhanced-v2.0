@@ -1,0 +1,19 @@
+CampaignProbe.lean:27:8: warning: declaration uses `sorry`
+CampaignProbe.lean:71:2: warning: Unused tactic linter: `push_cast at hpi` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+CampaignProbe.lean:164:15: warning: This simp argument is unused:
+  Ne.symm hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:286:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'OMA.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
