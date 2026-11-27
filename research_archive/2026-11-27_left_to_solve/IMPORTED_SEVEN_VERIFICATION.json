@@ -1,0 +1,81 @@
+{
+  "queued_at_utc": "2026-11-27T19:22:44.758713+00:00",
+  "fork_commit": "26773ab5efa00b399d8c5aba0d96663c950e0684",
+  "unexposed_parent": "6593aad6cf5006c28554fff9407c99aa275eee07",
+  "prior_ref": "f797d65023f15eba4cb5174cc711ae40f8eaac2c",
+  "official_main_observed": "a1d87f1a69f1a7b5a87c77e3da6cb2f3b0ab29b4",
+  "run_id": 46056163770,
+  "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46056163770",
+  "status": "all seven unmodified imported-target checks accepted; not official proof merges",
+  "all_seven_registered_statements_byte_equal": true,
+  "all_seven_uploaded_proof_blobs_byte_equal": true,
+  "diff_guarantee": "HEAD^ to HEAD has all seven checker proof fixtures ADDED; actual ref never moved to the removal parent. Prior-ref to final has only five new proof fixtures and a public manifest; zero deletions or existing file edits.",
+  "byte_receipt": "byte_compare.json",
+  "new_official_acceptances_counted": 0,
+  "job_id": 140699055764,
+  "actual_results": [
+    {
+      "problem": "mo-319325",
+      "verdict": "accepted",
+      "theorem": "OMA.disproof",
+      "imports": "OMAStatements.S_mo_319325",
+      "errors": [],
+      "utc": "2026-11-27T19:23:37.9077479Z",
+      "standard_axioms_only": true
+    },
+    {
+      "problem": "mo-487192",
+      "verdict": "accepted",
+      "theorem": "OMA.disproof",
+      "imports": "OMAStatements.S_mo_487192",
+      "errors": [],
+      "utc": "2026-11-27T19:23:59.1676636Z",
+      "standard_axioms_only": true
+    },
+    {
+      "problem": "oeis-a382465",
+      "verdict": "accepted",
+      "theorem": "OMA.solution",
+      "imports": "OMAStatements.S_oeis_a382465",
+      "errors": [],
+      "utc": "2026-11-27T19:24:19.8219879Z",
+      "standard_axioms_only": true
+    },
+    {
+      "problem": "oeis-a382624",
+      "verdict": "accepted",
+      "theorem": "OMA.solution",
+      "imports": "OMAStatements.S_oeis_a382624",
+      "errors": [],
+      "utc": "2026-11-27T19:24:40.5406115Z",
+      "standard_axioms_only": true
+    },
+    {
+      "problem": "oeis-a383062",
+      "verdict": "accepted",
+      "theorem": "OMA.solution",
+      "imports": "OMAStatements.S_oeis_a383062",
+      "errors": [],
+      "utc": "2026-11-27T19:25:01.4256695Z",
+      "standard_axioms_only": true
+    },
+    {
+      "problem": "oeis-a383246",
+      "verdict": "accepted",
+      "theorem": "OMA.solution",
+      "imports": "OMAStatements.S_oeis_a383246",
+      "errors": [],
+      "utc": "2026-11-27T19:25:22.4367970Z",
+      "standard_axioms_only": true
+    },
+    {
+      "problem": "oeis-a383248",
+      "verdict": "accepted",
+      "theorem": "OMA.solution",
+      "imports": "OMAStatements.S_oeis_a383248",
+      "errors": [],
+      "utc": "2026-11-27T19:25:43.2896526Z",
+      "standard_axioms_only": true
+    }
+  ]
+}
