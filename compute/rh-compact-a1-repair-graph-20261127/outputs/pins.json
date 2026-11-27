@@ -1,0 +1,8 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "source_blobs": {
+    "New.Columns.LocalStatement": "9d5bd0d698b0db2850cbd306d8d400d7e99a3547"
+  }
+}

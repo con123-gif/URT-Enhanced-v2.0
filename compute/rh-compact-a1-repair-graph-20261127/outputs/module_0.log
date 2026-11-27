@@ -1,0 +1,4 @@
+'Columns.hasType_markOperator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Data.IsMarked.hasType_markOperator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Data.IsMarked.hasType_prod_markOperator_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Data.exists_indexDvd_Bmu_divisible' depends on axioms: [propext, Classical.choice, Quot.sound]

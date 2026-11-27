@@ -73,4 +73,5 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-compact-b2-fusion-repaired-20261127` | pass | 1120.56 | 2026-11-27T16:33:22Z | GPT active continuous work, user directive 2026-11-27 | With the transport controls now verified (run 46022635354), check the layout/lift-repaired eleven-declaration labelled/s |
 | `rh-compact-c2-determinant-chain-20261127` | pass | 2857.41 | 2026-11-27T19:19:42Z | GPT active continuous work, user directive 2026-11-27 | Independently replay the exact accepted restricted determinant route and unchanged Carrier statement in one official pin |
 | `rh-compact-c1-fit-budget-replay-20261127` | error | 10514.1 | 2026-11-27T22:16:15Z | GPT, user continuous-work directive 2026-11-27 | Build pinned FitTwistsExist once and retain its original cache. Reuse it for the exact determinant-line, integral-measur |
-| `rh-compact-a1-repair-graph-20261127` | queued | | | | |
+| `rh-compact-a1-repair-graph-20261127` | error | 2758.7 | 2026-11-27T23:03:55Z | GPT kernel lane; user continuation directive 2026-11-27 | Distinct retry of the terminal failed A1 job, using the exact RUN59 repair, original LocalStatement closure, preserved c |
+| `rh-compact-b3-direct-chart-replay-20261127` | queued | | | | |

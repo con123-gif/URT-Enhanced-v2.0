@@ -1,0 +1,27 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "source_build_argv": [
+    "lake",
+    "build",
+    "+New.Columns.LocalStatement:olean"
+  ],
+  "source_build_complete": true,
+  "source_build_result": {
+    "returncode": 0,
+    "seconds": 2614.65,
+    "log": "module_0_build.log"
+  },
+  "source_is_original_before_A1_A2_overlay": true,
+  "archive": "native_a1_a2_original_oleans.tar.zst",
+  "archive_result": {
+    "returncode": 0,
+    "seconds": 3.32,
+    "log": "native_cache_archive.log"
+  },
+  "proof_receipt": false,
+  "full_RH_replay": false,
+  "sha256": "b6f3c3e028582c6d43f415ddfc3fa8ae1e3ba5d1d3ac529020a1606ad601ff03",
+  "bytes": 314621636
+}

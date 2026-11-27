@@ -1,0 +1,148 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: A1 retry/audit not accepted; original check remains separate",
+  "returncode": 1,
+  "wall_s": 2758.7,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN61_A1_REPLAY.py\", line 116, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN61_A1_REPLAY.py\", line 112, in main\n    native.require(accepted, \"A1 retry/audit not accepted; original check remains separate\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: A1 retry/audit not accepted; original check remains separate\n",
+  "id": "rh-compact-a1-repair-graph-20261127",
+  "question": "Distinct retry of the terminal failed A1 job, using the exact RUN59 repair, original LocalStatement closure, preserved cache, four checked declarations, eight-root strict graph and separate bounded scan/prune, in one unchanged workspace. No A2 overlay, full Main build, or RH claim. Preserve all earlier failed evidence.",
+  "requested_by": "GPT kernel lane; user continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN61_A1_REPLAY.py --out {out}",
+  "utc": "2026-11-27T23:03:55Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "5873eda025025e6db3a47b9cb4319977f40a9dad",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46075703055",
+  "outputs_committed": [
+    {
+      "path": "MarkedTransportRun57.lean",
+      "bytes": 19562,
+      "sha256": "90ecbc0dcabf21061bce180ddbbb5ff7e9603bbb82f41ea5edd6cff241692a93"
+    },
+    {
+      "path": "MarkedTransportRun57_failed_baseline.lean",
+      "bytes": 15788,
+      "sha256": "f92933890d0cc039de2b2138ce9d9dd04f6cd860298a9b62be1e504ed28e0d2c"
+    },
+    {
+      "path": "a1_generate.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "a1_prior_run55/MarkedCallerRun55.lean",
+      "bytes": 18109,
+      "sha256": "b981bd83d12037756d6ca5e58043d718ef2f32b6314d22dbf5039f1417c901ec"
+    },
+    {
+      "path": "a1_prior_run55/preflight.json",
+      "bytes": 182,
+      "sha256": "194566f41c9848f677b4869db315a25488ecfb680336436560892caafbafc165"
+    },
+    {
+      "path": "a1_transport.json",
+      "bytes": 777,
+      "sha256": "e9d64af7b57e533686a6fef9d68d5d01a5935a5abe7d4c1dfe49dd7f9551b57f"
+    },
+    {
+      "path": "a1_transport.log",
+      "bytes": 184,
+      "sha256": "1d3ad3ebd2bc9b1c48fdfc44f9a167da7a60cb098d8875968e27d4fb366e6d6e"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 938,
+      "sha256": "b7f82ac6bf72642248d0cb268ab482e0b314ea9422ee506fd91bdd6c5e4bb70b"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 10369,
+      "sha256": "db65eb01112ef68eb8b794c96144c4a9fac92e2851abdcf7b1e0cb4295c889d9"
+    },
+    {
+      "path": "module_0.log",
+      "bytes": 387,
+      "sha256": "984ae9a936051ebfc15244ec6fb1d3c2246726801d434127b59db5195046c7c1"
+    },
+    {
+      "path": "module_0_build.log",
+      "bytes": 81612,
+      "sha256": "bd969a88cc1bef346e8e5aa249500a90bc064b92d6ad428417898806d0936d99"
+    },
+    {
+      "path": "native_cache_archive.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native_cache_manifest.json",
+      "bytes": 813,
+      "sha256": "b03b8406d92e6a36e54d26875cee90ce35fcdcccb19c9e830705bc43fb98e980"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 312,
+      "sha256": "ca9d7f037e7e73b7346b9c374b847de1fa6eab279f7a4bb5be2d2aeadaffc6d3"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 125,
+      "sha256": "0b1b86b099adcc03dea24f917c91962ee7488bc5908b679b4759b5a10e706eb5"
+    },
+    {
+      "path": "retry_summary.json",
+      "bytes": 126,
+      "sha256": "a96500ae6ba91bc9c466310e7d6c1545566b909b63693650659c77c5c554ba32"
+    },
+    {
+      "path": "targeted_results.json",
+      "bytes": 1789,
+      "sha256": "b5d7ccd24122fe1226d2611b6967c985e3ab0d4fc5d7284002d54b1c5ae6a471"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "native_a1_a2_original_oleans.tar.zst",
+      "bytes": 314621636,
+      "sha256": "b6f3c3e028582c6d43f415ddfc3fa8ae1e3ba5d1d3ac529020a1606ad601ff03"
+    }
+  ]
+}
