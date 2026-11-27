@@ -1,0 +1,189 @@
+import New.Filling.BlockBound
+import Mathlib.Tactic
+
+/-!
+# RUN74 — common-link positivity gives the saturation-index divisibility
+27 November 2026. Human source-matched replacement; Lean certificate prepared,
+not compiled. Credit Levent Alpöge, Luke Sernau, Anthropic collaborators and Claude.
+Original pin leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005;
+latest upstream search 7c4ccbd64d02774b0a5b40a5f923f5b7a18e8abc not adopted.
+Compact pin lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207.
+Mission blob 3dd7cddd2af5fe5e97f8680382fc1b2979b89792; read protocol,
+queue, expansion, AGENTS, continuity, recent lead e9649dc4 and literature
+ed062f15 (distinct Rallis phases). Continue prior lane RUN73 29129d5a and
+integration weighted pair count, blob 328d4c52b541096c472d054fb17f10861aa2b708,
+whose section 2 explicitly retains both index divisibilities.
+No duplication of its weighted colour/scalar summation.
+
+Actual consumer:
+Data.enough_forms -> Data.ramifiedColumns_fill_rows ->
+Fits.exists_translate_finrank_comap_le -> energy_fixingSet_le ->
+energy_le_of_linkEnergy_le -> energy_le_of_level_pairs -> sum_pairWeight_le
+-> tsum_invPowWeight_le_of_codim_le (twice, with different weights).
+Source BlockBound.lean 6c68e80e3b1ea2b7983696716305493a37f2b1fd
+lines 245–292. Definitions in BoxPartition.lean
+53f11966247a892d94cf688e8b366e887a92f641 lines 325–395, 425–429;
+CrudeBoundDefs.lean 0ba0d2532b14c414b9032466b79e10d4d60c3d18
+lines 43–98; StableCells.lean 236a41919b3697e1e30c4be840140f6452642599
+15–32, 69–79; EichlerFlag.lean 3da2606a049a092719b779802cb8ead3af7141ce
+59–63. BoxPartition 76–104 provides block-coordinate and Gram transport.
+
+1. Exact rational geometry, no bounds.
+Use the source V = X ⊕ (X0 ⊕ Ez) ⊕ X*, Gram J = splitGram(Q),
+Q=diag(1,...,1,-N), with X,X* dual isotropic and X0 positive definite.
+Write f for the columns X and z, and use X for their first rho columns' span.
+Fix native labelled terms gamma and y in the SAME class pair, reduction,
+level and common link T=commonLink(gamma,y). Let
+   L = T ∩ ker((frameMiddle gamma)|_X0 ^*),
+exactly BlockBound 251–254, where the map has n=rho+1 output coordinates.
+Its codimension in X0 is <= codim(T)+n by rank-nullity on T;
+no assumption that the map has maximal rank or that T is generic.
+For v∈L, write P(v)=(0,v,0) in V, with the z coordinate zero.
+The kernel condition says (gamma f)^* J P(v)=0, while f^* J P(v)=0
+by construction. Put u=gamma^-1 P(v). Its X* coordinates vanish
+by orthogonality to gamma X, and its z coordinate vanishes by
+orthogonality to gamma z. Thus u=(a,z0,0) with z0∈X0.
+
+By the definition of commonLink, there exists w∈X0 with (v,w)
+in BOTH links. Also (v,z0) lies in link(gamma) by its defining
+image of (X+gamma X)^perp (StableCells 18–24). Subtract in this
+linear space: (0,z0-w)∈link(gamma). Isotropy of the link for
+Q⊕(-Q) implies 0=-(z0-w)^*Q(z0-w). Positive definiteness on
+X0 gives z0=w. Only self-pairing isotropy is used, NOT the converse
+maximal-Lagrangian criterion. This weakens the sufficient geometric
+premise of this local argument; no other link consumer is altered.
+
+Now (v,z0)∈link(y), so by mem_link there are a',b'∈X such that
+y(a',z0,0)=(b',v,0). Therefore the exact equality is
+   y gamma^-1 P(v)-P(v) = b' + y(a-a') ∈ X+yX.           (G1)
+There is no determinant division, estimate, or global injectivity
+assumption in this step. This supplies the rational span claim
+at BlockBound 267–281. For a basis of L, combine the column witnesses
+to a rational matrix w with y gamma^-1 P-P=isotropicFramePair(y) w.
+
+2. Actual integral transport and inner divisibility.
+Set C=classCoord(c), C'=classCoord(c'), k=C gamma C'^-1,
+k'=C y C'^-1, h=k'k^-1 and use actual finite adelic J0=splitGram(latMiddle).
+Let R=O_hat_E. Native classCoord_gram and classCoord_mul_framePair
+give the exact Gram and frame transport. Write Lambda=R^dim(V).
+For every q in the integral image C P(L) (the image of the actual
+primitive sublatticeBasis in the source), q∈Lambda and
+(k f)^* J0 q=0; here k f and k' f are the native frameImage columns,
+with the same fixed basis/scales, not arbitrary rescaled columns.
+
+CongruentTerms means k,k' have the same native reduction. By
+principalLevel_eq_unitaryLevel, (h-I)Lambda ⊆ g Lambda.
+G1 and classCoord_mul_isotropicFramePair give (h-I)q in
+span_Af(X+k'X). Hence
+   n_q = (q-hq)/g ∈ Sat(k') := Lambda ∩ span_Af(X+k'X).
+This uses g as the nonzero finite idele in the original statement,
+and is integral because of principal-level congruence, not because
+the rational coefficients w are integral.
+
+Let F(t)=(k' f)^* J0 t. Since h is k' k^-1 and k,k' are isometries,
+   F(hq)=(k f)^* J0 q=0.
+Consequently exact cancellation BEFORE any index comparison gives
+                    F(q)=g F(n_q).                     (G2)
+This is the source's negative (h-I)/g witness in lines 282–292.
+In particular M=F(C P(L)_integral) lies in g F(Sat(k')).
+
+Let A=R-span(isotropicFramePair(k')), the lattice generated by X
+and k'X, and B=R-span(xRows Z(k'))^*, Z the native frameGram.
+Pairing k'f with k'X gives zero, and pairing it with X gives B
+by the definition of frameGram (BoxPartition 313–349).
+Thus F(A)=B, and A⊆Sat(k'). Taking finite additive quotients,
+   M/(M∩gB) injects into gF(Sat(k'))/gB
+       ≅ F(Sat(k'))/B, a quotient of Sat(k')/A.
+It follows exactly that
+   frameValueIndex(c,k',g,L) | saturationIndex(k').      (G3)
+This uses only the finite index of Sat/A (the native nonzero index
+supplier one_le_xRowsIndex_and_saturationIndex), not equality of
+ranks of its image under F, and not the assumption that M⊆B.
+If an image is zero, its quotient has cardinality one; the
+divisibility remains valid. Finite additive group quotient orders
+give the divisibility, no prime-by-prime approximations.
+The actual frameValueIndex at BoxPartition 335–337 is precisely
+the index of M modulo M∩gB; all bases here are the source bases.
+
+3. Outer divisibility, separate from common-link positivity.
+For the fixed gamma define M=F_gamma(C P(T)_integral),
+B=colLattice(xRows Z(k))^*. Then
+  [M:M∩gB]=[M:M∩B] [M∩B:M∩gB]
+              | [M:M∩B] [B:gB].
+The last factor is [R:gR]^min(j,rho), by the native first-row
+sublattice inclusion with finite positive xRowsIndex, the
+submoduleIndex_gIdele_smul lemma (BlockBound 222–226), and the
+native full-rank leading-minor/preimage-lattice index comparison.
+Retain those first-row lattice/index inputs: this does not claim
+that arbitrary integral row sets have rank min(j,rho).
+Thus the actual outer weight G_j o(gamma,T) is divisible by
+frameValueIndex(c,k,g,T), as required at BlockBound 246–250.
+The inner application consumes G3 with codimension i+n; the
+outer uses this index product at i. Neither needs to bound
+each local prime separately. Both conditional divisibilities
+now have human derivations at the exact paired-term consumer.
+
+4. Frontier and verification.
+The remaining primitive suppliers for this branch are the
+first middle-row lift exists_frameImage_toRows₂_eq_add at
+BlockBound 164–170 (RUN73 retains it), the lattice-discriminant
+sum at 18–76 (and its sublatticeDisc supplier), and the
+normal-form, finite-level, first-row rank, primitive-basis and
+pointwise classGauge bounds. Do not replace them by the scalar
+pair-weight summation. The lead's new Rallis phase proof is
+separate; its finite dual-datum cutoff remains its own obligation.
+Local context cache: same compact source pin; fixed c,c',s,t,j,T,
+gamma; restricted L above; variable y in the SAME congruent fibre.
+No claimed native edge deletion. Original and reduced global
+graphs, unresolved obligations and axiom evidence untouched.
+No native Lean/lake/elan found on local PATH; rh_scan/rh_prune,
+rh_reduce/rh_auto/rh_auto_frontier not executed in this run.
+Prepared scalar/linear certificates below are NOT compiled.
+Re-read research-state status receipts for 45577239749 and
+45576756833: historical pass, conditional root and bounded graph.
+45803534769 workflow jobs success but actual compute status
+a56e2d3afb99ed8275e81fd63c8494306e57c43f is error; current attempt
+to fetch targeted_results.json returned 404, so no fresh module
+level verification asserted. No new CI pass, full RH replay,
+or completion claimed. No import of Main.riemannHypothesis.
+
+RESUME HERE: derive the actual middle-row lift from its supplier
+exists_frameImage_toRows₂_eq_add, preserving integrality and
+class-unipotent stabilizer. Then sum_latticeDisc_inv_le 18–76
+via sublatticeDisc_mul_index_sq_le and classIntegral_sum.
+HANDOFF TO integration/editor/independent audit/native runner:
+use G1–G3 at the inner weighted count, keep original graph until
+replay, and coordinate the distinct Rallis finite cutoff.
+-/
+
+namespace RHPositivityRun74
+
+-- Exact pairing transport G2: no division inside the linear map.
+theorem pairing_transport {R V W : Type*} [CommRing R]
+    [AddCommGroup V] [Module R V] [AddCommGroup W] [Module R W]
+    (F : V →ₗ[R] W) (q hq n : V) (g : R)
+    (hd : q - hq = g • n) (hz : F hq = 0) :
+    F q = g • F n := by
+  have he := congrArg F hd
+  simpa only [map_sub, map_smul, hz, sub_zero] using he
+
+-- Positivity uniqueness in the exact difference-vector step;
+-- assumes only that the form is strictly positive on nonzero vectors.
+theorem positive_difference {V : Type*} [AddGroup V]
+    (Q : V → ℝ) (u v : V)
+    (hQ : ∀ x, x ≠ 0 → 0 < Q x) (hz : Q (u - v) = 0) :
+    u = v := by
+  apply sub_eq_zero.mp
+  by_contra h
+  have hp := hQ (u - v) h
+  rw [hz] at hp
+  exact (lt_irrefl 0) hp
+
+end RHPositivityRun74
+
+#check Filling.sum_pairWeight_le
+#check Filling.tsum_invPowWeight_le_of_codim_le
+#check Filling.submoduleIndex_gIdele_smul
+#print axioms RHPositivityRun74.pairing_transport
+#print axioms RHPositivityRun74.positive_difference
+#print axioms Filling.sum_pairWeight_le
