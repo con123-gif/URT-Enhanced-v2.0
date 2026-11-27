@@ -3679,3 +3679,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 320
 requested_by = "GPT, user continuous-work directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-a1-repair-graph-20261127"
+question = "Distinct retry of the terminal failed A1 job, using the exact RUN59 repair, original LocalStatement closure, preserved cache, four checked declarations, eight-root strict graph and separate bounded scan/prune, in one unchanged workspace. No A2 overlay, full Main build, or RH claim. Preserve all earlier failed evidence."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN61_A1_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT kernel lane; user continuation directive 2026-11-27"
+claim = "independent"
