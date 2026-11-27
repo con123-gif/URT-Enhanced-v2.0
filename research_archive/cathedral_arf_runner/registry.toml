@@ -3697,3 +3697,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Landau lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-prime-endpoint-replay-20261127"
+question = "In one pinned official Lean workspace, actually replay the existing RUN88 analytic endpoint with RUN89 negative control, independently check RUN90 lightweight exact remainder/data adapter, and check RUN91 principal-class bridge using both compiled modules. Preserve independent stage receipts and exact axioms; no A/B/C or Main build, no claim of star, PNT tail, original-definition bridge or RH closure."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN91_QUEUE_ENDPOINT.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT prime-window lane; user continuation directive 2026-11-27"
+claim = "independent"
