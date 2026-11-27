@@ -51,6 +51,19 @@ A2 receipts are independent. All root obligations and original graphs
 retained. HANDOFF TO integration, acceleration, theta, prime, audit.
 RH/star OPEN.
 """
+# RUN60, 27 Nov: current live wrapper is deliberately retargeted, not a new
+# build job. Earlier immutable RUN57 failure remains at run 46023465491.
+# Mission/spine/ledger: 3adc76221a978016e3505cdf3e36ad688354d7d7 /
+# 24b10d71aff1d6d8075e7629a1710c1b0cc7a969 / c40f1debc6872fb9e1f080a90c39d94e0b1caffe.
+# No fresh native receipt or original-cache manifest available at inspection.
+# The repaired source and unchanged guard suffix were compared against the
+# actual failed compiler input (all caller proof text except explicit scalar
+# ring is identical). No new premises. Preserve failed source and audit roster.
+# RESUME HERE: on the next authorized shared original build/cache reuse, read
+# a1_transport.json and actual log, requiring generated_blob == REPAIRED_BLOB.
+# If accepted, run RUN58 strict graph and native scan/prune; otherwise repair
+# the first concrete diagnostic. Do not register another full-build job.
+# HANDOFF TO integration, acceleration, theta, audit. A1/Star/RH OPEN.
 import hashlib
 import json
 import pathlib
@@ -65,6 +78,9 @@ native = a2.native
 
 PRIOR = HERE / "RUN55_MARKED_ACTUAL_CONSUMER_REPLAY.mjs"
 PRIOR_BLOB = "af53b153fee150d720216617314adb79de17e3fb"
+FAILED_BLOB = "bacc8d571342525149fb6eba8f062568988ce0d2"
+REPAIRED = HERE / "RUN59_A1_ELAB_REPAIR.lean"
+REPAIRED_BLOB = "0b809db534349fdf6b5d179365a6045f28d7dc7c"
 A2_FILE = SWARM / "specialists/on_acceleration/compact/RUN79_A2_CALLER_REPLAY.py"
 A2_BLOB = "12ae5cce16d4070717dcbabec9c279c372552595"
 STAGE2 = A2_FILE.with_name("RUN81_A2_GENERAL_CALLER_SPLICE.mjs")
@@ -220,8 +236,25 @@ def a1_run(step, cwd, env, out):
         require(rejected == 4, "source boundary controls failed")
         state["negative_controls_rejected"] = rejected
         target = out/"MarkedTransportRun57.lean"
-        target.write_text(leaf+"\n"+GUARDS)
+        # Retain the exact failed baseline, but never compile it as the repair.
+        baseline = out/"MarkedTransportRun57_failed_baseline.lean"
+        baseline.write_text(leaf+"\n"+GUARDS)
+        check_blob(baseline, FAILED_BLOB)
+        state["failed_baseline_blob"] = FAILED_BLOB
+        check_blob(REPAIRED, REPAIRED_BLOB)
+        repaired = REPAIRED.read_bytes()
+        marker = b"set_option pp.fullNames true"
+        prior_bytes = baseline.read_bytes()
+        require(prior_bytes.count(marker) == repaired.count(marker) == 1,
+                "A1 audit boundary mismatch")
+        require(prior_bytes.split(marker,1)[1] == repaired.split(marker,1)[1],
+                "A1 original transport and audit guards changed")
+        # RUN58 consumes this exact filename and receipt field.
+        target.write_bytes(repaired)
         state["generated_blob"] = native.git_blob(target.read_bytes())
+        require(state["generated_blob"] == REPAIRED_BLOB,
+                "A1 compiled candidate is not RUN59 repair")
+        state["repair_source"] = REPAIRED.name
         save()
         log = out/"a1_transport.log"
         state["steps"]["transport"] = step(
