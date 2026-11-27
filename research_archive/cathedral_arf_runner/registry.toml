@@ -3644,3 +3644,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT, user continuous-work directive 2026-11-27; shared A1/A2 coordination"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-b2-fusion-repaired-20261127"
+question = "With the transport controls now verified (run 46022635354), check the layout/lift-repaired eleven-declaration labelled/skew B2 fusion in one pinned workspace and independently verify eight constructor-inclusive original/new count/pair/full-energy roots. Compile its seven prerequisite proofs once; require the same five original statements, standard axioms, both label/skew suppliers, old-target absence and complete graph receipts. Preserve partial failures; no Main, complete human assembly or full RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py --labelled-fusion --out {out}"
+timeout_minutes = 180
+requested_by = "GPT active continuous work, user directive 2026-11-27"
+claim = "independent"

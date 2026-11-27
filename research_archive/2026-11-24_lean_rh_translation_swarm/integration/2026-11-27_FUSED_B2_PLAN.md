@@ -121,3 +121,11 @@ including the derived peer input. The negative control requires the exact
 kernel text "declaration type mismatch", verified in Lean/Message.lean.
 Derived fused source 46f4fe6655495d3d6a49ff2199f827fef30e7020: prepared only.
 Run the cheap core-only retry before any further full shared build.
+
+The corrected shared controls have now PASSED, run 46022635354: valid
+transport exit 0 in 0.82 s, no axioms; invalid proof exit 1 in 0.77 s with
+the actual kernel declaration-type mismatch. Aggregate control receipt
+32db9d5ca370a06bd4aa6aca13cc9648e89e2af7. The transport is compatible;
+the eleven-declaration fusion and its complete graph still need execution.
+Use one corrected combined job, `rh-compact-b2-fusion-repaired-20261127`,
+with the current lifted/layout-corrected source and all original guards.
