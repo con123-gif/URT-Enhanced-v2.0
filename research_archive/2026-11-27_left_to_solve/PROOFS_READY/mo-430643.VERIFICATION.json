@@ -1,0 +1,72 @@
+{
+  "run_id": 46077033577,
+  "job_id": 140767069949,
+  "commit": "54caa61c654746cda60ff0b6452dd4a0a33f5ad1",
+  "artifact_id": 15235142221,
+  "artifact_sha256": "c340c7a6051632b3c941b8a7e51914ab360679cd11a9aea4552db54fe805afa4",
+  "digest_matches": true,
+  "public_probe_sha256": "3d7055fdea78a18971a36ab2aa655205b2939e5945d78d2efe26058cf5a18b69",
+  "actual_exit": 0,
+  "error_count": 0,
+  "errors": [],
+  "axioms": [
+    {
+      "theorem": "OMA.MO430643.defect_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.MO430643.full_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.solution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "has_sorryAx": false,
+  "status": "FULL_SOURCE_KERNEL_PASS_ARCHIVED_NOT_OFFICIALLY_ACCEPTED",
+  "byte_checks": {
+    "statement_sha256": "72593373c9c042f35769611ea786a5d2db7041e88fc6328ed0d467338de756b0",
+    "proof_sha256": "d05018f0ec188fd037c397a3ba2c4ff8497c769dbf3a509dcd34652668936460",
+    "probe_sha256": "3d7055fdea78a18971a36ab2aa655205b2939e5945d78d2efe26058cf5a18b69",
+    "entire_literal_statement_embedded": true,
+    "entire_canonical_proof_body_embedded": true,
+    "local_probe_literal_equal_immutable_public": true
+  },
+  "source_and_math_scope_review": "runtime_research/MO430643_FULL_FIRST_INDEPENDENT_AUDIT/SOURCE_SCOPE.json",
+  "primary_prior_scope_audit_commit": "868b5c6d244481ab12af57ad66d0e2965966e96b",
+  "statement_unmodified_check": "Accepted in run46075888504; exact statement SHA72593373 unchanged",
+  "no_priority_or_novelty_claim": true,
+  "official_submission_claim": false,
+  "official_acceptance_claim": false,
+  "auditor": "ChatGPT/Codex (GPT-6; exact serving variant not exposed)",
+  "problem": "mo-430643",
+  "recorded_utc": "2026-11-27T22:36:34.975461+00:00",
+  "lean_version": "4.33.1",
+  "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46077033577",
+  "public_probe_url": "https://github.com/con123-gif/open-math-agents/blob/54caa61c654746cda60ff0b6452dd4a0a33f5ad1/campaign/ProbeMO430643FullThird.lean",
+  "canonical_statement_archive_commit": "ae59fd07aa86994977203750d8c6455d4de5434e",
+  "canonical_proof_archive_commit": "8599909d306b5e040676bc2266a7d66919793bf2",
+  "canonical_statement_git_blob": "e65ee57816b99359470e9a5b5be35d97d3da5c07",
+  "canonical_proof_git_blob": "1edd436a797b5ab5e6cbd1b0712af947e60d3055",
+  "public_archive_readbacks_byte_equal": true,
+  "official_statement_submission": null,
+  "official_proof_submission": null,
+  "official_acceptance": false,
+  "attribution": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex GPT-6; exact serving variant not exposed. Pablo Spiga source and all close primary papers acknowledged.",
+  "remaining_obstruction": "Fresh eligible coordination slot, official statement PR/human registration, then imported-target proof check and official proof submission/acceptance."
+}
