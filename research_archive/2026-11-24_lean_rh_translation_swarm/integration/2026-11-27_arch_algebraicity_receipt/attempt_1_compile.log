@@ -1,0 +1,2 @@
+'c2_isAlgebraic_of_arch' depends on axioms: [propext, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_arch_algebraicity_1/C2ArchAlgebraicity.lean:28:0: error: Archimedean algebraicity lost the actual extension theorem

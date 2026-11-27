@@ -1,0 +1,2 @@
+'c2_isAlgebraic_of_arch' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_ARCH_ALGEBRAICITY: algebraicity from all complex automorphisms; no independent algebraicity premise

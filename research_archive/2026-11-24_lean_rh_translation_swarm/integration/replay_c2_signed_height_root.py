@@ -36,7 +36,17 @@ def main():
     p.add_argument("--source", type=Path,
                    default=Path(__file__).parent / "C2_SIGNED_HEIGHT_ROOT.lean")
     p.add_argument("--seconds", type=int, default=1200)
+    p.add_argument("--module-name", default="C2SignedHeightRoot")
+    p.add_argument("--receipt-name", default="signed_height_root_results.json")
+    p.add_argument("--theorem", action="append")
+    p.add_argument("--guard", action="append")
+    p.add_argument("--scope", default="one global root in actual signed HeightLe")
     a = p.parse_args()
+    native.require(re.fullmatch(r"[A-Za-z_][A-Za-z_0-9]*", a.module_name) is not None,
+                   "Use a single module filename")
+    native.require(Path(a.receipt_name).name == a.receipt_name, "Use a single receipt filename")
+    names = a.theorem or NAMES
+    guards = a.guard or ["C2_SIGNED_HEIGHT_ROOT:"]
     root, base, cache, out = [x.resolve() for x in
                             [a.compact_root, a.base_module_dir, a.build_cache, a.out]]
     cache.mkdir(parents=True, exist_ok=True)
@@ -70,10 +80,11 @@ def main():
     compiler = [a.lean_bin.resolve() / "lean", *opts,
                 "-Ddebug.skipKernelTC=false", "-Dpp.fullNames=true", "-j", "2"]
     state = {"compact": native.PIN, "mathlib": native.MATHLIB,
-             "native_height_source_blob": HEIGHT_SOURCE, "scope": "one global root in actual signed HeightLe",
+             "native_height_source_blob": HEIGHT_SOURCE, "scope": a.scope,
+             "checked_input_module": base_receipt["compiled_module"],
              "new_Lean_execution": False, "full_RH_replay": False,
              "all_requested_checks_ok": False, "original_extensions": []}
-    receipt = out / "signed_height_root_results.json"
+    receipt = out / a.receipt_name
     native.dump(receipt, state)
     cache_file = cache / "original_module_receipts.json"
     cached = json.loads(cache_file.read_text()) if cache_file.exists() else {}
@@ -118,6 +129,9 @@ def main():
             continue
         raw = source.read_bytes()
         blob = native.git_blob(raw)
+        source_copy = out / "original_sources" / (rel + ".lean")
+        source_copy.parent.mkdir(parents=True, exist_ok=True)
+        source_copy.write_bytes(raw)
         if obj.exists():
             record = cached.get(module)
             native.require(record is not None and record["source_blob"] == blob
@@ -129,9 +143,6 @@ def main():
         native.require(shutil.disk_usage(cache).free > 12_000_000,
                        "Insufficient scratch for another original module")
         obj.parent.mkdir(parents=True, exist_ok=True)
-        source_copy = out / "original_sources" / (rel + ".lean")
-        source_copy.parent.mkdir(parents=True, exist_ok=True)
-        source_copy.write_bytes(raw)
         argv = [*compiler, "-R", root / "src", "-o", obj, source]
         log = out / (module + ".log")
         print(json.dumps({"phase": "original_extension", "module": module}), flush=True)
@@ -146,22 +157,27 @@ def main():
         cached[module] = record
         native.dump(cache_file, cached)
         native.dump(receipt, state)
-    proposed = out / "C2SignedHeightRoot.lean"
+    proposed = out / (a.module_name + ".lean")
     proposed.write_bytes(a.source.resolve().read_bytes())
-    argv = [*compiler, "-R", out, "-o", out / "C2SignedHeightRoot.olean", proposed]
+    code = re.sub(r"/-.*?-/", "", proposed.read_text(), flags=re.S)
+    code = re.sub(r"--[^\n]*", "", code)
+    native.require(not re.search(r"\b(sorry|admit|axiom)\b", code), "Unproved proposed source")
+    native.require(all("#print axioms " + name in code for name in names),
+                   "Missing a requested axiom report")
+    argv = [*compiler, "-R", out, "-o", out / (a.module_name + ".olean"), proposed]
     state.update(source_blob=native.git_blob(proposed.read_bytes()),
-                 theorems=NAMES, argv=list(map(str, argv)))
+                 theorems=names, expected_guards=guards, argv=list(map(str, argv)))
     native.dump(out / "input_manifest.json", state)
-    print(json.dumps({"phase": "C2SignedHeightRoot", "state": "started"}), flush=True)
+    print(json.dumps({"phase": a.module_name, "state": "started"}), flush=True)
     run = native.step(argv, root, env, out / "compile.log", a.seconds)
-    run.update(native.audit(out / "compile.log", NAMES))
-    run["direct_supplier_guards_observed"] = "C2_SIGNED_HEIGHT_ROOT:" in (out / "compile.log").read_text()
+    run.update(native.audit(out / "compile.log", names))
+    run["direct_supplier_guards_observed"] = all(g in (out / "compile.log").read_text() for g in guards)
     good = run["returncode"] == 0 and run["axiom_audit_ok"] is True and run["direct_supplier_guards_observed"]
     state.update(compiler=run, new_Lean_execution=True, all_requested_checks_ok=good)
     if good:
-        obj = out / "C2SignedHeightRoot.olean"
-        state["compiled_module"] = {"name": "C2SignedHeightRoot", "bytes": obj.stat().st_size,
-                                    "sha256": digest(obj)}
+        obj = out / (a.module_name + ".olean")
+        state["compiled_module"] = {"name": a.module_name, "artifacts": [{
+            "name": obj.name, "bytes": obj.stat().st_size, "sha256": digest(obj)}]}
     native.dump(receipt, state)
     print(json.dumps({"all_requested_checks_ok": good, "full_RH_replay": False}), flush=True)
     native.require(good, "Height-root proof failed; preserve the exact source and log")
