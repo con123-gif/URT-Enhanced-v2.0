@@ -25,6 +25,12 @@ M>2r. Write H=U(T)(A_F), [H]=U(T)(F)\H, with the native quotient
 measure and finite positive volume V. Let X be the native reproducing
 Banach model on Hom(S,T). Its norm is the L1 norm of its coefficient
 function; it is not being identified with a classical Schwartz norm.
+To avoid a native notation trap, write c_f(Y) for that underlying
+Model coefficient. The source also equips Space data with a DIFFERENT
+point evaluation, f(Y)=theta(rho(Y)f). Our L1 norm and reproducing
+integrals use c_f; occurrences of e(Y) in the Fourier/projector
+calculation mean vacuumFn(Y), the Model coefficient of e. They
+do not mean the Space point evaluation of its vacuum.
 For every rational maximal isotropic L in S let E_L be the SAME
 source zero-term functional, and let theta be the SAME normalized
 native theta functional. The conclusion needed at the caller is
@@ -285,7 +291,7 @@ Apply the same argument to the complete splitting defining ANY
 rational L. Reproduction in the native norm gives, for every f,
 
 \[
- f=\int f(Y)\rho(Y)e\,d\mu(Y),\qquad
+ f=\int c_f(Y)\rho(Y)e\,d\mu(Y),\qquad
  |E_L(f)|\le\|f\|_X\sup_Y|E_L\rho(Y)e|
              =\|f\|_X|E_L(e)|.
 \]
@@ -297,7 +303,7 @@ Consequently
 \]
 
 There is no extra constant depending on L. Reproduction has the
-native coefficient f(Y), and its norm is exactly integral |f(Y)|.
+native coefficient c_f(Y), and its norm is exactly integral |c_f(Y)|.
 
 ## 5. Rational theta invariance fixes the only needed phases
 

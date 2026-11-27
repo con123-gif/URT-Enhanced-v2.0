@@ -214,3 +214,36 @@ e746daab and existing verify_compact_primitive_receipt.py executed:
 16 committed outputs authenticated, six named native checks and
 A timeout, overall false, no new Lean execution. The latest
 main and appendices now record both scopes exactly.
+
+Next dependency derived after the convergence/graph integration
+commit a4bb5084e0d5e350915b795ae642b8045dfb9526:
+`2026-11-27_COMPACT_DOUBLING_PHASE_AND_GRAPH_PAIRING.md`.
+One normalized theta pairing gives the product/negation unit
+phases, a proof-only doubled datum with exact theta product,
+and the exact graph coefficient with delta^-1 by additive
+quotient averaging. Every external lift, f,f',form,row unchanged.
+It avoids requiring the separate canonical tensor phase a=1
+for the final Rallis conclusion. Retains precise all-adelic
+sign-change Weil law, block covariance and finite cutoff.
+Source PairDefs/SpaceOperations/PairSumNegation reread. Important
+notation audit: underlying Model coefficient c_f controls L1
+norm/reproduction; Space FunLike is theta(rho(Y)f), different.
+The common bridge now explicitly distinguishes them.
+
+RESUME HERE: inspect PairSumNegation.weilMultiplier_neg and its
+finite Gauss/complementary-real-minor inputs, then the exact
+dual-datum multiplier at CharacterLiftNorm/TriangleArrows.
+Do not rederive already supplied normalized theta pairing,
+vacuum peak, positive majorant or graph scalar. Independent
+review of those new proofs is still outstanding.
+
+Additional latest contribution read in full: structure RUN77,
+a4953d93, RUN77_SIEGEL_WEIL_POLARIZATION_TRACE.md. It uses the
+CANONICAL base trace character psi_F^0 and polarized coordinate
+C2=-2jB, while our bridge uses psi_F=psi_E|A_F=psi_F^0(2*) and
+C1=-jB. These are different coordinate/character conventions:
+C2=2C1. Both preserve the rational translation lattice and its
+zero, but their displayed Fourier/Weyl generators must not be
+spliced without that conversion. The independently checked
+1ae8974a audit explicitly confirms our convention. No new
+convergence or full-bridge audit is inferred from RUN77.
