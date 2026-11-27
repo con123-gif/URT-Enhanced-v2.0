@@ -1,0 +1,21 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_fixed_line_2/C2DeterminantFixedLine.lean:42:2: error: Type mismatch: After simplification, term
+  H
+ has type
+  ((fockPairing ℂ) P) (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)) *
+      M
+        (∏ τ,
+          ((Matrix.map 1 ⇑MvPolynomial.C).det * (Matrix.of fun i k ↦ MvPolynomial.X (τ, i, k)).det) ^
+            Fintype.card (ι τ)) =
+    M P *
+      ((fockPairing ℂ) (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)))
+        (∏ τ,
+          ((Matrix.map 1 ⇑MvPolynomial.C).det * (Matrix.of fun x2 x3 ↦ MvPolynomial.X (τ, x2, x3)).det) ^
+            Fintype.card (ι τ))
+but is expected to have type
+  ((fockPairing ℂ) P) (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)) *
+      M (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)) =
+    M P *
+      ((fockPairing ℂ) (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)))
+        (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ))
+'c2_det_polynomial_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_fixed_line_2/C2DeterminantFixedLine.lean:46:0: error: Fixed-line polynomial proof lost its retained Fischer supplier

@@ -31,7 +31,7 @@ lemma c2_det_polynomial_line
       M P * fockPairing ℂ (c2_det_poly (n := n) ι) (c2_det_poly (n := n) ι) := by
   classical
   have hId : (1 : Matrix n n ℂ).map
-      (algebraMap ℂ (MvPolynomial (InfinitePlace E × n × n) ℂ)) = 1 := by
+      (MvPolynomial.C : ℂ →+* MvPolynomial (InfinitePlace E × n × n) ℂ) = 1 := by
     ext i j
     simp [Matrix.one_apply]
   have H := fockPairing_polarisation

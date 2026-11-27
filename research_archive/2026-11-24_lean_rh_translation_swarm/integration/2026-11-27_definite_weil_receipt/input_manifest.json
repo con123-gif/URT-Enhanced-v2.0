@@ -1,0 +1,41 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+  "checked_input_module": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035576,
+        "sha256": "9ee60a0ff16a5f1fd6756906e050081de2b0f7afba39334b0534e436b4f46df3"
+      }
+    ]
+  },
+  "checked_interface_dependencies": [],
+  "scope": "Exact definite-square real Weil action and covariance for determinant line; continuous fixed-line proof pending",
+  "theorems": [
+    "c2_definite_weil_polynomial",
+    "c2_weil_polynomial_covariance"
+  ],
+  "full_RH_replay": false,
+  "native_source_build_performed": false,
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000",
+    "-Dpp.fullNames=true",
+    "-Ddebug.skipKernelTC=false",
+    "-j",
+    "2",
+    "-R",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_definite_weil_1",
+    "-o",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_definite_weil_1/C2DeterminantWeilAction.olean",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_definite_weil_1/C2DeterminantWeilAction.lean"
+  ]
+}
