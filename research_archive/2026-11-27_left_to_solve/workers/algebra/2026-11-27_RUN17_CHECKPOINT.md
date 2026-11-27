@@ -9,7 +9,7 @@ Credit: Cornelius Lytollis (`@con123-gif`), assisted by ChatGPT/Codex (exact ser
 - Current upstream at the final check was `GuillaumeBAUD-coder/open-math-agents@51386556d3cff2feb51314f92f65bd9c63d11b7f`. Its `tools/oma.sh` was reread; SHA256 remains `9f3b3925f99012fb30713ccd0509ba4c43e5af4525a9959305793cd05feff6d9`.
 - Formal source: `google-deepmind/formal-conjectures@9097e2f90e66d2f6244209cb1c07f7120d17ec53`, `FormalConjectures/OEIS/113257.lean`, Git blob `b16a1ede6c16e291585fbee8524c977a26228b84`.
 - Verifier: Lean `4.33.1`, Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`; recovered verifier-workflow SHA256 `d1099c4157d07c99be8c23a2d0faec9a865736137f3a71098a89199e8390681f`.
-- Latest campaign ledger reports **3 formally accepted, merged, publicly credited full proofs; 4 full proof/disproof PRs submitted; 25 complete kernel-checked certificates; 0 accepted results certified as original genuinely-open discoveries**. This RUN17 reduction changes none of those counts.
+- Latest campaign ledger at the final post-publish reconciliation reports **3 formally accepted, merged, publicly credited full proofs; 4 full proof/disproof PRs submitted; 27 complete kernel-checked certificates; 0 accepted results certified as original genuinely-open discoveries**. This RUN17 reduction changes none of those counts.
 - Fresh metadata still had MO198816 proof PR `#10139`, A175784 proof PR `#9618`, and A124869 proof PRs `#10409/#10098` open and unmerged. No duplicate submission was made.
 
 ## Exact target and source audit
