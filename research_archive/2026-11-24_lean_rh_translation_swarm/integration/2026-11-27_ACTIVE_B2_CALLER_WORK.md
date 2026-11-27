@@ -52,9 +52,23 @@ even on cached native targets, repeatedly scanning approximately 9000
 cached external imports. The current builder resolves Lake's environment
 once, verifies the pinned native sources and recompiles their entire
 131-module import closure directly with Lean in order, one at a time,
-using the exact pinned lakefile options. No native source is substituted
-by a cached mathematical claim; this changes scheduling and repeated
-bookkeeping. Its final result remains pending, not a speedup claim.
+using the exact pinned lakefile options. A subsequent cache-enabled local
+attempt records every reused native olean and its SHA256, and does NOT
+claim a fresh replay of those modules. The fresh shared caller job is
+`rh-compact-b2-callers-replay-20261127`; the active worker continues here
+while that independent machine check runs. Results remain pending, with
+no speedup or caller-validation claim yet.
+
+The next actual consumer is now prepared as
+`B2_ACTIVE_ENERGY_REPLACEMENT.lean`: the COMPLETE original
+`Filling.energy_le_of_level_pairs`, replacing only its final occurrence
+of `sum_pairWeight_le` by the active replacement. Its own original
+statement and direct proof dependencies are checked independently.
+The two-fragment energy preflight authenticated both source hashes and
+preserved an assembled input (blob d15c404c18d2efc0aa36a449391b4ebf1750f23a).
+That preflight is not Lean execution. The energy job has NOT yet been
+registered: first inspect the active pair caller result and repair any
+failure, then validate its consumer in the same pinned workspace.
 
 RESUME HERE: finish local BlockBound build; compile the prepared outer
 bridge and new inner/caller file. Preserve every compiler error and

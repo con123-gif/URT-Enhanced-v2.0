@@ -1,0 +1,20 @@
+{
+  "parts": [
+    {
+      "source": "integration/B2_ACTIVE_CALLER_REPLACEMENT.lean",
+      "source_blob": "3bc8e74903dc1455625636ef78a1e7359be0047b"
+    },
+    {
+      "source": "integration/B2_ACTIVE_ENERGY_REPLACEMENT.lean",
+      "source_blob": "f225f568a1a931f45c88e4b92916d0d024b2434d"
+    }
+  ],
+  "original_source_blob": "da67bf862a4c5e72ab6a81a7dfb462545cd8833f",
+  "theorems": [
+    "Filling.b2_active_outer_frameValueIndex_dvd",
+    "Filling.b2_active_outer_count",
+    "Filling.b2_active_inner_frameValueIndex_dvd",
+    "Filling.b2_active_sum_pairWeight_le",
+    "Filling.b2_active_energy_le_of_level_pairs"
+  ]
+}

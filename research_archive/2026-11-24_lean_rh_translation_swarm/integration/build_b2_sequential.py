@@ -5,6 +5,7 @@ Verify the source pin, obtain Lake's pinned environment once, then call Lean
 with the exact lakefile options. Avoid repeated scans of 9000 cached imports.
 """
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -49,6 +50,8 @@ def main():
     p.add_argument("--compact-root", type=Path, required=True)
     p.add_argument("--lean-bin", type=Path, required=True)
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--reuse-existing", action="store_true",
+                   help="Record and reuse existing native oleans; not a fresh native replay")
     args = p.parse_args()
     root, out = args.compact_root.resolve(), args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -82,7 +85,7 @@ def main():
     result = {"compact": PIN, "mathlib": MATHLIB, "order": order,
               "mode": "direct Lean compilation in native import order",
               "lean_options": options, "steps": [],
-              "all_modules_built": False, "full_RH_replay": False}
+              "all_modules_built": False, "reused_native_cache": [], "full_RH_replay": False}
     record = out/"sequential_build.json"
     def save():
         record.write_text(json.dumps(result, indent=2)+"\n")
@@ -103,6 +106,14 @@ def main():
         print(f"[{n}/{len(order)}] {module}", flush=True)
         olean = root/".lake/build/lib/lean"/Path(*module.split("."))
         olean.parent.mkdir(parents=True, exist_ok=True)
+        existing = olean.with_suffix(".olean")
+        if args.reuse_existing and existing.is_file() and existing.stat().st_size > 0:
+            with existing.open("rb") as stream:
+                sha = hashlib.file_digest(stream, "sha256").hexdigest()
+            result["reused_native_cache"].append({"module": module, "artifact_sha256": sha,
+                                                  "recompiled_here": False})
+            save()
+            continue
         command = [str(args.lean_bin/"lean"), *options, "-j", "1", "-R", "src",
                    "-o", str(olean.with_suffix(".olean")),
                    "-i", str(olean.with_suffix(".ilean")), str(files[module].relative_to(root))]
@@ -118,8 +129,13 @@ def main():
         if rc:
             raise SystemExit(f"Native build stopped at {module}: exit {rc}")
     result["all_modules_built"] = True
+    result["fresh_native_replay"] = not result["reused_native_cache"]
     save()
-    print(json.dumps({"native_modules_built": len(order), "full_RH_replay": False}), flush=True)
+    print(json.dumps({"native_modules_available": len(order),
+                      "native_modules_compiled_here": len(result["steps"]),
+                      "cached_native_modules_reused": len(result["reused_native_cache"]),
+                      "fresh_native_replay": result["fresh_native_replay"],
+                      "full_RH_replay": False}), flush=True)
 
 
 if __name__ == "__main__":
