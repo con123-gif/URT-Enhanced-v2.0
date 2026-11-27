@@ -1,0 +1,68 @@
+{
+  "classification": "KNOWN_PRIOR",
+  "genuine_new_solutions_counted": 0,
+  "official_submissions": [],
+  "active_lease": false,
+  "further_repairs_or_verifier_uploads": "stopped at prior exclusion",
+  "source": "https://mathoverflow.net/questions/511647",
+  "prior_report": "https://ayong.web.illinois.edu/ICLUE2026-Bohao-Zhang-report.pdf",
+  "associated_zenodo_record": "https://zenodo.org/records/23655610",
+  "existing_full_check": {
+    "commit": "2bb493217bcebfd8f48d53d1af982746c4a4ac3e",
+    "run": 46058049029,
+    "job": 140705247548,
+    "result": "FAILED: actual compiler errors; OMA.solution includes sorryAx, not a full kernel certificate",
+    "errors": [
+      "2026-11-27T19:39:32.5688283Z CampaignProbe.lean:691:2: error: Type mismatch: After simplification, term",
+      "2026-11-27T19:39:32.5693979Z CampaignProbe.lean:775:32: error(lean.unknownIdentifier): Unknown identifier `map_ite`",
+      "2026-11-27T19:39:32.5694362Z CampaignProbe.lean:785:6: error: unsolved goals",
+      "2026-11-27T19:39:32.5699282Z CampaignProbe.lean:788:4: error: unsolved goals",
+      "2026-11-27T19:39:32.5760878Z CampaignProbe.lean:818:2: error: Tactic `rfl` failed: The left-hand side",
+      "2026-11-27T19:39:32.5763779Z CampaignProbe.lean:909:2: error: Type mismatch: After simplification, term",
+      "2026-11-27T19:39:32.5770561Z CampaignProbe.lean:1006:4: error: mod_cast has type",
+      "2026-11-27T19:39:32.5771608Z CampaignProbe.lean:1007:33: error: Application type mismatch: The argument",
+      "2026-11-27T19:39:32.5777150Z CampaignProbe.lean:1055:2: error: Type mismatch",
+      "2026-11-27T19:39:32.5788066Z CampaignProbe.lean:1062:6: error: Failed to rewrite using equation theorems for `Symmetric.qMatrix`",
+      "2026-11-27T19:39:32.5792572Z CampaignProbe.lean:1091:2: error: Type mismatch: After simplification, term"
+    ],
+    "actual_full_axiom_lines": [
+      "2026-11-27T19:39:32.5801502Z 'OMA.solution' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]"
+    ]
+  },
+  "archived_utc": "2026-11-27T19:41:07.347589+00:00",
+  "sha256": {
+    "FULL_FIRST_CHECK_FAILED.log": "c388bf5df54a44158859d0413612061d5e2985f9ce14a97a6667cac824af8d21",
+    "SCOPE_AUDIT.md": "7dbc01b2c65fe0983408b2418efaee3bec8a9827f9cf11014cb0bbaa4cdf0f8a",
+    "frozen/MO511647PairOrbit.lean": "3fc69a6b5036a66aa3cdb40c447d37c20b98f1aa45b815df9399c1d45cca8cca",
+    "frozen/MO511647Conjugacy.lean": "d5b3d5adbbe962ad602bbb517252c522b66c9507329326995c21a2ed6cab26cb",
+    "frozen/MO511647Bridge.lean": "eb43526b5a1366830e2f8c1608be4668633a6775209fe1e8c32e55ead10104da",
+    "frozen/MO511647_screen.json": "25fabb7843170ff11a24187772b16fd004db20f64caa109542238ce1889a556a",
+    "frozen/MO511647_BRIDGE_FIRST_CHECK.log": "24887ffbe16c41617102dc88b39d4ff97d52250af07f13b91456d6201a129ef1",
+    "frozen/MO511647Main.lean": "9bd5ee52396aa214266e1b18dcadcf63076ba8011b1c346698a25e4cbcb06354",
+    "frozen/MO511647Symmetric.lean": "8737b3f7fc45cb48d953bb6c6b1a359319a3570799307c5939ef52920badd985",
+    "frozen/MO511647_FULL_MANIFEST.json": "bffe649d1ed79c5dbf167479627798c7d75ac5361924ff8d35ae42195e6ce793",
+    "frozen/MO511647Cyclic.lean": "516e29615043086a80f60da1a529ebaa25f57f44f2184a05c44f99144c92d7ad",
+    "frozen/mo511647_proof.lean": "4dd259da905d6892bec91b9cdb3355f499a56d57715ea8d10df984aed12f7703",
+    "frozen/mo511647_statement.lean": "b82ba18d3cf2a4f29050a929c420929decc549219513ee536ea2c85d32d5fcd6",
+    "frozen/MO511647_MATHEMATICAL_PROOF.md": "293a32cbc84744bf1647c5087b76f5016c1426fd081009398b3d6d81e489ddc1",
+    "frozen/MO511647CycleCharpoly.lean": "8ad3de1d4893df652dcd27b640073d08b210bbbaae899e80290b1f1ab7fa1eb6",
+    "frozen/build_mo511647_probe.py": "bc9cf9fc4a8eae189944ae0df0faa05169bf7f1cd2a75fbf2dd94959363384f5",
+    "frozen/MO511647_ALL_HELPERS_SECOND_CHECK.log": "bb53d65b949c8d2dc3f9fe4edd2800438e56e974d60ef202f889645fe2987594",
+    "frozen/MO511647SymmetricCharpoly.lean": "459046ccb86ad9cbe9aeca74a121e28275951a8730a84ed6921e8c035d31f80d",
+    "frozen/MO511647PairPermutation.lean": "de358960e0c91d219420cd08f67fc3ca4bfbdd2f68bdbe9162a731ea7d5eddfd",
+    "frozen/ProbeMO511647Full.lean": "a8f89afc550750afb2c12f3ec32662cb641cf0c846948abde10537f565809a9a",
+    "frozen/MO511647_screen.py": "a0040af02f0e82e6910b40c97bd719c1e55986e045be9230a35d4f35b610dd82"
+  },
+  "final_log_read_utc": "2026-11-27T19:41:35.032217+00:00",
+  "public_archive_policy": "Only our own scope audit, URL/hash/metadata, frozen formalization, mathematical notes, scripts, actual checker logs and status; third-party full source files are outside this directory and must not be uploaded.",
+  "third_party_reference": {
+    "url": "https://ayong.web.illinois.edu/ICLUE2026-Bohao-Zhang-report.pdf",
+    "author": "Bohao Zhang",
+    "pages": 6,
+    "pdf_sha256": "bb21db74761aabb53badd81b5384d27920ba929d9667efa9f69e7abf89bee580",
+    "pdf_md5": "8ec01ae01917a420fa60d69cd1a2c5ae",
+    "pdf_metadata_creation_modification_utc": "2026-10-27T03:29:25Z",
+    "redistribution_license": "not verified; full PDF and extracted text excluded from public archive"
+  },
+  "public_durable_note": "Hashes describe the frozen local original artifacts. Entire combined candidate already publicly frozen at forkcommit2bb493217bcebfd8f48d53d1af982746c4a4ac3e/campaign/ProbeMO511647Full.lean; actual failed log at run46058049029/job140705247548. This metadata upload does not assert that every local frozen helper is copied to this folder."
+}
