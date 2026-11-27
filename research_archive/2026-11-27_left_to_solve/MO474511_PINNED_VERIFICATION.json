@@ -1,0 +1,29 @@
+{
+  "problem_id": "mo-474511",
+  "status": "FULL clean exact-source kernel proof passed; official acceptance pending",
+  "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46049004231",
+  "run_id": 46049004231,
+  "job_id": 140675351404,
+  "checked_UTC": "2026-11-27T18:24:28Z",
+  "commit": "324892e37cfdfdede49c3f90482d30974463dae3",
+  "verified_snapshot": "campaign/ProbeFull474511.lean",
+  "verified_snapshot_git_blob": "0e48eb9ae5fb9d077f0fafab051b8d548672558c",
+  "snapshot_byte_identity": "GitHub snapshot blob equals git hash-object of local full probe exactly.",
+  "full_probe_sha256": "c6b6d7129fabff30cf66c72c1444fe8caba53598d237af989c50698c0109d20d",
+  "statement_sha256": "c523b0b2bd48cba58dec7b1be1be9c4ae1256fdaab233a364250a6c879352dcd",
+  "imported_proof_sha256": "43393d638703bb9a0d4553b5d44f79e3a85487f32f8ef6ad53b97605baa80df8",
+  "theorem": "OMA.solution : type_of% @OMA.S_mo_474511.main",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proof_errors": [],
+  "expected_statement_placeholder": "The inline statement has one intentional placeholder; OMA.solution has no sorryAx dependency.",
+  "Lean": "4.33.1",
+  "formal_conjectures": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "actual_log": "runtime_research/MO474511_FINAL_FULL.log",
+  "official_acceptance_confirmed": false,
+  "next_stage": "Algebra lane owns fresh formalization lease and statement PR preparation; exact imported-target proof submission follows actual registration. Do not count a statement/probe as an accepted proof."
+}
