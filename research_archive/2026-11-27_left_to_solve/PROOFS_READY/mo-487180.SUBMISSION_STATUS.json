@@ -1,0 +1,22 @@
+{
+  "problem": "mo-487180",
+  "kernel_verified": true,
+  "officially_submitted": false,
+  "officially_accepted": false,
+  "claim_attempts": 1,
+  "claim_http": 500,
+  "assignment_returned": false,
+  "desk_calls_stopped": true,
+  "prepared_statement_branch": "oma-mo487180-statement-codex",
+  "prepared_commit": "cf36553dc4bf4e1f38e4f1bf5fe930674146f2dd",
+  "base_upstream_main": "2f6b301d76b634a28795f6954da4069d23ec0901",
+  "diff": [
+    "statements/mo-487180.lean"
+  ],
+  "readback_statement_git_blob": "4d1ed3a5095885562d3dee4d83d926906e4d6393",
+  "canonical_archive_commits": [
+    "2656e92d",
+    "8ac7d694"
+  ],
+  "server_lease_state_after_http500": "Unknown; no credential returned. Do not assume claim did not mutate."
+}
