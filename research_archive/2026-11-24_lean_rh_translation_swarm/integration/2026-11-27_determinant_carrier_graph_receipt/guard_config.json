@@ -1,0 +1,49 @@
+{
+  "pairs": [
+    {
+      "original": "stdClassSum_det_modKernel_eq",
+      "candidate": "c2_stdClassSum_det_modKernel_eq",
+      "required": [
+        "c2_empty_matching",
+        "c2_determinant_exchange",
+        "c2_standard_exchange_uniform",
+        "c2_lift_inverse_determinant",
+        "c2_lift_one_empty_columns",
+        "c2_standard_column_empty",
+        "c2_real_matching_standard",
+        "c2_real_determinant_invariant",
+        "run78_equalRankThetaRatio_value",
+        "RHCharacterBoxes77.exchange_of_standard_pairs",
+        "real_matching",
+        "Space.integral_quotMeasure_eq_classSum"
+      ],
+      "forbidden": [
+        "exchange_of_partners",
+        "exchange_theorem",
+        "explicit_matching",
+        "exists_equalRankThetaRatio_value",
+        "run79_exchange_theorem",
+        "run79_explicit_matching",
+        "run79_stdClassSum_det_modKernel_eq"
+      ]
+    },
+    {
+      "original": "stdClassSum_carrierXi_eq_carrierForm",
+      "candidate": "c2_stdClassSum_carrierXi_eq_carrierForm",
+      "required": [
+        "c2_stdClassSum_det_modKernel_eq",
+        "c2_empty_matching",
+        "c2_determinant_exchange",
+        "c2_real_matching_standard",
+        "run79_explicit_matching",
+        "exchange_of_partners"
+      ],
+      "forbidden": [
+        "stdClassSum_det_modKernel_eq",
+        "run79_stdClassSum_det_modKernel_eq",
+        "run79_stdClassSum_carrierXi_eq_carrierForm",
+        "explicit_matching"
+      ]
+    }
+  ]
+}

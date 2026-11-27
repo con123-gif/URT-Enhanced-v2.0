@@ -1,8 +1,6 @@
 # C2: a checked uniform standard-pair interface
 
-27 November 2026. **One new restricted interface is checked.** This is not
-the original general finite-modulus exchange statement or a completed
-determinant class-sum replacement. RH and root C2 remain OPEN.
+27 November 2026. **The restricted route now reaches the complete original determinant class-sum statement and its Carrier consumer.** Both kernel replays and their complete four-root dependency audit passed. RH and root C2 remain OPEN.
 
 With the original rank, sign, weight and rapidness conditions, one common
 real C and one rapid datum x work for every semilocal tame character:
@@ -90,7 +88,4 @@ The new restricted interface reaches 118,170 declarations against 118,191
 for the general theorem. These are different statements; this comparison
 is not an unchanged-theorem size reduction.
 
-Next: attach the native real_matching specialization and exact rank-zero
-Haar normalization at the original determinant class-sum statement.
-No arbitrary-partner extension is needed by this restricted supplier,
-but the actual consumer attachment still requires its own proof and audit.
+The native real_matching specialization and exact rank-zero Haar normalization are now attached at the complete original determinant class-sum statement. Its kernel replay passed in 64.18 s; the unchanged Carrier statement passed in 90.66 s. The complete four-root audit passed all four independent verifiers and all 35 supplier guards, with zero missing endpoints. The determinant path excludes general exchange and has ten fewer reachable declarations. The Carrier retains its separate general complement branch and grows by 37. Use the [current mathematical proof and exact accepted receipts](2026-11-27_determinant_class_sum_receipt/) and [complete graph evidence](2026-11-27_determinant_carrier_graph_receipt/). The next consumer is the rank-two integral-measure construction in New/Selmer/ValueFamilies; reciprocal height remains open.

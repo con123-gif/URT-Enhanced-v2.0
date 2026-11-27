@@ -13,6 +13,7 @@ Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679.
 |---|---:|---:|---:|---:|
 | Fused B2 count, pair bound and energy chain | 8 | 94,382 | 2,857,836 | 0 |
 | C2 equal-rank, exchange, matching and two Carrier callers | 10 | 119,274 | 3,862,637 | 0 |
+| New restricted determinant route and Carrier transport | 4 | 119,299 | 3,865,789 | 0 |
 
 These counts include Mathlib and structural dependencies. The frontiers
 overlap; adding their counts is not a count of distinct declarations or
@@ -82,10 +83,9 @@ receipts and their exact hashes before accepting a cross-mode claim.
 - [C2 graph manifests, per-root verifier logs and caller guards](2026-11-27_c2_graph_receipt/).
 - [Machine-readable joint audit and per-root dependency counts](2026-11-27_B2_C2_GRAPH_AUDIT_RESULTS.json).
 
-The local declaration counts have not decreased: B2 replacements add
-5–8 reachable declarations; the C2 equal-rank count is unchanged and its
-outer replacements add 13–16. This establishes valid replacement paths,
-not a global proof-size reduction or an established URT speed advantage.
+The earlier B2 replacements add 5–8 reachable declarations; the earlier C2 equal-rank count is unchanged and its outer replacements add 13–16. The newer complete determinant statement has ten fewer reachable declarations (119,088 to 119,078), while its transported Carrier statement adds 37 (119,213 to 119,250). This establishes one local unchanged-statement reduction, not a global proof-size reduction or an established URT speed advantage.
+
+The new four-root audit passed all four independent verifiers and all 35 supplier guards. General exchange and the superseded original determinant suppliers are absent transitively from the new determinant path. The Carrier's separate nonzero-complement branch still consumes run79_explicit_matching and exchange_of_partners. Native inspection took 178.27 s; it is distinct from the two preceding kernel compilations (64.18 s and 90.66 s). [Exact new proof/compilation evidence](2026-11-27_determinant_class_sum_receipt/); [complete graph certificates](2026-11-27_determinant_carrier_graph_receipt/).
 
 The whole human B2 assembly, weighted packing primitives, common C2
 normalizations, nonvanishing, reciprocal signed-height budgets and crude

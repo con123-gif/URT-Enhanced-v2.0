@@ -1,0 +1,26 @@
+{
+  "stdClassSum_det_modKernel_eq": {
+    "exit": 0,
+    "nodes": 119088,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "c2_stdClassSum_det_modKernel_eq": {
+    "exit": 0,
+    "nodes": 119078,
+    "missing": 0,
+    "log": "audit-1.json"
+  },
+  "stdClassSum_carrierXi_eq_carrierForm": {
+    "exit": 0,
+    "nodes": 119213,
+    "missing": 0,
+    "log": "audit-2.json"
+  },
+  "c2_stdClassSum_carrierXi_eq_carrierForm": {
+    "exit": 0,
+    "nodes": 119250,
+    "missing": 0,
+    "log": "audit-3.json"
+  }
+}
