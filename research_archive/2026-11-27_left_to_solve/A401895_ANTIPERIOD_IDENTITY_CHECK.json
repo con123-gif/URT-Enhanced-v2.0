@@ -1,0 +1,32 @@
+{
+  "purpose": "Exact support for the symbolic anti-period identity; not a length search or full A401895 proof.",
+  "checked_h": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "checked_t": [
+    3,
+    5,
+    7
+  ],
+  "exact_identity_instances": 6666,
+  "small_B10_t3_cases": [
+    {
+      "K": 7,
+      "q": 6,
+      "E": 719,
+      "F": 1580
+    },
+    {
+      "K": 8,
+      "q": 7,
+      "E": 236,
+      "F": 1700
+    }
+  ],
+  "result": "All assertions passed",
+  "lean_verification": false,
+  "accepted_full_problem": false
+}
