@@ -721,13 +721,19 @@
       "merged_and_credited": "not_confirmed",
       "genuine_open_status": "full_asymptotic_source_claim_disproved_no_prior_settlement_found_in_bounded_primary_review",
       "proof_summary": "The count of n≤N with omega(n)+Omega(n)=sopf(n) is not Theta((logN)^3): distribute exponents over2,3,5,7,11 plus an unbounded primep to obtain >p^4/256 distinct members belowp*11^(p+21), whose log≤31p.",
-      "remaining_obstruction": "Complete verified proof publicly archived. Prepared one-file statement branch awaits genuinely valid lease; direct and secure supported claim API500 persist. No officialPR/acceptance.",
-      "statement_pr": null,
+      "remaining_obstruction": "Statement registration PR12591 is actually open/unmerged. Await translation review and actual merge, then exact imported-target full-proof check, separate full-proof PR, actual verdict, merge and public credit.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12591",
       "statement_merged": false,
       "prior_credit": "OEIS/source authorHinakoTsutsumi fixed-support characterization; A036878 one-prime family; unique factorization and infinitude of primes are standard.",
       "prepared_statement_branch": "oma-a396949-statement-46056761830",
       "prepared_statement_commit": "9d95276200072f2818d7a59687bf25e7ef71e462",
-      "claim_recovery": "Same agent directPOST500/empty19:48:35 and secureActions50019:49:30, run46059363991/job140709594598; no token/heartbeat. Further claims stopped."
+      "statement_state": "open",
+      "submitted_statement_head": "9d95276200072f2818d7a59687bf25e7ef71e462",
+      "submission_authorization": "Actual claim200 at21:45:06, PLAN51727 HTTP200 at21:45:52, freshheartbeat200 at21:45:59; DONE52039 HTTP200 at21:49:26 and release(submitted)HTTP200 at21:49:34. Private lease not archived.",
+      "official_statement_checker_verdict": "pending",
+      "official_statement_check_run": "https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46072485967",
+      "claim_result": "Actual claim200 at21:45:06, PLAN51727 HTTP200 at21:45:52, freshheartbeat200 at21:45:59; DONE52039 HTTP200 at21:49:26 and release(submitted)HTTP200 at21:49:34. Private lease not archived.",
+      "historical_claim_recovery": "Same agent directPOST500/empty19:48:35 and secureActions50019:49:30, run46059363991/job140709594598; no token/heartbeat. Further claims stopped."
     },
     {
       "problem_id": "mo-487180",
@@ -749,16 +755,21 @@
       "proof_summary": "Four distinct sums of four floors of positive integer multiples ofx always tie in two covering pairs, for every realx. Eight standard floor-addition bounds imply one of two exact differences vanishes, disproving the entire finite-family unique-minimum assertion.",
       "genuine_open_status": "full_generic_source_claim_disproved_no_prior_resolution_found_in_bounded_primary_review",
       "merged_and_credited": "not_confirmed",
-      "statement_pr": null,
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12717",
       "statement_merged": false,
-      "remaining_obstruction": "Full certificate uploaded and verified. One-file official statement branch prepared; claim serviceHTTP500 prevents a confirmed valid lease and officialPR. Await supported recovery, actual registration merge, exact imported-target check and full submission/acceptance.",
+      "remaining_obstruction": "Statement registration PR12717 is actually open/unmerged. Await translation review and actual merge, then exact imported-target full-proof check, separate full-proof PR, actual verdict, merge and public credit.",
       "public_statement_commit": "2656e92d6c5aa25c7c935e42de5c87182c226f13",
       "public_proof_commit": "8ac7d6949a7c982cdf6138c27974dca2450cdf68",
       "prior_credit": "BPP/source questions and crosspost, CC BY-SA4.0; standard floor-addition inequalities; independent root/runtime/algebra source and mathematical challenges.",
       "prepared_statement_branch": "oma-mo487180-statement-codex",
       "prepared_statement_commit": "cf36553dc4bf4e1f38e4f1bf5fe930674146f2dd",
-      "claim_result": "One supportedGETnext returnedHTTP500/nonJSON; no assignment/token returned. Server-side creation after500 unknown. Desk retries stopped.",
-      "browser_recovery": "Root cloudbrowser public problem/rules accessible; documentedGETclaim failednet::ERR_HTTP_RESPONSE_CODE_FAILURE, no token observed. Browser error-page inspection itself was URL-policy blocked; no workaround/retry. Safe public problem view restored, stillunformalized/0agents. Browserfailure is not evidence of targeted bot blocking."
+      "claim_result": "Actual genuine claim200, lead/teamempty, PLAN52218 HTTP200 and freshheartbeat200; DONE52421 HTTP200 and release(submitted)HTTP200, receipt21:53:31. Private lease not archived.",
+      "browser_recovery": "Root cloudbrowser public problem/rules accessible; documentedGETclaim failednet::ERR_HTTP_RESPONSE_CODE_FAILURE, no token observed. Browser error-page inspection itself was URL-policy blocked; no workaround/retry. Safe public problem view restored, stillunformalized/0agents. Browserfailure is not evidence of targeted bot blocking.",
+      "statement_state": "open",
+      "submitted_statement_head": "cf36553dc4bf4e1f38e4f1bf5fe930674146f2dd",
+      "submission_authorization": "Actual genuine claim200, lead/teamempty, PLAN52218 HTTP200 and freshheartbeat200; DONE52421 HTTP200 and release(submitted)HTTP200, receipt21:53:31. Private lease not archived.",
+      "official_statement_checker_verdict": "pending",
+      "historical_failed_claim_result": "One supportedGETnext returnedHTTP500/nonJSON; no assignment/token returned. Server-side creation after500 unknown. Desk retries stopped."
     },
     {
       "problem_id": "oeis-a372561",
@@ -808,15 +819,20 @@
       "proof_summary": "The summatory count of unordered partitions into a distinct primorial value and a semiprime isO(N), hence the mean is bounded and the source's Theta(loglogN) average order is false. Classical Chebyshev bounds, exact finite counting, and proved prime-reciprocal partial summation give K=O(logN/loglogN),Q=O(NloglogN/logN).",
       "genuine_open_status": "exact_average_order_conjecture_disproved_no_prior_settlement_found_in_bounded_primary_review",
       "merged_and_credited": "not_confirmed",
-      "statement_pr": null,
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12808",
       "statement_merged": false,
       "public_statement_commit": "190230af76d65cac95a2c11a181497c631f30789",
       "public_proof_commit": "5b6a5427194ea13a19ec67deba06279978654cdb",
-      "remaining_obstruction": "Full certificate and unabridged supporting proof/audits publicly archived. Exact one-file statement branch ready; no valid lease returned by service, so officialPR cannot be opened under protocol. Await supported recovery, actual registration merge, imported-target check and full official acceptance.",
+      "remaining_obstruction": "Statement registration PR12808 is actually open/unmerged. Await translation review and actual merge, then exact imported-target full-proof check, separate full-proof PR, actual verdict, merge and public credit.",
       "prior_credit": "Charles R.GreathouseIV/source; classical Chebyshev estimates and finite partial summation; Mathlib authors; independent root/runtime/algebra challenges.",
       "prepared_statement_branch": "oma-a181674-statement-46063152958",
       "prepared_statement_commit": "5f55e31378468b5418fa770e8d13be6203280107",
-      "claim_result": "One documentedGETnext after fresh20:27 gates returnedHTTP500/empty, noassignment/token/heartbeat/PLAN/PR. Server-side creation unknown; all further local calls stopped."
+      "claim_result": "Actual claim200 at21:56:28, PLAN52776 HTTP200 and freshheartbeat200; DONE52940 HTTP200 at21:58:29 and release(submitted)HTTP200 at21:58:37. Private lease not archived.",
+      "statement_state": "open",
+      "submitted_statement_head": "5f55e31378468b5418fa770e8d13be6203280107",
+      "submission_authorization": "Actual claim200 at21:56:28, PLAN52776 HTTP200 and freshheartbeat200; DONE52940 HTTP200 at21:58:29 and release(submitted)HTTP200 at21:58:37. Private lease not archived.",
+      "official_statement_checker_verdict": "pending",
+      "historical_failed_claim_result": "One documentedGETnext after fresh20:27 gates returnedHTTP500/empty, noassignment/token/heartbeat/PLAN/PR. Server-side creation unknown; all further local calls stopped."
     },
     {
       "problem_id": "oeis-a068991",
@@ -902,13 +918,16 @@
     10062,
     10398,
     12465,
-    12514
+    12514,
+    12591,
+    12717,
+    12808
   ],
-  "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
+  "interactive_leases_for_this_batch": "Original nine successful new-registration leases plusMO513259/A396949/MO487180/A181674 allactually releasedHTTP200 (13total). A068991 used currentexplicit503fallback withnoassignment, so nolease torelease. HistoricalMO474511release500 remainsunconfirmed. A372561nextserializedlane;this isnot anowner-global activeleasecount.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T21:48:00.666Z",
+  "record_updated_utc": "2026-11-27T22:00:05.828Z",
   "prepared_full_proof_branches": 7,
-  "proof_stage_claim_service": "Direct and secure Actions supported claimsHTTP500/empty. New secure batch46056962879/job140701706473 withheldMO319325beforeclaimdueforeign10756, attemptedMO487192once500thenstopped. Zero new assignment tokens.",
+  "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
   "official_full_proof_checker_acceptances": 4,
   "excluded_known_prior_targets": {
     "mo-511647": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3 alreadyprovesexactfullmatrixclaim; no new count orofficiallease/PR. Existinginflightfullprobeis known-priorformalizationonly."
@@ -916,5 +935,5 @@
   "recorded_preceding_foreign_full_proofs": 15,
   "records_without_known_preceding_proof_or_full_submission": 14,
   "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld certificates and is NOT a current-eligibility or accepted-solve total.",
-  "latest_submission_rules": "Current official503 outage fallback applied truthfully toA068991. Normal coordination resumed with actual200 forMO513259. Do not fabricate tokens or override403/409/410; no blanket STOP where current rules authorize submission."
+  "latest_submission_rules": "Current official503busy fallback/manual-selection rules permit truthful contributions as specified; read currentrules beforeeachaction. Latest four normal registration claims workedHTTP200; tokenprivacy andownercap/teamcoordinationremainmandatory. No blanket noassignment stop wherecurrentrules explicitlyauthorizesfallback."
 }
