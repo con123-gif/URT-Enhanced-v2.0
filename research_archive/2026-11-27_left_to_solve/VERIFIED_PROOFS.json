@@ -1,0 +1,250 @@
+{
+  "date": "2026-11-27",
+  "confirmed_merged_accepted": 0,
+  "target_minimum": 20,
+  "full_proof_submissions": 3,
+  "complete_kernel_checked_candidates": 14,
+  "records": [
+    {
+      "problem_id": "oeis-a180195",
+      "exact_statement": "PROOFS_READY/oeis-a180195.statement.lean",
+      "proof": "PROOFS_READY/oeis-a180195.proof.lean",
+      "statement_sha256": "5e5c13ffa7081c0677061b2c15291641741c49d984b7951eba5e27ecb60c4092",
+      "proof_sha256": "bc8fe49b31eb568a6a4d9573b027e48fec0df54ed18fd21735d2c5a3f7c90cc4",
+      "verification_run": "https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46021728128",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "official_imported_target_kernel_accepted",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7463",
+      "full_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7724",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full alternating-factorial recurrence; exact adjacent-sum cancellation."
+    },
+    {
+      "problem_id": "oeis-a002538",
+      "exact_statement": "PROOFS_READY/oeis-a002538.statement.lean",
+      "proof": "PROOFS_READY/oeis-a002538.proof.lean",
+      "statement_sha256": "43941f188e9e905bbfa32bdfc17f58a6f2248253e84d5eba4b0bc4e8c110dd9c",
+      "proof_sha256": "68cabb325eaca5f8149d689ffe6313bba68f596c0fbbf4b3d294904a5469d69d",
+      "verification_run": "https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46022873588",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "official_imported_target_kernel_accepted",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7462",
+      "full_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7815",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full Eulerian recurrence from the independent first-order definition."
+    },
+    {
+      "problem_id": "oeis-a158960",
+      "exact_statement": "PROOFS_READY/oeis-a158960.statement.lean",
+      "proof": "PROOFS_READY/oeis-a158960.proof.lean",
+      "statement_sha256": "aa6d297f32a274c596e92e38c2089437c40731a1a21b67d2ba855c59531f45bf",
+      "proof_sha256": "3cb0666350a5528f875fe30c2d9227c91b98719d24573d7dd210f71ad1c3689e",
+      "verification_run": "https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46022888332",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "official_imported_target_kernel_accepted",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7460",
+      "full_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7817",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "All physicists' Hermite H_n(1/5) denominators equal5^n."
+    },
+    {
+      "problem_id": "mo-290383",
+      "exact_statement": "PROOFS_READY/mo-290383.statement.lean",
+      "proof": "PROOFS_READY/mo-290383.proof.lean",
+      "statement_sha256": "1b1913ddad2c6408baa83fbb5a2109bf2ca04ebb9ff685e920a65f127454bffa",
+      "proof_sha256": "3e56f81201b28b50e7480848c547df4e6eaba36bbedd7f5e80a45d14d3076318",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46013634735",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7223",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full rank-decomposition claim disproved by the2x2 identity."
+    },
+    {
+      "problem_id": "mo-466218",
+      "exact_statement": "PROOFS_READY/mo-466218.statement.lean",
+      "proof": "PROOFS_READY/mo-466218.proof.lean",
+      "statement_sha256": "d71d230e7cb0f076604762f36c1fc50cd90135e8f6fdd03230525dbc4488bf7b",
+      "proof_sha256": "995229b4d96fba68a737f77c007bbba53b0dccf9c5cdd5d30fb189fb8cfee6c2",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46018427122",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7625",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full resolvent diagonal inequality by the finite maximum principle."
+    },
+    {
+      "problem_id": "oeis-a081670",
+      "exact_statement": "PROOFS_READY/oeis-a081670.statement.lean",
+      "proof": "PROOFS_READY/oeis-a081670.proof.lean",
+      "statement_sha256": "51fef6d7f85409c61288394a1f7568758d4860120f6d0c76177b17d08dc6cf39",
+      "proof_sha256": "e98c70da9fc98e34b5dd3de32cf4d58e2db1e87735827089a4d9e2c4d7840166",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46018427122",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7865",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Complete central-binomial/geometric recurrence at every required index."
+    },
+    {
+      "problem_id": "oeis-a052204",
+      "exact_statement": "PROOFS_READY/oeis-a052204.statement.lean",
+      "proof": "PROOFS_READY/oeis-a052204.proof.lean",
+      "statement_sha256": "9ee595617e99d1a6b3ec2f69b0a3cb1cded5ccc3e05071735bc9e6db8c22eb58",
+      "proof_sha256": "0dc4ca5cf9069710a044a7d2e3042cf72ccb26ecd94dac075a0e4e2aabdf3e31",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46023392462",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7930",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full factorial-ratio recurrence by exact linear combination."
+    },
+    {
+      "problem_id": "oeis-a175784",
+      "exact_statement": "PROOFS_READY/oeis-a175784.statement.lean",
+      "proof": "PROOFS_READY/oeis-a175784.proof.lean",
+      "statement_sha256": "0b71f3503b493fce12d47dca087fb528e1c172397d55c6161a08bc6f622b2356",
+      "proof_sha256": "1376feaa57348e962f13c9b0e31e70afaec99c8647c3bfcb935d9a47a0b28a7a",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46023392462",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7931",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "All3claims: numerator formula, recurrence and complete generating function."
+    },
+    {
+      "problem_id": "oeis-a193282",
+      "exact_statement": "PROOFS_READY/oeis-a193282.statement.lean",
+      "proof": "PROOFS_READY/oeis-a193282.proof.lean",
+      "statement_sha256": "1ea30c038932ecc2c49351de0cd4143e9812333b3832f930a24588546e698452",
+      "proof_sha256": "96e83cea015c643b4697e16cb0039996706eecdbdc0e4896d74709a7d528d0b6",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46023392462",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7933",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full five-term factorial-square recurrence, both parities."
+    },
+    {
+      "problem_id": "oeis-a124870",
+      "exact_statement": "PROOFS_READY/oeis-a124870.statement.lean",
+      "proof": "PROOFS_READY/oeis-a124870.proof.lean",
+      "statement_sha256": "63b4adfc394d5509632cb052f5ea01ce3d7d72e5f2ff8a29c0996ede1050768c",
+      "proof_sha256": "ef55430834ca12d817fec6f266b05ef85d429c0719b48aeda55a31a7999eda9d",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46029987618",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8442",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Both Gaussian denominator conjectures, including every GF coefficient."
+    },
+    {
+      "problem_id": "oeis-a124869",
+      "exact_statement": "PROOFS_READY/oeis-a124869.statement.lean",
+      "proof": "PROOFS_READY/oeis-a124869.proof.lean",
+      "statement_sha256": "bbb918222020dac420ad5ac0b6603058dc98262e2f282a23ca1a4ea3b3f95a44",
+      "proof_sha256": "a9d747f4bfcfe7fc0d490a326ba30d34181ad01981b4b2a4dd0935a825b13f13",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46031012204",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8569",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Both Gaussian numerator conjectures; exceptional initial residue retained."
+    },
+    {
+      "problem_id": "mo-198816",
+      "exact_statement": "PROOFS_READY/mo-198816.statement.lean",
+      "proof": "PROOFS_READY/mo-198816.proof.lean",
+      "statement_sha256": "802ccabadae6279954d8171d12d97eb29bbd11e60d7fd5d78bc8f33aaddfe8be",
+      "proof_sha256": "e621cf7f5b2028b4f9b39b114ffd3a226be386133f3f3f835bef10b320720a1e",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46031510476",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8568",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Exact13x13 stochastic-matrix counterexample; all source hypotheses."
+    },
+    {
+      "problem_id": "mo-298064",
+      "exact_statement": "PROOFS_READY/mo-298064.statement.lean",
+      "proof": "PROOFS_READY/mo-298064.proof.lean",
+      "statement_sha256": "8fd0a6aa9545a42f23af93a1393ed13fa657fed412dbb73371d07c1487c50de8",
+      "proof_sha256": "f4316215af8b3bfde10946b111b5def0858bbea180940b3de2644ba5b9f3fefb",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46034097069",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8847",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full finite-field trace-family inequality disproved by rank1/size1."
+    },
+    {
+      "problem_id": "oeis-a079269",
+      "exact_statement": "PROOFS_READY/oeis-a079269.statement.lean",
+      "proof": "PROOFS_READY/oeis-a079269.proof.lean",
+      "statement_sha256": "2205286edc3406730722c94ce9184f4473dd32eed3c86344a6e4e3e67a2d4e66",
+      "proof_sha256": "b16389d18b0b826203cf2e311d072a1ed00c868881f9b862aa2e20c91f325d1e",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46034097069",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8859",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Complete reduced-numerator identity with exact rational divisions."
+    }
+  ]
+}
