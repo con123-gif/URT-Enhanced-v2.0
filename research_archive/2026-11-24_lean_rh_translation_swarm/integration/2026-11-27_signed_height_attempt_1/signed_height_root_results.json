@@ -1,0 +1,38 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "native_height_source_blob": "a18a99e1f76a6e963113cae8f906ddc99814f518",
+  "scope": "one global root in actual signed HeightLe",
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": false,
+  "original_extensions": [
+    {
+      "module": "Lib.Analytic.Landau.PolarLandau",
+      "source_blob": "6b80c9062a74ecadcd9c51f9459cb3c71ac2ded9",
+      "argv": [
+        "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000",
+        "-Ddebug.skipKernelTC=false",
+        "-Dpp.fullNames=true",
+        "-j",
+        "2",
+        "-R",
+        "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+        "-o",
+        "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/Analytic/Landau/PolarLandau.olean",
+        "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/Analytic/Landau/PolarLandau.lean"
+      ],
+      "compiler": {
+        "returncode": 1,
+        "seconds": 0.92,
+        "log": "Lib.Analytic.Landau.PolarLandau.log"
+      }
+    }
+  ]
+}
