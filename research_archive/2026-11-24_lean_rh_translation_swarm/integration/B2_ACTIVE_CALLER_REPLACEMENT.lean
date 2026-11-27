@@ -11,8 +11,9 @@ Reuse Landau RUN77 a62382a8 (blob d8a0c983b313036f4d9ccb80c6277cf368e32151)
 for the exact outer index/count bridge; these two helper proofs are copied
 with new names, not claimed as new mathematics. Replace the original
 inline outer divisor in BlockBound.sum_pairWeight_le by that named bridge.
-The rest of the original body is retained, including its inner saturation
-construction, support overcount, class averaging and all scale hypotheses.
+Factor the source's actual inner saturation construction into a named
+same-right-class bridge as well, reusing RUN74's geometry. The remaining
+support overcount, class averaging and scale hypotheses are retained.
 No appeal to the original sum_pairWeight_le occurs in the replacement body.
 This is a native caller-substitution candidate, not a complete B2/RH proof.
 -/
@@ -57,36 +58,24 @@ theorem b2_active_outer_count {t : S.reducedImage besselS}
   exact b2_active_outer_frameValueIndex_dvd p V
     (one_le_xRowsIndex_and_saturationIndex h.2.choose_spec.1 h.1.2).1
 
-theorem b2_active_sum_pairWeight_le : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeight j c c' γ γ' ≤
-  .ofReal (2 * S.tailScale ^ 2) := by
-  apply S.of_size_bounds; intros; apply ((tsum_fiberwise (fun (⟨i, t, c, T, q, p⟩ : Σ i t c, Σ (T :
-    {T : Submodule E (𝔰.κ → E) // finrank E T + i = 𝔰.k}) (q : ofPred (S.IsLabelledTerm j c t)),
-    {p | S.IsLabelledTerm j c t p ∧ S.CongruentTerms c p.1 q.1.2 p.2 ∧ commonLink q.1.2 p.2 = T}) ↦
-    S.termWeight j i c q p T) fun ⟨_, _, c, _, q, p⟩ ↦ (c, p.1.1, q.1.2, p.1.2)).trans_le ?_).trans'
-  · simp -iota [pairWeight]; gcongr; split_ifs with h; have ⟨h@⟨s, o, o'⟩, m, m'⟩ := h
-    exact .trans (by rfl) (ENNReal.le_tsum ⟨⟨_, _, _, ⟨commonLink .., by simp [(finrank_le
-      _).trans]⟩, ⟨(_, _), m, s, o, rfl⟩, (_, _), ⟨m', s, o', rfl⟩, h, rfl⟩, rfl⟩)
-    simp
-  simp [ENNReal.tsum_sigma', termWeight]
-  grw [ENNReal.tsum_le_tsum (g := (.ofReal <| 2⁻¹ ^ · * S.tailScale ^ 2)) fun m ↦ ?_]
-  simp [-inv_pow]
-  grw [tsum_invPowWeight_le_of_codim_le (m + 𝔰.ϱ + 1) (by exact inf_le_left) ?T ?A ?C, ENNReal.tsum_mul_right.le,
-    tsum_invPowWeight_le_of_codim_le m (by rfl) _ (by
-      intro p hp
-      exact b2_active_outer_frameValueIndex_dvd p _
-        (one_le_xRowsIndex_and_saturationIndex hp.2.choose_spec.1 hp.1.2).1) (by exact a.2.ge)]
-  case T T => exact T.1 ⊓ (frameMiddle a.1.2.1).toRows₁ᴴ.mulVecLin.ker
-  case' C T => rw [← map_comap_subtype, ← LinearMap.ker_domRestrict]
-  · set N := (mulVecLin _).domRestrict T.1
-    obtain ⟨e : _ = _⟩ := T.2, N.finrank_range_add_finrank_ker, N.range.finrank_le
-    simp_all [SubmoduleElem]; omega
-  case' A c _ T => refine fun y ⟨_, ⟨s, ⟨k, rk, ek⟩, k', rk', ek'⟩, f⟩ ↦
+/-- Actual inner divisor. Both congruence witnesses use y.1, independently
+of the right class carried by the outer labelled term. Geometry is the
+source's common-link positivity argument factored into its exact context. -/
+theorem b2_active_inner_frameValueIndex_dvd (γ : S.G E)
+    (y : S.Classes × S.G E) (T : Submodule E (𝔰.κ → E))
+    (hcong : S.CongruentTerms c y.1 γ y.2)
+    (f : commonLink γ y.2 = T) :
+    S.frameValueIndex c (S.termElem c y) S.gIdele
+      (T ⊓ (frameMiddle γ.1.1).toRows₁ᴴ.mulVecLin.ker) ∣
+        S.saturationIndex (S.termElem c y) := by
+  rcases hcong with ⟨s, ⟨k, rk, ek⟩, k', rk', ek'⟩
+  refine
     submoduleIndex_dvd_of_le (S.gIdele • ((frameImage (S.termElem c y).1.1)ᴴ *
     (S.latMiddle (𝔸f E)).splitGram).mulVecLin) (colLattice_le (Sum.rec (⟨_, col_mem_colLattice ·, by
     ext1; simp [frameGram, splitGram, mulVec_eq_sum, mul_apply, Units.smul_def]⟩) fun a ↦
     ⟨0, by simp, congrArg _ (funext fun i ↦ .trans (by cases i using Fin.lastCases <;> simp)
     (congrFun₂ (termElem ..).2 ..).symm)⟩)) (le_sup_of_le_left ?_)
-  · set γ := a.1.2; set L := T.1 ⊓ _; obtain ⟨_, ⟨hb, -⟩, p, a, -, hp, rfl⟩ := sublatticeBasis _ L
+  · set L := T ⊓ (frameMiddle γ.1.1).toRows₁ᴴ.mulVecLin.ker; obtain ⟨_, ⟨hb, -⟩, p, a, -, hp, rfl⟩ := sublatticeBasis _ L
     rintro _ ⟨r, hy, rfl⟩
     let P : Matrix 𝔰.BesselIndex .. := fromRows 0 ((p.fromRows 0).fromRows 0)
     have φ : (frameImage γ.1.1)ᴴ * S.ratGram * P = 0 := .trans (by simp [P, splitGram, entrywise,
@@ -117,6 +106,33 @@ theorem b2_active_sum_pairWeight_le : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeig
       (frameImage k) (S.classCoord c * finAdeleMat P)).trans (by erw [ek, frameImage_termPosition,
       classCoord_gram, φ])) * a.1)]
     simp [entrywise, P, classCoord_eq_fromBlocks, splitGram]
+
+theorem b2_active_sum_pairWeight_le : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeight j c c' γ γ' ≤
+  .ofReal (2 * S.tailScale ^ 2) := by
+  apply S.of_size_bounds; intros; apply ((tsum_fiberwise (fun (⟨i, t, c, T, q, p⟩ : Σ i t c, Σ (T :
+    {T : Submodule E (𝔰.κ → E) // finrank E T + i = 𝔰.k}) (q : ofPred (S.IsLabelledTerm j c t)),
+    {p | S.IsLabelledTerm j c t p ∧ S.CongruentTerms c p.1 q.1.2 p.2 ∧ commonLink q.1.2 p.2 = T}) ↦
+    S.termWeight j i c q p T) fun ⟨_, _, c, _, q, p⟩ ↦ (c, p.1.1, q.1.2, p.1.2)).trans_le ?_).trans'
+  · simp -iota [pairWeight]; gcongr; split_ifs with h; have ⟨h@⟨s, o, o'⟩, m, m'⟩ := h
+    exact .trans (by rfl) (ENNReal.le_tsum ⟨⟨_, _, _, ⟨commonLink .., by simp [(finrank_le
+      _).trans]⟩, ⟨(_, _), m, s, o, rfl⟩, (_, _), ⟨m', s, o', rfl⟩, h, rfl⟩, rfl⟩)
+    simp
+  simp [ENNReal.tsum_sigma', termWeight]
+  grw [ENNReal.tsum_le_tsum (g := (.ofReal <| 2⁻¹ ^ · * S.tailScale ^ 2)) fun m ↦ ?_]
+  simp [-inv_pow]
+  grw [tsum_invPowWeight_le_of_codim_le (m + 𝔰.ϱ + 1) (by exact inf_le_left) ?T ?A ?C, ENNReal.tsum_mul_right.le,
+    tsum_invPowWeight_le_of_codim_le m (by rfl) _ (by
+      intro p hp
+      exact b2_active_outer_frameValueIndex_dvd p _
+        (one_le_xRowsIndex_and_saturationIndex hp.2.choose_spec.1 hp.1.2).1) (by exact a.2.ge)]
+  case T T => exact T.1 ⊓ (frameMiddle a.1.2.1).toRows₁ᴴ.mulVecLin.ker
+  case' C T => rw [← map_comap_subtype, ← LinearMap.ker_domRestrict]
+  · set N := (mulVecLin _).domRestrict T.1
+    obtain ⟨e : _ = _⟩ := T.2, N.finrank_range_add_finrank_ker, N.range.finrank_le
+    simp_all [SubmoduleElem]; omega
+  case A c _ T =>
+    intro y hy
+    exact b2_active_inner_frameValueIndex_dvd _ y T.1 hy.2.1 hy.2.2
   conv_lhs => simp [ENat.card_eq_coe_natCard, ← Finset.sum_mul]
   grw [sum_latticeDisc_inv_le, ← ofReal_natCast]
   simp (disch := positivity) only [mul_pow, ← ofReal_mul, ofReal_le_ofReal_iff, inv_pow, field]
@@ -126,11 +142,26 @@ theorem b2_active_sum_pairWeight_le : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeig
 
 #print axioms b2_active_outer_frameValueIndex_dvd
 #print axioms b2_active_outer_count
+#print axioms b2_active_inner_frameValueIndex_dvd
 #print axioms b2_active_sum_pairWeight_le
 #check @b2_active_sum_pairWeight_le
 
 -- Pointwise original-statement bridge, using the replacement proof.
 example : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeight j c c' γ γ' ≤
     .ofReal (2 * S.tailScale ^ 2) := b2_active_sum_pairWeight_le
+
+-- Inspect the actual elaborated caller, not just its source text.
+run_cmd do
+  let info ← Lean.getConstInfo ``Filling.b2_active_sum_pairWeight_le
+  let some value := info.value? |
+    Lean.throwError "B2 replacement has no inspectable proof value"
+  let deps := value.getUsedConstants
+  if deps.contains ``Filling.sum_pairWeight_le then
+    Lean.throwError "B2 replacement calls the original target theorem"
+  unless deps.contains ``Filling.b2_active_outer_frameValueIndex_dvd do
+    Lean.throwError "B2 caller did not consume the outer bridge"
+  unless deps.contains ``Filling.b2_active_inner_frameValueIndex_dvd do
+    Lean.throwError "B2 caller did not consume the inner bridge"
+  Lean.logInfo "B2_ACTIVE_CALLER: both bridges consumed; original target absent from direct proof dependencies"
 
 end Filling

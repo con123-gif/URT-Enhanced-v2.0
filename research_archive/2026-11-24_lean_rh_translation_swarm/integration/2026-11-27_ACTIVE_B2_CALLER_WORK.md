@@ -26,6 +26,16 @@ using these bridges. Preserve its support overcount, same right-class
 inner witnesses, codimension, class sum and scale inputs. The original
 pair-weight theorem must not be used to prove its replacement.
 
+Prepared implementation now has both named divisors and the complete
+pair-weight conclusion. The inner divisor takes only the actual congruent
+pair and its common-link equality; it does not take the outer term's class
+label or a HasLevel premise. This is a candidate local premise weakening,
+not a global deletion of level assumptions from the counting theorem.
+The existing source geometry is factored, not advertised as a new theorem
+of arithmetic geometry. A command inspects the elaborated caller proof,
+requires both new bridges to occur, and rejects a direct invocation of
+the original pair-weight theorem. Execution remains pending.
+
 A local exact Lean toolchain and pinned Mathlib checkout were located.
 Tracked compact sources and lakefile were compared to the exact pin.
 The original BlockBound build is running locally with two Lean threads;
