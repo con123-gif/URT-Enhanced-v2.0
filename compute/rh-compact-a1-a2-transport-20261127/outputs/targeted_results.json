@@ -1,0 +1,60 @@
+{
+  "scope": "native named module checks and peer scalar certificates only",
+  "full_RH_replay": false,
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 2.92,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 11.54,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 0.67,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.26,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 75.05,
+      "log": "mathlib_cache.log"
+    },
+    "module_0_build": {
+      "returncode": 0,
+      "seconds": 3199.21,
+      "log": "module_0_build.log"
+    },
+    "module_0": {
+      "returncode": 1,
+      "seconds": 0,
+      "log": "module_0.log",
+      "axioms": {},
+      "axiom_audit_ok": false,
+      "module": "New.Columns.LocalStatement"
+    }
+  },
+  "all_requested_checks_ok": false
+}

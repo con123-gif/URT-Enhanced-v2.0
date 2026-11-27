@@ -1,0 +1,27 @@
+{
+  "scope": "A1 changed leaf + three exact kernel transports",
+  "native_verified": false,
+  "full_RH_replay": false,
+  "global_dependency_deletion": false,
+  "steps": {
+    "generate": {
+      "returncode": 0,
+      "seconds": 0.97,
+      "log": "a1_generate.log"
+    },
+    "transport": {
+      "returncode": 1,
+      "seconds": 9.34,
+      "log": "a1_transport.log"
+    }
+  },
+  "negative_controls_rejected": 4,
+  "generated_blob": "bacc8d571342525149fb6eba8f062568988ce0d2",
+  "axiom_audit": {
+    "axioms": {},
+    "axiom_audit_ok": false
+  },
+  "leaf_marker": false,
+  "transport_markers": [],
+  "error": "A1 replay not accepted; inspect actual log"
+}

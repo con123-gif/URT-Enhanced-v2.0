@@ -1,0 +1,35 @@
+{
+  "scope": "A2 actual caller replacement; direct roles only",
+  "pin": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "patch_blob": "9026bf359bc7d88723ccc6e0dcbce32a7a161f30",
+  "original_source_blobs": [
+    "8b841d76bb938d8a18fd4341aa832a20b13dd9e0",
+    "9d5bd0d698b0db2850cbd306d8d400d7e99a3547"
+  ],
+  "steps": {
+    "a2_original": {
+      "returncode": 0,
+      "seconds": 6.63,
+      "log": "a2_original.log"
+    },
+    "a2_splice": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "a2_splice.log"
+    },
+    "a2_rebuild": {
+      "returncode": 1,
+      "seconds": 39.38,
+      "log": "a2_rebuild.log"
+    }
+  },
+  "marked_direct_caller_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "patched_source_blobs": [
+    "62f5b0ca5f833ec482739ed8bddf45fd725ae075",
+    "e029ebbb854d93cb4a55eb536a6dea9b8aeb89b3"
+  ],
+  "error": "a2_rebuild failed"
+}

@@ -1,0 +1,25 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:26:67: error: Type mismatch
+  IsOpen.matrix hO
+has type
+  IsOpen (↑O).matrix
+but is expected to have type
+  IsOpen ?m.161
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:82:82: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  CommRing ℕ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:83:22: error: Application type mismatch: The argument
+  L.markOperator ⟨l, a⟩
+has type
+  Module.End (↥embValRing) (SubmoduleElem D.Column)
+but is expected to have type
+  Module.End ℕ ?m.162
+in the application
+  HasType T.p ?m.171 s (L.markOperator ⟨l, a⟩)
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:213:30: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:222:48: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:261:37: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:269:14: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:270:14: error(lean.unknownIdentifier): Unknown constant `Data.IsMarked.hasType_markOperator_run57`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:271:14: error(lean.unknownIdentifier): Unknown constant `Data.IsMarked.hasType_prod_markOperator_pow_run57`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/MarkedTransportRun57.lean:272:14: error(lean.unknownIdentifier): Unknown constant `Data.exists_indexDvd_Bmu_divisible_run57`

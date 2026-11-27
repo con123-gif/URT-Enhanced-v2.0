@@ -1,0 +1,163 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: Some targeted checks failed or were not reached; inspect partial evidence",
+  "returncode": 1,
+  "wall_s": 3376.82,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN57_SHARED_MARKED_TRANSPORT.py\", line 306, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN57_SHARED_MARKED_TRANSPORT.py\", line 302, in main\n    a2.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/compact/RUN79_A2_CALLER_REPLAY.py\", line 245, in main\n    native.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN28_COMPACT_TARGETED.py\", line 132, in main\n    require(state[\"all_requested_checks_ok\"],\"Some targeted checks failed or were not reached; inspect partial evidence\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Some targeted checks failed or were not reached; inspect partial evidence\n",
+  "id": "rh-compact-a1-a2-transport-20261127",
+  "question": "One shared original LocalStatement build: check the changed A1 marked-Hecke leaf, transport three exact existing caller proof terms through normal Lean kernel addDecl with exact direct-edge and axiom guards, then reuse the same workspace for the existing A2 RUN79 overlay and, if stage1 succeeds within budget, RUN81 stage2. Preserve separate logs and all unresolved obligations. No Main import or full RH claim.",
+  "requested_by": "GPT, user continuous-work directive 2026-11-27; shared A1/A2 coordination",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN57_SHARED_MARKED_TRANSPORT.py --out {out}",
+  "utc": "2026-11-27T16:13:47Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "936316769c22ce71f4f24fa79624ee38741b55b7",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46023465491",
+  "outputs_committed": [
+    {
+      "path": "A2PatchedConjugatesOfJets.lean",
+      "bytes": 18123,
+      "sha256": "83ef2fe6d0fbdaf1be3e0d979d1447e23420455907cb66918c7a691f905aeedc"
+    },
+    {
+      "path": "A2PatchedLocalStatement.lean",
+      "bytes": 23112,
+      "sha256": "566aa04bb221658643ebde1e37fe349aa13a031cef1a3410bc00cbd14a046bd3"
+    },
+    {
+      "path": "MarkedTransportRun57.lean",
+      "bytes": 15788,
+      "sha256": "f92933890d0cc039de2b2138ce9d9dd04f6cd860298a9b62be1e504ed28e0d2c"
+    },
+    {
+      "path": "a1_generate.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "a1_prior_run55/MarkedCallerRun55.lean",
+      "bytes": 18109,
+      "sha256": "b981bd83d12037756d6ca5e58043d718ef2f32b6314d22dbf5039f1417c901ec"
+    },
+    {
+      "path": "a1_prior_run55/preflight.json",
+      "bytes": 182,
+      "sha256": "194566f41c9848f677b4869db315a25488ecfb680336436560892caafbafc165"
+    },
+    {
+      "path": "a1_transport.json",
+      "bytes": 659,
+      "sha256": "2fa7dec536e0c959517c8b1fffad47656e245f9a50c5b15033338f8583dffcf4"
+    },
+    {
+      "path": "a1_transport.log",
+      "bytes": 2294,
+      "sha256": "80d0a6345a53d1468e6daaadaa15f9f3e996006d98ef47aa23189c99d746bc6b"
+    },
+    {
+      "path": "a2_original.lean",
+      "bytes": 1691,
+      "sha256": "b7e93524b18f742ada071cedf6c814e55bad7a3ba6ae58bf9abdecaf9170c8a9"
+    },
+    {
+      "path": "a2_rebuild.log",
+      "bytes": 60036,
+      "sha256": "eeec2334b5de9404d0d2457723cdf647b7bab6c73a8a4d27bc0ecfe7a578449d"
+    },
+    {
+      "path": "a2_replay.json",
+      "bytes": 955,
+      "sha256": "e037da99357d920dabee277124c4a65c8ec306089b2ff6b796ac20a83b0f35ee"
+    },
+    {
+      "path": "a2_splice.log",
+      "bytes": 128,
+      "sha256": "b40018e326bcb26fef814cbcb57978f5c4200ab071fb2eeac35b617124f6b942"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "0b58b3a17e8562d423981562a5d87f975c9ad0764fa02f494ed7ffcc822c32be"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 8062,
+      "sha256": "acd4cf5eaa15a55fe0686e68b890f7f08bd82bdefa4729e8ef091f59bd08fedc"
+    },
+    {
+      "path": "module_0.log",
+      "bytes": 39,
+      "sha256": "9b4f43f65adf96142112a6aceb671ac71c81979b87e09615e4605577c6dc115e"
+    },
+    {
+      "path": "module_0_build.log",
+      "bytes": 81577,
+      "sha256": "9ff705598ed9a05fb0b30647b976273902b69f3aae3ec40a0c8909babe6289e6"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 312,
+      "sha256": "ca9d7f037e7e73b7346b9c374b847de1fa6eab279f7a4bb5be2d2aeadaffc6d3"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 125,
+      "sha256": "57ba10a4b05a2507bf74d7c6aa6d16cb38443562f4ad10d617cdada157c6c6ef"
+    },
+    {
+      "path": "targeted_results.json",
+      "bytes": 1247,
+      "sha256": "1146df29547381a7bd2dcc356919ad8f9e1b84ea837114e5669c98d79fd61108"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "a2_original.log",
+      "bytes": 77426820,
+      "sha256": "05204eda6d0f0abc0695bf1f4233d630c885de87b44671e358f71632b323db6b"
+    },
+    {
+      "path": "a2_original_graph.json",
+      "bytes": 77502064,
+      "sha256": "26e91f8bc05017458a42de1f3d827967f6ba44c2e5a23188cee715c5f5ed0090"
+    }
+  ]
+}
