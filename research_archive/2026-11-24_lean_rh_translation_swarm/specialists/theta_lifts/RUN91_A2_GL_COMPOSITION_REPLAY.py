@@ -46,7 +46,8 @@ Integration repair: RUN88 combined generator previously embedded the
 old residue helper even if RUN90 leaf-only passed. This driver applies
 the identical RUN90 and RUN91 bodies to BOTH authenticated generation
 paths. It rejects any discrepancy in the two exact helper namespace
-bodies before optional native replay; no stale helper acceptance.
+bodies before optional native replay (ignoring standalone #print axioms
+and #check commands removed by RUN84; not mathematical declarations); no stale helper acceptance.
 Preserves generated originals, complete compiler output, hash receipts
 and markers. No modifications to checkout, registry, protected workflows.
 
@@ -119,7 +120,9 @@ def main():
         start, end = "namespace " + namespace + "\n", "\nend " + namespace
         def ns(s):
             require(s.count(start) == 1 and s.count(end) == 1, "namespace boundary")
-            return s.split(start)[1].split(end)[0].strip()
+            body = s.split(start)[1].split(end)[0]
+            return "\n".join(line for line in body.split("\n")
+                             if not re.match(r"^#(?:print axioms|check)\b", line)).strip()
         require(ns(a1) == ns(b1), "helper divergence " + namespace)
     negative = 0
     for bad in (a0.replace(OLD, OLD.replace("apply Units.ext", "skip")), a0 + OLD):
