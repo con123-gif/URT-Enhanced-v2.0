@@ -667,12 +667,15 @@
       "verification_kind": "combined_exact_target_full_kernel_pass",
       "full_target_passed_at": "2026-11-27T18:37:43Z",
       "merged_and_credited": "not_confirmed",
-      "genuine_open_status": "full_source_characterization_beyond_explicitly_credited_prior_quartic_selector_no_historical_priority_certified",
+      "genuine_open_status": "WITHHELD_FULL_KNOWN_PRIOR_MA_ZHANG_2026_ALL_SOURCE_CLAUSES",
       "proof_summary": "Unique signed Hermite coefficient maximum, closed selector, all exact4/5 blocks, their spacing and sqrt growth bounds; prior TrureTuring coefficient-selector work and Apache license retained.",
-      "remaining_obstruction": "Canonical full proof publicly uploaded. Official claim API repeatedly HTTP500 with no token received; statement registration, merge, imported-target checking and official full proof submission remain.",
+      "remaining_obstruction": "No remaining source open claim: Ma–Zhang Theorem1/Corollary2 already prove entire selected statement. Prepared registration25115866 withheld, no claim/PR. Existing actualexit0 certificate retained as independent known-prior formalization, not a new open resolution.",
       "statement_pr": null,
       "statement_merged": false,
-      "prior_credit": "Mike Sheppard; TrureTuring quartic selector and signed1/-3 law; DLMF."
+      "prior_credit": "MikeSheppard/source; HaoboMa/WenlinZhang complete Nov3/4,2026 prior resolution, DOI10.5281/zenodo.23957586; TrureTuring/OmegaInstitute full HermiteSignedModeThreshold and HermiteSignedModeBlocks, full originalApache2license retained; DLMF.",
+      "full_prior_audit": "https://github.com/con123-gif/open-math-agents/blob/3ba4ab7c0527ced199586f293a4409246ab04013/research_notes/A381423_CURRENT_PRIOR_EXCLUSION.md",
+      "prior_publication_date": "2026-11-04",
+      "prior_paper": "https://zenodo.org/records/23957586"
     },
     {
       "problem_id": "oeis-a372556",
@@ -698,9 +701,14 @@
         "Horadam1996 local adjacent-coefficient exchange and patterned representations",
         "Carlitz-Scoville-Hoggatt1972 distinct-summand canonical representations"
       ],
-      "remaining_obstruction": "Full canonical proof publicly uploaded and exact readback checked. Fresh official lease, registration/merge, imported-target check and actual full proof acceptance remain.",
-      "statement_pr": null,
-      "statement_merged": false
+      "remaining_obstruction": "Actual statement registration PR12938 open/unmerged; await translationreview/actualmerge, then unmodified imported-target fullproof check, separate fullproofPR and actualofficialverdict/merge/publiccredit.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12938",
+      "statement_merged": false,
+      "statement_state": "open",
+      "submitted_statement_head": "b48e8d65f5b7ad3c97a77c1b75aa4f01dcae7ade",
+      "submission_authorization": "Actual claim20022:04:07; PLAN53484 HTTP20022:04:41; freshheartbeat20022:04:48 lead/teamempty; DONE53550 HTTP20022:05:38; release(submitted)HTTP200{ok:true}22:05:46. No privatelease archived.",
+      "official_statement_checker_verdict": "pending",
+      "claim_result": "Actual claim20022:04:07; PLAN53484 HTTP20022:04:41; freshheartbeat20022:04:48 lead/teamempty; DONE53550 HTTP20022:05:38; release(submitted)HTTP200{ok:true}22:05:46. No privatelease archived."
     },
     {
       "problem_id": "oeis-a396949",
@@ -790,15 +798,20 @@
       "genuine_open_status": "all_three_exact_source_conjectures_proved_no_prior_settlement_found_in_bounded_primary_review",
       "proof_summary": "On the fixed reduced-Collatz-27/stretch grid, global minimum Jacobsthal summand counts are7 on n+k=14 and9 on n+k=31, excluding each first entry, and all interior counts are symmetric under n/k exchange. Universal lift-cost bounds, actual finite-orbit/exception witnesses, and symbolic infinite-grid reduction prove all three claims.",
       "merged_and_credited": "not_confirmed",
-      "statement_pr": null,
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12868",
       "statement_merged": false,
       "public_statement_commit": "638c18c2aa0d47e76b29c3da6aac46bd32a72898",
       "public_proof_commit": "81bd37f52eae5409f2a6a02a94682160d599f28d",
       "prepared_statement_branch": "oma-statement-oeis-a372561-20261127",
       "prepared_statement_commit": "efbd9f9492896f557c49bd4d6db36bc5ba1682ea",
-      "claim_result": "Exactly one supportedclaim20:15:16 returnedHTTP500/noassignment/no token. Server-side mutation unknown. Further calls stopped.",
-      "remaining_obstruction": "Canonical complete certificate uploaded and byte-readback exact. Prepared one-file registration awaits a valid current lease; then actual statement merge, exact imported-target check and full official proof submission/acceptance.",
-      "prior_credit": "Antti Karttunen/source and related sequence authors; classical Jacobsthal identities, base4 digit-sum inequalities and known finite reduced-Collatz orbit; independent root/number/algebra challenges acknowledged."
+      "claim_result": "Actual claim20021:59:51; PLAN53080 HTTP20022:00:12; freshheartbeat20022:00:19 lead/teamempty; DONE53197 HTTP20022:01:30; release(submitted)HTTP200{ok:true}22:01:37. No privatelease archived.",
+      "remaining_obstruction": "Actual statement registration PR12868 open/unmerged; await translationreview/actualmerge, then unmodified imported-target fullproof check, separate fullproofPR and actualofficialverdict/merge/publiccredit.",
+      "prior_credit": "Antti Karttunen/source and related sequence authors; classical Jacobsthal identities, base4 digit-sum inequalities and known finite reduced-Collatz orbit; independent root/number/algebra challenges acknowledged.",
+      "statement_state": "open",
+      "submitted_statement_head": "efbd9f9492896f557c49bd4d6db36bc5ba1682ea",
+      "submission_authorization": "Actual claim20021:59:51; PLAN53080 HTTP20022:00:12; freshheartbeat20022:00:19 lead/teamempty; DONE53197 HTTP20022:01:30; release(submitted)HTTP200{ok:true}22:01:37. No privatelease archived.",
+      "official_statement_checker_verdict": "pending",
+      "historical_failed_claim_result": "Exactly one supportedclaim20:15:16 returnedHTTP500/noassignment/no token. Server-side mutation unknown. Further calls stopped."
     },
     {
       "problem_id": "oeis-a181674",
@@ -855,7 +868,7 @@
       "actual_compiler_exit": 0,
       "proof_summary": "For every positive squarefree natural n, if sum_{d|n} sigma(d)/phi(d) is an integer then n divides the denominator of B_(2n).",
       "genuine_open_status": "full_source_proof_bounded_prior_audit_with_related_2012_email_explicitly_unread",
-      "prior_caveat": "Related Miller2012 NMBRTHRY email inaccessible: both HTTP/HTTPS503; explicitly unread. No historical-priority or universal absence claim.",
+      "prior_caveat": "Related Miller2012 NMBRTHRY email inaccessible: both HTTP/HTTPS503; explicitly unread. No historical-priority or universal absence claim. Boundedauthoritativealternativesstillunread: FUNETarchiveendsJan1996; noemailcontentrecovered/noabsenceclaim. Sanitizedaudit0d6ac6e78680059b04b2b39af76c21cdb8702c91.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12465",
       "statement_state": "open",
       "statement_merged": false,
@@ -921,19 +934,23 @@
     12514,
     12591,
     12717,
-    12808
+    12808,
+    12868,
+    12938
   ],
-  "interactive_leases_for_this_batch": "Original nine successful new-registration leases plusMO513259/A396949/MO487180/A181674 allactually releasedHTTP200 (13total). A068991 used currentexplicit503fallback withnoassignment, so nolease torelease. HistoricalMO474511release500 remainsunconfirmed. A372561nextserializedlane;this isnot anowner-global activeleasecount.",
+  "interactive_leases_for_this_batch": "Original9 plusMO513259/A396949/MO487180/A181674/A372561/A372556 allactuallyreleasedHTTP200 (15total). A068991 actual503fallback/noassignment requiresnoleaserelease. HistoricalMO474511release500 unconfirmed; no stale tokenrefresh. All six late normalregistration slots ended. Otherautomations canholdtheir owncurrentleases;notaglobalactivecount.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T22:00:05.828Z",
+  "record_updated_utc": "2026-11-27T22:08:11.635Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
   "official_full_proof_checker_acceptances": 4,
   "excluded_known_prior_targets": {
-    "mo-511647": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3 alreadyprovesexactfullmatrixclaim; no new count orofficiallease/PR. Existinginflightfullprobeis known-priorformalizationonly."
+    "mo-511647": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3 alreadyprovesexactfullmatrixclaim; no new count orofficiallease/PR. Existinginflightfullprobeis known-priorformalizationonly.",
+    "oeis-a381423": "Indexed complete actualexit0 certificate retained; entire source already Ma–Zhang Theorem1/Corollary2 Nov3/4,2026 and full TrureThreshold/Blocks. Prepared25115866 withheld,0claim/PR. Audit3ba4ab7c.",
+    "mo-235344": "Notpartof33. Earlier byrohan immutable4a3de5ff full6x6mathematicalcounterexample07:06:42, source/target/64minors/62supportcuts/bothdiagonalobstructions independentlyexactchecked. Our5x5 onlydimensionimprovement. Latestrepair46073211016 ACTUALLYFAILED/errors/sorryAx. No originalsourceclosure orduplicatePR. Auditb93c12cd."
   },
   "recorded_preceding_foreign_full_proofs": 15,
-  "records_without_known_preceding_proof_or_full_submission": 14,
-  "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld certificates and is NOT a current-eligibility or accepted-solve total.",
+  "records_without_known_preceding_proof_or_full_submission": 13,
+  "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld and nowfullpriorA381423 certificates, so NOT a currenteligibility/accepted/newsolve total.",
   "latest_submission_rules": "Current official503busy fallback/manual-selection rules permit truthful contributions as specified; read currentrules beforeeachaction. Latest four normal registration claims workedHTTP200; tokenprivacy andownercap/teamcoordinationremainmandatory. No blanket noassignment stop wherecurrentrules explicitlyauthorizesfallback."
 }
