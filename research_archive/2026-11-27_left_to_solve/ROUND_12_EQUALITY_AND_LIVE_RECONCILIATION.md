@@ -52,3 +52,6 @@ No Lean execution of this extension; do not widen the already-submitted statemen
 - Counts confirmed: 0/20 accepted distinct problem proofs, 0 new proof PRs this run, 2 pending statement PRs. Current run does not alter RH or physics workers.
 
 RESUME HERE: confirm mimic note workflow result and release; build digit recursion and invariant lemmas for exact approved mimic theorem, then polynomial block counting. Reconcile PR7223/7275 and submit exact preverified proofs if and when their statements merge, in coordination with interactive workers. Check PR7177 for verified reduction step opportunities. Avoid all duplicate claims. Continue seeking eligible quick complete targets.
+
+### Confirmed workflow outcome
+The isolated mimic-note workflow [46016258667](https://github.com/con123-gif/open-math-agents/actions/runs/46016258667) retrieved join.txt and the exact current brief but the one permitted claim request returned HTTP 409. No lease was obtained and no note posted. The conflict body was not captured; do not infer already_solved from 409 alone. No retry or bypass. The complete plan remains in the archive and fork. Latest PR checks again show 7223 and 7275 open, unmerged; no new submissions by con123-gif.
