@@ -99,7 +99,8 @@
       "proof_summary": "Full rank-decomposition claim disproved by the2x2 identity.",
       "statement_state": "open",
       "statement_merged": false,
-      "statement_merge_commit": null
+      "statement_merge_commit": null,
+      "statement_merged_at": null
     },
     {
       "problem_id": "mo-466218",
@@ -119,7 +120,8 @@
       "proof_summary": "Full resolvent diagonal inequality by the finite maximum principle.",
       "statement_state": "open",
       "statement_merged": false,
-      "statement_merge_commit": null
+      "statement_merge_commit": null,
+      "statement_merged_at": null
     },
     {
       "problem_id": "oeis-a081670",
@@ -137,11 +139,13 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7865",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete central-binomial/geometric recurrence at every required index.",
-      "statement_state": "closed",
-      "statement_merged": true,
-      "statement_merge_commit": "33d16dde86be033e70f94be542ffe7687f80255d",
+      "statement_state": "open",
+      "statement_merged": false,
+      "statement_merge_commit": null,
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9230",
-      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution."
+      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution.",
+      "statement_merged_at": null,
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9230"
     },
     {
       "problem_id": "oeis-a052204",
@@ -159,11 +163,13 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7930",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full factorial-ratio recurrence by exact linear combination.",
-      "statement_state": "closed",
-      "statement_merged": true,
-      "statement_merge_commit": "4140b1f3ba66a16e0ba58894dc4d5438a4e8d7fb",
+      "statement_state": "open",
+      "statement_merged": false,
+      "statement_merge_commit": null,
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9307",
-      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution."
+      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution.",
+      "statement_merged_at": null,
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9307"
     },
     {
       "problem_id": "oeis-a175784",
@@ -181,11 +187,13 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7931",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "All3claims: numerator formula, recurrence and complete generating function.",
-      "statement_state": "closed",
-      "statement_merged": true,
-      "statement_merge_commit": "9ea7d62af6a157ced8c456bd6ed10ce85c08e6f2",
+      "statement_state": "open",
+      "statement_merged": false,
+      "statement_merge_commit": null,
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9408",
-      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution."
+      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution.",
+      "statement_merged_at": null,
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9408"
     },
     {
       "problem_id": "oeis-a193282",
@@ -203,11 +211,13 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7933",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full five-term factorial-square recurrence, both parities.",
-      "statement_state": "closed",
-      "statement_merged": true,
-      "statement_merge_commit": "edcfac0d8d98eb7edf3173ec0d2a2345781925fd",
+      "statement_state": "open",
+      "statement_merged": false,
+      "statement_merge_commit": null,
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9309",
-      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution."
+      "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution.",
+      "statement_merged_at": null,
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9309"
     },
     {
       "problem_id": "oeis-a124870",
@@ -227,7 +237,8 @@
       "proof_summary": "Both Gaussian denominator conjectures, including every GF coefficient.",
       "statement_state": "open",
       "statement_merged": false,
-      "statement_merge_commit": null
+      "statement_merge_commit": null,
+      "statement_merged_at": null
     },
     {
       "problem_id": "oeis-a124869",
@@ -253,7 +264,8 @@
       "prior_inline_verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46031012204",
       "verification_job": 140668601604,
       "imported_target_verdict": "accepted",
-      "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10098"
+      "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10098",
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10098"
     },
     {
       "problem_id": "mo-198816",
@@ -299,9 +311,12 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8847",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full finite-field trace-family inequality disproved by rank1/size1.",
-      "statement_state": "open",
-      "statement_merged": false,
-      "statement_merge_commit": null
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merge_commit": "42818e0ae52cb6df2e0c1ddcac43a92fb8039cd5",
+      "statement_merged_at": "2026-11-27T18:11:28Z",
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10106",
+      "remaining_obstruction": "Statement merged18:11:28, but foreign full disproofPR10106 precedes any own full submission. Withhold duplicate; own earlier complete certificate stays archived."
     },
     {
       "problem_id": "oeis-a079269",
@@ -323,7 +338,8 @@
       "statement_merged": true,
       "statement_merge_commit": null,
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10115",
-      "remaining_obstruction": "Preceding foreign full proofPR10115, created18:13:07 byjustusklocke-cloud; do not duplicate. Our checked independent certificate remains public."
+      "remaining_obstruction": "Preceding foreign full proofPR10115, created18:13:07 byjustusklocke-cloud; do not duplicate. Our checked independent certificate remains public.",
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10115"
     },
     {
       "problem_id": "oeis-a343311",
@@ -372,7 +388,9 @@
       "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9501",
       "statement_state": "open",
-      "statement_merged": false
+      "statement_merged": false,
+      "statement_merged_at": null,
+      "statement_merge_commit": null
     },
     {
       "problem_id": "oeis-a383246",
@@ -391,10 +409,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete no-zero greedy decimal range theorem using repunit-one connectors and fairness.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registration merged; no foreign full proof at19:20 all-state gate. Complete one-file proof branch prepared. Exact imported-target checker batch in progress; fresh generic claim APIHTTP500 prevents official full submission. Prepared branch is not an official PR.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9480",
-      "statement_state": "open",
-      "statement_merged": false
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T18:49:59Z",
+      "statement_merge_commit": "8c2a34942ce13ceadfe2a630c7eced0335ce000e",
+      "prepared_full_proof_branch": "oma/oeis-a383246-full-proof",
+      "prepared_full_proof_commit": "8f55b737d979f6c09c87082df5700341875fbe61"
     },
     {
       "problem_id": "oeis-a383248",
@@ -413,10 +435,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete no-nine greedy decimal range theorem using repunit-eight connectors and fairness.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registration merged; no foreign full proof at19:20 all-state gate. Complete one-file proof branch prepared. Exact imported-target checker batch in progress; fresh generic claim APIHTTP500 prevents official full submission. Prepared branch is not an official PR.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9482",
-      "statement_state": "open",
-      "statement_merged": false
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T18:50:45Z",
+      "statement_merge_commit": "36a4daa1630f7da98c996b83a28653f4c731883d",
+      "prepared_full_proof_branch": "oma/oeis-a383248-full-proof",
+      "prepared_full_proof_commit": "47131c6c3c51dc7abd55c715ebde6c8f382f5c77"
     },
     {
       "problem_id": "mo-319325",
@@ -435,10 +461,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full Hurwitz/Lyapunov principal-square-root normalization convergence claim disproved by alternating exact positive-definite sequences.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registration merged; no foreign full proof at19:20 all-state gate. Complete one-file proof branch prepared. Exact imported-target checker batch in progress; fresh generic claim APIHTTP500 prevents official full submission. Prepared branch is not an official PR.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9686",
-      "statement_state": "open",
-      "statement_merged": false
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T19:00:56Z",
+      "statement_merge_commit": "f693766dd153a53961da418ec22c0809ca4b3d5e",
+      "prepared_full_proof_branch": "oma/mo-319325-full-proof",
+      "prepared_full_proof_commit": "a735d98023b4d4e1fc8058100530becff2a76f89"
     },
     {
       "problem_id": "mo-487192",
@@ -457,10 +487,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full three-question semisimplicity conjunction disproved over a characteristic-zero extension by a nonzero central square-zero matrix.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registration merged; no foreign full proof at19:20 all-state gate. Complete one-file proof branch prepared. Exact imported-target checker batch in progress; fresh generic claim APIHTTP500 prevents official full submission. Prepared branch is not an official PR.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9503",
-      "statement_state": "open",
-      "statement_merged": false
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T18:51:52Z",
+      "statement_merge_commit": "f96796c9123d1530f3a839bcedf10e1c7f269be7",
+      "prepared_full_proof_branch": "oma/mo-487192-full-proof",
+      "prepared_full_proof_commit": "0b8cc3ed1e0ebb8f0c068362940e02f5053400ee"
     },
     {
       "problem_id": "oeis-a382465",
@@ -479,10 +513,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full positive greedy range theorem: every even digit is immediately preceded by a smaller digit; repunit-one connectors.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registration merged; no foreign full proof at19:20 all-state gate. Complete one-file proof branch prepared. Exact imported-target checker batch in progress; fresh generic claim APIHTTP500 prevents official full submission. Prepared branch is not an official PR.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9702",
-      "statement_state": "open",
-      "statement_merged": false
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T19:01:48Z",
+      "statement_merge_commit": "f0b608ca6a0144921ee6e05377c3a084f1e498b2",
+      "prepared_full_proof_branch": "oma/oeis-a382465-full-proof",
+      "prepared_full_proof_commit": "d588a43efbc262ccdc428b7675ee81e01a474ded"
     },
     {
       "problem_id": "oeis-a382624",
@@ -501,10 +539,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full positive greedy range theorem: every even digit is immediately preceded by a larger digit; internal zero allowed; repunit-nine connectors.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registration merged; no foreign full proof at19:20 all-state gate. Complete one-file proof branch prepared. Exact imported-target checker batch in progress; fresh generic claim APIHTTP500 prevents official full submission. Prepared branch is not an official PR.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9703",
-      "statement_state": "open",
-      "statement_merged": false
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T19:01:50Z",
+      "statement_merge_commit": "b8e58eb09a54d50975683f593976562112fc9175",
+      "prepared_full_proof_branch": "oma/oeis-a382624-full-proof",
+      "prepared_full_proof_commit": "a81808c9bccca840d3386a99888feea28640462d"
     },
     {
       "problem_id": "oeis-a383062",
@@ -523,10 +565,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full nonnegative greedy range theorem: every odd digit is immediately preceded by a smaller digit; zero included; exact power-of-ten connectors.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registration merged; no foreign full proof at19:20 all-state gate. Complete one-file proof branch prepared. Exact imported-target checker batch in progress; fresh generic claim APIHTTP500 prevents official full submission. Prepared branch is not an official PR.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9704",
-      "statement_state": "open",
-      "statement_merged": false
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T19:01:55Z",
+      "statement_merge_commit": "d89481dc5b35f929470b98e04cf19fc4b8decf16",
+      "prepared_full_proof_branch": "oma/oeis-a383062-full-proof",
+      "prepared_full_proof_commit": "dc3c6781e813103e7529338b24d9712b3022fefa"
     },
     {
       "problem_id": "oeis-a390583",
@@ -549,7 +595,9 @@
       "genuine_open_status": "bounded_source_and_Bradley_prior_audit_passed_no_priority_guarantee",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10062",
       "statement_state": "open",
-      "statement_merged": false
+      "statement_merged": false,
+      "statement_merged_at": null,
+      "statement_merge_commit": null
     },
     {
       "problem_id": "mo-474511",
@@ -573,7 +621,9 @@
       "remaining_obstruction": "Full canonical proof passed and uploaded; official statementPR10398 submitted; actual merge, exact imported-target check and full proof PR remain.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10398",
       "statement_state": "open",
-      "statement_merged": false
+      "statement_merged": false,
+      "statement_merged_at": null,
+      "statement_merge_commit": null
     },
     {
       "problem_id": "oeis-a381423",
@@ -647,5 +697,6 @@
   ],
   "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T19:18:00Z"
+  "record_updated_utc": "2026-11-27T19:23:00Z",
+  "prepared_full_proof_branches": 7
 }
