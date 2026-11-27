@@ -1,0 +1,8 @@
+C2_VALUE_FAMILY: Data.Pair.c2_exists_isIntegralMeasure: complete original statement and exact supplier transport
+C2_VALUE_FAMILY: c2_exists_isFamily: complete original statement and exact supplier transport
+C2_VALUE_FAMILY: c2_exists_mFoldTwist_selmerLengthLe: complete original statement and exact supplier transport
+C2_VALUE_FAMILY: c2_exists_isFitFamily: complete original statement and exact supplier transport
+'Data.Pair.c2_exists_isIntegralMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_exists_isFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_exists_mFoldTwist_selmerLengthLe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_exists_isFitFamily' depends on axioms: [propext, Classical.choice, Quot.sound]

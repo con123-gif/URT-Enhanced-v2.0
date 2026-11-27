@@ -1,0 +1,148 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "roots": [
+    "stdClassSum_det_modKernel_eq",
+    "c2_stdClassSum_det_modKernel_eq",
+    "stdClassSum_carrierXi_eq_carrierForm",
+    "c2_stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "scope": "Independent four-root determinant/Carrier audit; general complement retained; not RH",
+  "checked_module": {
+    "name": "C2DeterminantCarrierTransport",
+    "artifacts": [
+      {
+        "name": "C2DeterminantCarrierTransport.olean",
+        "bytes": 1493520,
+        "sha256": "57f51647df44c31eebb6e9e04a1264e1eeceba15c556657db6e13210b753bf01"
+      }
+    ]
+  },
+  "checked_dependencies": [
+    {
+      "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+      "module": {
+        "name": "C2StandardExchange",
+        "artifacts": [
+          {
+            "name": "C2StandardExchange.olean",
+            "bytes": 640504,
+            "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+      "module": {
+        "name": "C2DeterminantLift",
+        "artifacts": [
+          {
+            "name": "C2DeterminantLift.olean",
+            "bytes": 186912,
+            "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+      "module": {
+        "name": "C2DeterminantExchange",
+        "artifacts": [
+          {
+            "name": "C2DeterminantExchange.olean",
+            "bytes": 1098992,
+            "sha256": "d81b5d903e8894c3d357e538efe0b510f5a45d0898e4be698b70bd045655f28a"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+      "module": {
+        "name": "C2RealMatchingStandard",
+        "artifacts": [
+          {
+            "name": "C2RealMatchingStandard.olean",
+            "bytes": 236832,
+            "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+      "module": {
+        "name": "C2DeterminantClassSum",
+        "artifacts": [
+          {
+            "name": "C2DeterminantClassSum.olean",
+            "bytes": 2026936,
+            "sha256": "15b315021a15c21c085511f70e95da388b1212219a27eac965a99e841770f53c"
+          }
+        ]
+      }
+    }
+  ],
+  "checked_base": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035600,
+        "sha256": "4ef847efc76e509f2e1f581b38a73cc76e8c31085a031eabf68d97b09ad6c46a"
+      }
+    ]
+  },
+  "guard_pairs": [
+    {
+      "original": "stdClassSum_det_modKernel_eq",
+      "candidate": "c2_stdClassSum_det_modKernel_eq",
+      "required": [
+        "c2_empty_matching",
+        "c2_determinant_exchange",
+        "c2_standard_exchange_uniform",
+        "c2_lift_inverse_determinant",
+        "c2_lift_one_empty_columns",
+        "c2_standard_column_empty",
+        "c2_real_matching_standard",
+        "c2_real_determinant_invariant",
+        "run78_equalRankThetaRatio_value",
+        "RHCharacterBoxes77.exchange_of_standard_pairs",
+        "real_matching",
+        "Space.integral_quotMeasure_eq_classSum"
+      ],
+      "forbidden": [
+        "exchange_of_partners",
+        "exchange_theorem",
+        "explicit_matching",
+        "exists_equalRankThetaRatio_value",
+        "run79_exchange_theorem",
+        "run79_explicit_matching",
+        "run79_stdClassSum_det_modKernel_eq"
+      ]
+    },
+    {
+      "original": "stdClassSum_carrierXi_eq_carrierForm",
+      "candidate": "c2_stdClassSum_carrierXi_eq_carrierForm",
+      "required": [
+        "c2_stdClassSum_det_modKernel_eq",
+        "c2_empty_matching",
+        "c2_determinant_exchange",
+        "c2_real_matching_standard",
+        "run79_explicit_matching",
+        "exchange_of_partners"
+      ],
+      "forbidden": [
+        "stdClassSum_det_modKernel_eq",
+        "run79_stdClassSum_det_modKernel_eq",
+        "run79_stdClassSum_carrierXi_eq_carrierForm",
+        "explicit_matching"
+      ]
+    }
+  ],
+  "guard_config_blob": "017c112510e5eb6f9e338b6fdf149d89499d5aa6",
+  "archive_union_before_projection": false,
+  "full_RH_replay": false
+}

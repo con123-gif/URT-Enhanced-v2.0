@@ -1,0 +1,3 @@
+'exists_isFitFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'denominatorLe_rowBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exists_mFoldTwist_selmerLengthLe' depends on axioms: [propext, Classical.choice, Quot.sound]

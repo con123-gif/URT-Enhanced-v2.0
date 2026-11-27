@@ -1,0 +1,2 @@
+{"phase": "C2StandardExchange", "theorems": ["c2_standard_exchange_uniform"], "state": "started"}
+{"theorems": ["c2_standard_exchange_uniform"], "all_named_theorems_checked": true, "full_RH_replay": false}

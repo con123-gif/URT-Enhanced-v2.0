@@ -1,0 +1,2 @@
+{"phase": "C2DeterminantWeilAction", "theorems": ["c2_definite_weil_polynomial", "c2_weil_polynomial_covariance"], "state": "started"}
+{"theorems": ["c2_definite_weil_polynomial", "c2_weil_polynomial_covariance"], "all_named_theorems_checked": true, "full_RH_replay": false}

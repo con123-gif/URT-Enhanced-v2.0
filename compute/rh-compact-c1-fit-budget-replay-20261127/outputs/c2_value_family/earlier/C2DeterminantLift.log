@@ -1,0 +1,2 @@
+{"phase": "C2DeterminantLift", "theorems": ["c2_lift_inverse_determinant", "c2_lift_one_empty_columns", "c2_standard_column_empty"], "state": "started"}
+{"theorems": ["c2_lift_inverse_determinant", "c2_lift_one_empty_columns", "c2_standard_column_empty"], "all_named_theorems_checked": true, "full_RH_replay": false}

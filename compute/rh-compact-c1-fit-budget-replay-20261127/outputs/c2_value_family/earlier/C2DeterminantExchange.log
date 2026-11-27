@@ -1,0 +1,2 @@
+{"phase": "C2DeterminantExchange", "theorems": ["c2_determinant_exchange"], "state": "started"}
+{"theorems": ["c2_determinant_exchange"], "all_named_theorems_checked": true, "full_RH_replay": false}

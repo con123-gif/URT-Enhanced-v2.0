@@ -1,0 +1,12 @@
+{
+  "source_blob": "2268ec5a79434d124afb8470c8d17cf24f416e7a",
+  "exporter_source_blob": "ee4efebb066f6775fa551ae9104cfa973e585071",
+  "independent_verifier_blob": "2e431301970196a6b786d004fb16a4320a25fe8e",
+  "collector_adapter": "strict independent const/projection union",
+  "runtime_imports_private_bodies": true,
+  "executes_module_initializers": false,
+  "new_proof_declarations_added": false,
+  "equivalence_verified": false,
+  "adopted_for_B2_or_C2": false,
+  "full_RH_replay": false
+}

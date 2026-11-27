@@ -1,0 +1,2 @@
+{"phase": "C2ValueFamilyTransport", "theorems": ["Data.Pair.c2_exists_isIntegralMeasure", "c2_exists_isFamily", "c2_exists_mFoldTwist_selmerLengthLe", "c2_exists_isFitFamily"], "state": "started"}
+{"theorems": ["Data.Pair.c2_exists_isIntegralMeasure", "c2_exists_isFamily", "c2_exists_mFoldTwist_selmerLengthLe", "c2_exists_isFitFamily"], "all_named_theorems_checked": true, "full_RH_replay": false}

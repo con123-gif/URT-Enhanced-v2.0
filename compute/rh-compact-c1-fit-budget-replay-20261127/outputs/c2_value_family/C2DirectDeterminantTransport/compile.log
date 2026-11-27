@@ -1,0 +1,6 @@
+C2_DIRECT_TRANSPORT: c2_direct_empty_matching: complete original statement and exact supplier substitution
+C2_DIRECT_TRANSPORT: c2_direct_stdClassSum_det_modKernel_eq: complete original statement and exact supplier substitution
+C2_DIRECT_TRANSPORT: c2_direct_stdClassSum_carrierXi_eq_carrierForm: complete original statement and exact supplier substitution
+'c2_direct_empty_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_direct_stdClassSum_det_modKernel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_direct_stdClassSum_carrierXi_eq_carrierForm' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,74 @@
+{
+  "c2_stdClassSum_det_modKernel_eq": {
+    "exit": 0,
+    "nodes": 119078,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "c2_direct_stdClassSum_det_modKernel_eq": {
+    "exit": 0,
+    "nodes": 118952,
+    "missing": 0,
+    "log": "audit-1.json"
+  },
+  "c2_stdClassSum_carrierXi_eq_carrierForm": {
+    "exit": 0,
+    "nodes": 119250,
+    "missing": 0,
+    "log": "audit-2.json"
+  },
+  "c2_direct_stdClassSum_carrierXi_eq_carrierForm": {
+    "exit": 0,
+    "nodes": 119262,
+    "missing": 0,
+    "log": "audit-3.json"
+  },
+  "Data.Pair.exists_isIntegralMeasure": {
+    "exit": 0,
+    "nodes": 134908,
+    "missing": 0,
+    "log": "audit-4.json"
+  },
+  "Data.Pair.c2_exists_isIntegralMeasure": {
+    "exit": 0,
+    "nodes": 134867,
+    "missing": 0,
+    "log": "audit-5.json"
+  },
+  "exists_isFamily": {
+    "exit": 0,
+    "nodes": 135338,
+    "missing": 0,
+    "log": "audit-6.json"
+  },
+  "c2_exists_isFamily": {
+    "exit": 0,
+    "nodes": 135297,
+    "missing": 0,
+    "log": "audit-7.json"
+  },
+  "exists_mFoldTwist_selmerLengthLe": {
+    "exit": 0,
+    "nodes": 140774,
+    "missing": 0,
+    "log": "audit-8.json"
+  },
+  "c2_exists_mFoldTwist_selmerLengthLe": {
+    "exit": 0,
+    "nodes": 140739,
+    "missing": 0,
+    "log": "audit-9.json"
+  },
+  "exists_isFitFamily": {
+    "exit": 0,
+    "nodes": 193295,
+    "missing": 0,
+    "log": "audit-10.json"
+  },
+  "c2_exists_isFitFamily": {
+    "exit": 0,
+    "nodes": 193265,
+    "missing": 0,
+    "log": "audit-11.json"
+  }
+}

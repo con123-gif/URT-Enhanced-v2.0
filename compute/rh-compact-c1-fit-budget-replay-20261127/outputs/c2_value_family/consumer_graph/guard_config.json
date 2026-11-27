@@ -1,0 +1,115 @@
+{
+  "pairs": [
+    {
+      "original": "c2_stdClassSum_det_modKernel_eq",
+      "candidate": "c2_direct_stdClassSum_det_modKernel_eq",
+      "required": [
+        "c2_direct_empty_matching",
+        "c2_direct_real_matching",
+        "c2_continuous_determinant_line",
+        "c2_det_polynomial_line",
+        "c2_weil_polynomial_covariance",
+        "c2_definite_weil_polynomial",
+        "c2_empty_stacked_determinant",
+        "c2_empty_matched_polynomial",
+        "c2_determinant_exchange",
+        "c2_standard_exchange_uniform",
+        "c2_lift_inverse_determinant",
+        "c2_lift_one_empty_columns",
+        "c2_standard_column_empty",
+        "c2_real_determinant_invariant",
+        "run78_equalRankThetaRatio_value",
+        "RHCharacterBoxes77.exchange_of_standard_pairs",
+        "fockPairing_polarisation",
+        "denseRange_polyVector",
+        "realPairWeil_polyVector",
+        "Space.integral_quotMeasure_eq_classSum"
+      ],
+      "forbidden": [
+        "real_matching",
+        "c2_real_matching_standard",
+        "c2_empty_matching",
+        "c2_stdClassSum_det_modKernel_eq",
+        "stdClassSum_det_modKernel_eq",
+        "exchange_of_partners",
+        "exchange_theorem",
+        "explicit_matching",
+        "exists_equalRankThetaRatio_value",
+        "run79_exchange_theorem",
+        "run79_explicit_matching",
+        "run79_stdClassSum_det_modKernel_eq"
+      ]
+    },
+    {
+      "original": "c2_stdClassSum_carrierXi_eq_carrierForm",
+      "candidate": "c2_direct_stdClassSum_carrierXi_eq_carrierForm",
+      "required": [
+        "c2_direct_stdClassSum_det_modKernel_eq",
+        "c2_direct_empty_matching",
+        "c2_direct_real_matching",
+        "c2_continuous_determinant_line",
+        "run79_explicit_matching",
+        "exchange_of_partners",
+        "real_matching"
+      ],
+      "forbidden": [
+        "c2_stdClassSum_det_modKernel_eq",
+        "c2_stdClassSum_carrierXi_eq_carrierForm",
+        "stdClassSum_det_modKernel_eq",
+        "stdClassSum_carrierXi_eq_carrierForm",
+        "run79_stdClassSum_det_modKernel_eq",
+        "run79_stdClassSum_carrierXi_eq_carrierForm",
+        "explicit_matching"
+      ]
+    },
+    {
+      "original": "Data.Pair.exists_isIntegralMeasure",
+      "candidate": "Data.Pair.c2_exists_isIntegralMeasure",
+      "required": [
+        "c2_direct_stdClassSum_det_modKernel_eq"
+      ],
+      "forbidden": []
+    },
+    {
+      "original": "exists_isFamily",
+      "candidate": "c2_exists_isFamily",
+      "required": [
+        "Data.Pair.c2_exists_isIntegralMeasure",
+        "c2_direct_stdClassSum_det_modKernel_eq"
+      ],
+      "forbidden": [
+        "Data.Pair.exists_isIntegralMeasure"
+      ]
+    },
+    {
+      "original": "exists_mFoldTwist_selmerLengthLe",
+      "candidate": "c2_exists_mFoldTwist_selmerLengthLe",
+      "required": [
+        "c2_exists_isFamily",
+        "Data.Pair.c2_exists_isIntegralMeasure",
+        "c2_direct_stdClassSum_det_modKernel_eq",
+        "exists_anticyclotomic_twist"
+      ],
+      "forbidden": [
+        "exists_isFamily",
+        "Data.Pair.exists_isIntegralMeasure"
+      ]
+    },
+    {
+      "original": "exists_isFitFamily",
+      "candidate": "c2_exists_isFitFamily",
+      "required": [
+        "c2_exists_mFoldTwist_selmerLengthLe",
+        "c2_exists_isFamily",
+        "Data.Pair.c2_exists_isIntegralMeasure",
+        "c2_direct_stdClassSum_det_modKernel_eq",
+        "denominatorLe_rowBudget"
+      ],
+      "forbidden": [
+        "exists_mFoldTwist_selmerLengthLe",
+        "exists_isFamily",
+        "Data.Pair.exists_isIntegralMeasure"
+      ]
+    }
+  ]
+}

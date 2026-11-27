@@ -1,0 +1,2 @@
+{"phase": "C2DeterminantClassSum", "theorems": ["c2_empty_matching", "c2_stdClassSum_det_modKernel_eq"], "state": "started"}
+{"theorems": ["c2_empty_matching", "c2_stdClassSum_det_modKernel_eq"], "all_named_theorems_checked": true, "full_RH_replay": false}

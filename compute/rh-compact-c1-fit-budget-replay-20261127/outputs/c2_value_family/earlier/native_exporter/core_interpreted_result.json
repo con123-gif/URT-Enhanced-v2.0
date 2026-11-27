@@ -1,0 +1,10 @@
+{
+  "returncode": 0,
+  "seconds": 1.07,
+  "log": "core_interpreted.log",
+  "argv": [
+    "/tmp/compact-c1-native-a3d1yk4o/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/earlier/native_exporter/InterpretedCore.lean"
+  ]
+}

@@ -1,0 +1,8 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/earlier/C2DeterminantLift/C2DeterminantLift.lean:43:22: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'c2_lift_inverse_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_lift_one_empty_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_standard_column_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_DETERMINANT_LIFT: original general exchange and determinant consumer absent directly

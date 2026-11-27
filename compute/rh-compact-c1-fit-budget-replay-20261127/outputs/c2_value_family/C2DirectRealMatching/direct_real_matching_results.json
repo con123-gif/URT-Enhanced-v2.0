@@ -1,0 +1,131 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "aaec88856a302d40e1e501395da463f7a0f28d50",
+  "checked_input_module": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035600,
+        "sha256": "4ef847efc76e509f2e1f581b38a73cc76e8c31085a031eabf68d97b09ad6c46a"
+      }
+    ]
+  },
+  "checked_interface_dependencies": [
+    {
+      "source_blob": "2bc7219f8db7e72f6cff11b4ac29c2f9a84ce261",
+      "module": {
+        "name": "C2DeterminantFixedLine",
+        "artifacts": [
+          {
+            "name": "C2DeterminantFixedLine.olean",
+            "bytes": 197656,
+            "sha256": "5f5a44c5bb1f0c50ab6aa36c909a03505e2f5df4c6b72b6a3fb8b3f7e1979d78"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+      "module": {
+        "name": "C2DeterminantWeilAction",
+        "artifacts": [
+          {
+            "name": "C2DeterminantWeilAction.olean",
+            "bytes": 236656,
+            "sha256": "a7e17fe3ad75baa522dac169a9304c101dbcbfa840692a4e800d4627f073f04e"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "e70b65e517b843ab4f1ce6e438879e80463db998",
+      "module": {
+        "name": "C2DeterminantContinuousLine",
+        "artifacts": [
+          {
+            "name": "C2DeterminantContinuousLine.olean",
+            "bytes": 280968,
+            "sha256": "224a7d4afd34c960c3f7ecefdf930598bf6f08148b76acc4e646da2c25e587d1"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+      "module": {
+        "name": "C2RealMatchingStandard",
+        "artifacts": [
+          {
+            "name": "C2RealMatchingStandard.olean",
+            "bytes": 236832,
+            "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Shared C1-cache replay of exact determinant/family consumers; deep C1 inputs retained",
+  "theorems": [
+    "c2_empty_stacked_determinant",
+    "c2_empty_matched_polynomial",
+    "c2_direct_real_matching"
+  ],
+  "full_RH_replay": false,
+  "native_source_build_performed": false,
+  "argv": [
+    "/tmp/compact-c1-native-a3d1yk4o/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000",
+    "-Dpp.fullNames=true",
+    "-Ddebug.skipKernelTC=false",
+    "-j",
+    "2",
+    "-R",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/C2DirectRealMatching",
+    "-o",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/C2DirectRealMatching/C2DirectRealMatching.olean",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/C2DirectRealMatching/C2DirectRealMatching.lean"
+  ],
+  "compiler": {
+    "returncode": 0,
+    "seconds": 5.52,
+    "log": "compile.log",
+    "axioms": {
+      "c2_empty_stacked_determinant": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "c2_empty_matched_polynomial": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "c2_direct_real_matching": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "direct_supplier_guards_observed": true
+  },
+  "new_Lean_execution": true,
+  "all_requested_checks_ok": true,
+  "compiled_module": {
+    "name": "C2DirectRealMatching",
+    "artifacts": [
+      {
+        "name": "C2DirectRealMatching.olean",
+        "bytes": 286704,
+        "sha256": "4c0b38b80b84ded660285c4f8b7a8fef9fb7c2d22f46ebe68ef6674b6d06fe6b"
+      }
+    ]
+  }
+}

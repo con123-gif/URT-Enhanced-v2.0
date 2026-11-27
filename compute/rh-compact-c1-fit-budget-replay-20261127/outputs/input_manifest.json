@@ -1,0 +1,37 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "peers": {
+    "fit_budget_split": {
+      "path": "specialists/galois_representations/RUN84_COMPACT_FIT_BUDGET_SPLIT.lean",
+      "source_blob": "3cbb1e320a0eb2bae1f45efbd4f72d78f6191cb0",
+      "theorems": [
+        "fit_budget_run84",
+        "exists_isFitFamily_of_budget_run84",
+        "exists_isFitFamily_run84"
+      ]
+    },
+    "packed_payment": {
+      "path": "specialists/galois_representations/RUN83_COMPACT_SINGLE_ARITHMETIC_PAYMENT.lean",
+      "source_blob": "e0142c5ccb5503d1e97256584a7f68eb5d0f625d",
+      "theorems": [
+        "RHGaloisRun83.packed_payment",
+        "exists_isFitFamily"
+      ]
+    }
+  },
+  "source_blobs": {
+    "New/Selmer/FitTwistsExist.lean": "da769eba595af2f883eed9b82dbd322a521aea14",
+    "New/Selmer/DenominatorBound.lean": "5889d96fe1a6ad7926e0df09a7d183232f91c534",
+    "New/Selmer/TwistForRows.lean": "802242498ad4530e7f52cc4f14e0a03be2c59f4d"
+  },
+  "original_theorems": [
+    "exists_isFitFamily",
+    "denominatorLe_rowBudget",
+    "exists_mFoldTwist_selmerLengthLe"
+  ],
+  "new_Lean_execution": false,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false
+}

@@ -1,0 +1,2 @@
+{"phase": "C2DirectRealMatching", "theorems": ["c2_empty_stacked_determinant", "c2_empty_matched_polynomial", "c2_direct_real_matching"], "state": "started"}
+{"theorems": ["c2_empty_stacked_determinant", "c2_empty_matched_polynomial", "c2_direct_real_matching"], "all_named_theorems_checked": true, "full_RH_replay": false}

@@ -1,0 +1,53 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/packed_payment.lean:183:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/packed_payment.lean:183:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+rowBudget {P : Parameters} (D : Data P) (ℓ : ℕ) : NNReal
+lambdaLoss (h b l : ℕ) : ℕ
+loss {P : Parameters} (D : Data P) (l : ℕ) : NNReal
+crudeUnit (ℓ : ℕ) {P : Parameters} (D : Data P) : NNReal
+exists_length_shaOdd_le (N t : ℕ) [NeZero N] (E : Type) [Field E] [NumberField E] [NumberField.IsCMField E]
+  [Algebra E Ω] (h : ∀ (x : E), (algebraMap E Ω) x ∈ cycloField N) :
+  ∃ X,
+    X ≠ 0 ∧
+      X ≤ 2 ^ (4 * (N + t + 3) ^ 27) * NumberField.classNumber E ∧
+        ∀ (l : ℕ) [_L : ThePrime l] (O : Type) [inst : CommRing O] [inst_1 : PadicIntegerRing O l],
+          HasEnoughRootsOfUnity O (Monoid.exponent (ZMod N)ˣ) →
+            ∀ e < t,
+              ∀ (n : ℕ), Module.length O (SubmoduleElem (shaOdd l E O e n)) ≤ (IsDiscreteValuationRing.addVal O) ↑X
+exists_mFoldTwist_selmerLengthLe {P : Parameters} (D : Data P) (ℓ : ℕ) [ThePrime ℓ] (ι : PadicIso ℓ) {I : Type}
+  [Finite I] {r : I → Type} [(i : I) → Fintype (r i)] {R : (i : I) → Gal(Ω/D.E) →* GL (r i) (PadicAlgCl ℓ)}
+  (h : ∀ (i : I), ∃ t J, IsRow D t J (R i)) (M : ℕ) :
+  ∃ τ,
+    ∀ (n : ↑D.LiftIndex),
+      have ϑ := τ.powTwist n;
+      IsAuxTwist (badPlaces D ℓ) ϑ.Q ϑ.invAvatar ↑(crudeUnit ℓ D) ∧
+        (∀ (i : I), ∃ γ y, SelmerLengthLe ϑ.invAvatar (R i) (↑ϑ.Q) M γ y) ∧
+          ∀ (p : D.Pair) (s : ℤˣ),
+            p.IsRamified → ‖ιℓ (p.ratio ϑ.toTameChar s)⁻¹‖ ≤ Real.exp (9 * ↑(crudeUnit ℓ D) * Real.log ↑ℓ)
+denominatorLe_rowBudget {P : Parameters} {D : Data P} {ℓ : ℕ} [ThePrime ℓ] (ι : PadicIso ℓ) (ϑ : D.Twist)
+  (hq : IsAuxTwist (badPlaces D ℓ) ϑ.Q ϑ.invAvatar ↑(crudeUnit ℓ D)) {r n : Type} [Fintype r] [Fintype n]
+  {O : AuxPair D.E r n} {E : MonoidAlgebra ℂ (O.ChosenGL r)} {Z : Submodule ℂ O.FormV}
+  (hw :
+    Z ≤
+      Submodule.span ℂ
+        {y |
+          y ∈ Z ∧
+            (∃ c,
+                y ∈ LinearMap.range (tupleProj O c) ∧
+                  IsApt O c ϑ ∧ LinearMap.range (tupleProj O c) ≤ LinearMap.range (O.groupAlgAction E)) ∧
+              ∃ z,
+                O.Lifts y z ∧
+                  ∃ R V,
+                    HasRow V z R ∧
+                      O.μ = V.μ * ϑ.toAutChar ∧
+                        ∃ γ s, SelmerLengthLe ϑ.invAvatar R (↑ϑ.Q) (⌊↑D.r * rowBudget D ℓ⌋₊ + 1) γ s}) :
+  DenominatorLe ιℓ O E Z (↑(rowBudget D ℓ) * Real.log ↑ℓ)
+HeightLe.of_le {c : ℝ} {y : PrimePadicIso → ℂ} {e : ℕ → ℝ}
+  (he : ∀ (T : Finset ℕ), (∀ l ∈ T, Nat.Prime l) → ∑ l ∈ T, e l ≤ c)
+  (h : ∀ (ι : PrimePadicIso), ‖ι.snd (y ι)‖ ≤ Real.exp (e ↑ι.fst)) : HeightLe c y
+exists_isFitFamily {P : Parameters} (D : Data P) : ∃ θ, D.IsFitFamily θ
+'RHGaloisRun83.packed_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exists_isFitFamily' depends on axioms: [propext, Classical.choice, Quot.sound]

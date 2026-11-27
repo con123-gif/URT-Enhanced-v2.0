@@ -1,0 +1,17 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/C2DeterminantWeilAction/C2DeterminantWeilAction.lean:34:24: warning: This simp argument is unused:
+  mem_blockDiagAlg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/C2DeterminantWeilAction/C2DeterminantWeilAction.lean:48:23: warning: This simp argument is unused:
+  RingHom.id_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_smul, smul_eq_mul] at H
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'c2_definite_weil_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_weil_polynomial_covariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_DEFINITE_WEIL: exact action and covariance; general real matching absent directly

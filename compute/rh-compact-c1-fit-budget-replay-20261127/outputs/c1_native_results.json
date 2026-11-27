@@ -1,0 +1,131 @@
+{
+  "scope": "C1 original-statement budget split and separate RUN83 scalar helper",
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 2.02,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 5.43,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.01,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.16,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 1.62,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.26,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 65.68,
+      "log": "mathlib_cache.log"
+    },
+    "fit_build": {
+      "returncode": 0,
+      "seconds": 9557.24,
+      "log": "fit_build.log"
+    },
+    "original_callers": {
+      "returncode": 0,
+      "seconds": 10.79,
+      "log": "original_callers.log",
+      "axioms": {
+        "exists_isFitFamily": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "denominatorLe_rowBudget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "exists_mFoldTwist_selmerLengthLe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "fit_budget_split": {
+      "returncode": 1,
+      "seconds": 22.12,
+      "log": "fit_budget_split.log",
+      "axioms": {
+        "fit_budget_run84": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "exists_isFitFamily_of_budget_run84": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "exists_isFitFamily_run84": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": false
+    },
+    "packed_payment": {
+      "returncode": 0,
+      "seconds": 5.43,
+      "log": "packed_payment.log",
+      "axioms": {
+        "RHGaloisRun83.packed_payment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "exists_isFitFamily": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "negative_zero_k": {
+      "returncode": 1,
+      "seconds": 3.02,
+      "log": "negative_zero_k.log",
+      "expected_rejection_observed": true
+    }
+  },
+  "new_Lean_execution": true,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": false,
+  "direct_type_and_dependency_guards_ok": true,
+  "transitive_graph_verified": false,
+  "packed_valuation_identity_replayed": false,
+  "failure": "C1 native checks incomplete or failed"
+}

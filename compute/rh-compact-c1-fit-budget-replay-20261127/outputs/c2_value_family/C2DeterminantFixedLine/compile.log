@@ -1,0 +1,2 @@
+'c2_det_polynomial_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_FIXED_LINE: direct polynomial determinant line; general real matching absent directly

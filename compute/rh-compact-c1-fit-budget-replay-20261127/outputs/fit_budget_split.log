@@ -1,0 +1,868 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/fit_budget_split.lean:23:47: warning: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+
+Hint: Replace the deprecated name:
+  prod_le_prod'̵
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/fit_budget_split.lean:15:2: warning: Unused tactic linter: `clear * - hT` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/fit_budget_split.lean:41:26: error: `grind` failed
+case grind.1.1.1.1.1.2.1.1.1.1.1.1.1
+P : Parameters
+D : Data P
+budget :
+  ∀ (T : Finset ℕ),
+    (∀ l ∈ T, Nat.Prime l) →
+      ∑ l ∈ T, ↑(rowBudget D l) * log ↑l ≤ D.B₀ ∧ ∑ l ∈ T, 9 * ↑(crudeUnit l D) * log ↑l ≤ D.x ^ 999
+ℓ : ℕ
+h : ThePrime ℓ
+ι : PadicIso ℓ
+p : { p // p.1.IsRankOne ↑p.2 }
+σ : P.E D.s →+* ℂ
+h_1 :
+  D.m + 1 ≤
+    if
+        (-1 *
+                ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                    1) /
+                  2) +
+              ↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                  -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs ≤
+          2 * D.h₂ ^ 2 then
+      D.k
+    else 0
+fst : D.Pair
+val_1 : ℕ
+property : val_1 ∈ Set.Icc 1 D.m
+property_1 : fst.IsRankOne val_1
+h_2 : ⟨(fst, ⟨val_1, ⋯⟩), ⋯⟩ = p
+h_3 : -1 * ↑(↑p).1.z + 10 ≤ 0
+h_4 : ↑(Fintype.card PUnit.{1}) + -1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) ≤ 0
+h_5 : ↑(↑p).1.z + -1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) ≤ 0
+h_6 :
+  (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) / 2 +
+      -1 *
+        (↑(cmSign σ) *
+          (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) + -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))) ≤
+    0
+h_7 :
+  (-1 * ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) / 2) +
+        ↑(cmSign σ) *
+          (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+            -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs ≤
+    2 * D.h₂ ^ 2
+h_8 : ¬-1 * ↑(cmSign σ) ≤ 0
+h_9 : ↑D.m * ↑D.k = 0
+h_10 : NumberField.InfinitePlace.mk σ ∈ D.thick
+left : Even D.ϱ
+right : D.ϱ % 2 = 0
+h_12 : D.ϱ = D.h₂ ^ 2
+h_13 : 2 = 2 * D.ϱ + 2
+h_14 : D.ϱ = 2 * D.ϱ
+h_15 : D.r = D.h₂ ^ 2
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] ∀ (T : Finset ℕ),
+          (∃ l, ¬(l ∈ T → Nat.Prime l)) ∨
+            ∑ x ∈ T, ↑(rowBudget D x) * log ↑x ≤
+                ↑(Fintype.card (NumberField.InfinitePlace (P.E D.s))) * ↑D.a * D.logB ^ 3 * (↑D.m * ↑D.k)⁻¹ ∧
+              ∑ x ∈ T, 9 * ↑(crudeUnit x D) * log ↑x ≤ rexp D.logX ^ 999
+    [prop] if ↑D.m * ↑D.k = 0 then (↑D.m * ↑D.k)⁻¹ = 0 else ↑D.m * ↑D.k * (↑D.m * ↑D.k)⁻¹ = 1
+    [prop] ThePrime ℓ
+    [prop] D.m + 1 ≤
+          if
+              (-1 *
+                      ((-1 *
+                            ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                                Fintype.card PUnit.{1}) +
+                          1) /
+                        2) +
+                    ↑(cmSign σ) *
+                      (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                        -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs ≤
+                2 * D.h₂ ^ 2 then
+            D.k
+          else 0
+    [prop] ↑(-1 *
+                  ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                      1) /
+                    2) +
+                ↑(cmSign σ) *
+                  (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                    -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs =
+          if
+              (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+                    2 +
+                  -1 *
+                    (↑(cmSign σ) *
+                      (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                        -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))) ≤
+                0 then
+            -1 *
+                ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                    1) /
+                  2) +
+              ↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) + -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))
+          else
+            (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+                2 +
+              -1 *
+                (↑(cmSign σ) *
+                  (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                    -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2)))
+    [prop] (↑(2 * (↑p).1.z - 20) + 20) % 2 + -1 ≤ 0
+    [prop] -1 * ((↑(2 * (↑p).1.z - 20) + 20) % 2) ≤ 0
+    [prop] -1 * ↑(2 * (↑p).1.z - 20) + 2 * ((↑(2 * (↑p).1.z - 20) + 20) / 2) + (↑(2 * (↑p).1.z - 20) + 20) % 2 + -20 = 0
+    [prop] ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) =
+          if ↑(↑p).1.z + -1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) ≤ 0 then
+            -1 * ↑(↑p).1.z + ↑((↑p).1.c (NumberField.InfinitePlace.mk σ))
+          else 0
+    [prop] (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) %
+              2 +
+            -1 ≤
+          0
+    [prop] -1 *
+            ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) %
+              2) ≤
+          0
+    [prop] ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                2 *
+                  ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                      1) /
+                    2) +
+              (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) %
+                2 +
+            -1 =
+          0
+    [prop] ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) =
+          if
+              ↑(Fintype.card PUnit.{1}) + -1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) ≤
+                0 then
+            -1 * ↑(Fintype.card PUnit.{1}) + ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)))
+          else 0
+    [prop] ↑(2 * (↑p).1.z - 20) = if -1 * ↑(↑p).1.z + 10 ≤ 0 then 2 * ↑(↑p).1.z + -20 else 0
+    [prop] D.m = 2 * D.ϱ + 2
+    [prop] 100 * D.m ≤ D.k
+    [prop] Even D.m
+    [prop] D.k ≤ D.r
+    [prop] Even D.k
+    [prop] 1 ≤ D.k
+    [prop] D.r + 1 = D.k + D.m
+    [prop] (↑(↑p).2 ∈ Set.Icc 1 D.m) = (1 ≤ ↑(↑p).2 ∧ ↑(↑p).2 ≤ D.m)
+    [prop] ↑(↑p).2 ∈ Set.Icc 1 D.m
+    [prop] (↑p).1.IsRankOne ↑(↑p).2
+    [prop] (↑p).1.IsRankOne ↑(↑p).2 =
+          (Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) = 2 * (↑p).1.z ∧
+            2 ≤ (↑p).1.z ∧
+              (↑p).1.z ∈ Set.Ioc D.m D.r ∧
+                ↑(↑p).2 ∈ Set.Icc 1 D.m ∧
+                  (↑p).1.ψ = D.ω ^ ↑↑(↑p).2 ∧
+                    (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+                      ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v)
+    [prop] (↑(cmSign σ)).natAbs = 1
+    [prop] ↑(↑(cmSign σ)).natAbs = if -1 * ↑(cmSign σ) ≤ 0 then ↑(cmSign σ) else -1 * ↑(cmSign σ)
+    [prop] D.k + D.t + 1 ≤ D.h₂
+    [prop] Even (2 * D.ϱ + 2) = (Even (2 * D.ϱ) = Even 2)
+    [prop] Even D.k = (D.k % 2 = 0)
+    [prop] ↑D.k % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.k % 2) ≤ 0
+    [prop] -1 * ↑D.k + 2 * (↑D.k / 2) + ↑D.k % 2 = 0
+    [prop] Even D.m = (D.m % 2 = 0)
+    [prop] ↑D.m % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.m % 2) ≤ 0
+    [prop] -1 * ↑D.m + 2 * (↑D.m / 2) + ↑D.m % 2 = 0
+    [prop] Odd D.r
+    [prop] ((↑p).1.z ∈ Set.Ioc D.m D.r) = (D.m + 1 ≤ (↑p).1.z ∧ (↑p).1.z ≤ D.r)
+    [prop] D.r + 6 ≤ D.t
+    [prop] Odd D.t
+    [prop] D.t = 5 * D.r
+    [prop] D.r + D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ) ≤ D.t + (↑p).1.c (NumberField.InfinitePlace.mk σ)
+    [prop] (↑p).1.c (NumberField.InfinitePlace.mk σ) ≤ D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ)
+    [prop] D.t + 2 * D.h₂ ^ 2 + 1 ≤ D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ)
+    [prop] ↑(D.k % 2) = ↑D.k
+    [prop] ↑(D.m % 2) = ↑D.m
+    [prop] Even (2 * D.ϱ) = (Even 2 ∨ Even D.ϱ)
+    [prop] Even 2
+    [prop] Even (2 * D.ϱ) = (2 * D.ϱ % 2 = 0)
+    [prop] 2 * ↑D.ϱ % 2 + -1 ≤ 0
+    [prop] -1 * (2 * ↑D.ϱ % 2) ≤ 0
+    [prop] -2 * ↑D.ϱ + 2 * (2 * ↑D.ϱ / 2) + 2 * ↑D.ϱ % 2 = 0
+    [prop] (¬Odd D.t) = Even D.t
+    [prop] (¬Odd D.r) = Even D.r
+    [prop] Odd D.t = (D.t % 2 = 1)
+    [prop] ↑D.t % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.t % 2) ≤ 0
+    [prop] -1 * ↑D.t + 2 * (↑D.t / 2) + ↑D.t % 2 = 0
+    [prop] Odd D.r = (D.r % 2 = 1)
+    [prop] ↑D.r % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.r % 2) ≤ 0
+    [prop] -1 * ↑D.r + 2 * (↑D.r / 2) + ↑D.r % 2 = 0
+    [prop] D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ) =
+          (D.h₂ + if NumberField.InfinitePlace.mk σ ∈ D.thick then D.b₁ else D.b₂) + ↑(↑p).2 * D.h
+    [prop] ↑(2 * D.ϱ % 2) = 2 * ↑D.ϱ
+    [prop] ↑(D.t % 2) = ↑D.t
+    [prop] ↑(D.r % 2) = ↑D.r
+    [prop] Even (5 * D.r) = (Even 5 ∨ Even D.r)
+    [prop] Even D.r = (D.r % 2 = 0)
+    [prop] Even D.t = (D.t % 2 = 0)
+    [prop] Even D.ϱ = (D.ϱ % 2 = 0)
+    [prop] ↑D.ϱ % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.ϱ % 2) ≤ 0
+    [prop] -1 * ↑D.ϱ + 2 * (↑D.ϱ / 2) + ↑D.ϱ % 2 = 0
+    [prop] D.h = 2 * D.h₂
+    [prop] ↑(D.ϱ % 2) = ↑D.ϱ
+    [prop] ¬Even 5
+    [prop] val_1 ∈ Set.Icc 1 D.m
+    [prop] fst.IsRankOne val_1
+    [prop] ⟨(fst, ⟨val_1, ⋯⟩), ⋯⟩ = p
+    [prop] -1 * ↑(↑p).1.z + 10 ≤ 0
+    [prop] ↑(Fintype.card PUnit.{1}) + -1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) ≤ 0
+    [prop] ↑(↑p).1.z + -1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) ≤ 0
+    [prop] (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+              2 +
+            -1 *
+              (↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                  -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))) ≤
+          0
+    [prop] (-1 *
+                ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                    1) /
+                  2) +
+              ↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                  -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs ≤
+          2 * D.h₂ ^ 2
+    [prop] ¬-1 * ↑(cmSign σ) ≤ 0
+    [prop] ↑D.m * ↑D.k = 0
+    [prop] NumberField.InfinitePlace.mk σ ∈ D.thick
+    [prop] Even D.ϱ
+    [prop] D.ϱ % 2 = 0
+    [prop] D.ϱ = D.h₂ ^ 2
+    [prop] Even (D.h₂ ^ 2) = Even D.h₂
+    [prop] Even (2 * D.h₂ ^ 2) = (Even 2 ∨ Even (D.h₂ ^ 2))
+    [prop] Even D.h₂ = (D.h₂ % 2 = 0)
+    [prop] ↑D.h₂ % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.h₂ % 2) ≤ 0
+    [prop] -1 * ↑D.h₂ + 2 * (↑D.h₂ / 2) + ↑D.h₂ % 2 = 0
+    [prop] ↑(D.h₂ % 2) = ↑D.h₂
+    [prop] 2 = 2 * D.ϱ + 2
+    [prop] D.ϱ = 2 * D.ϱ
+    [prop] D.r = D.h₂ ^ 2
+  [eqc] True propositions
+    [prop] ThePrime ℓ
+    [prop] (↑D.m * ↑D.k)⁻¹ = 0
+    [prop] ↑D.m * ↑D.k = 0
+    [prop] fst.IsRankOne val_1
+    [prop] (↑p).1.IsRankOne ↑(↑p).2
+    [prop] ↑(Fintype.card PUnit.{1}) + -1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) ≤ 0
+    [prop] ↑(↑p).1.z + -1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) ≤ 0
+    [prop] (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+              2 +
+            -1 *
+              (↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                  -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))) ≤
+          0
+    [prop] ↑D.h₂ % 2 + -1 ≤ 0
+    [prop] ↑D.k % 2 + -1 ≤ 0
+    [prop] ↑D.m % 2 + -1 ≤ 0
+    [prop] ↑D.r % 2 + -1 ≤ 0
+    [prop] ↑D.t % 2 + -1 ≤ 0
+    [prop] ↑D.ϱ % 2 + -1 ≤ 0
+    [prop] (↑(2 * (↑p).1.z - 20) + 20) % 2 + -1 ≤ 0
+    [prop] (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) %
+              2 +
+            -1 ≤
+          0
+    [prop] 2 * ↑D.ϱ % 2 + -1 ≤ 0
+    [prop] -1 * ↑(↑p).1.z + 10 ≤ 0
+    [prop] -1 * (↑D.h₂ % 2) ≤ 0
+    [prop] -1 * (↑D.k % 2) ≤ 0
+    [prop] -1 * (↑D.m % 2) ≤ 0
+    [prop] -1 * (↑D.r % 2) ≤ 0
+    [prop] -1 * (↑D.t % 2) ≤ 0
+    [prop] -1 * (↑D.ϱ % 2) ≤ 0
+    [prop] -1 * ((↑(2 * (↑p).1.z - 20) + 20) % 2) ≤ 0
+    [prop] -1 *
+            ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) %
+              2) ≤
+          0
+    [prop] -1 * (2 * ↑D.ϱ % 2) ≤ 0
+    [prop] D.m + 1 ≤
+          if
+              (-1 *
+                      ((-1 *
+                            ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                                Fintype.card PUnit.{1}) +
+                          1) /
+                        2) +
+                    ↑(cmSign σ) *
+                      (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                        -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs ≤
+                2 * D.h₂ ^ 2 then
+            D.k
+          else 0
+    [prop] val_1 ∈ Set.Icc 1 D.m
+    [prop] ↑(↑p).2 ∈ Set.Icc 1 D.m
+    [prop] if ↑D.m * ↑D.k = 0 then (↑D.m * ↑D.k)⁻¹ = 0 else ↑D.m * ↑D.k * (↑D.m * ↑D.k)⁻¹ = 1
+    [prop] ∀ (T : Finset ℕ),
+          (∃ l, ¬(l ∈ T → Nat.Prime l)) ∨
+            ∑ x ∈ T, ↑(rowBudget D x) * log ↑x ≤
+                ↑(Fintype.card (NumberField.InfinitePlace (P.E D.s))) * ↑D.a * D.logB ^ 3 * (↑D.m * ↑D.k)⁻¹ ∧
+              ∑ x ∈ T, 9 * ↑(crudeUnit x D) * log ↑x ≤ rexp D.logX ^ 999
+    [prop] Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) = 2 * (↑p).1.z ∧
+          2 ≤ (↑p).1.z ∧
+            (↑p).1.z ∈ Set.Ioc D.m D.r ∧
+              ↑(↑p).2 ∈ Set.Icc 1 D.m ∧
+                (↑p).1.ψ = D.ω ^ ↑↑(↑p).2 ∧
+                  (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+                    ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v
+    [prop] (↑p).1.ψ = D.ω ^ ↑↑(↑p).2 ∧
+          (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+            ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v
+    [prop] 1 ≤ ↑(↑p).2 ∧ ↑(↑p).2 ≤ D.m
+    [prop] 2 ≤ (↑p).1.z ∧
+          (↑p).1.z ∈ Set.Ioc D.m D.r ∧
+            ↑(↑p).2 ∈ Set.Icc 1 D.m ∧
+              (↑p).1.ψ = D.ω ^ ↑↑(↑p).2 ∧
+                (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+                  ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v
+    [prop] ↑(↑p).2 ∈ Set.Icc 1 D.m ∧
+          (↑p).1.ψ = D.ω ^ ↑↑(↑p).2 ∧
+            (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+              ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v
+    [prop] (↑p).1.z ∈ Set.Ioc D.m D.r ∧
+          ↑(↑p).2 ∈ Set.Icc 1 D.m ∧
+            (↑p).1.ψ = D.ω ^ ↑↑(↑p).2 ∧
+              (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+                ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v
+    [prop] (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+          ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v
+    [prop] (↑p).1.IsRankOne ↑(↑p).2 =
+          (Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) = 2 * (↑p).1.z ∧
+            2 ≤ (↑p).1.z ∧
+              (↑p).1.z ∈ Set.Ioc D.m D.r ∧
+                ↑(↑p).2 ∈ Set.Icc 1 D.m ∧
+                  (↑p).1.ψ = D.ω ^ ↑↑(↑p).2 ∧
+                    (∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v) ∧
+                      ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v)
+    [prop] (↑(↑p).2 ∈ Set.Icc 1 D.m) = (1 ≤ ↑(↑p).2 ∧ ↑(↑p).2 ≤ D.m)
+    [prop] Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) = 2 * (↑p).1.z
+    [prop] (↑p).1.ψ = D.ω ^ ↑↑(↑p).2
+    [prop] Even D.k
+    [prop] Even D.m
+    [prop] (-1 *
+                ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                    1) /
+                  2) +
+              ↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                  -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs ≤
+          2 * D.h₂ ^ 2
+    [prop] D.k ≤ D.r
+    [prop] 1 ≤ D.k
+    [prop] 1 ≤ ↑(↑p).2
+    [prop] 2 ≤ (↑p).1.z
+    [prop] ↑(↑p).2 ≤ D.m
+    [prop] (↑p).1.c (NumberField.InfinitePlace.mk σ) ≤ D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ)
+    [prop] D.r + D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ) ≤ D.t + (↑p).1.c (NumberField.InfinitePlace.mk σ)
+    [prop] D.k + D.t + 1 ≤ D.h₂
+    [prop] 100 * D.m ≤ D.k
+    [prop] (↑p).1.z ∈ Set.Ioc D.m D.r
+    [prop] ∀ (v : NumberField.InfinitePlace (P.E D.s)), (↑p).1.c v ≤ D.w (↑(↑p).2) v
+    [prop] ∀ (v : NumberField.InfinitePlace (P.E D.s)), D.r + D.w (↑(↑p).2) v ≤ D.t + (↑p).1.c v
+    [prop] D.m + 1 ≤ (↑p).1.z ∧ (↑p).1.z ≤ D.r
+    [prop] Even D.k = (D.k % 2 = 0)
+    [prop] Even D.m = (D.m % 2 = 0)
+    [prop] Even (2 * D.ϱ + 2) = (Even (2 * D.ϱ) = Even 2)
+    [prop] Even (2 * D.ϱ) = Even 2
+    [prop] ((↑p).1.z ∈ Set.Ioc D.m D.r) = (D.m + 1 ≤ (↑p).1.z ∧ (↑p).1.z ≤ D.r)
+    [prop] 2 = 2 * D.ϱ + 2
+    [prop] D.k % 2 = 0
+    [prop] D.m % 2 = 0
+    [prop] Even 2
+    [prop] Even (2 * D.ϱ + 2)
+    [prop] Even (2 * D.ϱ)
+    [prop] Odd D.r
+    [prop] Odd D.t
+    [prop] (↑p).1.z ≤ D.r
+    [prop] D.m + 1 ≤ (↑p).1.z
+    [prop] D.r + 6 ≤ D.t
+    [prop] D.t + 2 * D.h₂ ^ 2 + 1 ≤ D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ)
+    [prop] NumberField.InfinitePlace.mk σ ∈ D.thick
+    [prop] Even 2 ∨ Even D.ϱ
+    [prop] Even 2 ∨ Even (D.h₂ ^ 2)
+    [prop] (¬Odd D.r) = Even D.r
+    [prop] (¬Odd D.t) = Even D.t
+    [prop] Even (2 * D.ϱ) = (Even 2 ∨ Even D.ϱ)
+    [prop] Even (2 * D.ϱ) = (2 * D.ϱ % 2 = 0)
+    [prop] Even (2 * D.h₂ ^ 2) = (Even 2 ∨ Even (D.h₂ ^ 2))
+    [prop] Odd D.r = (D.r % 2 = 1)
+    [prop] Odd D.t = (D.t % 2 = 1)
+    [prop] D.ϱ = 2 * D.ϱ
+    [prop] D.r % 2 = 1
+    [prop] D.t % 2 = 1
+    [prop] 2 * D.ϱ % 2 = 0
+    [prop] Even D.ϱ
+    [prop] Even (2 * D.h₂ ^ 2)
+    [prop] Even D.r = (D.r % 2 = 0)
+    [prop] Even D.t = (D.t % 2 = 0)
+    [prop] Even D.ϱ = (D.ϱ % 2 = 0)
+    [prop] Even (5 * D.r) = (Even 5 ∨ Even D.r)
+    [prop] Even (D.h₂ ^ 2) = Even D.h₂
+    [prop] D.ϱ % 2 = 0
+    [prop] Even D.h₂
+    [prop] Even (D.h₂ ^ 2)
+    [prop] Even D.h₂ = (D.h₂ % 2 = 0)
+    [prop] D.h₂ % 2 = 0
+  [eqc] False propositions
+    [prop] -1 * ↑(cmSign σ) ≤ 0
+    [prop] ¬Odd D.r
+    [prop] ¬Odd D.t
+    [prop] Even D.r
+    [prop] Even D.t
+    [prop] Even 5 ∨ Even D.r
+    [prop] D.r % 2 = 0
+    [prop] D.t % 2 = 0
+    [prop] Even 5
+    [prop] Even (5 * D.r)
+  [eqc] Equivalence classes
+    [eqc] {p, ⟨↑p, ⋯⟩, ⟨(fst, ⟨val_1, ⋯⟩), ⋯⟩}
+    [eqc] {fst, (↑p).1}
+      [eqc] {((↑p).1, (↑p).2).1}
+    [eqc] {val_1, ↑(↑p).2}
+      [eqc] {↑⟨↑(↑p).2, ⋯⟩, ↑⟨↑(↑p).2, ⋯⟩}
+    [eqc] {D.m, 2, 2 * D.ϱ + 2}
+    [eqc] {Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)), 2 * (↑p).1.z}
+    [eqc] {(↑D.m * ↑D.k)⁻¹,
+        0,
+        ↑(Fintype.card (NumberField.InfinitePlace (P.E D.s))) * ↑D.a * D.logB ^ 3 * (↑D.m * ↑D.k)⁻¹}
+      [eqc] {↑D.m * ↑D.k}
+    [eqc] {-1 * (↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) * ↑(cmSign σ)) +
+            -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2 * ↑(cmSign σ)) +
+          -1 *
+            ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+              2),
+        -1 *
+            ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+              2) +
+          ↑(cmSign σ) *
+            (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) + -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))}
+      [eqc] {↑(-1 *
+                  ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                      1) /
+                    2) +
+                ↑(cmSign σ) *
+                  (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                    -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs,
+          if
+              (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+                    2 +
+                  -1 *
+                    (↑(cmSign σ) *
+                      (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                        -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))) ≤
+                0 then
+            -1 *
+                ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                    1) /
+                  2) +
+              ↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) + -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))
+          else
+            (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+                2 +
+              -1 *
+                (↑(cmSign σ) *
+                  (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                    -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2)))}
+    [eqc] {0, D.k % 2, D.m % 2, 2 * D.ϱ % 2, D.ϱ % 2, D.h₂ % 2}
+    [eqc] {1, (↑(cmSign σ)).natAbs, D.r % 2, D.t % 2}
+    [eqc] {(↑p).2, ⟨val_1, ⋯⟩, ⟨↑(↑p).2, ⋯⟩, ⟨↑(↑p).2, ⋯⟩}
+      [eqc] {((↑p).1, (↑p).2).2}
+    [eqc] {↑p, (fst, ⟨val_1, ⋯⟩), ((↑p).1, (↑p).2)}
+      [eqc] {↑⟨↑p, ⋯⟩}
+    [eqc] {2 * D.h₂ ^ 2, D.h₂ ^ 2, D.ϱ, 2 * D.ϱ}
+    [eqc] {D.r, D.h₂ ^ 2}
+    [eqc] {D.t, 5 * D.r}
+    [eqc] {(↑p).1.ψ, D.ω ^ ↑↑(↑p).2}
+    [eqc] {D.ϱ = D.h₂ ^ 2, D.r = D.h₂ ^ 2}
+    [eqc] {D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ),
+        (D.h₂ + if NumberField.InfinitePlace.mk σ ∈ D.thick then D.b₁ else D.b₂) + ↑(↑p).2 * D.h}
+    [eqc] {D.k + D.m, D.r + 1}
+    [eqc] {D.h, 2 * D.h₂}
+    [eqc] others
+      [eqc] {↑D.h, ↑(2 * D.h₂)}
+      [eqc] {↑D.m, ↑2, 2, ↑(2 * D.ϱ + 2)}
+      [eqc] {↑D.r, ↑(D.h₂ ^ 2)}
+      [eqc] {↑D.t, ↑(5 * D.r)}
+      [eqc] {↑D.ϱ, ↑(2 * D.h₂ ^ 2), ↑(D.h₂ ^ 2), ↑(2 * D.ϱ)}
+      [eqc] {↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))), ↑(2 * (↑p).1.z)}
+      [eqc] {↑0,
+          0,
+          ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                2 *
+                  ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                      1) /
+                    2) +
+              (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) %
+                2 +
+            -1,
+          -1 * ↑(2 * (↑p).1.z - 20) + 2 * ((↑(2 * (↑p).1.z - 20) + 20) / 2) + (↑(2 * (↑p).1.z - 20) + 20) % 2 + -20,
+          -1 * ↑D.h₂ + 2 * (↑D.h₂ / 2) + ↑D.h₂ % 2,
+          -1 * ↑D.k + 2 * (↑D.k / 2) + ↑D.k % 2,
+          -1 * ↑D.m + 2 * (↑D.m / 2) + ↑D.m % 2,
+          -1 * ↑D.r + 2 * (↑D.r / 2) + ↑D.r % 2,
+          -1 * ↑D.t + 2 * (↑D.t / 2) + ↑D.t % 2,
+          -1 * ↑D.ϱ + 2 * (↑D.ϱ / 2) + ↑D.ϱ % 2,
+          -2 * ↑D.ϱ + 2 * (2 * ↑D.ϱ / 2) + 2 * ↑D.ϱ % 2,
+          2 * ↑D.ϱ,
+          ↑(D.k % 2),
+          ↑(D.m % 2),
+          ↑(2 * D.ϱ % 2),
+          ↑(D.ϱ % 2),
+          ↑(D.h₂ % 2)}
+      [eqc] {↑1,
+          if -1 * ↑(cmSign σ) ≤ 0 then ↑(cmSign σ) else -1 * ↑(cmSign σ),
+          -1 * ↑(cmSign σ),
+          ↑(↑(cmSign σ)).natAbs,
+          ↑(D.r % 2),
+          ↑(D.t % 2)}
+      [eqc] {↑(D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ)),
+          ↑↑(↑p).2 * ↑D.h + ↑D.h₂ + ↑(if NumberField.InfinitePlace.mk σ ∈ D.thick then D.b₁ else D.b₂),
+          ↑((D.h₂ + if NumberField.InfinitePlace.mk σ ∈ D.thick then D.b₁ else D.b₂) + ↑(↑p).2 * D.h)}
+      [eqc] {↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}),
+          if
+              ↑(Fintype.card PUnit.{1}) + -1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) ≤
+                0 then
+            -1 * ↑(Fintype.card PUnit.{1}) + ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)))
+          else 0,
+          -1 * ↑(Fintype.card PUnit.{1}) + ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)))}
+      [eqc] {↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z),
+          if ↑(↑p).1.z + -1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) ≤ 0 then
+            -1 * ↑(↑p).1.z + ↑((↑p).1.c (NumberField.InfinitePlace.mk σ))
+          else 0,
+          -1 * ↑(↑p).1.z + ↑((↑p).1.c (NumberField.InfinitePlace.mk σ))}
+      [eqc] {↑(2 * (↑p).1.z - 20), if -1 * ↑(↑p).1.z + 10 ≤ 0 then 2 * ↑(↑p).1.z + -20 else 0, 2 * ↑(↑p).1.z + -20}
+      [eqc] {↑(2 * (↑p).1.z - 20) + 20, 2 * ↑(↑p).1.z}
+      [eqc] {↑D.r, ↑(D.h₂ ^ 2)}
+      [eqc] {↑(D.k + D.m), ↑(D.r + 1)}
+      [eqc] {D.b₁, if NumberField.InfinitePlace.mk σ ∈ D.thick then D.b₁ else D.b₂}
+      [eqc] {↑D.k, ↑D.m, ↑(D.k % 2), ↑(D.m % 2), ↑D.ϱ, ↑(2 * D.ϱ % 2), 2 * ↑D.ϱ, ↑(D.ϱ % 2), ↑D.h₂, ↑(D.h₂ % 2)}
+      [eqc] {↑D.r, ↑D.t, ↑(D.r % 2), ↑(D.t % 2)}
+  [cases] Case analyses
+    [cases] [1/1]: p
+      [cases] source: Initial goal
+    [cases] [1/2]: if -1 * ↑(↑p).1.z + 10 ≤ 0 then 2 * ↑(↑p).1.z + -20 else 0
+      [cases] source: Initial goal
+    [cases] [1/2]: if
+            ↑(Fintype.card PUnit.{1}) + -1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) ≤
+              0 then
+          -1 * ↑(Fintype.card PUnit.{1}) + ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)))
+        else 0
+      [cases] source: Initial goal
+    [cases] [1/2]: if ↑(↑p).1.z + -1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) ≤ 0 then
+          -1 * ↑(↑p).1.z + ↑((↑p).1.c (NumberField.InfinitePlace.mk σ))
+        else 0
+      [cases] source: Initial goal
+    [cases] [1/2]: if
+            (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) /
+                  2 +
+                -1 *
+                  (↑(cmSign σ) *
+                    (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                      -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))) ≤
+              0 then
+          -1 *
+              ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                  1) /
+                2) +
+            ↑(cmSign σ) *
+              (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) + -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))
+        else
+          (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) + 1) / 2 +
+            -1 *
+              (↑(cmSign σ) *
+                (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) + -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2)))
+      [cases] source: Initial goal
+    [cases] [1/2]: if
+            (-1 *
+                    ((-1 *
+                          ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                              Fintype.card PUnit.{1}) +
+                        1) /
+                      2) +
+                  ↑(cmSign σ) *
+                    (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                      -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs ≤
+              2 * D.h₂ ^ 2 then
+          D.k
+        else 0
+      [cases] source: Initial goal
+    [cases] [2/2]: if -1 * ↑(cmSign σ) ≤ 0 then ↑(cmSign σ) else -1 * ↑(cmSign σ)
+      [cases] source: E-matching `Int.units_natAbs`
+    [cases] [1/2]: if ↑D.m * ↑D.k = 0 then (↑D.m * ↑D.k)⁻¹ = 0 else ↑D.m * ↑D.k * (↑D.m * ↑D.k)⁻¹ = 1
+      [cases] source: Initial goal
+    [cases] [1/2]: if NumberField.InfinitePlace.mk σ ∈ D.thick then D.b₁ else D.b₂
+      [cases] source: E-matching `w.eq_1`
+    [cases] [1/2]: Even D.ϱ = (D.ϱ % 2 = 0)
+      [cases] source: E-matching `Nat.even_iff`
+    [cases] [1/2]: D.ϱ = D.h₂ ^ 2
+      [cases] source: Model-based theory combination at argument #5 of
+            2 * D.ϱ
+          and
+            2 * D.h₂ ^ 2
+    [cases] [1/2]: 2 = 2 * D.ϱ + 2
+      [cases] source: Model-based theory combination at argument #2 of
+            Even 2
+          and
+            Even D.m
+    [cases] [1/2]: D.ϱ = 2 * D.ϱ
+      [cases] source: Model-based theory combination at argument #2 of
+            Even D.ϱ
+          and
+            Even (2 * D.ϱ)
+    [cases] [1/2]: D.r = D.h₂ ^ 2
+      [cases] source: Model-based theory combination at argument #5 of
+            2 * D.h₂ ^ 2
+          and
+            5 * D.r
+  [ematch] E-matching patterns
+    [thm] Nat.pow_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] Nat.div_pow_of_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] m_eq_two_mul_varrho_add_two: [@m #1 #0]
+    [thm] hundred_mul_m_le_k: [@m #1 #0]
+    [thm] m_even: [@m #1 #0]
+    [thm] k_le_r: [@k #1 #0]
+    [thm] k_even: [@k #1 #0]
+    [thm] k_pos: [@k #1 #0]
+    [thm] r_add: [@k #1 #0]
+    [thm] budget: [@LE.le `[ℝ] `[instLE] (@Finset.sum `[ℕ] `[ℝ] `[instAddCommMonoid] #0 `[fun x =>
+            ↑(rowBudget D x) *
+              log ↑x]) `[↑(Fintype.card (NumberField.InfinitePlace (P.E D.s))) * ↑D.a * D.logB ^ 3 * (↑D.m * ↑D.k)⁻¹]]
+    [thm] budget: [@Finset.sum `[ℕ] `[ℝ] `[instAddCommMonoid] #0 `[fun x => ↑(rowBudget D x) * log ↑x]]
+    [thm] budget: [@LE.le `[ℝ] `[instLE] (@Finset.sum `[ℕ] `[ℝ] `[instAddCommMonoid] #0 `[fun x =>
+            9 * ↑(crudeUnit x D) * log ↑x]) `[rexp D.logX ^ 999]]
+    [thm] budget: [@Finset.sum `[ℕ] `[ℝ] `[instAddCommMonoid] #0 `[fun x => 9 * ↑(crudeUnit x D) * log ↑x]]
+    [thm] Set.Ioc.mk_one: [@Subtype.mk #6 _ (@OfNat.ofNat _ `[1] _) #0]
+    [thm] Set.Ico.mk_zero: [@Subtype.mk #6 _ (@OfNat.ofNat _ `[0] _) #0]
+    [thm] Set.Icc.mk_one: [@Subtype.mk #5 _ (@OfNat.ofNat _ `[1] _) #0]
+    [thm] Set.Icc.mk_zero: [@Subtype.mk #5 _ (@OfNat.ofNat _ `[0] _) #0]
+    [thm] Inclusion.IntervalDyadicReal.mem_iff_mem_map: [@Membership.mem `[ℝ] `[Inclusion.Interval
+           Dyadic] `[Inclusion.instMembershipOfToSet] #0 #1]
+    [thm] notMem_zero: [@Membership.mem #1 _ _ (@OfNat.ofNat _ `[0] _) #0]
+    [thm] Set.mem_Icc: [@Membership.mem #4 _ _ (@Set.Icc _ #3 #2 #1) #0]
+    [thm] Subtype.property: [@Subtype.val #2 #1 #0]
+    [thm] Pair.IsRankOne.eq_1: [@Pair.IsRankOne #3 #2 #1 #0]
+    [thm] Int.units_natAbs: [@Units.val `[ℤ] `[Int.instMonoid] #0]
+    [thm] !(D.nat_lt_of_hasLogBound : 2 * D.h₂ ^ 2 + D.t < D.w _ _): [@w `[P] `[D] #1 #0]
+    [thm] Finset.subset_iff: [@LE.le (Finset #2) _ #1 #0]
+    [thm] Set.subset_def: [@LE.le _ _ #1 #0]
+    [thm] Multiset.mem_add: [@Membership.mem #3 _ _ (@HAdd.hAdd _ _ _ _ #1 #0) #2]
+    [thm] k_add_t_add_one_le_h₂: [@h₂ #1 #0]
+    [thm] ZMod.natCast_mod: [@NatCast.natCast _ _ (@HMod.hMod `[ℕ] `[ℕ] `[ℕ] `[instHMod] #1 #0)]
+    [thm] Int.even_coe_nat: [@Even `[ℤ] `[Int.instAdd] (@NatCast.natCast `[ℤ] `[instNatCastInt] #0)]
+    [thm] Int.even_pow: [@Even `[ℤ] `[Int.instAdd] (@HPow.hPow `[ℤ] `[ℕ] `[ℤ] `[instHPow] #1 #0)]
+    [thm] Int.even_mul: [@Even `[ℤ] `[Int.instAdd] (@HMul.hMul `[ℤ] `[ℤ] `[ℤ] `[instHMul] #1 #0)]
+    [thm] Int.even_iff: [@Even `[ℤ] `[Int.instAdd] #0]
+    [thm] Nat.even_pow: [@Even `[ℕ] `[instAddNat] (@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #1 #0)]
+    [thm] Nat.even_mul: [@Even `[ℕ] `[instAddNat] (@HMul.hMul `[ℕ] `[ℕ] `[ℕ] `[instHMul] #1 #0)]
+    [thm] Nat.even_add: [@Even `[ℕ] `[instAddNat] (@HAdd.hAdd `[ℕ] `[ℕ] `[ℕ] `[instHAdd] #1 #0)]
+    [thm] Nat.even_iff: [@Even `[ℕ] `[instAddNat] #0]
+    [thm] Even.zero: [@Even #1 _ (@OfNat.ofNat _ `[0] _)]
+    [thm] r_odd: [@r #1 #0]
+    [thm] Set.mem_Ioc: [@Membership.mem #4 _ _ (@Set.Ioc _ #3 #2 #1) #0]
+    [thm] r_add_six_le_t: [@t #1 #0]
+    [thm] t_odd: [@t #1 #0]
+    [thm] t.eq_1: [@t #1 #0]
+    [thm] local_0: [@LE.le `[ℕ] `[instLENat] (@HAdd.hAdd `[ℕ] `[ℕ] `[ℕ] `[instHAdd] `[D.r] (@w `[P] `[D] `[↑(↑p).2] #0)) (@HAdd.hAdd `[ℕ] `[ℕ] `[ℕ] `[instHAdd] `[D.t] (@Pair.c `[P] `[D] `[(↑p).1] #0))]
+    [thm] local_0: [@w `[P] `[D] `[↑(↑p).2] #0]
+    [thm] local_0: [@Pair.c `[P] `[D] `[(↑p).1] #0]
+    [thm] local_1: [@LE.le `[ℕ] `[instLENat] (@Pair.c `[P] `[D] `[(↑p).1] #0) (@w `[P] `[D] `[↑(↑p).2] #0)]
+    [thm] local_1: [@Pair.c `[P] `[D] `[(↑p).1] #0]
+    [thm] local_1: [@w `[P] `[D] `[↑(↑p).2] #0]
+    [thm] Int.not_odd_iff_even: [@Odd `[ℤ] `[Int.instSemiring] #0]
+    [thm] Int.odd_iff: [@Odd `[ℤ] `[Int.instSemiring] #0]
+    [thm] Nat.not_odd_iff_even: [@Odd `[ℕ] `[Nat.instSemiring] #0]
+    [thm] Nat.odd_iff: [@Odd `[ℕ] `[Nat.instSemiring] #0]
+    [thm] w.eq_1: [@w #3 #2 #1 #0]
+    [thm] Data.h.eq_1: [@Data.h #1 #0]
+  [cutsat] Assignment satisfying linear constraints
+    [assign] ℓ := 11
+    [assign] val_1 := 1
+    [assign] (-1 *
+              ((-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                  1) /
+                2) +
+            ↑(cmSign σ) *
+              (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs := 402
+    [assign] D.a := 9
+    [assign] D.h₂ := 1206
+    [assign] D.k := 200
+    [assign] D.m := 2
+    [assign] D.s := 8
+    [assign] Fintype.card PUnit.{1} := 20
+    [assign] Fintype.card (NumberField.InfinitePlace (P.E D.s)) := 7
+    [assign] Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) := 20
+    [assign] (↑p).1.z := 10
+    [assign] ↑(↑p).2 := 1
+    [assign] ↑⟨↑(↑p).2, ⋯⟩ := 1
+    [assign] ↑⟨↑(↑p).2, ⋯⟩ := 1
+    [assign] ↑(cmSign σ) := -1
+    [assign] (↑p).1.c (NumberField.InfinitePlace.mk σ) := 402
+    [assign] 「↑D.h₂ ^ 2」 := 201
+    [assign] 「D.h₂ ^ 2」 := 0
+    [assign] (↑(cmSign σ)).natAbs := 1
+    [assign] D.r := 201
+    [assign] D.t := 1005
+    [assign] D.ϱ := 0
+    [assign] D.w (↑(↑p).2) (NumberField.InfinitePlace.mk σ) := 1206
+    [assign] 「D.h₂ ^ 2」 := 201
+    [assign] D.b₁ := 0
+    [assign] D.h := 2412
+  [linarith] Linarith assignment for `ℝ`
+    [assign] rexp D.logX := 12
+    [assign] D.logB := 7
+    [assign] D.logX := 13
+    [assign] 「rexp D.logX ^ 999」 := 11
+    [assign] 「D.logB ^ 3」 := 6
+  [ring] Rings
+    [ring] Ring `ℝ`
+      [basis] Basis
+        [_] ↑D.m * ↑D.k = 0
+        [_] (↑D.m * ↑D.k)⁻¹ = 0
+    [ring] Ring `ℤ`
+      [basis] Basis
+        [_] ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                    2 *
+                      ((-1 *
+                            ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                                Fintype.card PUnit.{1}) +
+                          1) /
+                        2) +
+                  (-1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) - Fintype.card PUnit.{1}) +
+                      1) %
+                    2 +
+                -1 =
+              0
+        [_] ↑(2 * (↑p).1.z - 20) + -2 * ((↑(2 * (↑p).1.z - 20) + 20) / 2) + -1 * ((↑(2 * (↑p).1.z - 20) + 20) % 2) +
+                20 =
+              0
+        [_] ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) + ↑(↑p).1.z +
+                -1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) =
+              0
+        [_] 2 * ((↑(2 * (↑p).1.z - 20) + 20) / 2) + (↑(2 * (↑p).1.z - 20) + 20) % 2 + -2 * ↑(↑p).1.z = 0
+        [_] 2 *
+                        ((-1 *
+                              ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                                  Fintype.card PUnit.{1}) +
+                            1) /
+                          2) +
+                      (-1 *
+                            ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                                Fintype.card PUnit.{1}) +
+                          1) %
+                        2 +
+                    -1 * ↑(Fintype.card PUnit.{1}) +
+                  ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) +
+                -1 =
+              0
+        [_] ↑(cmSign σ) + 1 = 0
+        [_] 2 *
+                            ↑(-1 *
+                                    ((-1 *
+                                          ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                                              Fintype.card PUnit.{1}) +
+                                        1) /
+                                      2) +
+                                  ↑(cmSign σ) *
+                                    (-1 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ) - (↑p).1.z) +
+                                      -1 * ((↑(2 * (↑p).1.z - 20) + 20) / 2))).natAbs +
+                          (↑(2 * (↑p).1.z - 20) + 20) % 2 +
+                        -2 * ↑((↑p).1.c (NumberField.InfinitePlace.mk σ)) +
+                      -1 *
+                        ((-1 *
+                              ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20)) -
+                                  Fintype.card PUnit.{1}) +
+                            1) %
+                          2) +
+                    ↑(Fintype.card PUnit.{1}) +
+                  -1 * ↑(Fintype.card ((Fin 12 ⊕ Fin 4 ⊕ Fin 4) ⊕ Fin (2 * (↑p).1.z - 20))) +
+                1 =
+              0
+        [_] ↑(D.h₂ ^ 2) + -1 * (↑D.ϱ % 2) + -2 * (↑D.ϱ / 2) = 0
+        [_] ↑D.m + -1 * (↑D.m % 2) + -2 * (↑D.m / 2) = 0
+        [_] 2 * ↑D.ϱ + -1 * (2 * ↑D.ϱ % 2) + -2 * (2 * ↑D.ϱ / 2) = 0
+        [_] ↑D.k + -1 * (↑D.k % 2) + -2 * (↑D.k / 2) = 0
+        [_] ↑D.r + -1 * (↑D.r % 2) + -2 * (↑D.r / 2) = 0
+        [_] ↑D.t + -1 * (↑D.t % 2) + -2 * (↑D.t / 2) = 0
+        [_] ↑D.h₂ + -1 * (↑D.h₂ % 2) + -2 * (↑D.h₂ / 2) = 0
+        [_] ↑D.m % 2 + 2 * (↑D.m / 2) + -2 = 0
+        [_] 2 * ↑D.ϱ % 2 + 2 * (2 * ↑D.ϱ / 2) + -2 * (↑D.ϱ % 2) + -4 * (↑D.ϱ / 2) = 0
+    [ring] Ring `Lean.Grind.Ring.OfSemiring.Q ℕ`
+      [basis] Basis
+        [_] 2 * ↑D.h₂ ^ 2 + -1 * ↑D.r + ↑D.k + 1 = 0
+        [_] ↑D.m + -2 * ↑D.ϱ + -2 = 0
+        [_] 2 * ↑D.ϱ + -1 * ↑D.r + ↑D.k + 1 = 0
+        [_] ↑D.r + -1 * ↑D.k + -1 = 0
+        [_] ↑D.k + -1 * ↑(D.h₂ ^ 2) + 1 = 0
+        [_] ↑D.h + -2 * ↑D.h₂ = 0
+    [ring] Ring `ZMod 2`
+      [basis] Basis
+        [_] ↑D.ϱ = 0
+[grind] Issues
+  [issue] ring term with unexpected instance
+        ↑D.h₂ ^ 2
+  [issue] ring term with unexpected instance
+        ↑D.h₂ ^ 2
+  [issue] semiring term with unexpected instance
+        D.h₂ ^ 2
+  [issue] failed to convert to semiring expression
+        2 * D.h₂ ^ 2
+  [issue] semiring term with unexpected instance
+        D.h₂ ^ 2
+  [issue] semiring term with unexpected instance
+        D.h₂ ^ 2
+[grind] Diagnostics
+  [ematch] E-matching Diagnostics
+    [thm] Theorem Instance Count
+      [thm] Nat.even_iff ↦ 9
+      [thm] ZMod.natCast_mod ↦ 7
+      [thm] Nat.even_mul ↦ 3
+      [thm] Nat.not_odd_iff_even ↦ 2
+      [thm] Nat.odd_iff ↦ 2
+      [thm] Subtype.property ↦ 2
+      [thm] extra_2 ↦ 1
+      [thm] local_0 ↦ 1
+      [thm] local_1 ↦ 1
+      [thm] hundred_mul_m_le_k ↦ 1
+      [thm] k_add_t_add_one_le_h₂ ↦ 1
+      [thm] k_even ↦ 1
+      [thm] k_le_r ↦ 1
+      [thm] k_pos ↦ 1
+      [thm] m_eq_two_mul_varrho_add_two ↦ 1
+      [thm] m_even ↦ 1
+      [thm] r_add ↦ 1
+      [thm] r_add_six_le_t ↦ 1
+      [thm] r_odd ↦ 1
+      [thm] t_odd ↦ 1
+      [thm] Int.units_natAbs ↦ 1
+      [thm] Nat.even_add ↦ 1
+      [thm] Nat.even_pow ↦ 1
+      [thm] Set.mem_Icc ↦ 1
+      [thm] Set.mem_Ioc ↦ 1
+      [thm] h.eq_1 ↦ 1
+      [thm] t.eq_1 ↦ 1
+      [thm] w.eq_1 ↦ 1
+      [thm] Pair.IsRankOne.eq_1 ↦ 1
+  [cases] Cases instances
+    [cases] Prod ↦ 1
+    [cases] Subtype ↦ 1
+'fit_budget_run84' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exists_isFitFamily_of_budget_run84' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'exists_isFitFamily_run84' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C1_RUN84_GUARDS_OK

@@ -1,0 +1,42 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+  "checked_input_module": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035600,
+        "sha256": "4ef847efc76e509f2e1f581b38a73cc76e8c31085a031eabf68d97b09ad6c46a"
+      }
+    ]
+  },
+  "checked_interface_dependencies": [],
+  "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+  "theorems": [
+    "c2_lift_inverse_determinant",
+    "c2_lift_one_empty_columns",
+    "c2_standard_column_empty"
+  ],
+  "full_RH_replay": false,
+  "native_source_build_performed": false,
+  "argv": [
+    "/tmp/compact-c1-native-a3d1yk4o/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000",
+    "-Dpp.fullNames=true",
+    "-Ddebug.skipKernelTC=false",
+    "-j",
+    "2",
+    "-R",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/earlier/C2DeterminantLift",
+    "-o",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/earlier/C2DeterminantLift/C2DeterminantLift.olean",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/earlier/C2DeterminantLift/C2DeterminantLift.lean"
+  ]
+}

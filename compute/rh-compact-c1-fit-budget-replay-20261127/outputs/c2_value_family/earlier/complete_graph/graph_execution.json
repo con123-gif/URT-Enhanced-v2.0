@@ -1,0 +1,59 @@
+{
+  "returncode": 0,
+  "seconds": 94.84,
+  "log": "graph.log",
+  "argv": [
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/earlier/native_exporter/native_graph",
+    "/tmp/compact-c1-native-a3d1yk4o/lean-4.35.0-linux",
+    "C2DeterminantCarrierTransport",
+    "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/c2_value_family/earlier/complete_graph/interface_graph.jsonl",
+    "stdClassSum_det_modKernel_eq",
+    "c2_stdClassSum_det_modKernel_eq",
+    "stdClassSum_carrierXi_eq_carrierForm",
+    "c2_stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "axioms": {
+    "stdClassSum_det_modKernel_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "c2_stdClassSum_det_modKernel_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "stdClassSum_carrierXi_eq_carrierForm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "c2_stdClassSum_carrierXi_eq_carrierForm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_audit_ok": true,
+  "native_exporter_build": {
+    "source_blob": "2268ec5a79434d124afb8470c8d17cf24f416e7a",
+    "exporter_source_blob": "ee4efebb066f6775fa551ae9104cfa973e585071",
+    "independent_verifier_blob": "2e431301970196a6b786d004fb16a4320a25fe8e",
+    "collector_adapter": "strict independent const/projection union",
+    "runtime_imports_private_bodies": true,
+    "executes_module_initializers": false,
+    "new_proof_declarations_added": false,
+    "equivalence_verified": true,
+    "adopted_for_B2_or_C2": false,
+    "full_RH_replay": false,
+    "executable_sha256": "b34ea971e9c96d3d2fcd92dabc3f56615425737a730ea7ac17c900dbdb2283a7",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "core_equivalence_verified": true,
+    "equivalence_scope": "Nat.le_refl only",
+    "compile_returncode": 0,
+    "link_returncode": 0
+  },
+  "native_graph_execution": true,
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}

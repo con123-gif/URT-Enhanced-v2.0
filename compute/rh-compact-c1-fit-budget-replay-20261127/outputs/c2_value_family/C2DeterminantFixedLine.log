@@ -1,0 +1,2 @@
+{"phase": "C2DeterminantFixedLine", "theorems": ["c2_det_polynomial_line"], "state": "started"}
+{"theorems": ["c2_det_polynomial_line"], "all_named_theorems_checked": true, "full_RH_replay": false}

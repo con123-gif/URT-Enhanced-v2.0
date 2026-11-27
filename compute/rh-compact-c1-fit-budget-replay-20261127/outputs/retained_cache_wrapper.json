@@ -1,0 +1,32 @@
+{
+  "runner_source_blob": "4ec1f89444fd6e779595ed83c601c2a5ebca2560",
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "cache_only_wrapper": false,
+  "source_build_complete": true,
+  "c2_continuation_requested": true,
+  "c2_continuation_checked": true,
+  "native_cache_retained": true,
+  "proof_receipt": false,
+  "full_RH_replay": false,
+  "source_build_receipt": {
+    "returncode": 0,
+    "seconds": 9557.24,
+    "log": "fit_build.log"
+  },
+  "modules_available": {
+    "New.Selmer.FitTwistsExist": true,
+    "New.Selmer.ValueFamilies": true,
+    "New.Rows.Carrier": true
+  },
+  "archive_result": {
+    "returncode": 0,
+    "seconds": 11.54,
+    "log": "cache_archive.log"
+  },
+  "archive": "native_c1_oleans.tar.zst",
+  "bytes": 792898966,
+  "sha256": "63bbe26668b47f81149ef5f5e06033168489076b68eb22509fa40bcc518a9603",
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "failure": "C1 native checks incomplete or failed"
+}
