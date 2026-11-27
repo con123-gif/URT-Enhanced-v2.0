@@ -1,0 +1,27 @@
+{
+  "parts": [
+    {
+      "source": "integration/B2_ACTIVE_CALLER_REPLACEMENT.lean",
+      "source_blob": "0d93565d7962a314167e39f10566f9f10b641a2e"
+    },
+    {
+      "source": "integration/B2_ACTIVE_ENERGY_REPLACEMENT.lean",
+      "source_blob": "f225f568a1a931f45c88e4b92916d0d024b2434d"
+    }
+  ],
+  "original_source_blob": "da67bf862a4c5e72ab6a81a7dfb462545cd8833f",
+  "theorems": [
+    "Filling.b2_active_outer_frameValueIndex_dvd",
+    "Filling.b2_active_outer_count",
+    "Filling.b2_active_inner_frameValueIndex_dvd",
+    "Filling.b2_active_sum_pairWeight_le",
+    "Filling.b2_active_energy_le_of_level_pairs"
+  ],
+  "skew_patch": {
+    "source": "audit/2026-11-27_B2_NATIVE_RECEIPT_AND_SKEW_CALLER_PATCH.py",
+    "source_blob": "4c942de0145e223298b3441b6c814a23ae946434"
+  },
+  "assembled_source_blob": "2a748f33ad2fbce589a53ff8750ea0f783c63d80",
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}

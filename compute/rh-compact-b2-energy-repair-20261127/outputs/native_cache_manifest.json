@@ -1,0 +1,16 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "build_target": "New.Filling.CrudeEnergy:olean",
+  "source_build_complete": true,
+  "archive": "native_b2_oleans.tar.zst",
+  "archive_result": {
+    "returncode": 0,
+    "seconds": 1.67,
+    "log": "cache_archive.log"
+  },
+  "proof_receipt": false,
+  "sha256": "35db72daacbbb00449c12be74f0c79a324128baf72a429cff841d11d0207b57e",
+  "bytes": 109934661
+}

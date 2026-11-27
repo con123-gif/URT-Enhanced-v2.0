@@ -1,0 +1,38 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "peers": {
+    "active_b2_energy": {
+      "path": "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/active_b2_energy.lean",
+      "source_blob": "2a748f33ad2fbce589a53ff8750ea0f783c63d80",
+      "theorems": [
+        "Filling.b2_active_outer_frameValueIndex_dvd",
+        "Filling.b2_active_outer_count",
+        "Filling.b2_active_inner_frameValueIndex_dvd",
+        "Filling.b2_active_sum_pairWeight_le",
+        "Filling.b2_active_energy_le_of_level_pairs"
+      ]
+    }
+  },
+  "source_blobs": {
+    "New/Filling/BlockBound.lean": "6c68e80e3b1ea2b7983696716305493a37f2b1fd",
+    "New/RealPlace/VolumeKernel.lean": "fc115f79a99192fc8ea0e72c2caa0bf2546b5cf0",
+    "New/Filling/BoxPartition.lean": "53f11966247a892d94cf688e8b366e887a92f641",
+    "New/Filling/LinkPairing.lean": "a802533ca5a385d6f44c3254f1a4d600b28fc416",
+    "New/Filling/GramLiouville.lean": "e0e55155b72a00bb6c11d618bf1961e52a4e696c",
+    "New/Filling/CrudeEnergy.lean": "da67bf862a4c5e72ab6a81a7dfb462545cd8833f"
+  },
+  "original_theorems": [
+    "Filling.HasLevel.exists_frameImage_toRows₂_eq_add",
+    "Filling.tsum_invPowWeight_le_of_codim_le",
+    "Filling.sum_pairWeight_le",
+    "Filling.pairInvariant_mul_le",
+    "Filling.le_genIndex_det_of_fixesNormAtLeast",
+    "Filling.sublatticeDisc_mul_index_sq_le"
+  ],
+  "new_Lean_execution": false,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d"
+}

@@ -1,0 +1,28 @@
+{
+  "returncode": 1,
+  "seconds": 66.48,
+  "log": "skew_caller.log",
+  "axioms": {
+    "RHPositivityRun73.skew_correction_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.tsum_invPowWeight_le_of_codim_le": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Filling.sum_pairWeight_le": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_audit_ok": false,
+  "source_blob": "e33fede13c0580ab8d5c8c3b01f989298860bf52",
+  "scope": "exact reversible original-statement skew/count caller patch",
+  "full_RH_replay": false
+}

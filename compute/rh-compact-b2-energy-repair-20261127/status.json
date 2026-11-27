@@ -1,0 +1,148 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: B2 native checks incomplete or failed",
+  "returncode": 1,
+  "wall_s": 1712.99,
+  "tail": "{\"native_step\": \"download\", \"state\": \"started\"}\n{\"native_step\": \"download\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 1.57, \"log\": \"download.log\"}\n{\"native_step\": \"extract\", \"state\": \"started\"}\n{\"native_step\": \"extract\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 5.54, \"log\": \"extract.log\"}\n{\"native_step\": \"version\", \"state\": \"started\"}\n{\"native_step\": \"version\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.06, \"log\": \"version.log\"}\n{\"native_step\": \"init\", \"state\": \"started\"}\n{\"native_step\": \"init\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.01, \"log\": \"init.log\"}\n{\"native_step\": \"remote\", \"state\": \"started\"}\n{\"native_step\": \"remote\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.0, \"log\": \"remote.log\"}\n{\"native_step\": \"fetch\", \"state\": \"started\"}\n{\"native_step\": \"fetch\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 1.22, \"log\": \"fetch.log\"}\n{\"native_step\": \"checkout\", \"state\": \"started\"}\n{\"native_step\": \"checkout\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.27, \"log\": \"checkout.log\"}\n{\"native_step\": \"mathlib_cache\", \"state\": \"started\"}\n{\"native_step\": \"mathlib_cache\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 70.73, \"log\": \"mathlib_cache.log\"}\n{\"native_step\": \"b2_build\", \"state\": \"started\"}\n{\"native_step\": \"b2_build\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 1495.25, \"log\": \"b2_build.log\"}\n{\"native_step\": \"active_b2_energy\", \"state\": \"started\"}\n{\"native_step\": \"active_b2_energy\", \"state\": \"finished\", \"returncode\": 1, \"seconds\": 49.66, \"log\": \"active_b2_energy.log\"}\n{\"native_step\": \"original_callers\", \"state\": \"started\"}\n{\"native_step\": \"original_callers\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 4.73, \"log\": \"original_callers.log\"}\n{\"native_step\": \"negative_missing_projector_guard\", \"state\": \"started\"}\n{\"native_step\": \"negative_missing_projector_guard\", \"state\": \"finished\", \"returncode\": 1, \"seconds\": 2.92, \"log\": \"negative_missing_projector_guard.log\"}\nTraceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py\", line 151, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py\", line 120, in main\n    native.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 188, in main\n    require(state[\"all_requested_checks_ok\"], \"B2 native checks incomplete or failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: B2 native checks incomplete or failed\n",
+  "id": "rh-compact-b2-energy-repair-20261127",
+  "question": "Repair the actual outer-bridge lambda layout; compile the complete original-statement pair replacement and its complete level-energy consumer with exact-type/direct-dependency and standard-axiom guards. In the same pinned native workspace separately replay the reversible peer skew/count patch. Retain partial results and the native cache artifact; no full B2, human assembly or RH claim.",
+  "requested_by": "GPT active continuous work, user directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py --out {out}",
+  "utc": "2026-11-27T12:57:08Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "234c5a3130055d3a0900d329b6361155610741f7",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45998845682",
+  "outputs_committed": [
+    {
+      "path": "BlockBoundSkewReplacement.lean",
+      "bytes": 30293,
+      "sha256": "e488fab6efa021cc1e00eed67a9b1de2c5967ee2335b2bafeeb0ff162ece15ce"
+    },
+    {
+      "path": "active_b2_energy.lean",
+      "bytes": 17838,
+      "sha256": "6289f33328eab8de594086b0da22823bec5e1dff90dbb7347945b199201083e0"
+    },
+    {
+      "path": "active_b2_energy.log",
+      "bytes": 4026,
+      "sha256": "30b8a84ee518180928d4d448baaa462bea93199a1629946eb38250adc26059fc"
+    },
+    {
+      "path": "b2_build.log",
+      "bytes": 26359,
+      "sha256": "356d9a850b5292c0ed8e1a19de535402736cde7e5a53b35aa6f6a05473424920"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 3235,
+      "sha256": "74fb9a73cc7d8475d4483246613898d0141fdad5c2ef6b7014967d2e1e0b5117"
+    },
+    {
+      "path": "cache_archive.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "68ab3d26c583d68db6d0a82f610c73ba652c995bbc3b68513975b9670bdb76cc"
+    },
+    {
+      "path": "energy_input_manifest.json",
+      "bytes": 917,
+      "sha256": "587c410cf16b4bc35e82824f8d3405d1ce5e148a7ce349d94088eb3c73281bc2"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 1569,
+      "sha256": "ca0ffe075be3365416589894209638bda092534ff8e8fa632c08670f1bfd34c9"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 8448,
+      "sha256": "67b0e826d2c5ac8409e9ddfd9362e1849804e26d6010bfb65ee759ab4adfd80e"
+    },
+    {
+      "path": "native_cache_manifest.json",
+      "bytes": 563,
+      "sha256": "89c54994004a02cdbbd76141f504c134fba1cd55bd499685efb4f3cf40b7ca5b"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "f3ef47d0b3eb28814eb14938ef691805dddbc946f3546c63abe039711c887dd0"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 597,
+      "sha256": "ceebcce2b3df9e548aa1a110e8be36390167b04f5bc2303b0965c539acf81a14"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1662,
+      "sha256": "32aa2c71a9cd3193b67b2ad7fabb1a556b0301ccf00d4df994fc9b58623ab761"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "0f5d5fdc9cd4c436aea35c1346e8da407b2c68bf8541d538784be67725b8bd5d"
+    },
+    {
+      "path": "skew_caller.log",
+      "bytes": 1338,
+      "sha256": "eafae02415e693d15b186b81980974be6758c02abde7fa207b57e9c32288c138"
+    },
+    {
+      "path": "skew_caller_results.json",
+      "bytes": 650,
+      "sha256": "19944ca66ddb127cb59eef9f3723f2118ea09a041d0a10a80af0244e6929f3c6"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "native_b2_oleans.tar.zst",
+      "bytes": 109934661,
+      "sha256": "35db72daacbbb00449c12be74f0c79a324128baf72a429cff841d11d0207b57e"
+    }
+  ]
+}
