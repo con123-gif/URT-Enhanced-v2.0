@@ -1,0 +1,282 @@
+﻿2026-11-27T21:03:49.1453867Z Current runner version: '2.338.2'
+2026-11-27T21:03:49.1472302Z ##[group]Runner Image Provisioner
+2026-11-27T21:03:49.1472974Z Hosted Compute Agent
+2026-11-27T21:03:49.1473330Z Version: 20261111.635
+2026-11-27T21:03:49.1473699Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-27T21:03:49.1474174Z Build Date: 2026-11-11T01:49:01Z
+2026-11-27T21:03:49.1474588Z Worker ID: {5b3c8dee-672d-4b23-a787-5ca08c29b3b2}
+2026-11-27T21:03:49.1475022Z Region: centralus
+2026-11-27T21:03:49.1475396Z Cloud: Azure
+2026-11-27T21:03:49.1475730Z ##[endgroup]
+2026-11-27T21:03:49.1476687Z ##[group]Operating System
+2026-11-27T21:03:49.1477078Z Ubuntu
+2026-11-27T21:03:49.1477454Z 26.04.1
+2026-11-27T21:03:49.1477778Z LTS
+2026-11-27T21:03:49.1478093Z ##[endgroup]
+2026-11-27T21:03:49.1478455Z ##[group]Runner Image
+2026-11-27T21:03:49.1479037Z Image: ubuntu-26.04
+2026-11-27T21:03:49.1479373Z Version: 20261116.202.1
+2026-11-27T21:03:49.1480210Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-27T21:03:49.1481368Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-27T21:03:49.1481924Z ##[endgroup]
+2026-11-27T21:03:49.1482652Z ##[group]GITHUB_TOKEN Permissions
+2026-11-27T21:03:49.1484013Z Contents: read
+2026-11-27T21:03:49.1484352Z Metadata: read
+2026-11-27T21:03:49.1484747Z ##[endgroup]
+2026-11-27T21:03:49.1486135Z Secret source: Actions
+2026-11-27T21:03:49.1486781Z Cache mode: write
+2026-11-27T21:03:49.1487207Z Prepare workflow directory
+2026-11-27T21:03:49.1726755Z Prepare all required actions
+2026-11-27T21:03:49.1773452Z Getting action download info
+2026-11-27T21:03:49.3927256Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-27T21:03:49.4823212Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-11-27T21:03:49.5715096Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-27T21:03:49.7859225Z Complete job name: verify
+2026-11-27T21:03:49.8456988Z ##[group]Run actions/checkout@v4
+2026-11-27T21:03:49.8457423Z with:
+2026-11-27T21:03:49.8457667Z   fetch-depth: 2
+2026-11-27T21:03:49.8457946Z   repository: con123-gif/open-math-agents
+2026-11-27T21:03:49.8460405Z   token: ***
+2026-11-27T21:03:49.8460653Z   ssh-strict: true
+2026-11-27T21:03:49.8460905Z   ssh-user: git
+2026-11-27T21:03:49.8461165Z   persist-credentials: true
+2026-11-27T21:03:49.8461443Z   clean: true
+2026-11-27T21:03:49.8461702Z   sparse-checkout-cone-mode: true
+2026-11-27T21:03:49.8461998Z   fetch-tags: false
+2026-11-27T21:03:49.8462257Z   show-progress: true
+2026-11-27T21:03:49.8462513Z   lfs: false
+2026-11-27T21:03:49.8462751Z   submodules: false
+2026-11-27T21:03:49.8463009Z   set-safe-directory: true
+2026-11-27T21:03:49.8463305Z   allow-unsafe-pr-checkout: false
+2026-11-27T21:03:49.8463680Z ##[endgroup]
+2026-11-27T21:03:50.0365012Z Syncing repository: con123-gif/open-math-agents
+2026-11-27T21:03:50.0366236Z ##[group]Getting Git version info
+2026-11-27T21:03:50.0366713Z Working directory is '/home/runner/work/open-math-agents/open-math-agents'
+2026-11-27T21:03:50.0367303Z [command]/usr/bin/git version
+2026-11-27T21:03:50.0370806Z git version 2.56.1
+2026-11-27T21:03:50.0388975Z ##[endgroup]
+2026-11-27T21:03:50.0394460Z Temporarily overriding HOME='/home/runner/work/_temp/cd0e6b37-8b08-4759-af91-0f974c8a8c8f' before making global git config changes
+2026-11-27T21:03:50.0395851Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T21:03:50.0398382Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/open-math-agents/open-math-agents
+2026-11-27T21:03:50.0452970Z Deleting the contents of '/home/runner/work/open-math-agents/open-math-agents'
+2026-11-27T21:03:50.0461647Z ##[group]Initializing the repository
+2026-11-27T21:03:50.0464339Z [command]/usr/bin/git init /home/runner/work/open-math-agents/open-math-agents
+2026-11-27T21:03:50.0551103Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-27T21:03:50.0552023Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-27T21:03:50.0552538Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-27T21:03:50.0552941Z hint: call:
+2026-11-27T21:03:50.0553174Z hint:
+2026-11-27T21:03:50.0553485Z hint: 	git config --global init.defaultBranch <name>
+2026-11-27T21:03:50.0553830Z hint:
+2026-11-27T21:03:50.0554150Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-27T21:03:50.0554651Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-27T21:03:50.0555050Z hint:
+2026-11-27T21:03:50.0555286Z hint: 	git branch -m <name>
+2026-11-27T21:03:50.0555547Z hint:
+2026-11-27T21:03:50.0555890Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-27T21:03:50.0558721Z Initialized empty Git repository in /home/runner/work/open-math-agents/open-math-agents/.git/
+2026-11-27T21:03:50.0567918Z [command]/usr/bin/git remote add origin https://github.com/con123-gif/open-math-agents
+2026-11-27T21:03:50.0615135Z ##[endgroup]
+2026-11-27T21:03:50.0615809Z ##[group]Disabling automatic garbage collection
+2026-11-27T21:03:50.0618292Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-27T21:03:50.0648206Z ##[endgroup]
+2026-11-27T21:03:50.0649036Z ##[group]Setting up auth
+2026-11-27T21:03:50.0653541Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T21:03:50.0683631Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T21:03:50.1043496Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T21:03:50.1071120Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T21:03:50.1290117Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T21:03:50.1321195Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T21:03:50.1532478Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-27T21:03:50.1565598Z ##[endgroup]
+2026-11-27T21:03:50.1566290Z ##[group]Fetching the repository
+2026-11-27T21:03:50.1572824Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=2 origin +91d229e3cd1dcbcca0fc684fd93743067701a7f5:refs/remotes/origin/oma-campaign-20261127
+2026-11-27T21:03:52.4661641Z From https://github.com/con123-gif/open-math-agents
+2026-11-27T21:03:52.4662583Z  * [new ref]         91d229e3cd1dcbcca0fc684fd93743067701a7f5 -> origin/oma-campaign-20261127
+2026-11-27T21:03:52.4665038Z ##[endgroup]
+2026-11-27T21:03:52.4665627Z ##[group]Determining the checkout info
+2026-11-27T21:03:52.4666992Z ##[endgroup]
+2026-11-27T21:03:52.4672080Z [command]/usr/bin/git sparse-checkout disable
+2026-11-27T21:03:52.4723366Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-27T21:03:52.4751872Z ##[group]Checking out the ref
+2026-11-27T21:03:52.4755693Z [command]/usr/bin/git checkout --progress --force -B oma-campaign-20261127 refs/remotes/origin/oma-campaign-20261127
+2026-11-27T21:03:53.1445475Z Switched to a new branch 'oma-campaign-20261127'
+2026-11-27T21:03:53.1473068Z branch 'oma-campaign-20261127' set up to track 'origin/oma-campaign-20261127'.
+2026-11-27T21:03:53.1476483Z ##[endgroup]
+2026-11-27T21:03:53.1518993Z [command]/usr/bin/git log -1 --format=%H
+2026-11-27T21:03:53.1539206Z 91d229e3cd1dcbcca0fc684fd93743067701a7f5
+2026-11-27T21:03:53.1703756Z ##[group]Run set -euo pipefail
+2026-11-27T21:03:53.1704072Z [36;1mset -euo pipefail[0m
+2026-11-27T21:03:53.1704646Z [36;1mgit clone --depth 1 https://github.com/GuillaumeBAUD-coder/open-math-agents "$RUNNER_TEMP/oma"[0m
+2026-11-27T21:03:53.1705131Z [36;1mC=$(python3 -I -c 'import json,os; print(json.load(open(os.environ["RUNNER_TEMP"]+"/oma/data/catalog.json"))["meta"]["upstreamCommit"])')[0m
+2026-11-27T21:03:53.1705491Z [36;1mgit init -q "$RUNNER_TEMP/fc"[0m
+2026-11-27T21:03:53.1705805Z [36;1mgit -C "$RUNNER_TEMP/fc" remote add origin https://github.com/google-deepmind/formal-conjectures[0m
+2026-11-27T21:03:53.1706139Z [36;1mgit -C "$RUNNER_TEMP/fc" fetch -q --depth 1 origin "$C"[0m
+2026-11-27T21:03:53.1706385Z [36;1mgit -C "$RUNNER_TEMP/fc" checkout -q FETCH_HEAD[0m
+2026-11-27T21:03:53.1706598Z [36;1mprintf 'FC commit: %s\n' "$C"[0m
+2026-11-27T21:03:53.1736088Z shell: /usr/bin/bash -e {0}
+2026-11-27T21:03:53.1736279Z ##[endgroup]
+2026-11-27T21:03:53.1804524Z Cloning into '/home/runner/work/_temp/oma'...
+2026-11-27T21:03:57.4859407Z FC commit: 9097e2f90e66d2f6244209cb1c07f7120d17ec53
+2026-11-27T21:03:57.4987245Z ##[group]Run actions/cache@v4
+2026-11-27T21:03:57.4987413Z with:
+2026-11-27T21:03:57.4987572Z   path: ~/.elan
+/home/runner/work/_temp/fc/.lake
+
+2026-11-27T21:03:57.4987771Z   key: campaign-fc-9097e2f90e66-v1
+2026-11-27T21:03:57.4987924Z   enableCrossOsArchive: false
+2026-11-27T21:03:57.4988068Z   fail-on-cache-miss: false
+2026-11-27T21:03:57.4988207Z   lookup-only: false
+2026-11-27T21:03:57.4988329Z   save-always: false
+2026-11-27T21:03:57.4988454Z ##[endgroup]
+2026-11-27T21:03:57.5664107Z (node:2202) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-27T21:03:57.5664563Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-27T21:03:57.7160218Z Cache hit for: campaign-fc-9097e2f90e66-v1
+2026-11-27T21:03:57.7216150Z (node:2202) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-27T21:03:58.8992957Z Received 134217728 of 3296819949 (4.1%), 124.0 MBs/sec
+2026-11-27T21:03:59.8996384Z Received 364904448 of 3296819949 (11.1%), 171.3 MBs/sec
+2026-11-27T21:04:00.9033802Z Received 570425344 of 3296819949 (17.3%), 179.4 MBs/sec
+2026-11-27T21:04:01.9012404Z Received 805306368 of 3296819949 (24.4%), 190.4 MBs/sec
+2026-11-27T21:04:02.9021210Z Received 1035993088 of 3296819949 (31.4%), 196.3 MBs/sec
+2026-11-27T21:04:03.9014620Z Received 1207959552 of 3296819949 (36.6%), 190.9 MBs/sec
+2026-11-27T21:04:04.9022040Z Received 1413480448 of 3296819949 (42.9%), 191.6 MBs/sec
+2026-11-27T21:04:05.9025756Z Received 1581252608 of 3296819949 (48.0%), 187.7 MBs/sec
+2026-11-27T21:04:06.9034496Z Received 1749024768 of 3296819949 (53.1%), 184.6 MBs/sec
+2026-11-27T21:04:07.9038943Z Received 1929379840 of 3296819949 (58.5%), 183.3 MBs/sec
+2026-11-27T21:04:08.9039392Z Received 2101346304 of 3296819949 (63.7%), 181.6 MBs/sec
+2026-11-27T21:04:09.9064641Z Received 2273312768 of 3296819949 (69.0%), 180.1 MBs/sec
+2026-11-27T21:04:10.9045063Z Received 2415919104 of 3296819949 (73.3%), 176.7 MBs/sec
+2026-11-27T21:04:11.9046419Z Received 2571108352 of 3296819949 (78.0%), 174.7 MBs/sec
+2026-11-27T21:04:12.9052958Z Received 2751463424 of 3296819949 (83.5%), 174.5 MBs/sec
+2026-11-27T21:04:13.9054522Z Received 2910846976 of 3296819949 (88.3%), 173.1 MBs/sec
+2026-11-27T21:04:14.9060569Z Received 3078619136 of 3296819949 (93.4%), 172.3 MBs/sec
+2026-11-27T21:04:15.9063017Z Received 3221225472 of 3296819949 (97.7%), 170.3 MBs/sec
+2026-11-27T21:04:16.3995464Z Received 3296819949 of 3296819949 (100.0%), 169.7 MBs/sec
+2026-11-27T21:04:16.3997043Z Cache Size: ~3144 MB (3296819949 B)
+2026-11-27T21:04:16.4075787Z [command]/usr/bin/tar -xf /home/runner/work/_temp/922f6025-b98e-4712-a337-631d1a5deee7/cache.tzst -P -C /home/runner/work/open-math-agents/open-math-agents --use-compress-program unzstd
+2026-11-27T21:05:15.7619007Z Cache restored successfully
+2026-11-27T21:05:15.9286976Z Cache restored from key: campaign-fc-9097e2f90e66-v1
+2026-11-27T21:05:15.9638542Z ##[group]Run set -euo pipefail
+2026-11-27T21:05:15.9638971Z [36;1mset -euo pipefail[0m
+2026-11-27T21:05:15.9639155Z [36;1mif [ ! -x ~/.elan/bin/lake ]; then[0m
+2026-11-27T21:05:15.9639567Z [36;1m  curl --fail --silent --show-error --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh[0m
+2026-11-27T21:05:15.9639981Z [36;1m  sh /tmp/elan-init.sh -y --default-toolchain none[0m
+2026-11-27T21:05:15.9640173Z [36;1mfi[0m
+2026-11-27T21:05:15.9640341Z [36;1mecho "$HOME/.elan/bin" >> "$GITHUB_PATH"[0m
+2026-11-27T21:05:15.9640575Z [36;1mcd "$RUNNER_TEMP/fc"[0m
+2026-11-27T21:05:15.9640734Z [36;1m~/.elan/bin/lake exe cache get[0m
+2026-11-27T21:05:16.0046734Z shell: /usr/bin/bash -e {0}
+2026-11-27T21:05:16.0047026Z ##[endgroup]
+2026-11-27T21:05:19.6792184Z Current branch: HEAD
+2026-11-27T21:05:19.6792587Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-11-27T21:05:19.6793451Z Attempting to download 8690 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+2026-11-27T21:05:19.9357017Z 
+2026-11-27T21:05:20.0384735Z Downloaded: 1 file(s) [attempted 1/8690 = 0%, 466 KB/s], Decompressed: 0
+2026-11-27T21:05:20.1583736Z Downloaded: 309 file(s) [attempted 309/8690 = 3%, 19470 KB/s], Decompressed: 231
+2026-11-27T21:05:20.2592186Z Downloaded: 507 file(s) [attempted 507/8690 = 5%, 2922 KB/s], Decompressed: 475
+2026-11-27T21:05:20.3593032Z Downloaded: 866 file(s) [attempted 866/8690 = 9%, 975 KB/s], Decompressed: 850
+2026-11-27T21:05:20.4599865Z Downloaded: 1288 file(s) [attempted 1288/8690 = 14%, 214 KB/s], Decompressed: 1232
+2026-11-27T21:05:20.5587314Z Downloaded: 1679 file(s) [attempted 1679/8690 = 19%, 836 KB/s], Decompressed: 1659
+2026-11-27T21:05:20.6601369Z Downloaded: 2083 file(s) [attempted 2083/8690 = 23%, 1718 KB/s], Decompressed: 2069
+2026-11-27T21:05:20.7608986Z Downloaded: 2495 file(s) [attempted 2495/8690 = 28%, 2318 KB/s], Decompressed: 2456
+2026-11-27T21:05:20.8594160Z Downloaded: 2851 file(s) [attempted 2851/8690 = 32%, 4817 KB/s], Decompressed: 2835
+2026-11-27T21:05:20.9616940Z Downloaded: 3191 file(s) [attempted 3191/8690 = 36%, 9838 KB/s], Decompressed: 3164
+2026-11-27T21:05:21.0631047Z Downloaded: 3377 file(s) [attempted 3377/8690 = 38%, 9473 KB/s], Decompressed: 3352
+2026-11-27T21:05:21.1629868Z Downloaded: 3701 file(s) [attempted 3701/8690 = 42%, 12032 KB/s], Decompressed: 3683
+2026-11-27T21:05:21.2735696Z Downloaded: 4007 file(s) [attempted 4007/8690 = 46%, 16 KB/s], Decompressed: 3994
+2026-11-27T21:05:21.3736966Z Downloaded: 4369 file(s) [attempted 4369/8690 = 50%, 7031 KB/s], Decompressed: 4363
+2026-11-27T21:05:21.4790566Z Downloaded: 4560 file(s) [attempted 4560/8690 = 52%, 7081 KB/s], Decompressed: 4511
+2026-11-27T21:05:21.5791143Z Downloaded: 4908 file(s) [attempted 4908/8690 = 56%, 11942 KB/s], Decompressed: 4896
+2026-11-27T21:05:21.6782629Z Downloaded: 5116 file(s) [attempted 5116/8690 = 58%, 4717 KB/s], Decompressed: 5075
+2026-11-27T21:05:21.7809198Z Downloaded: 5350 file(s) [attempted 5350/8690 = 61%, 1264 KB/s], Decompressed: 5322
+2026-11-27T21:05:21.8829545Z Downloaded: 5545 file(s) [attempted 5545/8690 = 63%, 292 KB/s], Decompressed: 5507
+2026-11-27T21:05:21.9969081Z Downloaded: 5916 file(s) [attempted 5916/8690 = 68%, 3450 KB/s], Decompressed: 5903
+2026-11-27T21:05:22.0983262Z Downloaded: 6109 file(s) [attempted 6109/8690 = 70%, 2181 KB/s], Decompressed: 6107
+2026-11-27T21:05:22.1998510Z Downloaded: 6479 file(s) [attempted 6479/8690 = 74%, 12033 KB/s], Decompressed: 6464
+2026-11-27T21:05:22.3003578Z Downloaded: 6717 file(s) [attempted 6717/8690 = 77%, 6388 KB/s], Decompressed: 6702
+2026-11-27T21:05:22.4018053Z Downloaded: 6901 file(s) [attempted 6901/8690 = 79%, 3635 KB/s], Decompressed: 6892
+2026-11-27T21:05:22.5005028Z Downloaded: 7345 file(s) [attempted 7345/8690 = 84%, 6427 KB/s], Decompressed: 7322
+2026-11-27T21:05:22.6003675Z Downloaded: 7766 file(s) [attempted 7766/8690 = 89%, 22390 KB/s], Decompressed: 7750
+2026-11-27T21:05:22.7005291Z Downloaded: 8191 file(s) [attempted 8191/8690 = 94%, 1053 KB/s], Decompressed: 8167
+2026-11-27T21:05:22.8654534Z Downloaded: 8623 file(s) [attempted 8623/8690 = 99%, 2349 KB/s], Decompressed: 8598
+2026-11-27T21:05:22.8741957Z Downloaded: 8689 file(s) [attempted 8689/8690 = 99%, 3615 KB/s], Decompressed: 8679
+2026-11-27T21:05:22.8742666Z Downloaded: 8690 file(s) [attempted 8690/8690 = 100%, 3615 KB/s], Decompressed: 8679
+2026-11-27T21:05:23.3829035Z Decompressed 8690 file(s)
+2026-11-27T21:05:23.3829363Z Already decompressed 8690 file(s)
+2026-11-27T21:05:23.4535009Z ##[group]Run set -euo pipefail
+2026-11-27T21:05:23.4535235Z [36;1mset -euo pipefail[0m
+2026-11-27T21:05:23.4535379Z [36;1mmkdir -p results[0m
+2026-11-27T21:05:23.4535526Z [36;1mshopt -s nullglob[0m
+2026-11-27T21:05:23.4535680Z [36;1mfor F in campaign/Probe*.lean; do[0m
+2026-11-27T21:05:23.4535889Z [36;1m  if git diff --quiet HEAD^ HEAD -- "$F"; then continue; fi[0m
+2026-11-27T21:05:23.4536124Z [36;1m  printf "CHECKING_PROBE %s\n" "$F"[0m
+2026-11-27T21:05:23.4536323Z [36;1m  cp "$F" "$RUNNER_TEMP/fc/CampaignProbe.lean"[0m
+2026-11-27T21:05:23.4536500Z [36;1m  set +e[0m
+2026-11-27T21:05:23.4536732Z [36;1m  (cd "$RUNNER_TEMP/fc" && lake env lean CampaignProbe.lean) > "results/$(basename "$F").log" 2>&1[0m
+2026-11-27T21:05:23.4536983Z [36;1m  RC=$?[0m
+2026-11-27T21:05:23.4537105Z [36;1m  set -e[0m
+2026-11-27T21:05:23.4537241Z [36;1m  cat "results/$(basename "$F").log"[0m
+2026-11-27T21:05:23.4537469Z [36;1m  printf "%s\n" "$RC" > "results/$(basename "$F").exit"[0m
+2026-11-27T21:05:23.4537651Z [36;1mdone[0m
+2026-11-27T21:05:23.4537822Z [36;1mfor F in campaign/statements/*.lean campaign/proofs/*.lean; do[0m
+2026-11-27T21:05:23.4538074Z [36;1m  if git diff --quiet HEAD^ HEAD -- "$F"; then continue; fi[0m
+2026-11-27T21:05:23.4538273Z [36;1m  P="${F#campaign/}"[0m
+2026-11-27T21:05:23.4538446Z [36;1m  cp "$F" "$RUNNER_TEMP/oma/$P"[0m
+2026-11-27T21:05:23.4538964Z [36;1m  (cd "$RUNNER_TEMP/oma" && OMA_FC="$RUNNER_TEMP/fc" tools/check.sh "$P" "$GITHUB_WORKSPACE/results/$(basename "$F").json") || true[0m
+2026-11-27T21:05:23.4539392Z [36;1m  python3 -I -c 'import json,sys; x=json.load(open(sys.argv[1])); print(x)' "results/$(basename "$F").json"[0m
+2026-11-27T21:05:23.4539652Z [36;1mdone[0m
+2026-11-27T21:05:23.4568843Z shell: /usr/bin/bash -e {0}
+2026-11-27T21:05:23.4569003Z ##[endgroup]
+2026-11-27T21:05:23.4946567Z CHECKING_PROBE campaign/ProbeA068991FullSecond.lean
+2026-11-27T21:05:30.0690666Z CampaignProbe.lean:24:8: warning: declaration uses `sorry`
+2026-11-27T21:05:30.0691177Z CampaignProbe.lean:103:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-11-27T21:05:30.0691383Z 
+2026-11-27T21:05:30.0691523Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-11-27T21:05:30.0693816Z CampaignProbe.lean:92:6: warning: Unused tactic linter: `change (∑ x ∈ ({ 1, p } : Finset ℕ), x) = p + 1` does nothing
+2026-11-27T21:05:30.0694367Z 
+2026-11-27T21:05:30.0694548Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-11-27T21:05:30.0694889Z 'A068991Certificate.predecessor_dvd_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-11-27T21:05:30.0695220Z 'OMA.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-11-27T21:05:30.2955708Z ##[group]Run actions/upload-artifact@v4
+2026-11-27T21:05:30.2955959Z with:
+2026-11-27T21:05:30.2956138Z   name: campaign-verification
+2026-11-27T21:05:30.2956359Z   path: results/
+2026-11-27T21:05:30.2956553Z   if-no-files-found: warn
+2026-11-27T21:05:30.2956773Z   compression-level: 6
+2026-11-27T21:05:30.2956972Z   overwrite: false
+2026-11-27T21:05:30.2957161Z   include-hidden-files: false
+2026-11-27T21:05:30.2957367Z ##[endgroup]
+2026-11-27T21:05:30.4068886Z (node:4969) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-27T21:05:30.4069963Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-27T21:05:30.4110885Z With the provided path, there will be 2 files uploaded
+2026-11-27T21:05:30.4113905Z Artifact name is valid!
+2026-11-27T21:05:30.4114600Z Root directory input is valid!
+2026-11-27T21:05:30.7047675Z Beginning upload of artifact content to blob storage
+2026-11-27T21:05:30.7168173Z (node:4969) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-27T21:05:30.8825656Z Uploaded bytes 681
+2026-11-27T21:05:30.9260315Z Finished uploading artifact content to blob storage!
+2026-11-27T21:05:30.9261017Z SHA256 digest of uploaded artifact zip is 47e220694173fc6d58b062417140417ffb5642b7672b7f6bcee77d7c5441a206
+2026-11-27T21:05:30.9261657Z Finalizing artifact upload
+2026-11-27T21:05:31.2794482Z Artifact campaign-verification.zip successfully finalized. Artifact ID 15230903891
+2026-11-27T21:05:31.2795170Z Artifact campaign-verification has been successfully uploaded! Final size is 681 bytes. Artifact ID is 15230903891
+2026-11-27T21:05:31.2799948Z Artifact download URL: https://github.com/con123-gif/open-math-agents/actions/runs/46067781887/artifacts/15230903891
+2026-11-27T21:05:31.2977689Z Post job cleanup.
+2026-11-27T21:05:31.3711559Z Cache hit occurred on the primary key campaign-fc-9097e2f90e66-v1, not saving cache.
+2026-11-27T21:05:31.3712457Z (node:4983) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-27T21:05:31.3713025Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-27T21:05:31.3820702Z Post job cleanup.
+2026-11-27T21:05:31.4448805Z [command]/usr/bin/git version
+2026-11-27T21:05:31.4485615Z git version 2.56.1
+2026-11-27T21:05:31.4512090Z Temporarily overriding HOME='/home/runner/work/_temp/fd85b4e4-af7d-42e9-aae4-78906f317e7b' before making global git config changes
+2026-11-27T21:05:31.4512869Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T21:05:31.4516013Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/open-math-agents/open-math-agents
+2026-11-27T21:05:31.4556701Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T21:05:31.4588918Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T21:05:31.4870452Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T21:05:31.4899200Z http.https://github.com/.extraheader
+2026-11-27T21:05:31.4903105Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-27T21:05:31.4937637Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T21:05:31.5210161Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T21:05:31.5240159Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T21:05:31.5607423Z Cleaning up orphan processes
+2026-11-27T21:05:31.5909342Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
