@@ -146,3 +146,19 @@ of those two additional callers is claimed. The existing repair run
 still checks only the five declarations and separate skew/count patch
 from commit 234c5a3130055d3a0900d329b6361155610741f7. After that passes,
 use its native cache for this extension and the local graph comparison.
+
+The artifact retrieval route was exercised on the first failed batch's
+15,079-byte ZIP and matched its actual Actions digest
+12e6572dbc13c01414cf499f7ce16da56fff8c6d5b5adc55d32bd6623119b9c0.
+This validates retrieval, not any proof. restore_native_b2_cache.py is
+prepared to verify both outer and inner digests, exact source pins and all
+archive paths, then swap only the local native import cache with rollback.
+It has not restored a native cache yet.
+
+Peer C2 RUN78 70b2bd10 now supplies BOTH complete equal-rank caller
+substitutions (source 6bb8f53e746aa4d5c876c7eff3433e6daf126795). Its
+prepared-workspace runner authenticates that exact file, passes the full
+pinned Lean options explicitly, and separates the two replacement probes
+from three original probes. Prepare-only preflight passed; no native C2
+execution or parallel cold build was launched. Use it after B2, in the
+already-built compatible workspace. RH remains OPEN.
