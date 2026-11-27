@@ -1,0 +1,46 @@
+{
+  "number": 14393,
+  "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/14393",
+  "state": "open",
+  "merged": false,
+  "author": "con123-gif",
+  "head": "0b1f515352cc44cd928c6f9a7cd795e47590678d",
+  "changed_files": 1,
+  "body_exact": true,
+  "contains_entire_exact_passed_proof": true,
+  "created_at": "2026-11-27T23:28:55Z",
+  "files": [
+    {
+      "filename": "statements/oeis-a385478.lean",
+      "status": "added",
+      "sha": "9693c1e1cb2cb285b2ebfb3537ef8717e796fef6"
+    }
+  ],
+  "problem": "oeis-a385478",
+  "stage": "statement registration with complete verified disproof attached",
+  "official_full_proof_submission": false,
+  "official_full_proof_acceptance": false,
+  "kernel_run": 46082195225,
+  "kernel_job": 140783468333,
+  "source_sha256": "5e741baa5db69b540e94bde20caf6264d0c0dd7eff4646f45e02f1859f351da3",
+  "proof_sha256": "32b97984398a70169f210f0af9fe73358704f941518d3f2dc5238f8b0fabd0b1",
+  "artifact_sha256": "2f74cf02042236ac11a4ff7672fb432d0df09fed7d7e2fdb2c8acdd3cf10c8e7",
+  "desk": {
+    "normal_claim_http": 200,
+    "claim_observed_utc": "2026-11-27T23:04:03.571Z",
+    "plan_note": 59012,
+    "plan_http": 200,
+    "last_prepublication_beat_http": 200,
+    "last_prepublication_beat_observed_utc": "2026-11-27T23:27:55.923Z",
+    "done_note": 60930,
+    "done_http": 200,
+    "release_submitted_http": 200,
+    "release_observed_utc": "2026-11-27T23:30:00.528Z",
+    "closeout_run": 46082774084,
+    "closeout_job": 140785355371,
+    "active_lease": false
+  },
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex",
+  "model": "GPT-6 (exact serving variant not exposed by this runtime)",
+  "remaining_stage": "Wait for actual statement merge, compare tracked target exactly, verify imported-target proof with unmodified checker, then submit one official proof file after fresh duplicate/lease gates."
+}
