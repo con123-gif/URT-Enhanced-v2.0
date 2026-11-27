@@ -1,0 +1,47 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source": "specialists/character_boxes/RUN78_COMPACT_EQUAL_RANK_CALLER.lean",
+  "source_blob": "6bb8f53e746aa4d5c876c7eff3433e6daf126795",
+  "original_source_blob": "a620150b7c616d614013822be11dbdf74a694f0d",
+  "theorems": [
+    "RHCharacterBoxes77.exchange_of_standard_pairs",
+    "run78_equalRankThetaRatio_value"
+  ],
+  "original_probes": [
+    "exchange_of_partners",
+    "exists_equalRankThetaRatio_value",
+    "stdExchange_of_periods"
+  ],
+  "new_Lean_execution": false,
+  "full_RH_replay": false,
+  "adapter": {
+    "old": "info.value? |",
+    "new": "info.value? (allowOpaque := true) |"
+  },
+  "replay_source_blob": "1fa9d441fc1a2aa82281c1e768e9a794d69ba9f8",
+  "carrier_propagation": {
+    "source": "specialists/character_boxes/RUN79_COMPACT_CARRIER_PROPAGATION.lean",
+    "source_blob": "661ed5fdd14651cf5629866ca7e86810f9c5fef2",
+    "theorems": [
+      "run79_exchange_theorem",
+      "run79_explicit_matching",
+      "run79_stdClassSum_det_modKernel_eq",
+      "run79_stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "original_probes": [
+      "exchange_theorem",
+      "explicit_matching",
+      "stdClassSum_det_modKernel_eq",
+      "stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "original_source_blobs": {
+      "New/Exchange/ExchangeTheorem.lean": "608b4f61af27d780e24f799937a836ecd3c1d50a",
+      "New/Rows/Carrier.lean": "f0b7f97f299904aa73a928432147a932cac9be40",
+      "New/Rows/RowVolume.lean": "925de9c592b40763516e70ddeae48b4ad1a35b88",
+      "New/Rows/LiftVolumeHeight.lean": "87938141d4103b485fd5a7125721798f65f973f1",
+      "New/Rows/ComparisonForms.lean": "14ef893c54f5db837ea7e4f143b2b1a444b89b5a"
+    },
+    "new_Lean_execution": false
+  }
+}

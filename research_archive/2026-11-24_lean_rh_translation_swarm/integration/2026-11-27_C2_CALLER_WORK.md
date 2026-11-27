@@ -23,8 +23,25 @@ Haar normalization, finite modulus, arbitrary partners and all quantitative
 premises are retained. This does not prove the reciprocal signed-height
 budgets, remove global exchange dependencies, or close C2.
 
-RESUME HERE: finish the active B2 shared verification before any heavy C2
-build. The current local cache lacks EqualRankValue and Carrier. Use the
-same capable pinned shared workspace, build only the required import closure
-if absent, inspect actual errors, and preserve them. No C2 execution is
-inferred from the verified B2 results or a preparation preflight.
+The B2 shared job has now completed; its caller and separate count proofs
+passed and its graph collector failed. The repaired graph is running from
+the existing local cache. The new coordinated C2 job is
+`rh-compact-c2-carrier-replay-20261127`, using `run_c2_shared_callers.py`.
+Its preflight authenticated both candidate sources, Python syntax checks
+passed, and all six actual original source hashes match the compact pin.
+These are preparation checks, not C2 Lean execution.
+
+The shared driver reuses the official-source bootstrap and its resource
+guards, builds only New.Rows.Carrier's import closure once, and retains its
+native cache as a checksum-labelled artifact. The six candidate declarations
+and five exact original statements share that workspace. C2Caller.olean
+is retained only on real base acceptance, then RUN79 is compiled unchanged.
+The old generic batch filename records bootstrap/original-probe evidence;
+`shared_c2_results.json` and `c2/c2_replacement_results.json` are the actual
+C2 acceptance receipts. No complete graph or signed-height claim follows.
+
+RESUME HERE: inspect the observed shared C2 run, its actual compiler logs
+and per-stage receipts; repair the first failure, preserving exact output.
+The local cache lacks EqualRankValue and Carrier; do not cold-build it here
+or duplicate the coordinated shared build. No C2 execution is inferred
+from the B2 results, a preparation preflight or workflow success.

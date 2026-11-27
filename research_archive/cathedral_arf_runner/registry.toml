@@ -3603,3 +3603,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT active continuous proof work, 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-c2-carrier-replay-20261127"
+question = "In one official-source pinned workspace, build only the Carrier import closure, check the adapted RUN78 equal-rank replacement and four complete RUN79 exchange/matching/Carrier consumers, retaining checked modules and native cache. Require five exact original statement comparisons, actual direct supplier guards, standard axiom reports, seven separate original probes and the negative control. No complete graph, signed-height, human assembly or RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py --out {out}"
+timeout_minutes = 180
+requested_by = "GPT active continuous work, user directive 2026-11-27"
+claim = "independent"
