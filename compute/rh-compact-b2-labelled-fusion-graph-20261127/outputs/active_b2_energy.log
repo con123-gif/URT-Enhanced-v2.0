@@ -1,0 +1,55 @@
+/tmp/compact-b2-native-2b6wwqog/active_b2_energy.lean:42:0: warning: automatically included section variable(s) unused in theorem `Filling.b2_active_outer_frameValueIndex_dvd`:
+  [S.IsAdmissible]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [S.IsAdmissible] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/compact-b2-native-2b6wwqog/active_b2_energy.lean:75:0: warning: automatically included section variable(s) unused in theorem `Filling.b2_active_inner_frameValueIndex_dvd`:
+  [S.IsAdmissible]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [S.IsAdmissible] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'Filling.b2_active_outer_frameValueIndex_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_outer_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_inner_frameValueIndex_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_sum_pairWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Filling.b2_active_outer_frameValueIndex_dvd : ∀ {E : Type} [inst : Field E] [inst_1 : CMType E]
+  [inst_2 : StablyUnram E] {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible] {c : S.Classes} {j : Fin (𝔰.ϱ + 2)}
+  (p : S.Classes × ↥(S.G E)) (V : Submodule E (𝔰.κ → E)),
+  1 ≤ S.xRowsIndex j (S.termElem c p) →
+    S.frameValueIndex c (S.termElem c p) S.gIdele V ∣
+      submoduleIndex (S.gIdele • intVectors (Ô E) (Filling.IndexBelow j)) (intVectors (Ô E) (Filling.IndexBelow j)) *
+        S.frameValueIndex c (S.termElem c p) 1 V
+@Filling.b2_active_inner_frameValueIndex_dvd : ∀ {E : Type} [inst : Field E] [inst_1 : CMType E]
+  [inst_2 : StablyUnram E] {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible] {c : S.Classes} (γ : ↥(S.G E))
+  (y : S.Classes × ↥(S.G E)) (T : Submodule E (𝔰.κ → E)),
+  S.CongruentTerms c y.1 γ y.2 →
+    commonLink γ y.2 = T →
+      S.frameValueIndex c (S.termElem c y) S.gIdele (T ⊓ (Filling.frameMiddle ↑↑γ).toRows₁ᴴ.mulVecLin.ker) ∣
+        S.saturationIndex (S.termElem c y)
+@Filling.b2_active_sum_pairWeight_le : ∀ {E : Type} [inst : Field E] [inst_1 : CMType E] {𝔰 : Shape} {j : Fin (𝔰.ϱ + 2)}
+  [inst_2 : StablyUnram E] {S : Filling E 𝔰} [S.IsAdmissible],
+  ∑ c, ∑ c', ∑' (γ : ↥(S.G E)) (γ' : ↥(S.G E)), S.pairWeight j c c' γ γ' ≤ ENNReal.ofReal (2 * S.tailScale ^ 2)
+B2_ACTIVE_CALLER: original declaration type matches; both bridges consumed; original target absent from direct proof dependencies
+'Filling.b2_active_energy_le_of_level_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+@Filling.b2_active_energy_le_of_level_pairs : ∀ {E : Type} [inst : Field E] [inst_1 : CMType E] {𝔰 : Shape}
+  {S : Filling E 𝔰} [StablyUnram E] [ok : S.IsAdmissible] {C w : ℝ},
+  0 ≤ C →
+    ∀ {Ω : Set S.GRes} {T : Set ↥(S.G E)} {X : ℕ},
+      S.IsStable T →
+        ((∃ γ ∈ T, ∃ c c', ∃ s ∈ Ω, γ ∈ S.termsOver c s c' ∧ IsNormalForm 0 γ) →
+            S.tailScale ^ 20 * S.besselEnergy ≤ C) →
+          X ≠ 0 →
+            (∀ s ∈ Ω, Filling.FixesNormAtLeast s X) →
+              0 ≤ w →
+                S.besselEnergy ≤ C →
+                  ∀ (j : Fin (𝔰.ϱ + 1 + 1)) (R : Set (Submodule E (𝔰.MiddleIndex ⊕ 𝔰.MiddleIndex → E))),
+                    (∀ γ ∈ T, S.HasLevel j γ) →
+                      (𝔰.ϱ < ↑j → (∃ Λ, Λ ∉ R) → S.tailScale ^ 12 / ↑X ^ 𝔰.k * S.mainEnergy ≤ C) →
+                        Filling.linkEnergy T Ω R ≤ ENNReal.ofReal (w * S.unipCovolume ^ 2) →
+                          Filling.energy (S.amplitudeSum T) Ω ≤ w + C / S.b ^ 30 / 4 ^ ↑j.rev
+B2_ACTIVE_ENERGY: original declaration type matches; replacement pair bound consumed; original targets absent from direct proof dependencies
+'Filling.b2_active_energy_le_of_level_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_energy_le_of_linkEnergy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+B2_ACTIVE_FULL_ENERGY: original declaration types match; all three energy callers consume replacements; original targets absent from direct proof dependencies

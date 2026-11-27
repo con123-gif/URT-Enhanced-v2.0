@@ -1,0 +1,193 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: Core transport compatibility controls failed",
+  "returncode": 1,
+  "wall_s": 1696.98,
+  "tail": "step\": \"download\", \"state\": \"started\"}\n{\"native_step\": \"download\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 2.73, \"log\": \"download.log\"}\n{\"native_step\": \"extract\", \"state\": \"started\"}\n{\"native_step\": \"extract\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 5.68, \"log\": \"extract.log\"}\n{\"native_step\": \"version\", \"state\": \"started\"}\n{\"native_step\": \"version\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.06, \"log\": \"version.log\"}\n{\"native_step\": \"init\", \"state\": \"started\"}\n{\"native_step\": \"init\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.26, \"log\": \"init.log\"}\n{\"native_step\": \"remote\", \"state\": \"started\"}\n{\"native_step\": \"remote\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.01, \"log\": \"remote.log\"}\n{\"native_step\": \"fetch\", \"state\": \"started\"}\n{\"native_step\": \"fetch\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.67, \"log\": \"fetch.log\"}\n{\"native_step\": \"checkout\", \"state\": \"started\"}\n{\"native_step\": \"checkout\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.26, \"log\": \"checkout.log\"}\n{\"native_step\": \"mathlib_cache\", \"state\": \"started\"}\n{\"native_step\": \"mathlib_cache\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 63.28, \"log\": \"mathlib_cache.log\"}\n{\"native_step\": \"b2_build\", \"state\": \"started\"}\n{\"native_step\": \"b2_build\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 1474.72, \"log\": \"b2_build.log\"}\n{\"native_step\": \"active_b2_energy\", \"state\": \"started\"}\n{\"native_step\": \"active_b2_energy\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 58.06, \"log\": \"active_b2_energy.log\"}\n{\"native_step\": \"original_callers\", \"state\": \"started\"}\n{\"native_step\": \"original_callers\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 4.72, \"log\": \"original_callers.log\"}\n{\"native_step\": \"negative_missing_projector_guard\", \"state\": \"started\"}\nTraceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py\", line 153, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py\", line 127, in main\n    energy.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py\", line 132, in main\n    native.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 180, in main\n    rejected = not run(\"negative_missing_projector_guard\", [\"lake\", \"env\", \"lean\", bad],\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 105, in run\n    ans = step(argv, cwd, env, out / (label + \".log\"), min(seconds, remaining - 5))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py\", line 74, in pinned_step\n    result = base_step(argv, cwd, env, log, seconds)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py\", line 95, in step\n    native.require(status[\"core_transport_controls_pass\"], \"Core transport compatibility controls failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Core transport compatibility controls failed\n",
+  "id": "rh-compact-b2-labelled-fusion-graph-20261127",
+  "question": "After the existing C2 job, use one pinned official-source workspace for the first joint B2 native fusion: compile its seven prerequisite proofs once, check normal-kernel proof-transport controls, compile the authenticated eleven-declaration RUN80 labelled/skew count-to-full-energy candidate, and verify all eight constructor-inclusive original/new count/pair/energy frontiers. Require exact statements, standard axioms, all supplier/old-target guards and independent verifier receipts. Preserve partial failures and cache; no Main or full RH claim.",
+  "requested_by": "GPT active continuous work, user directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py --labelled-fusion --out {out}",
+  "utc": "2026-11-27T15:06:33Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "85fca3621013deaf00492a5fd71a4768c1f75e6f",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46016547394",
+  "outputs_committed": [
+    {
+      "path": "BlockBoundSkewReplacement.lean",
+      "bytes": 30300,
+      "sha256": "1b159eb7a6288a7d17fcf78cff263523984fb92290fedac943193ca90aca66d9"
+    },
+    {
+      "path": "active_b2_energy.lean",
+      "bytes": 22213,
+      "sha256": "f804685ee51433dfe05545893ce400e628d9827d0441cd396b2de9043668119a"
+    },
+    {
+      "path": "active_b2_energy.log",
+      "bytes": 4489,
+      "sha256": "f7af83c2694fc7319d1705764f86b78219e2c6132f972277dcf57522f55ad20f"
+    },
+    {
+      "path": "b2_build.log",
+      "bytes": 26364,
+      "sha256": "3a23b99867a5cc5d7c1ffe8da8713c8403111f3897d03b79b78bdc7a76cb1aae"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 3343,
+      "sha256": "20d1b7cc0575369320917234a1fe27a61765a775aba560ff2eab389dee11dd84"
+    },
+    {
+      "path": "cache_archive.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "9a17a6677d5503fee351c24eb2afd60d3b082bce49ffb371b5f6dcaa320539d3"
+    },
+    {
+      "path": "energy_input_manifest.json",
+      "bytes": 1400,
+      "sha256": "55780175dc1e93d1d0c65c7ad1d970ed5add093833673924400f426950034851"
+    },
+    {
+      "path": "energy_replacement_results.json",
+      "bytes": 2685,
+      "sha256": "e7974541508ad78750be3d7173fece7fc19da061189b8153e4f0b844c595e1fb"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 1676,
+      "sha256": "9f8505d58dc73016d469cf35b926d816805a948e37cc0367a00d7448f8e931af"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 8947,
+      "sha256": "5bfbb2e1d19f90376c20dc8af6d2c3c0ad4e23cc1e37a8410ac25b73a0a30a1c"
+    },
+    {
+      "path": "native_cache_manifest.json",
+      "bytes": 563,
+      "sha256": "bb72334123068b23cd0cca59c93256fa04897183d2888b2d2e3712d6911cb072"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "78bad14bf8ce3e57ab54ab0ae9ba83bb1e04e4014c8bae1bf0ec6dbb12da99d0"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 597,
+      "sha256": "ceebcce2b3df9e548aa1a110e8be36390167b04f5bc2303b0965c539acf81a14"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1769,
+      "sha256": "995fde16c3b3029a33712da39de9dca18384628f34a0bd58974cd42f52d5fde0"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "0254604858117a04dfe3ee1e19706ae149812aad365978d5875f0498e3687547"
+    },
+    {
+      "path": "shared_full_b2_results.json",
+      "bytes": 1952,
+      "sha256": "64fd0dbfaa46a2bf7e79a47ba8e5168f9fcd5c2e8916a81f62be440aa8a5dce4"
+    },
+    {
+      "path": "skew_caller.log",
+      "bytes": 1590,
+      "sha256": "847df6af147ba08267248bde0903ee7022ab983380fe3ee0b210c74a3c0fac6b"
+    },
+    {
+      "path": "skew_caller_results.json",
+      "bytes": 615,
+      "sha256": "0ffb0be0154185fab93217909a9244edb77ee6b50d88f7cbc554a7ee5e6c4e05"
+    },
+    {
+      "path": "transport_core/checked_retarget.lean",
+      "bytes": 1219,
+      "sha256": "5dbf35cc6b9304178b21548977620d6239e527b3e4c9bdde45d93b3f2b480737"
+    },
+    {
+      "path": "transport_core/checked_retarget.log",
+      "bytes": 347,
+      "sha256": "ae0ea6d6f23ea17913fbc4b1cce5abaea37d33c1b70dde4a93dc99bec85a0a4a"
+    },
+    {
+      "path": "transport_core/compatibility_results.json",
+      "bytes": 706,
+      "sha256": "380143891bc48b6bae3b8a37554adced8f10113ee8a883807d62e7d1fa14aef7"
+    },
+    {
+      "path": "transport_core/reject_ill_typed_proof.lean",
+      "bytes": 326,
+      "sha256": "a3fd4cb8fe9eed5e116b4029f9804042b68d9adf4829f2e8421e493ae47b026a"
+    },
+    {
+      "path": "transport_core/reject_ill_typed_proof.log",
+      "bytes": 166,
+      "sha256": "113edd96deab74baf547dc0e9759199356c83a7e7efd8aa46f6a8748fc7cf49a"
+    },
+    {
+      "path": "transport_core_driver.log",
+      "bytes": 1140,
+      "sha256": "28d21e54266caaf3d6dce5ec1a471ef7ad34720d5d0c18d250014e1db8aaeca6"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "active_b2_energy.olean",
+      "bytes": 16860568,
+      "sha256": "3bc34c4e9c3026a160e79fa22b0ab85230589f42859fa2ea8a5d01a4a1b29db3"
+    },
+    {
+      "path": "native_b2_oleans.tar.zst",
+      "bytes": 109934426,
+      "sha256": "361512aa787d4ff7bd1145b3f82b47c319c4ab28f04d02d3c3f4a9e9a95db518"
+    }
+  ]
+}

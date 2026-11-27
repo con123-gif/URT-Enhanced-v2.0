@@ -1,0 +1,45 @@
+{"native_step": "download", "state": "started"}
+{"native_step": "download", "state": "finished", "returncode": 0, "seconds": 2.73, "log": "download.log"}
+{"native_step": "extract", "state": "started"}
+{"native_step": "extract", "state": "finished", "returncode": 0, "seconds": 5.68, "log": "extract.log"}
+{"native_step": "version", "state": "started"}
+{"native_step": "version", "state": "finished", "returncode": 0, "seconds": 0.06, "log": "version.log"}
+{"native_step": "init", "state": "started"}
+{"native_step": "init", "state": "finished", "returncode": 0, "seconds": 0.26, "log": "init.log"}
+{"native_step": "remote", "state": "started"}
+{"native_step": "remote", "state": "finished", "returncode": 0, "seconds": 0.01, "log": "remote.log"}
+{"native_step": "fetch", "state": "started"}
+{"native_step": "fetch", "state": "finished", "returncode": 0, "seconds": 0.67, "log": "fetch.log"}
+{"native_step": "checkout", "state": "started"}
+{"native_step": "checkout", "state": "finished", "returncode": 0, "seconds": 0.26, "log": "checkout.log"}
+{"native_step": "mathlib_cache", "state": "started"}
+{"native_step": "mathlib_cache", "state": "finished", "returncode": 0, "seconds": 63.28, "log": "mathlib_cache.log"}
+{"native_step": "b2_build", "state": "started"}
+{"native_step": "b2_build", "state": "finished", "returncode": 0, "seconds": 1474.72, "log": "b2_build.log"}
+{"native_step": "active_b2_energy", "state": "started"}
+{"native_step": "active_b2_energy", "state": "finished", "returncode": 0, "seconds": 58.06, "log": "active_b2_energy.log"}
+{"native_step": "original_callers", "state": "started"}
+{"native_step": "original_callers", "state": "finished", "returncode": 0, "seconds": 4.72, "log": "original_callers.log"}
+{"native_step": "negative_missing_projector_guard", "state": "started"}
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py", line 153, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py", line 127, in main
+    energy.main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py", line 132, in main
+    native.main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py", line 180, in main
+    rejected = not run("negative_missing_projector_guard", ["lake", "env", "lean", bad],
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py", line 105, in run
+    ans = step(argv, cwd, env, out / (label + ".log"), min(seconds, remaining - 5))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py", line 74, in pinned_step
+    result = base_step(argv, cwd, env, log, seconds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py", line 95, in step
+    native.require(status["core_transport_controls_pass"], "Core transport compatibility controls failed")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Core transport compatibility controls failed
