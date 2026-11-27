@@ -1,0 +1,7 @@
+CampaignProbe.lean:37:8: warning: declaration uses `sorry`
+'OMA.MO309485.Binomial.sum_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.MO309485.Binomial.sum_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.MO309485.Binomial.sum_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.MO309485.OddKernel.det_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.MO309485.EvenKernel.det_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
