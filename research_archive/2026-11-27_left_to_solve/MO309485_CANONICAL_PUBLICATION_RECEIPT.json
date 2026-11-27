@@ -1,0 +1,31 @@
+{
+  "repository": "con123-gif/URT-Enhanced-v2.0",
+  "branch": "newtons-cathedral",
+  "canonical_pair": [
+    {
+      "kind": "statement",
+      "path": "research_archive/2026-11-27_left_to_solve/PROOFS_READY/mo-309485.statement.lean",
+      "commit": "0a0fb5c81e0f3f626b91c2099d25f4faf2e714b8",
+      "sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+      "bytes": 1557,
+      "blob_sha": "da16113dd41601cab7734694f42e665791cc8c68",
+      "immutable_readback_exact": true
+    },
+    {
+      "kind": "proof",
+      "path": "research_archive/2026-11-27_left_to_solve/PROOFS_READY/mo-309485.proof.lean",
+      "commit": "22546ba73645e52b0037ab12c9935354c740d860",
+      "sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+      "bytes": 23452,
+      "blob_sha": "4942584870d030949640c39cba6e5d4f8b35e606",
+      "immutable_readback_exact": true
+    }
+  ],
+  "run": 46081719328,
+  "job": 140781984295,
+  "verifier_head": "d01ca49691faa1f98be914317cc9156cb4fda9d9",
+  "artifact": 15236463459,
+  "artifact_sha256": "7cc9fbffe450e41fb145cccea70d608644d865894322c711f0c69a8db8417a24",
+  "whole_certificate_pass": true,
+  "official_proof_accepted": false
+}
