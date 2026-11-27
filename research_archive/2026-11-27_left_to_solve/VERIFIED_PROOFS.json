@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 4,
-  "complete_kernel_checked_candidates": 25,
+  "complete_kernel_checked_candidates": 26,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -598,10 +598,38 @@
       "statement_pr": null,
       "statement_merged": false,
       "prior_credit": "Mike Sheppard; TrureTuring quartic selector and signed1/-3 law; DLMF."
+    },
+    {
+      "problem_id": "oeis-a372556",
+      "exact_statement": "PROOFS_READY/oeis-a372556.statement.lean",
+      "proof": "PROOFS_READY/oeis-a372556.proof.lean",
+      "statement_sha256": "0005b2cd23dc3de6c8146224f67dda6fb61585c90e6af0d3265a33823cf23c9b",
+      "proof_sha256": "bfb6f452ca746c06fc1bb2a0fa1ada6d319ab86056978a81c9337212a3f0137a",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46055072139",
+      "verification_job": 140695454190,
+      "verification_commit": "31aab2c222341cd3d3cb7d5b310493fe52ca98ab",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_full_kernel_pass",
+      "full_target_passed_at": "2026-11-27T19:13:44Z",
+      "merged_and_credited": "not_confirmed",
+      "genuine_open_status": "full_exact_source_claim_no_prior_settlement_found_in_bounded_primary_review",
+      "proof_summary": "For every positive n some representation with globally fewest positive Jacobsthal summands uses index floor(log_2(3n+1)) or that index minus one. The zero empty optimum and duplicate J1=J2=1 convention are handled.",
+      "prior_credit": [
+        "Classical Jacobsthal recurrence and parity identities",
+        "Horadam1996 local adjacent-coefficient exchange and patterned representations",
+        "Carlitz-Scoville-Hoggatt1972 distinct-summand canonical representations"
+      ],
+      "remaining_obstruction": "Full canonical proof publicly uploaded and exact readback checked. Fresh official lease, registration/merge, imported-target check and actual full proof acceptance remain.",
+      "statement_pr": null,
+      "statement_merged": false
     }
   ],
   "continuing_beyond_minimum": true,
-  "complete_kernel_checked_certificates": 26,
+  "complete_kernel_checked_certificates": 27,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
   "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
@@ -619,5 +647,5 @@
   ],
   "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T19:16:00Z"
+  "record_updated_utc": "2026-11-27T19:18:00Z"
 }
