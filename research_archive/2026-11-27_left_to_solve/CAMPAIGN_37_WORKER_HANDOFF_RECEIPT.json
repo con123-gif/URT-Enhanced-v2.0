@@ -1,0 +1,79 @@
+{
+  "date_utc": "2026-11-27T23:47:01.679Z",
+  "purpose": "Verified handoff to existing five scheduled Left to Solve workers; no new task, no schedule/RH alteration.",
+  "campaign": {
+    "certificates": 37,
+    "own_full_submissions": 5,
+    "upstream_full_checker_acceptances": 5,
+    "merged_credited_full": 3,
+    "new_own_statement_prs_in_batch": 20,
+    "certified_original_discoveries": 0,
+    "master_commit": "e87240611caa35deab14bbe39cbee940a2c809f1",
+    "ledger_commit": "63d9dfc654ebe9fd685d0ad4b6a583c562469a26"
+  },
+  "latest_closed_lanes": {
+    "mo309485": {
+      "statement_pr": 14443,
+      "release_http": 200,
+      "released_at": "2026-11-27T23:32:40Z"
+    },
+    "oeis_a385478": {
+      "statement_pr": 14393,
+      "release_http": 200,
+      "released_at": "2026-11-27T23:30:00.528Z"
+    }
+  },
+  "workers": [
+    {
+      "id": "6a8d28f427dc8191bf84eedbedbbb091",
+      "title": "Left to Solve Proof Submission Bot",
+      "prompt_updated": true,
+      "enabled": true,
+      "schedule_unchanged": true,
+      "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T064800\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+      "updated_at": "2026-11-27T23:45:36.437711+00:00",
+      "primary_lane": "PRIMARY LANE: Finish verified contributions through their actual official proof checker, merge and credit. Watch registrations for real merges and immediately run the exact imported target and submit the complete proof when your lane owns it. Do not stop at a verification handoff when submission remains authorized and feasible."
+    },
+    {
+      "id": "6b098003b0ec8191946156658922cab5",
+      "title": "Left to Solve Bot",
+      "prompt_updated": true,
+      "enabled": true,
+      "schedule_unchanged": true,
+      "original_schedule": "BEGIN:VEVENT\nDTSTART:20261127T130507Z\nRRULE:FREQ=HOURLY;BYMINUTE=24\nEND:VEVENT",
+      "updated_at": "2026-11-27T23:45:39.207857+00:00",
+      "primary_lane": "PRIMARY LANE: Solve fresh genuine open questions across fields. Prefer complete exact arguments and counterexamples over accumulating partial reductions. Continue promising unfinished work from its current durable checkpoint."
+    },
+    {
+      "id": "6a84a2b8aae481918ede3d15a5d14a17",
+      "title": "Left to Solve Algebra Bot",
+      "prompt_updated": true,
+      "enabled": true,
+      "schedule_unchanged": true,
+      "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T073600\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+      "updated_at": "2026-11-27T23:45:41.583646+00:00",
+      "primary_lane": "PRIMARY LANE: Algebra, combinatorial identities and recurrences. Use independently defined formulas, cancellation and invariants. Avoid indefinitely adding congruence filters to A113257 without a route to its full question. MO309485 research lease is closed; the remaining exact-target proof submission follows the shared authorized pipeline after real merge."
+    },
+    {
+      "id": "Automation_2fe7f6d540288191bda0795b87d1cbe6",
+      "title": "Left to Solve Number Theory Bot",
+      "prompt_updated": true,
+      "enabled": true,
+      "schedule_unchanged": true,
+      "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T071200\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+      "updated_at": "2026-11-27T23:45:44.080378+00:00",
+      "primary_lane": "PRIMARY LANE: Fresh number theory, exact divisibility and computational counterexamples. A385478 research lease is closed; exact-target proof submission follows the shared authorized pipeline after real merge. Seek complete proofs with genuinely unresolved source assertions; inspect all related sequences and proposed revision discussions before expensive formalization."
+    },
+    {
+      "id": "6b05350b72508191ab727cf378b9f638",
+      "title": "Left to Solve Matrix Bot",
+      "prompt_updated": true,
+      "enabled": true,
+      "schedule_unchanged": true,
+      "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T075200\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+      "updated_at": "2026-11-27T23:45:46.600926+00:00",
+      "primary_lane": "PRIMARY LANE: Fresh matrix, spectral and combinatorial questions. Reconstruct numerical discoveries exactly and prove all source hypotheses. MO235344 and MO310296 have earlier complete mathematical solutions; do not spend more time formalizing them for the new-open target."
+    }
+  ],
+  "execution_limits": "Only enabled configuration and successful prompt updates are established. This receipt does not assert future execution, proof acceptance, novelty, or uninterrupted interactive work."
+}
