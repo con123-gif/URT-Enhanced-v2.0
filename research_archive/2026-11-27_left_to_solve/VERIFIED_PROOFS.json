@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 5,
-  "complete_kernel_checked_candidates": 34,
+  "complete_kernel_checked_candidates": 36,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -1103,10 +1103,106 @@
         "same_problem_no_extra_count": true,
         "use_this_proof_after_registration_instead_of_original_d050": true
       }
+    },
+    {
+      "problem_id": "mo-309485",
+      "exact_statement": "PROOFS_READY/mo-309485.statement.lean",
+      "proof": "PROOFS_READY/mo-309485.proof.lean",
+      "statement_sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+      "proof_sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46081719328",
+      "verification_job": 140781984295,
+      "verification_commit": "d01ca49691faa1f98be914317cc9156cb4fda9d9",
+      "verification_kind": "combined_exact_source_whole_kernel_pass_with_verified_per_file_exit0",
+      "actual_compiler_exit": 0,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifact_id": 15236463459,
+      "artifact_sha256": "7cc9fbffe450e41fb145cccea70d608644d865894322c711f0c69a8db8417a24",
+      "artifact_created_at": "2026-11-27T23:20:19Z",
+      "root_independent_artifact_hash_exit_all_error_and_selected_axiom_audit": true,
+      "root_entire_public_source_and_proof_byte_match": true,
+      "proof_summary": "For every n>=0, the exact source binomial matrix M_n over C has eigenvalue0 iff n>0. All three binomial summands and the j<i zero guard are literal. Signed polynomial-coefficient identities prove Lampe's odd left kernel and MTyson's even right kernel uniformly; determinant/eigenvalue transfer and M_0=[3] give the complete classification.",
+      "genuine_open_status": "complete_source_question_answered_no_exact_prior_settlement_found_in_bounded_primary_review_no_world_priority_certification",
+      "prior_credit": "T. Amdeberhan source; Philipp Lampe proposed odd LEFT kernel, MTyson proposed even RIGHT kernel; classical signed Vandermonde/Pascal identities; Mathlib authors and independent collaborating AI reviewers. No invention claim for those proposed vectors or general binomial method.",
+      "prior_review": "Complete current question/0 answers/all6 comments and actual single original revision read; relevant Fischer, Bacher, Lunnon and full Molinari2022 reviewed. Exact global/Trure numeric hits inspected and unrelated. Bounded absence evidence only.",
+      "public_statement_commit": "0a0fb5c81e0f3f626b91c2099d25f4faf2e714b8",
+      "public_proof_commit": "22546ba73645e52b0037ab12c9935354c740d860",
+      "public_statement_blob": "da16113dd41601cab7734694f42e665791cc8c68",
+      "public_proof_blob": "4942584870d030949640c39cba6e5d4f8b35e606",
+      "statement_prototype_check": {
+        "run": "https://github.com/con123-gif/open-math-agents/actions/runs/46079615097",
+        "job": 140775292284,
+        "verdict": "accepted",
+        "errors": []
+      },
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/14443",
+      "statement_state": "open",
+      "statement_merged": false,
+      "statement_pr_head": "8bc4b06e55ab63df2f7a028a9fe51d839e108170",
+      "root_pr_exact_one_added_file_and_entire_passed_proof_body_readback": true,
+      "submission_authorization": "One actual normal claim20022:46:49, lead/team0, PLAN56888 and supported normal beats; final beat20023:29:06. PR14443 actualcreated23:31:12; DONE61131 HTTP20023:32:26; release(submitted)HTTP20023:32:40. Lease ended; no token archived.",
+      "official_stage_receipt": "MO309485_OFFICIAL_STAGE_RECEIPT.json",
+      "official_stage_receipt_commit": "15b58ab5124c211a2efe60c9cc1cd707c52c75e2",
+      "proof_pr": null,
+      "merged_and_credited": "not_confirmed",
+      "official_full_proof_checker_verdict": "not_submitted",
+      "remaining_obstruction": "Statement PR14443 with ENTIRE exact checked proof is open/unmerged. Await translation review/actualmerge, exact registered-source/imported-target proof check, separate full-proof PR and actual upstream verdict/merge/publiccredit. This completed certificate does not add an accepted proof."
+    },
+    {
+      "problem_id": "oeis-a385478",
+      "exact_statement": "PROOFS_READY/oeis-a385478.statement.lean",
+      "proof": "PROOFS_READY/oeis-a385478.proof.lean",
+      "statement_sha256": "5e741baa5db69b540e94bde20caf6264d0c0dd7eff4646f45e02f1859f351da3",
+      "proof_sha256": "32b97984398a70169f210f0af9fe73358704f941518d3f2dc5238f8b0fabd0b1",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46082195225",
+      "verification_job": 140783468333,
+      "verification_commit": "90b32d612c887aea4424179a0a684ef4e1baf576",
+      "verification_kind": "combined_exact_source_whole_kernel_pass_with_verified_per_file_exit0",
+      "actual_compiler_exit": 0,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifact_id": 15237388112,
+      "artifact_sha256": "2f74cf02042236ac11a4ff7672fb432d0df09fed7d7e2fdb2c8acdd3cf10c8e7",
+      "artifact_created_at": "2026-11-27T23:24:57Z",
+      "root_independent_artifact_hash_exit_all_error_and_selected_axiom_audit": true,
+      "root_entire_public_source_and_proof_byte_match": true,
+      "proof_summary": "Complete literal divisors-of-sigma conjecture is false at n1787. New divisors447 and596 both divide1788 and are genuinely new. Any claimed smallest new divisor dividing both must divide gcd149 and thus earlier sigma(1489)=1490, contradicting newness. Kernel checks the finite classification149|sigma(k),1<=k<1787 implies k1489 via a proved prime-factor product formula, preserving literal sigma=sum positive divisors.",
+      "genuine_open_status": "complete_nondegenerate_source_disproof_bounded_prior_review_with_explicit_unread_history_and_bfile_caveats_no_priority_certification",
+      "prior_credit": "Felix Huber source; related sequences A385467/A385479/A027750/A062068; standard sigma multiplicativity and gcd arithmetic, Mathlib and independent exact-arithmetic/AI reviewers.",
+      "source_review_caveat": "Complete official OEIS GitHub mirror revision7 and all direct related entries read. Interactive history and 1..10000 b-file HTTP403 remain UNREAD. No worldwide absence or priority claim. Proper all-state officialPR/globalLean/Trure searches found no earlier exact settlement in bounded review; actual normal official assignment confirmed eligibility.",
+      "public_statement_commit": "64e32fe90159750abedbf87c6f9d7320a612d6d5",
+      "public_proof_commit": "647d96855b621e5cb8041e75577accb843749e9e",
+      "public_statement_blob": "9693c1e1cb2cb285b2ebfb3537ef8717e796fef6",
+      "public_proof_blob": "36fb97bd350a2f551faaf87e74b8086ea2b0622e",
+      "statement_prototype_check": {
+        "run": "https://github.com/con123-gif/open-math-agents/actions/runs/46082195225",
+        "job": 140783468333,
+        "verdict": "accepted",
+        "errors": []
+      },
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/14393",
+      "statement_state": "open",
+      "statement_merged": false,
+      "statement_pr_head": "0b1f515352cc44cd928c6f9a7cd795e47590678d",
+      "root_pr_exact_one_added_file_and_entire_passed_proof_body_readback": true,
+      "submission_authorization": "Exactly one FIRST secure supported POSTclaim20023:04:03, lead/team0/degradedfalse, PLAN59012 HTTP200 and supported beats; final freshbeat20023:27:55.923. PR14393 actualcreated23:28:55; DONE60930 HTTP200/release(submitted)HTTP20023:30:00.528, normal. Zero Number lease afterward; no old-token reuse.",
+      "official_stage_receipt": "A385478_OFFICIAL_STATEMENT_SUBMISSION.json",
+      "official_stage_receipt_commit": "4b2b92f85ea28401491b41a4bc31231e286efeff",
+      "proof_pr": null,
+      "merged_and_credited": "not_confirmed",
+      "official_full_proof_checker_verdict": "not_submitted",
+      "remaining_obstruction": "Statement PR14393 includes ENTIRE exact passed proof and awaits actual source review/merge. Then exact registered/imported-target verification, separate full disproof PR, actual upstream verdict/merge/publiccredit remain. Sourceprototype acceptance is not upstream full-proof acceptance."
     }
   ],
   "continuing_beyond_minimum": true,
-  "complete_kernel_checked_certificates": 35,
+  "complete_kernel_checked_certificates": 37,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
   "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
@@ -1128,11 +1224,13 @@
     12808,
     12868,
     12938,
-    13431
+    13431,
+    14443,
+    14393
   ],
-  "interactive_leases_for_this_batch": "Priorcompletedpublicationleasesallactuallyreleased200excepthistoricalMO474release500unconfirmed. CurrentnewRESEARCHleasesMO309485andA385478actuallynormal200/PLAN/heartbeats,seeexplicitlastobservedtimes; notanowner-globalcount(scheduledworkersmayholdothers). No expired/releasedtokenrefresh.",
+  "interactive_leases_for_this_batch": "Both latest research/publication lanes MO309485 andA385478 actually DONE/releasedsubmittedHTTP200, see exactreceipt/times. Rootlatestinteractive lanes currently0active. This isNOTanowner-global count: scheduledworkersmayholdothers. HistoricalMO474release500 remains unconfirmed, no stale-token operation.",
   "pending_full_proof_submissions": 2,
-  "record_updated_utc": "2026-11-27T23:21:38.266Z",
+  "record_updated_utc": "2026-11-27T23:40:53.463Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
   "official_full_proof_checker_acceptances": 5,
@@ -1145,36 +1243,32 @@
     "oeis-a386575": "FullFerudunJul22,2026A383111run/strict-partitionargumentalreadycontainsexactcontraction/expansionequivalence. No lease/Lean/newcount."
   },
   "recorded_preceding_foreign_full_proofs": 16,
-  "records_without_known_preceding_proof_or_full_submission": 13,
+  "records_without_known_preceding_proof_or_full_submission": 15,
   "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld and nowfullpriorA381423 certificates, so NOT a currenteligibility/accepted/newsolve total.",
   "latest_submission_rules": "Current official503busy fallback/manual-selection rules permit truthful contributions as specified; read currentrules beforeeachaction. Latest four normal registration claims workedHTTP200; tokenprivacy andownercap/teamcoordinationremainmandatory. No blanket noassignment stop wherecurrentrules explicitlyauthorizesfallback.",
   "full_proof_stage_coordination": {
-    "oeis_a124870": "WITHHOLDownfullPR: foreignfull13325/13377/13401nowexist. Hourlyreadyhandoffhasnoownsubmission.",
-    "oeis_a329813": "ActualfullPR13332open,source/importedcheckaccepted,officialupstreamcheckerqueued,DONE/release200.",
-    "oeis_a369096": "ActualstatementPR13431submittednormal200/DONE/release200, nofullPRyet.",
-    "mo_430643": "NoownstatementPR: existingforeign13174linkedconcurrentcandidate. Adaptownproof/readiness, noexclusivepriorityclaim, awaitactualmerge/fullstagegate."
+    "mo_198816": "FullPR10139 acceptedupstream, actualmerge/creditpending.",
+    "oeis_a329813": "FullPR13332 acceptedupstream23:11:08, actualmerge/creditpending.",
+    "mo_309485": "StatementPR14443 submitted withcompletecheckedproof; leaseclosed. Afteractualmerge, exactimportedtargetcheck+separatefullPR underfreshclaim/racegate.",
+    "oeis_a385478": "StatementPR14393 submitted withcompletecheckeddisproof; leaseclosed. Afteractualmerge, exactimportedtargetcheck+separatefullPR underfreshclaim/racegate.",
+    "mo_430643": "Foreignregistration13174 pending. ExactTARGET_VARIANTS adapter8bad actualpass; use it afteractualmerge/importedcheck/freshrace. No own duplicate statement/fullPR.",
+    "oeis_a124870": "ForeignfullPRs13325/13377/13401 occupy proofstage; withhold duplicate."
   },
-  "current_research_leases": {
+  "current_research_leases": {},
+  "completed_latest_research_leases": {
     "mo309485": {
-      "agent": "codex-algebra-mo309485",
-      "actual_claim_http": 200,
-      "claim_at": "2026-11-27T22:46:49Z",
-      "plan": 56888,
-      "last_observed_beat_http": 200,
-      "last_observed_beat_at": "2026-11-27T23:16:24Z",
-      "scope": "Fullclassification source825bab2e; thirdwhole6b21dbe4queued46081719328/d01ca496; NOTwholepassyet.",
-      "checkpoint": "https://github.com/con123-gif/open-math-agents/commit/0d0e257d2754f004bc019fe3876ca724cfbedc4e"
+      "pr": 14443,
+      "done": 61131,
+      "done_http": 200,
+      "release_http": 200,
+      "released_at": "2026-11-27T23:32:40Z"
     },
     "oeis_a385478": {
-      "agent": "codex-number-a385478",
-      "actual_claim_http": 200,
-      "claim_at": "2026-11-27T23:04:03Z",
-      "plan": 59012,
-      "last_observed_beat_http": 200,
-      "last_observed_beat_at": "2026-11-27T23:18:33.844Z",
-      "degraded": false,
-      "scope": "Counter1787, source1b14bfe0. RawFirstinterruptedrunner143,noverdict; exactfastprime-productversionbd2aa960queued46081632685/17765326, NOwholepassyet.",
-      "privacy": "Privateassignments/keys/tokensneverincludedhere; securepublicreceipt60f2c965."
+      "pr": 14393,
+      "done": 60930,
+      "done_http": 200,
+      "release_http": 200,
+      "released_at": "2026-11-27T23:30:00.528Z"
     }
   }
 }
