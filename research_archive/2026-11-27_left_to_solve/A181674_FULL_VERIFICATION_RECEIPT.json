@@ -1,0 +1,63 @@
+{
+  "problem": "oeis-a181674",
+  "claim": "The source conjecture that the arithmetic mean has order Theta(log log N) is false. The summatory source count is O(N).",
+  "status": "complete pinned-kernel-verified disproof; not an official acceptance",
+  "verified_at_utc": "2026-11-27T20:24:17Z",
+  "run_id": 46063152958,
+  "job_id": 140722015963,
+  "commit": "c9cbdbc848efaa11bd3b0bb018054759fcb0f2ba",
+  "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46063152958",
+  "public_probe": "https://github.com/con123-gif/open-math-agents/blob/c9cbdbc848efaa11bd3b0bb018054759fcb0f2ba/campaign/ProbeA181674FullSecond.lean",
+  "public_probe_git_blob": "4dff770225e7a631d640727ae6b1a49cc144dd90",
+  "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "verified_declaration": "OMA.disproof",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler_errors": [],
+  "public_probe_exact_text_readback": true,
+  "canonical_statement_is_exact_probe_prefix": true,
+  "entire_canonical_proof_body_is_exact_probe_body": true,
+  "static_statement_lint": "accepted",
+  "static_proof_lint": "accepted",
+  "statement_unmodified_checker_run": 46061384181,
+  "statement_unmodified_checker_job": 140716226762,
+  "statement_unmodified_checker_verdict": "accepted; translation review still required",
+  "official_submission": null,
+  "official_acceptance": false,
+  "lease_held": false,
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6; exact serving variant not exposed), with collaborating AI runtime and review agents. Classical Chebyshev/Abel mathematics credited. No historical priority claim.",
+  "files": {
+    "oeis-a181674.statement.lean": {
+      "sha256": "66e077088c2ad86cda9099dcebe099194c35f8227a97b6a285885ed7ff7617f8",
+      "bytes": 1403
+    },
+    "oeis-a181674.proof.lean": {
+      "sha256": "dcd0bf9ecc983ef72c62d351c06a924be1ff53114f66292e6b02e2b4c673a048",
+      "bytes": 26711
+    },
+    "ProbeA181674FullSecond.lean": {
+      "sha256": "9a60f3bc6d573b796f8ea233c94e809a6242f61a20eae51e2ab734a7a979721d",
+      "bytes": 28232
+    },
+    "A181674_FULL_KERNEL_PASS.log": {
+      "sha256": "3b0bf20094bb5a9575b0420cac03d6716bb8b129c6e3b86803e03b44db596e0d",
+      "bytes": 39476
+    },
+    "A181674_DISPROOF.md": {
+      "sha256": "da96a5766d9a3447cf03a6a3af37371d4eb6f3fba51504f46b3daabb00dba239",
+      "bytes": 4756
+    },
+    "A181674_FINITE_SANITY.py": {
+      "sha256": "4f474af57b7c555ed381c3698de96ab3cb7581f10d377fe4ab9c2737b766dd70",
+      "bytes": 2331
+    },
+    "A181674_FINITE_SANITY.json": {
+      "sha256": "25c8981fd92693e79eea98be735d0a8a790594d79d8e3678641e7b0dac87299a",
+      "bytes": 1110
+    }
+  }
+}
