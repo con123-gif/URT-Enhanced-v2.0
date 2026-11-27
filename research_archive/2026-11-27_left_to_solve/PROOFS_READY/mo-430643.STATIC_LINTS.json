@@ -1,0 +1,35 @@
+{
+  "statement": {
+    "file": "statements/mo-430643.lean",
+    "exit": 0,
+    "verdict": {
+      "file": "statements/mo-430643.lean",
+      "type": "statement",
+      "problem": "mo-430643",
+      "module": "OMAStatements.S_mo_430643",
+      "ok": true,
+      "kind": "statement",
+      "polarity": "proof",
+      "theorem": "OMA.S_mo_430643.main",
+      "imports": "Mathlib",
+      "errors": []
+    }
+  },
+  "proof": {
+    "exit": 0,
+    "verdict": {
+      "file": "proofs/mo-430643.lean",
+      "type": "proof",
+      "problem": "mo-430643",
+      "ok": true,
+      "kind": "open",
+      "polarity": "proof",
+      "theorem": "OMA.solution",
+      "imports": "OMAStatements.S_mo_430643",
+      "errors": [],
+      "decl": "OMA.S_mo_430643.main"
+    }
+  },
+  "statement_sha256": "72593373c9c042f35769611ea786a5d2db7041e88fc6328ed0d467338de756b0",
+  "proof_sha256": "d05018f0ec188fd037c397a3ba2c4ff8497c769dbf3a509dcd34652668936460"
+}
