@@ -1,0 +1,47 @@
+{
+  "problem": "mo-513069",
+  "status": "complete-human-proof; prior-informed extension/correction; excluded genuine-new count",
+  "selected_result": "Infinitely many distinct primitive normalized bases of exact N-cycles under xy mod (x+y), for every N>=3",
+  "not_solved": [
+    "Eventual periodicity of every orbit",
+    "Historical priority of all-length cycle existence"
+  ],
+  "verification": "Independent full source/mathematical challenge passed; exact finite examples only; no Lean kernel execution or official submission",
+  "sources": [
+    "https://mathoverflow.net/questions/513069",
+    "https://mathpages.com/home/kmath204.htm",
+    "https://mathpages.com/home/kmath193.htm",
+    "https://mathpages.com/home/kmath212.htm"
+  ],
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex; prior scaled-CRT method credited to David Einstein and Kevin Brown",
+  "files": [
+    {
+      "path": "number_work/MO513069_CRT_CONSTRUCTION.md",
+      "sha256": "5f5a9eb93dabbf49ec7643b75f12a777cd6f52dfbef97e128379ffb598813626"
+    },
+    {
+      "path": "number_work/MO513069_EXACT_CHECKS.json",
+      "sha256": "bca63f52c809f7a010a007d6b1f1e1e8ea0dada4f36d745655d53e26b9ea790c"
+    },
+    {
+      "path": "number_work/MO513069_question.json",
+      "sha256": "ebefe8750db7616665953bc2f892e4133924341b807c72b274c7abbce61ba11b"
+    },
+    {
+      "path": "number_work/MO513069_answers.json",
+      "sha256": "5784b05731aec692b4aef0655f7bc5476dc1772dd46ede77578e9c68c8f0f617"
+    },
+    {
+      "path": "number_work/MO513069_comments.json",
+      "sha256": "56ca481895e7591a3f31e8b5ea8bcb3910baef4db8f542d1c19aa479979d0320"
+    },
+    {
+      "path": "number_work/MO513069_MathPages_PRIOR.html",
+      "sha256": "442a26e5ff0ff38b073b7dab0454e76bb9ac76000f41301f454fc4ec2176ec5b"
+    },
+    {
+      "path": "number_work/MO513069_MathPages_PRIOR.txt",
+      "sha256": "b83c54a0c86bb9f38fb181ddeecd706f2bf0211494b6e51580b29c64686d9608"
+    }
+  ]
+}
