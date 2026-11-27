@@ -5,8 +5,9 @@ Credit Alpöge, Sernau, Anthropic collaborators and Claude.
 
 The seven declarations in `2026-11-27_b2_caller_receipt` passed locally.
 They retain the original weighted-count supplier. The reversible skew/count
-patch is being checked separately, and the six-root graph is running on
-the shared host. Preserve those receipts and failures independently.
+patch has now passed separately on the shared host. Its graph collector
+failed a projection-carrier cross-check; the strict repair is running from
+the checked local module. Preserve those receipts and failures independently.
 
 Next concrete task: give the repaired count theorem its own name and connect
 it to all four already checked pair/energy statements. Reuse the authenticated
@@ -48,3 +49,23 @@ a rejected mathematical statement. Its timeout is retained; the harness now
 retains timeout logs and receipts. Rerun it serially with the longer explicit
 limit before treating the technique as compatible. No B2 result follows from
 either a preparation preflight or a core-only compatibility check.
+
+## Preferred joint labelled variant
+
+Reuse positivity RUN80 (467052b2,
+`specialists/positivity_geometry/compact/RUN80_LabelFused.lean`, blob
+d4ed493ddfced479b3be029bb554493c0c39accd) as the preferred next candidate.
+It adds the already prepared canonical/labelled frame uniqueness proofs to
+the same repaired count, keeping the full retargeting suffix byte-for-byte.
+`fuse_b2_checked_proofs.py --labelled --prepare-only` authenticated that
+source and compared the entire suffix exactly: PASS for preparation only.
+It has eleven declarations, the same five complete original statements,
+the two local labelled/skew guards and all existing supplier guards.
+No labelled-fusion Lean execution has run yet.
+
+The eight-root audit now additionally requires both label bridges reachable
+from every new count/pair/energy root and the old label-uniqueness supplier
+absent there. The old nine-declaration preparation remains a recorded base
+input; do not compile both variants or duplicate the geometric derivation.
+Run the preferred joint variant after core transport compatibility and the
+current graph audit. Preserve the first actual error if it fails.

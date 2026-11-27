@@ -21,9 +21,14 @@ HERE = Path(__file__).resolve().parent
 OLD_COUNT = "Filling.tsum_invPowWeight_le_of_codim_le"
 NEW_COUNT = "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le"
 GUARD = "B2_FUSED: five original statement types match; checked proof retargeting and direct supplier guards passed"
+LABEL_SOURCE = "specialists/positivity_geometry/compact/RUN80_LabelFused.lean"
+LABEL_BLOB = "d4ed493ddfced479b3be029bb554493c0c39accd"
+LABEL_NAMES = ["Filling.RHPositivityRun78.canonical_label_frame_unique",
+               "Filling.RHPositivityRun78.labelled_frame_unique"]
+LABEL_GUARD = "RUN80_LABEL_FUSED: both local supplier guards accepted"
 
 
-def prepare(root, module_dir, out):
+def prepare(root, module_dir, out, labelled=False):
     config = json.loads((HERE / "B2_ACTIVE_FULL_ENERGY_INPUT.json").read_text())
     receipt = json.loads((module_dir / "energy_replacement_results.json").read_text())
     native.require(receipt["compact"] == native.PIN and receipt["mathlib"] == native.MATHLIB,
@@ -159,6 +164,20 @@ run_cmd do
   Lean.logInfo """ + json.dumps(GUARD) + "\n"
     names = ["RHB2Fusion.skew_correction_mul", NEW_COUNT, *new_names]
     text += "\n" + "\n".join("#print axioms " + name for name in names) + "\n"
+    if labelled:
+        raw_label = (native.SWARM / LABEL_SOURCE).read_bytes()
+        native.require(native.git_blob(raw_label) == LABEL_BLOB, "Changed peer labelled fusion")
+        label_text = raw_label.decode()
+        suffix = "set_option Elab.async false in\nrun_cmd do\n"
+        native.require(text.count(suffix) == label_text.count(suffix) == 1,
+                       "Changed checked-transport boundary")
+        native.require(text[text.index(suffix):] == label_text[label_text.index(suffix):],
+                       "Labelled variant changed the checked-proof transport suffix")
+        names = LABEL_NAMES + names
+        for name in names:
+            native.require("#print axioms " + name in label_text, "Missing fused label axiom probe")
+        native.require('Lean.logInfo "' + LABEL_GUARD + '"' in label_text, "Missing label guards")
+        text = label_text
     target = out / "active_b2_fused.lean"
     target.write_text(text)
     manifest = {"compact": native.PIN, "mathlib": native.MATHLIB,
@@ -168,8 +187,11 @@ run_cmd do
                 "checked_input_module": obj, "substitutions": mapping,
                 "theorems": names, "original_statement_comparisons": original_pairs,
                 "method": "reuse checked proof expressions; normal Lean.addDecl kernel checks",
+                "preferred_labelled_variant": labelled,
                 "new_Lean_execution": False, "fused_chain_checked": False,
                 "recursive_graph_checked": False, "full_RH_replay": False}
+    if labelled:
+        manifest["peer_labelled_source"] = {"source": LABEL_SOURCE, "source_blob": LABEL_BLOB}
     native.dump(out / "fused_b2_input.json", manifest)
     return target, manifest
 
@@ -181,10 +203,12 @@ def main():
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--lean-bin", type=Path)
     p.add_argument("--prepare-only", action="store_true")
+    p.add_argument("--labelled", action="store_true",
+                   help="Reuse the authenticated RUN80 joint labelled-uniqueness/skew variant")
     args = p.parse_args()
     root, out = args.compact_root.resolve(), args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
-    source, state = prepare(root, args.module_dir.resolve(), out)
+    source, state = prepare(root, args.module_dir.resolve(), out, args.labelled)
     if args.prepare_only:
         print(json.dumps({"prepared_source_blob": state["source_blob"],
                           "declarations": len(state["theorems"]), "new_Lean_execution": False}))
@@ -213,6 +237,9 @@ def main():
     result = native.step(command, root, env, out / "compile.log", 2400)
     result.update(native.audit(out / "compile.log", state["theorems"]))
     guarded = GUARD in (out / "compile.log").read_text()
+    if args.labelled:
+        state["labelled_supplier_guards_observed"] = LABEL_GUARD in (out / "compile.log").read_text()
+        guarded = guarded and state["labelled_supplier_guards_observed"]
     good = result["returncode"] == 0 and result["axiom_audit_ok"] is True and guarded
     state.update(new_Lean_execution=True, compiler=result, caller_guards_observed=guarded,
                  fused_chain_checked=good, native_source_build_performed=False)

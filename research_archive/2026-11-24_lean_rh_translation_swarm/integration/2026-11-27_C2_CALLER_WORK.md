@@ -27,6 +27,9 @@ The B2 shared job has now completed; its caller and separate count proofs
 passed and its graph collector failed. The repaired graph is running from
 the existing local cache. The new coordinated C2 job is
 `rh-compact-c2-carrier-replay-20261127`, using `run_c2_shared_callers.py`.
+Observed active Actions run
+[46012543617](https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46012543617),
+compute job 140551500763, source commit 4cdf568ee31b94fe2758b2cea9251adf2bba4a8d.
 Its preflight authenticated both candidate sources, Python syntax checks
 passed, and all six actual original source hashes match the compact pin.
 These are preparation checks, not C2 Lean execution.
@@ -39,6 +42,16 @@ is retained only on real base acceptance, then RUN79 is compiled unchanged.
 The old generic batch filename records bootstrap/original-probe evidence;
 `shared_c2_results.json` and `c2/c2_replacement_results.json` are the actual
 C2 acceptance receipts. No complete graph or signed-height claim follows.
+
+After a genuine caller PASS, audit one constructor-inclusive union of the
+ten original/new equal-rank, exchange, explicit-matching and two Carrier
+roots. Reuse the checked C2 objects and authenticated native cache; do not
+repeat the source build. Require old targets absent recursively along their
+new paths, all new suppliers reachable, standard-pair helper consumed,
+and the general outer exchange retained. Pin the unchanged peer inputs and
+verify both checked module digests, using the Actions artifact inventory
+for the propagation object if the original receipt has no separate digest.
+Preparation of this auditor is not a completed C2 graph.
 
 RESUME HERE: inspect the observed shared C2 run, its actual compiler logs
 and per-stage receipts; repair the first failure, preserving exact output.

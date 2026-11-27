@@ -194,6 +194,11 @@ def main():
                "Filling.energy_le_of_level_lt", lower]}
     if args.fused_module_dir:
         watched["RHB2Fusion.skew_correction_mul"] = None
+        if fused.get("preferred_labelled_variant") is True:
+            watched.update({name: None for name in [
+                "Filling.IsLabelledTerm.eq_of_frameImage_eq",
+                "Filling.RHPositivityRun78.canonical_label_frame_unique",
+                "Filling.RHPositivityRun78.labelled_frame_unique"]})
     optional = ({name: 0 for name in config["theorems"]} if args.fused_module_dir else {})
     with (out / "root_membership.jsonl").open() as stream:
         for line in stream:
@@ -231,6 +236,15 @@ def main():
             "unfused_active_suppliers_absent_from_all_fused_roots":
                 all(not (mask & all_new_roots) for mask in optional.values()),
         })
+        if fused.get("preferred_labelled_variant") is True:
+            guards.update({
+                "old_label_uniqueness_absent_from_all_fused_roots":
+                    not (watched["Filling.IsLabelledTerm.eq_of_frameImage_eq"] & all_new_roots),
+                "new_label_uniqueness_reachable_from_all_fused_roots":
+                    watched["Filling.RHPositivityRun78.labelled_frame_unique"] & all_new_roots == all_new_roots,
+                "new_canonical_uniqueness_reachable_from_all_fused_roots":
+                    watched["Filling.RHPositivityRun78.canonical_label_frame_unique"] & all_new_roots == all_new_roots,
+            })
     native.dump(out / "caller_reachability.json", {"roots": roots, "membership": watched,
                 "optional_old_active_suppliers": optional,
                 "guards": guards, "all_guards_pass": all(guards.values()),
