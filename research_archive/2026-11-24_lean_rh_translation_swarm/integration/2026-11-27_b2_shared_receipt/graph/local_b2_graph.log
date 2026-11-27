@@ -1,0 +1,7 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/graph/ActiveB2Graph.lean:169:0: error: getUsedConstants disagrees with independent traversal
+'Filling.sum_pairWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_sum_pairWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.energy_le_of_level_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_energy_le_of_level_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.energy_le_of_linkEnergy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_energy_le_of_linkEnergy_le' depends on axioms: [propext, Classical.choice, Quot.sound]

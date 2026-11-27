@@ -1,0 +1,135 @@
+{
+  "parts": [
+    {
+      "source": "integration/B2_ACTIVE_CALLER_REPLACEMENT.lean",
+      "source_blob": "3ac61ea5bcd38a9d003cf125689bf2b4a58b9c9a"
+    },
+    {
+      "source": "integration/B2_ACTIVE_ENERGY_REPLACEMENT.lean",
+      "source_blob": "e8ef74cafecd49e361b7b147c3970953e30a7f6d"
+    },
+    {
+      "source": "integration/B2_ACTIVE_FULL_ENERGY_EXTENSION.lean",
+      "source_blob": "50b71ffbea844b75e27c35a96ec4c6504b2b13f8"
+    }
+  ],
+  "original_source_blob": "da67bf862a4c5e72ab6a81a7dfb462545cd8833f",
+  "theorems": [
+    "Filling.b2_active_outer_frameValueIndex_dvd",
+    "Filling.b2_active_outer_count",
+    "Filling.b2_active_inner_frameValueIndex_dvd",
+    "Filling.b2_active_sum_pairWeight_le",
+    "Filling.b2_active_energy_le_of_level_pairs",
+    "Filling.b2_active_energy_le_of_level_lt",
+    "Filling.b2_active_energy_le_of_linkEnergy_le"
+  ],
+  "skew_patch": {
+    "source": "audit/2026-11-27_B2_NATIVE_RECEIPT_AND_SKEW_CALLER_PATCH.py",
+    "source_blob": "4c942de0145e223298b3441b6c814a23ae946434"
+  },
+  "full_energy_chain": true,
+  "skew_adapter": {
+    "old": "(by simpa only [neg_mul] using s)",
+    "new": "(by simpa only [Matrix.neg_mul] using s)",
+    "reason": "rectangular matrix multiplication needs the matrix negation lemma"
+  },
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "assembled_source_blob": "7cb3b1813ef5a1c5024e4a79d6ffc2eb4488308f",
+  "cache_receipt": {
+    "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "artifact_sha256": "f1345ef3dc47bbf93e58c4b6a946596b62e94d7f287ff5f04086c5f8502a2ecc",
+    "inner_sha256": "35db72daacbbb00449c12be74f0c79a324128baf72a429cff841d11d0207b57e",
+    "source_build_complete": true,
+    "modules_available": {
+      "New.Filling.BlockBound": true,
+      "New.Filling.CrudeEnergy": true
+    },
+    "restored_files": 660,
+    "restored_bytes": 338757850,
+    "previous_cache": "/workspace/scratch/9bec6a205c16/compact_build/grh-compact/.lake/build/previous_native_lib_verified_b2_cache_coqygp1o",
+    "new_Lean_execution": false,
+    "proof_receipt": false,
+    "full_RH_replay": false
+  },
+  "native_source_build_performed": false,
+  "new_Lean_execution": true,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "steps": {
+    "environment": {
+      "returncode": 0,
+      "seconds": 40.08,
+      "log": "environment.log"
+    },
+    "active_b2_energy": {
+      "returncode": 0,
+      "seconds": 1362.3,
+      "log": "active_b2_energy.log",
+      "axioms": {
+        "Filling.b2_active_outer_frameValueIndex_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_outer_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_inner_frameValueIndex_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_sum_pairWeight_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_energy_le_of_level_pairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_energy_le_of_level_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_energy_le_of_linkEnergy_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true,
+      "all_caller_guards_observed": true
+    },
+    "skew_caller": {
+      "returncode": 124,
+      "seconds": 1800.14,
+      "log": "skew_caller.log",
+      "axioms": {},
+      "axiom_audit_ok": false,
+      "source_blob": "4e6a203623ef642945e05e16aa9b188d1fc6028d"
+    }
+  },
+  "energy_caller_checked": true,
+  "full_energy_chain_checked": true,
+  "original_declaration_types_match": true,
+  "original_targets_absent_from_direct_proof_dependencies": true,
+  "compiled_module": {
+    "name": "active_b2_energy",
+    "artifacts": [
+      {
+        "name": "active_b2_energy.olean",
+        "bytes": 16860608,
+        "sha256": "eeb2f8302b7406fc846ce6ed5dc0f5db1182e0804718d511ac885c86a1040649"
+      }
+    ]
+  },
+  "separate_skew_caller_checked": false,
+  "all_requested_checks_ok": false
+}
