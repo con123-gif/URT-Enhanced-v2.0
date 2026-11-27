@@ -1,0 +1,12 @@
+{
+  "problem_id": "oeis-a068991",
+  "exact_mathematical_statement": "For every positive squarefree natural n, if sum_{d|n} sigma(d)/phi(d) is an integer then n divides the denominator of B_(2n).",
+  "proof": "Complete proof retained in PROOFS_READY/oeis-a068991.proof.lean and A068991_COMPLETE_INFORMAL_PROOF.md. Integrality gives phi(n)|2^omega(n)n; valuation budget excludes predecessor v2>=3, forcing p-1|2n for every prime p|n; von Staudt and squarefreeness give the original denominator divisibility.",
+  "verification_evidence": "A068991_FULL_VERIFICATION_RECEIPT.json; actual pinned exit0 + standard3 axioms, independently artifact/digest/byte checked.",
+  "official_submission_link": null,
+  "checker_verdict": "Full fork kernel proof verified. Official unmodified statement checker accepted. No official proof checker/merge yet.",
+  "acceptance_status": "NOT ACCEPTED: no official PR exists",
+  "public_attribution": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6; exact serving variant not exposed), with collaborating AI runtime/review agents. Classical von Staudt-Clausen, Kellner2005 and Reble2018 methods credited. No human reviewer claimed.",
+  "remaining_obstruction": "Campaign coordinated desk-write STOP after other targets returned HTTP500; no blind new claim attempted. Target first needs reviewed statement registration, then imported-target proof stage.",
+  "prior_audit_caveat": "Related Miller2012 NMBRTHRY email inaccessible: both HTTP/HTTPS503; explicitly unread. No historical-priority or universal absence claim."
+}
