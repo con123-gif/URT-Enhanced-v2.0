@@ -1,0 +1,108 @@
+⚠ [9047/9081] Built Lib.General.LinearAlgebra.Base (5.2s)
+warning: src/Lib/General/LinearAlgebra/Base.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [9048/9081] Built Lib.General.Analysis.OstrowskiTaussky (8.0s)
+✔ [9049/9081] Built Lib.Adelic.Adeles.CoprimeValuation (12s)
+✔ [9050/9081] Built Lib.General.LinearAlgebra.PartialDerivComm (14s)
+✔ [9051/9081] Built Lib.General.Analysis.ZpowSum (14s)
+⚠ [9052/9081] Built Lib.General.Algebra.AdicRingHomExt (8.0s)
+warning: src/Lib/General/Algebra/AdicRingHomExt.lean:137:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9053/9081] Built Lib.General.Groups.ValuationPair (13s)
+⚠ [9054/9081] Built Lib.General.LinearAlgebra.HaarUnique (9.3s)
+warning: src/Lib/General/LinearAlgebra/HaarUnique.lean:82:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9055/9081] Built Lib.Adelic.Adeles.AdeleTopology (9.5s)
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:13:18: `multiplicity_eq_one_of_not_finiteMultiplicity` does not have the `[simp]` attribute
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:31:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:121:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+ℹ [9056/9081] Built Lib.General.NumberTheory.Embeddings (4.3s)
+info: src/Lib/General/NumberTheory/Embeddings.lean:12:8: Try these:
+  [apply] [grind .] for pattern: [@star (RingHom #3 `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+  [apply] [grind
+    =>] for pattern: [IsTotallyComplex #3 #2, @star (RingHom _ `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+✔ [9057/9081] Built Lib.General.Analysis.HolomorphicIntegral (23s)
+✔ [9058/9081] Built Lib.General.Measure.SubgroupIntegral (4.7s)
+⚠ [9059/9081] Built Lib.Adelic.Hecke.HeckeBasic (5.9s)
+warning: src/Lib/Adelic/Hecke/HeckeBasic.lean:66:73: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9060/9081] Built Lib.Weil.Construction.SubmoduleNormedSpace (4.2s)
+✔ [9061/9081] Built Lib.General.LinearAlgebra.ExtendColumns (5.6s)
+✔ [9062/9081] Built Lib.DiscreteSeries.CuspKernel.CircleMean (18s)
+✔ [9063/9081] Built Lib.Adelic.Adeles.AdditiveCharDefs (5.8s)
+⚠ [9064/9081] Built Lib.General.LinearAlgebra.HuaIntegral (12s)
+warning: src/Lib/General/LinearAlgebra/HuaIntegral.lean:26:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9065/9081] Built Lib.General.NumberTheory.QuadField (7.5s)
+⚠ [9066/9081] Built Lib.Adelic.QuotientMeasure.Packing (18s)
+warning: src/Lib/Adelic/QuotientMeasure/Packing.lean:110:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9067/9081] Built Lib.Shimura.Uniformisation.LieExponential (30s)
+info: src/Lib/Shimura/Uniformisation/LieExponential.lean:247:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9068/9081] Built Lib.General.LinearAlgebra.AdelicRingDefs (6.2s)
+✔ [9069/9081] Built Lib.Adelic.QuotientMeasure.PeriodicMean (4.3s)
+✔ [9070/9081] Built Lib.General.NumberTheory.QuadFieldSplitting (8.8s)
+ℹ [9071/9081] Built Lib.Adelic.QuotientMeasure.Unimodular (10s)
+info: src/Lib/Adelic/QuotientMeasure/Unimodular.lean:145:65: Try this:
+  [apply] field_simp
+✔ [9072/9081] Built Lib.Shimura.ComplexTheta.CanonicalMultiplier (11s)
+⚠ [9073/9081] Built Lib.General.LinearAlgebra.ColumnLattices (14s)
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:17: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9074/9081] Built Lib.General.Analysis.FundamentalDomain (11s)
+✔ [9075/9081] Built Lib.General.Algebra.ZerosCostDegree (26s)
+✔ [9076/9081] Built Lib.Shimura.ComplexTheta.ThetaDimension (34s)
+⚠ [9077/9081] Built Lib.CM.Sigma.SigmaFunction (11s)
+warning: src/Lib/CM/Sigma/SigmaFunction.lean:130:32: This simp argument is unused:
+  image_pair
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Submodule.map_span, SetLike.ext_iff, Submodule.mem_span_pair, ← forall_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9078/9081] Built Lib.CM.Sigma.CurveTheta (23s)
+warning: src/Lib/CM/Sigma/CurveTheta.lean:234:19: This simp argument is unused:
+  image_pair
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledIdeal, map_span, span_mul_span]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [9079/9081] Built Lib.CM.Sigma.PadicSeriesDefs (14s)
+info: src/Lib/CM/Sigma/PadicSeriesDefs.lean:83:85: Try this:
+  [apply] field_simp [h0]
+✔ [9080/9081] Built Lib.General.Algebra.JetChainRule (5.5s)
+⚠ [9081/9081] Built Lib.CM.LocalHeight.IntegralParameter (34s)
+warning: src/Lib/CM/LocalHeight/IntegralParameter.lean:141:45: `mul_lt_one_of_nonneg_of_lt_one_right` has been deprecated: No replacement, use constituent lemmas from proof.
+info: src/Lib/CM/LocalHeight/IntegralParameter.lean:212:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/CM/LocalHeight/IntegralParameter.lean:210:10: This simp argument is unused:
+  (naiveHeight_spec ..).1.ne'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [field, ← (naiveHeight_spec ..).2.1, pow_right_comm _ N, ← norm_pow, ← norm_mul, ← map_pow, ← map_mul,
+    ← Complex.exp_nsmul, ← Complex.exp_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (9081 jobs).

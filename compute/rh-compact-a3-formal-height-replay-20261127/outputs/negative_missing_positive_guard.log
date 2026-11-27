@@ -1,0 +1,7 @@
+/tmp/compact-a3-native-kh5l053f/missing_positive_guard.lean:2:63: error: linarith failed to find a contradiction
+x y c : ℝ
+hc : c ≤ x
+h : y ^ 2 = c * x
+a✝ : x < y
+⊢ False
+failed

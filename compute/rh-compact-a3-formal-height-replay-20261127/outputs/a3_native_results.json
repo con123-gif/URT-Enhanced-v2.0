@@ -1,0 +1,122 @@
+{
+  "scope": "new peer helper replay; original caller axioms checked separately",
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 1.87,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 12.54,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.03,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 0.67,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.21,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 80.97,
+      "log": "mathlib_cache.log"
+    },
+    "integral_build": {
+      "returncode": 0,
+      "seconds": 285.08,
+      "log": "integral_build.log"
+    },
+    "integral_original": {
+      "returncode": 0,
+      "seconds": 4.47,
+      "log": "integral_original.log",
+      "axioms": {
+        "CMLattice.norm_disc_eq_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CMLattice.norm_a₁_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "weber_cycle_scalar": {
+      "returncode": 1,
+      "seconds": 4.42,
+      "log": "weber_cycle_scalar.log",
+      "axioms": {},
+      "axiom_audit_ok": false
+    },
+    "formal_build": {
+      "returncode": 0,
+      "seconds": 316.37,
+      "log": "formal_build.log"
+    },
+    "formal_original": {
+      "returncode": 0,
+      "seconds": 4.47,
+      "log": "formal_original.log",
+      "axioms": {
+        "CMLattice.exists_unit_coeff_degree_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "formal_height_scalar": {
+      "returncode": 0,
+      "seconds": 4.73,
+      "log": "formal_height_scalar.log",
+      "axioms": {
+        "CompactLiteratureRun76.curve_invariants": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CompactLiteratureRun76.unit_at_boundary": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "negative_missing_positive_guard": {
+      "returncode": 1,
+      "seconds": 2.77,
+      "log": "negative_missing_positive_guard.log",
+      "expected_rejection_observed": true
+    }
+  },
+  "new_Lean_execution": true,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": false,
+  "failure": "A3 native checks incomplete or failed"
+}

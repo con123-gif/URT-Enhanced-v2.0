@@ -1,0 +1,122 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: A3 native checks incomplete or failed",
+  "returncode": 1,
+  "wall_s": 744.56,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/literature_provenance/RUN78_COMPACT_A3_NATIVE_REPLAY.py\", line 231, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/literature_provenance/RUN78_COMPACT_A3_NATIVE_REPLAY.py\", line 220, in main\n    require(state[\"all_requested_checks_ok\"], \"A3 native checks incomplete or failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: A3 native checks incomplete or failed\n",
+  "id": "rh-compact-a3-formal-height-replay-20261127",
+  "question": "A3 shared targeted native audit: build IntegralParameter and FormalHeight once, replay five existing RUN76/77 scalar helpers and three original theorem axiom probes separately; reject the omitted positive guard. Preserve partial receipts and exact source hashes. Not a geometric caller replacement or full RH verification.",
+  "requested_by": "GPT, user continuous-work directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/literature_provenance/RUN78_COMPACT_A3_NATIVE_REPLAY.py --out {out}",
+  "utc": "2026-11-27T13:10:45Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "4db738251744c71c07917423b5f207fa71e80c31",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46001860122",
+  "outputs_committed": [
+    {
+      "path": "a3_native_results.json",
+      "bytes": 2838,
+      "sha256": "11bfb83505f64a406efab3286f1b1d4e22aa2f809e86d983b8ab2534dcbe7ae6"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "f4b62b1134731bb857709dbd71ebb557597be52615600393d879605e78ea4bde"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "formal_build.log",
+      "bytes": 17029,
+      "sha256": "d00704463da9d032ea82e20ae91b9445678c6c790e2c33541243563b13734238"
+    },
+    {
+      "path": "formal_height_scalar.log",
+      "bytes": 868,
+      "sha256": "8a2a3b11aa8418a2cb168c9bf2217db15b96789cf707d20472acadff03f31941"
+    },
+    {
+      "path": "formal_original.log",
+      "bytes": 99,
+      "sha256": "50a8e343c37a04df370a0fc6110f5f387a96297ecb18eabf7976ed3defd2a912"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 1457,
+      "sha256": "303d505ec09e3061d0a760607ce4877ba044d51acba37b7367fce5154a34bce6"
+    },
+    {
+      "path": "integral_build.log",
+      "bytes": 7124,
+      "sha256": "b203fc0bd4f6b2f01ff8996ebb0a65a1820115a60a5ac099dcc55bdbc0e667b9"
+    },
+    {
+      "path": "integral_original.log",
+      "bytes": 176,
+      "sha256": "2c08e944d1ba8c42ed88ef82e39370ccf16ec18953844719eacc59345b7f7ee3"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 8133,
+      "sha256": "11f87abae1dd1a02928c8a0e087cd176d1baacab9d7d1a2f4cfae0e07447f216"
+    },
+    {
+      "path": "negative_missing_positive_guard.log",
+      "bytes": 186,
+      "sha256": "3e4e00d7e37028d86e5e84bfb8cc619f0710ec882d086bce3cf74d393cfed682"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1550,
+      "sha256": "46940d2704eb827aa987816d30b901a41bd46f5f2489a7e3052cb8f5e8052e6e"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "cca3a153fc688e97393be6374c280e70aabb715210ebc2cc18b335583c08d8b0"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    },
+    {
+      "path": "weber_cycle_scalar.log",
+      "bytes": 91,
+      "sha256": "eaf7d20b8ba50c91268f06e444fabee5fc0c4859e8711b5aea24a0447aa11a3c"
+    }
+  ],
+  "outputs_artifact_only": []
+}

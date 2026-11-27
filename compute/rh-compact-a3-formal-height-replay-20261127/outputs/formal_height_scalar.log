@@ -1,0 +1,8 @@
+'CompactLiteratureRun76.curve_invariants' depends on axioms: [propext, Quot.sound]
+'CompactLiteratureRun76.unit_at_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+CMLattice.exists_unit_coeff_degree_le {d : ℕ} [PrimeSevenModEight d] (E : CMLattice d) {p : ℕ} [Fact (Nat.Prime p)]
+  [PadicPlace p] {Z g : PowerSeries ℂ_[p]} (Z0 : PowerSeries.constantCoeff Z = 0) (Z1 : (PowerSeries.coeff 1) Z = 1)
+  (hZ : ∀ {f : PowerSeries ℂ_[p]}, f ∈ E.phiSeriesRing → PowerSeries.subst Z f ∈ seriesToCp.range) {a : ℂ} {q : ℕ}
+  (m : E.IsIsogeny E.periodPair a q) (o : Odd q) (hg : g ∈ seriesToCp.range) (g0 : PowerSeries.constantCoeff g = 0)
+  (h : PowerSeries.subst g Z = ιₚ a • Z) : ¬∀ n ≤ q, ‖(PowerSeries.coeff n) g‖ ≠ 1
+'CMLattice.exists_unit_coeff_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]

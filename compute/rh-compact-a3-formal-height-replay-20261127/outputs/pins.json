@@ -1,0 +1,39 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "peers": {
+    "formal_height_scalar": {
+      "path": "specialists/literature_provenance/RUN76_COMPACT_FORMAL_HEIGHT_GOOD_REDUCTION.lean",
+      "source_blob": "7d0d96c9e26ddc305d867682d739e645b92c29d2",
+      "theorems": [
+        "CompactLiteratureRun76.curve_invariants",
+        "CompactLiteratureRun76.unit_at_boundary"
+      ]
+    },
+    "weber_cycle_scalar": {
+      "path": "specialists/literature_provenance/RUN77_COMPACT_WEBER_UNIT_CYCLE.lean",
+      "source_blob": "9b39df466e8c83b3e05ab65ff9163e610b8d6ddd",
+      "theorems": [
+        "CompactLiteratureRun77.weber_polynomial",
+        "CompactLiteratureRun77.no_rise",
+        "CompactLiteratureRun77.low_trap"
+      ]
+    }
+  },
+  "source_blobs": {
+    "Lib/CM/FormalGroup/FormalHeight.lean": "640cabefca81dde25d092fd6ac057c3bcdd3516e",
+    "Lib/CM/LocalHeight/IntegralParameter.lean": "9dc955b1e8a0650c27c8eda49f6e4adaf94680bd",
+    "Lib/CM/Sigma/CurveTheta.lean": "cd276f383c2768ee6039051e407ecac800a7f0d7",
+    "New/Curve/FormalParameter.lean": "61130bd5600a2b1f1679cfe0a18123d2c458d425"
+  },
+  "original_theorems": [
+    "CMLattice.norm_disc_eq_one",
+    "CMLattice.norm_a₁_le_one",
+    "CMLattice.exists_unit_coeff_degree_le"
+  ],
+  "new_Lean_execution": false,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d"
+}
