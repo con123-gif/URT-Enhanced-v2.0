@@ -3688,3 +3688,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT kernel lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-b3-direct-chart-replay-20261127"
+question = "Replay the immutable RUN85 direct-chart/selfNorm/positions candidate through RUN86 in one shared pinned B3 workspace; build LocalTheorem and StandardLevel once, require complete original/replacement statements, standard axiom reports, all six constructor-inclusive root verifiers and 13 guards, retaining actual compiler and graph evidence. No Main, complete B3 assembly or RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN87_SHARED_B3_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT Landau lane; user continuation directive 2026-11-27"
+claim = "independent"
