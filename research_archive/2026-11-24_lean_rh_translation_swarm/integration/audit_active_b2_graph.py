@@ -4,6 +4,35 @@
 This is a local B2 frontier, never the whole RH frontier or a completion
 denominator. Reuse the authenticated exporter and verifier. A capable,
 pinned CrudeEnergy workspace must already be built; no Main build/import.
+
+27 Nov integration checkpoint (run 46006832164, source e9d6043bfdfbcddfe6a32b64539900d0f6d5bf40):
+The independent shared execution replayed all seven primary declarations,
+four exact original statement comparisons/direct guards, and the separate
+rectangular skew/count patch (exit 0, 60.18s, three standard-axiom reports).
+The six-root graph failed at its collector cross-check; do not report the
+whole job PASS. Receipts in cathedral-research-state under
+compute/rh-compact-b2-full-chain-graph-20261127/outputs/:
+shared_full_b2_results.json (blob de3f984c76c70f897400439ebef45d836a3d7521),
+skew_caller_results.json (blob 0a97756bf091ef0c331b53f4533dcbde217fc132),
+graph/local_b2_graph.log (blob ae8303ac742f9ce634b34966617e8b0e18e5269c).
+Keep that partial graph and original/replacement source; no global deletion.
+
+Cause: pinned Lean 4.35.0 eb6cafb7290e8bd5f2937522d8d804f58f02bafc,
+src/Lean/Util/FoldConsts.lean blob 5429906bfda3805967920ea17f77e68611007fdf:
+the .proj case calls visitConst typeName before visiting the body. Thus
+getUsedConstants = explicit constants UNION projection carriers, not just
+explicit constants. ForEachExpr.lean blob e8c728018470d7234d3a2a3727add85678683620
+visits the projection body independently. Compare sets against that union,
+but export the two roles separately. This preserves all structural edges and
+the old verifier schema. No weakening of the equality guard. The old pinned
+exporter is untouched; this adapter is only in the generated compact driver.
+New raw-expression controls test projection-only and overlapping roles.
+Prepared, source-matched; native execution of this adapter is still pending.
+
+RESUME HERE: replay this driver with the authenticated compiled module/native
+cache from the shared run, using --module-dir and the existing graph runner;
+inspect the actual graph_execution.json and all root guards before promoting.
+The separate skew/count patch is not yet fused into the named energy chain.
 """
 import argparse
 import hashlib
@@ -49,6 +78,47 @@ def main():
                   "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le"]
     graph.ROOTS = roots
     exporter = graph.driver()
+    # Lean 4.35 FoldConsts includes projection carrier names. Keep explicit
+    # constants and projection carriers in their separate graph roles.
+    old_refs = """  let found ← cs.get
+  let builtin := e.getUsedConstants
+  unless found.size == builtin.size && builtin.all (fun c => found.contains c) do
+    throw (IO.userError "getUsedConstants disagrees with independent traversal")
+  let projections ← ps.get
+  let hasNat ← natLit.get
+  let hasStr ← strLit.get
+  return ⟨builtin, projections.toArray, hasNat, hasStr⟩"""
+    new_refs = """  let found ← cs.get
+  let projections ← ps.get
+  let mut union := found
+  for c in projections.toArray do
+    union := union.insert c
+  let builtin := e.getUsedConstants
+  unless union.size == builtin.size && builtin.all (fun c => union.contains c) do
+    throw (IO.userError "getUsedConstants disagrees with explicit/projection union")
+  let hasNat ← natLit.get
+  let hasStr ← strLit.get
+  return ⟨found.toArray, projections.toArray, hasNat, hasStr⟩"""
+    native.require(exporter.count(old_refs) == 1, "Unexpected pinned collector")
+    exporter = exporter.replace(old_refs, new_refs, 1)
+    exporter = exporter.replace("Record projection carrier names separately: FoldConsts skips them.",
+                                "FoldConsts includes projection carriers; record them separately.", 1)
+    control_anchor = "/-- The implicit primitive references used by lean4export."
+    controls = """-- Raw expression controls: no claims about well-typedness.
+run_cmd do
+  let r ← exprRefs (.proj ``Prod 0 (.const ``Nat []))
+  unless r.constants.size == 1 && r.constants.contains ``Nat &&
+      r.projections.size == 1 && r.projections.contains ``Prod do
+    throwError "projection carrier role regression"
+  let overlap ← exprRefs (.proj ``Prod 0 (.const ``Prod []))
+  unless overlap.constants.size == 1 && overlap.constants.contains ``Prod &&
+      overlap.projections.size == 1 && overlap.projections.contains ``Prod do
+    throwError "projection/constant overlap regression"
+  logInfo "compact projection collector controls passed"
+
+"""
+    native.require(exporter.count(control_anchor) == 1, "Missing collector control anchor")
+    exporter = exporter.replace(control_anchor, controls + control_anchor, 1)
     native.require(exporter.count("import Main\n") == 1, "Changed exporter import")
     exporter = exporter.replace("import Main\n", "", 1)
     config = json.loads((HERE / "B2_ACTIVE_FULL_ENERGY_INPUT.json").read_text())
@@ -104,6 +174,7 @@ def main():
     manifest = {"compact": native.PIN, "mathlib": native.MATHLIB, "roots": roots,
                 "parts": config["parts"], "generated_source_blob": native.git_blob(source.encode()),
                 "exporter_source_blob": "ee4efebb066f6775fa551ae9104cfa973e585071",
+                "projection_collector_adapter": "Lean 4.35 explicit constants union projection carriers; separate roles",
                 "scope": scope,
                 "checked_module_reused": module_receipt is not None,
                 "fused_chain_module_reused": args.fused_module_dir is not None,
