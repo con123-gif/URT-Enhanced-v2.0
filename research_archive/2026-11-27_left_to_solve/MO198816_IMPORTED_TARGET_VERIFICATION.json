@@ -1,0 +1,28 @@
+{
+  "run_id": 46046988992,
+  "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46046988992",
+  "job_id": 140668601604,
+  "checked_head_candidates": [
+    "970e37f449fa1ffa19cc54fcc24c0673abbe65e4"
+  ],
+  "checked_UTC": "2026-11-27T18:10:36.5073362",
+  "exact_official_checker_result": {
+    "file": "proofs/mo-198816.lean",
+    "type": "proof",
+    "problem": "mo-198816",
+    "ok": true,
+    "kind": "open",
+    "polarity": "disproof",
+    "theorem": "OMA.disproof",
+    "imports": "OMAStatements.S_mo_198816",
+    "errors": [],
+    "decl": "OMA.S_mo_198816.main",
+    "verdict": "accepted",
+    "reason": "kernel accepted; axioms within propext, Classical.choice, Quot.sound",
+    "log": "'OMA.disproof' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  },
+  "selected_proof_file": "scout_work/mo198816_simple_disproof.lean",
+  "selected_proof_sha256": "e621cf7f5b2028b4f9b39b114ffd3a226be386133f3f3f835bef10b320720a1e",
+  "registered_statement_git_blob": "0698d6c0abd1302ad3542d32ea4c0a25ce239a24",
+  "status": "Actualimported-targetverificationaccepted; officialproofPR/independentupstreamacceptancepending"
+}
