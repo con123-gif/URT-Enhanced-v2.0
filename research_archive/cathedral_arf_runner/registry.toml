@@ -3670,3 +3670,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT active continuous work, user directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-c1-fit-budget-replay-20261127"
+question = "Build pinned FitTwistsExist once. Replay the exact original-statement C1 split with named finite-prime budget supplier and conditional witness assembly, checking complete type and direct dependency guards; separately check RUN83 scalar payment and three original axiom probes. Preserve partial failures. Not a valuation theorem, transitive graph, C1 closure or RH proof."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN84_COMPACT_C1_NATIVE_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT, user continuous-work directive 2026-11-27"
+claim = "independent"
