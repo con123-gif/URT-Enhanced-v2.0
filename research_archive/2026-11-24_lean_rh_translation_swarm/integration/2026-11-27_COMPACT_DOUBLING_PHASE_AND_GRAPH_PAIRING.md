@@ -206,6 +206,55 @@ so it is equality in the actual native datum space. The same
 nonzero graph trace fixes every target phase, without assuming
 it trivial merely because it is trivial on rational elements.
 
+### 4.1 Independent audit: a direct native proof, now preferred
+
+Audit commit 75a3faea1193da9661ccabbf6cb98aa1aa4eeaa9,
+`audit/2026-11-27_GRAPH_ZERO_TERM_SEPARATION.lean`, was read
+in full. It agrees on D6–D8 and independently proves D9 by
+the following simpler argument on the ACTUAL datum space.
+Use this proof for D9; the Hilbert argument above is an
+alternative and its tensor construction is no longer a premise.
+
+The family of functionals E_Gamma_1 rho_double(t), for ALL
+adelic Heisenberg parameters t, separates native data. To see
+this let every such value on w be zero. For arbitrary z,
+Heisenberg multiplication makes all these values on rho(z)w
+zero too. Each mixed term in the exact rational expansion
+hasSum_theta_sourceTerm is one of these functionals, so
+theta_double(rho(z)w)=0 for all z. The normalized theta
+pairing then gives <w,w>=0; positive definiteness gives w=0.
+No injectivity of the SINGLE evaluation E_Gamma_1 is asserted.
+
+Let A_h=splitWeil_double(1,h), v=D(f',f), and
+v_h=D(U_h f',U_h f). For arbitrary t=(y,z) let t0=h^(-1)t
+be the inverse target action on each Hom block. Exact native
+covariance and E_Gamma_1 A_h=E_Gamma_1 give
+
+    E_Gamma_1 rho(t) A_h v = E_Gamma_1 rho(t0) v.
+
+Box/negation Heisenberg covariance, (D7), commutation of scalar
+c with h and unitarity of U_h give the same equality for v_h:
+
+    E_Gamma_1 rho(t) v_h
+      = <rho(c^(-1)z)U_h f', rho(y)U_h f>
+      = <rho(c^(-1)z0)f', rho(y0)f>
+      = E_Gamma_1 rho(t0) v.
+
+Consequently
+
+    E_Gamma_1 rho(t) [A_h D(f',f)-D(U_h f',U_h f)] = 0
+                                            for EVERY t.   (D10)
+
+The separating-family result proves D9 directly. This removes
+the Hilbert tensor realization, commutant scalar and scalar
+phase comparison from the preferred proof. Its remaining
+inputs are exactly the normalized theta pairing, exact mixed
+sum, graph pairing, Heisenberg covariance and zero-term target
+law already used here. The independent audit is conditional
+on these same native model laws; its generic Lean bridge is
+prepared, not compiled. It is not an independent audit of
+the common convergence estimates or the complete RH proof.
+
 ## 5. Exact Rallis substitution and remaining background
 
 Use D from (D4) for the SAME height-reduced data d(x,x') in the

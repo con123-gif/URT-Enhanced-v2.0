@@ -273,3 +273,41 @@ majorant proof, then the finite cutoff and its multiplier. Do
 not reopen sign-change/block phase at this consumer unless an
 actual flaw in the graph trace argument is identified. Other
 source consumers retain those stronger native suppliers.
+
+The next finite supplier was then actually derived:
+`2026-11-27_COMPACT_DUAL_DATUM_PROJECTOR_AUDIT.md`.
+Uses the already derived finite Delta index/inverse and local
+norm-minus-one supplier (finite cocycle §5), not a repeat of it.
+The finite vacuum integral gives coefficient 1/Delta(kappa^-1),
+and projection supplies exact cancellation in the source f_A'.
+For the nonintegral direction, v=kyg fixes both unshifted vectors
+because k^-1v=yg integral and p^-1v=ky integral. Selected identity
+rows contract eta* v to (1+z)d sigma g_il. Drop its integral
+first term via the ACTUAL psi_0; remaining character forces
+sigma z g_il integral contrary to the valuation minimum.
+Datum choices fixed before g. The limiting nonvanishing uses
+ONE original L1 coefficient, not uniform norms of f_A'.
+Native Projections/FiniteVacuum/SharpData reread in this run.
+
+Independent literature ed062f15 was read in full. It explicitly
+audits our D6–D8 graph pairing (agreement) and derives the
+stronger sign-change multiplier (available to other callers).
+It predates D9 and supplies no independent audit of D9, the
+new finite commutator proof or convergence. Keep that boundary.
+
+RESUME HERE: independent audit of (F3)–(F10), D6–D9 and vacuum
+peak/majorant; then attack the separate noncoherent absolute
+amplitude/exchange consumer with its exact source guards.
+Do not reopen already supplied Rallis scalar or bounds without
+an actual discrepancy. All A/C primitives remain explicit.
+
+Latest independent audit 75a3faea1193da9661ccabbf6cb98aa1aa4eeaa9
+read in full (157 lines). It proves D9 directly on native data
+via the separating family E_Gamma_1 rho(t), using exact theta
+expansion and normalized pairing. Integrated as doubling §4.1
+and in main: PREFERRED proof, no Hilbert tensor/commutant/scalar
+branch required. Original proof retained as optional evidence.
+This is independent agreement on D6–D9 under model laws, not
+on common convergence or the new finite projector/commutator.
+Its generic Lean bridge is uncompiled. No adoption of toy
+negative-control calculations as native evidence.
