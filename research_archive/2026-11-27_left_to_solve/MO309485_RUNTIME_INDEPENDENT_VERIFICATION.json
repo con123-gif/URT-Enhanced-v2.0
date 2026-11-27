@@ -1,0 +1,99 @@
+{
+  "run_id": 46081719328,
+  "job_id": 140781984295,
+  "head": "d01ca49691faa1f98be914317cc9156cb4fda9d9",
+  "artifact_id": 15236463459,
+  "sha256": "7cc9fbffe450e41fb145cccea70d608644d865894322c711f0c69a8db8417a24",
+  "digest_matches": true,
+  "members": [
+    "ProbeMO309485FullThird.lean.exit",
+    "ProbeMO309485FullThird.lean.log"
+  ],
+  "exit": "0",
+  "errors": [],
+  "axioms": [
+    {
+      "theorem": "OMA.MO309485.Binomial.sum_A",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.MO309485.Binomial.sum_B",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.MO309485.Binomial.sum_C",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.MO309485.OddKernel.det_eq_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.MO309485.EvenKernel.det_eq_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.solution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "whole_kernel_pass": true,
+  "all_selected_standard_axioms": true,
+  "assembly_byte_audit": {
+    "status": "UNVERIFIED_THIRD_ASSEMBLY_BYTE_AUDIT",
+    "probe_sha256": "6b21dbe4e8f86b6c75a867b26addf29392d80cdf5505c3bcf0ddbaf86ae17579",
+    "proof_sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+    "entire_proof_body_embedded": true,
+    "inputs": {
+      "runtime_research/MO309485BinomialPolynomial.lean": {
+        "sha256": "a48a8c6d602527d2fd69a5a06a7fad7ff5ba3bd8cbb33f866b4a61e7bff03b7f",
+        "entire_body_embedded": true
+      },
+      "fresh_algebra_work/MO309485Bridge.lean": {
+        "sha256": "01632bc8a68f47531c2690a7a8f54d7ea4e93a1470cd19b99edc7c98af3e1c32",
+        "entire_body_embedded": true
+      },
+      "fresh_algebra_work/MO309485OddKernel.lean": {
+        "sha256": "fd6f3577a5fb07b2bd98809c98df603ae55f114391a50ec23789ec386b210c77",
+        "entire_body_embedded": true
+      },
+      "fresh_algebra_work/MO309485EvenKernel.lean": {
+        "sha256": "b625dca44a39249ba9163f1f8eb3fc5698c3fb018ad492b0d93c7b55fae363e2",
+        "entire_body_embedded": true
+      },
+      "fresh_algebra_work/mo309485_statement.lean": {
+        "sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+        "entire_body_embedded": true
+      }
+    },
+    "whole_kernel_pass": false
+  },
+  "public_probe_sha256": "6b21dbe4e8f86b6c75a867b26addf29392d80cdf5505c3bcf0ddbaf86ae17579",
+  "public_matches_frozen_probe": true,
+  "official_proof_acceptance": false,
+  "status": "FULL_KERNEL_PASS"
+}
