@@ -4,9 +4,9 @@ Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex, GPT-6 (exact servin
 
 ## Actual counts
 
-**0/20 confirmed merged, publicly credited full solutions. Three full proof PRs submitted; all three passed the actual upstream checker. Fourteen complete candidate proofs/disproofs have passed the pinned Lean kernel.**
+**0/20 confirmed merged, publicly credited full solutions. Three full proof PRs submitted; all three passed the actual upstream checker. Fifteen complete candidate proofs/disproofs have passed the pinned Lean kernel.**
 
-The other eleven complete proofs await their registered statement prerequisites before a valid full-proof PR can be sent. Statements, notes, reductions, duplicate or prior-known results are excluded from the accepted minimum. New candidate proofs are uploaded publicly as soon as complete and verified; official submissions follow the site's exact required stages.
+The other twelve complete proofs await their registered statement prerequisites before a valid full-proof PR can be sent. Statements, notes, reductions, duplicate or prior-known results are excluded from the accepted minimum. New candidate proofs are uploaded publicly as soon as complete and verified; official submissions follow the site's exact required stages.
 
 ## Every complete certificate
 
@@ -29,6 +29,8 @@ The linked statement files preserve every definition, quantifier, range and form
 | mo-298064 | [statement](PROOFS_READY/mo-298064.statement.lean) · [full proof](PROOFS_READY/mo-298064.proof.lean) | [actual check](https://github.com/con123-gif/open-math-agents/actions/runs/46034097069) | [statement prerequisite](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8847) | Pending |
 | oeis-a079269 | [statement](PROOFS_READY/oeis-a079269.statement.lean) · [full proof](PROOFS_READY/oeis-a079269.proof.lean) | [actual check](https://github.com/con123-gif/open-math-agents/actions/runs/46034097069) | [statement prerequisite](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8859) | Pending |
 
+| oeis-a343311 | [statement](PROOFS_READY/oeis-a343311.statement.lean) · [full proof](PROOFS_READY/oeis-a343311.proof.lean) | [actual check](https://github.com/con123-gif/open-math-agents/actions/runs/46036883361) | [statement prerequisite](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9126) | Pending |
+
 Every candidate is attributed to Cornelius Lytollis, assisted by ChatGPT, and acknowledges source authors/standard prior mathematics. Source/literature audits are bounded; final genuine-open classification must be reconciled with site source review. No priority or acceptance is inferred from a kernel pass alone. [Machine-readable receipts and SHA256s](VERIFIED_PROOFS.json).
 
 ## Confirmed upstream obstruction
@@ -40,15 +42,16 @@ Do not submit duplicate statements or pretend the target is registered before th
 ## Other current complete mathematical candidates — NOT yet counted as kernel passes
 
 - MO487192: central square-zero element disproves the characteristic-zero joint-centralizer extension. Use the repaired FULL three-question conjunction target, not the superseded Q3-only draft.
-- A329813: universal six-distinct-limit claim is false by exact six-periodic seed scaling and uniqueness of limits. Equivalent A329654 is the SAME conjecture, count once.
+- A329813: the standalone full universal disproof passed the actual pinned kernel in run46036883361. Its canonical site interface is now checking; it is not yet added to the submission-ready count. Equivalent A329654 is the SAME conjecture, count once.
 - A383246 and A383248: full greedy-range connector/fairness proofs; different source assertions, with known prior fairness method credited. Their companion aliases are not extra problems.
-- A343311: complete distinct-positive-triple/divisibility classification, with all prime and small exception exclusions.
-- A337945: complete literal odd-squarefree classification with explicit even/prime-square constructions.
 - MO319325: exact Lyapunov/covariance normalization sequence with two alternating limits disproves universal convergence. Preserve actual principal-square-root semantics.
 
 These seven full candidates were uploaded for exact checking at verifier commit384d0a80fba504d2b3ac13a1649e54f74f4cedec. No pass or accepted count is claimed until the actual logs establish it. The MO311744 given-basis counterexample is scope-sensitive and still excluded; the existential-basis version has an affirmative hand proof via published Lyapunov complementarity theory.
 
 ## Prior-work exclusions and corrections
+
+A337945 is also EXCLUDED from the genuine-new count. The complete checked independent proof is uploaded in KNOWN_PRIOR. Pahikkala's2010/2013 integer-mean results already imply its entire classification: the square construction, distinct-pair squarefree obstruction, scaling and equal-pair even case. No official A337945 PR was opened. [Exact primary provenance](KNOWN_PRIOR/A337945_PRIOR.md).
+
 
 A390815's independent complete kernel certificate is excluded: A325436's prior characterization, Cunningham's earlier square argument (exact year not established), and Yufeng Liu's public earlier proof announcement lead to an actual prior certificate at wray-lee/oeis-conjectures-lean commitf978ed09def3018e3328ef88c195f1b7c1b08ae2. Statement PR8102 discloses the prior mathematics; it does not enter the genuine-new count.
 

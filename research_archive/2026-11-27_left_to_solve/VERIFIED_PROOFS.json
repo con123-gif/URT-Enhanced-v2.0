@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 0,
   "target_minimum": 20,
   "full_proof_submissions": 3,
-  "complete_kernel_checked_candidates": 14,
+  "complete_kernel_checked_candidates": 15,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -245,6 +245,23 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8859",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete reduced-numerator identity with exact rational divisions."
+    },
+    {
+      "problem_id": "oeis-a343311",
+      "exact_statement": "PROOFS_READY/oeis-a343311.statement.lean",
+      "proof": "PROOFS_READY/oeis-a343311.proof.lean",
+      "statement_sha256": "c3e4d49be02b17bfe4f89fc4513f51af912734ecfdcd64d80ef45ff374eda093",
+      "proof_sha256": "693d31f57429ccb30a8ee5db792bc411a3a816f9416bd25526c36e4f1ce44bc8",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46036883361",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9126",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full distinct-positive-triple/divisibility iff, including prime squares and all exceptions; prior parametrizations credited."
     }
   ]
 }
