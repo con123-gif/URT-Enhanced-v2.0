@@ -3662,3 +3662,11 @@ claim = "regression"
 run = "python research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_saved_b2_c2_frontiers.py"
 gating = true
 timeout = 60
+
+[[job]]
+id = "rh-compact-c2-determinant-chain-20261127"
+question = "Independently replay the exact accepted restricted determinant route and unchanged Carrier statement in one official pinned Carrier workspace: compile the repaired six-declaration base, all ten new interface declarations, build the authenticated inspector with both actual core engine checks, and require four constructor-inclusive independent root verifiers and all 35 supplier guards. Retain native cache before replacements and exact compressed graph after hash verification. Preserve partial failures; general complement exchange remains; no Main import, complete human assembly, reciprocal-height or RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_determinant_shared_replay.py --out {out}"
+timeout_minutes = 180
+requested_by = "GPT active continuous work, user directive 2026-11-27"
+claim = "independent"

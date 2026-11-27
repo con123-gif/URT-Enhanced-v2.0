@@ -1,0 +1,102 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "base_source_blob": "aba46120ca4118decd864f817b51bcca2bc31c19",
+  "stages": [
+    {
+      "source": "C2_STANDARD_EXCHANGE_UNIFORM.lean",
+      "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+      "module": "C2StandardExchange",
+      "receipt": "standard_exchange_results.json",
+      "guard": "C2_STANDARD_EXCHANGE:",
+      "theorems": [
+        "c2_standard_exchange_uniform"
+      ],
+      "dependencies": []
+    },
+    {
+      "source": "C2_DETERMINANT_LIFT.lean",
+      "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+      "module": "C2DeterminantLift",
+      "receipt": "determinant_lift_results.json",
+      "guard": "C2_DETERMINANT_LIFT:",
+      "theorems": [
+        "c2_lift_inverse_determinant",
+        "c2_lift_one_empty_columns",
+        "c2_standard_column_empty"
+      ],
+      "dependencies": []
+    },
+    {
+      "source": "C2_DETERMINANT_EXCHANGE.lean",
+      "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+      "module": "C2DeterminantExchange",
+      "receipt": "determinant_exchange_results.json",
+      "guard": "C2_DETERMINANT_EXCHANGE:",
+      "theorems": [
+        "c2_determinant_exchange"
+      ],
+      "dependencies": [
+        0,
+        1
+      ]
+    },
+    {
+      "source": "C2_REAL_MATCHING_STANDARD.lean",
+      "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+      "module": "C2RealMatchingStandard",
+      "receipt": "real_standard_results.json",
+      "guard": "C2_REAL_STANDARD:",
+      "theorems": [
+        "c2_real_matching_standard",
+        "c2_real_determinant_invariant"
+      ],
+      "dependencies": []
+    },
+    {
+      "source": "C2_DETERMINANT_CLASS_SUM.lean",
+      "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+      "module": "C2DeterminantClassSum",
+      "receipt": "determinant_class_sum_results.json",
+      "guard": "C2_DETERMINANT_CLASS_SUM:",
+      "theorems": [
+        "c2_empty_matching",
+        "c2_stdClassSum_det_modKernel_eq"
+      ],
+      "dependencies": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "source": "C2_DETERMINANT_CARRIER_TRANSPORT.lean",
+      "source_blob": "5083aea866074ba1e52b025342752df605581c78",
+      "module": "C2DeterminantCarrierTransport",
+      "receipt": "determinant_carrier_results.json",
+      "guard": "C2_DETERMINANT_CARRIER:",
+      "theorems": [
+        "c2_stdClassSum_carrierXi_eq_carrierForm"
+      ],
+      "dependencies": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "graph_config_blob": "017c112510e5eb6f9e338b6fdf149d89499d5aa6",
+  "new_Lean_execution": false,
+  "full_RH_replay": false,
+  "source_build_target": "New.Rows.Carrier:olean",
+  "scope": "Six accepted interfaces, both unchanged determinant/Carrier statements and four complete graphs",
+  "steps": {},
+  "checked_interfaces": [],
+  "pipeline_checks_ok": false,
+  "all_requested_checks_ok": false,
+  "human_assembly_verified": false,
+  "bootstrap_note": "Legacy b2_native_results contains bootstrap and original probes only"
+}
