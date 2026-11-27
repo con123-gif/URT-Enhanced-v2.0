@@ -1,0 +1,33 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_fixed_line_1/C2DeterminantFixedLine.lean:36:39: error(lean.unknownIdentifier): Unknown identifier `map_det`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_fixed_line_1/C2DeterminantFixedLine.lean:36:6: error: Type mismatch: After simplification, term
+  h u P
+ has type
+  M ((MvPolynomial.bind₁ fun x ↦ ∑ i, ↑↑(u x.1) i x.2.1 • MvPolynomial.X (x.1, i, x.2.2)) P) =
+    M P * ∏ τ, (↑↑(u τ)).det ^ Fintype.card (ι τ)
+but is expected to have type
+  M ((MvPolynomial.bind₁ fun x ↦ ∑ i, ↑↑(u x.1) i x.2.1 • MvPolynomial.X (x.1, i, x.2.2)) P) =
+    M P *
+      ∏ x,
+        (MvPolynomial.eval fun x ↦ ↑↑(u x.1) x.2.1 x.2.2) (Matrix.of fun a b ↦ MvPolynomial.X (x, a, b)).det ^
+          Fintype.card (ι x)
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_fixed_line_1/C2DeterminantFixedLine.lean:37:2: error: Type mismatch: After simplification, term
+  H
+ has type
+  ((fockPairing ℂ) P) (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)) *
+      M
+        (∏ τ,
+          ((Matrix.map 1 ⇑MvPolynomial.C).det * (Matrix.of fun i k ↦ MvPolynomial.X (τ, i, k)).det) ^
+            Fintype.card (ι τ)) =
+    ((fockPairing ℂ)
+        (MvPolynomial.C (M P) * ∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)))
+      (∏ τ,
+        ((Matrix.map 1 ⇑MvPolynomial.C).det * (Matrix.of fun x2 x3 ↦ MvPolynomial.X (τ, x2, x3)).det) ^
+          Fintype.card (ι τ))
+but is expected to have type
+  M (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)) *
+      ((fockPairing ℂ) P) (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)) =
+    M P *
+      ((fockPairing ℂ) (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ)))
+        (∏ τ, (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)).det ^ Fintype.card (ι τ))
+'c2_det_polynomial_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_FIXED_LINE: direct polynomial determinant line; general real matching absent directly

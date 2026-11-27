@@ -29,12 +29,17 @@ lemma c2_det_polynomial_line
     (P : MvPolynomial (InfinitePlace E × n × n) ℂ) :
     fockPairing ℂ P (c2_det_poly (n := n) ι) * M (c2_det_poly (n := n) ι) =
       M P * fockPairing ℂ (c2_det_poly (n := n) ι) (c2_det_poly (n := n) ι) := by
+  classical
+  have hId : (1 : Matrix n n ℂ).map
+      (algebraMap ℂ (MvPolynomial (InfinitePlace E × n × n) ℂ)) = 1 := by
+    ext i j
+    simp [Matrix.one_apply]
   have H := fockPairing_polarisation
     (Y := fun τ i k ↦ (X (τ, i, k) : MvPolynomial (InfinitePlace E × n × n) ℂ))
     (η := fun τ (_ : ι τ) ↦ (1 : Matrix n n ℂ)) M (r := id) P
     ((M P) • c2_det_poly (n := n) ι) (fun u ↦ by
-      simpa [c2_det_poly, letterMinor, map_det, mul_comm] using h u P)
-  simpa [c2_det_poly, pairedDetProd, letterMinor, ← C_mul', mul_comm] using H
+      simpa [c2_det_poly, letterMinor, det_apply, mul_comm] using h u P)
+  simpa [c2_det_poly, pairedDetProd, letterMinor, hId] using H
 
 #print axioms c2_det_polynomial_line
 
