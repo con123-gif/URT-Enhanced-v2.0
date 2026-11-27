@@ -1,0 +1,13 @@
+{
+  "all_checks_pass": true,
+  "byte_identical_outputs": {
+    "union_summary.json": true,
+    "audit-0.json": true,
+    "root_audits.json": true,
+    "root_membership.jsonl": true
+  },
+  "independent_Node_verified_both": true,
+  "new_Lean_execution": false,
+  "full_RH_replay": false,
+  "scope": "Exact storage-transport control on existing Nat.le_refl graph, not new theorem compilation"
+}

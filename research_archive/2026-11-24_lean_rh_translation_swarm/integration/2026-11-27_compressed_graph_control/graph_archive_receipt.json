@@ -1,0 +1,12 @@
+{
+  "raw_name": "union.jsonl",
+  "raw_bytes": 6420,
+  "raw_sha256": "0ee560a0ce133808707616eef81234ebdbf3e785d23c1b54729d5322fc718f10",
+  "archive_name": "union.jsonl.gz",
+  "archive_bytes": 659,
+  "archive_sha256": "8e875fa2b2658ef4bb94529f8aac9097bc1dbe583ee087b8bec0bb1caf4403c7",
+  "decompressed_sha256_verified": true,
+  "raw_removed_after_verification": true,
+  "projection_input": "same bytes in read-only seekable memory; independent verifier unchanged",
+  "full_RH_replay": false
+}

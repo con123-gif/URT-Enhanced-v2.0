@@ -13,6 +13,7 @@ import subprocess
 
 from audit_c2_callers_graph import check_object
 from prepare_native_graph_exporter import execute_graph
+from compressed_graph_input import archive_before_audit
 import run_compact_b2_native_replay as native
 import RUN26_COMPACT_GRAPH as graph
 
@@ -47,6 +48,8 @@ def main():
     p.add_argument("--forbid", action="append", default=[])
     p.add_argument("--scope", required=True)
     p.add_argument("--seconds", type=int, default=1800)
+    p.add_argument("--archive-before-audit", action="store_true",
+                   help="Verify/compress the union before per-root projection; keep exact seekable bytes in memory")
     a = p.parse_args()
     root, base, out = a.compact_root.resolve(), a.base_module_dir.resolve(), a.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -108,6 +111,7 @@ def main():
              "scope": a.scope, "checked_module": r["compiled_module"],
              "checked_dependencies": checked, "checked_base": b["compiled_module"],
              "guard_pairs": pairs, "guard_config_blob": config_blob,
+             "archive_union_before_projection": a.archive_before_audit,
              "full_RH_replay": False}
     native.dump(out / "input_manifest.json", state)
     run = execute_graph(a.native_exporter_dir, root, env, a.lean_bin,
@@ -116,7 +120,10 @@ def main():
     native.dump(out / "graph_execution.json", run)
     native.require(run["returncode"] == 0 and run["axiom_audit_ok"] is True, "Graph export failed")
     graph.ROOTS = roots
-    graph.audit_union(out / "interface_graph.jsonl", out, out)
+    graph_input = out / "interface_graph.jsonl"
+    if a.archive_before_audit:
+        graph_input = archive_before_audit(graph_input)
+    graph.audit_union(graph_input, out, out)
     watched = {name: 0 for name in roots}
     for pair in pairs:
         watched.update({name: 0 for name in pair["required"] + pair["forbidden"]})

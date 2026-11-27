@@ -1,0 +1,4 @@
+'c2_empty_stacked_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_empty_matched_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_direct_real_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_DIRECT_REAL: entire canonical statement preserved; direct determinant line replaces general real matching
