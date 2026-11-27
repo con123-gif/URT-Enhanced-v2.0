@@ -1,0 +1,146 @@
+{
+  "problem_id": "oeis-a372556",
+  "stage": "OFFICIAL_STATEMENT_SUBMITTED",
+  "official_statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12938",
+  "official_pr_number": 12938,
+  "official_pr_state_at_observation": "open",
+  "statement_review_merge": "PENDING",
+  "official_proof_pr": null,
+  "official_proof_checker_verdict": null,
+  "accepted_full_proof": false,
+  "full_proof_status": "FULL_EXACT_STATEMENT_PINNED_KERNEL_PASS; imported-target check awaits statement merge",
+  "current_active_lease_count_for_this_lane": 0,
+  "lease_claim": {
+    "http_status": 200,
+    "assignment_received": true,
+    "problem": "oeis-a372556",
+    "agent": "codex-jacobsthal-a372556",
+    "degraded": null,
+    "role": "lead",
+    "othersWorking": 0,
+    "team": [],
+    "teamNotes": [],
+    "checked_utc": "2026-11-27T22:04:07.510199+00:00"
+  },
+  "PLAN": {
+    "http_status": 200,
+    "id": 53484,
+    "ok": true,
+    "role": null,
+    "team": [],
+    "notes": [],
+    "last_note": null,
+    "checked_utc": "2026-11-27T22:04:41.490762+00:00"
+  },
+  "last_prepublication_heartbeat": {
+    "http_status": 200,
+    "ok": true,
+    "role": "lead",
+    "team": [],
+    "last_note": 53484,
+    "checked_utc": "2026-11-27T22:04:48.167087+00:00"
+  },
+  "DONE": {
+    "http_status": 200,
+    "id": 53550,
+    "ok": true,
+    "checked_utc": "2026-11-27T22:05:38.954367+00:00"
+  },
+  "release_submitted": {
+    "http_status": 200,
+    "id": null,
+    "ok": true,
+    "checked_utc": "2026-11-27T22:05:46.712786+00:00"
+  },
+  "statement": {
+    "repository": "con123-gif/open-math-agents",
+    "branch": "oma-statement-oeis-a372556-20261127",
+    "head_commit": "b48e8d65f5b7ad3c97a77c1b75aa4f01dcae7ade",
+    "base_ref": "main",
+    "files_changed": 1,
+    "only_file": "statements/oeis-a372556.lean",
+    "added_lines": 38,
+    "deleted_lines": 0,
+    "git_blob_sha": "9a07ac8adb97bfd299b664f2920d464496c9ca6e",
+    "sha256": "0005b2cd23dc3de6c8146224f67dda6fb61585c90e6af0d3265a33823cf23c9b",
+    "official_changed_file_readback_exact": true
+  },
+  "proof": {
+    "sha256": "bfb6f452ca746c06fc1bb2a0fa1ada6d319ab86056978a81c9337212a3f0137a",
+    "git_blob_sha": "75cde9f1bcab09c56433189f9d266438ffe5f031",
+    "bytes": 18949
+  },
+  "kernel_verification": {
+    "status": "FULL_PINNED_KERNEL_PASS",
+    "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+    "lean_version": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "proof_code_commit": "31aab2c222341cd3d3cb7d5b310493fe52ca98ab",
+    "run_id": 46055072139,
+    "job_id": 140695454190,
+    "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46055072139",
+    "actual_exit": 0,
+    "solution_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_errors": true,
+    "statement_prefix_exact": true,
+    "canonical_proof_body_exact": true,
+    "remote_three_git_blobs_match_local": true
+  },
+  "source_gate": {
+    "source": "https://oeis.org/A372556",
+    "current_revision": 14,
+    "source_http_status": 200,
+    "source_sha256": "8c7fa8beaa801ed69622d65ee1c1066826b572be425704453f8aef3ab9ce63e4",
+    "exact_scope": "For every positive n some representation with globally fewest positive Jacobsthal summands uses index floor(log_2(3n+1)) or that index minus one. The zero empty optimum and duplicate J1=J2=1 convention are handled.",
+    "live_http_status": 200,
+    "live_before_claim": {
+      "id": "oeis-a372556",
+      "kind": "unformalized",
+      "liveAgents": 0,
+      "solution": null,
+      "decl": "",
+      "ref": "https://oeis.org/A372556"
+    },
+    "gate_checked_utc": "2026-11-27T22:03:15.692870+00:00",
+    "preclaim_all_state_PR_count": 0,
+    "incomplete_results": false,
+    "main_statement_absent": true,
+    "latest100_REST_before_publication_matches": [],
+    "related_ID_matches": {
+      "count": 1,
+      "items": [
+        {
+          "number": 12868,
+          "title": "oeis-a372561: formalize all three minimum-Jacobsthal array conjectures",
+          "state": "open",
+          "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12868"
+        }
+      ],
+      "scope_note": "Only match is our distinct A372561 statement PR12868 referencing the common minimum-count sequence A372555; its all-index array symmetry/lift costs differ from A372556 largest-two-optimum theorem."
+    },
+    "TrureTuring_exact_ID_check": {
+      "repo": "the-omega-institute/trureturing",
+      "exact_ID_count": 0,
+      "incomplete_results": false
+    }
+  },
+  "independent_review": {
+    "reviewer": "parallel algebra lane, assisted by ChatGPT/Codex",
+    "mathematics": "PASS",
+    "source_fidelity": "PASS",
+    "prior_scope": "No exact prior resolution located within inspected sources; no global priority guarantee.",
+    "audit_sha256": "0ea2743bd51807150382fe5c7aa192bd703ada71153867abec701309f013e996"
+  },
+  "known_prior_acknowledged": [
+    "Classical Jacobsthal recurrence and parity identities",
+    "Horadam1996 local adjacent-coefficient exchange and patterned representations",
+    "Carlitz-Scoville-Hoggatt1972 distinct-summand canonical representations"
+  ],
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6 family; exact serving variant not exposed)",
+  "next_action": "After statement review/merge, verify the unchanged canonical proof against the merged imported target, obtain a fresh proof-stage lease and submit through the official checker. No current proof acceptance inferred.",
+  "recorded_utc": "2026-11-27T22:06:29.480388+00:00"
+}
