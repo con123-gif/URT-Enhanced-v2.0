@@ -1,0 +1,149 @@
+{
+  "problem_id": "oeis-a372561",
+  "source": "https://oeis.org/A372561",
+  "source_revision": 15,
+  "conjecture_author": "Antti Karttunen, OEIS May2024",
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6 family; exact serving variant not exposed)",
+  "complete_statement": "For the raw A372560 array grid(n,k) and global minimum Jacobsthal-summand cost A372555, every n>=2,k>=1 with n+k=14 has cost7, every n>=2,k>=1 with n+k=31 has cost9, and cost(grid(n,k))=cost(grid(k,n)) for all n,k>1. All three source conjectures are retained; the displayed greedy A265745 array is explicitly distinguished.",
+  "mathematical_result": "Complete proof using ordinary base4 digit-sum carry inequalities, a uniform lift-cost theorem for all exponents E>=2, exact E=1 certificates, explicit upper Jacobsthal witnesses, and the finite reduced-Collatz trajectory of27 with a symbolic fixed-point tail.",
+  "lean_verification": {
+    "status": "FULL_PINNED_KERNEL_PASS",
+    "verification_kind": "Standalone complete exact-statement probe; canonical imported-target stage awaits official statement merge.",
+    "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+    "lean_version": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "proof_code_commit": "4898031a49f380285d311de875fc5d15c3e79589",
+    "run_id": 46061923315,
+    "job_id": 140717982673,
+    "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46061923315",
+    "actual_exit": 0,
+    "solution_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_errors": true,
+    "statement_prefix_exact": true,
+    "canonical_proof_body_exact": true,
+    "remote_three_git_blobs_match_local": true,
+    "official_checker_acceptance": false
+  },
+  "files": {
+    "a372561_statement.lean": {
+      "sha256": "e8d07240ef7dfc7bd66715a40be89324d6d09cc0f37983d25d68b6efb674553e",
+      "git_blob_sha": "804c4fae0501a67e1182b334649e2fb8ada54d01",
+      "bytes": 1873
+    },
+    "oeis-a372561_proof.lean": {
+      "sha256": "5fd42b789d7b470f52f528a652c5a4a83d6f2e1a180945c7da41a4352bd477a3",
+      "git_blob_sha": "804b4309f0c329665ede7e6a272658740f8c44ae",
+      "bytes": 35825
+    },
+    "ProbeA372561Full.lean": {
+      "sha256": "faf2385f5c5124ad74a00ad02edf5121a72ddc9ae562a2047112e3ba554374c3",
+      "git_blob_sha": "4c2848d0624c912f0e44a71d5378e63feb78440e",
+      "bytes": 37221
+    }
+  },
+  "independent_challenge": {
+    "reviewers": "Separate number-theory and algebra AI-agent lanes, plus root mathematical challenge; no human-review claim.",
+    "mathematics": "PASS",
+    "source_fidelity_all_three_clauses": "PASS",
+    "finite_packet": "Independent exact minimum-coin oracle through49237 checked42 E2 cores and24 required E1 cores; supplementary finite evidence only.",
+    "prior_scope": "No exact earlier target resolution located in inspected current source, all15 OEIS histories, related primary dossiers, public Lean code, and bounded literature searches. No worldwide priority guarantee.",
+    "number_review_sha256": "62eee207d1d62859560a3e9257c68d1bdf1700469fbae4df3fe1fdc21ce4a038",
+    "algebra_review_sha256": "e0eb71b7896b954f83de2f2a5e5e2da16178be6b0750767b6286698813dd60ae"
+  },
+  "known_prior_acknowledged": [
+    "Classical Jacobsthal recurrence and parity identities",
+    "Ordinary digit-sum carry inequalities and base4 arithmetic",
+    "Known finite reduced-Collatz trajectory of27; no general Collatz conjecture is assumed or claimed"
+  ],
+  "finite_packet": {
+    "orbit_values": 42,
+    "noninitial_core_rows": 41,
+    "required_E1_rows": 24,
+    "verification": "Ordinary Lean decide inside the actual complete kernel pass; no native_decide or finite extrapolation.",
+    "unbounded_parts": "All lift exponents E>=2, the symbolic post-orbit tail, and all source array indices are proved symbolically."
+  },
+  "static_lint": {
+    "statement": "PASS",
+    "proof": "PASS",
+    "exact_official_lint": true
+  },
+  "final_gate": {
+    "live": {
+      "http_status": 200,
+      "data": {
+        "id": "oeis-a372561",
+        "kind": "unformalized",
+        "liveAgents": 0,
+        "ref": "https://oeis.org/A372561",
+        "solution_present": false,
+        "claim_present": false
+      }
+    },
+    "source": {
+      "http_status": 200,
+      "data": {
+        "number": 372561,
+        "name": "Array read by upward antidiagonals: A(n, k) = A265745(A372560(n, k)) for n > 1, k >= 1.",
+        "comment": [
+          "In general, it seems that for n>2, k>1, A(n, k) = A(n-1, k+1) = A(k, n), except on those two anomalous antidiagonals, first on the thirteenth antidiagonal, where for n=1..13, A(n,14-n) obtains values 5, 7, 11, 27, 43, 107, 235, 363, 619, 1131, 2155, 6251, 10347, and then on the 30th antidiagonal, where for n=1.., A(n,31-n) obtains values 5, 11, 15, 23, 39, 71, 135, 391, 647, 1671, 2695, 4743, 17031, 33415, 49799, 82567, 148103, 410247, etc. The corresponding antidiagonals in A372560 begin as:",
+          "  233, 933, 14933, 978670933, 64138178286933, 1183140560213014108063589658350933, ..., and:",
+          "  911, 58325, 933205, 238900565, 15656587449685, 67244531063362552157525, etc. I conjecture that for the former sequence of numbers x, from 933 onward, A372555(x) = 7, and for the latter sequence of numbers y, from 58325 onward, A372555(y) = 9, and that the array A372555(A372560(n, k)) is symmetric apart from its borders, i.e, that for n, k > 1, A372555(A372560(n, k)) = A372555(A372560(k, n))."
+        ],
+        "revision": 15,
+        "formula": null,
+        "link": null,
+        "time": "2024-05-10T12:29:28-04:00"
+      }
+    },
+    "join": {
+      "http_status": 200,
+      "sha256": "ee136be3189eab540454acd8f2a9eeec67dd200b34287c749cd1bbe2dea0513b"
+    },
+    "checked_utc": "2026-11-27T20:13:20.526778+00:00",
+    "pr": {
+      "http_status": 200,
+      "data": {
+        "total_count": 0,
+        "incomplete_results": false,
+        "items": []
+      }
+    },
+    "recent": {
+      "http_status": 200,
+      "data": [],
+      "scanned": 100
+    }
+  },
+  "official_submission": null,
+  "checker_verdict": null,
+  "accepted": false,
+  "lease_confirmed": false,
+  "remaining_obstruction": "Official desk claim returnedHTTP500. No assignment or token was received; server mutation status unknown. No further claim request will be made without coordination. Fork one-file statement is prepared; official PR requires a genuine lease, then merge, imported-target proof submission and acceptance.",
+  "recorded_utc": "2026-11-27T20:15:00.801Z",
+  "lease_attempt": {
+    "http_status": 500,
+    "checked_utc": "2026-11-27T20:15:16.476702+00:00",
+    "assignment_received": false,
+    "token_received": false,
+    "identity": {
+      "handle": "con123-gif",
+      "agent": "codex-jacobsthal-a372561",
+      "problem": "oeis-a372561",
+      "kind": "formalize",
+      "event": "0"
+    },
+    "server_mutation_status": "Unknown; no lease token or assignment received.",
+    "further_claims": "STOP pending root-coordinated recovery."
+  },
+  "prepared_statement_branch": {
+    "repository": "con123-gif/open-math-agents",
+    "branch": "oma-statement-oeis-a372561-20261127",
+    "base_ref": "main",
+    "commit": "efbd9f9492896f557c49bd4d6db36bc5ba1682ea",
+    "official_pr": null
+  }
+}
