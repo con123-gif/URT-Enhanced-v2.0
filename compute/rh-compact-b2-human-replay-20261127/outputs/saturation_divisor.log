@@ -1,0 +1,15 @@
+Filling.sum_pairWeight_le {E : Type} [Field E] [CMType E] {𝔰 : Shape} {j : Fin (𝔰.ϱ + 2)} [StablyUnram E]
+  {S : Filling E 𝔰} [S.IsAdmissible] :
+  ∑ c, ∑ c', ∑' (γ : ↥(S.G E)) (γ' : ↥(S.G E)), S.pairWeight j c c' γ γ' ≤ ENNReal.ofReal (2 * S.tailScale ^ 2)
+Filling.tsum_invPowWeight_le_of_codim_le {E : Type} [Field E] [CMType E] {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible]
+  {c : S.Classes} {j : Fin (𝔰.ϱ + 2)} {A : Set (S.Classes × ↥(S.G E))} [StablyUnram E] {t : ↥(S.reducedImage besselS)}
+  (s : ℕ) (h : A ⊆ {p | S.IsLabelledTerm j c t p}) (T : Submodule E (𝔰.κ → E)) {n : ↥S.GFin → ℕ}
+  (hQ : ∀ p ∈ A, S.frameValueIndex c (S.termElem c p) S.gIdele T ∣ n (S.termElem c p))
+  (hT : 𝔰.k ≤ Module.finrank E (SubmoduleElem T) + s) :
+  ∑' (p : ↑A), S.invPowWeight c n ↑p ≤ ENNReal.ofReal (S.b ^ (2000 * 𝔰.n ^ 6 * (s + 1) * numInfPlaces E))
+Filling.submoduleIndex_gIdele_smul.{u_1} {E : Type} [Field E] [CMType E] {𝔰 : Shape} {S : Filling E 𝔰} {n : Type u_1}
+  {M N : Submodule (↥(Ô E)) (n → 𝔸f E)} (h : 1 ≤ submoduleIndex N M) (i : N ≤ M) :
+  submoduleIndex (S.gIdele • M) M = submoduleIndex (S.gIdele • N) N
+'RHPositivityRun74.pairing_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPositivityRun74.positive_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.sum_pairWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]

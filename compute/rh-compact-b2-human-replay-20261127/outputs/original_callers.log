@@ -1,0 +1,6 @@
+'Filling.HasLevel.exists_frameImage_toRows₂_eq_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.tsum_invPowWeight_le_of_codim_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.sum_pairWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.pairInvariant_mul_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.le_genIndex_det_of_fixesNormAtLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.sublatticeDisc_mul_index_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]

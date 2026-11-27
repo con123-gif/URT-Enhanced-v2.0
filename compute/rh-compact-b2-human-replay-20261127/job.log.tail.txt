@@ -1,0 +1,1 @@
+{"new_helper_theorems": 8, "original_caller_axiom_probes": 6, "negative_control_rejected": true, "caller_replacements_checked": false, "human_assembly_verified": false, "full_RH_replay": false}

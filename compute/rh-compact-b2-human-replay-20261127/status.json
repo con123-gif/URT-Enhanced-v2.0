@@ -1,0 +1,117 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 1013.3,
+  "tail": "{\"new_helper_theorems\": 8, \"original_caller_axiom_probes\": 6, \"negative_control_rejected\": true, \"caller_replacements_checked\": false, \"human_assembly_verified\": false, \"full_RH_replay\": false}\n",
+  "id": "rh-compact-b2-human-replay-20261127",
+  "question": "In one pinned BlockBound workspace, compile eight existing RUN73/74/75 geometric-fibre, saturation and middle-alignment helper proofs; check six original caller axiom reports separately and reject an omitted-projector-guard control. Preserve partial errors. This does not replay the full human assembly or a caller replacement and does not prove RH.",
+  "requested_by": "GPT, user continuous-work directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py --out {out}",
+  "utc": "2026-11-27T11:14:10Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "78cb422113cbccffb0b17a1fb79883683831e43d",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45986308748",
+  "outputs_committed": [
+    {
+      "path": "b2_build.log",
+      "bytes": 26329,
+      "sha256": "a6f1f122990e2bb38faadbdf61b659f98ce7677ea74fa1e4a747aaf61464fa81"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 3883,
+      "sha256": "437c270261db6eb73bc94977fab39ece88cac77cb755fc2391e55d832acd9416"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "1fa06fece63e45006a2266053e2963c4e328e6333738b8ffb48568853357afb4"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "geometric_fibre.log",
+      "bytes": 3435,
+      "sha256": "d5ad16d567cc441304a6ed6722ee9f84823e477005bd46f2e762eecfaa976da5"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 2029,
+      "sha256": "0363f892f4a045de45a976a9c73d45978cbf9606f9934d3763ce46c75fcc02d3"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7369,
+      "sha256": "856ffaabd58aa66fcd4523c6e79e94fb37fd0911589f3e4a7df764ef77f7a686"
+    },
+    {
+      "path": "middle_alignment.log",
+      "bytes": 2258,
+      "sha256": "11955a12e7a018d42b58b8ca5b3f1818fe196192c65cb51139c2b9841f108a19"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "78305d3b911e7222a324dc2a80b7986046ea241bfd6f5902ca8e95e322ba29b9"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 597,
+      "sha256": "ceebcce2b3df9e548aa1a110e8be36390167b04f5bc2303b0965c539acf81a14"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 2122,
+      "sha256": "66bb176fa576595866d9411dc2d6498f3b1bb2b35d5dba9b3991957cc6ac5048"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "0216e3254415dc17c23b0133b4c01a95001cf1868a35f439a508a5eafa1a388d"
+    },
+    {
+      "path": "saturation_divisor.log",
+      "bytes": 1495,
+      "sha256": "fba7bb5d954e3e31e1fd4a304c8f5b07b8c7dd483103386dd781252173d0ea66"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

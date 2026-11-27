@@ -1,0 +1,26 @@
+Filling.HasLevel.exists_frameImage_toRows₂_eq_add {E : Type} [Field E] [CMType E] {𝔰 : Shape} {S : Filling E 𝔰}
+  {c : S.Classes} [StablyUnram E] {c' c'' : S.Classes} {γ γ' : ↥(S.G E)} {j : Fin (𝔰.ϱ + 1 + 1)} {ι : Type} [Fintype ι]
+  (q : ι ↪ Fin 𝔰.ϱ) (h : S.HasLevel j γ) (H : ∀ a ∉ Set.range ⇑q, ↑j ≤ ↑a) (h' : S.HasLevel j γ')
+  (e : S.frameProducts γ' = S.frameProducts γ) :
+  have ξ := (Filling.xRows (S.frameProducts γ)).submatrix (⇑q) id;
+  have t := (↑S.g)⁻¹ • (Filling.paddedLeading j (S.frameProducts γ))⁻¹;
+  (∀ (r : 𝔰.MiddleIndex),
+      (Filling.frameMiddle ↑↑(S.termPosition c c'' γ') -
+                Filling.frameMiddle ↑↑(S.termPosition c c' γ)).conjTranspose.col
+          r ∈
+        S.gIdele • colLattice (Ô E) (Filling.finAdeleMat ξ).conjTranspose ⊔
+          preimageLattice (Ô E) (Filling.finAdeleMat t.conjTranspose)) →
+    ∃ l,
+      IsIntMatrix (Ô E) (S.classCoordX₀ c * Filling.finAdeleMat l) ∧
+        (frameImage ↑↑γ').toRows₂ = (frameImage ↑↑γ).toRows₂ + ((S.g • (l * ξ)).fromRows 0).fromRows 0
+Filling.tsum_invPowWeight_le_of_codim_le {E : Type} [Field E] [CMType E] {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible]
+  {c : S.Classes} {j : Fin (𝔰.ϱ + 2)} {A : Set (S.Classes × ↥(S.G E))} [StablyUnram E] {t : ↥(S.reducedImage besselS)}
+  (s : ℕ) (h : A ⊆ {p | S.IsLabelledTerm j c t p}) (T : Submodule E (𝔰.κ → E)) {n : ↥S.GFin → ℕ}
+  (hQ : ∀ p ∈ A, S.frameValueIndex c (S.termElem c p) S.gIdele T ∣ n (S.termElem c p))
+  (hT : 𝔰.k ≤ Module.finrank E (SubmoduleElem T) + s) :
+  ∑' (p : ↑A), S.invPowWeight c n ↑p ≤ ENNReal.ofReal (S.b ^ (2000 * 𝔰.n ^ 6 * (s + 1) * numInfPlaces E))
+'RHPositivityRun75.project_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPositivityRun75.short_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPositivityRun75.supported_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPositivityRun75.reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.HasLevel.exists_frameImage_toRows₂_eq_add' depends on axioms: [propext, Classical.choice, Quot.sound]

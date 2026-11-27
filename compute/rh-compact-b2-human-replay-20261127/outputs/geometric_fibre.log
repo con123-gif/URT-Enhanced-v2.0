@@ -1,0 +1,44 @@
+/tmp/compact-b2-native-fthpqzyn/geometric_fibre.lean:158:48: warning: This simp argument is unused:
+  Matrix.mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.smul_mul, h, hv, Matrix.one_mul, smul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/tmp/compact-b2-native-fthpqzyn/geometric_fibre.lean:159:22: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.smul_mul, Matrix.mul_assoc, h, hv, Matrix.one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Filling.HasLevel.norm_shared_vector_lt {E : Type} [Field E] [CMType E] {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible]
+  {γ : ↥(S.G E)} {j : Fin (𝔰.ϱ + 2)} (h : S.IsNear γ ∧ S.HasLevel j γ) {u : ↥(S.ratMiddle E).G} {b : Fin (𝔰.ϱ + 1)}
+  {Y : Matrix (Fin (𝔰.ϱ + 1)) (Fin (𝔰.ϱ + 1)) E} (U : u ∈ besselU0) (hb : ↑j ≤ ↑b)
+  (H : Filling.paddedLeading j (S.frameProducts γ) = Y) (v : NumberField.InfinitePlace E) (a : Fin 𝔰.ϱ) :
+  2 * ‖(Φ v) ((frameImage ↑↑(u * γ)).mulVec (Y.det • Y⁻¹.transpose b) (Sum.inl a))‖ < ↑(S.levelPrime 0) ^ 𝔰.n ^ 4
+Filling.tsum_invPowWeight_le_of_codim_le {E : Type} [Field E] [CMType E] {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible]
+  {c : S.Classes} {j : Fin (𝔰.ϱ + 2)} {A : Set (S.Classes × ↥(S.G E))} [StablyUnram E] {t : ↥(S.reducedImage besselS)}
+  (s : ℕ) (h : A ⊆ {p | S.IsLabelledTerm j c t p}) (T : Submodule E (𝔰.κ → E)) {n : ↥S.GFin → ℕ}
+  (hQ : ∀ p ∈ A, S.frameValueIndex c (S.termElem c p) S.gIdele T ∣ n (S.termElem c p))
+  (hT : 𝔰.k ≤ Module.finrank E (SubmoduleElem T) + s) :
+  ∑' (p : ↑A), S.invPowWeight c n ↑p ≤ ENNReal.ofReal (S.b ^ (2000 * 𝔰.n ^ 6 * (s + 1) * numInfPlaces E))
+Filling.exists_mem_classUnip {E : Type} [Field E] [CMType E] {𝔰 : Shape} {S : Filling E 𝔰} [StablyUnram E]
+  (c : S.Classes) {m : Type} [Fintype m] (p : m → Fin 𝔰.ϱ) (u : Matrix 𝔰.BesselIndex m E) (s : Matrix m m E)
+  {x : Matrix (Fin 𝔰.ϱ ⊕ 𝔰.MiddleIndex ⊕ Fin 𝔰.ϱ) m E} (h₀ : ∀ (a : Fin 𝔰.ϱ) (b b' : m), a ≤ p b' → u (eStar a) b = 0)
+  (h : s.conjTranspose = -s) (hu : IsIntMatrix (Ô E) (S.classCoord c * Filling.finAdeleMat u))
+  (hs : IsIntMatrix (Ô E) (Filling.finAdeleMat s)) (e : (inclMatrix E fun x => Sum.inl (p x)) = x) :
+  ∃ γ ∈ S.classUnip c,
+    ((∀ (b : m) (a : Fin (𝔰.ϱ + 1)), (u.conjTranspose * S.ratGram) b (𝔰.besselFrame a) = 0) → γ ∈ S.classUnip₀ c) ∧
+      ∃ τ,
+        ↑↑γ =
+          1 +
+            ↑S.g •
+              (x * (u.conjTranspose * S.ratGram) -
+                (u + x * (τ • (u.conjTranspose * S.ratGram * u) - s)) * (x.conjTranspose * S.ratGram))
+Filling.sum_pairWeight_le {E : Type} [Field E] [CMType E] {𝔰 : Shape} {j : Fin (𝔰.ϱ + 2)} [StablyUnram E]
+  {S : Filling E 𝔰} [S.IsAdmissible] :
+  ∑ c, ∑ c', ∑' (γ : ↥(S.G E)) (γ' : ↥(S.G E)), S.pairWeight j c c' γ γ' ≤ ENNReal.ofReal (2 * S.tailScale ^ 2)
+'RHPositivityRun73.skew_correction_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPositivityRun73.shared_vector_exponent' depends on axioms: [propext, Quot.sound]
+'Filling.tsum_invPowWeight_le_of_codim_le' depends on axioms: [propext, Classical.choice, Quot.sound]
