@@ -113,7 +113,7 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
       ((pairThetaKer (stdSpace E n) (stdSpace E n) α 1).swap.theta_rat_mul
         (φ := modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) (polyVector _ P))
         (h := g))
-      (fun _ ↦ integral_eq_const (.of_forall fun x ↦ ?_)) (Kf E n) ?_
+      (fun k ↦ integral_eq_const (.of_forall fun u ↦ ?_)) (Kf E n) ?_
       (hF := by fun_prop)] at hκ
     rw [division_def α, ← one_mul β, ← mul_one α]
     simpa [ℓ₀, modKernelBilin_apply, ↓modKernel_twist, ← mul_classSum, field] using hκ
@@ -122,8 +122,17 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
       congr with
       simpa [χ.inv_apply, Ring.inverse_inverse] using
         hP.left_mul (inv_mem (by simp [mem_intGL]))
-    · rw [modKernelI, modKernel, modDatum, ← hv x,
-        ← pairWeil_integrated_right α, ← pairTheta_mul]
+    · let D := modDatum (stdSpace E n) (stdSpace E n) 𝔪
+        (fun A ↦ χ A.det) (polyVector _ P)
+      change pairTheta (stdSpace E n) (stdSpace E n) α 1 D (g, (u, k)) =
+        pairTheta (stdSpace E n) (stdSpace E n) α 1 D (g, (1, k))
+      have hfix : pairWeil (stdSpace E n) (stdSpace E n) α 1 (1, (u, 1)) D = D := by
+        dsimp only [D, modDatum]
+        rw [pairWeil_integrated_right α 1, hv u]
+      have htranslate := pairTheta_mul (S := stdSpace E n) (T := stdSpace E n)
+        (a := α) (b := 1) D (g, (1, k)) (1, (u, 1))
+      rw [hfix] at htranslate
+      simpa only [Prod.mul_def, mul_one, one_mul] using htranslate
 
 end
 
