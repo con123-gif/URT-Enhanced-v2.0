@@ -49,7 +49,10 @@ reversible; the original R₀ first-component expression is retained
 exactly apart from use -> exact, with its preceding derivation copied
 from the original. The Q branch, choose α e, nonzero coefficient proof,
 and final convolution sum were omitted because the new conclusion has
-no such component. No local lean/lake installed. No native proof or
+no such component. Source review caught the lost local cusp-kernel binder h from the original
+fun h => constructor; it is now retained explicitly before refine.
+The initial checkpoint is preserved in Git history (5cd6077caeb5).
+No local lean/lake installed. No native proof or
 dependency elimination claimed. Shared CI 46006832164 job wrappers
 completed; its recorded graph ERROR remains distinct from B2 proof
 replays. This file is not a receipt for that job or for RUN79.
@@ -108,7 +111,8 @@ lemma isTypeHalfEdge_of_oscillatorPair_run81 {T : _ → _} (hp : ∀ w, Oscillat
   have A := integral_piTensor_eq_integratedRep (hp · |>.unitary_rep) _ (by fun_prop)
     (hΦ · |>.hasLargeGap.integrable_norm_pow_smul_dsKernel)
   simp [← hΩ] at A
-  refine ⟨isCuspKernel_typeKernel (l := -l) (hΦ · |>.hasLargeGap.neg), ?_⟩
+  have h := isCuspKernel_typeKernel (l := -l) (hΦ · |>.hasLargeGap.neg)
+  refine ⟨h, ?_⟩
   introv W hy
   obtain ⟨⟨L, hL⟩, ⟨_, _, hC⟩, B, ⟨⟩⟩ := Θ.exists_clm_lift (hy.mem_rapidFunctions h),
     Θ.exists_norm_theta_mul_le (hy.mem_rapidFunctions h), (hΦ · |>.swap.hasLargeGap le_rfl), hy.1
