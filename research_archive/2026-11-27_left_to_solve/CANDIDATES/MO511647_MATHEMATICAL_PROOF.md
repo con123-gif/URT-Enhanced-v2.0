@@ -1,3 +1,5 @@
+> **KNOWN PRIOR — excluded from new-result and campaign solve counts.** Bohao Zhang's ICLUE2026 faculty report already proves the complete source theorem (Theorem1.1 and Proposition2.3). The independent derivation below is retained only as a known-result formalization checkpoint. No official claim/PR; no full kernel pass is inferred from helper results. All further development stopped27November2026. Primary report: https://ayong.web.illinois.edu/ICLUE2026-Bohao-Zhang-report.pdf .
+
 # MO511647: symmetric-square proof candidate
 
 Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex
