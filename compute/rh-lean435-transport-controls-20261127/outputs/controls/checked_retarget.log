@@ -1,0 +1,9 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/controls/checked_retarget.lean:16:2: error: Type mismatch
+  Lean.addDecl
+    (Lean.Declaration.thmDecl
+      { name := `retargetNewCaller, levelParams := info.levelParams, type := info.type, value := proof })
+has type
+  Lean.CoreM Unit
+but is expected to have type
+  Lean.Elab.Command.CommandElabM Unit
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/controls/checked_retarget.lean:30:14: error(lean.unknownIdentifier): Unknown constant `retargetNewCaller`

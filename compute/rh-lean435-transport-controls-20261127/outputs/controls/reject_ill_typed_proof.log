@@ -1,0 +1,9 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/controls/reject_ill_typed_proof.lean:6:2: error: Type mismatch
+  Lean.addDecl
+    (Lean.Declaration.thmDecl
+      { name := `retargetInvalidTheorem, levelParams := [], type := Lean.Expr.const `False [],
+        value := Lean.Expr.const `True.intro [] })
+has type
+  Lean.CoreM Unit
+but is expected to have type
+  Lean.Elab.Command.CommandElabM ?m.2

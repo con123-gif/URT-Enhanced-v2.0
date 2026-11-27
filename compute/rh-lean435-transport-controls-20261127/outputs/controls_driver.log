@@ -1,0 +1,7 @@
+{"lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)", "scope": "core-only proof retargeting compatibility", "B2_replayed": false, "full_RH_replay": false, "cases": {"checked_retarget": {"returncode": 1, "seconds": 0.97, "log": "checked_retarget.log", "source_sha256": "7d81db6297e26ee9ffc61486200891734907929bdace0beae45734faaecb16df"}, "reject_ill_typed_proof": {"returncode": 1, "seconds": 0.92, "log": "reject_ill_typed_proof.log", "source_sha256": "23d726cce4f6eb2d8cf5f68e2e82ee69e51afac8064c48903798883dd5288d8b"}}, "all_checks_pass": false}
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/test_checked_retarget_kernel.py", line 96, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/test_checked_retarget_kernel.py", line 92, in main
+    raise RuntimeError("Inspect retained compatibility logs")
+RuntimeError: Inspect retained compatibility logs

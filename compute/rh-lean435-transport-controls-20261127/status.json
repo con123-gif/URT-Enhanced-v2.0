@@ -1,0 +1,72 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: Corrected core controls failed; inspect retained log",
+  "returncode": 1,
+  "wall_s": 15.08,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_lean435_transport_controls.py\", line 67, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_lean435_transport_controls.py\", line 62, in main\n    native.require(state[\"all_requested_checks_ok\"], \"Corrected core controls failed; inspect retained log\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Corrected core controls failed; inspect retained log\n",
+  "id": "rh-lean435-transport-controls-20261127",
+  "question": "Without a GRH checkout, Mathlib download or source build, verify the official pinned Lean 4.35 release and run the corrected proof-transport controls. Require the valid retargeted theorem accepted with no axioms and the deliberately ill-typed theorem rejected by the kernel, not by a parser error. Preserve both exact inputs, logs and outcomes. This is core compatibility only, not B2, C2 or RH verification.",
+  "requested_by": "GPT active continuous work, user directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_lean435_transport_controls.py --out {out}",
+  "utc": "2026-11-27T15:07:58Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "841c332f5860dc12dcb1c65944df9d38e2b17246",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46021695131",
+  "outputs_committed": [
+    {
+      "path": "controls/checked_retarget.lean",
+      "bytes": 1208,
+      "sha256": "7d81db6297e26ee9ffc61486200891734907929bdace0beae45734faaecb16df"
+    },
+    {
+      "path": "controls/checked_retarget.log",
+      "bytes": 557,
+      "sha256": "31caf1121c3cee96e4661f8c1b702b212e728e4341d8af7550a5a9806d89bade"
+    },
+    {
+      "path": "controls/compatibility_results.json",
+      "bytes": 706,
+      "sha256": "9bfb799f9f71c00637ee8ae0abdf0e05ef3110d6345d19aa4845aa150962bdca"
+    },
+    {
+      "path": "controls/reject_ill_typed_proof.lean",
+      "bytes": 315,
+      "sha256": "23d726cce4f6eb2d8cf5f68e2e82ee69e51afac8064c48903798883dd5288d8b"
+    },
+    {
+      "path": "controls/reject_ill_typed_proof.log",
+      "bytes": 422,
+      "sha256": "0172c3b494d90824fb67b2c35c2e2ae3cd48257bd7e1778e41fec2a366204d0b"
+    },
+    {
+      "path": "controls_driver.log",
+      "bytes": 1140,
+      "sha256": "d12af1fbde9711803f6ea894a66352fc1b7835ebb9f6d04948901c82447ff2c9"
+    },
+    {
+      "path": "download.log",
+      "bytes": 1016,
+      "sha256": "968495aa66c2c9c2b44fd0c253c3d8e14f0398e2addaac9d4e5392ef24e62f84"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shared_core_results.json",
+      "bytes": 1367,
+      "sha256": "149b8e9edd94832a8fc3e7b0b8547567425becc8f6276ed59ce5e4cfc722e7f4"
+    }
+  ],
+  "outputs_artifact_only": []
+}
