@@ -1,0 +1,28 @@
+{
+  "scope": "Generic structural induction only. Final MO513259 permanent-invariant hypotheses remain to be discharged; no full graph theorem or new accepted solve.",
+  "theorem": "OMA.MO513259.BlockInduction.finite_block_congruence_induction",
+  "mathematical_statement": "For P:forall I:Type0, Matrix I I(ZMod8)->Prop, assume the empty-index and admissibleFin2 bases, simultaneousequivalence reindex preservation, admissible block-diagonal preservation, and elementary double-shear preservation on admissible inputs. Then P holds for every Type0 finite symmetric even-diagonal unit-determinant matrix.",
+  "class_data_preserved": "All symmetry, mod2-zero diagonal and unit determinant hypotheses are retained in Q=Admissible and P. The proof explicitly constructs Fin2 plus complement equivalence and proves finite-cardinality descent.",
+  "run_id": 46068998014,
+  "job_id": 140741130939,
+  "code_commit": "9d1774b6715e20317c07279e306c82f882e71296",
+  "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "lean_version": "4.33.1",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "canonical_helper_sha256": "1ada9bee0c471c6c3eac3685f30aa9d5b465d97ba574306a96328cdf74a8bd10",
+  "combined_probe_sha256": "724059033440aecf421e7b3e13481b378d26c15264575360a65f0caf3c6229f5",
+  "remote_helper_git_blob": "a8c6f43c8fa0a65ea9ddc48f3535c51dd22be193",
+  "remote_probe_git_blob": "ed5babfc62de1f4398f99c7ddfc7c1e0326ccb44",
+  "immutable_helper_and_probe_byte_exact": true,
+  "observed_exit": 0,
+  "explicit_process_evidence": "2026-11-27T21:16:35.0026280Z PROBE_EXIT hermite/ProbeMO513259BlockInductionFirst.lean 0",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler_errors": false,
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex",
+  "official_acceptance": false,
+  "counted_new_solve": false
+}
