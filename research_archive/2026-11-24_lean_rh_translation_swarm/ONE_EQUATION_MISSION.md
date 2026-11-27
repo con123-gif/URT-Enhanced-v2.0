@@ -1,3 +1,46 @@
+# 27 November interactive mathematical shortcut: identity-only Siegel–Weil convergence
+
+Source-matched human derivation and conditional proof-branch elimination; NOT a fresh Lean replay, complete human RH proof, or externally certified replacement. User requests a real breakthrough, not redundant local reductions. Primary pin lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207, compact src; credit Alpöge, Sernau, Anthropic collaborators and Claude. Preserve previous dependency reconciliation and all schedules.
+
+## 1. Exact shortcut at identity: no uniform torus determinant estimate
+
+Read compact Lib/SiegelWeil/Formula/SiegelSets.lean, ZeroTermHeight.lean, SiegelWeilFormula.lean, Lib/Adelic/Reduction/Defs.lean and the same-pin readable grh/src/Lib/SiegelWeil/Formula/WeilRange.lean and Lib/Adelic/Reduction/FiniteVolume.lean. Source search finds the uniform zero-term bound used by the internal Siegel–Weil induction, whereas external consumers OneVector/OneVector.lean and RallisInner/SharpData.lean use the actual siegel_weil identity and absolute bounds at x=0. SharpData also calls theta_normalisedTorus_le but specializes x=0. Search is not an exhaustive native graph; audit all downstream uses before deleting exposition.
+
+Let p be the number of source hyperbolic planes, m the target rank, f the number of infinite places, m>2p. For each rational Lagrangian L the native normal-form/count argument of exists_summable_zeroTerm_bound gives a profile t(L) in N^p, rational delta_L,b_L, and k_L = rad(b_L) levi(diag(2^t(L)),1) delta_L^-1 in one compact K. L=delta_L P.lagrangian. The same source counting injection labels each fixed profile fiber by the Hermitian matrix b_L+b_L* in a scaled compact set and a rational element of K^-1 K. Fix any selected rational epsilon with the same radical and profile in K (choice depends on b+b* and t only). Equality of the two labels implies equality of delta and thus L. The discrete rational intersection has finite cardinal F; the native encard_hermitian_le gives C*2^(f sum_ij(t_i+t_j))=C*2^(2fp sum_i t_i). Retain the normal form, compact rational cover, arithmetic discreteness, Hermitian box count and exact source injection. These are reduction theory, not a conjectured counting law.
+
+For x=0 the general mixed-frame determinant bound exists_zeroTerm_normalisedTorus_le is unnecessary. By zeroTerm_lagrangian_eq_theta, zeroTerm_isometrySplitting and norm_zeroTerm_parabolic_mul,
+    |ev_P(omega(k_L,1)v)| = 2^(fm sum_i t_i(L)) |ev_L(v)|.
+Jointly continuous native representation on compact K supplies a uniform operator norm bound (the source pairThetaKer.exists_norm_le_of_isCompact; equivalently uniform boundedness for a Banach model). Composition with the fixed bounded ev_P yields one R. Therefore
+    ||ev_L|| <= R 2^(-fm sum_i t_i(L)),
+    sum_L ||ev_L|| <= C F R [1-2^(-f(m-2p))]^(-p) < infinity.
+No appeal to the uniform-in-x torus estimate, no rank induction, no Hecke maximum principle in this identity-only convergence argument. p=0 uses the empty product. This proves the required identity-case norm summability from the retained actual normal form and fiber bound; independent caller audit pending.
+
+## 2. Direct common rank-gap exponent for the theta majorant
+
+In compact Lib/Adelic/Reduction/Defs.lean lintegral_encard_ne_top and its readable companion Core.sum_toNat_neg_add_le, let N>0 be the target rank, r number of vectors, g=N-2r>0. A profile x in Z^N admits a permutation sigma with |x_i+x_sigma(i)|<=B. Define nu=sum_i(-x_i)_+, P=sum_ij(x_i+x_j)_+, T=sum_ij(x_i-x_j)_+, L1=sum_i|x_i| and s=sum_i x_i. Then |s|<=NB/2 by summing the paired inequalities. Since positive part is 1-Lipschitz and sigma is a permutation, |P-T|<=N²B. For every j with x_j<0, sum_i(x_i-x_j)_+ >= s-N*x_j. All other summands nonnegative. Thus T>=N*nu-N²B/2. Consequently
+    4T-2P-4r*nu >= 2T-2N²B-4r*nu
+       >= 2g*nu-3N²B
+       = g*L1-g*s-3N²B
+       >= g*L1-4N²B.
+In particular g>=1 gives the original sufficient exponent inequality
+    4r*nu+2P+L1 <= 4T+4N²B <= 4T+6(N+1)²B.
+This is a direct human proof, no finite regression substituted for algebra. N=0 has zero sums. It is stronger in the decay exponent g, not a claim to improve the native analytic domain.
+
+To attach to the actual count at h: write q=2^(f/2)>1. Native profile basis reduction, Minkowski count and rational Gram-box count give #vectors <= C1 q^(4r nu), #profile bases >= q^(4T)/R0 and #Gram classes <= C2 q^(2P). Thus #vectors <= #profile bases * C1 R0 q^(4N²B) q^(-2P-g L1). For each profile use the existing injection basis -> (Gram matrix,rational translate of one chosen representative), quotient Haar unfolding and compact set of bounded measure. Summing over profiles costs at most a fixed constant times
+    sum_{x in Z^N} q^(-g||x||_1)
+       = [(1+q^-g)/(1-q^-g)]^N < infinity.
+This discharges the numeric exponent obstruction of lintegral_encard_ne_top and its geometric summation, conditional on the exact native compact/profile, rational matrix and basis counts and Haar unfolding just listed. No claim those reduction-theory facts are newly proved here.
+
+For theta at x=0, expand in the actual complete Schrödinger mixed model (ZeroTermHeight.theta_normalisedTorus_le). The source exists_tsum_mixedTerm_le bounds sum of mixed-term norms by M times the count of transformed rational matrices in a compact support window, times ||v||; multiply by the fixed zero-dimensional theta operator norm. The transformed rational matrix is (T.toRatCoords h)^-1 xi, with r=p; the same compact window can be the enlarged window from the source. Therefore N(h)=M||theta_0||*count_h is measurable and integrable by the above count with N=m, r=p. This gives identity theta majorant on the actual completed datum space under native mixed-term bound and reduction theory, not merely scalar convergence on smooth vectors.
+
+## 3. Potential whole-branch removal and its remaining exact guard
+
+Existing integration/2026-11-27_INTERACTIVE_RALLIS_SHARED_UNFOLDING.md identifies Liu (2011) Thm 2.1(1) as candidate classical Siegel–Weil equality, not yet checked mixed-model core bridge. With the two identity-only bounds above, both sides are bounded linear functionals on the actual datum space: ||integral theta|| <= integral N, ||vol * sum ev_L|| <= vol*sum ||ev_L||. If equality holds on a dense native-compatible Schwartz–Bruhat core, it extends to every datum by continuity. This bypasses the internal proof's normalized torus uniform estimates, dyadic cusp-limit rank induction and Hecke maximum principle as HUMAN exposition dependencies. It does not bypass their use if any other actual consumer needs them. Do not claim global native graph retirement. Need exact additive character and splitting character, common self-dual measure, density in native norm and zero evaluation/core identification, and independently verify classical theorem applicability (m>2p, coherent hermitian spaces, quotient normalization). Scalar absolute convergence on dense core alone does not prove norm summability; that gap is exactly why sections 1–2 were proved separately.
+
+RESUME HERE: literature/positivity/integration verify precise classical core identification or find an existing source-supported exact theorem statement at the actual normed model; do not prove uniform torus estimates again for x=0 consumers. Check normal-form and compact mixed-term inputs in source against existing earlier human work. Audit the new exponent inequality, source profile fiber injection and exact quotient normalization. Use only verified replacement at OneVector and Rallis; no new PASS. All other A/C and B local shell/noncoherent obligations remain; keep 15 workers and existing shared runner.
+
+---
+
 # 27 November interactive cross-lane dependency reconciliation — completion-first
 
 User asks to stand back and find the breakthrough. The latest editor RUN11 ledger (06:57, commit 0a3ccf19) reopens at least three local interfaces for which earlier source-matched human derivations already exist on the SAME compact pin 72fead102f663d5c7a407964a13dc0cf9d977207. Do not restart them as unattempted proofs. These are conditional human derivations pending audit, not native PASS or global dependency retirement. Keep all 15 schedules, lane allocations and protected files unchanged.
