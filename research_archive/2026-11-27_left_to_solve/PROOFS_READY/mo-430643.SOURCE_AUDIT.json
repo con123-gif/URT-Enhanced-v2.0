@@ -1,0 +1,68 @@
+{
+  "problem": "mo-430643",
+  "checkpoint_utc": "2026-11-27T22:05:21.737922+00:00",
+  "status": "SOURCE_AND_MATH_REVIEW_COMPLETE_BOUNDED_PRIOR_CLEAR_NO_PRIORITY_CLAIM",
+  "source": {
+    "author": "Pablo Spiga",
+    "author_profile": "https://mathoverflow.net/users/45242/pablo-spiga",
+    "question_url": "https://mathoverflow.net/questions/430643/an-arithmetic-inequality",
+    "title": "An arithmetic inequality",
+    "creation_unix": 1663425373,
+    "last_activity_unix": 1663425373,
+    "last_edit_unix": null,
+    "license": "CC BY-SA 4.0",
+    "full_question_body_html": "<p>Let <span class=\"math-container\">$r=p_1^{a_1}\\cdot p_2^{a_2}\\cdots p_\\ell^{a_\\ell}$</span> be a positive integer, where <span class=\"math-container\">$p_1,\\ldots,p_\\ell$</span> are distinct primes and <span class=\"math-container\">$a_1,\\ldots,a_\\ell$</span> are at least <span class=\"math-container\">$2$</span>. I have a huge computational evidence that\n<span class=\"math-container\">$$\\prod_{i=1}^\\ell p_i^{\\frac{a_i^2}{4}}\\le r^{\\frac{\\log_2 r}{4}+1-\\ell},$$</span>\nexcept when <span class=\"math-container\">$r\\in \\{36,72,900\\}$</span>. However, I have no clue in how to prove that. Morally, in my opinion, it does make sense. When <span class=\"math-container\">$\\ell=1$</span>, the worse case is when <span class=\"math-container\">$p_1=2$</span> and in that case one has equality here. However, as <span class=\"math-container\">$\\ell$</span> increases, <span class=\"math-container\">$r^{\\log_2r/4}$</span> is a large upper estimate of the left and side and hence it is conceivable that one can shave off a <span class=\"math-container\">$r^{1-\\ell}$</span>.</p>\n<p>Indeed, if <span class=\"math-container\">$a_1$</span> is the largest of the <span class=\"math-container\">$a_i$</span>s, then\n<span class=\"math-container\">$$\\prod_{i=1}^\\ell p_i^{\\frac{a_i^2}{4}}\\le \\left(\\prod_{\\ell=1}^\\ell p_i^{a_i}\\right)^{\\frac{a_1}{4}}=r^{\\frac{a_1}{4}}\\le r^{\\frac{\\log_2r}{4}},$$</span>\nregardless of the assumption <span class=\"math-container\">$a_i\\ge 2$</span>. Therefore, the real question is whether one can shave off <span class=\"math-container\">$r^{1-\\ell}$</span> when <span class=\"math-container\">$a_1,\\ldots,a_\\ell\\ge 2$</span>.</p>\n",
+    "answers_count": 0,
+    "comments_count": 0,
+    "answers_has_more": false,
+    "comments_has_more": false,
+    "external_paper_references": []
+  },
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex GPT-6; exact serving variant not exposed.",
+  "independent_review": {
+    "reviewer": "Collaborating root ChatGPT research agent",
+    "scope": "Complete algebra, all cardinality cases, finite prime-pair base configurations and intended source statement.",
+    "outcome": "No mathematical gap found in hand argument.",
+    "checks": [
+      "D expansion and nonnegative weighted-square gap",
+      "ell>=4 via S>=9ell/4-2",
+      "ell=3 with X>=1 gives positive lower bound9/4 atS19/4",
+      "ell=3 all exponents2 outsideprime235 givesS>=5",
+      "ell=2 prime23 bases8/49 and4/49 using t>=11/7",
+      "Empty product and real-rpow conventions retained"
+    ]
+  },
+  "prior_audit": {
+    "status": "COMPLETED_BOUNDED_REVIEW_NO_EXACT_SETTLEMENT_LOCATED",
+    "proper_all_state_official_id_pr_hits": 0,
+    "trureturing_metadata_exact_id_or_title_matches": 0,
+    "trureturing_full_html_raw_numeric_hits": 2,
+    "full_html_numeric_hit_audit": "Both are inside unrelated A378277 SHA256 fc42d88bca0887d98eee430643a75f380742db0cb3049ef889e61a0e65e3da0c, not source records.",
+    "web_search": "Both search engines queried; no exact settlement located yet.",
+    "pending": "No pending task in the designated bounded review; worldwide novelty is not asserted.",
+    "worldwide_novelty_claim": false,
+    "primary_papers_read": [
+      "https://arxiv.org/abs/2210.02972",
+      "https://arxiv.org/abs/2304.14200",
+      "https://arxiv.org/abs/2505.00413",
+      "https://arxiv.org/abs/2609.10343"
+    ]
+  },
+  "lean_verified": true,
+  "lease_claimed": false,
+  "officially_submitted": false,
+  "officially_accepted": false,
+  "source_history_revisions": 1,
+  "linked_questions": 0,
+  "complete_author_question_count": 29,
+  "author_questions_has_more": false,
+  "live_gate": {
+    "id": "mo-430643",
+    "http": 200,
+    "kind": "unformalized",
+    "agents": 0,
+    "solution": null
+  },
+  "primary_prior_review": "All four closely related original papers reviewed; no exact source settlement/complete implication identified. See sanitized report.",
+  "prior_status": "Bounded negative finding; novelty unconfirmed."
+}
