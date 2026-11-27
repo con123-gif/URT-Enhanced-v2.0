@@ -1,0 +1,59 @@
+{
+  "status": "ENTIRE_BOTH_CONJECTURE_SOURCE_KERNEL_PASS_NOT_OFFICIAL_ACCEPTANCE",
+  "problem": "mo-513259",
+  "run_id": 46070716771,
+  "job_id": 140746737115,
+  "commit": "b902c7b397bbdb7db4c14def003e952afbe3811b",
+  "artifact_id": 15233121477,
+  "artifact_sha256": "6c37f0b3b17a24e445f1108873080c987034cc24af4dbc6552c38ed15f22fcb1",
+  "artifact_digest_matches_github": true,
+  "exit": 0,
+  "all_error_forms_checked": true,
+  "errors": [],
+  "theorem": "OMA.solution",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "statement_sha256": "236cc7849d274d12067daf1290bb8ff29656797468a5c07235fdc6ae5a2d2980",
+  "proof_sha256": "50565c78756547a97d545bdc8474329ffed77ba0de4d221c92b61db9814fbf47",
+  "probe_sha256": "498b21a75c7d9cd8893eb18aa062cc73c857c606202386aebc362815b8d1d99c",
+  "public_git_blob_sha1": "e58b96b9771f2d1a81b581cc202104fc867ff3f1",
+  "public_git_blob_matches": true,
+  "canonical_statement_and_entire_proof_exactly_embedded": true,
+  "source_goal_count": 2,
+  "source_goals": [
+    "Every graph adjacency matrix invertible modulo 8 has inverse permanent 1 modulo 8",
+    "Every graph adjacency matrix invertible modulo 24 satisfies 2 per(A) + per(inv(A)) - 3 = 0 modulo 24"
+  ],
+  "first_whole_run": 46070289768,
+  "first_whole_exit": 1,
+  "first_whole_errors": 8,
+  "official_acceptance": false,
+  "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "public_probe_literal_byte_equal": true,
+  "public_probe_bytes": 162319,
+  "full_source_proved": true,
+  "first_artifact_id": 15233011521,
+  "first_artifact_sha256": "2d8d412561a79a5f13258af1a2743b7c8fa8686068483d71c2bd5467cd2d2dea",
+  "first_whole_error_lines": [
+    "CampaignProbe.lean:3650:55: error: No goals to be solved",
+    "CampaignProbe.lean:3680:41: error: Type mismatch",
+    "CampaignProbe.lean:3693:2: error: Type mismatch",
+    "CampaignProbe.lean:3701:5: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized",
+    "CampaignProbe.lean:4013:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern",
+    "CampaignProbe.lean:4019:27: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached",
+    "CampaignProbe.lean:4002:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached",
+    "CampaignProbe.lean:4032:8: error: (kernel) unknown constant 'OMA.MO513259.hollow_graph_congruence_twenty_four'"
+  ],
+  "primary_source_snapshot": {
+    "path": "combinatorics_work/mo513259/final_gate/question.json",
+    "sha256": "51e6839f8a2e7c85efddecff8ff52908300a811d84cee9ff71dbb2f24686a93e",
+    "source_url": "https://mathoverflow.net/questions/513259/conjectured-congruences-for-the-permanent-of-inverse-of-matrix",
+    "author": "joro",
+    "scope_rechecked": true
+  }
+}
