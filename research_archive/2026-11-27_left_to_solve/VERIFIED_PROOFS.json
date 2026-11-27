@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 5,
-  "complete_kernel_checked_candidates": 33,
+  "complete_kernel_checked_candidates": 34,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -241,7 +241,7 @@
       "statement_merged_at": "2026-11-27T22:01:17Z",
       "registered_source_blob": "bab279c0d000b5a456cdbc44f267dbf765ce3556",
       "registered_source_exact_byte_match": true,
-      "remaining_obstruction": "Actual registered source matches canonical bytes; imported-target checker accepted46075641225/job140762613882. Hourly worker handling full-proof publication; no full PR observed at rootlatest allstate gate. Confirm actualclaim/PR/upstreamchecker/merge/publiccredit without duplication.",
+      "remaining_obstruction": "Our exact imported-target checker accepted46075641225; hourlyworker endedwithreadyhandoff withoutsubmitting. Freshgatefound actualforeignfullPR13325(22:28:13),13377,13401; no own fullPR submitted, withhold duplicate. Preserveown earlierarchivedcertificate andtimestamps withoutcopying/priorityallegations; monitoractualforeignchecker/merge scope.",
       "imported_target_verification": {
         "run": "https://github.com/con123-gif/open-math-agents/actions/runs/46075641225",
         "job": 140762613882,
@@ -256,7 +256,14 @@
         ],
         "errors": [],
         "root_actual_log_readback": true
-      }
+      },
+      "preceding_foreign_full_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/13325",
+      "additional_competing_full_proof_prs": [
+        13377,
+        13401
+      ],
+      "preceding_foreign_full_proof_author": "justusklocke-cloud",
+      "genuine_open_status": "complete_own_certificate_earlier_archived_but_foreign_OFFICIAL_full_PR13325_precedes_our_official_full_submission_withhold_duplicate"
     },
     {
       "problem_id": "oeis-a124869",
@@ -980,7 +987,7 @@
       "proof_summary": "For C(N)=#{2<=k<=N: number_of_distinct_prime_divisors(k) divides T(k)+T(k+1)}, prove pi(N)/C(N)->0 at every inclusive cutoff. Distinct odd semiprime families, finite injection/counting, uniform Chebyshev dilation and Euler prime-reciprocal divergence give the full limit.",
       "genuine_open_status": "full_source_claim_proved_no_exact_target_settlement_found_in_bounded_primary_review_classical_background_explicit",
       "prior_credit": "ClaudeH.R.Dequatre/source; classical Chebyshev/Euler/Landau semiprime counting/PNT and Crisan–Erban2021 relevant background. This is a routine consequence of known semiprime asymptotics, not a new asymptotic or worldwide-priority claim. Full direct Lean proof uses Chebyshev/Euler without assuming Landau/PNT as new hypotheses.",
-      "statement_pr": null,
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/13431",
       "statement_merged": false,
       "merged_and_credited": "not_confirmed",
       "public_statement_commit": "7805fc6685693cf69d6771ed91dd239d9e18c18a",
@@ -997,11 +1004,69 @@
       },
       "verification_receipt": "A369096_FULL_VERIFICATION_RECEIPT.json",
       "source_prior_and_complete_informal_proof": "A369096_SOURCE_AND_INFORMAL_PROOF.md",
-      "remaining_obstruction": "Canonical full pair and supporting audits publicly uploaded with exact readbacks. Next authorized serialized registration slot is Number after A329 released; actual source/PR/assignment gates, statement PR, actual registration merge, exact imported-target proof check, separate full proof PR and official acceptance/credit remain."
+      "remaining_obstruction": "Statement PR13431 actuallysubmitted/open/unmerged; await actual review/merge, exact registered/imported-target proof check, separate full proof PR, upstream acceptance/merge/publiccredit.",
+      "statement_state": "open",
+      "submitted_statement_head": "5604c910c201ee3d32b32c065629b3126d924a8a",
+      "submission_authorization": "ActualnormalclaimHTTP20022:35:02,lead/teamempty/degradedfalse,PLAN55855/freshbeat200;exactonefilePR13431withENTIREcheckedproofbodyreadback;DONE55972HTTP200/release(submitted)HTTP20022:37:08. ZeroNumberleasesafterrelease;no privatetoken archived."
+    },
+    {
+      "problem_id": "mo-430643",
+      "exact_statement": "PROOFS_READY/mo-430643.statement.lean",
+      "proof": "PROOFS_READY/mo-430643.proof.lean",
+      "statement_sha256": "72593373c9c042f35769611ea786a5d2db7041e88fc6328ed0d467338de756b0",
+      "proof_sha256": "d05018f0ec188fd037c397a3ba2c4ff8497c769dbf3a509dcd34652668936460",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46077033577",
+      "verification_job": 140767069949,
+      "verification_commit": "54caa61c654746cda60ff0b6452dd4a0a33f5ad1",
+      "verification_kind": "combined_exact_source_whole_kernel_pass_with_verified_per_file_exit0",
+      "actual_compiler_exit": 0,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifact_id": 15235142221,
+      "artifact_sha256": "c340c7a6051632b3c941b8a7e51914ab360679cd11a9aea4552db54fe805afa4",
+      "artifact_created_at": "2026-11-27T22:32:13Z",
+      "root_independent_artifact_hash_exit_error_axiom_and_public_pair_audit": true,
+      "proof_summary": "For every finite set s of distinct primes and natural exponents a(p)>=2, r=prod p^a(p), outside36,72,900: prod p^(a(p)^2/4) <= r^(log_2(r)/4+1-card(s)). Real quarterpowers/base2log, emptyproductr1 also covered. Exact weighted quadratic gap, universal prime-log lowerbounds and complete cardinality/exponent cases.",
+      "genuine_open_status": "complete_independent_source_proof_bounded_prior_review_clean_with_concurrent_foreign_full_candidate_and_no_exclusive_priority_claim",
+      "prior_credit": "PabloSpiga2022/source CC BY-SA4; classical finite-sum/logarithm inequalities. Full relevant sections of Spiga2022,Fusari–Spiga2023,Guerra–Mastrogiacomo–Spiga2025,Palcoux–Spiga2026 read: no exact selected settlement identified in bounded scope. No new subgroup bound or world-priority claim asserted. Foreignstatement/concurrentcandidate credited to AminAhantab.",
+      "public_statement_commit": "ae59fd07aa86994977203750d8c6455d4de5434e",
+      "public_proof_commit": "8599909d306b5e040676bc2266a7d66919793bf2",
+      "public_statement_blob": "e65ee57816b99359470e9a5b5be35d97d3da5c07",
+      "public_proof_blob": "1edd436a797b5ab5e6cbd1b0712af947e60d3055",
+      "root_public_pair_entire_bytes_match": true,
+      "verification_receipt": "PROOFS_READY/mo-430643.VERIFICATION.json",
+      "full_informal_proof": "MO430643_COMPLETE_HAND_PROOF.md",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/13174",
+      "statement_pr_author": "AminAhantab",
+      "statement_pr_ours": false,
+      "statement_state": "open",
+      "statement_merged": false,
+      "canonical_statement_byte_identical_to_foreign_proposal": false,
+      "proposed_target_adaptation": "Foreignproposal hasexplicitr/equality/Finsetexceptions but sameoriginalscope. ScoutadaptingONLYownverifiedproof/minimalwrapper, separatevariant/freshcheck; frozenoriginalpairunchanged. No duplicate statement or official fullPR beforeactualregistrationmerge andfreshproofgate.",
+      "concurrent_foreign_candidate": {
+        "proof": "https://github.com/AminAhantab/open-math-agents/blob/c631af93f27b126dc5910f104ec7a09744dbac71/proofs/mo-430643.lean",
+        "commit": "c631af93f27b126dc5910f104ec7a09744dbac71",
+        "commit_time": "2026-11-27T22:24:38Z",
+        "pr_body_updated_at": "2026-11-27T22:25:37Z",
+        "full_scope_read": true,
+        "foreign_kernel_pass_independently_observed": false,
+        "not_an_actual_foreign_full_proof_PR": true
+      },
+      "own_complete_handproof_checkpoint": {
+        "commit": "fb54f2bf83d65241ad7bf3e1901959572c178488",
+        "commit_time": "2026-11-27T22:05:27Z",
+        "later_checkpoint": "f751e8c509a4d3be052ea746b20a4f544dbd04f8",
+        "scope": "EntireindependentinformalproofpubliclycheckpointedBEFOREthatobservedforeignstatement/fullcandidate, ownLeanpasslater; nofirst-everpublicationguarantee."
+      },
+      "merged_and_credited": "not_confirmed",
+      "remaining_obstruction": "Own35thcompletecanonicalpairand8supportfilesactuallypublic/readbackexact. ExistingforeignstatementPR13174withlinkedconcurrentfullcandidatefoundatfreshgate, so ownstatementpublicationwithheld. Adaptownfullproof toexactproposedtarget andcheck; awaitactualregistrationmerge, exact imported-targetcheck and freshfullPR/claimgate. No officialfullproofacceptance/prioritycount."
     }
   ],
   "continuing_beyond_minimum": true,
-  "complete_kernel_checked_certificates": 34,
+  "complete_kernel_checked_certificates": 35,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
   "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
@@ -1022,11 +1087,12 @@
     12717,
     12808,
     12868,
-    12938
+    12938,
+    13431
   ],
-  "interactive_leases_for_this_batch": "Original9 plusMO513259/A396949/MO487180/A181674/A372561/A372556 allactuallyreleasedHTTP200 (15total). A068991 actual503fallback/noassignment requiresnoleaserelease. HistoricalMO474511release500 unconfirmed; no stale tokenrefresh. All six late normalregistration slots ended. Otherautomations canholdtheir owncurrentleases;notaglobalactivecount.",
+  "interactive_leases_for_this_batch": "AlllateownregistrationsinclA36913431andA329full13332actuallyDONE/releasedHTTP200; rootlanescurrently0active. MO430noassignment/claim dueexistingstatement13174; originalhistoricalMO474release500inactiveunconfirmed, no stale token reuse. Otherhourlytasks mayholdowncurrentleases; thisisnotglobalowner-countproof.",
   "pending_full_proof_submissions": 2,
-  "record_updated_utc": "2026-11-27T22:33:50.826Z",
+  "record_updated_utc": "2026-11-27T22:44:02.867Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
   "official_full_proof_checker_acceptances": 4,
@@ -1035,13 +1101,14 @@
     "oeis-a381423": "Indexed complete actualexit0 certificate retained; entire source already Ma–Zhang Theorem1/Corollary2 Nov3/4,2026 and full TrureThreshold/Blocks. Prepared25115866 withheld,0claim/PR. Audit3ba4ab7c.",
     "mo-235344": "Notpartof33. Earlier byrohan immutable4a3de5ff full6x6mathematicalcounterexample07:06:42, source/target/64minors/62supportcuts/bothdiagonalobstructions independentlyexactchecked. Our5x5 onlydimensionimprovement. Latestrepair46073211016 ACTUALLYFAILED/errors/sorryAx. No originalsourceclosure orduplicatePR. Auditb93c12cd."
   },
-  "recorded_preceding_foreign_full_proofs": 15,
+  "recorded_preceding_foreign_full_proofs": 16,
   "records_without_known_preceding_proof_or_full_submission": 13,
   "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld and nowfullpriorA381423 certificates, so NOT a currenteligibility/accepted/newsolve total.",
   "latest_submission_rules": "Current official503busy fallback/manual-selection rules permit truthful contributions as specified; read currentrules beforeeachaction. Latest four normal registration claims workedHTTP200; tokenprivacy andownercap/teamcoordinationremainmandatory. No blanket noassignment stop wherecurrentrules explicitlyauthorizesfallback.",
   "full_proof_stage_coordination": {
-    "oeis_a124870": "Hourlyphase proof fixture d0cd/importedcheckeraccepted46075641225; no own fullPR yetobserved at22:27allstategate, avoidduplicate untilactualhourlyoutcome.",
-    "oeis_a329813": "FullPR13332actuallycreated/readback, DONE/releaseHTTP200; rootRuntime0leases.",
-    "oeis_a369096": "New34thwholecertificatepassed/canonicalpairuploaded; NumberownsnextserializedregistrationpubslotafterA329released."
+    "oeis_a124870": "WITHHOLDownfullPR: foreignfull13325/13377/13401nowexist. Hourlyreadyhandoffhasnoownsubmission.",
+    "oeis_a329813": "ActualfullPR13332open,source/importedcheckaccepted,officialupstreamcheckerqueued,DONE/release200.",
+    "oeis_a369096": "ActualstatementPR13431submittednormal200/DONE/release200, nofullPRyet.",
+    "mo_430643": "NoownstatementPR: existingforeign13174linkedconcurrentcandidate. Adaptownproof/readiness, noexclusivepriorityclaim, awaitactualmerge/fullstagegate."
   }
 }
