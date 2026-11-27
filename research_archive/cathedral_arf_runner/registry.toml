@@ -3705,3 +3705,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT prime-window lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-b3-direct-term-repair-20261127"
+question = "Repair actual B3 run 46080383664 selfNorm whnf timeout by reusing the original checked selfNorm proof value and exact-type direct-chart floor bridge. Replay the same six full graph roots, standard axiom gates and 13 adapted guards; preserve earlier failure, both inverse charts, Parseval and the unverified conditional helper obligation. No Main or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN89_DIRECT_TERM_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT Landau lane; user continuation directive 2026-11-27"
+claim = "independent"
