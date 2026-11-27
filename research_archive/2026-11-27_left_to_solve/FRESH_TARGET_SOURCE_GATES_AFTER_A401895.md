@@ -1,6 +1,6 @@
 # Fresh target source gates after the A401895 partial checkpoint
 
-Campaign: Cornelius Lytollis (@con123-gif), assisted by ChatGPT (GPT-6.2 Astra).
+Campaign: Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex, GPT-6 (exact serving variant not exposed).
 Date: 2026-11-27 UTC. This is an AI research/source audit, without a claim of human review.
 
 **No completed new problem, Lean certificate, official submission or acceptance is asserted by this document. No new count is added.** No lease was acquired during this scouting round. The mathematical search programs below are bounded screening, not infinite proofs. Existing statement or open catalogue labels were not treated as evidence that a problem remains unsolved.
