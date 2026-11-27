@@ -85,7 +85,10 @@ def main():
   have row_reverse :
       stdRowDatum (sumEmpty (Fin (2 * k)) Empty) 𝔠.χ
         (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S)) =
-      (fun (_ : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) => stdColDatum 𝔠.χ 1 1) := rfl
+      (fun (_ : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) =>
+        stdColDatum 𝔠.χ
+          (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S))
+          (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S))) := rfl
   simp only [row_forward, row_reverse] at K this
 """,
          "reason": "The actual second replay leaves partially applied standard-row functions; use full function identities before expanding theta data"},

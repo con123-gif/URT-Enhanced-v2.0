@@ -129,3 +129,7 @@ the actual kernel declaration-type mismatch. Aggregate control receipt
 the eleven-declaration fusion and its complete graph still need execution.
 Use one corrected combined job, `rh-compact-b2-fusion-repaired-20261127`,
 with the current lifted/layout-corrected source and all original guards.
+
+## Actual joint fusion result
+
+The layout/lift-repaired preferred eleven-declaration source 46f4fe6655495d3d6a49ff2199f827fef30e7020 has now PASSED local Lean execution: exit 0, 757.04 s, five complete original statements and all direct/labelled supplier guards, every axiom report standard. Checked object SHA256 e521f160ce09aa26f22976e1aed07f7c8d0648c2ddd3391500746029e899166f. See [exact source, log and receipt](2026-11-27_B2_FUSED_NATIVE_PASS.md). This supersedes the earlier prepared-only fusion status above. The complete eight-root graph and full B2/RH assembly remain open.
