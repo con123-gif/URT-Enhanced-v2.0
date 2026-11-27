@@ -1,12 +1,13 @@
 # Left to Solve campaign ledger
 
-Owner: Cornelius Lytollis (@con123-gif), assisted by ChatGPT (Codex, GPT-6.2).
+Owner: Cornelius Lytollis (@con123-gif), assisted by ChatGPT (Codex, GPT-6; exact serving variant not exposed).
 Date: 27 November 2026. Status: WORK IN PROGRESS; no completion claim.
 
 ## Confirmed total
 
 **0 / 20 accepted distinct proof or disproof submissions confirmed for this owner.**
 No new proof PR submitted in this interactive session as of this checkpoint.
+Two statement-only PRs are pending: [7223](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7223) and [7275](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/7275).
 Statements, research notes, reductions, and other contributors' results do not count.
 The live public solved feed was retrieved and filtered for `con123-gif`: no entries.
 The hourly Left to Solve bot remains enabled on its existing schedule; RH workers
@@ -17,7 +18,7 @@ live desk/team notes before claiming the same target.
 
 | Problem | Exact task | Official record | Current evidence | Counts |
 |---|---|---|---|---|
-| opg-inequality-for-square-summable-complex-series | State Retkes's inequality for square-summable complex sequences, with positive input indexing | [PR 6725](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/6725) | REJECTED by lint: theorem binders must be inside the statement after the colon; also another statement is now on main. Previously published 2013 proof is acknowledged. | No |
+| opg-inequality-for-square-summable-complex-series | State Retkes's inequality for square-summable complex sequences, with positive input indexing | [PR 6725](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/6725) | Closed after rejection and supersession. REJECTED by lint: theorem binders must be inside the statement after the colon; also another statement is now on main. Previously published 2013 proof is acknowledged. | No |
 | oeis-a401895 | For all natural n > 3, n times its decimal reversal has more than one distinct digit | [desk note 33408 / workflow](https://github.com/con123-gif/open-math-agents/actions/runs/46008655704) | Research note acknowledged; partial carry certificate, no full Lean proof | No |
 | opg-distribution-and-upper-bound-of-mimic-numbers | Exact histogram recursion and classification of first hitting times for radix M >= 2, 0 < D <= M | [PR 6800](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/6800) | ACCEPTED STATEMENT, authored by @rleshner, merged 1814ed2772d3e98896bbf8e1aba95342c6658b79 | No; third party, statement only |
 
@@ -25,8 +26,18 @@ live desk/team notes before claiming the same target.
 
 | Problem | Exact mathematics | Result | Verification | Submission / obstruction |
 |---|---|---|---|---|
-| oeis-a134799 | b(0)=1/3; b(n+1)=(3/2)b(n)(1-b(n)^2). Show reduced denominator den(b(n)) = 3 * 3^((3^n-1)/2), for every natural n | Complete informal induction and Lean candidate. Put t=(3^n-1)/2; represent b=p/3^(t+1), 3 does not divide p. For D=3^(t+1), p(D^2-p^2)=2r with 3 not dividing r, so b(next)=r/3^(3t+2); t(next)=3t+1. | Exact rational checks n=0..7 executed locally by number-theory lane. Lean candidate not yet compiled at this checkpoint. Exact pinned remote check queued from fork commit b5cf1a83eaa011f54a4da372f1de8f5cca4e571e. | Statement PR 6724 merged, credited @senamakel. No duplicate proof found at initial check. Live brief still temporarily said formalize; do not submit a replacement statement. |
-| oeis-a401895 | Remaining Round 10 candidates: decimal length L=33k, k>=7, endpoints 7/8, n*rev(n)=(2/3)(10^(2L)-1) | Independently replayed prior certificate, then proved stronger necessary condition k mod 9 in {0,2,5,8}. | Python exact certificate executed. Since n=rev(n) mod9 and 3 divides n, product mod81 is in {0,9,36,63}. Repdigit C_L=6(10^(2L)-1)/9 satisfies C_L=66L+27L(L-1) mod81. With L=3s this is 36s, giving L mod27 in {0,3,12,21}. | Partial result only; remaining infinite cases open. No Lean claim or accepted solution. |
+| mo-290383 | For every nonnegative rational n by n matrix M of rank 2r, do nonnegative P,Q of rank at most r exist with M=P-Q? | Complete disproof by M=I_2. Ranks at most one force det P=det Q=0; P=I+Q implies det P=1+Q00+Q11+det Q>0. | Combined exact statement and disproof compiled in pinned Lean4.33.1; OMA.disproof axioms only propext, Classical.choice, Quot.sound. Run46013634735. Unmodified official statement checker accepted run46014099792. Independent source and mathematical review completed. | Statement PR7223 pending; full proof must follow merge as a separate one-file submission. Source Turbo, MO290383, Jan10 2018, CC BY-SA3.0. No accepted proof yet. |
+| oeis-a399155 | For every n>=2, greatest-prime-factor subtraction reaches zero in no more steps than smallest-prime-factor subtraction. | Complete informal proof and Lean candidate: first smallest-factor subtraction leaves even n-p, so F(n)=1+(n-p)/2. Each greatest-factor subtraction is at least two and avoids one, so G(n)<=1+(n-q)/2<=F(n). | Unmodified official statement checker accepted run46014099792. Full main proof compiled in pinned Lean4.33.1 in run46014383078, with OMA.solution axioms only propext/Classical.choice/Quot.sound; exact unchanged-target file check follows statement merge. Two independent mathematical reviews and exact checks n=2..10000 passed. | Statement PR7275 pending. Source Jaylen Dilkhush, Aug2026, OEIS updated Nov26. Additional source empirical claim now also has an informal finite-fiber proof: for composite n>=100, 20(F(n)-G(n))>=n+12. Thus each positive level k has n<=max(99,20k-12). Additional claim is not yet Lean checked and is the same problem ID. |
+| oeis-a134799 | b0=1/3; b(next)=(3/2)b(1-b^2). Show den(b_n)=3*3^((3^n-1)/2) for every n. | Complete independent proof, now Lean checked. p/3^e with 3 not dividing p gives the next reduced denominator exponent 3e-1; e0=1. | Unmodified official checker ACCEPTED run46014099792, kernel axioms only propext/Classical.choice/Quot.sound. Exact proof on fork commit3927ee38a23713fbf28f87f6d5c9ba824cd82aea. | Competing proof PR7148 appeared before our submission (created14:07:51Z). Our proof is withheld to avoid a duplicate; official DONE note36407 acknowledged and lease released. No campaign credit. Statement author @senamakel acknowledged. |
+| oeis-a401895 | Remaining Round10 candidates have length L=33k, k>=7, endpoints7/8, n*rev(n)=6(10^(2L)-1)/9. | Independently replayed prior certificate, then proved k mod9 in {0,2,5,8}; first remaining possible length264. Also derived S^2=66L mod81 for digit sum S. | Python exact certificates executed. n=rev(n) mod9 yields allowed product residues {0,9,36,63} mod81. C_L=66L+27L(L-1) mod81 gives L mod27 in {0,3,12,21}. The centered identity independently checked on99999 inputs. | Partial only; infinite cases remain open; no new Lean or accepted solution. |
+
+### Current interactive lanes — avoid duplicate claims
+
+- MO290383: source/statement/proof complete, PR7223 pending; formalization lease being released after submission.
+- A399155: statement PR7275 pending; proof verification and stronger finite-level theorem in progress; formalization lease being released after submission.
+- MO466218: scout has a live formalization lease and a complete informal maximum-principle argument for diagonal(B-B^2)>=0, B=lambda(lambda I-A)^(-1), where A has positive offdiagonal entries and zero row sums. Exact statement/Lean work in progress; not verified or submitted.
+- A023365: number-theory lane holds a formalization lease and has a complete informal proof plus Lean candidate for a fresh Newton-denominator conjecture, den(b_n)=2^(3^n), b0=1/2, b(next)=b(3/2-b^2). Complete informal odd-numerator invariant; official PLAN note36574; exact Lean checks pending, no proof acceptance.
+- Do not race already submitted A134799 (PR7148) or A119936 (PR7231).
 
 ## Infrastructure and source integrity
 
@@ -62,13 +73,15 @@ of a genuinely unsolved problem. No novelty or campaign credit is claimed for th
 
 ## RESUME HERE
 
-1. Read exact pinned checker output for A134799 on fork branch above; repair and
-   rerun until kernel and axiom audit actually pass.
-2. Recheck competing submissions and live target, obtain one valid proof lease,
-   post PLAN, submit exactly one new proofs/oeis-a134799.lean file if still eligible.
-3. Monitor actual upstream verdict. Update this ledger with proof commit, run,
-   PR, accepted merge, public attribution and precise count; then continue.
-4. Preserve and publish the A401895 independent review as a research note only.
+1. Monitor statement PR7223 and PR7275. Once each merges, obtain a proof lease,
+   run the exact one-file proof through the unmodified checker, submit it and
+   monitor its actual upstream verdict. A compiled statement is not an accepted proof.
+2. Read exact pinned proof output for A399155, repair genuine Lean errors and
+   rerun. Preserve the full source claim and exact definitions.
+3. Continue source-faithful MO466218 and A023365 lanes without duplicate claims.
+4. Preserve/publish the A401895 review only as partial research, with its primary
+   2015 literature attribution. Do not count it as a solved problem.
+5. Update this ledger with actual proof PR, verdict, merge and public credit.
 
-No background execution beyond real scheduled bot runs or observed workflow runs
-is promised. Work proceeds within each available session budget.
+No background execution beyond real scheduled bot runs or observed workflows is
+promised. Current work proceeds within each available session budget.
