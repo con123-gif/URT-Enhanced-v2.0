@@ -1,0 +1,48 @@
+{
+  "status": "finite sanity checks passed; not an infinite proof",
+  "source_terms_matched": 105,
+  "sieve_limit": 1000000,
+  "method": "Exact smallest-prime-factor sieve; source sorted-pair count",
+  "rows": [
+    {
+      "N": 100,
+      "primorial_count": 4,
+      "semiprime_count": 34,
+      "summatory_exact": 125,
+      "mean": 1.25,
+      "loglog": 1.5271796258079011
+    },
+    {
+      "N": 1000,
+      "primorial_count": 5,
+      "semiprime_count": 299,
+      "summatory_exact": 1423,
+      "mean": 1.423,
+      "loglog": 1.9326447339160655
+    },
+    {
+      "N": 10000,
+      "primorial_count": 6,
+      "semiprime_count": 2625,
+      "summatory_exact": 15102,
+      "mean": 1.5102,
+      "loglog": 2.2203268063678463
+    },
+    {
+      "N": 100000,
+      "primorial_count": 7,
+      "semiprime_count": 23378,
+      "summatory_exact": 156372,
+      "mean": 1.56372,
+      "loglog": 2.443470357682056
+    },
+    {
+      "N": 1000000,
+      "primorial_count": 8,
+      "semiprime_count": 210035,
+      "summatory_exact": 1569808,
+      "mean": 1.569808,
+      "loglog": 2.625791914476011
+    }
+  ]
+}
