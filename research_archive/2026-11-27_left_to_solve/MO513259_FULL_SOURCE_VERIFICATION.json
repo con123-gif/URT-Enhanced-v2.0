@@ -1,0 +1,92 @@
+{
+  "problem": "mo-513259",
+  "as_of_utc": "2026-11-27T21:48:30.963686+00:00",
+  "status": "FULL_SOURCE_KERNEL_VERIFIED_STATEMENT_PR_AWAITING_REVIEW",
+  "both_original_graph_conjectures": true,
+  "counted_official_accepted_solutions": 0,
+  "official_lease": null,
+  "official_submission": {
+    "kind": "statement_registration",
+    "number": 12514,
+    "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/12514",
+    "head_sha": "1dd44e31a8f5a043ae04e21cebd1f581765ac2cd",
+    "status": "open",
+    "checker_run": 46072046436
+  },
+  "official_acceptance": false,
+  "canonical_proof_sha256": "50565c78756547a97d545bdc8474329ffed77ba0de4d221c92b61db9814fbf47",
+  "canonical_statement_sha256": "236cc7849d274d12067daf1290bb8ff29656797468a5c07235fdc6ae5a2d2980",
+  "actual_whole_kernel_check": {
+    "run_id": 46070716771,
+    "job_id": 140746737115,
+    "commit": "b902c7b397bbdb7db4c14def003e952afbe3811b",
+    "artifact_id": 15233121477,
+    "zip_sha256": "6c37f0b3b17a24e445f1108873080c987034cc24af4dbc6552c38ed15f22fcb1",
+    "exits": {
+      "ProbeMO513259CompleteSecond.lean.exit": "0"
+    },
+    "compiler_errors_including_tagged": [],
+    "target": "OMA.solution",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "proof_sha256": "50565c78756547a97d545bdc8474329ffed77ba0de4d221c92b61db9814fbf47",
+    "probe_sha256": "498b21a75c7d9cd8893eb18aa062cc73c857c606202386aebc362815b8d1d99c",
+    "official_submission": null,
+    "official_acceptance": false
+  },
+  "static_gate_receipt": "STATIC_SECOND_LINT_RECEIPT.json",
+  "main_archive": {
+    "repository": "con123-gif/URT-Enhanced-v2.0",
+    "branch": "newtons-cathedral",
+    "directory": "research_archive/2026-11-27_left_to_solve/PROOFS_READY",
+    "statement_commit": "aa77b9b4b3b05ef80051f502bcf8e978a43fa7c5",
+    "proof_commit": "144e972722cf7f8e9ba3be70c4b9f38a6822e157",
+    "both_exact_readback": true
+  },
+  "prepared_statement_branch": {
+    "repository": "con123-gif/open-math-agents",
+    "branch": "oma-statement-mo-513259-20261127",
+    "commit": "1dd44e31a8f5a043ae04e21cebd1f581765ac2cd",
+    "base": "7724ee44ee10bf7b9f1f57988fc0a94a3b5ffd11",
+    "actual_diff": "only statements/mo-513259.lean added,37lines",
+    "pr": null
+  },
+  "remaining_obstruction": "Human review and actual statement merge, followed by exact imported-target check and full-proof contribution. No full-proof official acceptance yet.",
+  "prior_credit": [
+    "Anna Knezevic, Greg Cohen, Marina Domanskaya, Some Facts on Permanents in Finite Characteristics, arXiv1710.01783 (2017): characteristic-three inverse-permanent identity",
+    "Darij Grinberg, MSE2688219 comments (2018): even symmetric perturbation determinant lemma",
+    "Mathlib authors for exact source-adapted block permanent/reindex infrastructure"
+  ],
+  "model_disclosure": "ChatGPT / GPT-6 Codex; exact serving variant not exposed",
+  "attribution": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT, with independent AI-lane mathematical and kernel verification",
+  "historical_correction": "See VERIFICATION_CORRECTION.md; no acceptance/solve was counted from earlier mislabeled helper checks. Final full certificate uses repaired prefix and observed exit0.",
+  "distinct_source_targets_covered": 1,
+  "official_full_proof_submission": null,
+  "known_local_leases": 0,
+  "formalization_handoff": {
+    "claim_http": 200,
+    "plan_http": 200,
+    "plan_note": 51252,
+    "fresh_heartbeat_http": 200,
+    "done_http": 200,
+    "done_note": 51482,
+    "release_reason": "submitted",
+    "release_http": 200,
+    "release_ok": true
+  },
+  "official_statement_checker": {
+    "run_id": 46072046436,
+    "job_id": 140751054037,
+    "last_observed_state": "queued",
+    "verdict": null
+  },
+  "independent_whole_audit": {
+    "file": "MO513259_INDEPENDENT_WHOLE_AUDIT.json",
+    "actual_exit": 0,
+    "public_probe_byte_match": true,
+    "canonical_statement_and_entire_proof_exactly_embedded": true
+  }
+}
