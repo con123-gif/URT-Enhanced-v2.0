@@ -110,3 +110,39 @@ RESUME HERE: inspect the active repair batch's actual compiler outputs,
 fix its first failure, and continue from the retained native artifact
 cache rather than another cold build. Only a completed exact-type,
 bridge-dependency and standard-axiom receipt permits caller validation.
+
+The local constructor-inclusive graph comparison is now prepared as
+`audit_active_b2_graph.py`. It authenticates the existing exporter/verifier,
+uses the same two source fragments in closed sections, and compares ONLY
+the original/replacement pair and original/replacement level-energy roots.
+It must verify recursive reachability of both bridges and absence of both
+old targets from the corresponding new roots. Its prepare-only execution
+succeeded (generated source blob 940a11154a118ef4d2138b2eb35707288ad6fca5).
+No graph was executed, no native graph frontier is claimed, and its local
+four-root scope is explicitly not an RH completion denominator. Run it from
+the retained, pinned CrudeEnergy artifact workspace after the repair batch,
+using --compact-root, --lean-bin and --out. The active repair run is
+45998845682; no additional cold-build job is registered for this graph.
+
+The graph exporter/verifier compatibility check has now actually run on
+Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, using ONLY
+Nat.le_refl. Compilation exit 0; the independent verifier accepted 11
+nodes / 29 edges with zero missing nodes and no root axioms. This checks
+the exporter API/format on that small root, not the B2 graph, not its full
+constructor coverage on every declaration kind, and not any RH theorem.
+Exact generated source, graph and verifier receipt are preserved.
+
+The corrected local BlockBound attempt also timed out at LocalHomUnit
+(exit 124, 900 seconds), with the corrected six lakefile arguments. The
+shared source build compiled that module in 12 seconds. No more local cold
+builds are planned; continue from the shared compiled native cache.
+
+The remaining two native CrudeEnergy consumers are now prepared in
+B2_ACTIVE_FULL_ENERGY_EXTENSION.lean, using the new level-pair and
+lower-level suppliers. The separate full-energy manifest has seven named
+proofs and three authenticated fragments; its prepare-only assembly
+succeeded (0fd0b23c6c4bc39a1a935d4347a4c6ea2eb1b5d1). No Lean execution
+of those two additional callers is claimed. The existing repair run
+still checks only the five declarations and separate skew/count patch
+from commit 234c5a3130055d3a0900d329b6361155610741f7. After that passes,
+use its native cache for this extension and the local graph comparison.

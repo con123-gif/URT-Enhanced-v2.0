@@ -27,10 +27,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", required=True)
     parser.add_argument("--preflight", action="store_true")
+    parser.add_argument("--manifest", default="B2_ACTIVE_ENERGY_INPUT.json")
     args = parser.parse_args()
     out = Path(args.out).resolve()
     out.mkdir(parents=True, exist_ok=True)
-    config = json.loads((HERE / "B2_ACTIVE_ENERGY_INPUT.json").read_text())
+    config = json.loads((HERE / args.manifest).read_text())
+    full_energy = config.get("full_energy_chain", False)
     patch_info = config["skew_patch"]
     patch_file = native.SWARM / patch_info["source"]
     native.require(native.git_blob(patch_file.read_bytes()) == patch_info["source_blob"],
@@ -49,7 +51,9 @@ def main():
                          "\n".join(texts))
     assembled_blob = native.git_blob(assembled.read_bytes())
     names = config["theorems"]
-    native.require(len(names) == 5 and len(set(names)) == 5, "Wrong energy theorem manifest")
+    expected_count = 7 if full_energy else 5
+    native.require(len(names) == expected_count and len(set(names)) == expected_count,
+                   "Wrong energy theorem manifest")
     native.PEERS = {"active_b2_energy": (str(assembled), assembled_blob, names)}
     native.SOURCES["New/Filling/CrudeEnergy.lean"] = config["original_source_blob"]
     base_step = native.step
@@ -116,8 +120,13 @@ def main():
                           "assembled_source_blob": assembled_blob,
                           "new_Lean_execution": False, "energy_caller_checked": False}))
         return
-    with contextlib.redirect_stdout(io.StringIO()):
-        native.main()
+    original_argv = sys.argv
+    try:
+        sys.argv = [sys.argv[0], "--out", str(out)]
+        with contextlib.redirect_stdout(io.StringIO()):
+            native.main()
+    finally:
+        sys.argv = original_argv
     state = json.loads((out / "b2_native_results.json").read_text())
     probe = state["steps"]["active_b2_energy"]
     native.require(state["all_requested_checks_ok"] is True, "Incomplete energy native batch")
@@ -127,6 +136,10 @@ def main():
     log = (out / probe["log"]).read_text()
     native.require(PAIR_GUARD in log and ENERGY_GUARD in log,
                    "Actual pair/energy caller guards did not complete")
+    if full_energy:
+        native.require("B2_ACTIVE_FULL_ENERGY: original declaration types match; all three energy "
+                       "callers consume replacements; original targets absent from direct proof "
+                       "dependencies" in log, "Full energy caller guards did not complete")
     skew = json.loads((out / "skew_caller_results.json").read_text())
     skew_ok = skew["returncode"] == 0 and skew["axiom_audit_ok"] is True
     result = {
@@ -134,8 +147,11 @@ def main():
         "original_declaration_types_match": True,
         "energy_caller_checked": True,
         "replacement_pair_bound_consumed": True,
+        "full_energy_chain_checked": full_energy,
         "original_targets_absent_from_direct_proof_dependencies": True,
-        "scope": "pair-weight replacement and its full original-statement level-energy consumer",
+        "scope": ("pair-weight replacement and all three complete CrudeEnergy consumers"
+                  if full_energy else
+                  "pair-weight replacement and its full original-statement level-energy consumer"),
         "separate_skew_caller_receipt": "skew_caller_results.json",
         "human_assembly_verified": False, "full_RH_replay": False,
         "separate_skew_caller_checked": skew_ok,

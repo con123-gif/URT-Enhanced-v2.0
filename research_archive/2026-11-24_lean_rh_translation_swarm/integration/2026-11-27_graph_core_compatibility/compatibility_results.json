@@ -1,0 +1,24 @@
+{
+  "roots": [
+    "Nat.le_refl"
+  ],
+  "nodes": 11,
+  "edges": 29,
+  "missing": 0,
+  "mask_histogram": {
+    "1": 11
+  },
+  "per_root": {
+    "Nat.le_refl": {
+      "exit": 0,
+      "nodes": 11,
+      "missing": 0,
+      "log": "audit-0.json"
+    }
+  },
+  "naive_repeated_nodes": 11,
+  "scope": "exporter/verifier compatibility on Nat.le_refl only; NOT B2/RH validation",
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+}
