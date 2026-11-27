@@ -1,0 +1,193 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source": "specialists/character_boxes/RUN78_COMPACT_EQUAL_RANK_CALLER.lean",
+  "source_blob": "6bb8f53e746aa4d5c876c7eff3433e6daf126795",
+  "original_source_blob": "a620150b7c616d614013822be11dbdf74a694f0d",
+  "theorems": [
+    "RHCharacterBoxes77.exchange_of_standard_pairs",
+    "run78_equalRankThetaRatio_value"
+  ],
+  "original_probes": [
+    "exchange_of_partners",
+    "exists_equalRankThetaRatio_value",
+    "stdExchange_of_periods"
+  ],
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "adapter": {
+    "old": "info.value? |",
+    "new": "info.value? (allowOpaque := true) |"
+  },
+  "native_repairs": [
+    {
+      "old": "  have P := isPartner_stdRowDatum_stdColDatum σ ha\n",
+      "new": "  have P := isPartner_stdRowDatum_stdColDatum σ (χ := 𝔠.χ) ha\n",
+      "reason": "The actual first native error leaves the finite character implicit"
+    },
+    {
+      "old": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) _\n",
+      "new": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) (rankTwist 𝔠.ν⁻¹ n)\n",
+      "reason": "Select the same rank-twisted character required by the final theta integral"
+    },
+    {
+      "old": "  simp only [stdRowDatum] at K this\n",
+      "new": "  simp (config := { failIfUnchanged := false }) only [stdRowDatum] at K this\n",
+      "reason": "The actual second native error is an already normalized, unchanged simp target"
+    }
+  ],
+  "replay_source_blob": "21ec55dc7b491859ec4880179cbabaaac420924f",
+  "carrier_propagation": {
+    "source": "specialists/character_boxes/RUN79_COMPACT_CARRIER_PROPAGATION.lean",
+    "source_blob": "661ed5fdd14651cf5629866ca7e86810f9c5fef2",
+    "theorems": [
+      "run79_exchange_theorem",
+      "run79_explicit_matching",
+      "run79_stdClassSum_det_modKernel_eq",
+      "run79_stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "original_probes": [
+      "exchange_theorem",
+      "explicit_matching",
+      "stdClassSum_det_modKernel_eq",
+      "stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "original_source_blobs": {
+      "New/Exchange/ExchangeTheorem.lean": "608b4f61af27d780e24f799937a836ecd3c1d50a",
+      "New/Rows/Carrier.lean": "f0b7f97f299904aa73a928432147a932cac9be40",
+      "New/Rows/RowVolume.lean": "925de9c592b40763516e70ddeae48b4ad1a35b88",
+      "New/Rows/LiftVolumeHeight.lean": "87938141d4103b485fd5a7125721798f65f973f1",
+      "New/Rows/ComparisonForms.lean": "14ef893c54f5db837ea7e4f143b2b1a444b89b5a"
+    },
+    "new_Lean_execution": false
+  },
+  "compiled_together": true,
+  "combined_source_blob": "c361030a3f5d35d0d5cdf297b518b12804cc4956",
+  "candidate_declarations": [
+    "RHCharacterBoxes77.exchange_of_standard_pairs",
+    "run78_equalRankThetaRatio_value",
+    "run79_exchange_theorem",
+    "run79_explicit_matching",
+    "run79_stdClassSum_det_modKernel_eq",
+    "run79_stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "all_original_probes": [
+    "exchange_of_partners",
+    "exists_equalRankThetaRatio_value",
+    "stdExchange_of_periods",
+    "exchange_theorem",
+    "explicit_matching",
+    "stdClassSum_det_modKernel_eq",
+    "stdClassSum_carrierXi_eq_carrierForm"
+  ],
+  "native_source_build_performed": false,
+  "caller_replacement_checked": false,
+  "carrier_propagation_checked": false,
+  "all_requested_checks_ok": false,
+  "human_assembly_verified": false,
+  "steps": {
+    "environment": {
+      "returncode": 0,
+      "seconds": 37.39,
+      "log": "environment.log"
+    },
+    "c2_candidate": {
+      "returncode": 1,
+      "seconds": 1835.41,
+      "log": "compile.log",
+      "axioms": {
+        "RHCharacterBoxes77.exchange_of_standard_pairs": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "run78_equalRankThetaRatio_value": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": false,
+      "compiled_together": true
+    },
+    "c2_propagated_callers": {
+      "returncode": 1,
+      "seconds": 1835.41,
+      "log": "compile.log",
+      "axioms": {
+        "run79_exchange_theorem": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "run79_explicit_matching": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "run79_stdClassSum_det_modKernel_eq": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "run79_stdClassSum_carrierXi_eq_carrierForm": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": false,
+      "compiled_together": true
+    },
+    "c2_originals": {
+      "returncode": 1,
+      "axioms": {
+        "exchange_of_partners": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "exists_equalRankThetaRatio_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "stdExchange_of_periods": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "exchange_theorem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "explicit_matching": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "stdClassSum_det_modKernel_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "stdClassSum_carrierXi_eq_carrierForm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": false,
+      "compiled_together": true,
+      "log": "compile.log"
+    }
+  },
+  "all_five_type_and_dependency_guards_observed": false
+}

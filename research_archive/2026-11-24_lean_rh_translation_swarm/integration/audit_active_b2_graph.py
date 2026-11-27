@@ -66,6 +66,8 @@ def main():
                         help="Reuse the checked active_b2_energy object and its exact source receipt")
     parser.add_argument("--fused-module-dir", type=Path,
                         help="Also import a checked count-to-energy fusion; needs --module-dir")
+    parser.add_argument("--native-exporter-dir", type=Path,
+                        help="Use a compiled exporter with actual build and core-equivalence receipts")
     parser.add_argument("--seconds", type=int, default=1200,
                         help="Explicit graph compilation limit; no native source rebuild")
     args = parser.parse_args()
@@ -95,6 +97,8 @@ def main():
         native.require(native.git_blob(raw) == part["source_blob"], "Changed candidate graph input")
         parts.append(re.sub(r"^import[^\n]*\n", "", raw.decode(), flags=re.M))
     module_receipt = None
+    if args.native_exporter_dir:
+        native.require(args.module_dir is not None, "Native inspection needs an actual checked B2 module")
     if args.module_dir:
         module_receipt = json.loads((args.module_dir / "energy_replacement_results.json").read_text())
         native.require(module_receipt["energy_caller_checked"] is True and
@@ -180,9 +184,31 @@ def main():
         command = [str(args.lean_bin.resolve() / "lean"), "--tstack=400000", "-j", "2", path]
     else:
         command = ["lake", "env", "lean", "--tstack=400000", path]
-    receipt = native.step(command, root, env, out / "local_b2_graph.log", args.seconds)
-    receipt.update(native.audit(out / "local_b2_graph.log", roots))
-    receipt.update(new_Lean_execution=True, full_RH_replay=False)
+    if args.native_exporter_dir:
+        from prepare_native_graph_exporter import validated_executable
+        binary, build = validated_executable(args.native_exporter_dir)
+        command = [binary, args.lean_bin.resolve().parent, module_name,
+                   out / "local_b2_graph.jsonl", *roots]
+        receipt = native.step(command, root, env, out / "local_b2_graph.log", args.seconds)
+        # This is runtime inspection of already checked private declarations,
+        # not a fresh proof compilation. Read Lean.collectAxioms' actual rows.
+        axioms = {}
+        graph_path = out / "local_b2_graph.jsonl"
+        if receipt["returncode"] == 0 and graph_path.is_file():
+            with graph_path.open() as stream:
+                header = json.loads(stream.readline())
+            for row in header.get("root_axioms", []):
+                name = ".".join(str(x[1]) for x in row["root"])
+                axioms[name] = [".".join(str(x[1]) for x in ax) for ax in row["lean_collect_axioms"]]
+        allowed = {"propext", "Classical.choice", "Quot.sound"}
+        receipt.update(axioms=axioms,
+            axiom_audit_ok=set(axioms) == set(roots) and all(set(a) <= allowed for a in axioms.values()),
+            native_exporter_build=build, native_graph_execution=True, new_Lean_execution=False)
+    else:
+        receipt = native.step(command, root, env, out / "local_b2_graph.log", args.seconds)
+        receipt.update(native.audit(out / "local_b2_graph.log", roots))
+        receipt.update(new_Lean_execution=True, native_graph_execution=False)
+    receipt.update(full_RH_replay=False)
     native.dump(out / "graph_execution.json", receipt)
     native.require(receipt["returncode"] == 0 and receipt["axiom_audit_ok"] is True,
                    "Local B2 graph compilation/axiom checks failed")

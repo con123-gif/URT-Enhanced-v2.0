@@ -78,8 +78,36 @@ def main():
          "new": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) (rankTwist 𝔠.ν⁻¹ n)\n",
          "reason": "Select the same rank-twisted character required by the final theta integral"},
         {"old": "  simp only [stdRowDatum] at K this\n",
-         "new": "  simp (config := { failIfUnchanged := false }) only [stdRowDatum] at K this\n",
-         "reason": "The actual second native error is an already normalized, unchanged simp target"},
+         "new": """  have row_forward :
+      stdRowDatum (emptySum Empty (Fin (2 * k))) 𝔠.χ
+        (0 : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) =
+      stdColDatum 𝔠.χ (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S)) := rfl
+  have row_reverse :
+      stdRowDatum (sumEmpty (Fin (2 * k)) Empty) 𝔠.χ
+        (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S)) =
+      (fun (_ : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) => stdColDatum 𝔠.χ 1 1) := rfl
+  simp only [row_forward, row_reverse] at K this
+""",
+         "reason": "The actual second replay leaves partially applied standard-row functions; use full function identities before expanding theta data"},
+        {"old": """  have : localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =
+      𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := by
+""",
+         "new": """  have flipDatum (Ψ : Matrix n b (LocProd 𝔠.S) → ℂ)
+      (hΨ : Ψ ∈ schwartzBruhat HasLeftInv)
+      (P : IsPartner SemilocalField.O σ 𝔠.χ (stdRowDatum σ 𝔠.χ a) Ψ) :
+      localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =
+        𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := by
+""",
+         "reason": "Keep the finite datum abstract inside the existing partner-law flip calculation; dsimp otherwise expands its standard-data implementation"},
+        {"old": """  convert congr((rankTwist 𝔠.ν⁻¹ n).1 g.det * $(K 𝔠 a ha) g) using 1 <;>
+""",
+         "new": """  have : localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =
+      𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := flipDatum _ hΨ P
+  have kg := congr((rankTwist 𝔠.ν⁻¹ n).1 g.det * $(K 𝔠 a ha) g)
+  clear K
+  convert kg using 1 <;> clear kg <;>
+""",
+         "reason": "After consuming the standard theta identity, prevent simp [*] from rewriting its own source side back through K"},
     ]
     for repair in repairs:
         native.require(adapted_text.count(repair["old"]) == 1, "Changed C2 repair anchor")

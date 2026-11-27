@@ -1,0 +1,441 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:130:55: error: unsolved goals
+case e'_6
+E : Type
+inst✝⁹ : Field E
+inst✝⁸ : CMType E
+inst✝⁷ : WeilData E
+n m r✝ p b : Type
+inst✝⁶ : Fintype n
+inst✝⁵ : Fintype m
+inst✝⁴ : Fintype r✝
+inst✝³ : Fintype p
+inst✝² : Fintype b
+s : n → ℤˣ
+s' : m → ℤˣ
+t✝ : r✝ → ℤˣ
+u✝ : b → ℤˣ
+W : Space E n s
+X : Space E m s'
+U : Space E b u✝
+μ : NumberField.InfinitePlace E → ℤ
+inst✝¹ : Nonempty p
+A : (hypSum Unit X).Splitting W p
+inst✝ : IsBaseAdapted A
+V : Space E r✝ t✝
+σ : b ⊕ r✝ ≃ n
+z : fockSpace (realSigns E (homSigns (hypSigns Unit ⊕ᵥ s') (hypSigns Unit ⊕ᵥ s')))
+y : fockSpace (realSigns E (homSigns u✝ s))
+r₁ : IsRapidDatum z
+hy : IsRapidDatum y
+hs : 1 + negCount s' = Fintype.card p + negCount t✝ + negCount u✝
+hn : 2 ∣ Fintype.card n
+f : Std E (RingHom.id ℂ) (homSigns u✝ s) (homSigns s (-u✝)) := flipCoords ⋯ ⋯
+this : IsRapidDatum (f.realMap y)
+w✝¹ : ℂ
+x : fockSpace (realSigns E (homSigns (hypSigns b ⊕ᵥ (hypSigns Unit ⊕ᵥ s')) (-u✝ ⊕ᵥ (hypSigns Unit ⊕ᵥ s'))))
+u : PairFock E (hypSigns b ⊕ᵥ (hypSigns Unit ⊕ᵥ s')) (-u✝)
+H✝ :
+  StdExchange (hypSum b (hypSum Unit X)) ((flipSpace U).sum (hypSum Unit X)) (flipSpace U) μ
+    (Equiv.sumAssoc b b ((Unit ⊕ Unit) ⊕ m)).symm x u fun x ↦ equalRankThetaRatio (hypSum Unit X) x z
+a✝ : IsRapidDatum ((realSlice (removePlanes b (hypSum Unit X)).symm (flipSpace U) 0) u)
+e :
+  (realSlice A.symm.symm (flipSpace U) 0) ((realSlice (removePlanes b (hypSum Unit X)).symm (flipSpace U) 0) u) =
+    f.realMap y
+w✝ : ℕ
+k : Fintype.card n = 2 * w✝
+rv : IsRapidDatum (⋯.choose x)
+h✝¹ : IsRapidDatum (f.realMap y)
+C : ℝ
+c : SplitTameChar E μ → ℂ
+h✝ :
+  ∀ (𝔠 : SplitTameChar E μ),
+    C * ‖c 𝔠‖ ^ 2 =
+      lValueProdInt 𝔠 (↑(Fintype.card r✝) - ↑(Fintype.card n) / 2) * (fun x ↦ equalRankThetaRatio (hypSum Unit X) x z) 𝔠
+K :
+  ∀ (𝔠 : SplitTameChar E μ) (z_1 : Matrix b n (LocProd 𝔠.S)),
+    IsIntMatrix SemilocalField.O z_1 →
+      thetaLarge W V 𝔠 (⋯.choose x) (stdRowDatum σ 𝔠.χ z_1) =
+        c 𝔠 • thetaSmall W (flipSpace U) 𝔠 (f.realMap y) (stdColDatum 𝔠.χ z_1)
+𝔠 : SplitTameChar E μ
+t : (↥SemilocalField.O)ˣ := (Units.map ↑((evalPlaces 𝔠.S).restrict (Ô E) SemilocalField.O ⋯)) Weil.normNegOne
+d : ℂ
+hd : ‖d‖ = 1
+H :
+  ∀ (a' : AutChar E) (f : 𝒮 (U.hom W)) (g : G E u✝) (h : G E s) (g' : G E (-u✝)),
+    g'.mat = G.mat 1 * g.mat →
+      pairTheta W (flipSpace U) ((rankTwist 𝔠.ν⁻¹ n)⁻¹ * WeilData.upsilonU1 ^ Fintype.card n)
+          (a'⁻¹ * WeilData.upsilonU1 ^ Fintype.card b) ((flipCoords ⋯ ⋯).map f) (h, g') =
+        d * pairTheta U W a' (rankTwist 𝔠.ν⁻¹ n) f (g, h)
+r : ReadsAt (↑𝔠.S) (evalPlaces 𝔠.S) := SplitTameChar.readsAt 𝔠
+a : Matrix b n ((i : ↥𝔠.S) → LocField ↑i)
+ha : IsIntMatrix SemilocalField.O a
+g : G E s
+Ψ : Matrix n b ((i : ↥𝔠.S) → LocField ↑i) → ℂ := stdColDatum 𝔠.χ a
+P : IsPartner SemilocalField.O σ 𝔠.χ (stdRowDatum σ 𝔠.χ a) (stdColDatum 𝔠.χ a)
+hΨ : stdColDatum 𝔠.χ a ∈ schwartzBruhat HasLeftInv
+x✝ : b × n → 𝔸f E
+⊢ Ψ ((Matrix.of fun i j ↦ x✝ (i, j)).map (⇑(evalPlaces 𝔠.S) ∘ ⇑(starRingEnd (𝔸f E))))ᵀ =
+    stdColDatum 𝔠.χ a
+        ((Matrix.of fun i j ↦ ↑↑Weil.normNegOne * Star.star (x✝ (j, i))).map ⇑(evalPlaces 𝔠.S) *
+          Matrix.diagonal fun m ↦ (evalPlaces 𝔠.S) ↑↑Weil.normNegOne) *
+      (𝔠.χ ((evalPlaces 𝔠.S) ↑↑Weil.normNegOne) ^ Fintype.card b) ^ 2
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:103:86: error: unsolved goals
+case e'_2
+E : Type
+inst✝⁹ : Field E
+inst✝⁸ : CMType E
+inst✝⁷ : WeilData E
+n m r✝ p b : Type
+inst✝⁶ : Fintype n
+inst✝⁵ : Fintype m
+inst✝⁴ : Fintype r✝
+inst✝³ : Fintype p
+inst✝² : Fintype b
+s : n → ℤˣ
+s' : m → ℤˣ
+t✝ : r✝ → ℤˣ
+u✝ : b → ℤˣ
+W : Space E n s
+X : Space E m s'
+U : Space E b u✝
+μ : NumberField.InfinitePlace E → ℤ
+inst✝¹ : Nonempty p
+A : (hypSum Unit X).Splitting W p
+inst✝ : IsBaseAdapted A
+V : Space E r✝ t✝
+σ : b ⊕ r✝ ≃ n
+z : fockSpace (realSigns E (homSigns (hypSigns Unit ⊕ᵥ s') (hypSigns Unit ⊕ᵥ s')))
+y : fockSpace (realSigns E (homSigns u✝ s))
+r₁ : IsRapidDatum z
+hy : IsRapidDatum y
+hs : 1 + negCount s' = Fintype.card p + negCount t✝ + negCount u✝
+hn : 2 ∣ Fintype.card n
+f : Std E (RingHom.id ℂ) (homSigns u✝ s) (homSigns s (-u✝)) := flipCoords ⋯ ⋯
+this✝ : IsRapidDatum (f.realMap y)
+w✝¹ : ℂ
+x : fockSpace (realSigns E (homSigns (hypSigns b ⊕ᵥ (hypSigns Unit ⊕ᵥ s')) (-u✝ ⊕ᵥ (hypSigns Unit ⊕ᵥ s'))))
+u : PairFock E (hypSigns b ⊕ᵥ (hypSigns Unit ⊕ᵥ s')) (-u✝)
+H✝ :
+  StdExchange (hypSum b (hypSum Unit X)) ((flipSpace U).sum (hypSum Unit X)) (flipSpace U) μ
+    (Equiv.sumAssoc b b ((Unit ⊕ Unit) ⊕ m)).symm x u fun x ↦ equalRankThetaRatio (hypSum Unit X) x z
+a✝ : IsRapidDatum ((realSlice (removePlanes b (hypSum Unit X)).symm (flipSpace U) 0) u)
+e :
+  (realSlice A.symm.symm (flipSpace U) 0) ((realSlice (removePlanes b (hypSum Unit X)).symm (flipSpace U) 0) u) =
+    f.realMap y
+w✝ : ℕ
+k : Fintype.card n = 2 * w✝
+rv : IsRapidDatum (⋯.choose x)
+h✝¹ : IsRapidDatum (f.realMap y)
+C : ℝ
+c : SplitTameChar E μ → ℂ
+h✝ :
+  ∀ (𝔠 : SplitTameChar E μ),
+    C * ‖c 𝔠‖ ^ 2 =
+      lValueProdInt 𝔠 (↑(Fintype.card r✝) - ↑(Fintype.card n) / 2) * (fun x ↦ equalRankThetaRatio (hypSum Unit X) x z) 𝔠
+K :
+  ∀ (𝔠 : SplitTameChar E μ) (z_1 : Matrix b n (LocProd 𝔠.S)),
+    IsIntMatrix SemilocalField.O z_1 →
+      thetaLarge W V 𝔠 (⋯.choose x) (stdRowDatum σ 𝔠.χ z_1) =
+        c 𝔠 • thetaSmall W (flipSpace U) 𝔠 (f.realMap y) (stdColDatum 𝔠.χ z_1)
+𝔠 : SplitTameChar E μ
+t : (↥SemilocalField.O)ˣ := (Units.map ↑((evalPlaces 𝔠.S).restrict (Ô E) SemilocalField.O ⋯)) Weil.normNegOne
+d : ℂ
+hd : ‖d‖ = 1
+H :
+  ∀ (a' : AutChar E) (f : 𝒮 (U.hom W)) (g : G E u✝) (h : G E s) (g' : G E (-u✝)),
+    g'.mat = G.mat 1 * g.mat →
+      pairTheta W (flipSpace U) ((rankTwist 𝔠.ν⁻¹ n)⁻¹ * WeilData.upsilonU1 ^ Fintype.card n)
+          (a'⁻¹ * WeilData.upsilonU1 ^ Fintype.card b) ((flipCoords ⋯ ⋯).map f) (h, g') =
+        d * pairTheta U W a' (rankTwist 𝔠.ν⁻¹ n) f (g, h)
+r : ReadsAt (↑𝔠.S) (evalPlaces 𝔠.S) := SplitTameChar.readsAt 𝔠
+a : Matrix b n ((i : ↥𝔠.S) → LocField ↑i)
+ha : IsIntMatrix SemilocalField.O a
+g : G E s
+Ψ : Matrix n b ((i : ↥𝔠.S) → LocField ↑i) → ℂ := stdColDatum 𝔠.χ a
+P : IsPartner SemilocalField.O σ 𝔠.χ (stdRowDatum σ 𝔠.χ a) (stdColDatum 𝔠.χ a)
+hΨ : stdColDatum 𝔠.χ a ∈ schwartzBruhat HasLeftInv
+this :
+  localDatum W (flipSpace U) (f.realMap y) (fun x ↦ Ψ xᵀ) ⋯ = 𝔠.χ ↑↑t ^ Fintype.card b • f.map (localDatum U W y Ψ r)
+⊢ ∫ (h : G E t✝),
+      (↑(↑𝔠.ν (G.det h)))⁻¹ * ↑(↑WeilData.upsilonU1 (G.det h)) ^ w✝ *
+        (((W.hom V).ω (G.onHom (g, h))) (localDatum W V (⋯.choose x) (stdRowDatum σ 𝔠.χ a) ⋯)) 0 ∂V.quotMeasure =
+    ∫ (a_1 : G E u✝),
+      (↑(↑𝔠.ν (G.det g)))⁻¹ * ↑(↑WeilData.upsilonU1 (G.det g)) ^ w✝ *
+        (c 𝔠 *
+          (𝔠.χ ↑↑t ^ Fintype.card b *
+            (↑(↑𝔠.ν (G.det a_1)) * ↑(↑WeilData.upsilonU1 (G.det a_1)) ^ w✝ *
+                (↑(↑WeilData.upsilonU1 (G.det g)) ^ Fintype.card b)⁻¹ *
+              (((W.hom (flipSpace U)).ω (G.onHom (g, G.neg a_1))) (f.map (localDatum U W y (stdColDatum 𝔠.χ a) r)))
+                0))) ∂U.quotMeasure
+
+case e'_3
+E : Type
+inst✝⁹ : Field E
+inst✝⁸ : CMType E
+inst✝⁷ : WeilData E
+n m r✝ p b : Type
+inst✝⁶ : Fintype n
+inst✝⁵ : Fintype m
+inst✝⁴ : Fintype r✝
+inst✝³ : Fintype p
+inst✝² : Fintype b
+s : n → ℤˣ
+s' : m → ℤˣ
+t✝ : r✝ → ℤˣ
+u✝ : b → ℤˣ
+W : Space E n s
+X : Space E m s'
+U : Space E b u✝
+μ : NumberField.InfinitePlace E → ℤ
+inst✝¹ : Nonempty p
+A : (hypSum Unit X).Splitting W p
+inst✝ : IsBaseAdapted A
+V : Space E r✝ t✝
+σ : b ⊕ r✝ ≃ n
+z : fockSpace (realSigns E (homSigns (hypSigns Unit ⊕ᵥ s') (hypSigns Unit ⊕ᵥ s')))
+y : fockSpace (realSigns E (homSigns u✝ s))
+r₁ : IsRapidDatum z
+hy : IsRapidDatum y
+hs : 1 + negCount s' = Fintype.card p + negCount t✝ + negCount u✝
+hn : 2 ∣ Fintype.card n
+f : Std E (RingHom.id ℂ) (homSigns u✝ s) (homSigns s (-u✝)) := flipCoords ⋯ ⋯
+this✝ : IsRapidDatum (f.realMap y)
+w✝¹ : ℂ
+x : fockSpace (realSigns E (homSigns (hypSigns b ⊕ᵥ (hypSigns Unit ⊕ᵥ s')) (-u✝ ⊕ᵥ (hypSigns Unit ⊕ᵥ s'))))
+u : PairFock E (hypSigns b ⊕ᵥ (hypSigns Unit ⊕ᵥ s')) (-u✝)
+H✝ :
+  StdExchange (hypSum b (hypSum Unit X)) ((flipSpace U).sum (hypSum Unit X)) (flipSpace U) μ
+    (Equiv.sumAssoc b b ((Unit ⊕ Unit) ⊕ m)).symm x u fun x ↦ equalRankThetaRatio (hypSum Unit X) x z
+a✝ : IsRapidDatum ((realSlice (removePlanes b (hypSum Unit X)).symm (flipSpace U) 0) u)
+e :
+  (realSlice A.symm.symm (flipSpace U) 0) ((realSlice (removePlanes b (hypSum Unit X)).symm (flipSpace U) 0) u) =
+    f.realMap y
+w✝ : ℕ
+k : Fintype.card n = 2 * w✝
+rv : IsRapidDatum (⋯.choose x)
+h✝¹ : IsRapidDatum (f.realMap y)
+C : ℝ
+c : SplitTameChar E μ → ℂ
+h✝ :
+  ∀ (𝔠 : SplitTameChar E μ),
+    C * ‖c 𝔠‖ ^ 2 =
+      lValueProdInt 𝔠 (↑(Fintype.card r✝) - ↑(Fintype.card n) / 2) * (fun x ↦ equalRankThetaRatio (hypSum Unit X) x z) 𝔠
+K :
+  ∀ (𝔠 : SplitTameChar E μ) (z_1 : Matrix b n (LocProd 𝔠.S)),
+    IsIntMatrix SemilocalField.O z_1 →
+      thetaLarge W V 𝔠 (⋯.choose x) (stdRowDatum σ 𝔠.χ z_1) =
+        c 𝔠 • thetaSmall W (flipSpace U) 𝔠 (f.realMap y) (stdColDatum 𝔠.χ z_1)
+𝔠 : SplitTameChar E μ
+t : (↥SemilocalField.O)ˣ := (Units.map ↑((evalPlaces 𝔠.S).restrict (Ô E) SemilocalField.O ⋯)) Weil.normNegOne
+d : ℂ
+hd : ‖d‖ = 1
+H :
+  ∀ (a' : AutChar E) (f : 𝒮 (U.hom W)) (g : G E u✝) (h : G E s) (g' : G E (-u✝)),
+    g'.mat = G.mat 1 * g.mat →
+      pairTheta W (flipSpace U) ((rankTwist 𝔠.ν⁻¹ n)⁻¹ * WeilData.upsilonU1 ^ Fintype.card n)
+          (a'⁻¹ * WeilData.upsilonU1 ^ Fintype.card b) ((flipCoords ⋯ ⋯).map f) (h, g') =
+        d * pairTheta U W a' (rankTwist 𝔠.ν⁻¹ n) f (g, h)
+r : ReadsAt (↑𝔠.S) (evalPlaces 𝔠.S) := SplitTameChar.readsAt 𝔠
+a : Matrix b n ((i : ↥𝔠.S) → LocField ↑i)
+ha : IsIntMatrix SemilocalField.O a
+g : G E s
+Ψ : Matrix n b ((i : ↥𝔠.S) → LocField ↑i) → ℂ := stdColDatum 𝔠.χ a
+P : IsPartner SemilocalField.O σ 𝔠.χ (stdRowDatum σ 𝔠.χ a) (stdColDatum 𝔠.χ a)
+hΨ : stdColDatum 𝔠.χ a ∈ schwartzBruhat HasLeftInv
+this :
+  localDatum W (flipSpace U) (f.realMap y) (fun x ↦ Ψ xᵀ) ⋯ = 𝔠.χ ↑↑t ^ Fintype.card b • f.map (localDatum U W y Ψ r)
+⊢ ∫ (a_1 : G E u✝),
+      c 𝔠 * 𝔠.χ ↑↑t ^ Fintype.card b *
+        ((↑(↑WeilData.upsilonU1 (G.det a_1)) ^ w✝)⁻¹ * ↑(↑𝔠.ν (G.det a_1)) *
+              ↑(↑WeilData.upsilonU1 (G.det a_1)) ^ (2 * w✝) *
+            ((↑(↑WeilData.upsilonU1 (G.det g)) ^ Fintype.card b)⁻¹ *
+              ((↑(↑𝔠.ν (G.det g)))⁻¹ * ↑(↑WeilData.upsilonU1 (G.det g)) ^ w✝)) *
+          (((W.hom (flipSpace U)).ω (G.onHom (g, G.neg a_1)))
+              ((flipCoords ⋯ ⋯).map (localDatum U W y (stdColDatum 𝔠.χ a) ⋯)))
+            0) ∂U.quotMeasure =
+    ∫ (a_1 : G E u✝),
+      (↑(↑𝔠.ν (G.det g)))⁻¹ * ↑(↑WeilData.upsilonU1 (G.det g)) ^ w✝ *
+        (c 𝔠 *
+          (𝔠.χ ↑↑t ^ Fintype.card b *
+            (↑(↑𝔠.ν (G.det a_1)) * ↑(↑WeilData.upsilonU1 (G.det a_1)) ^ w✝ *
+                (↑(↑WeilData.upsilonU1 (G.det g)) ^ Fintype.card b)⁻¹ *
+              (((W.hom (flipSpace U)).ω (G.onHom (g, G.neg a_1))) (f.map (localDatum U W y (stdColDatum 𝔠.χ a) r)))
+                0))) ∂U.quotMeasure
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:135:32: warning: This simp argument is unused:
+  starRingEnd_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vecToMat, funext_iff, mul_left_comm, star_idem, Set.conjClosure, ← ext_iff, field, t]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:135:68: warning: This simp argument is unused:
+  ← ext_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vecToMat, funext_iff, mul_left_comm, star_idem, starRingEnd_apply, Set.conjClosure, field, t]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:138:62: warning: This simp argument is unused:
+  r
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [thetaIntegral, isForm_neg_iff_and_integral_neg U (flipSpace U), pairTheta, pairWeil, rankTwist, ↓this,
+    *, ← integral_const_mul, Ψ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:212:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  |J.quotMeasure.real Set.univ| * |Z.quotMeasure.real Set.univ| *
+      ‖stdRowDatum (Equiv.sumEmpty (Fin (2 * k)) Empty) 𝔠.χ 1 ((vecToMat 0).map ⇑(evalPlaces 𝔠.S))‖ *
+    ‖(((J.hom Z).integrated x) (J.hom Z).vacElem) 0‖
+in the target expression
+  equalRankThetaRatio Y 𝔠 v₁ ^ 2 = B * C * ‖(((J.hom Z).integrated x) (J.hom Z).vacElem) 0‖ ^ 2
+
+case inr
+E n : Type
+inst✝³ : Field E
+inst✝² : CMType E
+inst✝¹ : WeilData E
+inst✝ : Fintype n
+s : n → ℤˣ
+W : Space E n s
+μ : NumberField.InfinitePlace E → ℤ
+k : ℕ
+hk : Fintype.card n = 2 * k + 2 * negCount s
+hm : ∀ (v : NumberField.InfinitePlace E), ↑k ≤ μ v
+J : Space E (Fin (2 * k)) 1 := stdSpace E (Fin (2 * k))
+X : Space E n s
+A : X.Splitting J (Fin (negCount s))
+h✝¹ : IsBaseAdapted A
+Y : Space E ((Unit ⊕ Unit) ⊕ n) (hypSigns Unit ⊕ᵥ s) := hypSum Unit X
+P : (hypSum Unit X).Splitting X Unit := removePlanes Unit X
+Q : (hypSum Unit X).Splitting J (Unit ⊕ Fin (negCount s)) := P.comp A
+Z : Space E Empty 1 := stdSpace E Empty
+o : (fun x ↦ 1) ∈ Space.rapidFunctions
+w✝ : SplitTameChar E μ
+v₁ : fockSpace (realSigns E (homSigns (hypSigns Unit ⊕ᵥ s) (hypSigns Unit ⊕ᵥ s)))
+r₁ : IsRapidDatum v₁
+B : ℝ
+y : fockSpace (realSigns E (homSigns 1 1))
+r : IsRapidDatum y
+b : SplitTameChar E μ → ℂ
+C : ℝ
+x : fockSpace (realSigns E (homSigns 1 1))
+h✝ : IsRapidDatum x
+c : SplitTameChar E μ → ℂ
+𝔠 : SplitTameChar E μ
+h : ¬equalRankThetaRatio Y w✝ v₁ = 0
+hb : ∀ (𝔠 : SplitTameChar E μ), B * ‖b 𝔠‖ ^ 2 = lValueProdInt 𝔠 (2 * ↑k - ↑k) * equalRankThetaRatio (hypSum Unit X) 𝔠 v₁
+hc : ∀ (𝔠 : SplitTameChar E μ), C * ‖c 𝔠‖ ^ 2 = lValueProdInt 𝔠 (-↑k) * equalRankThetaRatio (hypSum Unit X) 𝔠 v₁
+H :
+  ∀ (𝔠 : SplitTameChar E μ) (a : Matrix (Fin (2 * k)) (Fin (2 * k)) ((i : ↥𝔠.S) → LocField ↑i)),
+    IsIntMatrix SemilocalField.O a →
+      ∀ (a_2 : GInf E 1) (b : Gf E (Fin (2 * k))),
+        stdRowDatum (Equiv.sumEmpty (Fin (2 * k)) Empty) 𝔠.χ a ((vecToMat 0).map ⇑(evalPlaces 𝔠.S)) *
+            ∫ (a : G E 1),
+              ↑(↑(rankTwist 𝔠.ν⁻¹ (Fin (2 * k))) (G.det a)) *
+                (((J.hom Z).ω (G.onHom ((a_2, b), a))) (((J.hom Z).integrated x) (J.hom Z).vacElem)) 0 ∂Z.quotMeasure =
+          c 𝔠 *
+            ∫ (h : G E 1),
+              ↑(↑(rankTwist 𝔠.ν⁻¹ (Fin (2 * k))) (G.det (a_2, b))) * (↑(↑(rankTwist 𝔠.ν⁻¹ (Fin (2 * k))) (G.det h)))⁻¹ *
+                (((J.hom J).ω (G.onHom (h, a_2, b)))
+                    (((J.hom J).integrated y)
+                      ((((J.hom J).name ↑𝔠.S) fun x ↦
+                          if IsIntMatrix SemilocalField.O ((vecToMat x).map ⇑(evalPlaces 𝔠.S)) then
+                            if
+                                a.det * ((vecToMat x).map ⇑(evalPlaces 𝔠.S)).det ∈ SemilocalField.O ∧
+                                  ∃ s ∈ SemilocalField.O,
+                                    ∀ (a_3 : FinPlace E) (b : a_3 ∈ 𝔠.S),
+                                      s ⟨a_3, b⟩ * a.det ⟨a_3, b⟩ * ((vecToMat x).map ⇑(evalPlaces 𝔠.S)).det ⟨a_3, b⟩ =
+                                        1 then
+                              (𝔠.χ ((vecToMat x).map ⇑(evalPlaces 𝔠.S)).det)⁻¹ * (𝔠.χ a.det)⁻¹
+                            else 0
+                          else 0)
+                        (J.hom J).vacElem)))
+                  0 ∂J.quotMeasure
+T :
+  ∀ a ∈ charsTrivialOnRat E (↥(unitary (𝔸 E))) Subtype.val,
+    ∀ (φ : 𝒮 (J.hom J)),
+      ∫ (h : G E 1),
+          ∫ (g : G E 1),
+            ↑(a (G.det h)) * (((J.hom J).ω (G.onHom (g, h))) φ) 0 * (↑(a (G.det g)))⁻¹ ∂J.quotMeasure ∂J.quotMeasure =
+        ∫ (g : G E 1),
+          (∫ (a_1 : G E 1), ↑(a (G.det a_1)) * (((J.hom J).ω (G.onHom (g, a_1))) φ) 0 ∂J.quotMeasure) *
+            (↑(a (G.det g)))⁻¹ ∂J.quotMeasure
+K :
+  ∀ (a : GInf E 1) (b_1 : Gf E (Fin (2 * k))),
+    ∫ (h : G E 1),
+        ↑(↑(rankTwist 𝔠.ν⁻¹ (Fin (2 * k))) (G.det h)) *
+          (((J.hom J).ω (G.onHom ((a, b_1), h)))
+              (((J.hom J).integrated y)
+                ((((J.hom J).name ↑𝔠.S) fun x ↦
+                    stdRowDatum (Equiv.emptySum Empty (Fin (2 * k))) 𝔠.χ 0 ((vecToMat x).map ⇑(evalPlaces 𝔠.S)))
+                  (J.hom J).vacElem)))
+            0 ∂J.quotMeasure =
+      b 𝔠 * ↑(Z.quotMeasure.real Set.univ) * ↑(↑(rankTwist 𝔠.ν⁻¹ (Fin (2 * k))) (G.det (a, b_1)))
+this :
+  |J.quotMeasure.real Set.univ| * |Z.quotMeasure.real Set.univ| *
+        ‖stdRowDatum (Equiv.sumEmpty (Fin (2 * k)) Empty) 𝔠.χ 1 ((vecToMat 0).map ⇑(evalPlaces 𝔠.S))‖ *
+      ‖(((J.hom Z).integrated x) (J.hom Z).vacElem) 0‖ =
+    ‖c 𝔠‖ *
+      ‖∫ (g : G E 1),
+          (∫ (a : G E 1),
+              ↑(↑(rankTwist 𝔠.ν⁻¹ (Fin (2 * k))) (G.det a)) *
+                (((J.hom J).ω (G.onHom (g, a)))
+                    (((J.hom J).integrated y)
+                      ((((J.hom J).name ↑𝔠.S) fun x ↦
+                          if ∀ (i j : Fin (2 * k)), (evalPlaces 𝔠.S) (vecToMat x i j) ∈ SemilocalField.O then
+                            if
+                                ∀ (a : FinPlace E) (b : a ∈ 𝔠.S),
+                                  Valued.v (((vecToMat x).map ⇑(evalPlaces 𝔠.S)).det ⟨a, b⟩) = 1 then
+                              (𝔠.χ ((vecToMat x).map ⇑(evalPlaces 𝔠.S)).det)⁻¹
+                            else 0
+                          else 0)
+                        (J.hom J).vacElem)))
+                  0 ∂J.quotMeasure) *
+            (↑(↑(rankTwist 𝔠.ν⁻¹ (Fin (2 * k))) (G.det g)))⁻¹ ∂J.quotMeasure‖
+⊢ equalRankThetaRatio Y 𝔠 v₁ ^ 2 = B * C * ‖(((J.hom Z).integrated x) (J.hom Z).vacElem) 0‖ ^ 2
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:208:54: warning: This simp argument is unused:
+  stdRowDatum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp (config := { failIfUnchanged := false }) only at K this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:209:38: warning: This simp argument is unused:
+  ↓IsIntMatrix.one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [↓isIntegralUnit_iff_v_eq_one, IsIntMatrix, lift, field, univ_eq_empty, @eq_one (G ..),
+    mul_right_comm _ _⁻¹] at T K this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+@run78_equalRankThetaRatio_value : ∀ {E n : Type} [inst : Field E] [inst_1 : CMType E] [inst_2 : WeilData E]
+  [inst_3 : Fintype n] {s : n → ℤˣ} (W : Space E n s) (μ : NumberField.InfinitePlace E → ℤ) (k : ℕ),
+  Fintype.card n = 2 * k + 2 * negCount s →
+    (∀ (v : NumberField.InfinitePlace E), ↑k ≤ μ v) →
+      ∃ v, IsRapidDatum v ∧ ∃ C, C ≠ 0 ∧ ∀ (𝔠 : SplitTameChar E μ), equalRankThetaRatio (hypSum Unit W) 𝔠 v = C
+'RHCharacterBoxes77.exchange_of_standard_pairs' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'run78_equalRankThetaRatio_value' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:219:0: error: C2 replacement does not consume the standard-pair helper
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_1/C2Combined.lean:412:25: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Try this:
+  [apply] field_simp [measureReal_univ_ne_zero]
+'run79_exchange_theorem' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'run79_explicit_matching' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'run79_stdClassSum_det_modKernel_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'run79_stdClassSum_carrierXi_eq_carrierForm' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_PROPAGATED_CALLER: run79_exchange_theorem: exact type and direct edges
+C2_PROPAGATED_CALLER: run79_explicit_matching: exact type and direct edges
+C2_PROPAGATED_CALLER: run79_stdClassSum_det_modKernel_eq: exact type and direct edges
+C2_PROPAGATED_CALLER: run79_stdClassSum_carrierXi_eq_carrierForm: exact type and direct edges
+'exchange_of_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exists_equalRankThetaRatio_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdExchange_of_periods' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exchange_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'explicit_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdClassSum_det_modKernel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdClassSum_carrierXi_eq_carrierForm' depends on axioms: [propext, Classical.choice, Quot.sound]
