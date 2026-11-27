@@ -1,0 +1,8 @@
+{
+  "scope": "core-only compatibility attempt",
+  "phase": "checked_retarget",
+  "timeout_seconds": 120,
+  "observed_result": "subprocess.TimeoutExpired; no compiler acceptance report",
+  "all_checks_pass": false,
+  "full_RH_replay": false
+}

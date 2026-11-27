@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare/replay a constructor-inclusive comparison of four B2 caller roots.
+"""Prepare/replay constructor-inclusive comparisons of six or eight B2 roots.
 
 This is a local B2 frontier, never the whole RH frontier or a completion
 denominator. Reuse the authenticated exporter and verifier. A capable,
@@ -30,6 +30,8 @@ def main():
     parser.add_argument("--lean-bin", type=Path)
     parser.add_argument("--module-dir", type=Path,
                         help="Reuse the checked active_b2_energy object and its exact source receipt")
+    parser.add_argument("--fused-module-dir", type=Path,
+                        help="Also import a checked count-to-energy fusion; needs --module-dir")
     args = parser.parse_args()
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -37,7 +39,15 @@ def main():
     spec = importlib.util.spec_from_file_location("b2_kernel_graph", graph_file)
     graph = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(graph)
-    graph.ROOTS = ROOTS
+    roots = list(ROOTS)
+    prefix = "b2_active_"
+    if args.fused_module_dir:
+        native.require(args.module_dir is not None, "Fused object needs its checked base module")
+        prefix = "b2_fused_"
+        roots = [name.replace("b2_active_", prefix) for name in roots]
+        roots += ["Filling.tsum_invPowWeight_le_of_codim_le",
+                  "Filling.b2_fused_tsum_invPowWeight_le_of_codim_le"]
+    graph.ROOTS = roots
     exporter = graph.driver()
     native.require(exporter.count("import Main\n") == 1, "Changed exporter import")
     exporter = exporter.replace("import Main\n", "", 1)
@@ -60,7 +70,24 @@ def main():
             with (args.module_dir / item["name"]).open("rb") as stream:
                 native.require(hashlib.file_digest(stream, "sha256").hexdigest() == item["sha256"],
                                "B2 module artifact digest mismatch")
-        source = ("import Lean\nimport active_b2_energy\nset_option pp.fullNames true\n\n" +
+        module_name = "active_b2_energy"
+        if args.fused_module_dir:
+            fused = json.loads((args.fused_module_dir / "fused_b2_results.json").read_text())
+            native.require(fused["fused_chain_checked"] is True and fused["parts"] == config["parts"]
+                           and fused["compact"] == native.PIN and fused["mathlib"] == native.MATHLIB,
+                           "Unverified/different fused B2 module")
+            native.require(native.git_blob((args.fused_module_dir / "active_b2_fused.lean").read_bytes())
+                           == fused["source_blob"], "Changed fused source")
+            fused_object = fused["compiled_module"]
+            native.require(fused_object["name"] == "active_b2_fused" and fused_object["artifacts"],
+                           "Missing fused object")
+            for item in fused_object["artifacts"]:
+                native.require(Path(item["name"]).name == item["name"], "Unexpected fused object path")
+                with (args.fused_module_dir / item["name"]).open("rb") as stream:
+                    native.require(hashlib.file_digest(stream, "sha256").hexdigest() == item["sha256"],
+                                   "Fused object digest mismatch")
+            module_name = "active_b2_fused"
+        source = ("import Lean\nimport " + module_name + "\nset_option pp.fullNames true\n\n" +
                   exporter.replace("import Lean\n", "", 1))
     else:
         # The extra energy fragment shares its predecessor's variable context.
@@ -72,12 +99,18 @@ def main():
                    "Forbidden RH root import")
     path = out / "ActiveB2Graph.lean"
     path.write_text(source)
-    manifest = {"compact": native.PIN, "mathlib": native.MATHLIB, "roots": ROOTS,
+    scope = ("eight local fused count/pair/energy frontiers; not the full RH frontier"
+             if args.fused_module_dir else "six local B2 caller frontiers; not the full RH frontier")
+    manifest = {"compact": native.PIN, "mathlib": native.MATHLIB, "roots": roots,
                 "parts": config["parts"], "generated_source_blob": native.git_blob(source.encode()),
                 "exporter_source_blob": "ee4efebb066f6775fa551ae9104cfa973e585071",
-                "scope": "six local B2 caller frontiers; not the full RH frontier",
+                "scope": scope,
                 "checked_module_reused": module_receipt is not None,
+                "fused_chain_module_reused": args.fused_module_dir is not None,
                 "new_Lean_execution": False, "full_RH_replay": False}
+    if args.fused_module_dir:
+        manifest["fused_source_blob"] = fused["source_blob"]
+        manifest["fused_module"] = fused_object
     native.dump(out / "graph_input_manifest.json", manifest)
     if args.prepare_only:
         print(json.dumps(manifest))
@@ -103,45 +136,64 @@ def main():
         (out / "graph_environment.log").write_text(setup)
         env.update(json.loads(setup.strip().splitlines()[-1]))
         env["LEAN_PATH"] = str(args.module_dir.resolve()) + os.pathsep + env["LEAN_PATH"]
+        if args.fused_module_dir:
+            env["LEAN_PATH"] = str(args.fused_module_dir.resolve()) + os.pathsep + env["LEAN_PATH"]
         command = [str(args.lean_bin.resolve() / "lean"), "--tstack=400000", "-j", "2", path]
     else:
         command = ["lake", "env", "lean", "--tstack=400000", path]
     receipt = native.step(command, root, env, out / "local_b2_graph.log", 1200)
-    receipt.update(native.audit(out / "local_b2_graph.log", ROOTS))
+    receipt.update(native.audit(out / "local_b2_graph.log", roots))
     receipt.update(new_Lean_execution=True, full_RH_replay=False)
     native.dump(out / "graph_execution.json", receipt)
     native.require(receipt["returncode"] == 0 and receipt["axiom_audit_ok"] is True,
                    "Local B2 graph compilation/axiom checks failed")
     graph.audit_union(out / "local_b2_graph.jsonl", out, out)
-    watched = {name: None for name in ROOTS + [
-        "Filling.b2_active_outer_frameValueIndex_dvd",
-        "Filling.b2_active_inner_frameValueIndex_dvd",
-        "Filling.energy_le_of_level_lt", "Filling.b2_active_energy_le_of_level_lt"]}
+    outer = "Filling." + prefix + "outer_frameValueIndex_dvd"
+    inner = "Filling." + prefix + "inner_frameValueIndex_dvd"
+    lower = "Filling." + prefix + "energy_le_of_level_lt"
+    watched = {name: None for name in roots + [outer, inner,
+               "Filling.energy_le_of_level_lt", lower]}
+    if args.fused_module_dir:
+        watched["RHB2Fusion.skew_correction_mul"] = None
+    optional = ({name: 0 for name in config["theorems"]} if args.fused_module_dir else {})
     with (out / "root_membership.jsonl").open() as stream:
         for line in stream:
             row = json.loads(line)
             name = ".".join(str(component[1]) for component in row["id"])
             if name in watched:
                 watched[name] = row["root_mask"]
+            if name in optional:
+                optional[name] = row["root_mask"]
     native.require(all(mask is not None for mask in watched.values()),
                    "Missing caller or bridge in constructor-inclusive graph")
     new_roots = (1 << 1) | (1 << 3) | (1 << 5)
     guards = {
-        "old_pair_absent_from_all_new_roots": not (watched[ROOTS[0]] & new_roots),
-        "old_level_energy_absent_from_new_energy_roots": not (watched[ROOTS[2]] & ((1 << 3) | (1 << 5))),
-        "old_full_energy_absent_from_new_full_energy": not (watched[ROOTS[4]] & (1 << 5)),
+        "old_pair_absent_from_all_new_roots": not (watched[roots[0]] & new_roots),
+        "old_level_energy_absent_from_new_energy_roots": not (watched[roots[2]] & ((1 << 3) | (1 << 5))),
+        "old_full_energy_absent_from_new_full_energy": not (watched[roots[4]] & (1 << 5)),
         "old_lower_level_absent_from_new_full_energy":
             not (watched["Filling.energy_le_of_level_lt"] & (1 << 5)),
         "new_pair_reachable_from_new_energy_roots":
-            watched[ROOTS[1]] & ((1 << 3) | (1 << 5)) == ((1 << 3) | (1 << 5)),
+            watched[roots[1]] & ((1 << 3) | (1 << 5)) == ((1 << 3) | (1 << 5)),
         "new_lower_level_reachable_from_new_full_energy":
-            bool(watched["Filling.b2_active_energy_le_of_level_lt"] & (1 << 5)),
+            bool(watched[lower] & (1 << 5)),
         "outer_bridge_reachable_from_all_new_roots":
-            watched["Filling.b2_active_outer_frameValueIndex_dvd"] & new_roots == new_roots,
+            watched[outer] & new_roots == new_roots,
         "inner_bridge_reachable_from_all_new_roots":
-            watched["Filling.b2_active_inner_frameValueIndex_dvd"] & new_roots == new_roots,
+            watched[inner] & new_roots == new_roots,
     }
-    native.dump(out / "caller_reachability.json", {"roots": ROOTS, "membership": watched,
+    if args.fused_module_dir:
+        all_new_roots = new_roots | (1 << 7)
+        guards.update({
+            "old_count_absent_from_all_fused_roots": not (watched[roots[6]] & all_new_roots),
+            "new_count_reachable_from_all_fused_callers": watched[roots[7]] & new_roots == new_roots,
+            "skew_helper_reachable_from_all_fused_roots":
+                watched["RHB2Fusion.skew_correction_mul"] & all_new_roots == all_new_roots,
+            "unfused_active_suppliers_absent_from_all_fused_roots":
+                all(not (mask & all_new_roots) for mask in optional.values()),
+        })
+    native.dump(out / "caller_reachability.json", {"roots": roots, "membership": watched,
+                "optional_old_active_suppliers": optional,
                 "guards": guards, "all_guards_pass": all(guards.values()),
                 "constructor_inclusive": True, "full_RH_replay": False})
     native.require(all(guards.values()), "Caller graph differs from advertised dependency substitution")
