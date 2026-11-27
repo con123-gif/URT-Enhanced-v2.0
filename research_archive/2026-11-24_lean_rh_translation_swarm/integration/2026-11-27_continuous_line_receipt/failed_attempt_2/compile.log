@@ -1,0 +1,18 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_2/C2DeterminantContinuousLine.lean:37:20: error: Application type mismatch: The argument
+  letterMinor_ne_zero ?m.206 ?m.209
+has type
+  ∀ (j : ?m.201 → ?m.202), Function.Injective ?m.209 → Function.Injective j → letterMinor ?m.206 ?m.209 j ≠ 0
+but is expected to have type
+  letterMinor τ id id ≠ 0
+in the application
+  pow_ne_zero (Fintype.card (ι τ)) (letterMinor_ne_zero ?m.206 ?m.209)
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_2/C2DeterminantContinuousLine.lean:37:63: error: Application type mismatch: The argument
+  Function.injective_id
+has type
+  Function.Injective id
+of sort `Prop` but is expected to have type
+  ?m.201 → ?m.203
+of sort `Type (max ?u.156 ?u.157)` in the application
+  letterMinor_ne_zero ?m.206 Function.injective_id
+'c2_continuous_determinant_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_CONTINUOUS_LINE: one common coefficient for all invariant functionals; general matching absent directly

@@ -1,0 +1,67 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "33ca652cb1ce46d5f56cec29e13b578d72a73180",
+  "checked_input_module": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035576,
+        "sha256": "9ee60a0ff16a5f1fd6756906e050081de2b0f7afba39334b0534e436b4f46df3"
+      }
+    ]
+  },
+  "checked_interface_dependencies": [
+    {
+      "source_blob": "2bc7219f8db7e72f6cff11b4ac29c2f9a84ce261",
+      "module": {
+        "name": "C2DeterminantFixedLine",
+        "artifacts": [
+          {
+            "name": "C2DeterminantFixedLine.olean",
+            "bytes": 197656,
+            "sha256": "5f5a44c5bb1f0c50ab6aa36c909a03505e2f5df4c6b72b6a3fb8b3f7e1979d78"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+      "module": {
+        "name": "C2DeterminantWeilAction",
+        "artifacts": [
+          {
+            "name": "C2DeterminantWeilAction.olean",
+            "bytes": 236616,
+            "sha256": "2371bcc1396414d6a9df96cbdd984bae5eea36b19cab034ab41facdb7d41f53b"
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "One universal continuous invariant-functional coefficient from native polynomial determinant line and density; exact caller transport pending",
+  "theorems": [
+    "c2_continuous_determinant_line"
+  ],
+  "full_RH_replay": false,
+  "native_source_build_performed": false,
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000",
+    "-Dpp.fullNames=true",
+    "-Ddebug.skipKernelTC=false",
+    "-j",
+    "2",
+    "-R",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_1",
+    "-o",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_1/C2DeterminantContinuousLine.olean",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_1/C2DeterminantContinuousLine.lean"
+  ]
+}

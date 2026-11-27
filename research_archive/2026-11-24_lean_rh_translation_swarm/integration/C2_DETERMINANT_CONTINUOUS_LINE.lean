@@ -32,7 +32,10 @@ lemma c2_continuous_determinant_line
   let vD := polyVector (realSigns E (homSigns (1 : n → ℤˣ) (1 : n → ℤˣ))) D
   let S := {ℓ : PairFock E (1 : n → ℤˣ) (1 : n → ℤˣ) →L[ℂ] ℂ //
     ∀ u w, ℓ (realPairWeil (fun τ ↦ -(card (ι τ) : ℤ)) 0 (1, u) w) = ℓ w}
-  have hD : D ≠ 0 := by simp [D, c2_det_poly, -letterMinor]
+  have hD : D ≠ 0 := by
+    change (∏ τ, letterMinor τ (id : n → n) id ^ card (ι τ)) ≠ 0
+    exact Finset.prod_ne_zero_iff.mpr fun τ _ ↦
+      pow_ne_zero _ (letterMinor_ne_zero τ id id Function.injective_id Function.injective_id)
   have hstar : MvPolynomial.map (starRingEnd ℂ) D = D := by
     simp [D, c2_det_poly, letterMinor, det_apply]
   have hden : fockPairing ℂ D D ≠ 0 := by
@@ -41,7 +44,10 @@ lemma c2_continuous_determinant_line
       (fun ℓ : S ↦ ℓ.1 w) ∈ Set.range (fun κ : ℂ ↦ κ • (fun ℓ : S ↦ ℓ.1 vD)) := by
     apply isClosed_property denseRange_polyVector
       ((isClosedMap_smul_left (fun ℓ : S ↦ ℓ.1 vD)).isClosed_range.preimage_of_continuous
-        (f := fun w ℓ ↦ ℓ.1 w) (by fun_prop))
+        (f := fun w ℓ ↦ ℓ.1 w) (by
+          apply continuous_pi
+          intro ℓ
+          exact ℓ.1.continuous))
     intro P
     use fockPairing ℂ P D / fockPairing ℂ D D
     ext ℓ

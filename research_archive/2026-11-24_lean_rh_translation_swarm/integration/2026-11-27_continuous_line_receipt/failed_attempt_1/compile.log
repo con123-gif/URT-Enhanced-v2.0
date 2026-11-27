@@ -1,0 +1,24 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_1/C2DeterminantContinuousLine.lean:35:46: warning: `letterMinor` does not have the `[simp]` attribute
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_1/C2DeterminantContinuousLine.lean:35:21: error: unsolved goals
+E n : Type
+inst✝³ : Field E
+inst✝² : NumberField E
+inst✝¹ : Fintype n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+v : PairFock E 1 1
+D : MvPolynomial (NumberField.InfinitePlace E × n × n) ℂ := c2_det_poly ι
+vD : fockSpace (realSigns E (homSigns 1 1)) := (polyVector (realSigns E (homSigns 1 1))) D
+S : Type :=
+  { ℓ // ∀ (u : GInf E 1) (w : PairFock E 1 1), ℓ (((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, u)) w) = ℓ w }
+⊢ ¬∏ τ, letterMinor τ id id ^ Fintype.card (ι τ) = 0
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_continuous_line_1/C2DeterminantContinuousLine.lean:44:35: error: Application type mismatch: The argument
+  i
+has type
+  S
+but is expected to have type
+  Subtype ?p
+in the application
+  ↑i
+'c2_continuous_determinant_line' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_CONTINUOUS_LINE: one common coefficient for all invariant functionals; general matching absent directly
