@@ -1,0 +1,29 @@
+{
+  "status": "WHOLE_SOURCE_KERNEL_PASS_NOT_OFFICIAL_ACCEPTANCE",
+  "commit": "91d229e3cd1dcbcca0fc684fd93743067701a7f5",
+  "run_id": 46067781887,
+  "statement_sha256": "3d57c86dc80ab0ffdf3a012182ad8d2963db5e0a17b88775719a683fb088b76a",
+  "proof_sha256": "874ace929fd11249784a314383812d296d09066c255b0441b353eba0207f1878",
+  "probe_sha256": "a7df31c55fa88ee832cfa2c1d71ccbdd186656d2cc8f0080c560f7e9bd0d8ada",
+  "public_probe_byte_equal": true,
+  "canonical_proof_body_exactly_embedded": true,
+  "official_acceptance": false,
+  "job_id": 140737180507,
+  "artifact_id": 15230903891,
+  "artifact_sha256": "47e220694173fc6d58b062417140417ffb5642b7672b7f6bcee77d7c5441a206",
+  "artifact_digest_matches_github": true,
+  "exit": 0,
+  "all_error_forms_checked": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "errors": [],
+  "full_problem_proved": true,
+  "theorem": "OMA.solution",
+  "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "prior_limitation": "Related Miller2012 email explicitly unread after retrieval failures; no historical-priority assertion."
+}
