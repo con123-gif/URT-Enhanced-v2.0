@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 18.91,
+  "tail": "{\"scope\": \"Lean 4.35 core proof-transport controls only\", \"release_sha256\": \"7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d\", \"native_source_build_performed\": false, \"B2_replayed\": false, \"full_RH_replay\": false, \"steps\": {\"download\": {\"returncode\": 0, \"seconds\": 2.82, \"log\": \"download.log\"}, \"extract\": {\"returncode\": 0, \"seconds\": 11.24, \"log\": \"extract.log\"}, \"controls\": {\"returncode\": 0, \"seconds\": 1.72, \"log\": \"controls_driver.log\"}}, \"all_requested_checks_ok\": true, \"controls_receipt\": {\"lean_version\": \"Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)\", \"scope\": \"core-only proof retargeting compatibility\", \"B2_replayed\": false, \"full_RH_replay\": false, \"cases\": {\"checked_retarget\": {\"returncode\": 0, \"seconds\": 0.82, \"log\": \"checked_retarget.log\", \"source_sha256\": \"b5abad461e02d77876874962725c4442aa97fb3eeef8000ee57e9f651220ebe8\"}, \"reject_ill_typed_proof\": {\"returncode\": 1, \"seconds\": 0.77, \"log\": \"reject_ill_typed_proof.log\", \"source_sha256\": \"563f87c5659a0a164fa69125eb8c0c1f9414a79fa23e2e62b88a02a44c280d2b\"}}, \"all_checks_pass\": true}}\n",
+  "id": "rh-lean435-transport-core-lift-20261127",
+  "question": "Core-only retry with the documented Command.liftCoreM around normal checked addDecl. Require a valid retarget accepted with no axioms and the deliberately wrong proof rejected by the kernel-specific declaration type mismatch, retaining both logs. No GRH checkout, Mathlib download or source build; no B2, C2 or RH claim.",
+  "requested_by": "GPT active continuous work, user directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_lean435_transport_controls.py --out {out}",
+  "utc": "2026-11-27T15:12:14Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "0b137d3323218147dbca9a84ca9e1e9f23d06bce",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46022635354",
+  "outputs_committed": [
+    {
+      "path": "controls/checked_retarget.lean",
+      "bytes": 1239,
+      "sha256": "b5abad461e02d77876874962725c4442aa97fb3eeef8000ee57e9f651220ebe8"
+    },
+    {
+      "path": "controls/checked_retarget.log",
+      "bytes": 77,
+      "sha256": "fb815d469d04b991bbe7af2958caf65387ba1249744a58a51be0b7397f31dbd3"
+    },
+    {
+      "path": "controls/compatibility_results.json",
+      "bytes": 705,
+      "sha256": "bcf01293ac4ecf4336536c7639dbf215032d11d54881fc91b4e3740782ee2a2b"
+    },
+    {
+      "path": "controls/reject_ill_typed_proof.lean",
+      "bytes": 346,
+      "sha256": "563f87c5659a0a164fa69125eb8c0c1f9414a79fa23e2e62b88a02a44c280d2b"
+    },
+    {
+      "path": "controls/reject_ill_typed_proof.log",
+      "bytes": 240,
+      "sha256": "2ed059daad5aa6537588171a8fc7a397fda298ce440c8f6fc06d40e10b965856"
+    },
+    {
+      "path": "controls_driver.log",
+      "bytes": 619,
+      "sha256": "d0e228a511918e4cd47b954395682cd971a2dc4093efacf047887ea3ff57ddae"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "a8800faa4b4ac827c9987dc73df066958fd0661186343235e5e936e910ba2612"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shared_core_results.json",
+      "bytes": 1366,
+      "sha256": "c4eeeaf223a34e1376487efe6fd8a59750a0f384a44993f7edc11df1ae15f1da"
+    }
+  ],
+  "outputs_artifact_only": []
+}
