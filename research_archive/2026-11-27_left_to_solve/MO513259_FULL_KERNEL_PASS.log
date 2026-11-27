@@ -1,0 +1,808 @@
+CampaignProbe.lean:30:8: warning: declaration uses `sorry`
+CampaignProbe.lean:112:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.copyCol_rowShear`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:119:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.copyCol_copyRow`:
+  [Fintype I]
+  [CommSemiring R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [CommSemiring R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:241:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.quadratic_zero_mod_two`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:325:12: warning: This simp argument is unused:
+  Matrix.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:350:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+CampaignProbe.lean:428:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+CampaignProbe.lean:431:6: warning: Try `simp at he` instead of `simpa using he`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+CampaignProbe.lean:439:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.offdiagonal_pivot_det_unit`:
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:567:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.DetShear.inverseShear_apply`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:587:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.DetShear.Z_symm`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:598:63: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+CampaignProbe.lean:598:63: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+CampaignProbe.lean:619:61: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Matrix.single_apply, Matrix.updateRow_apply, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:635:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.DetShear.map_Z`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:640:17: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Z, Matrix.diag_apply, map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:640:59: warning: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Z, Matrix.diagonal_apply, Matrix.diag_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:699:39: warning: This simp argument is unused:
+  Matrix.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [N, K, c, inverseShear_apply, ha, hb, Ne.symm ha, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:854:32: warning: This simp argument is unused:
+  hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, hij.symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:885:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.rows_submatrix_mul`:
+  [Fintype J]
+  [DecidableEq I]
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype J] [DecidableEq I] [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:889:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.rows_submatrix_mul_selector`:
+  [Fintype J]
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype J] [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:919:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.coordinateRowReplacement_selected`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:924:85: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+CampaignProbe.lean:924:85: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+CampaignProbe.lean:926:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.coordinateRowReplacement_unselected`:
+  [Fintype I]
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:972:27: warning: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1105:6: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [forceTwoRows, Matrix.transpose_apply, Matrix.updateRow_apply, hj, hj.symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1105:27: warning: This simp argument is unused:
+  hj.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [forceTwoRows, Matrix.transpose_apply, Matrix.updateRow_apply, Pi.single_apply, hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1108:6: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [forceTwoRows, Matrix.transpose_apply, Matrix.updateRow_apply, hij, hij.symm, hi, Ne.symm hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1108:28: warning: This simp argument is unused:
+  hij.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [forceTwoRows, Matrix.transpose_apply, Matrix.updateRow_apply, Pi.single_apply, hij, hi, Ne.symm hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1108:42: warning: This simp argument is unused:
+  Ne.symm hi
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [forceTwoRows, Matrix.transpose_apply, Matrix.updateRow_apply, Pi.single_apply, hij, hij.symm, hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1119:55: warning: This simp argument is unused:
+  hij.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [forceTwoRows, Matrix.submatrix_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1122:57: warning: This simp argument is unused:
+  hij.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [forceTwoRows, Matrix.submatrix_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1146:36: warning: This simp argument is unused:
+  hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, hij.symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1201:81: warning: This simp argument is unused:
+  hij.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, Matrix.one_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1202:63: warning: This simp argument is unused:
+  hij.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, hij, Pi.single_apply, Matrix.one_apply, hb, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1203:10: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, hij, hij.symm, Matrix.one_apply, hb, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1210:78: warning: This simp argument is unused:
+  hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, Matrix.one_apply, hij.symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1210:83: warning: This simp argument is unused:
+  hij.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, Matrix.one_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1211:60: warning: This simp argument is unused:
+  hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, hij.symm, Pi.single_apply, Matrix.one_apply, hb, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1211:65: warning: This simp argument is unused:
+  hij.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, hij, Pi.single_apply, Matrix.one_apply, hb, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1212:12: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, hij, hij.symm, Matrix.one_apply, hb, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1212:29: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [keys, forceTwoRows, Matrix.updateRow_apply, hij, hij.symm, Pi.single_apply, hb, Ne.symm hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1223:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.map_forceTwoRows`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:1232:12: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1232:32: warning: This simp argument is unused:
+  Ne.symm h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1308:60: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+CampaignProbe.lean:1369:36: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, Pi.single_apply, ha, hb, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1370:8: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, Matrix.updateCol_apply, ha, hb, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1370:33: warning: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, Matrix.updateCol_apply, Pi.single_apply, ha, hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1384:12: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hp, Ne.symm hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1384:33: warning: This simp argument is unused:
+  Ne.symm hp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1440:10: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [C, P, forceTwoCols, forceTwoRows, Matrix.updateRow_apply, Pi.single_apply, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1443:56: warning: This simp argument is unused:
+  Ne.symm hrs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, forceTwoRows, Matrix.updateRow_apply, hrs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1451:12: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply, hrs, Ne.symm hrs, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1451:36: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateCol_apply, hrs, Ne.symm hrs, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1451:53: warning: This simp argument is unused:
+  hrs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateCol_apply, Pi.single_apply, Ne.symm hrs, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1451:76: warning: This simp argument is unused:
+  Ne.symm hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateCol_apply, Pi.single_apply, hrs, Ne.symm hrs, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1452:12: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ha, hPs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1462:45: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [C, forceTwoCols, Matrix.col_apply, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1462:74: warning: This simp argument is unused:
+  Ne.symm hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [C, forceTwoCols, Matrix.col_apply, Matrix.updateCol_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1465:45: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [C, forceTwoCols, Matrix.col_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1470:54: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.col_apply, Matrix.updateRow_apply, hrs, Ne.symm hrs, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1471:13: warning: This simp argument is unused:
+  Ne.symm hrs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.col_apply, Matrix.updateRow_apply, Pi.single_apply, hrs, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1471:26: warning: This simp argument is unused:
+  hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.col_apply, Matrix.updateRow_apply, Pi.single_apply, hrs, Ne.symm hrs, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1482:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.forceTwoRows_transpose_eq_cols`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:1532:14: warning: This simp argument is unused:
+  erasePairVertex
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1614:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.forceTwoRows_copyCol_external`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:1620:61: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [forceTwoRows, copyCol, Matrix.updateRow_apply, Matrix.col_apply, Pi.single_apply, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1678:19: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.col_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1680:19: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.col_apply, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1680:43: warning: This simp argument is unused:
+  Matrix.col_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.updateCol_apply, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1680:61: warning: This simp argument is unused:
+  hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.updateCol_apply, Matrix.col_apply, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1729:21: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.col_apply, hki, Ne.symm hki]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1729:45: warning: This simp argument is unused:
+  Matrix.col_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.updateCol_apply, hki, Ne.symm hki]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1729:68: warning: This simp argument is unused:
+  Ne.symm hki
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.updateCol_apply, Matrix.col_apply, hki]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1731:21: warning: This simp argument is unused:
+  Matrix.updateCol_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.col_apply, hli, Ne.symm hli]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1731:45: warning: This simp argument is unused:
+  Matrix.col_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.updateCol_apply, hli, Ne.symm hli]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:1731:68: warning: This simp argument is unused:
+  Ne.symm hli
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [copyCol, Matrix.updateCol_apply, Matrix.col_apply, hli]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2029:53: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, forceTwoRows, Matrix.updateRow_apply, hij, Ne.symm hij, hkj, Ne.symm hkj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2030:13: warning: This simp argument is unused:
+  Ne.symm hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, forceTwoRows, Matrix.updateRow_apply, Pi.single_apply, hij, hkj, Ne.symm hkj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2030:26: warning: This simp argument is unused:
+  hkj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, forceTwoRows, Matrix.updateRow_apply, Pi.single_apply, hij, Ne.symm hij, Ne.symm hkj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2032:53: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, forceTwoRows, Matrix.updateRow_apply, hlj, Ne.symm hlj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2032:70: warning: This simp argument is unused:
+  hlj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [P, forceTwoRows, Matrix.updateRow_apply, Pi.single_apply, Ne.symm hlj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2103:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.externalInverseKernel_symm`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2113:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.four_pfaffian_repeat_zero`:
+  [Fintype I]
+  [LinearOrder I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [LinearOrder I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2377:23: warning: This simp argument is unused:
+  Fin.succAbove_right_inj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [C, H, Matrix.submatrix_apply, Matrix.updateRow_apply, Pi.single_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2469:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.DetFirstOrder.multilinear_high_order_zero`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2537:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.OddHollow.skewLift_skew`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2546:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.OddHollow.skewLift_add_twice_lower`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2556:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.OddHollow.cast_two_skewLift`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2659:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.OddHollowEight.map_integerLift`:
+  [Fintype I]
+  [LinearOrder I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [LinearOrder I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2662:21: warning: This simp argument is unused:
+  ZMod.natCast_zmod_val
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [integerLift]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2664:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.OddHollowEight.integerLift_symm`:
+  [Fintype I]
+  [LinearOrder I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [LinearOrder I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2670:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.OddHollowEight.integerLift_diag`:
+  [Fintype I]
+  [LinearOrder I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [LinearOrder I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2899:31: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.fromBlocks_transpose, Matrix.transpose_one, Matrix.transpose_zero, Matrix.transpose_neg,
+    Matrix.transpose_mul, hP.inv.eq, hCB, Matrix.fromBlocks_multiply, Matrix.one_mul, Matrix.mul_one, Matrix.zero_mul,
+    Matrix.mul_zero, add_zero, Matrix.neg_mul, Matrix.mul_neg, hcancel, hcancel', neg_add_cancel, add_neg_cancel,
+    sub_eq_add_neg, neg_zero, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2900:23: warning: This simp argument is unused:
+  neg_add_cancel
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.fromBlocks_transpose, Matrix.transpose_one, Matrix.transpose_zero, Matrix.transpose_neg,
+    Matrix.transpose_mul, hP.inv.eq, hCB, Matrix.fromBlocks_multiply, Matrix.one_mul, Matrix.mul_one, Matrix.zero_mul,
+    Matrix.mul_zero, add_zero, zero_add, Matrix.neg_mul, Matrix.mul_neg, hcancel, hcancel', add_neg_cancel,
+    sub_eq_add_neg, neg_zero, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:2910:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.BlockSchur.top_left_symm`:
+  [Fintype I]
+  [DecidableEq I]
+  [Fintype J]
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] [Fintype J] [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2914:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.BlockSchur.lower_transpose_upper`:
+  [Fintype I]
+  [DecidableEq I]
+  [Fintype J]
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] [Fintype J] [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:2927:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.BlockSchur.congruence_symm`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:3011:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.LowerUnipotent.unipotent_zero`:
+  [Fintype I]
+  [Fintype J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:3019:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.LowerUnipotent.unipotent_single`:
+  [Fintype I]
+  [Fintype J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:3368:8: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+CampaignProbe.lean:3371:8: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+CampaignProbe.lean:3441:0: warning: automatically included section variable(s) unused in theorem `OMA.MO513259.InverseShear.transpose_transvection`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+CampaignProbe.lean:3528:40: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, Matrix.sub_apply, Matrix.diag_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3531:6: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, Matrix.sub_apply, Matrix.submatrix_apply, Matrix.diag_apply, h, he]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3531:29: warning: This simp argument is unused:
+  Matrix.diag_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, Matrix.sub_apply, Matrix.submatrix_apply, Matrix.diagonal_apply, h, he]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3590:42: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, Matrix.sub_apply, Matrix.diag_apply, evenTwo]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3667:30: warning: `Equiv.apply_eq_iff_eq_symm_apply` has been deprecated: Use `Equiv.eq_symm_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Sort u_1} {β : Sort u_2} (e : α ≃ β) {x : β} {y : α}, y = e.symm x ↔ e y = x
+instead of
+  ∀ {α : Sort u} {β : Sort v} {x : α} {y : β} (f : α ≃ β), f x = y ↔ x = f.symm y
+CampaignProbe.lean:3740:38: warning: This simp argument is unused:
+  Function.update_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3743:38: warning: This simp argument is unused:
+  Function.update_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3749:46: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+CampaignProbe.lean:3756:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+CampaignProbe.lean:3765:24: warning: This simp argument is unused:
+  Function.update_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [flip, hj i]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3909:27: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, D, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3909:55: warning: This simp argument is unused:
+  Ne.symm hij
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, D, Matrix.diagonal_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3908:38: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+CampaignProbe.lean:3908:38: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+CampaignProbe.lean:3962:27: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, C, hij, eq_comm, map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3962:55: warning: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, C, Matrix.diagonal_apply, hij, map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3962:64: warning: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [DetShear.Z, C, Matrix.diagonal_apply, hij, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CampaignProbe.lean:3941:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'OMA.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
