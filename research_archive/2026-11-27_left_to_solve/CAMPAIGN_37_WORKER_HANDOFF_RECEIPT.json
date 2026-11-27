@@ -31,8 +31,9 @@
       "enabled": true,
       "schedule_unchanged": true,
       "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T064800\nRRULE:FREQ=HOURLY\nEND:VEVENT",
-      "updated_at": "2026-11-27T23:45:36.437711+00:00",
-      "primary_lane": "PRIMARY LANE: Finish verified contributions through their actual official proof checker, merge and credit. Watch registrations for real merges and immediately run the exact imported target and submit the complete proof when your lane owns it. Do not stop at a verification handoff when submission remains authorized and feasible."
+      "updated_at": "2026-11-27T23:48:59.108571+00:00",
+      "primary_lane": "PRIMARY LANE: Finish verified contributions through their actual official proof checker, merge and credit. Watch registrations for real merges and immediately run the exact imported target and submit the complete proof when your lane owns it. Do not stop at a verification handoff when submission remains authorized and feasible.",
+      "protocol521_included": true
     },
     {
       "id": "6b098003b0ec8191946156658922cab5",
@@ -41,8 +42,9 @@
       "enabled": true,
       "schedule_unchanged": true,
       "original_schedule": "BEGIN:VEVENT\nDTSTART:20261127T130507Z\nRRULE:FREQ=HOURLY;BYMINUTE=24\nEND:VEVENT",
-      "updated_at": "2026-11-27T23:45:39.207857+00:00",
-      "primary_lane": "PRIMARY LANE: Solve fresh genuine open questions across fields. Prefer complete exact arguments and counterexamples over accumulating partial reductions. Continue promising unfinished work from its current durable checkpoint."
+      "updated_at": "2026-11-27T23:49:01.598000+00:00",
+      "primary_lane": "PRIMARY LANE: Solve fresh genuine open questions across fields. Prefer complete exact arguments and counterexamples over accumulating partial reductions. Continue promising unfinished work from its current durable checkpoint.",
+      "protocol521_included": true
     },
     {
       "id": "6a84a2b8aae481918ede3d15a5d14a17",
@@ -51,8 +53,9 @@
       "enabled": true,
       "schedule_unchanged": true,
       "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T073600\nRRULE:FREQ=HOURLY\nEND:VEVENT",
-      "updated_at": "2026-11-27T23:45:41.583646+00:00",
-      "primary_lane": "PRIMARY LANE: Algebra, combinatorial identities and recurrences. Use independently defined formulas, cancellation and invariants. Avoid indefinitely adding congruence filters to A113257 without a route to its full question. MO309485 research lease is closed; the remaining exact-target proof submission follows the shared authorized pipeline after real merge."
+      "updated_at": "2026-11-27T23:49:04.211404+00:00",
+      "primary_lane": "PRIMARY LANE: Algebra, combinatorial identities and recurrences. Use independently defined formulas, cancellation and invariants. Avoid indefinitely adding congruence filters to A113257 without a route to its full question. MO309485 research lease is closed; the remaining exact-target proof submission follows the shared authorized pipeline after real merge.",
+      "protocol521_included": true
     },
     {
       "id": "Automation_2fe7f6d540288191bda0795b87d1cbe6",
@@ -61,8 +64,9 @@
       "enabled": true,
       "schedule_unchanged": true,
       "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T071200\nRRULE:FREQ=HOURLY\nEND:VEVENT",
-      "updated_at": "2026-11-27T23:45:44.080378+00:00",
-      "primary_lane": "PRIMARY LANE: Fresh number theory, exact divisibility and computational counterexamples. A385478 research lease is closed; exact-target proof submission follows the shared authorized pipeline after real merge. Seek complete proofs with genuinely unresolved source assertions; inspect all related sequences and proposed revision discussions before expensive formalization."
+      "updated_at": "2026-11-27T23:49:06.846401+00:00",
+      "primary_lane": "PRIMARY LANE: Fresh number theory, exact divisibility and computational counterexamples. A385478 research lease is closed; exact-target proof submission follows the shared authorized pipeline after real merge. Seek complete proofs with genuinely unresolved source assertions; inspect all related sequences and proposed revision discussions before expensive formalization.",
+      "protocol521_included": true
     },
     {
       "id": "6b05350b72508191ab727cf378b9f638",
@@ -71,9 +75,38 @@
       "enabled": true,
       "schedule_unchanged": true,
       "original_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/London:20261124T075200\nRRULE:FREQ=HOURLY\nEND:VEVENT",
-      "updated_at": "2026-11-27T23:45:46.600926+00:00",
-      "primary_lane": "PRIMARY LANE: Fresh matrix, spectral and combinatorial questions. Reconstruct numerical discoveries exactly and prove all source hypotheses. MO235344 and MO310296 have earlier complete mathematical solutions; do not spend more time formalizing them for the new-open target."
+      "updated_at": "2026-11-27T23:49:09.527279+00:00",
+      "primary_lane": "PRIMARY LANE: Fresh matrix, spectral and combinatorial questions. Reconstruct numerical discoveries exactly and prove all source hypotheses. MO235344 and MO310296 have earlier complete mathematical solutions; do not spend more time formalizing them for the new-open target.",
+      "protocol521_included": true
     }
   ],
-  "execution_limits": "Only enabled configuration and successful prompt updates are established. This receipt does not assert future execution, proof acceptance, novelty, or uninterrupted interactive work."
+  "execution_limits": "Only enabled configuration and successful prompt updates are established. This receipt does not assert future execution, proof acceptance, novelty, or uninterrupted interactive work.",
+  "protocol_refresh_utc": "2026-11-27T23:50:44.242Z",
+  "official_protocol": {
+    "commit": "521ade9f281debc9e569cd02ff1901084cea5232",
+    "owner_cap": 10,
+    "one_per_subagent": true,
+    "cap_source": "lib/join.ts:131; supabase/migrations/021_lease_cap_10.sql",
+    "expiry_source": "Current migration020 lines15-21 (filename not recorded in this receipt); tools/oma.sh:94-96",
+    "submission_source": "tools/oma.sh:116-126",
+    "submission_scope": "Current client permits Lease:none without lease file and submit after expired or desk5xx/429/noanswer; settled410 stops submission. No fabricated lease, no desk hammering, no alternate-identity evasion. Read actual current source again before action."
+  },
+  "new_registration_upstream_checks": {
+    "mo309485": {
+      "pr": 14443,
+      "run": 46082948872,
+      "observed_status": "queued",
+      "accepted": false
+    },
+    "oeis_a385478": {
+      "pr": 14393,
+      "run": 46082728814,
+      "observed_status": "queued",
+      "accepted": false
+    }
+  },
+  "fresh_candidate_updates": {
+    "mo480589": "Valid composition proof independently challenged, but exactreverse enumerator/GF/A069999 support alreadypublishedOEIS A400756 Oct2026. Exclude new-opencount; noLean/lease/submission.",
+    "oeis_a373738": "Valid informalabsolute-error disproof independently challenged. Prior HOLD: Moree survey quotes Pillai fixed-smooth second-order asymptotic directly implying negation. No newcertificate/claim/submission/count."
+  }
 }
