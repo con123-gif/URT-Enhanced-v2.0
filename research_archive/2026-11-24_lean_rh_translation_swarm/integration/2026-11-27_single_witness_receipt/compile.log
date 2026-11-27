@@ -1,0 +1,11 @@
+'c2_norm_map_le_exp_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_of_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_reciprocal_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_squared_one_no_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HeightLe.nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_SIGNED_HEIGHT_ROOT: actual HeightLe; one global root; signed reciprocal budget; negative constant-one budget excluded
+'c2_isAlgebraic_of_arch' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_ARCH_ALGEBRAICITY: algebraicity from all complex automorphisms; no independent algebraicity premise
+'c2_heightLe_nonneg_arch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_single_witness_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_SINGLE_WITNESS: complete native product-formula statement; archimedean algebraicity and one global root

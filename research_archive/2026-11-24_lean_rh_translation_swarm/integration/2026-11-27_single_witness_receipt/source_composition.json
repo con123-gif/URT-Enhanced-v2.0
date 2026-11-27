@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "source": "C2_SIGNED_HEIGHT_ROOT.lean",
+      "source_blob": "8de8863bca9499efe0a169268b224b7b622574c5",
+      "bytes": 3083,
+      "sha256": "b7cdb4f919c4c499c8265bdbbe1f2d31cbc4882903dd033d6c8f0a619e398768"
+    },
+    {
+      "source": "C2_ARCHIMEDEAN_ALGEBRAICITY.lean",
+      "source_blob": "0be915a8b2eeea87f4c8804f7abb9dc66670fa08",
+      "bytes": 1735,
+      "sha256": "ee3eb101f1c8d67a2fe3ece39d1a178c67eb0cfa3d1f6258de68c6dce685951a"
+    },
+    {
+      "source": "C2_SINGLE_WITNESS_PRODUCT_FORMULA.lean",
+      "source_blob": "81cdb1461d7b2cca611178c42b799e2e4ab2afac",
+      "bytes": 3675,
+      "sha256": "acea510357207eef02a9f4fb6714fc1c1f8c0a14051abac9a5c35c09d1a9d7ef"
+    }
+  ],
+  "combined_source_blob": "4be058901f7072efd82b3711281fae7b913f1712",
+  "combined_sha256": "364fefe544e5d0064fdc725e157133b2d5ae1b6d36471d035bc799154c4d0005",
+  "combined_bytes": 8648,
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}

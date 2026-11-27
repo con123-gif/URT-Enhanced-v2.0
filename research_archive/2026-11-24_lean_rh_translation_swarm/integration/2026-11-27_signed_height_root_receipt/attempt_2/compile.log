@@ -1,0 +1,20 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_signed_height_root_2/C2SignedHeightRoot.lean:42:4: error: Type mismatch: After simplification, term
+  hP ι
+ has type
+  @LE.le ℝ Real.instLE ‖ι.snd (H * y ι ^ 2)‖ (rexp (e ↑ι.fst))
+but is expected to have type
+  @LE.le ℝ Real.instLE ‖ι.snd.toRingHom (H * y ι ^ 2)‖ (rexp (e ↑ι.fst))
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_signed_height_root_2/C2SignedHeightRoot.lean:51:52: error: unsolved goals
+a b : ℝ
+y : PrimePadicIso → ℂ
+h : HeightLe a y
+hi : HeightLe (2 * b) (y⁻¹ ^ 2)
+hn : ∀ (ι : PrimePadicIso), y ι ≠ 0
+ι : PrimePadicIso
+⊢ ‖ι.snd 1‖ ≤ ‖ι.snd 1‖
+'c2_norm_map_le_exp_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_of_sq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_heightLe_reciprocal_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_heightLe_squared_one_no_negative' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'HeightLe.nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_SIGNED_HEIGHT_ROOT: actual HeightLe; one global root; signed reciprocal budget; negative constant-one budget excluded

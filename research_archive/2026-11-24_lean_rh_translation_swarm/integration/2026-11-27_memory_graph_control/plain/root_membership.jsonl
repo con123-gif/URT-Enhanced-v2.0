@@ -1,0 +1,11 @@
+{"id": [["s", "LE"]], "root_mask": 1}
+{"id": [["s", "instLENat"]], "root_mask": 1}
+{"id": [["s", "Nat"], ["s", "le"], ["s", "step"]], "root_mask": 1}
+{"id": [["s", "Nat"], ["s", "le"], ["s", "refl"]], "root_mask": 1}
+{"id": [["s", "LE"], ["s", "mk"]], "root_mask": 1}
+{"id": [["s", "Nat"], ["s", "le_refl"]], "root_mask": 1}
+{"id": [["s", "Nat"], ["s", "le"]], "root_mask": 1}
+{"id": [["s", "Nat"], ["s", "succ"]], "root_mask": 1}
+{"id": [["s", "LE"], ["s", "le"]], "root_mask": 1}
+{"id": [["s", "Nat"], ["s", "zero"]], "root_mask": 1}
+{"id": [["s", "Nat"]], "root_mask": 1}

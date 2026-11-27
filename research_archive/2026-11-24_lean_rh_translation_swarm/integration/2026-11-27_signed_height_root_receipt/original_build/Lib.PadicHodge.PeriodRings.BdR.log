@@ -1,0 +1,3 @@
+/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/PadicHodge/PeriodRings/BdR.lean:131:2: warning: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`

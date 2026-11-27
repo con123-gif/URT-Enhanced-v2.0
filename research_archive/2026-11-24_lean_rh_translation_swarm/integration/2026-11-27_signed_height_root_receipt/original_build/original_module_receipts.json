@@ -1,0 +1,321 @@
+{
+  "Lib.Analytic.Landau.PolarLandau": {
+    "module": "Lib.Analytic.Landau.PolarLandau",
+    "source_blob": "6b80c9062a74ecadcd9c51f9459cb3c71ac2ded9",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/Analytic/Landau/PolarLandau.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/Analytic/Landau/PolarLandau.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 84.44,
+      "log": "Lib.Analytic.Landau.PolarLandau.log"
+    },
+    "bytes": 1465152,
+    "sha256": "ca02cad1b768ae3d6426ef0b7a37b21b0f9d16bf4d9643b0b8028031c92143c3"
+  },
+  "Lib.General.Algebra.SuccessiveApprox": {
+    "module": "Lib.General.Algebra.SuccessiveApprox",
+    "source_blob": "1bcb1c8715abfd85113cc5a689fa53efeb9398ac",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/General/Algebra/SuccessiveApprox.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/General/Algebra/SuccessiveApprox.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 57.2,
+      "log": "Lib.General.Algebra.SuccessiveApprox.log"
+    },
+    "bytes": 316048,
+    "sha256": "1736a45087564acb3f5b4c2845a110f9d0c8dfcdcc579473faeed875333b3067"
+  },
+  "Lib.PadicHodge.PeriodRings.Ainf": {
+    "module": "Lib.PadicHodge.PeriodRings.Ainf",
+    "source_blob": "d8c081552c611132f69033129f9a37dbd167484a",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/PadicHodge/PeriodRings/Ainf.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/PadicHodge/PeriodRings/Ainf.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 62.68,
+      "log": "Lib.PadicHodge.PeriodRings.Ainf.log"
+    },
+    "bytes": 1181448,
+    "sha256": "f99d9fb622cae0b86358460444e7851dcd21b8ce5d80b06624d870f080838e0b"
+  },
+  "Lib.PadicHodge.PeriodRings.ThetaKernel": {
+    "module": "Lib.PadicHodge.PeriodRings.ThetaKernel",
+    "source_blob": "ab5766dd9ea95412ad15247cef74b9b701250797",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/PadicHodge/PeriodRings/ThetaKernel.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/PadicHodge/PeriodRings/ThetaKernel.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 103.29,
+      "log": "Lib.PadicHodge.PeriodRings.ThetaKernel.log"
+    },
+    "bytes": 1747792,
+    "sha256": "1d912d232f45a4ad4dbcc3939109a98348a46814171a843d5600679d151cd937"
+  },
+  "Lib.PadicHodge.PeriodRings.AmaxStructure": {
+    "module": "Lib.PadicHodge.PeriodRings.AmaxStructure",
+    "source_blob": "1be9736d2c48bece6dd038c72d14b6f807cff9df",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/PadicHodge/PeriodRings/AmaxStructure.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/PadicHodge/PeriodRings/AmaxStructure.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 194.43,
+      "log": "Lib.PadicHodge.PeriodRings.AmaxStructure.log"
+    },
+    "bytes": 3952096,
+    "sha256": "b587c90fab1ef5c9a64934f76ae265ebfbaf354bf9ab36c6e735ddd9937d7fc3"
+  },
+  "Lib.PadicHodge.PeriodRings.BdRPlus": {
+    "module": "Lib.PadicHodge.PeriodRings.BdRPlus",
+    "source_blob": "f828ee87f4914572d457b364b38c6c6b0fbc8372",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/PadicHodge/PeriodRings/BdRPlus.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/PadicHodge/PeriodRings/BdRPlus.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 254.14,
+      "log": "Lib.PadicHodge.PeriodRings.BdRPlus.log"
+    },
+    "bytes": 1233752,
+    "sha256": "450da0b8172274cf624cb53fa68d96e85aaf5eb449d589f686f4091ad4de06a9"
+  },
+  "Lib.PadicHodge.PeriodRings.BdR": {
+    "module": "Lib.PadicHodge.PeriodRings.BdR",
+    "source_blob": "326d41233ac7638a50194f3ade22350c9b038ad5",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/PadicHodge/PeriodRings/BdR.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/PadicHodge/PeriodRings/BdR.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 191.71,
+      "log": "Lib.PadicHodge.PeriodRings.BdR.log"
+    },
+    "bytes": 3221984,
+    "sha256": "8a066f74b7bb255eae4a283a84b774a383054e6b25a8b88ff0ed4766ce17872a"
+  },
+  "Lib.PadicHodge.Crystalline.Defs": {
+    "module": "Lib.PadicHodge.Crystalline.Defs",
+    "source_blob": "10e3aee76b3ee7c372209e2d477814754bb09749",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/PadicHodge/Crystalline/Defs.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/PadicHodge/Crystalline/Defs.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 103.73,
+      "log": "Lib.PadicHodge.Crystalline.Defs.log"
+    },
+    "bytes": 1231696,
+    "sha256": "6d8b1859c2795f83bbb84b4ba7a719e2469d9d9060c0c1074928d8c136d8effd"
+  },
+  "Lib.GaloisRep.Main.LocalEmbedding": {
+    "module": "Lib.GaloisRep.Main.LocalEmbedding",
+    "source_blob": "4caac7c43d1dbc0f233b5c5ffce44110b5dadc68",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/GaloisRep/Main/LocalEmbedding.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/GaloisRep/Main/LocalEmbedding.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 77.34,
+      "log": "Lib.GaloisRep.Main.LocalEmbedding.log"
+    },
+    "bytes": 437744,
+    "sha256": "a7cdf43d89ec0132d40b6328aa6485c462edc0a05ba3e2f1d33c91665e61b3d1"
+  },
+  "Lib.CM.Genus.QuadraticZeta": {
+    "module": "Lib.CM.Genus.QuadraticZeta",
+    "source_blob": "51f575a20ca3dc4831d287d2f14f597586b96fff",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/Lib/CM/Genus/QuadraticZeta.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/Lib/CM/Genus/QuadraticZeta.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 80.57,
+      "log": "Lib.CM.Genus.QuadraticZeta.log"
+    },
+    "bytes": 1443112,
+    "sha256": "e8775490e4f45301b2d3fcb5c631f8a5d2999f2a3f38ba6677ce2865dc1b2a34"
+  },
+  "New.Heights.Heights": {
+    "module": "New.Heights.Heights",
+    "source_blob": "a18a99e1f76a6e963113cae8f906ddc99814f518",
+    "argv": [
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000",
+      "-Ddebug.skipKernelTC=false",
+      "-Dpp.fullNames=true",
+      "-j",
+      "2",
+      "-R",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src",
+      "-o",
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_height_original_cache/New/Heights/Heights.olean",
+      "/workspace/scratch/9bec6a205c16/c2_build/grh-compact/src/New/Heights/Heights.lean"
+    ],
+    "compiler": {
+      "returncode": 0,
+      "seconds": 67.81,
+      "log": "New.Heights.Heights.log"
+    },
+    "bytes": 583152,
+    "sha256": "f510968665c41082ffb391a4566ea1e6e694800ebebf289171878a519d38a4b8"
+  }
+}

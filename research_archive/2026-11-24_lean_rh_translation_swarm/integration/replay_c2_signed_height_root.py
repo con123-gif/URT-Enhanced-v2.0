@@ -158,6 +158,11 @@ def main():
         native.dump(cache_file, cached)
         native.dump(receipt, state)
     proposed = out / (a.module_name + ".lean")
+    state["original_modules_compiled_here"] = sum(not x.get("reused", False)
+                                                   for x in state["original_extensions"])
+    state["original_modules_reused"] = sum(x.get("reused", False)
+                                          for x in state["original_extensions"])
+    state["native_source_build_performed_here"] = state["original_modules_compiled_here"] > 0
     proposed.write_bytes(a.source.resolve().read_bytes())
     code = re.sub(r"/-.*?-/", "", proposed.read_text(), flags=re.S)
     code = re.sub(r"--[^\n]*", "", code)

@@ -1,0 +1,61 @@
+{
+  "native_execution": {
+    "returncode": 0,
+    "seconds": 0.57,
+    "log": "native.log",
+    "argv": [
+      "/workspace/scratch/9bec6a205c16/rh_native_work_logs/memory_graph_io_core_replay/exporter/native_graph",
+      "/workspace/scratch/fd93126e52da/lean-4.35.0-linux",
+      "Init",
+      "/proc/2/fd/4",
+      "Nat.le_refl"
+    ],
+    "axioms": {
+      "Nat.le_refl": []
+    },
+    "axiom_audit_ok": true,
+    "native_exporter_build": {
+      "source_blob": "2268ec5a79434d124afb8470c8d17cf24f416e7a",
+      "exporter_source_blob": "ee4efebb066f6775fa551ae9104cfa973e585071",
+      "independent_verifier_blob": "2e431301970196a6b786d004fb16a4320a25fe8e",
+      "collector_adapter": "strict independent const/projection union",
+      "runtime_imports_private_bodies": true,
+      "executes_module_initializers": false,
+      "new_proof_declarations_added": false,
+      "equivalence_verified": true,
+      "adopted_for_B2_or_C2": false,
+      "full_RH_replay": false,
+      "executable_sha256": "b62ecf5877e0701fbd5da4b647ab97e145ae0c13fec27ec33c27fefd4d75b46a",
+      "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "core_equivalence_verified": true,
+      "equivalence_scope": "Nat.le_refl only",
+      "compile_returncode": 0,
+      "link_returncode": 0
+    },
+    "native_graph_execution": true,
+    "new_Lean_execution": false,
+    "full_RH_replay": false
+  },
+  "archive": {
+    "raw_bytes": 6420,
+    "raw_sha256": "0ee560a0ce133808707616eef81234ebdbf3e785d23c1b54729d5322fc718f10",
+    "gzip_bytes": 664,
+    "gzip_sha256": "915c4aee9f3f14e3489f9b50e87a76316a513b3e890462156794871622c3a554",
+    "archive": "/workspace/scratch/9bec6a205c16/rh_native_work_logs/memory_graph_io_core_replay/core_graph.jsonl.gz",
+    "exact_decompression_verified": true
+  },
+  "control_source_blob": "83c5806a0ed7fb0b454669d44cc53bc6192553f6",
+  "memory_io_source_blob": "e7017a7e00a46484e4a9629804f39d2e3a5aa273",
+  "same_as_recorded_native_core_bytes": true,
+  "unchanged_independent_validator": true,
+  "plain_and_memory_audits_byte_identical": [
+    "union_summary.json",
+    "root_audits.json",
+    "root_membership.jsonl",
+    "audit-0.json"
+  ],
+  "all_requested_checks_ok": true,
+  "new_Lean_execution": false,
+  "new_proof_compilation": false,
+  "full_RH_replay": false
+}

@@ -45,7 +45,8 @@ lemma c2_heightLe_of_sq {c : ℝ} {y : PrimePadicIso → ℂ}
     exact hA σ
   · intro ι
     apply c2_norm_map_le_exp_half ι.2.toRingHom
-    simpa only [mul_pow, hK, Pi.pow_apply] using hP ι
+    simpa only [mul_pow, hK, Pi.pow_apply, RingEquiv.toRingHom_eq_coe,
+      RingEquiv.coe_toRingHom] using hP ι
   · filter_upwards [hT] with M hM
     rw [← sum_div]
     linarith
@@ -56,7 +57,7 @@ lemma c2_heightLe_reciprocal_budget {a b : ℝ} {y : PrimePadicIso → ℂ}
   apply HeightLe.nonneg
   exact (h.mul (c2_heightLe_of_sq hi)).mono le_rfl (by
     intro ι
-    simp only [Pi.mul_apply, Pi.inv_apply, Pi.one_apply, mul_inv_cancel₀ (hn ι)])
+    simp only [Pi.mul_apply, Pi.inv_apply, Pi.one_apply, mul_inv_cancel₀ (hn ι), le_refl])
 
 lemma c2_heightLe_squared_one_no_negative {c : ℝ} (hc : c < 0) :
     ¬ HeightLe (2 * c) ((1 : PrimePadicIso → ℂ) ^ 2) := by
@@ -155,7 +156,7 @@ lemma c2_heightLe_single_witness_budget {a b : ℝ} {y : PrimePadicIso → ℂ}
   apply c2_heightLe_nonneg_arch
   exact (h.mul (c2_heightLe_of_sq hi)).mono le_rfl (by
     intro ι
-    simp only [Pi.mul_apply, Pi.inv_apply, Pi.one_apply, mul_inv_cancel₀ (hn ι)])
+    simp only [Pi.mul_apply, Pi.inv_apply, Pi.one_apply, mul_inv_cancel₀ (hn ι), le_refl])
 
 #print axioms c2_heightLe_nonneg_arch
 #print axioms c2_heightLe_single_witness_budget
@@ -168,6 +169,12 @@ run_cmd do
   let same ← Lean.Elab.Command.liftTermElabM do
     Lean.Meta.isDefEq original.type replacement.type
   unless same do Lean.throwError "Product-formula complete original statement changed"
+  let earlierBudget ← Lean.getConstInfo ``c2_heightLe_reciprocal_budget
+  let joinedBudget ← Lean.getConstInfo ``c2_heightLe_single_witness_budget
+  let sameBudget ← Lean.Elab.Command.liftTermElabM do
+    Lean.Meta.isDefEq earlierBudget.type joinedBudget.type
+  unless earlierBudget.levelParams == joinedBudget.levelParams && sameBudget do
+    Lean.throwError "Single-witness budget changed a signed or nonzero-family premise"
   let some body := replacement.value? (allowOpaque := true) |
     Lean.throwError "Missing single-witness product-formula proof"
   for name in #[``c2_isAlgebraic_of_arch, ``log_product_formula] do

@@ -1,0 +1,6 @@
+'c2_norm_map_le_exp_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_of_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_reciprocal_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_heightLe_squared_one_no_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HeightLe.nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_SIGNED_HEIGHT_ROOT: actual HeightLe; one global root; signed reciprocal budget; negative constant-one budget excluded
