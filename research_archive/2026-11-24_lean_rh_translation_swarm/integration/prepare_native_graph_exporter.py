@@ -51,6 +51,7 @@ def execute_graph(directory, compact_root, env, lean_bin, module_name, roots, ou
     binary, build = validated_executable(directory)
     command = [binary, Path(lean_bin).resolve().parent, module_name, output, *roots]
     receipt = native.step(command, compact_root, env, log, seconds)
+    receipt["argv"] = list(map(str, command))
     axioms = {}
     if receipt["returncode"] == 0 and Path(output).is_file():
         with Path(output).open() as stream:

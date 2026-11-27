@@ -39,8 +39,10 @@ def main():
                  "native-exporter-dir", "out"]:
         p.add_argument("--" + name, type=Path, required=True)
     p.add_argument("--dependency-receipt", type=Path, action="append", default=[])
-    p.add_argument("--original", required=True)
-    p.add_argument("--candidate", required=True)
+    p.add_argument("--original")
+    p.add_argument("--candidate")
+    p.add_argument("--guard-config", type=Path,
+                   help="Multiple original/candidate pairs with their own required/forbidden suppliers")
     p.add_argument("--require", dest="required", action="append", default=[])
     p.add_argument("--forbid", action="append", default=[])
     p.add_argument("--scope", required=True)
@@ -77,12 +79,35 @@ def main():
     env.update(json.loads(setup.strip().splitlines()[-1]))
     dirs = [a.proof_receipt.resolve().parent] + [x.resolve().parent for x in a.dependency_receipt] + [base]
     env["LEAN_PATH"] = os.pathsep.join(list(map(str, dirs)) + [env["LEAN_PATH"]])
-    roots = [a.original, a.candidate]
-    native.require(a.original != a.candidate, "Distinct original and candidate required")
-    native.require(not (set(a.required) & set(a.forbid + [a.original])), "Contradictory supplier guards")
+    if a.guard_config is not None:
+        native.require(not (a.original or a.candidate or a.required or a.forbid),
+                       "Use either one CLI pair or the exact multi-pair guard configuration")
+        config_bytes = a.guard_config.resolve().read_bytes()
+        pairs = json.loads(config_bytes)["pairs"]
+        native.require(isinstance(pairs, list) and pairs, "No graph pairs configured")
+        (out / "guard_config.json").write_bytes(config_bytes)
+        config_blob = native.git_blob(config_bytes)
+    else:
+        native.require(a.original and a.candidate, "Provide original and candidate roots")
+        pairs = [{"original": a.original, "candidate": a.candidate,
+                  "required": a.required, "forbidden": a.forbid}]
+        config_blob = None
+    roots = []
+    for pair in pairs:
+        native.require(set(pair) == {"original", "candidate", "required", "forbidden"},
+                       "Unexpected graph guard fields")
+        native.require(all(isinstance(pair[x], str) and pair[x] for x in ["original", "candidate"])
+                       and all(isinstance(pair[x], list) and all(isinstance(n, str) and n for n in pair[x])
+                               for x in ["required", "forbidden"]), "Invalid graph guard roster")
+        native.require(pair["original"] != pair["candidate"], "Distinct roots required")
+        native.require(not (set(pair["required"]) & set(pair["forbidden"] + [pair["original"]])),
+                       "Contradictory supplier guards")
+        roots.extend([pair["original"], pair["candidate"]])
+    native.require(len(roots) == len(set(roots)), "Duplicate graph roots")
     state = {"compact": native.PIN, "mathlib": native.MATHLIB, "roots": roots,
              "scope": a.scope, "checked_module": r["compiled_module"],
              "checked_dependencies": checked, "checked_base": b["compiled_module"],
+             "guard_pairs": pairs, "guard_config_blob": config_blob,
              "full_RH_replay": False}
     native.dump(out / "input_manifest.json", state)
     run = execute_graph(a.native_exporter_dir, root, env, a.lean_bin,
@@ -92,18 +117,26 @@ def main():
     native.require(run["returncode"] == 0 and run["axiom_audit_ok"] is True, "Graph export failed")
     graph.ROOTS = roots
     graph.audit_union(out / "interface_graph.jsonl", out, out)
-    watched = {name: 0 for name in roots + a.required + a.forbid}
+    watched = {name: 0 for name in roots}
+    for pair in pairs:
+        watched.update({name: 0 for name in pair["required"] + pair["forbidden"]})
     with (out / "root_membership.jsonl").open() as stream:
         for line in stream:
             row = json.loads(line)
             name = ".".join(str(x[1]) for x in row["id"])
             if name in watched:
                 watched[name] = row["root_mask"]
-    guards = {"candidate_reaches_itself": bool(watched[a.candidate] & 2),
-              "original_reaches_itself": bool(watched[a.original] & 1),
-              "original_absent_from_candidate": not (watched[a.original] & 2)}
-    guards.update({"required:" + name: bool(watched[name] & 2) for name in a.required})
-    guards.update({"forbidden:" + name: not (watched[name] & 2) for name in a.forbid})
+    guards = {}
+    for i, pair in enumerate(pairs):
+        original_mask, candidate_mask = 1 << (2 * i), 1 << (2 * i + 1)
+        prefix = pair["candidate"] + ":"
+        guards[prefix + "candidate_reaches_itself"] = bool(watched[pair["candidate"]] & candidate_mask)
+        guards[prefix + "original_reaches_itself"] = bool(watched[pair["original"]] & original_mask)
+        guards[prefix + "original_absent_from_candidate"] = not (watched[pair["original"]] & candidate_mask)
+        guards.update({prefix + "required:" + name: bool(watched[name] & candidate_mask)
+                       for name in pair["required"]})
+        guards.update({prefix + "forbidden:" + name: not (watched[name] & candidate_mask)
+                       for name in pair["forbidden"]})
     native.dump(out / "supplier_reachability.json", {"membership": watched, "guards": guards,
                 "all_guards_pass": all(guards.values()), "full_RH_replay": False})
     native.require(all(guards.values()), "Candidate dependency guards failed")

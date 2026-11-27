@@ -1,6 +1,6 @@
 # Determinant class sum — local kernel PASS
 
-27 November 2026. The complete original statement of stdClassSum_det_modKernel_eq has now passed actual Lean 4.35.0 kernel compilation through the restricted standard/finite determinant route. **The full dependency audit and downstream Carrier transport are next. Reciprocal height and RH remain OPEN.**
+27 November 2026. The complete original statement of stdClassSum_det_modKernel_eq has now passed actual Lean 4.35.0 kernel compilation through the restricted standard/finite determinant route. **Both the determinant and downstream Carrier statements have passed the local kernel checks. The four-root dependency audit is next. Reciprocal height and RH remain OPEN.**
 
 Fix the original field, positive even rank \(m\) and weight tuple \(c\). One real \(C\), chosen before the entire admissible modulus/character family, gives
 \[
@@ -17,4 +17,6 @@ Accepted replay 11: **exit 0, 64.18 s**, both theorem axiom reports contain only
 
 The [finite exchange](../C2_DETERMINANT_EXCHANGE.lean) already has a complete constructor-inclusive graph audit. The [explicit real interfaces](../C2_REAL_MATCHING_STANDARD.lean) passed their own minimal-import kernel replay and whole-environment target-absence guard. This new consumer has passed its direct target-absence checks; its transitive old/new graph is still to be executed. Ten earlier failures are preserved under failed_attempt_1 through failed_attempt_10, with exact source, logs and rejected axiom reports.
 
-Next: kernel-transport this checked determinant supplier into the [existing CarrierXi consumer](../C2_DETERMINANT_CARRIER_TRANSPORT.lean), then audit the four original/new determinant and Carrier roots together. The Carrier's separate nonzero-complement matching branch is retained and is expected still to reach general exchange. No global removal or C2 closure follows from the determinant result.
+The [CarrierXi transport](../C2_DETERMINANT_CARRIER_TRANSPORT.lean) has also passed: exit 0, 90.66 s, standard axioms only, complete original type preserved. Its proof body substitutes only the checked determinant supplier and retains run79_explicit_matching. [Exact Carrier receipt](../2026-11-27_determinant_carrier_receipt/). Source 5083aea866074ba1e52b025342752df605581c78; module SHA256 57f51647df44c31eebb6e9e04a1264e1eeceba15c556657db6e13210b753bf01.
+
+Next: audit the four original/new determinant and Carrier roots together using [the explicit guard roster](../C2_DETERMINANT_CARRIER_GRAPH.json). The Carrier's separate nonzero-complement matching branch is retained and is expected still to reach general exchange. No global removal or C2 closure follows from the determinant result.
