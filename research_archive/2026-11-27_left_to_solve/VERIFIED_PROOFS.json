@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 4,
-  "complete_kernel_checked_candidates": 29,
+  "complete_kernel_checked_candidates": 30,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -782,10 +782,36 @@
       "claim_result": "Exactly one supportedclaim20:15:16 returnedHTTP500/noassignment/no token. Server-side mutation unknown. Further calls stopped.",
       "remaining_obstruction": "Canonical complete certificate uploaded and byte-readback exact. Prepared one-file registration awaits a valid current lease; then actual statement merge, exact imported-target check and full official proof submission/acceptance.",
       "prior_credit": "Antti Karttunen/source and related sequence authors; classical Jacobsthal identities, base4 digit-sum inequalities and known finite reduced-Collatz orbit; independent root/number/algebra challenges acknowledged."
+    },
+    {
+      "problem_id": "oeis-a181674",
+      "exact_statement": "PROOFS_READY/oeis-a181674.statement.lean",
+      "proof": "PROOFS_READY/oeis-a181674.proof.lean",
+      "statement_sha256": "66e077088c2ad86cda9099dcebe099194c35f8227a97b6a285885ed7ff7617f8",
+      "proof_sha256": "dcd0bf9ecc983ef72c62d351c06a924be1ff53114f66292e6b02e2b4c673a048",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46063152958",
+      "verification_job": 140722015963,
+      "verification_commit": "c9cbdbc848efaa11bd3b0bb018054759fcb0f2ba",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_full_kernel_pass",
+      "full_target_passed_at": "2026-11-27T20:24:17Z",
+      "proof_summary": "The summatory count of unordered partitions into a distinct primorial value and a semiprime isO(N), hence the mean is bounded and the source's Theta(loglogN) average order is false. Classical Chebyshev bounds, exact finite counting, and proved prime-reciprocal partial summation give K=O(logN/loglogN),Q=O(NloglogN/logN).",
+      "genuine_open_status": "exact_average_order_conjecture_disproved_no_prior_settlement_found_in_bounded_primary_review",
+      "merged_and_credited": "not_confirmed",
+      "statement_pr": null,
+      "statement_merged": false,
+      "public_statement_commit": "190230af76d65cac95a2c11a181497c631f30789",
+      "public_proof_commit": "5b6a5427194ea13a19ec67deba06279978654cdb",
+      "remaining_obstruction": "Complete exact-target certificate publicly uploaded and byte-readback verified. Fresh final gates and actual valid lease, official statement registration/merge, imported-target proof check and full official submission/acceptance remain. Claim service has repeatedlyHTTP500 on earlier targets.",
+      "prior_credit": "Charles R.GreathouseIV/source; classical Chebyshev estimates and finite partial summation; Mathlib authors; independent root/runtime/algebra challenges."
     }
   ],
   "continuing_beyond_minimum": true,
-  "complete_kernel_checked_certificates": 30,
+  "complete_kernel_checked_certificates": 31,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
   "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
@@ -803,7 +829,7 @@
   ],
   "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T20:16:55.629Z",
+  "record_updated_utc": "2026-11-27T20:28:46.762Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Direct and secure Actions supported claimsHTTP500/empty. New secure batch46056962879/job140701706473 withheldMO319325beforeclaimdueforeign10756, attemptedMO487192once500thenstopped. Zero new assignment tokens.",
   "official_full_proof_checker_acceptances": 4,
@@ -811,6 +837,6 @@
     "mo-511647": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3 alreadyprovesexactfullmatrixclaim; no new count orofficiallease/PR. Existinginflightfullprobeis known-priorformalizationonly."
   },
   "recorded_preceding_foreign_full_proofs": 9,
-  "records_without_known_preceding_proof_or_full_submission": 17,
+  "records_without_known_preceding_proof_or_full_submission": 18,
   "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld certificates and is NOT a current-eligibility or accepted-solve total."
 }
