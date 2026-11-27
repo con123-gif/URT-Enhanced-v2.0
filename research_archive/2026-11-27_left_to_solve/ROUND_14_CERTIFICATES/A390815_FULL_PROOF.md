@@ -1,4 +1,12 @@
-# A390815: factorial packing proof
+# A390815: factorial packing proof of a prior characterization
+
+**CURRENT CLASSIFICATION: prior characterization and earlier public formalization found.
+Excluded from the minimum twenty genuine new open resolutions.** See
+[A390815_PRIOR_PROVENANCE.md](A390815_PRIOR_PROVENANCE.md) for Sloane's May 3, 2019 A325436 comment, Cunningham's undated prior square argument,
+and Yufeng Liu's November 27, 2026 13:17:49 UTC public proof announcement.
+The approved A390815 page retained conjecture language while proposed proof
+edits were already public in its history. This corrects the initial incomplete
+source review below. The kernel proof remains valid; novelty is not claimed.
 
 2026-11-27. Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex
 (GPT-6; exact serving variant not exposed). Mathematical derivation below;
@@ -162,3 +170,12 @@ no official proof acceptance is claimed.
 
 
 STATEMENT SUBMITTED (2026-11-27): Official PR #8102, https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8102 , head65315dc78d3c31ab62051c35bc8d23d0f777a764. DONE note posted with HTTP200; fresh lease released with HTTP200, reason submitted. The full kernel proof awaits the official statement merge/import and subsequent proof checker verdict. No accepted proof is counted from the statement PR.
+
+
+PRIOR-RESULT CORRECTION: The late full-crossreference/history audit found the
+A325436 characterization added by N. J. A. Sloane on May 3, 2019, Cunningham's
+prior square proof in A023194 (exact answer date unverified), and Yufeng Liu's
+13:17:49 UTC November 27, 2026 public A390815 Lean proof announcement.
+A390815 is therefore excluded from the genuine-new twenty target even if
+its exact OMA formalization is accepted. Complete provenance and source
+hashes are in A390815_PRIOR_PROVENANCE.md and A390815_provenance_hashes.json.
