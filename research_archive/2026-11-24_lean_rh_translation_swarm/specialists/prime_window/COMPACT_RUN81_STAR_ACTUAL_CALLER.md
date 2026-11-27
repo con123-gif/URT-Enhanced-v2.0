@@ -1,0 +1,24 @@
+# RUN81 — connect the altered A normalization to the actual star caller
+27 November 2026. SOURCE-MATCHED / PREPARED, not native-replayed.
+Credit Alpöge, Sernau, Anthropic collaborators and Claude. Compact pin 72fead102f663d5c7a407964a13dc0cf9d977207,
+Lean 4.35.0, Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679. Old pin remains historical.
+
+Read live mission/spine/ledger and protocols; D1/E1 have human audits, so do not reopen. Recent peers f8e95752 (marked caller), cd306c11 (A2 replay), 97bc2912 (B2 guard repairs) retain independent lanes. RUN80 7773c94b is the actual A replacement and is not compiled. This run is its downstream caller splice, not more local constant optimization.
+
+## Exact premises and proof
+For the SAME D and q>0 supplied by short_forms_run80, the image of B_s=q P_s on its spanning S equals range(P_s) after taking complex span, because q is invertible. Consequently the original enough_forms witness t still works; it does not depend on the choice of q. Let Y=image2(B,t,S), and choose the original independent basis y of span(Y). Because S is contained in integralRamified, the identical y meets the index hypothesis, and each of its members has the identical bound from A. Hadamard gives exp(n h), h=H-mR+L. This makes no independent q or y choice at C, and no changed index allowance. The original integral_forms_long then gives d(H-3L)<=nh+2delta. The exact original star cancellation still applies:
+  mR <= 4L + 4 x^99 + 10 log(1+b^2) budget <= (log b)^2 budget.
+All A1 marked primitives, A2 actual span/lift, A3 CM, B1–4 spread and C1–3 height inputs survive, as do D1/E1 replay and the constructor-inclusive frontier. This is a source-linked conditional assembly; it is not an independent proof of star or RH.
+
+## Executable source splice
+Generated from RUN80 blob 50cd1bbb4717a7a597013e8070431f3255ed62d9; original New/Endgame/LongForms.lean blob 9eff36cf003ac398fbd24361e80e95a03d0b0e05, final declaration Data.exists_family_covolumeSq_le; original New/Main.lean blob 198ed5bf26aa294898931e0649bc2b88f1389f65, star_inequality (121–147). The probe contains unchanged RUN80 bodies with import changed to New.Endgame.LongForms; appended native caller body renamed and only D.short_forms changed to D.short_forms_run80; appended native star body renamed and only its family eliminator changed. Open namespaces and explicit variable P replicate the required source context. Does NOT import New.Main or the claimed RH theorem. Original source remains untouched. The copied RUN80 comment contains its historical resume note; this RUN81 note supersedes that note, not its evidence.
+
+Actual JavaScript source construction using connector-returned pinned text: five of five altered/deleted/duplicate anchors rejected; both actual old caller references changed once. No native Lean execution performed. The native guards compare two original declaration types, inspect opaque proof values explicitly, retain original/replacement direct type/value edges and canonical axiom names, check the new supplier at both callers, reject their original target, and test star's explicit source statement and direct family and C inputs. The original star itself is deliberately not imported; its source text supplies the exact type. The direct graph is not a transitive absence-of-old-proof claim.
+Original occurrence graph: local->short_forms->exists_family_covolumeSq_le->star_inequality->eventually_primeError_le_rpow.
+Candidate occurrence graph: RUN80 local->short_forms_run80->family_run81->star_run81; original enough_forms and integral_forms_long retained. No graph/axiom data removed. No global dependency retirement. Cache key includes source pins, D, q, t, S, y, delta, n, all embeddings and the identical C witness.
+
+CI rechecked: compact targeted_results.json blob 088cd2ec0e935ee1a282f10096949bcf671cc804, A module exit 124, other six original checks standard axioms, all_requested_checks_ok=false. B2 energy repair status blob c2bedaa5acd2a8d68d42a49a461675d3f3ed417b is error; source build 0 and candidate 1, unrelated to A. No A replay receipt or new PASS. Native rh_scan/prune/reduce/auto/frontier not executed here; the prior old-pin engine receipts do not certify compact substitutions. Once these guards succeed, reuse the existing kernel native engine on actual compact bodies, preserving all frontiers, rather than assuming old-pin compatibility. No URT speed claim.
+
+RESUME HERE: shared native runner, after building New.Endgame.LongForms in the exact compact workspace, execute
+  lake env lean /absolute/path/to/COMPACT_RUN81_STAR_ACTUAL_CALLER.lean
+and inspect all exact-type, supplier, axiom and proof-edge guard logs; if it fails, fix the first actual elaboration error. Coordinate with the existing A2/marked runner to reuse compiled imports. Do not launch an independent cold build or claim a kernel verdict before output. Independent audit requested of same-q/same-y transfer and actual elaboration.
