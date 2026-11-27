@@ -35,6 +35,7 @@ per_script_timeout = 120     # seconds
 budget_minutes = 20          # per run; the cursor resumes next run
 
 [sweep.args]
+"research_archive/2026-11-24_lean_rh_translation_swarm/integration/compare_complete_graph_exports.py" = ["--interpreted", "research_archive/2026-11-24_lean_rh_translation_swarm/integration/2026-11-27_native_graph_prototype/core_interpreted.jsonl", "--native", "research_archive/2026-11-24_lean_rh_translation_swarm/integration/2026-11-27_native_graph_prototype/core_native.jsonl", "--out", "{out}/rh_core_export_compare.json"]
 # Command-line arguments for scripts that need them ({out} = sweep results dir).
 "research_archive/2026-11-10_urt_arf_forward/automation/arf_colab_runner.py" = ["--once", "--output", "{out}/arf_colab_sweep.jsonl"]
 
