@@ -235,10 +235,28 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8442",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Both Gaussian denominator conjectures, including every GF coefficient.",
-      "statement_state": "open",
-      "statement_merged": false,
+      "statement_state": "closed_merged",
+      "statement_merged": true,
       "statement_merge_commit": null,
-      "statement_merged_at": null
+      "statement_merged_at": "2026-11-27T22:01:17Z",
+      "registered_source_blob": "bab279c0d000b5a456cdbc44f267dbf765ce3556",
+      "registered_source_exact_byte_match": true,
+      "remaining_obstruction": "Actual registered source matches canonical bytes; imported-target checker accepted46075641225/job140762613882. Hourly worker handling full-proof publication; no full PR observed at rootlatest allstate gate. Confirm actualclaim/PR/upstreamchecker/merge/publiccredit without duplication.",
+      "imported_target_verification": {
+        "run": "https://github.com/con123-gif/open-math-agents/actions/runs/46075641225",
+        "job": 140762613882,
+        "commit": "d0cdc5b73868cefdadeec5eb57f92c88783dc09f",
+        "verdict": "accepted",
+        "kind": "open",
+        "polarity": "proof",
+        "allowed_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "errors": [],
+        "root_actual_log_readback": true
+      }
     },
     {
       "problem_id": "oeis-a124869",
@@ -389,12 +407,14 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full arbitrary nonzero real seed six-distinct-limits conjecture disproved by exact period-six scaling; A329654 is an alias.",
-      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "remaining_obstruction": "Actual registered source matches canonical bytes; rootRuntime handling fresh competitor/coordination gates, unmodified imported-target fullproof check and separate fullproofPR. No new fullproofacceptance yet.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9501",
-      "statement_state": "open",
-      "statement_merged": false,
-      "statement_merged_at": null,
-      "statement_merge_commit": null
+      "statement_state": "closed_merged",
+      "statement_merged": true,
+      "statement_merged_at": "2026-11-27T22:19:52Z",
+      "statement_merge_commit": null,
+      "registered_source_blob": "ece44c696ff7c6a16926563bacde6a36ea462e76",
+      "registered_source_exact_byte_match": true
     },
     {
       "problem_id": "oeis-a383246",
@@ -940,7 +960,7 @@
   ],
   "interactive_leases_for_this_batch": "Original9 plusMO513259/A396949/MO487180/A181674/A372561/A372556 allactuallyreleasedHTTP200 (15total). A068991 actual503fallback/noassignment requiresnoleaserelease. HistoricalMO474511release500 unconfirmed; no stale tokenrefresh. All six late normalregistration slots ended. Otherautomations canholdtheir owncurrentleases;notaglobalactivecount.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T22:08:11.635Z",
+  "record_updated_utc": "2026-11-27T22:22:37.765Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
   "official_full_proof_checker_acceptances": 4,
@@ -952,5 +972,9 @@
   "recorded_preceding_foreign_full_proofs": 15,
   "records_without_known_preceding_proof_or_full_submission": 13,
   "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld and nowfullpriorA381423 certificates, so NOT a currenteligibility/accepted/newsolve total.",
-  "latest_submission_rules": "Current official503busy fallback/manual-selection rules permit truthful contributions as specified; read currentrules beforeeachaction. Latest four normal registration claims workedHTTP200; tokenprivacy andownercap/teamcoordinationremainmandatory. No blanket noassignment stop wherecurrentrules explicitlyauthorizesfallback."
+  "latest_submission_rules": "Current official503busy fallback/manual-selection rules permit truthful contributions as specified; read currentrules beforeeachaction. Latest four normal registration claims workedHTTP200; tokenprivacy andownercap/teamcoordinationremainmandatory. No blanket noassignment stop wherecurrentrules explicitlyauthorizesfallback.",
+  "full_proof_stage_coordination": {
+    "oeis_a124870": "hourlyworker already uploaded exact imported-proof fixture22:16:44; rootread actualcheckeraccepted22:18:54. Avoidduplicate publication untilactualworkeroutcome.",
+    "oeis_a329813": "rootRuntime assigned sourcecompare/currentracegate/normalproofclaim/imported-targetcheck andfullPR. Otherworkersdonotduplicate."
+  }
 }
