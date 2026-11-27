@@ -1,0 +1,11 @@
+{
+  "number_work/oeis-a158960.statement.lean": "aa6d297f32a274c596e92e38c2089437c40731a1a21b67d2ba855c59531f45bf",
+  "number_work/oeis-a158960.proof.lean": "3cb0666350a5528f875fe30c2d9227c91b98719d24573d7dd210f71ad1c3689e",
+  "fresh_algebra_work/A158960_ACCEPTED_PROOF.lean": "3cb0666350a5528f875fe30c2d9227c91b98719d24573d7dd210f71ad1c3689e",
+  "fresh_algebra_work/A158960-current.html": "8faf008d4066bd9b8f46859afcaedb8a4f9681d3b58bea6579554f6b4463b3a3",
+  "fresh_algebra_work/A158960-history.html": "69dea9cc3fe28af02bf2ed47dcd4b652e12f119140158b162d9c4038d1581fff",
+  "fresh_algebra_work/A158960-history-older.html": "bae187e1cd9655ad72f54d399547e995cf5644b23e225255bb8813864b3cb4c2",
+  "fresh_algebra_work/A158960-history-oldest.html": "e5af3834c1d782f4453f3a173b228c8a6d1597b5cda770ae2b340f3726d9c91c",
+  "fresh_algebra_work/A158960-DLMF-Hermite-explicit.tex": "67bb65d4c0f912f1e33a7a0e64c03e553615f620020bd7c14d1457ce54c41605",
+  "fresh_algebra_work/A158960-DLMF-Hermite-recurrence.html": "8530e57886f9894b55e1e3ea7a2000b8e182e63d9d2691ed2f42bca92952ca40"
+}

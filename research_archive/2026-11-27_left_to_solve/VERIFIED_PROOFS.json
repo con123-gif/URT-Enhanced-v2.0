@@ -346,7 +346,7 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full arbitrary nonzero real seed six-distinct-limits conjecture disproved by exact period-six scaling; A329654 is an alias.",
-      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9501",
       "statement_state": "open",
       "statement_merged": false
@@ -368,7 +368,7 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete no-zero greedy decimal range theorem using repunit-one connectors and fairness.",
-      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9480",
       "statement_state": "open",
       "statement_merged": false
@@ -390,7 +390,7 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete no-nine greedy decimal range theorem using repunit-eight connectors and fairness.",
-      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9482",
       "statement_state": "open",
       "statement_merged": false
@@ -412,7 +412,10 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full Hurwitz/Lyapunov principal-square-root normalization convergence claim disproved by alternating exact positive-definite sequences.",
-      "remaining_obstruction": "Official statement registration and fresh imported-target proof submission pending; no accepted-proof credit inferred."
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9686",
+      "statement_state": "open",
+      "statement_merged": false
     },
     {
       "problem_id": "mo-487192",
@@ -431,7 +434,7 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full three-question semisimplicity conjunction disproved over a characteristic-zero extension by a nonzero central square-zero matrix.",
-      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9503",
       "statement_state": "open",
       "statement_merged": false
@@ -453,7 +456,10 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full positive greedy range theorem: every even digit is immediately preceded by a smaller digit; repunit-one connectors.",
-      "remaining_obstruction": "Current source/duplicate/claim gate and official statement registration required; no full official proof PR yet."
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9702",
+      "statement_state": "open",
+      "statement_merged": false
     },
     {
       "problem_id": "oeis-a382624",
@@ -472,7 +478,10 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full positive greedy range theorem: every even digit is immediately preceded by a larger digit; internal zero allowed; repunit-nine connectors.",
-      "remaining_obstruction": "Current source/duplicate/claim gate and official statement registration required; no full official proof PR yet."
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9703",
+      "statement_state": "open",
+      "statement_merged": false
     },
     {
       "problem_id": "oeis-a383062",
@@ -491,12 +500,26 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full nonnegative greedy range theorem: every odd digit is immediately preceded by a smaller digit; zero included; exact power-of-ten connectors.",
-      "remaining_obstruction": "Current source/duplicate/claim gate and official statement registration required; no full official proof PR yet."
+      "remaining_obstruction": "Official statement PR submitted; await actual registration merge, then fresh proof lease and exact imported-target check. Completed full certificate already public.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9704",
+      "statement_state": "open",
+      "statement_merged": false
     }
   ],
   "continuing_beyond_minimum": true,
   "complete_kernel_checked_certificates": 23,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
-  "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count."
+  "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
+  "official_new_statement_prs_this_batch": [
+    9480,
+    9482,
+    9501,
+    9503,
+    9686,
+    9702,
+    9703,
+    9704
+  ],
+  "interactive_leases_for_this_batch": "all_released_after_submitted_with_actual_HTTP200"
 }
