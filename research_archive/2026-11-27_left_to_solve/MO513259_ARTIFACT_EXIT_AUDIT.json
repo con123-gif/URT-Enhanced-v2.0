@@ -1,0 +1,208 @@
+{
+  "scope": "Partial generic MO513259 helper artifact exits, not a complete proof or official acceptance.",
+  "checked_utc": "2026-11-27T20:47:02.821029+00:00",
+  "download_route": "Purpose-built GitHub Actions artifact download; ZIP digests matched GitHub metadata; signed URLs are excluded.",
+  "runs": [
+    {
+      "run_id": 46065273407,
+      "artifact_zip_sha256": "5baf7a9f264d944406c71b2f63f5f6f85111f7e956cdd72aeb1955be8f569808",
+      "digest_matches_GitHub": true,
+      "actual_exit_files": {
+        "ProbeMO513259BlockSchurSecond.lean.exit": 1,
+        "ProbeMO513259HalfAdjugateFirst.lean.exit": 1
+      },
+      "artifact_id": 15230522381,
+      "head_commit": "9fd703354177f851d07a4aad8ffc25fc55c7e678",
+      "probes": [
+        {
+          "file": "ProbeMO513259BlockSchurSecond.lean",
+          "observed_exit": 1,
+          "compiler_errors": [
+            "CampaignProbe.lean:537:51: error: unsolved goals"
+          ],
+          "axiom_print_headers": [
+            "'OMA.MO513259.det_add_even_symm_pair' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.permanent_double_shear' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.duplicate_row_even_eight' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.base_two_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.map_inverse_diagonal_zero_mod_two' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.exists_unit_offdiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.offdiagonal_pivot_det_unit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.mod_twenty_four_of_three_component_facts' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.BlockSchur.block_reduction' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "a56c2c4c863147b617c8f3a2a835d240232629102d06c3f7165295fc2226e1ca"
+        },
+        {
+          "file": "ProbeMO513259HalfAdjugateFirst.lean",
+          "observed_exit": 1,
+          "compiler_errors": [
+            "CampaignProbe.lean:497:45: error(lean.invalidField): Invalid field `symm`: The environment does not contain `Function.symm`, so it is not possible to project the field `symm` from an expression"
+          ],
+          "axiom_print_headers": [
+            "'OMA.MO513259.OddHollowEight.twice_odd_hollow_det' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.HalfAdjugate.map_nonsing_inv_mod_two' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.HalfAdjugate.twice_principal_adjugate' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.HalfAdjugate.determinant_shear_increment_quadratic' depends on axioms: [propext,"
+          ],
+          "log_sha256": "f0b3b3f9ec6154cc82c2dae1b12ddd840a9b84fcc1085d158a1e359ee864913a"
+        }
+      ]
+    },
+    {
+      "run_id": 46062990698,
+      "artifact_zip_sha256": "b4bde02da1b473020a412f9bc821abce80b94009e5cf5016ba8a9e75f0f3de1f",
+      "digest_matches_GitHub": true,
+      "actual_exit_files": {
+        "ProbeMO513259DetFirstOrderSecond.lean.exit": 0,
+        "ProbeMO513259ForcedEdgeSecond.lean.exit": 0,
+        "ProbeMO513259ForcedMinorFourth.lean.exit": 1,
+        "ProbeMO513259FourMinor.lean.exit": 0,
+        "ProbeMO513259OddHollow.lean.exit": 1
+      },
+      "artifact_id": 15229114937,
+      "head_commit": "f587b38ea429e70f620cda27889a591b70e0b842",
+      "probes": [
+        {
+          "file": "ProbeMO513259DetFirstOrderSecond.lean",
+          "observed_exit": 0,
+          "compiler_errors": [],
+          "axiom_print_headers": [
+            "'OMA.MO513259.DetFirstOrder.multilinear_high_order_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.multilinear_add_two_smul' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.det_add_two_smul' depends on axioms: [propext, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "5821dd1dd60402a30f1edf6e52c10f99d8bf5131f0b2a2e7fbfd64c379129ffe"
+        },
+        {
+          "file": "ProbeMO513259ForcedEdgeSecond.lean",
+          "observed_exit": 0,
+          "compiler_errors": [],
+          "axiom_print_headers": [
+            "'OMA.MO513259.permanent_forced_col_cleanup' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.permanent_forced_row_cleanup' depends on axioms: [propext, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "e68e5e6bcb884752c27498843ca344e1fe227b09272a6964776ab70e6122e4a5"
+        },
+        {
+          "file": "ProbeMO513259ForcedMinorFourth.lean",
+          "observed_exit": 1,
+          "compiler_errors": [
+            "CampaignProbe.lean:429:45: error(lean.invalidField): Invalid field `symm`: The environment does not contain `Function.symm`, so it is not possible to project the field `symm` from an expression"
+          ],
+          "axiom_print_headers": [
+            "'OMA.MO513259.det_forceTwoRows' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.map_copyRowHalf' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.copyRowHalf_mod_two_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.upperPairSum_polar' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.copyRowHalf_eight_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "78d9031164af5050a335481b7be6b6f022ba90af292bcc4f0c5261b9d472a682"
+        },
+        {
+          "file": "ProbeMO513259FourMinor.lean",
+          "observed_exit": 0,
+          "compiler_errors": [],
+          "axiom_print_headers": [
+            "'OMA.MO513259.det_four_submatrix_mod_two' depends on axioms: [propext, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "ad3f0318a6277c581f6d31c1c541d605939709a925f88b6b3d4c820f7bc60e30"
+        },
+        {
+          "file": "ProbeMO513259OddHollow.lean",
+          "observed_exit": 1,
+          "compiler_errors": [
+            "CampaignProbe.lean:146:40: error: unexpected token '\u1d40'; expected ':=', 'where' or '|'",
+            "CampaignProbe.lean:158:2: error: unsolved goals",
+            "CampaignProbe.lean:159:2: error: unsolved goals",
+            "CampaignProbe.lean:160:2: error: unsolved goals",
+            "CampaignProbe.lean:165:54: error: failed to synthesize",
+            "CampaignProbe.lean:165:54: error: failed to synthesize",
+            "CampaignProbe.lean:199:33: error(lean.unknownIdentifier): Unknown identifier `skewLift_skew`",
+            "CampaignProbe.lean:248:14: error(lean.unknownIdentifier): Unknown constant `OMA.MO513259.OddHollow.skewLift_skew`"
+          ],
+          "axiom_print_headers": [
+            "'OMA.MO513259.permanent_copyRow_eq_two_detp' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.odd_skew_integer_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.multilinear_high_order_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.multilinear_add_two_smul' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.det_add_two_smul' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollow.det_updateRow_eq_cofactor_sum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollow.twice_adjugate_skewLift' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollow.odd_hollow_det_mod_four' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "81643641fa47118319465b94ef9ea58587b0ddb96d72acfaa2b7a9bbd2da8f6a"
+        }
+      ]
+    },
+    {
+      "run_id": 46064741954,
+      "artifact_zip_sha256": "9fa1c4f6ed89774094d18b9d00d6fee0e5def6e2969efcd84ade89da635c1727",
+      "digest_matches_GitHub": true,
+      "actual_exit_files": {
+        "ProbeMO513259BlockSchurFirst.lean.exit": 1,
+        "ProbeMO513259OddHollowEightSecond.lean.exit": 0,
+        "ProbeMO513259VertexPairs.lean.exit": 0
+      },
+      "artifact_id": 15229494749,
+      "head_commit": "33e6526aa8f6eeac1d47beebfb1c3380f1ea9b6f",
+      "probes": [
+        {
+          "file": "ProbeMO513259BlockSchurFirst.lean",
+          "observed_exit": 1,
+          "compiler_errors": [
+            "CampaignProbe.lean:537:51: error: unsolved goals",
+            "CampaignProbe.lean:562:2: error: Type mismatch"
+          ],
+          "axiom_print_headers": [
+            "'OMA.MO513259.det_add_even_symm_pair' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.permanent_double_shear' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.duplicate_row_even_eight' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.base_two_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.map_inverse_diagonal_zero_mod_two' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.exists_unit_offdiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.offdiagonal_pivot_det_unit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.mod_twenty_four_of_three_component_facts' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.BlockSchur.block_reduction' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "ee28af6c82ab09c7ee645f9c114f80cce845535fdd098d374196334efaf81c06"
+        },
+        {
+          "file": "ProbeMO513259OddHollowEightSecond.lean",
+          "observed_exit": 0,
+          "compiler_errors": [],
+          "axiom_print_headers": [
+            "'OMA.MO513259.permanent_copyRow_eq_two_detp' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.odd_skew_integer_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.multilinear_high_order_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.multilinear_add_two_smul' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.DetFirstOrder.det_add_two_smul' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollow.det_updateRow_eq_cofactor_sum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollow.skewLift_skew' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollow.twice_adjugate_skewLift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollow.odd_hollow_det_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollowEight.map_integerLift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollowEight.twice_odd_hollow_det' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.OddHollowEight.even_card_of_hollow_unit_mod_two' depends on axioms: [propext,"
+          ],
+          "log_sha256": "cdfd040f1f1f9aaa8454179ce5f04b951708b98e9c54e3815bcd748e70897e13"
+        },
+        {
+          "file": "ProbeMO513259VertexPairs.lean",
+          "observed_exit": 0,
+          "compiler_errors": [],
+          "axiom_print_headers": [
+            "'OMA.MO513259.upperPairSum_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]",
+            "'OMA.MO513259.twice_upperPairSum_erase_two' depends on axioms: [propext, Classical.choice, Quot.sound]"
+          ],
+          "log_sha256": "aac22f3d09f9158babbf34619d85ab17a8a67388ab0a6a23c4892cf48f4b8d83"
+        }
+      ]
+    }
+  ],
+  "critical_findings": [
+    "HalfAdjugateFirst exit1 and ForcedMinorFourth exit1 inherit invalidField hi.symm in an unused simp argument, although target axiom prints are standard3.",
+    "A grep matching only error-colon misses Lean error(lean.invalidField); use actual process exit from artifacts.",
+    "DetFirstOrderSecond, ForcedEdgeSecond, FourMinor, OddHollowEightSecond and VertexPairs observed exit0."
+  ]
+}
