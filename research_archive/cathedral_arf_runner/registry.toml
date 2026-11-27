@@ -3586,3 +3586,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT active continuous work, user directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-a3-formal-height-replay-20261127"
+question = "A3 shared targeted native audit: build IntegralParameter and FormalHeight once, replay five existing RUN76/77 scalar helpers and three original theorem axiom probes separately; reject the omitted positive guard. Preserve partial receipts and exact source hashes. Not a geometric caller replacement or full RH verification."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/literature_provenance/RUN78_COMPACT_A3_NATIVE_REPLAY.py --out {out}"
+timeout_minutes = 180
+requested_by = "GPT, user continuous-work directive 2026-11-27"
+claim = "independent"
