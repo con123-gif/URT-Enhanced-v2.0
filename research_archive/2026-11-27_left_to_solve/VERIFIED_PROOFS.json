@@ -282,18 +282,22 @@
       "verification_kind": "unmodified_official_imported_target_checker_accepted_in_fork",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8568",
       "merged_and_credited": "not_confirmed",
-      "proof_summary": "Exact13x13 POSITIVE COLUMN-stochastic counterexample, with strict row and column dominance and an eigenvalue of squared norm373212001/373000000>1.",
+      "proof_summary": "A positive13x13 COLUMN-stochastic matrix P, with both strict row and column dominance, whose rank-one perturbation P-(P*1)w^T has an eigenvalue of squared norm373212001/373000000>1.",
       "statement_state": "closed",
       "statement_merged": true,
       "statement_merge_commit": null,
       "statement_merged_at": "2026-11-27T17:53:21Z",
-      "remaining_obstruction": "Full disproof submitted; actual upstream checker, merge and site credit pending. Live catalogue lags actual statement registration.",
+      "remaining_obstruction": "ACTUAL upstream full disproof checker accepted19:10:39, kernel accepted and standard axioms. PR10139 remains open/unmerged at19:37; actual merge and public site credit pending. No fifth full submission or fourth credited merge inferred.",
       "full_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10139",
       "full_proof_pr_state": "open",
       "full_proof_upstream_check_run": "https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46047885906",
       "prior_inline_verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46031510476",
       "verification_job": 140668601604,
-      "imported_target_verdict": "accepted"
+      "imported_target_verdict": "accepted",
+      "official_checker_verdict": "accepted",
+      "official_checker_accepted_at": "2026-11-27T19:10:39Z",
+      "official_checker_run": "https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46047885906",
+      "official_checker_job": 140671608373
     },
     {
       "problem_id": "mo-298064",
@@ -736,7 +740,11 @@
   ],
   "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T19:33:00Z",
+  "record_updated_utc": "2026-11-27T19:40:00Z",
   "prepared_full_proof_branches": 7,
-  "proof_stage_claim_service": "Direct and secure Actions supported claimsHTTP500/empty. New secure batch46056962879/job140701706473 withheldMO319325beforeclaimdueforeign10756, attemptedMO487192once500thenstopped. Zero new assignment tokens."
+  "proof_stage_claim_service": "Direct and secure Actions supported claimsHTTP500/empty. New secure batch46056962879/job140701706473 withheldMO319325beforeclaimdueforeign10756, attemptedMO487192once500thenstopped. Zero new assignment tokens.",
+  "official_full_proof_checker_acceptances": 4,
+  "excluded_known_prior_targets": {
+    "mo-511647": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3 alreadyprovesexactfullmatrixclaim; no new count orofficiallease/PR. Existinginflightfullprobeis known-priorformalizationonly."
+  }
 }
