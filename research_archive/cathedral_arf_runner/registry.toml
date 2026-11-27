@@ -3595,3 +3595,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 180
 requested_by = "GPT, user continuous-work directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-b2-full-chain-graph-20261127"
+question = "Using only the established official GitHub source bootstrap, compile all seven active pair/full-energy declarations with explicit theorem-body access and full axiom names, replay the repaired rectangular skew/count adapter, and independently verify six constructor-inclusive caller graphs while preserving the exact checked module. Partial results are separate; no RH root import, human assembly claim or full RH replay."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py --out {out}"
+timeout_minutes = 180
+requested_by = "GPT active continuous proof work, 2026-11-27"
+claim = "independent"

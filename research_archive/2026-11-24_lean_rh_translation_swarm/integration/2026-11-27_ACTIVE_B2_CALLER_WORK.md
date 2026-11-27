@@ -193,3 +193,13 @@ The graph comparison now covers SIX local roots (original/replacement pair,
 level energy, full energy); it remains unexecuted. C2's pinned peer file is
 unchanged; its prepared runner applies the same documented value? adapter
 to a derived copy, with original and derived source hashes recorded.
+
+Local full-candidate execution is slow even with the restored cache. The
+shared final job rh-compact-b2-full-chain-graph-20261127 now uses the existing
+official GitHub-only bootstrap, all seven declarations and the repaired
+skew adapter. It preserves the exact checked object and runs the six-root
+constructor-inclusive graph before the native workspace is removed. No
+third-party artifact proxy is used. This is not a second parallel cold
+build: the earlier shared repair job has finished; only the cached local
+candidate and this single shared native job are active. All final checks
+remain pending until their actual compiler and graph receipts are read.
