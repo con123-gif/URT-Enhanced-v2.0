@@ -3570,3 +3570,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT, user continuous-work directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-b2-callers-replay-20261127"
+question = "Compile the actual original-statement BlockBound pair-weight replacement using named outer and inner divisors. Require exact original declaration type, standard axiom reports, both bridge dependencies and absence of the original target from direct proof dependencies. One caller only, not full B2 or RH."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_callers.py --out {out}"
+timeout_minutes = 180
+requested_by = "GPT active interactive proof work, 2026-11-27"
+claim = "independent"

@@ -1,0 +1,10 @@
+{
+  "source": "integration/B2_ACTIVE_CALLER_REPLACEMENT.lean",
+  "source_blob": "3bc8e74903dc1455625636ef78a1e7359be0047b",
+  "theorems": [
+    "Filling.b2_active_outer_frameValueIndex_dvd",
+    "Filling.b2_active_outer_count",
+    "Filling.b2_active_inner_frameValueIndex_dvd",
+    "Filling.b2_active_sum_pairWeight_le"
+  ]
+}

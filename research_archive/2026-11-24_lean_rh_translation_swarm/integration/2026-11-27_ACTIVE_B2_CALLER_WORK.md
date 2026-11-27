@@ -35,13 +35,26 @@ The existing source geometry is factored, not advertised as a new theorem
 of arithmetic geometry. A command inspects the elaborated caller proof,
 requires both new bridges to occur, and rejects a direct invocation of
 the original pair-weight theorem. Execution remains pending.
+The check also compares the complete original declaration type, including
+binder order. The candidate carries the exact compact elaboration options.
 
 A local exact Lean toolchain and pinned Mathlib checkout were located.
 Tracked compact sources and lakefile were compared to the exact pin.
 The original BlockBound build is running locally with two Lean threads;
 its log is outside the tracked source. Earlier claims that Lean was
 absent meant absent on PATH; the present local capability is now checked.
-No protected source or workflow is modified.
+No protected source or workflow is modified. A later preflight detected
+an unrelated concurrent TwistForRows edit in the shared checkout. The
+parallel local build was interrupted (exit 130), and work moved to a
+clean isolated checkout of the SAME pin. Cached external dependency
+packages are reused. Per-module Lake invocations spent about 47 seconds
+even on cached native targets, repeatedly scanning approximately 9000
+cached external imports. The current builder resolves Lake's environment
+once, verifies the pinned native sources and recompiles their entire
+131-module import closure directly with Lean in order, one at a time,
+using the exact pinned lakefile options. No native source is substituted
+by a cached mathematical claim; this changes scheduling and repeated
+bookkeeping. Its final result remains pending, not a speedup claim.
 
 RESUME HERE: finish local BlockBound build; compile the prepared outer
 bridge and new inner/caller file. Preserve every compiler error and

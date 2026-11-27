@@ -1,6 +1,13 @@
 import New.Filling.BlockBound
 import Mathlib.Tactic
 
+-- Exact mathematical elaboration options from the pinned compact lakefile.
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option maxSynthPendingDepth 3
+set_option pp.unicode.fun true
+set_option maxHeartbeats 4000000
+
 /-!
 Active 27-November caller replacement, PREPARED until local Lean execution.
 Credit Alpöge, Sernau, Anthropic collaborators and Claude.
@@ -22,6 +29,8 @@ open AddSubgroup Module DoubleCoset ENNReal Fintype MatMul Matrix MeasureTheory 
 open Pointwise Set
 
 namespace Filling
+
+section Bridges
 
 variable {E : Type} [Field E] [CMType E] [StablyUnram E]
   {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible]
@@ -107,6 +116,14 @@ theorem b2_active_inner_frameValueIndex_dvd (γ : S.G E)
       classCoord_gram, φ])) * a.1)]
     simp [entrywise, P, classCoord_eq_fromBlocks, splitGram]
 
+end Bridges
+
+section Caller
+
+-- Match the original declaration's complete binder order as well as its goal.
+variable {E : Type} [Field E] [CMType E] {𝔰 : Shape}
+  {j : Fin (𝔰.ϱ + 2)} [StablyUnram E] {S : Filling E 𝔰} [S.IsAdmissible]
+
 theorem b2_active_sum_pairWeight_le : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeight j c c' γ γ' ≤
   .ofReal (2 * S.tailScale ^ 2) := by
   apply S.of_size_bounds; intros; apply ((tsum_fiberwise (fun (⟨i, t, c, T, q, p⟩ : Σ i t c, Σ (T :
@@ -140,10 +157,12 @@ theorem b2_active_sum_pairWeight_le : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeig
   simp [← pow_mul, mul_assoc, ← pow_add]; gcongr; lia
 
 
-#print axioms b2_active_outer_frameValueIndex_dvd
-#print axioms b2_active_outer_count
-#print axioms b2_active_inner_frameValueIndex_dvd
-#print axioms b2_active_sum_pairWeight_le
+#print axioms Filling.b2_active_outer_frameValueIndex_dvd
+#print axioms Filling.b2_active_outer_count
+#print axioms Filling.b2_active_inner_frameValueIndex_dvd
+#print axioms Filling.b2_active_sum_pairWeight_le
+#check @b2_active_outer_frameValueIndex_dvd
+#check @b2_active_inner_frameValueIndex_dvd
 #check @b2_active_sum_pairWeight_le
 
 -- Pointwise original-statement bridge, using the replacement proof.
@@ -153,6 +172,11 @@ example : ∑ c, ∑ c', ∑' (γ) (γ'), S.pairWeight j c c' γ γ' ≤
 -- Inspect the actual elaborated caller, not just its source text.
 run_cmd do
   let info ← Lean.getConstInfo ``Filling.b2_active_sum_pairWeight_le
+  let original ← Lean.getConstInfo ``Filling.sum_pairWeight_le
+  let sameType ← Lean.Elab.Command.liftTermElabM do
+    Lean.Meta.isDefEq original.type info.type
+  unless sameType do
+    Lean.throwError "B2 replacement has a different original declaration type"
   let some value := info.value? |
     Lean.throwError "B2 replacement has no inspectable proof value"
   let deps := value.getUsedConstants
@@ -162,6 +186,8 @@ run_cmd do
     Lean.throwError "B2 caller did not consume the outer bridge"
   unless deps.contains ``Filling.b2_active_inner_frameValueIndex_dvd do
     Lean.throwError "B2 caller did not consume the inner bridge"
-  Lean.logInfo "B2_ACTIVE_CALLER: both bridges consumed; original target absent from direct proof dependencies"
+  Lean.logInfo "B2_ACTIVE_CALLER: original declaration type matches; both bridges consumed; original target absent from direct proof dependencies"
+
+end Caller
 
 end Filling
