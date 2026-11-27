@@ -160,3 +160,57 @@ model/unitarity, finite peak, exact action, measures and classical
 convergence extension above. Then integrate the resulting TWO
 majorants into the actual SharpData doubleDatum proof and main
 manuscript. Retain all A/C leaves, independent audit and replay.
+
+## Completed mathematical checkpoint and actual validation
+
+Common bridge committed as a99f1fa85c8ca3ff309d839944c56c23b271e79d.
+The complete argument is in
+`2026-11-27_COMPACT_SIEGEL_WEIL_NATIVE_BRIDGE.md`, from mixed-model
+Hilbert realization through the two native majorants and completed
+functional identity. Read and consumed new mission 3b218469 and
+0dcbf571 after refreshing to 19a5089a; the rational phase method
+avoids a needless all-adelic upsilon/Weil-index comparison. The
+explicit polarization and character calculation now supplies its
+previous residual sign/dual/half-factor guard. The native vacuum
+projector proves the Schwartz core and the finite isotropic phase
+calculation gives the peak bound for ALL rational L. The positive
+classical theta majorant replaces the geometric count-integral
+branch at this identity-only caller. This is human-derived under
+the explicitly retained vacuum, Wiener and Weil laws plus precise
+classical stable-range theorem; independent audit pending.
+
+Next obligation actually addressed, not just restated:
+`2026-11-27_COMPACT_CLEAN_GRAPH_AUDIT.md` gives the one-place
+uniform compact average, verifies w belongs to A for nonzero clean
+Psi, proves K' injective and checks graph label/inverse at the same
+g,w and frame. Native KernelDecay and SharpData bodies reread.
+Earlier exact dual cutoff construction also reread against source,
+including the isotropic finite frame, required multiplier and
+valuation minimum contradiction. Retain its norm-negative-one
+and finite vacuum-covariance background, and the doubleDatum phase.
+
+Actual bounded local command completed normally:
+`timeout 60s python integration/check_siegel_weil_polarization.py
+--source-root /workspace/scratch/fd93126e52da/grh-lean-src
+--out integration/2026-11-27_siegel_weil_polarization_results.json`.
+Six source blobs authenticated; ten symbolic identities and five
+negative controls detected. This is not Lean, independent
+mathematical audit or a convergence/RH certificate. Source and
+protected workflows unchanged. Main manuscript Rallis caller and
+live ledger updated with these actual connected proofs.
+
+RESUME HERE: independent audit of common supplier/clean graph,
+then exact doubleDatum/negSource pairing phase and finite dual
+multiplier at CharacterLiftNorm and TriangleArrows. Preserve
+the original rows and retained A/C primitive hypotheses. Latest
+native receipt is still partial, not a full human/RH verification.
+
+Subsequent read: independent Landau RUN73 commit 1ae8974a
+explicitly audits a99f1fa8 character/covariance/rational phase and
+clean graph. Read its entire 225-line artifact; agrees on those
+components, retains convergence/full model audit. Preserve this
+as partial independent agreement, not a full review. Fresh state
+e746daab and existing verify_compact_primitive_receipt.py executed:
+16 committed outputs authenticated, six named native checks and
+A timeout, overall false, no new Lean execution. The latest
+main and appendices now record both scopes exactly.

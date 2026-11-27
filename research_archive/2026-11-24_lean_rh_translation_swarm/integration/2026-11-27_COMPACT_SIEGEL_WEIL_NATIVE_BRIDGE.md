@@ -508,6 +508,39 @@ finite signed/positive vacuum cancellation in (11); classical
 all-Schwartz extension; nondefinite clean graph and dual finite
 cutoff at their actual callers. This note is a human proof under
 the explicit background in section 1, pending independent audit.
+The nondefinite branch now has the connected one-place averaging
+derivation in `2026-11-27_COMPACT_CLEAN_GRAPH_AUDIT.md`; use it at
+the same g,w,finite frame rather than reasserting graph support.
+
+Executed local regression: `timeout 60s python
+integration/check_siegel_weil_polarization.py --source-root <pinned
+checkout> --out integration/2026-11-27_siegel_weil_polarization_results.json`.
+It completed normally in the local environment, authenticated six
+source blobs, and checked ten exact symbolic identities plus five
+negative controls (wrong basis/frequency sign and missing half/factor
+two). The free-entry calculation has target and Lagrangian dimension
+2; it supports the normalization audit and does not prove the
+general-rank convergence or the classical theorem. Source files
+and protected workflows were unchanged.
+
+Independent contribution inspected after publication of a99f1fa8:
+Landau RUN73, commit 1ae8974afdd61dd33671fbe0fa90d277085010d3,
+`specialists/landau_criterion/COMPACT_RUN73_CLEAN_GRAPH_CHARACTER.lean`.
+It independently checks the trace character at finite and infinite
+places, all three covariance signs, the rational-phase cancellation
+and the exact nondefinite graph implication. Its compact-coset
+character proof agrees with the uniform-average version in the
+companion graph note. This is agreement on those components under
+the stated model laws, not an independent audit of the entire
+convergence proof or a new native replay. It also gives a fallback
+if a classical statement fixes the standard base character: use
+the rational target Gram 2J_T with the canonical base trace
+character. The unitary group and rational lattice are identical,
+and its half-trace Fourier and unipotent pairings become exactly
+our psi_E pairings. The theorem in section 2A as inspected already
+allows a nontrivial additive character, so this fallback is not
+needed to change (3) or rescale its zero term.
+
 No new Lean execution or native root discharge was performed.
 Existing primitive replay remains six successful named checks plus
 an A-module timeout, `all_requested_checks_ok=false`,

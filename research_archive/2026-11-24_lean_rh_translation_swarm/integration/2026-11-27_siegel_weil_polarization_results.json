@@ -1,0 +1,58 @@
+{
+  "scope": "exact symbolic normalization regressions only",
+  "source_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "source_blobs_authenticated": [
+    {
+      "path": "Lib/Weil/Construction/AdelicHeisenberg.lean",
+      "blob": "6d56fe0aa1762a56778d40f9086f69e721f91b14"
+    },
+    {
+      "path": "Lib/Weil/Construction/FiniteHeisenberg.lean",
+      "blob": "be448ff4db1da9bfa0fe7bd637272be079be2285"
+    },
+    {
+      "path": "Lib/Weil/Periods/BesselIntegral.lean",
+      "blob": "b7eb71106debb76e1b97526f7c540b7d4d28bed8"
+    },
+    {
+      "path": "Lib/Weil/DualPair/PairSplitting.lean",
+      "blob": "7060d2715dc64318e5f657357bce32c32bf11772"
+    },
+    {
+      "path": "Lib/SiegelWeil/Formula/ZeroTermHeight.lean",
+      "blob": "0a910704dae028b30156fc8ab362d3425e50ada8"
+    },
+    {
+      "path": "Lib/SiegelWeil/RallisInner/SharpData.lean",
+      "blob": "ea9f665a9a89411f1353d098ff2e0a4e59a719f5"
+    }
+  ],
+  "symbolic_dimensions": {
+    "target": 2,
+    "lagrangian": 2
+  },
+  "positive_identities": [
+    "skew_form_basis",
+    "radical_basis",
+    "weyl_basis",
+    "heisenberg_cocycle",
+    "hom_bicharacter_real_trace",
+    "unipotent_heisenberg_covariance",
+    "weyl_translation_part",
+    "weyl_frequency_part",
+    "base_character_half_trace",
+    "isotropic_finite_vacuum_half"
+  ],
+  "negative_controls_detected": [
+    "wrong_basis_sign_detected",
+    "wrong_frequency_sign_detected",
+    "missing_unipotent_half_detected",
+    "missing_base_trace_half_detected",
+    "missing_signed_positive_factor_two_detected"
+  ],
+  "all_algebra_checks_ok": true,
+  "convergence_proved_by_this_script": false,
+  "independent_mathematical_audit": false,
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}
