@@ -1230,7 +1230,7 @@
   ],
   "interactive_leases_for_this_batch": "Both latest research/publication lanes MO309485 andA385478 actually DONE/releasedsubmittedHTTP200, see exactreceipt/times. Rootlatestinteractive lanes currently0active. This isNOTanowner-global count: scheduledworkersmayholdothers. HistoricalMO474release500 remains unconfirmed, no stale-token operation.",
   "pending_full_proof_submissions": 2,
-  "record_updated_utc": "2026-11-27T23:40:53.463Z",
+  "record_updated_utc": "2026-11-27T23:54:41.035Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
   "official_full_proof_checker_acceptances": 5,
@@ -1240,7 +1240,9 @@
     "mo-235344": "Notpartof33. Earlier byrohan immutable4a3de5ff full6x6mathematicalcounterexample07:06:42, source/target/64minors/62supportcuts/bothdiagonalobstructions independentlyexactchecked. Our5x5 onlydimensionimprovement. Latestrepair46073211016 ACTUALLYFAILED/errors/sorryAx. No originalsourceclosure orduplicatePR. Auditb93c12cd.",
     "mo-310296": "ExactgeneralYESalreadyLDJAI fullmanuscript71185716 linkedforeignstatementPR1832created02:35:02. OurindependentSDPproofvalidbutknownprior,nocount/Lean. SourceWIPcorrectedcommit55ccd02c; noforeignfullkernelacceptanceobserved.",
     "oeis-a339744": "Conservativegenuine-newexclusion: publishedKurlberg–PomeranceLemma7(radical-density)immediatelyimpliessourceclaimwithσbound. Full12pprelatedpaper/GuyB11previewread; owncompleteelementaryproofretainedknown-resultnote9e6b33da.No lease/Lean/acceptedcount.",
-    "oeis-a386575": "FullFerudunJul22,2026A383111run/strict-partitionargumentalreadycontainsexactcontraction/expansionequivalence. No lease/Lean/newcount."
+    "oeis-a386575": "FullFerudunJul22,2026A383111run/strict-partitionargumentalreadycontainsexactcontraction/expansionequivalence. No lease/Lean/newcount.",
+    "mo-480589": "Valid full literal-P/composition bridge independently challenged, but full OEIS A400756 rev35 Oct2026 already publishes exact reverse diagonal polynomial family/support/GF. Main precise known-prior bridge10a759a9485800bc96b6b66c14cfe6d4bc8f9a8b; independent audit e2000c566c990661d3a2fc9775828e5014dc12c6. No Lean/lease/PR/new-opencount.",
+    "oeis-a373738": "Valid full informal elementary fixed-radical absolute-error disproof independently challenged; strict known-classical-consequence exclusion. Moree arXiv1212.1581 §6 pp6–7 prints Pillai/Specht second-order asymptotic directly refuting literal limit; forrad30 true error~log30*(logn)^2/(12log2log3log5)>0. Number checkpoint346dbf313a10d76c4b890e3c16b4286dcc663147; independent Runtime13fcf439298c9b31fa7e0300c92e9fb604947625. Five readable Git snapshots among six history commits, one404; not all13 internalrevisions. No Lean/claim/PR/newcount."
   },
   "recorded_preceding_foreign_full_proofs": 16,
   "records_without_known_preceding_proof_or_full_submission": 15,
@@ -1270,5 +1272,8 @@
       "release_http": 200,
       "released_at": "2026-11-27T23:30:00.528Z"
     }
+  },
+  "source_ambiguity_holds": {
+    "mo-488756": "Fragmented-star elimination hereditary under every fixed global edge order, including fixed tie refinement. Literal source leaves tie sorting/singleton terminal implicit. Root allzero weights with input-dependent deterministic tie sorting gives unfragmentedA1234/fragmentedB12345 counter to unconstrained tie interpretation. Both valid cases under independent challenge; no silent extra assumptions, no claim/Lean/registration/count."
   }
 }
