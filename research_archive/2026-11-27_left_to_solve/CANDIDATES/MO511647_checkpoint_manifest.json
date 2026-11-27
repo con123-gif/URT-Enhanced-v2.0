@@ -1,5 +1,5 @@
 {
-  "status": "complete human proof candidate; no Lean verification or official claim",
+  "status": "KNOWN_PRIOR_EXCLUDED",
   "files": {
     "MO511647_MATHEMATICAL_PROOF.md": "d9eea5eacb84ebb121bd37d3cf36258ed519b8b1755863987dbed81850d52612",
     "mo511647_statement.lean": "887f75824c4c2b70281045dca9f93a7c8ef9646926a50ee439e379fc5f9e7c25",
@@ -8,5 +8,9 @@
     "mo511647_mo515594_primary.json": "f6b65bea18ca161f2f4b7120a04d87c9fc0ee5232530ffb2e3da80b754de8ba1",
     "mo511647_live.json": "f4889ff4422d99d2f274abd565fe5a3c3550ddfc7d5ccc15b9348775a39bcfdc",
     "MO515594_EXCLUDED_PRIOR.md": "b96aa3506e6f82b48665dba9fd8785a7518df6363b473dc364f8fffee73faa17"
-  }
+  },
+  "excluded_from_new_solve_count": true,
+  "prior_full_resolution": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3, facultyPDFOctober27",
+  "prior_url": "https://ayong.web.illinois.edu/ICLUE2026-Bohao-Zhang-report.pdf",
+  "no_further_repairs_or_official_claims": true
 }
