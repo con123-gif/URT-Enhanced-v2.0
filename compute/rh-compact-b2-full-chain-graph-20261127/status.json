@@ -1,0 +1,198 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: Full B2/graph checks incomplete; inspect individual receipts",
+  "returncode": 1,
+  "wall_s": 1604.86,
+  "tail": "{\"native_step\": \"download\", \"state\": \"started\"}\n{\"native_step\": \"download\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 1.47, \"log\": \"download.log\"}\n{\"native_step\": \"extract\", \"state\": \"started\"}\n{\"native_step\": \"extract\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 5.68, \"log\": \"extract.log\"}\n{\"native_step\": \"version\", \"state\": \"started\"}\n{\"native_step\": \"version\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.06, \"log\": \"version.log\"}\n{\"native_step\": \"init\", \"state\": \"started\"}\n{\"native_step\": \"init\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.06, \"log\": \"init.log\"}\n{\"native_step\": \"remote\", \"state\": \"started\"}\n{\"native_step\": \"remote\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.0, \"log\": \"remote.log\"}\n{\"native_step\": \"fetch\", \"state\": \"started\"}\n{\"native_step\": \"fetch\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.87, \"log\": \"fetch.log\"}\n{\"native_step\": \"checkout\", \"state\": \"started\"}\n{\"native_step\": \"checkout\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 0.31, \"log\": \"checkout.log\"}\n{\"native_step\": \"mathlib_cache\", \"state\": \"started\"}\n{\"native_step\": \"mathlib_cache\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 66.15, \"log\": \"mathlib_cache.log\"}\n{\"native_step\": \"b2_build\", \"state\": \"started\"}\n{\"native_step\": \"b2_build\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 1384.02, \"log\": \"b2_build.log\"}\n{\"native_step\": \"active_b2_energy\", \"state\": \"started\"}\n{\"native_step\": \"active_b2_energy\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 55.32, \"log\": \"active_b2_energy.log\"}\n{\"native_step\": \"original_callers\", \"state\": \"started\"}\n{\"native_step\": \"original_callers\", \"state\": \"finished\", \"returncode\": 0, \"seconds\": 5.33, \"log\": \"original_callers.log\"}\n{\"native_step\": \"negative_missing_projector_guard\", \"state\": \"started\"}\n{\"native_step\": \"negative_missing_projector_guard\", \"state\": \"finished\", \"returncode\": 1, \"seconds\": 3.17, \"log\": \"negative_missing_projector_guard.log\"}\n{\"compiled_theorems\": 7, \"energy_caller_checked\": true, \"human_assembly_verified\": false, \"full_RH_replay\": false}\nTraceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py\", line 116, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py\", line 104, in main\n    native.require(status[\"all_requested_checks_ok\"], \"Full B2/graph checks incomplete; inspect individual receipts\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Full B2/graph checks incomplete; inspect individual receipts\n",
+  "id": "rh-compact-b2-full-chain-graph-20261127",
+  "question": "Using only the established official GitHub source bootstrap, compile all seven active pair/full-energy declarations with explicit theorem-body access and full axiom names, replay the repaired rectangular skew/count adapter, and independently verify six constructor-inclusive caller graphs while preserving the exact checked module. Partial results are separate; no RH root import, human assembly claim or full RH replay.",
+  "requested_by": "GPT active continuous proof work, 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py --out {out}",
+  "utc": "2026-11-27T13:51:55Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "e9d6043bfdfbcddfe6a32b64539900d0f6d5bf40",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46006832164",
+  "outputs_committed": [
+    {
+      "path": "BlockBoundSkewReplacement.lean",
+      "bytes": 30300,
+      "sha256": "1b159eb7a6288a7d17fcf78cff263523984fb92290fedac943193ca90aca66d9"
+    },
+    {
+      "path": "active_b2_energy.lean",
+      "bytes": 22213,
+      "sha256": "f804685ee51433dfe05545893ce400e628d9827d0441cd396b2de9043668119a"
+    },
+    {
+      "path": "active_b2_energy.log",
+      "bytes": 4489,
+      "sha256": "afff0516382b53500331dc5904d5881c56997bf2e9f55c1c0df6b32e96bda7ad"
+    },
+    {
+      "path": "b2_build.log",
+      "bytes": 26365,
+      "sha256": "4ba795ca3ef57812175eecdaee3f1abb62460c2e521a4e51f56305a00beeea5f"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 3470,
+      "sha256": "a5b1dff44d80687436cc6a7eba5cc79438baf97f14f77d8d7ba28f4e933cdb02"
+    },
+    {
+      "path": "cache_archive.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "3a3117e68791da3c801f8dd5b31f5ead692589b0a1747b0ebc4ce23e882e8bce"
+    },
+    {
+      "path": "energy_input_manifest.json",
+      "bytes": 1400,
+      "sha256": "55780175dc1e93d1d0c65c7ad1d970ed5add093833673924400f426950034851"
+    },
+    {
+      "path": "energy_replacement_results.json",
+      "bytes": 2979,
+      "sha256": "420c4497c79c196d58691839362ff8a47c91bd1cc2c12c593d86036568689ea8"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "graph/ActiveB2Graph.lean",
+      "bytes": 7920,
+      "sha256": "e07d9f61dd99860dcc06a651ca1c323c029077e8f8d104eec2e63a60f66281ed"
+    },
+    {
+      "path": "graph/graph_environment.log",
+      "bytes": 5492,
+      "sha256": "0a5acb56b2a4e2f1089b0f8564b673b308a3449b38e920d9563780bc7383f139"
+    },
+    {
+      "path": "graph/graph_execution.json",
+      "bytes": 859,
+      "sha256": "b52d6cd9ad1e10bf67b974e02574b01e49aff261bb54f98863e04b0738e0e842"
+    },
+    {
+      "path": "graph/graph_input_manifest.json",
+      "bytes": 1142,
+      "sha256": "14961f6996909061ad673325196b071587441bdb6d41a06d535ada1b3ec7743d"
+    },
+    {
+      "path": "graph/local_b2_graph.jsonl",
+      "bytes": 218198,
+      "sha256": "76597e4f41ae7359e288d24da9d829976e775d1a27b36b3be67a08d0a73c1490"
+    },
+    {
+      "path": "graph/local_b2_graph.log",
+      "bytes": 751,
+      "sha256": "9b366925dee10035248889aad1e890a2dba21f04f2199ef37ab87db0af035a47"
+    },
+    {
+      "path": "graph_driver.log",
+      "bytes": 810,
+      "sha256": "820e285c888edbc52e71d847cd2f14434b101e381d69993f12916a46801ad723"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 1676,
+      "sha256": "9f8505d58dc73016d469cf35b926d816805a948e37cc0367a00d7448f8e931af"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 9012,
+      "sha256": "53ab50935e0bd9561378ff9f5cf24428562def1da3a8be912c7b64a5cb86b1ac"
+    },
+    {
+      "path": "native_cache_manifest.json",
+      "bytes": 563,
+      "sha256": "5f2e5f0fa0e58ee9931b925ae5db91b26cf84021936d9d4173317aba31581806"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "46945bfe1347a419c4d739a58394b82938eb06a5a87f91c9c197dab616dd7fbf"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 597,
+      "sha256": "ceebcce2b3df9e548aa1a110e8be36390167b04f5bc2303b0965c539acf81a14"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1769,
+      "sha256": "995fde16c3b3029a33712da39de9dca18384628f34a0bd58974cd42f52d5fde0"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "f93bfb777df1d7145cc03b77f8f6dffedc2081203b5c1c46ccd6545a22c4c0a1"
+    },
+    {
+      "path": "shared_full_b2_results.json",
+      "bytes": 1665,
+      "sha256": "ef22857aa789a1558fa4c29a77afe2bbdf687fe60933e8aab6d1774aa7d8bb0b"
+    },
+    {
+      "path": "skew_caller.log",
+      "bytes": 1590,
+      "sha256": "847df6af147ba08267248bde0903ee7022ab983380fe3ee0b210c74a3c0fac6b"
+    },
+    {
+      "path": "skew_caller_results.json",
+      "bytes": 615,
+      "sha256": "6ad91c726af949162bb1d589e69aa4b20f468e70ceab0ffa9bc95b46dfe57345"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "active_b2_energy.olean",
+      "bytes": 16860568,
+      "sha256": "7cb25e815cd73026a67952478167c7fc1fa510e86f57ac42f468fdb2a710608e"
+    },
+    {
+      "path": "native_b2_oleans.tar.zst",
+      "bytes": 109934996,
+      "sha256": "c82d040f23affdd4bba650e39c9dd038478884cc77dcc6d7721ad1056943790e"
+    }
+  ]
+}

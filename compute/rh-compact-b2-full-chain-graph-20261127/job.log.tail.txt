@@ -1,0 +1,34 @@
+{"native_step": "download", "state": "started"}
+{"native_step": "download", "state": "finished", "returncode": 0, "seconds": 1.47, "log": "download.log"}
+{"native_step": "extract", "state": "started"}
+{"native_step": "extract", "state": "finished", "returncode": 0, "seconds": 5.68, "log": "extract.log"}
+{"native_step": "version", "state": "started"}
+{"native_step": "version", "state": "finished", "returncode": 0, "seconds": 0.06, "log": "version.log"}
+{"native_step": "init", "state": "started"}
+{"native_step": "init", "state": "finished", "returncode": 0, "seconds": 0.06, "log": "init.log"}
+{"native_step": "remote", "state": "started"}
+{"native_step": "remote", "state": "finished", "returncode": 0, "seconds": 0.0, "log": "remote.log"}
+{"native_step": "fetch", "state": "started"}
+{"native_step": "fetch", "state": "finished", "returncode": 0, "seconds": 0.87, "log": "fetch.log"}
+{"native_step": "checkout", "state": "started"}
+{"native_step": "checkout", "state": "finished", "returncode": 0, "seconds": 0.31, "log": "checkout.log"}
+{"native_step": "mathlib_cache", "state": "started"}
+{"native_step": "mathlib_cache", "state": "finished", "returncode": 0, "seconds": 66.15, "log": "mathlib_cache.log"}
+{"native_step": "b2_build", "state": "started"}
+{"native_step": "b2_build", "state": "finished", "returncode": 0, "seconds": 1384.02, "log": "b2_build.log"}
+{"native_step": "active_b2_energy", "state": "started"}
+{"native_step": "active_b2_energy", "state": "finished", "returncode": 0, "seconds": 55.32, "log": "active_b2_energy.log"}
+{"native_step": "original_callers", "state": "started"}
+{"native_step": "original_callers", "state": "finished", "returncode": 0, "seconds": 5.33, "log": "original_callers.log"}
+{"native_step": "negative_missing_projector_guard", "state": "started"}
+{"native_step": "negative_missing_projector_guard", "state": "finished", "returncode": 1, "seconds": 3.17, "log": "negative_missing_projector_guard.log"}
+{"compiled_theorems": 7, "energy_caller_checked": true, "human_assembly_verified": false, "full_RH_replay": false}
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py", line 116, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py", line 104, in main
+    native.require(status["all_requested_checks_ok"], "Full B2/graph checks incomplete; inspect individual receipts")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Full B2/graph checks incomplete; inspect individual receipts

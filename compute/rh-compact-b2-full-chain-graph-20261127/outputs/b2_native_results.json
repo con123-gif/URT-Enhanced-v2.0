@@ -1,0 +1,142 @@
+{
+  "scope": "new peer helper replay; original caller axioms checked separately",
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 1.47,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 5.68,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.0,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 0.87,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.31,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 66.15,
+      "log": "mathlib_cache.log"
+    },
+    "b2_build": {
+      "returncode": 0,
+      "seconds": 1384.02,
+      "log": "b2_build.log"
+    },
+    "active_b2_energy": {
+      "returncode": 0,
+      "seconds": 55.32,
+      "log": "active_b2_energy.log",
+      "axioms": {
+        "Filling.b2_active_outer_frameValueIndex_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_outer_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_inner_frameValueIndex_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_sum_pairWeight_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_energy_le_of_level_pairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_energy_le_of_level_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.b2_active_energy_le_of_linkEnergy_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "original_callers": {
+      "returncode": 0,
+      "seconds": 5.33,
+      "log": "original_callers.log",
+      "axioms": {
+        "Filling.HasLevel.exists_frameImage_toRows₂_eq_add": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.tsum_invPowWeight_le_of_codim_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.sum_pairWeight_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.pairInvariant_mul_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.le_genIndex_det_of_fixesNormAtLeast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Filling.sublatticeDisc_mul_index_sq_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "negative_missing_projector_guard": {
+      "returncode": 1,
+      "seconds": 3.17,
+      "log": "negative_missing_projector_guard.log",
+      "expected_rejection_observed": true
+    }
+  },
+  "new_Lean_execution": true,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": true
+}
