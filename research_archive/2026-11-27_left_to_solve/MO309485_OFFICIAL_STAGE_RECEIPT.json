@@ -1,0 +1,337 @@
+{
+  "problem": "mo-309485",
+  "receipt_created_at_utc": "2026-11-27T23:34:35.994049+00:00",
+  "owner": "Cornelius Lytollis (@con123-gif)",
+  "agent": "codex-algebra-mo309485",
+  "model": "Codex/GPT-6; exact serving variant not exposed",
+  "status": "Complete source-faithful full Lean certificate published; official one-file statement PR submitted; DONE and release(submitted) both actualHTTP200. Official translation review/imported proof-stage acceptance remain pending as of PR readback.",
+  "source_scope": "For every natural n, the source complex matrix has zero as an eigenvalue iff0<n; M0=[3], all positive n covered by uniformly verified parity kernels, negative lower binomial explicitly guarded.",
+  "credits": "Lampe odd LEFT and MTyson even RIGHT vector proposals, classical finite binomial/Pascal identities, bounded original-paper audit explicitly acknowledged. No vector-invention/new-general-method/worldwide-priority claim.",
+  "full_kernel_pass": {
+    "independently_checked_at_utc": "2026-11-27T23:22:10.026322+00:00",
+    "run_id": 46081719328,
+    "job_id": 140781984295,
+    "head": "d01ca49691faa1f98be914317cc9156cb4fda9d9",
+    "artifact_id": 15236463459,
+    "zip_sha256": "7cc9fbffe450e41fb145cccea70d608644d865894322c711f0c69a8db8417a24",
+    "artifact_digest_verified": true,
+    "actual_selected_exit": 0,
+    "all_error_forms": 0,
+    "six_selected_axiom_lists": "exactly propext, Classical.choice, Quot.sound",
+    "final_theorem": "OMA.solution",
+    "source_sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+    "proof_sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+    "probe_sha256": "6b21dbe4e8f86b6c75a867b26addf29392d80cdf5505c3bcf0ddbaf86ae17579",
+    "immutable_public_probe_exact_local": true,
+    "entire_canonical_statement_and_proof_embedded": true,
+    "whole_source_certificate_pass": true,
+    "official_statement_checker": "accepted in initial run46079615097; source unchanged",
+    "official_contribution_submitted": false,
+    "official_full_proof_accepted": false,
+    "credit": "Cornelius Lytollis (@con123-gif), assisted by Codex/GPT-6; exact serving variant not exposed. Lampe odd LEFT/MTyson even RIGHT proposals, classical binomial identities explicitly credited. Bounded prior gate is not a worldwide novelty guarantee."
+  },
+  "canonical_publication": {
+    "repository": "con123-gif/URT-Enhanced-v2.0",
+    "branch": "newtons-cathedral",
+    "canonical_pair": [
+      {
+        "kind": "statement",
+        "path": "research_archive/2026-11-27_left_to_solve/PROOFS_READY/mo-309485.statement.lean",
+        "commit": "0a0fb5c81e0f3f626b91c2099d25f4faf2e714b8",
+        "sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+        "bytes": 1557,
+        "blob_sha": "da16113dd41601cab7734694f42e665791cc8c68",
+        "immutable_readback_exact": true
+      },
+      {
+        "kind": "proof",
+        "path": "research_archive/2026-11-27_left_to_solve/PROOFS_READY/mo-309485.proof.lean",
+        "commit": "22546ba73645e52b0037ab12c9935354c740d860",
+        "sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+        "bytes": 23452,
+        "blob_sha": "4942584870d030949640c39cba6e5d4f8b35e606",
+        "immutable_readback_exact": true
+      }
+    ],
+    "run": 46081719328,
+    "job": 140781984295,
+    "verifier_head": "d01ca49691faa1f98be914317cc9156cb4fda9d9",
+    "artifact": 15236463459,
+    "artifact_sha256": "7cc9fbffe450e41fb145cccea70d608644d865894322c711f0c69a8db8417a24",
+    "whole_certificate_pass": true,
+    "official_proof_accepted": false
+  },
+  "support_publication": {
+    "repository": "con123-gif/URT-Enhanced-v2.0",
+    "branch": "newtons-cathedral",
+    "supporting_files": [
+      {
+        "name": "MO309485_COMPLETE_HAND_PROOF.md",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_COMPLETE_HAND_PROOF.md",
+        "commit": "793cd9a83f3f84fb5acccf576dec9f0770dbc6cb",
+        "bytes": 6007,
+        "sha256": "e0ad77cf4aea6698adf8b70c0b6ab65e0ee80f2d9b2f67701669e13374b4fc9f",
+        "blob_sha": "8d1d2e3b53b602224c4793949a6d0c00d768e10b",
+        "immutable_readback_exact": true
+      },
+      {
+        "name": "MO309485_FULL_KERNEL_PASS.log",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_FULL_KERNEL_PASS.log",
+        "commit": "65bf6fa46f4c29b995acf93d4eddb19cc69f5ee2",
+        "bytes": 593,
+        "sha256": "d3afee0e90877396e5aeecfbba4fc0ec2d3a03611d8188d1cde864b8bb81ce1b",
+        "blob_sha": "36cd823bd1298349517ef4d1638b5b158e92beb7",
+        "immutable_readback_exact": true
+      },
+      {
+        "name": "MO309485_FULL_VERIFICATION_RECEIPT.json",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_FULL_VERIFICATION_RECEIPT.json",
+        "commit": "5e1869d15a355e45e75b37ce6c4f51efdaa84652",
+        "bytes": 1332,
+        "sha256": "e651d84babae2ac6890c8e855192a7bf533de15d2aefd738b4513ed1bcd3b22b",
+        "blob_sha": "431cb2c68b74789396074d6fd29a66ecedeb63c2",
+        "immutable_readback_exact": true
+      },
+      {
+        "name": "MO309485_RUNTIME_INDEPENDENT_VERIFICATION.json",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_RUNTIME_INDEPENDENT_VERIFICATION.json",
+        "commit": "d9cf7efb03846311e2888994a78d9cc3fbc51c4f",
+        "bytes": 2878,
+        "sha256": "584bd5439f95d42f9020cb5e2354e5e5970651897bdb3dab2aa3d4f4306cd9c2",
+        "blob_sha": "1f93408b54b97af2dc4c5237da28e680e20b2a53",
+        "immutable_readback_exact": true
+      },
+      {
+        "name": "MO309485_RUNTIME_FINAL_SCOPE_AUDIT.json",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_RUNTIME_FINAL_SCOPE_AUDIT.json",
+        "commit": "1553d699b9a9242667bb23805cc05ccb405f7274",
+        "bytes": 1338,
+        "sha256": "a0f4fe71c232d23cb629884b6ce7d0dfd9f9a9194af6cbc99203e6d0d3f48ba4",
+        "blob_sha": "dd73b0c8c39f761ad8c16f86df3cb248d60f3815",
+        "immutable_readback_exact": true
+      },
+      {
+        "name": "MO309485_SOURCE_PRIOR_AUDIT.json",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_SOURCE_PRIOR_AUDIT.json",
+        "commit": "08747d16005ddaad1a8ad6a9403563c55987d3be",
+        "bytes": 29934,
+        "sha256": "0ee0a5dfc6381773ebc084e9d0c973f27dea66b6083d0b656b9c2b8f233bfeac",
+        "blob_sha": "85f6809e7a888d87bb7e3f7ebf3fe0a9d4a97479",
+        "immutable_readback_exact": true
+      },
+      {
+        "name": "MO309485_CANONICAL_PUBLICATION_RECEIPT.json",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_CANONICAL_PUBLICATION_RECEIPT.json",
+        "commit": "52b9019ad3115063262f7ecc11d45ece7bc24688",
+        "bytes": 1203,
+        "sha256": "8bbe863d3b7007e59d8323c224dc6778c1bde099b928013885f9acb5ed7ee5ce",
+        "blob_sha": "21476a70b60d02e8d4c4115a1d239b1a9ae418d5",
+        "immutable_readback_exact": true
+      },
+      {
+        "name": "MO309485_FAILED_RUNS.json",
+        "path": "research_archive/2026-11-27_left_to_solve/MO309485_FAILED_RUNS.json",
+        "commit": "4fdf39424533647d589108b953eb3fffee5775ce",
+        "bytes": 8830,
+        "sha256": "86c5bb4a61d58bfead5fe0101f102323ec1c2fb99f66e2adfe71ef2f05a81cbc",
+        "blob_sha": "c2be883114e89b5088e7c7bfe432430a847245f7",
+        "immutable_readback_exact": true
+      }
+    ],
+    "all_exact_immutable_readbacks": true,
+    "no_master_or_ledger_edits": true
+  },
+  "official_pr_readback": {
+    "number": 14443,
+    "url": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/14443",
+    "owner": "con123-gif",
+    "title": "mo-309485",
+    "state": "open",
+    "draft": false,
+    "merged": false,
+    "created_at": "2026-11-27T23:31:12Z",
+    "head": "8bc4b06e55ab63df2f7a028a9fe51d839e108170",
+    "base": "cca378b7340f13933bc5d24885dc28a582e11476",
+    "changed_files": 1,
+    "exact_full_body_readback": true,
+    "entire_canonical_passed_proof_in_body": true,
+    "files": [
+      {
+        "path": "statements/mo-309485.lean",
+        "status": "added",
+        "blob_sha": "da16113dd41601cab7734694f42e665791cc8c68",
+        "additions": 40,
+        "deletions": 0
+      }
+    ],
+    "source_sha256": "825bab2eeac58be791e5e012b0ebfc6e648fea85239ff2e88777f900cccc0bb5",
+    "proof_sha256": "c0ad38242878382adc1156e770e856e303af13ca27af37a948e0b636ef1f91fc",
+    "normal_live_claim": true,
+    "official_full_proof_accepted": false
+  },
+  "entire_private_prepared_pr_body_sha256": "6000168c7a68bdf330a60418173c1f4f356419804292e63706d258903cdf9852",
+  "entire_private_prepared_pr_body_bytes": 26888,
+  "normal_genuine_claim": {
+    "problem": "mo-309485",
+    "agent": "codex-algebra-mo309485",
+    "http": "200",
+    "curl_exit": 0,
+    "utc": "2026-11-27T22:46:49.495517+00:00",
+    "response_bytes": 3382,
+    "mode": "0o600",
+    "attempts": 1,
+    "retry": false,
+    "task": "formalize",
+    "file": "statements/mo-309485.lean",
+    "role": "lead",
+    "othersWorking": 0,
+    "lastNote": 0,
+    "problem_id": "mo-309485",
+    "lease_present": true,
+    "team": [],
+    "teamNotes": []
+  },
+  "coordination_actions": [
+    {
+      "action": "PLAN",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T22:47:33.696274+00:00",
+      "response": {
+        "ok": true,
+        "problem": "mo-309485",
+        "id": 56888
+      }
+    },
+    {
+      "action": "BEAT1",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T22:47:41.010451+00:00",
+      "response": {
+        "ok": true,
+        "role": "lead",
+        "team": [],
+        "notes": [
+          {
+            "id": 56888,
+            "handle": "con123-gif",
+            "at": "2026-11-27T22:47:33.629944+00:00",
+            "note": "PLAN: Prove the complete natural-index classification for T. Amdeberhan's MO309485 matrix: zero is an eigenvalue exactly when n>=1; M0=[3] is included explicitly, not used as a stand-alone disproof of the substantive positive-index question. Preserve the three exact binomial terms and the convention that the lower index j-i gives0 when j<i. The full informal argument verifies Philipp Lampe's proposed odd LEFT nullvector and MTyson's proposed even RIGHT nullvector by three classical finite polynomial/binomial identities and Pascal cancellation. Both proposed vectors are credited to the source comments; no vector-invention, new general method, historical priority, full Lean pass or official acceptance is claimed. Complete current source/all6comments/history and bounded original-paper audits found no exact earlier settlement. The source statement has passed only the static linter so far. Owner/credit: Cornelius Lytollis (@con123-gif), assisted by Codex/GPT-6 (exact serving variant not exposed). Read actual assignment/team notes before work and coordinate helpers; no duplicate statement or preceding complete proof should be raced. Intended full certificate will contain all parity, endpoint and n0 cases."
+          }
+        ],
+        "last_note": 56888,
+        "roleTask": "Main attack: write the proof. Within your first 10 minutes post a note starting with PLAN: (the approach and the lemmas it needs), so teammates can take pieces."
+      }
+    },
+    {
+      "action": "BEAT2",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T22:54:24.760777+00:00",
+      "response": {
+        "ok": true,
+        "role": "lead",
+        "team": [],
+        "notes": [],
+        "last_note": 56888,
+        "roleTask": "Main attack: write the proof. Within your first 10 minutes post a note starting with PLAN: (the approach and the lemmas it needs), so teammates can take pieces."
+      }
+    },
+    {
+      "action": "BEAT3",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T23:02:04.926779+00:00",
+      "response": {
+        "ok": true,
+        "role": "lead",
+        "team": [],
+        "notes": [],
+        "last_note": 56888,
+        "roleTask": "Main attack: write the proof. Within your first 10 minutes post a note starting with PLAN: (the approach and the lemmas it needs), so teammates can take pieces."
+      }
+    },
+    {
+      "action": "BEAT4",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T23:09:08.686214+00:00",
+      "response": {
+        "ok": true,
+        "role": "lead",
+        "team": [],
+        "notes": [],
+        "last_note": 56888,
+        "roleTask": "Main attack: write the proof. Within your first 10 minutes post a note starting with PLAN: (the approach and the lemmas it needs), so teammates can take pieces."
+      }
+    },
+    {
+      "action": "BEAT5",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T23:16:24.747173+00:00",
+      "response": {
+        "ok": true,
+        "role": "lead",
+        "team": [],
+        "notes": [],
+        "last_note": 56888,
+        "roleTask": "Main attack: write the proof. Within your first 10 minutes post a note starting with PLAN: (the approach and the lemmas it needs), so teammates can take pieces."
+      }
+    },
+    {
+      "action": "BEAT6",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T23:22:43.356326+00:00",
+      "response": {
+        "ok": true,
+        "role": "lead",
+        "team": [],
+        "notes": [],
+        "last_note": 56888,
+        "roleTask": "Main attack: write the proof. Within your first 10 minutes post a note starting with PLAN: (the approach and the lemmas it needs), so teammates can take pieces."
+      }
+    },
+    {
+      "action": "BEAT7",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T23:29:06.320337+00:00",
+      "response": {
+        "ok": true,
+        "role": "lead",
+        "team": [],
+        "notes": [],
+        "last_note": 56888,
+        "roleTask": "Main attack: write the proof. Within your first 10 minutes post a note starting with PLAN: (the approach and the lemmas it needs), so teammates can take pieces."
+      }
+    },
+    {
+      "action": "DONE",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T23:32:26.264021+00:00",
+      "response": {
+        "ok": true,
+        "problem": "mo-309485",
+        "id": 61131
+      }
+    },
+    {
+      "action": "RELEASE_SUBMITTED",
+      "http": "200",
+      "curl_exit": 0,
+      "utc": "2026-11-27T23:32:40.477224+00:00",
+      "response": {
+        "ok": true
+      }
+    }
+  ],
+  "mo309485_current_lease_released": true,
+  "no_further_old_token_calls": true,
+  "official_full_proof_accepted": false,
+  "branch_route_note": "Initial create_branch(sha=upstream) returned an unretained error payload; actual branch404/base-object-exists diagnostics prevented a blind retry. Supported base_ref=main fallback was explicitly authorized after compare showed ahead_by0,behind3486,files[]; branch and PR exact one-file diff/readback confirmed. No force/overwrite.",
+  "no_master_ledger_edits": true
+}
