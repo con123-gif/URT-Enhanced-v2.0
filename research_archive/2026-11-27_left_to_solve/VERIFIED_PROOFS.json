@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 4,
-  "complete_kernel_checked_candidates": 28,
+  "complete_kernel_checked_candidates": 29,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -751,11 +751,41 @@
       "prior_credit": "BPP/source questions and crosspost, CC BY-SA4.0; standard floor-addition inequalities; independent root/runtime/algebra source and mathematical challenges.",
       "prepared_statement_branch": "oma-mo487180-statement-codex",
       "prepared_statement_commit": "cf36553dc4bf4e1f38e4f1bf5fe930674146f2dd",
-      "claim_result": "One supportedGETnext returnedHTTP500/nonJSON; no assignment/token returned. Server-side creation after500 unknown. Desk retries stopped."
+      "claim_result": "One supportedGETnext returnedHTTP500/nonJSON; no assignment/token returned. Server-side creation after500 unknown. Desk retries stopped.",
+      "browser_recovery": "Root cloudbrowser public problem/rules accessible; documentedGETclaim failednet::ERR_HTTP_RESPONSE_CODE_FAILURE, no token observed. Browser error-page inspection itself was URL-policy blocked; no workaround/retry. Safe public problem view restored, stillunformalized/0agents. Browserfailure is not evidence of targeted bot blocking."
+    },
+    {
+      "problem_id": "oeis-a372561",
+      "exact_statement": "PROOFS_READY/oeis-a372561.statement.lean",
+      "proof": "PROOFS_READY/oeis-a372561.proof.lean",
+      "statement_sha256": "e8d07240ef7dfc7bd66715a40be89324d6d09cc0f37983d25d68b6efb674553e",
+      "proof_sha256": "5fd42b789d7b470f52f528a652c5a4a83d6f2e1a180945c7da41a4352bd477a3",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46061923315",
+      "verification_job": 140717982673,
+      "verification_commit": "4898031a49f380285d311de875fc5d15c3e79589",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_full_kernel_pass",
+      "full_target_passed_at": "2026-11-27T20:12:50Z",
+      "genuine_open_status": "all_three_exact_source_conjectures_proved_no_prior_settlement_found_in_bounded_primary_review",
+      "proof_summary": "On the fixed reduced-Collatz-27/stretch grid, global minimum Jacobsthal summand counts are7 on n+k=14 and9 on n+k=31, excluding each first entry, and all interior counts are symmetric under n/k exchange. Universal lift-cost bounds, actual finite-orbit/exception witnesses, and symbolic infinite-grid reduction prove all three claims.",
+      "merged_and_credited": "not_confirmed",
+      "statement_pr": null,
+      "statement_merged": false,
+      "public_statement_commit": "638c18c2aa0d47e76b29c3da6aac46bd32a72898",
+      "public_proof_commit": "81bd37f52eae5409f2a6a02a94682160d599f28d",
+      "prepared_statement_branch": "oma-statement-oeis-a372561-20261127",
+      "prepared_statement_commit": "efbd9f9492896f557c49bd4d6db36bc5ba1682ea",
+      "claim_result": "Exactly one supportedclaim20:15:16 returnedHTTP500/noassignment/no token. Server-side mutation unknown. Further calls stopped.",
+      "remaining_obstruction": "Canonical complete certificate uploaded and byte-readback exact. Prepared one-file registration awaits a valid current lease; then actual statement merge, exact imported-target check and full official proof submission/acceptance.",
+      "prior_credit": "Antti Karttunen/source and related sequence authors; classical Jacobsthal identities, base4 digit-sum inequalities and known finite reduced-Collatz orbit; independent root/number/algebra challenges acknowledged."
     }
   ],
   "continuing_beyond_minimum": true,
-  "complete_kernel_checked_certificates": 29,
+  "complete_kernel_checked_certificates": 30,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
   "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
@@ -773,11 +803,14 @@
   ],
   "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T20:05:00.536Z",
+  "record_updated_utc": "2026-11-27T20:16:55.629Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Direct and secure Actions supported claimsHTTP500/empty. New secure batch46056962879/job140701706473 withheldMO319325beforeclaimdueforeign10756, attemptedMO487192once500thenstopped. Zero new assignment tokens.",
   "official_full_proof_checker_acceptances": 4,
   "excluded_known_prior_targets": {
     "mo-511647": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3 alreadyprovesexactfullmatrixclaim; no new count orofficiallease/PR. Existinginflightfullprobeis known-priorformalizationonly."
-  }
+  },
+  "recorded_preceding_foreign_full_proofs": 9,
+  "records_without_known_preceding_proof_or_full_submission": 17,
+  "legacy_candidate_metric_note": "complete_kernel_checked_candidates excludesA158960 only; includes duplicate-withheld certificates and is NOT a current-eligibility or accepted-solve total."
 }
