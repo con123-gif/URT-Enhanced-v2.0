@@ -1,0 +1,24 @@
+{
+  "oeis-a390583.statement.lean": "66ab84441e41cc86ea1ef8c8b16bb749bf23e3be1be6d62a3ce4379e7f53c324",
+  "oeis-a390583.proof.lean": "c1ae5beb5b4ae5f41c82bb0fbd2eb7e3bd4bf4b894ce13f5d111d3a8ed9f5047",
+  "ProbeA390583.lean": "e14304882329e00f8b363837b179b11935a4411fa6c562deacdaa3f7371f715a",
+  "check_commit": "221bdca74010f2129aff8c050274a6df235960e3",
+  "check_parent": "1fe2d3ec98d21c6e9681b2d9fac95042a5dd3022",
+  "full_kernel_status": "passed",
+  "official_statement_check": "accepted",
+  "lease_count": 0,
+  "prior_gate": "bounded primary source/structural audit passed; no priority assertion",
+  "run_id": 46046194063,
+  "job_id": 140665952355,
+  "solution_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "full_proof_errors": [],
+  "official_statement_errors": [],
+  "official_statement_PR": null,
+  "official_proof_PR": null,
+  "confirmed_lease_count": 0,
+  "local_claim_attempt": "one HTTP500 without assignment; all local claim retries stopped; secure recovery coordinated"
+}

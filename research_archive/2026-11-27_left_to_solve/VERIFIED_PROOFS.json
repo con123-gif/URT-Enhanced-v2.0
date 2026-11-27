@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 3,
-  "complete_kernel_checked_candidates": 22,
+  "complete_kernel_checked_candidates": 23,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -245,9 +245,11 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8569",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Both Gaussian numerator conjectures; exceptional initial residue retained.",
-      "statement_state": "open",
-      "statement_merged": false,
-      "statement_merge_commit": null
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merge_commit": null,
+      "statement_merged_at": "2026-11-27T17:53:24Z",
+      "remaining_obstruction": "Actual registered main statement byte-identical; exact imported-target check underway before one-file full proof submission. Fresh generic problem lease acquired; website task descriptor lags registered repository state."
     },
     {
       "problem_id": "mo-198816",
@@ -265,9 +267,11 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8568",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Exact13x13 stochastic-matrix counterexample; all source hypotheses.",
-      "statement_state": "open",
-      "statement_merged": false,
-      "statement_merge_commit": null
+      "statement_state": "closed",
+      "statement_merged": true,
+      "statement_merge_commit": null,
+      "statement_merged_at": "2026-11-27T17:53:21Z",
+      "remaining_obstruction": "Actual registered main statement byte-identical; exact imported-target check underway before one-file full proof submission. Fresh generic problem lease acquired; website task descriptor lags registered repository state."
     },
     {
       "problem_id": "mo-298064",
@@ -504,10 +508,30 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9704",
       "statement_state": "open",
       "statement_merged": false
+    },
+    {
+      "problem_id": "oeis-a390583",
+      "exact_statement": "PROOFS_READY/oeis-a390583.statement.lean",
+      "proof": "PROOFS_READY/oeis-a390583.proof.lean",
+      "statement_sha256": "66ab84441e41cc86ea1ef8c8b16bb749bf23e3be1be6d62a3ce4379e7f53c324",
+      "proof_sha256": "c1ae5beb5b4ae5f41c82bb0fbd2eb7e3bd4bf4b894ce13f5d111d3a8ed9f5047",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46046194063",
+      "verification_job": 140665952355,
+      "verification_commit": "221bdca74010f2129aff8c050274a6df235960e3",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass_and_unmodified_statement_checker_accepted",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full primitive equal-largest-integer-radius Descartes cube/twice-cube conjecture by reduced-fraction uniqueness and three dyadic cases; Bradley background acknowledged.",
+      "remaining_obstruction": "Official statement registration, actual merge, fresh proof lease and exact imported-target check pending.",
+      "genuine_open_status": "bounded_source_and_Bradley_prior_audit_passed_no_priority_guarantee"
     }
   ],
   "continuing_beyond_minimum": true,
-  "complete_kernel_checked_certificates": 23,
+  "complete_kernel_checked_certificates": 24,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
   "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
