@@ -1,0 +1,66 @@
+{
+  "status": "SAME_PROBLEM_TARGET_ADAPTER_KERNEL_PASS_NOT_NEW_CERTIFICATE",
+  "run_id": 46078851442,
+  "job_id": 140772859618,
+  "commit": "b3c7160de56edb9cc7a12d4f084d0b93dcb1f0b0",
+  "artifact_id": 15236113412,
+  "artifact_sha256": "79f78d08ce8919ee259bbec0cbc5e60cab8da99db8604d2198aab1e907be4f68",
+  "digest_matches": true,
+  "actual_exit": 0,
+  "all_error_forms": [],
+  "axioms": [
+    {
+      "theorem": "OMA.MO430643.defect_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.MO430643.full_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.solution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "byte_checks": {
+    "statement_sha256": "ccd96caa9b504c58cacbd005f7b32cba2c71f23985781f61f955ca32446c8a16",
+    "proof_sha256": "8badfe72b09906ee6feeea2c7824fb9bb4ab5938c19c5c22ecaf5a9b714aff9f",
+    "probe_sha256": "8962e602e6d3837aedaf2a2ba7554df901d5d98e69032f13a357de8f0375296c",
+    "entire_literal_statement_embedded": true,
+    "entire_canonical_proof_body_embedded": true,
+    "local_probe_equal": true
+  },
+  "statement_checker": {
+    "file": "statements/mo-430643.lean",
+    "type": "statement",
+    "problem": "mo-430643",
+    "module": "OMAStatements.S_mo_430643",
+    "ok": true,
+    "kind": "statement",
+    "polarity": "proof",
+    "theorem": "OMA.S_mo_430643.main",
+    "imports": "Mathlib",
+    "errors": [],
+    "verdict": "accepted",
+    "reason": "the statement compiles; it now needs a human review of the translation",
+    "log": "OMASubmission_6225.lean:18:8: warning: declaration uses `sorry`\n'OMA.S_mo_430643.main' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]"
+  },
+  "source_scope": "Same complete prime/exponent/product inequality; extra quantified r is tied exactly to the product and the three exclusions are a finite-set membership condition. No hypothesis weakening or new mathematical problem.",
+  "original_complete_certificate_proof_sha256": "d05018f0ec188fd037c397a3ba2c4ff8497c769dbf3a509dcd34652668936460",
+  "official_statement_pr": 13174,
+  "actual_merge_claim": false,
+  "official_imported_target_check_after_actual_merge_still_required": true,
+  "official_acceptance_claim": false
+}
