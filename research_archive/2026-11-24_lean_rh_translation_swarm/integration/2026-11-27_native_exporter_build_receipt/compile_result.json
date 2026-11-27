@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "seconds": 3.94,
+  "log": "compile.log",
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "-R",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build",
+    "-o",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/NativeGraph.olean",
+    "-c",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/NativeGraph.c",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/NativeGraph.lean"
+  ]
+}

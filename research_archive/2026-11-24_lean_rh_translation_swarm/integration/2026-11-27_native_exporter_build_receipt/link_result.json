@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "seconds": 1.68,
+  "log": "link.log",
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/leanc",
+    "-O3",
+    "-o",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/native_graph",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/NativeGraph.c"
+  ]
+}

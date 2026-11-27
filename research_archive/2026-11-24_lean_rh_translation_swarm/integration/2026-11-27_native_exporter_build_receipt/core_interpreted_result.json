@@ -1,0 +1,10 @@
+{
+  "returncode": 0,
+  "seconds": 1.02,
+  "log": "core_interpreted.log",
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/InterpretedCore.lean"
+  ]
+}

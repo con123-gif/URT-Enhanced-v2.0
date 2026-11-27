@@ -10,10 +10,12 @@ import argparse
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 
 from audit_active_b2_graph import adapt_exporter_435
 import run_compact_b2_native_replay as native
+from compare_complete_graph_exports import validate_execution_modes
 
 
 def validated_executable(directory):
@@ -32,11 +34,36 @@ def validated_executable(directory):
                    equivalence["independent_verifier_passed_both"] is True and
                    equivalence["record_sets_equal"] is True,
                    "Native/interpreted collector compatibility not checked")
+    core_i = directory / "core_interpreted_result.json"
+    core_n = directory / "core_native_result.json"
+    native.require(core_i.is_file() and core_n.is_file(),
+                   "Require both actual core execution-mode receipts; rebuild the inspection program")
+    validate_execution_modes(json.loads(core_i.read_text()), json.loads(core_n.read_text()))
     binary = directory / "native_graph"
     with binary.open("rb") as stream:
         native.require(hashlib.file_digest(stream, "sha256").hexdigest() ==
                        manifest["executable_sha256"], "Native graph executable changed")
     return binary, manifest
+
+
+def execute_graph(directory, compact_root, env, lean_bin, module_name, roots, output, log, seconds):
+    """Inspect checked objects and report actual collectAxioms output."""
+    binary, build = validated_executable(directory)
+    command = [binary, Path(lean_bin).resolve().parent, module_name, output, *roots]
+    receipt = native.step(command, compact_root, env, log, seconds)
+    axioms = {}
+    if receipt["returncode"] == 0 and Path(output).is_file():
+        with Path(output).open() as stream:
+            header = json.loads(stream.readline())
+        for row in header.get("root_axioms", []):
+            name = ".".join(str(x[1]) for x in row["root"])
+            axioms[name] = [".".join(str(x[1]) for x in ax) for ax in row["lean_collect_axioms"]]
+    allowed = {"propext", "Classical.choice", "Quot.sound"}
+    receipt.update(axioms=axioms,
+        axiom_audit_ok=set(axioms) == set(roots) and all(set(a) <= allowed for a in axioms.values()),
+        native_exporter_build=build, native_graph_execution=True, new_Lean_execution=False,
+        full_RH_replay=False)
+    return receipt
 
 
 def source():
@@ -85,9 +112,73 @@ def main (args : List String) : IO UInt32 := do
 '''
 
 
+def build(out, lean_bin, manifest, seconds):
+    """Build only the inspection program and compare complete core graphs."""
+    lean_bin = lean_bin.resolve()
+    env = os.environ.copy()
+    env.update(LEAN_NUM_THREADS="2", LEAN_ABORT_ON_PANIC="1")
+    env["PATH"] = str(lean_bin) + os.pathsep + env["PATH"]
+    version = native.capture([lean_bin / "lean", "--version"])
+    native.require("4.35.0" in version and "eb6cafb7290e8bd5f2937522d8d804f58f02bafc" in version,
+                   "Use the exact pinned Lean release")
+    (out / "version.log").write_text(version + "\n")
+
+    def run(label, argv, limit):
+        print(json.dumps({"phase": label, "state": "started"}), flush=True)
+        result = native.step(argv, out, env, out / (label + ".log"), limit)
+        result["argv"] = list(map(str, argv))
+        native.dump(out / (label + "_result.json"), result)
+        native.require(result["returncode"] == 0, "Native exporter " + label + " failed")
+        return result
+
+    run("compile", [lean_bin / "lean", "-R", out, "-o", out / "NativeGraph.olean",
+                    "-c", out / "NativeGraph.c", out / "NativeGraph.lean"], seconds)
+    run("link", [lean_bin / "leanc", "-O3", "-o", out / "native_graph", out / "NativeGraph.c"], seconds)
+    spec = importlib.util.spec_from_file_location("native_core_comparison", native.KERNEL / "RUN26_COMPACT_GRAPH.py")
+    graph = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(graph)
+    graph.ROOTS = ["Nat.le_refl"]
+    interpreted = adapt_exporter_435(graph.driver()).replace("import Main\n", "", 1)
+    (out / "InterpretedCore.lean").write_text(interpreted)
+    native_run = run("core_native", [out / "native_graph", lean_bin.parent, "Lean",
+                        out / "core_native.jsonl", "Nat.le_refl"], seconds)
+    env["CATHEDRAL_RH_GRAPH"] = str(out / "core_interpreted.jsonl")
+    interpreted_run = run("core_interpreted", [lean_bin / "lean", "--tstack=400000", out / "InterpretedCore.lean"], seconds)
+    modes = validate_execution_modes(interpreted_run, native_run)
+    rows = {}
+    for name in ["core_native", "core_interpreted"]:
+        audit = out / name
+        audit.mkdir(exist_ok=True)
+        graph.audit_union(out / (name + ".jsonl"), audit, audit)
+        rows[name] = [json.loads(line) for line in (out / (name + ".jsonl")).read_text().splitlines()]
+    nodes = lambda rs: {json.dumps(r["id"], sort_keys=True): r for r in rs if r["record"] == "node"}
+    a, b = rows["core_native"], rows["core_interpreted"]
+    result = {"record_sets_equal": nodes(a) == nodes(b), "headers_equal": a[0] == b[0],
+              "footers_equal": a[-1] == b[-1], "native_nodes": len(nodes(a)),
+              "independent_verifier_passed_both": True, "all_checks_pass": False,
+              "execution_modes_valid": True, "execution_modes": modes,
+              "scope": "Nat.le_refl compatibility only; no B2/C2/RH proof claim", "full_RH_replay": False}
+    result["all_checks_pass"] = all(result[k] for k in
+        ["record_sets_equal", "headers_equal", "footers_equal", "independent_verifier_passed_both"])
+    native.dump(out / "core_equivalence_results.json", result)
+    native.require(result["all_checks_pass"], "Native and interpreted core records differ")
+    with (out / "native_graph").open("rb") as stream:
+        digest = hashlib.file_digest(stream, "sha256").hexdigest()
+    manifest.update(executable_sha256=digest, lean_version=version, equivalence_verified=True,
+                    core_equivalence_verified=True, equivalence_scope="Nat.le_refl only",
+                    compile_returncode=0, link_returncode=0)
+    native.dump(out / "native_graph_build.json", manifest)
+    validated_executable(out)
+    print(json.dumps({"native_exporter_ready": True, "core_equivalence": result, "full_RH_replay": False}), flush=True)
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--build", action="store_true",
+                   help="Build the inspection executable and require both independent core checks")
+    p.add_argument("--lean-bin", type=Path)
+    p.add_argument("--seconds", type=int, default=600)
     args = p.parse_args()
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -105,6 +196,9 @@ def main():
                 "full_RH_replay": False}
     native.dump(out / "native_graph_input.json", manifest)
     print(path)
+    if args.build:
+        native.require(args.lean_bin is not None, "Provide the pinned Lean binary directory")
+        build(out, args.lean_bin, manifest, args.seconds)
 
 
 if __name__ == "__main__":

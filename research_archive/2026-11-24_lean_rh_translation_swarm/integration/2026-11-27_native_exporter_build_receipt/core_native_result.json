@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "seconds": 1.47,
+  "log": "core_native.log",
+  "argv": [
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/native_graph",
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux",
+    "Lean",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/native_graph_repro_build/core_native.jsonl",
+    "Nat.le_refl"
+  ]
+}

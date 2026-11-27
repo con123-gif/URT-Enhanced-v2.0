@@ -1,0 +1,20 @@
+{
+  "roots": [
+    "Nat.le_refl"
+  ],
+  "nodes": 11,
+  "edges": 29,
+  "missing": 0,
+  "mask_histogram": {
+    "1": 11
+  },
+  "per_root": {
+    "Nat.le_refl": {
+      "exit": 0,
+      "nodes": 11,
+      "missing": 0,
+      "log": "audit-0.json"
+    }
+  },
+  "naive_repeated_nodes": 11
+}
