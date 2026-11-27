@@ -63,14 +63,27 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
       c2_real_determinant_invariant (E := E) (n := n) ι η
     simp [rankTwist, Space.lift, ↓mul_inv, -Prod.forall] at hc hL hv
     change ∀ f g, thetaIntegral .. = _ at hL
+    have hInt (Q : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ) :
+        Integrable (fun z : G E (1 : Empty → ℤˣ) ↦
+          ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 z g)
+            (1 : Matrix n Empty 𝔪.ResRing → ℂ)) Q) (stdSpace E Empty).quotMeasure := by
+      simpa only [modKernelBilin_apply] using!
+        (isRapid_modKernel (stdSpace E Empty) (stdSpace E n) α α hα.1
+          (Ψ := (1 : Matrix n Empty 𝔪.ResRing → ℂ))
+          (fun y _ ↦ ⟨0, by ext i; cases i⟩) Q g).integrable (by fun_prop [modKernel])
+    let ℓ₀ : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ →ₗ[ℂ] ℂ :=
+      { toFun := fun Q ↦ ∫ z, ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 z g)
+            (1 : Matrix n Empty 𝔪.ResRing → ℂ)) Q ∂(stdSpace E Empty).quotMeasure
+        map_add' := by
+          intro Q R
+          simp only [map_add]
+          exact integral_add (hInt Q) (hInt R)
+        map_smul' := by
+          intro a Q
+          simp only [map_smul, integral_smul, RingHom.id_apply] }
     specialize hκ x
       ((L · ∘L .flip (integrated _) _) ∘ (g * ⟨·, 1⟩))
-      (c • ⟨⟨(∫ x, modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x g
-        (1 : Matrix n Empty 𝔪.ResRing → ℂ) · ∂(stdSpace E Empty).quotMeasure),
-        by simp [integral_add, map_add,
-          (isRapid_modKernel (stdSpace E Empty) (stdSpace E n) α α
-            hα.1 (fun y _ ↦ ⟨0, by ext i; cases i⟩) _ g).integrable
-            (by fun_prop [modKernel])]⟩, by simp⟩)
+      (c • ℓ₀)
       (by
         intro g' ⟨a, b⟩ w
         change (L (g * (g', 1)))
@@ -87,19 +100,23 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
           filter_upwards [] with h₀
           simp only [modKernelBilin_apply, modKernel, modDatum]
           rw [← h, ← pairWeil_integrated_right α α, ← pairTheta_mul] <;> simp)) η
-    simp only [Function.comp_apply, ContinuousLinearMap.comp_apply,
-      ContinuousLinearMap.flip_apply, LinearMap.comp_apply, LinearMap.smul_apply,
-      smul_eq_mul, mul_one] at hκ
-    erw [← hL, thetaIntegral, integral_quotMeasure_eq_classSum
+    change κ x * (L (g * (1, 1)))
+        (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) (polyVector _ P)) =
+      c * ℓ₀ (matchedPoly (ι := ι) (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η) at hκ
+    have hg₁ : g * ((1 : GInf E (1 : n → ℤˣ)), (1 : Gf E n)) = g := mul_one g
+    rw [hg₁, ← hL] at hκ
+    erw [thetaIntegral, integral_quotMeasure_eq_classSum
       (V := stdSpace E n)
-      (F := fun h ↦ modKernel (stdSpace E n) (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) P g h)
+      (F := fun h ↦ pairTheta (stdSpace E n) (stdSpace E n) α 1
+        (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) (polyVector _ P)) (g, h))
       (f := modKernelI (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) P g)
       ((pairThetaKer (stdSpace E n) (stdSpace E n) α 1).swap.theta_rat_mul
         (φ := modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) (polyVector _ P))
         (h := g))
-      (fun _ ↦ integral_eq_const (.of_forall fun x ↦ ?_)) (Kf E n) ?_] at hκ
+      (fun _ ↦ integral_eq_const (.of_forall fun x ↦ ?_)) (Kf E n) ?_
+      (hF := by fun_prop)] at hκ
     rw [division_def α, ← one_mul β, ← mul_one α]
-    simpa [↓modKernel_twist, ← mul_classSum, field] using hκ
+    simpa [ℓ₀, modKernelBilin_apply, ↓modKernel_twist, ← mul_classSum, field] using hκ
     · intro k hk _
       rw [modKernelI, modKernel_mul_Kf_right (k := ⟨k, hk⟩), hα.apply_det]
       congr with

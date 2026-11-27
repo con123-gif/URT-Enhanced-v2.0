@@ -1,0 +1,172 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:44:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:93:30: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : G E 1), modKernel (stdSpace E n) (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) P g x ∂(stdSpace E n).quotMeasure
+in the target expression
+  κ x *
+      ∫ (h : G E 1),
+        pairTheta (stdSpace E n) (stdSpace E n) α 1
+          ((((stdSpace E n).hom (stdSpace E n)).integrated
+              ((polyVector (realSigns E (homSigns 1 1)))
+                ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))
+                  (stackedDetProd (Equiv.emptySum Empty n) η))))
+            (((((stdSpace E n).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn ((fun A ↦ χ A.det) ∘ vecToMat)))
+              ((stdSpace E n).hom (stdSpace E n)).vacElem))
+          (g * (1, 1), h) ∂(stdSpace E n).quotMeasure =
+    c *
+      {
+          toFun := fun x ↦
+            ∫ (x_1 : G E 1),
+              ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) x ∂(stdSpace E Empty).quotMeasure,
+          map_add' := ⋯, map_smul' := ⋯ }
+        (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
+
+case h.refine_2
+E n : Type
+inst✝⁴ : Field E
+inst✝³ : CMType E
+inst✝² : WeilData E
+inst✝¹ : Fintype n
+he : Even (Fintype.card n)
+hn : 2 ≤ Fintype.card n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+Q₀ : MvPolynomial (NumberField.InfinitePlace E × n × Empty) ℂ
+κ : PairFock E 1 1 → ℂ
+hd : Fintype.card n = 2 * (Fintype.card n / 2)
+hμ : ∀ (q : NumberField.InfinitePlace E), ↑(Fintype.card n) ≤ 2 * (↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2))
+C : ℝ
+x : fockSpace (realSigns E (homSigns 1 1))
+left✝ : IsRapidDatum x
+H :
+  ∀ (𝔪 : Modulus E) (ν : AutChar E) (χ : MulChar 𝔪.ResRing ℂ),
+    IsTameFor 𝔪 ν (fun q ↦ ↑(Fintype.card (ι q)) + ↑(Fintype.card n / 2)) χ →
+      have γ := rankTwist ν⁻¹ n;
+      ∃ c,
+        c ≠ 0 ∧
+          ‖c‖ ^ 2 = C * lValueProd 𝔪.places ν (Fintype.card n / 2) ∧
+            ∀ (g : G E 1),
+              thetaIntegral (stdSpace E n) (stdSpace E n) γ 1
+                  (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ (χ A.det)⁻¹) x) g =
+                c *
+                  ∫ (h : G E 1),
+                    pairTheta (stdSpace E Empty) (stdSpace E n) γ γ
+                      (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+                      (h, g) ∂(stdSpace E Empty).quotMeasure
+𝔪 : Modulus E
+α : AutChar E
+χ : MulChar 𝔪.ResRing ℂ
+hα : IsTameFor 𝔪 α (fun τ ↦ -↑(Fintype.card (ι τ))) χ
+this : α.HasWeight (fun τ ↦ -↑(Fintype.card (ι τ))) ⋯.choose := (Exists.choose_spec hα.right).left
+ht :
+  IsTameFor 𝔪 (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (fun τ ↦ ↑(Fintype.card (ι τ)) + ↑(Fintype.card n / 2))
+    χ⁻¹
+c : ℂ
+hc₀ : c ≠ 0
+q : ‖c‖ ^ 2 = C * lValueProd 𝔪.places (α⁻¹ * WeilData.upsilonU1 ^ (Fintype.card n / 2)) (Fintype.card n / 2)
+hP : IsPartner ⊤ (Equiv.emptySum Empty n) χ⁻¹ (fun A ↦ χ A.det) 1
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+β : AutChar E
+g : G E 1
+P : MvPolynomial (NumberField.InfinitePlace E × n × n) ℂ :=
+  (renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η)
+hv :
+  ∀ (u : GInf E 1),
+    ((realPairWeil (fun τ ↦ -↑(Fintype.card (ι τ))) 0) (1, u))
+        ((polyVector (realSigns E (homSigns 1 1)))
+          ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η))) =
+      (polyVector (realSigns E (homSigns 1 1)))
+        ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η))
+L : G E 1 → 𝒮 ((stdSpace E n).hom (stdSpace E n)) →L[ℂ] ℂ
+hκ :
+  κ x *
+      ∫ (h : G E 1),
+        pairTheta (stdSpace E n) (stdSpace E n) α 1
+          ((((stdSpace E n).hom (stdSpace E n)).integrated
+              ((polyVector (realSigns E (homSigns 1 1)))
+                ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl))
+                  (stackedDetProd (Equiv.emptySum Empty n) η))))
+            (((((stdSpace E n).hom (stdSpace E n)).name 𝔪.places) (𝔪.liftFn ((fun A ↦ χ A.det) ∘ vecToMat)))
+              ((stdSpace E n).hom (stdSpace E n)).vacElem))
+          (g * (1, 1), h) ∂(stdSpace E n).quotMeasure =
+    c *
+      {
+          toFun := fun x ↦
+            ∫ (x_1 : G E 1),
+              ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) x ∂(stdSpace E Empty).quotMeasure,
+          map_add' := ⋯, map_smul' := ⋯ }
+        (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
+hc :
+  ∀ (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 (modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) x) g =
+      c *
+        ∫ (h : G E 1),
+          pairTheta (stdSpace E Empty) (stdSpace E n) α α
+            (modDatum (stdSpace E Empty) (stdSpace E n) 𝔪 1 ((polyVector (realSigns E (homSigns 1 1))) Q₀))
+            (h, g) ∂(stdSpace E Empty).quotMeasure
+hL :
+  ∀ (f : 𝒮 ((stdSpace E n).hom (stdSpace E n))) (g : G E 1),
+    thetaIntegral (stdSpace E n) (stdSpace E n) α 1 f g = (L g) f
+⊢ (κ x / c *
+      stdClassSum (Kf E n) fun x ↦
+        modKernelI (stdSpace E n) α β 𝔪 (fun A ↦ χ A.det)
+          ((renameRowsCols id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)) (stackedDetProd (Equiv.emptySum Empty n) η)) g x) =
+    ∫ (x : G E 1),
+      modKernel (stdSpace E Empty) (stdSpace E n) (α / β) α 𝔪 1
+        (matchedPoly (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η) x g ∂(stdSpace E Empty).quotMeasure
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    funext fun x_1 ↦ map_add ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) x y
+  has type
+    @Eq (G E 1 → ℂ) (fun x_1 ↦ ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) (x + y)) fun x_1 ↦
+      ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) x +
+        ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) y
+  but is expected to have type
+    @Eq (G E 1 → ℂ) (fun x_1 ↦ ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) (x + y)) fun x_1 ↦
+      modKernel (stdSpace E Empty) (stdSpace E n) α α 𝔪 1 x x_1 g +
+        modKernel (stdSpace E Empty) (stdSpace E n) α α 𝔪 1 y x_1 g
+  in the application
+    congrArg (MeasureTheory.integral (stdSpace E Empty).quotMeasure)
+      (funext fun x_1 ↦ map_add ((modKernelBilin (stdSpace E Empty) (stdSpace E n) α α 𝔪 x_1 g) 1) x y)
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:93:30: error: could not synthesize default value for parameter 'hF' using tactics
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:93:30: error: `fun_prop` was unable to prove `Continuous fun h ↦ modKernel (stdSpace E n) (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) P g h`
+
+Issues:
+  No theorems found for `modKernel` in order to prove `Continuous fun h ↦ modKernel (stdSpace E n) (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) P g h`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:71:10: warning: This simp argument is unused:
+  (isRapid_modKernel (stdSpace E Empty) (stdSpace E n) α α hα.1 (fun y _ ↦ ⟨0, by ext i; cases i⟩) _ g).integrable
+        (by fun_prop [modKernel])
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [integral_add, map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:91:38: warning: This simp argument is unused:
+  LinearMap.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.flip_apply,
+    LinearMap.smul_apply, smul_eq_mul, mul_one] at hκ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:92:19: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.flip_apply,
+    LinearMap.comp_apply, LinearMap.smul_apply, smul_eq_mul] at hκ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] field_simp [measureReal_univ_ne_zero]
+'c2_empty_matching' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_stdClassSum_det_modKernel_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_9/C2DeterminantClassSum.lean:139:0: error: C2 determinant consumer misses a checked specialized supplier
