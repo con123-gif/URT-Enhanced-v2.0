@@ -1,0 +1,42 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_8/C2DeterminantClassSum.lean:44:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_8/C2DeterminantClassSum.lean:93:6: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (4000000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_8/C2DeterminantClassSum.lean:68:10: warning: This simp argument is unused:
+  (isRapid_modKernel (stdSpace E Empty) (stdSpace E n) α α hα.1 (fun y _ ↦ ⟨0, by ext i; cases i⟩) _ g).integrable
+        (by fun_prop [modKernel])
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [integral_add, map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_8/C2DeterminantClassSum.lean:88:38: warning: This simp argument is unused:
+  LinearMap.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.flip_apply,
+    LinearMap.smul_apply, smul_eq_mul, mul_one] at hκ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_8/C2DeterminantClassSum.lean:89:19: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.flip_apply,
+    LinearMap.comp_apply, LinearMap.smul_apply, smul_eq_mul] at hκ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] field_simp [measureReal_univ_ne_zero]
+'c2_empty_matching' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_stdClassSum_det_modKernel_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_determinant_class_sum_8/C2DeterminantClassSum.lean:133:0: error: C2 determinant consumer misses a checked specialized supplier

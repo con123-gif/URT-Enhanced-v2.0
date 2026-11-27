@@ -54,7 +54,10 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
       partner_block (Equiv.emptySum Empty n) χ⁻¹ (1 : Matrix n Empty 𝔪.ResRing → ℂ)
   refine ⟨κ x / c, ?_, fun η β g ↦ ?_⟩
   · rw [norm_div, div_pow, q, div_div]
-  · obtain ⟨⟨L, hL⟩, hv⟩ :=
+  · let P : MvPolynomial (NumberField.InfinitePlace E × n × n) ℂ :=
+      renameRowsCols id ((Equiv.sumEmpty n Empty) ∘ Sum.inl)
+        (stackedDetProd (Equiv.emptySum Empty n) η)
+    obtain ⟨⟨L, hL⟩, hv⟩ :=
       (pairThetaKer (stdSpace E n) (stdSpace E n) α 1).swap.exists_clm_lift
         (isAutomorphic_const _ 1).mem_rapidFunctions,
       c2_real_determinant_invariant (E := E) (n := n) ι η
@@ -87,11 +90,14 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
     simp only [Function.comp_apply, ContinuousLinearMap.comp_apply,
       ContinuousLinearMap.flip_apply, LinearMap.comp_apply, LinearMap.smul_apply,
       smul_eq_mul, mul_one] at hκ
-    set_option maxHeartbeats 1000000 in
     erw [← hL, thetaIntegral, integral_quotMeasure_eq_classSum
-      (f := modKernelI (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) _ g)
-      (pairThetaKer ..).swap.theta_rat_mul
-      (fun _ ↦ integral_eq_const (.of_forall fun x ↦ ?_)) (Kf ..) ?_] at hκ
+      (V := stdSpace E n)
+      (F := fun h ↦ modKernel (stdSpace E n) (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) P g h)
+      (f := modKernelI (stdSpace E n) α 1 𝔪 (fun A ↦ χ A.det) P g)
+      ((pairThetaKer (stdSpace E n) (stdSpace E n) α 1).swap.theta_rat_mul
+        (φ := modDatum (stdSpace E n) (stdSpace E n) 𝔪 (fun A ↦ χ A.det) (polyVector _ P))
+        (h := g))
+      (fun _ ↦ integral_eq_const (.of_forall fun x ↦ ?_)) (Kf E n) ?_] at hκ
     rw [division_def α, ← one_mul β, ← mul_one α]
     simpa [↓modKernel_twist, ← mul_classSum, field] using hκ
     · intro k hk _
