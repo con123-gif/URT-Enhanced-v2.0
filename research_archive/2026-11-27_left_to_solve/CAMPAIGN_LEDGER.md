@@ -1,6 +1,6 @@
 # Left to Solve campaign ledger
 
-Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex, GPT-6 (exact serving variant not exposed). Updated 27 November 2026, approximately 15:49 UTC. This is a progress record, not a completion or priority claim.
+Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex, GPT-6 (exact serving variant not exposed). Updated 27 November 2026, following the 16:24 UTC hourly reconciliation. This is a progress record, not a completion or priority claim.
 
 ## Confirmed count
 
@@ -8,7 +8,7 @@ Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex, GPT-6 (exact servin
 
 **3 full proof PRs submitted, all 3 accepted by the actual upstream Lean checker.** Their public verdict/merge stage remains pending at the latest reads. A kernel-accepted checker payload is recorded separately from a merged, credited acceptance. Statements, notes, reductions, known prior results and private kernel certificates do not enter the minimum twenty.
 
-Nine candidate open-problem results have complete proofs/disproofs that passed the pinned Lean kernel, including those three submissions. Six await completion of their statement-to-proof pipeline. A tenth complete kernel certificate, A390815, is conservatively excluded from the genuine-new count after the final crossreference audit found prior mathematics. The current matrix counterexample MO198816 is additional exact mathematics, still awaiting its Lean result. A058128 was detected as prior solved before any claim or submission and is excluded.
+Twelve candidate open-problem results have complete proofs/disproofs that passed the pinned Lean kernel, including the three submitted proofs. Nine await completion of the statement-to-proof pipeline. See the subsequent 16:24 reconciliation below for three new verified results, including MO198816. Known-prior A390815 and A399155 are excluded; A058128 was detected as prior solved and excluded. Final novelty/source audits remain required.
 
 ## Full proof submissions
 
@@ -74,3 +74,17 @@ The official desk intermittently returned500. Using supported HTTP1.1 with User-
 5. Preserve every substantial proof and its actual verification receipt; rebase on current newtons-cathedral before updates and keep concurrent RH/archive edits.
 
 Exact verification environment: formal-conjectures9097e2f90e66d2f6244209cb1c07f7120d17ec53, Lean4.33.1, Mathlib0df444a360eaa60ab8c11dca51a86af692955474. Isolated verifier branch con123-gif/open-math-agents:oma-campaign-20261127. No local-RH runtime, workflow or schedule was used for these checks.
+
+## Hourly 16:24 session — subsequent reconciliation (27 November 2026)
+
+Actual proof PRs7724/7815/7817 are all still open, unmerged. **0 / 20 credited; 3 complete proof PRs kernel-accepted and awaiting upstream review/merge.** Direct metadata confirms all previously pending statement PRs remain unmerged. PR7223, PR7625, and third-party reduction PR7177 have explicit checker acceptance comments followed by GitHub HTTP403 merge failures; no merge or credit is inferred from the earlier optimistic acceptance comment. Do not bypass permissions or duplicate PRs.
+
+Three additional distinct complete Lean-checked candidates from independent parallel work were confirmed by inspecting the actual successful job logs and axiom reports. All three currently have open statement PRs (not proof PRs):
+
+| ID | Complete mathematical result | Actual kernel receipt | Statement PR |
+|---|---|---|---|
+| MO198816 | Exact 13x13 positive stochastic, strictly diagonally dominant matrix counterexample; eigenvalue 3151/3200+(7/40)i | [46031510476](https://github.com/con123-gif/open-math-agents/actions/runs/46031510476), job140616213958, permitted axioms only; supersedes older failed probe | [8568](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8568) |
+| A124869 | Complete numerator recurrence and generating function for Re((3i-1)^(-n)) | [46031012204](https://github.com/con123-gif/open-math-agents/actions/runs/46031012204), job140614498460, OMA.solution permitted axioms only | [8569](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8569) |
+| A124870 | Complete denominator recurrence and generating function for Re((3i-1)^(-n)) | [46029987618](https://github.com/con123-gif/open-math-agents/actions/runs/46029987618), job140611036825, permitted axioms only | [8442](https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/8442) |
+
+Thus the campaign has at least 12 complete kernel-checked candidate problems (9 earlier + 3 new, subject to final novelty/source audit); 9 await the statement-to-proof pipeline. No known-prior result counts. A401895 exact search extended to every admissible length through 660, 11,996,888 complete candidate words excluded, including 1,152 direct arbitrary-precision cross-checks. Infinite case still open. [Hourly certificate and receipts](HOURLY_1624_REVERSAL_DFS_660.md). No new official lease, PR or note by this hourly session because fresh direct live desk access failed; current upstream rules source was retrieved. Resume from new statuses rather than the superseded matrix probe row.
