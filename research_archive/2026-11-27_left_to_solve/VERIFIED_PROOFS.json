@@ -745,10 +745,13 @@
       "merged_and_credited": "not_confirmed",
       "statement_pr": null,
       "statement_merged": false,
-      "remaining_obstruction": "Full canonical statement/proof publicly uploaded and exact byte readback verified. Fresh final gates, actual valid lease, official registration/merge, imported-target proof check and full official acceptance remain.",
+      "remaining_obstruction": "Full certificate uploaded and verified. One-file official statement branch prepared; claim serviceHTTP500 prevents a confirmed valid lease and officialPR. Await supported recovery, actual registration merge, exact imported-target check and full submission/acceptance.",
       "public_statement_commit": "2656e92d6c5aa25c7c935e42de5c87182c226f13",
       "public_proof_commit": "8ac7d6949a7c982cdf6138c27974dca2450cdf68",
-      "prior_credit": "BPP/source questions and crosspost, CC BY-SA4.0; standard floor-addition inequalities; independent root/runtime/algebra source and mathematical challenges."
+      "prior_credit": "BPP/source questions and crosspost, CC BY-SA4.0; standard floor-addition inequalities; independent root/runtime/algebra source and mathematical challenges.",
+      "prepared_statement_branch": "oma-mo487180-statement-codex",
+      "prepared_statement_commit": "cf36553dc4bf4e1f38e4f1bf5fe930674146f2dd",
+      "claim_result": "One supportedGETnext returnedHTTP500/nonJSON; no assignment/token returned. Server-side creation after500 unknown. Desk retries stopped."
     }
   ],
   "continuing_beyond_minimum": true,
@@ -770,7 +773,7 @@
   ],
   "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
   "pending_full_proof_submissions": 1,
-  "record_updated_utc": "2026-11-27T20:00:07.710Z",
+  "record_updated_utc": "2026-11-27T20:05:00.536Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Direct and secure Actions supported claimsHTTP500/empty. New secure batch46056962879/job140701706473 withheldMO319325beforeclaimdueforeign10756, attemptedMO487192once500thenstopped. Zero new assignment tokens.",
   "official_full_proof_checker_acceptances": 4,
