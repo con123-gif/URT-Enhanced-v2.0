@@ -1,0 +1,4 @@
+CampaignProbe.lean:31:8: warning: declaration uses `sorry`
+'A385478Certificate.sigmaFast_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A385478Certificate.prior_149' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.disproof' depends on axioms: [propext, Classical.choice, Quot.sound]
