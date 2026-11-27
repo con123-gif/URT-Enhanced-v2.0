@@ -1,0 +1,84 @@
+{
+  "problem": "oeis-a068991",
+  "exact_statement": "For every positive squarefree natural n, if sum_{d|n} sigma(d)/phi(d) is an integer then n divides the denominator of B_(2n).",
+  "status": "complete exact-source full Lean proof; actual pinned compiler exit0 and standard axioms verified; no official submission or acceptance",
+  "verified_at_utc": "2026-11-27T21:05:30Z",
+  "run_id": 46067781887,
+  "job_id": 140737180507,
+  "commit": "91d229e3cd1dcbcca0fc684fd93743067701a7f5",
+  "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46067781887",
+  "public_probe": "https://github.com/con123-gif/open-math-agents/blob/91d229e3cd1dcbcca0fc684fd93743067701a7f5/campaign/ProbeA068991FullSecond.lean",
+  "public_probe_git_blob": "575d7585141ade6a0afc761dc1098a07e71a0500",
+  "artifact_id": 15230903891,
+  "artifact_zip_sha256": "47e220694173fc6d58b062417140417ffb5642b7672b7f6bcee77d7c5441a206",
+  "artifact_digest_matches_github": true,
+  "actual_compiler_exit_code": 0,
+  "actual_exit_file": "ProbeA068991FullSecond.lean.exit",
+  "all_error_forms_checked": true,
+  "compiler_errors": [],
+  "verified_declaration": "OMA.solution",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "formal_conjectures_commit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "public_probe_exact_readback": true,
+  "exact_statement_prefix_match": true,
+  "entire_canonical_proof_body_match": true,
+  "canonical_source_git_blob": "1bbafe4a48495bae0cbe9022e54c1e6b2dc147c5",
+  "canonical_proof_git_blob": "c69cbad654da0e56dc5bf1c76876495d469d2b93",
+  "official_static_statement_lint": "accepted",
+  "official_static_proof_lint": "accepted",
+  "official_unmodified_statement_checker": {
+    "run": 46066060267,
+    "job": 140731536796,
+    "verdict": "accepted",
+    "translation_review_still_required": true
+  },
+  "independent_verification": "runtime_research/A068991_FULL_SECOND_INDEPENDENT_VERIFICATION.json",
+  "source_revision": 35,
+  "history_changes_read": 35,
+  "prior_audit_limit": "Related Miller2012 NMBRTHRY email inaccessible: both HTTP/HTTPS503; explicitly unread. No historical-priority or universal absence claim.",
+  "official_submission": null,
+  "official_acceptance": false,
+  "lease_held": false,
+  "site_claim_attempted_for_this_id": false,
+  "official_obstruction": "Campaign coordinated desk-write STOP after other targets returned HTTP500; no blind new claim attempted. Target first needs reviewed statement registration, then imported-target proof stage.",
+  "credit": "Cornelius Lytollis (@con123-gif), assisted by ChatGPT/Codex (GPT-6; exact serving variant not exposed), with collaborating AI runtime/review agents. Classical von Staudt-Clausen, Kellner2005 and Reble2018 methods credited. No human reviewer claimed.",
+  "files": {
+    "oeis-a068991.statement.lean": {
+      "sha256": "3d57c86dc80ab0ffdf3a012182ad8d2963db5e0a17b88775719a683fb088b76a",
+      "bytes": 963
+    },
+    "oeis-a068991.proof.lean": {
+      "sha256": "874ace929fd11249784a314383812d296d09066c255b0441b353eba0207f1878",
+      "bytes": 22584
+    },
+    "ProbeA068991FullSecond.lean": {
+      "sha256": "a7df31c55fa88ee832cfa2c1d71ccbdd186656d2cc8f0080c560f7e9bd0d8ada",
+      "bytes": 23596
+    },
+    "A068991_FULL_KERNEL_PASS.log": {
+      "sha256": "ee8421ed54ea429a738f5cb32b0d1e3fa9a1c974680d582112a36812703b65f7",
+      "bytes": 24392
+    },
+    "A068991_COMPLETE_INFORMAL_PROOF.md": {
+      "sha256": "71d41c05f782cd1327e66dfaeca89c6cae8295be83ffb7bdf2313223b3385540",
+      "bytes": 5239
+    },
+    "A068991_SOURCE_PRIOR_AUDIT.md": {
+      "sha256": "025caf81aeced5d48f351f072e6423f4812fef4b6bb1e8ff4b8206b02b943421",
+      "bytes": 3324
+    },
+    "A068991_FINITE_SANITY.py": {
+      "sha256": "8a9b061852e32416ac44f8530cfca35d3d7dcecce23b224c96c2bddf66ce0c1f",
+      "bytes": 1995
+    },
+    "A068991_FINITE_SANITY.json": {
+      "sha256": "0db89725db14b798a90c6969e2b298062abbfc2d8d2d9b3f51b04805638d8c6f",
+      "bytes": 631
+    }
+  }
+}
