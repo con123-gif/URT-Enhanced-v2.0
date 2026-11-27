@@ -1,0 +1,40 @@
+{
+  "status": "PINNED_KERNEL_PASS_ARITHMETIC_CORE_ONLY",
+  "problem_id": "oeis-a401895",
+  "full_problem_closed": false,
+  "new_solved_problem_count": 0,
+  "full_anti_period_reversal_and_order_bridge_formalized": false,
+  "scope": "Integer coefficient-height contradiction E*T=F for every evenB>=100 with stated K,q,T bounds, and the B10,K7/8 arithmetic cases only.",
+  "code_commit": "9f5394f991c952fa1b73309f1608b046f72b8da7",
+  "parent_commit": "54caa61c654746cda60ff0b6452dd4a0a33f5ad1",
+  "run_id": 46077171584,
+  "job_id": 140767501900,
+  "run_url": "https://github.com/con123-gif/open-math-agents/actions/runs/46077171584",
+  "formal_conjectures_pin": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "helper_sha256": "3dd85e2791e532f953bd995b0937e0c73ddde198a2bea40c97ba02597a9c9919",
+  "complete_probe_sha256": "5fa73977df2698985c9660d0c62c0e6c5b1d1d3647f12b6267f1c39b2094067c",
+  "immutable_uploaded_probe_byte_equal": true,
+  "immutable_probe_git_blob": "3b7b09655646d19db33fe9f88f55e4c3f4d4c6b7",
+  "artifact_id": 15234833794,
+  "artifact_zip_sha256": "99532a3c4dd1bc59e7e609b77beba7393b553ca87796e574840687d1f0295a48",
+  "artifact_digest_match": true,
+  "actual_exit_file_contents": "0\n",
+  "actual_compiler_exit": 0,
+  "all_tagged_and_plain_compiler_errors_absent": true,
+  "selected_axioms": {
+    "no_affine_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_small_base_closure": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "full_anti_period_informal_AI_challenge": "PASS, separately documented; not a full kernel verification",
+  "prior_credit": "Captured22:13UTC live brief, physbuzz periodic obstruction and coefficient-height method, and Round10 endpoint/carry reductions retained explicitly.",
+  "official_submission": null,
+  "active_leases": 0,
+  "recorded_utc": "2026-11-27T22:34:09.132014+00:00"
+}
