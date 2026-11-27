@@ -1,0 +1,81 @@
+{
+  "run_id": 46082195225,
+  "job_id": 140783468333,
+  "head": "90b32d612c887aea4424179a0a684ef4e1baf576",
+  "artifact_id": 15237388112,
+  "artifact_sha256": "2f74cf02042236ac11a4ff7672fb432d0df09fed7d7e2fdb2c8acdd3cf10c8e7",
+  "digest_matches": true,
+  "members": [
+    "ProbeA385478FullFastSecond.lean.exit",
+    "oeis-a385478.lean.json",
+    "ProbeA385478FullFastSecond.lean.log"
+  ],
+  "exit": "0",
+  "statement_check": {
+    "file": "statements/oeis-a385478.lean",
+    "type": "statement",
+    "ok": true,
+    "kind": "statement",
+    "polarity": "proof",
+    "errors": [],
+    "verdict": "accepted",
+    "reason": "the statement compiles; it now needs a human review of the translation"
+  },
+  "errors": [],
+  "axioms": [
+    {
+      "theorem": "A385478Certificate.sigmaFast_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "A385478Certificate.prior_149",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "OMA.disproof",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "whole_kernel_pass": true,
+  "all_selected_standard_axioms": true,
+  "statement_checker_accepted": true,
+  "official_proof_acceptance": false,
+  "assembly_byte_audit": {
+    "status": "UNVERIFIED_SECOND_ASSEMBLY_BYTE_AUDIT",
+    "files": {
+      "number_work/A385478_FAST_CANDIDATE.proof.lean": "32b97984398a70169f210f0af9fe73358704f941518d3f2dc5238f8b0fabd0b1",
+      "number_work/oeis-a385478.statement.lean": "5e741baa5db69b540e94bde20caf6264d0c0dd7eff4646f45e02f1859f351da3",
+      "number_work/ProbeA385478FullFastSecond.lean": "a91c7ad2bd3f8ee7b771581ee13c9e4429b9338be19b68c5934d271f500064a9"
+    },
+    "entire_proof_body_embedded": true,
+    "entire_source_body_embedded": true,
+    "mathematical_scope_unchanged": true,
+    "definitional_repair": "Only add noncomputable/classical to exact filter and minimum definitions and explicit membership bridge; divisor freshness and source zero convention unchanged.",
+    "whole_kernel_pass": false
+  },
+  "public_probe_sha256": "a91c7ad2bd3f8ee7b771581ee13c9e4429b9338be19b68c5934d271f500064a9",
+  "public_statement_sha256": "5e741baa5db69b540e94bde20caf6264d0c0dd7eff4646f45e02f1859f351da3",
+  "canonical_proof_sha256": "32b97984398a70169f210f0af9fe73358704f941518d3f2dc5238f8b0fabd0b1",
+  "public_full_probe_exact_match": true,
+  "public_statement_exact_match": true,
+  "entire_source_and_proof_body_embedded": true,
+  "source_math_review": "PASS: exact divisors of sigma(n) absent from all earlier positive sigma(k), exact minimum/empty-zero term. Counterexample n1787 has fresh divisors447,596,894,1788. Full finite149 classifier plus gcd447,596=149 contradicts freshness at earlier index1489.",
+  "no_assumed_computational_result": true,
+  "no_native_decide": true,
+  "worldwide_priority_certified": false,
+  "history_access_caveat": "Full official mirror revision7 read by source owner; interactive history/b-file403 remain explicitly unread.",
+  "status": "FULL_KERNEL_PASS_AND_STATEMENT_PROTOTYPE_ACCEPTED",
+  "audit_time": "2026-11-27T23:26:54.564856+00:00"
+}
