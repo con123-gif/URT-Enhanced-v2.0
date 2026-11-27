@@ -1,0 +1,74 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source": "specialists/character_boxes/RUN78_COMPACT_EQUAL_RANK_CALLER.lean",
+  "source_blob": "6bb8f53e746aa4d5c876c7eff3433e6daf126795",
+  "original_source_blob": "a620150b7c616d614013822be11dbdf74a694f0d",
+  "theorems": [
+    "RHCharacterBoxes77.exchange_of_standard_pairs",
+    "run78_equalRankThetaRatio_value"
+  ],
+  "original_probes": [
+    "exchange_of_partners",
+    "exists_equalRankThetaRatio_value",
+    "stdExchange_of_periods"
+  ],
+  "new_Lean_execution": false,
+  "full_RH_replay": false,
+  "adapter": {
+    "old": "info.value? |",
+    "new": "info.value? (allowOpaque := true) |"
+  },
+  "native_repairs": [
+    {
+      "old": "  have P := isPartner_stdRowDatum_stdColDatum σ ha\n",
+      "new": "  have P := isPartner_stdRowDatum_stdColDatum σ (χ := 𝔠.χ) ha\n",
+      "reason": "The actual first native error leaves the finite character implicit"
+    },
+    {
+      "old": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) _\n",
+      "new": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) (rankTwist 𝔠.ν⁻¹ n)\n",
+      "reason": "Select the same rank-twisted character required by the final theta integral"
+    },
+    {
+      "old": "  simp only [stdRowDatum] at K this\n",
+      "new": "  have row_forward :\n      stdRowDatum (emptySum Empty (Fin (2 * k))) 𝔠.χ\n        (0 : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) =\n      stdColDatum 𝔠.χ (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S)) := rfl\n  have row_reverse :\n      stdRowDatum (sumEmpty (Fin (2 * k)) Empty) 𝔠.χ\n        (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S)) =\n      (fun (_ : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) =>\n        stdColDatum 𝔠.χ\n          (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S))\n          (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S))) := rfl\n  simp only [row_forward, row_reverse] at K this\n",
+      "reason": "The actual second replay leaves partially applied standard-row functions; use full function identities before expanding theta data"
+    },
+    {
+      "old": "  have : localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =\n      𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := by\n",
+      "new": "  have flipDatum (Ψ : Matrix n b (LocProd 𝔠.S) → ℂ)\n      (hΨ : Ψ ∈ schwartzBruhat HasLeftInv)\n      (P : IsPartner SemilocalField.O σ 𝔠.χ (stdRowDatum σ 𝔠.χ a) Ψ) :\n      localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =\n        𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := by\n",
+      "reason": "Keep the finite datum abstract inside the existing partner-law flip calculation; dsimp otherwise expands its standard-data implementation"
+    },
+    {
+      "old": "  convert congr((rankTwist 𝔠.ν⁻¹ n).1 g.det * $(K 𝔠 a ha) g) using 1 <;>\n",
+      "new": "  have : localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =\n      𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := flipDatum _ hΨ P\n  have kg := congr((rankTwist 𝔠.ν⁻¹ n).1 g.det * $(K 𝔠 a ha) g)\n  clear K\n  convert kg using 1 <;> clear kg <;>\n",
+      "reason": "After consuming the standard theta identity, prevent simp [*] from rewriting its own source side back through K"
+    }
+  ],
+  "replay_source_blob": "a42fb4baef0d9789f8fbaeaf9a529b8e222c3647",
+  "carrier_propagation": {
+    "source": "specialists/character_boxes/RUN79_COMPACT_CARRIER_PROPAGATION.lean",
+    "source_blob": "661ed5fdd14651cf5629866ca7e86810f9c5fef2",
+    "theorems": [
+      "run79_exchange_theorem",
+      "run79_explicit_matching",
+      "run79_stdClassSum_det_modKernel_eq",
+      "run79_stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "original_probes": [
+      "exchange_theorem",
+      "explicit_matching",
+      "stdClassSum_det_modKernel_eq",
+      "stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "original_source_blobs": {
+      "New/Exchange/ExchangeTheorem.lean": "608b4f61af27d780e24f799937a836ecd3c1d50a",
+      "New/Rows/Carrier.lean": "f0b7f97f299904aa73a928432147a932cac9be40",
+      "New/Rows/RowVolume.lean": "925de9c592b40763516e70ddeae48b4ad1a35b88",
+      "New/Rows/LiftVolumeHeight.lean": "87938141d4103b485fd5a7125721798f65f973f1",
+      "New/Rows/ComparisonForms.lean": "14ef893c54f5db837ea7e4f143b2b1a444b89b5a"
+    },
+    "new_Lean_execution": false
+  }
+}

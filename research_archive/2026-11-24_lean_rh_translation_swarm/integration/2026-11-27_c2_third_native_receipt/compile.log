@@ -1,0 +1,39 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_3/C2Combined.lean:145:62: warning: This simp argument is unused:
+  r
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [thetaIntegral, isForm_neg_iff_and_integral_neg U (flipSpace U), pairTheta, pairWeil, rankTwist, ↓this,
+    *, ← integral_const_mul, Ψ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_3/C2Combined.lean:146:20: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+@run78_equalRankThetaRatio_value : ∀ {E n : Type} [inst : Field E] [inst_1 : CMType E] [inst_2 : WeilData E]
+  [inst_3 : Fintype n] {s : n → ℤˣ} (W : Space E n s) (μ : NumberField.InfinitePlace E → ℤ) (k : ℕ),
+  Fintype.card n = 2 * k + 2 * negCount s →
+    (∀ (v : NumberField.InfinitePlace E), ↑k ≤ μ v) →
+      ∃ v, IsRapidDatum v ∧ ∃ C, C ≠ 0 ∧ ∀ (𝔠 : SplitTameChar E μ), equalRankThetaRatio (hypSum Unit W) 𝔠 v = C
+'RHCharacterBoxes77.exchange_of_standard_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'run78_equalRankThetaRatio_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_EQUAL_RANK_CALLER: exact type; standard helper consumed; original target and general exchange absent directly
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_combined_repair_3/C2Combined.lean:430:25: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Try this:
+  [apply] field_simp [measureReal_univ_ne_zero]
+'run79_exchange_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'run79_explicit_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'run79_stdClassSum_det_modKernel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'run79_stdClassSum_carrierXi_eq_carrierForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_PROPAGATED_CALLER: run79_exchange_theorem: exact type and direct edges
+C2_PROPAGATED_CALLER: run79_explicit_matching: exact type and direct edges
+C2_PROPAGATED_CALLER: run79_stdClassSum_det_modKernel_eq: exact type and direct edges
+C2_PROPAGATED_CALLER: run79_stdClassSum_carrierXi_eq_carrierForm: exact type and direct edges
+'exchange_of_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exists_equalRankThetaRatio_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdExchange_of_periods' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exchange_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'explicit_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdClassSum_det_modKernel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdClassSum_carrierXi_eq_carrierForm' depends on axioms: [propext, Classical.choice, Quot.sound]
