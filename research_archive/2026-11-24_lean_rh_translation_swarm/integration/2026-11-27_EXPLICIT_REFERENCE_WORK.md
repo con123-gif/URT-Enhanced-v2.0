@@ -1,0 +1,11 @@
+# Explicit unit reference — active continuation
+
+27 November 2026. WORK IN PROGRESS / NOT VERIFIED. The direct determinant line and full 52-guard local audit remain accepted; the earlier restricted chain has independently replayed on shared run 46050109450. The four actual family consumers are now running against the original C1 build in run 46055305146, snapshot 98f6d14d1ed640bdc432aec50251fc29dbfe95e8.
+
+The checked canonical real-matching proof explicitly constructs reference polynomial 1, but the existing consumer still obtains an unspecified reference through Classical.choose on its existential statement. Proof irrelevance means that simply swapping proofs does not make that choice reduce to the constructed witness. Do not describe the current consumer's chosen reference as definitionally 1.
+
+This continuation extracts the actual Exists.intro payload from the already checked proof body, checks its witness against the typed polynomial unit, and asks the normal kernel to check the resulting explicit-reference theorem. It does not infer P(1) from an arbitrary existential statement. The proposed empty-matching consumer then calls that stronger explicit interface and passes literal polynomial 1 to the actual finite exchange. Its entire original statement is compared; all tame, measure, real-action and nonzero-normalization inputs remain. In particular the rank-zero Haar volume is not set to one.
+
+The proposed sources are C2_EXPLICIT_UNIT_REFERENCE.lean and C2_UNIT_EMPTY_MATCHING.lean. Neither is accepted yet. First run the reference extraction through replay_c2_standard_exchange.py against the accepted C2Combined and all already checked direct-line dependency modules. After acceptance, run a wrong-reference negative control and the complete empty-matching consumer, then retarget both determinant/Carrier callers and audit the actual reachable paths. No global RH or C2 height closure is claimed.
+
+RESUME HERE: compile module C2ExplicitUnitReference, named theorem c2_real_matching_unit_reference, guard C2_UNIT_REFERENCE:. Preserve the exact source, rejection reason and axiom report before repairing any error. Coordinate any independent replay with an already queued original build; avoid a duplicate cold source build.
