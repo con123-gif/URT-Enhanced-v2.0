@@ -1,0 +1,2 @@
+'c2_standard_exchange_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_STANDARD_EXCHANGE: both checked suppliers consumed; original general targets absent directly

@@ -7,6 +7,7 @@ Lean, re-extract the large graphs, or establish any remaining RH premise.
 import hashlib
 import json
 from pathlib import Path
+import re
 from compare_complete_graph_exports import validate_execution_modes
 
 HERE = Path(__file__).resolve().parent
@@ -22,6 +23,67 @@ def require(ok, message):
 
 def read(folder, name):
     return json.loads((HERE / folder / name).read_text())
+
+
+def checked_interface_receipt(folder, filename, current_source):
+    """Validate saved compiler evidence, not a proof or object re-execution."""
+    proof = read(folder, filename)
+    compiler = proof["compiler"]
+    require(proof["compact"] == PIN and proof["mathlib"] == MATHLIB,
+            "Wrong interface pins")
+    require(proof["all_requested_checks_ok"] is True and compiler["returncode"] == 0
+            and compiler["axiom_audit_ok"] is True
+            and compiler["direct_supplier_guards_observed"] is True,
+            "Unaccepted interface compiler receipt")
+    module = proof["compiled_module"]
+    raw = (HERE / folder / (module["name"] + ".lean")).read_bytes()
+    blob = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
+    require(blob == proof["source_blob"] and raw == (HERE / current_source).read_bytes(),
+            "Changed accepted interface source")
+    log = (HERE / folder / "compile.log").read_text()
+    require("sorryAx" not in log and "error:" not in log, "Rejected interface log")
+    require(set(proof["theorems"]) == set(compiler["axioms"]), "Incomplete interface axiom roster")
+    for name, axes in compiler["axioms"].items():
+        require(set(axes) <= AXIOMS and ("'" + name + "'") in log,
+                "Missing/untrusted interface axiom report")
+    require(module["artifacts"] and all(x["bytes"] > 0 and
+            re.fullmatch(r"[0-9a-f]{64}", x["sha256"]) for x in module["artifacts"]),
+            "Missing checked-object digest metadata")
+    return module["name"]
+
+
+def checked_interface_graph(folder, nodes, edges, guards_expected):
+    """Check exact saved inventories and all independent per-root verdicts."""
+    union = read(folder, "interface_graph_summary.json")
+    guards = read(folder, "supplier_reachability.json")
+    inputs = read(folder, "input_manifest.json")
+    execution = read(folder, "graph_execution.json")
+    require(union["roots"] == inputs["roots"] and len(union["roots"]) == 4
+            and union["nodes"] == nodes and union["edges"] == edges and union["missing"] == 0,
+            "Changed interface graph inventory")
+    require(guards["all_guards_pass"] is True and len(guards["guards"]) == guards_expected
+            and all(value is True for value in guards["guards"].values()), "Incomplete interface graph guards")
+    require(execution["returncode"] == 0 and execution["axiom_audit_ok"] is True
+            and execution["native_graph_execution"] is True and execution["new_Lean_execution"] is False
+            and set(execution["axioms"]) == set(union["roots"]), "Wrong interface graph execution provenance")
+    for i, name in enumerate(union["roots"]):
+        audit = read(folder, "audit-" + str(i) + ".json")
+        require(union["per_root"][name]["exit"] == 0
+                and audit["nodes"] == union["per_root"][name]["nodes"]
+                and audit["status"] == "REFERENCE_CLOSURE_AND_AXIOM_AGREEMENT",
+                "Interface root verifier did not pass")
+        require(all(audit[k] == 0 for k in ["missing", "bodyMissing", "collectorUnresolved"])
+                and not any(audit[k] for k in ["absent", "unexpected", "structuralOnlyAxioms",
+                    "nonstandardAxioms", "unsafeOrPartialNodes", "sorryAxInBuiltin", "sorryAxInStructuralClosure"])
+                and set(execution["axioms"][name]) <= AXIOMS, "Interface graph trust discrepancy")
+    archive = read(folder, "graph_archive_receipt.json")
+    require(archive["decompressed_sha256_verified"] is True
+            and archive["raw_bytes"] > archive["archive_bytes"] > 0
+            and all(re.fullmatch(r"[0-9a-f]{64}", archive[k]) for k in ["raw_sha256", "archive_sha256"]),
+            "Incomplete exact graph archive receipt")
+    require(union["full_RH_replay"] is False and execution["full_RH_replay"] is False,
+            "Interface graph mislabelled as whole RH")
+    return {"folder": folder, "roots": 4, "nodes": nodes}
 
 
 def main():
@@ -104,7 +166,73 @@ def main():
     controls = read("2026-11-27_c2_native_equivalence_receipt", "graph_comparison_controls.json")
     require(controls["all_checks_pass"] is True and len(controls["checks"]) == 5 and
             all(value is True for value in controls["checks"].values()), "Failed comparison control")
+    direct_modules = []
+    for folder, receipt, source in [
+        ("2026-11-27_fixed_line_receipt", "fixed_line_results.json", "C2_DETERMINANT_FIXED_LINE.lean"),
+        ("2026-11-27_definite_weil_receipt", "definite_weil_results.json", "C2_DETERMINANT_WEIL_ACTION.lean"),
+        ("2026-11-27_continuous_line_receipt", "continuous_line_results.json", "C2_DETERMINANT_CONTINUOUS_LINE.lean"),
+        ("2026-11-27_direct_real_receipt", "direct_real_matching_results.json", "C2_DIRECT_REAL_MATCHING.lean"),
+        ("2026-11-27_direct_transport_receipt", "direct_transport_results.json", "C2_DIRECT_DETERMINANT_TRANSPORT.lean"),
+    ]:
+        direct_modules.append(checked_interface_receipt(folder, receipt, source))
+    for args in [
+        ("2026-11-27_determinant_carrier_graph_receipt", 119299, 3865789, 35),
+        ("2026-11-27_direct_determinant_graph_receipt", 119266, 3862429, 52),
+    ]:
+        inventories.append(checked_interface_graph(*args))
+    old = read("2026-11-27_determinant_carrier_graph_receipt", "supplier_reachability.json")
+    new = read("2026-11-27_direct_determinant_graph_receipt", "supplier_reachability.json")
+    require(old["membership"]["exchange_of_partners"] == 13
+            and new["membership"]["real_matching"] == 13,
+            "Lost exact determinant-only absence / retained complement distinction")
+    rejected = False
+    try:
+        checked_interface_receipt("2026-11-27_fixed_line_receipt/failed_attempt_1",
+                                  "fixed_line_results.json", "C2_DETERMINANT_FIXED_LINE.lean")
+    except RuntimeError as exc:
+        rejected = str(exc) == "Unaccepted interface compiler receipt"
+    require(rejected, "Actual rejected compiler receipt was accepted or rejected for the wrong reason")
+    shared_folder = "2026-11-27_determinant_shared_receipt"
+    shared = read(shared_folder, "determinant_shared_results.json")
+    bootstrap = read(shared_folder, "bootstrap_results.json")
+    summary = read(shared_folder, "independent_replay_summary.json")
+    require(summary["status"] == "pass" and summary["returncode"] == 0
+            and summary["source_sha"] == "aceceb93b79727aac30ebcb24388c58aebc5adbf"
+            and shared["all_requested_checks_ok"] is True and shared["pipeline_checks_ok"] is True
+            and shared["source_build_receipt"]["returncode"] == 0
+            and bootstrap["all_requested_checks_ok"] is True, "Independent shared replay did not pass")
+    require(shared["base_receipt"]["all_requested_checks_ok"] is True
+            and shared["base_receipt"]["combined_source_blob"] == "aba46120ca4118decd864f817b51bcca2bc31c19"
+            and shared["base_receipt"]["all_five_type_and_dependency_guards_observed"] is True,
+            "Independent base did not preserve all five original statements")
+    count = 0
+    for interface in shared["checked_interfaces"]:
+        module, compiler = interface["compiled_module"]["name"], interface["compiler"]
+        require(interface["all_requested_checks_ok"] is True and compiler["returncode"] == 0
+                and compiler["axiom_audit_ok"] is True and compiler["direct_supplier_guards_observed"] is True,
+                "Independent interface compiler rejected")
+        log = (HERE / shared_folder / module / "compile.log").read_text()
+        require("sorryAx" not in log and "error:" not in log, "Failed independent compiler log")
+        for name, axes in compiler["axioms"].items():
+            require(set(axes) <= AXIOMS and ("'" + name + "'") in log,
+                    "Missing independent interface axiom report")
+            count += 1
+    require(count == 10 and len(shared["checked_interfaces"]) == 6, "Wrong independent compiler roster")
+    probe = bootstrap["steps"]["original_callers"]
+    control = bootstrap["steps"]["negative_missing_projector_guard"]
+    require(probe["returncode"] == 0 and probe["axiom_audit_ok"] is True and len(probe["axioms"]) == 7
+            and all(set(x) <= AXIOMS for x in probe["axioms"].values())
+            and control["returncode"] == 1 and control["expected_rejection_observed"] is True,
+            "Independent original probes or negative control incomplete")
+    inventories.append(checked_interface_graph(shared_folder + "/complete_graph", 119299, 3865789, 35))
+    shared_archive = read(shared_folder + "/complete_graph", "graph_archive_receipt.json")
+    local_archive = read("2026-11-27_determinant_carrier_graph_receipt", "graph_archive_receipt.json")
+    require(shared_archive["raw_sha256"] == local_archive["raw_sha256"] ==
+            "0d9ca13046d943ebe21783a4c7919b04670dc63136f90e92662e08a8a9922caa",
+            "Fresh-source dependency stream differs from the accepted local stream")
     print(json.dumps({"saved_receipts_consistent": True, "inventories": inventories,
+                      "direct_compiler_modules": direct_modules, "actual_failed_receipt_rejected": rejected,
+                      "independent_shared_chain_checked": True,
                       "new_Lean_execution": False, "full_RH_replay": False,
                       "scope": "saved evidence consistency; not a fresh proof or graph extraction"}))
 

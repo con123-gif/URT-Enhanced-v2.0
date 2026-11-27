@@ -1,0 +1,2 @@
+C2_DETERMINANT_CARRIER: complete original statement; checked determinant supplier replaced; complement matching retained
+'c2_stdClassSum_carrierXi_eq_carrierForm' depends on axioms: [propext, Classical.choice, Quot.sound]

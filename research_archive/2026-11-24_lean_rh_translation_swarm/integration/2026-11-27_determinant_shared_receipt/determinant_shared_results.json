@@ -1,0 +1,977 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "base_source_blob": "aba46120ca4118decd864f817b51bcca2bc31c19",
+  "stages": [
+    {
+      "source": "C2_STANDARD_EXCHANGE_UNIFORM.lean",
+      "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+      "module": "C2StandardExchange",
+      "receipt": "standard_exchange_results.json",
+      "guard": "C2_STANDARD_EXCHANGE:",
+      "theorems": [
+        "c2_standard_exchange_uniform"
+      ],
+      "dependencies": []
+    },
+    {
+      "source": "C2_DETERMINANT_LIFT.lean",
+      "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+      "module": "C2DeterminantLift",
+      "receipt": "determinant_lift_results.json",
+      "guard": "C2_DETERMINANT_LIFT:",
+      "theorems": [
+        "c2_lift_inverse_determinant",
+        "c2_lift_one_empty_columns",
+        "c2_standard_column_empty"
+      ],
+      "dependencies": []
+    },
+    {
+      "source": "C2_DETERMINANT_EXCHANGE.lean",
+      "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+      "module": "C2DeterminantExchange",
+      "receipt": "determinant_exchange_results.json",
+      "guard": "C2_DETERMINANT_EXCHANGE:",
+      "theorems": [
+        "c2_determinant_exchange"
+      ],
+      "dependencies": [
+        0,
+        1
+      ]
+    },
+    {
+      "source": "C2_REAL_MATCHING_STANDARD.lean",
+      "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+      "module": "C2RealMatchingStandard",
+      "receipt": "real_standard_results.json",
+      "guard": "C2_REAL_STANDARD:",
+      "theorems": [
+        "c2_real_matching_standard",
+        "c2_real_determinant_invariant"
+      ],
+      "dependencies": []
+    },
+    {
+      "source": "C2_DETERMINANT_CLASS_SUM.lean",
+      "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+      "module": "C2DeterminantClassSum",
+      "receipt": "determinant_class_sum_results.json",
+      "guard": "C2_DETERMINANT_CLASS_SUM:",
+      "theorems": [
+        "c2_empty_matching",
+        "c2_stdClassSum_det_modKernel_eq"
+      ],
+      "dependencies": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "source": "C2_DETERMINANT_CARRIER_TRANSPORT.lean",
+      "source_blob": "5083aea866074ba1e52b025342752df605581c78",
+      "module": "C2DeterminantCarrierTransport",
+      "receipt": "determinant_carrier_results.json",
+      "guard": "C2_DETERMINANT_CARRIER:",
+      "theorems": [
+        "c2_stdClassSum_carrierXi_eq_carrierForm"
+      ],
+      "dependencies": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "graph_config_blob": "017c112510e5eb6f9e338b6fdf149d89499d5aa6",
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "source_build_target": "New.Rows.Carrier:olean",
+  "scope": "Six accepted interfaces, both unchanged determinant/Carrier statements and four complete graphs",
+  "steps": {
+    "combined": {
+      "returncode": 0,
+      "seconds": 52.45,
+      "log": "combined.log"
+    },
+    "C2StandardExchange": {
+      "returncode": 0,
+      "seconds": 4.22,
+      "log": "C2StandardExchange.log"
+    },
+    "C2DeterminantLift": {
+      "returncode": 0,
+      "seconds": 3.77,
+      "log": "C2DeterminantLift.log"
+    },
+    "C2DeterminantExchange": {
+      "returncode": 0,
+      "seconds": 6.13,
+      "log": "C2DeterminantExchange.log"
+    },
+    "C2RealMatchingStandard": {
+      "returncode": 0,
+      "seconds": 3.87,
+      "log": "C2RealMatchingStandard.log"
+    },
+    "C2DeterminantClassSum": {
+      "returncode": 0,
+      "seconds": 7.83,
+      "log": "C2DeterminantClassSum.log"
+    },
+    "C2DeterminantCarrierTransport": {
+      "returncode": 0,
+      "seconds": 5.63,
+      "log": "C2DeterminantCarrierTransport.log"
+    },
+    "exporter_build": {
+      "returncode": 0,
+      "seconds": 5.13,
+      "log": "exporter_build.log"
+    },
+    "complete_graph": {
+      "returncode": 0,
+      "seconds": 180.24,
+      "log": "complete_graph.log"
+    }
+  },
+  "checked_interfaces": [
+    {
+      "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+      "checked_input_module": {
+        "name": "C2Combined",
+        "artifacts": [
+          {
+            "name": "C2Combined.olean",
+            "bytes": 11035576,
+            "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+          }
+        ]
+      },
+      "checked_interface_dependencies": [],
+      "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+      "theorems": [
+        "c2_standard_exchange_uniform"
+      ],
+      "full_RH_replay": false,
+      "native_source_build_performed": false,
+      "argv": [
+        "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000",
+        "-Dpp.fullNames=true",
+        "-Ddebug.skipKernelTC=false",
+        "-j",
+        "2",
+        "-R",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2StandardExchange",
+        "-o",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2StandardExchange/C2StandardExchange.olean",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2StandardExchange/C2StandardExchange.lean"
+      ],
+      "compiler": {
+        "returncode": 0,
+        "seconds": 4.07,
+        "log": "compile.log",
+        "axioms": {
+          "c2_standard_exchange_uniform": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "direct_supplier_guards_observed": true
+      },
+      "new_Lean_execution": true,
+      "all_requested_checks_ok": true,
+      "compiled_module": {
+        "name": "C2StandardExchange",
+        "artifacts": [
+          {
+            "name": "C2StandardExchange.olean",
+            "bytes": 640504,
+            "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+          }
+        ]
+      }
+    },
+    {
+      "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+      "checked_input_module": {
+        "name": "C2Combined",
+        "artifacts": [
+          {
+            "name": "C2Combined.olean",
+            "bytes": 11035576,
+            "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+          }
+        ]
+      },
+      "checked_interface_dependencies": [],
+      "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+      "theorems": [
+        "c2_lift_inverse_determinant",
+        "c2_lift_one_empty_columns",
+        "c2_standard_column_empty"
+      ],
+      "full_RH_replay": false,
+      "native_source_build_performed": false,
+      "argv": [
+        "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000",
+        "-Dpp.fullNames=true",
+        "-Ddebug.skipKernelTC=false",
+        "-j",
+        "2",
+        "-R",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantLift",
+        "-o",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantLift/C2DeterminantLift.olean",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantLift/C2DeterminantLift.lean"
+      ],
+      "compiler": {
+        "returncode": 0,
+        "seconds": 3.63,
+        "log": "compile.log",
+        "axioms": {
+          "c2_lift_inverse_determinant": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "c2_lift_one_empty_columns": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "c2_standard_column_empty": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "direct_supplier_guards_observed": true
+      },
+      "new_Lean_execution": true,
+      "all_requested_checks_ok": true,
+      "compiled_module": {
+        "name": "C2DeterminantLift",
+        "artifacts": [
+          {
+            "name": "C2DeterminantLift.olean",
+            "bytes": 186912,
+            "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+          }
+        ]
+      }
+    },
+    {
+      "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+      "checked_input_module": {
+        "name": "C2Combined",
+        "artifacts": [
+          {
+            "name": "C2Combined.olean",
+            "bytes": 11035576,
+            "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+          }
+        ]
+      },
+      "checked_interface_dependencies": [
+        {
+          "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+          "module": {
+            "name": "C2StandardExchange",
+            "artifacts": [
+              {
+                "name": "C2StandardExchange.olean",
+                "bytes": 640504,
+                "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+          "module": {
+            "name": "C2DeterminantLift",
+            "artifacts": [
+              {
+                "name": "C2DeterminantLift.olean",
+                "bytes": 186912,
+                "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+              }
+            ]
+          }
+        }
+      ],
+      "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+      "theorems": [
+        "c2_determinant_exchange"
+      ],
+      "full_RH_replay": false,
+      "native_source_build_performed": false,
+      "argv": [
+        "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000",
+        "-Dpp.fullNames=true",
+        "-Ddebug.skipKernelTC=false",
+        "-j",
+        "2",
+        "-R",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantExchange",
+        "-o",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantExchange/C2DeterminantExchange.olean",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantExchange/C2DeterminantExchange.lean"
+      ],
+      "compiler": {
+        "returncode": 0,
+        "seconds": 5.98,
+        "log": "compile.log",
+        "axioms": {
+          "c2_determinant_exchange": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "direct_supplier_guards_observed": true
+      },
+      "new_Lean_execution": true,
+      "all_requested_checks_ok": true,
+      "compiled_module": {
+        "name": "C2DeterminantExchange",
+        "artifacts": [
+          {
+            "name": "C2DeterminantExchange.olean",
+            "bytes": 1098968,
+            "sha256": "0ed52c39ba7b83ade70e139cbb053f6ab13a6a9099aef4ea09aa1ee1b701d697"
+          }
+        ]
+      }
+    },
+    {
+      "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+      "checked_input_module": {
+        "name": "C2Combined",
+        "artifacts": [
+          {
+            "name": "C2Combined.olean",
+            "bytes": 11035576,
+            "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+          }
+        ]
+      },
+      "checked_interface_dependencies": [],
+      "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+      "theorems": [
+        "c2_real_matching_standard",
+        "c2_real_determinant_invariant"
+      ],
+      "full_RH_replay": false,
+      "native_source_build_performed": false,
+      "argv": [
+        "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000",
+        "-Dpp.fullNames=true",
+        "-Ddebug.skipKernelTC=false",
+        "-j",
+        "2",
+        "-R",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2RealMatchingStandard",
+        "-o",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2RealMatchingStandard/C2RealMatchingStandard.olean",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2RealMatchingStandard/C2RealMatchingStandard.lean"
+      ],
+      "compiler": {
+        "returncode": 0,
+        "seconds": 3.72,
+        "log": "compile.log",
+        "axioms": {
+          "c2_real_matching_standard": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "c2_real_determinant_invariant": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "direct_supplier_guards_observed": true
+      },
+      "new_Lean_execution": true,
+      "all_requested_checks_ok": true,
+      "compiled_module": {
+        "name": "C2RealMatchingStandard",
+        "artifacts": [
+          {
+            "name": "C2RealMatchingStandard.olean",
+            "bytes": 236832,
+            "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+          }
+        ]
+      }
+    },
+    {
+      "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+      "checked_input_module": {
+        "name": "C2Combined",
+        "artifacts": [
+          {
+            "name": "C2Combined.olean",
+            "bytes": 11035576,
+            "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+          }
+        ]
+      },
+      "checked_interface_dependencies": [
+        {
+          "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+          "module": {
+            "name": "C2StandardExchange",
+            "artifacts": [
+              {
+                "name": "C2StandardExchange.olean",
+                "bytes": 640504,
+                "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+          "module": {
+            "name": "C2DeterminantLift",
+            "artifacts": [
+              {
+                "name": "C2DeterminantLift.olean",
+                "bytes": 186912,
+                "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+          "module": {
+            "name": "C2DeterminantExchange",
+            "artifacts": [
+              {
+                "name": "C2DeterminantExchange.olean",
+                "bytes": 1098968,
+                "sha256": "0ed52c39ba7b83ade70e139cbb053f6ab13a6a9099aef4ea09aa1ee1b701d697"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+          "module": {
+            "name": "C2RealMatchingStandard",
+            "artifacts": [
+              {
+                "name": "C2RealMatchingStandard.olean",
+                "bytes": 236832,
+                "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+              }
+            ]
+          }
+        }
+      ],
+      "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+      "theorems": [
+        "c2_empty_matching",
+        "c2_stdClassSum_det_modKernel_eq"
+      ],
+      "full_RH_replay": false,
+      "native_source_build_performed": false,
+      "argv": [
+        "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000",
+        "-Dpp.fullNames=true",
+        "-Ddebug.skipKernelTC=false",
+        "-j",
+        "2",
+        "-R",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantClassSum",
+        "-o",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantClassSum/C2DeterminantClassSum.olean",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantClassSum/C2DeterminantClassSum.lean"
+      ],
+      "compiler": {
+        "returncode": 0,
+        "seconds": 7.68,
+        "log": "compile.log",
+        "axioms": {
+          "c2_empty_matching": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "c2_stdClassSum_det_modKernel_eq": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "direct_supplier_guards_observed": true
+      },
+      "new_Lean_execution": true,
+      "all_requested_checks_ok": true,
+      "compiled_module": {
+        "name": "C2DeterminantClassSum",
+        "artifacts": [
+          {
+            "name": "C2DeterminantClassSum.olean",
+            "bytes": 2026912,
+            "sha256": "41bf52c4397527fbea0a8d9556fae6ee9218a8de23b71dff24c23ea37200f731"
+          }
+        ]
+      }
+    },
+    {
+      "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_blob": "5083aea866074ba1e52b025342752df605581c78",
+      "checked_input_module": {
+        "name": "C2Combined",
+        "artifacts": [
+          {
+            "name": "C2Combined.olean",
+            "bytes": 11035576,
+            "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+          }
+        ]
+      },
+      "checked_interface_dependencies": [
+        {
+          "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+          "module": {
+            "name": "C2StandardExchange",
+            "artifacts": [
+              {
+                "name": "C2StandardExchange.olean",
+                "bytes": 640504,
+                "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+          "module": {
+            "name": "C2DeterminantLift",
+            "artifacts": [
+              {
+                "name": "C2DeterminantLift.olean",
+                "bytes": 186912,
+                "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+          "module": {
+            "name": "C2DeterminantExchange",
+            "artifacts": [
+              {
+                "name": "C2DeterminantExchange.olean",
+                "bytes": 1098968,
+                "sha256": "0ed52c39ba7b83ade70e139cbb053f6ab13a6a9099aef4ea09aa1ee1b701d697"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+          "module": {
+            "name": "C2RealMatchingStandard",
+            "artifacts": [
+              {
+                "name": "C2RealMatchingStandard.olean",
+                "bytes": 236832,
+                "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+              }
+            ]
+          }
+        },
+        {
+          "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+          "module": {
+            "name": "C2DeterminantClassSum",
+            "artifacts": [
+              {
+                "name": "C2DeterminantClassSum.olean",
+                "bytes": 2026912,
+                "sha256": "41bf52c4397527fbea0a8d9556fae6ee9218a8de23b71dff24c23ea37200f731"
+              }
+            ]
+          }
+        }
+      ],
+      "scope": "Independent shared replay of exact accepted determinant/Carrier chain; RH remains open",
+      "theorems": [
+        "c2_stdClassSum_carrierXi_eq_carrierForm"
+      ],
+      "full_RH_replay": false,
+      "native_source_build_performed": false,
+      "argv": [
+        "/tmp/compact-b2-native-ex5wijrn/lean-4.35.0-linux/bin/lean",
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000",
+        "-Dpp.fullNames=true",
+        "-Ddebug.skipKernelTC=false",
+        "-j",
+        "2",
+        "-R",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantCarrierTransport",
+        "-o",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantCarrierTransport/C2DeterminantCarrierTransport.olean",
+        "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/C2DeterminantCarrierTransport/C2DeterminantCarrierTransport.lean"
+      ],
+      "compiler": {
+        "returncode": 0,
+        "seconds": 5.48,
+        "log": "compile.log",
+        "axioms": {
+          "c2_stdClassSum_carrierXi_eq_carrierForm": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "direct_supplier_guards_observed": true
+      },
+      "new_Lean_execution": true,
+      "all_requested_checks_ok": true,
+      "compiled_module": {
+        "name": "C2DeterminantCarrierTransport",
+        "artifacts": [
+          {
+            "name": "C2DeterminantCarrierTransport.olean",
+            "bytes": 1493520,
+            "sha256": "57f51647df44c31eebb6e9e04a1264e1eeceba15c556657db6e13210b753bf01"
+          }
+        ]
+      }
+    }
+  ],
+  "pipeline_checks_ok": true,
+  "all_requested_checks_ok": true,
+  "human_assembly_verified": false,
+  "bootstrap_note": "Legacy b2_native_results contains bootstrap and original probes only",
+  "source_build_receipt": {
+    "returncode": 0,
+    "seconds": 2489.81,
+    "log": "b2_build.log"
+  },
+  "base_receipt": {
+    "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "source": "specialists/character_boxes/RUN78_COMPACT_EQUAL_RANK_CALLER.lean",
+    "source_blob": "6bb8f53e746aa4d5c876c7eff3433e6daf126795",
+    "original_source_blob": "a620150b7c616d614013822be11dbdf74a694f0d",
+    "theorems": [
+      "RHCharacterBoxes77.exchange_of_standard_pairs",
+      "run78_equalRankThetaRatio_value"
+    ],
+    "original_probes": [
+      "exchange_of_partners",
+      "exists_equalRankThetaRatio_value",
+      "stdExchange_of_periods"
+    ],
+    "new_Lean_execution": true,
+    "full_RH_replay": false,
+    "adapter": {
+      "old": "info.value? |",
+      "new": "info.value? (allowOpaque := true) |"
+    },
+    "native_repairs": [
+      {
+        "old": "  have P := isPartner_stdRowDatum_stdColDatum σ ha\n",
+        "new": "  have P := isPartner_stdRowDatum_stdColDatum σ (χ := 𝔠.χ) ha\n",
+        "reason": "The actual first native error leaves the finite character implicit"
+      },
+      {
+        "old": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) _\n",
+        "new": "    (flipSpace U) 1 (by simp [flipSpace, ← ext_iff]) (rankTwist 𝔠.ν⁻¹ n)\n",
+        "reason": "Select the same rank-twisted character required by the final theta integral"
+      },
+      {
+        "old": "  simp only [stdRowDatum] at K this\n",
+        "new": "  have row_forward :\n      stdRowDatum (emptySum Empty (Fin (2 * k))) 𝔠.χ\n        (0 : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) =\n      stdColDatum 𝔠.χ (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S)) := rfl\n  have row_reverse :\n      stdRowDatum (sumEmpty (Fin (2 * k)) Empty) 𝔠.χ\n        (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S)) =\n      (fun (_ : Matrix Empty (Fin (2 * k)) (LocProd 𝔠.S)) =>\n        stdColDatum 𝔠.χ\n          (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S))\n          (1 : Matrix (Fin (2 * k)) (Fin (2 * k)) (LocProd 𝔠.S))) := rfl\n  simp only [row_forward, row_reverse] at K this\n",
+        "reason": "The actual second replay leaves partially applied standard-row functions; use full function identities before expanding theta data"
+      },
+      {
+        "old": "  have : localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =\n      𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := by\n",
+        "new": "  have flipDatum (Ψ : Matrix n b (LocProd 𝔠.S) → ℂ)\n      (hΨ : Ψ ∈ schwartzBruhat HasLeftInv)\n      (P : IsPartner SemilocalField.O σ 𝔠.χ (stdRowDatum σ 𝔠.χ a) Ψ) :\n      localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =\n        𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := by\n",
+        "reason": "Keep the finite datum abstract inside the existing partner-law flip calculation; dsimp otherwise expands its standard-data implementation"
+      },
+      {
+        "old": "  convert congr((rankTwist 𝔠.ν⁻¹ n).1 g.det * $(K 𝔠 a ha) g) using 1 <;>\n",
+        "new": "  have : localDatum W (flipSpace U) (f.realMap y) (Ψ ·ᵀ) r.star =\n      𝔠.χ t ^ card b • f.map (localDatum U W y Ψ r) := flipDatum _ hΨ P\n  have kg := congr((rankTwist 𝔠.ν⁻¹ n).1 g.det * $(K 𝔠 a ha) g)\n  clear K\n  convert kg using 1 <;> clear kg <;>\n",
+        "reason": "After consuming the standard theta identity, prevent simp [*] from rewriting its own source side back through K"
+      }
+    ],
+    "replay_source_blob": "a42fb4baef0d9789f8fbaeaf9a529b8e222c3647",
+    "carrier_propagation": {
+      "source": "specialists/character_boxes/RUN79_COMPACT_CARRIER_PROPAGATION.lean",
+      "source_blob": "661ed5fdd14651cf5629866ca7e86810f9c5fef2",
+      "theorems": [
+        "run79_exchange_theorem",
+        "run79_explicit_matching",
+        "run79_stdClassSum_det_modKernel_eq",
+        "run79_stdClassSum_carrierXi_eq_carrierForm"
+      ],
+      "original_probes": [
+        "exchange_theorem",
+        "explicit_matching",
+        "stdClassSum_det_modKernel_eq",
+        "stdClassSum_carrierXi_eq_carrierForm"
+      ],
+      "original_source_blobs": {
+        "New/Exchange/ExchangeTheorem.lean": "608b4f61af27d780e24f799937a836ecd3c1d50a",
+        "New/Rows/Carrier.lean": "f0b7f97f299904aa73a928432147a932cac9be40",
+        "New/Rows/RowVolume.lean": "925de9c592b40763516e70ddeae48b4ad1a35b88",
+        "New/Rows/LiftVolumeHeight.lean": "87938141d4103b485fd5a7125721798f65f973f1",
+        "New/Rows/ComparisonForms.lean": "14ef893c54f5db837ea7e4f143b2b1a444b89b5a"
+      },
+      "new_Lean_execution": false
+    },
+    "compiled_together": true,
+    "combined_source_blob": "aba46120ca4118decd864f817b51bcca2bc31c19",
+    "candidate_declarations": [
+      "RHCharacterBoxes77.exchange_of_standard_pairs",
+      "run78_equalRankThetaRatio_value",
+      "run79_exchange_theorem",
+      "run79_explicit_matching",
+      "run79_stdClassSum_det_modKernel_eq",
+      "run79_stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "all_original_probes": [
+      "exchange_of_partners",
+      "exists_equalRankThetaRatio_value",
+      "stdExchange_of_periods",
+      "exchange_theorem",
+      "explicit_matching",
+      "stdClassSum_det_modKernel_eq",
+      "stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "native_source_build_performed": false,
+    "caller_replacement_checked": true,
+    "carrier_propagation_checked": true,
+    "all_requested_checks_ok": true,
+    "human_assembly_verified": false,
+    "steps": {
+      "environment": {
+        "returncode": 0,
+        "seconds": 1.02,
+        "log": "environment.log"
+      },
+      "c2_candidate": {
+        "returncode": 0,
+        "seconds": 51.15,
+        "log": "compile.log",
+        "axioms": {
+          "RHCharacterBoxes77.exchange_of_standard_pairs": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "run78_equalRankThetaRatio_value": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "compiled_together": true
+      },
+      "c2_propagated_callers": {
+        "returncode": 0,
+        "seconds": 51.15,
+        "log": "compile.log",
+        "axioms": {
+          "run79_exchange_theorem": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "run79_explicit_matching": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "run79_stdClassSum_det_modKernel_eq": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "run79_stdClassSum_carrierXi_eq_carrierForm": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "compiled_together": true
+      },
+      "c2_originals": {
+        "returncode": 0,
+        "axioms": {
+          "exchange_of_partners": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "exists_equalRankThetaRatio_value": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "stdExchange_of_periods": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "exchange_theorem": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "explicit_matching": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "stdClassSum_det_modKernel_eq": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "stdClassSum_carrierXi_eq_carrierForm": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true,
+        "compiled_together": true,
+        "log": "compile.log"
+      }
+    },
+    "all_five_type_and_dependency_guards_observed": true,
+    "compiled_module": {
+      "name": "C2Combined",
+      "artifacts": [
+        {
+          "name": "C2Combined.olean",
+          "bytes": 11035576,
+          "sha256": "6d26a226fd54798d425d3cf07766881fde0f2d2548b6f980788efae9cc97ed52"
+        }
+      ]
+    }
+  },
+  "graph_receipt": {
+    "roots": [
+      "stdClassSum_det_modKernel_eq",
+      "c2_stdClassSum_det_modKernel_eq",
+      "stdClassSum_carrierXi_eq_carrierForm",
+      "c2_stdClassSum_carrierXi_eq_carrierForm"
+    ],
+    "nodes": 119299,
+    "edges": 3865789,
+    "missing": 0,
+    "mask_histogram": {
+      "15": 119019,
+      "5": 44,
+      "13": 25,
+      "10": 59,
+      "12": 120,
+      "4": 5,
+      "8": 27
+    },
+    "per_root": {
+      "stdClassSum_det_modKernel_eq": {
+        "exit": 0,
+        "nodes": 119088,
+        "missing": 0,
+        "log": "audit-0.json"
+      },
+      "c2_stdClassSum_det_modKernel_eq": {
+        "exit": 0,
+        "nodes": 119078,
+        "missing": 0,
+        "log": "audit-1.json"
+      },
+      "stdClassSum_carrierXi_eq_carrierForm": {
+        "exit": 0,
+        "nodes": 119213,
+        "missing": 0,
+        "log": "audit-2.json"
+      },
+      "c2_stdClassSum_carrierXi_eq_carrierForm": {
+        "exit": 0,
+        "nodes": 119250,
+        "missing": 0,
+        "log": "audit-3.json"
+      }
+    },
+    "naive_repeated_nodes": 476629,
+    "scope": "Independent four-root determinant/Carrier audit; general complement retained; not RH",
+    "all_supplier_guards_pass": true,
+    "full_RH_replay": false
+  }
+}

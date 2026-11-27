@@ -84,6 +84,10 @@ The newer direct-line kernel proof and all three exact caller transports passed.
 
 The real_matching membership mask is 13: present at the old determinant and both Carrier roots, absent at the new determinant. All new polynomial/action/continuous-line suppliers are reached. Native Fischer polarisation and finite exchange remain. Native inspection took 219.84 s; this is not a fresh theorem compilation or speed benchmark. [Preferred mathematical derivation and all kernel receipts](2026-11-27_DIRECT_DETERMINANT_LINE.md); [complete graph certificates](2026-11-27_direct_determinant_graph_receipt/).
 
+## Independent restricted-chain source replay
+
+Run 46050109450 completed with actual mathematical pass, source aceceb93b79727aac30ebcb24388c58aebc5adbf. Fresh original Carrier build: 2489.81 s. The repaired six-declaration base and all ten restricted interface declarations passed; seven original probes and the negative control passed their respective acceptance/rejection conditions. All four independent root verifiers and all 35 guards passed across the same 119,299-node / 3,865,789-edge frontier. Its raw SHA256 is exactly the earlier local stream's 0d9ca13046d943ebe21783a4c7919b04670dc63136f90e92662e08a8a9922caa. [Exact independent compiler and graph receipts](2026-11-27_determinant_shared_receipt/). This is an independent kernel replay with native graph reproduction; it is not a new full interpreted/native comparison. The newer direct-line and family-consumer shared replay is active separately in C1 run 46055305146 and is not accepted yet.
+
 ## Evidence and limits
 
 - [B2 graph manifests, per-root verifier logs and caller guards](2026-11-27_b2_fused_graph_receipt/).

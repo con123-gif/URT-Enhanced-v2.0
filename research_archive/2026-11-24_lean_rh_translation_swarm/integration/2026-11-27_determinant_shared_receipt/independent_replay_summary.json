@@ -1,0 +1,29 @@
+{
+  "job_id": "rh-compact-c2-determinant-chain-20261127",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46050109450",
+  "source_sha": "aceceb93b79727aac30ebcb24388c58aebc5adbf",
+  "status": "pass",
+  "returncode": 0,
+  "wall_seconds": 2857.41,
+  "source_build": {
+    "returncode": 0,
+    "seconds": 2489.81,
+    "log": "b2_build.log"
+  },
+  "base_six_declarations_pass": true,
+  "ten_interface_declarations_pass": true,
+  "full_original_statements": 2,
+  "graph_roots": 4,
+  "graph_nodes": 119299,
+  "graph_edges": 3865789,
+  "missing": 0,
+  "supplier_guard_count": 35,
+  "original_axiom_probes": 7,
+  "negative_control_rejected": true,
+  "raw_graph_byte_identical_to_prior_local": true,
+  "source_status_blob": "5d9bb6069a96cbf0916a8988ba6c595b6023db52",
+  "new_Lean_execution": true,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "newer_direct_line_in_snapshot": false
+}
