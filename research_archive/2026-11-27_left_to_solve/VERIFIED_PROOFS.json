@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 4,
-  "complete_kernel_checked_candidates": 24,
+  "complete_kernel_checked_candidates": 25,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -343,13 +343,14 @@
       "proof_summary": "Full distinct-positive-triple/divisibility iff, including prime squares and all exceptions; prior parametrizations credited.",
       "statement_state": "closed",
       "statement_merged": true,
-      "statement_merge_commit": null,
+      "statement_merge_commit": "b54858452d862852b0d2e7e436ea382d157e258d",
       "statement_merged_at": "2026-11-27T18:30:50Z",
-      "remaining_obstruction": "Exact imported-target checker accepted18:37:31; fresh generic lease recovery pending before one-file full proof PR. No preceding proof found on current gates.",
+      "remaining_obstruction": "Own exact imported-target checker accepted. Foreign full proofPR10512 created18:48:43 before any own official full proof; withhold duplicate. No own fresh proof lease acquired.",
       "prior_inline_verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46036883361",
       "verification_job": 140680437329,
       "verification_commit": "76ef8db805256813fc213d2388728e5e5af867d0",
-      "imported_target_verdict": "accepted"
+      "imported_target_verdict": "accepted",
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10512"
     },
     {
       "problem_id": "oeis-a329813",
@@ -573,10 +574,34 @@
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10398",
       "statement_state": "open",
       "statement_merged": false
+    },
+    {
+      "problem_id": "oeis-a381423",
+      "exact_statement": "PROOFS_READY/oeis-a381423.statement.lean",
+      "proof": "PROOFS_READY/oeis-a381423.proof.lean",
+      "statement_sha256": "9a14d5d779be23aac8d155b92bd8834bfb1c1a10537d7eabc178d4ead1eaa38d",
+      "proof_sha256": "1b3d524b3b322e81c29e16d0e81ae111566310d6958383c18a4914ed384328c2",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46050735604",
+      "verification_job": 140681094261,
+      "verification_commit": "00e8488018183316ee9f0cb1a32767b4e332595a",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_full_kernel_pass",
+      "full_target_passed_at": "2026-11-27T18:37:43Z",
+      "merged_and_credited": "not_confirmed",
+      "genuine_open_status": "full_source_characterization_beyond_explicitly_credited_prior_quartic_selector_no_historical_priority_certified",
+      "proof_summary": "Unique signed Hermite coefficient maximum, closed selector, all exact4/5 blocks, their spacing and sqrt growth bounds; prior TrureTuring coefficient-selector work and Apache license retained.",
+      "remaining_obstruction": "Canonical full proof publicly uploaded. Official claim API repeatedly HTTP500 with no token received; statement registration, merge, imported-target checking and official full proof submission remain.",
+      "statement_pr": null,
+      "statement_merged": false,
+      "prior_credit": "Mike Sheppard; TrureTuring quartic selector and signed1/-3 law; DLMF."
     }
   ],
   "continuing_beyond_minimum": true,
-  "complete_kernel_checked_certificates": 25,
+  "complete_kernel_checked_certificates": 26,
   "accepted_formal_proof_submissions": 3,
   "confirmed_genuine_open_resolutions": 0,
   "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
@@ -592,6 +617,7 @@
     10062,
     10398
   ],
-  "interactive_leases_for_this_batch": "all_released_after_submitted_with_actual_HTTP200",
-  "pending_full_proof_submissions": 1
+  "interactive_leases_for_this_batch": "Nine new statement leases released with actualHTTP200; MO474511 registration lease release repeatedly HTTP500, inactive status NOT confirmed. No A381423 or A343311 proof-stage lease obtained.",
+  "pending_full_proof_submissions": 1,
+  "record_updated_utc": "2026-11-27T19:16:00Z"
 }
