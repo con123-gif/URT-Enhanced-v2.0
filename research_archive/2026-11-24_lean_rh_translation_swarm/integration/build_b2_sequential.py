@@ -18,6 +18,17 @@ PIN = "72fead102f663d5c7a407964a13dc0cf9d977207"
 MATHLIB = "56a005855ea17e0b0958f73ec801ae140b0a1679"
 
 
+def flatten_options(table, prefix=""):
+    """TOML dotted option names are nested tables, not Lean option values."""
+    for key, value in table.items():
+        name = prefix + key
+        if isinstance(value, dict):
+            yield from flatten_options(value, name + ".")
+        else:
+            yield "-D" + name + "=" + (str(value).lower() if isinstance(value, bool)
+                                          else str(value))
+
+
 def imports(text):
     # Preserve newlines, handling nested Lean block comments before header parsing.
     result = []
@@ -79,9 +90,7 @@ def main():
         order.append(module)
     visit("New.Filling.BlockBound")
     config = tomllib.loads((root/"lakefile.toml").read_text())
-    options = list(config.get("moreLeanArgs", [])) + [
-        "-D"+key+"="+(str(value).lower() if isinstance(value, bool) else str(value))
-        for key, value in config["leanOptions"].items()]
+    options = list(config.get("moreLeanArgs", [])) + list(flatten_options(config["leanOptions"]))
     result = {"compact": PIN, "mathlib": MATHLIB, "order": order,
               "mode": "direct Lean compilation in native import order",
               "lean_options": options, "steps": [],

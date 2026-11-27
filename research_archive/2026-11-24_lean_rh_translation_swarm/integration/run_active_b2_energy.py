@@ -7,9 +7,11 @@ import closure. A successful workflow alone is never a theorem receipt.
 """
 import argparse
 import contextlib
+import importlib.util
 import io
 import json
 import re
+import hashlib
 from pathlib import Path
 
 import run_compact_b2_native_replay as native
@@ -28,6 +30,13 @@ def main():
     out = Path(args.out).resolve()
     out.mkdir(parents=True, exist_ok=True)
     config = json.loads((HERE / "B2_ACTIVE_ENERGY_INPUT.json").read_text())
+    patch_info = config["skew_patch"]
+    patch_file = native.SWARM / patch_info["source"]
+    native.require(native.git_blob(patch_file.read_bytes()) == patch_info["source_blob"],
+                   "Changed peer skew-caller patch")
+    spec = importlib.util.spec_from_file_location("authenticated_skew_patch", patch_file)
+    patch = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(patch)
     texts = []
     for part in config["parts"]:
         raw = (native.SWARM / part["source"]).read_bytes()
@@ -46,11 +55,49 @@ def main():
 
     def pinned_step(argv, cwd, env, log, seconds):
         argv = list(argv)
-        if argv == ["lake", "build", "+New.Filling.BlockBound:olean"]:
+        building = argv == ["lake", "build", "+New.Filling.BlockBound:olean"]
+        if building:
             argv[-1] = "+New.Filling.CrudeEnergy:olean"
         if argv[:3] == ["lake", "env", "lean"]:
             argv = argv[:3] + ["--tstack=400000"] + argv[3:]
-        return base_step(argv, cwd, env, log, seconds)
+        result = base_step(argv, cwd, env, log, seconds)
+        if building and result["returncode"] == 0:
+            # Keep the costly pinned native cache as an Actions artifact. The
+            # small manifest is committed; archive bytes stay artifact-only.
+            archive = out / "native_b2_oleans.tar.zst"
+            packed = base_step(["tar", "--zstd", "-cf", archive, "-C", cwd,
+                                ".lake/build/lib/lean"], cwd, env,
+                               out / "cache_archive.log", 180)
+            cache = {"compact": native.PIN, "mathlib": native.MATHLIB,
+                     "lean_release_sha256": native.RELEASE,
+                     "build_target": "New.Filling.CrudeEnergy:olean",
+                     "archive": archive.name, "archive_result": packed,
+                     "proof_receipt": False}
+            if packed["returncode"] == 0:
+                with archive.open("rb") as stream:
+                    cache["sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
+                cache["bytes"] = archive.stat().st_size
+            native.dump(out / "native_cache_manifest.json", cache)
+            # Compile the peer's exact reversible patch in this already-built
+            # workspace, as a separate process with the original module's imports.
+            raw = (Path(cwd) / "src/New/Filling/BlockBound.lean").read_bytes()
+            names = ["RHPositivityRun73.skew_correction_mul",
+                     "Filling.tsum_invPowWeight_le_of_codim_le",
+                     "Filling.sum_pairWeight_le"]
+            source = out / "BlockBoundSkewReplacement.lean"
+            source.write_text(patch.transform(raw) + "\n" +
+                              "\n".join("#print axioms " + n for n in names) + "\n")
+            skew_log = out / "skew_caller.log"
+            ans = base_step(["lake", "env", "lean", "--tstack=400000",
+                             "-DautoImplicit=false", "-DrelaxedAutoImplicit=false",
+                             "-DmaxSynthPendingDepth=3", "-DmaxHeartbeats=4000000", source],
+                            cwd, env, skew_log, 600)
+            ans.update(native.audit(skew_log, names))
+            ans["source_blob"] = native.git_blob(source.read_bytes())
+            ans["scope"] = "exact reversible original-statement skew/count caller patch"
+            ans["full_RH_replay"] = False
+            native.dump(out / "skew_caller_results.json", ans)
+        return result
 
     native.step = pinned_step
     native.preflight()
@@ -73,6 +120,8 @@ def main():
     log = (out / probe["log"]).read_text()
     native.require(PAIR_GUARD in log and ENERGY_GUARD in log,
                    "Actual pair/energy caller guards did not complete")
+    skew = json.loads((out / "skew_caller_results.json").read_text())
+    skew_ok = skew["returncode"] == 0 and skew["axiom_audit_ok"] is True
     result = {
         **provenance, "new_Lean_execution": True, "axioms": probe["axioms"],
         "original_declaration_types_match": True,
@@ -80,10 +129,13 @@ def main():
         "replacement_pair_bound_consumed": True,
         "original_targets_absent_from_direct_proof_dependencies": True,
         "scope": "pair-weight replacement and its full original-statement level-energy consumer",
+        "separate_skew_caller_receipt": "skew_caller_results.json",
         "human_assembly_verified": False, "full_RH_replay": False,
-        "all_requested_checks_ok": True,
+        "separate_skew_caller_checked": skew_ok,
+        "all_requested_checks_ok": skew_ok,
     }
     native.dump(out / "energy_replacement_results.json", result)
+    native.require(skew_ok, "Energy caller passed; separate skew caller failed; inspect its log")
     print(json.dumps({"compiled_theorems": len(names), "energy_caller_checked": True,
                       "human_assembly_verified": False, "full_RH_replay": False}))
 
