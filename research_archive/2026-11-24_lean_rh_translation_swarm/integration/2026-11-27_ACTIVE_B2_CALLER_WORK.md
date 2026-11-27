@@ -34,13 +34,13 @@ not a global deletion of level assumptions from the counting theorem.
 The existing source geometry is factored, not advertised as a new theorem
 of arithmetic geometry. A command inspects the elaborated caller proof,
 requires both new bridges to occur, and rejects a direct invocation of
-the original pair-weight theorem. Execution remains pending.
+the original pair-weight theorem. Complete repaired-caller replay remains pending; the first failed native attempt is recorded below.
 The check also compares the complete original declaration type, including
 binder order. The candidate carries the exact compact elaboration options.
 
 A local exact Lean toolchain and pinned Mathlib checkout were located.
 Tracked compact sources and lakefile were compared to the exact pin.
-The original BlockBound build is running locally with two Lean threads;
+An initial original BlockBound build was started locally with two Lean threads;
 its log is outside the tracked source. Earlier claims that Lean was
 absent meant absent on PATH; the present local capability is now checked.
 No protected source or workflow is modified. A later preflight detected
@@ -86,11 +86,27 @@ original weighted-count supplier; this separate skew replay is not a claim
 that the two alternative count assemblies have been combined. A native
 cache archive is retained as an Actions artifact after a successful source
 build; its pin/checksum manifest is explicitly not a proof receipt.
-That preflight is not Lean execution. The energy job has NOT yet been
-registered: first inspect the active pair caller result and repair any
-failure, then validate its consumer in the same pinned workspace.
+The first full caller run 45994173721 has now finished: source build
+exit 0 (1454.31 seconds), candidate exit 1 (302.51 seconds), six separate
+original probes passed and the negative guard was rejected. Overall
+ERROR, not PASS. Status blob 1b8274e110b4be4fbf4cbf8dd6202f0cea903953,
+result blob 7d6aa4920926b95f60958f4a5a5d09e90c1183e6, compiler log
+acf075f047d1b374d2ef5379d39b7742470b15a4. The inner divisor was accepted
+with only propext/Classical.choice/Quot.sound. The outer bridge failed on
+an offside lambda continuation at line 52; the missing-constant errors,
+placeholder axiom reports and missing caller proof followed from it.
+The axiom/dependency checks correctly rejected the full file.
 
-RESUME HERE: finish local BlockBound build; compile the prepared outer
-bridge and new inner/caller file. Preserve every compiler error and
-repair actual elaboration failures. Then print axioms and inspect the
-new theorem's actual dependencies before reporting caller validation.
+The lambda body is now kept on the same line as its pattern alternative.
+Repaired source blob 0d93565d7962a314167e39f10566f9f10b641a2e; the
+new assembled pair/energy input is 2a748f33ad2fbce589a53ff8750ea0f783c63d80.
+Static input preflight passed; repaired native validation remains pending.
+Job `rh-compact-b2-energy-repair-20261127` now checks the repaired pair
+caller and its complete energy consumer, plus the separate peer skew/count
+patch. Each result and the preserved native cache have distinct receipts.
+No full B2, human assembly or RH validation is claimed.
+
+RESUME HERE: inspect the active repair batch's actual compiler outputs,
+fix its first failure, and continue from the retained native artifact
+cache rather than another cold build. Only a completed exact-type,
+bridge-dependency and standard-axiom receipt permits caller validation.

@@ -48,8 +48,8 @@ theorem b2_active_outer_frameValueIndex_dvd (p : S.Classes × S.G E)
     (mul_dvd_mul ((submoduleIndex_dvd_of_le (K' := _ ⊓ _) .id le_rfl
       (by simp)).trans ((submoduleIndex_gIdele_smul hidx
       (colLattice_le (col_mem_colLattice ·.1))).dvd.trans
-      (submoduleIndex_dvd_of_le _ (fun | _, ⟨v, h, rfl⟩ =>
-        ⟨_, ⟨_, h, rfl⟩, by simp⟩) le_sup_left))) dvd_rfl))
+      (submoduleIndex_dvd_of_le _ (fun | _, ⟨v, h, rfl⟩ => ⟨_, ⟨_, h, rfl⟩, by simp⟩)
+        le_sup_left))) dvd_rfl))
 
 /-- Actual outer weighted sum in sum_pairWeight_le, with its original support. -/
 theorem b2_active_outer_count {t : S.reducedImage besselS}

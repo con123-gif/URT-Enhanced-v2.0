@@ -10,7 +10,7 @@
 | A2 | ShortAndEnough; actual short-column span, integral vacuum/null cone, theta–Hecke pairing and lift norm | Existing RUN63 numerical suppliers and marked gauge; attach to same datum. Prove single-stage pairing and integral frame existence. | Theta / acceleration |
 | A3 | CM formal-height / chosen-level normalization | RUN75 b892a87c published Kronecker bridge; RUN76 82672996 relative different norm. Retain primitive CM formal-group and exact frame inputs. | Literature / acceleration |
 | B1 | SharpData / SiegelWeil / Rallis absolute and finite cutoff | Integration notes COMPACT_SIEGEL_WEIL_NATIVE_BRIDGE, COMPACT_CLEAN_GRAPH_AUDIT, COMPACT_DOUBLING_PHASE_AND_GRAPH_PAIRING, COMPACT_DUAL_DATUM_PROJECTOR_AUDIT; RUN76 c8d08359 independent cutoff audit. Audit common vacuum/majorant and exact model/Haar assumptions, replay. | Positivity / literature / audit |
-| B2 | AmplitudeSums / CrudeEnergy / LinkPairing / BlockBound | Lift, quotient lower bound, marked common-link inclusion and pointwise pair are connected by the caller audit below. Counting constructions also exist in RUN73/74/75 and the 26-November notes. Their eight helper proofs have passed native replay; six original declarations were probed separately. The full original-statement pair replacement is running in the next batch; its level-energy consumer is prepared. Validate primitive inputs and inspect actual caller receipts before integration. | URT / Landau / geometry |
+| B2 | AmplitudeSums / CrudeEnergy / LinkPairing / BlockBound | Lift, quotient lower bound, marked common-link inclusion and pointwise pair are connected by the caller audit below. Counting constructions also exist in RUN73/74/75 and the 26-November notes. Their eight helper proofs have passed native replay; six original declarations were probed separately. The first full pair replacement failed on a lambda-layout error; its inner divisor was accepted with the standard axioms. The layout is repaired and the pair/energy batch is registered; inspect its new receipt before validation. Validate primitive inputs and inspect actual caller receipts before integration. | URT / Landau / geometry |
 | B3 | Moments / GlobalSieve / FiniteSystem | Retain real/finite shell, frequency, head bounds, one-vector and local energy suppliers; use RUN51 finite Fourier and existing majorant-to-correlation work. Prove missing actual quantitative suppliers, not just positivity. | Landau / positivity |
 | B4 | FillingTheorem: Fits.exists_translate_finrank_comap_le | Connect B1–B3 to actual ramified column maps, moment and rank bounds, positive row dimension; native named theorem has been checked on original source, not shortened replacement. | Integration / editor |
 | C1 | FitTwistsExist / Selmer; crystalline and integral frame foundations | RUN75 2f004f32 determinant contradiction and frame construction conditional; use RUN66 radius/span and filtered coefficient caller. Remaining integral basis contraction, chart/adic approximation, odd-Sha and actual fit witness. | Galois / mathematics |
@@ -18,7 +18,7 @@
 | C3 | RibetElement / balanced rows and arithmetic budget | 452515bd final Ribet budget, existing coefficient audit, triangle/cocycle and signed depth/cut/profile guards. Connect suppliers to actual m-fold twist, do not recompute final budget. | Galois / mathematics / editor |
 | D1 | DataExist.exists_data | Human derivation §6c independently audited in 39478bf0 (uniform Siegel–Walfisz, all record fields and quantifiers). Replay full witness and exact caller; no missing D1 human derivation identified. | Prime / audit |
 | E1 | PrimeError / OneSidedCriterion / PolarLandau / ZeroFreeTwist | Human analytic implication §§6a–b reviewed by editor in [signed-residue audit](specialists/proof_editor/2026-11-27_D1_E1_SIGNED_RESIDUE_CALLER_AUDIT.lean), including fixed-modulus PNT, normalization, density, signed residues and Landau. Conditional on star; native replay remains. Do not reopen without specific discrepancy. | Prime / Landau / literature |
-| V1 | Native compact replacement verification | Eight RUN73/74/75 helpers plus six separate original declarations passed in run 45986308748, with only the standard axiom subset and an expected rejected negative control. Full pair caller run 45994173721 is active; the energy consumer is prepared. Original JetExponentBound timeout remains historical separate evidence. No full RH replay or human assembly validation. | Kernel / dependency / audit |
+| V1 | Native compact replacement verification | Eight RUN73/74/75 helpers plus six separate original declarations passed in run 45986308748, with only the standard axiom subset and an expected rejected negative control. Full pair caller run 45994173721 finished ERROR: source build passed, candidate exit 1 on an outer-bridge layout error; inner divisor standard axioms only. Repaired pair/energy job rh-compact-b2-energy-repair-20261127 is registered. Original JetExponentBound timeout remains historical separate evidence. No full RH replay or human assembly validation. | Kernel / dependency / audit |
 | V2 | Integration and full dependency frontier | Compute constructor-inclusive reachable obligations on compact pin; deduplicate by source declaration, caller and exact premises; reconcile latest peer results into one spine. No percentage until denominator. | Integration / editor / dependency |
 
 ## Preferred B2 chain (do not repeat derivations)
@@ -42,12 +42,17 @@ original-declaration axiom probes passed; the omitted-projector negative
 control was rejected. This does not check a replacement at its caller.
 The [active caller implementation](integration/2026-11-27_ACTIVE_B2_CALLER_WORK.md)
 replaces the complete pair-weight proof with named outer/inner bridges;
-run 45994173721 is active and must supply its own compiler receipt. The
-full level-energy consumer and separate reversible skew/count patch are
-prepared for the next shared workspace. All root B2 obligations remain
+run 45994173721 finished ERROR. Its inner divisor was accepted with only
+the standard axioms, but an outer lambda-layout error prevented a checked
+full pair proof. The layout has been corrected; the complete pair/energy
+consumer and separate reversible skew/count patch are registered in
+`rh-compact-b2-energy-repair-20261127`. The new batch retains a compiled
+native cache artifact, with a separate manifest and no proof claim. All root B2 obligations remain
 OPEN; human_assembly_verified=false and full_RH_replay=false.
 
 ## Evidence and status
+
+- Failed full caller replay: [active_b2_callers.log](https://github.com/con123-gif/URT-Enhanced-v2.0/blob/cathedral-research-state/compute/rh-compact-b2-callers-replay-20261127/outputs/active_b2_callers.log), blob acf075f047d1b374d2ef5379d39b7742470b15a4; result blob 7d6aa4920926b95f60958f4a5a5d09e90c1183e6 and status blob 1b8274e110b4be4fbf4cbf8dd6202f0cea903953. Source build passed; inner divisor standard axiom report; outer lambda continuation error led to missing constants and rejected placeholder reports. Do not treat workflow success as candidate success. Repaired source blob 0d93565d7962a314167e39f10566f9f10b641a2e awaits its own replay.
 
 - Successful helper replay: [b2_native_results.json](https://github.com/con123-gif/URT-Enhanced-v2.0/blob/cathedral-research-state/compute/rh-compact-b2-human-replay-20261127/outputs/b2_native_results.json), blob a5dba18064d92bade88f3133b7217addcfe9b9ff; status blob d9eb4d1dc47d7dc52f36bc13b41b3eea170b667d. BlockBound source build exit 0, eight helper proofs and six separate original probes exit 0, standard axioms only. caller_replacements_checked=false; human_assembly_verified=false; full_RH_replay=false.
 

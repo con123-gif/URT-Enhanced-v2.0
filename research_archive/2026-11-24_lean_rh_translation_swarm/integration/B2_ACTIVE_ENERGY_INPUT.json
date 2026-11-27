@@ -2,7 +2,7 @@
   "parts": [
     {
       "source": "integration/B2_ACTIVE_CALLER_REPLACEMENT.lean",
-      "source_blob": "3bc8e74903dc1455625636ef78a1e7359be0047b"
+      "source_blob": "0d93565d7962a314167e39f10566f9f10b641a2e"
     },
     {
       "source": "integration/B2_ACTIVE_ENERGY_REPLACEMENT.lean",

@@ -3578,3 +3578,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration
 timeout_minutes = 180
 requested_by = "GPT active interactive proof work, 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-b2-energy-repair-20261127"
+question = "Repair the actual outer-bridge lambda layout; compile the complete original-statement pair replacement and its complete level-energy consumer with exact-type/direct-dependency and standard-axiom guards. In the same pinned native workspace separately replay the reversible peer skew/count patch. Retain partial results and the native cache artifact; no full B2, human assembly or RH claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py --out {out}"
+timeout_minutes = 180
+requested_by = "GPT active continuous work, user directive 2026-11-27"
+claim = "independent"

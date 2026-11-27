@@ -12,6 +12,7 @@ import io
 import json
 import re
 import hashlib
+import sys
 from pathlib import Path
 
 import run_compact_b2_native_replay as native
@@ -60,8 +61,12 @@ def main():
             argv[-1] = "+New.Filling.CrudeEnergy:olean"
         if argv[:3] == ["lake", "env", "lean"]:
             argv = argv[:3] + ["--tstack=400000"] + argv[3:]
+        print(json.dumps({"native_step": log.stem, "state": "started"}),
+              file=sys.stderr, flush=True)
         result = base_step(argv, cwd, env, log, seconds)
-        if building and result["returncode"] == 0:
+        print(json.dumps({"native_step": log.stem, "state": "finished", **result}),
+              file=sys.stderr, flush=True)
+        if building:
             # Keep the costly pinned native cache as an Actions artifact. The
             # small manifest is committed; archive bytes stay artifact-only.
             archive = out / "native_b2_oleans.tar.zst"
@@ -71,6 +76,7 @@ def main():
             cache = {"compact": native.PIN, "mathlib": native.MATHLIB,
                      "lean_release_sha256": native.RELEASE,
                      "build_target": "New.Filling.CrudeEnergy:olean",
+                     "source_build_complete": result["returncode"] == 0,
                      "archive": archive.name, "archive_result": packed,
                      "proof_receipt": False}
             if packed["returncode"] == 0:
@@ -78,6 +84,7 @@ def main():
                     cache["sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
                 cache["bytes"] = archive.stat().st_size
             native.dump(out / "native_cache_manifest.json", cache)
+        if building and result["returncode"] == 0:
             # Compile the peer's exact reversible patch in this already-built
             # workspace, as a separate process with the original module's imports.
             raw = (Path(cwd) / "src/New/Filling/BlockBound.lean").read_bytes()
