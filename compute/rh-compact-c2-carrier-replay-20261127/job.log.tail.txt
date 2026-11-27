@@ -1,0 +1,31 @@
+{"step": "download", "state": "started"}
+{"step": "download", "returncode": 0, "seconds": 2.42, "log": "download.log"}
+{"step": "extract", "state": "started"}
+{"step": "extract", "returncode": 0, "seconds": 8.39, "log": "extract.log"}
+{"step": "version", "state": "started"}
+{"step": "version", "returncode": 0, "seconds": 0.06, "log": "version.log"}
+{"step": "init", "state": "started"}
+{"step": "init", "returncode": 0, "seconds": 0.02, "log": "init.log"}
+{"step": "remote", "state": "started"}
+{"step": "remote", "returncode": 0, "seconds": 0.06, "log": "remote.log"}
+{"step": "fetch", "state": "started"}
+{"step": "fetch", "returncode": 0, "seconds": 1.02, "log": "fetch.log"}
+{"step": "checkout", "state": "started"}
+{"step": "checkout", "returncode": 0, "seconds": 0.21, "log": "checkout.log"}
+{"step": "mathlib_cache", "state": "started"}
+{"step": "mathlib_cache", "returncode": 0, "seconds": 61.31, "log": "mathlib_cache.log"}
+{"step": "b2_build", "state": "started"}
+{"step": "b2_build", "returncode": 0, "seconds": 1836.62, "log": "b2_build.log"}
+{"step": "original_callers", "state": "started"}
+{"step": "original_callers", "returncode": 0, "seconds": 3.37, "log": "original_callers.log"}
+{"step": "negative_missing_projector_guard", "state": "started"}
+{"step": "negative_missing_projector_guard", "returncode": 1, "seconds": 2.07, "log": "negative_missing_projector_guard.log"}
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py", line 141, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py", line 128, in main
+    native.require(state["all_requested_checks_ok"], "C2 caller checks incomplete; inspect actual receipts")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: C2 caller checks incomplete; inspect actual receipts

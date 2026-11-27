@@ -1,0 +1,7 @@
+'exchange_of_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exists_equalRankThetaRatio_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdExchange_of_periods' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exchange_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'explicit_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdClassSum_det_modKernel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'stdClassSum_carrierXi_eq_carrierForm' depends on axioms: [propext, Classical.choice, Quot.sound]

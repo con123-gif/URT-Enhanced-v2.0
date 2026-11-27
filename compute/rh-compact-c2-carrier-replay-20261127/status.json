@@ -1,0 +1,158 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: C2 caller checks incomplete; inspect actual receipts",
+  "returncode": 1,
+  "wall_s": 1935.54,
+  "tail": "{\"step\": \"download\", \"state\": \"started\"}\n{\"step\": \"download\", \"returncode\": 0, \"seconds\": 2.42, \"log\": \"download.log\"}\n{\"step\": \"extract\", \"state\": \"started\"}\n{\"step\": \"extract\", \"returncode\": 0, \"seconds\": 8.39, \"log\": \"extract.log\"}\n{\"step\": \"version\", \"state\": \"started\"}\n{\"step\": \"version\", \"returncode\": 0, \"seconds\": 0.06, \"log\": \"version.log\"}\n{\"step\": \"init\", \"state\": \"started\"}\n{\"step\": \"init\", \"returncode\": 0, \"seconds\": 0.02, \"log\": \"init.log\"}\n{\"step\": \"remote\", \"state\": \"started\"}\n{\"step\": \"remote\", \"returncode\": 0, \"seconds\": 0.06, \"log\": \"remote.log\"}\n{\"step\": \"fetch\", \"state\": \"started\"}\n{\"step\": \"fetch\", \"returncode\": 0, \"seconds\": 1.02, \"log\": \"fetch.log\"}\n{\"step\": \"checkout\", \"state\": \"started\"}\n{\"step\": \"checkout\", \"returncode\": 0, \"seconds\": 0.21, \"log\": \"checkout.log\"}\n{\"step\": \"mathlib_cache\", \"state\": \"started\"}\n{\"step\": \"mathlib_cache\", \"returncode\": 0, \"seconds\": 61.31, \"log\": \"mathlib_cache.log\"}\n{\"step\": \"b2_build\", \"state\": \"started\"}\n{\"step\": \"b2_build\", \"returncode\": 0, \"seconds\": 1836.62, \"log\": \"b2_build.log\"}\n{\"step\": \"original_callers\", \"state\": \"started\"}\n{\"step\": \"original_callers\", \"returncode\": 0, \"seconds\": 3.37, \"log\": \"original_callers.log\"}\n{\"step\": \"negative_missing_projector_guard\", \"state\": \"started\"}\n{\"step\": \"negative_missing_projector_guard\", \"returncode\": 1, \"seconds\": 2.07, \"log\": \"negative_missing_projector_guard.log\"}\nTraceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py\", line 141, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py\", line 128, in main\n    native.require(state[\"all_requested_checks_ok\"], \"C2 caller checks incomplete; inspect actual receipts\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: C2 caller checks incomplete; inspect actual receipts\n",
+  "id": "rh-compact-c2-carrier-replay-20261127",
+  "question": "In one official-source pinned workspace, build only the Carrier import closure, check the adapted RUN78 equal-rank replacement and four complete RUN79 exchange/matching/Carrier consumers, retaining checked modules and native cache. Require five exact original statement comparisons, actual direct supplier guards, standard axiom reports, seven separate original probes and the negative control. No complete graph, signed-height, human assembly or RH claim.",
+  "requested_by": "GPT active continuous work, user directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py --out {out}",
+  "utc": "2026-11-27T14:37:02Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "4cdf568ee31b94fe2758b2cea9251adf2bba4a8d",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46012543617",
+  "outputs_committed": [
+    {
+      "path": "b2_build.log",
+      "bytes": 52013,
+      "sha256": "b83aea701de0051a0c737729ec86166b9ae435b26e28da0e3f17baf0cd328e6e"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 2376,
+      "sha256": "edcf09b60679c8bcdcc105c05b98a6067385e7463cbe7b51a79dedd3367559b1"
+    },
+    {
+      "path": "c2/C2Caller.lean",
+      "bytes": 14231,
+      "sha256": "e615dbfcc04e6851ff2fd6c7c03482f50edaf736248ad0fa5bb320f1ccd7b330"
+    },
+    {
+      "path": "c2/C2OriginalProbes.lean",
+      "bytes": 300,
+      "sha256": "aff1dc5645d1056fe124dd6fac465432ef17d322985e83496a94e634241feaa6"
+    },
+    {
+      "path": "c2/c2_candidate.log",
+      "bytes": 7755,
+      "sha256": "1b34fac0f67cb6f0a7510d2fa2f2915748d928e1ee5cac89c6be2f6a80c21d41"
+    },
+    {
+      "path": "c2/c2_input_manifest.json",
+      "bytes": 1795,
+      "sha256": "28330f33fcde64de854dca4fc7cdc1f862ee1241709b4f4e71d24ad6f1391355"
+    },
+    {
+      "path": "c2/c2_originals.log",
+      "bytes": 605,
+      "sha256": "f28774be288b63f33c1e8cf8e3cf9970bea55493ea1f09171b4218900fa28776"
+    },
+    {
+      "path": "c2/c2_replacement_results.json",
+      "bytes": 3738,
+      "sha256": "567b755db62d3900c2aef5c9d30905ec44c8b626452bfb78f8e419c3f0b21538"
+    },
+    {
+      "path": "c2_driver.log",
+      "bytes": 836,
+      "sha256": "7d6cb7c98767d6c772ad24d1476d870426f0f0ddf5b2ddd00d46e9d6abb0fd5a"
+    },
+    {
+      "path": "cache_archive.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "3e6480d6eef5e12a8687f27d7f6049a5cd1c399dcd43ff781862b87c9df6c901"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 1026,
+      "sha256": "adeccbba932b87fa3ab83708e774292864c2cca8bad242866d7458b4e278e576"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 10200,
+      "sha256": "04dee84e913e1f8d0aa63435617723e5ccb2a11f5ebcb43f855137d83a220466"
+    },
+    {
+      "path": "native_cache_manifest.json",
+      "bytes": 563,
+      "sha256": "70f9a2297c4e86885c8fa5966d686ee368e65601f89323a24b3e36c6b32e49a0"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "0a358029bd70150d379f69608fa324ef6ad30a38eca211f003c045e8fbcd31e9"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 605,
+      "sha256": "f28774be288b63f33c1e8cf8e3cf9970bea55493ea1f09171b4218900fa28776"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1119,
+      "sha256": "01ab182a09ab04ab71134e59504995131274fe80b13f386ccc9d6e570806d53a"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "a699e9182207914523c583d467c0b3373aae5b25909e09e308d1515160d989ab"
+    },
+    {
+      "path": "shared_c2_results.json",
+      "bytes": 6803,
+      "sha256": "d115fdbc19ef75738b92ce468e42989b1904846106508bb5da622abbbed287c4"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "native_c2_oleans.tar.zst",
+      "bytes": 195173317,
+      "sha256": "5622158479c94f4a54132b477ad8e9aed7914c56f5aaacb7d82e3f132390869f"
+    }
+  ]
+}
