@@ -2,14 +2,17 @@
 """Retain the original compiled C1 closure before the existing replay ends.
 
 Execute the unchanged, authenticated RUN84 runner. Its mathematical checks
-and result stay separate from the original-source cache artifact. Save even
-a partial cache after a failed original build so the next repair can reuse it.
+and result stay separate from the original-source cache artifact and optional
+C2 consumer continuation. Save even a partial cache after a failed original
+build so the next repair can reuse it. A continuation failure never suppresses
+the original C1 peer probes.
 """
 import argparse
 import hashlib
 import importlib.util
 import json
 from pathlib import Path
+import shutil
 import sys
 
 HERE = Path(__file__).resolve().parent
@@ -25,6 +28,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--preflight", action="store_true")
+    parser.add_argument("--continue-c2", action="store_true",
+                        help="Reuse the same original build for the exact determinant-to-fit-family continuation")
     args = parser.parse_args()
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
@@ -35,13 +40,18 @@ def main():
     spec.loader.exec_module(runner)
     original_step, original_argv = runner.step, sys.argv
     state = {"runner_source_blob": RUNNER_BLOB, "compact": runner.PIN, "mathlib": runner.MATHLIB,
-             "cache_only_wrapper": True, "source_build_complete": False,
+             "cache_only_wrapper": not args.continue_c2, "source_build_complete": False,
+             "c2_continuation_requested": args.continue_c2, "c2_continuation_checked": False,
              "native_cache_retained": False, "proof_receipt": False, "full_RH_replay": False}
 
     def save():
         (out / "retained_cache_wrapper.json").write_text(json.dumps(state, indent=2) + "\n")
 
     save()
+    continuation = None
+    if args.continue_c2:
+        import run_c2_value_family_from_built as continuation
+        continuation.preflight(out / "c2_value_family")
 
     def step(argv, cwd, env, log, seconds):
         result = original_step(argv, cwd, env, log, seconds)
@@ -65,6 +75,19 @@ def main():
                                  bytes=archive.stat().st_size, sha256=digest,
                                  lean_release_sha256=runner.RELEASE)
             save()
+            if args.continue_c2 and result["returncode"] == 0:
+                try:
+                    lean = shutil.which("lean", path=env["PATH"])
+                    if lean is None:
+                        raise RuntimeError("Pinned compiler missing after C1 original source build")
+                    continued = continuation.run_in_built(
+                        cwd, Path(lean).parent, out / "retained_cache_wrapper.json",
+                        out / "c2_value_family", env)
+                    state["c2_continuation_checked"] = continued["all_requested_checks_ok"] is True
+                except Exception as exc:
+                    # Preserve original C1 peer probes even if this new consumer fails.
+                    state["c2_continuation_failure"] = str(exc)
+                save()
         return result
 
     try:
@@ -73,6 +96,8 @@ def main():
         runner.main()
         if not args.preflight and not state["native_cache_retained"]:
             raise RuntimeError("C1 runner finished but original compiled cache was not retained")
+        if not args.preflight and args.continue_c2 and not state["c2_continuation_checked"]:
+            raise RuntimeError("C2 value-family continuation incomplete; original C1 results are separate")
     except Exception as exc:
         state["failure"] = str(exc)
         save()

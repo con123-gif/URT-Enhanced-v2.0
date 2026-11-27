@@ -3674,8 +3674,8 @@ claim = "independent"
 
 [[job]]
 id = "rh-compact-c1-fit-budget-replay-20261127"
-question = "Build pinned FitTwistsExist once. Replay the exact original-statement C1 split with named finite-prime budget supplier and conditional witness assembly, checking complete type and direct dependency guards; separately check RUN83 scalar payment and three original axiom probes. Preserve partial failures. Not a valuation theorem, transitive graph, C1 closure or RH proof."
-run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c1_retained_cache.py --out {out}"
+question = "Build pinned FitTwistsExist once and retain its original cache. Reuse it for the exact determinant-line, integral-measure, signed-family, common-twist and fit-family transports; require twelve constructor-inclusive independent root audits and all 82 guards. Preserve unchanged RUN84 C1 budget-split, RUN83, original and negative-control checks as separate receipts even when the C2 continuation fails. Preserve all partial failures. Not a complete human assembly, C1 closure or RH proof."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c1_retained_cache.py --continue-c2 --out {out}"
 timeout_minutes = 320
 requested_by = "GPT, user continuous-work directive 2026-11-27"
 claim = "independent"

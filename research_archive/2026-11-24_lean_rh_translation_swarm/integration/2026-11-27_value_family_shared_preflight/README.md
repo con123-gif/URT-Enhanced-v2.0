@@ -1,0 +1,13 @@
+# Shared C1/C2 value-family continuation — preflight only
+
+27 November 2026. Python syntax checks and the complete source-authentication preflight passed locally. **The four ValueFamilies/family/twist/fit transports have not been compiled.** All five direct determinant-line source files retain their actual prior local kernel PASS receipts; preflight does not create a new proof receipt.
+
+The existing queued job rh-compact-c1-fit-budget-replay-20261127 now runs run_c1_retained_cache.py --continue-c2. It preserves the unchanged pinned RUN84 C1 runner and its original peer/original/negative checks. One original FitTwistsExist source build supplies the overlapping Carrier and ValueFamilies cache, which is retained before any continuation. The continuation replays the authenticated C2 base/interfaces and ten direct-line declarations, then the prepared four complete original-statement consumer transports. Its final audit projects twelve original/new roots through the unchanged independent verifier and requires all 82 guards. The actual accepted 52-guard determinant roster is pinned before the extra consumer pairs are added.
+
+A failed new C2 continuation is recorded separately and does not suppress the original C1 peer probes. The aggregate wrapper rejects incomplete requested work; each mathematical result must be read from its own actual compiler and graph receipts. The C1 deep period-ring, balanced-row, denominator and arithmetic budget inputs remain. This is separate from RUN84's budget split and is not a human assembly, C1 closure or RH proof.
+
+Source pins: ValueFamilies 22b608a059e66ce3154e8e8e2d42d779cff0acad; TwistForRows 802242498ad4530e7f52cc4f14e0a03be2c59f4d; FitTwistsExist da769eba595af2f883eed9b82dbd322a521aea14. Exact prepared consumer source 7e912b212aa0a365106cca2e7a0c30a17eb65ff6. Native compact, Lean and Mathlib pins match the accepted direct-line record.
+
+RESUME HERE: after the running earlier C2 replay (46050109450), inspect this existing C1 job's selected snapshot and actual outputs. Original C1 receipt: outputs/c1_native_results.json. Cache/aggregate continuation status: outputs/retained_cache_wrapper.json. New C2 result: outputs/c2_value_family/value_family_pipeline_results.json. Individual rejected sources and logs are retained in their named module folders. Strict twelve-root evidence is under outputs/c2_value_family/consumer_graph/. Repair its first actual error against the retained original cache; do not start a second cold original build or mark an incomplete phase accepted.
+
+No new job, schedule or protected workflow is added. The existing queued job's command is extended to share its original source build for the next actual consumer.
