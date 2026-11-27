@@ -1,0 +1,7 @@
+{
+  "wrong_typed_reference_rejected": true,
+  "intended_error": "Matching reference is not the typed polynomial unit",
+  "no_accepted_object": true,
+  "negative_control_new_Lean_execution": true,
+  "full_RH_replay": false
+}

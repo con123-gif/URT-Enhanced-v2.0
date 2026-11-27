@@ -1,11 +1,19 @@
-# Explicit unit reference — active continuation
+# Explicit unit reference — bounded native result
 
-27 November 2026. WORK IN PROGRESS / NOT VERIFIED. The direct determinant line and full 52-guard local audit remain accepted; the earlier restricted chain has independently replayed on shared run 46050109450. The four actual family consumers are now running against the original C1 build in run 46055305146, snapshot 98f6d14d1ed640bdc432aec50251fc29dbfe95e8.
+27 November 2026. LOCAL KERNEL PASS. Both new declarations passed the normal Lean 4.35.0 kernel against the pinned original compact source, with only propext, Classical.choice and Quot.sound. The wrong-reference negative control failed at the intended witness check. This is a local explicit-interface result, not a complete RH or height proof.
 
-The checked canonical real-matching proof explicitly constructs reference polynomial 1, but the existing consumer still obtains an unspecified reference through Classical.choose on its existential statement. Proof irrelevance means that simply swapping proofs does not make that choice reduce to the constructed witness. Do not describe the current consumer's chosen reference as definitionally 1.
+The canonical matching proof explicitly constructs reference polynomial 1. Extracting its actual Exists.intro payload, checking the typed witness, and submitting the closed payload to ordinary Lean.addDecl yields c2_real_matching_unit_reference. This does not infer P(1) from a bare existential statement. In the earlier consumer, Classical.choose on an existential remains an unspecified choice even when its proof constructs 1; that earlier proof remains valid.
 
-This continuation extracts the actual Exists.intro payload from the already checked proof body, checks its witness against the typed polynomial unit, and asks the normal kernel to check the resulting explicit-reference theorem. It does not infer P(1) from an arbitrary existential statement. The proposed empty-matching consumer then calls that stronger explicit interface and passes literal polynomial 1 to the actual finite exchange. Its entire original statement is compared; all tame, measure, real-action and nonzero-normalization inputs remain. In particular the rank-zero Haar volume is not set to one.
+The complete c2_unit_empty_matching statement is definitionally identical to the original empty-matching interface. Its actual finite exchange target is now the literal polynomial 1. All tame-character, real-action, quotient-measure and nonzero-normalization inputs are retained. The rank-zero Haar volume is not set to one.
 
-The proposed sources are C2_EXPLICIT_UNIT_REFERENCE.lean and C2_UNIT_EMPTY_MATCHING.lean. Neither is accepted yet. First run the reference extraction through replay_c2_standard_exchange.py against the accepted C2Combined and all already checked direct-line dependency modules. After acceptance, run a wrong-reference negative control and the complete empty-matching consumer, then retarget both determinant/Carrier callers and audit the actual reachable paths. No global RH or C2 height closure is claimed.
+| Declaration/control | Actual exit | Seconds | Result |
+| --- | --- | --- | --- |
+| c2_real_matching_unit_reference | 0 | 163.81 | Normal kernel; constructive typed unit |
+| c2_unit_empty_matching | 0 | 162.76 | Complete original statement; literal unit exchange target |
+| Typed reference changed from 1 to 2 | 1 | 157.02 | Rejected: Matching reference is not the typed polynomial unit |
 
-RESUME HERE: compile module C2ExplicitUnitReference, named theorem c2_real_matching_unit_reference, guard C2_UNIT_REFERENCE:. Preserve the exact source, rejection reason and axiom report before repairing any error. Coordinate any independent replay with an already queued original build; avoid a duplicate cold source build.
+Exact checked sources, commands in the receipts, axiom reports, object hashes and the rejected control are in 2026-11-27_explicit_reference_receipt/. The successful sources are C2_EXPLICIT_UNIT_REFERENCE.lean and C2_UNIT_EMPTY_MATCHING.lean. The failed control produced no accepted compiled module. The trailing unknown-name diagnostic follows the intended rejection; it is not counted as the reason the control passed.
+
+The preferred direct determinant route and its complete 52-guard local audit remain unchanged. These two optional declarations are not promoted to that preferred route until their actual callers and full reachable paths have been checked. No independent replay of this new unit variant is claimed, and no additional cold original build is queued for it.
+
+The earlier restricted C2 chain independently passed run 46050109450. The coordinated original C1 build and four downstream family consumers are actually running in run 46055305146, snapshot 98f6d14d1ed640bdc432aec50251fc29dbfe95e8; their new receipts remain pending. Continue the common determinant/volume-height witness while that build runs.

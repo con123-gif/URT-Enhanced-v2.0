@@ -1,0 +1,2 @@
+C2_UNIT_REFERENCE: checked constructive witness 1; explicit payload accepted by normal kernel
+'c2_real_matching_unit_reference' depends on axioms: [propext, Classical.choice, Quot.sound]

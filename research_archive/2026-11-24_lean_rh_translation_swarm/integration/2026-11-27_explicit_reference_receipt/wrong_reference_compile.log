@@ -1,0 +1,2 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_unit_reference_negative_control/replay/C2WrongReference.lean:18:0: error: Matching reference is not the typed polynomial unit
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_unit_reference_negative_control/replay/C2WrongReference.lean:56:14: error(lean.unknownIdentifier): Unknown constant `c2_real_matching_unit_reference`
