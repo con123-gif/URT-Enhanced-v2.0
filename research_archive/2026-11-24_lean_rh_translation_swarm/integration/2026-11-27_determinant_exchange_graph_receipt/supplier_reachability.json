@@ -1,0 +1,33 @@
+{
+  "membership": {
+    "exchange_theorem": 1,
+    "c2_determinant_exchange": 2,
+    "c2_standard_exchange_uniform": 2,
+    "c2_lift_inverse_determinant": 2,
+    "c2_lift_one_empty_columns": 2,
+    "c2_standard_column_empty": 2,
+    "run78_equalRankThetaRatio_value": 2,
+    "RHCharacterBoxes77.exchange_of_standard_pairs": 2,
+    "exchange_of_partners": 1,
+    "exists_equalRankThetaRatio_value": 1,
+    "explicit_matching": 0,
+    "stdClassSum_det_modKernel_eq": 0
+  },
+  "guards": {
+    "candidate_reaches_itself": true,
+    "original_reaches_itself": true,
+    "original_absent_from_candidate": true,
+    "required:c2_standard_exchange_uniform": true,
+    "required:c2_lift_inverse_determinant": true,
+    "required:c2_lift_one_empty_columns": true,
+    "required:c2_standard_column_empty": true,
+    "required:run78_equalRankThetaRatio_value": true,
+    "required:RHCharacterBoxes77.exchange_of_standard_pairs": true,
+    "forbidden:exchange_of_partners": true,
+    "forbidden:exists_equalRankThetaRatio_value": true,
+    "forbidden:explicit_matching": true,
+    "forbidden:stdClassSum_det_modKernel_eq": true
+  },
+  "all_guards_pass": true,
+  "full_RH_replay": false
+}

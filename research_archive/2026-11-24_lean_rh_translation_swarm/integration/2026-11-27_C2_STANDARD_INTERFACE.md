@@ -79,8 +79,16 @@ checked standard/data suppliers consumed. Source
 The [source](C2_DETERMINANT_EXCHANGE.lean) and
 [exact replay evidence](2026-11-27_determinant_exchange_receipt/)
 retain the four preceding failed attempts as failures.
-Its separate complete dependency graph check is in progress; no
-transitive graph acceptance is inferred from the compiler alone.
+Its complete two-root constructor-inclusive graph has now passed both
+independent verifiers and all thirteen supplier guards: 118,238 union
+declarations, 3,797,837 edges and zero missing endpoints. The original
+general exchange and original equal-rank supplier are absent from the new
+finite determinant path; the checked standard, finite datum and nonzero
+reference suppliers are reachable. The native export took 276.85 s.
+Exact [graph evidence](2026-11-27_determinant_exchange_graph_receipt/) is retained.
+The new restricted interface reaches 118,170 declarations against 118,191
+for the general theorem. These are different statements; this comparison
+is not an unchanged-theorem size reduction.
 
 Next: attach the native real_matching specialization and exact rank-zero
 Haar normalization at the original determinant class-sum statement.

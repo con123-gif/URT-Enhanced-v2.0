@@ -1,0 +1,32 @@
+{
+  "roots": [
+    "exchange_theorem",
+    "c2_determinant_exchange"
+  ],
+  "nodes": 118238,
+  "edges": 3797837,
+  "missing": 0,
+  "mask_histogram": {
+    "3": 118123,
+    "1": 68,
+    "2": 47
+  },
+  "per_root": {
+    "exchange_theorem": {
+      "exit": 0,
+      "nodes": 118191,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "c2_determinant_exchange": {
+      "exit": 0,
+      "nodes": 118170,
+      "missing": 0,
+      "log": "audit-1.json"
+    }
+  },
+  "naive_repeated_nodes": 236361,
+  "scope": "Finite determinant-only modulus interface versus general exchange; different statements, no unchanged-theorem size claim",
+  "all_supplier_guards_pass": true,
+  "full_RH_replay": false
+}

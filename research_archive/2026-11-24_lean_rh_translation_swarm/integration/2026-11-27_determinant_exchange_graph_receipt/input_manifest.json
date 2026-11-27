@@ -1,0 +1,58 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "roots": [
+    "exchange_theorem",
+    "c2_determinant_exchange"
+  ],
+  "scope": "Finite determinant-only modulus interface versus general exchange; different statements, no unchanged-theorem size claim",
+  "checked_module": {
+    "name": "C2DeterminantExchange",
+    "artifacts": [
+      {
+        "name": "C2DeterminantExchange.olean",
+        "bytes": 1098952,
+        "sha256": "494ee044f3c5656e6eb95f2c7ed343ec047ea37be692d1daac95f136242e95a6"
+      }
+    ]
+  },
+  "checked_dependencies": [
+    {
+      "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+      "module": {
+        "name": "C2StandardExchange",
+        "artifacts": [
+          {
+            "name": "C2StandardExchange.olean",
+            "bytes": 640504,
+            "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+          }
+        ]
+      }
+    },
+    {
+      "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+      "module": {
+        "name": "C2DeterminantLift",
+        "artifacts": [
+          {
+            "name": "C2DeterminantLift.olean",
+            "bytes": 186912,
+            "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+          }
+        ]
+      }
+    }
+  ],
+  "checked_base": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035576,
+        "sha256": "9ee60a0ff16a5f1fd6756906e050081de2b0f7afba39334b0534e436b4f46df3"
+      }
+    ]
+  },
+  "full_RH_replay": false
+}

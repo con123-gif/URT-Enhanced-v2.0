@@ -1,0 +1,9 @@
+{
+  "raw_file": "interface_graph.jsonl",
+  "raw_bytes": 266352114,
+  "raw_sha256": "2c266792f284f10bd4f1f3dbf6c5c2da3568207c74e623b289debc44e1b6de23",
+  "archive": "interface_graph.jsonl.gz",
+  "archive_bytes": 20886164,
+  "archive_sha256": "5c743cb66f5377481108f9c5e6e045a1f95187cb56c3f7f9a58af4c4ad393cb4",
+  "decompressed_hash_verified": true
+}

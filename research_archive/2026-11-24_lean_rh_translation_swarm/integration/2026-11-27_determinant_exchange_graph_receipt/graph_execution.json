@@ -1,0 +1,39 @@
+{
+  "returncode": 0,
+  "seconds": 276.85,
+  "log": "graph.log",
+  "axioms": {
+    "exchange_theorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "c2_determinant_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_audit_ok": true,
+  "native_exporter_build": {
+    "source_blob": "2268ec5a79434d124afb8470c8d17cf24f416e7a",
+    "exporter_source_blob": "ee4efebb066f6775fa551ae9104cfa973e585071",
+    "independent_verifier_blob": "2e431301970196a6b786d004fb16a4320a25fe8e",
+    "collector_adapter": "strict independent const/projection union",
+    "runtime_imports_private_bodies": true,
+    "executes_module_initializers": false,
+    "new_proof_declarations_added": false,
+    "equivalence_verified": true,
+    "adopted_for_B2_or_C2": false,
+    "full_RH_replay": false,
+    "executable_sha256": "b62ecf5877e0701fbd5da4b647ab97e145ae0c13fec27ec33c27fefd4d75b46a",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "core_equivalence_verified": true,
+    "equivalence_scope": "Nat.le_refl only",
+    "compile_returncode": 0,
+    "link_returncode": 0
+  },
+  "native_graph_execution": true,
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}

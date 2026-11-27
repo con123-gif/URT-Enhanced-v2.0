@@ -14,7 +14,7 @@ The next restricted route has now supplied two new checked interfaces:
 - One uniform standard semilocal exchange, with common C and rapid datum chosen before the whole character family.
 - The finite-modulus determinant-only exchange, using the actual character, integral reduction map, local-hom unit reflection and both finite datum identities.
 
-The three finite algebra lemmas also have a separate whole-environment target-absence check. Exact sources, successful logs, and the preceding failed attempts are linked in the [standard/determinant interface record](2026-11-27_C2_STANDARD_INTERFACE.md). The finite-modulus interface passed actual kernel execution in 109.21 s; its complete transitive graph audit is running separately.
+The three finite algebra lemmas also have a separate whole-environment target-absence check. Exact sources, successful logs, and the preceding failed attempts are linked in the [standard/determinant interface record](2026-11-27_C2_STANDARD_INTERFACE.md). The finite-modulus interface passed actual kernel execution in 109.21 s; its complete transitive graph has since passed both independent verifiers and all thirteen supplier guards across 118,238 union declarations, with zero missing endpoints.
 
 **Current mathematical task:** attach the native real_matching specialization and the original rank-zero Haar normalization to `stdClassSum_det_modKernel_eq`, with its entire original statement unchanged. The first consumer attempt was rejected; it is not a native proof receipt. The repaired consumer is being compiled. After acceptance, check its complete old/new graph and require the general exchange and original target absent along the new determinant path.
 
