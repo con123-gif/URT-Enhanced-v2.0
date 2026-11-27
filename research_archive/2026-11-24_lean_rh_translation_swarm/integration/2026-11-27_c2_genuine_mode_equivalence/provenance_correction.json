@@ -1,0 +1,14 @@
+{
+  "previous_record_comparison_valid": true,
+  "previous_interpreted_label_supported": false,
+  "previous_baseline_execution_blob": "00831ae5093cefa05d8c7dcd4a3e049db65c0d8c",
+  "previous_repeat_execution_blob": "04d62681a5f76cac108b440c274ffd70f88f4f41",
+  "both_previous_receipts_native": true,
+  "genuine_interpreted_seconds": 177.98,
+  "native_seconds": 254.5,
+  "genuine_cross_mode_comparison_accepted": true,
+  "raw_sha256": "531283d9520b938399b9b973d932506ac9cf18379e50592ec74afc051e55a11e",
+  "nodes": 119274,
+  "original_records_preserved": true,
+  "full_RH_replay": false
+}

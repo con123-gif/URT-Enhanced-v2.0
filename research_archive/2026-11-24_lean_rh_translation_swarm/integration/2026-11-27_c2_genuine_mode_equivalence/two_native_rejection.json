@@ -1,0 +1,7 @@
+{
+  "all_checks_pass": false,
+  "execution_modes_valid": false,
+  "full_RH_replay": false,
+  "scope": "complete graph-record compatibility for the listed local roots",
+  "error": "Interpreted graph receipt records native execution"
+}

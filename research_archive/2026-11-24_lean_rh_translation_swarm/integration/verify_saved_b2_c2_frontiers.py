@@ -7,6 +7,7 @@ Lean, re-extract the large graphs, or establish any remaining RH premise.
 import hashlib
 import json
 from pathlib import Path
+from compare_complete_graph_exports import validate_execution_modes
 
 HERE = Path(__file__).resolve().parent
 PIN = "72fead102f663d5c7a407964a13dc0cf9d977207"
@@ -69,8 +70,30 @@ def main():
         require(union["full_RH_replay"] is False, "Local audit misreported as RH replay")
         inventories.append({"folder": folder, "roots": roots, "nodes": nodes})
     folder = "2026-11-27_c2_native_equivalence_receipt"
+    # A byte-identical repeated native export is not a cross-engine comparison.
+    # Preserve the older record, but accept a genuine replacement only with
+    # its actual interpreted/native execution receipts.
+    genuine = "2026-11-27_c2_genuine_mode_equivalence"
+    if (HERE / genuine / "full_native_interpreted_equivalence.json").is_file():
+        folder = genuine
+        interpreted_execution = read(folder, "interpreted_execution.json")
+        native_execution = read(folder, "native_execution.json")
+    else:
+        interpreted_execution = read("2026-11-27_c2_graph_receipt", "graph_execution.json")
+        native_execution = read(folder, "graph_execution.json")
+    validate_execution_modes(interpreted_execution, native_execution)
     equality = read(folder, "full_native_interpreted_equivalence.json")
-    require(equality["all_checks_pass"] is True and equality["headers_equal"] is True and
+    if folder == genuine:
+        for label in ["interpreted", "native"]:
+            raw = (HERE / folder / (label + "_execution.json")).read_bytes()
+            require(hashlib.sha256(raw).hexdigest() == equality[label + "_execution_sha256"],
+                    "Comparison uses a different execution receipt")
+        modes = read(folder, "mode_guard_controls.json")
+        require(modes["all_checks_pass"] is True and
+                all(modes[key] is True for key in ["two_native_runs_rejected_despite_identical_graph",
+                    "genuine_core_modes_accepted", "genuine_full_C2_modes_accepted"]),
+                "Engine provenance controls failed")
+    require(equality["all_checks_pass"] is True and equality.get("execution_modes_valid") is True and equality["headers_equal"] is True and
             equality["footers_equal"] is True and equality["interpreted_nodes"] == 119274 and
             equality["native_nodes"] == 119274, "Incomplete exporter comparison")
     require(equality["interpreted_sha256"] == equality["native_sha256"] ==
@@ -78,7 +101,7 @@ def main():
             "Graph byte streams differ")
     require(all(equality[key] == 0 for key in ["absent_count", "extra_count", "different_record_count"]),
             "Graph records differ")
-    controls = read(folder, "graph_comparison_controls.json")
+    controls = read("2026-11-27_c2_native_equivalence_receipt", "graph_comparison_controls.json")
     require(controls["all_checks_pass"] is True and len(controls["checks"]) == 5 and
             all(value is True for value in controls["checks"].values()), "Failed comparison control")
     print(json.dumps({"saved_receipts_consistent": True, "inventories": inventories,
@@ -88,3 +111,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

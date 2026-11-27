@@ -1,0 +1,68 @@
+{
+  "returncode": 0,
+  "seconds": 177.98,
+  "log": "compile.log",
+  "axioms": {
+    "exists_equalRankThetaRatio_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "run78_equalRankThetaRatio_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "exchange_theorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "run79_exchange_theorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "explicit_matching": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "run79_explicit_matching": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "stdClassSum_det_modKernel_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "run79_stdClassSum_det_modKernel_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "stdClassSum_carrierXi_eq_carrierForm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "run79_stdClassSum_carrierXi_eq_carrierForm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_audit_ok": true,
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-j",
+    "2",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_genuine_interpreted_graph/C2CallersGraph.lean"
+  ],
+  "native_graph_execution": false,
+  "new_Lean_execution": true,
+  "full_RH_replay": false
+}

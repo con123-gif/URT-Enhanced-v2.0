@@ -53,16 +53,28 @@ seven original axiom probes, passed. Exact combined source blob:
 The third replay is saved in [the exact receipt folder](2026-11-27_c2_third_native_receipt/).
 The first two failed native attempts remain unchanged.
 
-The full interpreted C2 export completed in 254.5 s. All ten independent
-root verifiers and thirteen transitive caller guards passed. The separate full native/interpreted comparison also PASSED:
-all 119,274 records, headers, footers and the entire raw byte stream are
-identical, SHA256 `531283d9520b938399b9b973d932506ac9cf18379e50592ec74afc051e55a11e`.
-The native graph independently passed all ten root verifiers and all
-thirteen caller guards as well. [Exact comparison and runtime receipts](2026-11-27_c2_native_equivalence_receipt/).
-Five actual comparison controls passed, including rejection of a truncated
-stream, duplicate node, data after the footer, and a changed record.
-Compatibility is now checked on this complete local C2 frontier, rather
-than inferred from the earlier core-only comparison.
+The first full C2 export was a native runtime inspection (254.50 s), as
+was the repeated export (271.52 s). Their byte identity establishes
+repeatability. The earlier description of the first run as interpreted was
+incorrect: both original receipts have native_graph_execution=true and
+new_Lean_execution=false. Those original records remain preserved.
+
+A genuine interpreted Lean command has now completed successfully in
+177.98 s, with native_graph_execution=false and new_Lean_execution=true.
+Its complete 119,274-record graph, headers, footer and raw byte stream are
+identical to the accepted native graph, SHA256
+`531283d9520b938399b9b973d932506ac9cf18379e50592ec74afc051e55a11e`.
+The existing independent verifier certificates therefore apply to the
+identical interpreted stream. This is graph-export compatibility, not a
+new RH proof compilation or a controlled speed benchmark.
+[Actual engine-aware comparison and correction](2026-11-27_c2_genuine_mode_equivalence/).
+
+The comparison checker now requires successful execution receipts from
+the two distinct engines. It rejects the actual two-native pair even
+though those graph bytes match. The genuine core pair and genuine full
+C2 pair both pass. The earlier five graph-structure controls remain
+preserved separately. The saved-evidence checker also requires the engine
+receipts and their exact hashes before accepting a cross-mode claim.
 
 ## Evidence and limits
 
@@ -90,3 +102,4 @@ For C2, reconcile the already-written unified determinant witness with
 `New/Rows/LiftVolumeHeight.lean: heightLe_liftVolume_ratio`, preserving the
 same Data, fit-twist family, integrality, testedness and signed budgets.
 The graph audits do not supply those remaining estimates.
+

@@ -1,0 +1,26 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "d50f626f5b262188ed5b686a04b39cb55f4acefb",
+  "checked_module": {
+    "name": "C2Combined",
+    "artifacts": [
+      {
+        "name": "C2Combined.olean",
+        "bytes": 11035576,
+        "sha256": "9ee60a0ff16a5f1fd6756906e050081de2b0f7afba39334b0534e436b4f46df3"
+      }
+    ]
+  },
+  "argv": [
+    "/workspace/scratch/fd93126e52da/lean-4.35.0-linux/bin/lean",
+    "--tstack=400000",
+    "-j",
+    "2",
+    "/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_genuine_interpreted_graph/C2CallersGraph.lean"
+  ],
+  "scope": "genuine interpreted Lean command export, ten C2 roots; no RH proof compilation",
+  "native_graph_execution": false,
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}

@@ -1,0 +1,84 @@
+{
+  "all_checks_pass": true,
+  "execution_modes_valid": true,
+  "full_RH_replay": false,
+  "scope": "complete graph-record compatibility for the listed local roots",
+  "execution_modes": {
+    "interpreted": "interpreted",
+    "native": "native"
+  },
+  "interpreted_execution_sha256": "3c31f97a6e6a9a8bce53048dae2772f40dc25e7c5e056e77cffc77fe102dd002",
+  "native_execution_sha256": "2fecbf5b8e06caf67d9b7f6cec7eb20d3b28330db351ba7d887c9f2cd5be93d2",
+  "interpreted_nodes": 119274,
+  "native_nodes": 119274,
+  "interpreted_sha256": "531283d9520b938399b9b973d932506ac9cf18379e50592ec74afc051e55a11e",
+  "native_sha256": "531283d9520b938399b9b973d932506ac9cf18379e50592ec74afc051e55a11e",
+  "headers_equal": true,
+  "footers_equal": true,
+  "absent_count": 0,
+  "extra_count": 0,
+  "different_record_count": 0,
+  "mismatch_examples": [],
+  "roots": [
+    [
+      [
+        "s",
+        "exists_equalRankThetaRatio_value"
+      ]
+    ],
+    [
+      [
+        "s",
+        "run78_equalRankThetaRatio_value"
+      ]
+    ],
+    [
+      [
+        "s",
+        "exchange_theorem"
+      ]
+    ],
+    [
+      [
+        "s",
+        "run79_exchange_theorem"
+      ]
+    ],
+    [
+      [
+        "s",
+        "explicit_matching"
+      ]
+    ],
+    [
+      [
+        "s",
+        "run79_explicit_matching"
+      ]
+    ],
+    [
+      [
+        "s",
+        "stdClassSum_det_modKernel_eq"
+      ]
+    ],
+    [
+      [
+        "s",
+        "run79_stdClassSum_det_modKernel_eq"
+      ]
+    ],
+    [
+      [
+        "s",
+        "stdClassSum_carrierXi_eq_carrierForm"
+      ]
+    ],
+    [
+      [
+        "s",
+        "run79_stdClassSum_carrierXi_eq_carrierForm"
+      ]
+    ]
+  ]
+}

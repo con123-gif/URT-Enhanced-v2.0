@@ -13,6 +13,44 @@ import json
 from pathlib import Path
 
 
+def execution_engine(receipt):
+    """Identify a successful engine from its actual flags or recorded command."""
+    if receipt.get("returncode") != 0:
+        raise ValueError("Graph execution did not finish successfully")
+    engine = None
+    if "native_graph_execution" in receipt or "new_Lean_execution" in receipt:
+        if receipt.get("native_graph_execution") is True and receipt.get("new_Lean_execution") is False:
+            engine = "native"
+        elif receipt.get("native_graph_execution") is False and receipt.get("new_Lean_execution") is True:
+            engine = "interpreted"
+        else:
+            raise ValueError("Incomplete or contradictory execution flags")
+    argv = receipt.get("argv")
+    command_engine = None
+    if isinstance(argv, list) and argv:
+        executable = Path(str(argv[0])).name
+        if executable == "native_graph":
+            command_engine = "native"
+        elif executable == "lean" and any(str(arg).endswith(".lean") for arg in argv[1:]):
+            command_engine = "interpreted"
+    if engine is not None and command_engine is not None and engine != command_engine:
+        raise ValueError("Execution flags disagree with the recorded command")
+    if engine is None:
+        engine = command_engine
+    if engine is None:
+        raise ValueError("Execution receipt does not identify an engine")
+    return engine
+
+
+def validate_execution_modes(interpreted, native):
+    first, second = execution_engine(interpreted), execution_engine(native)
+    if first != "interpreted":
+        raise ValueError("Interpreted graph receipt records " + first + " execution")
+    if second != "native":
+        raise ValueError("Native graph receipt records " + second + " execution")
+    return {"interpreted": first, "native": second}
+
+
 def read_graph(path):
     records = {}
     header = footer = None
@@ -55,11 +93,21 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--interpreted", type=Path, required=True)
     parser.add_argument("--native", type=Path, required=True)
+    parser.add_argument("--interpreted-execution", type=Path, required=True,
+                        help="Actual successful interpreted Lean command receipt")
+    parser.add_argument("--native-execution", type=Path, required=True,
+                        help="Actual successful native runtime receipt")
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
-    result = {"all_checks_pass": False, "full_RH_replay": False,
+    result = {"all_checks_pass": False, "execution_modes_valid": False, "full_RH_replay": False,
               "scope": "complete graph-record compatibility for the listed local roots"}
     try:
+        raw_interpreted = args.interpreted_execution.read_bytes()
+        raw_native = args.native_execution.read_bytes()
+        modes = validate_execution_modes(json.loads(raw_interpreted), json.loads(raw_native))
+        result.update(execution_modes_valid=True, execution_modes=modes,
+                      interpreted_execution_sha256=hashlib.sha256(raw_interpreted).hexdigest(),
+                      native_execution_sha256=hashlib.sha256(raw_native).hexdigest())
         ih, it, ir, ish = read_graph(args.interpreted)
         nh, nt, nr, nsh = read_graph(args.native)
         absent = set(ir) - nr.keys()
@@ -83,3 +131,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -1,0 +1,34 @@
+{
+  "all_checks_pass": true,
+  "execution_modes_valid": true,
+  "full_RH_replay": false,
+  "scope": "complete graph-record compatibility for the listed local roots",
+  "execution_modes": {
+    "interpreted": "interpreted",
+    "native": "native"
+  },
+  "interpreted_execution_sha256": "653a8bd49fcff287ed2040a5d2b06e2891ec668bd7027a6f825c984f5e5d1fc9",
+  "native_execution_sha256": "e31d1aab5bcd9a7f7cb6eba97236c10f73762d1ef59a95e5de34e2c169a2cd3f",
+  "interpreted_nodes": 11,
+  "native_nodes": 11,
+  "interpreted_sha256": "0ee560a0ce133808707616eef81234ebdbf3e785d23c1b54729d5322fc718f10",
+  "native_sha256": "0ee560a0ce133808707616eef81234ebdbf3e785d23c1b54729d5322fc718f10",
+  "headers_equal": true,
+  "footers_equal": true,
+  "absent_count": 0,
+  "extra_count": 0,
+  "different_record_count": 0,
+  "mismatch_examples": [],
+  "roots": [
+    [
+      [
+        "s",
+        "Nat"
+      ],
+      [
+        "s",
+        "le_refl"
+      ]
+    ]
+  ]
+}

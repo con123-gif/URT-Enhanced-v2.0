@@ -1,0 +1,7 @@
+{
+  "two_native_runs_rejected_despite_identical_graph": true,
+  "genuine_core_modes_accepted": true,
+  "all_checks_pass": true,
+  "full_RH_replay": false,
+  "genuine_full_C2_modes_accepted": true
+}
