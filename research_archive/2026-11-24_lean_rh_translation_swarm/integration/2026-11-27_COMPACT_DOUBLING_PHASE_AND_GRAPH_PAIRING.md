@@ -146,7 +146,67 @@ rational delta, so (D8) is the source weilMatrixCoeff with the
 correct delta^(-1), for every b. The factors 1/2 in the companion
 frame and the inverse in the graph label have not been dropped.
 
-## 4. Exact Rallis substitution and retained covariance
+## 4. The graph trace fixes the ENTIRE target action phase
+
+The previously retained sign-change/block Weil covariance can
+also be avoided at this consumer. The argument uses the same
+graph zero term just normalized, with no all-adelic multiplier
+comparison. Here are all functional-analytic details.
+
+The Hilbert inner product of box products is the product inner
+product, by Fubini on the coefficient model. N is antiunitary
+and ab is a unit. Therefore (D4) extends to a UNITARY map
+from H_W tensor conjugate(H_W) onto H_double, where H denotes
+the Hilbert completion of dataInner. Surjectivity follows from
+the dense Heisenberg orbit of the doubled vacuum and its box
+factorization. No equivalence of Banach tensor norms is needed.
+
+Fix h in U(T)(A), and let U_h=pairWeil(S,T,a0,b0,(1,h)) on W,
+with the original arbitrary automorphic characters. It is
+unitary. Define C_h on H_double through this tensor unitary by
+
+    C_h D(f',f)=D(U_h f',U_h f).
+
+This is a well-defined Hilbert unitary. It implements the same
+Heisenberg automorphism as native splitWeil_double(1,h): on
+both Hom blocks the parameter is left multiplied by h. For
+the second factor use only N rho(y)=rho_minus(cy) N and the
+fact that scalar c commutes with h; no formula for N U_h is
+assumed. Thus the two target operators differ by one scalar:
+
+    splitWeil_double(1,h)=lambda(h) C_h,  |lambda(h)|=1.
+
+The scalar conclusion follows from Heisenberg irreducibility.
+One need not assume C_h preserves the full native Banach space:
+the bounded Hilbert form <v,Rw> for their ratio R is bounded
+on native data and Heisenberg-invariant, so the prior invariant-
+form lemma makes R scalar on its dense Hilbert domain. On the
+finite box tensors used below both images are native data.
+
+Now the ACTUAL `mixedValue_splitWeil` at X=0 gives
+
+    E_Gamma_1 splitWeil_double(1,h)=E_Gamma_1.
+
+It is a mixed-model zero-term covariance from PairSplitting,
+available before Siegel–Weil or Rallis; it does not use either
+formula or pairWeil_negSource. Apply it and the scalar relation
+to D(e,e). By (D7) and unitarity,
+
+    1 = E_Gamma_1 D(e,e)
+      = lambda(h) E_Gamma_1 D(U_h e,U_h e)
+      = lambda(h) <U_h e,U_h e> = lambda(h).
+
+Consequently, for EVERY h and EVERY f,f',
+
+    splitWeil_double(1,h) D(f',f)=D(U_h f',U_h f).             (D9)
+
+The identity first holds in the Hilbert completion; both vectors
+are native data, and its inner product is nondegenerate there,
+so it is equality in the actual native datum space. The same
+nonzero graph trace fixes every target phase, without assuming
+it trivial merely because it is trivial on rational elements.
+
+## 5. Exact Rallis substitution and remaining background
 
 Use D from (D4) for the SAME height-reduced data d(x,x') in the
 already proved absolute unfolding. Its scalar has modulus one,
@@ -155,26 +215,35 @@ proof applies to it. Equation (D5) gives the doubled theta
 product; (D8) gives the graph coefficient. Consequently the
 single V-normalized Rallis identity has exactly the original
 f,f',y,y',T and theta lifts, with no unknown graph/product phase.
+For the doubled theta product under h use (D9) followed by
+(D5). Original source and target actions commute, so U_h passes
+through each height-reduced source action; rational eta is
+removed by the original rational theta invariance. For the
+graph integral use (D8) and the original pair unitarity. Thus
+no doubled block Weil or sign-change Weil formula is needed
+in this replacement proof.
 
-The action covariance needed before applying (D5) is the exact
-native sign-change Weil law
+For comparison the original source proves the stronger explicit
+sign-change Weil law
 
     N Omega_(a0,b0)(g,h)
       =Omega_(a0^(-1)upsilon^n,b0^(-1)upsilon^M)(g.neg,h) N.
 
 Here n=rank(S), M=rank(T), and upsilon is the native unitary
-determinant character. The actual source names this
-pairWeil_negSource. Together with the orthogonal block Weil law,
-it is the retained representation-construction input. Rescaling
-D by (ab)^(-1) preserves this law exactly. In particular product
-and graph normalization above do not assert this sign-change
-Weil law solely from Heisenberg covariance, which would leave
-a possible adelic character. Its finite multiplier and real
-complementary-minor identity retain their separate supplier audit.
+determinant character. The source names it pairWeil_negSource.
+We have not independently proved this stronger formula for N.
+The final Rallis consumer instead uses the now-proved (D9).
+Its scalar is fixed by graph trace INVARIANCE, in addition to
+Heisenberg covariance, so no possible adelic character is
+silently dropped. Other consumers of pairWeil_negSource retain
+their original supplier and audit; no native graph is deleted.
 
 Thus the common normalized theta functional proves the required
-product/graph scalar compatibility, while the remaining exact
-Weil covariance is stated at the strength actually used. The
+product, graph and full target scalar compatibility at this
+caller. The retained representation input is the original
+Weil–Heisenberg covariance and unitarity, and the exact
+mixed-model target zero-term law, all already used by the
+common stable-range bridge. The
 sharp finite cutoff remains the explicit datum construction,
 with its finMultiplier and conductor check; it is not replaced
 by multiplying an arbitrary matrix coefficient by an indicator.
@@ -196,7 +265,9 @@ choice for the identical final Rallis theorem, not a new
 normalization of an original row or lift. Native source unchanged.
 No Lean execution or independent full audit claimed.
 
-RESUME HERE: audit (D6)–(D8) together with the common supplier,
-then finish the retained sign-change Weil multiplier and exact
-finite dual-datum supplier audits. Noncoherent pair estimates
+RESUME HERE: audit (D6)–(D9) together with the common supplier,
+then finish the exact finite dual-datum supplier audit.
+No new sign-change/block Weil audit is required at THIS Rallis
+consumer after (D9); other consumers keep their dependencies.
+Noncoherent pair estimates
 and A/C primitive obligations remain separate.

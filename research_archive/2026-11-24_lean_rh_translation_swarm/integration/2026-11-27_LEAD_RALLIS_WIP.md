@@ -247,3 +247,29 @@ zero, but their displayed Fourier/Weyl generators must not be
 spliced without that conversion. The independently checked
 1ae8974a audit explicitly confirms our convention. No new
 convergence or full-bridge audit is inferred from RUN77.
+
+Further actual supplier elimination after a1866e42a74ef526cbccaa99f95c889aa76ae639:
+the doubling note §4 now proves (D9), full target action covariance,
+by one graph trace rather than the still stronger sign-change
+Weil formula. Tensor unitarity defines C_h; original Heisenberg
+covariance makes splitWeil_double(1,h)=lambda C_h. The mixed-model
+law at zero fixes E_Gamma_1, independently of SW/Rallis. On D(e,e),
+the already proved graph pairing gives 1=lambda<U_he,U_he>=lambda.
+Thus lambda=1 for EVERY adelic h. Both compared vectors are native
+data, so Hilbert equality descends to the native datum space.
+This uses no Banach tensor inverse, canonical tensor theta phase,
+pairWeil_negSource or block Weil law. It retains original Weil
+unitarity/covariance and exact target zero-term law, all already
+required by the common bridge. The local dependency order is:
+normalized theta pairing -> product units/graph trace -> target
+phase -> doubled theta product -> absolute Rallis unfolding.
+Common SW/majorants and clean graph are independent prerequisite
+branches. No cycle through the desired Rallis identity. The exact
+finite dual datum is the next outstanding supplier audit. This
+new abstract proof has no independent review or Lean replay yet.
+
+RESUME HERE: independently audit D6–D9 and common vacuum peak/
+majorant proof, then the finite cutoff and its multiplier. Do
+not reopen sign-change/block phase at this consumer unless an
+actual flaw in the graph trace argument is identified. Other
+source consumers retain those stronger native suppliers.

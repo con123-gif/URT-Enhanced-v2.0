@@ -463,8 +463,10 @@ the normalized-torus rank induction or Hecke maximum principle.
 
 ## 7. Substitution into the actual doubled Rallis argument
 
-For the SAME doubled datum d(x,x') used in `SharpData`, rapidity
-and the native height reduction give integral_[G]x[G] ||d||<infinity.
+For the doubled datum d(x,x') on the SAME height-reduced inputs
+as `SharpData`, rapidity gives integral_[G]x[G] ||d||<infinity.
+The companion doubling note may unit-rescale this auxiliary map
+once; that preserves every norm bound and all external input data.
 The bounds just proved give
 
 \[
@@ -484,10 +486,15 @@ signed Fubini. The shared unfolding in `6c46fb6e` now yields
 \]
 
 with the source character conventions and absolute integrability.
-The clean nondefinite graph annihilator, actual doubleDatum product,
-graph evaluation and quotient Haar unfolding retain their explicit
-proof obligations/audits from the companion note. They are not
-consequences of (18). The finite sharp factor remains exactly
+The clean nondefinite graph implication is derived in the graph
+audit note. The normalized double product, graph pairing and full
+target covariance are derived in the doubling note (D5)–(D9),
+using the SAME normalized theta pairing. The graph trace fixes
+the full target phase, so no separate sign-change/block Weil
+comparison is needed in this human Rallis proof. These additional
+arguments are not consequences of (18); their independent audit
+and the quotient Haar supplier remain explicit. The finite sharp
+factor remains exactly
 ||F||_data^2/stdLevelIndex(J); the dual finite datum is still needed
 for nonvanishing. An arbitrary rapid y is not assumed cuspidal or
 Euler-factorizable.
