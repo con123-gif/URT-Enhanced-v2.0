@@ -1,0 +1,34 @@
+/tmp/compact-b2-native-3mc7a8of/active_b2_callers.lean:52:8: error: expected alternative right-hand-side to start in a column greater than or equal to the corresponding '|'
+/tmp/compact-b2-native-3mc7a8of/active_b2_callers.lean:55:8: error: (kernel) unknown constant 'Filling.b2_active_outer_frameValueIndex_dvd'
+/tmp/compact-b2-native-3mc7a8of/active_b2_callers.lean:73:0: warning: automatically included section variable(s) unused in theorem `Filling.b2_active_inner_frameValueIndex_dvd`:
+  [S.IsAdmissible]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [S.IsAdmissible] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/compact-b2-native-3mc7a8of/active_b2_callers.lean:127:8: error: (kernel) unknown constant 'Filling.b2_active_outer_frameValueIndex_dvd'
+'Filling.b2_active_outer_frameValueIndex_dvd' does not depend on any axioms
+'Filling.b2_active_outer_count' depends on axioms: [propext, Classical.choice, b2_active_outer_count, Quot.sound]
+'Filling.b2_active_inner_frameValueIndex_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Filling.b2_active_sum_pairWeight_le' depends on axioms: [propext,
+ Classical.choice,
+ b2_active_sum_pairWeight_le,
+ Quot.sound]
+@b2_active_outer_frameValueIndex_dvd : ∀ {E : Type} [inst : Field E] [inst_1 : CMType E] [inst_2 : StablyUnram E]
+  {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible] {c : S.Classes} {j : Fin (𝔰.ϱ + 2)} (p : S.Classes × ↥(S.G E))
+  (V : Submodule E (𝔰.κ → E)),
+  1 ≤ S.xRowsIndex j (S.termElem c p) →
+    S.frameValueIndex c (S.termElem c p) S.gIdele V ∣
+      submoduleIndex (S.gIdele • intVectors (Ô E) (IndexBelow j)) (intVectors (Ô E) (IndexBelow j)) *
+        S.frameValueIndex c (S.termElem c p) 1 V
+@b2_active_inner_frameValueIndex_dvd : ∀ {E : Type} [inst : Field E] [inst_1 : CMType E] [inst_2 : StablyUnram E]
+  {𝔰 : Shape} {S : Filling E 𝔰} [S.IsAdmissible] {c : S.Classes} (γ : ↥(S.G E)) (y : S.Classes × ↥(S.G E))
+  (T : Submodule E (𝔰.κ → E)),
+  S.CongruentTerms c y.1 γ y.2 →
+    commonLink γ y.2 = T →
+      S.frameValueIndex c (S.termElem c y) S.gIdele (T ⊓ (frameMiddle ↑↑γ).toRows₁ᴴ.mulVecLin.ker) ∣
+        S.saturationIndex (S.termElem c y)
+@b2_active_sum_pairWeight_le : ∀ {E : Type} [inst : Field E] [inst_1 : CMType E] {𝔰 : Shape} {j : Fin (𝔰.ϱ + 2)}
+  [inst_2 : StablyUnram E] {S : Filling E 𝔰} [S.IsAdmissible],
+  ∑ c, ∑ c', ∑' (γ : ↥(S.G E)) (γ' : ↥(S.G E)), S.pairWeight j c c' γ γ' ≤ ENNReal.ofReal (2 * S.tailScale ^ 2)
+/tmp/compact-b2-native-3mc7a8of/active_b2_callers.lean:173:0: error: B2 replacement has no inspectable proof value

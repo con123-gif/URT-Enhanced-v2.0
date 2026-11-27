@@ -1,0 +1,107 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: B2 native checks incomplete or failed",
+  "returncode": 1,
+  "wall_s": 1858.23,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_callers.py\", line 80, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_callers.py\", line 49, in main\n    native.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 188, in main\n    require(state[\"all_requested_checks_ok\"], \"B2 native checks incomplete or failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: B2 native checks incomplete or failed\n",
+  "id": "rh-compact-b2-callers-replay-20261127",
+  "question": "Compile the actual original-statement BlockBound pair-weight replacement using named outer and inner divisors. Require exact original declaration type, standard axiom reports, both bridge dependencies and absence of the original target from direct proof dependencies. One caller only, not full B2 or RH.",
+  "requested_by": "GPT active interactive proof work, 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_callers.py --out {out}",
+  "utc": "2026-11-27T12:25:27Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "5e95a2ddc4ceb2bc8792e9f33887d2aa9d17f3f5",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/45994173721",
+  "outputs_committed": [
+    {
+      "path": "active_b2_callers.log",
+      "bytes": 2773,
+      "sha256": "30718794e2a09c9b291cacbd5b2c87d22be9ba57fd60771c87055eb3b8acc48c"
+    },
+    {
+      "path": "b2_build.log",
+      "bytes": 26309,
+      "sha256": "68a0f8777b9d8cbbaf33e07b474b55fd5d03ed2a9f7818b92ab65fe97a120718"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 3101,
+      "sha256": "3df7a859848cb8483442d86cb7a958e481aae5f5d106ed8b9cc5183b9298777e"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "97ed7ed2545986d1646ccce53b7ee2d177ac45313474c51c66a3116e793b6ba9"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 1386,
+      "sha256": "3c94baa6ae6846b9e9a4c01000b3734ea331b1313adcafd37f7462d9cd7584d1"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 8144,
+      "sha256": "dfa7d4d19a8278051fc56027a130d0126435d2bc8f886428fc4aca40a9e667fb"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "756b66ce48a81c8d7a79a7095bae764d3db8669e408f5505691bee0305e7fdfd"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 597,
+      "sha256": "ceebcce2b3df9e548aa1a110e8be36390167b04f5bc2303b0965c539acf81a14"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1479,
+      "sha256": "3c5c2442dd0b4701bb61e620b8632c88d8137b386f6d422736204ed671b33347"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "69a98bfc844846cf5d8997de2686043ffe11bc02eb6c1b60c63ee10c94d33260"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}
