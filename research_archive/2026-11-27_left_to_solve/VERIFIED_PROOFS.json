@@ -3,7 +3,7 @@
   "confirmed_merged_accepted": 3,
   "target_minimum": 20,
   "full_proof_submissions": 3,
-  "complete_kernel_checked_candidates": 20,
+  "complete_kernel_checked_candidates": 22,
   "records": [
     {
       "problem_id": "oeis-a180195",
@@ -26,7 +26,9 @@
       "statement_merged": true,
       "statement_merge_commit": "2fc4aabec0bb8900ae4c91c77d6b5d13f06673d3",
       "proof_merge_commit": "4c3981b3cba7fe5345bfb5343dfe75056789d645",
-      "proof_merged_at": "2026-11-27T17:05:50Z"
+      "proof_merged_at": "2026-11-27T17:05:50Z",
+      "genuine_open_status": "unconfirmed_elementary_consequence_of_prior_formulas",
+      "novelty_note": "Source marks exact recurrence conjectural, but it follows by routine elimination from long-known published defining formulas; no first-ever theorem claim."
     },
     {
       "problem_id": "oeis-a002538",
@@ -49,7 +51,9 @@
       "statement_merged": true,
       "statement_merge_commit": "e851399f36581dd3469ac4c753472f6597f3bfe6",
       "proof_merge_commit": "9963fed42849f09dd6436b4ffcee9c78e4da06c2",
-      "proof_merged_at": "2026-11-27T17:13:14Z"
+      "proof_merged_at": "2026-11-27T17:13:14Z",
+      "genuine_open_status": "unconfirmed_elementary_consequence_of_prior_formulas",
+      "novelty_note": "Source marks exact recurrence conjectural, but it follows by routine elimination from long-known published defining formulas; no first-ever theorem claim."
     },
     {
       "problem_id": "oeis-a158960",
@@ -72,7 +76,10 @@
       "statement_merged": true,
       "statement_merge_commit": "2340eb31e4e29ed4309ca6c66b0337ea91cbe44f",
       "proof_merge_commit": "9ad85ef3d436cdf76bb297e88d9897aaea50f93e",
-      "proof_merged_at": "2026-11-27T17:13:23Z"
+      "proof_merged_at": "2026-11-27T17:13:23Z",
+      "genuine_open_status": "excluded_prior_source_identity_2018",
+      "prior_source": "https://oeis.org/A158960",
+      "novelty_note": "Greubel2018 explicitly states reduced numerator=5^n H_n(1/5), which with nonvanishing implies the denominator claim. Independent Lean acceptance remains valid."
     },
     {
       "problem_id": "mo-290383",
@@ -339,7 +346,10 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full arbitrary nonzero real seed six-distinct-limits conjecture disproved by exact period-six scaling; A329654 is an alias.",
-      "remaining_obstruction": "Official statement registration and fresh imported-target proof submission pending; no accepted-proof credit inferred."
+      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9501",
+      "statement_state": "open",
+      "statement_merged": false
     },
     {
       "problem_id": "oeis-a383246",
@@ -358,7 +368,10 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete no-zero greedy decimal range theorem using repunit-one connectors and fairness.",
-      "remaining_obstruction": "Official statement registration and fresh imported-target proof submission pending; no accepted-proof credit inferred."
+      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9480",
+      "statement_state": "open",
+      "statement_merged": false
     },
     {
       "problem_id": "oeis-a383248",
@@ -377,7 +390,10 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Complete no-nine greedy decimal range theorem using repunit-eight connectors and fairness.",
-      "remaining_obstruction": "Official statement registration and fresh imported-target proof submission pending; no accepted-proof credit inferred."
+      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9482",
+      "statement_state": "open",
+      "statement_merged": false
     },
     {
       "problem_id": "mo-319325",
@@ -415,8 +431,72 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full three-question semisimplicity conjunction disproved over a characteristic-zero extension by a nonzero central square-zero matrix.",
-      "remaining_obstruction": "Official statement registration and fresh imported-target proof submission pending; no accepted-proof credit inferred."
+      "remaining_obstruction": "Statement registered as an official PR and queued for the site checker; full proof submission requires its actual merge.",
+      "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9503",
+      "statement_state": "open",
+      "statement_merged": false
+    },
+    {
+      "problem_id": "oeis-a382465",
+      "exact_statement": "PROOFS_READY/oeis-a382465.statement.lean",
+      "proof": "PROOFS_READY/oeis-a382465.proof.lean",
+      "statement_sha256": "a1dbfeb4e64355b6564d124bb31b824193f303b98f10f29b0417a285d20d599a",
+      "proof_sha256": "da7cb2977d008e3d297d70b7a898bec4e1842f6b7c54d220e6345c7b4768bd6b",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46043313956",
+      "verification_job": 140656233200,
+      "verification_commit": "b126414547b3c05d712d741a6e93fbca3c3f4335",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full positive greedy range theorem: every even digit is immediately preceded by a smaller digit; repunit-one connectors.",
+      "remaining_obstruction": "Current source/duplicate/claim gate and official statement registration required; no full official proof PR yet."
+    },
+    {
+      "problem_id": "oeis-a382624",
+      "exact_statement": "PROOFS_READY/oeis-a382624.statement.lean",
+      "proof": "PROOFS_READY/oeis-a382624.proof.lean",
+      "statement_sha256": "28881a7296da5822211f5a8b1e10ce3388f33e19f5f83f9947521f8d3ce14de2",
+      "proof_sha256": "0cb93324f45152504c99de470979671a78f998d088c7f00d4275fcccff44ab95",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46043313956",
+      "verification_job": 140656233200,
+      "verification_commit": "b126414547b3c05d712d741a6e93fbca3c3f4335",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full positive greedy range theorem: every even digit is immediately preceded by a larger digit; internal zero allowed; repunit-nine connectors.",
+      "remaining_obstruction": "Current source/duplicate/claim gate and official statement registration required; no full official proof PR yet."
+    },
+    {
+      "problem_id": "oeis-a383062",
+      "exact_statement": "PROOFS_READY/oeis-a383062.statement.lean",
+      "proof": "PROOFS_READY/oeis-a383062.proof.lean",
+      "statement_sha256": "685abc68acbcb0ea7ebaf20a28248c979a52465a8b6aae2e6d85cb138acc6a27",
+      "proof_sha256": "cd2b672b523c1fd3f5205933740619a09513782b2c4f13f6c6b0a0360d93c469",
+      "verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46043313956",
+      "verification_job": 140656233200,
+      "verification_commit": "b126414547b3c05d712d741a6e93fbca3c3f4335",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verification_kind": "combined_exact_target_kernel_pass",
+      "merged_and_credited": "not_confirmed",
+      "proof_summary": "Full nonnegative greedy range theorem: every odd digit is immediately preceded by a smaller digit; zero included; exact power-of-ten connectors.",
+      "remaining_obstruction": "Current source/duplicate/claim gate and official statement registration required; no full official proof PR yet."
     }
   ],
-  "continuing_beyond_minimum": true
+  "continuing_beyond_minimum": true,
+  "complete_kernel_checked_certificates": 23,
+  "accepted_formal_proof_submissions": 3,
+  "confirmed_genuine_open_resolutions": 0,
+  "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count."
 }
