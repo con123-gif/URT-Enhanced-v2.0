@@ -1,0 +1,34 @@
+diff --git a/grh-compact/src/New/Selmer/TwistForRows.lean b/grh-compact/src/New/Selmer/TwistForRows.lean
+index 8022424..086804e 100644
+--- a/grh-compact/src/New/Selmer/TwistForRows.lean
++++ b/grh-compact/src/New/Selmer/TwistForRows.lean
+@@ -5,6 +5,16 @@ import New.Selmer.RowBalanced
+ open Matrix Filter Real Module Finsupp Finset CoeffRing Subalgebra RingHom
+ attribute [-simp] map_smul AlgHom.toRingHom_eq_coe
+ 
++private theorem relEval_mapRel_eq_zero_of_forall_dual
++    {O O' Γ n : Type*} [CommRing O] [CommRing O'] [Algebra O O'] [Fintype n]
++    [Projective O O'] (f : Γ →₀ Matrix n n O) (z : Γ → n → O')
++    (h : ∀ l : Dual O O', relEval O f (fun g i ↦ l (z g i)) = 0) :
++    relEval O' (mapRel (algebraMap O O') f) z = 0 := by
++  funext i
++  refine (forall_dual_apply_eq_zero_iff O _).1 fun l ↦ ?_
++  simpa [← Algebra.smul_def, mapRel, linearCombination,
++    ↓sum_mapRange_index, sum] using congrFun (h l) i
++
+ /-- For finitely many rows R_i and M, some m-fold twist has, for its first m powers ϑ, ψ the avatar
+ of ϑ⁻¹: Q auxiliary, ψ anticyclotomic, Σ v(ψ(γ) − 1) ≤ cr_ℓ over tame generators γ at Q,
+ Selmer length of ψR_i mod ℓ^M ≤ (10f·rank + 1)cr_ℓ, v(ιρ_p(ϑ^{±1})) ≤ 9cr_ℓ for ramified p.
+@@ -51,9 +61,8 @@ lemma exists_mFoldTwist_selmerLengthLe {P} (D : Data P) ℓ [ThePrime ℓ] (ι :
+   have := Finite.right ℤ_[ℓ] O.1 O'.1
+   rintro _ (H | ⟨_, ⟨_, ⟨v, rfl⟩, f, hf, rfl⟩ | rfl, rfl⟩)
+   exacts [mem_obeying.1 h _ (.inl (by simpa [unionWithConj] using! H)), mem_obeying.1 h _ (.inr ⟨_,
+-    ⟨v, rfl⟩, mapRel _ f, fun z a ↦ funext fun i ↦ (forall_dual_apply_eq_zero_iff O _).1 fun l ↦ by
+-    simpa [← smul_toAlgebra, mapRel, linearCombination, ↓sum_mapRange_index, sum] using congrFun
+-      (hf _ (crysCocycles.map a ((l.restrictScalars _).compLeft _) fun g ↦ by simp [funext_iff,
++    ⟨v, rfl⟩, mapRel _ f, fun z a ↦ relEval_mapRel_eq_zero_of_forall_dual f z fun l ↦
++      hf _ (crysCocycles.map a ((l.restrictScalars _).compLeft _) fun g ↦ by simp [funext_iff,
+       twistRep, mulVec, dotProduct, ← smul_toAlgebra, by simpa [← k] using
+-      (s₂.eq_one_of_mem_decompGroup v.2 v.1.isPlaceOver_placeOver g.2)])) i,
++      (s₂.eq_one_of_mem_decompGroup v.2 v.1.isPlaceOver_placeOver g.2)]),
+     mapDomain_mapRange _ _ _ _ (map_add _)⟩), by simpa [mapRel]]
