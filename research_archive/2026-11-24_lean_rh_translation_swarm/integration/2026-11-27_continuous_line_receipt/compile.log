@@ -1,0 +1,2 @@
+'c2_continuous_determinant_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_CONTINUOUS_LINE: one common coefficient for all invariant functionals; general matching absent directly

@@ -1,0 +1,48 @@
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_direct_real_matching_1/C2DirectRealMatching.lean:27:87: error: unsolved goals
+E n : Type
+inst✝³ : Field E
+inst✝² : NumberField E
+inst✝¹ : Fintype n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+τ : NumberField.InfinitePlace E
+k : ι τ
+i j : Empty ⊕ n
+m✝ : NumberField.InfinitePlace E × n × n →₀ ℕ
+⊢ (((η τ k).map ⇑MvPolynomial.C).fromRows (Matrix.of fun a b ↦ MvPolynomial.X (τ, a, b)) i
+          ((Equiv.emptySum Empty n) j)).coeff
+      m✝ =
+    (MvPolynomial.X (τ, (Equiv.emptySum Empty n) i, (Equiv.emptySum Empty n) j)).coeff m✝
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_direct_real_matching_1/C2DirectRealMatching.lean:33:2: error: Tactic `assumption` failed
+
+E n : Type
+inst✝³ : Field E
+inst✝² : NumberField E
+inst✝¹ : Fintype n
+ι : NumberField.InfinitePlace E → Type
+inst✝ : (τ : NumberField.InfinitePlace E) → Fintype (ι τ)
+η : (τ : NumberField.InfinitePlace E) → ι τ → Matrix Empty n ℂ
+hs : ∀ (τ : NumberField.InfinitePlace E) (k : ι τ), stackedDet τ (η τ k) ⇑(Equiv.emptySum Empty n) = letterMinor τ id id
+⊢ ∏ x,
+      (MvPolynomial.rename (Prod.map id (Prod.map id (⇑(Equiv.sumEmpty n Empty) ∘ Sum.inl)))) (letterMinor x id id) ^
+        Fintype.card (ι x) =
+    ∏ τ, letterMinor τ id id ^ Fintype.card (ι τ)
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_direct_real_matching_1/C2DirectRealMatching.lean:32:10: warning: This simp argument is unused:
+  reindex_equiv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [letterMinor]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/scratch/9bec6a205c16/rh_native_work_logs/c2_direct_real_matching_1/C2DirectRealMatching.lean:32:25: warning: This simp argument is unused:
+  letterMinor
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [reindex_equiv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'c2_empty_stacked_determinant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'c2_empty_matched_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_direct_real_matching' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+C2_DIRECT_REAL: entire canonical statement preserved; direct determinant line replaces general real matching
