@@ -1,0 +1,3 @@
+'c2_real_matching_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'c2_real_determinant_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+C2_REAL_STANDARD: original real matching and determinant invariance specialized at explicit models

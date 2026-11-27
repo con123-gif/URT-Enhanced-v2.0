@@ -1,4 +1,5 @@
 import C2DeterminantExchange
+import C2RealMatchingStandard
 import Mathlib.Tactic
 
 /-! Restricted real matching and the original determinant class-sum statement.
@@ -30,14 +31,7 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
           (1 : Matrix n Empty 𝔪.ResRing → ℂ)
           (matchedPoly (ι := ι) (Equiv.sumEmpty Empty Empty) (Equiv.sumEmpty n Empty) η)
           x g ∂(stdSpace E Empty).quotMeasure := by
-  have hj : blockSigns (Equiv.sumEmpty n Empty) = (1 : n → ℤˣ) := by funext i; rfl
-  have hf : blockSigns (Equiv.sumEmpty Empty Empty) = (1 : Empty → ℤˣ) := by
-    funext i
-    cases i
-  have hreal := real_matching (E := E) (Equiv.sumEmpty Empty Empty)
-    (Equiv.sumEmpty n Empty) (Equiv.emptySum Empty n) (ι := ι) rfl
-  simp only [posFockVector, hj, hf, Fintype.card_empty, Nat.cast_zero, zero_sub] at hreal
-  choose Q₀ κ hκ using hreal
+  choose Q₀ κ hκ using c2_real_matching_standard (E := E) (n := n) ι
   have hd : card n = 2 * (card n / 2) := by rcases he with ⟨k, hk⟩; omega
   have hμ : ∀ q : NumberField.InfinitePlace E,
       (card n : ℤ) ≤ 2 * ((card (ι q) : ℤ) + (card n / 2 : ℕ)) := by
@@ -63,8 +57,8 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
   · obtain ⟨⟨L, hL⟩, hv⟩ :=
       (pairThetaKer (stdSpace E n) (stdSpace E n) α 1).swap.exists_clm_lift
         (isAutomorphic_const _ 1).mem_rapidFunctions,
-      realPairWeil_stackedDetProd (Equiv.sumEmpty n Empty) (Equiv.emptySum Empty n) rfl η 1
-    simp [rankTwist, Space.lift, ↓mul_inv, hj, hf, -Prod.forall] at hc hL hv
+      c2_real_determinant_invariant (E := E) (n := n) ι η
+    simp [rankTwist, Space.lift, ↓mul_inv, -Prod.forall] at hc hL hv
     change ∀ f g, thetaIntegral .. = _ at hL
     specialize hκ x
       ((L · ∘L .flip (integrated _) _) ∘ (g * ⟨·, 1⟩))
@@ -88,7 +82,7 @@ lemma c2_empty_matching (he : Even (card n)) (hn : 2 ≤ card n)
           congr 1
           apply integral_congr_ae
           filter_upwards [] with h₀
-          simp only [modKernel, modDatum]
+          simp only [modKernelBilin_apply, modKernel, modDatum]
           rw [← h, ← pairWeil_integrated_right α α, ← pairTheta_mul] <;> simp)) η
     simp only [Function.comp_apply, ContinuousLinearMap.comp_apply,
       ContinuousLinearMap.flip_apply, LinearMap.comp_apply, LinearMap.smul_apply,
@@ -150,4 +144,11 @@ run_cmd do
                          ``stdClassSum_det_modKernel_eq] do
       if value.getUsedConstants.contains forbidden then
         Lean.throwError "C2 determinant consumer calls original general target"
+  let matching ← Lean.getConstInfo ``c2_empty_matching
+  let some proof := matching.value? (allowOpaque := true) |
+    Lean.throwError "C2 determinant matching lacks a proof value"
+  for supplier in #[``c2_determinant_exchange, ``c2_real_matching_standard,
+                      ``c2_real_determinant_invariant] do
+    unless proof.getUsedConstants.contains supplier do
+      Lean.throwError "C2 determinant consumer misses a checked specialized supplier"
   Lean.logInfo "C2_DETERMINANT_CLASS_SUM: original complete statement preserved; general target absent directly"
