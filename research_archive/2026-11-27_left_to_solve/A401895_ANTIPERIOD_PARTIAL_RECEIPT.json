@@ -1,0 +1,31 @@
+{
+  "problem_id": "oeis-a401895",
+  "status": "PARTIAL_INFORMAL_STRUCTURAL_THEOREM",
+  "complete_problem_closed": false,
+  "new_solved_problem_count": 0,
+  "new_lease": false,
+  "lean_verification": false,
+  "official_submission": null,
+  "independent_AI_mathematical_challenge": "PASS: exact reversal, coefficient bounds, exceptional smallbase cases and cofactor order bridge",
+  "novelty": "Not certified; inspected live notes contain prior repeated-block obstruction and coefficient-height methods, explicitly credited. No exact maximal-plus-order statement found in inspected brief.",
+  "conclusion": "In every remaining candidate cofactor decomposition, ord_10(c)=ord_10(d)=2m. Combined with prior nonrepetition, ord_10(3a)=ord_10(3b)=m. This is necessary, not sufficient.",
+  "files": {
+    "A401895_ANTIPERIOD_COFACTOR_OBSTRUCTION.md": {
+      "sha256": "898929cde04d29c10f45645b077b9968503b2d08cbfc88236179d818d1b5ab1c",
+      "bytes": 7504
+    },
+    "a401895_antiperiod_identity_check.py": {
+      "sha256": "059c9fb4ce9c76d306402482625f98ae161fa4578cea54dddaff632a7a8bf87a",
+      "bytes": 1236
+    },
+    "A401895_ANTIPERIOD_IDENTITY_CHECK.json": {
+      "sha256": "bed2024bb4ae431eaf948fc3e1730b82e5f7eec31b79fcfd6861a4d1fe61a51a",
+      "bytes": 519
+    },
+    "A401895_CURRENT_BRIEF.txt": {
+      "sha256": "14f2b9c00c750da59fb30d3256b4b967b8ba14daa1d562cc672a651b8e04e0a4",
+      "bytes": 23419
+    }
+  },
+  "recorded_utc": "2026-11-27T22:27:35.727530+00:00"
+}
