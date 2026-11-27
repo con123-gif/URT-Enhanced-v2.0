@@ -7,6 +7,7 @@ set_option relaxedAutoImplicit false
 set_option maxSynthPendingDepth 3
 set_option pp.unicode.fun true
 set_option maxHeartbeats 4000000
+set_option pp.fullNames true
 
 /-!
 Active 27-November caller replacement, PREPARED until local Lean execution.
@@ -177,7 +178,7 @@ run_cmd do
     Lean.Meta.isDefEq original.type info.type
   unless sameType do
     Lean.throwError "B2 replacement has a different original declaration type"
-  let some value := info.value? |
+  let some value := info.value? (allowOpaque := true) |
     Lean.throwError "B2 replacement has no inspectable proof value"
   let deps := value.getUsedConstants
   if deps.contains ``Filling.sum_pairWeight_le then

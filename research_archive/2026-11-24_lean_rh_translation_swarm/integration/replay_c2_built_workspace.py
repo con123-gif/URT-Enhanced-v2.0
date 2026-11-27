@@ -48,6 +48,11 @@ def main():
                 "source_blob": SOURCE_BLOB, "original_source_blob": ORIGINAL_BLOB,
                 "theorems": NAMES, "original_probes": ORIGINALS,
                 "new_Lean_execution": False, "full_RH_replay": False}
+    adapter = ("info.value? |", "info.value? (allowOpaque := true) |")
+    native.require(raw.decode().count(adapter[0]) == 1, "Changed C2 theorem-body accessor")
+    adapted = raw.decode().replace(*adapter, 1).encode()
+    manifest.update(adapter={"old": adapter[0], "new": adapter[1]},
+                    replay_source_blob=native.git_blob(adapted))
     native.dump(out / "c2_input_manifest.json", manifest)
     if args.prepare_only:
         print(json.dumps(manifest))
@@ -65,6 +70,7 @@ def main():
                    cwd=root, check=True)
     lake = tomllib.loads((root / "lakefile.toml").read_text())
     options = list(lake.get("moreLeanArgs", [])) + list(flatten_options(lake["leanOptions"]))
+    options.append("-Dpp.fullNames=true")
     env = os.environ.copy()
     env["PATH"] = str(args.lean_bin.resolve()) + os.pathsep + env["PATH"]
     env.update(LEAN_NUM_THREADS="2", LEAN_ABORT_ON_PANIC="1")
@@ -92,7 +98,7 @@ def main():
     native.require((root / ".lake/build/lib/lean/New/Exchange/EqualRankValue.olean").is_file(),
                    "EqualRankValue not built; use the shared capable workspace after B2")
     candidate = out / "C2Caller.lean"
-    candidate.write_bytes(raw)
+    candidate.write_bytes(adapted)
     probe = step("c2_candidate", ["lake", "env", "lean", *options, candidate], 1200)
     probe.update(native.audit(out / "c2_candidate.log", NAMES))
     probe["caller_guard_observed"] = GUARD in (out / "c2_candidate.log").read_text()

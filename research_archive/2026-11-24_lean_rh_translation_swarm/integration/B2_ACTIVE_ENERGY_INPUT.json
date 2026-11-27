@@ -2,11 +2,11 @@
   "parts": [
     {
       "source": "integration/B2_ACTIVE_CALLER_REPLACEMENT.lean",
-      "source_blob": "0d93565d7962a314167e39f10566f9f10b641a2e"
+      "source_blob": "3ac61ea5bcd38a9d003cf125689bf2b4a58b9c9a"
     },
     {
       "source": "integration/B2_ACTIVE_ENERGY_REPLACEMENT.lean",
-      "source_blob": "f225f568a1a931f45c88e4b92916d0d024b2434d"
+      "source_blob": "e8ef74cafecd49e361b7b147c3970953e30a7f6d"
     }
   ],
   "original_source_blob": "da67bf862a4c5e72ab6a81a7dfb462545cd8833f",
@@ -20,5 +20,10 @@
   "skew_patch": {
     "source": "audit/2026-11-27_B2_NATIVE_RECEIPT_AND_SKEW_CALLER_PATCH.py",
     "source_blob": "4c942de0145e223298b3441b6c814a23ae946434"
+  },
+  "skew_adapter": {
+    "old": "(by simpa only [neg_mul] using s)",
+    "new": "(by simpa only [Matrix.neg_mul] using s)",
+    "reason": "rectangular matrix multiplication needs the matrix negation lemma"
   }
 }

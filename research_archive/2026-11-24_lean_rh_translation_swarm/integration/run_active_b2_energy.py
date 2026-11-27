@@ -40,6 +40,10 @@ def main():
     spec = importlib.util.spec_from_file_location("authenticated_skew_patch", patch_file)
     patch = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(patch)
+    adapter = config.get("skew_adapter")
+    if adapter:
+        native.require(patch.NEW.count(adapter["old"]) == 1, "Changed peer matrix-negation anchor")
+        patch.NEW = patch.NEW.replace(adapter["old"], adapter["new"], 1)
     texts = []
     for part in config["parts"]:
         raw = (native.SWARM / part["source"]).read_bytes()
@@ -101,7 +105,8 @@ def main():
             skew_log = out / "skew_caller.log"
             ans = base_step(["lake", "env", "lean", "--tstack=400000",
                              "-DautoImplicit=false", "-DrelaxedAutoImplicit=false",
-                             "-DmaxSynthPendingDepth=3", "-DmaxHeartbeats=4000000", source],
+                             "-DmaxSynthPendingDepth=3", "-DmaxHeartbeats=4000000",
+                             "-Dpp.fullNames=true", source],
                             cwd, env, skew_log, 600)
             ans.update(native.audit(skew_log, names))
             ans["source_blob"] = native.git_blob(source.read_bytes())

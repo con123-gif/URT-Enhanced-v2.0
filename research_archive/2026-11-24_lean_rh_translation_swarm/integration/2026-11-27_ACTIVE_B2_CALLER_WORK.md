@@ -4,6 +4,16 @@
 interactive worker, continuing mathematical implementation here; no new
 automation or delegated worker is requested. RH remains OPEN.
 
+Latest active status, 13:04 UTC: run 45998845682 built CrudeEnergy and
+accepted the pair and level-energy proof bodies, but the complete batch
+was ERROR. The inspector mistakenly used ConstantInfo.value? without
+allowOpaque=true; the energy axiom printer also abbreviated Classical.choice.
+The separate skew/count patch needs Matrix.neg_mul for rectangular products.
+These exact issues are repaired. Seven declarations (pair plus all three
+energy callers and their bridges), followed by the repaired skew/count proof,
+are NOW executing locally from the authenticated native cache. No whole-file
+PASS or constructor-inclusive B2 frontier is claimed yet.
+
 Current source: lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d977207,
 Lean 4.35.0 eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Mathlib
 56a005855ea17e0b0958f73ec801ae140b0a1679. Credit Alpöge, Sernau,
@@ -162,3 +172,24 @@ pinned Lean options explicitly, and separates the two replacement probes
 from three original probes. Prepare-only preflight passed; no native C2
 execution or parallel cold build was launched. Use it after B2, in the
 already-built compatible workspace. RH remains OPEN.
+
+Second shared result: active_b2_energy.log bbfb981a34c342107737e35786b6287556132142;
+b2_native_results 6684b794bbed520fa4b813ddbb556d1e91a07b24. The source build
+passed in 1495.25 s; candidate took 49.66 s and exited 1 solely at the two
+proof-accessor guards. All four pair-block declarations had standard-axiom
+reports; energy printed the shortened name choice, so the strict parser
+correctly refused to accept it. The corrected run forces pp.fullNames=true.
+Skew log 887fc42b6cf57ba369bccb92ce71fa5c84e13bae identifies the rectangular
+negation mismatch; the repaired adapter preserves the peer's original file.
+
+Native artifact 15198517963 was downloaded and its ZIP digest verified:
+f1345ef3dc47bbf93e58c4b6a946596b62e94d7f287ff5f04086c5f8502a2ecc.
+Inner cache digest 35db72daacbbb00449c12be74f0c79a324128baf72a429cff841d11d0207b57e,
+660 files / 338757850 restored bytes, exact source/Mathlib/Lean release pins.
+The previous local native cache is retained for rollback. Restoration is not
+a proof receipt. replay_full_b2_built.py now performs fresh candidate checks
+without any source rebuild and retains a checked object for graph inspection.
+The graph comparison now covers SIX local roots (original/replacement pair,
+level energy, full energy); it remains unexecuted. C2's pinned peer file is
+unchanged; its prepared runner applies the same documented value? adapter
+to a derived copy, with original and derived source hashes recorded.

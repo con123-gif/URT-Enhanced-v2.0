@@ -49,7 +49,7 @@ run_cmd do
       Lean.Meta.isDefEq original.type info.type
     unless sameType do
       Lean.throwError "Full energy replacement has a different original declaration type"
-    let some value := info.value? |
+    let some value := info.value? (allowOpaque := true) |
       Lean.throwError "Full energy replacement has no inspectable proof"
     let deps := value.getUsedConstants
     for forbidden in #[``Filling.energy_le_of_level_pairs, ``Filling.energy_le_of_level_lt,

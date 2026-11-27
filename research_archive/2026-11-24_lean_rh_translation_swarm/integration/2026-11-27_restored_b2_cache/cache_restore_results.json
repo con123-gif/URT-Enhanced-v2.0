@@ -1,0 +1,17 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "artifact_sha256": "f1345ef3dc47bbf93e58c4b6a946596b62e94d7f287ff5f04086c5f8502a2ecc",
+  "inner_sha256": "35db72daacbbb00449c12be74f0c79a324128baf72a429cff841d11d0207b57e",
+  "source_build_complete": true,
+  "modules_available": {
+    "New.Filling.BlockBound": true,
+    "New.Filling.CrudeEnergy": true
+  },
+  "restored_files": 660,
+  "restored_bytes": 338757850,
+  "previous_cache": "/workspace/scratch/9bec6a205c16/compact_build/grh-compact/.lake/build/previous_native_lib_verified_b2_cache_coqygp1o",
+  "new_Lean_execution": false,
+  "proof_receipt": false,
+  "full_RH_replay": false
+}

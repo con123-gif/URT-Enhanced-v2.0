@@ -14,5 +14,10 @@
     "stdExchange_of_periods"
   ],
   "new_Lean_execution": false,
-  "full_RH_replay": false
+  "full_RH_replay": false,
+  "adapter": {
+    "old": "info.value? |",
+    "new": "info.value? (allowOpaque := true) |"
+  },
+  "replay_source_blob": "1fa9d441fc1a2aa82281c1e768e9a794d69ba9f8"
 }

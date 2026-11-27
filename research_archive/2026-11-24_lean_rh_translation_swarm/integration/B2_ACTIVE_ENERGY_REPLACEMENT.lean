@@ -7,6 +7,7 @@ set_option relaxedAutoImplicit false
 set_option maxSynthPendingDepth 3
 set_option pp.unicode.fun true
 set_option maxHeartbeats 4000000
+set_option pp.fullNames true
 
 /-!
 Prepared actual energy consumer of the active pair-weight replacement.
@@ -97,7 +98,7 @@ run_cmd do
     Lean.Meta.isDefEq original.type info.type
   unless sameType do
     Lean.throwError "Energy replacement has a different original declaration type"
-  let some value := info.value? |
+  let some value := info.value? (allowOpaque := true) |
     Lean.throwError "Energy replacement has no inspectable proof value"
   let deps := value.getUsedConstants
   if deps.contains ``Filling.energy_le_of_level_pairs then
