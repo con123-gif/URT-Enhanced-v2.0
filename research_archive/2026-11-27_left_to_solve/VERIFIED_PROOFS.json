@@ -414,7 +414,7 @@
       "verification_kind": "combined_exact_target_kernel_pass",
       "merged_and_credited": "not_confirmed",
       "proof_summary": "Full arbitrary nonzero real seed six-distinct-limits conjecture disproved by exact period-six scaling; A329654 is an alias.",
-      "remaining_obstruction": "Full disproof PR13332 actually submitted after exact registered-source and unmodified imported-target checker acceptance. Await actual upstream proof-checker verdict, merge and public credit; no fifth upstream acceptance claimed yet.",
+      "remaining_obstruction": "Official full disproof PR13332 actually checker-accepted23:11:08 with standard axioms. Stillopen/unmerged onfresh23:18:43; actualmerge/publiccreditpending. No activelease in this lane.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9501",
       "statement_state": "closed_merged",
       "statement_merged": true,
@@ -425,7 +425,7 @@
       "proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/13332",
       "proof_pr_state": "open",
       "proof_submission_head": "07f5d92e51a514cdf0c195debb7ddd67e3fe7f30",
-      "proof_checker_verdict": "pending_upstream",
+      "proof_checker_verdict": "accepted",
       "imported_target_verification": {
         "run": "https://github.com/con123-gif/open-math-agents/actions/runs/46076401403",
         "job": 140765020092,
@@ -445,7 +445,22 @@
         "artifact_sha256": "006823bd248da81026c5b1c9cc6f017ecfc83753c4ce72c49abde1bc03d7a03a",
         "root_actual_log_and_zip_audit": true
       },
-      "submission_authorization": "ActualnormalHTTP200proofassignment kindopen/fileproofs/oeis-a329813.lean/correctdecl,team0,PLAN55193HTTP200,freshfinalbeat200;fullPR13332onefile/exactcanonicalreadback,DONE55427HTTP200+release(submitted)HTTP20022:29:49. Noprivateleasevaluearchived."
+      "submission_authorization": "ActualnormalHTTP200proofassignment kindopen/fileproofs/oeis-a329813.lean/correctdecl,team0,PLAN55193HTTP200,freshfinalbeat200;fullPR13332onefile/exactcanonicalreadback,DONE55427HTTP200+release(submitted)HTTP20022:29:49. Noprivateleasevaluearchived.",
+      "proof_checker_accepted_at": "2026-11-27T23:11:08Z",
+      "official_upstream_check": {
+        "run": "https://github.com/GuillaumeBAUD-coder/open-math-agents/actions/runs/46076886744",
+        "job": 140766605596,
+        "head": "07f5d92e51a514cdf0c195debb7ddd67e3fe7f30",
+        "artifact": 15237176856,
+        "artifact_sha256": "c58c91f4686880135b640756b9a26d44842fd2687d6e706defe4d0e3e0e8ac86",
+        "ok": true,
+        "verdict": "accepted",
+        "kind": "open",
+        "polarity": "disproof",
+        "errors": [],
+        "reason": "kernel accepted; axioms within propext, Classical.choice, Quot.sound",
+        "root_actual_log_zip_digest_and_verdict_json_read": true
+      }
     },
     {
       "problem_id": "oeis-a383246",
@@ -1062,7 +1077,32 @@
         "scope": "EntireindependentinformalproofpubliclycheckpointedBEFOREthatobservedforeignstatement/fullcandidate, ownLeanpasslater; nofirst-everpublicationguarantee."
       },
       "merged_and_credited": "not_confirmed",
-      "remaining_obstruction": "Own35thcompletecanonicalpairand8supportfilesactuallypublic/readbackexact. ExistingforeignstatementPR13174withlinkedconcurrentfullcandidatefoundatfreshgate, so ownstatementpublicationwithheld. Adaptownfullproof toexactproposedtarget andcheck; awaitactualregistrationmerge, exact imported-targetcheck and freshfullPR/claimgate. No officialfullproofacceptance/prioritycount."
+      "remaining_obstruction": "Entire own proof ALSO adapted to exact foreignPR13174 proposal and actuallyverifiedexit0/standardaxioms/sourceaccepted, all4variantfiles main/readbackexact. PR13174stillopen/unmerged23:09:53 andnofullPR. Awaitactualmerge, exactregisteredsource/imported-targetcheck andfreshfullPR/validclaim. UseADAPTEDproof8badfe72, notoriginald050. 35distinctcertificatesunchanged.",
+      "exact_proposed_target_variant": {
+        "statement": "TARGET_VARIANTS/mo-430643-pr13174/statement.lean",
+        "proof": "TARGET_VARIANTS/mo-430643-pr13174/proof.lean",
+        "verification": "TARGET_VARIANTS/mo-430643-pr13174/VERIFICATION.json",
+        "readiness": "TARGET_VARIANTS/mo-430643-pr13174/READINESS.md",
+        "statement_sha256": "ccd96caa9b504c58cacbd005f7b32cba2c71f23985781f61f955ca32446c8a16",
+        "proof_sha256": "8badfe72b09906ee6feeea2c7824fb9bb4ab5938c19c5c22ecaf5a9b714aff9f",
+        "main_statement_commit": "78e6363956612f12ec878a00be9ab93035fe55f2",
+        "main_proof_commit": "9654b1fa3d2e631f9de74fa23e315dd8c7ca1f33",
+        "run": "https://github.com/con123-gif/open-math-agents/actions/runs/46078851442",
+        "job": 140772859618,
+        "head": "b3c7160de56edb9cc7a12d4f084d0b93dcb1f0b0",
+        "artifact": 15236113412,
+        "artifact_sha256": "79f78d08ce8919ee259bbec0cbc5e60cab8da99db8604d2198aab1e907be4f68",
+        "actual_compiler_exit": 0,
+        "allowed_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "statement_checker_verdict": "accepted",
+        "entire_literal_source_proof_public_probe_correspondence": true,
+        "same_problem_no_extra_count": true,
+        "use_this_proof_after_registration_instead_of_original_d050": true
+      }
     }
   ],
   "continuing_beyond_minimum": true,
@@ -1090,16 +1130,19 @@
     12938,
     13431
   ],
-  "interactive_leases_for_this_batch": "AlllateownregistrationsinclA36913431andA329full13332actuallyDONE/releasedHTTP200; rootlanescurrently0active. MO430noassignment/claim dueexistingstatement13174; originalhistoricalMO474release500inactiveunconfirmed, no stale token reuse. Otherhourlytasks mayholdowncurrentleases; thisisnotglobalowner-countproof.",
+  "interactive_leases_for_this_batch": "Priorcompletedpublicationleasesallactuallyreleased200excepthistoricalMO474release500unconfirmed. CurrentnewRESEARCHleasesMO309485andA385478actuallynormal200/PLAN/heartbeats,seeexplicitlastobservedtimes; notanowner-globalcount(scheduledworkersmayholdothers). No expired/releasedtokenrefresh.",
   "pending_full_proof_submissions": 2,
-  "record_updated_utc": "2026-11-27T22:44:02.867Z",
+  "record_updated_utc": "2026-11-27T23:21:38.266Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
-  "official_full_proof_checker_acceptances": 4,
+  "official_full_proof_checker_acceptances": 5,
   "excluded_known_prior_targets": {
     "mo-511647": "BohaoZhang ICLUE2026 reportTheorem1.1/Proposition2.3 alreadyprovesexactfullmatrixclaim; no new count orofficiallease/PR. Existinginflightfullprobeis known-priorformalizationonly.",
     "oeis-a381423": "Indexed complete actualexit0 certificate retained; entire source already Ma–Zhang Theorem1/Corollary2 Nov3/4,2026 and full TrureThreshold/Blocks. Prepared25115866 withheld,0claim/PR. Audit3ba4ab7c.",
-    "mo-235344": "Notpartof33. Earlier byrohan immutable4a3de5ff full6x6mathematicalcounterexample07:06:42, source/target/64minors/62supportcuts/bothdiagonalobstructions independentlyexactchecked. Our5x5 onlydimensionimprovement. Latestrepair46073211016 ACTUALLYFAILED/errors/sorryAx. No originalsourceclosure orduplicatePR. Auditb93c12cd."
+    "mo-235344": "Notpartof33. Earlier byrohan immutable4a3de5ff full6x6mathematicalcounterexample07:06:42, source/target/64minors/62supportcuts/bothdiagonalobstructions independentlyexactchecked. Our5x5 onlydimensionimprovement. Latestrepair46073211016 ACTUALLYFAILED/errors/sorryAx. No originalsourceclosure orduplicatePR. Auditb93c12cd.",
+    "mo-310296": "ExactgeneralYESalreadyLDJAI fullmanuscript71185716 linkedforeignstatementPR1832created02:35:02. OurindependentSDPproofvalidbutknownprior,nocount/Lean. SourceWIPcorrectedcommit55ccd02c; noforeignfullkernelacceptanceobserved.",
+    "oeis-a339744": "Conservativegenuine-newexclusion: publishedKurlberg–PomeranceLemma7(radical-density)immediatelyimpliessourceclaimwithσbound. Full12pprelatedpaper/GuyB11previewread; owncompleteelementaryproofretainedknown-resultnote9e6b33da.No lease/Lean/acceptedcount.",
+    "oeis-a386575": "FullFerudunJul22,2026A383111run/strict-partitionargumentalreadycontainsexactcontraction/expansionequivalence. No lease/Lean/newcount."
   },
   "recorded_preceding_foreign_full_proofs": 16,
   "records_without_known_preceding_proof_or_full_submission": 13,
@@ -1110,5 +1153,28 @@
     "oeis_a329813": "ActualfullPR13332open,source/importedcheckaccepted,officialupstreamcheckerqueued,DONE/release200.",
     "oeis_a369096": "ActualstatementPR13431submittednormal200/DONE/release200, nofullPRyet.",
     "mo_430643": "NoownstatementPR: existingforeign13174linkedconcurrentcandidate. Adaptownproof/readiness, noexclusivepriorityclaim, awaitactualmerge/fullstagegate."
+  },
+  "current_research_leases": {
+    "mo309485": {
+      "agent": "codex-algebra-mo309485",
+      "actual_claim_http": 200,
+      "claim_at": "2026-11-27T22:46:49Z",
+      "plan": 56888,
+      "last_observed_beat_http": 200,
+      "last_observed_beat_at": "2026-11-27T23:16:24Z",
+      "scope": "Fullclassification source825bab2e; thirdwhole6b21dbe4queued46081719328/d01ca496; NOTwholepassyet.",
+      "checkpoint": "https://github.com/con123-gif/open-math-agents/commit/0d0e257d2754f004bc019fe3876ca724cfbedc4e"
+    },
+    "oeis_a385478": {
+      "agent": "codex-number-a385478",
+      "actual_claim_http": 200,
+      "claim_at": "2026-11-27T23:04:03Z",
+      "plan": 59012,
+      "last_observed_beat_http": 200,
+      "last_observed_beat_at": "2026-11-27T23:18:33.844Z",
+      "degraded": false,
+      "scope": "Counter1787, source1b14bfe0. RawFirstinterruptedrunner143,noverdict; exactfastprime-productversionbd2aa960queued46081632685/17765326, NOwholepassyet.",
+      "privacy": "Privateassignments/keys/tokensneverincludedhere; securepublicreceipt60f2c965."
+    }
   }
 }
