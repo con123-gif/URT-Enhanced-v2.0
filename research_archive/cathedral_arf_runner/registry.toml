@@ -3791,3 +3791,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Landau lane; continuation directive"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-a2-leaf-repair-20261128"
+question = "Reuse the original authenticated A1/A2 artifact and execute RUN98's six repairs to actual leaf compiler diagnostics in run 46108201939. Preserve old failed evidence, exact original statement, standard axiom gates, all three constructor-inclusive graph roots and bounded native scan/prune. On acceptance replay RUN93 short span. No Main import, cold project build, A2 root or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT theta lane; continuation directive 2026-11-27"
+claim = "independent"
