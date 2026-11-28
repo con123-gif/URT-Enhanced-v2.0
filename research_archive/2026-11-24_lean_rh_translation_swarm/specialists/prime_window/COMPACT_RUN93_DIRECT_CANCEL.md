@@ -1,0 +1,22 @@
+# RUN93 — direct cancellation of the actual failed endpoint subgoals
+
+28 November 2026. Compact pin 72fead102f663d5c7a407964a13dc0cf9d977207; Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679; Lean 4.35.0. Credit Alpöge, Sernau, Anthropic collaborators and Claude. Read mission/spine/ledger blobs 3adc76221a978016e3505cdf3e36ad688354d7d7, 1c4608f2190154fd4bc4b38fc77db10ec5e60e64, 579ecc1cafdb28eae7d1c97565700c571dfa7484 and AGENTS/SWARM/HANDOFF/EXPANSION. No live ledger, protected workflow or physics edits.
+
+## Actual verification evidence
+RUN92 native replay 46086991349, 28 Nov 00:42:30 UTC, source c727f99f21a232b2cff7bb04c91f30779ec7b91c: ERROR, 1529.85 seconds. Both import builds succeed, analytic and adapter each exit 1, bridge not reached. Status blob 415f145bc61cc12ae9454c6092ea46282a7584e5; run91_receipt.json 56e5073dfb0de9b7c4fcb829007e60e4b0891be3; analytic/endpoint.log e3cd51aca318ca6049735cb4438b5da8f23bc31c; adapter.log 3787f733a7fe7b417fa2742631092f6abac912ac on cathedral-research-state under compute/rh-compact-prime-endpoint-repair-20261128/. Individual hinge, log_correction, primeError_chord, Data.run90Remainder_eq report standard axioms; containing modules failed; remaining roots contain sorryAx. Not accepted modules.
+
+## Source-matched candidate repairs, NOT replayed
+Analytic: expose the local real cast q before exact_mod_cast. Replace broad grind in induced-zero transfer with the exact Euler-factor multiplication by zero (LFunction_changeLevel, Mathlib DirichletContinuation.lean, pinned above) then handle the entireL pole-removal update away from rho=1 explicitly. Reflection: exclude s=0 via zeta(0)=-1/2; exclude Gamma_R zero via Gamma_R_eq_zero_iff (nonpositive even integers) and the nontrivial-zero premise; cancel the nonzero gamma factor in zeta(s)=Lambda(s)/Gamma_R(s); use Lambda(1-s)=Lambda(s). If Re(s)<1/2 the reflected zero violates the principal-right bound; if Re(s)>1/2 the original zero violates it. All original premises retained. No claimed RH theorem imported.
+
+Adapter: a failed log comparison for c = towerDeg/#thick is unnecessary. From H': T/L <= t, L=logB>0 and t=#thick>0, multiply by L and divide by t: T/t <= L exactly. This uses the SAME witness and removes the erroneous inferred comparison. For the last bound use explicit target logarithmic lower witness (8 eta-1/2)logX, not ambiguous instance search. Write B0=log logB, X=logX; log size calculus of New/Data/Magnitudes.lean (306fe7e22378322422d11b1f8415fcdac75ffd6e) gives upper exponent no larger than max( (31/5)B0 + P.c + 1 - X/2, -10^6 X)+1. Target is 8 B0-X/2 since B0=eta X. The scale conditions 10^12 P.c<=B0, 100B0<=X, P.c>=64 imply strict comparison in both branches. This is elementary log bookkeeping, not a proof of star. Native inferred exponent and the new tactic must be checked. Direct arithmetic cancellation avoids the earlier over-strong bound on T/t. Original New/Main.lean lines 149–167 and New/Data/AdmissibleData.lean scale retained. No independent proof of TailGrid, GoodGrid, D1, A/B/C or the original definition transport.
+
+## Executed here
+Retrieved latest actual receipt and failure logs, source definitions, Mathlib theorem statements; 6 uniquely matched source edits. Exact endpoint definitions compared unchanged in both candidate modules; Data remainder block unchanged. No local Lean execution, no fresh rh_scan/prune/reduce/auto/frontier or full graph; native old-pin engines not transferred across incompatible versions. Replay runner retains all previous probes, omitted-grid negative control, guards and source pins. Files:
+- COMPACT_RUN93_ANALYTIC_REPAIR.lean: 3398702ee71980b05b67dac8747d5a2c40c6e68f
+- COMPACT_RUN93_ADAPTER_REPAIR.lean: cafaa2442d0889d26f4ccaefd4a2888dfe422c81
+- COMPACT_RUN93_BRIDGE_REPAIR.lean: d1f58ba6d8c29b70e5a07e1eb497abd830a7a29b
+- COMPACT_RUN93_REPLAY_ANALYTIC.py: 33281f089b5a1919add396410f858b72520ab623
+- COMPACT_RUN93_QUEUE_REPAIR.py: cd8a2140bd616ef23d2d784a4b1489efc4e63a4c
+Previous candidates and all graph evidence retained. Queue new independent job using existing runner; no protected workflow changes.
+
+RESUME HERE: inspect compute/rh-compact-prime-endpoint-direct-cancel-20261128/status.json and outputs/run91_receipt.json on cathedral-research-state; repair first remaining actual failure or send successful modules for constructor-inclusive root audit and original-definition bridge. HANDOFF TO kernel/integration. RH OPEN.

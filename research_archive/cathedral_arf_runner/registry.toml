@@ -3722,3 +3722,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT prime-window lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-prime-endpoint-direct-cancel-20261128"
+question = "Replay RUN93 explicit cancellation and reflection repairs of failed RUN92, retaining all previous source pins, guards, omitted-grid negative control, and failed logs. No star, PNT tail, full root or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT prime-window lane"
+claim = "independent"
