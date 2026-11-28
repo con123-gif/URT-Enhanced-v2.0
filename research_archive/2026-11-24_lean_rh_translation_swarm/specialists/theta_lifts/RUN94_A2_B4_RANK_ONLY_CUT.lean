@@ -111,7 +111,7 @@ lemma Data.ramifiedColumns_fill_rows_run94 :
   simp_rw [IsSpread, ← D.columnCoords.finrank_eq, ← (D.columnCoords.ofSubmodule' _).finrank_eq] at h
   refine fun F ↦ (h D.finrank_rows_le_mass F).imp' Sigma.uncurry fun _ h ↦
     .trans (mod_cast finrank_mono fun _ ↦ by simpa using!
-    id) ((D.ramifyingOp_finrank_comap_run94 .univ _.trans (add_le_add h le_rfl)).trans ?_)
+    id) (((D.ramifyingOp_finrank_comap_run94 .univ _).trans (add_le_add h le_rfl)).trans ?_)
   simp [← add_mul, add_assoc, card_piPlaces, filling]; gcongr; use D.le_of_hasLogBound
   open Fint in simp_rw [asAlgebraHom_eq_sum, reindex_equiv (Equiv.piCurry _)]
   simp [e₀, goodTupleFamilies, tupleIdem, Finset.prod_univ_sum, Fintype.prod_sigma]; rfl
