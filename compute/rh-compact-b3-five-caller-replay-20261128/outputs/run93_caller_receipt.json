@@ -1,0 +1,178 @@
+{
+  "source_blob": "ff52060ebacc358f73fd5638731328529af84999",
+  "shell_source_blob": "0813311a1a745edc1e4ddc6a788df25df0b13f9c",
+  "accepted_source_blob": "cba0a141fd47c34b792021c679b5451ebde7d3bf",
+  "roots": [
+    "IsCutBessel.lintegral_formMajorant_ne_top",
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart",
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top",
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart",
+    "IsCutBessel.norm_floorForm_le",
+    "IsCutBessel.norm_floorForm_le_via_directChart",
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le",
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart",
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term",
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart"
+  ],
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "all_requested_checks_ok": false,
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "human_assembly_verified": false,
+  "build": {
+    "returncode": 0,
+    "seconds": 1342.29,
+    "log": "b2_build.log"
+  },
+  "original_probes": {
+    "returncode": 0,
+    "seconds": 4.92,
+    "log": "original_callers.log",
+    "axioms": {
+      "IsCutBessel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.norm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "accepted_source_replay": {
+    "returncode": 0,
+    "seconds": 11.14,
+    "log": "accepted_source_replay.log",
+    "axioms": {
+      "Gauge.lintegral_floorWeight_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_floorWeight_le_directChart_bridge": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_selfNorm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_selfNorm_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_positions_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_positions_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "markers": {
+      "RUN85_SELF:": true,
+      "RUN85_POSITIONS:": true
+    },
+    "object_sha256": "902f57571e47bc7c2a78e1de44514f4d7a59122238ca6728472fdf62803f10c3"
+  },
+  "shell_compile": {
+    "returncode": 0,
+    "seconds": 5.28,
+    "log": "shell_compile.log",
+    "axioms": {
+      "IsCutBessel.formConst_mul_lintegral_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.formConst_mul_lintegral_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "markers": {
+      "RUN90_SHELL: IsCutBessel.formConst_mul_lintegral_le_via_directChart": true,
+      "RUN90_SHELL: IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": true
+    },
+    "object_sha256": "ff60aeb9ba8de9a11f291e8f0384182c2b56330ed52e901ede6e8c4035bcfa7b"
+  },
+  "caller_compile": {
+    "returncode": 1,
+    "seconds": 4.68,
+    "log": "caller_compile.log",
+    "axioms": {
+      "IsCutBessel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.norm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": false,
+    "markers": {
+      "RUN92_CALLER: IsCutBessel.lintegral_formMajorant_ne_top_via_directChart": false,
+      "RUN92_CALLER: IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart": false,
+      "RUN92_CALLER: IsCutBessel.norm_floorForm_le_via_directChart": false,
+      "RUN92_CALLER: IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart": false,
+      "RUN92_CALLER: IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart": false
+    }
+  },
+  "failure": "caller_compile failed"
+}

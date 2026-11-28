@@ -1,0 +1,89 @@
+{
+  "scope": "new peer helper replay; original caller axioms checked separately",
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 2.57,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 5.53,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.36,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 1.62,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.26,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 70.2,
+      "log": "mathlib_cache.log"
+    },
+    "b2_build": {
+      "returncode": 0,
+      "seconds": 1342.29,
+      "log": "b2_build.log"
+    },
+    "original_callers": {
+      "returncode": 0,
+      "seconds": 4.92,
+      "log": "original_callers.log",
+      "axioms": {
+        "IsCutBessel.lintegral_formMajorant_ne_top": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IsCutBessel.norm_floorForm_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IntegralPlace.IsStdLevel.enorm_floorForm_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    }
+  },
+  "new_Lean_execution": true,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": false,
+  "failure": "caller_compile failed"
+}

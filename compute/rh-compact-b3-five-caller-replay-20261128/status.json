@@ -1,0 +1,147 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: caller_compile failed",
+  "returncode": 1,
+  "wall_s": 1468.94,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py\", line 199, in <module>\n    if __name__==\"__main__\": main()\n                             ^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py\", line 190, in main\n    native.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 180, in main\n    rejected = not run(\"negative_missing_projector_guard\", [\"lake\", \"env\", \"lean\", bad],\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 105, in run\n    ans = step(argv, cwd, env, out / (label + \".log\"), min(seconds, remaining - 5))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py\", line 184, in step\n    shell_stage(cwd,env,out,state,save,base,generated)\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py\", line 113, in shell_stage\n    compile_file(callers,env,ROOTS,\"caller_compile\",[\"RUN92_CALLER: \"+n for n in ROOTS[1::2]])\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py\", line 105, in compile_file\n    native.require(receipt[\"returncode\"]==0 and receipt[\"axiom_audit_ok\"] and all(receipt[\"markers\"].values()) and obj.is_file(),label+\" failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: caller_compile failed\n",
+  "id": "rh-compact-b3-five-caller-replay-20261128",
+  "question": "Replay immutable RUN92 real and finite finiteness and quantitative floor callers with the accepted direct-chart and shell proof sources in one pinned workspace; require five exact original-statement transports, ten axiom reports and ten constructor-inclusive graph roots with direct deltas and retained gauge, Parseval, inverse and majorant premises. Preserve indirect old paths and all failed stages; no Main, B3 root or RH closure claim.",
+  "requested_by": "GPT Landau lane; user continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py --out {out}",
+  "utc": "2026-11-28T04:29:39Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "a12acead2946b2b7c378ad86736ba09546ae39d3",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46102597741",
+  "outputs_committed": [
+    {
+      "path": "RHRun85.lean",
+      "bytes": 28912,
+      "sha256": "af3fcccf028a25f1ab42451091b1e52753261e4f54be88ee1d8ccd679176dbb7"
+    },
+    {
+      "path": "RHRun85.olean",
+      "bytes": 3839760,
+      "sha256": "902f57571e47bc7c2a78e1de44514f4d7a59122238ca6728472fdf62803f10c3"
+    },
+    {
+      "path": "RHRun90Shells.lean",
+      "bytes": 8371,
+      "sha256": "6c7a823af9b418b06584d141fe70ebc73340180304369f2366bb6d016a70489b"
+    },
+    {
+      "path": "RHRun90Shells.olean",
+      "bytes": 4269824,
+      "sha256": "ff60aeb9ba8de9a11f291e8f0384182c2b56330ed52e901ede6e8c4035bcfa7b"
+    },
+    {
+      "path": "RHRun92Callers.lean",
+      "bytes": 9026,
+      "sha256": "558082211a1f4a556e02c532473e7670f1885f1225c29afc8fe98882208f2b45"
+    },
+    {
+      "path": "accepted_source_replay.log",
+      "bytes": 3454,
+      "sha256": "b7f2d3ee233cee1491a8529517af5629d532751ac42ac5ecafd88c87533cc0d9"
+    },
+    {
+      "path": "b2_build.log",
+      "bytes": 21042,
+      "sha256": "f2dc5339297f215352e102db5c401a98b771b7b74b769fa5a7adf9066641a2a4"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 2073,
+      "sha256": "bf2a66f62fb6c2a4a9c5b92b3a893a39820c38b486edbf47bca1ae5b8bd2b8c5"
+    },
+    {
+      "path": "caller_compile.log",
+      "bytes": 3871,
+      "sha256": "6498e54b14b64a6fbb73ab4db6571bd9a06c93c032dee54110d084c78e083938"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "bbc7db2a1ae5c9ead6953a152e98088c3e53642f4e2505a89f375088948dc7e5"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 989,
+      "sha256": "77a5a6a06e2ac2d0d0eff3a40a3436a76228f8acd2de20e07bdcf1b7c28e036f"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 9572,
+      "sha256": "10226200edff7039183d41ef0cf8809faf78abd617f78721de68bd12034e7537"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "6be0ada5dc849d835701c5894d47d73de8a19f212654bdc183cb01b476ccf661"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 528,
+      "sha256": "694afa473ba6519b810fb6f7ba3d89f3bac0c1a43813977bb42ce5fd026e6a3a"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1082,
+      "sha256": "7dc58619fb9f11c28999131651d5e7f740e5d08dde4f9937ea1d3e11c11ba63d"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "68a35f6cae648d15f83392517b4c04b97d36d43951ec230bcbc6bb14a86fbaf6"
+    },
+    {
+      "path": "run93_caller_receipt.json",
+      "bytes": 5371,
+      "sha256": "3e035871f9e50b0b286960be95919ff9004a959e5adab97b33b53a07eca36fdc"
+    },
+    {
+      "path": "shell_compile.log",
+      "bytes": 684,
+      "sha256": "ff5e5b77cdcd39cbe42b48872e42b0db28c8036a0b980d5353a30c6e4ac35777"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

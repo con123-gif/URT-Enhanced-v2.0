@@ -1,0 +1,24 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "peers": {},
+  "source_blobs": {
+    "New/RealPlace/LocalTheorem.lean": "671350f97491467f09b80eafa0df13685dd8ddc6",
+    "New/RealPlace/WeightPlancherel.lean": "65619443ca5867bf45af038448a16dc1262103fd",
+    "New/RealPlace/LevelGauge.lean": "05b4a710e4192b2f3d289a8e52161a6d12a2866e",
+    "New/RealPlace/ComplexShells.lean": "351cfdf7fa54238f79b1b950c3532feef1f74f53",
+    "New/Filling/TopFloor.lean": "9762970967aef90b3a4e025b7f2891d892c70111"
+  },
+  "original_theorems": [
+    "IsCutBessel.lintegral_formMajorant_ne_top",
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top",
+    "IsCutBessel.norm_floorForm_le",
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le",
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term"
+  ],
+  "new_Lean_execution": false,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "lean_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d"
+}

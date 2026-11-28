@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py", line 199, in <module>
+    if __name__=="__main__": main()
+                             ^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py", line 190, in main
+    native.main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py", line 180, in main
+    rejected = not run("negative_missing_projector_guard", ["lake", "env", "lean", bad],
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py", line 105, in run
+    ans = step(argv, cwd, env, out / (label + ".log"), min(seconds, remaining - 5))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py", line 184, in step
+    shell_stage(cwd,env,out,state,save,base,generated)
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py", line 113, in shell_stage
+    compile_file(callers,env,ROOTS,"caller_compile",["RUN92_CALLER: "+n for n in ROOTS[1::2]])
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py", line 105, in compile_file
+    native.require(receipt["returncode"]==0 and receipt["axiom_audit_ok"] and all(receipt["markers"].values()) and obj.is_file(),label+" failed")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: caller_compile failed
