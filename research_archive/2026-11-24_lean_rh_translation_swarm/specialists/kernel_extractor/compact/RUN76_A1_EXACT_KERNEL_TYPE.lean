@@ -264,7 +264,7 @@ run_cmd do
       for x in xs do
         let d ← Lean.Meta.getFVarLocalDecl x
         let n := d.userName.eraseMacroScopes.toString
-        Lean.logInfo m!"RUN76_BINDER|{n}|{d.binderInfo}|{← Lean.Meta.ppExpr d.type}"
+        Lean.logInfo m!"RUN76_BINDER|{n}|{reprStr d.binderInfo}|{← Lean.Meta.ppExpr d.type}"
         if required.contains n then
           if found.contains n then
             Lean.throwError "RUN76 duplicate expected binder"
@@ -372,11 +372,11 @@ run_cmd do
   simpa [δ, A, hβ, hz, ← mul_assoc] using Hc
 "#
     let script := "by\n  intro " ++ String.intercalate " " names.toList ++ "\n" ++ tacticBody
-    let syntax ← match Lean.Parser.runParserCategory (← Lean.getEnv) `term script with
+    let parsed ← match Lean.Parser.runParserCategory (← Lean.getEnv) `term script with
       | .ok stx => pure stx
       | .error msg => Lean.throwError "RUN76 parser: {msg}"
     let pr ← Lean.Elab.Term.withDeclName freshName <|
-      Lean.Elab.Term.elabTermEnsuringType syntax (some original.type) (implicitLambda := false)
+      Lean.Elab.Term.elabTermEnsuringType parsed (some original.type) (implicitLambda := false)
     Lean.Elab.Term.synthesizeSyntheticMVarsNoPostponing
     let pr ← Lean.instantiateMVars pr
     if pr.hasMVar || pr.hasFVar then
