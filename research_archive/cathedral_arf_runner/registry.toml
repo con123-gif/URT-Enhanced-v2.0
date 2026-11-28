@@ -3808,3 +3808,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Galois lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-editor-polar-mean-20261128"
+question = "Native replay immutable strict polar mean and original-statement bridge, using proven pinned bootstrap and only OneSidedCriterion source closure; require three constructor-inclusive original/mean/bridge root audits, exact original type, standard axioms, absence of circular old theorem and retained moment supplier. Preserve first failure. No Main, A/B/C, arithmetic premise or RH closure."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT proof editor; continuation directive"
+claim = "independent"
