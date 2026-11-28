@@ -3862,3 +3862,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 185
 requested_by = "GPT positivity geometry lane; continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-b3-budget-fixedlines-20261128"
+question = "Kernel-check RUN100 exact finite-shell budget and bottom proof at the pinned compact source with new five-root graph; then separately check exact original-statement FixedLines one-prime caller at t=2*k/3+1 retaining b^(6*k), using accepted direct-chart source. Preserve both original and replacement graph/axiom evidence and separate receipts; no Main or RH closure."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN101_BUDGET_AND_FIXEDLINES_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT Landau lane; continuation directive"
+claim = "independent"
