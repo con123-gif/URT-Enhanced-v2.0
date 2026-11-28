@@ -123,6 +123,9 @@ This turns the missing upper bound into a precise combinatorial statement:
 
 An independent exhaustive challenge over **all** symmetric binary matrices through `k=6` found
 exactly `2^k` matrices satisfying the prefix-interlacing conditions, one for every binary word.
+The executable certificate is `A395110_interlacing_matrix_certificate_run24.py`, SHA-256
+`3c69d7efb3d555ef2499df0006b2953d6ebceae4535374bd34a492548c0a06d5`; its actual process exit was
+zero and it printed the exact counts `2, 4, 8, 16, 32, 64`.
 That finite challenge supports the isolated lemma but is not substituted for its missing general
 proof.  The new derivation is general and exact; the original A395110 conjecture remains open because
 dihedral symmetry, binary directional curvature, and the general matrix-uniqueness lemma are not yet
