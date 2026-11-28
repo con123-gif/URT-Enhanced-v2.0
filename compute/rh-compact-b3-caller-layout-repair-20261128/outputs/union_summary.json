@@ -1,0 +1,112 @@
+{
+  "roots": [
+    "IsCutBessel.lintegral_formMajorant_ne_top",
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart",
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top",
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart",
+    "IsCutBessel.norm_floorForm_le",
+    "IsCutBessel.norm_floorForm_le_via_directChart",
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le",
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart",
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term",
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart"
+  ],
+  "nodes": 73916,
+  "edges": 2104697,
+  "missing": 0,
+  "mask_histogram": {
+    "51": 28708,
+    "1023": 44210,
+    "255": 76,
+    "243": 9,
+    "3": 10,
+    "819": 14,
+    "341": 8,
+    "1": 1,
+    "17": 1,
+    "682": 13,
+    "34": 1,
+    "2": 1,
+    "972": 734,
+    "12": 9,
+    "1020": 1,
+    "204": 17,
+    "4": 1,
+    "324": 1,
+    "8": 1,
+    "648": 1,
+    "48": 22,
+    "240": 9,
+    "16": 1,
+    "32": 1,
+    "192": 40,
+    "64": 1,
+    "128": 1,
+    "768": 22,
+    "256": 1,
+    "512": 1
+  },
+  "per_root": {
+    "IsCutBessel.lintegral_formMajorant_ne_top": {
+      "exit": 0,
+      "nodes": 73037,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart": {
+      "exit": 0,
+      "nodes": 73042,
+      "missing": 0,
+      "log": "audit-1.json"
+    },
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": {
+      "exit": 0,
+      "nodes": 45057,
+      "missing": 0,
+      "log": "audit-2.json"
+    },
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart": {
+      "exit": 0,
+      "nodes": 45062,
+      "missing": 0,
+      "log": "audit-3.json"
+    },
+    "IsCutBessel.norm_floorForm_le": {
+      "exit": 0,
+      "nodes": 73059,
+      "missing": 0,
+      "log": "audit-4.json"
+    },
+    "IsCutBessel.norm_floorForm_le_via_directChart": {
+      "exit": 0,
+      "nodes": 73064,
+      "missing": 0,
+      "log": "audit-5.json"
+    },
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le": {
+      "exit": 0,
+      "nodes": 45106,
+      "missing": 0,
+      "log": "audit-6.json"
+    },
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart": {
+      "exit": 0,
+      "nodes": 45111,
+      "missing": 0,
+      "log": "audit-7.json"
+    },
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": {
+      "exit": 0,
+      "nodes": 44991,
+      "missing": 0,
+      "log": "audit-8.json"
+    },
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart": {
+      "exit": 0,
+      "nodes": 44996,
+      "missing": 0,
+      "log": "audit-9.json"
+    }
+  },
+  "naive_repeated_nodes": 562525
+}

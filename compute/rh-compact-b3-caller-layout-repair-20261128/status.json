@@ -1,0 +1,258 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: RUN94 source build failed",
+  "returncode": 1,
+  "wall_s": 3943.21,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN95_CALLER_LAYOUT_REPAIR.py\", line 186, in <module>\n    if __name__==\"__main__\": main()\n                             ^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN95_CALLER_LAYOUT_REPAIR.py\", line 184, in main\n    r.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py\", line 190, in main\n    native.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 180, in main\n    rejected = not run(\"negative_missing_projector_guard\", [\"lake\", \"env\", \"lean\", bad],\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py\", line 105, in run\n    ans = step(argv, cwd, env, out / (label + \".log\"), min(seconds, remaining - 5))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py\", line 184, in step\n    shell_stage(cwd,env,out,state,save,base,generated)\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN95_CALLER_LAYOUT_REPAIR.py\", line 181, in continuation\n    follow94(root,env,out,fixed94,base)\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN95_CALLER_LAYOUT_REPAIR.py\", line 106, in follow94\n    native.require(result[\"build\"][\"returncode\"]==0,\"RUN94 source build failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: RUN94 source build failed\n",
+  "id": "rh-compact-b3-caller-layout-repair-20261128",
+  "question": "Repair the actual RUN93 five-caller command-layout parser failure, preserving immutable source and failed receipt; verify five exact replacement types, standard axioms and ten-root audit, then conditionally compile and audit RUN94 five system/moment consumers in the same pinned workspace with separate receipt. No Main, B3/B4 root or RH closure claim.",
+  "requested_by": "GPT Landau lane; continuation directive",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN95_CALLER_LAYOUT_REPAIR.py --out {out}",
+  "utc": "2026-11-28T08:24:36Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "c8c85fdcf884dec3e5b7941424f7fe3dc84ffe95",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46120566249",
+  "outputs_committed": [
+    {
+      "path": "RHRun85.lean",
+      "bytes": 28912,
+      "sha256": "af3fcccf028a25f1ab42451091b1e52753261e4f54be88ee1d8ccd679176dbb7"
+    },
+    {
+      "path": "RHRun85.olean",
+      "bytes": 3839760,
+      "sha256": "902f57571e47bc7c2a78e1de44514f4d7a59122238ca6728472fdf62803f10c3"
+    },
+    {
+      "path": "RHRun90Shells.lean",
+      "bytes": 8371,
+      "sha256": "6c7a823af9b418b06584d141fe70ebc73340180304369f2366bb6d016a70489b"
+    },
+    {
+      "path": "RHRun90Shells.olean",
+      "bytes": 4269824,
+      "sha256": "ff60aeb9ba8de9a11f291e8f0384182c2b56330ed52e901ede6e8c4035bcfa7b"
+    },
+    {
+      "path": "RHRun92Callers.lean",
+      "bytes": 9011,
+      "sha256": "3321107d4bf2463a60b25188a5aca83612a6f6a113ed63eea721caedbbe45077"
+    },
+    {
+      "path": "RHRun92Callers.olean",
+      "bytes": 3443192,
+      "sha256": "9015f1b4cb15d8d39283e3d954e2da43cea55974b089285d9b6a4bf1743b37af"
+    },
+    {
+      "path": "RHRun93CallerGraph.lean",
+      "bytes": 8902,
+      "sha256": "debe81d19d1b808104a70cd6a8989e73f4c1e9a40f61d6f2d910500d7bbab6b9"
+    },
+    {
+      "path": "RUN95_fixed92.lean",
+      "bytes": 9011,
+      "sha256": "3321107d4bf2463a60b25188a5aca83612a6f6a113ed63eea721caedbbe45077"
+    },
+    {
+      "path": "RUN95_fixed94.lean",
+      "bytes": 9219,
+      "sha256": "dbe6ad164b8c3b0a68236c8bbdef6fa6651958584493e00cc3a4cc517d2355b0"
+    },
+    {
+      "path": "accepted_source_replay.log",
+      "bytes": 3454,
+      "sha256": "b7f2d3ee233cee1491a8529517af5629d532751ac42ac5ecafd88c87533cc0d9"
+    },
+    {
+      "path": "audit-0.json",
+      "bytes": 460,
+      "sha256": "74c5605315ab10367c7b7c2c6540ffcf3831c9d6d6d0ea5da0f88457f85ca28b"
+    },
+    {
+      "path": "audit-1.json",
+      "bytes": 460,
+      "sha256": "4e187bb2359d3a0d3c9acc475bc83278a1875279657ab6faeb8db343c6ff366d"
+    },
+    {
+      "path": "audit-2.json",
+      "bytes": 460,
+      "sha256": "03d532876bb16c6b2c9d07fb4f3ab75080f4e04878fa2a65a8b069c9b0f8a02e"
+    },
+    {
+      "path": "audit-3.json",
+      "bytes": 460,
+      "sha256": "803a655a18e8aaa6c973521d5384b833099f8ecc1cb1385afc426ba4236f819e"
+    },
+    {
+      "path": "audit-4.json",
+      "bytes": 460,
+      "sha256": "ee24ef4dc35590ee5701eb4be432cb7fd368d59800d21b819ec01c9346e6a063"
+    },
+    {
+      "path": "audit-5.json",
+      "bytes": 460,
+      "sha256": "71211fee9c6ce630a3b2455b721f1d9c00c1656b77d3f54d79972e191384c232"
+    },
+    {
+      "path": "audit-6.json",
+      "bytes": 460,
+      "sha256": "79d11d2adde79e15fa378d36a2d790c01c14fd4ab1a75a1d9e5589e6a289d1f6"
+    },
+    {
+      "path": "audit-7.json",
+      "bytes": 460,
+      "sha256": "2962d67aa6c52131e5f920aed989dedfba14f663f446e718ffedbe15be3efcb1"
+    },
+    {
+      "path": "audit-8.json",
+      "bytes": 460,
+      "sha256": "33435afbcfba15e8a980dec98ee8900264669ec8cfc0984e422d7be327d5b098"
+    },
+    {
+      "path": "audit-9.json",
+      "bytes": 460,
+      "sha256": "f9430d2b4112e758ad7914d8421891295a5bcb52dc6e7b6c0f14d334a8958fc9"
+    },
+    {
+      "path": "b2_build.log",
+      "bytes": 21049,
+      "sha256": "57e023e5fca4183c7afe8a8db194276c9989aded690af913dd16e44b0533d2f4"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 2079,
+      "sha256": "d8144be9d9da270a74073692ac0f50b676941c7bca955221520f9048b722d99c"
+    },
+    {
+      "path": "caller_compile.log",
+      "bytes": 1738,
+      "sha256": "7810c4062f2ef0be5d948153ab9b846ce32a089caa8d3dee61eda40031ebfcda"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "f86aa479e999be1dfdd72c9a4bbab8693e2f94bedc9ac702e1a162ae8b46b109"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "graph.log",
+      "bytes": 1140,
+      "sha256": "2fce5d1f00c55ef855836a73944d2b722adb4f068e92fb9c884984f93e5fadd2"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 989,
+      "sha256": "77a5a6a06e2ac2d0d0eff3a40a3436a76228f8acd2de20e07bdcf1b7c28e036f"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 8190,
+      "sha256": "96bc2f00c2d80d11973eb77beea893fab01f67c0f245ed415d1f4822ba85241f"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "7c0ba4c6ab77445d5c7c61d8cc32feb0d699ba5f2e3446faf062b62c7a31b442"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 528,
+      "sha256": "694afa473ba6519b810fb6f7ba3d89f3bac0c1a43813977bb42ce5fd026e6a3a"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 1082,
+      "sha256": "7dc58619fb9f11c28999131651d5e7f740e5d08dde4f9937ea1d3e11c11ba63d"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "54bf4c9dfe31126e1207c3f59d650da17e4cec02350705da3778f3305ad39496"
+    },
+    {
+      "path": "root_audits.json",
+      "bytes": 1439,
+      "sha256": "9529db9b03614e8aa33b31bc210192b6c47b5fd450ffe71d2f7fa67146fe5a33"
+    },
+    {
+      "path": "run93_caller_receipt.json",
+      "bytes": 14151,
+      "sha256": "6d61029bea0bc24a4efc9d492311acf3802d6ff05a8d25ed8858f9518bce804d"
+    },
+    {
+      "path": "run94/build.log",
+      "bytes": 85684,
+      "sha256": "bd6c207ec92933325318ab13979402e6132aab8fc1b4ac277a511fdef71c2a18"
+    },
+    {
+      "path": "run94/run94_receipt.json",
+      "bytes": 989,
+      "sha256": "dab38ee0acc5a9cf39d6d2801aec775794fd04d1de6ee951f4575f6e186a93ef"
+    },
+    {
+      "path": "run95_layout_receipt.json",
+      "bytes": 251,
+      "sha256": "7047930793dda19937853d4e1e73f2bcca35483b7b1805a038a46ea98b94080e"
+    },
+    {
+      "path": "shell_compile.log",
+      "bytes": 684,
+      "sha256": "ff5e5b77cdcd39cbe42b48872e42b0db28c8036a0b980d5353a30c6e4ac35777"
+    },
+    {
+      "path": "union_summary.json",
+      "bytes": 2728,
+      "sha256": "058e9b00fef3fc0ef7753f6a0d7ee097f4a2d9b8ff65d211679732f675c312e2"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "root_membership.jsonl",
+      "bytes": 6992213,
+      "sha256": "b41ef21fdfdf4cf6682393bdd9cc421e46121fc86ef1e020947361ad592eb619"
+    },
+    {
+      "path": "ten_roots.jsonl",
+      "bytes": 147231472,
+      "sha256": "ca27f114532a382c0ed2551b8a0adfc3f5c0a1535b6edb63e17032d57c41db1c"
+    }
+  ]
+}

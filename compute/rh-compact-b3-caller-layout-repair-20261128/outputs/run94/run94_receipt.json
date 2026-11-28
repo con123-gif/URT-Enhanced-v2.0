@@ -1,0 +1,28 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "original_blob": "36a24847dffcbd3fc5bec568582342171efb2e5e",
+  "generated_blob": "76e6ce8f976a118a4876f4828687537d33c0ed6d",
+  "roots": [
+    "hasBandLimits_of_isCutBessel",
+    "hasBandLimits_of_isCutBessel_via_directChart",
+    "Filling.IsFillingLevel.exists_finite_sieveSystem",
+    "Filling.IsFillingLevel.exists_finite_sieveSystem_via_directChart",
+    "Filling.re_trace_besselS_le",
+    "Filling.re_trace_besselS_le_via_directChart",
+    "Filling.energy_fixingSet_le",
+    "Filling.energy_fixingSet_le_via_directChart",
+    "Data.exists_besselSystem",
+    "Data.exists_besselSystem_via_directChart"
+  ],
+  "all_requested_checks_ok": false,
+  "full_RH_replay": false,
+  "human_assembly_verified": false,
+  "new_Lean_execution": false,
+  "build": {
+    "returncode": 124,
+    "seconds": 2700.05,
+    "log": "build.log"
+  },
+  "failure": "RUN94 source build failed"
+}

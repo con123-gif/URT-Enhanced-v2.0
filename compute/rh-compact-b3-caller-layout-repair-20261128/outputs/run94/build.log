@@ -1,0 +1,1280 @@
+⚠ [9047/9471] Replayed Lib.General.LinearAlgebra.Base
+warning: src/Lib/General/LinearAlgebra/Base.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9048/9471] Built Lib.General.Algebra.AdicRingHomExt (7.3s)
+warning: src/Lib/General/Algebra/AdicRingHomExt.lean:137:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9056/9471] Built Lib.Cohomology.Etale.Defs (8.9s)
+✔ [9057/9471] Built Lib.General.LinearAlgebra.SubmersionZero (4.0s)
+ℹ [9058/9471] Replayed Lib.General.NumberTheory.Embeddings
+info: src/Lib/General/NumberTheory/Embeddings.lean:12:8: Try these:
+  [apply] [grind .] for pattern: [@star (RingHom #3 `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+  [apply] [grind
+    =>] for pattern: [IsTotallyComplex #3 #2, @star (RingHom _ `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0]
+⚠ [9059/9471] Replayed Lib.Adelic.Adeles.AdeleTopology
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:13:18: `multiplicity_eq_one_of_not_finiteMultiplicity` does not have the `[simp]` attribute
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:31:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/Adelic/Adeles/AdeleTopology.lean:121:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9062/9471] Built Lib.General.Algebra.SuccessiveApprox (5.1s)
+⚠ [9065/9471] Replayed Lib.Adelic.Hecke.HeckeBasic
+warning: src/Lib/Adelic/Hecke/HeckeBasic.lean:66:73: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9067/9471] Replayed Lib.General.LinearAlgebra.HaarUnique
+warning: src/Lib/General/LinearAlgebra/HaarUnique.lean:82:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9068/9471] Replayed Lib.General.LinearAlgebra.ValuedMatrix
+warning: src/Lib/General/LinearAlgebra/ValuedMatrix.lean:73:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9071/9471] Built Lib.Cohomology.Etale.TestCohomology (4.4s)
+✔ [9072/9471] Built Lib.General.LinearAlgebra.CommonEigenvectors (8.8s)
+⚠ [9073/9471] Built Lib.General.Combinatorics.Average (11s)
+warning: src/Lib/General/Combinatorics/Average.lean:63:38: `SetLike.le_def` has been deprecated: Use `IsConcreteLE.le_iff` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.le_def` to `IsConcreteLE.le_iff x`).
+✔ [9076/9471] Built Lib.ClassField.Places.LocalDefs (4.2s)
+✔ [9077/9471] Built Lib.General.NumberTheory.QuadField (7.5s)
+⚠ [9079/9471] Replayed Lib.General.LinearAlgebra.HuaIntegral
+warning: src/Lib/General/LinearAlgebra/HuaIntegral.lean:26:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9080/9471] Replayed Lib.Adelic.QuotientMeasure.Packing
+warning: src/Lib/Adelic/QuotientMeasure/Packing.lean:110:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9082/9471] Replayed Lib.Adelic.Hecke.ClassMean
+warning: src/Lib/Adelic/Hecke/ClassMean.lean:69:58: This simp argument is unused:
+  Set.subset_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [card_preimage, filter_eq_self.2, ← mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9084/9471] Replayed Lib.Weil.Construction.Model
+warning: src/Lib/Weil/Construction/Model.lean:91:73: `LinearIsometry.lipschitz` has been deprecated: Use `LinearIsometry.lipschitzWith` instead
+⚠ [9085/9471] Built Lib.Cohomology.Etale.TestRings (6.6s)
+warning: src/Lib/Cohomology/Etale/TestRings.lean:47:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9086/9471] Built Lib.General.Algebra.RingActions (8.2s)
+ℹ [9087/9471] Built Lib.Shimura.Uniformisation.LieExponential (30s)
+info: src/Lib/Shimura/Uniformisation/LieExponential.lean:247:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9088/9471] Built Lib.General.Groups.VirtualCharacters (5.7s)
+✔ [9089/9471] Built Lib.ClassField.Places.ProfiniteGalois (5.7s)
+⚠ [9092/9471] Replayed Lib.ClassField.HeckeL.EulerProduct
+warning: src/Lib/ClassField/HeckeL/EulerProduct.lean:281:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9093/9471] Built Lib.General.LinearAlgebra.SmoothMatrices (34s)
+✔ [9094/9471] Built Lib.General.Groups.RatModInt (4.3s)
+⚠ [9095/9471] Replayed Lib.General.LinearAlgebra.ColumnLattices
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:17: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/General/LinearAlgebra/ColumnLattices.lean:156:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9098/9471] Replayed Lib.Adelic.QuotientMeasure.Unimodular
+info: src/Lib/Adelic/QuotientMeasure/Unimodular.lean:145:65: Try this:
+  [apply] field_simp
+✔ [9101/9471] Built Lib.Shimura.Uniformisation.Frames (5.9s)
+✔ [9102/9471] Built Lib.General.NumberTheory.QuadFieldSplitting (9.1s)
+✔ [9103/9471] Built Lib.Shimura.ComplexTheta.CanonicalMultiplier (9.3s)
+✔ [9104/9471] Built Lib.General.Groups.CentralProjections (6.5s)
+⚠ [9106/9471] Built Lib.PadicHodge.PeriodRings.CpIntegers (9.3s)
+warning: src/Lib/PadicHodge/PeriodRings/CpIntegers.lean:102:41: `Isometry.lipschitz` has been deprecated: Use `Isometry.lipschitzWith` instead
+✔ [9110/9471] Built Lib.ClassField.Places.CyclotomicCharacter (10s)
+⚠ [9111/9471] Built Lib.Adelic.Adeles.IdeleHilbert90 (23s)
+warning: src/Lib/Adelic/Adeles/IdeleHilbert90.lean:177:60: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9118/9471] Built Lib.ClassField.GaloisCohomology.DiscreteUnits (25s)
+⚠ [9119/9471] Replayed Lib.Adelic.Witt.FrameAction
+warning: src/Lib/Adelic/Witt/FrameAction.lean:131:95: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9121/9471] Built Lib.General.Groups.ArtinDefs (7.4s)
+warning: src/Lib/General/Groups/ArtinDefs.lean:42:39: `nhds_basis_clopen` has been deprecated: Use `nhds_basis_isClopen` instead
+
+Note: The updated constant has a different type:
+  ∀ {X : Type u_1} [inst : TopologicalSpace X] [ZeroDimensionalSpace X] (x : X),
+    (nhds x).HasBasis (fun s ↦ IsClopen s ∧ x ∈ s) _root_.id
+instead of
+  ∀ {X : Type u_1} [inst : TopologicalSpace X] [ZeroDimensionalSpace X] (x : X),
+    (nhds x).HasBasis (fun s ↦ x ∈ s ∧ IsClopen s) _root_.id
+✔ [9122/9471] Built Lib.Analytic.Landau.PolarLandau (13s)
+✔ [9123/9471] Built Lib.General.Algebra.ZerosCostDegree (19s)
+✔ [9124/9471] Built Lib.Shimura.Uniformisation.ModuliPoint (4.2s)
+⚠ [9125/9471] Replayed Lib.Adelic.Unitary.CongruenceLevel
+warning: src/Lib/Adelic/Unitary/CongruenceLevel.lean:51:55: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9126/9471] Built Lib.PadicHodge.PeriodRings.Ainf (11s)
+✔ [9128/9471] Built Lib.General.Groups.IrreducibleCharacters (13s)
+✔ [9131/9471] Built Lib.ClassField.GaloisCohomology.CupProduct (8.4s)
+✔ [9132/9471] Built Lib.ClassField.Places.Places (8.6s)
+⚠ [9138/9471] Replayed Lib.Weil.Construction.GaussSumSign
+warning: src/Lib/Weil/Construction/GaussSumSign.lean:18:40: `IsIntegral.exists_int_iff_exists_rat` has been deprecated: Use `IsIntegral.mem_range_ratCast_iff` instead
+ℹ [9140/9471] Replayed Lib.Weil.Fock.FockAction
+info: src/Lib/Weil/Fock/FockAction.lean:49:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9141/9471] Built Lib.Adelic.Cartan.ProjectiveModules (33s)
+warning: src/Lib/Adelic/Cartan/ProjectiveModules.lean:67:27: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/Adelic/Cartan/ProjectiveModules.lean:105:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9142/9471] Built Lib.Shimura.ComplexTheta.ThetaDimension (33s)
+✔ [9143/9471] Built Lib.GLn.SchurModule.Nabla (15s)
+⚠ [9144/9471] Replayed Lib.General.NumberTheory.UpsilonValues
+warning: src/Lib/General/NumberTheory/UpsilonValues.lean:60:18: `multiplicity_eq_one_of_not_finiteMultiplicity` does not have the `[simp]` attribute
+✔ [9145/9471] Built New.Endgame.PrimeError (17s)
+✔ [9146/9471] Built Lib.PadicHodge.PeriodRings.ThetaKernel (13s)
+ℹ [9147/9471] Built Lib.ClassField.GreenbergWiles.ExtendCharacter (23s)
+info: src/Lib/ClassField/GreenbergWiles/ExtendCharacter.lean:33:75: Try this:
+  [apply] ring_nf!
+  
+  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.
+    
+  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9149/9471] Built Lib.LocalGL.Green.MackeyFormula (41s)
+ℹ [9155/9471] Replayed Lib.Weil.Fock.FockTensor
+info: src/Lib/Weil/Fock/FockTensor.lean:61:48: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9156/9471] Built Lib.ClassField.Places.LocalFrobenius (8.2s)
+⚠ [9158/9471] Built Lib.ClassField.Places.AdeleNorm (15s)
+warning: src/Lib/ClassField/Places/AdeleNorm.lean:106:4: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9159/9471] Built Lib.CM.Sigma.SigmaFunction (17s)
+warning: src/Lib/CM/Sigma/SigmaFunction.lean:130:32: This simp argument is unused:
+  image_pair
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Submodule.map_span, SetLike.ext_iff, Submodule.mem_span_pair, ← forall_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9160/9471] Built Lib.GLn.SchurModule.Bordering (14s)
+⚠ [9161/9471] Built New.Data.Different (21s)
+info: src/New/Data/Different.lean:158:64: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/New/Data/Different.lean:342:18: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9163/9471] Replayed Lib.DiscreteSeries.Haar.HaarColumnChart
+warning: src/Lib/DiscreteSeries/Haar/HaarColumnChart.lean:54:50: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/DiscreteSeries/Haar/HaarColumnChart.lean:55:36: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/DiscreteSeries/Haar/HaarColumnChart.lean:55:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9164/9471] Built Lib.PadicHodge.PeriodRings.AmaxStructure (26s)
+⚠ [9165/9471] Replayed Lib.Adelic.Adeles.AdelicModulus
+warning: src/Lib/Adelic/Adeles/AdelicModulus.lean:21:59: This simp argument is unused:
+  toAdd_unzero_eq_log
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [FinitePlace.norm_def, WithZeroMulInt.toNNReal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9167/9471] Built Lib.LocalGL.Green.InductionMean (21s)
+⚠ [9168/9471] Replayed Lib.DiscreteSeries.Bruhat.BigCell
+warning: src/Lib/DiscreteSeries/Bruhat/BigCell.lean:338:15: `measurable_pi_lambda` has been deprecated: Use `Measurable.of_eval` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵a̵s̵u̵r̵a̵b̵l̵e̵_̵p̵i̵_̵l̵a̵m̵b̵d̵a̵M̲e̲a̲s̲u̲r̲a̲b̲l̲e̲.̲o̲f̲_̲e̲v̲a̲l̲
+warning: src/Lib/DiscreteSeries/Bruhat/BigCell.lean:338:15: `measurable_pi_lambda` has been deprecated: Use `Measurable.of_eval` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵a̵s̵u̵r̵a̵b̵l̵e̵_̵p̵i̵_̵l̵a̵m̵b̵d̵a̵M̲e̲a̲s̲u̲r̲a̲b̲l̲e̲.̲o̲f̲_̲e̲v̲a̲l̲
+warning: src/Lib/DiscreteSeries/Bruhat/BigCell.lean:338:36: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9169/9471] Built Lib.ClassField.Places.LocalExtension (8.4s)
+✔ [9170/9471] Built Lib.GaloisRep.BaseChange.BaseChangePlaces (10s)
+✔ [9171/9471] Built Lib.ClassField.HeckeCharacter.CharacterLevels (7.4s)
+ℹ [9172/9471] Built Lib.Weil.Fock.MixedFockModel (22s)
+info: src/Lib/Weil/Fock/MixedFockModel.lean:37:16: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/Lib/Weil/Fock/MixedFockModel.lean:113:47: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/Lib/Weil/Fock/MixedFockModel.lean:147:38: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [9173/9471] Built Lib.Shimura.GoodReduction.ThetaOrthogonality (26s)
+info: src/Lib/Shimura/GoodReduction/ThetaOrthogonality.lean:147:85: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9174/9471] Built Lib.CM.Sigma.CurveTheta (36s)
+warning: src/Lib/CM/Sigma/CurveTheta.lean:234:19: This simp argument is unused:
+  image_pair
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledIdeal, map_span, span_mul_span]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9175/9471] Built Lib.PadicHodge.PeriodRings.BdRPlus (9.9s)
+⚠ [9176/9471] Built Lib.GLn.SchurModule.Interlacing (27s)
+warning: src/Lib/GLn/SchurModule/Interlacing.lean:39:21: This simp argument is unused:
+  coeff_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ψ, aevalTower, eval₂_eq, b, -pow_ite, -Prod.mk.injEq, prod_pow_eq_pow_sum, -map_aeval, ↓if_mem_support,
+    Polynomial.coeff_X_pow_mul', ← Polynomial.comp_eq_aeval]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9178/9471] Replayed Lib.DiscreteSeries.Haar.SphereFibreIntegral
+info: src/Lib/DiscreteSeries/Haar/SphereFibreIntegral.lean:35:74: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/DiscreteSeries/Haar/SphereFibreIntegral.lean:28:53: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/DiscreteSeries/Haar/SphereFibreIntegral.lean:33:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9179/9471] Built Lib.DiscreteSeries.Theta.OscillatorDefs (21s)
+⚠ [9180/9471] Built Lib.DiscreteSeries.Rigidity.CasimirBound (23s)
+warning: src/Lib/DiscreteSeries/Rigidity/CasimirBound.lean:83:79: `SetLike.le_def` has been deprecated: Use `IsConcreteLE.le_iff` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.le_def` to `IsConcreteLE.le_iff x`).
+
+Hint: Replace the deprecated name:
+  l̵e̵_̵d̵e̵f̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲l̲e̲_̲i̲f̲f̲
+warning: src/Lib/DiscreteSeries/Rigidity/CasimirBound.lean:84:32: `SetLike.le_def` has been deprecated: Use `IsConcreteLE.le_iff` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.le_def` to `IsConcreteLE.le_iff x`).
+
+Hint: Replace the deprecated name:
+  l̵e̵_̵d̵e̵f̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲l̲e̲_̲i̲f̲f̲
+warning: src/Lib/DiscreteSeries/Rigidity/CasimirBound.lean:84:32: `SetLike.le_def` has been deprecated: Use `IsConcreteLE.le_iff` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.le_def` to `IsConcreteLE.le_iff x`).
+
+Hint: Replace the deprecated name:
+  l̵e̵_̵d̵e̵f̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲l̲e̲_̲i̲f̲f̲
+info: src/Lib/DiscreteSeries/Rigidity/CasimirBound.lean:108:17: Try this:
+  [apply] [grind =] for pattern: [@Neg.neg _ _ #0]
+info: src/Lib/DiscreteSeries/Rigidity/CasimirBound.lean:182:2: Try this:
+  [apply] field_simp
+✔ [9182/9471] Built Lib.Adelic.Adeles.MatrixApprox (6.3s)
+✔ [9185/9471] Built Lib.Adelic.Adeles.NormAbsValue (4.2s)
+✔ [9186/9471] Built Lib.LocalGL.Green.CuspidalFunction (20s)
+✔ [9187/9471] Built Lib.Weil.Unramified.HeckeGL (20s)
+✔ [9191/9471] Built Lib.ClassField.HeckeL.IdelicThetaSum (24s)
+✔ [9192/9471] Built Lib.ClassField.Places.UnramifiedCharacters (7.4s)
+ℹ [9193/9471] Built Lib.CM.Sigma.PadicSeriesDefs (16s)
+info: src/Lib/CM/Sigma/PadicSeriesDefs.lean:83:85: Try this:
+  [apply] field_simp [h0]
+⚠ [9194/9471] Built Lib.PadicHodge.PeriodRings.BdR (21s)
+warning: src/Lib/PadicHodge/PeriodRings/BdR.lean:131:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9196/9471] Built Lib.GLn.SchurModule.MinorBasis (32s)
+warning: src/Lib/GLn/SchurModule/MinorBasis.lean:36:11: This simp argument is unused:
+  coeff_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [HasLeadingTerm, sum, degree_le_iff, not_imp_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Lib/GLn/SchurModule/MinorBasis.lean:57:48: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9198/9471] Built Lib.Weil.Fock.FockHarmonicCoeff (36s)
+info: src/Lib/Weil/Fock/FockHarmonicCoeff.lean:34:79: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/Lib/Weil/Fock/FockHarmonicCoeff.lean:39:82: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [9199/9471] Replayed Lib.Adelic.Reduction.MinkowskiSecond
+info: src/Lib/Adelic/Reduction/MinkowskiSecond.lean:182:13: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9200/9471] Built Lib.DiscreteSeries.Rigidity.HighestVectors (12s)
+ℹ [9201/9471] Built Lib.General.LinearAlgebra.PartnerAlgebra (7.4s)
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind =] for pattern: [@Units.val #1 #0 (@OfNat.ofNat (Units _ _) `[1] _)]
+  [apply] [grind =_] for pattern: [@OfNat.ofNat #1 `[1] _]
+  [apply] [grind! .] for pattern: [@OfNat.ofNat (Units #1 #0) `[1] _]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try this:
+  [apply] [grind =] for pattern: [@det #4 #3 #2 #1 #0 (@OfNat.ofNat _ `[1] _)]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind =] for pattern: [@Units.val _ _ (@Inv.inv (Units _ _) _ #0)]
+  [apply] [grind =_] for pattern: [@Inv.inv _ _ (@Units.val _ _ #0)]
+  [apply] [grind! .] for pattern: [@Inv.inv (Units _ _) _ #0]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind .] for pattern: [@IsUnit #4 _ (@det #5 #2 #3 _ #1 (@Units.val _ _ #0))]
+  [apply] [grind! .] for pattern: [@det #5 #2 #3 #4 #1 (@Units.val _ _ #0)]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind .] for pattern: [@Membership.mem #4 #5 _ #0 (@OfNat.ofNat _ `[1] _)]
+  [apply] [grind =>] for pattern: [OneMemClass #5 #4 #3 #2, @Membership.mem _ _ _ #0 (@OfNat.ofNat _ `[1] _)]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind
+    =] for pattern: [@HMul.hMul _ _ _ _ (@submatrix #5 #4 _ _ #7 (@Units.val _ _ (@Inv.inv (Units _ _) _ #0)) (@Function.comp _ (Sum _ #6) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #1) (@Sum.inl _ _)) (@id _)) (@submatrix _ _ _ _ _ (@Units.val _ _ #0) (@id _) (@Function.comp _ (Sum _ _) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #1) (@Sum.inl _ _)))]
+  [apply] [grind
+    .] for pattern: [@submatrix #5 #4 _ _ #7 (@Units.val _ _ (@Inv.inv (Units _ _) _ #0)) (@Function.comp _ (Sum _ #6) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #1) (@Sum.inl _ _)) (@id _)]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind
+    =] for pattern: [@HMul.hMul _ _ _ _ (@submatrix #8 _ _ #9 #11 (@Units.val _ _ #2) (@id _) (@Function.comp _ (Sum _ #10) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #3) (@Sum.inl _ _))) (@HMul.hMul _ _ _ _ (@submatrix _ _ _ _ _ (@Units.val _ _ (@Inv.inv (Units _ _) _ #2)) (@Function.comp _ (Sum _ _) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #3) (@Sum.inl _ _)) (@id _)) #4)]
+  [apply] [grind
+    →] for pattern: [@HMul.hMul _ _ _ _ (@submatrix #10 #8 _ _ #11 (@Units.val _ _ (@Inv.inv (Units _ _) _ #2)) (@Function.comp _ (Sum #9 _) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #3) (@Sum.inr _ _)) (@id _)) #4]
+  [apply] [grind!
+    .] for pattern: [@submatrix #8 _ _ #9 #11 (@Units.val _ _ #2) (@id _) (@Function.comp _ (Sum _ #10) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #3) (@Sum.inl _ _)), @HMul.hMul _ _ _ _ (@submatrix _ _ _ _ _ (@Units.val _ _ (@Inv.inv (Units _ _) _ #2)) (@Function.comp _ (Sum _ _) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #3) (@Sum.inl _ _)) (@id _)) #4]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind
+    =] for pattern: [@HMul.hMul _ _ _ _ (@submatrix #6 #4 _ _ #7 (@Units.val _ _ (@Inv.inv (Units _ _) _ #0)) (@Function.comp _ (Sum #5 _) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #1) (@Sum.inr _ _)) (@id _)) (@submatrix _ _ _ _ _ (@Units.val _ _ #0) (@id _) (@Function.comp _ (Sum _ _) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #1) (@Sum.inl _ _)))]
+  [apply] [grind
+    .] for pattern: [@submatrix #6 #4 _ _ #7 (@Units.val _ _ (@Inv.inv (Units _ _) _ #0)) (@Function.comp _ (Sum #5 _) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #1) (@Sum.inr _ _)) (@id _)]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try these:
+  [apply] [grind
+    .] for pattern: [@IsPrimitiveMatrix #9 #6 #7 #5 #4 #3 (@submatrix _ _ _ _ _ (@Units.val _ _ #1) (@id _) (@Function.comp _ (Sum _ #8) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #2) (@Sum.inl _ _)))]
+  [apply] [grind
+    =>] for pattern: [@Membership.mem (Units _ _) (Subgroup (Units _ _) _) _ (@intGL #9 #5 #6 #4 #3) #1, @IsPrimitiveMatrix _ _ #7 _ _ #3 (@submatrix _ _ _ _ _ (@Units.val _ _ #1) (@id _) (@Function.comp _ (Sum _ #8) _ (@DFunLike.coe (Equiv (Sum _ _) _) (Sum _ _) _ _ #2) (@Sum.inl _ _)))]
+  [apply] [grind!
+    =>] for pattern: [@Membership.mem (Units _ _) (Subgroup (Units _ _) _) _ (@intGL #9 #5 #6 #4 #3) #1, @DFunLike.coe (Equiv (Sum #7 #8) _) (Sum _ _) _ _ #2]
+info: src/Lib/General/LinearAlgebra/PartnerAlgebra.lean:87:18: Try this:
+  [apply] [grind =] for pattern: [@IsPrimitiveMatrix #3 #5 _ #2 #4 #1 #0]
+✔ [9202/9471] Built Lib.LocalGL.Green.FrobeniusOrbits (11s)
+✔ [9204/9471] Built Lib.Weil.Unramified.SphericalHecke (24s)
+✔ [9205/9471] Built Lib.ClassField.HeckeCharacter.CharacterConjugates (17s)
+⚠ [9206/9471] Built Lib.ClassField.HeckeL.HeckeContinuation (39s)
+warning: src/Lib/ClassField/HeckeL/HeckeContinuation.lean:79:23: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+✔ [9207/9471] Built Lib.ClassField.GaloisCohomology.SylowReduction (13s)
+⚠ [9208/9471] Built Lib.ClassField.Places.PadicDecomposition (15s)
+info: src/Lib/ClassField/Places/PadicDecomposition.lean:56:67: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/ClassField/Places/PadicDecomposition.lean:108:79: `Topology.IsInducing.topologicalGroup` has been deprecated: Use `Topology.IsInducing.isTopologicalGroup` instead
+✔ [9209/9471] Built Lib.General.Algebra.JetChainRule (6.4s)
+✔ [9214/9471] Built Lib.PadicHodge.Crystalline.Defs (7.5s)
+✔ [9215/9471] Built Lib.GLn.SchurModule.SchurMatrix (25s)
+⚠ [9216/9471] Built Lib.DiscreteSeries.Theta.FischerDecomposition (21s)
+warning: src/Lib/DiscreteSeries/Theta/FischerDecomposition.lean:84:17: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9219/9471] Built Lib.Adelic.Landherr.WeakApprox (21s)
+✔ [9220/9471] Built Lib.Weil.GaussSum.ShearInvariance (11s)
+⚠ [9221/9471] Built Lib.DiscreteSeries.Rigidity.CasimirGrowth (34s)
+warning: src/Lib/DiscreteSeries/Rigidity/CasimirGrowth.lean:61:67: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+✔ [9222/9471] Built Lib.Shimura.HeckeTower.GroupRingOperators (7.6s)
+✔ [9224/9471] Built Lib.LocalGL.Green.CuspidalSupport (9.1s)
+✔ [9225/9471] Built Lib.Adelic.CuspForms.HeckePolyEval (3.7s)
+✔ [9226/9471] Built Lib.ClassField.Places.TameInertia (11s)
+✔ [9227/9471] Built Lib.ClassField.Places.FrobeniusOnRoots (4.2s)
+✔ [9228/9471] Built Lib.ClassField.GaloisCohomology.CyclicNorm (32s)
+✔ [9229/9471] Built Lib.General.Algebra.DepthBounds (9.0s)
+✔ [9232/9471] Built Lib.GaloisRep.Main.LocalEmbedding (5.5s)
+✔ [9233/9471] Built Lib.DiscreteSeries.Character.LaurentAlternants (14s)
+⚠ [9234/9471] Replayed Lib.DiscreteSeries.Bessel.RealMeasures
+warning: src/Lib/DiscreteSeries/Bessel/RealMeasures.lean:143:52: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Lib/DiscreteSeries/Bessel/RealMeasures.lean:143:52: Unused tactic linter: `fun_prop` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9235/9471] Built Lib.CM.LocalHeight.IntegralParameter (49s)
+warning: src/Lib/CM/LocalHeight/IntegralParameter.lean:141:45: `mul_lt_one_of_nonneg_of_lt_one_right` has been deprecated: No replacement, use constituent lemmas from proof.
+info: src/Lib/CM/LocalHeight/IntegralParameter.lean:212:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/CM/LocalHeight/IntegralParameter.lean:210:10: This simp argument is unused:
+  (naiveHeight_spec ..).1.ne'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [field, ← (naiveHeight_spec ..).2.1, pow_right_comm _ N, ← norm_pow, ← norm_mul, ← map_pow, ← map_mul,
+    ← Complex.exp_nsmul, ← Complex.exp_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9236/9471] Built Lib.DiscreteSeries.Holomorphic.MinorEquivariance (10s)
+✔ [9237/9471] Built Lib.DiscreteSeries.CuspKernel.BumpConvolution (8.5s)
+✔ [9239/9471] Built Lib.GLn.SchurModule.RationalRep (6.0s)
+⚠ [9240/9471] Built Lib.Weil.Construction.FiniteMultiplier (12s)
+warning: src/Lib/Weil/Construction/FiniteMultiplier.lean:108:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/Weil/Construction/FiniteMultiplier.lean:136:79: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/Weil/Construction/FiniteMultiplier.lean:152:83: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9241/9471] Built Lib.Adelic.Reduction.Defs (31s)
+info: src/Lib/Adelic/Reduction/Defs.lean:58:88: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9242/9471] Built Lib.Shimura.Uniformisation.PeriodLattice (6.8s)
+⚠ [9243/9471] Replayed Lib.Adelic.Reduction.FirstMinimum
+warning: src/Lib/Adelic/Reduction/FirstMinimum.lean:58:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9244/9471] Built Lib.DiscreteSeries.Theta.JointHarmonicUnique (43s)
+✔ [9245/9471] Built Lib.Weil.Periods.DegreeAndUnipotent (7.8s)
+ℹ [9246/9471] Built Lib.DiscreteSeries.Rigidity.AnalyticVectors (12s)
+info: src/Lib/DiscreteSeries/Rigidity/AnalyticVectors.lean:32:74: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9248/9471] Built Lib.Shimura.TraceFormula.TraceFormula (9.4s)
+✔ [9249/9471] Built Lib.LocalGL.Green.CuspidalAtScalars (9.9s)
+✔ [9253/9471] Built Lib.ClassField.Places.DecompositionLocal (14s)
+✔ [9255/9471] Built Lib.CM.Genus.QuadraticZeta (9.7s)
+⚠ [9256/9471] Built Lib.CM.LocalHeight.IsogenyIntegrality (19s)
+warning: src/Lib/CM/LocalHeight/IsogenyIntegrality.lean:78:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/CM/LocalHeight/IsogenyIntegrality.lean:75:14: This simp argument is unused:
+  coeff_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [MvPolynomial.ext_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9257/9471] Built Lib.DiscreteSeries.FlenstedJensen.FlenstedJensenInvariance (31s)
+ℹ [9259/9471] Built Lib.DiscreteSeries.Holomorphic.HolomorphicExtension (30s)
+info: src/Lib/DiscreteSeries/Holomorphic/HolomorphicExtension.lean:31:43: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9260/9471] Built Lib.GLn.SchurModule.Hook (17s)
+warning: src/Lib/GLn/SchurModule/Hook.lean:90:44: This simp argument is unused:
+  coeff_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [Subtype.ext_iff, rename_bind₁]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9261/9471] Built Lib.General.NumberTheory.FundamentalDomains (12s)
+⚠ [9262/9471] Replayed Lib.Adelic.Transference.MassBasic
+warning: src/Lib/Adelic/Transference/MassBasic.lean:157:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9263/9471] Built Lib.Weil.Construction.ThetaFunctional (26s)
+⚠ [9264/9471] Built New.Seesaw.LatticeAndTorsionDefs (6.2s)
+warning: src/New/Seesaw/LatticeAndTorsionDefs.lean:31:24: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: src/New/Seesaw/LatticeAndTorsionDefs.lean:31:24: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+✔ [9265/9471] Built Lib.DiscreteSeries.Theta.HoweArgument (26s)
+✔ [9266/9471] Built Lib.Weil.Periods.FiniteBesselGroup (25s)
+✔ [9267/9471] Built Lib.Weil.Fock.OscillatorPair (28s)
+✔ [9268/9471] Built Lib.Shimura.IntegralModel.NeatLevel (12s)
+⚠ [9269/9471] Replayed New.RealPlace.LocalTheorem
+warning: src/New/RealPlace/LocalTheorem.lean:135:54: This simp argument is unused:
+  Φ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [upperPairing, descConv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9271/9471] Built Lib.LocalGL.Green.CuspidalInnerProduct (16s)
+ℹ [9272/9471] Replayed Lib.SiegelWeil.Mass.TorusMajorant
+info: src/Lib/SiegelWeil/Mass/TorusMajorant.lean:105:69: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9273/9471] Replayed Lib.DiscreteSeries.Bruhat.ComplexFloorMeasure
+warning: src/Lib/DiscreteSeries/Bruhat/ComplexFloorMeasure.lean:32:75: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: src/Lib/DiscreteSeries/Bruhat/ComplexFloorMeasure.lean:52:70: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9274/9471] Built New.Heights.Heights (8.5s)
+✔ [9275/9471] Built Lib.ClassField.LocalDuality.RealPlaceSymbols (26s)
+ℹ [9276/9471] Built Lib.CM.MainTheorem.ConjugateCurve (23s)
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind .] for pattern: [@DFunLike.coe #7 #9 _ #4 #2 _, @OfNat.ofNat #8 #1 _]
+  [apply] [grind =>] for pattern: [RingHomClass #7 #9 #8 #6 #5 #4, Nat.AtLeastTwo #1, @DFunLike.coe _ _ _ _ #2 _]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind .] for pattern: [@Membership.mem `[ℂ] `[Subring ℂ] `[SetLike.instMembership] (quadInt #1) (quadGen #1)]
+  [apply] [grind →] for pattern: [PrimeSevenModEight #1]
+  [apply] [grind! .] for pattern: [quadInt #1]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind =] for pattern: [@θ #2 #1 #0, @OfNat.ofNat `[ℂ] `[0] `[Zero.toOfNat0]]
+  [apply] [grind =_] for pattern: [@Membership.mem `[ℂ] `[Submodule ℤ
+    ℂ] `[SetLike.instMembership] (PeriodPair.lattice (@periodPair #2 #1)) (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] #0 (@t #2 #1))]
+  [apply] [grind .] for pattern: [@θ #2 #1 #0]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind =] for pattern: [@HPow.hPow #5 `[ℕ] _ _ #3 #2, @OfNat.ofNat _ `[0] _]
+  [apply] [grind .] for pattern: [@HPow.hPow #5 `[ℕ] _ _ #3 #2]
+  [apply] [grind =>] for pattern: [IsReduced #5 _ _, @HPow.hPow _ `[ℕ] _ _ #3 #2]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind =] for pattern: [PeriodPair.σ #1 #0, @OfNat.ofNat `[ℂ] `[0] `[Zero.toOfNat0]]
+  [apply] [grind
+    =_] for pattern: [@Membership.mem `[ℂ] `[Submodule ℤ ℂ] `[SetLike.instMembership] (PeriodPair.lattice #1) #0]
+  [apply] [grind .] for pattern: [PeriodPair.σ #1 #0]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind =] for pattern: [@DFunLike.coe #7 #9 _ #3 #1 #0, @OfNat.ofNat #8 `[0] _]
+  [apply] [grind .] for pattern: [@DFunLike.coe #7 #9 _ #3 #1 #0]
+  [apply] [grind =>] for pattern: [Nontrivial #8, MonoidWithZeroHomClass #7 #9 _ _ #5 #3, @DFunLike.coe _ _ _ _ #1 #0]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind .] for pattern: [@Membership.mem `[ℂ] `[Submodule ℤ
+    ℂ] `[SetLike.instMembership] (PeriodPair.lattice (@periodPair #1 #0)) (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@t #1 #0) (@t #1 #0))]
+  [apply] [grind! .] for pattern: [@periodPair #1 #0]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind
+    .] for pattern: [@Membership.mem `[ℂ] `[Submodule ℤ ℂ] `[SetLike.instMembership] (PeriodPair.lattice (@periodPair #1 #0)) (@t #1 #0)]
+  [apply] [grind! .] for pattern: [@periodPair #1 #0]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind =] for pattern: [@Membership.mem #8 #6 _ #5 (@HAdd.hAdd _ _ _ _ #2 #1)]
+  [apply] [grind
+    =>] for pattern: [AddSubgroupClass #6 #8 _ #4, @Membership.mem _ _ _ #5 #2, @Membership.mem _ _ _ #5 (@HAdd.hAdd _ _ _ _ #2 #1)]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind =] for pattern: [@HPow.hPow `[ℂ] `[ℕ] `[ℂ] `[instHPow] (@a₁ #1 #0) `[2]]
+  [apply] [grind
+    =_] for pattern: [@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[12] (PeriodPair.weierstrassP (@periodPair #1 #0) (@t #1 #0))]
+  [apply] [grind! .] for pattern: [@a₁ #1 #0]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try these:
+  [apply] [grind =] for pattern: [PeriodPair.g₂ (@periodPair #1 #0)]
+  [apply] [grind
+    =_] for pattern: [@HSub.hSub `[ℂ] `[ℂ] `[ℂ] `[instHSub] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[12] (@HPow.hPow `[ℂ] `[ℕ] `[ℂ] `[instHPow] (PeriodPair.weierstrassP (@periodPair #1 #0) (@t #1 #0)) `[2])) `[4]]
+  [apply] [grind! .] for pattern: [@periodPair #1 #0]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:12:29: Try this:
+  [apply] [grind .] for pattern: [@LT.lt #4 _ #1 #2]
+info: src/Lib/CM/MainTheorem/ConjugateCurve.lean:39:8: Try these:
+  [apply] [grind
+    =] for pattern: [@DFunLike.coe (AlgEquiv (@Subtype `[ℂ] _) `[ℂ] `[ℂ] _ `[Complex.instSemiring] `[Complex.instSemiring] _ _) `[ℂ] `[fun
+      x ↦
+    ℂ] _ #1 #2]
+  [apply] [grind
+    =>] for pattern: [@Membership.mem `[ℂ] `[Subring ℂ] `[SetLike.instMembership] (quadInt #3) #2, @DFunLike.coe (AlgEquiv (@Subtype `[ℂ] _) `[ℂ] `[ℂ] _ `[Complex.instSemiring] `[Complex.instSemiring] _ _) `[ℂ] `[fun
+      x ↦
+    ℂ] _ #1 #2]
+⚠ [9277/9471] Built Lib.CM.KroneckerLimit.LogTheta (28s)
+warning: src/Lib/CM/KroneckerLimit/LogTheta.lean:81:90: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9278/9471] Built Lib.DiscreteSeries.FlenstedJensen.PsiSmooth (4.4s)
+ℹ [9279/9471] Built Lib.DiscreteSeries.Theta.JointHarmonicExists (29s)
+info: src/Lib/DiscreteSeries/Theta/JointHarmonicExists.lean:36:17: Try this:
+  [apply] [grind .] for pattern: [@Units.val `[ℤ] `[Int.instMonoid] #0]
+info: src/Lib/DiscreteSeries/Theta/JointHarmonicExists.lean:36:17: Try this:
+  [apply] [grind =] for pattern: [@Finset.sum #5 #4 #2 #3 #1]
+info: src/Lib/DiscreteSeries/Theta/JointHarmonicExists.lean:36:17: Try these:
+  [apply] [grind =] for pattern: [@Units.val #3 #2 (@HMul.hMul (Units _ _) (Units _ _) (Units _ _) _ #1 #0)]
+  [apply] [grind =_] for pattern: [@HMul.hMul #3 _ _ _ (@Units.val _ #2 #1) (@Units.val _ _ #0)]
+info: src/Lib/DiscreteSeries/Theta/JointHarmonicExists.lean:36:17: Try these:
+  [apply] [grind =] for pattern: [@Units.val #3 #2 (@Neg.neg (Units _ _) _ #0)]
+  [apply] [grind =_] for pattern: [@Neg.neg #3 _ (@Units.val _ #2 #0)]
+  [apply] [grind! .] for pattern: [@Neg.neg (Units #3 #2) _ #0]
+✔ [9280/9471] Built Lib.DiscreteSeries.FlenstedJensen.PsiBasic (23s)
+✔ [9281/9471] Built Lib.Weil.Construction.PairDefs (17s)
+ℹ [9283/9471] Built Lib.GLn.SchurModule.Gram (25s)
+info: src/Lib/GLn/SchurModule/Gram.lean:69:2: Try these:
+  [apply] [grind
+    =] for pattern: [@DFunLike.coe (Finsupp (Prod #5 `[ℕ]) `[ℕ] `[Nat.instMulZeroClass.toZero]) (Prod _ `[ℕ]) _ _ (@diagramWeight _ #4 #2 #3) (@Prod.mk _ `[ℕ] #1 #0)]
+  [apply] [grind
+    =_] for pattern: [@HAdd.hAdd `[ℕ] `[ℕ] `[ℕ] `[instHAdd] _ (@DFunLike.coe (Finsupp (Prod #5 `[ℕ]) `[ℕ] `[Nat.instMulZeroClass.toZero]) (Prod _ `[ℕ]) _ _ (@diagramWeight _ #4 #2 #3) (@Prod.mk _ `[ℕ] #1 (#0 + 1)))]
+✔ [9284/9471] Built Lib.Weil.MixedModel.HyperbolicSpace (8.9s)
+✔ [9285/9471] Built Lib.Adelic.CuspForms.Definite (8.9s)
+⚠ [9286/9471] Replayed New.RealPlace.GramSectionBounds
+warning: src/New/RealPlace/GramSectionBounds.lean:74:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: src/New/RealPlace/GramSectionBounds.lean:110:54: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9287/9471] Built Lib.Weil.Periods.DegreeOfT (17s)
+✔ [9289/9471] Built Lib.LocalGL.Green.GreenTau (21s)
+⚠ [9290/9471] Built New.Heights.OneDeterminant (32s)
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/Heights/OneDeterminant.lean:51:4: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+⚠ [9291/9471] Built Lib.ClassField.Local.ArtinMapAtPlace (24s)
+warning: src/Lib/ClassField/Local/ArtinMapAtPlace.lean:272:50: This simp argument is unused:
+  exp_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [-inv_exp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9292/9471] Built Lib.CM.FormalGroup.FormalHeight (29s)
+✔ [9293/9471] Built Lib.DiscreteSeries.FlenstedJensen.CasimirOnPsi (28s)
+✔ [9294/9471] Built Lib.General.LinearAlgebra.BlockDiagonalDet (8.1s)
+✔ [9295/9471] Built Lib.DiscreteSeries.FlenstedJensen.KTypeProjection (21s)
+✔ [9296/9471] Built Lib.Weil.Construction.DataProduct (13s)
+✔ [9297/9471] Built Lib.ClassField.HeckeCharacter.SplittingCharOnU1 (6.6s)
+✔ [9298/9471] Built Lib.General.LinearAlgebra.BlockMatrices (5.9s)
+✔ [9300/9471] Built Lib.GLn.Branching.BranchingVector (17s)
+✔ [9302/9471] Built Lib.General.Groups.IndexOfProduct (3.6s)
+✔ [9304/9471] Built Lib.Weil.Construction.Projections (23s)
+✔ [9305/9471] Built Lib.General.Algebra.FaithfulChar (8.2s)
+✔ [9306/9471] Built Lib.ClassField.Global.AlbertBrauerHasseNoether (20s)
+✔ [9307/9471] Built Lib.DiscreteSeries.FlenstedJensen.PsiDecay (8.8s)
+✔ [9308/9471] Built Lib.ClassField.HeckeL.AutCharLFunction (6.8s)
+✔ [9309/9471] Built New.Rows.PartnerCut (6.0s)
+✔ [9310/9471] Built Lib.Adelic.CuspForms.DeltaForms (15s)
+⚠ [9312/9471] Replayed New.RealPlace.CellNeighbourhood
+warning: src/New/RealPlace/CellNeighbourhood.lean:113:37: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: src/New/RealPlace/CellNeighbourhood.lean:150:63: Try this:
+  [apply] field_simp
+info: src/New/RealPlace/CellNeighbourhood.lean:163:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9313/9471] Built New.Curve.FormalParameter (52s)
+✔ [9315/9471] Built Lib.Weil.Fock.RealData (7.8s)
+✔ [9316/9471] Built Lib.Weil.MixedModel.Names (19s)
+⚠ [9317/9471] Built Lib.GLn.Branching.Branching (33s)
+warning: src/Lib/GLn/Branching/Branching.lean:81:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/GLn/Branching/Branching.lean:91:56: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9318/9471] Built Lib.ClassField.Global.ArtinReciprocity (11s)
+✔ [9319/9471] Built Lib.LocalGL.Green.LabelDegree (15s)
+✔ [9320/9471] Built Lib.Weil.Unramified.UniformiserScalar (4.2s)
+✔ [9321/9471] Built New.Rows.SemiInvariantNorm (6.2s)
+✔ [9322/9471] Built Lib.GLn.SchurModule.WeightRepBasic (6.8s)
+✔ [9325/9471] Built Lib.DiscreteSeries.CuspKernel.SchurOrthogonality (20s)
+✔ [9326/9471] Built Lib.Weil.Fock.EntireTheta (8.7s)
+✔ [9327/9471] Built New.Filling.LatticeChart (14s)
+ℹ [9328/9471] Built Lib.Weil.MixedModel.NameModulus (13s)
+info: src/Lib/Weil/MixedModel/NameModulus.lean:82:17: Try these:
+  [apply] [grind
+    .] for pattern: [@LE.le (Submodule _ _ _ _ _) _ (@ideal #6 #5 #4 #3 #2) (@IsDedekindDomain.HeightOneSpectrum.asIdeal _ _ (@star (IsDedekindDomain.HeightOneSpectrum _ _) _ #1))]
+  [apply] [grind
+    →] for pattern: [NumberField #6 #5, @LE.le (Submodule _ _ _ _ _) _ (@ideal _ _ #4 #3 #2) (@IsDedekindDomain.HeightOneSpectrum.asIdeal _ _ #1)]
+info: src/Lib/Weil/MixedModel/NameModulus.lean:138:17: Try these:
+  [apply] [grind
+    .] for pattern: [@LE.le (Submodule _ _ _ _ _) _ (@ideal #6 #5 #4 #3 #2) (@IsDedekindDomain.HeightOneSpectrum.asIdeal _ _ (@star (IsDedekindDomain.HeightOneSpectrum _ _) _ #1))]
+  [apply] [grind
+    →] for pattern: [NumberField #6 #5, @LE.le (Submodule _ _ _ _ _) _ (@ideal _ _ #4 #3 #2) (@IsDedekindDomain.HeightOneSpectrum.asIdeal _ _ #1)]
+✔ [9329/9471] Built Lib.GLn.Dual.MixedCartan (11s)
+✔ [9330/9471] Built Lib.GLn.SchurModule.SchurContinuous (3.6s)
+✔ [9331/9471] Built Lib.ClassField.Global.NormTheorems (9.9s)
+⚠ [9332/9471] Built Lib.LocalGL.Shintani.LabelCharacters (45s)
+warning: src/Lib/LocalGL/Shintani/LabelCharacters.lean:400:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9333/9471] Built Lib.Adelic.CuspForms.ClassReps (45s)
+warning: src/Lib/Adelic/CuspForms/ClassReps.lean:64:2: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+ℹ [9334/9471] Replayed New.RealPlace.SobolevCell
+info: src/New/RealPlace/SobolevCell.lean:134:10: Try this:
+  [apply] field_simp
+ℹ [9335/9471] Built Lib.DiscreteSeries.FlenstedJensen.TailBounds (28s)
+info: src/Lib/DiscreteSeries/FlenstedJensen/TailBounds.lean:42:59: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/Lib/DiscreteSeries/FlenstedJensen/TailBounds.lean:66:2: Try this:
+  [apply] field_simp
+✔ [9336/9471] Built Lib.General.Algebra.JetRename (3.6s)
+ℹ [9337/9471] Built Lib.Weil.Construction.FinitePart (6.5s)
+info: src/Lib/Weil/Construction/FinitePart.lean:44:14: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9338/9471] Built New.Filling.GramLiouville (6.0s)
+⚠ [9339/9471] Built Lib.DiscreteSeries.Rigidity.KernelFixes (54s)
+warning: src/Lib/DiscreteSeries/Rigidity/KernelFixes.lean:142:45: `Submodule.coe_norm` does not have the `[simp]` attribute
+warning: src/Lib/DiscreteSeries/Rigidity/KernelFixes.lean:176:78: `Submodule.coe_norm` has been deprecated: use `norm_coe`
+warning: src/Lib/DiscreteSeries/Rigidity/KernelFixes.lean:176:78: This simp argument is unused:
+  coe_norm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [*, word]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9340/9471] Built Lib.GLn.Dual.ClassSum (20s)
+⚠ [9341/9471] Built Lib.ClassField.Global.CMNorms (15s)
+warning: src/Lib/ClassField/Global/CMNorms.lean:78:57: This simp argument is unused:
+  prod_ne_zero_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [f, upsilon_toAdele, υ_star, field, prod_pos, ← artinMap_locIdele]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9342/9471] Built Lib.DiscreteSeries.Holomorphic.HolomorphicMinor (10s)
+⚠ [9343/9471] Replayed New.RealPlace.ComplexGauge
+info: src/New/RealPlace/ComplexGauge.lean:102:51: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/New/RealPlace/ComplexGauge.lean:144:59: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/New/RealPlace/ComplexGauge.lean:170:26: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/New/RealPlace/ComplexGauge.lean:179:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/New/RealPlace/ComplexGauge.lean:179:54: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/New/RealPlace/ComplexGauge.lean:171:92: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9344/9471] Built Lib.LocalGL.Green.LabelIdempotents (23s)
+⚠ [9345/9471] Built Lib.Weil.MixedModel.NameWeilAction (16s)
+warning: src/Lib/Weil/MixedModel/NameWeilAction.lean:172:68: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9346/9471] Built New.RealPlace.OpenCellBound (40s)
+info: src/New/RealPlace/OpenCellBound.lean:30:57: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/New/RealPlace/OpenCellBound.lean:75:47: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9347/9471] Built New.Filling.NearTerms (33s)
+warning: src/New/Filling/NearTerms.lean:83:51: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9348/9471] Built Lib.DiscreteSeries.Theta.LocalThetaCorrespondence (20s)
+✔ [9349/9471] Built Lib.General.LinearAlgebra.FramedCoefficient (12s)
+✔ [9350/9471] Built Lib.Adelic.CuspForms.RealConvolution (45s)
+⚠ [9351/9471] Built Lib.LocalGL.TraceFormula.ChangingSigns (17s)
+info: src/Lib/LocalGL/TraceFormula/ChangingSigns.lean:98:17: Try this:
+  [apply] [grind =] for pattern: [@Membership.mem #3 _ _ (@Multiset.map #4 _ #2 #0) #1]
+info: src/Lib/LocalGL/TraceFormula/ChangingSigns.lean:98:17: Try these:
+  [apply] [grind
+    =] for pattern: [@roots `[ℂ] `[Complex.commRing] _ (@Polynomial.map #3 `[ℂ] _ `[Complex.instSemiring] (@star (RingHom _ `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0) #1)]
+  [apply] [grind
+    =_] for pattern: [@Multiset.map `[ℂ] `[ℂ] `[star] (@roots `[ℂ] `[Complex.commRing] _ (@Polynomial.map #3 `[ℂ] _ `[Complex.instSemiring] #0 #1))]
+  [apply] [grind!
+    .] for pattern: [@Polynomial.map #3 `[ℂ] _ `[Complex.instSemiring] (@star (RingHom _ `[ℂ] _ `[Complex.instSemiring.toNonAssocSemiring]) _ #0) #1]
+info: src/Lib/LocalGL/TraceFormula/ChangingSigns.lean:98:17: Try these:
+  [apply] [grind =] for pattern: [@star #2 _ (@star _ _ #0)]
+  [apply] [grind! .] for pattern: [@star #2 _ #0]
+warning: src/Lib/LocalGL/TraceFormula/ChangingSigns.lean:137:71: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9352/9471] Built Lib.ClassField.HeckeCharacter.SplittingCharExists (19s)
+✔ [9353/9471] Built Lib.Adelic.Landherr.SumOfTwoSquares (10s)
+✔ [9355/9471] Built Lib.General.Groups.CentralConvolution (4.3s)
+✔ [9356/9471] Built Lib.DiscreteSeries.Holomorphic.HolomorphicChamber (11s)
+✔ [9357/9471] Built Lib.Weil.Construction.ConjugateJetDefs (4.7s)
+⚠ [9358/9471] Built Lib.Weil.MixedModel.ZeroTerm (72s)
+info: src/Lib/Weil/MixedModel/ZeroTerm.lean:357:60: Try this:
+  [apply] abel_nf
+info: src/Lib/Weil/MixedModel/ZeroTerm.lean:499:47: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/Weil/MixedModel/ZeroTerm.lean:617:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9359/9471] Built Lib.GLn.SchurModule.SchurOrthogonality (9.6s)
+✔ [9360/9471] Built New.Filling.BoxPartition (101s)
+⚠ [9361/9471] Built New.DiscreteSeries.MinorExpansion (25s)
+info: src/New/DiscreteSeries/MinorExpansion.lean:28:79: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/New/DiscreteSeries/MinorExpansion.lean:109:51: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9362/9471] Built Lib.Adelic.CuspForms.SmoothFormPairing (9.4s)
+⚠ [9363/9471] Built Lib.Adelic.CuspForms.Petersson (34s)
+warning: src/Lib/Adelic/CuspForms/Petersson.lean:70:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+warning: src/Lib/Adelic/CuspForms/Petersson.lean:78:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+⚠ [9364/9471] Built New.Filling.GlobalSieve (44s)
+warning: src/New/Filling/GlobalSieve.lean:76:40: `div_nat_le_self_of_nonnneg` has been deprecated: Use `div_nat_le_self_of_nonneg` instead
+
+Hint: Replace the deprecated name:
+  div_nat_le_self_of_nonnn̵eg
+✔ [9365/9471] Built New.Data.WeilDataOfE (16s)
+✔ [9366/9471] Built Lib.Adelic.Landherr.Landherr (23s)
+ℹ [9367/9471] Built New.Trace.BadShare (25s)
+info: src/New/Trace/BadShare.lean:103:60: Try this:
+  [apply] field_simp
+✔ [9368/9471] Built New.RealPlace.BandLimits (28s)
+✔ [9369/9471] Built Lib.Weil.MixedModel.MixedModelIntegrable (6.1s)
+✔ [9370/9471] Built Lib.Weil.Construction.FockThetaFunctions (17s)
+✔ [9371/9471] Built New.Filling.UnipotentCovolume (31s)
+✔ [9372/9471] Built Lib.DiscreteSeries.Character.KTypeMultiplicity (44s)
+⚠ [9373/9471] Built New.DiscreteSeries.GaussianShape (22s)
+info: src/New/DiscreteSeries/GaussianShape.lean:74:36: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/New/DiscreteSeries/GaussianShape.lean:78:76: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/DiscreteSeries/GaussianShape.lean:78:76: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/DiscreteSeries/GaussianShape.lean:78:76: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/DiscreteSeries/GaussianShape.lean:78:76: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/DiscreteSeries/GaussianShape.lean:78:76: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+warning: src/New/DiscreteSeries/GaussianShape.lean:78:76: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+info: src/New/DiscreteSeries/GaussianShape.lean:84:51: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/New/DiscreteSeries/GaussianShape.lean:97:2: Try this:
+  [apply] field_simp
+✔ [9374/9471] Built New.Filling.LinkPairing (53s)
+✔ [9375/9471] Built Lib.Adelic.CuspForms.LevelForms (20s)
+✔ [9376/9471] Built Lib.Adelic.CuspForms.WeightParameter (4.9s)
+✔ [9377/9471] Built Lib.Weil.DualPair.Lift (10s)
+✔ [9378/9471] Built New.Curve.PeriodDefs (6.3s)
+✔ [9379/9471] Built Lib.Weil.MixedModel.ZeroTermLaw (13s)
+✔ [9380/9471] Built Lib.DiscreteSeries.Character.SectorBound (26s)
+⚠ [9381/9471] Built New.DiscreteSeries.TwoFactorSetup (19s)
+warning: src/New/DiscreteSeries/TwoFactorSetup.lean:109:75: `Finset.sum_nonneg'` has been deprecated: Use `Finset.sum_nonneg` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ i ∈ s, 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : AddCommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [AddLeftMono N], (∀ (i : ι), 0 ≤ f i) → 0 ≤ ∑ i ∈ s, f i
+⚠ [9382/9471] Built New.Filling.AmplitudeSums (62s)
+warning: src/New/Filling/AmplitudeSums.lean:83:26: `Fintype.prod_mono'` has been deprecated: Use `Fintype.prod_mono` instead
+
+Hint: Replace the deprecated name:
+  p̵r̵o̵d̵_̵m̵o̵n̵o̵'̵F̲i̲n̲t̲y̲p̲e̲.̲p̲r̲o̲d̲_̲m̲o̲n̲o̲
+✔ [9383/9471] Built Lib.Adelic.CuspForms.AlgebraicForms (8.0s)
+✔ [9384/9471] Built New.RealPlace.VolumeKernel (29s)
+✔ [9385/9471] Built New.Curve.TightFrameExists (24s)
+⚠ [9386/9471] Built Lib.Weil.MixedModel.HyperbolicSplitting (3.6s)
+warning: src/Lib/Weil/MixedModel/HyperbolicSplitting.lean:12:67: Unused tactic linter: `done` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9387/9471] Built New.Curve.ThetaProducts (34s)
+ℹ [9388/9471] Built Lib.DiscreteSeries.Character.FormalDegree (48s)
+info: src/Lib/DiscreteSeries/Character/FormalDegree.lean:100:59: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [9389/9471] Built New.DiscreteSeries.BesselExistence (48s)
+✔ [9390/9471] Built New.Filling.SchurTest (49s)
+✔ [9391/9471] Built New.Filling.GlobalToLocal (71s)
+✔ [9392/9471] Built New.Curve.FrameSections (25s)
+✔ [9393/9471] Built Lib.Weil.MixedModel.AdaptedSplitting (17s)
+✔ [9394/9471] Built New.RealPlace.BesselCut (33s)
+⚠ [9395/9471] Built New.Filling.ThinClasses (30s)
+warning: src/New/Filling/ThinClasses.lean:64:59: `Finset.one_le_prod''` has been deprecated: Use `Finset.one_le_prod` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : CommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [MulLeftMono N], (∀ i ∈ s, 1 ≤ f i) → 1 ≤ ∏ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : CommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [MulLeftMono N], (∀ (i : ι), 1 ≤ f i) → 1 ≤ ∏ i ∈ s, f i
+warning: src/New/Filling/ThinClasses.lean:64:59: `Finset.one_le_prod''` has been deprecated: Use `Finset.one_le_prod` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : CommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [MulLeftMono N], (∀ i ∈ s, 1 ≤ f i) → 1 ≤ ∏ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : CommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [MulLeftMono N], (∀ (i : ι), 1 ≤ f i) → 1 ≤ ∏ i ∈ s, f i
+warning: src/New/Filling/ThinClasses.lean:64:59: `Finset.one_le_prod''` has been deprecated: Use `Finset.one_le_prod` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : CommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [MulLeftMono N], (∀ i ∈ s, 1 ≤ f i) → 1 ≤ ∏ i ∈ s, f i
+instead of
+  ∀ {ι : Type u_1} {N : Type u_5} [inst : CommMonoid N] [inst_1 : Preorder N] {f : ι → N} {s : Finset ι}
+    [MulLeftMono N], (∀ (i : ι), 1 ≤ f i) → 1 ≤ ∏ i ∈ s, f i
+warning: src/New/Filling/ThinClasses.lean:78:60: `Fintype.prod_mono'` has been deprecated: Use `Fintype.prod_mono` instead
+
+Hint: Replace the deprecated name:
+  p̵r̵o̵d̵_̵m̵o̵n̵o̵'̵F̲i̲n̲t̲y̲p̲e̲.̲p̲r̲o̲d̲_̲m̲o̲n̲o̲
+✔ [9396/9471] Built New.Curve.ConjugateGenerator (14s)
+⚠ [9397/9471] Built New.Filling.FixedLines (37s)
+info: src/New/Filling/FixedLines.lean:69:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/New/Filling/FixedLines.lean:142:39: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+
+Hint: Replace the deprecated name:
+  prod_le_prod'̵
+✔ [9398/9471] Built Lib.Adelic.CuspForms.CuspStep (34s)
+✔ [9399/9471] Built Lib.Weil.DualPair.PairSplitting (28s)
+✔ [9400/9471] Built New.Data.AdmissibleData (9.2s)
+✔ [9401/9471] Built Lib.Adelic.CuspForms.ReproducingKernel (18s)
+⚠ [9402/9471] Built Lib.Weil.DualPair.PairReal (30s)
+warning: src/Lib/Weil/DualPair/PairReal.lean:75:15: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9403/9471] Built New.Filling.BlockBound (66s)
+✔ [9404/9471] Built New.Seesaw.IntegralAway (4.6s)
+⚠ [9405/9471] Built Lib.SiegelWeil.SingularForms.AdaptedHom (24s)
+warning: src/Lib/SiegelWeil/SingularForms/AdaptedHom.lean:140:27: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9406/9471] Built New.Curve.LiveSum (9.0s)
+⚠ [9407/9471] Built Lib.Weil.DualPair.PairSumNegation (31s)
+warning: src/Lib/Weil/DualPair/PairSumNegation.lean:121:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+ℹ [9408/9471] Built New.Data.Magnitudes (16s)
+info: src/New/Data/Magnitudes.lean:24:17: Try this:
+  [apply] [grind! .] for pattern: [rexp #0]
+info: src/New/Data/Magnitudes.lean:24:17: Try these:
+  [apply] [grind! .] for pattern: [Real.log #1]
+  [apply] [grind! →] for pattern: [@LT.lt `[ℝ] `[instLT] `[0] #1]
+info: src/New/Data/Magnitudes.lean:24:17: Try this:
+  [apply] [grind! .] for pattern: [rexp `[0]]
+info: src/New/Data/Magnitudes.lean:24:17: Try this:
+  [apply] [grind! .] for pattern: [rexp #0]
+info: src/New/Data/Magnitudes.lean:24:17: Try these:
+  [apply] [grind! .] for pattern: [@LE.le #8 _ (@Inv.inv _ _ #3) (@Inv.inv _ _ #2)]
+  [apply] [grind! →] for pattern: [PosMulReflectLT #8 _ _ _, @LT.lt _ _ (@OfNat.ofNat _ `[0] _) #2, @LE.le _ _ #2 #3]
+info: src/New/Data/Magnitudes.lean:24:17: Try these:
+  [apply] [grind! .] for pattern: [@OfNat.ofNat #6 `[1] _, @NatCast.natCast _ _ #0]
+  [apply] [grind! =>] for pattern: [@LE.le #6 _, CharZero _ #5, @NatCast.natCast _ _ #0]
+info: src/New/Data/Magnitudes.lean:24:17: Try these:
+  [apply] [grind! .] for pattern: [@ceil #7 #6 _ #4 #3]
+  [apply] [grind! →] for pattern: [IsOrderedAddMonoid #7 _ _, @LE.le _ _ (@OfNat.ofNat _ `[0] _) #3]
+info: src/New/Data/Magnitudes.lean:24:17: Try this:
+  [apply] [grind! .] for pattern: [@ceil #4 #3 _ #1 #0]
+info: src/New/Data/Magnitudes.lean:24:17: Try this:
+  [apply] [grind! .] for pattern: [@ceil #4 #3 _ #1 #0]
+info: src/New/Data/Magnitudes.lean:24:17: Try this:
+  [apply] [grind! .] for pattern: [@s #1 #0]
+info: src/New/Data/Magnitudes.lean:24:17: Try this:
+  [apply] [grind! .] for pattern: [Real.log (@HMul.hMul `[ℝ] `[ℝ] `[ℝ] `[instHMul] #3 #2)]
+✔ [9409/9471] Built Lib.Weil.DualPair.DescentsVanishDef (3.5s)
+⚠ [9410/9471] Built Lib.Weil.DualPair.DatumLevel (4.7s)
+warning: src/Lib/Weil/DualPair/DatumLevel.lean:16:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9411/9471] Built Lib.LocalGL.TraceFormula.TraceComparison (62s)
+✔ [9412/9471] Built New.Filling.CrudeEnergy (40s)
+✔ [9413/9471] Built New.Seesaw.AdmissibleComb (12s)
+✔ [9414/9471] Built Lib.ClassField.HeckeCharacter.LineParabolic (18s)
+⚠ [9415/9471] Built Lib.Weil.DualPair.Flip (18s)
+warning: src/Lib/Weil/DualPair/Flip.lean:33:51: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9416/9471] Built New.Data.Weights (5.0s)
+✔ [9417/9471] Built Lib.Weil.DualPair.KernelDecay (24s)
+✔ [9418/9471] Built Lib.SiegelWeil.SingularForms.SingularForms (54s)
+✔ [9419/9471] Built New.Seesaw.MovedVacuumComb (4.7s)
+✔ [9420/9471] Built Lib.ClassField.HeckeCharacter.CharOfDet (4.5s)
+⚠ [9421/9471] Built Lib.Weil.CompactLift.BranchingPeriod (24s)
+warning: src/Lib/Weil/CompactLift/BranchingPeriod.lean:161:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+✔ [9422/9471] Built New.Seesaw.IndexTypes (19s)
+✔ [9423/9471] Built New.Curve.DepthPairs (30s)
+✔ [9424/9471] Built Lib.Weil.DualPair.ModularDataDecay (5.5s)
+ℹ [9425/9471] Built Lib.Weil.DualPair.FourierCoefficient (19s)
+info: src/Lib/Weil/DualPair/FourierCoefficient.lean:108:0: Error in Linarith.normalizeDenominatorsLHS: Expr.rewrite may not produce subgoals.
+✔ [9426/9471] Built Lib.ClassField.HeckeCharacter.LocalCharacters (4.0s)
+✔ [9427/9471] Built Lib.SiegelWeil.StrongApproximation.EqualRankConstant (26s)
+ℹ [9428/9471] Built Lib.Weil.Periods.BesselIntegral (21s)
+info: src/Lib/Weil/Periods/BesselIntegral.lean:86:17: Try these:
+  [apply] [grind
+    =] for pattern: [@gradeOf #9 #10 #5 #11 #8 #7 #6 #4 #3 #2 #1 (@stringReversal _ _ _ _ _ _ #5 #4 #3 #2 #1 #0)]
+  [apply] [grind
+    =_] for pattern: [@HMul.hMul `[ℤ] `[ℤ] `[ℤ] `[instHMul] `[-1] (@gradeOf #9 #10 #5 #11 #8 #7 #6 #4 #3 #2 #1 #0)]
+  [apply] [grind .] for pattern: [@gradeOf #9 #10 #5 #11 #8 #7 #6 #4 #3 #2 #1 #0]
+info: src/Lib/Weil/Periods/BesselIntegral.lean:86:17: Try these:
+  [apply] [grind
+    =] for pattern: [@gradeOf #11 #10 #9 #8 #7 #6 #5 #4 #3 #2 #0 (@DFunLike.coe (Equiv (Sum _ (Fin _)) _) (Sum _ (Fin _)) _ _ (@indexEquiv _ _ _ _ _ #4 #2 #3 _ #9 #0) (@Sum.inl _ (Fin _) #1))]
+  [apply] [grind!
+    .] for pattern: [@DFunLike.coe (Equiv (Sum #11 (Fin #9)) #10) (Sum _ (Fin _)) _ _ (@indexEquiv _ #8 #7 #6 #5 #4 #2 #3 _ #9 #0) (@Sum.inl _ (Fin _) #1)]
+info: src/Lib/Weil/Periods/BesselIntegral.lean:86:17: Try this:
+  [apply] [grind =] for pattern: [@Finset.sum #5 #4 #2 #3 #1]
+✔ [9429/9471] Built New.Exchange.LValueRatio (5.5s)
+✔ [9430/9471] Built New.Seesaw.FramesForY (24s)
+✔ [9431/9471] Built Lib.Weil.Lift.Edge (21s)
+⚠ [9432/9471] Built New.DiscreteSeries.RestrictionLemma (62s)
+info: src/New/DiscreteSeries/RestrictionLemma.lean:146:48: Try this:
+  [apply] field_simp
+info: src/New/DiscreteSeries/RestrictionLemma.lean:178:4: Try this:
+  [apply] field_simp
+warning: src/New/DiscreteSeries/RestrictionLemma.lean:192:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9433/9471] Built Lib.Weil.DualPair.TwoLineTerms (44s)
+warning: src/Lib/Weil/DualPair/TwoLineTerms.lean:108:2: syntax 'Mathlib.Tactic.Peel.peel' has been deprecated: use `gconvert` or `congr!` instead of `peel`
+
+Note: This linter can be disabled with `set_option linter.deprecated.syntax false`
+info: src/Lib/Weil/DualPair/TwoLineTerms.lean:184:59: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/Lib/Weil/DualPair/TwoLineTerms.lean:184:59: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: src/Lib/Weil/DualPair/TwoLineTerms.lean:219:13: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/Weil/DualPair/TwoLineTerms.lean:219:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/Weil/DualPair/TwoLineTerms.lean:226:51: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Lib/Weil/DualPair/TwoLineTerms.lean:227:15: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9434/9471] Built Lib.Weil.DualPair.TwoEdgesOnePair (24s)
+warning: src/Lib/Weil/DualPair/TwoEdgesOnePair.lean:68:47: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9435/9471] Built Lib.Weil.Lift.Arrow (8.0s)
+✔ [9436/9471] Built Lib.Weil.DualPair.ThetaIntegralLaws (14s)
+
+TIMEOUT: bounded targeted job

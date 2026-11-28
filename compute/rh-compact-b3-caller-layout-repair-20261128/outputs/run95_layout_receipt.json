@@ -1,0 +1,8 @@
+{
+  "original_run93_failed": true,
+  "fixed92_blob": "a319b20e1c2fa02efa81b55461856d720e0e6ba7",
+  "fixed94_blob": "76e6ce8f976a118a4876f4828687537d33c0ed6d",
+  "layout_roundtrip_checks": 10,
+  "new_Lean_execution": false,
+  "full_RH_replay": false
+}

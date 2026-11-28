@@ -1,0 +1,436 @@
+{
+  "source_blob": "a319b20e1c2fa02efa81b55461856d720e0e6ba7",
+  "shell_source_blob": "0813311a1a745edc1e4ddc6a788df25df0b13f9c",
+  "accepted_source_blob": "cba0a141fd47c34b792021c679b5451ebde7d3bf",
+  "roots": [
+    "IsCutBessel.lintegral_formMajorant_ne_top",
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart",
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top",
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart",
+    "IsCutBessel.norm_floorForm_le",
+    "IsCutBessel.norm_floorForm_le_via_directChart",
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le",
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart",
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term",
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart"
+  ],
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "all_requested_checks_ok": true,
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "human_assembly_verified": false,
+  "build": {
+    "returncode": 0,
+    "seconds": 1016.84,
+    "log": "b2_build.log"
+  },
+  "original_probes": {
+    "returncode": 0,
+    "seconds": 4.43,
+    "log": "original_callers.log",
+    "axioms": {
+      "IsCutBessel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.norm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "accepted_source_replay": {
+    "returncode": 0,
+    "seconds": 9.34,
+    "log": "accepted_source_replay.log",
+    "axioms": {
+      "Gauge.lintegral_floorWeight_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_floorWeight_le_directChart_bridge": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_selfNorm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_selfNorm_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_positions_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_positions_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "markers": {
+      "RUN85_SELF:": true,
+      "RUN85_POSITIONS:": true
+    },
+    "object_sha256": "902f57571e47bc7c2a78e1de44514f4d7a59122238ca6728472fdf62803f10c3"
+  },
+  "shell_compile": {
+    "returncode": 0,
+    "seconds": 4.58,
+    "log": "shell_compile.log",
+    "axioms": {
+      "IsCutBessel.formConst_mul_lintegral_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.formConst_mul_lintegral_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "markers": {
+      "RUN90_SHELL: IsCutBessel.formConst_mul_lintegral_le_via_directChart": true,
+      "RUN90_SHELL: IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": true
+    },
+    "object_sha256": "ff60aeb9ba8de9a11f291e8f0384182c2b56330ed52e901ede6e8c4035bcfa7b"
+  },
+  "caller_compile": {
+    "returncode": 0,
+    "seconds": 4.58,
+    "log": "caller_compile.log",
+    "axioms": {
+      "IsCutBessel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.norm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.norm_floorForm_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "markers": {
+      "RUN92_CALLER: IsCutBessel.lintegral_formMajorant_ne_top_via_directChart": true,
+      "RUN92_CALLER: IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart": true,
+      "RUN92_CALLER: IsCutBessel.norm_floorForm_le_via_directChart": true,
+      "RUN92_CALLER: IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart": true,
+      "RUN92_CALLER: IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart": true
+    },
+    "object_sha256": "9015f1b4cb15d8d39283e3d954e2da43cea55974b089285d9b6a4bf1743b37af"
+  },
+  "graph_source_blob": "febc151016b5bb4f94aed79a1cc9ec10ce31e672",
+  "graph": {
+    "returncode": 0,
+    "seconds": 43.83,
+    "log": "graph.log",
+    "axioms": {
+      "IsCutBessel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.norm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.norm_floorForm_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "root_masks": {
+    "Gauge.parseval_heisenbergMeasure_of_box": 1023,
+    "IsCutBessel.lintegral_formMajorant_ne_top": 1,
+    "Gauge.formMajorant_sq_le": 1023,
+    "Gauge.lintegral_floorWeight_le": 341,
+    "Gauge.lintegral_selfNorm_le": 341,
+    "IsCutBessel.formConst_mul_lintegral_le": 17,
+    "Gauge.lintegral_mul_invWeight_le": 1023,
+    "Gauge.lintegral_positions_le": 341,
+    "Gauge.com": 1023,
+    "IsCutBessel.formConst_mul_lintegral_le_via_directChart": 34,
+    "Gauge.lintegral_selfNorm_le_via_directChart": 682,
+    "Gauge.lintegral_floorWeight_le_directChart_bridge": 682,
+    "Gauge.lintegral_positions_le_via_directChart": 682,
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart": 2,
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": 4,
+    "IntegralPlace.IsStdLevel.lintegral_shells_le": 324,
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart": 8,
+    "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": 648,
+    "IsCutBessel.norm_floorForm_le": 16,
+    "IsCutBessel.norm_floorForm_le_via_directChart": 32,
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le": 64,
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart": 128,
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": 256,
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart": 512
+  },
+  "reachability_guards": {
+    "new_chain_0": true,
+    "new_chain_1": true,
+    "new_chain_2": true,
+    "old_chain_0": true,
+    "old_chain_1": true,
+    "old_chain_2": true,
+    "Gauge.formMajorant_sq_le": true,
+    "Gauge.lintegral_mul_invWeight_le": true,
+    "Gauge.com": true,
+    "Gauge.parseval_heisenbergMeasure_of_box": true,
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart:direct": true,
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart:exact_direct_delta": true,
+    "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart:transitive_supplier": true,
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart:direct": true,
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart:exact_direct_delta": true,
+    "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart:transitive_supplier": true,
+    "IsCutBessel.norm_floorForm_le_via_directChart:direct": true,
+    "IsCutBessel.norm_floorForm_le_via_directChart:exact_direct_delta": true,
+    "IsCutBessel.norm_floorForm_le_via_directChart:transitive_supplier": true,
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart:direct": true,
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart:exact_direct_delta": true,
+    "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart:transitive_supplier": true,
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart:direct": true,
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart:exact_direct_delta": true,
+    "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart:transitive_supplier": true
+  },
+  "indirect_old_masks": {
+    "Gauge.lintegral_floorWeight_le": 0,
+    "Gauge.lintegral_selfNorm_le": 0,
+    "Gauge.lintegral_positions_le": 0,
+    "IsCutBessel.formConst_mul_lintegral_le": 0,
+    "IntegralPlace.IsStdLevel.lintegral_shells_le": 0
+  },
+  "graph_summary": {
+    "roots": [
+      "IsCutBessel.lintegral_formMajorant_ne_top",
+      "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart",
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top",
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart",
+      "IsCutBessel.norm_floorForm_le",
+      "IsCutBessel.norm_floorForm_le_via_directChart",
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le",
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart",
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term",
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart"
+    ],
+    "nodes": 73916,
+    "edges": 2104697,
+    "missing": 0,
+    "mask_histogram": {
+      "51": 28708,
+      "1023": 44210,
+      "255": 76,
+      "243": 9,
+      "3": 10,
+      "819": 14,
+      "341": 8,
+      "1": 1,
+      "17": 1,
+      "682": 13,
+      "34": 1,
+      "2": 1,
+      "972": 734,
+      "12": 9,
+      "1020": 1,
+      "204": 17,
+      "4": 1,
+      "324": 1,
+      "8": 1,
+      "648": 1,
+      "48": 22,
+      "240": 9,
+      "16": 1,
+      "32": 1,
+      "192": 40,
+      "64": 1,
+      "128": 1,
+      "768": 22,
+      "256": 1,
+      "512": 1
+    },
+    "per_root": {
+      "IsCutBessel.lintegral_formMajorant_ne_top": {
+        "exit": 0,
+        "nodes": 73037,
+        "missing": 0,
+        "log": "audit-0.json"
+      },
+      "IsCutBessel.lintegral_formMajorant_ne_top_via_directChart": {
+        "exit": 0,
+        "nodes": 73042,
+        "missing": 0,
+        "log": "audit-1.json"
+      },
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top": {
+        "exit": 0,
+        "nodes": 45057,
+        "missing": 0,
+        "log": "audit-2.json"
+      },
+      "IntegralPlace.IsStdLevel.lintegral_formMajorant_ne_top_via_directChart": {
+        "exit": 0,
+        "nodes": 45062,
+        "missing": 0,
+        "log": "audit-3.json"
+      },
+      "IsCutBessel.norm_floorForm_le": {
+        "exit": 0,
+        "nodes": 73059,
+        "missing": 0,
+        "log": "audit-4.json"
+      },
+      "IsCutBessel.norm_floorForm_le_via_directChart": {
+        "exit": 0,
+        "nodes": 73064,
+        "missing": 0,
+        "log": "audit-5.json"
+      },
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le": {
+        "exit": 0,
+        "nodes": 45106,
+        "missing": 0,
+        "log": "audit-6.json"
+      },
+      "IntegralPlace.IsStdLevel.enorm_floorForm_le_via_directChart": {
+        "exit": 0,
+        "nodes": 45111,
+        "missing": 0,
+        "log": "audit-7.json"
+      },
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": {
+        "exit": 0,
+        "nodes": 44991,
+        "missing": 0,
+        "log": "audit-8.json"
+      },
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term_via_directChart": {
+        "exit": 0,
+        "nodes": 44996,
+        "missing": 0,
+        "log": "audit-9.json"
+      }
+    },
+    "naive_repeated_nodes": 562525
+  },
+  "graph_sha256": "ca27f114532a382c0ed2551b8a0adfc3f5c0a1535b6edb63e17032d57c41db1c",
+  "failure": "RUN94 source build failed"
+}
