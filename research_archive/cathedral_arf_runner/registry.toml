@@ -3826,3 +3826,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT prime-window lane; continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-c2-path-repair-20261128"
+question = "Repair actual RUN94 fresh LEAN_PATH preflight failure after successful authenticated restore and 8895-second original extension. Preflight declared optional package paths before extension, retain strict required roots and all existing paths, then replay the same immutable RUN92/RUN91 six roots and standard axiom guards. Preserve extended objects if disk permits and all failed evidence. No Main import or RH closure."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN97_C2_SEARCH_PATH_REPAIR.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT character boxes lane; user continuation directive"
+claim = "independent"
