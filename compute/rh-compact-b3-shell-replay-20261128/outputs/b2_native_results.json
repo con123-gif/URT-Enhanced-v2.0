@@ -1,0 +1,79 @@
+{
+  "scope": "new peer helper replay; original caller axioms checked separately",
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 2.92,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 10.43,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.03,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.18,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 1.77,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.21,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 70.68,
+      "log": "mathlib_cache.log"
+    },
+    "b2_build": {
+      "returncode": 0,
+      "seconds": 732.42,
+      "log": "b2_build.log"
+    },
+    "original_callers": {
+      "returncode": 0,
+      "seconds": 3.72,
+      "log": "original_callers.log",
+      "axioms": {
+        "IsCutBessel.formConst_mul_lintegral_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IntegralPlace.IsStdLevel.lintegral_shells_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "negative_missing_projector_guard": {
+      "returncode": 1,
+      "seconds": 2.22,
+      "log": "negative_missing_projector_guard.log",
+      "expected_rejection_observed": true
+    }
+  },
+  "new_Lean_execution": true,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": true
+}

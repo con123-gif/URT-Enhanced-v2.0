@@ -1,0 +1,49 @@
+{
+  "roots": [
+    "IsCutBessel.formConst_mul_lintegral_le",
+    "IsCutBessel.formConst_mul_lintegral_le_via_directChart",
+    "IntegralPlace.IsStdLevel.lintegral_shells_le",
+    "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart"
+  ],
+  "nodes": 73765,
+  "edges": 2088097,
+  "missing": 0,
+  "mask_histogram": {
+    "3": 28795,
+    "15": 44210,
+    "5": 8,
+    "1": 1,
+    "10": 13,
+    "2": 1,
+    "12": 735,
+    "4": 1,
+    "8": 1
+  },
+  "per_root": {
+    "IsCutBessel.formConst_mul_lintegral_le": {
+      "exit": 0,
+      "nodes": 73014,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "IsCutBessel.formConst_mul_lintegral_le_via_directChart": {
+      "exit": 0,
+      "nodes": 73019,
+      "missing": 0,
+      "log": "audit-1.json"
+    },
+    "IntegralPlace.IsStdLevel.lintegral_shells_le": {
+      "exit": 0,
+      "nodes": 44954,
+      "missing": 0,
+      "log": "audit-2.json"
+    },
+    "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": {
+      "exit": 0,
+      "nodes": 44959,
+      "missing": 0,
+      "log": "audit-3.json"
+    }
+  },
+  "naive_repeated_nodes": 235946
+}

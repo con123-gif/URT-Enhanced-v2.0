@@ -1,0 +1,26 @@
+{
+  "IsCutBessel.formConst_mul_lintegral_le": {
+    "exit": 0,
+    "nodes": 73014,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "IsCutBessel.formConst_mul_lintegral_le_via_directChart": {
+    "exit": 0,
+    "nodes": 73019,
+    "missing": 0,
+    "log": "audit-1.json"
+  },
+  "IntegralPlace.IsStdLevel.lintegral_shells_le": {
+    "exit": 0,
+    "nodes": 44954,
+    "missing": 0,
+    "log": "audit-2.json"
+  },
+  "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": {
+    "exit": 0,
+    "nodes": 44959,
+    "missing": 0,
+    "log": "audit-3.json"
+  }
+}

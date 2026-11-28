@@ -1,0 +1,231 @@
+{
+  "source_blob": "0813311a1a745edc1e4ddc6a788df25df0b13f9c",
+  "accepted_source_blob": "cba0a141fd47c34b792021c679b5451ebde7d3bf",
+  "roots": [
+    "IsCutBessel.formConst_mul_lintegral_le",
+    "IsCutBessel.formConst_mul_lintegral_le_via_directChart",
+    "IntegralPlace.IsStdLevel.lintegral_shells_le",
+    "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart"
+  ],
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "all_requested_checks_ok": true,
+  "new_Lean_execution": true,
+  "full_RH_replay": false,
+  "human_assembly_verified": false,
+  "build": {
+    "returncode": 0,
+    "seconds": 732.42,
+    "log": "b2_build.log"
+  },
+  "original_probes": {
+    "returncode": 0,
+    "seconds": 3.72,
+    "log": "original_callers.log",
+    "axioms": {
+      "IsCutBessel.formConst_mul_lintegral_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "accepted_source_replay": {
+    "returncode": 0,
+    "seconds": 6.73,
+    "log": "accepted_source_replay.log",
+    "axioms": {
+      "Gauge.lintegral_floorWeight_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_floorWeight_le_directChart_bridge": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_selfNorm_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_selfNorm_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_positions_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Gauge.lintegral_positions_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "markers": {
+      "RUN85_SELF:": true,
+      "RUN85_POSITIONS:": true
+    },
+    "object_sha256": "902f57571e47bc7c2a78e1de44514f4d7a59122238ca6728472fdf62803f10c3"
+  },
+  "shell_compile": {
+    "returncode": 0,
+    "seconds": 3.77,
+    "log": "shell_compile.log",
+    "axioms": {
+      "IsCutBessel.formConst_mul_lintegral_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.formConst_mul_lintegral_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true,
+    "markers": {
+      "RUN90_SHELL: IsCutBessel.formConst_mul_lintegral_le_via_directChart": true,
+      "RUN90_SHELL: IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": true
+    },
+    "object_sha256": "ff60aeb9ba8de9a11f291e8f0384182c2b56330ed52e901ede6e8c4035bcfa7b"
+  },
+  "graph_source_blob": "bc061599f6d187db32d0d4f125f5fcb017df58e2",
+  "graph": {
+    "returncode": 0,
+    "seconds": 32.27,
+    "log": "graph.log",
+    "axioms": {
+      "IsCutBessel.formConst_mul_lintegral_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsCutBessel.formConst_mul_lintegral_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "root_masks": {
+    "Gauge.parseval_heisenbergMeasure_of_box": 15,
+    "Gauge.formMajorant_sq_le": 15,
+    "Gauge.lintegral_floorWeight_le": 5,
+    "Gauge.lintegral_selfNorm_le": 5,
+    "IsCutBessel.formConst_mul_lintegral_le": 1,
+    "Gauge.lintegral_mul_invWeight_le": 15,
+    "Gauge.lintegral_positions_le": 5,
+    "Gauge.com": 15,
+    "IsCutBessel.formConst_mul_lintegral_le_via_directChart": 2,
+    "Gauge.lintegral_selfNorm_le_via_directChart": 10,
+    "Gauge.lintegral_floorWeight_le_directChart_bridge": 10,
+    "Gauge.lintegral_positions_le_via_directChart": 10,
+    "IntegralPlace.IsStdLevel.lintegral_shells_le": 4,
+    "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": 8
+  },
+  "reachability_guards": {
+    "new_chain_0": true,
+    "new_chain_1": true,
+    "new_chain_2": true,
+    "old_chain_0": true,
+    "old_chain_1": true,
+    "old_chain_2": true,
+    "majorant_retained": true,
+    "inverse_weight_retained": true,
+    "gauge_retained": true,
+    "parseval_retained": true,
+    "IsCutBessel.formConst_mul_lintegral_le_via_directChart:direct": true,
+    "IsCutBessel.formConst_mul_lintegral_le_via_directChart:exact_direct_delta": true,
+    "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart:direct": true,
+    "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart:exact_direct_delta": true
+  },
+  "indirect_old_masks": {
+    "Gauge.lintegral_floorWeight_le": 0,
+    "Gauge.lintegral_selfNorm_le": 0,
+    "Gauge.lintegral_positions_le": 0
+  },
+  "graph_summary": {
+    "roots": [
+      "IsCutBessel.formConst_mul_lintegral_le",
+      "IsCutBessel.formConst_mul_lintegral_le_via_directChart",
+      "IntegralPlace.IsStdLevel.lintegral_shells_le",
+      "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart"
+    ],
+    "nodes": 73765,
+    "edges": 2088097,
+    "missing": 0,
+    "mask_histogram": {
+      "3": 28795,
+      "15": 44210,
+      "5": 8,
+      "1": 1,
+      "10": 13,
+      "2": 1,
+      "12": 735,
+      "4": 1,
+      "8": 1
+    },
+    "per_root": {
+      "IsCutBessel.formConst_mul_lintegral_le": {
+        "exit": 0,
+        "nodes": 73014,
+        "missing": 0,
+        "log": "audit-0.json"
+      },
+      "IsCutBessel.formConst_mul_lintegral_le_via_directChart": {
+        "exit": 0,
+        "nodes": 73019,
+        "missing": 0,
+        "log": "audit-1.json"
+      },
+      "IntegralPlace.IsStdLevel.lintegral_shells_le": {
+        "exit": 0,
+        "nodes": 44954,
+        "missing": 0,
+        "log": "audit-2.json"
+      },
+      "IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart": {
+        "exit": 0,
+        "nodes": 44959,
+        "missing": 0,
+        "log": "audit-3.json"
+      }
+    },
+    "naive_repeated_nodes": 235946
+  },
+  "graph_sha256": "6bed97c0d0ab3a08963f9f3f875015973cc704a82ec5901e1acd0de178f24912"
+}

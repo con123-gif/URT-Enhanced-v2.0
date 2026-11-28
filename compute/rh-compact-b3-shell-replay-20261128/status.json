@@ -1,0 +1,188 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 914.43,
+  "tail": "{\"new_helper_theorems\": 8, \"original_caller_axiom_probes\": 2, \"negative_control_rejected\": true, \"caller_replacements_checked\": false, \"human_assembly_verified\": false, \"full_RH_replay\": false}\n",
+  "id": "rh-compact-b3-shell-replay-20261128",
+  "question": "Replay the existing RUN90 real and finite shell caller transports in the pinned compact workspace, using the exact accepted RUN89 source; require full original types, four axiom reports, and four constructor-inclusive graph audits with exact direct deltas and retained majorant, gauge, inverse-weight and Parseval dependencies. Record indirect old paths; no Main, B3 root or RH closure claim.",
+  "requested_by": "GPT Landau lane; continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN91_SHELL_NATIVE_REPLAY.py --out {out}",
+  "utc": "2026-11-28T01:52:44Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "7ba17908f95a884d1fdee6ad7e0da587f2c79a53",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46092592569",
+  "outputs_committed": [
+    {
+      "path": "RHRun85.lean",
+      "bytes": 28912,
+      "sha256": "af3fcccf028a25f1ab42451091b1e52753261e4f54be88ee1d8ccd679176dbb7"
+    },
+    {
+      "path": "RHRun85.olean",
+      "bytes": 3839760,
+      "sha256": "902f57571e47bc7c2a78e1de44514f4d7a59122238ca6728472fdf62803f10c3"
+    },
+    {
+      "path": "RHRun90Shells.lean",
+      "bytes": 8371,
+      "sha256": "6c7a823af9b418b06584d141fe70ebc73340180304369f2366bb6d016a70489b"
+    },
+    {
+      "path": "RHRun90Shells.olean",
+      "bytes": 4269824,
+      "sha256": "ff60aeb9ba8de9a11f291e8f0384182c2b56330ed52e901ede6e8c4035bcfa7b"
+    },
+    {
+      "path": "RHRun91ShellGraph.lean",
+      "bytes": 8147,
+      "sha256": "e694efde664da56e34bde0c34931bdb80c6723a9ba3cf0a3722a30c77806fe8a"
+    },
+    {
+      "path": "accepted_source_replay.log",
+      "bytes": 3454,
+      "sha256": "b7f2d3ee233cee1491a8529517af5629d532751ac42ac5ecafd88c87533cc0d9"
+    },
+    {
+      "path": "audit-0.json",
+      "bytes": 460,
+      "sha256": "355c5453950966b8a74869addbb936d9949bf6bf738d263d78eb3e5c1b30afa5"
+    },
+    {
+      "path": "audit-1.json",
+      "bytes": 460,
+      "sha256": "3d1be866fe146de9a68f5a1284bdcd2fc138e5041bf09e24763cc73770ebd959"
+    },
+    {
+      "path": "audit-2.json",
+      "bytes": 460,
+      "sha256": "82e800cc1cf334eb049a38a35e54758c8f40f6d7d06793122627a284ef90c297"
+    },
+    {
+      "path": "audit-3.json",
+      "bytes": 460,
+      "sha256": "cb035179ec8b10e7675ec8511bfc1d617f4bbbfdb41c49cce69247d0c9298463"
+    },
+    {
+      "path": "b2_build.log",
+      "bytes": 21075,
+      "sha256": "b9721ae7d1406e12a1a6d2481feec818e14f0bb953eef47abfe29d9925b0cfbb"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 1792,
+      "sha256": "ced18ab289030d5c2630ee9c953aeef054d8e136499894aa8dd14e5fa74de3b6"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "330a3f735733e59b501f59b969d8e3b2282253d24285d2b4e135118e06a1515f"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "graph.log",
+      "bytes": 446,
+      "sha256": "b31b51a55e21569e248caab10dc702a5a04b363250ae994be36b6fb16aa63f09"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 829,
+      "sha256": "29390df3d899261f6b418f30f434492e6249be12536eb01e854a2cf4ad43579d"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7437,
+      "sha256": "adbfe935c1eb1e2653624e40e8b60ea93186a85b97e3a0fe841dbd0b83abb381"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "1da8edea937ccdd1274b2d5c0d2ceab5b7f85f65a5bd8c7d872e814fb7f0c08f"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 206,
+      "sha256": "0e1df2ba10ed9e10dd8d5fde42fa30bf34c0d07564bc26cb2dec06beeb0e6239"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 922,
+      "sha256": "578e38e46f6eec0c5554dd283f0ce71f3f70b3d5d3578c9ba7c20aa53a8932dc"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "c15a90015f4c6a64aea834f275b77b23c6ccdae9a6604584322e31a4fe74bf6a"
+    },
+    {
+      "path": "root_audits.json",
+      "bytes": 567,
+      "sha256": "bef446e7bf0af0f6de8161eeefdb218ff63d9c6ad4c17e5dae5fe731866a6231"
+    },
+    {
+      "path": "run91_shell_receipt.json",
+      "bytes": 6768,
+      "sha256": "91bec9df9bc001ae84827b9a3ea19ce5328b7ad62ab788955ba876633e94bd0c"
+    },
+    {
+      "path": "shell_compile.log",
+      "bytes": 684,
+      "sha256": "ff5e5b77cdcd39cbe42b48872e42b0db28c8036a0b980d5353a30c6e4ac35777"
+    },
+    {
+      "path": "union_summary.json",
+      "bytes": 1116,
+      "sha256": "a57cd08e2619689f28b662c1748260c7f7602733e2d583e0dd017339be09a9f8"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "four_roots.jsonl",
+      "bytes": 146317524,
+      "sha256": "6bed97c0d0ab3a08963f9f3f875015973cc704a82ec5901e1acd0de178f24912"
+    },
+    {
+      "path": "root_membership.jsonl",
+      "bytes": 6859188,
+      "sha256": "5b183c39b07b905e4b3e4a3b0b7d264eb632f2a62baf2ed8f34c5c27116965ca"
+    }
+  ]
+}

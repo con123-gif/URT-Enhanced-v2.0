@@ -1,0 +1,6 @@
+'IsCutBessel.formConst_mul_lintegral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsCutBessel.formConst_mul_lintegral_le_via_directChart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IntegralPlace.IsStdLevel.lintegral_shells_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IntegralPlace.IsStdLevel.lintegral_shells_le_via_directChart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
