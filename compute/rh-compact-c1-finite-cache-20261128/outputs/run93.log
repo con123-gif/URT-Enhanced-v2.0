@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN93_C1_FINITE_NATIVE_REPLAY.py", line 239, in <module>
+    if __name__=="__main__": main()
+                             ^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN93_C1_FINITE_NATIVE_REPLAY.py", line 184, in main
+    need(all(Path(x).exists() for x in native_path.split(os.pathsep) if x),"invalid fresh Lean path")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN93_C1_FINITE_NATIVE_REPLAY.py", line 76, in need
+    raise RuntimeError(why)
+RuntimeError: invalid fresh Lean path

@@ -1,0 +1,50 @@
+{
+  "scope": "C1 finite arithmetic budget and actual fit-family roots",
+  "artifact_verified": true,
+  "native_verified": false,
+  "full_RH_replay": false,
+  "stages": {
+    "artifact_download": {
+      "returncode": 0,
+      "log": "artifact_download.log",
+      "log_sha256": "d47be693d0cce9296302f72ab12b8a8de6318d40db79706d4c2409044f70da7c"
+    },
+    "lean_download": {
+      "returncode": 0,
+      "log": "lean_download.log",
+      "log_sha256": "94c50d9abb3b588f5a8158ea18b6d58553f9df1981f076dcdc6dfcdd050cdd9e"
+    },
+    "lean_extract": {
+      "returncode": 0,
+      "log": "lean_extract.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_init": {
+      "returncode": 0,
+      "log": "source_init.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_fetch": {
+      "returncode": 0,
+      "log": "source_fetch.log",
+      "log_sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    "source_checkout": {
+      "returncode": 0,
+      "log": "source_checkout.log",
+      "log_sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "log": "mathlib_cache.log",
+      "log_sha256": "888d9c3fa4490e2a2afc1946713ab30ea697d8d44bbcca7b8cbb37014f1ab7cb"
+    },
+    "run93": {
+      "returncode": 1,
+      "log": "run93.log",
+      "log_sha256": "ca853670416969eac21de7f9ed53a10e672033a9276b033d59ece9020b6a9910"
+    }
+  },
+  "extracted_members": 158,
+  "error": "first failed phase: run93"
+}

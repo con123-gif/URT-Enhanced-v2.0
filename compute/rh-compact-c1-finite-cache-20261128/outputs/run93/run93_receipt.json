@@ -1,0 +1,24 @@
+{
+  "candidate": "850241aa06d82ee40d67b304db42c052e22ad862",
+  "peer": "fc1b4358908e084085f15e5f1a0cd9328232ffa1",
+  "roots": [
+    "exists_isFitFamily",
+    "c2_exists_isFitFamily",
+    "fit_budget_finite_run92",
+    "exists_isFitFamily_finite_late_run92",
+    "exists_isFitFamily_finite_fused_run92"
+  ],
+  "new_Lean_execution": false,
+  "all_requested_checks_ok": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "steps": {
+    "restore_original": {
+      "returncode": 0,
+      "seconds": 14.4,
+      "log": "restore_original.log"
+    }
+  },
+  "artifact_module_objects_authenticated": 13,
+  "failure": "invalid fresh Lean path"
+}
