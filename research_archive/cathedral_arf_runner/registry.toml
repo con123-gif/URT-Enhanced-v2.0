@@ -3799,3 +3799,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT theta lane; continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-c1-finite-cache-20261128"
+question = "Restore exact authenticated C1/C2 artifact 15234434421 via the public cache transport already exercised in A2; execute immutable RUN93 C1 finite-budget candidate with five original/replacement constructor-inclusive roots, eight standard-axiom reports, exact statement and supplier guards. Preserve all partial failures, original and reduced graphs. No cold FitTwistsExist build, squared C2 replay duplication, Main import or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN95_C1_AUTHENTICATED_CACHE_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT Galois lane; user continuation directive 2026-11-27"
+claim = "independent"
