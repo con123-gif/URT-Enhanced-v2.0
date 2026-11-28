@@ -3765,3 +3765,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT theta lane; continuation directive 2026-11-27"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-c2-squared-cache-20261128"
+question = "Retrieve exact retained C1/C2 artifact 15234434421 by the public artifact transport independently exercised by theta RUN97, verify outer and inner digests, restore only its own compiled objects and execute immutable RUN92 squared reciprocal-height and actual star with all six original/reduced constructor-inclusive roots and standard axiom guards. Preserve first failed phase and all prior evidence; no Main import, cold fit build, C1/C3 or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT character boxes lane; user continuation directive"
+claim = "independent"
