@@ -1,0 +1,29 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "roots": [
+    "IsPolar.exists_window_sub_mul_le",
+    "IsPolar.editor_eventually_window_mean",
+    "IsPolar.editor_window_from_mean"
+  ],
+  "mean_blob": "d6c08ec8cd4c003f4f3c4da6ae9d807e146a7dad",
+  "bridge_blob": "b99994a7e31c8676e856ee45ec4e27a783657962",
+  "mean_checked": false,
+  "bridge_checked": false,
+  "graph_checked": false,
+  "new_Lean_execution": true,
+  "arithmetic_premise_proved": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": false,
+  "polar_source_build": {
+    "returncode": 0,
+    "seconds": 138.45,
+    "log": "polar_source_build.log"
+  },
+  "EditorPolarMean": {
+    "returncode": 1,
+    "seconds": 4.43,
+    "log": "EditorPolarMean.log"
+  },
+  "failure": "EditorPolarMean failed"
+}

@@ -1,0 +1,92 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: EditorPolarMean failed",
+  "returncode": 1,
+  "wall_s": 261.41,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py\", line 154, in <module>\n    exec(code,{\"__file__\":str(BOOT),\"__name__\":\"__main__\",\"editor_stage\":editor_stage})\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py\", line 209, in <module>\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py\", line 140, in main\n    # Keep both stages even when one fails. RUN89 owns its detailed receipt.\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py\", line 110, in editor_stage\n    run(module,[\"lean\",\"--tstack=400000\",\"-Dpp.fullNames=true\",\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py\", line 96, in run\n    graph.require(state[label][\"returncode\"] == 0,label+\" failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: EditorPolarMean failed\n",
+  "id": "rh-compact-editor-polar-mean-20261128",
+  "question": "Native replay immutable strict polar mean and original-statement bridge, using proven pinned bootstrap and only OneSidedCriterion source closure; require three constructor-inclusive original/mean/bridge root audits, exact original type, standard axioms, absence of circular old theorem and retained moment supplier. Preserve first failure. No Main, A/B/C, arithmetic premise or RH closure.",
+  "requested_by": "GPT proof editor; continuation directive",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py --out {out}",
+  "utc": "2026-11-28T09:08:39Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "8ca68829003007c5efeb604caa6ed37ddac12814",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46128665889",
+  "outputs_committed": [
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "67151e7859059500884caee9f54c5325fd28f7041efe0c202b98ae8cbf9a85df"
+    },
+    {
+      "path": "editor/EditorPolarMean.lean",
+      "bytes": 10009,
+      "sha256": "e65498ec217889efa793425d0b46a321009b2f9d5b27a80b53cc6802bcc47a27"
+    },
+    {
+      "path": "editor/EditorPolarMean.log",
+      "bytes": 4323,
+      "sha256": "14d6a2b49898660eb797af110fca1f834508b5866e08e381337f474cf6a6052e"
+    },
+    {
+      "path": "editor/polar_source_build.log",
+      "bytes": 2725,
+      "sha256": "3d3c6ad7aba58e1d0326fd1fb6722df89bb38c982564aef32a16c22dd9994409"
+    },
+    {
+      "path": "editor_polar_receipt.json",
+      "bytes": 840,
+      "sha256": "8ca9630f9acadd53b4bcc5ea39bdc300e2e80607d4bbbca227745d0b2fbc7528"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7442,
+      "sha256": "3586b543b9909f04664d7cf73c3f409d5c68c4418c721e812cea520bd60e31f5"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "run91_receipt.json",
+      "bytes": 3573,
+      "sha256": "8d8e47b45ea602197b4a469fc71bcffe2801208e1cf2a89db3e9513534896163"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

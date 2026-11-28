@@ -1,0 +1,73 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/editor/EditorPolarMean.lean:80:37: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+E : ℝ → ℝ
+r : ℂ → ℂ
+E' : ℝ → ℝ
+r' : ℂ → ℂ
+h : IsPolar E r
+h' : IsPolar E' r'
+R : ℝ
+p : 3 < R
+q : R < 3 + 1
+x✝ :
+  (∀ᶠ (t : ℝ) in Filter.atTop,
+      ((∀ x ≥ 0, -(t * rexp x) ≤ E x) ∧ ∀ x ≥ 0, E x ≤ t * rexp x) ∧
+        (∀ (x : ℕ),
+            MeasureTheory.Integrable (fun v => v ^ x * rexp (-3 * v) * E v)
+              (MeasureTheory.MeasureSpace.volume.restrict (Set.Ioi 0))) ∧
+          (∀ (x : ℕ), -(↑x ! * t / R ^ x) ≤ ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E v) ∧
+            ∀ (x : ℕ), ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E v ≤ ↑x ! * t / R ^ x) ∧
+    (∀ᶠ (t : ℝ) in Filter.atTop,
+        ((∀ x ≥ 0, -(t * rexp x) ≤ E' x) ∧ ∀ x ≥ 0, E' x ≤ t * rexp x) ∧
+          (∀ (x : ℕ),
+              MeasureTheory.Integrable (fun v => v ^ x * rexp (-3 * v) * E' v)
+                (MeasureTheory.MeasureSpace.volume.restrict (Set.Ioi 0))) ∧
+            (∀ (x : ℕ), -(↑x ! * t / R ^ x) ≤ ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E' v) ∧
+              ∀ (x : ℕ), ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E' v ≤ ↑x ! * t / R ^ x) ∧
+      3 < R ∧ R < 3 + 1
+c✝ :
+  ∀ᶠ (t : ℝ) in Filter.atTop,
+    ((∀ x ≥ 0, -(t * rexp x) ≤ E x) ∧ ∀ x ≥ 0, E x ≤ t * rexp x) ∧
+      (∀ (x : ℕ),
+          MeasureTheory.Integrable (fun v => v ^ x * rexp (-3 * v) * E v)
+            (MeasureTheory.MeasureSpace.volume.restrict (Set.Ioi 0))) ∧
+        (∀ (x : ℕ), -(↑x ! * t / R ^ x) ≤ ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E v) ∧
+          ∀ (x : ℕ), ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E v ≤ ↑x ! * t / R ^ x
+d✝ :
+  ∀ᶠ (t : ℝ) in Filter.atTop,
+    ((∀ x ≥ 0, -(t * rexp x) ≤ E' x) ∧ ∀ x ≥ 0, E' x ≤ t * rexp x) ∧
+      (∀ (x : ℕ),
+          MeasureTheory.Integrable (fun v => v ^ x * rexp (-3 * v) * E' v)
+            (MeasureTheory.MeasureSpace.volume.restrict (Set.Ioi 0))) ∧
+        (∀ (x : ℕ), -(↑x ! * t / R ^ x) ≤ ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E' v) ∧
+          ∀ (x : ℕ), ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E' v ≤ ↑x ! * t / R ^ x
+t : ℝ
+c : (∀ x ≥ 0, -(t * rexp x) ≤ E x) ∧ ∀ x ≥ 0, E x ≤ t * rexp x
+ia :
+  ∀ (x : ℕ),
+    MeasureTheory.Integrable (fun v => v ^ x * rexp (-3 * v) * E v)
+      (MeasureTheory.MeasureSpace.volume.restrict (Set.Ioi 0))
+a :
+  (∀ (x : ℕ), -(↑x ! * t / R ^ x) ≤ ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E v) ∧
+    ∀ (x : ℕ), ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E v ≤ ↑x ! * t / R ^ x
+d : (∀ x ≥ 0, -(t * rexp x) ≤ E' x) ∧ ∀ x ≥ 0, E' x ≤ t * rexp x
+ib :
+  ∀ (x : ℕ),
+    MeasureTheory.Integrable (fun v => v ^ x * rexp (-3 * v) * E' v)
+      (MeasureTheory.MeasureSpace.volume.restrict (Set.Ioi 0))
+b :
+  (∀ (x : ℕ), -(↑x ! * t / R ^ x) ≤ ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E' v) ∧
+    ∀ (x : ℕ), ∫ (v : ℝ) in Set.Ioi 0, v ^ x * rexp (-3 * v) * E' v ≤ ↑x ! * t / R ^ x
+u : 99 / (Real.log R - Real.log 3) ≤ t
+a✝ : 9 ≤ t
+⊢ (∀ x ∈ Set.Icc 0 (rexp t),
+      MeasureTheory.Integrable (fun v => v ^ ⌈t ^ 2 / 9⌉₊ * rexp (-3 * v))
+        (MeasureTheory.MeasureSpace.volume.restrict (Set.Icc t (t ^ 2)))) ∧
+    (∀ x ∈ Set.Icc 0 (rexp t),
+        MeasureTheory.Integrable (fun v => v ^ ⌈t ^ 2 / 9⌉₊ * rexp (-3 * v) * (E v - E' v * x))
+          (MeasureTheory.MeasureSpace.volume.restrict (Set.Icc t (t ^ 2)))) ∧
+      ∀ x ∈ Set.Icc 0 (rexp t),
+        ∫ (v : ℝ) in Set.Icc t (t ^ 2), v ^ ⌈t ^ 2 / 9⌉₊ * rexp (-3 * v) * (E v - E' v * x) <
+          rexp (-t) * ∫ (v : ℝ) in Set.Icc t (t ^ 2), v ^ ⌈t ^ 2 / 9⌉₊ * rexp (-3 * v)
+'IsPolar.editor_eventually_window_mean' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/editor/EditorPolarMean.lean:180:0: error: EDITOR_POLAR_MEAN nonstandard axiom

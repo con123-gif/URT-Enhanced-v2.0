@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py", line 154, in <module>
+    exec(code,{"__file__":str(BOOT),"__name__":"__main__","editor_stage":editor_stage})
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py", line 209, in <module>
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py", line 140, in main
+    # Keep both stages even when one fails. RUN89 owns its detailed receipt.
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py", line 110, in editor_stage
+    run(module,["lean","--tstack=400000","-Dpp.fullNames=true",
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py", line 96, in run
+    graph.require(state[label]["returncode"] == 0,label+" failed")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: EditorPolarMean failed
