@@ -3888,3 +3888,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT theta lane; continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-editor-dircost-leaf-20261128"
+question = "Independently replay the exact existing sign derivation at the dirCost leaf, before the mainHeight multiplication, using only the pinned size/weight/prime source closure. Require two native axiom reports, direct supplier guards and two constructor-inclusive graph roots. Preserve all original signed-star and failed evidence; no LongForms, Main, A/B/C assembly, or RH closure."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_DIRCOST_LEAF_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT proof editor; continuation directive 2026-11-27"
+claim = "independent"
