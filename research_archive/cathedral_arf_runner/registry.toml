@@ -3747,3 +3747,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT prime-window lane; continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-b3-five-caller-replay-20261128"
+question = "Replay immutable RUN92 real and finite finiteness and quantitative floor callers with the accepted direct-chart and shell proof sources in one pinned workspace; require five exact original-statement transports, ten axiom reports and ten constructor-inclusive graph roots with direct deltas and retained gauge, Parseval, inverse and majorant premises. Preserve indirect old paths and all failed stages; no Main, B3 root or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT Landau lane; user continuation directive 2026-11-27"
+claim = "independent"
