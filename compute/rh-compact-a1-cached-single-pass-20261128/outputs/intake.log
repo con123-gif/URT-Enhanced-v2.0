@@ -1,0 +1,11 @@
+{
+  "member_count": 1958,
+  "required_object_sha256": {
+    ".lake/build/lib/lean/New/Columns/LocalStatement.olean": "63a3b600e88b9b762b1d055267778eb9612af14cf4ded985c862a780168c12d5",
+    ".lake/build/lib/lean/New/Curve/ConjugatesOfJets.olean": "acb50f6d2a1f8c7ed3d96b9f2c2e2d927b916de7c4b223ece0fdddbd17cbaad9"
+  },
+  "archive_sha256": "b6f3c3e028582c6d43f415ddfc3fa8ae1e3ba5d1d3ac529020a1606ad601ff03",
+  "cache_intake_verified": true,
+  "native_verified": false,
+  "full_RH_replay": false
+}

@@ -1,0 +1,11 @@
+{
+  "source_blob": "0b809db534349fdf6b5d179365a6045f28d7dc7c",
+  "candidate_blob": "29b7e1d057d721dedf6cde6a7242c2f2b2d5f598",
+  "static_controls_rejected": 4,
+  "cache_verified": true,
+  "native_verified": false,
+  "graph_and_prune_complete": false,
+  "full_RH_replay": false,
+  "combined_accepted": false,
+  "error": "RUN65 leaf/graph audit not accepted; inspect actual logs"
+}

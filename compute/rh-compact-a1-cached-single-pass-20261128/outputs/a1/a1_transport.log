@@ -1,0 +1,69 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:99:7: error: Application type mismatch: The argument
+  fun a => Valued.v a < 1
+has type
+  LocField w → Prop
+of sort `Type u_1` but is expected to have type
+  Matrix n n (LocField w) → Prop
+of sort `Type (max u_1 u_2)` in the application
+  {a | Valued.v a < 1}
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:99:54: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  X
+has type `Prop` which does not have the necessary form.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:100:7: error: Application type mismatch: The argument
+  fun a => Valued.v a < 1
+has type
+  LocField w → Prop
+of sort `Type u_1` but is expected to have type
+  Matrix n n (LocField w) → Prop
+of sort `Type (max u_1 u_2)` in the application
+  {a | Valued.v a < 1}
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:100:57: error: Application type mismatch: The argument
+  X
+has type
+  Prop
+of sort `Type` but is expected to have type
+  Matrix n n (LocField w)
+of sort `Type (max u_2 u_1)` in the application
+  Y X
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:100:54: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HSub (LocField w) ℕ Prop
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:77:70: error: unsolved goals
+E : Type u_1
+inst✝² : Field E
+inst✝¹ : NumberField E
+n : Type u_2
+inst✝ : Fintype n
+w : FinPlace E
+A d : GL n (LocField w)
+hA : A ∈ Kw n w
+f : E →+* LocField w := algebraMap E (LocField w)
+O : Subring (LocField w) := (LocInt w).toSubring
+Y : Matrix n n (LocField w) → Matrix n n (LocField w) := fun X => ↑d⁻¹ * (↑A⁻¹ * X) * ↑d
+hO : IsOpen ↑O
+OM : Set (Matrix n n (LocField w)) := (↑O).matrix
+hMat : IsOpen OM
+hOne : 1 ∈ OM
+hY : Continuous Y
+hYA : Y ↑A = 1
+hA' : (∀ (a b : n), Valued.v (↑A a b) ≤ 1) ∧ Valued.v (↑A).det = 1
+⊢ ∃ g,
+    (GeneralLinearGroup.map (algebraMap E (LocField w))) g ∈ Kw n w ∧
+      d⁻¹ * (A⁻¹ * (GeneralLinearGroup.map (algebraMap E (LocField w))) g) * d ∈ Kw n w
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:148:22: error: Application type mismatch: The argument
+  L.markOperator ⟨l, a⟩
+has type
+  @Module.End (↥embValRing) (SubmoduleElem D.Column) (SubsemiringClass.toCommSemiring embValRing).toSemiring
+    D.Column.addCommMonoid D.Column.module'
+but is expected to have type
+  @Module.End ↥embValRing ?m.162 CommRing.toCommSemiring.toSemiring AddCommGroup.toAddCommMonoid ?m.165
+in the application
+  HasType ↑T.p ?m.180 s (L.markOperator ⟨l, a⟩)
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:278:30: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:287:48: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:326:37: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:334:14: error(lean.unknownIdentifier): Unknown constant `Columns.hasType_markOperator_run55`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:335:14: error(lean.unknownIdentifier): Unknown constant `Data.IsMarked.hasType_markOperator_run57`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:336:14: error(lean.unknownIdentifier): Unknown constant `Data.IsMarked.hasType_prod_markOperator_pow_run57`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/a1/MarkedTransportRun57.lean:337:14: error(lean.unknownIdentifier): Unknown constant `Data.exists_indexDvd_Bmu_divisible_run57`

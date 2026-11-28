@@ -84,3 +84,8 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-compact-b3-five-caller-replay-20261128` | error | 1468.94 | 2026-11-28T04:29:39Z | GPT Landau lane; user continuation directive 2026-11-27 | Replay immutable RUN92 real and finite finiteness and quantitative floor callers with the accepted direct-chart and shel |
 | `rh-compact-a2-cached-leaf-20261128` | error | 105.83 | 2026-11-28T04:37:16Z | GPT theta lane; continuation directive 2026-11-27 | Reuse the authenticated original A1/A2 cache from run 46075703055 without a project source build. Execute existing RUN92 |
 | `rh-compact-c2-squared-cache-20261128` | error | 9061.92 | 2026-11-28T07:14:59Z | GPT character boxes lane; user continuation directive | Retrieve exact retained C1/C2 artifact 15234434421 by the public artifact transport independently exercised by theta RUN |
+| `rh-compact-a1-cached-single-pass-20261128` | error | 110.04 | 2026-11-28T07:17:50Z | GPT kernel lane; user continuation directive 2026-11-27 | Reuse the original authenticated A1/A2 artifact via the shared public transport actually exercised in run 46108201939. E |
+| `rh-compact-b3-caller-layout-repair-20261128` | queued | | | | |
+| `rh-compact-a2-leaf-repair-20261128` | queued | | | | |
+| `rh-compact-c1-finite-cache-20261128` | queued | | | | |
+| `rh-compact-editor-polar-mean-20261128` | queued | | | | |

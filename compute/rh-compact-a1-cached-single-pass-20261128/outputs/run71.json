@@ -1,0 +1,56 @@
+{
+  "scope": "A1 cached single-pass replay only",
+  "native_verified": false,
+  "graph_and_prune_complete": false,
+  "full_RH_replay": false,
+  "stages": {
+    "artifact_download": {
+      "returncode": 0,
+      "log": "artifact_download.log",
+      "log_sha256": "ec0e24128b38ede148fa839da6da19059d617a57f71ff7f27a417dbf205ecad9"
+    },
+    "intake": {
+      "returncode": 0,
+      "log": "intake.log",
+      "log_sha256": "4cc6f593e9983c62c7e3c722b9def3da5f6ebdc12c9858e7f509808bae455b9c"
+    },
+    "lean_download": {
+      "returncode": 0,
+      "log": "lean_download.log",
+      "log_sha256": "5ce33be5d4bbc968ded2116659c9bab6f57d8ab0cbc6876ec2b6b2b51549a031"
+    },
+    "lean_extract": {
+      "returncode": 0,
+      "log": "lean_extract.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_init": {
+      "returncode": 0,
+      "log": "source_init.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_fetch": {
+      "returncode": 0,
+      "log": "source_fetch.log",
+      "log_sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    "source_checkout": {
+      "returncode": 0,
+      "log": "source_checkout.log",
+      "log_sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "log": "mathlib_cache.log",
+      "log_sha256": "1691d6718cdeda6a807a82e530def2f255426d48963b9524c8b6b2385b4ac2c1"
+    },
+    "a1_replay": {
+      "returncode": 1,
+      "log": "a1_replay.log",
+      "log_sha256": "1cc09dcd7420f03c6e198b6522eaa5e7b8fc093b4941bb7b9fc6b57a749c78d0"
+    }
+  },
+  "artifact_verified": true,
+  "cache_verified_by_run65": true,
+  "error": "RUN70 leaf or graph/prune incomplete"
+}

@@ -1,0 +1,132 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: RUN70 leaf or graph/prune incomplete",
+  "returncode": 1,
+  "wall_s": 110.04,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN71_A1_CACHED_NATIVE_QUEUE.py\", line 182, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN71_A1_CACHED_NATIVE_QUEUE.py\", line 167, in main\n    require(rc==0 and leaf.get(\"combined_accepted\") is True and\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN71_A1_CACHED_NATIVE_QUEUE.py\", line 66, in require\n    raise RuntimeError(msg)\nRuntimeError: RUN70 leaf or graph/prune incomplete\n",
+  "id": "rh-compact-a1-cached-single-pass-20261128",
+  "question": "Reuse the original authenticated A1/A2 artifact via the shared public transport actually exercised in run 46108201939. Execute immutable RUN70 corrected A1 single-pass kernel leaf, exact statements, four original/four replacement constructor-inclusive graph roots and guarded native scan/prune; preserve the first failed phase and all original/reduced graphs and axioms. No A2 or Main import, cold project build or RH closure claim.",
+  "requested_by": "GPT kernel lane; user continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN71_A1_CACHED_NATIVE_QUEUE.py --out {out}",
+  "utc": "2026-11-28T07:17:50Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "1e7b35bbba402c17d0142155b9f6f45addfa75c9",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46114460776",
+  "outputs_committed": [
+    {
+      "path": "a1/MarkedTransportRun57.lean",
+      "bytes": 19561,
+      "sha256": "ac45cb7bdd54207680152178b4975c927acca4908d8e56174b2c9df21e4fb66f"
+    },
+    {
+      "path": "a1/MarkedTransportRun57_failed_baseline.lean",
+      "bytes": 15788,
+      "sha256": "f92933890d0cc039de2b2138ce9d9dd04f6cd860298a9b62be1e504ed28e0d2c"
+    },
+    {
+      "path": "a1/RUN65_A1_HEADER_REPAIR.lean",
+      "bytes": 19561,
+      "sha256": "ac45cb7bdd54207680152178b4975c927acca4908d8e56174b2c9df21e4fb66f"
+    },
+    {
+      "path": "a1/a1_generate.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "a1/a1_prior_run55/MarkedCallerRun55.lean",
+      "bytes": 18109,
+      "sha256": "b981bd83d12037756d6ca5e58043d718ef2f32b6314d22dbf5039f1417c901ec"
+    },
+    {
+      "path": "a1/a1_prior_run55/preflight.json",
+      "bytes": 182,
+      "sha256": "194566f41c9848f677b4869db315a25488ecfb680336436560892caafbafc165"
+    },
+    {
+      "path": "a1/a1_transport.json",
+      "bytes": 780,
+      "sha256": "5f688d04d897d98bddda71d3e990ca6b42da88ff2058b4b21555a6be6cd15033"
+    },
+    {
+      "path": "a1/a1_transport.log",
+      "bytes": 4529,
+      "sha256": "4afc141d9e3bd2265413f37a7d279a991745dc49935e8f0e5ddc8a205126678e"
+    },
+    {
+      "path": "a1/retry_summary.json",
+      "bytes": 126,
+      "sha256": "a96500ae6ba91bc9c466310e7d6c1545566b909b63693650659c77c5c554ba32"
+    },
+    {
+      "path": "a1/run65_result.json",
+      "bytes": 380,
+      "sha256": "6ce58fbb91f6857ce525f81ec64abecd98563fee387c130bf1081fc5e0df1674"
+    },
+    {
+      "path": "a1_replay.log",
+      "bytes": 1058,
+      "sha256": "1cc09dcd7420f03c6e198b6522eaa5e7b8fc093b4941bb7b9fc6b57a749c78d0"
+    },
+    {
+      "path": "artifact_download.log",
+      "bytes": 938,
+      "sha256": "ec0e24128b38ede148fa839da6da19059d617a57f71ff7f27a417dbf205ecad9"
+    },
+    {
+      "path": "intake.json",
+      "bytes": 495,
+      "sha256": "4cc6f593e9983c62c7e3c722b9def3da5f6ebdc12c9858e7f509808bae455b9c"
+    },
+    {
+      "path": "intake.log",
+      "bytes": 495,
+      "sha256": "4cc6f593e9983c62c7e3c722b9def3da5f6ebdc12c9858e7f509808bae455b9c"
+    },
+    {
+      "path": "lean_download.log",
+      "bytes": 782,
+      "sha256": "5ce33be5d4bbc968ded2116659c9bab6f57d8ab0cbc6876ec2b6b2b51549a031"
+    },
+    {
+      "path": "lean_extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7883,
+      "sha256": "1691d6718cdeda6a807a82e530def2f255426d48963b9524c8b6b2385b4ac2c1"
+    },
+    {
+      "path": "run71.json",
+      "bytes": 1824,
+      "sha256": "d2608d652b9a31d0070f4bb5927e27ae99f509efbf647f2c5be9e21e01862493"
+    },
+    {
+      "path": "source_checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "source_fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "source_init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "outputs_artifact_only": []
+}
