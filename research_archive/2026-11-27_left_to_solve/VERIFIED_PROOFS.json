@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "confirmed_merged_accepted": 3,
+  "confirmed_merged_accepted": 4,
   "target_minimum": 20,
   "full_proof_submissions": 5,
   "complete_kernel_checked_candidates": 36,
@@ -412,9 +412,9 @@
         "Quot.sound"
       ],
       "verification_kind": "combined_exact_target_kernel_pass",
-      "merged_and_credited": "not_confirmed",
+      "merged_and_credited": "confirmed_repository_merge_and_official_bot_credit; live_public_site_feed_not_accessible_this_run",
       "proof_summary": "Full arbitrary nonzero real seed six-distinct-limits conjecture disproved by exact period-six scaling; A329654 is an alias.",
-      "remaining_obstruction": "Official full disproof PR13332 actually checker-accepted23:11:08 with standard axioms. Stillopen/unmerged onfresh23:18:43; actualmerge/publiccreditpending. No activelease in this lane.",
+      "remaining_obstruction": "Official formal proof accepted, merged, credited. Bot says statement being verified before counts as open problem solved. Public site profile inaccessible; originality unconfirmed.",
       "statement_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9501",
       "statement_state": "closed_merged",
       "statement_merged": true,
@@ -423,7 +423,7 @@
       "registered_source_blob": "ece44c696ff7c6a16926563bacde6a36ea462e76",
       "registered_source_exact_byte_match": true,
       "proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/13332",
-      "proof_pr_state": "open",
+      "proof_pr_state": "closed_merged",
       "proof_submission_head": "07f5d92e51a514cdf0c195debb7ddd67e3fe7f30",
       "proof_checker_verdict": "accepted",
       "imported_target_verification": {
@@ -460,7 +460,12 @@
         "errors": [],
         "reason": "kernel accepted; axioms within propext, Classical.choice, Quot.sound",
         "root_actual_log_zip_digest_and_verdict_json_read": true
-      }
+      },
+      "proof_merged_at": "2026-11-28T02:12:52Z",
+      "proof_merge_commit": "0a02f00c3f1333fee90981edaa191f70a21393ce",
+      "official_credit_comment": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/13332#issuecomment-7232209171",
+      "official_main_proof_blob": "9a4d420b3f89e23e0ca149066e95680712aefabe",
+      "genuine_open_status": "source_verification_and_independent_novelty_unconfirmed"
     },
     {
       "problem_id": "oeis-a383246",
@@ -1203,9 +1208,9 @@
   ],
   "continuing_beyond_minimum": true,
   "complete_kernel_checked_certificates": 37,
-  "accepted_formal_proof_submissions": 3,
+  "accepted_formal_proof_submissions": 4,
   "confirmed_genuine_open_resolutions": 0,
-  "novelty_status": "Three official accepted formal proofs; originality is separate and not established. A158960 is already implied by an explicit 2018 source identity and is excluded from the conservative genuinely-open count.",
+  "novelty_status": "Four official merged accepted formal proofs; originality separate and not established. A158960 follows an explicit 2018 source identity and remains excluded from conservative genuinely-open count. A329813 official bot states proof accepted, statement being verified; no original-discovery count until independent source/novelty confirmation.",
   "official_new_statement_prs_this_batch": [
     9480,
     9482,
@@ -1229,7 +1234,7 @@
     14393
   ],
   "interactive_leases_for_this_batch": "Both latest research/publication lanes MO309485 andA385478 actually DONE/releasedsubmittedHTTP200, see exactreceipt/times. Rootlatestinteractive lanes currently0active. This isNOTanowner-global count: scheduledworkersmayholdothers. HistoricalMO474release500 remains unconfirmed, no stale-token operation.",
-  "pending_full_proof_submissions": 2,
+  "pending_full_proof_submissions": 1,
   "record_updated_utc": "2026-11-27T23:54:41.035Z",
   "prepared_full_proof_branches": 7,
   "proof_stage_claim_service": "Historical500claim failures preserved perrecord. Current normal registration claims forMO513259,A396949,MO487180,A181674 allreturnedactual200 andcompletedrealcoordination/release. Currentofficial503busy/nochangefallback exists andwastruthfullyusedforA068991;no inventedtokens, nooverride403/409/410. Full-proofstage awaitsactualregisteredtargets.",
@@ -1250,7 +1255,7 @@
   "latest_submission_rules": "Current official503busy fallback/manual-selection rules permit truthful contributions as specified; read currentrules beforeeachaction. Latest four normal registration claims workedHTTP200; tokenprivacy andownercap/teamcoordinationremainmandatory. No blanket noassignment stop wherecurrentrules explicitlyauthorizesfallback.",
   "full_proof_stage_coordination": {
     "mo_198816": "FullPR10139 acceptedupstream, actualmerge/creditpending.",
-    "oeis_a329813": "FullPR13332 acceptedupstream23:11:08, actualmerge/creditpending.",
+    "oeis_a329813": "PR13332 actually merged02:12:52; official bot accepted/merged/credited. Site statement fidelity review remains; no original discovery count.",
     "mo_309485": "StatementPR14443 submitted withcompletecheckedproof; leaseclosed. Afteractualmerge, exactimportedtargetcheck+separatefullPR underfreshclaim/racegate.",
     "oeis_a385478": "StatementPR14393 submitted withcompletecheckeddisproof; leaseclosed. Afteractualmerge, exactimportedtargetcheck+separatefullPR underfreshclaim/racegate.",
     "mo_430643": "Foreignregistration13174 pending. ExactTARGET_VARIANTS adapter8bad actualpass; use it afteractualmerge/importedcheck/freshrace. No own duplicate statement/fullPR.",
@@ -1275,5 +1280,6 @@
   },
   "source_ambiguity_holds": {
     "mo-488756": "Fragmented-star elimination hereditary under every fixed global edge order, including fixed tie refinement. Literal source leaves tie sorting/singleton terminal implicit. Root allzero weights with input-dependent deterministic tie sorting gives unfragmentedA1234/fragmentedB12345 counter to unconstrained tie interpretation. Both valid cases under independent challenge; no silent extra assumptions, no claim/Lean/registration/count."
-  }
+  },
+  "latest_merged_proof_audit": "HOURLY_0224_A395110_BOUNDARY_TWO_CLASSIFICATION_AND_A329813_MERGE.md"
 }
