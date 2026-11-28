@@ -1,0 +1,228 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 1095.63,
+  "tail": "{\"new_helper_theorems\": 8, \"original_caller_axiom_probes\": 3, \"negative_control_rejected\": true, \"caller_replacements_checked\": false, \"human_assembly_verified\": false, \"full_RH_replay\": false}\n",
+  "id": "rh-compact-b3-direct-term-repair-20261127",
+  "question": "Repair actual B3 run 46080383664 selfNorm whnf timeout by reusing the original checked selfNorm proof value and exact-type direct-chart floor bridge. Replay the same six full graph roots, standard axiom gates and 13 adapted guards; preserve earlier failure, both inverse charts, Parseval and the unverified conditional helper obligation. No Main or RH closure claim.",
+  "requested_by": "GPT Landau lane; user continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN89_DIRECT_TERM_REPLAY.py --out {out}",
+  "utc": "2026-11-28T00:14:55Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "91a1d2ee78b4be708836d6165014411be6c113e1",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46082365501",
+  "outputs_committed": [
+    {
+      "path": "b2_build.log",
+      "bytes": 14574,
+      "sha256": "6c3acaf10e85df22bbb71786b62d1859bf5ed5c96e9990c9b4278cabd005ddbd"
+    },
+    {
+      "path": "b2_native_results.json",
+      "bytes": 1892,
+      "sha256": "0d7ac14aef77123543bc7169ecb1f26207424a757599dc678fb3ae4bf58c6f07"
+    },
+    {
+      "path": "b3/RHRun85.lean",
+      "bytes": 28912,
+      "sha256": "af3fcccf028a25f1ab42451091b1e52753261e4f54be88ee1d8ccd679176dbb7"
+    },
+    {
+      "path": "b3/RHRun85.olean",
+      "bytes": 3839760,
+      "sha256": "902f57571e47bc7c2a78e1de44514f4d7a59122238ca6728472fdf62803f10c3"
+    },
+    {
+      "path": "b3/RHRun85Graph.lean",
+      "bytes": 8229,
+      "sha256": "6701d930fba3fa9f0351e0df6f194bfff39c18abcd231d23d0f38b294cfc6c03"
+    },
+    {
+      "path": "b3/audit-0.json",
+      "bytes": 459,
+      "sha256": "b29f62190ddbc6696d44c59394522ef3aba2b5c0e9cf54cbcd151246ef1ea45a"
+    },
+    {
+      "path": "b3/audit-1.json",
+      "bytes": 459,
+      "sha256": "47e18cfe34a635fbfe93eeb13ece8c0ead8ac124445262b6dda3e52921a5dc1f"
+    },
+    {
+      "path": "b3/audit-2.json",
+      "bytes": 459,
+      "sha256": "13569660ccb344e9abbf4dc050672c5be819125733faa8009fddacb34fd42a95"
+    },
+    {
+      "path": "b3/audit-3.json",
+      "bytes": 459,
+      "sha256": "e3e319aa8b8b74181ee365a3cc01ff2367b3391844eaa228a4111c01bb0d7592"
+    },
+    {
+      "path": "b3/audit-4.json",
+      "bytes": 459,
+      "sha256": "b6d4e5d212eb5b7674f5e26a40db2efbec07d7fe0db93d236c9641c01ddb3a8b"
+    },
+    {
+      "path": "b3/audit-5.json",
+      "bytes": 459,
+      "sha256": "eedb9b0ef703c0021b9920adff36a0cd6c233c4c899b697188548804b9c344bd"
+    },
+    {
+      "path": "b3/compile.log",
+      "bytes": 3454,
+      "sha256": "b7f2d3ee233cee1491a8529517af5629d532751ac42ac5ecafd88c87533cc0d9"
+    },
+    {
+      "path": "b3/graph.log",
+      "bytes": 593,
+      "sha256": "2c2a9d6f077a1812c2be83ad7a1e6a9671f50e6848839a1e3873a49963526242"
+    },
+    {
+      "path": "b3/graph_environment.log",
+      "bytes": 5492,
+      "sha256": "2667ddb24ae56e3834b741ba12d014eddcd5f39fb07ccc8c59961f3c251614d7"
+    },
+    {
+      "path": "b3/root_audits.json",
+      "bytes": 776,
+      "sha256": "356655a3d0401befa4f59c14f0b69029d24502d6a2c2a181fb0b7acce34b9845"
+    },
+    {
+      "path": "b3/root_membership.jsonl",
+      "bytes": 3831427,
+      "sha256": "a446be9142e7886a452d5744e456c3e6ab2f301b80b046a04d9a5af5c1aae7fe"
+    },
+    {
+      "path": "b3/run86_receipt.json",
+      "bytes": 6225,
+      "sha256": "bee62ce455e61d4776b5c98f91bf107598e27719184a218b542a2266b352531d"
+    },
+    {
+      "path": "b3/run89_patch_receipt.json",
+      "bytes": 246,
+      "sha256": "09d3a0dd12d5c755c80a63bf795a67e20db8bab835115beecd0f26cc47a5c9ab"
+    },
+    {
+      "path": "b3/union_summary.json",
+      "bytes": 1407,
+      "sha256": "fe5eddd283a7efb3337238983c552833ed7eddf74aef5400add5c665db90ba08"
+    },
+    {
+      "path": "b3_driver.log",
+      "bytes": 150,
+      "sha256": "4f892e223e4a997fe156fba9c6b06408963a3f3a89774d42ec0bd7e38ce37955"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "dd90959de80a349efb94a113f291215c723b771f6a93d9aad4378d592e8e7ec8"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 761,
+      "sha256": "fe0f78cf9623e34724b3f810ce0f5395e3e07ed5b003236346fbaffe3e4c3576"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7831,
+      "sha256": "b704392d28e6b5a1229df6bf02c4758c342e1f881f3e0349e589e0a7303956ec"
+    },
+    {
+      "path": "negative_missing_projector_guard.log",
+      "bytes": 422,
+      "sha256": "fa8714d973f4ba98d615b4247682378c70d9f70891fef9a01a6811c367a03bc5"
+    },
+    {
+      "path": "original_callers.log",
+      "bytes": 271,
+      "sha256": "942ce5edbd7c56b9d82db75544357a6e970065c912cbc851f6b85ee857c46da8"
+    },
+    {
+      "path": "pins.json",
+      "bytes": 854,
+      "sha256": "656dc43f9ddbbe074da5fdbfbf3bb7338e3b070b54e72d11dea84997dcefaf33"
+    },
+    {
+      "path": "preflight/RHRun85.lean",
+      "bytes": 28912,
+      "sha256": "af3fcccf028a25f1ab42451091b1e52753261e4f54be88ee1d8ccd679176dbb7"
+    },
+    {
+      "path": "preflight/RHRun85Graph.lean",
+      "bytes": 8229,
+      "sha256": "6701d930fba3fa9f0351e0df6f194bfff39c18abcd231d23d0f38b294cfc6c03"
+    },
+    {
+      "path": "preflight/run86_receipt.json",
+      "bytes": 977,
+      "sha256": "9f6e1a71d706e27ace489256a79a433032bd592cc4720a9627286637abd7c013"
+    },
+    {
+      "path": "preflight/run89_patch_receipt.json",
+      "bytes": 246,
+      "sha256": "09d3a0dd12d5c755c80a63bf795a67e20db8bab835115beecd0f26cc47a5c9ab"
+    },
+    {
+      "path": "preflight.log",
+      "bytes": 150,
+      "sha256": "4f892e223e4a997fe156fba9c6b06408963a3f3a89774d42ec0bd7e38ce37955"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources.json",
+      "bytes": 79,
+      "sha256": "dad32597955a22c09a8ceff81eec45047960976d8293ab7700ca255209417d27"
+    },
+    {
+      "path": "run87_shared_receipt.json",
+      "bytes": 8263,
+      "sha256": "c8d02bb91bc8cf78e4a2dc019de269dfe5d68d8badaca86c39840a5d8c0037a9"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "b3/six_roots.jsonl",
+      "bytes": 69742826,
+      "sha256": "20fb80f889d200591ac82cda70c502411b952a5900df8fc32cc31d30e7c853ba"
+    }
+  ]
+}

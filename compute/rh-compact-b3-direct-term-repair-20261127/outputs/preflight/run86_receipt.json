@@ -1,0 +1,24 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blob": "cba0a141fd47c34b792021c679b5451ebde7d3bf",
+  "original_source_blobs": {
+    "New/RealPlace/LocalTheorem.lean": "671350f97491467f09b80eafa0df13685dd8ddc6",
+    "New/RealPlace/WeightPlancherel.lean": "65619443ca5867bf45af038448a16dc1262103fd",
+    "New/RealPlace/LevelGauge.lean": "05b4a710e4192b2f3d289a8e52161a6d12a2866e"
+  },
+  "roots": [
+    "Gauge.lintegral_floorWeight_le",
+    "Gauge.lintegral_floorWeight_le_directChart_bridge",
+    "Gauge.lintegral_selfNorm_le",
+    "Gauge.lintegral_selfNorm_le_via_directChart",
+    "Gauge.lintegral_positions_le",
+    "Gauge.lintegral_positions_le_via_directChart"
+  ],
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": false,
+  "new_Lean_execution": false,
+  "source_authenticated": true,
+  "graph_source_blob": "1a5ce8c22ca643d0de9ffa6aef9137c63d88dc0c"
+}

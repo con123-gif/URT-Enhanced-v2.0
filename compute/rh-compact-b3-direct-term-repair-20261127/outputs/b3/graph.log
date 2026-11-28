@@ -1,0 +1,6 @@
+'Gauge.lintegral_floorWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_floorWeight_le_directChart_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_selfNorm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_selfNorm_le_via_directChart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_positions_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gauge.lintegral_positions_le_via_directChart' depends on axioms: [propext, Classical.choice, Quot.sound]

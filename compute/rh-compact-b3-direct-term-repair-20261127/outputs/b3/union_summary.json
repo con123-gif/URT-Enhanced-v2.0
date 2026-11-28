@@ -1,0 +1,64 @@
+{
+  "roots": [
+    "Gauge.lintegral_floorWeight_le",
+    "Gauge.lintegral_floorWeight_le_directChart_bridge",
+    "Gauge.lintegral_selfNorm_le",
+    "Gauge.lintegral_selfNorm_le_via_directChart",
+    "Gauge.lintegral_positions_le",
+    "Gauge.lintegral_positions_le_via_directChart"
+  ],
+  "nodes": 42657,
+  "edges": 952599,
+  "missing": 0,
+  "mask_histogram": {
+    "63": 34099,
+    "21": 8,
+    "42": 11,
+    "62": 2,
+    "60": 7905,
+    "20": 1,
+    "40": 1,
+    "48": 628,
+    "16": 1,
+    "32": 1
+  },
+  "per_root": {
+    "Gauge.lintegral_floorWeight_le": {
+      "exit": 0,
+      "nodes": 34107,
+      "missing": 0,
+      "log": "audit-0.json"
+    },
+    "Gauge.lintegral_floorWeight_le_directChart_bridge": {
+      "exit": 0,
+      "nodes": 34112,
+      "missing": 0,
+      "log": "audit-1.json"
+    },
+    "Gauge.lintegral_selfNorm_le": {
+      "exit": 0,
+      "nodes": 42015,
+      "missing": 0,
+      "log": "audit-2.json"
+    },
+    "Gauge.lintegral_selfNorm_le_via_directChart": {
+      "exit": 0,
+      "nodes": 42018,
+      "missing": 0,
+      "log": "audit-3.json"
+    },
+    "Gauge.lintegral_positions_le": {
+      "exit": 0,
+      "nodes": 42644,
+      "missing": 0,
+      "log": "audit-4.json"
+    },
+    "Gauge.lintegral_positions_le_via_directChart": {
+      "exit": 0,
+      "nodes": 42647,
+      "missing": 0,
+      "log": "audit-5.json"
+    }
+  },
+  "naive_repeated_nodes": 237543
+}

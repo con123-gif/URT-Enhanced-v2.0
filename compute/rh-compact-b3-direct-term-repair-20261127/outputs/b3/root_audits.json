@@ -1,0 +1,38 @@
+{
+  "Gauge.lintegral_floorWeight_le": {
+    "exit": 0,
+    "nodes": 34107,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "Gauge.lintegral_floorWeight_le_directChart_bridge": {
+    "exit": 0,
+    "nodes": 34112,
+    "missing": 0,
+    "log": "audit-1.json"
+  },
+  "Gauge.lintegral_selfNorm_le": {
+    "exit": 0,
+    "nodes": 42015,
+    "missing": 0,
+    "log": "audit-2.json"
+  },
+  "Gauge.lintegral_selfNorm_le_via_directChart": {
+    "exit": 0,
+    "nodes": 42018,
+    "missing": 0,
+    "log": "audit-3.json"
+  },
+  "Gauge.lintegral_positions_le": {
+    "exit": 0,
+    "nodes": 42644,
+    "missing": 0,
+    "log": "audit-4.json"
+  },
+  "Gauge.lintegral_positions_le_via_directChart": {
+    "exit": 0,
+    "nodes": 42647,
+    "missing": 0,
+    "log": "audit-5.json"
+  }
+}

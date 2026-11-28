@@ -1,0 +1,7 @@
+{
+  "original_blob": "05820cda95cec8af0e7eb905dd22bcac8d75fbc6",
+  "generated_blob": "cba0a141fd47c34b792021c679b5451ebde7d3bf",
+  "failed_run": 46080383664,
+  "conditional_helper_remains_unverified": true,
+  "patch_is_not_a_native_pass": true
+}

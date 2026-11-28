@@ -1,0 +1,84 @@
+{
+  "scope": "new peer helper replay; original caller axioms checked separately",
+  "steps": {
+    "download": {
+      "returncode": 0,
+      "seconds": 2.57,
+      "log": "download.log"
+    },
+    "extract": {
+      "returncode": 0,
+      "seconds": 5.58,
+      "log": "extract.log"
+    },
+    "version": {
+      "returncode": 0,
+      "seconds": 0.06,
+      "log": "version.log"
+    },
+    "init": {
+      "returncode": 0,
+      "seconds": 0.07,
+      "log": "init.log"
+    },
+    "remote": {
+      "returncode": 0,
+      "seconds": 0.0,
+      "log": "remote.log"
+    },
+    "fetch": {
+      "returncode": 0,
+      "seconds": 1.37,
+      "log": "fetch.log"
+    },
+    "checkout": {
+      "returncode": 0,
+      "seconds": 0.26,
+      "log": "checkout.log"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "seconds": 61.62,
+      "log": "mathlib_cache.log"
+    },
+    "b2_build": {
+      "returncode": 0,
+      "seconds": 935.08,
+      "log": "b2_build.log"
+    },
+    "original_callers": {
+      "returncode": 0,
+      "seconds": 5.03,
+      "log": "original_callers.log",
+      "axioms": {
+        "Gauge.lintegral_floorWeight_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Gauge.lintegral_selfNorm_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Gauge.lintegral_positions_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "axiom_audit_ok": true
+    },
+    "negative_missing_projector_guard": {
+      "returncode": 1,
+      "seconds": 3.02,
+      "log": "negative_missing_projector_guard.log",
+      "expected_rejection_observed": true
+    }
+  },
+  "new_Lean_execution": true,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false,
+  "all_requested_checks_ok": true
+}

@@ -1,0 +1,20 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "peers": {},
+  "source_blobs": {
+    "New/RealPlace/LocalTheorem.lean": "671350f97491467f09b80eafa0df13685dd8ddc6",
+    "New/RealPlace/WeightPlancherel.lean": "65619443ca5867bf45af038448a16dc1262103fd",
+    "New/RealPlace/LevelGauge.lean": "05b4a710e4192b2f3d289a8e52161a6d12a2866e",
+    "New/Filling/StandardLevel.lean": "ec149f4a38c54931f75c7e106ce94d1d6e65c5a4"
+  },
+  "original_theorems": [
+    "Gauge.lintegral_floorWeight_le",
+    "Gauge.lintegral_selfNorm_le",
+    "Gauge.lintegral_positions_le"
+  ],
+  "new_Lean_execution": false,
+  "caller_replacements_checked": false,
+  "human_assembly_verified": false,
+  "full_RH_replay": false
+}
