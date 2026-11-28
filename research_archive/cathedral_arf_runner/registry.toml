@@ -3853,3 +3853,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Galois lane; continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-b3-convex-leaf-20261128"
+question = "Replay the existing normalized six-field B3 convex sieve and weighted label padding with only the EichlerFlag source build, keeping the exact immutable proof body; require actual compiler exit zero, no errors and all three new axiom reports plus two original probes and nonnegative-weight negative control. Preserve original Moments import and caller graph. No Main import, B3/B4 root or RH closure."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/positivity_geometry/compact/RUN100_CONVEX_LEAF_REPLAY.py --out {out}"
+timeout_minutes = 185
+requested_by = "GPT positivity geometry lane; continuation directive"
+claim = "independent"
