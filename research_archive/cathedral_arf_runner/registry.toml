@@ -3738,3 +3738,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Landau lane; continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-prime-star-grid-20261128"
+question = "Replay immutable RUN94 native polar-window star-grid wrapper in one pinned endpoint workspace; check four new axioms and direct guards, then five constructor-inclusive old/new conditional root audits with absence of native star and old GoodGrid/TailGrid from new root. Preserve independent stage errors. No Main import, A/B/C build, arithmetic premise proof or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN95_STAR_GRID_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT prime-window lane; continuation directive"
+claim = "independent"
