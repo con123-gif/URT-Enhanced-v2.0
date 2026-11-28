@@ -140,3 +140,22 @@ for k,n,m in [(1,62,138),(4,116,193)]:
 1. Reconcile main merged A329813 credit and new duplicate gates in master ledger (do not overwrite peer edits). 
 2. Retrieve full Gracia Llorente original paper and check whether the general-tail theorem already appears. Until then no priority claim, no new problem count. For the exact GCD targets, examine prior repaired probe actual per-file exits/axioms (do not infer pass from upload or workflow green), official source eligibility and complete history; do not register already-known multiplicity claims. 
 3. A372561 only registration at fresh search: coordinate with root/reversal before any exact imported-target fixture/claim; no new publication while current join rules/verification unavailable. No schedule changes.
+
+## Strengthening: four occurrences are impossible for sufficiently large primes
+
+The two square indicators cannot both be true, by elementary congruences. For odd p:
+
+- If k is odd then k^2+4+8p^2 is 5 modulo 8, not a square.
+- If k=2h is even and h is even, (D+8p^2)/4=h^2+1+2p^2 is 3 modulo 4, not a square. If D+8p^2 were a square its root would be even, so the division by 4 is legitimate.
+- Consequently the t=2 extra branch requires k congruent 2 modulo 4. For this case h is odd, and (D+12p^2)/4=h^2+1+3p^2 is 5 modulo 8, so the t=3 branch is impossible.
+- The t=3 branch additionally requires 3|k, since D+12p^2 is k^2+1 modulo 3.
+
+Thus for each fixed positive k and all primes p>P, **N_k(p) belongs to {0,2,3}**. Precisely one of the two explicit Pell tests can supply a third occurrence; the earlier at-most-four bound is strengthened, not contradicted. Exhaustive 512 modular residue challenges (k mod32, odd p mod32) passed.
+
+Positive-branch tests were added so that the previously tested sample, which had no extras, does not hide a vacuous check. Both examples are primes above the explicit P threshold and smaller than 2^64 (SymPy exact deterministic primality range). Independent valuation and Hensel-root checks passed:
+- k=2, t=2, p=9369319: n=13250218, earlier roots 3880899 and 5488420. Exactly three occurrences. This is the classical previously studied k=2 Pell branch.
+- k=3, t=3, p=8919301: n=15448682, earlier roots 2389919 and 6529381. Exactly three occurrences. No historical priority claim.
+
+Reproduce by solving u^2-4t p^2=D with small positive seed p<=400 and multiplying u+p sqrt(4t) by its Pell unit 3+sqrt(8) for t=2 or 7+2sqrt(12) for t=3. Test each candidate p for primality, threshold, exact Q=t p^2 and factorial valuation. The two below-p roots arise from square roots of D mod p; independently lift each to modulo p^2 using the inverse of 2n+k-2 and count those in [p,2p). Compare to the square indicator count. All the displayed indices were produced and checked in the current run, not extrapolated.
+
+Final status unchanged: complete informal theorem and executed independent challenges, no new Lean-certified or officially accepted target. Full general-tail primary-literature gate remains open.
