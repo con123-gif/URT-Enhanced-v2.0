@@ -5,6 +5,19 @@ open.** Compact source `lsernau/grh-lean@72fead102f663d5c7a407964a13dc0cf9d97720
 Lean 4.35.0, Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`.
 Credit Levent Alpöge, Luke Sernau, Anthropic collaborators and Claude.
 
+> **Correction, 28 November 2026.** The independent audit at
+> `audit/2026-11-28_EXACT_FIBER_SELECTION_AUDIT.md` proves that, on the
+> actual fixed native fiber, continuity and the exact identity
+> `S(u)=C₀(A-Q(u))` make the a.e. guarded condition equivalent to the
+> whole-fiber bound (under the strict-mean hypothesis).  Thus the a.e.
+> formulation is not itself an arithmetic weakening of the whole-fiber
+> condition.  The joint-witness implication and root bridge below remain
+> valid, but the preferred strictly weaker interface is now the editor's
+> direct weak selected record, which also removes the base record and replaces
+> `<` by `≤`.  Its canonical equation is recorded in
+> `2026-11-28_CANONICAL_SELECTED_RECORD_EQUATION.md`.  Preserve this file as
+> the exact historical bridge; do not select it as the preferred live premise.
+
 ## Result
 
 The current a.e.-fiber route asks, on one fixed admissible data fiber, that
@@ -85,7 +98,7 @@ In the Lean interface this is
 character union, signed Landau argument, and reflection theorem unchanged.
 Thus (JWCE) implies the conditional RH root; (JWCE) itself is not proved.
 
-## Why this is a strict premise weakening
+## Logical weakening and its corrected native interpretation
 
 `FiberBudgetOn` implies `JointBudgetOn`: the editor's strict weighted mean
 lemma intersects its polar-good event with the a.e. arithmetic event and
@@ -100,6 +113,12 @@ checks this countermodel and all finite truth-table implications.  This
 control does not assert that such a model arises from the native arithmetic;
 it only prevents silently replacing the weaker existential premise by the
 stronger a.e. one.
+
+For the actual native functions, the audit supplies additional continuity
+and signed-identity structure absent from that finite control.  It therefore
+recovers equivalence between the a.e. condition and the whole-fiber bound.
+The genuine weakening is the direct selected-record condition, not null-set
+freedom on a fixed fiber.
 
 ## Source and downstream trace
 
