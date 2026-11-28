@@ -3782,3 +3782,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT kernel lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-b3-caller-layout-repair-20261128"
+question = "Repair the actual RUN93 five-caller command-layout parser failure, preserving immutable source and failed receipt; verify five exact replacement types, standard axioms and ten-root audit, then conditionally compile and audit RUN94 five system/moment consumers in the same pinned workspace with separate receipt. No Main, B3/B4 root or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN95_CALLER_LAYOUT_REPAIR.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT Landau lane; continuation directive"
+claim = "independent"
