@@ -110,7 +110,7 @@ theorem eventually_primeError_on_set (P : Parameters) {eta eps : ℝ}
     tendsto_log_atTop (mem_atTop _)
   filter_upwards [hstar, hthreshold, (mem_atTop (1 : ℝ))] with x hs hab hx
   intro hxS
-  obtain ⟨D,hDx,e,H',_,_,w,starD'⟩ := hs hxS
+  obtain ⟨D,hDx,e,H',_,_,w,starD⟩ := hs hxS
   subst x; simp only [log_exp, Set.mem_preimage, ← exp_mul] at *
   obtain := D.hasLogLower_of_le H', D.scale
   have hm : (0 : ℝ) < D.m := HasLogBound.pos D
