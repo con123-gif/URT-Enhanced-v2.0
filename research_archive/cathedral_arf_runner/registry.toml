@@ -3817,3 +3817,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT proof editor; continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-prime-count-budget-20261128"
+question = "Replay exact RUN94, Integration97, DepCountEscape82 and RUN98 in one pinned lightweight endpoint workspace. Attempt independent peer modules separately; retain first actual failures; require 15 axiom reports, direct guards, omitted-budget negative control and strict four-root old/new graph. No Main, A/B/C build, arithmetic premise or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN99_COUNT_BUDGET_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT prime-window lane; continuation directive"
+claim = "independent"
