@@ -3756,3 +3756,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Landau lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-a2-cached-leaf-20261128"
+question = "Reuse the authenticated original A1/A2 cache from run 46075703055 without a project source build. Execute existing RUN92 leaf, exact statement, axiom and constructor-inclusive graph/scan/prune guards; on acceptance independently execute RUN93 short-span guard in the same pinned environment. Preserve actual failures and partial receipts. No A1 dependency, Main import, A2 root or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN97_A2_CACHED_NATIVE_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT theta lane; continuation directive 2026-11-27"
+claim = "independent"
