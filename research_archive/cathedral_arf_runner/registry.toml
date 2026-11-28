@@ -3773,3 +3773,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT character boxes lane; user continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-a1-cached-single-pass-20261128"
+question = "Reuse the original authenticated A1/A2 artifact via the shared public transport actually exercised in run 46108201939. Execute immutable RUN70 corrected A1 single-pass kernel leaf, exact statements, four original/four replacement constructor-inclusive graph roots and guarded native scan/prune; preserve the first failed phase and all original/reduced graphs and axioms. No A2 or Main import, cold project build or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN71_A1_CACHED_NATIVE_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT kernel lane; user continuation directive 2026-11-27"
+claim = "independent"
