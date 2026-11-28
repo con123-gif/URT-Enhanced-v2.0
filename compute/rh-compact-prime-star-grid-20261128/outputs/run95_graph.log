@@ -1,0 +1,5 @@
+'RHPrimeWindow91.zeta_line_from_class_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow94.eventually_primeError_on_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow94.endpoint_from_star_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow94.principal_grid_from_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow94.zeta_line_from_star' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,243 @@
+{
+  "status": "pass",
+  "detail": "",
+  "returncode": 0,
+  "wall_s": 2638.94,
+  "tail": "",
+  "id": "rh-compact-prime-star-grid-20261128",
+  "question": "Replay immutable RUN94 native polar-window star-grid wrapper in one pinned endpoint workspace; check four new axioms and direct guards, then five constructor-inclusive old/new conditional root audits with absence of native star and old GoodGrid/TailGrid from new root. Preserve independent stage errors. No Main import, A/B/C build, arithmetic premise proof or RH closure claim.",
+  "requested_by": "GPT prime-window lane; continuation directive",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN95_STAR_GRID_REPLAY.py --out {out}",
+  "utc": "2026-11-28T04:04:01Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "d3fcfc010bcd106bacbfdaa6a79909a849180ad4",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46102281476",
+  "outputs_committed": [
+    {
+      "path": "Run95StarGraph.lean",
+      "bytes": 8176,
+      "sha256": "e3a580a688235feb1f31ecf7bfcfa02bbf1ffc9cd370413fdb3845d0443d48d9"
+    },
+    {
+      "path": "adapter.log",
+      "bytes": 23562,
+      "sha256": "8c520dc44c257932b24dbd8e0d4e99027bb66d1cf7207ded6ef818fd5ce26a3e"
+    },
+    {
+      "path": "adapter_build.log",
+      "bytes": 34016,
+      "sha256": "6b6882a18586427fd19f0c050e5d3fdda68ce6c4100d35db0c6bf56878ef3409"
+    },
+    {
+      "path": "analytic/NoGridPremise.lean",
+      "bytes": 22131,
+      "sha256": "6ea71607ea834046c6f2ef1f631d4a34797c7c12daddf3dfeb41f8f51d47c81e"
+    },
+    {
+      "path": "analytic/OriginalAnalytic.lean",
+      "bytes": 193,
+      "sha256": "fa40cddbe2f28d148d9def1ac51d63cf7d702c6b2e7ffb64d33e508edc1bb01d"
+    },
+    {
+      "path": "analytic/Run88Endpoint.lean",
+      "bytes": 22047,
+      "sha256": "505fa11078fd97086563124aa98a7a274c2860fbdab55ad35097ddb3cbb75709"
+    },
+    {
+      "path": "analytic/Run88Endpoint.olean",
+      "bytes": 2027008,
+      "sha256": "cfb59e9ec61bec0158ed1bd62c9f9bd43c6d8692eda418a685bfdd51606e86fa"
+    },
+    {
+      "path": "analytic/build.log",
+      "bytes": 2936,
+      "sha256": "853f91ccbcd4856e14bcfee5c8e5b3c2d0f643493bc032437e6cd4838d611de8"
+    },
+    {
+      "path": "analytic/endpoint.log",
+      "bytes": 26602,
+      "sha256": "901afe5a3c5795c500bc3b8f8ed2a3e71cd522194a354299f68a52d5b608d505"
+    },
+    {
+      "path": "analytic/endpoint_receipt.json",
+      "bytes": 3488,
+      "sha256": "6da0da533e7bb1861c2627a8c297e4efe4ab3677ae86ec32a1dde043d68d00f4"
+    },
+    {
+      "path": "analytic/negative.log",
+      "bytes": 26894,
+      "sha256": "5d3d2641b62039188a9068cbf320b8c353b2e1c5833e864e05f6262d6dfb814e"
+    },
+    {
+      "path": "analytic/originals.log",
+      "bytes": 344,
+      "sha256": "18560d3fa4b2d5249d14db3728aa93b8196f97615a376fbe0ec67176975da6e3"
+    },
+    {
+      "path": "analytic_runner.log",
+      "bytes": 64,
+      "sha256": "3a928c3dc1dc06014a90dd73d2ffe27d184e2e7d66f8a377ac2000033985f178"
+    },
+    {
+      "path": "audit-0.json",
+      "bytes": 463,
+      "sha256": "13d793878ae0785e76bd5c7fe35a704b77b814f2e8da7d4d24d3a508f0728075"
+    },
+    {
+      "path": "audit-1.json",
+      "bytes": 463,
+      "sha256": "e401c3dd74f9e73f9cce6ed104bfb19da2b5e8456f8a83887bc5e82ba8fceff6"
+    },
+    {
+      "path": "audit-2.json",
+      "bytes": 463,
+      "sha256": "a2d6729c094144663c873f0cd769fbe6105072dcae29de79b4670d391e942e0c"
+    },
+    {
+      "path": "audit-3.json",
+      "bytes": 463,
+      "sha256": "e245436cae685ba496398359640668136a734753a3c7653c83c87f77078b070a"
+    },
+    {
+      "path": "audit-4.json",
+      "bytes": 463,
+      "sha256": "ca8925fe652797ac6b2217e8800c62a92f732b8bc750ccc3090aaf594a04ef91"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "data_exist_build.log",
+      "bytes": 29455,
+      "sha256": "acf9c3e295d7f6e17cc782ba734bac6911dfbd225bf2b2102bfa689b0514a395"
+    },
+    {
+      "path": "download.log",
+      "bytes": 860,
+      "sha256": "9de4bfffca3f9a7c9f2621a549029ed7798287080dda4b79afe86932dc57fb4e"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 9506,
+      "sha256": "86f3a87112cbb029f09945ac5558e11e8e1ffc48f43e0365ad1fdc8ade66f77a"
+    },
+    {
+      "path": "modules/Run88Endpoint.olean",
+      "bytes": 2027008,
+      "sha256": "cfb59e9ec61bec0158ed1bd62c9f9bd43c6d8692eda418a685bfdd51606e86fa"
+    },
+    {
+      "path": "modules/Run90Adapter.lean",
+      "bytes": 12818,
+      "sha256": "2cff54a61a12dcaf9bd1b99731a4e5ca5eab198cd478a7dfaae29c8cd8e1bdbd"
+    },
+    {
+      "path": "modules/Run90Adapter.olean",
+      "bytes": 1033504,
+      "sha256": "bf4908300ab47303a49144cf81ff86bbda031a4e7b7774c30e220b94e60e6ed6"
+    },
+    {
+      "path": "modules/Run91PrincipalBridge.lean",
+      "bytes": 6130,
+      "sha256": "b77e345c08f51c854437d768bed1f1bf4ea0b0175ebe4e1a18fad9063a335837"
+    },
+    {
+      "path": "modules/Run91PrincipalBridge.olean",
+      "bytes": 161000,
+      "sha256": "b116de9d8cba6a28dbe0f9fc4947e1a950697403e2cf95b8c0f4318ea4fb7ccc"
+    },
+    {
+      "path": "modules/Run94StarGrid.lean",
+      "bytes": 11594,
+      "sha256": "b2e29898bef10176e2a16c783085aa8a482ca251a005db2881ea6ad87850b358"
+    },
+    {
+      "path": "modules/Run94StarGrid.olean",
+      "bytes": 706520,
+      "sha256": "b08e8b708fedfb4de3e25dfd09c72323ecaeac8911ca313b2e3e4ec99d8f620c"
+    },
+    {
+      "path": "principal_bridge.log",
+      "bytes": 7678,
+      "sha256": "93b37c414b02f281fc83bd3a4f23145025f1ba194ee68bbcd1fad3d1b9de8f5c"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "root_audits.json",
+      "bytes": 669,
+      "sha256": "f07a03a77f6d03210f22e2315ceade987ee64a01269decb6beb5ed351813f5f4"
+    },
+    {
+      "path": "run91_receipt.json",
+      "bytes": 5253,
+      "sha256": "3036406e60f102fec87c0b461b5691919da4bca594ac9016bb5138f7f5b8f375"
+    },
+    {
+      "path": "run94_compile.log",
+      "bytes": 960,
+      "sha256": "8e46ff7c0d58be959b7d7e2de51611d1b519a2701059a50ed31939722e1655f2"
+    },
+    {
+      "path": "run95_graph.log",
+      "bytes": 511,
+      "sha256": "ff5f50a2c85b773f79fd01f91f5d77c6ad8061f63c1a6e4d5102c4cbe2588128"
+    },
+    {
+      "path": "run95_star_grid_receipt.json",
+      "bytes": 5025,
+      "sha256": "05dd60be6dd6dfca791aa8e6f4055b5ab838987ef924fbca871bf69c4d85ffa7"
+    },
+    {
+      "path": "union_summary.json",
+      "bytes": 1248,
+      "sha256": "60cd62dfd3c99a8cf351f998140abc58cfbffd071b8bbc0031d51f1ba7917600"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "prime_star_graph.jsonl",
+      "bytes": 281374963,
+      "sha256": "5a8e26c835593df5f0d7e56f8413cce092b306cc5362e23d837119324a48db4c"
+    },
+    {
+      "path": "root_membership.jsonl",
+      "bytes": 12150644,
+      "sha256": "08216cf3010f62363d92cc1e88ad83dc382d02a53c7996db4aa78a0221b47c0e"
+    }
+  ]
+}

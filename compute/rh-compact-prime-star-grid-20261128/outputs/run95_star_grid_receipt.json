@@ -1,0 +1,175 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "new_source_blob": "bb5b6bb13884b9d161481e38da357d5fee9a10c8",
+  "roots": [
+    "RHPrimeWindow91.zeta_line_from_class_inputs",
+    "RHPrimeWindow94.eventually_primeError_on_set",
+    "RHPrimeWindow94.endpoint_from_star_grid",
+    "RHPrimeWindow94.principal_grid_from_star",
+    "RHPrimeWindow94.zeta_line_from_star"
+  ],
+  "new_module_checked": true,
+  "graph_checked": true,
+  "arithmetic_premise_proved": false,
+  "full_RH_replay": false,
+  "original_definition_native_bridge_checked": false,
+  "all_requested_checks_ok": true,
+  "data_exist_build": {
+    "returncode": 0,
+    "seconds": 369.24,
+    "log": "data_exist_build.log"
+  },
+  "run94_compile": {
+    "returncode": 0,
+    "seconds": 13.75,
+    "log": "run94_compile.log"
+  },
+  "module_axioms": {
+    "axioms": {
+      "RHPrimeWindow94.eventually_primeError_on_set": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHPrimeWindow94.endpoint_from_star_grid": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHPrimeWindow94.principal_grid_from_star": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHPrimeWindow94.zeta_line_from_star": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "new_module_sha256": "b08e8b708fedfb4de3e25dfd09c72323ecaeac8911ca313b2e3e4ec99d8f620c",
+  "graph_source_blob": "5ea254a982ecdd80eb4c2271e08fc91f7535b17e",
+  "run95_graph": {
+    "returncode": 0,
+    "seconds": 98.47,
+    "log": "run95_graph.log"
+  },
+  "graph_axioms": {
+    "axioms": {
+      "RHPrimeWindow91.zeta_line_from_class_inputs": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHPrimeWindow94.eventually_primeError_on_set": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHPrimeWindow94.endpoint_from_star_grid": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHPrimeWindow94.principal_grid_from_star": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHPrimeWindow94.zeta_line_from_star": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "root_masks": {
+    "RHPrimeWindow91.ClassGridInputs": 1,
+    "RHPrimeWindow88.zeta_line_from_endpoint_grid": 17,
+    "Data.run90Remainder_eq": 31,
+    "RHPrimeWindow90.GoodGrid": 1,
+    "RHPrimeWindow90.TailGrid": 1,
+    "IsPolar.exists_window_sub_mul_le": 30,
+    "exists_data": 30,
+    "RHPrimeWindow94.StarGrid": 28,
+    "RHPrimeWindow94.ClassStarGrid": 24
+  },
+  "reachability_guards": {
+    "exists_data:new_present": true,
+    "IsPolar.exists_window_sub_mul_le:new_present": true,
+    "Data.run90Remainder_eq:new_present": true,
+    "RHPrimeWindow94.StarGrid:new_present": true,
+    "RHPrimeWindow94.ClassStarGrid:new_present": true,
+    "RHPrimeWindow88.zeta_line_from_endpoint_grid:new_present": true,
+    "New.grh:new_absent": true,
+    "star_inequality:new_absent": true,
+    "riemannHypothesis:new_absent": true,
+    "RHPrimeWindow90.TailGrid:new_absent": true,
+    "RHPrimeWindow90.GoodGrid:new_absent": true,
+    "RHPrimeWindow91.ClassGridInputs:new_absent": true,
+    "RHPrimeWindow90.TailGrid:old_present": true,
+    "RHPrimeWindow90.GoodGrid:old_present": true,
+    "RHPrimeWindow91.ClassGridInputs:old_present": true
+  },
+  "graph_summary": {
+    "roots": [
+      "RHPrimeWindow91.zeta_line_from_class_inputs",
+      "RHPrimeWindow94.eventually_primeError_on_set",
+      "RHPrimeWindow94.endpoint_from_star_grid",
+      "RHPrimeWindow94.principal_grid_from_star",
+      "RHPrimeWindow94.zeta_line_from_star"
+    ],
+    "nodes": 124661,
+    "edges": 4046494,
+    "missing": 0,
+    "mask_histogram": {
+      "31": 123186,
+      "17": 927,
+      "1": 21,
+      "25": 8,
+      "29": 3,
+      "30": 505,
+      "28": 3,
+      "24": 7,
+      "16": 1
+    },
+    "per_root": {
+      "RHPrimeWindow91.zeta_line_from_class_inputs": {
+        "exit": 0,
+        "nodes": 124145,
+        "missing": 0,
+        "log": "audit-0.json"
+      },
+      "RHPrimeWindow94.eventually_primeError_on_set": {
+        "exit": 0,
+        "nodes": 123691,
+        "missing": 0,
+        "log": "audit-1.json"
+      },
+      "RHPrimeWindow94.endpoint_from_star_grid": {
+        "exit": 0,
+        "nodes": 123697,
+        "missing": 0,
+        "log": "audit-2.json"
+      },
+      "RHPrimeWindow94.principal_grid_from_star": {
+        "exit": 0,
+        "nodes": 123712,
+        "missing": 0,
+        "log": "audit-3.json"
+      },
+      "RHPrimeWindow94.zeta_line_from_star": {
+        "exit": 0,
+        "nodes": 124640,
+        "missing": 0,
+        "log": "audit-4.json"
+      }
+    },
+    "naive_repeated_nodes": 619885
+  },
+  "graph_sha256": "5a8e26c835593df5f0d7e56f8413cce092b306cc5362e23d837119324a48db4c"
+}

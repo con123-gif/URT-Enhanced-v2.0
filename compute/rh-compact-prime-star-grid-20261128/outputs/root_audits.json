@@ -1,0 +1,32 @@
+{
+  "RHPrimeWindow91.zeta_line_from_class_inputs": {
+    "exit": 0,
+    "nodes": 124145,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "RHPrimeWindow94.eventually_primeError_on_set": {
+    "exit": 0,
+    "nodes": 123691,
+    "missing": 0,
+    "log": "audit-1.json"
+  },
+  "RHPrimeWindow94.endpoint_from_star_grid": {
+    "exit": 0,
+    "nodes": 123697,
+    "missing": 0,
+    "log": "audit-2.json"
+  },
+  "RHPrimeWindow94.principal_grid_from_star": {
+    "exit": 0,
+    "nodes": 123712,
+    "missing": 0,
+    "log": "audit-3.json"
+  },
+  "RHPrimeWindow94.zeta_line_from_star": {
+    "exit": 0,
+    "nodes": 124640,
+    "missing": 0,
+    "log": "audit-4.json"
+  }
+}
