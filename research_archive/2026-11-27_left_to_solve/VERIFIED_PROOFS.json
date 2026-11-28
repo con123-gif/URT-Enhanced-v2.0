@@ -202,7 +202,22 @@
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9408",
       "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution.",
       "statement_merged_at": null,
-      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9408"
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9408",
+      "latest_independent_improvement_candidate": {
+        "path": "IMPROVEMENT_CANDIDATES/oeis-a175784-gcd-final-20261128-1024.lean",
+        "archive_commit": "2b7ca4a73dedfd332cf9802c3b46a27a99f75d4a",
+        "blob": "27f1c917a83e6ccce937172e8cb73a72a41c11bf",
+        "length": 2499,
+        "incumbent_length": 3074,
+        "competing_pr": 9618,
+        "competing_length": 2779,
+        "numerical_threshold_pass": true,
+        "actual_lean_pass": false,
+        "official_pr": null,
+        "probe_commit": "9bca02a537176701af3f62eef81cb3d0a3e57581",
+        "probe_blob": "90ed029ad388d24c406cb2cee27826009b1e5c32",
+        "status": "candidate; no fresh kernel execution observed, no demonstrated permission restoration"
+      }
     },
     {
       "problem_id": "oeis-a193282",
@@ -936,7 +951,16 @@
       "submitted_statement_head": "efbd9f9492896f557c49bd4d6db36bc5ba1682ea",
       "submission_authorization": "Actual claim20021:59:51; PLAN53080 HTTP20022:00:12; freshheartbeat20022:00:19 lead/teamempty; DONE53197 HTTP20022:01:30; release(submitted)HTTP200{ok:true}22:01:37. No privatelease archived.",
       "official_statement_checker_verdict": "pending",
-      "historical_failed_claim_result": "Exactly one supportedclaim20:15:16 returnedHTTP500/noassignment/no token. Server-side mutation unknown. Further calls stopped."
+      "historical_failed_claim_result": "Exactly one supportedclaim20:15:16 returnedHTTP500/noassignment/no token. Server-side mutation unknown. Further calls stopped.",
+      "latest_backlog_status": {
+        "foreign_pr": 19800,
+        "merged": true,
+        "merged_at": "2026-11-28T09:59:20Z",
+        "main_proof_blob": "684b597580986351c985fe465e4504d9db953a9c",
+        "incumbent_length": 9605,
+        "own_archive_length": 22395,
+        "improvement_eligible": false
+      }
     },
     {
       "problem_id": "oeis-a181674",
@@ -1342,8 +1366,8 @@
     "upstream": "lefttosolve2/open-math-agents",
     "canonical_certificates": 37,
     "main_paths_rechecked": 37,
-    "main_proofs_present": 17,
-    "main_paths_absent": 20,
+    "main_proofs_present": 18,
+    "main_paths_absent": 19,
     "own_first_proof_prs": 5,
     "own_improvement_prs": 2,
     "own_total_full_proof_and_improvement_prs": 7,
@@ -1355,18 +1379,19 @@
     "own_unmerged_checker_accepted": 2,
     "own_unmerged_checker_cancelled": 1,
     "without_own_full_submission": 30,
-    "foreign_full_pr_pending": 11,
+    "foreign_full_pr_pending": 10,
     "incumbent_shorter_than_canonical_or_adapter": 9,
     "registration_pending": 7,
     "known_prior_hold": 1,
-    "numerical_improvement_candidates": 4,
+    "numerical_improvement_candidates": 5,
     "submitted_improvements": 2,
-    "unverified_new_improvement_candidates": 2,
+    "unverified_new_improvement_candidates": 3,
     "confirmed_original_discoveries": 0,
-    "checkpoint": "HOURLY_0924_BACKLOG_A193282_IMPROVEMENT_BLOCKED.md",
-    "checkpoint_commit": "64f76391217c73aafdeafc35de81e0dca8413950",
+    "checkpoint": "HOURLY_1024_BACKLOG_A372561_MERGE_AND_A175784_GCD_COMPRESSION.md",
+    "checkpoint_commit": "60e1ce02df1388a5e4d310cddc6c55e48f1f1726",
     "note": "Current cumulative totals override older first-proof-only scalar counters. Numeric eligibility alone is not actual Lean acceptance or permission to submit. Canonical archive proof hashes unchanged.",
     "pending_shorter_competitor_hold": 1,
-    "pr_permission_denial_hold": 1
+    "pr_permission_denial_hold": 1,
+    "new_exact_check_permission_hold": 1
   }
 }
