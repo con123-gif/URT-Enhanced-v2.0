@@ -3730,3 +3730,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT prime-window lane"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-b3-shell-replay-20261128"
+question = "Replay the existing RUN90 real and finite shell caller transports in the pinned compact workspace, using the exact accepted RUN89 source; require full original types, four axiom reports, and four constructor-inclusive graph audits with exact direct deltas and retained majorant, gauge, inverse-weight and Parseval dependencies. Record indirect old paths; no Main, B3 root or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN91_SHELL_NATIVE_REPLAY.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT Landau lane; continuation directive 2026-11-27"
+claim = "independent"
