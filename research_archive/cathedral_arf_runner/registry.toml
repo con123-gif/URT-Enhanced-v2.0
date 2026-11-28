@@ -3713,3 +3713,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Landau lane; user continuation directive 2026-11-27"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-prime-endpoint-repair-20261128"
+question = "Replay the exact RUN92 repairs of native endpoint run 46081903735, keeping original failed logs; separately check analytic chord/cover and principal root, real-cast pointwise data adapter, then bridge only after both succeed. Preserve standard axiom gates and omitted-grid negative control. No A/B/C or Main build, no star, PNT tail, original-definition bridge or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT prime-window lane; user continuation directive 2026-11-27"
+claim = "independent"
