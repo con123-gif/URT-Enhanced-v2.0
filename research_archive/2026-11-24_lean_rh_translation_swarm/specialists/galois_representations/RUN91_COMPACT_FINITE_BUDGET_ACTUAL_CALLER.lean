@@ -39,7 +39,7 @@ finite comparison, not the foundational odd-Sha/crystalline premises.
 
 Sources: New/Selmer/FitTwistsExist.lean da769eba595af2f883eed9b82dbd322a521aea14,
 RUN89 f740d8573ec78961509f55ea27b59615b7923a50 and RUN87
-5b10ddea56708e4155e7a4f68b66f7a4e.
+5b10ddea56708e4155e7a4f68b66f7aafcd7517b.
 Pinned Mathlib Analysis/SpecificLimits/Normed.lean declares
 hasSum_coe_mul_geometric_of_norm_lt_one with RHS r/(1-r)^2.
 Executed connector JS: exact unique three-anchor source substitution;
