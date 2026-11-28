@@ -1,0 +1,124 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:97:32: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:104:16: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:113:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:126:40: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:97:28: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:97:32: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:104:16: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:113:57: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:126:40: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:142:78: error: unsolved goals
+case calc.step
+P : Parameters
+eta eps : ℝ
+heta : 0 < eta
+he : 0 < eps / 6 ∧ eps < 1 / 100
+K : ℕ
+C : ℝ
+hC : 0 ≤ C
+hslack : (↑K + 1) * eps ≤ eta
+A : Set ℝ
+hstar :
+  ∀ᶠ (x : ℝ) in Filter.atTop,
+    x ∈ A →
+      ∀ (D : Data P),
+        D.x = x →
+          Real.log D.logB = eps * D.logX →
+            ↑(towerDeg D.s) / D.logB ≤ ↑(#D.thick) →
+              1e6 * D.logX ≤ D.logX₁ →
+                D.logX₁ ≤ (1e6 * D.logX) ^ 2 →
+                  primeError P.d P.N₀ D.x₁ - ↑(towerDeg D.s) / ↑(#D.thick) * primeError P.d 1 D.x₁ ≤
+                      rexp (-(1e6 * D.logX)) →
+                    ↑D.m * D.run90Remainder ≤ C * ↑D.f * ↑D.a * D.logB ^ K
+hthreshold : ∀ᶠ (x : ℝ) in Filter.atTop, Real.log (C * ↑P.N₀.totient + 1) / (7 * eta) ≤ Real.log x
+D : Data P
+hs :
+  D.x ∈ A →
+    ∀ (D_1 : Data P),
+      D_1.x = D.x →
+        Real.log D_1.logB = eps * D_1.logX →
+          ↑(towerDeg D_1.s) / D_1.logB ≤ ↑(#D_1.thick) →
+            1e6 * D_1.logX ≤ D_1.logX₁ →
+              D_1.logX₁ ≤ (1e6 * D_1.logX) ^ 2 →
+                primeError P.d P.N₀ D_1.x₁ - ↑(towerDeg D_1.s) / ↑(#D_1.thick) * primeError P.d 1 D_1.x₁ ≤
+                    rexp (-(1e6 * D_1.logX)) →
+                  ↑D_1.m * D_1.run90Remainder ≤ C * ↑D_1.f * ↑D_1.a * D_1.logB ^ K
+hx : 1 ≤ D.x
+hxS : D.x ∈ A
+H' : ↑(towerDeg D.s) / D.logB ≤ ↑(#D.thick)
+left✝ : D.logX₁ = rexp (D.logX * (eps / 6))
+l : (1e6 * D.logX) ^ 2 ≤ D.logX₁
+e : Real.log D.logB = eps * D.logX
+W :
+  1e6 * D.logX ∈
+    {x |
+      ∀ X ∈ Set.Icc 0 (rexp x),
+        ∃ u ∈ Set.Icc x (x ^ 2), primeError P.d P.N₀ (rexp u) - X * primeError P.d 1 (rexp u) ≤ rexp (-x)}
+hab : Real.log (C * ↑P.N₀.totient + 1) / (7 * eta) ≤ D.logX
+x✝¹ :
+  D.HasLogLower (↑(#D.thick))
+    ((11 * D.logX + if Bool.false = Bool.true then Real.log D.logB / 5 else 0) + -Real.log D.logB)
+x✝ :
+  1e12 * P.c ≤ Real.log D.logB ∧
+    100 * Real.log D.logB ≤ D.logX ∧
+      1e6 * D.logX ≤ D.logX₁ ∧ 1e6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+u : ℝ
+w : primeError P.d P.N₀ (rexp u) - ↑(towerDeg D.s) / ↑(#D.thick) * primeError P.d 1 (rexp u) ≤ rexp (-(1e6 * D.logX))
+a : 1e6 * D.logX ≤ u
+b : u ≤ (1e6 * D.logX) ^ 2
+D' : Data P :=
+  { logX := D.logX, logB := D.logB, logX₁ := u, s := D.s, m := D.m, r := D.r, s_le := ⋯, thick := D.thick, g := D.g,
+    piG := D.piG, scale := ⋯, m_mem := ⋯, r_mem := ⋯, m_pow := ⋯, r_pow := ⋯, thick_eq_neg_one_mod := ⋯,
+    three_term := ⋯, g_prime := ⋯, g_modEq_one := ⋯, dvd_g_sub_one := ⋯, g_injective := ⋯, g_mem := ⋯, norm_piG := ⋯,
+    exists_prime_window := ⋯ }
+this :
+  D'.HasLogLower (↑(#D.thick))
+    ((11 * D'.logX + if Bool.false = Bool.true then Real.log D'.logB / 5 else 0) + -Real.log D'.logB)
+starD' : ↑D'.m * D'.run90Remainder ≤ C * ↑D'.f * ↑D'.a * D'.logB ^ K
+hm : 0 < ↑D'.m
+ha : 0 < ↑D'.a
+hH : 0 < ↑(#D'.thick)
+hB : 0 < D'.logB
+hX : 0 ≤ D.logX
+hf : ↑D'.f = ↑(towerDeg D'.s) * ↑P.N₀.totient
+hAbsorb : Real.log (C * ↑P.N₀.totient + 1) ≤ 7 * eta * D.logX
+⊢ D.x ^ (8 * eta + 2⁻¹ - 1) ≤ rexp (D.logX * (8 * eta + 2⁻¹ - 1))
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:215:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:215:55: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'RHIntegration97.finite_power_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHIntegration97.eventually_primeError_on_set' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHIntegration97.endpoint_from_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHIntegration97.principal_grid_from_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHIntegration97.zeta_line_from_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/IntegrationGuardedFinitePower.lean:245:0: error: INTEGRATION97 unexpected axiom RHIntegration97.eventually_primeError_on_set: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

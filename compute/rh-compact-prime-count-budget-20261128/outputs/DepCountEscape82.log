@@ -1,0 +1,72 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:73:9: error: Ambiguous term
+  Ioc
+Possible interpretations:
+  Set.Ioc 0 x : Set ℕ
+  
+  Finset.Ioc 0 x : Finset ℕ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:78:9: error: Ambiguous term
+  Ioc
+Possible interpretations:
+  Set.Ioc 0 x : Set ℕ
+  
+  Finset.Ioc 0 x : Finset ℕ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:104:19: error: Ambiguous term
+  Ioc
+Possible interpretations:
+  Set.Ioc 0 x : Set ℕ
+  
+  Finset.Ioc 0 x : Finset ℕ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:109:16: error: Ambiguous term
+  Ioc
+Possible interpretations:
+  Set.Ioc 0 x : Set ℕ
+  
+  Finset.Ioc 0 x : Finset ℕ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:112:40: error: Invalid `⟨...⟩` notation: The expected type of this term could not be determined
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:116:5: error: Ambiguous term
+  card_le_card
+Possible interpretations:
+  Set.card_le_card
+    hsub : Fintype.card ↑↑(RHDepCountEscape82.goodPrimes S x) ≤
+    Fintype.card ↑↑(Finset.univ.biUnion fun ξ => RHDepCountEscape82.badPrimes ξ η y x)
+  
+  Finset.card_le_card
+    hsub : #(RHDepCountEscape82.goodPrimes S x) ≤ #(Finset.univ.biUnion fun ξ => RHDepCountEscape82.badPrimes ξ η y x)
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:117:2: error: 'change' tactic failed, pattern
+  ‖↑(#(RHDepCountEscape82.goodPrimes S x))‖ ≤ ‖∑ ξ, ↑(#(RHDepCountEscape82.badPrimes ξ η y x))‖
+is not definitionally equal to target
+  ‖↑(#(RHDepCountEscape82.goodPrimes S x))‖ ≤ ∑ ξ, ↑(#(RHDepCountEscape82.badPrimes ξ η y x))
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:99:18: warning: declaration uses `sorry`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:104:58: warning: declaration uses `sorry`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:146:4: error: Ambiguous term
+  LFunction
+Possible interpretations:
+  ZMod.LFunction (⇑1) ρ : ℂ
+  
+  DirichletCharacter.LFunction 1 ρ : ℂ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:149:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:151:14: error: Ambiguous term
+  LFunction
+Possible interpretations:
+  ZMod.LFunction (⇑χ) ρ : ℂ
+  
+  DirichletCharacter.LFunction χ ρ : ℂ
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:166:8: warning: declaration uses `sorry`
+'RHDepCountEscape82.exists_twist_on_count_escape' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHDepCountEscape82.entireL_ne_zero_on_count_escape' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHDepCountEscape82.principal_right_from_count_escape_grid' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'RHDepCountEscape82.zeta_line_from_count_escape_grid' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/DepCountEscape82.lean:183:0: error: RUN82 unexpected axiom RHDepCountEscape82.exists_twist_on_count_escape: [propext, sorryAx, Classical.choice, Quot.sound]

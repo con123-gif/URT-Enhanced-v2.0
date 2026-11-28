@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN99_COUNT_BUDGET_REPLAY.py", line 225, in <module>
+    exec(code,{"__file__":str(prev.OLD),"__name__":"__main__","run95_stage":stage})
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py", line 209, in <module>
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py", line 194, in main
+    state["native_module_sha256"] = {
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN99_COUNT_BUDGET_REPLAY.py", line 161, in stage
+    graph.require(left and right,"peer compile failed; inspect both logs")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: peer compile failed; inspect both logs

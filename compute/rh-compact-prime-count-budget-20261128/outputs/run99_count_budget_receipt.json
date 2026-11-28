@@ -1,0 +1,137 @@
+{
+  "compact": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_blobs": {
+    "Run94StarGrid": "bb5b6bb13884b9d161481e38da357d5fee9a10c8",
+    "IntegrationGuardedFinitePower": "ff20a7853578c8e3672914710cadf25d98766140",
+    "DepCountEscape82": "edfb195d5ef76d7a46b7cadcfa64f9f9cb7c66e9",
+    "Run98CountEscapeBudget": "b1572949fc9032a7b5de11f8ee8c451bc2a70bb6"
+  },
+  "roots": [
+    "RHPrimeWindow94.zeta_line_from_star",
+    "RHIntegration97.endpoint_from_budget",
+    "RHDepCountEscape82.zeta_line_from_count_escape_grid",
+    "RHPrimeWindow98.zeta_line_from_count_escape_budget"
+  ],
+  "stages": {
+    "data_exist_build": {
+      "returncode": 0,
+      "seconds": 243.81,
+      "log": "data_exist_build.log"
+    },
+    "Run94StarGrid": {
+      "returncode": 0,
+      "seconds": 8.53,
+      "log": "Run94StarGrid.log",
+      "axioms": {
+        "axioms": {
+          "RHPrimeWindow94.eventually_primeError_on_set": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHPrimeWindow94.endpoint_from_star_grid": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHPrimeWindow94.principal_grid_from_star": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHPrimeWindow94.zeta_line_from_star": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": true
+      },
+      "checked": true,
+      "olean_sha256": "b08e8b708fedfb4de3e25dfd09c72323ecaeac8911ca313b2e3e4ec99d8f620c"
+    },
+    "IntegrationGuardedFinitePower": {
+      "returncode": 1,
+      "seconds": 8.74,
+      "log": "IntegrationGuardedFinitePower.log",
+      "axioms": {
+        "axioms": {
+          "RHIntegration97.finite_power_scalar": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHIntegration97.eventually_primeError_on_set": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHIntegration97.endpoint_from_budget": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHIntegration97.principal_grid_from_budget": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHIntegration97.zeta_line_from_budget": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": false
+      },
+      "checked": false
+    },
+    "DepCountEscape82": {
+      "returncode": 1,
+      "seconds": 7.78,
+      "log": "DepCountEscape82.log",
+      "axioms": {
+        "axioms": {
+          "RHDepCountEscape82.exists_twist_on_count_escape": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHDepCountEscape82.entireL_ne_zero_on_count_escape": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHDepCountEscape82.principal_right_from_count_escape_grid": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RHDepCountEscape82.zeta_line_from_count_escape_grid": [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "axiom_audit_ok": false
+      },
+      "checked": false
+    }
+  },
+  "graph_checked": false,
+  "negative_control_ok": false,
+  "all_requested_checks_ok": false,
+  "arithmetic_premise_proved": false,
+  "original_definition_native_bridge_checked": false,
+  "full_RH_replay": false,
+  "failure": "peer compile failed; inspect both logs"
+}

@@ -89,5 +89,6 @@ Large outputs stay in the run's artifact (90 days).
 | `rh-compact-a2-leaf-repair-20261128` | error | 2050.27 | 2026-11-28T08:59:42Z | GPT theta lane; continuation directive 2026-11-27 | Reuse the original authenticated A1/A2 artifact and execute RUN98's six repairs to actual leaf compiler diagnostics in r |
 | `rh-compact-c1-finite-cache-20261128` | error | 150.8 | 2026-11-28T09:03:17Z | GPT Galois lane; user continuation directive 2026-11-27 | Restore exact authenticated C1/C2 artifact 15234434421 via the public cache transport already exercised in A2; execute i |
 | `rh-compact-editor-polar-mean-20261128` | error | 261.41 | 2026-11-28T09:08:39Z | GPT proof editor; continuation directive | Native replay immutable strict polar mean and original-statement bridge, using proven pinned bootstrap and only OneSided |
-| `rh-compact-prime-count-budget-20261128` | queued | | | | |
+| `rh-compact-prime-count-budget-20261128` | error | 1581.15 | 2026-11-28T09:36:01Z | GPT prime-window lane; continuation directive | Replay exact RUN94, Integration97, DepCountEscape82 and RUN98 in one pinned lightweight endpoint workspace. Attempt inde |
 | `rh-compact-c2-path-repair-20261128` | queued | | | | |
+| `rh-compact-a1-preimage-repair-20261128` | queued | | | | |
