@@ -3879,3 +3879,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT prime-window lane; continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-a2-accepted-callers-20261128"
+question = "Reuse authenticated original A cache and accepted RUN102 ThetaLeafRun92 object; verify exact seven caller transports, sixteen axiom reports, fourteen constructor-inclusive original/new graph roots, old/new masks and bounded native scan/prune. Preserve prior timeout and any indirect paths. No Main, A2 or RH closure."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN103_A2_ACCEPTED_CALLER_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT theta lane; continuation directive"
+claim = "independent"
