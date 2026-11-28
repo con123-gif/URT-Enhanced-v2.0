@@ -1,0 +1,201 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:33:55: error: unsolved goals
+R : Type u_1
+n : Type u_2
+inst✝³ : CommRing R
+inst✝² : IsLocalRing R
+inst✝¹ : Fintype n
+inst✝ : DecidableEq n
+A : Matrix n n R
+u : ℕ
+hA : A.map ⇑(IsLocalRing.residue R) = 1
+hu : ↑u ≠ 0
+hpow : A ^ u = 1
+f : Matrix n n R →+* Matrix n n (IsLocalRing.ResidueField R) := (IsLocalRing.residue R).mapMatrix
+hf : f A = 1
+S : Matrix n n R := ∑ j ∈ Finset.range u, A ^ j
+⊢ ∑ x ∈ Finset.range u, 1 ^ x = ↑u
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:79:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'ThetaRun81.matrix_torsion_eq_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ThetaRun81.finite_group_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThetaRun81.chosenLevel_free_of_prime_kill' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThetaRun81.smallerLevel_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:113:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:114:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:149:25: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsLocalRing ↥(LocInt w).toSubring
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:171:4: error: Type mismatch: After simplification, term
+  hmap
+ has type
+  (Matrix.GeneralLinearGroup.map f) ↑γ = 1
+but is expected to have type
+  (Matrix.GeneralLinearGroup.map f) ↑γ = (Matrix.GeneralLinearGroup.map f) ↑1
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:182:29: error: Tactic `decide` failed to reduce
+  @Decidable.decide (0 ≠ 1) instDecidableNot
+to `Bool.true` or `Bool.false`.
+
+After unfolding the instances `instDecidableNot`, `Classical.decEq`, and `Classical.propDecidable`, reduction got stuck at
+  Classical.choice ⋯
+
+Hint: Reduction got stuck on `Classical.choice`, which indicates that a `Decidable` instance is defined using classical reasoning, proving an instance exists rather than giving a concrete construction. The `decide` tactic works by evaluating a decision procedure via reduction, and it cannot make progress with such instances. This can occur due to the `open scoped Classical` command, which enables the instance `Classical.propDecidable`.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:189:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Fintype (ResField w)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:193:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Fintype (ResField w)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:202:18: error: unsolved goals
+case succ.hp
+P : Parameters
+D : Data P
+n : Type
+inst✝ : Fintype n
+g : Gf D.E n
+y : ↥(classAut stdRatPoints Data.chosenLevel g)
+i : Fin 2
+v : D.ChosenPlace i := (Data.chosenEquiv i) Classical.ofNonempty
+j : (i : Fin 2) × D.ChosenPlace i := ⟨i, v⟩
+w : FinPlace D.E := D.chosen j
+hcard : sorry = D.g i
+h : Gf D.E n := g⁻¹ * ↑y * g
+hh : h ∈ Data.chosenLevel
+p : ℕ
+ih : Nat.Prime p → y ^ p = 1 → p ≠ D.g i → ↑p ≠ 0 → ↑y ^ p = 1 → h ^ p = g⁻¹ * ↑y ^ p * g
+hp : Nat.Prime (p + 1)
+hy : y ^ (p + 1) = 1
+hi : p + 1 ≠ D.g i
+hpw : ↑(p + 1) ≠ 0
+hy' : ↑y ^ (p + 1) = 1
+⊢ Nat.Prime p
+
+case succ.hy
+P : Parameters
+D : Data P
+n : Type
+inst✝ : Fintype n
+g : Gf D.E n
+y : ↥(classAut stdRatPoints Data.chosenLevel g)
+i : Fin 2
+v : D.ChosenPlace i := (Data.chosenEquiv i) Classical.ofNonempty
+j : (i : Fin 2) × D.ChosenPlace i := ⟨i, v⟩
+w : FinPlace D.E := D.chosen j
+hcard : sorry = D.g i
+h : Gf D.E n := g⁻¹ * ↑y * g
+hh : h ∈ Data.chosenLevel
+p : ℕ
+ih : Nat.Prime p → y ^ p = 1 → p ≠ D.g i → ↑p ≠ 0 → ↑y ^ p = 1 → h ^ p = g⁻¹ * ↑y ^ p * g
+hp : Nat.Prime (p + 1)
+hy : y ^ (p + 1) = 1
+hi : p + 1 ≠ D.g i
+hpw : ↑(p + 1) ≠ 0
+hy' : ↑y ^ (p + 1) = 1
+⊢ y ^ p = 1
+
+case succ.hi
+P : Parameters
+D : Data P
+n : Type
+inst✝ : Fintype n
+g : Gf D.E n
+y : ↥(classAut stdRatPoints Data.chosenLevel g)
+i : Fin 2
+v : D.ChosenPlace i := (Data.chosenEquiv i) Classical.ofNonempty
+j : (i : Fin 2) × D.ChosenPlace i := ⟨i, v⟩
+w : FinPlace D.E := D.chosen j
+hcard : sorry = D.g i
+h : Gf D.E n := g⁻¹ * ↑y * g
+hh : h ∈ Data.chosenLevel
+p : ℕ
+ih : Nat.Prime p → y ^ p = 1 → p ≠ D.g i → ↑p ≠ 0 → ↑y ^ p = 1 → h ^ p = g⁻¹ * ↑y ^ p * g
+hp : Nat.Prime (p + 1)
+hy : y ^ (p + 1) = 1
+hi : p + 1 ≠ D.g i
+hpw : ↑(p + 1) ≠ 0
+hy' : ↑y ^ (p + 1) = 1
+⊢ p ≠ D.g i
+
+case succ.hpw
+P : Parameters
+D : Data P
+n : Type
+inst✝ : Fintype n
+g : Gf D.E n
+y : ↥(classAut stdRatPoints Data.chosenLevel g)
+i : Fin 2
+v : D.ChosenPlace i := (Data.chosenEquiv i) Classical.ofNonempty
+j : (i : Fin 2) × D.ChosenPlace i := ⟨i, v⟩
+w : FinPlace D.E := D.chosen j
+hcard : sorry = D.g i
+h : Gf D.E n := g⁻¹ * ↑y * g
+hh : h ∈ Data.chosenLevel
+p : ℕ
+ih : Nat.Prime p → y ^ p = 1 → p ≠ D.g i → ↑p ≠ 0 → ↑y ^ p = 1 → h ^ p = g⁻¹ * ↑y ^ p * g
+hp : Nat.Prime (p + 1)
+hy : y ^ (p + 1) = 1
+hi : p + 1 ≠ D.g i
+hpw : ↑(p + 1) ≠ 0
+hy' : ↑y ^ (p + 1) = 1
+⊢ ↑p ≠ 0
+
+case succ.hy'
+P : Parameters
+D : Data P
+n : Type
+inst✝ : Fintype n
+g : Gf D.E n
+y : ↥(classAut stdRatPoints Data.chosenLevel g)
+i : Fin 2
+v : D.ChosenPlace i := (Data.chosenEquiv i) Classical.ofNonempty
+j : (i : Fin 2) × D.ChosenPlace i := ⟨i, v⟩
+w : FinPlace D.E := D.chosen j
+hcard : sorry = D.g i
+h : Gf D.E n := g⁻¹ * ↑y * g
+hh : h ∈ Data.chosenLevel
+p : ℕ
+ih : Nat.Prime p → y ^ p = 1 → p ≠ D.g i → ↑p ≠ 0 → ↑y ^ p = 1 → h ^ p = g⁻¹ * ↑y ^ p * g
+hp : Nat.Prime (p + 1)
+hy : y ^ (p + 1) = 1
+hi : p + 1 ≠ D.g i
+hpw : ↑(p + 1) ≠ 0
+hy' : ↑y ^ (p + 1) = 1
+⊢ ↑y ^ p = 1
+'ThetaRun82.cast_prime_ne_zero_of_card_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThetaRun82.gl_map_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThetaRun82.chosen_component_prime_kill' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ThetaRun82.rational_eq_one_of_component' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ThetaRun82.chosenLevel_prime_kill' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ThetaRun82.chosenLevel_free' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ThetaRun82.chosenLevel_free_original' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+@Data.classAut_eq_bot_of_le_chosenLevel : ∀ {P : Parameters} {D : Data P} {n : Type} [inst : Fintype n]
+  {K : Subgroup (Gf D.E n)},
+  K ≤ Data.chosenLevel → Fintype.card n ≤ 2 * D.n D.m → ∀ (g : Gf D.E n), classAut stdRatPoints K g = ⊥
+@ThetaRun82.chosenLevel_free_original : ∀ {P : Parameters} {D : Data P} {n : Type} [inst : Fintype n]
+  {K : Subgroup (Gf D.E n)},
+  K ≤ Data.chosenLevel → Fintype.card n ≤ 2 * D.n D.m → ∀ (g : Gf D.E n), classAut stdRatPoints K g = ⊥
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/theta92/ThetaLeafRun92.lean:240:0: error: THETA89 new/unexpected axiom
+'Data.classAut_eq_bot_of_le_chosenLevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThetaRun82.chosenLevel_free_original' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

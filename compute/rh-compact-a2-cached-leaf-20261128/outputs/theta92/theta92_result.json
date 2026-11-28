@@ -1,0 +1,38 @@
+{
+  "scope": "A2 chosen-level freeness only",
+  "roots": [
+    "Data.classAut_eq_bot_of_le_chosenLevel",
+    "ThetaRun82.chosenLevel_free_original",
+    "ThetaRun82.chosenLevel_free"
+  ],
+  "native_verified": false,
+  "graph_audited": false,
+  "local_old_neatness_absent": false,
+  "prune_executed": false,
+  "caller_replacements_checked": false,
+  "full_RH_replay": false,
+  "restored_cache_intake_checked": true,
+  "leaf_source_blob": "fb32154912a700c3ec0c4ea7c0e7fd3744bc604b",
+  "leaf_compile": {
+    "returncode": 1,
+    "seconds": 7.08,
+    "log": "leaf.log"
+  },
+  "leaf_axioms": {
+    "axioms": {
+      "Data.classAut_eq_bot_of_le_chosenLevel": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ThetaRun82.chosenLevel_free_original": [
+        "propext",
+        "sorryAx",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": false
+  },
+  "error": "leaf failed: inspect leaf.log"
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "A2 cached original leaf and independent short span",
+  "native_verified": false,
+  "short_native_verified": false,
+  "full_RH_replay": false,
+  "stages": {
+    "artifact_download": {
+      "returncode": 0,
+      "log": "artifact_download.log",
+      "log_sha256": "773990772f4ccf92ef0a57c01cbfbdd60a0bc7b951dc0df517ed79c02a71832c"
+    },
+    "intake": {
+      "returncode": 0,
+      "log": "intake.log",
+      "log_sha256": "4cc6f593e9983c62c7e3c722b9def3da5f6ebdc12c9858e7f509808bae455b9c"
+    },
+    "lean_download": {
+      "returncode": 0,
+      "log": "lean_download.log",
+      "log_sha256": "4ac7d6bc9c088c3f7880c4cad5681c29e6edec5597a23079078ba2e06186b328"
+    },
+    "lean_extract": {
+      "returncode": 0,
+      "log": "lean_extract.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_init": {
+      "returncode": 0,
+      "log": "source_init.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_fetch": {
+      "returncode": 0,
+      "log": "source_fetch.log",
+      "log_sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    "source_checkout": {
+      "returncode": 0,
+      "log": "source_checkout.log",
+      "log_sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "log": "mathlib_cache.log",
+      "log_sha256": "460dfb75c927e54dd767f9c2a767f333b9ef7d459f102d98ca533f481d2e011d"
+    },
+    "restore_original": {
+      "returncode": 0,
+      "log": "restore_original.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "leaf": {
+      "returncode": 1,
+      "log": "leaf.log",
+      "log_sha256": "7d1594bf8ae1913bb242d5c69f4deba6d69bce82b747197cb468c7fc1168277d"
+    }
+  },
+  "artifact_verified": true,
+  "leaf_graph_accepted": false,
+  "error": "RUN92 leaf/graph/prune incomplete"
+}
