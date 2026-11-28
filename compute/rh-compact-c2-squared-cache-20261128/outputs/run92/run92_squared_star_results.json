@@ -1,0 +1,743 @@
+{
+  "full_RH_replay": false,
+  "human_assembly_verified": false,
+  "all_requested_checks_ok": false,
+  "new_Lean_execution": false,
+  "steps": {
+    "restore_original": {
+      "returncode": 0,
+      "seconds": 14.54,
+      "log": "restore_original.log"
+    },
+    "extend_original": {
+      "returncode": 0,
+      "seconds": 8895.32,
+      "log": "extend_original.log"
+    }
+  },
+  "input_manifest": {
+    "pin": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "cache_sha": "63bbe26668b47f81149ef5f5e06033168489076b68eb22509fa40bcc518a9603",
+    "cache_bytes": 792898966,
+    "base_source": "aba46120ca4118decd864f817b51bcca2bc31c19",
+    "base_module": {
+      "name": "C2Combined",
+      "artifacts": [
+        {
+          "name": "C2Combined.olean",
+          "bytes": 11035600,
+          "sha256": "4ef847efc76e509f2e1f581b38a73cc76e8c31085a031eabf68d97b09ad6c46a"
+        }
+      ]
+    },
+    "chain": [
+      {
+        "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+        "compiled_module": {
+          "name": "C2StandardExchange",
+          "artifacts": [
+            {
+              "name": "C2StandardExchange.olean",
+              "bytes": 640504,
+              "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+            }
+          ]
+        },
+        "checked_interface_dependencies": []
+      },
+      {
+        "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+        "compiled_module": {
+          "name": "C2DeterminantLift",
+          "artifacts": [
+            {
+              "name": "C2DeterminantLift.olean",
+              "bytes": 186912,
+              "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+            }
+          ]
+        },
+        "checked_interface_dependencies": []
+      },
+      {
+        "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+        "compiled_module": {
+          "name": "C2DeterminantExchange",
+          "artifacts": [
+            {
+              "name": "C2DeterminantExchange.olean",
+              "bytes": 1098992,
+              "sha256": "d81b5d903e8894c3d357e538efe0b510f5a45d0898e4be698b70bd045655f28a"
+            }
+          ]
+        },
+        "checked_interface_dependencies": [
+          {
+            "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+            "module": {
+              "name": "C2StandardExchange",
+              "artifacts": [
+                {
+                  "name": "C2StandardExchange.olean",
+                  "bytes": 640504,
+                  "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+            "module": {
+              "name": "C2DeterminantLift",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantLift.olean",
+                  "bytes": 186912,
+                  "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+        "compiled_module": {
+          "name": "C2RealMatchingStandard",
+          "artifacts": [
+            {
+              "name": "C2RealMatchingStandard.olean",
+              "bytes": 236832,
+              "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+            }
+          ]
+        },
+        "checked_interface_dependencies": []
+      },
+      {
+        "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+        "compiled_module": {
+          "name": "C2DeterminantClassSum",
+          "artifacts": [
+            {
+              "name": "C2DeterminantClassSum.olean",
+              "bytes": 2026936,
+              "sha256": "15b315021a15c21c085511f70e95da388b1212219a27eac965a99e841770f53c"
+            }
+          ]
+        },
+        "checked_interface_dependencies": [
+          {
+            "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+            "module": {
+              "name": "C2StandardExchange",
+              "artifacts": [
+                {
+                  "name": "C2StandardExchange.olean",
+                  "bytes": 640504,
+                  "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+            "module": {
+              "name": "C2DeterminantLift",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantLift.olean",
+                  "bytes": 186912,
+                  "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+            "module": {
+              "name": "C2DeterminantExchange",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantExchange.olean",
+                  "bytes": 1098992,
+                  "sha256": "d81b5d903e8894c3d357e538efe0b510f5a45d0898e4be698b70bd045655f28a"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+            "module": {
+              "name": "C2RealMatchingStandard",
+              "artifacts": [
+                {
+                  "name": "C2RealMatchingStandard.olean",
+                  "bytes": 236832,
+                  "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "source_blob": "5083aea866074ba1e52b025342752df605581c78",
+        "compiled_module": {
+          "name": "C2DeterminantCarrierTransport",
+          "artifacts": [
+            {
+              "name": "C2DeterminantCarrierTransport.olean",
+              "bytes": 1493520,
+              "sha256": "57f51647df44c31eebb6e9e04a1264e1eeceba15c556657db6e13210b753bf01"
+            }
+          ]
+        },
+        "checked_interface_dependencies": [
+          {
+            "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+            "module": {
+              "name": "C2StandardExchange",
+              "artifacts": [
+                {
+                  "name": "C2StandardExchange.olean",
+                  "bytes": 640504,
+                  "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+            "module": {
+              "name": "C2DeterminantLift",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantLift.olean",
+                  "bytes": 186912,
+                  "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+            "module": {
+              "name": "C2DeterminantExchange",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantExchange.olean",
+                  "bytes": 1098992,
+                  "sha256": "d81b5d903e8894c3d357e538efe0b510f5a45d0898e4be698b70bd045655f28a"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+            "module": {
+              "name": "C2RealMatchingStandard",
+              "artifacts": [
+                {
+                  "name": "C2RealMatchingStandard.olean",
+                  "bytes": 236832,
+                  "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+            "module": {
+              "name": "C2DeterminantClassSum",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantClassSum.olean",
+                  "bytes": 2026936,
+                  "sha256": "15b315021a15c21c085511f70e95da388b1212219a27eac965a99e841770f53c"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "source_blob": "2bc7219f8db7e72f6cff11b4ac29c2f9a84ce261",
+        "compiled_module": {
+          "name": "C2DeterminantFixedLine",
+          "artifacts": [
+            {
+              "name": "C2DeterminantFixedLine.olean",
+              "bytes": 197656,
+              "sha256": "5f5a44c5bb1f0c50ab6aa36c909a03505e2f5df4c6b72b6a3fb8b3f7e1979d78"
+            }
+          ]
+        },
+        "checked_interface_dependencies": []
+      },
+      {
+        "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+        "compiled_module": {
+          "name": "C2DeterminantWeilAction",
+          "artifacts": [
+            {
+              "name": "C2DeterminantWeilAction.olean",
+              "bytes": 236656,
+              "sha256": "a7e17fe3ad75baa522dac169a9304c101dbcbfa840692a4e800d4627f073f04e"
+            }
+          ]
+        },
+        "checked_interface_dependencies": []
+      },
+      {
+        "source_blob": "e70b65e517b843ab4f1ce6e438879e80463db998",
+        "compiled_module": {
+          "name": "C2DeterminantContinuousLine",
+          "artifacts": [
+            {
+              "name": "C2DeterminantContinuousLine.olean",
+              "bytes": 280968,
+              "sha256": "224a7d4afd34c960c3f7ecefdf930598bf6f08148b76acc4e646da2c25e587d1"
+            }
+          ]
+        },
+        "checked_interface_dependencies": [
+          {
+            "source_blob": "2bc7219f8db7e72f6cff11b4ac29c2f9a84ce261",
+            "module": {
+              "name": "C2DeterminantFixedLine",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantFixedLine.olean",
+                  "bytes": 197656,
+                  "sha256": "5f5a44c5bb1f0c50ab6aa36c909a03505e2f5df4c6b72b6a3fb8b3f7e1979d78"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+            "module": {
+              "name": "C2DeterminantWeilAction",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantWeilAction.olean",
+                  "bytes": 236656,
+                  "sha256": "a7e17fe3ad75baa522dac169a9304c101dbcbfa840692a4e800d4627f073f04e"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "source_blob": "aaec88856a302d40e1e501395da463f7a0f28d50",
+        "compiled_module": {
+          "name": "C2DirectRealMatching",
+          "artifacts": [
+            {
+              "name": "C2DirectRealMatching.olean",
+              "bytes": 286704,
+              "sha256": "4c0b38b80b84ded660285c4f8b7a8fef9fb7c2d22f46ebe68ef6674b6d06fe6b"
+            }
+          ]
+        },
+        "checked_interface_dependencies": [
+          {
+            "source_blob": "2bc7219f8db7e72f6cff11b4ac29c2f9a84ce261",
+            "module": {
+              "name": "C2DeterminantFixedLine",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantFixedLine.olean",
+                  "bytes": 197656,
+                  "sha256": "5f5a44c5bb1f0c50ab6aa36c909a03505e2f5df4c6b72b6a3fb8b3f7e1979d78"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+            "module": {
+              "name": "C2DeterminantWeilAction",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantWeilAction.olean",
+                  "bytes": 236656,
+                  "sha256": "a7e17fe3ad75baa522dac169a9304c101dbcbfa840692a4e800d4627f073f04e"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "e70b65e517b843ab4f1ce6e438879e80463db998",
+            "module": {
+              "name": "C2DeterminantContinuousLine",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantContinuousLine.olean",
+                  "bytes": 280968,
+                  "sha256": "224a7d4afd34c960c3f7ecefdf930598bf6f08148b76acc4e646da2c25e587d1"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+            "module": {
+              "name": "C2RealMatchingStandard",
+              "artifacts": [
+                {
+                  "name": "C2RealMatchingStandard.olean",
+                  "bytes": 236832,
+                  "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "source_blob": "1c1c1a5370e06e831e900cae35cdc68cb0eebd37",
+        "compiled_module": {
+          "name": "C2DirectDeterminantTransport",
+          "artifacts": [
+            {
+              "name": "C2DirectDeterminantTransport.olean",
+              "bytes": 3178704,
+              "sha256": "7fe2d3bce78da632daf4c67a5f457b0c75866722ebd4af64321b008ce301f418"
+            }
+          ]
+        },
+        "checked_interface_dependencies": [
+          {
+            "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+            "module": {
+              "name": "C2StandardExchange",
+              "artifacts": [
+                {
+                  "name": "C2StandardExchange.olean",
+                  "bytes": 640504,
+                  "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+            "module": {
+              "name": "C2DeterminantLift",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantLift.olean",
+                  "bytes": 186912,
+                  "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+            "module": {
+              "name": "C2DeterminantExchange",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantExchange.olean",
+                  "bytes": 1098992,
+                  "sha256": "d81b5d903e8894c3d357e538efe0b510f5a45d0898e4be698b70bd045655f28a"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+            "module": {
+              "name": "C2RealMatchingStandard",
+              "artifacts": [
+                {
+                  "name": "C2RealMatchingStandard.olean",
+                  "bytes": 236832,
+                  "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+            "module": {
+              "name": "C2DeterminantClassSum",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantClassSum.olean",
+                  "bytes": 2026936,
+                  "sha256": "15b315021a15c21c085511f70e95da388b1212219a27eac965a99e841770f53c"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "5083aea866074ba1e52b025342752df605581c78",
+            "module": {
+              "name": "C2DeterminantCarrierTransport",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantCarrierTransport.olean",
+                  "bytes": 1493520,
+                  "sha256": "57f51647df44c31eebb6e9e04a1264e1eeceba15c556657db6e13210b753bf01"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "2bc7219f8db7e72f6cff11b4ac29c2f9a84ce261",
+            "module": {
+              "name": "C2DeterminantFixedLine",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantFixedLine.olean",
+                  "bytes": 197656,
+                  "sha256": "5f5a44c5bb1f0c50ab6aa36c909a03505e2f5df4c6b72b6a3fb8b3f7e1979d78"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+            "module": {
+              "name": "C2DeterminantWeilAction",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantWeilAction.olean",
+                  "bytes": 236656,
+                  "sha256": "a7e17fe3ad75baa522dac169a9304c101dbcbfa840692a4e800d4627f073f04e"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "e70b65e517b843ab4f1ce6e438879e80463db998",
+            "module": {
+              "name": "C2DeterminantContinuousLine",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantContinuousLine.olean",
+                  "bytes": 280968,
+                  "sha256": "224a7d4afd34c960c3f7ecefdf930598bf6f08148b76acc4e646da2c25e587d1"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "aaec88856a302d40e1e501395da463f7a0f28d50",
+            "module": {
+              "name": "C2DirectRealMatching",
+              "artifacts": [
+                {
+                  "name": "C2DirectRealMatching.olean",
+                  "bytes": 286704,
+                  "sha256": "4c0b38b80b84ded660285c4f8b7a8fef9fb7c2d22f46ebe68ef6674b6d06fe6b"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "source_blob": "7e912b212aa0a365106cca2e7a0c30a17eb65ff6",
+        "compiled_module": {
+          "name": "C2ValueFamilyTransport",
+          "artifacts": [
+            {
+              "name": "C2ValueFamilyTransport.olean",
+              "bytes": 7517784,
+              "sha256": "df09a2527a08d97db0c9ee168e5585ed30491c6bbe853ef5c4d60df0e788f2c2"
+            }
+          ]
+        },
+        "checked_interface_dependencies": [
+          {
+            "source_blob": "1b945d4df64ade81cb8ccf5f345a52668afc5f7a",
+            "module": {
+              "name": "C2StandardExchange",
+              "artifacts": [
+                {
+                  "name": "C2StandardExchange.olean",
+                  "bytes": 640504,
+                  "sha256": "9f4256154fcef86ce5f586bcfe41b6c23a1ea741f1d75d321062beb7a82108a8"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "052a8d386b6573cac924804cbc7640a34957b045",
+            "module": {
+              "name": "C2DeterminantLift",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantLift.olean",
+                  "bytes": 186912,
+                  "sha256": "c01028a6552e518437792dd9b0a6b2778d9cba80bceca79745093f110b2bdd1d"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "acefc3125d97bd02906c555c35e46722d6a31a6b",
+            "module": {
+              "name": "C2DeterminantExchange",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantExchange.olean",
+                  "bytes": 1098992,
+                  "sha256": "d81b5d903e8894c3d357e538efe0b510f5a45d0898e4be698b70bd045655f28a"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "45fc666e330b42e0c38605f22e190748168e3a9d",
+            "module": {
+              "name": "C2RealMatchingStandard",
+              "artifacts": [
+                {
+                  "name": "C2RealMatchingStandard.olean",
+                  "bytes": 236832,
+                  "sha256": "9876af8036a8b57c3c059e9132b741a5034ebf73bda85def79a66e6886dc77af"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "67473a75e141e04e3bed87f97e57cb5979c7bce1",
+            "module": {
+              "name": "C2DeterminantClassSum",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantClassSum.olean",
+                  "bytes": 2026936,
+                  "sha256": "15b315021a15c21c085511f70e95da388b1212219a27eac965a99e841770f53c"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "5083aea866074ba1e52b025342752df605581c78",
+            "module": {
+              "name": "C2DeterminantCarrierTransport",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantCarrierTransport.olean",
+                  "bytes": 1493520,
+                  "sha256": "57f51647df44c31eebb6e9e04a1264e1eeceba15c556657db6e13210b753bf01"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "2bc7219f8db7e72f6cff11b4ac29c2f9a84ce261",
+            "module": {
+              "name": "C2DeterminantFixedLine",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantFixedLine.olean",
+                  "bytes": 197656,
+                  "sha256": "5f5a44c5bb1f0c50ab6aa36c909a03505e2f5df4c6b72b6a3fb8b3f7e1979d78"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "3f9228248dd81112be16a0f6e1b79170715683f0",
+            "module": {
+              "name": "C2DeterminantWeilAction",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantWeilAction.olean",
+                  "bytes": 236656,
+                  "sha256": "a7e17fe3ad75baa522dac169a9304c101dbcbfa840692a4e800d4627f073f04e"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "e70b65e517b843ab4f1ce6e438879e80463db998",
+            "module": {
+              "name": "C2DeterminantContinuousLine",
+              "artifacts": [
+                {
+                  "name": "C2DeterminantContinuousLine.olean",
+                  "bytes": 280968,
+                  "sha256": "224a7d4afd34c960c3f7ecefdf930598bf6f08148b76acc4e646da2c25e587d1"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "aaec88856a302d40e1e501395da463f7a0f28d50",
+            "module": {
+              "name": "C2DirectRealMatching",
+              "artifacts": [
+                {
+                  "name": "C2DirectRealMatching.olean",
+                  "bytes": 286704,
+                  "sha256": "4c0b38b80b84ded660285c4f8b7a8fef9fb7c2d22f46ebe68ef6674b6d06fe6b"
+                }
+              ]
+            }
+          },
+          {
+            "source_blob": "1c1c1a5370e06e831e900cae35cdc68cb0eebd37",
+            "module": {
+              "name": "C2DirectDeterminantTransport",
+              "artifacts": [
+                {
+                  "name": "C2DirectDeterminantTransport.olean",
+                  "bytes": 3178704,
+                  "sha256": "7fe2d3bce78da632daf4c67a5f457b0c75866722ebd4af64321b008ce301f418"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "stages": [
+      {
+        "path": "specialists/character_boxes/RUN91_COMPACT_C2_SQUARED_STAR_MINIMAL.lean",
+        "module": "C2SquaredStarMinimal",
+        "guard": "RUN91_SQUARED_STAR:",
+        "sha": "1bd5f9339e7a588439173ccb8be396f208cfb120",
+        "probes": [
+          "c2_isAlgebraic_of_arch",
+          "c2_heightLe_nonneg_arch",
+          "Data.integral_forms_long",
+          "Data.run90_squared_witness_integral_forms_long",
+          "run91_original_star_control",
+          "run91_squared_star_inequality"
+        ]
+      }
+    ],
+    "roots": [
+      "c2_isAlgebraic_of_arch",
+      "c2_heightLe_nonneg_arch",
+      "Data.integral_forms_long",
+      "Data.run90_squared_witness_integral_forms_long",
+      "run91_original_star_control",
+      "run91_squared_star_inequality"
+    ],
+    "receipt_blobs": [
+      "2146cd28915a80aa467d64de6ecd0f659e71f389",
+      "baa074ee974e8e916d580d3386fd17b71d2af8f7",
+      "413058eacfda8683f5fb28c68148fd45d1bf1770",
+      "392d253a5f2e412aa5b741a78ee3dbec55b7c9d4"
+    ]
+  },
+  "artifact_module_objects_authenticated": 13,
+  "missing_original_modules": [
+    "New.Endgame.LongForms",
+    "New.Data.DataExist",
+    "Statements"
+  ],
+  "failure": "invalid fresh Lean path"
+}

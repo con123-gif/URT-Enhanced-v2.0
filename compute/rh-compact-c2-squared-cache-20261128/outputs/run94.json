@@ -1,0 +1,50 @@
+{
+  "scope": "C2 squared reciprocal height and actual star",
+  "artifact_verified": true,
+  "native_verified": false,
+  "full_RH_replay": false,
+  "stages": {
+    "artifact_download": {
+      "returncode": 0,
+      "log": "artifact_download.log",
+      "log_sha256": "7cd62b3a8fd19ae64b6c56e6c1a4fd95d36cffa9ad890add51b2b786ab99000f"
+    },
+    "lean_download": {
+      "returncode": 0,
+      "log": "lean_download.log",
+      "log_sha256": "bd5d6271d44c301563253eb8cd0027f64b60c6f7f9beca8a0743ddc1a7e1d81c"
+    },
+    "lean_extract": {
+      "returncode": 0,
+      "log": "lean_extract.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_init": {
+      "returncode": 0,
+      "log": "source_init.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_fetch": {
+      "returncode": 0,
+      "log": "source_fetch.log",
+      "log_sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    "source_checkout": {
+      "returncode": 0,
+      "log": "source_checkout.log",
+      "log_sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "log": "mathlib_cache.log",
+      "log_sha256": "d7401bc33c1c0f053954b6d54d1b33f241d7e576cb83bcaaa5bef3b6a24f9a36"
+    },
+    "run92": {
+      "returncode": 1,
+      "log": "run92.log",
+      "log_sha256": "ab01c7f00a627f9f56baaf8162cbdb38c1123800a94ab7e7a01b7e30c59be351"
+    }
+  },
+  "extracted_members": 158,
+  "error": "first failed phase: run92"
+}

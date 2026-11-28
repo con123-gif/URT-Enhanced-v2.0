@@ -1,0 +1,92 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: first failed phase: run92",
+  "returncode": 1,
+  "wall_s": 9061.92,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py\", line 180, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py\", line 166, in main\n    run(\"run92\",[sys.executable,DRIVER,\"--artifact\",art,\"--compact-root\",root,\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py\", line 125, in run\n    require(rc==0, \"first failed phase: \"+label)\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py\", line 61, in require\n    raise RuntimeError(msg)\nRuntimeError: first failed phase: run92\n",
+  "id": "rh-compact-c2-squared-cache-20261128",
+  "question": "Retrieve exact retained C1/C2 artifact 15234434421 by the public artifact transport independently exercised by theta RUN97, verify outer and inner digests, restore only its own compiled objects and execute immutable RUN92 squared reciprocal-height and actual star with all six original/reduced constructor-inclusive roots and standard axiom guards. Preserve first failed phase and all prior evidence; no Main import, cold fit build, C1/C3 or RH closure claim.",
+  "requested_by": "GPT character boxes lane; user continuation directive",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py --out {out}",
+  "utc": "2026-11-28T07:14:59Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "02c94c3a7eeb374e9f718a34da6c170f2624b988",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46108846902",
+  "outputs_committed": [
+    {
+      "path": "artifact_download.log",
+      "bytes": 1796,
+      "sha256": "7cd62b3a8fd19ae64b6c56e6c1a4fd95d36cffa9ad890add51b2b786ab99000f"
+    },
+    {
+      "path": "lean_download.log",
+      "bytes": 1016,
+      "sha256": "bd5d6271d44c301563253eb8cd0027f64b60c6f7f9beca8a0743ddc1a7e1d81c"
+    },
+    {
+      "path": "lean_extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 8308,
+      "sha256": "d7401bc33c1c0f053954b6d54d1b33f241d7e576cb83bcaaa5bef3b6a24f9a36"
+    },
+    {
+      "path": "run92/extend_original.log",
+      "bytes": 185629,
+      "sha256": "01a3c3d980505080693e9a38ca5d6166f0a5636b79473fb51def5e7e5a8149da"
+    },
+    {
+      "path": "run92/fresh_environment.log",
+      "bytes": 4700,
+      "sha256": "0c5503f3d3c0d4b7082931c39af1da2aec26dca2f3c4e7075ed7a8efd97218dc"
+    },
+    {
+      "path": "run92/restore_original.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "run92/run92_squared_star_results.json",
+      "bytes": 24846,
+      "sha256": "1a943729aab846584e02efa27ccfa1f0f3b262f538ddfb4fcd519cc909dc7ab1"
+    },
+    {
+      "path": "run92.log",
+      "bytes": 923,
+      "sha256": "ab01c7f00a627f9f56baaf8162cbdb38c1123800a94ab7e7a01b7e30c59be351"
+    },
+    {
+      "path": "run94.json",
+      "bytes": 1612,
+      "sha256": "c32c74d9b53590ae2bb20820b8c7210cfb1c2d0b80f1b2afb5e63f16f394e8e0"
+    },
+    {
+      "path": "source_checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "source_fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "source_init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "outputs_artifact_only": []
+}

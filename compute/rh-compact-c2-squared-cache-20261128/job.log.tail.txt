@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py", line 180, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py", line 166, in main
+    run("run92",[sys.executable,DRIVER,"--artifact",art,"--compact-root",root,
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py", line 125, in run
+    require(rc==0, "first failed phase: "+label)
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py", line 61, in require
+    raise RuntimeError(msg)
+RuntimeError: first failed phase: run92
