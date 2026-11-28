@@ -1,0 +1,20 @@
+{
+  "Data.classAut_eq_bot_of_le_chosenLevel": {
+    "exit": 0,
+    "nodes": 122788,
+    "missing": 0,
+    "log": "audit-0.json"
+  },
+  "ThetaRun82.chosenLevel_free_original": {
+    "exit": 0,
+    "nodes": 123054,
+    "missing": 0,
+    "log": "audit-1.json"
+  },
+  "ThetaRun82.chosenLevel_free": {
+    "exit": 0,
+    "nodes": 123048,
+    "missing": 0,
+    "log": "audit-2.json"
+  }
+}

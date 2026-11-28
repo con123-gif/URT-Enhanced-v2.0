@@ -1,0 +1,55 @@
+{
+  "scope": "A2 chosen-level freeness only",
+  "roots": [
+    "Data.classAut_eq_bot_of_le_chosenLevel",
+    "ThetaRun82.chosenLevel_free_original",
+    "ThetaRun82.chosenLevel_free"
+  ],
+  "native_verified": true,
+  "graph_audited": true,
+  "local_old_neatness_absent": true,
+  "prune_executed": true,
+  "caller_replacements_checked": false,
+  "full_RH_replay": false,
+  "restored_cache_intake_checked": true,
+  "leaf_source_blob": "a8ea0f3e42fe99aabaa04e0cf675fcda8183e59e",
+  "leaf_compile": {
+    "returncode": 0,
+    "seconds": 7.48,
+    "log": "leaf.log"
+  },
+  "leaf_axioms": {
+    "axioms": {
+      "Data.classAut_eq_bot_of_le_chosenLevel": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ThetaRun82.chosenLevel_free_original": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "axiom_audit_ok": true
+  },
+  "object_sha256": "09cfb2c1db343b5f6d5369927ac018c5745e9141b0e5266ae2144937c7fc15ce",
+  "graph_compile": {
+    "returncode": 0,
+    "seconds": 72.72,
+    "log": "graph.log"
+  },
+  "watched_masks": {
+    "classAut_eq_bot": 1,
+    "Data.classAut_eq_bot_of_le_chosenLevel": 1,
+    "ThetaRun81.matrix_torsion_eq_one": 6,
+    "ThetaRun82.chosenLevel_free_original": 2,
+    "ThetaRun82.chosenLevel_free": 6
+  },
+  "local_new_path_present": true,
+  "prune_result": {
+    "returncode": 0,
+    "seconds": 7.98,
+    "log": "scan_prune.log"
+  }
+}

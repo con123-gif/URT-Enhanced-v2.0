@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py", line 141, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py", line 138, in main
+    queue.main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN97_A2_CACHED_NATIVE_QUEUE.py", line 176, in main
+    require(state["short_native_verified"],"RUN93 short span not accepted")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN97_A2_CACHED_NATIVE_QUEUE.py", line 67, in require
+    raise RuntimeError(msg)
+RuntimeError: RUN93 short span not accepted

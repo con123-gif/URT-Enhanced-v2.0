@@ -1,0 +1,3 @@
+'Data.classAut_eq_bot_of_le_chosenLevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThetaRun82.chosenLevel_free_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThetaRun82.chosenLevel_free' depends on axioms: [propext, Classical.choice, Quot.sound]

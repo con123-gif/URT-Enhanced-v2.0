@@ -1,0 +1,23 @@
+PRUNED RHPruneUnused: 4 -> 2 binders; original bridge checked
+PRUNED RHPruneDependent: 3 -> 2 binders; original bridge checked
+NO_BINDER_REDUCTION RHPruneNoDrop
+ROOT_SCAN root=RHPruneUnusedReduced visited=1 values=1 noValue=0 axioms=0 missing=0 pending=0
+'RHPruneUnusedReduced' does not depend on any axioms
+'RHPruneUnusedReduced.original' does not depend on any axioms
+'RHPruneDependentReduced' does not depend on any axioms
+'RHPruneDependentReduced.original' does not depend on any axioms
+AXIOM propext
+AXIOM Quot.sound
+AXIOM Classical.choice
+ROOT_SCAN root=Data.classAut_eq_bot_of_le_chosenLevel visited=2000 values=1700 noValue=300 axioms=3 missing=0 pending=218
+NO_BINDER_REDUCTION Data.classAut_eq_bot_of_le_chosenLevel
+AXIOM Classical.choice
+AXIOM propext
+AXIOM Quot.sound
+ROOT_SCAN root=ThetaRun82.chosenLevel_free_original visited=2000 values=1624 noValue=376 axioms=3 missing=0 pending=244
+PRUNED ThetaRun82.chosenLevel_free_original: 7 -> 6 binders; original bridge checked
+AXIOM Classical.choice
+AXIOM propext
+AXIOM Quot.sound
+ROOT_SCAN root=ThetaRun82.chosenLevel_free visited=2000 values=1623 noValue=377 axioms=3 missing=0 pending=241
+NO_BINDER_REDUCTION ThetaRun82.chosenLevel_free

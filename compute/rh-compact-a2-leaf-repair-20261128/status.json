@@ -1,0 +1,178 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: RUN93 short span not accepted",
+  "returncode": 1,
+  "wall_s": 2050.27,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py\", line 141, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py\", line 138, in main\n    queue.main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN97_A2_CACHED_NATIVE_QUEUE.py\", line 176, in main\n    require(state[\"short_native_verified\"],\"RUN93 short span not accepted\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN97_A2_CACHED_NATIVE_QUEUE.py\", line 67, in require\n    raise RuntimeError(msg)\nRuntimeError: RUN93 short span not accepted\n",
+  "id": "rh-compact-a2-leaf-repair-20261128",
+  "question": "Reuse the original authenticated A1/A2 artifact and execute RUN98's six repairs to actual leaf compiler diagnostics in run 46108201939. Preserve old failed evidence, exact original statement, standard axiom gates, all three constructor-inclusive graph roots and bounded native scan/prune. On acceptance replay RUN93 short span. No Main import, cold project build, A2 root or RH closure claim.",
+  "requested_by": "GPT theta lane; continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py --out {out}",
+  "utc": "2026-11-28T08:59:42Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "6e0d0dba4388c8d5942ce4ecf440c428a40c1f33",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46125697285",
+  "outputs_committed": [
+    {
+      "path": "artifact_download.log",
+      "bytes": 860,
+      "sha256": "0b071fdd21102a29a9120bf22599b01ff1dedba11bb056825a764a30d29b5679"
+    },
+    {
+      "path": "intake.json",
+      "bytes": 495,
+      "sha256": "4cc6f593e9983c62c7e3c722b9def3da5f6ebdc12c9858e7f509808bae455b9c"
+    },
+    {
+      "path": "intake.log",
+      "bytes": 495,
+      "sha256": "4cc6f593e9983c62c7e3c722b9def3da5f6ebdc12c9858e7f509808bae455b9c"
+    },
+    {
+      "path": "leaf.log",
+      "bytes": 48,
+      "sha256": "7deeba3478b1e6f6dcbc583906cf4ef58e719509b368d5f94c896a92971f25b1"
+    },
+    {
+      "path": "lean_download.log",
+      "bytes": 782,
+      "sha256": "2451875e4704a8e88a82c8827132e4e28110207e07a9eb8549f554b3da5f985a"
+    },
+    {
+      "path": "lean_extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7696,
+      "sha256": "50d42658b47fececf8932804722208382e0da5bc489a0bd6f05e9f9d1ee7fe8b"
+    },
+    {
+      "path": "restore_original.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "run97.json",
+      "bytes": 2166,
+      "sha256": "77d102b77478c08f44cea1e2c45e4f367c0c46e3efd5123acea6a20b2eff2418"
+    },
+    {
+      "path": "short_span.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source_checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "source_fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "source_init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "theta92/Theta92Graph.lean",
+      "bytes": 7968,
+      "sha256": "3b5487fe3fc8a2b200bb4933585d869d8abe5f353a8a1f330670d6544fbbfe1b"
+    },
+    {
+      "path": "theta92/Theta92ScanPrune.lean",
+      "bytes": 7014,
+      "sha256": "274c574be822834e6f549c3cbd22f8e9825892d694fb37dcb194518a52f13889"
+    },
+    {
+      "path": "theta92/ThetaLeafRun92.lean",
+      "bytes": 11781,
+      "sha256": "3e076bc4fa2169cb75c727d5231673e2913a46a50ecff0cb8260789ad9c6a618"
+    },
+    {
+      "path": "theta92/ThetaLeafRun92.olean",
+      "bytes": 580736,
+      "sha256": "09cfb2c1db343b5f6d5369927ac018c5745e9141b0e5266ae2144937c7fc15ce"
+    },
+    {
+      "path": "theta92/audit-0.json",
+      "bytes": 463,
+      "sha256": "854b07cd69fec21cb2953c8a5b1843e1d947c61a9c29758ad374e8c30dabfbc2"
+    },
+    {
+      "path": "theta92/audit-1.json",
+      "bytes": 463,
+      "sha256": "1a5be8a9147f7ef89850c19535b239bf3e29f0d0651a909a3ad6f58e0f3ba396"
+    },
+    {
+      "path": "theta92/audit-2.json",
+      "bytes": 463,
+      "sha256": "466ae57fbabc65221d107cbd85f9c9bd335fa27d6e75fd5e4acf710ed0c1d5b0"
+    },
+    {
+      "path": "theta92/graph.log",
+      "bytes": 287,
+      "sha256": "36794bf5e6e4e29c8555889547effc15294281a5d2a1150d245574123de5bf7b"
+    },
+    {
+      "path": "theta92/leaf.log",
+      "bytes": 127983,
+      "sha256": "d7e3a06017b31ea7dda2759ebc4d7c9c6d3c358f3805e44c3f3108c256736ab0"
+    },
+    {
+      "path": "theta92/original-leaf/ThetaFreenessLeafRun89.lean",
+      "bytes": 11415,
+      "sha256": "5ad3ea43ffa84e5db618910df4b9ac773a8e3eb4b63088a8bd3f764fa5959d62"
+    },
+    {
+      "path": "theta92/original-leaf/receipt.json",
+      "bytes": 1357,
+      "sha256": "dfd0535c68c09a28b8f33844d1aa07f8e1ffc604d777da153aa5bbae70f232b2"
+    },
+    {
+      "path": "theta92/root_audits.json",
+      "bytes": 383,
+      "sha256": "081c79441a4024716b3091967b1a0385585d6a0b774a221fb491f6600a84484b"
+    },
+    {
+      "path": "theta92/scan_prune.log",
+      "bytes": 1198,
+      "sha256": "791ec0c9d75fddec2112aad4029fb3696db5918d911249e634403971ac2b5860"
+    },
+    {
+      "path": "theta92/theta92_result.json",
+      "bytes": 1428,
+      "sha256": "92f58acc860267e4609b833c0394d3b4b812920795fb6fb381ffc2601cb23496"
+    },
+    {
+      "path": "theta92/union_summary.json",
+      "bytes": 765,
+      "sha256": "e8cadb95b9f0afc9b920018664bf74dcd53af7bf2d870c127c0a06048abe6905"
+    }
+  ],
+  "outputs_artifact_only": [
+    {
+      "path": "theta92/root_membership.jsonl",
+      "bytes": 11865141,
+      "sha256": "695c7ec9679fc0a727486d97212f47647989da8e949f49038eed9813c125ca6a"
+    },
+    {
+      "path": "theta92/theta92_union.jsonl",
+      "bytes": 277464247,
+      "sha256": "058bea23278b6f62fa269cf9fc73ee6fee18762d3014549c5e6d79db77f18fd6"
+    }
+  ]
+}

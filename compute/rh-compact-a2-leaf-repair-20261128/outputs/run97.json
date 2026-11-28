@@ -1,0 +1,66 @@
+{
+  "scope": "A2 cached original leaf and independent short span",
+  "native_verified": true,
+  "short_native_verified": false,
+  "full_RH_replay": false,
+  "stages": {
+    "artifact_download": {
+      "returncode": 0,
+      "log": "artifact_download.log",
+      "log_sha256": "0b071fdd21102a29a9120bf22599b01ff1dedba11bb056825a764a30d29b5679"
+    },
+    "intake": {
+      "returncode": 0,
+      "log": "intake.log",
+      "log_sha256": "4cc6f593e9983c62c7e3c722b9def3da5f6ebdc12c9858e7f509808bae455b9c"
+    },
+    "lean_download": {
+      "returncode": 0,
+      "log": "lean_download.log",
+      "log_sha256": "2451875e4704a8e88a82c8827132e4e28110207e07a9eb8549f554b3da5f985a"
+    },
+    "lean_extract": {
+      "returncode": 0,
+      "log": "lean_extract.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_init": {
+      "returncode": 0,
+      "log": "source_init.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_fetch": {
+      "returncode": 0,
+      "log": "source_fetch.log",
+      "log_sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    "source_checkout": {
+      "returncode": 0,
+      "log": "source_checkout.log",
+      "log_sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    "mathlib_cache": {
+      "returncode": 0,
+      "log": "mathlib_cache.log",
+      "log_sha256": "50d42658b47fececf8932804722208382e0da5bc489a0bd6f05e9f9d1ee7fe8b"
+    },
+    "restore_original": {
+      "returncode": 0,
+      "log": "restore_original.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "leaf": {
+      "returncode": 0,
+      "log": "leaf.log",
+      "log_sha256": "7deeba3478b1e6f6dcbc583906cf4ef58e719509b368d5f94c896a92971f25b1"
+    },
+    "short_span": {
+      "returncode": 124,
+      "log": "short_span.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "artifact_verified": true,
+  "leaf_graph_accepted": true,
+  "error": "RUN93 short span not accepted"
+}

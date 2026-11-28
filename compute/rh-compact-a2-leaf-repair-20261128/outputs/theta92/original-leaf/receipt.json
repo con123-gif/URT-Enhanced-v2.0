@@ -1,0 +1,40 @@
+{
+  "pin": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "original_blob": "d6b4c62956e3ca1259fd69dd8c882a6fe021e7c3",
+  "helper_blobs": {
+    "RUN81_COMPACT_GEOMETRIC_SUM_FREE_LEVEL.lean": "f34c82d30b5d3cfa3582b14f9ba50bf337ae4f40",
+    "RUN82_COMPACT_CHOSEN_LEVEL_LOCAL_BRIDGE.lean": "f8f7fbd14a1d8372e71e46dc5438ec886ecd9d25"
+  },
+  "generated_blob": "76abd22f4ae753d2c56d1070926e8084291adfc8",
+  "roster": {
+    "ThetaRun81": [
+      "matrix_torsion_eq_one",
+      "finite_group_trivial",
+      "chosenLevel_free_of_prime_kill",
+      "smallerLevel_free"
+    ],
+    "ThetaRun82": [
+      "cast_prime_ne_zero_of_card_prime",
+      "gl_map_injective",
+      "chosen_component_prime_kill",
+      "rational_eq_one_of_component",
+      "chosenLevel_prime_kill",
+      "chosenLevel_free",
+      "chosenLevel_free_original"
+    ]
+  },
+  "imports": [
+    "import New.Data.ChosenPlaceLevels",
+    "import Lib.Adelic.Transference.MassBasic",
+    "import Mathlib.Algebra.Ring.GeomSum",
+    "import Mathlib.GroupTheory.OrderOfElement",
+    "import Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+    "import Mathlib.RingTheory.LocalRing.ResidueField.Basic",
+    "import Mathlib.Tactic",
+    "import Mathlib.FieldTheory.Finite.Basic"
+  ],
+  "negative_controls_rejected": 11,
+  "native_verified": false,
+  "strict_graph_verified": false,
+  "full_RH_replay": false
+}
