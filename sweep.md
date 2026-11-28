@@ -1,6 +1,6 @@
 # Archive sweep — latest status per script
 
-864/864 scripts executed at least once. Sorted: failing first, then by path.
+865/865 scripts executed at least once. Sorted: failing first, then by path.
 
 | Status | Script | Detail | Wall | Last run |
 |---|---|---|---|---|
@@ -27,7 +27,7 @@
 | missing_file | `research_archive/2026-11-10_urt_arf_forward/new_gate/URT_TRANSFER_ITERATES_KMS_TEST_2026_11_10.py` | sandbox path /mnt/data/urt_arf_forward_2026_11_09/URT_NATIVE_FIVE_SOLIDS_SOURCE_PULLBACK_2026-11-09.py | 0.08s | 2026-11-28T09:03:37Z |
 | timeout | `research_archive/2026-11-11_q31_rational_similarity/q31_rational_similarity.py` |  | 120.1s | 2026-11-28T09:37:32Z |
 | missing_file | `research_archive/2026-11-12_hopf_time_and_axis_order/hopf_time_and_axis_order.py` | research_archive/2026-11-12_hopf_time_and_axis_order/research_archive/2026-11-12_hopf_charged_carrier/hopf_charged_carrier.py | 0.08s | 2026-11-28T09:08:45Z |
-| timeout | `research_archive/2026-11-15_q152_native_physical_hessian/Q152_PHYSICAL_HESSIAN_AND_NEWTON.py` |  | 120.09s | 2026-11-28T08:24:53Z |
+| timeout | `research_archive/2026-11-15_q152_native_physical_hessian/Q152_PHYSICAL_HESSIAN_AND_NEWTON.py` |  | 120.09s | 2026-11-28T09:45:39Z |
 | timeout | `research_archive/2026-11-15_q153_full_physical_stability/Q153_FULL_NATIVE_TRANSVERSE_HESSIAN.py` |  | 120.02s | 2026-11-28T08:46:28Z |
 | assertion_failed | `research_archive/2026-11-16_ci_research_partition/CI_PARTITION_CERT.py` | [67, 46, 46, 41] | 0.06s | 2026-11-28T08:46:28Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/audit/2026-11-27_B2_NATIVE_RECEIPT_AND_SKEW_CALLER_PATCH.py` | 2026-11-27_B2_NATIVE_RECEIPT_AND_SKEW_CALLER_PATCH.py: error: the following arguments are required: compact | 0.04s | 2026-11-28T08:53:24Z |
@@ -35,14 +35,14 @@
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_arithmetic_frontier.py` | IndexError: list index out of range | 0.04s | 2026-11-28T08:52:47Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_arithmetic_reconcile.py` | IndexError: list index out of range | 0.04s | 2026-11-28T09:02:20Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_core_route_frontier.py` | IndexError: list index out of range | 0.04s | 2026-11-28T08:37:46Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN2_replay_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-28T08:24:55Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN3_replay_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-28T08:24:55Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN2_replay_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-28T09:45:41Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN3_replay_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-28T09:45:41Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN4_replay_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-28T08:46:56Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN5_replay_checks.py` | IndexError: list index out of range | 0.03s | 2026-11-28T09:04:51Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/RUN6_replay_checks.py` | IndexError: list index out of range | 0.03s | 2026-11-28T09:04:51Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/galois_rows/replay_source_checks.py` | IndexError: list index out of range | 0.02s | 2026-11-28T09:23:10Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/02_recAtG/verify_recatg_sources.py` | IndexError: list index out of range | 0.02s | 2026-11-28T08:24:56Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/03_trust_boundary_lay_of_core/verify_trust_and_laycore.py` | IndexError: list index out of range | 0.03s | 2026-11-28T08:24:56Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/02_recAtG/verify_recatg_sources.py` | IndexError: list index out of range | 0.03s | 2026-11-28T09:45:42Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/03_trust_boundary_lay_of_core/verify_trust_and_laycore.py` | IndexError: list index out of range | 0.03s | 2026-11-28T09:45:42Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/lit_closure.py` | IndexError: list index out of range | 0.02s | 2026-11-28T08:47:17Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/locate_producers.py` | IndexError: list index out of range | 0.03s | 2026-11-28T08:47:17Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/04_published_bundle_and_exceptional_pair/verify_t8_t1_sources.py` | IndexError: list index out of range | 0.02s | 2026-11-28T08:47:17Z |
@@ -58,63 +58,64 @@
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/audit_active_b2_graph.py` | audit_active_b2_graph.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:56:06Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/audit_c2_callers_graph.py` | audit_c2_callers_graph.py: error: the following arguments are required: --module-dir, --out | 0.06s | 2026-11-28T09:14:16Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/audit_c2_interface_graph.py` | audit_c2_interface_graph.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --proof-receipt, --native-exporter-dir, --out, --scope | 0.08s | 2026-11-28T08:44:24Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/audit_c2_single_witness.py` | e_witness.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --original-cache, --proof-receipt, --exporter-dir, --exporter-archive, --memory-control, --out | 0.08s | 2026-11-28T08:30:38Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/audit_c2_single_witness.py` | e_witness.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --original-cache, --proof-receipt, --exporter-dir, --exporter-archive, --memory-control, --out | 0.08s | 2026-11-28T09:51:25Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/audit_c2_standard_exchange.py` | audit_c2_standard_exchange.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --module-dir, --native-exporter-dir, --out | 0.07s | 2026-11-28T09:30:21Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/build_b2_sequential.py` | build_b2_sequential.py: error: the following arguments are required: --compact-root, --lean-bin, --out | 0.06s | 2026-11-28T08:18:41Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/build_b2_sequential.py` | build_b2_sequential.py: error: the following arguments are required: --compact-root, --lean-bin, --out | 0.05s | 2026-11-28T09:40:19Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/check_siegel_weil_polarization.py` | check_siegel_weil_polarization.py: error: the following arguments are required: --source-root, --out | 0.27s | 2026-11-28T09:10:07Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/compare_complete_graph_exports.py` | compare_complete_graph_exports.py: error: the following arguments are required: --interpreted-execution, --native-execution | 0.04s | 2026-11-28T08:37:52Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/fuse_b2_checked_proofs.py` | fuse_b2_checked_proofs.py: error: the following arguments are required: --compact-root, --module-dir, --out | 0.07s | 2026-11-28T08:30:59Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/fuse_b2_checked_proofs.py` | fuse_b2_checked_proofs.py: error: the following arguments are required: --compact-root, --module-dir, --out | 0.07s | 2026-11-28T09:51:46Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/prepare_native_graph_exporter.py` | prepare_native_graph_exporter.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:19:50Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/replay_c2_built_workspace.py` | replay_c2_built_workspace.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T08:56:06Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/replay_c2_combined_built.py` | replay_c2_combined_built.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:33:02Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/replay_c2_signed_height_root.py` | replay_c2_signed_height_root.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --build-cache, --out | 0.06s | 2026-11-28T08:30:38Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/replay_c2_signed_height_root.py` | replay_c2_signed_height_root.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --build-cache, --out | 0.07s | 2026-11-28T09:51:25Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/replay_c2_standard_exchange.py` | replay_c2_standard_exchange.py: error: the following arguments are required: --compact-root, --lean-bin, --module-dir, --out | 0.05s | 2026-11-28T09:02:58Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/replay_full_b2_built.py` | replay_full_b2_built.py: error: the following arguments are required: --compact-root, --lean-bin, --cache-receipt, --out | 0.07s | 2026-11-28T08:56:32Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/restore_native_b2_cache.py` | restore_native_b2_cache.py: error: the following arguments are required: --artifact, --artifact-sha256, --compact-root, --out | 0.05s | 2026-11-28T09:33:02Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_callers.py` | run_active_b2_callers.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:53:24Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_active_b2_energy.py` | run_active_b2_energy.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:56:32Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c1_retained_cache.py` | run_c1_retained_cache.py: error: the following arguments are required: --out | 0.03s | 2026-11-28T09:10:07Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_determinant_shared_replay.py` | run_c2_determinant_shared_replay.py: error: the following arguments are required: --out | 0.07s | 2026-11-28T08:24:56Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py` | run_c2_shared_callers.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T08:27:17Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_determinant_shared_replay.py` | run_c2_determinant_shared_replay.py: error: the following arguments are required: --out | 0.07s | 2026-11-28T09:45:42Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_shared_callers.py` | run_c2_shared_callers.py: error: the following arguments are required: --out | 0.07s | 2026-11-28T09:48:03Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_c2_value_family_from_built.py` | run_c2_value_family_from_built.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:10:07Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_compact_b2_native_replay.py` | run_compact_b2_native_replay.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:04:51Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_full_b2_shared_graph.py` | run_full_b2_shared_graph.py: error: the following arguments are required: --out | 0.07s | 2026-11-28T08:49:21Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/run_lean435_transport_controls.py` | run_lean435_transport_controls.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:33:02Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/test_checked_retarget_kernel.py` | test_checked_retarget_kernel.py: error: the following arguments are required: --lean, --out | 0.05s | 2026-11-28T08:30:59Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/test_checked_retarget_kernel.py` | test_checked_retarget_kernel.py: error: the following arguments are required: --lean, --out | 0.05s | 2026-11-28T09:51:46Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_compact_primitive_receipt.py` | verify_compact_primitive_receipt.py: error: the following arguments are required: --out | 0.03s | 2026-11-28T09:02:27Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_memory_graph_io.py` | verify_memory_graph_io.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --exporter-dir, --exporter-archive, --out | 0.06s | 2026-11-28T08:30:38Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_memory_graph_io.py` | verify_memory_graph_io.py: error: the following arguments are required: --compact-root, --lean-bin, --base-module-dir, --exporter-dir, --exporter-archive, --out | 0.06s | 2026-11-28T09:51:25Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_aggregate_bad_block.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-28T08:51:55Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_direct_restriction_prune.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-28T08:56:06Z |
-| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelf_input_weakening.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.06s | 2026-11-28T08:29:11Z |
+| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelf_input_weakening.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.05s | 2026-11-28T09:49:57Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_rank2_direct_safe_prune.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.08s | 2026-11-28T08:44:25Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_sign_killsmu.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream/src/Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/TorsionOrderFrobenius/QuadMu.lean | 0.23s | 2026-11-28T09:07:09Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_dyadic_theta_drawdown.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-28T08:53:47Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_every_character_adapter.py` | verify_every_character_adapter.py: error: select --source-root, --report, or --self-test | 0.03s | 2026-11-28T09:05:09Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_hypsalt_constructor.py` | verify_hypsalt_constructor.py: error: select --source-root, --report, or --self-test | 0.03s | 2026-11-28T08:44:25Z |
-| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_log_gap_no_go.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-28T08:29:30Z |
+| missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_log_gap_no_go.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-28T09:50:16Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_positive_mean_square_terminal.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.05s | 2026-11-28T09:14:16Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_prime_shell_equivalence.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-28T08:47:17Z |
 | missing_file | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_prime_terminal_reduction.py` | /home/runner/work/URT-Enhanced-v2.0/rh_upstream | 0.03s | 2026-11-28T09:32:23Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_supply_of_admissible_hosts.py` | verify_supply_of_admissible_hosts.py: error: select at least one check | 0.03s | 2026-11-28T09:23:10Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_topg_vwin_bridge.py` | verify_topg_vwin_bridge.py: error: choose --self-test, --report, or --source-root | 0.04s | 2026-11-28T08:24:56Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_topg_vwin_bridge.py` | verify_topg_vwin_bridge.py: error: choose --self-test, --report, or --source-root | 0.04s | 2026-11-28T09:45:42Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN81_COMPACT_SINGLE_CLASS_COMPARISON.py` | RUN81_COMPACT_SINGLE_CLASS_COMPARISON.py: error: the following arguments are required: compact | 0.03s | 2026-11-28T08:56:06Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN89_C2_RESTORED_STAR_REPLAY.py` | RUN89_C2_RESTORED_STAR_REPLAY.py: error: the following arguments are required: --artifact, --compact-root, --lean-bin, --out | 0.06s | 2026-11-28T09:15:42Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN92_C2_SQUARED_STAR_REPLAY.py` | RUN92_C2_SQUARED_STAR_REPLAY.py: error: the following arguments are required: --artifact, --compact-root, --lean-bin, --out | 0.07s | 2026-11-28T08:56:05Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN93_C2_CACHE_IDENTITY_AUDIT.py` | IndexError: list index out of range | 0.04s | 2026-11-28T08:52:05Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py` | RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T08:34:32Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py` | RUN94_C2_AUTHENTICATED_CACHE_QUEUE.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:55:19Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/character_boxes/RUN97_C2_SEARCH_PATH_REPAIR.py` | RUN97_C2_SEARCH_PATH_REPAIR.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:24:40Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN84_COMPACT_C1_NATIVE_REPLAY.py` | RUN84_COMPACT_C1_NATIVE_REPLAY.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:24:56Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN84_COMPACT_C1_NATIVE_REPLAY.py` | RUN84_COMPACT_C1_NATIVE_REPLAY.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:45:42Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN93_C1_FINITE_NATIVE_REPLAY.py` | RuntimeError: four paths required | 0.05s | 2026-11-28T08:52:05Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN95_C1_AUTHENTICATED_CACHE_QUEUE.py` | RUN95_C1_AUTHENTICATED_CACHE_QUEUE.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:31:29Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py` | RUN25_SHARED_REPLAY.py: error: the following arguments are required: --source, --mathlib, --out, --build | 0.04s | 2026-11-28T08:32:13Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py` | RUN26_COMPACT_GRAPH.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T08:22:49Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN99_C1_CACHE_PATH_REPAIR.py` | RUN99_C1_CACHE_PATH_REPAIR.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:38:36Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN25_SHARED_REPLAY.py` | RUN25_SHARED_REPLAY.py: error: the following arguments are required: --source, --mathlib, --out, --build | 0.04s | 2026-11-28T09:53:00Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py` | RUN26_COMPACT_GRAPH.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:43:35Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN28_COMPACT_TARGETED.py` | RUN28_COMPACT_TARGETED.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:00:48Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN29_COMPACT_PRIMITIVES.py` | RUN29_COMPACT_PRIMITIVES.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:26:26Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN57_SHARED_MARKED_TRANSPORT.py` | RUN57_SHARED_MARKED_TRANSPORT.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:19:50Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN58_A1_GRAPH_AND_PRUNE.py` | RuntimeError: Require pinned workspace, actual receipt and output | 0.04s | 2026-11-28T09:30:22Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN61_A1_REPLAY.py` | RUN61_A1_REPLAY.py: error: the following arguments are required: --out | 0.03s | 2026-11-28T09:10:07Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN65_A1_HEADER_CACHE_REPLAY.py` | RUN65_A1_HEADER_CACHE_REPLAY.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T08:46:29Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN66_A1_ARTIFACT_INTAKE.py` | RUN66_A1_ARTIFACT_INTAKE.py: error: the following arguments are required: --artifact-zip, --out | 0.04s | 2026-11-28T08:32:54Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN66_A1_ARTIFACT_INTAKE.py` | RUN66_A1_ARTIFACT_INTAKE.py: error: the following arguments are required: --artifact-zip, --out | 0.04s | 2026-11-28T09:53:40Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN69_ACTUAL_ARTIFACT_AUDIT.py` | ValueError: not enough values to unpack (expected 3, got 0) | 0.04s | 2026-11-28T09:25:26Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN70_A1_SINGLE_PASS.py` | RUN70_A1_SINGLE_PASS.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:10:05Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN71_A1_CACHED_NATIVE_QUEUE.py` | RUN71_A1_CACHED_NATIVE_QUEUE.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:10:05Z |
@@ -124,7 +125,7 @@
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN87_SHARED_B3_REPLAY.py` | RUN87_SHARED_B3_REPLAY.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:17:54Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN89_DIRECT_TERM_REPLAY.py` | RUN89_DIRECT_TERM_REPLAY.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:46:29Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN91_SHELL_NATIVE_REPLAY.py` | RUN91_SHELL_NATIVE_REPLAY.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:31:44Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py` | RUN93_FIVE_CALLER_NATIVE_REPLAY.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T08:30:37Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN93_FIVE_CALLER_NATIVE_REPLAY.py` | RUN93_FIVE_CALLER_NATIVE_REPLAY.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:51:25Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/landau_criterion/RUN95_CALLER_LAYOUT_REPAIR.py` | RUN95_CALLER_LAYOUT_REPAIR.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:10:05Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/literature_provenance/RUN78_COMPACT_A3_NATIVE_REPLAY.py` | RUN78_COMPACT_A3_NATIVE_REPLAY.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:37:46Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/CATHEDRAL_URT_RH_SPEED_2026_11_24.py` | CATHEDRAL_URT_RH_SPEED_2026_11_24.py: error: the following arguments are required: src | 0.03s | 2026-11-28T09:14:16Z |
@@ -137,10 +138,10 @@
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/compact/RUN87_A2_CACHE_GATE.py` | RUN87_A2_CACHE_GATE.py: error: provide --receipt or --self-test | 0.04s | 2026-11-28T09:03:45Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/compact_run20.py` | ValueError: not enough values to unpack (expected 4, got 0) | 0.05s | 2026-11-28T09:30:22Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/durable_roles.py` | usage: durable_roles.py test | ingest DB JSON GIT_BLOB_SHA [before|after] | 0.22s | 2026-11-28T08:41:14Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/frontier_join_run19.py` | IndexError: list index out of range | 0.05s | 2026-11-28T08:20:17Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/frontier_join_run19.py` | IndexError: list index out of range | 0.05s | 2026-11-28T09:41:54Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/git_context_cache.py` | git_context_cache.py: error: the following arguments are required: repo, revision, cache, --environment, --out | 0.04s | 2026-11-28T09:20:09Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/manifest_index_run19.py` | TypeError: main() missing 2 required positional arguments: 'p' and 'db' | 0.05s | 2026-11-28T08:20:17Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run18_native_certificate.py` | RuntimeError: exactly four input files required | 0.06s | 2026-11-28T08:18:43Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/manifest_index_run19.py` | TypeError: main() missing 2 required positional arguments: 'p' and 'db' | 0.05s | 2026-11-28T09:41:54Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run18_native_certificate.py` | RuntimeError: exactly four input files required | 0.08s | 2026-11-28T09:40:20Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run22_reuse.py` | ValueError: need db and request JSON array | 0.11s | 2026-11-28T09:06:00Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run23_batch.py` | TypeError: main() missing 4 required positional arguments: 'p', 'req', 'db', and 'out' | 0.05s | 2026-11-28T08:52:47Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run24_receipt.py` | TypeError: main() missing 2 required positional arguments: 'p' and 'dest' | 0.07s | 2026-11-28T09:02:20Z |
@@ -152,21 +153,21 @@
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/positivity_geometry/RUN81_absolute_pair_integrability.py` | RUN81_absolute_pair_integrability.py: error: the following arguments are required: compact | 0.04s | 2026-11-28T09:33:02Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN89_REPLAY_ENDPOINT.py` | COMPACT_RUN89_REPLAY_ENDPOINT.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:17:55Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN91_QUEUE_ENDPOINT.py` | COMPACT_RUN91_QUEUE_ENDPOINT.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:46:29Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py` | COMPACT_RUN92_QUEUE_REPAIR.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:32:54Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_REPLAY_ANALYTIC.py` | COMPACT_RUN92_REPLAY_ANALYTIC.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T08:32:54Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py` | COMPACT_RUN92_QUEUE_REPAIR.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:53:40Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_REPLAY_ANALYTIC.py` | COMPACT_RUN92_REPLAY_ANALYTIC.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:53:40Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_QUEUE_REPAIR.py` | COMPACT_RUN93_QUEUE_REPAIR.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:31:45Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN93_REPLAY_ANALYTIC.py` | COMPACT_RUN93_REPLAY_ANALYTIC.py: error: the following arguments are required: --out | 0.05s | 2026-11-28T09:31:45Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN95_STAR_GRID_REPLAY.py` | COMPACT_RUN95_STAR_GRID_REPLAY.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T08:30:38Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN99_COUNT_BUDGET_REPLAY.py` | COMPACT_RUN99_COUNT_BUDGET_REPLAY.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T08:35:04Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py` | RUN_NATIVE_POLAR_MEAN_QUEUE.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T08:30:38Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN95_STAR_GRID_REPLAY.py` | COMPACT_RUN95_STAR_GRID_REPLAY.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:51:25Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN99_COUNT_BUDGET_REPLAY.py` | COMPACT_RUN99_COUNT_BUDGET_REPLAY.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:55:51Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/RUN_NATIVE_POLAR_MEAN_QUEUE.py` | RUN_NATIVE_POLAR_MEAN_QUEUE.py: error: the following arguments are required: --out | 0.06s | 2026-11-28T09:51:25Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN100_A2_INDEPENDENT_CACHED_REPLAY.py` | RUN100_A2_INDEPENDENT_CACHED_REPLAY.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:02:20Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN88_A2_QUOTATION_REPAIR.py` | RUN88_A2_QUOTATION_REPAIR.py: error: the following arguments are required: root, out | 0.04s | 2026-11-28T09:31:29Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN89_A2_LEAF_ONLY_REPLAY.py` | RUN89_A2_LEAF_ONLY_REPLAY.py: error: the following arguments are required: root, out | 0.04s | 2026-11-28T09:25:55Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN90_A2_RESIDUE_CARD_REUSE.py` | RUN90_A2_RESIDUE_CARD_REUSE.py: error: the following arguments are required: root, out | 0.04s | 2026-11-28T08:22:47Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN90_A2_RESIDUE_CARD_REUSE.py` | RUN90_A2_RESIDUE_CARD_REUSE.py: error: the following arguments are required: root, out | 0.04s | 2026-11-28T09:43:33Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN91_A2_GL_COMPOSITION_REPLAY.py` | RUN91_A2_GL_COMPOSITION_REPLAY.py: error: the following arguments are required: root, out | 0.04s | 2026-11-28T09:07:01Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN92_A2_CACHE_LEAF_GRAPH.py` | RUN92_A2_CACHE_LEAF_GRAPH.py: error: the following arguments are required: --compact-root, --intake, --out | 0.05s | 2026-11-28T09:15:42Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN96_A2_ACTUAL_CACHE_FRONTIER.py` | ValueError: not enough values to unpack (expected 2, got 0) | 0.04s | 2026-11-28T08:30:38Z |
-| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN97_A2_CACHED_NATIVE_QUEUE.py` | RUN97_A2_CACHED_NATIVE_QUEUE.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T08:34:32Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN96_A2_ACTUAL_CACHE_FRONTIER.py` | ValueError: not enough values to unpack (expected 2, got 0) | 0.04s | 2026-11-28T09:51:25Z |
+| error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN97_A2_CACHED_NATIVE_QUEUE.py` | RUN97_A2_CACHED_NATIVE_QUEUE.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:55:19Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py` | RUN98_A2_ACTUAL_DIAGNOSTIC_REPAIR.py: error: the following arguments are required: --out | 0.04s | 2026-11-28T09:31:29Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/theta_lifts/RUN99_A2_SHORT_SPAN_GRAPH.py` | RUN99_A2_SHORT_SPAN_GRAPH.py: error: the following arguments are required: --compact-root, --intake, --out | 0.06s | 2026-11-28T09:19:47Z |
 | error | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/2026-11-25_0424_native_300_benchmark.py` | IndexError: list index out of range | 0.05s | 2026-11-28T09:20:51Z |
@@ -426,7 +427,7 @@
 | pass | `research_archive/2026-11-11_q27_twirled_orientation/q27_twirled_orientation.py` |  | 1.77s | 2026-11-28T08:53:35Z |
 | pass | `research_archive/2026-11-11_q28_twirled_third_trace/q28_twirled_third_trace.py` |  | 1.98s | 2026-11-28T08:53:32Z |
 | pass | `research_archive/2026-11-11_q29_twirled_fourth_trace/q29_twirled_fourth_trace.py` |  | 3.96s | 2026-11-28T08:53:28Z |
-| pass | `research_archive/2026-11-11_q30_twirled_all_order_spectrum/q30_twirled_all_order_spectrum.py` |  | 96.03s | 2026-11-28T08:27:12Z |
+| pass | `research_archive/2026-11-11_q30_twirled_all_order_spectrum/q30_twirled_all_order_spectrum.py` |  | 95.68s | 2026-11-28T09:47:58Z |
 | pass | `research_archive/2026-11-11_q32_mixed_trace_meaning/q32_mixed_trace_meaning.py` |  | 47.62s | 2026-11-28T09:05:58Z |
 | pass | `research_archive/2026-11-11_q33_singular_spectrum/q33_singular_spectrum.py` |  | 35.01s | 2026-11-28T09:33:00Z |
 | pass | `research_archive/2026-11-11_q34_seventh_mixed_words/q34_seventh_mixed_words.py` |  | 6.22s | 2026-11-28T09:24:21Z |
@@ -458,7 +459,7 @@
 | pass | `research_archive/2026-11-12_q50_history_gauge/q50_uniform_history_obstruction.py` |  | 0.84s | 2026-11-28T09:20:05Z |
 | pass | `research_archive/2026-11-12_q52_source_unitary/Q52_NATIVE_SOURCE_UNITARY_CLOCK.py` |  | 0.54s | 2026-11-28T09:19:50Z |
 | pass | `research_archive/2026-11-12_q53_native_ward_current/Q53_NATIVE_ONSHELL_WARD_CLOCK.py` |  | 0.51s | 2026-11-28T09:08:46Z |
-| pass | `research_archive/2026-11-12_q55_hopf_wilson/Q55_HOPF_WILSON_CHARGED_OPERATOR_VERIFY.py` |  | 0.99s | 2026-11-28T08:27:13Z |
+| pass | `research_archive/2026-11-12_q55_hopf_wilson/Q55_HOPF_WILSON_CHARGED_OPERATOR_VERIFY.py` |  | 0.99s | 2026-11-28T09:47:59Z |
 | pass | `research_archive/2026-11-12_q56_nonlinear_stationary/Q56_FULL_STATIONARY_CURRENT_VERIFY.py` |  | 0.5s | 2026-11-28T09:08:46Z |
 | pass | `research_archive/2026-11-12_q57_geometric_clock/Q57_NATIVE_CLOCK_GEOMETRY_VERIFY.py` |  | 0.48s | 2026-11-28T09:01:06Z |
 | pass | `research_archive/2026-11-12_q58_native_geometric_coupling/Q58_NATIVE_COUPLING_CURVATURE_VERIFY.py` |  | 0.46s | 2026-11-28T09:01:07Z |
@@ -466,7 +467,7 @@
 | pass | `research_archive/2026-11-12_q60_coordinate_selection/Q60_NATIVE_COORDINATE_SELECTION.py` |  | 24.5s | 2026-11-28T09:30:46Z |
 | pass | `research_archive/2026-11-12_q60_hopf_h64_frame/Q60_HOPF_H64_ALL_FIVE_FRAME_INTERFACE_VERIFY.py` |  | 1.14s | 2026-11-28T09:25:03Z |
 | pass | `research_archive/2026-11-12_q61_inverse_limit_lifts/Q61_INVERSE_LIMIT_LIFTS_CERTIFICATE.py` |  | 13.85s | 2026-11-28T09:02:10Z |
-| pass | `research_archive/2026-11-12_q62_lift_carrier/Q62_LIFT_CARRIER_CERTIFICATE.py` |  | 66.61s | 2026-11-28T08:30:36Z |
+| pass | `research_archive/2026-11-12_q62_lift_carrier/Q62_LIFT_CARRIER_CERTIFICATE.py` |  | 67.08s | 2026-11-28T09:51:23Z |
 | pass | `research_archive/2026-11-12_q64_a2_native_conditioning/Q64_A2_NATIVE_CONDITIONING.py` |  | 0.02s | 2026-11-28T09:30:46Z |
 | pass | `research_archive/2026-11-12_q64_a2b_native_path/Q64_A2B_NATIVE_PATH_LIKELIHOOD.py` |  | 0.02s | 2026-11-28T09:30:46Z |
 | pass | `research_archive/2026-11-12_q64_a2c_native_lift_partition/Q64_A2C_NATIVE_LIFT_PARTITION.py` |  | 0.28s | 2026-11-28T09:14:15Z |
@@ -474,25 +475,25 @@
 | pass | `research_archive/2026-11-13_cross_archive_photon_join/CROSS_ARCHIVE_PHOTON_JOIN_AUDIT.py` |  | 0.43s | 2026-11-28T09:30:47Z |
 | pass | `research_archive/2026-11-13_q60_charge_tensor_ward/Q60_CHARGE_TENSOR_WARD.py` |  | 0.34s | 2026-11-28T09:30:47Z |
 | pass | `research_archive/2026-11-13_q64_a2d/Q64_A2D_REVERSIBLE_NORMALIZER.py` |  | 0.28s | 2026-11-28T09:14:15Z |
-| pass | `research_archive/2026-11-13_q65_horizon_conditioned_selection/Q65_HORIZON_SELECTION_CERTIFICATE.py` |  | 23.53s | 2026-11-28T08:25:34Z |
+| pass | `research_archive/2026-11-13_q65_horizon_conditioned_selection/Q65_HORIZON_SELECTION_CERTIFICATE.py` |  | 24.02s | 2026-11-28T09:46:20Z |
 | pass | `research_archive/2026-11-13_q68_native_bridge/Q68_NATIVE_BRIDGE_POLYTOPE.py` |  | 0.4s | 2026-11-28T09:14:16Z |
 | pass | `research_archive/2026-11-13_q69_native_lift_clock_spectrum/Q69_NATIVE_LIFT_CLOCK_SPECTRUM.py` |  | 0.01s | 2026-11-28T08:57:47Z |
-| pass | `research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py` |  | 0.69s | 2026-11-28T08:27:14Z |
+| pass | `research_archive/2026-11-13_q70_native_clock_fixed_space/Q70_NATIVE_CLOCK_FIXED_SPACE.py` |  | 0.67s | 2026-11-28T09:48:00Z |
 | pass | `research_archive/2026-11-13_q71_native_q3_clock/Q71_NATIVE_Q3_CLOCK.py` |  | 0.98s | 2026-11-28T08:49:19Z |
 | pass | `research_archive/2026-11-13_q71_q2_clock_mixing/Q71_Q2_CLOCK_MIXING.py` |  | 2.01s | 2026-11-28T08:57:50Z |
 | pass | `research_archive/2026-11-13_q72_time_reversal_bridge/Q72_TIME_REVERSAL_BRIDGE_CERTIFICATE.py` |  | 30.71s | 2026-11-28T08:58:21Z |
 | pass | `research_archive/2026-11-13_q73_joint_clock_bridge/Q73_JOINT_CLOCK_BRIDGE_CERTIFICATE.py` |  | 20.24s | 2026-11-28T08:54:37Z |
 | pass | `research_archive/2026-11-13_q75_native_q3_sigma/Q75_NATIVE_Q3_SIGMA.py` |  | 0.69s | 2026-11-28T09:24:14Z |
 | pass | `research_archive/2026-11-13_q76_hidden_commutator/Q76_NATIVE_HIDDEN_COMMUTATOR.py` |  | 1.04s | 2026-11-28T09:17:46Z |
-| pass | `research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py` |  | 70.21s | 2026-11-28T08:36:14Z |
-| pass | `research_archive/2026-11-13_q78_eight_dictionary_hidden/Q78_EIGHT_DICTIONARY_HIDDEN.py` |  | 3.49s | 2026-11-28T08:25:09Z |
+| pass | `research_archive/2026-11-13_q77_exact_clock_split/Q77_EXACT_CLOCK_SPLIT_CERTIFICATE.py` |  | 69.07s | 2026-11-28T09:57:00Z |
+| pass | `research_archive/2026-11-13_q78_eight_dictionary_hidden/Q78_EIGHT_DICTIONARY_HIDDEN.py` |  | 3.52s | 2026-11-28T09:45:55Z |
 | pass | `research_archive/2026-11-13_q79_native_pair_source/Q79_NATIVE_PAIR_SOURCE.py` |  | 0.96s | 2026-11-28T08:56:06Z |
 | pass | `research_archive/2026-11-13_q80_native_hidden_source/Q80_NATIVE_HIDDEN_SOURCE.py` |  | 3.28s | 2026-11-28T09:08:17Z |
 | pass | `research_archive/2026-11-13_q81_native_source/Q81_NATIVE_SOURCE.py` |  | 8.89s | 2026-11-28T09:16:45Z |
 | pass | `research_archive/2026-11-13_q82_oriented_source_weights/Q82_ORIENTED_SOURCE_WEIGHTS_CERTIFICATE.py` |  | 25.42s | 2026-11-28T09:17:11Z |
-| pass | `research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py` |  | 1.12s | 2026-11-28T08:25:10Z |
-| pass | `research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py` |  | 32.15s | 2026-11-28T08:35:04Z |
-| pass | `research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py` |  | 0.4s | 2026-11-28T08:30:37Z |
+| pass | `research_archive/2026-11-13_q83_native_clock/Q83_NATIVE_CLOCK_CARRIER.py` |  | 1.1s | 2026-11-28T09:45:56Z |
+| pass | `research_archive/2026-11-13_q85_chronology_coefficient/Q85_CHRONOLOGY_COEFFICIENT_CERTIFICATE.py` |  | 32.15s | 2026-11-28T09:55:51Z |
+| pass | `research_archive/2026-11-13_q87_coefficient_elimination/Q87_COEFFICIENT_ELIMINATION.py` |  | 0.4s | 2026-11-28T09:51:24Z |
 | pass | `research_archive/2026-11-13_q88_q89_engine_recovery/Q88_Q89_ENGINE_RECOVERY.py` |  | 3.64s | 2026-11-28T09:24:09Z |
 | pass | `research_archive/2026-11-13_q89_exact_source/Q89_EXACT_SOURCE.py` |  | 11.74s | 2026-11-28T09:13:50Z |
 | pass | `research_archive/2026-11-13_q90_exact_fourier/Q90_EXACT_FOURIER.py` |  | 31.05s | 2026-11-28T08:36:48Z |
@@ -500,10 +501,10 @@
 | pass | `research_archive/2026-11-14_q101_moving_arf/MAGNETIC_ARF_FACTOR_CERTIFICATE.py` |  | 33.15s | 2026-11-28T09:29:47Z |
 | pass | `research_archive/2026-11-14_q101_moving_arf/MOVING_ARF_DERIVATION.py` |  | 32.58s | 2026-11-28T09:30:21Z |
 | pass | `research_archive/2026-11-14_q102_born_chiral_arf/Q102_BORN_CHIRAL_ARF.py` |  | 23.78s | 2026-11-28T09:09:12Z |
-| pass | `research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py` |  | 38.75s | 2026-11-28T08:32:52Z |
+| pass | `research_archive/2026-11-14_q103_exact_alltime_arf/Q103_ALLTIME_SPECTRAL_COUNTING.py` |  | 38.21s | 2026-11-28T09:53:38Z |
 | pass | `research_archive/2026-11-14_q105_broken_charged_wilson/Q105_MOVING_CHARGED_WARD.py` |  | 50.4s | 2026-11-28T08:59:52Z |
-| pass | `research_archive/2026-11-14_q106_exact_berry_wilson/Q106_EXACT_BERRY_SPECTRUM.py` |  | 4.38s | 2026-11-28T08:31:30Z |
-| pass | `research_archive/2026-11-14_q106_exact_berry_wilson/Q106_JOINED_NATIVE_WILSON.py` |  | 42.91s | 2026-11-28T08:32:13Z |
+| pass | `research_archive/2026-11-14_q106_exact_berry_wilson/Q106_EXACT_BERRY_SPECTRUM.py` |  | 4.44s | 2026-11-28T09:52:17Z |
+| pass | `research_archive/2026-11-14_q106_exact_berry_wilson/Q106_JOINED_NATIVE_WILSON.py` |  | 42.48s | 2026-11-28T09:53:00Z |
 | pass | `research_archive/2026-11-14_q107_berry_topological_photon/Q107_BERRY_CHERN_AND_MAXWELL.py` |  | 27.32s | 2026-11-28T09:16:34Z |
 | pass | `research_archive/2026-11-14_q108_born_fisher_photon/Q108_BORN_FISHER_GAUGE.py` |  | 42.07s | 2026-11-28T08:52:47Z |
 | pass | `research_archive/2026-11-14_q109_joined_gauge_vacuum/Q109_NATIVE_FULL_HESSIAN.py` |  | 30.49s | 2026-11-28T09:11:37Z |
@@ -516,20 +517,20 @@
 | pass | `research_archive/2026-11-14_q115_a5_four_pole_source/Q115_A5_FOUR_POLE_SOURCE.py` |  | 70.71s | 2026-11-28T08:40:20Z |
 | pass | `research_archive/2026-11-14_q115_a5_four_pole_source/Q115_CI129_CHARACTER_CERTIFICATE.py` |  | 0.02s | 2026-11-28T08:37:46Z |
 | pass | `research_archive/2026-11-14_q116_local_hidden_golden_bridge/Q116_EXACT_LOCAL_WEDGE_BRIDGE.py` |  | 2.06s | 2026-11-28T09:13:38Z |
-| pass | `research_archive/2026-11-14_q117_mixed_current_response/Q117A_NATIVE_MIXED_CURRENT_RESPONSE.py` |  | 72.6s | 2026-11-28T08:34:06Z |
+| pass | `research_archive/2026-11-14_q117_mixed_current_response/Q117A_NATIVE_MIXED_CURRENT_RESPONSE.py` |  | 73.55s | 2026-11-28T09:54:54Z |
 | pass | `research_archive/2026-11-14_q118_complement_spectrum/Q118_NATIVE_COMPLEMENT_SPECTRUM.py` |  | 1.0s | 2026-11-28T09:13:22Z |
 | pass | `research_archive/2026-11-14_q118b_quartet_multiplicity/Q118B_QUARTET_MULTIPLICITY.py` |  | 71.0s | 2026-11-28T08:39:06Z |
-| pass | `research_archive/2026-11-14_q119_native_scale/Q119_NATIVE_SCALE_CERTIFICATE.py` |  | 0.85s | 2026-11-28T08:30:37Z |
+| pass | `research_archive/2026-11-14_q119_native_scale/Q119_NATIVE_SCALE_CERTIFICATE.py` |  | 0.86s | 2026-11-28T09:51:25Z |
 | pass | `research_archive/2026-11-14_q120_moving_reversal_barrier/Q120_GOLDEN_TUNNEL_BARRIER.py` |  | 0.71s | 2026-11-28T09:02:58Z |
 | pass | `research_archive/2026-11-14_q122_native_berry_branch_cancellation/Q122_ORIGINAL_CHARGED_BERRY_BRANCH.py` |  | 23.88s | 2026-11-28T09:03:22Z |
 | pass | `research_archive/2026-11-14_q123_golden_persistence/Q123_GOLDEN_SADDLE_CAPACITY.py` |  | 0.58s | 2026-11-28T09:20:40Z |
-| pass | `research_archive/2026-11-14_q124_charged_barrier_extension/Q124_NATIVE_CHARGED_BARRIER.py` |  | 0.72s | 2026-11-28T08:32:53Z |
-| pass | `research_archive/2026-11-14_q126_no_unique_kinetic_clock/Q126_NO_UNIQUE_CLOCK.py` |  | 0.41s | 2026-11-28T08:32:53Z |
+| pass | `research_archive/2026-11-14_q124_charged_barrier_extension/Q124_NATIVE_CHARGED_BARRIER.py` |  | 0.7s | 2026-11-28T09:53:39Z |
+| pass | `research_archive/2026-11-14_q126_no_unique_kinetic_clock/Q126_NO_UNIQUE_CLOCK.py` |  | 0.42s | 2026-11-28T09:53:39Z |
 | pass | `research_archive/2026-11-14_q86_parity_history_energy/Q86_PARITY_HISTORY_ENERGY.py` |  | 31.26s | 2026-11-28T09:22:21Z |
 | pass | `research_archive/2026-11-14_q87b_bridge_parity/Q87B_NATIVE_PARITY_BRIDGE.py` |  | 0.53s | 2026-11-28T08:53:30Z |
 | pass | `research_archive/2026-11-14_q87c_bridge_singular/Q87C_BRIDGE_SINGULAR.py` |  | 1.13s | 2026-11-28T09:02:38Z |
 | pass | `research_archive/2026-11-14_q87d_native_parity_commutator/Q87D_NATIVE_PARITY_COMMUTATOR.py` |  | 0.49s | 2026-11-28T08:54:38Z |
-| pass | `research_archive/2026-11-14_q87e_parity_energy/Q87E_PARITY_ENERGY.py` |  | 1.47s | 2026-11-28T08:24:58Z |
+| pass | `research_archive/2026-11-14_q87e_parity_energy/Q87E_PARITY_ENERGY.py` |  | 1.49s | 2026-11-28T09:45:44Z |
 | pass | `research_archive/2026-11-14_q87f_native_trace/Q87F_NATIVE_DIRICHLET_TRACE.py` |  | 0.4s | 2026-11-28T09:16:34Z |
 | pass | `research_archive/2026-11-14_q87g_second_moment/Q87G_NATIVE_SECOND_MOMENT.py` |  | 0.84s | 2026-11-28T09:26:26Z |
 | pass | `research_archive/2026-11-14_q91_bridge_loss_sequence/Q91_BRIDGE_LOSS_SEQUENCE.py` |  | 36.83s | 2026-11-28T08:53:24Z |
@@ -552,8 +553,8 @@
 | pass | `research_archive/2026-11-15_q147_weighted_link_recovery/Q147_WEIGHTED_LINK_FOURTH_CERTIFICATE.py` |  | 0.34s | 2026-11-28T09:25:26Z |
 | pass | `research_archive/2026-11-15_q149_physical_curvature/Q149_ORIGINAL_528_CURVATURE_CERTIFICATE.py` |  | 0.23s | 2026-11-28T09:01:07Z |
 | pass | `research_archive/2026-11-15_q150_native_physical_vacuum/Q150A_HOLONOMY_OBSERVABLE_CERTIFICATE.py` |  | 0.53s | 2026-11-28T09:37:34Z |
-| pass | `research_archive/2026-11-15_q150_native_physical_vacuum/Q150_FULL_NATIVE_GAUGE_VACUUM_SEARCH.py` |  | 100.11s | 2026-11-28T08:18:41Z |
-| pass | `research_archive/2026-11-15_q151_physical_vacuum_continuation/Q151_NATIVE_VACUUM_CONTINUATION.py` |  | 64.67s | 2026-11-28T08:22:40Z |
+| pass | `research_archive/2026-11-15_q150_native_physical_vacuum/Q150_FULL_NATIVE_GAUGE_VACUUM_SEARCH.py` |  | 99.96s | 2026-11-28T09:40:18Z |
+| pass | `research_archive/2026-11-15_q151_physical_vacuum_continuation/Q151_NATIVE_VACUUM_CONTINUATION.py` |  | 64.67s | 2026-11-28T09:43:26Z |
 | pass | `research_archive/2026-11-15_q154_physical_photon_response/Q154_NATIVE_PHOTON_RESPONSE.py` |  | 57.28s | 2026-11-28T09:35:31Z |
 | pass | `research_archive/2026-11-15_q155_native_flux_translation/Q155_ORIGINAL_NATIVE_TRANSLATION_AUDIT.py` |  | 0.41s | 2026-11-28T09:33:01Z |
 | pass | `research_archive/2026-11-15_q156_native_translation_orbit/Q156_ORIGINAL_NATIVE_TRANSLATION_ORBIT.py` |  | 50.51s | 2026-11-28T09:33:53Z |
@@ -562,45 +563,45 @@
 | pass | `research_archive/2026-11-15_q159_native_continuum_photon/Q159_NATIVE_BLOCH_PHOTON_AND_GAP.py` |  | 41.95s | 2026-11-28T09:06:50Z |
 | pass | `research_archive/2026-11-15_q160_native_gap_robustness/Q160_NATIVE_GAP_ROBUSTNESS.py` |  | 0.02s | 2026-11-28T09:37:34Z |
 | pass | `research_archive/2026-11-15_q161_native_gram_spectrum/Q161_NATIVE_64_TRANSFER_SPECTRUM.py` |  | 2.36s | 2026-11-28T08:56:27Z |
-| pass | `research_archive/2026-11-15_q161e_native_hidden_rank/Q161E_NATIVE_HIDDEN_RANK.py` |  | 0.73s | 2026-11-28T08:22:41Z |
+| pass | `research_archive/2026-11-15_q161e_native_hidden_rank/Q161E_NATIVE_HIDDEN_RANK.py` |  | 0.75s | 2026-11-28T09:43:26Z |
 | pass | `research_archive/2026-11-15_q161f_clock_hidden_rank/Q161F_CLOCK_HIDDEN_RANK.py` |  | 0.73s | 2026-11-28T08:49:20Z |
 | pass | `research_archive/2026-11-15_q161h_hidden_shift/Q161H_HIDDEN_SHIFT_CERTIFICATE.py` |  | 0.63s | 2026-11-28T09:02:19Z |
 | pass | `research_archive/2026-11-16_q161i_hidden_second_order/Q161I_HESSIAN_SPAN.py` |  | 0.85s | 2026-11-28T09:26:12Z |
 | pass | `research_archive/2026-11-16_q161j_two_vertex_hidden/Q161J_TWO_VERTEX_JACOBIAN.py` |  | 2.83s | 2026-11-28T08:36:17Z |
 | pass | `research_archive/2026-11-16_q161k_native_stacked_sources/Q161K_NATIVE_STACK.py` |  | 1.37s | 2026-11-28T09:03:35Z |
-| pass | `research_archive/2026-11-16_q161l_axis_orbit/Q161L_AXIS_ORBIT.py` |  | 26.66s | 2026-11-28T08:31:26Z |
+| pass | `research_archive/2026-11-16_q161l_axis_orbit/Q161L_AXIS_ORBIT.py` |  | 26.6s | 2026-11-28T09:52:13Z |
 | pass | `research_archive/2026-11-16_q161n_parity_source/Q161N_PARITY_SOURCE.py` |  | 0.17s | 2026-11-28T09:06:50Z |
 | pass | `research_archive/2026-11-16_q161p_full_kernel_upstream/Q161P_UPSTREAM_KERNEL.py` |  | 0.96s | 2026-11-28T09:24:05Z |
-| pass | `research_archive/2026-11-16_q161r_parity_source_selection/Q161R_SOURCE_SELECTION.py` |  | 0.29s | 2026-11-28T08:27:14Z |
-| pass | `research_archive/2026-11-16_q161t_native_face_source/Q161T_NATIVE_FACE_SOURCE.py` |  | 2.59s | 2026-11-28T08:17:01Z |
+| pass | `research_archive/2026-11-16_q161r_parity_source_selection/Q161R_SOURCE_SELECTION.py` |  | 0.29s | 2026-11-28T09:48:00Z |
+| pass | `research_archive/2026-11-16_q161t_native_face_source/Q161T_NATIVE_FACE_SOURCE.py` |  | 2.57s | 2026-11-28T09:38:38Z |
 | pass | `research_archive/2026-11-16_q161u_native_face_gram/Q161U_FACE_GRAM.py` |  | 1.72s | 2026-11-28T09:00:57Z |
 | pass | `research_archive/2026-11-16_q161v_six_axis_face/Q161V_SIX_AXIS.py` |  | 6.23s | 2026-11-28T09:18:15Z |
-| pass | `research_archive/2026-11-16_q161w_axis_subsets/Q161W_AXIS_SUBSETS.py` |  | 23.47s | 2026-11-28T08:20:41Z |
+| pass | `research_archive/2026-11-16_q161w_axis_subsets/Q161W_AXIS_SUBSETS.py` |  | 23.71s | 2026-11-28T09:42:18Z |
 | pass | `research_archive/2026-11-16_q161x_axis_geometry/Q161X_AXIS_GEOMETRY.py` |  | 8.79s | 2026-11-28T09:17:54Z |
-| pass | `research_archive/2026-11-16_q161y_axis_orbit/Q161Y_AXIS_ORBIT.py` |  | 1.53s | 2026-11-28T08:25:00Z |
-| pass | `research_archive/2026-11-17_q161_direct_face_vertex_generation/Q161_DIRECT_FACE_VERTEX_GENERATION_CERT.py` |  | 11.41s | 2026-11-28T08:18:54Z |
+| pass | `research_archive/2026-11-16_q161y_axis_orbit/Q161Y_AXIS_ORBIT.py` |  | 1.54s | 2026-11-28T09:45:47Z |
+| pass | `research_archive/2026-11-17_q161_direct_face_vertex_generation/Q161_DIRECT_FACE_VERTEX_GENERATION_CERT.py` |  | 11.47s | 2026-11-28T09:40:32Z |
 | pass | `research_archive/2026-11-17_q161_exact_hidden4_yukawa_isometry/Q161_EXACT_HIDDEN4_TO_YUKAWA_PHYSICS_CERT.py` |  | 2.76s | 2026-11-28T08:39:10Z |
-| pass | `research_archive/2026-11-17_q161_four_one_form/Q161_FOUR_ONE_FORM_NATIVE_CERT.py` |  | 40.67s | 2026-11-28T08:28:02Z |
-| pass | `research_archive/2026-11-17_q161_full_ew_source_covariance/Q161_FULL_EW_SOURCE_HOPF_COVARIANCE_CERT.py` |  | 39.03s | 2026-11-28T08:19:37Z |
+| pass | `research_archive/2026-11-17_q161_four_one_form/Q161_FOUR_ONE_FORM_NATIVE_CERT.py` |  | 40.76s | 2026-11-28T09:48:48Z |
+| pass | `research_archive/2026-11-17_q161_full_ew_source_covariance/Q161_FULL_EW_SOURCE_HOPF_COVARIANCE_CERT.py` |  | 39.08s | 2026-11-28T09:41:15Z |
 | pass | `research_archive/2026-11-17_q161_graded_48_original/Q161_GRADED_48_ORIGINAL_SOURCE_CERT.py` |  | 42.2s | 2026-11-28T08:41:56Z |
 | pass | `research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_FLUX_EXACT_STATIONARITY.py` |  | 12.19s | 2026-11-28T08:49:34Z |
 | pass | `research_archive/2026-11-17_q161_graded_nonzero_flux/Q161_GRADED_NONZERO_FLUX_NATIVE_CERT.py` |  | 42.47s | 2026-11-28T08:50:17Z |
-| pass | `research_archive/2026-11-17_q161_ns4_curved_vacuum/Q161_NS4_CURVED_GRADED_NATIVE.py` |  | 68.84s | 2026-11-28T08:29:11Z |
+| pass | `research_archive/2026-11-17_q161_ns4_curved_vacuum/Q161_NS4_CURVED_GRADED_NATIVE.py` |  | 68.78s | 2026-11-28T09:49:57Z |
 | pass | `research_archive/2026-11-17_q161_part21_audit/Q161_PART21_GRADED_PHYSICS_AUDIT_2026_11_17.py` |  | 0.33s | 2026-11-28T08:41:56Z |
-| pass | `research_archive/2026-11-17_q161_q96_three_generation_hopf_source/Q161_Q96_SOURCE_THREE_GENERATION_WARD_CERT.py` |  | 39.16s | 2026-11-28T08:20:17Z |
+| pass | `research_archive/2026-11-17_q161_q96_three_generation_hopf_source/Q161_Q96_SOURCE_THREE_GENERATION_WARD_CERT.py` |  | 38.98s | 2026-11-28T09:41:54Z |
 | pass | `research_archive/2026-11-17_q161_source_selected_generation/Q161_SOURCE_SELECTED_GENERATION_CERT.py` |  | 2.15s | 2026-11-28T09:13:36Z |
 | pass | `research_archive/2026-11-17_q161_step23_full_theory_audit/Q161_STEP23_NATIVE_PORTAL_AND_HESSIAN_AUDIT.py` |  | 0.19s | 2026-11-28T09:05:58Z |
 | pass | `research_archive/2026-11-17_q161_thermodynamic_photon/Q161_THERMODYNAMIC_PHOTON_NATIVE_CERT.py` |  | 96.8s | 2026-11-28T08:51:53Z |
-| pass | `research_archive/2026-11-17_q161aa_face_readout_gram/Q161AA_FACE_GRAM.py` |  | 2.27s | 2026-11-28T08:25:36Z |
+| pass | `research_archive/2026-11-17_q161aa_face_readout_gram/Q161AA_FACE_GRAM.py` |  | 2.28s | 2026-11-28T09:46:23Z |
 | pass | `research_archive/2026-11-17_q161ac_face_source_channel/Q161AC_FACE_SOURCE_CHANNEL.py` |  | 1.68s | 2026-11-28T09:03:34Z |
 | pass | `research_archive/2026-11-17_q161ae_face_dual_spectrum/Q161AE_FACE_KERNEL.py` |  | 18.6s | 2026-11-28T09:20:28Z |
-| pass | `research_archive/2026-11-17_q161af_native_face_projector/Q161AF_PROJECTOR.py` |  | 20.8s | 2026-11-28T08:30:59Z |
+| pass | `research_archive/2026-11-17_q161af_native_face_projector/Q161AF_PROJECTOR.py` |  | 20.81s | 2026-11-28T09:51:46Z |
 | pass | `research_archive/2026-11-17_q161al_edge_hidden_hodge/Q161AL_EDGE_HIDDEN.py` |  | 1.09s | 2026-11-28T09:28:26Z |
 | pass | `research_archive/2026-11-17_q161am_joint_face_edge/Q161AM_JOINT_RECONSTRUCTION.py` |  | 1.0s | 2026-11-28T09:07:38Z |
 | pass | `research_archive/2026-11-17_q161as_native_edge_energy/Q161AS_EDGE_ENERGY.py` |  | 1.7s | 2026-11-28T09:16:07Z |
 | pass | `research_archive/2026-11-17_q161ax_face_orbit_covariance/Q161AX_FACE_ORBIT_COVARIANCE_CERT.py` |  | 3.1s | 2026-11-28T09:01:19Z |
 | pass | `research_archive/2026-11-17_q161ay_native_face_channel_covariance/Q161AY_NATIVE_FACE_COVARIANCE_CERT.py` |  | 8.14s | 2026-11-28T09:17:20Z |
-| pass | `research_archive/2026-11-17_q161az_dual_adjacency_covariance/Q161AZ_CERT.py` |  | 3.93s | 2026-11-28T08:22:53Z |
+| pass | `research_archive/2026-11-17_q161az_dual_adjacency_covariance/Q161AZ_CERT.py` |  | 3.98s | 2026-11-28T09:43:39Z |
 | pass | `research_archive/2026-11-17_q161ba_dual_face_spectral_weights/Q161BA_CERT.py` |  | 0.61s | 2026-11-28T09:22:22Z |
 | pass | `research_archive/2026-11-17_q161z_uniform_face_source/Q161Z_UNIFORM_FACE_SOURCE.py` |  | 1.55s | 2026-11-28T09:16:37Z |
 | pass | `research_archive/2026-11-17_spiral_frustration_urt_recovery/FIBONACCI_CLOSURE_CERTIFICATE.py` |  | 1.67s | 2026-11-28T09:31:46Z |
@@ -612,21 +613,21 @@
 | pass | `research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_full_machine_bridge_2026_11_17.py` |  | 0.29s | 2026-11-28T09:32:03Z |
 | pass | `research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_graded_kinetic_audit_2026_11_17.py` |  | 2.2s | 2026-11-28T09:32:05Z |
 | pass | `research_archive/2026-11-17_spiral_frustration_urt_recovery/cathedral_urt_parity_history_test_2026_11_17.py` |  | 0.65s | 2026-11-28T09:32:06Z |
-| pass | `research_archive/2026-11-18_q161bb_native_covariance_purity/Q161BB_CERT.py` |  | 0.81s | 2026-11-28T08:27:15Z |
+| pass | `research_archive/2026-11-18_q161bb_native_covariance_purity/Q161BB_CERT.py` |  | 0.82s | 2026-11-28T09:48:01Z |
 | pass | `research_archive/2026-11-18_q161bc_native_clock_covariance/Q161BC_CERT.py` |  | 0.8s | 2026-11-28T08:49:20Z |
 | pass | `research_archive/2026-11-18_q161be_q96_clock_charge/Q161BE_CERT.py` |  | 0.02s | 2026-11-28T09:16:34Z |
-| pass | `research_archive/2026-11-18_q161bf_twisted_q96_clock/Q161BF_CERT.py` |  | 1.66s | 2026-11-28T08:22:49Z |
+| pass | `research_archive/2026-11-18_q161bf_twisted_q96_clock/Q161BF_CERT.py` |  | 1.66s | 2026-11-28T09:43:34Z |
 | pass | `research_archive/2026-11-18_q161bg_q96_seam_nonselection/Q161BG_CERT.py` |  | 0.53s | 2026-11-28T09:08:47Z |
-| pass | `research_archive/2026-11-18_q161bi_native_face_flux_seam/Q161BI_CERT.py` |  | 4.1s | 2026-11-28T08:27:21Z |
+| pass | `research_archive/2026-11-18_q161bi_native_face_flux_seam/Q161BI_CERT.py` |  | 4.15s | 2026-11-28T09:48:08Z |
 | pass | `research_archive/2026-11-18_q161bj_face_intensity_mean/Q161BJ_CERT.py` |  | 5.0s | 2026-11-28T09:06:08Z |
 | pass | `research_archive/2026-11-18_q161bl_dual_face_distance/Q161BL_CERT.py` |  | 10.99s | 2026-11-28T09:24:40Z |
-| pass | `research_archive/2026-11-18_q161bm_edge_covariance/Q161BM_CERT.py` |  | 13.42s | 2026-11-28T08:29:30Z |
+| pass | `research_archive/2026-11-18_q161bm_edge_covariance/Q161BM_CERT.py` |  | 13.38s | 2026-11-28T09:50:16Z |
 | pass | `research_archive/2026-11-18_q161bn_edge_kernel/Q161BN_CERT.py` |  | 22.84s | 2026-11-28T09:01:42Z |
 | pass | `research_archive/2026-11-18_q161bo_dual_integral_hodge/Q161BO_SNF.py` |  | 0.54s | 2026-11-28T09:16:35Z |
 | pass | `research_archive/2026-11-18_q161bp_antipodal_hodge/Q161BP_CERT.py` |  | 0.92s | 2026-11-28T08:51:54Z |
 | pass | `research_archive/2026-11-18_q161bq_edge_parity/Q161BQ_CERT.py` |  | 0.76s | 2026-11-28T09:10:06Z |
 | pass | `research_archive/2026-11-18_q161br_edge_clock_reversal/Q161BR_CERT.py` |  | 0.86s | 2026-11-28T09:27:02Z |
-| pass | `research_archive/2026-11-18_q161bs_native_clock_holonomy/Q161BS_CERT.py` |  | 1.29s | 2026-11-28T08:27:16Z |
+| pass | `research_archive/2026-11-18_q161bs_native_clock_holonomy/Q161BS_CERT.py` |  | 1.31s | 2026-11-28T09:48:02Z |
 | pass | `research_archive/2026-11-18_q161bu_clock_charge_spectral/Q161BU_CERT.py` |  | 0.55s | 2026-11-28T08:52:47Z |
 | pass | `research_archive/2026-11-18_q161bv_native_history_clock_charge/Q161BV_CERT.py` |  | 0.35s | 2026-11-28T09:11:45Z |
 | pass | `research_archive/2026-11-18_q161bw_native_sigma_spectrum/Q161BW_CERT.py` |  | 0.32s | 2026-11-28T08:51:55Z |
@@ -634,12 +635,12 @@
 | pass | `research_archive/2026-11-19_q161by_native_190_clock/Q161BY_CERT.py` |  | 0.61s | 2026-11-28T09:37:35Z |
 | pass | `research_archive/2026-11-19_q161bz_native_190_kernel/Q161BZ_CERT.py` |  | 0.63s | 2026-11-28T09:10:07Z |
 | pass | `research_archive/2026-11-19_q161ca_native_harmonic_source_kernel/Q161CA_CERT.py` |  | 5.84s | 2026-11-28T09:27:14Z |
-| pass | `research_archive/2026-11-19_q161cb_native_source_gram/Q161CB_CERT.py` |  | 5.12s | 2026-11-28T08:29:16Z |
+| pass | `research_archive/2026-11-19_q161cb_native_source_gram/Q161CB_CERT.py` |  | 5.35s | 2026-11-28T09:50:03Z |
 | pass | `research_archive/2026-11-19_q161cc_native_source_schur/Q161CC_CERT.py` |  | 18.92s | 2026-11-28T08:56:25Z |
 | pass | `research_archive/2026-11-19_q161cd_five_solid_leverage/Q161CD_CERT.py` |  | 6.53s | 2026-11-28T09:26:48Z |
-| pass | `research_archive/2026-11-19_q161ce_source_deletion/Q161CE_CERT.py` |  | 19.82s | 2026-11-28T08:34:32Z |
+| pass | `research_archive/2026-11-19_q161ce_source_deletion/Q161CE_CERT.py` |  | 19.66s | 2026-11-28T09:55:19Z |
 | pass | `research_archive/2026-11-19_q161cf_source_subset_ranks/Q161CF_CERT.py` |  | 40.87s | 2026-11-28T08:59:02Z |
-| pass | `research_archive/2026-11-19_q161ci_cube_octa_dual/Q161CI_CERT.py` |  | 0.37s | 2026-11-28T08:22:49Z |
+| pass | `research_archive/2026-11-19_q161ci_cube_octa_dual/Q161CI_CERT.py` |  | 0.37s | 2026-11-28T09:43:35Z |
 | pass | `research_archive/2026-11-19_q161cj_five_solid_charge_commutant/Q161CJ_CERT.py` |  | 9.84s | 2026-11-28T08:52:04Z |
 | pass | `research_archive/2026-11-19_q161ck_native_antipodal_defect/Q161CK_CERT.py` |  | 6.57s | 2026-11-28T09:14:48Z |
 | pass | `research_archive/2026-11-19_q161cm_q96_chiral_ward/Q161CM_CERT.py` |  | 0.02s | 2026-11-28T09:37:35Z |
@@ -660,12 +661,12 @@
 | pass | `research_archive/2026-11-20_q161dc_q96_clock_spectrum/Q161DC_CERT.py` |  | 0.56s | 2026-11-28T08:36:59Z |
 | pass | `research_archive/2026-11-20_q161dd_q96_clock_green/Q161DD_CERT.py` |  | 0.38s | 2026-11-28T09:05:59Z |
 | pass | `research_archive/2026-11-20_q161de_q96_antipodal_green/Q161DE_CERT.py` |  | 0.02s | 2026-11-28T09:21:38Z |
-| pass | `research_archive/2026-11-20_q161df_q96_clock_kirchhoff/Q161DF_CERT.py` |  | 0.02s | 2026-11-28T08:27:16Z |
+| pass | `research_archive/2026-11-20_q161df_q96_clock_kirchhoff/Q161DF_CERT.py` |  | 0.02s | 2026-11-28T09:48:03Z |
 | pass | `research_archive/2026-11-20_q161dg_q96_clock_pseudodeterminant/Q161DG_CERT.py` |  | 0.02s | 2026-11-28T09:01:56Z |
-| pass | `research_archive/2026-11-20_q161dj_q96_clock_fourth_moment/Q161DJ_CERT.py` |  | 0.02s | 2026-11-28T08:24:53Z |
+| pass | `research_archive/2026-11-20_q161dj_q96_clock_fourth_moment/Q161DJ_CERT.py` |  | 0.02s | 2026-11-28T09:45:39Z |
 | pass | `research_archive/2026-11-20_q162a_urt_chaos_dual/Q162A_ORIGINAL_CHAOS_TO_FIVE_CERT.py` |  | 3.09s | 2026-11-28T09:26:41Z |
-| pass | `research_archive/2026-11-20_q162b_golden_sphere/Q162B_GOLDEN_PLATONIC_SPHERE_CERT.py` |  | 0.42s | 2026-11-28T08:27:17Z |
-| pass | `research_archive/2026-11-20_q162b_golden_sphere/Q162C_GOLDEN_QUANTUM_HARMONIC_TRANSFER.py` |  | 0.37s | 2026-11-28T08:27:17Z |
+| pass | `research_archive/2026-11-20_q162b_golden_sphere/Q162B_GOLDEN_PLATONIC_SPHERE_CERT.py` |  | 0.43s | 2026-11-28T09:48:03Z |
+| pass | `research_archive/2026-11-20_q162b_golden_sphere/Q162C_GOLDEN_QUANTUM_HARMONIC_TRANSFER.py` |  | 0.38s | 2026-11-28T09:48:03Z |
 | pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162D_NATIVE_Q4_H64_CLOCK_CERT.py` |  | 2.64s | 2026-11-28T09:19:52Z |
 | pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162E_WHOLE_FIVE_TO_Q4_KINETIC_CERT.py` |  | 3.17s | 2026-11-28T08:44:28Z |
 | pass | `research_archive/2026-11-20_q162d_h64_charge_doubling/Q162F_EXACT_HIDDEN_TRIPLE_IDENTITY_CERT.py` |  | 2.77s | 2026-11-28T09:19:55Z |
@@ -679,7 +680,7 @@
 | pass | `research_archive/2026-11-21_urt_autonomous_rotor/URT_AUTONOMOUS_ROTOR_GAUSSIAN_FLOW.py` |  | 0.48s | 2026-11-28T09:14:41Z |
 | pass | `research_archive/2026-11-21_urt_collective_metric_trace/cert.py` |  | 0.89s | 2026-11-28T09:14:01Z |
 | pass | `research_archive/2026-11-21_urt_collective_metric_trace/virial.py` |  | 0.36s | 2026-11-28T09:14:01Z |
-| pass | `research_archive/2026-11-21_urt_combined_vacuum_one_loop/calc.py` |  | 0.01s | 2026-11-28T08:24:53Z |
+| pass | `research_archive/2026-11-21_urt_combined_vacuum_one_loop/calc.py` |  | 0.01s | 2026-11-28T09:45:39Z |
 | pass | `research_archive/2026-11-21_urt_entropy_frustration/FRUSTRATION_CORRELATION_CERT.py` |  | 0.04s | 2026-11-28T08:46:28Z |
 | pass | `research_archive/2026-11-21_urt_local_pump/URT_LOCAL_CONJUGATE_PUMP_CERT.py` |  | 0.23s | 2026-11-28T09:14:42Z |
 | pass | `research_archive/2026-11-21_urt_prime_group_completion/prime_urt_group_completion_2026_11_21.py` |  | 0.04s | 2026-11-28T09:10:07Z |
@@ -688,8 +689,8 @@
 | pass | `research_archive/2026-11-21_urt_prime_reciprocity/urt_prime_reciprocity_coupling.py` |  | 0.13s | 2026-11-28T09:37:35Z |
 | pass | `research_archive/2026-11-21_urt_prime_vacuum_bridge/prime_urt_vacuum_bridge_2026_11_21.py` |  | 0.77s | 2026-11-28T08:37:54Z |
 | pass | `research_archive/2026-11-21_urt_primitive_amplifier/URT_PRIMITIVE_BOGOLIUBOV_CERT.py` |  | 0.67s | 2026-11-28T08:44:23Z |
-| pass | `research_archive/2026-11-21_urt_whole_cosmological_system/calc.py` |  | 0.46s | 2026-11-28T08:24:54Z |
-| pass | `research_archive/2026-11-21_urt_whole_trace_dynamics/cert.py` |  | 0.51s | 2026-11-28T08:24:54Z |
+| pass | `research_archive/2026-11-21_urt_whole_cosmological_system/calc.py` |  | 0.48s | 2026-11-28T09:45:39Z |
+| pass | `research_archive/2026-11-21_urt_whole_trace_dynamics/cert.py` |  | 0.52s | 2026-11-28T09:45:40Z |
 | pass | `research_archive/2026-11-21_urt_zpe_battery/URT_ZPE_BATTERY_CERT.py` |  | 0.68s | 2026-11-28T08:44:24Z |
 | pass | `research_archive/2026-11-21_urt_zpe_boost_stationarity/check.py` |  | 5.1s | 2026-11-28T09:26:31Z |
 | pass | `research_archive/2026-11-21_urt_zpe_boost_stationarity/modular.py` |  | 0.32s | 2026-11-28T09:26:31Z |
@@ -698,8 +699,8 @@
 | pass | `research_archive/2026-11-21_urt_zpe_complete_3d/URT_FLUID_CLOSURE_SYMBOLIC_CERT.py` |  | 0.4s | 2026-11-28T09:05:07Z |
 | pass | `research_archive/2026-11-21_urt_zpe_cosmological_bridge/zpe_cosmological_term_certificate.py` |  | 0.64s | 2026-11-28T09:33:01Z |
 | pass | `research_archive/2026-11-21_urt_zpe_covariant_action/URT_ZPE_COVARIANT_CONSTRAINT_CERT.py` |  | 0.52s | 2026-11-28T08:44:24Z |
-| pass | `research_archive/2026-11-21_urt_zpe_entropy_audit/URT_ENTROPY_95PERCENT_SAME_STATE_CERT.py` |  | 0.57s | 2026-11-28T08:19:38Z |
-| pass | `research_archive/2026-11-21_urt_zpe_force_vacuum/cert.py` |  | 0.43s | 2026-11-28T08:24:55Z |
+| pass | `research_archive/2026-11-21_urt_zpe_entropy_audit/URT_ENTROPY_95PERCENT_SAME_STATE_CERT.py` |  | 0.59s | 2026-11-28T09:41:15Z |
+| pass | `research_archive/2026-11-21_urt_zpe_force_vacuum/cert.py` |  | 0.45s | 2026-11-28T09:45:40Z |
 | pass | `research_archive/2026-11-21_urt_zpe_gaussian_joint/URT_JOINT_ZPE_ENTROPY_CERT.py` |  | 0.1s | 2026-11-28T08:54:00Z |
 | pass | `research_archive/2026-11-21_urt_zpe_gaussian_joint/independent_gaussian_check.py` |  | 0.29s | 2026-11-28T08:54:00Z |
 | pass | `research_archive/2026-11-21_urt_zpe_horizon_limit/central_thermal.py` |  | 2.45s | 2026-11-28T09:10:10Z |
@@ -707,14 +708,14 @@
 | pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_BOUNDARY_ENERGY_CERT.py` |  | 4.78s | 2026-11-28T08:46:36Z |
 | pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_BOOST_CERT.py` |  | 19.58s | 2026-11-28T08:46:56Z |
 | pass | `research_archive/2026-11-21_urt_zpe_horizon_redshift/URT_HORIZON_STRIP_CHECK.py` |  | 8.4s | 2026-11-28T08:47:26Z |
-| pass | `research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_LANCZOS_INDEPENDENT.py` |  | 0.31s | 2026-11-28T08:21:33Z |
-| pass | `research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_SIGN_EXACT_CERT.py` |  | 1.03s | 2026-11-28T08:21:34Z |
-| pass | `research_archive/2026-11-21_urt_zpe_interface/URT_ZPE_INTERFACE_CERT.py` |  | 0.45s | 2026-11-28T08:21:34Z |
+| pass | `research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_LANCZOS_INDEPENDENT.py` |  | 0.29s | 2026-11-28T09:42:18Z |
+| pass | `research_archive/2026-11-21_urt_zpe_infinite_flux/URT_BULK_SIGN_EXACT_CERT.py` |  | 1.03s | 2026-11-28T09:42:19Z |
+| pass | `research_archive/2026-11-21_urt_zpe_interface/URT_ZPE_INTERFACE_CERT.py` |  | 0.45s | 2026-11-28T09:42:20Z |
 | pass | `research_archive/2026-11-21_urt_zpe_lattice_area_law/URT_ZPE_FLUX_MOMENT_CERT.py` |  | 0.27s | 2026-11-28T09:18:15Z |
 | pass | `research_archive/2026-11-21_urt_zpe_lattice_area_law/URT_ZPE_LATTICE_AREA_CERT.py` |  | 0.26s | 2026-11-28T09:18:16Z |
 | pass | `research_archive/2026-11-21_urt_zpe_metric_response/URT_CARRIER_CREATION_THERMODYNAMICS_CERT.py` |  | 0.77s | 2026-11-28T08:47:26Z |
 | pass | `research_archive/2026-11-21_urt_zpe_metric_response/URT_ZPE_METRIC_RESPONSE_CERT.py` |  | 0.39s | 2026-11-28T08:47:27Z |
-| pass | `research_archive/2026-11-21_urt_zpe_mismatch_reaudit/URT_ZPE_MISMATCH_CERT_2026-11-21.py` |  | 0.46s | 2026-11-28T08:24:55Z |
+| pass | `research_archive/2026-11-21_urt_zpe_mismatch_reaudit/URT_ZPE_MISMATCH_CERT_2026-11-21.py` |  | 0.49s | 2026-11-28T09:45:41Z |
 | pass | `research_archive/2026-11-21_urt_zpe_quantum_dynamics/URT_ZPE_QUANTUM_SEAM_DYNAMICS_CERT.py` |  | 0.33s | 2026-11-28T08:44:24Z |
 | pass | `research_archive/2026-11-21_urt_zpe_three_layer_refinement/URT_ZPE_REFINEMENT_CERT.py` |  | 0.15s | 2026-11-28T09:37:35Z |
 | pass | `research_archive/2026-11-22_q161dq_native_q96_charge_embedding/Q161DQ_NATIVE_Q96_CHARGE_EMBEDDING_NONUNIQUENESS_CERT.py` |  | 0.22s | 2026-11-28T08:39:07Z |
@@ -724,7 +725,7 @@
 | pass | `research_archive/2026-11-22_urt_integrated_physical_theory/cert.py` |  | 0.07s | 2026-11-28T09:07:38Z |
 | pass | `research_archive/2026-11-22_urt_minimal_clock_horizon/cert.py` |  | 0.01s | 2026-11-28T09:17:22Z |
 | pass | `research_archive/2026-11-22_urt_motion_entropy_feedback/cert.py` |  | 0.02s | 2026-11-28T09:34:33Z |
-| pass | `research_archive/2026-11-22_urt_physical_root_causes/cert.py` |  | 0.15s | 2026-11-28T08:20:17Z |
+| pass | `research_archive/2026-11-22_urt_physical_root_causes/cert.py` |  | 0.15s | 2026-11-28T09:41:54Z |
 | pass | `research_archive/2026-11-22_urt_same_state_energy_entropy/cert.py` |  | 0.56s | 2026-11-28T09:07:39Z |
 | pass | `research_archive/2026-11-22_urt_zpe_bulk_work/cert.py` |  | 0.36s | 2026-11-28T09:02:19Z |
 | pass | `research_archive/2026-11-22_urt_zpe_consolidated_metric/cert.py` |  | 1.48s | 2026-11-28T09:02:21Z |
@@ -741,7 +742,7 @@
 | pass | `research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/cert.py` |  | 0.17s | 2026-11-28T09:33:53Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/independent_jc_four_seam_bound.py` |  | 0.01s | 2026-11-28T08:37:49Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_local_quantum_seam/jc_test.py` |  | 0.48s | 2026-11-28T09:33:53Z |
-| pass | `research_archive/2026-11-22_urt_zpe_native_local_seam_spectral_leakage/cert.py` |  | 0.14s | 2026-11-28T08:29:11Z |
+| pass | `research_archive/2026-11-22_urt_zpe_native_local_seam_spectral_leakage/cert.py` |  | 0.14s | 2026-11-28T09:49:57Z |
 | pass | `research_archive/2026-11-22_urt_zpe_native_scale_phase/cert.py` |  | 2.85s | 2026-11-28T08:37:52Z |
 | pass | `research_archive/2026-11-22_urt_zpe_physical_discriminant/cert.py` |  | 0.4s | 2026-11-28T09:02:20Z |
 | pass | `research_archive/2026-11-22_urt_zpe_publication_audit/cert.py` |  | 0.59s | 2026-11-28T08:43:20Z |
@@ -749,31 +750,31 @@
 | pass | `research_archive/2026-11-22_urt_zpe_shape_relaxation/cert.py` |  | 14.87s | 2026-11-28T09:31:44Z |
 | pass | `research_archive/2026-11-23_full_five_circulation_feedback/FIVE_SOLID_FEEDBACK_CERT.py` |  | 0.47s | 2026-11-28T09:04:51Z |
 | pass | `research_archive/2026-11-23_gauge_reduced_hopf_circulation_gravity/GAUGE_REDUCED_HOPF_CIRCULATION_GRAVITY_CERT.py` |  | 0.51s | 2026-11-28T09:33:02Z |
-| pass | `research_archive/2026-11-23_hopf_urt_native_join/HOPF_NATIVE_JOIN_CERT.py` |  | 0.6s | 2026-11-28T08:18:41Z |
+| pass | `research_archive/2026-11-23_hopf_urt_native_join/HOPF_NATIVE_JOIN_CERT.py` |  | 0.57s | 2026-11-28T09:40:19Z |
 | pass | `research_archive/2026-11-23_native_gravity_spin2_horizon/NATIVE_GRAVITY_SPIN2_HORIZON_CERT.py` |  | 0.9s | 2026-11-28T09:34:34Z |
 | pass | `research_archive/2026-11-23_native_hidden_stress_interface/NATIVE_HIDDEN_STRESS_INTERFACE_CERT.py` |  | 0.75s | 2026-11-28T09:01:16Z |
 | pass | `research_archive/2026-11-23_native_weak_charge_background/NATIVE_WEAK_CHARGE_BACKGROUND_CERT.py` |  | 0.43s | 2026-11-28T09:15:43Z |
 | pass | `research_archive/2026-11-23_q161eg_native_plaquette_volume/Q161EG_NATIVE_PLAQUETTE_VOLUME.py` |  | 0.07s | 2026-11-28T09:28:27Z |
 | pass | `research_archive/2026-11-23_q161ei_normalized_native_pauli/Q161EI_NATIVE_NORMALIZED_PAULI.py` |  | 0.1s | 2026-11-28T09:14:42Z |
-| pass | `research_archive/2026-11-23_q161ek_native_holonomy/Q161EK_NATIVE_HOLONOMY.py` |  | 5.21s | 2026-11-28T08:25:06Z |
+| pass | `research_archive/2026-11-23_q161ek_native_holonomy/Q161EK_NATIVE_HOLONOMY.py` |  | 5.28s | 2026-11-28T09:45:52Z |
 | pass | `research_archive/2026-11-23_q161el_inversion_q96/Q161EL_INVERSION_Q96.py` |  | 0.1s | 2026-11-28T08:46:28Z |
 | pass | `research_archive/2026-11-24_coexact_curl_stiffness/COEXACT_CURL_STIFFNESS_CERT.py` |  | 0.46s | 2026-11-28T09:15:43Z |
-| pass | `research_archive/2026-11-24_coupled_curl_vertex_bifurcation/COUPLED_CURL_VERTEX_BIFURCATION_CERT.py` |  | 5.52s | 2026-11-28T08:34:12Z |
+| pass | `research_archive/2026-11-24_coupled_curl_vertex_bifurcation/COUPLED_CURL_VERTEX_BIFURCATION_CERT.py` |  | 5.52s | 2026-11-28T09:54:59Z |
 | pass | `research_archive/2026-11-24_face_harmonic_invariant_flow/FACE_HARMONIC_INVARIANT_FLOW_CERT.py` |  | 2.29s | 2026-11-28T08:46:32Z |
-| pass | `research_archive/2026-11-24_h64_clock_markov_obstruction/H64_CLOCK_MARKOV_OBSTRUCTION_CERT.py` |  | 0.52s | 2026-11-28T08:32:54Z |
+| pass | `research_archive/2026-11-24_h64_clock_markov_obstruction/H64_CLOCK_MARKOV_OBSTRUCTION_CERT.py` |  | 0.54s | 2026-11-28T09:53:40Z |
 | pass | `research_archive/2026-11-24_h64_relaxation_lyapunov/H64_RELAXATION_LYAPUNOV_CERT.py` |  | 0.72s | 2026-11-28T09:29:47Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/audit/verify_2026_11_27_common_root_identity.py` |  | 6.47s | 2026-11-28T08:22:47Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/audit/verify_2026_11_27_common_root_identity.py` |  | 6.46s | 2026-11-28T09:43:33Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/audit/verify_run40_tame_scalar.py` |  | 0.52s | 2026-11-28T09:21:04Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_disk_typed_projection.py` |  | 3.42s | 2026-11-28T08:18:58Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/dependencies/rh_disk_typed_projection.py` |  | 3.41s | 2026-11-28T09:40:35Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/LEAVES_I_PN_scripts_bundle.py` |  | 0.01s | 2026-11-28T09:04:51Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN2_green_exact_checks.py` |  | 0.88s | 2026-11-28T08:24:56Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN2_green_exact_checks.py` |  | 0.9s | 2026-11-28T09:45:42Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN3_generators_bundle.py` |  | 0.01s | 2026-11-28T08:46:56Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN3_green_exact_checks.py` |  | 20.98s | 2026-11-28T08:47:17Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN4_scripts_bundle.py` |  | 0.01s | 2026-11-28T08:47:17Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN5_scripts_bundle.py` |  | 0.01s | 2026-11-28T09:04:51Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN6_scripts_bundle.py` |  | 0.01s | 2026-11-28T09:04:51Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN7_scripts_bundle.py` |  | 0.01s | 2026-11-28T09:23:10Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN8_scripts_bundle.py` |  | 0.01s | 2026-11-28T08:18:58Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/RUN8_scripts_bundle.py` |  | 0.01s | 2026-11-28T09:40:35Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/green_regular_character/green_exact_checks.py` |  | 4.09s | 2026-11-28T09:23:14Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/06_zero_free_regions/constants_check.py` |  | 0.02s | 2026-11-28T08:47:17Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/07_local_zero_sum_and_analytic_bounds/constants_check.py` |  | 0.05s | 2026-11-28T08:47:17Z |
@@ -782,11 +783,11 @@
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/grok_swarm/native_family_existence/09_exceptional_pair_build_and_positivity/constants_check.py` |  | 0.03s | 2026-11-28T09:23:10Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/assemble_c2_single_witness.py` |  | 0.03s | 2026-11-28T09:25:55Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/compressed_graph_input.py` |  | 0.05s | 2026-11-28T08:44:25Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/memory_graph_io.py` |  | 0.03s | 2026-11-28T08:30:38Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/memory_graph_io.py` |  | 0.03s | 2026-11-28T09:51:25Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/rh_wd_dual_certificate.py` |  | 0.35s | 2026-11-28T09:18:16Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_compact_cup_cochain.py` |  | 0.28s | 2026-11-28T09:14:59Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_compact_lattice_convergence.py` |  | 0.04s | 2026-11-28T08:39:07Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_saved_b2_c2_frontiers.py` |  | 0.04s | 2026-11-28T08:30:38Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/integration/verify_saved_b2_c2_frontiers.py` |  | 0.04s | 2026-11-28T09:51:25Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_admrnalt_rank2_safe_elimination.py` |  | 0.02s | 2026-11-28T08:51:55Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_canonical_count_escape.py` |  | 5.38s | 2026-11-28T09:19:47Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_canonical_selected_record.py` |  | 0.04s | 2026-11-28T09:00:48Z |
@@ -799,16 +800,16 @@
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_count_escape_twist_selection.py` |  | 0.02s | 2026-11-28T09:31:29Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_aut_twist_invariance.py` |  | 0.03s | 2026-11-28T09:28:27Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_bool_split_obstruction.py` |  | 0.02s | 2026-11-28T09:02:20Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_dual_twist_invariance.py` |  | 0.97s | 2026-11-28T08:21:35Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_dual_twist_invariance.py` |  | 0.89s | 2026-11-28T09:42:21Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_exact_aggregation.py` |  | 1.3s | 2026-11-28T09:35:32Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelat_twist_reduction.py` |  | 0.02s | 2026-11-28T08:20:17Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelaway_twist_support.py` |  | 0.02s | 2026-11-28T08:24:56Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelat_twist_reduction.py` |  | 0.02s | 2026-11-28T09:41:54Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_levelaway_twist_support.py` |  | 0.02s | 2026-11-28T09:45:42Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countq_potcrys_premise_weakening.py` |  | 0.03s | 2026-11-28T09:31:29Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_countv_arith.py` |  | 4.16s | 2026-11-28T09:03:26Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_ext_iff_units_map_provenance.py` |  | 0.19s | 2026-11-28T08:36:14Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_gcd_crt.py` |  | 0.1s | 2026-11-28T08:24:56Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_kernel_criterion.py` |  | 0.06s | 2026-11-28T08:29:11Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_monotonicity.py` |  | 0.07s | 2026-11-28T08:29:11Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_gcd_crt.py` |  | 0.1s | 2026-11-28T09:45:42Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_kernel_criterion.py` |  | 0.06s | 2026-11-28T09:49:57Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_factors_through_monotonicity.py` |  | 0.07s | 2026-11-28T09:49:57Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_ind_drop_conductor_descent.py` |  | 0.09s | 2026-11-28T09:28:27Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_ind_unique_primitive_character_uniqueness.py` |  | 0.56s | 2026-11-28T09:16:46Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_joint_witness_count.py` |  | 0.07s | 2026-11-28T09:24:40Z |
@@ -825,18 +826,18 @@
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_rootsum_factor_sharpness.py` |  | 0.03s | 2026-11-28T09:17:54Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_stage1_bad_goodq_share.py` |  | 0.06s | 2026-11-28T08:57:48Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_stage2_bad_goodd_share.py` |  | 0.21s | 2026-11-28T08:46:29Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_twist_prim_jacobi_conductor.py` |  | 0.06s | 2026-11-28T08:21:35Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_uf_phi_envelope.py` |  | 1.05s | 2026-11-28T08:18:42Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_twist_prim_jacobi_conductor.py` |  | 0.05s | 2026-11-28T09:42:21Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/math/verify_uf_phi_envelope.py` |  | 1.03s | 2026-11-28T09:40:20Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/galois_representations/RUN96_COMPACT_CYCLOTOMIC_SHELL_SELECTOR.py` |  | 0.08s | 2026-11-28T09:19:47Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RH_FULL_SOURCE_SCAN.py` |  | 0.05s | 2026-11-28T08:18:43Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RH_FULL_SOURCE_SCAN_TEST.py` |  | 0.09s | 2026-11-28T08:18:43Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RH_FULL_SOURCE_SCAN.py` |  | 0.07s | 2026-11-28T09:40:20Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/RH_FULL_SOURCE_SCAN_TEST.py` |  | 0.09s | 2026-11-28T09:40:20Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/cache_certificate.py` |  | 4.47s | 2026-11-28T09:20:09Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/csr_builder_certificate.py` |  | 0.26s | 2026-11-28T09:20:51Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/disk_csr.py` |  | 0.52s | 2026-11-28T08:18:58Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/disk_csr.py` |  | 0.52s | 2026-11-28T09:40:36Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run27_dyadic.py` |  | 3.37s | 2026-11-28T09:16:05Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/on_acceleration/run31_twosided.py` |  | 8.48s | 2026-11-28T08:43:29Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/specialists/proof_editor/compact/2026-11-26_1256_crystalline_guards.py` |  | 0.32s | 2026-11-28T08:39:07Z |
-| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_port_schedule.py` |  | 1.21s | 2026-11-28T08:24:59Z |
+| pass | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_port_schedule.py` |  | 1.32s | 2026-11-28T09:45:45Z |
 | pass | `research_archive/2026-11-24_lean_rh_translation_swarm/structure/rh_scc_schedule.py` |  | 0.42s | 2026-11-28T09:23:15Z |
 | pass | `research_archive/2026-11-24_mixed_vortex_kms_entropy/MIXED_VORTEX_KMS_ENTROPY_CERT.py` |  | 3.41s | 2026-11-28T09:06:03Z |
 | pass | `research_archive/2026-11-27_left_to_solve/A068991_FINITE_SANITY.py` |  | 2.33s | 2026-11-28T09:03:48Z |
@@ -848,7 +849,7 @@
 | pass | `research_archive/2026-11-27_left_to_solve/workers/algebra/A116150_modular_certificate_run22.py` |  | 0.03s | 2026-11-28T08:46:29Z |
 | pass | `research_archive/2026-11-27_left_to_solve/workers/algebra/A395110_h_selfadjoint_certificate_run25.py` |  | 4.09s | 2026-11-28T09:07:05Z |
 | pass | `research_archive/2026-11-27_left_to_solve/workers/algebra/A395110_interlacing_matrix_certificate_run24.py` |  | 18.44s | 2026-11-28T09:16:02Z |
-| pass | `research_archive/2026-11-27_left_to_solve/workers/algebra/A395110_weight5_adjacent_partition_run28.py` |  | 0.02s | 2026-11-28T08:34:32Z |
+| pass | `research_archive/2026-11-27_left_to_solve/workers/algebra/A395110_weight5_adjacent_partition_run28.py` |  | 0.02s | 2026-11-28T09:55:19Z |
 | pass | `research_archive/Cathedral_v116_Golden_Hopf_Anosov_Hodge_2026-09-12/cathedral_v116_hodge_polarization_verify.py` |  | 0.23s | 2026-11-28T09:03:45Z |
 | pass | `research_archive/Cathedral_v117_Final_Mathematical_Closure_2026-09-12/cathedral_v117_final_closure_verify.py` |  | 0.02s | 2026-11-28T09:03:45Z |
 | pass | `research_archive/Cathedral_v118_QDL_Gravity_Certification_2026-09-12/cathedral_v118_qdl_gravity_certification_verify.py` |  | 0.02s | 2026-11-28T09:03:45Z |
