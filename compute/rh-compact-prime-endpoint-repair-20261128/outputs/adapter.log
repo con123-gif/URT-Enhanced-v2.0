@@ -1,0 +1,623 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:160:35: error: could not synthesize default value for parameter 'e' using tactics
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:160:35: error: `grind` failed
+case grind
+P : Parameters
+D : Data P
+h : ¬11 * D.logX + Real.log D.logB * 5⁻¹ + -(11 * D.logX + 0 + -Real.log D.logB) < Real.log D.logB
+left : 10 ^ 12 * P.c ≤ Real.log D.logB
+left_1 : 100 * Real.log D.logB ≤ D.logX
+left_2 : 10 ^ 6 * D.logX ≤ D.logX₁
+left_3 : 10 ^ 6 * D.logX₁ ≤ D.logB
+right_3 : 6 * Real.log D.logX₁ ≤ Real.log D.logB
+left_4 : 64 ≤ P.c
+left_5 : ↑P.N₀ ≤ P.c
+left_6 : ↑P.d ≤ P.c
+right_6 : ↑P.N₀.totient ≤ P.c
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] ¬11 * D.logX + Real.log D.logB * 5⁻¹ + -(11 * D.logX + 0 + -Real.log D.logB) < Real.log D.logB
+    [prop] 5 * 5⁻¹ = 1
+    [prop] 10 ^ 12 * P.c ≤ Real.log D.logB
+    [prop] 100 * Real.log D.logB ≤ D.logX
+    [prop] 10 ^ 6 * D.logX ≤ D.logX₁
+    [prop] 10 ^ 6 * D.logX₁ ≤ D.logB
+    [prop] 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] 64 ≤ P.c
+    [prop] ↑P.N₀ ≤ P.c
+    [prop] ↑P.d ≤ P.c
+    [prop] ↑P.N₀.totient ≤ P.c
+    [prop] 0 ≤ ↑P.N₀
+    [prop] 0 ≤ ↑P.d
+    [prop] 0 ≤ ↑P.N₀.totient
+    [prop] 0 ≤ ↑P.N₀
+    [prop] 0 ≤ ↑P.d
+    [prop] 0 ≤ ↑P.N₀.totient
+  [eqc] True propositions
+    [prop] 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] 100 * Real.log D.logB ≤ D.logX
+    [prop] 10 ^ 6 * D.logX ≤ D.logX₁
+    [prop] 10 ^ 6 * D.logX₁ ≤ D.logB
+    [prop] 10 ^ 12 * P.c ≤ Real.log D.logB
+    [prop] ↑P.N₀.totient ≤ P.c
+    [prop] ↑P.N₀ ≤ P.c
+    [prop] ↑P.d ≤ P.c
+    [prop] 0 ≤ ↑P.N₀.totient
+    [prop] 0 ≤ ↑P.N₀
+    [prop] 0 ≤ ↑P.d
+    [prop] 64 ≤ P.c
+  [eqc] False propositions
+    [prop] 11 * D.logX + Real.log D.logB * 5⁻¹ + -(11 * D.logX + 0 + -Real.log D.logB) < Real.log D.logB
+  [eqc] Equivalence classes
+    [eqc] {1, 5 * 5⁻¹}
+  [ematch] E-matching patterns
+    [thm] Set.ssubset_def: [@LT.lt _ _ #1 #0]
+    [thm] Set.subset_def: [@LE.le _ _ #1 #0]
+    [thm] Nat.pow_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] Nat.div_pow_of_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] Data.c_ge: [Parameters.c #0]
+  [cutsat] Assignment satisfying linear constraints
+    [assign] P.N₀.totient := 13
+    [assign] P.N₀ := 2
+    [assign] P.d := 7
+  [linarith] Linarith assignment for `ℝ`
+    [assign] P.c := 64
+    [assign] Real.log D.logB := 64000000000001
+    [assign] Real.log D.logX₁ := 10666666666665
+    [assign] D.logB := 6400000000000101000001000001
+    [assign] D.logX := 6400000000000101
+    [assign] D.logX₁ := 6400000000000101000001
+    [assign] 「10 ^ 6」 := 31
+    [assign] 「10 ^ 12」 := 20
+  [ring] Ring `ℝ`
+    [basis] Basis
+      [_] 5 * 5⁻¹ + -1 = 0
+[grind] Diagnostics
+  [ematch] E-matching Diagnostics
+    [thm] Theorem Instance Count
+      [thm] Data.c_ge ↦ 1
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:169:13: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  D.HasLogLower (D.x ^ (8 * η + 2⁻¹ - 1)) ?m.372
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:169:37: error: `grind` failed
+case grind.1.2.2
+P : Parameters
+η : ℝ
+h : 0 < η / 6 ∧ η < 1 / 100
+D : Data P
+H' : ↑(towerDeg D.s) / D.logB ≤ ↑(#D.thick)
+hs : ↑D.m * D.run90Remainder ≤ D.logB ^ 2 * D.budget
+l : D.logX₁ = D.x ^ (η / 6)
+e : Real.log D.logB = η * D.logX
+W :
+  ∀ c ∈ Set.Icc 0 (rexp (η * D.logX)),
+    primeError P.d P.N₀ (rexp (D.x ^ (η / 6))) - c * primeError P.d 1 (rexp (D.x ^ (η / 6))) ≤ rexp (-(1e6 * D.logX))
+h_1 :
+  D.HasLogLower (↑(#D.thick))
+    ((11 * D.logX + if Bool.false = Bool.true then Real.log D.logB / 5 else 0) + -Real.log D.logB)
+h_2 :
+  1e12 * P.c ≤ Real.log D.logB ∧
+    100 * Real.log D.logB ≤ D.logX ∧
+      1e6 * D.logX ≤ D.logX₁ ∧ 1e6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+hb : D.logB = rexp (η * D.logX)
+hc : ↑(towerDeg D.s) / ↑(#D.thick) ∈ Set.Icc 0 (rexp (η * D.logX))
+w :
+  primeError P.d P.N₀ (rexp D.logX₁) - ↑(towerDeg D.s) / ↑(#D.thick) * primeError P.d 1 (rexp D.logX₁) ≤
+    rexp (-(1e6 * D.logX))
+h_3 :
+  ¬Max.max
+          (2 * Real.log D.logB +
+                  (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                -(D.logX * 2⁻¹ + 0) +
+              -(D.logB + D.logX + 0) +
+            -(11 * D.logX + 0 + -Real.log D.logB))
+          (-(10 ^ 6 * D.logX)) +
+        1 <
+      ?m.372
+left : 64 ≤ P.c
+left_1 : ↑P.N₀ ≤ P.c
+left_2 : ↑P.d ≤ P.c
+right_2 : ↑P.N₀.totient ≤ P.c
+h_5 : ↑(#D.thick) = 0
+h_6 : ¬D.logB = 0
+h_7 :
+  ¬2 * Real.log D.logB + (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+            -(D.logX * 2⁻¹ + 0) +
+          -(D.logB + D.logX + 0) +
+        -(11 * D.logX + 0 + -Real.log D.logB) ≤
+      -(10 ^ 6 * D.logX)
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] 0 < η * 6⁻¹ ∧ η < 100⁻¹
+    [prop] 100 * 100⁻¹ = 1
+    [prop] 6 * 6⁻¹ = 1
+    [prop] ↑(towerDeg D.s) * D.logB⁻¹ ≤ ↑(#D.thick)
+    [prop] if D.logB = 0 then D.logB⁻¹ = 0 else D.logB * D.logB⁻¹ = 1
+    [prop] ↑D.m * D.run90Remainder ≤
+          D.logB ^ 2 * (↑(Fintype.card (NumberField.InfinitePlace (P.E D.s))) * ↑D.a * D.logB ^ 3)
+    [prop] D.logX₁ = rexp D.logX ^ (η * 6⁻¹)
+    [prop] Real.log D.logB = η * D.logX
+    [prop] ∀ c ∈ Set.Icc 0 (rexp (η * D.logX)),
+          primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) - c * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))) ≤
+            rexp (-(10 ^ 6 * D.logX))
+    [prop] D.HasLogBound Bool.false (↑(#D.thick)) (11 * D.logX + 0 + -Real.log D.logB)
+    [prop] 10 ^ 12 * P.c ≤ Real.log D.logB ∧
+          100 * Real.log D.logB ≤ D.logX ∧
+            10 ^ 6 * D.logX ≤ D.logX₁ ∧ 10 ^ 6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] D.logB = rexp (η * D.logX)
+    [prop] ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∈ Set.Icc 0 (rexp (η * D.logX))
+    [prop] if ↑(#D.thick) = 0 then (↑(#D.thick))⁻¹ = 0 else ↑(#D.thick) * (↑(#D.thick))⁻¹ = 1
+    [prop] primeError P.d P.N₀ (rexp D.logX₁) - ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp D.logX₁) ≤
+          rexp (-(10 ^ 6 * D.logX))
+    [prop] ¬Max.max
+                (2 * Real.log D.logB +
+                        (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                      -(D.logX * 2⁻¹ + 0) +
+                    -(D.logB + D.logX + 0) +
+                  -(11 * D.logX + 0 + -Real.log D.logB))
+                (-(10 ^ 6 * D.logX)) +
+              1 <
+            ?m.372
+    [prop] 2 * 2⁻¹ = 1
+    [prop] 5 * 5⁻¹ = 1
+    [prop] 0 ≤ ↑(#D.thick)
+    [prop] 0 ≤ ↑(#D.thick)
+    [prop] 100 * D.m ≤ D.k
+    [prop] _root_.Even D.m
+    [prop] ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∈ Set.Icc 0 (rexp (η * D.logX)) →
+          primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) -
+              ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))) ≤
+            rexp (-(10 ^ 6 * D.logX))
+    [prop] 64 ≤ P.c
+    [prop] ↑P.N₀ ≤ P.c
+    [prop] ↑P.d ≤ P.c
+    [prop] ↑P.N₀.totient ≤ P.c
+    [prop] (↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∈ Set.Icc 0 (rexp (η * D.logX))) =
+          (0 ≤ ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∧ ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ≤ rexp (η * D.logX))
+    [prop] Max.max
+            (2 * Real.log D.logB +
+                    (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                  -(D.logX * 2⁻¹ + 0) +
+                -(D.logB + D.logX + 0) +
+              -(11 * D.logX + 0 + -Real.log D.logB))
+            (-(10 ^ 6 * D.logX)) =
+          if
+              2 * Real.log D.logB +
+                        (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                      -(D.logX * 2⁻¹ + 0) +
+                    -(D.logB + D.logX + 0) +
+                  -(11 * D.logX + 0 + -Real.log D.logB) ≤
+                -(10 ^ 6 * D.logX) then
+            -(10 ^ 6 * D.logX)
+          else
+            2 * Real.log D.logB +
+                    (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                  -(D.logX * 2⁻¹ + 0) +
+                -(D.logB + D.logX + 0) +
+              -(11 * D.logX + 0 + -Real.log D.logB)
+    [prop] 0 ≤ ↑P.N₀
+    [prop] 0 ≤ ↑P.d
+    [prop] 0 ≤ ↑P.N₀.totient
+    [prop] 0 ≤ ↑P.N₀
+    [prop] 0 ≤ ↑P.d
+    [prop] 0 ≤ ↑P.N₀.totient
+    [prop] D.k ≤ D.r
+    [prop] _root_.Even D.k
+    [prop] 1 ≤ D.k
+    [prop] D.r + 1 = D.k + D.m
+    [prop] _root_.Even D.m = (D.m % 2 = 0)
+    [prop] ↑D.m % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.m % 2) ≤ 0
+    [prop] -1 * ↑D.m + 2 * (↑D.m / 2) + ↑D.m % 2 = 0
+    [prop] _root_.Even D.k = (D.k % 2 = 0)
+    [prop] ↑D.k % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.k % 2) ≤ 0
+    [prop] -1 * ↑D.k + 2 * (↑D.k / 2) + ↑D.k % 2 = 0
+    [prop] _root_.Odd D.r
+    [prop] ↑(D.m % 2) = ↑D.m
+    [prop] ↑(D.k % 2) = ↑D.k
+    [prop] (¬_root_.Odd D.r) = _root_.Even D.r
+    [prop] _root_.Odd D.r = (D.r % 2 = 1)
+    [prop] ↑D.r % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.r % 2) ≤ 0
+    [prop] -1 * ↑D.r + 2 * (↑D.r / 2) + ↑D.r % 2 = 0
+    [prop] _root_.Even D.r = (D.r % 2 = 0)
+    [prop] ↑(D.r % 2) = ↑D.r
+    [prop] ↑(#D.thick) = 0
+    [prop] 0 ≤ ↑(#D.thick)
+    [prop] 0 ≤ ↑(#D.thick)
+    [prop] ¬D.logB = 0
+    [prop] ¬2 * Real.log D.logB +
+                    (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                  -(D.logX * 2⁻¹ + 0) +
+                -(D.logB + D.logX + 0) +
+              -(11 * D.logX + 0 + -Real.log D.logB) ≤
+            -(10 ^ 6 * D.logX)
+  [eqc] True propositions
+    [prop] Fact (Nat.Prime P.d)
+    [prop] 100 * Real.log D.logB ≤ D.logX ∧
+          10 ^ 6 * D.logX ≤ D.logX₁ ∧ 10 ^ 6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] 10 ^ 6 * D.logX ≤ D.logX₁ ∧ 10 ^ 6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] 10 ^ 6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] 10 ^ 12 * P.c ≤ Real.log D.logB ∧
+          100 * Real.log D.logB ≤ D.logX ∧
+            10 ^ 6 * D.logX ≤ D.logX₁ ∧ 10 ^ 6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] 0 < η * 6⁻¹ ∧ η < 100⁻¹
+    [prop] (↑(#D.thick))⁻¹ = 0
+    [prop] ↑(#D.thick) = 0
+    [prop] D.logB * D.logB⁻¹ = 1
+    [prop] NeZero P.N₀
+    [prop] NeZero 1
+    [prop] ↑D.k % 2 + -1 ≤ 0
+    [prop] ↑D.m % 2 + -1 ≤ 0
+    [prop] ↑D.r % 2 + -1 ≤ 0
+    [prop] -1 * (↑D.k % 2) ≤ 0
+    [prop] -1 * (↑D.m % 2) ≤ 0
+    [prop] -1 * (↑D.r % 2) ≤ 0
+    [prop] 0 ≤ ↑P.N₀
+    [prop] 0 ≤ ↑P.d
+    [prop] 0 ≤ ↑(#D.thick)
+    [prop] ↑(towerDeg D.s) * D.logB⁻¹ ≤ ↑(#D.thick)
+    [prop] ↑D.m * D.run90Remainder ≤
+          D.logB ^ 2 * (↑(Fintype.card (NumberField.InfinitePlace (P.E D.s))) * ↑D.a * D.logB ^ 3)
+    [prop] 6 * Real.log D.logX₁ ≤ Real.log D.logB
+    [prop] 100 * Real.log D.logB ≤ D.logX
+    [prop] 10 ^ 6 * D.logX ≤ D.logX₁
+    [prop] 10 ^ 6 * D.logX₁ ≤ D.logB
+    [prop] 10 ^ 12 * P.c ≤ Real.log D.logB
+    [prop] primeError P.d P.N₀ (rexp D.logX₁) - ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp D.logX₁) ≤
+          rexp (-(10 ^ 6 * D.logX))
+    [prop] η < 100⁻¹
+    [prop] 0 < η * 6⁻¹
+    [prop] D.HasLogBound Bool.false (↑(#D.thick)) (11 * D.logX + 0 + -Real.log D.logB)
+    [prop] ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∈ Set.Icc 0 (rexp (η * D.logX))
+    [prop] if D.logB = 0 then D.logB⁻¹ = 0 else D.logB * D.logB⁻¹ = 1
+    [prop] if ↑(#D.thick) = 0 then (↑(#D.thick))⁻¹ = 0 else ↑(#D.thick) * (↑(#D.thick))⁻¹ = 1
+    [prop] ∀ c ∈ Set.Icc 0 (rexp (η * D.logX)),
+          primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) - c * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))) ≤
+            rexp (-(10 ^ 6 * D.logX))
+    [prop] 0 ≤ ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∧ ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ≤ rexp (η * D.logX)
+    [prop] (↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∈ Set.Icc 0 (rexp (η * D.logX))) =
+          (0 ≤ ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∧ ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ≤ rexp (η * D.logX))
+    [prop] _root_.Even D.m
+    [prop] 100 * D.m ≤ D.k
+    [prop] ↑P.N₀.totient ≤ P.c
+    [prop] ↑P.N₀ ≤ P.c
+    [prop] ↑P.d ≤ P.c
+    [prop] 0 ≤ ↑P.N₀.totient
+    [prop] 0 ≤ ↑(towerDeg D.s) * (↑(#D.thick))⁻¹
+    [prop] 64 ≤ P.c
+    [prop] ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ≤ rexp (η * D.logX)
+    [prop] primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) -
+            ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))) ≤
+          rexp (-(10 ^ 6 * D.logX))
+    [prop] ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ ∈ Set.Icc 0 (rexp (η * D.logX)) →
+          primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) -
+              ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))) ≤
+            rexp (-(10 ^ 6 * D.logX))
+    [prop] _root_.Even D.m = (D.m % 2 = 0)
+    [prop] D.m % 2 = 0
+    [prop] _root_.Even D.k
+    [prop] D.k ≤ D.r
+    [prop] 1 ≤ D.k
+    [prop] _root_.Even D.k = (D.k % 2 = 0)
+    [prop] D.k % 2 = 0
+    [prop] _root_.Odd D.r
+    [prop] (¬_root_.Odd D.r) = _root_.Even D.r
+    [prop] _root_.Odd D.r = (D.r % 2 = 1)
+    [prop] D.r % 2 = 1
+    [prop] _root_.Even D.r = (D.r % 2 = 0)
+  [eqc] False propositions
+    [prop] D.logB = 0
+    [prop] Max.max
+              (2 * Real.log D.logB +
+                      (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                    -(D.logX * 2⁻¹ + 0) +
+                  -(D.logB + D.logX + 0) +
+                -(11 * D.logX + 0 + -Real.log D.logB))
+              (-(10 ^ 6 * D.logX)) +
+            1 <
+          ?m.372
+    [prop] 2 * Real.log D.logB +
+                  (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                -(D.logX * 2⁻¹ + 0) +
+              -(D.logB + D.logX + 0) +
+            -(11 * D.logX + 0 + -Real.log D.logB) ≤
+          -(10 ^ 6 * D.logX)
+    [prop] ¬_root_.Odd D.r
+    [prop] _root_.Even D.r
+    [prop] D.r % 2 = 0
+  [eqc] Equivalence classes
+    [eqc] {rexp D.logX₁, rexp (rexp D.logX ^ (η * 6⁻¹))}
+    [eqc] {rexp (η * D.logX), D.logB}
+    [eqc] {Real.log D.logB, η * D.logX}
+    [eqc] {D.logX₁, rexp D.logX ^ (η * 6⁻¹)}
+    [eqc] {(↑(#D.thick))⁻¹, 0, ↑(towerDeg D.s) * (↑(#D.thick))⁻¹}
+      [eqc] {↑(#D.thick)}
+    [eqc] {0, D.m % 2, D.k % 2}
+    [eqc] {1, D.r % 2}
+    [eqc] {1, D.logB * D.logB⁻¹, 2 * 2⁻¹, 5 * 5⁻¹, 6 * 6⁻¹, 100 * 100⁻¹}
+    [eqc] {Max.max
+          (2 * Real.log D.logB +
+                  (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                -(D.logX * 2⁻¹ + 0) +
+              -(D.logB + D.logX + 0) +
+            -(11 * D.logX + 0 + -Real.log D.logB))
+          (-(10 ^ 6 * D.logX)),
+        2 * Real.log D.logB +
+                (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+              -(D.logX * 2⁻¹ + 0) +
+            -(D.logB + D.logX + 0) +
+          -(11 * D.logX + 0 + -Real.log D.logB)}
+      [eqc] {if
+              2 * Real.log D.logB +
+                        (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                      -(D.logX * 2⁻¹ + 0) +
+                    -(D.logB + D.logX + 0) +
+                  -(11 * D.logX + 0 + -Real.log D.logB) ≤
+                -(10 ^ 6 * D.logX) then
+            -(10 ^ 6 * D.logX)
+          else
+            2 * Real.log D.logB +
+                    (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                  -(D.logX * 2⁻¹ + 0) +
+                -(D.logB + D.logX + 0) +
+              -(11 * D.logX + 0 + -Real.log D.logB)}
+    [eqc] {primeError P.d P.N₀ (rexp D.logX₁), primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹)))}
+    [eqc] {primeError P.d 1 (rexp D.logX₁), primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹)))}
+    [eqc] {D.logB + D.logX, D.logB + D.logX + 0}
+    [eqc] {D.logX * 2⁻¹ + 0, D.logX * 2⁻¹}
+    [eqc] {-1 • ↑(#D.thick) + 0 • One.one, -1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹) + 0 • One.one}
+    [eqc] {1 • rexp (η * D.logX) + 0 • One.one, 1 • D.logB + 0 • One.one}
+    [eqc] {1 • ↑(#D.thick) + 0 • One.one, 1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹) + 0 • One.one}
+    [eqc] {↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp D.logX₁),
+        ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹)))}
+    [eqc] {-1 • Real.log D.logB, -1 • (η * D.logX)}
+    [eqc] {-1 • D.logB, -1 • rexp (η * D.logX)}
+    [eqc] {-1 • ↑(#D.thick), -1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹)}
+    [eqc] {-1 • primeError P.d P.N₀ (rexp D.logX₁), -1 • primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹)))}
+    [eqc] {-1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp D.logX₁)),
+        -1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))))}
+    [eqc] {1 • rexp (η * D.logX), 1 • D.logB}
+    [eqc] {1 • Real.log D.logB, 1 • (η * D.logX)}
+    [eqc] {1 • ↑(#D.thick), 1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹)}
+    [eqc] {1 • primeError P.d P.N₀ (rexp D.logX₁), 1 • primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹)))}
+    [eqc] {primeError P.d P.N₀ (rexp D.logX₁) - ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp D.logX₁),
+        primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) -
+          ↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹)))}
+    [eqc] {1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp D.logX₁)),
+        1 • (↑(towerDeg D.s) * (↑(#D.thick))⁻¹ * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))))}
+    [eqc] {D.k + D.m, D.r + 1}
+    [eqc] others
+      [eqc] {↑0,
+          0,
+          -1 * ↑D.k + 2 * (↑D.k / 2) + ↑D.k % 2,
+          -1 * ↑D.m + 2 * (↑D.m / 2) + ↑D.m % 2,
+          -1 * ↑D.r + 2 * (↑D.r / 2) + ↑D.r % 2,
+          ↑(D.m % 2),
+          ↑(D.k % 2)}
+      [eqc] {↑1, ↑(D.r % 2)}
+      [eqc] {↑(D.k + D.m), ↑(D.r + 1)}
+      [eqc] {↑D.m, ↑(D.m % 2), ↑D.k, ↑(D.k % 2)}
+      [eqc] {↑D.r, ↑(D.r % 2)}
+  [cases] Case analyses
+    [cases] [1/2]: if ↑(#D.thick) = 0 then (↑(#D.thick))⁻¹ = 0 else ↑(#D.thick) * (↑(#D.thick))⁻¹ = 1
+      [cases] source: Initial goal
+    [cases] [2/2]: if D.logB = 0 then D.logB⁻¹ = 0 else D.logB * D.logB⁻¹ = 1
+      [cases] source: Initial goal
+    [cases] [2/2]: if
+            2 * Real.log D.logB +
+                      (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                    -(D.logX * 2⁻¹ + 0) +
+                  -(D.logB + D.logX + 0) +
+                -(11 * D.logX + 0 + -Real.log D.logB) ≤
+              -(10 ^ 6 * D.logX) then
+          -(10 ^ 6 * D.logX)
+        else
+          2 * Real.log D.logB +
+                  (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                -(D.logX * 2⁻¹ + 0) +
+              -(D.logB + D.logX + 0) +
+            -(11 * D.logX + 0 + -Real.log D.logB)
+      [cases] source: E-matching `max_def`
+  [ematch] E-matching patterns
+    [thm] Set.ssubset_def: [@LT.lt _ _ #1 #0]
+    [thm] Set.subset_def: [@LE.le _ _ #1 #0]
+    [thm] Finset.card_pos: [@LE.le `[ℕ] `[instLENat] `[1] (@Finset.card #1 #0)]
+    [thm] Data.hundred_mul_m_le_k: [@Data.m #1 #0]
+    [thm] Data.m_even: [@Data.m #1 #0]
+    [thm] Nat.pow_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] Nat.div_pow_of_pos: [@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #2 #1]
+    [thm] W: [@Membership.mem `[ℝ] `[Set ℝ] `[Set.instMembership] `[Set.Icc 0 (rexp (η * D.logX))] #1]
+    [thm] W: [@LE.le `[ℝ] `[Real.instLE] (@HSub.hSub `[ℝ] `[ℝ] `[ℝ] `[instHSub] `[primeError P.d P.N₀
+            (rexp
+              (rexp D.logX ^
+                (η *
+                  6⁻¹)))] (@HMul.hMul `[ℝ] `[ℝ] `[ℝ] `[instHMul] #1 `[primeError P.d 1
+             (rexp (rexp D.logX ^ (η * 6⁻¹)))])) `[rexp (-(10 ^ 6 * D.logX))]]
+    [thm] Data.c_ge: [Parameters.c #0]
+    [thm] Inclusion.IntervalDyadicReal.mem_iff_mem_map: [@Membership.mem `[ℝ] `[Inclusion.Interval
+           Dyadic] `[Inclusion.instMembershipOfToSet] #0 #1]
+    [thm] Multiset.mem_add: [@Membership.mem #3 _ _ (@HAdd.hAdd _ _ _ _ #1 #0) #2]
+    [thm] Multiset.notMem_zero: [@Membership.mem #1 _ _ (@OfNat.ofNat _ `[0] _) #0]
+    [thm] Set.mem_Icc: [@Membership.mem #4 _ _ (@Set.Icc _ #3 #2 #1) #0]
+    [thm] max_def: [@Max.max #3 _ #1 #0]
+    [thm] Rat.max_def: [@Max.max `[ℚ] `[Rat.instMax] #1 #0]
+    [thm] Int.max_def: [@Max.max `[ℤ] `[Int.instMax] #1 #0]
+    [thm] Nat.max_def: [@Max.max `[ℕ] `[Nat.instMax] #1 #0]
+    [thm] Data.k_le_r: [@Data.k #1 #0]
+    [thm] Data.k_even: [@Data.k #1 #0]
+    [thm] Data.k_pos: [@Data.k #1 #0]
+    [thm] Data.r_add: [@Data.k #1 #0]
+    [thm] Int.even_coe_nat: [@_root_.Even `[ℤ] `[Int.instAdd] (@NatCast.natCast `[ℤ] `[instNatCastInt] #0)]
+    [thm] Int.even_pow: [@_root_.Even `[ℤ] `[Int.instAdd] (@HPow.hPow `[ℤ] `[ℕ] `[ℤ] `[instHPow] #1 #0)]
+    [thm] Int.even_mul: [@_root_.Even `[ℤ] `[Int.instAdd] (@HMul.hMul `[ℤ] `[ℤ] `[ℤ] `[instHMul] #1 #0)]
+    [thm] Int.even_iff: [@_root_.Even `[ℤ] `[Int.instAdd] #0]
+    [thm] Nat.even_pow: [@_root_.Even `[ℕ] `[instAddNat] (@HPow.hPow `[ℕ] `[ℕ] `[ℕ] `[instHPow] #1 #0)]
+    [thm] Nat.even_mul: [@_root_.Even `[ℕ] `[instAddNat] (@HMul.hMul `[ℕ] `[ℕ] `[ℕ] `[instHMul] #1 #0)]
+    [thm] Nat.even_add: [@_root_.Even `[ℕ] `[instAddNat] (@HAdd.hAdd `[ℕ] `[ℕ] `[ℕ] `[instHAdd] #1 #0)]
+    [thm] Nat.even_iff: [@_root_.Even `[ℕ] `[instAddNat] #0]
+    [thm] Even.zero: [@_root_.Even #1 _ (@OfNat.ofNat _ `[0] _)]
+    [thm] Data.r_odd: [@Data.r #1 #0]
+    [thm] ZMod.natCast_mod: [@NatCast.natCast _ _ (@HMod.hMod `[ℕ] `[ℕ] `[ℕ] `[instHMod] #1 #0)]
+    [thm] Int.not_odd_iff_even: [@_root_.Odd `[ℤ] `[Int.instSemiring] #0]
+    [thm] Int.odd_iff: [@_root_.Odd `[ℤ] `[Int.instSemiring] #0]
+    [thm] Nat.not_odd_iff_even: [@_root_.Odd `[ℕ] `[Nat.instSemiring] #0]
+    [thm] Nat.odd_iff: [@_root_.Odd `[ℕ] `[Nat.instSemiring] #0]
+  [cutsat] Assignment satisfying linear constraints
+    [assign] P.N₀ := 18
+    [assign] P.d := 17
+    [assign] towerDeg D.s := 7
+    [assign] D.a := 16
+    [assign] D.m := 2
+    [assign] D.s := 13
+    [assign] #D.thick := 14
+    [assign] Fintype.card (NumberField.InfinitePlace (P.E D.s)) := 15
+    [assign] P.N₀.totient := 20
+    [assign] D.k := 200
+    [assign] D.r := 201
+  [linarith] Linarith assignment for `ℝ`
+    [assign] η := 1/200
+    [assign] ?m.372 := -2803199999999979
+    [assign] P.c := 64
+    [assign] rexp D.logX := 37
+    [assign] rexp D.logX₁ := 38
+    [assign] rexp (-(10 ^ 6 * D.logX)) := 1
+    [assign] rexp (η * D.logX) := 6400000000000100000000000001
+    [assign] rexp (rexp D.logX ^ (η * 6⁻¹)) := 38
+    [assign] Real.log D.logB := 64000000000001
+    [assign] Real.log D.logX₁ := 10666666666665
+    [assign] D.logB := 6400000000000100000000000001
+    [assign] D.logX := 6400000000000100
+    [assign] D.logX₁ := 36
+    [assign] D.run90Remainder := 22
+    [assign] Max.max
+          (2 * Real.log D.logB +
+                  (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                -(D.logX * 2⁻¹ + 0) +
+              -(D.logB + D.logX + 0) +
+            -(11 * D.logX + 0 + -Real.log D.logB))
+          (-(10 ^ 6 * D.logX)) := 134
+    [assign] primeError P.d P.N₀ (rexp D.logX₁) := 0
+    [assign] primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) := 0
+    [assign] primeError P.d 1 (rexp D.logX₁) := 39
+    [assign] primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))) := 39
+    [assign] 「D.logB ^ 2」 := 24
+    [assign] 「D.logB ^ 3」 := 29
+    [assign] 「D.logB ^ 5」 := 33
+    [assign] 「10 ^ 6」 := 40
+    [assign] 「10 ^ 12」 := 51
+    [assign] 「rexp D.logX ^ (η * 6⁻¹)」 := 36
+  [ring] Rings
+    [ring] Ring `Lean.Grind.Ring.OfSemiring.Q ℕ`
+      [basis] Basis
+        [_] ↑D.r + -1 * ↑D.k + -1 * ↑D.m + 1 = 0
+    [ring] Ring `ℤ`
+      [basis] Basis
+        [_] ↑D.m + -1 * (↑D.m % 2) + -2 * (↑D.m / 2) = 0
+        [_] ↑D.k + -1 * (↑D.k % 2) + -2 * (↑D.k / 2) = 0
+        [_] ↑D.r + -1 * (↑D.r % 2) + -2 * (↑D.r / 2) = 0
+    [ring] Ring `ℝ`
+      [basis] Basis
+        [_] 62 * (η * Real.log D.logB) + 10 * (η * P.c) +
+                    -10 *
+                      (η *
+                        Max.max
+                          (2 * Real.log D.logB +
+                                  (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) +
+                                    3 * Real.log D.logB) +
+                                -(D.logX * 2⁻¹ + 0) +
+                              -(D.logB + D.logX + 0) +
+                            -(11 * D.logX + 0 + -Real.log D.logB))
+                          (-(10 ^ 6 * D.logX))) +
+                  10 * η +
+                -5 * Real.log D.logB =
+              0
+        [_] D.logB⁻¹ * rexp (η * D.logX) + -1 = 0
+        [_] 6 * 6⁻¹ + -1 = 0
+        [_] 100 * 100⁻¹ + -1 = 0
+        [_] ↑(#D.thick) = 0
+        [_] D.logB + -1 * rexp (η * D.logX) = 0
+        [_] 5 * D.logX + -62 * Real.log D.logB + -10 * P.c +
+                  10 *
+                    Max.max
+                      (2 * Real.log D.logB +
+                              (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) +
+                                3 * Real.log D.logB) +
+                            -(D.logX * 2⁻¹ + 0) +
+                          -(D.logB + D.logX + 0) +
+                        -(11 * D.logX + 0 + -Real.log D.logB))
+                      (-(10 ^ 6 * D.logX)) +
+                -10 =
+              0
+        [_] (↑(#D.thick))⁻¹ = 0
+        [_] primeError P.d P.N₀ (rexp D.logX₁) + -1 * primeError P.d P.N₀ (rexp (rexp D.logX ^ (η * 6⁻¹))) = 0
+        [_] primeError P.d 1 (rexp D.logX₁) + -1 * primeError P.d 1 (rexp (rexp D.logX ^ (η * 6⁻¹))) = 0
+        [_] 2 * 2⁻¹ + -1 = 0
+        [_] 5 * 5⁻¹ + -1 = 0
+  [assoc] Operator `Max.max`
+    [basis] Basis
+      [_] Max.max
+              (2 * Real.log D.logB +
+                      (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                    -(D.logX * 2⁻¹ + 0) +
+                  -(D.logB + D.logX + 0) +
+                -(11 * D.logX + 0 + -Real.log D.logB))
+              (-(10 ^ 6 * D.logX)) =
+            2 * Real.log D.logB +
+                    (11 * D.logX + (Real.log D.logB * 5⁻¹ + P.c) + (D.logB + D.logX + 1) + 3 * Real.log D.logB) +
+                  -(D.logX * 2⁻¹ + 0) +
+                -(D.logB + D.logX + 0) +
+              -(11 * D.logX + 0 + -Real.log D.logB)
+    [properties] Properties
+      [_] commutative
+      [_] idempotent
+[grind] Diagnostics
+  [ematch] E-matching Diagnostics
+    [thm] Theorem Instance Count
+      [thm] Nat.even_iff ↦ 3
+      [thm] ZMod.natCast_mod ↦ 3
+      [thm] W ↦ 1
+      [thm] max_def ↦ 1
+      [thm] Data.c_ge ↦ 1
+      [thm] Data.hundred_mul_m_le_k ↦ 1
+      [thm] Data.k_even ↦ 1
+      [thm] Data.k_le_r ↦ 1
+      [thm] Data.k_pos ↦ 1
+      [thm] Data.m_even ↦ 1
+      [thm] Data.r_add ↦ 1
+      [thm] Data.r_odd ↦ 1
+      [thm] Nat.not_odd_iff_even ↦ 1
+      [thm] Nat.odd_iff ↦ 1
+      [thm] Set.mem_Icc ↦ 1
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:153:53: error: unsolved goals
+P : Parameters
+η : ℝ
+h : 0 < η / 6 ∧ η < 1 / 100
+D : Data P
+H' : ↑(towerDeg D.s) / D.logB ≤ ↑(#D.thick)
+hs : ↑D.m * D.run90Remainder ≤ D.logB ^ 2 * D.budget
+l : D.logX₁ = D.x ^ (η / 6)
+e : Real.log D.logB = η * D.logX
+W :
+  ∀ c ∈ Set.Icc 0 (rexp (η * D.logX)),
+    primeError P.d P.N₀ (rexp (D.x ^ (η / 6))) - c * primeError P.d 1 (rexp (D.x ^ (η / 6))) ≤ rexp (-(1e6 * D.logX))
+x✝¹ :
+  D.HasLogLower (↑(#D.thick))
+    ((11 * D.logX + if Bool.false = Bool.true then Real.log D.logB / 5 else 0) + -Real.log D.logB)
+x✝ :
+  1e12 * P.c ≤ Real.log D.logB ∧
+    100 * Real.log D.logB ≤ D.logX ∧
+      1e6 * D.logX ≤ D.logX₁ ∧ 1e6 * D.logX₁ ≤ D.logB ∧ 6 * Real.log D.logX₁ ≤ Real.log D.logB
+hb : D.logB = rexp (η * D.logX)
+hc : ↑(towerDeg D.s) / ↑(#D.thick) ∈ Set.Icc 0 (rexp (η * D.logX))
+w :
+  primeError P.d P.N₀ (rexp D.logX₁) - ↑(towerDeg D.s) / ↑(#D.thick) * primeError P.d 1 (rexp D.logX₁) ≤
+    rexp (-(1e6 * D.logX))
+⊢ D.HasLogLower (D.x ^ (8 * η + 2⁻¹ - 1)) sorry
+'Data.run90Remainder_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow90.pointwise_good_data' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow90.endpoint_from_good_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/modules/Run90Adapter.lean:209:0: error: RUN90 unexpected axiom RHPrimeWindow90.pointwise_good_data: [propext, sorryAx, Classical.choice, Quot.sound]

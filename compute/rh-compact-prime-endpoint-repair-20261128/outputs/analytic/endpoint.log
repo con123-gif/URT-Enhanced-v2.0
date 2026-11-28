@@ -1,0 +1,450 @@
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:197:24: error: mod_cast has type
+  (1 : ℕ) ≤ k
+but is expected to have type
+  (1 : ℝ) ≤ q
+'RHPrimeWindow87.quartic_cover' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:378:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:379:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:386:4: error: `grind` failed
+case grind.1.1.1.1.1
+hg : RHPrimeWindow88.PrincipalGrid
+ρ : ℂ
+hρ : 1 / 2 < ρ.re
+hpole : ρ ≠ 1
+z : DirichletCharacter.LFunction 1 ρ = 0
+q : ℕ := 1
+this_1 : NeZero q :=
+  {
+    out :=
+      Mathlib.Meta.NormNum.isNat_eq_false (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 1))
+        (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 0)) (Eq.refl Bool.false) }
+this : NeZero (18480 * q) :=
+  {
+    out :=
+      Mathlib.Meta.NormNum.isNat_eq_false
+        (Mathlib.Meta.NormNum.isNat_mul (Eq.refl HMul.hMul) (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 18480))
+          (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 1)) (Eq.refl 18480))
+        (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 0)) (Eq.refl Bool.false) }
+χ : DirichletCharacter ℂ q := 1
+zero : DirichletCharacter.LFunction χ ρ = 0
+pole : χ ≠ 1 ∨ ρ ≠ 1
+ε : ℝ := (Min.min ρ.re 1 - 2⁻¹) / 51
+h :
+  ¬(if (DirichletCharacter.changeLevel ⋯) 1 = 1 then
+          Function.update (fun s => (s - 1) * DirichletCharacter.LFunction 1 s) 1
+            (∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹))
+        else DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1))
+        ρ =
+      0
+h_1 : (DirichletCharacter.changeLevel ⋯) 1 = 1
+h_2 : (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - (↑x)⁻¹
+h_3 : (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+h_4 : (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+h_5 : q = 18480 * q
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] RHPrimeWindow88.PrincipalGrid
+    [prop] 2⁻¹ < ρ.re
+    [prop] 2 * 2⁻¹ = 1
+    [prop] ¬ρ = 1
+    [prop] DirichletCharacter.LFunction 1 ρ = 0
+    [prop] NeZero 1
+    [prop] NeZero 18480
+    [prop] DirichletCharacter.LFunction 1 ρ = 0
+    [prop] ¬ρ = 1
+    [prop] ¬(if (DirichletCharacter.changeLevel ⋯) 1 = 1 then
+                Function.update (fun s => (s - 1) * DirichletCharacter.LFunction 1 s) 1
+                  (∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹))
+              else DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1))
+              ρ =
+            0
+    [prop] (DirichletCharacter.changeLevel ⋯) 1 = 1
+    [prop] (DirichletCharacter.changeLevel ⋯) 1 = 1
+    [prop] (DirichletCharacter.changeLevel ⋯) 1 = 1
+    [prop] (DirichletCharacter.changeLevel ⋯) 1 = 1
+    [prop] (DirichletCharacter.changeLevel ⋯) 1 = 1
+    [prop] (DirichletCharacter.changeLevel ⋯) 1 = 1
+    [prop] Function.update (fun s => (s - 1) * DirichletCharacter.LFunction 1 s) 1
+            (∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹)) ρ =
+          if h : ρ = 1 then ⋯ ▸ ∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹)
+          else (ρ - 1) * DirichletCharacter.LFunction 1 ρ
+    [prop] ¬ρ = 1 →
+          DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+            DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] ¬ρ = 1 →
+          DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+            DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] ¬ρ = 1 →
+          DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+            DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - (↑x)⁻¹
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+    [prop] q = 18480 * q
+  [eqc] True propositions
+    [prop] RHPrimeWindow88.PrincipalGrid
+    [prop] q = 18480 * q
+    [prop] (DirichletCharacter.changeLevel ⋯) 1 = 1
+    [prop] NeZero q
+    [prop] NeZero 1
+    [prop] NeZero 18480
+    [prop] NeZero (18480 * q)
+    [prop] 1 ∣ 18480
+    [prop] 2⁻¹ < ρ.re
+    [prop] ¬ρ = 1
+    [prop] DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+          DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+          DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - (↑x)⁻¹
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - (↑x)⁻¹
+    [prop] ¬ρ = 1 →
+          DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+            DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] ¬ρ = 1 →
+          DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+            DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+          DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - (↑x)⁻¹
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+    [prop] (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+    [prop] ¬ρ = 1 →
+          DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ =
+            DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))
+  [eqc] False propositions
+    [prop] ρ = 1
+    [prop] (if (DirichletCharacter.changeLevel ⋯) 1 = 1 then
+              Function.update (fun s => (s - 1) * DirichletCharacter.LFunction 1 s) 1
+                (∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹))
+            else DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1))
+            ρ =
+          0
+  [eqc] Equivalence classes
+    [eqc] {q, 18480 * q}
+    [eqc] {ZMod q, ZMod (18480 * q)}
+    [eqc] {ZMod.commRing q, ZMod.commRing (18480 * q)}
+    [eqc] {MulChar.commGroup.toGroup, MulChar.commGroup.toGroup}
+    [eqc] {(ZMod.commRing q).toCommMonoid, (ZMod.commRing (18480 * q)).toCommMonoid}
+    [eqc] {MulChar.commGroup.toMonoid, MulChar.commGroup.toMonoid}
+    [eqc] {MulChar.commGroup.toDivInvMonoid, MulChar.commGroup.toDivInvMonoid}
+    [eqc] {MulChar.commGroup.toMulOneClass, MulChar.commGroup.toMulOneClass}
+    [eqc] {MulChar.commGroup.toMulOneClass.toMulOne, MulChar.commGroup.toMulOneClass.toMulOne}
+    [eqc] {One.toOfNat1, One.toOfNat1}
+    [eqc] {0,
+        DirichletCharacter.LFunction 1 ρ,
+        DirichletCharacter.LFunction 1 ρ,
+        DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ,
+        DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ,
+        DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)),
+        DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)),
+        DirichletCharacter.LFunction 1 ρ,
+        DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1) ρ,
+        DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))}
+    [eqc] {1,
+        (ρ - 1) * (ρ - 1)⁻¹,
+        (ρ - 1) * DirichletCharacter.LFunction 1 ρ * ((ρ - 1) * DirichletCharacter.LFunction 1 ρ)⁻¹}
+    [eqc] {1, 2 * 2⁻¹}
+    [eqc] {1, 1, (DirichletCharacter.changeLevel ⋯) 1, (DirichletCharacter.changeLevel ⋯) 1}
+    [eqc] {MulChar (ZMod q) ℂ, MulChar (ZMod (18480 * q)) ℂ}
+    [eqc] {MulChar.commGroup, MulChar.commGroup}
+    [eqc] {MulChar.hasOne, MulChar.hasOne}
+    [eqc] {∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹),
+        ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)),
+        ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)),
+        ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ))}
+    [eqc] {Function.update (fun s => (s - 1) * DirichletCharacter.LFunction 1 s) 1
+          (∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹)) ρ,
+        (ρ - 1) * DirichletCharacter.LFunction 1 ρ}
+      [eqc] {(if (DirichletCharacter.changeLevel ⋯) 1 = 1 then
+              Function.update (fun s => (s - 1) * DirichletCharacter.LFunction 1 s) 1
+                (∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹))
+            else DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1))
+            ρ,
+          if h : ρ = 1 then ⋯ ▸ ∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹)
+          else (ρ - 1) * DirichletCharacter.LFunction 1 ρ}
+    [eqc] {fun x => 1 - (↑x)⁻¹,
+        fun x => 1 - 1 ↑x * ↑x ^ (-ρ),
+        fun x => 1 - 1 ↑x * ↑x ^ (-ρ),
+        fun x => 1 - 1 ↑x * ↑x ^ (-ρ)}
+    [eqc] {1,
+        (DirichletCharacter.changeLevel ⋯) 1,
+        (DirichletCharacter.changeLevel ⋯) 1,
+        (DirichletCharacter.changeLevel ⋯) 1}
+    [eqc] {Eq fun x => 1 - 1 ↑x * ↑x ^ (-ρ), Eq fun x => 1 - 1 ↑x * ↑x ^ (-ρ), Eq fun x => 1 - 1 ↑x * ↑x ^ (-ρ)}
+    [eqc] others
+      [eqc] {↑q, ↑(18480 * q)}
+  [cases] Case analyses
+    [cases] [1/2]: (if (DirichletCharacter.changeLevel ⋯) 1 = 1 then
+            Function.update (fun s => (s - 1) * DirichletCharacter.LFunction 1 s) 1
+              (∏ x ∈ Nat.primeFactors 18480, (1 - (↑x)⁻¹))
+          else DirichletCharacter.LFunction ((DirichletCharacter.changeLevel ⋯) 1))
+          ρ
+      [cases] source: Initial goal
+    [cases] [1/2]: (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - (↑x)⁻¹
+      [cases] source: E-matching `DirichletCharacter.LFunction_changeLevel`
+    [cases] [1/2]: (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+      [cases] source: E-matching `DirichletCharacter.LFunction_changeLevel`
+    [cases] [1/2]: (fun x => 1 - 1 ↑x * ↑x ^ (-ρ)) = fun x => 1 - 1 ↑x * ↑x ^ (-ρ)
+      [cases] source: E-matching `DirichletCharacter.LFunction_changeLevel`
+    [cases] [1/2]: q = 18480 * q
+      [cases] source: Model-based theory combination at argument #2 of
+            NeZero (18480 * q)
+          and
+            NeZero q
+  [ematch] E-matching patterns
+    [thm] Set.ssubset_def: [@LT.lt _ _ #1 #0]
+    [thm] Complex.re_eq_re_of_cexp_eq_cexp: [Complex.re #2, Complex.re #1]
+    [thm] DirichletCharacter.LFunction_changeLevel: [@DirichletCharacter.LFunction #6 #4 (@DFunLike.coe (MonoidHom (MulChar _ _ `[ℂ] `[Field.toSemifield.toCommGroupWithZero.toCommMonoidWithZero]) (MulChar _ _ `[ℂ] `[Field.toSemifield.toCommGroupWithZero.toCommMonoidWithZero]) _ _) (MulChar _ _ `[ℂ] `[Field.toSemifield.toCommGroupWithZero.toCommMonoidWithZero]) _ _ (@DirichletCharacter.changeLevel `[ℂ] `[Field.toSemifield.toCommGroupWithZero.toCommMonoidWithZero] #7 #6 #3) #2) #1]
+    [thm] DirichletCharacter.changeLevel_eq_one_iff: [@DFunLike.coe (MonoidHom (MulChar _ _ #6 #5) (MulChar _ _ _ _) _ _) (MulChar _ _ _ _) _ _ (@DirichletCharacter.changeLevel _ _ #4 #3 #0) #1]
+    [thm] natCast_apply_eq_smul: [@DFunLike.coe #7 #6 _ #5 (@NatCast.natCast _ #4 #1) #0]
+    [thm] natCast_apply_eq_const: [@DFunLike.coe #8 #7 _ #5 (@NatCast.natCast _ #4 #1) #0]
+    [thm] _root_.smul_apply: [@DFunLike.coe #9 #8 _ #6 (@HSMul.hSMul #10 _ _ _ #1 #2) #0]
+    [thm] inv_apply: [@DFunLike.coe #8 #7 _ #5 (@Inv.inv _ #3 #1) #0]
+    [thm] mul_apply_eq_comp: [@DFunLike.coe #7 #6 _ #5 (@HMul.hMul _ _ _ _ #2 #1) #0]
+    [thm] _root_.add_apply: [@DFunLike.coe #9 #8 _ #6 (@HAdd.hAdd _ _ _ _ #2 #1) #0]
+    [thm] _root_.mul_apply: [@DFunLike.coe #9 #8 _ #6 (@HMul.hMul _ _ _ _ #2 #1) #0]
+    [thm] one_apply_eq_self: [@DFunLike.coe #5 #4 _ #3 (@OfNat.ofNat _ `[1] _) #0]
+    [thm] _root_.zero_apply: [@DFunLike.coe #7 #6 _ #4 (@OfNat.ofNat _ `[0] _) #0]
+    [thm] _root_.one_apply: [@DFunLike.coe #7 #6 _ #4 (@OfNat.ofNat _ `[1] _) #0]
+    [thm] map_zsmul: [@DFunLike.coe #7 #9 _ #6 #2 (@HSMul.hSMul `[ℤ] _ _ _ #1 #0)]
+    [thm] map_nsmul: [@DFunLike.coe #7 #9 _ #6 #2 (@HSMul.hSMul `[ℕ] _ _ _ #1 #0)]
+    [thm] map_inv: [@DFunLike.coe #6 #8 _ #5 #1 (@Inv.inv _ _ #0)]
+    [thm] map_add: [@DFunLike.coe #7 #9 _ #4 #2 (@HAdd.hAdd _ _ _ _ #1 #0)]
+    [thm] map_mul: [@DFunLike.coe #7 #9 _ #4 #2 (@HMul.hMul _ _ _ _ #1 #0)]
+    [thm] _root_.map_zero: [@DFunLike.coe #5 #7 _ #2 #0 (@OfNat.ofNat _ `[0] _)]
+    [thm] map_one: [@DFunLike.coe #5 #7 _ #2 #0 (@OfNat.ofNat _ `[1] _)]
+    [thm] Nat.dvd_mul_right_of_dvd: [@Dvd.dvd `[ℕ] `[Nat.instDvd] #3 #2, @HMul.hMul `[ℕ] `[ℕ] `[ℕ] `[instHMul] #2 #0]
+    [thm] Nat.dvd_mul_left_of_dvd: [@Dvd.dvd `[ℕ] `[Nat.instDvd] #3 #2, @HMul.hMul `[ℕ] `[ℕ] `[ℕ] `[instHMul] #0 #2]
+    [thm] Function.update.eq_1: [@Function.update #6 #5 #4 #3 #2 #1 #0]
+    [thm] _root_.prod_apply: [@DFunLike.coe #11 #10 _ #7 (@Finset.prod #8 _ #5 #2 #1) #0]
+    [thm] map_sub: [@DFunLike.coe #7 #9 _ #6 #2 (@HSub.hSub _ _ _ _ #1 #0)]
+    [thm] sub_apply: [@DFunLike.coe #9 #8 _ #6 (@HSub.hSub _ _ _ _ #2 #1) #0]
+  [cutsat] Assignment satisfying linear constraints
+    [assign] q := 0
+  [linarith] Linarith assignment for `ℝ`
+    [assign] ε := 8
+    [assign] ρ.re := 2
+  [ring] Rings
+    [ring] Ring `Lean.Grind.Ring.OfSemiring.Q ℕ`
+      [basis] Basis
+        [_] ↑q = 0
+    [ring] Ring `ℝ`
+      [basis] Basis
+        [_] 2 * 2⁻¹ + -1 = 0
+    [ring] Ring `ℂ`
+      [basis] Basis
+        [_] ρ * (ρ - 1)⁻¹ + -1 * (ρ - 1)⁻¹ + -1 = 0
+        [_] DirichletCharacter.LFunction 1 ρ * ((ρ - 1) * DirichletCharacter.LFunction 1 ρ)⁻¹ + -1 * (ρ - 1)⁻¹ = 0
+        [_] DirichletCharacter.LFunction 1 ρ * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)) = 0
+        [_] ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)) +
+                -1 * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)) =
+              0
+        [_] DirichletCharacter.LFunction 1 ρ = 0
+        [_] ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)) +
+                -1 * ∏ x ∈ Nat.primeFactors 18480, (1 - 1 ↑x * ↑x ^ (-ρ)) =
+              0
+        [_] DirichletCharacter.LFunction 1 ρ = 0
+[grind] Diagnostics
+  [ematch] E-matching Diagnostics
+    [thm] Theorem Instance Count
+      [thm] DirichletCharacter.LFunction_changeLevel ↦ 3
+      [thm] DirichletCharacter.changeLevel_eq_one_iff ↦ 3
+      [thm] map_one ↦ 2
+      [thm] Complex.re_eq_re_of_cexp_eq_cexp ↦ 1
+      [thm] Nat.dvd_mul_right_of_dvd ↦ 1
+      [thm] Function.update.eq_1 ↦ 1
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:404:2: error: `grind` failed
+case grind.2.1
+hg : RHPrimeWindow88.PrincipalGrid
+s : ℂ
+h : ∀ (ρ : ℂ), 2⁻¹ < ρ.re → ¬ρ = 1 → ¬riemannZeta ρ = 0
+h_1 : ∀ {p : ℕ → Prop}, (p 0 ∨ ∃ n, p (n + 1)) ↔ Exists p
+h_2 : riemannZeta 0 = -1 / 2
+h_3 : riemannZeta s = 0
+h_4 : ∀ (x : ℕ), ¬s = -(2 * (↑x + 1))
+h_5 : ¬s = 1
+h_6 : ¬s.re = 2⁻¹
+h_7 : ¬s.Gammaℝ = 0
+h_8 : 2⁻¹ < Complex.re 0
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] RHPrimeWindow88.PrincipalGrid
+    [prop] ∀ (ρ : ℂ), 2⁻¹ < ρ.re → ¬ρ = 1 → ¬riemannZeta ρ = 0
+    [prop] 2 * 2⁻¹ = 1
+    [prop] ∀ {p : ℕ → Prop}, (p 0 ∨ ∃ n, p (n + 1)) = Exists p
+    [prop] riemannZeta 0 = -1 * 2⁻¹
+    [prop] 2 * 2⁻¹ = 1
+    [prop] riemannZeta s = 0
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1))
+    [prop] ¬s = 1
+    [prop] ¬s.re = 2⁻¹
+    [prop] 2⁻¹ < s.re → ¬s = 1 → ¬riemannZeta s = 0
+    [prop] 2⁻¹ < Complex.re 0 → ¬0 = 1 → ¬riemannZeta 0 = 0
+    [prop] ¬s = 0 → riemannZeta s = completedRiemannZeta s * s.Gammaℝ⁻¹
+    [prop] if s.Gammaℝ = 0 then s.Gammaℝ⁻¹ = 0 else s.Gammaℝ * s.Gammaℝ⁻¹ = 1
+    [prop] (s.Gammaℝ = 0) = ∃ n, s = -(2 * ↑n)
+    [prop] cexp 0 = cexp s → Complex.re 0 = s.re
+    [prop] cexp s = cexp 0 → s.re = Complex.re 0
+    [prop] (s = -0 ∨ ∃ n, s = -(2 * (↑n + 1))) = ∃ n, s = -(2 * ↑n)
+    [prop] (s = -(2 * (0 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1))) = ∃ n, s = -(2 * (↑n + 1))
+    [prop] (s = -(2 * (0 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1))) = ∃ n, s = -(2 * (↑n + 1 + 1))
+    [prop] ¬s.Gammaℝ = 0
+    [prop] ∀ (x : ℕ), ¬s = -(2 * ↑x)
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1))
+    [prop] (s = -(2 * (0 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1))) = ∃ n, s = -(2 * (↑n + 1 + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1 + 1))
+    [prop] (s = -(2 * (0 + 1 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1))) =
+          ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1 + 1 + 1))
+    [prop] (s = -(2 * (0 + 1 + 1 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1 + 1))) =
+          ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1 + 1 + 1 + 1))
+    [prop] 2⁻¹ < Complex.re 0
+  [eqc] True propositions
+    [prop] RHPrimeWindow88.PrincipalGrid
+    [prop] s.Gammaℝ * s.Gammaℝ⁻¹ = 1
+    [prop] if s.Gammaℝ = 0 then s.Gammaℝ⁻¹ = 0 else s.Gammaℝ * s.Gammaℝ⁻¹ = 1
+    [prop] ∀ (ρ : ℂ), 2⁻¹ < ρ.re → ¬ρ = 1 → ¬riemannZeta ρ = 0
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1))
+    [prop] ∀ {p : ℕ → Prop}, (p 0 ∨ ∃ n, p (n + 1)) = Exists p
+    [prop] ¬s = 0
+    [prop] ¬s = 1
+    [prop] riemannZeta s = 0
+    [prop] riemannZeta s = completedRiemannZeta s * s.Gammaℝ⁻¹
+    [prop] 2⁻¹ < Complex.re 0
+    [prop] ¬s = 0 → riemannZeta s = completedRiemannZeta s * s.Gammaℝ⁻¹
+    [prop] ¬0 = 1 → ¬riemannZeta 0 = 0
+    [prop] 2⁻¹ < s.re → ¬s = 1 → ¬riemannZeta s = 0
+    [prop] 2⁻¹ < Complex.re 0 → ¬0 = 1 → ¬riemannZeta 0 = 0
+    [prop] (s.Gammaℝ = 0) = ∃ n, s = -(2 * ↑n)
+    [prop] ∀ (x : ℕ), ¬s = -(2 * ↑x)
+    [prop] cexp s = cexp 0 → s.re = Complex.re 0
+    [prop] cexp 0 = cexp s → Complex.re 0 = s.re
+    [prop] (s = -0 ∨ ∃ n, s = -(2 * (↑n + 1))) = ∃ n, s = -(2 * ↑n)
+    [prop] (s = -(2 * (0 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1))) = ∃ n, s = -(2 * (↑n + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1))
+    [prop] (s = -(2 * (0 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1))) = ∃ n, s = -(2 * (↑n + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1))
+    [prop] (s = -(2 * (0 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1))) = ∃ n, s = -(2 * (↑n + 1 + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1 + 1))
+    [prop] (s = -(2 * (0 + 1 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1))) =
+          ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1 + 1 + 1))
+    [prop] (s = -(2 * (0 + 1 + 1 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1 + 1))) =
+          ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1))
+    [prop] ∀ (x : ℕ), ¬s = -(2 * (↑x + 1 + 1 + 1 + 1 + 1 + 1))
+  [eqc] False propositions
+    [prop] s = 1
+    [prop] s.Gammaℝ = 0
+    [prop] s.re = 2⁻¹
+    [prop] ¬riemannZeta s = 0
+    [prop] s = 0
+    [prop] 2⁻¹ < s.re
+    [prop] ¬s = 1 → ¬riemannZeta s = 0
+    [prop] ∃ n, s = -(2 * ↑n)
+    [prop] ∃ n, s = -(2 * (↑n + 1))
+    [prop] s = -0 ∨ ∃ n, s = -(2 * (↑n + 1))
+    [prop] s = -0
+    [prop] ∃ n, s = -(2 * (↑n + 1 + 1))
+    [prop] s = -(2 * (0 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1))
+    [prop] s = -(2 * (0 + 1))
+    [prop] ∃ n, s = -(2 * (↑n + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1))
+    [prop] ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1 + 1))
+    [prop] ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1 + 1 + 1))
+    [prop] ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1 + 1 + 1 + 1)) ∨ ∃ n, s = -(2 * (↑n + 1 + 1 + 1 + 1 + 1 + 1))
+    [prop] s = -(2 * (0 + 1 + 1 + 1 + 1 + 1))
+  [eqc] Equivalence classes
+    [eqc] {riemannZeta s, 0, completedRiemannZeta s, completedRiemannZeta s * s.Gammaℝ⁻¹, -0}
+    [eqc] {riemannZeta 0, -1 * 2⁻¹}
+    [eqc] {1, s.Gammaℝ * s.Gammaℝ⁻¹, 2 * 2⁻¹}
+    [eqc] {1, 2 * 2⁻¹, (s.re - 2⁻¹) * (s.re - 2⁻¹)⁻¹}
+    [eqc] {cexp s = cexp 0, cexp 0 = cexp s}
+    [eqc] {s.re = Complex.re 0, Complex.re 0 = s.re}
+  [cases] Case analyses
+    [cases] [2/2]: if s.Gammaℝ = 0 then s.Gammaℝ⁻¹ = 0 else s.Gammaℝ * s.Gammaℝ⁻¹ = 1
+      [cases] source: E-matching `riemannZeta_def_of_ne_zero`
+    [cases] [1/2]: 2⁻¹ < Complex.re 0
+      [cases] source: E-matching `h`
+  [ematch] E-matching patterns
+    [thm] h: [@LT.lt `[ℝ] `[Real.instLT] `[2⁻¹] (Complex.re #2)]
+    [thm] h: [Complex.re #2]
+    [thm] h: [riemannZeta #2]
+    [thm] h_1: [@Exists `[ℕ] #0]
+    [thm] riemannZeta_def_of_ne_zero: [riemannZeta #1]
+    [thm] completedRiemannZeta_one_sub: [completedRiemannZeta (@HSub.hSub `[ℂ] `[ℂ] `[ℂ] `[instHSub] `[1] #0)]
+    [thm] Complex.Gammaℝ_eq_zero_iff: [Complex.Gammaℝ #0]
+    [thm] h_4: [@Neg.neg `[ℂ] `[Complex.instNeg] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[2] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0) `[1]))]
+    [thm] h_4: [@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0]
+    [thm] Complex.re_eq_re_of_cexp_eq_cexp: [Complex.re #2, Complex.re #1]
+    [thm] Set.ssubset_def: [@LT.lt _ _ #1 #0]
+    [thm] local_0: [@Neg.neg `[ℂ] `[Complex.instNeg] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[2] (@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0))]
+    [thm] local_0: [@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0]
+    [thm] local_1: [@Neg.neg `[ℂ] `[Complex.instNeg] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[2] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0) `[1]) `[1]))]
+    [thm] local_1: [@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0]
+    [thm] local_2: [@Neg.neg `[ℂ] `[Complex.instNeg] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[2] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0) `[1]) `[1]) `[1]))]
+    [thm] local_2: [@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0]
+    [thm] local_3: [@Neg.neg `[ℂ] `[Complex.instNeg] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[2] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0) `[1]) `[1]) `[1]) `[1]))]
+    [thm] local_3: [@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0]
+    [thm] local_4: [@Neg.neg `[ℂ] `[Complex.instNeg] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[2] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0) `[1]) `[1]) `[1]) `[1]) `[1]))]
+    [thm] local_4: [@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0]
+    [thm] local_5: [@Neg.neg `[ℂ] `[Complex.instNeg] (@HMul.hMul `[ℂ] `[ℂ] `[ℂ] `[instHMul] `[2] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@HAdd.hAdd `[ℂ] `[ℂ] `[ℂ] `[instHAdd] (@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0) `[1]) `[1]) `[1]) `[1]) `[1]) `[1]))]
+    [thm] local_5: [@NatCast.natCast `[ℂ] `[Complex.instNatCast] #0]
+  [linarith] Linarith assignment for `ℝ`
+    [assign] s.re := -1
+    [assign] Complex.re 0 := 2
+  [ring] Rings
+    [ring] Ring `ℝ`
+      [basis] Basis
+        [_] 2 * (s.re * (s.re - 2⁻¹)⁻¹) + -1 * (s.re - 2⁻¹)⁻¹ + -2 = 0
+        [_] 2 * 2⁻¹ + -1 = 0
+    [ring] Ring `ℂ`
+      [basis] Basis
+        [_] s.Gammaℝ⁻¹ * s.Gammaℝ + -1 = 0
+        [_] 2 * 2⁻¹ + -1 = 0
+        [_] completedRiemannZeta s = 0
+  [limits] Thresholds reached
+    [limit] maximum term generation has been reached, threshold: `(gen := 8)`
+[grind] Diagnostics
+  [ematch] E-matching Diagnostics
+    [thm] Theorem Instance Count
+      [thm] h_1 ↦ 9
+      [thm] h_4 ↦ 4
+      [thm] Complex.re_eq_re_of_cexp_eq_cexp ↦ 4
+      [thm] h ↦ 2
+      [thm] riemannZeta_def_of_ne_zero ↦ 2
+      [thm] Complex.Gammaℝ_eq_zero_iff ↦ 1
+'RHPrimeWindow84.hinge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow84.log_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow84.primeError_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHPrimeWindow87.quartic_cover' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow88.eventual_from_endpoint_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow88.principal_right_from_endpoint_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RHPrimeWindow88.zeta_line_from_endpoint_grid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/results/job/outputs/analytic/Run88Endpoint.lean:416:0: error: RUN88 unexpected axiom RHPrimeWindow87.quartic_cover: [propext, sorryAx, Classical.choice, Quot.sound]

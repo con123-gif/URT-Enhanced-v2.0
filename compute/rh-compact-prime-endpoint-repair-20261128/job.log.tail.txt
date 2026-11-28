@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py", line 206, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py", line 199, in main
+    require(state["all_requested_checks_ok"], "At least one conditional endpoint stage failed")
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: At least one conditional endpoint stage failed

@@ -1,0 +1,4 @@
+'lambdaClass_nonneg_and_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'primeError_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'isPolar_primeError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'entireL_ne_zero_of_primeError_le' depends on axioms: [propext, Classical.choice, Quot.sound]

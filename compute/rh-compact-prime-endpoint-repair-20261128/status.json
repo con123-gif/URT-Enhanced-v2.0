@@ -1,0 +1,122 @@
+{
+  "status": "error",
+  "detail": "RuntimeError: At least one conditional endpoint stage failed",
+  "returncode": 1,
+  "wall_s": 1529.85,
+  "tail": "Traceback (most recent call last):\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py\", line 206, in <module>\n    main()\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py\", line 199, in main\n    require(state[\"all_requested_checks_ok\"], \"At least one conditional endpoint stage failed\")\n  File \"/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py\", line 25, in require\n    if not ok: raise RuntimeError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: At least one conditional endpoint stage failed\n",
+  "id": "rh-compact-prime-endpoint-repair-20261128",
+  "question": "Replay the exact RUN92 repairs of native endpoint run 46081903735, keeping original failed logs; separately check analytic chord/cover and principal root, real-cast pointwise data adapter, then bridge only after both succeed. Preserve standard axiom gates and omitted-grid negative control. No A/B/C or Main build, no star, PNT tail, original-definition bridge or RH closure claim.",
+  "requested_by": "GPT prime-window lane; user continuation directive 2026-11-27",
+  "claim": "independent",
+  "run": "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_QUEUE_REPAIR.py --out {out}",
+  "utc": "2026-11-28T00:42:30Z",
+  "versions": {
+    "python": "3.11.18",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "pytest": "9.2.0"
+  },
+  "sha": "c727f99f21a232b2cff7bb04c91f30779ec7b91c",
+  "run_url": "https://github.com/con123-gif/URT-Enhanced-v2.0/actions/runs/46086991349",
+  "outputs_committed": [
+    {
+      "path": "adapter.log",
+      "bytes": 30849,
+      "sha256": "715c0c448fc442b5b330ceb54332c0a68f7176303d1b1cac9a0656d9ce4fcfaf"
+    },
+    {
+      "path": "adapter_build.log",
+      "bytes": 34036,
+      "sha256": "3939551020745403c35c51f2bb7fedeb43abb34902484b0561ab6b349265b8f8"
+    },
+    {
+      "path": "analytic/OriginalAnalytic.lean",
+      "bytes": 193,
+      "sha256": "fa40cddbe2f28d148d9def1ac51d63cf7d702c6b2e7ffb64d33e508edc1bb01d"
+    },
+    {
+      "path": "analytic/Run88Endpoint.lean",
+      "bytes": 20660,
+      "sha256": "f62ee26deb4fb813c65ba17df2c7e317ab594bec1e2cc42dc7f6a7de108d7d44"
+    },
+    {
+      "path": "analytic/build.log",
+      "bytes": 2939,
+      "sha256": "6cc89b385a4a99ef9d30f4d5021df90364f7627116caaee69eada3e29258505a"
+    },
+    {
+      "path": "analytic/endpoint.log",
+      "bytes": 27571,
+      "sha256": "29ddf3ff25251cdeec33ef91fdb86f181fa9d293c45c357368f549a148ab7b0b"
+    },
+    {
+      "path": "analytic/endpoint_receipt.json",
+      "bytes": 3400,
+      "sha256": "ace56f03d70a28dbfaa8959aa13032995fd2e6dde493c5e2123d54d53c80c87d"
+    },
+    {
+      "path": "analytic/originals.log",
+      "bytes": 344,
+      "sha256": "18560d3fa4b2d5249d14db3728aa93b8196f97615a376fbe0ec67176975da6e3"
+    },
+    {
+      "path": "analytic_runner.log",
+      "bytes": 826,
+      "sha256": "50d499bd9aa829e6f8b40c72e0b71e6482cb6447537635a9e815fab26aecd966"
+    },
+    {
+      "path": "checkout.log",
+      "bytes": 41,
+      "sha256": "011ced5ec3edc686014c3e23abcc49d5c352195afda714377bfdc98e5b51aa58"
+    },
+    {
+      "path": "download.log",
+      "bytes": 782,
+      "sha256": "8330cf0de9f412b5ad45416d2c1142790afb39a19113e6d0fd9ae4ebc00c7b99"
+    },
+    {
+      "path": "extract.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fetch.log",
+      "bytes": 117,
+      "sha256": "c4bd1549f73225e17ac8a85f9b1b5c936cc2d94385945c908340ab8a973f52d9"
+    },
+    {
+      "path": "init.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mathlib_cache.log",
+      "bytes": 7936,
+      "sha256": "8918d4c046a465b388ff2fc445329138a0bd08f8aad891a81d3fcf2ca570281a"
+    },
+    {
+      "path": "modules/Run90Adapter.lean",
+      "bytes": 12097,
+      "sha256": "21b904f9e653d3011876a0d59d41500474900675710c36655197c257f2451c06"
+    },
+    {
+      "path": "remote.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "run91_receipt.json",
+      "bytes": 4512,
+      "sha256": "138fa77212746673598801de1eccb24150eb94d5e0fdf785f4f7f19594d46ed7"
+    },
+    {
+      "path": "version.log",
+      "bytes": 106,
+      "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    }
+  ],
+  "outputs_artifact_only": []
+}

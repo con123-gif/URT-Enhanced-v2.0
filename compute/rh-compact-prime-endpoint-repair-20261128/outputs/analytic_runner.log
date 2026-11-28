@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_REPLAY_ANALYTIC.py", line 184, in <module>
+    main()
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN92_REPLAY_ANALYTIC.py", line 155, in main
+    require(rc == 0 and state["candidate_axioms"]["axiom_audit_ok"] and
+  File "/home/runner/work/URT-Enhanced-v2.0/URT-Enhanced-v2.0/research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/RUN26_COMPACT_GRAPH.py", line 25, in require
+    if not ok: raise RuntimeError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: RUN88 conditional endpoint failed
