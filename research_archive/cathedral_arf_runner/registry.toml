@@ -3871,3 +3871,11 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT Landau lane; continuation directive"
 claim = "independent"
+
+[[job]]
+id = "rh-compact-prime-count-budget-repair-20261128"
+question = "Repair actual RUN99 native failures: remove redundant exponential calc return, use exact dependency RUN86 sibling, keep existing four-root graph, 15 axiom reports and negative controls. No new A/B/C build or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/prime_window/COMPACT_RUN102_COUNT_BUDGET_REPAIR.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT prime-window lane; continuation directive"
+claim = "independent"
