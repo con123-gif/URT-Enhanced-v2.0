@@ -3835,3 +3835,12 @@ run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists
 timeout_minutes = 320
 requested_by = "GPT character boxes lane; user continuation directive"
 claim = "independent"
+
+
+[[job]]
+id = "rh-compact-a1-preimage-repair-20261128"
+question = "Execute exact RUN74 repair of actual cached A1 preimage and header failures using RUN75 adapter and authenticated RUN71 transport. Require four exact theorem statements, standard axioms, full eight-root constructor-inclusive graph and guarded scan/prune; preserve first failed phase and old/new graph evidence. No Main import, cold project build, A2 or RH closure claim."
+run = "python3 research_archive/2026-11-24_lean_rh_translation_swarm/specialists/kernel_extractor/compact/RUN75_A1_REPAIRED_CACHE_QUEUE.py --out {out}"
+timeout_minutes = 320
+requested_by = "GPT kernel lane; continuation directive 2026-11-27"
+claim = "independent"
