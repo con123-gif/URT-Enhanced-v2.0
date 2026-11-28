@@ -226,7 +226,22 @@
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9309",
       "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution.",
       "statement_merged_at": null,
-      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9309"
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9309",
+      "latest_improvement_candidate": {
+        "counted_length": 1140,
+        "incumbent_length": 1225,
+        "incumbent_pr": 9309,
+        "fork_commit": "9183c9e4fd4b149df05c85144134e0b16004b832",
+        "proof_blob": "e1e34cd98ecd59b6d15b81a795c3b8f7ab69ded1",
+        "branch": "oma/improve-a193282-20261128-0924",
+        "symbolic_parity_residuals": [
+          0,
+          0
+        ],
+        "fresh_kernel_verified": false,
+        "official_pr": null,
+        "submission_block": "HTTP 403 Resource not accessible by integration; no retry or bypass"
+      }
     },
     {
       "problem_id": "oeis-a124870",
@@ -611,6 +626,15 @@
         "probe_path": "campaign/ProbeMO487192IndependentShorter20261128_0824.lean",
         "probe_blob": "db1f641941d4e01c93cbda1f7d449382ef884fa4",
         "note": "Exact statement equals current main; fresh race search unreliable after upstream repo transfer; no official submission."
+      },
+      "latest_improvement_race": {
+        "own_candidate_length": 2045,
+        "incumbent_length": 2193,
+        "foreign_pending_pr": 22717,
+        "foreign_length": 1900,
+        "foreign_checker_run": 46121865039,
+        "foreign_checker_conclusion": "cancelled",
+        "disposition": "withhold; shorter pending independent competitor; no acceptance inferred"
       }
     },
     {
@@ -1332,15 +1356,17 @@
     "own_unmerged_checker_cancelled": 1,
     "without_own_full_submission": 30,
     "foreign_full_pr_pending": 11,
-    "incumbent_shorter_than_canonical_or_adapter": 11,
+    "incumbent_shorter_than_canonical_or_adapter": 9,
     "registration_pending": 7,
     "known_prior_hold": 1,
-    "numerical_improvement_candidates": 3,
+    "numerical_improvement_candidates": 4,
     "submitted_improvements": 2,
-    "unverified_new_improvement_candidates": 1,
+    "unverified_new_improvement_candidates": 2,
     "confirmed_original_discoveries": 0,
-    "checkpoint": "HOURLY_0824_BACKLOG_TRANSFER_AND_CHECKER_AUDIT.md",
-    "checkpoint_commit": "25a8b1779e39f6da2aa817704c31660d00a8ab74",
-    "note": "Current cumulative totals override older first-proof-only scalar counters; canonical archive records and original proof hashes unchanged."
+    "checkpoint": "HOURLY_0924_BACKLOG_A193282_IMPROVEMENT_BLOCKED.md",
+    "checkpoint_commit": "64f76391217c73aafdeafc35de81e0dca8413950",
+    "note": "Current cumulative totals override older first-proof-only scalar counters. Numeric eligibility alone is not actual Lean acceptance or permission to submit. Canonical archive proof hashes unchanged.",
+    "pending_shorter_competitor_hold": 1,
+    "pr_permission_denial_hold": 1
   }
 }
