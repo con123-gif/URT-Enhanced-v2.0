@@ -145,7 +145,16 @@
       "preceding_competing_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9230",
       "remaining_obstruction": "Another contributor has a full proof PR; do not duplicate. Our independently completed public certificate is not counted as an official accepted solution.",
       "statement_merged_at": null,
-      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9230"
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/9230",
+      "official_improvement": {
+        "pr": "https://github.com/lefttosolve2/open-math-agents/pull/22494",
+        "status": "open_checker_cancelled_no_verdict",
+        "run": "https://github.com/lefttosolve2/open-math-agents/actions/runs/46120817755",
+        "job": 140904703332,
+        "counted_chars": 525,
+        "incumbent_chars": 796,
+        "rerun_attempt": "403 Resource not accessible by integration; no retry"
+      }
     },
     {
       "problem_id": "oeis-a052204",
@@ -552,7 +561,19 @@
       "prepared_full_proof_commit": "a735d98023b4d4e1fc8058100530becff2a76f89",
       "prior_inline_verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46039599862",
       "imported_target_verdict": "accepted",
-      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10756"
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/10756",
+      "official_improvement": {
+        "pr": "https://github.com/lefttosolve2/open-math-agents/pull/20838",
+        "status": "actual_upstream_kernel_accepted_unmerged",
+        "run": "https://github.com/lefttosolve2/open-math-agents/actions/runs/46112192108",
+        "job": 140877978305,
+        "accepted_utc": "2026-11-28T07:26:30Z",
+        "counted_chars": 5189,
+        "incumbent_chars": 5717,
+        "artifact_id": 15253294133,
+        "artifact_metadata_sha256": "0ff02dbe5d647c9de0f53379ec3c571b688071ca7f9fba3550841eea0de3bd7c",
+        "artifact_bytes_independently_hashed": false
+      }
     },
     {
       "problem_id": "mo-487192",
@@ -581,7 +602,16 @@
       "prepared_full_proof_commit": "0b8cc3ed1e0ebb8f0c068362940e02f5053400ee",
       "prior_inline_verification_run": "https://github.com/con123-gif/open-math-agents/actions/runs/46039599862",
       "imported_target_verdict": "accepted",
-      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/11324"
+      "preceding_foreign_proof_pr": "https://github.com/GuillaumeBAUD-coder/open-math-agents/pull/11324",
+      "shorter_candidate": {
+        "status": "unexecuted_lean_candidate_numeric_gate_only",
+        "counted_chars": 2045,
+        "incumbent_chars": 2193,
+        "probe_commit": "5a063b45360014ef9ec7c4971c22e78a8fc2d0e9",
+        "probe_path": "campaign/ProbeMO487192IndependentShorter20261128_0824.lean",
+        "probe_blob": "db1f641941d4e01c93cbda1f7d449382ef884fa4",
+        "note": "Exact statement equals current main; fresh race search unreliable after upstream repo transfer; no official submission."
+      }
     },
     {
       "problem_id": "oeis-a382465",
@@ -1082,7 +1112,7 @@
         "scope": "EntireindependentinformalproofpubliclycheckpointedBEFOREthatobservedforeignstatement/fullcandidate, ownLeanpasslater; nofirst-everpublicationguarantee."
       },
       "merged_and_credited": "not_confirmed",
-      "remaining_obstruction": "Entire own proof ALSO adapted to exact foreignPR13174 proposal and actuallyverifiedexit0/standardaxioms/sourceaccepted, all4variantfiles main/readbackexact. PR13174stillopen/unmerged23:09:53 andnofullPR. Awaitactualmerge, exactregisteredsource/imported-targetcheck andfreshfullPR/validclaim. UseADAPTEDproof8badfe72, notoriginald050. 35distinctcertificatesunchanged.",
+      "remaining_obstruction": "Competing full PR #17716 actually merged 2026-11-28T08:13:58Z; exact adapter source equals main, our 13161 chars exceed incumbent 7465. No duplicate or improvement eligible.",
       "exact_proposed_target_variant": {
         "statement": "TARGET_VARIANTS/mo-430643-pr13174/statement.lean",
         "proof": "TARGET_VARIANTS/mo-430643-pr13174/proof.lean",
@@ -1107,7 +1137,8 @@
         "entire_literal_source_proof_public_probe_correspondence": true,
         "same_problem_no_extra_count": true,
         "use_this_proof_after_registration_instead_of_original_d050": true
-      }
+      },
+      "preceding_foreign_proof_pr": "https://github.com/lefttosolve2/open-math-agents/pull/17716"
     },
     {
       "problem_id": "mo-309485",
@@ -1281,5 +1312,35 @@
   "source_ambiguity_holds": {
     "mo-488756": "Fragmented-star elimination hereditary under every fixed global edge order, including fixed tie refinement. Literal source leaves tie sorting/singleton terminal implicit. Root allzero weights with input-dependent deterministic tie sorting gives unfragmentedA1234/fragmentedB12345 counter to unconstrained tie interpretation. Both valid cases under independent challenge; no silent extra assumptions, no claim/Lean/registration/count."
   },
-  "latest_merged_proof_audit": "HOURLY_0224_A395110_BOUNDARY_TWO_CLASSIFICATION_AND_A329813_MERGE.md"
+  "latest_merged_proof_audit": "HOURLY_0224_A395110_BOUNDARY_TWO_CLASSIFICATION_AND_A329813_MERGE.md",
+  "latest_backlog_audit": {
+    "date": "2026-11-28",
+    "upstream": "lefttosolve2/open-math-agents",
+    "canonical_certificates": 37,
+    "main_paths_rechecked": 37,
+    "main_proofs_present": 17,
+    "main_paths_absent": 20,
+    "own_first_proof_prs": 5,
+    "own_improvement_prs": 2,
+    "own_total_full_proof_and_improvement_prs": 7,
+    "actual_first_proof_checker_acceptances": 5,
+    "actual_improvement_checker_acceptances": 1,
+    "actual_total_checker_acceptances": 6,
+    "own_merged_and_credited": 4,
+    "own_unmerged": 3,
+    "own_unmerged_checker_accepted": 2,
+    "own_unmerged_checker_cancelled": 1,
+    "without_own_full_submission": 30,
+    "foreign_full_pr_pending": 11,
+    "incumbent_shorter_than_canonical_or_adapter": 11,
+    "registration_pending": 7,
+    "known_prior_hold": 1,
+    "numerical_improvement_candidates": 3,
+    "submitted_improvements": 2,
+    "unverified_new_improvement_candidates": 1,
+    "confirmed_original_discoveries": 0,
+    "checkpoint": "HOURLY_0824_BACKLOG_TRANSFER_AND_CHECKER_AUDIT.md",
+    "checkpoint_commit": "25a8b1779e39f6da2aa817704c31660d00a8ab74",
+    "note": "Current cumulative totals override older first-proof-only scalar counters; canonical archive records and original proof hashes unchanged."
+  }
 }
